@@ -1,43 +1,46 @@
 [slide hideTitle]
 # Problem: Online Shop Business Logic
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/10-Exam-Prep-1/RO/interactive-java-oop-advanced-exam-preparation-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Online Shop Business Logic" timeLimit=5000 taskId="oop-advanced-java-exam-preparation-2-Online-Shop-Business-Logic" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 
 [task-description]
-# Description
+# Descriere
 
-## The Controller Class
+## Clasa controlorului
 
-The business logic of the program should be defined inside several **commands**. 
+Logica de afaceri a programului ar trebui definită în mai multe **comenzi**.
 
-You will be provided with interfaces which you have to implement in the correct classes.
+Vi se vor furniza interfețe pe care trebuie să le implementați în clasele corecte.
 
-**Note: The ControllerImpl class SHOULD NOT handle exceptions! The tests are designed to expect exceptions, not messages.**
+**Notă: Clasa ControllerImpl NU TREBUIE să gestioneze excepții! Testele sunt concepute pentru a se aștepta la excepții, nu la mesaje.**
 
-The first interface is the **Controller**. 
+Prima interfață este **Controler**.
 
-Create a **ControllerImpl** class, which implements the interface and all of its methods. 
+Creați o clasă **ControllerImpl**, care implementează interfața și toate metodele sale.
 
-The constructor, of the **ControllerImpl** class, does not take any arguments. 
+Constructorul, din clasa **ControllerImpl**, nu ia niciun argument.
 
-Its methods should have the logic, described below.
+Metodele sale ar trebui să aibă logica, descrisă mai jos.
 
-## Commands
+## Comenzi
 
-There are several commands, which control the business logic of the application. 
+Există mai multe comenzi, care controlează logica de afaceri a aplicației.
 
-As listed: 
+Așa cum este enumerat:
 
-**Note:** For each command, except for "**addComputer**" and "**buyBest**", you should check if a computer with that ID exists in the **computers** collection. 
+**Notă:** Pentru fiecare comandă, cu excepția "**addComputer**" și "**buyBest**", ar trebui să verificați dacă există un computer cu ID-ul respectiv în colecția **calculatoare**.
 
-If it does not, throw an `IllegalArgumentException` with the message "**Computer with this id does not exist.**".
+În caz contrar, aruncați o `IllegalArgumentException` cu mesajul "**Computer with this id does not exist.**".
 
-### AddComputer Command:
+### Comanda AddComputer:
 
-The method must be called **addComputer**.
+Metoda trebuie numită **addComputer**.
 
-**Parameters:**
+**Parametri:**
 
 - **computerType** - String
 - **id** - int
@@ -45,21 +48,21 @@ The method must be called **addComputer**.
 - **model** - String
 - **price** - double
 
-**Functionality:**
+**Funcționalitate:**
 
-Creates a computer with the correct type and **adds it to the collection of computers**.
+Creează un calculator cu tipul corect și **îl adaugă la colecția de calculatoare**.
 
-If a computer with the **same ID** already exists in **the computers collection**, throw an **IllegalArgumentException** with the message "**Computer with this id already exists.**"
+Dacă un calculator cu **același ID** există deja în **colecția de calculatoare**, aruncați o **IllegalArgumentException** cu mesajul "**Computer with this id already exists.**"
 
-If the computer type is invalid, throw an **IllegalArgumentException** with the message "**Computer type is invalid.**"
+Dacă tipul calculatorului este nevalid, aruncați o **IllegalArgumentException** cu mesajul "**Computer type is invalid.**"
 
-If it is successful, returns **"Computer with id** \{**id**\} **added successfully."**
+Dacă are succes, returnează **"Computer with id** \{**id**\} **added successfully."**
 
-### AddComponent Command:
+### Comanda AddComponent:
 
-The method must be called **addComponent**.
+Metoda trebuie numită **addComponent**.
 
-**Parameters:**
+**Parametri:**
 
 - **computerId - int**
 - **id - int**
@@ -70,36 +73,36 @@ The method must be called **addComponent**.
 - **overallPerformance - double**
 - **generation - int**
 
-**Functionality:**
+**Funcționalitate:**
 
-Creates a component with the correct type and **adds it to the computer with that ID then adds it to the collection of components in the controller**.
+Creează o componentă cu tipul corect și **o adaugă la calculatorul cu acel ID, apoi o adaugă la colecția de componente din controler**.
 
-If a component, with the **same ID**, already exists in **the components collection**, throws an **IllegalArgumentException** with the message "**Component with this id already exists.**"
+Dacă o componentă, **cu același ID**, există deja în **colecția de componente**, aruncă o **IllegalArgumentException** cu mesajul "**Component with this id already exists.**"
 
-If the component type is invalid, throws an **IllegalArgumentException** with the message "**Component type is invalid.**"
+Dacă tipul de componentă este invalid, aruncă o **IllegalArgumentException** cu mesajul "**Component type is invalid.**"
 
-If it is successful, returns "**Component** \{**component type**\} **with id** \{**component ID**\} **added successfully in computer with id** \{**computer ID**\}."
+Dacă are succes, returnează "**Component** \{**component type**\} **with id** \{**component ID**\} **added successfully in computer with id** \{**computer ID**\}."
 
-### RemoveComponent Command:
+### Comanda RemoveComponent:
 
-The method should be called **removeComponent**.
+Metoda ar trebui numită **removeComponent**.
 
-**Parameters:**
+**Parametri:**
 
 - **componentType** - String
 - **computerId** - int
 
-**Functionality:**
+**Funcționalitate:**
 
-Removes a component of the given **type from the computer with that ID** and removes the component from the **collection of components**.
+Îndepărtează o componentă de tipul **dat de pe calculator cu acel ID** și elimină componenta din **colecția de componente**.
 
-If it is successful, it returns "**Successfully removed** \{**component type**\} **with id** \{**component id**\}."
+Dacă are succes, se afișează "**Successfully removed** \{**component type**\} **with id** \{**component id**\}."
 
-### AddPeripheral Command:
+### Adăugare comandă periferică:
 
-The method should be called **addPeripheral**.
+Metoda ar trebui numită **addPeripheral**.
 
-**Parameters:**
+**Parametri:**
 
 - **computerId** - int
 - **id** - int
@@ -110,100 +113,101 @@ The method should be called **addPeripheral**.
 - **overallPerformance** - double
 - **connectionType** - String
 
-**Functionality:**
+**Funcționalitate:**
 
-Creates a peripheral of the correct type, and **adds it to the computer with that id, then adds it to the collection of peripherals in the controller**.
+Creează un periferic de tipul corect și **îl adaugă la calculator cu acel id, apoi îl adaugă la colecția de periferice din controler**.
 
-If a peripheral with the **same id** already exists in **the peripherals collection**, it throws an `IllegalArgumentException` with the message "**Peripheral with this id already exists.**"
+Dacă un periferic cu **același id** există deja în **colecția de periferice**, acesta aruncă o `IllegalArgumentException` cu mesajul  "**Peripheral with this id already exists.**"
 
-If the peripheral type is invalid, throws an `IllegalArgumentException` with the message "**Peripheral type is invalid.**"
 
-If it is successful, it returns "**Peripheral** \{**peripheral type**\} **with id** \{**peripheral id**\} **added successfully in computer with id** \{**computer id**\}."
+Dacă tipul de periferic este invalid, aruncă o `IllegalArgumentException` cu mesajul "**Peripheral type is invalid.**"
 
-### RemovePeripheral Command:
+Dacă are succes, returnează "**Peripheral** \{**peripheral type**\} **with id** \{**peripheral id**\} **added successfully in computer with id** \{**computer id**\}
 
-The method must be called **removePeripheral**.
+### Comande RemovePeripheral:
 
-**Parameters:**
+Metoda trebuie numită **removePeripheral**.
+
+**Parametri:**
 
 - **peripheralType** - String
 - **computerId** - int
 
-**Functionality:**
+**Funcționalitate:**
 
-Removes a peripheral pf the given **type from the computer** with matching **id**, then removes the peripheral from the **collection of peripherals**.
+Îndepărtează un periferic de tipul **dat din computer** cu **id** potrivit, apoi elimină perifericul din **colecția de periferice**.
 
-If it is successful, it returns **"Successfully removed** \{**peripheral type**\} **with id** \{**peripheral id**\}.".
+Dacă are succes, se returnează **"Successfully removed** \{**peripheral type**\} **with id** \{**peripheral id**\}.".
 
-### BuyComputer Command:
+### Comanda BuyComputer:
 
-The should must be called **buyComputer**.
+Ar trebui să fie numit **buyComputer**.
 
-**Parameters:**
+**Parametri:**
 
 - **id** - int
 
-**Functionality:**
+**Funcționalitate:**
 
-Removes a computer with the given **id** from the **collection of computers**.
+Elimină un computer cu **id** dat din **colecția de calculatoare**.
 
-If it is successful, it returns the **toString() method of the removed computer**.
+Dacă are succes, returnează **toString() method a calculatorului eliminat**.
 
-### BuyBestComputer Command:
+### Comanda BuyBestComputer:
 
-The method should be called **BuyBestComputer**.
+Metoda ar trebui să fie numită **BuyBestComputer**.
 
-**Parameters:**
+**Parametri:**
 
 - **budget** - double
 
-**Functionality:**
+**Funcționalitate:**
 
-**Removes** the computer with: 
-(from the collection)
-- the **highest overall performance**
-- a **price, less or equal to the budget** 
+**Elimină** calculatorul cu:
+(din colecție)
+- **cea mai ridicată performanță generală**
+- un **preț, mai mic sau egal cu bugetul**
 
 
-If there are not any computers in the collection or the budget is insufficient for any computer, it throws an `IllegalArgumentException` with the message **"Can't buy a computer with a budget of** \$\{**budget**\}."
+Dacă nu există calculatoare în colecție sau bugetul este insuficient pentru orice calculator, acesta aruncă o `IllegalArgumentException` cu mesajul **"Can't buy a computer with a budget of** \$\{**budget**\}."
 
-If it is successful, it returns the **toString() method on the removed computer**.
+Dacă are succes, returnează ** toString method de pe calculatorul eliminat **.
 
-### GetComputerData Command:
+### Comanda GetComputerData:
 
-The method should be called **getComputerData**.
+Metoda ar trebui numită **getComputerData**.
 
-**Parameters:**
+**Parametri:**
 
 - **id - int**
 
-**Functionality:**
+**Funcționalitate:**
 
-If it is successful, returns the **toString method on the computer with the given id**.
+Dacă are succes, returnează **toString() method de pe calculatorul cu id-ul dat**.
 
-### Close Command:
+### Închideți comanda:
 
-The method should be called **close**.
+Metoda ar trebui numită **închidere**.
 
-**Functionality:**
+**Funcționalitate:**
 
-Ends the program.
+Încheie programul.
 
-# Input / Output
+# Intrare/Ieșire
 
-You are provided with one interface which should help you with the correct execution process of the program. 
+Vi se oferă o interfață care ar trebui să vă ajute cu procesul corect de execuție a programului.
 
-The interface is called **Engine**, and the class implementing this interface should read the input
+Interfața se numește **Engine**, iar clasa care implementează această interfață ar trebui să citească intrarea
 
-When the program finishes, this class should print out the output.
+Când programul se termină, această clasă ar trebui să imprime ieșirea.
 
-You are given the **EngineImpl** class with written logic in it. 
+Vi se oferă clasa **EngineImpl** cu logică scrisă în ea.
 
-In order for the code to be **compiled**, some parts are **commented out, do not forget to comment them out**.
+Pentru ca codul să fie **compilat**, unele părți sunt **comentate, nu uitați să le comentați**.
 
-The **try-catch block** is also **commented out** in order for the program to **throw exceptions and for you to see them, un-comment it** when you are **ready** with this too.
+**Blocul try-catch** este, de asemenea, **dezactivat** pentru ca programul să **arunce excepții și pentru ca dvs. să le vedeți** când sunteți **gata**.
 
-## Input
+## Intrare
 
 - **AddComputer** \{**computer type**\} \{**id**\} \{**manufacturer**\} \{**model**\} \{**price**\}
 - **AddComponent** \{**computer id**\} \{**component id**\} \{**component type**\} \{**manufacturer**\} \{**model**\} \{**price**\} \{**overall performance**\} \{**generation**\}
@@ -215,16 +219,16 @@ The **try-catch block** is also **commented out** in order for the program to **
 - **GetComputerData** \{**id**\}
 - **Close**
 
-## Output
+## Ieșire
 
-Print out the output from each command, when issued.
+Imprimați datele de ieșire pentru fiecare comandă, atunci când este emisă.
 
-If an exception is thrown during any of the commands execution process, print out the respective exception message.
+Dacă o excepție este aruncată în timpul oricăruia dintre procesele de executare a comenzilor, tipăriți mesajul de excepție respectiv.
 
-# Examples
+# Exemple
 
 
-## Example 1
+## Exemplu 1
 | **Input** |
 | --- |
 | AddComputer Laptop 4 Asus ROG 700 |

@@ -1,18 +1,20 @@
 [slide hideTitle]
-# Problem: Online Shop Unit Tests
+# Problemă: Online Shop Unit Tests
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/10-Exam-Prep-1/RO/interactive-java-oop-advanced-exam-preparation-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Online Shop Unit Tests" taskId="oop-advanced-java-exam-preparation-2-Online-Shop-Unit-Tests" executionType="tests-execution" executionStrategy="java-unit-tests" requiresInput]
 
 [task-description]
-# Description
+# Descriere
 
-**Use the resources from previous task.**
+**Folosiți resursele din sarcina anterioară.**
 
-You will receive a skeleton with a single class inside it. 
+Veți primi o schemă cu o singură clasă în interiorul său.
 
-The class will hold some methods, fields and constructors. 
+Clasa va conține câteva metode, câmpuri și constructori.
 
-Cover the entire class with unit tests to make sure that it works as intended.
+Acoperiți întreaga clasă cu teste unitare pentru a vă asigura că funcționează conform intenției.
 
 [/task-description]
 [code-upload /]

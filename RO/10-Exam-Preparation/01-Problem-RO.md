@@ -1,76 +1,79 @@
 [slide hideTitle]
 # Problem: Online Shop
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/10-Exam-Prep-1/RO/interactive-java-oop-advanced-exam-preparation-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Online Shop" timeLimit=5000 taskId="oop-advanced-java-exam-preparation-2-Online-Shop" executionType="tests-execution" executionStrategy="java-project-tests"]   
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Overview
+# Prezentare generală
 
-Тhis cosists of build a text-based online shop project, which defines **peripherals**, **components**, and **computers**. 
+Acest lucru constă în construirea unui proiect de magazin online bazat pe text, care definește **periferice**, **componente** și **calculatoare**.
 
-The project will contain **model classes** and a **controller class**, which manages the **interaction** between the **peripherals**, **components**, and **computers**.
-
-
-# Setup
-
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/11.Java-OOP-Advanced-Exam-Preparation-2.zip) **for these tasks.**
-
-- Upload **only the onlineShop** package in every task **except Unit Tests**
-- **Do not modify the interfaces or their packages**
-- Use **strong cohesion** and **loose coupling**
-- **Use inheritance and the provided interfaces wherever possible**
-  * this includes **constructors, method parameters** and **return types**
-- **Do not** violate your **interface implementations** by adding **more public methods** in the specific class than the interface has defined
-- Make sure you have **no public fields** anywhere
+Proiectul va conține **clase de model** și o **clasă de controler**, care gestionează **interacțiunea** dintre **perifericele**, **componentele** și **calculatoarele**.
 
 
-# Description
+# Configurare
 
-**For this task's evaluation, logic in the methods is not included.**
+**Aici este un link către** [resurse] (https://videos.softuni.org/resources/java/java-oop-advanced/11.Java-OOP-Advanced-Exam-Preparation-2.zip) **pentru această sarcină.**
 
-You are provided with interfaces you need to implement their functionality in the **correct classes**.
+- Încărcați **numai pachetul onlineShop** în fiecare sarcină **cu excepția testelor unitare**
+- **Nu modificați interfețele sau pachetele acestora**
+- Folosiți **o coeziune puternică** și **un cuplaj liber**
+- **Utilizați moștenirea și interfețele furnizate ori de câte ori este posibil**
+  * aceasta include **constructorii, parametrii metodei** și **tipurile de returnare**
+- **Nu** încălcați **implementările de interfață** adăugând **mai multe metode publice** în clasa specifică decât a definit interfața
+- Asigurați-vă că nu aveți **câmpuri publice** nicăieri
 
-There are the **four** types of entities present in the application: **Product**, **Component**, **Peripheral**, and **Computer**.
 
-# Product 
+# Descriere
 
-The **BaseProduct** is a **base class** for **components, peripherals** and **computers**, and it **should not provide the option to be instantiated**.
+**Pentru evaluarea acestei sarcini, logica metodelor nu este inclusă.**
 
-## Data
+Vi se pun la dispoziție interfețe de care aveți nevoie pentru a le implementa funcționalitatea în **clasele corecte**.
+
+Există cele **patru** tipuri de entități prezente în aplicație: **Product**, **Component**, **Peripheral** și **Computer**.
+
+# Produs
+
+**Produsul de bază** este o **clasă de bază** pentru **componente, periferice** și **calculatoare** și **nu ar trebui să ofere opțiunea de a fi instanțiată**.
+
+## Date
 
 - **id** - int
-  * cannot be **less than or equal to 0**
-  * if so - throw an `IllegalArgumentException` with the message "**Id can not be less or equal than 0.**"
+*  * nu poate fi **less than or equal to 0**
+  * în caz contrar - aruncaț `IllegalArgumentException` cu mesajul "**Id can not be less or equal than 0.**"
 
 - **manufacturer** - String
-  * cannot be **null or whitespace**
-  * if so - throw an `IllegalArgumentException` with the message "**Manufacturer can not be empty.**"
+  * nu poate fi **null or whitespace**
+  * în caz contrar - aruncați `IllegalArgumentException` cu mesajul "**Manufacturer can not be empty.**"
 
 - **model** - String
-  * cannot be **null or whitespace**
-  * if so - throw an `IllegalArgumentException` with the message "**Model can not be empty.**"
+  * nu poate fi **null or whitespace**
+  * în caz contrar - aruncaț `IllegalArgumentException` cu mesajul "**Model can not be empty.**"
 
 - **price** - double
-  * cannot be **less than or equal to 0**
-  * if so - throw an `IllegalArgumentException` with the message "**Price can not be less or equal than 0.**"
+  * nu poate fi **less than or equal to 0**
+  * în caz contrar - aruncaț `IllegalArgumentException` cu mesajul "**Price can not be less or equal than 0.**"
 
 - **overallPerformance** - double
-  * cannot be **less than or equal to 0**
-  * if so - throw an `IllegalArgumentException` with the message "**Overall Performance can not be less or equal than 0.**"
+  * nu poate fi **less than or equal to 0**
+  * în caz contrar - aruncaț `IllegalArgumentException` cu mesajul "**Overall Performance can not be less or equal than 0.**"
 
 ## Constructor
 
-A **product** should take the following values upon initialization:
+Un **product** ar trebui să ia următoarele valori la inițializare:
 
 - (int **id**, String **manufacturer**, String **model**, double **price**, double **overallPerformance**)
 
-Override the **toString()** method to the format:
+Suprascrieți metoda **toString()** în format:
 
 "**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\})"
 
-## Child Classes
+## Clase copii
 
-There are several concrete types of **products**:
+Sunt câteva tupuri de **products**:
 
 - **Component**
 - **Peripheral**
@@ -78,78 +81,78 @@ There are several concrete types of **products**:
 
 # Component
 
-The **BaseComponent** is a derived class from **BaseProduct** and a **base class** for any **components** and it **should not provide the option to be instantiated**.
+**BaseComponent** este o clasă derivată din **BaseProduct** și o **clasă de bază** pentru orice **component** și **nu ar trebui să ofere opțiunea de a fi instanțiată**.
 
-## Data
+## Date
 
-- **generation** - int
+**generation** - int
 
 ## Constructor
 
-A **product** should take the following values upon initialization:
+Un **produs** ar trebui să ia următoarele valori la inițializare:
 
-- (int **id**, String **manufacturer**, String **model**, double **price**, double **overallPerformance**, int **generation**)
+-- (int **id**, String **manufacturer**, String **model**, double **price**, double **overallPerformance**, int **generation**)
 
-Override the **toString()** method to the format:
+Suprascrieți metoda **toString()** în format:
 
 "**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\}) **Generation:** \{**generation**\}"
 
-## Child Classes
+## Clase copii
 
-There are several concrete types of **components** where the **overall performance** has a **different multiplier**:
+Există mai multe tipuri concrete de **components** în care **performanța generală** are un **multiplicator diferit**:
 
-- **CentralProcessingUnit** has a multiplier of **1.25**
-- **Motherboard** has a multiplier of **1.25**
-- **PowerSupply** has a multiplier of **1.05**
-- **RandomAccessMemory** has a multiplier of **1.20**
-- **SolidStateDrive** has a multiplier of **1.20**
-- **VideoCard** has a multiplier of **1.15**
+-**CentralProcessingUnit** are un multiplicator de **1.25**
+- **Motherboard** are un multiplicator de  **1.25**
+- **PowerSupply** are un multiplicator de **1.05**
+- **RandomAccessMemory** are un multiplicator de **1.20**
+- **SolidStateDrive** are un multiplicator de **1.20**
+- **VideoCard** are un multiplicator de **1.15**
 
-**Example**: If we create a **CentralProcessingUnit** with overallPerformance - 50 at the constructor and a multiplier of **1.25** its overallPerformance should be 62.50.
+**Exemplu**: Dacă creăm  **CentralProcessingUnit**  cu performanță generală - 50 la constructor și un multiplicator de **1,25** performanța sa generală ar trebui să fie 62,50.
 
-# Peripheral
+# Periferic
 
-The **BasePeripheral** is a derived class from **BaseProduct** and a **base class** for any **peripherals** and it **should not offer the option to be instantiated**.
+**BasePeripheral** este o clasă derivată din **BaseProduct** și o **clasă de bază** pentru orice **periferic** și **nu ar trebui să ofere opțiunea de a fi instanțiată**.
 
-## Data
+## Date
 
 - **connectionType** - String
 
 ## Constructor
 
-A **product** should take the following values upon initialization:
+Un **produs** ar trebui să ia următoarele valori la inițializare:
 
 - (int **id**, String **manufacturer**, String **model**, double **price**, double **overallPerformance**, String **connectionType**)
 
-Override the **toString()** method to the format:
+Suprascrieți metoda **toString()** în format:
 
 "**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\}) **Connection Type:** \{**connection type**\}"
 
-## Child Classes
+## Clase copii 
 
-There are several concrete types of **peripherals**:
+Există mai multe tipuri concrete de **peripherals**:
 
 - **Headset**
 - **Keyboard**
 - **Monitor**
 - **Mouse**
 
-# Computer
+# Calculator
 
-The **BaseComputer** is a derived class from **BaseProduct** and a **base class** for any **computers** and it **should not provide the option to be instantiated**.
+**BaseComputer** este o clasă derivată din **BaseProduct** și o **clasă de bază** pentru orice **calculator** și **nu ar trebui să ofere opțiunea de a fi instanțiată**.
 
-## Data
+## Date
 
 - **components** - List
 - **peripherals** - List
 
 ## Constructor
 
-A **product** should take the following values upon initialization:
+Un **produs** ar trebui să ia următoarele valori la inițializare:
 
 - (int **id**, String **manufacturer**, String **model**, double **price**, double **overallPerformance**)
 
-Override the **toString()** method with to format:
+Suprascrieți metoda **toString()** în format:
 
 "**Overall Performance:** \{**overall performance**\}. **Price:** \{**price**\} - \{**product type**\}: \{**manufacturer**\} \{**model**\} (**Id:** \{**id**\})"
 
@@ -169,41 +172,42 @@ Override the **toString()** method with to format:
 
 "  \{**peripheral n**\}"
 
-**Note: Be careful, some of the rows have one or two whitespaces at the beginning of the sentences!**
+**Notă: Fiți atenți, unele dintre rânduri au unul sau mai multe spații libere la începutul propozițiilor!**
 
-## Behavior 
+
+## Comportament
 
 - `double getOverallPerformance()`
-     - **override the base functionality** (if the components collection is empty, it should return only the **computer's overall performance**
-     - otherwise, returns the sum of the computer's overall performance and the average overall performance of all components)
+      - **suprascrieți funcționalitatea de bază** (dacă colecția de componente este goală, ar trebui să returneze numai **performanța generală a calculatorului**
+      - în caz contrar, returnează suma performanței generale a calculatorului și a performanței medii generale a tuturor componentelor)
 
 - `double getPrice()`
-     - **override the base functionality** (the price is equal to the **total sum** of **computer price** with the **sum of all component prices** and the **sum of all peripheral prices**)
+      - **suprascrieți funcționalitatea de bază** (prețul este egal cu **suma totală** a **prețului calculatorului** cu **suma tuturor prețurilor componentelor** și **suma tuturor prețurilor periferice**)
 
 - `void addComponent(Component component)`
-     - if the components collection contains a component with the same component type, throw an **IllegalArgumentException** with the message "**Component** \{**component type**\} **already exists in** \{**computer type**\} **with Id** \{**id**\}."
-     - otherwise, add the component to the components collection
+      - dacă colecția de componente conține o componentă cu același tip de componentă, aruncați **IllegalArgumentException** cu mesajul "**Component** \{**component type**\} **already exists in** \{**computer type**\} **with Id** \{**id**\}."
+      - în caz contrar, adăugați componenta la colecția de componente
 
 - `Component removeComponent(String componentType)`
-     - if the components collection is empty or does not have a component of that type, throw an **IllegalArgumentException** with the message "**Component** \{**component type**\} **does not exist in** \{**computer type**\} **with Id** \{**id**\}."
-     - otherwise, remove the component of that type and return it.
+      - dacă colecția de componente este goală sau nu are o componentă de acel tip, aruncați o **excepție de argument ilegal** cu mesajul "**componentă** \ {**tip de componentă**\} **nu există în** \{**tip calculator**\} **cu Id ** \{**id**\}."
+      - în caz contrar, eliminați componenta de acel tip și returnați-o.
 
 - `void аddPeripheral(Peripheral peripheral)`
-     - if the peripherals collection contains a peripheral with the same peripheral type, throw an **IllegalArgumentException** with the message "**Peripheral** \{**peripheral type**\} **already exists in** \{**computer type**\} **with Id** \{**id**\}."
-     - otherwise, add the peripheral in peripherals collection
+      - dacă colecția de periferice conține un periferic cu același tip de periferic, aruncați o **excepție de argument ilegal** cu mesajul "**Periferic** \{**tip de periferic**\} **există deja în** \{**tip de calculator**\} **cu Id** \{**id**\}. "
+      - în caz contrar, adăugați perifericul în colecția de periferice
 
 - `Peripheral removePeripheral(String peripheralType)`
-     - if the peripherals collection is empty or does not have a peripheral of that type, throw an **IllegalArgumentException** with the message "**Peripheral** \{**peripheral type**\} **does not exist in** \{**computer type**\} **with Id** \{**id**\}."
-     - otherwise, remove the peripheral of that type and return it
+      - dacă colecția de periferice este goală sau nu are un periferic de acel tip, aruncați o **excepție de argument ilegal** cu mesajul "**Periferic** \{**tip de periferic** \} **nu există în** \{**tip calculator**\} **cu Id** \{**id**\}."
+      - în caz contrar, scoateți perifericul de acel tip și returnați-l
 
-## Child Classes
+## Clase copii
 
-There are several specific types of **computers**, where the **overall performance** has a **different value**:
+Există mai multe tipuri specifice de **calculatoare**, unde **performanța generală** are o **valoare diferită**:
 
-- **DesktopComputer** - its overall performance is **15**
-- **Laptop** - its overall performance is **10**
+- **DesktopComputer** - performanța sa generală este de **15**
+- **Laptop** - performanța sa generală este de **10**
 
-Child classes should **not** receive overall performance as a parameter from the constructor.
+Clasele copii **nu ar trebui** să primească performanță generală ca parametru de la constructor.
 
 [/task-description]
 [tests]
