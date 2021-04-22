@@ -1,36 +1,37 @@
-# Types of Class Reuse
+# Tipuri de reutilizare a clasei
 
 [slide hideTitle]
-# Extension
+# Extinderea
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-31-32-types-of-class-reuse-extension-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The extension of class is called an **IS-A** relationship.
+Extinderea clasei se numește o relație **IS-A**.
 
 **A Student IS-A Person:**
+
 ```java
 public Student extends Person{}
 ```
 
-- Duplicate code is error prone
-    * if we have a bug at one place, we have to go and find all the places we used this code in order to fix it
+- Codul duplicat este predispus la erori
+    * dacă avem o eroare la un loc, trebuie să mergem și să găsim toate locurile în care am folosit acest cod pentru a-l remedia
 
-- **Reuse classes** through **extension** and add custom logic to them
+- **Reutilizați clasele** prin **extensie** și adăugați-le logică personalizată
 
-- When a class is not in our library and we cannot see its implementation, we can only extend the given class to add custom logic to it
+- Când o clasă nu se află în biblioteca noastră și nu putem vedea implementarea acesteia, putem extinde doar clasa dată pentru a adăuga logică personalizată la aceasta
 
 [image assetsSrc="inheritance-example(15).png" /]
 
 [/slide]
 
 [slide hideTitle]
-# Composition
+# Compunere
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-33-composition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Composition** is a different type of relationship, by which we contain the given object in our class.
+**Compunerea** este un tip diferit de relație, prin care conținem obiectul dat în clasa noastră.
 
-This relationship is called **HAS-A**:
+Această relație se numește **HAS-A**:
 
 - **The Laptop HAS-A Monitior**
 - **The Laptop HAS-A Touchpad**
@@ -43,7 +44,7 @@ class Laptop {
   Monitor monitor;
   Touchpad touchpad;
   Keyboard keyboard;
-  // Reusing classes...
+  // Reutilizarea claselor...
 }
 ```
 
@@ -51,13 +52,13 @@ class Laptop {
 [/slide]
 
 [slide hideTitle]
-# Delegation
+# Delegarea
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-34-Delegation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Delegation is the process of passing attributes between objects.**
+**Delegarea este procesul de trecere a atributelor între obiecte.**
 
-We can give a common interface for the client to work with, as it can use any working implementation underneath.
+Putem oferi o interfață comună pentru care clientul să poată lucra, deoarece poate folosi orice implementare de lucru de dedesubt.
 
 [image assetsSrc="inheritance-example(17).png" /]
 
@@ -75,18 +76,18 @@ class Laptop {
 }
 ```
 
-In our **Laptop** class, we provide a method to increase its brightness.
+În clasa noastră **Laptop**, oferim o metodă pentru a-i crește luminozitatea.
 
-Undearneath, we are calling the monitor method.
+În partea de jos, apelăm la metoda monitorului.
 
-We provide an **interface to our class**, without revealing the concrete code that peforms the action.
+Oferim o **interfață clasei noastre**, fără a dezvălui codul concret care realizează acțiunea.
 
-By doing so, we can **combine** complex logic in just **one method**.                      
+Procedând astfel, putem **combina** logica complexă într-o singură **metodă**.                     
 
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Stack of Strings
+# Problemă cu soluție: Stack of Strings
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-35-problem-and-solution-stack-of-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -94,16 +95,16 @@ By doing so, we can **combine** complex logic in just **one method**.
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Description
-Create a class **Stack** which can store only strings and has the following functionality:
-- Private field: `data: ArrayList (String)`
-- Public method: `push(String item): void`
-- Public method: `pop(): String`
-- Public method: `peek(): String`
-- Public method: `isEmpty(): boolean`
+# Descriere
+Creați o clasă **Stack** care poate stoca numai șiruri și are următoarele funcționalități:
+- Câmp privat: `date: ArrayList (String)`
+- Metoda publică: `push(String item): nul`
+- Metoda publică: `pop(): String`
+- Metoda publică: `peek(): String`
+- Metoda publică: `isEmpty(): boolean`
 
-## Hints
-Use composition/delegation in order to have a field in which to store the stack's data.
+## Sfaturi
+Utilizați compoziția / delegarea pentru a avea un câmp în care să stocați datele stivei.
 
 [/task-description]
 [tests]
@@ -235,18 +236,18 @@ Test Passed!
 
 
 [slide hideTitle]
-# When to Use Inheritance
+# Când se folosește moștenirea
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-37-when-to-use-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can use inheritance when we need one of the following:
+Putem folosi moștenirea atunci când avem nevoie de una dintre următoarele:
 
-- Classes that share **IS-A** relationship
+- clase care împărtășesc relația **IS-A**
 
-- The derived class **IS-A-SUBSTITUTE** for the base class
+- Clasa derivată **IS-A-SUBSTITUTE** pentru clasa de bază
 
-- They share the **same role**
+- Împărtășesc **același rol**
 
-- The derived class is the **same as the base class** but adds **additional functionality**
+- Clasa derivată este aceeași **ca și clasa de bază**, dar adaugă **funcționalitate suplimentară**
 
 [/slide]

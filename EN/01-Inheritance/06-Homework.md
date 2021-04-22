@@ -17,6 +17,10 @@ Each person has a **name**, and an **age**.
 
 The **Person** class should also have **getters** for its fields.
 
+Clasa **Persoană** ar trebui să aibă și **getters** pentru câmpurile sale.
+
+
+
 Create a **Child** class that inherits **Person** and has the same public constructor definition. 
 
 Attention: **Reuse the Person class's constructor**.

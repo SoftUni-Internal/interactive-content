@@ -1,13 +1,13 @@
-# Reusing Classes
+# Refolosirea claselor
 
 [slide hideTitle]
-# Access Modifiers
+# Modificatori de acces
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-20-21-reusing-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Derived classes **can access all public** and **protected** members of the base class
-- Derived classes can access **default** members **if they are in the same package**
-- **Private** fields cannot be accessed from the **Subclasses** but they are instantiated, as the **Parent** class needs them for its internal logic
+- Clasele derivate **pot accesa toți membrii publici** și **protejați** ai clasei de bază
+- Clasele derivate pot accesa **implicit** membri **dacă se află în același pachet**
+- **Câmpurile private** nu pot fi accesate din **subclase**, dar sunt instanțiate, deoarece clasa **părinte** are nevoie de ele pentru logica sa internă.
 
 ```java
 class Person {
@@ -22,15 +22,15 @@ class Person {
 
 [slide hideTitle]
 
-# Shadowing Variables
+# Umbrirea variabilelor
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-22-shadowing-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Derived classes **can hide/shadow** Superclass variables by implementing a unit with the same name
+- Clasele derivate **pot ascunde / umbri** variabile superclaselor prin implementarea unei unități cu același nume
 
 
-- When you are using **shadowing**, you can rebase an entire method
-  * this means changing its parameters and logic, but not its return type
+- Când utilizați **umbrirea**, puteți reface o metodă întreagă
+  * aceasta înseamnă schimbarea parametrilor și a logicii sale, dar nu a tipului său de returnare
 
 ```java
 class Person { 
@@ -39,10 +39,10 @@ class Person {
 
 class Patient extends Person {
   protected float weight; 
-  // Hides (shadows) the weight Integer.
+  // Ascunde (umbrește) greutatea Număr întreg.
 
   public void method() {
-    // As it is more concrete, it hides both, but it lives only inside the method brackets.
+    // Deoarece este mai concret, le ascunde pe amândouă, dar exista numai în parantezele metodei.
     double weight = 0.5d;
   }
 }
@@ -52,11 +52,11 @@ class Patient extends Person {
 
 [slide hideTitle]
 
-# Shadowing Variables – Access
+# Umbrirea variabilelor – Access
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-23-shadowing-variables-access-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- We use **super** and **this** to specify member access
+- Folosim **super** și **this** pentru a specifica accesul membrilor
 
 ```java
 class Person { protected int weight; }
@@ -64,9 +64,9 @@ class Person { protected int weight; }
 class Patient extends Person {
   protected float weight;
   public void method() {
-    double weight = 0.5d; // Local variable
-    this.weight = 0.6f;   // Instance member
-    super.weight = 1;     // Base class member
+    double weight = 0.5d; // Variabilă locală
+    this.weight = 0.6f;   // Membru de instanțiere
+    super.weight = 1;     // Membru al clasei de bază
   }
 }
 
@@ -74,54 +74,54 @@ class Patient extends Person {
 [/slide]
 
 [slide hideTitle]
-# Overriding Derived Methods
+# Suprascrierea metodelor derivate
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-24-overriding-derived-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Overriding** is a mechanism in which we can set a custom implementation of a given class method down the hierarchy.
+**Suprascrierea** este un mecanism în care putem seta o implementare personalizată a unei metode de clasă date în ierarhie.
 
-It is done by using the `@Override` keyword.
+Se face folosind cuvântul cheie `@Override`.
 
-It is an important tool as it is connected to another foundational pillar of OOP - **polymorphism**.
+Este un instrument important, deoarece este conectat la un alt pilon fundamental al OOP - **polimorfism**.
 
-The difference between **shadowing** and **overriding** is that when you override, you cannot change method parameters.
+Diferența dintre **umbrire** și **suprascriere** este că atunci când suprascrieți, nu puteți schimba parametrii metodei.
 
-When we override a method from the base class in a subclass and call it, the logic of the overridden method will be executed, not the basse one.
+Când suprascriem o metodă din clasa de bază într-o subclasă și o apelăm, va fi executată logica metodei suprascrise, nu cea de bază.
 
-If we use **shadowing**, this will always invoke the **base class implementation**.
+Dacă folosim **umbrirea**, aceasta va invoca întotdeauna **implementarea clasei de bază**.
 
 
 ```java
 public class Person {  
   public void sleep() { 
-  System.out.println("Person sleeping"); } // Here we declare a method.
+  System.out.println("Person sleeping"); } // Aici declarăm o metodă.
 }
 ```
-- A method that we want to override should not be set as `final`
+- O metodă pe care dorim să o suprascriem nu trebuie setată ca`final`
 
 ```java
 public class Student extends Person {
-  // The @Override attribute means that this method is being given a new/extended implementation.
+  // Atributul @Override  înseamnă că acestei metode i se oferă o implementare nouă / extinsă.
   @Override                                   
   public void sleep(){
-    // Between the brackets, we declare the new implementation.
+    // Între paranteze, declarăm noua implementare.
     System.out.println("Student sleeping");   
   }   
 }
 ```
-- Signature and return type **should match**
+- Semnătura și tipul de returnare **ar trebui să se potrivească**
 
 [/slide]
 
 [slide hideTitle]
 
-# Final Methods and Classes
+# Metode și clase finale
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-25-26-final-methods-and-final-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- `final` – defines a method that **cannot be overridden**
-  - we should use this tool when we want to preserve our method implementation down the class hierarchy
-  - `final` can be declared in any derived class and it remains for all deriving classes down the hierarchy
+- `final` - definește o metodă care **nu poate fi suprascrisă**
+  - ar trebui să folosim acest instrument atunci când dorim să ne păstrăm implementarea metodei în ierarhia de clase
+  - 'final' poate fi declarat în orice clasă derivată și rămâne pentru toate clasele derivate din ierarhie
 
 ```java
 public class Animal {
@@ -131,44 +131,44 @@ public class Animal {
 public class Dog extends Animal { 
   
   @Override
-  public void eat() {} // Error…
+  public void eat() {} // Eroare…
 }
 ```
 
-- **Inheriting from a final class is forbidden**
+- **Moștenirea de la o clasă finală este interzisă**
 
 ```java
 public final class Animal {
   …
 }
 
-public class Dog extends Animal { }      // Error…
-public class MyString extends String { } // Error…
-public class MyMath extends Math { }     // Error…
+public class Dog extends Animal { }      // Eroare…
+public class MyString extends String { } // Eroare…
+public class MyMath extends Math { }     // Eroare…
 ```
 
 [/slide]
 
 [slide hideTitle]
 
-# Inheritance Benefits 
+# Beneficiile moștenirii
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-27-inheritance-benefits-abstraction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Using inheritance, we provide an abstraction to the classes we use
-- We can reuse code, less code means fewer bugs
-- We can achieve **polymorphism**
-- Inheritance provides a clear model structure, which is easy to understand
-- With inheritance, if we identify a bug in a parent class, we can fix it for all child classes as well
+- Folosind moștenirea, oferim o abstractizare claselor pe care le folosim
+- Putem refolosi codul, mai puțin cod înseamnă mai puține bug-uri
+- Putem realiza **polimorfism**
+- Moștenirea oferă o structură clară a modelului, ceea ce e ușor de înțeles
+- Cu moștenire, dacă identificăm o eroare într-o clasă părinte, o putem remedia și pentru toate clasele copil
 
 [image assetsSrc="inheritance-example(13).png" /]
 
 ```java
-Person person = new Person();    // When we have a base class
-Student student = new Student(); // And another inherited class 
+Person person = new Person();    // Când avem o clasă de bază
+Student student = new Student(); // Și o altă clasă moștenită
 
 List<Person> people = new ArrayList(); 
-// We can contain both of them in a collection of the base class
+// Pe ambele le putem conține într-o colecție a clasei de bază
 
 people.add(person);
 people.add(student);
@@ -178,26 +178,26 @@ people.add(student);
 
 [slide hideTitle]
 
-# Extension
+# Extinderea
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-28-inheritance-benefits-extension-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- We can extend a class that we can not otherwise change, implementing the custom logic we need
+- Putem extinde o clasă pe care altfel nu o putem schimba, implementând logica personalizată de care avem nevoie
 
-On the diagram, we can notice that our CustomArrayList extends the ArrayList class. Keep in mind that we are not allowed to change the original implementation. However, we can add more methods or parameters to our class. That way we can expand the behavior of the parent class.
+Pe diagramă, putem observa că CustomArrayList extinde clasa ArrayList. Rețineți că nu avem voie să schimbăm implementarea inițială. Cu toate acestea, putem adăuga mai multe metode sau parametri la clasa noastră. Astfel putem extinde comportamentul clasei părinte.
 
 [image assetsSrc="inheritance-example(14).png" /]
 
 ```java
 public class MyArrayList<E> extends ArrayList<E>{
-  // Custom logic...
+  //  Logică personalizată...
 }
 ```
 
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Random Array List
+# Problemă cu soluție: Random Array List
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-29-problem-and-solution-random-array-list-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -205,13 +205,13 @@ public class MyArrayList<E> extends ArrayList<E>{
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Description
+# Descriere
 
-Create a **RandomArrayList** class that has all standard functionality of an **ArrayList**.
+Creați o clasă **RandomArrayList** care are toate funcționalitățile standard ale unei **ArrayList**.
 
-Add an additional function that **returns** and **removes** a random element from the list.
+Adăugați o funcție suplimentară care **returnează** și **elimină** un element aleatoriu din listă.
 
-- Public method: **getRandomElement(): Object**
+- Metoda publică: **getRandomElement(): Object**
 
 
 [/task-description]

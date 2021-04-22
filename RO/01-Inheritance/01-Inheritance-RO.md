@@ -1,25 +1,25 @@
-# Inheritance
+# Moştenirea
 
 [slide hideTitle]
 
-# What Is Inheritance
+# Ce este moștenirea
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-3-4-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Inheritance** is a mechanism that enables extending properties and methods from a **parent** object to a **child** object.
+**Moștenirea** este un mecanism care permite extinderea proprietăților și metodelor de la un obiect **părinte** la un obiect **copil**.
 
-- The class **passing its members** to a child class is called **Superclass** (Base Class, Parent class)
+- Clasa **care își transmite membrii** la o clasă copil se numește **Superclasă** (Clasa de bază, clasa părinte)
 
-- The class **receiving members** from its base class is called **Subclass** (Child class, Derived Class)
+- Clasa **care primește membri** din clasa sa de bază se numește **Subclasă** (Clasa copil, Clasa derivată)
 
- **Inheritance**  allows us to build classes using already existing ones, reusing their code.
+ **Moștenirea** ne permite să construim clase folosind cele deja existente, reutilizând codul acestora.
 
 ```java
 public class Mammal {...}
-// Mammal is the parent class, this class passes its members to its children.
+// Mamiferul este clasa părinte, această clasă își transmite membrii copiilor săi.
 
 public class Cow extends Mammal {...}
-// Cow is the child class, this class inherits the members of its parent class.
+// Vaca este clasa copil, această clasă moștenește membrii clasei părinte.
 ```
 
 [/slide]
@@ -27,23 +27,23 @@ public class Cow extends Mammal {...}
 
 [slide hideTitle]
 
-# Inheritance - Example
+# Moștenire- Exemplu
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-5-inheritance-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When we use inheritance, we can have more than one **Subclass**.
+Când folosim moștenirea, putem avea mai multe **Subclase**.
 
-In the example we create a base class `Person`, this class has properties that every person class will have, such as a `Name` and an `Address`.
+În exemplu, creăm o clasă de bază `Person`, această clasă are proprietăți pe care le va avea fiecare clasă de persoană, cum ar fi un 'Nume' și o 'Adresă'.
 
-When we create an object of type `Employee` our employee also needs to have its **name and address**.
+Când creăm un obiect de tipul 'Emplyee', angajatul nostru trebuie să aibă și **numele și adresa**.
 
-That is one of the reasons **inheritance** exists, instead of retyping the same properties for our `Employee` class we can `extend` the `Person` class, inherit and re-use its properties.
+Acesta este unul dintre motivele pentru care există **moștenirea**, în loc să retipăm aceleași proprietăți pentru clasa noastră „Employees”, putem „extinde” clasa „Person”, moșteni și reutiliza proprietățile acesteia.
 
-The subcalss is called called **derived** class.
+Subclasa se numește clasă **derivată**.
 
-We also extend the functionality by adding a `Company` parameter.
+De asemenea, extindem funcționalitatea prin adăugarea unui parametru 'Company'.
 
-Respectively, we do the same for the `Student` class, but with its own internal logic.
+Respectiv, facem același lucru pentru clasa 'Student', dar cu propria logică internă.
 
 
 [image assetsSrc="inheritance-example(1).png" /]
@@ -52,13 +52,13 @@ Respectively, we do the same for the `Student` class, but with its own internal 
 [/slide]
 
 [slide hideTitle]
-# Class Hierarchies
+# Ierarhiile de clasă
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-6-class-hierarchies-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Inheritance creates hierarchies of classes and/or interfaces in an application:**
+**Moștenirea creează ierarhii de clase și / sau interfețe într-o aplicație:**
 
-A real-life analog of **class hierarchies** is a  **family tree**, we have one class starting the family and down the branches, we have its children, which also have their own, etc.
+Un analog din viața reală a **ierarhiilor de clasă** este un **arbore genealogic**, avem o clasă care începe familia și coboară pe ramuri, avem copiii ei, care au și ei ai lor etc.
 
 [image assetsSrc="inheritance-example(2).png" /]
 
@@ -66,30 +66,30 @@ A real-life analog of **class hierarchies** is a  **family tree**, we have one c
 
 
 [slide hideTitle]
-# Class Hierarchies – Java Collection
+# Ierarhiile de clasă - Colecția Java
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-7-class-hierarchies-java-collection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `Object` class is a universal **Superclass** that is defined to be the root of the entire class hierarchy in Java by default.
+Clasa `Object` este o **Superclasă** universală care este definită ca fiind rădăcina întregii ierarhii de clase din Java în mod implicit.
 
-This means that every class that we create is implicitly a derivative of the `Object` class, without explicitly it.
+Aceasta înseamnă că fiecare clasă pe care o creăm este implicit un derivat al clasei 'Object', fără a fi explicită.
 
 [image assetsSrc="inheritance-example(3).png" /]
 
 [/slide]
 
 [slide hideTitle]
-# Inheritance in Java
+# Moștenirea în Java
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-9-inheritance-in-java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We **inherit** a given class using the **extends** keyword, placed right after the name of the given **Subclass**.
+**Moștenim** o anumită clasă folosind cuvântul cheie **extends**, plasat imediat după numele **subclasei** date.
 
-We use **inheritance** when we need to reuse code logic.
+Folosim **moștenire** când trebuie să refolosim logica codului.
 
-But in Java there is a rule, we can inherit **only one** parent per class.
+Dar în Java există o regulă, putem moșteni **un singur** părinte pe clasă.
 
-That is why in Java, we have **single inheritance**.
+De aceea, în Java, avem **moștenire unică**.
 
 ```java
 class Person { … }
@@ -104,22 +104,22 @@ class Employee extends Person { … }
 
 [slide hideTitle]
 
-# Derived Class
+# Clasa derivată
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-10-inheritance-derived-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A **derived class** takes all of its members from the **base class**.
+O **clasă derivată** îi ia pe toți membrii săi din **clasa de bază**.
 
-**Derived** classes can inherit and call all the **non-private** members of the **parent** class.
+Clasele **derivate** pot moșteni și apela toți membrii **ne-privați** ai clasei **părinte**.
 
-If a unit is declared as private, it is placed in memory when the class is initialized, but we can use it throughout the **derived** class.
+Dacă o unitate este declarată privată, ea este plasată în memorie când se inițializează clasa, dar o putem folosi în toată clasa **derivată**.
 
 [image assetsSrc="inheritance-example(5).png" /]
 
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Single Inheritance
+# Problemă cu soluție: Single Inheritance
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-17-problem-and-solution-single-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -127,19 +127,19 @@ If a unit is declared as private, it is placed in memory when the class is initi
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Description
-Create two classes: **Animal** and **Dog**.
+# Descriere
+Creați două clase: **Animal** și **Dog**.
 
-The **Animal** class should have single public method `.eat()` that prints: **"eating…"**
+Clasa **Animal** ar trebui să aibă o singură metodă publică `.eat()` care tipărește: **"eating…"**
 
-The **Dog** class should also have a single public method - `.bark()` that prints: **"barking…"**
-
-The **Dog** class should extend **Animal**.
+Clasa **Dog** ar trebui să aibă, de asemenea, o singură metodă publică - `.bark()` care tipărește: **"barking…"**
+Clasa **Dog** ar trebui să se extindă **Animal**.
 
 [image assetsSrc="inheritance-example(9).png" /]
 
-## Hints
-Use the `extends` keyword to create the hierarchy.
+## Sfaturi
+
+Utilizați cuvântul-cheie `extends` pentru a crea ierarhia.
 
 [/task-description]
 [tests]

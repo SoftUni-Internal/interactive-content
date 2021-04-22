@@ -1,30 +1,30 @@
-# Homework
+# Temă pentru acasă
 
 [slide hideTitle]
-# Problem: Person
+# Problemă: Person
 [code-task title="Person" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Person" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Description
-Мodel an application that stores data about different people. 
+# Descriere
+Modelați o aplicație care stochează date despre diferite persoane.
 
-It should allow for a **Person** or a **Child** to be entered. 
+Ar trebui să permită introducerea unei **persoane** sau a unui **copil**.
 
-The child class derives from the person class. 
+Clasa copil derivă din clasa persoană.
 
-Each person has a **name**, and an **age**. 
+Fiecare persoană are un **nume** și o **vârstă**.
 
-The **Person** class should also have **getters** for its fields.
+Clasa **Persoană** ar trebui să aibă și **getters** pentru câmpurile sale.
 
-Create a **Child** class that inherits **Person** and has the same public constructor definition. 
+Creați o clasă **Copil** care moștenește **Persoană** și are aceeași definiție a constructorului public.
 
-Attention: **Reuse the Person class's constructor**.
+Atenție: **Reutilizați constructorul clasei Person**.
 
-## Note
-You need a public class **Main**. 
+## Notă
+Aveți nevoie de o clasă publică **Main**.
 
-Create a package called **person**.
+Creați un pachet numit **persoană**.
 
 ## Sample Main()
 
@@ -44,17 +44,17 @@ public class Main {
 }
 ```
 
-# Examples
+# Exemple
 
-## Example 1
-| **Input** | **Output** |
+## Exemplul 1
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Peter | Peter |
 | 13 | 13 |
 |  |  |
 
-## Example 2
-| **Input** | **Output** |
+## Exemplul 2
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | George | George |
 | 10 | 10 |
@@ -530,10 +530,10 @@ public class T04_TestPersonFields \{
     private void validateField(Class clazz, ExpField expField) \{
         String expectedName = expField.name;
 
-        // Returns null if the field does not exist
+        // Returnează null dacă câmpul nu există
         Field actualField = getField(clazz, expectedName);
 
-        // Tests whether the field exist
+        // Testează dacă câmpul există
         String nameMessage = String.format(FIELD_NOT_PRESENT_ERROR_MESSAGE, clazz.getName(), expectedName);
         Assert.assertNotNull(nameMessage, actualField);
     \}
@@ -574,7 +574,7 @@ public class T05_TestGettersInstance \{
 
     @Test
     public void validateAstronautInstance() \{
-        // Arrange
+        // Aranjare
         Object expectedName = "Peter";
         Object expectedAge = 10;
 
@@ -582,12 +582,12 @@ public class T05_TestGettersInstance \{
         Class\<?\> childClass = getType("Child");
         Object childObject = createObjectInstance(childClass, childArgs);
 
-        // Act
-        // Invoke methods
+        // Acțiune
+        // Invocare metode
         Object actualName = getMethodValue(childObject, childClass, "getName", null);
         Object actualAge = getMethodValue(childObject, childClass, "getAge", null);
 
-        // Assert
+        // Afirmare
         String nameMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, childClass.getName(), "getName", actualName, expectedName);
         String ageMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, childClass.getName(), "getAge", actualAge, expectedAge);
         Assert.assertEquals(nameMessage, expectedName, actualName);
@@ -674,31 +674,31 @@ Test Passed!
 [/slide]
 
 [slide hideTitle]
-# Problem: Zoo
+# Problemă: Zoo
 [code-task title="Zoo" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Zoo" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Description
-Create a package called "zoo". It should contain the following classes: 
+# Descriere
+Creați un pachet numit „grădina zoologică”. Ar trebui să conțină următoarele clase:
 
 [image assetsSrc="inheritance-example(19).png" /]
 
-Follow the diagram and create the described structure. 
+Urmați diagrama și creați structura descrisă.
 
-**Each** one, except the **Animal** class, should **extend** **another class**. 
+**Fiecare**, cu excepția clasei **Animal**, ar trebui **să extindă** **o altă clasă**.
 
-The Animal class must contain the fields: **name – String** and a **Getter** for its **name**.
+Clasa Animal trebuie să conțină câmpurile: **name - String** și un **Getter** pentru **numele său**.
 
-Every class must have:
-- A public constructor, which accepts one parameter: **name**
+Fiecare clasă trebuie să aibă:
+- Un constructor public, care acceptă un parametru: **name**
 
-## Submit
+## Trimiterea
 
-**Zip** your package and upload it.
+**Închideți** pachetul și încărcați-l.
 
-## Note: 
-A public class Main is necessary to run the code.
+## Notă:
+O clasă publică Main este necesară pentru a rula codul.
 
 [/task-description]
 [tests]
@@ -858,27 +858,27 @@ Test Passed!
 [/slide]
 
 [slide hideTitle]
-# Problem: Players and Monsters
+# Problemă: Players and Monsters
 [code-task title="Players and Monsters" taskId="Java-OOP-Advanced-Inheritance-Players-and-Monsters" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Description
-Your task is to create the following game hierarchy: 
+# Descriere
+Sarcina dvs. este să creați următoarea ierarhie a jocului:
 
 [image assetsSrc="inheritance-example(20).png" /]
 
-Create a "Hero" class. It should contain the following members:
-- A public constructor, which accepts:
-    - **username – String**
-    - **level – int**
-- The following fields:
+Creați o clasă „Hero”. Ar trebui să conțină următorii membri:
+- Un constructor public, care acceptă:
     - **username - String**
-    - **level – int**
-- Getters for the username and the level
-- `toString()` method
+    - **level- int**
+- Următoarele câmpuri:
+    - **username - String**
+    - **level- int**
+- Obțineți numele de utilizator și nivelul
+- metoda `toString()`
 
-## Hint: Override the `toString()` method of the base class in the following way:
+## Sfat: Înlocuiți metoda `toString ()` a clasei de bază în felul următor:
 ```java
 @Override
 public String toString() {
@@ -888,8 +888,8 @@ public String toString() {
             this.getLevel());
 ```
 
-## Note
-You need a public **Main** class. Create a package called **hero**.
+## Notă
+Aveți nevoie de o clasă publică **Main**. Creați un pachet numit ** hero**.
 
 [/task-description]
 [tests]
@@ -1171,16 +1171,16 @@ public class T07_TestToStringMethodInstances \{
 
     @Test
     public void validateInstance() \{
-        // Arrange
+        // Aranjare
         Object\[\] bladeKnightArgs = new Object\[\]\{"New Hero", 25\};
         Class\<?\> bladeKnightClass = getType("BladeKnight");
         Object bladeKnightObject = createObjectInstance(bladeKnightClass, bladeKnightArgs);
 
         // Act
-        // Invoke methods
+        // Invocare metode
         Object actualBladeKnightToString = getMethodValue(bladeKnightObject, bladeKnightClass, "toString", null);
 
-        // Assert
+        // Afirmare
         String expectedBladeKnightToString = "Type: hero.BladeKnight Username: New Hero Level: 25";
         String bladeKnightMessage = String.format(METHOD_INCORRECT_RETURN_VALUE, bladeKnightClass.getName(), "toString", actualBladeKnightToString, expectedBladeKnightToString);
         Assert.assertEquals(bladeKnightMessage, actualBladeKnightToString, expectedBladeKnightToString);
@@ -1266,40 +1266,39 @@ Test Passed!
 [/slide]
 
 [slide hideTitle]
-# Problem: Need for Speed
+# Problemă: Need for Speed
 [code-task title="Need for Speed" taskId="Java-OOP-Advanced-Inheritance-Need-For-Speed" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 [task-description]
-# Description
-Create the following **hierarchy** with the following **classes**: 
+# Descriere
+Creați următoarea **ierarhie** cu următoarele **clase**:
 
 [image assetsSrc="inheritance-example(21).png" /]
 
-Create a base class called "Vehicle". It should possess the following members:
+Creați o clasă de bază numită „Vehicle”. Ar trebui să aibă următorii membri:
 - **DEFAULT_FUEL_CONSUMPTION** – **final static double (constant)**
 - **fuelConsumption – double**
 - **fuel – double**
 - **horsePower – int**
 - **Getters and Setters for all fields**
-- A public constructor which accepts (**fuel, horsePower**) and sets the **default fuel consumption** of the field called **fuelConsumption**
+- Un constructor public care acceptă (**fuel, horsePower**) și stabilește **default fuel consumption** al câmpului numit **fuelConsumption**
 - **void drive(double kilometers)**
-    - The **drive** method should have contain code logic to reduce the **fuel** based on the travelled kilometers and fuel consumption. 
-    Keep in mind that you can drive the vehicle only if you have enough fuel to finish the drive.
+    - Metoda **drive** ar trebui să conțină logică de cod pentru a reduce **combustibilul** pe baza kilometrilor parcurși și a consumului de combustibil.
+    Rețineți că puteți conduce vehiculul numai dacă aveți suficient combustibil pentru a termina conducerea.
 
-The default fuel consumption for a **Vehicle** is **1.25**. Some of the classes have different default fuel consumptions:
-- **SportCar – DEFAULT_FUEL_CONSUMPTION = 10**
-- **RaceMotorcycle – DEFAULT_FUEL_CONSUMPTION = 8**
-- **Car – DEFAULT_FUEL_CONSUMPTION = 3**
+Consumul implicit de combustibil pentru un **Vehicul** este **1,25**. Unele dintre clase au consumuri de combustibil implicite diferite:
+- **SportCar - DEFAULT_FUEL_CONSUMPTION = 10**
+- **RaceMotorcycle - DEFAULT_FUEL_CONSUMPTION = 8**
+- **Car - DEFAULT_FUEL_CONSUMPTION = 3**
 
-## Submit 
+## Submit
 
-**Zip** your package and upload it.
+**Închideți** pachetul și încărcați-l.
 
-## Hint	
-In the child classes' constructors use `super.setFuelConsumption()` to set **fuelConsumption**
-
-## Note
-a public class **Main** should be present. 
+## Sfat
+În constructorii claselor - copii, folosiți `super.setFuelConsumption()` pentru a seta **fuelConsumption**
+## Notă
+Ar trebui să fie prezentă o clasă publică **Main**.
 
 [/task-description]
 [tests]
@@ -1470,19 +1469,19 @@ public class T04_TestSportCarInstance \{
 
     @Test
     public void validateInstance() \{
-        // Arrange
+        // Aranjare
         Object\[\] vehicleArgs = new Object\[\]\{10.0, 200\};
         Class\<?\> vehicleClass = getType("SportCar");
         Object vehicleObject = createObjectInstance(vehicleClass, vehicleArgs);
 
         // Act
-        // Invoke methods
+        // Invocare metode
         getMethodValue(vehicleObject, vehicleClass, "drive", new Object\[\]\{1\}, double.class);
         Object actualFuel = getMethodValue(vehicleObject, vehicleClass, "getFuel", null);
         Object actualFuelConsumption = getMethodValue(vehicleObject, vehicleClass, "getFuelConsumption", null);
         Object actualHorsePower = getMethodValue(vehicleObject, vehicleClass, "getHorsePower", null);
 
-        // Assert
+        // Afirmare
         double expectedFuel = 0;
         double expectedFuelConsumption = 10;
         int expectedHorsePower = 200;
@@ -1722,19 +1721,19 @@ public class T06_TestFamilyCarInstance \{
 
     @Test
     public void validateInstance() \{
-        // Arrange
+        // Aranjare
         Object\[\] vehicleArgs = new Object\[\]\{10.0, 200\};
         Class\<?\> vehicleClass = getType("FamilyCar");
         Object vehicleObject = createObjectInstance(vehicleClass, vehicleArgs);
 
         // Act
-        // Invoke methods
+        // Invocare metode
         getMethodValue(vehicleObject, vehicleClass, "drive", new Object\[\]\{1\}, double.class);
         Object actualFuel = getMethodValue(vehicleObject, vehicleClass, "getFuel", null);
         Object actualFuelConsumption = getMethodValue(vehicleObject, vehicleClass, "getFuelConsumption", null);
         Object actualHorsePower = getMethodValue(vehicleObject, vehicleClass, "getHorsePower", null);
 
-        // Assert
+        // Afirmare
         double expectedFuel = 7;
         double expectedFuelConsumption = 3;
         int expectedHorsePower = 200;
@@ -1838,69 +1837,69 @@ Test Passed!
 [/slide]
 
 [slide hideTitle]
-# Problem: Restaurant
+# Problemă : Restaurant
 [code-task title="Restaurant" taskId="Java-OOP-Advanced-Inheritance-Restaurant" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 [task-description]
-# Description
-Create a **restaurant** package with the following classes and hierarchy:
+# Descriere
+Creați un pachet **restaurant** cu următoarele clase și ierarhie:
 
-There is Food and Beverages in the restaurant and they are all "products".
+Există alimente și băuturi în restaurant și toate sunt „produse”.
 
-The **Product** class must have the following members:
+Clasa **Product** trebuie să aibă următorii membri:
 
-- A public constructor with the following parameters: **String name, BigDecimal price**
+- Un constructor public cu următorii parametri: **String name, BigDecimal price**
 - **name – String**
 - **price – BigDecimal**
 - **Getters for all fields**
 
-The **Beverage** and the **Food** classes are "products". 
+Clasele **Beverage** și **Food** sunt „products”.
 
-The **Beverage** class must have the following members:
-- A public constructor with the following parameters: **String name, BigDecimal price, double milliliters**
+Clasa **Beverage** trebuie să aibă următorii membri:
+- Un constructor public cu următorii parametri: **String name, BigDecimal price, double milliliters**
 - **name – String**
 - **price – BigDecimal**
 - **milliliters – double**
 - **A Getter for "milliliters"**
 
-The **Food** class must have the following members:
-- A constructor with the following parameters: **String name, BigDecimal price, double grams**
+Clasa **Food** trebuie să aibă următorii membri:
+- Un constructor cu următorii parametri: **String name, BigDecimal price, double grams**
 - **name – String**
 - **price – double**
 - **grams – double**
 - **A Getter for "grams"**
 
-**HotBeverage** and **ColdBeverage** are **beverages** and they accept the following parameters upon initialization: **String name, BigDecimal price, double milliliters**
+**HotBeverage** și **ColdBeverage** sunt **băuturi** și acceptă următorii parametri la inițializare: **String name, BigDecimal price, double milliliters**
 
-**Coffee** and **Tea** are **hot beverage**s. The **Coffee** class must have the following additional members:
-- `double COFFEE_MILLILITERS = 50`
+**Coffee** și **Tea** sunt **băuturi calde**. Clasa **Coffee** trebuie să aibă următorii membri suplimentari:
+- `COFFEE_MILLILITERS double = 50`
 - `BigDecimal COFFEE_PRICE = 3.50`
 - **caffeine – double**
-- A Getter for **caffeine**
+- Un câștigător pentru **caffeine**
 
-**MainDish**, **Dessert** and **Starter** are all **food**.
- They all accept the following parameters upon initialization: **String name, BigDecimal price, double grams**. 
- The **Dessert** class should accept one more parameter in its constructor: **double calories**.
+**MainDish**, **Dessert** și **Starter** sunt **mâncare**.
+ Toți acceptă următorii parametri la inițializare: **String name, BigDecimal price, double grams**. 
+ Clasa **Desert** ar trebui să accepte încă un parametru în constructorul său: **double calories**.
 - **calories – double**
-- A **Getter for "calories"**
+- Un **getter pentru „calorii”**
 
-**Salmon**, **Soup** and **Cake** inherit the appropriate class.
+**Salmon**, **Soup** și **Cake** moștenesc clasa corespunzătoare.
 
-The **Cake** class should have the following members upon initialization:
+Clasa **Cake** ar trebui să aibă următorii membri la inițializare:
 - `double CAKE_GRAMS = 250`
 - `double CAKE_CALORIES = 1000`
 - `BigDecimal CAKE_PRICE = 5`
-The **Salmon** class should have the following members upon initialization:
-- `double SALMON_GRAMS = 22`
+Clasa **Salmon** ar trebui să aibă următorii membri la inițializare:
+- `SALMON_GRAMS dublu = 22`
 
-## Note
-There should be a public **Main** class. 
+## Notă
+Ar trebui să existe o clasă publică **Main**.
 
-Create a **restaurant** package.
+Creați un pachet **restaurant**.
 
 ## Submit
 
-**Zip** your package and upload it.
+**Arhivați** pachetul dvs. și încărcați-l.
 
 [/task-description]
 [tests]
@@ -2153,7 +2152,7 @@ public class T05_TestCakeInstance \{
 
     @Test
     public void validateInstance() \{
-        // Arrange
+        // Aranjare
         String expectedName = "Nedelq";
 
         Object\[\] cakeArgs = new Object\[\]\{expectedName\};
@@ -2161,13 +2160,13 @@ public class T05_TestCakeInstance \{
         Object cakeObject = createObjectInstance(cakeClass, cakeArgs);
 
         // Act
-        // Invoke methods
+        // Invocare metode
         Object actualName = getMethodValue(cakeObject, cakeClass, "getName", null);
         Object actualPrice = getMethodValue(cakeObject, cakeClass, "getPrice", null);
         Object actualCalories = getMethodValue(cakeObject, cakeClass, "getCalories", null);
         Object actualGrams = getMethodValue(cakeObject, cakeClass, "getGrams", null);
 
-        // Assert
+        // Afirmare
         BigDecimal expectedPrice = new BigDecimal(5);
         double expectedCalories = 1000.0;
         double expectedGrams = 250.0;
@@ -2285,7 +2284,7 @@ public class T06_TestCoffeeInstance \{
 
     @Test
     public void validateInstance() \{
-        // Arrange
+        // Aranjare
         String expectedName = "Lavazza";
         double expectedCaffeine = 1.2;
 
@@ -2294,13 +2293,13 @@ public class T06_TestCoffeeInstance \{
         Object caffeineObject = createObjectInstance(caffeineClass, caffeineArgs);
 
         // Act
-        // Invoke methods
+        // Invocare metode
         Object actualName = getMethodValue(caffeineObject, caffeineClass, "getName", null);
         Object actualPrice = getMethodValue(caffeineObject, caffeineClass, "getPrice", null);
         Object actualCaffeine = getMethodValue(caffeineObject, caffeineClass, "getCaffeine", null);
         Object actualMilliliters = getMethodValue(caffeineObject, caffeineClass, "getMilliliters", null);
 
-        // Assert
+        // Afirmare
         BigDecimal expectedPrice = new BigDecimal(3.5);
         double expectedMilliliters = 50.0;
 
@@ -2406,66 +2405,65 @@ Test Passed!
 [/slide]
 
 [slide hideTitle]
-# Problem: Animals
+# Problemă: Animals
 
 [code-task title="Animals" taskId="Java-OOP-Advanced-Inheritance-Animals" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
 [task-description]
-# Description
-Create a hierarchy(package) of **animals**. 
+# Descriere
+Creați o ierarhie (pachet) de **animals**.
 
-Your program should have three different animals – **Dog**, **Frog** and **Cat**. 
+Programul dvs. ar trebui să aibă trei animale diferite - **Dog**, **Frog** și **Cat**.
 
-Deeper in the hierarchy you should have two additional classes – **Kitten** and **Tomcat**. 
+Mai adânc în ierarhie ar trebui să aveți două clase suplimentare - **Kitten** and **Tomcat**
+**Kittens sunt „Femei”, iar Tomcats sunt „Bărbați”.**
 
-**Kittens are "Female" and Tomcats are "Male".**
+Toate tipurile de animale ar trebui să poată produce un fel de sunet - „String produceSound ()”.
 
-All types of animals should be able to produce some kind of sound - `String produceSound()`.
+De exemplu, câinele ar trebui să poată să latre.
 
-For example, the dog should be able to bark.
+ Sarcina dvs. este să modelați ierarhia și să testați funcționalitatea acesteia.
 
- Your task is to model the hierarchy and test its functionality. 
+ Creați un animal de fiecare fel și faceți-i pe toți să producă sunet și creați getters pentru toate domeniile.
 
- Create an animal of each kind and make them all produce sound and create getters for all fields.
+## Intrare
+Vi se vor da câteva linii de intrare.
 
-## Input
-You will be given some lines of input.
+Fiecare două rânduri vor reprezenta un animal.
 
-Each two lines will represent an animal.
+Pe prima linie va fi tipul de animal și pe a doua - numele, vârsta și sexul.
 
-On the first line will be the type of animal and on the second – the name, the age and the gender. 
+Când este dată comanda „**Beast!**”, opriți intrarea și tipăriți toate animalele în formatul prezentat mai jos.
 
-When the command "**Beast!**" is given, stop the input and print all the animals in the format shown below.
+## Ieșire
+- Imprimați informațiile pentru fiecare animal pe trei linii. Pe prima linie, tipăriți: „\{**animalType**\}”
+- Pe a doua linie tipăriți: "\{**name**\} \{**age**\} \{**gender**\}"
+- Pe a treia linie tipăriți sunetele pe care le produce: "\{**produceSound()**\}"
 
-## Output
-- Print the information for each animal on three lines. On the first line, print: "\{**animalType**\}"
-- On the second line print: "\{**name**\} \{**age**\} \{**gender**\}"
-- On the third line print the sounds it produces: "\{**produceSound()**\}"
-
-## Constraints
-- Each **Animal** should have a **name**, an **age** and a **gender**
-- **All** input values should **not be blank** (e.g. name, age and so on…)
-- If you receive an input for the **gender** of a **Tomcat** or a **Kitten**, ignore it but **create** the animal
-- If the input is invalid for one of the properties, throw an exception with message: "**Invalid input!**"
-- Each animal should have the functionality to `produceSound()`
-- Here is the type of sound each animal should produce:
+## Limitări
+- Fiecare **Animal** ar trebui să aibă un **name**, o **age** și un **gender**
+- **Toate** valorile de intrare nu trebuie **să fie necompletate** (de exemplu, numele, vârsta și așa mai departe ...)
+- Dacă primiți o intrare pentru **gender** unui **Tomcat** sau a unei **Kitten**, ignorați-l, dar **creați** animalul
+- Dacă intrarea nu este validă pentru una dintre proprietăți, aruncați o excepție cu mesajul: "**Invalid input!**"
+- Fiecare animal ar trebui să aibă funcționalitatea de a „produceSound ()”
+- Iată ce tip de sunet ar trebui să producă fiecare animal:
     - **Dog: "Woof!"**
     - **Cat: "Meow meow"**
     - **Frog: "Ribbit"**
     - **Kittens: "Meow"**
     - **Tomcat: "MEOW"**
 
-## Hint
-To find the name of the class you can use `this.getClass().getSimpleName()` in `toString()` method inside **Animal** class.
+## Sfat
+Pentru a găsi numele clasei, puteți folosi `this.getClass().GetSimpleName()` în metoda `toString()` din clasa **Animal**.
 
-## Note
-You need a public class **Main**.
+## Notă
+Aveți nevoie de o clasă publică **Main**.
 
 
-# Examples
+# Exemple
 
-## Example 1
-| **Input** | **Output** |
+## Exemplu 1
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Cat | Cat  |
 | Tom 12 Male | Tom 12 Male |
@@ -2475,15 +2473,15 @@ You need a public class **Main**.
 |  | Woof! |
 |  |  |
 
-## Example 2
-| **Input** | **Output** |
+## Exemple 2
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Frog | Frog  |
 | Kermit 12 Male | Kermit 12 Male |
 | Beast! | Ribbit |
 |  |  |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Frog | Invalid input! |
 | Froakie -2 Male | Frog |
@@ -2622,7 +2620,7 @@ public class T03_TestDogInstance \{
 
     @Test
     public void validateInstance() \{
-        // Arrange
+        // Aranjare
         String expectedName = "Sharo";
         int expectedAge = 12;
         String expectedGender = "Male";
@@ -2632,13 +2630,13 @@ public class T03_TestDogInstance \{
         Object animalObject = createObjectInstance(animalClass, animalArgs);
 
         // Act
-        // Invoke methods
+        // Invocare metode
         Object actualName = getMethodValue(animalObject, animalClass, "getName", null);
         Object actualAge = getMethodValue(animalObject, animalClass, "getAge", null);
         Object actualGender = getMethodValue(animalObject, animalClass, "getGender", null);
         Object actualSound = getMethodValue(animalObject, animalClass, "produceSound", null);
 
-        // Assert
+        // Afirmare
 
         String expectedSound = "Woof!";
 
@@ -2754,7 +2752,7 @@ public class T04_TestFrogInstance \{
 
     @Test
     public void validateInstance() \{
-        // Arrange
+        // Aranjare
         String expectedName = "Gaag";
         int expectedAge = 12;
         String expectedGender = "Male";
@@ -2764,13 +2762,13 @@ public class T04_TestFrogInstance \{
         Object animalObject = createObjectInstance(animalClass, animalArgs);
 
         // Act
-        // Invoke methods
+        // Invocare metode
         Object actualName = getMethodValue(animalObject, animalClass, "getName", null);
         Object actualAge = getMethodValue(animalObject, animalClass, "getAge", null);
         Object actualGender = getMethodValue(animalObject, animalClass, "getGender", null);
         Object actualSound = getMethodValue(animalObject, animalClass, "produceSound", null);
 
-        // Assert
+        // Afirmare
 
         String expectedSound = "Ribbit";
 
@@ -2886,7 +2884,7 @@ public class T05_TestKittenInstance \{
 
     @Test
     public void validateInstance() \{
-        // Arrange
+        // Aranjare
         String expectedName = "Gaag";
         int expectedAge = 12;
         String expectedGender = "Female";
@@ -2896,13 +2894,13 @@ public class T05_TestKittenInstance \{
         Object animalObject = createObjectInstance(animalClass, animalArgs);
 
         // Act
-        // Invoke methods
+        // Invocare metode
         Object actualName = getMethodValue(animalObject, animalClass, "getName", null);
         Object actualAge = getMethodValue(animalObject, animalClass, "getAge", null);
         Object actualGender = getMethodValue(animalObject, animalClass, "getGender", null);
         Object actualSound = getMethodValue(animalObject, animalClass, "produceSound", null);
 
-        // Assert
+        // Afirmare
 
         String expectedSound = "Meow";
 
@@ -3018,7 +3016,7 @@ public class T06_TestTomcatInstance \{
 
     @Test
     public void validateInstance() \{
-        // Arrange
+        // Aranjare
         String expectedName = "Tomcat";
         int expectedAge = 12;
         String expectedGender = "Male";
@@ -3028,14 +3026,14 @@ public class T06_TestTomcatInstance \{
         Object animalObject = createObjectInstance(animalClass, animalArgs);
 
         // Act
-        // Invoke methods
+        // Invocare metode
         Object actualName = getMethodValue(animalObject, animalClass, "getName", null);
         Object actualAge = getMethodValue(animalObject, animalClass, "getAge", null);
         Object actualGender = getMethodValue(animalObject, animalClass, "getGender", null);
         Object actualSound = getMethodValue(animalObject, animalClass, "produceSound", null);
         Object actualToString = getMethodValue(animalObject, animalClass, "toString", null);
 
-        // Assert
+        // Afirmare
 
         String expectedSound = "MEOW";
         String expectedToString = "Tomcat" + System.lineSeparator() +

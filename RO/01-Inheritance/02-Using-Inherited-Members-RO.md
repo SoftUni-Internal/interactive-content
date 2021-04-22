@@ -1,13 +1,13 @@
 [slide hideTitle]
-# Using Inherited Members
+# Folosirea membrilor moșteniți
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-11-using-inherited-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We can **access inherited members**.
+Putem **accesa membrii moșteniți**.
 
-We do it in the same way we **call class members**.
+O facem în același mod în care **apelăm membrii clasei**.
 
-First, we create an object of the derived class, when we call it, we can access all **non-private** members - **derived** or **declared**.
+În primul rând, creăm un obiect din clasa derivată, când o apelăm, putem accesa toți membrii **non-privați** - **derivați** sau **declarați**.
 
 ```java
 class Person { public void sleep() { … } }
@@ -23,40 +23,40 @@ Employee employee = new Employee();
 employee.sleep();
 ```
 
-We can also hold a **reference** to an object of the derived class in the base class variable.
+De asemenea, putem deține o **referință** la un obiect din clasa derivată din variabila clasei de bază.
 
 ```java
 Person student = new Student();
-// The base class variable holds the object of the Subclass type.
+// Variabila clasei de bază deține obiectul tipului de subclasă.
 
 Person employee = new Employee();
 ```
 
-What changes here is that we will only have access to the **base class members**, as we declare the `Student` as a `Person`.
+Ceea ce se schimbă aici este că vom avea acces doar la **membrii clasei de bază**, întrucât declarăm 'Student' ca 'Person'.
 
 [/slide]
 
 [slide hideTitle]
 
-# Reusing Constructors
+# Reutilizarea constructorilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-12-reusing-constructors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Constructors are **not inherited**.
+Constructorii **nu sunt moșteniți**.
 
-When a **parent class** declares a **constructor** with parameters, every unit that inherits from this class must be able to use the **parent class'** constructor.
+Când o **clasă părinte** declară un **constructor** cu parametri, fiecare unitate care moștenește din această clasă trebuie să poată utiliza constructorul **clasei părinte”**.
 
-That is because the base constructor gets called automatically when the derived class is created.
+Acest lucru se datorează faptului că constructorul de bază este apelat automat atunci când este creată clasa derivată.
 
-The parameters in the **constructor** of the derived class must be passed in to the parent **constructor** with the `super` keyword.
+Parametrii din **constructorul** din clasa derivată trebuie să fie transmise către constructorul **părinte** cu cuvântul cheie `super`.
 
-Here is an example of "constructor chaining".
+Iată un exemplu de „înlănțuire a constructorului”.
 
 ```java
 class Person{
     private String name;
     
-    // If we do not have a parameterized constructor in the parent class, we can skip calling it in the Subclass.
+    // Dacă nu avem un constructor parametrizat în clasa părinte, putem sări peste apelarea acestuia în subclasă.
     public Person(String name){
         this.name = name;
     }
@@ -65,13 +65,13 @@ class Person{
 class Student extends Person {
   private School school;
   public Student(String name, School school) {  
-  // If we do not call our Superclass' constructor, a compile-time error will be thrown.
+  // Dacă nu apelăm la constructorul Superclasei noastre, va fi redată o eroare în timpul compilării.
   
-    super(name); // It is a good practice to call the constructor first.
+    super(name); // Este o practică bună să chemați mai întâi constructorul.
     this.school = school;
   }
 
-// You can also fill the parent constructor with some default values, just like this.
+// De asemenea, puteți umple constructorul părinte cu unele valori implicite, la fel.
   public Student(School school){ 
       String defaultName = "John Doe";
       super(defaultName);
@@ -85,16 +85,16 @@ class Student extends Person {
 
 [slide hideTitle]
 
-# Thinking about Inheritance – Extends
+# Gândirea la moștenire - Extends
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-13-thinking-about-inheritance-extends-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Here is what happens in memory when a class **inherits** another one.
+Iată ce se întâmplă în memorie când o clasă **moștenește** alta.
 
 
-When we inherit a class, memory is allocated for the **parent**, plus the extra memory required for the **derived class**. (see the image below)
+Când moștenim o clasă, memoria este alocată pentru **părinte**, plus memoria suplimentară necesară pentru **clasa derivată**. (vezi imaginea de mai jos)
 
-In such cases all members of the **parent** are declared, as well as all the new members from the **derived class**.
+În astfel de cazuri sunt declarați toți membrii **părinte**, precum și toți membrii noi din **clasa derivată**.
 
 [image assetsSrc="inheritance-example(6).png" /]
 
@@ -102,55 +102,55 @@ In such cases all members of the **parent** are declared, as well as all the new
 
 [slide hideTitle]
 
-# Inheritance has a Transitive Relation
+# Moștenirea are o relație tranzitivă
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-14-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```java
-class Person { … }                          // A Base class holding some members.
-class Student extends Person { … }          // The Student calss will inherit all members from Person and can add more.
-class CollegeStudent extends Student { … }  // The CollegeStudent class will inherit all members from both Student and Person.
+class Person { … }                          // O clasă de bază care deține câțiva membri.
+class Student extends Person { … }          // Clasele Student vor moșteni toți membrii de la Persoană și pot adăuga mai mulți.
+class CollegeStudent extends Student { … }  // Clasa CollegeStudent va moșteni toți membrii de la Student și Persoană.
 ```
 
-This is what **transitive relation** is: a **Subclass** gets all the functionality from it is Superclasses up the hierarchy.
+Aceasta este ceea ce este **relația tranzitivă**: o **Subclasă** obține toate funcționalitățile din Superclasele sale de mai sus în ierarhie.
 
 [image assetsSrc="inheritance-example(7).png" /]
 
 [/slide]
 
 [slide hideTitle]
-# Multiple Inheritance
+# Moștenirea multiplă
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-15-multiple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In Java, **multiple inheritance is not available.**
+În Java, **moștenirea multiplă nu este disponibilă.**
 
 ```java
 public class Person {...}
 
 public class CollegeStudent {...}
 
-public class Student extends Person, CollegeStudent // Not allowed
+public class Student extends Person, CollegeStudent // Nu este permis
 ```
 
-Instead, if we need one class to be from two or more families, we can implement additional **interfaces** on a single class.
+În schimb, dacă avem nevoie de o clasă pentru a fi din două sau mai multe familii, putem implementa **interfețe** suplimentare pe o singură clasă.
 
-**Interfaces** will be covered further in our lessons.
+**Interfețele** vor fi acoperite în continuare în lecțiile noastre.
 
 [/slide]
 
 [slide hideTitle]
-# Access to Base Class Members
+# Acces la membrii clasei de bază
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-16-access-to-base-class-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Sometimes we need to access the base class members.
+Uneori trebuie să accesăm membrii clasei de bază.
 
-To access the base class members, use the `super` keyword.
+Pentru a accesa membrii clasei de bază, utilizați cuvântul-cheie `super`.
 
-We can also reuse some of the logic.
+Putem, de asemenea, să refolosim o parte din logică.
 
-**Example:**
+**Exemplu:**
 
 ```java
 class Person {
@@ -164,7 +164,7 @@ class Person {
 class Employee extends Person { 
   public void fire(String reasons) { 
     System.out.println(
-        super.name + // We use the `super` keyword to access the Superclass/Inherited class members.
+        super.name + // Folosim cuvântul cheie `super` pentru a accesa membrii clasei Superclass / Inherited.
         " got fired because " + reasons);
   }
 }
@@ -172,7 +172,7 @@ class Employee extends Person {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Multiple Inheritance
+# Problemă cu soluție: Multiple Inheritance
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-18-problem-and-solution-multiple-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -180,16 +180,16 @@ class Employee extends Person {
 [code-upload allowedMemory="30" /]
 
 [task-description]
-## Description
-Create three classes named **Animal, Dog** and **Puppy**. 
+## Descriere
+Creați trei clase numite **Animal**, **Dog** și **Puppy**.
 
-**Animal** - holding a single public method `.eat()` that prints: **"eating…"**.
+**Animal** - care deține o singură metodă publică `.eat()` care tipărește: **„eating...”**.
 
-**Dog** - holding a single public method `.bark()` that prints: **"barking…"**.
+**Dog** - care deține o singură metodă publică `.bark()` care tipărește: **„barking...”**.
 
-**Puppy** - holding a single public method weep() that prints: **"weeping…"**.
+**Puppy** - care deține o singură metodă publică `weep()` care tipărește: **„weepings...”**.
 
-**Dog** - should extend **Animal**. **Puppy** should extend **Dog**. 
+**Dog** - ar trebui să se extindă **Animal**. **Puppy** ar trebui să extindă **Dog**.
 
 [image assetsSrc="inheritance-example(10).png" /]
 
@@ -251,7 +251,7 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problem with Solution: Hierarchical Inheritance
+# Problemă cu soluție: Hierarchical Inheritance
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-19-problem-and-solution-hierarchical-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -259,16 +259,16 @@ Test Passed!
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Description
-Create three classes named **Animal**, **Dog** and **Cat**. 
+# Descriere
+Creați trei clase numite **Animal**, **Dog** și **Cat**.
 
-**Animal** - with a single public method `.eat()` that prints: **"eating…"**
+**Animal** - cu o singură metodă publică `.eat()` care imprimă: **„eating ...”**
 
-**Dog** - with a single public method `.bark()` that prints: **"barking…"**
+**Dog** - cu o singură metodă publică `.bark()` care tipărește: **„barking ...”**
 
-**Cat** - with a single public method `.meow()` that prints: **"meowing…"**
+**Cat** - cu o singură metodă publică `.meow()` care tipărește: **„meowing ...”**
 
-**Dog** and **Cat** should inherit from **Animal**.
+**Dog** și **Cat** ar trebui să moștenească de la **Animal**.
 
 [image assetsSrc="inheritance-example(11).png" /]
 
