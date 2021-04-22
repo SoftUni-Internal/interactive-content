@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem: Online Shop
+# Problemă cu Soluție: Online Shop
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/10-Exam-Prep-1/RO/interactive-java-oop-advanced-exam-preparation-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -14,7 +14,7 @@ Acest lucru constă în construirea unui proiect de magazin online bazat pe text
 Proiectul va conține **clase de model** și o **clasă de controler**, care gestionează **interacțiunea** dintre **perifericele**, **componentele** și **calculatoarele**.
 
 
-# Configurare
+## Configurare
 
 **Aici este un link către** [resurse] (https://videos.softuni.org/resources/java/java-oop-advanced/11.Java-OOP-Advanced-Exam-Preparation-2.zip) **pentru această sarcină.**
 
@@ -27,7 +27,7 @@ Proiectul va conține **clase de model** și o **clasă de controler**, care ges
 - Asigurați-vă că nu aveți **câmpuri publice** nicăieri
 
 
-# Descriere
+## Descriere
 
 **Pentru evaluarea acestei sarcini, logica metodelor nu este inclusă.**
 
@@ -35,7 +35,7 @@ Vi se pun la dispoziție interfețe de care aveți nevoie pentru a le implementa
 
 Există cele **patru** tipuri de entități prezente în aplicație: **Product**, **Component**, **Peripheral** și **Computer**.
 
-# Produs
+## Produs
 
 **Produsul de bază** este o **clasă de bază** pentru **componente, periferice** și **calculatoare** și **nu ar trebui să ofere opțiunea de a fi instanțiată**.
 
@@ -79,7 +79,7 @@ Sunt câteva tupuri de **products**:
 - **Peripheral**
 - **Computer**
 
-# Component
+## Component
 
 **BaseComponent** este o clasă derivată din **BaseProduct** și o **clasă de bază** pentru orice **component** și **nu ar trebui să ofere opțiunea de a fi instanțiată**.
 
@@ -110,7 +110,7 @@ Există mai multe tipuri concrete de **components** în care **performanța gene
 
 **Exemplu**: Dacă creăm  **CentralProcessingUnit**  cu performanță generală - 50 la constructor și un multiplicator de **1,25** performanța sa generală ar trebui să fie 62,50.
 
-# Periferic
+## Periferic
 
 **BasePeripheral** este o clasă derivată din **BaseProduct** și o **clasă de bază** pentru orice **periferic** și **nu ar trebui să ofere opțiunea de a fi instanțiată**.
 
@@ -137,7 +137,7 @@ Există mai multe tipuri concrete de **peripherals**:
 - **Monitor**
 - **Mouse**
 
-# Calculator
+## Calculator
 
 **BaseComputer** este o clasă derivată din **BaseProduct** și o **clasă de bază** pentru orice **calculator** și **nu ar trebui să ofere opțiunea de a fi instanțiată**.
 

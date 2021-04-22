@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem: Online Shop Business Logic
+# Problemă cu Soluție: Online Shop Business Logic
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/10-Exam-Prep-1/RO/interactive-java-oop-advanced-exam-preparation-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

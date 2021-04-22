@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem: Online Shop Unit Tests
+# Problem with Solution: Online Shop Unit Tests
 
 [code-task title="Online Shop Unit Tests" taskId="oop-advanced-java-exam-preparation-2-Online-Shop-Unit-Tests" executionType="tests-execution" executionStrategy="java-unit-tests" requiresInput]
 

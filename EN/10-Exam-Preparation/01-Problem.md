@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem: Online Shop
+# Problem with Solution: Online Shop
 [code-task title="Online Shop" timeLimit=5000 taskId="oop-advanced-java-exam-preparation-2-Online-Shop" executionType="tests-execution" executionStrategy="java-project-tests"]   
 [code-upload allowedMemory="30" /]
 
