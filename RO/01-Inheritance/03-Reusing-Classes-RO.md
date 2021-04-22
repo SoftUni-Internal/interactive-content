@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Modificatori de acces
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-20-21-reusing-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-20-21-reusing-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Clasele derivate **pot accesa toți membrii publici** și **protejați** ai clasei de bază
 - Clasele derivate pot accesa **implicit** membri **dacă se află în același pachet**
@@ -24,7 +24,7 @@ class Person {
 
 # Umbrirea variabilelor
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-22-shadowing-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-22-shadowing-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Clasele derivate **pot ascunde / umbri** variabile superclaselor prin implementarea unei unități cu același nume
 
@@ -54,7 +54,7 @@ class Patient extends Person {
 
 # Umbrirea variabilelor – Access
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-23-shadowing-variables-access-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-23-shadowing-variables-access-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Folosim **super** și **this** pentru a specifica accesul membrilor
 
@@ -76,7 +76,7 @@ class Patient extends Person {
 [slide hideTitle]
 # Suprascrierea metodelor derivate
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-24-overriding-derived-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-24-overriding-derived-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Suprascrierea** este un mecanism în care putem seta o implementare personalizată a unei metode de clasă date în ierarhie.
 
@@ -117,7 +117,7 @@ public class Student extends Person {
 
 # Metode și clase finale
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-25-26-final-methods-and-final-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-25-final-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - `final` - definește o metodă care **nu poate fi suprascrisă**
   - ar trebui să folosim acest instrument atunci când dorim să ne păstrăm implementarea metodei în ierarhia de clase
@@ -153,7 +153,7 @@ public class MyMath extends Math { }     // Eroare…
 
 # Beneficiile moștenirii
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-27-inheritance-benefits-abstraction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-27-inheritance-benefits-abstraction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Folosind moștenirea, oferim o abstractizare claselor pe care le folosim
 - Putem refolosi codul, mai puțin cod înseamnă mai puține bug-uri
@@ -180,7 +180,7 @@ people.add(student);
 
 # Extinderea
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-28-inheritance-benefits-extension-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-28-inheritance-benefits-extension-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Putem extinde o clasă pe care altfel nu o putem schimba, implementând logica personalizată de care avem nevoie
 
@@ -199,7 +199,7 @@ public class MyArrayList<E> extends ArrayList<E>{
 [slide hideTitle]
 # Problemă cu soluție: Random Array List
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-29-problem-and-solution-random-array-list-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-29-problem-and-solution-random-array-list-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Random Array List" timeLimit=5000 taskId="Java-OOP-Advanced-Inheritance-Random-Array-List" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
