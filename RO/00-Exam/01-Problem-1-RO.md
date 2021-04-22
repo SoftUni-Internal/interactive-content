@@ -67,14 +67,14 @@ Pentru acest tip de mașină, **centimetrii săi cubi ar trebui să fie setați 
 
 **minimul său de putere este de 400**, maximul său de **putere este de 600**.
 
-Dacă primiți o valoare de cai putere care nu se încadrează în intervalul dat, aceasta ar trebui să conducă la **IllegalArgumentException** cu mesajul: **"Invalid horse power:** \{**horsepower**\}**.**"
+Dacă primiți o valoare de cai putere care nu se încadrează în intervalul dat, aceasta ar trebui să conducă la **IllegalArgumentException** cu mesajul: "**Invalid horse power:** \{**horsepower**\}**.**"
 
 ### Mașină de sport
 Pentru acest tip de mașină, **centimetrii săi cubi ar trebui să fie setați la 3000**.
 
 Este minim **de cai putere 200**, maxim **de cai putere este 450**.
 
-Dacă primiți o valoare de cai putere care nu se află în intervalul dat, aceasta ar trebui să conducă la  **IllegalArgumentException** cu mesajul: **"Invalid horse power:** \{**horsepower**\}**.**"
+Dacă primiți o valoare de cai putere care nu se află în intervalul dat, aceasta ar trebui să conducă la  **IllegalArgumentException** cu mesajul: "**Invalid horse power:** \{**horsepower**\}**.**"
 
 # Driver
 
@@ -124,7 +124,7 @@ Un **Driver** ar trebui să ia următoarele valori la inițializare:
   * fiecare nume este unic
 - **laps - int**
   * dacă turațiile de cursă sunt mai mici de **1**, aceasta ar trebui să aibă ca rezultat  **IllegalArgumentException** cu mesajul "**Laps cannot be less than 1.**"
--**drivers - a collection of Drivers**
+- **drivers - a collection of Drivers**
 
 
 ## Comportament
