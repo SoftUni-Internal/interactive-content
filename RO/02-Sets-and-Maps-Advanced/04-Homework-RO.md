@@ -3431,7 +3431,7 @@ Apoi, printați bucățile **rămase**, fragmentele, firele, ordonate după **ca
 
 [hints]
 [hint]
-Store the key and junk materials in two different data structures.
+Stocați cheia și resturile de materiale în două structuri de date diferite. 
 
 ```java
 Map<String, Integer> legendaryResources = new TreeMap<>();
@@ -3443,7 +3443,7 @@ Map<String, Integer> trashResources = new TreeMap<>();
 ```
 [/hint] 
 [hint]
-Read lines of input until the item is obtained:
+Citiți liniile de date de intrare până se obține obiectul.
 
 ```java
 while (!legendaryObtained) {
@@ -3452,7 +3452,7 @@ while (!legendaryObtained) {
 ```
 [/hint] 
 [hint]
-Split the tokens on each input line and iterate through them.
+Împărțiți delimitatorii pentru fiecare linie cu date de intrare și iterați prin aceștia. 
 
 ```java
 String[] tokens = scan.nextLine().split("\\s+");
