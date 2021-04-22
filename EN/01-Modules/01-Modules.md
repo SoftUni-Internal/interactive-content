@@ -28,7 +28,7 @@ There are numerous benefits when it comes to using modules:
 
 There are **three main ways** to create **modules** in your program:
 
-- Using **Immediately-invoked function expressions**\(IIFE\)
+- Using **immediately-invoked function expressions**\(IIFE\)
 
 - Using Node.js **require** and **export**
 

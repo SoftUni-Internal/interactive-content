@@ -114,6 +114,7 @@ Here are some commonly used ones:
 
 - The `http` module
     * used to create an **HTTP server**
+    * there is an `https` module as well
 
 ```js
 let http = require('http');
@@ -131,6 +132,14 @@ let url = require('url');
 
 ```js
 let fs = require('fs');
+```
+
+- The `zlib` module:
+    * provides a way of zipping and unzpping files
+    * often used in conjunction with ``fs
+
+```js
+var zlib = require('zlib');
 ```
 
 [/slide]
