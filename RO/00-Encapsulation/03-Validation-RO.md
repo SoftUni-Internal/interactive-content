@@ -61,11 +61,11 @@ Extindeți clasa **Person** cu o proprie validare pentru fiecare câmp:
 
 Imprimați **mesajul** corespunzător pentru utilizatorul final (vedeți **exemplul** pentru mesaje). 
 
-Nu folosiți  `System.out.println()` în clasa **Person**.
+Nu folosiți `System.out.println()` în clasa **Person**.
 
 
 # Exemplu
-| **Intrare** | **ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 | A person's age cannot be zero or negative integer |
 | George Air -6 2200 | A person's first name cannot be less than 3 symbols |
