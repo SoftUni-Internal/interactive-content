@@ -1,71 +1,71 @@
 [slide hideTitle]
 
-# The Seven Testing Principles
+# Cele Șapte Principii de Testare
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-3-10-seven-testing-principles-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There are seven **fundamental** testing principles that make the process of testing software more efficient:
+Există șapte principii **fundamentale** de testare care fac procesul testării software mai eficient:
 
-## 1. Testing is context-dependent
+## 1. Testarea este dependentă de context
 
-Different kinds of software must be tested differently.
+Diferite tipuri de software trebuie testate diferit.
 
-**For example:**
+**De exemplu:**
 
-We can have different domains like a **banking platform**,  a **marketing **,  or an **advertisement**, to name a few.
+Avem diferite domenii precum o **platformă bancară**, una de **marketing**, sau una **publicitară**, pentru a numi câteva.
 
-Each of these domains will be tested differently based on their **requirements**, **functions**, **different techniques**, etc.
+Fiecare dintre aceste domenii va fi testat în mod diferit în funcție de **cerințe**, **funcții**, **diferite tehnici**, etc.
 
-The same goes for software applications.
+Același lucru se aplică și în cazul aplicațiilor software.
 
-## 2. Exhaustive testing is impossible
+## 2. Testarea exhaustivă este imposibilă
 
-Put simply - we cannot test everything. 
+În termeni simpli - nu putem testa tot. 
 
-There is usually a near-**infinite** number combinations of **input data**.
+De obicei există un număr de combinații aproape **infinit** de **date de intrare**.
 
-Instead, we can test a **few combinations** based on **priority** using different techniques.
+În schimb, putem testa **câteva combinații** în funcție de **prioritate** folosind diferite tehnici.
 
-Exhaustive testing takes great effort and usually does not provide the expected result.
+Testarea exhaustivă necesită un efort deosebit și de obicei nu furnizează rezultatul așteptat.
 
-It is widely endorsed to test input data using more speciffic methods like **Boundary Value Analysis** or **Equivalence Partitioning**.
+Este încurajată pe scară largă testarea datelor de intrare prin utilizarea unor metode mai specifice precum **Analiza Valorii Limită (Boundary Value Analysis)** sau **Partiționarea Echivalenței (Equivalence Partitioning)**.
 
-## 3. Defect Clustering
+## 3. Gruparea Defectelor
 
-Most of the defects usually found during **pre-release testing** are caused by a small number of malfunctioning modules.
+Majoritatea defectelor găsite de obicei în timpul **testării pre-lansare** sunt cauzate de un număr mic de module care funcționează defectuos.
 
-Some modules may be **too complex**. 
+Este posibil ca unele module să fie **prea complexe**. 
 
-Debugging such modules can be a complicated task.
+Depanarea unor asemenea module poate fi o sarcină complicată.
 
-## 4. Early Testing
+## 4. Testarea în fază incipientă
 
-The later a bug is found - the more it costs (time and resource-wise).
+Cu cât o eroare este găsită mai târziu - cu atât costă mai mult (din punctul de vedere al timpului și al resurselor).
 
-The **cost** of fixing defects at the start of a project is much smaller, compared to later stages of testing.
+**Costul** reparării defectelor la începutul unui proiect este mai mic, comparativ cu etape mai târzii ale testării.
 
 [image assetsSrc="Unit-Testing-Example.png" /]
 
-## 5. Pesticide Paradox
+## 5. Paradoxul Pesticidelor
 
-The Pesticide Paradox pronciple states that repeating **the same tests** will eventually stop detecting new defects or bugs.
+Paradoxul pesticidelor afirmă că repetarea **acelorași teste** va înceta să detecteze defecte noi și erori.
 
-We can overcome this problem by creating new tests and adding new test data.
+Putem depăși această problemă prin crearea de teste noi și adăugarea datelor noi pentru testare.
 
-## 6. Testing shows the presence of defects
+## 6. Testarea arată prezența defectelor
 
-It is crucial to understand that even **after testing**, we cannot say that our product is **100% defect-free**.
+Este crucial să înțelegem că în ciuda **testării**, nu putem spune cu siguranță că produsul nostru este **100% lipsit de defecte**.
 
-However, efficient testing techniques **reduce** the chance of undiscovered bugs/defects.
+Cu toate acestea, tehnicile eficiente de testare **reduc** șansa existenței unor defecte/erori nedescoperite.
 
-## 7. Absence-Of-Errors Fallacy
+## 7. Raționamentul fals de absență a erorilor (Absence-of-Error Fallacy)
 
-Sometimes our software is tested with the wrong requirements.
+Uneori software-ul nostru este testat cu cerințele greșite.
 
-Finding and fixing defects does not help when:
+Găsirea și repararea defectelor nu este utilă atunci când:
 
-- The system built is practically unusable for its ourpose
+- Sistemul construit este inutil pentru realizarea scopului său
 
-- When our software does not fulfill the user's needs and expectations
+- Când software-ul nostru nu îndeplinește nevoile și așteptările utilizatorului 
 
 [/slide]

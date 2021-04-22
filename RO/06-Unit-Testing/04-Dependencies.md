@@ -1,23 +1,21 @@
 [slide hideTitle]
 
-# Dependencies
+# Dependențe
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-35-36-coupling-and-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Majoritatea componentelor depind de alte componente pentru a exista.
 
-Most components rely on other components to exist.
+În loc să creăm componente care sunt asociate îndeaproape, putem utiliza **injecția de dependență** pentru a îmbunătăți **separarea preocupărilor (separation of concerns)**. 
 
-Instead of creating components that are close-coupled to each other, we can use **dependency injection** to improve the **separation of concerns**. 
+**Injecția de dependență** este tehnica de **decuplare a componentelor** prin furnizarea dependențelor acestora din altă parte.
 
-**Dependency injection** is the technique of **decoupling components** by providing their dependencies from elsewhere.
-
-To better understand the concept, let us have a look at this simple code:
+Pentru a întelege mai bine acest concept, să observăm acest cod simplu:
 
 ``` java
 public class Bank {​
   private AccountManager accountManager;​ 
-// We have a concrete implementation which couples our classes
+// Avem o implementare concretă care cuplează clasele noastre
   public Bank() {​
-    // Bank depends on AccountManager
+    // Bank depinde de AccountManager
     this.accountManager = new AccountManager();​  
   }​
 
@@ -25,23 +23,23 @@ public class Bank {​
 }
 ```
 
-In this class, our `Bank` depends on `AccountManager`.
+În această clasă, `Bank` depinde de `AccountManager`.
 
-If the dependency introduces **bugs** in our test from the outside, they will be harder to detect.
+Dacă dependența introduce **erori** din exterior în testul nostru, acestea vor fi mai greu de detectat.
 
-This is why it is a good practice to use the **Dependency Inversion Principle** in our tests.
+De aceea utilizarea **Principiului de Inversiune a Dependenței** în testele noastre este o bună practică.
 
 [/slide]
 
 [slide hideTitle]
 
-# Dependency Injection
+# Injecția de Dependență
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-37-dependency-injection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When we use **abstraction** and **dependency injection**,  testing our code becomes less complicated.
+Când folosim **abstractizarea** și **injecția de dependență**, testarea codului nostru devine mai puțin complicată.
 
-The following examples illustrate this concept:
+Exemplele următoare ilustrează acest concept:
 
 [image assetsSrc="Unit-Testing-Example(9).png" /]
 
@@ -59,9 +57,9 @@ public class Bank {​
 }
 ```
 
-As our class is no longer dependent on the `AccountManager` concrete class, but on an interface, we can create a mock object.
+Deoarece clasa noastră nu mai este dependentă de clasa concretă `AccountManager`, ci de o interfață, putem crea un obiect de tip mock.
 
-That will ensure that we do not import bugs from the outside.
+Acest lucru va asigura faptul că nu importăm erori din exterior.
 
 ```java
 @Test​
@@ -85,33 +83,33 @@ public void testGetInfoById() {​
 
 [slide hideTitle]
 
-# Isolating Test Behaviour
+# Izolarea Comportamentelor Testelor
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-38-goal-isolating-test-behavior-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The main objective is to **fixate** all **moving parts**.
+Obiectivul principal este să **fixăm** toate **părțile dinamice**.
 
-That helps make our code more stable and decoupled, increasing the efficiency of our tests. 
+Acest lucru ne ajută să facem codul nostru mai stabil și decuplat, mărind eficiența testelor noastre. 
 
 [/slide]
 
 [slide hideTitle]
 
-# Fake Implementations
+# Implementări False
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-44-fake-implementations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Fake classes and objects have a **working**, but **simplified** implementation.
+Obiectele și clasele false au o implementare **funcțională**, dar **simplificată**.
 
-They are **not the same** as the production ones.
+Acestea **nu sunt la fel** cu cele de producție.
 
-A great example of this is working with an implementation of a **repository**.
+Un exemplu bun al acestui concept este lucrul cu implementarea unui **depozit (repository)**.
 
-Our repository will use a collection to **store data**, but it will not engage a **database**.
+Depozitul nostru va folosi o colecție pentru **a stoca date**, dar nu va interacționa cu o **bază de date**.
 
-That will allow us to test easier, without starting up a database and performing time-consuming requests.
+Acest lucru ne permite să testăm mai ușor, fără a demara o bază de date și a efectua solicitări care necesită mult timp.
 
-To illustrate this, let us see an example:
+Pentru a ilustra acest lucru, să observăm acest exemplu:
 
 ``` java
 public class FakeRepository implements AccountRepository {
@@ -134,24 +132,24 @@ public class FakeRepository implements AccountRepository {
 
 [slide hideTitle]
 
-# Problem with Solution: Fake Axe and Dummy
+# Problemă cu Soluție: Fake Axe and Dummy
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-39-40-41-42-43-problem-and-solution-fake-axe-and-dummy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# Description
-Test if the hero gains XP when a target dies.
+# Descriere
+Testați dacă eroul câștigă XP atunci când moare o țintă.
 
-To do this, you need to:
-- Make the `Hero` class testable (use dependency injection)
-- Introduce interfaces for `Axe` and `Dummy`:
-  - Interface: Weapon 
-  - Interface: Target 
+Pentru a face acest lucru, trebuie să:
+- Vă asigurați că clasa `Hero` poate fi testată (folosiți injecția de dependență)
+- Introduceți interfețe pentru `Axe` și `Dummy`:
+  - Interfața: Weapon 
+  - Interfața: Target 
 
-Create а fake `Weapon` and а fake `Dummy` for the test.
+Creați interfețele false `Weapon` și `Dummy` pentru test.
 
-## Hints
+## Sfaturi
 
-Create a Weapon interface:
+Creați o interfață Weapon:
 ```java
 public interface Weapon{
 
@@ -163,7 +161,7 @@ public interface Weapon{
 }
 ```
 
-Create a `Target` interface:
+Creați o interfață `Target`:
 ```java
 public interface Target{
 
@@ -177,7 +175,7 @@ public interface Target{
 }
 ```
 
-Implement the interfaces:
+Implementați interfețele:
 
 ```java
 public class Axe implements Weapon {
@@ -193,9 +191,9 @@ public class Axe implements Weapon {
 }
 ```
 
-Modify both the `Axe` and `Dummy` classes.
+Modificați ambele clase `Axe` și `Dummy`.
 
-Use **dependency injection** for the `Hero` class.
+Folosiți **injecția de dependență** pentru clasa `Hero`.
 
 ```java
 public Hero(String name, Weapon weapon){
@@ -205,7 +203,7 @@ public Hero(String name, Weapon weapon){
 }
 ```
 
-Create a `HeroTests` class and test gaining XP by faking the `Weapon` and `Target` classes.
+Creați o clasă `HeroTests` și testați obținerea de XP cu ajutorul falsificării claselor `Weapon` și `Target`.
 
 ```java
 @Test
@@ -237,15 +235,15 @@ public void attackGainsExperienceIfTargetIsDead(){
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-45-mocking-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Mocking objects** simulates the behavior of real objects.
+**Tehnica mocking pentru obiecte** simulează comportamentul obiectelor reale.
 
-An **example** could be a function that calls an e-mail sending service.
+Un **exemplu** poate fi o funcție care apelează un serviciu de trimitere a unor e-mail-uri.
 
-It is pointless and ineffective to send an e-mail every time we run a test.
+Este lipsit de sens și ineficient să trimitem un e-mail de fiecare dată când rulăm un test.
 
-The easiest thing is to verify that our **sending** service was called.
+Cel mai simplu lucru este să verificăm dacă serviciul nostru de **trimitere** a fost apelat.
 
-A similar case is presented in the following example:
+Un caz similar este prezentat în exemplul următor:
 
 ``` java
 @Test
@@ -267,13 +265,13 @@ public void testAlarmClockShouldRingInTheMorning() {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-46-47-mockito-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Mockito** is a framework for mocking objects. 
+**Mockito** este un cadru pentru obiecte de tip mock. 
 
-You can learn more by [visiting the official site](https://site.mockito.org/).
+Puteți învăța mai multe [vizitând site-ul oficial](https://site.mockito.org/).
 
-We can obtain our **Mockito** dependency from here.
+Putem să obținem dependența noastră **Mockito** de aici.
 
-Paste the following code into the `pom.xml` file:
+Copiați următorul cod în fișierul `pom.xml`:
 
 ``` js
 <dependency>
@@ -288,26 +286,26 @@ Paste the following code into the `pom.xml` file:
 
 [slide hideTitle]
 
-# Problem with Solution: Mocking
+# Problemă cu Soluție: Mocking
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-48-49-50-problem-and-solution-mocking-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Description
+## Descriere
 
-Include **Mockito** in the project dependencies, then:
-- Mock fakes from the previous problem
-- Implement a **Hero Inventory**, holding unequipped weapons
-  - a method - `Iterable<Weapon> getInventory()`
-- Implement a Target propping a random weapon upon death
-  - a field - `private List<Weapon> possibleLoot`
-- Test the Hero killing a target and getting loot in his inventory
+Includeți **Mockito** în dependențele proiectului, iar apoi:
+- Simulați falsuri din problema precedentă
+- Implementați **Hero Inventory**, care să conțină armele neechipate
+  - o metodă - `Iterable<Weapon> getInventory()`
+- Implementați oferirea unei arme aleatorie de către țintă atunci când aceasta moare
+  - un câmp - `private List<Weapon> possibleLoot`
+- Testați acțiunea eroului de a omorî o țintă și de a primi comoara în inventarul său
 
-## Hints
-Locate `pom.xml`:
+## Sfaturi
+Localizați `pom.xml`:
 [image assetsSrc="Unit-Testing-Example(8).png" /]
 
 
-Add the **Mockito** dependency:
+Adăugați o dependență **Mockito**:
 
 ``` js
 <dependency>
@@ -318,7 +316,7 @@ Add the **Mockito** dependency:
 </dependency>
 ```
 
-Go to `HeroTests` and refactor the code, using **Mockito**:
+Mergeți la `HeroTests` și refactorizați codul folosind **Mockito**:
 
 ```java
 @Test
@@ -336,7 +334,7 @@ public void attackGainsExperienceIfTargetIsDead(){
 }
 ```
 
-- Implement a hero inventory and a `Target` dropping loot
+- Implementați inventarul eroului și oferirea unei comori de către `Target`
 
-- Test whether the `Hero` gets loot upon killing a `Target`
+- Testați dacă `Hero` primește comoara atunci când omoară `Target`
 [/slide]

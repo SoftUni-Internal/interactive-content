@@ -1,32 +1,32 @@
-# Unit Testing Best Practices
+# Cele mai Bune Practici în Testarea Unitară 
 
 [slide hideTitle]
 
-# Assertions
+# Aserțiuni
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-25-26-assertions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We will take at some approaches - considered "best practices" in Unit Testing.
+Ne vom uita la câteva abordări - considerate "cele mai bune practici" în Testarea Unitară.
 
-The `assertEquals(expected, actual)` method gives us more details when working with values, compared to `assertTrue()`.
+Metoda `assertEquals(expected, actual)` ne oferă mai multe detalii atunci când lucrăm cu valori, comparativ cu `assertTrue()`.
 
-In this example, we can observe the following code when we use `assertTrue()` and the output of it:
+În acest exemplu, putem observa codul următor atunci când este utilizată metoda `assertTrue()` și ieșirea acestuia:
 ``` java
 Assert.assertTrue(account.getBalance() == 50);
 ```
 
-The expected **output** is: 
+**Ieșirea** așteptată este: 
 
 ```
 java.lang.AssertionError <3 internal calls>
 ```
 
-Compared to the output when we use `assertEquals()`:
+Comparativ cu ieșirea rezultată atunci când utilizăm `assertEquals()`:
 ``` java
 Assert.assertEquals(50, account.getBalance());
 ```
 
-**Output:**
+**Ieșire:**
 
 ```
 java.lang.AssertionError:
@@ -40,15 +40,15 @@ Actual :35
 
 [slide hideTitle]
 
-# Magic Numbers
+# Numere Magice
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-28-magic-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Another good practice is to avoid using "**magic numbers**".
+O altă practică bună este evitarea utilizării "**numerelor magice**".
 
-We should use "**constants**" instead.
+Trebuie să folosim "**constante**" în locul acestora.
 
-Let us take a look at this simple example:
+Să ne uităm la acest exemplu simplu:
 
 ``` java
 private static final int AMOUNT = 100;
@@ -60,28 +60,27 @@ public void depositShouldAddMoney() {
                AMOUNT, account.getBalance());
 }
 ```
+Este mai bine să declarăm o variabilă `int` în afara testului și să o folosim drept constantă.
 
-It is better to declare an `int` variable outside of the test and use it as a constant.
-
-By doing so, if we need to change the `amount` variable, we can do so only **outside** of the test, without worrying about the logic inside.
+Procedând astfel, dacă suntem nevoiți să schimbăm variabila `amount`, putem să facem asta doar **în afara** testului, fără să ne îngrijorăm în legătură cu logica care se află înăuntru.
 
 [/slide]
 
 [slide hideTitle]
 
-# The "Before" Annotation
+# Adnotația "Before"
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-29-before-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When we write tests, it is common to find that several tests need a similar object to be created before they can run.
+Atunci când scriem teste, este comun ca unele teste să aibă nevoie de crearea unui obiect similar înainte ca acestea să poată rula.
 
-We can use the `@Before` annotation to utilize this behavior.
+Putem folosi adnotația `@Before` pentru a utiliza acest comportament.
 
-A method, designated with `@Before` will be executed each time before running the next test.
+O metodă desemnată cu adnotația `@Before` va fi executată de fiecare dată înaintea rulării testului următor.
 
-This will ensure consistent and clean data for each test, making our tests more reliable.
+Acest lucru va asigura date consistente și clare pentru fiecare test, făcând testele noastre mai de încredere.
 
-Here is a simple example:
+Acesta este un exemplu simplu:
 
 ``` java
  public class Example {
@@ -99,33 +98,33 @@ Here is a simple example:
     }
 ```
 
-The "initialize" method will run before each test.
+Metoda "initialize" va rula înainte de fiecare test.
 
 [/slide]
 
 [slide hideTitle]
 
-# Naming Test Methods
+# Numirea Metodelor Testelor
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-30-naming-tests-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Test naming is crucial, especially for long-term projects.
+Numirea este esențială, în special pentru proiecte de lungă durată.
 
-There are multiple **recommendations** regarding test names:
+Există mai multe **recomandări** în ceea ce privește numele testelor:
 
-- Test names should use **business domain terminology**
+- Numele testelor trebuie să folosească **terminologie specifică domeniului**
 
-- Test names should be **descriptive** and **readable**
+- Numele testelor trebuie să fie **sugestive** și **ușor de citit**
 
-- Our tests should regard a **specific requirement**
+- Testele noastre trebuie să ia în considerare o **cerință specifică**
 
-- Some test names could include the **name** of the tested **method** or **class**
+- Unele nume de teste pot include **numele** **metodei** sau **clasei** testate
 
-- We must use **clear and descriptive test names**
+- Trebuie să folosim **nume de teste clare și descriptive**
 
-- **Long test names** are good to use, if that helps explain the test purpose
+- Se pot folosi **nume lungi de teste**, dacă acest lucru ajută la explicarea scopului testului
 
-Let us see some examples of **bad** test naming:
+Să vedem câteva exemple de numire **nepotrivită** a testelor:
 
 ```
 increaseDMG {}
@@ -134,7 +133,7 @@ testTransfer()
 idontrememberwhatiamtesting {}
 ```
 
-Here are some **proper** test name examples:
+Acestea sunt câteva exemple de nume de teste **adecvate**:
 
 ```
 depositAddsMoneyToBalance() {}
@@ -146,23 +145,23 @@ transferSubtractsFromSourceAddsToDestAccount() {}
 
 [slide hideTitle]
 
-# Problem with Solution: Refactor Tests
+# Problemă cu Soluție: Refactor Tests
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-31-32-33-problem-and-solution-refactor-tests-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Description
-Refactor the tests for the **Axe** and **Dummy** classes
+## Descriere
+Refactorizați testele pentru clasele **Axe** și **Dummy**.
 
-Make sure that:
-- **Names** of test methods are **descriptive**
-- Use **appropriate assertions** ("assert equals" vs. "assert true")
-- Use **assertion messages**
-- There are **no magic numbers**
-- There is **no code duplication** ("Do Not Repeat Yourself")
+Asigurați-vă că:
+- **Numele** metodelor testelor sunt **sugestive**
+- Utilizați **aserțiuni adecvate** ("assert equals" vs. "assert true")
+- Utilizați **mesaje de aserțiune**
+- Nu există **numere magice**
+- Nu există **o duplicare a codului** ("Nu Vă Repetați")
 
-## Solution
+## Soluție
 
-Extract constants and private fields for the `Axe` class:
+Extrageți constante și câmpuri private pentru clasa `Axe`:
 ```java
 private static final int AXE_ATTACK = 10;
 private static final int AXE_DURABILITY = 1;
@@ -174,7 +173,7 @@ private Axe axe;
 private Dummy dummy;
 ```
 
-Create a method that runs before each test:
+Creați o metodă care rulează înainte de fiecare test:
 ```java
 @Before
 public void initializeTestObjects(){
@@ -183,7 +182,7 @@ public void initializeTestObjects(){
 }
 ```
 
-Use constants and private fields, as well as assertion messages:
+Utilizați atât constante și câmpuri private, cât și mesaje de aserțiune:
 ```java
 @Test
 public void weaponAttackLosesDurability(){
@@ -197,7 +196,7 @@ public void weaponAttackLosesDurability(){
 }
 ```
 
-Follow the same logic for other test methods and the `TestDummy` class.
+Urmăriți aceeași logică pentru alte metode de test și pentru clasa `TestDummy`.
 
 
 [/slide]

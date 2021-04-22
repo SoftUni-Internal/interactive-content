@@ -1,13 +1,13 @@
 [slide hideTitle]
 
-# Summary
-
+# Rezumat
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-51-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you learned:
+## În această lecție ați învățat:
 
-- Unit testing helps us build solid code
-- We use the "AAA" pattern to structure our unit tests
+- Testarea unitară ne ajută să construim un cod bun
+
+- Folosim modelul "AAA" pentru a structura testele noastre unitare
 
 ```java
 public class AxeTests{
@@ -25,9 +25,9 @@ public class AxeTests{
 }
 ```
 
-- We need to use descriptive names for our tests
+- Trebuie să folosim nume sugestive pentru testele noastre
 
-**The following names are not good:**
+**Următoarele nume nu sunt adecvate:**
 ```
 increaseDMG {}
 test1() {}
@@ -35,18 +35,18 @@ testTransfer()
 idontrememberwhatiamtesting {}
 ```
 
-**This is an example of good naming:**
+**Acesta este un exemplu de denumire corectă:**
 ```
 depositAddsMoneyToBalance() {}
 depositNegativeShouldNotAddMoney() {}
 transferSubtractsFromSourceAddsToDestAccount() {}
 ```
 
-- Dependency injection looses coupling and improves design 
-- Differences between fake implementation and mocking objects
+- Injecția de dependență realizează decuplarea și îmbunătățește design-ul 
+- Diferențe dintre implementarea falsă și obiectele de tip mock
 
-## In the next lesson you will learn:
+## În următoarea lecție veți învăța:
 
-- The concept of test-driven development
+- Conceptul dezvoltării bazate pe testare
 
 [/slide]

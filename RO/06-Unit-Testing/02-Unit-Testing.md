@@ -1,24 +1,24 @@
-# Unit Testing
+# Testarea Unitară
 
 [slide hideTitle]
 
-# Manual Testing
+# Testarea Manuală
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-11-13-manual-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Unit Testing is the process of examining separate **pieces/units** of our application.
+Testarea unitară este procesul de examinare a unor **fragmente/unități** separate ale aplicației noastre.
 
-Let us review the main differences between manual and automated testing.
+Să trecem în revistă principalele diferențe dintre testarea manuală și automată.
 
-**Manual testing:**
+**Testarea manuală:**
 
-- Manual testing is not **structured** and **repeatable**
+- Testarea manuală nu este **structurată** și **repetabilă**
 
-- Manual testing methods cannot **cover** all of our code
+- Metodele de testare manuală nu pot **cuprinde** tot codul nostru
 
-- The testing methods are complicated
+- Metodele de testare sunt complicate
 
-Here is an **example**: 
+Aici aveți un **exemplu**: 
 
 ```java
 void testSum() {
@@ -27,13 +27,13 @@ void testSum() {
 }
 ```
 
-To make things easier, we need a **structured** approach that:
+Pentru a simplifica lucrurile, avem nevoie de o abordare **structurată** care:
 
-- Allows **refactoring**
+- Permite **refactorizarea**
 
-- Reduces the **cost of change**
+- Reduce **costul schimbării**
 
-- Help us to reduce the amount of **bugs/defects** in the code
+- Ne ajută să reducem numărul de **erori/defecte** din cod
 
 
 [/slide]
@@ -41,20 +41,20 @@ To make things easier, we need a **structured** approach that:
 
 [slide hideTitle]
 
-# Automated Testing
+# Testarea Automată
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-14-automated-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Automated testing** contains:
+**Testarea automată** cuprinde:
 
-- **Unit tests**
-  - used to examine a **a single logical unit** in our code (method, class, etc.)
+- **Teste unitare**
+   - utilizate pentru a examina **o singură unitate logică** din codul nostru (metodă, clasă, etc.)
 
-- **Integration tests**
-  - tests a module in our application (payment, registration, etc.)
+- **Teste de integrare**
+   - testează un modul din aplicația noastră (plată, înregistrare, etc.)
 
-- **System tests**
-  - end-to-end testing of our system
+- **Teste de sistem**
+   - testarea sistemului nostru de la început până la sfârșit
 
 
 [/slide]
@@ -65,9 +65,9 @@ To make things easier, we need a **structured** approach that:
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-15-16-junit-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-JUnit is one of the most popular unit testing **frameworks** for Java.
+JUnit este unul dintre cele mai populare **cadre** de testare unitară pentru Java.
 
-To get started, we need to set up the JUnit repository, after **creating a Maven project**, we should copy and paste this code into our `pom.xml` file.
+Pentru a începe, trebuie să organizăm depozitul JUnit, iar după ce am **creat un proiect Maven**, trebuie să copiem acest acest cod în fișierul nostru `pom.xml`.
 
 ```
 <project …>
@@ -87,15 +87,15 @@ To get started, we need to set up the JUnit repository, after **creating a Maven
 
 [slide hideTitle]
 
-# JUnit - Writing Tests
+# JUnit - Scrierea Testelor
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-17-junit-writing-tests-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Let us create a new **package** for our tests.
+Să creăm un **pachet** nou pentru testele noastre.
 
-After that, we can create our first class containing test methods (e.g **CalculatorTests**).
+După aceea, putem crea prima noastră clasă care conține metodele testelor (ex. **CalculatorTests**).
 
-We can now create a **public void** method, annotated with `@Test`.
+Acum putem crea o metodă **public void**, adnotată cu `@Test`.
 
 ``` java
 @Test
@@ -109,17 +109,17 @@ public void commandShouldMultiplyNumbers() {
 
 [slide hideTitle]
 
-# The "3A" Pattern
+# Modelul "3A"
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-18-3A-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-This is a **must-know** pattern when creating unit tests.
+Acesta este un model **indispensabil** în ceea ce privește crearea testelor .
 
-The AAA pattern (**Arrange-Act-Assert**) has become the **standard** testing pattern in the software industry.
+Modelul AAA (**Arrange-Act-Assert**) a devenit modelul **standard** de testare în industria software.
 
-The basis of this pattern is that all tests should follow a default layer.
+Principiul acestui model este că toate testele trebuie să urmeze o stratificare prestabilită.
 
-Let us take a look at this simple example:
+Să observăm acest exemplu simplu:
 
 ``` java
 @Test
@@ -135,23 +135,23 @@ Let us take a look at this simple example:
     }
 ```
 
-First we should **аrrange** all conditions for the testing system.
+În primul rând trebuie să organizăm **(аrrange)** toate condițiile pentru sistemul de testare.
 
-Then we take the actions **аct**, which aim to produce a certain result.
+Apoi efectuăm acțiunile **(аct)**, al căror scop este să producă un anumit rezultat.
 
-Finally, we check **аssert** if the expected output matches the generated output.
+La final, verificăm **(аssert)** dacă ieșirea așteptată se potrivește cu ieșirea generată.
 
 [/slide]
 
 [slide hideTitle]
 
-# Exceptions
+# Excepții
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-19-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Some methods, may need to **throw an exception** (for example: "invalid input") in our code.
+Este posibil ca unele metode să necesite **aruncarea unei excepții** (de exemplu: intrare non-validă) în codul nostru.
 
-We can also test this behavior:
+Putem de asemenea să testăm acest comportament:
 
 ``` java
 @Test(expected = IllegalArgumentException.class) //Assert
@@ -168,30 +168,30 @@ public void multiplyingWordsShouldThrow() {
 
 [slide hideTitle]
 
-# Problem: Create a Maven Project
+# Problemă: Create a Maven Project
 
-## Description
-Maven is a build automation tool that takes care of dependencies for your project. 
+## Descriere
+Maven este un instrument de automatizare care se ocupă de dependențele proiectului vostru.
 
-Make sure that you enabled the plugin in IntelliJ \[**File** \-\> **Settings** \-\> **Plugins** \-\> **Maven Integration**\]
+Asigurați-va că ați activat plugin-ul în IntelliJ \[**File** \-\> **Settings** \-\> **Plugins** \-\> **Maven Integration**\]
 
 [image assetsSrc="Unit-Testing-Example(2).png" /]
 
-Now you can create a Maven project. 
+Acum puteți crea un proiect Maven. 
 
 [image assetsSrc="Unit-Testing-Example(3).png" /]
 
-The **GroupId** must be separated using periods.
+**GroupId** trebuie separat prin punct.
 
-The **ArtifactId** must be separated using hyphens.
+**ArtifactId** trebuie separat prin cratimă.
 
 [image assetsSrc="Unit-Testing-Example(4).png" /]
 
-If everything is okay, you should see the following project structure.
+Dacă totul este okay, ar trebui să vedeți următoarea structură de proiect.
 
 [image assetsSrc="Unit-Testing-Example(5).png" /]
 
-Copy the files provided and place them in a package inside the `src/main/java` folder.
+Copiați fișierele furnizate și plasați-le într-un pachet înăuntrul fișierului `src/main/java`.
 
 [image assetsSrc="Unit-Testing-Example(6).png" /]
 
@@ -199,29 +199,29 @@ Copy the files provided and place them in a package inside the `src/main/java` f
 
 [slide hideTitle]
 
-# Problem with Solution: Test Axe
+# Problemă cu Soluție: Test Axe
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-20-21-22-problem-and-solutiom-test-axe-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/07.Java-OOP-Advanced-Unit-Testing-Lab-Resources.zip) **for this task.**
+**Aici este un link către** [resursele](https://videos.softuni.org/resources/java/java-oop-advanced/07.Java-OOP-Advanced-Unit-Testing-Lab-Resources.zip) **pentru această sarcină.**
 
-## Description
-In the `test/java` folder, create a package called `rpg_tests`.
+## Descriere
+În fișierul `test/java`, creați un pachet numit `rpg_tests`.
 
-Create an `AxeTests` class.
+Creați o clasă numită `AxeTests`.
 
-Create tests for the following cases:
-- Test if the weapon loses durability after each attack
-- Test attacking with a broken weapon
+Creați teste pentru următoarele cazuri:
+- Testați dacă arma își pierde din durabilitate după fiecare atac
+- Testați atacul cu o armă stricată
 
 
-## Solution
+## Soluție
 
-Create the package `rpg_tests` and inside it place a class called `AxeTests`.
+Creați un pachet numit `rpg_tests` și înăuntrul lui plasați o clasă numită `AxeTests`.
 
 [image assetsSrc="Unit-Testing-Example(7).png" /]
 
-In the class, create your first test:
+În cadrul clasei, creați primul vostru test:
 
 ```java
 public class AxeTests{
@@ -237,26 +237,26 @@ public class AxeTests{
 }
 ```
 
-Arrange preconditions:
+Organizați precondițiile:
 ```java
 // Arrange
 Axe axe = new Axe(10, 10);
 Dummy dummy = new Dummy(10, 10);
 ```
 
-Execute tested behavior:
+Executați comportamentul testat:
 ```java
 // Act
 axe.attack(dummy);
 ```
 
-Assert postconditions:
+Verificați postcondițiile:
 ```java
 // Assert
 Assert.assertEquals(9, age.getDurabilityPoints());
 ```
 
-Create your second text method:
+Creați a doua metodă text:
 ```java
 @Test(expected = IllegalStateExcepiton.class) //Assert
 public void brokenWeaponCantAttack(){
@@ -267,7 +267,7 @@ public void brokenWeaponCantAttack(){
 }
 ```
 
-Arrange preconditions and test behavior:
+Organizați precondițiile și testați comportamentul:
 ```java
 // Arrange
 Axe axe - new Axe(10, 1);
@@ -283,21 +283,21 @@ axe.attack(dummy);
 
 [slide hideTitle]
 
-# Problem with Solution: Test Dummy
+# Problemă cu Soluție: Test Dummy
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/EN/Java-OOP-Advanced-Unit-Testing-23-24-problem-and-solution-test-dummy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Description
-Create a class `DummyTests`.
+## Descriere
+creați o clasă numită `DummyTests`.
 
-Write tests for the following cases:
+Scrieți teste pentru următoarele cazuri:
 
-- The Dummy loses health if attacked
-- A Dead Dummy throws an exception if attacked
-- A Dead Dummy provides XP
-- A living Dummy does not give us XP
+- Manechinul pierde puncte de viață dacă este atacat
+- Un manechin mort aruncă o excepție dacă este atacat
+- Un manechin mort oferă XP
+- Un manechin viu nu oferă XP
 
-## Hints
-Follow the logic of the previous problem.
+## Sfaturi
+Urmăriți logica problemei precedente.
 
 [/slide]

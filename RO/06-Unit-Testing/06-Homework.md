@@ -1,39 +1,39 @@
-# Homework
+# Teme Pentru Acasă
 
 [slide hideTitle]
 
-# Problem: Database
+# Problemă: Database
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/07.Java-OOP-Advanced-Unit-Testing-Exercise-Resources.zip) **for these tasks.**
+**Aici este un link către** [resursele](https://videos.softuni.org/resources/java/java-oop-advanced/07.Java-OOP-Advanced-Unit-Testing-Exercise-Resources.zip) **pentru aceste sarcini.**
 
-You will receive a simple class - **Database**. 
+Veți primi o clasă simplă - **Database**. 
 
-It **stores Integers.** Your task is to **test the class.** 
+Aceasta **stochează numere întregi.** Sarcina voastră este să **testați clasa.** 
 
-Create **tests** to ensure its methods work as intended.
+Creați **teste** pentru a vă asigura că metodele funcționează în mod corespunzător.
 
-## Constraints
+## Constrângeri
 
-- The storing array's **capacity** must be **exactly 16 integers.**
+- **Capacitatea** matricei de stocare trebuie să fie de **exact 16 numere întregi.**
 
-  * if the size of the array is not 16 integers long, throw **OperationNotSupportedException**
+  * dacă dimensiunea matricei nu este de 16 numere întregi, aruncați **OperationNotSupportedException**
 
-- The **Add** operation - should **add an element at the next free cell** (similarly to a stack)
+- Operația **Add**  - trebuie să **adauge un element în următoarea celulă liberă** (similar cu o stivă)
 
-  * if the passed in element is null, throw **OperationNotSupportedException**
+  * dacă elementul adăugat este nul, aruncați **OperationNotSupportedException**
 
-- The **Remove** operation - should support only removing an element **at the last index** (like a stack)
+- Operația **Remove** - permite eliminarea elementului **corespunzător ultimului indice** (ca o stivă)
 
-  * if you try to remove an element from an empty Database throw **OperationNotSupportedException**
+  * dacă încercați să eliminați un element dintr-o matrice Database goală, aruncați **OperationNotSupportedException**
 
-- **Constructors** should take in integers only, and store them in an **array**
+- **Constructorii** primesc doar numere întregi și le stochează într-o **matrice**
 
-- The **Fetch method** should return the elements as an **array**
+- **Metoda Fetch** trebuie să returneze elementele sub forma unei **matrice**
 
 
-## Hint
+## Sfat
 
-Do not forget to **test the constructor(s)** as they are methods too.
+Nu uitați să **testați constructorii**, deoarece și aceștia sunt metode.
 
 
 
@@ -41,51 +41,51 @@ Do not forget to **test the constructor(s)** as they are methods too.
 
 [slide hideTitle]
 
-# Problem: Extended Database
+# Problemă: Extended Database
 
-You already have the Database class. 
+Deja aveți clasa Database. 
 
-Your task is to **extend** it.
+Sarcina voastră este să o **extindeți**.
 
-It should hold the following methods:  adding, removing, and finding People. 
+Aceasta trebuie să conțină următoarele metode: adăugarea, eliminarea, și găsirea unor persoane. 
 
-In other words, it should store information on People. 
+În alte cuvinte, trebuie să stocheze informații despre persoane. 
 
-There should be two types of search methods:
+Trebuie să existe două tipuri de metode de căutare:
 - `findById (long id)`
-- `findByUsername (String username)`.
+- `findByUsername (String username)`
 
-Each person should have their own unique **id** and a unique **username**. 
+Fiecare persoană trebuie să aibă propriul său **id** unic și un **nume de utilizator** unic. 
 
-Your task is to test these functions.
+Sarcina voastră este să testați aceste funcții.
 
-## Constraints
+## Constrângeri
 
-The database should have these methods:
+Baza de date trebuie să aibă următoarele metode:
 
 - `add`
 
-  * if there are multiple users with this id, throw **OperationNotSupportedException**
+  * dacă sunt mai mulți utilizatori cu acest id, aruncați **OperationNotSupportedException**
 
-  * if negative or null id-s are present, throw **OperationNotSupportedException**
+  * dacă sunt prezente id-uri negative sau nule, aruncați **OperationNotSupportedException**
 
 - `remove`
 
 - `findByUsername`
 
-  * if no user is present with this username, throw **OperationNotSupportedException**
+  * dacă nu este prezent niciun utilizator cu acest nume, aruncați **OperationNotSupportedException**
 
-  * if the username parameter is null, throw **OperationNotSupportedException**
+  * dacă parametrul numelui de utilizator este nul, aruncați **OperationNotSupportedException**
 
-  * all arguments are case-sensitive
+  * toate argumentele sunt sensibile la tipul de litere folosit (majusculă/minusculă)
 
 - `findById`
 
-  * If no user is present with this id, throw **OperationNotSupportedException**
+  * dacă nu este prezent niciun utilizator cu acest id, aruncați **OperationNotSupportedException**
 
-## Hint
+## Sfat
 
-Do not forget to test the constructor(s). 
+Nu uitați să testați constructorii.
 
 
 
@@ -93,55 +93,55 @@ Do not forget to test the constructor(s).
 
 [slide hideTitle]
 
-# Problem: Iterator Test
+# Problemă: Iterator Test
 
-Use the **resources** you downloaded in the first task.
+Folosiți **resursele** pe care le-ați descărcat în cadrul primei voastre sarcini.
 
-You are given a simple class `ListIterator`.
+Vă este dată o clasă simplă numită `ListIterator`.
 
-It should receive a collection of Strings which it will iterate through, injected through its constructor. 
+Trebuie să primească o colecție de șiruri prin care va itera, injectată prin constructorul său. 
 
-You should store the elements in a `List`. 
+Trebuie să stocați elementele în `List`. 
 
-If there is null passed to the constructor, throw an **OperationNotSupportedException**. 
+Dacă constructorului îi este transmis nul, aruncați **OperationNotSupportedException**. 
 
-The class should have three main functions:
+Clasa trebuie să aibă trei funcții principale:
 
-- `Move` - should move an internal index position to the next index in the list
-    * the method should return **true** if it successful and **false** if there is no next index
+- `Move` - trebuie să mute poziția unui indice intern la indicele următor din listă
+    * metoda trebuie să returneze **true** dacă este executată cu succes și **false** dacă nu există un indice următor
 
-- `HasNext` - should return true if there is a next index and false if the index is already at the last element of the list
+- `HasNext` - trebuie să returneze true dacă nu există un indice următor și false dacă indicele este deja la ultimul element al listei
 
-- `Print` - print the element at the current internal index
-    * calling `Print` on a collection without elements should throw the appropriate exception with the message **"Invalid Operation!"** 
+- `Print` - tipărește elementul corespunzător indicelui intern curent
+    * apelarea `Print` pentru o colecție fără elemente trebuie să arunce excepția corespunzătoare, cu mesajul **"Invalid Operation!"** 
 
-| **Command** | **Return Type** | **Description** |
+| **Comandă** | **Tipul Returnat** | **Descriere** |
 | --- | --- | --- |
-| Move | boolean | This command should move the internal index to the next index. |
-| Print | void | This command should return the element at the current internal index. |
-| HasNext | boolean | Checks whether the collection has a next element. |
+| Move | boolean | Această comandă trebuie să mute indicele intern la următorul indice. |
+| Print | void | Această comandă trebuie să returneze elementul corespunzător indicelui intern curent. |
+| HasNext | boolean | Verifică dacă colecția are un element următor. |
 
-## Test 
+## Testare 
 
-Create tests to ensure all methods in the class `ListIterator` are working as intended.
+Creați teste pentru a vă asigură că toate metodele din clasa `ListIterator` funcționează în mod corespunzător.
 
-## Constraints
+## Constrângeri
 
-- There will be only one **Create** command and it will always be the first command passed
+- Va exista doar o singură comandă **Create**, și aceasta va fi mereu prima comandă transmisă
 
-- The final command will always be the **END** command
+- Comanda finală va fi întotdeauna comanda **END**
 
-# Examples
+# Exemple
 
-## Example 1
-| **Input** | **Output** |
+## Exemplul 1
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Create | Invalid Operation! |
 | Print | 
 | END | 
 
-## Example 2
-| **Input** | **Output** |
+## Exemplul 2
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Create Bob George | true |
 | HasNext | Bob |
@@ -150,8 +150,8 @@ Create tests to ensure all methods in the class `ListIterator` are working as in
 | Print |
 | END |
 
-## Example 3
-| **Input** | **Output** |
+## Exemplul 3
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Create 1 2 3 | true |
 | HasNext | true |
@@ -168,39 +168,39 @@ Create tests to ensure all methods in the class `ListIterator` are working as in
 
 [slide hideTitle]
 
-# Problem: Custom Linked List
+# Problemă: Custom Linked List
 
-Use the **resources** you downloaded in the first task.
+Folosiți **resursele** pe care le-ați descărcat în cadrul primei sarcini.
 
-You are given a data structure that needs to be tested. 
+Vi se oferă o structură de date care trebuie testată. 
 
-Use the Java file **CustomLinkedList.java** and:
+Utilizați fișierul **CustomLinkedList.java** și:
 
-- Create a test class and test methods for **all public members** that need to be tested
+- Creați o clasă de testare și metode de testare pentru **toți membri publici** care trebuie testați
 
-- Create tests that ensure all methods, getters, and setters **work correctly**
+- Creați teste pentru a vă asigura că toate metodele, toți getters și setters **funcționează corect**.
 
-- Use the **@Test(expected = ExpectedException.class)** annotation for methods that are expected to throw an exception in case wrong input is entered
+- Folosiți adnotația **@Test(expected = ExpectedException.class)** pentru metode de la care este anticipată aruncarea unei excepții în cazul în care datele de intrare au fost introduse greșit
 
-    * these tests do not need assert messages
+    * aceste teste nu au nevoie de mesaje de aserțiune
 
-- Use **meaningful assertion messages** for failed tests
+- Folosiți **mesaje de aserțiune sugestive** pentru testele nereușite
 
 
 [/slide]
 
 [slide hideTitle]
 
-# Problem: Tire Pressure Monitoring System
+# Problemă: Tire Pressure Monitoring System
 
-Use the **resources** from the first task.
+Folosiți **resursele** din cadrul primei sarcini.
 
-You are given a small project for a system which monitors the pressure in car tires. 
+Vă este dat un proiect mic pentru un sistem care monitorizează presiunea din anvelopele unei mașini. 
 
-Your task is to write unit tests for the system. 
+Sarcina voastră este să scrieți teste unitare pentru sistem. 
 
-You will need to use **mocking** in order to pass in dependencies. 
+Trebuie să folosiți tehnica de **mocking** pentru a transmite dependențele. 
 
-Think about the corner cases of the project.
+Gândiți-vă la cazurile proiectului care apar doar în afara parametrilor normali de operare (corner cases). 
 
 [/slide]
