@@ -136,7 +136,7 @@ let fs = require('fs');
 
 - The `zlib` module:
     * provides a way of zipping and unzpping files
-    * often used in conjunction with ``fs
+    * most often used in conjunction with `fs`
 
 ```js
 var zlib = require('zlib');
@@ -149,7 +149,7 @@ var zlib = require('zlib');
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/EN/JS-Applications-Modules-9-es6-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In 2015, with the introduction of the EcmaScript 6 standard, modules were introduced natively to JavaScript.
+In 2015, with the introduction of the **EcmaScript 6** standard, modules were introduced **natively** to JavaScript.
 
 JavaScript's **built-in module statements always export and import an object**.
 
@@ -179,13 +179,13 @@ import { toUSD as convertToUSD } from './currencyConverter.js'
 
 ## Exporting
 
-We use the export statement to create a JavaScript module.
+We use the **export** statement to create a JavaScript module.
 
 ```js
 export { myFunction, variableOne };
 ```
 
-Using the default keyword we can later import the value with **any given name**:
+Using the `default` keyword we can later import the value with **any given name**:
 
 ```js
 export default greetFunction;
