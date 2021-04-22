@@ -91,7 +91,6 @@ triangleOfStars(5)
 \*\*\*
 \*\*\*\*
 \*\*\*\*\*
-\*\*\*\*\*\*
 [/output]
 [/test]
 [test]
@@ -105,7 +104,6 @@ triangleOfStars(6)
 \*\*\*\*
 \*\*\*\*\*
 \*\*\*\*\*\*
-\*\*\*\*\*\*\*
 [/output]
 [/test]
 [test]
@@ -121,7 +119,6 @@ triangleOfStars(8)
 \*\*\*\*\*\*
 \*\*\*\*\*\*\*
 \*\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*\*
 [/output]
 [/test]
 [/tests]
@@ -165,7 +162,7 @@ Create a program, which processes a sequence of numbers and prints the sum of th
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| sumOfDigits(['157', 99', 5', '438', 'End']) |Sum of digits: 13 |
+| sumOfDigits(['157', '99', '5', '438', 'End']) |Sum of digits: 13 |
 ||Sum of digits: 18|
 ||Sum of digits: 5|
 ||Sum of digits: 15|
@@ -173,7 +170,7 @@ Create a program, which processes a sequence of numbers and prints the sum of th
 
 | **Input** | **Output** |
 | --- | --- |
-| sumOfDigits(['33', '52', 'END']) | Sum of digits: 6 |
+| sumOfDigits(['33', '52', 'End']) | Sum of digits: 6 |
 ||Sum of digits: 7 |
 ||Goodbye|
 
@@ -182,7 +179,7 @@ Create a program, which processes a sequence of numbers and prints the sum of th
 [tests]
 [test open]
 [input]
-sumOfDigits(['157', 99', 5', '438', 'End'])
+sumOfDigits(['157', '99', '5', '438', 'End'])
 [/input]
 [output]
 Sum of digits: 13
@@ -194,7 +191,7 @@ Goodbye
 [/test]
 [test open]
 [input]
-sumOfDigits(['33', '52', 'END'])
+sumOfDigits(['33', '52', 'End'])
 [/input]
 [output]
 Sum of digits: 6

@@ -92,7 +92,6 @@ triangleOfStars(5)
 \*\*\*
 \*\*\*\*
 \*\*\*\*\*
-\*\*\*\*\*\*
 [/output]
 [/test]
 [test]
@@ -106,7 +105,6 @@ triangleOfStars(6)
 \*\*\*\*
 \*\*\*\*\*
 \*\*\*\*\*\*
-\*\*\*\*\*\*\*
 [/output]
 [/test]
 [test]
@@ -122,7 +120,6 @@ triangleOfStars(8)
 \*\*\*\*\*\*
 \*\*\*\*\*\*\*
 \*\*\*\*\*\*\*\*
-\*\*\*\*\*\*\*\*\*
 [/output]
 [/test]
 [/tests]
@@ -168,7 +165,7 @@ Creați un program care procesează o secvență de numere și imprimă suma cif
 # Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| sumOfDigits(['157', 99', 5', '438', 'End']) |Sum of digits: 13 |
+| sumOfDigits(['157', '99', '5', '438', 'End']) |Sum of digits: 13 |
 ||Sum of digits: 18|
 ||Sum of digits: 5|
 ||Sum of digits: 15|
@@ -176,7 +173,7 @@ Creați un program care procesează o secvență de numere și imprimă suma cif
 
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| sumOfDigits(['33', '52', 'END']) | Sum of digits: 6 |
+| sumOfDigits(['33', '52', 'End']) | Sum of digits: 6 |
 ||Sum of digits: 7 |
 ||Goodbye|
 
@@ -185,7 +182,7 @@ Creați un program care procesează o secvență de numere și imprimă suma cif
 [tests]
 [test open]
 [input]
-sumOfDigits(['157', 99', 5', '438', 'End'])
+sumOfDigits(['157', '99', '5', '438', 'End'])
 [/input]
 [output]
 Sum of digits: 13
@@ -197,7 +194,7 @@ Goodbye
 [/test]
 [test open]
 [input]
-sumOfDigits(['33', '52', 'END'])
+sumOfDigits(['33', '52', 'End'])
 [/input]
 [output]
 Sum of digits: 6
