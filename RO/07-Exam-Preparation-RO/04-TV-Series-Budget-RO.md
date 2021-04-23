@@ -18,13 +18,13 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Sunteți angajat intr-o companie TV pentru a scrie un program care să calculeze dacă este posibil ca clienții să cumpere seria dorită.
+Sunteți angajat de o companie TV pentru a scrie un program care să calculeze dacă este posibil ca clienții să cumpere accesul la un serial pe care aceștia doresc să îl urmărească.
 
-Aveți un buget și un număr de serii pe care utilizatorul va dori să le achiziționeze.
+Aveți un buget și un număr de seriale pe care utilizatorul va dori să le achiziționeze.
 
-Fiecare serie are un titlu și un preț.
+Fiecare serial are un **titlu** și un **preț**.
 
-Unele dintre serii au o reducere:
+Unele dintre seriale au o reducere:
 - Thrones - 50%
 - Lucifer - 40%
 - Protector - 30%
@@ -33,17 +33,17 @@ Unele dintre serii au o reducere:
 
 ## Intrare
 Primiți de pe consolă:
-- Buget - număr real în intervalul \[10.0 ... 100.0\]
-- Numărați seria - n - un număr întreg în intervalul \[1 ... 10\]
+- Buget - număr **real** în intervalul \[10.0 ... 100.0\]
+- Numărul de seriale - n - un **număr întreg** în intervalul \[1 ... 10\]
 
-Pentru fiecare serie primiți două rânduri:
-- Numele seriei - șir
-- Preț pentru o serie - un număr readl în intervalul \[1.0… 15.0\]
+Pentru fiecare serial primiți două rânduri:
+- Titlul serialului - un **șir**
+- Prețul serialului - un număr **real** în intervalul \[1.0… 15.0\]
 
 ## Ieșire
-Imprimați o linie pe consolă:
-- Dacă bugetul dvs. este mai mare sau egal cu prețul seriei: **"You bought all the series and left with** \{**money left**\}**$"**
-- Dacă bugetul dvs. este mai mic decât prețul seriei: **"You need** \{**money needed**\}**$ more to buy the series!"**
+Ieșirea constă într-un singur rând în formatul următor:
+- Dacă bugetul este mai mare sau egal cu prețul serialului: **"You bought all the series and left with** \{**money left**\}**$"**
+- Dacă bugetul este mai mic decât prețul serialului: **"You need** \{**money needed**\}**$ more to buy the series!"**
 
 Rezultatul trebuie formatat la două cifre după punctul zecimal.
 
@@ -62,7 +62,7 @@ Rezultatul trebuie formatat la două cifre după punctul zecimal.
 
 [hint]
 După ce ați primit bugetul și numărul serialelor, stabiliți dacă serialele din intrare au o reducere. 
-Atunci, calculați prețul pentru fiecare seriuial.
+Apoi, calculați prețul pentru fiecare serial.
 [/hint]
 [hint]
 Calculați prețul tuturor serialelor și verificați dacă le puteți cumpăra.
