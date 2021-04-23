@@ -9,7 +9,7 @@
 
 **1. The HTTP Overview​**
 
--  HTTP protocol
+-  What the HTTP protocol
 
 **2. HTTP Developer Tools**
 
