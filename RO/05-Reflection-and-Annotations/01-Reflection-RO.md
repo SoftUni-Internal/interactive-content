@@ -16,7 +16,7 @@ Software-ul poate fi conceput pentru a citi, genera, transforma sau analiza date
 
 Să vedem o **explicație mai detaliată** a ceea ce este reflecția.
 
-Toate obiectele din Java au o metodă 'getClass ()'.
+Toate obiectele din Java au o metodă `getClass()`.
 
 Această metodă ne permite să determinăm clasa obiectului chiar dacă nu o cunoaștem **atunci când compilăm**.
 
