@@ -96,7 +96,7 @@ module.exports.person = {
 }
 ```
 
-You can use an object to export multiple functions, like so:
+You can use an object to export **multiple** functions, like so:
 
 ```js
 module.exports.currencyConverter = {
@@ -114,7 +114,7 @@ Here are some commonly used ones:
 
 - The `http` module
     * used to create an **HTTP server**
-    * there is an `https` module as well
+    * there is an `https` module as well, for greater security
 
 ```js
 let http = require('http');
@@ -155,7 +155,7 @@ JavaScript's **built-in module statements always export and import an object**.
 
 ## Importing
 
-Importing an object can be done in several ways:
+Importing a module can be done in several ways:
 
 - Importing a **specific function**
 
@@ -191,7 +191,7 @@ Using the `default` keyword we can later import the value with **any given name*
 export default greetFunction;
 ```
 
-Think of the next code block as a different file, in which we import `myFunction`:
+Think of the next code block as a **different file**, in which we import `myFunction`:
 
 ```js
 import hello from './test.js';

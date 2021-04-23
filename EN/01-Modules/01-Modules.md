@@ -8,11 +8,11 @@
 
 A **Module** is a **set of functions** that is made **accessible throughout any part of the application**.
 
-Modules are used to **encapsulate code and data** to **implement a certain functionality**.
+Modules are used to **encapsulate code and data** in order to **implement a certain functionality**.
 
 Most often, **modules** are packaged in a **single unit**, so that they are **easier to deploy**.
 
-There are numerous benefits when it comes to using modules:
+There are numerous **benefits** when it comes to using modules:
 
 - **Avoiding code repetition**
 
@@ -28,11 +28,11 @@ There are numerous benefits when it comes to using modules:
 
 There are **three main ways** to create **modules** in your program:
 
-- Using **immediately-invoked function expressions**\(IIFE\)
+- Using **immediately invoked function expressions**\(IIFE\)
 
-- Using Node.js **require** and **export**
+- Using **Node.js** `require` and `export`
 
-- Using the import/export statements
+- Using the `import`/`export` statements
   
     * built **directly into JavaScript**
 

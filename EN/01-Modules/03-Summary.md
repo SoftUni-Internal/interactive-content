@@ -5,16 +5,16 @@
 
 ## In this lesson you learned:
 
-- What JavaScript modules are
+- What JavaScript **modules** are
 
-	* a set of functions to be included in applications
+	* a set of **data and functionality**, made accessible to other files
 
-    * reusable pieces of code that supercharge our productivity
+    * **reusable** pieces of code that supercharge our **productivity**
 
 
-- IIFE Modules
-    * enabling data encapsulation
-    * direct data access can be limited to the current scope
+- **IIFE** Modules
+    * enabling data **encapsulation**
+    * direct data access can be **limited** to the **current scope**
 
 ```js 
 var myModule = (function() {
