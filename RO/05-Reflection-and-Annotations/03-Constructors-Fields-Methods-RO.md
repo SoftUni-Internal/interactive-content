@@ -35,7 +35,7 @@ MyObject myObject = (MyObject)
         constructor.newInstance("arg1");
 ```
 
-Metoda "newInstance()" ia o cantitate opțională de parametri.
+Metoda `newInstance()` ia o cantitate opțională de parametri.
 
 Trebuie să furnizăm exact un parametru pe argument în constructorul pe care îl invocăm.
 
