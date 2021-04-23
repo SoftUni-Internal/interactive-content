@@ -30,7 +30,7 @@ We must ensure that derived classes are extending the base class **without chang
 
 [slide hideTitle]
 
-# LSP – Violations and Solutions​
+# LSP - Violations and Solutions​
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/interactive-java-oop-advanced-s.o.l.i.d-19-lsp-violations-and-solutions-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -51,7 +51,7 @@ public interface Vehicle {
     void accelerate();
 }
 ```
-We define a simple **Vehicle** Interface with a couple of methods that all vehicles should be able to fulfill – turning on the engine, and accelerating.
+We define a simple **Vehicle** Interface with a couple of methods that all vehicles should be able to fulfill - turning on the engine, and accelerating.
 
 The `MotorCar` class implements the `Vehicle` Interface and its methods `startEngine()` and `accelerate()`.
 

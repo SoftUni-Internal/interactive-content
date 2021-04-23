@@ -54,7 +54,7 @@ public class Robot implements Worker {
   }
 }
 ```
-The `Worker` interface has two methods – `work()` and `sleep()`.​
+The `Worker` interface has two methods - `work()` and `sleep()`.​
 
 When an `Employee` class implements that interface, there will not be any complications. 
 

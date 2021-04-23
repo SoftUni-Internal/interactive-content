@@ -20,9 +20,9 @@ If the vehicle **cannot** travel the specified distance, its fuel level remains 
 
 ## Input
 - On the **first line** - information about the car in format "**Car** \{**fuel quantity**\} \{**liters per km**\}"
-- On the **second line** – info about the truck in format "**Truck** \{**fuel quantity**\} \{**liters per km**\}"
+- On the **second line** - info about the truck in format "**Truck** \{**fuel quantity**\} \{**liters per km**\}"
 - On the **third line** - **number of commands N** that will be given on the next **N** lines
-- On the next **N** lines – commands in format:
+- On the next **N** lines - commands in format:
     - "**Drive Car** \{**distance**\}"
     - "**Drive Truck** \{**distance**\}"
     - "**Refuel Car** \{**liters**\}"
@@ -351,7 +351,7 @@ Truck: 176.18
 # Description
 Use your solution to the previous task as a starting point and add the necessary functionality. 
 
-Add a new vehicle class – **Bus**. 
+Add a new vehicle class - **Bus**. 
 
 Every vehicle has **tank capacity** and fuel quantity **cannot fall below 0** (If the fuel reserve becomes less than 0, **print** "**The fuel amount must be a positive number**" to the console).
 
@@ -373,7 +373,7 @@ If there are **no people on the bus** when driving the air-conditioner is **turn
 "**Vehicle** \{**initial fuel quantity**\} \{**liters per km**\} \{**tank capacity**\}"
 
 - On fourth line - **number of commands N** that will be given on the next **N** lines
-- On the next **N** lines – commands in format:
+- On the next **N** lines - commands in format:
     - **Drive Car** \{**distance**\}
     - **Drive Truck** \{**distance**\}
     - **Drive Bus** \{**distance**\}
@@ -756,17 +756,17 @@ Where:
     - i.e. the command is applied on indices starting from **startIndex** and ending at **endIndex - 1** inclusively
 
 The skeleton you are provided with contains the following files:
-- **Main.java** – contains the `main(String[] args)` method, reads input, and prints output to the console
-- **TextTransform.java** – contains a base class for any text-transformation added to the program
-- **Command.java** – contains a class that represents commands
-- **CommandInterface.java** – defines an interface class that handles commands represented as strings (coming from the console, read from `main(String[] args)`) 
-- **CommandImpl.java** – class which holds the implementation of the **CommandInterface**
+- **Main.java** - contains the `main(String[] args)` method, reads input, and prints output to the console
+- **TextTransform.java** - contains a base class for any text-transformation added to the program
+- **Command.java** - contains a class that represents commands
+- **CommandInterface.java** - defines an interface class that handles commands represented as strings (coming from the console, read from `main(String[] args)`) 
+- **CommandImpl.java** - class which holds the implementation of the **CommandInterface**
 
 Create an **Initialization.java** file that holds the functionality to create instances of the CommandImpl class
 
 The files you are given support all the necessary logic to implement the following command:
 
-**uppercase** – transforms any alphabetical character in the text in the range \[**startIndex**, **endIndex**\) to its uppercase variant.
+**uppercase** - transforms any alphabetical character in the text in the range \[**startIndex**, **endIndex**\) to its uppercase variant.
 
 **For example:**
 If the current text is **dom3. text** 
@@ -776,7 +776,7 @@ the text will change to **dOM3. Text**
 **Note**: if **startIndex == endIndex**, the command has no effect.
 
 Your task is to implement the following commands:
-- **cut** – cuts (removes) characters from the text in range \[**startIndex**, **endIndex**\) and saves the last piece that was removed 
+- **cut** - cuts (removes) characters from the text in range \[**startIndex**, **endIndex**\) and saves the last piece that was removed 
 
 **For example:**
 If the current text is **dom3. text**
@@ -785,12 +785,12 @@ the text will change to **dext**
 
 **Note**: if **startIndex == endIndex**, the command has no effect on the text, but "**clears**" the last remembered cut
 
-- **paste** – replaces the characters in the text in range \[**startIndex**, **endIndex**\) with the characters which were removed by the last cut
+- **paste** - replaces the characters in the text in range \[**startIndex**, **endIndex**\) with the characters which were removed by the last cut
 
 **For example:**
 If we have the text **dom3. Text** 
 and the commands **cut 1 7** (text changes to **dext**) **paste 3 4** 
-the text will change to **dexom3. t** (we paste the last cut piece– "**om3. t**" – over the specified indexes)
+the text will change to **dexom3. t** (we paste the last cut piece - "**om3. t**" - over the specified indexes)
 
 **Note**: if **startIndex == endIndex**, **paste** will insert the text at position **startIndex**, meaning that any text at **startIndex** will be pushed to the right by the inserted text. 
 
@@ -970,27 +970,27 @@ The numbers are positive integers, while the operations can be single symbols (e
 
 Operations are executed immediately after they receive all ncessary operands. 
 
-**For example**, the expression **3 * 4 / 2** will accept **3**, then the multiplication sign and afterward, will await a number to multiply – when it receives **4** it will calculate that **3 * 4 = 12**, then the division sign is entered and it will wait for a number to divide the result by – when it receives **2**, it will divide **12** by **2**.
+**For example**, the expression **3 * 4 / 2** will accept **3**, then the multiplication sign and afterward, will await a number to multiply - when it receives **4** it will calculate that **3 * 4 = 12**, then the division sign is entered and it will wait for a number to divide the result by - when it receives **2**, it will divide **12** by **2**.
 
 Any number input overwrites the current result of the calculator.
 
-For example, if the expression **3 1 * 4 16 / 2** is received, we would first receive **3**, overwrite it with **1**, multiply this by **4** and get **4** as a result, then we overwrite this with **16** and divide that by **2** – the final result will be **8**.
+For example, if the expression **3 1 * 4 16 / 2** is received, we would first receive **3**, overwrite it with **1**, multiply this by **4** and get **4** as a result, then we overwrite this with **16** and divide that by **2** - the final result will be **8**.
 
 The skeleton you are provided with contains the following files:
-- **Main.java**– contains the `main(String[] args)` method, reads input, and prints output to the console
-- **Operation.java** – contains a base class for any operation done by the calculator
-- **MultiplicationOperation.java** – defines a class that inherits the base **Operation** class and implements the multiplication operation (*)
-- **CalculationEngine.java** – defines the calculator’s central logic of handling number and operations input
-- **InputInterpreter.java** – defines a class that can interpret a string into either a number or an operation and invoke the engine accordingly
+- **Main.java** - contains the `main(String[] args)` method, reads input, and prints output to the console
+- **Operation.java** - contains a base class for any operation done by the calculator
+- **MultiplicationOperation.java** - defines a class that inherits the base **Operation** class and implements the multiplication operation (*)
+- **CalculationEngine.java** - defines the calculator’s central logic of handling number and operations input
+- **InputInterpreter.java** - defines a class that can interpret a string into either a number or an operation and invoke the engine accordingly
 
-The files you are given support all the logic necessary to implement the **multiplication** operation, as well as console input and output (note that input items do not need to be on the same line – you can have **one operation** or number per line and the code will still work) there is missing logic to instantiate an **InputInterpreter**, which should be defined in the missing **Extensions.java** file.
+The files you are given support all the logic necessary to implement the **multiplication** operation, as well as console input and output (note that input items do not need to be on the same line - you can have **one operation** or number per line and the code will still work) there is missing logic to instantiate an **InputInterpreter**, which should be defined in the missing **Extensions.java** file.
 
 Your task is to study the provided code and add the following operations:
-- **/** – **division**, divides the current value of the calculator by the next number the calculator receives and pushes the result to the calculator (i.e. same as multiplication, but divides)
-- **ms** – saves the current result of the calculator to "**memory**". The result of this operation is the current result of the calculator. For example, the expression **3 * 4 ms * 5** and the expression **3 * 4 * 5** are equivalent in their result
-- **mr** – **memory recall**, removes the last item from memory, and sends it to the calculator
+- **/** - **division**, divides the current value of the calculator by the next number the calculator receives and pushes the result to the calculator (i.e. same as multiplication, but divides)
+- **ms** - saves the current result of the calculator to "**memory**". The result of this operation is the current result of the calculator. For example, the expression **3 * 4 ms * 5** and the expression **3 * 4 * 5** are equivalent in their result
+- **mr** - **memory recall**, removes the last item from memory, and sends it to the calculator
     - note that this operation can be used in combination with other operations, for example, the expression **3 ms * 4 ms * 5 * mr * mr** will save **3** to memory, perform a calculation producing **12** as a result, save that to memory, calculate the next expression: **60** is received, multiply that by **12** (stored in memory), **720** is received as a product and stored, then multiply that by **3**, the final result will be: **2160**
-    - it can also be used without operations – **3 ms 4 mr** is the same as **3 4 3**
+    - it can also be used without operations - **3 ms 4 mr** is the same as **3 4 3**
 
 ## Input
 The program defined in **Main.java** reads the following input:

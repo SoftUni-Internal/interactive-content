@@ -26,10 +26,10 @@ When applied properly, they make our code more **extendable**, **logical**, and 
 
 **S.O.L.I.D** consists of the following five principles:
 
-- **S** – **Single responsibility** – a unit should have only one responsibility
-- **O** – **Open–closed** - our code should be open for extension, but closed for modification
-- **L** – **Liskov substitution** – objects should be replaceable with instances of their subtypes without altering the correctness of the program
-- **I** – **Interface segregation** – many specific interfaces are better than one general interface
-- **D** – **Dependency inversion** – code should depend upon abstractions, not concretions
+- **S** - **Single responsibility** - a unit should have only one responsibility
+- **O** - **Open-closed** - our code should be open for extension, but closed for modification
+- **L** - **Liskov substitution** - objects should be replaceable with instances of their subtypes without altering the correctness of the program
+- **I** - **Interface segregation** - many specific interfaces are better than one general interface
+- **D** - **Dependency inversion** - code should depend upon abstractions, not concretions
 
 [/slide]

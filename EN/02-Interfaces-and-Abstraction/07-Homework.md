@@ -4730,13 +4730,13 @@ Test Passed!
 
 [task-description]
 # Description
-Create 3 different string collections – **AddCollection**, **AddRemoveCollection** and **MyListImpl**.
+Create 3 different string collections - **AddCollection**, **AddRemoveCollection** and **MyListImpl**.
 
 **The AddCollection** should have:
 - Only a single method **add(String)** which adds an item to the **end** of the collection
 
 The **AddRemoveCollection** should have:
-- An **add(String)** method – which adds an item to the **start** of the collection
+- An **add(String)** method - which adds an item to the **start** of the collection
 - A **remove()** method which removes the last item in the collection.
 
 The **MyListImpl** collection should have:
