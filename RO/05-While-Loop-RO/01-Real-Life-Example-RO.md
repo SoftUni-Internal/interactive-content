@@ -1,4 +1,4 @@
-# Exemplu din viața reală
+# Exemplu din Viața Reală
 [slide hideTitle]
 
 # Exemplu din Viața Reală
@@ -7,11 +7,19 @@
 
 Următorul tip de bucle cu care ne vom familiariza se numesc bucle `while`.
 
-Ceea ce este specific pentru ele este faptul că repetă o secvență de comenzi până când se ajunge la condiția `true`. 
+Buclele while execută un bloc de cod cât timp o condiție specificată este **true**. 
 
-Ca structură, ele diferă de buclele `for` și au chiar o sintaxă mai simplă.
+Ca structură, ele diferă de **buclele for** și au chiar o sintaxă mai simplă.
 
-Înainte de a trece la lecție, să vedem un exemplu din viața reală. 
+Să vedem un exemplu din viața reală:
 [image assetsSrc="05-bucket-example.png"/]
+
+Trebuie să umpleți o găleată cu apă, folosind o cană.
+
+Nu stiți de câte căni cu apă veți avea nevoie.
+
+Vă veți opri atunci când găleata este plină cu apă.
+
+În acest exemplu, executați o acțiune până când ajungeți la o anumită condiție.
 
 [/slide]
