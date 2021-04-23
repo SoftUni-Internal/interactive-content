@@ -2,6 +2,8 @@
 
 # Dependențe
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-35-36-coupling-and-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Majoritatea componentelor depind de alte componente pentru a exista.
 
 În loc să creăm componente care sunt asociate îndeaproape, putem utiliza **injecția de dependență** pentru a îmbunătăți **separarea preocupărilor (separation of concerns)**. 
