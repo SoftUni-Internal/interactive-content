@@ -21,35 +21,37 @@ public class Main {
 [task-description]
 
 # Descriere
-Ați fost angajat la un cinematograf pentru a scrie un program care calculează dacă un film va fi suficient, astfel încât sala cinematografului să fie umplută și de câți bani va fi profitul.
+Ați fost angajat de un cinematograf pentru a scrie un program care calculează dacă există numărul necesar de spectatori pentru a umple sala cinematografului și care este profitul evenimentului.
 
-Veți primi numărul de locuri în sală și pe rândurile următoare până la comanda "**Movie time!**", Câți oameni intră în sală.
+Pe prima linie veți primi numărul de locuri în sală.
 
-Prețul pentru un bilet este de 5 $.
+Pe rândurile următoare, până la primirea comenzii "**Movie time!**", veți primi numere care reprezintă numărul de oameni care intră în sală.
 
-Dacă numărul actual de persoane care intră în sală poate fi împărțit la 3 fără rest, există 5 $. reducere din prețul total.
+Prețul pentru un bilet este de 5$.
+
+Dacă numărul actual de persoane care intră în sală poate fi împărțit la 3 fără rest, există 5$ reducere din prețul total.
 
 Dacă nu există suficiente locuri libere pentru persoanele care doresc să intre, înseamnă că nu mai sunt locuri și programul trebuie să oprească citirea intrărilor de pe consolă.
 
-Dacă mai mulți oameni decât locurile disponibile încearcă să intre în sală, acesta este considerat complet și programul ar trebui să nu mai primească informații.
+Dacă mai mulți oameni decât numărul locurilor disponibile încearcă să intre în sală, sala este evaluată ca fiind plină și programul trebuie să se oprească.
 
 ## Intrare
 Citiți de pe consolă:
-- Prima linie - capacitatea sălii - un număr întreg în intervalul \[50 ... 150\]
+- Capacitatea sălii - un număr întreg în intervalul \[50 ... 150\]
 
-Pe fiecare dintre următoarele rânduri până la comanda "**Movie time!**":
-- Numărul de persoane care intră în cinematograf - un număr întreg în intervalul \[1 ... 15\]
+- Pe următoarele rânduri, până la primirea comenzii "**Movie time!**" - numărul de persoane care intră în cinematograf - un număr întreg în intervalul \[1 ... 15\]
 
 ## Ieșire
-Mai întâi, tipăriți pe consolă o linie:
+Mai întâi, tipăriți pe consolă un singur rând în următorul format:
 - Dacă ați primit comanda **"Movie time!"**: **"There are** \{**seats left**\} **seats left in the cinema."**
 
-- Dacă nu mai sunt locuri libere în sală: **"The cinema is full."**
+- Dacă nu mai sunt **locuri libere** în sală: **"The cinema is full."**
+
 - Ulterior, tipăriți: **"Cinema income -** \{**income**\}**$"**
 
-## Example
-| **Input** | **Output** | 
-| --- | --- | --- |
+## Exemplu
+| **Intrare** | **Ieșire** | 
+| --- | --- |
 | 60 | There are 6 seats left in the cinema. | 
 | 10 | Cinema income - 255$ | 
 | 6 | 
@@ -61,11 +63,11 @@ Mai întâi, tipăriți pe consolă o linie:
 [hints]
 
 [hint]
-În funcție de filmul și băutura alese, stabiliți prețul biletului 
+Verificați dacă există numărul de locuri libere necesare la fiecare iterație.
 [/hint]
 
 [hint]
-Verificați dacă este o reducere și calculați prețul total
+Verificați dacă există o reducere și calculați prețul total.
 [/hint]
 [/hints]
 
