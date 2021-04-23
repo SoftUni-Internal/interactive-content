@@ -140,7 +140,7 @@ A class that **implements an interface** must **provide an implementation** for 
 [slide hideTitle]
 # Problem with Solution: Car Shop
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-14-problem-and-solution-car-shop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Car-Shop-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Car Shop" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Car-Shop" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
@@ -755,7 +755,7 @@ Test Passed!
 [slide hideTitle]
 # Problem with Solution: Car Shop Extended
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Java-OOP-Advanced-Interfaces-and-Abstraction-19-problem-and-solution-car-shop-extended-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Car-Shop-Extend-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Car Shop Extended" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Car-Shop-Extended" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
@@ -2045,6 +2045,8 @@ Test Passed!
 
 [slide hideTitle]
 # Problem with Solution: Say Hello Extended
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/EN/Say-Hello-Extend-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Say Hello Extended" timeLimit=50000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Say-Hello-Extended" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
