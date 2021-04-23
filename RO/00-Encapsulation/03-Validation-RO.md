@@ -44,9 +44,8 @@ public Person(String firstName, String lastName,
 
 [slide hideTitle]
 
-# Problemă cu Soluție: Validation Data
+# Problemă: Validation Data
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/RO/01.Java-OOP-Advanced-Encapsulation-22-problem-and-solution-validation-data-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Validation Data" taskId="Java-OOP-Advanced-Encapsulation-Validation-Data" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
