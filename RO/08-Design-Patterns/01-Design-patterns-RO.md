@@ -103,17 +103,17 @@ Acestea pot fi adesea utilizate în mod necorespunzător și cu puțină gândir
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/RO/Java-OOP-Advanced-Design-Patterns-10-11-types-of-design-patterns-main-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The rest of the lesson covers the main types of design patterns as well as their practical implementation.
+Restul lecției conține principalele tipuri de șabloane de proiectare, precum și implementările practice ale acestora.
 
-They can be divided into three categories:
+Acestea pot fi împărțite pe 3 categorii:
 
-- **Creational patterns**
-  - handle **initialization** and the **configuration** of objects and classes
-- **Structural patterns**
-  - responsible for **class composition** and **assembling objects**
-- **Behavioral patterns**
-  - handle **dynamic interaction** between classes and distribute **responsibilities**
+- **Șabloane creaționale**
+   - gestionează **inițializarea** și **configurarea** obiectelor și claselor
+- **Șabloane structurale**
+   - responsabile pentru **compoziția claselor** și **ansamblarea de obiecte**
+- **Șabloane comportamentale**
+  - gestionează **interacțiunea dinamică** dintre clase și distribuie **responsabilități**
 
-Try to implement each of the following design patterns and make sure you understand them before moving on to the next lesson.
+Încercați să implementați fiecare din șabloanele următoare și asigurați-vă că le înțelegeți înainte de a trece la următoarea lecție.
 
 [/slide]
