@@ -292,7 +292,7 @@ Copiați următorul cod în fișierul `pom.xml`:
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/07-Unit-Testing/RO/Java-OOP-Advanced-Unit-Testing-48-mocking-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Descriere
+## Descriere
 
 Includeți **Mockito** în dependențele proiectului, iar apoi:
 - Simulați falsuri din problema precedentă
