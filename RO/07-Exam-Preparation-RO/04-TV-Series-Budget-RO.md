@@ -58,6 +58,7 @@ Rezultatul trebuie formatat la două cifre după punctul zecimal.
 | 5 | |
 | Gotham | |
 | 2 | |
+
 [hints]
 
 [hint]
