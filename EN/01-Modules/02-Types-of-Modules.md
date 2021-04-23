@@ -33,7 +33,7 @@ This module contains the `count` variable and the `increase()` function.
 
 As you may know, variables defined with `var` are **available globally** by default.
 
-**IIFE Modules** can override this behavior.
+**IIFE modules** can override this behavior.
 
 The object that is returned contains the functionality and data that we make globally accessible.
 
@@ -96,7 +96,7 @@ module.exports.person = {
 }
 ```
 
-You can use an object to export multiple functions, like so:
+You can use an object to export **multiple** functions, like so:
 
 ```js
 module.exports.currencyConverter = {
@@ -114,6 +114,7 @@ Here are some commonly used ones:
 
 - The `http` module
     * used to create an **HTTP server**
+    * there is an `https` module as well, for greater security
 
 ```js
 let http = require('http');
@@ -133,6 +134,14 @@ let url = require('url');
 let fs = require('fs');
 ```
 
+- The `zlib` module:
+    * provides a way of zipping and unzpping files
+    * most often used in conjunction with `fs`
+
+```js
+var zlib = require('zlib');
+```
+
 [/slide]
 
 [slide hideTitle]
@@ -140,13 +149,13 @@ let fs = require('fs');
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/EN/JS-Applications-Modules-9-es6-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In 2015, with the introduction of the EcmaScript 6 standard, modules were introduced natively to JavaScript.
+In 2015, with the introduction of the **EcmaScript 6** standard, modules were introduced **natively** to JavaScript.
 
 JavaScript's **built-in module statements always export and import an object**.
 
 ## Importing
 
-Importing an object can be done in several ways:
+Importing a module can be done in several ways:
 
 - Importing a **specific function**
 
@@ -170,19 +179,19 @@ import { toUSD as convertToUSD } from './currencyConverter.js'
 
 ## Exporting
 
-We use the export statement to create a JavaScript module.
+We use the **export** statement to create a JavaScript module.
 
 ```js
 export { myFunction, variableOne };
 ```
 
-Using the default keyword we can later import the value with **any given name**:
+Using the `default` keyword we can later import the value with **any given name**:
 
 ```js
 export default greetFunction;
 ```
 
-Think of the next code block as a different file, in which we import `myFunction`:
+Think of the next code block as a **different file**, in which we import `myFunction`:
 
 ```js
 import hello from './test.js';

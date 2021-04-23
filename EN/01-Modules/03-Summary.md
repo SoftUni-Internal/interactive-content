@@ -5,15 +5,16 @@
 
 ## In this lesson you learned:
 
-- What Javascript modules are
+- What JavaScript **modules** are
 
-	* a set of functions to be included in applications
+	* a set of **data and functionality**, made accessible to other files
 
-    * reusable pieces of code that supercharge our productivity
+    * **reusable** pieces of code that supercharge our **productivity**
 
 
-- IIFE Modules
-    * enabling data encapsulation
+- **IIFE** Modules
+    * enabling data **encapsulation**
+    * direct data access can be **limited** to the **current scope**
 
 ```js 
 var myModule = (function() {
@@ -44,7 +45,7 @@ module.exports = 'Hello world!';
 
 - ES6 Modules
 	* built directly into JavaScript
-	* declared using the import/export statements
+	* declared using the `import`/`export` statements
 
 ```js
 import * as myModule from './myModule.js'
@@ -52,9 +53,8 @@ import * as myModule from './myModule.js'
 
 ## In the next lesson you will learn:
 
-- What is HTTP
-
-- HTTP Developer Tools
+- What HTTP is
+  * HTTP Developer Tools
 
 - REST and RESTful Services
 
