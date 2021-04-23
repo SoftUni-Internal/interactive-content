@@ -19,7 +19,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Pentru viitoarea premieră a trei producții populare, un cinematograf local v-a angajat să scrieți un software care calculează prețul, pe care clienții trebuie să-l plătească, în funcție de film și de oferta pe care au ales-o.
+Pentru viitoarea premieră a trei producții populare, un cinematograf local v-a angajat să scrieți un software care calculează prețul pe care clienții trebuie să-l plătească, în funcție de film și de oferta pe care au ales-o.
 
 | -  | **John Wick** | **Star Wars**| **Jumanji** |
 | --- | --- | --- | --- |
@@ -27,42 +27,42 @@ Pentru viitoarea premieră a trei producții populare, un cinematograf local v-a
 | Popcorn | 15$ | 25$ | 11$ |
 | Menu | 19$ | 30$ | 14$ |
 
-Scrieți un program care calculează prețul care trebuie plătit.
+Scrieți un program care calculează **prețul total** care trebuie plătit.
 
 Rețineți că există reduceri:
 
-- Dacă filmul ales este "**Star Wars**" și se cumpără cel puțin patru bilete, există o reducere de 30% pentru o familie
+- Dacă filmul ales este "**Star Wars**" și se cumpără cel puțin patru bilete, există o reducere de familie de 30% 
 
-- Dacă filmul ales este "**Jumanji**" și biletele cumpărate sunt exact două, există o reducere de 15% pentru două persoane
+- Dacă filmul ales este "**Jumanji**" și biletele cumpărate sunt **exact două**, există o reducere de 15% pentru două persoane
 
 ## Intrare
-Primești 3 linii de pe consolă:
-- Prima linie - film - un șir: "**John Wick**", "**Star Wars**" sau "**Jumanji**"
+Veți primi 3 linii de pe consolă:
+- Numele filmului - un șir: "**John Wick**", "**Star Wars**" sau "**Jumanji**"
 
-- A doua linie - ofertă - un șir: "**Drink**", "**Popcorn**" sau "**Menu**"
+- Tipul ofertei - un șir: "**Drink**", "**Popcorn**" sau "**Menu**"
 
-- A treia linie - numărați bilete - un număr întreg în intervalul [1 ... 30]
+- Numărul biletelor - un număr întreg în intervalul [1 ... 30]
 
 ## Ieșire
-Imprimați un rând pe consolă: **"Your bill is** \{**total price**\}**$"**
+Imprimați un singur rând pe consolă: **"Your bill is** \{**total price**\}**$"**
 
 Prețul trebuie formatat la două cifre după punctul zecimal.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
-| --- | --- | --- |
+| --- | --- |
 | John Wick | Your bill is 72.00$ | 
-| Drink | 
-| 6 | 
+| Drink | |
+| 6 | |
 
 [hints]
 
 [hint]
-În funcție de filmul și băutura alese, stabiliți prețul biletului
+În funcție de filmul și băutura aleasă, stabiliți prețul biletului
 [/hint]
 
 [hint]
-Verificați dacă este o reducere și calculați prețul total.
+Verificați dacă există o reducere și calculați prețul total.
 [/hint]
 [/hints]
 
