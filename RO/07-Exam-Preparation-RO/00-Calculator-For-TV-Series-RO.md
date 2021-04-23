@@ -20,23 +20,23 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program, care calculează cât vă va dura să urmăriți toate episoadele unui serial în câteva **minute**.
+Scrieți un program care calculează cât va dura să urmăriți toate episoadele unui serial în **minute**.
 
-Veți primi unui **număr de sezoane**, **numărul de episoade pe sezon** și **durata fiecărui episod**.
+Veți primi **numărul de sezoane**, **numărul de episoade din sezon** și **durata fiecărui episod**.
 
-În fiecare episod există **reclame**, a căror durată este de 20% din durata episodului.
+În fiecare episod există **reclame**, care măresc durata finală a unui episod cu 20%.
 
 De asemenea, trebuie să rețineți că fiecare sezon se încheie cu un episod special, care durează cu **10 minute mai mult decât de obicei**. 
 
 ## Intrare
-De pe consolă primiți 4 linii:
-- Numele seriei - **un șir**
-- Numărați sezoanele - un **număr** întreg în intervalul [1 ... 10]
-- Numărați episoadele - un **număr** întreg în intervalul [10 ... 80]
-- Durata unui episod obișnuit fără reclame - un număr cu **două** cifre și punct zecimal în intervalul [40.0 ... 65.0]
+Veți primi 4 linii de pe consolă:
+- Numele serialului - **un șir**
+- Numărul de sezoane - un **număr întreg** în intervalul [1 ... 10]
+- Numărul episoadelor - un **număr întreg** în intervalul [10 ... 80]
+- Durata unui episod obișnuit fără reclame - **double** în intervalul [40.0 ... 65.0]
 
 ## Ieșire
-Trebuie să imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunjite la cel mai apropiat număr întreg, în următorul format:
+Trebuie să imprimați pe consolă timpul necesar pentru a viziona toate episoadele, rotunjit la cel mai apropiat număr întreg, în următorul format:
 - "**Total time needed to watch the** \{**name of the series**\} **series is** \{**time**\} **minutes.**"
 
 ## Exemplu
@@ -54,11 +54,11 @@ Calculați durata reclamelor pe episod.
 [/hint]
 [hint]
 
-Stabiliți durata unui episod cu reclamele 
+Stabiliți durata unui episod, incluzând reclamele.
 [/hint]
 [hint]
 
-Adăugați un timp suplimentar pentru episoadele **speciale**.
+Adăugați durata suplimentară pentru episoadele **speciale**.
 [/hint]
 [hint]
 
