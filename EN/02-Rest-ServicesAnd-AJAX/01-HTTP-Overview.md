@@ -10,15 +10,15 @@
 
 **HTTP** ensures the communication between the web browser and the server.
 
-HTTP follows a classical **client-server model** where only the client, which most often is a **web browser**, can send a request and when the server receives the request it is mandatory to send back a **response**.
+HTTP follows a classical **client-server model** where only the client, which most often is a **web browser**, can send a request, and when the server receives the request, it is mandatory to send a **response** back.
 
-But the server reacts only **upon request**, which means that the server cannot send any data without **receiving a request**.
+But the server reacts only **upon request**, which means that it cannot send any data before **receiving such**.
 
-Therefore the server does not keep any data between two request, which make HTTP protocol a **stateless protocol**.
+Therefore, the server does not keep any data between two requests, making HTTP a **stateless protocol**.
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX.png" /]
 
-As we can see, the **client** sends a **request** and the **server** sends a **response**.
+As you can see, the **client** sends a **request**, and the **server** sends a **response**.
 
 [/slide]
 
@@ -40,7 +40,7 @@ The most used methods are:
 - **HEAD** retrieves headers of a resource
 - **OPTIONS** returns the HTTP methods that the server supports for the specified URL
 
-The HTTP methods are **case sensitive**.
+All HTTP methods are **case sensitive**.
 
 If we write them in lowercase, they will not work.
 
@@ -54,9 +54,9 @@ They must be in uppercase.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-6-http-get-request-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-By default, we send a **GET** request.
-
 We send a **GET** request when we want to obtain data from the server.
+
+The GET request is used most often.
 
 Here is an example:
 
@@ -74,7 +74,11 @@ Cache-Control: no-cache
 
 The first line, `GET /users/softuni/repos HTTP/1.1`, is called a **request line**.
 
-The next lines are the **headers** and the **body** `<CRLF>`.
+The next lines are the **headers** and the **body** - `<CRLF>`.
+
+We use the `<CRLF>` sequence to separate the header from the body.
+
+Since this is a GET request, the body is **empty**.
 
 [/slide]
 
@@ -104,7 +108,7 @@ Cache-Control: no-cache
 <CRLF>
 ```
 
-Here we have the **request line**, the **headers** and the **body**.
+Here we have the **request line**, the **headers**, and the **body**.
 
 But this time, the **body** holds the submitted data.
 
@@ -116,7 +120,7 @@ But this time, the **body** holds the submitted data.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-8-http-response-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-After the request is sent, the server will return a **response**.
+Once a request has been sent, the server must return a **response**.
 
 This response will look like this:
 
@@ -136,7 +140,7 @@ Content-Type: text/html
 
 The first line, `HTTP/1.1 200 OK`, is called a **response status line**.
 
-It holds the server response **status code**, which tells us if the request is completed.
+It holds the server response **status code**, which tells us if the request has been completed.
 
 After the **response line** is the **header**, which holds information about the server.
 
@@ -160,7 +164,7 @@ These are some of the codes:
 |`201`| **Create**| The new resource is created. |
 |`204`| **No Content**| There is nothing to return. |
 |`301` or `302`|**Moved**| The resource is moved or redirected to another location. |
-|`400`| **Bad Request**| The request is invalid or there is a syntax error. |
+|`400`| **Bad Request**| The request is invalid, or there is a syntax error. |
 |`401` or `403`| **Unauthorized**| Authentication failed or Access Denied. |
 |`404`| **Not Found**| The resource is not valid or not found. |
 |`409`| **Conflict**| There is a conflict in the request, for example, duplicated email. |
@@ -183,7 +187,7 @@ It will look like this: `Content-Type: application/json`.
 
 We can also set the **Content-Type** to be `Content-Type: text/html`
 
-If we want to download a pdf, we need to configure it like this:
+If we want to download a pdf, we need to configure it as follows:
 
 ```
 Content-Type: application/pdf
