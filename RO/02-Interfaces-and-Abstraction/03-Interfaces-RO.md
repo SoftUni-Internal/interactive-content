@@ -137,16 +137,16 @@ O clasă care **implementează o interfață** trebui să **furnizeze o implemen
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție: Car Shop
+# Problemă: Car Shop
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/RO/Java-OOP-Advanced-Interfaces-and-Abstraction-14-problem-and-solution-car-shop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [code-task title="Car Shop" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Car-Shop" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
 
 [task-description]
 # Descriere
-Construiți o ierarhie de  **clase** și**interfețe** folosind această diagramă UML.
+Construiți o ierarhie de **clase** și **interfețe** folosind această diagramă UML.
 
 [image assetsSrc="interfaces-and-abstraction-example(5).png" /]
 
@@ -752,9 +752,7 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problemă cu Soluție: Car Shop Extended
-
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/RO/Java-OOP-Advanced-Interfaces-and-Abstraction-19-problem-and-solution-car-shop-extended-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Problemă Car Shop Extended
 
 [code-task title="Car Shop Extended" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Car-Shop-Extended" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
