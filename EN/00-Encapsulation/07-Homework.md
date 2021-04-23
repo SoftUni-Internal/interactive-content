@@ -59,7 +59,7 @@ Make a private setter that performs data validation internally.
 | --- | --- |
 | 2 | Surface - 52.00 |
 | 3 | Lateral Surface - 40.00 |
-| 4 | Volume – 24.00 |
+| 4 | Volume - 24.00 |
 
 ## Example 3
 | **Input** | **Output** |
@@ -1894,7 +1894,7 @@ The `isBlank()` method may not work. You can use `trim().isEmpty()`.
 | **Input** | **Output** |
 | --- | --- |
 | Merry=0 | Merry can't afford Coffee |
-| Coffee=2 | Merry – Nothing bought |
+| Coffee=2 | Merry - Nothing bought |
 | Merry Coffee |  |
 | END |  |
 
@@ -2897,11 +2897,11 @@ For every pizza, provide a public method that **calculates its calories accordin
 
 | **Dough Modifiers** | **Topping Modifiers** |
 | --- | --- |
-| White – 1.5 | Meat – 1.2 |
-| Wholegrain – 1.0 | Veggies – 0.8 |
-| Crispy – 0.9 | Cheese – 1.1 |
-| Chewy – 1.1 | Sauce – 0.9 |
-| Homemade – 1.0 |  |
+| White - 1.5 | Meat - 1.2 |
+| Wholegrain - 1.0 | Veggies - 0.8 |
+| Crispy - 0.9 | Cheese - 1.1 |
+| Chewy - 1.1 | Sauce - 0.9 |
+| Homemade - 1.0 |  |
 
 **For example**:
 
@@ -4245,13 +4245,13 @@ Your application will receive commands until the **"END"** command is given.
 
 The command can be one of the following:
 
-- "**Team**;\{**TeamName**\}" – add a new team
+- "**Team**;\{**TeamName**\}" - add a new team
   
-- "**Add**;\{**TeamName**\};\{**PlayerName**\};\{**Endurance**\};\{**Sprint**\};\{**Dribble**\};\{**Passing**\};\{**Shooting**\}" – add a new player to the team
+- "**Add**;\{**TeamName**\};\{**PlayerName**\};\{**Endurance**\};\{**Sprint**\};\{**Dribble**\};\{**Passing**\};\{**Shooting**\}" - add a new player to the team
   
-- "**Remove**;\{**TeamName**\};\{**PlayerName**\}" – remove the player from the team
+- "**Remove**;\{**TeamName**\};\{**PlayerName**\}" - remove the player from the team
   
-- "**Rating**;\{**TeamName**\}" – print the team rating, rounded to a closest integer
+- "**Rating**;\{**TeamName**\}" - print the team rating, rounded to a closest integer
 
 ## Data Validation
 
@@ -4272,7 +4272,7 @@ In that case, print "**Names cannot be blank.**"
 ## Example 1
 | **Input** | **Output** |
 | --- | --- |
-| Team;Arsenal | Arsenal – 81 |
+| Team;Arsenal | Arsenal - 81 |
 | Add;Arsenal;Kieran_Gibbs;75;85;84;92;67 |  |
 | Add;Arsenal;Aaron_Ramsey;95;82;82;89;68 |  |
 | Remove;Arsenal;Aaron_Ramsey |  |
@@ -4292,7 +4292,7 @@ In that case, print "**Names cannot be blank.**"
 ## Example 3
 | **Input** | **Output** |
 | --- | --- |
-| Team;Arsenal | Arsenal – 0 |
+| Team;Arsenal | Arsenal - 0 |
 | Rating;Arsenal |  |
 | END |  |
 

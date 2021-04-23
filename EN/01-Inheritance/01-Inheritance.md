@@ -66,7 +66,7 @@ A real-life analog of **class hierarchies** is a  **family tree**, we have one c
 
 
 [slide hideTitle]
-# Class Hierarchies – Java Collection
+# Class Hierarchies - Java Collection
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-7-class-hierarchies-java-collection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

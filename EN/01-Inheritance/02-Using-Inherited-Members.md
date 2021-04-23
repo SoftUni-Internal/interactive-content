@@ -85,7 +85,7 @@ class Student extends Person {
 
 [slide hideTitle]
 
-# Thinking about Inheritance – Extends
+# Thinking about Inheritance - Extends
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-13-thinking-about-inheritance-extends-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

@@ -689,7 +689,7 @@ Follow the diagram and create the described structure.
 
 **Each** one, except the **Animal** class, should **extend** **another class**. 
 
-The Animal class must contain the fields: **name – String** and a **Getter** for its **name**.
+The Animal class must contain the fields: **name - String** and a **Getter** for its **name**.
 
 Every class must have:
 - A public constructor, which accepts one parameter: **name**
@@ -871,11 +871,11 @@ Your task is to create the following game hierarchy:
 
 Create a "Hero" class. It should contain the following members:
 - A public constructor, which accepts:
-    - **username – String**
-    - **level – int**
+    - **username - String**
+    - **level - int**
 - The following fields:
     - **username - String**
-    - **level – int**
+    - **level - int**
 - Getters for the username and the level
 - `toString()` method
 
@@ -1277,10 +1277,10 @@ Create the following **hierarchy** with the following **classes**:
 [image assetsSrc="inheritance-example(21).png" /]
 
 Create a base class called "Vehicle". It should possess the following members:
-- **DEFAULT_FUEL_CONSUMPTION** – **final static double (constant)**
-- **fuelConsumption – double**
-- **fuel – double**
-- **horsePower – int**
+- **DEFAULT_FUEL_CONSUMPTION** - **final static double (constant)**
+- **fuelConsumption - double**
+- **fuel - double**
+- **horsePower - int**
 - **Getters and Setters for all fields**
 - A public constructor which accepts (**fuel, horsePower**) and sets the **default fuel consumption** of the field called **fuelConsumption**
 - **void drive(double kilometers)**
@@ -1288,9 +1288,9 @@ Create a base class called "Vehicle". It should possess the following members:
     Keep in mind that you can drive the vehicle only if you have enough fuel to finish the drive.
 
 The default fuel consumption for a **Vehicle** is **1.25**. Some of the classes have different default fuel consumptions:
-- **SportCar – DEFAULT_FUEL_CONSUMPTION = 10**
-- **RaceMotorcycle – DEFAULT_FUEL_CONSUMPTION = 8**
-- **Car – DEFAULT_FUEL_CONSUMPTION = 3**
+- **SportCar - DEFAULT_FUEL_CONSUMPTION = 10**
+- **RaceMotorcycle - DEFAULT_FUEL_CONSUMPTION = 8**
+- **Car - DEFAULT_FUEL_CONSUMPTION = 3**
 
 ## Submit 
 
@@ -1851,24 +1851,24 @@ There is Food and Beverages in the restaurant and they are all "products".
 The **Product** class must have the following members:
 
 - A public constructor with the following parameters: **String name, BigDecimal price**
-- **name – String**
-- **price – BigDecimal**
+- **name - String**
+- **price - BigDecimal**
 - **Getters for all fields**
 
 The **Beverage** and the **Food** classes are "products". 
 
 The **Beverage** class must have the following members:
 - A public constructor with the following parameters: **String name, BigDecimal price, double milliliters**
-- **name – String**
-- **price – BigDecimal**
-- **milliliters – double**
+- **name - String**
+- **price - BigDecimal**
+- **milliliters - double**
 - **A Getter for "milliliters"**
 
 The **Food** class must have the following members:
 - A constructor with the following parameters: **String name, BigDecimal price, double grams**
-- **name – String**
-- **price – double**
-- **grams – double**
+- **name - String**
+- **price - double**
+- **grams - double**
 - **A Getter for "grams"**
 
 **HotBeverage** and **ColdBeverage** are **beverages** and they accept the following parameters upon initialization: **String name, BigDecimal price, double milliliters**
@@ -1876,13 +1876,13 @@ The **Food** class must have the following members:
 **Coffee** and **Tea** are **hot beverage**s. The **Coffee** class must have the following additional members:
 - `double COFFEE_MILLILITERS = 50`
 - `BigDecimal COFFEE_PRICE = 3.50`
-- **caffeine – double**
+- **caffeine - double**
 - A Getter for **caffeine**
 
 **MainDish**, **Dessert** and **Starter** are all **food**.
  They all accept the following parameters upon initialization: **String name, BigDecimal price, double grams**. 
  The **Dessert** class should accept one more parameter in its constructor: **double calories**.
-- **calories – double**
+- **calories - double**
 - A **Getter for "calories"**
 
 **Salmon**, **Soup** and **Cake** inherit the appropriate class.
@@ -2415,9 +2415,9 @@ Test Passed!
 # Description
 Create a hierarchy(package) of **animals**. 
 
-Your program should have three different animals – **Dog**, **Frog** and **Cat**. 
+Your program should have three different animals - **Dog**, **Frog** and **Cat**. 
 
-Deeper in the hierarchy you should have two additional classes – **Kitten** and **Tomcat**. 
+Deeper in the hierarchy you should have two additional classes - **Kitten** and **Tomcat**. 
 
 **Kittens are "Female" and Tomcats are "Male".**
 
@@ -2434,7 +2434,7 @@ You will be given some lines of input.
 
 Each two lines will represent an animal.
 
-On the first line will be the type of animal and on the second – the name, the age and the gender. 
+On the first line will be the type of animal and on the second - the name, the age and the gender. 
 
 When the command "**Beast!**" is given, stop the input and print all the animals in the format shown below.
 

@@ -52,7 +52,7 @@ class Patient extends Person {
 
 [slide hideTitle]
 
-# Shadowing Variables – Access
+# Shadowing Variables - Access
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-23-shadowing-variables-access-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -119,7 +119,7 @@ public class Student extends Person {
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/EN/Java-OOP-Advanced-Inheritance-25-26-final-methods-and-final-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- `final` – defines a method that **cannot be overridden**
+- `final` - defines a method that **cannot be overridden**
   - we should use this tool when we want to preserve our method implementation down the class hierarchy
   - `final` can be declared in any derived class and it remains for all deriving classes down the hierarchy
 
