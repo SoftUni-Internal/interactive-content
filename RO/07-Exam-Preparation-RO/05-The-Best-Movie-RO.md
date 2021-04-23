@@ -29,19 +29,19 @@ Nu va exista un caz în care să avem două filme cu un număr egal de puncte.
 
 Rețineți următoarele:
 
-- Pentru fiecare literă minusculă din titlu, trebuie să scădem din sumă de două ori lungimea titlului filmului
+- Pentru fiecare literă minusculă din titlu, trebuie să scădeți din sumă **de două ori lungimea titlului filmului**
 
-- Pentru fiecare literă majusculă din titlu, lungimea titlului filmului trebuie scăzută din sumă.
-Puteți avea maximum 7 titluri de film
+- Pentru fiecare literă majusculă din titlu, **lungimea titlului filmului** trebuie scăzută din sumă
+Puteți avea maxim 7 titluri de film.
 
 ## Intrare
-Primiți mai multe linii de pe consolă până la comanda "**STOP**" sau până la atingerea limitei de 7 filme:
-- Titlul filmului - un șir
+Veți primi mai multe linii de pe consolă până la primirea comenzii "**STOP**" sau până la atingerea limitei de 7 filme:
+- Titlul filmului - **un șir**
 
 ## Ieșire
 Imprimați pe consolă:
 - Dacă ați atins limita de 7 filme, trebuie să imprimați: **"The limit is reached."**
-- Imprimați cel mai bun film pentru dvs.: **"The best movie for you is** \{**movie title**\} **with** \{**sum of symbols**\} **ASCII sum."**
+- Imprimați **cel mai bun film** pentru dvs.: **"The best movie for you is** \{**movie title**\} **with** \{**sum of symbols**\} **ASCII sum."**
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
@@ -54,15 +54,10 @@ Imprimați pe consolă:
 [hints]
 [hint]
 
-Mai întâi vom primi **Matrix**, prima literă este M cu valoarea de 77f, este o literă majusculă, așa că vom scădea din aceasta lungimea titlului 77 \- 6 \= 71.
+Când primim primul film, trebuie să calculăm punctele acestuia. În mod similar procedăm cu fiecare film până la primirea comenzii "STOP".
 [/hint]
 [hint]
-A doua literă are valoarea 97 și scădem lungimea titlului \* 2 din suma 97 \- 12 = 85.
-
-În mod similar, procedăm cu fiecare literă care urmează, până ajungem la rezultatul final de 563.
-[/hint]
-[hint]
-După ce am primit comanda "**STOP**" , imprimăm titlul cu cea mai mare valoare, care este **Breaking** cu suma de 878.
+După ce am primit comanda "**STOP**" , imprimăm titlul cu cea mai mare valoare.
 [/hint]
 
 [/hints]
