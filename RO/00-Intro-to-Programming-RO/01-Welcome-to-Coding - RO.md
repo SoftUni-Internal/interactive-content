@@ -1,11 +1,11 @@
 [slide hideTitle]
-# Ce Reprezintă Codificarea
+# Ce Reprezintă Codarea
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-3-4-What-is-coding-and-demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Programarea** este procesul de **declarare a unor serii de comenzi ale calculatorului**, al căror scop este de a manipula și procesa numere sau text.
 
-**Programele de calculator** reprezintă secvențe de asemnea comenzi. 
+**Programele de calculator** reprezintă secvențe de asemenea comenzi. 
 
 Textul unui program de calculator se numește **cod de program** (sau **cod sursă**, sau chiar și mai scurt – **cod**).
 
@@ -31,7 +31,7 @@ System.out.println("I am coding");
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-7-computer-program-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Programele de calculator conțin **secvențe de comenzi** care sunt aplicabile în contextul unui anumit **limbaj de programare**. Câteva exemple populare de limbaje de programare sunt : C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go.
+Programele de calculator conțin **secvențe de comenzi** care sunt aplicabile în contextul unui anumit **limbaj de programare**. Câteva exemple populare de limbaje de programare sunt: C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go.
 
 Aici aveți un program simplu care utilizează sintaxa Java. Acesta calculează aria unui pătrat și tipărește rezultatul:
 
@@ -45,13 +45,13 @@ public class Main {
 }
 ```
 
-Programul mai sus menționat definește o **clasă** `Main`, care are în ea o **metodă** `main()`. Înăuntrul acesteia se află o secvență de **3 comenzi**:
+Programul menționat mai sus definește o **clasă** `Main`, care conține o **metodă** `main()`. Înăuntrul acesteia se află o secvență de **3 comenzi**:
 
 - Prima comandă declară și inițializează o **variabilă**: `int size = 5;`
 - A doua comandă **imprimă** o **expresie**: `System.out.println("Size = " + size);`
 - A treia comandă calculează și **imprimă** o **expresie**: `System.out.println("Area = " + size * size);`
 
-Rezultatul (datele de ieșire) programului mai sus menționat este următorul:
+Rezultatul (datele de ieșire) programului menționat mai sus este următorul:
 ```
 Size = 5
 Area = 25
@@ -69,7 +69,7 @@ Drept urmare, ne vom familiariza cu sintaxa și semantica limbajului Java, și c
 
 [slide hideTitle]
 
-# Exemplu: Complete Computer Program
+# Exemplu: Program Complet de Calculator
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-8-complete-computer-program-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -100,11 +100,11 @@ Un IDE ne ajută să rulăm și să depanăm cod, evitând erorile de sintaxă. 
 [/slide]
 
 [slide hideTitle]
-# Programele Java Bazate pe Consolă - Exemplu
+# Exemplu: Programe Java Bazate pe Consolă 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-9-console-based-java-program-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Să ne uităm puțin la un program simplu care citește ca date de intrare ale utilizatorului anumite sume de bani exprimate în dolari (USD) - un număr întreg, apoi îl convertește în Euro (EUR) înmulțind suma cu cursul de schimb valutar și tipărește rezultatul obținut.
+Să ne uităm puțin la un program simplu care citește ca date de intrare ale utilizatorului anumite sume de bani exprimate în dolari (USD) - un număr întreg, apoi îl convertește în Euro (EUR) înmulțind suma cu cursul de schimb valutar, și tipărește rezultatul obținut.
 
 Acesta este un program cu 3 comenzi consecutive:
 ```java
