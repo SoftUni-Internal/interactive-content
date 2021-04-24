@@ -17,7 +17,7 @@ Acest proces face codul să fie executabil de către un **microprocesor**.
 ## Interpretori
 **Interpretorul** este un **program pentru executarea de programe**", scris într-un anumit limbaj de programare. 
 
-El execută comenzile din program **una după cealaltă**, întrucât înțelege nu doar o singură comandă sau o secvență de comenzi, ci înțelege, de asemenea, și alte construcții mai complicate.
+El execută comenzile din program **una după cealaltă**, întrucât înțelege nu doar o singură comandă sau o secvență de comenzi, ci înțelege de asemenea și alte construcții mai complicate.
 [/slide]
 
 [slide hideTitle]
@@ -27,9 +27,9 @@ El execută comenzile din program **una după cealaltă**, întrucât înțelege
 
 **Java** este un limbaj de programare modern, de uz general.
 
-Java este extrem de versatil și poate fi folosit pentru crearea a multor tipuri de programe: de la aplicații mobile și Web la jocuri și funcționalități back-end.
+Java este extrem de versatil și poate fi folosit pentru crearea multor tipuri de programe: de la aplicații mobile și Web la jocuri și funcționalități back-end.
 
-Cererea pentru dezvoltatori Java este, în prezent, printre cele mai ridicate. 
+Cererea pentru dezvoltatori Java este în prezent printre cele mai ridicate. 
 
 Acest lucru asigură realizarea profesională pentru cei care obțin competențele necesare. 
 
@@ -50,7 +50,7 @@ Java combină **programarea procedurală**, **orientată pe obiecte** și **func
 
 Așa cum am mai menționat și pe parcurs, un program reprezintă **o secvență de comenzi**, altfel spus, descrie o secvență de calcule, evaluări, iterații și orice alte tipuri de operații similare, care au ca scop atingerea unui anumit rezultat.
 
-Un program Java este scris într-un format text, iar textul programului este denumit **cod sursă**. 
+Un program Java este scris sub formă de text, iar textul programului este denumit **cod sursă**. 
 
 Acesta este compilat într-un **fișier executabil** sau este **executat direct** de un mediu de execuție (JRE).
 
@@ -68,7 +68,7 @@ Atunci când sunt folosite **scripturi și limbaje interpretate**, precum JavaSc
 
 ## JDK – Java Development Toolkit
 
-* Kit-ul de dezvoltare de soft Java (Java SDK) este un set de instrumente pentru dezvoltatori
+* Kit-ul de dezvoltare software Java (Java SDK) este un set de instrumente pentru dezvoltatori
 
 * Include o **mașină virtuală** (JVM), un **compilator Java** (javac) și alte instrumente pentru dezvoltator
 
