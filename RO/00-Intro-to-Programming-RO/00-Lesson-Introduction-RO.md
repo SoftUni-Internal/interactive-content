@@ -8,7 +8,7 @@
 
 ## În această lecție veți învăța:
 
-**1. Ce reprezintă codificarea**
+**1. Ce reprezintă codarea**
 
 - Cum să scrieți comenzi și programe simple 
 
