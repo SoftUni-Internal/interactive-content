@@ -5,9 +5,9 @@
 
 **Expresiile** sunt secvențe de operatori, literali și variabile care sunt evaluate la o valoare.
 
-* Constă din cel puțin un **operand**
+* Constau din cel puțin un **operand**
 
-* Poate avea unul sau mai mulți **operatori**
+* Pot avea unul sau mai mulți **operatori**
 
 ```java
 int y = x + 5;
