@@ -13,7 +13,7 @@
 
 **2. Ce reprezintă instrucțiunile condiționale**
 
-- Condițiile if, if-else 
+- Condițiile if și if-else 
 
 **3. Serii de verificări**
 
@@ -27,12 +27,12 @@
 
 - Tehnici de depanare 
 
-- Operațiile cu depanatorul
+- Operații cu depanatorul
 
 - Cum să folosiți punctele de întrerupere
 
 
-**6. Exerciții practice de codificare**
+**6. Exerciții practice de codare**
 
 
 
