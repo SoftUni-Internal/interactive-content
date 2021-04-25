@@ -1,12 +1,12 @@
 [slide hideTitle]
 
-# Secvența Condițiilor "If-Else" 
+# Secvență de Condiții "If-Else" 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Uneori trebuie să facem o secvența de condiții înainte de a decide ce acțiuni va executa programul nostru.
+Uneori avem nevoie de o secvență de condiții înainte de a decide ce acțiuni va executa programul nostru.
 
-În astfel de cazuri, putem aplica construcția `if-else if ... -else` **in serie**.
+În astfel de cazuri, putem aplica construcția `if-else if ... -else` **în serie**.
 
 Pentru acest scop, utilizăm următorul format:
 ```java
@@ -29,9 +29,9 @@ else {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-25-27-series-of-conditions-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Imprimați cifrele în intervalul de la 1 la 9 (cifrele sunt citite de pe consolă) în limba engleză.
+Imprimați cuvântul corespunzător unei cifre din intervalul de la 1 la 9 (o cifră este citită de pe consolă) în limba engleză.
 
-Putem citi cifra și apoi, printr-o **secvență de condiții**, imprimăm cuvântul relevant din limba engleză:
+Trebuie să citim cifra de pe consolă și apoi, printr-o **secvență de condiții**, imprimăm cuvântul relevant din limba engleză:
 
 ```java live
 int num = 5;
@@ -59,7 +59,7 @@ if (num == 1) {
 }
 ```
 
-Logica programului din exemplul de mai sus **compară secvențial** numărul din intrarea de pe consolă cu cifrele de la 1 la 9, **fiecare comparație următoare fiind efectuată numai în cazul în care comparația anterioară nu este true**.
+Logica programului din exemplul de mai sus **compară secvențial** numărul din intrarea de pe consolă cu cifrele de la 1 la 9, **fiecare comparație următoare fiind efectuată numai în cazul în care comparația anterioară nu are valoarea true**.
 
 În cele din urmă, dacă niciuna dintre instrucțiunile `if` nu este true, ultima **clauză** `else` este efectuată.
 [/slide]
