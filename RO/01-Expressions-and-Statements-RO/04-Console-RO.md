@@ -60,7 +60,7 @@ Acest lucru se întâmplă pentru că pe prima linie de cod folosim `println(...
 Următoarele două comenzi folosesc metoda `print(...)`, care tipărește conținutul fără să treacă la o nouă linie și astfel cuvintele "**this**" și "**course!**" rămân pe aceeași linie.
 
 ## Formatare
-În Java, atunci când se imprimă un text, numere și alte date pe consolă, **le putem alătura** folosind șabloane precum `% s`,`% d`, `% f`:
+În Java, atunci când se imprimă un text, numere și alte date pe consolă, **le putem alătura** folosind șabloane precum `%s`,`%d`, `%f`:
 * `%s` - formatare **string** (șir)
 * `%d` - formatare **integer** (număr întreg)
 * `%f` - formatare **floating-point numbers** (numere în virgulă mobilă)
