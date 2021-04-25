@@ -5,10 +5,10 @@
 
 Să aruncăm o privire la modul în care putem crea **condiții logice mai complexe** în programare.
 
-Putem folosi:
-* Operatorul logic **"ȘI"** (`&&`)
-* Operatorul logic **"SAU"** (`||`)
-* Operatorul logic **negare** (`!`) 
+Putem folosi următorii operatori logici:
+* **"ȘI"** (`&&`)
+* **"SAU"** (`||`)
+* **negare** (`!`) 
 * **Paranteze** (`()`).
 
 ## Operatorii logici "ȘI", "SAU" și "NU"
@@ -36,13 +36,13 @@ Vom explica logica **ȘI** (`&&`), logica **SAU** (`||`) și logica **NU** (`!`)
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-FIX-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-După cum am văzut, în unele sarcini trebuie să facem **multe verificări simultan**.
+După cum am văzut, în unele sarcini trebuie să facem **mai multe verificări simultan**.
 
 Operatorul logic **"ȘI"** (`&&`) ne ajută să verificăm mai multe condiții **simultan**.
 
 Putem folosi operatoul logic **"ȘI"** pentru a simplifica codul nostru și pentru a evita construcții inutile precum prea multe instrucțiuni condiționale imbricate.
 
-Următorul tabel ne ajută să vizualizăm posibilelor combinații:
+Următorul tabel ne ajută să vizualizăm posibilele combinații:
 
 | **Operand Unu**| **Operand Doi** | **ȘI** |
 |---|---|---|
@@ -79,7 +79,7 @@ Programul va rula în modul **următor**:
 - Evaluarea lui `d` este **omisă**
 
 ## Exemplu: Point in a Rectangle
-Scrieți un program care verifică dacă un punct cu coordonatele `x` și `y` este plasat în interiorul dreptunghiului `{x1, y1}` - `{x2, y2}`.
+Scrieți un program care verifică dacă un punct cu coordonatele `x` și `y` este plasat **în interiorul unui dreptunghi** `{x1, y1}` - `{x2, y2}`.
 
 [image assetsSrc="03.Point-in-rectangle-01.png" /]
 
@@ -98,7 +98,7 @@ Datele de intrare sunt citite de pe consolă și constă din 6 linii:
 |-1||
 
 ## Soluție
-Un punct este intern pentru un poligon dat, dacă următoarele patru condiții sunt aplicate în același timp:
+Un punct este intern pentru un poligon dat dacă următoarele patru condiții sunt aplicate în același timp:
 - Punctul este plasat la dreapta față de latura stângă a dreptunghiului
 - Punctul este plasat la stânga față de latura dreaptă a dreptunghiului
 - Punctul este plasat inferior față de latura superioară a dreptunghiului
@@ -145,6 +145,7 @@ Scrieți un program care primește un număr de puncte ca intrare și adaugă un
 * Dacă punctele date sunt între **0** și **3**, se adaugă **5**
 * Dacă punctele date sunt între **4** și **6**, se adaugă **15**
 * Dacă punctele date sunt între **7** și **9**, se adaugă **20**
+
 ## Exemplu
 
 |**Intrare**|**Ieșire** |
@@ -207,7 +208,7 @@ Vom **obține** o valoare `true` de fiecare dată când cel puțin unul dintre a
 
 La școală, profesorul spune: "John sau Peter trebuie să curețe tabla". Pentru a îndeplini această condiție, este posibil fie ca John să o curețe, fie doar ca Petru să o curețe, sau ambii să o facă.
 
-## Cum funcționează operatorul '||'?
+## Cum funcționează operatorul `||`?
 Am învățat deja ce reprezintă logica **SAU**. Acum trebuie să explicăm cum funcționează.
 
 La fel ca în cazul operatorului logic **"ȘI"** , programul **verifică** de la stânga la dreapta **argumentele** care sunt date.
@@ -228,7 +229,7 @@ System.out.println(result);
 ```
 Programul **verifică** `a`, acceptă că are valoarea `false` și continuă.
 
-Ajunge la 'b', care are valoarea `true`, și întreaga **expresie** este considerată ca fiind `true`, fără a trebui să se verifice `c` sau `d`, deoarece valorile lor **nu ar fi schimbat** rezultatul expresiei.
+Ajunge la `b`, care are valoarea `true`, și întreaga **expresie** este considerată ca fiind `true`, fără a trebui să se verifice `c` sau `d`, deoarece valorile lor **nu ar fi schimbat** rezultatul expresiei.
 [/slide]
 
 [slide hideTitle]
@@ -253,7 +254,7 @@ public class Main {
 Scrieți un program care:
 * Citește o singură linie și tipărește "**drink**", "**food**" sau "**unknown**" în funcție de cuvântul introdus
 * Food: curry, noodles, sushi, spaghetti 
-* Drinks: tea, water, coffee
+* Drink: tea, water, coffee
 * Unknown: orice altă intrare
 
 ## Exemplu
@@ -321,9 +322,9 @@ Operatorul logic de **negare** (**!**) inversează semnificația operandului să
 Operatorul `!` acceptă ca **argument** o variabilă booleană și **returnează** valoarea inversată a acesteia.
 
 ## Exemplu: Invalid Number
-Un număr **dat este valid** dacă se află în intervalul **\[100 ... 200 \]** sau este **0**. Faceți o validare pentru un număr **nevalid**.
+Un număr **dat este valid** dacă se află în intervalul **\[100 ... 200 \]** sau este **0**. Faceți o validare pentru un număr **non-valid**.
 
-De exemplu, `75` și `220` sunt **nevalide**, dar `150` este **valid**.
+De exemplu, `75` și `220` sunt **non-valide**, dar `150` este **valid**.
 
 ```java live
 int num = 75;
@@ -346,7 +347,7 @@ Operatorul `()` servește pentru **schimbarea priorității de executare**, la f
 
 Utilizarea parantezelor oferă, de asemenea, o mai bună lizibilitate a codului și este considerată o bună practică.
 
-Exemplu de verificare dacă o variabilă aparține anumitor intervale, folosind paranteze.
+Exemplu de verificare dacă o variabilă aparține anumitor intervale, folosind paranteze:
 ```java 
 if (x < 0) || ((x >= 5) && (x <= 10)) || (x > 20) {
     // Commands
