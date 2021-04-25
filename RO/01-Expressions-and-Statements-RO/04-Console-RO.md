@@ -208,7 +208,7 @@ Să rulăm programul și să ne asigurăm că atunci când este introdusă o val
 
 [image assetsSrc="expressions-and-statements-console-example-2.png" /]
 
-Rețineți că, dacă introduceți un **tip de date non-valid**, de ex. **someText**, programul se va bloca și va afișa un mesaj de eroare (excepție).
+Rețineți că, dacă introduceți un **tip de date non-valid**, de ex. "**someText**", programul se va bloca și va afișa un mesaj de eroare (excepție).
 
 [/slide]
 
