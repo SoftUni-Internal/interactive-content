@@ -21,7 +21,7 @@ if (condition1) {
 
 - Operatorii logici  
 
-  *  operatorii `&&` , `||` , `!` 
+  * `&&` , `||` , `!` 
 
   
 ``` java
