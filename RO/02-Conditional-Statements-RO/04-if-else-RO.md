@@ -4,7 +4,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-18-simple-conditions-if-else-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Construcția `if` poate conține de asemenea o clauză `else`, care furnizează o acțiune alternativă în cazul în care expresia booleană inițială returnează o valoare negativă ("false").
+Construcția `if` poate conține de asemenea o clauză `else`, care furnizează o acțiune alternativă în cazul în care expresia booleană inițială returnează un rezultat negativ ("false").
 
 Construită astfel, **instrucțiunea condițională** se numește `if-else` și comportamentul său este după cum urmează:
 * În cazul în care rezultatul condiției este pozitiv ("**true**") - comenzile plasate în cadrul acesteia vor fi executate
@@ -33,7 +33,7 @@ Atât corpul instrucțiunii if, cât și corpul instrucțiunii else pot consta d
 
 Pentru o singură instrucțiune, parantezele sunt opționale, dar recomandate.
 
-Instrucțiunea sau instrucțiunile din instrucțiunile if și else pot fi de orice fel, inclusiv alte instrucțiuni if - imbricate în interiorul instrucțiunii originale if.
+Comanda (sau comenzile) din instrucțiunile if și else pot fi de orice fel, inclusiv alte instrucțiuni if - imbricate în interiorul instrucțiunii originale if.
 [/slide]
 
 [slide hideTitle]
@@ -43,7 +43,7 @@ Instrucțiunea sau instrucțiunile din instrucțiunile if și else pot fi de ori
 
 Aceasta este o versiune extinsă a exemplului din diapozitivul anterior.
 
-După cum puteți vedea acum, avem un alt caz care va fi executat atunci când condiția din instrucțiunea `if` se dovedește a fi "**false**".
+După cum puteți vedea acum, avem un alt caz, care va fi executat atunci când condiția din instrucțiunea `if` se dovedește a fi "**false**".
 ```java
 Scanner scanner = new Scanner(System.in);
 String weather = scanner.nextLine();
@@ -61,11 +61,11 @@ if (weather.equals("rainy")) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-19-20-block-of-code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Când avem **o singură comandă** în corpul construcției **if**, putem **sări peste acolade**.
+Când avem **o singură comandă** în corpul construcției **if**, putem **să omitem acoladele**.
 
 Când dorim să executăm un **bloc de cod** (grup de comenzi), acoladele sunt **necesare**. 
 
-În cazul în care le eliminăm, **numai prima linie** după clauza **if** va fi executată.
+În cazul în care le omitem, **numai prima linie** după clauza **if** va fi executată.
 
 Mai jos avem un exemplu în care eliminarea acoladelor schimbă ordinea execuției:
 ```java live
@@ -109,7 +109,7 @@ public class Program {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program, care verifică dacă un număr este **par** sau **impar**:
+Scrieți un program care verifică dacă un număr este **par** sau **impar**:
 
    * Dacă este par, tipăriți **even**
    * Dacă este impar, tipăriți **odd**
@@ -175,7 +175,7 @@ public class Program {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program, care găsește cel mai mare număr dintre două numere:
+Scrieți un program care găsește cel mai mare număr dintre două numere:
 
    * Citiți două **numere întregi**
    * Găsiți numărul mai mare
