@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-14-15-simple-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Una dintre cele mai importante instrucțiuni din fiecare limbaj de programare este instrucțiunea `if`. 
+Unul dintre cele mai importante concepte din fiecare limbaj de programare este instrucțiunea `if`. 
 
 În programare adeseori **verificăm condiții particulare** și efectuăm diferite acțiuni în funcție de rezultatul verificării.
 [image assetsSrc="02-usecase-if-statement.png" /]
@@ -46,7 +46,7 @@ public class Program {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program pentru a verifica dacă vremea e rece:
+Scrieți un program pentru a verifica dacă vremea e răcoroasă:
 
   * Citiți o temperatură în Celsius (un număr în virgulă mobilă - float)
   * Imprimați "**Freezing weather!**" dacă temperatura este **egală** sau **mai mică decât 0**
