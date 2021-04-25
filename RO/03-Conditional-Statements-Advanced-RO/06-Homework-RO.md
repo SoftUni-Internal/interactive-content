@@ -19,8 +19,8 @@ public class Main {
 Scrieți un program pentru a verifica dacă o valoare introdusă este fruct sau legumă:
 
 * Citiți o singură linie de intrare: un articol de la aprozar
-* Fructe: banana, apple, kiwi, cherry, lemon, grapes
-* Legume: cucumber, pepper, carrot, onion
+* Fruct: banana, apple, kiwi, cherry, lemon, grapes
+* Legumă: cucumber, pepper, carrot, onion
 * Imprimați: **"vegetable"**, **"fruit"** sau **"unknown"**
 
 ## Exemplu
@@ -100,8 +100,8 @@ public class Main {
 Scrieți un program pentru a imprima ziua săptămânii ca un cuvânt:
 
 * Citiți și imprimați un număr întreg **n**: **ziua săptămânii** în intervalul [1 ... 7]
-* Imprimați **numele zilei** (ca un cuvânt, în engleză)
-* Imprimați **"Error"**, dacă numărul nu se află în intervalul dat
+* Imprimați **numele zilei** (cuvânt, în limba engleză)
+* Imprimați **"Error"** dacă numărul nu se află în intervalul dat
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
@@ -204,7 +204,7 @@ Scrieți un program pentru a verifica dacă o literă este vocală sau consoană
 [hints]
 [hint]
 
-Puteți utiliza o instrucțiune "if" și puteți verifica dacă litera este o vocală.
+Puteți utiliza o instrucțiune "if" pentru a verifica dacă litera este o vocală.
 
 Dacă este, imprimați ieșirea corectă.
 
@@ -473,7 +473,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program, care calculează cheltuielile de vacanță:
+Scrieți un program care calculează cheltuielile de vacanță:
 
 * Citiți **sezonul**, **tipul de cazare** și **numărul zilelor**
 * Imprimați **cheltuielile totale**, pe baza tabelului de prețuri de mai jos, formatat la **a doua cifră** după punctul zecimal
@@ -603,8 +603,8 @@ public class Main {
 [task-description]
 # Descriere
 Calculați **prețul** pentru toate biletele vândute pentru un film cinematografic:
-* Citiți **tipul filmului**, **rândurile** și **locurile pe rând** din cinematograf
-* Tipăriți **prețul total** pentru toate locurile **formatat** la a doua cifră după punctul zecimal
+* Citiți **tipul filmului**, **numărul de rânduri** și **numărul de locuri pe un rând** din cinematograf
+* Tipăriți **prețul total** pentru toate locurile, **formatat** la a doua cifră după punctul zecimal
 
 |**Tip**|**Preț**|
 |---|---|
@@ -858,7 +858,7 @@ public class Main {
 Scrieți un program pentru a efectua un calcul folosind un operator particular:
 
 * Citiți **două numere întregi** și **operatorul matematic** de pe consolă
-* Operatorul aritmetic ar putea fi: "+", "-", "/", "%" și "*"
+* Operatorul aritmetic poate fi: "+", "-", "/", "%" și "*"
 * Rezultatul trebuie să fie în următorul **format**: "\{**N1**\} \{**operator**\} \{**N2**\} = \{**result**\}"
 
 ## Exemplu
