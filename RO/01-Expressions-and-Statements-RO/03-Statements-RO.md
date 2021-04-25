@@ -5,15 +5,15 @@
 
 **Acțiunile** pe care le execută un program sunt exprimate ca **instrucțiuni**. 
 
-Java admite câteva tipuri diferite de instrucțiuni și aici sunt câteva dintre ele:
+Java admite diferite de instrucțiuni și aici sunt câteva dintre ele:
   * **Declaration** - declară constante și variabile locale
   * **Expression** - evaluează expresii
   * **Selection** - selectează o intrucțiune dint-o serie de instrucțiuni posibile
   * **Iteration** - executa în mod repetat o instrucțiune încorporată
   * **Jump** - transferă controlul
   
-Acțiunile obișnuite includ:
-- **Declararea** variabilei
+Cele mai utilizate instrucțiuni includ:
+- **Declararea** unei variabile
 
 Declararea unei variabile înseamnă **definirea** tipului său.
 
@@ -37,13 +37,13 @@ counter = 1;
 int counter = 1;
 ```
 
-- **Tipărirea** valorii
+- **Tipărirea** unei valori
 
 ```java
 System.out.println(counter);
 ```
 
-- **Modificarea** valorii
+- **Modificarea** unei valori
 ```java
 counter++;
 ```
