@@ -17,9 +17,9 @@ int y = x + 5;
 String name = "John Doe";
 ```
 
-În cele mai multe contexte în care sunt utilizate expresii, de exemplu în instrucțiuni, este de așteptat că expresia să evalueze la o anumită valoare.
+În cele mai multe contexte în care sunt utilizate expresii, de exemplu în instrucțiuni, este de așteptat că expresia să fie evaluată la o anumită valoare.
 
-* Dacă `x` și `y` sunt numere intregi, expresia `x + y` se evaluează la o valoare numerică. Fiecare valoare are un tip asociat
+* Dacă `x` și `y` sunt numere intregi, expresia `x + y` este evaluată la o valoare numerică; fiecare valoare are un tip asociat
   * de exemplu, dacă x și y sunt variabile de tip **int**, valoarea expresiei `x + y` este de asemenea **int**
 
 * Dacă valoarea este alocată unei variabile de alt tip sau dacă `x` și `y` sunt tipuri diferite, acestea trebuie transformate în același tip
@@ -32,7 +32,7 @@ String name = "John Doe";
 int r = (150-20) / 2 + 5;
 ```
 
-Regulile standard din matematică se aplică pentru **prioritatea** operațiilor aritmetice: înmulțirea și împărțirea se fac întotdeauna înainte de adunare și scădere. 
+Se aplică regulile standard din matematică pentru **prioritatea** operațiilor aritmetice: înmulțirea și împărțirea se fac întotdeauna înainte de adunare și scădere. 
 
-În cazul unei expresii între **paranteze**, se calculează **prima**, la fel ca în matematică.
+În cazul unei expresii plasată între **paranteze**, aceasta este calculată **cu prioritate**, la fel ca în matematică.
 [/slide]
