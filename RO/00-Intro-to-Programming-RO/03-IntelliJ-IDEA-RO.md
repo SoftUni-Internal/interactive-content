@@ -71,7 +71,7 @@ Următorul pas este să alegeți **tema coloristică** pentru vizualizarea Intel
 Această alegere se află la latitudinea preferințelor utilizatorului. 
 [image assetsSrc="intro-to-programming-install-intelliJ-8.png" /]
 
-La următorul pas de configurare, puteți să vă alegeți opțiunile implicite.
+La următorul pas de configurare, puteți să alegeți opțiunile implicite.
 
 Apăsați butonul `[Start using IntelliJ IDEA]` și veți vedea display-ul principal al comunității IntelliJ IDEA:
 [image assetsSrc="intro-to-programming-install-intelliJ-9.png" /]
@@ -114,11 +114,11 @@ Proiectele pot conține mai multe module - puteți adăuga noi module, le puteț
 
 Modulele constă dintr-o rădăcină de conținut și un fișier de modul. 
 
-Directorul rădăcină este un fișier unde se stochează codul. De obicei, el conține sub-foldere pentru codul sursă, teste de unitate, fișiere de resurse, și așa mai departe.
+Directorul rădăcină este un fișier unde se stochează codul. De obicei, el conține sub-foldere pentru codul sursă, teste unitare, fișiere de resurse, și așa mai departe.
 
-Această organizarea ierarhică este mult mai convenabilă când aveți proiecte mai complicate (să zicem cu peste 50 000 de linii de cod).
+Această organizare ierarhică este mai convenabilă pentru proiecte mai complicate (să zicem cu peste 50 000 de linii de cod).
 
-Pentru **proiecte mai mici** această organizare mai degrabă **complică munca**, în loc să vă ajute, dar vă veți obișnui cu ele destul de rapid.
+Pentru **proiecte mai mici** această organizare poate chiar să **complice procesul**, în loc să fie de ajutor, dar trebuie să o folosim în ciuda acestui fapt, deoarece va fi utilă atunci când vom ajunge la nivele mai avansate.
 [/slide]
 
 [slide hideTitle]
@@ -126,13 +126,13 @@ Pentru **proiecte mai mici** această organizare mai degrabă **complică munca*
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-19-Development-Environments-Desktop-and-Online-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Instalați de pe JetBrains IntelliJ IDEA Community
+Instalați de pe JetBrains IntelliJ IDEA Community:
 
 * [JetBrains](https://www.jetbrains.com/idea/download/)
 
 * Încercați întotdeauna să utilizați ultima versiune software disponibilă
 
-Alternative IDE (online)
+Alternative IDE (online):
 
 * [Java](https://www.compilejava.net), [Repl.it](https://repl.it/languages/java)
 * [C#](https://dotnetfiddle.net)
