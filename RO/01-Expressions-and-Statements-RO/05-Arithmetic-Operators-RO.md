@@ -48,7 +48,7 @@ Funcționează diferit cu **numere întregi** și **numere în virgulă mobilă*
 
 * Un număr întreg **împărțit la 0** cauzează o **excepție** în timpul rulării (excepție runtime)
 
-* Un număr float **împărțit la 0** nu provoacă o excepție, iar rezultatul este **+/- infinit** sau o valoare specială **NaN**
+* Un număr float **împărțit la 0** nu provoacă o excepție, iar rezultatul este **+/- infinity** sau o valoare specială **NaN**
   * Exemplu `5 / 0.0 = ∞`
 
 Mai jos avem câteva exemple ale operatorului împărțirii:
