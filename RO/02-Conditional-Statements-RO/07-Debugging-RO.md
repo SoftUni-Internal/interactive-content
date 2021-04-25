@@ -1,16 +1,15 @@
 [slide hideTitle]
 
-# Depanare
+# Depanarea
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-32-34-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-
-Până acum, am scris o mulțime de coduri și au apărut câteva greșeli în ele, corect? Acum vom prezenta un instrument care ne poate ajuta să găsim greșelile mai ușor: **depanatorul**.
+Acum vom prezenta un instrument des folosit care ne poate ajuta să găsim erorile din codul nostru mai ușor: **depanatorul**.
 
 ## Ce este "Depanarea"?
 
 **Depanarea** este procesul care ne permite să **urmărim pas cu pas execuția unui program**.
 
-Putem urmări **linie cu linie** ce se întâmplă în programul nostru, ce logică urmează, care sunt valorile variabilelor definite la fiecare pas al depanării și multe alte lucruri care ne permit să detectăm erori (**bugs**).
+Putem urmări **linie cu linie** ce se întâmplă în programul nostru, ce logică urmează, care sunt valorile variabilelor la fiecare pas al execuției și multe alte elemente care ne permit să detectăm erori (**bugs**).
 
 [image assetsSrc="conditional-statements-breakpoint.png" /]
 [image assetsSrc="conditional-statements-variables-watch.png" /]
@@ -19,7 +18,7 @@ Putem urmări **linie cu linie** ce se întâmplă în programul nostru, ce logi
 
 [slide hideTitle]
 
-# Depanare in IntelliJ IDEA 
+# Depanarea în IntelliJ IDEA 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-32-34-debugging-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Apăsând butonul `[Shift + F9]`, rulăm programul în **modul de depanare**. 
