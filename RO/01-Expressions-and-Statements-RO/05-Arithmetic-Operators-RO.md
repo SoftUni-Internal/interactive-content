@@ -5,9 +5,9 @@
 
 Să examinăm **operațiile aritmetice de bază** din programare.
 
-Putem aduna, scădea, înmulți și împărți numerele folosind operatorii `+`, `-`,` * ` și ` / `.
+Putem aduna, scădea, înmulți și împărți numerele folosind operatorii `+`, `-`,`*` și `/`.
 
-## Adunarea numerelor
+## Adunarea Numerelor
 
 Putem **aduna** numerele folosind operatorul `+`:
 
@@ -18,14 +18,14 @@ int sum = a + b;
 System.out.println(sum); // 12 
 ```
 
-## Scăderea numerelor
+## Scăderea Numerelor
 Putem **scădea** numerele folosind operatorul `-`:
 ```java live
 int a = 15;
 int b = 7;
 System.out.println(a - b); // 8
 ```
-## Înmulțirea numerelor
+## Înmulțirea Numerelor
 
 Pentru **înmulțirea** numerelor folosim operatorul `*`:
 ```java live
@@ -34,7 +34,7 @@ int b = 7;
 System.out.println(a * b); // 35
 ```
 
-## Împărțirea numerelor
+## Împărțirea Numerelor
 Pentru **împărțirea** numerelor folosim operatorul `/`.
 
 Funcționează diferit cu **numere întregi** și **numere în virgulă mobilă**.
@@ -42,18 +42,16 @@ Funcționează diferit cu **numere întregi** și **numere în virgulă mobilă*
 * Când împărțim două numere întregi, se aplică o **împărțire întreagă**, iar ieșirea obținută nu va conține o parte fracționară (un rest)
   * Exemplu: `11 / 3 = 3`
   
-* Când împărțim două numere și cel puțin unul dintre ele este un număr real (float), se aplică o **împărțire reală**, iar rezultatul obținut este un număr real, la fel ca în matematică
-
+* Când împărțim două numere și cel puțin unul dintre ele este un număr real de tip **float**, se aplică o **împărțire reală**, iar rezultatul obținut este un număr de tip float
   * Exemplu: `11 / 4.0 = 2.75`
   * Când împărțirea nu se poate face cu o precizie exactă, rezultatul este rotunjit, de exemplu `11.0 / 3 = 3.66666666666667`
 
-* Numărul întreg **împărțit la 0** cauzează o **excepție** în timpul rulării (excepție de runtime)
+* Un număr întreg **împărțit la 0** cauzează o **excepție** în timpul rulării (excepție runtime)
 
-* Numărul real **împărțit la 0** nu provoacă o excepție, iar rezultatul este **+ / - infinity** sau o valoare specială **NaN**
-
+* Un număr float **împărțit la 0** nu provoacă o excepție, iar rezultatul este **+/- infinit** sau o valoare specială **NaN**
   * Exemplu `5 / 0.0 = ∞`
 
-Mai jos avem câteva exemple cu operatorul împărțirii:
+Mai jos avem câteva exemple ale operatorului împărțirii:
 
 ```java live
 int a = 25;
@@ -63,8 +61,8 @@ double f = a / 4.0;
 System.out.println(f);
 ```
 
-## Împărțirea numerelor întregi
-Să examinăm câteva exemple pentru **împărțirea numărului întreg** (amintiți-vă că atunci când **împărțim numere întregi** în Java rezultatul este un **întreg**):
+## Împărțirea Numerelor Întregi
+Să examinăm câteva exemple referitoare la **împărțirea numerelor întregi** (amintiți-vă că atunci când **împărțim numere întregi** în Java rezultatul este un **întreg**):
 
 ```java live
 int a = 25;
@@ -78,11 +76,11 @@ int a = 5;
 System.out.println(a / 0);
 ```
 
-## Împărțirea numerelor în virgulă mobilă
+## Împărțirea Numerelor în Virgulă Mobilă
 
-Să ne uităm la câteva exemple pentru **împărțirea în virgulă mobilă**.
+Să ne uităm la câteva exemple referitoare la **împărțirea numerelor în virgulă mobilă**.
 
-Când împărțim numerele în virgulă mobilă, rezultatul este întotdeauna un **număr în virgulă mobilă** și împărțirea nu eșuează niciodată.
+Când împărțim numerele în virgulă mobilă, rezultatul este întotdeauna un **număr în virgulă mobilă** și împărțirea va produce mereu un rezultat.
 
 De asemenea, funcționează corect cu valorile speciale `+∞` și `-∞`:
 
@@ -95,10 +93,10 @@ System.out.println(0.0 / 0.0);
 ```
 Când imprimați valorile `∞` și `-∞`, rezultatul pe consolă poate fi `?`.
 
-Acest lucru se întâmplă deoarece consola din Windows nu funcționează corect cu Unicode și funcționează defectuos când întâlnește majoritatea simbolurilor, literelor și caracterelor speciale care nu sunt standard.
+Acest lucru se întâmplă deoarece consola din Windows nu funcționează corect cu Unicode și funcționează defectuos când întâlnește majoritatea simbolurilor, literelor și caracterelor speciale, non-standard.
 
-## Operatorul modulo
-Operatorul modulo `%` calculează restul după împărțirea operandului său din stânga cu operandul din dreapta.
+## Operatorul Modulo
+Operatorul modulo `%` calculează restul după împărțirea operandului din stânga cu operandul din dreapta.
 
 ```java live
 int a = 7;
@@ -124,7 +122,7 @@ System.out.println(4 % 2);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-22-concatenating-text-and-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-În afară de adunarea numerelor, operatorul `+` este folosit și pentru **unirea fragmentelor de text** (concatenarea a două șiruri).
+În afară de adunarea numerelor, operatorul `+` este folosit și pentru **unirea fragmentelor de text** (concatenarea șirurilor).
 
 În programare, unirea a două fragmente de text este numită **"concatenare"**. 
 
