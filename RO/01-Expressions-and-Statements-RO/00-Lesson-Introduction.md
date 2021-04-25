@@ -29,6 +29,6 @@
 
 - Ce reprezintă expresiile
 
-**7. Exerciții practice de codare**
+**7. Exerciții practice de programare**
 
 [/slide]
