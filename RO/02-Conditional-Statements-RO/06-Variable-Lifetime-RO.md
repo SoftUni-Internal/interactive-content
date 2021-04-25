@@ -8,7 +8,7 @@ Fiecare variabilă există într-un interval numit **domeniul variabilei**.
 
 Acest interval specifică unde poate fi folosită variabila și care este **durata ei de viață**.
 
-În limbajul Java, domeniul în care există o variabilă începe de la linia în care am **definit-o** și se termină cu prima paranteză închisă `}` (a metodei, instrucțiunii **if**, etc.)
+În limbajul Java, domeniul în care există o variabilă începe de la linia pe care am **definit-o** și se termină cu prima paranteză închisă `}` (a metodei, instrucțiunii **if**, etc.)
 
 Astfel, este important să știm că **orice variabilă definită în interiorul unei anumite instrucțiuni** `if` **nu va fi disponibilă în afara acesteia**, cu excepția cazului în care am definit-o anterior într-un domeniu mai înalt al codului.
 [/slide]
