@@ -1,6 +1,6 @@
 # Teme Pentru Acasă
 [slide hideTitle]
-# O problemă cu soluție: Print Hello Java
+# Problemă cu Soluție: Print Hello Java
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-36-37-Problem-and-solution-Print-Hello-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -19,9 +19,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program în limbajul Java care să execute următoarele:
-
-Tipărește "**Hello Java**" pe consolă.
+Scrieți un program în limbajul Java care tipărește "**Hello Java**" pe consolă.
 [/task-description]
 [code-io /]
 [tests]
