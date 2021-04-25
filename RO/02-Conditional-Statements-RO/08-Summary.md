@@ -35,9 +35,9 @@ if (condition) {
 }
 ```
 
-- Blocul și domeniul de aplicare a variabilei
+- Domeniul blocului și al variabilei
 
-- Cum să depanăm codul folosind puncte de întrerupere
+- Cum să depanați codul. Puncte de întrerupere
 
 ## În următoarea lecție veți învăța:
 
