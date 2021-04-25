@@ -25,12 +25,12 @@ switch (selector) {
     break;
 }
 ```
-- Punem **variabila** pe care vrem să o **comparăm** în **parantezele care urmează după operatorul** `switch`, această variabilă fiind numită **"selector"**
--  **Tipul de dată trebuie să fie comparabil** (numere, șiruri)
+- Plasăm **variabila** pe care vrem să o **comparăm** între **parantezele care urmează după operatorul** `switch`, această variabilă fiind numită **"selector"**
+- **Tipul de date trebuie să fie comparabil** (numere, șiruri)
 - **Consecutiv**, programul începe **să compare** variabila cu fiecare **valoare** care este **găsită** după **etichetele** `case`
 - În caz de potrivire, executarea codului din locul respectiv începe și continuă până când ajunge la operatorul `break`
 
-În unele limbaje de programare (cum ar fi C și C ++) `break` poate fi sărit, pentru permite executarea unui cod din altă construcție `case`.
+În unele limbaje de programare (cum ar fi C și C ++) `break` poate fi omis, pentru a permite executarea unui cod din altă construcție `case`.
 
 În Java, prezența operatorului `break` este **obligatorie** pentru **fiecare** caz care conține o logică de program.
 
@@ -41,7 +41,7 @@ Cazul implicit este executat **dacă selectorul nu se potrivește cu nicio altă
 
 Dacă un caz implicit nu este prezent și selectorul nu se potrivește cu nicio altă etichetă de caz, programul iese din instrucțiunea switch și continuă executarea codului de după aceasta.
 
-Cazul implicit poate apărea în orice ordine în instrucțiunea de comutare, dar indiferent de ordinea acestuia în codul sursă, este întotdeauna evaluată **ultimul**, după ce au fost evaluate toate etichetele de caz.
+Cazul implicit poate apărea în orice ordine în instrucțiunea switch, dar indiferent de ordinea acestuia în codul sursă, este întotdeauna evaluat **ultimul**, după ce au fost evaluate toate etichetele de caz.
 
 ## Exemplu de instrucțiune switch cu un caz implicit
 
@@ -65,7 +65,7 @@ switch (selector) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-26-switch-case-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Să scriem un program care tipărește **"Yes" sau "No"** în funcție de **o valoare dată** (`Y`, `N`) sau **"Invalid response"** dacă este dată o intrare nevalidă.
+Să scriem un program care tipărește **"Yes" sau "No"** în funcție de **o valoare dată** (`Y`, `N`) sau **"Invalid response"** dacă este dată o intrare non-validă.
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -109,7 +109,7 @@ switch (selector) {
         break;
 }
 ```
-## Exemplu: Animal Type
+# Exemplu: Animal Type
 Scrieți un program care tipărește tipul unui animal în funcție de numele acestuia:
 -  Dog -> **mammal**
 -  Crocodile, tortoise, snake -> **reptile**
