@@ -13,11 +13,11 @@
 
 **2. Tipurile de date**
 
-- Cum să procesați un număr întreg, numere reale sau text
+- Cum să procesați numere întregi, numere reale sau text
 
 **3. Instrucțiuni (comenzi)**
 
-**4. Cum să citiți intrarea de la utilizator și să formatați ieșirea**
+**4. Citirea datelor de intrarea de la utilizator și formatarea ieșirii**
 
 - Cum să citiți și să formatați intrarea de la utilizator
 
@@ -29,6 +29,6 @@
 
 - Ce reprezintă expresiile
 
-**7. Exerciții practice de codificare**
+**7. Exerciții practice de codare**
 
 [/slide]
