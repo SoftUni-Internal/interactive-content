@@ -7,7 +7,7 @@ Destul de des, logica programului necesită utilizarea unor instrucțiuni `if` s
 
 Acestea se numesc instrucțiuni **imbricate**.
 
-După cum sugerează titlul "**imbricat**", acestea sunt instrucțiuni `if` sau `if-else` care sunt plasate în alte instrucțiuni `if` sau `else`.
+După cum sugerează termenul "**imbricat**", acestea sunt instrucțiuni `if` sau `if-else` care sunt plasate în alte instrucțiuni `if` sau `else`.
 
 ```java
 if (condition1) {
@@ -21,7 +21,7 @@ if (condition1) {
 
 # Exemplu: Personal Titles
 
-În funcție de **vârstă** (număr întreg) și **sex** (**m**/**f**), tipăriți un titlu personal:
+În funcție de **vârstă** (număr întreg) și **sex** (**m** / **f**), tipăriți un titlu personal:
 - "Mr." - un bărbat (sex "m") - 16 ani sau mai mult
 - "Master" - un băiat (sex "m") - sub 16 ani
 - "Ms." - o femeie (sex "f") - 16 ani sau mai mult
@@ -84,8 +84,8 @@ public class Main
 [task-description]
 # Descriere
 Scrieți un program care:
-* Citește un **produs** și **o zi** de pe consolă
-* Tipărește **prețul**, formatat la a doua cifră după punctul zecimal pe baza tabelului de prețuri de mai jos
+* Citește un **produs** și **un tip de zi** de pe consolă - **weekday** sau **weekend**
+* Tipărește **prețul** produsului, formatat la a doua cifră după punctul zecimal pe baza tabelului de prețuri de mai jos
 
 |**Product**|**Weekday**|**Weekend**| 
 |---|---|---|
@@ -151,6 +151,7 @@ Scrieți un program care:
 
    * Citește **3 numere** de pe consolă
    * Tipărește **cel mai mare** număr
+   
 ## Exemplu
 
 | **Intrare** | **Ieșire** |
