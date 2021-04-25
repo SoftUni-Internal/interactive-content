@@ -24,7 +24,7 @@ float f = 4.2;
 
 - Instrucțiunile (comenzi)
 
-- Cum să citim  **intrarea** de la utilizator și cum să formatăm **ieșirea**
+- Cum să citim datele de **intrare** de la utilizator și cum să formatăm datele de **ieșire**
 
 ```java live
 System.out.println("Hello World");
