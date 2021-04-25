@@ -19,7 +19,7 @@ public class Program {
 Scrieți un program pentru a verifica o parolă:
 
   * Citiți un șir: parola
-  * Imprimați **"Welcome"** dacă presupunerea parolei este **"s3cr3t!"**
+  * Imprimați **"Welcome"** dacă parola introdusă este **"s3cr3t!"**
   * Imprimați **"Wrong password!"** în toate celelalte cazuri
 
 ## Exemplu
@@ -236,7 +236,7 @@ Scrieți un program pentru a calcula aria diferitelor figuri:
   * Verifică dacă figura introdusă este **square**, **rectangle** sau **circle**
   * Citește un număr pentru pătrat și cerc sau două numere pentru dreptunghi
     * numerele vor fi în virgulă mobilă
-  * Imprimă aria calculată **formatată** la a doua cifră după punctul zecimal
+  * Imprimă aria calculată, **formatată** la a doua cifră după punctul zecimal
   * Pentru figuri necunoscute imprimă **"Unknown figure"**
 
 ## Exemple
@@ -361,14 +361,14 @@ public class Program {
 [task-description]
 
 ## Descriere
-Scrieți un program pentru a **calcula** prețul biletului:
+Scrieți un program pentru a **calcula** prețul unui bilet:
 
   * Citiți tipul biletului: fie **student**, fie **regular**
-  * Imprimați **prețul** în următorul format "$\{**price**\}":
+  * Imprimați **prețul** în următorul format: "$\{**price**\}":
     * prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal
   * Prețul biletului de tip student: **1.00**
   * Prețul biletului de tip regular: **1.60**
-  * Pentru un tip nevalid imprimați **"Invalid ticket type!"**
+  * Pentru un tip non-valid imprimați **"Invalid ticket type!"**
   
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -453,8 +453,8 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a calcula prețul unei băuturi într-o cafenea:
 
-  * Prima linie de intrare va fi fie **"coffee"**, fie **"tea"**
-  * A doua linie: fie **"sugar"** fie **"no"**
+  * Prima linie de intrare va fi **"coffee"** sau **"tea"**
+  * A doua linie: **"sugar"** sau **"no"**
   * Imprimați prețul în formatul: "**Final price:** $\{**price**\}"
     * prețul trebuie să fie **formatat** la a doua cifră după punctul zecimal
   
@@ -558,7 +558,7 @@ Scrieți un program pentru a verifica dacă un triunghi este valid după dimensi
 
   * Citiți 3 numere întregi: **laturile unui triunghi**
   * Verificați dacă fiecare latură este mai mică decât suma celorlalte 2
-    * imprimă **"Valid Triangle"**, dacă condiția de mai sus este îndeplinită
+    * imprimă **"Valid Triangle"** dacă condiția de mai sus este îndeplinită
     * imprimă **"Invalid Triangle"** în caz contrar
 
     
@@ -635,33 +635,34 @@ public class Main {
 
 # Descriere
 
-Compania Happy Wine Brothers v-a cerut să creați un program simplu pentru a determina dacă va reuși să atingă ținta de producție pentru vin în una din viile lor.
+**Compania Happy Wine Brothers** v-a cerut să creați un program simplu pentru a determina dacă va reuși să atingă ținta de producție pentru vin în una din viile lor.
 
-Această vie este responsabilă pentru 40% din recolta vinicolă.
+**Această vie este responsabilă pentru 40% din recolta vinicolă.**
 
 Dintr-o vie de 1 metru pătrat se recoltează **Y kilograme de struguri**. Această valoare va fi furnizată ca intrare.
 
-Pentru 1 litru de vin sunt necesare **2.5 kg struguri**.
+Pentru a produce 1 litru de vin sunt necesare **2.5 kg struguri**.
 
-Compania are o țintă de producție pentru vinul care urmează să fie vândut.  Această valoare va fi de asemenea furnizată ca intrare.
+Compania are o țintă de producție pentru vinul care urmează să fie vândut. Această valoare va fi de asemenea furnizată ca intrare.
 
 Scrieți un program care să calculeze cât de mult vin poate fi produs și dacă această cantitate este suficientă pentru atingerea țintei de producție.
 
-Dacă este suficientă, restul este împărțit în mod egal între lucrătorii viei.
+Dacă cantitatea produsă este suficientă, restul este împărțită în mod egal între lucrătorii viei.
 
 ## Intrare
 Intrarea este citită de pe consolă și constă în:
 - **Suprafața viei în metri pătrați** - număr întreg în intervalul \[10 ... 5000 \]
 - **Recolta pentru un metru pătrat** - număr în virgulă mobilă în intervalul\[0.00 ... 10.00\]
-- **Ținta de producție** - număr întreg în intervalul \[10 ... 600 \] (țineți cont că această vie este responsabilă pentru 40% din producție)
+- **Ținta de producție în litri** - număr întreg în intervalul \[10 ... 600 \] 
+    - țineți cont că această vie este responsabilă pentru 40% din producție)
 - **Număr de lucrători** - număr întreg în intervalul \[1 ... 20 \]
 
 ## Ieșire
-Următoarele ar trebui să fie tipărite pe consolă, în funcție de rezultat: 
--  Dacă cantitatea de vin produsă este mai mică decât este necesar:
+Imprimați unul dintre următoarele șabloane pe consolă, în funcție de rezultat: 
+-  Dacă cantitatea de vin produsă este mai mică decât este ținta de producșie:
     - "**It will be a tough winter!** \{**amount of wine needed**\} **liters of wine needed to reach the goal.**"
         - rezultatul trebuie rotunjit în jos la cel mai apropiat număr întreg
-- Dacă cantitatea de vin produsă este mai mare sau egală cu ceea ce este necesar:
+- Dacă cantitatea de vin produsă este mai mare sau egală cu ținta de producție:
     - "**Good harvest this year! Total wine:** \{**Total wine**\} **liters.**"
         - rezultatul trebuie rotunjit în jos la cel mai apropiat număr întreg
     -  "\{**remaining wine**\} **liters left** **->** \{**wine for 1 worker**\} **liters per person.**"
@@ -839,7 +840,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește de pe consolă două numere întregi ce reprezintă ora fixă în formatul: "\{**hours**\}:\{**minutes**\}" și tipărește ce oră va fi dupa 15 minute.
+Scrieți un program care citește de pe consolă două numere întregi care reprezintă ora fixă în formatul: "\{**hours**\}:\{**minutes**\}" și tipărește ce oră va fi dupa 15 minute.
 
 ## Intrare
 
@@ -1008,7 +1009,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care citește de pe consolă un număr întreg în intervalul \[1 ... 7\] și imprimă **ziua săptămânii** (în engleză) sau "**Error**" dacă numărul este **nevalid**.
+Scrieți un program care citește de pe consolă un număr întreg în intervalul \[1 ... 7\] și imprimă **ziua săptămânii** (în engleză) sau "**Error**" dacă numărul este **non-valid**.
 
 ## Exemplu
 
@@ -1223,7 +1224,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Prietena dumneavoastră are 3 animale.
+Prietena voastră are 3 animale.
 
 Aceasta își dorește să plece într-o excursie și vă cere să o ajutați să determine dacă are mâncare suficientă pentru a hrăni animalele cât timp ea este plecată.
 
@@ -1240,12 +1241,12 @@ Imprimă pe consolă o linie **unică**:
 - Dacă mâncarea **este suficientă**:
   - "\{**kilograms remain**\} **kilos of food left.**" 
   
-Rezultatul trebuie să fie **rotunjit la cel mai apropiat număr întreg inferior**.
+Rezultatul trebuie să fie **rotunjit în jos la cel mai apropiat număr întreg**.
 
 - Dacă mâncarea rămasă **nu este suficientă**:
   - "\{**kilograms needed**\} **more kilos of food are needed.**"
   
-Rezultatul trebuie să fie **rotunjit la cel mai apropiat număr întreg superior**.
+Rezultatul trebuie să fie **rotunjit în sus la cel mai apropiat număr întreg superior**.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -1436,9 +1437,9 @@ public class Main {
 ## Descriere
 O piscină cu **volum V** este umplută prin **două conducte**.
 
-**Fiecare conductă are un anumit flux cert** (litri de apă care trec printr-o singură conductă într-o oră). 
+**Fiecare conductă are un anumit flux** (litri de apă care trec printr-o singură conductă într-o oră). 
 
-Muncitorul pornește conductele **în același timp** și le lasă pornite pentru  **N ore**.
+Muncitorul pornește conductele **în același timp** și le lasă pornite pentru **N ore**.
 
 Scrieți un program care să arate starea piscinei **în momentul în care lucrătorul revine**.
 
@@ -1484,7 +1485,7 @@ A doua conductă are capacitatea de 360 de litri.
 Verificați dacă capacitatea totală a ambelor conducte este suficientă pentru a umple piscina.
 Apoi tipăriți rezultatul corect.
 Prima conductă a contribuit în procent de 45% (300 l din 660 l)
-A douaconductă a contribuit în procent de 55%. (360 din 660 l)
+A doua conductă a contribuit în procent de 55%. (360 l din 660 l)
 [/hint]
 
 [/hints]
