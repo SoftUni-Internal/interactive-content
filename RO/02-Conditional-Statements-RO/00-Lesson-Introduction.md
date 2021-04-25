@@ -32,7 +32,7 @@
 - Cum să folosiți punctele de întrerupere
 
 
-**6. Exerciții practice de codare**
+**6. Exerciții practice de programare**
 
 
 
