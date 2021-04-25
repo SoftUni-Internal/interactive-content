@@ -11,26 +11,26 @@
 
 Să ne imaginăm următoarea situație de zi cu zi:
 
-Aveți câteva plante în grădină care au nevoie de udare.
+Aveți câteva plante în grădină care au nevoie de apă.
 
-În funcție de vremea de afară, putem lua decizia dacă plantele trebuie udate.
+În funcție de vremea de afară, putem lua decizia dacă plantele trebuie udate sau nu.
 
-**Dacă (if)** plouă:
+**Dacă** plouă:
 
   * Veți sări peste udarea plantelor din grădină
 
-**Altfel (else)**:
+**Altfel**:
 
   * Trebuie să udați plantele
 
 Această situație specială are doar două opțiuni din care să alegeți, dar în viața reală, precum și în programare, ați putea avea mai multe.
 
-Mai jos aveți câteva pseudocoduri, astfel încât să puteți înțelege conceptul instrucțiunilor condiționale atunci când vine vorba de scrierea codului:
+Mai jos aveți un pseudocod care vă va ajuta să înțelegeți conceptul instrucțiunilor condiționale atunci când vine vorba de scrierea codului:
 
 ```
-Dacă umiditatea este mai mare de 90%
+dacă umiditatea este mai mare de 90%
   Nu udați plantele
-Altfel
+altfel
   Udați plantele
 ```
 [/slide]
