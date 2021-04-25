@@ -9,10 +9,10 @@ O piață oferă prețuri diferite pentru anumite produse în funcție de ziua s
 
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
-| **Produs** | **Zi lucrătoare** | **Weekend** | 
+| **Product** | **Weekday* | **Weekend** | 
 |---|---|---|
-|Banane|2.50|2.70|
-|Măr|1.30|1.60|
+|Banana|2.50|2.70|
+|Apple|1.30|1.60|
 |Kiwi|2.20|3.00|
 
 Vrem să creăm un program care să ne ajute să determinăm prețul fiecărui produs în funcție de zi.
@@ -22,13 +22,13 @@ Vrem să creăm un program care să ne ajute să determinăm prețul fiecărui p
 ```
 Citiți intrarea
 Dacă produsul este o banană
-   Dacă este o zi lucrătoare, prețul este de 2,50
-   În caz contrar, prețul este de 2,70
+   Dacă este o zi lucrătoare, prețul este de 2.50
+   În caz contrar, prețul este de 2.70
 Dacă produsul este un măr
-   Dacă este o zi lucrătoare, prețul este de 1,30
-   În caz contrar, prețul este de 1,60
-Dacă produsul este kiwi
-   Dacă este o zi lucrătoare, prețul este de 2,20
-   În caz contrar, prețul este de 3,00
+   Dacă este o zi lucrătoare, prețul este de 1.30
+   În caz contrar, prețul este de 1.60
+Dacă produsul este un kiwi
+   Dacă este o zi lucrătoare, prețul este de 2.20
+   În caz contrar, prețul este de 3.00
 ``` 
 [/slide]
