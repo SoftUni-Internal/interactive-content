@@ -44,7 +44,7 @@ All HTTP methods are **case sensitive**.
 
 If we write them in lowercase, they will not work.
 
-They must be in uppercase.
+They must be in **uppercase**.
 
 [/slide]
 
