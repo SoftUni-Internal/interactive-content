@@ -1,9 +1,9 @@
 [slide hideTitle]
-# Iterația Peste Caractere
+# Iterarea Peste Caractere
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-25-26-27-the-ASCII-table-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Tabelul ASCII 
-Calculatoarele pot înțelege doar numerele, deci un cod **ASCII** este reprezentarea numerică a unui caracter precum "a" sau "@".
+Calculatoarele pot înțelege doar numere, deci un cod **ASCII** este reprezentarea numerică a unui caracter precum "a" sau "@".
 
 Aici este o parte din tabelul ASCII:
 
@@ -27,7 +27,7 @@ Coloanele pe care le-ați folosi cel mai probabil în scopul acestui curs sunt c
 
 De exemplu, valoarea zecimală a caracterului **'a'** este **97** și cea corespunzătoare lui **'@'** este **64**.
 
-## Iterația Peste Caractere
+## Iterarea Peste Caractere
 Este bine de știut că **buclele for** nu funcționează doar cu numere.
 
 De asemenea, putem folosi **buclele for** pentru a itera peste **caractere**.
