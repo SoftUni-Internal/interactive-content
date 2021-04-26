@@ -51,7 +51,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program care imprimă numerele de la N până la 1.
+Scrieți un program care imprimă numerele de la **n** până la 1.
 
 Programul primește un număr `n` și imprimă numerele de la `n` până 1.
 
@@ -221,7 +221,7 @@ Scrieți un program care imprimă puterile pare ale lui 2:
 
 * Imprimă puterile pare ale lui 2, până la `n`
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |5| 1 4 16 |
