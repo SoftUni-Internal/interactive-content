@@ -1472,10 +1472,10 @@ for (Person player : players) {
     team.addPlayer(player);
 }
 
-System.out.println("The number of players on the main team is: "
+System.out.println("The number of players on the main team is:"
  + team.getFirstTeam().size());
 
-System.out.println("The number of players on the reserve team is: "
+System.out.println("The number of players on the reserve team is:"
  + team.getReserveTeam ().size());
 ```
 
@@ -1496,8 +1496,8 @@ for (Person player : players) {
 # Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 | The number of players on the main team is: 4  |
-| George Air 20 2200 | The number of players on the reserve team is: 1  |
+| 5 | The number of players on the main team is:4  |
+| George Air 20 2200 | The number of players on the reserve team is:1  |
 | Anderson Paak 57 3333 |  |
 | Lee Parker 27 600 |  |
 | Grigor Dimitrov 25 666.66 |  |
