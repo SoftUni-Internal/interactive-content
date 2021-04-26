@@ -11,7 +11,7 @@ Buclele while execută un bloc de cod cât timp o condiție specificată este **
 
 Ca structură, ele diferă de **buclele for** și au chiar o sintaxă mai simplă.
 
-Să vedem un exemplu din viața reală:
+Să vedem un exemplu din viața reală.
 [image assetsSrc="05-bucket-example.png"/]
 
 Trebuie să umpleți o găleată cu apă, folosind o cană.
