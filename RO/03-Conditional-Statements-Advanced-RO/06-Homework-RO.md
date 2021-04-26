@@ -949,7 +949,7 @@ Citiți: **balance**, **withdraw** și **limit**
 * Imprimați **"The daily limit was exceeded."** dacă limita este depășită
 * Imprimați **"Insufficient availability."** dacă soldul nu este sufficient
 
-## Example
+## Exemplu
   | **Intrare** | **Ieșire** |
 | --- | --- |
 |420|The withdraw was successful. |
@@ -1353,7 +1353,7 @@ Intrarea este formată din 2 linii:
 - Combustibilul din rezervor în litri
 
 ## Ieșire
-- Dacă combustibilul este altul decât tipărirea specificată, tipăriți "**Invalid fuel!**"
+- Dacă tipul combustibilului este altul decât cele 3 opțiuni, tipăriți "**Invalid fuel!**"
 - Dacă nivelul de combustibil din rezervor este mai mare sau egal cu 25 litri, imprimați:
      - "**You have enough** \{**type of fuel**\}."
      - tipul de combustibil trebuie imprimat cu litere mici
@@ -1490,7 +1490,7 @@ Citiți de pe consolă două linii:
 ## Ieșire
 - Tipăriți pe consolă valoarea calculată a comisionului 
 - Rezultatul trebuie să fie **formatat la a doua zecimală**
-- Dacă primiți un nume al orașului **invalid**  **sau** o valoare invalidă a vânzărilor (număr negativ), tipăriți "**error**"
+- Dacă primiți un nume **nevalid** de oraș **sau** o valoare nevalidă a vânzărilor (număr negativ), tipăriți "**error**"
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -1680,10 +1680,10 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program pentru a verifica dacă un `punct {x, y}` este **pe** una dintre laturile unui dreptunghi `{x1, y1} - {x2, y2}`.
+Scrieți un program pentru a verifica dacă un **punct {x, y}** se află **pe** una dintre laturile unui dreptunghi **{x1, y1} - {x2, y2}**.
 
 ## Intrare
-Intrarea provine de pe consolă și constă în **6 linii, introduse de utilizator: numere reale x1, y1, x2, y2, x și y** (va fi întotdeauna adevărat că **x1 < x2** și **y1 < y2**).
+Intrarea provine de pe consolă și constă în **6 linii, introduse de utilizator: numerele reale x1, y1, x2, y2, x și y** (va fi întotdeauna adevărat că **x1 < x2** și **y1 < y2**).
 
 ## Ieșire
 Dacă punctul se află pe una dintre laturile dreptunghiului:
@@ -1713,7 +1713,7 @@ Dacă punctul NU se află pe o latură:
 
 [hints]
 [hint]
-Utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct `{x, y}` se află pe o latură a unui dreptunghi `{x1, y1} - {x2, y2}`, dacă una dintre condițiile specificate este îndeplinită:
+Utilizați una sau mai multe instrucțiuni condiționale **if** cu operații logice. Un punct **{x, y}** se află pe o latură a unui dreptunghi **{x1, y1} - {x2, y2}**, dacă una dintre condițiile specificate este îndeplinită:
 
 - **x** este egal cu **x1** sau **x2** și în același timp **y** este între **y1** și **y2**
 - **y** este egal cu **y1** sau **y2** și în același timp **x** este între **x** și **x2**
@@ -1981,17 +1981,17 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program pentru a-l ajuta pe prietenul vostru să își aleagă hainele **în funcție de partea zilei și de temperatură (în grade; Celsius)**.
+Scrieți un program pentru a-l ajuta pe prietenul vostru să își aleagă hainele **în funcție de partea zilei și de temperatură (în grade Celsius)**.
 
 Prietenul vostru are planuri diferite pentru ținută în funcție de fiecare parte a zilei și de temperatură - vedeți **tabelul** de mai jos.
 
 | **O parte din zi / Grade** | **Morning** | **Afternoon** | **Evening** |
 | --- | --- | --- | --- |
-| 10 <= deg <= 18 | Outfit: Sweatshirt | Outfit: Shirt | Outfit: Shirt |
+| 10 <= degrees C <= 18 | Outfit: Sweatshirt | Outfit: Shirt | Outfit: Shirt |
 | | Shoes: Sneakers | Shoes: Moccasins | Shoes: Moccasins |
-| 18 < deg <= 24 | Outfit: Shirt | Outfit: T-Shirt | Outfit: Shirt |
+| 18 < degrees C <= 24 | Outfit: Shirt | Outfit: T-Shirt | Outfit: Shirt |
 | | Shoes: Moccasins | Shoes: Sandals | Shoes: Moccasins |
-| deg >= 25 | Outfit: T-Shirt | Outfit: Swim Suit | Outfit: Shirt |
+| degrees C >= 25 | Outfit: T-Shirt | Outfit: Swim Suit | Outfit: Shirt |
 | | Shoes: Sandals | Shoes: Barefoot | Shoes: Moccasins |
 
 
@@ -2160,7 +2160,7 @@ Tony și prietenii săi au decis să închirieze o barcă de pescuit - tariful d
 
 **Prețul** pe baza **numărului** de pescari utilizează **reducerile:**
 - Dacă grupul este **până la 6 persoane (inclusiv) - 10% reducere**
-- Dacă membrii grupului se află în intervalul \[7 .... 11\] - **15% reducere**
+- Dacă numărul de membri ai grupului se află în intervalul \[7 .... 11\] - **15% reducere**
 - Dacă grupul are **12 sau mai multe persoane - 25% reducere**
 
 Pescarii folosesc o reducere suplimentară de **5% dacă sunt un număr par**.
@@ -2204,7 +2204,7 @@ Imprimați pe consolă o linie **unică**:
 [hints]
 [hint]
 Determinați reducerea pentru pescari și dacă există vreo reducere suplimentară.
-Vara, pescuitul costă 4200 USD
+Vara, pescuitul costă 4200 USD.
 **11 pescari beneficiază de 15% reducere** -> **4200 - 15% = 3570** $, numărul lor este **impar**, deci **nu** folosesc **reducere suplimentară**.
 3000 <= 3570, deci mai au nevoie de 570,00 $ 
 [/hint]
@@ -2429,14 +2429,14 @@ Prețurile depind de sezon:
 | **Spring / Summer** | **2.00$** | **4.10$** | **2.50$** |
 | **Autumn / Winter** | **3.75$** | **4.50$** | **4.15$** |
 
-La sărbători prețurile tuturor florilor **cresc cu 15%**.
+De sărbători prețurile tuturor florilor **cresc cu 15%**.
 
 Piața oferă următoarele **reduceri**:
 - Dacă cumpărați **7 sau mai multe lalele în timpul primăverii** - **5% din prețul întregului buchet**
 - Dacă cumpărați **10 sau mai mulți trandafiri în timpul iernii** - **10% din prețul întregului buchet**
 - Dacă cumpărați **mai mult de 20 de flori în total în orice anotimp - 20% din prețul întregului buchet**
 
-**Toate reducerile trebuie aplicate după creșterea prețurilor în vacanță!**
+**Toate reducerile trebuie aplicate după creșterea prețurilor de sărbători!**
 
 Există un comision pentru aranjarea buchetului, care va fi **întotdeauna** 2 dolari și trebuie adăugat la sfărșitul calculelor.
 
