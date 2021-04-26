@@ -8,7 +8,7 @@
 
 The **AJAX** abbreviation stands for **Asynchronous** **JavaScript** and **XML**. 
 
-Nowadays,**JSON** is used instead of **XML**.
+Nowadays, **JSON** is used instead of **XML**.
 
 This technique allows us to **dynamically** **load** and **render** content or data.
 
@@ -16,7 +16,7 @@ There are two types of **AJAX**:
 
 - **Partial page rendering** allows us to render an HTML fragment in a `<div>` while the data loads
 
-- **JSON services**, have JSON objects, which we need to parse
+- **JSON services** have JSON objects, which we need to parse
 
 [/slide]
 
@@ -26,15 +26,15 @@ There are two types of **AJAX**:
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-25-ajax-workflow-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Here is an example of AJAX workflow:
+Here is an example of AJAX **workflow**:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-5.png" /]
 
-In this example, we can see how the **client** sent a request, and the **server** returns a response with the requested page.
+In this example, we can see how the **client** sends a request, and the **server** returns a response with the requested page.
 
-After the **initial load** of the page, the **server** will return only a **JSON** or an **HTML** file.
+After the **initial loading** of the page, the **server** will return only a **JSON** or an **HTML** file.
 
-That allows us to load the content **without** the page reloading.
+That allows us to load the content dinamically, **without** the need for page reloading.
 
 [/slide]
 
@@ -93,7 +93,7 @@ They have states, which are:
 - **Fulfilled** meaning that the operation has finished and the result is available
 - **Failed** meaning that the operation failed, and an error is present
 
-To create a **Promise**, we use a **Promise object** : `new Promise(executor);`
+To create a **Promise**, we use a **Promise object**: `new Promise(executor);`
 
 [/slide]
 
@@ -144,7 +144,7 @@ The `fetch()` method allows us to make network requests using Promises.
 
 It makes the code more **maintainable** and more **readable** with a **simpler** and **cleaner** API.
 
-Here is an example of how `fetch()` works:
+Here you can see the `fetch()` syntax:
 
 ```js
 fetch('/api/example.json')
@@ -174,7 +174,7 @@ if (response.status !== 200) {
 response.json().then(function(data) {});
 ```
 
-We check the response status and if it is **200**, we continue with parsing the response.
+We check the response status and if it is **200**, we **continue** with parsing the response.
 
 [/slide]
 
@@ -190,7 +190,7 @@ We can **chain** promises using the `then()` method.
 
 When chained, they will perform **asynchronously**.
 
-Here is a basic example:
+Here is a basic **example**:
 
 ```js
 fetch('example.json')
@@ -203,9 +203,9 @@ fetch('example.json')
     });
 ```
 
-In this example, we parse the response to JSON, and we print the parsed date on the console.
+In this example, we **parse** the response to **JSON**, and we print the parsed date on the console.
 
-If one of the operations is not successful, `catch()` will print an error.
+If one of the operations is **not successful**, `catch()` will print an error.
 
 [/slide]
 
@@ -228,13 +228,13 @@ fetch('https://api.github.com/users/softuni/repos')
     .catch((error) => console.error(error));
 ```
 
-To see how it works, run it in the Chrome DevTools console.
+To see how it works, run it in the Chrome DevTools console by pressing `F12`.
 
 We **fetch** the URL and we **parse** the received **response** to **JSON**.
 
 After the data is **parsed**, we print it to the **console**.
 
-If there is an error, the `catch()` method will print an error.
+If there is an error, the `catch()` method will **print** an error.
 
 [/slide]
 
@@ -260,9 +260,9 @@ fetch('https://api.github.com/repos/softni/js-apps/issues', {
 });
 ```
 
-The **Content-type** and the authentications are set in the **headers** section.
+The **Content-Type** and the authentications are set in the **headers** section.
 
-We set the data in the **body** and it should be a **JSON stringified**.
+We set the data in the **body** and it should be a **JSON, stringified**.
 
 [/slide]
 
@@ -272,11 +272,11 @@ We set the data in the **body** and it should be a **JSON stringified**.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-35-36-body-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-After the fetch request is done, a response should be returned.
+After the **fetch** request is done, a response should be returned.
 
 The response object has properties and methods.
 
-The methods are:
+The **methods** are as follows:
 
 - `clone()` will create a **clone** of the response
 - `json()` will **parse** the response to JSON
@@ -294,7 +294,7 @@ The methods are:
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-37-response-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The **response types** are **read-only** properties, 
+The **response types** are **read-only** properties.
 
 They show the type of response.
 
