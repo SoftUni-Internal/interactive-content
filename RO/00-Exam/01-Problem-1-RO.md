@@ -33,7 +33,7 @@ Există **3** tipuri de entități și 3 depozite în aplicație: **Car, Driver,
 ## Date
 
 - **model - String**
-  **dacă modelul** este nul, spațiu alb sau mai puțin de 4 simboluri**, acest lucru ar trebui să conducă la o **excepție de argument ilegal** cu mesajul "**Model**\{**model**\} **cannot be less than 4 symbols.**"
+  **dacă modelul** este nul, spațiu alb sau mai puțin de 4 simboluri, acest lucru ar trebui să conducă la o **excepție de argument ilegal** cu mesajul "**Model**\{**model**\} **cannot be less than 4 symbols.**"
 
    * toate modelele sunt unice
 
