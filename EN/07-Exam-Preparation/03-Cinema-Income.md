@@ -50,7 +50,7 @@ The output should consist of a single line in the following format:
 
 ## Example
 | **Input** | **Output** | 
-| --- | --- | --- |
+| --- | --- |
 | 60 | There are 6 seats left in the cinema. | 
 | 10 | Cinema income - 255$ | 
 | 6 | 
