@@ -27,7 +27,7 @@ Există **două** moduri în care putem folosi **abstractizarea** în Java:
 
 
 [slide hideTitle]
-# Exemplu: Clasa abstractă Java
+# Exemplu: Clasa Abstractă Java
 
 Să vedem cum să abstractizăm clasele.
 

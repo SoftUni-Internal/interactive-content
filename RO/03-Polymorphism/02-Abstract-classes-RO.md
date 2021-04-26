@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Clasele abstracte
+# Clasele Abstracte
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/RO/interactive-java-oop-advanced-polymorphism-16-17-Abstract-Classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -30,7 +30,7 @@ Scopul principal al unei clase abstracte este de a oferi o implementare comună 
 [/slide]
 
 [slide hideTitle]
-# Problemă rezolvată: Shapes
+# Problemă cu Soluție: Shapes
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/RO/interactive_java_oop_advanced_polymorphism_18_problem_and_solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

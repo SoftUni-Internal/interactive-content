@@ -1,7 +1,7 @@
 # Polymorphism
 
 [slide hideTitle]
-# Ce este polimorfismul?
+# Ce Este Polimorfismul?
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/RO/interactive-java-oop-advanced-polymorphism-3-4-What-is-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -76,7 +76,7 @@ Meow Meow...
 
 [slide hideTitle]
 
-# Operatorul instanceOf
+# Operatorul "instanceOf"
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/RO/interactive-java-oop-advanced-polymorphism-7-Keyword-Instanceof-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -145,7 +145,7 @@ Operatorul `instanceOf` determină dacă există o **o relație** între clase (
 
 [slide hideTitle]
 
-# Tipuri de polimorfism
+# Tipuri de Polimorfism
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/RO/interactive-java-oop-advanced-polymorphism-8-9-Types-of-polymorphism-compile-time-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -244,7 +244,7 @@ class Calculation {
 [/slide]
 
 [slide hideTitle]
-# Problemă rezolvată: Math Operation
+# Problemă cu Soluție: Math Operation
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/RO/interactive_java_oop_advanced_polymorphism_10_problem_and_solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -397,7 +397,7 @@ Test Passed!
 
 [slide hideTitle]
 
-# Principii ale metodelor suprascrise și supraîncărcate
+# Principii ale Metodelor Suprascrise și Supraîncărcate
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/RO/interactive-java-oop-advanced-polymorphism-12-Rules-for-overloading-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
