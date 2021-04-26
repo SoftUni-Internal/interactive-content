@@ -23,7 +23,7 @@ while (command != "End") {
 
 În exemplul de mai sus, condiția este întotdeauna `true` deoarece valoarea variabilei `command` nu este schimbată.
 
-# Exemplu: Finite Loop (Bug Fixed)
+## Exemplu: Finite Loop (Bug Fixed)
 ```java
 Scanner scanner = new Scanner(System.in);
 String command = "Add";
