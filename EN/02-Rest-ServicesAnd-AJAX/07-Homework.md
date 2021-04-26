@@ -1,8 +1,81 @@
 # Homework
 
+[slide hideTitle]
+# Guide: Remote Databases 
+
+## Postman
+
+Postman is an **API testing** application that sends **requests** to a **web server** and retrieves **responses**. 
+
+It allows users to set up all the **headers** and **cookies** the **API** expects and checks the response. 
+
+You can download it from [here](https://www.postman.com/downloads/). 
+
+## Firebase
+
+Firebase is a **mobile** and **web** development platform. 
+
+It provides a **realtime database** and **backend as a service**. 
+
+The service provides developers with an **API** that allows application data to be **synchronized** across clients and **stored** on Firebase's cloud. 
+
+The **data** is **structured** as a **JSON** tree. 
+
+### Registration  
+
+**Register** at [https://console.firebase.google.com](https://console.firebase.google.com). 
+
+Afterwards, **create a new project** and test it in order to understand how the database works. 
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-1.png" /]
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-2.png" /]
+
+### Create a collection
+
+In section **Build** \> **Realtime Database** \> **Data**.
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-3.png" /]
+
+### Permissions
+Make sure to enable **unauthorized access** to your database. 
+
+Note that this is for **educational purposes** only and you should **NOT** do it in real apps as it is a **security hole**! 
+
+After you have done that, access your data through the REST API.
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-4.png" /]
+
+### App Keys
+You can find all the App Keys when you click on "Project settings".
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-5.png" /]
+
+### Accessing a Firebase REST API with Postman
+
+Open **Postman** and make a **GET** request to retrieve all of the information in your database. 
+
+In our case that would be a list of all the available books.
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-5.png" /]
+
+**Collections** \> **New Collection**. 
+
+Put the link on the "**GET**" field, and press the "**Send**" button.
+
+[/slide]
 
 [slide hideTitle]
 # Problem: REST Countries
+
+Download the **server and JSON files** for **all** these tasks [here](https://github.com/softuni-practice-server/softuni-practice-server).
+
+## Working with Remote Data
+For the solution of some of the following tasks, you will need to use an up-to-date version of the **local REST service**, provided in the lesson’s resources archive. 
+
+You can [read the documentation here](https://github.com/softuni-practice-server/softuni-practice-server).
+
+## Your Task
 
 **NOTE**: Install the [Postman](https://www.postman.com/) REST Client to **test** the functions. 
 
@@ -26,13 +99,28 @@ Send a "**GET**" request to the link given below.
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-29.png" /]
 
-Each API has a documentation where you can see how to use it. You can find the documentation for this API [here](https://restcountries.eu/).
+Each API has a documentation where you can see how to use it. 
 
-- Try to filter only **specific fields** of the information about **Italy**. Send a **GET** request with the needed parameter to receive a response with information about the country in this form:
+You can find the documentation for this API [here](https://restcountries.eu/).
+
+- Try to filter only **specific fields** of the information about **Italy**
+
+- Send a **GET** request with the needed parameter to receive a response with **information about the country** in this form:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-30.png" /]
 
-- There is a way to retrieve a response holding all the countries, which citizens speak the German language. Send a **GET** request to retrieve the information for these countries: Austria, Belgium, Germany, Holy See, Liechtenstein, Luxembourg and Switzerland, but retrieve only their names and region.
+- There is a way to **retrieve a response holding all the countries** with **German-speaking** citizens 
+
+- Send a **GET** request to retrieve the information for these countries: 
+  * Austria
+  * Belgium
+  * Germany
+  * Holy See
+  * Liechtenstein
+  * Luxembourg
+  * Switzerland
+
+Retrieve **only** their **names** and **region**.
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-31.png" /]
 
@@ -41,8 +129,6 @@ Each API has a documentation where you can see how to use it. You can find the d
 [slide hideTitle]
 
 # Problem: Bus Stop
-
-Use the **resources** from previous task.
 
 Perform an HTTP request that displays the arrival times for all buses by a **bus stop ID**.
 
@@ -63,7 +149,7 @@ stopId: {
 
 ## Hints
 
-The webhost will respond with valid data to the IDs 1287, 1308, 1327, and 2334.
+The webhost will respond with **valid** data to the **IDs** 1287, 1308, 1327, and 2334.
 
 [/slide]
 
@@ -85,7 +171,7 @@ Create two different **POST** requests using Postman.
 
 The data sent in a **POST** request should be a valid JSON object, containing a **person** and a **phone** property. 
 
-The example format is:
+The example **format** is:
 
 ```
 {
@@ -102,44 +188,44 @@ The example format is:
 [slide hideTitle]
 # Problem: Employees 
 
-Use the link below to create a GET, POST, PUT and DELETE request in Postman: 
+Use the link below to create a GET, POST, PUT, and DELETE request in **Postman**: 
 
 [REST API Example](http://dummy.restapiexample.com/)
 
 ## GET Request
 
-Use the links in the "Full Route" column to:
+Use the links in the "**Full Route**" column to:
 
-- Retrieve the information about all employees
+- Retrieve the information about **all** employees
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-35.png" /]
 
-- Retrieve the information about a single employee
+- Retrieve the information about a **single** employee
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-36.png" /]
 
 ## POST Request
 
-Use the "create" link to add a new entry to the database:
+Use the "**create**" link to add a new entry to the database:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-37.png" /]
 
 ## PUT Request
 
-Update the information about the specified employee:
+**Update** the information about the specified employee:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-38.png" /]
 
 ## DELETE Request
 
-Delete the information of the specified employee:
+**Delete** the information of the specified employee:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-39.png" /]
 
 [/slide]
 
 [slide hideTitle]
-# Firebase App
+# Problem: Firebase App
 
 Create a **Firebase** application to create a collection, which contain **book titles and their author**. 
 
@@ -159,7 +245,7 @@ Use Postman to create, read and delete entries from the collection.
 [/slide]
 
 [slide hideTitle]
-# Backendless App
+# Problem: Backendless App
 
 Use **Backendless** to create a music application that contains information about **song titles** and **singers**.
 

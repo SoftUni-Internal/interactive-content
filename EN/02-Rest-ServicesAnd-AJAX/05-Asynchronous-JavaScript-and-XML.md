@@ -240,7 +240,7 @@ If there is an error, the `catch()` method will **print** an error.
 
 [slide hideTitle]
 
-# Post Request
+# POST Request
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-34-post-request-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
