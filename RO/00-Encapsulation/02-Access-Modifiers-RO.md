@@ -334,8 +334,9 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problemă: Salary Increase
+# Problemă cu Soluție: Salary Increase
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/RO/Salary-Increase-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Salary Increase" timeLimit=5000 taskId="Java-OOP-Advanced-Encapsulation-Salary-Increase" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
