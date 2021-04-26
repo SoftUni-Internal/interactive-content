@@ -7,19 +7,20 @@
 
 ## În această lecție veți învăța:
 
-**1. Bucle For complexe cu o incrementare specială**
+**1. Bucle for complexe cu o incrementare specială**
 
 - Sintaxă și prezentare generală
 
 **2. Bucle imbricate**
 
-- Buclele din interiorul altor bucle și utilizările acestora
+- Imbricarea unor bulce în cadrul altor bucle
 
-  * Bucle imbricate de tip while 
-  * Bucle imbricate de tip for
-  * Combinarea buclei while cu bucla for
+- Cazuri de utilizare
+  * bucle imbricate de tip while 
+  * bucle imbricate de tip for
+  * combinarea buclei while cu bucla for
 
-**3. Exerciții Practice**
+**3. Exerciții practice**
 
 
 [/slide]
