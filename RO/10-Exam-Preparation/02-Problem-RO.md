@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Problemă cu Soluție: Online Shop Business Logic
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/Exam-Prep2/RO/interactive-java-oop-advanced-exam-preparation-2-problem-2-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/Exam-Prep2/RO/interactive-java-oop-advanced-exam-preparation-2-problem-2-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Online Shop Business Logic" timeLimit=5000 taskId="oop-advanced-java-exam-preparation-2-Online-Shop-Business-Logic" executionType="tests-execution" executionStrategy="java-project-tests"]
 [code-upload allowedMemory="30" /]
