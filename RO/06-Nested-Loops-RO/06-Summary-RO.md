@@ -5,7 +5,7 @@
 
 ## În această lecție ați învățat: 
 
-- Ce sunt **Buclele Imbricate**
+- Ce sunt **buclele imbricate**
 
 - Sintaxa și detaliile în ansamblu 
 
@@ -20,11 +20,11 @@ for (int r = 1; r <= n; r++) {
 }
 ```
 
-- Cum utilizăm buclele imbricate de tip **For**
+- Cum utilizăm buclele imbricate de tip **for**
 
-- Cum utilizăm buclele imbricate de tip **While**
+- Cum utilizăm buclele imbricate de tip **while**
 
-- Combinarea buclelor **For** și **While**
+- Combinarea buclelor **for** și **while**
 
 
 [/slide]
