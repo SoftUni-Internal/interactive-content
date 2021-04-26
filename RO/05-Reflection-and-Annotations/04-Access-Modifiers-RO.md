@@ -95,6 +95,8 @@ Elementele matricei: 2 9 3 0 7
 [slide hideTitle]
 # Problemă cu Soluție: High-Quality Mistakes
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/RO/High-Quality-Mistakes-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="High Quality Mistakes" taskId="Java-OOP-Advanced-Reflection-High-Quality-Mistakes" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [code-upload allowedMemory="30" /]
