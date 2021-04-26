@@ -28,7 +28,7 @@ mocha --version
 
 # Node Path Configuration
 
-By default **Node.js** does not find its globally installed modules.
+**Node.js** does not find its globally installed modules by default.
 
 You need to set the "NODE_PATH" environment variable manually.
 
@@ -38,18 +38,21 @@ To set the path use this piece of code for future sessions:
 
 `setx NODE_PATH %AppData%\npm\node_modules`
 
+Variables set with **setx** are available in future command windows only.
+
 Use this piece of code to set the path for the current session:
 
 `set NODE_PATH=%AppData%\npm\node_modules`
 
 You may need to restart your IDE after changing the "NODE_PATH".
 
-To load a library, first we need to **require** it, like in the example below.
+Here is an example of how a library is loaded: 
 
 `const expect = require("chai").expect;`
 
 ```js
 const expect = require('chai').expect;
+
 describe('Test group #1', function () {
     it('should… when…', function () {
         expect(actual).to.be.equal(expected);
