@@ -7,7 +7,7 @@
 [code-upload allowedMemory="30" /]
 
 [task-description]
-# Prezentare generală
+# Prezentare Generală
 
 Acest lucru constă în construirea unui proiect de magazin online bazat pe text, care definește **periferice**, **componente** și **calculatoare**.
 
@@ -16,7 +16,9 @@ Proiectul va conține **clase de model** și o **clasă de controler**, care ges
 
 # Configurare
 
-**Aici este un link către** [resurse] (https://videos.softuni.org/resources/java/java-oop-advanced/11.Java-OOP-Advanced-Exam-Preparation-2.zip) **pentru această sarcină.**
+**Aici este un link către** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/11.Java-OOP-Advanced-Exam-Preparation-2.zip) **pentru această sarcină.**
+
+
 
 - Încărcați **numai pachetul onlineShop** în fiecare sarcină **cu excepția testelor unitare**
 - **Nu modificați interfețele sau pachetele acestora**
