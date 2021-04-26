@@ -103,7 +103,7 @@ To create a **Promise**, we use a **Promise object**: `new Promise(executor);`
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-29-promise-then-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In this example, we will see how the **new Promise** works:
+In this example, we will see how **new Promise()** works:
 
 ```js live
 let first = 'Before promise'
@@ -122,13 +122,13 @@ let third = 'After promise'
 console.log(third);
 ```
 
-The values of the **first** and **third** variable will be printed.
+Only the values of the **first** and **third** variable will be printed.
 
-That is because the Promise is not resolved yet.
+That is because the Promise is **not resolved** yet.
 
-The **second** will be printed to the console when the Promise is resolved.
+The **second** value will be printed to the console when the Promise is resolved.
 
-That is because **new Promise()** is asynchronous.
+The reason for this is that Promises are asynchronous.
 
 [/slide]
 
@@ -274,7 +274,7 @@ We set the data in the **body** and it should be a **JSON, stringified**.
 
 After the **fetch** request is done, a response should be returned.
 
-The response object has properties and methods.
+The response **object** has properties and methods.
 
 The **methods** are as follows:
 

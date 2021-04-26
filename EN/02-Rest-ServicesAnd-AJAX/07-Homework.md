@@ -1,10 +1,38 @@
 # Homework
 
+
+[slide hideTitle]
+# Problem: REST Countries
+
+**NOTE**: Install the [Postman](https://www.postman.com/) REST Client to **test** the functions. 
+
+- Manually compile an **HTTP request** (as text) to retrieve information about Romania
+  
+- Use **Postman** to make the **same request**
+
+- Make a request that **retrieves** only the fields **name**, **capital**, **region**, and **population** for Italy 
+
+- Make a request that retrieves information about **all German-speaking countries**
+
+Your **first task** is to get detailed information about **Romania**. 
+
+Send a "**GET**" request to the link given below. 
+
+## Request   
+
+`https://restcountries.eu/rest/v2/name/Romania`
+
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-28.png" /]
+
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-29.png" /]
+
+[/slide]
+
 [slide hideTitle]
 
 # Problem: Bus Stop
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-01.BUS-STOP.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-01.BUS-STOP.zip) **for these tasks.**
 
 Create a program that displays the arrival times for all of the buses by a given bus stop ID when a button is clicked.
 

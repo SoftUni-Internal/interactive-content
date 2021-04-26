@@ -11,7 +11,7 @@
 
    *  based on **request-response**
 
--  **REST requests:**
+-  **HTTP requests:**
 
    * GET
 
@@ -72,7 +72,7 @@
 
 -  **AJAX** allows us to load dynamic content in the background
 
-   -  **XMLHttpRequest**
+   *  **XMLHttpRequest**
 
    ```js
    const httpRequest = new XMLHttpRequest();
