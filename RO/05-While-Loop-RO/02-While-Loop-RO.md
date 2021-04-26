@@ -20,18 +20,18 @@ while (condition) {
 
 În codul din exemplul de mai sus, condiția este orice **expresie care returnează un rezultat boolean** - `true` sau `false`. 
 
-Aceasta determină numărul de repetiții al corpul buclei și se numește `condiția buclei`. 
+Aceasta determină numărul de repetiții ale corpului buclei și se numește `condiția buclei`. 
 
 În acest exemplu `corpul buclei` este codul de programare executat la fiecare iterație a buclei, oricând condiția de intrare este adevărată.
 
-În bucla while, mai întâi este evaluată expresia booleană și dacă aceasta este `true`, secvența de operații din corpul buclei este executată.  
+În bucla while, mai întâi este evaluată expresia booleană și dacă aceasta returnează `true`, secvența de operații din corpul buclei este executată.  
 
-Apoi, condiția de intrare este verificată și dacă este din nou `true`, corpul buclei este executat.
+Apoi, condiția de intrare este verificată din nou și dacă este `true`, corpul buclei este executat.
 
 Totul se repetă din nou și din nou **până când la un moment dat expresia condițională returnează valoarea** `false`.
 
 ## Exemplu: Sequence of Numbers 2k+1
-Scrieți un program care imprimă toate **numerele ≤ n** din seria: **1, 3, 7, 15, 31, …,** unde fiecare număr următor = **numărul anterior* 2 + 1**.
+Scrieți un program care imprimă toate **numerele ≤ n** din seria: **1, 3, 7, 15, 31, …,** unde fiecare număr următor = **numărul anterior * 2 + 1**.
 
 Iată cum rezolvăm problema:
 - Creăm o variabilă **num** pentru numărul curent, căruia îi asignăm inițial **valoarea 1**
