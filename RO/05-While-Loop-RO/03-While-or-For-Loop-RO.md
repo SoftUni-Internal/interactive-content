@@ -17,13 +17,13 @@ for (int i = 0; i <= 5; i++) {
 
 - Instrucțiunea 1 setează o variabilă înainte de începutul buclei (int `i` = 0)
 
-- Instrucțiunea 2 definește o condiție până la care bucla este executată (`i` mai mic decât 5). Dacă condiția este **true**, corpul buclei va fi executat. Dacă este **false** - bucla se va opri.
+- Instrucțiunea 2 definește o condiție până la care bucla este executată (`i` mai mic sau egal cu 5). Dacă condiția este **true**, corpul buclei va fi executat. Dacă este **false** - bucla se va opri.
 
 - Instrucțiunea 3 mărește valoarea variabilei (`i`++) de fiecare dată când blocul de cod din buclă este executat
 
-Pot exista multe probleme **complexe** atunci în care numărul iterațiilor depinde de o anumită **condiție** și nu pot fi prevăzute.
+Pot exista multe probleme **complexe** în care numărul iterațiilor depinde de o anumită **condiție** și nu pot fi prevăzute.
 
-Aceasta înseamnă că nu putem ști în avans **de câte ori** trebuie să repetăm bucla. 
+Acest lucru înseamnă că nu putem ști în avans **de câte ori** trebuie să repetăm bucla. 
 
 În această situație este mai bine să folosim bucla `while`.
 
