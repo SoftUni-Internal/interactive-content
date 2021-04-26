@@ -137,9 +137,9 @@ O clasă care **implementează o interfață** trebui să **furnizeze o implemen
 [/slide]
 
 [slide hideTitle]
-# Problemă: Car Shop
+# Problemă cu Soluție: Car Shop
 
-
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/RO/Car-Shop-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Car Shop" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Car-Shop" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
@@ -752,7 +752,9 @@ Test Passed!
 
 
 [slide hideTitle]
-# Problemă Car Shop Extended
+# Problemă cu Soluție: Car Shop Extended
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/RO/Car-Shop-Extend-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Car Shop Extended" timeLimit=5000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Car-Shop-Extended" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
@@ -2042,6 +2044,8 @@ Test Passed!
 
 [slide hideTitle]
 # Problemă cu Soluție: Say Hello Extended
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/03-Interface-and-Abstraction/RO/Say-Hello-Extend-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Say Hello Extended" timeLimit=50000 taskId="Java-OOP-Advanced-Interfaces-And-Abstraction-Say-Hello-Extended" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
