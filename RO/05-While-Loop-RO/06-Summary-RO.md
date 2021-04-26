@@ -5,7 +5,7 @@
 
 ## În acestă lecție ați învățat: 
 
-- Ce sunt buclele **While** și cum să le folosiți
+- Ce sunt buclele **while** și cum să le folosiți
 
 ```java
 while (condition) {
@@ -13,9 +13,9 @@ while (condition) {
 }
 ```
 
-- Care este diferența dintre buclele **While** și **For** 
+- Care este diferența dintre buclele **while** și **for** 
 
-- Operatorul **Break** 
+- Operatorul **break** 
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -28,7 +28,7 @@ while (true) {
 }
 ```
 
-- Buclele infinite
+- Ce sunt **Buclele infinite**
 
 ## În lecția următoare veți învăța:
 
