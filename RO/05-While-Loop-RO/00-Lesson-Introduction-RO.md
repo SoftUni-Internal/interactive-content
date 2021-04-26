@@ -9,16 +9,15 @@
 
 **1. Bucla While**
 
-- Cum să folosiți buclele while
+- Cum să folosiți **buclele while**
 
 **2. Buclele While și Buclele For**
 
-- Care este diferența dintre buclele while și for
+- Care este diferența dintre **buclele while** și **for**
 
 **3. Operatorul Break**
 
 - Când puteți folosi operatorul **break**
-
 
 **5. Bucle Infinite While**
 
