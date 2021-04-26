@@ -681,7 +681,9 @@ Test Passed!
 
 [task-description]
 # Description
-Create a package called "zoo". It should contain the following classes: 
+Create a package called "**zoo**". 
+
+It should contain the following classes: 
 
 [image assetsSrc="inheritance-example(19).png" /]
 
@@ -869,7 +871,10 @@ Your task is to create the following game hierarchy:
 
 [image assetsSrc="inheritance-example(20).png" /]
 
-Create a "Hero" class. It should contain the following members:
+Create a "**Hero**" class. 
+
+It should contain the following members:
+
 - A public constructor, which accepts:
     - **username - String**
     - **level - int**
@@ -879,7 +884,7 @@ Create a "Hero" class. It should contain the following members:
 - Getters for the username and the level
 - `toString()` method
 
-## Hint: Override the `toString()` method of the base class in the following way:
+## Hint: Override the `toString()` Method of the Base Class in the Following way:
 ```java
 @Override
 public String toString() {
@@ -1284,10 +1289,14 @@ Create a base class called "Vehicle". It should possess the following members:
 - **Getters and Setters for all fields**
 - A public constructor which accepts (**fuel, horsePower**) and sets the **default fuel consumption** of the field called **fuelConsumption**
 - **void drive(double kilometers)**
-    - The **drive** method should have contain code logic to reduce the **fuel** based on the travelled kilometers and fuel consumption. 
-    Keep in mind that you can drive the vehicle only if you have enough fuel to finish the drive.
+    - the **drive** method should have contain code logic to reduce the **fuel** based on the travelled kilometers and fuel consumption
 
-The default fuel consumption for a **Vehicle** is **1.25**. Some of the classes have different default fuel consumptions:
+Keep in mind that you can drive the vehicle only if you have enough fuel to finish the drive.
+
+The default fuel consumption for a **Vehicle** is **1.25**. 
+
+Some of the classes have different default fuel consumptions:
+
 - **SportCar - DEFAULT_FUEL_CONSUMPTION = 10**
 - **RaceMotorcycle - DEFAULT_FUEL_CONSUMPTION = 8**
 - **Car - DEFAULT_FUEL_CONSUMPTION = 3**
@@ -2425,9 +2434,9 @@ All types of animals should be able to produce some kind of sound - `String prod
 
 For example, the dog should be able to bark.
 
- Your task is to model the hierarchy and test its functionality. 
+Your task is to model the hierarchy and test its functionality. 
 
- Create an animal of each kind and make them all produce sound and create getters for all fields.
+Create an animal of each kind and make them all produce sound and create getters for all fields.
 
 ## Input
 You will be given some lines of input.

@@ -127,7 +127,7 @@ The class should also have private method for setName and public methods for:
 - **getFirstTeam(): List(Person) (Collections.unmodifiableList)**
 - **getReserveTeam(): List(Person) (Collections.unmodifiableList)**
 
-## This class should be applicable in the following context:
+## This Class Should be Applicable in the Following Context:
 ```java
 Team team = new Team (name: "Black Eagles");
 for (Person player : players) {
@@ -141,7 +141,7 @@ System.out.println("The number of players on the reserve team is:"
  + team.getReserveTeam ().size());
 ```
 
-## It should not function the following way:
+## It Should not Function the Following way:
 
 ```java
 Team team = new Team (name: "Black Eagles");

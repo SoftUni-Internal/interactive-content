@@ -184,7 +184,13 @@ people.add(student);
 
 - We can extend a class that we can not otherwise change, implementing the custom logic we need
 
-On the diagram, we can notice that our CustomArrayList extends the ArrayList class. Keep in mind that we are not allowed to change the original implementation. However, we can add more methods or parameters to our class. That way we can expand the behavior of the parent class.
+On the diagram, we can notice that our CustomArrayList extends the ArrayList class. 
+
+Keep in mind that we are not allowed to change the original implementation. 
+
+However, we can add more methods or parameters to our class. 
+
+That way we can expand the behavior of the parent class.
 
 [image assetsSrc="inheritance-example(14).png" /]
 

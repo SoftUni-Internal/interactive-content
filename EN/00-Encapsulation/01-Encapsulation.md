@@ -55,7 +55,7 @@ Accessors and mutators should be **public** (+):
 
 [slide hideTitle]
 
-# The "This" Keyword
+# The "this" Keyword
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/01.Java-OOP-Advanced-Encapsulation-7-8-keyword-this-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -95,7 +95,7 @@ public Person (String name, Integer age) {
 
 [slide hideTitle]
 
-# Implementation hiding - Example
+# Implementation Hiding - Example
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/01-Encapsulation/EN/interactive-java-oop-advanced-encapsulation-hiding-implementation-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

@@ -19,13 +19,13 @@ You can find the necessary formulas [here](http://www.mathwords.com/r/rectangula
 On the first three lines, you will get the length, width and height of the figure. 
 
 On the next three lines, print:
-- the **surface** area
-- **lateral surface** area
-- the **volume** of the box
+- The **surface** area
+- **Lateral surface** area
+- The **volume** of the box
 
 Add data validation for each parameter given to the constructor. 
 
-A box’s side should not be zero or a negative number. 
+A box's side should not be zero or a negative number. 
 
 Make a private setter that performs data validation internally.
 
@@ -1039,7 +1039,7 @@ In case an **invalid name** is entered, print out the exception message "**A chi
 
 Validate the **age** value - the minimum and maximum age are provided.
 
-In an **invalid age** value is entered, print the exception message: "**A chicken's age can only be a number between 0 and 15. **"
+In an **invalid age** value is entered, print the exception message: "**A chicken's age can only be a number between 0 and 15.**"
 
 ## Step 4. Hide the Internal Logic
 If a method is intended to be used only by descendant classes or to perform some action internally, there is no use in keeping them **public**.
@@ -1853,6 +1853,7 @@ Create a program in which each command corresponds to a person buying a product.
 If the person can afford a product, add it to their bag. 
 
 If a person does not have enough money, print the message:
+
 "\{**Person name**\} **can't afford** \{**Product name**\}"
 
 ## Input
@@ -1861,17 +1862,19 @@ On the first two lines, you will receive the information about all people and al
 ## Output
 After all purchases, **print the information about every person** in the order of appearance and **all products that they have bought**, also in order of appearance. 
 
-If the person has **not** bought anything, print out their name, followed by "Nothing bought".
+If the person has **not** bought anything, print out their name, followed by "**Nothing bought**".
 
 Read commands until you reach the line containing: "**END**". 
 
 In case of **invalid input**, exit the program with the corresponding message:
 
 - If the **balance** is **negative**:
-"Money cannot be negative"
+
+"**Money cannot be negative**"
 
 - If the **name** is **empty**: 
-"Name cannot be empty" 
+
+"**Name cannot be empty**" 
 
 
 ## Hint
@@ -4259,7 +4262,9 @@ The command can be one of the following:
 
 In that case, print "**Names cannot be blank.**"
 
-- **Stats** should be in the range (0..100). If not, print "**A player's** \{**Stat name**\} **should be a number between 0 and 100.**"
+- **Stats** should be in the range (0..100)
+
+If not, print "**A player's** \{**Stat name**\} **should be a number between 0 and 100.**"
   
 - If you receive a command to **remove** a missing player, print "**Player** \{**Player name**\} **is not in** \{**Team name**\}"
   

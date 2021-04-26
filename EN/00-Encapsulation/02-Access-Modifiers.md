@@ -104,7 +104,7 @@ Create a class called **Person**, which should have **private** fields for:
 - age: int
 - toString() - override
 
-## The class should fit in the following context:
+## The Class Should Fit in the Following Context:
 ```java
 public static void main(String[] args) throws IOException {
     BufferedReader reader = 
