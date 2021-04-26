@@ -252,7 +252,7 @@ public class Copy {​
 
 [slide hideTitle]
 
-# Parameter injection
+# Parameter Injection
 
 This type of injection suggests injecting the dependencies through method parameters.
 

@@ -1,4 +1,4 @@
-# Constructori, câmpuri și metode
+# Constructori, Câmpuri și Metode
 
 [slide hideTitle]
 
@@ -45,7 +45,7 @@ Ca și în codul de mai sus - Este un constructor care acceptă un `string`, dec
 
 [slide hideTitle]
 
-# Numele și tipul câmpurilor
+# Numele și Tipul Câmpurilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/RO/interactive-java-oop-advanced-reflection-and-annotations-17-18-fields-name-and-type-fields-set-and-get-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Obiectul clasei
+# Obiectul Clasei
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/RO/interactive-java-oop-advanced-reflection-and-annotations-8-9-10-the-class-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -113,7 +113,7 @@ Class[] interfaces = aClass.getInterfaces();
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Reflection
+# Problemă cu Soluție: Reflection
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/RO/interactive-java-oop-advanced-reflection-and-annotations-12-problem-and-solution-reflection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
