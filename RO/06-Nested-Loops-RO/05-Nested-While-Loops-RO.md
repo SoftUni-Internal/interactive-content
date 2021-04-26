@@ -3,7 +3,7 @@
 # Bucle Imbricate While
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-28-30-nested-while-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Utilizarea buclelor imbricate `while` este foarte similară cu cea a buclelor imbricate `for`. Totuși, acestea sunt utilizate atunci când nu cunoaștem cu exactitate numărul de repetări necesare.
+Utilizarea buclelor imbricate `while` este foarte similară cu cea a buclelor imbricate `for`, dar acestea sunt utilizate atunci când nu cunoaștem cu exactitate numărul de repetări necesare.
 
 Aceasta este sintaxa în Java:
 ```java
@@ -126,7 +126,7 @@ Scrieți un program care:
 
    - imprimă suma **cifrelor** pentru fiecare număr întreg
 
-- La final imprimă  "**Goodbye**"
+- La final imprimă "**Goodbye**"
 
 ## Exemplu
 
