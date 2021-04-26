@@ -176,6 +176,8 @@ Object returnValue = method.invoke(null, "arg1");
 [slide hideTitle]
 # Problemă cu Soluție: Getters and Setters
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/RO/Getters-and-Setters-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Getters and Setters" taskId="Java-OOP-Advanced-Reflection-Getters-And-Setters" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
