@@ -28,14 +28,6 @@ describe('title', function () {
 
 Mocha utilizes several hooks to run tests:
 
-- `describe()`: used for grouping the contents of the test, can;
-- `it(`)`: It's the test case;
-- `before()`: It's a hook to run before the first `it()` or `describe()`;
-- `beforeEach()`: It’s a hook to run before each `it()` or `describe()`;
-- `after()`: It’s a hook to run after `it()` or `describe()`;
-- `afterEach()`: It’s a hook to run after each `it()` or `describe()`;
-
-
 | **Name**  | **Description** |
 | --- | --- |
 | describe() | Used for grouping the contents of the unit test, you can nest describe() hooks. |
