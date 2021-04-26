@@ -19,12 +19,12 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care:
-* Imprimă informații despre **o clădire**:
-* Nivelele impare pot fi formate doar din apartamente, indicate prin majuscula `A`
-* Nivelele pare pot fi formate doar din birouri, indicate prin majuscula `O`
+Scrieți un program care imprimă informații despre **o clădire**:
+* Nivelele impare pot fi formate doar din **apartamente**, indicate prin majuscula `A`
+* Nivelele pare pot fi formate doar din **birouri**, indicate prin majuscula `O`
 * Ultimul nivel, indiferent de numărul său, poate să fie format doar din apartamente mari, indicate prin majuscula `L`
-* Folosiți următoarele notații pentru spațiile de pe fiecare nivel:
+
+Folosiți următoarele notații pentru spațiile de pe fiecare nivel:
 * Apartamente: `"A{buildingNum}{apartmentNum}"`
 * Birouri: `"O{floorNum}{officeNum}"`
 * Apartamente mari: `"L{buildingNum}{apartmentNum}"`
@@ -203,9 +203,9 @@ public class Main {
 Scrieți un program care:
 * Citește un număr întreg - **n**
 * Generează parole personalizate, care îndeplinesc următoarele condiții:
-* Prima **parte** este un număr **par** și nu trebuie să fie mai mare decât **n**
-* A doua **parte este un** număr impar și nu trebuie să fie mai mare decât **n**
-* Ultima parte **este** produsul dintre primele două
+   * **Prima** parte este un număr **par** și nu trebuie să fie mai mare decât **n**
+   * **A doua** parte este un număr **impar** și nu trebuie să fie mai mare decât **n**
+   * Ultima parte **este** produsul primelor două numere
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -285,8 +285,8 @@ public class Main {
 [task-description]
 ## Descriere
 Scrieți un program care:
-* Citește un număr de pe consolă
-* Găsește toate **numerele de 3 cifre** care produc acel număr prin multiplicarea tuturor cifrelor lor.
+* Citește un **număr** de pe consolă
+* Găsește toate **numerele de 3 cifre** care produc acel număr prin înmulțirea tuturor cifrelor lor
 ## Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
@@ -345,9 +345,9 @@ public class Main {
 [task-description]
 ## Descriere
 Scrieți un program care:
-* Primește o **destinație** 
-* Apoi citește **bugetul necesar** pentru vizitarea destinației
-* Vom primi destinația următoare de la consolă de fiecare dată când atingem bugetul suficient pentru cea curentă.
+* Primește o **destinație** turistică
+* După aceea, citește **bugetul necesar** pentru vizitarea destinației
+* Vom primi **destinația următoare** de la consolă de fiecare dată când atingem bugetul suficient pentru cea curentă
 * Fiecare linie următoare va conține o sumă de bani, până când bugetul este suficient pentru a realiza această călătorie
 * Dacă primește comanda **"End"**, programul se termină
 
@@ -731,7 +731,7 @@ Scrieți un program care:
 [hints]
 [hint]
 
-Un număr prim este un **număr întreg** care se poate divide doar prin `sine însuși` și prin numărul `1` **fără rest**.
+Un număr prim este un **număr întreg** care se poate divide doar prin `el însuși` și prin numărul `1` **fără rest**.
 
 [/hint]
 [/hints]
@@ -835,11 +835,11 @@ public class Main {
 Scrieți un program care:
 * Citește **3 cifre** - n1, n2 și n3
 * Generează toate **codurile PIN unice de 3 cifre**, care îndeplinesc următoarele **condiții**:
-* **Prima** cifră nu trebuie să fie mai mare decât n1
-* **A doua** cifră nu trebuie să fie mai mare decât n2
-* **Cea de-a treia cifră** nu trebuie să fie mai mare decât n3
-* **Prima** și **a treia** cifră trebuie să fie pare
-* A doua cifră trebuie să fie un **număr prim** în intervalul \[2 ... 7 \]
+   * **Prima** cifră nu trebuie să fie mai mare decât n1
+   * **A doua** cifră nu trebuie să fie mai mare decât n2
+   * **A treia cifră** nu trebuie să fie mai mare decât n3
+   * **Prima** și **a treia** cifră trebuie să fie pare
+   * A doua cifră trebuie să fie un **număr prim** în intervalul \[2 ... 7 \]
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -917,7 +917,7 @@ public class Main {
 # Descriere
 Scrieți un program care:
 * Tipărește **combinații de 3 litere** și **numărul** de combinații generate
-* Veți primi începutul și sfârșitul **intervalului de litere** pe prima și a doua linie
+* Veți primi începutul și sfârșitul **intervalului de litere** pe prima și a doua linie de intrare
 * Pe a treia linie, veți primi o **literă**, pe care trebuie să o **ignorați** - nu tipăriți combinații cu aceasta
 * Generați și tipăriți toate combinațiile de 3 litere, folosind literele din intervalul dat, ignorând litera specificată în intrare.
 
@@ -1009,8 +1009,8 @@ Scrieți un program care:
 
 * Citește un număr `n` de la consolă
 * Tipărește **toate numerele de 4 cifre**, care îndeplinesc următoarele condiții:
-* Când **le împărțiți** în două perechi și **adăugați** prima cifră la a doua - rezultatul **este egal cu** `n`
-* Când adăugați primele două cifre una la cealaltă, rezultatul trebuie să fie **divizibil** cu `n` **fără rest**
+   * Când **le împărțiți** în două perechi și **adăugați** prima cifră la a doua - rezultatul **este egal cu** `n`
+   * Când adăugați primele două cifre una la cealaltă, rezultatul trebuie să fie **divizibil** cu `n` **fără rest**
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -1113,7 +1113,7 @@ Intrarea constă în **2** linii:
 
 
 ## Ieșire
-- Orele trebuie să fie tipărite pe consolă în formatul "\{hour\} : \{minutes\}"
+- Orele trebuie să fie tipărite pe consolă în formatul următor: "\{hour\} : \{minutes\}"
 
 Adăugați zerouri la valoarea orei și a minutelor dacă valorile lor sunt constituite de o singură cifră.
 
@@ -1307,7 +1307,7 @@ Intrarea este introdusă din consolă ca **3** linii:
 
 
 ## Ieșire
-- Rezultatul trebuie să fie tipărit în următorul format "\{hour\} : \{minutes\} : \{seconds\}"
+- Rezultatul trebuie să fie tipărit în următorul format: "\{hour\} : \{minutes\} : \{seconds\}"
 
 Adăugați zerouri dacă ieșirea pentru oricare dintre elementele de ieșire este constituită de o singură cifră.
 
@@ -1736,10 +1736,9 @@ public class Main {
 ## Descriere
 Scrieți un program care **calculează valoarea ASCII a câtorva cuvinte introduse**. Cuvântul cu **cea mai mare valoare** este câștigător.
 
-Valoarea unui cuvânt este calculată atunci când însumăm valorile **ASCII ale tuturor literelor din care este format**.
+Valoarea unui cuvânt este calculată prin însumarea valorilor **ASCII ale tuturor literelor din care este format**.
 
-
-Programul trebuie să accepte cuvinte de la consolă și să le calculeze valoarea până la introducerea: **”STOP”**, apoi tipărește:
+Programul trebuie să accepte cuvinte de la consolă și să le calculeze valoarea până la introducerea comenzii **"STOP"**, apoi tipărește:
 - "Winner is \{winner word\} - \{value of the word\}!"
 
 
@@ -1755,7 +1754,7 @@ Programul trebuie să accepte cuvinte de la consolă și să le calculeze valoar
 
 [hints]
 [hint]
-Prima literă este "H" și valoarea ASCII este 72, "o" are valoarea 111, "u" are valoarea 117, "s" are valoarea 115, "e" are valoarea 101
+Prima literă este "H" și valoarea ASCII este 72, "o" are valoarea 111, "u" are valoarea 117, "s" are valoarea 115, "e" are valoarea 101.
 Suma lor este 516.
 [/hint]
 [hint]
@@ -1876,7 +1875,7 @@ Fiecare linie trebuie să conțină un singur simbol:
 
 - Simbolurile sunt determinate cu ajutorul [tabelului ASCII]
 
-**Codul ASCII** al acestora este calculat prin adăugarea **33** la cifra curentă.
+**Codul ASCII** al acestora este calculat prin adăugarea lui **33** la cifra curentă.
 
 - Simbolul trebuie să fie tipărit **de numărul de ori indicat de cifră**
 - Dacă 0 trebuie folosit ca simbol pe o linie, ieșirea va arăta așa: **"ZERO"**
@@ -1918,9 +1917,9 @@ Din tabelul ASCII găsim simbolul de imprimat - '\#' și îl imprimăm de două 
 
 [hints]
 [hint]
-Citiți numărul ca un șir, salvați lungimea acestuia într-o variabilă folosind metoda **length()**.
+Citiți numărul ca șir, salvați lungimea acestuia într-o variabilă folosind metoda **length()**.
 
-Găsiți mai multe **informații** despre asta pe Internet.
+Găsiți mai multe **informații** despre acest lucru pe Internet.
 
 Pentru a lua ultima cifră a numărului, împărțiți-l la 10 (**num % 10**) și salvați-l într-o variabilă.
 
@@ -2132,13 +2131,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Cursul "Antrenează antrenorii" se încheie și evaluarea finală se apropie.
+Cursul "Train the trainers" se încheie și evaluarea finală se apropie.
 
 Ajutați juriul scriind un program care să calculeze **scorul mediu** al **fiecărei prezentări** făcute de către un antrenor și **media tuturor acestora**.
 
 ## Intrare
 - Pe primul rând al consolei citiți numărul de persoane din juriu - **n** - un număr întreg în intervalul \[1 ... 20 \]
-- Apoi, pe o linie separată, citiți numele prezentării - **Șir**
+- Apoi, pe o linie separată, citiți numele prezentării - **șir**
 - Pentru fiecare prezentare, liniile următoare de intrare vor furniza note de la fiecare membru al juriului - numere reale în intervalul \[2.00 ... 6.00 \]
 
 ## Ieșire
