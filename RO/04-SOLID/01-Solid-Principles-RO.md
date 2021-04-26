@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Prezentare generală a principiilor SOLID
+# Prezentare Generală a Principiilor SOLID
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/RO/interactive-java-oop-advanced-s.o.l.i.d-3-5-solid-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

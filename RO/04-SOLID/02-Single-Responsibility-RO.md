@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Responsabilitate unică
+# Responsabilitate Unică
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/RO/interactive-java-oop-advanced-s.o.l.i.d-6-8-single-responsibility-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

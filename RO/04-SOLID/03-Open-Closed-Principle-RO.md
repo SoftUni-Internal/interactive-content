@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Principiul deschis-închis
+# Principiul Deschis-Închis
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/RO/interactive-java-oop-advanced-s.o.l.i.d-9-12-open-closed-principle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -189,7 +189,7 @@ Aplicarea acestui principiu, de asemenea, **reduce riscul introducerii de noi er
 
 [slide hideTitle]
 
-# Principiu deschis-închis - Soluții
+# Principiu Deschis-Închis - Soluții
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/RO/interactive-java-oop-advanced-s.o.l.i.d-14-ocp-solutions-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

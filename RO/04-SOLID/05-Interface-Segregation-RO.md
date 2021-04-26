@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Segregarea interfaței
+# Segregarea Interfaței
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/RO/interactive-java-oop-advanced-s.o.l.i.d-20-21-isp-interface-segregation-principle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -22,7 +22,7 @@ Fiecare interfață separată ar trebui să izoleze comportamentul codului celor
 
 [slide hideTitle]
 
-# Interfețe grase
+# Interfețe Grase
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/RO/interactive-java-oop-advanced-s.o.l.i.d-22-fat-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -72,7 +72,7 @@ Să vedem câteva soluții peotențiale la acest lucru.
 
 [slide hideTitle]
 
-# Interfețe grase - Consecințe
+# Interfețe Grase - Consecințe
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/RO/interactive-java-oop-advanced-s.o.l.i.d-23-fat-interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -92,7 +92,7 @@ Când vedem o interfață cu mai mult de 5-6 membri, ar trebui să vedem dacă n
 
 [slide hideTitle]
 
-# Cum să aplicăm principiul segregării interfeței (ISP)
+# Cum să Aplicăm Principiul Segregării Interfeței (ISP)
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/RO/interactive-java-oop-advanced-s.o.l.i.d-24-how-to-isp-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -106,7 +106,7 @@ Aplicarea **principiului responsabilității unice** alături de ISP vă va ajut
 
 [slide hideTitle]
 
-# Interfețe coezive
+# Interfețe Coezive
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/RO/interactive-java-oop-advanced-s.o.l.i.d-25-cohesive-interfaces-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

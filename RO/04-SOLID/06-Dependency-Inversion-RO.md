@@ -1,8 +1,8 @@
-# Inversiunea  dependenței
+# Inversiunea  Dependenței
 
 [slide hideTitle]
 
-# Principiul inversiunii dependenței (DIP)
+# Principiul Inversiunii Dependenței (DIP)
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/RO/interactive-java-oop-advanced-s.o.l.i.d-26-27-dependency-inversion-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -66,7 +66,7 @@ Codul de mai sus este o încălcare a **principiului inversiunii dependenței**.
 
 [slide hideTitle]
 
-# Soluție de inversare a dependenței
+# Soluție de Inversare a Dependenței
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/RO/interactive-java-oop-advanced-s.o.l.i.d-31-dependency-inversion-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -139,7 +139,7 @@ De asemenea, înseamnă că `Button` va putea **controla obiectele** care **nu a
 
 [slide hideTitle]
 
-# Exemple de dependență
+# Exemple de Dependență
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/RO/interactive-java-oop-advanced-s.o.l.i.d-32-dependency-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -184,7 +184,7 @@ Există 3 tipuri de injecție de dependență.
 
 [slide hideTitle]
 
-# Injecția constructorului
+# Injecția Constructorului
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/RO/interactive-java-oop-advanced-s.o.l.i.d-34-constructor-injection-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -251,7 +251,7 @@ public class Copy {​
 
 [slide hideTitle]
 
-# Injecția parametrilor
+# Injecția Parametrilor
 
 Acest tip de injecție sugerează injectarea dependențelor prin parametrii metodei.
 
@@ -281,7 +281,7 @@ public class Copy {​
 
 Există o diferență între straturile de programare tradiționale și straturile de inversare a dependenței.
 
-## Programare tradițională
+## Programare Tradițională
 
 - Modulele **de nivel înalt** utilizează module **de nivel scăzut**
 
