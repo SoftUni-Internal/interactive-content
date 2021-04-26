@@ -18,7 +18,7 @@ Acest șablon construiește designul prin identificarea unui mod simplu de a efe
 
 [slide hideTitle]
 
-# Șablonul de fațadă
+# Șablonul de Fațadă
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/09-Design-Pattern/RO/Java-OOP-Advanced-Design-Patterns-24-25-27-facade-pattern-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
