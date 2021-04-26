@@ -966,7 +966,7 @@ This is the code skeleton of a calculator program (like the **Calculator** app i
 
 The program accepts numbers and operation commands from the console and executes them with the numbers.
 
-The numbers are positive integers, while the operations can be single symbols (e.g. the asterisk symbol '*' means multiplication), or strings of characters (e.g. the operation "**end**" stops the program and prints out the result).
+The numbers are positive integers, while the operations can be single symbols (e.g. the asterisk symbol "\*" means multiplication), or strings of characters (e.g. the operation "**end**" stops the program and prints out the result).
 
 Operations are executed immediately after they receive all ncessary operands. 
 
@@ -1009,7 +1009,9 @@ There will always be at least 1 **ms** operation before any **mr** operation.
 
 There will be no more **mr** operations than the preceding ms operations. 
 
-There will be no ms operation following an operation expecting a value (e.g. **3 * ms 4** is not a valid input, but **3 ms * 4** is). There will never be an invalid series of operations (e.g. **3 / / 4**, or **3 * * 4**, etc.)
+There will be no ms operation following an operation expecting a value (e.g. **3 * ms 4** is not a valid input, but **3 ms * 4** is). 
+
+There will never be an invalid series of operations (e.g. **3 / / 4**, or **3 * * 4**, etc.)
 
 The first **40%** of the tests will NOT contain **ms** or **mr** operations.
 

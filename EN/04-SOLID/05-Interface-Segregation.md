@@ -14,7 +14,7 @@ It achieves that by **dividing the software into multiple, independent parts**.
 
 We aim to have many **smaller interfaces** rather than a single large interface. 
 
-The larger a piece of code is -  the more **difficult to deliver it to clients**. 
+The larger a piece of code is - the more **difficult to deliver it to clients**. 
 
 Each separate interface should isolate non-directly relatable to the other interfaces code behavior.
 

@@ -144,8 +144,8 @@ Test if the hero gains XP when a target dies.
 To do this, you need to:
 - Make the `Hero` class testable (use dependency injection)
 - Introduce interfaces for `Axe` and `Dummy`:
-  - Interface: Weapon 
-  - Interface: Target 
+  - interface: Weapon 
+  - interface: Target 
 
 Create а fake `Weapon` and а fake `Dummy` for the test.
 

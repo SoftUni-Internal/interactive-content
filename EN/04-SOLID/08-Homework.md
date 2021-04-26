@@ -37,8 +37,8 @@ A "logger" **records** the data and time (**String**) and a corresponding messag
 The library should contain the following components:
 
 - **Layouts** - define the format in which messages should be appended (e.g. **SimpleLayout** displays logs in the format "\{**date-time**\} - \{**report level**\} - \{**message**\}")
-- **Appenders** - responsible for appending the messages to ( **Console** , **File** , etc.)
-- **Loggers** - hold methods for various kinds of records ( **warnings** , **errors** , **info** , etc.)
+- **Appenders** - responsible for appending the messages to ( **Console**, **File**, etc.)
+- **Loggers** - hold methods for various kinds of records ( **warnings**, **errors**, **info**, etc.)
 
 Whenever a logger is required to **log** something, it calls uses the appropriate tool to append the message. 
 

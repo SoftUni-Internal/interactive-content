@@ -1382,7 +1382,7 @@ You will receive an unknown amount of lines until the command "**End**" is recei
 
 - "**Pet** \{**name**\} \{**birthdate**\}" for pets
  
-The input line following "end" will contain a single number representing a **specific year**.
+The input line following "**end**" will contain a single number representing a **specific year**.
 
 Print out all birthdates (of both citizens and pets) in that year in the format **day/month/year** (the order of printing does not matter).
 
@@ -4737,13 +4737,13 @@ Create 3 different string collections - **AddCollection**, **AddRemoveCollection
 
 The **AddRemoveCollection** should have:
 - An **add(String)** method - which adds an item to the **start** of the collection
-- A **remove()** method which removes the last item in the collection.
+- A **remove()** method which removes the last item in the collection
 
 The **MyListImpl** collection should have:
 - An **add(String)** method which adds an item to the **start** of the collection
 - A **remove()** method which removes the **first** element in the collection
 - A **used** field which displays the size of elements currently in the collection
-- 
+
 Create interfaces which define the collections functionality, try to model the relations between interfaces to reuse code.  
 
 Add an extra bit of functionality to the methods in the custom collections, **add** methods should return the index to which the item was added, **remove** methods should return the item that was removed.

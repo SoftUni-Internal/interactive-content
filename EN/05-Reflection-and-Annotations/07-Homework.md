@@ -471,7 +471,9 @@ Your tasks are to **instantiate** an object from his class (all with a start val
 
 Your should **not** change anything in the class itself. 
 
-The class itself is called **BlackBoxInt**. It is a wrapper for the **int** primitive. 
+The class itself is called **BlackBoxInt**. 
+
+It is a wrapper for the **int** primitive. 
 
 The methods it has are:
 
@@ -683,8 +685,8 @@ END
 You are given a small console-based project called "Barracks". 
 
 The project has two functionalities:
-- adding new units to its repository
-- printing a report with statistics about the units currently in the repository
+- Аdding new units to its repository
+- Пrinting a report with statistics about the units currently in the repository
 
 First, let us go over the original task before this project was created.
 

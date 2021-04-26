@@ -205,7 +205,9 @@ The present repository is a repository for presents that await to be crafted.
 
 - `void add(Present present)`
   - **adds** a present to be crafted
-  - every present is **unique** . Тhere will not be a present with the same name
+  - every present is **unique**
+  
+Тhere will not be a present with the same name.
 
 - `boolean remove(Present present)`
   - **removes** a present from the collection

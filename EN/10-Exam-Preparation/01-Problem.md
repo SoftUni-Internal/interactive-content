@@ -14,7 +14,7 @@
 The project will contain **model classes** and a **controller class**, which manages the **interaction** between the **peripherals**, **components**, and **computers**.
 
 
-# Setup
+## Setup
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-oop-advanced/11.Java-OOP-Advanced-Exam-Preparation-2.zip) **for these tasks.**
 
@@ -27,7 +27,7 @@ The project will contain **model classes** and a **controller class**, which man
 - Make sure you have **no public fields** anywhere
 
 
-# Description
+## Description
 
 **For this task's evaluation, logic in the methods is not included.**
 
@@ -35,7 +35,7 @@ You are provided with interfaces you need to implement their functionality in th
 
 There are the **four** types of entities present in the application: **Product**, **Component**, **Peripheral**, and **Computer**.
 
-# Product 
+## Product 
 
 The **BaseProduct** is a **base class** for **components, peripherals** and **computers**, and it **should not provide the option to be instantiated**.
 
@@ -79,7 +79,7 @@ There are several concrete types of **products**:
 - **Peripheral**
 - **Computer**
 
-# Component
+## Component
 
 The **BaseComponent** is a derived class from **BaseProduct** and a **base class** for any **components** and it **should not provide the option to be instantiated**.
 

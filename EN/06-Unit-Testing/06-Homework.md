@@ -53,7 +53,7 @@ In other words, it should store information on People.
 
 There should be two types of search methods:
 - `findById (long id)`
-- `findByUsername (String username)`.
+- `findByUsername (String username)`
 
 Each person should have their own unique **id** and a unique **username**. 
 
@@ -81,7 +81,7 @@ The database should have these methods:
 
 - `findById`
 
-  * If no user is present with this id, throw **OperationNotSupportedException**
+  * if no user is present with this id, throw **OperationNotSupportedException**
 
 ## Hint
 

@@ -20,7 +20,9 @@ The task contains interfaces, which we have to implement in the correct classes.
 
 **The tests are designed to expect exceptions, not messages!**
 
-The first interface is **Controller**. You must create a **ControllerImpl** class, which implements the interface and all its methods. 
+The first interface is **Controller**. 
+
+You must create a **ControllerImpl** class, which implements the interface and all its methods. 
 
 The constructor of **ControllerImpl** does not take any arguments. 
 

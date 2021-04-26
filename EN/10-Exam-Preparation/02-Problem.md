@@ -164,8 +164,8 @@ The method should be called **BuyBestComputer**.
 
 **Removes** the computer with: 
 (from the collection)
-- the **highest overall performance**
-- a **price, less or equal to the budget** 
+- The **highest overall performance**
+- A **price, less or equal to the budget** 
 
 
 If there are not any computers in the collection or the budget is insufficient for any computer, it throws an `IllegalArgumentException` with the message **"Can't buy a computer with a budget of** \$\{**budget**\}."
