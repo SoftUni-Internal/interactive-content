@@ -11,7 +11,7 @@
 
 - Cum se utilizează prefixul și sufixul **++** și **--**
 
-**2. Bucla For**
+**2. Bucla for**
 
 - Repetarea blocurilor de cod
 
