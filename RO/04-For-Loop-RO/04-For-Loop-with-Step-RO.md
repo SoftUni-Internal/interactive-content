@@ -5,9 +5,9 @@
 
 În această secțiune vom acorda atenție unei părți particulare și foarte importante a buclei `for`, și anume **pasul**.
 
-**Pasul** este acea **parte** a construcției buclei `for` care indică **cu cât** trebuie **să crească** sau **să scadă** valoarea **variabilei sale** principale .
+**Pasul** este acea **parte** a construcției buclei `for` care indică **cu cât** trebuie **să crească** sau **să scadă** valoarea **variabilei sale** principale.
 
-Este ultimul element al structurii declarative a buclei for.
+Este ultimul element al **structurii declarative** a buclei for.
 
 Cel mai adesea, avem **o dimensiune de** `1` și, în acest caz, în loc să scriem `i += 1` sau `i -= 1`, putem folosi o sintaxă mai scurtă: `i++` sau `i--`.
 
@@ -26,7 +26,7 @@ for (int i = 0; i < 10; i += 2) {
 }
 ```
 
-S-ar putea să dorim să avem un **pas descrescător** - `i-=` + dimensiunea pasului.
+S-ar putea să dorim să avem un **pas descrescător** - `i -=` + dimensiunea pasului.
 
 În acest caz, trebuie să fim atenți la condiția finală pentru a evita o **buclă infinită**.
 
