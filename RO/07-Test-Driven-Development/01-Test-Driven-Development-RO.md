@@ -1,8 +1,8 @@
-# Dezvoltare bazată pe testare (Test-driven development)
+# Dezvoltare Bazată pe Testare (Test-Driven Development)
 
 [slide hideTitle]
 
-# Abordări de testare a unității
+# Abordări de Testare a Unității
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/08-Test-Driven-Development/RO/Java-OOP-Advanced-Test-Driven-Development-3-4-Unit-Testing-Approaches-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -25,7 +25,7 @@ Aici intervine **abordarea bazată pe testare**.
 
 [slide hideTitle]
 
-# Abordarea prin cod si testare
+# Abordarea Prin Cod si Testare
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/08-Test-Driven-Development/RO/Java-OOP-Advanced-Test-Driven-Development-5-The-code-and-test-approach-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -41,7 +41,7 @@ Cu abordarea prin cod și testare, avem **trei** pași principali:
 
 [slide hideTitle]
 
-# Abordarea dezvoltării bazate pe testare
+# Abordarea Dezvoltării Bazate pe Testare
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/08-Test-Driven-Development/RO/Java-OOP-Advanced-Test-Driven-Development-6-the-test-driven-development-approach-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -59,7 +59,7 @@ Dezvoltarea bazată pe testare este utilizată pentru a dezvolta teste înainte 
 
 [slide hideTitle]
 
-# Dezvoltare bazată pe testare - Pași
+# Dezvoltare Bazată pe Testare - Pași
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/08-Test-Driven-Development/RO/Java-OOP-Advanced-Test-Driven-Development-7-test-driven-development-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
