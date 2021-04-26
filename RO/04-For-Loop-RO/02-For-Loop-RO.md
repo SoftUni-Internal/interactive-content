@@ -18,7 +18,7 @@ Blocul de cod poate fi explicat cu această diagramă a cazurilor de utilizare:
 
 [image assetsSrc="04-for-loop-use-case.png" /]
 
-Bucla începe cu operatorul `for` și trece prin toate valorile pentru o anumită variabilă dintr-un interval dat, de exemplu numerele de la 1 la 10 (inclusiv) și pentru fiecare valoare efectuează o serie de comenzi.
+Bucla începe cu operatorul `for` și trece prin toate valorile pentru o anumită variabilă dintr-un interval dat, de exemplu numerele de la 1 la 10 (inclusiv). Pentru fiecare valoare efectuează o serie de comenzi.
 [/slide]
 
 [slide hideTitle]
@@ -72,7 +72,7 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește numărul n de pe consolă
+* Citește numărul **n** de pe consolă
 * **Tipărește** toate numerele de la **1** la **n**
 * **Adună** toate numerele de la **1** la **n**
 * **Tipărește** suma pe consolă la final
