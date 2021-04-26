@@ -17,12 +17,12 @@
 
 **3. Operatorul Break**
 
-- Când puteți folosi operatorul **Break**
+- Când puteți folosi operatorul **break**
 
 
 **5. Bucle Infinite While**
 
-- Ce sunt **Buclele infinite** și cum să le folosiți corect
+- Ce sunt **buclele infinite** și cum să le folosiți corect
 
 **6. Exerciții Practice**
 
