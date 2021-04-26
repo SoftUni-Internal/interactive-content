@@ -8,10 +8,10 @@
 ```java 
 Scanner scanner = new Scanner(System.in);
 
-    // citirea dimensiunii litei
+    // citirea dimensiunii listei
 int n = Integer.parseInt(scanner.nextLine()); 
         
-    // inișializarea unei lite goale de întregi
+    // initializarea unei lite goale de întregi
 List<Integer> list = new ArrayList<>(); 
 
     // crearea unei bucle  for cu dimensiunea listei
