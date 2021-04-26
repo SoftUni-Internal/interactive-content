@@ -14,7 +14,7 @@ Odată ce se ajunge la 60, ora va fi incrementată cu **1**, iar minutele se vor
 
 [image assetsSrc="06-nested-loops-clock-1200.png" /]
 
-Putem reprezenta acest proces utilizând bucle `for`. Să vedem de ce avem nevoie de mai mult de o buclă for pentru a simula modul în care funcționează un ceas.
+Putem reprezenta acest proces utilizând bucle `for`. Avem nevoie de mai mult de o buclă for pentru a simula modul în care funcționează un ceas.
 
 După cum puteți vedea în exemplul bazat pe pseudocod, avem 2 bucle `for`: **cea din interior** și **cea din exterior**.
 
@@ -24,6 +24,6 @@ Cea din exterior reprezintă ora, în timp ce cea din interior e responsabilă d
 ```
 for h which is in range from 0 to 23
     for m which is in range from 0 to 59
-        print h and m in format similar to the clock
+        print h and m in a format similar to the clock
 ```
 [/slide]
