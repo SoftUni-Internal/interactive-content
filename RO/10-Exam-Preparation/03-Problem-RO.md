@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problemă: Online Shop Unit Tests
+# Problemă cu Soluție: Online Shop Unit Tests
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/Exam-Prep2/RO/interactive-java-oop-advanced-exam-preparation-2-problem-3-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
