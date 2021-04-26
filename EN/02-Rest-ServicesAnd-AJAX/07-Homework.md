@@ -26,21 +26,27 @@ Send a "**GET**" request to the link given below.
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-29.png" /]
 
+Each API has a documentation where you can see how to use it. You can find the documentation for this API [here](https://restcountries.eu/).
+
+- Try to filter only **specific fields** of the information about **Italy**. Send a **GET** request with the needed parameter to receive a response with information about the country in this form:
+
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-30.png" /]
+
+- There is a way to retrieve a response holding all the countries, which citizens speak the German language. Send a **GET** request to retrieve the information for these countries: Austria, Belgium, Germany, Holy See, Liechtenstein, Luxembourg and Switzerland but retrieve only their names and region.
+
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-31.png" /]
+
 [/slide]
 
 [slide hideTitle]
 
 # Problem: Bus Stop
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Rest-Services-And-AJAX-Homework-01.BUS-STOP.zip) **for these tasks.**
+Use the **resources** from previous task.
 
-Create a program that displays the arrival times for all of the buses by a given bus stop ID when a button is clicked.
+Perform an HTTP request that displays the arrival times for all buses by a **bus stop ID**.
 
-When the **Submit** button is clicked, the name of the bus stop appears and the list below gets filled with all of the buses that are expected and their time of arrival.
-
-Take the **value** of the input field with **ID** **stopId**.
-
-Submit a **GET** request to `https://js-applications1.firebaseio.com/businfo/{stopId}.json` \(replace the highlighted part with the correct value\) and parse the response.
+Submit a **GET** request to `http://localhost:3030/jsonstore/bus/businfo/:stopID` \(replace `:stopID` with the correct value\).
 
 You will receive a JSON object in the following format:
 
@@ -51,69 +57,13 @@ stopId: {
 }
 ```
 
-Place the name property as a text inside the div with an ID **stopName** and each bus as a list item with the text:
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-32.png" /]
 
-`Bus {busId} arrives in {time}`
-
-Replace all of the highlighted parts with the relevant value from the response.
-
-If the request is not successful or the information is not in the expected format, display **Error** as **stopName** and nothing in the list. 
-
-The list should be cleared before every request is sent.
-
-## Examples
-
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-6.png" /]
-
-```js
-<div id="stopInfo" style="width: 20em">
-   <div>
-      <label for="stopId">Stop ID: </label>
-      <input id="stopId" type="text">
-      <input id="submit" type="button" value="Check" onclick="getInfo()">
-   </div>
-   <div id="result">
-      <div id="stopName"></div>
-      <ul id="buses"></ul>
-   </div>
-</div>
-```
-
-When the button is **clicked**, the results are **displayed** in the corresponding elements:
-
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-8.png" /]
-
-```js
-<div id="stopInfo" style="width: 20em">
-   <div>...</div>
-   <div id="result">
-      <div id="stopName">Buckingham Palace</div>
-      <ul id="busses">
-         <li>Bus 4 arrives in 13 minutes</1li>
-         <li>Bus 12 arrives in 6 minutes</1li>
-         <li>Bus 18 arrives in 7 minutes</1li>
-      </ul>
-   </div>
-</div>
-```
-
-If an error occurs, the bus stop changes to **Error**:
-
-[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-10.png" /]
-
-```js
-<div id="stopInfo" style="width: 20em">
-   <div>...</div>
-   <div id="result">
-      <div id="stopName">Error</div>
-      <ul id="buses"></ul>
-   </div>
-</div>
-```
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-33.png" /]
 
 ## Hints
 
-The web host will respond with valid data to the IDs 1287, 1308, 1327, and 2334.
+The webhost will respond with valid data to the IDs 1287, 1308, 1327, and 2334.
 
 [/slide]
 
