@@ -9,11 +9,11 @@
 
 **1. Operatorii de incrementare și decrementare**
 
-- Cum se utilizează prefixul și sufixul **++** și **-**
+- Cum se utilizează prefixul și sufixul **++** și **--**
 
 **2. Bucla For**
 
-- Cum se repetă blocul de cod
+- Repetarea blocurilor de cod
 
 **3. Bucla for cu un pas special**
 
