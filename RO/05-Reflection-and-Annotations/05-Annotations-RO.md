@@ -17,8 +17,6 @@ Adnotările pot fi aplicate pentru **clase**, **câmpuri**, **metode** etc.
 
 # Utilizarea Adnotărilor
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/RO/interactive-java-oop-advanced-reflection-and-annotations-31-annotation-usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 Să vedem un exemplu:
 
 ``` java
