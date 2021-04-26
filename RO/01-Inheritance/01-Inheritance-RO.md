@@ -52,7 +52,7 @@ Respectiv, facem același lucru pentru clasa "Student", dar cu propria logică i
 [/slide]
 
 [slide hideTitle]
-# Ierarhiile de clasă
+# Ierarhiile de Clasă
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-6-class-hierarchies-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -66,7 +66,7 @@ Un analog din viața reală a **ierarhiilor de clasă** este un **arbore genealo
 
 
 [slide hideTitle]
-# Ierarhiile de clasă - Colecția Java
+# Ierarhiile de Clasă - Colecția Java
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-7-class-hierarchies-java-collection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -104,7 +104,7 @@ class Employee extends Person { … }
 
 [slide hideTitle]
 
-# Clasa derivată
+# Clasa Derivată
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-10-inheritance-derived-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -119,7 +119,7 @@ Dacă o unitate este declarată privată, ea este plasată în memorie când se 
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Single Inheritance
+# Problemă cu Soluție: Single Inheritance
 
 [video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/02-Inheritance/RO/Java-OOP-Advanced-Inheritance-17-problem-and-solution-single-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
