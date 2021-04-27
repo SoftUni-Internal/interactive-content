@@ -280,7 +280,7 @@ Test Passed!
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.lang.annotation.\*;
+import java.lang.annotation.*;
 
 public class T02_Target \{
 
