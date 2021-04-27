@@ -72,6 +72,7 @@ Finally, print the **remaining fuel** for both the car and the truck rounded **t
 [tests]
 [test open]
 [input]
+```
 Car 15 0.3
 Truck 100 0.9
 4
@@ -79,17 +80,21 @@ Drive Car 9
 Drive Car 30
 Refuel Car 50
 Drive Truck 10
+```
 [/input]
 [output]
+```
 The car travelled 9 km
 The car needs refueling
 The truck travelled 10 km
 Car: 54.20
 Truck: 75.00
+```
 [/output]
 [/test]
 [test open]
 [input]
+```
 Car 30.4 0.4
 Truck 99.34 0.9
 5
@@ -98,17 +103,21 @@ Drive Car 13.5
 Refuel Truck 10.300
 Drive Truck 56.2
 Refuel Car 100.2
+```
 [/input]
 [output]
+```
 The car needs refueling
 The car travelled 13.5 km
 The truck needs refueling
 Car: 113.05
 Truck: 109.13
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 Car 10000 0.3
 Truck 100 0.9
 10
@@ -122,8 +131,10 @@ Drive Car 0.002
 Drive Car 4000.943
 Drive Car 0
 Drive Car 0.0
+```
 [/input]
 [output]
+```
 The car travelled 1 km
 The car travelled 1.2 km
 The car travelled 1.24 km
@@ -136,10 +147,12 @@ The car travelled 0 km
 The car travelled 0 km
 Car: 4564.76
 Truck: 100.00
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 Car 15 1.1
 Truck 100 0.9
 4
@@ -147,18 +160,22 @@ Drive Car 100
 Drive Car 15.0
 Drive Car 100.2343
 Drive Car 200
+```
 [/input]
 [output]
+```
 The car needs refueling
 The car needs refueling
 The car needs refueling
 The car needs refueling
 Car: 15.00
 Truck: 100.00
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 Car 15 0.3
 Truck 100 0.9
 5
@@ -167,14 +184,18 @@ Refuel Car 100.1
 Refuel Car 10.3432
 Refuel Car 99.9939
 Refuel Car 18
+```
 [/input]
 [output]
+```
 Car: 253.44
 Truck: 100.00
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 Car 100 0.34
 Truck 100090 0.9
 8
@@ -186,8 +207,10 @@ Drive Truck 999.32
 Drive Truck 0
 Drive Truck 99.33
 Drive Truck 0.0
+```
 [/input]
 [output]
+```
 The truck travelled 1 km
 The truck travelled 2.4 km
 The truck travelled 3.77 km
@@ -198,10 +221,12 @@ The truck travelled 99.33 km
 The truck travelled 0 km
 Car: 100.00
 Truck: 94227.96
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 Car 15 0.3
 Truck 10.29 0.9
 4
@@ -209,18 +234,22 @@ Drive Truck 500
 Drive Truck 200.5
 Drive Truck 300.31345
 Drive Truck 100.10
+```
 [/input]
 [output]
+```
 The truck needs refueling
 The truck needs refueling
 The truck needs refueling
 The truck needs refueling
 Car: 15.00
 Truck: 10.29
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 Car 15 0.3
 Truck 100 0.9
 6
@@ -230,14 +259,18 @@ Refuel Truck 1.23432
 Refuel Truck 234332.32138
 Refuel Truck 94234.324
 Refuel Truck 3213.434
+```
 [/input]
 [output]
+```
 Car: 15.00
 Truck: 315294.15
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 Car 15 0.03
 Truck 100 0.9
 10
@@ -251,8 +284,10 @@ Drive Car 5.01
 Refuel Car 1.99
 Refuel Truck 0.01
 Drive Car 1
+```
 [/input]
 [output]
+```
 The car travelled 14 km
 The car needs refueling
 The car needs refueling
@@ -262,10 +297,12 @@ The car travelled 5.01 km
 The car travelled 1 km
 Car: 6.22
 Truck: 100.01
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 Car 15 0.3
 Truck 100 0.09
 10
@@ -279,8 +316,10 @@ Drive Truck 48.234
 Refuel Truck 10.965
 Drive Truck 1.009
 Drive Truck 1000000
+```
 [/input]
 [output]
+```
 The truck needs refueling
 The truck needs refueling
 The truck needs refueling
@@ -290,10 +329,12 @@ The truck travelled 1.01 km
 The truck needs refueling
 Car: 15.00
 Truck: 101.76
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 Car 15.1 0.3
 Truck 100.2 0.9
 21
@@ -318,7 +359,9 @@ Drive Car 0.000
 Drive Truck 0
 Drive Truck 0.00
 Drive Car 700.2
+```
 [/input]
+```
 [output]
 The car needs refueling
 The truck needs refueling
@@ -337,6 +380,7 @@ The truck travelled 0 km
 The car travelled 700.2 km
 Car: 67.27
 Truck: 176.18
+```
 [/output]
 [/test]
 [/tests]
