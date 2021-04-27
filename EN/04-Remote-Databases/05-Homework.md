@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Problem: Messenger
 
+Download the **resources** for these tasks [here](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Remote-Databases-Resources-New.zip).
+
 ## Working with Remote Data
 For the solution of some of the following tasks, you will need to use an up-to-date version of the local REST service, provided in the lesson’s resources archive. You can [read the documentation here](https://github.com/softuni-practice-server/softuni-practice-server).
 
@@ -169,5 +171,90 @@ The JSON body should be in the **following** format:
 By clicking on the delete button, you have to delete the book without confirmation. 
 
 To delete a book, send a **DELETE request** to: `http://localhost:3030/jsonstore/collections/books/:id`
+
+[/slide]
+
+# Problem: Book Library
+
+Your task is to implement the CRUD operations and a functionality for User Authentication.
+
+If the user is not logged in, all of the buttons should be disabled except for the \[**LOAD**\] button.
+
+By clicking it, all the catches should be loaded from the server and render them like on the picture:
+
+[image assetsSrc="Remote-Databases(27).png" /]
+
+## Load Button
+
+Pressing on the \[**Load**\] button should **list all** catches. 
+
+Applies to **all users**.
+
+## Update Button
+
+Pressing on the \[**Update**\] button should send a PUT request and **update** the catch in Firebase. 
+
+This functionality must be available **only** for the **creator of the catch**.
+
+## Delete Button
+
+Pressing on the \[**Delete**\] button should **delete the catch** both from the database and from the page. (
+   
+Again, this must be available **only** for the **creator of the catch**) 
+
+## Add Button
+
+Pressing on the \[**Add**\] button should **submit a new catch** with the values of the inputs in the fieldset with an `id` of "**addFrom**". 
+
+Only acessible for **logged in** users.
+
+## Properties
+
+Each **catch** should have:
+
+- `angler` - **string** representing the name of the person who caught the fish
+  
+- `weight` - **floating-point number** representing the weight of the fish in kilograms
+  
+- `species` - **string** representing the name of the fish species
+  
+- `location` - **string** representing the location where the fish was caught
+  
+- `bait` - **string** representing the bait used to catch the fish
+  
+- `captureTime` - **integer number** representing the time needed to catch the fish in minutes
+
+## Requests
+
+Use the following **requests** to access your data:
+
+- **List All Catches**
+  * Endpoint - `http://localhost:3030/data/catches`
+  * Method: **GET**
+  
+  
+- **Create a New Catch**
+  * Endpoint: `http://localhost:3030/data/catches` 
+  * Method: **POST**
+  * Request body (**JSON**): 
+  ```
+  {"angler":"…", "weight":…, "species":"…", "location":"…",
+   "bait":"…", "captureTime":…}
+  ```
+
+
+- **Update a Catch**
+  * Endpoint: `http://localhost:3030/data/catches/:catchId`
+  * Method: **PUT**
+  * Request body (**JSON**): 
+  ```
+  {"angler":"…", "weight":…, "species":"…", "location":"…",
+   "bait":"…", "captureTime":…}
+  ```
+
+
+- **Delete a Catch**
+  * Endpoint: `http://localhost:3030/data/catches/:catchId`
+  * Method: **DELETE**
 
 [/slide]
