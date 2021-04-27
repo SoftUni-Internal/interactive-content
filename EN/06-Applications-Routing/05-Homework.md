@@ -2,129 +2,128 @@
 
 [slide hideTitle]
 
-# Team Manager
+# Working with Remote Data
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/07-JS-Applications-Routing.zip) **for this task.**
+For the solution of some of the following tasks, you will need to use an up-to-date version of the **local REST service**, provided in the lesson's resources archive. 
 
-Create a JS application for managing teams.
+You can read the documentation [here](https://github.com/softuni-practice-server/softuni-practice-server).
 
-Use **lit-html** for rendering, `page.js` for routing and a remote database as a backend provider.
+## Implement Furniture Store
 
-Structure your work so that it is easy to manage.
+You can make requests to the following endpoints: 
 
-The example is styled using [Bootstrap](https://getbootstrap.com/).
+- Register User (POST): `http://localhost:3030/users/register`
+- Login User (POST): `http://localhost:3030/users/login`
+- Logout User (GET): `http://localhost:3030/users/logout`
 
-[/slide]
+- Create Furniture (POST): `http://localhost:3030/data/catalog`
+- All Furniture (GET): `http://localhost:3030/data/catalog`
+- Furniture Details (GET): `http://localhost:3030/data/catalog/:id`
+- Update Furniture (PUT): `http://localhost:3030/data/catalog/:id`
+- Delete Furniture (DELETE):  `http://localhost:3030/data/catalog/:id`
+- My Furniture (GET): `http://localhost:3030/data/catalog?where=_ownerId%3D%22{userId}%22`
 
-[slide hideTitle]
+## All Furniture
 
-# App Structure
+List **all furniture** inside the store. 
 
-- **Home Page**: show the relevant info, depending on the status of the user
+Display the appropriate links in the navigation bar, based on user session.
 
-- **Catalog**: a list of all registered teams
+Clicking on any of the `[Details]` buttons should **redirect to details**.
 
-- **About**: a dummy page that would hold information about the app
-
-- **Register User**
-
-- **Create Team**
-
-- **Edit Team**
-
-- **View Team Details**: a detailed page that shows all of the members of the team and management controls
-
-Create a header that is shared across all pages and place links to the relevant sections in it.
+[image assetsSrc="js-application-applocatopns-routing-furniture-store-1.png" /]
 
 [/slide]
 
 [slide hideTitle]
 
-# CRUD Operations
+# Application Users
 
-The app must support user registration, login, and logout.
+## Register User
 
-Store the user credential in the **session storage**.
+You need to create a functionality for registering new users. 
 
-Once logged in, the user is free to browse all of the registered teams and **join** or **create** a new team.
+By clicking on the `[Register]` button you have to load the registration form. 
 
-At any point, the user is able to **leave** the team that he is a member of.
+When the `[Register]` button on the form is clicked, you need to send a post request.
 
-The user can only join **one** team at a time.
+If the registration is **successful**, you can **redirect to dashboard page**.
 
-When a user **creates** a team he **automatically** joins it.
+## Login User
 
-He **cannot** create a team **again** unless he leaves the newly created team.
+If the user **has already registered**, he can login by using **the login form**. 
 
-[/slide]
+After a **successful** login, the user should be **redirected to dashboard page**. 
 
-[slide hideTitle]
-# Entity Structure
+Save the returned token in the session storage and send it with every request.
 
-A **team** has a **name** and a **comment** that is displayed while browsing.
+## Logout User
 
-A **user** has a **username**.
+The **logged in user** can be **logged out by** clicking the `[Logout]` **button**. 
 
-You may create databases and entries as you see fit.
-
-A sample collection structure is as follows:
-
-```
-teams {
-    name,
-    comment
-}
-```
-
-Add a column named **teamId** to the default **users** collection, that will show which team they have joined.
-
-When determining whether a person is the owner of a team, look at the property `_acl.creator` of the team record.
+Create the functionality for this action.
 
 [/slide]
 
 [slide hideTitle]
 
-# Screenshots
+# Create Furniture
 
-Use this information as a guideline.
+[image assetsSrc="js-application-applocatopns-routing-furniture-store-2.png" /]
 
-You may style and structure your solution differently, as long as the required functionality is present.
+**Validate fields:**
+- The **make** and the **model** must be **at least 4 symbols long**
+- The year must be **between 1950 and 2050**
+- The description must be **more than 10 symbols**
+- The price must be a **positive number**
+- The image **URL is required**
+- The material is **optional**
 
-**The home page when the user is not logged in:**
+If the input is valid, you should **add the** "**is-valid**" class to the input field and **if it is invalid** - **the** "**is-invalid**" **class**.
 
-[image assetsSrc="JS-Applications-Routing-5.png" /]
+**Redirect to dashboard page if the values are valid.**
 
-**The user registration form:**
+[/slide]
 
-[image assetsSrc="JS-Applications-Routing-6.png" /]
+[slide hideTitle]
+# Furniture Details
 
-**The user login form:**
+Retrieve the **id** from the **URL** and **display** the information. 
 
-[image assetsSrc="JS-Applications-Routing-7.png" /]
+If **the logged user is the creator**, the buttons `[Edit]` and `[Delete]` should be **visible and functional**.
 
-**Home page view for a registered user:**
+[image assetsSrc="js-application-applocatopns-routing-furniture-store-3.png" /]
 
-Note that the header navigation has changed to reflect that.
+[/slide]
 
-[image assetsSrc="JS-Applications-Routing-8.png" /]
+[slide hideTitle]
 
-**Team browser**:
+# Update and Delete Furniture
 
-[image assetsSrc="JS-Applications-Routing-9.png" /]
+## Update Furniture
 
-**Create team and edit team forms are identical:**
+If the **logged in user** is **the creator**, he can edit the furniture data. 
 
-[image assetsSrc="JS-Applications-Routing-10.png" /]
+When the form is **loaded**, **all of the fields** must be **filled up** with the **information from the server**.
 
-**Team details with the option to join the team and a list of all current members:**
+The **validations** should be the same as the validations when creating a new furniture.
 
-[image assetsSrc="JS-Applications-Routing-11.png" /]
+A **PUT request** must be send.
 
-**Team management:**
+[image assetsSrc="js-application-applocatopns-routing-furniture-store-4.png" /]
 
-- If the user is a member, they can leave the team
+## Delete Furniture
 
-- If the user is the creator, they can edit it
+By clicking on the `[Delete]` button, the user needs to **confirm the deletion** (you can use an alert or another custom made notification) then the application should send a **DELETE request** to the back-end and **delete the furniture**. 
 
-- If the team does not have members, the creator can delete it
+Then **redirect** to the **dashboard page**.
+[/slide]
+
+[slide hideTitle]
+# My Furniture
+A logged-in user can see a list of their own publications by clicking on the link `[My Publications]` in the navigation bar. 
+
+Display a page similar to the main catalog (dashboard) but only show the records that are associated with the currently logged-in user.
+
+[image assetsSrc="js-application-applocatopns-routing-furniture-store-5.png" /]
 [/slide]
