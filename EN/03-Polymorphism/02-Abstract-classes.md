@@ -277,7 +277,7 @@ Create a class called **Animal**, which holds two fields:
 - **name: String**
 - **favouriteFood: String**
 
-The **Animal** class should have one abstract method **getAnimalInfo() : String**.
+The **Animal** class should have one abstract method **getAnimalInfo(): String**.
 
 create two additional classes - **Cat** and **Dog**. 
 
@@ -371,10 +371,10 @@ public class T02TestAllFieldsExists {
     @Test
     public void test() {
       haveAllFields("Animal");
-      hasMethodExplainSelf();
+      hasMethodgetAnimalInfo();
     }
 
-    private void hasMethodExplainSelf() {
+    private void hasMethodgetAnimalInfo() {
         List<Method> methods = Arrays.asList(animalClass.getDeclaredMethods());
         boolean contains = false;
         for (Method method : methods) {
@@ -383,7 +383,7 @@ public class T02TestAllFieldsExists {
             }
         }
 
-        Assert.assertTrue("Method ExplainSelf in class Animal not present",contains);
+        Assert.assertTrue("Method getAnimalInfo in class Animal not present",contains);
     }
 
     private void assertHaveAllFields(String[] classNames) {

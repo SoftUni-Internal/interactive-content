@@ -371,10 +371,10 @@ public class T02TestAllFieldsExists {
     @Test
     public void test() {
       haveAllFields("Animal");
-      hasMethodExplainSelf();
+      hasMethodgetAnimalInfo();
     }
 
-    private void hasMethodExplainSelf() {
+    private void hasMethodgetAnimalInfo() {
         List<Method> methods = Arrays.asList(animalClass.getDeclaredMethods());
         boolean contains = false;
         for (Method method : methods) {
@@ -383,7 +383,7 @@ public class T02TestAllFieldsExists {
             }
         }
 
-        Assert.assertTrue("Method ExplainSelf in class Animal not present",contains);
+        Assert.assertTrue("Method getAnimalInfo in class Animal not present",contains);
     }
 
     private void assertHaveAllFields(String[] classNames) {
