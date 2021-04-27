@@ -1658,7 +1658,6 @@ private static void print(Person person) {
 [tests]
 [test open]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -1686,17 +1685,13 @@ public class TestClasses {
                 Classes.allClasses.containsKey(className));
     }
 }
-```
 [/input]
 [output]
-```
 Test Passed!
-```
 [/output]
 [/test]
 [test open]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -1803,17 +1798,13 @@ public class TestMethods {
                 nonPrivateFieldsCount == 0);
     }
 }
-```
 [/input]
 [output]
-```
 Test Passed!
-```
 [/output]
 [/test]
 [test open]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -1861,17 +1852,13 @@ public class TestConstructors {
                 Classes.allClasses.containsKey(className));
     }
 }
-```
 [/input]
 [output]
-```
 Test Passed!
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -1915,17 +1902,13 @@ public class TestInterfaces {
         }
     }
 }
-```
 [/input]
 [output]
-```
 Test Passed!
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -2030,12 +2013,9 @@ public class TestMethodsReturnedTypes {
                 nonPrivateFieldsCount == 0);
     }
 }
-```
 [/input]
 [output]
-```
 Test Passed!
-```
 [/output]
 [/test]
 [/tests]
