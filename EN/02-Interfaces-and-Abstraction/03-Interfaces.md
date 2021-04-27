@@ -1686,6 +1686,7 @@ public class TestClasses {
                 Classes.allClasses.containsKey(className));
     }
 }
+
 [/input]
 [output]
 Test Passed!
@@ -1805,6 +1806,49 @@ Test Passed!
 [/output]
 [/test]
 [test open]
+[input]
+import org.junit.Assert;
+import org.junit.Test;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Modifier;
+import java.util.stream.Stream;
+
+public class TestEncapsulation {
+
+    private static final String CLASS_NOT_PRESENT_ERROR_MESSAGE = "Class '%s' not present";
+    private static final String HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE = "Class %s contains non private fields";
+
+    private static final String BULGARIAN = "Bulgarian";
+    private static final String EUROPEAN = "European";
+    private static final String CHINESE = "Chinese";
+
+    @Test
+    public void test() {
+        assertHasNoPrivateFields(BULGARIAN);
+        assertHasNoPrivateFields(EUROPEAN);
+        assertHasNoPrivateFields(CHINESE);
+    }
+
+    private void assertHasNoPrivateFields(String className) {
+        Assert.assertTrue(String.format(CLASS_NOT_PRESENT_ERROR_MESSAGE, className),
+                Classes.allClasses.containsKey(className));
+
+        Class cl = Classes.allClasses.get(className);
+
+        Field[] fields = cl.getDeclaredFields();
+        long nonPrivateFieldsCount = Stream.of(fields).filter(f -> !Modifier.isPrivate(f.getModifiers())).count();
+        Assert.assertTrue(
+                String.format(HAS_NON_PRIVATE_FIELDS_ERROR_MESSAGE, className),
+                nonPrivateFieldsCount == 0);
+    }
+}
+[/input]
+[output]
+Test Passed!
+[/output]
+[/test]
+[test]
 [input]
 import org.junit.Assert;
 import org.junit.Test;
@@ -2014,7 +2058,6 @@ public class TestMethodsReturnedTypes {
                 nonPrivateFieldsCount == 0);
     }
 }
-
 [/input]
 [output]
 Test Passed!
