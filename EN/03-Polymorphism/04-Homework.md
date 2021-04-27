@@ -361,8 +361,8 @@ Drive Truck 0.00
 Drive Car 700.2
 ```
 [/input]
-```
 [output]
+```
 The car needs refueling
 The truck needs refueling
 The car travelled 1 km
