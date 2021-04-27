@@ -2014,7 +2014,7 @@ public class TestMethodsReturnedTypes {
                 nonPrivateFieldsCount == 0);
     }
 }
-```
+
 [/input]
 [output]
 Test Passed!
