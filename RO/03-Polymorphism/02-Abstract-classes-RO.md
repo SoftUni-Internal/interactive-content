@@ -299,9 +299,9 @@ public static void main(String[] args) {
 # Exemplu
 | **Ieșire** |
 | --- |
-| I am Oscar and my favourite food is Whiskas. |
+| I am Oscar and my favourite food is Whiskas |
 | MEOW |
-| I am Rocky and my favourite food is Meat. |
+| I am Rocky and my favourite food is Meat |
 | BARK |
 
 [/task-description]
