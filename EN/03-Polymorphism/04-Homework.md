@@ -84,8 +84,8 @@ Drive Truck 10
 [/input]
 [output]
 ```
-The Car travelled 9 km
-The Car needs refueling
+The car travelled 9 km
+The car needs refueling
 The truck travelled 10 km
 Car: 54.20
 Truck: 75.00
