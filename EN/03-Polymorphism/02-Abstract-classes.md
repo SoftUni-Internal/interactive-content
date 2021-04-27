@@ -32,7 +32,7 @@ The main goal of an abstract class is to provide a shared implementation of comm
 [slide hideTitle]
 # Problem with Solution: Shapes
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-18-problem-and-solution-shapes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/EN/interactive-java-oop-advanced-polymorphism-18-problem-and-solution-shapes-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Shapes" timeLimit=5000 taskId="Java-OOP-Advanced-Polymorphism-Shapes" executionType="tests-execution" executionStrategy="java-project-tests"] 
 [code-upload allowedMemory="30" /]
