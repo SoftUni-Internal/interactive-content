@@ -23,7 +23,7 @@ You can make requests to the following endpoints:
 - All Furniture (GET): `http://localhost:3030/data/catalog`
 - Furniture Details (GET): `http://localhost:3030/data/catalog/:id`
 - Update Furniture (PUT): `http://localhost:3030/data/catalog/:id`
-- Delete Furniture (DELETE):  `http://localhost:3030/data/catalog/:id`
+- Delete Furniture (DELETE): `http://localhost:3030/data/catalog/:id`
 - My Furniture (GET): `http://localhost:3030/data/catalog?where=_ownerId%3D%22{userId}%22`
 
 ## All Furniture
