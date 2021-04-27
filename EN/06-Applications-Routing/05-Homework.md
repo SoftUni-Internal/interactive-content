@@ -11,6 +11,8 @@ You can read the documentation [here](https://github.com/softuni-practice-server
 
 ## Implement Furniture Store
 
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Routing.zip) **for this task.**
+
 You can make requests to the following endpoints: 
 
 - Register User (POST): `http://localhost:3030/users/register`
@@ -60,7 +62,7 @@ Save the returned token in the session storage and send it with every request.
 
 ## Logout User
 
-The ** logged-in user** can be **logged out by** clicking the `[Logout]` **button**. 
+The **logged-in user** can be **logged out by** clicking the `[Logout]` **button**. 
 
 Create the functionality for this action.
 
@@ -103,7 +105,7 @@ If **the logged user is the creator**, the buttons `[Edit]` and `[Delete]` shoul
 
 ## Update Furniture
 
-If the ** logged-in user** is **the creator**, he can edit the furniture data. 
+If the **logged-in user** is **the creator**, he can edit the furniture data. 
 
 When the form is **loaded**, **all of the fields** must be **filled up** with the **information from the server**.
 
