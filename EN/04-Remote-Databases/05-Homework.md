@@ -174,6 +174,8 @@ To delete a book, send a **DELETE request** to: `http://localhost:3030/jsonstore
 
 [/slide]
 
+[slide hideTitle]
+
 # Problem: Book Library
 
 Your task is to implement the CRUD operations and a functionality for User Authentication.
