@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Guide: Remote Databases 
 
-## Postman
+## 1. Postman
 
 Postman is an **API testing** application that sends **requests** to a **web server** and retrieves **responses**. 
 
@@ -11,7 +11,7 @@ It allows users to set up all the **headers** and **cookies** the **API** expect
 
 You can download it from [here](https://www.postman.com/downloads/). 
 
-## Firebase
+## 2. Firebase
 
 Firebase is a **mobile** and **web** development platform. 
 
@@ -31,7 +31,7 @@ Afterwards, **create a new project** and test it in order to understand how the 
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-2.png" /]
 
-### Create a collection
+### Create a Collection
 
 In section **Build** \> **Realtime Database** \> **Data**.
 
@@ -40,7 +40,7 @@ In section **Build** \> **Realtime Database** \> **Data**.
 ### Permissions
 Make sure to enable **unauthorized access** to your database. 
 
-Note that this is for **educational purposes** only and you should **NOT** do it in real apps as it is a **security hole**! 
+Note that this is for **educational purposes** only and you must **not** do this for real apps as it is a **security hole**! 
 
 After you have done that, access your data through the REST API.
 
@@ -53,6 +53,8 @@ You can find all the App Keys when you click on "Project settings".
 
 ### Accessing a Firebase REST API with Postman
 
+- **GET**: `https://testapp-fc138.firebaseio.com`
+
 Open **Postman** and make a **GET** request to retrieve all of the information in your database. 
 
 In our case that would be a list of all the available books.
@@ -63,6 +65,69 @@ In our case that would be a list of all the available books.
 
 Put the link on the "**GET**" field, and press the "**Send**" button.
 
+## 3. Backendless
+
+**Backendless** is a **BaaS** provider that makes it easy for developers to set up, use and operate a **cloud back-end** for their apps. 
+
+It holds **users** (API for creating an account) and **data collections** (API for CRUD operations).
+
+### Register
+The first thing to do is create an account in **Backendless**, followed by creating an app. 
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-6.png" /]
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-7.png" /]
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-8.png" /]
+
+### Create a User
+In order to **create a user**, click on "**Data**" > "**Users**". 
+
+Create a new user using the "**New**" button:
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-9.png" /]
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-10.png" /]
+
+### Create a Data Collection
+In order to **create a collection**, click on the **"+"** symbol right above "**APP TABLES**" in the menu.
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-11.png" /]
+
+This will open a new window where you enter the collection's name. 
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-12.png" /]
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-13.png" /]
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-14.png" /]
+
+Now we have our new collection with no data in it. 
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-15.png" /]
+
+### Create Data Columns
+Now it is time to **create** some **data columns** for our collection. 
+
+Click on the "**SCHEMA**".
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-16.png" /]
+
+We will make the example with the columns **title** and **body**. 
+
+Clicking the **"+"** button, it will open a form for us: 
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-17.png" /]
+
+We fill the form, as shown in the example. 
+
+With the "**CREATE**" button we create the column that appears like:
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-18.png" /]
+
+Here is what the new columns look like in the **data browser**: 
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-19.png" /]
 [/slide]
 
 [slide hideTitle]
