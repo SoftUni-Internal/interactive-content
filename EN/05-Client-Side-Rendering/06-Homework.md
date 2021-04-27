@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Problem: List Towns
 
-**Here is a link to the** [resources]() **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/01.List-Towns.zip) **for this task.**
 
 You are given an **input field** with a **button**. 
 
@@ -27,7 +27,7 @@ In your `attachEvents()` function you **should** attach a click event to the **b
 [slide hideTitle]
 # Problem: HTTP Status Cats
 
-**Here is a link to the** [resources]() **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/02.HTTP-Status-Cats.zip) **for this task.**
 
 Your task is to **refactor** the given **HTML** and to create a **template** to represent **each** cat **card block** on its own. 
 
@@ -54,9 +54,17 @@ You should **toggle** the button and change the text from "**Show status code**"
 [/slide]
 
 [slide hideTitle]
+# Remote Data
+
+For the solution of the following tasks, you will need to use an up-to-date version of the **local REST service**, provided in the lesson's [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Apps-Server.zip) archive. 
+
+You can read the documentation [here](https://github.com/softuni-practice-server/softuni-practice-server).
+[/slide]
+
+[slide hideTitle]
 # Problem: Fill Dropdown
 
-**Here is a link to the** [resources]() **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/03.Fill-Dropdown.zip) **for this task.**
 
 Create а functionality that **loads list items** from a remote service and displays them inside a **drop-down** menu. 
 
@@ -84,7 +92,7 @@ When creating the HTML elements, use the **_id** as option value and text as opt
 [slide hideTitle]
 # Problem: Table - Search Engine
 
-**Here is a link to the** [resources]() **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/04.Table-Search.zip) **for this task.**
 
 Create a functionality that **searches** in a **table** by a provided input. 
 
@@ -128,7 +136,7 @@ If we try to find all students who have email addresses in the **john-dan** doma
 [slide hideTitle]
 # Problem: Book Library
 
-**Here is a link to the** [resources]() **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/05.Book-Library.zip) **for this task.**
 
 Create templates for all items on the page, as you see fit. 
 
