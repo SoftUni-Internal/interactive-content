@@ -21,7 +21,16 @@ In your `attachEvents()` function you **should** attach a click event to the **b
 
 **This is how the HTML looks like:**
 
-[image assetsSrc="js-application-client-side-rendering-list-towns-2.png" /]
+```js
+<div id="root">
+   <ul>
+      <li>London</li>
+      <li>Paris</li>
+      <li>Berlin</li>
+      <li>Moscow</li>
+   </ul>
+</div>
+```
 [/slide]
 
 [slide hideTitle]
@@ -88,9 +97,9 @@ When creating the HTML elements, use the **_id** as option value and text as opt
 
 ```js
 <select id="menu">
-<option value="985d9eab-ad2e-4622-a5c8-116261fb1fd2">Rome</option>
-<option value="3987279d-ad4-4afb-8ca9-5b256ae3b298">Amsterdam</option>
-<option value="8f414b4f-ab39-4d36-bedb-2ad69da9c830">Munich</option>
+   <option value="985d9eab-ad2e-4622-a5c8-116261fb1fd2">Rome</option>
+   <option value="3987279d-ad4-4afb-8ca9-5b256ae3b298">Amsterdam</option>
+   <option value="8f414b4f-ab39-4d36-bedb-2ad69da9c830">Munich</option>
 </select>
 ```
 [/slide]
