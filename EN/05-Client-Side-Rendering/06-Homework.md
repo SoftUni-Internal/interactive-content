@@ -86,7 +86,13 @@ When creating the HTML elements, use the **_id** as option value and text as opt
 
 **This is how the rendered HTML should look like:**
 
-[image assetsSrc="js-application-client-side-rendering-fill-dropdown-2.jpg" /]
+```js
+<select id="menu">
+<option value="985d9eab-ad2e-4622-a5c8-116261fb1fd2">Rome</option>
+<option value="3987279d-ad4-4afb-8ca9-5b256ae3b298">Amsterdam</option>
+<option value="8f414b4f-ab39-4d36-bedb-2ad69da9c830">Munich</option>
+</select>
+```
 [/slide]
 
 [slide hideTitle]
@@ -128,13 +134,7 @@ For instance, if we try to find "**eva**":
 
 If we try to find all students who have email addresses in the **john-dan** domain, the expected result should be:
 
-```js
-<select id="menu">
-   <option value="985d9eab-ad2e-4622-a5c8-116261fb1fd2">Rome</option>
-   <option value="3987279d-ad4-4afb-8ca9-5b256ae3b298">Amsterdam</option>
-   <option value="8f414b4f-ab39-4d36-bedb-2ad69da9c830">Munich</option>
-</select>
-```
+[image assetsSrc="js-application-client-side-rendering-table-search-engine-4.png" /]
 
 
 [/slide]
