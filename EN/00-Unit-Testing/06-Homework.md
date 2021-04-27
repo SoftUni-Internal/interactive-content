@@ -236,7 +236,7 @@ function lookupChar(string, index) {
 
 # Hints
 
-А good first step in testing a method is usually to determine all exit conditions. 
+A good first step in testing a method is usually to determine all exit conditions. 
 
 Reading through the specification or taking a look at the implementation, we can determine three main exit conditions:
 - Returning `undefined`

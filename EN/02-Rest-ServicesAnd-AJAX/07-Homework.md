@@ -47,7 +47,7 @@ After you have done that, access your data through the REST API.
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-4.png" /]
 
 ### App Keys
-You can find all the App Keys when you click on "Project settings".
+We can find our **App Keys** by clicking on "**Project settings**" 
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-5.png" /]
 
@@ -55,9 +55,9 @@ You can find all the App Keys when you click on "Project settings".
 
 - **GET**: `https://testapp-fc138.firebaseio.com`
 
-Open **Postman** and make a **GET** request to retrieve all of the information in your database. 
+Open **Postman** and make a GET request to **retrieve** all the information in your database. 
 
-In our case that would be a list of all the available books.
+In our case that is a list of all the available books.
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-5.png" /]
 
@@ -69,7 +69,7 @@ Put the link on the "**GET**" field, and press the "**Send**" button.
 
 **Backendless** is a **BaaS** provider that makes it easy for developers to set up, use and operate a **cloud back-end** for their apps. 
 
-It holds **users** (API for creating an account) and **data collections** (API for CRUD operations).
+It holds **users** (an API for creating an account) and **data collections** (an API for CRUD operations).
 
 ### Register
 The first thing to do is create an account in **Backendless**, followed by creating an app. 
@@ -126,7 +126,7 @@ Here is what the new columns look like in the **data browser**:
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-19.png" /]
 
 ### Create Data Rows
-To create a row, click on "**New**" button. 
+To create a row, click on the "**New**" button. 
 
 This will add new element to the collection with a default value. 
 
@@ -148,7 +148,7 @@ We select the user and then click on "**ADD RELATION**":
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-22.png" /]
 
-Now we have **finished** the new row:
+We have **finished** creating the new row:
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-23.png" /]
 
@@ -230,6 +230,7 @@ You can find all the **App Keys** in **App Settings** \-\> **Security and Keys**
   X-Parse-REST-API-Key: uWY3EYOTwg6g29UvGcvINlJkw39nQWkT3NAItxET
   ```
 
+
 - **GET one**:
   * Method: **GET**
   * Endpoint: `https://parseapi.back4app.com/classes/{MyCustomClassName}/{MyCurrentObjectId}`
@@ -238,6 +239,7 @@ You can find all the **App Keys** in **App Settings** \-\> **Security and Keys**
   X-Parse-Application-Id: srhQ02mP2P2aWBMJ9sR0UlXwRd9Mh3jVM4MGkDz7
   X-Parse-REST-API-Key: uWY3EYOTwg6g29UvGcvINlJkw39nQWkT3NAItxET
   ```
+
 
 - **POST**:
   * Method: **POST**
@@ -249,6 +251,7 @@ You can find all the **App Keys** in **App Settings** \-\> **Security and Keys**
   Content-Type: application/json
   ```
   * Body: **A JSON document with the key-value pairs that represent your object's data.**
+  
 
 - **PUT**:
   * Method: **PUT**
@@ -260,6 +263,7 @@ You can find all the **App Keys** in **App Settings** \-\> **Security and Keys**
   Content-Type: application/json
   ```
   * Body: **A JSON document with the key-value pairs that represent the object's new data.**
+
 
 - **DELETE**:
   * Method: **DELETE**
@@ -279,7 +283,7 @@ You can learn more about **Back4App** by clicking on **API Reference**.
 [slide hideTitle]
 # Problem: REST Countries
 
-Download the **server and JSON files** for **all** these tasks [here](https://github.com/softuni-practice-server/softuni-practice-server).
+Download the **resources** for these tasks [here](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Apps-Rest-Services-and-AJAX-Resources.zip).
 
 ## Working with Remote Data
 For the solution of some of the following tasks, you will need to use an up-to-date version of the **local REST service**, provided in the lesson’s resources archive. 
@@ -349,8 +353,8 @@ You will receive a JSON object in the following format:
 
 ```
 stopId: {
-  name: stopName,
-  buses: { busId: time, … }
+  buses: { busId: time, … },
+  name: stopName
 }
 ```
 

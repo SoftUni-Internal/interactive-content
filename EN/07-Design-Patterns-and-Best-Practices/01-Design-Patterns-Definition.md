@@ -209,7 +209,7 @@ They are not set in stone and, if a pattern does not work for you, you can alway
 
 - Design patterns come with **consequences** and if applied **incorrectly** or without regard to how the application might change in the future, they can **cause problems**
 
-- Patterns do not provide us with а **concrete code to use**, they simply provide a possible **approach** to take when designing applications
+- Patterns do not provide us with a **concrete code to use**, they simply provide a possible **approach** to take when designing applications
 
 - They look **simple** but they have **intricacies** and can be misunderstood and applied incorrectly
 

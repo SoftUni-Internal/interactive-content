@@ -164,7 +164,7 @@ The text `Welcome back, amanda_johnson!` will be **displayed**.
 
 # Atrribute Binding
 
-We can bind expressions to а node's **attribute** and **property** values:
+We can bind expressions to a node's **attribute** and **property** values:
 
 ```js
 let cssClasses = ['main', 'important'];
