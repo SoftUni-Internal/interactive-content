@@ -4,7 +4,7 @@
 
 # Metaprogramare
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/RO/interactive-java-oop-advanced-reflection-and-annotations-3-5-6-7-reflection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/RO/interactive-java-oop-advanced-reflection-and-annotations-3-5-6-7-reflection-FIX-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metaprogramarea este o **tehnică de programare** care ne permite să creăm software care se modifică pe sine sau alt software folosind **metadate**.
 
