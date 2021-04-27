@@ -128,7 +128,13 @@ For instance, if we try to find "**eva**":
 
 If we try to find all students who have email addresses in the **john-dan** domain, the expected result should be:
 
-[image assetsSrc="js-application-client-side-rendering-table-search-engine-4.png" /]
+```js
+<select id="menu">
+   <option value="985d9eab-ad2e-4622-a5c8-116261fb1fd2">Rome</option>
+   <option value="3987279d-ad4-4afb-8ca9-5b256ae3b298">Amsterdam</option>
+   <option value="8f414b4f-ab39-4d36-bedb-2ad69da9c830">Munich</option>
+</select>
+```
 
 
 [/slide]
