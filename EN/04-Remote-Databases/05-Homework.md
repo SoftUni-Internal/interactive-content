@@ -1,173 +1,173 @@
 # Homework
 
 [slide hideTitle]
+# Problem: Messenger
 
-# Problem: Books
+## Working with Remote Data
+For the solution of some of the following tasks, you will need to use an up-to-date version of the local REST service, provided in the lesson’s resources archive. You can [read the documentation here](https://github.com/softuni-practice-server/softuni-practice-server).
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Remote-Databases-Homework-BOOKS.zip) **for this task.**
+## Your Task
+Create a JavaScript application that **records** and **displays** messages. 
 
+The user must be able to:
+- **post** a message, which contains a name and content 
+- **retrieve** all currently recorded messages
 
-The following REST services will be created automatically to access your data:
+The **URL** for the requests is: `http://localhost:3030/jsonstore/messenger`
 
-- **List All Books**
-   - endpoint: `https://[:projectId].firebaseio.com/books.json`
-   - method: **GET**
-   - headers: Basic Authorization with user credentials
-   - returns (JSON)
+When the \[**Send**\] **button** is clicked, you should create a **new object** and send a **POST request** to the given URL. 
 
-- **Create a New Book**
-   - endpoint: `https://[:projectId].firebaseio.com/books.json`
-   - method: **POST**
-   - headers: Basic Authorization with user credentials and content-type application\/json
-   - request body (JSON): `{"title":"…", "author":"…", "isbn":"…"}`
+Use the following message structure:
 
-- **Update a Book**
-   - endpoint: `https://[:project-id].firebaseio.com/books/[:bookId].json`
-   - method: **PUT**
-   - headers: Basic Authorization with user credentials and content-type `application/json`
-   - request body (JSON): `{"title":"…", "author":"…", "isbn":"…"}`
+```
+{
+  author: authorName,
+  content: msgText,
+}
+```
 
-- **Delete a Book**
-   - endpoint: `https://[:project-id].firebaseio.com/books/[:bookId].json`
-   - method: **DELETE**
-   - headers: Basic Authorization with user credentials and content-type `application/json`
+If you click on the \[**Refresh**\] **button** you should **get all** messages with a **GET request** and display them into the textarea in the following message format:
 
-Test your REST Service using **Postman**. 
+`{author}: {message}`
 
-Try to list all of the books in a **JSON format** with an **HTTP GET request** to the **REST API**.
+## Examples
 
-## List All Books
+[image assetsSrc="Remote-Databases(21).png" /]
 
-Use the skeleton provided in the resources folder. 
-
-Add an **AJAX** call that takes all of the books from your application as a JSON object and **displays** them when the page loads.
-
-## Create a Book
-
-Adds an **HTML form** with a `[Submit]` **button** for adding a new book. 
-
-When the button is **pressed**, create a new book using its **REST API** with an **AJAX request**.
-
-## Edit a Book
-
-Implement "**Edit a Book**" functionality. 
-
-Clicking on a book should **load its data** on an **HTML form**. 
-
-By **clicking** the `[Edit]` button, the **book data** should be **updated** on the **server** with an **AJAX request**.
-
-## Delete a Book
-
-Implement "**Delete a Book**" functionality. 
-
-Each book should have a `[Delete]` button. 
-
-Clicking on it should **delete the book at the server** side with an AJAX request.
-
-## Add Tags for Each Book
-
-Implement **tags** for the books. 
-
-Tags should be stored in the Book collection in a column "**tags**" as **array of strings**. 
-
-List the tags for each book. 
-
-Implement **add** \/ **edit** \/ **delete** for tags when a book is **created** \/ **updated**.
-
-[image assetsSrc="Remote-Databases(15).png" /]
+[image assetsSrc="Remote-Databases(22).png" /]
 
 [/slide]
 
 [slide hideTitle]
+# Problem: Phonebook
 
+Create a JavaScript program that can **load**, **create** and **delete** entries from a **phonebook**. 
+
+You will be given an **HTML template** to which you must **bind** the needed **functionality**.
+
+When the \[**Load**\] button is clicked, a **GET** request should be sent to the server to get all phonebook entries. 
+
+Each received entry should be in a `<li>` tag inside the `<ul>` tag with an **id of "phonebook"** in the following format: `<person>: <phone>` and a \[**Delete**\] button attached. 
+
+Pressing the \[**Delete**\] button should send a **DELETE** request to the server and delete the entry. 
+
+The received response will be an object in the following format:
+
+`{<key>:{person:<person>, phone:<phone>}, <key2>:{person:<person2>, phone:<phone2>,…}` where the `<key>` is a unique key given by the server, while `<person>` and `<phone>` are the actual values.
+
+When the \[**Create**\] button is clicked, a new **POST** request should be made to the server with the information from the **person** and **phone textboxes**. 
+
+The aforementioned textboxes should then be cleared and the phonebook should be automatically reloaded (as if the \[**Load**\] button was pressed).
+
+The data **sent** on a **POST** request should be a **valid JSON object**, containing **person** and **phone** properties. 
+
+**Example format:**
+
+```
+{
+  "person": "<person>",
+  "phone": "<phone>"
+}
+```
+
+The **URL** to which your program should make requests is: [http://localhost:3030/jsonstore/phonebook](http://localhost:3030/jsonstore/phonebook)
+
+**GET** and **POST** requests should go to `http://localhost:3030/jsonstore/phonebook`.
+
+**DELETE** requests should go to `http://localhost:3030/jsonstore/phonebook/:key`, where \:**key** is the unique key of the entry (you can find out the **key** from the key property in the **GET** request)
+
+## Screenshots:
+
+[image assetsSrc="Remote-Databases(23).png" /]
+
+[/slide]
+
+[slide hideTitle]
 # Problem: Students
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Remote-Databases-Homework-STUDENTS.zip) **for this task.**
-
-Create functionalities for creating and listing students from a database.
+Your task is to implement а functionality for creating and listing students from a database. 
 
 Create a new collection called "**students**".
 
-Each student has a/an:
-
-- **Id** - a **number**, non-empty
-- **FirstName** - a **string**, non-empty
-- **LastName** - a **string**, non-empty
-- **FacultyNumber** - a **string of numbers**, non-empty
-- **Grade** - a **number**, non-empty
-
+Each student has:
+- `FirstName` - **string**, non-empty
+- `LastName` - **string**, non-empty
+- `FacultyNumber` - **string** of numbers, non-empty
+- `Grade` - **number**, non-empty
+  
 When creating a new student, make sure you name the properties accordingly.
 
-Create at least one student to test your code.
+You will also need to extract students. 
 
-You should also need to extract the students.
+You will be given an **HTML template** with a table in it. 
 
-The given **HTML template** contains a table in it.
+Create an **AJAX request** that extracts all the students.
 
-Create an **AJAX request** that extracts all of the students.
+The URL for this task is: `http://localhost:3030/jsonstore/collections/students`
 
-Upon fetching all of the students from the database, add them to a table each on a new row **sorted in ascending order by ID**.
+## Screenshots
 
-**Use the skeleton from the provided resources.**
-
-[image assetsSrc="Remote-Databases(16).png" /]
+[image assetsSrc="Remote-Databases(24).png" /]
 
 [/slide]
 
 [slide hideTitle]
+# Problem: Book Library
 
-# Problem: Wild Wild West
+Your task is to implement the CRUD operations on a virtual book library. 
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Remote-Databases-Homework-WILD-WILD-WEST.zip) **for this task.**
+**Use the following route to retrieve all books using a GET request:**
 
-**This task is not included in the final result**.
+`http://localhost:3030/jsonstore/collections/books`
 
-Write **REST services** for a simple Western game.
+Use the provided skeleton to create the missing functionalities.
 
-Create a collection called "players". Each player having a **name**, **money**, and **bullets** to hold information about the players in the game.
+Load all books by clicking on the \[**LOAD ALL BOOKS**\] button. 
 
-- **Name** - a **string** representing the name of the current player
-- **Money** - an **integer** number representing the current player's money
-- **Bullets** - an **integer** number representing the current bullets of the player
+[image assetsSrc="Remote-Databases(25).png" /]
 
-## HTML and JS
+## Get Book 
+This functionality is not needed in this task, but you can **try it out** in Postman by sending a **GET** request to **retrieve the book** with the ID: "**d953e5fb-a585-4d6b-92d3-ee90697398a0**". 
 
-The project skeleton contains an **HTML template** and **JS files**.
+Send a **GET** request to this **URL**:
 
-The "**loadCanvas.js**" is a simple implementation for the game and your job is to **attach events** to all of the buttons and make the needed **AJAX requests**.
+`http://localhost:3030/jsonstore/collections/books/:id`
 
-When the page is loaded, a **GET** request should be sent to the server to get all of the players and load them in the div with ID **players**.
+## Create Book
+Create a functionality for creating a new book when the \[**Submit**\] button is clicked. 
 
-An example entry is left in the HTML to demonstrate the representation of a player and their placement.
+Before sending the request, validate the fields (make sure that they are not empty). 
 
-Whenever the `[Save]` button is pressed, the progress of the current player, if any should be saved.
+To **create** a book, you have to send a **POST** request to the database and the JSON body should be in the **following** format: 
 
-Use a **PUT** request to update the data on the server:
+```
+{
+  "author": "New Author",
+  "title": "New Title"
+}
+```
 
-- The **canvas** and the `[Save]` and `[Reload]` buttons should be hidden
-- The **clearInterval** should be called on the "**canvas.intervarId**" property used for the main loop of the game
+## Update Book 
+When clicking on the \[**Edit**\] button of a book, fill in the information about the book in the fields, as shown here:
 
-Whenever the `[Reload]` button is pressed, the player's money should be **reduced by 60** and their bullets should be **set to 6**.
+[image assetsSrc="Remote-Databases(26).png" /]
 
-Whenever the `[Add Player]` button is pressed, a new Player with the specified name, should be created and the players should be displayed with the newly created player.
+The HTTP command **"PUT" modifies** an existing HTTP **resource**. 
 
-Each new player **starts** with **500 Money** and **6 bullets**.
+The URL is: `http://localhost:3030/jsonstore/collections/books/:id`
 
-Pressing the `[Play]` button on a player should:
+The JSON body should be in the **following** format:
 
-- Call the `[Save]` button
-- Display the **canvas**, `[Save]` and `[Reload]` buttons
-- Call the `loadCanvas()` function from the "**loadCanvas.js**" file
-- Pass to it the **new player** as an **object**, containing those properties name, money, and bullets
+```
+{
+  "author": "Changed Author",
+  "title": "Changed Title"
+}
+```
 
-When a player's `[Delete]` button is pressed, the player should be deleted, both from the HTML and the server.
+## Delete Book 
+By clicking on the delete button, you have to delete the book without confirmation. 
 
-**First Example:**
-
-[image assetsSrc="Remote-Databases(17).png" /]
-
-**Second Example:**
-
-[image assetsSrc="Remote-Databases(18).png" /]
+To delete a book, send a **DELETE request** to: `http://localhost:3030/jsonstore/collections/books/:id`
 
 [/slide]

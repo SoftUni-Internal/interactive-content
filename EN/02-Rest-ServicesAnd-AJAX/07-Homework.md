@@ -278,6 +278,7 @@ You can find all the **App Keys** in **App Settings** \-\> **Security and Keys**
 You can learn more about **Back4App** by clicking on **API Reference**.
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-35.png" /]
+
 [/slide]
 
 [slide hideTitle]
