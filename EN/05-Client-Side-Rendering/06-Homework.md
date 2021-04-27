@@ -43,13 +43,13 @@ You should **toggle** the button and change the text from "**Show status code**"
 
 ## Screenshots
 
-[image assetsSrc="js-application-client-side-rendering-http-status-cats-1.png" /]
+[image assetsSrc="js-application-client-side-rendering-http-status-cats-1.jpg" /]
 
 **This is how "Show status code"/"Hide status code" looks like:**
 
-[image assetsSrc="js-application-client-side-rendering-http-status-cats-2.png" /]
+[image assetsSrc="js-application-client-side-rendering-http-status-cats-2.jpg" /]
 
-[image assetsSrc="js-application-client-side-rendering-http-status-cats-3.png" /]
+[image assetsSrc="js-application-client-side-rendering-http-status-cats-3.jpg" /]
 
 [/slide]
 
@@ -78,7 +78,7 @@ When creating the HTML elements, use the **_id** as option value and text as opt
 
 **This is how the rendered HTML should look like:**
 
-[image assetsSrc="js-application-client-side-rendering-fill-dropdown-2.png" /]
+[image assetsSrc="js-application-client-side-rendering-fill-dropdown-2.jpg" /]
 [/slide]
 
 [slide hideTitle]
@@ -142,7 +142,7 @@ The first task is to send a "**GET**" request to extract all books when the butt
 
 To extract the data from the API, send a request to the following URL: `http://localhost:3030/jsonstore/collections/books`
 
-[image assetsSrc="js-application-client-side-rendering-book-library-1.png" /]
+[image assetsSrc="js-application-client-side-rendering-book-library-1.jpg" /]
 
 ## Create Book
 
@@ -169,7 +169,7 @@ Send a "**GET**" request to the following URL:
 ## Update Book 
 By clicking the edit button of a book, display the form with **id** "**edit-form**" and populate its fields with the information from the selected book:
 
-[image assetsSrc="js-application-client-side-rendering-book-library-2.png" /]
+[image assetsSrc="js-application-client-side-rendering-book-library-2.jpg" /]
 
 The HTTP command "**PUT**" modifies an existing HTTP **resource**. 
 
