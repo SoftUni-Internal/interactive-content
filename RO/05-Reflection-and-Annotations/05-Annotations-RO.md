@@ -4,6 +4,7 @@
 
 # Ce Reprezintă Adnotările 
 
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/RO/interactive-java-oop-advanced-reflection-and-annotations-29-30-annotation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Adnotările sunt un tip de **metadate** pe care le puteți insera în codul dvs. Java.
 
@@ -16,6 +17,8 @@ Adnotările pot fi aplicate pentru **clase**, **câmpuri**, **metode** etc.
 [slide hideTitle]
 
 # Utilizarea Adnotărilor
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/06-Reflection/RO/interactive-java-oop-advanced-reflection-and-annotations-31-annotation-usage-FIX-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Să vedem un exemplu:
 
