@@ -96,11 +96,7 @@ In order to **create a collection**, click on the **"+"** symbol right above "**
 
 This will open a new window where you enter the collection's name. 
 
-[image assetsSrc="JS-Applications-Remote-Databases-Guide-12.png" /]
-
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-13.png" /]
-
-[image assetsSrc="JS-Applications-Remote-Databases-Guide-14.png" /]
 
 Now we have our new collection with no data in it. 
 
@@ -121,13 +117,163 @@ Clicking the **"+"** button, it will open a form for us:
 
 We fill the form, as shown in the example. 
 
-With the "**CREATE**" button we create the column that appears like:
+Using the "**CREATE**" button, we create the column:
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-18.png" /]
 
 Here is what the new columns look like in the **data browser**: 
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-19.png" /]
+
+### Create Data Rows
+To create a row, click on "**New**" button. 
+
+This will add new element to the collection with a default value. 
+
+We can change it by entering the new value in the input box.
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-20.png" /]
+
+For example, we can enter "**Title1**". 
+
+Then, click on the **ownerId** input box: 
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-21.png" /]
+
+It will load a window in which we can choose a user. 
+
+This user will be assigned as an owner of the current element of the collection.
+
+We select the user and then click on "**ADD RELATION**": 
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-22.png" /]
+
+Now we have **finished** the new row:
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-23.png" /]
+
+### App Keys
+The **App ID** and the **JS API key** of your app are located on the main page – **Dashboard**.
+
+### Postman and Backendless
+Create a **Backendless** collection. 
+
+Open Postman and create a **GET** request to **read the information** inside the **collection**.
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-24.png" /]
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-25.png" /]
+
+## 4. Back4App
+**Back4App** is a low-code **backend for building modern apps**. 
+
+It can be used to **store** and **query relational data** on the cloud. 
+
+It can be made accessible over **GraphQL** and **REST** with a scalable, open-source backend, based on the Parse Platform.
+
+### Register
+The first thing to do is create an account in **Back4App**.
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-26.png" /]
+
+### Create a collection (Class)
+In order to **create** a new **collection (Class)** you must click on the **"Create a Class" button** (or "**Create your first class**").
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-27.png" /]
+
+This will open a **new window**. 
+
+Here, you should choose the **type** of the collection and write its **name**.
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-28.png" /]
+
+Now we have our first collection, which is currently empty.
+
+You can **add** new **columns** to it, as well as new **rows**. 
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-29.png" /]
+
+Let us try to add **name** and **capital** columns.
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-30.png" /]
+
+Now you can add **countries** to this collection (in the form of **rows**). 
+
+The first **four** columns are **automatically filled** - you do not need to fill them.
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-31.png" /]
+
+### Collection Permissions
+This **collection is public** by default and can be accessed from everyone who has the App-ID and API-key.
+
+You can **change the permissions** for the collections:
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-32.png" /]
+
+In the newly opened window, you can choose the permissions you need.
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-33.png" /]
+
+### App Keys
+You can find all the **App Keys** in **App Settings** \-\> **Security and Keys**.
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-34.png" /]
+
+### Requests (CRUD operations)
+
+- **GET all**:
+  * Method: **GET**
+  * Endpoint: `https://parseapi.back4app.com/classes/{MyCustomClassName}`
+  * Headers: 	
+  ```
+  X-Parse-Application-Id: srhQ02mP2P2aWBMJ9sR0UlXwRd9Mh3jVM4MGkDz7
+  X-Parse-REST-API-Key: uWY3EYOTwg6g29UvGcvINlJkw39nQWkT3NAItxET
+  ```
+
+- **GET one**:
+  * Method: **GET**
+  * Endpoint: `https://parseapi.back4app.com/classes/{MyCustomClassName}/{MyCurrentObjectId}`
+  * Headers: 	
+  ```
+  X-Parse-Application-Id: srhQ02mP2P2aWBMJ9sR0UlXwRd9Mh3jVM4MGkDz7
+  X-Parse-REST-API-Key: uWY3EYOTwg6g29UvGcvINlJkw39nQWkT3NAItxET
+  ```
+
+- **POST**:
+  * Method: **POST**
+  * Endpoint: `https://parseapi.back4app.com/classes/{MyCustomClassName}`
+  * Headers: 	
+  ```
+  X-Parse-Application-Id: srhQ02mP2P2aWBMJ9sR0UlXwRd9Mh3jVM4MGkDz7
+  X-Parse-REST-API-Key: uWY3EYOTwg6g29UvGcvINlJkw39nQWkT3NAItxET
+  Content-Type: application/json
+  ```
+  * Body: **A JSON document with the key-value pairs that represent your object's data.**
+
+- **PUT**:
+  * Method: **PUT**
+  * Endpoint: `https://parseapi.back4app.com/classes/{MyCustomClassName}/{MyCurrentObjectId}`
+  * Headers: 	
+  ```
+  X-Parse-Application-Id: srhQ02mP2P2aWBMJ9sR0UlXwRd9Mh3jVM4MGkDz7
+  X-Parse-REST-API-Key: uWY3EYOTwg6g29UvGcvINlJkw39nQWkT3NAItxET
+  Content-Type: application/json
+  ```
+  * Body: **A JSON document with the key-value pairs that represent the object's new data.**
+
+- **DELETE**:
+  * Method: **DELETE**
+  * Endpoint: `https://parseapi.back4app.com/classes/{MyCustomClassName}/{MyCurrentObjectId}`
+  * Headers: 	
+  ```
+  X-Parse-Application-Id: srhQ02mP2P2aWBMJ9sR0UlXwRd9Mh3jVM4MGkDz7
+  X-Parse-REST-API-Key: uWY3EYOTwg6g29UvGcvINlJkw39nQWkT3NAItxET
+  ```
+
+### Documentation
+You can learn more about **Back4App** by clicking on **API Reference**.
+
+[image assetsSrc="JS-Applications-Remote-Databases-Guide-35.png" /]
 [/slide]
 
 [slide hideTitle]
