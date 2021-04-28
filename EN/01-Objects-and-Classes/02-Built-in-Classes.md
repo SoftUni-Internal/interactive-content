@@ -206,7 +206,7 @@ System.out.println(isValid);
 [slide hideTitle]
 # Problem with Solution: Randomize Words
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-10-problem-and-solution-randomize-words-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/java-fundamentals-objects-and-classes-10-problem-and-solution-randomize-words-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Description
 You will be given a **string** that will contain words separated by a single space.
@@ -322,7 +322,7 @@ System.out.println(number);
 [slide hideTitle]
 # Problem with Solution: Sum Big Numbers
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-problem-and-solution-sum-big-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/java-fundamentals-objects-and-classes-problem-and-solution-sum-big-numbers-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum Big Numbers" taskId="java-fund-2-Objects-and-Classes-lab-Sum-Big-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -439,7 +439,7 @@ Print out their sum.
 [slide hideTitle]
 # Problem with Solution: Big Factorial
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/interactive-java-fundamentals-objects-and-classes-12-problem-and-solution-big-factorial-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/EN/java-fundamentals-objects-and-classes-12-problem-and-solution-big-factorial-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Big Factorial" taskId="java-fund-2-Objects-and-Classes-lab-Big-Factorial" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
