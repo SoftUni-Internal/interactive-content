@@ -21,17 +21,12 @@ We can define an application as a **Multi Page** when the **reloaded**.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-5-Multi-page-applications-Pros-and-Cons-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Pros**:
 
-- They perform very well in **search engines**
+|**Pros**|**Cons**|
+|---|---|
+|They perform very well in **search engines**|They are **complex to develop**|
+|They provide a **visual map** of the application when shared through a link in social media|The Front-End and the Back-End are **coupled**|
 
-- They provide a **visual map** of the application when shared through a link in social media
-
-**Cons**:
-
-- They are **complex to develop**
-
-- The Front-End and the Back-End are **coupled**
 
 [/slide]
 
@@ -43,11 +38,13 @@ We can define an application as a **Multi Page** when the **reloaded**.
 
 **SPA** is an abbreviation for **Single-Page Application**.
 
-They are an evolution of the **Multi Page Application**.
+The **Single-Page Application**:
 
-The **SPA dynamically updates** the page content, instead of **refreshing** it.
+- Is an evolution of the **Multi Page Application**
 
-They **re-render** the content in response to the user's actions.
+- **Dynamically updates** the page content, instead of **refreshing** it
+
+- **Re-render** the content in response to the user's actions
 
 **SPA**s use **HTML5**, **CSS**, and **AJAX** to create a fluid and responsive user interface operated by the user.
 
@@ -69,26 +66,13 @@ Location-based **SPAs** need a special object called **Router**.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-8-Single-page-applications-Pros-and-Cons-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Pros**:
 
-- They are a lot faster
-
-- They load all of the needed scripts at **once**
-
-- With SPAs, we can use the browser **history**
-
-- They provide better **UX**
-
-**Cons**:
-
-- They are not good at **Search engine optimization (SEO)** 
-
-   * the solution is the **server-side rendering**
-
-- They provide a **single sharing link**
-
-- Less secure if stored in the Front-End 
-
+|**Pros**|**Cons**|
+|---|---|
+|They are a lot faster.|They are not good at **Search engine optimization (SEO)**: the solution is the **server-side rendering** |
+|They load all of the needed scripts at **once**.|They provide a **single sharing link**|
+|With SPAs, we can use the browser **history**.|Less secure if stored in the Front-End |
+|They provide better **UX**.||
 
 [/slide]
 
