@@ -4,6 +4,9 @@
 
 # Problem: Forecaster
 
+[**Get Weather**]
+
+
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Asynchronous-Programming-Homework-01.Forecaster.zip) **for this task.**
 
 Create a program that **requests** a weather report **from a server** and **displays** it to the user.
