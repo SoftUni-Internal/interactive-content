@@ -14,16 +14,16 @@ Authenticated users should be able to access the links to the "**All Listings**"
 
 **Guest** navigation example:
 
-[image assetsSrc="js-application-cartube-workshop-8.png" /]
+[image assetsSrc="js-application-cartube-workshop-8.gif" /]
 
 **User** navigation example: 
 
-[image assetsSrc="js-application-cartube-workshop-9.png" /]
+[image assetsSrc="js-application-cartube-workshop-9.gif" /]
 
 ## Home Page
 All users should be welcomed by the "**Home page**", where they could redirect to the "**Listings**" view. 
 
-[image assetsSrc="js-application-cartube-workshop-12.png" /]
+[image assetsSrc="js-application-cartube-workshop-12.gif" /]
 
 [/slide]
 
@@ -42,7 +42,7 @@ The Login page contains a form for authenticating users.
 
 By providing a **username** and **password**, the app should log in a user in the system if there are no empty **fields** nor incorrect data. 
 
-[image assetsSrc="js-application-cartube-workshop-10.png" /]
+[image assetsSrc="js-application-cartube-workshop-10.gif" /]
 
 Send the following **request** to perform a login: 
 ```
@@ -72,7 +72,7 @@ The "**Register page**" contains a form for the registration of a new user.
 
 By providing a **username** and **password**, the app should register a new user in the system if there are no empty **fields** nor incorrect data. 
 
-[image assetsSrc="js-application-cartube-workshop-11.png" /]
+[image assetsSrc="js-application-cartube-workshop-11.gif" /]
 
 Send the following request to perform a registration: 
 ```
@@ -107,11 +107,11 @@ This page displays a list of all listings in the system.
 
 Clicking on the **details** button in the cards leads to the details page of the selected listing. 
 
-[image assetsSrc="js-application-cartube-workshop-13.png" /]
+[image assetsSrc="js-application-cartube-workshop-13.gif" /]
 
 If there are no listings, the following view should be displayed: 
 
-[image assetsSrc="js-application-cartube-workshop-14.png" /]
+[image assetsSrc="js-application-cartube-workshop-14.gif" /]
 
 Send the following **request** to read the list of ads: 
 
@@ -135,7 +135,7 @@ The Create page is available to logged-in users.
 
 It contains a form for creating new listings. Check if all the fields are filled before sending the request. 
 
-[image assetsSrc="js-application-cartube-workshop-15.png" /]
+[image assetsSrc="js-application-cartube-workshop-15.gif" /]
 
 To create a listing, send the following **request**: 
 
@@ -176,7 +176,7 @@ Clicking on the **Details** link in the **car ad** should **display** the "**Det
 
 If the currently logged-in user is the creator of the listing, the "**Edit**" and "**Delete**" buttons should be displayed. 
 
-[image assetsSrc="js-application-cartube-workshop-16.png" /]
+[image assetsSrc="js-application-cartube-workshop-16.gif" /]
 
 Send the following request to read a single listing: 
 ```
@@ -204,7 +204,7 @@ It contains a form with input fields for all relevant properties.
 
 Check if all the fields are filled before you send the request. 
 
-[image assetsSrc="js-application-cartube-workshop-17.png" /]
+[image assetsSrc="js-application-cartube-workshop-17.gif" /]
 
 To edit a listing, send the following **request**: 
 
@@ -269,11 +269,11 @@ Upon success, **redirect** the user to the "**All Listings**" page.
 
 This page displays a list of all listings made by the current user.  
 
-[image assetsSrc="js-application-cartube-workshop-18.png" /]
+[image assetsSrc="js-application-cartube-workshop-18.gif" /]
 
 If there are no listings, the following view should be displayed: 
 
-[image assetsSrc="js-application-cartube-workshop-19.png" /]
+[image assetsSrc="js-application-cartube-workshop-19.gif" /]
 
 Send the following **request** to read the list of ads: 
 
@@ -297,11 +297,11 @@ The service will return an array of listings.
 
 The Search page allows users to filter listings by their production year. It contains an input field and, upon submitting a query, a list of all matching listings. 
 
-[image assetsSrc="js-application-cartube-workshop-20.png" /]
+[image assetsSrc="js-application-cartube-workshop-20.gif" /]
 
 If there are no results, the following view should be displayed: 
 
-[image assetsSrc="js-application-cartube-workshop-21.png" /]
+[image assetsSrc="js-application-cartube-workshop-21.gif" /]
 
 Send the following **request** to read a filtered list of ads by their production year: 
 

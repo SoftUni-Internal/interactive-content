@@ -18,9 +18,17 @@ If it initialized correctly, you should see a message about the host address and
 
 // Video: 02.1: Adding more functions to api.js (login, register, logout).
 
-To send a request, use the hostname and port, shown in the initialization log and resource address and method as described in the application requirements. If the data needs to be included in the request, it must be JSON-encoded and the appropriate Content-Type header must be added. Similarly, if the service is to return data, it will be JSON-encoded. Note that some requests do not return a body and attempting to parse them will throw an exception. 
+To send a request, use the **hostname** and **port**, shown in the initialization log and resource address and method as described in the **application requirements**. 
 
-Read requests, as well as login and register requests, do not require authentication. All other requests must be authenticated. 
+If the data needs to be included in the request, it must be **JSON-encoded** and the appropriate **Content-Type** **header** must be added. 
+
+Similarly, if the service is to return data, it will be **JSON-encoded**.
+
+Note that **some requests do not return a body** and attempting to parse them will throw an exception. 
+
+**Read** requests, as well as **login** and **register** requests, do not require authentication. 
+
+All other requests must be authenticated. 
 [/slide]
 
 [slide hideTitle]

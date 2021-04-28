@@ -10,9 +10,9 @@
 
 The application allows visitors to browse through different car ads. 
 
-Users may **register** with a **username** and **password**, which allows them to create their own ads. 
+Users may **register** with a **username** and **password**, which allows them to create their ads. 
 
-Ad authors can also **edit** or **delete** their own publications at any time.
+Ad authors can also **edit** or **delete** their publications at any time.
 
 ## Technical Details
 
@@ -32,7 +32,7 @@ To **initialize** the project, execute the command `npm install` via the command
 
 Your application may use any preferred method (such as a **templating library** or manual visibility settings) to display only the selected view and to **navigate** between views upon user interaction.
 
-- **Local REST service**: a special server, which contains **sample data** and supports **user registration** and **CRUD operations** via REST requests is included with the project
+- **Local REST service**: a special server, which contains **sample data** and supports **user registration** and **CRUD operations** via REST requests are included with the project
 
 Each section of this document (where applicable) includes details about the necessary **REST endpoints**, to which **requests** must be sent, and the **shape** of the expected **request body**.
 
@@ -51,13 +51,4 @@ You may **add attributes** (such as **class** and **dataset**) to any HTML Eleme
 
 You may also add hidden elements to help you implement certain parts of the application requirements.
 [/slide]
-
-
-
-
-
-
-
-
-
 
