@@ -368,9 +368,9 @@ Create a few books using the **POST** method in **Postman**, or do that directly
 
 [image assetsSrc="Remote-Databases(14).png" /]
 
-To get all of the books, you have to use the **database URL** you received when you created the database plus the name of the **entity**, which is "**books**" plus "**.json**".
+To **get all** of the books, you have to use the **database URL** you received when you created the database, followed the name of the **entity**, which is "**books**", and the "**.json**" extension at end.
 
-The method is "**GET**".
+The method is "**GET**":
 
 - **URL:** `https://databaseURL/books.json`
 
