@@ -36,12 +36,18 @@ There are a few ways to **install** lit-html:
 To install lit-html via the **Node Package Manager**\(NPM\), we must have **Node.js** [installed](https://nodejs.org/en/).
 
 After opening a terminal in our **project directory**, type:
+[image assetsSrc="js-application-client-side-rendering-lit-html-install-1.png" /]
 
 `npm install lit-html`
+
+[image assetsSrc="js-application-client-side-rendering-lit-html-install-2.png" /]
 
 You can then use lit-html by importing it in the target file:
 
 `import {html, render} from 'lit-html'`
+
+[image assetsSrc="js-application-client-side-rendering-lit-html-install-3.png" /]
+
 
 The `html` tag function is used by lit-html to represent the **template** to be rendered.
 
@@ -94,7 +100,11 @@ It saves time by **automatically** reloading when it detects changes in your cod
 
 You can install it by typing `npm install -g live-server` in a command-line tool.
 
+[image assetsSrc="js-application-client-side-rendering-live-server-install-2.png" /]
+
 To **start the server**, type `live-server`.
+
+[image assetsSrc="js-application-client-side-rendering-live-server-install-3.png" /]
 
 By default, the server will **start running on port 8080**.
 
