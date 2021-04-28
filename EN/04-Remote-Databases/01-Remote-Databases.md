@@ -4,13 +4,13 @@
 
 # Relational Databases
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-3-relational-databases-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-3-relational-databases-FIX-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Relational databases** maintain data in **tables**, providing an **efficient and flexible** way to store and access structured information. 
 
 The tables consist of **columns** containing one or more data categories, as well as rows.
 
-**Rows**, also known as table records, are a set of data defined by the category.
+**Rows**, also known as table records, are **sets of data**, defined by the **category**.
 
 Each table has a **unique** identifier called a **primary key**, which identifies the information in the table.
 
@@ -70,7 +70,7 @@ Relational databases use indexes to quickly locate data without searching every 
 **Pros of a Non-Relational Database:**
 - Data is not confined to a structured group
 - You can perform functions that allow for a greater flexibility
-- Scale-out horizontally
+- They scale-out horizontally
 - High availability
 - Many NoSQL databases are **open source**
 

@@ -6,11 +6,18 @@
 ## In this lesson you learned:
 
 - What relational and non-relational databases are
+   * relational databases consist of rows an columns, using keys to connect to each other
+   * non-relational databases are document-based and store data in non-tabular form
 
-- What is a BaaS
+- What is a Backend-as-a-Service
+  * prewritten cloud-based backend
+  * makes the work of front-end developers easier
 
 - Firebase is a JSON-based cloud database
+  * features tools for analytics, authentication etc.
+  * highly scalable with no maintenance necessary
 
+- Backendless is a mobile Backend-as-a-Service (mBaaS) platform
 
 ## In the next lesson you will learn:
 

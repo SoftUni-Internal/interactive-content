@@ -4,16 +4,16 @@
 
 # What is Firebase?
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-7-8-what-is-a-firebase-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-7-8-what-is-a-firebase-FIX-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 **Firebase** is a toolset for building, improving, and growing your application.
 
 It gives us the tools to work with most of the services developers would typically have to build themselves.
 
-That includes features like analytics, authentication, databases, configuration, file storage, push messaging, etc. 
+That includes **features** like analytics, authentication, databases, configuration, file storage, push messaging, etc. 
 
-The services are cloud-hosted and scale with little to no effort on the developer's part.
+The services are **cloud-hosted** and scale with little to no effort on the developer's part.
 
 [/slide]
 
@@ -156,7 +156,7 @@ The response from the server will be **200 OK**.  It also will return **null**.
 
 # Firebase REST API CRUD Operations: Part Two
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-11-accessing-firebase-rest-api-with-postman-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-11-accessing-firebase-rest-api-with-postman-FIX-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The next step is to edit a book.
 
