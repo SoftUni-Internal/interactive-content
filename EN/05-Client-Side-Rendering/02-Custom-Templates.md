@@ -8,7 +8,7 @@ In **templating**, each element of the user interface is stored in a **separate 
 
 [image assetsSrc="server-side-rendering(1).png" /]
 
-A **templating engine** enables enables us to use these **template files** in our application. 
+A **templating engine** enables us to use these **template files** in our application. 
 
 **At runtime**, the templating engine **replaces variables** in the template files with actual **values**.
 

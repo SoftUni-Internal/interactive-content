@@ -6,9 +6,9 @@
 
 **Lit-html** is a simple **templating library**, part of the Polymer Project.
 
-It is built on **tagged template literals**, a JavaScript feature, introduced in EcmaScript 6.
+It is built on **tagged template literals**, a JavaScript feature, introduced in ECMAScript 6.
 
-As you may know, template literals support **multilne input**, as well as **interpolation**.
+As you may know, template literals support **multiline input**, as well as **interpolation**.
 
 Tagged template literals allow us to put a **function name** before the opening backtick.
 
@@ -233,7 +233,7 @@ The syntax for **handling events** looks like a property binding, but it has the
 const myButton = () => html`<button @click=${handleClick}>Click Here</button>`;
 ```
 
-In this example we use the `handleClick` object as an **event listener**, but we can also use a **plain function**.
+In this example, we use the `handleClick` object as an **event listener**, but we can also use a **plain function**.
 
 ```js
 let handleClick = {
@@ -271,7 +271,7 @@ html`
 
 ```
 
-Additionally, we can also use **conditional structures** such as the `if` or `switch-case` statements.
+Additionally, we can also use **conditional structures** such as the "if" or "switch-case" statements.
 
 [/slide]
 
@@ -290,7 +290,7 @@ html`
 
 ```
 
-In this example, we create an **unordered list**, and generate `li` elements by **mapping through a list** of products.
+In this example, we create an **unordered list** and generate `li` elements by **mapping through a list** of products.
 
 [/slide]
 
