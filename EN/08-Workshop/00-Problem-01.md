@@ -3,7 +3,7 @@
 
 # Overview
 
-**Here is a link to the** [resources]() **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Apps-Workshop-CarTube-NEW.zip) **for this task.**
 
 **Implement** a front-end app (SPA) for viewing and managing car **listings**. 
 
