@@ -3,7 +3,7 @@
 
 # Workshop: CarTube
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Apps-Workshop-CarTube.zip) **for this task.**
+**Here is a link to the** [resources]() **for this task.**
 
 ## Overview
 **Implement** a front-end app (SPA) for viewing and managing car **listings**. 
@@ -50,10 +50,14 @@ Changing the structure of the document may **prevent the tests** from running co
 You may **add attributes** (such as **class** and **dataset**) to any HTML Element, as well as **change** "**href**" attributes on links and add/change the **method** and **action** attributes of HTML Forms, to facilitate the correct operation of a routing library or another method of abstraction. 
 
 You may also add hidden elements to help you implement certain parts of the application requirements.
-
 [/slide]
-# Navigation Bar (5 pts)
 
-[slide hideTitle]
+
+
+
+
+
+
+
 
 
