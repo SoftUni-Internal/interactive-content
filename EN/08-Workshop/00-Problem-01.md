@@ -1,11 +1,12 @@
+# Workshop: CarTube
 
 [slide hideTitle]
+# Overview and Details
 
-# Workshop: CarTube
+## Overview
 
 **Here is a link to the** [resources]() **for this task.**
 
-## Overview
 **Implement** a front-end app (SPA) for viewing and managing car **listings**. 
 
 The application allows visitors to browse through different car ads. 

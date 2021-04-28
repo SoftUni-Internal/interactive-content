@@ -2,8 +2,9 @@
 
 [slide hideTitle]
 
-# Navigation Bar
+# Navigation Bar and Home Page
 
+## Navigation Bar
 // Video: 04.1: Home page (Navigation bar). 
 
 The navigation links should change the current page (view).
@@ -28,7 +29,9 @@ All users should be welcomed by the "**Home page**", where they could redirect t
 [/slide]
 
 [slide hideTitle]
-# Login User
+# Login and Registration
+
+## Login Page
 
 // Video: 04.2: Login + Register pages 
 
