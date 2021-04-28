@@ -292,7 +292,7 @@ Authorization occurs after your identity has been authenticated by the system, w
 
 [slide hideTitle]
 
-# Problem: All Books
+# Problem with Solution: All Books
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-All-Books-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -380,7 +380,7 @@ URL: `https://databaseURL/books.json`
 
 [slide hideTitle]
 
-# Problem: Get a Book
+# Problem with Solution: Get a Book
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-Get-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -392,7 +392,7 @@ To get a book, choose the "**GET**" method in Postman and use the following **UR
 
 [slide hideTitle]
 
-# Problem: Create Books
+# Problem with Solution: Create Books
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-Create-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -412,7 +412,7 @@ URL: `https://databaseURL/books.json`
 
 [slide hideTitle]
 
-# Problem: Patch Book
+# Problem with Solution: Patch Book
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-Patch-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -435,7 +435,7 @@ URL: `https://databaseURL/books/bookId.json`
 
 [slide hideTitle]
 
-# Problem: Change Book Author
+# Problem with Solution: Change Book Author
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-Change-Book-Author-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
