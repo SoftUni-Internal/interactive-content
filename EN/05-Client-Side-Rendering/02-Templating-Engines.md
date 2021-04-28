@@ -1,5 +1,4 @@
 # Templating Engines
-
 [slide hideTitle]
 
 # Templating Engine
