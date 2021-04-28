@@ -147,7 +147,7 @@ We then use the `split()` method that returns a string array the elements of whi
 [slide hideTitle]
 # Problem with Solution: Match Full Name
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-25-Problem-and-Solution-match-full-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/EN/04.Java-Fundamentals-Regular-Expressions-25-Problem-and-Solution-match-full-name-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Match Full Name" taskId="Java-Fundamentals-2-Regex-lab-Match-Full-Name" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -273,7 +273,7 @@ Ivan Ivanov Ivan Ivanov
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Match Numbers
+# Problem: Match Numbers
 [code-task title="Match Numbers" taskId="Java-Fundamentals-2-Regex-lab-Match-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
