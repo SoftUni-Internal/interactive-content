@@ -42,7 +42,7 @@ The Login page contains a form for authenticating users.
 
 By providing a **username** and **password**, the app should log in a user in the system if there are no empty **fields** nor incorrect data. 
 
-[image assetsSrc="js-application-cartube-workshop-10.gif" /]
+[image assetsSrc="js-application-cartube-workshop-10.jpg" /]
 
 Send the following **request** to perform a login: 
 ```

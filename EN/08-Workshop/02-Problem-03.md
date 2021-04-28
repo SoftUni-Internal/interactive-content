@@ -10,7 +10,7 @@ Note that specialized tools like **BrowserSync** may interfere with the tests.
 
 To initialize the project with its dependencies, open a terminal in the folder, containing the file **package.json** and execute the following: 
 
-npm install 
+`npm install `
 
 If you changed the section **devDependencies** of the project, the tests may not initialize properly. 
 
