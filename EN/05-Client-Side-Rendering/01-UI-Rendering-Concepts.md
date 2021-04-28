@@ -75,9 +75,7 @@ Once the needed content is **downloaded**, JavaScript **generates** the **DOM el
 
 This clear **distinction** between **logic and data** makes our code much **easier to read and work on**.
 
-So far when we add DOM elements dynamically, we used loops for manipulating the elements, which activates the so-called "**reflow**".  
-
-**Reflow** is the process for **re-calculating** the positions and geometries of **elements** in the document, for **re-rendering** some part or all of the document's content. 
+So far when we add DOM elements dynamically, we used loops for manipulating the elements, that activates the so-called "**reflow**" which is the process for **re-calculating** the positions and geometries of **elements** in the document, for **re-rendering** some part or all of the document's content. 
 
 By **reducing reflow**, we increase the application's **performance**.
 [/slide]

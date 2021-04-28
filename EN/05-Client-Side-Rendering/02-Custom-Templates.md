@@ -1,8 +1,8 @@
-# Custom Templates
+# Templating Engine
 
 [slide hideTitle]
 
-# Project Requirements
+# Templating Engine
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-11-12-Templating-Engine-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -22,10 +22,3 @@ This approach enables an **easier** and more **efficient** way to design an HTML
 
 [/slide]
 
-[slide hideTitle]
-
-# Demo: Creating a Custom Templating Engine
-
-A demonstration video will be added later.
-
-[/slide]
