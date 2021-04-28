@@ -4,6 +4,8 @@
 
 # What is lit-html?
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-15-16-What-Is-Lit-Html-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Lit-html** is a simple **templating library**, part of the Polymer Project.
 
 It is built on **tagged template literals**, a JavaScript feature, introduced in ECMAScript 6.
@@ -28,6 +30,8 @@ We will learn what the `html` tag does in a later video.
 [slide hideTitle]
 
 # Getting Started
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-17-Getting-Started-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are a few ways to **install** lit-html:
 
@@ -76,6 +80,8 @@ You can use any of the following **online editors** to **try out** lit-html:
 
 # Usage
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-18-Usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In order to use **lit-html**, you must **import** it via path:
 
 ```js
@@ -119,6 +125,8 @@ If it does not, go to **localhost:8080**.
 
 # Rendering a Template
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-19-Rendering-A-Template-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Lit-html's** two main APIs are **html** and **render**.
 
 - **html**
@@ -143,6 +151,8 @@ It accepts two parameters:
 [slide hideTitle]
 
 # Tag Functions / Tagged Templates
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-20-Tag-Functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Tagged templates** are function calls that get their arguments from a template **literal**:
 
@@ -173,6 +183,8 @@ The text `Welcome back, amanda_johnson!` will be **displayed**.
 [slide hideTitle]
 
 # Atrribute Binding
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-21-Attribute-Binding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can bind expressions to a node's **attribute** and **property** values:
 
@@ -212,6 +224,8 @@ Like displaying and hiding an **error message**, for example.
 
 # Property Binding
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-22-Property-Binding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 By putting a **period** `.` before the **property name**, we can bind to a node's **JavaScript properties**:
 
 ```js
@@ -226,6 +240,8 @@ Property bindings can also be used to **pass data**, such as a list of users, to
 [slide hideTitle]
 
 # Handling Events
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-23-Handling-Events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The syntax for **handling events** looks like a property binding, but it has the **prefix** `@` and the name of the **event** after it - `@onchange`:
 
@@ -257,6 +273,8 @@ The `capture` boolean is used to make sure that events of this type will be disp
 
 # Conditional Statements
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-24-Conditional-Statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Unlike other templating engines, like Handlebars, lit-html has **no built-in control-flow constructs**. 
 
 We can use a normal JavaScript **ternary expression** instead:
@@ -279,6 +297,8 @@ Additionally, we can also use **conditional structures** such as the "if" or "sw
 
 # List Rendering
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-25-List-Rendering-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 To **render lists**, we use `Array.map` to **transform** a list of data into multiple **templates**:
 
 ```js
@@ -297,6 +317,8 @@ In this example, we create an **unordered list** and generate `li` elements by *
 [slide hideTitle]
 
 # Directives: Classes and ClassMap
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-26-Directives-Classes-And-Classmap-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Directives** are custom **functions** that **modify how lit-html renders values**.
 
@@ -331,6 +353,8 @@ This template will be **rendered** out like this:
 
 # Directives: styles and styleMap
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-27-Directives-Styles-And-Stylemap-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 `styleMap` sets **styles** on an element using an **object** with style properties:
 
 ```js
@@ -358,6 +382,8 @@ The **rendered template** looks like this:
 [slide hideTitle]
 
 # Directives: repeat
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-28-Directives-Repeat-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `repeat` directive creates **multiple templates** from a given **collection** and **updates** them efficiently when **changes** are detected:
 
@@ -404,4 +430,10 @@ render(artists(artistInfo), element);
 
 - A **function** that returns a **template** for a single item
 
+[/slide]
+
+[slide hideTitle]
+# Demo: lit-html
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-30-Lit-Html-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 [/slide]

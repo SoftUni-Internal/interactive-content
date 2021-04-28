@@ -4,6 +4,8 @@
 
 # Rendering Concepts
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-3-4-UI-Rendering-Rendering-Concepts-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The process of **generating content dynamically** is called **rendering**.
 
 Rendering can be **performed** on the client's **browser**, as well as on a **server**.
@@ -20,6 +22,8 @@ While this method worked fine for **static** webpages, **interactivity**, which 
 [slide hideTitle]
 
 # Server-Side vs. Client-Side
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-5-Server-Side-Vs-Client-Side-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Server-side rendering** takes and renders our JavaScript code to static HTML and CSS **on the server**, sending **client-ready** HTML.
 
@@ -45,6 +49,8 @@ Once the needed content is **downloaded**, JavaScript **generates** the **DOM el
 
 # Pros and Cons of Client-Side Rendering
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-6-Pros-And-Cons-Of-Client-Side-Rendering-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Client-side rendering** brings numerous **benefits**, but also comes with some **drawbacks**.
 
 |**Benefits**|**Drawbacks**|
@@ -60,6 +66,8 @@ Once the needed content is **downloaded**, JavaScript **generates** the **DOM el
 [slide hideTitle]
 
 # What is Templating?
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-7-What-Is-Templating-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Templating** is the procedure of separating an **HTML document's structure** from the actual **content**.
 
@@ -77,6 +85,8 @@ By **reducing reflow**, we increase the application's **performance**.
 [slide hideTitle]
 
 # Templating Concepts
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-8-Templating-Concepts-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **static** parts of our webpage are stored in the form of **templates**, while the **dynamic** content, such as user data, is being stored **separately**, most often in a database.
 
@@ -100,6 +110,8 @@ Instead of doing these steps **one by one**, a templating engine is used to make
 [slide hideTitle]
 
 # Templating Benefits
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-9-Templating-Benefits-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Templates bring several **benefits**.
 
@@ -130,6 +142,8 @@ Here are the most prominent ones:
 [slide hideTitle]
 
 # Templating Best Practices
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-10-Templating-Best-Practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 These are some recommended templating practices:
 
