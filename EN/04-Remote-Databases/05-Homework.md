@@ -43,6 +43,8 @@ If you click on the \[**Refresh**\] **button** you should **get all** messages w
 [slide hideTitle]
 # Problem: Phonebook
 
+**Use the resources from the previous task.**
+
 Create a JavaScript program that can **load**, **create** and **delete** entries from a **phonebook**. 
 
 You will be given an **HTML template** to which you must **bind** the needed **functionality**.
@@ -87,6 +89,8 @@ The **URL** to which your program should make requests is: [http://localhost:303
 [slide hideTitle]
 # Problem: Students
 
+**Use the resources from the previous task.**
+
 Your task is to implement а functionality for creating and listing students from a database. 
 
 Create a new collection called "**students**".
@@ -115,6 +119,8 @@ The URL for this task is: `http://localhost:3030/jsonstore/collections/students`
 
 [slide hideTitle]
 # Problem: Book Library
+
+**Use the resources from the previous task.**
 
 Your task is to implement the CRUD operations on a virtual book library. 
 
@@ -177,6 +183,8 @@ To delete a book, send a **DELETE request** to: `http://localhost:3030/jsonstore
 [slide hideTitle]
 
 # Problem: Fisher Game
+
+**Use the resources from the previous task.**
 
 Your task is to implement the CRUD operations and a functionality for User Authentication.
 

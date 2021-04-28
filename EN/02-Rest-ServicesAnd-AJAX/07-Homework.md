@@ -406,7 +406,7 @@ The example **format** is:
 
 Use the link below to create a GET, POST, PUT, and DELETE request in **Postman**: 
 
-[REST API Example](http://dummy.restapiexample.com/)
+- [http://dummy.restapiexample.com](http://dummy.restapiexample.com/)
 
 ## GET Request
 

@@ -28,11 +28,11 @@ The logical connection between different tables is established with **foreign ke
 
 The main difference between **relational** and **non-relational** databases is how they **store their information.**
 
-**Non-relational** databases, often called **NoSQL** databases are different from traditional relational databases in that they store their data in a **non-tabular form.** 
+**Non-relational** databases, often called **NoSQL**, are different from traditional relational databases in that they store their data in a **non-tabular form.** 
 
-Non-relational databases are based on data structures **like documents.** 
+Non-relational databases are based on data structures, **like documents.** 
 
-A document can be **highly detailed** while containing a range of different **types** of information in different **formats**. 
+A document can be **highly detailed** while containing a range of distinct **types** of information in different **formats**. 
 
 This ability to organize various types of information **side-by-side** makes non-relational databases much more **flexible** than relational databases.
 
@@ -48,10 +48,12 @@ This ability to organize various types of information **side-by-side** makes non
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-5-relational-and-non-relational-pros-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Pros of a Relational Database:**
-- Data is structured into categories
+**Pros of Relational Databases:**
+- The data is structured by categories
 - They support **ACID** transactional consistency and "**JOINs**"
-- Built-in data integrity and a large eco-system
+  * **ACID** makes sure that data is properly transferred in all circumstances
+  * **JOIN** clauses enable combining rows from separate tables, based on a related column
+- Built-in data integrity and a large ecosystem
 - Relationships in this system have constraints
 - Limitless indexing
 
@@ -76,9 +78,9 @@ NoSQL databases have become popular because they **store** data in **straightfor
 
 NoSQL databases often allow developers to change the **structure of the data**.
 
-They can scale-out "**horizontally**", meaning that they run on multiple **servers** that work together, each sharing part of the load.
+They can scale-out "**horizontally**" meaning that they run on multiple **servers** that work together, each sharing part of the load.
 
-High-availability NoSQL databases are systems designed to run **without an interruption of a service.**
+High-availability NoSQL databases are systems designed to run **without an interruption of service.**
 
 Many web-based businesses require data services that are available without interruption.
 
@@ -95,5 +97,7 @@ Backend-as-a-Service or **BaaS** is a cloud service model, in which developers o
 **BaaS** vendors provide pre-written software for activities that take place on servers, such as user **authentication**, **database management**, **remote updating**, and push notifications (for mobile apps), as well as **cloud storage** and **hosting**.
 
 There are two types of BaaS: **Cloud BaaS** and **Open-source BaaS**.
+
+
 
 [/slide]
