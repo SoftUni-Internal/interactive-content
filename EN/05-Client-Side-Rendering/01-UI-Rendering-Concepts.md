@@ -47,25 +47,12 @@ Once the needed content is **downloaded**, JavaScript **generates** the **DOM el
 
 **Client-side rendering** brings numerous **benefits**, but also comes with some **drawbacks**.
 
-- **Benefits**
-
-   - **user interaction** is nearly **instant**
-
-   - data can be **shared** across multiple **views**
-
-   - **saves bandwidth** by only fetching **dynamic content**
-
-   - provides developers with a large variety of **JavaScript libraries**
-
-- **Drawbacks**
-
-   - **search engine optimization** may **suffer** if routing is **not** implemented **properly**
-
-   - websites take **longer to load** for the **first time**
-
-   - requires more **powerful hardware** to the **client-side**, since **most of the work is done there**
-
-   - requires a **library** to be **implemented**
+|**Benefits**|**Drawbacks**|
+|---|---|
+|**User interaction** is nearly **instant**.|**Search engine optimization** may **suffer** if routing is **not** implemented **properly**.|
+|Data can be **shared** across multiple **views**.|Websites take **longer to load** for the **first time**.|
+|**Saves bandwidth** by only fetching **dynamic content**.|Requires more **powerful hardware** to the **client-side**, since **most of the work is done there**.|
+|Provides developers with a large variety of **JavaScript libraries**.|Requires a **library** to be **implemented**.|
 
 [/slide]
 
