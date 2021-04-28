@@ -59,7 +59,7 @@ After, we set the **window.location.href** to the same URL but with a changed ha
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-18-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Subscribing means to create a function, which checks at a certain period if there are any changes.
+Subscribing means creating a function, which checks at a certain period if there are any changes.
 
 In our case, we attach the function to the URL.
 
@@ -123,7 +123,7 @@ This type of routing allows us to use the **hash-based** routing as intended.
 
 The History API provides access to the browser "**history**" object.
 
-We can use methods like `back()`, `forward()` and `go()` using the the "history" object. 
+We can use methods like `back()`, `forward()` and `go()` using the the "history" object. 
 
 This method allows us to have the native navigation that users want.
 
@@ -133,7 +133,7 @@ These methods can modify and add to the **history object entries**.
 
 They work in combination with the **popstate** event.
 
-If we use the `pushState()` method or the `replaceState()` method, the event listener will store a copy of the history object. 
+If we use the `pushState()` method or the `replaceState()` method, the event listener will store a copy of the history object. 
 
 [/slide]
 
@@ -153,7 +153,7 @@ This method takes three parameters.
 
    - it is ignored by most of the browser nowadays
 
-- The **URL** is the new history entry, and it must be from the **same origin** as the current URL
+- The **URL** is the new history entry, and it must be from the **same-origin** as the current URL
 
 Here is an example:
 
@@ -163,7 +163,7 @@ history.pushState({}, '', '/product/56789123');
 
 We call the `history.pushState()` method and pass the parameters.
 
-The browsers ignores the second parameter, and that is why it is an empty string.
+The browsers ignore the second parameter, and that is why it is an empty string.
 
 Before we call `pushState()`, the URL will look like this:
 
@@ -185,7 +185,7 @@ The **ReplaceState** method modifies the current entry.
 
 It takes a **State**, a **Title**, and a **URL** as parameters.
 
-The **Title** parameter will be ignored by most of the browsers.
+The **Title** parameter will be ignored by most browsers.
 
 **ReplaceState** is useful if we want to update the **state object** or the **URL**.
 

@@ -6,7 +6,7 @@
 
 ## In this lesson you learned:
 
-- **Multi Page Application** reloads the entire page when the user interacts with the app
+- **Multi-Page Application** reloads the entire page when the user interacts with the app
 
 -  **Single Page Application** dynamically updates the page content without refreshing the application
 

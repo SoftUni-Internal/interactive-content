@@ -8,13 +8,13 @@
 
 **Page.js** is a client-side router, which uses **string-to-regexp** conversion.
 
-In order to use it, we need to install the package.
+To use it, we need to install the package.
 
 We need to install it from **npm** with the following command: `npm install page`.
 
 We can pass multiple parameters to **page.js**.
 
-Defining a route is done with using **callbacks**.
+Defining a route is done by using **callbacks**.
 
 Every callback is called with a **context** and a **next** as parameters.
 
@@ -42,9 +42,9 @@ After **user.load** is ready, the **user.show** will be executed.
 [slide hideTitle]
 # Redirecting with page.js
 
-We can call `page.redirect()` to redirect.
+We can call `page.redirect()` to redirect.
 
-This method receives only the a **path** as a parameter.
+This method receives only the **path** as a parameter.
 
 It waits for the state of the current route and replaces it with a new one.
 

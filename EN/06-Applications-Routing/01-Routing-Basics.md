@@ -5,13 +5,13 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-3-4-Multi-page-applications-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Multi Page Applications** reload the entire page when a user interacts with the app.
+**Multi-Page Applications** reload the entire page when a user interacts with the app.
 
 We exchange data when a new page is **requested**.
 
 After the server returns a response, a new page is displayed in the browser.
 
-We can define an application as a **Multi Page** when the **reloaded**.
+We can define an application as a **Multi-Page** when the **reloaded**.
 
 [/slide]
 
@@ -26,7 +26,7 @@ We can define an application as a **Multi Page** when the **reloaded**.
 |---|---|
 |They perform very well in **search engines**|They are **complex to develop**|
 |They provide a **visual map** of the application when shared through a link in social media|The Front-End and the Back-End are **coupled**|
-|The application could grow in **size**, by creating more **hierarchical systems** with as many **pages** as your site needs.|It takes more effort to optimize multi-page application.|
+|The application could grow in **size**, by creating more **hierarchical systems** with as many **pages** as your site needs.|It takes more effort to optimize a multi-page application.|
 
 
 [/slide]
@@ -41,7 +41,7 @@ We can define an application as a **Multi Page** when the **reloaded**.
 
 The **Single-Page Application**:
 
-- Is an evolution of the **Multi Page Application**
+- Is an evolution of the **Multi-Page Application**
 
 - **Dynamically updates** the page content, instead of **refreshing** it
 
@@ -70,7 +70,7 @@ Location-based **SPAs** need a special object called **Router**.
 
 |**Pros**|**Cons**|
 |---|---|
-|They are a lot faster.|They are not good at **Search engine optimization (SEO)**: the solution is the **server-side rendering** |
+|They are a lot faster.|They are not good at **Search engine optimization (SEO)**: the solution is the **server-side rendering** |
 |They load all of the needed scripts at **once**.|They provide a **single sharing link**|
 |With SPAs, we can use the browser **history**.|Less secure if stored in the Front-End |
 |They provide better **UX**.||
@@ -83,9 +83,9 @@ Location-based **SPAs** need a special object called **Router**.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-9-Multi-page-application-lifecycle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Multi **Page Applications** and **Single Page Applications** have their lifecycles.
+Multi **Page Applications** and **Single Page Applications** have their lifecycles.
 
-This is the **Multi Page Application's lifecycle**: 
+This is the **Multi-Page Application's lifecycle**: 
 
 [image assetsSrc="JS-Applications-Routing.png" /]
 
@@ -97,7 +97,7 @@ Let us have a look at the **Single Page Application's** lifecycle.
 
 [image assetsSrc="JS-Applications-Routing-1.png" /]
 
-In this image, we see that on the **initial request**, the server responds with **an HTML** file. 
+In this image, we see that on the **initial request**, the server responds with **an HTML** file. 
 
 But on every other request, the response is a **JSON**. 
 
@@ -113,9 +113,9 @@ The page updates itself without refreshing, which gives the feeling for a lot fa
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-9-10-11-12-13-Multi-SPA-lifecycle-navigation-types-query-parameters-location-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There are two types of navigations: a **standard** one and a navigation using **Routing**.
+There are two types of navigations: a **standard** one and navigation using **Routing**.
 
-The standard navigation is used in the **Multi Page Applications**. 
+The standard navigation is used in the **Multi-Page Applications**. 
 
 It uses **hyperlinks** to navigate through the application.
 
@@ -129,7 +129,7 @@ We use it in **SPA** because it simulates the standard navigation without refres
 
 [image assetsSrc="JS-Applications-Routing-3.png" /]
 
-The **Routing** navigation allows us to update the URL and its the content after everything is rendered.
+The **Routing** navigation allows us to update the URL and the content after everything is rendered.
 
 It will **not trigger a reload** unless the user refreshes the page by clicking `F5`.
 
