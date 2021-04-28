@@ -96,8 +96,10 @@ Backend-as-a-Service or **BaaS** is a cloud service model, in which developers o
 
 **BaaS** vendors provide pre-written software for activities that take place on servers, such as user **authentication**, **database management**, **remote updating**, and push notifications (for mobile apps), as well as **cloud storage** and **hosting**.
 
+Using a **BaaS** drastically increases development speed, while keeping the price low.
+
+It being **serverless** is yet another advantage, because there is no need for infrastructure management.
+
 There are two types of BaaS: **Cloud BaaS** and **Open-source BaaS**.
-
-
 
 [/slide]

@@ -17,6 +17,6 @@
 - Templating concepts
 - Simple templating
 - Templating engines
-- Handlebars overview
+  * Overview of lit-html
 
 [/slide]

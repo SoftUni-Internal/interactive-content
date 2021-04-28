@@ -7,13 +7,13 @@
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-7-8-what-is-a-firebase-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Firebase is a toolset to build, improve, and grow your application.
+**Firebase** is a toolset for building, improving, and growing your application.
 
-It gives us the tools to work with a large portion of the services that developers would normally have to build themselves.
+It gives us the tools to work with most of the services developers would typically have to build themselves.
 
-This includes things like analytics, authentication, databases, configuration, file storage, push messaging, and the list goes on. 
+That includes features like analytics, authentication, databases, configuration, file storage, push messaging, etc. 
 
-The services are hosted in the cloud and scale with little to no effort on the part of the developer.
+The services are cloud-hosted and scale with little to no effort on the developer's part.
 
 [/slide]
 
@@ -25,13 +25,15 @@ The services are hosted in the cloud and scale with little to no effort on the p
 
 Here are some of the methods used when working with the database.
 
-In this example, we will be using a Book database, which has already been created for us on Firebase.
+In this example, we will be using a Book database, which has been created already for us on Firebase.
 
 **Note: You may not get the same results as shown in the examples below.** 
 
-**This is because as people experiment with the database, they can delete or create new books.**
+**This is because as other students experiment with the database, they can delete or create new books.**
 
 **This way, the database will inevitably change.**
+
+## Getting All Books
 
 Open **Postman** and create a new request. 
 
@@ -39,7 +41,7 @@ Choose the **GET** method and fort the **URL**, copy and paste the following lin
 
 `https://softuni-remotedb.firebaseio.com/.json`
 
-or use the one below, the result will be the same:
+Or use the one below, the result will be the same:
 
 `https://softuni-remotedb.firebaseio.com/books.json`
 
@@ -69,6 +71,8 @@ As a result, we get all of the books stored in the database.
 }
 ```
 
+## Getting a Single Book
+
 Next, we will retrieve a single book from the database.
 
 Choose the **GET** method and for the **URL**, copy and paste the following line into **Postman**:
@@ -77,7 +81,7 @@ Choose the **GET** method and for the **URL**, copy and paste the following line
 
 Click the **Send** button to get the response from the server.
 
-As a result, we get the book at position 1 from the book's array.
+As a result, we get the book at position **1** from the books array.
 
 ```js
 {
@@ -97,6 +101,8 @@ Click the **Send** button to get the response from the server.
 ```js
 "J.K. Rowling"
 ```
+
+## Adding a Book
 
 Now we will add a new book to the database using the **POST** method.
 
@@ -172,7 +178,7 @@ Then copy and paste the following JSON object:
 }
 ```
 
-If the book **already exists** in the database, it will be updated and the new JSON data will replace the old data.
+If the book **already exists** in the database, it will be updated, and the new JSON data will replace the old data.
 
 If the book **does not exist** in the database, it will be **created**.
 
@@ -186,7 +192,7 @@ This is the response from the server:
 }
 ```
 
-If we want to update only specific data, for example, to change the author of a book, we use the **PATCH** method.
+If we want to update only specific data, for example, to change the book author, we use the **PATCH** method.
 
 Choose the **PATCH** method and for the **URL**, copy and paste the following line into **Postman**:
 
@@ -202,7 +208,7 @@ Then copy and paste the following JSON object:
 
 With the **PATCH** method, we will only update the data we target with the **JSON** object.
 
-In this example, the year will change from **1980** to **1981** and a new property **author** will be created as well.
+In this example, the year will change from **1980** to **1981**, and a new **author** property will be created as well.
 
 Here is the response from the server:
 
@@ -268,19 +274,19 @@ Choose the **DELETE** method and for the **URL**, copy and paste the following l
 
 `https://softuni-remotedb.firebaseio.com/books/2.json`
 
-The response from the server will be **200 OK** and it will return **null** in the **body**.
+The response from the server will be **200 OK**, and it will return **null** in the **body**.
 
 [/slide]
 
 [slide hideTitle]
 
-# Authentication vs Authorization
+# Authentication vs. Authorization
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-12-authentication-vs-authorization-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Authentication is about validating your credentials such as Username, ID, and password to verify your identity.
 
-Authorization occurs after your identity is successfully authenticated by the system, which gives you full access to resources such as information, files, databases, etc.
+Authorization occurs after your identity has been authenticated by the system, which gives you full access to resources such as information, files, databases, etc.
 
 [/slide]
 
