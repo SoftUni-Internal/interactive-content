@@ -40,7 +40,7 @@ The **URL** should look something like this:
 
 `https://api.backendless.com/application-id/REST-api-key/users/register`
 
-The body of the request must include an email and password:
+The body of the request **must** include an **email** and **password**:
 
 ```js
 {  
@@ -51,7 +51,7 @@ The body of the request must include an email and password:
 }
 ```
 
-`objectId` is **optional** and used only for **guest logins**.
+`objectId` is **optional** and used only for [guest logins](https://backendless.com/docs/rest/users_guest_login.html).
 
 Test the **login** and **logout** using **GET** requests:
 
@@ -66,6 +66,12 @@ Test the **login** and **logout** using **GET** requests:
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Apps-Backendless-Working-with-the-Database-API-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The **Database API** is used for creating, modifying, and deleting objects.
+The **Database API** is used for creating, modifying, and deleting **objects**.
+
+To add a **new table**, go to the **Data** section and click on the **"+"** sign at the upper-left corner.
+
+You will then be prompted to create your own **schema** and **columns**.
+
+For more information, refer to the [Database API Documentation](https://backendless.com/docs/rest/data_overview.html)
 
 [/slide]
