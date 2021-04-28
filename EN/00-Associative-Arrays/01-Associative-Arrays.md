@@ -284,7 +284,7 @@ for (Map.Entry<String, Double> entry : fruitsPrice.entrySet()) {
 [slide hideTitle]
 # Problem with Solution: Count Real Numbers
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-12-problem-and-solut-count-real-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/java-fundamentals-associative-arrays-12-problem-and-solut-count-real-numbers-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Count Real Numbers" taskId="Java-Fundamentals-2-Associative-arrays-lab-Count-real-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -418,7 +418,7 @@ Read a **list of real numbers** and print them out in **ascending order**, along
 [slide hideTitle]
 # Problem with Solution: Word Synonyms
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-14-problem-and-solution-word-synonyms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/java-fundamentals-associative-arrays-14-problem-and-solution-word-synonyms-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Word Synonyms" taskId="Java-Fundamentals-2-Associative-Arrays-lab-Words-Synonyms" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -638,7 +638,7 @@ customer - client, purchaser
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Odd Occurrences
+# Problem: Odd Occurrences
 [code-task title="Odd Occurrences" taskId="Java-Fundamentals-2-Associative-Arrays-lab-Odd-Occurrences" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
