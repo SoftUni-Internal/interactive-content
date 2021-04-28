@@ -53,10 +53,10 @@ The body of the request **must** include an **email** and **password**:
 
 `objectId` is **optional** and used only for [guest logins](https://backendless.com/docs/rest/users_guest_login.html).
 
-Test the **login** and **logout** using **GET** requests:
+Test the **login** and **logout** using the following **URLs**:
 
-- **Login**: `https://api.backendless.com/application-id/REST-api-key/users/login`
-- **Logout**: `https://api.backendless.com/<application-id>/<REST-api-key>/users/logout`
+- Login - **POST**: `https://api.backendless.com/application-id/REST-api-key/users/login`
+- Logout - **GET**: `https://api.backendless.com/application-id/REST-api-key/users/logout`
 
 [/slide]
 
