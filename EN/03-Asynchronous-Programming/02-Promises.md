@@ -36,7 +36,7 @@ This way, the first promise **passes information about the process** to the 
 
 Here is a visual representation of the chaining process:
 
-[image assetsSrc="JS-Applications-Asynchronous-Programming-2.png" /]
+[image assetsSrc="jsapps-async-programming-promises.png" /]
 
 [/slide]
 
