@@ -31,7 +31,7 @@ There are many different types of templating engines, each with a distinct set o
     * easy access to global helpers and variables
     * requires server side JavaScript \(**Node.js**, for example\) to render on the server
 
-- **lit-html**
+- **Lit-html**
     * built on tagged template literals
     * allows rendering and partial updating of templates
     * compatible with all major browsers

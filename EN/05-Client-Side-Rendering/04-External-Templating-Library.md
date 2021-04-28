@@ -6,9 +6,9 @@
 
 **Lit-html** is a simple **templating library**, part of the Polymer Project.
 
-It is built on **tagged template literals**, a JavaScript feature, introduced in EcmaScript 6.
+It is built on **tagged template literals**, a JavaScript feature, introduced in ECMAScript 6.
 
-As you may know, template literals support **multilne input**, as well as **interpolation**.
+As you may know, template literals support **multiline input**, as well as **interpolation**.
 
 Tagged template literals allow us to put a **function name** before the opening backtick.
 
@@ -36,12 +36,18 @@ There are a few ways to **install** lit-html:
 To install lit-html via the **Node Package Manager**\(NPM\), we must have **Node.js** [installed](https://nodejs.org/en/).
 
 After opening a terminal in our **project directory**, type:
+[image assetsSrc="js-application-client-side-rendering-lit-html-install-1.png" /]
 
 `npm install lit-html`
+
+[image assetsSrc="js-application-client-side-rendering-lit-html-install-2.png" /]
 
 You can then use lit-html by importing it in the target file:
 
 `import {html, render} from 'lit-html'`
+
+[image assetsSrc="js-application-client-side-rendering-lit-html-install-3.png" /]
+
 
 The `html` tag function is used by lit-html to represent the **template** to be rendered.
 
@@ -94,7 +100,11 @@ It saves time by **automatically** reloading when it detects changes in your cod
 
 You can install it by typing `npm install -g live-server` in a command-line tool.
 
+[image assetsSrc="js-application-client-side-rendering-live-server-install-2.png" /]
+
 To **start the server**, type `live-server`.
+
+[image assetsSrc="js-application-client-side-rendering-live-server-install-3.png" /]
 
 By default, the server will **start running on port 8080**.
 
@@ -223,7 +233,7 @@ The syntax for **handling events** looks like a property binding, but it has the
 const myButton = () => html`<button @click=${handleClick}>Click Here</button>`;
 ```
 
-In this example we use the `handleClick` object as an **event listener**, but we can also use a **plain function**.
+In this example, we use the `handleClick` object as an **event listener**, but we can also use a **plain function**.
 
 ```js
 let handleClick = {
@@ -261,7 +271,7 @@ html`
 
 ```
 
-Additionally, we can also use **conditional structures** such as the `if` or `switch-case` statements.
+Additionally, we can also use **conditional structures** such as the "if" or "switch-case" statements.
 
 [/slide]
 
@@ -280,7 +290,7 @@ html`
 
 ```
 
-In this example, we create an **unordered list**, and generate `li` elements by **mapping through a list** of products.
+In this example, we create an **unordered list** and generate `li` elements by **mapping through a list** of products.
 
 [/slide]
 
