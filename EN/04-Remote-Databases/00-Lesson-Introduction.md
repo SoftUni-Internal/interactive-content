@@ -7,7 +7,7 @@
 
 ## In this lesson you will learn:
 
-**1. Relational And Non Relational Databases**
+**1. Relational And Non-Relational Databases**
 - The main differences between them
 - Advantages and disadvantages
 
