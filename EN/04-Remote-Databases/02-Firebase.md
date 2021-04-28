@@ -296,13 +296,11 @@ Authorization occurs after your identity has been authenticated by the system, w
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-All-Books-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Make sure you have a Gmail account and you are signed in.
+Make sure you have a **Google** account and you are **signed in**.
 
-Open a browser and type in "**firebase console**".
+Click [here](https://console.firebase.google.com) to go to the **Firebase Console**.
 
-[image assetsSrc="Remote-Databases(1).png" /]
-
-Once you are signed in, you should be able to see this window:
+Once you are signed in, you should be able to see this **window**:
 
 [image assetsSrc="Remote-Databases(19).png" /]
 
@@ -310,13 +308,13 @@ Create a new project by clicking on "**Add project**".
 
 [image assetsSrc="Remote-Databases(2).png" /]
 
-Type in a project name, for example "**TestApp**", and click "**Continue**".
+Type in a project **name**, for example "**TestApp**", and click "**Continue**".
 
 [image assetsSrc="Remote-Databases(3).png" /]
 
-Disable google analytics. 
+**Disable Google Analytics** as you will not need them for now.
 
-You will not need it for now and click "**Create project**".
+Then, click "**Create project**".
 
 [image assetsSrc="Remote-Databases(4).png" /]
 
@@ -326,7 +324,7 @@ Click "**Continue**".
 
 Next, we need to add an App.
 
-Click on this sing "\<\/\>".
+Add a **web application** by clicking on this sign "\<\/\>".
 
 [image assetsSrc="Remote-Databases(6).png" /]
 
@@ -340,25 +338,25 @@ Click "**continue to console**".
 
 [image assetsSrc="Remote-Databases(8).png" /]
 
-Create a database.
+## Create a Database
 
 Click on "**Realtime Database**".
 
 [image assetsSrc="Remote-Databases(9).png" /]
 
-Click on "**Create Database**".
+Then click on "**Create Database**".
 
 [image assetsSrc="Remote-Databases(10).png" /]
 
-Click "**Next**".
+Press the "**Next**" button.
 
 [image assetsSrc="Remote-Databases(11).png" /]
 
-Chose the option "**Start in test mode**" and click "**Enable**".
+Choose the option "**Start in test mode**" and click "**Enable**".
 
 [image assetsSrc="Remote-Databases(12).png" /]
 
-The database is now created successfully.
+The database is now created **successfully**.
 
 Copy the **database URL** so that you can use it in **Postman** to create books.
 
@@ -366,7 +364,7 @@ Copy the **database URL** so that you can use it in **Postman** to create books.
 
 Create a few books using the **POST** method in **Postman**, or do that directly from the database interface.
 
-Example:
+**Example:**
 
 [image assetsSrc="Remote-Databases(14).png" /]
 
@@ -374,7 +372,7 @@ To get all of the books, you have to use the **database URL** you received when 
 
 The method is "**GET**".
 
-URL: `https://databaseURL/books.json`
+- **URL:** `https://databaseURL/books.json`
 
 [/slide]
 
@@ -406,7 +404,7 @@ To create a book, we will have to send a "**POST**" request, and the JSON body s
 }
 ```
 
-URL: `https://databaseURL/books.json`
+- **URL:** `https://databaseURL/books.json`
 
 [/slide]
 
@@ -429,7 +427,7 @@ The JSON body should be in the following format:
 }
 ```
 
-URL: `https://databaseURL/books/bookId.json`
+- **URL:** `https://databaseURL/books/bookId.json`
 
 [/slide]
 
@@ -447,6 +445,6 @@ The JSON body should be in the following format:
 
 "**New author was assigned**".
 
-URL: `https://databaseURL/books/bookId.json`
+- **URL:** `https://databaseURL/books/bookId.json`
 
 [/slide]
