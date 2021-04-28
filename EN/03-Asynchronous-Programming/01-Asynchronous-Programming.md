@@ -10,9 +10,12 @@ The event loop in JavaScript is **where all the incoming events are processed**.
 
 It queues event handlers in the **Event queue** and executes them in the **Call stack**, producing JS code.
 
-The event loop has one simple job — to monitor the **Call stack** and the **Callback queue**. 
+The event loop monitors the **Call stack** and the **Callback queue**.
 
-If the Call stack is empty, the event loop will take the **first event** from the queue and will push it to the Call stack, which will run it.
+The event loop takes the **first event** from the queue and pushes it into the Call stack (if it is empty).
+
+[image assetsSrc="jsapps-async-programming-event-loop.png" /]
+
 
 [/slide]
 
@@ -30,9 +33,9 @@ This way, each of those chunks must wait for the previous one to be finished.
 
 Running code like this can **block an entire webpage** due to the waiting time of **one function**, which is a serious user experience problem.
 
-There are, however, several ways to go around JavaScript's synchronous nature:
+There are several ways to go around JavaScript's synchronous nature:
 
-- `callback` - A callback is a function, which is **an argument to another function** and performs a certain operation inside of it
+- `callback` - A callback is a function, which is passed as **an argument to another function** and performs a certain operation inside of it
 
 ```js
 function calculateTax(income) {
@@ -46,6 +49,8 @@ function outer(callback) {
 
 outer(calculateTax); // outer is called with calculateTax as a callback
 ```
+
+Callbacks are used when one function needs to wait for another function to complete before executing.
 
 - `promise` - A promise is an object, **representing data that will be obtained later on**. It allows the program to keep running, without waiting for that data
 
@@ -66,7 +71,7 @@ async function getData(url) {
 }
 ```
 
-It is important to know that the `async` keyword **must be provided in front of the function** and the `await` keyword is put in front of asynchronous operations.
+It is important to know that the `async` keyword **must be placed in front of the function** and the `await` keyword is put in front of asynchronous operations.
 
 [/slide]
 
@@ -76,9 +81,9 @@ It is important to know that the `async` keyword **must be provided in front of 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-7-Asynchronous-Programming-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The easiest way to understand synchronous and asynchronous programming is to imagine a company that has a store and a website.
+The easiest way to understand synchronous and asynchronous programming is to imagine a company that has a physical store and a website.
 
-- In the store, people have to **wait in a queue** to buy something: synchronous programming
+- In the physical store, people have to **wait in queue** to buy something: synchronous programming
 
 - On the website, however, hundreds of people can buy items **independently of each other**: asynchronous programming
 
