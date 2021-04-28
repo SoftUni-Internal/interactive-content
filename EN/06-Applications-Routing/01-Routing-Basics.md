@@ -26,6 +26,7 @@ We can define an application as a **Multi Page** when the **reloaded**.
 |---|---|
 |They perform very well in **search engines**|They are **complex to develop**|
 |They provide a **visual map** of the application when shared through a link in social media|The Front-End and the Back-End are **coupled**|
+|The application could grow in **size**, by creating more **hierarchical systems** with as many **pages** as your site needs.|It takes more effort to optimize multi-page application.|
 
 
 [/slide]
