@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-8-9-10-What-is-a-Promise--,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Executing functions that rely on value from foreign sources is a rather **slow task**.
+Executing functions that rely on external data is a rather **slow task**.
 
 Since the information **does not arrive immediately**, the whole function **must be blocked** until some value is present.
 
@@ -32,7 +32,7 @@ new Promise(executor);
 
 Promises can also be **chained together**.
 
-This way, the first promise **passes information about the process** to the second one, which reacts accordingly and so on...
+This way, the first promise **passes information about the process** to the second one, which reacts accordingly and so on.
 
 Here is a visual representation of the chaining process:
 
@@ -76,7 +76,9 @@ Promise.resolve('Operation was successful!').then(
 );
 ```
 
-- `Promise.all(iterable)` - Takes an array of promises and returns a single **Promise**, which **resolves** to an array of values, **if all the given promises are resolved**
+- `Promise.all(iterable)` - Takes an array of promises and returns a single **Promise**
+
+The returned promise **resolves** to an array of values, **if all the given promises are resolved**.
 
 
 Otherwise, it would **reject immediately**.
@@ -93,7 +95,9 @@ Promise.all([firstPromise, secondPromise, thirdPromise]).then((data) => {
 });
 ```
 
-- `Promise.allSettled(iterable)` - Takes an array of promises and returns a `Promise` object only after all of the given promises are **either resolved or rejected**
+- `Promise.allSettled(iterable)` - Takes an array of promises and returns a `Promise` object.
+
+This can only happen after all of the given promises are **either resolved or rejected**.
 
 
 ```js live
@@ -165,7 +169,7 @@ Promise.resolve('Operation succeeded!')
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-13-Promise.then()-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `.then()` method makes chaining promises possible.
+The `then()` method makes chaining promises possible.
 
 It is used **after a promise has been initialized** and takes **two parameters**:
 
@@ -173,7 +177,7 @@ It is used **after a promise has been initialized** and takes **two parameters**
 
 - A callback function **if the promise is rejected**
 
-Here is an example of how `.then()` is used:
+Here is an example of how `then()` is used:
 
 ```js live
 console.log('This will appear first');
@@ -189,7 +193,7 @@ new Promise(function(resolve, reject) {
 console.log('This will appear second');
 ```
 
-As seen above, the `.then()` method **waits for the completion with the previous promise** and **runs with its return value**.
+As seen above, the `then()` method **waits for the completion with the previous promise** and **executes with its return value as an argument**.
 
 [/slide]
 
@@ -199,7 +203,7 @@ As seen above, the `.then()` method **waits for the completion with the previous
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-14-Promise.catch()-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `.catch()` method is used to "**catch thrown errors**" by promises. 
+The `catch()` method is used to "**catch thrown errors**" by promises. 
 
 It is very useful to **handle possible promise rejections**.
 
@@ -223,7 +227,7 @@ new Promise(function(resolve, reject) {
 console.log('This will appear second');
 ```
 
-It is good to know that another `.then()` method can be placed **after** `.catch()`. 
+It is good to know that another `then()` method can be placed **after** `catch()`. 
 
 It will execute **whether the promise is rejected or not**.
 
