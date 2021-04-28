@@ -84,13 +84,15 @@ A **templating engine** is used to **combine the two**.
 
 In server-side rendering, templates are used to generate HTML which is rendered before being sent to the client.
 
-When using client-side rendering, templates are used to create **DOM elements** on the client:
+When using client-side rendering, we **do not create HTML elements**, but templates are used to create **DOM elements** on the client-side, which could be attached to the DOM tree.
 
-- They define the **structure** of each view
+The templates define the **structure** of each view, where a picture, button, etc. will be **placed** in the **web browser**.
 
-- Dynamic content is **fetched** from a REST service
+For creating templates we need **dynamically** content, which can be fetched from a REST service.
 
-- Once the data is **downloaded**, it is used to **populate** the template and **render** it with the help of a templating engine
+Next, the structure is **recreated** and the data is **populated** inside the template. 
+
+Instead of doing these steps **one by one**, a templating engine is used to make that process more abstract. 
 
 [/slide]
 
