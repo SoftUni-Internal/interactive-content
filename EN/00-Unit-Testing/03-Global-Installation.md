@@ -34,7 +34,7 @@ You need to set the "NODE_PATH" environment variable manually.
 
 Open the Windows "CMD" console.
 
-To set the path use this piece of code for future sessions:
+To set the path, use this piece of code for future sessions:
 
 `setx NODE_PATH %AppData%\npm\node_modules`
 
@@ -87,7 +87,7 @@ describe('Sum of numbers', () => {
 # Description
 You are required to submit only the unit tests for the object/function you are testing.  
 
-Write tests to check the functionality of the following code:
+Create tests to check the functionality of the following code:
 
 ```js
 function sum(arr) {
@@ -98,7 +98,7 @@ function sum(arr) {
 }
 ```
 
-In your tests, use a function called `sum()`. 
+Use a function called `sum()`. 
 
 It should meet the following requirements:
 - Take an **array** of **numbers** as an argument
