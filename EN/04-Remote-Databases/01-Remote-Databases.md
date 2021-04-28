@@ -70,7 +70,7 @@ Relational databases use indexes to quickly locate data without searching every 
 **Pros of a Non-Relational Database:**
 - Data is not confined to a structured group
 - You can perform functions that allow for a greater flexibility
-- They scale-out horizontally
+- They scale out horizontally
 - High availability
 - Many NoSQL databases are **open source**
 
