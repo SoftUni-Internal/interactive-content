@@ -304,7 +304,7 @@ Once you are signed in, you should be able to see this **window**:
 
 [image assetsSrc="Remote-Databases(19).png" /]
 
-Create a new project by clicking on "**Add project**".
+Create a new project by clicking on either "**Add project**" or "**Create a project**".
 
 [image assetsSrc="Remote-Databases(2).png" /]
 
