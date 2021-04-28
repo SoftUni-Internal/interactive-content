@@ -6,15 +6,17 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-3-relational-databases-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Relational databases maintain data in tables, providing an efficient and flexible way to store and access structured information. 
+**Relational databases** maintain data in **tables**, providing an **efficient and flexible** way to store and access structured information. 
 
-The tables consist of columns containing one or more data categories, and rows, also known as table records, are a set of data defined by the category.
+The tables consist of **columns** containing one or more data categories, as well as rows.
+
+**Rows**, also known as table records, are a set of data defined by the category.
 
 Each table has a **unique** identifier called a **primary key**, which identifies the information in the table.
 
-The logical connection between different tables is established with  **foreign keys** - a field in a table that connects with the **primary key** of another table.
+The logical connection between different tables is established with **foreign keys** - a field in a table, that connects with the **primary key** of another table.
 
-**SQL** or **Structured Query Language** is the primary interface used to communicate with Relational Databases.
+**SQL** or **Structured Query Language** is the primary interface used to communicate with relational databases.
 
 [/slide]
 
