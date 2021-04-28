@@ -6,15 +6,15 @@
 
 To solve some of the following tasks, you will need to use an up-to-date version of the local REST service which can be downloaded from [here](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Apps-Server1.zip). 
 
-To start the server, extract it to a folder on your computer and run the included start.bat file, or manually open a command prompt and execute the `node server.js` command.
+To start the server, extract it to a folder on your computer and run the included **start.bat** file, or manually open a command prompt and execute the `node server.js` command.
 
 Download the resources from [here](https://videos.softuni.org/resources/javascript/javascript-applications/01_Bus_Stop.zip).
 
 ## Description
 
-Create a JS program that displays the arrival times of all buses on a "**bus stop id**" when a button is clicked.
+Create a JS program that displays the arrival times of all buses for a particular "**bus stop id**" when a button is clicked.
 
-When the button with a **"submit"** id is clicked, the name of the bus stop appears and the list below gets populated with all of the buses that are expected to arrive and their arrival time. Take the **value** of the input field with a **"stopId"** id. 
+When the [**Submit**] button is clicked, the name of the bus stop should appear and the list below should get populated with all of the buses that are expected to arrive, along with their arrival times. Take the **value** for the bus stop id from the **stopId** input field.
 
 Send a GET request to `http://localhost:3030/jsonstore/bus/businfo/:busId` and parse the response. 
 
@@ -30,15 +30,15 @@ stopId: {
 }
 ```
 
-Place the **name** property as a **text** inside the div container with a **"**stopName**"** id and each bus as a **list item** in the following format:
+Place the **name** property as a **text** inside the div container with id **stopName**, and each bus as a **list item** in the following format:
 
-"**Bus {busId} arrives in {time}**"
+- **Bus {busId} arrives in {time}**
 
-If the request is invalid or the information is not in the expected format, display "**Error**". 
+If the request is invalid or the information is not in the expected format, display **Error**. 
 
 The list should be cleared before every request is sent.
 
-**Note:** The service will respond with valid data to IDs 1287, 1308, 1327 and 2334.
+**Note:** The service will respond with valid data to bus id: 1287, 1308, 1327, and 2334.
 
 
 ## Examples
@@ -71,17 +71,17 @@ Download the resources from [here](https://videos.softuni.org/resources/javascri
 
 Create a JS program that tracks the progress of a bus on its route and announces it inside an info box. 
 
-The program should display which is the upcoming stop and request from the server the name of the next one  once the current bus arrives.
+The program should display the upcoming stop and request from the server the name of the next one once the bus arrives at that stop.
 
-The bus has two states -- **moving** and **stopped**. When it is **stopped**, only the [**Depart]** button must be **enabled,** while the info box must show the name of the **current** stop. 
+The bus has two states - **moving** and **stopped**. When it is **stopped**, only the [**Depart**] button must be **enabled**, and the info box must show the name of the **current** stop. 
 
-When it is **moving**, only the [**Arrive]** button is **enabled,** while the info box must show the name of the **upcoming** stop. 
+When it is **moving**, only the [**Arrive**] button is **enabled**, and the info box must show the name of the **upcoming** stop. 
 
-Initially, the info box must show "**Not Connected**" and the [**Arrive]** button is **disabled**. 
+Initially, the info box must show "**Not Connected**" and the [**Arrive**] button is **disabled**. 
 
 The id of the first stop is "**depot**".
 
-When the [**Depart]** button is clicked, send a GET request to the server with the id of the current stop to the following url: `http://localhost:3030/jsonstore/bus/schedule/:id`
+When the [**Depart**] button is clicked, send a GET request to the server with the id of the current stop to the following URL: `http://localhost:3030/jsonstore/bus/schedule/:id`
 
 You will receive a **JSON object** as a response in the following format:
 
@@ -107,7 +107,7 @@ The text in the info box must be:
 
 - **Arriving at {stopName}**
 
-Clicking the buttons successfully will cycle through the entire schedule. 
+The program will cycle through the entire schedule infinitely if you keep clicking the buttons. 
 
 If any invalid data is received, show "**Error**" inside the info box and **disable** both buttons.
 
@@ -142,9 +142,9 @@ Download the resources from [here](https://videos.softuni.org/resources/javascri
 
 ## Description
 
-Create a JS program that retrieves weather reports **from a** **server** and **displays** them to the user.
+Create a JS program that retrieves weather reports **from a server** and **displays** them to the user.
 
-When the user writes the name of a location and clicks the [**Get Weather**] button, send a GET request to the server at address `http://localhost:3030/jsonstore/forecaster/locations`.
+When the user writes the name of a location and clicks the [**Get Weather**] button, send a GET request to the server at `http://localhost:3030/jsonstore/forecaster/locations`.
 
 The response will be an array of objects with the following structure:
 
@@ -158,11 +158,9 @@ The response will be an array of objects with the following structure:
 }
 ```
 
-Find the object that corresponds to the name that the user submitted in the input field with ID "**location**" and use its **code** value to make **two more** GET **requests**:
+Find the object that corresponds to the name that the user submitted in the input field with ID "**location**" and use its **code** value to make **two more** **GET requests**:
 
--   For the current weather conditions, make a request to:
-
-`http://localhost:3030/jsonstore/forecaster/today/:code`
+-   For the current weather conditions, make a request to `http://localhost:3030/jsonstore/forecaster/today/:code`
 
 The response from the server will be an object with the following structure:
 
@@ -175,10 +173,7 @@ The response from the server will be an object with the following structure:
 }
 ```
 
--   For a 3-day forecast, make a request to:
-
-`http://localhost:3030/jsonstore/forecaster/upcoming/:code
-`
+-   For a 3-day forecast, make a request to `http://localhost:3030/jsonstore/forecaster/upcoming/:code`
 
 The response will be an object with the following structure:
 
@@ -191,11 +186,13 @@ The response will be an object with the following structure:
 }
 ```
 
-Use the information from these two objects to compose a forecast in HTML and insert it inside the page. Note that the <div> with an id of "forecast" must be set to visible. 
+Use the information from these two objects to compose a forecast in HTML format, and insert it inside the page. 
+
+Note that the \<div\> with an id of "forecast" must be set to visible. 
 
 See the examples for details.
 
-If an **error** occurs (the server does not respond or the location name cannot be found) or the data is not in the correct format, display "**Error**" in the **forecast section**.
+If an **error** occurs (the server does not respond, or the location name cannot be found), or if the data is not in the correct format, display "**Error**" in the **forecast section**.
 
 Use the following codes for weather symbols:
 
@@ -207,9 +204,9 @@ Use the following codes for weather symbols:
 
 ## Examples
 
-When the app starts, the forecast div is hidden. 
+When the app starts, the **forecast div** is **hidden**. 
 
-When the app starts, the **forecast** **div** is**hidden**. When the user **enters a name** and **clicks** on the button **[****Get Weather]**, a GET request is sent to the server.
+When the user **enters a name** and **clicks** on the [**Get Weather**] button, a GET request is sent to the server.
 
 [image assetsSrc="asyncprogramming-13.png" /]
 
@@ -218,8 +215,6 @@ When the app starts, the **forecast** **div** is**hidden**. When the user **ente
 [image assetsSrc="asyncprogramming-15.png" /]
 
 [image assetsSrc="asyncprogramming-16.png" /]
-
-
 
 
 [/slide]
@@ -233,11 +228,11 @@ Download the resources from [here](https://videos.softuni.org/resources/javascri
 
 ## Description
 
-**Create a JS program,** which **shows** and **hides** the additional information about users, which you can find by making a GET request to the server at address:
+**Create a JS program** that **shows** and **hides** the additional information about users, which you can find by making a GET request to the server at the following URL:
 
 `http://localhost:3030/jsonstore/advanced/profiles`
 
-The response will be an object with the information for all users. 
+The response will be an object containing the information for all the users. 
 
 Create a profile card for every user and display it on the web page. 
 
@@ -247,14 +242,13 @@ Every item should have the following structure:
 
 [image assetsSrc="asyncprogramming-18.png" /]
 
-When one of the [**Show more**] **buttons** is clicked, the **hidden information** in the **div** container should be shown only if **the profile is not locked.** If the current profile is **locked,** nothing should happen.
+When one of the [**Show more**] **buttons** is clicked, the **hidden information** in the **div** container should be displayed only if **the profile is not locked**. If the current profile is **locked**, nothing should happen.
 
 [image assetsSrc="asyncprogramming-19.png" /]
 
 If the **hidden information is displayed** and we **lock** **the profile again**, the [**Hide it**] button should **not work**!
 
-Otherwise, when the profile is **unlocked** and we click on the [**Hide it**] button, the new fields must hide again.
-
+Otherwise, when the profile is **unlocked** and we click on the [**Hide it**] button, the new fields must be hidden again.
 
 [/slide]
 
@@ -267,7 +261,7 @@ Download the resources from [here](https://videos.softuni.org/resources/javascri
 
 ## Description
 
-Create an application that shows **less and more** information for the selected article. At the start, you should send a **GET** request to the server at the address: 
+Create an application that shows **less or more** information for the selected article. At the start, you should send a **GET** request to the server at: 
 
 `http://localhost:3030/jsonstore/advanced/articles/list`
 
@@ -275,7 +269,7 @@ The response will be an object with the titles of the articles.
 
 By clicking the [**More**] button for the selected **article**, it should **reveal** the content of a **hidden** div container and **change** the text of the button to [**Less**]. 
 
-Obtain the content by making a **GET** request to the server at address:
+Retrieve the content by making a **GET** request to the server at the following URL:
 
 `http://localhost:3030/jsonstore/advanced/articles/details/:id`
 
@@ -283,7 +277,7 @@ The response will be an object with property **id**, **title**, **content**.
 
 When the same button is clicked **again**, **hide** the div container and **change** the text of the button to [**More**].
 
-Link action should be **toggleable** (you should be able to click the button an infinite amount of times).
+The Less or More button should be **toggleable** (you should be able to click the button as many times as you want).
 
 ## Examples
 
@@ -297,21 +291,5 @@ Every item should have the following structure:
 
 You are allowed to add new attributes, but do not change the existing ones.
 
-
-[/slide]
-
-
-
-[slide hideTitle]
-
-# Problem: Blog
-
-Download the resources from [here](https://videos.softuni.org/resources/javascript/javascript-applications/06_Blog.zip).
-
-## Description
-
-
-
-## Examples
 
 [/slide]
