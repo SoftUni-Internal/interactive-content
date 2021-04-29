@@ -1,17 +1,22 @@
 # Overview and Details
 [slide hideTitle]
 
-# Overview
+# CarTube
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Apps-Workshop-CarTube-NEW.zip) **for this task.**
 
-**Implement** a front-end app (SPA) for viewing and managing car **listings**. 
+You are assigned to implement a **Web application** (SPA) using JavaScript. 
 
-The application allows visitors to browse through different car ads. 
+The application should dynamically display content, based on user interactions.
 
-Users may **register** with a **username** and **password**, which allows them to create their ads. 
+It must support user profiles and CRUD operations using a REST service.
 
-Ad authors can also **edit** or **delete** their publications at any time.
+## Overview
+**Implement** a front-end application (SPA) for viewing and managing **car listings**. 
+
+The application must allow visitors to browse through different car ads. Users must be able to **register** in the application with a **username** and **password**, which will allow them to create their own ads. 
+
+Ad authors can also **edit** or **delete** their own publications at any time.
 
 ## Technical Details
 
@@ -19,36 +24,36 @@ You are provided with the following resources:
 
 - **Project scaffold**: a "**package.json**" file, containing a list of common dependencies
 
-You may change the included libraries to your preference. 
+You can change the included libraries to your preference. 
 
-The sections **devDependencies** and **scripts** of the file are used by the automated testing suite, altering them may result in incorrect test operation.
+The sections "**devDependencies**" and "**scripts**" of the file are used by the automated testing suite, altering them may result in incorrect test operation.
 
 To **initialize** the project, execute the command `npm install` via the command-line terminal.
 
-- **HTML and CSS files**: all views (pages) of the application, including **sample** user-generated content, are included in the file "**index.html**", which links to CSS and other static files
+- **HTML and CSS files**: These are all of the views (or pages) for the application, including **sample** user-generated content, are included in the file index.html, which links to the CSS and other static files
 
-**Each view is in a separate section** of the file, which can be identified by a **unique class name or id** attribute.
+**Each view is in a separate section** of the file, which can be identified by a **unique class name or id** attribute. 
 
-Your application may use any preferred method (such as a **templating library** or manual visibility settings) to display only the selected view and to **navigate** between views upon user interaction.
+Your application may use any preferred method (such as a **templating** **library** or manual visibility settings) for displaying the selected view and to **navigate** between views upon user interaction.
 
-- **Local REST service**: a special server, which contains **sample data** and supports **user registration** and **CRUD operations** via REST requests are included with the project
+- **Local REST service**: This is a server, which contains **sample data** and supports **user registration** and **CRUD operations** via REST requests
 
-Each section of this document (where applicable) includes details about the necessary **REST endpoints**, to which **requests** must be sent, and the **shape** of the expected **request body**.
+It is included with the project. 
 
-For more information on how to use the included server, see **Appendix A: Using the Local REST Service**.
+Each section of this document (where applicable) includes details about the necessary **REST endpoints**, to which **requests** must be sent, and the shape of the expected request body.
+
+For more information on how to use the included server, see **Appendix A: Using the Local REST Service** at the end of this document.
 
 
-- **Automated tests**: A complete test suite is included, which can be used to test the correctness of your solution. Your work will be assessed, based on these tests.
+- **Automated tests**: A complete test suite is included, which can be used to test your solution
 
-For more information on how to run the tests, see **Appendix B: Running the Test Suite**.
+For more information on how to run the tests, see **Appendix B: Running the Test Suite** at the end of this document.
 
-**Note:** When creating HTML Elements and displaying them on the page, **adhere as close as possible to the provided HTML** samples. 
+**Note:** When creating the HTML Elements and displaying them on the page, **adhere as close as possible to the provided HTML** samples. 
 
 Changing the structure of the document may **prevent the tests** from running correctly, which will **adversely affect your assessment grade**. 
 
-You may **add attributes** (such as **class** and **dataset**) to any HTML Element, as well as **change** "**href**" attributes on links and add/change the **method** and **action** attributes of HTML Forms, to facilitate the correct operation of a routing library or another method of abstraction. 
-
-You may also add hidden elements to help you implement certain parts of the application requirements.
+You may **add attributes** (such as **classes** and **datasets**) to any HTML Element, as well as **change** "**href**" attributes on links and add/change the **method** and **action** attributes of HTML Forms, to facilitate the correct operation of a routing library or another method of abstraction. You may also add hidden elements to help you implement certain parts of the application requirements.
 [/slide]
 
 
@@ -57,41 +62,42 @@ You may also add hidden elements to help you implement certain parts of the appl
 
 ## Starting the Service 
 
-The REST service will be the "server" folder in the provided resources. It has no dependencies and can be started by opening a terminal in its directory and executing: 
+The REST service will be the "**server**" folder in the provided resources. It has no dependencies and can be started by opening a terminal in its directory and executing:
 
-node server.js 
+`node server.js `
 
-If it initialized correctly, you should see a message about the host address and port, on which the service will respond to requests. 
+If it initialized correctly, you should see a message about the **host address and port**, on which the service will respond to requests.
 
 ## Sending Requests  
 
-To send a request, use the **hostname** and **port**, shown in the initialization log and resource address and method as described in the **application requirements**. 
+To send a request, use the **hostname** and port, shown in the initialization log and **resource address** and **method** as described in the **application requirements**. 
 
-If the data needs to be included in the request, it must be **JSON-encoded** and the appropriate **Content-Type** **header** must be added. 
+If the data needs to be included in the request, it must be JSON-encoded and the appropriate **Content-Type header** must be added. 
 
-Similarly, if the service is to return data, it will be **JSON-encoded**.
+Similarly, if the service is to return data, it will be **JSON-encoded**. 
 
-Note that **some requests do not return a body** and attempting to parse them will throw an exception. 
+Note that **some requests do not return a body** and attempting to parse them will throw an exception.
 
-**Read** requests, as well as **login** and **register** requests, do not require authentication. 
+**Read** requests, as well as **login** and **register** requests do not require authentication. 
 
-All other requests must be authenticated. 
+All other requests must be authenticated.
+
 
 ## Required Headers 
 
-To send the data to the server, include a Content-Type header and encode the body as a JSON string: 
+To send the data to the server, include a **Content-Type** header and encode the body as a JSON-string: 
 
 ```
 Content-Type: application/json 
 {JSON-encoded request body as described in the application requirements}
 ```
-To perform an authenticated request, include an X-Authorization header, set to the value of the session token, and returned by an earlier login or register request: 
+To perform an authenticated request, include an **X-Authorization** header, set to the value of the **session token** and returned by an earlier login or register request:
 
 `X-Authorization: {session token}`
 
 ## Server Response 
 
-Data response:
+The data response:
 
 ```
 HTTP/1.1 200 OK
