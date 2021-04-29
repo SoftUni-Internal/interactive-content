@@ -10,24 +10,21 @@
 
 **1. Design Patterns**
 
-- Definition and Structure 
+- Definition and purpose
 
 - Categories 
 
-- Benefits and Drawbacks 
+- Benefits and drawbacks 
 
 **2. Common Design Patterns**
 
-- **Factory Pattern** 
-
+- The Factory Pattern
    * based on class creation
 
-- **Decorator Pattern**
-
+- The Decorator Pattern
    * focused on dynamically adding functionality to existing classes
    
-- **Observer Pattern**
-
+- The Observer Pattern
    * used when we have classes that need constant updates on the state of another class
 
 [/slide]

@@ -56,7 +56,32 @@ The body of the request **must** include an **email** and **password**:
 Test the **login** and **logout** using the following **URLs**:
 
 - Login - **POST**: `https://api.backendless.com/application-id/REST-api-key/users/login`
-- Logout - **GET**: `https://api.backendless.com/application-id/REST-api-key/users/logout`
+
+To **log in**, use the credentials from the registration request:
+
+```js
+{  
+  "email" : value,  
+  "password" : value,  
+}
+```
+
+The **response body** will look like this:
+
+```js
+{  
+  "objectId" : value,  
+  "user-token": value,   
+  //all user properties (except for password) in the "prop-name":"prop-value" format  
+  "prop-name1":value,  
+  "prop-name2":value,  
+  "prop-name3":value,  
+  ...  
+}
+
+```
+
+- Logout using a **GET** request: `https://api.backendless.com/application-id/REST-api-key/users/logout`
 
 [/slide]
 
