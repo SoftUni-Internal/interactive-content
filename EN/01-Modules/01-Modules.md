@@ -24,7 +24,7 @@ There are numerous **benefits** when it comes to using modules:
   
 - **Errors are easier to track down** because they are **isolated to a smaller portion of the program**
 
-## Approaches for Modules
+## Different Approaches
 
 There are **three main ways** to create **modules** in your program:
 
