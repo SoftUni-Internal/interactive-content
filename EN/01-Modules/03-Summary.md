@@ -7,7 +7,7 @@
 
 - What JavaScript **modules** are
 
-	* a set of **data and functionality**, made accessible to other files
+	* a set of **data and functionality** that is accessible to other files
 
     * **reusable** pieces of code that supercharge our **productivity**
 
@@ -33,9 +33,9 @@ console.log(people); // ReferenceError
 
 - Node\.js Modules
   
-	* the **module.exports** - a special object is used to export data or functionality
+	* the **module.exports** - a special object used to export data or functionality
   
-    * we use `require()` to import them
+    * we use `require()` to import modules
 
 ```js
 const myModule = require('./myModule.js');
