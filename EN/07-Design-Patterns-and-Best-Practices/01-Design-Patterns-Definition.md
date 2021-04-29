@@ -108,7 +108,7 @@ This is typically applied when object creation through the **constructor** metho
 
 [image assetsSrc="js-application-design-patterns-02.png" /]
 
-## Singleton**
+## Singleton
 
 The **singleton pattern** is when you want to have a **single** instance of an object.
 
