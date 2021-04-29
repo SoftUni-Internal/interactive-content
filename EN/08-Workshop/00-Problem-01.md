@@ -14,7 +14,9 @@ It must support user profiles and CRUD operations using a REST service.
 ## Overview
 **Implement** a front-end application (SPA) for viewing and managing **car listings**. 
 
-The application must allow visitors to browse through different car ads. Users must be able to **register** in the application with a **username** and **password**, which will allow them to create their own ads. 
+The application must allow visitors to browse through different car ads. 
+
+Users must be able to **register** in the application with a **username** and **password**, which will allow them to create their own ads. 
 
 Ad authors can also **edit** or **delete** their own publications at any time.
 
@@ -53,7 +55,9 @@ For more information on how to run the tests, see **Appendix B: Running the Test
 
 Changing the structure of the document may **prevent the tests** from running correctly, which will **adversely affect your assessment grade**. 
 
-You may **add attributes** (such as **classes** and **datasets**) to any HTML Element, as well as **change** "**href**" attributes on links and add/change the **method** and **action** attributes of HTML Forms, to facilitate the correct operation of a routing library or another method of abstraction. You may also add hidden elements to help you implement certain parts of the application requirements.
+You may **add attributes** (such as **classes** and **datasets**) to any HTML Element, as well as **change** "**href**" attributes on links and add/change the **method** and **action** attributes of HTML Forms, to facilitate the correct operation of a routing library or another method of abstraction. 
+
+You may also add hidden elements to help you implement certain parts of the application requirements.
 [/slide]
 
 
