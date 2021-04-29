@@ -5,9 +5,11 @@
 
 // Video: 06: Create Car Listing page 
 
-The Create page is available to logged-in users. 
+The "**Create**" page is available to logged-in users. 
 
-It contains a form for creating new listings. Check if all the fields are filled before sending the request. 
+It contains a form for creating new listings. 
+
+Check if all the fields are filled before sending the request.
 
 [image assetsSrc="js-application-cartube-workshop-15.gif" /]
 
@@ -47,7 +49,7 @@ Upon a success, **redirect** the user to the "**All Listings**" page.
 
 The "**Edit**" page is available to logged-in users and allows the author to **edit** their **own** listings. 
 
-Clicking on the "**Edit**" link of a specific listing on the "**Details**" page should display the Edit page. 
+Clicking on the "**Edit**" link of a specific listing on the "**Details**" page should display the "**Edit**" page. 
 
 It contains a form with input fields for all relevant properties. 
 

@@ -9,9 +9,9 @@
 
 The navigation links should change the current page (view).
 
-**Guests** (un-authenticated visitors) can see the links to the "**All Listings**" page, as well as the links to the "**Login**" and "**Register**" pages.
-
-Authenticated users should be able to access the links to the "**All Listings**" page, the "**Create**" page, and a link for the "**Logout**" action. 
+ **Guests** (un-authenticated visitors) can see the links to the "**All Listings**" page, as well as the links to the "**Login**" and "**Register**" pages. 
+ 
+ Authenticated users should be able to access the links to "**All Listings**" page, the Create page and a link for the Logout action.
 
 **Guest** navigation example:
 
@@ -41,9 +41,9 @@ The **included REST** service comes with the following **premade** user accounts
 { "username": "Peter", "password": "123456" } 
 { "username": "John", "password": "123456" } 
 ```
-The Login page contains a form for authenticating users. 
+The "**Login**" page contains a form for authenticating users. 
 
-By providing a **username** and **password**, the app should log in a user in the system if there are no empty **fields** nor incorrect data. 
+By providing a **username** and **password**, the app should login a user in the system if there are no empty **fields** nor incorrect data.
 
 [image assetsSrc="js-application-cartube-workshop-10.jpg" /]
 
@@ -71,13 +71,13 @@ If there is an error, display an appropriate error message using a system dialog
 
 ## Register User 
 
-The "**Register page**" contains a form for the registration of a new user. 
+The "**Register**" page contains a form for the registration of a new user. 
 
 By providing a **username** and **password**, the app should register a new user in the system if there are no empty **fields** nor incorrect data. 
 
 [image assetsSrc="js-application-cartube-workshop-11.gif" /]
 
-Send the following request to perform a registration: 
+Send the following **request** to perform a registration: 
 ```
 Method: POST 
 URL: /users/register 
@@ -95,9 +95,29 @@ Upon registering successfully, the **REST service** will return the newly create
 
 This information needs to be stored using a **sessionStorage** or a **localStorage** to be able to perform authenticated requests. 
 
-If the registration was successful, **redirect** the user to the All Listings page. 
+If the registration was successful, **redirect** the user to the "**All Listings**" page. 
 
 If there is an error, or the **validations** do not pass, display an appropriate error message, using a system dialog ("**window.alert**"). 
+
+## Logout 
+
+The logout action is available for logged-in users. 
+
+Send the following **request** to perform a logout:
+
+```
+Method: GET
+URL: /users/logout
+```
+The required **headers** are described in the documentation. 
+
+Upon a successful logout, the **REST service** will return an **empty response**. 
+
+Clear any session information that is stored in browser storage.
+
+If the logout was successful, **redirect** the user to the "**Home**" page.
+
+
 [/slide]
 
 
@@ -146,7 +166,7 @@ Send the following request to read a single listing:
 Method: GET 
 URL: /data/cars/:id 
 ```
-The `:id` is the id of the desired listing. 
+The `:id` is the **id** of the desired listing. 
 
 The required **headers** are described in the documentation. 
 
