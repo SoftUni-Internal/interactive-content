@@ -9,7 +9,7 @@
 
 **1. Relational And Non-Relational Databases**
 - The main differences between them
-- Advantages and disadvantages
+- Comparing the advantages of each type
 
 **2. Backend as a Service - BaaS**
 - The concept of BaaS
