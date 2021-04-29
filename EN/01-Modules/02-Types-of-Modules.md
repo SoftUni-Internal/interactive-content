@@ -9,7 +9,7 @@
 
 They enable us to **hide certain data and functionality from the global scope** and have been very commonly used **until ES6 Modules were introduced**.
 
-We will learn about ES6 modules in a later video.
+We will learn about ES6 modules later.
 
 Let us take a look at this example:
 
@@ -35,7 +35,7 @@ As you may know, variables defined with `var` are **available globally** by defa
 
 **IIFE modules** can override this behavior.
 
-The object that is returned contains the functionality and data that we make globally accessible.
+The object that is returned contains the functionality and the data that we make globally accessible.
 
 In this case, the `increase()` function **can be called from anywhere to increase the counter**.
 
@@ -64,7 +64,7 @@ We **import** Node.js modules using the `require()` function.
 const querystring = require('querystring');
 ```
 
-For **your own modules**, you have to declare the **relative path** of the file you want to import:
+For **your own modules**, you need to declare the **relative path** of the file you want to import:
 
 ```js
 const currencyConverter = require('./currencyConverter.js');
@@ -78,7 +78,7 @@ To **export** modules in Node\.js, we use the **module.exports** object.
 
 Whatever you push in the **module.exports** object is made globally available to **other modules**.
 
-The following example creates a module that returns a greeting function:
+The following example creates a module that returns a function called "greeting":
 
 ```js
 module.exports.greeting = function(name) {
@@ -114,7 +114,7 @@ Here are some commonly used ones:
 
 - The `http` module
     * used to create an **HTTP server**
-    * there is an `https` module as well, for greater security
+    * there is an `https` module as well, which can be used for greater security
 
 ```js
 let http = require('http');
@@ -135,7 +135,7 @@ let fs = require('fs');
 ```
 
 - The `zlib` module:
-    * provides a way of zipping and unzpping files
+    * provides a way of zipping and unzipping files
     * most often used in conjunction with `fs`
 
 ```js
@@ -171,7 +171,7 @@ import * as convert from './currencyConverter.js'
 
 To import the whole object, we use an **asterisk**, followed by the **name** we want to use.
 
-- **Changing the name** after importing
+- **Changing the name** after importing the object
 
 ```js
 import { toUSD as convertToUSD } from './currencyConverter.js'
@@ -185,7 +185,7 @@ We use the **export** statement to create a JavaScript module.
 export { myFunction, variableOne };
 ```
 
-Using the `default` keyword we can later import the value with **any given name**:
+Using the `default` keyword, we can later import the value with **any given name**:
 
 ```js
 export default greetFunction;
