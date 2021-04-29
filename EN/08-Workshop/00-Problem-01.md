@@ -132,7 +132,7 @@ To initialize the project with its dependencies, open a terminal in the folder, 
 
 If you changed the section **devDependencies** of the project, the tests may not initialize properly. 
 
-[image assetsSrc="js-application-cartube-workshop-1.gif" /]
+[image assetsSrc="js-application-cartube-workshop-1.png" /]
 
 ## Executing the Tests 
 Before running the test suite, make sure a web server is operational and the application can be found at the root of its network address. 
@@ -149,7 +149,7 @@ To execute the tests, do not close the terminal, running the web server instance
 
 `npm run test`
 
-[image assetsSrc="js-application-cartube-workshop-2.gif" /]
+[image assetsSrc="js-application-cartube-workshop-2.png" /]
 
 The test results will be displayed in the terminal, along with detailed information about encountered problems.
 
@@ -165,7 +165,7 @@ Open the file **e2e.test.js** in the folder **tests** and navigate to the desire
 
 Make sure the application host is set correctly: 
 
-[image assetsSrc="js-application-cartube-workshop-3.gif" /]
+[image assetsSrc="js-application-cartube-workshop-3.png" /]
 
 The value for **host** must be the address where your application is being served. 
 
@@ -173,19 +173,19 @@ Make sure that entering this address in a regular internet browser shows your ap
 
 To make a single test run, instead of the full suite (useful when debugging a single failing test), find the test and append **.only** after the **it** reference: 
 
-[image assetsSrc="js-application-cartube-workshop-4.gif" /]
+[image assetsSrc="js-application-cartube-workshop-4.png" /]
 
 On slower machines, some of the tests may require more time to complete. 
 
 You can instruct the tests to run more slowly by slightly increasing the values for interval and timeout: 
 
-[image assetsSrc="js-application-cartube-workshop-5.gif" /]
+[image assetsSrc="js-application-cartube-workshop-5.png" /]
 
 The **interval** values that are greater than 500 and **timeout** values that are greater than 10000 are not recommended. 
 
 If this does not make the test pass, set the value of **DEBUG** to **true** and run the tests again - this will launch a browser instance and allow you to see what is being tested, what the test sees and where it fails (or timeouts): 
 
-[image assetsSrc="js-application-cartube-workshop-6.gif" /]
+[image assetsSrc="js-application-cartube-workshop-6.png" /]
 
 If the actions are happening too fast, you can increase the value of **slowMo**. 
 
@@ -193,6 +193,6 @@ If the browser hangs, you can close it and abort any remaining tests by focusing
 
 The final thing to look for is the exact row where the test fails: 
 
-[image assetsSrc="js-application-cartube-workshop-7.gif" /]
+[image assetsSrc="js-application-cartube-workshop-7.png" /]
 
 [/slide]

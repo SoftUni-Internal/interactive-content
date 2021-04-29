@@ -15,7 +15,7 @@ Authenticated users should be able to access the links to the "**All Listings**"
 
 **Guest** navigation example:
 
-[image assetsSrc="js-application-cartube-workshop-8.gif" /]
+[image assetsSrc="js-application-cartube-workshop-8.png" /]
 
 **User** navigation example: 
 
