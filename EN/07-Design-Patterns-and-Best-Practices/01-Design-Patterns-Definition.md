@@ -215,6 +215,8 @@ The new logic is assigned to a newly-created object, called the **visitor**.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-9-10-benefits-and-drawbacks-of-design-patterns-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+## Benefits of Design Patterns
+
 - Design patterns **help solve issues in software development** by relying on **proven techniques**, benefitting from the collective experience of other programmers
 
 - The design pattern names and **established vocabulary** aid in the **communication** between developers
