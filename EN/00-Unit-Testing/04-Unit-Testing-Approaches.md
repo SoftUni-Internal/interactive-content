@@ -8,9 +8,9 @@
 
 ## Code-First
 
-This is a classical approach, where the functionality, is implemented and then the tests are written.
+This is a classical approach where the functionality is implemented and then the tests are written.
 
-It is not uncommon to have no unit tests at all but this is considered bad practice.
+It is not uncommon to have no unit tests at all, but this is considered bad practice.
 
 The code first approach is quite popular and widely used.
 
@@ -22,15 +22,15 @@ The code first approach is quite popular and widely used.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-20-test-driven-development-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-With the **Test-First** approach, also known as Test-Driven Development, we write the tests **before** the actual code. 
+With the **Test-First** approach, also known as **Test-Driven Development**, we write the tests **before** the actual code. 
 
-Everything that can be tested is first described with tests, after which code is written to satisfy the conditions of these tests and ensure they pass.
+Everything that can be tested is first described with tests, after which the code is written to satisfy the conditions of these tests and ensure they pass.
 
-We keep rerunning the tests and making sure any code we write works.
+We keep rerunning the tests to make sure the code works properly.
 
-This way we will **always** know whether our code produces the expected results or not. 
+This way, we will **always** know whether our code produces the expected results or not. 
 
-In **Test-Driven Development** we follow these steps:
+In **Test-Driven Development**, we follow these steps:
 
 - Create a test list
 - Pick a test
@@ -48,7 +48,7 @@ In **Test-Driven Development** we follow these steps:
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-21-why-test-driven-development-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- TDD (Test Driven Development) helps find **issues** in an **early** stage of the project and avoid having to rework parts of our code
+- **TDD** (Test Driven Development) helps us find **issues** in an **early** stage of the project and avoid having to rework parts of our code
 
 - Increases the reliability of your code
 
