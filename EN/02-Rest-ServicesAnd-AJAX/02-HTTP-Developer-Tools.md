@@ -16,11 +16,11 @@ Here is how it looks:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-2.png" /]
 
-As you can see, there are multiple tabs - each with a different set of functionalities.
+There are multiple tabs - each with a different set of functionalities.
 
-You can use the **Network** panel to make sure resources are being delivered properly.
+We can use the **Network** panel to make sure resources are being delivered properly.
 
-Or, use the **Console** panel to log messages and run scripts.
+Also, we can use the **Console** panel to log messages and run scripts.
 
 You can learn more about the DevTools [here](https://developers.google.com/web/tools/chrome-devtools).
 
@@ -37,7 +37,7 @@ You can learn more about the DevTools [here](https://developers.google.com/web/t
 
 With this tool, we can send **requests** and **receive** responses, without **writing code** or using the browser.
 
-As you can see below, Postman has a graphical UI, making it ideal for testing:
+As you can see below, **Postman** has a graphical UI, which makes it ideal for testing:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-3.png" /]
 
