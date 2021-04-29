@@ -1,229 +1,209 @@
-
+# Overview and Details
 [slide hideTitle]
-# Exam Preparation: Shoe Shelf SPA
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/Exam_Preparation_ShoeShelf_Resourses.zip) **for this task.**
+# Meme Lounge
 
-In this exam preparation, we are going to create a **Single Page Application** (SPA) using **HTML5**, **JavaScript**, **AJAX**, **REST** and **JSON** as well as utilizing a cloud-based backend (Firebase or Backendless).
+**Here is a link to the** [resources]() **for this task.**
 
-Using libraries like **lit-html** and **page.js** is allowed but is **not obligatory**.
+You are assigned to implement a **Web application** (SPA) using JavaScript. 
 
-The app keeps **users** and **shoes.**
+The application should dynamically display content, based on user interactions. 
 
-**Guests** should be able to register and log in.
+It must support user **profiles** and **CRUD** operations using a **REST** service.
 
-Logged-in users should be able to view **all of the shoes**, **add new shoes**, **buy shoes**, see **details** about **shoes** and **logout**.
+## Overview
+**Implement** a front-end app (SPA) for viewing and managing **memes**. 
 
-Logged-in users should also be able to **edit** or **delete** the **shoes that they have added.**
+The application must allow visitors to browse through the **memes** catalog.
 
-## Create a REST Service
+ Users must be able to **register** with a **username**, an **email**, a **password** and **gender**, which will allow them to **create** their own posts. 
+ 
+ Post authors can also **edit** and **delete** their own publications at any time.
 
-Use any cloud-based database and create an application to keep your data on the cloud.
+## Technical Details
 
-Create a collection called **shoes.**
+You are provided with the following resources:
 
-Each shoes has a **name**, **price**, **imageUrl**, **description**, **brand**, **creator** and **people who have bought it.**
+- **Project scaffold**: A **package.json** file, containing a list of common dependencies
+
+You can change the included libraries to your preference. The sections "**devDependencies**" and "**scripts**" of the file are used by the automated testing suite, altering them may result in incorrect test operation.
+
+To **initialize** the project, execute the command `npm install` via the command-line terminal.
+
+
+- **HTML and CSS files**: These are all of the views (or pages) for the application, including **sample** user-generated **content**, are included in the file index.html, which links to the CSS and other static files 
+
+**Each view is in a separate section** of the file, which can be identified by a **unique class name or id** attribute. 
+
+Your application may use any preferred method (such as a **templating library** or manual visibility settings) for displaying the selected view and to **navigate** between views upon user interaction.
+
+- **Local REST service**: This is a server, which contains **sample data** and supports **user registration** and **CRUD operations** via REST requests
+
+It is included with the project. 
+
+Each section of this document (where applicable) includes details about the necessary **REST endpoints**, to which **requests** must be sent, and the **shape** of the expected **request body**.
+
+For **more information** on how to use the included server, see **Appendix A: Using the Local REST Service** at the end of this document.
+
+
+
+- **Automated tests**: A complete test suite is included, which can be used to test your solution
+
+For **more information** on how to run the tests, see **Appendix B: Running the Test Suite** at the end of this document.
+
+
+**Note:** When creating the HTML Elements and displaying them on the page, **adhere as close as possible to the provided HTML** samples. 
+
+Changing the structure of the document **may prevent the tests** from running correctly, which **will adversely affect your assessment grade**. 
+
+You may **add attributes** (such as **classes** and **datasets**) to any HTML Element, as well as **change** "**href**" attributes on links and add/change the **method** and **action** attributes of HTML Forms, to facilitate the correct operation of a routing library or another method of abstraction. 
+
+You may also add hidden elements to help you implement certain parts of the application requirements.
 [/slide]
 
-[slide hideTitle]
-
-# HTML and CSS
-
-You have been given the web design of the application as **HTML** \+ **CSS** files.
-
-- Initially, all of the views and the forms are shown in the HTML files. 
-
-Your application may **hide/show elements** using CSS (display: none) or **delete/reattach** all unneeded elements from and to the DOM, or just render the views it needs to displayed.
-
-- You may render the views/forms/components with **JavaScript** or **lit-html**
-
-- You are **allowed** to add **attributes** to any HTML element
-
-## Important
-
-Do not change the elements' **class names** and IDs.
-
-Do not rename the form fields/links/IDs.
-
-You may modify the **href attributes** of the links and add **actions/method attributes** to forms, to allow the use of a routing library.
-
-[/slide]
-[slide hideTitle]
-# Navigation Bar (5 Pts)
-
-Navigation links should correctly change the current page (view).
-
-Clicking on the buttons on the navigation bar should display the view behind the link (views are represented as sections in the HTML code).
-
-The navigation bar of the logged-in user should contain the following elements: `[Create new offer]` a **link** to the **Create page**, the Shoe Shelf logo \- a link to the listed shoes, the user caption `Welcome, {email}` and the `[Logout]` link.
-
-[image assetsSrc="js-apps-exam-prep-1.png" /]
-
-The navigation bar of the guest users should contain the following elements: **Shoe Shelf** with the logo in-between.
-
-[image assetsSrc="js-apps-exam-prep-2.png" /]
-[/slide]
 
 [slide hideTitle]
+# Appendix A: Using the Local REST Service 
 
-# Home Page (Guest) (5 Pts)
+## Starting the Service 
 
-The initial page (view) should display the **guest navigation bar** \+ **Guest Home Page** \+ **Footer.**
+The REST service will be the "**server**" folder in the provided resources. It has no dependencies and can be started by opening a terminal in its directory and executing:
 
-[image assetsSrc="js-apps-exam-prep-3.png" /]
+`node server.js `
 
-[/slide]
+If it initialized correctly, you should see a message about the **host address and port**, on which the service will respond to requests.
 
-[slide hideTitle]
-# Register User (5 Pts)
+## Sending Requests  
 
-The app should register a new user in the system using their email and password credentials.
+To send a request, use the **hostname** and port, shown in the initialization log and **resource address** and **method** as described in the **application requirements**. 
 
-- The following validations should be made
-   * the **email** input must be **filled**
+If the data needs to be included in the request, it must be JSON-encoded and the appropriate **Content-Type header** must be added. 
 
-   * the password should be at least **6 characters long**
+Similarly, if the service is to return data, it will be **JSON-encoded**. 
 
-   * the **repeat** **password** value should be equal to the password
+Note that **some requests do not return a body** and attempting to parse them will throw an exception.
 
-- Keep the user's data in the browser's **session or local storage**
+**Read** requests, as well as **login** and **register** requests do not require authentication. 
 
-- After a **successful registration**, redirect to **Home page**
+All other requests must be authenticated.
 
-- In case of an **error**, nothing should happen and the user should be able to fill in the form again
 
-[image assetsSrc="js-apps-exam-prep-4.png" /]
+## Required Headers 
 
-[/slide]
+To send the data to the server, include a **Content-Type** header and encode the body as a JSON-string: 
 
-[slide hideTitle]
-# Login User (5 Pts)
+```
+Content-Type: application/json 
+{JSON-encoded request body as described in the application requirements}
+```
+To perform an authenticated request, include an **X-Authorization** header, set to the value of the **session token** and returned by an earlier login or register request:
 
- Тhe app should log in an existing user using their **email** and **password**
+`X-Authorization: {session token}`
 
-- Keep the user's data in the browser's **session or locale storage**
+## Server Response 
 
-- After a **successful login**, redirect to the Home page
+The data response:
 
-- In case of an **error**, nothing should happen and the user should be able to fill in the form again
-
-[image assetsSrc="js-apps-exam-prep-5.png" /]
-
-[/slide]
-[slide hideTitle]
-
-# Logout (5 Pts)
-
-Successfully logged-in users should be able to logout from the app.
-
-- The `logout` **REST** **service** at the back-end must be called at logout
-
-- All local information in the browser (**user session data**) about the current user should be deleted
-
-- After a **successful logout** redirect to **Login page**
-
-[/slide]
-[slide hideTitle]
-
-# Home Page (Logged in User)  (30 Pts)
-
-Successfully logged-in users should be welcomed when entering the **Home page.**
-
-They should be able to see all of the added shoes:
-
-[image assetsSrc="js-apps-exam-prep-6.png" /]
-
-If there are **NO** shoes added, the following view should be displayed:
-
-[image assetsSrc="js-apps-exam-prep-7.png" /]
-
-[/slide]
-[slide hideTitle]
-
-# Create Offer(10 Pts)
-
-Logged-in users should be able to **add shoes.** 
-
-Clicking the `[Create new offer]` button, on the navgivation bar, should **display** the **Create page.**
-
-- The form should contain the following validations
-
-   * all **input** fields should be **filled**
-
-   * **by default**, every newly created offer must have additional information
-
-`Creator`: a string representing the current user;
-
-`People bought it`: the data of the users who have bought the shoes;
-
-   * after **successfully** creating a new offer, the application should redirect to the **Home page** 
-
-- The newly added offer should be stored in the database collection `shoes`
-
-[image assetsSrc="js-apps-exam-prep-8.png" /]
+```
+HTTP/1.1 200 OK
+Access-Contrl-Allow-Origin: *
+Content-Type: application/json
+{JSON-encoded response data}
+```
+Empty response:
+```
+HTTP/1.1 204 No Content
+Access-Contrl-Allow-Origin: *
+```
+Error response:
+```
+HTTP/1.1 400 Request Error
+Access-Contrl-Allow-Origin: *
+Content-Type: application/json
+{JSON-encoded error message}
+```
+## More Information
+You can find more details on the GitHub [repository](https://github.com/softuni-practice-server/softuni-practice-server/blob/master/README.md) of the service.
 
 [/slide]
 
 [slide hideTitle]
-# Details (15 Pts)
+# Appendix B: Running the Test Suite 
 
-Logged-in users should be able to **view the details** about an offer. 
+## Project Setup 
+The tests require a web server to deliver the content of the application. 
 
-Clicking on a **particular offer** should display the **Details page.**
+There is a development web server included in the project scaffold but you may use a server that you are familiar with. 
 
-- If the currently logged-in user is the creator, the `[Delete]` and `[Edit]` **buttons** should be set to **visible**. Otherwise there should be only 1 button `[Buy]`
+Note that specialized tools like **BrowserSync** may interfere with the tests. 
 
-[image assetsSrc="js-apps-exam-prep-9.png" /]
+To initialize the project with its dependencies, open a terminal in the folder, containing the file **package.json** and execute the following: 
 
-[image assetsSrc="js-apps-exam-prep-10.png" /]
+`npm install `
 
-[/slide]
-[slide hideTitle]
-# Edit Offer (10 Pts)
+If you changed the section **devDependencies** of the project, the tests may not initialize properly. 
 
-Logged-in users should be able to **edit** their own offers.
+[image assetsSrc="js-application-cartube-workshop-1.png" /]
 
-Clicking the `[Edit]` button of a particular offer on the **Details page** should **display** the **Edit page**, inserting the additional information of the shoes in the input fields:
+## Executing the Tests 
+Before running the test suite, make sure a web server is operational and the application can be found at the root of its network address. 
 
-[image assetsSrc="js-apps-exam-prep-11.png" /]
+To start the included dev-server, open a terminal in the folder containing **package.json** and execute: 
 
-- After a successful edit, the user should be redirected to the current shoes **Details page**
+`npm run start `
 
-[/slide]
+This is a one-time operation unless you terminate the server at any point. 
 
-[slide hideTitle]
-# Buy Shoes (10 Pts)
+It can be restarted with the same command as above. 
 
-Logged-in users should be able to **buy** shoes, added by another user.
+To execute the tests, do not close the terminal, running the web server instance, open a new terminal  in the folder containing **package.json** and execute: 
 
-**NOTE: A user should NOT be able to buy from offers, created by himself.**
+`npm run test`
 
-Clicking on the `[Buy]` **button** (on the Details page) should **add the current user's email to the property** `People bought it`.
+[image assetsSrc="js-application-cartube-workshop-2.png" /]
 
-After successfully buying:
+The test results will be displayed in the terminal, along with detailed information about encountered problems.
 
-- Display the updated Details page
+You can perform this operation as many times necessary by re-running the above command.
 
-- By clicking the `[Buy]` button: 
+## Debugging Your Solution 
 
-[image assetsSrc="js-apps-exam-prep-12.png" /]
+If a test fails, you can view the detailed information about the requirements that were not met by your application.
 
-- It changes to `[You bought it]` span so users can not **buy an item** multiple times:
+Open the file **e2e.test.js** in the folder **tests** and navigate to the desired section as described below. 
 
-[image assetsSrc="js-apps-exam-prep-13.png" /]
+**This first step will not be necessary if you are using the included web server.** 
 
-[/slide]
+Make sure the application host is set correctly: 
 
-[slide hideTitle]
-# Delete Offer (5 Pts)
+[image assetsSrc="js-application-cartube-workshop-3.png" /]
 
-Logged-in users should be able to **delete their own offers.**
+The value for **host** must be the address where your application is being served. 
 
-Clicking on the `[Delete]` **button** of an offer (on the Details page) should delete the **offer.**
+Make sure that entering this address in a regular internet browser shows your application. 
 
-- After **successfully deleting an offer**, the user should be redirected to the **home page**
+To make a single test run, instead of the full suite (useful when debugging a single failing test), find the test and append **.only** after the **it** reference: 
 
-## (BONUS) Order: (5 Pts)
+[image assetsSrc="js-application-cartube-workshop-4.png" /]
 
-The **home page** for a logged user should display the offers in **descending order by count** of **people who bought** the item.
+On slower machines, some of the tests may require more time to complete. 
+
+You can instruct the tests to run more slowly by slightly increasing the values for interval and timeout: 
+
+[image assetsSrc="js-application-cartube-workshop-5.png" /]
+
+The **interval** values that are greater than 500 and **timeout** values that are greater than 10000 are not recommended. 
+
+If this does not make the test pass, set the value of **DEBUG** to **true** and run the tests again - this will launch a browser instance and allow you to see what is being tested, what the test sees and where it fails (or timeouts): 
+
+[image assetsSrc="js-application-cartube-workshop-6.png" /]
+
+If the actions are happening too fast, you can increase the value of **slowMo**. 
+
+If the browser hangs, you can close it and abort any remaining tests by focusing the terminal window and pressing `[Ctrl+C]` followed by the letter "**y**" and `[Enter]`. 
+
+The final thing to look for is the exact row where the test fails: 
+
+[image assetsSrc="js-application-cartube-workshop-7.png" /]
+
 [/slide]
