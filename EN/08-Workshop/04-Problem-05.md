@@ -1,4 +1,4 @@
-# BONUS
+# Bonus
 [slide hideTitle]
 # Search
 
