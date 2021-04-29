@@ -15,11 +15,11 @@ describe('Even or odd', () => {
 
 # Description
 
-Create **unit tests** for a function `isOddOrEven()`, that checks whether the **length** of a passed in string is **even** or **odd**.
+Create **unit tests** for the function `isOddOrEven()` that checks whether the **length** of the passed string is **even** or **odd**.
 
 If the passed parameter is **NOT** a string, it returns **undefined**.
 
-If the parameter in a string, it returns either "**even**" or "**odd**" based on the length of the string.
+If the parameter is a string, it returns either "**even**" or "**odd**", based on the length of the string.
 
 You are provided with an implementation of the `isOddOrEven()` function.
 
@@ -41,7 +41,7 @@ We can see there are three outcomes for the function:
 - Returning `even`
 - Returning `odd`
 
-Write one or two tests passing in parameters that are **NOT** of type string to the function, expecting it to return undefined. 
+Create one or two tests passing in parameters that are **NOT** of type string, expecting it to return **undefined**. 
 
 ```js
 describe('Is Odd Or Even', function () {
@@ -63,9 +63,9 @@ describe('Is Odd Or Even', function () {
 
 After we check the validation, it is time to check whether the function works correctly with valid arguments. 
 
-Write a test for each of the cases. 
+Create a test for each of the cases. 
 
-In the first test, we pass a string with an **even** length and a second one where we pass a string with an **odd** length.
+In the first test, we pass a string with an **even** length, whereas, in the second one, we pass a string with an **odd** length.
 
 ```js
 describe('Is Odd Or Even', function () {
@@ -82,7 +82,7 @@ describe('Is Odd Or Even', function () {
 })
 ```
 
-Finally, make a test passing multiple strings in a row to ensure the function works correctly.
+Finally, create a test passing multiple strings in a row to ensure the function works correctly.
 
 ```js
 describe('Is Odd Or Even', function () {
@@ -207,17 +207,17 @@ describe('Char lookup', () => {
 [task-description]
 # Description
 
-Write **unit tests** for a function that retrieves a character at a given **index** from a **string**.
+Create **unit tests** for a function that retrieves a character at a given **index** from a **string**.
 
 You have a function called `lookupChar()` that has the following functionality:
 
 - `lookupChar(string, index)` - accepts a **string** and an **integer**, which is the index of the character we are looking for
 
-- If the **first parameter** is **NOT** a string or the **second parameter** is `NOT a number` - it should return **undefined**
+- If the **first parameter** is **NOT** a string or the **second parameter** is **NOT a number** - it should return "**undefined**"
 
-- If **both parameters** are of the correct type, but the value of the index is incorrect, meaning bigger than or equal to the string length, or a negative number - it should return `Incorrect index` 
+- If **both parameters** are of the correct types, but the value of the index is incorrect, meaning bigger than or equal to the string length, or a negative number - it should return "**Incorrect index**"
 
-- If both parameters have correct types and values, returns the character at the specified index in the string
+- If both parameters have correct types and values - returns the character at the specified index in the string
 
 Here is the implementation of the `lookupChar()` function.
 
@@ -236,16 +236,16 @@ function lookupChar(string, index) {
 
 # Hints
 
-A good first step in testing a method is usually to determine all exit conditions. 
+A good first step in testing a method is to determine all exit conditions. 
 
 Reading through the specification or taking a look at the implementation, we can determine three main exit conditions:
 - Returning `undefined`
-- Returning an `empty string`
+- Returning `Incorrect index`
 - Returning the `character at the specified index`
 
-Now that we have our exit conditions, we start checking in what situations we can reach them.
+We have our exit conditions, so we start checking in what situations we can reach them.
 
-If any of the parameters are of an **incorrect type**,  we return  **undefined**.
+If any of the parameters are of an **incorrect type**, we return **undefined**.
 
 ```js
 describe('Character Look Up', function () {
@@ -265,9 +265,9 @@ describe('Character Look Up', function () {
 
 If we take a closer look at the implementation, we see that the check uses `Number.isInteger()` instead of `typeof(index === number)` to check the index. 
 
-While **typeof** would protect us from getting an **index** that is a **non-number**, it will not protect us from receiving a **floating-point number**. 
+`typeof()` would protect us from getting an **index** that is a **non-number**, but it will not protect us from receiving a **floating-point number**. 
 
-The condition says that the index needs to be an **integer**, since floating-point numbers will not be valid indexes.
+The condition says that the index needs to be an **integer**, so floating-point numbers will not be valid indexes.
 
 ```js
 describe('Character Look Up', function () {
@@ -279,7 +279,7 @@ describe('Character Look Up', function () {
 })
 ```
 
-Moving on to the next exit condition - returning an empty string.
+Moving on to the next exit condition - returning **Incorrect index**.
 
 This is the case when we pass in an index that is a negative number or an index that is outside of the bounds of the string. 
 
@@ -474,14 +474,14 @@ Test an object called **mathEnforcer**, which will have the following functional
 
 - `addFive(num)`: A function that accepts a **single** parameter
     - if the parameter is **NOT** a **number**, the function should return **undefined**
-    - if the parameter is a **number**, **adds 5** to it, returns the result
+    - if the parameter is a **number**, **adds 5** to it and returns the result
 
 - `subtractTen(num)`: A function that accepts a **single** parameter
     - if the parameter is **NOT** a **number**, the function should return **undefined**
     - if the parameter is a **number**, **subtracts 10** from it and returns the result
 
 - `sum(num1, num2)`: A function that accepts **two** parameters
-    - if any of the 2 parameters is NOT a number, the function should return undefined
+    - if any of the 2 parameters is NOT a number, the function should return **undefined**
     - if **both** parameters are **numbers**, the function should return their **sum**
 
 Here is the implementation of the **mathEnforcer** object:
@@ -533,15 +533,15 @@ describe('Math Enforcer', function() {
 })
 ```
 
-Your tests will be supplied with a variable called "mathEnforcer" which contains the mentioned logic above. 
+Your tests will be supplied with a variable called "mathEnforcer", which will contain the mentioned logic above. 
 
-All test cases you write should reference this variable.
+All test cases should reference this variable.
 
 # Hints
 
 - Test how the program behaves when passing in negative values
 
-- Test the program with floating-point numbers using Chai’s `closeTo()` method to compare floating-point numbers
+- Test the program with floating-point numbers using Chai's `closeTo()` method to compare floating-point numbers
 
 [/task-description]
 [code-io /]
@@ -1024,7 +1024,7 @@ An instance of the class should support the following operations:
 
 - All passed-in arguments should be strings
 
-If any of the parameters is not a string, throws a type error with the following message: `Argument must be a string`.
+If any of the parameters is not a string, throws a **TypeError** with the following message: `Argument must be a string`.
 
 # Example
 
@@ -1727,7 +1727,7 @@ Error: Active status must be a boolean
 
 ## Your Task
 
-Using **Mocha** and **Chai** write JavaScript tests that test the full functionality of the **PaymentPackage** class.
+Using **Mocha** and **Chai**, write JavaScript tests that test the full functionality of the **PaymentPackage** class.
 
 Ensure the instances of the **PaymentPackage** class have all the required functionality and validation. 
 
