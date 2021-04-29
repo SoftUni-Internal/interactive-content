@@ -49,7 +49,7 @@ The creation of new objects is **abstracted behind an interface**, which can cau
 |---|---|
 | dynamic object creation   |  can overcomplicate code (too many sub-classes) |
 | abstraction   |  can introduce problems with unit testing  |
-|+reusability and easier maintenance   |   |
+| reusability and easier maintenance   |   |
 
 One of the greatest benefits of the **factory pattern** is that we can move the object instantiation logic to a single place in the program, which can make the code easier to support. 
 
