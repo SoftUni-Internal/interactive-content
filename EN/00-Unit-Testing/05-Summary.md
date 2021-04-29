@@ -7,7 +7,7 @@
 
 - Unit tests check if your code works as expected
 
-- There are a lot of frameworks and assertion libraries that assist with writing unit tests
+- There are a lot of frameworks and assertion libraries that assist in writing unit tests
 
 - You can either test for expected behavior, or for the correct state of a component
 
@@ -47,11 +47,11 @@ describe('ComparingStrings', function() {
 });
 ```
 
-- You can install frameworks and libraries **globally** which makes them available for all your projects
+- You can install frameworks and libraries **globally**, which makes them available for all your projects
 
 - We looked at two types of development approaches:
     - **Code-first** - writing the code precedes any unit tests
-    - **TDD (Test-Driven Development)** - tests are written first, describing the expected behavior and the code is based on them
+    - **TDD (Test-Driven Development)** - tests are written first, describing the expected behavior, and then the code is based on them
 
 ## In the next lesson you will learn:
 
