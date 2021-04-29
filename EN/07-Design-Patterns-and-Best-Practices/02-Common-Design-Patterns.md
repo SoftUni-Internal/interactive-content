@@ -48,9 +48,9 @@ The creation of new objects is **abstracted behind an interface**, which can cau
 
 |  **Pros** |**Cons**   |
 |---|---|
-| dynamic object creation   |  can overcomplicate code (too many sub-classes) |
-| abstraction   |  can introduce problems with unit testing  |
-| reusability and easier maintenance   |   |
+| Dynamic object creation   |  Can overcomplicate code (too many **subclasses**) |
+| Abstraction   |  Can introduce problems with unit testing  |
+| Reusability and easier maintenance   |   |
 
 One of the greatest benefits of the **factory pattern** is that we can move the object instantiation logic to a single place in the program, which can make the code easier to support. 
 
@@ -168,7 +168,7 @@ This means that the code in the **else** block would be executed, which might no
 [/slide]
 
 [slide hideTitle]
-# EDecorator Pattern: Example
+# Decorator Pattern: Example
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-19-20-examples-with-the-decorator-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -240,7 +240,8 @@ The client is only **coupled** to the facade and not to the subsystem(s) behind 
 
 |  **Pros** |**Cons**   |
 |---|---|
-|You can **isolate** your code from the **complexity of** a **subsystem** | Facade can be coupled to too many objects, also known as **overcoupling**. |
+| You can **isolate** your code from the **complexity of** a **subsystem** | Facade can be coupled to too many objects, also known as **overcoupling** |
+| Helps achieve **loose coupling**, which makes software easier to extend | Highly **dependent** on the facade interface |
 
 The facade pattern can reduce complexity when several modules are communicating with each other or when the client needs to use several classes at once.
 
@@ -337,10 +338,10 @@ Your username would subsequently be added to their **subscriber** list, and each
 
 |  **Pros** |**Cons**   |
 |---|---|
-|broadcast **changes** and **updates** | can add unnecessary complexity  |
-| new observers can be added to the subject with no modification to its code |  unpredictable order of sending notifications |
-| add and remove observers at any time |  |
-| **loose coupling** between subject and observer |  |
+| Broadcast **changes** and **updates** | Can add unnecessary complexity  |
+| New observers can be added to the subject with no modification to its code |  Unpredictable order of sending notifications |
+| Add and remove observers at any time |  |
+| **Loose coupling** between subject and observer |  |
 
 By using the observer pattern, we introduce **loose coupling** between the subject and its observers. 
 
