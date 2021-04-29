@@ -32,15 +32,15 @@ As you can see, the **client** sends a **request**, and the **server** sends a *
 
 The most used methods are:
 
-- **GET** retrieves or loads a resource
-- **POST** creates or stores a resource
-- **PUT** updates a resource
-- **DELETE** removes a resource
-- **PATCH** updates partially a resource
-- **HEAD** retrieves headers of a resource
-- **OPTIONS** returns the HTTP methods that the server supports for the specified URL
+- **GET** - retrieves or loads a resource
+- **POST** - creates or stores a resource
+- **PUT** - updates a resource
+- **DELETE** - removes a resource
+- **PATCH** - updates partially a resource
+- **HEAD** - retrieves headers of a resource
+- **OPTIONS** - returns the HTTP methods that the server supports for the specified URL
 
-All HTTP methods are **case sensitive**.
+All HTTP methods are **case-sensitive**.
 
 If we write them in lowercase, they will not work.
 
@@ -56,7 +56,7 @@ They must be in **uppercase**.
 
 We send a **GET** request when we want to obtain data from the server.
 
-The GET request is used most often.
+The **GET** request is used most often.
 
 Here is an example:
 
@@ -78,7 +78,7 @@ The next lines are the **headers** and the **body** - `<CRLF>`.
 
 We use the `<CRLF>` sequence to separate the header from the body.
 
-Since this is a GET request, the body is **empty**.
+Since this is a **GET** request, the body is **empty**.
 
 [/slide]
 
@@ -110,7 +110,7 @@ Cache-Control: no-cache
 
 Here we have the **request line**, the **headers**, and the **body**.
 
-But this time, the **body** holds the submitted data.
+This time, the **body** holds the submitted data.
 
 [/slide]
 
@@ -120,9 +120,9 @@ But this time, the **body** holds the submitted data.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-8-http-response-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Once a request has been sent, the server must return a **response**.
+Once a request has been sent, the server has to return a **response**.
 
-This response will look like this:
+The response will look like this:
 
 ```
 HTTP/1.1 200 OK
@@ -154,7 +154,7 @@ Then we have the **body**, which holds the data that we have requested.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-9-http-response-status-codes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Every response has a **status code**, from which we know if the request is successful or not.
+Every response has a **status code**, from which we understand if the request is successful or not.
 
 These are some of the codes:
 
@@ -185,9 +185,9 @@ We can set the **Content-Type** to be **JSON-encoded**.
 
 It will look like this: `Content-Type: application/json`.
 
-We can also set the **Content-Type** to be `Content-Type: text/html`
+We can also set the **Content-Type** to be: `Content-Type: text/html`
 
-If we want to download a pdf, we need to configure it as follows:
+If we want to download a **PDF** file, we need to configure it as follows:
 
 ```
 Content-Type: application/pdf
