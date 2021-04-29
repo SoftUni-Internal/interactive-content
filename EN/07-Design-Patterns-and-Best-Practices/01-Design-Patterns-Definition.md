@@ -149,7 +149,7 @@ It is also useful when refactoring and almost always **improves** code usability
 
 ## Adapter
 
-The **adapter pattern** allows users to connect programming components that typically cannot work together
+The **adapter pattern** allows users to connect programming components that typically cannot work together.
 
 We can do that by translating one interface to another.
 
@@ -157,7 +157,7 @@ We can do that by translating one interface to another.
 
 ## Proxy
 
-The **proxy pattern** is implemented when an object acts as a surrogate or a placeholder for another
+The **proxy pattern** is implemented when an object acts as a surrogate or a placeholder for another.
 
 Typically, the proxy object **extends** the original object.
 
@@ -186,7 +186,7 @@ This is also known as a "**cursor**".
 
 ## Mediator
 
-The **mediator pattern** is implemented by having a **single object responsible** for the **communication** between various other modules of the application
+The **mediator pattern** is implemented by having a **single object responsible** for the **communication** between various other modules of the application.
 
 That way, we avoid too many direct relationships between components.
 
@@ -194,7 +194,7 @@ That way, we avoid too many direct relationships between components.
 
 ## Observer
 
-In the **observer pattern**, an object called **subject** maintains a list of **dependant** objects and notifies them of any state changes, usually by calling one of their methods
+In the **observer pattern**, an object called **subject** maintains a list of **dependant** objects and notifies them of any state changes, usually by calling one of their methods.
 
 The **Observer** pattern facilitates a great object-oriented design and promotes loose coupling.
 
@@ -202,7 +202,7 @@ The **Observer** pattern facilitates a great object-oriented design and promotes
 
 ## Visitor
 
-The **visitor pattern** is practical when there is a **collection of objects** new functionality needs to be added to them without changing the objects themselves
+The **visitor pattern** is practical when there is a **collection of objects** new functionality needs to be added to them without changing the objects themselves.
 
 The new logic is assigned to a newly-created object, called the **visitor**.
 
