@@ -15,6 +15,7 @@ The **product manufacturing** logic does not need to be known by the client usin
 
 New types of objects can be added at any time to the manufacturing process of the factory. 
 
+## When To Use
 
 We use this pattern when:
 
@@ -30,7 +31,7 @@ It calls upon the **factory** and **receives** the created object:
 
 - When you need to create a **loosely coupled system**
 
-## When not to use
+## When Not To Use
 
 If utilized incorrectly, it can introduce a lot of **unnecessary** complexity into the code. 
 
@@ -41,7 +42,7 @@ The creation of new objects is **abstracted behind an interface**, which can cau
 [/slide]
 
 [slide hideTitle]
-# Pros and Cons
+# Factory Pattern: Pros and Cons
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-13-pros-and-cons-of-the-factory-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -62,7 +63,7 @@ This is because you can add new types of features without risking breaking the e
 [/slide]
 
 [slide hideTitle]
-# Example
+# Factory Pattern: Example
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-14-15-examples-with-the-factory-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -114,13 +115,13 @@ The **decorator pattern** is a structural design pattern that promotes code reus
 
 With this pattern, extra responsibilities or behaviors can be **added** to objects during **runtime** without breaking the code that uses them.
 
-## When to use
+## When To Use
 
 - When you need to add a **functionality** to an object either dynamically (during runtime) or statically, without affecting the **behavior** of other objects from the same class
 
 - When extending with subclasses is not practical
 
-## When not to use
+## When Not To Use
 
 The decorators can introduce problems when your code relies on specific types of objects and checks their type. 
 
@@ -155,19 +156,19 @@ This means that the code in the **else** block would be executed, which might no
 [/slide]
 
 [slide hideTitle]
-# Pros and Cons
+# Decorator Pattern: Pros and Cons
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-18-pros-and-cons-of-the-decorator-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 |  **Pros** |**Cons**   |
 |---|---|
-| extend functionality without modifying the objects that you are decorating   | can add too many small objects  |
-|add and withdraw responsibilities as needed  | can cause issues when the client relies heavily on the concrete type of components  |
-| supports the Open/Closed SOLID principle   | instantiating the components can become more complicated |
+| Extend functionality without modifying the objects that you are decorating   | Can add too many small objects  |
+| Add and withdraw responsibilities as needed  | Can cause issues when the client relies heavily on the concrete type of components  |
+| Supports the Open/Closed SOLID principle   | Instantiating the components can become more complicated |
 [/slide]
 
 [slide hideTitle]
-# Example
+# EDecorator Pattern: Example
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-19-20-examples-with-the-decorator-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -203,7 +204,7 @@ decoratedEbook.info();
 
 The decorator accepts a parameter "**ebookReader**" - the object we want to decorate and a new property **model**. 
 
-In this way, the decorated ebook reader would have an additional property and the `info()` function has been extended accordingly without modifying the original "**EbookReader**" class.
+In this way, the decorated e-book reader would have an additional property and the `info()` function has been extended accordingly without modifying the original "**EbookReader**" class.
 
 [/slide]
 
@@ -223,7 +224,7 @@ We implement it by creating a "**wrapper**" class, **encapsulating** the subsyst
 
 The client is only **coupled** to the facade and not to the subsystem(s) behind it.
 
-## Use it when you have 
+## Use It When You Have
 
 - A **complex** system, and you need a **simple** interface to communicate with it
 
@@ -319,7 +320,7 @@ This method loops through the subject's list of observers, and inside the loop, 
 
 When the observer no longer needs to receive updates from the subject, it can be **detached** (removed from the subject's collection).
 
-## When to Use
+## When To Use
 
 This pattern comes in handy when you have a class that needs to be **monitored** by other classes in the program, and they need to be **aware** of any changes in **its state**. 
 
