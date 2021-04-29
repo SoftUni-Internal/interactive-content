@@ -58,9 +58,11 @@ In other words, they help with the writing of scalable code.
 
 Let us look at some of the most common design patterns from this category:
 
-- **Constructor**: this design pattern is class-based and is one of the most commonly used
+## Constructor
 
-Being a basic language construct, it is often used when creating objects of any kind.
+The **constructor** design pattern is class-based and is one of the most commonly used.
+
+With **classes** being a basic language construct, it is often used when creating **objects** of any kind.
 
 ```js live
 class Book {
@@ -82,15 +84,19 @@ let harryPotter = new Book('Harry Potter', 'J. K. Rowling');
 console.log(harryPotter.getInfo());
 ```
 
-- **Factory**: the **factory pattern** is also widely used in programming
+## Factory
+
+The **factory pattern** is also widely used in programming.
 
 It is another class-based pattern that also deals with object creation. 
 
-The main difference between the factory pattern and the other creational patterns is that it does not require utilizing constructors. 
+The main difference between the factory pattern and the other creational patterns is that it **does not require** utilizing constructors. 
 
 [image assetsSrc="js-application-design-patterns-01.png" /]
 
-- **Prototype**: the **prototype pattern** is used to create objects that serve as a blueprint for other objects
+## Prototype
+
+The **prototype pattern** is used to create objects that serve as a blueprint for other objects.
 
 This is achievable through **prototypical inheritance**, which is supported natively in JavaScript.
 
@@ -102,7 +108,9 @@ This is typically applied when object creation through the **constructor** metho
 
 [image assetsSrc="js-application-design-patterns-02.png" /]
 
-- **Singleton**: the **singleton pattern** is when you want to have a **single** instance of an object
+## Singleton**
+
+The **singleton pattern** is when you want to have a **single** instance of an object.
 
 Then you provide global **access** to all of the clients that need to use it from a **single** endpoint.
 
@@ -123,27 +131,35 @@ By implementing these patterns, you can introduce new **functionalities** withou
 
 Some of the most common structural design patterns are:
 
-- **Decorator**: used when you need to add functionalities to an existing class without the risk of introducing bugs into existing implementations of that class
+## Decorator
+
+The **decorator** pattern is used when you need to add functionalities to an **existing** class, without the risk of introducing **bugs** into existing implementations of that class.
 
 Imagine you have a **monumental class** that is used throughout your application and **changing** anything inside it would affect the entire application.
 
 [image assetsSrc="js-application-design-patterns-04.png" /]
 
-- **Facade**: the **facade pattern** is used in multi-layer applications where only a **certain logic** and functionality need to be exposed to **different clients**, shielding them from any complex business logic that the clients do not need to be concerned with
+## Facade
+
+The **facade pattern** is used in multi-layer applications where only a **certain logic** and functionality need to be exposed to **different clients**, shielding them from any complex business logic that the clients do not need to be concerned with.
 
 It is also useful when refactoring and almost always **improves** code usability.
 
 [image assetsSrc="js-application-design-patterns-05.png" /]
 
-- **Adapter**: the **adapter pattern** allows users to connect programming components that typically cannot work together
+## Adapter
+
+The **adapter pattern** allows users to connect programming components that typically cannot work together
 
 We can do that by translating one interface to another.
 
 [image assetsSrc="js-application-design-patterns-06.png" /]
 
-- **Proxy**: the **proxy pattern** is implemented when an object acts as a surrogate or a placeholder for another
+## Proxy
 
-Typically, the proxy object extends the original object.
+The **proxy pattern** is implemented when an object acts as a surrogate or a placeholder for another
+
+Typically, the proxy object **extends** the original object.
 
 It is a placeholder, with the possibility of adding some checks that help control access to the object for which it is a proxy.
 
@@ -160,25 +176,33 @@ It is a placeholder, with the possibility of adding some checks that help contro
 
 Some commonly used patterns in this category are:
 
-- **Iterator**: provides a way to access the elements of a collection (aggregate object) without exposing the underlying representation
+## Iterator
+
+The **iterator pattern** provides a way to access the elements of a collection (aggregate object) without exposing the underlying representation.
 
 This is also known as a "**cursor**".
 
 [image assetsSrc="js-application-design-patterns-08.png" /]
 
-- **Mediator**: this pattern is implemented by having a **single object responsible** for the **communication** between various other modules of the application
+## Mediator
+
+The **mediator pattern** is implemented by having a **single object responsible** for the **communication** between various other modules of the application
 
 That way, we avoid too many direct relationships between components.
 
 [image assetsSrc="js-application-design-patterns-09.png" /]
 
-- **Observer**: this is a pattern in which an object called **subject** maintains a list of **dependant** objects and notifies them of any state changes, usually by calling one of their methods
+## Observer
+
+In the **observer pattern**, an object called **subject** maintains a list of **dependant** objects and notifies them of any state changes, usually by calling one of their methods
 
 The **Observer** pattern facilitates a great object-oriented design and promotes loose coupling.
 
 [image assetsSrc="js-application-design-patterns-10.png" /]
 
-- **Visitor** - this pattern is practical when there is a **collection of objects** new functionality needs to be added to them without changing the objects themselves
+## Visitor
+
+The **visitor pattern** is practical when there is a **collection of objects** new functionality needs to be added to them without changing the objects themselves
 
 The new logic is assigned to a newly-created object, called the **visitor**.
 
