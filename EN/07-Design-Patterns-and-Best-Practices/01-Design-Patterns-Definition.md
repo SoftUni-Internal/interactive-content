@@ -5,13 +5,13 @@
 
 **Design patterns** are like blueprints for solutions to common, recurring problems that programmers face during development. 
 
-The main benefit of knowing and using design patterns is that they have been developed and tested over the years by many different people to solve similar issues in many different software languages. 
+The main benefit of knowing and using design patterns is that they have been developed and tested in time by many different people to solve similar issues in multiple software languages. 
 
-These patterns are not necessarily unique to the language being used.
+These patterns are not necessarily unique to the currently used language.
 
-Rather, they are design principles that can be applied almost universally.
+Instead, they are design principles that are applicable almost universally.
 
-**Design patterns** improve code reusability, readability, and help avoid the need for extensive refactoring. 
+**Design patterns** improve code reusability and readability, eliminating the need for extensive refactoring. 
 
 They are already proven, optimized, and are short solutions to given problems. 
 
@@ -21,13 +21,13 @@ They are not complete solutions but rather tried and tested approaches to solvin
 
 Patterns are **general solutions** to common problems that occur in software design.
 
-They save time that is spent on software architecture as they provide guidelines on how to design applications, without the need to come up with new ways that are not necessarily proven to work well in the long run.
+They save time spent on software architecture as they provide guidelines on designing applications, without the need for devising new ways that are not necessarily proven to work well in the long run.
 
-**Design patterns** allow developers to benefit from the previous experience and knowledge of other developers by applying common principles in the software's design.
+**Design patterns** enable developers to benefit from previous experience and knowledge by applying **common principles** in the software's design.
 
-Understanding and using **design patterns** help facilitate better communication between developers, providing a common language with terms that are understood universally by people in the software development field.
+Understanding and using **design patterns** help facilitate better communication between developers, providing a common language with terms universally understandable by people in the software development field.
 
-*Each pattern describes a problem, that occurs over and over again in our environment and then describes the core of the solution to that problem in such a way that you can use this solution a million times over, without ever doing it in the same way twice.* - Christopher Alexander (1977), A Pattern Language: Towns, Buildings, Construction.
+*Each pattern describes a problem that occurs over and over again in our environment. It then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice.* - Christopher Alexander (1977), A Pattern Language: Towns, Buildings, Construction.
 
 [/slide]
 
@@ -36,11 +36,11 @@ Understanding and using **design patterns** help facilitate better communication
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-5-categories-of-design-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Design patterns can be divided into three categories:
+Design patterns are grouped into **three** categories:
 
 - **Creational**: deals with the object creation mechanism
 
-- **Structural**: deals with the relationships between entities
+- **Structural**: handles the relationships between entities
 
 - **Behavioral**: describes the interaction between objects that are not similar and the division of responsibilities among them
 
@@ -52,15 +52,15 @@ Design patterns can be divided into three categories:
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-6-creational-design-patterns-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Creational design patterns focus on the mechanisms for creating objects to solve specific problems by controlling the object creation process.
+Creational design patterns focus on the object creation mechanisms used to increase code flexibility and reuse.
 
-They help with the writing of scalable code.
+In other words, they help with the writing of scalable code.
 
 Let us look at some of the most common design patterns from this category:
 
 - **Constructor**: this design pattern is class-based and is one of the most commonly used
 
-It is a basic language construct and is often used when creating objects of any kind.
+Being a basic language construct, it is often used when creating objects of any kind.
 
 ```js live
 class Book {
@@ -86,19 +86,19 @@ console.log(harryPotter.getInfo());
 
 It is another class-based pattern that also deals with object creation. 
 
-The main difference between the factory pattern and the other creational patterns is that it does not require the use of constructors. 
+The main difference between the factory pattern and the other creational patterns is that it does not require utilizing constructors. 
 
 [image assetsSrc="js-application-design-patterns-01.png" /]
 
 - **Prototype**: the **prototype pattern** is used to create objects that serve as a blueprint for other objects
 
-This is achieved through **prototypical inheritance**, which is natively supported in JavaScript.
+This is achievable through **prototypical inheritance**, which is supported natively in JavaScript.
 
 You are essential **copying existing objects** without your code having to depend on their classes.
 
-The objects are **clones** rather than created by using **constructors**, which improves **performance**.
+The objects are **clones**, rather than created by using **constructors**, which improves **performance**.
 
-This is typically used when the creation of an object through the **constructor** method would be time-consuming.
+This is typically applied when object creation through the **constructor** method would be time-consuming.
 
 [image assetsSrc="js-application-design-patterns-02.png" /]
 
@@ -131,11 +131,11 @@ Imagine you have a **monumental class** that is used throughout your application
 
 - **Facade**: the **facade pattern** is used in multi-layer applications where only a **certain logic** and functionality need to be exposed to **different clients**, shielding them from any complex business logic that the clients do not need to be concerned with
 
-It is also useful in refactoring and almost always **improves** code usability.
+It is also useful when refactoring and almost always **improves** code usability.
 
 [image assetsSrc="js-application-design-patterns-05.png" /]
 
-- **Adapter**: the **adapter pattern** allows users to connect programming components that normally cannot work together
+- **Adapter**: the **adapter pattern** allows users to connect programming components that typically cannot work together
 
 We can do that by translating one interface to another.
 
@@ -143,9 +143,9 @@ We can do that by translating one interface to another.
 
 - **Proxy**: the **proxy pattern** is implemented when an object acts as a surrogate or a placeholder for another
 
-Typically the proxy object does extend the original object.
+Typically, the proxy object extends the original object.
 
-It is a placeholder with the possibility of adding some checks that help control access to the object that it is a proxy for.
+It is a placeholder, with the possibility of adding some checks that help control access to the object for which it is a proxy.
 
 [image assetsSrc="js-application-design-patterns-07.png" /]
 
@@ -156,7 +156,7 @@ It is a placeholder with the possibility of adding some checks that help control
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-8-behavioral-design-patterns-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Behavioral design patterns** focus on improving the communication between dissimilar objects.
+**Behavioral design patterns** focus on improving the communication between disparate objects.
 
 Some commonly used patterns in this category are:
 
@@ -168,19 +168,19 @@ This is also known as a "**cursor**".
 
 - **Mediator**: this pattern is implemented by having a **single object responsible** for the **communication** between various other modules of the application
 
-That way we avoid too many direct relationships between components.
+That way, we avoid too many direct relationships between components.
 
 [image assetsSrc="js-application-design-patterns-09.png" /]
 
-- **Observer**: this is a pattern in which an object called **subject** maintains a list of **dependant** objects and notifies them of any state changes, usually through calling one of their methods
+- **Observer**: this is a pattern in which an object called **subject** maintains a list of **dependant** objects and notifies them of any state changes, usually by calling one of their methods
 
-The **Observer** pattern facilitates a good object-oriented design and promotes loose coupling.
+The **Observer** pattern facilitates a great object-oriented design and promotes loose coupling.
 
 [image assetsSrc="js-application-design-patterns-10.png" /]
 
-- **Visitor** - this pattern is useful when there is a **collection of objects** new functionality needs to be added to them without changing the objects themselves
+- **Visitor** - this pattern is practical when there is a **collection of objects** new functionality needs to be added to them without changing the objects themselves
 
-The new logic is added to a new object called the **visitor**.
+The new logic is assigned to a newly-created object, called the **visitor**.
 
 [image assetsSrc="js-application-design-patterns-11.png" /]
 
@@ -195,24 +195,25 @@ The new logic is added to a new object called the **visitor**.
 
 - The design pattern names and **established vocabulary** aid in the **communication** between developers
 
-- Design patterns are robust approaches to solving problems that can be adapted to suit the needs of the specific case where they are used
+- Design patterns are robust approaches to solving problems that could be altered to suit the needs of the specific use case
 
-They are not set in stone and, if a pattern does not work for you, you can always modify it.
+- They can be easily **altered** if a pattern does not work for you
 
 - They improve the software development process and can **reduce errors**
 
 - They are **scalable** and **reusable**
 
-- They can **speed up development** and less time is spent on finding solutions
+- They can **speed up development** and reduce time spent on finding solutions
 
 ## Drawbacks of Design Patterns
 
 - Design patterns come with **consequences** and if applied **incorrectly** or without regard to how the application might change in the future, they can **cause problems**
 
-- Patterns do not provide us with a **concrete code to use**, they simply provide a possible **approach** to take when designing applications
+- Patterns do not provide us with a **concrete code to use**
+  * instead, they provide a possible **approach** to take when designing applications
 
-- They look **simple** but they have **intricacies** and can be misunderstood and applied incorrectly
+- They look **simple** but they have **intricacies** and could be misunderstood and used incorrectly
 
-They should be used only if their **benefits** outweigh the cost of using them.
+They should only be applied if their **benefits** outweigh the cost of using them.
 
 [/slide]
