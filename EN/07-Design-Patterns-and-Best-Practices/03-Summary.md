@@ -7,7 +7,8 @@
 
 - **Design patterns** are proven approaches to **common software problems** 
   * these **blueprints** allow us to benefit from the knowledge and **experience** of other programmers 
-  * they are not **concrete solutions** and need to be **implemented** on a case by case basis after **comparing** the benefits and consequences from their use
+
+- They are not **concrete solutions** and need to be **implemented** on a case by case basis after **comparing** the benefits and consequences from their use
 
 - **Categories of design patterns:**
     * **creational**: focuses on object **creation** mechanisms
