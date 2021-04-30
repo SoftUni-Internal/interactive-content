@@ -1,4 +1,4 @@
-# Problem 6: Tournament of Christmas 
+# Problema 6: Tournament of Christmas 
 [slide hideTitle]
 # Tournament of Christmas 
 
@@ -6,7 +6,7 @@
 [code-editor language=javascript]
 ```
 function tournament(input) {
-   // Write your code here
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -21,17 +21,17 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Scrie un program care urmărește performanța echipei tale la un turneu caritabil de Crăciun.
+Scrieți un program care urmărește performanța echipei voastre la un turneu caritabil de Crăciun.
 
-În fiecare zi primiți numele jocurilor lângă comanda `Finish.
+În fiecare zi primiți numele unor jocuri, până la introducerea comenzii "Finish".
 
-Câștigând fiecare joc câștigi **20 de dolari pentru caritate**.
+Câștigarea unui joc reprezintă **20 de dolari donați pentru caritate**.
 
 Trebuie să calculați câți **bani ați câștigat la sfârșitul zilei**.
 
-Dacă ai **mai multe jocuri câștigate decât pierdute** - **ești câștigătorul zilei** și suma banilor tăi este majorată cu 10%.
+Dacă aveți **mai multe jocuri câștigate decât pierdute** - **sunteți câștigătorii zilei** și suma este majorată cu 10%.
 
-La **sfârșitul turneului**, dacă ați fost câștigătorul celor mai multor zile, veți câștiga turneul și veți mări toata suma banilor câștigați cu 20%.
+La **sfârșitul turneului**, dacă ați fost câștigători în cele mai multe zile, veți câștiga turneul și veți majora suma câștigată cu 20%.
 
 Nu veți avea niciodată un număr egal de jocuri câștigate și pierdute.
 
@@ -47,25 +47,25 @@ Până la introducerea comenzii "**Finish**", veți primi:
 
 - **Până la introducerea comenzii** "**Finish**", **citiți:**
 
-**Sport** - șir de caractere
+**Joc** - șir de caractere
 
-- **Pentru fiecare sport citit:**
+- **Pentru fiecare joc citit:**
 
-**Result** - Text ce poate avea următoarele valori:  "**win**" sau "**lose**"
+**Result** - text ce poate avea următoarele valori:  "**win**" sau "**lose**"
 
 ## Ieșire
 
-În cele din urmă, se imprimă o linie:
+La final se imprimă o linie:
 
-- Dacă ai câștigat, turneul:
+- Dacă ați câștigat turneul:
 
 "**You won the tournament! Total raised money:** \{**the money earned**\}"
 
-- Dacă ai pierdut, turneul:
+- Dacă ați pierdut turneul:
 
 "**You lost the tournament! Total raised money:** \{**the money earned**\}"
 
-Banii ar trebui să fie **formatați la a doua cifră după punctul zecimal.**
+Suma de bani trebuie să fie **formatată la a doua cifră după punctul zecimal.**
 
 ## Exemplu
 
@@ -86,7 +86,7 @@ Până la introducerea comenzii "**Finish**", calculați suma totală de bani.
 [hint]
 În final, verificați dacă, per total, numărul de câștiguri e mai mare decât numărul de înfrângeri.
 
-În acest caz, adăugați 20% și printați datele de ieșire corespunzătoare.
+În acest caz, adăugați 20% și tipăriți datele de ieșire corespunzătoare.
 [/hint]
 [/hints]
  
