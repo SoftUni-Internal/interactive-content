@@ -550,7 +550,7 @@ public class Program {
 ## Description
 Create a program that:
 
-* Receives a number representin the **amount of money** for each transaction, untill the **END** command is received
+* Receives a number representing the **amount of money** for each transaction, until the **END** command is received
 * **Adds** the money to the **balance** and **prints**: "Increase: \{money\}".  The `money` should be formatted to the **2nd digit** after the decimal point
 * After the **END** command is received, calculates and **prints** the **total balance**: "Total: \{balance\}". The `balance` should be formatted to the **2nd digit** after the decimal point
 
@@ -1736,8 +1736,8 @@ Print out:
 - In case of successful transaction: **"Product sold!"** 
 - In case of unsuccessful transaction: **"Error in transaction!"** 
 - In case we reach the expected amount of money, the following two lines should be printed out:
-    - **"Average CS: \{average payment in cash per person\}"**
-    - **"Average CC: \{average payment by card per person\}"**
+    - **"Average CS:** \{**average payment in cash per person**\}"
+    - **"Average CC:** \{**average payment by card per person**\}"
  All payments must be **formatted to the second digit after the decimal point**.
 - In case the **End** command is received, the following line should be printed out:
     - **"Failed to collect required money for charity."**

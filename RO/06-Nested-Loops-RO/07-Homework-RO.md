@@ -1915,18 +1915,6 @@ Din tabelul ASCII găsim simbolul de imprimat - '\#' și îl imprimăm de două 
 [/hint]
 [/hints]
 
-[hints]
-[hint]
-Citiți numărul ca șir, salvați lungimea acestuia într-o variabilă folosind metoda **length()**.
-
-Găsiți mai multe **informații** despre acest lucru pe Internet.
-
-Pentru a lua ultima cifră a numărului, împărțiți-l la 10 (**num % 10**) și salvați-l într-o variabilă.
-
-Apoi **eliminați ultima cifră a numărului**, împărțindu-l la 10 (**num / 10**) astfel încât următoarea cifră care trebuie luată să fie din nou ultima.
-[/hint]
-[/hints]
-
 [/task-description]
 [tests]
 [test open]

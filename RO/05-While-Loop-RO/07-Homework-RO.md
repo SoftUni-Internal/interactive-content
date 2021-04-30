@@ -1745,8 +1745,8 @@ Imprimați pe consolă:
 - În cazul unei tranzacții reușite: **"Product sold!"** 
 - În cazul unei tranzacții eșuate: **"Error in transaction!"**  
 - Dacă suma tuturor produselor cumpărate **depășește sau atinge suma așteptată**, programul a fost finalizat și **două linii** sunt imprimate pe consolă: 
-    - **"Average CS: \{average payment in cash per person\}"**
-    - **"Average CC: \{average payment by card per person\}"**
+    - **"Average CS:** \{**average payment in cash per person**\}"
+    - **"Average CC:** \{**average payment by card per person**\}"
 
 Plățile trebuie **formatate la a două cifră după punctul zecimal**.
 - Când este primită comanda **"End"**, trebuie tipărită **linia** următoare:

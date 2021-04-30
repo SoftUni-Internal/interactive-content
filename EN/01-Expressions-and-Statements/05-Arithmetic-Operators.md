@@ -83,7 +83,7 @@ System.out.println(a / 0);
 ## Dividing Floating-Point Numbers
 Here are some examples of **floating division**. 
 
-When we divide floating point numbers, the result is always a **float number** and the division will always prodice a result.
+When we divide floating point numbers, the result is always a **float number** and the division will always produce a result.
 
 It also works correctly with the special values `+∞` and `-∞`:
 ```java live

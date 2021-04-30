@@ -103,7 +103,7 @@ public class Program {
 Create a program to convert USD to EUR:
   * Read a **floating-point number**: the amount dollars to be converted
   * Convert **dollars to euro** (use this **transfer rate** of dollars to euro: 0.88)
-  * Print the converted value in euro
+  * Print the converted value in euro, formatted to the 2nd digit after the decimal point.
 
 ## Examples
 | **Input** | **Output** |

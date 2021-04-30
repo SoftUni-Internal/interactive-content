@@ -735,7 +735,7 @@ Create a program, that:
 | 50|  |
 [hints]
 [hint]
-A prime number is **an integer** that can only be devided by `itself` and the number `1` **without a remainder**.
+A prime number is **an integer** that can only be divided by `itself` and the number `1` **without a remainder**.
 [/hint]
 [/hints]
 
@@ -1756,11 +1756,11 @@ The program should accept words from the console and calculate their value until
 
 [hints]
 [hint]
-The first letter is "H| and it\s ASCII value is 72, "o" has value 111, "u" has value 117, "s" has value 115, "e" has value 101
+The first letter is "H" and its ASCII value is 72, "o" has value of 111, "u" has value of 117, "s" has value of 115, "e" has value of 101.
 Their sum is 516.
 [/hint]
 [hint]
-Performs same calculations for the following words and determines that **Destination** has the highest value - 1154
+We perform same calculations for the following words and determine that **Destination** has the highest value - 1154.
 [/hint]
 [/hints]
 
@@ -1915,17 +1915,6 @@ On this line, we print ZERO once.
 [hint]
 The last digit of the number is 2. 2\+33=35
 From the ASCII table we find the symbol to print - '\#' and we print it twice
-[/hint]
-[/hints]
-
-[hints]
-[hint]
-Read the number as a String, save its length in a variable using the **length() method**.
-
-Find more **information** about it on the Internet
-To take the last digit of the number, divide it by 10 (**num % 10**) and save it in a variable
-
-Then **remove the last digit of the number**, dividing it by 10 (**num / 10**) so that the next digit to take is again the last one.
 [/hint]
 [/hints]
 

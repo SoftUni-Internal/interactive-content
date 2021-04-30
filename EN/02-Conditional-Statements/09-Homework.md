@@ -286,6 +286,7 @@ rectangle
 [test open]
 [input]
 trapezoid
+2
 [/input]
 [output]
 Unknown figure
@@ -331,6 +332,7 @@ circle
 [test]
 [input]
 figure
+4
 [/input]
 [output]
 Unknown figure

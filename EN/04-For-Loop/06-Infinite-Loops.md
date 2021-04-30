@@ -12,7 +12,7 @@ An **infinite loop** is a loop that **repeats indefinitely**.
 An infinite **for-loop** occurs when **it is set up so that it never meets its exit condition**.
 
 Here is what a **for-loop** with no exit condition might look like:
-```java live
+```java
 for ( ; ; ) {
   System.out.println("Hello World");
 }
