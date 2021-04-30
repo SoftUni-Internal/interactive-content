@@ -18,7 +18,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Sunteți angajat de o companie TV pentru a scrie un program care să calculeze dacă este posibil ca clienții să cumpere accesul la un serial pe care aceștia doresc să îl urmărească.
+Sunteți angajat de o companie TV pentru a scrie un program care să determine dacă este posibil ca clienții să cumpere accesul la serialele pe care aceștia doresc să le urmărească.
 
 Aveți un buget și un număr de seriale pe care utilizatorul va dori să le achiziționeze.
 
@@ -42,8 +42,8 @@ Pentru fiecare serial primiți două rânduri:
 
 ## Ieșire
 Ieșirea constă într-un singur rând în formatul următor:
-- Dacă bugetul este mai mare sau egal cu prețul serialului: **"You bought all the series and left with** \{**money left**\}**$"**
-- Dacă bugetul este mai mic decât prețul serialului: **"You need** \{**money needed**\}**$ more to buy the series!"**
+- Dacă bugetul este mai mare sau egal cu prețul serialelor: **"You bought all the series and left with** \{**money left**\}**$"**
+- Dacă bugetul este mai mic decât prețul serialelor: **"You need** \{**money needed**\}**$ more to buy the series!"**
 
 Rezultatul trebuie formatat la două cifre după punctul zecimal.
 
