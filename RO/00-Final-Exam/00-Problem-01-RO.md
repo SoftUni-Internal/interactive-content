@@ -1,4 +1,4 @@
-# Problem 1: Study Materials
+# Problema 1: Study Materials
 [slide hideTitle]
 # Study Materials
 
@@ -21,32 +21,32 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Anul școlar a început deja și Annie trebuie să cumpere un anumit număr de **pachete de creioane**, **pachete de markere** și un **detergent** pentru curățarea plăcii.
+Anul școlar a început deja și Annie trebuie să cumpere un anumit număr de **pachete de creioane**, **pachete de markere** și **detergent** pentru curățarea tablei.
 
-Este un client obișnuit al unei librării și există o **reducere** pentru ea, care reprezintă un **procent** din total.
+Ea este un client obișnuit al unei librării și beneficiază de o **reducere**, care reprezintă un **procent** din prețul total.
 
 Scrieți un program care să calculeze câți bani va trebui să **economisească** Annie pentru a plăti factura, ținând cont de următoarea listă de prețuri:
 
-- **Pachet de creioane:** $5.80
+- **Un pachet de creioane:** $5.80
 
-- **Markere:** $7.20
+- **Un pachet de markere:** $7.20
 
-- Un **litru de detergent**: $1.20 
+- **Un litru de detergent:** $1.20 
 
 ## Intrare
-Intrarea vine ca o **matrice de patru numere**:
+Intrarea este dată ca o **matrice de patru numere**:
 
-- Numărați pachetele cu creioane - număr întreg în intervalul \[0 ... 100\]
+- Numărul pachetelor de creioane - număr întreg în intervalul \[0 ... 100\]
 
-- Numărați pachetele de markeri - număr întreg în intervalul \[0 ... 100\]
+- Numărul pachetelor de markere - număr întreg în intervalul \[0 ... 100\]
 
-- Litri de detergent pentru curățarea plăcii - număr real în intervalul \[0.00 ... 50.00\]
+- Litri de detergent - număr real în intervalul \[0.00 ... 50.00\]
 
 - Reducerea procentuală - număr întreg în intervalul \[0 ... 100\]
 
 ## Ieșire
 
-Imprimați pe consolă câți bani va avea Annie pentru a-și plăti factura. 
+Imprimați pe consolă suma de care va avea nevoie Annie pentru a plăti factura. 
 
 Rezultatul trebuie să fie **formatat** la a treia zecimală.
 
@@ -64,7 +64,7 @@ Rezultatul trebuie să fie **formatat** la a treia zecimală.
 [hint]
 Calculați prețul individual al creioanelor, al markerelor și al detergentului. 
 
-Apoi, calculați prețul total.
+După aceea, calculați prețul total.
 [/hint]
 [hint]
 Determinați prețul final rezultat în urma aplicării reducerii.
