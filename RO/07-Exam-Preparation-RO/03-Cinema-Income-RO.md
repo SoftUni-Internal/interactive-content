@@ -23,7 +23,7 @@ public class Main {
 # Descriere
 Ați fost angajat de un cinematograf pentru a scrie un program care calculează dacă există numărul necesar de spectatori pentru a umple sala cinematografului și care este profitul evenimentului.
 
-Pe prima linie veți primi numărul de locuri în sală.
+Pe prima linie veți primi numărul de locuri din sală.
 
 Pe rândurile următoare, până la primirea comenzii "**Movie time!**", veți primi numere care reprezintă numărul de oameni care intră în sală.
 
