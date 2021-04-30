@@ -20,7 +20,7 @@ public class Main {
 # Descriere
 În pauza de masă doriți să urmăriți un episod din serialul preferat.
 
-Sarcina dvs. este să scrieți un program care vă va ajuta să determinați dacă aveți suficient timp pentru a viziona episodul.
+Sarcina voastră este să scrieți un program care vă va ajuta să determinați dacă aveți suficient timp pentru a viziona episodul.
 
 În pauza de masă petreceți timpul pentru a lua masa și pentru a vă relaxa.
 
