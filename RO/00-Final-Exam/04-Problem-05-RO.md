@@ -1,4 +1,4 @@
-# Problem 5: Care of Puppy
+# Problema 5: Care of Puppy
 [slide hideTitle]
 # Care of Puppy
 
@@ -6,7 +6,7 @@
 [code-editor language=javascript]
 ```
 function careOfPuppy(input) {
-	// Write your code here
+	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -21,11 +21,11 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Descriere
-Annie găsește un cățeluș de care să aibă grijă până când găseste pe cineva să-l adopte.
+Annie găsește un cățeluș de care trebuie să aibă grijă până când găsește pe cineva să îl adopte.
 
-Mănâncă zilnic o anumită cantitate de mâncare.
+Cățelușul mănâncă zilnic o anumită cantitate de hrană.
 
-Scrieți un program care să verifice dacă **cantitatea de mâncarea achiziționată pentru cățeluș** va fi suficientă **până când câinele va fi adoptat.**
+Scrieți un program care să verifice dacă **cantitatea de hrană achiziționată pentru cățeluș** va fi suficientă **până când cacesta va fi adoptat.**
 
 ## Intrare
 
@@ -33,19 +33,18 @@ Scrieți un program care să verifice dacă **cantitatea de mâncarea achizițio
 
 - **Primul Element:**
 
-**Cantitatea de mâncare achiziționată pentru cățel, exprimată în kilograme**: un număr întreg din intervalul \[1  ... 100\]
+**Cantitatea de hrană achiziționată pentru cățeluș, exprimată în kilograme** - un număr întreg din intervalul \[1  ... 100\]
 
-- Fiecare element care urmează, până la introducerea comenzii "**Adopted**", va reprezenta **cantitatea de mâncare consumată de cățel la fiecare masă, exprimată în grame**, un număr întreg din intervalul \[10 ... 1000\]
+- Fiecare element care urmează, până la introducerea comenzii "**Adopted**", va reprezenta **cantitatea de hrană consumată de cățeluș la fiecare masă, exprimată în grame** - un număr întreg din intervalul \[10 ... 1000\]
 
 ## Ieșire
+O linie este tipărită pe consolă:
 
-Se printează o linie în consolă:
-
-- Dacă avem o cantitate de mâncare cu mențiunea **is enough**, se printează:
+- Dacă cantitatea de hrană este **suficientă**, tipăriți:
 
 "**Food is enough! Leftovers:** \{**leftover food**\} **grams.**" 
 
-- Dacă avem o cantitate de mâncare cu mențiunea **not enough**, se printează:
+- Dacă cantitatea de hrană **nu este suficientă**, tipăriți:
 
 "**Food is not enough. You need** \{**need the amount of food**\} **grams more.**"
 
@@ -59,12 +58,12 @@ Se printează o linie în consolă:
  
 [hints]
 [hint]
-Calculați cantitatea totală de mâncare, exprimată în grame. 
+Calculați cantitatea totală de hrană, exprimată în grame. 
 
-Apoi, determinați cantitatea totală de mâncare consumată de către cățel înainte ca acesta să fie adoptat.
+Apoi, determinați cantitatea totală de hrană consumată de către cățel înainte ca acesta să fie adoptat.
 [/hint]
 [hint]
-Verificați dacă a mai rămas mâncare și printați datele de ieșire corespunzătoare.
+Verificați dacă există hrană rămasă și tipăriți datele de ieșire corespunzătoare.
 [/hint]
 [/hints]
 
