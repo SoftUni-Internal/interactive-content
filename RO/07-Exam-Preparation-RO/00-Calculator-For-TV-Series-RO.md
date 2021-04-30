@@ -20,9 +20,9 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program care calculează cât va dura să urmăriți toate episoadele unui serial în **minute**.
+Scrieți un program care calculează cât va dura să vizionați toate episoadele unui serial, în **minute**.
 
-Veți primi **numărul de sezoane**, **numărul de episoade din sezon** și **durata fiecărui episod**.
+Veți primi **numărul de sezoane**, **numărul de episoade ale unui sezon** și **durata fiecărui episod**.
 
 În fiecare episod există **reclame**, care măresc durata finală a unui episod cu 20%.
 
@@ -50,7 +50,7 @@ Trebuie să imprimați pe consolă timpul necesar pentru a viziona toate episoad
 [hints]
 
 [hint]
-Calculați durata reclamelor pe episod.
+Calculați durata reclamelor dintr-un episod.
 [/hint]
 [hint]
 
@@ -62,7 +62,7 @@ Adăugați durata suplimentară pentru episoadele **speciale**.
 [/hint]
 [hint]
 
-Calculați timpul total necesar pentru a vedea tot serialul.
+Calculați timpul total necesar pentru a viziona tot serialul.
 [/hint]
 
 [/hints]
