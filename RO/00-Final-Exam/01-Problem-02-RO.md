@@ -1,4 +1,4 @@
-# Problem 2: Mountain Run
+# Problema 2: Mountain Run
 [slide hideTitle]
 # Mountain Run
 
@@ -6,7 +6,7 @@
 [code-editor language=javascript]
 ```
 function mountainRun(input) {
-	// Write your code here
+	// Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -23,28 +23,28 @@ function adapter(input, code) {
 
 # Descriere
 
-George decide să îmbunătățească recordul pentru cea mai rapidă urcare pe Mont Blanc.
+George decide să depășească recordul pentru cea mai rapidă urcare pe Mont Blanc.
 
-Consola introduce recordul în câteva secunde pe care Georgi trebuie să îl îmbunătățească, distanța în metrii pe care trebuie să o urce și timpul în secunde în care trebuie să urce pe 1 metru.
+Datele de intrare constau în recordul pe care George trebuie să îl depășească - exprimat în secunde, distanța - în metri, și timpul necesar pentru avansarea cu un metru metru - în secunde.
 
-Scrieți un program care să calculeze **dacă a făcut față sarcinii**, dat fiind:
+Scrieți un program care să determine **dacă a reușit să își îndeplinească scopul**, luând în considerare următorul aspect:
 
-- Panta terenului **îl încetinește** la fiecare **50 de metri cu 30 de secunde**
+- Panta terenului **îl încetinește** **cu 30 de secunde** pentru fiecare **50 de metri** parcurși
 
-**Calculați** timpul în secunde pentru care George va urca **distanța** până la vârf și **diferența de la înregistrare.**
+**Calculați** timpul de care George are nevoie pentru a urca **distanța** până la vârf și **diferența față de recordul anterior.**
 
-Când **se calculează de câte ori George va încetini** ca urmare a pantei câmpului, rezultatul ar trebui să fie **rotunjit în jos la cel mai apropiat număr întreg.**
+Când **se calculează de câte ori George va încetini** ca urmare a pantei terenului, rezultatul trebuie să fie **rotunjit în jos la cel mai apropiat număr întreg.**
 
 
 ## Intrare
-Datele de intrare sunt date sub forma unui **vector care conține 3 numere**:
+Datele de intrare sunt date sub forma unei **matrice care conține 3 numere**:
 
-- **Primul Număr:**
+- **Primul număr:**
 
 Recordul exprimat în secunde, un număr real din intervalul \[0.00 … 100000.00\]
 
 
-- **Al doilea Număr:**
+- **Al doilea număr:**
 
 Distanța în metri, un număr real din intervalul \[0.00 … 100000.00\]
 
@@ -57,15 +57,15 @@ Timpul necesar urcării unui metru, exprimat în secunde, un număr real din int
 
 Imprimarea pe consolă depinde de rezultate:
 
-- Dacă George a îmbunătățit înregistrarea, imprimăm: 
+- Dacă George a depășit recordul, imprimați: 
 
 "**Yes! The new record is** \{**George's time**\} **seconds.**"
 
-- Dacă NU a îmbunătățit înregistrarea, imprimăm:
+- Dacă NU a depășit recordul, imprimați:
 
 "**No! He was** \{**time needed**\} **seconds slower.**" 
 
-Rezultatul trebuie să fie **formatat** la a doua cifră după punctul zecimal
+Rezultatul trebuie să fie **formatat** la a doua cifră după punctul zecimal.
 
 ## Exemplu
 
@@ -78,12 +78,12 @@ Rezultatul trebuie să fie **formatat** la a doua cifră după punctul zecimal
 
 [hints]
 [hint]
-Calculați timpul necesar în care George va urca întreaga distanță. 
+Calculați timpul de care George are nevoie pentru a urca întreaga distanță. 
 
-Apoi, determinați cât de mult va fi încetinit din cauza terenului, și adăugați acel interval de timp la timpul total.
+Apoi, determinați cât de mult va fi încetinit din cauza terenului și adăugați acel timp la timpul total.
 [/hint]
 [hint]
-Verificați dacă acesta va bate recordul curent și printați datele de ieșire corecte.
+Verificați dacă acesta va depăși recordul curent și imprimați datele de ieșire corecte.
 [/hint]
 [/hints]
 
