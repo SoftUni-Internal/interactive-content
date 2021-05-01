@@ -201,7 +201,7 @@ If the actions are happening too fast, you can increase the value of **slowMo**.
 
 If the browser hangs, you can close it and abort any remaining tests by focusing the terminal window and pressing `[Ctrl+C]` followed by the letter "**y**" and `[Enter]`. 
 
-The final thing to look for is the exact row where the test fails: 
+The detail thing to look for is the exact row where the test fails:
 
 [image assetsSrc="js-application-cartube-workshop-7.png" /]
 
