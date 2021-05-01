@@ -38,7 +38,7 @@ Programul vostru trebuie să tipărească **statistici despre hrana consumată**
 
 - Procentul de hrană consumată din cantitatea totală
 
-- Procentul de hrană consumată de câine, respectiv de pisică
+- Procentul de hrană consumată de câine, respectiv de pisică (din cantitatea totală de hrană consumată)
 
 
 ## Intrare
@@ -98,9 +98,9 @@ Procentul de hrană consumată **trebuie formatat la a doua cifră după punctul
 Țineți cont de faptul că, odată la 3 zile, animalele de companie primesc un premiu.
 [/hint]
 [hint]
-Tipăriți numărul total de biscuiți care au fost consumați. 
+Tipăriți cantitatea totală de biscuiți cosumați. 
 
-Determinați procentul de hrană consumată din cantitatea totală de hrană, atât de către câine, cât și de către pisică.
+Determinați procentul de hrană consumată din cantitatea totală de hrană, cât și procentul de hrană consumată de câine, respectiv de pisică.
 [/hint]
 [/hints]
 
