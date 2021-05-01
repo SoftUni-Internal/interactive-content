@@ -38,7 +38,7 @@ Scrieți un program care să verifice dacă **cantitatea de hrană achiziționat
 - Fiecare element care urmează, până la introducerea comenzii "**Adopted**", va reprezenta **cantitatea de hrană consumată de cățeluș la fiecare masă, exprimată în grame** - un număr întreg din intervalul \[10 ... 1000\]
 
 ## Ieșire
-O linie este tipărită pe consolă:
+Un mesaj este tipărit pe consolă:
 
 - Dacă cantitatea de hrană este **suficientă**, tipăriți:
 
