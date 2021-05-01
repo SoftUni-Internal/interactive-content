@@ -25,7 +25,7 @@ Annie găsește un cățeluș de care trebuie să aibă grijă până când găs
 
 Cățelușul mănâncă zilnic o anumită cantitate de hrană.
 
-Scrieți un program care să verifice dacă **cantitatea de hrană achiziționată pentru cățeluș** va fi suficientă **până când cacesta va fi adoptat.**
+Scrieți un program care să verifice dacă **cantitatea de hrană achiziționată pentru cățeluș** va fi suficientă **până când acesta va fi adoptat.**
 
 ## Intrare
 
@@ -58,9 +58,9 @@ O linie este tipărită pe consolă:
  
 [hints]
 [hint]
-Calculați cantitatea totală de hrană, exprimată în grame. 
+Calculați cantitatea totală de hrană exprimată în grame. 
 
-Apoi, determinați cantitatea totală de hrană consumată de către cățel înainte ca acesta să fie adoptat.
+După aceea, determinați cantitatea totală de hrană consumată de către cățel înainte ca acesta să fie adoptat.
 [/hint]
 [hint]
 Verificați dacă există hrană rămasă și tipăriți datele de ieșire corespunzătoare.
