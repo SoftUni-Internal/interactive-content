@@ -55,7 +55,7 @@ Timpul necesar urcării unui metru, exprimat în secunde - un număr real din in
 
 ## Ieșire
 
-Imprimarea pe consolă depinde de rezultate:
+Imprimarea pe consolă depinde de rezultat:
 
 - Dacă George a depășit recordul, imprimați: 
 
