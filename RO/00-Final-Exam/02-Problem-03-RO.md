@@ -45,7 +45,7 @@ Scrieți un program care **calculează suma care trebuie plătită** pentru coma
 
 Pentru comenzi:
 
-- De la **$400 până la $1000 inclusiv, există o reducere de 15%**
+- De la **$400 până la $1000 inclusiv există o reducere de 15%**
 
 - Peste **$1000 există o reducere de 50%**
 
@@ -55,11 +55,11 @@ Datele de intrare sunt date sub forma unei **matrice care conține 3 elemente:**
 
 - **Primul element:**
 
-Aroma - text cu următoarele posibilități: **Watermelon**, **Mango**, **Pineapple** sau **Raspberry**
+Aroma - text care poate avea următoarele valori: **Watermelon**, **Mango**, **Pineapple** sau **Raspberry**
 
 - **Al doilea element:**
 
-Tipul pachetului - text cu următoarele posibilități: **small** sau **big**
+Tipul pachetului - text care poate avea următoarele valori: **small** sau **big**
 
 - **Al treilea element:**
 
