@@ -1,24 +1,24 @@
 # Tipul Numerelor Reale
 
 [slide hideTitle]
-# Tipuri în Virulă Mobilă
+# Tipuri în Virgulă Mobilă
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-18-19-What-are-floating-point-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Ar trebui să utilizați un **tip cu virgulă mobilă** ori de câte ori aveți nevoie de un număr cu o zecimală, cum ar fi 9.99 sau 3.14515.
+Utilizăm **tipul de date în virgulă mobilă** ori de câte ori trebuie să stocăm un număr zecimal, cum ar fi 9.99 sau 3.14515.
 
-Tipurile cu virgulă mobilă, de asemenea:
+Tipurile în virgulă mobilă au următoarele caracteristici:
 
-- Au autonomie și precizie în funcție de memoria utilizată
+- Au un interval specific și precizie (numărul de zecimale) în funcție de memoria utilizată
 - Uneori se comportă anormal în calcule
-- Poate deține valori foarte mici și foarte mari, cum ar fi **0.00000000000001** și **10000000000000000000000000000.0**
+- Pot deține valori foarte mici și foarte mari, cum ar fi **0.00000000000001** și **10000000000000000000000000000.0**
 
 Tipurile valide sunt **float** și **double**:
 
 | Tip | Dimensiune | Precizie |
 | --- | --- | --- |
-| float  | 32 bit | up to 7 digits  |
-| double | 64 bit | up to 16 digits |
+| float  | 32 bit | până la 7 cifre  |
+| double | 64 bit | până la 16 cifre |
 
 [/slide]
 
@@ -27,18 +27,18 @@ Tipurile valide sunt **float** și **double**:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-20-floating-point-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- **Float**: tipul de date poate stoca numere fracționare. 
+- **Float**: folosit pentru a stoca numere fracționare
 
-Rețineți că ar trebui să încheiați valoarea cu un `f`:
+Rețineți că trebuie să încheiați valoarea cu sufixul `f`:
 
 ```java live
 float myNum = 5.75f;
 System.out.println(myNum);
 ```
 
-Valoarea **implicită** a **float** este **0,0F**.
+Valoarea **implicită** a tipului **float** este **0.0F**.
 
-- **Double**: în acest curs când avem nevoie de numere în virgulă mobilă, de cele mai multe ori vom folosi **double**
+- **Double**: vom folosi **double** în majoritatea timpului 
 
 ```java live
 double myNum = 19.99;
@@ -52,7 +52,7 @@ System.out.println(myNum);
 # PI Precizie
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-21-PI-precision-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Există diferențe de precizie atunci când folosim **float** și **double**
+Există diferențe de precizie atunci când folosim **float** și **double**:
 
 ```java live
 float floatPI = 3.141592653589793238f;
@@ -61,11 +61,11 @@ System.out.println("Float PI is: " + floatPI);
 System.out.println("Double PI is: " + doublePI);
 ```
 
-**NOTĂ**: Sufixul `f` din prima afirmație!
+**NOTĂ**: Sufixul `f` din prima instrucțiune semnifică faptul că variabila trebuie interpretată ca fiind **float**
 
-- Numerele reale sunt interpretate implicit ca duble
+- Numerele reale sunt interpretate implicit ca **double**
 
-- Ar trebui să le convertiți în mod explicit în **float**
+- Putem să le convertim în mod explicit în **float**
 [/slide]
 
 [slide hideTitle]
@@ -79,16 +79,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care convertește lire sterline în dolari SUA formatat în a doua zecimală.
+Scrieți un program care convertește lire sterline în dolari americani.
 
-**1 lire sterline = 1.31 dolari**
+Rezultatul trebuie formatat cu două zecimale.
+
+**1 liră sterlină = 1.31 dolari**
 
 ## Exemple
 |**Intrare**|**Ieșire**|
@@ -161,17 +163,17 @@ Scrieți un program care convertește lire sterline în dolari SUA formatat în 
 
 
 [slide hideTitle]
-# Notatie Stiintifica
+# Notație Științifică
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-23-scientific-notation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Când lucrați cu un număr mare, notația științifică este extrem de utilă.
+Când lucrați cu numere mari, notația științifică este extrem de utilă.
 
-În notația științifică, litera `E` reprezintă `10 la puterea lui E`.
+În notația științifică, litera `E` reprezintă `10 la puterea E`.
 
-De exemplu, `1.51E + 1` înseamnă același lucru ca și `1.51x10 ^ 1`.
+De exemplu, `1.51E + 1` înseamnă `1.51x10 ^ 1`.
 
-Să trecem în revistă câteva exemple de notații științifice mai jos.
+Să trecem în revistă câteva exemple de notații științifice:
 
 ```java live
 double exampleVariableOne = 1E+3;
@@ -191,9 +193,9 @@ System.out.println(exampleVariableThree);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-24-floating-point-division-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Împărțirea integrală și împărțirea în virgulă mobilă sunt diferite.
+Împărțirea întreagă și împărțirea în virgulă mobilă sunt diferite.
 
-Vedeți  exemplele de mai jos:
+Vedeți exemplele de mai jos:
 
 ```java live
 System.out.println(10 / 4);
@@ -241,7 +243,7 @@ System.out.println(num);
 # Clasa BigDecimal
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-26-big-decimal-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Rețineți că uneori numerele cu virgulă mobilă funcționează incorect!
+Uneori numerele în virgulă mobilă se comportă anormal la efectuarea unor calcule.
 
 Vă încurajăm să citiți mai multe despre `IEEE 754`.
 
@@ -283,14 +285,14 @@ import java.math.BigDecimal;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care acceptă un număr n de numere,  calculează și imprimă **suma exactă** (fără rotunjire).
+Creați un program care acceptă **n** numere, calculează și imprimă **suma exactă** (fără rotunjire).
 
 ## Exemple
 |**Intrare**|**Ieșire**|
