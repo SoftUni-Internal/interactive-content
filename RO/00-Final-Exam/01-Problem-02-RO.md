@@ -25,7 +25,7 @@ function adapter(input, code) {
 
 George decide să depășească recordul pentru cea mai rapidă urcare pe Mont Blanc.
 
-Datele de intrare constau în recordul pe care George trebuie să îl depășească - exprimat în secunde, distanța - în metri, și timpul necesar pentru avansarea cu un metru metru - în secunde.
+Datele de intrare constau în recordul pe care George trebuie să îl depășească - exprimat în secunde, distanța - în metri, și timpul necesar pentru urcarea unui metru - în secunde.
 
 Scrieți un program care să determine **dacă a reușit să își îndeplinească scopul**, luând în considerare următorul aspect:
 
@@ -41,17 +41,17 @@ Datele de intrare sunt date sub forma unei **matrice care conține 3 numere**:
 
 - **Primul număr:**
 
-Recordul exprimat în secunde, un număr real din intervalul \[0.00 … 100000.00\]
+Recordul exprimat în secunde - un număr real din intervalul \[0.00 … 100000.00\]
 
 
 - **Al doilea număr:**
 
-Distanța în metri, un număr real din intervalul \[0.00 … 100000.00\]
+Distanța în metri - un număr real din intervalul \[0.00 … 100000.00\]
 
 
 - **Al treilea număr**
 
-Timpul necesar urcării unui metru, exprimat în secunde, un număr real din intervalul \[0.00 … 1000.00\]
+Timpul necesar urcării unui metru, exprimat în secunde - un număr real din intervalul \[0.00 … 1000.00\]
 
 ## Ieșire
 
@@ -74,7 +74,6 @@ Rezultatul trebuie să fie **formatat** la a doua cifră după punctul zecimal.
 |mountainRun([5554.36, 1340, 3.23]) | Yes! The new record is 5108.20 seconds. |
 |mountainRun([1377, 389, 3])|No! He was 0.00 seconds slower.|
 |mountainRun([10164, 1400, 25]) | No! He was 25676.00 seconds slower. |
- Verificați dacă acesta va bate recordul curent și printați datele de ieșire corecte.
 
 [hints]
 [hint]
