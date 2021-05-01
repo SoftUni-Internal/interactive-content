@@ -31,31 +31,31 @@ Trebuie să calculați câți **bani ați câștigat la sfârșitul zilei**.
 
 Dacă aveți **mai multe jocuri câștigate decât pierdute** - **sunteți câștigătorii zilei** și suma este majorată cu 10%.
 
-La **sfârșitul turneului**, dacă ați fost câștigători în cele mai multe zile, veți câștiga turneul și veți majora suma câștigată cu 20%.
+La **sfârșitul turneului**, dacă ați fost câștigători în majoritatea zilelor, veți câștiga turneul și veți majora suma câștigată cu 20%.
 
 Nu veți avea niciodată un număr egal de jocuri câștigate și pierdute.
 
 ## Intrare
 
-**Datele de intrare sunt introduse sub forma unei matrice de elemente:**
+**Datele de intrare sunt introduse sub forma unei matrice de elemente.**
 
 Până la introducerea comenzii "**Finish**", veți primi:
 
 - **Primul Element:**
 
-**Numărul de zile ale turneului**: un număr întreg din intervalul \[1 ... 20\]
+**Numărul de zile ale turneului** - un număr întreg din intervalul \[1 ... 20\]
 
 - **Până la introducerea comenzii** "**Finish**", **citiți:**
 
-**Joc** - șir de caractere
+**Sport** - șir de caractere
 
-- **Pentru fiecare joc citit:**
+- **Pentru fiecare sport citit:**
 
-**Result** - text ce poate avea următoarele valori:  "**win**" sau "**lose**"
+**Result** - text ce poate avea următoarele valori: "**win**" sau "**lose**"
 
 ## Ieșire
 
-La final se imprimă o linie:
+La final se imprimă un mesaj:
 
 - Dacă ați câștigat turneul:
 
@@ -84,7 +84,7 @@ Verificați dacă jocurile câștigate sunt în număr mai mare decât cele pier
 Până la introducerea comenzii "**Finish**", calculați suma totală de bani.
 [/hint]
 [hint]
-În final, verificați dacă, per total, numărul de câștiguri e mai mare decât numărul de înfrângeri.
+La final, verificați dacă per total numărul de victorii e mai mare decât numărul de înfrângeri.
 
 În acest caz, adăugați 20% și tipăriți datele de ieșire corespunzătoare.
 [/hint]
