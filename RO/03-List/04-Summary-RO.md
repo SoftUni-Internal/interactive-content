@@ -4,13 +4,13 @@
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-30-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## În această lecție ați învățat:
-- Listele sunt structuri de date care conțin o secvență de elemente
+- Listele sunt structuri de date care conțin secvențe de elemente
 - Acestea pot fi redimensionate
 - Inițializarea unei liste prin folosirea `new ArrayList<E>()`
 ``` java
 List<String> names = new ArrayList<>();
 ```
-- Metodele pentru liiste
+- Metodele listelor
     - `add()`, `remove()`, `set()`
     - `get()`, `contains()`, `size()`
     ``` java
@@ -18,27 +18,21 @@ List<String> names = new ArrayList<>();
    names.add("Maria");
    names.add("George");
     ```
-- Citirea listelor folosind bucla `for`
+- Citirea listelor cu ajutorul buclei `for`
 
-``` java
-int n = Integer.parseInt(scanner.nextLine()); // First we read a list size
-```
+```java
+//Read the number of elements
+int n = Integer.parseInt(scanner.nextLine()); 
+//Create a new list
+List<Integer> list = new ArrayList<>(); 
 
-``` java
-List<Integer> list = new ArrayList<>(); // Then we initialize our list
-```
-
-``` java
+//Read n elements from the console and add them to the list
 for (int i = 0; i < n; i++) { 
-
-    // citește elementul de pe consolă      
-    int number = Integer.parseInt(scanner.nextLine()); 
-
-    // adaugă elementul la listă        
+    int number = Integer.parseInt(scanner.nextLine());   
     list.add(number); 
 }
 ```
-- Citirea listelor folosind `String.split()`
+- Citirea listelor cu ajutorul metodei `String.split()`
 
 ``` java
 String values = scanner.nextLine();    // input: 10 20 30 40 50
@@ -49,7 +43,7 @@ List<Integer> items = Arrays
         .collect(Collectors.toList()); // convert to List
 ```
 
-- Sortarea Listelor în ordine crescătoare prin - `Collections.sort()`, `Arrays.sort()` sau prin  `Collections.reverse()` pentru sortarea în ordine descrescăto
+- Sortarea listelor în ordine crescătoare prin intermediul metodelor `Collections.sort()` sau `Collections.reverse()` pentru sortarea în ordine descrescătoare
 
 ```java
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
