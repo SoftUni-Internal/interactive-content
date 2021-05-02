@@ -1,4 +1,4 @@
-# Temă de casă
+# Temă Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Smallest of Three Numbers
@@ -17,7 +17,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați o metodă care **imprimă cel mai mic număr dintre 3 numere întrege**.
+Creați o metodă care **imprimă cel mai mic număr dintre 3 numere întregi**.
 
 
 ### Exemplu
@@ -137,7 +137,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați  o metodă care primește **un singur șir** și **imprimă numărul de vocale**.
+Creați o metodă care primește **un singur șir** și **imprimă numărul de vocale prezente în șir**.
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -225,9 +225,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați  o metodă care primește **două caractere** și afișează pe o singură linie **toate caracterele inclluse între ele, în conformitate cu ASCII**.
+Creați o metodă care primește **două caractere** și afișează pe un singur rând **toate caracterele aflate în intervalul format de acestea, în conformitate cu ASCII**.
 
-**NOTĂ:** Dacă valoarea ASCII a doua literă este mai mică decât cea a primei, atunci literele ar trebui inversate.
+**NOTĂ:** Dacă valoarea ASCII a celui de-al doilea caracter este mai mică decât valoarea primului caracter, atunci caracterele trebuie inversate.
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -329,13 +329,13 @@ public class Main {
 ## Descriere
 Creați un program care verifică dacă o parolă dată este **validă**. 
 
-**Regulile** parolei sunt următoarele:
-- **6 - 10 caractere** (inclusiv)
-- Este formată **doar** din **litere și numere**
+**Regulile** de validare a parolei sunt următoarele:
+- Trebuie să conțină **6 - 10 caractere** (inclusiv)
+- Este formată **doar** din **litere și cifre**
 - Conține **cel puțin 2 cifre** 
-Dacă parola este **validă**, imprimați "**Password is valid**". 
+Dacă parola este **validă**, imprimați: "**Password is valid**". 
 
-Dacă nu **este validă**, pentru fiecare regulă încălcată **imprimați unul idntre următoarele mesaje**:
+Dacă nu **este validă**, pentru fiecare regulă încălcată **imprimați unul dintre următoarele mesaje**:
 - "**Password must be between 6 and 10 characters**"
 - "**Password must consist only of letters and digits**"
 - "**Password must have at least 2 digits**"
@@ -457,10 +457,10 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+## Descriere
 Veți primi 3 numere întregi.
 
-Creați o metodă care returnează suma primelor două numere întregi și o altă metodă care scade al treilea număr întreg din rezultatul metodei sum.
+Creați o metodă care returnează suma primelor două numere întregi și o altă metodă care scade al treilea număr întreg din rezultatul metodei care calculează suma.
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -631,7 +631,7 @@ public class Main {
 ## Descriere
 Veți primi un singur șir.
 
-Creați  o metodă care **imprimă caracterul din mijloc**.
+Creați o metodă care **imprimă caracterul din mijloc**.
 
 Dacă **lungimea** șirului este **pară**, atunci există **2 caractere mijlocii**.
 
@@ -770,7 +770,8 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați o metodă care primește un singur întreg **n** și tipărește o matrice `n * n` cu acel număr.
+Creați o metodă care primește un număr întreg **n** și tipărește o matrice `n * n` cu acel număr.
+
 ### Exemplu
 |**Intrare**|**Ieșire** |
 | --- | --- |
@@ -963,7 +964,7 @@ Citiți **2 numere întregi**.
 
 Calculați **factorialul** fiecărui număr.
 
-**Împărțiți primul rezultat la al doilea** și imprimați **rezultatul rotunjit la a doua** zecimală.
+**Împărțiți primul rezultat la al doilea** și imprimați **rezultatul împărțirii, formatat cu două** zecimale.
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -1103,7 +1104,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Creați un program care citește numere întrgi pozitive **până când primește** "**END**", iar pentru fiecare număr **imprimă dacă este sau nu palindrom**.
+Creați un program care citește numere întregi pozitive **până când primește comanda** "**END**".
+
+Pentru fiecare număr **imprimă dacă este sau nu palindrom**.
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -1276,10 +1279,10 @@ public class Main {
 [task-description]
 ## Descriere
 Un **număr de top** este un număr întreg cu următoarele proprietăți:
-- Suma cifrelor sale este divizibilă cu 8, e.g. 8, 16, 88
-- Are cel puțin o cifră impară, ca de exemplu 232, 707, 87578
+- Suma cifrelor sale este divizibilă cu 8, de exemplu 8, 17, 88
+- Are cel puțin o cifră impară, de exemplu 232, 707, 87578
 
-Creați  un program care afișează toate numerele de top din intervalul \[1…n\].
+Creați un program care afișează toate numerele de top din intervalul \[1…n\].
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
