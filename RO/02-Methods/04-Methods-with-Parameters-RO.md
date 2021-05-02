@@ -8,11 +8,11 @@ Parametrii se comportă ca **variabile** înăuntrul unei metode.
 
 Parametrii sunt specificați după numele metodei, **între paranteze**.
 
-Puteți adăuga **câți** parametrii doriți, doar să-i **separați** prin virgule.
+Puteți adăuga **câți** parametri doriți, **separați** prin virgulă.
 
-Următorul exemplu are o metodă ce preia un **șir** numit **firstName** ca parametru.
+Următorul exemplu conține o metodă ce preia un **șir** numit **firstName** ca parametru.
 
-Când metoda este apelată, trecem paramterul  **firstName**, care este folosit în interiorul metodei pentru a afișa întregul nume:
+Când metoda este apelată, îi transmitem parametrul **firstName**, care este folosit în interiorul metodei pentru a afișa întregul nume:
 
 ```java live no-template
 public class MyClass {
@@ -28,9 +28,9 @@ public class MyClass {
 }
 ```
 
-Puteți trece unul sau mai mulți parametrii.
+Puteți transmite unul sau mai mulți parametri. Există posibilitatea și de a nu transmite niciun parametru.
 
-Puteți trece parametrii de diferite tipuri.
+Puteți transmite parametri de diferite tipuri.
 
 Fiecare parametru are un nume și un tip.
 
@@ -122,7 +122,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți o metodă **care primește** o notă între **2.00** și **6.00** și **imprimă nota corespunzătoare în cuvinte**:
+Scrieți o metodă **care primește** o notă între **2.00** și **6.00** și **imprimă evaluarea corespunzătoare**:
 
 * 2.00 – 2.99 - "Fail"
 * 3.00 – 3.49 - "Poor"
@@ -412,11 +412,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care primește un **șir** pe prima linie \(adunare, înmulțire, scădere, împărțire\) și pe următoarele 2 linii primește **2 numere**.
+Creați un program care primește un **șir** pe prima linie \("add", "multiply", "subtract", "divide"\), iar pe următoarele 2 linii primește **2 numere**.
 
-Creați 4 **metode** \(pentru fiecare operație\) și s-o invocați pe cea corectă în funcție de comandă.
+Creați 4 **metode** \(pentru fiecare operație\) și invocați metoda corespunzătoare în funcție de comandă.
 
-Metoda ar trebui să imprimă și rezultatul \(trebuie să fie de tipul void\)
+Metoda trebuie să imprime și rezultatul \(trebuie să fie de tip void\).
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
