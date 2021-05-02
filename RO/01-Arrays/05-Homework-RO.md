@@ -11,19 +11,19 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
-## Descriере
+## Descriеrе
 
-Veți primi un număr de vagoane într-un tren, reprezentate ca  **n**
+Veți primi un număr întreg **n**, care reprezintă numărul de vagoane dintr-un tren. 
 
-În următoarele **n linii** veți primi numărul persoanelor care vor urca pe acel vagon.
+Pe următoarele **n linii** veți primi numărul persoanelor care vor urca în acel vagon.
 
-La final **imprimați întregul tren** și după aceea **calculați câte persoane vor fi in trenul**.
+La final imprimați **numărul de pasageri din fiecare vagon**, urmat de **numărul total de pasageri din tren*.
 
 ### Exemplu
 | **Intrare** | **Ieșire** |
@@ -143,7 +143,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -151,9 +151,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Creați un program, care imparima **elemente comune** în **două matrice**.
+Creați un program care imprimă toate **elementele comune** a **două matrice**.
 
-Trebuie să **comparați elementele** din **a doua matricea** cu elementele din cea **prima**.
+Trebuie să **comparați elementele** din **a doua matrice** cu elementele **primei matrice**.
 
 ### Exemple
 | **Intrare** | **Ieșire** |
@@ -251,7 +251,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -259,13 +259,13 @@ public class Main {
 [task-description]
 
 ## Descriere
-Creați un program care creează **2 matrice**.
+Creați un program care creează **două matrice**.
 
-Aveți un număr **întreg n**.
+Veți primi un **număr întreg n**.
 
-Pe **următoarele n linii** primiți **2 numere întregi**.
+Pe **următoarele n linii** veți primi **2 numere întregi**.
 
-Formați 2 matrici așa cum este arătat **mai jos**.
+Formați două matrice cu un tipar **zig-zag** așa cum este exemplificat **mai jos**.
 
 ### Exemplu
 | **Intrare** | **Ieșire** |
@@ -376,7 +376,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -384,9 +384,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Creați un program care **primește o matrice și un număr de rotații** pe care trebuie să le efectuați (primul element merge la final).
+Creați un program care **primește o matrice și numărul de rotații** pe care trebuie să le efectuați. Rotațiile sunt făcute prin schimbarea elementului corespunzător indicelui 0 cu elementul corespunzător ultimului indice.
 
-**Imprimați** rezultatul  matricei.
+**Imprimați** matricea rezultată.
 
 ### Exemplu
 | **Intrare** | **Ieșire** |
@@ -484,7 +484,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -492,9 +492,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Creați un program pentru a **găsi cele mai mari numere întregi** dintr-o matrice.
+Creați un program pentru a **găsi numere întregi de tip top** dintr-o matrice.
 
-Un integer de top  este un  număr întreg care este **mai mare** decât toate elementele **din dreapta sa**.
+Un număr întreg de tip **top** este un număr întreg care este **mai mare** decât toate elementele **din dreapta sa**.
 
 ### Exemplu
 | **Intrare** | **Ieșire** |
@@ -582,18 +582,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care să determine dacă există **un element în matrice** astfel încât **suma elementelor din stânga sa** să fie **egală** cu **suma elementelor din dreapta sa** .
+Creați un program care determină dacă există **un element în matrice** astfel încât **suma tuturor elementelor din stânga sa** să fie **egală** cu **suma tuturor elementelor din dreapta sa**.
 
-Dacă nu există **elemente în stânga/dreapta**, suma lor **este considerată să fie 0**.
+Dacă nu există **elemente în stânga / dreapta**, suma lor **este considerată ca fiind 0**.
 
-**Imprimați** **indexul** care îndeplinește condiția necesară sau "no" dacă nu există un astfel de index. 
+**Imprimați** **indicele** elementului care îndeplinește condiția necesară sau **"no"** dacă nu există un astfel de element. 
 
 ### Exemplu
 | **Intrare** | **Ieșire** |
@@ -742,16 +742,16 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care **găsește cea mai lungă secvență de elemente egale într-o matrice** de numere întregi.
+Creați un program care **găsește cea mai lungă secvență de elemente egale dintr-o matrice** de numere întregi.
 
-Dacă există **câteva secvențe mai lungi**, imprimați-o pe cea **din stânga**.
+Dacă există **mai multe secvențe cu aceeași lungime**, imprimați-o pe cea **din stânga**.
 
 ### Exemplu
 | **Intrare** | **Ieșire** |
@@ -890,14 +890,15 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
- Creați un program, care **imprima toate perechile unice** dintr-o matrice de numere întregi a căror **sumă este egală cu un număr dat**.
+Creați un program care **imprimă toate perechile unice** dintr-o matrice de numere întregi a căror **sumă este egală cu un număr dat**.
+ 
 ### Exemplu
 | **Intrare** | **Ieșire** |
 | --- | --- |
@@ -1009,33 +1010,31 @@ public class Main {
 [task-description]
 ## Descriere
 
-Aveți o **dimensinue a câmpului** și **indicii de buburuze** în interiorul câmpului.
+Vă sunt date **dimensiunea unui câmp** și **indicii unde pot fi găsite buburuze** în interiorul câmpului.
 
-După aceea, pe fiecare nouă linie, până când este dată comanda "**end**", o buburuză **își schimbă poziția** fie la **stânga**, fie la **dreapta** cu o anumită lungime de zbor.
+După aceea, pe fiecare linie nouă, până când este dată comanda "**end**", o buburuză **își schimbă poziția** fie la **stânga**, fie la **dreapta**, cu o anumită **lungime a zborului**.
 
-O **comandă** pentru o buburuză arată in acest mod: "0 right 1".
+O **comandă** care descrie schimbarea poziției arată în acest mod: "0 right 1".
 
-Aceasta înseamnă că insectă mică **plasată pe index-ul 0 ar trebui să zboare un index spre dreapta sa**.
+Acest lucru înseamnă că buburuza **plasată la indicele 0 trebuie să zboare cu un indice în dreapta sa**.
 
-Dacă buburuză **aterizează pe locul colegele sale**, aceasta **continuă să zboare în aceeași direcție cu aceeași lungime a zborului**.
+Dacă buburuză **aterizează pe locul unei alte buburuze**, aceasta **continuă să zboare în aceeași direcție cu aceeași lungime a zborului**.
 
-Dacă buburuză **zboară din afară din câmpului**, ea **dispare**.
+Dacă buburuză **zboară în afara câmpului**, ea **dispare**.
 
-De exemplu, imaginați-vă că vi se oferă un câmp **cu dimensiunea de 3** și buburuze pe indexuri **0 și 1**.
+De exemplu, imaginați-vă că vi se oferă un câmp **cu dimensiunea 3** și buburuze la indicii **0 și 1**.
 
-Dacă buburuza **din index-ul 0 trebuie să zboare la dreapta sa cu lungimea de 1** (0 right 1) ea va încerca să **aterizeze pe index-ul 1** dar, din cauză că acolo există **o altă buburuză** ea va continua mai departe spre dreapta cu o lungime suplimentară de 1, aterizând pe **index-ul 2**.
+Dacă buburuza **de la indicele 0 trebuie să zboare la dreapta sa cu lungimea de 1** (0 right 1) ea va încerca să **aterizeze la indicele 1**, dar din cauză că acolo există deja **o altă buburuză** ea va continua să zboare mai departe spre dreapta cu o lungime suplimentară de 1, aterizând la **indicele 2**.
 
-După aceea, dacă aceeași buburuză trebuie să zboare la dreapta sa cu lungimea de 1 (2 right 1), va ateriza undeva **în afara câmpului**, așa că zboară **departe**: 
+După aceea, dacă aceeași buburuză trebuie să zboare la dreapta sa cu lungimea de 1 (2 right 1), va ateriza undeva **în afara câmpului**, așa că zboară **departe**.
 
-Dacă vi se oferă un index de buburuză **care nu are buburuză** acolo, **nu se întâmplă nimic**.
+Dacă vi se oferă un indice **care nu are o buburuză** acolo, **nu se întâmplă nimic**.
 
-Dacă vi se oferă un index de buburuză care este **în afara câmpului**, **nu se întâmplă nimic**.
+Dacă vi se oferă un indice care se află **în afara câmpului**, **nu se întâmplă nimic**.
 
-Sarcina dvs. este de a crea un program care simulează buburuzele care zboară fără să facă nimic.
+La final, **imprimați toate celulele** câmpului, **separate** prin **spații**.
 
-La final, **imprimați toate celulele** in câmpul **separate** prin **spațiile goale**.
-
-Pentru fiecare celulă care conține buburuze imprimați '1' și pentru fiecare celulă goală imprimați '0'.
+Pentru fiecare celulă care conține o buburuză imprimați '1' și pentru fiecare celulă goală imprimați '0'.
 
 Pentru exemplul de mai sus, rezultatul ar trebui să fie '0 1 0'.
 
@@ -1043,16 +1042,16 @@ Pentru exemplul de mai sus, rezultatul ar trebui să fie '0 1 0'.
 
 - Pe prima linie veți primi un număr întreg - dimensiunea câmpului
 
-- Pe a doua linie veți primi indecșii inițiali ai tuturor buburuzelor separate printr-un spațiu gol
+- Pe a doua linie veți primi indicii inițiali ai tuturor buburuzelor, separați printr-un spațiu
 
-Indecșii dați pot fi sau nu în interiorul domeniului câmpului
+Indicii dați pot sau nu să fie în interiorul câmpului.
 
-- Pe liniile următoare, până când veți obține comanda "**end**" veți primi comenzi în formatul: "\{ladybug index\} \{direction\} \{fly length\}"
+- Pe liniile următoare, până când veți primi comanda "**end**", veți primi comenzi în formatul: "\{ladybug index\} \{direction\} \{fly length\}"
 
 ### Ieșire
 - Imprimați toate celulele din câmpul în formatul: "\{cell\} \{cell\} … \{cell\}"
     - dacă o celulă are buburuză, tipăriți '1'
-    - dacă o celulă este goală, imprimați'0' 
+    - dacă o celulă este goală, imprimați '0' 
 
 
 ### Exemplu
@@ -1069,7 +1068,7 @@ Indecșii dați pot fi sau nu în interiorul domeniului câmpului
 Prima dată, primim dimensiunea câmpului - **3**.
 Apoi, primim indicii cu buburuze - **0** și **1**.
 
-Inițial, câmpul arată în felul următor: `1 1 0`
+Inițial, câmpul arată în felul următor: `1 1 0`.
 [/hint] 
 [hint] 
 Prima comandă este "**0 right 1**":
@@ -1077,14 +1076,14 @@ Prima comandă este "**0 right 1**":
 - right - **direcția** zborului
 - 1 - **lungimea zborului**
 
-După această comandă, câmpul arată așa: `0 0 1`
+După această comandă, câmpul arată așa: `0 0 1`.
 [/hint] 
 [hint] 
 A doua comandă este "**2 right 1**".
 
-Din moment ce lungimea zborului se află în afara matricei, buburuza **își ia zborul**.
+Din moment ce lungimea zborului duce buburuza în afara câmpului, aceasta **zboară mai departe**.
 
-După această comandă, câmpul arată în felul următor: `0 1 0`
+După această comandă, câmpul arată în felul următor: `0 1 0`.
 [/hint] 
 [/hints]
 
