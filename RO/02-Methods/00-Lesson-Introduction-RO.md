@@ -46,6 +46,6 @@
 
 **8. Fluxul de execuție a programului**
 
-- "Call stack"
+- Stiva de apeluri (call stack)
 
 [/slide]
