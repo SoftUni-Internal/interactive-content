@@ -1,11 +1,11 @@
-# Returnarea de Valori de la Metode
+# Returnarea Valorilor din Metode
 
 [slide hideTitle]
-# Instrucțiunea de Returnare
+# Instrucțiunea Return
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-27-28-The-return-statement-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Cuvântul-cheie `return` termină execuția unei metode, și poate fi folosit pentru a returna o valoare de la o metodă.
+Cuvântul cheie `return` returnează o valoare și încheie execuția unei metode.
 
 ```java live no-template
 public class MyClass {
@@ -21,11 +21,11 @@ public class MyClass {
 [/slide]
 
 [slide hideTitle]
-# Folosirea Valorilor de Returnare
+# Utilizarea Valorilor Returnate
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-29-Using-the-return-values-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Valorile de returnare pot fi:
+Valorile returnate pot fi:
 
 * **Atribuite** unei variabile
 ```Java
@@ -37,7 +37,7 @@ int max = getMax(5, 10);
 double total = getPrice() * quantity * 1.20;
 ```
 
-* **Trecute** unei alte metode
+* **Transmise** altei metode
 ```Java
 int age = Integer.parseInt(sc.nextLine());
 ```
@@ -61,7 +61,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați o metodă care calculează și afișează aria unui dreptunghi cu lungimea si lățimea date:
+Creați o metodă care calculează și afișează aria unui dreptunghi cu lungimea si lățimea date.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -161,7 +161,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați o metodă care primește un **șir** și un număr repetat  **n** \(un număr întreg\).
+Creați o metodă care primește un **șir** și un număr întreg **n** de repetări.
 
 Metoda va afișa un nou **șir** \(cel vechi repetat de **n** ori\).
 
@@ -423,13 +423,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați o metodă care calculează prețul total al unei comenzi și-l imprimă pe consolă.
+Creați o metodă care calculează prețul total al unei comenzi și îl imprimă pe consolă.
 
-Metoda va primi unul din **următoarele produse**: cafea, cola, apă, gustări; și o cantitate a produsului.
+Metoda va primi unul din **următoarele produse**: "coffee", "coke", "water" și "snacks" și o cantitate a produsului.
 
 Prețul pentru fiecare produs este:
 
-|**Product**|**Price**|
+|**Produs**|**Preț**|
 | --- | --- |
 | coffee | 1.50 |
 | water | 1.00 |
@@ -438,7 +438,7 @@ Prețul pentru fiecare produs este:
 
 Imprimați rezultatul final rotunjit la a doua zecimală.
 
-## Exemplu
+## Exemple
 |**Intrare**|**Ieșire** |
 | --- | --- |
 | water | 5.00 |
