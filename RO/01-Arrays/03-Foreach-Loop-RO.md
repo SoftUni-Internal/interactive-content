@@ -1,31 +1,30 @@
-# Bucla "for-each" 
+# Bucla For-each 
 [slide hideTitle]
 # Definiție
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/RO/02-Java-Fundamentals-Arrays-18-19-For-each-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`For-each` este o alta tehnica de traversare a matricei ca şi buclele `for`, `while`, `do-while` introduse în Java.
+`For-each` este o alta tehnică de parcurgere a matricei, ca şi buclele `for`, `while`, `do-while` introduse în Java.
 
-Începe cu cuvântul cheie `for` ca o buclă normală `for`.
+Aceatsa începe cu cuvântul cheie `for` ca o buclă `for` obișnuită.
 
-În loc să declarați și să inițializați o variabilă de contor cu bucla, declarați o variabilă care este de același tip ca şi tipul de bază al matricei, urmată de două puncte, care este apoi urmată de numele matricei.
+În loc să declarăm și să inițializăm o variabilă de contorizare, declarăm o variabilă care are același tip de date ca şi tipul de bază al matricei, urmată de două puncte (:), iar mai apoi de numele matricei.
 
-În corpul buclei, nu puteți accesa indexul curent, dar puteți utiliza variabila de buclă pe care ați creat-o, mai degrabă decât să utilizați un element matrice indexat.
+Variabila buclei for-each stochează valoarea fiecărui element, nu indicele acestuia.
 
-Este de obicei folosit pentru a itera peste o matrice.
+Este de obicei folosit pentru a itera printr-o matrice atunci când nu avem nevoie de valoarea indicilor elementelor.
 
 ```Java
-for (var item : collection) {
+for (var variableName : arrayName) {
     // Process the value here
 }
 ```
 [/slide]
 
 [slide hideTitle]
-# Imprimarea Unei Matrice cu Bucla Foreach
+# Imprimarea Unei Matrice cu Ajutorul Buclei For-each
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/RO/02-Java-Fundamentals-Arrays-20-For-each-loop-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-
-Putem **imprima** o matrice cu **for-each**:
+Putem **imprima** elementele unei matrice cu ajutorul buclei **for-each**:
 
 ```Java live
 int[] numbers = { 1, 2, 3, 4, 5 };
@@ -35,7 +34,7 @@ for (int number: numbers) {
 }
 ```
 
-Un lucru de remarcat aici este că nu ați putea manipula elementele unei matrice, în timp ce iterați cu **for-each**. 
+Iterarea cu ajutorul buclei **for-each** nu permite manipularea elementelor unei matrice.
 
 
 [/slide]
@@ -54,7 +53,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -161,18 +160,18 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care citește o **matrice de numere întregi** și le condensează prin **adunarea** cuplurilor adiacente de elemente până când se obține un **singur număr întreg**
+Creați un program care citește o **matrice de numere întregi** și le condensează prin **însumarea** cuplurilor adiacente de elemente până când se obține un **singur număr întreg**.
 
-De exemplu, să spunem că avem **3** elemente - \{2, 10, 3\}
+De exemplu, să spunem că avem **3** elemente - \{2, 10, 3\}.
 
-Adunăm primele două și ultimele două elemente și obținem \{2+10, 10+3\} = \{12, 13\}, după ce adunăm toate elementele adiacente.
+Adunăm primele două și ultimele două elemente și obținem \{2+10, 10+3\} = \{12, 13\}, iar după aceea adunăm din nou toate elementele adiacente.
 
 Acest lucru are ca rezultat \{12+13\} = \{25\}.
 
@@ -181,15 +180,15 @@ Acest lucru are ca rezultat \{12+13\} = \{25\}.
 |-----|------|------|
 | 2 10 3| 25|2 10 3 -> 2+10 10+3 -> 12 13 -> 12 + 13 -> 25 |
 | 5 0 4 1 2 | 35|5 0 4 1 2 -> 5+0 0+4 4+1 1+2 -> 5 4 5 3 -> 5+4 4+5 5+3 -> 9 9 8 -> 9+9 9+8 -> 18 17 -> 18+17 -> 35|
-| 1 | 1 | 1 is already condensed to number |
+| 1 | 1 | 1 este deja condensat |
 
 
 [hints] 
 [hint] 
-În timp ce avem mai multe elemente în matricea `nums []`, repetați următoarele:
+Cât timp avem mai mult de un element în matricea `nums[]`, repetați următoarele procese:
 
 * Alocați o nouă matrice `condensed[]` de dimensiune `nums.length`
-* Adunați numerele de la  `nums[]` la `condensed[]`:
+* Adunați numerele din `nums[]` în `condensed[]`:
     - `condensed[i]` = `nums[i]` + `nums[i+1]`
     - `nums[] = condensed[]`
 [/hint] 
