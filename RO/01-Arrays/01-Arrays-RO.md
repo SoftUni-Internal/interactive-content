@@ -6,52 +6,50 @@
 
 **Matricele** ne permit să stocăm mai multe date într-o singură variabilă.
 
-Matricele sunt utile pentru păstrarea unei secvențe de date și repetarea acesteia.
+Matricele sunt utile pentru păstrarea unei secvențe de date și parcurgerea acesteia.
 
-Puteți inițializa o **matrice** și să setați valorile înăuntrul ei prin încadrarea acestora între acolade, separând valorile prin virgule. 
+Puteți inițializa o **matrice** și valorile din cadrul acesteia prin încadrarea valorilor între acolade și separarea acestora prin virgulă. 
 
 ``` java
 String[] days = { "apple", "pear", "cherry" };
 ```
 
-O singură matrice poate conține valori duplicate.
+O matrice poate conține valori duplicate.
 
 ```Java
 int[] numbers = { 1, 1, 2, 4, 5 };
 ```
 
-Valorile dintr-o matrice se numesc **elemente**.
+Valorile unei matrice se numesc **elemente**.
 
-## Exemplu din viața reală
+## Exemplu din Viața Reală
 
-Imaginați-vă un tren care are vagoane și fiecare vagon - pasageri.
+Imaginați-vă un tren care are vagoane, iar fiecare vagon are pasageri.
 
-Acum imaginați-vă acest lucru ca o serie de numere întregi, fiecare element reprezintă un vagon și valoarea sa sunt pasagerii.
+Acum imaginați-vă acest lucru ca fiind o matrice de numere întregi. Fiecare element reprezintă un vagon și valoarea sa reprezintă numărul de pasageri.
 
-Uitați-vă la această imagine:
+Matricele pot fi vizualizate sub următoarea formă:
 
 [image assetsSrc="array-real-live-example.jpg" /]
 
-Există **7 vagoane (elemente)**. Fiecare are  **pasageri (o valoare)**. \{3, 4, 10, 7, 5, 0, 6\}
+Acest tren are **7 vagoane (elemente)**. Fiecare are **pasageri (o valoare)**. \{3, 4, 10, 7, 5, 0, 6\}
 
-Matricele sunt **baza** pentru alte tipuri de date abstracte precum  **list**, **stack**, **queue**.
+Matricele stau la **baza** altor tipuri de date abstracte precum: **List**, **Stack**, **Queue**.
 
 
 [/slide]
 
 [slide hideTitle]
-# Cum să Lucrați cu Matricele
+# Cum să Lucrați cu Matrice
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/RO/02-Java-Fundamentals-Arrays-5-working-with-arrays-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Matricele sunt utilizate pentru stocarea mai multor valori într-o singură variabilă, în loc de declararea variabilelor separate pentru fiecare valoare.
+Matricele sunt utilizate pentru stocarea mai multor valori într-o singură variabilă, în locul declarării unor variabilelor separate pentru fiecare valoare.
 
-Matricele au o dimensiune fixă. 
+Matricele au o dimensiune fixă. Acest lucru înseamnă că nu pot fi redimensionate.
 
-Aceasta înseamnă că nu pot fi redimensionate.
+Elementele sunt întotdeauna reprezentate de **același tip de date**.
 
-Elementele sunt întotdeauna de **același tip**.
-
-Indecșii matricelor sunt numerotați de la **0** la **length - 1**.
+Indicii matricelor sunt numerotați de la **0** la **length - 1**.
 
 **Exemplu:**
 ```Java live
@@ -73,27 +71,27 @@ System.out.println(numbers[4]);
 // System.out.println(numbers[5]);  Error: Index 5 out of bounds for length 5 at Array.
 ```
 
-Mai jos avem câteva explicații despre exemplul pe care îl puteți vedea mai sus.
+Mai jos avem câteva explicații legate de exemplul de mai sus.
 
-**Alocăm** o matrice cu 5 numere întregi.
+**Alocăm** o matrice de 5 numere întregi.
 
-Apoi **inițializăm** matricele, dar toate valorile sunt 0, deoarece valoarea implicită a  **int** este zero.
+După aceea, **inițializăm** matricea, iar toate valorile sale sunt setate la 0, deoarece valoarea implicită a unei valori **int** este zero.
 
 **Atribuim** o valoare elementelor matricei.
 
 Lungimea conține numărul elementelor matricei.
 
-În bucla for folosim `i < numbers.length`, deoarece indecșii matricei sunt bazate pe zero, ceea ce înseamnă că primul index al unei matrice este 0, iar ultimul element este `numbers[4]`.
+În bucla for folosim expresia `i < numbers.length` deoarece primul indice al matricei are valoarea 0, iar ultimul element este `numbers[4]`.
 
-**Accesarea** elementelor matricei după index.
+Mai apoi vom **accesa** elementele matricei cu ajutorul indicilor.
 
-După cum am menționat mai sus, primul index al unei matrice este întotdeauna 0, iar ultimul index este `array.length - 1`.
+După cum am menționat mai sus, primul indice al unei matrice este întotdeauna 0, iar ultimul indice este `array.length - 1`.
 
-În total, avem 5 elemente în matricea noastră, dar ultimul element este la indexul 4, deci scădem `array.length - 1 = 4` care este ultimul nostru index.
+În total, avem 5 elemente în matricea noastră, dar ultimul element corespunde indicelui 4, deci efectuăm operația `array.length - 1 = 4`, 4 reprezentând ultimul nostru indice.
 
-Operatorul `[]` accesează elementele după index.
+Operatorul `[]` accesează elementele după indicele acestora.
 
-Dacă încercăm să accesăm elementul de pe un index nevalid, vom obține o excepție.
+Dacă încercăm să accesăm elementul care corespunde unui indice nevalid, vom obține o excepție.
 
 
 [/slide]
@@ -111,19 +109,19 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Introduceți un **număr de zi** \[1…7\] și imprimați **numele zilei**\ (în limba engleză\) sau "**Invalid Day!**".
+Introduceți un **număr din intervalul** \[1…7\] și imprimați **numele zilei corespunzătoare numărului** \(în limba engleză\) sau "**Invalid Day!**".
 
 Utilizați o **matrice de șiruri**.
 
 ## Exemple
-|**Input**|**Output**|
+|**Intrare**|**Ieșire**|
 |-----|------|
 | 1 | Monday |
 | 2 | Tuesday |
@@ -136,7 +134,7 @@ Utilizați o matrice de șiruri care conține numele zilelor:
 `{Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}`
 [/hint] 
 [hint] 
-Imprimați elementul la indexul \(day-1\), atunci când este în intervalul \[1…7\] sau "**Invalid Day!**" in caz contrar.
+Imprimați elementul corespunzator indicelui dat atunci când acesta se află în intervalul \[1…7\] sau "**Invalid Day!**" în caz contrar.
 [/hint] 
 [/hints]
 
@@ -256,14 +254,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Citiți o matrice de pe consolă și adunați doar numerele pare.
+Citiți o matrice de pe consolă și însumați doar numerele pare.
 
 ## Exemple
 |**Intrare**|**Ieșire**|
