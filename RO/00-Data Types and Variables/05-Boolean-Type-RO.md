@@ -4,7 +4,7 @@
 # Tipul de Date Boolean
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-34-35-boolean-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Un tip de date boolean este declarat prin cuvântul cheie **boolean** cu două opțiuni de valoare: **true** sau **false**:
+Tipul de date boolean este declarat prin cuvântul cheie **boolean**. Acesta are două valori posibile: **true** sau **false**:
 
 ```java live
  int firstNumber = 5;
@@ -42,11 +42,11 @@ public class Main {
 [task-description]
 ## Descriere
 
-Un **număr** este **special** când **suma cifrelor sale este 5, 7 sau 11**.
+Un **număr** este **special** dacă **suma cifrelor sale este 5, 7 sau 11**.
 
-Creați un program pentru a citi un număr întreg **n**. 
+Creați un program care citește un număr întreg **n**. 
 
-Imprimați numărul pentru toate numerele din intervalul **1 ... n** și dacă este special sau nu **(True / False)** în fomratul arătat maijos.
+Imprimați toate numerele din intervalul **1 ... n** și dacă sunt speciale sau nu - **(True / False)**, în formatul exemplificat mai jos.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
@@ -69,8 +69,7 @@ Imprimați numărul pentru toate numerele din intervalul **1 ... n** și dacă e
  
 [hints] 
 [hint] 
-Pentru a calcula suma cifrelor unui număr dat **num**, puteți repeta următoarele:
-Însumați ultima cifra **(num % 10)** și și o scoateți **(sum = sum / 10)** până ce **num** ajunge la **0**.
+Pentru a calcula suma cifrelor unui număr dat **num**, puteți repeta următorii pași: însumați ultima cifra **(num % 10)** și eliminați-o **(num = num / 10)** până ce **num** ajunge la **0**.
 [/hint] 
 [/hints]
 
