@@ -11,7 +11,7 @@
 ```java
 int[] numbers = { 1, 1, 2, 4, 5 };
 ```
-- Accesarea elementelor matricei după index
+- Accesarea elementelor matricei cu ajutorul indicilor
 
 ```java
 numbers[4] = numbers[2] + numbers[3];
@@ -34,7 +34,7 @@ for (int number : numbers) {
 }
 ```
 
-- Buclă For-each 
+- Bucla for-each 
 
 ```Java
 int[] numbers = { 1, 2, 3, 4, 5 };
@@ -43,11 +43,11 @@ for (int number : numbers) {
 }
 ```
 
-## În lecția următoare, veți învăța:
+## În lecția următoare veți învăța:
 - Ce este o **metodă**
-- Denumirea și cele mai bune practici
+- Convenții de denumire și cele mai bune practici
 - Declararea și **invocarea metodelor**
-   - metode de tip Void și Return
+   - metode de tip **void** și **return**
 - Metode cu parametri
 - **Tipuri de valoare** vs. **Tipuri de referință**
 - Metode de **supraîncărcare**
