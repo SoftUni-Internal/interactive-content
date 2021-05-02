@@ -1,4 +1,4 @@
-# Temă Pentru Acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Train
@@ -17,16 +17,16 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Pe prima linie vi se va oferi o **listă de vagoane** (numere întregi).
+Pe prima linie veți primi o **listă de vagoane** (numere întregi).
 
-Fiecare **întreg** reprezintă **numărul de pasageri** care sunt în prezent în fiecare vagon.
+Fiecare **număr întreg** reprezintă **numărul de pasageri** care se află în fiecare vagon al trenului de pasageri.
 
-Pe linia următoare veți obține **capacitatea maximă a fiecărui vagon** reprezentat ca un **singur număr întreg**.
+Pe linia următoare veți primi **capacitatea maximă a fiecărui vagon**, reprezentată ca un **număr întreg**.
 
-**Până**veți primi "**end**" vi se vor oferi două tipuri de intrări:
+**Până** la primirea comenzii "**end**", vi se vor oferi două tipuri de intrări:
 - "**Add** \{**passengers**\}"  - adaugați un vagon la final cu numărul dat de pasageri
-- "\{**passengers**\}" - **găsiți un vagon existent** care să se potrivească tuturor pasagerilor (începând cu primul vagon)
-La sfârșit **tipăriți** starea finală a trenului (toate vagoanele separate printr-un spațiu).
+- "\{**passengers**\}" - **găsiți un vagon existent** care să găzduiască numărul de pasageri introdus (începând cu primul vagon)
+La sfârșit, **tipăriți** starea finală a trenului (toate vagoanele separate printr-un spațiu).
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -258,14 +258,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program, care **citește o listă de numere întregi** de pe consolă și primește **comenzi**, care **manipulează lista**.
+Scrieți un program care **citește o listă de numere întregi** de pe consolă și primește **comenzi** care **manipulează lista**.
 
-Programul dvs. poate primi următoarele **comenzi**:
-- "**Delete** \{**element**\}" - șterge toate elementele din matrice, care sunt egale cu elementul dat
-- "**Insert** \{**element**\} \{**position**\}" - introduce elementul și poziția dată
-Ar trebui să **opriți programul** când primiți comanda "**end**". 
+Programul vostru poate primi următoarele **comenzi**:
+- "**Delete** \{**element**\}" - ștergeți toate elementele din matrice care sunt egale cu elementul dat
+- "**Insert** \{**element**\} \{**position**\}" - introduceți elementul în poziția dată
 
-Imprimați toate numerele din matrice **separate cu un singur spațiu alb**.
+Trebuie să **opriți programul** când primiți comanda "**end**". 
+
+Imprimați toate numerele din matrice, **separate printr-un spațiu**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -426,21 +427,22 @@ public class Main {
 [task-description]
 
 ## Descriere
-Creați un program care ține evidența oaspeților care merg la o petrecere în casă.
+Creați un program care ține evidența invitaților care merg la o petrecere care are loc la cineva acasă.
 
 Pe prima linie de intrare veți primi **numărul comenzilor**.
 
-Pe liniile următoare veți primi câteva dintre următoarele intrări:
+Pe liniile următoare veți primi următoarele intrări:
+
 "\{**name**\} **is going!**"
 
-- Trebuie să **adăugați persoana dacă nu se află pe lista de invitați**.
-- Dacă **persoana este pe listă** tipăriți pe consolă următoarele: "\{**name**\} **is already in the list!**"
+- Trebuie să **adăugați persoana dacă nu se află deja pe lista de invitați**
+- Dacă **persoana este pe listă** tipăriți pe consolă următorul mesaj: "\{**name**\} **is already in the list!**"
 
 
 "\{**name**\} **is not going!**"
 
-- Trebuie să eliminați persoana dacă se află în listă.
-- Dacă nu, tipăriți pe consolă: "\{**name**\} **is not in the list!**"
+- Trebuie să eliminați persoana dacă se află în listă
+- Dacă nu, tipăriți următorul mesaj pe consolă: "\{**name**\} **is not in the list!**"
 
 
 La sfârșitul programului, tipăriți toți invitații, fiecare pe o nouă linie.
@@ -663,18 +665,18 @@ public class Main {
 ## Descriere
 Veți primi o listă de numere **întregi** pe prima linie de intrare.
 
-Până când primiți "End" vi se vor da **operațiuni** pe care trebuie să le aplicați pe listă.
+Până la primirea comenzii "**End**" vi se vor da **operații** pe care trebuie să le efectuați asupra listei.
 
 **Comenzile posibile** sunt:
 - "**Add** \{**number**\}" - adăugați un număr la sfârșit
-- "**Insert** \{**number**\} \{**index**\}" - introduceți numărul la indexul dat
-- "**Remove** \{**index**\}" - eliminarea numărul de la indexul dat
-- "**Shift left** \{**count**\}" - primul număr devine ultimul de **n număr de ori**
-- "**Shift right** \{**count**\}" - ultimul număr devine primul de **n număr de ori**
+- "**Insert** \{**number**\} \{**index**\}" - introduceți numărul la indicele dat
+- "**Remove** \{**index**\}" - eliminați numărul corespunzător indicelui dat
+- "**Shift left** \{**count**\}" - primul număr devine ultimul; repetați această operație de numărul indicat de ori
+- "**Shift right** \{**count**\}" - ultimul număr devine primul; repetați această operație de numărul indicat de ori
 
-**Notă**: este posibil ca indexul dat să fie în afara limitelor matricei. 
+**Notă**: este posibil ca indicele dat să fie în afara limitelor listei. 
 
-În acest caz, tipăriți "**Invalid index**"
+În acest caz, tipăriți "**Invalid index**".
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
