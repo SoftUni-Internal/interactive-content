@@ -1,22 +1,22 @@
-# Tipul Șir
+# String
 
 [slide hideTitle]
 
-# Tipul de Date Șir
+# Tipul de Date String
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-45-48-string-data-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Șirurile sunt utilizate pentru stocarea textului.
 
-O variabilă **Șir** conține o colecție de caractere înconjurate de ghilimele duble și are o valoare implicită **nul** (fără valoare).
+O variabilă de tip **String** conține o colecție de caractere încadrate de ghilimele duble și are valoarea implicită **null** (fără valoare).
 
-Creați o variabilă de tip **Șir** și atribuiți-i o valoare:
+Creați o variabilă de tip **String** și atribuiți-i o valoare:
 
 ```Java live
 String greeting = "Hello";
 System.out.println(greeting);
 ```
 
-## Formatarea șirului
+## Formatarea Șirurilor
 
 ```Java live
 String secret = "loves metal music";
@@ -25,7 +25,7 @@ String secretRevealed = String.format("%s has a secret, he %s.", name, secret);
 System.out.println(secretRevealed);
 ```
 
-Puteți folosi `String.format` pentru a insera valorile unei variabile șir într-un alt șir.
+Puteți folosi `String.format` pentru a insera valorile unor variabile de tip string în alt șir.
 
 ## Exemplu: Saying Hello
 
@@ -38,11 +38,11 @@ String fullName = String.format("%s %s", firstName, lastName);
 System.out.printf("Your full name is %s.", fullName);
 ```
 
-## Concatenarea șirului
+## Concatenarea Șirurilor
 
-Operatorul `+` poate fi folosit între șiruri pentru a le combina. 
+Operatorul `+` poate fi folosit pentru a combina două șiruri. 
 
-Aceasta se numește concatenare:
+Acest proces se numește concatenare:
 
 ```Java live
 String firstName = "John";
@@ -50,7 +50,7 @@ String lastName = "Doe";
 System.out.println(firstName + " " + lastName);
 ```
 
-* Rețineți că am adăugat un text gol `(" ")` pentru a crea un spațiu între prenume și prenume pe tipărire
+Rețineți că am adăugat un spațiu `(" ")` între firstName și lastName la tipărirea rezultatului.
 
 
 [/slide]
@@ -76,7 +76,7 @@ public class Main {
 ## Descriere
 Citiți două nume și un delimitator.
 
-Imprimați numele alăturate de delimitator.
+Imprimați numele separate prin delimitator.
 
 ## Exemplu
 | **Intrare**|**Ieșire**|
