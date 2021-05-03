@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-3-4-How-computers-work-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Un calculator este o **mașină electronică** care procesează informații, cu alte cuvinte, un **procesor de informații**: acesta ia informațiile brute (sau datele) de la un capăt, le stochează până când este gata să le proceseze, apoi returnează rezultatele la celălalt capăt.
+Un calculator este o **mașină electronică** care procesează informații, cu alte cuvinte, un **procesor de informații**: acesta ia informațiile brute (sau datele) de la un capăt, le stochează până când este pregătit să le proceseze, apoi returnează rezultatele la celălalt capăt.
 
 Toate aceste procese au un **nume**.
 
@@ -36,9 +36,9 @@ int count = 5;
 // 5 – valoarea variabilei
 ```
 O variabilă este definită prin următoarele caracteristici:
-* **Tipul de date**: tipul de date care poate fi stocat în această variabilă
-* **Numele variabilei**: numele dat variabilei
-* **Valoarea variabilei**: valoarea inițială stocată în variabilă
+* **Tipul de date** care poate fi stocat în această variabilă
+* **Numele variabilei**
+* **Valoarea stocată în variabilă**
 
 O variabilă poate fi declarată fără inițializare și poate fi inițalizată mai târziu:
 
@@ -53,7 +53,7 @@ După inițializare, variabila `count` primește valoarea `5`.
 
 ## Exemplu din Viața Reală
 
-Vă puteți gândi la variabile ca la borcanele din bucătărie.
+Vă puteți gândi la variabile ca la niște borcane din bucătărie.
 
 Imaginați-vă că în fiecare borcan puteți stoca doar una dintre următoarele: sare, zahăr sau cafea.
 
@@ -63,7 +63,7 @@ Imaginați-vă că în fiecare borcan puteți stoca doar una dintre următoarele
 
 Folosim variabile, care acționează ca niște containere pentru tipuri de date diferite, cum ar fi numere, text, simboluri și așa mai departe.
 
-De exemplu, dacă avem o variabilă al cărei scop este să stocheze numere întregi, nu vom putea să stocăm și text în aceasta. 
+De exemplu, dacă avem o variabilă al cărei scop este să stocheze numere întregi, nu vom putea să stocăm text în aceasta. 
 
 [/slide]
 
@@ -91,7 +91,7 @@ Există **două tipuri generale de date** în Java:
 
 - Sunt numite și "tip referință" deoarece conțin o adresă în memoria calculatorului (RAM) unde sunt stocate datele
 
-- Unele exemple includ `șiruri`, `matrice` și `clase`
+- Exemple: `șiruri`, `matrice` și `clase`
 [/slide]
 
 [slide hideTitle]
@@ -131,7 +131,7 @@ Convențiile de denumire fac programele mai ușor de înțeles și mai ușor de 
 
 - Numele nu conține spații
 
-- Numele nu conține punctuație
+- Numele nu conține semne de punctuație
 
 ```Java
 String firstName = John; //correct
