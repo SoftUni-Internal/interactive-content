@@ -1,4 +1,4 @@
-# String
+# Tipul String
 
 [slide hideTitle]
 
@@ -49,9 +49,7 @@ String firstName = "John";
 String lastName = "Doe";
 System.out.println(firstName + " " + lastName);
 ```
-
-Rețineți că am adăugat un spațiu `(" ")` între firstName și lastName la tipărirea rezultatului.
-
+Observați că am adăugat un spațiu `(" ")` între **firstName** și **lastName**.
 
 [/slide]
 
@@ -76,7 +74,7 @@ public class Main {
 ## Descriere
 Citiți două nume și un delimitator.
 
-Imprimați numele separate prin delimitator.
+Imprimați numele separate prin delimitatorul indicat.
 
 ## Exemplu
 | **Intrare**|**Ieșire**|
