@@ -7,14 +7,14 @@
 
 Tipul de date **char** este utilizat pentru stocarea unui **singur** caracter.
 
-Caracterul trebuie să fie încadrat de ghilimele unice, cum ar fi `'A'` sau `'c'`.
+Caracterul trebuie să fie încadrat de ghilimele unice: `'A'`, `'c'`.
 
 ```java live
 char myGrade = 'B';
 System.out.println(myGrade);
 ```
 
-De asemenea, tipul de date caracter:
+De asemenea, tipul de date caracter are următoarele caracteristici:
 
 * Atribuie fiecărui simbol un cod ASCII corespunzător
 
@@ -22,7 +22,7 @@ De asemenea, tipul de date caracter:
 
 * Rezervă 16 biți de memorie \(de la **U+0000** la **U+FFFF**\)
 
-* Deține un singur caracter Unicode \(sau o parte a caracterului\)
+* Conține un singur caracter Unicode \(sau o parte a caracterului\)
 
 ```java live
 char ch = 'a';
@@ -35,7 +35,7 @@ ch = 'A';
 System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
 ```
 
-În exemplul de mai sus convertim fiecare caracter la valoarea sa **ASCII**. 
+În exemplul de mai sus convertim fiecare caracter în valoarea sa **ASCII**. 
 
 **ASCII** este acronimul pentru **American Standard Code for Information Interchange**.
 
@@ -43,7 +43,7 @@ Este un cod standard pentru reprezentarea a 128 de caractere ca numere. Fiecăru
 
 Puteți găsi mai multe informații despre tabelul ASCII online.
 
-## Caractere și Unicode
+## Unicode
 
 Există o valoare întreagă pentru fiecare caracter.
 
@@ -60,7 +60,7 @@ ch = 'щ';
 System.out.printf("'%c' is: %d%n", ch, (int) ch);
 ```
 
-Tabelul Unicode este separat în diferite părți și aproape toate limbile vii sunt reprezentate în el.
+Tabelul Unicode este separat în diferite părți și aproape toate limbile existente sunt reprezentate cu ajutorul acestuia.
 
 [/slide]
 
@@ -181,7 +181,7 @@ String txt = "We are the so-called "Vikings" from the north.";
 ```
 
 
-Pentru a evita această problemă, adăugăm o bară oblică \(\\\), care este utilizat drept caracter de evadare.
+Pentru a evita această problemă, adăugăm o bară oblică \(\\\), care este utilizată drept caracter de evadare.
 
 Caracterul de evadare \(\\\) transformă caracterele speciale în caractere de tip șir:
 
