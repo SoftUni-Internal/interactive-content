@@ -46,7 +46,7 @@ Pe linia următoare **veți primi numărul total de persoane** (număr întreg).
 
 "**Time needed:** \{**time**\}**h.**"
 
-## Exemplu 1
+## Exemplul 1
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 5 | Time needed: 2h. |
@@ -66,7 +66,7 @@ Toți oamenii vor primi un răspuns în a doua oră.
 [/hint] 
 [/hints] 
 
-## Exemplu 2
+## Exemplul 2
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 1 | Time needed: 10h. |
@@ -92,7 +92,7 @@ După 10 ore, toate persoanele au primit un răspuns.
 [/hints] 
 
 
-## Exemplu 3
+## Exemplul 3
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 3 | Time needed: 5h. |
