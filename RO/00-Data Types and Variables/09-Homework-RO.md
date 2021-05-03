@@ -110,9 +110,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Vi se va da un **singur** număr întreg.
+Veți primi un **singur** număr întreg.
 
-Sarcina voastră este de a găsi **suma cifrelor sale**.
+Sarcina voastră este să găsiți **suma cifrelor sale**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -191,8 +191,8 @@ Calculați câte curse ascendente va trebui să facă un lift pentru a **transpo
 ### Exemplu
 |**Intrare**|**Ieșire**|**Comentarii**
 | --- | --- | --- |
-| 17 | 6 | 5 curse cu 3 persoane |
-| 3 | | + 1 cursă cu 2 prsoane |
+| 17 | 6 | 5 curse de 3 persoane |
+| 3 | | + 1 cursă de 2 persoane |
 
 [/task-description]
 [code-io /]
@@ -394,7 +394,7 @@ public class Main {
 Căutați online mai multe informații despre [ASCII](www.ascii-code.com) (American Standard Code for Information Interchange) și creați un program care **tipărește o parte din tabelul ASCII** pe consolă.
 
 Pe prima linie de intrare veți primi **indicele caracterului** cu care trebuie să **începeți**.
-Pe a doua linie - indicele **ultimului** caracter pe care trebuie să-l imprimați.
+Pe a doua linie - indicele **ultimului** caracter pe care trebuie să îl imprimați.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -854,7 +854,7 @@ Aveți un **rezervor de apă** cu o capacitate de 255 litri.
 
 Pe **prima** linie veți primi numărul **n**.
 
-În următoarele **n linii** veți primi **litri** de apă, pe care trebuie să **îi turnați în rezervor**.
+Pe următoarele **n linii** veți primi **litri** de apă, pe care trebuie să **îi turnați în rezervor**.
 
 Dacă **capacitatea nu este suficientă**, tipăriți "**Insufficient capacity!**" și **continuați să citiți** următorul rând.
 
@@ -971,7 +971,7 @@ Creați un program care **calculează volumul** a **n** butoaie de bere.
 
 Fiecare **trei rânduri** vor conține informațiile pentru un **singur butoi**.
 
-**Primul rând** reprezintă **modelul** butoiului, **al doilea** **raza** butoiului (un număr în virgulă mobilă) și **al treilea** reprezintă **înălțimea** butoiului.
+**Primul rând** reprezintă **modelul** butoiului, **al doilea** **raza** butoiului (un număr în virgulă mobilă), iar **al treilea rând** reprezintă **înălțimea** butoiului.
 
 Calculați **volumul** folosind următoarea formulă:
 
@@ -1089,21 +1089,21 @@ Creați un program care **calculează cantitatea totală de condimente** care po
 
 Sursa are un randament **inițial**, care indică cât de mult condiment poate fi extras în **prima zi**.
 
-După ce sursa a fost exploatată pentru o zi, randamentul ei scade cu 10, ceea ce înseamnă că în a doua zi cantitatea produsă va fi mai mică cu 10 **decât în prima zi, în a treia zi cu 10 mai mică decât în a doua** și **și așa mai departe** (vezi exemplele).
+După ce sursa a fost exploatată pentru o zi, randamentul ei scade cu 10, ceea ce înseamnă că în a doua zi cantitatea produsă va fi mai mică cu 10 **decât în prima zi, în a treia zi cu 10 mai mică decât în a doua** **și așa mai departe** (vezi exemplele).
 
 O sursă este considerată **profitabilă cât timp randamentul acesteia este de cel puțin 100** - când se anticipează o cantitate mai mică de 100 pentru o zi, abandonați sursa.
 
-Echipajul minier **consumă o cantitatet de 26 de condimente în fiecare zi** la **sfârșitul turei** și **încă 26** după epuizarea minei.
+Echipajul minier **consumă o cantitate de 26 de condimente în fiecare zi** la **sfârșitul turei** și **încă 26** după epuizarea minei.
 
 Rețineți că lucrătorii nu pot consuma mai mult condiment decât există în depozit.
 
 Când operațiunea este finalizată, **tipăriți pe consolă pe două linii separate** câte **zile** a funcționat mina și **cantitatea totală** de condiment extras.
 
 ### Intrare
-Veți primi **un număr**, reprezentând randamentul **inițial** al sursei.
+Veți primi **un număr** care reprezintă randamentul **inițial** al sursei.
 
 ### Ieșire
-Imprimați **două rânduri separate** care reprezintă câte **zile a funcționat mina** și **cantitatea totală de condimente extrase**.
+Imprimați **două rânduri separate** care reprezintă câte **zile a funcționat mina** și **cantitatea totală de condimente care a fost extrasă**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1200,9 +1200,9 @@ Apoi vi se va acorda **distanța dintre ținte** (poke targets), **M** - un num�
 
 Apoi vi se va da **exhaustionFactor Y** - un număr întreg.
 
-Sarcina voastră este **să scădeți M din N până când N devine mai mic decât M**, adică Poke Mon nu are suficientă putere pentru a împinge următoarea țintă.
+Sarcina voastră este **să scădeți M din N până când N devine mai mic decât M**, adică până când Poke Mon nu mai are suficientă putere pentru a împinge următoarea țintă.
 
-**De fiecare dată când scădeți M de la N înseamnă că ați atins o țintă** și ați împins-o cu succes. 
+**De fiecare dată când scădeți M din N înseamnă că ați atins o țintă** și ați împins-o cu succes. 
 
 Numărați câte ținte ați împins - veți avea nevoie de acest număr.
 
@@ -1212,13 +1212,13 @@ Poke Mon devine treptat din ce în ce **mai epuizat**.
 
 Folosiți împărțirea întregă.
 
-Dacă o împărțire nu este posibilă, NU trebuie efectuată. 
+Dacă împărțirea nu este posibilă, NU trebuie efectuată. 
 
-După efectuarea împărțirii, trebuie să **continuați scăderea** din N, până când devine mai mic decât M.
+După efectuarea împărțirii, trebuie să **continuați scăderea** din N, până când acesta devine mai mic decât M.
 
 Când N devine mai mic decât M, trebuie să luați ceea ce a rămas din N și numărul de ținte pe care le-ați împins și să le imprimați ca rezultat.
 
-**NOTĂ**: Când calculați procentele, trebuie să utilizați maxima precizie.
+**NOTĂ**: Când calculați procentele, trebuie să utilizați precizia maximă.
 
 Notă: 505 nu este exact 50% din 1000, ci 50.5%.
 
@@ -1232,7 +1232,7 @@ Notă: 505 nu este exact 50% din 1000, ci 50.5%.
 
 ### Ieșire
 
-- Pe prima linie tipăriți **ceea ce a rămas din N**, după efectuarea tuturor scăderilor
+- Pe prima linie tipăriți **ceea ce a rămas din N** după efectuarea tuturor scăderilor
 
 - Pe cea de-a doua linie tipăriți **numărul de ținte** pe care ați reușit să le împingeți
 
@@ -1335,7 +1335,7 @@ public class Main {
 ## Descriere
 Tony și Andy adoră să se joace în zăpadă și să se lupte cu bulgări de zăpadă, dar se ceartă întotdeauna în legătură cu cine face cei mai rezistenți bulgări.
 
-Au decis să vă implice în lupta lor, cerându-vă să creați un program care **proceseze datele ce țin de calitatea bulgărelui** și să imprime valoarea celui mai rezistent bulgăre.
+Au decis să vă implice în lupta lor, cerându-vă să creați un program care **procesează datele ce țin de calitatea bulgărelui** și care imprimă valoarea celui mai rezistent bulgăre.
 
 Veți primi **N** - un număr întreg, **numărul de bulgări de zăpadă realizați** de Tony și Andy.
 
@@ -1347,11 +1347,11 @@ Pentru fiecare bulgăre de zăpadă veți primi 3 linii de intrare:
 
 - Pe a treia linie veți obține **snowballQuality** - un număr întreg
 
-Pentru fiecare bulgăre de zăpadă trebuie să calculați **snowballValue** cu următoarea formulă:
+Pentru fiecare bulgăre de zăpadă trebuie să calculați **snowballValue** folosind următoarea formulă:
 
 **(snowballSnow / snowballTime) ^ snowballQuality**
 
-La sfârșit, trebuie să **imprimați** cea mai mare valoare calculată (snowballValue)
+La sfârșit, trebuie să **imprimați** cea mai mare valoare calculată (snowballValue).
 
 ### Intrare / Constrângeri
 
