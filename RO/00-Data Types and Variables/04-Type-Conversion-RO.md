@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-30-31-type-conversion-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Când atribuiți valoarea unui tip de date altuia, este posibil ca cele două tipuri să nu fie compatibile între ele.
+Când atribuiți valoarea unui tip de date altui tip de date, este posibil ca cele două tipuri să nu fie compatibile între ele.
 
 Dacă tipurile de date sunt compatibile, Java va efectua conversia automat. Acest lucru este cunoscut sub numele de Conversie Automată de Tip (Automatic Type Conversion). Dacă tipurile nu sunt compatibile trebuie să fie convertite în mod explicit.
 
@@ -23,9 +23,9 @@ System.out.println(myInt);
 System.out.println(myDouble);
 ```
 
-Aici tipul de date cu o dimensiune mai mică este convertit în tipul de date cu o dimensiune mai mare.
+Aici tipul de date cu o dimensiune mai mică este convertit într-un tip de date care are o dimensiune mai mare.
 
-Nu există pierderi de date, motiv pentru care acest tip de conversie are loc automat
+Nu există pierderi de date, motiv pentru care acest tip de conversie are loc automat.
 
 - Casting restrâns \(manual\) - conversia unui tip de date mai mare într-un tip de dimensiune mai mică; cunoscută sub numele de **conversie explicită**
 
@@ -37,9 +37,9 @@ System.out.println(myDouble);
 System.out.println(myInt);
 ```
 
-Aici tipurile de date cu dimensiuni mai mari sunt convertite în tipuri de date cu dimensiuni mai mici. 
+Aici un tip de date cu o dimensiune mai mare este convertit într-un de date cu dimensiune mai mică. 
 
-În timpul procesului pot exista pierderi de date/ precizie. Acesta este motivul pentru care acest tip de conversie nu are loc automat.
+În timpul procesului pot exista pierderi de date sau precizie. Acesta este motivul pentru care acest tip de conversie nu are loc automat.
 
 [/slide]
 
@@ -65,7 +65,7 @@ public class Main {
 
 ## Descriere
 
-Creați un program care aceptă un număr **int** de **secole** și le convertește în **ani**,**zile**, **ore** și **minute**.
+Creați un program care aceptă un număr de **secole**, pe care le convertește în **ani**, **zile**, **ore** și **minute**.
 
 Intrarea va fi de tipul **int**. 
 
@@ -290,7 +290,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care imprimă determină dacă un caracter dat este majusculă sau minusculă.
+Creați un program care determină dacă un caracter dat este majusculă sau minusculă.
 
 ## Exemple
 |**Intrare**|**Ieșire**|
