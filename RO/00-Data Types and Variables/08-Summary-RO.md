@@ -29,7 +29,7 @@
     ```
 
   - Tipul de date String și text:
-     - reprezentă text
+     - conțin text
      - șirurile sunt secvențe de caractere Unicode
 
 
