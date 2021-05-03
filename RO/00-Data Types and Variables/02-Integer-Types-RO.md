@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Tipuri Întregi
+# Tipuri Întregi (Integer)
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-12-13-Integer-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Tipurile întregi** stochează numere întregi, pozitive sau negative (precum 123 sau -456).
@@ -33,7 +33,7 @@ System.out.printf("%d centuries = %d years = %d days = %d hours.",
 //20 centuries = 2000 years = 730484 days = 17531616 hours.
 ```
 
-Putem folosi diferite tipuri întregi, în funcție de ceea ce dorim să stocăm în ele.  
+Putem folosi diferite tipuri întregi, în funcție de valoare pe care vrem să o stocăm.
 
 - Tipul de date **byte** poate stoca numere întregi de la -128 la 127
 
@@ -120,7 +120,7 @@ Aceștia pot fi reprezentați în câteva moduri diferite, care nu sunt la fel d
 
 - **Literali întregi hexazecimali** - valori care folosesc sistemul de numerație hexazecimal; încep cu **0x** și **0X** - **0xFE**, **0xA8F1**, **0xFFFFFFFF**
 
-- **Literali întregi lungi** - valori urmate de litera **L** sau **l** - **9876543L**, **0L**
+- **Literali întregi de tip long** - valori urmate de litera **L** sau **l** - **9876543L**, **0L**
 
 ```java live
 int hexadecimal = 0xA8F1; // 43249
@@ -151,9 +151,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Vi se va da un număr întreg care va reprezenta distanța în metri.
+Veți primi un număr întreg care reprezintă o distanță în metri.
 
-Scrieți un program care convertește metri în kilometri - rezultatul trebuie formatat cu două zecimale
+Scrieți un program care convertește metri în kilometri - rezultatul trebuie formatat cu două zecimale.
 
 ## Exemple
 |**Intrare**|**Ieșire**|
