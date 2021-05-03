@@ -10,7 +10,7 @@ Utilizăm **tipul de date în virgulă mobilă** ori de câte ori trebuie să st
 Tipurile în virgulă mobilă au următoarele caracteristici:
 
 - Au un interval specific și precizie (numărul de zecimale) în funcție de memoria utilizată
-- Uneori se comportă anormal în calcule
+- Uneori se comportă anormal în timpul calculelor
 - Pot deține valori foarte mici și foarte mari, cum ar fi **0.00000000000001** și **10000000000000000000000000000.0**
 
 Tipurile valide sunt **float** și **double**:
@@ -45,11 +45,11 @@ double myNum = 19.99;
 System.out.println(myNum);
 ```
 
- **Valoarea implicită** a lui **double** este **0.0D**.
+**Valoarea implicită** a lui **double** este **0.0D**.
 [/slide]
 
 [slide hideTitle]
-# PI Precizie
+# Precizie PI
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-21-PI-precision-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există diferențe de precizie atunci când folosim **float** și **double**:
@@ -61,7 +61,7 @@ System.out.println("Float PI is: " + floatPI);
 System.out.println("Double PI is: " + doublePI);
 ```
 
-**NOTĂ**: Sufixul `f` din prima instrucțiune semnifică faptul că variabila trebuie interpretată ca fiind **float**
+**NOTĂ**: Sufixul `f` din prima instrucțiune semnifică faptul că variabila trebuie interpretată ca fiind **float**.
 
 - Numerele reale sunt interpretate implicit ca **double**
 
@@ -167,7 +167,7 @@ Rezultatul trebuie formatat cu două zecimale.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-23-scientific-notation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Când lucrați cu numere mari, notația științifică este extrem de utilă.
+Când lucrăm cu numere mari, notația științifică este extrem de utilă.
 
 În notația științifică, litera `E` reprezintă `10 la puterea E`.
 
@@ -210,10 +210,10 @@ System.out.println(8 % 2.5);
 
 
 [slide hideTitle]
-# Calcule în Virgulă Mobilă - Anomalii
+# Calcule cu Numere în Virgulă Mobilă - Anomalii
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-25-floating-point-calculations-abnormalities-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Rețineți că uneori numerele cu virgulă mobilă funcționează incorect!
+Rețineți că uneori numerele în virgulă mobilă funcționează incorect!
 
 Vă încurajăm să citiți mai multe despre `IEEE 754`.
 
@@ -292,7 +292,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care acceptă **n** numere, calculează și imprimă **suma exactă** (fără rotunjire).
+Creați un program care acceptă **n** numere și calculează și imprimă **suma exactă** (fără rotunjire).
 
 ## Exemple
 |**Intrare**|**Ieșire**|
