@@ -35,11 +35,11 @@ Imprimați numerele pe o singură linie separate printr-un spațiu.
 
 ## Constrângeri
 
-Toate numerele de intrare sunt întregi
+Toate numerele de intrare sunt întregi.
 
 Numărul de elemente nu va depăși 10000.
 
-## Primul Exemplu
+## Exemplul 1
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 10 20 30 40 50  | 50 40  |
@@ -47,15 +47,15 @@ Numărul de elemente nu va depăși 10000.
 [hints]
 [hint]
 Valoarea medie este egală cu 30.
-Numerele mai mari de 30 sunt: `{40, 50}`
+Numerele mai mari decât 30 sunt: `{40, 50}`.
 
-Sortate în ordine descrescătoare: `{50, 40}`
-Deoarece există doar două numere care îndeplinesc criteriile, toate acestea ar trebui incluse în rezultatul final.
+Acestea trebuie sortate în ordine descrescătoare: `{50, 40}`.
+Deoarece există doar două numere care îndeplinesc criteriile, acestea vor fi incluse în rezultatul final.
 [/hint] 
 [/hints] 
 
 
-## Al Eoilea Exemplu
+## Exemplul 2
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 2 3 4 -10 30 40 50 20 50 60 60 51  | 60 60 51 50 50  |
@@ -64,15 +64,15 @@ Deoarece există doar două numere care îndeplinesc criteriile, toate acestea a
 [hint]
 Valoarea medie este egală cu 28,08.
 
-Numerele mai mari decât 28.08 sunt: `{30, 40, 50, 50, 60, 60, 51}`
+Numerele mai mari decât 28.08 sunt: `{30, 40, 50, 50, 60, 60, 51}`.
 
-Cele mai mari 5 numere în ordine descrescătoare sunt: `{60, 60, 51, 50, 50}`
+Cele mai mari 5 numere sortate în ordine descrescătoare sunt: `{60, 60, 51, 50, 50}`.
 [/hint] 
 [/hints] 
 
 
 
-## Al Treilea Exemplu
+## Exemplul 3
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 1  | No  |
@@ -81,12 +81,12 @@ Cele mai mari 5 numere în ordine descrescătoare sunt: `{60, 60, 51, 50, 50}`
 [hint]
 Valoarea medie este egală cu 1.
 
-Nu există numere mai mari de 1.
+Nu există numere mai mari decât 1.
 [/hint] 
 [/hints] 
 
 
-## Al Patrulea Exemplu
+## Exemplul 4
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | -1 -2 -3 -4 -5 -6  | -1 -2 -3   |
@@ -95,9 +95,9 @@ Nu există numere mai mari de 1.
 [hint]
 Valoarea medie este egală cu -3.5.
 
-Numerele mai mari de -3.5 sunt: `{-1, -2, -3}`
+Numerele mai mari decât -3.5 sunt: `{-1, -2, -3}`.
 
-Primele 5 numere dintre ele, în ordine descrescătoare sunt `{-1, -2, -3}`
+Primele 5 numere sortate în ordine descrescătoare sunt `{-1, -2, -3}`.
 [/hint] 
 [/hints] 
 
