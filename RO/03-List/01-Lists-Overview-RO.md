@@ -32,7 +32,7 @@ for (String name : names) {
 
 Principalele **caracteristici** ale **listelor** sunt:
 
-- Listele pot stoca **obiecte** de orice tip (integer, double, String etc.)
+- Listele pot stoca **obiecte** de orice tip (Integer, Double, String etc.)
 
 - Elementele sunt numerotate de la **0** la **size-1**
 
@@ -46,7 +46,7 @@ Principalele **caracteristici** ale **listelor** sunt:
 - Inițializăm o **listă** goală folosind cuvântul cheie `new`, urmat de `ArrayList<>()`
 
 ```java
-//Creați o listă goală de șiruri
+// Create an empty List of strings
 List<String> names = new ArrayList<>(); 
 ```
 - Putem folosi și metoda `asList()`
@@ -59,11 +59,11 @@ List<String> names = new ArrayList<>(Arrays.asList("Maria", "Peter", "George"));
 ```java
 Integer [] numbers = new Integer[] {10, 20, 30, 40, 50};
 
-// Convertirea unei matrice de întregi într-o listă
+// Convert the Integer array into List
 List<Integer> nums = Arrays.asList(numbers); 
 ```
 
-- Dacă încercați să convertiți o matrice care deține un tip de date primitiv, cum ar fi `int[]`, în listă, acest proces va produce o **eroare de compilare**, deoarece **listele** acceptă numai **tipuri de date referință** (**obiecte**) 
+Dacă încercați să convertiți în listă o matrice care conține un tip de date primitiv, cum ar fi `int[]`, acest proces va produce o **eroare de compilare**, deoarece **listele** acceptă numai **tipuri de date referință** (**obiecte**).
 
 ```java live
  int [] numbers = new int[] {10, 20, 30, 40, 50};
@@ -140,14 +140,14 @@ for (String equipment : safetyEquipment) {
 
 Încercarea de a adăuga un element la un indice care se află în afara limitelor listei va avea ca rezultat **IndexOutOfBoundsException**.
 
-Când un element este adăugat, numărul de elemente crește cu unu.
+Când un element este adăugat, numărul de elemente crește cu 1.
 
 
 ## Eliminarea Elementelor
 
 Metoda `remove()` șterge un element din listă.
 
-* **remove(element)** - **elimină** **prima apariție** a **elementului specificat** (returnează **true** / **false**):
+- **remove(element)** - **elimină** **prima apariție** a **elementului specificat** (returnează **true** / **false**):
 
 ```java live
 List<String> names = new ArrayList<>();
@@ -168,7 +168,7 @@ for (String name : names){
 `System.out.println(names.remove("Maria"))` va returna **true** deoarece elementul este prezent în listă și poate fi eliminat.
 `System.out.println(names.remove("John"))` va returna **false** deoarece elementul nu poate fi găsit.
 
-**remove(index)** - **elimină** **elementul** corespunzător **indicelui specificat**:
+- **remove(index)** - **elimină** **elementul** corespunzător **indicelui specificat**:
 
 ```java live
 List<String> digimons = new ArrayList<>();
@@ -185,7 +185,7 @@ for (String digimon : digimons){
 ```
 Încercarea de a elimina un element care corespunde unui indice care se află în afara limitelor listei va avea ca rezultat **IndexOutOfBoundsException**.
 
-Când un element este șters, numărul de elemente scade cu unu.
+Când un element este șters, numărul de elemente scade cu 1.
 
 [/slide]
 
@@ -237,7 +237,7 @@ if (names.contains("Maria")){
 
 ## Numărarea Elementelor
 
-- `size()` - returnează **dimensiunea** (**numărul de elemente**) listei
+- `size()` - returnează **dimensiunea** listei (**numărul de elemente**) 
 ```java live
 List<String> names = Arrays.asList("Maria", "Peter", "George");
 
