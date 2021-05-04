@@ -5,7 +5,7 @@
 
 ## În această lecție ați învățat:
 
-- Metoda sunt **blocuri de cod** care pot fi refolosite de mai multe ori
+- Metodele sunt **blocuri de cod** care pot fi refolosite de mai multe ori
 
 ``` java
 public static void printText(String text) {
@@ -15,7 +15,7 @@ public static void printText(String text) {
 
 - Metodele sunt formate din **declarație** și **corp**
 
-- Metodele sunt invocate prin `numele` + `()`
+- Metodele sunt invocate prin `nume3` + `()`
 
 ``` java
 public static void main(String[] args) {
