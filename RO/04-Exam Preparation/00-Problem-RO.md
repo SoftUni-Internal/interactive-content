@@ -62,7 +62,7 @@ Angajații pot ajuta 15 persoane într-o oră.
 După prima oră au mai rămas 5 persoane care trebuie să primească un răspuns.
 [/hint] 
 [hint]
-Toți oamenii vor primi un răspuns în a doua oră.
+Toate persoanele vor primi un răspuns după 2 ore.
 [/hint] 
 [/hints] 
 
@@ -83,7 +83,7 @@ Angajații pot ajuta 6 persoane într-o oră.
 După aceea, aceștia au o pauză de o oră.
 [/hint] 
 [hint]
-După următoarele 3 ore 36 de persoane care au primit un răspuns (18 + 6 \* 3).
+După următoarele 3 ore există 36 de persoane care au primit un răspuns (18 + 6 \* 3).
 După încă o pauză de o oră, există doar 9 persoane care așteaptă un răspuns.
 [/hint] 
 [hint]
