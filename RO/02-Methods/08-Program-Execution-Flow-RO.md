@@ -8,7 +8,7 @@
 
 În Java fluxul programului este controlat de o parte a memoriei numită **stiva de apeluri (call stack)**.
 
-Stiva este utilizată pentru a monitoriza apelurile metodelor și etapele în care au fost apelate în program.
+Stiva este utilizată pentru a monitoriza apelurile metodelor și etapele în care acestea au fost apelate în program.
 
 De îndată ce o metodă își termină execuția, fluxul programului este reluat prin executarea codului care urmează după metodă.
 
@@ -43,13 +43,13 @@ public class Main {
 }
 ```
 
-Folosim clasa `Scanner` pentru a accepta intrarea utilizatorului prin consolă.
+Folosim clasa `Scanner` pentru a accepta intrarea utilizatorului.
 
 Mai întâi, citim numele orașului și apelăm imediat metoda `printWeather()`, transmițând acest șir ca parametru.
 
 Programul omite apoi câteva linii până când găsește metoda `printWeather(String city)` și execută codul din interiorul metodei.
 
-În cele din urmă, va reveni la locul unde metoda a fost apelată și va continua cu imprimarea întrebării corespunzătoare și solicitând utilizatorului să introducă datele.
+În cele din urmă, va reveni la locul unde metoda a fost apelată, va continua cu imprimarea întrebării corespunzătoare și va solicita utilizatorului să introducă datele.
 
 [/slide]
 
@@ -59,11 +59,11 @@ Programul omite apoi câteva linii până când găsește metoda `printWeather(S
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-52-Program-Execution-Call-stack-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Stiva conține **cadre de stivă** pentru fiecare apel al metodei. Aceste cadre de stivă stochează informații despre:
+Stiva conține **cadre de stivă** pentru fiecare apel al unei metodei. Aceste cadre de stivă stochează informații despre:
 
 - Orice argumente transmise metodei
 - Variabile locale
-- Adresa la care să revină după ce metoda curentă este executată
+- Adresa la care trebuie să revină după ce metoda curentă este executată
 
 
 [/slide]
