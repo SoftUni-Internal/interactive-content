@@ -38,11 +38,11 @@ Metodele sunt folosite în Java din mai multe motive:
 
 - Metodele fac codul mai lizibil și mai ușor de depanat
 
-   - de exemplu, o metodă numită `printHello()` este doarte sugestivă pentru scopul pe care îl servește
+   - de exemplu, o metodă numită `printHello()` este foarte sugestivă pentru scopul pe care îl servește
 
-- **Simplificarea problemelor**: variabilele locale și instrucțiunile unei metode **nu pot fi văzute în exteriorul acesteia**
+- **Simplificarea problemelor**: variabilele locale și instrucțiunile unei metode **nu pot fi văzute din exteriorul acesteia**
 
-   - ele sunt **ascunse** de alte părți ale programului, atfel prevenind erori și confuzii
+   - ele sunt **ascunse** de alte părți ale programului, astfel prevenind erori și confuzii
 
 [/slide]
 
