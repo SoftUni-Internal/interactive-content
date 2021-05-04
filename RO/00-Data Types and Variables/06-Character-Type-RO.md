@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Tipul Character
+# Tipul de Date Character
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-38-40-character-type-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Tipul de date **char** este utilizat pentru stocarea unui **singur** caracter.
