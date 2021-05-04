@@ -27,7 +27,7 @@ Imprimați "**No**" dacă nu există numere mai mari decât valoarea medie.
 
 ## Intrare
 
-O secvență de numere întregi separate printr-un spațiu.
+Intrarea este formată dintr-o secvență de numere întregi separate printr-un spațiu.
 
 ## Ieșire
 
@@ -35,7 +35,7 @@ Imprimați numerele pe o singură linie separate printr-un spațiu.
 
 ## Constrângeri
 
-Toate numerele de intrare sunt întregi.
+Toate numerele din intrare sunt întregi.
 
 Numărul de elemente nu va depăși 10000.
 
