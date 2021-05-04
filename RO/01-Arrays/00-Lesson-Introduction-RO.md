@@ -18,13 +18,13 @@
 
 **2. Procesarea Matricelor**
 
-- Citirea matricelor de pe consolă
+- Citirea unei matrice de pe consolă
 
 - Imprimarea unei matrice pe consolă
 
 **3.Bucla For-Each**
 
-- Imprimarea matricei cu ajutorul buclei for-each 
+- Imprimarea unei matrice cu ajutorul buclei for-each 
 
 
 [/slide]
