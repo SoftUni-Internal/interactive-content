@@ -1,4 +1,4 @@
-# Tipul Numerelor Reale
+# Tipuri Reale
 
 [slide hideTitle]
 # Tipuri în Virgulă Mobilă
