@@ -4,15 +4,15 @@
 
 Informațiile pot fi **transmise** metodelor ca **parametri**. 
 
-Parametrii se comportă ca **variabile** înăuntrul unei metode.
+Parametrii se comportă ca **variabile** în interiorul unei metode.
 
-Parametrii sunt specificați după numele metodei, **între paranteze**.
+Parametrii sunt specificați **între paranteze**, după numele metodei. 
 
 Puteți adăuga **câți** parametri doriți, **separați** prin virgulă.
 
-Următorul exemplu conține o metodă ce preia un **șir** numit **firstName** ca parametru.
+Următorul exemplu conține o metodă care preia un **șir** numit **firstName** ca parametru.
 
-Când metoda este apelată, îi transmitem parametrul **firstName**, care este folosit în interiorul metodei pentru a afișa întregul nume:
+Când metoda este apelată, îi transmitem parametrul **firstName**, care este folosit în interiorul metodei pentru a afișa numele complet:
 
 ```java live no-template
 public class MyClass {
@@ -30,7 +30,7 @@ public class MyClass {
 
 Puteți transmite unul sau mai mulți parametri. Există posibilitatea și de a nu transmite niciun parametru.
 
-Puteți transmite parametri de diferite tipuri.
+De asemenea, puteți transmite parametri de diferite tipuri.
 
 Fiecare parametru are un nume și un tip.
 
@@ -228,7 +228,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați o metodă pentru a afișa triunghiuri ca în exemplul de mai jos:
+Creați o metodă care afișează triunghiuri ca în exemplul de mai jos:
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -416,7 +416,7 @@ Creați un program care primește un **șir** pe prima linie \("add", "multiply"
 
 Creați 4 **metode** \(pentru fiecare operație\) și invocați metoda corespunzătoare în funcție de comandă.
 
-Metoda trebuie să imprime și rezultatul \(trebuie să fie de tip void\).
+Metoda trebuie să imprime și rezultatul și să fie de tip **void**.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
