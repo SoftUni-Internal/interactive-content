@@ -49,7 +49,7 @@ for (int number : numbers) {
 - Declararea și **invocarea metodelor**
    - metode de tip **void** și **return**
 - Metode cu parametri
-- **Tipuri de valoare** vs. **Tipuri de referință**
+- **Tipuri valoare** vs. **Tipuri referință**
 - Metode de **supraîncărcare**
 - Fluxul de execuție a programului
 [/slide]
