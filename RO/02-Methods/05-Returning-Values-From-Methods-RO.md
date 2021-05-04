@@ -27,17 +27,17 @@ public class MyClass {
 
 Valorile returnate pot fi:
 
-* **Atribuite** unei variabile
+* **atribuite** unei variabile
 ```Java
 int max = getMax(5, 10);
 ```
 
-* **Folosite** într-o expresie
+* **folosite** într-o expresie
 ```Java
 double total = getPrice() * quantity * 1.20;
 ```
 
-* **Transmise** altei metode
+* **transmise** altei metode
 ```Java
 int age = Integer.parseInt(sc.nextLine());
 ```
@@ -61,7 +61,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați o metodă care calculează și afișează aria unui dreptunghi cu lungimea si lățimea date.
+Creați o metodă care calculează și afișează aria unui dreptunghi cu laturile date.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
