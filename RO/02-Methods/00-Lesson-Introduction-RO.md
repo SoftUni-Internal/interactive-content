@@ -14,11 +14,11 @@
 
 **2. Denumirea și cele mai bune practici** 
 
-- Numirea metodelor
+- Denumirea metodelor
 
-- Numirea metodelor cu parametri
+- Denumirea metodelor cu parametri
 
-- Cdele mai bune practici
+- Cele mai bune practici
 
 **3. Declararea și invocarea metodelor**
 
@@ -34,15 +34,15 @@
 
 - Cum folosim instrucțiunea "return"
 
-**6. Tipul de valori vs tipul de referințe**
+**6. Tipul valoare vs tipul referință**
 
-- Tipuri de valori vs tipuri de referințe
+- Tipuri valoare vs tipuri referință
 
 - Memorie: stack și heap
 
 **7. Metode de supraîncărcare**
 
-- Ce reprezintă **supraîncărcarea metodei** (method overloading)
+- Ce reprezintă **supraîncărcarea metodelor** (method overloading)
 
 **8. Fluxul de execuție a programului**
 
