@@ -43,7 +43,7 @@ static void printNumbers(int start, int end) {
 - Ce sunt **listele** în Java
 - **Manipularea listelor**
 - **Citirea listelor** de pe consolă
-- **Sortarea listelor și a matricelor**
+- **Sortarea listelor**
 
 
 [/slide]
