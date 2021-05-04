@@ -21,9 +21,9 @@ public class Main {
 
 Veți primi un număr întreg **n**, care reprezintă numărul de vagoane dintr-un tren. 
 
-Pe următoarele **n linii** veți primi numărul persoanelor care vor urca în acel vagon.
+Pe următoarele **n linii** veți primi numărul persoanelor care vor urca în fiecare vagon.
 
-La final imprimați **numărul de pasageri din fiecare vagon**, urmat de **numărul total de pasageri din tren*.
+Imprimați **numărul de pasageri din fiecare vagon**, iar la final **numărul total de pasageri din tren*.
 
 ### Exemplu
 | **Intrare** | **Ieșire** |
@@ -384,7 +384,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Creați un program care **primește o matrice și numărul de rotații** pe care trebuie să le efectuați. Rotațiile sunt făcute prin schimbarea elementului corespunzător indicelui 0 cu elementul corespunzător ultimului indice.
+Creați un program care **primește o matrice și numărul de rotații** pe care trebuie să le efectuați. Rotațiile sunt făcute prin plasarea elementului corespunzător indicelui 0 la finalul secvenței.
 
 **Imprimați** matricea rezultată.
 
@@ -492,9 +492,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Creați un program pentru a **găsi numere întregi de tip top** dintr-o matrice.
+Creați un program care **găsește numerele întregi de top** dintr-o matrice.
 
-Un număr întreg de tip **top** este un număr întreg care este **mai mare** decât toate elementele **din dreapta sa**.
+Un număr întreg de **top** este un număr întreg care este **mai mare** decât toate elementele **din dreapta sa**.
 
 ### Exemplu
 | **Intrare** | **Ieșire** |
@@ -1026,7 +1026,7 @@ De exemplu, imaginați-vă că vi se oferă un câmp **cu dimensiunea 3** și bu
 
 Dacă buburuza **de la indicele 0 trebuie să zboare la dreapta sa cu lungimea de 1** (0 right 1) ea va încerca să **aterizeze la indicele 1**, dar din cauză că acolo există deja **o altă buburuză** ea va continua să zboare mai departe spre dreapta cu o lungime suplimentară de 1, aterizând la **indicele 2**.
 
-După aceea, dacă aceeași buburuză trebuie să zboare la dreapta sa cu lungimea de 1 (2 right 1), va ateriza undeva **în afara câmpului**, așa că zboară **departe**.
+După aceea, dacă aceeași buburuză trebuie să zboare la dreapta sa cu lungimea 1 (2 right 1), va ateriza undeva **în afara câmpului** și va dispărea.
 
 Dacă vi se oferă un indice **care nu are o buburuză** acolo, **nu se întâmplă nimic**.
 
@@ -1036,7 +1036,7 @@ La final, **imprimați toate celulele** câmpului, **separate** prin **spații**
 
 Pentru fiecare celulă care conține o buburuză imprimați '1' și pentru fiecare celulă goală imprimați '0'.
 
-Pentru exemplul de mai sus, rezultatul ar trebui să fie '0 1 0'.
+Pentru exemplul de mai sus, rezultatul este '0 1 0'.
 
 ### Intrare
 
@@ -1049,9 +1049,9 @@ Indicii dați pot sau nu să fie în interiorul câmpului.
 - Pe liniile următoare, până când veți primi comanda "**end**", veți primi comenzi în formatul: "\{ladybug index\} \{direction\} \{fly length\}"
 
 ### Ieșire
-- Imprimați toate celulele din câmpul în formatul: "\{cell\} \{cell\} … \{cell\}"
-    - dacă o celulă are buburuză, tipăriți '1'
-    - dacă o celulă este goală, imprimați '0' 
+- Imprimați toate celulele din câmp în formatul: "\{cell\} \{cell\} … \{cell\}"
+    - dacă o celulă are o buburuză, tipăriți '1'
+    - dacă o celulă este goală, tipăriți '0' 
 
 
 ### Exemplu
@@ -1076,7 +1076,7 @@ Prima comandă este "**0 right 1**":
 - right - **direcția** zborului
 - 1 - **lungimea zborului**
 
-După această comandă, câmpul arată așa: `0 0 1`.
+După această comandă, câmpul arată așa: `0 1 1`.
 [/hint] 
 [hint] 
 A doua comandă este "**2 right 1**".
