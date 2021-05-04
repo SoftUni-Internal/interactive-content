@@ -17,15 +17,16 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Pe prima linie veți primi o **listă de vagoane** (numere întregi).
+Pe prima linie veți primi o **listă cu vagoane** (numere întregi).
 
-Fiecare **număr întreg** reprezintă **numărul de pasageri** care se află în fiecare vagon al trenului de pasageri.
+Fiecare **număr întreg** reprezintă **numărul de pasageri** care se află în acel vagon.
 
-Pe linia următoare veți primi **capacitatea maximă a fiecărui vagon**, reprezentată ca un **număr întreg**.
+Pe linia următoare veți primi **capacitatea maximă a fiecărui vagon**, reprezentată de un **număr întreg**.
 
 **Până** la primirea comenzii "**end**", vi se vor oferi două tipuri de intrări:
 - "**Add** \{**passengers**\}"  - adaugați un vagon la final cu numărul dat de pasageri
 - "\{**passengers**\}" - **găsiți un vagon existent** care să găzduiască numărul de pasageri introdus (începând cu primul vagon)
+
 La sfârșit, **tipăriți** starea finală a trenului (toate vagoanele separate printr-un spațiu).
 
 ### Exemplu
@@ -435,13 +436,13 @@ Pe liniile următoare veți primi următoarele intrări:
 
 "\{**name**\} **is going!**"
 
-- Trebuie să **adăugați persoana dacă nu se află deja pe lista de invitați**
+- Trebuie să **adăugați persoana dacă nu se află pe lista de invitați**
 - Dacă **persoana este pe listă** tipăriți pe consolă următorul mesaj: "\{**name**\} **is already in the list!**"
 
 
 "\{**name**\} **is not going!**"
 
-- Trebuie să eliminați persoana dacă se află în listă
+- Trebuie să eliminați persoana dacă se află pe listă
 - Dacă nu, tipăriți următorul mesaj pe consolă: "\{**name**\} **is not in the list!**"
 
 
@@ -671,8 +672,8 @@ Până la primirea comenzii "**End**" vi se vor da **operații** pe care trebuie
 - "**Add** \{**number**\}" - adăugați un număr la sfârșit
 - "**Insert** \{**number**\} \{**index**\}" - introduceți numărul la indicele dat
 - "**Remove** \{**index**\}" - eliminați numărul corespunzător indicelui dat
-- "**Shift left** \{**count**\}" - primul număr devine ultimul; repetați această operație de numărul indicat de ori
-- "**Shift right** \{**count**\}" - ultimul număr devine primul; repetați această operație de numărul indicat de ori
+- "**Shift left** \{**count**\}" - primul număr devine ultimul; repetați această operație de numărul de ori indicat
+- "**Shift right** \{**count**\}" - ultimul număr devine primul; repetați această operație de numărul de ori indicat
 
 **Notă**: este posibil ca indicele dat să fie în afara limitelor listei. 
 
@@ -1063,17 +1064,17 @@ public class Main {
 ## Descriere
 Vi se vor oferi două mâini de cărți, care vor fi reprezentate de **numere întregi**.
 
-Să presupunem că sunt **doi jucători**.
+Să presupunem că există **doi jucători**.
 
 Trebuie să **aflați** mâna câștigătoare și câștigătorul.
 
-Începeți de la începutul ambelor pachete deținute de jucători. **Comparați** cărțile din prima mâna cu cărțile din cea de-a doua mână.
+Începeți de la începutul ambelor pachete deținute de jucători. **Comparați** cărțile din pachetul primului jucător cu cărțile din pachetul celui de-al doilea jucător.
 
 Jucătorul **care are cartea cea mai mare la iterația curentă** ia ambele cărți și le pune la finalul pachetului din mână sa - cartea celui de-al doilea jucător este ultima, iar cartea primei persoane (cea câștigătoare) este înaintea ei. Jucătorul cu cartea mai mică trebuie să scoată cartea din pachetul său de cărți.
 
-Dacă cărțile jucătorilor **au aceeași valoare** nu există un câștigător, iar cele două cărți trebuie scoase din ambele pachete.
+Dacă cărțile jucătorilor **au aceeași valoare** nu există niciun câștigător, iar cele două cărți trebuie scoase din pachete.
 
-**Jocul se termină**, când unul dintre jucători rămâne **fără nicio carte**.
+**Jocul se termină** când unul dintre jucători rămâne **fără nicio carte**.
 
 Trebuie să **tipăriți câștigătorul pe consolă** și **suma cărților rămase în pachet**: "\{**First/Second**\} **player wins! Sum:** \{**sum**\}".
 
@@ -1162,7 +1163,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program pentru a **alătura mai multe matrice** de numere.
+Creați un program care **alătură mai multe matrice** de numere.
 
 - **Matricele** sunt **separate** prin '\|'
 
@@ -1251,7 +1252,7 @@ public class Main {
 ## Descriere
 În **Pokemon Don't Go**, când vă îndreptați spre un anumit pokemon, pokemonii mai apropiați de voi se îndepărtează, iar cei aflați mai departe de voi se apropie.
 
-Veți primi **o secvență de numere întregi, separate prin spații** - **distanțe** până la pokemon.
+Veți primi **o secvență de numere întregi, separate prin spații** - **distanțe** până la pokemoni.
 
 Apoi, veți începe **să primiți numere întregi**, care vor corespunde cu **indicii** din secvență.
 
@@ -1302,7 +1303,7 @@ Rezultatul este \{**9, 8**\}.
 [/hint] 
 [hint]
 Următorul indice primit este **1**. 
-Prin urmare, eliminăm **8** și scădem toate elementele mai mari decât acesta.
+Prin urmare, eliminăm **8** și micșorăm toate elementele mai mari decât acesta.
 
 Rezultatul este \{**1**\}.
 [/hint] 
@@ -1592,12 +1593,12 @@ Pe prima linie din intrare veți primi planificarea inițială a lecțiilor și 
 Până la primirea comenzii "**course start**", vi se vor oferi câteva **comenzi pentru a modifica planificarea cursului**.
 
 **Comenzile posibile** sunt:
-- "**Add:**\{**lessonTitle**\}" - **adăugați lecția la sfârșitul** planificării, dacă **nu există**
-- "**Insert**:\{**lessonTitle**\}:\{**index**\}" - **introduceți** lecția la **indicele dat**, dacă **nu există**
-- "**Remove:**\{**lessonTitle**\}" - **eliminați lecția**, dacă **există**
-- "**Swap:**\{**lessonTitle**\}:\{**lessonTitle**\}" - **schimbați locul** celor două lecții, **dacă există**
+- "**Add:**\{**lessonTitle**\}" - **adăugați lecția la sfârșitul** planificării, dacă aceasta **nu există**
+- "**Insert**:\{**lessonTitle**\}:\{**index**\}" - **introduceți** lecția la **indicele dat**, dacă aceasta **nu există**
+- "**Remove:**\{**lessonTitle**\}" - **eliminați lecția**, dacă aceasta **există**
+- "**Swap:**\{**lessonTitle**\}:\{**lessonTitle**\}" - **schimbați locul** celor două lecții, **dacă acestea există**
 - "**Exercise:**\{**lessonTitle**\}" - dacă lecția există și nu există încă un exercițiu, **adăugați exercițiul în program, imediat după indicele lecției**, în următorul format: "**- - -** \{**lessonTitle**\}**-Exercise**"
-    - dacă **lecția nu există**, **adăugați** lecția **la sfârșitul** programului cursului, **urmat de exercițiu**
+    - dacă **lecția nu există**, **adăugați** lecția **la sfârșitul** programului cursului, **urmată de exercițiu**
 
 De fiecare dată când **schimbați sau eliminați o lecție,** trebuie **să faceți același lucru cu exercițiile** care urmează după lecții, în cazul în care acestea există.
 
@@ -1614,7 +1615,7 @@ De fiecare dată când **schimbați sau eliminați o lecție,** trebuie **să fa
 [hint]
 Primim planificarea inițială.
 
-Apoi, adăugăm lecția **Databases**, deoarece acesta nu există:
+Apoi, adăugăm lecția **Databases**, deoarece aceasta nu există:
 
 ```java
 if (!schedule.contains(lessonTitle)) {
