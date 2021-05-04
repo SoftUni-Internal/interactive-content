@@ -22,7 +22,7 @@
 
 - Imprimarea unei matrice pe consolă
 
-**3.Bucla For-Each**
+**3.Bucla For-each**
 
 - Imprimarea unei matrice cu ajutorul buclei for-each 
 
