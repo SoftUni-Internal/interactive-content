@@ -19,11 +19,11 @@ for (int i = 0; i < n; i++) {
 }
 ```
 
-## Citirea valorilor matricei dintr-o singură linie
+## Citirea valorilor matricei de pe o singură linie
 
-Maricele pot fi citite dintr-o singură linie de valori separate. 
+Maricele pot fi citite de pe o singură linie care conține valori separate. 
 
-De exemplu, dacă vrem să citim această matrice: `2 8 30 25 40 72 -2 44 56`:
+De exemplu, vrem să citim această matrice: `2 8 30 25 40 72 -2 44 56`.
 
 ```Java
 String values = sc.nextLine();
@@ -41,12 +41,12 @@ După aceea, inițializăm o nouă matrice cu o lungime egală cu numărul de el
 
 În cele din urmă, folosind o buclă for, inserăm toate valorile în matrice.
 
-Putem citi o matrice de numere întregi folosind `java.util.Arrays;` care este o `clasă` în Java care vă permite să creați și să manipulați matrice.
+Putem citi o matrice de numere întregi folosind clasa `java.util.Arrays;`, care ne permite să creăm și să manipulăm matrice.
 
 
 ## Alternative
 
-Exemplul de mai jos prezintă o metodă mult mai scurtă de a citi intrarea și a crea o matrice cu ajutorul acesteia.
+Exemplul de mai jos prezintă o metodă mai scurtă de a citi intrări și de a crea matrice cu ajutorul acestora.
 
 ```Java
 String inputLine = sc.nextLine();
@@ -63,9 +63,9 @@ int[] arr = Arrays
 
 Citim mai întâi intrarea ca șir folosind `scanner.nextLine()`.
 
-Apoi împărțim intrarea prin delimitatorul `" "`, folosind `split(" ")`.
+Apoi, împărțim intrarea prin delimitatorul `" "` cu ajutorul metodei `split(" ")`.
 
-După aceea, parsăm fiecare șir la valori întregi cuajutorul metodei `mapToInt(Integer::parseInt)`.
+Vom continua cu parsarea fiecărui șir la valori întregi prin metoda `mapToInt(Integer::parseInt)`.
 
 În cele din urmă, convertim rezultatul într-o matrice.
 
@@ -223,7 +223,7 @@ String[] strings = { "one", "two" };
 System.out.println(String.join(" ", strings));
 ```
 
-Dacă încercăm să tipărim o matrice de tipul **int**, vom primi o eroare:
+Dacă încercăm să tipărim o matrice de tipul **int**, vom obține o eroare:
 
 ```Java live
 int[] arr = { 1, 2, 3 };
@@ -269,7 +269,7 @@ Imprimați ieșirea pe o singură linie \(elementele trebuie separate printr-un 
 Citiți matricea de șiruri, **schimbați** **primul** element \(corespunzător indicelui **0**\) cu **ultimul** element \(corespunzător indicelui **n-1**\).
 [/hint] 
 [hint] 
-Apoi, **schimbați** **al doilea** element \(corespunzător indicelui**1**\) cu **penultimul** element \(corespunzător indicelui **n-2**\).
+Apoi, **schimbați** **al doilea** element \(corespunzător indicelui **1**\) cu **penultimul** element \(corespunzător indicelui **n-2**\).
 [/hint] 
 [hint] 
 Continuați în același mod până când ajungeți la **mijlocul** matricei.
