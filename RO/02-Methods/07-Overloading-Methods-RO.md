@@ -18,7 +18,7 @@ public static void print(String text) {
 
 ## Supraîncărcarea Metodelor
 
-Supraîncărcarea unei metode se face folosind același nume pentru mai multe metode cu diferite **semnături** \(**numele** metodei și **parametri**\).
+Supraîncărcarea unei metode se face folosind același nume pentru mai multe metode cu diferite **semnături** \(**numele** metodei și **parametrii**\).
 
 În loc să definim două metode care fac același lucru, este mai bine să supraîncărcăm una.
 
@@ -49,11 +49,11 @@ public class MyClass {
 [/slide]
 
 [slide hideTitle]
-# Semnătura și Tipul de Returnare 
+# Semnătura și Tipul Returnat 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-47-Signature-type-and-return-type-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Semnătura** metodei nu include tipul de returnare a metodei.
+**Semnătura** metodei nu include tipul returnat al metodei.
 
 O clasă nu poate avea două metode cu aceeași semnătură. 
 
