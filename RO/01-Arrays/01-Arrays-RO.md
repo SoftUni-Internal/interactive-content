@@ -6,7 +6,7 @@
 
 **Matricele** ne permit să stocăm mai multe date într-o singură variabilă.
 
-Matricele sunt utile pentru păstrarea unei secvențe de date și parcurgerea acesteia.
+Matricele sunt utile pentru păstrarea unei secvențe de date și pentru parcurgerea acesteia.
 
 Puteți inițializa o **matrice** și valorile din cadrul acesteia prin încadrarea valorilor între acolade și separarea acestora prin virgulă. 
 
@@ -32,7 +32,7 @@ Matricele pot fi vizualizate sub următoarea formă:
 
 [image assetsSrc="array-real-live-example.jpg" /]
 
-Acest tren are **7 vagoane (elemente)**. Fiecare are **pasageri (o valoare)**. \{3, 4, 10, 7, 5, 0, 6\}
+Acest tren are **7 vagoane (elemente)**. Fiecare vagon are **pasageri (o valoare)**. \{3, 4, 10, 7, 5, 0, 6\}
 
 Matricele stau la **baza** altor tipuri de date abstracte precum: **List**, **Stack**, **Queue**.
 
@@ -43,7 +43,7 @@ Matricele stau la **baza** altor tipuri de date abstracte precum: **List**, **St
 # Cum să Lucrați cu Matrice
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/RO/02-Java-Fundamentals-Arrays-5-working-with-arrays-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Matricele sunt utilizate pentru stocarea mai multor valori într-o singură variabilă, în locul declarării unor variabilelor separate pentru fiecare valoare.
+Matricele sunt utilizate pentru stocarea mai multor valori într-o singură variabilă, în locul declarării unor variabile separate pentru fiecare valoare.
 
 Matricele au o dimensiune fixă. Acest lucru înseamnă că nu pot fi redimensionate.
 
@@ -79,19 +79,19 @@ După aceea, **inițializăm** matricea, iar toate valorile sale sunt setate la 
 
 **Atribuim** o valoare elementelor matricei.
 
-Lungimea conține numărul elementelor matricei.
+Lungimea reprezintă numărul de elementele din matrice.
 
 În bucla for folosim expresia `i < numbers.length` deoarece primul indice al matricei are valoarea 0, iar ultimul element este `numbers[4]`.
 
-Mai apoi vom **accesa** elementele matricei cu ajutorul indicilor.
+După aceea, vom **accesa** elementele matricei cu ajutorul indicilor.
 
 După cum am menționat mai sus, primul indice al unei matrice este întotdeauna 0, iar ultimul indice este `array.length - 1`.
 
-În total, avem 5 elemente în matricea noastră, dar ultimul element corespunde indicelui 4, deci efectuăm operația `array.length - 1 = 4`, 4 reprezentând ultimul nostru indice.
+În total avem 5 elemente în matricea noastră, dar ultimul element corespunde indicelui 4, deci efectuăm operația `array.length - 1 = 4`.
 
-Operatorul `[]` accesează elementele după indicele acestora.
+Operatorul `[]` accesează elementele cu ajutorul indicelui acestora.
 
-Dacă încercăm să accesăm elementul care corespunde unui indice nevalid, vom obține o excepție.
+Dacă încercăm să accesăm un element care corespunde unui indice nevalid, vom obține o excepție.
 
 
 [/slide]
@@ -116,7 +116,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Introduceți un **număr din intervalul** \[1…7\] și imprimați **numele zilei corespunzătoare numărului** \(în limba engleză\) sau "**Invalid Day!**".
+Introduceți un **număr din intervalul** \[1…7\] și imprimați **numele zilei corespunzătoare** \(în limba engleză\) sau "**Invalid Day!**".
 
 Utilizați o **matrice de șiruri**.
 
@@ -134,7 +134,7 @@ Utilizați o matrice de șiruri care conține numele zilelor:
 `{Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday}`
 [/hint] 
 [hint] 
-Imprimați elementul corespunzator indicelui dat atunci când acesta se află în intervalul \[1…7\] sau "**Invalid Day!**" în caz contrar.
+Imprimați elementul corespunzător indicelui dat (nu uitați să scădeți 1) atunci când acesta se află în intervalul \[1…7\] sau "**Invalid Day!**" în caz contrar.
 [/hint] 
 [/hints]
 
