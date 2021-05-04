@@ -969,7 +969,7 @@ The special number is 9 with a power of 3.
 After detonation, the remaining sequence is: \[1, 4\] with a sum of 5.
 [/hint] 
 [hint]
-Since the number 9 has only 1 neighbor to the right of it, we only remove the number 9 (we remove one number instead of three numbers).
+Since the number 9 has only 1 neighbor to the right of it, we only remove the number 1 (we remove one number instead of three numbers).
 [/hint] 
 [/hints]
 
