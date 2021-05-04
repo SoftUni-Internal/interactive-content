@@ -4,7 +4,7 @@
 # Citirea Listelor 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-10-11-reading-lists-from-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Citirea unei liste folosind **bucla for**:
+- Citirea unei liste folosind o **buclă for**:
 ```java 
 Scanner scanner = new Scanner(System.in);
 
@@ -17,11 +17,11 @@ List<Integer> list = new ArrayList<>();
 // crearea unei bucle for cu dimensiunea listei
 for (int i = 0; i < n; i++) { 
 
-// citirea unui element de pe consolă   
-int number = Integer.parseInt(scanner.nextLine()); 
+    // citirea unui element de pe consolă   
+    int number = Integer.parseInt(scanner.nextLine()); 
 
-// adăugarea elementului la listă     
-list.add(number); 
+    // adăugarea elementului în listă     
+    list.add(number); 
 }
 ```
 [/slide]
@@ -33,7 +33,7 @@ list.add(number);
 
 Puteți citi o listă ca o singură linie de pe consolă.
 
-Imaginați-vă că avem o intrare care constă în mai multe valori întregi, separate prin spații. (10 20 30 40 50)
+Imaginați-vă că avem o intrare care constă în mai multe valori **întregi**, separate prin spații (10 20 30 40 50).
 ``` java
 // input: 10 20 30 40 50
 String values = scanner.nextLine();   
@@ -104,11 +104,11 @@ public class Main {
 [task-description]
 ## Descriere
 
-Creați un program pentru a **însuma toate numerele egale adiacente** într-o listă de numere zecimale, începând de la **stânga la dreapta**.
+Creați un program pentru a **însuma toate numerele egale adiacente** dintr-o listă de numere zecimale, începând de la **stânga la dreapta**.
 
 - După însumarea a două numere, rezultatul obținut poate fi egal cu unii dintre vecinii săi și ar trebui, de asemenea, să fie însumat (vezi exemplele de mai jos)
 
-- Înumați întotdeauna cei doi vecini egali din stânga (dacă sunt disponibile mai multe cupluri de vecini egali)
+- Însumați întotdeauna cei doi vecini egali din stânga (dacă sunt disponibile mai multe cupluri de vecini egali)
 
 ## Exemplu
 |**Intrare**|**Ieșire** |**Comentarii**|
@@ -227,7 +227,7 @@ public class Main {
 
 Creați un program care însumează toate numerele dintr-o listă în ordinea următoare:
 
-- **primul** + **ultimul**, **primul + 1** + **ultimul - 1**, **primul + 2** + **ultimul - 2**, ...**primul + n**, **ultimul - n**
+- **primul** + **ultimul**, **primul + 1** + **ultimul - 1**, **primul + 2** + **ultimul - 2**, ...**primul + n** + **ultimul - n**
 
 [image assetsSrc="lists-problem-gaus-trick(1).png" /]
 
