@@ -3,15 +3,15 @@
 # Definiție
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/RO/02-Java-Fundamentals-Arrays-18-19-For-each-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`For-each` este o alta tehnică de parcurgere a matricei, ca şi buclele `for`, `while`, `do-while` introduse în Java.
+`For-each` este o altă tehnică de parcurgere a unei matrice, la fel ca buclele `for`, `while`, `do-while` introduse în Java.
 
-Aceatsa începe cu cuvântul cheie `for` ca o buclă `for` obișnuită.
+Aceasta începe cu cuvântul cheie `for`, ca o buclă `for` obișnuită.
 
-În loc să declarăm și să inițializăm o variabilă de contorizare, declarăm o variabilă care are același tip de date ca şi tipul de bază al matricei, urmată de două puncte (:), iar mai apoi de numele matricei.
+În loc să declarăm și să inițializăm o variabilă de contorizare, declarăm o variabilă care are același tip de date ca şi tipul de bază al matricei, urmată de două puncte ( : ), iar mai apoi de numele matricei.
 
-Variabila buclei for-each stochează valoarea fiecărui element, nu indicele acestuia.
+Variabila buclei for-each stochează valoarea fiecărui element în loc de indicele acestuia.
 
-Este de obicei folosit pentru a itera printr-o matrice atunci când nu avem nevoie de valoarea indicilor elementelor.
+Bucla for-each este de obicei folosită pentru a itera printr-o matrice atunci când nu avem nevoie de indicii elementelor.
 
 ```Java
 for (var variableName : arrayName) {
@@ -21,7 +21,7 @@ for (var variableName : arrayName) {
 [/slide]
 
 [slide hideTitle]
-# Imprimarea Unei Matrice cu Ajutorul Buclei For-each
+# Imprimarea unei Matrice cu Ajutorul Buclei For-each
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/RO/02-Java-Fundamentals-Arrays-20-For-each-loop-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem **imprima** elementele unei matrice cu ajutorul buclei **for-each**:
