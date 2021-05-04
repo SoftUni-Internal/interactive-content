@@ -1069,7 +1069,7 @@ The first command is "**0 right 1**":
 - right - the **direction** to fly to
 - 1 - the **fly length**
 
-After this command, the field looks like this: `0 0 1`
+After this command, the field looks like this: `0 1 1`
 [/hint] 
 [hint] 
 The second command is "**2 right 1**".
