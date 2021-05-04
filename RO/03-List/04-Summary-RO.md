@@ -43,7 +43,7 @@ List<Integer> items = Arrays
         .collect(Collectors.toList()); // convert to List
 ```
 
-- Sortarea listelor în ordine crescătoare prin intermediul metodelor `Collections.sort()` sau `Collections.reverse()` pentru sortarea în ordine descrescătoare
+- Sortarea listelor în ordine crescătoare prin intermediul metodei `Collections.sort()` sau `Collections.reverse()`, pentru sortarea în ordine descrescătoare
 
 ```java
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
