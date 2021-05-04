@@ -1,18 +1,18 @@
-# Cele mai Bune Practici de Denumire a Metodelor
+# Convenții de Denumire a Metodelor
 
 [slide hideTitle]
 # Denumirea Metodelor
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-11-12-13-Naming-methods-and-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Numele unei metode trebuie să fie întotdeauna un verb.
+Numele unei metode trebuie să conțină întotdeauna un verb.
 
 O metodă reprezintă o acțiune, iar numele metodei trebuie să indice clar ce acțiune efectuează aceasta.
 
-Numele metodei poate fi un singur cuvânt sau 2-3 cuvinte, astfel încât să descrie bine acțiunea.
+Numele metodei poate fi un singur cuvânt sau 2-3 cuvinte, astfel încât să descrie corespunzător acțiunea.
 
 ## Exemple de nume potrivite
 
-Numele metodelor trebuie să răspundă la întrebarea: *Ce face această metodă*?
+Numele metodelor trebuie să răspundă la întrebarea: *Ce face această metodă?*
 
 Nume potrivite pentru metode: **findStudent**, **getReportByName**, **getBrowserId**
 
@@ -29,7 +29,7 @@ Acest lucru indică că ar trebui să împărțiți metoda în două sau mai mul
 
 ## Denumirea parametrilor metodei
 
-Numele parametrilor metodelor ar trebui să respecte formatul: \[Substantiv\] sau \[Adjectiv\] + \[Substantiv\]. 
+Numele parametrilor metodelor trebuie să respecte formatul: \[Substantiv\] sau \[Adjectiv\] + \[Substantiv\]. 
 
 De asemenea trebuie să scriem metodele în **camelCase**:
 
@@ -46,7 +46,7 @@ Fiecare metodă trebuie să îndeplinească o sarcină bine definită și **unic
 
 Numele unei metode trebuie să **descrie cerința** într-un mod clar.
 
-**Evitați** metodele **mai lungi decăt un ecran**, împărțiți-le în câteva metode mai scurte.
+**Evitați** metodele **mai lungi de un ecran** prin împărțirea acestora în câteva metode mai scurte.
 
 Aici sunt câteva exemple de nume sugestive:
 
@@ -66,7 +66,7 @@ public static void printReceipt() {
 
 Aveți grijă să folosiți **indentarea corectă**.
 
-Lăsați un **rând gol** între **metode**, după **bucle** și după instrucțiunile **if**.
+Lăsați un **rând liber** între **metode**, după **bucle** și după instrucțiunile **if**.
 
 **Evitați rândurile lungi** și **expresiile complexe**.
 
