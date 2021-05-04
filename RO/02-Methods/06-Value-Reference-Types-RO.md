@@ -9,17 +9,17 @@ O variabilă de tip **valoare** \(date primitive\) conține o instanță a tipul
 
 Tipurile primitive de date sau tipurile valoare conțin valoarea unei variabile în propria locație de memorie.
 
-Cu tipurile valoare, fiecare variabilă are **o copie proprie a datelor**, și nu este posibil ca operațiile asupra unei variabile să **le afecteze și pe celelalte**.
+În cazul tipurilor valoare, fiecare variabilă are **o copie proprie a datelor** și nu este posibil ca operațiile asupra unei variabile să **afecteze alte variabile**.
 
-Când valoare a unui tip primitiv **îi este atribuită altei variabile** de același tip, se creează o **copie a tipului primitiv**.
+Când o valoare de tip primitiv **este atribuită altei variabile** de același tip, se creează o **copie a tipului primitiv**.
 
-Când un tip primitiv este transmis unei metode, este tranmisă doar **o copie a tipului primitiv**. 
+Când un tip primitiv este transmis unei metode, este transmisă doar **o copie a tipului primitiv**. 
 
-Metoda apelată **nu are acces** la valoarea originală a tipului primitiv, deci **nu o poate schimba**. 
+Metoda apelată **nu are acces** la valoarea primitivă originală, deci **nu o poate schimba**. 
 
 Metoda apelată poate **schimba doar valoarea copiată**.
 
-Tipurile de date primitive sunt: **byte**, **short**, **int**, **long**, **float**, **double**, **boolean** și **char**
+Tipurile de date primitive sunt: **byte**, **short**, **int**, **long**, **float**, **double**, **boolean** și **char**.
 
 ```Java
 int i = 42; //require 4 bytes of memory
@@ -35,7 +35,7 @@ boolean result = true; //require 1 byte of memory
 
 O variabilă de **tip referință** deține o **referință** \(indicator / adresă de memorie\) a valorii.
 
-Atunci când un tip referință îi este **atribuit unui alt** tip referință, ambele **vor indica același obiect**.
+Atunci când un tip referință este **atribuit unui alt** tip referință, ambele **vor indica același obiect**.
 
 Atunci când un obiect este **transmis unei metode**, metoda apelată poate **schimba valoarea** obiectului transmis, dar nu și **adresa** obiectului.
 
@@ -95,7 +95,7 @@ Avem o metodă **incrementNumber** care ia un număr și îl incrementează cu u
 
 Chiar dacă am efectuat câteva operații cu variabila **num**, valoarea acesteia nu se va schimba când **num** este tipărit pe consolă.
 
-Acest lucru se datorează faptului că **int** este un tip primitiv și când este transmis, o copie a valorii sale a fost transmisă metodei.
+Acest lucru se datorează faptului că **int** este un tip primitiv și când este transmis, o copie a valorii sale este transmisă metodei.
 
 [/slide]
 
@@ -120,11 +120,11 @@ public static void increment(int[] numbersArray, int incrementValue) {
 
 ```
 
-Matricele stochează referințe către locații de memorie. Când transmite matricea metodei **increment**, aceasta manipulează valorile stocate în aceeași referință de memorie.
+Matricele stochează referințe către locații de memorie. Când transmitem matricea metodei **increment**, aceasta manipulează valorile stocate în aceeași referință de memorie.
 
-Când am transmis matricea **nums** metodei, paramterul **numbersArray** a primit referința pentru locația de memorie a matricei **nums**.
+Când am transmis matricea **nums** metodei, parametrul **numbersArray** a primit referința pentru locația de memorie a matricei **nums**.
 
-Orice operație care ar schimba un element din matricea din interiorul metodei va schimba, de asemenea, matricea originală, deoarece lucrăm cu aceeași referință.
+Orice operație care schimbă un element din matricea din interiorul metodei va schimba de asemenea și matricea originală, deoarece lucrăm cu aceeași referință.
 [/slide]
 
 [slide hideTitle]
@@ -150,7 +150,7 @@ Creați o metodă care primește **2 numere** și un **operator**, calculează r
 
 Veți primi **3 linii cu date de intrare**.
 
-Prima va reprezenta **primul număr**, a doua **operatorul** și ultima va reprezenta **al doilea număr**.
+Prima va reprezenta **primul număr**, a doua **operatorul** și ultima linie va reprezenta **al doilea număr**.
 
 Operatorii posibili sunt: `/` `*` `+` `-`.
 
