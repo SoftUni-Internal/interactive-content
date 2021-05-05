@@ -9,7 +9,7 @@ Create a **Web application** (SPA) using JavaScript.
 
 The application should dynamically display content, based on user interactions. 
 
-It should support **user profiles** and **CRUD** operations using a **REST** service.
+It should support **user-profiles** and **CRUD** operations using a **REST** service.
 
 ## Overview
 **Implement** a front-end application (SPA) to view and manage car **listings**. 
@@ -79,13 +79,13 @@ Similarly, if the service is to return data, it will be JSON-encoded.
 
 Note that **some requests do not return a body** and attempting to parse them will throw an exception.
 
-**Read** requests, as well as **login** and **register** requests do not require authentication. 
+**Read** requests, as well as **login** and **register** requests, do not require authentication. 
 
 All other requests must be authenticated.
 
 ## Required Headers 
 
-To send the data to the server, include a **Content-Type** header and encode the body as a JSON-string:
+To send the data to the server, include a **Content-Type** header and encode the body as a JSON string:
 
 ```
 Content-Type: application/json 
@@ -160,7 +160,7 @@ To execute the tests, do not close the terminal, running the web server instance
 
 The test results will be displayed in the terminal, along with detailed information about encountered problems. 
 
-You can perform this operation as many times necessary by re-running the command.
+You can perform this operation as many times as necessary by re-running the command.
 
 ## Debugging Your Solution 
 
@@ -198,7 +198,7 @@ If the actions are happening too fast, you can increase the value of **slowMo**.
 
 If the browser gets stuck, you can close it and abort any remaining tests by selecting the terminal window and pressing `[Ctrl+C]` followed by the letter "**y**" and `[Enter]`.
 
-The detail thing to look for is the exact row where the test fails:
+The detailed thing to look for is the exact row where the test fails:
 
 [image assetsSrc="js-application-cartube-workshop-7.png" /]
 
