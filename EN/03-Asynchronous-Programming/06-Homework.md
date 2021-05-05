@@ -44,7 +44,7 @@ The list should be cleared before every request is sent.
 ## Examples
 
 [image assetsSrc="asyncprogramming-1.png" /]
-
+<br />
 [image assetsSrc="asyncprogramming-2.png" /]
 
 When the \[**Check**\] button is clicked, the results should be displayed in the corresponding elements:
