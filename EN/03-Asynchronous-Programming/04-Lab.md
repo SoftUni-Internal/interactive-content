@@ -13,13 +13,11 @@ Create a program for reading blog content.
 
 It needs to make **requests** to the **server** and display **all blog posts** and their **comments**.
 
-[Firebase URL](https://blog-apps-c12bf.firebaseio.com/)
-
-Skeleton will be provided in the **Resources folder**.
+You will need to make requests to the following url `https://blog-apps-c12bf.firebaseio.com/`
 
 The button with ID `btnLoadPosts` should make a **GET** request to `/posts`. 
 
-The **response** from the **server** will be an **Object of objects**.
+The **response** from the **server** will be an **Object containing other objects**.
 
 ```
 {-LhdbZ31ND3Rhw41UGMN: {..}, -Lhdc-Ttz9-KiWSuvh6W: {...}, -LhdcLmyARLEBibsSvjZ: {..}, -LhdccRyWr_7UCPtclmM: {..}}
@@ -28,7 +26,6 @@ The **response** from the **server** will be an **Object of objects**.
 -LhdcLmyARLEB1bsSvjZ: {body: "One approach to asynchronous programming is to mak... the callback function is called with the result.", id: "rrt87...
 -LhdccRyWr_7UCPtclmM: {body: "Working with abstract concepts is often easier whe...turn an object that represents this future event.", id: "rrté87...
 __proto__: Object
-
 ```
 
 Each object will be in the following format:
@@ -54,7 +51,7 @@ Each object will be in the following format:
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/04-JS-Applications-Asynchronous-Programming-lab-videos-step-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Create an `<option>` for each post using its **object key** as value and **current object title property** as text inside the node with ID "**posts**".
+Create an `<option>` element for each post using its **object key** as value and **the current object title property** as text inside the node with ID "**posts**".
 
 [image assetsSrc="JS-Applications-Asynchronous-Programming-Lab-2.jpg" /]
 
@@ -114,11 +111,11 @@ Each object will be in the following format:
 }
 ```
 
-You have to find these comments that are for the current post (check the **postId property**).
+You have to find the comments that are for the current post (check the **postId property**).
 
 Display the post title inside `h1` with ID "post-title" and the post content inside ul with ID "post-body".
 
-Display **each comment** as a `<li>` inside ul with ID "post-comments".
+Display **each comment** as a `<li>` element inside an `<ul>` element with ID "post-comments".
 
 Do not forget to clear its content beforehand.
 
