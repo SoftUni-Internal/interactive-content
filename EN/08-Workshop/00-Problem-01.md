@@ -63,7 +63,9 @@ You may also add hidden elements to help you implement certain parts of the appl
 
 ## Starting the Service 
 
-The REST service will be in the "**server**" folder in the provided resources. It has no dependencies and can be started by opening a terminal in its directory and executing:
+The REST service will be in the "**server**" folder in the provided resources. 
+
+It has no dependencies and can be started by opening a terminal in its directory and executing:
 
 `node server.js `
 
