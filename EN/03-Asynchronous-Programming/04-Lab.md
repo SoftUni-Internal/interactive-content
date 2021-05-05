@@ -6,7 +6,8 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/04-JS-Applications-Asynchronous-Programming-lab-videos-step-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/01-JS-Application-Asynchronous-Programming-Lab-Resources.zip) **for this task.**
+
+Download the resources from [here](https://videos.softuni.org/resources/javascript/javascript-applications/06_Blog.zip).
 
 Create a program for reading blog content.
 
