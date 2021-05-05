@@ -3,8 +3,8 @@
 [slide hideTitle]
 # Project Setup 
 
-//Video: JS-APPS-Meme-Lounge-Notifications-27
-//Video: JS-APPS-Meme-Lounge-Notifications-28
+//Video: JS-APPS-Meme-Lounge-Testing-27
+//Video: JS-APPS-Meme-Lounge-Testing-28
 
 The tests require a web server to deliver the content of the application. 
 
