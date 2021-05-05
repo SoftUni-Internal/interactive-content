@@ -15,6 +15,74 @@ That includes **features** like analytics, authentication, databases, configurat
 
 The services are **cloud-hosted** and scale with little to no effort on the developer's part.
 
+## Getting Started
+
+Make sure you have a **Google** account and you are **signed in**.
+
+Click [here](https://console.firebase.google.com) to go to the **Firebase Console**.
+
+Once you are signed in, you should be able to see this **window**:
+
+[image assetsSrc="Remote-Databases(19).png" /]
+
+Create a new project by clicking on either "**Add project**" or "**Create a project**".
+
+[image assetsSrc="Remote-Databases(2).png" /]
+
+Type in a project **name**, for example "**TestApp**", and click "**Continue**".
+
+[image assetsSrc="Remote-Databases(3).png" /]
+
+**Disable Google Analytics** as you will not need them for now.
+
+Then, click "**Create project**".
+
+[image assetsSrc="Remote-Databases(4).png" /]
+
+Click "**Continue**".
+
+[image assetsSrc="Remote-Databases(5).png" /]
+
+Next, we need to add an App.
+
+Add a **web application** by clicking on this sign "\<\/\>".
+
+[image assetsSrc="Remote-Databases(6).png" /]
+
+Type in a name for the App, for example, "**books**" and click "**Register app**".
+
+[image assetsSrc="Remote-Databases(7).png" /]
+
+We will get a script, which we will use later when working with the Firebase SDK.
+
+Click "**continue to console**".
+
+[image assetsSrc="Remote-Databases(8).png" /]
+
+## Create a Database
+
+Click on "**Realtime Database**".
+
+[image assetsSrc="Remote-Databases(9).png" /]
+
+Then click on "**Create Database**".
+
+[image assetsSrc="Remote-Databases(10).png" /]
+
+Press the "**Next**" button.
+
+[image assetsSrc="Remote-Databases(11).png" /]
+
+Choose the option "**Start in test mode**" and click "**Enable**".
+
+[image assetsSrc="Remote-Databases(12).png" /]
+
+The database is now created **successfully**.
+
+Copy the **database URL** so that you can use it in **Postman** to create books.
+
+[image assetsSrc="Remote-Databases(13).png" /]
+
 [/slide]
 
 [slide hideTitle]
@@ -23,15 +91,23 @@ The services are **cloud-hosted** and scale with little to no effort on the deve
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-9-10-firebase-rest-api-crud-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Here are some of the methods used when working with the database.
+**CRUD** stands for **Create**, **Read**, **Update**, and **Delete**.
 
-In this example, we will be using a Book database, which has been created already for us on Firebase.
+They are the four **operations** for working with **data storage**.
 
-**Note: You may not get the same results as shown in the examples below.** 
+In this example, we will be using the **database** we created earlier in Firebase.
 
-**This is because as other students experiment with the database, they can delete or create new books.**
+**Note: You may not get the same results as shown in the examples.** 
 
-**This way, the database will inevitably change.**
+**This is because as you experiment with the database, you can enter custom data.**
+
+[/slide]
+
+[slide hideTitle]
+
+# Firebase REST API CRUD Operations: Part Two
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-11-accessing-firebase-rest-api-with-postman-FIX-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Getting All Books
 
@@ -137,6 +213,8 @@ Here is the response from the server for our newly created book.
 }
 ```
 
+## Deleting a Book
+
 Let us delete the book we have just created using the **DELETE** method.
 
 Choose the **DELETE** method and for the **URL**, copy and paste the following line into **Postman**:
@@ -149,14 +227,7 @@ Choose the **DELETE** method and for the **URL**, copy and paste the following l
 
 The response from the server will be **200 OK**.  It also will return **null**.
 
-
-[/slide]
-
-[slide hideTitle]
-
-# Firebase REST API CRUD Operations: Part Two
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-11-accessing-firebase-rest-api-with-postman-FIX-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## Editing a Book
 
 The next step is to edit a book.
 
@@ -219,6 +290,8 @@ Here is the response from the server:
 }
 ```
 
+## Using the PUT Method
+
 Now let us try one more example using the **PUT** method.
 
 Choose the **PUT** method and for the **URL**, copy and paste the following line into **Postman**:
@@ -268,6 +341,8 @@ Be careful with the **PUT** method. Use the **PATCH** method instead.
 
 It will update only the data passed with the JSON object.
 
+## Deleting a Book
+
 Finally, delete the book we created.
 
 Choose the **DELETE** method and for the **URL**, copy and paste the following line into **Postman**:
@@ -284,9 +359,11 @@ The response from the server will be **200 OK**, and it will return **null** in 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-12-authentication-vs-authorization-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Authentication is about validating your credentials such as Username, ID, and password to verify your identity.
+**Authentication** is about validating your credentials such as Username, ID, and password to verify your identity.
 
-Authorization occurs after your identity has been authenticated by the system, which gives you full access to resources such as information, files, databases, etc.
+Authorization only occurs after your identity has been **authenticated** by the system.
+
+This gives you **full access** to resources such as information, files, databases, etc.
 
 [/slide]
 
@@ -296,83 +373,11 @@ Authorization occurs after your identity has been authenticated by the system, w
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-All-Books-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Make sure you have a **Google** account and you are **signed in**.
-
-Click [here](https://console.firebase.google.com) to go to the **Firebase Console**.
-
-Once you are signed in, you should be able to see this **window**:
-
-[image assetsSrc="Remote-Databases(19).png" /]
-
-Create a new project by clicking on either "**Add project**" or "**Create a project**".
-
-[image assetsSrc="Remote-Databases(2).png" /]
-
-Type in a project **name**, for example "**TestApp**", and click "**Continue**".
-
-[image assetsSrc="Remote-Databases(3).png" /]
-
-**Disable Google Analytics** as you will not need them for now.
-
-Then, click "**Create project**".
-
-[image assetsSrc="Remote-Databases(4).png" /]
-
-Click "**Continue**".
-
-[image assetsSrc="Remote-Databases(5).png" /]
-
-Next, we need to add an App.
-
-Add a **web application** by clicking on this sign "\<\/\>".
-
-[image assetsSrc="Remote-Databases(6).png" /]
-
-Type in a name for the App, for example, "**books**" and click "**Register app**".
-
-[image assetsSrc="Remote-Databases(7).png" /]
-
-We will get a script, which we will use later when working with the Firebase SDK.
-
-Click "**continue to console**".
-
-[image assetsSrc="Remote-Databases(8).png" /]
-
-## Create a Database
-
-Click on "**Realtime Database**".
-
-[image assetsSrc="Remote-Databases(9).png" /]
-
-Then click on "**Create Database**".
-
-[image assetsSrc="Remote-Databases(10).png" /]
-
-Press the "**Next**" button.
-
-[image assetsSrc="Remote-Databases(11).png" /]
-
-Choose the option "**Start in test mode**" and click "**Enable**".
-
-[image assetsSrc="Remote-Databases(12).png" /]
-
-The database is now created **successfully**.
-
-Copy the **database URL** so that you can use it in **Postman** to create books.
-
-[image assetsSrc="Remote-Databases(13).png" /]
-
-Create a few books using the **POST** method in **Postman**, or do that directly from the database interface.
-
-**Example:**
-
-[image assetsSrc="Remote-Databases(14).png" /]
-
 To **get all** of the books, you have to use the **database URL** you received when you created the database, followed the name of the **entity**, which is "**books**", and the "**.json**" extension at end.
 
 The method is "**GET**":
 
-- **URL:** `https://databaseURL/books.json`
+- **URL:** `https://databaseURL/books/.json`
 
 [/slide]
 
@@ -382,9 +387,11 @@ The method is "**GET**":
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-Get-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-To get a book, choose the "**GET**" method in Postman and use the following **URL**.
+To get a **specific book**, choose the "**GET**" method in Postman and use the following **URL**.
 
-`https://databaseURL/books/bookId.json`
+- `https://databaseURL/books/{bookId}.json`
+
+Replace `{bookId}` with the ID of the book you want to get, like **2**.
 
 [/slide]
 
@@ -396,7 +403,6 @@ To get a book, choose the "**GET**" method in Postman and use the following **UR
 
 To create a book, we will have to send a "**POST**" request, and the JSON body should be in the following format:
 
-
 ```js
 {
     "Author": "Steven King",
@@ -404,7 +410,15 @@ To create a book, we will have to send a "**POST**" request, and the JSON body s
 }
 ```
 
-- **URL:** `https://databaseURL/books.json`
+Send the request to the following **URL:** `https://databaseURL/books/{newBookID}.json`
+
+Put the **ID** of the **new book** between the curly brackets - **4**, for example
+
+## Example
+
+[image assetsSrc="Remote-Databases(14).png" /]
+
+You can also do that **directly** from the database interface.
 
 [/slide]
 
@@ -416,18 +430,20 @@ To create a book, we will have to send a "**POST**" request, and the JSON body s
 
 The HTTP command "**PATCH**" modifies an existing HTTP resource.
 
-It can also create the resource if it does not exist.
+It can also **create** the resource if it **does not exist**.
 
-The JSON body should be in the following format:
+The JSON body should be in the following **format**:
 
 ```js
 {
-    "Author": "Steven King",
-    "year": 1981
+    "year": 1920,
+    "author": "Someone"
 }
 ```
 
-- **URL:** `https://databaseURL/books/bookId.json`
+- **URL:** `https://databaseURL/books/bookId/-mQM-ru804j590z/.json`
+
+Replace the `bookId/-mQM-ru804j590z` portion with the corresponding IDs.
 
 [/slide]
 
@@ -439,12 +455,16 @@ The JSON body should be in the following format:
 
 The next task is to execute the "**PUT**" command. 
 
-In our case, we have to change the author's name to "**New author was assigned**".
+You can change the name to any **author** you like.
 
-The JSON body should be in the following format:
+The JSON **body** should be in the following format:
 
-"**New author was assigned**".
+```
+"New Author Value"
+```
 
-- **URL:** `https://databaseURL/books/bookId.json`
+Send the request to the following **URL:** `https://databaseURL/books/{bookId}/{firebaseAutoID}/author/.json`
+
+Go to **Firebase Console** to take a look at the **results**.
 
 [/slide]
