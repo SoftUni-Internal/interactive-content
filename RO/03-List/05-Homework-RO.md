@@ -345,9 +345,9 @@ end
 [test]
 [input]
 21 85 29
-Insert 275  0 
-Insert 744  2 
-Insert 73  3 
+Insert 275 0 
+Insert 744 2 
+Insert 73 3 
 Insert 798 1 
 Insert 248 0 
 end
