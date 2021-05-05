@@ -18,6 +18,6 @@
 **3. Firebase**
 - How to set up and use Firebase
 - JSON-based data structures
-- Authentication vs. authourization
+- Authentication vs. authorization
 
 [/slide]
