@@ -241,7 +241,7 @@ Every item should have the following structure:
 
 [image assetsSrc="asyncprogramming-17.png" /]
 
-[image assetsSrc="asyncprogramming-18.png" /]
+[image assetsSrc="asyncprogramming-18v2.png" /]
 
 When one of the [**Show more**] **buttons** is clicked, the **hidden information** in the **div** container should be displayed only if **the profile is not locked**. If the current profile is **locked**, nothing should happen.
 
