@@ -26,7 +26,7 @@ There are two types of **AJAX**:
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-25-ajax-workflow-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Here is an example of AJAX **workflow**:
+Here is an example of the AJAX **workflow**:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-5.png" /]
 
@@ -34,7 +34,7 @@ In this example, we can see how the **client** sends a request, and the **server
 
 After the **initial loading** of the page, the **server** will return only a **JSON** or an **HTML** file.
 
-That allows us to load the content dinamically, **without** the need for page reloading.
+That allows us to load the content dynamically, **without** the need for page reloading.
 
 [/slide]
 
@@ -87,11 +87,11 @@ A **Promise** is the result of an **asynchronous action**.
 
 When the Promise is **completed**, it **produces a value**.
 
-They have states, which are:
+Promises have states, which are:
 
-- **Pending** meaning that the operation is still running or is unfinished
-- **Fulfilled** meaning that the operation has finished and the result is available
-- **Failed** meaning that the operation failed, and an error is present
+- **Pending** - meaning that the operation is still running or is unfinished
+- **Fulfilled** - meaning that the operation has finished and the result is available
+- **Failed** - meaning that the operation failed, and an error is present
 
 To create a **Promise**, we use a **Promise object**: `new Promise(executor);`
 
@@ -103,7 +103,7 @@ To create a **Promise**, we use a **Promise object**: `new Promise(executor);`
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-29-promise-then-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In this example, we will see how **new Promise()** works:
+In this example, we will see how `new Promise()` works:
 
 ```js live
 let first = 'Before promise'
@@ -122,7 +122,7 @@ let third = 'After promise'
 console.log(third);
 ```
 
-Only the values of the **first** and **third** variable will be printed.
+Only the values of the **first** and **third** variables will be printed.
 
 That is because the Promise is **not resolved** yet.
 
@@ -144,7 +144,7 @@ The `fetch()` method allows us to make network requests using Promises.
 
 It makes the code more **maintainable** and more **readable** with a **simpler** and **cleaner** API.
 
-Here you can see the `fetch()` syntax:
+Here we can see the `fetch()` syntax:
 
 ```js
 fetch('/api/example.json')
@@ -152,17 +152,17 @@ fetch('/api/example.json')
     .catch(function(err) {});
 ```
 
-# Basic Fetch Request
+## Basic Fetch Request
 
 **Fetch** returns a response, which is a **Stream** object.
 
-We read it asynchronously with `then()`.
+We read it asynchronously using `then()`.
 
-When we call the `json()` method it will return a Promise.
+When we call the `json()` method, it will return a Promise.
 
 **Before parsing** the response as JSON, we need to check if the **response status** is **200**.
 
-If not, we should **handle** the error.
+If it is not, we should **handle** the error.
 
 Here is an example of that action:
 
@@ -203,9 +203,9 @@ fetch('example.json')
     });
 ```
 
-In this example, we **parse** the response to **JSON**, and we print the parsed date on the console.
+In this example, we **parse** the response to **JSON**, and we print the parsed data to the console.
 
-If one of the operations is **not successful**, `catch()` will print an error.
+If one of the operations is **not successful**, the `catch()` method will print an error.
 
 [/slide]
 
@@ -262,7 +262,7 @@ fetch('https://api.github.com/repos/softni/js-apps/issues', {
 
 The **Content-Type** and the authentications are set in the **headers** section.
 
-We set the data in the **body** and it should be a **JSON, stringified**.
+We set the data in the **body**, using the `JSON.stringify()` method.
 
 [/slide]
 
@@ -301,9 +301,9 @@ They show the type of response.
 | **Type** | **Description** |
 | --- | --- |
 |**basic**| Normal, or same-origin response |
-|**cors**| The response is received from valid cross-origin request |
+|**cors**| The response is received from a valid cross-origin request |
 |**error**| Network error or not valid information |
-|**opaque**| Response for **no-cors** request send to cors resource |
-|**opaqueredirect**| The request was made with **manual** redirect |
+|**opaque**| Response for **no-cors** request send to cross-origin resource |
+|**opaqueredirect**| The request was made with a **manual** redirect |
 
 [/slide]
