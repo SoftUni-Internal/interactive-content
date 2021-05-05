@@ -15,7 +15,7 @@ You can download it from [here](https://www.postman.com/downloads/).
 
 Firebase is a **mobile** and **web** development platform. 
 
-It provides a **realtime database** and **backend as a service**. 
+It provides a **real-time database** and **backend as a service**. 
 
 The service provides developers with an **API** that allows application data to be **synchronized** across clients and **stored** on Firebase's cloud. 
 
@@ -25,7 +25,7 @@ The **data** is **structured** as a **JSON** tree.
 
 **Register** at [https://console.firebase.google.com](https://console.firebase.google.com). 
 
-Afterwards, **create a new project** and test it in order to understand how the database works. 
+Afterward, **create a new project** and test it in order to understand how the database works. 
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-1.png" /]
 
@@ -42,7 +42,7 @@ Make sure to enable **unauthorized access** to your database.
 
 Note that this is for **educational purposes** only and you must **not** do this for real apps as it is a **security hole**! 
 
-After you have done that, access your data through the REST API.
+After that, access your data through the REST API.
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-4.png" /]
 
@@ -57,7 +57,7 @@ We can find our **App Keys** by clicking on "**Project settings**"
 
 Open **Postman** and make a GET request to **retrieve** all the information in your database. 
 
-In our case that is a list of all the available books.
+In our case, that is a list of all the available books.
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-5.png" /]
 
@@ -67,12 +67,12 @@ Put the link on the "**GET**" field, and press the "**Send**" button.
 
 ## 3. Backendless
 
-**Backendless** is a **BaaS** provider that makes it easy for developers to set up, use and operate a **cloud back-end** for their apps. 
+**Backendless** is a **BaaS** provider that makes it easy for developers to set up, use and operate a **cloud backend** for their apps. 
 
 It holds **users** (an API for creating an account) and **data collections** (an API for CRUD operations).
 
 ### Register
-The first thing to do is create an account in **Backendless**, followed by creating an app. 
+The first thing to do is to create an account in **Backendless**, followed by creating an app. 
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-6.png" /]
 
@@ -94,24 +94,23 @@ In order to **create a collection**, click on the **"+"** symbol right above "**
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-11.png" /]
 
-This will open a new window where you enter the collection's name. 
+This will open a new window where you should enter the name of the collection. 
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-13.png" /]
 
-Now we have our new collection with no data in it. 
+We have our new collection with no data in it. 
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-15.png" /]
 
 ### Create Data Columns
-Now it is time to **create** some **data columns** for our collection. 
+It is time to **create** some **data columns** for our collection. 
 
-Click on the "**SCHEMA**".
+Click on "**SCHEMA**".
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-16.png" /]
 
-We will make the example with the columns **title** and **body**. 
-
-Clicking the **"+"** button, it will open a form for us: 
+We will create two columns called **title** and **body**. 
+Clicking on the **"+"** button will open a form for us: 
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-17.png" /]
 
@@ -121,14 +120,14 @@ Using the "**CREATE**" button, we create the column:
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-18.png" /]
 
-Here is what the new columns look like in the **data browser**: 
+Here is how the new columns look like in the **data browser**: 
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-19.png" /]
 
 ### Create Data Rows
 To create a row, click on the "**New**" button. 
 
-This will add new element to the collection with a default value. 
+This will add a new element to the collection with a default value. 
 
 We can change it by entering the new value in the input box.
 
@@ -136,7 +135,7 @@ We can change it by entering the new value in the input box.
 
 For example, we can enter "**Title1**". 
 
-Then, click on the **ownerId** input box: 
+Then, we can click on the **ownerId** input box: 
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-21.png" /]
 
@@ -172,12 +171,12 @@ It can be used to **store** and **query relational data** on the cloud.
 It can be made accessible over **GraphQL** and **REST** with a scalable, open-source backend, based on the Parse Platform.
 
 ### Register
-The first thing to do is create an account in **Back4App**.
+The first thing to do is to create an account in **Back4App**.
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-26.png" /]
 
 ### Create a collection (Class)
-In order to **create** a new **collection (Class)** you must click on the **"Create a Class" button** (or "**Create your first class**").
+In order to **create** a new **collection (Class)**, you have to click on the **"Create a Class" button** (or "**Create your first class**").
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-27.png" /]
 
@@ -187,30 +186,30 @@ Here, you should choose the **type** of the collection and write its **name**.
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-28.png" /]
 
-Now we have our first collection, which is currently empty.
+We have our first collection which is currently empty.
 
-You can **add** new **columns** to it, as well as new **rows**. 
+We can **add** new **columns** to it, as well as new **rows**. 
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-29.png" /]
 
-Let us try to add **name** and **capital** columns.
+Let us try to add two columns called **name** and **capital**.
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-30.png" /]
 
-Now you can add **countries** to this collection (in the form of **rows**). 
+Next, we can add **countries** to this collection (in the form of **rows**). 
 
-The first **four** columns are **automatically filled** - you do not need to fill them.
+The first **four** columns are **automatically filled** - we do not need to fill them.
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-31.png" /]
 
 ### Collection Permissions
-This **collection is public** by default and can be accessed from everyone who has the App-ID and API-key.
+This **collection is public** by default and can be accessed by everyone who has the App-ID and the API-key.
 
-You can **change the permissions** for the collections:
+We can **change the permissions** for the collections:
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-32.png" /]
 
-In the newly opened window, you can choose the permissions you need.
+In the newly opened window, we can choose the permissions we need.
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-33.png" /]
 
@@ -250,7 +249,7 @@ You can find all the **App Keys** in **App Settings** \-\> **Security and Keys**
   X-Parse-REST-API-Key: uWY3EYOTwg6g29UvGcvINlJkw39nQWkT3NAItxET
   Content-Type: application/json
   ```
-  * Body: **A JSON document with the key-value pairs that represent your object's data.**
+  * Body: **A JSON document with the key-value pairs that represent the data of the object.**
   
 
 - **PUT**:
@@ -275,7 +274,7 @@ You can find all the **App Keys** in **App Settings** \-\> **Security and Keys**
   ```
 
 ### Documentation
-You can learn more about **Back4App** by clicking on **API Reference**.
+You can learn more about **Back4App** by clicking on "**API Reference**".
 
 [image assetsSrc="JS-Applications-Remote-Databases-Guide-35.png" /]
 
@@ -284,7 +283,7 @@ You can learn more about **Back4App** by clicking on **API Reference**.
 [slide hideTitle]
 # Problem: REST Countries
 
-Download the **resources** for these tasks [here](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Apps-Rest-Services-and-AJAX-Resources.zip).
+Download the **resources** for these tasks from [here](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Apps-Rest-Services-and-AJAX-Resources.zip).
 
 ## Working with Remote Data
 For the solution of some of the following tasks, you will need to use an up-to-date version of the **local REST service**, provided in the lesson’s resources archive. 
@@ -315,7 +314,7 @@ Send a "**GET**" request to the link given below.
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-29.png" /]
 
-Each API has a documentation where you can see how to use it. 
+Each API has documentation where you can see how to use it. 
 
 You can find the documentation for this API [here](https://restcountries.eu/).
 
@@ -325,7 +324,7 @@ You can find the documentation for this API [here](https://restcountries.eu/).
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-30.png" /]
 
-- There is a way to **retrieve a response holding all the countries** with **German-speaking** citizens 
+- There is a way to **retrieve a response that holds all the countries** with **German-speaking** citizens 
 
 - Send a **GET** request to retrieve the information for these countries: 
   * Austria
@@ -372,7 +371,7 @@ The webhost will respond with **valid** data to the **IDs** 1287, 1308, 1327, an
 [slide hideTitle]
 # Problem: Phonebook GET
 
-Perform and HTTP request that show the names and phone numbers from a phonebook. 
+Perform an HTTP request that show the names and the phone numbers from a phonebook. 
 
 **GET** requests: `http://localhost:3030/jsonstore/phonebook`
 
@@ -383,7 +382,7 @@ Perform and HTTP request that show the names and phone numbers from a phonebook.
 [slide hideTitle]
 # Problem: Phonebook POST
 
-Create two different **POST** requests using Postman. 
+Create two different **POST** requests using **Postman**. 
 
 The data sent in a **POST** request should be a valid JSON object, containing a **person** and a **phone** property. 
 
@@ -404,7 +403,7 @@ The example **format** is:
 [slide hideTitle]
 # Problem: Employees 
 
-Use the link below to create a GET, POST, PUT, and DELETE request in **Postman**: 
+Use the link below to create a GET, a POST, a PUT, and a DELETE request in **Postman**: 
 
 - [http://dummy.restapiexample.com](http://dummy.restapiexample.com/)
 
@@ -434,7 +433,7 @@ Use the "**create**" link to add a new entry to the database:
 
 ## DELETE Request
 
-**Delete** the information of the specified employee:
+**Delete** the information about the specified employee:
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-39.png" /]
 
@@ -443,7 +442,7 @@ Use the "**create**" link to add a new entry to the database:
 [slide hideTitle]
 # Problem: Firebase App
 
-Create a **Firebase** application to create a collection, which contain **book titles and their author**. 
+Create a **Firebase** application to create a collection that contains **book titles and their author**. 
 
 Use Postman to create, read and delete entries from the collection.
 
@@ -463,7 +462,7 @@ Use Postman to create, read and delete entries from the collection.
 [slide hideTitle]
 # Problem: Backendless App
 
-Use **Backendless** to create a music application that contains information about **song titles** and **singers**.
+Use **Backendless** to create a music application that contains information about **song titles** and their **singers**.
 
 Use **Postman** to create, read and delete entries from the collection. 
 
