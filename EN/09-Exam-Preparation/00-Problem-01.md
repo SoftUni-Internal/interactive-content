@@ -189,13 +189,13 @@ On slower machines, some of the tests may require more time to complete.
 
 You can instruct the tests to run slower by slightly increasing the values for **interval** and **timeout**:
 
-[image assetsSrc="js-application-exap-prep-19.png" ]
+[image assetsSrc="js-application-exap-prep-19.png" /]
 
 The **interval** values that are greater than 500 and **timeout** values that are greater than 10000 are not recommended.
 
 If this does not make the test pass, set the value of **DEBUG** to **true** and run the tests again - this will launch a browser instance and allow you to see what is being tested, what the test does and where it fails (or timeouts):
 
-[image assetsSrc="js-application-exap-prep-20.png" ]
+[image assetsSrc="js-application-exap-prep-20.png" /]
 
 If the actions are happening too fast, you can increase the value of **slowMo**. 
 
@@ -203,6 +203,6 @@ If the browser is stuck, you can close it and abort any remaining tests by focus
 
 An important piece to look for is the exact row where the test fails:
 
-[image assetsSrc="js-application-exap-prep-21.png" ]
+[image assetsSrc="js-application-exap-prep-21.png" /]
 
 [/slide]
