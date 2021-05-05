@@ -91,7 +91,6 @@ Here is a diagram of some code's run time to better visualize the concept:
 
 [image assetsSrc="JS-Applications-Asynchronous-Programming-1.png" /]
 
-## Example: Asynchronous Programming
 
 Here is an example of some asynchronous behavior in JavaScript:
 
