@@ -77,7 +77,7 @@ It is important to know that the `async` keyword **must be placed in front of th
 
 [slide hideTitle]
 
-# Asynchronous Programming
+# Example: Asynchronous Programming
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-7-Asynchronous-Programming-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
