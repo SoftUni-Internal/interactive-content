@@ -1,193 +1,84 @@
-# User AUTH, Catalog and Details Pages
+# Appendix B: Running the Test Suite 
 
 [slide hideTitle]
+# Project Setup 
 
-# Navigation Bar and Home Page
+//Video: JS-APPS-Meme-Lounge-Testing-27
+//Video: JS-APPS-Meme-Lounge-Testing-28
 
-## Navigation Bar
-// Video: 04.1: Home page (Navigation bar). 
+The tests require a web server to deliver the content of the application. 
 
-Implement a **NavBar** for the app: navigation links should change the current screen (view).
+There is a development web server included in the project scaffold, but you may use a server that you are familiar with.
 
+Note that specialized tools like **BrowserSync** may interfere with the tests. 
 
-The navigation links should change the current page (view). 
+To initialize the project with its dependencies, open a terminal in the folder, containing the file **package.json** and execute the following:
 
-**Guests** (un-authenticated visitors) can see the links to  the **Home Page**, **All Memes page**, as well as the links to the Login and Register pages. 
+`npm install`
 
-Authenticated users should be able to access the links to the **All Memes page**, the **Create Meme page**, the **My Profile page** and a link for the **Logout action**. 
+Note that if you changed the **devDependencies** section of the project, the tests may not initialize properly.
 
-The navbar should hold a user greeting: "**Welcome,** \{ **user’s email address** \}"
+[image assetsSrc="js-application-exap-prep-15.png" /]
 
-User navigation example:
+## Executing the Tests 
 
-[image assetsSrc="js-application-exap-prep-1.png" /]
+Before running the test suite, make sure a web server is operational and the application can be found at the root of its network address. To start the included dev-server, open a terminal in the folder containing **package.json** and execute:
 
-**Guest** navigation example: 
+`npm run start`
 
-[image assetsSrc="js-application-exap-prep-2.png" /]
+This is a one-time operation unless you terminate the server at any point. 
 
-## Home Screen 
+It can be restarted with the same command as above.
 
-The initial screen should display the navigation, register, login, the initial image and a footer.
+To execute the tests, do not close the terminal running the web server instance, open a new terminal in the folder containing package.json and execute:
 
-**Note:** This page should be only displayed to guest users. 
+`npm run test`
 
-Logged-in users should be redirected to the **All Memes page**.
+[image assetsSrc="js-application-exap-prep-16.png" /]
 
-[image assetsSrc="js-application-exap-prep-3.png" /]
+The test results will be displayed in the terminal, along with detailed information about encountered problems. 
 
-[/slide]
+You can perform this operation as many times as necessary by re-running this command.
 
-[slide hideTitle]
-# Login and Registration
+## Debugging Your Solution 
 
-## Login Page
+If a test fails, you can view the information about the requirements that were not met by your application. 
 
-// Video: 04.2: Login + Register pages 
+Open the file **e2e.test.js** in the folder **tests** and navigate to the desired section as described below.
 
-The **included REST service** comes with the following **premade** user accounts, which you may use for development:
+**This first step will not be necessary if you are using the included web server.** 
 
-```
-{ "email": "peter@gmail.com", "password": "123456" }
-{ "email": "mary@gmail.com", "password": "123456" }
-```
-The "**Login**" page contains a form for existing user authentication. 
+Make sure the application host is set correctly:
 
-The **Login page** contains a form for existing user authentication. 
+[image assetsSrc="js-application-exap-prep-17.png" /]
 
-By providing an **email and a password** the app should log a user in to the system if there are no empty fields or incorrect data.
+The value for **host** must be the address where your application is being served. 
 
-[image assetsSrc="js-application-exap-prep-4.png" /]
+Make sure that entering this address in a regular internet browser displays your application.
 
-Use the following **request** to perform a registration:
-```
-Method: POST
-URL: /users/login
-```
-The required **headers** are described in the documentation. The service expects a body with the following structure:
+To make a single test run, instead of the whole suite (useful when debugging a single failing test), find the test and append `.only` after the **it** reference:
 
-The service expects a body with the following structure:
-```
-{ 
-  email,
-  password
-} 
-```
-If successful, the **REST service** will return the information of the user along with an **accessToken** property, which contains the **session token** for the user. 
+[image assetsSrc="js-application-exap-prep-18.png" /]
 
-This information needs to be stored using **sessionStorage** or **localStorage** in order to be able to perform authenticated requests.
+On slower machines, some of the tests may require more time to complete. 
 
-If the login was successful, **redirect** the user to the **All Memes page**. 
+You can instruct the tests to run slower by slightly increasing the values for **interval** and **timeout**:
 
-If there is an error, display an error message using a system dialog (**window.alert**).
+[image assetsSrc="js-application-exap-prep-19.png" /]
 
-## Register User 
+The **interval** values that are greater than 500 and **timeout** values that are greater than 10000 are not recommended.
 
-The **Register** page contains a form for registering a new user. 
+If this does not make the test pass, set the value of **DEBUG** to **true** and run the tests again - this will launch a browser instance and allow you to see what is being tested, what the test does and where it fails (or timeouts):
 
-By providing a **username**, an **email**, a **password** and **gender** (**Male or Female**) the app should register a new user in the system.  
+[image assetsSrc="js-application-exap-prep-20.png" /]
 
-It should only accept new users if all the fields are not blank and contain valid data.
+If the actions are happening too fast, you can increase the value of **slowMo**. 
 
-[image assetsSrc="js-application-exap-prep-5.png" /]
+If the browser is stuck, you can close it and abort any remaining tests by focusing the terminal window and pressing `[Ctrl+C]` followed by the letter "y" and `[Enter]`.
 
-Use the following **request** to perform a user registration:
-```
-Method: POST 
-URL: /users/register 
-```
-The required **headers** are described in the documentation. 
+An important piece to look for is the exact row where the test fails:
 
-The service expects a body with the following structure: 
-```
-{ 
-  username,
-  email,
-  password,
-  gender
-} 
-```
-Upon registering successfully, the **REST service** will return the newly created object with an automatically generated `_id` property and an **accessToken** property, which contains the **session token** for the user. 
-
-This information needs to be stored using **sessionStorage** or **localStorage** in order to be able to perform authenticated requests.
-
-If the registration was successful, **redirect** the user to the **All Memes page**. 
-
-If there is an error, or the **validations** does not pass, display the corresponding error message, using a system dialog (**window.alert**).
-
-## Logout 
-
-The logout action is available to logged-in users. Send the following request to log a user out:
-
-```
-Method: GET
-URL: /users/logout
-```
-
-The required **headers** are described in the documentation. 
-
-Upon a successful logout, the **REST service** will return an **empty response**. 
-
-Clear any session information that is stored in browser storage.
-
-If the logout was successful, **redirect** the user to the **Home page**.
+[image assetsSrc="js-application-exap-prep-21.png" /]
 
 [/slide]
-
-
-[slide hideTitle]
-# All Memes
-
-// Video: 05.1: All-listings (Catalog) page 
-
-This page displays a list of all memes in the system. 
- 
-Clicking on the **details** button in the cards leads to the details page of the selected meme. 
- 
-This page should be visible to guests and logged-in users.
-
-[image assetsSrc="js-application-exap-prep-7.png" /]
-
-If there are no memes, the following view should be displayed:
-
-[image assetsSrc="js-application-exap-prep-8.png" /]
-
-Send the following **request** to read the list of ads:
-
-```
-Method: GET
-URL: /data/memes?sortBy=_createdOn%20desc
-```
-
-The required **headers** are described in the documentation. The service will return an array of listings.
-
-
-[/slide]
-
-[slide hideTitle]
-# Meme Details
-
-// Video: 05.2: Tests + Details page (including delete functionality); 
-
-All users should be able to **view the details page** of the memes. 
-
-Clicking on the **Details** link should **display** the **Details** page on the specific meme. 
-
-If the currently **logged-in user is the creator** of the meme, the **Edit** and **Delete** buttons should be displayed.
-
-[image assetsSrc="js-application-exap-prep-9.png" /]
-
-Send the following request to view a meme:
-```
-Method: GET
-URL: /data/memes/:id
-```
-The `:id` is the id of the desired meme. 
-
-The required **headers** are described in the documentation. 
-
-The service will return a single object.
-
-[/slide]
-
 
