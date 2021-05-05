@@ -7,30 +7,32 @@
 ## Navigation Bar
 // Video: 04.1: Home page (Navigation bar). 
 
-Implement a **NavBar** for the app: navigation links should correctly change the current screen (view).
+Implement a **NavBar** for the app: navigation links should change the current screen (view).
+
 
 The navigation links should change the current page (view). 
 
-**Guests** (un-authenticated visitors) can see the links to  the "**Home Page**", "**All Memes**" page, as well as the links to the "**Login**" and "**Register**" pages.
+**Guests** (un-authenticated visitors) can see the links to  the **Home Page**, **All Memes page**, as well as the links to the Login and Register pages. 
 
-Authenticated users should be able to access the links to the "**All Memes**" page, the "**Create Meme**" page, the "**My Profile**" page and a link for the **Logout** action. 
- 
-The navbar should be able to greet the user: "**Welcome**, \{ **user's email address** \}"
+Authenticated users should be able to access the links to the **All Memes page**, the **Create Meme page**, the **My Profile page** and a link for the **Logout action**. 
 
-**User** navigation example:
+The navbar should hold a user greeting: "**Welcome,** \{ **user’s email address** \}"
+
+User navigation example:
+
 [image assetsSrc="js-application-exap-prep-1.png" /]
 
-**User** navigation example: 
+**Guest** navigation example: 
 
 [image assetsSrc="js-application-exap-prep-2.png" /]
 
 ## Home Screen 
-The initial screen should display the navigation, register, login and the initial image + footer.
 
-**Note:** This page should be only visible for guest users. 
+The initial screen should display the navigation, register, login, the initial image and a footer.
 
-Logged-in users should be redirected to the "**All Memes**" page.
+**Note:** This page should be only displayed to guest users. 
 
+Logged-in users should be redirected to the **All Memes page**.
 
 [image assetsSrc="js-application-exap-prep-3.png" /]
 
@@ -51,16 +53,18 @@ The **included REST service** comes with the following **premade** user accounts
 ```
 The "**Login**" page contains a form for existing user authentication. 
 
-By providing an **email and password** the app should login a user in the system if there are no empty **fields** nor incorrect data.
+The **Login page** contains a form for existing user authentication. 
+
+By providing an **email and a password** the app should log a user in to the system if there are no empty fields or incorrect data.
 
 [image assetsSrc="js-application-exap-prep-4.png" /]
 
-Send the following **request** to perform registration:
+Use the following **request** to perform a registration:
 ```
 Method: POST
 URL: /users/login
 ```
-The required **headers** are described in the documentation. 
+The required **headers** are described in the documentation. The service expects a body with the following structure:
 
 The service expects a body with the following structure:
 ```
@@ -69,25 +73,25 @@ The service expects a body with the following structure:
   password
 } 
 ```
-Upon success, the **REST service** will return the information of the existing user along with an "**accessToken**" property, which contains the **session token** for the user. 
+If successful, the **REST service** will return the information of the user along with an **accessToken** property, which contains the **session token** for the user. 
 
-This information needs to be stored using a "**sessionStorage**" or a "**localStorage**" in order to be able to perform authenticated requests.
+This information needs to be stored using **sessionStorage** or **localStorage** in order to be able to perform authenticated requests.
 
+If the login was successful, **redirect** the user to the **All Memes page**. 
 
-If the login was successful, **redirect** the user to the "**All Memes**" page.
-
-If there is an error, display an appropriate error message using a system dialog ("**window.alert**").
-
+If there is an error, display an error message using a system dialog (**window.alert**).
 
 ## Register User 
 
-The **Register** page contains a form for registrating a new user. 
+The **Register** page contains a form for registering a new user. 
 
-By providing a **username**, an **email**, a **password** and **gender** (**Male or Female**) the app should register a new user in the system.  the app should register a new user in the system if there are no empty **fields** nor incorrect data.
+By providing a **username**, an **email**, a **password** and **gender** (**Male or Female**) the app should register a new user in the system.  
+
+It should only accept new users if all the fields are not blank and contain valid data.
 
 [image assetsSrc="js-application-exap-prep-5.png" /]
 
-Send the following **request** to perform a registration: 
+Use the following **request** to perform a user registration:
 ```
 Method: POST 
 URL: /users/register 
@@ -103,37 +107,86 @@ The service expects a body with the following structure:
   gender
 } 
 ```
-Upon a registering successfully, the **REST service** will return the newly created object with an automatically generated `_id` property and an "**accessToken**" property, which contains the **session token** for the user. 
+Upon registering successfully, the **REST service** will return the newly created object with an automatically generated `_id` property and an **accessToken** property, which contains the **session token** for the user. 
 
-This information needs to be stored using a "**sessionStorage**" or a "**localStorage**" in order to be able to perform authenticated requests.
+This information needs to be stored using **sessionStorage** or **localStorage** in order to be able to perform authenticated requests.
 
-If the registration was successful, **redirect** the user to the "**All Memes**" page. 
+If the registration was successful, **redirect** the user to the **All Memes page**. 
 
-If there is an error, or the **validations** do not pass, display an appropriate error message, using a system dialog (**window.alert**).
-
+If there is an error, or the **validations** does not pass, display the corresponding error message, using a system dialog (**window.alert**).
 
 ## Logout 
 
+The logout action is available to logged-in users. Send the following request to log a user out:
 
+```
+Method: GET
+URL: /users/logout
+```
 
+The required **headers** are described in the documentation. 
+
+Upon a successful logout, the **REST service** will return an **empty response**. 
+
+Clear any session information that is stored in browser storage.
+
+If the logout was successful, **redirect** the user to the **Home page**.
 
 [/slide]
 
 
 [slide hideTitle]
-# All Listings Page
+# All Memes
 
 // Video: 05.1: All-listings (Catalog) page 
 
+This page displays a list of all memes in the system. 
  
+Clicking on the **details** button in the cards leads to the details page of the selected meme. 
+ 
+This page should be visible to guests and logged-in users.
+
+[image assetsSrc="js-application-exap-prep-7.png" /]
+
+If there are no memes, the following view should be displayed:
+
+[image assetsSrc="js-application-exap-prep-8.png" /]
+
+Send the following **request** to read the list of ads:
+
+```
+Method: GET
+URL: /data/memes?sortBy=_createdOn%20desc
+```
+
+The required **headers** are described in the documentation. The service will return an array of listings.
+
+
 [/slide]
 
 [slide hideTitle]
-# Details
+# Meme Details
 
 // Video: 05.2: Tests + Details page (including delete functionality); 
 
+All users should be able to **view the details page** of the memes. 
 
+Clicking on the **Details** link should **display** the **Details** page on the specific meme. 
+
+If the currently **logged-in user is the creator** of the meme, the **Edit** and **Delete** buttons should be displayed.
+
+[image assetsSrc="js-application-exap-prep-9.png" /]
+
+Send the following request to view a meme:
+```
+Method: GET
+URL: /data/memes/:id
+```
+The `:id` is the id of the desired meme. 
+
+The required **headers** are described in the documentation. 
+
+The service will return a single object.
 
 [/slide]
 

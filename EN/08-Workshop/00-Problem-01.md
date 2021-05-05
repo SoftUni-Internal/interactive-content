@@ -3,7 +3,7 @@
 
 # CarTube
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Apps-Workshop-CarTube-NEW.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Workshop-CarTube.zip) **for this task.**
 
 Create a **Web application** (SPA) using JavaScript. 
 
