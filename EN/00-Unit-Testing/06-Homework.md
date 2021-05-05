@@ -521,15 +521,23 @@ describe('Math Enforcer', function() {
     describe('Add Five', function() {
         it('should return undefined passing parameter as a string', 
           function() {
-            // To Do
+            // To do...
+        });
+
+        it('should return 5 if parameter equals 0', function() {
+            // To do...
         });
     })
 
-    describe('Add Five', function() {
-        it('should return 5 if parameter equals 0', function() {
-            // To Do
+    describe('Subtract Ten', function() {
+        it('should return 0 if parameter equals 10', function() {
+            // To do...
         });
+
+        // ...
     })
+
+    // describe('Sum', function() { ... }
 })
 ```
 
