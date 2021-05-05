@@ -9,7 +9,7 @@
 
 **1. Asynchronous programming**
 
-- What asynchronous programming is, its benefits, and its use cases
+- What asynchronous programming is, its benefits, and some use cases
 
 - How the event loop works
 

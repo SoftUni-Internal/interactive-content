@@ -6,19 +6,17 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-16-17-18-19-Async-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Async** functions, unlike promises and callbacks, are an **easy-to-read way of operating asynchronously**.
+**Async** functions, unlike promises and callbacks, are easier to read and use when you want to write code that runs asynchronously.
 
-They look like regular functions but use the event loop to work asynchronously.
+They look like regular functions but utilize the event loop to work asynchronously.
 
 **Async** functions consist of two parts:
 
 - `async` - Placed in **front of the function's declaration**
 
-Specifies that the `await` keyword might be used with asynchronous operations inside the function.
+- `await` -  **pauses the flow** of the function until some value is returned
 
-- `await` - **Used only in "async functions"**
-
-If placed before an asynchronous operation, **pauses the flow of the function until some value is returned**.
+The use of the `await` keyword within an async function is optional and only used if you need to wait for some value to be returned to avoid having undefined variables.
 
 Here is an example of how `async` functions are structured:
 
@@ -49,7 +47,7 @@ While `await` pauses the function execution for **just one promise**, `Promise.t
 
 Always use `await` **to get a single value** and `Promise.then()` **to run many promises in parallel**.
 
-[/slide]
+One of the advantages of writing **async** functions is that they can be used in combination with **try/catch** blocks.
 
 [slide hideTitle]
 
@@ -59,7 +57,7 @@ Always use `await` **to get a single value** and `Promise.then()` **to run many 
 
 Async functions are **much more concise** than promises.
 
-Here is a comparison between the code blocks of the two:
+Here is a comparison between the the two:
 
 ```js
 //Promise Example

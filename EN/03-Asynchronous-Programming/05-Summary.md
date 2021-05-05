@@ -7,11 +7,12 @@
 
 - **Asynchronous programming**
 
-    * key differences between **synchronous** and **asynchronous** programming
+    * the key differences between **synchronous** and **asynchronous** programming
 
     * **code execution order** in JavaScript
 
-    * escaping JavaScript's **synchronous** nature
+    * asynchronous programming makes it possible for functions to run simultaneously without blocking the entire app 
+    
 ```js
 async function getData(url) {
     let data = await fetch(url);
@@ -23,7 +24,7 @@ async function getData(url) {
 
 - **Promises**
 
-  * epresenting data that will be **received in the future**
+  * representing data that will be **received in the future**
 
   * **chaining** promises and utilizing their methods
 
