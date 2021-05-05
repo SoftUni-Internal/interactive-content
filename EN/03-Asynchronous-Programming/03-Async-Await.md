@@ -49,6 +49,11 @@ Always use `await` **to get a single value** and `Promise.then()` **to run many 
 
 One of the advantages of writing **async** functions is that they can be used in combination with **try/catch** blocks.
 
+
+
+[/slide]
+
+
 [slide hideTitle]
 
 # "Async"/"Await" vs "Promise.then"
