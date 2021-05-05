@@ -92,9 +92,9 @@ If successful, **redirect** the user to the **Details** page.
 
 The delete action is available to **logged-in** users and for listings that they have created. 
 
-When the author clicks **Delete** a confirmation dialogue should be displayed. 
+When the author clicks **Delete** a confirmation dialog should be displayed. 
 
-Upon completing this dialogue, the listing should be **deleted** from the system.
+Upon completing this dialog, the listing should be **deleted** from the system.
 
 To delete a listing, send the following request:
 
