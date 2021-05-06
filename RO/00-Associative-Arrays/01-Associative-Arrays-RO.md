@@ -1,35 +1,35 @@
 
 
 [slide hideTitle]
-# Matrici Asociative
+# Matrice Asociative
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-3-4-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Matricile  asociative sunt colecții care conțin parametri **Key** și **Value**  și sunt indexate prin  **Keys**. 
+Matricele asociative sunt colecții care conțin parametri prin intermediul unor perechi Cheie (Key)/ Valoare (Value) și sunt indexate prin intermediul **cheilor**. 
 
-**Cheia** reprezintă **indexul** map-ului. Cheile și valorile sunt **obiecte** și fiecare pereche este numită **înregistrare**.
+**Cheia** reprezintă **indexul** instanței map. Cheile și valorile sunt **obiecte** și fiecare pereche este numită **înregistrare**.
 
-Un obiect este folosit ca **cheie** (index) pentru un alt obiect (**valoare**). 
+Un obiect este folosit drept **cheie** (index) pentru un alt obiect (**valoare**). 
 
-Acestea **nu pot** fi **tipuri primitive** așa cum sunt int, double, boolean, etc. 
+Acestea **nu pot** fi **tipuri primitive** precum int, double, boolean, etc. 
 
-Acestea  **ar trebui specificate**  **clasa învelitoare** echivalenta: Integer, Double, Boolean, etc. 
+Acestea **trebuie specificate** împreună cu **clasa învelitoare** echivalentă: Integer, Double, Boolean, etc. 
 
-**Tipul de cheie și valoare** pot fi **la fel sau diferite**, în funcție de caz.
+**Tipul cheii și tipul valorii** pot fi **la fel sau diferite**, în funcție de caz.
 
-In Java matricele asociative se numesc **Map-uri**. 
-Un map nu **nu poate conține chei dublicate**. Fiecare **cheie** poate fi asociată doar cu o singură **valoare**.
+În Java matricele asociative se numesc **Maps**. 
 
-**Valorile diferitelor chei pot fi dublicate**. 
+Un map **nu poate conține chei dublicate**. Fiecare **cheie** poate fi asociată doar cu o singură **valoare**.
+
+**Valorile unor chei diferite pot fi dublicate**. 
 
 **O cheie** poate stoca doar **o valoare** în aceeași instanță Map. 
 
 
-
 De exemplu:
 
-| **Name** | **Phone number** |
+| ***Name*** | ***Phone number*** |
 | ------- | --------- |
-| **Key** | **Value** |
+| **Cheie** | **Valoare** |
 | John Smith | +1-555-8976 |
 | Lisa Smith | +1-555-1234 |
 | Amanda Doe| +1-555-5050 |
@@ -43,48 +43,54 @@ De exemplu:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-5-collections-of-key-and-value-pairs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Colecțiile API din Java conțin câteva **implementări** ale Map, care permit conținutului unui Mapsă fie văzut ca:
+Colecțiile API din Java conțin câteva **implementări** Map care permit conținutului unei instanțe Map să fie văzut ca:
 
 - Un set de chei
 
 - O colecție de valori
 
-- Set de perechi cheie-valoare
+- Un set de perechi cheie-valoare
 
-Cele mai folosite **implementări Map** sunt `HashMap`, `LinkedHashMap` și `TreeMap`. 
+Cele mai folosite **implementări Map** sunt **HashMap**, **LinkedHashMap** și **TreeMap**. 
 
-Acea **ordine** al Map-ului depinde de **vizualizarea colecției alese**.
+**Ordinea** intrărilor unei instanțe Map depinde de **implementarea aleasă a colecției**.
 
- Unele implementări, cum ar fi clasa **TreeMap** , oferă specific **garanții la comanda lor**. 
+Unele implementări, cum ar fi clasa **TreeMap**, **garantează o ordine specifică**. 
 
- Altele, cum ar fi clasa **HashMap**, **nu oferă acest lucru**. 
+Altele, cum ar fi clasa **HashMap**, **nu oferă acest lucru**. 
 
-Clasele **HashMap** și **LinkedHashMap** permit o valoare `null` pentru **chei** și multe valori `null` pentru **valori**
+Clasele **HashMap** și **LinkedHashMap** admit o valoare `null` pentru **cheie** și mai multe valori `null` pentru **valori**.
+
+Clasa **TreeMap** nu admit nicio valoare `null`.
 
 ## HashMap < Key, Value >
 
-Elementele care sunt stocate în interiorul clasei `HashMap`, **nu sunt ordonate**. 
+Elementele care sunt stocate în interiorul clasei `HashMap` **nu sunt ordonate**. 
 
-De obicei, folosim această clasă atunci când nu vom executa operații bazate pe indecșii datelor stocate.
+De obicei, folosim această clasă atunci când nu vom executa operații bazate pe indexurile datelor stocate.
 
 ## LinkedHashMap < Key, Value >
 
 Clasa **LinkedHashMap** extinde clasa **HashMap**, dar **menține o ordine specifică**. 
 
-Cheile sunt stocate  **în ordinea în care au fost adăugate**.
+Cheile sunt stocate **în ordinea în care au fost adăugate**.
 
 ## TreeMap < Key, Value >
 
-`## TreeMap < Key, Value >
+## TreeMap < Key, Value >
 
-Clasa **TreeMap** **menține ordinea ascendentă** a perechilor, bazându-se pe **Keys**.
+Clasa **TreeMap** sortează toate înregistrările conform ordinii lor naturale.
+
+Pentru numere întregi, acest lucru înseamnă sortare în ordine crescătoare, iar pentru șiruri, sortare în ordine alfabetică.
 
 [/slide]
 
 [slide hideTitle]
-# Map Declaration and Initialization
+# Declararea și Inițializarea Map
 
-Pentru a folosi `Map` in Java **importați** pachetul `java.util.Map` Creați o  **instanță** a uneia dintre clasele care sunt implementate de **interfață Map** în Java.
+Pentru a folosi `Map` în Java, **importați** pachetul `java.util.Map`.
+
+Creați o **instanță** a uneia dintre clasele care implementează **interfața Map**.
 
 ```java
 import java.util.Map;
@@ -96,13 +102,13 @@ public class Main {
 }
 ```
 
-Pentru a inițializa un Map:
+Pentru a inițializa o instanță Map:
 
-- Specificați  **tipul generic** de Chei și Valoare între paranteze unghiulare `<>`, separate prin virgulă și un spațiu `,`
+- Specificați **tipul generic** al cheii și al valorii între paranteze unghiulare `<>`, separate printr-o virgulă și un spațiu (", ").
 
-- Setați **numele** map-ului, care ar trebui să fie suficient de **descriptiv** pentru a ne ajuta să înțelegem ce anume **reprezintă cheia și valoarea**. 
+- Setați **numele** instanței Map, care trebuie să fie suficient de **descriptiv** pentru a ne ajuta să înțelegem ce anume **reprezintă cheia și valoarea**. 
 
-- După semnul egal `=` folosiți cuvântul cheie `new` și **tipul destinat** al Map-ului
+- După semnul egal (`=`), folosiți cuvântul cheie `new` și **tipul dorit** al instanței Map
 
 ```java
 Map <Key, Value> airplanes = new HashMap<>();
@@ -116,7 +122,7 @@ Map <Key, Value> shoppingList = new LinkedHashMap<>();
 Map <Key, Value> phoneBook = new TreeMap<>();
 ```
 
-Este important să știți că odată setate, tipurile  aferente  **cheii** și **valorii** nu mai pot fi modificate.
+Este important să știți că odată setate, tipurile aferente **cheii** și **valorii** nu mai pot fi modificate.
 
 [/slide]
 
@@ -124,15 +130,15 @@ Este important să știți că odată setate, tipurile  aferente  **cheii** și 
 
 
 [slide hideTitle]
-# Metode Incorporate
+# Metode Încorporate
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-6-7-8-9-built-in-methods-demo-hashmap-put-and-remove-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Clasa `HashMap` conține câteva metode incorporate: 
+Clasa `HashMap` conține câteva metode încorporate: 
 
-- `put(K key, V value)` - Se folosește pentru  **adăugarea de elemente** (inserarea de înregistrăi) în map 
+- `put(K key, V value)` - Se folosește pentru **adăugarea elementelor** (inserarea înregistrărilor) în Map 
 
-Daca metoda `put()` este apelată cu aceeași cheie de mai multe de 2 ori, **ultima valoare înlocuiește valoarea existentă** pentru cheia dată.
+Daca metoda `put()` este apelată cu aceeași cheie de mai multe ori, **ultima valoare înlocuiește valoarea existentă** pentru cheia dată.
 
 ```java
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -143,7 +149,7 @@ airplanes.put("Boeing 737", 180);
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `putIfAbsent(K key, V value)` - Se folosește pentru  **adăugarea de elemente** (inserarea de înregistrăi), în cazul **cheia** specificată **nu este în colecție**
+- `putIfAbsent(K key, V value)` - Se folosește pentru **adăugarea elementelor** (inserarea înregistrărilor), în cazul în care **cheia** specificată **nu se află în colecție**
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -152,9 +158,9 @@ airplanes.putIfAbsent("Boeing 737", 100);
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `get(K key)` - Se  folosește pentru **a accesa o valoare** din Map, utilizănd cheia acesteia
+- `get(K key)` - Se folosește pentru **a accesa o valoare** din Map, utilizănd cheia acesteia
 
-**Returnează** obiectul **Value**.
+**Returnează** **valoarea** obiectului specificat.
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -163,7 +169,7 @@ int peopleCount = airplanes.get("Boeing 737");
 System.out.println(peopleCount);
 ```
 
-- `remove(K key)` - Se  folosește pentru **a șterge** un element (înregistrare) **utilizând cheia acesteia**
+- `remove(K key)` - Se folosește pentru **a șterge** un element (înregistrare), **utilizând cheia acestuia**
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -172,7 +178,7 @@ airplanes.remove("Boeing 737");
 System.out.println(airplanes.get("Boeing 737"));
 ```
 
-- `clear()` - Used to remove **all items (entries)** in the map
+- `clear()` - Se folosește pentru eliminarea **tuturor elementelor (înregistrărilor)** din Map
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -183,7 +189,7 @@ System.out.println(airplanes.get("Boeing 737"));
 System.out.println(airplanes.get("Airbus A320"));
 ```
 
-- `size()` - Se  folosește pentru **un număr de elemente (înregistrări)** din Map
+- `size()` - Se folosește pentru **a returna numărul de elemente (înregistrări)** din Map
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -192,7 +198,7 @@ airplanes.put("Airbus A320", 150);
 System.out.println(airplanes.size());
 ```
 
-- `containsKey(K key)` - Verifică dacp Map-ul **conține boiecul cheie specificat**. Returnează o valoare booleană
+- `containsKey(K key)` - Verifică dacă instanța Map **conține obiectul cheie specificat**; returnează o valoare booleană
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -202,7 +208,7 @@ if (airplanes.containsKey("Airbus A320")) {
 }
 ```
 
-- `containsValue(V value)` - Checks if the Map **contains the speficied Value object**. Returns a boolean value
+- `containsValue(V value)` - Verifică dacă instanța Map **conține obiectul valoare specificat**; returnează o valoare booleană
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -211,7 +217,7 @@ System.out.println(airplanes.containsValue(150));
 System.out.println(airplanes.containsValue(100));
 ```
 
-- `isEmpty()` - Return `true` if the Map is **empty** and `false` if it contains **at least one pair**
+- `isEmpty()` - Returnează `true` dacă instanța Map este **goală** și `false` dacă conține **măcar o pereche3**
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -241,13 +247,13 @@ System.out.println(airplanes.isEmpty());
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-11-iterating-through-map-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Atunci când iterăm prin obicete de tipul `Map.Entry <K, V>`, este **imposibil** de a modifica colecția (read-only).
+Atunci când iterăm prin obiecte de tipul `Map.Entry <K, V>`, este **imposibilă** modificarea colecției (este read-only).
 
-Sunt câteva moduri în care putem itera chiele stocate într-un Map.
+Există câteva moduri prin care putem itera prin datele stocate într-o instanță Map.
 
-- Iterararea prin elementele unui map folosind o buclă **for-each** 
+- Iterararea prin elementele unei instanțe Map folosind o buclă **for-each** 
 
-  - `keySet()` - obținem numai chei
+  - `keySet()` - obține numai cheile
 
 ```java live
 Map<String, Double> fruitsPrice = new LinkedHashMap<>();
@@ -258,7 +264,7 @@ for (String fruit : fruitsPrice.keySet()) {
 }
 ```
 
-  - `values()` - obtain numai values
+  - `values()` - obține numai valorile
 
 ```java live
 Map<String, Double> fruitsPrice = new LinkedHashMap<>();
@@ -269,9 +275,9 @@ for (Double price : fruitsPrice.values()) {
 }
 ```
 
-- Iterarea prin elementele unui map folosind metoda încorporată `entrySet()`
-  - `entry.getKey()` - obținem chei
-  - `entry.getValue()` - obținem valori
+- Iterarea prin elementele unei instanțe Map folosind metoda încorporată `entrySet()`
+  - `entry.getKey()` - obține chei
+  - `entry.getValue()` - obține valori
 
 ```java live
 Map<String, Double> fruitsPrice = new LinkedHashMap<>();
@@ -306,7 +312,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere 
-Citiți o **listă de numere reale** și imprimați-le în ordine **ascendentă** alături de **numărul de apariții**.
+Citiți o **listă de numere reale** și imprimați-le în ordine **crescătoare**, împreună cu **numărul lor de apariții**.
 
 ## Exemple
 | **Intrare** | **Ieșire** |
@@ -440,23 +446,23 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere 
-Creați un program care păstrează un map cu sinonime.
+Creați un program care stochează cuvinte și sinonimele acestora într-o instanță Map.
 
-**Cheia**  map-ului va fi **word**.
+**Cheia** instanței Map va fi reprezentată de un singur **cuvânt**.
 
-**Valoarea** va fi o **lista tuturor sinonimelor acelui cuvânt**.
+**Valoarea** va fi o **listă a tuturor sinonimelor acelui cuvânt**.
 
 ## Intrare / Limitări
 
-Veți primi un număr **n**.
+Veți primi un număr întreg **n**.
 
-Pe următoarele **2 * n** linii veți primi un **cuvânt** și un **sinonim**, fiecare pe o linie separată, astfel:
+Pe următoarele **2 * n** linii veți primi un **cuvânt** și **un sinonim**, fiecare pe o linie separată:
 
 - \{**word**\}
 
 - \{**synonym**\}
 
-Dacă primiți același cuvânt de două ori, adăugați noi sinonime acestei liste.
+Dacă primiți același cuvânt de două ori, adăugați sinonimul acestuia listei deja existente pentru acel cuvânt.
 
 ## Ieșire 
 
@@ -658,9 +664,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere 
-Veți primi un șir care conține cuvinte separate prin **un singur spațiu**. 
+Veți primi un **șir** care conține cuvinte separate **print-un singur spațiu**. 
 
-Creați un program care găsește toate cuvintele din șir care au fost repetate **un număr impar de ori** (case-insensitive)**.
+Creați un program care găsește toate cuvintele din șir care se repetă de **un număr impar de ori**. (nu se ține cont de scrierea cu majuscule)
 
 ## Intrare/Limitări
 
@@ -668,7 +674,7 @@ Cuvintele sunt date pe o **singură linie**, **separate printr-un spațiu**.
 
 ## Ieșire
 
-Imprimați rezultatele ca elemente scirse cu **minuscule, on ordinea în care au apărut și separate prin virgulă**.
+Imprimați elementele care îndeplinesc condiția specificată. Acestea trebuie scrise cu **minuscule, în ordinea în care apar și trebuie separate prin virgulă**.
 
 ## Exemple
 | **Intrare** | **Ieșire** |
