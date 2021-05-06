@@ -18,17 +18,17 @@ Clasa ar trebui să aibă un constructor și următoarele metode:
 - **rename** (new title) - modificați titlul articolului
 - **override ToString** - tipărește articolul în următorul format: 
 
-"\{title\} - \{content\}:\{author\}"
+"\{**title**\} **-** \{**content**\}**:**\{**author**\}"
 
-Scrieți un program care citește un articol în următorul **format** "\{title\}, \{content\}, \{author\}". 
+Scrieți un program care citește un articol în următorul **format** "\{**title**\}, \{**content**\}, \{**author**\}". 
 
 Pe linia următoare, veți obține un **număr n**.
 
 Pe **următoarele n linii**, veți primi una dintre următoarele **comenzi**:
 
-- "Edit: \{new content\}" 
-- "ChangeAuthor: \{new author\}" 
-- "Rename: \{new title\}". 
+- "**Edit:** \{**new content**\}" 
+- "**ChangeAuthor:** \{**new author**\}" 
+- "**Rename:** \{**new title**\}"
 
 La final, **tipăriți articolul final**.
 
@@ -138,12 +138,12 @@ The haunting of hill house - better content2:  Shirley Jackson
 ## Descriere
 Folosind **clasa Person**, scrieți un program care citește de pe consolă **N linii de informații personale** și apoi **imprimă toate persoanele** a căror **vârstă este mai mare de 30 de ani** în următorul **format**:
 
-"\{name\} - \{age\}"
+"\{**name**\} **-** \{**age**\}"
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| 3 | John - 31 |
+| 3 | John - 31 | 
 | Peter 12 | Steven - 48 |
 | John 31 | |
 | Steven 48 | |
@@ -156,7 +156,6 @@ Folosind **clasa Person**, scrieți un program care citește de pe consolă **N 
 | Yoan 88 | Yoan - 88|
 | Tom 22 | |
 | Leo 44 | |
-| Sophie 11 | |
 
 [/task-description]
 [code-upload allowedMemory="30" /]
@@ -342,15 +341,15 @@ Anntoanette - 39
 [task-description]
 
 ## Descriere
-Schimbați programul "Articles", astfel încât să puteți stoca o **listă de articole**.
+Schimbați programul "**Articles**", astfel încât să puteți stoca o **listă de articole**.
 
 Nu veți mai avea nevoie de metode (**cu excepția** metodei toString).
 
 Pe **prima linie**, veți primi un **număr n**.
 
-Pe următoarele **n linii**, veți primi câteva **articole în același format ca sarcina anterioară** ("\{title\}, \{content\}, \{author\}").
+Pe următoarele **n linii**, veți primi câteva **articole în același format ca sarcina anterioară** ("\{**title**\}, \{**content**\}, \{**author**\}").
 
-În cele din urmă, veți primi unul dintre cele **trei criterii**: "title", "content", "author".
+În cele din urmă, veți primi unul dintre cele **trei criterii**: "**title**", "**content**", "**author**".
 
 Trebuie să ordonați articolele **alfabetic** pe baza comenzii și să le imprimați sortate după **criteriile** date.
 
@@ -361,7 +360,6 @@ Trebuie să ordonați articolele **alfabetic** pe baza comenzii și să le impri
 | Science, planets, Bill | Science - planets: Bill |
 | Article, content, Johnny | |
 | title | |
-
 ### Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
@@ -387,7 +385,7 @@ Science - planets: Bill
 
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 3
 title1, C, author1
@@ -494,10 +492,10 @@ Fiecare elev trebuie să aibă **first name** (șir), **Last name** (șir) și *
 ### Intrare
 
 - Prima linie va fi un **număr n**
-- Următoarele **n linii** veți primi informații despre elev în **formatul** "\{first name\} \{second name\} \{grade\}"
+- Următoarele **n linii** veți primi informații despre elev în **formatul** "\{**first name**\} \{**second name**\} \{**grade**\}"
 
 ### Ieșire
--Tipăriți fiecare elev în următorul format "\{first name\} \{second name\}: \{grade\}"
+-Tipăriți fiecare elev în următorul format "\{**first name**\} \{**second name**\}**:** \{**grade**\}"
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -621,23 +619,25 @@ Amias Mathews: 2.30
 
 [task-description]
 ## Descriere
-Până când primiți **comanda** "`End`", veți primi linii de intrare în format:
+Până când primiți **comanda** "**End**", veți primi linii de intrare în format:
 
-- \{typeOfVehicle\} \{model\} \{color\} \{horsepower\}
+- \{**typeOfVehicle**\} \{**model**\} \{**color**\} \{**horsepower**\}
 
-După comanda "End", veți începe să primiți **modele de vehicule**. **Imprimați pentru fiecare vehicul primit** datele sale în **format**:
+După comanda "**End**", veți începe să primiți **modele de vehicule**. 
 
-Type: \{typeOfVehicle\}
+**Imprimați pentru fiecare vehicul primit** datele sale în **format**:
 
-Model: \{modelOfVehicle\}
+"**Type:** \{**typeOfVehicle**\}
 
-Color: \{colorOfVehicle\}
+**Model:** \{**modelOfVehicle**\}
 
-Horsepower: \{horsepowerOfVehicle\}
+**Color:** \{**colorOfVehicle**\}
+
+**Horsepower:** \{**horsepowerOfVehicle**\}"
 
 Când primiți comanda "Close the Catalogue", **imprimați puterea medie** pentru mașini și camioane în **format**:
 
-"\{typeOfVehicles\} have an average horsepower of \{averageHorsepower\}."
+"\{**typeOfVehicles**\} **have an average horsepower of** \{**averageHorsepower**\}."
 
 Puterea medie este **calculată** prin **împărțirea sumei de cai putere pentru toate vehiculele de acel tip la numărul total de vehicule de același tip**.
 
@@ -845,7 +845,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -865,7 +865,7 @@ Ultimul element va fi un de tip **număr întreg** și reprezintă **vârsta per
 
 Dacă primiți o persoană al cărei **ID l-ați primit deja**, atunci **actualizați** numele și vârsta ID-ului respectiv cu cele **ale noii persoane**.
 
-Când primiți **comanda** "End", **imprimați toate persoanele**.
+Când primiți **comanda** "**End**", **imprimați toate persoanele**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -873,24 +873,22 @@ Când primiți **comanda** "End", **imprimați toate persoanele**.
 | George 123456 20 | George with ID: 123456 is 20 years old. |
 | Peter 78911 15 | John with ID: 78911 is 30 years old. |
 | Steven 524244 10 | Steven with ID: 524244 is 10 years old. |
-| John 78911 30 | |
 | End | |
 
 [/task-description]
-[code-upload allowedMemory="30" /]
+[code-io /]
 [tests]
 [test open]
 [input]
 George 123456 20
 Peter 78911 15
 Steven 524244 10
-John 78911 30
 End
 [/input]
 [output]
-George with ID: 123456 is 20 years old.
-John with ID: 78911 is 30 years old.
 Steven with ID: 524244 is 10 years old.
+Peter with ID: 78911 is 15 years old.
+George with ID: 123456 is 20 years old.
 [/output]
 [/test]
 [test]
@@ -899,12 +897,10 @@ Cindy 88611 2
 Kaloyan 13967 3
 Simona 53316 11
 Gil 31837 72
-Gil 31837 72
-Stacy 88611 10
 End
 [/input]
 [output]
-Stacy with ID: 88611 is 10 years old.
+Cindy with ID: 88611 is 2 years old.
 Kaloyan with ID: 13967 is 3 years old.
 Simona with ID: 53316 is 11 years old.
 Gil with ID: 31837 is 72 years old.
@@ -936,10 +932,48 @@ End
 [output]
 Deyan with ID: 57989 is 24 years old.
 Chip with ID: 74059 is 44 years old.
-Chip with ID: 84450 is 89 years old.
 Margie with ID: 17098 is 46 years old.
+Chip with ID: 84450 is 89 years old.
 [/output]
+[/test]
+[test]
+[input]
+Simona 53316 11
+Gil 31837 72
+Cindy 88611 2
+Kaloyan 13967 3
+End
+[/input]
+[output]
+Cindy with ID: 88611 is 2 years old.
+Kaloyan with ID: 13967 is 3 years old.
+Simona with ID: 53316 is 11 years old.
+Gil with ID: 31837 is 72 years old.
+[/output]
+[/test]
+[test]
+[input]
+Deyan 57989 24
+Chip 74059 44
+Chip 84450 89
+Margie 17098 46
+Simona 53316 11
+Gil 31837 72
+Cindy 88611 2
+Kaloyan 13967 3
+End
+[/input]
+[output]
+Cindy with ID: 88611 is 2 years old.
+Kaloyan with ID: 13967 is 3 years old.
+Simona with ID: 53316 is 11 years old.
+Deyan with ID: 57989 is 24 years old.
+Chip with ID: 74059 is 44 years old.
+Margie with ID: 17098 is 46 years old.
+Gil with ID: 31837 is 72 years old.
+Chip with ID: 84450 is 89 years old.
+[/output]
+[/test]
 [/tests]
 [/code-task]
 [/slide]
-

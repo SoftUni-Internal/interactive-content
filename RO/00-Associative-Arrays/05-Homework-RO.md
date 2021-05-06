@@ -1,4 +1,4 @@
-# Teme pentru acas
+# Teme Pentru Acas
 
 [slide hideTitle]
 
@@ -497,7 +497,7 @@ Când primiți comanda "**buy**", **imprimați** **articolele** cu **numele lor*
 - Formatați prețul total la  **a două cifră** după punctul zecimal
 
 ### Exemplu
-| **Intrare* | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Beer 2.20 100 | Beer \-\> 220.00 | 
 | IceTea 1.50 50 | IceTea \-\> 75.00 |
@@ -506,7 +506,7 @@ Când primiți comanda "**buy**", **imprimați** **articolele** cu **numele lor*
 | buy | | 
 
 ### Exemplu
-| **Intrare* | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | CaesarSalad 10.20 25 | CaesarSalad \-\> 255.00 | 
 | SuperEnergy 0.80 400 | SuperEnergy \-\> 320.00 |
@@ -735,7 +735,7 @@ După ce ați executat toate comenzile, **imprimați** toți **utilizatorii înr
     - Unregister: "**unregister** \{**username**\}"
 
 ### Exemple
-| **Intrare* | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 | John registered CS1234JS successfully | 
 | register John CS1234JS | George registered JAVA123S successfully |
@@ -982,7 +982,7 @@ Veți primi **numele cursului și numele unui student**, **până ce**  primiți
 
 Atunci când primiți **comanda** "**end**", **imprimați** cursurile cu **numele** lor și **numărul total al utilizatorilor înregistrați**, ordonați după numărul utilizatorilor **înregistrați**  in ordine descendentă. 
 
-Pentru fiecare ** concurs imprimați utilizatori înregistrați ** ** ordonați după nume în ordine crescătoare **.
+Pentru fiecare **concurs imprimați utilizatori înregistrați** **ordonați după nume în ordine crescătoare**.
 
 ### Intrare
 - Până primiți "**end**", **intrare vien în format**:
@@ -999,7 +999,7 @@ Pentru fiecare ** concurs imprimați utilizatori înregistrați ** ** ordonați 
 "-- \{**studentName**\}"
 
 ### Exemple
-| **Intrare* | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Programming Fundamentals : John Smith | Programming Fundamentals: 2 | 
 | Programming Fundamentals : Linda Johnson | -- John Smith |
@@ -1253,12 +1253,13 @@ Când ați terminat de citit datele, țineți doar studenții cu nota medie **ma
 Ordonați studenții aleși, după nota medie, în ordine **descrescătoare**.
 
 **Imprimați studenții și mediile lor** in format:
+
 - "\{**name**\} -> \{**averageGrade**\}"
 
 **Formatați** nota medie până la **a două cifră după zecimală**.
 
 ### Exemple
-| **Intrare* | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 | John -> 5.00 | 
 | John | George -> 5.00 |
@@ -1537,7 +1538,7 @@ public class Main {
 ## Descriere
 Scrieți un program care conține informații despre companii și angajații lor. 
 
-Veți primi **numele companiei** și **ID-ul angajatului**, până primiți **comandă** "Sfârșit". 
+Veți primi **numele companiei** și **ID-ul angajatului**, până primiți **comandă** "**End**". 
 
 **Adăugați** fiecare **angajat** de la fiecare **companie**.
 
@@ -1546,6 +1547,7 @@ Rețineți că **compania nu poate avea doi angajați cu același ID**.
 Când ați terminat de citit date, **ordonați** companiile după nume, în ordine ascendentă.
 
 Imprimați numele companiei și ID-ul fiecărui angajat, în următorul format:
+
 - \{companyName\}
 -- \{**id1**\}
 
@@ -1555,13 +1557,13 @@ Imprimați numele companiei și ID-ul fiecărui angajat, în următorul format:
 
 ### Intrare
 ntrare
-Până la primirea mesajului "Sfârșit", datele de intrare vin **în format**:
+Până la primirea mesajului "**End**", datele de intrare vin **în format**:
 
 "\{**companyName**\} -> \{**employeeId**\}"
 
 
 ### Exemple
-| **Intrare* | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | SoftUni \-\> AA12345 | HP | 
 | SoftUni \-\> BB12345 | -- BB12345 |
@@ -1862,8 +1864,8 @@ Trebuie să stocați informația pentru **fiecare utilizator unic de forță**, 
 
 Veți primi câteva **linii de intrare într-unul din următoarele formate**:
 
-- "\{forceSide\} \| \{forceUser\}"
-- "\{forceUser\} -> \{forceSide\}"
+- "\{**forceSide**\} \| \{**forceUser**\}"
+- "\{**forceUser**\} -> \{**forceSide**\}"
 
 Aici **forța utilizatorului și echipa de forță sunt șiruri**, conținând orice caractere.
 
@@ -1875,9 +1877,9 @@ Dacă nu există astfel de force user, **adăugați-l/o la partea de forță cor
 
 Apoi, puteți printa pe consolă: 
 
-"\{forceUser\} joins the \{forceSide\} side!"
+"\{**forceUser**\} **joins the** \{**forceSide**\} **side!**"
 
-Trebuie să **încheiați programul când primiți comanda** "End". 
+Trebuie să **încheiați programul când primiți comanda** "**End**". 
 
 În acest punct, trebuie să printați fiecare parte de forță **ordonat descrescător prin forță utilizatorii**, apoi **ordonați după nume**. 
 
@@ -1886,11 +1888,11 @@ Pentru fiecare parte, imprimăm force users, **ordonați după nume**.
 In cazul în care nu avem **utilizatori de forță** de o parte, atunci **nu ar trebui să imprimați informațiile**.
 
 ### Intrare
-- Datele de intrare vin sub formă de comenzi într-unul din formatele specificate mai sus.
-- Datele de intrare se încheie când primim comanda "**End**".
+- Datele de intrare vin sub formă de comenzi într-unul din formatele specificate mai sus
+- Datele de intrare se încheie când primim comanda "**End**"
 
 ### Ieșire
-- Ca date de intrare pentru fiecare force side, ordonată descendent în funcție de numprul de force users, apoi după nume, trebuie să imprimăm toți force users, ordonată după nume, alfabetic.
+- Ca date de intrare pentru fiecare force side, ordonată descendent în funcție de numprul de force users, apoi după nume, trebuie să imprimăm toți force users, ordonată după nume, alfabetic
 - Formatul output este:
 
 "**Side:** \{**forceSide**\}, **Members:** \{**forceUsersCount**\}
@@ -1898,11 +1900,11 @@ In cazul în care nu avem **utilizatori de forță** de o parte, atunci **nu ar 
 ! \{**forceUser**\}
 ! \{**forceUser**\}"
 
-- In cazul în care nu avem niciun force users, nu imprimăm această parte.
+- In cazul în care nu avem niciun force users, nu imprimăm această parte
 
 
 ### Exemple
-| **Intrare* | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | Light \| George | Side: Dark, Members: 1 | 
 | Dark \| Peter | ! Peter |
@@ -2153,41 +2155,41 @@ public class Main {
 ## Descriere
 Trebuie să colectați toate înscrierile și să imprimați rezultatele finale și statisticile despre fiecare limbă în care participanții și-au prezentat soluțiile. 
 
-Veți primi linii în formatul următor: "\{username\}-\{language\}-\{points\}" până cânf primiți "examen terminat". 
+Veți primi linii în formatul următor: "\{**username**\}**-**\{**language**\}**-**\{**points**\}" până cânf primiți "examen terminat". 
 
 Trebuie să stocați fiecare **nume de utilizator** și, de asemenea,  **observațiile și punctele** pentru fiecare. 
 
-Puteți primi o comandă să interziceți unui utilizator pentru  **înșelare** in formatul următor: "\{username\}-banned". 
+Puteți primi o comandă să interziceți unui utilizator pentru  **înșelare** in formatul următor: "\{**username**\}**-banned**". 
 
 In acest caz, trebuie să înlăturați utilizatorul din concurs, dar să păstrați aplicația sa în numărul total de aplicații pentru fiecare limbă.
 
 După ce ați primit  "examen terminat", **imprimați** fiecare participant în ordine **descendentă** după numărul **maximal** de **puncte**, apoi după **nume de utilizator**, în următorul **format**:
 
 Rezultate:
-\{username\} \| \{points\}
+\{**username**\} \| \{**points**\}
 …
 
 După ce am imprimat fiecare limbă folosită în examen, ordonăm **descendent** după numărul total **număr observații** și **după aceea** conform **nume** limbii, în următorul format:
 
 Submisii:
-\{language\} - \{submissionsCount\}
+\{**language**\} - \{**submissionsCount**\}
 …
 
 ## Intrare / Limitări
-Până primiți "examen terminat", veți primi aplicațiile participanților în formatul următor: "\{username\}-\{language\}-\{points\}"
-Puteți primi o comandă de interzicere -> "\{username\}-banned"
+Până primiți "examen terminat", veți primi aplicațiile participanților în formatul următor: "\{**username**\}**-**\{**language**\}**-**\{**points**\}"
+Puteți primi o comandă de interzicere -> "\{**username**\}**-banned**"
 Punctele participantului vor fi un număr întreg valid în gama \[0-100\]
 
 ## Ieșire
 - Imprimați rezultatele examenului pentru fiecare participant, ordonate descendent după numărul de participanți și apoi după nume de utilizator, în următorul format:
 
 Rezultate:
-\{username\} \| \{points\}
+\{**username**\} \| \{**points**\}
 …
 - După ce am imprimat fiecare limbă, ordonăm descendent după numărul total de aplicații și apoi după numele limbii, în formatul următor: 
 
 Submisii:
-\{language\} - \{submissionsCount\}
+\{**language**\} **-** \{**submissionsCount**\}
 …
 
 

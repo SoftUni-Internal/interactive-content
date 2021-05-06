@@ -64,9 +64,7 @@ public class MyClass {
 
 [/slide]
 [slide hideTitle]
-
 # Membri Clasei
-
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-17-class-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Câmpurile** și **metodele** definesc **starea** și **comportamentul** unei clase.
@@ -171,7 +169,7 @@ public class Car {
 
 [slide hideTitle]
 
-# Crearea unui Obiect
+# Crearea Unui Obiect
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-20-creating-an-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -205,7 +203,7 @@ class Program {
 
 O metodă specială, executată în timpul creării unui obiect, care **setează starea inițială a obiectului**.
 
-Numele constructor-ului este **același cu numele clasei** .
+Numele constructor-ului este **același cu numele clasei**.
 
 Constructor-ul **poate să aibă parametri**, fapt care se folosește pentru **inițializarea câmpurilor**.
 
@@ -237,7 +235,7 @@ public class Animal {
 [slide hideTitle]
 # Problemă cu Soluție: Students
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-problem-and-solution-students-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/java-fundamentals-objects-and-classes-problem-and-solution-students-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Students" taskId="java-fund-2-Objects-and-Classes-lab-Students" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
@@ -248,7 +246,7 @@ Definiți o clasă **Student**, care conține următoarele informații despre el
  - first name
  - last name
  - age
- - hometown
+ - home town
 
 ### Intrare / Constrângeri
 
@@ -259,10 +257,9 @@ După aceea, veți primi un **nume de oraș**.
 ### Ieșire
 
 Imprimați numai studenții care sunt din orașul dat, în următorul format:
-"\{firstName\} \{lastName\} is \{age\} years old."
+"\{**firstName**\} \{**lastName**\} **is** \{**age**\} **years old.**"
 
 ## Exemple
-
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | Anthony Taylor 15 Chicago | Anthony Taylor is 15 years old. |
@@ -390,8 +387,7 @@ Port Lee is 14 years old
 
 [slide hideTitle]
 # Problemă cu Soluție: Students 2.0
-
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-problem-and-solution-students-2.0-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/java-fundamentals-objects-and-classes-problem-and-solution-students-2.0-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 [code-task title="Students 2.0" taskId="java-fund-2-Objects-and-Classes-lab-Students-2.0" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
@@ -487,7 +483,7 @@ J P is 61 years old
 [slide hideTitle]
 # Problemă cu Soluție: Songs
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-problem-and-solution-songs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/java-fundamentals-objects-and-classes-problem-and-solution-songs-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Songs" taskId="java-fund-2-Objects-and-Classes-lab-Songs" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [task-description]
@@ -505,7 +501,7 @@ Definiți o clasă **Song**, care conține următoarele informații despre melod
 - Pe prima linie veți primi **numărul de melodii - N**.
 
 - Pe următoarele linii N veți primi date în următorul format:
-"\{typeList\}\_\{name\}\_\{time\}".
+"\{**typeList**\}\_\{**name**\}\_\{**time**\}".
 
 - Pe ultima linie veți primi **Type List** sau **"all"**.
 

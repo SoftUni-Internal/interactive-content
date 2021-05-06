@@ -69,7 +69,7 @@ You can use `String.join()` with any Iterable collection such as List, Array, Se
 [slide hideTitle]
 # Problem with Solution: Repeat strings
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-10-problem-and-solution-repeat-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-10-problem-and-solution-repeat-strings-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Repeat strings" taskId="Java-Fundamentals-2-String-Processing-lab-Repeat-Strings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -232,7 +232,7 @@ System.out.println(fruits.lastIndexOf("orange")); // -1
 [slide hideTitle]
 # Problem with Solution: Substring
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-16-problem-and-solution-substring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-16-problem-and-solution-substring-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Substring" taskId="Java-Fundamentals-2-String-Processing-lab-Substring" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -396,7 +396,7 @@ System.out.println(replacedText);
 [slide hideTitle]
 # Problem with Solution: Text Filter
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-20-problem-and-solution-text-filter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/EN/interactive-java-fundamentals-text-processing-20-problem-and-solution-text-filter-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Text Filter" taskId="Java-Fundamentals-2-String-Processing-lab-Text-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

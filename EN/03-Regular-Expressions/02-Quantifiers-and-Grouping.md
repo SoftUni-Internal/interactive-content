@@ -62,7 +62,7 @@ In the example above, the group's names are: **day**, **month**, and **year**.
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Match All Words
+# Problem: Match All Words
 
 Create a **regular expression** that will **extract all words from a given text**, by using the following website: [regex101](regex101.com)
 

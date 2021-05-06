@@ -267,7 +267,7 @@ In the above example we are spliting the scanner input by space, parsing each el
 [slide hideTitle]
 # Problem with Solution: Word Filter
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-28-problem-and-solution-word-filter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/java-fundamentals-associative-arrays-28-problem-and-solution-word-filter-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Word Filter" taskId="Java-Fundamentals-2-Associative-Arrays-lab-Word-Filter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -566,7 +566,7 @@ courseGrades.entrySet()
 [slide hideTitle]
 # Problem with Solution: Largest 3 Numbers
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-34-problem-largest-three-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/java-fundamentals-associative-arrays-34-problem-largest-three-numbers-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Largest 3 Numbers" taskId="Java-Fundamentals-2-Associative-Arrays-lab-large-3-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

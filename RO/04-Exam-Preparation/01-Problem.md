@@ -66,11 +66,20 @@ Trebuie să verificați dacă înregistrarea este **valabilă și dacă este, im
 | U\$UserU$P@\$ad2P@\$ | Invalid username or password |
 | | Successful registrations: 1 |
 
-### Cometariu
-- Avem 3 linii de intrare de verificat
-- Prima respectă regulile și este valabilă
-- A doua nu este valabilă, deoarece parola nu se termină cu o cifră
-- A treia nu este validă, deoarece parola este prea scurtă
+[hints]
+[hint]
+Avem **3** linii de intrare de verificat:
+
+**Prima** respectă regulile și este **valabilă**.
+[/hint] 
+[hint]
+A **doua nu este valabilă**, deoarece parola nu se termină cu o cifră.
+[/hint] 
+[hint]
+A **treia nu este validă**, deoarece parola este prea scurtă.
+[/hint] 
+[/hints] 
+
 
 ### Exemplu
 | **Intrare** | **Ieșire** |

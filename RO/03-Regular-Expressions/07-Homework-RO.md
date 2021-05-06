@@ -40,7 +40,7 @@ Bought furniture:
 
 Și pe **ultima linie imprimați** următoarele:
 
-- "Total money spend: \{spend money\}" **formatate** la a doua zecimală
+- "Total money spent: \{spend money\}" **formatate** la a doua zecimală
 
 
 ### Exemplu
@@ -254,12 +254,43 @@ La final **imprimați primii 3 alergători ordonați în funcție de distanța d
 | end of race | |
 
 
-### Comentarii
-- Pe a treia linie de intrare avem Ray
-- El nu este pe listă, deci nu luăm în calcul rezultatul lui
-- Celelalte sunt valabile
-- George are 55 km în total, Peter 25 și Tom 19
-- Nu îl imprimăm pe Bill pentru că este pe locul patru
+[hints]
+[hint]
+Pe a treia linie de intrare avem **Ray** - `R1@!3a$y4456@`.
+El **nu este** pe listă, deci nu luăm în calcul rezultatul lui.
+[/hint] 
+[hint]
+Celelalte persoane **sunt** pe lista de **participanți**.
+
+```java
+if (racers.containsKey(name)) {
+  racers.put(name, racers.get(name) + result);
+}
+```
+
+**George** are **55** km în total, **Peter** - **25** și **Tom** - **19**.
+[/hint] 
+[hint]
+**Tipărim** **câștigătorii** (persoanele care se află în **top 3**):
+
+```java
+List<String> winners = new LinkedList<>();
+
+racers.entrySet().stream()
+.sorted(Map.Entry.<String, Integer>comparingByValue()
+.reversed())
+.limit(3)
+.forEach(racer -> winners.add(racer.getKey()));
+
+System.out.printf("1st place: %s\n" +
+  "2nd place: %s\n" +
+  "3rd place: %s\n", 
+  winners.get(0), 
+  winners.get(1), 
+  winners.get(2));
+```
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
@@ -420,9 +451,27 @@ Când primiți "end of shift" **imprimați suma totală** pentru ziua rotunjita 
 | %Maria%\<Cola\>\|1\|2.4\$ | Maria: Cola - 2.40 |
 | end of shift | Total income: 24.30 |
 
-### Comentarii
-- Fiecare linie este valabilă, așa că tipărim fiecare comandă, calculând prețul total al produsulelor cumpărate
-- La final imprimăm venitul total al zilei
+[hints]
+[hint]
+Fiecare linie este valabilă, așa că **tipărim** fiecare comandă, calculând **prețul** total al produsulelor cumpărate:
+
+```java
+double totalPrice = count * price;
+
+System.out.println(String.format(
+  "%s: %s - %.2f", customer, 
+  product, totalPrice));
+```
+[/hint] 
+[hint]
+La final **imprimăm** venitul **total** al **zilei**:
+
+```java
+System.out.println(String.format(
+  "Total income: %.2f", totalIncome));
+```
+[/hint] 
+[/hints] 
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -433,11 +482,20 @@ Când primiți "end of shift" **imprimați suma totală** pentru ziua rotunjita 
 | %Valid%\<Valid\>valid\|10\|valid20\$ | |
 | end of shift | |
 
-### Comentarii
-- Pe prima linie, numele clientului nu este valid, așa că omitem acest rând
-- A doua linie lipsește numărul de produse
-- Pe a treia linie avem un preț nevalid
-- Și numai a patra linie este validă
+[hints]
+[hint]
+Pe **prima** linie, numele clientului **nu este valid**, așa că **omitem** acest rând.
+[/hint] 
+[hint]
+A **doua** linie lipsește **numărul** de produse.
+[/hint] 
+[hint]
+Pe a **treia** linie avem un **preț nevalid**.
+[/hint] 
+[hint]
+Și numai a **patra** linie este **validă**.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
@@ -641,15 +699,64 @@ Planetele ar trebui să fie ordonate după nume in mod **alfabetic**.
 | EHfsytsnhf?8555&I&2C9555SR | Destroyed planets: 1 |
 | | -> Cantonica |
 
-### Comentarii
-Primim două mesaje, pentru a le decripta calculăm cheia:
-- Primul mesaj are cheia de decriptare 3
-     - deci scoatem din fiecare caracter codul 3
-    - PQ@Alderaa1:30000!A!->20000
-- Al doilea mesaj are cheia 5
-    - @Cantonica:3000!D!->4000NM
-- Ambele mesaje sunt valabile și conțin planete, populație, tipul de atac și număr de soldați
-- După decriptarea tuturor mesajelor, imprimăm fiecare planetă conform formatului dat
+[hints]
+[hint]
+Primim **două** mesaje, pentru a le decripta calculăm **cheia**:
+
+**Primul mesaj** are cheia de decriptare 3, deoarece conține:
+- **o** apariție a literei "**S**" 
+- **o** apariție a literei "**T**"
+- **o** apariție a literei "**A**"
+
+Deci scoatem **3** din **valoarea ASCII** a fiecărui **caracter**: 
+
+```java
+int occurrences = 0;
+
+for (int i = 0; i < message.length(); i++) {
+  if (star.find()) {
+    occurrences++;
+  }
+}
+
+for (int i = 0; i < message.length(); i++) {
+  char symbol = message.charAt(i);
+  deciphered += (char)(symbol - occurrences);
+}
+```
+
+Mesajul **descifrat** este: `PQ@Alderaa1:30000!A!->20000`
+[/hint] 
+[hint]
+Al **doilea mesaj** are cheia **5**.
+
+Aici, mesajul **descifrat** este: `@Cantonica:3000!D!->4000NM`
+
+Ambele mesaje sunt **valabile** și conțin:
+- **planete**
+- **populație**
+- **tipul** de atac 
+- număr de **soldați**
+[/hint] 
+[hint]
+După **decriptarea** tuturor **mesajelor**, **imprimăm** fiecare planetă conform formatului **dat**:
+
+```java
+System.out.println(String.format(
+  "Attacked planets: %d",
+  attacked.size()));
+
+attacked
+  .stream()
+  .sorted()
+  .forEach(planet -> 
+    System.out.println("-> " + planet));
+```
+
+**Repetați** aceeași procedură pentru **planetele distruse** (destroyed). 
+[/hint] 
+[/hints] 
+
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -659,15 +766,21 @@ Primim două mesaje, pentru a le decripta calculăm cheia:
 | GQhrr\|A977777(H(TTTT | -> Cantonica |
 | EHfsytsnhf?8555&I&2C9555SR | -> Coruscant |
 
-### Comentarii
-Primim trei mesaje.
-- Primul mesaj este decriptat cu cheia 4:
-    - pp$##@Coruscant:2000000000!D!->5000
-- Al doilea mesaj are cheia 7:
-    - @Jakku:200000!A!MMMM
-    - Acesta este un mesaj nevalid, numărul soldaților lipsește, așa că continuăm
-- Al treilea mesaj are cheia 5
-    - @Cantonica:3000!D!->4000NM
+[hints]
+[hint]
+Primim **trei** mesaje.
+
+**Primul mesaj** este decriptat cu cheia **4**: `pp$##@Coruscant:2000000000!D!->5000`
+[/hint] 
+[hint]
+Al **doilea mesaj** are cheia **7**: `@Jakku:200000!A!MMMM`
+  
+Acesta este un mesaj **nevalid**, numărul **soldaților** lipsește, așa că **continuăm**.
+[/hint] 
+[hint]
+Al **treilea mesaj** are cheia **5**: `@Cantonica:3000!D!->4000NM`
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
@@ -905,10 +1018,31 @@ Imprimați toți demonii sortate după numele lor în ordine crescătoare, fieca
 | --- | --- |
 | M3ph-0.5s-0.5t0.0** | M3ph-0.5s-0.5t0.0** - 524 health, 8.00 damage |
 
-### Comentarii
-- M3ph-0.5s-0.5t0.0**:
-    - Health = 'M' + 'p' + 'h' + 's' + 't' = 524 health
-    - Damage = (3 + (-0.5) + (-0.5) + 0.0) \* 2 \* 2 = 8 damage
+[hints]
+[hint]
+Puteți **împărți** numele **demonilor** folosind această expresie regulată:
+
+```java
+String[] demons = input.split(",\\s*");
+```
+[/hint] 
+[hint]
+În acest exemplu, avem **un** demon: `M3ph-0.5s-0.5t0.0**`:
+
+**Sănătatea** lor este egală cu **suma** tuturor codurilor **ASCII** ale literelor:
+'**M**' + '**p**' + '**h**' + '**s**' + '**t**' = **524** health.
+
+**Daunele** sunt egale cu **8**.
+
+Observați că există 2 asteriscuri la sfârșit: `**`
+
+Ar trebui să înmulțiți suma tuturor numerelor cu **patru** (`sum * 2 * 2`):
+
+(**3** + (**-0.5**) + (**-0.5**) + **0.0**) \* **2** \* **2** = **8** damage.
+
+**Împărțirea** și **multiplicarea** sunt aplicate întotdeauna la **sfârșitul**.
+[/hint] 
+[/hints] 
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -916,12 +1050,19 @@ Imprimați toți demonii sortate după numele lor în ordine crescătoare, fieca
 | M3ph1st0**, Azazel | Azazel - 615 health, 0.00 damage  |
 | | M3ph1st0** - 524 health, 16.00 damage |
 
-### Comments
-- Azazel: 
-    - Health - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = 615 health. Damage - no digits = 0 damage
-- M3ph1st0**:
-    - Health - 'M' + 'p' + 'h' + 's' + 't' = 524 health
-    - Damage - (3 + 1 + 0) \* 2 \* 2 = 16 damage
+[hints]
+[hint]
+- `Azazel`: 
+    - **health** - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = **615** health
+    - **damage** - no digits = **0** damage
+[/hint] 
+[hint]
+- `M3ph1st0**`:
+    - **health** - 'M' + 'p' + 'h' + 's' + 't' = **524** health
+    - **damage** - (3 + 1 + 0) \* 2 \* 2 = **16** damage
+[/hint] 
+[/hints] 
+
 
 [/task-description]
 [code-io /]
@@ -1084,6 +1225,12 @@ E-mailurile sunt considerate a fi în **format** \{user\}\@\{host\}, unde:
 | --- | --- |
 | Just send email to s.miller@mit.edu and j.hopking@york.ac.uk for more information. | s.miller@mit.edu  |
 | | j.hopking@york.ac.uk |
+
+[hints]
+[hint]
+Folosiți **lookaround**. Puteți afla mai multe [aici](https://www.regular-expressions.info/lookaround.html).
+[/hint]  
+[/hints] 
 
 [/task-description]
 [code-io /]

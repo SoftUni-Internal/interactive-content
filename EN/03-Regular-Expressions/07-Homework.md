@@ -255,12 +255,43 @@ In the end, print out the **top 3** racers ordered by the distance they have run
 | T$o553m&6 | |
 | end of race | |
 
-### Comments
-- On the third line, we have **Ray**
-- He is not in the list of participants so we ignore him
-- The other people are in the list of participants
-- **George** has run a total of **55** km, **Peter** has run a total of **25**, and **Tom** has run a total of **19**
-- We print the winners (the people in the top 3)
+[hints]
+[hint]
+On the third line, we have **Ray** - `R1@!3a$y4456@`.
+He is **not** in the list of participants so we ignore him.
+[/hint] 
+[hint]
+The other people **are** in the list of **participants**.
+
+```java
+if (racers.containsKey(name)) {
+  racers.put(name, racers.get(name) + result);
+}
+```
+
+**George** has run a total of **55** km, **Peter** has run a total of **25**, and **Tom** has run a total of **19**
+[/hint] 
+[hint]
+We **print** the **winners** (the people in the **top 3**):
+
+```java
+List<String> winners = new LinkedList<>();
+
+racers.entrySet().stream()
+.sorted(Map.Entry.<String, Integer>comparingByValue()
+.reversed())
+.limit(3)
+.forEach(racer -> winners.add(racer.getKey()));
+
+System.out.printf("1st place: %s\n" +
+  "2nd place: %s\n" +
+  "3rd place: %s\n", 
+  winners.get(0), 
+  winners.get(1), 
+  winners.get(2));
+```
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
@@ -422,9 +453,27 @@ When you receive the **end of shift** command, print out the total amount of mon
 | %Maria%\<Cola\>\|1\|2.4\$ | Maria: Cola - 2.40 |
 | end of shift | Total income: 24.30 |
 
-### Comments
-- Each line is valid so we print the expected message for each input line, calculating the price of the order
-- In the end, we print out the total income for the day
+[hints]
+[hint]
+Each line is valid so we **print** the expected **message** for each input line, calculating the **price** of the order:
+
+```java
+double totalPrice = count * price;
+
+System.out.println(String.format(
+  "%s: %s - %.2f", customer, 
+  product, totalPrice));
+```
+[/hint] 
+[hint]
+In the end, we **print** out the total **income** for the **day**:
+
+```java
+System.out.println(String.format(
+  "Total income: %.2f", totalIncome));
+```
+[/hint] 
+[/hints] 
 
 ### Example
 | **Input** | **Output** |
@@ -435,11 +484,20 @@ When you receive the **end of shift** command, print out the total amount of mon
 | %Valid%\<Valid\>valid\|10\|valid20\$ | |
 | end of shift | |
 
-### Comments
-- On the first line, the name of the customer is not valid so we skip that line
-- On the second line, the count of the products to be sold is missing so it is not valid
-- On the third line, the price is not valid
-- The fourth line is valid so we calculate the total income for the day
+[hints]
+[hint]
+On the **first** line, the name of the customer is **not valid** so we **skip** that line.
+[/hint] 
+[hint]
+On the **second** line, the **count** of the products to be sold is **missing** so it is **not valid**.
+[/hint] 
+[hint]
+On the **third** line, the **price** is **not valid**.
+[/hint] 
+[hint]
+The **fourth** line is **valid** so we calculate the total income for the day.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
@@ -648,16 +706,63 @@ The planets should be ordered by name **alphabetically**.
 | EHfsytsnhf?8555&I&2C9555SR | Destroyed planets: 1 |
 | | -> Cantonica |
 
-### Comments
-We receive two messages, to decrypt them we calculate the key:
-- The first message has a decryption key of: 3 (as it contains **one** occurrence of the letter "S", **one** occurrence of the letter "T" and **one** occurrence of the letter "A")
-    - So, we subtract 3 from the ASCII value of each character.
-    - The deciphered message is: PQ@Alderaa1:30000!A!->20000
-- The second message's key is: 5
-    - The deciphered message is: @Cantonica:3000!D!->4000NM
-    - 
-- Both messages are valid and they contain a planet, population, whether they are attacked or destroyed, and their soldier count
-- After decrypting all messages, we print out the information contained in them
+[hints]
+[hint]
+We receive **two** messages, to decrypt them we calculate the **key**.
+
+The **first message** has a decryption key of **3**, as it contains:
+- **one** occurrence of the letter "**S**"
+- **one** occurrence of the letter "**T**"
+- **one** occurrence of the letter "**A**"
+
+So, we subtract **3** from the **ASCII value** of each **character**:
+
+```java
+int occurrences = 0;
+
+for (int i = 0; i < message.length(); i++) {
+  if (star.find()) {
+    occurrences++;
+  }
+}
+
+for (int i = 0; i < message.length(); i++) {
+  char symbol = message.charAt(i);
+  deciphered += (char)(symbol - occurrences);
+}
+```
+
+The **deciphered** message is: `PQ@Alderaa1:30000!A!->20000`
+[/hint] 
+[hint]
+The **second message**'s key is **5**.
+
+Here, the **deciphered** message is: `@Cantonica:3000!D!->4000NM`
+
+Both messages are **valid** and they contain:
+- a **planet**
+- **population**
+- whether they are **attacked** or **destroyed**
+- their **soldier count**
+[/hint] 
+[hint]
+After decrypting **all** messages, we **print** out the **information** contained in them:
+
+```java
+System.out.println(String.format(
+  "Attacked planets: %d",
+  attacked.size()));
+
+attacked
+  .stream()
+  .sorted()
+  .forEach(planet -> 
+    System.out.println("-> " + planet));
+```
+
+**Repeat** the same procedure for the **destroyed planets**.
+[/hint] 
+[/hints] 
 
 ### Example
 | **Input** | **Output** |
@@ -667,15 +772,21 @@ We receive two messages, to decrypt them we calculate the key:
 | GQhrr\|A977777(H(TTTT | -> Cantonica |
 | EHfsytsnhf?8555&I&2C9555SR | -> Coruscant |
 
-### Comments
-We receive three messages.
-- Message one is decrypted using 4 as a key
-    - pp$##@Coruscant:2000000000!D!->5000
-- Message two is decrypted with key: 7
-    - @Jakku:200000!A!MMMM
-    - this is an invalid message as it does not contain a soldier count, so it should be ignored
-- The third message has 5 for a key
-    - @Cantonica:3000!D!->4000NM
+[hints]
+[hint]
+We receive **three** messages.
+
+**Message one** is decrypted using **4** as a key: `pp$##@Coruscant:2000000000!D!->5000`
+[/hint] 
+[hint]
+**Message two** is decrypted with **7** as a key: `@Jakku:200000!A!MMMM`
+
+This is an **invalid** message as it does **not** contain a **soldier count**, so it should be **ignored**.
+[/hint] 
+[hint]
+The **third message** has **5** for a key: `@Cantonica:3000!D!->4000NM`
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
@@ -912,10 +1023,33 @@ For each demon, you should print out their **name** along with their **health** 
 | --- | --- |
 | M3ph-0.5s-0.5t0.0** | M3ph-0.5s-0.5t0.0** - 524 health, 8.00 damage |
 
-### Comments
-- M3ph-0.5s-0.5t0.0**:
-    - Health = 'M' + 'p' + 'h' + 's' + 't' = 524 health.
-    - Damage = (3 + (-0.5) + (-0.5) + 0.0) \* 2 \* 2 = 8 damage.
+
+[hints]
+[hint]
+You can **split** the demons' **names** using this regular expression:
+
+```java
+String[] demons = input.split(",\\s*");
+```
+[/hint] 
+[hint]
+In this example, we have **one** demon: `M3ph-0.5s-0.5t0.0**`:
+
+Their **health** is equal to the **sum** of all letters' **ASCII** codes: 
+'**M**' + '**p**' + '**h**' + '**s**' + '**t**' = **524**.
+
+The **damage** is equal to **8**.
+
+Notice that there are 2 asterisks at the end: `**`
+
+You should multiply the sum of all numbers by **four** (`sum * 2 * 2`):
+
+(**3** + (**-0.5**) + (**-0.5**) + **0.0**) \* **2** \* **2** = **8** damage.
+
+**Division** and **multiplication** are always applied at the **end**.
+[/hint] 
+[/hints] 
+
 
 ### Example
 | **Input** | **Output** |
@@ -923,13 +1057,19 @@ For each demon, you should print out their **name** along with their **health** 
 | M3ph1st0**, Azazel | Azazel - 615 health, 0.00 damage  |
 | | M3ph1st0** - 524 health, 16.00 damage |
 
-### Comments
-- Azazel: 
-    - Health - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = 615 health. 
-    - Damage - no digits = 0 damage.
-- M3ph1st0**:
-    - Health - 'M' + 'p' + 'h' + 's' + 't' = 524 health.
-    - Damage - (3 + 1 + 0) \* 2 \* 2 = 16 damage.
+[hints]
+[hint]
+- `Azazel`: 
+    - **health** - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = **615** health
+    - **damage** - no digits = **0** damage
+[/hint] 
+[hint]
+- `M3ph1st0**`:
+    - **health** - 'M' + 'p' + 'h' + 's' + 't' = **524** health
+    - **damage** - (3 + 1 + 0) \* 2 \* 2 = **16** damage
+[/hint] 
+[/hints] 
+
 
 [/task-description]
 [code-io /]
@@ -1093,6 +1233,12 @@ You should print out all valid emails, each on a new line.
 | --- | --- |
 | Just send email to s.miller@mit.edu and j.hopking@york.ac.uk for more information. | s.miller@mit.edu  |
 | | j.hopking@york.ac.uk |
+
+[hints]
+[hint]
+Use **lookaround**. You can learn more [here](https://www.regular-expressions.info/lookaround.html).
+[/hint]  
+[/hints] 
 
 [/task-description]
 [code-io /]

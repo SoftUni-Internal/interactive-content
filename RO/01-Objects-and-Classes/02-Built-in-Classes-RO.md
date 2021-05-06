@@ -1,5 +1,4 @@
 
-
 [slide hideTitle]
 # Clase Încorporate în Java
 
@@ -97,9 +96,13 @@ System.out.println(min);
 
 ```java live
 double roundedDown = Math.round(29.459);
-double roundedUp = Math.round(29.549);
 System.out.println(roundedDown);
+        
+double roundedUp = Math.round(29.549);
 System.out.println(roundedUp);
+        
+double roundedUpAgain = Math.round(29.5);
+System.out.println(roundedUpAgain);
 ```
 
 - `pow(a, b)` - Returnează valoarea primului parametru `a` ridicat la puterea celui de-al doilea parametru `b`
@@ -199,7 +202,7 @@ System.out.println(isValid);
 [slide hideTitle]
 # Problemă cu Soluție: Randomize Words
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-10-problem-and-solution-randomize-words-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/java-fundamentals-objects-and-classes-10-problem-and-solution-randomize-words-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Descriere
 Vă este dat un **șir**, care conține cuvinte, separate printr-un spațiu.
@@ -269,35 +272,35 @@ BigInteger number = BigInteger.valueOf(-123);
 number = number.abs();
 System.out.println(number);
 ```
-- `add(value)` : Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **adunare** (valoare curentă + valoare)
+- `add(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **adunare** (valoare curentă + valoare)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.add(BigInteger.TEN);
 System.out.println(number);
 ```
-- `subtract(value)` : Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **scădere** (valoare curentă - valoare)
+- `subtract(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **scădere** (valoare curentă - valoare)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.subtract(BigInteger.TEN);
 System.out.println(number);
 ```
-- `multiply(value)` : Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **multiplicare** (valoare curentă * valoare)
+- `multiply(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **multiplicare** (valoare curentă * valoare)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.multiply(BigInteger.TEN);
 System.out.println(number);
 ```
-- `divide(value)` : Atribuie o **valoare nouă** BigInteger-ului actual și efectuează **împărțire** (valoare curentă / valoare)
+- `divide(value)`: Atribuie o **valoare nouă** BigInteger-ului actual și efectuează **împărțire** (valoare curentă / valoare)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.divide(BigInteger.TEN);
 System.out.println(number);
 ```
-- `pow(value)` : Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **ridicarea la putere** (valoarea curentă ^ valoare)
+- `pow(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **ridicarea la putere** (valoarea curentă ^ valoare)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
@@ -316,7 +319,7 @@ System.out.println(number);
 [slide hideTitle]
 # Problemă cu Soluție: Sum Big Numbers
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-problem-and-solution-sum-big-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/java-fundamentals-objects-and-classes-problem-and-solution-sum-big-numbers-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum Big Numbers" taskId="java-fund-2-Objects-and-Classes-lab-Sum-Big-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -429,7 +432,7 @@ Veți primi două numere **(0 până la 10 ^ 50)**. Imprimați suma acestora.
 [slide hideTitle]
 # Problemă cu Soluție: Big Factorial
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-12-problem-and-solution-big-factorial-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/java-fundamentals-objects-and-classes-12-problem-and-solution-big-factorial-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Big Factorial" taskId="java-fund-2-Objects-and-Classes-lab-Big-Factorial" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]

@@ -69,11 +69,19 @@ In the end, **print out the count of successful registrations**:
 | U\$UserU$P@\$ad2P@\$ | Invalid username or password |
 | | Successful registrations: 1 |
 
-### Comments
-- We have 3 input lines to check:
-- The first one follows the rules, so it is valid
-- The second one is not valid because the password does not end with a digit
-- The third one is not valid because the password is too short
+[hints]
+[hint]
+We have **3** input lines to check:
+
+The **first** one follows the rules, so it is **valid**.
+[/hint] 
+[hint]
+The **second** one is **not valid** because the password does not end with a digit.
+[/hint] 
+[hint]
+The third one is **not valid** because the password is too short.
+[/hint] 
+[/hints] 
 
 ### Example
 | **Input** | **Output** |

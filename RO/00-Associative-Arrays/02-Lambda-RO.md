@@ -19,6 +19,7 @@ Partea din **dreapta** conține corpul metodei funcției lambda - **expresie** s
 
 În loc să creăm o funcție care acceptă un parametru întreg `int a` și care apoi returnează dacă `a` este mai mare decât 5 sau nu, еste posibil să scriem același lucru folosind o expresie lambda:
 
+
 ```java
 (a -> a > 5)
 ```
@@ -40,13 +41,17 @@ static boolean function(int x) {
 }
 ```
 
+
 - Funcția lambda `() -> 42` este echivalentul unei metode care returnează întotdeauna `42` :
+
 ```java
 static int function() { 
     return 42; 
 }
 ```
+
 Dacă funcția lambda necesită mai mult de un parametru de intrare, aceștia trebuie mereu plasați între paranteze `()`.
 Când nu avem niciun parametru, adăugăm doar paranteze goale `()`.
+
 
 [/slide]

@@ -24,15 +24,15 @@ public class Main {
 ```
 ## In următoarea lecție veți învăța:
 
--Clase
-  -DefiniȚia claselor
-  -Metode, proprietăți, câmpuri
+- Clase
+  - definiȚia claselor
+  - metode, proprietăți, câmpuri
 
--Obiecte 
-  - Definiție
-  - Valori
+- Obiecte 
+  - definiție
+  - valori
 
--Clase încorporate 
+- Clase încorporate 
 
 
 [/slide]

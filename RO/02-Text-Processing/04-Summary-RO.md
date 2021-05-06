@@ -33,7 +33,7 @@ System.out.println(result); // "Hello, SoftUni!"
 - StringBuilder construiește și modifică șiruri în mod eficient
 
 
-# În lecția următoare, veți învăța:
+## În lecția următoare, veți învăța:
 
 - Ce sunt expresiile regulate
 

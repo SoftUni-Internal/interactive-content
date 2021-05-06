@@ -22,9 +22,20 @@ System.out.println(birthday);
 - Instanța unei clase
 
 ``` java
-class Dice {
-  …
+	class Car {
+  public int fuel;
+  public int drive(distance) {
+    int fuelBurned = distance * 0.1;
+    this.fuel -= fuelBurned;
+    return fuelBurned;
+  }
 }
+```
+
+- Inițializarea unei instanțe a unei clase
+
+```java
+Car bmw = new Car();
 ```
 
 ## În lecția următoare, veți învăța:
