@@ -7,26 +7,25 @@
 
 O expresie lambda este o **funcție anonimă** care conține **expresii și instrucțiuni**. 
 
-Ea **înlocuiește o funcție întreagă** și **îmbunătățește** scrierea de cod. 
+Aceasta este asemănătoare metodei, dar **nu are nevoie de un nume** și poate fi implementată direct în corpul unei metode, lucru care economisește timp și îmbunătățește lizibilitatea codului.
 
-Funcția Lambda este o **expresie mai scurtă** care oferă un rezultat, dar nu este întotdeauna necesară.
+O funcție lambda este un **bloc scurt de cod** care acceptă parametri și returnează o valoare.
 
-Folosiți operatorul lambda `->`, care este citit ca "goes as"
+Folosiți operatorul lambda `->`, care este citit ca "goes to".
 
-Partea din **stângă**  a operatorului specifică parametrii de **intrare**.
+Partea din **stânga** operatorului specifică parametrii de **intrare**.
 
-Partea din **dreaptă** conține corpul metodei funcției lambda - **expresie** sau **instrucțiune**.
+Partea din **dreapta** conține corpul metodei funcției lambda - **expresie** sau **instrucțiune**.
 
-Funcțiile Lambda sunt **metode inline** (funcții) care primesc parametri de intrare și returnează valori:
+În loc să creăm o funcție care acceptă un parametru întreg `int a` și care apoi returnează dacă `a` este mai mare decât 5 sau nu, еste posibil să scriem același lucru folosind o expresie lambda:
 
-In loc să scriem o funcție care acceptă, de exemplu, un parametru întreg `int a` și care apoi returnează dacă `a` este mai mare decât 5 sau nu., еste posibil să scriem același lucru, folosind expresia lambda:
 
 ```java
 (a -> a > 5)
 ```
-Găsiți mai jos câteva exemple pentru **funcțiile lambda**:
+Găsiți mai jos câteva exemple de **funcții lambda**:
 
-- Această funcție lambda `x -> x / 2` este echivalentul metodei care acceptă un parametru întreg ca un singur parametru și returnează un număr întreg împărțit cu 2:
+- Funcția lambda `x -> x / 2` este echivalentul metodei care acceptă un parametru întreg și returnează rezultatul împărțirii lui `x` la 2
 
 ```java
 static int function(int x) { 
@@ -34,7 +33,7 @@ static int function(int x) {
 }
 ```
 
-- Această funcție lambda `x -> x != 0` este echivalentul metodei care acceptă un număr întreg ca un singur parametru și returnează un o valoare booleană:
+- Funcția lambda `x -> x != 0` este echivalentul metodei care acceptă un număr întreg ca parametru și returnează o valoare booleană:
 
 ```java
 static boolean function(int x) { 
@@ -42,14 +41,17 @@ static boolean function(int x) {
 }
 ```
 
-- Această funcție lambda `() -> 42` este echivalentă cu metoda care returnează întotdeauna `42`:
+
+- Funcția lambda `() -> 42` este echivalentul unei metode care returnează întotdeauna `42` :
+
 ```java
 static int function() { 
     return 42; 
 }
 ```
-Dacă funcția lambda cere mai multe de o ieșire, ar trebui să le introducem în paranteze `()`.
 
-Când nu avem niciun parametru, imprimăm doar paranteze goale `()`. Dacă avem mai mulți parametri, îi imprimăm între paranteze `()`, separați prin virgule.
+Dacă funcția lambda necesită mai mult de un parametru de intrare, aceștia trebuie mereu plasați între paranteze `()`.
+Când nu avem niciun parametru, adăugăm doar paranteze goale `()`.
+
 
 [/slide]
