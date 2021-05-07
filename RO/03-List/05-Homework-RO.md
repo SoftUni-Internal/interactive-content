@@ -1321,7 +1321,8 @@ Nu mai există elemente, deci trebuie să imprimăm suma tuturor elementelor eli
 ### Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| 5 10 6 3 5 | 31 |
+| 5 10 6 3 5 | 51 |
+| 2 | |
 | 4 | |
 | 1 | |
 | 1 | |
