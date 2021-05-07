@@ -70,15 +70,15 @@ Imprimați toate numerele din intervalul **1 ... n** și dacă sunt speciale sau
 [hints] 
 [hints]
 [hint]
-Create a **for-loop** from **1** to **n** (included).
+Creați o **buclă for** de la **1** la **n** (inclusiv).
 
 ```java
 for (int num = 1; num <= n; num++)
 ```
 [/hint] 
 [hint]
-Inside, declare a `sumOfDigits` variable, with its value set to **zero**.
-Then, create a `digits` variable, equal to `num`.
+Înăuntrul acesteia, declarați o variabilă numită `sumOfDigits`, a cărei valoare este setată la **zero**.
+După aceea, creați o variabilă numită `digits`, egală cu `num`.
 
 ```java
 int sumOfDigits = 0;
@@ -87,7 +87,7 @@ int digits = num;
 ```
 [/hint] 
 [hint]
-Increment the sum while `digits` is greater than zero.
+Incrementați suma cât timp `digits` este mai mare decât 0.
 
 ```java
 while (digits > 0)   {
@@ -96,18 +96,18 @@ while (digits > 0)   {
 }
 ```
 
-Use the remainder operator `%` to divide by ten.
-This will give you the last digit.
+Folosiți operatorul modulo `%` pentru a efectua împărțirea la 10.
+Această operație va prelua ultima cifră.
 [/hint] 
 [hint]
-After that, divide `digits` by ten to remove the last digit.
+După aceea, împărțiți `digits` la 10 pentru a elimina ultima cifră.
 
 ```java
 digits = digits / 10;
 ```
 [/hint] 
 [hint]
-Finally, use an **if-statement** to check each number:
+La final, utilizați o **instrucțiune if** pentru a verifica fiecare număr:
 
 ```java
 if (sumOfDigits == 5 || …)  {
@@ -117,7 +117,7 @@ if (sumOfDigits == 5 || …)  {
 }
 ```
 
-Print the corresponding output.
+Tipăriți ieșirea corespunzătoare.
 [/hint] 
 [/hints] 
 
