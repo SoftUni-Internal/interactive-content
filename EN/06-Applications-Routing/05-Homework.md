@@ -11,7 +11,7 @@ You can read the documentation [here](https://github.com/softuni-practice-server
 
 ## Implement Furniture Store
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Routing.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Routing-Resources-NEW.zip) **for this task.**
 
 You can make requests to the following endpoints: 
 
@@ -48,13 +48,13 @@ You need to create functionality for registering new users.
 
 By clicking on the `[Register]` button you have to load the registration form. 
 
-When the `[Register]` button on the form is clicked, you need to send a post request.
+When the `[Register]` button on the form is clicked, you need to send a POST request.
 
 If the registration is **successful**, you can **redirect to dashboard page**.
 
 ## Login User
 
-If the user **has already registered**, he can log in by using **the login form**. 
+If the user **has already registered**, they can log in by using **the login form**. 
 
 After a **successful** login, the user should be **redirected to dashboard page**. 
 
@@ -93,7 +93,7 @@ If the input is valid, you should **add the** "**is-valid**" class to the input 
 
 Retrieve the **id** from the **URL** and **display** the information. 
 
-If **the logged user is the creator**, the buttons `[Edit]` and `[Delete]` should be **visible and functional**.
+If **the logged-in user is the creator**, the buttons `[Edit]` and `[Delete]` should be **visible and functional**.
 
 [image assetsSrc="js-application-applocatopns-routing-furniture-store-3.png" /]
 
@@ -105,7 +105,7 @@ If **the logged user is the creator**, the buttons `[Edit]` and `[Delete]` shoul
 
 ## Update Furniture
 
-If the **logged-in user** is **the creator**, he can edit the furniture data. 
+If the **logged-in user** is **the creator**, they can edit the furniture data. 
 
 When the form is **loaded**, **all of the fields** must be **filled up** with the **information from the server**.
 
