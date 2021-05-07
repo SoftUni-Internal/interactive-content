@@ -1277,7 +1277,7 @@ public class Main {
 [task-description]
 ## Description
 A **top number** is an integer that holds the following properties:
-- Its sum of digits is divisible by 8, e.g. 8, 16, 88
+- Its sum of digits is divisible by 8, e.g. 8, 17, 88
 - Holds at least one odd digit, e.g. 232, 707, 87578
 
 Create a program to print all top numbers in range \[1…n\].
