@@ -1,12 +1,11 @@
 [slide hideTitle]
-# Ce Reprezintă Codificarea
+# Ce Reprezintă Codarea
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-3-4-What-is-coding-and-demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**A programa** înseamnă  **a transmite comenzi** calculatorului, de exemplu, *"să emită un sunet"*, *"să imprime ceva pe ecran"* sau *"să înmulțească două numere"*. 
+**Programarea** este procesul de **declarare a unor serii de comenzi ale calculatorului**, al căror scop este de a manipula și procesa numere sau text.
 
-
-Când comenzile se succed una după alta, ele se numesc **program de calculator**. 
+**Programele de calculator** reprezintă secvențe de asemenea comenzi. 
 
 Textul unui program de calculator se numește **cod de program** (sau **cod sursă**, sau chiar și mai scurt – **cod**).
 
@@ -32,9 +31,9 @@ System.out.println("I am coding");
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-7-computer-program-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Programele de calculator reprezintă **o secvență de comenzi** care sunt scrise în anumite **limbaje de programare**, precum C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go sau alt program cunoscut.
+Programele de calculator conțin **secvențe de comenzi** care sunt aplicabile în contextul unui anumit **limbaj de programare**. Câteva exemple populare de limbaje de programare sunt: C#, Java, JavaScript, Python, C++, PHP, C, Ruby, Swift, Go.
 
-Exemple de **programe de calculator** în Java:
+Aici aveți un program simplu care utilizează sintaxa Java. Acesta calculează aria unui pătrat și tipărește rezultatul:
 
 ```java live no-template
 public class Main {
@@ -46,30 +45,31 @@ public class Main {
 }
 ```
 
-Programul mai sus menționat definește o **clasă** `Main`, care are în ea o **metodă** `main()`, care deține o secvență de **3 comenzi**:
+Programul menționat mai sus definește o **clasă** `Main`, care conține o **metodă** `main()`. Înăuntrul acesteia se află o secvență de **3 comenzi**:
 
-- Declară și alocă o **variabilă**: `int size = 5;`
-- Calculează și **imprimă** o **expresie**: `System.out.println("Size = " + size);`
-- Calculează și **imprimă** o **expresie**: `System.out.println("Area = " + size * size);`
+- Prima comandă declară și inițializează o **variabilă**: `int size = 5;`
+- A doua comandă **imprimă** o **expresie**: `System.out.println("Size = " + size);`
+- A treia comandă calculează și **imprimă** o **expresie**: `System.out.println("Area = " + size * size);`
 
-Rezultatul (datele de ieșire) programului mai sus menționat este următorul:
+Rezultatul (datele de ieșire) programului menționat mai sus este următorul:
 ```
 Size = 5
 Area = 25
 ```
 
-Vom **explica detaliat cum se scrie programele în Java**, de ce avem nevoie să definim o **clasă** și de ce avem nevoie să definim o **metodă** `main()` mai târziu. 
+Definirea unei **clase** și a unei **metode** main() face parte din structura logică în Java care este necesară pentru funcționarea programului.
 
-Acum, să presupunem că limbajul Java ne cere întreg codul de mai sus pentru a executa o secvență de comenzi.
+Limbajul Java necesită întreg codul de mai sus pentru a executa o secvență de comenzi.
 
-Pentru a scrie comenzi, ar trebui să cunoaștem **sintaxa și semantica limbajului** cu care lucrăm, în cazul nostru – **Java**. 
+Pentru a scrie comenzi, trebuie să cunoaștem **sintaxa și semantica limbajului** cu care lucrăm, în cazul nostru – **Java**. 
 
 Drept urmare, ne vom familiariza cu sintaxa și semantica limbajului Java, și cu ale programării în general, învățând pas cu pas să scriem de la cele mai simple construcții de programare până la cele mai complexe.
+
 [/slide]
 
 [slide hideTitle]
 
-# Exemplu: Program de Calculator Complet
+# Exemplu: Program Complet de Calculator
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-8-complete-computer-program-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -82,7 +82,7 @@ Drept urmare, ne vom familiariza cu sintaxa și semantica limbajului Java, și c
 
 Programele de computer execută, de obicei, algoritmi. 
 
-**Algoritmii** sunt o **secvență de pași**, necesari pentru finalizarea unei anumite sarcini și pentru atingerea unui anumit rezultat așteptat, asemănător unei ”rețete”.
+**Algoritmii** sunt o **secvență de pași**, necesari pentru finalizarea unei anumite sarcini și pentru atingerea unui anumit rezultat așteptat, asemănător unei "rețete".
 
 De exemplu, dacă facem ouă prăjite, vom folosi următoarea rețetă (un algoritm): 
 - Se încălzește uleiul într-o tigaie
@@ -92,17 +92,19 @@ De exemplu, dacă facem ouă prăjite, vom folosi următoarea rețetă (un algor
 
 În mod similar, în programare, **programele de calculator execută algoritmi**: secvențe de comenzi, necesare pentru finalizarea unei anumite sarcini. 
 
-De exemplu, pentru a aranja o secvență de numere în ordine crescătoare, este nevoie de un algoritm, de ex. să găsești cel mai mic număr și să îl tipărești, apoi să găsești următorul cel mai mic număr din restul numerelor rămase și să îl tipărești, și să repeți acest lucru până când nu mai rămâne nici un număr.
+De exemplu, pentru a aranja o secvență de numere în ordine crescătoare, este nevoie de un algoritm. Cel mai simplu algoritm repetă aceeași acțiune: găsește cel mai mare număr și îl mută la sfârșitul secvenței, apoi găsește următorul cel mai mare număr și îl plasează înaintea celuilalt, funcționând până când algoritmul a procesat toate numerele din secvență.
 
-Pentru conveniență, atunci când creăm programe, când scriem coduri de programare, când executăm programe și în cazul oricăror alte operațiuni conexe programării, avem nevoie de **un mediu de dezvoltare**, cum este, de exemplu, IntelliJ IDEA.
+Atunci când creăm programe apelăm la ajutorul unui IDE, care este o abreviere pentru **Integrated Development Environment**, un exemplu fiind **IntelliJ IDEA**.
+
+Un IDE ne ajută să rulăm și să depanăm cod, evitând erorile de sintaxă. Mediile de dezvoltare integrate pot conține un număr mare de instrumente adiționale în funcție de scopul acestora.
 [/slide]
 
 [slide hideTitle]
-# Programele Java Bazate pe Consolă - Exemplu
+# Exemplu: Programe Java Bazate pe Consolă 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-9-console-based-java-program-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Să ne uităm puțin la un program simplu care citește ca date de intrare ale utilizatorului anumite sume de bani exprimate în dolari (USD) - un număr întreg, apoi îl convertește în Euro (EUR) făcând împărțirea sumei prin cursul de schimb Euro-dolar și tipărește rezultatul obținut.
+Să ne uităm puțin la un program simplu care citește ca date de intrare ale utilizatorului anumite sume de bani exprimate în dolari (USD) - un număr întreg, apoi îl convertește în Euro (EUR) înmulțind suma cu cursul de schimb valutar, și tipărește rezultatul obținut.
 
 Acesta este un program cu 3 comenzi consecutive:
 ```java

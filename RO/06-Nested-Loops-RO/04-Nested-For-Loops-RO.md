@@ -1,14 +1,14 @@
 [slide hideTitle]
-# Bucle Imbricate de Tip For
+# Bucle Imbricate For
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-23-25-nested-for-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Instrucțiuni care consta în câteva **bucle for** localizate **una în interiorul celeilalte**
+Acum vom observa instrucțiunile care constă în câteva **bucle for** imbricate.
 
-**Buclele imbricate de tip for** sunt utilizate pentru:
+**Buclele imbricate for** sunt utilizate pentru:
 
-* A executa o **acțiune**, care **execută** multiple **acțiuni**
-* A face calcule și variații mai **complexe** 
+* **A repeta o logică de cod** de un număr exact de ori
+* A realiza calcule și variații mai **complexe** 
 
 Sintaxa unei **bucle imbricate for în Java** este după cum urmează:
 ```java
@@ -21,7 +21,8 @@ for (variable initialization; condition; increment) {
   }
 }
 ```
-Acestea sunt 3 bucle `for` imbricate una în cealaltă:
+
+Acesta este un exemplu de 3 bucle `for` imbricate una în cealaltă:
 ```java live
 int n = 5;
 for (int i = 1; i <= n; i += 3) {

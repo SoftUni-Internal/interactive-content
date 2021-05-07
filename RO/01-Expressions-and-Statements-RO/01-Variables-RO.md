@@ -8,16 +8,16 @@
 De exemplu, tipurile de date pot fi: număr, literă, text (șir), dată, culoare, imagine, listă și altele. 
 
 Mai jos aveţi câteva exemple de tipuri de date:
-* numere întregi : 1, 2, 3, 4, -5, 20, …
-* numere zecimale: 0.5, 3.14, -1.5, …
-* caracter (simbol): 'a', 'b', 'c', '@', 'X', …
-* text (șir): "Hello", "Hi", "How are you?", …
-* zi a săptămânii: Monday, Tuesday, …, Sunday
-* data si ora: 14-June-1980 6:30:00, 25-Dec-2017 23:17:22
+* Integer - pentru stocarea numerelor întregi : 1, 2, 3, 4, -5, 20, …
+* Float - pentru stocarea numerelor zecimale: 0.5, 3.14, -1.5, …
+* Character - pentru stocarea literelor și a altor caractere: 'a', 'b', 'c', '@', 'X', …
+* String - pentru stocarea textului: "Hello", "Hi", "How are you?", …
+* Variabile pentru stocarea zilelor săptămânii (DayOfWeek): Monday, Tuesday, …, Sunday
+* Data și ora: 14-June-1980 6:30:00, 25-Dec-2017 23:17:22
 
-Să ne imaginăm, de asemenea, că **variabilele** sunt containere pentru date sau zone în memorie, iar datele pe care le stochează pot fi citite și modificate în orice moment.
+**Variabilele** pot fi vizualizate ca niște containere pentru date sau zone în memorie, iar datele pe care le stochează pot fi citite și modificate în orice moment.
 
-Practic, **variabilele** au un rol de:
+**Variabilele** au următoarele roluri:
    * **Stocarea** datelor
    * **Preluarea** datelor stocate
    * **Modificarea** datelor stocate
@@ -27,20 +27,18 @@ Practic, **variabilele** au un rol de:
    * Tip (al informațiilor păstrate)
    * Valoare (informații stocate)
 
-Fiecare dintre variabilele din Java are un nume, un tip și o valoare.
-
-Mai jos vedeţi cum am declarat o variabilă și o vom atribui cu o valoare în același timp:
+Putem declara o variabilă și să îi atribuim o valoare simultan:
 ```java
 String name = "Bob";
 boolean employed = true;
 int age = 35;
 ```
-Dacă vă imaginați variabilele ca casete care conțin informații, așa ar arăta:
+Dacă vă imaginați variabilele ca pe niște cutii care conțin informații, ar arăta așa:
 [image assetsSrc="expressions-and-statements-boxes.png" /]
 
-Variabilele pot fi stocate în programеlе:
-   * Memorie operațională - în execuție **stivă**
-   * Memorie dinamică - în **heap**
+Variabilele pot fi stocate în:
+   * Memoria operațională - în **stiva** de execuție
+   * Memoria dinamică - în **heap**
 [/slide]
 
 [slide hideTitle]

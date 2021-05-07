@@ -3,15 +3,15 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/RO/interactive-programming-basics-with-java-nested-loops-8-9-complex-loops-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Atunci când utilizați bucle for, bucla variabilă poate fi modificată în mai multe moduri.
+Atunci când utilizați bucle for, variabila buclei poate fi modificată în mai multe moduri.
 
-În plus, față de incrementare și decrementare, acestea pot fi modificate folosind o logică mai complexă, cum ar fi împărțirea și multiplicarea.
+În plus față de incrementare și decrementare, acestea pot fi modificate folosind o logică mai complexă, cum ar fi împărțirea și înmulțirea.
 
 De exemplu:
 ``` java
 for (int i = 0; i <= 10; i += 2) {
     System.out.println(i);
-    // Imprimați doar valorile pare ale i de la 0 până la 10
+    // Imprimați doar valorile pare ale lui i de la 0 până la 10
 }
 
 for (int i = 20; i > 0; i -= 5) {
@@ -51,7 +51,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program care imprimă numerele de la N până la 1.
+Scrieți un program care imprimă numerele de la **n** până la 1.
 
 Programul primește un număr `n` și imprimă numerele de la `n` până 1.
 
@@ -127,7 +127,7 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program care imprimă numerele de la  1 până la `n` cu pasul 3:
+Scrieți un program care imprimă numerele de la 1 până la `n` cu pasul 3:
 
 * Primește un număr `n`
 
@@ -215,13 +215,13 @@ public class Main {
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program care imprimă puterile pare ale 2:
+Scrieți un program care imprimă puterile pare ale lui 2:
 
 * Primește un număr `n`
 
-* Imprimă puterile pare ale  2 până la `2n`
+* Imprimă puterile pare ale lui 2, până la `n`
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |5| 1 4 16 |

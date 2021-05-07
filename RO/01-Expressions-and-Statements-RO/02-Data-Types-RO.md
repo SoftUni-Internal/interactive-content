@@ -1,17 +1,17 @@
 [slide hideTitle]
-# Tipuri de date
+# Tipuri de Date
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-8-10-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-În Java putem folosi tipurile de date pentru a defini variabilele după cum urmează:
+În Java putem folosi tipurile de date pentru a defini variabile cu ajutorul următoarelor cuvinte cheie:
 
-  * **Int** - un număr întreg: 1, 2, 3 
-  * **Double** – numere zecimale: -0.5, 3.14
-  * **Boolean** – valoare booleană : true, false
-  * **Char** – simbol: 'a', 'b', '#'
+  * **int** - număr întreg: 1, 2, 3 
+  * **double** – număr zecimal: -0.5, 3.14
+  * **boolean** – valoare booleană : true, false
+  * **char** – simbol: 'a', 'b', '#'
   * **String** - text: "Hello", "World"
 
-Odată ce o variabilă este definită, poate schimba valoarea sa de mai multe ori, dar nu poate schimba tipul de date mai târziu. 
+Odată ce o variabilă este definită, își poate schimba valoarea de mai multe ori, dar nu își poate schimba tipul de date.
 
 Variabilele pot conține numai date de tipul lor. 
 
@@ -23,43 +23,43 @@ char letter = 'A';
 float f = 4.2;
 ```
 
-Tipurile de date stabilesc intervale de valori cu caracteristici similare.
+Tipurile de date conțin valori cu caracteristici similare.
 
 Sunt caracterizate prin:
 
-  * **Nume** - E.g. boolean, int, String, DateTime
-  * **Dimensiune** (mutilizarea memoriei) - Exemplu: 4 bytes
+  * **Nume** - Exemplu: boolean, int, String, DateTime
+  * **Dimensiune** (utilizarea memoriei) - Exemplu: 4 bytes
   * **Valoare implicită** - Exemplu: 0
 [/slide]
 
 [slide hideTitle]
 # Convențiile de Denumire
 
-În programarea, o convenție de denumire este un set de **reguli** pentru alegerea numelui care trebuie utilizat pentru variabile.
+În programare, o **convenție de denumire** este un set de **reguli** utilizate pentru alegerea numelui unei variabile.
 
-In Java pentru convențiile de denumire a variabilelor sunt utilizate **"camelCase"**. 
+Convenția de denumire utilizată în Java se numește **"camelCase"**. 
 
-Există alte convenții de denumire care sunt folosite în diferite limbi, cum ar fi cazul pascal, cazul de șarpe.
+Există alte convenții de denumire care sunt folosite în diferite limbaje. Câteva dintre acestea sunt: PascalCase, snake_case.
 
-**Camel case** combină cuvintele prin:
-* Scrierea cu majuscule a tuturor cuvintelor care urmează primului cuvânt
-* Eliminarea spațiului
+**camelCase** combină cuvintele prin:
+* Scrierea cu majuscule a tuturor cuvintelor care urmează după primul cuvânt
+* Eliminarea spațiilor dintre cuvinte
 ```java
 int userLoginCount;
 ```
 
-**Pascal case** combină cuvintele prin:
-* Scrierea cu majuscule a fiecărui cuvânt împreună cu primul
-* Eliminarea spațiului:
+**PascalCase** combină cuvintele prin:
+* Scrierea cu majuscule a fiecărui cuvânt, inclusiv primul cuvânt
+* Eliminarea spațiilor dintre cuvinte
 ```java
 int UserLoginCount;
 ```
 
-**Snake-case** este o altă convenție de denumire, care separă cuvintele cu:
-* Un caracter de subliniere (_)
-* Fara spații
-* Litera inițială a fiecărui element de obicei cu litere mici în compus
-* Prima literă mai mare sau mică
+**snake_case** este o altă convenție de denumire, cu următoarele caracteristici:
+* Separarea cuvintelor prin underscore (_)
+* Lipsa spațiilor între cuvinte
+* De obicei prima literă a fiecărui cuvânt este o minusculă
+
 ```java
 int users_count;
 String first_name;
