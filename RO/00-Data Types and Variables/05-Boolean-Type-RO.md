@@ -68,10 +68,58 @@ Imprimați toate numerele din intervalul **1 ... n** și dacă sunt speciale sau
 |  | 15 -> False |
  
 [hints] 
-[hint] 
-Pentru a calcula suma cifrelor unui număr dat **num**, puteți repeta următorii pași: însumați ultima cifra **(num % 10)** și eliminați-o **(num = num / 10)** până ce **num** ajunge la **0**.
-[/hint] 
-[/hints]
+[hints]
+[hint]
+Creați o **buclă for** de la **1** la **n** (inclusiv).
+
+```java
+for (int num = 1; num <= n; num++)
+```
+[/hint] 
+[hint]
+Înăuntrul acesteia, declarați o variabilă numită `sumOfDigits`, a cărei valoare este setată la **zero**.
+După aceea, creați o variabilă numită `digits`, egală cu `num`.
+
+```java
+int sumOfDigits = 0;
+
+int digits = num;
+```
+[/hint] 
+[hint]
+Incrementați suma cât timp `digits` este mai mare decât 0.
+
+```java
+while (digits > 0)   {
+  sumOfDigits += digits % 10;
+
+}
+```
+
+Folosiți operatorul modulo `%` pentru a efectua împărțirea la 10.
+Această operație va prelua ultima cifră.
+[/hint] 
+[hint]
+După aceea, împărțiți `digits` la 10 pentru a elimina ultima cifră.
+
+```java
+digits = digits / 10;
+```
+[/hint] 
+[hint]
+La final, utilizați o **instrucțiune if** pentru a verifica fiecare număr:
+
+```java
+if (sumOfDigits == 5 || …)  {
+   // Print True…
+} else  {
+   // Print False…
+}
+```
+
+Tipăriți ieșirea corespunzătoare.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
