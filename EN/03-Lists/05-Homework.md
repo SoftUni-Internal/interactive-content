@@ -1326,7 +1326,8 @@ There are no elements left, so we print the sum of all removed elements:
 ### Example
 | **Input** | **Output** |
 | --- | --- |
-| 5 10 6 3 5 | 31 |
+| 5 10 6 3 5 | 51 |
+| 2 | | 
 | 4 | |
 | 1 | |
 | 1 | |
