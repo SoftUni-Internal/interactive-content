@@ -1,4 +1,4 @@
-# Problem 3: Energy Booster
+# Problema 3: Energy Booster
 [slide hideTitle]
 
 # Energy Booster
@@ -23,17 +23,19 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-Începe sezonul de urcare a vârfurilor alpine și toți alpiniștii se aprovizionează cu bare energetice pentru alpinism.
+Începe sezonul de urcare a vârfurilor alpine și toți alpiniștii se aprovizionează cu batoane energizante pentru expediție.
 
-Compania oferă **mici** și **mari** tăieturi cu **2 buc.** și **5 buc.** bare energetice, prețul unei bare depinde de fructul din care este fabricat.
+Compania oferă pachete **mici** și pachete **mari**, care conțin două sau cinci batone energizante.
 
-În funcție de **dimensiunea tăieturii**, prețul pe numărul unei bare energetice este diferit.
+Prețul unui baton variază în funcție de aromă.
 
-De pe consolă se citesc fructele, mărimea pachetului `(small) 2 pcs.` sau `(big) 5 pcs.`.
+Tipul de pachet (mic sau mare) afectează de asemenea prețul unui baton.
 
-De asemenea, veți primi **numărul de tăieri care sunt comandate.**
+Aroma și tipul pachetului sunt citite de pe consolă.
 
-Scrieți un program care **calculează suma de plătit** pentru comandă.
+De asemenea, veți primi **numărul de pachete comandate.**
+
+Scrieți un program care **calculează suma care trebuie plătită** pentru comandă.
 
 
 | \- | Watermelon  | Mango | Pineapple   | Raspberry |
@@ -43,31 +45,31 @@ Scrieți un program care **calculează suma de plătit** pentru comandă.
 
 Pentru comenzi:
 
-- De la **$400 până la $1.000 inclusiv, există o reducere de 15%**.
+- De la **$400 până la $1000 inclusiv există o reducere de 15%**
 
-- Peste **$1.000 există o reducere de 50%**.
+- Peste **$1000 există o reducere de 50%**
 
 ## Intrare
 
 Datele de intrare sunt date sub forma unei **matrice care conține 3 elemente:**
 
-- **Primul Element:**
+- **Primul element:**
 
-Aroma, un text ce poate lua următoarele forme: **Watermelon**, **Mango**, **Pineapple** sau **Raspberry**
+Aroma - text care poate avea următoarele valori: **Watermelon**, **Mango**, **Pineapple** sau **Raspberry**
 
-- **Al doilea Element:**
+- **Al doilea element:**
 
-Dimensiunea feliei, un text ce poate lua următoarele forme: **small** sau **big**
+Tipul pachetului - text care poate avea următoarele valori: **small** sau **big**
 
-- **Al treilea Element:**
+- **Al treilea element:**
 
-Numărul de felii comandate: un număr întreg din intervalul \[1 … 10000\]
+Numărul de pachete comandate - număr întreg din intervalul \[1 … 10000\]
 
 ## Ieșire
 
 **O linie** este imprimată pe consolă:
 
-- **Prețul de plătit**, **formatat la a doua cifră după punctul zecimal**, în următorul format: 
+- **Suma care trebuie plătită**, **formatată la a doua cifră după punctul zecimal**, în următorul format: 
 
 "\{**price**\} **dollars.**"
 
@@ -81,13 +83,13 @@ Numărul de felii comandate: un număr întreg din intervalul \[1 … 10000\]
  
 [hints]
 [hint]
-Calculați prețul individual al unui pachet de batoane proteice.
+Calculați prețul individual al unui pachet de batoane energizante.
 [/hint]
 [hint]
- Calculați prețul total și verificați dacă există o reducere.
+Calculați prețul total și verificați dacă există o reducere.
 [/hint]
 [hint]
-Dacă există o anumită reducere, scădeți acea sumă din prețul total și printați datele de ieșire corespunzătoare.
+Dacă există o reducere, scădeți acea sumă din prețul total și tipăriți datele de ieșire corespunzătoare.
 [/hint]
 [/hints]
 

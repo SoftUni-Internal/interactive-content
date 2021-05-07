@@ -1,4 +1,4 @@
-# Problem 4: Food for Pets
+# Problema 4: Food for Pets
 [slide hideTitle]
 
 # Food for Pets
@@ -24,29 +24,31 @@ function adapter(input, code) {
 # Descriere
 Annie are două animale de companie - un câine și o pisică.
 
-Scrieți un program care să compileze **statistici** despre hrana pentru animale de companie pentru un anumit număr de zile.
+Scrieți un program care să compileze **statistici** depsre hrana pentru animalele de companie, pentru un anumit număr de zile.
 
 În fiecare zi, câinele și pisica mănâncă o **cantitate diferită** din hrana lor obișnuită.
 
-La fiecare**trei zile primesc un premiu**- biscuiti.
+La fiecare **trei zile primesc un premiu** - biscuiți.
 
-Cantitatea de biscuiti este **10%** din totalul alimentelor consumate pentru ziua respectivă.
+Cantitatea de biscuiți reprezintă **10%** din totalul hranei consumate în ziua respectivă.
 
-Programul dvs. ar trebui să tipărească **statistici despre cantitatea de biscuiti consumati**.
+Programul vostru trebuie să tipărească **statistici despre hrana consumată**:
 
-- Ce **procentaj iese din cantitatea inițială** din totalul alimentelor consumate.
+- Ce cantitate de biscuiți a fost consumată 
 
-- Ce **procentaj iese din mâncarea mâncata de câine** și cât a mâncat pisica.
+- Procentul de hrană consumată din cantitatea totală
+
+- Procentul de hrană consumată de câine, respectiv de pisică (din cantitatea totală de hrană consumată)
 
 
 ## Intrare
 **Datele de intrare sunt introduse sub forma unei matrice de numere:**
 
-- **Primul Număr:**
+- **Primul număr:**
 
 Numărul de zile: un număr din intervalul \[1 ... 30\]
 
-- **Al doilea Număr:**
+- **Al doilea număr:**
 
 Cantitatea totală de mâncare: un număr din intervalul \[0.00 ... 10000.00\]
 
@@ -54,7 +56,7 @@ Cantitatea totală de mâncare: un număr din intervalul \[0.00 ... 10000.00\]
 
 - Cantitatea de mâncare consumată de către câine: un număr din intervalul \[10 ... 500\]
 
-- Cantitatea de mâncare consumată de către pisică: un număr aflat în intervalul \[10 ... 500\]
+- Cantitatea de mâncare consumată de către pisică: un număr din intervalul \[10 ... 500\]
 
 
 ## Ieșire
@@ -69,9 +71,9 @@ Imprimați patru linii pe consolă:
 
 - "\{**percentage of food eaten by the cat**\}**% eaten from the cat.**"
 
-Cantitatea de **biscuiti consumati trebuie rotunjită la cel mai apropiat număr întreg.**
+Cantitatea de **biscuiți consumați trebuie rotunjită la cel mai apropiat număr întreg.**
 
-Procentul de alimente **trebuie formatat la a doua cifră după punctul zecimal.**
+Procentul de hrană consumată **trebuie formatat la a doua cifră după punctul zecimal.**
 
 ## Exemplu
 
@@ -93,12 +95,12 @@ Procentul de alimente **trebuie formatat la a doua cifră după punctul zecimal.
  
 [hints]
 [hint]
-Țineți cont de faptul că, odată la 3 zile, aceștia primesc un premiu.
+Țineți cont de faptul că, odată la 3 zile, animalele de companie primesc un premiu.
 [/hint]
 [hint]
-Printați numărul total de fursecuri care au fost mâncate. 
+Tipăriți cantitatea totală de biscuiți cosumați. 
 
-Determinați procentul de mâncare consumată din cantitatea totală de mâncare, atât de către câine, cât și de către pisică.
+Determinați procentul de hrană consumată din cantitatea totală de hrană, cât și procentul de hrană consumată de câine, respectiv de pisică.
 [/hint]
 [/hints]
 
