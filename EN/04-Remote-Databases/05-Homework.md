@@ -3,10 +3,14 @@
 [slide hideTitle]
 # Problem: Messenger
 
-Download the **resources** for these tasks [here](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Remote-Databases-Resources-New.zip).
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/RD-01.Messenger.zip) **for this task**.
 
 ## Working with Remote Data
-For the solution of some of the following tasks, you will need to use an up-to-date version of the local REST service, provided in the lesson’s resources archive. You can [read the documentation here](https://github.com/softuni-practice-server/softuni-practice-server).
+For the solution of some of the following tasks, you will need to use an up-to-date version of the local REST service.
+
+**Download it by clicking** [here](https://videos.softuni.org/resources/javascript/javascript-applications/RD-server.zip).
+
+You can [read the documentation here](https://github.com/softuni-practice-server/softuni-practice-server).
 
 ## Your Task
 Create a JavaScript application that **records** and **displays** messages. 
@@ -43,7 +47,7 @@ If you click on the \[**Refresh**\] **button** you should **get all** messages w
 [slide hideTitle]
 # Problem: Phonebook
 
-**Use the resources from the previous task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/RD-02.Phonebook.zip) **for this task**.
 
 Create a JavaScript program that can **load**, **create** and **delete** entries from a **phonebook**. 
 
@@ -89,7 +93,7 @@ The **URL** to which your program should make requests is: [http://localhost:303
 [slide hideTitle]
 # Problem: Students
 
-**Use the resources from the previous task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/RD-03.Students.zip) **for this task**.
 
 Your task is to implement а functionality for creating and listing students from a database. 
 
@@ -120,7 +124,7 @@ The URL for this task is: `http://localhost:3030/jsonstore/collections/students`
 [slide hideTitle]
 # Problem: Book Library
 
-**Use the resources from the previous task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/RD-04.Book-library.zip) **for this task**.
 
 Your task is to implement the CRUD operations on a virtual book library. 
 
@@ -184,7 +188,7 @@ To delete a book, send a **DELETE request** to: `http://localhost:3030/jsonstore
 
 # Problem: Fisher Game
 
-**Use the resources from the previous task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/RD-05.Fisher-Game.zip) **for this task**.
 
 Your task is to implement the CRUD operations and a functionality for User Authentication.
 
