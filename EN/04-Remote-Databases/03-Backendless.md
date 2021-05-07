@@ -6,15 +6,15 @@
 
 **Backendless** is a mobile Backend-as-a-Service (**mBaaS**) platform.
 
-Click [here](https://develop.backendless.com/registration) to **sign up**, or [here](https://develop.backendless.com/login) - to **login**.
+Click [here](https://develop.backendless.com/registration) to **sign up**, or [here](https://develop.backendless.com/login) - to **log in**.
 
 Once you are authenticated, you will be prompted to **create a new application**.
 
 Choose a fitting **name** and a **hosting zone**.
 
-The location of the hosting zone is important - it must be as **close as possible** to your main user base.
+The location of the hosting zone is important - it has to be as **close as possible** to your main user base.
 
-You can **optionally** choose a **blueprint**, if you have a specific **type of service** in mind.
+You can **optionally** choose a **blueprint** if you have a specific **type of service** in mind.
 
 To view the Backendless **REST API** Documentation, click [here](https://backendless.com/docs/rest/).
 
@@ -34,13 +34,13 @@ To get your **REST API Key**, head over to **Data** \> **Rest Console**.
 
 Copy your link from the "**Request URL**" textbox.
 
-To test user **registration**, make a POST request in Postman.
+To test a user **registration**, make a POST request in Postman.
 
 The **URL** should look something like this:
 
 `https://api.backendless.com/application-id/REST-api-key/users/register`
 
-The body of the request **must** include an **email** and **password**:
+The body of the request **has to** include an **email** and a **password**:
 
 ```js
 {  
@@ -53,7 +53,7 @@ The body of the request **must** include an **email** and **password**:
 
 `objectId` is **optional** and used only for [guest logins](https://backendless.com/docs/rest/users_guest_login.html).
 
-Test the **login** and **logout** using the following **URLs**:
+Test the **login** and the **logout** using the following **URLs**:
 
 - Login - **POST**: `https://api.backendless.com/application-id/REST-api-key/users/login`
 
