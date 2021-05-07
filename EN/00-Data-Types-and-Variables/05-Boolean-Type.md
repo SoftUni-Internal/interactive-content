@@ -68,12 +68,58 @@ For all numbers in range **1…n**, print the number. If it is special or not - 
 |  | 15 -> False |
  
 
-[hints] 
-[hint] 
-To calculate the sum of digits of a given number **num**, you might repeat the following:
-Sum the last digit **(num % 10)** and remove it **(num = num / 10)** until **num** reaches **0**.
-[/hint] 
-[/hints]
+[hints]
+[hint]
+Create a **for-loop** from **1** to **n** (included).
+
+```java
+for (int num = 1; num <= n; num++)
+```
+[/hint] 
+[hint]
+Inside, declare a `sumOfDigits` variable, with its value set to **zero**.
+Then, create a `digits` variable, equal to `num`.
+
+```java
+int sumOfDigits = 0;
+
+int digits = num;
+```
+[/hint] 
+[hint]
+Increment the sum while `digits` is greater than zero.
+
+```java
+while (digits > 0)   {
+  sumOfDigits += digits % 10;
+
+}
+```
+
+Use the remainder operator `%` to divide by ten.
+This will give you the last digit.
+[/hint] 
+[hint]
+After that, divide `digits` by ten to remove the last digit.
+
+```java
+digits = digits / 10;
+```
+[/hint] 
+[hint]
+Finally, use an **if-statement** to check each number:
+
+```java
+if (sumOfDigits == 5 || …)  {
+   // Print True…
+} else  {
+   // Print False…
+}
+```
+
+Print the corresponding output.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
