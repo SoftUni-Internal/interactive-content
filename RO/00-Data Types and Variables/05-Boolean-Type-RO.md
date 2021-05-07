@@ -66,8 +66,7 @@ Imprimați toate numerele din intervalul **1 ... n** și dacă sunt speciale sau
 |  | 13 -> False |
 |  | 14 -> True |
 |  | 15 -> False |
- 
-[hints] 
+
 [hints]
 [hint]
 Creați o **buclă for** de la **1** la **n** (inclusiv).
