@@ -1281,6 +1281,7 @@ public class Main {
 Un **număr de top** este un număr întreg cu următoarele proprietăți:
 - Suma cifrelor sale este divizibilă cu 8, de exemplu 8, 17, 88
 - Are cel puțin o cifră impară, de exemplu 232, 707, 87578
+- Câteva exemple de numere de top sunt: 17, 161, 251, 4310, 123200
 
 Creați un program care afișează toate numerele de top din intervalul \[1…n\].
 
