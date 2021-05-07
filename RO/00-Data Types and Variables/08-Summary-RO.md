@@ -16,8 +16,8 @@
   ```
 
   
-  - Tipuri de numere:
-     - reprezintă  numerele
+  - Tipuri de date numerice:
+     - reprezintă numere
      - au intervale specifice pentru fiecare tip
 
     ```java
@@ -28,8 +28,8 @@
     double myNum = 19.99;
     ```
 
-  - Șiruri și tipuri de text:
-     - reprezentă textul
+  - Tipul de date String și text:
+     - conțin text
      - șirurile sunt secvențe de caractere Unicode
 
 
@@ -41,15 +41,15 @@
     String text = "Example";
     ```
 
-  - Conversia tipului: implicită și explicită
-  - Tipul boolean poate avea doar două valori posibile0 - **true** sau **false**
+  - Conversia tipului poate fi implicită și explicită
+  - Tipul boolean poate avea doar două valori posibile - **true** sau **false**
 
-  ## În lecția următoare, veți învăța:
+  ## În lecția următoare veți învăța:
    - Matrice
    - Citirea matricelor de pe consolă
-     - bucla `For și `String.split()`
+      - utilizarea buclei `for` și a metodei `String.split()` 
    - Imprimarea matricelor pe consolă
-   - Bucla Foreach
+   - Bucla for-each
 [/slide]
 
 

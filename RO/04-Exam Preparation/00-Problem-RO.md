@@ -13,7 +13,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -21,32 +21,32 @@ public class Main {
 [task-description]
 # Descriere
 
-Sunt **3 angajați care lucrează** la recepție toată ziua.
+Există **3 angajați care lucrează** la recepție.
 
-Fiecare dintre ei poate gestiona **un număr diferit de persoane pe oră**.
+Fiecare dintre ei poate gestiona **un număr diferit de persoane într-o oră**.
 
-Sarcina dvs. este să **calculați cât timp va dura pentru a răspunde la toate întrebările** ale unui număr dat de persoane.
+Sarcina voastră este să **calculați de cât timp au nevoie angajații pentru a răspunde la toate întrebările**.
 
-Mai întâi, veți primi **3 rânduri cu numere întregi**, reprezentând **numărul de persoane pe care fiecare angajat le poate ajuta pe zi**.
+Mai întâi, veți primi **3 rânduri cu numere întregi**, reprezentând **numărul de persoane pe care fiecare angajat le poate ajuta într-o oră**.
 
-Pe linia următoare **veți primi numărul total de persoane** numărate ca un singur întreg.
+Pe linia următoare **veți primi numărul total de persoane** (număr întreg).
 
-**La fiecare patru ore, toți angajații au o pauză de o oră** înainte de a începe din nou să lucreze.
+**La fiecare trei ore, toți angajații au o pauză de o oră** înainte de a începe din nou să lucreze.
 
-**Calculați timpul necesar pentru a răspunde la întrebările tuturor persoanelor** și **imprimați-l în următorul format**: 
+**Calculați timpul necesar pentru a răspunde la toate întrebările** și **imprimați rezultatul în următorul format**: 
 
 "**Time needed:** \{**time**\}**h.**"
 
-## Intrare / Limitări 
-- Pe **primele 3** linii - **eficiența** fiecărui angajat -  **numere întregi**
-- Pe a **4-a** linie - numărul de persoane- un **număr întreg**
+## Intrare / Constrângeri
+- Pe **primele 3** linii - **eficiența** fiecărui angajat - **numere întregi**
+- Pe a **4-a** linie - numărul de persoane - un **număr întreg**
 
 ## Ieșire
 - Imprimați o **singură linie**:
 
 "**Time needed:** \{**time**\}**h.**"
 
-## Exemplu 1
+## Exemplul 1
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 5 | Time needed: 2h. |
@@ -56,17 +56,17 @@ Pe linia următoare **veți primi numărul total de persoane** numărate ca un s
 
 [hints]
 [hint]
-Toți angajații pot răspunde la 15 persoane pe oră.
+Angajații pot ajuta 15 persoane într-o oră.
 [/hint] 
 [hint]
-După prima oră au mai rămas 5 persoane pentru a primi un răspuns.
+După prima oră au mai rămas 5 persoane care trebuie să primească un răspuns.
 [/hint] 
 [hint]
-Toți oamenii vor primi răspuns în a doua oră.
+Toate persoanele vor primi un răspuns după 2 ore.
 [/hint] 
 [/hints] 
 
-## Exemplu 2
+## Exemplul 2
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 1 | Time needed: 10h. |
@@ -76,23 +76,23 @@ Toți oamenii vor primi răspuns în a doua oră.
 
 [hints]
 [hint]
-Toți angajații pot răspunde la 6 persoane pe oră.
+Angajații pot ajuta 6 persoane într-o oră.
 [/hint] 
 [hint]
-În primele 3 ore au răspuns 6 \* 3 = 18 persoane.
-Atunci au o pauză de o oră.
+În primele 3 ore ajută 18 persoane (6 \* 3).
+După aceea, aceștia au o pauză de o oră.
 [/hint] 
 [hint]
-După următoarele 3 ore sunt (18 + 6 \* 3 = 36) de persoane cu răspuns.
-După pauză timp de o oră, există doar 9 persoane care așteaptă un răspuns.
+După următoarele 3 ore există 36 de persoane care au primit un răspuns (18 + 6 \* 3).
+După încă o pauză de o oră, există doar 9 persoane care așteaptă un răspuns.
 [/hint] 
 [hint]
-Ora 10 - toate întrebările oamenilor au primit un răspuns.
+După 10 ore, toate persoanele au primit un răspuns.
 [/hint] 
 [/hints] 
 
 
-## Exemplu 3
+## Exemplul 3
 |**Intrare**|**Ieșire**|
 | --- | --- |
 | 3 | Time needed: 5h. |

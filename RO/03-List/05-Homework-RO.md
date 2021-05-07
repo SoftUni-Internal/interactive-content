@@ -1,4 +1,4 @@
-# Temă Pentru Acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 # Problemă: Train
@@ -17,16 +17,17 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Pe prima linie vi se va oferi o **listă de vagoane** (numere întregi).
+Pe prima linie veți primi o **listă cu vagoane** (numere întregi).
 
-Fiecare **întreg** reprezintă **numărul de pasageri** care sunt în prezent în fiecare vagon.
+Fiecare **număr întreg** reprezintă **numărul de pasageri** care se află în acel vagon.
 
-Pe linia următoare veți obține **capacitatea maximă a fiecărui vagon** reprezentat ca un **singur număr întreg**.
+Pe linia următoare veți primi **capacitatea maximă a fiecărui vagon**, reprezentată de un **număr întreg**.
 
-**Până**veți primi "**end**" vi se vor oferi două tipuri de intrări:
+**Până** la primirea comenzii "**end**", vi se vor oferi două tipuri de intrări:
 - "**Add** \{**passengers**\}"  - adaugați un vagon la final cu numărul dat de pasageri
-- "\{**passengers**\}" - **găsiți un vagon existent** care să se potrivească tuturor pasagerilor (începând cu primul vagon)
-La sfârșit **tipăriți** starea finală a trenului (toate vagoanele separate printr-un spațiu).
+- "\{**passengers**\}" - **găsiți un vagon existent** care să găzduiască numărul de pasageri introdus (începând cu primul vagon)
+
+La sfârșit, **tipăriți** starea finală a trenului (toate vagoanele separate printr-un spațiu).
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -258,14 +259,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program, care **citește o listă de numere întregi** de pe consolă și primește **comenzi**, care **manipulează lista**.
+Scrieți un program care **citește o listă de numere întregi** de pe consolă și primește **comenzi** care **manipulează lista**.
 
-Programul dvs. poate primi următoarele **comenzi**:
-- "**Delete** \{**element**\}" - șterge toate elementele din matrice, care sunt egale cu elementul dat
-- "**Insert** \{**element**\} \{**position**\}" - introduce elementul și poziția dată
-Ar trebui să **opriți programul** când primiți comanda "**end**". 
+Programul vostru poate primi următoarele **comenzi**:
+- "**Delete** \{**element**\}" - ștergeți toate elementele din matrice care sunt egale cu elementul dat
+- "**Insert** \{**element**\} \{**position**\}" - introduceți elementul în poziția dată
 
-Imprimați toate numerele din matrice **separate cu un singur spațiu alb**.
+Trebuie să **opriți programul** când primiți comanda "**end**". 
+
+Imprimați toate numerele din matrice, **separate printr-un spațiu**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -426,21 +428,22 @@ public class Main {
 [task-description]
 
 ## Descriere
-Creați un program care ține evidența oaspeților care merg la o petrecere în casă.
+Creați un program care ține evidența invitaților care merg la o petrecere care are loc la cineva acasă.
 
 Pe prima linie de intrare veți primi **numărul comenzilor**.
 
-Pe liniile următoare veți primi câteva dintre următoarele intrări:
+Pe liniile următoare veți primi următoarele intrări:
+
 "\{**name**\} **is going!**"
 
-- Trebuie să **adăugați persoana dacă nu se află pe lista de invitați**.
-- Dacă **persoana este pe listă** tipăriți pe consolă următoarele: "\{**name**\} **is already in the list!**"
+- Trebuie să **adăugați persoana dacă nu se află pe lista de invitați**
+- Dacă **persoana este pe listă** tipăriți pe consolă următorul mesaj: "\{**name**\} **is already in the list!**"
 
 
 "\{**name**\} **is not going!**"
 
-- Trebuie să eliminați persoana dacă se află în listă.
-- Dacă nu, tipăriți pe consolă: "\{**name**\} **is not in the list!**"
+- Trebuie să eliminați persoana dacă se află pe listă
+- Dacă nu, tipăriți următorul mesaj pe consolă: "\{**name**\} **is not in the list!**"
 
 
 La sfârșitul programului, tipăriți toți invitații, fiecare pe o nouă linie.
@@ -663,18 +666,18 @@ public class Main {
 ## Descriere
 Veți primi o listă de numere **întregi** pe prima linie de intrare.
 
-Până când primiți "End" vi se vor da **operațiuni** pe care trebuie să le aplicați pe listă.
+Până la primirea comenzii "**End**" vi se vor da **operații** pe care trebuie să le efectuați asupra listei.
 
 **Comenzile posibile** sunt:
 - "**Add** \{**number**\}" - adăugați un număr la sfârșit
-- "**Insert** \{**number**\} \{**index**\}" - introduceți numărul la indexul dat
-- "**Remove** \{**index**\}" - eliminarea numărul de la indexul dat
-- "**Shift left** \{**count**\}" - primul număr devine ultimul de **n număr de ori**
-- "**Shift right** \{**count**\}" - ultimul număr devine primul de **n număr de ori**
+- "**Insert** \{**number**\} \{**index**\}" - introduceți numărul la indicele dat
+- "**Remove** \{**index**\}" - eliminați numărul corespunzător indicelui dat
+- "**Shift left** \{**count**\}" - primul număr devine ultimul; repetați această operație de numărul de ori indicat
+- "**Shift right** \{**count**\}" - ultimul număr devine primul; repetați această operație de numărul de ori indicat
 
-**Notă**: este posibil ca indexul dat să fie în afara limitelor matricei. 
+**Notă**: este posibil ca indicele dat să fie în afara limitelor listei. 
 
-În acest caz, tipăriți "**Invalid index**"
+În acest caz, tipăriți "**Invalid index**".
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -919,13 +922,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește **o secvență de numere și numărul special al bombei** cu o anumită putere.
+Scrieți un program care citește **o secvență de numere și un număr special care corespunde unei bombe** și care are o anumită putere.
 
-Sarcina dvs. este să **detonați fiecare apariție a numărului special de bombă** și în funcție de puterea sa **vecinii săi din stânga și din dreapta**.
+Sarcina voastră este să **detonați fiecare apariție a numărului special** și în funcție de puterea sa **numerele din stânga și din dreapta sa**.
+
+Puterea bombei se referă la câte numere adiacente vor fi eliminate, oricare ar fi valoarea acestora.
 
 Detonările se efectuează **de la stânga la dreapta** și toate numerele detonate **dispar**.
 
-În cele din urmă **tipăriți suma elementelor rămase** din secvență.
+La final, **tipăriți suma elementelor rămase** în secvență.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -935,10 +940,10 @@ Detonările se efectuează **de la stânga la dreapta** și toate numerele deton
 
 [hints]
 [hint]
-Numărul special este 4 cu puterea 2.
+Numărul special este 4 și are puterea 2.
 [/hint] 
 [hint]
-După detonare rămâne următoarea secvență \[1, 2, 9\] cu suma de 12.
+După detonare rămâne următoarea secvență: \[1, 2, 9\]. Suma numerelor este 12.
 [/hint] 
 [/hints] 
 
@@ -950,13 +955,13 @@ După detonare rămâne următoarea secvență \[1, 2, 9\] cu suma de 12.
 
 [hints]
 [hint]
-Numărul special este 9 cu puterea 3.
+Numărul special este 9 și are puterea 3.
 [/hint] 
 [hint]
-După detonare rămâne următoarea secvență \[1, 4\], cu suma de 5.
+După detonare rămâne următoarea secvență: \[1, 4\], iar suma numerelor este 5.
 [/hint] 
 [hint]
-Deoarece 9 are doar 1 vecin din dreapta, eliminăm doar numărul 9 (eliminăm doar un număr, în loc de 3).
+Deoarece 9 are doar 1 vecin în dreapta, eliminăm doar numărul 1 (eliminăm doar un număr, în loc de 3).
 [/hint] 
 [/hints] 
 
@@ -1057,21 +1062,21 @@ public class Main {
 [task-description]
 
 ## Descriere
-Vi se vor oferi două mâini de cărți, care vor fi **numere întregi**.
+Vi se vor oferi două mâini de cărți, care vor fi reprezentate de **numere întregi**.
 
-Să presupunem că sunt **doi jucători**.
+Să presupunem că există **doi jucători**.
 
-Trebuie să **aflați** mâna câștigătoare și, respectiv, câștigătorul.
+Trebuie să **aflați** mâna câștigătoare și câștigătorul.
 
-Începeți de la începutul ambelor mâini. **Comparați** cărțile din prima mâna cu cărțile din cea de-a doua mână.
+Începeți de la începutul ambelor pachete deținute de jucători. **Comparați** cărțile din pachetul primului jucător cu cărțile din pachetul celui de-al doilea jucător.
 
-Jucătorul, **care are cartea cea mai mare**, ia ambele cărți și le pune în partea din spatele mâinii - cartea celui de-al doilea jucător este ultima, iar cartea primei persoane (cea câștigătoare) este înaintea ei) și jucătorul cu cartea mai mică trebuie să scoată cartea de pe puntea sa de cărți.
+Jucătorul **care are cartea cea mai mare la iterația curentă** ia ambele cărți și le pune la finalul pachetului din mână sa - cartea celui de-al doilea jucător este ultima, iar cartea primei persoane (cea câștigătoare) este înaintea ei. Jucătorul cu cartea mai mică trebuie să scoată cartea din pachetul său de cărți.
 
-Dacă ambele cărți ale jucătorilor **au aceleași valori** - nimeni nu câștigă, iar cele două cărți trebuie scoase de pe punți.
+Dacă cărțile jucătorilor **au aceeași valoare** nu există niciun câștigător, iar cele două cărți trebuie scoase din pachete.
 
-**Jocul s-a terminat**, când una dintre punți rămâne **fără nicio carte**.
+**Jocul se termină** când unul dintre jucători rămâne **fără nicio carte**.
 
-Trebuie să **tipăriți câștigătorul pe consolă** și **suma cărților** stânga: "\{**First/Second**\} **player wins! Sum:** \{**sum**\}".
+Trebuie să **tipăriți câștigătorul pe consolă** și **suma cărților rămase în pachet**: "\{**First/Second**\} **player wins! Sum:** \{**sum**\}".
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1158,13 +1163,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program pentru a **adăuga mai multe matrice** de numere.
+Creați un program care **alătură mai multe matrice** de numere.
 
 - **Matricele** sunt **separate** prin '\|'
 
-- **Valorile** sunt **separate** prin  spații (' ', unul sau mai multe)
+- **Valorile** sunt **separate** prin spații (' ', unul sau mai multe)
 
-- Ordonați matricele de la ultima la prima și valorile lor de la stânga la dreapta
+- Începeți cu matricea din **dreapta** (mergând spre cea din **stânga**) și plasați matricele într-o matrice nouă în ordinea stabilită
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1245,38 +1250,38 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-În Pokemon Don't Go, când vă duceți  la un anumit pokemon, cei mai apropiați de voi, în mod firesc, ajung mai departe, iar cei mai departe de voi se apropie.
+În **Pokemon Don't Go**, când vă îndreptați spre un anumit pokemon, pokemonii mai apropiați de voi se îndepărtează, iar cei aflați mai departe de voi se apropie.
 
-Veți primi **o secvență de numere întregi, separate prin spații** - **distanțe** până la pokemon.
+Veți primi **o secvență de numere întregi, separate prin spații** - **distanțe** până la pokemoni.
 
-Apoi, veți începe **să primiți numere întregi**, care vor corespunde cu **indecșii** din acea succesiune.
+Apoi, veți începe **să primiți numere întregi**, care vor corespunde cu **indicii** din secvență.
 
-**Când primiți un index**, trebuie să **eliminați elementul din acel index** din secvență (ca și cum ați fi capturat pokemonul).
+**Când primiți un indice**, trebuie să **eliminați din secvență elementul corespunzător acelui indice** (ca și cum ați fi capturat pokemonul).
 
-- Trebuie să măriți valoarea tuturor elementelor din secvență care sunt **mai mici decât sau egal cu valoarea elementului eliminat**, cu **valoarea** **elementului eliminat**
+- Trebuie să măriți valoarea tuturor elementelor din secvență care sunt **mai mici sau egale cu valoarea elementului eliminat**, cu **valoarea** **elementului eliminat**
 
-- Trebuie să reduceți valoarea tuturor elementelor din secvență care sunt **mai mari decât elementul eliminat** cu **valoarea elementului eliminat**
+- Trebuie să scădeți valoarea tuturor elementelor din secvență care sunt **mai mari decât elementul eliminat**, cu **valoarea elementului eliminat**
 
-Dacă indexul dat este **mai decât 0**, **eliminați primul element al secvenței** și **copiați ultimul element la locul său**.
+Dacă indicele dat este **mai decât 0**, **eliminați primul element al secvenței** și **copiați ultimul element în locul acestuia**.
 
-Dacă indexul  dat este **mai mare decât ultimul index al secvenței**, **scoateți ultimul element din secvență** și **copiați primul element la locul său**.
+Dacă indicele dat este **mai mare decât ultimul indice al secvenței**, **eliminați ultimul element din secvență** și **copiați primul element în locul său**.
 
-Creșterea și scăderea elementelor ar trebui făcută și în aceste cazuri. 
+Mărirea și micșroarea elementelor trebuie făcută și în aceste cazuri. 
 
-Elementul, a cărui valoare ar trebui s-o utilizați este **elementul eliminat**.
+Elementul a cărui valoare trebuie utilizată este **elementul eliminat**.
 
-** Programul se încheie ** când **nu mai rămân** elemente în secvență.
+**Programul se încheie** când **nu mai rămâne** niciun element în secvență.
 
 
 ### Intrare
 
 - Pe prima linie de intrare veți primi o secvență de numere întregi, separate prin spații
 
-- Pe următoarele câteva linii veți primi numere întregi - indecșii
+- Pe următoarele câteva linii veți primi numere întregi - indici
 
 ### Ieșire
 
-Când programul se termină, trebuie să imprimați pe consolă, valoarea însumată a tuturor elementelor **ELIMINATE**.
+Când programul se termină, trebuie să imprimați pe consolă suma tuturor elementelor **ELIMINATE**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1290,23 +1295,23 @@ Când programul se termină, trebuie să imprimați pe consolă, valoarea însum
 [hint]
 Matricea este \{**4, 5, 3**\}.
 
-Indexul este **1**.
-Eliminăm **5** și creștem toți indexșii care sunt mai mici decât 5 și reducem toți indecșii mai mari.
-În acest caz, cu toții sunt mai mici decât 5.
+Primul indice primit este **1**.
+Eliminăm **5** și mărim toate elementele care sunt mai mici decât 5 și micșorăm toate elementele mai mari.
+În acest caz, toate elementele sunt mai mici decât 5.
 
 Rezultatul este \{**9, 8**\}.
 [/hint] 
 [hint]
-Indexul este **1**. 
-Deci eliminăm **8** și scădem toți indecșii mai mari decât acesta.
+Următorul indice primit este **1**. 
+Prin urmare, eliminăm **8** și micșorăm toate elementele mai mari decât acesta.
 
 Rezultatul este \{**1**\}.
 [/hint] 
 [hint]
-Indexul este **0**. 
+Ultimul indice este **0**. 
 
-Deci eliminăm **1**.
-Nu mai există elemente, așa că imprimăm suma tuturor elementelor eliminate:
+Prin urmare, eliminăm **1**.
+Nu mai există elemente, deci trebuie să imprimăm suma tuturor elementelor eliminate:
 **5 + 8 + 1 = 14**
 
 `System.out.println(sum); // Output: 14`
@@ -1579,23 +1584,23 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Sunteți însărcinat să ajutați la planificarea următorului curs Programming Fundamentals, urmărind lecțiile, care vor fi incluse în curs, precum și toate exercițiile pentru lecții.
+Trebuie să participați la planificarea următorului curs Programming Fundamentals prin monitorizarea lecțiilor care vor fi incluse în curs, precum și a exercițiilor din cadrul lecțiilor.
 
-Pe prima linie a intrării veți primi planificarea inițială al lecțiilor și exercițiilor care vor face parte din cursul următor, separate prin virgulă și spațiu ", ".
+Pe prima linie din intrare veți primi planificarea inițială a lecțiilor și exercițiilor care vor face parte din curs, separate prin virgulă și spațiu ", ".
 
-Dar, înainte de începerea cursului, trebuie făcute câteva modificări.
+Înainte de începerea cursului, trebuie făcute câteva modificări.
 
-Până când veți primi "course start" vi se vor oferi câteva **comenzi pentru a modifica planificarea cursului**.
+Până la primirea comenzii "**course start**", vi se vor oferi câteva **comenzi pentru a modifica planificarea cursului**.
 
 **Comenzile posibile** sunt:
-- "**Add:**\{**lessonTitle**\}" - **adăugați lecția la sfârșitul** planificării, dacă **nu există**
-- "Insert:\{**lessonTitle**\}:\{**index**\}" - **introduceți** lecția la **indexul dat**, dacă **nu există**
-- "**Remove:**\{**lessonTitle**\}" - **eliminați lecția**, dacă **există**
-- "**Swap:**\{**lessonTitle**\}:\{**lessonTitle**\}" - **schimbați locul** celor două lecții, **dacă există**
-- "**Exercise:**\{**lessonTitle**\}" - **adăugați Exercițiul în program, imediat după indexul lecției**, dacă lecția există și nu există încă un exercițiu, în următorul format: "**- - -** \{**lessonTitle**\}**-Exercise**"
-    - dacă **lecția nu există**, **adăugați** lecția **la sfârșitul** programului cursului, **urmat de un exercițiu**
+- "**Add:**\{**lessonTitle**\}" - **adăugați lecția la sfârșitul** planificării, dacă aceasta **nu există**
+- "**Insert**:\{**lessonTitle**\}:\{**index**\}" - **introduceți** lecția la **indicele dat**, dacă aceasta **nu există**
+- "**Remove:**\{**lessonTitle**\}" - **eliminați lecția**, dacă aceasta **există**
+- "**Swap:**\{**lessonTitle**\}:\{**lessonTitle**\}" - **schimbați locul** celor două lecții, **dacă acestea există**
+- "**Exercise:**\{**lessonTitle**\}" - dacă lecția există și nu există încă un exercițiu, **adăugați exercițiul în program, imediat după indicele lecției**, în următorul format: "**- - -** \{**lessonTitle**\}**-Exercise**"
+    - dacă **lecția nu există**, **adăugați** lecția **la sfârșitul** programului cursului, **urmată de exercițiu**
 
-De fiecare dată când **schimbați sau eliminați o lecție,** ar trebui **să faceți același lucru cu exercițiile**,care urmează lecțiile, în cazul în care acestea există.
+De fiecare dată când **schimbați sau eliminați o lecție,** trebuie **să faceți același lucru cu exercițiile** care urmează după lecții, în cazul în care acestea există.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1610,7 +1615,7 @@ De fiecare dată când **schimbați sau eliminați o lecție,** ar trebui **să 
 [hint]
 Primim planificarea inițială.
 
-Apoi, adăugăm lecția **Databases**, deoarece acesta nu există:
+Apoi, adăugăm lecția **Databases**, deoarece aceasta nu există:
 
 ```java
 if (!schedule.contains(lessonTitle)) {
@@ -1619,7 +1624,7 @@ if (!schedule.contains(lessonTitle)) {
 ```
 [/hint] 
 [hint]
-Inserăm la indexul dat lecția **Arrays**, fiindcă nu este prezent în program:
+Inserăm lecția **Arrays** la indicele dat, fiindcă nu este prezentă în program:
 
 ```java
 if (!schedule.contains(lessonTitle)) {
@@ -1655,7 +1660,7 @@ for (int i = 1; i <= schedule.size(); i++) {
 
 [hints]
 [hint]
-Schimbăm lecțiile date, pentru că ambele există:
+Schimbăm lecțiile date, deoarece ambele există în planificare:
 
 ```java
 swapping(schedule, lessonTitle, swapLessonWith);
@@ -1674,8 +1679,8 @@ if (!schedule.contains(lessonTitle + "-Exercise")) {
 ```
 [/hint] 
 [hint]
-Schimbăm lecțiile **Lists** și **Databases**
-**Databases-Exercise** este, de asemenea, mutat după lecția **Databases**:
+Schimbăm lecțiile **Lists** și **Databases**.
+**Exercițiul** este de asemenea mutat după lecția **Databases**:
 
 ```java
 swapping(schedule, lessonTitle, swapLessonWith);

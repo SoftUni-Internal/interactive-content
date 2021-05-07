@@ -6,16 +6,15 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-30-31-type-conversion-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Când atribuiți valoarea  unui tip de date altuia, este posibil ca cele două tipuri să nu fie compatibile între ele.
+Când atribuiți valoarea unui tip de date altui tip de date, este posibil ca cele două tipuri să nu fie compatibile între ele.
 
-Dacă tipurile de date sunt compatibile, atunci Java va efectua conversia cunoscută automat sub numele de Conversie automată de tip și, dacă nu, atunci trebuie să fie exprimate sau convertite în mod explicit.
+Dacă tipurile de date sunt compatibile, Java va efectua conversia automat. Acest lucru este cunoscut sub numele de Conversie Automată de Tip (Automatic Type Conversion). Dacă tipurile nu sunt compatibile trebuie să fie convertite în mod explicit.
 
-De exemplu, atribuirea unei valori int unei variabile lungi.
+De exemplu, atribuirea unei valori **int** unei variabile **long**.
 
-În Java, există două tipuri de casting:
+În Java, există două tipuri de **casting**:
 
-- Casting extins \(automat\) - convertirea unui tip mai mic într-un format mai mare
-
+- Casting extins \(automat\) - conversia unui tip de date mai mic într-un un tip de date mai mare; acest concept este cunoscut sub numele de **conversie implicită**
 ```java live
 int myInt = 9;
 double myDouble = myInt; // Automatic casting: int to double
@@ -24,11 +23,11 @@ System.out.println(myInt);
 System.out.println(myDouble);
 ```
 
-Aici tipul inferior de date \(având o dimensiune mai mică\) este convertit în tipul de date mai mare \(având o dimensiune mai mare\)
+Aici tipul de date cu o dimensiune mai mică este convertit într-un tip de date care are o dimensiune mai mare.
 
-Prin urmare, nu există pierderi de date. Acesta este motivul pentru care acest tip de conversie are loc automat
+Nu există pierderi de date, motiv pentru care acest tip de conversie are loc automat.
 
-- Casting restrâns \(manual\) - convertirea unui tip mai mare într-un tip de dimensiune mai mică
+- Casting restrâns \(manual\) - conversia unui tip de date mai mare într-un tip de dimensiune mai mică; cunoscută sub numele de **conversie explicită**
 
 ```java live
 double myDouble = 9.78;
@@ -38,9 +37,9 @@ System.out.println(myDouble);
 System.out.println(myInt);
 ```
 
-Aici tipurile de date superioare \(având dimensiuni mai mari\) sunt convertite în tipuri de date mai mici \(având dimensiuni mai mici\). 
+Aici un tip de date cu o dimensiune mai mare este convertit într-un de date cu dimensiune mai mică. 
 
-Prin urmare, există pierderea de date. Acesta este motivul pentru care acest tip de conversie nu are loc automat.
+În timpul procesului pot exista pierderi de date sau precizie. Acesta este motivul pentru care acest tip de conversie nu are loc automat.
 
 [/slide]
 
@@ -66,7 +65,8 @@ public class Main {
 
 ## Descriere
 
-Creați un program care aceptă un număr **int** de **secole** și le convertește în **ani**,**zile**, **ore** și **minute**.
+Creați un program care aceptă un număr de **secole**, pe care le convertește în **ani**, **zile**, **ore** și **minute**.
+
 Intrarea va fi de tipul **int**. 
 
 ## Exemple
@@ -166,9 +166,9 @@ public class Main {
 
 Creați un program care citește 3 linii de intrare.
 
-Pe fiecare linie primiți un singur personaj.
+Pe fiecare linie veți primi un singur caracter.
 
-Combinați toate caracterele într-un singur șir și imprimați-le pe consolă.
+Combinați toate caracterele într-un singur șir și imprimați-l pe consolă.
 
 ## Exemple
 
@@ -290,7 +290,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care imprimă dacă un caracter dat este scris cu majuscule sau minuscule.
+Creați un program care determină dacă un caracter dat este majusculă sau minusculă.
 
 ## Exemple
 |**Intrare**|**Ieșire**|

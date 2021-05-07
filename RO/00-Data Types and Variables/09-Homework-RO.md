@@ -19,7 +19,7 @@ public class Main {
 ## Descriere
 Citiți **patru numere întregi**.
 
-**Adăugați** **primul** număr la **al doilea**, **împărțiți** (împărțire întreagă) **suma** la **al treilea** număr și **înmulțiți** rezultatul cu **al patrulea** număr.
+**Adunați** **primul** număr la **al doilea**, **împărțiți** (împărțire întreagă) **suma** la **al treilea** număr și **înmulțiți** rezultatul cu **al patrulea** număr.
 
 **Imprimați** rezultatul.
 
@@ -110,9 +110,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Vi se va da un **singur** întreg.
+Veți primi un **singur** număr întreg.
 
-Sarcina dvs. este de a găsi **suma cifrelor sale**.
+Sarcina voastră este să găsiți **suma cifrelor sale**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -180,19 +180,19 @@ public class Main {
 [task-description]
 ## Descriere
 
-Calculați câte cursuri vor fi necesare unui lift pentru a **ridica n persoane** în vârful clădirii.
+Calculați câte curse ascendente va trebui să facă un lift pentru a **transporta n persoane** la ultimul etaj al unei clădiri.
 
-**Intrarea** conține **două linii**:
+**Intrarea** constă în **două linii**:
 
-- Numărul de persoane **n**
+- Un număr **n** de persoane
 
 - Capacitatea **p** a liftului
 
 ### Exemplu
 |**Intrare**|**Ieșire**|**Comentarii**
 | --- | --- | --- |
-| 17 | 6 | 5 courses * 3 people |
-| 3 | | + 1 course * 2 people |
+| 17 | 6 | 5 curse de 3 persoane |
+| 3 | | + 1 cursă de 2 persoane |
 
 [/task-description]
 [code-io /]
@@ -263,13 +263,13 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program, care **rezumă codurile ASCII de n caractere**.
+Scrieți un program care **însumează codurile ASCII a n caractere**.
 
 **Imprimați suma** pe consolă.
 
 ### Intrare
 
-- Pe prima linie, veți primi **n** - numărul de linii, care va urma
+- Pe prima linie veți primi **n** - numărul de linii
 
 - Pe următoarele **n linii** - veți primi litere din alfabetul latin
 
@@ -391,10 +391,10 @@ public class Main {
 [task-description]
 
 ## Descriere
-Găsiți online mai multe informații despre [ASCII](www.ascii-code.com) (American Standard Code for Information Interchange) și creați un program care **tipărește o parte din tabelul ASCII** de caractere pe consolă.
+Căutați online mai multe informații despre [ASCII](www.ascii-code.com) (American Standard Code for Information Interchange) și creați un program care **tipărește o parte din tabelul ASCII** pe consolă.
 
-Pe prima linie de intrare veți primi **indicele char** cu care ar trebui să **începeți** 
-Pe a doua linie - indexul **ultimului** caracter pe care ar trebui să-l imprimați.
+Pe prima linie de intrare veți primi **indicele caracterului** cu care trebuie să **începeți**.
+Pe a doua linie - indicele **ultimului** caracter pe care trebuie să îl imprimați.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -461,7 +461,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program pentru a **citi** un număr întreg **n** și **tipări toate triplurile de primele n litere latine mici**, ordonate **alfabetic**.
+Creați un program care **citește** un număr întreg **n** și **tipărește toate tripletele primelor n litere latine mici**, ordonate **alfabetic**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -852,13 +852,13 @@ public class Main {
 ## Descriere
 Aveți un **rezervor de apă** cu o capacitate de 255 litri.
 
-Pe prima**linie, veți primi n.
+Pe **prima** linie veți primi numărul **n**.
 
-În următoarele **n linii**, veți primi **litri** de apă, pe care trebuie să **le turnați în rezervor**.
+Pe următoarele **n linii** veți primi **litri** de apă, pe care trebuie să **îi turnați în rezervor**.
 
 Dacă **capacitatea nu este suficientă**, tipăriți "**Insufficient capacity!**" și **continuați să citiți** următorul rând.
 
-Pe ultima linie, **imprimați litrii** în rezervor.
+Pe ultima linie, **imprimați numărul de litri de apă** din rezervor.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -965,13 +965,13 @@ public class Main {
 [task-description]
 
 ## Descriere
-Creați un program care **calculează volumul** de **n** butoaie de bere.
+Creați un program care **calculează volumul** a **n** butoaie de bere.
 
 **Veți primi** în total **3 * n linii**.
 
-Fiecare **trei rânduri** va conține informații pentru un **singur butoi**.
+Fiecare **trei rânduri** vor conține informațiile pentru un **singur butoi**.
 
-**În primul rând** este **modelul**  butoiului, **după aceea** este **raza** (un număr în virgulă mobilă) al butoiului și **în sfârșit** este **înălțimea** butoiului.
+**Primul rând** reprezintă **modelul** butoiului, **al doilea** **raza** butoiului (un număr în virgulă mobilă), iar **al treilea rând** reprezintă **înălțimea** butoiului.
 
 Calculați **volumul** folosind următoarea formulă:
 
@@ -1087,23 +1087,23 @@ public class Main {
 ## Descriere
 Creați un program care **calculează cantitatea totală de condimente** care poate fi extrasă dintr-o sursă.
 
-Sursa are un randament **de pornire**, care indică cât de mult condiment poate fi extras în **prima zi**.
+Sursa are un randament **inițial**, care indică cât de mult condiment poate fi extras în **prima zi**.
 
-După ce  sursa a fost exploatată  pentru o zi, randamentul ei scade cu 10, ceea ce înseamnă că în a doua zi va produce cu 10 condimente mai puțin **decât în prima zi, în a treia zi cu 10 condimente mai puțin decât în a doua** , și **și așa mai departe** (vezi exemple).
+După ce sursa a fost exploatată pentru o zi, randamentul ei scade cu 10, ceea ce înseamnă că în a doua zi cantitatea produsă va fi mai mică cu 10 **decât în prima zi, în a treia zi cu 10 mai mică decât în a doua** **și așa mai departe** (vezi exemplele).
 
-O sursă este considerată **profitabilă numai în timp ce randamentul acesteia este de cel puțin 100** - când se așteaptă mai puțin de 100 de condimente într-o zi, abandonați  sursa.
+O sursă este considerată **profitabilă cât timp randamentul acesteia este de cel puțin 100** - când se anticipează o cantitate mai mică de 100 pentru o zi, abandonați sursa.
 
-Echipajul minier **consumă 26 de condimente în fiecare zi** la **sfârșitul turei** și **încă 26** după epuizarea minei.
+Echipajul minier **consumă o cantitate de 26 de condimente în fiecare zi** la **sfârșitul turei** și **încă 26** după epuizarea minei.
 
 Rețineți că lucrătorii nu pot consuma mai mult condiment decât există în depozit.
 
 Când operațiunea este finalizată, **tipăriți pe consolă pe două linii separate** câte **zile** a funcționat mina și **cantitatea totală** de condiment extras.
 
 ### Intrare
-Veți primi **un număr**, reprezentând randamentul **inițial** al sursei.
+Veți primi **un număr** care reprezintă randamentul **inițial** al sursei.
 
 ### Ieșire
-Imprimați **două rânduri separate** câte **zile a funcționat mina** și **cantitatea totală de condimente extrase**.
+Imprimați **două rânduri separate** care reprezintă câte **zile a funcționat mina** și **cantitatea totală de condimente care a fost extrasă**.
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1113,16 +1113,16 @@ Imprimați **două rânduri separate** câte **zile a funcționat mina** și **c
 
 [hints] 
 [hint] 
-In **prima zi** extragem 111 de condimente și la sfârșitul turei, muncitorii consumă 26, lăsând 85.
+În **prima zi** extragem o cantitate de condimente de 111 și la sfârșitul turei muncitorii consumă 26, lăsând 85.
 Randamentul scade cu 10 până la 101.
 [/hint] 
 [hint] 
-In **a-2-a zi** extragem 101 de condimente, muncitorii consumă 26, lăsând 75.
+În **a-2 a zi** extragem o cantitatea de 101, muncitorii consumă 26, lăsând 75.
 Totalul este 160 și randamentul a scăzut la 91.
 [/hint] 
 [hint] 
 Deoarece randamentul așteptat este mai mic de 100, **abandonăm** sursa.
-Muncitorii iau încă 26, lăsând 134. Mina a **funcționat** 2 zile.
+Muncitorii conumă încă 26, lăsând 134. Mina a **funcționat** 2 zile.
 [/hint] 
 [/hints]
 
@@ -1186,45 +1186,43 @@ public class Main {
 [task-description]
 
 ## Descriere
-A Poke Mon este un tip special de pokemon căruia îi place să-i împingă pe alții. 
+Un Poke Mon este un tip special de pokemon căruia îi place să-i împingă pe alții. 
 
-Dar la sfârșitul zilei, Poke Mon vrea să păstreze **statistici**, despre câte împingeri a reușit să facă.
+La sfârșitul zilei Poke Mon vrea să păstreze **statistici** despre câte împingeri a reușit să facă.
 
-Poke Mon își aruncă ținta și apoi trece la o altă țintă. 
+Poke Mon își împinge ținta și apoi trece la o altă țintă. 
 
 **Distanța dintre ținte reduce puterea sa de împingere**.
 
-Vi se va oferi **puterea de împingere** (poke power)  pe care Poke Mon o are, **N** - un număr întreg.
+Vi se va oferi **puterea de împingere** (poke power) pe care Poke Mon o are, **N** - un număr întreg.
 
-Apoi vi se va acorda **distanța dintre țintele împingerii** (poke targets), **M** - un număr întreg.
+Apoi vi se va acorda **distanța dintre ținte** (poke targets), **M** - un număr întreg.
 
 Apoi vi se va da **exhaustionFactor Y** - un număr întreg.
 
-Sarcina voastră este să începeți **scăzând M din N până când N devine mai mic decât M**, adică Poke Mon nu are suficientă putere pentru a atinge următoarea țintă.
+Sarcina voastră este **să scădeți M din N până când N devine mai mic decât M**, adică până când Poke Mon nu mai are suficientă putere pentru a împinge următoarea țintă.
 
-**De fiecare dată când scadeți M de la N înseamnă că ați atins o țintă** și ați împins-o cu succes. 
+**De fiecare dată când scădeți M din N înseamnă că ați atins o țintă** și ați împins-o cu succes. 
 
 Numărați câte ținte ați împins - veți avea nevoie de acest număr.
 
-Poke Mon devine treptat **mai epuizat**. 
+Poke Mon devine treptat din ce în ce **mai epuizat**. 
 
 **Dacă N devine egal cu EXACT 50% din valoarea inițială, trebuie să împărțiți N la Y**, dacă este **posibil**. 
 
-Folosiți împărțirea numerelor întregi.
+Folosiți împărțirea întregă.
 
-Dacă o împărțire nu este posibilă, NU ar trebui să o faceți. 
+Dacă împărțirea nu este posibilă, NU trebuie efectuată. 
 
-În schimb, ar trebui să continuați scăderea.
-
-După împărțire, ar trebui să **continuați scăderea** din N, până când devine mai mic decât M.
+După efectuarea împărțirii, trebuie să **continuați scăderea** din N, până când acesta devine mai mic decât M.
 
 Când N devine mai mic decât M, trebuie să luați ceea ce a rămas din N și numărul de ținte pe care le-ați împins și să le imprimați ca rezultat.
 
-**NOTĂ**: Când calculați procentele, ar trebui să calculați cu maxima precizie.
+**NOTĂ**: Când calculați procentele, trebuie să utilizați precizia maximă.
 
-Notă: 505 NU este EXACT 50% din 1000, ci 50.5%.
+Notă: 505 nu este exact 50% din 1000, ci 50.5%.
 
-### Intrare / Limitări
+### Intrare / Constrângeri
 
 - Pe prima linie veți primi **N** - un număr întreg
 
@@ -1234,9 +1232,9 @@ Notă: 505 NU este EXACT 50% din 1000, ci 50.5%.
 
 ### Ieșire
 
-- Pe prima linie tipăriți **ceea ce a rămas din N**, după ce ați scăzut din acesta
+- Pe prima linie tipăriți **ceea ce a rămas din N** după efectuarea tuturor scăderilor
 
-- Pe cea de-a doua linie tipăriți **numărul de ținte**, pe care ați reușit să le împingeți
+- Pe cea de-a doua linie tipăriți **numărul de ținte** pe care ați reușit să le împingeți
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -1247,20 +1245,20 @@ Notă: 505 NU este EXACT 50% din 1000, ci 50.5%.
 
 [hints] 
 [hint] 
-Acest Poke Mon are o **putere poke** de 5. (N = 5)
+Acest Poke Mon are **o putere de împingere** de 5. (N = 5)
 **Distanța** dintre **țintele poke** este 2. (M = 2)
 **exhaustionFactor** este egal cu 3. (Y = 3)
 [/hint] 
 [hint] 
-Începem să scădem M de la N.
+Începem să scădem M din N.
 La inceput, N = 5 and M = 2.
 N - M = 3 -\> 1 țintă împinsă
 N - M = 1 -\> 2 ținte împinsă
 N este acum mai mic decât M.
 [/hint] 
 [hint] 
-Tipărim ceea ce a **rămas** din **N**, care este 1.
-Printăm **numărul de ținte**, care este 2.
+Tipărim ceea ce a **rămas** din **N** (1).
+Tiparim **numărul de ținte** (2).
 [/hint] 
 [/hints]
 
@@ -1335,11 +1333,11 @@ public class Main {
 [task-description]
 
 ## Descriere
-Tony și Andi adoră să se joace în zăpadă și să se lupte cu bulgări de zăpadă, dar se ceartă întotdeauna cine face cele mai bune bulgăre de zăpadă.
+Tony și Andy adoră să se joace în zăpadă și să se lupte cu bulgări de zăpadă, dar se ceartă întotdeauna în legătură cu cine face cei mai rezistenți bulgări.
 
-Au decis să vă implice în lupta lor, făcându-vă să creați un program care **să calculeze datele bulgărelui** și să imprimă cea mai bună valoare a bulgărelui.
+Au decis să vă implice în lupta lor, cerându-vă să creați un program care **procesează datele ce țin de calitatea bulgărelui** și care imprimă valoarea celui mai rezistent bulgăre.
 
-Veți primi **N** - un număr întreg, **numărul de bulgări de zăpadă fiind făcut** de Tony și Andi.
+Veți primi **N** - un număr întreg, **numărul de bulgări de zăpadă realizați** de Tony și Andy.
 
 Pentru fiecare bulgăre de zăpadă veți primi 3 linii de intrare:
 
@@ -1349,17 +1347,17 @@ Pentru fiecare bulgăre de zăpadă veți primi 3 linii de intrare:
 
 - Pe a treia linie veți obține **snowballQuality** - un număr întreg
 
-Pentru fiecare bulgăre de zăpadă trebuie să calculați valoarea acestuia cu următoarea formulă:
+Pentru fiecare bulgăre de zăpadă trebuie să calculați **snowballValue** folosind următoarea formulă:
 
 **(snowballSnow / snowballTime) ^ snowballQuality**
 
-La sfârșit, trebuie să **imprimați** cea mai mare valoare calculată (snowballValue)
+La sfârșit, trebuie să **imprimați** cea mai mare valoare calculată (snowballValue).
 
-### Intrare / Limitări
+### Intrare / Constrângeri
 
 - Pe prima linie de intrare veți primi N - numărul de bulgări de zăpadă
 
-- Pe următoarele linii de intrare N * 3 veți primi date despre bulgări de zăpadă
+- Pe următoarele N * 3 linii de intrare veți primi date despre bulgării de zăpadă
 
 ### Ieșire
 

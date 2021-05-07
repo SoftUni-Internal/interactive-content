@@ -6,35 +6,33 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## În această lecție veți afla despre:
+## În această lecție veți învăța despre:
 
-**1. Tipuri de date și variabile**
-
-- Cum funcționează calculatoarele?
+**1. Tipuri de Date și Variabile**
 
 - Tipurile de date și semnificația lor 
 
 - Ce reprezintă o variabilă
 
-**2. Tip întreg și număr real**
+**2. Tipurile de Date Integer și Double**
 
-- Diferența dintre tipurile de număr întreg și numărul real
+- Diferența dintre Integer și Double 
 
-**3. Conversia de tip**
+**3. Conversia de Tip (Casting)**
 
 - Conversia implicită vs explicită
 
-**4. Tipul boolean**
+**4. Tipul de Date Boolean**
 
-- Ce reprezintă tipul boolean
+- Ce reprezintă o valoarea booleană
 
-- Prezentare generală a tipului de date booleene și ce conține
+- Prezentare generală a tipului de date boolean
 
-**5. Tip de caractere și șiruri**
+**5. Tipurile de Date Character și String**
 
-- Prezentare generală și reprezentare a tipului de date "Character"
+- Prezentare generală a tipului de date Character
 
-- Prezentare generală și reprezentare a tipului de date "String"
+- Prezentare generală a tipului de date String
 
 
 [/slide]

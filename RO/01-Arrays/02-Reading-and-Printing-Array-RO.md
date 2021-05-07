@@ -1,10 +1,10 @@
-# Citirea și Imprimarea Matricei
+# Citirea și Imprimarea Matricelor
 
 [slide hideTitle]
-# Citirea matricelor
+# Citirea Matricelor
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/RO/02-Java-Fundamentals-Arrays-8-9-10-11-Reading-An-Array-and-demos-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Unul dintre modurile în care putem citi o matrice este prin primirea **lungimii** sale și folosirea acelei **lungimi** într-o **bucla for** pentru a primi elementele și a le stoca în fiecare index al matricei.
+Unul dintre modurile în care putem citi o matrice este prin utilizarea **lungimii** sale într-o **bucla for** pentru a primi toate elementele sale și a le stoca în matrice în funcție de indicele corespunzător.
 
 ```java
 //accept n - length of the array
@@ -19,11 +19,11 @@ for (int i = 0; i < n; i++) {
 }
 ```
 
-## Citirea valorilor matricei dintr-o singură linie
+## Citirea valorilor matricei de pe o singură linie
 
-Maricele pot fi citite dintr-o singură linie de valori separate. 
+Maricele pot fi citite de pe o singură linie care conține valori separate. 
 
-De exemplu, dacă vrem să citim această matrice: `2 8 30 25 40 72 -2 44 56`:
+De exemplu, vrem să citim această matrice: `2 8 30 25 40 72 -2 44 56`.
 
 ```Java
 String values = sc.nextLine();
@@ -34,19 +34,19 @@ for (int i = 0; i < items.length; i++) {
     arr[i] = Integer.parseInt(items[i]);
 }
 ```
-Mai întâi, citim numerele de pe consolă și le împărțim după spațiile goale dintre ele.
 
-Apoi inițializăm o nouă matrice cu o lungime egală cu numărul de elemente pe care le citim.
+Mai întâi, citim numerele de pe consolă și le separăm, folosind `" "` ca delimitator.
+
+După aceea, inițializăm o nouă matrice cu o lungime egală cu numărul de elemente pe care le citim.
 
 În cele din urmă, folosind o buclă for, inserăm toate valorile în matrice.
 
-Putem citi o serie de numere întregi folosind `java.util.Arrays;` care este o "clasă" în Java care vă permite să creați și să manipulați matrice.
+Putem citi o matrice de numere întregi folosind clasa `java.util.Arrays;`, care ne permite să creăm și să manipulăm matrice.
 
-Vom învăța despre **clase** mai târziu în acest curs, dar dacă sunteți curioși, nu ezitați să-l faceți google.
 
-## Un mod mai scurt pentru a citi matricele
+## Alternative
 
-Aici pute'i vedea un mod mult mai scurt pentru a citi intrarea și a crea o matrice din aceasta.
+Exemplul de mai jos prezintă o metodă mai scurtă de a citi intrări și de a crea matrice cu ajutorul acestora.
 
 ```Java
 String inputLine = sc.nextLine();
@@ -61,23 +61,23 @@ int[] arr = Arrays
     .toArray();                  
 ```
 
-Citim mai întâi intrarea de pe consolă ca un șir folosind `scanner.nextLine ()`.
+Citim mai întâi intrarea ca șir folosind `scanner.nextLine()`.
 
-Apoi împărțim intrarea prin spațiu folosind `split (" ")`.
+Apoi, împărțim intrarea prin delimitatorul `" "` cu ajutorul metodei `split(" ")`.
 
-Continuăm parsând fiecare șir la valori întregi cu `mapToInt (Integer :: parseInt)`.
+Vom continua cu parsarea fiecărui șir la valori întregi prin metoda `mapToInt(Integer::parseInt)`.
 
 În cele din urmă, convertim rezultatul într-o matrice.
 
 [/slide]
 
 [slide hideTitle]
-# Imprimarea Matricei 
+# Imprimarea Matricelor
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/RO/02-Java-Fundamentals-Arrays-12-Printing-Arrays-to-the-console-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pentru a imprima toate elementele a unei matrice, utilizăm o **bucla for**.
+Pentru a imprima toate elementele unei matrice, utilizăm o **bucla for**.
 
-În timp ce imprimăm fiecare element, putem folosi **un spațiu alb** sau **o linie nouă**, pentru a le împărți.
+În timp ce imprimăm elementele, putem folosi **un spațiu** sau **o linie nouă** pentru a le separa. 
 
 Vedeți exemplul de mai jos:
 
@@ -105,14 +105,14 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Citiți numere **n** și imprimați-le în ordine inversă, separate printr-un singur spațiu.
+Citiți **n** numere și imprimați-le în ordine inversă, separate printr-un singur spațiu.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
@@ -209,21 +209,21 @@ Citiți numere **n** și imprimați-le în ordine inversă, separate printr-un s
 
 
 [slide hideTitle]
-# Imprimarea Matricei Folosind String.join()
+# Imprimarea Matricelor cu Ajutorul Metodei String.join()
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/RO/02-Java-Fundamentals-Arrays-15-printing-arrays-with-for-string.join-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Utilizați `String.join(x, y)`, unde **x** este  **separatorul** și **y** este matricea  pe care doriți să o imprimați. 
+Putem utiliza `String.join(x, y)` pentru a imprima o matrice. **X** reprezintă **separatorul** și **y** este matricea pe care dorim să o imprimăm. 
 
-`String.join(…)` funcționează numai cu `șiruri`:
+`String.join(…)` funcționează numai cu șiruri:
 
 ```Java live
 String[] strings = { "one", "two" };
 System.out.println(String.join(" ", strings));
 ```
 
-Dacă încercăm să tipărim o matrice de tipul **int**, vom primi o eroare:
+Dacă încercăm să tipărim o matrice de tipul **int**, vom obține o eroare:
 
 ```Java live
 int[] arr = { 1, 2, 3 };
@@ -245,7 +245,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -254,9 +254,9 @@ public class Main {
 ## Descriere
 Creați un program care citește o **matrice de șiruri**, o inversează și **imprimă** elementele sale.
 
-Intrarea constă dintr-o secvență de **șiruri** separate de spațiu.
+Intrarea constă dintr-o secvență de **șiruri** separate printr-un spațiu.
 
-Imprimați ieșirea pe o singură linie \(separate prin spațiu\).
+Imprimați ieșirea pe o singură linie \(elementele trebuie separate printr-un spațiu\).
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
@@ -266,10 +266,10 @@ Imprimați ieșirea pe o singură linie \(separate prin spațiu\).
 
 [hints] 
 [hint] 
-Citiți matricea de șiruri, **Schimbați**  **primul** element \(at index **0**\) cu **ultimul** element \(at index **n-1**\).
+Citiți matricea de șiruri, **schimbați** **primul** element \(corespunzător indicelui **0**\) cu **ultimul** element \(corespunzător indicelui **n-1**\).
 [/hint] 
 [hint] 
-Apoi, **schimbați** **al doilea** element \(at index **1**\) cu **penultimul** element\(at index **n-2**\).
+Apoi, **schimbați** **al doilea** element \(corespunzător indicelui **1**\) cu **penultimul** element \(corespunzător indicelui **n-2**\).
 [/hint] 
 [hint] 
 Continuați în același mod până când ajungeți la **mijlocul** matricei.
@@ -344,20 +344,21 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Citiți două matrice și imprimați pe consolă, in funcție  dacă sunt identice sau nu.
+Citiți două matrice și determinați dacă acestea sunt sau nu identice.
 
-Matricele sunt**identice** dacă **elementele lor sunt egale**.
+Matricele sunt **identice** dacă **toate elementele lor sunt egale**.
 
-Dacă matricile sunt identice, găsiți **suma primei** și imprimați pe consolă următorul mesaj: 
+Dacă matricele sunt identice, găsiți **suma elementelor primei matrice** și imprimați pe consolă următorul mesaj: 
+
 "**Arrays are identical. Sum:** \{**sum**\}"
 
-în caz contrar, găsiți primul index în care matricile diferă și imprimați pe consolă următorul mesaj:
+În caz contrar, găsiți primul indice la care matricele diferă și imprimați pe consolă următorul mesaj:
 
 "**Arrays are not identical. Found difference at** \{**index**\} **index.**"
 

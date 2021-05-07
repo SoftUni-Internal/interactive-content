@@ -1,12 +1,14 @@
 [slide hideTitle]
-# Tipuri Întregi
+# Tipuri Întregi (Integer)
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-12-13-Integer-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Tipurile întregi** stochează numere întregi, pozitive sau negative (cum ar fi 123 sau -456), fără zecimale.
+**Tipurile întregi** stochează numere întregi, pozitive sau negative (precum 123 sau -456).
 
-Tipurile valide sunt **byte**, **short**, **int** și **long**, tipul pe care ar trebui să îl utilizați, depinde de valoarea numerică.
+Tipurile întregi existente sunt **byte**, **short**, **int** și **long**.
 
-| Tip | Valoare implicită | Valoare min. | Valoare maximă | Dimensiune |
+Alegerea tipului depinde de valoarea numerică care trebuie stocată.
+
+| Tip | Valoare implicită | Valoare minimă | Valoare maximă | Dimensiune |
 |-----|------|-----|------|-----|
 | byte | 0 | -128 | 127 | 8 bit |
 | short | 0 | -32768 | 32767 | 16 bit |
@@ -31,27 +33,27 @@ System.out.printf("%d centuries = %d years = %d days = %d hours.",
 //20 centuries = 2000 years = 730484 days = 17531616 hours.
 ```
 
-Putem folosi diferite tipuri întregi, în funcție de ceea ce dorim să stocăm în ele.  
+Putem folosi diferite tipuri întregi, în funcție de valoare pe care vrem să o stocăm.
 
 - Tipul de date **byte** poate stoca numere întregi de la -128 la 127
 
-Acest lucru poate fi folosit în loc de **int** sau alte tipuri întregi pentru a salva memoria atunci când sunteți sigur că valoarea va fi cuprinsă între -128 și 127:
+**Byte** este folosit pentru a salva memorie atunci când se știe sigur că valoarea va fi cuprinsă între -128 și 127:
 
 ```java live
 byte myNum = 100;
 System.out.println(myNum);
 ```
 
-- Tipul de date **Short**  de date poate stoca numere întregi de la -32768 la 32767:
+- Tipul de date **short** poate stoca numere întregi de la -32768 la 32767
 
 ```java live
 short myNum = 5000;
 System.out.println(myNum);
 ```
 
-- Tipul de date **Int**  poate stoca numere întregi de la -2147483648 la 2147483647
+- Tipul de date **int** poate stoca numere întregi de la -2147483648 la 2147483647
 
-În general și în cursul nostru, tipul de date **int** este tipul de date preferat atunci când creăm variabile cu o valoare numerică.
+Tipul de date **int** este cel mai utilizat tip de date atunci când creăm variabile care au o valoare numerică.
 
 
 ```java live
@@ -59,11 +61,11 @@ int myNum = 100000;
 System.out.println(myNum);
 ```
 
-- Tipul de date **Long**  poate stoca numere întregi de la -9223372036854775808 la 9223372036854775807.
+- Tipul de date **long** poate stoca numere întregi de la -9223372036854775808 la 9223372036854775807
 
-Acesta este utilizat atunci când un int nu este suficient de mare pentru a stoca valoarea.
+Acesta este utilizat atunci când **int** nu este suficient de mare pentru a stoca valoarea.
 
-Rețineți că ar trebui să încheiați valoarea cu un "L":
+Rețineți că trebuie să încheiați valoarea cu un "L" atunci când utilizați acest tip de date:
 
 ```java live
 long myNum = 15000000000L;
@@ -78,11 +80,11 @@ System.out.println(myNum);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-15-Integer-overflow-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Toate numerele întregi au interval - o valoare minimă și una maximă. 
+Toate variabilele de tip întreg au un interval - o valoare minimă și una maximă. 
 
-Acest lucru înseamnă că intervalul numerelor întregi pate fi depășit, ceea ce poate rezulta în valori incorecte.
-Aruncați o privire la exemplul de mai jos.
+Acest lucru înseamnă că intervalul acestora poate fi depășit, ceea ce poate determina valori incorecte.
 
+Exemplu:
 ```java
 byte counter = 0;
 for (int i = 0; i < 130; i++) {
@@ -98,27 +100,27 @@ for (int i = 0; i < 130; i++) {
 //-127
 ```
 
-The counter variable starts from 0 and is incremented with each step of the for loop. 
+Variabila **counter** are inițial valoarea 0 și este incrementată la fiecare iterație a buclei for. 
 
-Eventually when it reaches the maximum value of byte (127), it restarts again from the minimum value (-128). 
+Atunci când atinge valoarea maximă a tipului **byte** (127), este resetată din nou la valoarea minimă (-128). 
 
-This is what we mean by **integer overflow** and it is precisely the reason why choosing your data type correctly is important.
+Acest exemplu ilustrează conceptul de **integer overflow** și importanța alegerii corecte a tipului de date.
 
 [/slide]
 
 [slide hideTitle]
-# Integer Literals
+# Literali Întregi
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-16-integer-literals-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Literele întregi sunt numere, care nu au o parte în virgulă mobilă.
+Literalii întregi sunt numere care nu au o parte reprezentată în virgulă mobilă.
 
-**541** este o valoare literală prin acea definiție.
+De exemplu, **541** este o valoare literală.
 
-Ele pot fi reprezentate în câteva moduri diferite, care nu sunt la fel de intuitive:
+Aceștia pot fi reprezentați în câteva moduri diferite, care nu sunt la fel de intuitive:
 
-- **Litere întregi hexazecimale** - valori care încep cu **0x** și **OX** - **0xFE**, **0xA8F1**, **0xFFFFFFFF**
+- **Literali întregi hexazecimali** - valori care folosesc sistemul de numerație hexazecimal; încep cu **0x** și **0X** - **0xFE**, **0xA8F1**, **0xFFFFFFFF**
 
-- **Litere întregi lungi** - valori precedate de litera **L** sau **l** - **9876543L**, **0L**
+- **Literali întregi de tip long** - valori urmate de litera **L** sau **l** - **9876543L**, **0L**
 
 ```java live
 int hexadecimal = 0xA8F1; // 43249
@@ -149,9 +151,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Vi se va da un număr întreg care va fi distanța în metri.
+Veți primi un număr întreg care reprezintă o distanță în metri.
 
-Scrieți un program care convertește metri în kilometri formatați în a doua zecimală.
+Scrieți un program care convertește metri în kilometri - rezultatul trebuie formatat cu două zecimale.
 
 ## Exemple
 |**Intrare**|**Ieșire**|

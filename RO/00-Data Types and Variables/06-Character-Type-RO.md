@@ -2,27 +2,27 @@
 
 [slide hideTitle]
 
-# Tipul Caracter
+# Tipul de Date Caracter
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-38-40-character-type-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Tipul de date char este utilizat pentru a stoca un **singur** caracter
+Tipul de date **char** este utilizat pentru stocarea unui **singur** caracter.
 
-Caracterul ar trebui să fie înconjurat de ghilimele unice, cum ar fi `'A'` sau `'c'`.
+Caracterul trebuie să fie încadrat de ghilimele unice: `'A'`, `'c'`.
 
 ```java live
 char myGrade = 'B';
 System.out.println(myGrade);
 ```
 
-De asemenea, tipul de date caracter:
+De asemenea, tipul de date caracter are următoarele caracteristici:
 
-* Oferă fiecărui simbol un cod întreg corespunzător
+* Atribuie fiecărui simbol un cod ASCII corespunzător
 
-* Are o valoare implicită `\0`
+* Are valoarea implicită `\0`
 
-* Ia 16 biți de memorie \(de la**U+0000** la **U+FFFF**\)
+* Rezervă 16 biți de memorie \(de la **U+0000** la **U+FFFF**\)
 
-* Deține un singur caracter Unicode \(sau o parte a caracterului\)
+* Conține un singur caracter Unicode \(sau o parte a caracterului\)
 
 ```java live
 char ch = 'a';
@@ -35,17 +35,17 @@ ch = 'A';
 System.out.printf("The code of '%c' is: %d%n", ch, (int) ch);
 ```
 
-În exemplul de mai sus convertim fiecare caracter la valoarea sa **ASCII**. 
+În exemplul de mai sus convertim fiecare caracter în valoarea sa **ASCII**. 
 
-**Tabelul ASCII** este acronimul pentru **American Standard Code for Information Interchange.
+**ASCII** este acronimul pentru **American Standard Code for Information Interchange**.
 
-Este un cod pentru reprezentarea a 128 de caractere englezești ca numere, fiecărei litere i se atribuie un număr de la 0 la 127. 
+Este un cod standard pentru reprezentarea a 128 de caractere ca numere. Fiecărui caracter i se atribuie un număr de la 0 la 127. 
 
-Vă încurajăm să îl cercetați singur!
+Puteți găsi mai multe informații despre tabelul ASCII online.
 
-## Characters and Unicode
+## Unicode
 
-Există o valoare întreagă în spatele fiecărui caracter.
+Există o valoare întreagă pentru fiecare caracter.
 
 Această valoare corespunde unei litere din tabelul Unicode.
 
@@ -60,7 +60,7 @@ ch = 'щ';
 System.out.printf("'%c' is: %d%n", ch, (int) ch);
 ```
 
-Tabelul Unicode este separat în diferite părți și aproape toate limbile vii sunt reprezentate în acesta.
+Tabelul Unicode este separat în diferite părți și aproape toate limbile existente sunt reprezentate cu ajutorul acestuia.
 
 [/slide]
 
@@ -84,7 +84,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care acceptă o intrare de 3 linii de caractere și le imprimă în ordine inversată și cu spații între ele. 
+Creați un program care acceptă o intrare care constă în 3 linii de caractere și le imprimă în ordine inversă, separate de un spațiu.
 ## Exemplu
 |**Intrare**|**Ieșire**|
 |-----|------|
@@ -167,13 +167,13 @@ a
 [/slide]
 
 [slide hideTitle]
-# Caractere Evadate
+# Caractere de Evadare (Escape Characters)
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-43-escaping-characters-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Fiecare limbaj de programare, inclusiv Java, are câteva caractere rezervate care nu pot fi utilizate direct.
 
-Un exemplu în acest sens îl reprezintă ghilimelele duble în șiruri care ar trebui evitate.
+Un exemplu în acest sens îl reprezintă ghilimelele duble în șiruri.
 
 
 ```Java
@@ -181,15 +181,15 @@ String txt = "We are the so-called "Vikings" from the north.";
 ```
 
 
-Pentru evita această problemă, adăugăm o bară inversă \ (\\\), care este utilizată ca caracter de evadare
+Pentru a evita această problemă, adăugăm o bară oblică \(\\\), care este utilizată drept caracter de evadare.
 
-Caracterul de bară inversă \(\\\) transformă caracterele speciale în caractere șir:
+Caracterul de evadare \(\\\) transformă caracterele speciale în caractere de tip șir:
 
-**Caractere de evadare
+**Caractere de evadare**:
 
 |Secvență de evadare |Caracter| Descriere|
 |-----|--------|--------|
-|\\'|**'**       |Ghilimele singulare|
+|\\'|**'**       |Ghilimele unice|
 |\\"  |**''**      |Ghilimele duble|
 |\\\  |**\\**     |Bară oblică|
 
@@ -208,7 +208,7 @@ String txt = "It\'s alright.";
 System.out.println(txt);
 ```
 
-Secvența `\\` inserează o singură bară inversă într-un șir:
+Secvența `\\` inserează o singură bară oblică într-un șir:
 
 ```Java live
 String txt = "The character \\ is called backslash.";
@@ -218,11 +218,11 @@ System.out.println(txt);
 [/slide]
 
 [slide hideTitle]
-# Caractere Literale
+# Literali de Tip Caracter
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/RO/interactive-java-fundamentals-data-types-and-variables-44-character-literals-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Caracterele literale sunt toate expresiile de caractere care sunt încorporate în Java. 
+Literalii de tip caracter sunt toate expresiile de tip caracter care sunt încorporate în Java. 
 
 ```java
 char symbol = 'a'; // An ordinary character

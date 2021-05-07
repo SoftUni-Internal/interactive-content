@@ -20,29 +20,27 @@ public class Main {
 [task-description]
 # Descriere
 
-Prima linie de intrare va consta dintr-o **matrice de numere întregi**.
+Prima linie de intrare va consta într-o **matrice de numere întregi**.
 
 Creați un program care primește **comenzi** care **modifică matricea**.
 
 **Comenzile** posibile sunt: "**swap**", "**multiply**" sau "**decrease**".
 
-- "**swap** \{**index1**\} \{**index2**\}" - luați cele două elemente și schimbați-le locurile
+- "**swap** \{**index1**\} \{**index2**\}" - schimbați locurile celor două elemente
 
-- "**multiply** \{**index1** \} \{**index2** \}" - luați numărul din primul index specificat și multiplicați-l cu numărul din al doilea
+- "**multiply** \{**index1** \} \{**index2** \}" - trebuie să înmulțiți numărul care corespunde primului indice cu numărul care corespunde celui de-al doilea indice
 
-Salvați produsul celor doi la indexiul unde era primul număr.
+Salvați produsul celor două numere la indicele corespunzător primului număr.
 
-- "**decrease**" - scade toate elementele din matrice cu 1
+- "**decrease**" - micșorează toate elementele din matrice cu 1
 
 ## Intrare
 
-Pe prima linie de intrare vi se vor da valorile matricei inițiale, separate printr-un singur spațiu.
+Pe prima linie de intrare vi se vor da valorile inițiale ale matricei, separate printr-un singur spațiu.
 
-Pe liniile următoare veți primi **comenzi**. 
+Pe liniile următoare veți primi **comenzi**. Programul trebuie să se oprească după primirea comenzii "**end**" și să imprime matricea modificată.
 
-Programul ar trebui să înceteze căutarea comenzilor după ce a primit comanda "**end**".
-
-Comenzile ar putea fi:
+Comenzile pot fi:
 
 * "**swap** \{**index1**\} \{**index2**\}"
 
@@ -52,12 +50,12 @@ Comenzile ar putea fi:
 
 ## Ieșire
 
-**Ieșirea** ar trebui să fie tipărită pe consolă și ar trebui să fie formată din **elementele matricei modificate separate prin** ", " (o virgulă și un spațiu unic).
+**Ieșirea** trebuie să fie formată din **elementele matricei modificate, separate prin ", "** (o virgulă și un spațiu).
 
 ## Constrângeri
 
 
-* Comenzile sunt limitate la: "**swap**", "**multiply**", "**decrease**" și "**end**"
+* Comenzile sunt limitate la "**swap**", "**multiply**", "**decrease**" și "**end**"
 
 * Toate elementele matricei vor fi numere întregi
 
@@ -65,7 +63,7 @@ Comenzile ar putea fi:
 
 * Indicii vor fi întotdeauna în intervalul matricei
 
-## Primul Exemplu
+## Exemplul 1
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |23 -2 321 87 42 90 -123 | 86, 7382, 2369942, -124, 41, 89, -3|
@@ -93,7 +91,7 @@ Starea matricei după a doua comandă: `23 87 321 -123 42 90 -2`
 [hint]
 * "**swap 1(87)" and "0(23)**":
 
-Starea tabloului după a treia comandă: `87 23 321 -123 42 90 -2`
+Starea matricei după a treia comandă: `87 23 321 -123 42 90 -2`
 [/hint] 
 [hint]
 * "**multiply 1(23) 2(321) = 7383**":
@@ -103,17 +101,17 @@ Starea matricei după a patra comandă: `87 7383 321 -123 42 290 -2`
 [hint]
 * "**multiply 2(321) 1(7383) = 2369943**":
 
-Starea comenzii după a cincea: `87 7383 2369943 -123 42 90 -2`
+Starea matricei după a cincea comandă: `87 7383 2369943 -123 42 90 -2`
 [/hint] 
 [hint]
 * "**decrease**":
 
-Starea comenzii după a șasea: `86 7383 2369942 -124 41 89 -3`
+Starea matricei după a șasea comandă: `86 7383 2369942 -124 41 89 -3`
 [/hint] 
 [/hints] 
 
 
-## Al Doilea Exemplu
+## Exemplul 2
 | **Intrare** | **Ieșire** |
 | --- | --- |
 |1 2 3 4 |1, 11, 3, 0 |

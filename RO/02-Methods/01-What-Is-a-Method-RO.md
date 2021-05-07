@@ -6,9 +6,9 @@
 
 O metodă este un bloc de cod care rulează doar când este apelată.
 
-Puteți trece date, adică parametrii, într-o metodă.
+Puteți transmite date unei metode prin intermediul **parametrilor**.
 
-Exemplu de metodă **definiție**:
+* Definirea unei metode:
 
 ```Java
 public static void printHello () {
@@ -16,7 +16,7 @@ public static void printHello () {
 }
 ```
 
-* Invocarea/apelarea unei metode 
+* Invocarea / apelarea unei metode:
 
 ```Java
 printHello();
@@ -24,42 +24,34 @@ printHello();
 [/slide]
 
 [slide hideTitle]
-# De ce să Folosim Metodele?
+# De ce Folosim Metodele?
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-5-Why-Use-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metodele sunt folosite în Java din mai multe motive:
 
-- **Refolosirea**: putem scrie o metodă o dată și să o folosim de **mai multe ori**
+- **Reutilizare**: după ce am creat metoda, putem să o folosim de **mai multe ori**
 
-Nu trebuie să rescriem codul de mai multe ori. 
+- **Pentru a introduce parametri în cod**: de cele mai multe ori dorim să folosim parametri care modifică comportamentul metodei în funcție de valoarea acestora 
 
-Gândiți-vă așa, `scriem o dată, folosim de mai multe ori`.
+- **Crearea unor unități conceptuale**: putem crea metode pentru fiecare sarcină separată pe care programul nostru o va rezolva
 
-- **Pentru a parametriza codul**: pe lângă refolosirea codului, care este la fel în toate cazurile
+- Metodele fac codul mai lizibil și mai ușor de depanat
 
-De multe ori veți vrea să folosiți `parametri` care schimbă modul de funcționare al metodei.
+   - de exemplu, o metodă numită `printHello()` este foarte sugestivă pentru scopul pe care îl servește
 
-- **Crearea de unități conceptuale**:  creați metode pentru fiecare sarcină aparte pe care programul vostru o va rezolva
+- **Simplificarea problemelor**: variabilele locale și instrucțiunile unei metode **nu pot fi văzute din exteriorul acesteia**
 
-- Metodele fac codul să fie mai citeț și mai ușor de depanat
-
-- De exemplu, metoda `printHello()` este atât de concisă, astfel încât vom știi că această metodă va afișa `Hello`
-
-- **Simplificarea problemelor**: Deoarece variabilele locale și instrucțiunile unei metode **nu pot fi văzute din exteriorul acesteia**
-
-Ele sunt **ascunse** de alte părți ale programului, atfel prevenind erori accidentale și confuzii.
+   - ele sunt **ascunse** de alte părți ale programului, astfel prevenind erori și confuzii
 
 [/slide]
 
 [slide hideTitle]
-# Metode de Tipul Void
+# Metode de Tip Void
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-6-Void-type-method-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Metodele cu tipul de returnare "**void**" execută codul în blocul lor de cod.
-
-Aceștia pot accepta parametri, dar nu returnează niciun rezultat.
+Metodele de tip "**void**" pot accepta parametri, dar nu returnează niciun rezultat.
 
 ```java
 public static void doSomething() {
@@ -67,7 +59,7 @@ public static void doSomething() {
 }
 ```
 
-Metoda **main()** în care scriem cod este de asemenea o metodă de tipul void. 
+Metoda **main()** în care scriem cod este de asemenea o metodă de tip void. 
 
 ```java
 public static void main(String[] args) {

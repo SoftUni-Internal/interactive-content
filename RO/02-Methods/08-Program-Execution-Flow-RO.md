@@ -6,14 +6,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-50-51-Program-Execution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+În Java fluxul programului este controlat de o parte a memoriei numită **stiva de apeluri (call stack)**.
 
-Fluxul programului în Java este controlat printr-o parte a memoriei numită **stiva de apel**.
+Stiva este utilizată pentru a monitoriza apelurile metodelor și etapele în care acestea au fost apelate în program.
 
-Stiva este utilizată pentru a urmări ce metode au fost numite și punctele programului la care au fost apelate.
+De îndată ce o metodă își termină execuția, fluxul programului este reluat prin executarea codului care urmează după metodă.
 
-De îndată ce o metodă își termină execuția, fluxul programului reia din locul din codul din care a fost invocat.
-
-Să vedem acest lucru în acțiune.
+Acest concept este exemplificat mai jos:
 
 ```java
 public class Main {
@@ -44,27 +43,27 @@ public class Main {
 }
 ```
 
-Folosim clasa Scanner pentru a accepta intrarea utilizatorului prin consolă.
+Folosim clasa `Scanner` pentru a accepta intrarea utilizatorului.
 
-Mai întâi, citim numele orașului și apelăm imediat metoda `printWeather ()`, trecându-i șirul ca parametru.
+Mai întâi, citim numele orașului și apelăm imediat metoda `printWeather()`, transmițând acest șir ca parametru.
 
-Programul trece apoi pe câteva linii până unde se găsește declarația metodei "printWeather (oraș șir)" și execută tot codul din metodă.
+Programul omite apoi câteva linii până când găsește metoda `printWeather(String city)` și execută codul din interiorul metodei.
 
-În cele din urmă, va reveni la locul unde a fost apelată metoda și va continua după aceasta imprimând o întrebare și solicitând utilizatorului să aleagă da sau nu.
+În cele din urmă, va reveni la locul unde metoda a fost apelată, va continua cu imprimarea întrebării corespunzătoare și va solicita utilizatorului să introducă datele.
 
 [/slide]
 
 [slide hideTitle]
 
-# Stiva de Apel
+# Stiva de Apeluri
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-52-Program-Execution-Call-stack-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Stiva conține **cadre de stivă** pentru fiecare apel de metodă. Aceste cadre de stivă stochează informații despre:
+Stiva conține **cadre de stivă** pentru fiecare apel al unei metodei. Aceste cadre de stivă stochează informații despre:
 
 - Orice argumente transmise metodei
 - Variabile locale
-- Adresa la care să reveniți după ce o metodă termină de executat
+- Adresa la care trebuie să revină după ce metoda curentă este executată
 
 
 [/slide]

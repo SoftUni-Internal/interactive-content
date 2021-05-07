@@ -1,29 +1,28 @@
-# Metode de Supraîncărcare
+# Supraîncărcarea Metodelor
 
 [slide hideTitle]
 # Semnătura Metodei
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-44-45-46-Method-Signature-Overlading-Methods-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-In Java, semn[tura metodei face parte din declararea metodei.
+În Java, semnătura metodei face parte din declararea metodei.
 
-Este o combinație între **numele metodei** și **lista de parametrii**.
-
-În acest exemplu, elementele semnăturii sunt **print** (numele metodei) și **String text** (parametru).
+Aceasta este reprezentată de combinațiă dintre **numele metodei** și **parametrii** metodei.
 
 ```Java
 public static void print(String text) {
   System.out.println(text);
 }
 ```
+În acest exemplu, elementele semnăturii sunt **print** (numele metodei) și **String text** (parametru).
 
-## Metode de supraîncărcare
+## Supraîncărcarea Metodelor
 
-Supraîncărcarea unei metode se face folosind același nume pentru mai multe metode cu diferite **semnături** \ (metoda **nume** și **parametri** \).
+Supraîncărcarea unei metode se face folosind același nume pentru mai multe metode cu diferite **semnături** \(**numele** metodei și **parametrii**\).
 
-În loc să definim două metode care fac același lucru, este ma bine să supraîncărcăm una.
+În loc să definim două metode care fac același lucru, este mai bine să supraîncărcăm una.
 
-În exemplul de mai jos, supraîncărcăm metoda **addTwoNumbers** pentru a funcționa atât cu **int *, cât și cu **double**:
+În exemplul de mai jos, supraîncărcăm metoda **addTwoNumbers** pentru a funcționa atât cu **int**, cât și cu **double**:
 
 ```java live no-template
 public class MyClass {
@@ -50,13 +49,13 @@ public class MyClass {
 [/slide]
 
 [slide hideTitle]
-# Semnătura și Tipul de Returnare 
+# Semnătura și Tipul Returnat 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/03.Java-Fundamentals-Methods/RO/interactive-java-fundamentals-methods-47-Signature-type-and-return-type-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Metoda  **signature** nu inculde tipul de returnare a metodei.
+**Semnătura** metodei nu include tipul returnat al metodei.
 
-O clasp nu poate avea două metode cu aceeași semnătură. 
+O clasă nu poate avea două metode cu aceeași semnătură. 
 
 Dacă încercăm să declarăm două metode cu aceeași semnătură, vom primi o eroare în timpul compilării.
 
@@ -92,11 +91,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Primiți două valori care sunt de același tip de date.
+Primiți două valori cu același tip de date.
 
-Valorile pot fi de tipul  **int**, **char** sau **String**.
+Valorile pot fi de tipul **int**, **char** sau **String**.
 
-Creați o metodă numită **getMax()** care returnează **paramaetru cu cea mai mare valoare**:
+Creați o metodă numită **getMax()** care returnează **parametrul cu cea mai mare valoare**.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -248,16 +247,16 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care citește un **număr întreg** și **înmulțește cu suma cifrelor sale pare** cu **suma cifrelor sale impare**:
+Creați un program care citește un **număr întreg** și **înmulțește suma cifrelor sale pare** cu **suma cifrelor sale impare**.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |**Comentarii**|
 | --- | --- | --- |
-| 12345 | 54 | 12345 are 2 cifre pare - 2 și 4. cifrele  |
-| | | pare adunate sunt 6. |
-| | | Are 3 cifre impare - 1, 3 și 5.  |
-| | | cifrele impare adunate sunt 9. |
-| | | Înmulțim 6 cu 9 și avem 54. |
+| 12345 | 54 | 12345 are 2 cifre pare - 2 și 4. |
+| | | Suma cifrelor pare este 6. |
+| | | Are 3 cifre impare - 1, 3 și 5. |
+| | | Suma cifrelor impare este 9. |
+| | | Înmulțim 6 cu 9 și obținem 54. |
 
 
 |**Intrare**|**Ieșire** |

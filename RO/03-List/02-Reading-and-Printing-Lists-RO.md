@@ -4,23 +4,23 @@
 # Citirea Listelor 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-10-11-reading-lists-from-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Citirea unei liste folosind bucla **for** 
+- Citirea unei liste folosind o **buclă for**:
 ```java 
 Scanner scanner = new Scanner(System.in);
 
-    // citirea dimensiunii listei
+// citirea dimensiunii listei
 int n = Integer.parseInt(scanner.nextLine()); 
         
-    // initializarea unei lite goale de întregi
+// inițializarea unei liste goale de numere întregi
 List<Integer> list = new ArrayList<>(); 
 
-    // crearea unei bucle  for cu dimensiunea listei
+// crearea unei bucle for cu dimensiunea listei
 for (int i = 0; i < n; i++) { 
 
     // citirea unui element de pe consolă   
     int number = Integer.parseInt(scanner.nextLine()); 
 
-    // adăugarea unui element la listă     
+    // adăugarea elementului în listă     
     list.add(number); 
 }
 ```
@@ -31,9 +31,9 @@ for (int i = 0; i < n; i++) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-12-reading-values-from-a-single-line-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Puteți citi o listă ca o singură linie pe consolă.
+Puteți citi o listă ca o singură linie de pe consolă.
 
-Imaginați-vă că avem o intrare care constă din mai multe valori întregi, separate prin spații. (10 20 30 40 50)
+Imaginați-vă că avem o intrare care constă în mai multe valori **întregi**, separate prin spații (10 20 30 40 50).
 ``` java
 // input: 10 20 30 40 50
 String values = scanner.nextLine();   
@@ -50,7 +50,7 @@ List<Integer> items = Arrays
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-13-printitng-lists-on-the-console-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- **Imprimarea unei liste utilizând o buclă "for"**
+- Imprimarea unei liste cu ajutorul unei **bucle for**
 
 ```java live
 List<String> months = new ArrayList<>(
@@ -61,7 +61,7 @@ for (int index = 0; index < months.size(); index++) {
 }
 ```
 
-- **Imprimarea unei liste utilizând o buclă "for-each"**
+- Imprimarea unei liste cu ajutorul unei **bucle for-each**
 
 ```java live
 List<String> numbers = new ArrayList<>(
@@ -72,7 +72,7 @@ for (String number : numbers) {
 }
 ```
 
-- **Imprimarea unei liste utilizând "String.join(…)"**
+- Imprimarea unei liste cu ajutorul metodei **String.join(…)**
 
 ```java live
 List<String> list = new ArrayList<>(
@@ -104,17 +104,17 @@ public class Main {
 [task-description]
 ## Descriere
 
-Creați un program pentru a **însuma toate numerele egale adiacente** într-o listă de numere zecimale, începând de la **stânga la dreapta**.
+Creați un program pentru a **însuma toate numerele egale adiacente** dintr-o listă de numere zecimale, începând de la **stânga la dreapta**.
 
-- După însumarea a două numere, rezultatul obținut ar putea fi egal cu unii dintre vecinii săi și ar trebui, de asemenea, să fie însumat  (vezi exemplele de mai jos)
+- După însumarea a două numere, rezultatul obținut poate fi egal cu unii dintre vecinii săi și ar trebui, de asemenea, să fie însumat (vezi exemplele de mai jos)
 
-- Sumați întotdeauna cei doi vecini egali din stânga (dacă sunt disponibile mai multe cupluri de vecini egali)
+- Însumați întotdeauna cei doi vecini egali din stânga (dacă sunt disponibile mai multe cupluri de vecini egali)
 
 ## Exemplu
 |**Intrare**|**Ieșire** |**Comentarii**|
 | --- | --- | --- |
 | 3 3 6 1 | 12 1 | **3 3** 6 1 -> **6 6** 1 -> 12 1 |
-| 8 2 2 4 8 16 | 16 8 16 | 8 **2 2** 4 8 16 -> 8**4 4** 8 16 -> **8 8** 8 16 -> 16 8 16 |
+| 8 2 2 4 8 16 | 16 8 16 | 8 **2 2** 4 8 16 -> 8 **4 4** 8 16 -> **8 8** 8 16 -> 16 8 16 |
 | 0.1 0.1 5 -5 | 0.2 5 -5 | **0.1 0.1** 5 -5 -> 0.2 5 -5 |
 
 [/task-description]
@@ -225,9 +225,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Creați un program care însumează toate numerele într-o listă în ordinea următoare:
+Creați un program care însumează toate numerele dintr-o listă în ordinea următoare:
 
-- **primul** + **ultimul**, **primul + 1** + **ultimul - 1**, **primul + 2** + **ultimul - 2**, ...**primul + n**, **ultimul - n**
+- **primul** + **ultimul**, **primul + 1** + **ultimul - 1**, **primul + 2** + **ultimul - 2**, ...**primul + n** + **ultimul - n**
 
 [image assetsSrc="lists-problem-gaus-trick(1).png" /]
 
@@ -320,13 +320,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Veți primi **două liste** cu **numere**.
+Veți primi **două liste** care conțin **numere**.
 
-Creați o listă de rezultate care **conține** numerele **din** ambele liste.
+Creați o listă care **conține** numerele **din** ambele liste.
 
-**Primul element** ar trebui să fie din **prima listă**, **al doilea** din **a doua listă** și așa mai departe.
+**Primul element** trebuie să fie din **prima listă**, **al doilea** din **a doua listă** și așa mai departe.
 
-Dacă **lungimea** celor două liste **nu este egală**, doar **adăugați** elementele rămase **la sfârșitul listei**.
+Dacă **lungimea** celor două liste **nu este egală**, **adăugați** elementele rămase **la sfârșitul listei**.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|

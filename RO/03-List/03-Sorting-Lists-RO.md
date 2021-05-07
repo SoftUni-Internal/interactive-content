@@ -1,4 +1,4 @@
-# Sortarea Listelor și a Matricelor
+# Sortarea Listelor
 
 [slide hideTitle]
 # Sortarea Listelor
@@ -6,14 +6,14 @@
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/04.Java-Fundamentals-Lists/RO/interactive-java-fundamntals-lists-23-24-sorting-lists-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-`Collections.sort(names)`- sortarea colecției în ordine crescătoare (alfabetică) 
+`Collections.sort(names)`- sortează o listă în ordine crescătoare (alfabetică) 
 
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
 
 System.out.println(String.join(", ", names));
 ```
-`Collections.reverse()` - sortarea colecției în ordine descrescătoare.
+`Collections.reverse()` - sortează lista în ordine descrescătoare
 
 ```java live
 List<String> names = new ArrayList<>(Arrays.asList("Peter", "Michael", "George", "Victor", "John", "Alexander"));
@@ -46,7 +46,7 @@ public class Main {
 ## Descriere
 Citiți un număr **n** și **n linii de produse**.
 
-Imprimați o **listă numerotată** a tuturor produselor **comandate după nume**.
+Imprimați o **listă numerotată** a tuturor produselor, **ordonate după nume**.
 
 ## Exemple
 |**Intrare**|**Ieșire**|
@@ -163,7 +163,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Citiți o**listă de numere întregi**, **eliminați toate numerele negative** din ea și tipăriți elementele rămase în **ordine inversă**.
+Citiți o **listă de numere întregi**, **eliminați toate numerele negative** din ea și tipăriți elementele rămase în **ordine inversă**.
 
 În cazul în care nu există elemente rămase în listă, tipăriți "**empty**".
 

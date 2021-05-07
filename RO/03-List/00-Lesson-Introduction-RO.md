@@ -12,7 +12,7 @@
 
 - Ce reprezintă listele
 
-- Cum să utilizăm listele și de ce avem nevoie de acestea
+- Utilizarea listelor
 
 - **Adăugarea** elementelor
 
