@@ -36,7 +36,7 @@ In your `attachEvents()` function you **should** attach a click event to the **b
 [slide hideTitle]
 # Problem: HTTP Status Cats
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/02.HTTP-Status-Cats.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/02.HTTP-Status-Cats-NEW.zip) **for this task.**
 
 Your task is to **refactor** the given **HTML** and to create a **template** to represent **each** cat **card block** on its own. 
 
