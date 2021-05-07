@@ -2,193 +2,295 @@
 
 [slide hideTitle]
 
+# Problem: Bus Stop
+
+To solve some of the following tasks, you will need to use an up-to-date version of the local REST service which can be downloaded from [here](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Apps-Server1.zip). 
+
+To start the server, extract it to a folder on your computer and run the included **start.bat** file, or manually open a command prompt and execute the `node server.js` command.
+
+Download the resources from [here](https://videos.softuni.org/resources/javascript/javascript-applications/01_Bus_Stop.zip).
+
+## Description
+
+Create a JS program that displays the arrival times of all buses for a particular "**bus stop id**" when a button is clicked.
+
+When the [**Submit**] button is clicked, the name of the bus stop should appear and the list below should get populated with all of the buses that are expected to arrive, along with their arrival times. Take the **value** for the bus stop id from the **stopId** input field.
+
+Send a GET request to `http://localhost:3030/jsonstore/bus/businfo/:busId` and parse the response. 
+
+You will receive a **JSON object** in the following format:
+
+```
+stopId: {
+
+ name: stopName,
+
+ buses: { busId: time, ... }
+
+}
+```
+
+Place the **name** property as a **text** inside the div container with id **stopName**, and each bus as a **list item** in the following format:
+
+- **Bus {busId} arrives in {time}**
+
+If the request is invalid or the information is not in the expected format, display **Error**. 
+
+The list should be cleared before every request is sent.
+
+**Note:** The service will respond with valid data to bus id: 1287, 1308, 1327, and 2334.
+
+
+## Examples
+
+[image assetsSrc="asyncprogramming-1.png" /]
+
+
+[image assetsSrc="asyncprogramming-2.png" /]
+
+When the \[**Check**\] button is clicked, the results should be displayed in the corresponding elements:
+
+[image assetsSrc="asyncprogramming-3.png" /]
+
+[image assetsSrc="asyncprogramming-4.png" /]
+
+If an error occurs, the stop name changes to Error:
+
+[image assetsSrc="asyncprogramming-5.png" /]
+
+[image assetsSrc="asyncprogramming-6.png" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Problem: Bus Schedule
+
+Download the resources from [here](https://videos.softuni.org/resources/javascript/javascript-applications/02_Bus_Schedule.zip).
+
+## Description
+
+Create a JS program that tracks the progress of a bus on its route and announces it inside an info box. 
+
+The program should display the upcoming stop and request from the server the name of the next one once the bus arrives at that stop.
+
+The bus has two states - **moving** and **stopped**. When it is **stopped**, only the [**Depart**] button must be **enabled**, and the info box must show the name of the **current** stop. 
+
+When it is **moving**, only the [**Arrive**] button is **enabled**, and the info box must show the name of the **upcoming** stop. 
+
+Initially, the info box must show "**Not Connected**" and the [**Arrive**] button is **disabled**. 
+
+The id of the first stop is "**depot**".
+
+When the [**Depart**] button is clicked, send a GET request to the server with the id of the current stop to the following URL: `http://localhost:3030/jsonstore/bus/schedule/:id`
+
+You will receive a **JSON object** as a response in the following format:
+
+```
+stopId {
+
+ name: stopName,
+
+ next: nextStopId
+
+}
+```
+
+Update the info box with the information from the response, disable the [**Depart**] button and enable the [**Arrive**] button. 
+
+The text in the info box must be:
+
+- **Next stop {stopName}**
+
+When the [**Arrive**] button is clicked, update the text, disable the [**Arrive**] button and enable the [**Depart**] button. 
+
+The text in the info box must be:
+
+- **Arriving at {stopName}**
+
+The program will cycle through the entire schedule infinitely if you keep clicking the buttons. 
+
+If any invalid data is received, show "**Error**" inside the info box and **disable** both buttons.
+
+## Examples
+
+Initially, the info box shows "**Not Connected**" and the arrive button is disabled.
+
+[image assetsSrc="asyncprogramming-7.png" /]
+
+[image assetsSrc="asyncprogramming-8.png" /]
+
+When [**Depart**] is clicked, a request is made with the first id. The info box is updated with the new information and the buttons are changed:
+
+[image assetsSrc="asyncprogramming-9.png" /]
+
+[image assetsSrc="asyncprogramming-10.png" /]
+
+Clicking on the [**Arrive**] button changes the info box and swaps the buttons. This allows the [**Depart**] button to be clickable again, which makes a new request and updates the information:
+
+[image assetsSrc="asyncprogramming-11.png" /]
+
+[image assetsSrc="asyncprogramming-12.png" /]
+
+
+[/slide]
+
+[slide hideTitle]
+
 # Problem: Forecaster
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Asynchronous-Programming-Homework-01.Forecaster.zip) **for this task.**
+Download the resources from [here](https://videos.softuni.org/resources/javascript/javascript-applications/03_Forecaster.zip).
 
-Create a program that **requests** a weather report **from a server** and **displays** it to the user.
+## Description
 
-**Use the skeleton from the provided resources.**
+Create a JS program that retrieves weather reports **from a server** and **displays** them to the user.
 
-When the user writes the name of a location and clicks `Get Weather`, make a **GET** request to the server at address **"https://judgetests.firebaseio.com/locations.json"**.
+When the user writes the name of a location and clicks the [**Get Weather**] button, send a GET request to the server at `http://localhost:3030/jsonstore/forecaster/locations`.
 
-The response will be an array of objects with the following structure: 
+The response will be an array of objects with the following structure:
 
-```js
+```
 {
+
+ name: locationName,
+
+ code: locationCode
+
+}
+```
+
+Find the object that corresponds to the name that the user submitted in the input field with ID "**location**" and use its **code** value to make **two more** **GET requests**:
+
+-   For the current weather conditions, make a request to `http://localhost:3030/jsonstore/forecaster/today/:code`
+
+The response from the server will be an object with the following structure:
+
+```
+{ 
   name: locationName,
-  code: locationCode
+  forecast: { low: temp,
+              high: temp,
+              condition: condition } 
 }
 ```
 
-Find the object, corresponding to the name that the user submitted in the input field with the ID "**location**" and use its **code** value to make **two more GET requests**:
+-   For a 3-day forecast, make a request to `http://localhost:3030/jsonstore/forecaster/upcoming/:code`
 
-- For current conditions, request to:
+The response will be an object with the following structure:
 
-**"https://judgetests.firebaseio.com/forecast/today/**\{**code**\}**.json"**
-
-The response from the server will be an object with the following structure:
-
-```js
-{
-    name: locationName,
-    forecast: {
-        low: temp,
-        high: temp,
-        condition: condition
-    }
+```
+{ 
+  name: locationName,
+  forecast: [{ low: temp,
+               high: temp,
+               condition: condition }, … ] 
 }
 ```
 
-- For a 3-day forecast, make a request to:
+Use the information from these two objects to compose a forecast in HTML format, and insert it inside the page. 
 
-**"https://judgetests.firebaseio.com/forecast/upcoming/**\{**code**\}**.json"**
+Note that the \<div\> with an id of "forecast" must be set to visible. 
 
-The response from the server will be an object with the following structure:
+See the examples for details.
 
-```js
-{
-    name: locationName,
-    forecast: [{
-        low: temp,
-        high: temp,
-        condition: condition
-    }, …]
-}
-```
-
-Use the information from these two objects to compose a forecast in HTML and insert it inside the page.
-
-Note that the `<div`> with ID "**forecast**" must be set to **visible**. See the examples for details.
-
-If an **error** occurs (the server does not respond or the location name cannot be found) or the data is not in the correct format, display `Error` in the **forecast section**.
+If an **error** occurs (the server does not respond, or the location name cannot be found), or if the data is not in the correct format, display "**Error**" in the **forecast section**.
 
 Use the following codes for weather symbols:
 
-- Sunny `&#x2600;` // ☀
-- Partly sunny `&#x26C5;` // ⛅
-- Overcast `&#x2601;` // ☁
-- Rain `&#x2614;` // ☂
-- Degrees `&#176;` // °
+-   Sunny: `&#x2600;` // ☀
+-   Partly sunny: `&#x26C5;` // ⛅
+-   Overcast: `&#x2601;` // ☁
+-   Rain: `&#x2614; `// ☂
+-   Degrees: `&#176;` // °
 
 ## Examples
 
 When the app starts, the **forecast div** is **hidden**. 
 
-When the user **enters a name** and **clicks** on the button **Get Weather**, the request is sent.
+When the user **enters a name** and **clicks** on the [**Get Weather**] button, a GET request is sent to the server.
 
-[image assetsSrc="JS-Applications-Asynchronous-Programming-Homework-1.jpg" /]
+[image assetsSrc="asyncprogramming-13.png" /]
 
-```html
-<div id="request">...</div>
-<div id="forecast" style="display:none">
-    <div id="current">...</div>
-    <div id="upcoming">...</div>
-</div>
-```
+[image assetsSrc="asyncprogramming-14.png" /]
 
-[image assetsSrc="JS-Applications-Asynchronous-Programming-Homework-3.jpg" /]
+[image assetsSrc="asyncprogramming-15.png" /]
 
-```html
-<div id="request">...</div>
-<div id="forecast" style="display: block;">
-    <div id="current">
-        <div class="label">Current conditions</div>
-        <div class="forecasts">
-            <span class="condition symbol">☀</span>
-            <span class="condition">
-                <span clsas="forecast-data">New York, USA</span>
-                <span clsas="forecast-data">8°/19°</span>
-                <span clsas="forecast-data">Sunny</span>
-            </span>
-        </div>
-    </div>
-    <div id="upcoming">
-        <div class="label">Three-day forecast</div>
-        <div class="forecast-info">
-            <span class="upcoming">
-                <span clsas="symbol">⛅</span>
-                <span clsas="forecast-data">6°/17°</span>
-                <span clsas="forecast-data">Partly sunny</span>
-            </span>
-            <span class="upcoming">...</span>
-            <span class="upcoming">...</span>
-        </div>
-    </div>
-</div>
-```
+[image assetsSrc="asyncprogramming-16.png" /]
 
-## Hints
 
-The server at the address listed above will respond with valid data for location names "**London**", "**New York**" and "**Barcelona**".
 [/slide]
+
 
 [slide hideTitle]
 
-# Problem: Fisher Game
+# Problem: Locked Profile
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Applications-Asynchronous-Programming-Homework-02.Fisher-Game.zip) **for this task.**
+Download the resources from [here](https://videos.softuni.org/resources/javascript/javascript-applications/04_Locked_Profile.zip).
+
+## Description
+
+**Create a JS program** that **shows** and **hides** the additional information about users, which you can find by making a GET request to the server at the following URL:
+
+`http://localhost:3030/jsonstore/advanced/profiles`
+
+The response will be an object containing the information for all the users. 
+
+Create a profile card for every user and display it on the web page. 
+
+Every item should have the following structure:
+
+[image assetsSrc="asyncprogramming-17.png" /]
+
+[image assetsSrc="asyncprogramming-18v2.png" /]
+
+When one of the [**Show more**] **buttons** is clicked, the **hidden information** in the **div** container should be displayed only if **the profile is not locked**. If the current profile is **locked**, nothing should happen.
+
+[image assetsSrc="asyncprogramming-19.png" /]
+
+If the **hidden information is displayed** and we **lock** **the profile again**, the [**Hide it**] button should **not work**!
+
+Otherwise, when the profile is **unlocked** and we click on the [**Hide it**] button, the new fields must be hidden again.
+
+[/slide]
 
 
-- **angler**: **string** representing the name of the person who caught the fish
+[slide hideTitle]
 
-- **weight**: **floating-point number** representing the weight of the fish in kilograms
+# Problem: Accordion
 
-- **species**: **string** representing the name of the fish species
+Download the resources from [here](https://videos.softuni.org/resources/javascript/javascript-applications/05_Accordion.zip).
 
-- **location**: **string** representing the location where the fish was caught
+## Description
 
-- **bait**: **string** representing the bait used to catch the fish
+Create an application that shows **less or more** information for the selected article. At the start, you should send a **GET** request to the server at: 
 
-- **captureTime**: **integer number** representing the time needed to catch the fish in minutes
+`http://localhost:3030/jsonstore/advanced/articles/list`
 
-## HTML Template
+The response will be an object with the titles of the articles.
 
-**Use the skeleton from the provided resources.**
+By clicking the [**More**] button for the selected **article**, it should **reveal** the content of a **hidden** div container and **change** the text of the button to [**Less**]. 
 
-Attach handlers to the `[Load]`, `[Update]`, `[Delete]` and `[Add]` buttons, which make the appropriate **GET**, **PUT**, **DELETE** and **POST** requests.
+Retrieve the content by making a **GET** request to the server at the following URL:
 
-You are given an example catch in the template to show you where and how to insert the catches.
+`http://localhost:3030/jsonstore/advanced/articles/details/:id`
 
-Notice that the **div** containing the catch has an attribute **data-id** that should store the `_id` of the entry given by Kinvey.
+The response will be an object with property **id**, **title**, **content**. 
 
-Create the following REST services to access your data:
+When the same button is clicked **again**, **hide** the div container and **change** the text of the button to [**More**].
 
-- **List All Catches**
+The Less or More button should be **toggleable** (you should be able to click the button as many times as you want).
 
-  - Endpoint - **"https://fisher-game.firebaseio.com/catches.json"**
-  - Method: **GET**
-  - Returns (**Object of objects**)
+## Examples
 
-- **Create a New Catch**
+[image assetsSrc="asyncprogramming-20.png" /]
 
-  - Endpoint: **"https://fisher-game.firebaseio.com/catches.json"**
-  - Method: **POST**
-  - Request body (JSON): `{"angler":"…", "weight":…, "species":"…", "location":"…", "bait":"…", "captureTime":…}`
+[image assetsSrc="asyncprogramming-21.png" /]
 
-- **Update a Catch**
+Every item should have the following structure:
 
-  - Endpoint: **"https://fisher-game.firebaseio.com/catches/**\{**catchId**\}**.json"**
-  - Method: **PUT**
-  - Request body (JSON): `{"angler":"…", "weight":…, "species":"…", "location":"…", "bait":"…", "captureTime":…}`
+[image assetsSrc="asyncprogramming-22.png" /]
 
-- **Delete a Catch**
+You are allowed to add new attributes, but do not change the existing ones.
 
-  - Endpoint: **"https://fisher-game.firebaseio.com/catches/**\{**catchId**\}**.json"**
-  - Method: **DELETE**
-
-- Pressing the `[Load]` button should **list all** catches.
-
-- Pressing the `[Update]` button should send a **PUT** request, updating the catch in firebase.
-
-- Pressing the `[Delete]` button should delete the catch both from firebase and from the page.
-
-- Pressing the `[Add]` button should submit a new catch with the values of the inputs in the fieldset with `id="addFrom"`.
-
-# Screenshots
-
-[image assetsSrc="JS-Applications-Asynchronous-Programming-Homework-5.jpg" /]
-
-[image assetsSrc="JS-Applications-Asynchronous-Programming-Homework-6.jpg" /]
 
 [/slide]

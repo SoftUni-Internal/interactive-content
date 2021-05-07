@@ -14,7 +14,7 @@ The tables consist of **columns** containing one or more data categories, as wel
 
 Each table has a **unique** identifier called a **primary key**, which identifies the information in the table.
 
-The logical connection between different tables is established with **foreign keys** - a field in a table, that connects with the **primary key** of another table.
+The logical connection between different tables is established with **foreign keys** - a field in a table that connects with the **primary key** of another table.
 
 **SQL** or **Structured Query Language** is the primary interface used to communicate with relational databases.
 
@@ -67,7 +67,7 @@ The value of a primary key must not be **null**.
 
 Relational databases use indexes to quickly locate data without searching every row in every table.
 
-**Pros of a Non-Relational Database:**
+**Pros of Non-Relational Databases:**
 - Data is not confined to a structured group
 - You can perform functions that allow for a greater flexibility
 - They scale out horizontally
@@ -78,7 +78,7 @@ NoSQL databases have become popular because they **store** data in **straightfor
 
 NoSQL databases often allow developers to change the **structure of the data**.
 
-They can scale-out "**horizontally**" meaning that they run on multiple **servers** that work together, each sharing part of the load.
+They can scale out "**horizontally**", meaning that they run on multiple **servers** that work together, each sharing part of the load.
 
 High-availability NoSQL databases are systems designed to run **without an interruption of service.**
 
@@ -92,11 +92,11 @@ Many web-based businesses require data services that are available without inter
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-6-backend-as-a-service-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Backend-as-a-Service or **BaaS** is a cloud service model, in which developers outsource all of the behind-the-scenes aspects of a web or mobile application so that they only have to write and maintain the frontend. 
+**Backend-as-a-Service** or **BaaS** is a cloud service model, in which developers outsource all of the behind-the-scenes aspects of a web or a mobile application so that they only have to write and maintain the frontend. 
 
-**BaaS** vendors provide pre-written software for activities that take place on servers, such as user **authentication**, **database management**, **remote updating**, and push notifications (for mobile apps), as well as **cloud storage** and **hosting**.
+**BaaS** vendors provide pre-written software for activities that take place on servers, such as **user authentication**, **database management**, **remote updating**, and push notifications (for mobile apps), as well as **cloud storage** and **hosting**.
 
-Using a **BaaS** drastically increases development speed, while keeping the price low.
+Using a **BaaS** drastically increases the development speed while keeping the price low.
 
 It being **serverless** is yet another advantage, because there is no need for infrastructure management.
 

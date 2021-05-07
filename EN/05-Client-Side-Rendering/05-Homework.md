@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Problem: List Towns
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/01.List-Towns.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/01.List-Towns-NEW.zip) **for this task.**
 
 You are given an **input field** with a **button**. 
 

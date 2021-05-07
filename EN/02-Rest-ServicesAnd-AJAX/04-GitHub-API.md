@@ -10,25 +10,25 @@ To test out **GitHub's API**, we need to use **Postman**.
 
 In these examples, we will send **GET** requests to the following URLs:
 
-- To list all of the public repositories, the URL we need is: 
+- To list all of the public repositories, the URL that we need is: 
 
 `https://api.github.com/users/SoftUni/repos`
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-23.png" /]
 
-- To list all of the commits from a public repository, the URL we need is: 
+- To list all of the commits from a public repository, the URL that we need is: 
 
 `https://api.github.com/repos/softuni/js-apps/commits`
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-24.png" /]
 
-- To get the issues from a public repository, the URL we need is: 
+- To get the issues from a public repository, the URL that we need is: 
 
 `https://api.github.com/repos/softuni/js-apps/issues`
 
 [image assetsSrc="JS-Applications-Rest-Services-and-AJAX-25.png" /]
 
-- To get the first issue from a public repository, the URL we need is: 
+- To get the first issue from a public repository, the URL that we need is: 
 
 `https://api.github.com/repos/softuni/js-apps/issues/1`
 
@@ -44,7 +44,7 @@ In these examples, we will send **GET** requests to the following URLs:
 
 In this example, we need to get a particular issue.
 
-We send a **GET** request to `https://api.github.com/repos/softuni/js-apps/issues/:id`, where `:id` is the issue - **1**:
+We send a **GET** request to `https://api.github.com/repos/softuni/js-apps/issues/:id`, where `:id` is the issue - `1`:
 
 `https://api.github.com/repos/softuni/js-apps/issues/1`.
 
@@ -73,13 +73,13 @@ To do so, we need to send a **POST** request to the following URL:
 
 `https://api.github.com/repos/softni/js-apps/issues`.
 
-We also need to choose a **Basic Authentication** in the **Authorization** header. 
+We also need to choose **Basic Authentication** in the **Authorization** header. 
 
-In the fields for **Username** and **Password**, we need to enter our GitHub credentials.
+In the **Username** and the **Password** fields, we need to enter our GitHub credentials.
 
 The last step is to pass a JSON object to the **body** of the request.
 
-Send the request to the server with the following JSON as body (send it as `application/json`): 
+Send the request to the server with the following JSON as a body (send it as `application/json`): 
 
 ```
 {
