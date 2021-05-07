@@ -133,7 +133,7 @@ See the file **example.html** for an example of how the rendered HTML should loo
 
 ## Example
 
-For instance, if we try to find "**eva**":
+For instance, if we try to find "**sam**":
 
 [image assetsSrc="js-application-client-side-rendering-table-search-engine-2.png" /]
 
@@ -141,7 +141,7 @@ For instance, if we try to find "**eva**":
 
 [image assetsSrc="js-application-client-side-rendering-table-search-engine-3.png" /]
 
-If we try to find all students who have email addresses in the **john-dan** domain, the expected result should be:
+If we try to find all students who have email addresses in the "**john-dam**" domain, the expected result should be:
 
 [image assetsSrc="js-application-client-side-rendering-table-search-engine-4.png" /]
 
