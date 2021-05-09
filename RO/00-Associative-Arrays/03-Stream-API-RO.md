@@ -1,48 +1,49 @@
 [slide hideTitle]
 # Stream API
 
-Java Stream  API permite o **abordare funcțională a procesării colecțiilor de obiecte/elemente**. 
+Java Stream API permite o **abordare funcțională a procesării colecțiilor de obiecte/elemente**. 
 
-Ne permite să **reducem codul**, pentru a crea **programe care pot fi citite mai ușor**, și pentru a **îmbunătățiți productivitatea**.
+Ne permite să **reducem codul**, să creăm **programe mai ușor de citit** și să **îmbunătățim productivitatea**.
 
- De asemenea, ne permite **codificarea mai ușoară a operațiunilor paralele**. 
+De asemenea, permite **codarea mai ușoară a operațiilor paralele**. 
 
-Java Stream  este o componentă care este capabilă de **iterația internă a elementelor sale**, ceea ce înseamnă că poate să **itereze elementele sale în sine**. 
+Java Stream este o componentă care este capabilă de **iterația internă a elementelor sale**, ceea ce înseamnă că poate să **itereze elementele sale**. 
 
-Un stream este o **secvență de obiecte** care suportă **diverse metode**.
+Un stream este o **secvență de obiecte** care admite **diverse metode**.
 
-Stream-ul **nu modifică structura de date originală**, dar oferă rezultate.
+Stream-ul **nu modifică structura de date originală**, oferă doar rezultate.
 
-Stream pipeline reprezintă un **lanț de stream sursă**, **operațiuni intermediare**, și o **operațiune terminală**.
+Stream pipeline reprezintă un **lanț de stream sursă**, **operații intermediare**, și o **operație terminală**.
 
-Un stream API are multe **operațiuni terminale** care agregă un flux într-un **tip** sau o **primitivă**:
-count()`
+Un stream API are multe **operații terminale** care agregă un flux (stream) și returnează **o valoare**, combinând tot conținutul fluxului:
 
-`max()` 
+- `count()`
 
-`min()`
+- `max()` 
 
-`sum()`
+- `min()`
 
-Aceste operații lucrează conform cu implementările predefinite. 
+- `sum()`
 
-Se numește **operațiune terminală**, fiindcă pentru a obține valoarea minimă, de exemplu, trebuie să **traverseze valorile din interiorul fluxului** și să obținem rezultate.
+Aceste operații lucrează conform implementărilor predefinite. 
 
-După ce obținem valoarea minimă, **nu este posibil pentru a-o converti înapoi în flux** pentru că valoarea minimă este doar o valoare.
+Se numește **operație terminală**, fiindcă pentru a obține valoarea minimă, de exemplu, trebuie să **traversăm valorile din interiorul fluxului** și să obținem rezultatul.
 
-Cele mai multe dintre metode folosesc expresii lambda în stream.
+După ce obținem valoarea minimă, **nu este posibilă convertirea acesteia înapoi în flux**.
+
+Cele mai multe dintre metode folosesc expresii lambda.
 
 [/slide]
 
 
 [slide hideTitle]
-# Procesarea Matricelor cu API Flux
+# Procesarea Matricelor cu Stream API 
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-19-20-21-processing-arrays-with-stream-api-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Folosirea de **operațiuni cu o singură linie** pentru matrice în loc de bucle cu indecși sau bucle`for-each` pentru operațiuni simple, atunci când procesăm date:
+Putem procesa **matrice** cu ajutorul cu ajutorul unor **operații pe o singură linie**, în loc să folosim bucle cu indici sau bucle `for-each` pentru operații simple:
 
-- `min()` - găsește și returnează elementul **cel mai mic** dintr-o colecție:
+- `min()` - găsește și returnează elementul **cel mai mic** dintr-o colecție
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 int min = Arrays.stream(numbers)
@@ -51,7 +52,7 @@ int min = Arrays.stream(numbers)
 System.out.println(min);
 ```
 
-Este posibil să fixăm o valoare alternativă care să fie returnată în loc de valoarea minimă, folosind `orElse()`.
+Putem fixa o valoare alternativă care să fie returnată în loc de valoarea minimă, folosind `orElse()`.
 
 ```java live
 int [] numbers = new int[]{15, 25, 35};
@@ -61,7 +62,7 @@ int min = Arrays.stream(numbers)
 System.out.println(min);
 ```
 
-Valoarea fixată în operațiunea `orElse()` este returnată, dacă matricea este goală.
+Valoarea fixată în operația `orElse()` este returnată dacă matricea este goală.
 
 ```java live
 int [] numbers = new int[]{};
@@ -99,12 +100,12 @@ System.out.println(average);
 
 
 [slide hideTitle]
-# Procesarea Matricilor cu Stream API
+# Procesarea Colecțiilor cu Stream API
 
-Folosește operațiile de pe o singură linie, cum ar fi lists, maps, in loc să scrie bucle cu indexuri `for-each` pentru operațiile simple, atunci când procesează date:
+Putem folosi operații pe o singură linie pentru a procesa colecții de tip **Lists** și **Maps**, în loc să folosim bucle cu indici sau bucle `for-each` pentru operații simple:
 
 
-- `min()` - găsește și returnează **cel mai mic** element dintr-o colectie:
+- `min()` - găsește și returnează **cel mai mic** element dintr-o colecție:
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -115,7 +116,7 @@ int min = numbers.stream()
             .getAsInt();
 System.out.println(min);
 ```
-Este posibil să setăm o valoare alternativă de returnare în loc de o valoare minimă, folosind `orElse()`.
+
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -126,7 +127,7 @@ int min = numbers.stream()
 System.out.println(min);
 ```
 
-- `max()` - Găsește și returnează  **cel mai mare** element dintr-o colecție
+- `max()` - găsește și returnează **cel mai mare** element dintr-o colecție
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -148,7 +149,7 @@ int max = numbers.stream()
 System.out.println(max);
 ```
 
-- `sum()` - Găsește și returnează **suma** tuturor elementelor dintr-o colecție
+- `sum()` - găsește și returnează **suma** tuturor elementelor dintr-o colecție
 
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
@@ -160,7 +161,7 @@ int sum = numbers.stream()
 System.out.println(sum);
 ```
 
-- `average()` - Găsește și returnează **the average** tuturor elementelor
+- `average()` - găsește și returnează **media** tuturor elementelor
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -180,7 +181,7 @@ System.out.println(average);
 
 # Manipularea Colecțiilor
 
-Colecțiile pot fi **modificate** prin folosirea metodei `map()`.
+Colecțiile pot fi **modificate** cu ajutorul metodei `map()`.
 
 Vedeți următorul exemplu:
 
@@ -190,6 +191,7 @@ int[] numbers = Arrays.stream(scanner.nextLine()
             .mapToInt(e -> Integer.parseInt(e))
             .toArray();
 ```
+Codul de mai sus separă intrarea prin spații, apoi parcurge fiecare element cu ajutorul metodei `maptoInt()`, transformându-l în număr întreg.
 
 ```java live
 String[] words = {"abc", "def", "geh", "yyy"};
@@ -201,6 +203,10 @@ for (String word : words) {
 }
 ```
 
+În exemplul de mai sus, folosim metoda `map()` perntru a parcurge elementele din matricea cu cuvinte.
+
+w -> w + "yyy" înseamnă ca această funcție lambda acceptă un paramtru, care poate fi numit "w", "x", "e", "element" sau oricum doriț, și efectuează o operație asupra fiecărui element (în acest caz, concatenarea unui șir la cel existent).
+
 [/slide]
 
 [slide hideTitle]
@@ -209,9 +215,9 @@ for (String word : words) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-26-converting-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Sunt **două** moduri de a converti colecțiile în Java:
+Există **două** moduri de a converti colecții în Java:
 
-- `toArray()` - converteșye colecția într-o **matrice**
+- `toArray()` - convertește colecția într-o **matrice**
 
 ```java
 int[] numbers = Arrays.stream(scanner.nextLine()
@@ -236,7 +242,7 @@ List<Integer> numbers = Arrays.stream(scanner.nextLine()
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-27-filtering-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Metoda `filter()` - trece printr-o colecție și selectează elementele după o anumită condiție dată
+Metoda `filter()` parcurge o colecție și selectează elementele care indeplinesc anumite condiții:
 
 ```java
 int[] numbers = Arrays.stream(scanner.nextLine()
@@ -245,6 +251,7 @@ int[] numbers = Arrays.stream(scanner.nextLine()
             .filter(n -> n > 0)
             .toArray();
 ```
+În exemplul de mai sus separăm datele de intrare prin spații, transformăm fiecare element într-un număr întreg, iar apoi filtrămm și stocăm doar elementele care sunt mai mari decât 0.
 
 [/slide]
 
@@ -268,9 +275,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Citiți o matrice de  **șiruri**, luați în considerare doar cuvintele a căror lungime este **pară**.
+Citiți o matrice de **șiruri**. Tipăriți doar cuvintele a căror lungime este **un număr par**, fiecare pe o nouă linie.
 
-## Intrare/Limitări
+## Intrare / Constrângeri
 
 Citiți o matrice de șiruri.
 
@@ -278,7 +285,7 @@ Citiți o matrice de șiruri.
 
 Imprimați fiecare cuvânt pe o nouă linie.
 
-Filtrați cuvintele a căror lungime este pară.
+Filtrați cuvintele a căror lungime este un număr par.
 
 
 ## Exemple
@@ -398,9 +405,9 @@ sell
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-30-sorting-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There are **two** ways to sort collections:
+Există **două** metode de a sorta colecții:
 
-- Sortarea în ordine **ascendentă** (**Naturală**)
+- Sortarea în ordine **crescătoare** (**naturală**)
 
 ```java live no-template
 import java.util.*;
@@ -424,7 +431,7 @@ public class Main {
 }
 ```
 
-- Sortarea  în ordine **descendentă**:
+- Sortarea în ordine **descrescătoare**:
 
 ```java live no-template
 import java.util.*;
@@ -452,12 +459,12 @@ public class Main {
 
 [slide hideTitle]
 
-# Sorting Collections by Multiple Criteria
+# Sortarea colecțiilor după mai Multe Criterii
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-31-sorting-collections-by-multiple-criteria-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-De asemenea, este posibil să sortați colecții după multe criterii.
+Colecțiile pot fi sortate după mai multe criterii.
 
 Vedeți următorul exemplu:
 
@@ -485,11 +492,11 @@ products.entrySet()
 
 [slide hideTitle]
 
-# Using Functional ForEach
+# Utilizarea Metodei ForEach()
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-32-33-using-functional-for-each-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Metoda `forEach()` pentru a itera prin fiecare perechie dintr-un Map.
+Metoda `forEach()` este utilizată pentru a itera prin fiecare pereche dintr-o instanță Map.
 
 Aruncați o privire asupra exemplului de mai jos:
 
@@ -564,19 +571,20 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Citiți **o listă de numere întregi** și  **imprimați cele mari 3 dintre acestea**.
+## Descriere
 
-Dacă sunt **puținr** decât 3, le imprimați pe **toate**.
+Citiți **o listă de numere întregi** și **imprimați cele mai mari 3 numere dintre acestea**.
+
+Dacă există mai **puțin** de 3 numere, imprimați-le pe **toate**.
 
 Ordonați lista folosind **Stream API**.
 
-## Intrare/Limitări
-Citiți o listă de numere îtregi.
+## Intrare/ Constrângeri
+Citiți o listă de numere întregi.
 
 ## Ieșire 
 
-Imprimați cele mai mari 3 numere cu o buclă  **for**.
+Imprimați cele mai mari 3 numere.
 
 ## Exemple
 | **Intrare** | **Ieșire** |
