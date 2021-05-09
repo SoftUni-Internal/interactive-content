@@ -4,14 +4,12 @@
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-36-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-## In această lecție ați învățat:
+## În această lecție ați învățat:
 
-- Map conține perechi `{key -> value}`
-   - `keyset`  cuprinde un set de chei unice
+- Maps conțin perechi `{key -> value}`
+   - `keyset` cuprinde un set de chei unice
    - `values` cuprinde o colecție de valori 
-    - iterarea prin map consideră intrările ca `Map.Entry<K, V>`
-
-- Lambda și Stream API ajută la procesarea colecțiilor 
+    - iterarea printr-o instanță map preia cu ajutorul expresiei `Map.Entry<K, V>`
 
 ```java
 import java.util.Map;
@@ -22,10 +20,25 @@ public class Main {
     }
 }
 ```
-## In următoarea lecție veți învăța:
+
+- Lambda și Stream API ajută la procesarea colecțiilor 
+
+- Puteți folosi `map()` pentru manipularea elementelor dintr-o colecție 
+
+```java
+String[] words = {"abc", "def", "geh", "yyy"};
+words = Arrays.stream(words)
+            .map(w -> w + "yyy")
+            .toArray(String[]::new);
+for (String word : words) {
+    System.out.println(word);
+}
+```
+
+## În următoarea lecție veți învăța:
 
 - Clase
-  - definiȚia claselor
+  - definiția claselor
   - metode, proprietăți, câmpuri
 
 - Obiecte 
