@@ -5,22 +5,22 @@
 
 ## In this lesson you will learn:
 
-**1. Express​**
+**1. Express**
 
-- Introduction​
+- Introduction
 
-- Router​
+- Router
    - how does it work
 
-- Middleware​
+- Middleware
    - what is a middleware
 
-- Static Files​
+- Static Files
    - how to save and use static files using Express
    
-**2. View Engines**​
+**2. View Engines**
 
-- Templating Concepts​
+- Templating Concepts
    - we will learn what a template is as a concept
 
 - Handlebars
