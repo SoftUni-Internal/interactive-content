@@ -746,8 +746,8 @@ Trimiteți codul dvs. ca un modul revelator, care conține cele **trei clase**.
 
 Toate definițiile trebuie denumite așa cum este descris mai sus.
 
-## Sugestii
-
+[hints]
+[hint]
 Ar trebui să începem prin crearea unei clase părinte care să dețină toate proprietățile partajate între diferitele poziții.
 
 Privind descrierea problemei, vedem următoarea structură pentru obiectul nostru părinte:
@@ -762,7 +762,8 @@ Privind descrierea problemei, vedem următoarea structură pentru obiectul nostr
     collectSalary: Function
 }
 ```
-
+[/hint] 
+[hint]
 Variabilele de date vor face parte din obiectul atașat la contextul său local cu **aceasta** din **constructor**.
 
 Orice proprietăți care trebuie inițializate la momentul instanțierii sunt definite ca parametri de funcție.
@@ -787,7 +788,8 @@ Funcțiile sunt definite în interiorul corpului clasei.
     }
 }
 ```
-
+[/hint] 
+[hint]
 Descrierea problemei necesită ca clasa **părinte** să fie **abstractă**.
 
 Pentru a realiza acest lucru, trebuie să adăugăm o condiție în constructor care împiedică instanțierea sa directă.
@@ -805,7 +807,8 @@ constructor(name, age) {
     this.tasks = [];
 }
 ```
-
+[/hint] 
+[hint]
 Funcția `work()` trebuie să parcurgă lista sarcinilor și să o tipărească pe cea curentă.
 
 Cel mai simplu mod de a face acest lucru este să deplasați primul element din matrice și să îl împingeți până la capăt.
@@ -817,7 +820,8 @@ work() {
     this.tasks.push(currentTask)
 }  
 ```
-
+[/hint] 
+[hint]
 Imprimarea salariului este destul de simplă. Cu toate acestea, deoarece managerul are un bonus la salariu, cel mai bine este să obțineți întreaga sumă cu o funcție internă, pe care managerul să o poată **suprascrie**.
 
 ```js
@@ -829,13 +833,15 @@ getSalary() {
     return this.salary;
 }
 ```
-
+[/hint] 
+[hint]
 Acum, orice obiecte care moștenesc de la **Angajat** vor avea toate proprietățile lor, precum și orice noutate care este definit în declarația lor.
 
 Pentru a moșteni (extinde) o clasă, o nouă clasă este definită cu cuvântul cheie **extinde** după numele său.
 
 De asemenea, trebuie să apeleze constructorul părinte din constructorul lor, astfel încât lanțul prototip este stabilit.
-
+[/hint]  
+[hint]
 Pentru **Junior** și **Senior**, singura diferență față de părintele **Angajat** este elementele din matricea de sarcini, deoarece acestea pot utiliza funcțiile direct din clasa de bază.
 
 Clasele de copii vor apela părintele cu parametrii necesari și își vor împinge sarcinile direct în matrice.
@@ -859,7 +865,8 @@ class Senior extends Employee {
     }
 }
 ```
-
+[/hint] 
+[hint]
 **Managerul** nu este mult diferit, cu excepția faptului că constructorul său trebuie să atașeze o proprietate **dividend** care este setată inițial la zero.
 
 Definiția sa trebuie, de asemenea, să înlocuiască funcția `getSalary()` pe care am adăugat-o anterior la clasa de bază, care include bonusul.
@@ -877,7 +884,8 @@ class Manager extends Employee {
     }
 }
 ```
-
+[/hint] 
+[hint]
 După ce am terminat cu definițiile tuturor constructorilor de obiecte, trebuie să le înfășurăm într-un modul revelator pentru a fi utilizate de alte părți ale programului nostru, fără a polua spațiul de nume global:
 
 ```js
@@ -911,6 +919,9 @@ class Manager extends Employee {
     }
 }
 ```
+```
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]

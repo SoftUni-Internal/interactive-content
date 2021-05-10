@@ -754,8 +754,8 @@ Submit your code as a revealing module, containing the **three classes**.
 
 All definitions need to be named as described above.
 
-## Hints
-
+[hints]
+[hint]
 We should begin by creating a parent class that will hold all properties shared among the different positions. 
 
 Looking at the problem description, we see the following structure for our parent object:
@@ -770,7 +770,8 @@ Looking at the problem description, we see the following structure for our paren
     collectSalary: Function
 }
 ```
-
+[/hint] 
+[hint]
 Data variables will be part of the object attached to its local context with **this** inside the **constructor**. 
 
 Any properties that need to be initialized at instantiation time are defined as function parameters. 
@@ -795,7 +796,8 @@ class Employee {
     }
 }
 ```
-
+[/hint] 
+[hint]
 The problem description requires that the **parent** class is **abstract**. 
 
 To achieve this, we have to add a condition in the constructor which prevents its direct instantiation. 
@@ -814,7 +816,8 @@ constructor(name, age) {
     this.tasks = [];
 }
 ```
-
+[/hint] 
+[hint]
 The `work()` function has to cycle through the list of tasks and print the current one. 
 
 The easiest way to do this is to shift the first element from the array and push it to the end.
@@ -826,7 +829,8 @@ work() {
     this.tasks.push(currentTask);
 }  
 ```
-
+[/hint]
+[hint]
 Printing the salary is pretty straightforward. However, since the manager has a bonus to his salary, it is best to get the whole sum with an internal function, that the manager can **override**.
 
 ```js
@@ -839,13 +843,15 @@ getSalary() {
     return this.salary;
 }
 ```
-
+[/hint]
+[hint]
 Now any objects that inherit from **Employee** will have all of their properties as well as anything new that is defined in their declaration. 
 
 To inherit (extend) a class, a new class is defined with the **extends** keyword after its name.
 
 They also have to call the parent constructor from their constructor, so the prototype chain is established. 
-
+[/hint]
+[hint]
 For **Junior** and **Senior**, the only difference from the parent **Employee** is the elements inside the tasks array, since they can use the functions directly from the base class. 
 
 Child classes will call the parent with any parameters that are needed and push their tasks directly to the array.
@@ -871,10 +877,11 @@ class Senior extends Employee {
     }
 }
 ```
+[/hint]
+[hint]
+The **Manager** class is not much different, with the exception that its constructor has to attach a **dividend** property that is initially set to zero. 
 
-The **Manager** is not much different, with the exception that his constructor has to attach a **dividend** property that is initially set to zero. 
-
-His definition also needs to override the `getSalary()` function we added to the base class earlier, which includes the bonus.
+Its definition also needs to override the `getSalary()` function we added to the base class earlier, which includes the bonus.
 
 ```js
 class Manager extends Employee {
@@ -890,7 +897,8 @@ class Manager extends Employee {
     }
 }
 ```
-
+[/hint]
+[hint]
 After we are done with the definitions of all object constructors, we need to wrap them in a revealing module for use by other parts of our program without polluting the global namespace:
 
 ```js
@@ -925,6 +933,8 @@ class Manager extends Employee {
     }
 }
 ```
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
