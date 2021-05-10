@@ -15,7 +15,7 @@ You can [read the documentation here](https://github.com/softuni-practice-server
 ## Your Task
 Create a JavaScript application that **records** and **displays** messages. 
 
-The user must be able to:
+The user should be able to:
 - **post** a message, which contains a name and content 
 - **retrieve** all currently recorded messages
 
@@ -32,7 +32,7 @@ Use the following message structure:
 }
 ```
 
-If you click on the \[**Refresh**\] **button** you should **get all** messages with a **GET request** and display them into the textarea in the following message format:
+If you click on the \[**Refresh**\] **button**, you should **get all** messages with a **GET request** and display them into the text area in the following format:
 
 `{author}: {message}`
 
@@ -51,19 +51,19 @@ If you click on the \[**Refresh**\] **button** you should **get all** messages w
 
 Create a JavaScript program that can **load**, **create** and **delete** entries from a **phonebook**. 
 
-You will be given an **HTML template** to which you must **bind** the needed **functionality**.
+You will be given an **HTML template** to which you have to **bind** the needed **functionality**.
 
 When the \[**Load**\] button is clicked, a **GET** request should be sent to the server to get all phonebook entries. 
 
-Each received entry should be in a `<li>` tag inside the `<ul>` tag with an **id of "phonebook"** in the following format: `<person>: <phone>` and a \[**Delete**\] button attached. 
+Each received entry should be in a `<li>` tag inside the `<ul>` tag with an **id of "phonebook"** in the following format: `<person>: <phone>`. Each entry should also have a \[**Delete**\] button attached. 
 
 Pressing the \[**Delete**\] button should send a **DELETE** request to the server and delete the entry. 
 
 The received response will be an object in the following format:
 
-`{<key>:{person:<person>, phone:<phone>}, <key2>:{person:<person2>, phone:<phone2>,…}` where the `<key>` is a unique key given by the server, while `<person>` and `<phone>` are the actual values.
+`{<key>:{person:<person>, phone:<phone>}, <key2>:{person:<person2>, phone:<phone2>,…}`, where the `<key>` is a unique key given by the server, while `<person>` and `<phone>` are the actual values.
 
-When the \[**Create**\] button is clicked, a new **POST** request should be made to the server with the information from the **person** and **phone textboxes**. 
+When the \[**Create**\] button is clicked, a new **POST** request should be made to the server with the information from the **person** and the **phone textboxes**. 
 
 The aforementioned textboxes should then be cleared and the phonebook should be automatically reloaded (as if the \[**Load**\] button was pressed).
 
@@ -160,7 +160,7 @@ To **create** a book, you have to send a **POST** request to the database and th
 ```
 
 ## Update Book 
-When clicking on the \[**Edit**\] button of a book, fill in the information about the book in the fields, as shown here:
+When clicking on the \[**Edit**\] button of a certain book, fill in the information about the book in the fields, as shown here:
 
 [image assetsSrc="Remote-Databases(26).png" /]
 
@@ -178,7 +178,7 @@ The JSON body should be in the **following** format:
 ```
 
 ## Delete Book 
-By clicking on the delete button, you have to delete the book without confirmation. 
+By clicking on the \[**Delete**\] button, you have to delete the book without confirmation. 
 
 To delete a book, send a **DELETE request** to: `http://localhost:3030/jsonstore/collections/books/:id`
 
@@ -194,7 +194,7 @@ Your task is to implement the CRUD operations and a functionality for User Authe
 
 If the user is not logged in, all of the buttons should be disabled except for the \[**LOAD**\] button.
 
-By clicking it, all the catches should be loaded from the server and render them like on the picture:
+By clicking it, all the catches should be loaded from the server and rendered like on the picture:
 
 [image assetsSrc="Remote-Databases(27).png" /]
 
@@ -220,23 +220,23 @@ Again, this must be available **only** for the **creator of the catch**)
 
 Pressing on the \[**Add**\] button should **submit a new catch** with the values of the inputs in the fieldset with an `id` of "**addFrom**". 
 
-Only acessible for **logged in** users.
+Only accessible for **logged-in** users.
 
 ## Properties
 
 Each **catch** should have:
 
-- `angler` - **string** representing the name of the person who caught the fish
+- `angler` - a **string** representing the name of the person who caught the fish
   
-- `weight` - **floating-point number** representing the weight of the fish in kilograms
+- `weight` - a **floating-point number** representing the weight of the fish in kilograms
   
-- `species` - **string** representing the name of the fish species
+- `species` - a **string** representing the name of the fish species
   
-- `location` - **string** representing the location where the fish was caught
+- `location` - a **string** representing the location where the fish was caught
   
-- `bait` - **string** representing the bait used to catch the fish
+- `bait` - a **string** representing the bait used to catch the fish
   
-- `captureTime` - **integer number** representing the time needed to catch the fish in minutes
+- `captureTime` - an **integer number** representing the time needed to catch the fish in minutes
 
 ## Requests
 
