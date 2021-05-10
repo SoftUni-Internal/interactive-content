@@ -20,7 +20,7 @@ The "**event bus**" receives messages from the "**Publisher**" and then sends th
 
 [slide hideTitle]
 
-# A code example of the Publisher-Subscriber Pattern
+# Demo: Publisher-Subscriber Pattern
 
 The first thing we are going to do is to declare a local variable inside the function to store subscribed callbacks like so, `const subscribers = {}`.
 
@@ -79,10 +79,18 @@ function pubSub() {
 
 The **Pub/Sub** Pattern makes our code more flexible because publishers and subscribers are decoupled and work independently from each other.
 
-It eliminates the need for constant "**polling**". 
+This allows for better scalability because if we want to reuse functionality or to have lots of events, subscribers, publishers, it can be easily done by using the **Pub/Sub** Pattern.
 
-Thus our program becomes faster.
+**Pub/Sub** Pattern eliminates the need to check for fresh data over a given interval by periodically making API requests to a server ("**polling**"),  which makes our program run faster.
 
 It reduces complexity by removing all the point-to-point connections with a single connection to a message point, which will manage subscriptions to decide what messages should be delivered to which endpoints.
 
+**Pub/Sub** Pattern has some disadvantages as well like:
+
+- Makes the code more abstract
+- Makes code harder for debugging 
+
+As a rule of thumb, you should not use any pattern unless you need to.
+
 [/slide]
+
