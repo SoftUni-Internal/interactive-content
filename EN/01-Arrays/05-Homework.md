@@ -383,7 +383,7 @@ public class Main {
 ## Description
 Create a program that **receives an array and a number of rotations** that you have to perform.
 
-The rotations are done by switching the element at index 0 with the element at the last index.
+The rotations are done by moving the first element of the array from the front to the back.
 
 **Print the resulting** array.
 
