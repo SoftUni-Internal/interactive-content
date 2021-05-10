@@ -49,18 +49,21 @@ Vedem că **textboxes** și `div`s au `id` attribuite pe ele:
 ```
 
 Putem lua numerele direct din câmpul de intrare utilizând funcția `getElementById()`.
+[/hint] 
 [hint]
 Dupa ce am luat elementele din DOM, este timpul de a efectua munca actuala.
 
 Obținem valorile celor două **textboxes**. 
 
 ```js
-let firstNumber = document.getElementById('firstNumber').value;
+let firstNumber = document
+  .getElementById('firstNumber').value;
 
-let secondNumber = document.getElementById('secondNumber').value;
+let secondNumber = document
+  .getElementById('secondNumber').value;
 ```
 
-Valoarea unui textbox, așa cum ne-am așteptat, este **text**
+Valoarea unui textbox, așa cum ne-am așteptat, este **text**.
 
 Pentru a obține un **number**, trebuie să folosim o funcție pentru a le **analiza**.
 [/hint] 
@@ -71,10 +74,13 @@ Folosim aceeași funcție pentru a obține elementul **result** după `id` și p
 
 ```js
 function subtract() {
-    let firstNumber = Number(document.getElementById('firstNumber').value);
-    let secondNumber = Number(document.getElementById('secondNumber').value);
+  let firstNumber = Number(document
+    .getElementById('firstNumber').value);
+  let secondNumber = Number(document
+    .getElementById('secondNumber').value);
 
-    document.getElementById('result').textcontent = firstNumber - secondNumber;
+  document.getElementById('result')
+    .textcontent = firstNumber - secondNumber;
 }
 ```
 [/hint] 
@@ -176,15 +182,19 @@ Apoi trebuie să **creați** și să **adăugați** un `<option>` la `<select>` 
 
 [image assetsSrc="JS-Advanced-DOM-Homework-5.gif" /]
 
-## Sugestii
-
-- Funcția dvs. ar trebui să ia valorile **newItemText** și **newItemValue**
-
-După aceea, ar trebui să creați un nou element **option** și să setați **textContent** și **valoarea** sa la cele nou recuperate.
-
--După ce ați făcut toate acestea, ar trebui **să adaugați** nou-creatul `<option>` ca **child** către elementul `<select>` cu id "**menu**"
-
-- În cele din urmă, ar trebui să **ștergeți** valoarea celor două câmpuri **de intrare**
+[hints]
+[hint]
+**Funcția** dvs. ar trebui să ia **valorile** `newItemText` și `newItemValue`.
+[hint]
+După aceea, ar trebui să **creați** un nou element `option` și să setați `textContent` și **valoarea** sa la cele nou recuperate.
+[/hint] 
+[hint]
+După ce ați făcut toate acestea, ar trebui **să adaugați** nou-creatul `<option>` ca **child** către elementul `<select>` cu id "**menu**".
+[/hint] 
+[hint]
+În cele din urmă, ar trebui să **ștergeți** valoarea celor două câmpuri **de intrare** - `input`.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]

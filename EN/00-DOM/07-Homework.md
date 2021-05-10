@@ -49,6 +49,7 @@ We see that the **textboxes** and the `div`s have `id` attributes on them:
 ```
 
 We can take the numbers directly from the input field by using the `getElementById()` function.
+[/hint] 
 [hint]
 After we have taken the **elements** from the **DOM**, it is time to do the actual work.
 
@@ -56,10 +57,10 @@ We get the values of the two **textboxes**
 
 ```js
 let firstNumber = document
-    .getElementById('firstNumber').value;
+  .getElementById('firstNumber').value;
 
 let secondNumber = document
-    .getElementById('secondNumber').value;
+  .getElementById('secondNumber').value;
 ```
 
 The value of a textbox, as one would expect, is **text**. 
@@ -73,13 +74,13 @@ We use the same function to get the **result** element by `id` and change its **
 
 ```js
 function subtract() {
-    let firstNumber = Number(document
-        .getElementById('firstNumber').value);
-    let secondNumber = Number(document
-        .getElementById('secondNumber').value);
+  let firstNumber = Number(document
+    .getElementById('firstNumber').value);
+  let secondNumber = Number(document
+    .getElementById('secondNumber').value);
 
-    document.getElementById('result')
-        .textcontent = firstNumber - secondNumber;
+  document.getElementById('result')
+    .textcontent = firstNumber - secondNumber;
 }
 ```
 [/hint] 
@@ -181,15 +182,19 @@ Then you should **create** and **append** an `<option>` to the `<select>` with a
 
 [image assetsSrc="JS-Advanced-DOM-Homework-5.gif" /]
 
-## Hints
-
-- Your function should take the values of **newItemText** and **newItemValue**
-
-After that, you should create a new **option** element and set its **textContent** and its **value** to the newly retrieved ones.
-
-- Once you have done all of that, you should **append** the newly created `<option>` as a **child** to the `<select>` item with id "**menu**"
-
-- Finally, you should **clear** the value of the two **input** fields
+[hints]
+[hint]
+Your **function** should take the **values** of `newItemText` and `newItemValue`.
+[hint]
+After that, you should **create** a new `option` element and set its `textContent` and its **value** to the newly retrieved ones.
+[/hint] 
+[hint]
+Once you have done all of that, you should **append** the newly created `<option>` as a **child** to the `<select>` item with id "**menu**".
+[/hint] 
+[hint]
+Finally, you should **clear** the value of the two `input` fields.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [code-io /]
