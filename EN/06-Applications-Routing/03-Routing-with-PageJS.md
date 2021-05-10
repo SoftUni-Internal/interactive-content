@@ -29,7 +29,7 @@ page('/user/:id', user.load, user.show);
 
 In this example, we set the URLs and the callbacks: **user.list**, **user.load** and **user.show**.
 
-The **user.list** will be executed when the user is at the **Home page**.
+The **user.list** will be executed when the user is on the **Home page**.
 
 It will list all of the users.
 
@@ -64,8 +64,8 @@ page('/index', function() {
 
 In this example, we check if the user is an **admin** or **not**.
 
-If it is admin, it will redirect to the `/admin` page.
+If the user is an admin, the function will redirect to the `/admin` page.
 
-If not, it will redirect to `/guest`.
+If not, it will redirect to the `/guest` page.
 
 [/slide]
