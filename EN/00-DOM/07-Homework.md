@@ -185,6 +185,7 @@ Then you should **create** and **append** an `<option>` to the `<select>` with a
 [hints]
 [hint]
 Your **function** should take the **values** of `newItemText` and `newItemValue`.
+[/hint] 
 [hint]
 After that, you should **create** a new `option` element and set its `textContent` and its **value** to the newly retrieved ones.
 [/hint] 
@@ -341,17 +342,23 @@ The link action should be **toggleable** (you should be able to **click** the bu
 
 [image assetsSrc="JS-Advanced-DOM-Homework-6.gif" /]
 
-## Hints
+[hints]
+[hint]
+To **change** the text content of a button, you could use `getElementsByClassName`.
 
-- To **change** the text content of a button, you could use **getElementsByClassName**
+However, that returns a **collection** and we need only **one** element from it, so the correct way is to use `getElementsByClassName("button")[0]`.
 
-However, that returns a **collection** and we need only **one** element from it, so the correct way is to use `getElementsByClassName("button")[0]` as it will return the needed `span` element.
+This will **return** the needed `span` element.
+[/hint] 
+[hint]
+After that, we should change the **display style** of the `div` with an `id` of "**extra**".
 
-- After that, we should change the **display style** of the `div` with an id of "**extra**"
-
-If the display style is "**none**", we should **change** it to "**block**" and the **opposite**
-
-- Along with all of this, we should **change** the text content of the **button** to `[Less]`/`[More]`
+If the display style is "**none**", we should **change** it to "**block**" and the **opposite**.
+[/hint] 
+[hint]
+Along with all of this, we should **change** the text content of the **button** to `[Less]`/`[More]`
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]

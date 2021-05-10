@@ -185,6 +185,7 @@ Apoi trebuie să **creați** și să **adăugați** un `<option>` la `<select>` 
 [hints]
 [hint]
 **Funcția** dvs. ar trebui să ia **valorile** `newItemText` și `newItemValue`.
+[/hint] 
 [hint]
 După aceea, ar trebui să **creați** un nou element `option` și să setați `textContent` și **valoarea** sa la cele nou recuperate.
 [/hint] 
@@ -341,17 +342,23 @@ Acțiunea linkului ar trebui să fie **toggleable** (ar trebui să puteți apasa
 
 [image assetsSrc="JS-Advanced-DOM-Homework-6.gif" /]
 
-## Sugestii
+[hints]
+[hint]
+Pentru a **schimba** conținutul textului al unui buton, puteți utiliza `getElementsByClassName`.
 
-- Pentru a **schimba** conținutul textului al unui buton, puteți utiliza **getElementsByClassName**
+Cu toate acestea, aceasta returnează o **colecție** și avem nevoie doar de **un** element din aceasta, așa că modul corect este să folosiți `getElementsByClassName('button')[0]`.
 
-Cu toate acestea, aceasta returnează o **colecție** și avem nevoie doar de **un** element din aceasta, așa că modul corect este să folosiți `getElementsByClassName('button')[0]` deoarece va returna elementul necesar `span`.
+Aceasta va **returna** elementul necesar `span`.
+[/hint] 
+[hint]
+După aceea, ar trebui să schimbăm **stilul de afișare** al `div` cu un `id` de "**extra**".
 
-- După aceea, ar trebui să schimbăm **stilul de afișare** al `div` cu un id de "**extra**"
-
-Dacă stilul de afișare este "**none**", ar trebui să-l **schimbăm** în "**block**" și **opusul**
-
-- Împreună cu toate acestea, ar trebui **să schimbăm** conținutul textului a **butonului** de `[Less]`/`[More]`
+Dacă stilul de afișare este "**none**", ar trebui să-l **schimbăm** în "**block**" și **opusul**.
+[/hint] 
+[hint]
+Împreună cu toate acestea, ar trebui **să schimbăm** conținutul textului a **butonului** de `[Less]`/`[More]`
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
