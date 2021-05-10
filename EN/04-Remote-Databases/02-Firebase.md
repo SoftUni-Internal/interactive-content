@@ -29,7 +29,7 @@ Create a new project by clicking on either "**Add project**" or "**Create a proj
 
 [image assetsSrc="Remote-Databases(2).png" /]
 
-Type in a project **name**, for example "**TestApp**", and click "**Continue**".
+Type in a project **name**, for example, "**TestApp**", and click "**Continue**".
 
 [image assetsSrc="Remote-Databases(3).png" /]
 
@@ -49,7 +49,7 @@ Add a **web application** by clicking on this sign "\<\/\>".
 
 [image assetsSrc="Remote-Databases(6).png" /]
 
-Type in a name for the App, for example, "**books**" and click "**Register app**".
+Type in a name for the App, for example, "**books**", and click "**Register app**".
 
 [image assetsSrc="Remote-Databases(7).png" /]
 
@@ -95,7 +95,7 @@ Copy the **database URL** so that you can use it in **Postman** to create books.
 
 They are the four **operations** for working with **data storage**.
 
-In this example, we will be using the **database** we created earlier in Firebase.
+In this example, we will use the **database** we created earlier in Firebase.
 
 **Note: You may not get the same results as shown in the examples.** 
 
@@ -113,7 +113,7 @@ In this example, we will be using the **database** we created earlier in Firebas
 
 Open **Postman** and create a new request. 
 
-Choose the **GET** method and fort the **URL**, copy and paste the following line into **Postman**:
+Choose the **GET** method and for the **URL**, copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/.json`
 
@@ -121,7 +121,7 @@ Or use the one below, the result will be the same:
 
 `https://softuni-remotedb.firebaseio.com/books.json`
 
-Click the **Send** button to get the response from the server.
+Click on the "**Send**" button to get the response from the server.
 
 As a result, we get all of the books stored in the database.
 
@@ -155,9 +155,9 @@ Choose the **GET** method and for the **URL**, copy and paste the following line
 
 `https://softuni-remotedb.firebaseio.com/books/books/1.json`
 
-Click the **Send** button to get the response from the server.
+Click on the "**Send**" button to get the response from the server.
 
-As a result, we get the book at position **1** from the books array.
+As a result, we get the book at position **1** from the "books" array.
 
 ```js
 {
@@ -166,13 +166,13 @@ As a result, we get the book at position **1** from the books array.
 }
 ```
 
-Now let us try and get the author of the book.
+Let us try and get the author of the book.
 
 Choose the **GET** method and for the **URL**, copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/books/1/author.json`
 
-Click the **Send** button to get the response from the server.
+Click on the "**Send**" button to get the response from the server.
 
 ```js
 "J.K. Rowling"
@@ -180,13 +180,13 @@ Click the **Send** button to get the response from the server.
 
 ## Adding a Book
 
-Now we will add a new book to the database using the **POST** method.
+Next, we will add a new book to the database using the **POST** method.
 
 Choose the **POST** method and for the **URL**, copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books.json`
 
-Click on the **Body** button and then click on the **raw** button.
+Click on the "**Body**" button and then click on the "**raw**" button.
 
 Choose the **JSON** format in the last column.
 
@@ -221,9 +221,9 @@ Choose the **DELETE** method and for the **URL**, copy and paste the following l
 
 `https://softuni-remotedb.firebaseio.com/books/-MOpe8WgPwqaw7tdKwIN.json`
 
-"-MOpe8WgPwqaw7tdKwIN" is the **new book ID** we received when we **created** the book.
+"-MOpe8WgPwqaw7tdKwIN" is the **new book ID** that we received when we **created** the book.
 
-**When we create a book, we will get a different ID. Use The ID you received from the server for the example.**
+**When we create a book, we will get a different ID. Use the ID you received from the server for the example.**
 
 The response from the server will be **200 OK**.  It also will return **null**.
 
@@ -235,7 +235,7 @@ Choose the **PUT** method and for the **URL**, copy and paste the following line
 
 `https://softuni-remotedb.firebaseio.com/books/2.json`
 
-Click on the **Body** button and then click on the **raw** button.
+Click on the "**Body**" button and then click on the "**raw**" button.
 
 Choose the **JSON** format in the last column.
 
@@ -269,7 +269,7 @@ Choose the **PATCH** method and for the **URL**, copy and paste the following li
 
 `https://softuni-remotedb.firebaseio.com/books/2.json`
 
-Click on the **Body** button and then click on the **raw** button.
+Click on the "**Body**" button and then click on the "**raw**" button.
 
 Choose the **JSON** format in the last column.
 
@@ -292,13 +292,13 @@ Here is the response from the server:
 
 ## Using the PUT Method
 
-Now let us try one more example using the **PUT** method.
+Let us see one more example, but this time using the **PUT** method.
 
 Choose the **PUT** method and for the **URL**, copy and paste the following line into **Postman**:
 
 `https://softuni-remotedb.firebaseio.com/books/2.json`
 
-Click on the **Body** button and then click on the **raw** button.
+Click on the "**Body**" button and then click on the "**raw**" button.
 
 Choose the **JSON** format in the last column.
 
@@ -337,7 +337,7 @@ Now, if we send a **GET** request to the server, we will get the following respo
 }
 ```
 
-Be careful with the **PUT** method. Use the **PATCH** method instead.
+Be careful when using the **PUT** method. Use the **PATCH** method instead.
 
 It will update only the data passed with the JSON object.
 
@@ -361,7 +361,7 @@ The response from the server will be **200 OK**, and it will return **null** in 
 
 **Authentication** is about validating your credentials such as Username, ID, and password to verify your identity.
 
-Authorization only occurs after your identity has been **authenticated** by the system.
+**Authorization** only occurs after your identity has been **authenticated** by the system.
 
 This gives you **full access** to resources such as information, files, databases, etc.
 
@@ -373,7 +373,7 @@ This gives you **full access** to resources such as information, files, database
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-All-Books-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-To **get all** of the books, you have to use the **database URL** you received when you created the database, followed the name of the **entity**, which is "**books**", and the "**.json**" extension at end.
+To **get all** of the books, you have to use the **database URL** you received when you created the database, followed by the name of the **entity**, which is "**books**", and the "**.json**" extension at the end.
 
 The method is "**GET**":
 
@@ -418,7 +418,7 @@ Put the **ID** of the **new book** between the curly brackets - **4**, for examp
 
 [image assetsSrc="Remote-Databases(14).png" /]
 
-You can also do that **directly** from the database interface.
+We can also do that **directly** from the database interface.
 
 [/slide]
 
