@@ -384,7 +384,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Creați un program care **primește o matrice și numărul de rotații** pe care trebuie să le efectuați. Rotațiile sunt făcute prin plasarea elementului corespunzător indicelui 0 la finalul secvenței.
+Creați un program care **primește o matrice și numărul de rotații** pe care trebuie să le efectuați. Rotațiile sunt făcute prin mutarea primului element din matrice la finalul secvenței.
 
 **Imprimați** matricea rezultată.
 
