@@ -282,7 +282,7 @@ Array.prototype.sum = () => {
   let sum = 0;
 
   for (let i = 0; i < this.length; i++) {
-    sum += this[i]
+    sum += this[i];
   }
 
   return sum;
@@ -437,84 +437,80 @@ Clasa **PartyBalloon** ar trebui să aibă o **panglică de proprietate** care e
 
 Implementați o altă clasă **BirthdayBalloon**, care moștenește clasa **PartyBalloon** și este inițializată cu **1 parametru suplimentar** - **text** (Șir). **textul** ar trebui să fie o proprietate și ar trebui să aibă un **getter**.
 
-## Sugestii
 
-În primul rând, trebuie să scriem o funcție, care va ține clasele noastre.
+[hints]
+[hint]
+În primul rând, trebuie să scriem o **funcție**, care va ține clasele noastre.
 
-Creăm o funcție simplă și, adăugăm prima clasă, clasa de bază pentru toate baloanele.
+Creăm o funcție simplă și, adăugăm prima **clasă**, clasa de **bază** pentru toate **baloanele**.
 
 ```js
-function solve() {
-    class Ballon {
-        constructor(color, gasWeight) {
-            this.color = color;
-            this.gasWeight = gasWeight;
-        }
+function balloons() {
+  class Ballon {
+    constructor(color, gasWeight) {
+      this.color = color;
+      this.gasWeight = gasWeight;
     }
+  }
 }
 ```
-
+[/hint] 
+[hint]
 Acum că avem clasa noastră de bază, putem crea prima clasă pentru copii - **PartyBalloon**, care extinde clasa de bază **Balloon**.
 
 După moștenirea clasei **Balloon**, constructorul clasei **PartyBalloon** va necesita utilizarea metodei `super()` pentru a inițializa constructorul de bază **Balloon**.
 
-De asemenea, trebuie să adăugăm proprietatea obiectului **ribbon** în constructorul clasei **PartyBalloon**.
-
-Acesta este pentru tine de făcut.
-
 ```js
-function solve() {
-    class Ballon {
-        constructor(color, gasWeight) {
-            this.color = color;
-            this.gasWeight = gasWeight;
-        }
-    }
+class PartyBallon extends Ballon {
+  constructor(color, gasWeight,
+    ribbonColor, ribbonLength) {
 
-    class PartyBallon extends Ballon {
-        constructor(color, gasWeight, ribbonColor, ribbonLength) {
-            super(color, gasWeight);
-            // TODO: Initialize ribbon object
-        }
+    super(color, gasWeight);
+    // TODO: Initialize ribbon object
 
-        get ribbon() {
-            return this._ribbon;
-        }
-    }
+  }
 
-    return {
-        Ballon: Ballon,
-        PartyBallon: PartyBallon,
-        BirthdayBallon: BirthdayBallon
-    }
+  get ribbon() {
+    return this._ribbon;
+  }
 }
 ```
 
+De asemenea, trebuie să adăugăm proprietatea obiectului **ribbon** în constructorul clasei **PartyBalloon**.
+
+Acesta este pentru tine de făcut.
+[/hint] 
+[hint]
 Acum, că știm cum să moștenim clase, creați singuri clasa **BirthdayBalloon**.
 
 Clasa **BirthdayBalloon** ar trebui să extindă clasa **PartyBalloon** și să adauge o **proprietate suplimentară**.
 
 Este la fel ca clasa anterioară.
-
-În cele din urmă, trebuie să returnăm un obiect care conține toate clasele noastre, astfel încât să putem trimite soluția.
+[/hint] 
+[hint]
+În cele din urmă, trebuie să **returnăm** un obiect care conține **toate** clasele noastre, astfel încât să putem **trimite** soluția.
 
 ```js
-function solve() {
-    class Ballon {}
+function balloons() {
+  class Ballon {...}
 
-    class PartyBallon extends Ballon {}
+  class PartyBallon extends Ballon {...}
 
-    class BirthdayBallon extends PartyBallon {}
+  class BirthdayBallon extends PartyBallon {...}
 
-    return {
-        Ballon: Ballon,
-        PartyBallon: PartyBallon,
-        BirthdayBallon: BirthdayBallon
-    }
+  return {
+    Ballon: Ballon,
+    PartyBallon: PartyBallon,
+    BirthdayBallon: BirthdayBallon
+  }
 }
 ```
+[/hint]
+[/hints]
 
-Trimiteți o funcție **(NU IIFE)**, care conține toate clasele și le returnează ca obiect.
+## Trimitere
+
+Trimiteți o **funcție (NU IIFE)**, care conține toate clasele și le returnează ca obiect.
 
 [/task-description]
 [code-io /]

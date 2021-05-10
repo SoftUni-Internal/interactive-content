@@ -280,7 +280,7 @@ Array.prototype.sum = () => {
   let sum = 0;
 
   for (let i = 0; i < this.length; i++) {
-    sum += this[i]
+    sum += this[i];
   }
 
   return sum;
@@ -295,7 +295,7 @@ Array.prototype.average = () => {
 [/hint] 
 [/hints]
 
-## Submission
+## Submission
 
 To be able to submit the solution, we need to wrap our program in an "**IIFE**". 
 
@@ -442,85 +442,77 @@ The ribbon property should have a **getter**.
 
 Implement another class - **BirthdayBalloon**, which inherits the **PartyBalloon** class and is initialized with **1 extra parameter** - **text** (String). 
 
-The **text** should be a property and should have a **getter**
+The **text** should be a property and should have a **getter**.
 
-## Hints
+[hints]
+[hint]
+First, we need to write a **function** that will hold our classes. 
 
-First, we need to write a function that will hold our classes. 
-
-We create a simple function and, we add the first class, the base class for all Balloons to it.
+We create a simple function and, we add the first **class**, the **base** class for all **Balloons** to it.
 
 ```js
-function solve() {
-    class Ballon {
-        constructor(color, gasWeight) {
-            this.color = color;
-            this.gasWeight = gasWeight;
-        }
+function balloons() {
+  class Ballon {
+    constructor(color, gasWeight) {
+      this.color = color;
+      this.gasWeight = gasWeight;
     }
+  }
 }
 ```
-
+[/hint] 
+[hint]
 Now that we have our base class, we can create the first child class - the **PartyBalloon**, which extends the base **Balloon** class.
 
 Upon inheriting the **Balloon** class, the constructor of the **PartyBalloon** class will require the use of the `super()` method to initialize the **Balloon** base constructor.
 
-We also need to add the **ribbon** object property in the constructor of the **PartyBalloon** class. 
-
-This one is for you to do.
-
 ```js
-function solve() {
-    class Ballon {
-        constructor(color, gasWeight) {
-            this.color = color;
-            this.gasWeight = gasWeight;
-        }
-    }
+class PartyBallon extends Ballon {
+  constructor(color, gasWeight,
+    ribbonColor, ribbonLength) {
 
-    class PartyBallon extends Ballon {
-        constructor(color, gasWeight, 
-            ribbonColor, ribbonLength) {
-            super(color, gasWeight);
-            // TODO: Initialize ribbon object
-        }
+    super(color, gasWeight);
+    // TODO: Initialize ribbon object
 
-        get ribbon() {
-            return this._ribbon;
-        }
-    }
+  }
 
-    return {
-        Ballon: Ballon,
-        PartyBallon: PartyBallon,
-        BirthdayBallon: BirthdayBallon
-    }
+  get ribbon() {
+    return this._ribbon;
+  }
 }
 ```
 
+We also need to add the **ribbon** object property in the constructor of the **PartyBalloon** class. 
+
+This one is for you to do.
+[/hint] 
+[hint]
 Now that we know how to inherit classes, create the **BirthdayBalloon** class on your own.
 
 The **BirthdayBalloon** class should extend the **PartyBalloon** class and add an **extra property**.
 
 It is the same as the previous class.
-
-Lastly, we need to return an object containing all of our classes, so we can submit the solution.
+[/hint] 
+[hint]
+Lastly, we need to **return** an object containing **all** of our classes, so we can **submit** the solution.
 
 ```js
-function solve() {
-    class Ballon {}
+function balloons() {
+  class Ballon {...}
 
-    class PartyBallon extends Ballon {}
+  class PartyBallon extends Ballon {...}
 
-    class BirthdayBallon extends PartyBallon {}
+  class BirthdayBallon extends PartyBallon {...}
 
-    return {
-        Ballon: Ballon,
-        PartyBallon: PartyBallon,
-        BirthdayBallon: BirthdayBallon
-    }
+  return {
+    Ballon: Ballon,
+    PartyBallon: PartyBallon,
+    BirthdayBallon: BirthdayBallon
+  }
 }
 ```
+[/hint]
+[/hints]
 
 ## Submission
 
