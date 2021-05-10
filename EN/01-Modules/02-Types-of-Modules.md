@@ -74,7 +74,7 @@ The path is **relative to the file in which you do the import**.
 
 ## Exporting
 
-To **export** modules in Node\.js, we use the **module.exports** object.
+To **export** modules in Node.js, we use the **module.exports** object.
 
 Whatever you push in the **module.exports** object is made globally available to **other modules**.
 
