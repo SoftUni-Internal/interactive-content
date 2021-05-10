@@ -59,11 +59,11 @@ It must contain the following functionality:
 
 - Add Cat `/addCat`, where a new cat can be created and stored in the shelter "database" and all created breeds before that are shown in the selected menu.
 
-[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-3.jpg" /]
+[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-3.png" /]
 
 Currently, these 5 breeds are created (**Bombay Cat**, **American Bobtail Cat**, **Bengal Cat**, **British Shorthair Cat**, and **Unknown**)
 
-[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-4.jpg" /]
+[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-4.png" /]
 
 
 [/slide]
@@ -77,9 +77,9 @@ Adding a new cat breed called "**Persian cat**"
 
 After that we create **a new** cat with the newly created **breed** "**Persian cat**", **name** "**Niya**", **description** "**Lonely and lazy cat seek for a hospitable owner**" and imported image.
 
-[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-6.jpg" /]
+[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-6.png" /]
 
-[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-7.jpg" /]
+[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-7.png" /]
 
 After clicking the `[ADD CAT]` **button**, a **redirect** should be followed and the Home page **('/')** should be shown with all cats in the shelter, including the new one.
 
@@ -87,11 +87,11 @@ After clicking the `[ADD CAT]` **button**, a **redirect** should be followed and
 
 For instance, if we click over Jerry's `[Change Info]` button, the following page should be shown:
 
-[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-9.jpg" /]
+[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-9.png" /]
 
 We change Jerry's **name** and **breed**:
 
-[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-10.jpg" /]
+[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-10.png" /]
 
 After clicking the `[EDIT CAT]` **button**, the redirect to the Home page `/` should follow and the changes should be applied:
 
@@ -424,7 +424,7 @@ Restart the server and go to the `localhost:3000/cats/add-cat`
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-51.jpg" /]
 
-[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-52.jpg" /]
+[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-52.png" /]
 
 [/slide]
 
@@ -476,7 +476,7 @@ Now every single breed which is created by the app is saved in this JSON file.
 
 The next step is to visualize all breeds from this JSON file, into the **select menu** as **options** in the `addCat.html` because now the Fluffy Cat Breed is just a placeholder.
 
-[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-59.jpg" /]
+[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-59.png" /]
 
 [/slide]
 
@@ -519,7 +519,7 @@ Now let us add another breed just to check if this logic is working fine:
 
 And after we open the **Add Cat** Tab, you will see this time the options are the actual breeds inside the JSON file.
 
-[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-64.jpg" /]
+[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-64.png" /]
 
 As you can guess we can use the same logic to render all created cats on the home page, but first you should make the logic where a new cat is added to our `cat.json` file via a form.
 
@@ -552,7 +552,7 @@ And via `readFile()` and `writeFile()` functions in `fs module` you can get all 
 
 Here is the example:
 
-[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-67.jpg" /]
+[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-67.png" /]
 
 This time if we open the `cats.json` file it will not be an empty array anymore.
 
