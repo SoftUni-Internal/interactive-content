@@ -167,11 +167,11 @@ The browsers ignore the second parameter, and that is why it is an empty string.
 
 Before we call `pushState()`, the URL will look like this:
 
-[image assetsSrc="JS-Applications-Routing-12.jpg" /]
+[image assetsSrc="JS-Applications-Routing-12.png" /]
 
 After the `pushState()` method is instantiated the URL would be like this:
 
-[image assetsSrc="JS-Applications-Routing-13.jpg" /]
+[image assetsSrc="JS-Applications-Routing-13.png" /]
 
 [/slide]
 
@@ -199,11 +199,11 @@ After we instantiate the `replaceState()` method, it will modify the current his
 
 Before the `replaceState()` method is instantiated, the URL will look like this:
 
-[image assetsSrc="JS-Applications-Routing-14.jpg" /]
+[image assetsSrc="JS-Applications-Routing-14.png" /]
 
 After we call `replaceState()`, the URL would be like this:
 
-[image assetsSrc="JS-Applications-Routing-15.jpg" /]
+[image assetsSrc="JS-Applications-Routing-15.png" /]
 
 [/slide]
 
