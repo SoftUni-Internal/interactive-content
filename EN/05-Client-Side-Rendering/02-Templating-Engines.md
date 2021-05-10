@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-11-12-Templating-Engine-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In **templating**, each element of the user interface is stored in a **separate file**, called a **template**.
+When using **templating**, each element of the user interface is stored in a **separate file** (a **template**).
 
 [image assetsSrc="server-side-rendering(1).png" /]
 
@@ -13,11 +13,11 @@ A **templating engine** enables us to use these **template files** in our applic
 
 **At runtime**, the templating engine **replaces variables** in the template files with actual **values**.
 
-These values are **inserted** via **rendering context**.
+These values are **inserted** by **rendering context**.
 
-Combining **multiple templates** results in a **layout**.
+Combining **multiple templates** makes up a **layout**.
 
-This approach enables an **easier** and more **efficient** way to design an HTML page.
+This approach creates an **easier** and more **efficient** way to design HTML pages.
 
 [/slide]
 
@@ -43,8 +43,8 @@ There are many different types of templating engines, each with a distinct set o
 
 - **Angular**
     * a JavaScript framework
-    * much steeper learning curve
-    * requires you to be familiar with TypeScript
+    * much steeper learning curve than the prevous two
+    * requires TypeScript knowledge
 
 
 ## Standalone Packages
@@ -59,7 +59,7 @@ There are many different types of templating engines, each with a distinct set o
     * allows rendering and partial updating of templates
     * compatible with all major browsers
 
-In the remainder of this lesson, we will discuss lit-html in more depth.
+In this lesson, we will discuss lit-html in more depth.
 
 - **Web Components**
     * a suite of different technologies

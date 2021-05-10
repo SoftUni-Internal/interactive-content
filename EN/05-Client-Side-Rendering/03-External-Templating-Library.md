@@ -6,13 +6,13 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-15-16-What-Is-Lit-Html-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Lit-html** is a simple **templating library**, part of the Polymer Project.
+**Lit-html** is a simple **templating library** - part of the Polymer Project.
 
-It is built on **tagged template literals**, a JavaScript feature, introduced in ECMAScript 6.
+It is built on **tagged template literals** which is a JavaScript feature introduced in ECMAScript 6.
 
-As you may know, template literals support **multiline input**, as well as **interpolation**.
+Template literals support **multiline input**, as well as **interpolation**.
 
-Tagged template literals allow us to put a **function name** before the opening backtick.
+Tagged template literals allow us to put a **function name** before an opening backtick.
 
 The corresponding **function** will **receive** its **arguments** through the template literal:
 
@@ -37,9 +37,9 @@ There are a few ways to **install** lit-html:
 
 ## Installing lit-html using an NPM Package
 
-To install lit-html via the **Node Package Manager**\(NPM\), we must have **Node.js** [installed](https://nodejs.org/en/).
+To install lit-html through the **Node Package Manager**\(NPM\), we should first have **Node.js** [installed](https://nodejs.org/en/).
 
-After opening a terminal in our **project directory**, type:
+Openin a terminal in the **project directory** and type in:
 [image assetsSrc="js-application-client-side-rendering-lit-html-install-1.png" /]
 
 `npm install lit-html`
@@ -53,7 +53,7 @@ You can then use lit-html by importing it in the target file:
 [image assetsSrc="js-application-client-side-rendering-lit-html-install-3.png" /]
 
 
-The `html` tag function is used by lit-html to represent the **template** to be rendered.
+The `html` tag function is used by lit-html to specify the **template** to be rendered.
 
 The `render` function accepts a template as a first parameter and **renders** it.
 
@@ -61,7 +61,7 @@ The `render` function accepts a template as a first parameter and **renders** it
 
 You can also import lit-html **without** having to install it, using the `unpkg` CDN.
 
-At the top of your script file, type:
+At the top of your script file, type in:
 
 `import {html, render} from 'https://unpkg.com/lit-html?module';`
 
@@ -94,7 +94,7 @@ In order to use **lit-html**, you must **import** it via path:
 
 Since the `import` statement only works in module scripts, it is **important** to add `type="module"` as an attribute to the `script` tag.
 
-To import an **external file** instead:
+We can import **external files**:
 
 ```js
 <script type="module" src="index.js"></script>
@@ -104,11 +104,11 @@ It is recommended to use [Live Server](https://github.com/tapio/live-server#read
 
 It saves time by **automatically** reloading when it detects changes in your code.
 
-You can install it by typing `npm install -g live-server` in a command-line tool.
+You can install it by typing `npm install -g live-server` in the command-line.
 
 [image assetsSrc="js-application-client-side-rendering-live-server-install-2.png" /]
 
-To **start the server**, type `live-server`.
+To **start the server**, type in `live-server`.
 
 [image assetsSrc="js-application-client-side-rendering-live-server-install-3.png" /]
 
@@ -116,7 +116,7 @@ By default, the server will **start running on port 8080**.
 
 A browser window will open **automatically**.
 
-If it does not, go to **localhost:8080**.
+If it does not - specify **localhost:8080**.
 
 [/slide]
 
@@ -196,7 +196,7 @@ let cssClasses = ['main', 'important'];
 const demoTemplate = (cssClasses) => html`<div class=${cssClasses.join(' ')}>This text will be stylised</div>`;
 ```
 
-Since HTML attributes are **strings**, any expression we put must **return** a value that can be **converted** into a string.
+Since HTML attributes are **strings** any expression we use must **return** a value that can be **converted** into a string.
 
 The above template will render as follows:
 
@@ -206,7 +206,7 @@ The above template will render as follows:
 
 ## Boolean Attribute Binding
 
-To denote an attribute as a **boolean**, we put a question mark right before its name - `?attribute`:
+To denote an attribute as a **boolean**, we place a question mark right before its name - `?attribute`:
 
 ```js
 const template = (data) => html`<input type="submit" value="Submit">
@@ -214,9 +214,9 @@ const template = (data) => html`<input type="submit" value="Submit">
 
 ```
 
-This can be useful when we want to display additional information, depending on a **condition**.
+This can be useful when we want to display additional information depending on a **condition**.
 
-Like displaying and hiding an **error message**, for example.
+Like displaying and hiding an **error message** for example.
 
 [/slide]
 
@@ -226,13 +226,13 @@ Like displaying and hiding an **error message**, for example.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-22-Property-Binding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-By putting a **period** `.` before the **property name**, we can bind to a node's **JavaScript properties**:
+By putting a **period** `.` before the **property name**, we can bind elements to a node's **JavaScript properties**:
 
 ```js
 const template = (data) => html`<user-list .items=${users} id="users"></user-list>`;
 ```
 
-Property bindings can also be used to **pass data**, such as a list of users, to **subcomponents**.
+Property bindings can also be used to **pass data** (such as a list of users) to **subcomponents**.
 
 [/slide]
 
@@ -243,13 +243,13 @@ Property bindings can also be used to **pass data**, such as a list of users, to
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-23-Handling-Events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The syntax for **handling events** looks like a property binding, but it has the **prefix** `@` and the name of the **event** after it - `@onchange`:
+The syntax to **handle events** looks like a property binding but it has the `@` **prefix** and the name of the **event** after it - `@onchange`:
 
 ```js
 const myButton = () => html`<button @click=${handleClick}>Click Here</button>`;
 ```
 
-In this example, we use the `handleClick` object as an **event listener**, but we can also use a **plain function**.
+In this example, we use the `handleClick` object as an **event listener** but we can also use a **plain function**.
 
 ```js
 let handleClick = {
@@ -277,7 +277,7 @@ The `capture` boolean is used to make sure that events of this type will be disp
 
 Unlike other templating engines, like Handlebars, lit-html has **no built-in control-flow constructs**. 
 
-We can use a normal JavaScript **ternary expression** instead:
+We can use a normal JavaScript **ternary expression**:
 
 ```js
 html`
@@ -289,7 +289,7 @@ html`
 
 ```
 
-Additionally, we can also use **conditional structures** such as the "if" or "switch-case" statements.
+Additionally, we can use **conditional structures** such as the "if" or "switch-case" statements.
 
 [/slide]
 
@@ -370,7 +370,7 @@ let stylesArr = {
 html`<h1 style=${styleMap(stylesArr)}>This title is black</h1>`;
 ```
 
-The **rendered template** looks like this:
+The **rendered template** has the following form:
 
 ```js
 <h1 style="background-color:aqua;color:black;">This title is black</h1>
