@@ -34,7 +34,7 @@ To extract the hash from the URL, we use:
 window.location.href.split('#')[1] || '';
 ```
 
-If we use only **window.location.href**, we will **retrieve the whole URL**.
+If we use only "**window.location.href**", we will **retrieve the whole URL**.
 
 To extract the hash, we can use `split('#')`.
 
@@ -49,7 +49,7 @@ let changePath = function(path) {
 
 We set the current URL in a variable called "**currentPath**".
 
-After, we set the **window.location.href** to the same URL but with a changed hash.
+After that, we set the **window.location.href** to the same URL, but with a changed hash.
 
 [/slide]
 
@@ -59,7 +59,7 @@ After, we set the **window.location.href** to the same URL but with a changed ha
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/En/JS-apps-routing-18-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Subscribing means creating a function, which checks at a certain period if there are any changes.
+Subscribing means creating a function that checks at a certain period if there are any changes.
 
 In our case, we attach the function to the URL.
 
@@ -93,7 +93,7 @@ In this function, we check if the current hash is different.
 
 If not, we assign the hash to the **URL** variable.
 
-After that, we set a **timeout** to 200ms, at which the function to be called.
+After that, we set the **timeout** to be 200ms.
 
 [/slide]
 
@@ -105,7 +105,7 @@ After that, we set a **timeout** to 200ms, at which the function to be called.
 
 The **push-based** routing is a more modern way to handle navigation.
 
-With **push-based** routing we can use **server-side rendering**.
+With **push-based** routing, we can use **server-side rendering**.
 
 The **server-side rendering** helps with **SEO** and **Facebook Open Graph**.
 
@@ -123,7 +123,7 @@ This type of routing allows us to use the **hash-based** routing as intended.
 
 The History API provides access to the browser "**history**" object.
 
-We can use methods like `back()`, `forward()` and `go()` using the the "history" object. 
+We can use methods like `back()`, `forward()` and `go()` using the "history" object. 
 
 This method allows us to have the native navigation that users want.
 
@@ -151,9 +151,9 @@ This method takes three parameters.
 
 - The page **Title** of the new entry
 
-   - it is ignored by most of the browser nowadays
+   - it is ignored by most browsers nowadays
 
-- The **URL** is the new history entry, and it must be from the **same-origin** as the current URL
+- The **URL** is the new history entry, and it has to be from the **same-origin** as the current URL
 
 Here is an example:
 
@@ -165,11 +165,11 @@ We call the `history.pushState()` method and pass the parameters.
 
 The browsers ignore the second parameter, and that is why it is an empty string.
 
-Before we call `pushState()`, the URL will look like this:
+Before we call the `pushState()` method, the URL will look like this:
 
 [image assetsSrc="JS-Applications-Routing-12.jpg" /]
 
-After the `pushState()` method is instantiated the URL would be like this:
+After the `pushState()` method is instantiated, the URL would be like this:
 
 [image assetsSrc="JS-Applications-Routing-13.jpg" /]
 
@@ -219,6 +219,6 @@ The event will trigger when the history object changes.
 
 **Popstate event** will update the current entry to the last that the user has visited.
 
-We can read the current history object with **history.state.property** without waiting for the **popstate** event.
+We can read the current history object using the "**history.state.property**", without waiting for the **popstate** event.
 
 [/slide]
