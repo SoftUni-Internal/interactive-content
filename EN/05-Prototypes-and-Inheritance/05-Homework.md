@@ -208,79 +208,92 @@ The output should be their **return** value.
 
 Structure your code as an **IIFE**.
 
-## Hints
-
+[hints]
+[hint]
 If we have an **instance** of an array, since we know it is an object, adding new properties to it is pretty straightforward:
 
 ```js
 let myArr = [1, 2, 3]
 
 myArr.last = function() {
-    // TODO
+    // TODO...
 };
 ```
 
-However, this only adds our new function to this instance. 
-
-To add all functions just one time and have them work on **all arrays**, we have to attach them to array's **prototype** instead:
+However, this only adds our new function to **this instance**. 
+[/hint] 
+[hint]
+To add all functions just one time and have them work on **all arrays**, we have to attach them to `Array`'s **prototype** instead:
 
 ```js
 Array.prototype.last = function() {
-    // TODO
+    // TODO...
 };
 ```
 
 With such a declaration, we gain access to the context of the calling instance via the "**this**" keyword. 
+[/hint] 
+[hint]
+We can then easily **access indexes** and other existing **properties**. 
 
-We can then easily access indexes and other existing properties. 
-
-Do not forget we do not want to modify the exiting array but to create a new one:
+Do not forget we do **not** want to **modify** the exiting array but to create a **new one**:
 
 ```js
 Array.prototype.last = () => {
-    return this[this.length - 1];
-};
-
-Array.prototype.skip = (n) => {
-    let result = [];
-
-    for (let i = n; i < this.length; i++) {
-        result.push(this[i]);
-    }
-
-    return result;
-};
-
-Array.prototype.take = (n) => {
-    let result = [];
-
-    for (let i = n; i < n; i++) {
-        result.push(this[i]);
-    }
-
-    return result;
+  return this[this.length - 1];
 };
 ```
 
-Note these functions do not have any error checking - if **n** is **negative** or **outside the bounds** of the array, an exception will be thrown, so be careful when using them, or add your validation. 
+```js
+Array.prototype.skip = (n) => {
+  let result = [];
 
-The last two functions require a little bit of arithmetic to be performed:
+  for (let i = n; i < this.length; i++) {
+    result.push(this[i]);
+  }
+
+  return result;
+};
+```
+
+```js
+Array.prototype.take = (n) => {
+  let result = [];
+
+  for (let i = n; i < n; i++) {
+    result.push(this[i]);
+  }
+
+  return result;
+};
+```
+
+Note these functions do not have any error checking - if **n** is **negative** or **outside the bounds** of the array, an exception will be thrown.
+
+Be **careful** when using them, or add your **validation**. 
+[/hint] 
+[hint] 
+The **last two functions** require a little bit of **arithmetic** to be performed:
 
 ```js
 Array.prototype.sum = () => {
-    let sum = 0;
+  let sum = 0;
 
-    for (let i = 0; i < this.length; i++) {
-        sum += this[i]
-    }
+  for (let i = 0; i < this.length; i++) {
+    sum += this[i]
+  }
 
-    return sum;
-};
-
-Array.prototype.average = () => {
-    return this.sum() / this.length;
+  return sum;
 };
 ```
+
+```js
+Array.prototype.average = () => {
+  return this.sum() / this.length;
+};
+```
+[/hint] 
+[/hints]
 
 ## Submission
 
@@ -288,7 +301,7 @@ To be able to submit the solution, we need to wrap our program in an "**IIFE**".
 
 There is **no return value** since the code execution results in functionality being added to an existing object. 
 
-We are ready to submit our solution.
+We are ready to **submit** our solution.
 
 ```js
 (function solve() {

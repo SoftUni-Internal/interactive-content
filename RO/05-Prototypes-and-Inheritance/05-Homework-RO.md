@@ -210,85 +210,100 @@ Rezultatul ar trebui să fie valoarea lor **de returnare**.
 
 Structurați-vă codul ca **IIFE**.
 
-## Sugestii
-
+[hints]
+[hint]
 Dacă avem o **instanță** a unui tablou, deoarece știm că este un obiect, adăugarea de noi proprietăți este destul de simplă:
 
 ```js
 let myArr = [1, 2, 3]
 
 myArr.last = function() {
-    // TODO
+    // TODO...
 };
 ```
 
-Cu toate acestea, acest lucru adaugă doar noua noastră funcție la această instanță.
-
+Cu toate acestea, acest lucru adaugă doar noua noastră funcție la **această instanță**.
+[/hint] 
+[hint]
 Pentru a adăuga toate funcțiile o singură dată și pentru ca acestea să funcționeze la **toate matricele**, trebuie să le atașăm la **prototipul** matricei în schimb:
 
 ```js
 Array.prototype.last = function() {
-    // TODO
+    // TODO...
 };
 ```
 
 Cu o astfel de declarație, avem acces la contextul instanței apelante prin intermediul cuvântului cheie "**this**".
+[/hint] 
+[hint]
+Putem apoi **accesa** cu ușurință **indexuri** și alte **proprietăți** existente.
 
-Putem apoi accesa cu ușurință indexuri și alte proprietăți existente.
-
-Nu uitați că nu dorim să modificăm matricea care iese, ci să creăm una nouă:
+Nu uitați că **nu** dorim să **modificăm** matricea care iese, ci să creăm **una nouă**:
 
 ```js
 Array.prototype.last = () => {
-    return this[this.length - 1];
-};
-
-Array.prototype.skip = (n) => {
-    let result = [];
-
-    for (let i = n; i < this.length; i++) {
-        result.push(this[i]);
-    }
-
-    return result;
-};
-
-Array.prototype.take = (n) => {
-    let result = [];
-
-    for (let i = n; i < n; i++) {
-        result.push(this[i]);
-    }
-
-    return result;
+  return this[this.length - 1];
 };
 ```
 
-Rețineți că aceste funcții nu au nicio verificare a erorilor - dacă **n** este **negativ** sau **în afara limitelor** ale tabloului, va fi afișată o excepție, deci aveți grijă când le utilizați sau adăugați o validare.
+```js
+Array.prototype.skip = (n) => {
+  let result = [];
 
-Ultimele două funcții necesită un pic de aritmetică pentru a fi efectuate:
+  for (let i = n; i < this.length; i++) {
+    result.push(this[i]);
+  }
+
+  return result;
+};
+```
+
+```js
+Array.prototype.take = (n) => {
+  let result = [];
+
+  for (let i = n; i < n; i++) {
+    result.push(this[i]);
+  }
+
+  return result;
+};
+```
+
+Rețineți că aceste funcții nu au nicio verificare a erorilor - dacă **n** este **negativ** sau **în afara limitelor** ale tabloului, va fi afișată o excepție.
+
+Fii **atent** când le utilizați sau adăugați o **validare**.
+[/hint] 
+[hint] 
+**Ultimele două funcții** necesită un pic de **aritmetică** pentru a fi efectuate:
 
 ```js
 Array.prototype.sum = () => {
-    let sum = 0;
+  let sum = 0;
 
-    for (let i = 0; i < this.length; i++) {
-        sum += this[i]
-    }
+  for (let i = 0; i < this.length; i++) {
+    sum += this[i]
+  }
 
-    return sum;
-};
-
-Array.prototype.average = () => {
-    return this.sum() / this.length;
+  return sum;
 };
 ```
+
+```js
+Array.prototype.average = () => {
+  return this.sum() / this.length;
+};
+```
+[/hint] 
+[/hints]
+
+## Trimitere
 
 Pentru a putea trimite soluția, trebuie să ne înfășurăm programul într-un "**IIFE**".
 
 Nu există **nici o valoare de returnare**, deoarece executarea codului are ca rezultat adăugarea funcționalității la un obiect existent.
 
-Suntem gata să trimitem soluția noastră.
+Suntem gata să **trimitem** soluția noastră.
 
 ```js
 (function solve() {
