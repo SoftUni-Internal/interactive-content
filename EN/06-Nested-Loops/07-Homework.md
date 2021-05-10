@@ -1,7 +1,7 @@
 # Homework
 
 [slide hideTitle]
-# Problem: Building
+# Problem with Solution: Building
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-36-problem-and-solution-building-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -332,7 +332,7 @@ Create a program, that:
 [/slide]
 
 [slide hideTitle]
-# Problem: Travelling
+# Problem with Solution: Travelling
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-36-problem-and-solution-travelling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -994,7 +994,7 @@ aaa aab aac aba abb abc aca acb acc baa bab bac bba bbb bbc bca bcb bcc caa cab 
 [/slide]
 
 [slide hideTitle]
-# Problem: Happy Numbers
+# Problem with Solution: Happy Numbers
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/06-nested-loops/EN/interactive-programming-basics-with-java-nested-loops-36-problem-and-solution-happy-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
