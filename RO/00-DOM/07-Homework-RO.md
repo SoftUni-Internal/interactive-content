@@ -34,9 +34,9 @@ Implementați descrierea de mai sus pentru a furniza următoarele funcționalit�
 
 [image assetsSrc="JS-Advanced-DOM-Homework-1.png" /]
 
-## Sugestii
-
-Vedem că **textboxes** și **div**s au **id** attribuite pe ele.
+[hints]
+[hint]
+Vedem că **textboxes** și `div`s au `id` attribuite pe ele:
 
 ```js
 <div id="wrapper">
@@ -46,16 +46,13 @@ Vedem că **textboxes** și **div**s au **id** attribuite pe ele.
       value="22.18" disabled>
    <div id="result"></div>
 </div>
-
 ```
 
-Putem lua numerele direct din câmpul de intrare utilizând funcția **getElementById()**.
-
+Putem lua numerele direct din câmpul de intrare utilizând funcția `getElementById()`.
+[hint]
 Dupa ce am luat elementele din DOM, este timpul de a efectua munca actuala.
 
-Obținem valorile celor două **textboxes**, valoarea unui textbox, așa cum ne-am așteptat, este **text**
-
-Pentru a obține un **number**, trebuie să folosim o funcție pentru a le **analiza**.
+Obținem valorile celor două **textboxes**. 
 
 ```js
 let firstNumber = document.getElementById('firstNumber').value;
@@ -63,9 +60,14 @@ let firstNumber = document.getElementById('firstNumber').value;
 let secondNumber = document.getElementById('secondNumber').value;
 ```
 
-Tot ce a mai rămas acum este să adăugați rezultatul la **div**.
+Valoarea unui textbox, așa cum ne-am așteptat, este **text**
 
-Folosim aceeași funcție pentru a obține elementul **result** după id și pentru a-i schimba **conținutul de text** la rezultatul **extragerii**.
+Pentru a obține un **number**, trebuie să folosim o funcție pentru a le **analiza**.
+[/hint] 
+[hint]
+Tot ce a mai rămas acum este să adăugați rezultatul la `div`.
+
+Folosim aceeași funcție pentru a obține elementul **result** după `id` și pentru a-i schimba **conținutul de text** la rezultatul **extragerii**.
 
 ```js
 function subtract() {
@@ -74,10 +76,10 @@ function subtract() {
 
     document.getElementById('result').textcontent = firstNumber - secondNumber;
 }
-
 ```
+[/hint] 
+[/hints] 
 
-Codul nostru este gata.
 
 ## Trimitere
 

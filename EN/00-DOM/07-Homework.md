@@ -34,9 +34,9 @@ Implement the description above to provide the following functionality:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-1.png" /]
 
-## Hints
-
-We see that the **textboxes** and the `div`s have **id** attributes on them.
+[hints]
+[hint]
+We see that the **textboxes** and the `div`s have `id` attributes on them:
 
 ```js
 <div id="wrapper">
@@ -46,16 +46,13 @@ We see that the **textboxes** and the `div`s have **id** attributes on them.
         value="22.18" disabled>
    <div id="result"></div>
 </div>
-
 ```
 
-We can take the numbers directly from the input field by using the **getElementById()** function.
+We can take the numbers directly from the input field by using the `getElementById()` function.
+[hint]
+After we have taken the **elements** from the **DOM**, it is time to do the actual work.
 
-After we have taken the elements from the DOM, it is time to do the actual work.
-
-We get the values of the two **textboxes**, the value of a textbox, as one would expect, is **text**. 
-
-In order to get a **number**, we need to use a function to **parse them**.
+We get the values of the two **textboxes**
 
 ```js
 let firstNumber = document
@@ -65,9 +62,14 @@ let secondNumber = document
     .getElementById('secondNumber').value;
 ```
 
+The value of a textbox, as one would expect, is **text**. 
+
+In order to get a **number**, we need to use a function to **parse them**.
+[/hint] 
+[hint]
 All that is left now is to append the result to the `div`.
 
-We use the same function to get the **result** element by id and change its **text content** to the result of the **subtraction**.
+We use the same function to get the **result** element by `id` and change its **text content** to the result of the **subtraction**.
 
 ```js
 function subtract() {
@@ -79,10 +81,10 @@ function subtract() {
     document.getElementById('result')
         .textcontent = firstNumber - secondNumber;
 }
-
 ```
+[/hint] 
+[/hints] 
 
-Our code is ready now. 
 
 ## Submission
 
