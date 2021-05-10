@@ -756,183 +756,179 @@ All definitions need to be named as described above.
 
 [hints]
 [hint]
-We should begin by creating a parent class that will hold all properties shared among the different positions. 
+We should begin by creating a **parent class** that will hold all properties **shared** among the different positions. 
 
-Looking at the problem description, we see the following structure for our parent object:
+Looking at the problem description, we see the following **structure** for our parent object:
 
 ```js
 {
-    age: Number,
-    name: String,
-    salary: Number,
-    tasks: [],
-    work: Function,
-    collectSalary: Function
+  age: Number,
+  name: String,
+  salary: Number,
+  tasks: [],
+  work: Function,
+  collectSalary: Function
 }
 ```
 [/hint] 
 [hint]
 Data variables will be part of the object attached to its local context with **this** inside the **constructor**. 
 
-Any properties that need to be initialized at instantiation time are defined as function parameters. 
+Any properties that need to be initialized at **instantiation time** are defined as function **parameters**. 
 
-Functions are defined inside the class body.
+Functions are defined inside the **class body**.
 
 ```js
 class Employee {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-        this.salary = 0;
-        this.tasks = [];
-    }
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+    this.salary = 0;
+    this.tasks = [];
+  }
 
-    work() {
-        // TODO: Cycle tasks
-    }
+  work() {
+    // TODO: Cycle tasks
+  }
 
-    collectSalary() {
-        // TODO: Get paid
-    }
+  collectSalary() {
+    // TODO: Get paid
+  }
 }
 ```
 [/hint] 
 [hint]
 The problem description requires that the **parent** class is **abstract**. 
 
-To achieve this, we have to add a condition in the constructor which prevents its direct instantiation. 
+To achieve this, we have to add a **condition** in the constructor which **prevents** its direct instantiation. 
 
-Using the **new.target** keyword, we can check whether the object is created from the abstract constructor or through a child class.
+Using the `new.target` keyword, we can check whether the object is created from **the abstract constructor** or through a **child class**.
 
 ```js
 constructor(name, age) {
-    if (new.target === Employee) {
-        throw new Error(
-            "Cannot instantiate directly.")
-    }
-    this.name = name;
-    this.age = age;
-    this.salary = 0;
-    this.tasks = [];
+  if (new.target === Employee) {
+    throw new Error(
+      "Cannot instantiate directly.");
+  }
+
+  this.name = name;
+  this.age = age;
+  this.salary = 0;
+  this.tasks = [];
 }
 ```
 [/hint] 
 [hint]
-The `work()` function has to cycle through the list of tasks and print the current one. 
+The `work()` function has to **cycle through** the list of tasks and **print** the current one. 
 
-The easiest way to do this is to shift the first element from the array and push it to the end.
+The easiest way to do this is to **shift** the first element from the array and **push** it to the end.
 
 ```js
 work() {
-    let currentTask = this.tasks.shift();
-    console.log(this.name + currentTask);
-    this.tasks.push(currentTask);
-}  
+  let currentTask = this.tasks.shift();
+  console.log(this.name + currentTask);
+  this.tasks.push(currentTask)
+}
 ```
 [/hint]
 [hint]
-Printing the salary is pretty straightforward. However, since the manager has a bonus to his salary, it is best to get the whole sum with an internal function, that the manager can **override**.
+Printing the **salary** is pretty straightforward. 
+
+However, since the manager has a **bonus** to his salary, it is best to get the whole sum with an internal function, that the manager can **override**.
 
 ```js
 collectSalary() {
-    console.log(`${this.name} received
-        ${this.getSalary()} this month`);
+  console.log(`${this.name} received
+      ${this.getSalary()} this month`);
 }
 
 getSalary() {
-    return this.salary;
+  return this.salary;
 }
 ```
 [/hint]
 [hint]
-Now any objects that inherit from **Employee** will have all of their properties as well as anything new that is defined in their declaration. 
+Now any objects that inherit from **Employee** will have **all** of their properties as well as anything **new** that is defined in their declaration. 
 
-To inherit (extend) a class, a new class is defined with the **extends** keyword after its name.
+To **inherit** (extend) a class, a **new class** is defined with the `extends` keyword after its **name**.
 
-They also have to call the parent constructor from their constructor, so the prototype chain is established. 
+They also have to **call** the parent constructor from their constructor, so the **prototype chain** is established. 
 [/hint]
 [hint]
-For **Junior** and **Senior**, the only difference from the parent **Employee** is the elements inside the tasks array, since they can use the functions directly from the base class. 
+For **Junior** and **Senior**, the only difference from the parent **Employee** is the elements inside the tasks array, since they can use the functions **directly** from the base class. 
 
-Child classes will call the parent with any parameters that are needed and push their tasks directly to the array.
+Child classes will **call** the parent with any parameters that are needed and push their tasks directly to the **array**.
 
 ```js
 class Junior extends Employee {
-    constructor(name, age) {
-        super(name, age);
-        this.tasks.push(' is working on simple task.');
-    }
+  constructor(name, age) {
+    super(name, age);
+    this.tasks.push(' is working on simple task.');
+  }
 }
 ```
 
 ```js
 class Senior extends Employee {
-    constructor(name, age) {
-        super(name, age);
-        this.tasks.push(
-            ' is working on a complicated task.');
-        this.tasks.push(' is taking time off work.');
-        this.tasks.push(
-            ' is supervising junior workers.');
-    }
+  constructor(name, age) {
+    super(name, age);
+    this.tasks.push(
+      ' is working on a complicated task.');
+    this.tasks.push(' is taking time off work.');
+    this.tasks.push(
+      ' is supervising junior workers.');
+  }
 }
 ```
 [/hint]
 [hint]
 The **Manager** class is not much different, with the exception that its constructor has to attach a **dividend** property that is initially set to zero. 
 
-Its definition also needs to override the `getSalary()` function we added to the base class earlier, which includes the bonus.
+Its definition also needs to **override** the `getSalary()` function we added to the base class earlier, which includes the **bonus**.
 
 ```js
 class Manager extends Employee {
-    constructor(name, age) {
-        super(name, age);
-        this.dividend = 0;
-        this.tasks.push(' scheduled a meeting.');
-        this.tasks.push(
-            ' is preparing a quarterly report.');
-    }
-    getSalary() {
-        return this.salary + this.dividend;
-    }
+  constructor(name, age) {
+    super(name, age);
+
+    this.dividend = 0;
+
+    this.tasks.push(' scheduled a meeting.');
+    this.tasks.push(' is preparing a quarterly report.');
+  }
+
+  getSalary() {
+    return this.salary + this.dividend;
+  }
 }
 ```
 [/hint]
 [hint]
-After we are done with the definitions of all object constructors, we need to wrap them in a revealing module for use by other parts of our program without polluting the global namespace:
+After we are done with the **definitions** of all object constructors, we need to **wrap** them in a revealing **module** for use by other parts of our program:
 
 ```js
 class Manager extends Employee {
-    constructor(name, age) {
-        super(name, age);
-        this.dividend = 0;
-        this.tasks.push(' scheduled a meeting.');
-        this.tasks.push(
-            ' is preparing a quarterly report.');
-    }
-    getSalary() {
-        return this.salary + this.dividend;
-    }
+  constructor(name, age) {...}
+  getSalary() {...}
 
-    function solve() {
+  function solve() {
 
-        class Employee {}
+    class Employee {...}
+    class Junior extends Employee {...}
+    class Senior extends Employee {...}
+    class Manager extends Employee {...}
 
-        class Junior extends Employee {}
-
-        class Senior extends Employee {}
-
-        class Manager extends Employee {}
-
-        return {
-            Employee,
-            Junior,
-            Senior,
-            Manager,
-        };
-    }
+    return {
+      Employee,
+      Junior,
+      Senior,
+      Manager,
+    };
+  }
 }
 ```
+
+This prevents global namespace pollution.
 [/hint]
 [/hints]
 

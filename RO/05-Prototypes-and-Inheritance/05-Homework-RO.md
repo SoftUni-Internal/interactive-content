@@ -748,178 +748,179 @@ Toate definițiile trebuie denumite așa cum este descris mai sus.
 
 [hints]
 [hint]
-Ar trebui să începem prin crearea unei clase părinte care să dețină toate proprietățile partajate între diferitele poziții.
+Ar trebui să începem prin crearea unei **clase părinte** care să dețină toate proprietățile **partajate** între diferitele poziții.
 
-Privind descrierea problemei, vedem următoarea structură pentru obiectul nostru părinte:
+Privind descrierea problemei, vedem următoarea **structură** pentru obiectul nostru părinte:
 
 ```js
 {
-    age: Number,
-    name: String,
-    salary: Number,
-    tasks: [],
-    work: Function,
-    collectSalary: Function
+  age: Number,
+  name: String,
+  salary: Number,
+  tasks: [],
+  work: Function,
+  collectSalary: Function
 }
 ```
 [/hint] 
 [hint]
 Variabilele de date vor face parte din obiectul atașat la contextul său local cu **aceasta** din **constructor**.
 
-Orice proprietăți care trebuie inițializate la momentul instanțierii sunt definite ca parametri de funcție.
+Orice proprietăți care trebuie inițializate la **momentul instanțierii** sunt definite ca **parametri** de funcție.
 
-Funcțiile sunt definite în interiorul corpului clasei.
+Funcțiile sunt definite în interiorul **corpului clasei**.
 
 ```js
-  class Employee {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-        this.salary = 0;
-        this.tasks = [];
-    }
+class Employee {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+    this.salary = 0;
+    this.tasks = [];
+  }
 
-    work() {
-        // TODO: Cycle tasks
-    }
+  work() {
+    // TODO: Cycle tasks
+  }
 
-    collectSalary() {
-        // TODO: Get paid
-    }
+  collectSalary() {
+    // TODO: Get paid
+  }
 }
 ```
 [/hint] 
 [hint]
 Descrierea problemei necesită ca clasa **părinte** să fie **abstractă**.
 
-Pentru a realiza acest lucru, trebuie să adăugăm o condiție în constructor care împiedică instanțierea sa directă.
+Pentru a realiza acest lucru, trebuie să adăugăm o **condiție** în constructor care **împiedică** instanțierea sa directă.
 
-Folosind cuvântul cheie **new.target**, putem verifica dacă obiectul este creat din constructorul abstract sau printr-o clasă copil.
+Folosind cuvântul cheie `new.target`, putem verifica dacă obiectul este creat din **constructorul abstract** sau printr-o **clasă copil**.
 
 ```js
 constructor(name, age) {
-    if (new.target === Employee) {
-        throw new Error('Cannot instantiate directly.')
-    }
-    this.name = name;
-    this.age = age;
-    this.salary = 0;
-    this.tasks = [];
+  if (new.target === Employee) {
+    throw new Error(
+      "Cannot instantiate directly.");
+  }
+
+  this.name = name;
+  this.age = age;
+  this.salary = 0;
+  this.tasks = [];
 }
 ```
 [/hint] 
 [hint]
-Funcția `work()` trebuie să parcurgă lista sarcinilor și să o tipărească pe cea curentă.
+Funcția `work()` trebuie să **parcurgă** lista sarcinilor și să o **tipărească** pe cea curentă.
 
-Cel mai simplu mod de a face acest lucru este să deplasați primul element din matrice și să îl împingeți până la capăt.
+Cel mai simplu mod de a face acest lucru este să **deplasați** primul element din matrice și să îl **împingeți** până la capăt.
 
 ```js
 work() {
-    let currentTask = this.tasks.shift();
-    console.log(this.name + currentTask);
-    this.tasks.push(currentTask)
-}  
+  let currentTask = this.tasks.shift();
+  console.log(this.name + currentTask);
+  this.tasks.push(currentTask)
+} 
 ```
 [/hint] 
 [hint]
-Imprimarea salariului este destul de simplă. Cu toate acestea, deoarece managerul are un bonus la salariu, cel mai bine este să obțineți întreaga sumă cu o funcție internă, pe care managerul să o poată **suprascrie**.
+Imprimarea **salariului** este destul de simplă. 
+
+Cu toate acestea, deoarece managerul are un **bonus** la salariu, cel mai bine este să obțineți întreaga sumă cu o funcție internă, pe care managerul să o poată **suprascrie**.
 
 ```js
 collectSalary() {
-    console.log(`${this.name} received ${this.getSalary()} this month`);
+  console.log(`${this.name} received
+      ${this.getSalary()} this month`);
 }
 
 getSalary() {
-    return this.salary;
+  return this.salary;
 }
 ```
 [/hint] 
 [hint]
-Acum, orice obiecte care moștenesc de la **Angajat** vor avea toate proprietățile lor, precum și orice noutate care este definit în declarația lor.
+Acum, orice obiecte care moștenesc de la **Angajat** vor avea **toate** proprietățile lor, precum și orice **noutate** care este definit în declarația lor.
 
-Pentru a moșteni (extinde) o clasă, o nouă clasă este definită cu cuvântul cheie **extinde** după numele său.
+Pentru a **moșteni** (extinde) o clasă, o **nouă clasă** este definită cu cuvântul cheie `extinde` după **numele** său.
 
-De asemenea, trebuie să apeleze constructorul părinte din constructorul lor, astfel încât lanțul prototip este stabilit.
+De asemenea, trebuie să **apeleze** constructorul părinte din constructorul lor, astfel încât **lanțul prototip** este stabilit.
 [/hint]  
 [hint]
-Pentru **Junior** și **Senior**, singura diferență față de părintele **Angajat** este elementele din matricea de sarcini, deoarece acestea pot utiliza funcțiile direct din clasa de bază.
+Pentru **Junior** și **Senior**, singura diferență față de părintele **Angajat** este elementele din matricea de sarcini, deoarece acestea pot utiliza funcțiile **direct** din clasa de bază.
 
-Clasele de copii vor apela părintele cu parametrii necesari și își vor împinge sarcinile direct în matrice.
+Clasele de copii vor **apela** părintele cu parametrii necesari și își vor împinge sarcinile direct în **matrice**.
 
 ```js
 class Junior extends Employee {
-    constructor(name, age) {
-        super(name, age);
-        this.tasks.push(' is working on simple task.')
-    }
+  constructor(name, age) {
+    super(name, age);
+    this.tasks.push(' is working on simple task.');
+  }
 }
 ```
 
 ```js
 class Senior extends Employee {
-    constructor(name, age) {
-        super(name, age);
-        this.tasks.push(' is working on a complicated task.');
-        this.tasks.push(' is taking time off work.');
-        this.tasks.push(' is supervising junior workers.');
-    }
+  constructor(name, age) {
+    super(name, age);
+    this.tasks.push(
+      ' is working on a complicated task.');
+    this.tasks.push(' is taking time off work.');
+    this.tasks.push(
+      ' is supervising junior workers.');
+  }
 }
 ```
 [/hint] 
 [hint]
 **Managerul** nu este mult diferit, cu excepția faptului că constructorul său trebuie să atașeze o proprietate **dividend** care este setată inițial la zero.
 
-Definiția sa trebuie, de asemenea, să înlocuiască funcția `getSalary()` pe care am adăugat-o anterior la clasa de bază, care include bonusul.
+Definiția sa trebuie, de asemenea, să **înlocuiască** funcția `getSalary()` pe care am adăugat-o anterior la clasa de bază, care include **bonusul**.
 
 ```js
 class Manager extends Employee {
-    constructor(name, age) {
-        super(name, age);
-        this.dividend = 0;
-        this.tasks.push(' scheduled a meeting.');
-        this.tasks.push(' is preparing a quarterly report.');
-    }
-    getSalary() {
-        return this.salary + this.dividend;
-    }
+  constructor(name, age) {
+    super(name, age);
+
+    this.dividend = 0;
+
+    this.tasks.push(' scheduled a meeting.');
+    this.tasks.push(' is preparing a quarterly report.');
+  }
+
+  getSalary() {
+    return this.salary + this.dividend;
+  }
 }
 ```
 [/hint] 
 [hint]
-După ce am terminat cu definițiile tuturor constructorilor de obiecte, trebuie să le înfășurăm într-un modul revelator pentru a fi utilizate de alte părți ale programului nostru, fără a polua spațiul de nume global:
+După ce am terminat cu **definițiile** tuturor constructorilor de obiecte, trebuie să le **înfășurăm** într-un **modul** revelator pentru a fi utilizate de alte părți ale programului nostru:
 
 ```js
 class Manager extends Employee {
-    constructor(name, age) {
-        super(name, age);
-        this.dividend = 0;
-        this.tasks.push(' scheduled a meeting.');
-        this.tasks.push(' is preparing a quarterly report.');
-    }
-    getSalary() {
-        return this.salary + this.dividend;
-    }
+  constructor(name, age) {...}
+  getSalary() {...}
 
-    function solve() {
+  function solve() {
 
-        class Employee {}
+    class Employee {...}
+    class Junior extends Employee {...}
+    class Senior extends Employee {...}
+    class Manager extends Employee {...}
 
-        class Junior extends Employee {}
-
-        class Senior extends Employee {}
-
-        class Manager extends Employee {}
-
-        return {
-            Employee,
-            Junior,
-            Senior,
-            Manager,
-        };
-    }
+    return {
+      Employee,
+      Junior,
+      Senior,
+      Manager,
+    };
+  }
 }
 ```
-```
+
+Acest lucru previne poluarea spațiului de nume global.
 [/hint] 
 [/hints]
 
