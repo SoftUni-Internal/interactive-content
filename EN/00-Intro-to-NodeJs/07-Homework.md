@@ -496,13 +496,13 @@ You have to:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-54.jpg" /]
 
-Here is an example of how it works:
+Here is an example of how it works.
 
-`breeds.json` **before**
+`breeds.json` **before**:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-55.jpg" /]
 
-Adding a "**Unknown breed**"
+Adding an "**Unknown breed**":
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-56.jpg" /]
 
@@ -510,13 +510,15 @@ If you got redirected to the home page, you have successfully implemented adding
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-57.jpg" /]
 
-Now if we check the `breeds.json` again, the result is:
+If we check the `breeds.json` again, the result is:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-58.jpg" /]
 
 Now every single breed which is created by the app is saved in this JSON file.
 
-The next step is to visualize all breeds from this JSON file, into the **select menu** as **options** in the `addCat.html` because now the Fluffy Cat Breed is just a placeholder.
+The next step is to visualize all breeds from this JSON file, into the **select menu** as **options** in the `addCat.html`.
+
+At the moment, the Fluffy Cat Breed is just a **placeholder**.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-59.png" /]
 
@@ -525,27 +527,27 @@ The next step is to visualize all breeds from this JSON file, into the **select 
 [slide hideTitle]
 # Making Custom Templates
 
-To continue, we must create **2 templates**.
+To continue, we must create **two templates**.
 
-One for all created **breeds** inside the JSON file and one for all listed **cats** into the home page.
+One for all created **breeds** inside the JSON file, and one for all listed **cats** into the home page.
 
-Let us start with the simple one (breeds) because we can not create a new cat yet.
+Let us start with the simple one (**breeds**) because we cannot create a new cat yet.
 
-Here is the structure:
+This is the **structure**:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-60.jpg" /]
 
-Every breed should be an **option** which has a value with the current breed and **text content** also with the current breed.
+Every breed should be an **option** which has a value with the current breed, and **text content** - also with the current breed.
 
-And all of them should be inside the **select element** with id "**group**".
+And all of them should be inside the **select element** with an id of "**group**".
 
 Now, when we render the `addCat.html` file we should **replace** some of the content inside the HTML.
 
-To do that we simply modify the `addCat.html` file to be like this:
+To do that, we simply modify the `addCat.html` file as follows:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-61.jpg" /]
 
-After that open the `cat.js` **handler** and open the statement where you render the `addCat.html` file.
+After that, open the `cat.js` **handler** and go to the statement where you render the `addCat.html` file.
 
 Modify the data. Replace the `{{catBreeds}}` with the current **breed placeholder** like this:
 
@@ -553,17 +555,19 @@ Modify the data. Replace the `{{catBreeds}}` with the current **breed placeholde
 
 In this case, **breeds** is a variable that is **required** at the top of the file and refers to `breeds.json`.
 
-We can replace/modify the data and pass it to the `res.write()` method as simple as sounds.
+We can replace/modify the data and pass it to the `res.write()` method.
 
-Now let us add another breed just to check if this logic is working fine:
+Let us add another breed, just to **check** if this logic is working fine:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-63.jpg" /]
 
-And after we open the **Add Cat** Tab, you will see this time the options are the actual breeds inside the JSON file.
+After we open the **Add Cat** Tab, you will see that this time, the **options** are the **actual breeds** inside the JSON file.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-64.png" /]
 
-As you can guess we can use the same logic to render all created cats on the home page, but first you should make the logic where a new cat is added to our `cat.json` file via a form.
+As you can guess, we can use the same logic to render all created cats on the home page.
+
+However, first you should create the logic where a new cat is **added** to our `cat.json` file via a **form**.
 
 But here comes the funny part, because they add a new cat form that contains the input where the type is "**file**".
 
@@ -571,7 +575,7 @@ That means this time we must process the incoming data differently.
 
 We will use **formidable**. 
 
-You can check how this library works, but simply you can use the following code structure:
+You can check [how this library works](https://www.npmjs.com/package/formidable), or simply use the following code structure:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-65.jpg" /]
 
@@ -579,34 +583,34 @@ In this case **fields** and **files** will be **objects**, where **fields** is t
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-66.jpg" /]
 
-Use the `rename()` function to change the location on the uploaded file.
+Use the `rename()` function to change the location of the uploaded file.
 
 In other words, you can **save it** somewhere in the local files.
 
-Just get the **old** and the **new path** on that file and pass them as arguments in that function.
+Just get the **old** and the **new path** on that file and pass them as arguments to the function.
 
-And via `readFile()` and `writeFile()` functions in `fs module` you can get all cats inside `json.file`, modify them and write them back to the JSON file where the new cat will be included.
+Then, you can get all cats inside `json.file` using the `readFile()` and `writeFile()` functions from the `fs` module, **modify** them and **write them back** to the JSON file where the **new cat** will be included.
 
 [/slide]
 
 [slide hideTitle]
 # Making Custom Templates: Example
 
-Here is the example:
+This is an example of creating a **custom** template.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-67.png" /]
 
-This time if we open the `cats.json` file it will not be an empty array anymore.
+If we open the `cats.json` file now, it will **not** be an empty array anymore.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-68.jpg" /]
 
-We already can create new cats.
+We **already** can create new cats.
 
-To fully check if the entire logic is working, you can check the `/content/images/`.
+To fully verify that the entire logic is working, you can check `/content/images/`.
 
-If the uploaded picture from you is there, everything is fine. 
+If the picture, uploaded from you is there, everything is fine. 
 
-So, we can use the given template and render all cats inside the `cats.json` file.
+Now we can use the given template and render all cats inside the `cats.json` file.
 
 Here is the cat structure:
 
@@ -614,9 +618,11 @@ Here is the cat structure:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-70.jpg" /]
 
-When rendering the `index.html` page we should loop through all cats inside `cats.json` and use the placeholder from above to change and include them into the HTML file before it is rendered.
+When rendering the `index.html` page we should loop through all cats inside `cats.json`.
 
-Here is how that work can be done:
+Then, use the placeholder from above to change and include them into the HTML file before it is rendered.
+
+## How to do it
 
 Go to `home.js`, because there is the logic we should change. 
 
@@ -630,7 +636,7 @@ Loop through all cats inside the `cats.json` file and use the given from the ske
 
 Do not forget to `write()` and `end()` the response.
 
-Do not forget to change the `index.html` as well.
+Remember to change the `index.html` as well.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-72.jpg" /]
 
@@ -648,9 +654,9 @@ To solve this problem, we should extend our `static-handler.js` logic.
 
 This is the structure you should use to resolve this problem.
 
-The logic inside these two `readFile()` function is 99% the same.
+The logic inside these two `readFile()` functions is mostly the same.
 
-The only difference between them is the **encoding** which is the second argument and it is optional.
+The only difference between them is the **encoding**, which is the second argument and it is optional.
 
 When some of the following files are served, there should be no encoding or at least no **utf8** (**png**, **jpg**, **jpeg**, etc...).
 
