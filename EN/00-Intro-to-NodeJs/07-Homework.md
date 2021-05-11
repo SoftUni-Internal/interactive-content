@@ -5,17 +5,18 @@
 
 **Here is a** [link](https://videos.softuni.org/resources/javascript/javascript-backend/01-Intro-To-NodeJs-Homework-Resources-NEW.zip) **to the resources for this task.**
 
-The exercise itself will be distributed into several parts each containing more concrete information and guide steps on how to develop the functionality specified below.
+The exercise itself will be distributed into several parts, each containing more concrete information and guide steps on how to develop the functionality, specified below.
 
-"Cat Shelter" is a very simple **cat catalog** which shows the "database" (JSON file) of some **cat shelter** and **everyone** (registration is not required) user can be their **potential owner**.
+"Cat Shelter" is a very simple **cat catalog** which shows the "database" (JSON file) of some **cat shelter** and **every user** (registration is not required) can be a **potential owner**.
 
-The application will consist of the basic CRUD operations (**Create** cat, **Read** cat, **Update** cat and **Delete** cat). **Each cat** has a **name**, **description**, **image** and **breed**.
+The application will consist of the basic CRUD operations (**Create** cat, **Read** cat, **Update** cat and **Delete** cat). 
+
+**Each cat** has a **name**, **description**, **image** and **breed**.
 
 # Project Specification
 
 Design and implement a "**Cat Shelter**" **web application** (containing routing and multiple web pages) using HTML 5, CSS 3 and Node.js.
 
-It must contain the following functionality:
 
 [/slide]
 
@@ -23,29 +24,33 @@ It must contain the following functionality:
 
 # Functionality
 
+The application must contain the following **functionality**:
+
 - **Add Cat Breed**
 
-  - Create a cat **breed** which later can be picked when a new cat is added to the shelter
+  - Create a cat **breed** which can later be picked, when a new cat is added to the shelter
 
 - **Add Cat**
 
   - Create a new cat, which has a **name**, **description**, **image**, and **breed**
-  - **All cats** must be saved in a **json** file (that will be our database)
+  - **All cats** must be saved in a **JSON** file (that will be our database)
 
 - **List All Cats**
 
-  - List all cats from the "database" **no matter the breed**
+  - List all cats from the **mock** database **no matter the breed**
 
 - **Edit Cat**
 
-  - Edits a cat's information. Changes must be persisted in a "database"
+  - Edit a cat's information
+    * changes must be persisted in the "database"
 
 - **Delete Cat**
 
-  - Deletes a specific cat from the database. Changes must be persisted in a "database"
+  - Delete a specific cat from the database
+    * changes must be persisted there
 
 - **Search Cat**
-  - Search in cat "database" by some **query string** and shows the results if any
+  - Search in the cat "database" by some **query string** and show the results, if any
 
 # Examples
 
@@ -53,11 +58,13 @@ It must contain the following functionality:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-1.jpg" /]
 
-- Add Breed `/addBreed`, where **a new cat breed** can be created which later can be picked when a new cat is added to the shelter
+- Add Breed `/addBreed`, where **a new cat breed** can be created 
+  * it can be picked when a new cat is added to the shelter
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-2.jpg" /]
 
-- Add Cat `/addCat`, where a new cat can be created and stored in the shelter "database" and all created breeds before that are shown in the selected menu.
+- Add Cat `/addCat`, where a new cat can be created and stored in the shelter "database"
+  * all created breeds before that are shown in the selected menu
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-3.png" /]
 
@@ -71,19 +78,30 @@ Currently, these 5 breeds are created (**Bombay Cat**, **American Bobtail Cat**,
 [slide hideTitle]
 # Expected Behavior
 
-Adding a new cat breed called "**Persian cat**"
+## Adding a Breed
+
+Adding a new cat breed called "**Persian cat**":
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-5.jpg" /]
 
-After that we create **a new** cat with the newly created **breed** "**Persian cat**", **name** "**Niya**", **description** "**Lonely and lazy cat seek for a hospitable owner**" and imported image.
+After that, we create **a new** cat with the newly created:
+
+- **breed**: "**Persian cat**"
+- **name**: "**Niya**"
+- **description**: "**Lonely and lazy cat seek for a hospitable owner**" 
+- and an imported **image**
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-6.png" /]
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-7.png" /]
 
+## Adding a Cat
+
 After clicking the `[ADD CAT]` **button**, a **redirect** should be followed and the Home page **('/')** should be shown with all cats in the shelter, including the new one.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-8.jpg" /]
+
+## Changing Info
 
 For instance, if we click over Jerry's `[Change Info]` button, the following page should be shown:
 
@@ -97,6 +115,8 @@ After clicking the `[EDIT CAT]` **button**, the redirect to the Home page `/` sh
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-11.jpg" /]
 
+## 
+
 Now if we click over LeeRoy's `[New Home]` **button** the following page should be shown:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-12.jpg" /]
@@ -104,6 +124,8 @@ Now if we click over LeeRoy's `[New Home]` **button** the following page should 
 If we click over the `[SHELTER THE CAT]` **button**, a Home page `/` should be shown by redirection and the LeeRoy should be **gone** because someone offered him a shelter and he became a pet:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-13.jpg" /]
+
+## Searching
 
 If we use the search bar to check all Persian cats, the result should be:
 
