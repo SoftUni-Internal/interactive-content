@@ -10,7 +10,7 @@ It is used to manage the relations between data, and translate our objects into 
 
 - It provides a **straight-forward**, **schema-based** solution to **model** your application data
 
-  * The *schema* describes the fields of the properties
+  * the *schema* describes the fields of the properties
 
 - Since MongoDB is a schema-less NoSQL document database, we can store **JSON** documents in it
 

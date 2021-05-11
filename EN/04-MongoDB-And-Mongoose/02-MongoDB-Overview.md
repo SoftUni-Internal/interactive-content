@@ -19,7 +19,7 @@ npm install mongodb -g
 
 When installed, additional configurations will be needed.
 
-- Go to the installation folder and **run** a command prompt as an **administrator**.
+- Go to the installation folder and **run** a command prompt as an **administrator**
 
 - Type the following command:
 
@@ -37,7 +37,7 @@ You can find additional information [here.](https://docs.mongodb.com/manual/tuto
 
 # Working with MongoDB Shell Client
 
-- Start the shell from **another** CLI.
+- Start the shell from **another** CLI
   * type the command **mongo**
   * show DBS
   * use mytestdb
@@ -48,7 +48,7 @@ db.mycollection.find({"name":" George"})
 db.mycollection.find({})
 ```
 
-More additional information [here](https://docs.mongodb.com/manual/reference/mongo-shell/)
+More additional information [here.](https://docs.mongodb.com/manual/reference/mongo-shell/)
 
 [/slide]
 
@@ -56,7 +56,7 @@ More additional information [here](https://docs.mongodb.com/manual/reference/mon
 
 # Working with MongoDB GUI
 
-Many **MongoDB** **graphical user interfaces** help developers to manage their databases.
+Many **MongoDB graphical user interfaces** help developers to manage their databases.
 
 For this lesson, we will not dive deep into the comparison between different interfaces.
 
