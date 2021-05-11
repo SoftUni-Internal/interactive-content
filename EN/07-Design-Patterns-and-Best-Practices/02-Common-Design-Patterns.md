@@ -25,11 +25,11 @@ The logic for instantiating objects is **encapsulated** within the factory objec
 
 It calls upon the **factory** and **receives** the created object:
 
-- When you need to **generate** different instances of objects depending on the context
+- When we need to **generate** different instances of objects depending on the context
 
 - When working with objects or components that **share the same properties**
 
-- When you need to create a **loosely coupled system**
+- When we need to create a **loosely coupled system**
 
 ## When Not To Use
 
@@ -37,7 +37,7 @@ If utilized incorrectly, it can introduce a lot of **unnecessary** complexity in
 
 Do not use it unless your goal is to create an **interface for object** creation, and you need to be able to constantly construct new objects of certain types without exposing the logic to the clients using it.
 
-The creation of new objects is **abstracted behind an interface**, which can cause **problems in unit testing** later on, depending on how complex the logic of the factory is.
+The creation of new objects is **abstract**. It is made using an **interface**, which, later on, can cause **problems in unit testing**, depending on how complex the logic of the factory is.
 
 [/slide]
 
@@ -58,7 +58,7 @@ That is the basis behind the **Single Responsibility Principle**.
 
 It also adheres to the **Open/Closed Principle**, which states that each software entity should be open for extension but closed for modification. 
 
-This is because you can add new types of features without risking breaking the existing client code.
+This is because we can add new types of features without risking breaking the existing client code.
 
 [/slide]
 
@@ -69,7 +69,7 @@ This is because you can add new types of features without risking breaking the e
 
 Below is an example of how the factory pattern can be used:
 
-We are defining a function called "**Digimon**" which accepts a **name** and a **specialMove** as parameters and prints the name of the digital monster and its special move when `.attack()` is invoked on it. 
+We are defining a function called "**Digimon**" that accepts a **name** and a **specialMove** as parameters and prints the name of the digital monster and its special move when `.attack()` is invoked on it. 
 
 ```js live
 function Digimon(name, specialMove) {
@@ -100,9 +100,9 @@ digitalMonsters.forEach((digimon) => {
 
 In the example above, we have a **digimonFactory** that is used to create new digital monsters. 
 
-We then create an **empty array** and push some digital monsters into it after **creating** them using the factory. 
+We then create an **empty array** and push some monsters into it after **creating** them using the factory. 
 
-Finally, we iterate through the collection and **print out the names** and special moves of each monster inside the collection.
+Finally, we iterate through the collection and **print out the names** and the special moves of each monster inside the collection.
 
 [/slide]
 
@@ -117,13 +117,13 @@ With this pattern, extra responsibilities or behaviors can be **added** to objec
 
 ## When To Use
 
-- When you need to add a **functionality** to an object either dynamically (during runtime) or statically, without affecting the **behavior** of other objects from the same class
+- When we need to add a **functionality** to an object either dynamically (during runtime) or statically, without affecting the **behavior** of other objects from the same class
 
 - When extending with subclasses is not practical
 
 ## When Not To Use
 
-The decorators can introduce problems when your code relies on specific types of objects and checks their type. 
+The decorators can introduce problems when our code relies on specific types of objects and checks their type. 
 
 For example: 
 
@@ -149,7 +149,7 @@ performAction(toyota);
 
 ```
 
-If you were to use a decorator on top of the `Car` object in the above example, then the **instanceof** method would return `false`.
+If we were to use a decorator on top of the `Car` object in the above example, then the `instanceof` method would return `false`.
 
 This means that the code in the **else** block would be executed, which might not be the intended behavior.
 
@@ -162,8 +162,8 @@ This means that the code in the **else** block would be executed, which might no
 
 |  **Pros** |**Cons**   |
 |---|---|
-| Extend functionality without modifying the objects that you are decorating   | Can add too many small objects  |
-| Add and withdraw responsibilities as needed  | Can cause issues when the client relies heavily on the concrete type of components  |
+| Extends functionality without modifying the objects that you are decorating   | Can add too many small objects  |
+| Adds and withdraws responsibilities when needed  | Can cause issues when the client relies heavily on the concrete type of components  |
 | Supports the Open/Closed SOLID principle   | Instantiating the components can become more complicated |
 [/slide]
 
@@ -202,7 +202,7 @@ eBook.info();
 decoratedEbook.info();
 ```
 
-The decorator accepts a parameter "**ebookReader**" - the object we want to decorate and a new property **model**. 
+The decorator accepts a parameter called "**ebookReader**", which is the object we want to decorate, and a new property called "**model**". 
 
 In this way, the decorated e-book reader would have an additional property and the `info()` function has been extended accordingly without modifying the original "**EbookReader**" class.
 
@@ -216,7 +216,7 @@ In this way, the decorated e-book reader would have an additional property and t
 
 [image assetsSrc="js-application-design-patterns-14.png" /]
 
-The **facade pattern** is used in multi-layered applications when certain logic and functionality need to be exposed to **different clients**, shielding them from any complex business logic that clients must not be concerned with. 
+The **facade pattern** is used in multi-layered applications when certain logic and functionality need to be exposed to **different clients**, shielding them from any complex business logic that clients should not be concerned with. 
 
 It is also helpful in **refactoring** and almost always improves code **usability**.
 
@@ -224,11 +224,13 @@ We implement it by creating a "**wrapper**" class, **encapsulating** the subsyst
 
 The client is only **coupled** to the facade and not to the subsystem(s) behind it.
 
-## Use It When You Have
+## When To Use
 
-- A **complex** system, and you need a **simple** interface to communicate with it
+We can use this pattern when we have:
 
-- A lot of tightly **coupled** code that would require the client to have **extensive** knowledge on how the system works in order to use it
+- A **complex** system and we need a **simple** interface to communicate with it
+
+- A lot of tightly **coupled** code that would require the client to have **extensive** knowledge of how the system works in order to use it
 
 
 [/slide]
@@ -240,7 +242,7 @@ The client is only **coupled** to the facade and not to the subsystem(s) behind 
 
 |  **Pros** |**Cons**   |
 |---|---|
-| You can **isolate** your code from the **complexity of** a **subsystem** | Facade can be coupled to too many objects, also known as **overcoupling** |
+| We can **isolate** our code from the **complexity of** a **subsystem** | The facade can be coupled to too many objects, also known as **overcoupling** |
 | Helps achieve **loose coupling**, which makes software easier to extend | Highly **dependent** on the facade interface |
 
 The facade pattern can reduce complexity when several modules are communicating with each other or when the client needs to use several classes at once.
@@ -252,7 +254,7 @@ The facade pattern can reduce complexity when several modules are communicating 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/08.JS-Applications-Design-Patterns-and-Best-Practices/EN/Design-Patterns-and-Best-Practices-24-example-with-the-facade-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Here we are creating a "**ComplaintRegistry**" facade class, with a method called "**registerComplaint**".
+Here we are creating a "**ComplaintRegistry**" facade class, which contains a method called "**registerComplaint**".
 
 ```js
 class ComplaintRegistry {
@@ -273,13 +275,13 @@ class ComplaintRegistry {
 
 ```
 
-`ServiceComplaints()` and `ProductComplaints()` are complex subsystems, but the client need not be concerned with their implementation. 
+`ServiceComplaints()` and `ProductComplaints()` are complex subsystems, but the client does not need to be concerned with their implementation. 
 
-The facade takes the **customer**, **type**, and **details**
+The facade takes **customer**, **type**, and **details** as parameters
 
-Then, it adds the complaint to either:
-  * the **service registry**, if the type received is **service**
-  * a **product complaint**, if it is of any other type by invoking **addComplaint** on the registry that was created
+Then, it adds a complaint to the registry:
+  * the **service complaint**, if the type received is **service**
+  * the **product complaint**, if it is of any other type, by invoking **addComplaint** on the registry that was created
 
 [/slide]
 
@@ -315,15 +317,15 @@ The concept behind the **observer** pattern is that we have one subject, which c
 
 It maintains a collection of observers and notifies them when a change occurs to its state.
 
-Messages to the observers are typically sent using a `notify()` method. 
+Messages to the observers are typically sent using the `notify()` method. 
 
-This method loops through the subject's list of observers, and inside the loop, the **update method** of each observer is invoked.
+This method loops through the subject's list of observers, and inside the loop, the **update** method of each observer is invoked.
 
 When the observer no longer needs to receive updates from the subject, it can be **detached** (removed from the subject's collection).
 
 ## When To Use
 
-This pattern comes in handy when you have a class that needs to be **monitored** by other classes in the program, and they need to be **aware** of any changes in **its state**. 
+This pattern comes in handy when we have a class that needs to be **monitored** by other classes in the program, and they need to be **aware** of any changes in **its state**. 
 
 An example of this would be the functionality of websites where you can subscribe to other users by pressing a button.
 
@@ -340,7 +342,7 @@ Your username would subsequently be added to their **subscriber** list, and each
 |---|---|
 | Broadcast **changes** and **updates** | Can add unnecessary complexity  |
 | New observers can be added to the subject with no modification to its code |  Unpredictable order of sending notifications |
-| Add and remove observers at any time |  |
+| Adds and removes observers at any time |  |
 | **Loose coupling** between subject and observer |  |
 
 By using the observer pattern, we introduce **loose coupling** between the subject and its observers. 
@@ -385,5 +387,5 @@ The **subscribe** method is used to add observers to the collection of the obser
 
 The **unsubscribe** method removes (**detaches**) an observer from the subject.
 
-When the `notify(data)` method is called, we iterate through the collection of observers and **send a notification** to **each observer**, currently **subscribed** to the observable object.
+When the `notify(data)` method is called, we iterate through the collection of observers and **send a notification** to **each observer** that is currently **subscribed** to the observable object.
 [/slide]
