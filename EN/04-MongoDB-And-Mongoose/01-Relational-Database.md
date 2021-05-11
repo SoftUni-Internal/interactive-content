@@ -58,7 +58,7 @@ Here is a simple example of a table in a **relational database:**
 The **same** data in a **non-relational database:**
 
 ```
-[{
+{
     id: 1,
     name: "Milk",
     price: 1.49,

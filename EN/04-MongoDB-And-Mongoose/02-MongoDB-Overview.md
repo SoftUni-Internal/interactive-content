@@ -29,7 +29,7 @@ When installed, additional configurations will be needed.
 
 Usually, in `C:\Program Files\MongoDB\Server\3.4\bin`
 
-You can find additional information [here](https://docs.mongodb.com/manual/tutorial/)
+You can find additional information [here.](https://docs.mongodb.com/manual/tutorial/)
 
 [/slide]
 
@@ -38,7 +38,7 @@ You can find additional information [here](https://docs.mongodb.com/manual/tutor
 # Working with MongoDB Shell Client
 
 - Start the shell from **another** CLI.
-  * Type the command **mongo**
+  * type the command **mongo**
   * show DBS
   * use mytestdb
 
