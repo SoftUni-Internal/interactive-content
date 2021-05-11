@@ -13,7 +13,7 @@ Instead, they are design principles that are applicable almost universally.
 
 **Design patterns** improve code reusability and readability, eliminating the need for extensive refactoring. 
 
-They are already proven, optimized, and are short solutions to given problems. 
+They are already proven and optimized. They are short solutions to given problems. 
 
 They are not complete solutions but rather tried and tested approaches to solving problems and writing elegant implementations.
 
@@ -100,7 +100,7 @@ The **prototype pattern** is used to create objects that serve as a blueprint fo
 
 This is achievable through **prototypical inheritance**, which is supported natively in JavaScript.
 
-You are essential **copying existing objects** without your code having to depend on their classes.
+You are essential **to copy existing objects** without your code having to depend on their classes.
 
 The objects are **clones**, rather than created by using **constructors**, which improves **performance**.
 
@@ -110,9 +110,9 @@ This is typically applied when object creation through the **constructor** metho
 
 ## Singleton
 
-The **singleton pattern** is when you want to have a **single** instance of an object.
+The **singleton pattern** is used when we want to have a **single** instance of an object.
 
-Then you provide global **access** to all of the clients that need to use it from a **single** endpoint.
+Then we provide global **access** to all of the clients that need to use it from a **single** endpoint.
 
 [image assetsSrc="js-application-design-patterns-03.png" /]
 
@@ -127,13 +127,13 @@ Then you provide global **access** to all of the clients that need to use it fro
 
 These patterns are concerned with how **classes inherit** from each other and how classes are composed of other classes.
 
-By implementing these patterns, you can introduce new **functionalities** without changing the **existing ones**.
+By implementing these patterns, we can introduce new **functionalities** without changing the **existing ones**.
 
 Some of the most common structural design patterns are:
 
 ## Decorator
 
-The **decorator** pattern is used when you need to add functionalities to an **existing** class, without the risk of introducing **bugs** into existing implementations of that class.
+The **decorator** pattern is used when we need to add functionalities to an **existing** class, without the risk of introducing **bugs** into existing implementations of that class.
 
 Imagine you have a **monumental class** that is used throughout your application and **changing** anything inside it would affect the entire application.
 
@@ -196,13 +196,13 @@ That way, we avoid too many direct relationships between components.
 
 In the **observer pattern**, an object called **subject** maintains a list of **dependant** objects and notifies them of any state changes, usually by calling one of their methods.
 
-The **Observer** pattern facilitates a great object-oriented design and promotes loose coupling.
+The **observer** pattern facilitates a great object-oriented design and promotes loose coupling.
 
 [image assetsSrc="js-application-design-patterns-10.png" /]
 
 ## Visitor
 
-The **visitor pattern** is practical when there is a **collection of objects** new functionality needs to be added to them without changing the objects themselves.
+The **visitor pattern** is useful when there is a **collection of objects** and new functionality needs to be added to them without changing the objects themselves.
 
 The new logic is assigned to a newly-created object, called the **visitor**.
 
@@ -219,11 +219,11 @@ The new logic is assigned to a newly-created object, called the **visitor**.
 
 - Design patterns **help solve issues in software development** by relying on **proven techniques**, benefitting from the collective experience of other programmers
 
-- The design pattern names and **established vocabulary** aid in the **communication** between developers
+- The design pattern names and the **established vocabulary** aid in the **communication** between developers
 
 - Design patterns are robust approaches to solving problems that could be altered to suit the needs of the specific use case
 
-- They can be easily **altered** if a pattern does not work for you
+- They can be easily **altered** if a particular pattern does not work for you
 
 - They improve the software development process and can **reduce errors**
 
