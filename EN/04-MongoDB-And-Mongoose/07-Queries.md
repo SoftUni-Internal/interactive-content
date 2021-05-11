@@ -175,6 +175,6 @@ Subject.
   })
 ```
 
-You can read more about population [Here](mongoosejs.com/docs/populate.html)
+You can read more about population [here.](mongoosejs.com/docs/populate.html)
 
 [/slide]
