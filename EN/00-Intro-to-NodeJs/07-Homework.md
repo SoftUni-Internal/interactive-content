@@ -115,7 +115,7 @@ After clicking the `[EDIT CAT]` **button**, the redirect to the Home page `/` sh
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-11.jpg" /]
 
-## 
+## Sheltering
 
 Now if we click over LeeRoy's `[New Home]` **button** the following page should be shown:
 
@@ -139,33 +139,33 @@ If we use the search bar to check all Persian cats, the result should be:
 # Routing
 
 
-There will be different views, which are displayed based on the routing (the URL).
+There will be different **views**, which are displayed based on the **routing** (the current URL).
 
-There are no strict rules of how the current application routing should look like but there are some common set of rules to follow:
+There are no strict rules of how the current application routing should look like but there are some common set of **rules** to **follow**:
 
 - Use **short** and **clear** URL's
-  - Good examples: `/cats/add`, `/cats/edit/3`
+  * good examples: `/cats/add`, `/cats/edit/3`
 
-  - Bad examples: `/catAddInfo.html`, `showAllProductsByCategoryName/{categoryName}`
+  * bad examples: `/catAddInfo.html`, `showAllProductsByCategoryName/{categoryName}`
 
 - Follow the **HTTP standards**
-  - Proper usage of HTTP methods (GET, POST, PUT, etc.)
+  * proper usage of HTTP methods (GET, POST, PUT, etc.)
 
-  - Follow the GET – POST – Redirect pattern
+  * follow the GET – POST – Redirect pattern
 
-# Models
+## Models
 
 **Cat**
 
-- **id** - **string** or **number** which is **required** and **unique**.
+- **id**: **string** or **number** - **required** and **unique**
 
-- **name** - **string** which is required.
+- **name**: **string** - required
 
-- **description** - **string** containing some additional information about the cat.
+- **description**: **string** containing some additional information about the cat
 
-- **image** - **string** containing **reference** to an **image** which displays the given cat.
+- **image**: **string** containing **reference** to an **image** which displays the given cat
 
-- **breed** - **string** referring to the real breed on that cat.
+- **breed**: **string** referring to the breed of the cat
 
 [/slide]
 
@@ -174,17 +174,19 @@ There are no strict rules of how the current application routing should look lik
 
 For starters, configure your IDE or text editor.
 
-As mentioned above the following steps will include screenshots from **Visual Studio Code**.
+As mentioned above, the following steps will include screenshots from **Visual Studio Code**.
 
 Other popular choices are **Atom** and **WebStorm**.
 
-Before you continue with the next step make sure everything about your IDE is configured and you are up and ready to go.
+Before you continue with the next step, make sure everything about your IDE is configured and you are up and ready to go.
 
 # Initial Setup
 
 First, let us create our project:
 
-Go to the folder where you want the project to be, then press "Shift" + "Right mouse click" and use "Open command window here", then type "**npm init**" and fill the project's data as you see fit.
+Go to the folder where you want the project to be, then press `Shift + Right mouse click`and use "**Open command window here**".
+
+Inside the newly created window, type "**npm init**" and fill the project's data as you see fit.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-16.jpg" /]
 
