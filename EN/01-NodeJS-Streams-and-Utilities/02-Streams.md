@@ -6,13 +6,9 @@
 
 A stream is an abstract interface for working with streaming data in Node.js. 
 
-It is a collection of data that is not available at once.
+It is a collection of data that is not available at once and may come continuously in chunks.
 
-Data may come continuously in chunks.
-
-There are many stream objects provided by Node.js. 
-
-For instance, a request to an HTTP server is a stream instance.
+There are many stream objects provided by Node.js, for instance, a request to an HTTP server is a stream instance.
 
 Streams can be **Readable**, **Writable**, **Duplex** or **Transform**. 
 
