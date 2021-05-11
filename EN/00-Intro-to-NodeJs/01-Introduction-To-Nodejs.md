@@ -84,17 +84,17 @@ Node.js projects are **initialized as NPM Packages**.
 
 To initialize a personal Node.js project:
 
-- Open a terminal and type:
+- Open a **terminal** and type:
 
 ```js
 npm init
 ```
 
-- Define the project's key characteristics
+- Define the project's key **characteristics**
 
-- Wait for the `package.json` configuration file to generate
+- Wait for the `package.json` configuration file to **generate**
 
-- Open an editor and start coding
+- Open an **editor** and start coding
 
 To **apply default values** to all questions about the project's characteristics, just type: 
 
