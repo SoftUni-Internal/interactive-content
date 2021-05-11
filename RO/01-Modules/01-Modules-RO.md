@@ -4,7 +4,7 @@
 
 # Ce sunt Modulele?
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/EN/JS-Applications-Modules-3-4-5-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/RO/JS-Applications-Modules-3-4-5-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un **Modul** este un **set de funcții** care este făcut **accesibil în orice parte a aplicației**.
 

@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Modulele IIFE
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/EN/JS-Applications-Modules-6-iife-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/RO/JS-Applications-Modules-6-iife-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Modulele IIFE** sunt esentiale pentru dezvoltarea front-end.
 
@@ -46,7 +46,7 @@ Totuși, contorul în sine **nu poate fi accesat direct**, decât dacă îl decl
 [slide hideTitle]
 # Modulele Node.js
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/EN/JS-Applications-Modules-7-8-nodejs-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/RO/JS-Applications-Modules-7-8-nodejs-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În Node\.js, **fiecare fișier are propriul său domeniu de aplicare**.
 
@@ -147,7 +147,7 @@ var zlib = require('zlib');
 [slide hideTitle]
 # Modulele ES6 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/EN/JS-Applications-Modules-9-es6-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/02.JS-Applications-Modules/RO/JS-Applications-Modules-9-es6-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În 2015, odată cu introducerea standardului **EcmaScript 6**, modulele au fost introduse **nativ** în JavaScript.
 
