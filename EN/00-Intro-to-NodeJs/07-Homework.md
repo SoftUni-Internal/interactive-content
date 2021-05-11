@@ -431,35 +431,38 @@ A new handler should be created for the cat logic.
 
 Create `cat.js` inside the "**handlers**" folder.
 
-The handler will be responsible for displaying the (HTML) form **or** parsing the data from it and add a new cat inside the **JSON** file:
+The handler will be responsible for:
+- **displaying** the (HTML) form
+- **parsing** the data from it 
+- **adding** a new cat inside the **JSON** file
 
-First, include all needed libraries:
+First, **include** all needed libraries:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-47.jpg" /]
 
-This time they are quite a lot but do not worry, we will use every one of them at a specific moment.
+This may look like a lot, but do not worry - we will use each one of them at a specific moment.
 
-Feel free to check the official **Node documentation** to understand what each module does.
+Feel free to check the official [Node documentation](https://nodejs.org/dist/latest-v14.x/docs/api/) to understand what each module does.
 
-Now, the logic is similar to before.
+The logic is similar to before.
 
-Using the if statement, you should check every single **pathname** and **request method** and load an HTML page or parse the incoming data.
+Using the **if-statement**, you should check every single **pathname** and **request method** and load an HTML page or parse the incoming data.
 
-Create the variable, which will be the parsed **request** and get the **URL** current **pathname** and check the different cases.
+Create the variable, which will be the parsed **request**, get the current **URL pathname**, and check the different cases.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-48.jpg" /]
 
 You already have all the needed views.
 
-Use **readFile** or **createReadStream** function to read each of the HTML files (Check the difference between these two functions).
+Use the `readFile` or `createReadStream` function to **read** each of the HTML files (check the difference between these two functions).
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-49.jpg" /]
 
-One more thing before we test our application – go to `handlers/index.js` and add our cat handler:
+One more thing before we test our application – go to `handlers/index.js` and add our **cat handler**:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-50.jpg" /]
 
-Restart the server and go to the `localhost:3000/cats/add-cat`
+**Restart the server** and go to `localhost:3000/cats/add-cat`
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-51.jpg" /]
 
@@ -469,7 +472,7 @@ Restart the server and go to the `localhost:3000/cats/add-cat`
 
 [slide hideTitle]
 
-# Handling Post
+# Handling POST
 
 To create a new cat, first, we should create the cat breeds functionality, because they will be listed in **addCat page** as **options elements** inside the **select menu**.
 
