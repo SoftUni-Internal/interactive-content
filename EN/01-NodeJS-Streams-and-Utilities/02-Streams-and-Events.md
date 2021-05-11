@@ -1,4 +1,4 @@
-# Streams
+# Streams and Events
 
 [slide hideTitle]
 
@@ -193,7 +193,7 @@ The **error** event is emitted when there is an error writing data.
 
 [slide hideTitle]
 
-# Writable Stream Example
+# DEMO: Writable Stream Example - add demo
 
 An HTTP response is an instance of a writable stream.
 
@@ -222,7 +222,11 @@ server.listen(5000);
 
 [slide hideTitle]
 
-# Piping Streams
+# Piping Streams - add demo
+
+Piping is a mechanism where the input of a stream is provided by the output of another stream.
+
+It is usually used to receive data from a stream and pass the output of the same stream to another one.
 
 A typical example of using pipes is if you want to transfer data from one file to another.
 
@@ -230,7 +234,7 @@ Here is an example of how we can transfer data using pipes.
 
 The `pipe()` function allows a readable stream to output directly to a writable stream.
 
-We read from the `./bigfile.txt`, and then we send the data to the **response** using the pipe command to transfer the data from the `src` to the `res`. 
+We read from the `./bigfile.txt`, and then we send the data to the **response** using the pipe command to transfer the data from the `src` to the `res`.
 
 ```js
 const fs = require('fs');
@@ -246,9 +250,9 @@ server.listen(5000);
 
 [slide hideTitle]
 
-# Duplex and Transform Streams
+# Duplex and Transform Streams - add demo
 
-A duplex stream is one that is both readable and writable similar to a Transform stream. 
+A duplex stream is both readable and writable similar to a **Transform** stream. 
 
 However, most often a Duplex stream is usually referring to a stream that has two independent streams embedded in it, one flowing out and one flowing in.
 
@@ -267,6 +271,38 @@ let readStream = fs.createReadStream('index.js');
 let writeStream = fs.createWriteStream('index.js.gz');
 let gzip = zlib.createGzip();
 readStream.pipe(gzip).pipe(writeStream);
+```
+
+[/slide]
+
+[slide hideTitle]
+
+# Node.js Events
+
+Node.js has a built-in module, called "Events", where you can create, fire, and listen for your events.
+
+To include the built-in Events module use the `require()` method. 
+
+Besides, all event properties and methods are an instance of an EventEmitter object. 
+
+To be able to access these properties and methods, create an EventEmitter object.
+
+With the EventEmitter object, we can assign handlers to our events.
+
+In this example we use the `eventEmitter.on()` method to assign the event handler to an event called "**click**".
+
+Finally, we fire the event using the `event emitter.emit()` method.
+
+**Important thing to know is that Events are not Asynchronous!**
+
+```js
+const events = require('events');
+let eventEmitter = new events.EventEmitter();
+eventEmitter.on('click', (a, b) => {
+    console.log('A click has been detected!');
+    console.log(a + ' ' + b);
+});
+eventEmitter.emit('click', 'Hello', 'world');
 ```
 
 [/slide]
