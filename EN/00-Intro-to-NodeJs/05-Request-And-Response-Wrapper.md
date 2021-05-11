@@ -1,6 +1,6 @@
 # Request & Response Wrapper
 
-[slide]
+[slide hideTitle]
 
 # The Request Wrapper
 
@@ -12,21 +12,21 @@ It has many properties, ranging from the **type of request** to its **headers an
 
 Here are some of the more commonly used properties:
 
-- `httpVersion` - Specifies the **version** of the HTTP protocol.
+- `httpVersion` - specifies the **version** of the HTTP protocol.
 
-- `headers` - Passes **context and credentials** as request headers.
+- `headers` - passes **context and credentials** as request headers.
 
-- `method` - Specifies the type of the request (`GET`, `POST`, `PUT`, `DELETE` etc.).
+- `method` - specifies the type of the request (`GET`, `POST`, `PUT`, `DELETE` etc.).
 
-- `url` - The request's **URL**.
+- `url` - the request's **URL**.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Example 1: Request Wrapper
 
-Here is an example of how to put the request wrapper to use:
+Here is an example of how to use the request wrapper:
 
 ```js
 const http = require("http");
@@ -46,13 +46,13 @@ http.createServer((req, res) => {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # The Response Wrapper
 
 The response wrapper does the **exact opposite of the request wrapper**.
 
-It is used to send **data and status information** as a response from the server.
+We use it to send **data and status information** as a response from the server.
 
 These are some of the methods used with it: 
 
@@ -75,7 +75,7 @@ Here are some of the more common status codes and their meaning:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Example 2: Response Wrapper
 
@@ -95,7 +95,7 @@ http.createServer((req, res) => {
 
     res.write("How are things going on the client side?");
 
-    // Sends an UTF-8 encoded text message to the client
+    // Sends a UTF-8 encoded text message to the client
 
     res.end();  
     
@@ -105,6 +105,6 @@ http.createServer((req, res) => {
 
 ```
 
-It is very important to **always use the proper status codes and to end the response**.
+It is essential to **always use the proper status codes and to end the response**.
 
 [/slide]

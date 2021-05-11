@@ -4,27 +4,27 @@
 
 Modules in Node.js are groups of files, **providing certain functionality**.
 
-Modules are great because they:
+Using modules brings several benefits, including:
 
-- Improve code **accessibility** and **reusability**
+- Improved code **accessibility** and **reusability**
 
-- Operate within **their** own context, **independently of each other**
+- Separation of concerns - they operate within **their** own context, **independently of each other**
 
-- Make a project look more **structured** and **easy-to-read**
+- Improving the project **structure**, making code **easier to read**
 
 - Can be used **within each other**
 
-In other words, modules are **like different branches of a company** - small, neatly-organized, and responsible for their task.
+In other words, modules are **like different branches of a company** - small, neatly organized, and responsible for their task.
 
-When brought together, however, they produce a finished product.
+When brought together, they produce a finished product.
 
-In Node.js there are three types of modules:
+In Node.js, there are three types of modules:
 
-- `Core`
+- **Core**
 
-- `Local`
+- **Local**
 
-- `Third-party`
+- **Third-party**
 
 [/slide]
 
@@ -32,9 +32,11 @@ In Node.js there are three types of modules:
 
 # Local Modules
 
-Local modules are **functions** or **variables** used locally within a project.
+Local modules are **functions** or **variables**, used locally within a project.
 
-Normally, there will be a folder with **services** or **controllers** that are needed in other folders.
+Typically, you must create a separate folder for **services** or **controllers**.
+
+The files in that folder are going to be utilized throughout the whole application, by importing them.
 
 Here is an example of a folder structure:
 
@@ -84,38 +86,38 @@ Node.js allows for the use of **third-party modules**.
 
 As the name suggests, these modules are **created by other people** and **uploaded for public use**.
 
-All third-party modules can be accessed through `npm` (**Node Package Manager**).
+All third-party modules are made accessible through `npm` (**Node Package Manager**).
 
 Every module is available on [npm](https://www.npmjs.com/) with **additional information** such as:
 
-- `Installation guide`
+- Installation guide
 
-- `Documentation`
+- Documentation
 
-- `Bug reports and last updates`
+- Bug reports and last updates
 
-- `List of people who are contributing to the module`
+- List of people who are contributing to the module
 
-To install a third-party module just **open a terminal and type**:
+To install a third-party module, **open a terminal and type in**:
 
 ```js
 npm install express
 
-//Type the name of the module after npm install
+// Type the name of the module after npm install
 ```
 
-A module can also be installed with **additional options**:
+You can also install a module with **additional options**:
 
 ```js
 npm install -g express
 
-//saves the module globally on the machine instead of the current folder
+// Saves the module globally on the machine instead of the current folder
 ```
 
 ```js
 npm install mocha --save-dev
 
-//saves the mocha module as a developer dependency as it is not needed by the users
+// Saves the mocha module as a developer dependency, as it is not needed by the users
 ```
 
 After installation, use a third-party module like so:
@@ -180,11 +182,11 @@ The most common reason to use this module is to **separate a URL into parts** an
 
 A typical URL consists of **three parts**:
 
-- `host`
+- `host` - the main location, also called a **domain**
 
-- `path`
+- `path` - the location of the necessary content on the domain
 
-- `query`
+- `query` - additional parameters used for exchanging/filtering data
 
 By using the `url` module, these parts can be **accessed** and **used** like this:
 
@@ -220,7 +222,7 @@ As seen in the previous slides a query string looks like this:
 const queryString = "?name=David&age=35";
 ```
 
-The `querystring` module in Node.js is used to turn such strings into **objects of key-value pairs**.
+The `querystring` module in Node.js transforms such strings into **objects of key-value pairs**.
 
 This is how to parse a query string:
 

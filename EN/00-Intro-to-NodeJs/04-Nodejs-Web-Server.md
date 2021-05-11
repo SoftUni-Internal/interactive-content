@@ -1,6 +1,6 @@
 # Node.js Web Server
 
-[slide]
+[slide hideTitle]
 
 # Web Servers
 
@@ -16,7 +16,7 @@ Here is an image that represents how web servers work:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Node.js Web Server
 
@@ -39,3 +39,29 @@ The code from above is the **bare minimum** to start a web server using Node.js.
 
 The server is now ready to **handle incoming requests** and **send data to the client**.
 [/slide]
+
+[slide hideTitle]
+
+# Node.js Web Server - Add Demo
+
+Node.js allows for the **simple** and **easy** creation of a web server.
+
+The whole process can be done with a few lines of code:
+
+```js
+const http = require("http");
+
+http.createServer((req, res) => {
+    res.write("This text will be sent to the client.");
+    res.end();
+}).listen(3000);
+
+console.log("Node.js server running on port 3000");
+```
+
+The code from above is the **bare minimum** to start a web server using Node.js.
+
+The server is now ready to **handle incoming requests** and **send data to the client**.
+[/slide]
+
+

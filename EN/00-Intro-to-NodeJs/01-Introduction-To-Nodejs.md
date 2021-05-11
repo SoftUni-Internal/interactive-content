@@ -14,7 +14,7 @@ Here are some of the benefits that come along with it:
 
 - **High performance** thanks to **Google's V8 engine**, which compiles code **fast and efficiently**
 
-- Node.js has a **great package manager**, called **NPM**, with **over a million free packages**
+- It has a **great package manager**, called **NPM**, with **over a million free packages**
 
 - Its community is very **large and active** which means bug fixes and updates on packages occur **frequently**
 
@@ -68,7 +68,7 @@ sumNumbers(25, 55);
 
 Let us assume that the code has been stored in an `app.js` file.
 
-You can execute it using the `node`command, followed by the name of the file:
+You can execute it using the `node` command, followed by the name of the file:
 
 ```js
 node app.js
@@ -112,19 +112,19 @@ The `package.json` file is an object, which holds a **metadata** key, and **gene
 
 Here is a part of the information, discoverable in a `package.json` file:
 
-- `name`
+- `name` - the project name (eg. "Music App")
 
-- `version` 
+- `version` - a version number, like **1.0.0**
 
-- `description`
+- `description` - the purpose of the application
 
-- `author`
+- `author` - name of the developer
 
-- `license`
+- `license` - the type of copyright licensing the code has (e.g. "ISC")
 
-- `scripts`
+- `scripts` - predefined scripts, made accessible using a keyword
 
-Here is what a `package.json` file looks like:
+Here is what a typical `package.json` file looks like:
 
 
 ```json

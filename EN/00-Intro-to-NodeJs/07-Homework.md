@@ -675,15 +675,21 @@ If you do that the result will be:
 
 # Edit and Delete
 
-`[Change Info]` and `[New Home]` are buttons that every cat should have.
+`[Change Info]` and `[New Home]` are buttons that **every cat** should have.
 
-You have been given all the necessary views, including these two (`editCat.html` and `catShelter.html`) clicking over some of them, the app should show the current view with current cat info inside it.
+You have been given all the necessary views, including these two - `editCat.html` and `catShelter.html`.
 
-So, the missing logic we should implement is:
+By clicking over any of them, the app should show the current view with current cat info inside it.
+
+We should implement the following logic:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-76.jpg" /]
 
-When some of the `[Change info]` buttons are clicked, you should check the **cat id** which is provided into the **URL**, search that cat in the `cat.json` file, and use templates to replace the static data with the current cat information.
+When some of the `[Change info]` buttons are clicked, you should:
+
+- check the **cat id** which is provided into the **URL**
+- **search** that cat in the `cat.json` file
+- use templates to **replace** the static data with the current cat information
 
 If you check the `home.js` handler, you will see this:
 
@@ -691,11 +697,11 @@ If you check the `home.js` handler, you will see this:
 
 This is our **cat template**. 
 
-When you get the current cat from the `json.file`, you can use the logic from above to get the file and render it and just apply the template:
+When you get the current cat from the `json.file`, you can use the logic from above to **get the file, render it**, and just apply the template:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-78.jpg" /]
 
-Also **do not forget** to change the `editCat.html` file as well:
+**Remember** to change the `editCat.html` file as well:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-79.jpg" /]
 
@@ -703,23 +709,23 @@ The logic after clicking over the `[New Home]` button is the same:
 
 - Check the **URL** to get the current **cat id**.
 
-- **Search** through `cat.json` file that id.
+- **Search** through `cat.json` file that id
 
-- **Replace** `editCat.html` with the current cat information like above.
+- **Replace** `editCat.html` with the current cat information like above
 
 **POST request** for these two actions is almost the same as the logic for **adding a new cat**.
 
-With the simple difference when you **edit** some of the cat information you **change** that cat inside JSON file instead of creating a new one (change it with the incoming information from the form). 
+The only difference is when you **edit** some of the cat information, you **change** that cat inside JSON file, **instead** of creating a new one (change it with the **incoming information** from the form). 
 
 And **delete** the current cat from the shelter `cats.json` file.
 
 The steps are the same:
 
-- **Parse** the incoming data from the form (if you are editing the cat's information).
+- **Parse** the incoming data from the form (if you are editing the cat's information)
 
-- **Read** the `cats.json` file via the **fs** module updates the cats (edit the cat or deleting it).
+- **Read** the `cats.json` file via the **fs** module updates the cats (edit the cat or deleting it)
 
-- **Rewrite** the `cats.json` file with the applied changes.
+- **Rewrite** the `cats.json` file with the applied changes
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-80.jpg" /]
 
@@ -729,11 +735,11 @@ The steps are the same:
 
 # Search
 
-Having a web page with cats is fun but sometimes you want to filter them by some criteria.
+Having a web page with cats is fun, but sometimes you want to **filter** them by some **criteria**.
 
-Therefore, our home page includes a little form that has only one text field (cat's name or part of it).
+Therefore, our home page includes a little form that has **only one text field** (a cat's **name** or a part of it).
 
-After submitting the form, all the cats containing such text or having the same name should be displayed.
+After **submitting** the form, **all** the cats **containing** such text or having the same name should be **displayed**.
 
 **Good luck!**
 

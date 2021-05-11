@@ -47,3 +47,8 @@ Here is how it happens:
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-6.gif" /]
 [/slide]
 
+[slide hideTitle]
+# Event Loop - Demo
+
+A live code demo will be added later.
+[/slide]
