@@ -1,4 +1,4 @@
-# Testarea unitară cu Mocha și Chai
+# Testarea Unitară cu Mocha și Chai
 
 [slide hideTitle]
 
