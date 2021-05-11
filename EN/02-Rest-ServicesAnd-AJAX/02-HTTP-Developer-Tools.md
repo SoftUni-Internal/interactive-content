@@ -14,7 +14,7 @@ To see the server **response**, we have to go to the **Network** tab and choose 
 
 Here is how it looks:
 
-[image assetsSrc="image33.png" /]
+[image assetsSrc="JS-Applications-Rest-Services-and-AJAX-2.png" /]
 
 There are multiple tabs - each with a different set of functionalities.
 
