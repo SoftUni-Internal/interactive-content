@@ -6,10 +6,10 @@
 ## In this lesson you learned:
 
 - **Design patterns** are proven approaches to **common software problems** 
-  * these **blueprints** allow us to benefit from the knowledge and **experience** of other programmers 
+  * these **blueprints** allow us to benefit from the knowledge and the **experience** of other programmers 
 
-- They are not **concrete solutions** and need to be **implemented** on a case by case basis 
-  * we must **compare** the benefits and consequences from their use first
+- They are not **concrete solutions** and need to be **implemented** on a case-by-case basis 
+  * we have to **estimate and compare** the benefits and the consequences of their usage
 
 - **Categories of design patterns:**
     * **creational**: focuses on object **creation** mechanisms
