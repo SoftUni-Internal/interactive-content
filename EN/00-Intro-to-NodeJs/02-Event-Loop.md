@@ -16,7 +16,7 @@ That function stays there **until execution.**
 
 Here is a visual representation of how the event loop operates:
 
-[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-4.gif" /]
+[image assetsSrc="JS-BackEnd-Intro-To-Nodejs-4.png" /]
 
 [/slide]
 
