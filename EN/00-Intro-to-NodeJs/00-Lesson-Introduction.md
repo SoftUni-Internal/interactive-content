@@ -7,9 +7,9 @@
 
 **1. Introduction to Node.js**
 
-- How Node.js is related to JavaScript
-
 - How to install Node.js and run simple programs
+
+- The benefits of server-side JavaScript
 
 **2. Event loop**
 
