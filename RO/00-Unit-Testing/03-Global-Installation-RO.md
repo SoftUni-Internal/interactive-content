@@ -1,10 +1,10 @@
-# Instalarea Mocha și Chai la nivel global
+# Instalarea Mocha și Chai la Nivel Global
 
 [slide hideTitle]
 
-# Instalarea globală
+# Instalarea Globală
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-11-12-13-14-global-installation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/RO/interactive-js-apps-unit-testing-11-12-13-14-global-installation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a instala framework-uri și biblioteci la nivel global, utilizați Windows "CMD" (Command Prompt) sau "npm" (Node Package Manager) în Visual Studio Code.
 
@@ -26,7 +26,7 @@ Verificați dacă Mocha este instalat.
 mocha --version
 ```
 
-# Configurarea Node Path
+## Configurarea Node Path
 
 **Node.js** nu își găsește implicit modulele instalate global.
 
@@ -69,9 +69,9 @@ describe('Test group #2', function () {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Sum of Numbers
+# Problemă cu Soluție: Sum of Numbers
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-15-solution-sum-of-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/RO/interactive-js-apps-unit-testing-15-problem-sum-of-numbers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum of Numbers" taskId="js-applications-Unit-Testing-lab-Sum-Of-Numbers" executionType="tests-execution" executionStrategy="javascript-code-against-unit-tests-with-mocha" requiresInput]
 
@@ -109,7 +109,7 @@ Ar trebui să îndeplinească următoarele cerințe:
 [tests]
 [test]
 [input]
-//\<minTestCount\>3\</minTestCount\> - specifică cantitatea minimă de teste pe care ar trebui să le aibă codul dvs.
+//\<minTestCount\>3\</minTestCount\> - specifies the minimum amount of tests your code should have.
 let sum = function(arr)\{\};
 [/input]
 [output]

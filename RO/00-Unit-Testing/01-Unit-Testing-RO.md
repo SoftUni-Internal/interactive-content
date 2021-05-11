@@ -2,9 +2,9 @@
 
 [slide hideTitle]
 
-# Ce este testarea unitară?
+# Ce este Testarea Unitară?
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-3-4-5-unit-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/RO/interactive-js-apps-unit-testing-3-4-5-unit-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Există diferite tipuri de testare, cum ar fi testarea unitară, testarea integrării, testarea acceptării, testarea end-to-end și multe altele.
@@ -46,7 +46,7 @@ Apoi sortăm matricea.
 Folosim metoda `JSON.stringify()` pentru a converti matricea într-un șir și a o compara cu ieșirea așteptată - \[-2,2,4,15\].
 
 
-## De ce avem nevoie de testarea unitară?
+## De ce Avem Nevoie de Testarea Unitară?
 
 Scrierea testelor unitare vă va obliga să refactorizați codul care nu este bine structurat și vă va ajuta să îl îmbunătățiți.
 
@@ -70,9 +70,9 @@ Când codul este testabil, acest lucru îl face de obicei mai ușor de citit, de
 
 [slide hideTitle]
 
-# Structura testării unitare
+# Structura Testării Unitare
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-6-7-unit-tests-structures-and-frameworks-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/RO/interactive-js-apps-unit-testing-6-7-unit-tests-structures-and-frameworks-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Arrange/Act/Assert (AAA)** este un model pentru aranjarea și formatarea codului în metodele Unit Test.
 
@@ -129,7 +129,7 @@ Aceasta este o listă a unor framework-uri populare de testare.
 | Should.js | Compatibil cu orice framework de testare unitară. Vă păstrează codul de testare curat, ușor de înțeles și mesajele de eroare utile. |
 
 
-**Framework-urile Mocking:** 
+**Framework-Urile Mocking:** 
 
 Mocking este utilizat atunci când codul pe care îl testați are dependențe externe necesare pentru a rula.
 

@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Rezumat
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/EN/interactive-js-apps-unit-testing-22-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/RO/interactive-js-apps-unit-testing-22-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## În această lecție ați învățat:
 
@@ -26,11 +26,11 @@
     // Crearea unui grup numit  "MathOperations"
     describe('MathOperations', function() {
         // Primul test care descrie ce testăm
-        it('Multiplying 2*2 should equal 4', function(){
+        it('Multiplying 2 * 2 should equal 4', function(){
         assert.equal(4, 2*2);
         });
         // Al doilea test
-        it('(0+2)*2 should be equal to 4', function(){
+        it('(0 + 2) * 2 should be equal to 4', function(){
         assert.equal(4, (0+2)*2);
         });
     });
