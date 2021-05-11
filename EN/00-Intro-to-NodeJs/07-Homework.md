@@ -192,25 +192,27 @@ Inside the newly created window, type "**npm init**" and fill the project's data
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-17.jpg" /]
 
-If you are using **Visual Studio Code**, then in the same console (after you have inserted all the needed information) type: "**code .**".
+If you are using **Visual Studio Code**, then in the same console (after you have inserted all the needed information), type: "**code .**".
 
-This will open the editor for you.
+This will **open** the editor for you.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-18.jpg" /]
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-19.jpg" /]
 
-Now let us create the initial project folder structure. 
+## Folder Structure
+
+Now let us create the **initial** project folder structure. 
 
 It may look like this:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-20.jpg" /]
 
-Download the **resources** and put the `site.css` and `favicon.ico` in the "**content**" folder like this:
+Download the **resources** and put the `site.css` and `favicon.ico` in the "**content**" folder, as shown here:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-21.jpg" /]
 
-And move all **views** into the **views folder** like this:
+And move all **views** into the **views folder**, as follows:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-22.jpg" /]
 
@@ -225,11 +227,11 @@ First, you should create **two constants**, one for the **HTTP module** and the 
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-23.jpg" /]
 
-Once we require our HTTP module, we can create our server via **createServer function**.
+Once we require our HTTP module, we can create our server via a `createServer` function.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-24.jpg" /]
 
-When you do that, just open the Terminal with **(Ctrl + `)** and run the server with the **node index** command
+When you do that, just open the Terminal with **(Ctrl +** \`**)** and run the server with the `node index` command.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-25.jpg" /]
 
