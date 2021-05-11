@@ -30,11 +30,13 @@ Like all Duplex streams, Transform streams implement both the Readable and Writa
 
 # Readable Stream
 
-- **Functions**
+A readable stream is a type of stream that reads a file or data, often very large, and breaks it into small pieces (chunks). 
 
-There are many useful functions that we can use on readable Streams.
+This way we can work sequentially with the data without having to load them into RAM.
 
-Use the `.read()` method to read the data out of the internal buffer. 
+Readable Stream has the following **methods**:
+
+- `.read()`: this method read the data out of the internal buffer
 
 It returns data as a buffer object if no encoding is being specified or if the stream is working in object mode.
 
@@ -46,7 +48,7 @@ If no data exist in the buffer, then **null** is returned.
 readable.read(size);
 ```
 
-Use the `.pause()` method to stop the flowing mode from emitting data events. 
+- `.pause()`: this method stop the flowing mode from emitting data events
 
 Any data that becomes accessible will continue to exist in the internal buffer.
 
@@ -56,7 +58,7 @@ This method does not accept any parameters.
 readable.pause();
 ```
 
-Use the `.resume()` method for data that has been paused and can be resumed so that data can start flowing again.
+- `.resume()`: this method is used for data that has been paused and can be resumed so that data can start flowing again.
 
 This method does not accept any parameters.
 
@@ -64,25 +66,23 @@ This method does not accept any parameters.
 readable.resume();
 ```
 
-- **Events**
+## Events
 
-All streams are instances of "**EventEmitter**". 
-
-They emit events used to read and write data.
+All streams are instances of "**EventEmitter**", emit events used to read and write data.
 
 The most important events on a readable stream are:
 
-The **data** event - is emitted whenever the stream passes a chunk of data to the consumer.
+- **Data**: this event emits whenever the stream passes a chunk of data to the consumer
 
-The **end** event - is emitted when there is no more data to be received from the stream.
+- **End**: this event emits when there is no more data to be received from the stream
 
-The **error** event - is emitted when there is an error receiving data.
+- **Error**: this event emits is emitted when there is an error receiving data
 
 [/slide]
 
 [slide hideTitle]
 
-# Readable Stream Example
+# DEMO: Readable Stream Example - add demo
 
 An HTTP request is an instance of a readable stream.
 
@@ -123,11 +123,13 @@ http.createServer((req, res) => {
 
 # Writable Stream
 
-- **Functions**
+A writable stream is a type of stream that files or data that can be written.
 
-The `.write()` method takes three arguments:
+Writable Stream has the following **methods**:
 
-The chunk is a buffer unless we configure the stream differently.
+- `.write()`: this method takes three arguments
+
+The **chunk** is a buffer unless we configure the stream differently.
 
 We need the encoding argument in that case, but usually, we can ignore it.
 
@@ -148,7 +150,9 @@ const outStream = new Writable({
 process.stdin.pipe(outStream);
 ```
 
-The `.end()` method ends writing data. The arguments chunk and encoding are optional, which will permit one final new chunk of data to be written instantly before closing the stream.
+- `.end()`: this method ends writing data
+
+The arguments chunk and encoding are optional, which will permit one final new chunk of data to be written instantly before closing the stream.
 
 Moreover, the optional callback function is added as a listener for the **finish** event of the Writable stream.
 
@@ -156,15 +160,15 @@ Moreover, the optional callback function is added as a listener for the **finish
 writable.end( chunk, encoding, callback);
 ```
 
-- **Events**
+## **Events**
 
 The most important events on a writable stream are:
 
-The **drain** event is fired when a writable stream's internal buffer has been emptied.
+- **Drain** event is fired when a writable stream's internal buffer has been emptied
 
 The cause of something like this can be due to setups that involve reading a data source from one stream faster than it can be written to another resource.
 
-The **finish** event in a Writable Stream is emitted after the Calling of `writable.end()` method when all the data is being flushed to the hidden system.
+- **Finish** event in a Writable Stream is emitted after the Calling of `writable.end()` method when all the data is being flushed to the hidden system
 
 Exapmle:
 

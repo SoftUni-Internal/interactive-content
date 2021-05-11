@@ -20,7 +20,7 @@ The "**event bus**" receives messages from the "**Publisher**" and then sends th
 
 [slide hideTitle]
 
-# Demo: Publisher-Subscriber Pattern
+# Demo: Publisher-Subscriber Pattern - add demo
 
 The first thing we are going to do is to declare a local variable inside the function to store subscribed callbacks like so, `const subscribers = {}`.
 
