@@ -4,7 +4,7 @@
 
 # Working with the File System
 
-The Node.js **file system module** allows you to work with the file system.
+The Node.js **file system module** allows you to work with the file system synchronously or asynchronously.
 
 To include the **File System module**, use the `require()` method.
 
@@ -19,7 +19,7 @@ Commonly used functions for the **File System module**:
 - Delete files
 - Rename files
 
-All these functions can be **synchronous** or **asynchronous**.
+These functions can be **synchronous** or **asynchronous**.
 
 Example:
 
@@ -37,7 +37,7 @@ let data = fs.readFile('./package.json', 'utf8', (err, data) => {
 
 [slide hideTitle]
 
-# List files in a directory
+# List Files in a Directory
 
 Use the `readdirSync()` method to read the contents of a given directory synchronously.
 
@@ -81,7 +81,7 @@ let data = fs.readdir('./myDir', 'utf8', (err, data) => {
 
 [slide hideTitle]
 
-# Create a directory
+# Create a Directory
 
 Use the `mkdirSync()` method to create a directory synchronously.
 
@@ -105,7 +105,7 @@ fs.mkdir('./myDir', err => {
 
 [slide hideTitle]
 
-# Rename file or directory
+# Rename File or Directory
 
 Use the `renameSync()` method to rename a file or a directory synchronously.
 
@@ -129,7 +129,7 @@ fs.rename('./oldName', './newName', err => {
 
 [slide hideTitle]
 
-# Write to a file
+# Write to a File
 
 When writing data to a file, we need to specify the path to the file first.
 
@@ -155,7 +155,7 @@ fs.writeFile(filePath, data, err => {
 
 [slide hideTitle]
 
-# Delete a file
+# Delete a File
 
 In case we want to delete a file use the `unlinkSync()` or `unlink()` method.
 
@@ -180,5 +180,11 @@ fs.rmdir('./myDir', err => {
     }
 });
 ```
+
+[/slide]
+
+
+[slide hideTitle]
+# Demo: FS Modules
 
 [/slide]
