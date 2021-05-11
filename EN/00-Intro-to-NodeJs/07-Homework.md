@@ -241,79 +241,87 @@ When you do that, just open the Terminal with **(Ctrl +** \`**)** and run the se
 [slide hideTitle]
 # Display the Home Page
 
-We will start implementing the logic for application in the following steps.
+We will start implementing the **application logic** in the following steps.
 
-Note that the application does not have users.
+Note that the application **does not** have users.
 
-First, whenever we access our site, we want to display the "default" page or so-called "home" page. To do that we have to:
+First, whenever we access our site, we want to display the "**default**", or so-called "**home**" page. 
 
-- Implement back-end logic of what to be displayed
-- Write our view (the HTML and CSS)
-- Make the server and execute the logic we implement in the first step
+To do that, we have to:
 
-Now go to the "**handlers**" folder and add new `home.js`. In the beginning, add the modules we are going to use:
+- Implement **back-end logic** of what to be displayed
+- Write our **view** (the HTML and CSS)
+- Write the **server** and **execute** the **logic** we implemented in the first step
+
+Now, go to the "**handlers**" folder and add a new `home.js` file. 
+
+In the beginning, add the **modules** we are going to use:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-26.jpg" /]
 
-As we mentioned above, we will use **JSON files** to simulate a database, so create one folder called "**data**" and create 2 JSON files (**cats** and **breeds**)
+As we mentioned above, we will use **JSON files** to simulate a database, so create a folder called "**data**".
+
+Inside, create 2 **JSON** files (**cats.json** and **breeds.json**).
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-27.jpg" /]
 
-And do not forget to include it in the home.js file. We will need them later, but let us include them anyway.
+And do not forget to include it in the `home.js` file. 
+
+We will need them a little **later**, but **include** them anyway.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-28.jpg" /]
 
-Then let us start with exporting the logic as a function which is accepting both request and response.
+Then, let us start **exporting** the logic as a **function** which is accepting both a **request**, and a **response**.
 
-Then we can parse the requested URL and attach it to the request object:
+After that, we can **parse** the requested **URL** and **attach** it to the request object:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-29.jpg" /]
 
-Now we should tell the server when the home handler will handle the request (when the requested URL is: `/` and the request method is "**GET**"):
+Now we should tell the **server** when to **dispatch** the request to the **home handler** - when the **requested URL** is: `/` and the request **method** is "**GET**":
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-30.jpg" /]
 
-If we could not handle the current request, we will notify the server of that by returning true (is a request not handled - true)
+If we could not handle the current request, we will **notify** the server of that by returning `true` (is a request **not handled**) - `true`).
 
-What is left is to find the HTML5 page read it and send it as a response – here is how it could be done.
+What is left is to **find** the HTML5 **page**, **read** it, and **send** it as a **response**.
 [/slide]
 
 [slide hideTitle]
 # Hints
 
-Inside the if statement above we should locate the local `index.html` file (our home page) and store the path to it into a variable called **filePath** for instance.
+Inside the above **if-statement**, we should locate the local `index.html` file (our home page) and store the path to it into a variable called **filePath** for instance.
 
-Use `path.normalize` and `path.join` functions and `__dirname property` to achieve that.
+Use the `path.normalize` and `path.join` functions, along with `__dirname property` to achieve that.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-31.jpg" /]
 
-Use the fs module to read the HTML file using the **readFile** function with the given **filePath**.
+Use the `fs` module to read the HTML file using the **readFile** function with the derived **filePath**.
 
-If an error occurs send a **404 response** code and some **plain text message**.
+If an error occurs, send a **404 response** code and a fitting **plain text message**.
 
-If the specified file path name is correct send the **HTML** as a response with code **200** and content type "**text/html**".
+If the specified file path name is **correct**, send the **HTML** as a response with a **code** of **200** and a **content type** of "**text/html**".
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-32.jpg" /]
 
-Our HTML page (home page) is almost ready (later the cats will be added).
+Our HTML page (**home page**) is almost **ready** (the cats will be added later).
 
-We are almost ready to test if everything mentioned above is about to work.
+We will soon be ready to **test** if everything mentioned above is about to work.
 
 Go to the "**handlers**" folder and add the `index.js` file.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-33.jpg" /]
 
-This `index.js` file inside the "**handlers**" folder will be our file which exports all future handlers which we will create (**static file handler** and **cat handler**).
+This `index.js` file inside the "**handlers**" folder the file that **exports** all future **handlers** which we will create (**static file handler** and **cat handler**).
 
-After that go back to the **root folder** and open the `index.js` (that file where we create our HTTP server).
+After that, go back to the **root folder** and open `index.js` (that file where we created our HTTP **server**).
 
-As we mentioned above, the `index.js` **file** inside the "**handlers**" **folder** will export **all handlers** to the "open world". That is why we should require them in this `index.js` file. 
+As we mentioned above, the `index.js` **file** inside the "**handlers**" **folder** will export **all handlers** to the "open world". 
 
-Like:
+That is why we should require them in this `index.js` file:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-34.jpg" /]
 
-And loop through all handlers and if the right handler is found break the loop.
+**Loop through** all handlers and if the right handler is found, break the loop.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-35.jpg" /]
 
@@ -323,15 +331,17 @@ Sadly, the result will be **waiting on the localhost**...
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-36.jpg" /]
 
-Stop the page loading by clicking on the `[_X_]` button.
+**Stop** the page loading by clicking on the `[_X_]` button.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-37.jpg" /]
 
-Our **index.html** file but **without any styles**, if you open the **network tab** inside **dev tools** and refresh the page the result will be something like this:
+Our `index.html` file is visualised, but **without any styles**.
+
+If you open the **network tab** inside **DevTools** and refresh the page, the result will be something like this:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-38.jpg" /]
 
-In other words, the server does not have the functionality to serve static files. 
+In other words, the server does not have the functionality to **serve static files**. 
 
 We will take care of that in the next section.
 [/slide]
@@ -344,42 +354,45 @@ In this step, we will serve static files.
 
 In other words, load **css**, **js** and **image** files.
 
-Let us begin by adding the back-end logic.
+Let us begin by adding the **back-end** logic.
 
-In the "**handler**" folder add a new file "**static-files.js**".
+Add a new file called `static-files.js` in the "**handler**" folder.
 
-It will behave like a normal handler but instead of returning HTML, it will return file(s).
+It will behave like a normal **handler** but **instead of returning HTML**, it will return **file(s)**.
 
-Our public folder will be the "**content**":
+Our public folder will be "**content**":
 
-First, let us create one function called getContentType which will receive our pathname (url), checks the file extension and returns the **correct content-type**. 
+First, let us create a function called `getContentType`.
 
-Like:
+It will receive our ***pathname*** (url), checks the file **extension** and returns the **correct** `content-type`:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-39.jpg" /]
 
-As it is shown, just continue the logic to wrap the other extensions like (**HTML**, **png**, **js**, etc...)
+Following the example, continue the logic to wrap the other extensions (such as **HTML**, **png**, **js**, etc...).
 
-After that you should **export** a **function** which will receive our so familiar **request** and **response** parameters and checks the **pathname** and the **request** method:
+After that, you should **export** a **function** which will:
+
+- receive our so familiar **request** and **response** parameters
+- check the **pathname** and the **request** method
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-40.jpg" /]
 
-Implement the missing logic.
+**Implement** the missing logic.
 
-- **Read a file** via **readFile** function from **file system** (**fs**)
+- **Read a file** via the `readFile` function from **file system** (**fs**)
 - Check for errors
-- Deliver the correct content type
-- **Send** the correct **response** with the **received data** from the fs module
+- Deliver the correct **content type**
+- **Send** the correct **response** with the **received data** from the `fs` module
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-41.jpg" /]
 
 This will work for now, but when we load the cat images locally, we should make some changes here...
 
-Go back to "**handlers**/**index.js**" and add the static file handler:
+Go back to `handlers/index.js` and add the **static** file handler:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-42.jpg" /]
 
-If you have not included the `site.css` file and the `favicon.ico` in `home/index.html` go back and do it.
+If you have not included the `site.css` file and the `favicon.ico` in `home/index.html`, go back and do it.
 
 ## Note
 
