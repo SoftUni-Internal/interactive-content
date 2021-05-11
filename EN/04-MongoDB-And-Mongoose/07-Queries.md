@@ -97,7 +97,7 @@ We can **stack** different methods one upon the others.
 
 ``` js
 Student.find({})
-  .where('firstName').equals(George')
+  .where('firstName').equals('George')
   .where('age').gt(18).lt(65)
   .sort({age:-1})
   .skip(10)
