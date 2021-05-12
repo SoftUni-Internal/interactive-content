@@ -2,23 +2,23 @@
 
 [slide hideTitle]
 
-# Async Functions
+# Funcțiile Async 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-16-17-18-19-Async-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/Asynchronous-Programming-16-17-18-19-Async-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Async** functions, unlike promises and callbacks, are easier to read and use when you want to write code that runs asynchronously.
+Funcțiile **Async**, spre deosebire de promisiuni și callbacks, sunt mai ușor de citit și de utilizat atunci când doriți să scrieți cod care rulează asincron.
 
-They look like regular functions but utilize the event loop to work asynchronously.
+Arată ca niște funcții obișnuite, dar utilizează bucla de evenimente pentru a funcționa asincron.
 
-**Async** functions consist of two parts:
+Funcțiile **Async** constau din două părți:
 
-- `async` - Placed in **front of the function's declaration**
+- `async` - Amplasat în **fața declarației funcției**
 
-- `await` -  **pauses the flow** of the function until some value is returned
+- `await` -  **întrerupe fluxul** funcției până când se returnează o anumită valoare
 
-The use of the `await` keyword within an async function is optional and only used if you need to wait for some value to be returned to avoid having undefined variables.
+Utilizarea cuvântului cheie `await`  într-o funcție asincronă este opțională și este utilizată numai dacă trebuie să așteptați să fie returnată o anumită valoare pentru a evita variabile nedefinite.
 
-Here is an example of how `async` functions are structured:
+Iată un exemplu de structurare a funcțiilor  `async`:
 
 ```js live
 function getValueAfterDelay() {
@@ -41,13 +41,13 @@ async function printUsername() {
 printUsername();
 ```
 
-The `await` keyword is fundamentally different from `Promise.then()`.
+Cuvântul cheie `await` este fundamental diferit de `Promise.then()`.
 
-While `await` pauses the function execution for **just one promise**, `Promise.then()` is used to chain **multiple promises together**.
+În timp ce `await` întrerupe executarea funcției pentru **o singură promisiune**, `Promise.then()` este utilizat pentru a înlănțui **mai multe promisiuni împreună**.
 
-Always use `await` **to get a single value** and `Promise.then()` **to run many promises in parallel**.
+Folosiți întotdeauna `await` **pentru a obține o singură valoare** și `Promise.then()` **pentru a rula multe promisiuni în paralel**.
 
-One of the advantages of writing **async** functions is that they can be used in combination with **try/catch** blocks.
+Unul dintre avantajele funcțiilor de scriere **async** este acela că pot fi utilizate în combinație cu blocurile **try/catch**.
 
 
 
@@ -58,21 +58,21 @@ One of the advantages of writing **async** functions is that they can be used in
 
 # "Async"/"Await" vs "Promise.then"
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-20-Async-Await-vs-Promise.then()-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/Asynchronous-Programming-20-Async-Await-vs-Promise.then()-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Async functions are **much more concise** than promises.
+Funcțiile Async sunt **mult mai concise** decât promisiunile.
 
-Here is a comparison between the the two:
+Iată o comparație între cele două:
 
 ```js
-//Promise Example
+//Exemplu de promisiune
 function getDbInfo(url) {
     return fetch(url)
         .then((data) => {
-            return data.json(); //converts data to JSON
+            return data.json(); //convertește datele în JSON
         })
         .then((data) => {
-            data.performMethod(); //calls a random method of the data object
+            data.performMethod(); //apelează o metodă aleatorie a obiectului de date
         })
         .catch((err) => {
             console.log(err);
@@ -81,32 +81,32 @@ function getDbInfo(url) {
 ```
 
 ```js
-//Async function example
+//Exemplu de funcție asincronă
 async function getDbInfo(url) {
     try {
         let data = await fetch(url);
 
-        let dataToJSON = await data.json(); // converts data to JSON
-        dataToJSON.performMethod(); //calls a random method of the data object
+        let dataToJSON = await data.json(); // convertește datele în JSON
+        dataToJSON.performMethod(); //apelează o metodă aleatorie a obiectului de date
     } catch (err) {
         console.log(err);
     }
 }
 ```
 
-It is important to note that **async** functions are written **on top of promises** as a way to **ease the process of writing asynchronous code**.
+Este important să rețineți că funcțiile **asincrone** sunt scrise **pe lângă promisiuni** ca o modalitate de a **ușura procesul de scriere a codului asincron**.
 
-Both examples above **do the same job**, the difference is just in **code readability**.
+Ambele exemple de mai sus **fac aceeași treabă**, diferența este doar în **lizibilitatea codului**.
 
 [/slide]
 
 [slide hideTitle]
 
-# Error Handling
+# Manipularea Erorilor
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-21-Error-Handling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/Asynchronous-Programming-21-Error-Handling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Async functions are **best used with a try/catch block**.
+Funcțiile Async sunt **cel mai bine utilizate cu un bloc try/catch**.
 
 ```js
 async function getInfo(url) {
@@ -114,41 +114,41 @@ async function getInfo(url) {
         let response = await fetch(url);
         let text = await response.text();
     } catch (err) {
-        //would catch an error for every await operation
+        //ar detecta o eroare pentru fiecare operațiune await
         console.log(err);
     }
 }
 ```
 
-They could also be used with the `.catch()` method.
+Ele ar putea fi folosite și cu metoda `.catch()`.
 
 ```js
 async function getInfo(url) {
     const response = await fetch(url);
 }
 
-//getInfo() becomes a rejected promise
+//getInfo() devine o promisiune respinsă
 getinfo.catch((err) => {
     console.log(err);
 });
 ```
 
-It is **highly recommended** to add a `.catch()` method or a `catch` block even if the function performs a very simple task.
+Este **foarte recomandat** să adăugați o metodă`.catch()` sau un bloc `catch` chiar dacă funcția îndeplinește o sarcină foarte simplă.
 
-Working with code **always produces errors** and it is **better for user experience** if they are **handled instead of being shown on the screen**.
+Lucrul cu codul **produce întotdeauna erori** și este **mai bine pentru experiența utilizatorului** dacă acestea sunt **rezolvate în loc să fie afișate pe ecran**.
 [/slide]
 
 [slide hideTitle]
 
-# Sequential Execution
+# Execuție Secvențială
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-22-Sequential-execution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/Asynchronous-Programming-22-Sequential-execution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `await` keyword in `async` functions allows for the **execution of code in sequence**.
+Cuvântul cheie `await` din funcțiile `async` permite **executarea codului în secvențe**.
 
-When used **before an asynchronous operation**, the rest of the function will **pause and wait for the operation's return value**.
+Când este utilizat **înainte de o operațiune asincronă**, restul funcției se va **întrerupe și va aștepta valoarea returnată a operației**.
 
-Here is an example of sequential code execution:
+Iată un exemplu de executare secvențială a codului:
 
 ```js
 function multiplyByTwo(number, seconds) {
@@ -174,20 +174,20 @@ async function serialFlow() {
 serialFlow();
 ```
 
-Sequential execution is best used when **the functions below rely on the data that is being fetched**.
+Execuția secvențială este utilizată cel mai bine atunci când **funcțiile de mai jos se bazează pe datele preluate**.
 
-This way, **going inside the given function with an undefined variable is impossible**. 
+În acest fel, **intrarea în funcția dată cu o variabilă nedefinită este imposibilă**.
 [/slide]
 
 [slide hideTitle]
 
-# Concurrent Execution
+# Execuție Concurentă
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-23-Concurrent-execution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/Asynchronous-Programming-23-Concurrent-execution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When the **await** keyword is omitted, operations run **concurrently** or **independently** from one another.
+Atunci când cuvântul cheie **await** este omis, operațiile rulează **simultan** sau **independent** una de cealaltă.
 
-Here is the code from the previous example, but with **concurrent** execution:
+Iată codul din exemplul anterior, dar cu execuție **concurentă**:
 
 ```js
 function multplyByTwo(number, seconds) {
@@ -213,8 +213,8 @@ async function concurrentFlow() {
 concurrentFlow();
 ```
 
-It is preferred to use the `async` keyword before **asynchronous operations** if any functionality below them **relies on their return value**.
+Este de preferat să folosiți cuvântul cheie `async` înainte de **operațiuni asincrone** dacă orice funcționalitate de sub acestea **se bazează pe valoarea lor de returnare**.
 
-If the program flow is parallel, the functions that **depend on the asynchronous operations' values would throw errors**.
+Dacă fluxul programului este paralel, funcțiile care **depind de valorile operațiilor asincrone ar genera erori**.
 
 [/slide]
