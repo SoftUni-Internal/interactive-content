@@ -50,11 +50,11 @@ bcrypt.genSalt(saltRounds, (err, salt) => {
 
 - **JWT**
 
-  * *standard for transferring **JSON** in a secure way
+  * standard for transferring **JSON** in a secure way
 
-  * *a **JSON Web Token** consists of a header, payload, and signature
+  * a **JSON Web Token** consists of a header, payload, and signature
 
-  * *used for **authorization** and exchanging **information**
+  * used for **authorization** and exchanging **information**
 
 ```js
 const jwt = require("jsonwebtoken");
