@@ -6,22 +6,20 @@
 ## In this lesson you will learn:
 
 **1. Pub/Sub Pattern**
-- Publish-Subscribe Pattern
+- How to implement the Publish-Subscribe pattern
 
 **2. Streams**
-- Readable
-- Writable
-- Duplex
-- Transform
+- What streams are
+- How to use the four different types of streams
 
 **3. Events**
-- Event Emitter
+- Triggering and subscribing to events with the EventEmitter class
 
 **4. FS Module**
-- File System
+- How to use the File System module
 
 **5. Debugging**
-- Visual Studio Code
-- Nodemon
+- The different ways of debugging a Node.js application
+- How to debug with Nodemon
 
 [/slide]
