@@ -5,20 +5,29 @@
 ## In this lesson you learned:
 
 - Event loop
-  * **Order of execution** for called functions
+  * defines the **order of execution** for called functions
+  * continuously looks for, stacks, and handles events 
 
 - Modules
-  - **Core**, **Local** and **Third-party** modules and their differences
+  * **core**, **local** and **third-party** modules and their differences
   
-  * **Installing** a third-party module
+  * **installing** a third-party module
     
-  * **Using modules** in a program
+  * **using modules** in a program
+
+```js
+const qs = require("querystring");
+
+const query = "?product=Sofa&quantity=3";
+
+const queryObject = qs.parse(query);
+```
 
 - Web servers
 
-   * **What** a web server does
+   * software solution that operates with **web requests**
 
-   * **Creating** a web server
+   * **creating** a web server
 
 ```js
 const http = require("http");

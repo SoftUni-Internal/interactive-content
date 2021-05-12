@@ -120,7 +120,7 @@ npm install mocha --save-dev
 // Saves the mocha module as a developer dependency, as it is not needed by the users
 ```
 
-After installation, use a third-party module like so:
+After installation, use a third-party module as shown below:
 
 ```js
 const express = require("express");
@@ -138,36 +138,42 @@ They provide the most **basic functionality** and are **automatically loaded** o
 
 Here are some of the most commonly used core modules:
 
-- `url`
+## `url`
 
 ```js
 const url = require("url");
-
-// Used to parse URLs
 ```
 
-- `path`
+The `url` module includes **methods** for URL manipulation, including **parsing** and **serialization**.
+
+It also has a vast amount of **properties**, such as:
+
+- `url.protocol` - used for accessing or changing the URL protocol (e.g. from `http` to `https`)
+- `url.pathname` - we can access and modify the path portion of the URL (`/profile`, `/products/3`)
+- `url.search` - can be used to modify or access the URL's query portion (`?title=QueryOne`)
+
+## `path`
 
 ```js
 const path = require("path");
 
-// Used to operate with file paths
+// Used to operate with file paths.
 ```
 
-- `fs`
+## `fs`
 
 ```js
 const fs = require("fs");
 
-// Used to operate with the file system
+// Used to operate with the file system.
 ```
 
-- `stream`
+## `stream`
 
 ```js
 const stream = require("stream");
 
-// Used to stream data
+// Used to stream data.
 ```
 
 [/slide]
@@ -216,11 +222,15 @@ console.log(query); // ?year=2017&month=february
 
 A query string is a way to **assign values** to variables and **pass them as URL parameters**.
 
-As seen in the previous slides a query string looks like this:
+As seen in the previous slides, they always begin with a question mark `?`:
 
 ```js
 const queryString = "?name=David&age=35";
 ```
+
+Each parameter is a **key-value** pair, joined by using an equal sign: `name=David`
+
+**Parameters** are connected using an ampersand - `&`.
 
 The `querystring` module in Node.js transforms such strings into **objects of key-value pairs**.
 
@@ -233,7 +243,11 @@ const qs = require("querystring");
 const queryObject = qs.parse(qString);
 
 console.log(queryObject.name); // David
-console.log(queryobject.age); // 35
+console.log(queryobject.age);  // 35
 ```
+
+The `parse` method accepts `qString` as an argument.
+
+After it has been parsed, an object is returned, and we can access and modify each property.
 
 [/slide]

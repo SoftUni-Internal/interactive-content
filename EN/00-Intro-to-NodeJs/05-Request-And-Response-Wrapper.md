@@ -12,13 +12,13 @@ It has many properties, ranging from the **type of request** to its **headers an
 
 Here are some of the more commonly used properties:
 
-- `httpVersion` - specifies the **version** of the HTTP protocol.
+- `httpVersion` - specifies the **version** of the HTTP protocol
 
-- `headers` - passes **context and credentials** as request headers.
+- `headers` - passes **context and credentials** as request headers
 
-- `method` - specifies the type of the request (`GET`, `POST`, `PUT`, `DELETE` etc.).
+- `method` - specifies the type of the request (`GET`, `POST`, `PUT`, `DELETE` etc.)
 
-- `url` - the request's **URL**.
+- `url` - the request's **URL**
 
 [/slide]
 
@@ -62,13 +62,13 @@ We use it to send **data and status information** as a response from the server.
 
 These are some of the methods used with it: 
 
-- `res.writeHead` - Adds a response header with a **status code**, **content type** and **message**.
+- `res.writeHead` - Adds a response header with a **status code**, **content type** and **message**
 
-- `res.write` - Can be used instead of `writeHead`. Will send a **default header**.
+- `res.write` - Can be used instead of `writeHead`. Will send a **default header**
 
-- `res.statusCode` - Specifies the **HTTP status code** when not using `writeHead`.
+- `res.statusCode` - Specifies the **HTTP status code** when not using `writeHead`
 
-It is recommended to **use the proper HTTP status codes in every response** as it **significantly improves the website's SEO**.
+It is recommended to **use the proper HTTP status codes in every response** as it **significantly improves the website's SEO**
 
 Here are some of the more common status codes and their meaning: 
 
