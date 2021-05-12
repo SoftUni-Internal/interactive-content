@@ -1,24 +1,24 @@
-# Homework
+# Teme Pentru Acasă
 
 [slide hideTitle]
 
-# Problem: Bus Stop
+# Problemă: Bus Stop
 
-To solve some of the following tasks, you will need to use an up-to-date version of the local REST service which can be downloaded from [here](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Apps-Server1.zip). 
+Pentru a rezolva unele dintre următoarele sarcini, va trebui să utilizați o versiune actualizată a serviciului local REST care poate fi descărcat de la [here](https://videos.softuni.org/resources/javascript/javascript-applications/JS-Apps-Server1.zip). 
 
-To start the server, extract it to a folder on your computer and run the included **start.bat** file, or manually open a command prompt and execute the `node server.js` command.
+Pentru a porni serverul, extrageți-l într-un folder de pe computer și rulați fișierul **start.bat** inclus sau deschideți manual un prompt de comandă și executați comanda `node server.js`.
 
-Download the resources from [here](https://videos.softuni.org/resources/javascript/javascript-applications/01_Bus_Stop.zip).
+Descărcați resursele de aici [here](https://videos.softuni.org/resources/javascript/javascript-applications/01_Bus_Stop.zip).
 
-## Description
+## Descriere
 
-Create a JS program that displays the arrival times of all buses for a particular "**bus stop id**" when a button is clicked.
+Creați un program JS care afișează orele de sosire ale tuturor autobuzelor pentru o anumită "**stație de autobuz**" când se face clic pe un buton.
 
-When the [**Submit**] button is clicked, the name of the bus stop should appear and the list below should get populated with all of the buses that are expected to arrive, along with their arrival times. Take the **value** for the bus stop id from the **stopId** input field.
+Când se face clic pe butonul [**Submit**], numele stației de autobuz ar trebui să apară și lista de mai jos ar trebui să fie completată cu toate autobuzele care sunt așteptate să sosească, împreună cu orele de sosire ale acestora. Luați **valoarea** pentru ID-ul stației de autobuz din câmpul de intrare **stopId**.
 
-Send a GET request to `http://localhost:3030/jsonstore/bus/businfo/:busId` and parse the response. 
+Trimiteți o solicitare GET către `http://localhost:3030/jsonstore/bus/businfo/:busId` și transformați răspunsul.
 
-You will receive a **JSON object** in the following format:
+Veți primi un **obiect JSON** în următorul format:
 
 ```
 stopId: {
@@ -30,31 +30,31 @@ stopId: {
 }
 ```
 
-Place the **name** property as a **text** inside the div container with id **stopName**, and each bus as a **list item** in the following format:
+Plasați proprietatea **name** ca **text** în containerul div cu id-ul **stopName** și fiecare autobuz ca **element de listă** în următorul format:
 
 - **Bus {busId} arrives in {time}**
 
-If the request is invalid or the information is not in the expected format, display **Error**. 
+Dacă solicitarea nu este validă sau informațiile nu sunt în formatul așteptat, afișați **Error**. 
 
-The list should be cleared before every request is sent.
+Lista ar trebui să fie ștearsă înainte ca fiecare solicitare să fie trimisă.
 
-**Note:** The service will respond with valid data to bus id: 1287, 1308, 1327, and 2334.
+**Notă:** Serviciul va răspunde cu date valide la codul autobuzului: 1287, 1308, 1327 și 2334.
 
 
-## Examples
+## Exemple
 
 [image assetsSrc="asyncprogramming-1.png" /]
 
 
 [image assetsSrc="asyncprogramming-2.png" /]
 
-When the \[**Check**\] button is clicked, the results should be displayed in the corresponding elements:
+Când se face clic pe butonul \[**Check**\] rezultatele trebuie afișate în elementele corespunzătoare:
 
 [image assetsSrc="asyncprogramming-3.png" /]
 
 [image assetsSrc="asyncprogramming-4.png" /]
 
-If an error occurs, the stop name changes to Error:
+Dacă apare o eroare, numele opririi se schimbă în Error:
 
 [image assetsSrc="asyncprogramming-5.png" /]
 
@@ -64,27 +64,27 @@ If an error occurs, the stop name changes to Error:
 
 [slide hideTitle]
 
-# Problem: Bus Schedule
+# Problemă: Bus Schedule
 
-Download the resources from [here](https://videos.softuni.org/resources/javascript/javascript-applications/02_Bus_Schedule.zip).
+Descărcați resursele de aici [here](https://videos.softuni.org/resources/javascript/javascript-applications/02_Bus_Schedule.zip).
 
-## Description
+## Descriere
 
-Create a JS program that tracks the progress of a bus on its route and announces it inside an info box. 
+Creați un program JS care urmărește progresul unui autobuz pe ruta sa și îl anunță într-o casetă de informații.
 
-The program should display the upcoming stop and request from the server the name of the next one once the bus arrives at that stop.
+Programul ar trebui să afișeze oprirea viitoare și să solicite de la server numele următoarei, odată ce autobuzul ajunge la stația respectivă.
 
-The bus has two states - **moving** and **stopped**. When it is **stopped**, only the [**Depart**] button must be **enabled**, and the info box must show the name of the **current** stop. 
+Autobuzul are două stări - **moving** și  **stopped**.  Când este **stopped**, numai butonul [**Depart**] trebuie să fie **activat**, iar caseta de informații trebuie să afișeze numele **stației** curente.
 
-When it is **moving**, only the [**Arrive**] button is **enabled**, and the info box must show the name of the **upcoming** stop. 
+Când este **moving**, numai butonul [**Arrive**] este **activat**, iar caseta de informații trebuie să afișeze numele **stației** viitoare. 
 
-Initially, the info box must show "**Not Connected**" and the [**Arrive**] button is **disabled**. 
+Inițial, în caseta de informații trebuie să apară  "**Not Connected**" și butonul [**Arrive**] este **dezactivat**. 
 
-The id of the first stop is "**depot**".
+ID-ul primei stații este "**depot**".
 
-When the [**Depart**] button is clicked, send a GET request to the server with the id of the current stop to the following URL: `http://localhost:3030/jsonstore/bus/schedule/:id`
+Când se face clic pe butonul [**Depart**] trimiteți o cerere GET către server cu ID-ul stației curente la următoarea adresă URL:`http://localhost:3030/jsonstore/bus/schedule/:id`
 
-You will receive a **JSON object** as a response in the following format:
+Veți primi un **obiect JSON** ca răspuns în următorul format:
 
 ```
 stopId {
@@ -96,37 +96,37 @@ stopId {
 }
 ```
 
-Update the info box with the information from the response, disable the [**Depart**] button and enable the [**Arrive**] button. 
+Actualizați caseta de informații cu informațiile din răspuns, dezactivați butonul [**Depart**] și activați butonul [ [**Arrive**]. 
 
-The text in the info box must be:
+Textul din caseta de informații trebuie să fie:
 
 - **Next stop {stopName}**
 
-When the [**Arrive**] button is clicked, update the text, disable the [**Arrive**] button and enable the [**Depart**] button. 
+Când se face clic pe butonul [**Arrive**] actualizați textul, dezactivați butonul [**Arrive**] și activați butonul [**Depart**]. 
 
-The text in the info box must be:
+Textul din caseta de informații trebuie să fie:
 
 - **Arriving at {stopName}**
 
-The program will cycle through the entire schedule infinitely if you keep clicking the buttons. 
+Programul va parcurge la infinit întregul program dacă continuați să faceți clic pe butoane.
 
-If any invalid data is received, show "**Error**" inside the info box and **disable** both buttons.
+Dacă se primesc date nevalide, afișați  "**Error**"  în caseta de informații și **dezactivați** ambele butoane.
 
-## Examples
+## Exemple
 
-Initially, the info box shows "**Not Connected**" and the arrive button is disabled.
+Inițial, în caseta de informații apare ca "**Not Connected**" și butonul de sosire este dezactivat.
 
 [image assetsSrc="asyncprogramming-7.png" /]
 
 [image assetsSrc="asyncprogramming-8.png" /]
 
-When [**Depart**] is clicked, a request is made with the first id. The info box is updated with the new information and the buttons are changed:
+Când se face clic pe  [**Depart**], se face o cerere cu primul id. Caseta de informații este actualizată cu noile informații și butoanele sunt schimbate:
 
 [image assetsSrc="asyncprogramming-9.png" /]
 
 [image assetsSrc="asyncprogramming-10.png" /]
 
-Clicking on the [**Arrive**] button changes the info box and swaps the buttons. This allows the [**Depart**] button to be clickable again, which makes a new request and updates the information:
+Dând clic pe butonul [**Arrive**], se schimbă caseta de informații și se schimbă butoanele. Aceasta permite butonului [**Depart**] să poată fi din nou selectabil, ceea ce face o nouă solicitare și actualizează informațiile:
 
 [image assetsSrc="asyncprogramming-11.png" /]
 
@@ -137,17 +137,17 @@ Clicking on the [**Arrive**] button changes the info box and swaps the buttons. 
 
 [slide hideTitle]
 
-# Problem: Forecaster
+# Problemă: Forecaster
 
-Download the resources from [here](https://videos.softuni.org/resources/javascript/javascript-applications/03_Forecaster.zip).
+Descărcați resursele de aici [here](https://videos.softuni.org/resources/javascript/javascript-applications/03_Forecaster.zip).
 
-## Description
+## Descriere
 
-Create a JS program that retrieves weather reports **from a server** and **displays** them to the user.
+Creați un program JS care preia rapoartele meteo **de pe un server** și **le afișează** utilizatorului.
 
-When the user writes the name of a location and clicks the [**Get Weather**] button, send a GET request to the server at `http://localhost:3030/jsonstore/forecaster/locations`.
+Când utilizatorul scrie numele unei locații și face clic pe butonul [**Get Weather**], trimiteți o cerere GET către server la `http://localhost:3030/jsonstore/forecaster/locations`.
 
-The response will be an array of objects with the following structure:
+Răspunsul va fi o serie de obiecte cu următoarea structură:
 
 ```
 {
@@ -159,11 +159,11 @@ The response will be an array of objects with the following structure:
 }
 ```
 
-Find the object that corresponds to the name that the user submitted in the input field with ID "**location**" and use its **code** value to make **two more** **GET requests**:
+Găsiți obiectul care corespunde numelui pe care utilizatorul l-a trimis în câmpul de introducere cu ID-ul "**location**" și folosiți-i valoarea **codului** pentru a face **încă două** **cereri GET**:
 
--   For the current weather conditions, make a request to `http://localhost:3030/jsonstore/forecaster/today/:code`
+- Pentru condițiile meteorologice actuale, faceți o solicitare la `http://localhost:3030/jsonstore/forecaster/today/:code`
 
-The response from the server will be an object with the following structure:
+Răspunsul de la server va fi un obiect cu următoarea structură:
 
 ```
 { 
@@ -174,9 +174,9 @@ The response from the server will be an object with the following structure:
 }
 ```
 
--   For a 3-day forecast, make a request to `http://localhost:3030/jsonstore/forecaster/upcoming/:code`
+-   Pentru o prognoză de 3 zile, faceți o solicitare la `http://localhost:3030/jsonstore/forecaster/upcoming/:code`
 
-The response will be an object with the following structure:
+Răspunsul de la server va fi un obiect cu următoarea structură:
 
 ```
 { 
@@ -187,15 +187,15 @@ The response will be an object with the following structure:
 }
 ```
 
-Use the information from these two objects to compose a forecast in HTML format, and insert it inside the page. 
+Utilizați informațiile din aceste două obiecte pentru a compune o prognoză în format HTML și introduceți-le în interiorul paginii. 
 
-Note that the \<div\> with an id of "forecast" must be set to visible. 
+Rețineți că \<div\> cu un ID de "forecast" trebuie setat la vizibil.
 
-See the examples for details.
+Consultați exemplele pentru detalii.
 
-If an **error** occurs (the server does not respond, or the location name cannot be found), or if the data is not in the correct format, display "**Error**" in the **forecast section**.
+Dacă apare o **eroare** (serverul nu răspunde sau numele locației nu poate fi găsit) sau dacă datele nu sunt în formatul corect, afișați "**Error**"în **secțiunea de prognoză**.
 
-Use the following codes for weather symbols:
+Utilizați următoarele coduri pentru simbolurile meteo:
 
 -   Sunny: `&#x2600;` // ☀
 -   Partly sunny: `&#x26C5;` // ⛅
@@ -203,11 +203,11 @@ Use the following codes for weather symbols:
 -   Rain: `&#x2614; `// ☂
 -   Degrees: `&#176;` // °
 
-## Examples
+## Exemple
 
-When the app starts, the **forecast div** is **hidden**. 
+Când începe aplicația, **forecast div** este **ascunsă**.
 
-When the user **enters a name** and **clicks** on the [**Get Weather**] button, a GET request is sent to the server.
+Când utilizatorul **introduce un nume** și **face clic** pe butonul [**Get Weather**] o cerere GET este trimisă la server.
 
 [image assetsSrc="asyncprogramming-13.png" /]
 
@@ -223,74 +223,76 @@ When the user **enters a name** and **clicks** on the [**Get Weather**] button, 
 
 [slide hideTitle]
 
-# Problem: Locked Profile
+# Problemă: Locked Profile
 
-Download the resources from [here](https://videos.softuni.org/resources/javascript/javascript-applications/04_Locked_Profile.zip).
+Descărcați resursele de aici [here](https://videos.softuni.org/resources/javascript/javascript-applications/04_Locked_Profile.zip).
 
-## Description
+## Descriere
 
-**Create a JS program** that **shows** and **hides** the additional information about users, which you can find by making a GET request to the server at the following URL:
+**Creați un program JS** care **afișează** și **ascunde** informațiile suplimentare despre utilizatori, pe care le puteți găsi făcând o solicitare GET către server la următoarea adresă URL:
 
 `http://localhost:3030/jsonstore/advanced/profiles`
 
-The response will be an object containing the information for all the users. 
+Răspunsul va fi un obiect care conține informații pentru toți utilizatorii.
 
-Create a profile card for every user and display it on the web page. 
+Creați un card de profil pentru fiecare utilizator și afișați-l pe pagina web. 
 
-Every item should have the following structure:
+Fiecare articol trebuie să aibă următoarea structură:
 
 [image assetsSrc="asyncprogramming-17.png" /]
 
 [image assetsSrc="asyncprogramming-18v2.png" /]
 
-When one of the [**Show more**] **buttons** is clicked, the **hidden information** in the **div** container should be displayed only if **the profile is not locked**. If the current profile is **locked**, nothing should happen.
+Când se face clic pe unul dintre **butoanele** [**Show more**] **informațiile ascunse** din containerul **div** trebuie afișate numai dacă **profilul nu este blocat**. 
+
+Dacă profilul curent este **blocat**, nu ar trebui să se întâmple nimic.
 
 [image assetsSrc="asyncprogramming-19.png" /]
 
-If the **hidden information is displayed** and we **lock** **the profile again**, the [**Hide it**] button should **not work**!
+Dacă **se afișează informațiile ascunse** și **blocăm** **profilul din nou**, butonul [**Hide it**] ar trebui **să nu funcționeze**!
 
-Otherwise, when the profile is **unlocked** and we click on the [**Hide it**] button, the new fields must be hidden again.
+În caz contrar, când profilul este **deblocat** și facem clic pe butonul [**Hide it**] noile câmpuri trebuie să fie ascunse din nou.
 
 [/slide]
 
 
 [slide hideTitle]
 
-# Problem: Accordion
+# Problemă: Accordion
 
-Download the resources from [here](https://videos.softuni.org/resources/javascript/javascript-applications/05_Accordion.zip).
+Descărcați resursele de aici [here](https://videos.softuni.org/resources/javascript/javascript-applications/05_Accordion.zip).
 
-## Description
+## Descriere
 
-Create an application that shows **less or more** information for the selected article. At the start, you should send a **GET** request to the server at: 
+Creați o aplicație care afișează **mai puține sau mai multe** informații pentru articolul selectat. La început, trebuie să trimiteți o cerere **GET** către server la:
 
 `http://localhost:3030/jsonstore/advanced/articles/list`
 
-The response will be an object with the titles of the articles.
+Răspunsul va fi un obiect cu titlurile articolelor.
 
-By clicking the [**More**] button for the selected **article**, it should **reveal** the content of a **hidden** div container and **change** the text of the button to [**Less**]. 
+Făcând clic pe butonul [**More**] pentru **articolul** selectat, acesta ar trebui să **dezvăluie** conținutul **ascuns** al unui div container și **să schimbe** textul butonului în [**Less**]. 
 
-Retrieve the content by making a **GET** request to the server at the following URL:
+Primiți conținutul făcând o cerere **GET** către server la următoarea adresă URL:
 
 `http://localhost:3030/jsonstore/advanced/articles/details/:id`
 
-The response will be an object with property **id**, **title**, **content**. 
+Răspunsul va fi un obiect cu proprietatea **id**, **title**, **content**. 
 
-When the same button is clicked **again**, **hide** the div container and **change** the text of the button to [**More**].
+Când se face clic **din nou** pe același buton, **ascunde** containerul div și **schimbă** textul butonului în [**More**].
 
-The Less or More button should be **toggleable** (you should be able to click the button as many times as you want).
+Butoanele Less sau More ar trebui să fie **comutabile** (ar trebui să puteți face clic pe buton de câte ori doriți).
 
-## Examples
+## Exemple
 
 [image assetsSrc="asyncprogramming-20.png" /]
 
 [image assetsSrc="asyncprogramming-21.png" /]
 
-Every item should have the following structure:
+Fiecare articol trebuie să aibă următoarea structură:
 
 [image assetsSrc="asyncprogramming-22.png" /]
 
-You are allowed to add new attributes, but do not change the existing ones.
+Vi se permite să adăugați atribute noi, dar nu să le modificați pe cele existente.
 
 
 [/slide]
