@@ -255,44 +255,11 @@ Când utilizatorul **introduce un nume** și **face clic** pe butonul [**Get Wea
 
 [image assetsSrc="asyncprogramming-13.png" /]
 
-```js
-<div id="request">...</div>
-<div id="forecast" style="display:none">
-   <div id="current">...</div>
-   <div id="upcoming">...</div>
-</div>
-```
+[image assetsSrc="asyncprogramming-14.png" /]
 
 [image assetsSrc="asyncprogramming-15.png" /]
 
-```js
-<div id="request">... </div>
-<div id="forecast" style="display: block;">
-   <div id="current">
-      <div class="label">Current conditions</div>
-      <div class="forecasts">
-         <span class="condition symbol">☀</span>
-         <span class="condition">
-         <span class="forecast-data">New York, USA</span>
-         <span class="forecast-data">8°/19°</span>
-         <span class="forecast-data">Sunny</span>
-         </span>
-      </div>
-   </div>
-   <div id="upcoming">
-      <div class="label">Three-day forecast</div>
-      <div class="forecast-info">
-         <span class="upcoming">
-         <span class="symbol">⛅</span>
-         <span class="forecast-data">6°/17°</span>
-         <span class="forecast-data">Partly sunny</span>
-         </span>
-         <span class="upcoming">...</span>
-         <span class="upcoming">...</span>
-      </div>
-   </div>
-</div>
-```
+[image assetsSrc="asyncprogramming-16.png" /]
 [/slide]
 
 
@@ -314,27 +281,7 @@ Creați un card de profil pentru fiecare utilizator și afișați-l pe pagina we
 
 Fiecare articol trebuie să aibă următoarea structură:
 
-```js
-<div class="profile">
-  <img src="./iconProfile2.png" class="userIcon">
-  <label>Lock</label>
-  <input type="radio" name="user1Locked" value="lock" checked>
-  <label>Unlock</label>
-  <input type="radio" name="user1Locked" value="unlock">
-  <br>
-  <hr>
-  <label>Username</label>
-  <input type="text" name="user1Username" value="John" disabled readonly>
-    Shadow Content (User Agent)
-</input>
-<div id="useriHiddenFields">
-   <hr>
-   <label>Email:</label>
-   <input type="email" name="user1Email" value="john@users.com" disabled readonly>
-   <label>Age:</label>
-   <input type="email" name="useriAge" value="31" disabled readonly>
-</div>
-```
+[image assetsSrc="async-programming03.png" /]
 
 [image assetsSrc="asyncprogramming-18v2.png" /]
 
