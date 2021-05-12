@@ -32,7 +32,7 @@ stopId: {
 
 Place the **name** property as a **text** inside the div container with id **stopName**, and each bus as a **list item** in the following format:
 
-- **Bus {busId} arrives in {time}**
+- "**Bus** \{**busId**\} **arrives in** \{**time**\}"
 
 If the request is invalid or the information is not in the expected format, display **Error**. 
 
@@ -46,19 +46,51 @@ The list should be cleared before every request is sent.
 [image assetsSrc="asyncprogramming-1.png" /]
 
 
-[image assetsSrc="asyncprogramming-2.png" /]
+```js
+<div id="stopInfo" style="width:20em">
+   <div>
+      <labl for="stopId">Stop ID: </label> 
+      <input id="stopId" type="text"> 
+      <input id="submit" type="button" value="Check" onclick="getInfo()">
+   </div>
+   <div id="result">
+      <div id="stopName"></div>
+      <ul id="buses"></ul>
+   </div>
+</div>
+```
 
 When the \[**Check**\] button is clicked, the results should be displayed in the corresponding elements:
 
 [image assetsSrc="asyncprogramming-3.png" /]
 
-[image assetsSrc="asyncprogramming-4.png" /]
+```js
+<div id="stopInfo" style="width:20em">
+   <div>...</div>
+   <div id="result">
+      <div id="stopName">Buckingham Palace</div>
+      <ul id="busses">
+      <li>Bus 4 arrives in 13 minutes</li>
+      <li>Bus 12 arrives in 6 minutes</li>
+      <li>Bus 18 arrives in 7 minutes</li>
+      </ul>
+   </div>
+</div>
+```
 
 If an error occurs, the stop name changes to Error:
 
 [image assetsSrc="asyncprogramming-5.png" /]
 
-[image assetsSrc="asyncprogramming-6.png" /]
+```js
+<div id="stopInfo" style="width:20em">
+   <div>...</div>
+   <div id="result">
+      <div id="stopName">Error</div>
+      <ul id="buses"></ul>
+   </div>
+</div>
+```
 
 [/slide]
 
@@ -74,7 +106,9 @@ Create a JS program that tracks the progress of a bus on its route and announces
 
 The program should display the upcoming stop and request from the server the name of the next one once the bus arrives at that stop.
 
-The bus has two states - **moving** and **stopped**. When it is **stopped**, only the [**Depart**] button must be **enabled**, and the info box must show the name of the **current** stop. 
+The bus has two states - **moving** and **stopped**. 
+
+When it is **stopped**, only the [**Depart**] button must be **enabled**, and the info box must show the name of the **current** stop. 
 
 When it is **moving**, only the [**Arrive**] button is **enabled**, and the info box must show the name of the **upcoming** stop. 
 
@@ -88,11 +122,8 @@ You will receive a **JSON object** as a response in the following format:
 
 ```
 stopId {
-
  name: stopName,
-
  next: nextStopId
-
 }
 ```
 
@@ -100,13 +131,13 @@ Update the info box with the information from the response, disable the [**Depar
 
 The text in the info box must be:
 
-- **Next stop {stopName}**
+- "**Next stop** \{**stopName**\}"
 
 When the [**Arrive**] button is clicked, update the text, disable the [**Arrive**] button and enable the [**Depart**] button. 
 
 The text in the info box must be:
 
-- **Arriving at {stopName}**
+- "**Arriving at** \{**stopName**\}"
 
 The program will cycle through the entire schedule infinitely if you keep clicking the buttons. 
 
@@ -118,19 +149,51 @@ Initially, the info box shows "**Not Connected**" and the arrive button is disab
 
 [image assetsSrc="asyncprogramming-7.png" /]
 
-[image assetsSrc="asyncprogramming-8.png" /]
+```js
+<div id="schedule">
+   <div id="info">
+      <span class="info">Not Connected</span>
+   </div>
+   <div id="controls">
+      <input id="depart" value="Depart" type="button" onclick="result.depart()">
+      <input id="arrive" value="Arrive" type="button" onclick="result.arrive()" disabled="true">
+   </div>
+</div>
+```
 
 When [**Depart**] is clicked, a request is made with the first id. The info box is updated with the new information and the buttons are changed:
 
 [image assetsSrc="asyncprogramming-9.png" /]
 
-[image assetsSrc="asyncprogramming-10.png" /]
+```js
+<div id="schedule">
+   <div id="info">
+      <span class="info">Next stop Depot</span>
+   </div>
+   <div id="controls">
+      <input id="depart" value="Depart" type="button" onclick="result.depart()" disabled="disabled">
+      <input id="arrive" value="Arrive" type="button" onclick="result.arrive()">
+   </div>
+</div>
+```
 
-Clicking on the [**Arrive**] button changes the info box and swaps the buttons. This allows the [**Depart**] button to be clickable again, which makes a new request and updates the information:
+Clicking on the [**Arrive**] button changes the info box and swaps the buttons. 
+
+This allows the [**Depart**] button to be clickable again, which makes a new request and updates the information:
 
 [image assetsSrc="asyncprogramming-11.png" /]
 
-[image assetsSrc="asyncprogramming-12.png" /]
+```js
+<div id="schedule">
+   <div id="info">
+      <span class="info">Arriving at Depot</span>
+   </div>
+   <div id="controls">
+      <input id="depart" value="Depart" type="button" onclick="result.depart()">
+      <input id="arrive" value="Arrive" type="button" onclick="result.arrive()" disabled="disabled">
+   </div>
+</div>
+```
 
 
 [/slide]
@@ -151,11 +214,8 @@ The response will be an array of objects with the following structure:
 
 ```
 {
-
  name: locationName,
-
  code: locationCode
-
 }
 ```
 
@@ -174,7 +234,7 @@ The response from the server will be an object with the following structure:
 }
 ```
 
--   For a 3-day forecast, make a request to `http://localhost:3030/jsonstore/forecaster/upcoming/:code`
+- For a 3-day forecast, make a request to `http://localhost:3030/jsonstore/forecaster/upcoming/:code`
 
 The response will be an object with the following structure:
 
@@ -189,7 +249,7 @@ The response will be an object with the following structure:
 
 Use the information from these two objects to compose a forecast in HTML format, and insert it inside the page. 
 
-Note that the \<div\> with an id of "forecast" must be set to visible. 
+Note that the `<div>` with an id of "forecast" must be set to visible. 
 
 See the examples for details.
 
@@ -197,11 +257,11 @@ If an **error** occurs (the server does not respond, or the location name cannot
 
 Use the following codes for weather symbols:
 
--   Sunny: `&#x2600;` // ☀
--   Partly sunny: `&#x26C5;` // ⛅
--   Overcast: `&#x2601;` // ☁
--   Rain: `&#x2614; `// ☂
--   Degrees: `&#176;` // °
+- Sunny: `&#x2600;` // ☀
+- Partly sunny: `&#x26C5;` // ⛅
+- Overcast: `&#x2601;` // ☁
+- Rain: `&#x2614; `// ☂
+- Degrees: `&#176;` // °
 
 ## Examples
 
@@ -211,11 +271,44 @@ When the user **enters a name** and **clicks** on the [**Get Weather**] button, 
 
 [image assetsSrc="asyncprogramming-13.png" /]
 
-[image assetsSrc="asyncprogramming-14.png" /]
+```js
+<div id="request">...</div>
+<div id="forecast" style="display:none">
+   <div id="current">...</div>
+   <div id="upcoming">...</div>
+</div>
+```
 
 [image assetsSrc="asyncprogramming-15.png" /]
 
-[image assetsSrc="asyncprogramming-16.png" /]
+```js
+<div id="request">... </div>
+<div id="forecast" style="display: block;">
+   <div id="current">
+      <div class="label">Current conditions</div>
+      <div class="forecasts">
+         <span class="condition symbol">☀</span>
+         <span class="condition">
+         <span class="forecast-data">New York, USA</span>
+         <span class="forecast-data">8°/19°</span>
+         <span class="forecast-data">Sunny</span>
+         </span>
+      </div>
+   </div>
+   <div id="upcoming">
+      <div class="label">Three-day forecast</div>
+      <div class="forecast-info">
+         <span class="upcoming">
+         <span class="symbol">⛅</span>
+         <span class="forecast-data">6°/17°</span>
+         <span class="forecast-data">Partly sunny</span>
+         </span>
+         <span class="upcoming">...</span>
+         <span class="upcoming">...</span>
+      </div>
+   </div>
+</div>
+```
 
 
 [/slide]

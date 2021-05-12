@@ -32,7 +32,7 @@ stopId: {
 
 Plasați proprietatea **name** ca **text** în containerul div cu id-ul **stopName** și fiecare autobuz ca **element de listă** în următorul format:
 
-- **Bus {busId} arrives in {time}**
+- "**Bus** \{**busId**\} **arrives in** \{**time**\}"
 
 Dacă solicitarea nu este validă sau informațiile nu sunt în formatul așteptat, afișați **Error**. 
 
@@ -46,19 +46,51 @@ Lista ar trebui să fie ștearsă înainte ca fiecare solicitare să fie trimis�
 [image assetsSrc="asyncprogramming-1.png" /]
 
 
-[image assetsSrc="asyncprogramming-2.png" /]
+```js
+<div id="stopInfo" style="width:20em">
+   <div>
+      <labl for="stopId">Stop ID: </label> 
+      <input id="stopId" type="text"> 
+      <input id="submit" type="button" value="Check" onclick="getInfo()">
+   </div>
+   <div id="result">
+      <div id="stopName"></div>
+      <ul id="buses"></ul>
+   </div>
+</div>
+```
 
 Când se face clic pe butonul \[**Check**\] rezultatele trebuie afișate în elementele corespunzătoare:
 
 [image assetsSrc="asyncprogramming-3.png" /]
 
-[image assetsSrc="asyncprogramming-4.png" /]
+```js
+<div id="stopInfo" style="width:20em">
+   <div>...</div>
+   <div id="result">
+      <div id="stopName">Buckingham Palace</div>
+      <ul id="busses">
+      <li>Bus 4 arrives in 13 minutes</li>
+      <li>Bus 12 arrives in 6 minutes</li>
+      <li>Bus 18 arrives in 7 minutes</li>
+      </ul>
+   </div>
+</div>
+```
 
 Dacă apare o eroare, numele opririi se schimbă în Error:
 
 [image assetsSrc="asyncprogramming-5.png" /]
 
-[image assetsSrc="asyncprogramming-6.png" /]
+```js
+<div id="stopInfo" style="width:20em">
+   <div>...</div>
+   <div id="result">
+      <div id="stopName">Error</div>
+      <ul id="buses"></ul>
+   </div>
+</div>
+```
 
 [/slide]
 
@@ -74,11 +106,13 @@ Creați un program JS care urmărește progresul unui autobuz pe ruta sa și îl
 
 Programul ar trebui să afișeze oprirea viitoare și să solicite de la server numele următoarei, odată ce autobuzul ajunge la stația respectivă.
 
-Autobuzul are două stări - **moving** și  **stopped**.  Când este **stopped**, numai butonul [**Depart**] trebuie să fie **activat**, iar caseta de informații trebuie să afișeze numele **stației** curente.
+Autobuzul are două stări - **moving** și **stopped**.
+
+Când este **stopped**, numai butonul [**Depart**] trebuie să fie **activat**, iar caseta de informații trebuie să afișeze numele **stației** curente.
 
 Când este **moving**, numai butonul [**Arrive**] este **activat**, iar caseta de informații trebuie să afișeze numele **stației** viitoare. 
 
-Inițial, în caseta de informații trebuie să apară  "**Not Connected**" și butonul [**Arrive**] este **dezactivat**. 
+Inițial, în caseta de informații trebuie să apară "**Not Connected**" și butonul [**Arrive**] este **dezactivat**. 
 
 ID-ul primei stații este "**depot**".
 
@@ -88,11 +122,8 @@ Veți primi un **obiect JSON** ca răspuns în următorul format:
 
 ```
 stopId {
-
  name: stopName,
-
  next: nextStopId
-
 }
 ```
 
@@ -100,17 +131,17 @@ Actualizați caseta de informații cu informațiile din răspuns, dezactivați b
 
 Textul din caseta de informații trebuie să fie:
 
-- **Next stop {stopName}**
+- "**Next stop** \{**stopName**\}"
 
 Când se face clic pe butonul [**Arrive**] actualizați textul, dezactivați butonul [**Arrive**] și activați butonul [**Depart**]. 
 
 Textul din caseta de informații trebuie să fie:
 
-- **Arriving at {stopName}**
+- "**Arriving at** \{**stopName**\}"
 
 Programul va parcurge la infinit întregul program dacă continuați să faceți clic pe butoane.
 
-Dacă se primesc date nevalide, afișați  "**Error**"  în caseta de informații și **dezactivați** ambele butoane.
+Dacă se primesc date nevalide, afișați "**Error**" în caseta de informații și **dezactivați** ambele butoane.
 
 ## Exemple
 
@@ -118,19 +149,51 @@ Inițial, în caseta de informații apare ca "**Not Connected**" și butonul de 
 
 [image assetsSrc="asyncprogramming-7.png" /]
 
-[image assetsSrc="asyncprogramming-8.png" /]
+```js
+<div id="schedule">
+   <div id="info">
+      <span class="info">Not Connected</span>
+   </div>
+   <div id="controls">
+      <input id="depart" value="Depart" type="button" onclick="result.depart()">
+      <input id="arrive" value="Arrive" type="button" onclick="result.arrive()" disabled="true">
+   </div>
+</div>
+```
 
-Când se face clic pe  [**Depart**], se face o cerere cu primul id. Caseta de informații este actualizată cu noile informații și butoanele sunt schimbate:
+Când se face clic pe [**Depart**], se face o cerere cu primul id. Caseta de informații este actualizată cu noile informații și butoanele sunt schimbate:
 
 [image assetsSrc="asyncprogramming-9.png" /]
 
-[image assetsSrc="asyncprogramming-10.png" /]
+```js
+<div id="schedule">
+   <div id="info">
+      <span class="info">Next stop Depot</span>
+   </div>
+   <div id="controls">
+      <input id="depart" value="Depart" type="button" onclick="result.depart()" disabled="disabled">
+      <input id="arrive" value="Arrive" type="button" onclick="result.arrive()">
+   </div>
+</div>
+```
 
-Dând clic pe butonul [**Arrive**], se schimbă caseta de informații și se schimbă butoanele. Aceasta permite butonului [**Depart**] să poată fi din nou selectabil, ceea ce face o nouă solicitare și actualizează informațiile:
+Dând clic pe butonul [**Arrive**], se schimbă caseta de informații și se schimbă butoanele. 
+
+Aceasta permite butonului [**Depart**] să poată fi din nou selectabil, ceea ce face o nouă solicitare și actualizează informațiile:
 
 [image assetsSrc="asyncprogramming-11.png" /]
 
-[image assetsSrc="asyncprogramming-12.png" /]
+```js
+<div id="schedule">
+   <div id="info">
+      <span class="info">Arriving at Depot</span>
+   </div>
+   <div id="controls">
+      <input id="depart" value="Depart" type="button" onclick="result.depart()">
+      <input id="arrive" value="Arrive" type="button" onclick="result.arrive()" disabled="disabled">
+   </div>
+</div>
+```
 
 
 [/slide]
@@ -151,11 +214,8 @@ Răspunsul va fi o serie de obiecte cu următoarea structură:
 
 ```
 {
-
  name: locationName,
-
  code: locationCode
-
 }
 ```
 
@@ -189,7 +249,7 @@ Răspunsul de la server va fi un obiect cu următoarea structură:
 
 Utilizați informațiile din aceste două obiecte pentru a compune o prognoză în format HTML și introduceți-le în interiorul paginii. 
 
-Rețineți că \<div\> cu un ID de "forecast" trebuie setat la vizibil.
+Rețineți că `<div>` cu un ID de "forecast" trebuie setat la vizibil.
 
 Consultați exemplele pentru detalii.
 
@@ -197,11 +257,11 @@ Dacă apare o **eroare** (serverul nu răspunde sau numele locației nu poate fi
 
 Utilizați următoarele coduri pentru simbolurile meteo:
 
--   Sunny: `&#x2600;` // ☀
--   Partly sunny: `&#x26C5;` // ⛅
--   Overcast: `&#x2601;` // ☁
--   Rain: `&#x2614; `// ☂
--   Degrees: `&#176;` // °
+- Sunny: `&#x2600;` // ☀
+- Partly sunny: `&#x26C5;` // ⛅
+- Overcast: `&#x2601;` // ☁
+- Rain: `&#x2614; `// ☂
+- Degrees: `&#176;` // °
 
 ## Exemple
 
@@ -211,13 +271,44 @@ Când utilizatorul **introduce un nume** și **face clic** pe butonul [**Get Wea
 
 [image assetsSrc="asyncprogramming-13.png" /]
 
-[image assetsSrc="asyncprogramming-14.png" /]
+```js
+<div id="request">...</div>
+<div id="forecast" style="display:none">
+   <div id="current">...</div>
+   <div id="upcoming">...</div>
+</div>
+```
 
 [image assetsSrc="asyncprogramming-15.png" /]
 
-[image assetsSrc="asyncprogramming-16.png" /]
-
-
+```js
+<div id="request">... </div>
+<div id="forecast" style="display: block;">
+   <div id="current">
+      <div class="label">Current conditions</div>
+      <div class="forecasts">
+         <span class="condition symbol">☀</span>
+         <span class="condition">
+         <span class="forecast-data">New York, USA</span>
+         <span class="forecast-data">8°/19°</span>
+         <span class="forecast-data">Sunny</span>
+         </span>
+      </div>
+   </div>
+   <div id="upcoming">
+      <div class="label">Three-day forecast</div>
+      <div class="forecast-info">
+         <span class="upcoming">
+         <span class="symbol">⛅</span>
+         <span class="forecast-data">6°/17°</span>
+         <span class="forecast-data">Partly sunny</span>
+         </span>
+         <span class="upcoming">...</span>
+         <span class="upcoming">...</span>
+      </div>
+   </div>
+</div>
+```
 [/slide]
 
 
