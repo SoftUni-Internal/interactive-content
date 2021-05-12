@@ -1,14 +1,16 @@
-# Introduction to ExpressJs
+# Introduction to Express.js
 
 [slide hideTitle]
 
 # Introduction
 
-**Express.Js** is a Node.js **framework**, specifically designed for building **web applications**. 
+**Express.js** is a Node.js **framework**, specifically designed for building **web applications**. 
 
-It is the **most popular** server framework for **Node.js**.
+It is the **most popular** server framework for **Node.js**, and it is open-source and cross-platform.
 
-To use **Express.Js** we need to install the `npm install express` library.
+The standard library of Express.js includes a set of asynchronous I/O primitives, and most of the Express libraries are written following the non-blocking paradigm, which allows Express applications to receive and process thousands of requests at once.
+
+To use **Express.js** we need to install the the Express.js library by executing the `npm install express` command.
 
 Installing the library:
 
@@ -23,7 +25,7 @@ app.get('/', (req, res) => {
 app.listen(port, () => console.log(`Express running on port: ${port}...`));
 ```
 
-To be able to use the **ExpressJs** library, we should type `const express = require ('express')`, then we should display the function `const app = express ();` so that we can generate our server.
+To be able to use the **Express.js** library, we should type `const express = require ('express')`, then we should display the function `const app = express();` so that we can generate our server.
 
 Then we create the port on which the server will accept requests `const port = 3000;`.
 
@@ -40,6 +42,6 @@ When we receive a `GET` request, this handler will be called and will return the
 
 In this case `200` and `Welcome to Express.js!`, which means that our request has been processed.
 
-Finally, we call `app.listen`, on which we pass the port on which our application will listen and a callback function, which says that `Express running on port: $ {port} ...`.
+Finally, we call `app.listen`, passing the port on which our application will listen and a callback function `Express running on port: $ {port} ...`.
 
-[/slide]
+There are thousands of libraries for Express.js which make programming with this framework a lot of fun as there is usually a library for any task you might need your application to perform. 
