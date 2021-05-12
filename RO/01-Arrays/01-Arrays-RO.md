@@ -30,7 +30,7 @@ Acum imaginați-vă acest lucru ca fiind o matrice de numere întregi. Fiecare e
 
 Matricele pot fi vizualizate sub următoarea formă:
 
-[image assetsSrc="array-real-live-example.jpg" /]
+[image assetsSrc="array-real-live-example.png" /]
 
 Acest tren are **7 vagoane (elemente)**. Fiecare vagon are **pasageri (o valoare)**. \{3, 4, 10, 7, 5, 0, 6\}
 

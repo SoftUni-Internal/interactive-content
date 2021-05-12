@@ -31,7 +31,7 @@ Now imagine this as an array of integers, each element represents a wagon and it
 
 An array of integers is often visialized in the following way:
 
-[image assetsSrc="array-real-live-example.jpg" /]
+[image assetsSrc="array-real-live-example.png" /]
 
 Let us say this one has **7 wagons (elements)**. Each one has **passengers (a value)**. \{3, 4, 10, 7, 5, 0, 6\}
 
