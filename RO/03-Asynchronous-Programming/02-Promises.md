@@ -1,40 +1,40 @@
-# Promises
+# Promisiuni
 
 [slide hideTitle]
 
-# What is a Promise?
+# Ce este o Promisiune?
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-8-9-10-What-is-a-Promise--,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/Asynchronous-Programming-8-9-10-What-is-a-Promise--,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Executing functions that rely on external data is a rather **slow task**.
+Executarea funcțiilor care se bazează pe date externe este o sarcină destul de **lentă**.
 
-Since the information **does not arrive immediately**, the whole function **must be blocked** until some value is present.
+Deoarece informațiile **nu ajung imediat**, întreaga funcție **trebuie blocată** până când este prezentă o anumită valoare.
 
-Synchronously getting resources from a database, for example, can **block an entire web page**.
+Obținerea sincronă de resurse dintr-o bază de date, de exemplu, poate **bloca o întreagă pagină web**.
 
-Here is where promises come to save the day. 
+Aici vin promisiunile pentru a salva situația.
 
-Instead of waiting for the operation to finish, promises **represent it as a state**, allowing the function to **carry on with the execution**.
+În loc să aștepte finalizarea operațiunii, promisiunile **o reprezintă ca pe o stare**, permițând funcției să **continue cu execuția**.
 
-These states are:
+Aceste stări sunt:
 
-- **Fulfilled** - The operation was completed with success
+- **Fulfilled** - Operațiunea a fost finalizată cu succes
 
-- **Rejected** - The operation has failed
+- **Rejected** - Operațiunea a eșuat
 
-- **Pending** - This is the state, in which a promise is initialized. It means the promise is neither resolved nor rejected
+- **Pending** - Aceasta este starea în care este inițiată o promisiune. Înseamnă că promisiunea nu este nici rezolvată, nici respinsă
 
-Promises are initialized with the **Promise** object.
+Promisiunile sunt inițializate cu obiectul **Promise**.
 
 ```js
 new Promise(executor);
 ```
 
-Promises can also be **chained together**.
+Promisiunile pot fi, de asemenea, **înlănțuite**.
 
-This way, the first promise **passes information about the process** to the second one, which reacts accordingly and so on.
+În acest fel, prima promisiune **transmite informații despre proces** către a doua, care reacționează în consecință și așa mai departe.
 
-Here is a visual representation of the chaining process:
+Iată o reprezentare vizuală a procesului de înlănțuire:
 
 [image assetsSrc="jsapps-async-programming-promises.png" /]
 
@@ -42,13 +42,13 @@ Here is a visual representation of the chaining process:
 
 [slide hideTitle]
 
-# Promise Methods
+# Metode de Promisiune
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-11-12-Promise-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/Asynchronous-Programming-11-12-Promise-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Promises offer a variety of useful methods for an easy and effective work process:
+Promisiunile oferă o varietate de metode utile pentru un proces de lucru ușor și eficient:
 
-- `Promise.reject(reason)` - Returns a **Promise** object that has been rejected for a specific reason
+- `Promise.reject(reason)` - Returnează un obiect **Promise** care a fost respins dintr-un anumit motiv
 
 ```js live
 Promise.reject('There was an error!').then(
@@ -61,9 +61,9 @@ Promise.reject('There was an error!').then(
 );
 ```
 
-- `Promise.resolve(value)` - Returns a **resolved** `Promise` object with the provided value
+- `Promise.resolve(value)` - Returnează un obiect `Promise` **rezolvat** cu valoarea furnizată
 
-If the value is a promise - **returns the promise**.
+Dacă valoarea este o promisiune - **returnează promisiunea**.
 
 ```js live
 Promise.resolve('Operation was successful!').then(
@@ -76,12 +76,12 @@ Promise.resolve('Operation was successful!').then(
 );
 ```
 
-- `Promise.all(iterable)` - Takes an array of promises and returns a single **Promise**
+- `Promise.all(iterable)` - Face o serie de promisiuni și returnează o singură **Promisiune**
 
-The returned promise **resolves** to an array of values, **if all the given promises are resolved**.
+Promisiunea returnată **se rezolvă** la o matrice de valori, **dacă toate promisiunile date sunt rezolvate**.
 
 
-Otherwise, it would **reject immediately**.
+În caz contrar, ar **respinge imediat**.
 
 ```js live
 let firstPromise = new Promise((resolve, reject) => {
@@ -95,9 +95,9 @@ Promise.all([firstPromise, secondPromise, thirdPromise]).then((data) => {
 });
 ```
 
-- `Promise.allSettled(iterable)` - Takes an array of promises and returns a `Promise` object.
+- `Promise.allSettled(iterable)` -  ia o serie de promisiuni și returnează un obiect `Promise`
 
-This can only happen after all of the given promises are **either resolved or rejected**.
+Acest lucru se poate întâmpla numai după ce toate promisiunile date sunt **rezolvate sau respinse**.
 
 
 ```js live
@@ -120,9 +120,9 @@ Promise.allSettled([firstPromise, secondPromise]).then((data) => {
 });
 ```
 
-- `Promise.race(iterable)` - Takes an array of promises and after the first one is either **resolved** or **rejected**
+- `Promise.race(iterable)` - Face o serie de promisiuni și după aceea prima este fie **rezolvată**, fie **respinsă**
 
-This method returns a Promise object that resolves or rejects with its value
+Această metodă returnează un obiect Promise care rezolvă sau respinge cu valoarea sa.
 
 
 ```js live
@@ -149,7 +149,7 @@ Promise.race([firstPromise, secondPromise, thirdPromise]).then((data) => {
 });
 ```
 
-- `Promise.finally(function)` - Takes a callback function to be executed after the promise is settled
+- `Promise.finally(function)` - Preia o funcție callback pentru a fi executată după ce promisiunea este soluționată
 
 ```js live
 Promise.resolve('Operation succeeded!')
@@ -165,19 +165,19 @@ Promise.resolve('Operation succeeded!')
 
 [slide hideTitle]
 
-# Promise.then(): Example
+# Promise.then(): Exemplu
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-13-Promise.then()-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/Asynchronous-Programming-13-Promise.then()-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `then()` method makes chaining promises possible.
+Metoda `then()` face posibilă înlănțuirea promisiunilor.
 
-It is used **after a promise has been initialized** and takes **two parameters**:
+Se folosește **după inițializarea unei promisiuni** și ia **doi parametri**:
 
-- A callback function **if the promise is resolved**
+- O funcție callback **dacă promisiunea este rezolvată**
 
-- A callback function **if the promise is rejected**
+- O funcție callback **dacă promisiunea este respinsă**
 
-Here is an example of how `then()` is used:
+Iată un exemplu al modului în care se folosește `then()`:
 
 ```js live
 console.log('This will appear first');
@@ -193,21 +193,21 @@ new Promise(function(resolve, reject) {
 console.log('This will appear second');
 ```
 
-As seen above, the `then()` method **waits for the completion with the previous promise** and **executes with its return value as an argument**.
+După cum s-a văzut mai sus, metoda `then()` **așteaptă finalizarea cu promisiunea anterioară** și **se execută cu valoarea sa returnată ca argument**.
 
 [/slide]
 
 [slide hideTitle]
 
-# Promise.catch(): Example
+# Promise.catch(): Exemplu
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-14-Promise.catch()-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/Asynchronous-Programming-14-Promise.catch()-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The `catch()` method is used to "**catch thrown errors**" by promises. 
+Metoda `catch()` este utilizată pentru a "**prinde erorile aruncate**" de promisiuni.
 
-It is very useful to **handle possible promise rejections**.
+Este foarte util să **gestionăm posibilele respingeri ale promisiunilor**.
 
-Here is how this method is used with the code from the previous example:
+Iată cum se folosește această metodă cu codul din exemplul anterior:
 
 ```js live
 console.log('This will appear first');
@@ -227,8 +227,8 @@ new Promise(function(resolve, reject) {
 console.log('This will appear second');
 ```
 
-It is good to know that another `then()` method can be placed **after** `catch()`. 
+Este bine de știut că o altă metodă `then()` poate fi plasată **după** `catch()`. 
 
-It will execute **whether the promise is rejected or not**.
+Se va executa **indiferent dacă promisiunea este respinsă sau nu**.
 
 [/slide]
