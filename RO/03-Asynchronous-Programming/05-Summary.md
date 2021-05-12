@@ -1,17 +1,17 @@
 [slide hideTitle]
-# Summary
+# Rezumat
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-25-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/Asynchronous-Programming-25-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you learned:
+## În această lecție ați învățat:
 
-- **Asynchronous programming**
+- **Programarea asincronă**
 
-    * the key differences between **synchronous** and **asynchronous** programming
+    * diferențele cheie dintre programarea **sincronă** și **asincronă**
 
-    * **code execution order** in JavaScript
+    * **ordinea executării codului** în JavaScript
 
-    * asynchronous programming makes it possible for functions to run simultaneously without blocking the entire app 
+    * programarea asincronă face posibilă funcționarea simultană a funcțiilor fără blocarea întregii aplicații
     
 ```js
 async function getData(url) {
@@ -22,21 +22,21 @@ async function getData(url) {
 }
 ```
 
-- **Promises**
+- **Promisiuni**
 
-  * representing data that will be **received in the future**
+  * reprezintă date care vor fi **primite în viitor**
 
-  * **chaining** promises and utilizing their methods
+  * **înlănțuirea** promisiunilor și utilizarea metodelor lor
 
 ```js
 new Promise(executor);
 ```
 
-- **"Async" functions**
+- **Funcții "Async"**
 
-   * writing clean and concise asynchronous code with `async` and `await`
+   * scrierea unui cod asincron curat și concis cu  `async` și  `await`
 
-   * **sequential** and **concurrent** execution
+   * Execuția **secvențială** și **concurentă**
 
 ```js
 async function getDbInfo(url) {
@@ -52,11 +52,11 @@ async function getDbInfo(url) {
 
 ```
 
-## In the next lesson you will learn:
+## În lecția următoare veți învăța:
 
-- **Remote Databases**
+- **Baze de date Remote**
 
-- **Relational** and **non-relational** databases
+- Baze de date **relaționale** și **non-relaționale**
 
 - **BaaS** (Backend-as-a-Service)
 

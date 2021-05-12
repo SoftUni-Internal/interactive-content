@@ -1,23 +1,23 @@
-# Problem with Solution: Blog
+# Problemă cu Soluție: Blog
 
 [slide hideTitle]
 
-# Retrieve Data from Firebase
+# Preluarea Datelor din Firebase
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/04-JS-Applications-Asynchronous-Programming-lab-videos-step-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/04-JS-Applications-Asynchronous-Programming-lab-videos-step-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Download the resources from [here](https://videos.softuni.org/resources/javascript/javascript-applications/06_Blog.zip).
+Descărcați resursele de aici [here](https://videos.softuni.org/resources/javascript/javascript-applications/06_Blog.zip).
 
-Create a program for reading blog content.
+Creați un program pentru citirea conținutului blogului.
 
-It needs to make **requests** to the **server** and display **all blog posts** and their **comments**.
+Trebuie să facă **cereri** către **server** și să afișeze **toate postările de blog** și **comentariile** lor.
 
-You will need to make requests to the following url `https://blog-apps-c12bf.firebaseio.com/`
+Va trebui să faceți cereri la următoarea adresă URL `https://blog-apps-c12bf.firebaseio.com/`
 
-The button with ID `btnLoadPosts` should make a **GET** request to `/posts`. 
+Butonul cu ID  `btnLoadPosts` ar trebui să facă o cerere **GET** către `/posts`. 
 
-The **response** from the **server** will be an **Object containing other objects**.
+**Răspunsul** de pe **server** va fi un **Obiect care conține alte obiecte**.
 
 ```
 {-LhdbZ31ND3Rhw41UGMN: {..}, -Lhdc-Ttz9-KiWSuvh6W: {...}, -LhdcLmyARLEBibsSvjZ: {..}, -LhdccRyWr_7UCPtclmM: {..}}
@@ -28,7 +28,7 @@ The **response** from the **server** will be an **Object containing other object
 __proto__: Object
 ```
 
-Each object will be in the following format:
+Fiecare obiect va avea următorul format:
 
 ```js
 {
@@ -47,11 +47,11 @@ Each object will be in the following format:
 
 [slide hideTitle]
 
-# Render the Titles
+# Redarea Тitlurilor
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/04-JS-Applications-Asynchronous-Programming-lab-videos-step-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/04-JS-Applications-Asynchronous-Programming-lab-videos-step-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Create an `<option>` element for each post using its **object key** as value and **the current object title property** as text inside the node with ID "**posts**".
+Creați un element `<option>` pentru fiecare postare folosind **obiectul cheie** ca valoare și **obiectul curent de proprietate a titlului** ca text în interiorul nodului cu ID "**posts**".
 
 [image assetsSrc="JS-Applications-Asynchronous-Programming-Lab-2.jpg" /]
 
@@ -67,19 +67,19 @@ Create an `<option>` element for each post using its **object key** as value and
 
 [slide hideTitle]
 
-# Display Post's Details
+# Afișarea Detaliilor Postării
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/04-JS-Applications-Asynchronous-Programming-lab-videos-step-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/04-JS-Applications-Asynchronous-Programming-lab-videos-step-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When the button with ID "**btnViewPost**" is clicked, a **GET** request should be made to:
+Când se face clic pe butonul cu ID-ul "**btnViewPost**" trebuie făcută o cerere **GET** către:
 
-- `/posts/{postId}` to obtain the selected post (from the dropdown menu with ID "**posts**")
+- `/posts/{postId}` pentru a obține postarea selectată (din meniul derulant cu ID-ul "**posts**")
 
-The following **request** will return a **single object** as described above
+Următoarea **cerere** va returna un **singur obiect** așa cum este descris mai sus
 
-- `/comments`: to obtain all comments
+- `/comments`: pentru a obține toate comentariile
 
-The request will **return** an **Object of objects**.
+Cererea va **returna** un **obiect cu obiecte**.
 
 ```
 {-LhdewtO2LIrzuThWlMj: f..}, -LhdfHFg8dNxK-qUaukL: {..}, -LhdfVg4IDKa@Cft-dQZ: {..}, -LhdfuAXoimPycgRRFf-3: {..}, -Lhdg@x8QG-j2vnNUALS: {..}, .}
@@ -95,7 +95,7 @@ __proto__: Object
 
 ```
 
-Each object will be in the following format:
+Fiecare obiect va avea următorul format:
 
 ```js
 {
@@ -111,13 +111,13 @@ Each object will be in the following format:
 }
 ```
 
-You have to find the comments that are for the current post (check the **postId property**).
+Trebuie să găsiți comentariile pentru postarea curentă (verificați **postId property**).
 
-Display the post title inside `h1` with ID "post-title" and the post content inside ul with ID "post-body".
+Afișați titlul postării în interiorul `h1` cu ID-ul "post-title" și conținutul postării în interiorul ul cu ID-ul "post-body".
 
-Display **each comment** as a `<li>` element inside an `<ul>` element with ID "post-comments".
+Afișați **fiecare comentariu** ca un element `<li>` în interiorul unui element `<ul>` cu ID "post-comments".
 
-Do not forget to clear its content beforehand.
+Nu uitați să ștergeți conținutul acestuia în prealabil.
 
 [image assetsSrc="JS-Applications-Asynchronous-Programming-Lab-5.jpg" /]
 
