@@ -1,28 +1,28 @@
-# Lesson Introduction
+# Introducere
 
 [slide hideTitle]
-# Lesson Content
+# Conținutul Lecției
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-1-2-Introduction-Table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you will learn:
+## În această lecție veți învăța:
 
-**1. Asynchronous programming**
+**1. Programarea asincronă**
 
-- What asynchronous programming is, its benefits, and some use cases
+- Ce este programarea asincronă, beneficiile sale și unele cazuri de utilizare
 
-- How the event loop works
+- Cum funcționează bucla
 
-**2. Promises**
+**2. Promisiuni**
 
-- What a JavaScript promise represents
+- Ce reprezintă o promisiune JavaScript
 
-- Different methods and states of a promise
+- Diferite metode și stări ale unei promisiuni
 
 **3. Async / Await**
 
-- How `async` functions differ from promises
+- Cum diferă funcțiile `async` de promisiuni
 
-- Benefits of `async` functions and when to use them
+- Beneficiile funcțiilor `async` și când să le folosim
 
 [/slide]

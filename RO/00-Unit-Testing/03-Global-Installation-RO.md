@@ -79,7 +79,7 @@ describe('Test group #2', function () {
 
 ```
 describe('Sum of numbers', () => {
-  // Write your code here
+  // Scrieți codul aici
 });
 ```
 [/code-editor]
