@@ -58,7 +58,7 @@ app.listen(port, () => console.log(`Express running on port: ${port}...`));
 ```
 
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - Relational and NoSQL Databases
 - What is MongoDB?

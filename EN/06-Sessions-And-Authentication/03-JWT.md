@@ -8,7 +8,7 @@
 
 **JWT** is secure because of a digital signature.
 
-There are two ways to digitally sign a token:
+There are two ways to sign a token digitally:
 
 - `secret`: Signing with a secret, using the **HMAC** algorithm.
 
@@ -16,11 +16,13 @@ There are two ways to digitally sign a token:
 
 Signing the token prevents the notorious **man-in-the-middle** cyber attack.
 
-**Man-in-the-middle** is when which is when the attacker **intercepts** and **alters** the messages between two people.
+A **man-in-the-middle** attack occurs when the attacker **intercepts** and **alters** the messages between two people.
 
 It is the same as if the postman decided to open the mail and switch the letters.
 
-The two people that their communication is private, however, the whole conversation is controlled by the man in the middle, hence the name of the attack.
+The two people think that their communication is private.
+
+However, the whole conversation is orchestrated by the man in the middle, as the name suggests.
 
 [/slide]
 
@@ -28,7 +30,7 @@ The two people that their communication is private, however, the whole conversat
 
 # When to use JWT?
 
-There are two very common use cases for **JWT**:
+There are two universal use cases for **JWT**:
 
 - `Authorization`
 
@@ -46,7 +48,7 @@ The famous `OAuth 2.0` protocol uses several tokens for authorization:
 
 - `Refresh token`
 
-Being able to transfer information in a **safe** and **secure** manner makes **JWT** useful for any other kind of data exchange.
+The ability to transfer information in a **safe** and **secure** manner makes **JWT** useful for any other kind of data exchange.
 
 [/slide]
 
@@ -96,17 +98,18 @@ console.log(token);
 
 The **JWT** signing process is **reversible**.
 
-The token from above could be decoded like this:
+Decoding the token is performed as follows:
 
 ```js
 const token =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FycnkiLCJhZ2UiOjI3LCJpYXQiOjE2MDk4ODc5NzMsImV4cCI6MTYxMDA2MDc3M30.AIuFu04O39uokaGwfxy7iWzjr9vnsI00gqxXJ-peT8Y";
+ "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FycnkiLCJhZ2UiOjI3LCJpYXQiOjE2MDk4ODc5NzMsImV4cCI6MTYxMDA2MDc3M30.AIuFu04O39uokaGwfxy7iWzjr9vnsI00gqxXJ-peT8Y";
 
 const decodedToken = jwt.verify(token, "signing secret"); // decode with the initial secret key
 
 console.log(decodedToken); // {name: 'Garry', age: 27, iat: 1609887973, exp: 1610060773}
 ```
 
-More information about the **JWT** can be found on the official [website](https://jwt.io/).
+You can learn more information about **JWT** on the official [website](https://jwt.io/).
 
 [/slide]
+
