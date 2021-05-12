@@ -8,7 +8,9 @@
 
 It is the **most popular** server framework for **Node.js**, and it is open-source and cross-platform.
 
-The standard library of Express.js includes a set of asynchronous I/O primitives, and most of the Express libraries are written following the non-blocking paradigm, which allows Express applications to receive and process thousands of requests at once.
+The standard library of Node.js includes a set of asynchronous I/O primitives, and most of the libraries are written following the non-blocking paradigm.
+
+Express.js is no exception and a server running with the express framework would be able to handle thousands of simultaneous requests.
 
 To use **Express.js** we need to install the the Express.js library by executing the `npm install express` command.
 
@@ -43,5 +45,3 @@ When we receive a `GET` request, this handler will be called and will return the
 In this case `200` and `Welcome to Express.js!`, which means that our request has been processed.
 
 Finally, we call `app.listen`, passing the port on which our application will listen and a callback function `Express running on port: $ {port} ...`.
-
-There are thousands of libraries for Express.js which make programming with this framework a lot of fun as there is usually a library for any task you might need your application to perform. 
