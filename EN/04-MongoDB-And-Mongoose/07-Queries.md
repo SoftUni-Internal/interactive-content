@@ -7,7 +7,7 @@ The **Mongoose Query** class provides an interface for **finding**, **updating**
 
 **Mongoose** defines all queries of the native MongoDB driver in a more **clear** and **understandable** way.
 
-Instead of writing this syntax:
+This is an example of writing a query in default **MongoDB** syntax:
 
 ``` js
 {
@@ -17,14 +17,16 @@ Instead of writing this syntax:
   ]
 }
 ```
+In this example, we can find an object base on two criteria, but both criteria do not need to be true, but just one of them can be true. 
 
-Do:
+To do this we use `$or` and we pass an array of objects, where we insert as many conditions as we need, so we can find a certain object in the database.
+
+This is an example of writing the same query in **Mongoose** syntax:
 
 ``` js
 .where({ conditionOne: true })
 .or({ conditionTwo: true })
 ```
-
 
 [/slide]
 

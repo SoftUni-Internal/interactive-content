@@ -28,9 +28,11 @@ There are some benefits using **Mongoose** over **native MongoDB**:
 
 - We can incorporate new functions since functions may be attached to **Models** in Mongoose
 
-- Queries use function chaining. That makes the code more flexible and readable
+- Queries use function chaining
 
+That makes the code more flexible and readable.
 
+You can learn more about **MongooseJS** [here.](https://mongoosejs.com/docs/api.html)
 
 [/slide]
 
@@ -59,4 +61,6 @@ To host a **database** in the global MongoDB **cloud** service go to [MongoDB At
 You can store up to 512 MB of information.
 
 [/slide]
+
+
 

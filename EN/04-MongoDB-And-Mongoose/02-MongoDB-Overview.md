@@ -52,6 +52,13 @@ More additional information [here.](https://docs.mongodb.com/manual/reference/mo
 
 [/slide]
 
+
+[slide hideTitle]
+# MongoDB Shell Client: Demo
+//MongoDB-Demo-1
+
+[/slide]
+
 [slide hideTitle]
 
 # Working with MongoDB GUI
@@ -103,3 +110,4 @@ After that, that we have a **connection string**, we can create an instance of *
 The last step is to make a function that would collect our info about the people inside.
 
 [/slide]
+
