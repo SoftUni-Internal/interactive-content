@@ -39,10 +39,16 @@ http.createServer((req, res) => {
     if (path === '/') {
         console.log("You are currently on the home page");
     } else {
-        // Log the current page in the console.
+        // Log the current page to the console.
     }
 }).listen(port);
 ```
+
+As you can see, we use the `parse` method to get the URL string.
+
+Using an **if-statement**, we determine if we are on the **home page**.
+
+Then, we **print** the corresponding output to the console.
 
 [/slide]
 
@@ -67,6 +73,7 @@ It is recommended to **use the proper HTTP status codes in every response** as i
 Here are some of the more common status codes and their meaning: 
 
 | **Status Code** | **Description** |
+|---|---|
 | 200 | Successful operation |
 | 301 | Resource moved permanently to given link | 
 | 401 | Unauthorized access |
@@ -91,7 +98,8 @@ http.createServer((req, res) => {
     'Content-Type': 'text/plain'
     }); 
 
-    // Sends a status code 200 (success) and specifies that the data sent will be of type text
+    // Sends a status code 200 (success)
+    // Specifies that the data sent will be of type text
 
     res.write("How are things going on the client side?");
 
@@ -104,6 +112,10 @@ http.createServer((req, res) => {
 }).listen(port);
 
 ```
+
+As you can see from this example, the `writeHead` method is used to send a **response header** to the request.
+
+Here, it accepts two parameters - a **status code** and a `Content-Type` header.
 
 It is essential to **always use the proper status codes and to end the response**.
 
