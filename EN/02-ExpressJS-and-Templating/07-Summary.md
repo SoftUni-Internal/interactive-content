@@ -2,7 +2,7 @@
 # Summary
 
 
-# In this lesson you learnt:
+# In this lesson you learned:
 
 - **ExpressJS** is a server framework
   - Used with **Node.js**

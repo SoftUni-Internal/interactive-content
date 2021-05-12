@@ -5,9 +5,11 @@
 
 - **Cookies and sessions**
 
-    - The differences between **cookies** and **sessions**
+  * **cookies** are used for storing user preferences and settings
 
-    - **When** to use each of them
+  * **sessions** hold more sensitve data, for a short duration of time, and cannot be altered
+
+  * the use cases for each of them
 
 ```js
 const cookieParser = require("cookie-parser");
@@ -26,11 +28,12 @@ app.get("/receiveCookie", (req, res) => {
 
 - **Authentication concepts**
 
-    - How **authentication** is done and what it is
+  * **authentication** is used to confirm identity
 
-    - How to use **bcrypt**
+  * **authorization** determines if a user has the rights to access or modify given data
 
-    - Differences between **authentication** and **authorization**
+  * how **bcrypt** is used
+
 
 ```js
 const bcrypt = require("bcrypt");
@@ -47,11 +50,11 @@ bcrypt.genSalt(saltRounds, (err, salt) => {
 
 - **JWT**
 
-    - What **JWT** is
+  * *standard for transferring **JSON** in a secure way
 
-    - The **structure** of a **JSON Web Token**
+  * *a **JSON Web Token** consists of a header, payload, and signature
 
-    - **When** and **How** to use **JWT**
+  * *used for **authorization** and exchanging **information**
 
 ```js
 const jwt = require("jsonwebtoken");
@@ -65,12 +68,12 @@ const token = jwt.sign(payload, secret, options);
 console.log(token);
 ```
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
-- **Validation and Error Handling**
+- **Validation and error handling**
 
-    - **validating** and **sanitizing** data
+  * **validating** and **sanitizing** data
 
-    - **different types** of errors and how to handle them
+  * **different types** of errors and how to handle them
 
 [/slide]

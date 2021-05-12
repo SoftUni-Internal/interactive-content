@@ -59,10 +59,11 @@ const saltRounds = 8; //salt iterations, a higher value reduces performance
 const myPlainTextPassword = "unhackable"; //initially password is "unhackable"
 
 bcrypt.genSalt(saltRounds, (err, salt) => {
- bcrypt.hash(myPlainTextPassword, salt, (err, hash) => {
- console.log(hash);
- // $2b$08$O24n5Ol.4XmN.egE5ceSOem5nWms85DQnZjmAl3Az8TYqcuWlRbty
- })});
+  bcrypt.hash(myPlainTextPassword, salt, (err, hash) => {
+    console.log(hash);
+    // $2b$08$O24n5Ol.4XmN.egE5ceSOem5nWms85DQnZjmAl3Az8TYqcuWlRbty
+  })
+});
 ```
 
 It is necessary to point out that both the `genSalt` and the `hash` functions run **asynchronously**.
@@ -77,11 +78,11 @@ const hash = "$2b$08$O24n5Ol.4XmN.egE5ceSOem5nWms85DQnZjmAl3Az8TYqcuWlRbty";
 const fakeHash = "$2b$08$O24n5Ol.4XmN.egE5ceFFem5nWms85DQnZjmAl3Az8TYqcuWlRbty"
 
 bcrypt.compare(plainTextPassword, hash, (err, res) => {
- console.log(res); //true
+  console.log(res); // true
 });
 
 bcrypt.compare(plainTextPassword, fakeHash, (err, res) => {
- console.log(res); //false
+  console.log(res); // false
 });
 ```
 
@@ -92,7 +93,6 @@ Note that `compare` also runs **asynchronously** to **avoid blocking the code ex
 [slide hideTitle]
 
 # Authentication vs. Authorization
-
 
 As covered previously, **authentication** is the process of verifying the identity of the user.
 

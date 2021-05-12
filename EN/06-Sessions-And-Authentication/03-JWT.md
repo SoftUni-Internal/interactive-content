@@ -4,15 +4,15 @@
 
 # What is JWT?
 
-**JWT** or **JSON Web Token** is a **standard** used to **securely transfer** a **JSON object** between to parties.
+**JWT** or **JSON Web Token** is a **standard** used to **securely transfer** a **JSON object** between two parties.
 
-**JWT** is secure because of a digital signature.
+**JWT** is secure because of its digital signature.
 
 There are two ways to sign a token digitally:
 
-- `secret`: Signing with a secret, using the **HMAC** algorithm.
+- `secret`: signing with a secret, using the **HMAC** algorithm
 
-- `public/private key`: Signing with a public/private key, using the **RSA** or **ECDSA** algorithms.
+- `public/private key`: signing with a public/private key, using the **RSA** or **ECDSA** algorithms
 
 Signing the token prevents the notorious **man-in-the-middle** cyber attack.
 
