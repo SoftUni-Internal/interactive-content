@@ -13,13 +13,13 @@
 
 **2. Authentication concepts**
 
-- The concept and implementation of **authentication** and
+- The concept and implementation of **authentication**
 
-- Using **bcrypt**
+- How to install and utilize the **bcrypt** middleware
 
 **3. JSON Web Token**
 
-- What **JWT** is
+- What **JWT** is and when to use it
 
 - **Signing** and **decoding** a JWT
 

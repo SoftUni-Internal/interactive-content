@@ -4,21 +4,21 @@
 
 # HTTP Communication
 
-**HTTP** or **Hypertext Transfer Protocol** is responsible for the communication between the **browser** and the **web server**.
+**HTTP** or **Hypertext Transfer Protocol** is responsible for conveying information between the **browser** and the **web server**.
 
 The communication happens by **sending a request** to the server and **waiting for its response**.
 
 One of **HTTP**'s characteristics is that it is **stateless**.
 
-This means that every interaction (**request** and **response**) happens independently of the others.
+This denotes that every interaction (**request** and **response**) happens independently of others.
 
-A good example of that interaction would be an ATM - a request for money is made and the ATM responds by giving money.
+A representation of that interaction would be an ATM - the user makes a request, and the ATM responds by giving money.
 
-The ATM does not know anything about the person's balance and the person does not know how much money is in the ATM.
+The ATM does not know anything about the person's balance, and the person does not know how much money is in the ATM.
 
-Normally, this is a good thing but occasionally data must be stored.
+In general, less data collected is a good thing, but most online services require a certain amount of it to function.
 
-This is what **cookies** are for.
+That is the purpose of **cookies**.
 
 A cookie is a **simple string**, **holding information**, and **stored in the browser** (client).
 
@@ -31,29 +31,29 @@ Data can also be stored on the server when necessary with **session cookies**.
 
 # Session vs. Cookie
 
-It is very important to understand the differences between **sessions** and **client cookies**.
+It is crucial to understand the differences between **sessions** and **client cookies**.
 
-**Sessions** are used to **keep information** that might be needed **shortly** after being saved.
+**Sessions** are used to **keep information** that might be required **shortly** after being saved.
 
 Here are some examples of when to use **session cookies**:
 
-- Storing data about a user's shopping cart.
+- Storing data about a user's shopping cart
 
-- Storing larger data like a big object.
+- Storing data of greater size, like a big object
 
-- Keeping authorization status and IDs.
+- Keeping authorization statuses and IDs
 
 **Cookies**, on the other hand, are stored in the **browser** and could last for a **very long time**.
 
 They typically store user **preferences** and **personal settings**.
 
-The **most important** difference between the two is **security**.
+The **most significant** difference between the two is **security**.
 
 **Cookies** can be **changed by the user** or a potential **attacker** from the browser.
 
 They can also be **deleted** or set to **last forever**.
 
-**Sessions**, however, **cannot be modified** by the client which makes them **more reliable** than cookies.
+**Sessions**, however, **cannot be modified** by the client that makes them **more reliable** than cookies.
 
 [/slide]
 
@@ -69,7 +69,7 @@ To install it, just run the following command in the terminal:
 npm install cookie-parser
 ```
 
-The `cookie-parser` allows for cookies to be added as **key-value pairs** but still stored as a **string** on the client.
+The `cookie-parser` allows storing cookies as **key-value pairs**  while still preserved as a **string** on the client.
 
 Here is how to read and write cookies with **Express**:
 
@@ -118,23 +118,24 @@ This is how to set up the middleware for work:
 const session = require("express-session");
 
 app.use(session({
-    secret: "ISO2Z0UzWW",
-    httpOnly: true,
-    secure: true,
+  secret: "ISO2Z0UzWW",
+  httpOnly: true,
+  secure: true,
   })
 );
 
 app.get("/setSession", (req, res) => {
-    req.session.greeting = "Hello, world!";
-    // Setting the greeting key to have a "Hello world!" value.
+  req.session.greeting = "Hello, world!";
+  // Setting the greeting key to have a "Hello world!" value.
 
-    res.end("Successfully set session!");
+  res.end("Successfully set session!");
 });
 
 app.get("/getSession", (req, res) => {
-    req.json(req.session);
-    // Sends the session as a JSON
+  req.json(req.session);
+  // Sends the session as a JSON
 });
 ```
 
 [/slide]
+
