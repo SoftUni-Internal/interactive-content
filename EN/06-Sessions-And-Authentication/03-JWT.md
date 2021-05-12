@@ -32,21 +32,21 @@ However, the whole conversation is orchestrated by the man in the middle, as the
 
 There are two universal use cases for **JWT**:
 
-- `Authorization`
+- **Authorization**
 
-- `Information exchange`
+- **Information exchange**
 
 **JWT** is good for **authorization** because of the **digital signature** and its **reliability**.
 
 **After** a successful login, tokens are **sent on every request** to **verify** what the user is **permitted** to do.
 
-The famous `OAuth 2.0` protocol uses several tokens for authorization:
+The famous **OAuth 2.0** protocol uses several tokens for authorization:
 
-- `Access token`
+- **Access token**
 
-- `Identity token`
+- **Identity token**
 
-- `Refresh token`
+- **Refresh token**
 
 The ability to transfer information in a **safe** and **secure** manner makes **JWT** useful for any other kind of data exchange.
 
@@ -58,11 +58,11 @@ The ability to transfer information in a **safe** and **secure** manner makes **
 
 A **JSON Web Token** consists of **three** parts:
 
-- `Header`: Specifies the **type of token** and **signature algorithm**.
+- **Header**: Specifies the **type of token** and **signature algorithm**.
 
-- `Payload`: Contains the data transferred in a `base64` format.
+- **Payload**: Contains the data transferred in a `base64` format.
 
-- `Signature`: Contains the verification value.
+- **Signature**: Contains the verification value.
 
 Here is JWT and its parts visualized:
 
