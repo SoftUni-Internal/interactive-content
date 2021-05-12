@@ -64,11 +64,15 @@ When the \[**Check**\] button is clicked, the results should be displayed in the
 
 [image assetsSrc="asyncprogramming-3.png" /]
 
+HTML:
+
 [image assetsSrc="asyncprogramming-4.png" /]
 
 If an error occurs, the stop name changes to Error:
 
 [image assetsSrc="asyncprogramming-5.png" /]
+
+HTML:
 
 [image assetsSrc="asyncprogramming-6.png" /]
 

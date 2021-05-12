@@ -64,11 +64,15 @@ Când se face clic pe butonul \[**Check**\] rezultatele trebuie afișate în ele
 
 [image assetsSrc="asyncprogramming-3.png" /]
 
+HTML:
+
 [image assetsSrc="asyncprogramming-4.png" /]
 
 Dacă apare o eroare, numele opririi se schimbă în Error:
 
 [image assetsSrc="asyncprogramming-5.png" /]
+
+HTML:
 
 [image assetsSrc="asyncprogramming-6.png" /]
 
