@@ -255,9 +255,13 @@ Când utilizatorul **introduce un nume** și **face clic** pe butonul [**Get Wea
 
 [image assetsSrc="asyncprogramming-13.png" /]
 
+HTML:
+
 [image assetsSrc="asyncprogramming-14.png" /]
 
 [image assetsSrc="asyncprogramming-15.png" /]
+
+HTML:
 
 [image assetsSrc="asyncprogramming-16.png" /]
 [/slide]

@@ -255,9 +255,13 @@ When the user **enters a name** and **clicks** on the [**Get Weather**] button, 
 
 [image assetsSrc="asyncprogramming-13.png" /]
 
+HTML:
+
 [image assetsSrc="asyncprogramming-14.png" /]
 
 [image assetsSrc="asyncprogramming-15.png" /]
+
+HTML:
 
 [image assetsSrc="asyncprogramming-16.png" /]
 
