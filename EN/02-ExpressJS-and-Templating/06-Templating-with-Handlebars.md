@@ -17,6 +17,8 @@ They use the **double curly brace notation**:
 
 When the template is **executed**, these expressions are **replaced** with the **values** from an input source (for example a **database**).
 
+Handlebars enables the use of conditional statements and loops to iterate through data.
+
 [/slide]
 
 [slide hideTitle]
@@ -150,6 +152,10 @@ Partials may be precompiled with a new template, which is passed a second parame
 Calling a partial is done by double curly braces, preceding the name with a `>` sign:
 
 `{{> myPartial }}`
+
+An example of a partial might be a menu, an info card, or any other element you would like to insert into another template.
+
+Partials can be reused in as many locations as you require and are a good way to keep the template simpler without having to repeat the same code in different locations.
 
 [/slide]
 
