@@ -332,7 +332,27 @@ Create a profile card for every user and display it on the web page.
 
 Every item should have the following structure:
 
-[image assetsSrc="asyncprogramming-17.png" /]
+```js
+<div class="profile">
+  <img src="./iconProfile2.png" class="userIcon">
+  <label>Lock</label>
+  <input type="radio" name="user1Locked" value="lock" checked>
+  <label>Unlock</label>
+  <input type="radio" name="user1Locked" value="unlock">
+  <br>
+  <hr>
+  <label>Username</label>
+  <input type="text" name="user1Username" value="John" disabled readonly>
+    Shadow Content (User Agent)
+</input>
+<div id="useriHiddenFields">
+   <hr>
+   <label>Email:</label>
+   <input type="email" name="user1Email" value="john@users.com" disabled readonly>
+   <label>Age:</label>
+   <input type="email" name="useriAge" value="31" disabled readonly>
+</div>
+```
 
 [image assetsSrc="asyncprogramming-18v2.png" /]
 
@@ -383,9 +403,20 @@ The Less or More button should be **toggleable** (you should be able to click th
 
 Every item should have the following structure:
 
-[image assetsSrc="asyncprogramming-22.png" /]
-
+```js
+<section id="main">
+   <div class="accordion">
+      <div class="head">
+         <span>Scalable Vector Graphics</span>
+         <button class="button" id="ee9823ab-c3e8-4a14-b998-8c22ec246bd3">More</button>
+      </div>
+      <div class="extra">
+         <p>Scalable Vector Graphics (SVG) is an Extensible Markup Language (XML)-based vector image format for two-dimensional graphics with support for interactivity and animation. The SVG specification is an open standard developed by the World Wide Web Consortium (WBC) since 1999.
+         </p>
+      </div>
+   </div>
+</section>
+```
 You are allowed to add new attributes, but do not change the existing ones.
-
 
 [/slide]
