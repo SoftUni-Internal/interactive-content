@@ -169,3 +169,13 @@ const Student = require('./models/Student');
 ```
 
 [/slide]
+
+[slide hideTitle]
+
+# Mongoose: Demo
+
+//MongoDB-Demo-2
+
+
+
+[/slide]
