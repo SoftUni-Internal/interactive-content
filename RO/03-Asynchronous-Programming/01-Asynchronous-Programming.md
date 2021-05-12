@@ -62,7 +62,9 @@ let promise = new Promise(function(resolve, reject) {
 });
 ```
 
-- `async function` - În principiu **construit pe baza promisiunilor**, dar mult mai ușor de utilizat. Permite un **cod mai curat și mai lizibil**
+- `async function` - În principiu **construit pe baza promisiunilor**, dar mult mai ușor de utilizat
+
+Permite un **cod mai curat și mai lizibil**.
 
 ```js
 async function getData(url) {
