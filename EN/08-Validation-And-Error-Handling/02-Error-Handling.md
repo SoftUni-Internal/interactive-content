@@ -57,7 +57,7 @@ We use the **try-catch** block statement with **async** and **await** to handle 
 Here is an example:
 
 ```js
-const User = require('../models/User/);
+const User = require('../models/User/');
 
 async (req, res, next) => {
     const { username, password } = req.body;
