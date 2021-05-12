@@ -5,7 +5,7 @@
 
 **Handlebars** is a simple **templating language**, based on the Mustache specification.
 
-**Handlebars templates** look like a regular text with embedded Handlebars **expressions**.
+**Handlebars templates** look like regular text with embedded Handlebars **expressions**.
 
 ## Expressions
 
@@ -13,7 +13,11 @@ Handlebars **expressions** are the **basic unit** of a Handlebars **template**.
 
 They use the **double curly brace notation**:
 
-`Hello {{name}}`
+```
+<body>
+<p>My name is {{name}}</p>
+</body>
+```
 
 When the template is **executed**, these expressions are **replaced** with the **values** from an input source (for example a **database**).
 
