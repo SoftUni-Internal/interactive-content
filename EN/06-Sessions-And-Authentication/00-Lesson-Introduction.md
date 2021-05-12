@@ -7,13 +7,13 @@
 
 **1. Cookies and Sessions**
 
-- What a **cookie** is and how it is different from a **session**
+- What a **cookie** is and how it differs from a **session**
 
 - Pros and cons of using **cookies** and **sessions**
 
 **2. Authentication concepts**
 
-- Improving security by **confirming** the identity of users
+- The concept and implementation of **authentication** and
 
 - Using **bcrypt**
 

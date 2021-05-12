@@ -646,7 +646,7 @@ Now, if you restart the server and check the home page `localhost:3000`, the res
 
 The picture is not visualized on the page.
 
-The reason behind that is because when we serve static files, we do not think about all edge cases.
+The reason behind that is because when we serve static files, we tend to forget about all edge cases.
 
 To solve this problem, we should extend our `static-handler.js` logic.
 
@@ -656,17 +656,20 @@ This is the structure you should use to resolve this problem.
 
 The logic inside these two `readFile()` functions is mostly the same.
 
-The only difference between them is the **encoding**, which is the second argument and it is optional.
+The only difference between them is the **encoding**, which is the second argument, and it is optional.
 
-When some of the following files are served, there should be no encoding or at least no **utf8** (**png**, **jpg**, **jpeg**, etc...).
+When some of the following files are served, there should be no encoding, including no **utf8** encoding: **png**, **jpg**, **jpeg**, etc.
 
-You should just **check** when the **pathname starts with** `/content` and the **request method** is `GET`, and also the **pathname ends with** some of the image extension, read the file, pass the **pathname** and the **callback** as arguments that are it.
+You should just **check** when:
+- the **pathname starts with** `/content`
+- the **request method** is `GET`
+- the **pathname ends with** any of the above image extensions
 
-In any other cases, no matter the **pathname** ending you should put the encoding `utf8` for now.
+Read the file, pass the **pathname** and the **callback** as arguments.
 
-As it is done above in the picture.
+In any other cases, regardless of the file extension on the end of the **pathname**, you should put the encoding `utf8` for now, as shown above.
 
-If you do that the result will be:
+If you do that, the result will be:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-75.jpg" /]
 [/slide]
@@ -677,9 +680,9 @@ If you do that the result will be:
 
 `[Change Info]` and `[New Home]` are buttons that **every cat** should have.
 
-You have been given all the necessary views, including these two - `editCat.html` and `catShelter.html`.
+You are given all the necessary views, including these two - `editCat.html` and `catShelter.html`.
 
-By clicking over any of them, the app should show the current view with current cat info inside it.
+By clicking over any of them, the app should show the current view with the current cat's info inside.
 
 We should implement the following logic:
 
