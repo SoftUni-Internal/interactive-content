@@ -54,9 +54,9 @@ Here is a simple example of how to hash a password with `bcrypt`:
 
 ```js
 const bcrypt = require('bcrypt');
-const saltRounds = 8; //salt iterations, a higher value reduces performance
+const saltRounds = 8; // Salt iterations, a higher value reduces performance
 
-const myPlainTextPassword = "unhackable"; //initially password is "unhackable"
+const myPlainTextPassword = "unhackable"; // The initial password is "unhackable"
 
 bcrypt.genSalt(saltRounds, (err, salt) => {
   bcrypt.hash(myPlainTextPassword, salt, (err, hash) => {

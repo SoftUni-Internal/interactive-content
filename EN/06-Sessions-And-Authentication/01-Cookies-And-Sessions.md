@@ -80,7 +80,7 @@ app.use(cookieParser());
 // Setting a cookie
 app.get("/createCookie", (req, res) => {
   res.cookie("greeting", "Hello world!");
-  // here "greeting" is the key with value "Hello, world!"
+  // Here, "greeting" is the key, and the value is "Hello, world!"
 
   res.end("Cookie was set successfully");
 });
@@ -126,7 +126,7 @@ app.use(session({
 
 app.get("/setSession", (req, res) => {
   req.session.greeting = "Hello, world!";
-  // Setting the greeting key to have a "Hello world!" value.
+  // Setting the greeting key to have a "Hello world!" value
 
   res.end("Successfully set session!");
 });

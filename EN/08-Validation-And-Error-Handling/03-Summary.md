@@ -64,7 +64,7 @@
       });
       ```
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 -  Deployment:
 
