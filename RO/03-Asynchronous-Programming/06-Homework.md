@@ -64,33 +64,13 @@ Când se face clic pe butonul \[**Check**\] rezultatele trebuie afișate în ele
 
 [image assetsSrc="asyncprogramming-3.png" /]
 
-```js
-<div id="stopInfo" style="width:20em">
-   <div>...</div>
-   <div id="result">
-      <div id="stopName">Buckingham Palace</div>
-      <ul id="busses">
-      <li>Bus 4 arrives in 13 minutes</li>
-      <li>Bus 12 arrives in 6 minutes</li>
-      <li>Bus 18 arrives in 7 minutes</li>
-      </ul>
-   </div>
-</div>
-```
+[image assetsSrc="asyncprogramming-4.png" /]
 
 Dacă apare o eroare, numele opririi se schimbă în Error:
 
 [image assetsSrc="asyncprogramming-5.png" /]
 
-```js
-<div id="stopInfo" style="width:20em">
-   <div>...</div>
-   <div id="result">
-      <div id="stopName">Error</div>
-      <ul id="buses"></ul>
-   </div>
-</div>
-```
+[image assetsSrc="asyncprogramming-6.png" /]
 
 [/slide]
 
