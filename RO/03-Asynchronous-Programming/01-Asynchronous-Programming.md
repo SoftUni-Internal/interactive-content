@@ -1,18 +1,18 @@
-# Asynchronous Programming
+# Programarea Asincronă
 
 [slide hideTitle]
 
-# Event Loop
+# Bucla de Evenimente
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-3-4-Asynchronous-Programming-and-the-Event-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/Asynchronous-Programming-3-4-Asynchronous-Programming-and-the-Event-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The event loop in JavaScript is **where all the incoming events are processed**.
+Bucla de evenimente în JavaScript este **locul unde sunt procesate toate evenimentele de intrare**.
 
-It queues event handlers in the **Event queue** and executes them in the **Call stack**, producing JS code.
+Aceasta pune în coadă handlerele (gestionarii) de evenimente în **Event queue** și le execută în **Call stack**, producând cod JS.
 
-The event loop monitors the **Call stack** and the **Callback queue**.
+Bucla de evenimente monitorizează **Call stack** și **Callback queue**.
 
-The event loop takes the **first event** from the queue and pushes it into the Call stack (if it is empty).
+Bucla de eveniment ia primul **eveniment** din coadă și îl împinge în Call stack (dacă este goală).
 
 [image assetsSrc="jsapps-async-programming-event-loop.png" /]
 
@@ -21,21 +21,21 @@ The event loop takes the **first event** from the queue and pushes it into the C
 
 [slide hideTitle]
 
-# Asynchronous Programming in JavaScript
+# Programarea Asincronă în JavaScript
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-5-6-Asynchronous-Programming-in-JavaScript-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/Asynchronous-Programming-5-6-Asynchronous-Programming-in-JavaScript-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-As a **single-threaded** language, JavaScript has just **one call stack** and **one memory heap**.
+Ca limbaj **cu un singur fir de execuție**, JavaScript are doar **o singură stivă de apeluri** și **o singură memorie heap**.
 
-In other words - chunks of code are executed **one at a time**. 
+Cu alte cuvinte - bucăți de cod sunt executate **pe rând**.
 
-This way, each of those chunks must wait for the previous one to be finished.
+În acest fel, fiecare dintre aceste bucăți trebuie să aștepte finalizarea celei anterioare.
 
-Running code like this can **block an entire webpage** due to the waiting time of **one function**, which is a serious user experience problem.
+Executarea unui astfel de cod poate **bloca o întreagă pagină web** din cauza timpului de așteptare a **unei funcții**, care este o problemă serioasă de experiență a utilizatorului.
 
-There are several ways to go around JavaScript's synchronous nature:
+Există mai multe moduri de a ocoli natura sincronă a JavaScript-ului:
 
-- `callback` - A callback is a function, which is passed as **an argument to another function** and performs a certain operation inside of it
+- `callback` - callback este o funcție, care este transmisă ca **un argument către o altă funcție** și efectuează o anumită operație în interiorul acesteia
 
 ```js
 function calculateTax(income) {
@@ -47,20 +47,22 @@ function outer(callback) {
     callback(income);
 }
 
-outer(calculateTax); // outer is called with calculateTax as a callback
+outer(calculateTax); // outer este apelat prin calculateTax ca un callback
 ```
 
-Callbacks are used when one function needs to wait for another function to complete before executing.
+Callbacks sunt folosite atunci când o funcție trebuie să aștepte finalizarea altei funcții înainte de executare.
 
-- `promise` - A promise is an object, **representing data that will be obtained later on**. It allows the program to keep running, without waiting for that data
+- `promise` - Promisiunea este un obiect, **reprezentând date care vor fi obținute ulterior**
+
+Permite programului să ruleze fără a aștepta datele respective.
 
 ```js
 let promise = new Promise(function(resolve, reject) {
-    // Get data asynchronously, use resolve or reject after.
+    // Obțineți date asincron, utilizați resolve sau reject după.
 });
 ```
 
-- `async function` - Fundamentally **built on promises**, but much easier to use. Allows for a **cleaner and more readable code**
+- `async function` - În principiu **construit pe baza promisiunilor**, dar mult mai ușor de utilizat. Permite un **cod mai curat și mai lizibil**
 
 ```js
 async function getData(url) {
@@ -71,28 +73,28 @@ async function getData(url) {
 }
 ```
 
-It is important to know that the `async` keyword **must be placed in front of the function** and the `await` keyword is put in front of asynchronous operations.
+Este important să știți că cuvântul cheie `async` **trebuie plasat în fața funcției** și cuvântul cheie `await` este plasat în fața operațiilor asincrone.
 
 [/slide]
 
 [slide hideTitle]
 
-# Example: Asynchronous Programming
+# Exemplu: Programarea Asincronă
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/EN/Asynchronous-Programming-7-Asynchronous-Programming-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/04.JS-Applications-Asynchronous-Programming/RO/Asynchronous-Programming-7-Asynchronous-Programming-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The easiest way to understand synchronous and asynchronous programming is to imagine a company that has a physical store and a website.
+Cel mai simplu mod de a înțelege programarea sincronă și cea asincronă este să vă imaginați o companie care are un magazin fizic și un site web.
 
-- In the physical store, people have to **wait in queue** to buy something: synchronous programming
+- În magazinul fizic, oamenii trebuie să **aștepte la coadă** pentru a cumpăra ceva: programare sincronă
 
-- On the website, however, hundreds of people can buy items **independently of each other**: asynchronous programming
+- Cu toate acestea, pe site, sute de oameni pot cumpăra articole **independent unul de celălalt**: programare asincronă
 
-Here is a diagram of some code's run time to better visualize the concept:
+Iată o diagramă a timpului de funcționare a unui cod pentru a vizualiza mai bine conceptul:
 
 [image assetsSrc="JS-Applications-Asynchronous-Programming-1.png" /]
 
 
-Here is an example of some asynchronous behavior in JavaScript:
+Iată un exemplu de comportament asincron în JavaScript:
 
 ```js live
 function printSam() {
@@ -112,21 +114,21 @@ console.log('Tyson');
 setTimeout(printGeorge, 1000);
 ```
 
-What happens here is that the code is executed **line by line**:
+Ceea ce se întâmplă aici este că codul este executat **linie cu linie**:
 
-- Firstly, "Jessica" is printed
+- În primul rând, se imprimă "Jessica”
 
-- After that, the callback function `printSam` is  **scheduled to run after three seconds** 
+- După aceea, funcția callback `printSam` este **programată să ruleze după trei secunde**
 
-- "Tyson" is printed since `printSam`'s three seconds **have not yet passed**
+- "Tyson" este tipărit deoarece cele trei secunde ale `printSam` **nu au trecut încă**
 
-- `printGeorge` is **scheduled to run after one second** while `printSam`'s three seconds are still yet to pass
+- `printGeorge` este **programat să ruleze după o secundă** în timp ce cele trei secunde ale lui `printSam` încă nu au trecut
 
-- One second passes and `printGeorge` is executed
+- O secundă trece și  `printGeorge` este executat
 
-- Three seconds pass and `printSam` is executed
+- Trec trei secunde și `printSam` este executat
 
-If the same code was executed synchronously, the names would be in the following order:
+Dacă același cod ar fi executat sincron, numele ar fi în următoarea ordine:
 
 - "Jessica"
 
