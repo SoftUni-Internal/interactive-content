@@ -64,7 +64,7 @@ Pentru a obține eticheta unei anumite probleme, trebuie să trimitem o solicita
 
 # GitHub: Creare Problemă: Exemplu
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-22-github-api-creating-an-issue-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/RO/JS-Applications-REST-Services-And-AJAX-22-github-api-creating-an-issue-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 De data aceasta trebuie să **creăm** o problemă (datele ar trebui **trimise** către server). 
