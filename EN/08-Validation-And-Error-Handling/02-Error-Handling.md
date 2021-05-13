@@ -42,9 +42,20 @@ For asynchronous code we use `then().catch()`.
 
 We can handle the errors directly with **try-catch** or `then().catch()`. 
 
-But if we want, we can use the **ExpressJS** tools.
+Depending on our preference, we can use the **ExpressJS** tools.
 
 When we use the **ExpressJS** functionality, we need to use the `next()` functions, which calls a middleware.
+
+This is an example use of `next`:
+
+```js
+async function validateCookies (req, res, next) {
+  await cookieValidator(req.cookies);
+  next();
+}
+
+app.use(cookieParser());
+```
 
 [/slide]
 
@@ -129,6 +140,7 @@ For example:
 
 - Every response from the API should have a **specific status code** and **well-described information** about the error
 
-- Displaying an error notification
+- Displaying an error notification is a less intrusive alternative to redirecting
+  * can be used for less major errors, such as an invalid index in an input field
 
 [/slide]

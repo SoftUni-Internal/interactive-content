@@ -2,9 +2,9 @@
 
 # Summary
 
-# In this lesson you learned:
+## In this lesson you learned:
 
--  What is validation?
+-  What validation is
 
    - **preventing** incorrect information from reaching the database
 
@@ -24,7 +24,7 @@
       body('email').isEmail().normalizeEmail();
       ```
 
-   - Mongoose validator
+   - Using the mongoose validator
 
    ```js
    schema.pre('validate', () => {});
@@ -45,7 +45,7 @@
 
    -  Ways to handle errors:
 
-      -  **Try-catch**:
+      -  using a `try-catch` block:
 
       ```js
       try {
