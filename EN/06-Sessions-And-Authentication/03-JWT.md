@@ -40,15 +40,35 @@ There are two universal use cases for **JWT**:
 
 **After** a successful login, tokens are **sent on every request** to **verify** what the user is **permitted** to do.
 
+The ability to transfer information in a **safe** and **secure** manner makes **JWT** useful for any other kind of data exchange as well.
+
 The famous **OAuth 2.0** protocol uses several tokens for authorization:
 
-- **Access token**
+## Access token 
 
-- **Identity token**
+Applications utilize **access tokens** to make requests to an API with the user's credentials.
 
-- **Refresh token**
+It is used for **authorization** purposes, enabling access to private and/or otherwise inaccessible data.
 
-The ability to transfer information in a **safe** and **secure** manner makes **JWT** useful for any other kind of data exchange.
+These tokens must retain their **confidentiality** both while being transported and stored.
+
+As a result, they can only be sent over **HTTPS** connections.
+
+## Identity token
+
+An **identity token** is returned by the server with the purpose of encoding the authentication information of the current user.
+
+What makes them different from access tokens is the fact that they can be understood by **third-parties**, instead of only by the resource server.
+
+ID tokens are often requested alongside the access token.
+
+## Refresh token 
+
+An important characteristic of access tokens is that they have a **relatively short** lifespan.
+
+While this is great for **security**, it introduces a problem in the long term - if an application tries to access a resource **after the access token has expired**, it must **ask** the user for a permission again.
+
+**Refresh tokens** aim to tackle this issue by automatically obtaining a new access token when the current one expires.
 
 [/slide]
 
@@ -58,13 +78,13 @@ The ability to transfer information in a **safe** and **secure** manner makes **
 
 A **JSON Web Token** consists of **three** parts:
 
-- **Header**: Specifies the **type of token** and **signature algorithm**.
+- **Header**: specifies the **type of token** and **signature algorithm**
 
-- **Payload**: Contains the data transferred in a `base64` format.
+- **Payload**: contains the data transferred in a `base64` format
 
-- **Signature**: Contains the verification value.
+- **Signature**: contains the verification value
 
-Here is JWT and its parts visualized:
+Here you can see JWT and its **parts**, visualized:
 
 [image assetsSrc=JS-BackEnd-Sessions-And-Authentication-3.jpg ]
 
