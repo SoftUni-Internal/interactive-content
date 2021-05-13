@@ -42,6 +42,9 @@ In these examples, we will send **GET** requests to the following URLs:
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-20-github-labels-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-21-github-api-getting-labels-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 In this example, we need to get a particular issue.
 
 We send a **GET** request to `https://api.github.com/repos/softuni/js-apps/issues/:id`, where `:id` is the issue - `1`:
