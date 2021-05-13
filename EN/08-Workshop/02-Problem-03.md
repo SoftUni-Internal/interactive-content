@@ -153,7 +153,7 @@ The service will return an array of listings.
 [slide hideTitle]
 # Details
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/09-JS-Applications-Workshop/EN/CarTube-05-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /] // TODO::::
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/09-JS-Applications-Workshop/EN/CarTube-05-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 All users should be able to **view details** about listings. 
 
