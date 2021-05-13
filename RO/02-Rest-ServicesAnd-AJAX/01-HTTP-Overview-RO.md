@@ -192,7 +192,7 @@ Dacă vrem să descărcăm un fișier **PDF**, trebuie să-l configurăm după c
 ```
 Content-Type: application/pdf
 Content-Disposition: attachment;
-filename="Example.pdf
+filename="Example.pdf"
 ```
 
 [/slide]

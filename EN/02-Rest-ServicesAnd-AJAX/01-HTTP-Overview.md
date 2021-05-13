@@ -192,7 +192,7 @@ If we want to download a **PDF** file, we need to configure it as follows:
 ```
 Content-Type: application/pdf
 Content-Disposition: attachment;
-filename="Example.pdf
+filename="Example.pdf"
 ```
 
 [/slide]
