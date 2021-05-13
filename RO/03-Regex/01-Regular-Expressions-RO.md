@@ -45,9 +45,9 @@ Utilizați paranteze drepte pentru a potrivi niște caractere specifice:
 
 - `[nvj]+` - corespunde oricărui caracter care este **n**, **v** sau **j**.
 
-Exemplu:
+Exemplu: "**n**ode.**j**s **v**0.12.2" potrivește "njv"
 
-"**n**ode.**j**s **v**0.12.2" potrivește "njv"
+[image assetsSrc="js-fundamentals2-regex-2.png" /]
 
 - Utilizați simbolul **caret** `^` pentru a exclude ceva din căutare, la fel ca în cazul exemplului de mai jos:
 
