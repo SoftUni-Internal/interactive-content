@@ -6,7 +6,7 @@
 
 Debugging in Node.js is done by using the **V8 debugging protocol**, which is a **JSON-based** protocol.
 
-Also, we can use **IDE**s with a debugger like:
+We can also use **IDE**s with a debugger like:
 
 - **Webstorm**
 
@@ -16,7 +16,7 @@ Also, we can use **IDE**s with a debugger like:
 
 Use "**Nodemon**" to watch for changes in your application.
 
-It helps to develop a Node.js-based applications by automatically restarting the node application when file changes in the directory are detected.
+It helps development by automatically restarting the node application when file changes in the directory are detected.
 
 [/slide]
 
