@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Create Car Listing
 
-// Video: 06: Create Car Listing page 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/09-JS-Applications-Workshop/EN/CarTube-06-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **Create** page is available to logged-in users. 
 
@@ -45,7 +45,7 @@ If successful, **redirect** the user to the **All Listings** page.
 [slide hideTitle]
 # Edit Listing
 
-// Video: 07: Edit Listing page 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/09-JS-Applications-Workshop/EN/CarTube-07-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **Edit** page is available to logged-in users and allows the author to **edit** their **own** listings. 
 
@@ -117,7 +117,7 @@ Upon success, **redirect** the user to the **All Listings** page.
 [slide hideTitle]
 # My Listings
 
-// Video: 08: My Listings page + Tests 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/09-JS-Applications-Workshop/EN/CarTube-08-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This page displays all listings made by the current user. 
 

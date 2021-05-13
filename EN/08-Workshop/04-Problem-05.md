@@ -2,7 +2,7 @@
 [slide hideTitle]
 # Search
 
-// Video: 09: Search page + Tests
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/09-JS-Applications-Workshop/EN/CarTube-09-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **Search** page allows users to filter listings by their production year. 
 

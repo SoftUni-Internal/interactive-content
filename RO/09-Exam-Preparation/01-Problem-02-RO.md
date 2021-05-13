@@ -365,7 +365,6 @@ Există o secțiune stilizată cu id "notificări" în fișierul HTML furnizat.
 
 Erorile pot include **erori de validare** sau mesaje de eroare **returnate** de către serviciul REST, cum ar fi acreditări de utilizator incorecte, pe următoarele pagini: **Register**, **Login**, **Create** and **Edit**.
 
-**c**
 [image assetsSrc="js-application-exap-prep-13.png" /]
 
 **Pagina Regiter:**

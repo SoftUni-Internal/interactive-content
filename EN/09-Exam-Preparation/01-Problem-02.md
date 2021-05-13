@@ -4,8 +4,8 @@
 
 # Home Screen 
 
-//Video: JS-APPS-Meme-Lounge-Home-4
-//Video: JS-APPS-Meme-Lounge-Home-5
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Home-4-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 The initial screen should display the navigation, register, login, the initial image and a footer.
 
@@ -20,8 +20,7 @@ Logged-in users should be redirected to the **All Memes page**.
 [slide hideTitle]
 # Navigation Bar
 
-//Video: JS-APPS-Meme-Lounge-Navigation-6
-//VIdeo: JS-APPS-Meme-Lounge-Navigation-7
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Navigation-6-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Implement a **NavBar** for the app: navigation links should change the current screen (view).
 
@@ -47,8 +46,7 @@ User navigation example:
 [slide hideTitle]
 # Login Page
 
-// Video: JS-APPS-Meme-Lounge-Login-8
-//Video: JS-APPS-Meme-Lounge-Login-9
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Login-8-9-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **included REST service** comes with the following **premade** user accounts, which you may use for development:
 
@@ -90,8 +88,7 @@ If there is an error, display an error message using a system dialog (**window.a
 
 [slide hideTitle]
 # Register User 
-//Video: JS-APPS-Meme-Lounge-Register-10
-//Video: JS-APPS-Meme-Lounge-Register-11
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Register-10-11-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **Register** page contains a form for registering a new user. 
 
@@ -130,7 +127,7 @@ If there are an error, or the **validations** does not pass, display the corresp
 [slide hideTitle]
 # Logout 
 
-//Video: JS-APPS-Meme-Lounge-Logout-12
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Logout-12-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The logout action is available to logged-in users. Send the following request to log a user out:
 
@@ -153,8 +150,8 @@ If the logout was successful, **redirect** the user to the **Home page**.
 [slide hideTitle]
 # All Memes
 
-// Video: JS-APPS-Meme-Lounge-All-Memes-13
-//Video: JS-APPS-Meme-Lounge-All-Memes-14
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-All-Memes-13-14-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 This page displays a list of all memes in the system. 
  
@@ -183,7 +180,7 @@ The required **headers** are described in the documentation. The service will re
 [slide hideTitle]
 # Create Meme Screen 
 
-// Video: JS-APPS-Meme-Lounge-Create-Meme-15
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Create-Meme-15-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **Create** page is available to logged-in users. 
 
@@ -222,9 +219,7 @@ Upon success, **redirect** the user to the **All Memes** page.
 [slide hideTitle]
 # Meme Details
 
-// Video: JS-APPS-Meme-Lounge-Details-16
-// Video: JS-APPS-Meme-Lounge-Details-17
-// Video: JS-APPS-Meme-Lounge-Details-18
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Details-16-17-18-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 All users should be able to **view the details page** of the memes. 
 
@@ -251,8 +246,7 @@ The service will return a single object.
 [slide hideTitle]
 # Edit Meme Screen 
 
-// Video: JS-APPS-Meme-Lounge-Edit-19
-// Video: JS-APPS-Meme-Lounge-Edit-Meme-20
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Edit-meme-19-20-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **Edit** page is available to logged-in users and allows the author to **edit** their **own** meme. 
 
@@ -294,8 +288,7 @@ If successful, redirect the user to the **Details** page.
 [slide hideTitle]
 # Delete Meme  
 
-// Video: JS-APPS-Meme-Lounge-Delete-21
-// Video: JS-APPS-Meme-Lounge-Delete-22
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Delete-21-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The delete functionality is available to **logged-in** users and only for memes that they have created. 
 
@@ -324,8 +317,7 @@ Upon success, **redirect** the user to the **All Memes page**.
 [slide hideTitle]
 # User Profile
 
-// Video: JS-APPS-Meme-Lounge-Profile-23
-// Video: JS-APPS-Meme-Lounge-Profile-24
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Profile-23-24-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Each **logged-in user** should be able to view their profile by clicking on the `[My Profile]` button. 
 
@@ -356,8 +348,7 @@ The service will return an array of listings.
 [slide hideTitle]
 # Bonus: Notifications 
 
-//Video: JS-APPS-Meme-Lounge-Notifications-25
-//Video: JS-APPS-Meme-Lounge-Notifications-26
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Notifications-25-26-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In case of an **error that is caused by the user’s actions**, the application should display an **error notification message**, which disappears after 3 seconds. 
 
@@ -365,7 +356,6 @@ There is a styled section with id "notifications" in the provided HTML file.
 
 Errors may include **validation errors** or error **messages returned** by the REST service, such as incorrect user credentials, on the following pages: **Register**, **Login**, **Create** and **Edit**.
 
-**c**
 [image assetsSrc="js-application-exap-prep-13.png" /]
 
 **Register Page:**
