@@ -3,7 +3,7 @@
 
 # Meme Lounge
 
-// Video: JS-APPS-Meme-Lounge-Overview-1
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Overview-and-resources-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-applications/Meme_Lounge.zip) **for this task.**
@@ -68,7 +68,7 @@ You may also add hidden elements to help you implement certain parts of the appl
 
 ## Starting the Service 
 
-// Video: JS-APPS-Meme-Lounge-Resources-overview-2
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Overview-and-resources-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **REST service** will be the "**server**" folder in the provided resources. 
 
@@ -133,13 +133,13 @@ You can find more details on the GitHub [repository](https://github.com/softuni-
 
 [slide hideTitle]
 # Api Logic
-// Video: JS-APPS-Meme-Lounge-2.1-API.JS 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-2.1-API.JS-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
 # App Logic
-// Video: JS-APPS-Meme-Lounge-3 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 [/slide]
 
 

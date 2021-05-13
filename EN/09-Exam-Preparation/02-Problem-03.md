@@ -3,8 +3,7 @@
 [slide hideTitle]
 # Project Setup 
 
-//Video: JS-APPS-Meme-Lounge-Testing-27
-//Video: JS-APPS-Meme-Lounge-Testing-28
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Testing-27-28-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The tests require a web server to deliver the content of the application. 
 
