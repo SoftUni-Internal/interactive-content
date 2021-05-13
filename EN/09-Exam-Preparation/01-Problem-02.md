@@ -365,7 +365,6 @@ There is a styled section with id "notifications" in the provided HTML file.
 
 Errors may include **validation errors** or error **messages returned** by the REST service, such as incorrect user credentials, on the following pages: **Register**, **Login**, **Create** and **Edit**.
 
-**c**
 [image assetsSrc="js-application-exap-prep-13.png" /]
 
 **Register Page:**
