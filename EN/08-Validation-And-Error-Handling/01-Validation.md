@@ -4,7 +4,7 @@
 
 # Why to Validate?
 
-When we have a **bigger app**, we have **more data** to store.
+When we have a **larger application**, we have **more data** to store.
 
 This data comes from the user.
 
@@ -30,15 +30,15 @@ For best security, we should use all of the three methods.
 
 This validation does not protect or secures the application from incorrect data, even though it is good to have it.
 
-In the **server-side** validation unlike the **client-side** one, the code is not visible to the user.
+In **server-side** validation, unlike the **client-side** one, the validation is not visible to the user.
 
-So this validation cannot be **changed** or **disabled**.
+This means that it cannot be **altered** or **disabled**.
 
 When we want to validate the data that we are receiving, we focus on the **server-side** validation.
 
 But we need to make sure that the database is also validated.
 
-In most database engines, there is a **build-in validation**, which can be turned on.
+In most database engines, there is **built-in validation**, which can be easily enabled.
 
 Database validation is **not required** because there should be no situation where the data can be invalid.
 
@@ -69,7 +69,7 @@ And here is an example on the **client-side**:
 ```js
 <script type="text/javascript" src="validator.min.js"></script>
 <script type="text/javascript">
-  validator.isEmail($('#email').val());
+ validator.isEmail($('#email').val());
 </script>
 ```
 
@@ -100,7 +100,7 @@ check('password').isLength({ min: 5 });
 const errors = validationResult(req);
 
 if (!errors.isEmpty()) {
-   console.error('Request Failed')
+ console.error('Request Failed')
 }
 ```
 
@@ -120,9 +120,9 @@ But if there are no errors, we continue with creating a user.
 
 # Sanitizers
 
-**Sanitizers** are functions that keep the data in the right format.
+**Sanitizers** are functions that keep the data in the correct format.
 
-Their work is based on modifying the request and removing illegal characters from the data.
+Their work revolves around modifying the request and removing illegal characters from the data.
 
 If the user input is `John@example.com`, after the sanitizer function it will be `john@example.com`.
 
@@ -145,8 +145,8 @@ body('password').isLength({ min: 5 }).isAlphanumeric().trim();
 
 In this example, we use sanitizing functions on the **email** and the **password**:
 
--  `normalizeEmail()` will standardize the email address.
--  `trim()` will trim the characters and the whitespace.
+- `normalizeEmail()` will standardize the email address.
+- `trim()` will trim the characters and the whitespace.
 
 [/slide]
 
@@ -162,12 +162,12 @@ Let us have a look at this **custom validator**:
 const { body } = require('express-validator');
 
 app.post('/user', body('email').custom(value => {
-    return User.findUserByEmail(value)
-        .then(user => {
-         if(user){
-                return Promise.reject('E-mail already in use');
-            }
-     });
+ return User.findUserByEmail(value)
+ .then(user => {
+ if(user){
+ return Promise.reject('E-mail already in use');
+ }
+ });
 };
 ```
 
@@ -187,13 +187,13 @@ Here is an example:
 const { sanitizeParam } = require('express-validator');
 
 app.post(
-   '/object/:id',
-   sanitizeParam('id').customSanitizer((value) => {
-      return ObjectId(value);
-   }),
-   (req, res) => {
-      console.log(req.params)
-   }
+ '/object/:id',
+ sanitizeParam('id').customSanitizer((value) => {
+ return ObjectId(value);
+ }),
+ (req, res) => {
+ console.log(req.params)
+ }
 );
 ```
 
@@ -229,22 +229,22 @@ Here is an example:
 
 ```js
 schema.pre('validate', function () {
-   //this gets printed first
+ //this gets printed first
 });
 schema.post('validate', function () {
-   //this gets printed second
+ //this gets printed second
 });
 schema.pre('save', function () {
-   //this gets printed third
+ //this gets printed third
 });
 schema.post('save', function () {
-   //this gets printed fourth
+ //this gets printed fourth
 });
 ```
 
-The **validation** hooks will be executed first.
+The **validation** hooks will execute first.
 
-But the `pre('validate')` hook will be the first from the **validation** ones.
+But the `pre('validate')` hook will be the first to run from the **validation** hooks.
 
 The **save** hooks will execute after the **validation** ones are ready.
 
@@ -260,28 +260,28 @@ All Mongoose **SchemaTypes** have **built-in** validators.
 
 The **SchemaTypes** are:
 
--  For **Numbers**:
+- For **Numbers**:
 
-   -  They have **Min** and **Max** validators.
+ - They have **Min** and **Max** validators.
 
--  For **Strings**:
+- For **Strings**:
 
-   -  **enum**
-   -  **match**
-   -  **minlength**
-   -  **maxlength**
+ - **enum**
+ - **match**
+ - **minlength**
+ - **maxlength**
 
 Here is an example of **Mongoose schema**:
 
 ```js
 const userSchema = new Schema({
-   username: {
-      type: String,
-      required: true,
-      unique: true,
-      minlength: 4,
-      maxlength: 20,
-   },
+ username: {
+ type: String,
+ required: true,
+ unique: true,
+ minlength: 4,
+ maxlength: 20,
+ },
 });
 ```
 
@@ -307,16 +307,16 @@ For example:
 
 ```js
 const userSchema = new Schema({
-   phone: {
-      type: String,
-      validate: {
-         validator: function (validate) {
-            return /\d{3}-\d{3}-\d{4}/.test(validate);
-         },
-         message: (props) => `${props.value} is not a valid phone number!`,
-      },
-      required: [true, 'User phone number required'],
-   },
+ phone: {
+ type: String,
+ validate: {
+ validator: function (validate) {
+ return /\d{3}-\d{3}-\d{4}/.test(validate);
+ },
+ message: (props) => `${props.value} is not a valid phone number!`,
+ },
+ required: [true, 'User phone number required'],
+ },
 });
 ```
 
@@ -346,17 +346,17 @@ Here is an example:
 
 ```js
 toy.save((err) => {
-   assert.equal(err.errors.color.message, 'Color');
-   assert.equal(err.errors.color.kind, 'Invalid color');
-   assert.equal(err.errors.color.path, 'color');
-   assert.equal(err.errors.color.value, 'Green');
-   ...
+ assert.equal(err.errors.color.message, 'Color');
+ assert.equal(err.errors.color.kind, 'Invalid color');
+ assert.equal(err.errors.color.path, 'color');
+ assert.equal(err.errors.color.value, 'Green');
+ ...
 });
 ```
 
 The **message** property will return an error message.
 
-The **kind** property will return the type of the error.
+The **kind** property will return the error type.
 
 The **path** property will return the track of the failed validation property.
 
@@ -386,3 +386,4 @@ More info about **express-validator** and **mongoose** you can find on:
 - [mongoose](https://mongoosejs.com/docs/validation.html)
 
 [/slide]
+

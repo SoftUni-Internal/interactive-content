@@ -2,11 +2,12 @@
 
 [slide hideTitle]
 # Lesson Content
+
 ## In this lesson you will learn:
 
 **1. What is Validation**
 
-- Validating Data
+- How validating data prevents errors
 
 - Sanitizing and validating data with **express-validator**
 
@@ -14,10 +15,8 @@
 
 **2. What is Error Handling**
 
--  How to handle different types of errors
+- How to handle different types of errors
 
-- **try-catch**
-
-- **then-catch**
+- Overview and use of the **try-catch**, and **then-catch** blocks
 
 [/slide]
