@@ -45,9 +45,9 @@ Use square bracket notation to match specific characters:
 
 - `[nvj]+` - matches any character that is either **n**, **v** or **j**.
 
-**Example:** "**n**ode.**j**s **v**0.12.2" matches "njv"
+**Example:** 
 
-[image assetsSrc="js-fundamentals2-regex-2.png" /]
+"**n**ode.**j**s **v**0.12.2" matches "njv"
 
 - Use the **caret** sign `^` to exclude from the search as in the example below:
 
