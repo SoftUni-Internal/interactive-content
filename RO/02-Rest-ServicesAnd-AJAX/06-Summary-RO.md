@@ -1,17 +1,17 @@
 [slide hideTitle]
-# Summary
+# Rezumat
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/JS-Applications-REST-Services-And-AJAX-39-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/RO/JS-Applications-REST-Services-And-AJAX-39-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## In this lesson you learned:
+## În această lecție ai învățat:
 
--  HTTP - a **text-based client-server protocol** used for transferring Web resources
+- HTTP - un **protocol client-server bazat pe text** utilizat pentru transferul resurselor Web
 
--  REST - an architecture style for **client-server communication**
+- REST - un stil arhitectural pentru **comunicarea client-server**
 
-   *  based on **request-response**
+   * bazat pe **cerere-răspuns**
 
--  **HTTP requests:**
+- **Solicitari HTTP:**
 
    * GET
 
@@ -68,9 +68,9 @@
    token: example
    ```
 
--  **RESTful** services provide **CRUD** operations over HTTP
+-  **RESTful** serviciile furnizează operațiuni **CRUD** prin HTTP
 
--  **AJAX** allows us to load dynamic content in the background
+-  **AJAX** ne permite să încărcăm conținut dinamic în fundal
 
    *  **XMLHttpRequest**
 
@@ -91,14 +91,14 @@
       .catch((err) => {});
    ```
 
-## In the next lesson you will learn:
+## În lecția următoare veți învăța:
 
-- Asynchronous Programming and Promises
+- Programare și promisiuni asincrone
 
-   * What **Asynchronous Programming** is
+   * Ce este **Programarea asincronă**
 
-   * Deep dive into **Promises**
+   * Scufundare profundă în **Promise**
 
-   * `async` and `await`
+   * `async` și `await`
 
 [/slide]
