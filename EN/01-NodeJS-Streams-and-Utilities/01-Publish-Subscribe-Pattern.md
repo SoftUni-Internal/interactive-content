@@ -4,13 +4,13 @@
 
 # What is Pub/Sub?
 
-It is an architectural design pattern used to communicate messages between different system components without them knowing anything about each other's identity.
+The Publish-Subscribe pattern is an architectural design pattern used to exchange messages between different system components without them knowing about each other's identity.
 
-Senders or also called publishers, do not program the messages that are sent directly to specific receivers (subscribers).
+Senders or also called publishers, do not program the messages to be sent directly to specific receivers (subscribers).
 
-Subscribers express interest in one or more events and only receive messages that are of interest.
+The subscribers choose the events they want to subscribe to and receive messages only from them.
 
-There is an intermediary called a "**message broker**" or "**Event Bus**".
+There is an intermediary called a "**message broker**" or an "**Event Bus**".
 
 The "**event bus**" receives messages from the "**Publisher**" and then sends them to the "**Subscriber**".
 
@@ -22,23 +22,21 @@ The "**event bus**" receives messages from the "**Publisher**" and then sends th
 
 # Demo: Publisher-Subscriber Pattern - add demo
 
-The first thing we are going to do is to declare a local variable inside the function to store subscribed callbacks like so, `const subscribers = {}`.
+First, we will declare a local variable inside the function to store subscribed callbacks like so: `const subscribers = {}`.
 
-Next, we will define the **subscribe** method, which will be, responsible for inserting callbacks to subscribers.
+Next, we will define the `subscribe` method, which will be responsible for inserting callbacks in the `subscribers` object.
 
-it checks to see if the "**eventName**" property in the subscriber's storage is already an array. 
+It checks if the "**eventName**" property in the subscriber's storage is already an array. 
 
-If it is not, it assumes that this will be the first registered callback for `subscribers[eventName]` and initializes it into an array. 
+If it is not, it assumes that this will be the first registered callback for `subscribers[eventName]` and initializes as an array. 
 
 Then, it proceeds to push the callback into the array.
 
-In a real application, we might have many memory leaks if we subscribe to many callbacks.
+In a real application, we might have memory leaks if we subscribe to many callbacks.
 
-This means that we will have to face some consequences if we do nothing about that.
+We need to remove the subscribed callbacks when they are no longer necessary. 
 
-So we need to remove the subscribed callbacks when they are no longer necessary. 
-
-The most convenient place to implement this is the return value from the subscribe function.
+The best place to implement this is the return value of the subscribe function.
 
 ```js
 function pubSub() {
@@ -77,20 +75,20 @@ function pubSub() {
 
 # Advantages
 
-The **Pub/Sub** Pattern makes our code more flexible because publishers and subscribers are decoupled and work independently from each other.
+The **Pub/Sub** pattern makes our code more flexible because publishers and subscribers are decoupled and work independently from each other.
 
-This allows for better scalability because if we want to reuse functionality or to have lots of events, subscribers, publishers, it can be easily done by using the **Pub/Sub** Pattern.
+This allows for better scalability because it is easy to reuse functionality or manage lots of events, subscribers, publishers.
 
-**Pub/Sub** Pattern eliminates the need to check for fresh data over a given interval by periodically making API requests to a server ("**polling**"),  which makes our program run faster.
+This pattern eliminates the need to check for new data over a given interval by periodically making API requests to a server ("**polling**"),  which makes our program run faster.
 
-It reduces complexity by removing all the point-to-point connections with a single connection to a message point, which will manage subscriptions to decide what messages should be delivered to which endpoints.
+It reduces complexity by replacing all the point-to-point connections with a single connection, which will manage subscriptions and decide which messages should be delivered to which endpoints.
 
-**Pub/Sub** Pattern has some disadvantages as well like:
+The **Pub/Sub** pattern has its disadvantages:
 
 - Makes the code more abstract
 - Makes code harder for debugging 
 
-As a rule of thumb, you should not use any pattern unless you need to.
+Before using a certain design pattern, make sure you are aware of the drawbacks.
 
 [/slide]
 
