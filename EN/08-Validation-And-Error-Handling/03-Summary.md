@@ -6,17 +6,19 @@
 
 -  What is validation?
 
-   - **Preventing** the user to enter **incorrect** data.
+   - **preventing** incorrect information from reaching the database
+
+   - done by notifiying the **user** for improperly formatted data 
 
    - **express-validator**:
 
-      - **Validating** data
+      - **validating** data
 
       ```js
       body('email').isEmail()
       ```
 
-      - **Sanitizing** data
+      - **sanitizing** data
 
       ```js
       body('email').isEmail().normalizeEmail();
@@ -35,11 +37,11 @@
 
    - Types of errors:
 
-      - **Technical** errors
+      - **technical** errors
 
-      - **Expected** errors
+      - **expected** errors
 
-      - **Bugs**
+      - **bugs**, also known as logical errors
 
    -  Ways to handle errors:
 
@@ -68,10 +70,10 @@
 
 -  Deployment:
 
-   -  Set up
+   *  how to set up Heroku
 
-   -  App preparation
+   *  creating a Git repository and a database
 
-   -  Deployment
+   *  deploying a live version of your project
 
 [/slide]

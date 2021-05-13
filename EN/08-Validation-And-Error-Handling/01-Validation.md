@@ -69,7 +69,7 @@ And here is an example on the **client-side**:
 ```js
 <script type="text/javascript" src="validator.min.js"></script>
 <script type="text/javascript">
- validator.isEmail($('#email').val());
+  validator.isEmail($('#email').val());
 </script>
 ```
 
@@ -100,7 +100,7 @@ check('password').isLength({ min: 5 });
 const errors = validationResult(req);
 
 if (!errors.isEmpty()) {
- console.error('Request Failed')
+  console.error('Request Failed')
 }
 ```
 
@@ -162,13 +162,13 @@ Let us have a look at this **custom validator**:
 const { body } = require('express-validator');
 
 app.post('/user', body('email').custom(value => {
- return User.findUserByEmail(value)
- .then(user => {
- if(user){
- return Promise.reject('E-mail already in use');
- }
- });
-};
+        return User.findUserByEmail(value)
+          .then(user => {
+            if (user) {
+              return Promise.reject('E-mail already in use');
+            }
+          });
+      };
 ```
 
 In this example, we create a **post** request.
@@ -275,13 +275,13 @@ Here is an example of **Mongoose schema**:
 
 ```js
 const userSchema = new Schema({
- username: {
- type: String,
- required: true,
- unique: true,
- minlength: 4,
- maxlength: 20,
- },
+  username: {
+    type: String,
+    required: true,
+    unique: true,
+    minlength: 4,
+    maxlength: 20,
+  },
 });
 ```
 
@@ -307,16 +307,16 @@ For example:
 
 ```js
 const userSchema = new Schema({
- phone: {
- type: String,
- validate: {
- validator: function (validate) {
- return /\d{3}-\d{3}-\d{4}/.test(validate);
- },
- message: (props) => `${props.value} is not a valid phone number!`,
- },
- required: [true, 'User phone number required'],
- },
+  phone: {
+    type: String,
+    validate: {
+      validator: function (validate) {
+        return /\d{3}-\d{3}-\d{4}/.test(validate);
+      },
+      message: (props) => `${props.value} is not a valid phone number!`,
+    },
+    required: [true, 'User phone number required'],
+  },
 });
 ```
 
@@ -346,11 +346,11 @@ Here is an example:
 
 ```js
 toy.save((err) => {
- assert.equal(err.errors.color.message, 'Color');
- assert.equal(err.errors.color.kind, 'Invalid color');
- assert.equal(err.errors.color.path, 'color');
- assert.equal(err.errors.color.value, 'Green');
- ...
+  assert.equal(err.errors.color.message, 'Color');
+  assert.equal(err.errors.color.kind, 'Invalid color');
+  assert.equal(err.errors.color.path, 'color');
+  assert.equal(err.errors.color.value, 'Green');
+  ...
 });
 ```
 

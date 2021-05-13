@@ -8,23 +8,23 @@ When we have errors in our app, we have to handle them properly.
 
 There are several types of errors:
 
-- **Technical** or **Network** errors:
+- **Technical** or **network** errors:
 
-   - An example of these errors is when the server is down
+ * when the server is down, for example
 
-- **Usual** or **Expected** errors:
+- **Usual** or **expected** errors:
 
-   - They are predictable
+ * they are predictable
 
-   - Example of a **usual** or **expected** error is when a database request fails
+ * a database request failure is predictable - you might be looking for a non-existent resource
 
 - **Bugs** or **Logical** errors:
 
-   - These errors are not predictable because the software does not work as expected
+ * these errors are **not predictable** because the software does not work as expected
 
-   - Example of **bugs** or **logical** error is trying to call a function that does not exist
+ * trying to **call a function that does not exist** is a logical error
 
-   - These errors are our fault, and we should fix them through the development process
+ * these errors are our fault, and we should fix them during the development process
 
 [/slide]
 
@@ -34,7 +34,7 @@ There are several types of errors:
 
 There is a **built-in error** object in **node.js**.
 
-We can be thrown the  **technical** object in case of an error.
+We can be thrown the **technical** object in case of an error.
 
 To catch errors in synchronous code, we need to use **try-catch**.
 
@@ -60,13 +60,13 @@ Here is an example:
 const User = require('../models/User/');
 
 async (req, res, next) => {
-    const { username, password } = req.body;
-    try{
-   const currentUser = await User.findOne({ username });
-      console.log(username)
-    } catch (error) {
-      console.error(error)
-    }
+  const { username, password } = req.body;
+  try {
+    const currentUser = await User.findOne({ username });
+    console.log(username);
+  } catch (error) {
+    console.error(error);
+  }
 };
 ```
 
@@ -88,15 +88,15 @@ Have a look at this example:
 
 ```js
 Post.findById(productId)
-   .then((product) => {
-      console.log(product)
-   })
-   .catch((error) => {
-      if (!error.statusCode) {
-         error.statusCode = 500;
-      }
-      next(error);
-   });
+  .then((product) => {
+    console.log(product)
+  })
+  .catch((error) => {
+    if (!error.statusCode) {
+      error.statusCode = 500;
+    }
+    next(error);
+  });
 ```
 
 In the `then()` statement, we print the **product** in the console.
@@ -129,6 +129,6 @@ For example:
 
 - Every response from the API should have a **specific status code** and **well-described information** about the error
 
-- We can display an error notification
+- Displaying an error notification
 
 [/slide]
