@@ -4,34 +4,18 @@
 
 # What is Templating?
 
-**Templating** is the procedure of separating an **HTML document's structure** from the actual **content**.
+**Templating** is the process of separating an **HTML document's structure** from the actual **content**.
 
 **Templates** enable the **replication of similar content** in a webpage, such as a list of products in an online store, by automatically generating the needed markup.
 
 This clear **distinction** between **logic and data** makes our code much **easier to read and work on**.
 
-This is a pattern in which an object called **subject** maintains a list of dependant objects and notifies them of any state changes, usually through calling one of their methods. 
-
-The **Observer** pattern facilitates good object-oriented design and promotes loose coupling.
-
-## Common Participants
-
-[image assetsSrc="js-application-design-patterns-15.png" /]
-
-- **Subject**: contains collection of observers
-
-It can add or remove observers as needed. 
-
-Implements an interface that allows observed objects to be added or removed - `subscribe()`, `unsubscribe()`. 
-
-Sends notifications to the observers attached to it.
-
-- **Observer**: has an interface that sends updates to objects that need to be notified of a subject's changes of state
-
 This introduces a more **effective** way to build user interfaces and results in **less boilerplate code**.
 
 
 [image assetsSrc="JS-Back-End-ExpressJs-and-Templating-1.png" /]
+
+
 
 
 [/slide]
@@ -44,12 +28,12 @@ The **static** parts of our webpage are stored in the form of **templates**, whi
 
 A **templating engine** is used to **combine the two**.
 
-We will discuss templating engines in a later video.
+We will discuss templating engines later in this lesson.
 
 These are the main **templating concepts**:
 
 - Templates are used to **define the structure** of our website
-    - Isolating **HTML components** from the associated **content**
+    - Isolating **HTML components** from the actual **content**
 
 - Every **templating system** has its **own syntax**
     - Generally very **easy to learn**
@@ -66,13 +50,13 @@ These are the main **templating concepts**:
 
 Examples of actual situations in which templating will be useful are: 
 
-- Display articles in a blog
+- Displaying articles in a blog
 
-- Display a gallery of photos
+- Displaying a gallery of photos
 
-- Visualize user profiles
+- Visualizing user profiles
 
-- Show items in a catalog
+- Showing items in a catalog
 
 [image assetsSrc="JS-Back-End-ExpressJs-and-Templating-2.png" /]
 

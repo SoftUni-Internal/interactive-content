@@ -5,25 +5,22 @@
 
 ## In this lesson you will learn:
 
-**1. Express​**
+**1. Express**
 
-- Introduction​
+- Introduction to Express.js - a backend framework for Node.Js that provides server-side logic
 
-- Router​
-   - how does it work
+- How routing works
 
-- Middleware​
-   - what is a middleware
+- What Middleware is
 
-- Static Files​
-   - how to save and use static files using Express
+- Working with static files in Express.js
    
-**2. View Engines**​
+**2. View Engines**
 
-- Templating Concepts​
-   - we will learn what a template is as a concept
+- Templating Concepts
+   - What templates are and the concept of templating 
 
 - Handlebars
-  - introduction and syntax
+  - Introduction to the Handlebars templating engine
   
 [/slide]

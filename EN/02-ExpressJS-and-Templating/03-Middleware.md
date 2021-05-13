@@ -2,16 +2,11 @@
 
 [slide hideTitle]
 
-# What is a Middleware?
+# What is Middleware?
 
-A **middleware** is a **function** that has access to:
+Middleware allows you to define one or more actions that are executed in order. 
 
-- The **request** object (`req`)
-- The **response** object (`res`)
-
-- The **next middleware function** in an application's **request-response cycle**:
-  - The `next` keyword is most commonly used to designate it;
-  - Utilised to create a **middleware stack**.
+An example of middleware would be a logging function that records some information in the database before a particular resource is accessed or a function that prepares data for use by filtering it in some way.
 
 We use middleware functions to:
 
@@ -22,11 +17,17 @@ We use middleware functions to:
 
 - **End** the **request-response cycle**.
 
+
+A **middleware** is a **function** that has access to:
+
+- The **request** object (`req`)
+- The **response** object (`res`)
+
+
 ## How to load a Middleware
 
-To load **our middleware**, we utilize the `app.use()` method which accepts our function as a parameter.
+To load **middleware**, we utilize the `app.use()` method which accepts a function as a parameter.
 
-Here is a simple example:
 
 ```js
 var express = require("express");
@@ -44,9 +45,10 @@ Then we create a new instance of the **app object**.
 
 We hand over our middleware function to the `app.use()` method.
 
-In the function body we have called the `console.log()` method with a simple string.
+In the function body, we have called the `console.log()` method with a simple string.
 
 We call the **next function**, if such exists in the **middleware stack**, with the help of `next()`.
+
 
 [/slide]
 
@@ -62,7 +64,7 @@ We can also use the `app.METHOD()` function to create **route-specific** middlew
 
 **Router-level** middleware is very similar to the application-level middleware.
 
-One **main difference** is that we **bound it** to an instance of `express.Router()`, instead of `express()`:
+One **main difference** is that we **bind it** to an instance of `express.Router()`, instead of `express()`:
 
 `const router = express.Router()`
 
@@ -83,7 +85,7 @@ router.use((req, res, next) => {
 
 ## Error-handling middleware
 
-**ExpressJS** comes bundled with **error-handling parameters** by **default**.
+**Express.js** comes bundled with **error-handling** by **default**.
 
 We define **error-handling middleware** functions in mostly the same fashion as other middleware functions.
 
@@ -124,7 +126,7 @@ Assuming we have already run `npm install cookie-parser`, our next step is to im
 
 `const cookieParser = require('cookie-parser');`
 
-Then we load the cookie-parsing middleware as follows:
+Then we load the cookie-parsing middleware:
 
 `app.use(cookieParser())`
 
@@ -134,7 +136,7 @@ Then we load the cookie-parsing middleware as follows:
 
 # Custom Middleware
 
-We can create **custom middleware** only for a **specific path**.
+We can create **custom middleware** for **specific paths**.
 
 The `app.use()` and `app.METHOD()` functions can accept a string-formatted **route** alongside the **middleware function** as parameters:
 
@@ -156,7 +158,7 @@ app.get("/post/:postId", (req, res) => {
 });
 ```
 
-In this example, we check if a blog post with a given `postId` exists in a database.
+We check if a blog post with a given `postId` exists in a database.
 
 Depending on that, we either redirect the user to the homepage or show more information about the post.
 
@@ -168,14 +170,14 @@ Depending on that, we either redirect the user to the homepage or show more info
 
 There is a lot of **third-party middleware**, which enables extra features.
 
-The following table showcases some commonly used middleware and their use cases:
+The following table showcases some commonly used middleware.
 
-| **Middleware module** | **Description**                                                                         |
+| **Middleware module** | **Description** |
 | --- | --- |
-| `body-parser`         | Parses the body of an HTTP request.                                                     |
-| `cookie-parser`       |  Parses the header of a cookie. Populates the `cookies` property of the request object. |
-| `errorhandler`        | Enables debugging and error handling in the developer environment.                       |
-| `cors`                | Enables cross-origin resource sharing (CORS).                                           |
-| `serve-static`        | Used to serve static files.                                                             |
+| `body-parser`         | Parses the body of an HTTP request. |
+| `cookie-parser`       | Parses the header of a cookie. Populates the `cookies` property of the request object. |
+| `errorhandler`        | Enables debugging and error handling in the developer environment. |
+| `cors`                | Enables cross-origin resource sharing (CORS). |
+| `serve-static`        | Used for working with static files. |
 
 [/slide]
