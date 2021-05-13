@@ -5,7 +5,8 @@
 # Navigation Bar and Home Page
 
 ## Navigation Bar
-// Video: 04.1: Home page (Navigation bar). 
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/09-JS-Applications-Workshop/EN/CarTube-04-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The navigation links should change the current page (view). 
 
@@ -33,7 +34,7 @@ All users should be welcomed by the **Home page**, from where they can go to the
 
 ## Login Page
 
-// Video: 04.2: Login + Register pages 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/09-JS-Applications-Workshop/EN/CarTube-04-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **included REST** service comes with the following premade user accounts, which you may use for development: 
 
@@ -125,7 +126,7 @@ If the logout was successful, **redirect** the user to the **Home** page.
 [slide hideTitle]
 # All Listings Page
 
-// Video: 05.1: All-listings (Catalog) page 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/09-JS-Applications-Workshop/EN/CarTube-05-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This page displays all listings in the system. 
 
@@ -152,7 +153,7 @@ The service will return an array of listings.
 [slide hideTitle]
 # Details
 
-// Video: 05.2: Tests + Details page (including delete functionality); 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/09-JS-Applications-Workshop/EN/CarTube-05-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /] // TODO::::
 
 All users should be able to **view details** about listings. 
 

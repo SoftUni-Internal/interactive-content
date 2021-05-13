@@ -3,7 +3,9 @@
 [slide hideTitle]
 # Initial Application Setup
 
-// Video: 01: Initial application setup, api.js set up + utility.js set up. 
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/09-JS-Applications-Workshop/EN/CarTube-01-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [/slide]
 
 
@@ -17,5 +19,6 @@
 [slide hideTitle]
 # Routing and Decorate Context
 
-// Video: 03: Routing set up. Creating decorateContest middleware. 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/09-JS-Applications-Workshop/EN/CarTube - 03-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [/slide]
