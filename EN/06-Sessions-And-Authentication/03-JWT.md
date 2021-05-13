@@ -116,6 +116,14 @@ console.log(token);
 // eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FycnkiLCJhZ2UiOjI3LCJpYXQiOjE2MDk4ODc5NzMsImV4cCI6MTYxMDA2MDc3M30.AIuFu04O39uokaGwfxy7iWzjr9vnsI00gqxXJ-peT8Y
 ```
 
+The `sign` method accepts the payload, along with the key, and an **options** object.
+
+This object can contain multiple properties, including:
+
+- `algorithm` - the default value is `HS256`
+- `expiresIn` - can be equal to a number in seconds (like 120, for 2 minutes), or a timespan string - '10 h', '5 days', '10d'
+- `mutatePayload` - a boolean that, if equal to true, enables direct modification of the payload by the `sign` method
+
 The **JWT** signing process is **reversible**.
 
 Decoding the token is performed as follows:
@@ -128,6 +136,8 @@ const decodedToken = jwt.verify(token, "signing secret"); // decode with the ini
 
 console.log(decodedToken); // {name: 'Garry', age: 27, iat: 1609887973, exp: 1610060773}
 ```
+
+The `verify` method accepts the token, along with a secret or public key, and returns the payload decoded.
 
 You can learn more information about **JWT** on the official [website](https://jwt.io/).
 
