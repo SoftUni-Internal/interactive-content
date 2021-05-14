@@ -44,7 +44,7 @@ The method returns an array with all the file names or objects in the directory.
 
 Use the options argument to change the format in which the files are returned from the method.
 
-The method accepts two arguments:
+The method accepts three arguments:
 
 - The **path** to the file we are reading from
 
@@ -85,13 +85,11 @@ You can create a directory with the `mkdir()` or `mkdirSync()` methods.
 
 ```js
 // Synchronous
-
 fs.mkdirSync('./myDir');
 ```
 
 ```js
 // Asynchronous
-
 let fs = require('fs');
 fs.mkdir('./myDir', err => {
     if (err) {
@@ -135,7 +133,7 @@ When writing data to a file, we need to specify the path to the file first.
 
 After that, we can use synchronous or asynchronous methods to write the data to the file.
 
-Use the `writeFileSync()` or `writeFile()` methods.
+Use `writeFileSync()` or `writeFile()` based on what you need.
 
 The following example shows how to use the **asynchronous** method:
 
