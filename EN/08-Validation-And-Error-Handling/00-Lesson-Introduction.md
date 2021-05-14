@@ -5,7 +5,7 @@
 
 ## In this lesson you will learn:
 
-**1. What is Validation**
+**1. What Validation is**
 
 - How validating data prevents errors
 
@@ -13,7 +13,7 @@
 
 - Mongoose validation
 
-**2. What is Error Handling**
+**2. What Error Handling is**
 
 - How to handle different types of errors
 
