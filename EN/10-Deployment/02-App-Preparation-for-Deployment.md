@@ -8,9 +8,9 @@
 
 To **initialize a Git repository**, open a command\-line window in your **root project directory** and type `git init`.
 
-It is recommended to exclude **non-essential files and directories** that **take up space** from being committed to our repository.
+It is advisable to exclude **non-essential files and directories** that **take up space** from being committed to our repository.
 
-Create a file, called `.gitignore` and paste the following code inside:
+Create a file called `.gitignore` and paste the following code inside:
 
 ```
 node_modules
@@ -49,7 +49,7 @@ git push -u origin main
 
 To **deploy your application**, Heroku needs a version of your repository on a special Heroku\-hosted **remote server**.
 
-To create a **new empty application on Heroku**, along with an associated empty Git repository, use `heroku create name-of-your-app`.
+To create a **new empty application on Heroku**, along with a linked Git repository, use `heroku create name-of-your-app`.
 
 Your app name has to be **unique**.
 
@@ -71,11 +71,11 @@ You can visit your newly created app by simply typing `heroku open` or visiting 
 
 Heroku uses a **Procfile** to ensure your application is running **as intended**.
 
-It holds **commands**, which will be **executed** by the application on **startup**.
+It holds **commands**, which will be **executed**  when bootstrapping the application.
 
 In your app's **root directory**, create a new file and name it `Procfile`, with a capital 'P'.
 
-Inside, we need to **specify** the **command** needed to run the `web` process we created earlier.
+Inside, we need to **specify** the **command** necessary to run the `web` process we created earlier.
 
 If you have created a `start` script in `package.json`, paste the following code inside the `Procfile`:
 
@@ -98,7 +98,7 @@ If you are using Express, go to your server file and make sure your server is go
 app.listen(process.env.PORT);
 ```
 
-`process.env.PORT` is the variable Heroku is going to assign a **port number** to.
+`process.env.PORT` is the variable Heroku will assign a **port number** to.
 
 You can make sure your application **still runs locally** by using an `if` statement, as follows:
 
@@ -106,7 +106,7 @@ You can make sure your application **still runs locally** by using an `if` state
 let port = process.env.PORT;
 
 if (port == null || port == '') {
-  port = 5000;
+ port = 5000;
 }
 
 app.listen(port);
@@ -125,3 +125,4 @@ Assuming your application uses **MongoDB** or a **similar non-relational databas
 Another popular solution is **Heroku Postgres**, which you can learn more about [here](https://devcenter.heroku.com/articles/heroku-postgresql).
 
 [/slide]
+

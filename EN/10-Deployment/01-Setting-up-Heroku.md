@@ -63,8 +63,7 @@ If you are using a **different Linux distribution**, [go to Git's website](https
 
 Through the Heroku Command Line Interface, we can **manage** our applications, **run** them locally, as well as **deploy** them.
 
-You can **download** Heroku CLI [here](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
-).
+You can **download** Heroku CLI [here](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up).
 
 Choose the installer for your operating system and follow the setup process.
 
