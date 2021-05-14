@@ -4,7 +4,7 @@
 
 # Baze de Date Relaționale
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-3-relational-databases-FIX-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-apps-remote-dbs-3-relational-databases-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Bazele de date relaționale** mențin datele în **tabele**, furnizând un mod **eficient și flexibil** de a stoca și accesa informație structurată. 
 
@@ -24,7 +24,7 @@ Conexiunea logică dintre diferite tabele este stabilită prin intermediul **che
 
 # Baze de Date Nerelaționale
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-4-non-relational-databases-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-apps-remote-dbs-4-non-relational-databases-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Principala diferență între bazele de date **relaționale** și cele **nerelaționale** este modul în care acestea **stochează informația.**
 
@@ -46,7 +46,7 @@ Bazele de date **nerelaționale** sunt ideale pentru a stoca informații care vo
 
 # Avantajele Bazelor de Date Relaționale și Nerelaționale 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-5-relational-and-non-relational-pros-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-apps-remote-dbs-5-relational-and-non-relational-pros-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Avantajele Bazelor de Date Relaționale:**
 - Datele sunt structurate pe categorii
@@ -90,7 +90,7 @@ Multe întreprinderi web-based necesită servicii de date care sunt disponibile 
 
 # Ce este BaaS?
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-6-backend-as-a-service-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-apps-remote-dbs-6-backend-as-a-service-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Backend-as-a-Service** sau **BaaS** este un model de serviciu cloud în care programatorii externalizează toate aspectele behind-the-scenes ale unei aplicații web sau mobile, astfel încât ei trebuie doar să scrie și să mențină partea de front-end. 
 

@@ -4,7 +4,7 @@
 
 # Ce este Firebase?
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-7-8-what-is-a-firebase-FIX-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-apps-remote-dbs-7-8-what-is-a-firebase-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 **Firebase** este un set de instrumente folosite pentru construirea, îmbunătățirea și dezvoltarea aplicației.
@@ -89,7 +89,7 @@ Copiați **URL-ul bazei de date** pentru a o putea folosi în **Postman** pentru
 
 # Operații CRUD Firebase REST API: Partea 1
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-9-10-firebase-rest-api-crud-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-apps-remote-dbs-9-10-firebase-rest-api-crud-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **CRUD** este un acronim pentru **Create**, **Read**, **Update** și **Delete**.
 
@@ -107,7 +107,7 @@ Acestea sunt cele patru **operații** utilizate pentru **stocarea datelor**.
 
 # Operații CRUD Firebase REST API: Partea 2
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-11-accessing-firebase-rest-api-with-postman-FIX-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-apps-remote-dbs-11-accessing-firebase-rest-api-with-postman-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Preluarea Tuturor Cărților
 
@@ -357,7 +357,7 @@ Răspunsul de la server va fi **200 OK** și va returna **null**.
 
 # Autentificare vs. Autorizare
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-apps-remote-dbs-12-authentication-vs-authorization-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-apps-remote-dbs-12-authentication-vs-authorization-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Autentificarea** reprezintă validarea unor informații precum numele utilizatorului, ID și parolă, pentru verificarea identității.
 

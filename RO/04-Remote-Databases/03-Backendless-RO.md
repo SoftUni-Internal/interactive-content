@@ -2,7 +2,7 @@
 
 # Prezentare Generală a Backendless
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Apps-Backendless-Overview-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-Apps-Backendless-Overview-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Backendless** este o platformă mobilă Backend-as-a-Service (**mBaaS**).
 
@@ -24,7 +24,7 @@ Pentru a vedea Documentația Backendless **REST API**, dați click [aici](https:
 
 # Operații User Auth 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Apps-Backendless-User-Auth-Operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-Apps-Backendless-User-Auth-Operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a implementa **autentificarea** în Backendless, vizitați [User Registration Documentation](https://backendless.com/docs/rest/users_user_registration.html).
 
@@ -89,7 +89,7 @@ Corpul **răspunsului** va arăta așa:
 
 # Lucrul cu Database API
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Apps-Backendless-Working-with-the-Database-API-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-Apps-Backendless-Working-with-the-Database-API-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Database API** este folosit pentru crearea, modificarea și eliminarea **obiectelor**.
 
