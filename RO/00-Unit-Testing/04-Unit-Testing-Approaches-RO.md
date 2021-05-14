@@ -20,7 +20,7 @@ Prima abordare a codului este destul de populară și larg utilizată.
 [slide hideTitle]
 # Dezvoltarea Test-Driven
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/RO/interactive-js-apps-unit-testing-20-test-driven-development-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/RO/interactive-js-apps-unit-testing-20-test-driven-development-example-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cu abordarea **Test-First**, de asemenea cunoscută ca si **Test-Driven Development**, scriem testele **înainte de** codul actual. 
 
@@ -46,7 +46,7 @@ Continuăm să reluăm testele pentru a ne asigura că codul funcționează core
 [slide hideTitle]
 # De ce TDD Este o Abordare mai Bună?
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/RO/interactive-js-apps-unit-testing-21-why-test-driven-development-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/RO/interactive-js-apps-unit-testing-21-why-test-driven-development-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - **TDD** (Test Driven Development) ne ajută să găsim **probleme** într-o etapă **timpurie** a proiectului și să evităm să trebuiască să refacem părți din codul nostru
 

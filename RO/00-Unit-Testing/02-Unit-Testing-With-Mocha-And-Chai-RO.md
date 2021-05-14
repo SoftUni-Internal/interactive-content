@@ -4,7 +4,7 @@
 
 # Ce sunt Mocha și Chai?
 
-//Video: interactive-js-apps-unit-testing-8-9-10-mocha-and-chai-
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/01.JS-Applications-Unit-Testing/RO/interactive-js-apps-unit-testing-8-9-10-mocha-and-chai-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 ## Mocha
