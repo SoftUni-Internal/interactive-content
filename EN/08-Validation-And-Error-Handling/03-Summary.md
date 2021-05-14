@@ -5,8 +5,8 @@
 ## In this lesson you learned:
 
 -  What validation is
-  * **preventing** incorrect information from reaching the database
-  * done by notifiying the **user** for improperly formatted data 
+   * **preventing** incorrect information from reaching the database
+   * done by notifiying the **user** for improperly formatted data 
 
 - **express-validator** can validate and sanitize data
 
