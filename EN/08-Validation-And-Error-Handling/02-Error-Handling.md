@@ -125,9 +125,11 @@ After that, we pass the **error** to the `next()` middleware.
 **Error handling** is important for a number of reasons:
 
 - It makes our application more user-friendly, as we can format the error in a proper way
-  * we can also make it easier for the user to contact a help center
+  * we can also make it easier for the user to contact a help center when a problem occurs
 
-- 
+- Developers benefit from code that is easier to debug and maintain
+
+- It ensures that our application will **continue to run**, without fatal crashes
 
 
 There are several things that we can do to improve the **user experience** in moments like this:
