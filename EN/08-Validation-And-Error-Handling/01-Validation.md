@@ -12,7 +12,7 @@ If the user enters **correct** data, we will store it in the database.
 
 But if it is **incorrect**, we need to return an appropriate message.
 
-In **web development**, data validation is performed by taking user input, usually from a form, and then comparing a valid model, or schema.
+In **web development**, data validation is performed by taking user input, usually from a form, and then comparing it to a valid model, or schema.
 
 [/slide]
 
