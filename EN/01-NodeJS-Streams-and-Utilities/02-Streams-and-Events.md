@@ -10,7 +10,7 @@ A stream is a collection of data that is not available at once and may come cont
 
 There are many stream objects provided by Node.js, for instance, a request to an HTTP server is a stream instance.
 
-There are four main types of stream objects:
+These are the four main types of streams:
 
 - **Readable** - can only **read** data
 
@@ -30,7 +30,7 @@ Like all Duplex streams, Transform streams implement both the Readable and Writa
 
 A readable stream is a type of stream that reads a file or data, often very large, and breaks it into small pieces (chunks). 
 
-They allow working sequentially with the data without overloading RAM.
+They allow working sequentially with the data without overloading the RAM.
 
 Readable streams have the following **methods**:
 
@@ -46,7 +46,7 @@ If no data exist in the buffer, then **null** is returned.
 readable.read(size);
 ```
 
-- `.pause()` -stops the flowing mode from emitting data events
+- `.pause()` - stops the flowing mode from emitting data events
 
 Any data that becomes accessible will continue to exist in the internal buffer.
 
@@ -84,7 +84,7 @@ The most important events on a readable stream are:
 
 An HTTP request is an instance of the readable stream.
 
-To create a server, you need to require the "HTTP" module from Node.js.
+To create a server and make a request, you need to require the "HTTP" module from Node.js.
 
 Then, use the `createServer()` method to create a server on your computer.
 
@@ -125,7 +125,7 @@ It has the following **methods**:
 
 - `.write()` - writes data to the stream
 
-The **chunk** is a buffer unless we configure the stream differently.
+The **chunk** argument is a buffer unless we configure the stream differently.
 
 We need the encoding argument for different configurations, but usually, we can ignore it.
 
