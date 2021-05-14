@@ -5,11 +5,8 @@
 ## In this lesson you learned:
 
 -  What validation is
-
   * **preventing** incorrect information from reaching the database
-
   * done by notifiying the **user** for improperly formatted data 
-
 
 - **express-validator** can validate and sanitize data
 
@@ -32,16 +29,12 @@ schema.post('save', () => {});
 ```
 
 - There are three main types of errors
-
   * **technical** errors - occur as a result of equipment problems
-
   * **expected** errors
-
   * **bugs**, also known as logical errors
 
 
 -  Ways to **handle** errors:
-
   * using a `try-catch` block:
 
   ```js
@@ -51,7 +44,6 @@ schema.post('save', () => {});
      console.error(error);
   }
   ```
-
   * for **asynchronous** operations, use `then().catch()`:
 
   ```js
