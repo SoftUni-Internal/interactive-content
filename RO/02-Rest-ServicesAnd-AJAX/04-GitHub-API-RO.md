@@ -40,7 +40,7 @@ Pentru a testa **GitHub's API**, trebuie să folosim **Postman**.
 
 # GitHub: Numărul Etichetelor: Exemplu
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/RO/JS-Applications-REST-Services-And-AJAX-20-github-labels-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/RO/JS-Applications-REST-Services-And-AJAX-20-21-github-labels-api-getting-labels-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În acest exemplu, trebuie să obținem o anumită problemă.
 
