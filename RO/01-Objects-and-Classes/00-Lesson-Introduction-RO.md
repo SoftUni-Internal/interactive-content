@@ -24,6 +24,5 @@
 
 - **3. Clase încorporate în Java**
 
-- Prezentare generală a unor clase Java Built-in
 
 [/slide]
