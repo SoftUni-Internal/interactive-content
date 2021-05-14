@@ -40,7 +40,7 @@ But we need to make sure that the database is also validated, since this is the 
 
 In most database engines, there is **built-in validation**, which can be easily enabled.
 
-Database validation is **not required** because there should be no situation where the data can be invalid.
+Database validation is the last resort for catching invalid data, and it strongly recommended.
 
 [/slide]
 
