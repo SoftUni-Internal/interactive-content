@@ -371,7 +371,7 @@ Acest lucru vă oferă **acces complet** la resurse precum informații, fișiere
 
 # Problemă cu Soluție: All Books
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-All-Books-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-Applications-Remote-Database-Firebase-All-Books-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a **prelua toate** cărțile, trebuie să utilizați **URL-ul bazei de date** pe care l-ați primit atunci când ați creat baza de date, urmat de numele **entității**, în acest caz "**books**", și extensia "**.json**" la final.
 
@@ -385,7 +385,7 @@ Metoda este "**GET**":
 
 # Problemă cu Soluție: Get a Book
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-Get-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-Applications-Remote-Database-Firebase-Get-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a prelua o **carte specifică**, alegeți metoda "**GET**" în Postman și folosiți următorul **URL**:
 
@@ -399,7 +399,7 @@ Pentru a prelua o **carte specifică**, alegeți metoda "**GET**" în Postman ș
 
 # Problemă cu Soluție: Create Books
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-Create-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-Applications-Remote-Database-Firebase-Create-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a crea o carte, vom trimite o solicitare "**POST**", iar corpul JSON trebuie să respecte următorul format:
 
@@ -426,7 +426,7 @@ Putem să facem acest lucru **direct** cu ajutorul interfeței bazei de date.
 
 # Problemă cu Soulție: Patch Book
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-Patch-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-Applications-Remote-Database-Firebase-Patch-Book-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Comanda HTTP "**PATCH**" modifică o resursă HTTP existentă.
 
@@ -451,7 +451,7 @@ Corpul JSON trebuie să respecte următorul format:
 
 # Problemă cu Soluție: Change Book Author
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/EN/JS-Applications-Remote-Database-Firebase-Change-Book-Author-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/05.JS-Applications-Remote-Databases/RO/JS-Applications-Remote-Database-Firebase-Change-Book-Author-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Următoarea sarcină este executarea comenzii "**PUT**". 
 
