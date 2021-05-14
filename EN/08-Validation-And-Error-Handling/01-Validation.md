@@ -1,4 +1,4 @@
-# Different Type of Errors
+# Different Types of Errors
 
 [slide hideTitle]
 
