@@ -10,21 +10,21 @@ There are several types of errors:
 
 - **Technical** or **network** errors:
 
- * when the server is down, for example
+  * when the server is down, for example
 
 - **Usual** or **expected** errors:
 
- * they are predictable
+  * they are predictable
 
- * a database request failure is predictable - you might be looking for a non-existent resource
+  * a database request failure is predictable - you might be looking for a non-existent resource
 
 - **Bugs**, also known as **logical** errors:
 
- * these errors are **not predictable** because the software does not work as expected
+  * these errors are **not predictable** because the software does not work as expected
 
- * trying to **call a function that does not exist** is a logical error
+  * trying to **call a function that does not exist** is a logical error
 
- * these errors are our fault, and we should fix them during the development process
+  * these errors are our fault, and we should fix them during the development process
 
 [/slide]
 
