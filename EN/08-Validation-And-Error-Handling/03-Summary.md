@@ -34,8 +34,7 @@ schema.post('save', () => {});
   * **bugs**, also known as logical errors
 
 
--  Ways to **handle** errors:
-  * using a `try-catch` block:
+- We can handle errors using a `try-catch` block
 
   ```js
   try {
@@ -44,7 +43,8 @@ schema.post('save', () => {});
      console.error(error);
   }
   ```
-  * for **asynchronous** operations, use `then().catch()`:
+
+- For **asynchronous** operations, use `then().catch()`
 
   ```js
   .then((example) => {
