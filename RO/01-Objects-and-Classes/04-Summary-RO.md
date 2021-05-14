@@ -5,7 +5,7 @@
 
 ## În această lecție ați învățat:
 
-- Clasele definesc următoarele șabloane pentru obiecte
+- Clasele definesc următoarele șabloane pentru crearea obiectelor
      - câmpuri
      - constructori
      - proprietăți
@@ -19,7 +19,7 @@ LocalDate.of(2018, 5, 5);
 System.out.println(birthday);
 ```
 
-- Instanța unei clase
+- Crearea unei clase
 
 ``` java
 	class Car {
@@ -38,13 +38,13 @@ System.out.println(birthday);
 Car bmw = new Car();
 ```
 
-## În lecția următoare, veți învăța:
+## În lecția următoare veți învăța:
 
 - Ce este un șir
 
 - Manipularea șirurilor
 
-- Construirea și Modificarea Șirurilor
+- Construirea și modificarea Șirurilor
     - folosind clasa `StringBuilder`
     - de ce concatenarea este o operație lentă
    
