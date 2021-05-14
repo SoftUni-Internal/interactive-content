@@ -4,7 +4,7 @@
 
 # Rendering Concepts
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-3-4-UI-Rendering-Rendering-Concepts-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/06-JS-Applications-Client-Side-Rendering/EN/JS-App-Client-Side-Rendering-3-4-UI-Rendering-Rendering-Concepts-FIX-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The process of **generating content dynamically** is called **rendering**.
 
