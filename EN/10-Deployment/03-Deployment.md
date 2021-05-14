@@ -26,7 +26,7 @@ A **text area** will appear in the **Connect to Github** section.
 
 Type the **name** of your repository and press `Search`.
 
-Once your repository is found, click `Connect`.
+Once your repository has been located, click `Connect`.
 
 [/slide]
 
