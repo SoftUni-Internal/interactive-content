@@ -7,20 +7,18 @@
 [task-description]
 
 ## Descriere
-Creați o clasă articol cu următoarele proprietăți:
+Creați o clasă numită **Article** cu următoarele proprietăți:
 - Title - un șir
 - Content - un șir
 - Author - un șir
 
-Clasa ar trebui să aibă un constructor și următoarele metode:
-- **edit** (new content) - schimbați conținutul vechi cu cel nou
-- **changeAuthor** (new author) - schimbați autorul
-- **rename** (new title) - modificați titlul articolului
-- **override ToString** - tipărește articolul în următorul format: 
+Clasa trebuie să aibă un constructor și următoarele metode:
+- **edit** (new content) - schimbă conținutul vechi cu cel nou
+- **changeAuthor** (new author) - schimbă autorul
+- **rename** (new title) - modifică titlul articolului
+- **override ToString** - tipărește informațiile despre articol în următorul format: "\{**title**\} **-** \{**content**\}**:**\{**author**\}"
 
-"\{**title**\} **-** \{**content**\}**:**\{**author**\}"
-
-Scrieți un program care citește un articol în următorul **format** "\{**title**\}, \{**content**\}, \{**author**\}". 
+Scrieți un program care citește un articol în următorul **format**: "\{**title**\}, \{**content**\}, \{**author**\}". 
 
 Pe linia următoare, veți obține un **număr n**.
 
@@ -136,7 +134,16 @@ The haunting of hill house - better content2:  Shirley Jackson
 [task-description]
 
 ## Descriere
-Folosind **clasa Person**, scrieți un program care citește de pe consolă **N linii de informații personale** și apoi **imprimă toate persoanele** a căror **vârstă este mai mare de 30 de ani** în următorul **format**:
+
+Creați o clasă numit **Person** are are următoarele proprietăți:
+- name
+- age
+
+Pe prima linie veți primi un număr N, care reprezintă numărul de persoane.
+
+Pe următoarele N linii, veți primi informații despre acele persoane.
+
+**Imprimați informațiile despre persoanele** a căror **vârstă este mai mare de 30 de ani**, în următorul **format**:
 
 "\{**name**\} **-** \{**age**\}"
 
@@ -341,13 +348,13 @@ Anntoanette - 39
 [task-description]
 
 ## Descriere
-Schimbați programul "**Articles**", astfel încât să puteți stoca o **listă de articole**.
+Actualizați programul "**Articles**", astfel încât să poată stoca o **listă de articole**.
 
-Nu veți mai avea nevoie de metode (**cu excepția** metodei toString).
+Veți avea nevoie doar de metoda **toString**.
 
-Pe **prima linie**, veți primi un **număr n**.
+Pe **prima linie** veți primi un **număr n**.
 
-Pe următoarele **n linii**, veți primi câteva **articole în același format ca sarcina anterioară** ("\{**title**\}, \{**content**\}, \{**author**\}").
+Pe următoarele **n linii**, veți primi câteva **articole în formatul**: ("\{**title**\}, \{**content**\}, \{**author**\}").
 
 În cele din urmă, veți primi unul dintre cele **trei criterii**: "**title**", "**content**", "**author**".
 
