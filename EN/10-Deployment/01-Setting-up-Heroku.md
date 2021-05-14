@@ -20,11 +20,11 @@ In case your command goes **unrecognized**, proceed to the following steps.
 
 To install Git on **Windows**, [click here](https://git-scm.com/download/win).
 
-Choose the Git to build for your version of Windows (**32-bit** or **64-bit**), and **download** it.
+Choose the Git to build for your Windows version (**32-bit** or **64-bit**), and **download** it.
 
 Then, **open the installation file** and go through the **setup process**.
 
-Alternatively, you can [install GitHub Desktop](https://desktop.github.com/), which comes **bundled with Git** and also helps **manage** your GitHub repositories.
+Alternatively, you can [install GitHub Desktop](https://desktop.github.com/), which comes **bundled with Git** in addition to helping you **manage** your GitHub repositories.
 
 ## Installing on macOS
 
@@ -50,20 +50,20 @@ For **RPM-based distributions**, such as **Fedora**, use `dnf`:
 
 `sudo dnf install git-all`
 
-In case you are using a **different Linux distribution**, [go to Git's website](https://git-scm.com/download/linux).
+If you are using a **different Linux distribution**, [go to Git's website](https://git-scm.com/download/linux).
 
 [/slide]
 
 
 [slide hideTitle]
 
-#  Set up: Installing Heroku
+# Set up: Installing Heroku
 
 **Heroku** is one of the most popular **platform-as-a-service (PaaS)** solutions.
 
-The Heroku Command Line Interface is used to **manage** your applications, **run** them locally, as well as **deploy** them.
+Through the Heroku Command Line Interface, we can **manage** our applications, **run** them locally, as well as **deploy** them.
 
-You can **download** Heroku [here](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
+You can **download** Heroku CLI [here](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
 ).
 
 Choose the installer for your operating system and follow the setup process.
@@ -76,8 +76,8 @@ This command will open a **login page** in your default browser.
 
 If you **do not have** a Heroku account, click on `Sign up`.
 
-After **registering** and **confirming your e-mail**, you will be required to create a **password**.
+After **registering** and **confirming your e-mail**, you will be prompted to create a **password**.
 
-Once that is done, you will be **automatically** logged into Heroku CLI.
+Once the setup is complete, you will be **automatically** logged into Heroku CLI.
 
 [/slide]
