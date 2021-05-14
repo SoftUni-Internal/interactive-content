@@ -17,6 +17,6 @@
 
 - How to handle different types of errors
 
-- Overview and use of the **try-catch**, and **then-catch** blocks
+- Overview and use of the `try-catch` and `then-catch` blocks
 
 [/slide]

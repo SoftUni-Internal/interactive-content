@@ -126,7 +126,7 @@ Their work revolves around **modifying** the **request** and removing **illegal 
 
 If the user input is `John@example.com`, after the sanitizer function it will be `john@example.com`.
 
-Here are use cases where the sanitizers are useful:
+Here are some use cases where **sanitizers** could be useful:
 
 - **normalizing** emails - e.g. making sure all characters are in lowercase
 
@@ -149,8 +149,8 @@ The `isLength` method makes sure the password's length is bigger than or equal t
 
 In this example, we use sanitizing functions on the **email** and the **password**:
 
-- `normalizeEmail()` will standardize the email address.
-- `trim()` will trim the characters and the whitespace.
+- `normalizeEmail()` will standardize the email address
+- `trim()` will trim the whitespaces at the beginning and the end of it
 
 [/slide]
 
@@ -189,13 +189,13 @@ To create a custom sanitizer, we use the `customSanitizer()` method:
 const { sanitizeParam } = require('express-validator');
 
 app.post(
- '/object/:id',
- sanitizeParam('id').customSanitizer((value) => {
- return ObjectId(value);
- }),
- (req, res) => {
- console.log(req.params)
- }
+  '/object/:id',
+  sanitizeParam('id').customSanitizer((value) => {
+    return ObjectId(value);
+  }),
+  (req, res) => {
+    console.log(req.params)
+  }
 );
 ```
 
@@ -288,14 +288,14 @@ The **SchemaTypes** are:
 
 - For **Numbers**:
 
- - They have **Min** and **Max** validators.
+  * the `Min` and `Max` validators check if a value is bigger/smaller/equal to a given minimum or maximum
 
 - For **Strings**:
 
- - **enum**
- - **match**
- - **minlength**
- - **maxlength**
+  * `enum` - validates whether a value is present in an array
+  * `match` - compares the value to a given regular expression
+  * `trim` - sets whether to invoke the `.trim()` method on the given value, boolean
+  * `lowercase` and `uppercase` - booleans used to set whether to call the `.toLowerCase()`/`.toUpperCase()` methods on the value
 
 Here is an example of a **Mongoose schema**:
 
@@ -311,13 +311,14 @@ const userSchema = new Schema({
 });
 ```
 
-In this schema, we set the **type**, which is **string**.
+In this schema, we are going to set the default properties of a **username**.
 
-We also set **minlength** and **maxlength** for the **username**. 
+The nickname must be of type **"String"**.
 
-They specify the minimum and the maximum length of the **username** string.
+We cannot create a user without one, so we set `required` to **true**.
 
-We set the **username** to be **required** and **unique**.
+We also set `minlength` and `maxlength` - they make sure sure the username's length is between **4** and **20**.
+
 
 [/slide]
 
@@ -346,13 +347,13 @@ const userSchema = new Schema({
 
 In this example, we want to validate a phone number.
 
-We create the schema with the **phone** object and set a property ** to validate**.
+We create a schema with the **phone** object, which includes the the data type.
 
 It holds two functions as parameters, which are **validator** and **message**.
 
 The **validator** function takes a value and returns a **boolean**.
 
-The **message** function returns an error if the validation fails.
+The **message** function returns an error if the validation **fails**.
 
 [/slide]
 
@@ -362,7 +363,7 @@ The **message** function returns an error if the validation fails.
 
 The **ValidationError** object is returned when the validation fails.
 
-This object has a **kind**, a **path**, a **value** and a **message** properties.
+The folowing object has a **kind**, a **path**, a **value** and a **message** properties.
 
 We access these properties from `err.errors.color.Property`.
 
@@ -378,13 +379,13 @@ toy.save((err) => {
 });
 ```
 
-The **message** property will return an error message.
+The **message** property returns an error message.
 
-The **kind** property will return the error type.
+The **kind** property returns the error type, like an invalid index, or in this case - "Invalid color"
 
-The **path** property will return the track of the failed validation property.
+The **path** property returns the track of the failed validation property.
 
-And the **value** will return the value of the failed property.
+And the **value** returns the value of the failed property.
 
 [/slide]
 
@@ -392,19 +393,20 @@ And the **value** will return the value of the failed property.
 
 # Validation
 
-In the end, every type of validation can fail.
+In the end, every type of validation is prone to failure.
 
-That is why we need to have multiple layers of validation.
+That is why we need to have multiple **layers** of validation.
 
-Some of the things that we can do when the validation fails are:
+When validation fails, it is recommended to:
 
-- Always return a helpful and readable message
+- Return a helpful and readable **message** so that the user is aware of what is wrong
 
-- To test every piece of our code
+- Test **all edge-cases** in our code and make sure all of them are handled
 
-- To avoid reloading the page because it is a bad user experience
+- **Avoid reloading** the page when possible
+  * **notify** the user with a simple **message** instead
 
-More info about **express-validator** and **mongoose** you can find on:
+You can find more info about **express-validator** and **mongoose** here:
 
 - [express-validator](https://express-validator.github.io/docs/)
 - [mongoose](https://mongoosejs.com/docs/validation.html)

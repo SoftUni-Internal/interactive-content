@@ -6,74 +6,71 @@
 
 -  What validation is
 
-   - **preventing** incorrect information from reaching the database
+  * **preventing** incorrect information from reaching the database
 
-   - done by notifiying the **user** for improperly formatted data 
+  * done by notifiying the **user** for improperly formatted data 
 
-   - **express-validator**:
 
-      - **validating** data
+- **express-validator** can validate and sanitize data
 
-      ```js
-      body('email').isEmail()
-      ```
+```js
+body('email').isEmail()
+```
 
-      - **sanitizing** data
+```js
+body('email').isEmail().normalizeEmail();
+```
 
-      ```js
-      body('email').isEmail().normalizeEmail();
-      ```
 
-   - Using the mongoose validator
+- The **Mongoose validator** uses **schemas** to configure models
 
-   ```js
-   schema.pre('validate', () => {});
-   schema.post('validate', () => {});
-   schema.pre('save', () => {});
-   schema.post('save', () => {});
-   ```
+```js
+schema.pre('validate', () => {});
+schema.post('validate', () => {});
+schema.pre('save', () => {});
+schema.post('save', () => {});
+```
 
-- Handle errors:
+- There are three main types of errors
 
-   - Types of errors:
+  * **technical** errors - occur as a result of equipment problems
 
-      - **technical** errors
+  * **expected** errors
 
-      - **expected** errors
+  * **bugs**, also known as logical errors
 
-      - **bugs**, also known as logical errors
 
-   -  Ways to handle errors:
+-  Ways to **handle** errors:
 
-      -  using a `try-catch` block:
+  * using a `try-catch` block:
 
-      ```js
-      try {
-         console.log('Hello')
-      } catch (error) {
-         console.error(error)
-      }
-      ```
+  ```js
+  try {
+     console.log('Hello');
+  } catch (error) {
+     console.error(error);
+  }
+  ```
 
-      -  `then().catch()`
+  * for **asynchronous** operations, use `then().catch()`:
 
-      ```js
-      .then((example) => {
-         console.log('Hello')
-      })
-      .catch((error) => {
-         console.error(error)
-      });
-      ```
+  ```js
+  .then((example) => {
+     console.log('Hello');
+  })
+  .catch((error) => {
+     console.error(error);
+  });
+  ```
 
 ## In the next lesson you will learn:
 
--  Deployment:
+-  **Deployment**:
 
-   *  how to set up Heroku
+   *  how to set up **Heroku**
 
-   *  creating a Git repository and a database
+   *  creating a **Git** repository and a **database**
 
-   *  deploying a live version of your project
+   *  **deploying** a live version of your **project**
 
 [/slide]

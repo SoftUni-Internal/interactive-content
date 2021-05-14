@@ -18,7 +18,7 @@ There are several types of errors:
 
  * a database request failure is predictable - you might be looking for a non-existent resource
 
-- **Bugs** or **Logical** errors:
+- **Bugs**, also known as **logical** errors:
 
  * these errors are **not predictable** because the software does not work as expected
 
@@ -32,13 +32,11 @@ There are several types of errors:
 
 # Working with Errors
 
-There is a **built-in error** object in **node.js**.
+There is a **built-in error** object in **node.js**, which we can throw in case of an error.
 
-We can be thrown the **technical** object in case of an error.
+To catch errors in **synchronous** code, we need to use **try-catch**.
 
-To catch errors in synchronous code, we need to use **try-catch**.
-
-For asynchronous code we use `then().catch()`.
+For **asynchronous** code we use `then().catch()`.
 
 We can handle the errors directly with **try-catch** or `then().catch()`. 
 
@@ -81,11 +79,11 @@ async (req, res, next) => {
 };
 ```
 
-Because it is synchronous, we use `try{}catch(error){}` block statement.
+Because it is synchronous, we use `try-catch` block statement.
 
-In the `try{}` statement, we print the **username** in the console.
+In the `try{...}` statement, we print the **username** in the console.
 
-In the `catch(error){}` statement we print the **error** in the console.
+In the `catch(error){...}` statement, we print the **error** in the console.
 
 [/slide]
 
@@ -93,9 +91,7 @@ In the `catch(error){}` statement we print the **error** in the console.
 
 # Working Asynchronously with Errors
 
-We can handle asynchronous errors with `.then().catch()` block statement.
-
-Have a look at this example:
+We can handle asynchronous errors with `.then().catch()` block statement:
 
 ```js
 Post.findById(productId)
@@ -126,21 +122,23 @@ After that, we pass the **error** to the `next()` middleware.
 
 # Error Handling
 
-When an error shows up, we need to handle it.
+**Error handling** is important for a number of reasons:
 
-While we are doing that, we need to make a good **user experience**.
+- It makes our application more user-friendly, as we can format the error in a proper way
+  * we can also make it easier for the user to contact a help center
 
-There are several things that we can do to improve the **UX** in moments like this.
+- 
 
-For example:
+
+There are several things that we can do to improve the **user experience** in moments like this:
 
 - We can **redirect** to an error page
 
 [image assetsSrc="JS-Web-Validation-And-Error-Handling.png" /]
 
-- Every response from the API should have a **specific status code** and **well-described information** about the error
+- Displaying an error **notification** is a **less intrusive** alternative to redirecting
+  * can be used for less major errors, such as an invalid index in an **input** field
 
-- Displaying an error notification is a less intrusive alternative to redirecting
-  * can be used for less major errors, such as an invalid index in an input field
+- Every response from the API should have a **specific status code** and **well-described information** about the error
 
 [/slide]
