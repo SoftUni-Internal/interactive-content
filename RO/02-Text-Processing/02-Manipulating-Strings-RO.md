@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-7-8-manipulate-strings-concatenating-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Există **două** moduri de a concatena un `șir`
+Există **două** moduri de a concatena un `șir`:
 
 - Folosind operatorii `+` sau `+ =`
 
@@ -42,7 +42,7 @@ Metoda necesită un delimitator pentru a separa șirurile, dar dacă doriți să
 
 Aici sunt două exemple care ilustrează utilizarea `String.join()` în diferite situații.
 
-Unirea câtorva șiruri, separate print-o virgulă.
+Unirea câtorva șiruri, separate print-o virgulă:
 
 ```java live
 String sentence = String.join(",", "testing", "one", "two");
@@ -86,6 +86,8 @@ public class Main {
 Scrieți un program care citește o **matrice de șiruri**.
 
 Fiecare șir se repetă **n** ori, unde **n** este **lungimea șirului**.
+
+Imprimați rezultatul.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -168,13 +170,13 @@ linearlinearlinearlinearlinearlinear
 
 [slide hideTitle]
 
-# Subșir
+# Substring
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-13-substring-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-După cum sugerează numele, `substring` reprezintă doar o **parte** dintr-un `String`.
+După cum sugerează numele, `substring` extrage doar o **parte** dintr-un `String` dat.
 
-`substring (int startIndex)` - returnează un **șir nou** care conține subșirul din șirul dat, de la **startIndex** specificat (**inclusiv**)
+`substring(int startIndex)` - returnează un **șir nou** care conține subșirul din șirul dat, de la **startIndex** specificat (**inclusiv**) până la sfârșitul șirului
 
 ```java live
 String text = "My name is John";
@@ -205,7 +207,7 @@ System.out.println(firstName); // John
 
 Este posibilă căutarea primelor sau ultimelor apariții ale unor tipare într-un șir:
 
-`indexOf()` - returnează **primul indice potrivit**, dacă nu există **o potrivire** se returnează **-1** 
+`indexOf()` - returnează poziția primei apariții a caracterelor specificate, iar dacă nu există **o potrivire** se returnează **-1** 
 
 ```java live 
 String fruits = "banana, apple, kiwi, banana, apple";
@@ -216,7 +218,7 @@ System.out.println(fruits.indexOf("orange"));    // -1
 
 ```
 
-`lastIndexOf()` - găsește ultima apariție
+`lastIndexOf()` - returnează poziția ultimei apariții a caracterelor specificate, iar dacă nu există **o potrivire** se returnează **-1** 
 
 ```java live
 String fruits = "banana, apple, kiwi, banana, apple";
@@ -266,14 +268,14 @@ La sfârșit **tipăriți șirul rămas**.
 Citiți intrarea.
 
 Găsiți **primul indice** unde apare cuvântul cheie. 
-Utilizați metoda încorporată `indexOf()`
+Utilizați metoda încorporată `indexOf()`.
 [/hint] 
 [hint]
 **Eliminați potrivirea.**
-Utilizați metoda încorporată `replace(String oldValue, String newValue)`
+Utilizați metoda încorporată `replace(String oldValue, String newValue)`.
 [/hint] 
 [hint]
-**Repetați** până când textul **nu mai conține cuvântul cheie**.
+**Repetați** operațiile până când textul **nu mai conține cuvântul cheie**.
 [/hint] 
 [/hints] 
 
@@ -348,7 +350,7 @@ stration
 
  Un `String` poate fi împărțit în funcție de **unul** sau **mai multe** criterii, folosind metoda `split()`.
 
-- *Împărțirea* unui șir în funcție de un **model** dat
+- **Împărțirea** unui șir în funcție de un **model** dat
 
 ```java live
 String text
@@ -382,7 +384,7 @@ System.out.println(String.join(", ",words));
 
 Java face posibilă **înlocuirea** într-un șir. 
 
-- `replace(match, replacement)` - **Înlocuiește toate aparițiile** și returnează un **șir nou** (șirurile sunt imuabile)
+- `replace(match, replacement)` - **Înlocuiește toate aparițiile** și returnează un **șir nou**
 
 ```java live
 String text = "I have three bananas, three oranges, three apples.";
@@ -432,7 +434,7 @@ Intrările din lista de interdicții vor fi separate printr-o **virgulă** și *
 Citiți intrarea.
 
 **Înlocuiți toate cuvintele interzise** din text **cu asterisc**. 
-Utilizați **metoda încorporată** `replace(banWord, replacement)`
+Utilizați **metoda încorporată** `replace(banWord, replacement)`.
 [/hint]  
 [/hints] 
 
