@@ -494,15 +494,15 @@ Most Valuable Playboy - content4: Lauren Blakely
 
 Scrieți un program care primește **un număr n de elevi** și îi **ordonează (descendent) în funcție de note** .
 
-Fiecare elev trebuie să aibă **first name** (șir), **Last name** (șir) și **grade** (număr în virgulă mobilă).
+Fiecare elev trebuie să aibă **first name** (șir), **last name** (șir) și **grade** (număr în virgulă mobilă).
 
 ### Intrare
 
 - Prima linie va fi un **număr n**
-- Următoarele **n linii** veți primi informații despre elev în **formatul** "\{**first name**\} \{**second name**\} \{**grade**\}"
+- Pe următoarele **n linii** veți primi informații despre elev în **formatul** "\{**first name**\} \{**second name**\} \{**grade**\}"
 
 ### Ieșire
--Tipăriți fiecare elev în următorul format "\{**first name**\} \{**second name**\}**:** \{**grade**\}"
+-Tipăriți fiecare elev în următorul format: "\{**first name**\} \{**second name**\}**:** \{**grade**\}"
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -626,13 +626,13 @@ Amias Mathews: 2.30
 
 [task-description]
 ## Descriere
-Până când primiți **comanda** "**End**", veți primi linii de intrare în format:
+Până când primiți **comanda** "**End**", veți primi linii de intrare în următorul format:
 
 - \{**typeOfVehicle**\} \{**model**\} \{**color**\} \{**horsepower**\}
 
-După comanda "**End**", veți începe să primiți **modele de vehicule**. 
+După comanda "**End**", veți începe să primiți **informații despre vehicule**. 
 
-**Imprimați pentru fiecare vehicul primit** datele sale în **format**:
+**Imprimați pentru fiecare vehicul primit** datele sale în **formatul**:
 
 "**Type:** \{**typeOfVehicle**\}
 
@@ -642,7 +642,7 @@ După comanda "**End**", veți începe să primiți **modele de vehicule**.
 
 **Horsepower:** \{**horsepowerOfVehicle**\}"
 
-Când primiți comanda "Close the Catalogue", **imprimați puterea medie** pentru mașini și camioane în **format**:
+Când primiți comanda **"Close the Catalogue"**, **imprimați puterea medie** pentru mașini și camioane în **formatul**:
 
 "\{**typeOfVehicles**\} **have an average horsepower of** \{**averageHorsepower**\}."
 
@@ -868,7 +868,7 @@ Pe fiecare linie, veți primi o **matrice cu 3 elemente**.
 
 Cel de-al **doilea** element va fi de tip **șir** și va reprezenta **ID-ul persoanei**.
 
-Ultimul element va fi un de tip **număr întreg** și reprezintă **vârsta persoanei**.
+Ultimul element va fi de tip **număr întreg** și reprezintă **vârsta persoanei**.
 
 Dacă primiți o persoană al cărei **ID l-ați primit deja**, atunci **actualizați** numele și vârsta ID-ului respectiv cu cele **ale noii persoane**.
 
