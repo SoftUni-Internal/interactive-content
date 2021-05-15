@@ -22,9 +22,7 @@ name = "Peter!";
 System.out.println(name.hashCode());
 ```
 
-După atribuirea unei noi valori variabilei **name** în exemplul precedent, apare ca o nouă adresă în memorie - un **obiect newString este creat**
-
-
+După atribuirea unei noi valori variabilei **name** în exemplul precedent, apare ca o nouă adresă în memorie - un **nou obiect** de tip șir este creat.
 
 **Șirurile folosesc Unicode** (pot folosi majoritatea alfabetelor, de ex. Arabă) 
 
@@ -65,7 +63,7 @@ movieTitle = "The Last Samurai";
 System.out.println(movieTitle);
 ```
 
-Am reușit să schimbăm titlul filmului în exemplul de mai sus, deci de ce spunem că String-urile sunt imuabile?
+Am reușit să schimbăm titlul filmului în exemplul de mai sus, deci de ce spunem că șirurile sunt imuabile?
 
 Șirurile sunt tipuri de date referință, prin urmare variabila **movieTitle** va conține o referință spre o locație de memorie, nu va deține datele propriu-zise.
 
@@ -88,7 +86,7 @@ Pentru a recapitula:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-6-initializing-a-string-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Inițializarea folosind **șir literal**
+- Inițializarea folosind **un literal de tip șir**
 
 ```java
 String greeting = "Hello, SoftUni";
