@@ -24,32 +24,32 @@ Scrieți un program de resetare a parolei care efectuează o serie de comenzi pe
 
 În primul rând, veți primi un șir.
 
-Până la comanda "**Done**", veți primi șiruri cu comenzi împărțite de un singur spațiu.
+Până la introducerea comenzii "**Done**", veți primi șiruri cu comenzi împărțite printr-un singur spațiu.
 
 Comenzile vor fi următoarele:
 
 - **TakeOdd**
-  * preia doar caracterele de la **indici impari** și **le concatenează** împreună pentru a obține **noua parolă brută** și apoi **o imprimă**
+  * preia doar caracterele de la **indici impari** și **le concatenează** împreună pentru a obține **noua parolă**, pe care apoi **o imprimă**
 - "**Cut** \{**index**\} \{**length**\}"
-  * obține șirul cu **lungimea dată** începând din **indexul dat** din parolă și elimină prima apariție a acesteia, apoi imprimă parola pe consolă
-  * indicele și lungimea date vor fi **întotdeauna valabile**
+  * obține subșirul cu **lungimea dată** începând de la **indicele dat**, și elimină prima apariție a acestui subșir, iar apoi imprimă parola pe consolă
+  * indicele și lungimea date vor fi **întotdeauna valide**
 - "**Substitute** \{**substring**\} \{**substitute**\}"
-  * dacă parola brută conține șirul dat, înlocuiește toate aparițiile sale cu textul înlocuit dat și imprimă rezultatul
-  * dacă nu, imprimă "**Nothing to replace!**"
+  * dacă parola brută conține subșirul dat, înlocuiește toate aparițiile sale cu textul de înlocuire dat și imprimă rezultatul
+  * dacă parola nu conține subșirul, imprimă "**Nothing to replace!**"
 
 
 ## Intrare
 
-  - Veți primi șiruri până când este dată comanda "**Done**"
+  - Veți primi șiruri până la primirea comenzii "**Done**"
 
 ## Ieșire
 
-- După ce se primește comanda "**Done**", tipăriți:
+- După introducerea comeznii "**Done**", tipăriți:
   * **"Your password is:** \{**password**\}"
 
 ## Constrângeri
 
-- Indexurile din comanda "**Cut** \{**index**\} \{**length**\}" vor fi întotdeauna valabile
+- Indicii din comanda "**Cut** \{**index**\} \{**length**\}" vor fi întotdeauna valizi
 
 
 ## Exemplu
@@ -66,14 +66,14 @@ Comenzile vor fi următoarele:
 [hint]
 Prima comandă este `TakeOdd`.
 
-Luăm caracterele numai la indici **impari** -  1, 3, 5 etc.
+Preluăm caracterele aflate la indici **impari** -  1, 3, 5 etc.
 
 " Siiceercaroetavm\!\:\?\:ahsott\.\:i\:nstupmomceqr" \-\> "**icecream**\:\:**hot**\:\:**summer**"
 [/hint] 
 [hint]
-Urmează comanda `Cut 15 3`
+Urmează comanda `Cut 15 3`.
 
-Decupăm un șir "**sum**" care începe de la indexul **15** cu o lungime de **3**, îl scoatem din parola brută și îl **imprimăm**:
+Decupăm subșirul "**sum**" care începe de la indicele **15** și are lungimea **3**, îl scoatem din parola brută și îl **imprimăm**:
 
 "icecream\:\:hot\:\:**sum**mer" \-\> **sum**
 
@@ -82,7 +82,7 @@ Apoi, pe o nouă linie imprimăm **noua** parolă brută rezultată:
 **icecream**\:\:**hot**\:\:**mer**
 [/hint] 
 [hint]
-A treia comandă este `Substitute :: -` 
+A treia comandă este `Substitute :: -`.
 
 **Înlocuim** "\:\:" cu "\-"
 
@@ -90,9 +90,9 @@ A treia comandă este `Substitute :: -`
 
 [/hint] 
 [hint]
-Urmează `Substitute | ^`
+Urmează `Substitute | ^`.
 
-"\|" **nu este găsit** nicăieri în parola brută, așa că tipărim:
+"\|" **nu se află** în parola brută, așa că tipărim:
 
 "**Nothing to replace!**" 
 
