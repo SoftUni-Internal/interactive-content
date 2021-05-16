@@ -674,7 +674,7 @@ Decrypt the messages, following these rules:
 - Remove this number from the ASCII value of each symbol in the encrypted message
 
 **After decryption**:
-- Each message should contain a **planet name**, **population**, **attack status**** ('A' stands for attacked; 'D' stands for destroyed), and a **soldier count**
+- Each message should contain a **planet name**, **population**, **attack status** ('A' stands for attacked; 'D' stands for destroyed), and a **soldier count**
 - The **planet name** is marked by '@' followed only by letters from the English alphabet
 - The **planet population** starts after a ':' sign and will be an **integer**
 - The **planet might be "A" (attacked) or "D" (destroyed)**, and this value will be surrounded by "!" (exclamation marks)
