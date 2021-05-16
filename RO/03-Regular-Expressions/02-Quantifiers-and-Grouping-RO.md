@@ -1,4 +1,4 @@
-# Cuantificatorii și Gruparea
+# Cuantificatori și Grupare
 
 [slide hideTitle]
 # Cuantificatori
@@ -14,15 +14,15 @@
 |`?`|Apare **zero** sau **o** dată, prescurtare pentru {0,1}|
 |`{}`|Numărul **exact** speciificat al aparițiilor|
 
-- `*` - se potrivește cu elementul precedent zero sau de mai multe ori
+- `*` - se potrivește cu elementul precedent de zero sau de mai multe ori
 
 [image assetsSrc="regex-example(13).png" /]
 
-- `+` - se potrivește cu unul sau mai multe apariții ale elementului precedent
+- `+` - se potrivește cu elementul precedent o dată sau de mai multe ori
 
 [image assetsSrc="regex-example(14).png" /]
 
-- `?` - se potrivește cu zero sau una apariție ale elementului precedent
+- `?` - se potrivește cu elementul precedent de zero ori sau o dată
 
 [image assetsSrc="regex-example(15).png" /]
 
@@ -38,9 +38,9 @@
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-11-Grouping-Expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Putem împărți expresiile regualte în **grupuri** și putem folosi aceste grupuri pentru a **extrage informații** despre **o parte a potrivirii**.
+Putem împărți expresiile regulate în **grupuri** și putem folosi aceste grupuri pentru a **extrage informații** despre **o parte a potrivirii**.
 
-- `subexpression` - captează subexpresia potrivită ca grup numerotat
+- `subexpression` - capturează subexpresia potrivită ca grup numerotat
 
 [image assetsSrc="regex-example(17).png" /]
 
@@ -50,20 +50,20 @@ Putem împărți expresiile regualte în **grupuri** și putem folosi aceste gru
 
 [image assetsSrc="regex-example(18).png" /]
 
-Textul verde evidențiat este un grup care nu este capturat.
+Textul evidențiat cu verde este un grup care nu este capturat.
 
 - `?<name>subexpression` - definește un grup de capturare numit
 
 [image assetsSrc="regex-example(19).png" /]
 
-În exemplul de mai sus **day**, **month**, **year** sunt numele grupului.
+În exemplul de mai sus **day**, **month** și **year** sunt numele grupului.
 
 [/slide]
 
 [slide hideTitle]
 # Problemă: Match All Words
 
-Creați o **expresie regulată** care **extrage toate cuvintele dintr-un text dat** , folosind următorul site web: [regex101](https://regex101.com)
+Creați o **expresie regulată** care **extrage toate cuvintele dintr-un text dat**, folosind următorul site: [regex101](https://regex101.com).
 
 [image assetsSrc="regex-example(25).png" /]
 
@@ -77,13 +77,13 @@ _|The|great|outdoors|holds|~many|secrets
 [/slide]
 
 [slide hideTitle]
-# Problemă  cu soluție: Match Dates
+# Problemă cu Soluție: Match Dates
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/RO/04.Java-Fundamentals-Regular-Expressions-24-Problem-and-Soluttion-Match-Dates-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Creați o **expresie regulată** care **extrage toate  datele valide  dintr-un text dat**.
+Creați o **expresie regulată** care **extrage toate datele valide dintr-un text dat**.
 
-- Format de dată valid: `dd-MMM-yyyy`
+- Format de dată validă: `dd-MMM-yyyy`
 - Exemple: `12-Jun-1999`, `3-Nov-1999`
 
 [image assetsSrc="regex-example(26).png" /]
@@ -99,19 +99,19 @@ I was not aware that my socks have been missing since 23-Sep-2005.
 
 
 [slide hideTitle]
-# Problemă cu soluție: Email Validation
+# Problemă cu Soluție: Email Validation
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-13-Solution-email-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Creați o expresie regulată care efectuează **validare simplă a e-mailului**
+Creați o expresie regulată care efectuează **validarea simplă a unor e-mailuri**:
 
-- Un e-mail constă din: **username**, **@**, **domain name**
+- Un e-mail constă din: **numele utilizatorului**, **@**, **numele domeniului**
 
-- **Usernames** sunt**alfanumerice**
+- **Numele de utilizatori** sunt **alfanumerice**
 
-- **Domain names** constau din **două șiruri**, separate printr-un **punct**
+- **Numele domeniilor** constau din **două șiruri**, separate printr-un **punct**
 
-- **Domain names** pot conține numai **litere în limba engleză**
+- **Numele domeniilor** pot conține numai **litere în limba engleză**
 
 [image assetsSrc="regex-example(27).png" /]
 
