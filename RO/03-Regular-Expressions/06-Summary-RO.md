@@ -6,9 +6,9 @@
 ## În această lecție ați învățat:
 
 - Ce reprezintă expresiile regulate
-- Cum să descrieți șablonele de căutare prin text
-- Cum să definiți caracterele speciale și operatorii și cum să construiți un șablon complex
-- Cum să utilizați caracterele de clase, grupuri, cuantificatori și multe altele
+- Cum să descrieți șabloane de căutare într-un text
+- Cum să definiți caractere speciale și operatori și cum să construiți un șablon complex
+- Cum să utilizați clasele de caractere, grupuri, cuantificatori și multe altele
 
 ```java live no-template
 import java.util.regex.Matcher;
