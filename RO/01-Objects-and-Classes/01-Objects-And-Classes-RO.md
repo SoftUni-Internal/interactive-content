@@ -11,9 +11,11 @@ Totul în Java este asociat cu clase și obiecte, împreună cu câmpurile și m
 
 Un obiect este **unitatea de bază** și o **instanță a unei clase**.
 
-Clasele definesc șabloane pentru  **câmpuri**, **constructori** și **metode**.
+Clasele definesc șabloane pentru **câmpuri**, **constructori** și **metode**.
 
-Obiectele sunt modelate după **obiectele din viața reală**.
+Obiectele în programare sunt modelate după **obiectele din viața reală**.
+
+Dacă luăm câini de exemplu, aceștia au o **rasă** (stare) și un comportament specific (lătrat, dat din coadă).
 
 Un obiect are:
 
@@ -25,7 +27,7 @@ Un obiect are:
 
 Un obiect deține un set de **valori numite**.
 
-De exemplu, obiectul zilei de naștere va avea valori precum **ziua**, **luna**, **anul** etc.
+De exemplu, obiectul **zilei de naștere** va avea valori precum **ziua**, **luna**, **anul** etc.
 
 ```java live no-template
 import java.time.LocalDate;
@@ -80,7 +82,7 @@ De exemplu, toate animalele sunt grupate într-o singură **clasă** și fiecare
 
 [image assetsSrc="ObjectsAndClasses_RealLifeExample.png" /]
 
-Fiecare animal are caracteristici similare, deci animalele reprezentate prin intermediul unei clase ar putea avea următoarele câmpuri: tip, vârstă, culoare, mâncare preferată.
+Fiecare animal are caracteristici similare, deci animalele reprezentate prin intermediul unei clase ar putea avea următoarele câmpuri: tip, vârstă, culoare, mâncare preferată, etc.
 
 De asemenea, fiecare animal poate executa acțiuni \(să mănânce, să bea apă, să scoată anumite sunete\), iar pentru aceste acțiuni trebuie declarate metode în cadrul clasei respective.
 
