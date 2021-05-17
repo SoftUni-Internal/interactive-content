@@ -7,7 +7,7 @@
 
   * **cookies** are used for storing user preferences and settings
 
-  * **sessions** hold more sensitve data, for a short duration of time, and cannot be altered
+  * **sessions** hold more sensitve data for a short duration of time and cannot be altered
 
   * the use cases for each of them
 
@@ -32,7 +32,7 @@ app.get("/receiveCookie", (req, res) => {
 
   * **authorization** determines if a user has the rights to access or modify given data
 
-  * how **bcrypt** is used
+  * **bcrypt** uses
 
 
 ```js
@@ -50,9 +50,9 @@ bcrypt.genSalt(saltRounds, (err, salt) => {
 
 - **JWT**
 
-  * standard for transferring **JSON** in a secure way
+  * a standard for transferring **JSON** in a secure way
 
-  * a **JSON Web Token** consists of a header, payload, and signature
+  * a **JSON Web Token** consists of a header, payload and signature
 
   * used for **authorization** and exchanging **information**
 
