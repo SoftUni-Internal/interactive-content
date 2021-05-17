@@ -22,7 +22,7 @@ name = "Peter!";
 System.out.println(name.hashCode());
 ```
 
-După atribuirea unei noi valori variabilei **name** în exemplul precedent, apare ca o nouă adresă în memorie - un **nou obiect** de tip șir este creat.
+După atribuirea unei noi valori variabilei **name** în exemplul precedent, aceasta apare ca o nouă adresă în memorie - un **nou obiect** de tip șir este creat.
 
 **Șirurile folosesc Unicode** (pot folosi majoritatea alfabetelor, de ex. Arabă) 
 
@@ -38,8 +38,7 @@ Principalele **caracteristici** ale **șirurilor** sunt:
 
 - Clasa Java String are o mulțime de **metode** pentru **procesarea textului**
 
-- Șirurile sunt imuabile (**numai citire**)
-
+- Șirurile sunt imuabile
 
 [/slide]
 
@@ -98,7 +97,7 @@ String greeting = "Hello, SoftUni";
 String greeting = new String ("Hello, SoftUni");
 ```
 
-- Inițializarea folosind `char []`
+- Inițializarea folosind o matrice de caractere \(`char []`\)
 
 ```java live
 char [] charArr = new char[]{'H','e','l','l','o'};
