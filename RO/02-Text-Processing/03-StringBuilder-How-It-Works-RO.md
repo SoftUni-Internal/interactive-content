@@ -7,7 +7,7 @@
 
 La fel ca `String`, `StringBuilder` este o **secvență de caractere**.
 
-Principala diferență dintre ele este că `StringBuilder` este **modificabil (poate fi modificat).**
+Principala diferență dintre ele este că `StringBuilder` este **modificabil.**
 
 Spre deosebire de șiruri, fiecare `StringBuilder` păstrează un spațiu tampon, alocat în avans.
 
@@ -149,7 +149,7 @@ StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
 System.out.println(sb.length()); // 25
 ```
 
-`setLength(int newLength)` - Setează **lungimea șirului**. Dacă **newLength** este **mai mică** decât **length()**, **ultimele caractere** din șir sunt **eliminate**
+`setLength(int newLength)` - Setează **lungimea șirului**. Dacă **newLength** este **mai mică** decât lungimea anterioară, **ultimele caractere** din șir sunt **eliminate**
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
@@ -159,7 +159,7 @@ sb.setLength(12);
 System.out.println(sb.toString()); // Hello Peter,
 ```
 
-Dacă **newLength** este **mai mare** decât **length()**, **se adaugă** caractere nule la sfârșitul șirului.
+Dacă **newLength** este **mai mare** decât lungimea anterioară, **se adaugă** caractere nule la sfârșitul șirului.
 
 ```java live
 StringBuilder sb = new StringBuilder("Hello Peter, how are you?");
@@ -171,7 +171,7 @@ System.out.println(sb.toString()); // Hello Peter, how are you?
 System.out.println(sb.length()); // 28
 ```
 
-`charAt(int index)` - Returnează caracterul de la indicele specificat
+`charAt(int index)` - Returnează caracterul de la **indicele specificat**
 
 ```java live
 StringBuilder sb = new StringBuilder();
