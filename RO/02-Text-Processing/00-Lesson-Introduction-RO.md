@@ -8,7 +8,7 @@
 
 ## În această lecție veți învăța:
 
-**1. Şir**
+**1. Şiruri**
 
 - Ce este un șir
 
