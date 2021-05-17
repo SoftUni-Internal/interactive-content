@@ -42,7 +42,7 @@ Metodele din clasa `Math` sunt **statice** și ajută la efectuarea **operațiil
 
 - Rotunjire
 
-- Compararea
+- Comparare
 
 - Rădăcină pătrată
 
@@ -211,7 +211,7 @@ Vă este dat un **șir** care conține cuvinte separate printr-un spațiu.
 
 ## Sfaturi
 
-- Separați șirul introdus (printr-un spațiu) și creați o matrice de cuvinte
+- Separați șirul introdus (prin spații) și creați o matrice de cuvinte
 - Creați un generator de numere aleatorii - un obiect `rnd` de tip `Random`
 - Într-o `buclă-for` schimbați fiecare număr de pe pozițiile 0, 1, ..., words.Length-1 cu un număr de pe o poziție aleatoare
 
@@ -242,7 +242,7 @@ Pentru a genera un număr aleator în intervalul specificat, utilizați `rnd.nex
 [slide hideTitle]
 # BigInteger
 
-Clasa `java.math.BigInteger` furnizează **operațiuni analoge** tuturor **operațiunilor întregi primitive ale Java** și pentru **toate metodele relevante** din clasa `java.lang.Math;`.
+Clasa `java.math.BigInteger` furnizează **operații analoge** tuturor **operațiilor cu tipuri de date întregi primitive** și pentru **toate metodele relevante** din clasa `java.lang.Math;`.
 
 Clasa `BigInteger` ajută la gestionarea **numerelor întregi foarte mari**. 
 
@@ -329,14 +329,14 @@ import java.math.BigInteger;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Veți primi două numere **(0 până la 10 ^ 50)**. 
+Veți primi două numere **(de la 0 până la 10 ^ 50)**. 
 
 Imprimați suma acestora.
 
@@ -444,7 +444,7 @@ import java.math.BigInteger;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
