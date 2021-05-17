@@ -14,13 +14,13 @@ Open a command\-line window and type in:
 
 If the output shows a **version number**, you are **ready to go**.
 
-In case your command goes **unrecognized**, proceed to the following steps.
+If the command returns **unrecognized**, proceed to the following steps.
 
 ## Installing on Windows
 
 To install Git on **Windows**, [click here](https://git-scm.com/download/win).
 
-Choose the Git to build for your Windows version (**32-bit** or **64-bit**), and **download** it.
+Choose the Git for your Windows version (**32-bit** or **64-bit**), and **download** it.
 
 Then, **open the installation file** and go through the **setup process**.
 
@@ -30,7 +30,7 @@ Alternatively, you can [install GitHub Desktop](https://desktop.github.com/), wh
 
 Installing Git on **macOS** requires **Homebrew**.
 
-To install **Homebrew**, open **Terminal** and paste in:
+To install **Homebrew**, open **Terminal** and type:
 
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
 
@@ -63,7 +63,7 @@ If you are using a **different Linux distribution**, [go to Git's website](https
 
 Through the Heroku Command Line Interface, we can **manage** our applications, **run** them locally, as well as **deploy** them.
 
-You can **download** Heroku CLI [here](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up).
+You can **download** the Heroku CLI [here](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up).
 
 Choose the installer for your operating system and follow the setup process.
 
@@ -77,6 +77,6 @@ If you **do not have** a Heroku account, click on `Sign up`.
 
 After **registering** and **confirming your e-mail**, you will be prompted to create a **password**.
 
-Once the setup is complete, you will be **automatically** logged into Heroku CLI.
+Once the setup is complete, you will be **automatically** logged into the Heroku CLI.
 
 [/slide]
