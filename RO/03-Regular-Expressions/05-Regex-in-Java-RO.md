@@ -74,7 +74,7 @@ public class Main {
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/RO/04.Java-Fundamentals-Regular-Expressions-20-Replacing-with-Regex-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Există **două** moduri de a înlocui o parte a unui șir cu un alt șir cu ajutorul expresiilor regulate.
+Există **două** moduri de a înlocui o parte a unui șir cu un alt șir cu ajutorul **expresiilor regulate**.
 
 - `replaceAll()` - Înlocuiește toate subșirurile care corespund cu expresia regulată dată cu șirul de înlocuire și returnează rezultatul
 
@@ -95,7 +95,7 @@ public class Main {
 }
 ```
 
-- `replaceFirst()` - Înlocuiește primul subșir care corespunde cu expreia regulată cu valoarea șirului dat și returnează rezultatul
+- `replaceFirst()` - Înlocuiește primul subșir care corespunde cu expresia regulată cu valoarea șirului dat și returnează rezultatul
 
 ```java live no-template
 import java.util.regex.Matcher;
@@ -292,7 +292,7 @@ public class Main {
 ## Descriere
 Creați o expresie regulată care potrivește toate numerele dintr-un șir dat.
 
-După ce găsiți toate numerele valide, imprimați-le pe consolă, separate print-un spațiu.
+După ce găsiți toate numerele valide, imprimați-le pe consolă, separate printr-un spațiu.
 
 ## Exemple
 | **Intrare** | **Ieșire** |
