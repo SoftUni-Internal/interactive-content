@@ -307,3 +307,8 @@ Acestea arată tipul de răspuns.
 |**opaqueredirect**| Solicitarea a fost făcută cu o redirecționare **manuală** |
 
 [/slide]
+
+[slide hideTitle]
+# Fetch(): Demo
+
+[/slide]
