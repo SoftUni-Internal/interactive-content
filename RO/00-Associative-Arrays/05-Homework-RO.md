@@ -274,7 +274,7 @@ Sarcina voastră este să colectați resursele și să le imprimați fiecare pe 
 | --- | --- |
 | Gold | Gold \-\> 155 | 
 | 155 | Silver \-\> 10 |
-| Silver | Gold \-\> 17 |
+| Silver | Copper \-\> 17 |
 | 10 | | 
 | Copper | |
 | 17 | |
@@ -285,7 +285,7 @@ Sarcina voastră este să colectați resursele și să le imprimați fiecare pe 
 | --- | --- |
 | gold | Gold \-\> 170 | 
 | 155 | Silver \-\> 10 |
-| silver | Gold \-\> 17 |
+| silver | Copper \-\> 17 |
 | 10 | | 
 | copper | |
 | 17 | |
