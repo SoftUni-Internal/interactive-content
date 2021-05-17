@@ -7,7 +7,7 @@
 
 **1. Cookies and Sessions**
 
-- What a **cookie** is and how it differs from a **session**
+- What a **cookie** is and how it differs from a **session** file
 
 - Pros and cons of using **cookies** and **sessions**
 
