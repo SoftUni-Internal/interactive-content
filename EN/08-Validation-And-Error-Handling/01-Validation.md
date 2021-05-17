@@ -2,41 +2,38 @@
 
 [slide hideTitle]
 
-# Why to Validate?
+# Why you should validate data
 
-**Data validation** is crucial, as it avoids the storage of "bad" information in your database.
+**Validation** is the process of checking if data meets specific requirements.
 
-That means that we have to prevent the user from entering **incorrect** data.
+You should always perform validation to prevent **incorrect data** from polluting your database.
 
-If the user enters **correct** data, we will store it in the database.
+If a piece of data does not pass the validation process, you should return an error message. 
 
-But if it is **incorrect**, we need to return an appropriate message.
-
-In **web development**, data validation is performed by taking user input, usually from a form, and then comparing it to a valid model, or schema.
-
+Data validation in web development is performed by comparing user input with a schema or another valid model.
 [/slide]
 
 [slide hideTitle]
 
-# How to Validate?
+# How to validate data
 
 We can validate on the **server-side**, on the **client-side** and in the **database**.
 
 For best security, we should use all of the available methods.
 
-**Client-side** validation is not very useful because the user can change the code in the browser.
+**Client-side** validation is not very secure because the user can change the code in the browser.
 
-This validation does not protect or secures the application from incorrect data.
+This method does not protect the database from incorrect data.
 
-However, is significantly improves the experience of potential users, as it displays their mistakes as they type.
+However, it significantly improves the user experience by displaying error messages in real-time.
 
-In **server-side** validation, unlike the **client-side** one, the validation is not visible to the user.
+When validating on the **server**, the user does not have access to your code.
 
-This means that it cannot be **altered** or **disabled**.
+This way validating functions cannot be **altered** or **disabled**.
 
-When we want to validate the data that we are receiving, we must focus on the **server-side** validation.
+You should focus on the **server-side** validation.
 
-But we need to make sure that the database is also validated, since this is the last check before saving.
+However, you should still validate in the database to cover potential mistakes.
 
 In most database engines, there is **built-in validation**, which can be easily enabled.
 
@@ -44,13 +41,13 @@ In most database engines, there is **built-in validation**, which can be easily 
 
 [slide hideTitle]
 
-# validator.js
+# The validator.js library
 
-The **validator.js** library can be used in both the **client-side** or the **server-side**.
+The **validator.js** library can be used both on the **client-side** or the **server-side**.
 
-It gives us a wide variety of functions to validate data.
+It offers a wide variety of validating functions.
 
-We can install it with `npm install validator`.
+You can install it by entering `npm install validator` in the terminal.
 
 Here is an example of **server-side** validation:
 
@@ -62,7 +59,7 @@ validator.isEmail(body.email);
 
 The function `isEmail()` will return **true** or **false**.
 
-On the **client-side**:
+The following example validates the same thing on the **client-side**:
 
 ```js
 <script type="text/javascript" src="validator.min.js"></script>
@@ -71,7 +68,7 @@ On the **client-side**:
 </script>
 ```
 
-On the **client-side**, `isEmail()` return **true** or **false**, as well.
+On the **client-side**, `isEmail()` returns **true** or **false** as well.
 
 [/slide]
 
@@ -83,11 +80,11 @@ We can use **Express-Validator** to wrap the **validator.js** functions.
 
 **Express-Validator** is a set of **middlewares** for **express.js**.
 
-To install **express-validator**, we need to write `npm install express-validator`.
+To install **express-validator**, type `npm install express-validator` in the terminal.
 
-We can set checks for the fields from which we receive data with the `check()` function.
+We can set checks for the data input fields with the `check()` function.
 
-Now let us have a look at this example:
+Take a look at the following example:
 
 ```js
 const { check, validationResult } = require('express-validator');
@@ -104,7 +101,7 @@ if (!errors.isEmpty()) {
 
 As you can see above, we check the **email** and the **length** of the **password**.
 
-After that, we call the `validationResult()` function to get the result of the validation.
+Then, we call the `validationResult()` function to get the result of the validation.
 
 In the end, we check if there are any errors present in the result.
 
@@ -122,9 +119,9 @@ Otherwise, we **continue** with the account creation.
 
 Their work revolves around **modifying** the **request** and removing **illegal characters** from the data.
 
-If the user input is `John@example.com`, after the sanitizer function it will be `john@example.com`.
+If the user input is `John@example.com` for example, after the sanitizer function it will become `john@example.com`.
 
-Here are some use cases where **sanitizers** could be useful:
+These are cases where **sanitizers** could be useful:
 
 - **normalizing** emails - e.g. making sure all characters are in lowercase
 
@@ -132,7 +129,7 @@ Here are some use cases where **sanitizers** could be useful:
 
 - removing characters that are **blacklisted**
 
-Have a look at these **sanitizer** functions:
+Take a look at these **sanitizer** functions:
 
 ```js
 const { body } = require('express-validator');
@@ -143,13 +140,9 @@ body('password').isLength({ min: 5 }).isAlphanumeric().trim();
 
 Here, we use the `normalizeEmail` method to make sure the email matches all requirements.
 
-The `isLength` method makes sure the password's length is bigger than or equal to 5, while `isAlphanumeric` ensures it includes both letters and numerals.
+The `isLength` method makes sure the password's length is bigger than or equal to 5. 
 
-In this example, we use sanitizing functions on the **email** and the **password**:
-
-- `normalizeEmail()` will standardize the email address
-- `trim()` will trim the whitespaces at the beginning and the end of it
-
+The `isAlphanumeric` method ensures it includes both letters and numerals.
 [/slide]
 
 [slide hideTitle]
@@ -173,11 +166,11 @@ app.post('/user', body('email').custom(value => {
       };
 ```
 
-This code illistrates the creation of a **POST** request.
+This code illustrates the creation of a **POST** request.
 
-On the **body** we call the `custom()` validator function.
+We call the `custom()` validator function on the **body**.
 
-In this function, we specify the **validation** and the **message**.
+In this function, we specify the **validation** process and the error **message**.
 
 ## Custom Sanitizer
 
@@ -197,7 +190,7 @@ app.post(
 );
 ```
 
-We require the **sanitizeParam** from the **express-validator**.
+We require the **sanitizeParam** from **express-validator**.
 
 After that, we use `customSanitizer()` method, which will return the **ObjectId**.
 
@@ -207,7 +200,7 @@ After that, we use `customSanitizer()` method, which will return the **ObjectId*
 
 # Mongoose Validation
 
-Mongoose validation is a **middleware** validation defined in the **SchemaType**:
+Mongoose validation is a **middleware** validation performed in the **SchemaType**:
 
 
 ```js
@@ -247,7 +240,7 @@ Remember that `unique` is **not** a validator.
 
 To trigger the `validate()` hook we need the `save()` function.
 
-Before any `pre('save')` hook, are called the `pre('validate')` and `post('validate')` hooks,
+Before any `pre('save')` hook, the `pre('validate')` and `post('validate')` hooks are called.
 
 Here is an example:
 
@@ -268,7 +261,7 @@ schema.post('save', function () {
 
 The **validation** hooks will execute first.
 
-But the `pre('validate')` hook will be the first to run from the **validation** hooks.
+The `pre('validate')` hook will be the first to run.
 
 The **save** hooks will execute after the **validation** ones are ready.
 
@@ -293,9 +286,9 @@ The **SchemaTypes** are:
   * `enum` - validates whether a value is present in an array
   * `match` - compares the value to a given regular expression
   * `trim` - sets whether to invoke the `.trim()` method on the given value, boolean
-  * `lowercase` and `uppercase` - booleans used to set whether to call the `.toLowerCase()`/`.toUpperCase()` methods on the value
+  * `lowercase` and `uppercase` - booleans used to set whether to call the `.toLowerCase()` or `.toUpperCase()` methods on the value
 
-Here is an example of a **Mongoose schema**:
+The following code is an example of a **Mongoose schema**:
 
 ```js
 const userSchema = new Schema({
@@ -315,9 +308,7 @@ The nickname must be of type **"String"**.
 
 We cannot create a user without one, so we set `required` to **true**.
 
-We also set `minlength` and `maxlength` - they make sure sure the username's length is between **4** and **20**.
-
-
+We also set `minlength` and `maxlength` to make sure sure the username's length is between **4** and **20** characters.
 [/slide]
 
 [slide hideTitle]
@@ -389,7 +380,7 @@ And the **value** returns the value of the failed property.
 
 [slide hideTitle]
 
-# Validation
+# Best practices
 
 In the end, every type of validation is prone to failure.
 
@@ -404,7 +395,7 @@ When validation fails, it is recommended to:
 - **Avoid reloading** the page when possible
   * **notify** the user with a simple **message** instead
 
-You can find more info about **express-validator** and **mongoose** here:
+You can find more information about **express-validator** and **mongoose** here:
 
 - [express-validator](https://express-validator.github.io/docs/)
 - [mongoose](https://mongoosejs.com/docs/validation.html)
