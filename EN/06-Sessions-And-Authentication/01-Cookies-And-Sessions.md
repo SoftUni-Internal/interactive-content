@@ -4,7 +4,7 @@
 
 # HTTP Communication
 
-**HTTP** or **Hypertext Transfer Protocol** is responsible for conveying information between the **browser** and the **web server**.
+**HTTP** or **Hypertext Transfer Protocol** is responsible for conveying information between a **browser** and a **web server**.
 
 The communication happens by **sending a request** to the server and **waiting for its response**.
 
@@ -12,15 +12,15 @@ One of **HTTP**'s characteristics is that it is **stateless**.
 
 This denotes that every interaction (**request** and **response**) happens independently of others.
 
-A representation of that interaction would be an ATM - the user makes a request, and the ATM responds by giving money.
+A metaphorical representation of that interaction could be a cash machine - the user makes a request, and the ATM responds by providing the requested servce.
 
-The ATM does not know anything about the person's balance, and the person does not know how much money is in the ATM.
+The ATM has no way to track the user's account balance and the person does not know how much money is currently in the ATM.
 
 In general, less data collected is a good thing, but most online services require a certain amount of it to function.
 
 That is the purpose of **cookies**.
 
-A cookie is a **simple string**, **holding information**, and **stored in the browser** (client).
+A cookie is a **simple string**, **holding information**, **stored in the browser** (client).
 
 Data can also be stored on the server when necessary with **session cookies**.
 
@@ -49,11 +49,11 @@ They typically store user **preferences** and **personal settings**.
 
 The **most significant** difference between the two is **security**.
 
-**Cookies** can be **changed by the user** or a potential **attacker** from the browser.
+**Cookies** can be **changed by the user** or by a potential **attacker** from the browser.
 
 They can also be **deleted** or set to **last forever**.
 
-**Sessions**, however, **cannot be modified** by the client that makes them **more reliable** than cookies.
+**Sessions**, **cannot be modified** by the client that makes them **more reliable** than cookies.
 
 [/slide]
 
@@ -106,13 +106,13 @@ npm install express-session
 
 Unlike the `cookie-parser` middleware, sessions require some **additional settings**:
 
-- `secret` - Used to **sign** the cookies. It is recommended to **use a random string**
+- `secret` - Used to **sign** cookies. It is recommended to **use a random string**
 
 - `httpOnly` - Specifies that the cookie is readable **only from the server**
 
 - `secure` - The cookie will be sent **only** through **HTTPS**
 
-This is how to set up the middleware for work:
+This is how to set up this middleware for work:
 
 ```js
 const session = require("express-session");
