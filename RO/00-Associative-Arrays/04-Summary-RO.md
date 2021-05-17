@@ -9,7 +9,7 @@
 - Maps conțin perechi `{key -> value}`
    - `keyset` cuprinde un set de chei unice
    - `values` cuprinde o colecție de valori 
-    - iterarea printr-o instanță map preia cu ajutorul expresiei `Map.Entry<K, V>`
+    - iterarea peste o instanță map preia înregistrările cu ajutorul expresiei `Map.Entry<K, V>`
 
 ```java
 import java.util.Map;
@@ -21,9 +21,9 @@ public class Main {
 }
 ```
 
-- Lambda și Stream API ajută la procesarea colecțiilor 
+- Expresiile lambda și Stream API ajută la procesarea colecțiilor 
 
-- Puteți folosi `map()` pentru manipularea elementelor dintr-o colecție 
+- Puteți folosi `map()` pentru manipularea elementelor dintr-o colecție:
 
 ```java
 String[] words = {"abc", "def", "geh", "yyy"};
