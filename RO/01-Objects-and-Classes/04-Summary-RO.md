@@ -5,7 +5,7 @@
 
 ## În această lecție ați învățat:
 
-- Clasele definesc următoarele șabloane pentru crearea obiectelor
+- Clasele definesc șabloane pentru crearea obiectelor
      - câmpuri
      - constructori
      - proprietăți
