@@ -20,7 +20,7 @@ Clasa trebuie să aibă un constructor și următoarele metode:
 
 Scrieți un program care citește un articol în următorul **format**: "\{**title**\}, \{**content**\}, \{**author**\}". 
 
-Pe linia următoare, veți obține un **număr n**.
+Pe linia următoare, veți primi un **număr n**.
 
 Pe **următoarele n linii**, veți primi una dintre următoarele **comenzi**:
 
@@ -28,7 +28,7 @@ Pe **următoarele n linii**, veți primi una dintre următoarele **comenzi**:
 - "**ChangeAuthor:** \{**new author**\}" 
 - "**Rename:** \{**new title**\}"
 
-La final, **tipăriți articolul final**.
+**Tipăriți articolul final**.
 
 
 ### Exemplu
@@ -135,17 +135,15 @@ The haunting of hill house - better content2:  Shirley Jackson
 
 ## Descriere
 
-Creați o clasă numit **Person** are are următoarele proprietăți:
+Creați o clasă numită **Person** care are următoarele proprietăți:
 - name
 - age
 
 Pe prima linie veți primi un număr N, care reprezintă numărul de persoane.
 
-Pe următoarele N linii, veți primi informații despre acele persoane.
+Pe următoarele **N** linii, veți primi informații despre acele persoane.
 
-**Imprimați informațiile despre persoanele** a căror **vârstă este mai mare de 30 de ani**, în următorul **format**:
-
-"\{**name**\} **-** \{**age**\}"
+**Imprimați informațiile despre persoanele** a căror **vârstă este mai mare de 30 de ani**, în următorul **format**: "\{**name**\} **-** \{**age**\}"
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -348,7 +346,7 @@ Anntoanette - 39
 [task-description]
 
 ## Descriere
-Actualizați programul "**Articles**", astfel încât să poată stoca o **listă de articole**.
+Actualizați clasa "**Articles**", astfel încât să poată stoca o **listă de articole**.
 
 Veți avea nevoie doar de metoda **toString**.
 
@@ -492,17 +490,17 @@ Most Valuable Playboy - content4: Lauren Blakely
 
 ## Descriere
 
-Scrieți un program care primește **un număr n de elevi** și îi **ordonează (descendent) în funcție de note** .
+Scrieți un program care primește **un număr n de elevi** și îi **ordonează descrescător în funcție de note** .
 
 Fiecare elev trebuie să aibă **first name** (șir), **last name** (șir) și **grade** (număr în virgulă mobilă).
 
 ### Intrare
 
-- Prima linie va fi un **număr n**
-- Pe următoarele **n linii** veți primi informații despre elev în **formatul** "\{**first name**\} \{**second name**\} \{**grade**\}"
+- Pe prima linie veți primi un **număr n**
+- Pe următoarele **n linii** veți primi informații despre elev în **următorul format**: "\{**first name**\} \{**second name**\} \{**grade**\}"
 
 ### Ieșire
--Tipăriți fiecare elev în următorul format: "\{**first name**\} \{**second name**\}**:** \{**grade**\}"
+- Tipăriți fiecare elev în următorul format: "\{**first name**\} \{**second name**\}**:** \{**grade**\}"
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -626,7 +624,7 @@ Amias Mathews: 2.30
 
 [task-description]
 ## Descriere
-Până când primiți **comanda** "**End**", veți primi linii de intrare în următorul format:
+Până la introducerea **comenzii** "**End**", veți primi linii de intrare în următorul format:
 
 - \{**typeOfVehicle**\} \{**model**\} \{**color**\} \{**horsepower**\}
 
@@ -642,7 +640,7 @@ După comanda "**End**", veți începe să primiți **informații despre vehicul
 
 **Horsepower:** \{**horsepowerOfVehicle**\}"
 
-Când primiți comanda **"Close the Catalogue"**, **imprimați puterea medie** pentru mașini și camioane în **formatul**:
+Când primiți comanda **"Close the Catalogue"**, **imprimați puterea medie** a mașinilor și a camioanelor în **formatul**:
 
 "\{**typeOfVehicles**\} **have an average horsepower of** \{**averageHorsepower**\}."
 
