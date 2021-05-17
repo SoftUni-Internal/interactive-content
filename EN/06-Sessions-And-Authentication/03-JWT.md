@@ -10,19 +10,19 @@
 
 There are two ways to sign a token digitally:
 
-- `secret`: signing with a secret, using the **HMAC** algorithm
+- `secret`: signing with a "secret", using the **HMAC** algorithm
 
 - `public/private key`: signing with a public/private key, using the **RSA** or **ECDSA** algorithms
 
-Signing the token prevents the notorious **man-in-the-middle** cyber attack.
+Signing the token prevents **man-in-the-middle** cyber attacks.
 
 A **man-in-the-middle** attack occurs when the attacker **intercepts** and **alters** the messages between two people.
 
-It is the same as if the postman decided to open the mail and switch the letters.
+As if a postman decides to open the mail and switch the letters.
 
 The two people think that their communication is private.
 
-However, the whole conversation is orchestrated by the man in the middle, as the name suggests.
+However, the whole conversation can be altered by the man in the middle, as the name suggests.
 
 [/slide]
 
@@ -84,7 +84,7 @@ A **JSON Web Token** consists of **three** parts:
 
 - **Signature**: contains the verification value
 
-Here you can see JWT and its **parts**, visualized:
+JWT and its **structure**, visualized:
 
 [image assetsSrc=JS-BackEnd-Sessions-And-Authentication-3.jpg ]
 
@@ -116,13 +116,13 @@ console.log(token);
 // eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FycnkiLCJhZ2UiOjI3LCJpYXQiOjE2MDk4ODc5NzMsImV4cCI6MTYxMDA2MDc3M30.AIuFu04O39uokaGwfxy7iWzjr9vnsI00gqxXJ-peT8Y
 ```
 
-The `sign` method accepts the payload, along with the key, and an **options** object.
+The `sign` method accepts the payload, along with the key and an **options** object.
 
 This object can contain multiple properties, including:
 
 - `algorithm` - the default value is `HS256`
-- `expiresIn` - can be equal to a number in seconds (like 120, for 2 minutes), or a timespan string - '10 h', '5 days', '10d'
-- `mutatePayload` - a boolean that, if equal to true, enables direct modification of the payload by the `sign` method
+- `expiresIn` - can be a number in seconds (like 120, for 2 minutes) or a timespan string - '10 h', '5 days', '10d'
+- `mutatePayload` - a boolean, if equal to true, enables direct modification of the payload by the `sign` method
 
 The **JWT** signing process is **reversible**.
 
