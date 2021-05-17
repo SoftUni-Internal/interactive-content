@@ -540,7 +540,7 @@ function lockedProfile(){
 
 # Descriere
 
-**Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/04-Locked-Profile.zip) **pentru această sarcină.**
+**Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/04.Locked-Profile-NEW.zip) **pentru această sarcină.**
 
 În această problemă, trebuie să, **creați o funcționalitate JavaScript** care **spectacol** și **ascunde** informațiile adiționale despre utilizatori. 
 

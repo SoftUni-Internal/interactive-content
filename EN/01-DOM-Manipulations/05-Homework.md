@@ -540,7 +540,7 @@ function lockedProfile(){
 
 # Description
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/04-Locked-Profile.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/04.Locked-Profile-NEW.zip) **for this task.**
 
 In this problem, you should **create a JavaScript functionality** that **shows** and **hides** the additional information about users.
 
