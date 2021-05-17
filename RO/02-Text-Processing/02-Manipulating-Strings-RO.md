@@ -7,7 +7,7 @@
 
 Există **două** moduri de a concatena un `șir`:
 
-- Folosind operatorii `+` sau `+ =`
+- Folosind operatorul `+` sau `+=`
 
 ```java live
 String text = "Hello" + ", " + "SoftUni";
@@ -36,9 +36,9 @@ System.out.println(result); // "Hello, SoftUni!"
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/03.Java-Fundamentals-Text-Processing/RO/interactive-java-fundamentals-text-processing-9-joining-strings-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Metoda Java `String.join(delimiter, elementsToJoin)` este un utilă pentru concatenarea șirurilor, mai ales atunci când aveți mai multe elemente care trebuie separate printr-un delimitator precum un spațiu, o virgulă sau orice alt caracter.
+Metoda Java `String.join(delimiter, elementsToJoin)` este utilă pentru concatenarea șirurilor.
 
-Metoda necesită un delimitator pentru a separa șirurile, dar dacă doriți să le concatenați fără a separa elementele în vreun fel, puteți folosi **""** ca delimitator.
+Aceasta necesită un delimitator pentru a separa șirurile, dar dacă doriți să le concatenați fără a separa elementele în vreun fel, puteți folosi **""** ca delimitator.
 
 Aici sunt două exemple care ilustrează utilizarea `String.join()` în diferite situații.
 
@@ -186,7 +186,7 @@ String extractWord = text.substring(11);
 System.out.println(extractWord); // John
 ```
 
-`substring(int startIndex, int endIndex)` - returnează un **șir nou** începând de la **startIndex** specificat (inclusiv) până la **endIndex** (exclusiv)
+`substring(int startIndex, int endIndex)` - returnează un **șir nou** care începe de la **startIndex** specificat (inclusiv) până la **endIndex** (exclusiv)
 
 ```java live
 String fullName = "John Doe";
@@ -207,7 +207,7 @@ System.out.println(firstName); // John
 
 Este posibilă căutarea primelor sau ultimelor apariții ale unor tipare într-un șir:
 
-`indexOf()` - returnează poziția primei apariții a caracterelor specificate, iar dacă nu există **o potrivire** se returnează **-1** 
+`indexOf()` - returnează poziția primei apariții a caracterelor specificate, iar dacă nu există **o potrivire**, se returnează **-1** 
 
 ```java live 
 String fruits = "banana, apple, kiwi, banana, apple";
@@ -218,7 +218,7 @@ System.out.println(fruits.indexOf("orange"));    // -1
 
 ```
 
-`lastIndexOf()` - returnează poziția ultimei apariții a caracterelor specificate, iar dacă nu există **o potrivire** se returnează **-1** 
+`lastIndexOf()` - returnează poziția ultimei apariții a caracterelor specificate, iar dacă nu există **o potrivire**, se returnează **-1** 
 
 ```java live
 String fruits = "banana, apple, kiwi, banana, apple";
@@ -253,7 +253,7 @@ Pe **prima linie** veți primi un **șir**.
 
 Pe **a doua linie** veți primi un **al doilea șir**.
 
-Scrieți un program care **elimină toate aparițiile** **primului șir** din **al doilea** până când nu există nicio potrivire.
+Scrieți un program care **elimină toate aparițiile** **primului șir** în **al doilea**, până când nu există nicio potrivire.
 
 La sfârșit **tipăriți șirul rămas**.
 
@@ -265,7 +265,7 @@ La sfârșit **tipăriți șirul rămas**.
 
 [hints]
 [hint]
-Citiți intrarea.
+Citiți datele de intrare.
 
 Găsiți **primul indice** unde apare cuvântul cheie. 
 Utilizați metoda încorporată `indexOf()`.
@@ -350,7 +350,7 @@ stration
 
  Un `String` poate fi împărțit în funcție de **unul** sau **mai multe** criterii, folosind metoda `split()`.
 
-- **Împărțirea** unui șir în funcție de un **model** dat
+- **Împărțirea** unui șir în funcție de un **model** dat:
 
 ```java live
 String text
@@ -362,7 +362,7 @@ System.out.println(words[1]);
 System.out.println(words[2]);
 ```
 
-- Împărțirea prin **separatoare multiple**
+- Împărțirea prin **separatoare multiple**:
 
 ```java live
 
@@ -384,7 +384,7 @@ System.out.println(String.join(", ",words));
 
 Java face posibilă **înlocuirea** într-un șir. 
 
-- `replace(match, replacement)` - **Înlocuiește toate aparițiile** și returnează un **șir nou**
+- `replace(match, replacement)` - **Înlocuiește toate aparițiile caracterelor date** și returnează un **șir nou**
 
 ```java live
 String text = "I have three bananas, three oranges, three apples.";
@@ -420,7 +420,7 @@ Scrieți un program care acceptă un **text** și un **șir de cuvinte interzise
 
 **Toate cuvintele incluse** în **lista de interdicții** trebuie **înlocuite** cu **asteriscuri** \"__\*__\", în număr egal cu **lungimea cuvântului.**
 
-Intrările din lista de interdicții vor fi separate printr-o **virgulă** și **spațiu** ", ".
+Datele de intrare din lista de interdicții vor fi separate printr-o **virgulă** și **spațiu** ", ".
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -431,9 +431,9 @@ Intrările din lista de interdicții vor fi separate printr-o **virgulă** și *
 
 [hints]
 [hint]
-Citiți intrarea.
+Citiți datele de intrare.
 
-**Înlocuiți toate cuvintele interzise** din text **cu asterisc**. 
+**Înlocuiți toate cuvintele interzise** din text **cu asteriscuri**. 
 Utilizați **metoda încorporată** `replace(banWord, replacement)`.
 [/hint]  
 [/hints] 
