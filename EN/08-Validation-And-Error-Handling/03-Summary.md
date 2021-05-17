@@ -29,7 +29,7 @@ schema.post('save', () => {});
 ```
 
 - There are three main types of errors
-  * **technical** errors - occur as a result of equipment problems
+  * **technical** errors - occur as a result of hardware problems
   * **expected** errors
   * **bugs**, also known as logical errors
 
