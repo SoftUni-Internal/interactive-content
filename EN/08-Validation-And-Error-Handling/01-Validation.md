@@ -15,7 +15,7 @@ Data validation in web development is performed by comparing user input with a s
 
 [slide hideTitle]
 
-# How to validate data
+# How to Validate Data
 
 We can validate on the **server-side**, on the **client-side** and in the **database**.
 
