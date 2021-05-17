@@ -75,7 +75,9 @@ Odată ce conținutul necesar este **descărcat**, JavaScript **generează** **e
 
 **Distincția** clară dintre **logică și date** face codul **mai ușor de citit și de utilizat**.
 
-Până acum, când am adăugat elementele DOM în mod dinamic, am folosit bucle pentru a le manipula. Acest lucru activează așa-numitul "**reflow**" sau procesul de **recalculare** a pozițiilor și a geometriilor **elementelor** din document pentru a **re-randa** o parte sau tot conținutul documentului. 
+Până acum, când am adăugat elementele DOM în mod dinamic, am folosit bucle pentru a le manipula. 
+
+Acest lucru activează așa-numitul "**reflow**" sau procesul de **recalculare** a pozițiilor și a geometriilor **elementelor** din document pentru a **re-randa** o parte sau tot conținutul documentului. 
 
 Prin **reducerea reflow-ului**, îmbunătățim **performanța** aplicației.
 [/slide]
