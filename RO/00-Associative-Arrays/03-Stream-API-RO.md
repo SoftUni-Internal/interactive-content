@@ -7,7 +7,7 @@ Ne permite să **reducem codul**, să creăm **programe mai ușor de citit** și
 
 De asemenea, permite **codarea mai ușoară a operațiilor paralele**. 
 
-Java Stream este o componentă care este capabilă de **iterația internă a elementelor sale**, ceea ce înseamnă că poate să **itereze elementele sale**. 
+Java Stream este o componentă capabilă de **iterarea internă a elementelor sale**, ceea ce înseamnă că poate să **itereze elementele sale de unul singur**. 
 
 Un stream este o **secvență de obiecte** care admite **diverse metode**.
 
@@ -25,13 +25,13 @@ Un stream API are multe **operații terminale** care agregă un flux (stream) ș
 
 - `sum()`
 
-Aceste operații lucrează conform implementărilor predefinite. 
+Aceste operații funcționează conform implementărilor predefinite. 
 
 Se numește **operație terminală**, fiindcă pentru a obține valoarea minimă, de exemplu, trebuie să **traversăm valorile din interiorul fluxului** și să obținem rezultatul.
 
 După ce obținem valoarea minimă, **nu este posibilă convertirea acesteia înapoi în flux**.
 
-Cele mai multe dintre metode folosesc expresii lambda.
+Cele mai multe dintre metode folosesc **expresii lambda**.
 
 [/slide]
 
@@ -41,9 +41,9 @@ Cele mai multe dintre metode folosesc expresii lambda.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-19-20-21-processing-arrays-with-stream-api-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Putem procesa **matrice** cu ajutorul cu ajutorul unor **operații pe o singură linie**, în loc să folosim bucle cu indici sau bucle `for-each` pentru operații simple:
+Putem procesa **matrice** cu ajutorul unor **operații pe o singură linie**, în loc să folosim bucle cu indici sau bucle `for-each` pentru operații simple:
 
-- `min()` - găsește și returnează elementul **cel mai mic** dintr-o colecție
+- `min()` - găsește și returnează **cel mai mic** element dintr-o colecție
 ```java live
 int [] numbers = new int[]{15, 25, 35};
 int min = Arrays.stream(numbers)
@@ -102,10 +102,10 @@ System.out.println(average);
 [slide hideTitle]
 # Procesarea Colecțiilor cu Stream API
 
-Putem folosi operații pe o singură linie pentru a procesa colecții de tip **Lists** și **Maps**, în loc să folosim bucle cu indici sau bucle `for-each` pentru operații simple:
+Putem folosi operații pe o singură linie pentru a procesa colecții precum **Lists** și **Maps**, în loc să folosim bucle cu indici sau bucle `for-each` pentru operații simple:
 
 
-- `min()` - găsește și returnează **cel mai mic** element dintr-o colecție:
+- `min()` - găsește și returnează **cel mai mic** element dintr-o colecție
 ```java live
 List<Integer> numbers = new ArrayList<>() {{
     add(15); add(25); add(35);
@@ -191,7 +191,7 @@ int[] numbers = Arrays.stream(scanner.nextLine()
             .mapToInt(e -> Integer.parseInt(e))
             .toArray();
 ```
-Codul de mai sus separă intrarea prin spații, apoi parcurge fiecare element cu ajutorul metodei `maptoInt()`, transformându-l în număr întreg.
+Codul de mai sus separă datele de intrare prin spații, apoi parcurge fiecare element cu ajutorul metodei `maptoInt()`, transformându-l în număr întreg.
 
 ```java live
 String[] words = {"abc", "def", "geh", "yyy"};
@@ -203,9 +203,9 @@ for (String word : words) {
 }
 ```
 
-În exemplul de mai sus, folosim metoda `map()` perntru a parcurge elementele din matricea cu cuvinte.
+În exemplul de mai sus, folosim metoda `map()` pentru a parcurge elementele din matricea **words**.
 
-w -> w + "yyy" înseamnă ca această funcție lambda acceptă un paramtru, care poate fi numit "w", "x", "e", "element" sau oricum doriț, și efectuează o operație asupra fiecărui element (în acest caz, concatenarea unui șir la cel existent).
+`w -> w + "yyy"` înseamnă ca această funcție lambda acceptă un parametru, care poate fi numit "w", "x", "e", "element" sau oricum doriți, și efectuează o operație asupra fiecărui element (în acest caz, concatenarea unui șir la cel existent).
 
 [/slide]
 
@@ -242,7 +242,7 @@ List<Integer> numbers = Arrays.stream(scanner.nextLine()
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-27-filtering-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Metoda `filter()` parcurge o colecție și selectează elementele care indeplinesc anumite condiții:
+Metoda `filter()` parcurge o colecție și selectează elementele care îndeplinesc anumite condiții:
 
 ```java
 int[] numbers = Arrays.stream(scanner.nextLine()
@@ -251,7 +251,7 @@ int[] numbers = Arrays.stream(scanner.nextLine()
             .filter(n -> n > 0)
             .toArray();
 ```
-În exemplul de mai sus separăm datele de intrare prin spații, transformăm fiecare element într-un număr întreg, iar apoi filtrămm și stocăm doar elementele care sunt mai mari decât 0.
+În exemplul de mai sus separăm datele de intrare prin spații, transformăm fiecare element într-un număr întreg, iar apoi filtrăm și stocăm doar elementele care sunt mai mari decât 0.
 
 [/slide]
 
@@ -407,7 +407,7 @@ sell
 
 Există **două** metode de a sorta colecții:
 
-- Sortarea în ordine **crescătoare** (**naturală**)
+- Sortarea în ordine **crescătoare** (**naturală**):
 
 ```java live no-template
 import java.util.*;
@@ -459,7 +459,7 @@ public class Main {
 
 [slide hideTitle]
 
-# Sortarea colecțiilor după mai Multe Criterii
+# Sortarea Colecțiilor după mai Multe Criterii
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-31-sorting-collections-by-multiple-criteria-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -579,7 +579,7 @@ Dacă există mai **puțin** de 3 numere, imprimați-le pe **toate**.
 
 Ordonați lista folosind **Stream API**.
 
-## Intrare/ Constrângeri
+## Intrare / Constrângeri
 Citiți o listă de numere întregi.
 
 ## Ieșire 
