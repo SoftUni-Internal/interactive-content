@@ -5,14 +5,14 @@
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/04.JS-Fundamentals-Regular-Expressions-RegExp/RO/04.JS-Fundamentals-Regular-Expressions-9-10-Quantifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Cuantificatorii** permit utilizatorilor să specifice numărul de aparițți ale potrivirilor.
+**Cuantificatorii** permit utilizatorilor să specifice numărul de apariții ale potrivirilor.
 
 | **Notație** | **Semnificație** |
 | --- | --- |
 |`*`|**Zero** sau **mai multe** apariții|
 |`+`|**Una** sau **mai mult** apariții|
-|`?`|Apare **zero** sau **o** dată, prescurtare pentru {0,1}|
-|`{}`|Numărul **exact** speciificat al aparițiilor|
+|`?`|Apare de **zero** ori sau **o** dată, prescurtare pentru {0,1}|
+|`{}`|Numărul **exact** specificat al aparițiilor|
 
 - `*` - se potrivește cu elementul precedent de zero sau de mai multe ori
 
