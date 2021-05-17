@@ -86,7 +86,7 @@ A **JSON Web Token** consists of **three** parts:
 
 Here you can see JWT and its **parts**, visualized:
 
-[image assetsSrc=JS-BackEnd-Sessions-And-Authentication-3.jpg ]
+[image assetsSrc="JS-BackEnd-Sessions-And-Authentication-3.jpg" /]
 
 [/slide]
 
