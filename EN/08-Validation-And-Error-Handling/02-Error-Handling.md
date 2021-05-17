@@ -10,7 +10,7 @@ There are several types of errors:
 
 - **Technical** or **network** errors:
 
-  * when the server is down, for example
+  * when the server is down
 
 - **Usual** or **expected** errors:
 
@@ -32,19 +32,19 @@ There are several types of errors:
 
 # Working with Errors
 
-There is a **built-in error** object in **node.js**, which we can throw in case of an error.
+There is a **built-in error** object in **node.js**, which we can use to throw an error.
 
-To catch errors in **synchronous** code, we need to use **try-catch**.
+To catch errors in **synchronous** code, we need to use a **try-catch** block.
 
-For **asynchronous** code we use `then().catch()`.
+For **asynchronous** code, we use `then().catch()`.
 
 We can handle the errors directly with **try-catch** or `then().catch()`. 
 
 Depending on our preference, we can use the **ExpressJS** tools.
 
-When we use the **ExpressJS** functionality, we need to use the `next()` functions, which calls a middleware.
+When we use the **ExpressJS** functionality, we need to use the `next()` function, which calls a middleware.
 
-This is an example use of `next`:
+This is an example of how to use `next`:
 
 ```js
 async function validateCookies (req, res, next) {
@@ -79,11 +79,9 @@ async (req, res, next) => {
 };
 ```
 
-Because it is synchronous, we use `try-catch` block statement.
+In the `try{...}` statement, we print the **username** to the console.
 
-In the `try{...}` statement, we print the **username** in the console.
-
-In the `catch(error){...}` statement, we print the **error** in the console.
+In the `catch(error){...}` statement, we print the **error** to the console.
 
 [/slide]
 
@@ -91,7 +89,7 @@ In the `catch(error){...}` statement, we print the **error** in the console.
 
 # Working Asynchronously with Errors
 
-We can handle asynchronous errors with `.then().catch()` block statement:
+We can handle asynchronous errors with the `.then().catch()` block statement:
 
 ```js
 Post.findById(productId)
@@ -106,9 +104,9 @@ Post.findById(productId)
   });
 ```
 
-In the `then()` statement, we print the **product** in the console.
+In the `then()` statement, we print the **product** to the console.
 
-But if the product is missing, it will be executed the `catch()` statement.
+But if the product is missing, the `catch()` statement will be executed.
 
 In this case, we check the **status code**.
 
@@ -124,7 +122,7 @@ After that, we pass the **error** to the `next()` middleware.
 
 **Error handling** is important for a number of reasons:
 
-- It makes our application more user-friendly, as we can format the error in a proper way
+- It makes our application more user-friendly, as we can deal with the error in a proper way
   * we can also make it easier for the user to contact a help center when a problem occurs
 
 - Developers benefit from code that is easier to debug and maintain
