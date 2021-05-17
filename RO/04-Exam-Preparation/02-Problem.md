@@ -19,25 +19,23 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care **gestionează utilizatorii și e-mailurile** trimise de utilizatori.
-
-Trebuie să păstrați informații despre numele de utilizator și e-mailurile trimise.
+Creați un program care **gestionează utilizatorii și e-mailurile acestora**.
 
 E-mailurile sunt **reprezentate ca șiruri**.
 
-Veți primi **linii cu comenzi separate prin** "->" **până când veți primi** comanda "**Statistics**".
+Veți primi linii cu comenzi separate prin "->", **până la introducerea** comenzii "**Statistics**".
 
 Există **trei comenzi posibile**:
 - "**Add->**\{**username**\}" 
-    - **verificați dacă numele de utilizator există și dacă se imprimă** - "\{**username**\} **is already registered"**
+    - **verificați dacă numele de utilizator există, iar dacă acesta există, imprimați următorul mesaj*: "\{**username**\} **is already registered"**
     - dacă nu există, atunci adăugați utilizatorul la colecția de utilizatori
 - "**Send->**\{**username**\}**->**\{**Email**\}"
-    - adăugați mesajul \{**Email**\} la colecția de e-mailuri trimise din \{**username**\}
+    - adăugați \{**Email-ul**\} la colecția de e-mailuri
 - "**Delete->**\{**username**\}"
     - ștergeți utilizatorul dat, dacă acesta există
     - dacă utilizatorul nu există, tipăriți "\{**username**\} **not found!**"
 
-În cele din urmă, trebuie să **tipăriți numărul de utilizatori**, **fiecare utilizator cu e-mailurile sale**.
+În cele din urmă, trebuie să **tipăriți numărul de utilizatori** și **toți utilizatorii, împreună cu e-mailurile acestora**.
 
 **Utilizatorii** trebuie să fie **sortați în ordine descrescătoare** după **numărul de e-mailuri trimise și apoi după numele lor de utilizator în ordine crescătoare în următorul format**:
 
@@ -48,14 +46,11 @@ Există **trei comenzi posibile**:
  - \{**EmailN**\}"
 
 ### Intrare
-- Veți primi linii până când veți primi comanda "**Statistics**"
+- Veți primi linii cu date de intrare, până la introducerea comenzii "**Statistics**"
 - Comenzile vor fi în formatul descris mai sus
 
 ### Ieșire
-- Imprimați colecția în formatul descris mai sus după comanda "**Statistics**"
-
-### Ieșire
-Imprimați colecția în formatul descris mai sus după ce ați primit comanda "**Statistics**".
+Imprimați colecția în formatul descris mai sus, după ce ați primit comanda "**Statistics**".
 
 ### Exemplu
 | **Intrare** | **Ieșire** |
@@ -71,14 +66,14 @@ Imprimați colecția în formatul descris mai sus după ce ați primit comanda "
 
 [hints]
 [hint]
-Mai întâi primim **utilizatorii** noștri.
-Deoarece **nu sunt** încă în colecția noastră, îi **adăugăm**.
+Mai întâi, primim **utilizatorii**.
+Deoarece aceștia **nu sunt** încă în colecția noastră, îi **adăugăm**.
 [/hint] 
 [hint]
-Apoi acesștia încep să **trimită** e-mailuri.
+Apoi, acesștia încep să **trimită** e-mailuri.
 [/hint] 
 [hint]
-la final, **imprimăm** rezultatul în formatul descris.
+La final, **imprimăm** rezultatul în formatul descris.
 [/hint] 
 [/hints] 
 
