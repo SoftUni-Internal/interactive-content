@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-14-15-defining-simple-classes-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Atunci când se efectuează definirea unei clase în Java, unele componente sunt obligatorii, iar altele sunt opționale.
+Pentru definirea unei clase în Java, unele componente sunt obligatorii, iar altele sunt opționale.
 
 Componentele **obligatorii** sunt:
 
@@ -15,21 +15,21 @@ Componentele **obligatorii** sunt:
 
 - **Corpul** clasei - între **{}**
 
-Componente utile, dar care nu sunt obligatorii:
+Componente **utile**, dar care nu sunt obligatorii:
 
 - Câmpuri 
 
-- Metode \(constructori, getters, setters\)
+- Metode \(constructori, getters, setters, etc.\)
 
-Fiecare **clasă**, **câmp**, **constructor** sau **metodă** este inițializată cu un **modificator de acces** înainte, care specifică **accessibilitea**. 
+Fiecare **clasă**, **câmp**, **constructor** sau **metodă** este inițializată cu un **modificator de acces** înainte, care specifică **accessibilitea** acestora. 
 
-**Nivelul de acces** poate fi **schimbat** prin aplicarea **modificatorului de acces** . 
+**Nivelul de acces** poate fi **schimbat** prin aplicarea **modificatorului de acces**. 
 
 Atunci când nu specificăm un cuvânt cheie se aplică modificatorul de acces implicit.
 
 În mod implicit, fiecare clasă este accesibilă pentru o altă clasă din același pachet.
 
-Există posibilitatea de a genera **automat** prin IntelliJ IDEA **constructori**, **getters**, **setters** și alte metode des folosite. 
+Există posibilitatea de a genera **automat** **constructori**, **getters**, **setters** și alte metode des folosite **prin IntelliJ IDEA**. 
 
 Pentru a face asta, folosiți `Right-click + Generate`. 
 
@@ -128,7 +128,7 @@ class Car {
 
 Un getter și un setter pot fi declarați pentru fiecare câmp.
 
-Getters furnizează **acces** la câmp și citesc valoarea acestuia. 
+Getters furnizează **acces** la câmp și la valoarea acestuia. 
 
 Aceștia încep întotdeauna cu cuvântul `get`, urmat de numele variabilei:
 
@@ -179,7 +179,7 @@ Din acest motiv, **variabilele locale** sunt create ca **referințe** pentru ace
 
 **Java Virtual Machine** este responsabilă pentru **urmărirea** referințelor obiectului.
 
-Dacă nu sunt **referințe** pentru un obiect, acesta devine **gunoi** și este **șters**.
+Dacă nu există **referințe** pentru un obiect, acesta devine **gunoi** și este **șters**.
 
 Este posibilă crearea a **multor obiecte** dintr-o clasă folosind cuvântul cheie `new`. 
 
@@ -201,13 +201,11 @@ class Program {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-21-22-constructors-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Constructorul este o metodă specială, executată în timpul creării unui obiect, care **setează starea inițială a obiectului**.
+Constructorul este o metodă specială, executată **în timpul creării** unui obiect, care **setează starea inițială a obiectului**.
 
 Numele constructorului este **același cu numele clasei**.
 
-Constructorul **poate să aibă parametri**, fapt care se folosește pentru **inițializarea câmpurilor**.
-
-Toate clasele au **implicit constructor**. 
+Constructorul **poate să aibă parametri**, fapt folosit pentru **inițializarea câmpurilor**.
 
 O clasă poate să aibă mai mulți constructori.
 
@@ -498,9 +496,9 @@ Definiți o clasă **Song**, care conține următoarele informații despre melod
 
 ### Intrare / Constrângeri
 
-- Pe prima linie veți primi **numărul de melodii - N**.
+- Pe prima linie veți primi **numărul de melodii - N**
 
-- Pe următoarele N linii veți primi date în următorul format:
+- Pe următoarele **N** linii veți primi date în următorul format:
 "\{**typeList**\}\_\{**name**\}\_\{**time**\}".
 
 - Pe ultima linie veți primi **Type List** sau **"all"**
