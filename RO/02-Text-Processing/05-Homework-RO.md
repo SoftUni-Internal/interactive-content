@@ -17,12 +17,12 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește numele utilizatorilor pe o singură linie (însoțite de ", ") și **tipărește toate numele de utilizatori valizi**.
+Scrieți un program care citește numele utilizatorilor pe o singură linie (separate prin ", ") și **tipărește toate numele valide de utilizatori**.
 
-Un **nume de utilizator valid**:
+Un **nume valid de utilizator**:
 - Are **lungimea între 3 și 16 caractere**
 - Conține **numai litere, cifre, cratime și sublinieri**
-- Nu are **simboluri redundante** înainte, după sau între ele.
+- Nu are **simboluri redundante** înainte, după sau în interiorul său
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -167,11 +167,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați o **metodă care ia două șiruri** ca argumente și **returnează suma codurilor caracterelor lor înmulțite** (înmulțiți str1\[0\] cu str2\[0\] și adăugați rezultatul la suma totală)
+Creați o **metodă care ia două șiruri** ca argumente și **returnează suma codurilor caracterelor lor înmulțite** (înmulțiți str1\[0\] cu str2\[0\] și adăugați rezultatul la suma totală).
 
 Apoi, **continuați cu următoarele două caractere**.
 
-**Dacă unul dintre șiruri este mai lung decât celălalt**, **adăugați codurile de caractere rămase** la suma totală fără multiplicare.
+**Dacă unul dintre șiruri este mai lung decât celălalt**, **adăugați codurile caracterelor rămase** la suma totală fără a le înmulți.
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -462,7 +462,7 @@ public class Main {
 [task-description]
 ## Descriere
 Se dau două rânduri:
- - Pe primul puteți primi un număr foarte mare (de la 0 la 1050)
+ - Pe primul rănd puteți primi un număr foarte mare (de la 0 la 1050)
  - Pe al doilea rând veți primi o singură cifră (de la 0 la 9)
 
 Trebuie să afișați produsul acestor numere.
@@ -540,7 +540,7 @@ Trebuie să afișați produsul acestor numere.
 [/test]
 [test]
 [input]
-999999999999999999999999999999999999999999
+2999999999999999999999999999999999999999999
 0
 [/input]
 [output]
@@ -669,16 +669,16 @@ public class Main {
 
 Imediat după marcare, va exista un număr întreg, care semnifică **puterea exploziei**.
 
-Trebuie să **eliminați x caractere** (unde x este forța exploziei), **începând după caracterul care marchează explozia** ("\>").
+Trebuie să **eliminați x caractere** (unde x este puterea exploziei), **începând după caracterul care marchează explozia** ("\>").
 
-Dacă găsiți **un alt semn de explozie** ("\>") **în timp ce ștergeți caractere**, trebuie să **adăugați valoarea forței la forța exploziei anterioare**.
+Dacă găsiți **un alt semn de explozie** ("\>") **în timp ce ștergeți caractere**, trebuie să **adăugați valoarea puterea la puterea exploziei anterioare**.
 
 Când toate caracterele sunt procesate, **tipăriți șirul fără caracterele șterse**.
 
-**Nu trebuie să ștergeți caracterul de explozie** - "\>", dar **trebuie să ștergeți numerele întregi**, care reprezintă puterea.
+**Nu trebuie să ștergeți caracterul de explozie** - "\>", dar **trebuie să ștergeți numerele întregi** care reprezintă puterea.
 
 ### Intrare
-Veți primi o singură linie care va conține un șir.
+Veți primi o singură linie cu date de intrare, care va conține un șir.
 
 ### Ieșire
 Imprimați ce a rămas din șir după explozii.
@@ -699,7 +699,7 @@ Prima explozie este la indicele **3** și are o putere de **1**.
 Șirul va arăta astfel: `abv>>1>2>2asdasd`.
 [/hint] 
 [hint]
-A doua explozie este de putere **unu** și șirul se transformă în: `abv>>>2>2asdasd`
+A doua explozie este de putere **unu** și șirul se transformă în: `abv>>>2>2asdasd`.
 [/hint] 
 [hint]
 A 3-a explozie are acum o putere de **2**.
@@ -737,7 +737,7 @@ int power = 0;
 ```
 [/hint] 
 [hint]
-**Măriți** **puterea** cu valorile numerice ale caracterelor precedate de `>`:
+**Măriți** **power** cu valorile numerice ale caracterelor precedate de `>`:
 
 ```java
 for (int i = 0; i < result.length(); i++) {
@@ -863,20 +863,20 @@ El a decis să-l complice puțin **făcând același lucru, dar cu mai multe și
 
 Odată ce a început să rezolve acest lucru cu **mai multe șiruri și numere mai mari**, a devenit destul de greu să-l facă doar în mintea lui.
 
-El vă cere să **scrieți un program care să calculeze suma tuturor numerelor** după ce au fost efectuate operațiile asupra fiecărui număr.
+El vă cere să **scrieți un program care să calculeze suma tuturor numerelor**, după ce au fost efectuate operațiile asupra fiecărui număr.
 
 
 **De exemplu**, vi se oferă secvența "A12b s17G":
 
 Avem două șiruri - "A12b" și "s17G". 
 
-Facem **operațiile pe fiecare șir și le însumăm**. 
+Facem **operațiile pe fiecare șir și însumăm rezultatele**. 
 
 **Începem cu litera dinaintea numărului** din primul șir. **A** este **majusculă și poziția sa în alfabet este 1**. Deci **împărțim numărul 12 la poziția 1** (12/1 = 12).
 
 Apoi **ne mutăm la litera de după număr**. **b** este ** minusculă** și poziția sa **este 2**, deci **adăugăm 2 la numărul** rezultat (12 + 2 = 14).
 
-În mod similar pentru al doilea șir, **s** este **minusculă** și **poziția sa este 19**, așa că **îl înmulțim cu numărul** (17 * 19 = 323).
+În mod similar pentru al doilea șir, **s** este **minusculă** și **poziția sa este 19**, așa că **înmulțim numărul cu 19** (17 * 19 = 323).
 
 Apoi avem **majuscula G cu poziția 7**, deci **scădem 7 din numărul rezultat** (323 - 7 = 316).
 
@@ -887,7 +887,7 @@ Intrarea provine de pe consolă ca o singură linie care conține secvența șir
 
 Șirurile sunt separate de unul sau mai multe spații albe.
 
-Datele de intrare vor fi întotdeauna valide și în formatul descris. Nu este nevoie să verificați verificați acest aspect în mod explicit.
+Datele de intrare vor fi întotdeauna valide și în formatul descris. Nu este nevoie să verificați acest aspect în mod explicit.
 
 ### Ieșire
 Imprimați pe consolă un singur număr: suma totală a tuturor numerelor procesate, rotunjită la două cifre după separatorul zecimal.
@@ -900,7 +900,7 @@ Imprimați pe consolă un singur număr: suma totală a tuturor numerelor proces
 
 [hints]
 [hint]
-Utilizați o **expresie regulată** pentru a împărți intrarea:
+Utilizați o **expresie regulată** pentru a împărți datele de intrare:
 
 ```java
 String[] input = scanner.nextLine().split("\\s+");
