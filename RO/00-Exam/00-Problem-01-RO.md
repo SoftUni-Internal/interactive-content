@@ -50,7 +50,7 @@ La final, rotunjiți punctele bonus în sus la **următorul număr întreg**.
 
 - **În următoarele rânduri**, veți primi numărul de **prezențe ale fiecărui student**
 
-- Nu vor fi **studenți cu aceeași sumă finală de puncte bonus**
+- Nu vor exista **studenți cu aceeași sumă finală de puncte bonus**
 
 ### Ieșire
 
@@ -72,10 +72,10 @@ La final, rotunjiți punctele bonus în sus la **următorul număr întreg**.
 [hint]
 În primul rând, primim **numărul de studenți** înscriși la curs - **5**.
 
-**Numărul** total al **prelegerilor** este de **25**, iar **bonusul** inițial este de **30**.
+**Numărul** total al **prelegerilor** este **25**, iar **bonusul** inițial este de **30**.
 [/hint] 
 [hint]
-Apoi **calculăm bonusul** studentului cu **12** prezențe, adică **16,8**.
+Apoi, **calculăm bonusul** studentului cu **12** prezențe, adică **16,8**.
 
 **Continuăm** să calculăm **punctele bonus ale fiecărui student**.
 [/hint] 
