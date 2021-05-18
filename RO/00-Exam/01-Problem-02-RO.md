@@ -49,11 +49,11 @@ A doua valoare a camerei conține punctele de atac ale monstrului.
 
 Trebuie să scădeți valoarea atacului monstrului din punctele voastre de viață.
 
-- Dacă sunteți **încă în viață** (sănătate \> 0), ați ucis monstrul și trebuie să imprimați: "**You have slayed a** \{**type of monster**\}."
+- Dacă sunteți **încă în viață** (punctele de viață \> 0), ați ucis monstrul și trebuie să imprimați: "**You have slayed a** \{**type of monster**\}."
 
-- Dacă ați murit, tipăriți "**You died! Killed by** \{**monster**\}.",  iar misiunea voastră s-a încheiat
+- Dacă ați murit, tipăriți "**You died! Killed by** \{**monster**\}.", iar misiunea voastră s-a încheiat
 
-Imprimați cel mai mare număr al camerei pe care ați reușit să o atingeți: "**Best room:** \{**room**\}".
+Imprimați cel mai mare număr al camerei la care ați reușit să ajungeți: "**Best room:** \{**room**\}".
 
 Dacă ați reușit să parcurgeți toate camerele din temniță, imprimați pe următoarele trei rânduri:
 
@@ -65,7 +65,7 @@ Dacă ați reușit să parcurgeți toate camerele din temniță, imprimați pe u
 
 ### Intrare \/ Constrângeri
 
-Veți primi un șir, care reprezintă camerele temniței, separate printr-un „\|” (bară verticală): cameră1\|cameră2\|cameră3...".
+Veți primi un șir care reprezintă camerele temniței, separate prin simbolul "\|" (bară verticală): cameră1\|cameră2\|cameră3...".
 
 ### Ieșire
 
@@ -87,7 +87,7 @@ Imprimați mesajele corespunzătoare, descrise mai sus.
 
 [hints]
 [hint]
-Inițializați health points (**100**) și bitcoins (**0**), dar și numărul de camere atinse (**0** la început).
+Inițializați punctele de viață (**100**) și bitcoins (**0**), dar și numărul de camere atinse (**0** la început).
 [/hint] 
 [hint]
 Împărțiți comenzile din intrare, iar apoi parcurgeți-le pe fiecare folosind o buclă for.
