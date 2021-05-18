@@ -461,7 +461,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Se dau **două rânduri**- **primul poate fi un număr foarte mare** (de la 0 la 1050).
+Se dau **două rânduri**- **primul poate fi un număr foarte mare**.
 
 Cel de-al doilea **va fi o singură cifră** (de la 0 la 9).
 

@@ -464,7 +464,7 @@ public class Main {
 ## Description
 You will receive **two** lines of input. 
 
-- On the first line, you can receive a really big number in range \[0-1050\]
+- On the first line, you can receive a really big number.
 
 - On the second line, you will receive a single digit in range \[0-9\]
 
