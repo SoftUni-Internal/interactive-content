@@ -8,7 +8,7 @@
 
 To **initialize a Git repository**, open a command\-line window in your **root project directory** and type `git init`.
 
-It is advisable to exclude **non-essential files and directories** that **take up space** from being committed to our repository.
+It is advisable to exclude **non-essential files and directories** that **take up space** from being committed to your repository.
 
 Create a file called `.gitignore` and paste the following code inside:
 
@@ -27,7 +27,7 @@ To make your first **commit** to the `master` branch, type:
 
 You can **check the status of your repository** at any given time using `git status`.
 
-**Creating a Github repository**
+## Creating a Github repository
 
 It is recommended to create a **Github repository**, which you can later use to implement **automatic deploys**.
 
@@ -59,11 +59,11 @@ You can also let Heroku **generate a name** by **not passing it in** as a parame
 
 To **confirm** that a remote named `heroku` has been **set** for your app, use the `git remote -v` command.
 
-Next, **deploy** your application using `git push heroku master`
+Next, **deploy** your application using `git push heroku master`.
 
-To make sure there is at least **one active instance** of the app, type `heroku ps:scale web=1`
+To make sure there is at least **one active instance** of the app, type `heroku ps:scale web=1`.
 
-We have created a **new process**, called `web`, which will **receive web traffic** when deployed.
+You have created a **new process**, called `web`, which will **receive web traffic** when deployed.
 
 You can visit your newly created app by simply typing `heroku open` or visiting `name_of_your_heroku_project.herokuapp.com`.
 
@@ -71,11 +71,11 @@ You can visit your newly created app by simply typing `heroku open` or visiting 
 
 Heroku uses a **Procfile** to ensure your application is running **as intended**.
 
-It holds **commands**, which will be **executed**  when bootstrapping the application.
+It holds **commands**, which will be **executed** when bootstrapping the application.
 
 In your app's **root directory**, create a new file and name it `Procfile`, with a capital 'P'.
 
-Inside, we need to **specify** the **command** necessary to run the `web` process we created earlier.
+Inside, you need to **specify** the **command** necessary to run the `web` process we created earlier.
 
 If you have created a `start` script in `package.json`, paste the following code inside the `Procfile`:
 
@@ -84,7 +84,6 @@ If you have created a `start` script in `package.json`, paste the following code
 Otherwise, you can just **run your main file**, most often `index.js` or `server.js`, using `node`:
 
 `web: node index.js`
-
 
 ## Make sure you are listening on the correct port
 
@@ -100,7 +99,7 @@ app.listen(process.env.PORT);
 
 `process.env.PORT` is the variable Heroku will assign a **port number** to.
 
-You can make sure your application **still runs locally** by using an `if` statement, as follows:
+You can make sure your application will still **run locally** by using an `if` statement, as follows:
 
 ```js
 let port = process.env.PORT;
