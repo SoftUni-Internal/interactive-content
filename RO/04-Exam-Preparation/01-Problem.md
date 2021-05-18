@@ -19,7 +19,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care verifică **dacă înregistrările sunt valide**.
+Creați un program care verifică **dacă niște înregistrări sunt valide**.
 
 Fiecare înregistrare constă dintr-un **nume de utilizator și o parolă**.
 
@@ -68,7 +68,7 @@ La final, **tipăriți numărul de înregistrări reușite**:
 
 [hints]
 [hint]
-Avem **3** linii de intrare de verificat:
+Avem **3** linii cu date de intrare de verificat.
 
 **Prima** respectă regulile și este **valabilă**.
 [/hint] 
