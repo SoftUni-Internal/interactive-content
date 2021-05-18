@@ -21,7 +21,7 @@ Use the "**index.html**" and "**app.js**" files to solve this problem.
 
 **Note: You must complete this task without changing anything in the given HTML file (index.html)**.
 
-[image assetsSrc="exam-prep-picture1.jpg" /]
+[image assetsSrc="exam-prep-picture1.png" /]
 
 ## Your Task
 
