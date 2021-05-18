@@ -17,7 +17,7 @@ This makes JavaScript arrays a very powerful tool.
 
 Arrays in JavaScript also reference data types that array's information stored in heap memory and the stack only the array's address is stored.
 
-[image assetsSrc="java-js-adv-arrays-1.png" /]
+[image assetsSrc="java-js-adv-arrays-01.png" /]
 
 The first element of the array is stored on index 0, which makes it zero base, and the last element of the array is stored at length-1.
 
