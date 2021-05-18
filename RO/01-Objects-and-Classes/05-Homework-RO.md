@@ -7,22 +7,20 @@
 [task-description]
 
 ## Descriere
-Creați o clasă articol cu următoarele proprietăți:
+Creați o clasă numită **Article** cu următoarele proprietăți:
 - Title - un șir
 - Content - un șir
 - Author - un șir
 
-Clasa ar trebui să aibă un constructor și următoarele metode:
-- **edit** (new content) - schimbați conținutul vechi cu cel nou
-- **changeAuthor** (new author) - schimbați autorul
-- **rename** (new title) - modificați titlul articolului
-- **override ToString** - tipărește articolul în următorul format: 
+Clasa trebuie să aibă un constructor și următoarele metode:
+- **edit** (new content) - schimbă conținutul vechi cu cel nou
+- **changeAuthor** (new author) - schimbă autorul
+- **rename** (new title) - modifică titlul articolului
+- **override ToString** - tipărește informațiile despre articol în următorul format: "\{**title**\} **-** \{**content**\}**:**\{**author**\}"
 
-"\{**title**\} **-** \{**content**\}**:**\{**author**\}"
+Scrieți un program care citește un articol în următorul **format**: "\{**title**\}, \{**content**\}, \{**author**\}". 
 
-Scrieți un program care citește un articol în următorul **format** "\{**title**\}, \{**content**\}, \{**author**\}". 
-
-Pe linia următoare, veți obține un **număr n**.
+Pe linia următoare, veți primi un **număr n**.
 
 Pe **următoarele n linii**, veți primi una dintre următoarele **comenzi**:
 
@@ -30,7 +28,7 @@ Pe **următoarele n linii**, veți primi una dintre următoarele **comenzi**:
 - "**ChangeAuthor:** \{**new author**\}" 
 - "**Rename:** \{**new title**\}"
 
-La final, **tipăriți articolul final**.
+**Tipăriți articolul final**.
 
 
 ### Exemplu
@@ -136,9 +134,16 @@ The haunting of hill house - better content2:  Shirley Jackson
 [task-description]
 
 ## Descriere
-Folosind **clasa Person**, scrieți un program care citește de pe consolă **N linii de informații personale** și apoi **imprimă toate persoanele** a căror **vârstă este mai mare de 30 de ani** în următorul **format**:
 
-"\{**name**\} **-** \{**age**\}"
+Creați o clasă numită **Person** care are următoarele proprietăți:
+- name
+- age
+
+Pe prima linie veți primi un număr N, care reprezintă numărul de persoane.
+
+Pe următoarele **N** linii, veți primi informații despre acele persoane.
+
+**Imprimați informațiile despre persoanele** a căror **vârstă este mai mare de 30 de ani**, în următorul **format**: "\{**name**\} **-** \{**age**\}"
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -341,13 +346,13 @@ Anntoanette - 39
 [task-description]
 
 ## Descriere
-Schimbați programul "**Articles**", astfel încât să puteți stoca o **listă de articole**.
+Actualizați clasa "**Articles**", astfel încât să poată stoca o **listă de articole**.
 
-Nu veți mai avea nevoie de metode (**cu excepția** metodei toString).
+Veți avea nevoie doar de metoda **toString**.
 
-Pe **prima linie**, veți primi un **număr n**.
+Pe **prima linie** veți primi un **număr n**.
 
-Pe următoarele **n linii**, veți primi câteva **articole în același format ca sarcina anterioară** ("\{**title**\}, \{**content**\}, \{**author**\}").
+Pe următoarele **n linii**, veți primi câteva **articole în formatul**: ("\{**title**\}, \{**content**\}, \{**author**\}").
 
 În cele din urmă, veți primi unul dintre cele **trei criterii**: "**title**", "**content**", "**author**".
 
@@ -485,17 +490,17 @@ Most Valuable Playboy - content4: Lauren Blakely
 
 ## Descriere
 
-Scrieți un program care primește **un număr n de elevi** și îi **ordonează (descendent) în funcție de note** .
+Scrieți un program care primește **un număr n de elevi** și îi **ordonează descrescător în funcție de note** .
 
-Fiecare elev trebuie să aibă **first name** (șir), **Last name** (șir) și **grade** (număr în virgulă mobilă).
+Fiecare elev trebuie să aibă **first name** (șir), **last name** (șir) și **grade** (număr în virgulă mobilă).
 
 ### Intrare
 
-- Prima linie va fi un **număr n**
-- Următoarele **n linii** veți primi informații despre elev în **formatul** "\{**first name**\} \{**second name**\} \{**grade**\}"
+- Pe prima linie veți primi un **număr n**
+- Pe următoarele **n linii** veți primi informații despre elev în **următorul format**: "\{**first name**\} \{**second name**\} \{**grade**\}"
 
 ### Ieșire
--Tipăriți fiecare elev în următorul format "\{**first name**\} \{**second name**\}**:** \{**grade**\}"
+- Tipăriți fiecare elev în următorul format: "\{**first name**\} \{**second name**\}**:** \{**grade**\}"
 
 ### Exemplu
 |**Intrare**|**Ieșire**|
@@ -619,13 +624,13 @@ Amias Mathews: 2.30
 
 [task-description]
 ## Descriere
-Până când primiți **comanda** "**End**", veți primi linii de intrare în format:
+Până la introducerea **comenzii** "**End**", veți primi linii de intrare în următorul format:
 
 - \{**typeOfVehicle**\} \{**model**\} \{**color**\} \{**horsepower**\}
 
-După comanda "**End**", veți începe să primiți **modele de vehicule**. 
+După comanda "**End**", veți începe să primiți **informații despre vehicule**. 
 
-**Imprimați pentru fiecare vehicul primit** datele sale în **format**:
+**Imprimați pentru fiecare vehicul primit** datele sale în **formatul**:
 
 "**Type:** \{**typeOfVehicle**\}
 
@@ -635,7 +640,7 @@ După comanda "**End**", veți începe să primiți **modele de vehicule**.
 
 **Horsepower:** \{**horsepowerOfVehicle**\}"
 
-Când primiți comanda "Close the Catalogue", **imprimați puterea medie** pentru mașini și camioane în **format**:
+Când primiți comanda **"Close the Catalogue"**, **imprimați puterea medie** a mașinilor și a camioanelor în **formatul**:
 
 "\{**typeOfVehicles**\} **have an average horsepower of** \{**averageHorsepower**\}."
 
@@ -861,7 +866,7 @@ Pe fiecare linie, veți primi o **matrice cu 3 elemente**.
 
 Cel de-al **doilea** element va fi de tip **șir** și va reprezenta **ID-ul persoanei**.
 
-Ultimul element va fi un de tip **număr întreg** și reprezintă **vârsta persoanei**.
+Ultimul element va fi de tip **număr întreg** și reprezintă **vârsta persoanei**.
 
 Dacă primiți o persoană al cărei **ID l-ați primit deja**, atunci **actualizați** numele și vârsta ID-ului respectiv cu cele **ale noii persoane**.
 

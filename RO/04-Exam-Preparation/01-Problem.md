@@ -12,28 +12,28 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care verifică **dacă înregistrările sunt valide**.
+Creați un program care verifică **dacă niște înregistrări sunt valide**.
 
 Fiecare înregistrare constă dintr-un **nume de utilizator și o parolă**.
 
-Pe **prima linie**, veți primi un **număr care indică câte intrări** veți primi pe **următoarele** linii.
+Pe **prima linie** veți primi un **număr care indică câte intrări** veți primi pe **următoarele** linii.
 
-O **înregistrare este valabilă** când:
+O **înregistrare este valabilă** dacă:
 
-- Numele de utilizator **este înconjurat de** `"U\$"`
+- Numele de utilizator **este încadrat de** `"U\$"`
 
-- **Numele de utilizator trebuie să conțină cel puțin 3 caractere**, **începe** cu o **literă majusculă**, urmată **numai de litere mici**
+- **Numele de utilizator conține cel puțin 3 caractere**, **începe** cu o **majusculă**, urmată **numai de litere mici**
 
-- Parola **este înconjurată de** `"P@\$"`
+- Parola **este încadrată de** `"P@\$"`
 
-- Parola **trebuie să înceapă cu minimum 5 litere alfabetice** (fără cifre) și **trebuie să se termine cu o cifră**
+- Parola **începe cu minim 5 caractere alfabetice** (fără cifre) și **trebuie să se termine cu o cifră**
 
 **Exemplu pentru o înregistrare** validă:
 - "U\$MichaelU\$P@\$asdqwe123P@\$"
@@ -45,16 +45,16 @@ Trebuie să verificați dacă înregistrarea este **valabilă și dacă este, im
 **Dacă nu este** - tipăriți următorul mesaj:
 - "**Invalid username or password**"
 
-În final **tipăriți numărul de înregistrări reușite**:
+La final, **tipăriți numărul de înregistrări reușite**:
 - "**Successful registrations:** \{**successfulRegistrationsCount**\}"
 
 ### Intrare
 
-- Pe prima linie, veți primi **n** - numărul de intrări
-- În următoarele **n** linii - intrare pe care trebuie să o verificați pentru înregistrări valide
+- Pe prima linie veți primi numărul **n** - numărul de intrări
+- Pe următoarele **n** linii - un text care conține un nume de utilizator și o parolă
 
 ### Ieșire
-- Imprimați toate rezultatele din fiecare intrare, fiecare pe o nouă linie
+- Imprimați mesajele corespunzătoare, fiecare pe o nouă linie
 - La final, tipăriți numărul înregistrărilor reușite
 
 ### Exemplu
@@ -68,7 +68,7 @@ Trebuie să verificați dacă înregistrarea este **valabilă și dacă este, im
 
 [hints]
 [hint]
-Avem **3** linii de intrare de verificat:
+Avem **3** linii cu date de intrare de verificat.
 
 **Prima** respectă regulile și este **valabilă**.
 [/hint] 
@@ -76,7 +76,7 @@ Avem **3** linii de intrare de verificat:
 A **doua nu este valabilă**, deoarece parola nu se termină cu o cifră.
 [/hint] 
 [hint]
-A **treia nu este validă**, deoarece parola este prea scurtă.
+A **treia nu este valabilă**, deoarece parola este prea scurtă.
 [/hint] 
 [/hints] 
 

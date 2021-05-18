@@ -12,7 +12,7 @@
 
 - Ce reprezintă clasele
 
-- Cum se definește clasa simplă
+- Cum se definește o clasă
 
 - Constructori, câmpuri, metode, proprietăți
 
@@ -22,8 +22,7 @@
 
 - Valorile obiectelor
 
-- **3. Clase încorporate în Java**
+- **3. Clase Încorporate în Java**
 
-- Prezentare generală a unor clase Java Built-in
 
 [/slide]

@@ -1,10 +1,11 @@
+# Clase API Încorporate
 
 [slide hideTitle]
 # Clase Încorporate în Java
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-8-9-built-in-api-classes-in-java-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Java oferă clase **gata de utilizare**, care sunt organizate în **pachete**. 
+Java oferă clase **pregătite pentru utilizare**, care sunt organizate în **pachete**. 
 
 Aceste clase oferă **metode** și **câmpuri predefinite** care ajută la economisirea timpului și a efortului depus pentru crearea aplicațiilor.
 
@@ -41,7 +42,7 @@ Metodele din clasa `Math` sunt **statice** și ajută la efectuarea **operațiil
 
 - Rotunjire
 
-- Compararea
+- Comparare
 
 - Rădăcină pătrată
 
@@ -51,7 +52,7 @@ Metodele din clasa `Math` sunt **statice** și ajută la efectuarea **operațiil
 
 - Logaritm
 
-- Operații trigonometrice.
+- Operații trigonometrice
 
 Metodele `Math` includ:
 
@@ -133,7 +134,7 @@ double radians = Math.toRadians(180);
 System.out.println(radians);
 ```
 
-- Funcții trigonometrice - Calculează valoarea unghiurilor în radiani `sin(a)` `cos(a)` `tan(a)`
+- Funcții trigonometrice - Calculează valoarea unghiurilor în radiani: `sin(a)` `cos(a)` `tan(a)`
 
 [/slide]
 
@@ -141,10 +142,9 @@ System.out.println(radians);
 [slide hideTitle]
 # Random
 
-Clasa `java.util.Random` este utilizată pentru a genera numere aleatoare de tip **integer**, **float**, **double**, **long**. 
+Clasa `java.util.Random` este utilizată pentru a genera numere aleatorii de tip **integer**, **float**, **double**, **long**. 
 
-Metodele de clasă `Random` sunt **non-statice**.
-
+Metodele furnizate de clasa `Random` sunt **non-statice**.
 
 Codul următor este un exemplu pentru crearea unei **instanțe** `Random`:
 
@@ -158,7 +158,7 @@ public class Main {
 }
 ```
 
-Exemple de metode `Random`:
+Exemple de metode ale clasei `Random`:
 
 - `nextInt()` - Returnează următoarea valoare pseudoaleatorie `int` dintr-o secvență de numere aleatorii
 
@@ -169,7 +169,7 @@ int number = random.nextInt();
 System.out.println(number);
 ```
 
-- `nextInt(n)` - Returnează următoarea valoare pseudoaleatorie `int` în intervalul de la 0 (inclusiv) până la valoarea specificată (exclusiv)
+- `nextInt(n)` - Returnează următoarea valoare pseudoaleatorie `int` din intervalul de la 0 (inclusiv) până la valoarea specificată (exclusiv)
 
 ```java live
 Random random = new Random();
@@ -179,7 +179,7 @@ System.out.println(numOne);
 System.out.println(numTwo);
 ```
 
-- `nextDouble()` - Returnează următoarea valoare pseudoaleatorie `double` în intervalul de la 0.0 la 1.0
+- `nextDouble()` - Returnează următoarea valoare pseudoaleatorie `double` din intervalul de la 0.0 la 1.0
 
 ```java live 
 Random random = new Random();
@@ -205,17 +205,17 @@ System.out.println(isValid);
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/java-fundamentals-objects-and-classes-10-problem-and-solution-randomize-words-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Descriere
-Vă este dat un **șir**, care conține cuvinte, separate printr-un spațiu.
+Vă este dat un **șir** care conține cuvinte separate printr-un spațiu.
 
 **Ordonați-le la întâmplare** și tipăriți **fiecare cuvânt pe o linie separată**.
 
-## Sugestii
+## Sfaturi
 
-- Separați șirul introdus (printr-un spațiu) și creați o matrice de cuvinte
+- Separați șirul introdus (prin spații) și creați o matrice de cuvinte
 - Creați un generator de numere aleatorii - un obiect `rnd` de tip `Random`
 - Într-o `buclă-for` schimbați fiecare număr de pe pozițiile 0, 1, ..., words.Length-1 cu un număr de pe o poziție aleatoare
 
-Pentru a genera un număr aleator în interval utilizați `rnd.nextInt(words.length)`
+Pentru a genera un număr aleator în intervalul specificat, utilizați `rnd.nextInt(words.length)`.
 
 - Tipăriți fiecare cuvânt din matrice pe o linie nouă
 
@@ -223,7 +223,7 @@ Pentru a genera un număr aleator în interval utilizați `rnd.nextInt(words.len
 
 | **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
-| Welcome to SoftUni and have fun learning programming | learning | The order of the words in the output will be different after each program execution. |
+| Welcome to SoftUni and have fun learning programming | learning | Ordinea cuvintelor rezultate va fi diferită după fiecare execuție a programului. |
 | | Welcome | |
 | | SoftUni | |
 | | and | |
@@ -242,7 +242,7 @@ Pentru a genera un număr aleator în interval utilizați `rnd.nextInt(words.len
 [slide hideTitle]
 # BigInteger
 
-Clasa `java.math.BigInteger` furnizează **operațiuni analoge** tuturor **operațiunilor întregi primitive ale Java** și pentru **toate metodele relevante** din clasa `java.lang.Math;`.
+Clasa `java.math.BigInteger` furnizează **operații analoge** tuturor **operațiilor cu tipuri de date întregi primitive** și pentru **toate metodele relevante** din clasa `java.lang.Math;`.
 
 Clasa `BigInteger` ajută la gestionarea **numerelor întregi foarte mari**. 
 
@@ -272,28 +272,28 @@ BigInteger number = BigInteger.valueOf(-123);
 number = number.abs();
 System.out.println(number);
 ```
-- `add(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **adunare** (valoare curentă + valoare)
+- `add(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează o **adunare** (valoare curentă + valoare)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.add(BigInteger.TEN);
 System.out.println(number);
 ```
-- `subtract(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **scădere** (valoare curentă - valoare)
+- `subtract(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează o **scădere** (valoare curentă - valoare)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.subtract(BigInteger.TEN);
 System.out.println(number);
 ```
-- `multiply(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează **multiplicare** (valoare curentă * valoare)
+- `multiply(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează o **înmulțire** (valoare curentă * valoare)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
 number = number.multiply(BigInteger.TEN);
 System.out.println(number);
 ```
-- `divide(value)`: Atribuie o **valoare nouă** BigInteger-ului actual și efectuează **împărțire** (valoare curentă / valoare)
+- `divide(value)`: Atribuie o **valoare nouă** BigInteger-ului curent și efectuează o **împărțire** (valoare curentă / valoare)
 
 ```java live
 BigInteger number = BigInteger.valueOf(123);
@@ -307,11 +307,11 @@ BigInteger number = BigInteger.valueOf(123);
 number = number.pow(2);
 System.out.println(number);
 ```
-- `intValue()`: Convertește într-un `int`
+- `intValue()`: Convertește valoarea în `int`
 
-- `doubleValue()`: Convertește într-un `double`
+- `doubleValue()`: Convertește valoarea în `double`
 
-- `toString()`: Returnează reprezentarea de tip șir
+- `toString()`: Returnează reprezentarea de tip șir a valorii
 
 [/slide]
 
@@ -329,14 +329,16 @@ import java.math.BigInteger;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Veți primi două numere **(0 până la 10 ^ 50)**. Imprimați suma acestora.
+Veți primi două numere **(de la 0 până la 10 ^ 50)**. 
+
+Imprimați suma acestora.
 
 ## Exemple
 
@@ -442,14 +444,14 @@ import java.math.BigInteger;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Veți primi numărul N în intervalul  \[0 - 1000\].
+Veți primi numărul N în intervalul \[0 - 1000\].
 
 Calculați **Factorialul lui N** și tipăriți rezultatul.
 
