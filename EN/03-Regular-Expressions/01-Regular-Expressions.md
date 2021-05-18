@@ -69,7 +69,7 @@ In the example above, the class `[abc]` matches any character that is either `a`
 | **Notation** | **Meaning (Returns a match where…)** |
 | --- | --- |
 |`\w`|matches any **word** characters from `a` to `Z`, digits from `0-9`, and the underscore `_` character|
-|`\W`|matches any **non-word** character (the opposite of `\w`|
+|`\W`|matches any **non-word** character (the opposite of `\w`)|
 |`\s`|matches any **white-space** character|
 |`\S`|matches any **non-white-space**  character (the opposite of `\s`)|
 |`\d`|matches any **digit** \[0-9\]|
