@@ -22,7 +22,7 @@ Folosiți fișierele "**index.html**" și "**app.js**" pentru a rezolva această
 
 **Notă: trebuie să terminați această cerință fără să schimbați nimic în fișierul HTML(index.html)**.
 
-[image assetsSrc="exam-prep-picture1.jpg" /]
+[image assetsSrc="exam-prep-picture1.png" /]
 
 ## Cerința Voastră
 
