@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -17,29 +17,29 @@ public class Main {
 [task-description]
 ## Descriere
 
-### Intrare / constrângeri
+### Intrare / Constrângeri
 
-Veți primi un jurnal care conține unele articole, separate prin ", " **(virgulă și spațiu)**
+Veți primi un jurnal care conține articole, separate prin ", " **(virgulă și spațiu)**.
 
-.După aceea, până când veți primi comanda "**Craft!**", veți primi diferite comenzi.
+După aceea, până la introducerea comenzii "**Craft!**", veți primi diferite comenzi.
 
-Comenzile sunt împărțite de " - " **(spațiu liniuță)**:
+Comenzile sunt separate prin " - " **(spațiu, liniuță, spațiu)**:
 
-- "**Collect -** \{**element** \}": primind această comandă, ar trebui **să adaugați** elementul dat la inventar
+- "**Collect -** \{**element** \}": dacă primiți această comandă, trebuie **să adaugați** elementul dat la inventar
 
-Dacă articolul este deja în inventarul dvs., **ar trebui să renunțați**.
+Dacă articolul se află deja în inventar, **comanda trebuie omisă**.
 
-- "**Drop -** \{**element** \}": ar trebui să **eliminați** articolul din inventar, **dacă acesta este prezent în inventar**
+- "**Drop -** \{**element** \}": trebuie să **eliminați** articolul din invetar, **dacă acesta este prezent**
 
-- "**Combine items -** \{**element vechi** \}:\{**element nou** \}": ar trebui să verificați dacă elementul vechi este prezent, dacă da, plasați noul element după cel vechi  
+- "**Combine items -** \{**element vechi** \}:\{**element nou** \}": trebuie să verificați dacă elementul vechi este prezent în inventar, iar dacă este, plasați noul element după cel vechi  
 
 În caz contrar, ignorați comanda.
 
-- "**Renew -** \{**element** \}": dacă articolul dat există, ar trebui să-i schimbați poziția și **să-l puneți la ultima poziție din inventar**
+- "**Renew -** \{**element** \}": dacă articolul dat există, trebuie să îi schimbați poziția și **să îl plasați pe ultima poziție din inventar**
 
 ### Ieșire
 
-După ce primiți "**Craft!**" tipăriți articolele din inventar, separate prin ", " **(virgulă și spațiu)**
+După ce primiți comanda "**Craft!**", tipăriți articolele din inventar, separate prin ", " **(virgulă și spațiu)**.
 
 ## Primul Exemplu
 | **Intrare** | **Ieșire** |
@@ -51,13 +51,13 @@ După ce primiți "**Craft!**" tipăriți articolele din inventar, separate prin
 
 [hints]
 [hint]
-Împărțiți comenzile și obiectele pentru fiecare comandă de lângă cratimă, înconjurată de spații: **" - "**
+Împărțiți comenzile și articolele pentru fiecare comandă de lângă cratima încadrată de spații: **" - "**.
 [/hint] 
 [hint]
-Creați o condiție care verifică dacă șirul obiectelor conține două puncte (**":"**), iar apoi îl împarte.
+Creați o condiție care verifică dacă șirul articolelor conține două puncte (**":"**), iar apoi îl împarte.
 [/hint] 
 [hint]
-Parcurgeți fiecare comandă/obiecte și modificați inventarul în mod corespunzător.
+Parcurgeți fiecare comandă/articol și modificați inventarul în mod corespunzător.
 [/hint] 
 [hint]
 La final, tipăriți inventarul pe consolă folosind metoda `String.join(delimiter, inventory)`.
