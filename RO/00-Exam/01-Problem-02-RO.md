@@ -21,37 +21,37 @@ public class Main {
 
 Vi se va oferi un **șir**, reprezentând camerele temniței.
 
-Fiecare cameră este separată prin simbolul "\|" (bară verticală): room1\|room2\|room3…
+Fiecare cameră este separată prin simbolul "\|" (bară verticală): camera1\|camera2\|camera3…
 
-Textul fiecărei camere conține **2 valori**.
+Textul pentru fiecare cameră conține **2 valori**.
 
 Prima valoare poate fi:
 
 - O poțiune:
 
-   - sunteți vindecat cu suma celei de-a doua valori
+   - sunteți vindecat cu numărul de puncte de viață corespunzător celei de-a doua valori
 
    - punctele voastre de viață **nu pot depăși** **punctele de viață inițiale (100)**
 
-   - prima imprimare: "\{**amount**\} **health points restored.**"
+   - primul mesaj imprimat: "\{**amount**\} **health points restored.**"
 
    - după aceea, tipăriți starea curentă: "**Current health:** \{**health**\} **hp.**"
 
 - Un cufăr:
 
-    - creșteți cantitatea de bitcoin cu suma celei de-a doua valori
+    - creșteți cantitatea de bitcoin cu cantitatea corespunzătoare celei de-a doua valori
 
     - după aceea, tipăriți: "**You found** \{**amount**\} **bitcoins.**"
 
 - În orice alt caz, vă confruntați cu un monstru cu care urmează să luptați
 
-A doua valoare a camerei conține punctele de atac ale monstrului.
+    - a doua valoare a camerei conține punctele de atac ale monstrului
 
-Trebuie să scădeți valoarea atacului monstrului din punctele voastre de viață.
+    - trebuie să scădeți valoarea atacului monstrului din punctele voastre de viață
 
-- Dacă sunteți **încă în viață** (punctele de viață \> 0), ați ucis monstrul și trebuie să imprimați: "**You have slayed a** \{**type of monster**\}."
+Dacă sunteți **încă în viață** (punctele de viață \> 0), ați ucis monstrul și trebuie să imprimați: "**You have slayed a** \{**type of monster**\}.".
 
-- Dacă ați murit, tipăriți "**You died! Killed by** \{**monster**\}.", iar misiunea voastră s-a încheiat
+Dacă ați murit, tipăriți "**You died! Killed by** \{**monster**\}.", iar misiunea voastră s-a încheiat.
 
 Imprimați cel mai mare număr al camerei la care ați reușit să ajungeți: "**Best room:** \{**room**\}".
 
@@ -65,11 +65,11 @@ Dacă ați reușit să parcurgeți toate camerele din temniță, imprimați pe u
 
 ### Intrare \/ Constrângeri
 
-Veți primi un șir care reprezintă camerele temniței, separate prin simbolul "\|" (bară verticală): cameră1\|cameră2\|cameră3...".
+Veți primi un șir care reprezintă camerele temniței, separate prin simbolul "\|" (bară verticală): camera1\|camera2\|camera3...".
 
 ### Ieșire
 
-Imprimați mesajele corespunzătoare, descrise mai sus.
+Imprimați mesajele corespunzătoare descrise mai sus.
 
 ## Primul Exemplu
 
