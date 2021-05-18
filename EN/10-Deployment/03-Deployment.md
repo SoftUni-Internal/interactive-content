@@ -16,7 +16,7 @@ Select GitHub as a **deployment method** and click `Connect to Github`.
 
 [image assetsSrc="JS-BackEnd-deployment-2.png" /]
 
-You will be prompted to allow Heroku **access to your repositories**.
+You will be prompted to give Heroku **access to your repositories**.
 
 Then you will be taken back to the **Deploy** page.
 
