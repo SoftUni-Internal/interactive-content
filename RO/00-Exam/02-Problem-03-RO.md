@@ -25,7 +25,7 @@ După aceea, până la introducerea comenzii "**Craft!**", veți primi diferite 
 
 Comenzile sunt separate prin " - " **(spațiu, liniuță, spațiu)**:
 
-- "**Collect -** \{**element** \}": dacă primiți această comandă, trebuie **să adaugați** elementul dat la inventar
+- "**Collect -** \{**element** \}": dacă primiți această comandă, trebuie **să adaugați** elementul dat în inventar
 
 Dacă articolul se află deja în inventar, **comanda trebuie omisă**.
 
