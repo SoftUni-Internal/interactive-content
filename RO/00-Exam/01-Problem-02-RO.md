@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -17,11 +17,11 @@ public class Main {
 [task-description]
 ## Descriere
 
-Începeți jocul cu **100 health and 0 bitcoins**.
+Începeți jocul cu **100 health și 0 bitcoins**.
 
 Vi se va oferi un **șir**, reprezentând camerele temniței.
 
-Fiecare cameră este separată printr-un "\|" (bară verticală): room1\|room2\|room3…
+Fiecare cameră este separată prin simbolul "\|" (bară verticală): room1\|room2\|room3…
 
 Textul fiecărei camere conține **2 valori**.
 
@@ -29,15 +29,15 @@ Prima valoare poate fi:
 
 - O poțiune:
 
-   - sunteți vindecați cu suma celei de-a doua valori
+   - sunteți vindecat cu suma celei de-a doua valori
 
-   - starea voastră de sănătate **nu poate depăși** **starea de sănătate inițială (100)**
+   - punctele voastre de viață **nu pot depăși** **punctele de viață inițiale (100)**
 
    - prima imprimare: "\{**amount**\} **health points restored.**"
 
    - după aceea, tipăriți starea curentă: "**Current health:** \{**health**\} **hp.**"
 
-- Un cufar:
+- Un cufăr:
 
     - creșteți cantitatea de bitcoin cu suma celei de-a doua valori
 
@@ -47,13 +47,13 @@ Prima valoare poate fi:
 
 A doua valoare a camerei conține punctele de atac ale monstrului.
 
-Ar trebui să eliminați  valoarea atacului monstrului din sănătatea voastră.
+Trebuie să scădeți valoarea atacului monstrului din punctele voastre de viață.
 
-- Dacă sunteți **încă în viață** (sănătate \> 0), ați ucis monstrul și ar trebui să imprimați: "**You have slayed a** \{**type of monster**\}."
+- Dacă sunteți **încă în viață** (sănătate \> 0), ați ucis monstrul și trebuie să imprimați: "**You have slayed a** \{**type of monster**\}."
 
-- Dacă ai murit, tipărește "**You died! Killed by** \{**monster**\}." iar căutarea ta s-a terminat
+- Dacă ați murit, tipăriți "**You died! Killed by** \{**monster**\}.",  iar misiunea voastră s-a încheiat
 
-Imprimați cel mai bun număr cel mai mare dintr-o cameră pe care ați reușit să o atingeți: "**Best room:** \{**room**\}".
+Imprimați cel mai mare număr al camerei pe care ați reușit să o atingeți: "**Best room:** \{**room**\}".
 
 Dacă ați reușit să parcurgeți toate camerele din temniță, imprimați pe următoarele trei rânduri:
 
