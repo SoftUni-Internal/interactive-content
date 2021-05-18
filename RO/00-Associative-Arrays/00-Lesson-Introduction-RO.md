@@ -8,14 +8,13 @@
 
 ## În această lecție veți învăța despre:
 
-**1. Matrice asociative**
+**1. Matrice Asociative**
 
 - Definiție
 
 - Declarare și inițializare
 
 - Iterare
-
 
 - Metode încorporate
 

@@ -12,35 +12,34 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        // Creați  codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program pentru a **calcula costul total** al diferitelor tipuri de mobilier cumpărat .
+Creați un program care **calculează costul total** al diferitelor tipuri de mobilier cumpărat.
 
-Veți primi câteva linii de intrare **până când veți primi comanda** "Purchase".
+Veți primi câteva linii cu date de intrare până la introducerea comenzii **"Purchase"**.
 
-Pentru ca linia **să fie valabilă** ar trebui să fie în următorul **format**:
+O linie este considerată **validă** dacă respectă următorul **format**:
 
 - "\>\>\{furniture name\}\<\<\{price\}!\{quantity\}"
 
-Prețul poate fi un **număr cu virgulă mobilă sau un număr întreg**.
+Prețul poate fi un **număr în virgulă mobilă sau un număr întreg**.
 
-Stocați **denumirea mobilierukui și prețul total**.
+Trebuie să stocați **denumirea mobilierului și prețul total**.
 
-La final **imprimați fiecare mobilierul cumpărat pe o linie separată** în formatul următor:
+La final, **imprimați fiecare piesă de mobilier cumpărată pe o linie separată**, în formatul următor:
 
-Bought furniture:
-\{furniture name 1\}
-\{furniture name 2\}
-…
+Bought furniture: \{furniture name 1\} \{furniture name 2\} …
 
-Și pe **ultima linie imprimați** următoarele:
+Pe **ultima linie imprimați** următorul mesaj:
 
-- "Total money spent: \{spend money\}" **formatate** la a doua zecimală
+- "Total money spent: \{amount\}" 
+
+Toate numerele trebuie **formatate** la a doua cifră după punctul zecimal.
 
 
 ### Exemplu
@@ -55,7 +54,7 @@ Bought furniture:
 [hint]
 Puteți utiliza [Regex101](https://regex101.com/) sau [RegExr](https://regexr.com) pentru a vă testa șablonul în timp real.
 
-În acest exemplu, numai **canapeaua** ("Sofa") și **televizorul** ("TV") sunt valabile.
+În acest exemplu, numai **Sofa** și **TV** sunt articole valide.
 [/hint] 
 [hint]
 Pentru fiecare dintre ele **înmulțim** prețul cu cantitatea:
@@ -75,7 +74,7 @@ if (matcher.find()) {
 ```
 [/hint] 
 [hint]
-**Imprimați** rezultatul:
+**Imprimăm** rezultatul:
 
 ```java
 System.out.println("Bought furniture:");
@@ -88,7 +87,7 @@ System.out.println(
     finalPrice));
 ```
 
-Nu uitați să **formatați** **prețul final** la a doua cifră după punctul zecimal. 
+Nu uitați să **formatați** **prețul final** cu două cifre după punctul zecimal. 
 [/hint] 
 [/hints] 
 
@@ -209,7 +208,7 @@ import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        // Creați  codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -219,23 +218,23 @@ public class Main {
 
 Creați un program care procesează informații despre o cursă.
 
-Pe **prima linie** vi  se va oferi o **lista de participanți separați** prin ", ".
+Pe **prima linie** vi se va oferi o **listă de participanți, separați** prin ", ".
 
-Pe **următoarele rânduri până când primiți** o linie "end of race" vi se vor oferi informații care vor fi câteva **caractere alfanumerice**.
+Pe următoarele rânduri, până când primiți comanda **"end of race"**, vi se vor oferi informații reprezentate de **caractere alfanumerice**.
 
-Între ele puteți avea **câteva caractere suplimentare pe care ar trebui să le ignorați**.
+Printre ele puteți avea **caractere suplimentare care trebuie ignorate**.
 
-De **exemplu**: "G!32e%o7r#32g$235@!2e".
+**Numele participantului este format prin concatenarea tuturor literelor**. Distanța parcursă de participant este obținută prin **însumarea tuturor cifrelor**.
 
-**Literele sunt numele persoanei** și **suma cifrelor este distanța pe care au parcurs-o**.
+Exemplu: "G!32e%o7r#32g$235@!2e"
 
-Aici avem **George who ran 29 km**.
+Numele participantului este **George**. El a alergat **29 de km**. 
 
-**Stocați informațiile** despre **persoană numai dacă lista de curse conține numele** persoanei respective.
+**Stocați informațiile** despre o **persoană numai dacă lista de participanți conține numele** persoanei respective.
 
-Dacă primiți **aceeași persoană de mai multe ori** numai **adăugați distanța la vechea sa distanță**.
+Dacă primiți **aceeași persoană de mai multe ori**, **adăugați distanța nouă la distanța deja parcursă**.
 
-La final **imprimați primii 3 alergători ordonați în funcție de distanța descrescătoare** în formatul:
+La final, **imprimați primii 3 alergători, ordonați descrescător în funcție de distanța parcursă** în următorul format:
 
 1st place: \{first racer\}
 2nd place: \{second racer\}
@@ -257,7 +256,7 @@ La final **imprimați primii 3 alergători ordonați în funcție de distanța d
 [hints]
 [hint]
 Pe a treia linie de intrare avem **Ray** - `R1@!3a$y4456@`.
-El **nu este** pe listă, deci nu luăm în calcul rezultatul lui.
+El **nu este** pe lista de participanți, deci nu luăm în calcul rezultatul lui.
 [/hint] 
 [hint]
 Celelalte persoane **sunt** pe lista de **participanți**.
@@ -268,7 +267,7 @@ if (racers.containsKey(name)) {
 }
 ```
 
-**George** are **55** km în total, **Peter** - **25** și **Tom** - **19**.
+**George** a alergat **55** km în total, **Peter** - **25** și **Tom** - **19**.
 [/hint] 
 [hint]
 **Tipărim** **câștigătorii** (persoanele care se află în **top 3**):
@@ -412,36 +411,36 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        // Creați  codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Calculați profitul din produsele care au fost vândute pe tot parcursul zilei.
+Creați un program care calculează profitul din produsele care au fost vândute pe tot parcursul zilei.
 
-**Până când veți primi o linie** cu textul "**end of shift**"  vi se vor oferi **linii de intrare**.
+Veți primi linii cu date de intrare, până la primirea comenzii **"end of shift"**. 
 
-Dar înainte de a prelucra aceasta linie, trebuie să executați mai întâi câteva **validări**.
+Înainte de a procesa fiecare linie din intrare, trebuie să efectuați mai întâi câteva **validări**.
 
-Fiecare comandă validă trebuie să aibă un **client, produs, total și prețul**.
+Fiecare comandă validă trebuie să aibă un **client, un produs, o cantitate și un preț**.
 
-**Valid**: 
-- **Numele clientului** trebuie să fie înconjurat de '%' și trebuie să înceapă cu o literă mare, urmată de litere mici
-- **Produsul** conține orice caracter de cuvânt și trebuie să fie înconjurat de '\<' și '\>' 
-- **Total** este un număr întreg, înconjurat de '\|'
-- **Prețul** este orice număr real urmat de '$'
+**O intrare validă**: 
+- **Numele clientului** trebuie să fie încadrat de '%' și trebuie să înceapă cu o literă mare, urmată doar de litere mici
+- **Numele produsului** trebuie să fie încadrat de '\<' și '\>' 
+- **Cantitatea** este un număr întreg, încadrat de '\|'
+- **Prețul** este un număr real, urmat de '$'
 
-Părțile unei **comenzi valide ar trebui să apară în comanda dată : client, produs, total și un prețul**.
+Segmentele unei **comenzi valide trebuie să apară în ordinea dată: client, produs, cantitate și preț**.
 
-Între fiecare **parte pot exista și alte simboluri**, **cu excepția** ('\|', '$', '%' and '.')
+Între fiecare **segment pot exista și alte simboluri**, **cu excepția** ('\|', '$', '%' și '.').
 
-**Pentru fiecare linie valida imprimați** pe consola: "\{customerName\}: \{product\} - \{totalPrice\}"
+**Pentru fiecare linie validă imprimați** pe consolă: "\{customerName\}: \{product\} - \{totalPrice\}".
 
-Când primiți "end of shift" **imprimați suma totală** pentru ziua rotunjita la **2 zecimale** în următorul format: 
+Când primiți comanda **"end of shift"**, **imprimați suma totală** câștigată în acea zi, rotunjită la **a doua zecimală**, în următorul format: 
 
-- "Total income: \{income\}".
+- "Total income: \{income\}"
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -453,7 +452,7 @@ Când primiți "end of shift" **imprimați suma totală** pentru ziua rotunjita 
 
 [hints]
 [hint]
-Fiecare linie este valabilă, așa că **tipărim** fiecare comandă, calculând **prețul** total al produsulelor cumpărate:
+Fiecare linie este validă, așa că **tipărim** fiecare comandă, calculând **prețul** total al produsulelor cumpărate:
 
 ```java
 double totalPrice = count * price;
@@ -464,7 +463,7 @@ System.out.println(String.format(
 ```
 [/hint] 
 [hint]
-La final **imprimăm** venitul **total** al **zilei**:
+La final, **imprimăm** venitul **total** al **zilei**:
 
 ```java
 System.out.println(String.format(
@@ -487,13 +486,13 @@ System.out.println(String.format(
 Pe **prima** linie, numele clientului **nu este valid**, așa că **omitem** acest rând.
 [/hint] 
 [hint]
-A **doua** linie lipsește **numărul** de produse.
+Pe a **doua** linie lipsește **numărul** de produse.
 [/hint] 
 [hint]
 Pe a **treia** linie avem un **preț nevalid**.
 [/hint] 
 [hint]
-Și numai a **patra** linie este **validă**.
+Numai a **patra** linie este **validă**.
 [/hint] 
 [/hints] 
 
@@ -653,34 +652,35 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        // Creați  codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Aveți sarcina să creați un program pentru a **decripta mesajele**.
+Creați un program care **decriptează mesaje**.
 
-Veți primi **câteva mesaje, care sunt criptate** folosind enigmă legendara stelară.
+Veți primi **câteva mesaje, care sunt criptate** cu ajutorul codului legendar **star enigma**.
 
-Ar trebui să **decriptați mesajele**, urmând aceste reguli:
-- Pentru a decripta în mod corespunzător un mesaj, **ar trebui să calculați toate literele** [s, t, a, r] - **insensibile la majuscule și să eliminați clacul** din valoarea ASCII curentă a fiecărui simbol al mesajului criptat
+Trebuie să **decriptați mesajele**, respectând următoarele reguli:
+- Determinați numărul de apariții ale următoarelor caractere \[s, t, a, r\], pe o singură linie de intrare - nu se ține cont de scrierea cu majuscule/minuscule; numărul final este cheia de criptare
+
+- Scădeți acest număr din valoarea ASCII a fiecărui simbol din mesajul criptat
 
 **După decriptare**:
-- Fiecare **mesaj** trebuie să aibă **denumirea planetei, populație, tip de atac** ('A', as attack or 'D', as destruction) și **număr de soldați**
-- **Denumirea planetei incepe după** '\@' și **conține doar litere din alfabetul latin**
-- **Populația planetei începe după** ':' și **este un număr întreg**
-- **Tipul de atac** poate fi "A"(attack) sau "D"(destruction) și **trebuie să fie înconjurat de** "!" (semnul exclamarii)
-- **Numărul de soldați începe după** "->" și **ar trebui să fie un număr întreg**
+- Fiecare **mesaj** trebuie să conțină: **denumirea planetei, populație, starea atacului** ('A' de la attacked și 'D' de la destroyed) și **numărul de soldați**
+- **Denumirea planetei** începe după simbolul '\@' și conține doar litere din alfabetul limbii engleze
+- **Populația planetei** începe după simbolul ':' și este un **număr întreg**
+- **Starea atacului** poate fi "A" (attacked) sau "D" (destroyed) și **trebuie să fie încadrată de** "!" (semnul exclamării)
+- **Numărul de soldați este plasat după** simbolul "->" și **trebuie să fie un număr întreg**
 
-**Ordinea mesajului** trebuie să fie:
-**planet name -> planet population -> attack type -> soldier count**
+**Ordinea mesajului** trebuie să fie: **planet name -> planet population -> attack type -> soldier count**
 
 Fiecare parte poate fi **separată de celelalte prin orice caracter, cu excepția**: '\@', '-', '!', ':' și '>'.
 
 ### Ieșire
-**După decriptarea tuturor mesajelor**, ar trebui să **imprimați informațiile decriptate în următorul format**:
+**După decriptarea tuturor mesajelor**, trebuie să **imprimați informațiile decriptate în următorul format**:
 -  Mai întâi imprimați planetele atacate, apoi planetele distruse
 - "Attacked planets: \{attackedPlanetsCount\}"
 - "-> \{planetName1\}"
@@ -689,7 +689,7 @@ Fiecare parte poate fi **separată de celelalte prin orice caracter, cu excepți
 - "-> \{planetName1\}"
 - ...
 
-Planetele ar trebui să fie ordonate după nume in mod **alfabetic**.
+Planetele trebuie să fie ordonate **alfabetic** după nume.
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -701,14 +701,14 @@ Planetele ar trebui să fie ordonate după nume in mod **alfabetic**.
 
 [hints]
 [hint]
-Primim **două** mesaje, pentru a le decripta calculăm **cheia**:
+Primim **două** mesaje, iar pentru a le decripta calculăm **cheia**:
 
-**Primul mesaj** are cheia de decriptare 3, deoarece conține:
+**Primul mesaj** are cheia de decriptare **3**, deoarece conține:
 - **o** apariție a literei "**S**" 
 - **o** apariție a literei "**T**"
 - **o** apariție a literei "**A**"
 
-Deci scoatem **3** din **valoarea ASCII** a fiecărui **caracter**: 
+Trebuie să scădem **3** din **valoarea ASCII** a fiecărui **caracter**: 
 
 ```java
 int occurrences = 0;
@@ -725,18 +725,18 @@ for (int i = 0; i < message.length(); i++) {
 }
 ```
 
-Mesajul **descifrat** este: `PQ@Alderaa1:30000!A!->20000`
+Mesajul **descifrat** este: `PQ@Alderaa1:30000!A!->20000`.
 [/hint] 
 [hint]
 Al **doilea mesaj** are cheia **5**.
 
-Aici, mesajul **descifrat** este: `@Cantonica:3000!D!->4000NM`
+Aici, mesajul **descifrat** este: `@Cantonica:3000!D!->4000NM`.
 
-Ambele mesaje sunt **valabile** și conțin:
-- **planete**
+Ambele mesaje sunt **valide** și conțin:
+- **o planetă**
 - **populație**
-- **tipul** de atac 
-- număr de **soldați**
+- **tipul atacului** 
+- **număr de soldați**
 [/hint] 
 [hint]
 După **decriptarea** tuturor **mesajelor**, **imprimăm** fiecare planetă conform formatului **dat**:
@@ -753,7 +753,7 @@ attacked
     System.out.println("-> " + planet));
 ```
 
-**Repetați** aceeași procedură pentru **planetele distruse** (destroyed). 
+**Repetați** aceeași procedură pentru **planetele distruse**. 
 [/hint] 
 [/hints] 
 
@@ -770,15 +770,15 @@ attacked
 [hint]
 Primim **trei** mesaje.
 
-**Primul mesaj** este decriptat cu cheia **4**: `pp$##@Coruscant:2000000000!D!->5000`
+**Primul mesaj** este decriptat cu cheia **4**: `pp$##@Coruscant:2000000000!D!->5000`.
 [/hint] 
 [hint]
-Al **doilea mesaj** are cheia **7**: `@Jakku:200000!A!MMMM`
+Al **doilea mesaj** are cheia **7**: `@Jakku:200000!A!MMMM`.
   
-Acesta este un mesaj **nevalid**, numărul **soldaților** lipsește, așa că **continuăm**.
+Acesta este un mesaj **nevalid** deoarece numărul **soldaților** lipsește, deci acesta trebuie omis.
 [/hint] 
 [hint]
-Al **treilea mesaj** are cheia **5**: `@Cantonica:3000!D!->4000NM`
+Al **treilea mesaj** are cheia **5**: `@Cantonica:3000!D!->4000NM`.
 [/hint] 
 [/hints] 
 
@@ -965,7 +965,7 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        // Creați  codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -973,45 +973,43 @@ public class Main {
 [task-description]
 ## Descriere
 
-Se apropie o luptă puternică.
+Se apropie o luptă legendară.
 
-În țara furtunoasă Nether Realms, demonii luptă unul împotriva celuilalt pentru supremație într-un duel din care doar unul va supraviețui.
+În țara furtunoasă Nether Realms, demonii luptă unul împotriva celuilalt pentru supremație într-un duel, în urma căruia doar unul va supraviețui.
 
-Sarcina dvs, totuși, nu este atât de captivantă.
+Sarcina voastră, totuși, nu este atât de captivantă.
 
-Sunteți desemnați să **conectați toți participanții** pe cartea demonilor intr-o luptă puternică la Nether Realms, care este **sortată in mod alfabetic**.
+Sunteți desemnat să **înregistrați toți participanții** în cartea care descrie lupta legendară dintre demonii din Nether Realms, aceasta fiind **ordonată alfabetic**.
 
-Numele unui demon conține **starea sănătații lui și daunele lui**.
+Numele unui demon poate fi folosit pentru a afla alte informații despre acesta, precum **punctele de viață** și **daunele** pe care le poate provoca.
 
-**Suma codurilor ASCII ale tuturor caracterelor** (excluzând numerele (0-9), simbolurile aritmetice ('+', '-', '*', '/') și **punctul delimitator** ('.')) **oferă sănătatea maxima a unui demon**. 
+Punctele totale de viață ale demonului sunt calculate prin însumarea codurilor ASCII ale tuturor caracterelor (excluzând numerele (0-9), simbolurile aritmetice ('+', '-', '\*', '/') și **punctul delimitator** ('.')).
 
-**Suma tuturor numerelor din numele său formează daunele sale de bază**.
+**Daunele** sunt calculate prin însumarea tuturor numerelor din numele unui demon.
 
-Rețineți că ar trebui să luați în considerare semnele **plus** '+' și **minus** '-'  (e.g. +10 este 10 și -10 este -10). 
+Rețineți că trebuie să luați în considerare semnificația semnelor **plus** '+' și **minus** '-' (e.g. +10 este 10 și -10 este -10). 
 
-Cu toate acestea, există **unele simboluri** ('\*' and '/') care **pot modifica în continuare daunele de bază înmulțindu-le sau împărțindu-le la 2** (de exemplu, în numele "m15\*/c-5.0", daunele de bază sunt 15 + (-5.0) = 10 și apoi **trebuie să le înmulțițim cu 2** (de ex. 10 \ * 2 = 20) și ** apoi să o împărțiți cu 2 ** (de ex. 20/2 = 10)).  
+În plus, există **unele simboluri** ('\*' și '/') care **pot modifica în continuare daunele de bază prin înmulțirea sau împărțirea acestora la 2** (de exemplu, în numele "m15\*/c-5.0", daunele de bază sunt 15 + (-5.0) = 10, pe care **trebuie apoi să le înmulțim cu 2** (10 \* 2 = 20) și **apoi să le împărțim la 2** (20/2 = 10) ).  
 
-Deci, **înmulțire și împărțire se aplică numai după ce toate numerele sunt incluse în calcul** și în ordinea în care apar în numele. 
+În concluzie, **înmulțirea și împărțirea se aplică numai după ce toate numerele sunt incluse în calcul** și trebuie efectuate în ordinea în care apar în nume. 
 
-Veți primi **toți demonii pe o singură linie**, **separate prin virgule și zero sau mai multe spații goale**
-
-Sortați-le în **ordine alfabetică și imprimaț numele lor** conform **sănătății și daunelor fiecărui**.
+Pentru fiecare demon trebuie să tipăriți **numele** lui, împreună cu **punctele sale de viață** și **daunele** pe care le provoacă.
 
 ### Intrare
 - Intrarea va fi citită de pe consolă
-- Intrarea constă dintr-o singură linie care conține toate numele demonilor separate prin virgule și zero sau mai multe spații în format:
+- Intrarea constă dintr-o singură linie care conține toate numele demonilor separate prin virgule și zero sau mai multe spații în următorul format:
     - "\{demon name\}, \{demon name\}, … \{demon name\}"
 
 ### Ieșire
-Imprimați toți demonii sortate după numele lor în ordine crescătoare, fiecare pe o linie separată în format:
+Imprimați toți demonii, ordonați alfabetic, fiecare pe o linie separată în formatul:
     - "\{demon name\} - \{health points\} health, \{damage points\} damage"
 
-### Limitări
+### Constrângeri
 - Numele unui demon va conține cel puțin un caracter
-- Numele unui demon nu poate conține spații goale ' ' sau virgule  ','
+- Numele unui demon nu poate conține spații goale ' ' sau virgule ','
 - Un număr în virgulă mobilă va avea întotdeauna cifre înainte și după separatorul său zecimal
-- Numărul in numele unui demon este considerat tot ceea ce este un număr întreg valid sau un număr cu virgulă mobilă (punctul '.' este folosit ca separator)
-    - de exemplu, toate acestea sunt numere valide:'4', '+4', '-4', '3.5', '+3.5', '-3.5'
+- Un număr care se află în numele demonului poate fi un număr întreg sau în virgulă mobilă (punctul '.' este folosit ca separator)
+    - de exemplu, toate acestea sunt numere valide: '4', '+4', '-4', '3.5', '+3.5', '-3.5'
 
 ### Exemplu
 |**Intrare**|**Ieșire** |
@@ -1027,20 +1025,17 @@ String[] demons = input.split(",\\s*");
 ```
 [/hint] 
 [hint]
-În acest exemplu, avem **un** demon: `M3ph-0.5s-0.5t0.0**`:
+În acest exemplu, avem **un** demon: `M3ph-0.5s-0.5t0.0**`.
 
-**Sănătatea** lor este egală cu **suma** tuturor codurilor **ASCII** ale literelor:
-'**M**' + '**p**' + '**h**' + '**s**' + '**t**' = **524** health.
+**Punctele de viață** sunt calculate prin însumarea codurilor ASCII ale literelor: '**M**' + '**p**' + '**h**' + '**s**' + '**t**' = **524**.
 
 **Daunele** sunt egale cu **8**.
 
-Observați că există 2 asteriscuri la sfârșit: `**`
+Observați că există 2 asteriscuri la sfârșit: `**`.
 
-Ar trebui să înmulțiți suma tuturor numerelor cu **patru** (`sum * 2 * 2`):
+Trebuie să înmulțiți suma tuturor numerelor cu **4** (`sum * 2 * 2`): (**3** + (**-0.5**) + (**-0.5**) + **0.0**) \* **2** \* **2** = **8**.
 
-(**3** + (**-0.5**) + (**-0.5**) + **0.0**) \* **2** \* **2** = **8** damage.
-
-**Împărțirea** și **multiplicarea** sunt aplicate întotdeauna la **sfârșitul**.
+**Împărțirea** și **înmulțirea** sunt efectuate întotdeauna la **sfârșit**.
 [/hint] 
 [/hints] 
 
@@ -1054,7 +1049,7 @@ Ar trebui să înmulțiți suma tuturor numerelor cu **patru** (`sum * 2 * 2`):
 [hint]
 - `Azazel`: 
     - **health** - 'A' + 'z' + 'a' + 'z' + 'e' + 'l' = **615** health
-    - **damage** - no digits = **0** damage
+    - **damage** - nu există cifre = **0** damage
 [/hint] 
 [hint]
 - `M3ph1st0**`:
@@ -1196,29 +1191,29 @@ import java.util.regex.Pattern;
 
 public class Main {
     public static void main(String[] args) {
-        // Creați  codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Creați  un program pentru a extrage toate adresele de e-mail dintr-un text dat.
+Creați un program care extrage toate adresele de e-mail dintr-un text dat.
 
-Textul apare la **singura linie de intrare**.
+Veți primi o singură linie cu date de intrare.
 
-**Imprimați e-mailurile pe consolă**, fiecare pe o linie separată.
+E-mailurile trebuie să respecte **formatul** \{user\}\@\{host\}, unde: 
 
-E-mailurile sunt considerate a fi în **format** \{user\}\@\{host\}, unde: 
-
-- \{user\} este o secvență de **litere și cifre**, unde'.', '-' și '_' pot apărea între ele
-    - exemple de **utilizatori valide**: "stephan", "mike03", "s.johnson", "st_steward", "12345"
-    - exemple de **utilizatori nevalide**: ''--123", ".....", "_steve", ".info"
-- \{host\} este o **secvență de cel puțin două cuvinte, separate prin puncte** '.'. Fiecare cuvânt este **secvență de litere și poate avea cratime** '-' între litere
-    - exemple de **hosts**: "softuni.org", "software-university.com", "intoprogramming.info", "mail.softuni.org"
-    - exemple de **hosts invalide**: "helloworld", ".unknown.soft.", "invalid-host-", "invalid-"
+- **\{user\}** este o secvență de **litere și cifre**, unde '\.', '\-' și '\_' pot apărea undeva în text, dar nu la început
+    - exemple corecte de **utilizatori**: "stephan", "mike03", "s.johnson", "st_steward", "12345"
+    - exemple greșite de **utilizatori**: "--123", ".....", "\_steve", "\.info"
+- **\{host\}** este o **secvență de cel puțin două cuvinte, separate prin puncte ('.')**. Fiecare cuvânt este o **secvență de litere și poate avea cratime ('-')** între litere
+    - exemple corecte de **hosts**: "softuni.org", "software-university.com", "intoprogramming.info", "mail.softuni.org"
+    - exemple greșite de **hosts*: "helloworld", ".unknown.soft.", "invalid-host-", "invalid-"
 - Exemple de **e-mailuri valide**: info\@softuni.org, kiki\@hotmail.co.uk, no-reply\@github.com, s.peterson\@mail.uu.net, info-bg\@software-university.software.academy 
-- Exemple de **e-mailuri invalide**: --123\@gmail.com, …\@mail.bg, .info\@info.info, _steve\@yahoo.cn, mike\@helloworld, mike\@.unknown.soft., s.johnson\@invalid-
+- Exemple de **e-mailuri nevalide**: --123\@gmail.com, …\@mail.bg, .info\@info.info, \_steve\@yahoo.cn, mike\@helloworld, mike\@.unknown.soft., s.johnson\@invalid-
+
+**Imprimați toate e-mailurile valide pe consolă**, fiecare pe o linie separată.
 
 ### Exemplu
 |**Intrare**|**Ieșire** |

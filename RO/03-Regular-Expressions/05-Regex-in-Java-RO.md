@@ -28,11 +28,11 @@ public class Main {
 ```
 Să explicăm ce înseamnă codul de mai sus:
 
-În primul rând, creăm  un **obiect de tip șablon** care **definește expresia regulată**.
+- În primul rând, creăm un **obiect de tip Pattern** care **definește expresia regulată**
 
-Acest obiect de tip șablon vă permite să **creați un obiect de potrivire pentru un șir dat**.
+- Acest obiect Pattern ne permite să **creăm un obiect Matcher pentru un șir dat**
 
-Acest obiect de potrivire vă permite apoi să executați **operații regex pe un șir**.
+- Acest obiect Matcher ne permite apoi să executăm **operații regex pe un șir**
 
 
 [/slide]
@@ -42,11 +42,9 @@ Acest obiect de potrivire vă permite apoi să executați **operații regex pe u
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/RO/04.Java-Fundamentals-Regular-Expressions-19-Checking-For-A-Single-Match-and-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Metoda `find()` încearcă să găsească apariția șablonului regex înăuntrul unui șir dat.
- **În cazul în care sunt găsite mai multe potriviri** în șir, atunci **primul apel** către `find()` va sări la **prima apariție**.
-După aceea, fiecare apel ulterior către metoda `find()` va merge la următoarea apariție potrivită, unul câte unul.
+Metoda `find()` încearcă să găsească apariția șablonului regex înăuntrul unui șir dat. **În cazul în care sunt găsite mai multe potriviri** în șir, atunci **primul apel** al metodei `find()` va sări la **prima apariție**. După aceea, fiecare apel ulterior al metodei `find()` va merge la următoarea apariție a unei potriviri, una câte una.
 
-Uitați-vă la urmpătorul exemplu:
+Uitați-vă la următorul exemplu:
 
 ```java live no-template
 import java.util.regex.Pattern;
@@ -76,9 +74,9 @@ public class Main {
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/RO/04.Java-Fundamentals-Regular-Expressions-20-Replacing-with-Regex-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Există **două** moduri de a înlocui un șablon cu **Regex**:
+Există **două** moduri de a înlocui o parte a unui șir cu un alt șir cu ajutorul **expresiilor regulate**.
 
-- `replaceAll()` - Înlocuiește toate șirurile care se potrivesc expresiei regulate date cu șirul de înlocuire și returnează rezultatul
+- `replaceAll()` - Înlocuiește toate subșirurile care corespund cu expresia regulată dată cu șirul de înlocuire și returnează rezultatul
 
 ```java live no-template
 import java.util.regex.Matcher;
@@ -97,7 +95,7 @@ public class Main {
 }
 ```
 
-- `replaceFirst()` - înlocuiește primele subsecvențe potrivite din intrare cu valoarea șirului dat și returnează rezultatul
+- `replaceFirst()` - Înlocuiește primul subșir care corespunde cu expresia regulată cu valoarea șirului dat și returnează rezultatul
 
 ```java live no-template
 import java.util.regex.Matcher;
@@ -125,7 +123,7 @@ public class Main {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/04.Java-Fundamentals-Regular-Expressions/RO/04.Java-Fundamentals-Regular-Expressions-21-Splitting-with-Regex-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Metoda `split(String pattern)` - împarte textul după șablonul specificat și returnează `String[]`
+Metoda `split(String pattern)` împarte textul după șablonul specificat și returnează `String[]`.
 
 ```java live
 String text = "1   2 3      4";
@@ -136,9 +134,9 @@ String[] tokens = text.split(pattern);
 System.out.println(String.join(", ",tokens));
 ```
 
-"Expresia `\s+` potrivește unul sau mai multe spații albe.
+Expresia `\s+` potrivește unul sau mai multe spații albe.
 
-Folosim apoi metoda `split()` care returnează o matrice de tip șir ale cărei elemente sunt apoi tipărite pe consolă, separate printr-o virgulă și un spațiu."
+Folosim apoi metoda `split()` care returnează o matrice de tip șir ale cărei elemente sunt apoi tipărite pe consolă, separate printr-o virgulă și un spațiu.
 [/slide]
 
 
@@ -158,16 +156,18 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care **se potrivește cu toate numele complete valide** dintr-o listă dată de nume și **le imprimă**.
+Creați un program care **potrivește toate numele complete valide** dintr-o listă dată de nume și **le imprimă**.
+
 Intrarea va consta dintr-o singură linie și va conține câteva nume complete.
-Sarcina dvs. este să creați o expresie regulată pentru a verifica care sunt numele valabile.
+
+Sarcina voastră este să creați o expresie regulată pentru a verifica care sunt numele valabile.
 
 ## Exemple
 | **Intrare** | **Ieșire** |
@@ -283,16 +283,16 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Creați o expresie regulată pentru a se potrivi cu toate numerele dintr-un șir dat.
+Creați o expresie regulată care potrivește toate numerele dintr-un șir dat.
 
-După ce găsiți toate numerele valide, imprimați-le pe consolă, separate prin spațiu " ".
+După ce găsiți toate numerele valide, imprimați-le pe consolă, separate printr-un spațiu.
 
 ## Exemple
 | **Intrare** | **Ieșire** |

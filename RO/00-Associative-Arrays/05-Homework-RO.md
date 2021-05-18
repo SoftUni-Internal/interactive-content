@@ -1,4 +1,4 @@
-# Teme Pentru Acas
+# Teme Pentru Acasă
 
 [slide hideTitle]
 
@@ -18,9 +18,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care **numără toate caracterele** dintr-un șir, cu excepția spațiului (' ').
+Scrieți un program care **numără toate caracterele** dintr-un șir, cu excepția spațiilor (' ').
 
-**Imprimați** toate aparițiile in următorul **format**:
+**Imprimați** toate aparițiile fiecărui caracter în următorul **format**:
 
 "\{**char**\} \-\> \{**occurrences**\}"
 
@@ -257,15 +257,15 @@ public class Main {
 [task-description]
 ## Descriere
 
-Aveți o **secvență dată de șiruri**, fiecare pe o linie nouă, până la comanda "**stop**".
+Veți primi o **secvență dată de șiruri**, fiecare pe o linie nouă, până la introducerea comenzii "**stop**".
 
-Fiecare **linie impară** de pe consolă reprezintă o **resură** (e.g. Aur, Argint, Cupru samd).
+Fiecare **linie impară** de pe consolă reprezintă o **resură** (ex. Gold, Silver, Copper și așa mai departe).
 
-Fiecare **cantitate** trebuie să fie pară. 
+Fiecare linie pară reprezintă cantitatea corespunzătoare acelei resurse. 
 
-Sarcina voastră este să colectați resursele și să le imprimați fiecare pe o linie nouă. 
+Sarcina voastră este să colectați resursele și să le imprimați, fiecare pe o linie nouă. 
 
-**Imprimați** resursele și cantitățile lor în **format**: 
+**Imprimați** resursele și cantitățile lor în **formatul următor**: 
 
 "\{**resource**\} -> \{**quantity**\}"
 
@@ -469,32 +469,34 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care conține informații despre **produsele și prețurile acestora**.
+Creați un program care conține informații despre **produse și prețurile acestora**.
 
-Fiecare produs are **un nume, un preți și o cantitate**.
+Fiecare produs are **un nume, un preț și o cantitate**.
 
-Dacă **produsul nu esxistă** încă, **aduăgați-l cu cantitatea sa inițială**.
+Dacă **produsul nu esxistă** încă, **adăugați-l împreună cu cantitatea sa inițială**.
 
-Dacă primiți **un produs care deja există** **creșteți cantitatea sa** cu cantitatea din intrare, iar dacă **prețul este diferit, înlocuiți și prețul**.
+Dacă primiți **un produs care există deja**, **măriți cantitatea sa** cu cantitatea din intrare.
+
+Dacă **prețul este diferit, înlocuiți și prețul**.
 
 Veți primi **numele produselor, prețurile și cantitățile** pe linii noi. 
 
-Până primiți **comanda** "**buy**", continuați să adăugați articole.
+Până la primirea **comenzii** "**buy**", continuați să adăugați articole.
 
-Când primiți comanda "**buy**", **imprimați** **articolele** cu **numele lor** și **prețul total** al tuturor produselor cu acest nume.
+Când primiți comanda "**buy**", **imprimați** **articolele** cu **numele lor** și **prețul total** al tuturor produselor cu același nume.
 
 ### Intrare
 
-- Până primiți "**buy**", produsele apar în **format**: "\{**name**\} \{**price**\} \{**quantity**\}"
+- Până la primirea comenzii "**buy**", veți primi produsele în **formatul următor**: "\{**name**\} \{**price**\} \{**quantity**\}"
 
 - Datele despre produs sunt întotdeauna delimitate de un singur spațiu
 
 ### Ieșire
-- Imprimați informația despre fiecare produs, în **format**:
+- Imprimați informațiile despre fiecare produs în **formatul**:
 
     - "\{**productName**\} \-\> \{**totalPrice**\}"
 
-- Formatați prețul total la  **a două cifră** după punctul zecimal
+- Formatați prețul total la **a două cifră** după punctul zecimal
 
 ### Exemplu
 | **Intrare** | **Ieșire** |
@@ -713,26 +715,28 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program, care **validează parcarea** pentru un serviciu online.
+Creați un program care **validează parcarea** pentru un serviciu online.
 
-Utilizatorii  se pot **înregistra pentru a parca și a deregistra pentru a pleca**.
+Utilizatorii trebuie să se **înregistreze pentru a parca și să anuleze înregistrarea pentru a părăsi parcarea**.
 
 Programul primește **2 comenzi**:
 - "**register** \{**username**\} \{**licensePlateNumber**\}":
-    - sistemul **suportă doar un utiliuzator** pe moment, deci dacă un utilizator încearcă să înregistreze o altă plăcuță de înmatriculare, folosind același username, sistemul va **imprima**: "**ERROR: already registered with plate number** \{**licensePlateNumber**\}"
-    - dacă utilizatorul menționat trece **successfully**, atunci **plate can be registered**, deci sistemul va trebui să **print**: "\{**username**\} **registered** \{**licensePlateNumber**\} **successfully**"
+    - sistemul **admite doar o mașină pentru fiecare utilizator** 
+    - dacă un utilizator încearcă să înregistreze o altă plăcuță de înmatriculare, folosind același username, sistemul va **imprima**: "**ERROR: already registered with plate number** \{**licensePlateNumber**\}"
+    - dacă operațiunea este îndeplinită cu succes, sistemul va trebui să **imprime**: "\{**username**\} **registered** \{**licensePlateNumber**\} **successfully**"
+    
 - "**unregister** \{**username**\}":
     - dacă utilizatorul **nu este prezent în baza de date**, sistemul va **imprima**: "**ERROR: user** \{**username**\} **not found**"
-    - dacă utilizatorul trece **successfully**, sistemul va trebui să **print**: "\{**username**\} **unregistered successfully**"
+    - dacă operațiunea este îndeplinită cu succes, sistemul va trebui să **imprime**: "\{**username**\} **unregistered successfully**"
 
-După ce ați executat toate comenzile, **imprimați** toți **utilizatorii înregistrați la momentul dat și plăcile lor de înmatriculare** in format:
+După ce ați executat toate comenzile, **imprimați** toți **utilizatorii înregistrați la momentul dat și plăcile lor de înmatriculare** în formatul următor:
 - "\{**username**\} \=\> \{**licensePlateNumber**\}"
 
 ### Intrare
-- Prima linie: n - număr de comenzi - integer
-- Următoarele n linii: comenzi într-unul dintre cele două formate posibile:
-    - Register: "**register** \{**username**\} \{**licensePlateNumber**\}"
-    - Unregister: "**unregister** \{**username**\}"
+- Prima linie: numărul întreg **n** - număr de comenzi 
+- Următoarele **n** linii: comenzi într-unul dintre cele două formate posibile:
+    - Înregistrare: "**register** \{**username**\} \{**licensePlateNumber**\}"
+    - Anularea înregistrării: "**unregister** \{**username**\}"
 
 ### Exemple
 | **Intrare** | **Ieșire** |
@@ -974,29 +978,26 @@ Scrieți un program care cuprinde informații despre **cursuri**.
 
 Fiecare curs are un **nume** și **studenți înscriși**.
 
-Veți primi **numele cursului și numele unui student**, **până ce**  primiți **comanda** "**end**". 
+Veți primi **numele unui curs și numele unui student**, **până ce** primiți **comanda** "**end**". 
 
 **Verificați** dacă un astfel de **curs există deja**, și dacă **nu există**, **adăugați cursul**. 
 
-**Înregistrați* un **utilizatot** la **curs**. 
+**Înregistrați* **utilizatorul** în cadrul **cursului**. 
 
-Atunci când primiți **comanda** "**end**", **imprimați** cursurile cu **numele** lor și **numărul total al utilizatorilor înregistrați**, ordonați după numărul utilizatorilor **înregistrați**  in ordine descendentă. 
+Atunci când primiți **comanda** "**end**", **imprimați** **numele** tuturor cursurilor și **numărul total de utilizatori înregistrați pentru fiecare curs**. Cursurile trebuie să fie ordonate după numărul utilizatorilor **înregistrați**, în ordine descrescătoare. 
 
-Pentru fiecare **concurs imprimați utilizatori înregistrați** **ordonați după nume în ordine crescătoare**.
+Pentru fiecare **curs, imprimați utilizatorii înregistrați** **ordonați după nume, în ordine crescătoare**.
 
 ### Intrare
-- Până primiți "**end**", **intrare vien în format**:
+- Până la introducerea comenzii "**end**", **veți primi linii de intrare în următorul format**: "\{**courseName**\} : \{**studentName**\}"
 
- "\{**courseName**\} : \{**studentName**\}".
-- Datele despre produs sunt **always delimited** de " : "
+- Numele cursului și numele studentului trebuie separate prin " : "
 
-### Output
-- Imprimați informația despre fiecare **course**, după **format**: 
+### Ieșire
+- Imprimați informațiile despre fiecare **curs** în următorul **format**: "\{**courseName**\}: \{**registeredStudents**\}"
 
-"\{**courseName**\}: \{**registeredStudents**\}"
-- Imprimați informația despre fiecare **student**, după **format**:
+- Imprimați informațiile despre fiecare **student** în următorul format: "-- \{**studentName**\}"
 
-"-- \{**studentName**\}"
 
 ### Exemple
 | **Intrare** | **Ieșire** |
@@ -1240,23 +1241,23 @@ public class Main {
 ## Descriere
 Scrieți un program care să cuprindă informații despre studenți și notele lor.
 
-Veți primi un număr **n de perechi de rânduri**. 
+Veți primi un număr întreg **n**. După aceea, veți primi **2 * n rânduri** de intrare.
 
-Mai întâi veți primi **numele studentului**, după aceea, veți primi **nota** acestuia. 
+Mai întâi veți primi **numele studentului**, iar apoi veți primi **nota** acestuia. 
 
-Verificați dacă **există deja**, și dacă **nu**, **îl adăugați**. 
+Verificați dacă studentul **există deja**, iar dacă **nu**, **adăugați-l**.
 
-Urmăriți **toate notele tuturor studenților**.
+Monitorizați **toate notele fiecărui student**.
 
-Când ați terminat de citit datele, țineți doar studenții cu nota medie **mai mare decât sau egală cu 4.50**. 
+Când ați terminat de citit datele, păstrați doar studenții cu nota medie **mai mare sau egală cu 4.50**. 
 
-Ordonați studenții aleși, după nota medie, în ordine **descrescătoare**.
+Ordonați studenții selectați după nota medie, în ordine **descrescătoare**.
 
-**Imprimați studenții și mediile lor** in format:
+**Imprimați studenții și mediile lor** în următorul format:
 
 - "\{**name**\} -> \{**averageGrade**\}"
 
-**Formatați** nota medie până la **a două cifră după zecimală**.
+**Formatați** nota medie până la **a două cifră după punctul zecimal*.
 
 ### Exemple
 | **Intrare** | **Ieșire** |
@@ -1538,15 +1539,15 @@ public class Main {
 ## Descriere
 Scrieți un program care conține informații despre companii și angajații lor. 
 
-Veți primi **numele companiei** și **ID-ul angajatului**, până primiți **comandă** "**End**". 
+Veți primi **numele companiei** și **ID-ul angajatului**, până la introducerea **comenzii** "**End**". 
 
-**Adăugați** fiecare **angajat** de la fiecare **companie**.
+**Adăugați** fiecare **angajat** la **compania corespunzătoare**.
 
 Rețineți că **compania nu poate avea doi angajați cu același ID**.
 
-Când ați terminat de citit date, **ordonați** companiile după nume, în ordine ascendentă.
+Când ați terminat de citit datele de intrare, **ordonați** companiile după nume, în ordine ascendentă.
 
-Imprimați numele companiei și ID-ul fiecărui angajat, în următorul format:
+Imprimați numele fiecărei companii și ID-ul fiecărui angajat care lucrează pentru acea companie, în următorul format:
 
 - \{companyName\}
 -- \{**id1**\}
@@ -1556,10 +1557,8 @@ Imprimați numele companiei și ID-ul fiecărui angajat, în următorul format:
 -- \{**idN**\}"
 
 ### Intrare
-ntrare
-Până la primirea mesajului "**End**", datele de intrare vin **în format**:
 
-"\{**companyName**\} -> \{**employeeId**\}"
+Până la introducerea mesajului "**End**", veți primi linii de intrare **în următorul format**: "\{**companyName**\} -> \{**employeeId**\}"
 
 
 ### Exemple
@@ -1856,51 +1855,46 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Utilizatorii de forță se luptă să-și amintească de ce parte sunt fiecare, fiindcă se schimbă prea des.
+Utilizatorii forței au dificultăți în a-și aminti de ce parte sunt fiecare, fiindcă își schimbă loialitatea prea des.
 
-Deci sunteți puși să creați un program pentru a le gestiona profilele.
+Sarcina voastră este să creați un program pentru a le gestiona profilele.
 
-Trebuie să stocați informația pentru **fiecare utilizator unic de forță**, inregistrat în aplicație.
+Trebuie să stocați informații despre **fiecare utilizator unic al forței** care este înregistrat în aplicație.
 
 Veți primi câteva **linii de intrare într-unul din următoarele formate**:
 
 - "\{**forceSide**\} \| \{**forceUser**\}"
 - "\{**forceUser**\} -> \{**forceSide**\}"
 
-Aici **forța utilizatorului și echipa de forță sunt șiruri**, conținând orice caractere.
 
-Dacă primiți force side \| force user trebuie să **verificați dacă un astfel de utilizator de forță există deja**, și dacă nu, **adaugă-l/o** în partea corespunzătoare. 
+Dacă primiți \{**forceSide**\} \| \{**forceUser**\}, trebuie să **verificați dacă un astfel de utilizator al forței există deja**, iar dacă nu, **adaugați-l** în partea corespunzătoare. 
 
-Dacă primiți un force user -> force side trebuie să **verificați dacă există deja un astfel de utilizator de forță** și dacă da, **schimba-i/o partea**. 
+Dacă primiți \{**forceUser**\} -> \{**forceSide**\}, trebuie să **verificați dacă există deja un astfel de utilizator al forței**, iar dacă da, **schimbați-i partea**. 
 
-Dacă nu există astfel de force user, **adăugați-l/o la partea de forță corespunzătoare**, folosind comenzile ca pentru un nou utilizator înregistrat.
+Dacă nu există astfel de utilizator al forței, **adăugați-l în partea corespunzătoare**.
 
-Apoi, puteți printa pe consolă: 
+Dacă comanda este executată cu succes tipăriți:
 
 "\{**forceUser**\} **joins the** \{**forceSide**\} **side!**"
 
 Trebuie să **încheiați programul când primiți comanda** "**End**". 
 
-În acest punct, trebuie să printați fiecare parte de forță **ordonat descrescător prin forță utilizatorii**, apoi **ordonați după nume**. 
-
-Pentru fiecare parte, imprimăm force users, **ordonați după nume**.
-
-In cazul în care nu avem **utilizatori de forță** de o parte, atunci **nu ar trebui să imprimați informațiile**.
 
 ### Intrare
-- Datele de intrare vin sub formă de comenzi într-unul din formatele specificate mai sus
-- Datele de intrare se încheie când primim comanda "**End**"
+- Datele de intrare sunt date sub formă de comenzi într-unul din formatele specificate mai sus
+- Programul se încheie după primirea comenzii "**End**"
 
 ### Ieșire
-- Ca date de intrare pentru fiecare force side, ordonată descendent în funcție de numprul de force users, apoi după nume, trebuie să imprimăm toți force users, ordonată după nume, alfabetic
-- Formatul output este:
+- Imprimați numele parților, ordonate în ordine descrescătoare în funcție de numărul de utilizatori ai forței, iar apoi în ordine alfabetică în funcție de numele lor
+- Pentru fiecare parte, tipăriți numele tuturor utilizatorilor forței care sunt loiali acelei părți, ordonați după nume
+- Formatul de ieșire este:
 
 "**Side:** \{**forceSide**\}, **Members:** \{**forceUsersCount**\}
 ! \{**forceUser**\}
 ! \{**forceUser**\}
 ! \{**forceUser**\}"
 
-- In cazul în care nu avem niciun force users, nu imprimăm această parte
+- În cazul în care nu există utilizatori ai forței înregistrați, nu imprimăm această parte
 
 
 ### Exemple
@@ -1913,10 +1907,10 @@ In cazul în care nu avem **utilizatori de forță** de o parte, atunci **nu ar 
 
 [hints]
 [hint]
-L-am înregistrat pe George de partea Luminii și pe Peter, de partea Întunericului. 
+Îl înregistrăm pe George de partea Luminii, iar pe Peter de partea Întunecată. 
 [/hint] 
 [hint]
-După ce am primit "**End**", printăm ambele părți, ordonate de numărul de membri și apoi, de numele lor. 
+După ce primim "**End**", tipărim ambele părți, ordonate în funcție de numărul de membri, iar apoi în funcție de numele lor. 
 [/hint] 
 [/hints] 
 
@@ -1933,13 +1927,13 @@ După ce am primit "**End**", printăm ambele părți, ordonate de numărul de m
 
 [hints]
 [hint]
-Deși John nu are un profil, îl înregistrăm și îl adăugăm în partea Luminii. 
+Deși John nu are un profil, îl înregistrăm și îl adăugăm de partea Luminii. 
 [/hint] 
 [hint]
-Îl ștergem pe Dean din partea Întunericului și îl adăugăm la partea Luminii.
+Îl ștergem pe Dean din partea Întunecată și îl adăugăm de partea Luminii.
 [/hint] 
 [hint]
-Imprimăm doar partea Luminii, fiindcă partea Întunericului nu are niciun membru. 
+Imprimăm doar partea Luminii, fiindcă partea Întunecată nu are niciun membru. 
 [/hint] 
 [/hints] 
 

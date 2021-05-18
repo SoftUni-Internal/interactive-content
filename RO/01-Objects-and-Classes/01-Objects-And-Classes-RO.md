@@ -11,9 +11,11 @@ Totul în Java este asociat cu clase și obiecte, împreună cu câmpurile și m
 
 Un obiect este **unitatea de bază** și o **instanță a unei clase**.
 
-Clasele definesc șabloane pentru  **câmpuri**, **constructori**, **metode**.
+Clasele definesc șabloane pentru **câmpuri**, **constructori** și **metode**.
 
-Obiectele reprezintă **subiecți din viața reală**.
+Obiectele în programare sunt modelate după **obiectele din viața reală**.
+
+Dacă luăm câini de exemplu, aceștia au o **rasă** (stare) și un comportament specific (lătrat, dat din coadă).
 
 Un obiect are:
 
@@ -21,13 +23,11 @@ Un obiect are:
 
 - **Comportament**, care este reprezentat de **metode** - un obiect interacționează cu un alt obiect prin invocarea metodelor
 
-- **Identitate**, care dă un **nume unic** unui obiect
-
-Exemplu din viața reală: câinii au stări - culoare, nume, rasă; și comportamente - lătrat, mâncat, dat din coadă.
+- **Identitate**, un **nume unic** atribuit unui obiect
 
 Un obiect deține un set de **valori numite**.
 
-Exemplu: obiectul zilei de naștere va avea valori precum **ziua**, **luna** și **anul** etc.
+De exemplu, obiectul **zilei de naștere** va avea valori precum **ziua**, **luna**, **anul** etc.
 
 ```java live no-template
 import java.time.LocalDate;
@@ -50,11 +50,13 @@ public class Main {
 
 Clasele și obiectele sunt cele **două aspecte principale** ale programării orientate pe obiecte.
 
+O clasă poate fi privită ca un șablon care descrie comportamentul admis de un obiect de un anumit tip.
+
 Clasele oferă **structura utilizată pentru a descrie și a crea obiecte**.
 
 Clasele definesc:
 
-- **Câmpuri** (variabile private) - Reprezintă starea unui obiect
+- **Câmpuri** - Reprezintă starea unui obiect
 
 - **Getters/Setters** - Returnează sau actualizează câmpuri
 
@@ -63,9 +65,9 @@ Clasele definesc:
 
 **Obiectele** pot fi derivate dintr-o **clasă** în felul următor:
 
-- `LocalDate` - O **clasă** șablon
+- `LocalDate` - **clasă** șablon
 
-- `birthdayPeter` and `birthdayMaria` - **obiecte** șablon
+- `birthdayPeter` și `birthdayMaria` - **obiecte** șablon
 
 
 [/slide]
@@ -80,11 +82,13 @@ De exemplu, toate animalele sunt grupate într-o singură **clasă** și fiecare
 
 [image assetsSrc="ObjectsAndClasses_RealLifeExample.png" /]
 
-Fiecare animal are stări precum tipul, vârsta, culoarea, mâncarea preferată etc. și comportament, cum ar fi să mănânce, să bea apă, să se miște, să facă sunet etc.
+Fiecare animal are caracteristici similare, deci animalele reprezentate prin intermediul unei clase ar putea avea următoarele câmpuri: tip, vârstă, culoare, mâncare preferată, etc.
+
+De asemenea, fiecare animal poate executa acțiuni \(să mănânce, să bea apă, să scoată anumite sunete\), iar pentru aceste acțiuni trebuie declarate metode în cadrul clasei respective.
 
 O clasă este ca un constructor de obiecte care conține toate caracteristicile lor similare. 
 
-Este un "plan" pentru crearea obiectelor.
+Aceasta este un "plan" pentru crearea obiectelor.
 
 
 [/slide]
@@ -94,9 +98,9 @@ Este un "plan" pentru crearea obiectelor.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-6-objects-instances-of-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Crearea unui obiect dintr-o clasă predefinită se numește **instanțiere**.
+Crearea unui obiect bazat pe o clasă predefinită se numește **instanțiere**.
 
-**Instanța** este obiectul în sine, care este creat în timpul rulării.
+O **instanță** a unei clase este un obiect creat în timpul rulării.
 
 Toate instanțele au un **comportament** comun.
 

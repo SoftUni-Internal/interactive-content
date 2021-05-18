@@ -5,7 +5,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-14-15-defining-simple-classes-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-La definirea clasei, aceasta conține doar acele componente ale unei declarații de clasă care sunt necesare.
+Pentru definirea unei clase în Java, unele componente sunt obligatorii, iar altele sunt opționale.
 
 Componentele **obligatorii** sunt:
 
@@ -15,23 +15,21 @@ Componentele **obligatorii** sunt:
 
 - **Corpul** clasei - între **{}**
 
-Componente de **legitimație**, dar care nu sunt obligatorii:
+Componente **utile**, dar care nu sunt obligatorii:
 
-- Câmpuri de clasă
+- Câmpuri 
 
-- Constructor
+- Metode \(constructori, getters, setters, etc.\)
 
-- Getters și Setters
+Fiecare **clasă**, **câmp**, **constructor** sau **metodă** este inițializată cu un **modificator de acces** înainte, care specifică **accessibilitea** acestora. 
 
-- Metode de clasă
+**Nivelul de acces** poate fi **schimbat** prin aplicarea **modificatorului de acces**. 
 
-Fiecare **clasă**, **câmp**, **constructor** sau **metodă** este inițializată cu un **modificator de acces** înainte, care specifică **accessibilitea**. 
+Atunci când nu specificăm un cuvânt cheie se aplică modificatorul de acces implicit.
 
-**Nivelul de acces** poate fi **schimbat** prin aplicarea **modificatorului de acces** . 
+În mod implicit, fiecare clasă este accesibilă pentru o altă clasă din același pachet.
 
-Vom discuta despre asta în cursul următor. 
-
-Există posibilitatea de a genera **automat** prin IntelliJ IDEA **constructori**, **getters**, **setters**, și cele mai folosite metode. 
+Există posibilitatea de a genera **automat** **constructori**, **getters**, **setters** și alte metode des folosite **prin IntelliJ IDEA**. 
 
 Pentru a face asta, folosiți `Right-click + Generate`. 
 
@@ -50,11 +48,11 @@ Comanda scurtă depinde de sistemul de operare:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-16-naming-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Numele clasei începe cu majusculă, prin convenție, i.e. **PascalCase naming**. 
+Convenția de denumire este **PascalCase**. 
 
-Numele clasei ar trebui să conțină substantive descriptive.
+Numele clasei trebuie să fie sugestiv și ușor de înțeles.
 
-Abrevierile trebuie evitate(cu excepția celor cunoscute, e.g. URL, HTTP, etc.).
+Abrevierile trebuie evitate (cu excepția celor cunoscute, e.g. URL, HTTP, etc.).
 
 ```java
 public class MyClass {
@@ -64,10 +62,12 @@ public class MyClass {
 
 [/slide]
 [slide hideTitle]
-# Membri Clasei
+# Membrii Clasei
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-17-class-members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Câmpurile** și **metodele** definesc **starea** și **comportamentul** unei clase.
+
+Acestea sunt membri ai clasei.
 
 **Câmpurile** furnizează starea unei clase și a obiectelor sale:
 
@@ -100,7 +100,7 @@ class Car {
 
 S-a stabilit anterior că metodele descriu **comportamentul** unui obiect.
 
-Pot face asta prin stocarea **codului executabil** care manipulează **starea** atunci când este invocat.
+Pot face asta prin stocarea **codului executabil**, care manipulează **starea** atunci când este invocat.
 
 Observați cum o metodă afectează un câmp:
 
@@ -128,7 +128,7 @@ class Car {
 
 Un getter și un setter pot fi declarați pentru fiecare câmp.
 
-Getters furnizează **acces** la câmp și citesc valoarea acestuia. 
+Getters furnizează **acces** la câmp și la valoarea acestuia. 
 
 Aceștia încep întotdeauna cu cuvântul `get`, urmat de numele variabilei:
 
@@ -169,19 +169,19 @@ public class Car {
 
 [slide hideTitle]
 
-# Crearea Unui Obiect
+# Crearea unui Obiect
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-20-creating-an-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 De fiecare dată când un obiect este **creat**, acestuia îi este **dedicată** niște **memorie**.
 
-Din acest motiv **variabilele locale** sunt create ca **referințe** pentru acea parte din memorie.
+Din acest motiv, **variabilele locale** sunt create ca **referințe** pentru acea parte din memorie.
 
 **Java Virtual Machine** este responsabilă pentru **urmărirea** referințelor obiectului.
 
-Dacă nu sunt **referințe** pentru un obiect, acesta devine **gunoi** și este **șters**.
+Dacă nu există **referințe** pentru un obiect, acesta devine **gunoi** și este **șters**.
 
-Este posibilă crearea a **multor obiecte* dintr-o clasă folosind cuvântul cheie `new`. 
+Este posibilă crearea a **multor obiecte** dintr-o clasă folosind cuvântul cheie `new`. 
 
 Luați în considerare exemplul următor:
 
@@ -201,17 +201,15 @@ class Program {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/02.Java-Fundamentals-Objects-and-Classes/RO/interactive-java-fundamentals-objects-and-classes-21-22-constructors-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-O metodă specială, executată în timpul creării unui obiect, care **setează starea inițială a obiectului**.
+Constructorul este o metodă specială, executată **în timpul creării** unui obiect, care **setează starea inițială a obiectului**.
 
-Numele constructor-ului este **același cu numele clasei**.
+Numele constructorului este **același cu numele clasei**.
 
-Constructor-ul **poate să aibă parametri**, fapt care se folosește pentru **inițializarea câmpurilor**.
+Constructorul **poate să aibă parametri**, fapt folosit pentru **inițializarea câmpurilor**.
 
-Toate clasele au **implicit constructor**. 
+O clasă poate să aibă mai mulți constructori.
 
-Pot să existe **constructori multipli ai aceleiași clase**. 
-
-Acest lucru ajută la instanțierea obiectelor în diferite moduri cu un număr diferit de argumente.
+Acest lucru ajută la instanțierea obiectelor în diferite moduri, cu un număr diferit de argumente.
 
 ```java
 public class Animal {
@@ -242,7 +240,7 @@ public class Animal {
 [task-description]
 ## Descriere
 
-Definiți o clasă **Student**, care conține următoarele informații despre elevi:
+Definiți o clasă numită **Student**, care conține următoarele informații despre studenți:
  - first name
  - last name
  - age
@@ -393,10 +391,10 @@ Port Lee is 14 years old
 [code-task title="Students 2.0" taskId="java-fund-2-Objects-and-Classes-lab-Students-2.0" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 
 [task-description]
-## Description
+## Descriere
 Folosiți clasa din problema anterioară.
 
-Dacă primiți un student, care există deja (**first name** și **last name** ar trebui să fie **unic**) suprascrieți informațiile.
+Dacă primiți un student care există deja (numele întreg trebuie să fie **unic**), suprascrieți informațiile.
 
 ## Exemple
 
@@ -498,16 +496,18 @@ Definiți o clasă **Song**, care conține următoarele informații despre melod
 
 ### Intrare / Constrângeri
 
-- Pe prima linie veți primi **numărul de melodii - N**.
+- Pe prima linie veți primi **numărul de melodii - N**
 
-- Pe următoarele linii N veți primi date în următorul format:
+- Pe următoarele **N** linii veți primi date în următorul format:
 "\{**typeList**\}\_\{**name**\}\_\{**time**\}".
 
-- Pe ultima linie veți primi **Type List** sau **"all"**.
+- Pe ultima linie veți primi **Type List** sau **"all"**
 
 ### Ieșire
 
-Imprimați numai **Numele melodiilor** care aparțin de **Type list** sau **All songs**.
+Dacă primiți un **Type list** pe ultima linie, tipăriți **doar numele melodiilor** care aparțin tipului introdus.
+
+Dacă primiți comanda **"all"**, tipăriți numele **tuturor melodiilor**.
 
 ## Exemple
 

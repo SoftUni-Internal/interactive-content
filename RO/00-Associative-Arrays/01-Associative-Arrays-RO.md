@@ -4,21 +4,21 @@
 # Matrice Asociative
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-3-4-associative-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Matricele asociative sunt colecții care conțin parametri prin intermediul unor perechi Cheie (Key)/ Valoare (Value) și sunt indexate prin intermediul **cheilor**. 
+Matricele asociative sunt colecții care conțin parametri sub forma unor perechi Cheie (Key)/Valoare (Value) și sunt indexate prin intermediul **cheilor**. 
 
-**Cheia** reprezintă **indexul** instanței map. Cheile și valorile sunt **obiecte** și fiecare pereche este numită **înregistrare**.
+**Cheia** reprezintă **indexul** instanței map. **Cheile** și **valorile** sunt **obiecte**, iar fiecare pereche este numită **înregistrare**.
 
 Un obiect este folosit drept **cheie** (index) pentru un alt obiect (**valoare**). 
 
-Acestea **nu pot** fi **tipuri primitive** precum int, double, boolean, etc. 
+Acestea **nu pot** fi **tipuri primitive** precum **int**, **double**, **boolean**, etc. 
 
-Acestea **trebuie specificate** împreună cu **clasa învelitoare** echivalentă: Integer, Double, Boolean, etc. 
+Acestea **trebuie specificate** împreună cu **clasa învelitoare** echivalentă: **Integer**, **Double**, **Boolean**, etc. 
 
 **Tipul cheii și tipul valorii** pot fi **la fel sau diferite**, în funcție de caz.
 
-În Java matricele asociative se numesc **Maps**. 
+În Java, matricele asociative se numesc **Maps**. 
 
-Un map **nu poate conține chei dublicate**. Fiecare **cheie** poate fi asociată doar cu o singură **valoare**.
+O instanță Map **nu poate conține chei dublicate**. Fiecare **cheie** poate fi asociată doar cu o singură **valoare**.
 
 **Valorile unor chei diferite pot fi dublicate**. 
 
@@ -43,7 +43,7 @@ De exemplu:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-5-collections-of-key-and-value-pairs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Colecțiile API din Java conțin câteva **implementări** Map care permit conținutului unei instanțe Map să fie văzut ca:
+Colecțiile API din Java conțin câteva **implementări** Map care îi permit conținutului unei instanțe Map să fie văzut ca:
 
 - Un set de chei
 
@@ -53,7 +53,7 @@ Colecțiile API din Java conțin câteva **implementări** Map care permit conț
 
 Cele mai folosite **implementări Map** sunt **HashMap**, **LinkedHashMap** și **TreeMap**. 
 
-**Ordinea** intrărilor unei instanțe Map depinde de **implementarea aleasă a colecției**.
+**Ordinea** intrărilor dintr-o instanță Map depinde de **implementarea aleasă a colecției**.
 
 Unele implementări, cum ar fi clasa **TreeMap**, **garantează o ordine specifică**. 
 
@@ -61,7 +61,7 @@ Altele, cum ar fi clasa **HashMap**, **nu oferă acest lucru**.
 
 Clasele **HashMap** și **LinkedHashMap** admit o valoare `null` pentru **cheie** și mai multe valori `null` pentru **valori**.
 
-Clasa **TreeMap** nu admit nicio valoare `null`.
+Clasa **TreeMap** nu admite nicio valoare `null`.
 
 ## HashMap < Key, Value >
 
@@ -74,8 +74,6 @@ De obicei, folosim această clasă atunci când nu vom executa operații bazate 
 Clasa **LinkedHashMap** extinde clasa **HashMap**, dar **menține o ordine specifică**. 
 
 Cheile sunt stocate **în ordinea în care au fost adăugate**.
-
-## TreeMap < Key, Value >
 
 ## TreeMap < Key, Value >
 
@@ -104,9 +102,9 @@ public class Main {
 
 Pentru a inițializa o instanță Map:
 
-- Specificați **tipul generic** al cheii și al valorii între paranteze unghiulare `<>`, separate printr-o virgulă și un spațiu (", ").
+- Specificați **tipul generic** al cheii și al valorii între paranteze unghiulare `<>`, separate printr-o virgulă și un spațiu (", ")
 
-- Setați **numele** instanței Map, care trebuie să fie suficient de **descriptiv** pentru a ne ajuta să înțelegem ce anume **reprezintă cheia și valoarea**. 
+- Setați **numele** instanței Map, care trebuie să fie suficient de **descriptiv** pentru a ne ajuta să înțelegem ce anume **reprezintă cheia și valoarea**
 
 - După semnul egal (`=`), folosiți cuvântul cheie `new` și **tipul dorit** al instanței Map
 
@@ -217,7 +215,7 @@ System.out.println(airplanes.containsValue(150));
 System.out.println(airplanes.containsValue(100));
 ```
 
-- `isEmpty()` - Returnează `true` dacă instanța Map este **goală** și `false` dacă conține **măcar o pereche3**
+- `isEmpty()` - Returnează `true` dacă instanța Map este **goală** și `false` dacă conține **măcar o pereche**
 
 ```java live
 HashMap<String, Integer> airplanes = new HashMap<>();
@@ -247,11 +245,11 @@ System.out.println(airplanes.isEmpty());
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/RO/interactive-java-fundamentals-associative-arrays-11-iterating-through-map-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
-Atunci când iterăm prin obiecte de tipul `Map.Entry <K, V>`, este **imposibilă** modificarea colecției (este read-only).
+Atunci când iterăm prin obiecte de tipul `Map.Entry <K, V>`, modificarea colecției este **imposibilă** (este read-only).
 
 Există câteva moduri prin care putem itera prin datele stocate într-o instanță Map.
 
-- Iterararea prin elementele unei instanțe Map folosind o buclă **for-each** 
+- Iterarea prin elementele unei instanțe Map folosind o buclă **for-each**:
 
   - `keySet()` - obține numai cheile
 
@@ -452,7 +450,7 @@ Creați un program care stochează cuvinte și sinonimele acestora într-o insta
 
 **Valoarea** va fi o **listă a tuturor sinonimelor acelui cuvânt**.
 
-## Intrare / Limitări
+## Intrare / Constrângeri
 
 Veți primi un număr întreg **n**.
 
@@ -462,7 +460,7 @@ Pe următoarele **2 * n** linii veți primi un **cuvânt** și **un sinonim**, f
 
 - \{**synonym**\}
 
-Dacă primiți același cuvânt de două ori, adăugați sinonimul acestuia listei deja existente pentru acel cuvânt.
+Dacă primiți același cuvânt de două ori, adăugați sinonimul acestuia în lista deja existentă pentru acel cuvânt.
 
 ## Ieșire 
 
@@ -666,15 +664,15 @@ public class Main {
 ## Descriere 
 Veți primi un **șir** care conține cuvinte separate **print-un singur spațiu**. 
 
-Creați un program care găsește toate cuvintele din șir care se repetă de **un număr impar de ori**. (nu se ține cont de scrierea cu majuscule)
+Creați un program care găsește toate cuvintele din șir care se repetă de **un număr impar de ori** (nu se ține cont de scrierea cu majuscule).
 
-## Intrare/Limitări
+## Intrare/ Constrângeri
 
 Cuvintele sunt date pe o **singură linie**, **separate printr-un spațiu**.
 
 ## Ieșire
 
-Imprimați elementele care îndeplinesc condiția specificată. Acestea trebuie scrise cu **minuscule, în ordinea în care apar și trebuie separate prin virgulă**.
+Imprimați elementele care îndeplinesc condiția specificată. Acestea trebuie scrise cu **minuscule, în ordinea în care apar, și trebuie separate prin virgulă**.
 
 ## Exemple
 | **Intrare** | **Ieșire** |
