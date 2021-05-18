@@ -21,7 +21,7 @@ public class Main {
 ## Descriere
 Creați un program care **calculează costul total** al diferitelor tipuri de mobilier cumpărat.
 
-Veți primi câteva linii de intrare până când veți primi comanda **"Purchase"**.
+Veți primi câteva linii cu date de intrare până la introducerea comenzii **"Purchase"**.
 
 O linie este considerată **validă** dacă respectă următorul **format**:
 
@@ -33,16 +33,11 @@ Trebuie să stocați **denumirea mobilierului și prețul total**.
 
 La final, **imprimați fiecare piesă de mobilier cumpărată pe o linie separată**, în formatul următor:
 
-"Bought furniture:
-
-\{furniture name 1\}
-
-\{furniture name 2\}
-…"
+Bought furniture: \{furniture name 1\} \{furniture name 2\} …
 
 Pe **ultima linie imprimați** următorul mesaj:
 
-- "Total money spent: \{spend money\}" 
+- "Total money spent: \{amount\}" 
 
 Toate numerele trebuie **formatate** la a doua cifră după punctul zecimal.
 
@@ -237,7 +232,7 @@ Numele participantului este **George**. El a alergat **29 de km**.
 
 **Stocați informațiile** despre o **persoană numai dacă lista de participanți conține numele** persoanei respective.
 
-Dacă primiți **aceeași persoană de mai multe ori**, **adăugați distanța la distanța deja parcursă**.
+Dacă primiți **aceeași persoană de mai multe ori**, **adăugați distanța nouă la distanța deja parcursă**.
 
 La final, **imprimați primii 3 alergători, ordonați descrescător în funcție de distanța parcursă** în următorul format:
 
@@ -261,7 +256,7 @@ La final, **imprimați primii 3 alergători, ordonați descrescător în funcți
 [hints]
 [hint]
 Pe a treia linie de intrare avem **Ray** - `R1@!3a$y4456@`.
-El **nu este** pe listă, deci nu luăm în calcul rezultatul lui.
+El **nu este** pe lista de participanți, deci nu luăm în calcul rezultatul lui.
 [/hint] 
 [hint]
 Celelalte persoane **sunt** pe lista de **participanți**.
@@ -443,7 +438,7 @@ Segmentele unei **comenzi valide trebuie să apară în ordinea dată: client, p
 
 **Pentru fiecare linie validă imprimați** pe consolă: "\{customerName\}: \{product\} - \{totalPrice\}".
 
-Când primiți comanda **"end of shift"**, **imprimați suma totală** câștigată în acea zi, rotunjită la **a doau zecimală**, în următorul format: 
+Când primiți comanda **"end of shift"**, **imprimați suma totală** câștigată în acea zi, rotunjită la **a doua zecimală**, în următorul format: 
 
 - "Total income: \{income\}"
 
@@ -669,7 +664,7 @@ Creați un program care **decriptează mesaje**.
 Veți primi **câteva mesaje, care sunt criptate** cu ajutorul codului legendar **star enigma**.
 
 Trebuie să **decriptați mesajele**, respectând următoarele reguli:
-- Determinați numărul de apariții ale următoarelor caractere \[s, t, a, r\], pe o singură linie de intrare - nu se ține cont de scrierea cu majuscule/ minuscule; numărul final este cheia de criptare
+- Determinați numărul de apariții ale următoarelor caractere \[s, t, a, r\], pe o singură linie de intrare - nu se ține cont de scrierea cu majuscule/minuscule; numărul final este cheia de criptare
 
 - Scădeți acest număr din valoarea ASCII a fiecărui simbol din mesajul criptat
 
@@ -740,8 +735,8 @@ Aici, mesajul **descifrat** este: `@Cantonica:3000!D!->4000NM`.
 Ambele mesaje sunt **valide** și conțin:
 - **o planetă**
 - **populație**
-- **starea atacului** 
-- număr de **soldați**
+- **tipul atacului** 
+- **număr de soldați**
 [/hint] 
 [hint]
 După **decriptarea** tuturor **mesajelor**, **imprimăm** fiecare planetă conform formatului **dat**:
@@ -984,7 +979,7 @@ Se apropie o luptă legendară.
 
 Sarcina voastră, totuși, nu este atât de captivantă.
 
-Sunteți desemnat să **înregistrați toți participanții** în cartea care descrie lupta legendară dintre demonii din Nether Realms, care este **ordonată alfabetic**.
+Sunteți desemnat să **înregistrați toți participanții** în cartea care descrie lupta legendară dintre demonii din Nether Realms, aceasta fiind **ordonată alfabetic**.
 
 Numele unui demon poate fi folosit pentru a afla alte informații despre acesta, precum **punctele de viață** și **daunele** pe care le poate provoca.
 
@@ -994,7 +989,7 @@ Punctele totale de viață ale demonului sunt calculate prin însumarea codurilo
 
 Rețineți că trebuie să luați în considerare semnificația semnelor **plus** '+' și **minus** '-' (e.g. +10 este 10 și -10 este -10). 
 
-În plus, există **unele simboluri** ('\*' și '/') care **pot modifica în continuare daunele de bază prin înmulțirea sau împărțirea acestora la 2** (de exemplu, în numele "m15\*/c-5.0", daunele de bază sunt 15 + (-5.0) = 10, pe care **trebuie apoi să le înmulțițim cu 2** (10 \* 2 = 20) și **apoi să le împărțim la 2** (20/2 = 10) ).  
+În plus, există **unele simboluri** ('\*' și '/') care **pot modifica în continuare daunele de bază prin înmulțirea sau împărțirea acestora la 2** (de exemplu, în numele "m15\*/c-5.0", daunele de bază sunt 15 + (-5.0) = 10, pe care **trebuie apoi să le înmulțim cu 2** (10 \* 2 = 20) și **apoi să le împărțim la 2** (20/2 = 10) ).  
 
 În concluzie, **înmulțirea și împărțirea se aplică numai după ce toate numerele sunt incluse în calcul** și trebuie efectuate în ordinea în care apar în nume. 
 
@@ -1030,7 +1025,7 @@ String[] demons = input.split(",\\s*");
 ```
 [/hint] 
 [hint]
-În acest exemplu, avem **un** demon: `M3ph-0.5s-0.5t0.0**`:
+În acest exemplu, avem **un** demon: `M3ph-0.5s-0.5t0.0**`.
 
 **Punctele de viață** sunt calculate prin însumarea codurilor ASCII ale literelor: '**M**' + '**p**' + '**h**' + '**s**' + '**t**' = **524**.
 
