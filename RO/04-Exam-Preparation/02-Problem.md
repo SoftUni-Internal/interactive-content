@@ -27,10 +27,10 @@ Veți primi linii cu comenzi separate prin "->", **până la introducerea** come
 
 Există **trei comenzi posibile**:
 - "**Add->**\{**username**\}" 
-    - **verificați dacă numele de utilizator există, iar dacă acesta există, imprimați următorul mesaj*: "\{**username**\} **is already registered"**
+    - **verificați dacă numele de utilizator există, iar dacă acesta există, imprimați următorul mesaj**: "\{**username**\} **is already registered"**
     - dacă nu există, atunci adăugați utilizatorul la colecția de utilizatori
 - "**Send->**\{**username**\}**->**\{**Email**\}"
-    - adăugați \{**Email-ul**\} la colecția de e-mailuri
+    - adăugați \{**Email**\} la colecția de e-mailuri a utilizatorului 
 - "**Delete->**\{**username**\}"
     - ștergeți utilizatorul dat, dacă acesta există
     - dacă utilizatorul nu există, tipăriți "\{**username**\} **not found!**"
