@@ -1648,7 +1648,7 @@ function tableSearchEngine(){
 
 # Description
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/06-Table-Search-Engine.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-advanced/06.Table-Search-Engine-NEW.zip) **for this task.**
 
 Write a function that searches in a table by a given input.
 

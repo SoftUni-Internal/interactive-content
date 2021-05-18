@@ -1648,7 +1648,7 @@ function tableSearchEngine(){
 
 # Descriere
 
-**Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/06-Table-Search-Engine.zip) **pentru această sarcină.**
+**Aici este un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-advanced/06.Table-Search-Engine-NEW.zip) **pentru această sarcină.**
 
 Create a function that searches in a table by a given input.
 
