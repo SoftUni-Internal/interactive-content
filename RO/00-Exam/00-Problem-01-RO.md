@@ -19,11 +19,9 @@ public class Main {
 
 Creați un program care calculează **punctele bonus** pentru fiecare **student**, pentru un anumit curs.
 
-Pe prima linie, veți primi **numărul de studenți** pentru curs.
+Pe prima linie, veți primi **numărul de studenți** care participă la curs.
 
 **Pe a doua linie**, veți primi **numărul prelegerilor** din curs.
-
-Fiecare curs are **un bonus suplimentar**.
 
 Pe a treia linie, veți primi **bonusul suplimentar** pentru curs.
 
@@ -31,7 +29,7 @@ Pe a treia linie, veți primi **bonusul suplimentar** pentru curs.
 
 Punctele bonus sunt calculate utilizând următoarea **formulă**:
 
-\{bonus total \} = \{prezențe studenți \} \/ \{numărul prelegerilor \} \* (5 + \{bonus suplimentar \})
+\{bonus total\} = \{prezențe studenți\} \/ \{numărul prelegerilor\} \* (5 + \{bonus suplimentar\})
 
 Găsiți studentul cu **cele mai multe puncte bonus** și tipăriți-i **punctele** împreună cu **prezențele** în următorul format:
 
@@ -40,9 +38,9 @@ Găsiți studentul cu **cele mai multe puncte bonus** și tipăriți-i **punctel
 "**The student has attended** \{**studentAttendances**\} **lectures.**"
 
 
-La final, rotunjiți punctele bonus până la **următorul număr întreg**.
+La final, rotunjiți punctele bonus în sus la **următorul număr întreg**.
 
-### Intrare / limitări
+### Intrare / Constrângeri
 
 - Pe **prima linie**, veți primi numărul de studenți - un număr întreg în intervalul \[0...50\]
 
@@ -50,13 +48,13 @@ La final, rotunjiți punctele bonus până la **următorul număr întreg**.
 
 - Pe **a treia linie**, veți primi **bonusul inițial** - un număr întreg în intervalul \[0...100\]
 
-- **În următoarele rânduri**, veți primi numărul de **prezențe al fiecărui student**
+- **În următoarele rânduri**, veți primi numărul de **prezențe ale fiecărui student**
 
 - Nu vor fi **studenți cu aceeași sumă finală de puncte bonus**
 
 ### Ieșire
 
-- Imprimați punctele bonus maxime, rotunjite la cel mai apropiat număr, împreună cu prezențele studentului dat, în formatul descris mai sus
+- Imprimați punctele bonus maxime, rotunjite în sus la cel mai apropiat număr întreg, împreună cu prezențele studentului dat, în formatul descris mai sus
 
 ## Primul Exemplu
 | **Intrare** | **Ieșire** |
