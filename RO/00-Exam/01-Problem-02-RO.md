@@ -83,7 +83,6 @@ Imprimați mesajele corespunzătoare, descrise mai sus.
 |  | You found 100 bitcoins. |
 |  | You died! Killed by boss. |
 |  | Best room: 6 |
-|  |  |
 
 [hints]
 [hint]
@@ -114,7 +113,6 @@ Pentru fiecare condiție, modificați datele și/sau tipăriți ieșirea corespu
 |  | You've made it! |
 |  | Bitcoins: 120 |
 |  | Health: 65 |
-|  |  |
 
 [/task-description]
 [code-io /]
