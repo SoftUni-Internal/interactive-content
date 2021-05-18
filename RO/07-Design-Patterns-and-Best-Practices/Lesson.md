@@ -1,1 +1,0 @@
-# Design Patterns and Best Practices - Coming Soon
