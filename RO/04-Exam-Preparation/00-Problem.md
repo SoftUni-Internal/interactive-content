@@ -20,7 +20,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program de resetare a parolei care efectuează o serie de comenzi pe un șir predefinit.
+Scrieți un program de resetare a parolei, care efectuează o serie de comenzi pe un șir predefinit.
 
 În primul rând, veți primi un șir.
 
@@ -40,7 +40,7 @@ Comenzile vor fi următoarele:
 
 ## Intrare
 
-  - Veți primi șiruri până la primirea comenzii "**Done**"
+  - Veți primi șiruri până la introducerea comenzii "**Done**"
 
 ## Ieșire
 
@@ -84,7 +84,7 @@ Apoi, pe o nouă linie imprimăm **noua** parolă brută rezultată:
 [hint]
 A treia comandă este `Substitute :: -`.
 
-**Înlocuim** "\:\:" cu "\-"
+**Înlocuim** "\:\:" cu "\-".
 
 "icecream\:\:hot\:\:mer" \-\> "icecream\-hot\-mer"
 
