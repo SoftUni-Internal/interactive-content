@@ -5,13 +5,13 @@
 
 # Relational Database
 
-A **relational database** is a collection of information.
+A **relational database** is a collection of information stored in tables.
 
-The tables used in **relational databases** store information about the objects.
+Each column of the table contains a different attribute of the data.
 
-Tables contain rows and columns that hold information, which has a unique identifier - known as a **key**.
+Every table in the database has a unique identifier field called **primary key**.
 
-Each column contains the attributes of the data.
+It can link the original table with other ones where it is used as a **foreign key**.
 
 Almost all **relational databases** use **SQL** (Structured Query Language) to **extract** data.
 
@@ -35,13 +35,11 @@ Some of the most popular **relational database** are:
 
 # Non-relational Database (NoSQL)
 
-**Non-relational databases** are different from traditional relational databases. 
-
-They store data differently than relational databases do.
+**Non-relational databases** store data differently than traditional relational databases. 
 
 The **Non-Relational database** is more flexible than the traditional one since it stores data in a non-tabular form and might be based on structures like documents. 
 
-Most of the time, the document files can be highly detailed while containing a range of different types of information.
+The document files can be highly detailed, containing a range of different types of information.
 
 **NoSQL** databases are often used when large and complex data needed to be organized.
 
@@ -88,7 +86,7 @@ The **same** data in a **non-relational database:**
 
 ```
 
-The main difference is that in the **non-relational database** we can add other entries without the need to have the same **key**.
+The main difference is that in the **non-relational database** we can add other entries without the need to have the same **keys**.
 
 So, a new product with different properties can be added:
 
@@ -110,7 +108,7 @@ This is the main difference.
 
 In a **Non-Relational database**, we do not rely on a schema that defines the fields beforehand.
 
-This adds a **huge** flexibility.
+This makes them very flexible.
 
 [/slide]
 
