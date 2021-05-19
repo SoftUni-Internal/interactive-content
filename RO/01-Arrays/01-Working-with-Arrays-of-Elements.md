@@ -17,7 +17,7 @@ This makes JavaScript arrays a very powerful tool.
 
 Arrays in JavaScript also reference data types that array's information stored in heap memory and the stack only the array's address is stored.
 
-[image assetsSrc="java-js-adv-arrays-1.png" /]
+[image assetsSrc="java-js-adv-arrays-01.png" /]
 
 The first element of the array is stored on index 0, which makes it zero base, and the last element of the array is stored at length-1.
 
@@ -42,7 +42,7 @@ In JavaScript when we initialize an array, we **do not need** to specify nether 
 
 That means we can create an empty array and there we can insert as many elements as we need:
 
-```js
+```js live
 let elements = [];
 console.log(`The length of the array is: ${elements.length}`);
 
@@ -58,7 +58,7 @@ In a JavaScript array, it is possible to store elements at a non-contiguous loca
 
 If we attempt to assign a value to a non-existent index, JavaScript will fill the missing elements with "**undefined**" values and increase its size:
 
-```js
+```js live
 let elements = [];
 
 elements[0] = 10; 
@@ -75,7 +75,7 @@ console.log(`elements[5] = ${elements[5]}`);
 We also can change the element on the specific index: 
 
 
-```js
+```js live
 let elements = [10, 20, 30];
 console.log(`Element on index 1 is: ${elements[1]}`);
 
@@ -111,35 +111,21 @@ let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
 [slide hideTitle]
 # Arrays Indexation
 
-In JavaScript if we want to access element in a givven index, we use `[]` (sqare brackets):
-
-```js
-let elements = [10, 20, 30];
-
-console.log(`elements[0] = ${elements[0]}`);
-console.log(`elements[2] = ${elements[1 + 1]}`);
-```
-
-In Java, if we try to access an element on the non-existing index it will throw an exception, but if we try to access an element on a non-existing index in JavaScript we will receive "undefined":
-
-```js
-let elements = [10, 20, 30];
-
-console.log(elements[10]);
-console.log(elements[-1]);
-```
-
 Setting or accessing via non-integers using bracket notation (or dot notation) will not set or retrieve an element from the array list itself:
 
-```js
+```js live
 let arr = [];
 arr[3.4] = 'Oranges';
 arr[-1] = 'Apples';
 console.log(arr.length);               
 console.log(arr.hasOwnProperty(3.4));
 
-arr["1"] = 'Grapes';
+arr['fruit'] = 'Grapes';
 console.log(arr.length);
 console.log(arr);
 ```
+
+In this example, we are trying to set elements on the decimal index, negative index, and a string. 
+
+In this what the interpreter will do is to convert every index into a string, and the value will be set as property and this is why the length of the array is zero.
 [/slide]

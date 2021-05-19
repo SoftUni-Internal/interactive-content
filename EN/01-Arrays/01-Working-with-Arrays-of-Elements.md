@@ -111,24 +111,6 @@ let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
 [slide hideTitle]
 # Arrays Indexation
 
-In JavaScript if we want to access element in a givven index, we use `[]` (sqare brackets):
-
-```js live
-let elements = [10, 20, 30];
-
-console.log(`elements[0] = ${elements[0]}`);
-console.log(`elements[2] = ${elements[1 + 1]}`);
-```
-
-In Java, if we try to access an element on the non-existing index it will throw an exception, but if we try to access an element on a non-existing index in JavaScript we will receive "undefined":
-
-```js live
-let elements = [10, 20, 30];
-
-console.log(elements[10]);
-console.log(elements[-1]);
-```
-
 Setting or accessing via non-integers using bracket notation (or dot notation) will not set or retrieve an element from the array list itself:
 
 ```js live
@@ -138,8 +120,12 @@ arr[-1] = 'Apples';
 console.log(arr.length);               
 console.log(arr.hasOwnProperty(3.4));
 
-arr["1"] = 'Grapes';
+arr['fruit'] = 'Grapes';
 console.log(arr.length);
 console.log(arr);
 ```
+
+In this example, we are trying to set elements on the decimal index, negative index, and a string. 
+
+In this what the interpreter will do is to convert every index into a string, and the value will be set as property and this is why the length of the array is zero.
 [/slide]
