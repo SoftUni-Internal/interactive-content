@@ -17,7 +17,7 @@
 - Converting JSON to a string
 
 **3. Classes**
-- Declaring and instantating classes
+- Declaring and instantiating classes
 - Definition of hoisting
 - Class methods and properties in JavaScript
 
