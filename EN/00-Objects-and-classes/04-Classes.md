@@ -68,8 +68,6 @@ let student = new Student('Peter', 5.50);
 
 [video src="https://videos.softuni.org/hls/02.fundamentals-objects-maps-strings/01.JS-Fundamentals-Objects-and-classes/EN/01.JS-Fundamentals-Object-and-Classes-28-Functions-in-a-class-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-TODO: The first slide (Class Example) in this video must be removed.
-
 The ability to modify data is performed by special functions that are a part of the class, which are called methods. 
 
 JavaScript classes support both **instance** and **static** methods.
