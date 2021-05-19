@@ -3,58 +3,133 @@
 [slide hideTitle]
 # Class Definition​
 
-A **class** is like a **blueprint** (or template) for creating **objects**.
+Classes are used as a blueprint, defining the structure for an object.
 
-Classes provide means of **bundling data and functionality** together.
+Inside its body, a class can **contain**:
 
-Each class instance can have **attributes** attached to it.
+- **Data**, in the form of properties and attributes
 
-A class instance can also have **methods** for **modifying its state**, they are its **behavior**.
+- **Actions** that define its behavior and modify its state, by means of functions
+
+Being a template, classes can instantiated in the form of **objects**.
+
+What makes them different from Java classes, is that JavaScript classes are much more dependent on the proper use of the `this` keyword.
+
+Scoping and `this` binding have a very different behavior in JavaScript, compared to Java.
+
 [/slide]
 
 [slide hideTitle]
 # Defining a Class​
 
-In JavaScript, there are two ways to define a class - class declarations and class expressions.
+In **JavaScript**, there are two ways to **define** a class - class **declarations** and class **expressions**.
 
+## Class Declaration
 
-
-We declare a class using the `class` keyword, followed by the name of the class, in this case `Student`.
+We declare a class using the `class` keyword, followed by the name of the class, in this case `Person`.
 
 ``` js
-class Student {
-    constructor(name) {
+class Person {
+    constructor(name, age, city) {
         this.name = name;
+        this.age = age;
+        this.city = city;
     }
 }
 ```
 
 The `constructor` method will be called every time the class is **instantiated**.
 
-**Class attributes** are **the same for all instances of the class**.
+The `this` keyword is used to set a property of the objects to a given value.
 
-**Instance attributes** are **unique to each instance of the class**.
+To **instantiate** the `Student` class, we use the `new` keyword, followed by the name of the class:
 
 ```js
-class Student {
-    constructor(name, grade) {
-        this.name = name;
-        this.grade = grade;
+let student = new Student('Mike', 37, 'Bern');
+```
+
+Between the brackets, we pass in the `name`, `age` and `city` arguments.
+
+
+## Class Expression
+
+When using a **class expresssion**, the class is assigned as a value to a variable:
+
+```js
+let Car = class {
+    constructor(brand, model, year) {
+        this.brand = brand;
+        this.model = model;
+        this.year = year;
     }
 }
 ```
 
-The `this` keyword is used to set a property of the objects to a given value.
+We will only be able to access this class by the **variable name**.
 
-This is how we create an **instance** of the `Student` class:
+As a result, we can leave the class itself either with, or without one - as shown above.
 
-```js
-let student = new Student('Peter', 5.50);
-```
 [/slide]
 
 [slide hideTitle]
-# Methods
+# Hoisting
+
+In JavaScript, we can use variables and functions before they are declared.
+
+```js live
+console.log(currentWeather);
+
+let currentWeather = 'rainy 🌦';
+```
+
+Moving all declarations to top of their scope is referred to as **hoisting**.
+
+This behavior does **not** apply to neither class declarations nor class expressions.
+
+We are required to declare our class **before** we can access it.
+
+Failing to do so will result in a `ReferenceError`:
+
+```js live
+const mountainBike = new Bike('Trek Bikes 🚲', 'mountain 🏔', 'Kenda Kwest 28x700');
+
+class Bike {
+    constructor(brand, type, tires) {
+        this.brand = brand;
+        this.type = type;
+        this.tires = tires;
+    }
+}
+```
+
+[/slide]
+
+[slide hideTitle]
+# Class Body
+
+The class body is defined using opening and closing curly braces: `{...}`
+
+Inside, we define class members like properties an methods.
+
+```js
+class SupportEmployee {
+    constructor(name) {
+        this.name = name,
+        this.department = 'support'
+    }
+}
+```
+
+A compulsory method all classes have is the **constructor**.
+
+It is used every time a **new** instance (object) of the class is created.
+
+This method defines the **initial** values for all properties that a child object should have.
+
+[/slide]
+
+[slide hideTitle]
+# Prototype Methods
 
 The ability to modify data is performed by special functions that are a part of the class, which are called methods. 
 
