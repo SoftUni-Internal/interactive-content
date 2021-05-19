@@ -741,9 +741,9 @@ Scrieți o funcție care manipulează o matrice de numere.
 
 - "**Add** \{**number**\}": adăugați un număr la sfârșitul matricei
 
-- "**Remove** \{**number**\}": adăugați un număr la sfârșitul matricei
+- "**Remove** \{**number**\}": eliminați un număr de la sfârșitul matricei
 
--	"**RemoveAt** \{**index**\}": adăugați un număr la sfârșitul matricei
+-	"**RemoveAt** \{**index**\}": eliminați din matrice numărul care corespunde indicelui dat
 
 - "**Insert** \{**number**\} \{**index**\}": introduceți un număr la un indice dat
 
