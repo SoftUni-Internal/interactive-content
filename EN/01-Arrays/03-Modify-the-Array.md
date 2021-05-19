@@ -452,8 +452,4 @@ console.log(numbers);
 
 [/slide]
 
-[slide hideTitle]
 
-# Problem: Bigger Half
-
-[/slide]
