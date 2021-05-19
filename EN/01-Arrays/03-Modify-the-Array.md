@@ -413,7 +413,6 @@ console.log(arr);
 [/slide]
 
 [slide hideTitle]
-
 # Sort
 
 The `array.sort()` method **sorts the items** of an array.
@@ -430,7 +429,7 @@ In this example, we have an array of names.
 
 If we call the `array.sort()` method directly, without passing a **compare function**, the method will work correctly - it will sort the names in ascending alphabetic order.
 
-``` js live
+```js live
 let names = ['Peter', 'George', 'Mary'];
 names.sort(); 
 
@@ -443,13 +442,10 @@ Without a passed **compare function**, the `array.sort()` method will treat 
 
 So, it will sort them as string values:
 
-``` js live
+```js live
 let numbers = [20, 40, 10, 30, 100, 5];
 
 numbers.sort();
 console.log(numbers);
 ```
-
 [/slide]
-
-

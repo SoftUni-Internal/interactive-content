@@ -1,5 +1,6 @@
 
-# Coming Soon
+# Iteration Methods
+
 [slide hideTitle]
 # ForEach
 [/slide]
