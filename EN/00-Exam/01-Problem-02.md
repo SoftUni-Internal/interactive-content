@@ -71,7 +71,7 @@ You will receive a String, representing the rooms of the dungeon, separated by a
 
 Print the corresponding messages, described above.
 
-## Examples One
+## Example One
 
 | **Input** | **Output** |
 | --- | --- |
@@ -83,7 +83,6 @@ Print the corresponding messages, described above.
 |  | You found 100 bitcoins. |
 |  | You died! Killed by boss. |
 |  | Best room: 6 |
-|  |  |
 
 [hints]
 [hint]
@@ -100,7 +99,7 @@ For every condition, modify the data and/or print the corresponding output.
 [/hint] 
 [/hints] 
 
-## Examples Two
+## Example Two
 
 | **Input** | **Output** |
 | --- | --- |
@@ -114,7 +113,6 @@ For every condition, modify the data and/or print the corresponding output.
 |  | You've made it! |
 |  | Bitcoins: 120 |
 |  | Health: 65 |
-|  |  |
 
 [/task-description]
 [code-io /]
