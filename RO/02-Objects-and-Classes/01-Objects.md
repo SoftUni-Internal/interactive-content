@@ -20,15 +20,11 @@ let country = {
 console.log(country.name);
 ```
 
+To define an object in JavaScript, we use **curly brackets**.
+
 This object has **four properties** - `name`, `capital`, `population`, and `language`.
 
 We can **access** a property's value by writing the class name, followed by a period `.`, and the property name (e.g. `country.name`).
-
-## Defining an Object
-
-To define an object in JavaScript, we use curly brackets.
-
-
 
 [/slide]
 
