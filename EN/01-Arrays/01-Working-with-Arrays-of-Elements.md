@@ -34,7 +34,7 @@ We use the keyword `let`, then we create a name, in this case, is "**number**", 
 [/slide]
 
 [slide hideTitle]
-# Secifics of JavaScipt Arrays
+# Specifics of JavaScipt Arrays
 
 In Java, when we initialize an array we must assign the type of data that the array will contain and also the length of the array.
 
