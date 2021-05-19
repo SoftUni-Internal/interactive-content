@@ -35,7 +35,7 @@ In JavaScript there are only two ways to access object properties:
 
 An array store it is elements as properties, and to retrieve an element a number as a property name is used.
 
-```js
+```js live
 let years = [1950, 1960, 1970, 1980, 1990, 2000];
 // console.log(years.0);   // A syntax error
 console.log(years[0]);
@@ -50,7 +50,7 @@ A dot notation with numbers can not be used to retrieve an array's element,
 
 The rest operator allows unpacking values from arrays or objects, into distinct variables.
 
-```js
+```js live
 let numbers = [10, 20, 30, 40, 50];
 let [firstNumber, secondNumber, ...rest] = numbers;
 
@@ -66,7 +66,7 @@ What `...rest` does is to say to the interpreter that all values except the `fir
 
 The rest operator also can be used to make a coppy of an array:
 
-```js
+```js live
 let numbers = [10, 20, 30, 40, 50];
 let [...rest] = numbers;
 
@@ -75,5 +75,5 @@ console.log(rest == numbers);
 
 In this example, the "numbers" and "rest" are two separate arrays with identical values, but their references point to a different address in the memory.
 
-As a result, when we compare them it will return "false";
+As a result, when we compare them it will return "false".
 [/slide]
