@@ -739,9 +739,9 @@ Write a function that manipulates an array of numbers.
 
 - "**Add** \{**number**\}": add a number to the end of the array
 
-- "**Remove** \{**number**\}": add a number to the end of the array
+- "**Remove** \{**number**\}": remove a number to the end of the array
 
--	"**RemoveAt** \{**index**\}": add a number to the end of the array
+-	"**RemoveAt** \{**index**\}": remove a number at the given index of the array.
 
 - "**Insert** \{**number**\} \{**index**\}": insert a number at a given index
 
