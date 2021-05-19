@@ -307,3 +307,8 @@ They show the type of response.
 |**opaqueredirect**| The request was made with a **manual** redirect |
 
 [/slide]
+
+[slide hideTitle]
+# Fetch(): Demo
+
+[/slide]
