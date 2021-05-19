@@ -4,23 +4,23 @@
 
 # Pre Middleware
 
-**Middleware** is functions that are passed control during the execution of asynchronous functions.
+**Middleware** is a function that runs during the execution of asynchronous functions.
 
 They are executed before or after a certain function that we specify.
 
-- **Pre Middleware**
+The **Pre Middleware** runs before the hooked method is executed.
 
-**Pre middleware** functions are executed one after another. 
+Multiple middleware functions will be executed one after another.
 
 We use them when:
 
-- We have a **complex validation**
+- We need to perform a **complex validation**
 
-- To **remove** dependent documents
+- We have to **remove** dependent documents
 
 - When we have **asynchronous** tasks that a certain action **triggers**
 
-As the name suggests, **pre middlewares** get executed **before** some other method execution on some documents.
+This is how to add a Pre middleware function:
 
 ``` js
 const schema = new Schema(..);
@@ -29,8 +29,6 @@ schema.pre('save', function() {
     .then(() => validateData());
   });
 ```
-
-
 [/slide]
 
 
@@ -38,13 +36,13 @@ schema.pre('save', function() {
 
 # Post Middleware
 
-**Post middleware** is executed once all the **pre-hooks** have been executed and after the original method has been executed.
+**Post middleware** is executed once all the **pre-hooks** and the **original method** have been executed.
 
+Middleware functions run in the following order:
 
 `pre-hooks -> method -> post-hooks`
 
-
-An example would help:
+Here is an example of adding Post middleware functions:
 
 ``` js
 const schema = new Schema(..);
@@ -57,5 +55,4 @@ schema.post('remove', function(doc) {
   console.log('It has been removed', doc._id); 
 });
 ```
-
 [/slide]
