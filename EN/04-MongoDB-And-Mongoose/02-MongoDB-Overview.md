@@ -1,11 +1,11 @@
 # MongoDB Overview
 
 [slide hideTitle]
-# Install MongoDB
+# Installing MongoDB
 
-You can download MongoDB from [official site](https://www.mongodb.com/download-center)
+You can download MongoDB from the [official site](https://www.mongodb.com/download-center)
 
-When installed, MongoDB needs a **driver** that use with Node.js .NET, Java.
+When installed, MongoDB needs a **driver** that works with **Node.js**, **.NET**, and **Java**.
 
 ``` js
 npm install mongodb -g
@@ -15,7 +15,7 @@ npm install mongodb -g
 
 [slide hideTitle]
 
-# Configure MongoDB
+# Configuring MongoDB
 
 When installed, additional configurations will be needed.
 
@@ -27,9 +27,9 @@ When installed, additional configurations will be needed.
 <path to mongod.exe> mongod --dbpath <path to store data>
 ```
 
-Usually, in `C:\Program Files\MongoDB\Server\3.4\bin`
+Usually, the path is `C:\Program Files\MongoDB\Server\3.4\bin`.
 
-You can find additional information [here.](https://docs.mongodb.com/manual/tutorial/)
+You can find more information [here.](https://docs.mongodb.com/manual/tutorial/)
 
 [/slide]
 
@@ -37,10 +37,14 @@ You can find additional information [here.](https://docs.mongodb.com/manual/tuto
 
 # Working with MongoDB Shell Client
 
-- Start the shell from **another** CLI
-  * type the command **mongo**
-  * show DBS
-  * use mytestdb
+There are several steps to follow when working with the Shell Client.
+
+- Start the shell from **another** CLI and type the following commands
+  * `mongo`
+  * `show dbs`
+  * `use mytestdb`
+
+This is how you can add or find data in MongoDB:
 
 ```js
 db.mycollection.insertOne({"name":"George"})
@@ -48,7 +52,7 @@ db.mycollection.find({"name":" George"})
 db.mycollection.find({})
 ```
 
-More additional information [here.](https://docs.mongodb.com/manual/reference/mongo-shell/)
+You can find more information about all other methods and commands [here.](https://docs.mongodb.com/manual/reference/mongo-shell/)
 
 [/slide]
 
@@ -75,7 +79,7 @@ The most popular **GUI**'s are:
 
 - [Studio 3T](https://studio3t.com/download/)
 
-You can choose one that matches your project at most.
+You can choose one that matches your project the most.
 
 [/slide]
 
@@ -105,9 +109,9 @@ client.connect(function(err) {
 
 First, we import **MongoClient** and set our **connection string**. 
 
-After that, that we have a **connection string**, we can create an instance of **MongoClient**.
+After that, we can create an instance of **MongoClient**.
 
-The last step is to make a function that would collect our info about the people inside.
+The last step is to make a function that would collect our data about the people inside.
 
 [/slide]
 
