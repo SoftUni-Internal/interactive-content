@@ -39,7 +39,7 @@ Otherwise, ignore the command.
 
 After receiving "**Craft!**" print the items in your inventory, separated by ", " **(comma and space)**
 
-## Examples One
+## Example One
 | **Input** | **Output** |
 | --- | --- |
 | Iron, Wood, Sword | Iron, Sword, Gold  |
@@ -62,7 +62,7 @@ At the end, print the inventory to the console using the `String.join(delimiter,
 [/hint] 
 [/hints] 
 
-## Examples Two
+## Example Two
 | **Input** | **Output** |
 | --- | --- |
 | Iron, Sword | Sword, Bow, Iron |
