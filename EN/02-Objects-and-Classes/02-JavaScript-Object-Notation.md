@@ -7,7 +7,7 @@ JSON, short for **JavaScript Object Notation**, is a **text-based** format for d
 
 It is **language independent**, although it is most often used in the context of JavaScript-based projects, such as websites and single-page applications.
 
-JSON is a method of storing data and information in an organized and easily understandable approach. 
+JSON is a method of storing information in an **organized** and easily **understandable** approach. 
 
 ```js
 {
@@ -37,7 +37,7 @@ The following snippet illustrates a typical **JSON** response from a server:
     "username": "glennar57",
     "email": "glenna_r@gmail.com",
     "favoriteNums": [4, 82, 39, 174],
-    "friends": {
+    "friendList": {
         "73827": "Logan Pearson",
         "27834": "Alexandra Walters",
         "93421": "Nathan Adams"
@@ -72,7 +72,7 @@ let data = JSON.parse(car);
 console.log(data);
 ```
 
-In this example, we receive a JSON string, which we then **parse** to a `data` object.
+In this example, we receive a JSON string - `car`, which we then **parse** to a `data` object.
 
 [/slide]
 
@@ -100,5 +100,13 @@ console.log(cityData);
 ```
 
 As evident by the output, `stringify` returns a ready for transfer **JSON** string.
+
+[/slide]
+
+[slide hideTitle]
+
+# Problem with Solution: From JSON to HTML Table
+
+Content will be added once the document has been revised.
 
 [/slide]
