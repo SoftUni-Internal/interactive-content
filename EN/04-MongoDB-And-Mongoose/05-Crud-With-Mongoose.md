@@ -4,16 +4,16 @@
 
 # CRUD
 
-Using Mongoose you can perform all **CRUD** operations wherever you want in your code.
+Using Mongoose, you can perform all the **CRUD** operations wherever you want in your code.
 
 **CRUD** stands for - **Create**, **Retrieve**, **Update**, **Delete**.
 
 - **Create (Persist Data)**: `save()` is used to insert a record in the collection.
 
-We have to create a Modal Object first.
+We have to create a Model Object first.
 
 ``` js
-let newEmployee = new Employee(employee); // this is modal object.
+let newEmployee = new Employee(employee); // this is model object.
 newEmployee.save() // Saving method
   .then((data)=> {
     console.log(data);
@@ -23,30 +23,20 @@ newEmployee.save() // Saving method
   })
 ```
 
-- **Read**
-
-We can retrieve data with this method:
+- **Read**: We can use `.find()` to retrieve data.
 
 ``` js
 Student.find({})
 ```
 
-- **Update (Modify Data)**
+- **Update (Modify Data)**: If we know the id of a collection, we can update it with `.findByIdAndUpdate()`.
 
 ``` js
 Student
-  .findById(id, callback)
-Student
   .findByIdAndUpdate(id, {prop: newVal}, callback)
-Student
-  .update({_id: id, {prop: newVal}, callback)
 ```
 
-We must first find the student by their **id**.
-
-After that, we **update** and **save** the new values in the model.
-
-- **Delete (Remove Data)**
+- **Delete (Remove Data)**: We can use the `.findByIdAndRemove()` or the `.remove()` methods depending on the situation.
 
 ``` js
 Student.findByIdAndRemove(id, callback)
@@ -58,18 +48,22 @@ Student.remove({name: studentName})
 
 [slide hideTitle]
 
-# Create Example
+# Example: Create
+
+Take a look at the following example:
 
 ``` js
 const mongoose = require('mongoose');
 const connectionStr = 'mongodb://localhost:27017/unidb';
+
 const studentSchema = new mongoose.Schema({
   name: { type: String, required: true, minlength: 3 },
   age: { type: Number }
 });
 const Student = mongoose.model('Student', studentSchema);
+
 mongoose.connect(connectionStr).then(() => {
-  new Student({ name: 'Petar', age: 21 })
+  new Student({ name: 'Peter', age: 21 })
     .save()
     .then(student => {
       console.log(student._id)
@@ -77,29 +71,32 @@ mongoose.connect(connectionStr).then(() => {
 });
 ```
 
-This is a simple example of **connecting to the database**, **creating a schema**, and **constructing a model**.
+This is a simple way of **connecting to the database**, **creating a schema**, and **constructing a model**.
 
-Inside the model, we **insert** a new Student with a "**name**" and "**age**".
+After connecting to the database, we **insert** a new Student with a "**name**" and "**age**" properties.
 
-Then we save the model using the `save()` method.
+Then, we save it using the `save()` method.
 
-At the final, we print the added student.
-
+Finally, we print the added student.
 
 [/slide]
 
 [slide hideTitle]
 
-# Read Example
+# Example: Read
+
+Here are **three** different ways to retrieve data with Mongoose:
 
 ``` js
 Student
     .find({})
     .then(students => console.log(students))
     .catch(err => console.error(err))
+    
 Student
     .find({name: 'Peter'})
     .then(students => console.log(students))
+    
 Student
     .findOne({name: 'Peter'})
     .then(student => console.log(student))
@@ -107,21 +104,21 @@ Student
 
 The first command finds all of the students inside the database and print them.
 
-Second, find all students by the name we pass and print them in the console.
+The second one finds all students by the name property we pass and prints them to the console.
 
-The third example is used to find the first student with the name Peter. 
+The third example is used to find the first occurrence of a student with the name "Peter". 
 
 If there are more students with that name, using `FindOne()` will not print all of them.
 
-Do not forget to always handle errors.
+Do not forget to always handle potential errors.
 
 [/slide]
 
 [slide hideTitle]
 
-# Update Example
+# Example: Update
 
-We can **update** multiple entities.
+We can also **update** one or multiple entities with several methods.
 
 ``` js
 Student
@@ -130,36 +127,37 @@ Student
       student.firstName = 'Steven'
       student.save()
     });
+    
 Student
     .findByIdAndUpdate('57fb9fe90cd76e4e2c59e1a2',
      { name: 'Steven' }
     );
+    
 Student
     .update(
       { firstName: 'Chris' },
       { name: 'Peter' },
-      { multi: true })
+      { multi: true });
 ```
-
 [/slide]
 
 
 [slide hideTitle]
 
-# Remove & Count Example
+# Example: Remove
 
-- Syntax: `remove(conditions, [callback])`
+To remove data from the database, use: `remove(conditions, [callback])`.
 
-Note that if the condition is **not passed** or **empty** then all the records will be **removed**.
+Note that if the condition is **not passed** or **empty**, then all the records will be **removed**.
 
 Take a look at the following example:
 
 ``` js
 userModel.remove({userid:"George"})
-// Remove the document having userid "George"
+// Removes the record with userid "George"
 ```
 
-We can **remove** all documents of users collection:
+We can **remove** all records of the users collection:
 
 ``` js
 userModel.remove()
