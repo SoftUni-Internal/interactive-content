@@ -3,16 +3,15 @@
 [slide hideTitle]
 # Models
 
+Models are constructors compiled from **Schema** definitions.
 
-Models are constructors compiled from *Schema* definitions.
+The **Schema** itself forms the structure of the document.
 
-The *Schema* itself defines the structure of the document.
+It may define properties like default values, validators, whereas the **model** provides an interface to the database.
 
-It may define a property like default values, validators, whereas the **model** provides an interface to the database.
+You can create a new Schema as an instance of `mongoose.Schema`:
 
-The schema can be compiled using `mongoose.Schema` call:
-
-Let us take a look at the following example:
+Take a look at the following example:
 
 ``` js
 const exampleSchema = new mongoose.Schema({
@@ -25,11 +24,9 @@ const exampleSchema = new mongoose.Schema({
 const Model = mongoose.model('Example', exampleSchema);
 ```
 
-The first thing is to create a new schema that we would define the model properties after that compiling.
+First, we create a new schema where we define the model properties.
 
-When we call `mongoose.model()` on a schema, it **compiles** a ready to use model.
-
-
+When we call `mongoose.model()` on a Schema, it **compiles** a ready-to-use model.
 [/slide]
 
 [slide hideTitle]
@@ -38,18 +35,18 @@ When we call `mongoose.model()` on a schema, it **compiles** a ready to use mode
 
 Mongoose Models are just JavaScript **object constructors**.
 
-They can have **Methods**.
+They come with different methods **methods**.
 
-They use different syntax than plain JS.
+Here is how their syntax differs from plain JS:
 
 ``` js
 const studentSchema = new mongoose.Schema({…});
-studentSchema.methods.getInfo = function() { // Avoid arrow function
+studentSchema.methods.getInfo = function() { // Avoid arrow functions
    return `I am ${this.firstName} ${this.lastName}`;
 };
 ```
 
-As we see, these methods can be added to a schema.
+As you can see, other methods can be added to a schema.
 
 [/slide]
 
@@ -57,11 +54,11 @@ As we see, these methods can be added to a schema.
 
 # Model Virtual Properties
 
-We can create **Virtual** properties that exist only in the **Mongoose Model**, not in the MongoDB itself.
+We can create **Virtual** properties that exist only in the **Mongoose Model** and not in MongoDB.
 
-Virtuals are additional fields for a given model. 
+They are additional fields for a given model. 
 
-A example is helpful:
+We should first create a new Schema for our example:
 
 ``` js
 // We define a user schema
@@ -69,24 +66,26 @@ var userSchema = new Schema({
     firstName: String,
     lastName: String
 });
+
 // Then compile our model
 var User = mongoose.model('User', userSchema);
-// Final step is to create a document
+
+// Final step is to add a new user
 var employee = new User({  
     firstName: 'Jason',
     lastName: 'Harris'
 });
 ```
 
-if we want to get the full name of our employee we can concatenate the first and last name manually.
+If we want to get the full name of our employee, we can concatenate the first and last name manually.
 
 ``` js
 console.log(mentalist.first + ' ' + mentalist.last); // Jason Harris 
 ```
 
-This can be done using **virtual fields**. 
+This can be done using **virtual fields** as well. 
 
-This way, we will write name concatenation only once.
+This way, we avoid concatenating every time we need a full name.
 
 Virtual properties have both **getters** and **setters**.
 
@@ -104,7 +103,7 @@ console.log(employee.fullname); // Jason Harris
 
 We can use setters to manipulate our string.
 
-This example **splits** the passed name at any whitespace.
+This example **splits** the passed name at every whitespace.
 
 ``` js
 userSchema.virtual('fullname').set(function (name) {  
@@ -129,14 +128,12 @@ studentSchema.path('firstName')
   .validate(function () {
     return this.firstName.length >= 2 
   && this.firstName.length <= 10
-}, 'First name must be between 2 and 10 symbols long!') // Error message passed as second parameter
+}, 'First name must be between 2 and 10 symbols long!') // Error message passed as a second parameter
 ```
 
-Data validation is important. 
+By validating, we can make sure that "**bad**" data does not get in the application.
 
-That way, we can make sure that "**bad**" data does not get in the application.
-
-**Mongoose** has **built-in** support for data schemas, and the automatic validation of data when it is persisted.
+**Mongoose** has **built-in** support for data schemas and the automatic validation of data when it is persisted.
 
 **Mongoose validators** are easy to configure.
 
@@ -146,11 +143,11 @@ That way, we can make sure that "**bad**" data does not get in the application.
 
 # Exporting Modules
 
-Having all model definitions in the **main** module is not good practice.
+Having all model definitions in the **main** module is a bad practice.
 
 That is the reason Node.js has **modules** in the first place.
 
-``` js
+```js
 const mongoose = require('mongoose');
 const studentSchema = new mongoose.Schema({
    firstName: { type: String, required: true },
@@ -164,7 +161,7 @@ module.exports = mongoose.model('Student', studentSchema);
 
 We can put each **model** in a different **module** and **load** all models at the start of our program.
 
-``` js
+```js
 const Student = require('./models/Student');
 ```
 
@@ -175,7 +172,5 @@ const Student = require('./models/Student');
 # Mongoose: Demo
 
 //MongoDB-Demo-2
-
-
 
 [/slide]
