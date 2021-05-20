@@ -74,26 +74,24 @@ As a result, we can leave the class itself either with, or without a name - as s
 [slide hideTitle]
 # Hoisting
 
-In JavaScript, we can use variables and functions before they are declared.
+In JavaScript, we can use variables and functions before they are declared, if you use the `var` keyword:
 
 ```js live
-currentWeather = 'rainy 🌦';
+favoriteGame = 'Rise of the Tomb Raider 🎮';
 
-let currentWeather;
+console.log(favoriteGame);
+
+var favoriteGame;
 ```
 
 Moving all declarations to top of their scope is referred to as **hoisting**.
 
 Keep in mind that we still **cannot** access the **values** of variables, declared with `let` and `const`.
 
-To do that, we have to use `var`:
-
 ```js
-favoriteGame = 'Rise of the Tomb Raider 🎮';
+currentWeather = 'rainy 🌦'; // ReferenceError
 
-console.log(favoriteGame);
-
-var favoriteGame;
+let currentWeather;
 ```
 
 Hoisting does **not** apply to neither class declarations nor class expressions.
