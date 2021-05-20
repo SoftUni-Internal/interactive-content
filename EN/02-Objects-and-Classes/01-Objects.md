@@ -81,7 +81,7 @@ Declaring a property is done using **key-value** pairs in the format `key: value
 ```js live
 let color = {
     name: 'red',
-    rgbValues: [255, 0, 0]
+    rgbValues: [255, 0, 0],
     hexTriplet: '#FF0000'
     
 };
