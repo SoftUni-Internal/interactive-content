@@ -4,11 +4,11 @@
 [slide hideTitle]
 # Definition
 
-When any of the following methods are applied, they will not change (modify) the original array, rather they return a new object, and the original array stays unchanged.
+When any of the following **methods** are applied, they will not **change** (modify) the **original** array, rather they return a **new object**, and the original array stays **unchanged**.
 
 ## Join
 
-Creates a string by **concatenating string representations of all elements**, using the specified in the brackets string as a separator:
+The `array.join()` creates a string by **concatenating string representations of all elements**, using the specified in the brackets string as a separator:
 
 ``` js live
 let arr = [10, 20, 30];
@@ -42,7 +42,7 @@ console.log(indexOfNick);
 [slide hideTitle]
 # Concat
 
-The `concat()` method is used to merge two or more arrays and does not change the existing arrays, but instead returns a new array.
+The `concat()` method is used to **merge** two or more arrays and **does not change** the existing arrays, but instead returns a **new array**.
 
 ``` js live
 const num1 = [1, 2, 3];
@@ -74,7 +74,7 @@ console.log(sliced);
 console.log(myArray.slice(2,4));
 ```
 
-Slice can receive a negative number as a parameter:
+Slice can **receive** a **negative** number as a parameter:
 
 ``` js live
 let myArray = ['one', 'two', 'three', 'four', 'five'];
@@ -83,7 +83,7 @@ console.log(myArray.slice(-2));
 console.log(myArray.slice(2, -1));
 ```
 
-In this example when -2 is passed to the `slice()`, it takes the last "n" elements of the array.
+In this example when **-2 is passed** to the `slice()`, it takes the **last** "n" elements of the array.
 [/slide]
 
 [slide hideTitle]
