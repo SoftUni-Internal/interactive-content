@@ -81,7 +81,7 @@ We toggle the characters between index 3 and 14(not included) to uppercase - **h
 abg**hijklmnopqr**stuvwxyz -\> abg**HIJKLMNOPQR**stuvwxyz
 [/hint] 
 [hint]
-The fourth command is `Flip>>>Lower>>>5>>>7`
+The third command is `Flip>>>Lower>>>5>>>7`
 
 abgHI**JK**LMNOPQRstuvwxyz -\> abgHI**jk**LMNOPQRstuvwxyz
 [/hint] 
