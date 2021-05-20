@@ -20,7 +20,6 @@ There is also another type of **multi-dimensional arrays**, called a jagged arra
 
 [image assetsSrc="java-js-adv-arrays-03.png" /]
 
-
 In this example, there are an array of four arrays and each row has a different number of elements.
 
 JavaScript representation of this example is:
