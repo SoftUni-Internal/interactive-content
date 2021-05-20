@@ -8,7 +8,7 @@ When any of the following methods are applied, they will not change (modify) the
 
 ## Join
 
-Creates a string by **concatenating string representations of all elements**, using the specified in the brackets string as a separator:
+The `array.join()` creates a string by **concatenating string representations of all elements**, using the specified in the brackets string as a separator:
 
 ``` js live
 let arr = [10, 20, 30];
