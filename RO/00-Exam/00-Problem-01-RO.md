@@ -8,7 +8,7 @@
 [code-editor language=javascript]
 ```
 function archeryTournament(input) {
-   // Scrieți codul aici
+   // Scrieți codul dvs. aici
 }
 ```
 [/code-editor]
@@ -25,49 +25,49 @@ function adapter(input, code) {
 
 # Descriere
 
-Veți primi o serie de numere întregi separate printr-un "\|" reprezentând țintele într-un interval de tir cu arcul.
+Veți primi o serie de numere întregi separate prin simbolul "\|", reprezentând țintele dintr-un poligon destinat tirului cu arcul.
 
-Până la data comenzii "**Game over**", veți primi comenzi:
+Până la introducerea comenzii "**Game over**", veți primi comenzi:
 
-* Command "**Shoot Left@**\{**start index**\}**@**\{**length**\}":
+* Comanda "**Shoot Left@**\{**start index**\}**@**\{**length**\}":
 
-Peter începe să se deplaseze în zona de tir cu arcul de la stânga începând de la "\{**start index**\}" și trece prin cât mai multe ținte indicate în: "\{**lungime** \}".
+Peter se deplasează la stânga în poligon, începând de la "\{**start index**\}", și parcurge numărul de ținte indicate de "\{**length**\}".
 
-Ar trebui să ignore comanda dacă "\{**start index**\}" se află în afara intervalului de tir cu arcul.
+El trebuie să ignore comanda dacă "\{**start index**\}" se află în afara poligonului.
 
-Mergeți și continuați să mergeți spre stânga dacă el a ajuns la capătul zonei de tir cu arcul.
+Dacă a ajuns la capătul poligonului, Peter trebuie să se deplaseze în celălalt capăt și să continue să meargă spre stânga. 
 
-* Commandа "**Shoot Right@**\{**start index**\}**@**\{**length**\}":
+* Comandа "**Shoot Right@**\{**start index**\}**@**\{**length**\}":
 
-Peter începe să se deplaseze în zona de tir cu arcul de la dreapta începând de la "\{**start index**\}" și trece prin cât mai multe ținte indicate în: "\{**lungime**\}".
+Peter se deplasează la dreapta în poligon, începând de la "\{**start index**\}", și parcurge numărul de ținte indicate de "\{**length**\}".
 
-Ar trebui să ignore comanda dacă "\{**start index**\}" se află în afara intervalului de tir cu arcul.
+El trebuie să ignore comanda dacă "\{**start index**\}" se află în afara poligonului.
 
-Mergeți și continuați să mergeți spre stânga dacă a ajuns la capătul zonei de tir cu arcul.
+Dacă a ajuns la capătul poligonului, Peter trebuie să se deplaseze în celălalt capăt și să continue să meargă spre dreapta. 
 
 * Comanda "**Reverse**":
 
-Inversați toate țintele din interval.
+Inversați toate țintele din poligon.
 
 * Comanda "**Game Over**":
 
-Imprimați starea actuală a tuturor țintelor din interval
+Imprimați starea actuală a tuturor țintelor din poligon.
 
-De fiecare dată când Peter a atins o țintă:
+De fiecare dată când Peter se află în dreptul țintei:
 
-* El trage la țină  și primește 5 puncte, scăzând valoarea totală a punctelor țintei cu 5
+* El trage la țință și primește 5 puncte, scăzând valoarea totală a punctelor țintei cu 5
 
-* Dacă ținta valorează mai puțin de 5 puncte, Peter ar trebui să ia toate punctele sale și scade totalul punctelor țintei la 0
+* Dacă ținta valorează mai puțin de 5 puncte, Peter trebuie să ia toate punctele sale și să scadă totalul punctelor țintei la 0
 
 ## Intrare
 
-* Veți primi numere întregi separate prin а "\|" reprezentând țintele din zona de tir cu arcul
+* Veți primi numere întregi separate prin simbolul "\|", reprezentând țintele din poligon
 
-* Până la data comenzii "**Game Over**", veți primi comenzi în formatul descris mai sus
+* Până la introducerea comenzii "**Game Over**", veți primi comenzi în formatul descris mai sus
 
 ## Ieșire
 
-* Imprimați starea fiecărei ținte pe câmp în următorul format:
+* Imprimați starea fiecărei ținte din poligon, în următorul format:
 
 "\{**target**\} - \{**target**\} - \{**target**\} ... - \{**target**\}"
 
@@ -82,20 +82,20 @@ De fiecare dată când Peter a atins o țintă:
 
 [hints]
 [hint]
-Mai întâi, Peter primește comanda "**Shoot Left@0@2**", așa că începe să meargă în intervalul de tir cu arcul de la "**index 0**" cu "**lungime 2**" și se oprește la "**index 3**"
+Mai întâi, Peter primește comanda "**Shoot Left@0@2**", așa că începe să meargă poligon de la "**indicele 0**", cu "**lungimea 2**", și se oprește la "**indicele 3**".
 
-El trage, iar tirul cu arcul arată așa: `0 - 10 - 10 - 5 - 10`
+El trage la țintă, iar țintele din poligon arată așa: `10 - 10 - 10 - 5 - 10`.
 
-În acest moment el dobândește **5** puncte.
+În acest moment el primește **5** puncte.
 [/hint] 
 [hint]
-Apoi primește "**Shoot Right@4@5**" \-\> `10 - 10 - 10 - 5 - 5`
+Apoi, Peter primește comanda "**Shoot Right@4@5**" \-\> `10 - 10 - 10 - 5 - 5`.
 [/hint] 
 [hint]
-Tragerea "**Right@6@5**" \-\> "**Index 6**" este în afara intervalului (nu există în interval), așa că Peter ignoră comanda.
+Tragerea "**Right@6@5**" \-\> "**Indicele 6**" este în afara intervalului, așa că Peter ignoră comanda.
 [/hint] 
 [hint]
-"**Reverse**" \-\> Rezultatul final ar trebui să fie: `5 - 5 - 10 - 10 - 10`
+"**Reverse**" \-\> Rezultatul final este: `5 - 5 - 10 - 10 - 10`.
 [/hint] 
 [/hints] 
 
@@ -111,7 +111,7 @@ Tragerea "**Right@6@5**" \-\> "**Index 6**" este în afara intervalului (nu exis
 [hint]
 Împărțiți primul șir din intrare cu ajutorul delimitatorului (`|`) și salvați rezultatul într-o matrice.
 
-Parcurgeți elementele din **câmp** (field) și convertiți-le la `Number`.
+Parcurgeți elementele din **câmp** și convertiți-le la `Number`.
 [/hint] 
 [hint]
 Folosiți instrucțiunile condiționale potrivite pentru a gestiona fiecare tip de comandă.
