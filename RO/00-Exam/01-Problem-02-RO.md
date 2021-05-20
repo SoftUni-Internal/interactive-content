@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -17,43 +17,43 @@ public class Main {
 [task-description]
 ## Descriere
 
-Începeți jocul cu **100 health and 0 bitcoins**.
+Începeți jocul cu **100 health și 0 bitcoins**.
 
 Vi se va oferi un **șir**, reprezentând camerele temniței.
 
-Fiecare cameră este separată printr-un "\|" (bară verticală): room1\|room2\|room3…
+Fiecare cameră este separată prin simbolul "\|" (bară verticală): room1\|room2\|room3…
 
-Textul fiecărei camere conține **2 valori**.
+Textul pentru fiecare cameră conține **2 valori**.
 
 Prima valoare poate fi:
 
 - O poțiune:
 
-   - sunteți vindecați cu suma celei de-a doua valori
+   - sunteți vindecat cu valoarea poțiunii
 
-   - starea voastră de sănătate **nu poate depăși** **starea de sănătate inițială (100)**
+   - punctele de viață **nu pot depăși** **punctele de viață inițiale (100)**
 
-   - prima imprimare: "\{**amount**\} **health points restored.**"
+   - priul mesaj imprimat: "\{**amount**\} **health points restored.**"
 
    - după aceea, tipăriți starea curentă: "**Current health:** \{**health**\} **hp.**"
 
-- Un cufar:
+- Un cufăr:
 
-    - creșteți cantitatea de bitcoin cu suma celei de-a doua valori
+    - măriți cantitatea de bitcoin cu valoarea dată
 
     - după aceea, tipăriți: "**You found** \{**amount**\} **bitcoins.**"
 
 - În orice alt caz, vă confruntați cu un monstru cu care urmează să luptați
 
-A doua valoare a camerei conține punctele de atac ale monstrului.
+    - a doua valoare reprezintă punctele de atac ale monstrului
 
-Ar trebui să eliminați  valoarea atacului monstrului din sănătatea voastră.
+    - trebuie să scădeți valoarea atacului monstrului din punctele voastre de viață
 
-- Dacă sunteți **încă în viață** (sănătate \> 0), ați ucis monstrul și ar trebui să imprimați: "**You have slayed a** \{**type of monster**\}."
+Dacă sunteți **încă în viață** (punctele de viață \> 0), ați ucis monstrul și trebuie să imprimați: "**You have slayed a** \{**type of monster**\}.".
 
-- Dacă ai murit, tipărește "**You died! Killed by** \{**monster**\}." iar căutarea ta s-a terminat
+Dacă ați murit, tipăriți "**You died! Killed by** \{**monster**\}.", iar misiunea voastră se încheie.
 
-Imprimați cel mai bun număr cel mai mare dintr-o cameră pe care ați reușit să o atingeți: "**Best room:** \{**room**\}".
+Imprimați numărul ultimei camere la care ați reușit să ajungeți: "**Best room:** \{**room**\}".
 
 Dacă ați reușit să parcurgeți toate camerele din temniță, imprimați pe următoarele trei rânduri:
 
@@ -65,11 +65,11 @@ Dacă ați reușit să parcurgeți toate camerele din temniță, imprimați pe u
 
 ### Intrare \/ Constrângeri
 
-Veți primi un șir, care reprezintă camerele temniței, separate printr-un „\|” (bară verticală): cameră1\|cameră2\|cameră3...".
+Veți primi un șir care reprezintă camerele temniței, separate prin simbolul „\|” (bară verticală): room1\|room2\|room3...".
 
 ### Ieșire
 
-Imprimați mesajele corespunzătoare, descrise mai sus.
+Imprimați mesajele corespunzătoare descrise mai sus.
 
 ## Primul Exemplu
 
@@ -87,7 +87,7 @@ Imprimați mesajele corespunzătoare, descrise mai sus.
 
 [hints]
 [hint]
-Inițializați health points (**100**) și bitcoins (**0**), dar și numărul de camere atinse (**0** la început).
+Inițializați punctele de viață (**100**) și bitcoins (**0**), dar și numărul de camere atinse (**0** la început).
 [/hint] 
 [hint]
 Împărțiți comenzile din intrare, iar apoi parcurgeți-le pe fiecare folosind o buclă for.
