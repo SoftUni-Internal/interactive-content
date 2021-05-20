@@ -25,7 +25,7 @@ Comenzile sunt separate prin " - " **(cratimă încadrată între două spații)
 
 - "**Collect -** \{**item**\}": trebuie **să adaugați** articolul dat în inventar
 
-Dacă articolul este deja în inventarul vostru, **comanda trebuie omisă**.
+Dacă articolul se află deja în inventarul vostru, **comanda trebuie omisă**.
 
 - "**Drop -** \{**item**\}": trebuie să **eliminați** articolul din inventar, **dacă acesta este prezent în inventar**
 
@@ -37,7 +37,7 @@ Dacă articolul este deja în inventarul vostru, **comanda trebuie omisă**.
 
 ### Ieșire
 
-După ce primiți "**Craft!**", tipăriți articolele din inventar, separate prin ", " **(virgulă și spațiu)**
+După ce primiți comanda "**Craft!**", tipăriți articolele din inventar, separate prin ", " **(virgulă și spațiu)**.
 
 ## Primul Exemplu
 | **Intrare** | **Ieșire** |
@@ -49,10 +49,10 @@ După ce primiți "**Craft!**", tipăriți articolele din inventar, separate pri
 
 [hints]
 [hint]
-Împărțiți comenzile și obiectele pentru fiecare comandă pe baza cratimei încadrată de spații: **" - "**.
+Împărțiți comenzile și articolele fiecărei comenzi pe baza cratimei încadrată de spații: **" - "**.
 [/hint] 
 [hint]
-Creați o condiție care verifică dacă șirul obiectelor conține două puncte (**":"**), iar apoi îl împarte.
+Creați o condiție care verifică dacă șirul articolelor conține două puncte (**":"**), iar apoi îl împarte.
 [/hint] 
 [hint]
 Parcurgeți fiecare comandă/articol și modificați inventarul în mod corespunzător.
