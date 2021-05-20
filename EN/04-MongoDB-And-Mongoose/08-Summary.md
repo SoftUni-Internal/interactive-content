@@ -1,10 +1,9 @@
 [slide hideTitle]
 # Summary
 
+## In this lesson you learned:
 
-# In this lesson you learned:
-
-- **NoSQL databases** provide superior **performance**
+- **NoSQL databases** have higher **performance**
 - **Mongoose** gives us a **schema-based** solution
 
 ``` js
@@ -25,7 +24,5 @@ Student.find({}).where('firstName').equals('george').where('age').gt(18).lt(65).
 - Cookies and Sessions
 - Authentication Concepts
 - JSON Web Token
-
-
 
 [/slide]
