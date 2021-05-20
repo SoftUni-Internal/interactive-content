@@ -26,7 +26,7 @@ In **JavaScript**, there are two ways to **define** a class - class **declaratio
 
 ## Class Declaration
 
-We declare a class using the `class` keyword, followed by the name of the class, in this case `Person`.
+We declare a class using the `class` keyword, followed by the name of the class, in this case - `Person`.
 
 ``` js
 class Person {
@@ -42,10 +42,10 @@ The `constructor` method will be called every time the class is **instantiated**
 
 The `this` keyword is used to set a property of the objects to a given value.
 
-To **instantiate** the `Student` class, we use the `new` keyword, followed by the name of the class:
+To **instantiate** the `Person` class, we use the `new` keyword, followed by the name of the class:
 
 ```js
-let student = new Student('Mike', 37, 'Bern');
+let person = new Person('Mike', 37, 'Bern');
 ```
 
 Between the brackets, we pass in the `name`, `age` and `city` arguments.
@@ -135,13 +135,13 @@ The ability to modify data is performed by special functions that are a part of 
 
 To add properties or methods to all existing objects, we add them to their prototype.
 
-```js
+```js live
 class Square {​
   constructor(sideLength) {​
     this.sideLength = sideLength;​
   } ​
 
-  // This is a prototype methods
+  // This is a prototype method
   calcArea() { 
     return this.sideLength * this.sideLength;  
   }
@@ -169,9 +169,11 @@ With the EcmaScript 6 standard in 2015, JavaScript also introduced support for t
 They allow for retrieving and modifying property values in a similar fashion to Java.
 
 ```js
-let user = {
-  name: "John",
-  surname: "Smith",
+class User = {
+  constructor(name, surname) {
+    this.name = "John";
+    this.surname: "Smith";
+  }
 
   get fullName() {
     return `${this.name} ${this.surname}`;
@@ -182,7 +184,9 @@ let user = {
   }
 };
 
-user.fullName = "James Cooper";
+let userOne = new User();
+
+userOne.fullName = "James Cooper";
 ```
 
 Defining a property getter is done using the `get` keyword, followed by the method.
