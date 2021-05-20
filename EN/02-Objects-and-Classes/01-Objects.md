@@ -134,10 +134,10 @@ Bracket notation solves this problem by accepting strings , numbers, and even ar
 
 The syntax for a bracket selector looks like this: `object[key]`
 
-```js
+```js live
 let student = {
     name: 'Joseph',
-    school-name: 'SoftUni'
+    'school-name': 'SoftUni'
 }
 
 console.log(student['school-name']);
@@ -210,7 +210,7 @@ Adding an object using the property syntax is very similar to adding a regular p
 
 The main difference is that the property value is a function:
 
-``` js
+``` js live
 let dog = {
     name: 'Cooper',
     breed: 'German Shepherd',
@@ -332,7 +332,7 @@ Here, we create an object and assign it to the `bagOne` variable.
 
 This time, instead of writing the object again, we set `bagTwo` to be equal to the value of `bagOne`
 
-```js
+```js live
 let bagOne = { 
     compartments: 10,
     volume: 32
@@ -428,9 +428,9 @@ In order to use one, we have to pass in an enumerable object, such as the arrays
 
 ``` js live
 let computer = {
-    processor: 'Intel Core i7'
-    memory: 'SKHynix 8GB DDR3'
-    hardDrive: 'Samsung 256GB SSD'
+    processor: 'Intel Core i7',
+    memory: 'SKHynix 8GB DDR4',
+    hardDrive: 'Samsung 256GB SSD',
 };​
 
 
