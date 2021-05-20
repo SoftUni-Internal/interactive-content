@@ -5,27 +5,27 @@
 
 # Nested Arrays in JavaScript
 
-The arrays we have been using so far have only held one column of data.
+The arrays we have been using so far have only held **one column** of data.
 
 But we can set up an array to hold more than one column, called **multi-dimensional arrays** or matrices.
 
-As an example, think of a spreadsheet with rows and columns.
+As an example, think of a **spreadsheet** with rows and columns.
 
-If you have 6 rows and 5 columns then your spreadsheet can hold 30 numbers, which is a classical example of a matrix.
+If you have 6 rows and 5 columns then your **spreadsheet** can hold 30 numbers, which is a classical example of a **matrix**.
 
 It might look like this:
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-1.png" /]
 
-There is also another type of **multi-dimensional arrays**, called a jagged array, where every row has a different number of elements:
+There is also another type of **multi-dimensional arrays**, called a **jagged array**, where every row has a **different** number of elements:
 
 [image assetsSrc="java-js-adv-arrays-03.png" /]
 
-In this example, there are an array of four arrays and each row has a different number of elements.
+In this example, there is an array of four arrays (**jagged array**), and each row has a different number of elements.
 
 JavaScript representation of this example is:
 
-```js
+```js live
 let arr = [
     [4, 6, 3, 0],
     [2, 1, -2],
@@ -57,9 +57,9 @@ function printRow(row){
     row.forEach(el => console.log(el));
 }
 ```
-A matrix can be print using forEach loop and pass as an argument a function that receives the current row. 
+A **matrix** can be print using **forEach** loop, where an argument (current row) is passed to a function.
 
-Another forEach is used to iterate through every element from the row, and print it to the console.
+Another forEach is **used** to iterate through every **element** from the **row**, and print it to the **console**.
 
 [/slide]
 

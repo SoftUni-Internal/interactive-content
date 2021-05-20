@@ -5,13 +5,13 @@
 
 # Add Elements
 
-Arrays in JavaScipt contains a method similar to the methods that come from the Java stream, which modify the array's elements.
+To modify arrays in JavaScipt **methods** similar to the methods that come from the **Java stream**, can be used.
 
-When any of the following methods are applied, they will change (modify) the original array. 
+When any of the following **method** is applied, it will **change** (modify) the original array. 
 
 ## Push
 
-The `array.push()` method adds one or more elements to the end of an array and returns the new length of the array.
+The `array.push()` method adds **one or more elements** to the end of an array and **returns** the new **length** of the array.
 
 This method is similar to the `STACK.push(E element)` in Java.
 
@@ -27,7 +27,7 @@ console.log(nums);
 ```
 ## Unshift
 
-The `array.unshift()` adds one or more elements to the beginning of an array and returns the new length of the array.
+The `array.unshift()` adds **one or more elements** to the **beginning** of an array and returns the **new length** of the array.
 
 ```js live
 let nums = [40, 50, 60];
@@ -203,7 +203,7 @@ negativePositive([\-2, 3, 0, 5, \-6, 0, 8])
 
 ## Pop
 
-The `array.pop()` method removes and returns the last element from an array and also decreases the length of the collection.
+The `array.pop()` method **removes** and **returns** the last element from an array and also decreases the **length** of the collection.
 
 This method is similar to the `STACK.pop()` in Java.
 
@@ -221,7 +221,7 @@ console.log(nums);
 
 ## Shift
 
-The `array.shift()` method removes the first element from an array, returns that removed element, and changes the length of the array.
+The `array.shift()` method **removes** the **first** element from an array, **returns** that **removed element**, and changes the length of the array.
 
 ```js live
 let nums = [10, 20, 30, 40, 50, 60, 70];
@@ -341,9 +341,9 @@ solve(['5', '10'])
 
 # Splice
 
-The `array.splice()` changes the contents of an array by deleting, adding, or replace elements to a specific index.
+The `array.splice()` **changes** the contents of an array by **deleting**, **adding**, or **replace** elements to a specific index.
 
-This method is similar to the `remove(int index)` and `ArrayList.addAll()` methods in Java, but in Java there are is no option for removing multiple elements.
+This method is similar to the `remove(int index)` and `ArrayList.addAll()` methods in Java, but in Java there are is **no option for removing** multiple elements.
 
 ``` js live
 let nums = [1, 3, 4, 5, 6];
@@ -361,14 +361,14 @@ let el = nums.splice(2, 1); //Only two arguments when deleting
 console.log(nums); 
 console.log(el);
 ```
-In first example `array.splice()` receives three arguments:
+In first example `array.splice()` receives **three** arguments:
 
-- First argument: starting index of the operation
-- Second argument: how many elements to delete
+- First argument: **starting index** of the operation
+- Second argument: **how many elements to delete**
 
-When deleting elements, there are is no need for passing the third argument.
+When **deleting** elements, there is **no need** for passing the third argument.
 
-- Third element: we can pass three or more elements and those are the elements that will be added to the given index
+- Third element: to pass **three** or **more** elements and those are the elements that will be **added** to the given index
 
 
 [/slide]
@@ -377,9 +377,9 @@ When deleting elements, there are is no need for passing the third argument.
 
 # Fill
 
-The `array.fill()` fills all the elements of an array from a start index to an end index with a static value.
+The `array.fill()` fills all the **elements** of an array from a **start** index to an **end** index with a static value.
 
-In Java, there is no similar method.
+In Java, **there is no** similar method.
 
 ```js live
 let fruits = ['apple', 'orange', 'grapes', 'watermelon'];
@@ -400,9 +400,9 @@ console.log(fruits.fill('blueberry'));
 
 # Reverse
 
-Reverses the array, where the first array element becomes the last, and the last array element becomes the first.
+The `array.fill()` reverses the array, where the **first** array element becomes the **last**, and the **last** array element becomes the **first**.
 
-In Java, there is no similar method, rather a custom reverse method should be created.
+In Java, **there is no** similar method, rather a **custom** reverse method should be **created**.
 
 ```js live
 let arr = [1, 2, 3, 4];
@@ -419,7 +419,7 @@ The `array.sort()` method **sorts the items** of an array.
 
 This method is similar to the `Stream sorted()` method in Java.
 
-Depending on the provided **compare function**, the sort order can either be **alphabetic** or **numeric**, and either **ascending** (up) or **descending** (down). 
+Depending on the provided **compare function**, the sort order can either be **alphabetic** or **numeric**, and either **ascending** (up) or **descending** (down). 
 
 By default, the `array.sort()` method sorts the values as **strings in alphabetical and ascending order.**
 
@@ -436,9 +436,9 @@ names.sort();
 console.log(names); 
 ```
 
-However, if we have an array which contains numbers, not strings, the result will be **unexpected and incorrect**. 
+However, if we have an array that contains numbers, not strings, the result will be **unexpected and incorrect**. 
 
-Without a passed **compare function**, the `array.sort()` method will treat the array as an array of strings, not as an array of numbers.
+Without a passed **compare function**, the `array.sort()` method will treat the array as an array of strings, not as an array of numbers.
 
 So, it will sort them as string values:
 
