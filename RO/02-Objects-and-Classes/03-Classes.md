@@ -169,14 +169,6 @@ In other words, adding a method inside the class body, makes it available to all
 [/slide]
 
 [slide hideTitle]
-
-# Problem with Solution: Person
-
-Content will be added once the lab document has been revised.
-
-[/slide]
-
-[slide hideTitle]
 # Accessor Properties
 
 **Accessor properties** provide access to properties by using the dot and bracket notation we mentioned earlier.
@@ -317,6 +309,14 @@ class iceCreamMaker {​
 const machine = new iceCreamMaker();​
 console.log(machine.milkInLitres); // 50
 ```
+
+[/slide]
+
+[slide hideTitle]
+
+# Problem with Solution: Person
+
+Content will be added once the lab document has been revised.
 
 [/slide]
 
