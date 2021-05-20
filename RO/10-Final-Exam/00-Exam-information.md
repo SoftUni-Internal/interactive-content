@@ -1,10 +1,6 @@
-[slide]
+[slide hideTitle]
 
-# Exam Information
+# Coming Soon
 
-[exam-information]
-
-
-[/exam-information]
 
 [/slide]
