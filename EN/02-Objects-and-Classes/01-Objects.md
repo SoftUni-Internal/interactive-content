@@ -424,22 +424,29 @@ for (let key in pencil) {
 
 A **for-of loop** iterates through the **values** of an object.
 
-In order to use one, we have to pass in an enumerable object, such as the arrays returned by `Object.keys()` or `Object.values()`:
+In order to use one, we have to pass in an enumerable object, such as the arrays returned by `Object.keys()`, `Object.values()`, and `Object.entries()`:
 
 ``` js live
 let computer = {
     processor: 'Intel Core i7',
     memory: 'SKHynix 8GB DDR4',
-    hardDrive: 'Samsung 256GB SSD',
-};​
+    hardDrive: 'Samsung 256GB SSD'
+};
 
-
-for (const key of Object.keys(computer)) {​
-  console.log(`computer.${key} = ${computer[key]}`);​
+for (const key of Object.keys(computer)) {
+    console.log(key);
 }
 
+console.log('------------------------------');
+  
 for (const value of Object.values(computer)) {
     console.log(value);
+}
+
+console.log('------------------------------');
+
+for (const [key, value] of Object.entries(computer)) {
+    console.log(`computer.${key} = ${value}`);
 }
 ```
 

@@ -77,14 +77,26 @@ As a result, we can leave the class itself either with, or without a name - as s
 In JavaScript, we can use variables and functions before they are declared.
 
 ```js live
-console.log(currentWeather);
+currentWeather = 'rainy 🌦';
 
-let currentWeather = 'rainy 🌦';
+let currentWeather;
 ```
 
 Moving all declarations to top of their scope is referred to as **hoisting**.
 
-This behavior does **not** apply to neither class declarations nor class expressions.
+Keep in mind that we still **cannot** access the **values** of variables, declared with `let` and `const`.
+
+To do that, we have to use `var`:
+
+```js
+favoriteGame = 'Rise of the Tomb Raider 🎮';
+
+console.log(favoriteGame);
+
+var favoriteGame;
+```
+
+Hoisting does **not** apply to neither class declarations nor class expressions.
 
 We are required to declare our class **before** we can access it.
 
@@ -114,8 +126,8 @@ Inside, we define class members like properties an methods.
 ```js
 class SupportEmployee {
     constructor(name) {
-        this.name = name,
-        this.department = 'support'
+        this.name = name;
+        this.department = 'support';
     }
 }
 ```
@@ -136,26 +148,33 @@ The ability to modify data is performed by special functions that are a part of 
 To add properties or methods to all existing objects, we add them to their prototype.
 
 ```js live
-class Square {​
-  constructor(sideLength) {​
-    this.sideLength = sideLength;​
-  } ​
+class Square {
+    constructor(sideLength) {
+        this.sideLength = sideLength;
+    }
 
-  // This is a prototype method
-  calcArea() { 
-    return this.sideLength * this.sideLength;  
-  }
-    ​
-} ​
+    // This is a prototype method
+    calcArea() {
+        return this.sideLength * this.sideLength;
+    }
+}
 
-const squareOne = new Square(20);​
+const squareOne = new Square(20);
 console.log(squareOne.calcArea());
 
-const squareTwo = new Square(35);​
+const squareTwo = new Square(35);
 console.log(squareTwo.calcArea());
 ```
 
 In other words, adding a method inside the class body, makes it available to all of its instances.
+
+[/slide]
+
+[slide hideTitle]
+
+# Problem with Solution: Person
+
+Content will be added once the lab document has been revised.
 
 [/slide]
 
@@ -169,7 +188,7 @@ With the EcmaScript 6 standard in 2015, JavaScript also introduced support for t
 They allow for retrieving and modifying property values in a similar fashion to Java.
 
 ```js
-class User = {
+class User {
   constructor(name, surname) {
     this.name = "John";
     this.surname: "Smith";
@@ -300,14 +319,6 @@ class iceCreamMaker {​
 const machine = new iceCreamMaker();​
 console.log(machine.milkInLitres); // 50
 ```
-
-[/slide]
-
-[slide hideTitle]
-
-# Problem with Solution: Person
-
-Content will be added once the lab document has been revised.
 
 [/slide]
 
