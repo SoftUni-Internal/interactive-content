@@ -31,7 +31,7 @@ Punctele bonus sunt calculate utilizând următoarea **formulă**:
 
 \{bonus total\} = \{prezențe studenți\} \/ \{numărul prelegerilor\} \* (5 + \{bonus suplimentar\})
 
-Găsiți studentul cu **cele mai multe puncte bonus** și tipăriți-i **punctele** împreună cu **prezențele** în următorul format:
+Găsiți studentul cu **cele mai multe puncte bonus** și tipăriți **punctele acestuia** împreună cu **numărul de prezențe** în următorul format:
 
 
 "**Max Bonus:** \{**maxBonusPoints**\}."
@@ -48,9 +48,9 @@ La final, rotunjiți punctele bonus în sus la **următorul număr întreg**.
 
 - Pe **a treia linie** veți primi **bonusul inițial** - un număr întreg în intervalul \[0...100\]
 
-- **În următoarele rânduri** veți primi numărul de **prezențe al fiecărui student**
+- **În următoarele rânduri** veți primi numărul de **prezențe ale fiecărui student**
 
-- Nu vor fi **studenți cu aceeași sumă finală de puncte bonus**
+- Nu vor fi **studenți cu aceeași valoare finală de puncte bonus**
 
 ### Ieșire
 
