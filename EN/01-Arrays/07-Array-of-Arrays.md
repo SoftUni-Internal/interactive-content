@@ -25,7 +25,7 @@ In this example, there is an array of four arrays (**jagged array**), and each r
 
 JavaScript representation of this example is:
 
-```js
+```js live
 let arr = [
     [4, 6, 3, 0],
     [2, 1, -2],
