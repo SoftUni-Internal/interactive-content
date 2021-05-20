@@ -1,32 +1,192 @@
-
 # Iteration Methods
 
 [slide hideTitle]
 # ForEach
-[/slide]
 
+The `array.forEach()` method executes a provided function once for each array element.
 
-[slide hideTitle]
-# Filter
-[/slide]
+This method is similar to the `Stream.forEach()` in Java.
 
-[slide hideTitle]
-# Find
+```js live
+const names = ['Peter', 'George', 'Arnold'];
+const copy = [];
+
+names.forEach(name => { copy.push(name); });
+
+console.log(copy);
+```
+In this example, we use forEach with a lambda function, which accepts one parameter - the current element from the array.
+
+ForEach can accept two parameters, the first parameter is the current element of the array and the second parameter is the index.
+
+```js live
+const names = ['Peter', 'George', 'Arnold'];
+
+names.forEach((name, index) => console.log(`${index} -> ${name}`));
+
+```
+ForEach method can not be braked, once executed it will go through the entire collection, and if the collection is big it may cost performance issues.
+
 [/slide]
 
 [slide hideTitle]
 # Some
+
+The `array.some()` method tests whether at least one element in the array passes the test implemented by the provided function (predicate) and returns a boolean value.
+
+This method is similar to the `Stream.anyMatch()` in Java.
+
+```js live
+let array = [1, 2, 3, 4, 5];
+
+let isEven = el => {
+  // checks whether an element is even
+  return el % 2 === 0;
+};
+
+console.log(array.some(isEven)); 
+```
+[/slide]
+
+[slide hideTitle]
+# Find
+
+The `array.find()` returns the found value in the array, if an element in the array satisfies the provided testing function or undefined if not found.
+
+```js live
+let numbers = [5, 12, 8, 130, 44];
+
+let found = numbers.find(el => {
+  return el > 10;
+});
+
+console.log(found); 
+```
+[/slide]
+
+[slide hideTitle]
+# Filter
+
+The `array.filter()` creates a new array with filtered elements only, which satisfy the given condition and does not mutate the array on which it is called.
+
+This method is similar to the `Stream.filter()` in Java.
+
+```js live
+let numbers = [5, 12, 8, 130, 44, 3, 17];
+
+let filterNumbers = numbers.filter(el =>  el % 2 == 0);
+
+console.log(filterNumbers); 
+
+```
 [/slide]
 
 [slide hideTitle]
 # Map
-[/slide]
 
-[slide hideTitle]
-# Reduce
-[/slide]
+The `array.map()` creates a new array with the results of calling a provided function on every element in the calling array.
 
+This method is similar to the `Stream.map()` in Java.
+
+```js live
+let numbersAsStrings = ['1', '2', '3'];
+
+// parse all numbersAsStrings to numbers
+let numbers = numbersAsStrings.map(x => Number(x));
+console.log(numbers);
+
+```
+
+It is also possible to chain methods:
+
+```js live
+let numbersAsStrings = ['1', '2', '3'];
+
+// parse all numbersAsStrings to numbers
+let numbers = numbersAsStrings
+                     .map(x => Number(x))
+                     .map(x => x + 1); // add 1 ot each number
+console.log(numbers);
+
+```
+
+You can read more about the "map" in mathematics [here](https://en.wikipedia.org/wiki/Map_(mathematics)).
+[/slide]
 
 [slide hideTitle]
 # Problem Process Odd Numbers
 [/slide]
+
+[slide hideTitle]
+# Reduce
+The reduce() 
+
+
+
+The `array.reduce()` method executes a reducer function on each element of the array, resulting in a single output value.
+
+[image assetsSrc="java-js-adv-arrays-02.png" /]
+
+The reducer function takes four arguments:
+- Accumulator 
+- Current Value 
+- Current Index (Optional)
+- Source Array (Optional)
+
+The reducer function's returned value is assigned to the accumulator's value, which is the final, single resulting value.
+
+This method is similar to the `Stream.reduce()` in Java.
+
+## Example One
+
+The `reduce()` method accepts two parameters:
+- Reducer function, which is created outside of the `reduce()`
+- Starting value, in this case, is 0
+
+```js live
+let numbers = [7, 6, 1, 5, 2, 13];
+
+const sumReducer = (acc, c) => acc + c;
+let result = numbers.reduce(sumReducer, 0);
+
+console.log(result);
+```
+As the result, we receive the sum of every number in the array.
+
+## Example Two
+
+To receive the average value of the array, the reduce method has been used.
+
+In this example the reducer function receives four parameters:
+- Accumulator, where the value will be stored
+- Current number (c)
+- Index (i) - it is not used in this example, it has to be declared because the array.length is needed
+- Array (arr) - to find average the array.length is needed
+
+```js live
+let numbers = [7, 6, 1, 5, 2, 13];
+
+let avarege = numbers.reduce((acc, c, i, arr) => acc + c /arr.length, 0);
+
+console.log(avarege);
+```
+## Example Three
+In this example, the `Math.max()` is used to find the biggest number in the array.
+
+```js live
+let numbers = [7, 6, 1, 5, 2, 13];
+
+let max = numbers.reduce((acc, c) => Math.max(acc, c));
+
+console.log(max);
+```
+The "acc" is the biggest number so far and "c" is the current number. 
+
+Using `Math.max()` the "acc" is compared to "c" and the result again is stored in "acc", the function will be executed until there are no more elements in the array.
+
+You can read more about reduce [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
+
+Those were not all methods that can be executed on the array, for more information you can read the [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
+[/slide]
+
+
