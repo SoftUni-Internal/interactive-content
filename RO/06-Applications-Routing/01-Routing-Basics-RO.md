@@ -61,7 +61,7 @@ Aceasta înseamnă că putem partaja un link și să fim siguri că oricine îl 
 
 [slide hideTitle]
 
-# SPA- beneficii și dezavantaje
+# SPA - beneficii și dezavantaje
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/07.JS-Applications-Routing/RO/JS-apps-routing-8-Single-page-applications-Pros-and-Cons-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
