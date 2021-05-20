@@ -33,7 +33,7 @@ Prima valoare poate fi:
 
    - punctele de viață **nu pot depăși** **punctele de viață inițiale (100)**
 
-   - priul mesaj imprimat: "\{**amount**\} **health points restored.**"
+   - primul mesaj imprimat: "\{**amount**\} **health points restored.**"
 
    - după aceea, tipăriți starea curentă: "**Current health:** \{**health**\} **hp.**"
 
@@ -65,7 +65,7 @@ Dacă ați reușit să parcurgeți toate camerele din temniță, imprimați pe u
 
 ### Intrare \/ Constrângeri
 
-Veți primi un șir care reprezintă camerele temniței, separate prin simbolul „\|” (bară verticală): room1\|room2\|room3...".
+Veți primi un șir care reprezintă camerele temniței, separate prin simbolul "\|" (bară verticală): room1\|room2\|room3...".
 
 ### Ieșire
 
@@ -90,7 +90,7 @@ Imprimați mesajele corespunzătoare descrise mai sus.
 Inițializați punctele de viață (**100**) și bitcoins (**0**), dar și numărul de camere atinse (**0** la început).
 [/hint] 
 [hint]
-Împărțiți comenzile din intrare, iar apoi parcurgeți-le pe fiecare folosind o buclă for.
+Împărțiți comenzile din intrare, iar apoi parcurgeți fiecare comandă folosind o buclă for.
 [/hint] 
 [hint]
 Înăuntrul buclei for, creați o instrucțiune if-else pentru fiecare tip de comandă sau monstru.
