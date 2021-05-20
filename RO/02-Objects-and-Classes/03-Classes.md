@@ -67,7 +67,7 @@ let Car = class {
 
 We will only be able to access this class by the **variable name**.
 
-As a result, we can leave the class itself either with, or without one - as shown above.
+As a result, we can leave the class itself either with, or without a name - as shown above.
 
 [/slide]
 
@@ -133,6 +133,98 @@ This method defines the **initial** values for all properties that a child objec
 
 The ability to modify data is performed by special functions that are a part of the class, which are called methods. 
 
+To add properties or methods to all existing objects, we add them to their prototype.
+
+```js
+class Square {​
+  constructor(sideLength) {​
+    this.sideLength = sideLength;​
+  } ​
+
+  // This is a prototype methods
+  calcArea() { 
+    return this.sideLength * this.sideLength;  
+  }
+    ​
+} ​
+
+const squareOne = new Square(20);​
+console.log(squareOne.calcArea());
+
+const squareTwo = new Square(35);​
+console.log(squareTwo.calcArea());
+```
+
+In other words, adding a method inside the class body, makes it available to all of its instances.
+
+[/slide]
+
+[slide hideTitle]
+# Accessor Properties
+
+**Accessor properties** provide access to properties by using the dot and bracket notation we mentioned earlier.
+
+With the EcmaScript 6 standard in 2015, JavaScript also introduced support for the `get` and `set` keywords.
+
+They allow for retrieving and modifying property values in a similar fashion to Java.
+
+```js
+let user = {
+  name: "John",
+  surname: "Smith",
+
+  get fullName() {
+    return `${this.name} ${this.surname}`;
+  },
+
+  set fullName(value) {
+    [this.name, this.surname] = value.split(" ");
+  }
+};
+
+user.fullName = "James Cooper";
+```
+
+Defining a property getter is done using the `get` keyword, followed by the method.
+
+Setters are created with the `set` keyword and a method that typically accepts a new value.
+
+Using getters and setters allows for data encapsulation - some properties can only be read, with no write access from outside the class.
+
+[/slide]
+
+[slide hideTitle]
+# Accessor Properties in Action
+
+We can use accessor properties to modify an object's property values after its creation:
+
+```js live
+class Teacher {
+    constructor (fullName, subject){
+        this.fullName = fullName;
+        this.subject = subject;
+    }
+}
+
+let myTeacher = new Teacher("Dale Oliver", "History");
+console.log(myTeacher.subject);
+
+myTeacher.subject = "Programming";
+console.log(myTeacher.subject);
+```
+
+As you can see, here we use dot notation to change the `subject` property of the `myTeacher` object.
+
+This can also be done using bracket notation:
+
+```js
+myTeacher["subject"] = "Programming";
+```
+[/slide]
+
+[slide hideTitle]
+# Static Methods
+
 JavaScript classes support both **instance** and **static** methods.
 
 Instance methods can **access and modify** instance data.
@@ -141,19 +233,68 @@ They can call other instance methods, as well as any static method.
 
 Static methods **refer to the class**, rather than an instance of it.
 
-Therefore, they have **no access** to instance data.
+``` js
+class Car {
+  constructor(name) {
+    this.name = name;
+  }
 
-``` js live
-class Dog {
-    constructor() {
-        this.speak = () => {
-            console.log('Woof');
-        }
-    }
+  static hello() {
+    return "This is a static method!";
+  }
 }
 
-let dog = new Dog();
-dog.speak();
+let myCar = new Car("Mazda");
+```
+
+As a result, we can only call them on the **class itself**, because they lack access to instance data.
+
+[/slide]
+
+[slide hideTitle]
+# Private Properties
+
+Recently introduced to JavaScript, **private properties** are only accessible from inside the class.
+
+They always begin with a hash symbol `#`, followed by a name: `#myPrivateProperty`
+
+```js
+class iceCreamMaker {​
+    #milkInLitres;
+    constructor() {​
+        this.#milkInLitres = 50;
+        this.#sugarInKg = 30;​ // SyntaxError
+    }​
+}​
+
+const machine = new iceCreamMaker();​
+machine.#milkInLitres === 40 // SyntaxError
+```
+
+Accessing a private property from outside its parent class results in an error.
+
+[/slide]
+
+[slide hideTitle]
+
+# Accessing Private Properties​
+
+Since private fields are **limited** to the class's own scope, we must use **getters and setters** to make them public:
+
+```js
+class iceCreamMaker {​
+    #milkInLitres;
+    constructor() {​
+        this.#milkInLitres = 50;
+    }​
+
+    get milkInLitres() { 
+      return this.#milkInLitres;
+    }​
+}​
+
+const machine = new iceCreamMaker();​
+console.log(machine.milkInLitres); // 50
 ```
 
 [/slide]

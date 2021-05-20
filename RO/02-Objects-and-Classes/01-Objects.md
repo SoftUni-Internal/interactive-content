@@ -186,6 +186,14 @@ As a result, the value of `book.age` is `undefined`.
 [/slide]
 
 [slide hideTitle]
+
+# Problem with Solution: City Record
+
+Content will be added once the document has been revised.
+
+[/slide]
+
+[slide hideTitle]
 # Object Methods
 
 Along with properties, JavaScript objects can also have **methods**.
@@ -341,7 +349,6 @@ Both comparisons return `true`, because the two variables hold a reference to th
 
 [/slide]
 
-
 [slide hideTitle]
 # Object Keys and Values
 
@@ -435,6 +442,14 @@ for (const value of Object.values(computer)) {
     console.log(value);
 }
 ```
+
+[/slide]
+
+[slide hideTitle]
+
+# Problem with Solution: Town Population
+
+Content will be added once the document has been revised.
 
 [/slide]
 
