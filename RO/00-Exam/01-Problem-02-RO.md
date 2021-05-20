@@ -55,7 +55,7 @@ Exemple:
 
 Pe prima linie vi se va da un număr întreg "**n**" - numărul de coduri de bare pe care le veți primi în continuare.
 
-Pe următoarele "**n**" linii veți primi șiruri diferite.
+Pe următoarele "**n**" linii veți primi diferite șiruri.
 
 ### Ieșire
 
