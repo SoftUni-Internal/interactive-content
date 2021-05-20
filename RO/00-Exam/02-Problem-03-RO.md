@@ -32,7 +32,7 @@ Există mai multe acțiuni care pot fi efectuate de eroi:
 
 - "**CastSpell -** \{**hero name**\} - \{**MP needed**\} – \{**spell name**\}":
 
-Dacă eroul are MP-ul necesar, acesta poate să facă o vraja care îi reduce valoarea MP. Imprimați următorul mesaj:
+Dacă eroul are MP-ul necesar, acesta poate să facă o vraja care îi reduce MP-ul. Imprimați următorul mesaj:
 
 "\{**hero name**\} **has successfully cast** \{**spell name**\} **and now has** \{**mana points left**\} **MP!**"
 
@@ -66,11 +66,11 @@ Imprimați următorul mesaj:
 
 Eroul își mărește HP-ul.
 
-Dacă se dă o comandă care ar aduce HP-uri eroului peste "**100**", HP-ul este crescut astfel încât să atingă maximul.
+Dacă se dă o comandă care ar aduce HP-ul eroului peste "**100**", HP-ul este crescut astfel încât să atingă maximul.
 
 Imprimați următorul mesaj:
 
-- "\{**hero name**\} **healed for** \{**amount recovered**\} **HP!**"
+"\{**hero name**\} **healed for** \{**amount recovered**\} **HP!**"
 
 ### Intrare
 
@@ -78,11 +78,11 @@ Imprimați următorul mesaj:
 
 - Pe următoarele `n` linii vor urma eroii împreună cu valorile pentru **hit points** și **mana points**, separate prin spațiu gol în formatul descris
 
-- Veți primi diferite **comenzi**, fiecare pe o nouă linie, separate prin " - " (cratimă încadrată între două spații), până când este dată comanda "**End**"
+- Veți primi diferite **comenzi**, fiecare pe o linie nouă, separate prin " - " (cratimă încadrată între două spații), până când este dată comanda "**End**"
 
 ### Ieșire
 
-- Imprimați toți membrii echipei voastre care sunt încă **în viață**, ordonați descrescător în funcție de **HP-ul lor**, apoi în funcție de **numele lor în ordine crescătoare**, în formatul următor (HP/MP necesită să fie indentat 2 spații):
+- Imprimați toți membrii echipei voastre care sunt încă **în viață**, ordonați descrescător în funcție de **HP-ul lor**, apoi în funcție de **numele lor în ordine crescătoare**, în formatul următor:
 
 "\{**hero name**\}
 **HP:** \{**current HP**\}
@@ -95,7 +95,7 @@ Imprimați următorul mesaj:
 
 - Valorile HP\/MP din comenzi nu vor fi niciodată negative
 
-- Numele eroilor din comenzi vor fi întotdeauna membri valizi ai echipei voastre
+- Numele eroilor din comenzi vor reprezenta întotdeauna membri valizi ai echipei voastre
 
 Nu este nevoie să verificați în mod explicit aceste aspecte.
 
@@ -119,7 +119,7 @@ Nu este nevoie să verificați în mod explicit aceste aspecte.
 "**Heal**" - SirMullich s-a vindecat cu **30** HP din cauza limitei maxime pentru HP.
 [/hint] 
 [hint]
-"**Recharge**" - Adela reîncarcă **50** MP din cauza limitei maxime pentru MP.
+"**Recharge**" - Adela primește **50** MP din cauza limitei maxime pentru MP.
 [/hint] 
 [hint]
 "**CastSpell**" - Tyris nu are suficient MP pentru a face vraja.
@@ -131,7 +131,7 @@ Nu este nevoie să verificați în mod explicit aceste aspecte.
 "**TakeDamage**" - HP-ul lui Ivor este acum **-2**, deci și el este mort.
 [/hint] 
 [hint]
-După comanda "**End**", tipărim eroii care au rămas în viață, orodnați descrescaător în funcție de HP.
+După comanda "**End**", tipărim eroii care au rămas în viață, ordonați descrescător în funcție de HP.
 [/hint] 
 [/hints]
 
