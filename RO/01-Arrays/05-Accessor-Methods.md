@@ -128,58 +128,58 @@ The **output** is the **return** value of the function and should be an **array 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|biggerHalf([4, 7, 2, 5]) | [5, 7] |
-|biggerHalf([3, 19, 14, 7, 2, 19, 6]) | [7, 14, 19, 19]  |
+|biggerHalf([ 4, 7, 2, 5 ]) | [ 5, 7 ] |
+|biggerHalf([ 3, 19, 14, 7, 2, 19, 6 ]) | [ 7, 14, 19, 19 ]  |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-biggerHalf([4, 7, 2, 5])
+biggerHalf([ 4, 7, 2, 5 ])
 [/input]
 [output]
-[5, 7]
+[ 5, 7 ]
 [/output]
 [/test]
 [test open]
 [input]
-biggerHalf([3, 19, 14, 7, 2, 19, 6])
+biggerHalf([ 3, 19, 14, 7, 2, 19, 6 ])
 [/input]
 [output]
-[7, 14, 19, 19]
+[ 7, 14, 19, 19 ]
 [/output]
 [/test]
 [test]
 [input]
-biggerHalf([1, 2, 3])
+biggerHalf([ 1, 2, 3 ])
 [/input]
 [output]
-[2, 3]
+[ 2, 3 ]
 [/output]
 [/test]
 [test]
 [input]
-biggerHalf([53, 5, 43, 7])
+biggerHalf([ 53, 5, 43, 7 ])
 [/input]
 [output]
-[43, 53]
+[ 43, 53 ]
 [/output]
 [/test]
 [test]
 [input]
-biggerHalf([100, 90, 90, 5, 67, 4, 3])
+biggerHalf([ 100, 90, 90, 5, 67, 4, 3 ])
 [/input]
 [output]
-[67, 90, 90, 100]
+[ 67, 90, 90, 100 ]
 [/output]
 [/test]
 [test]
 [input]
-biggerHalf([-1, -10, -4, -7])
+biggerHalf([ -1, -10, -4, -7 ])
 [/input]
 [output]
-[-4, -1]
+[ -4, -1 ]
 [/output]
 [/test]
 [/tests]
@@ -242,58 +242,58 @@ The **output** is the **return** value of the function and should be an **array 
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|peiceOfPie(['Pumpkin Pie', 'Key Lime Pie', 'Cherry Pie', 'Lemon Meringue Pie', 'Sugar Cream Pie'], 'Key Lime Pie', 'Lemon Meringue Pie') | ['Key Lime Pie', 'Cherry Pie', 'Lemon Meringue Pie'] |
-|peiceOfPie(['Apple Crisp', 'Mississippi Mud Pie', 'Pot Pie', 'Steak and Cheese Pie', 'Butter Chicken Pie', 'Smoked Fish Pie'], 'Pot Pie', 'Smoked Fish Pie' ) | ['Pot Pie', 'Steak and Cheese Pie', 'Butter Chicken Pie', 'Smoked Fish Pie']  |
+|peiceOfPie([ 'Pumpkin Pie', 'Key Lime Pie', 'Cherry Pie', 'Lemon Meringue Pie', 'Sugar Cream Pie' ], 'Key Lime Pie', 'Lemon Meringue Pie') | [ 'Key Lime Pie', 'Cherry Pie', 'Lemon Meringue Pie' ] |
+|peiceOfPie([ 'Apple Crisp', 'Mississippi Mud Pie', 'Pot Pie', 'Steak and Cheese Pie', 'Butter Chicken Pie', 'Smoked Fish Pie' ], 'Pot Pie', 'Smoked Fish Pie' ) | [ 'Pot Pie', 'Steak and Cheese Pie', 'Butter Chicken Pie', 'Smoked Fish Pie' ]  |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-peiceOfPie(["Pumpkin Pie", "Key Lime Pie", "Cherry Pie", "Lemon Meringue Pie", "Sugar Cream Pie"], "Key Lime Pie", "Lemon Meringue Pie")
+peiceOfPie([ 'Pumpkin Pie', 'Key Lime Pie', 'Cherry Pie', 'Lemon Meringue Pie', 'Sugar Cream Pie' ], 'Key Lime Pie', 'Lemon Meringue Pie')
 [/input]
 [output]
-["Key Lime Pie", "Cherry Pie", "Lemon Meringue Pie"]
+[ 'Key Lime Pie', 'Cherry Pie', 'Lemon Meringue Pie' ]
 [/output]
 [/test]
 [test open]
 [input]
-peiceOfPie(["Apple Crisp", "Mississippi Mud Pie", "Pot Pie", "Steak and Cheese Pie", "Butter Chicken Pie", "Smoked Fish Pie"], "Pot Pie", "Smoked Fish Pie")
+peiceOfPie([ 'Apple Crisp', 'Mississippi Mud Pie', 'Pot Pie', 'Steak and Cheese Pie', 'Butter Chicken Pie', 'Smoked Fish Pie' ], 'Pot Pie', 'Smoked Fish Pie')
 [/input]
 [output]
-["Pot Pie", "Steak and Cheese Pie", "Butter Chicken Pie", "Smoked Fish Pie"]
+[ 'Pot Pie', 'Steak and Cheese Pie', 'Butter Chicken Pie', 'Smoked Fish Pie' ]
 [/output]
 [/test]
 [test]
 [input]
-peiceOfPie(["a", "b", "c", "d"], "a", "b")
+peiceOfPie([ 'a', 'b', 'c', 'd' ], 'a', 'b')
 [/input]
 [output]
-["a", "b"]
+[ 'a', 'b' ]
 [/output]
 [/test]
 [test]
 [input]
-peiceOfPie(["a", "b", "c", "d"], "b", "d")
+peiceOfPie([ 'a', 'b', 'c', 'd' ], 'b', 'd')
 [/input]
 [output]
-["b", "c", "d"]
+[ 'b', 'c', 'd' ]
 [/output]
 [/test]
 [test]
 [input]
-peiceOfPie(["f", "f", "s", "q", "r", "g"], "f", "r")
+peiceOfPie([ 'f', 'f', 's', 'q', 'r', 'g' ], 'f', 'r')
 [/input]
 [output]
-["f", "f", "s", "q", "r"]
+[ 'f', 'f', 's', 'q', 'r' ]
 [/output]
 [/test]
 [test]
 [input]
-peiceOfPie(["g", "f", "s", "k", "t"], "f", "t")
+peiceOfPie([ 'g', 'f', 's', 'k', 't' ], 'f', 't')
 [/input]
 [output]
-["f", "s", "k", "t"]
+[ 'f', 's', 'k', 't' ]
 [/output]
 [/test]
 [/tests]

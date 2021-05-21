@@ -258,42 +258,42 @@ peiceOfPie([ 'Pumpkin Pie', 'Key Lime Pie', 'Cherry Pie', 'Lemon Meringue Pie', 
 [/test]
 [test open]
 [input]
-peiceOfPie([ "Apple Crisp", "Mississippi Mud Pie", "Pot Pie", "Steak and Cheese Pie", "Butter Chicken Pie", "Smoked Fish Pie" ], "Pot Pie", "Smoked Fish Pie")
+peiceOfPie([ 'Apple Crisp', 'Mississippi Mud Pie', 'Pot Pie', 'Steak and Cheese Pie', 'Butter Chicken Pie', 'Smoked Fish Pie' ], 'Pot Pie', 'Smoked Fish Pie')
 [/input]
 [output]
-[ "Pot Pie", "Steak and Cheese Pie", "Butter Chicken Pie", "Smoked Fish Pie" ]
+[ 'Pot Pie', 'Steak and Cheese Pie', 'Butter Chicken Pie', 'Smoked Fish Pie' ]
 [/output]
 [/test]
 [test]
 [input]
-peiceOfPie([ "a", "b", "c", "d" ], "a", "b")
+peiceOfPie([ 'a', 'b', 'c', 'd' ], 'a', 'b')
 [/input]
 [output]
-[ "a", "b" ]
+[ 'a', 'b' ]
 [/output]
 [/test]
 [test]
 [input]
-peiceOfPie([ "a", "b", "c", "d" ], "b", "d")
+peiceOfPie([ 'a', 'b', 'c', 'd' ], 'b', 'd')
 [/input]
 [output]
-[ "b", "c", "d" ]
+[ 'b', 'c', 'd' ]
 [/output]
 [/test]
 [test]
 [input]
-peiceOfPie([ "f", "f", "s", "q", "r", "g" ], "f", "r")
+peiceOfPie([ 'f', 'f', 's', 'q', 'r', 'g' ], 'f', 'r')
 [/input]
 [output]
-[ "f", "f", "s", "q", "r" ]
+[ 'f', 'f', 's', 'q', 'r' ]
 [/output]
 [/test]
 [test]
 [input]
-peiceOfPie([ "g", "f", "s", "k", "t" ], "f", "t")
+peiceOfPie([ 'g', 'f', 's', 'k', 't' ], 'f', 't')
 [/input]
 [output]
-[ "f", "s", "k", "t" ]
+[ 'f', 's', 'k', 't' ]
 [/output]
 [/test]
 [/tests]
