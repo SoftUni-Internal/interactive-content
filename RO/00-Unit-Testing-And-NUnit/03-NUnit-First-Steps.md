@@ -160,7 +160,7 @@ For example, we can test the function with an empty array.
 Let's write a second test and see the following example:
 
 ```csharp
-
+[Test]
 public void Test_Summator_EmptyArray() {
   var nums = new int[] {};
   var actualSum = Summator.Sum(nums);
@@ -187,6 +187,8 @@ int Sum(int[] arr) {
 ```
 
 Now, if we **re-run** the tests again the tests will **pass** successfully.
+
+
 
 
 
