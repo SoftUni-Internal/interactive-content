@@ -37,7 +37,7 @@ The commands may be:
 
 **Insert** the given string at that index, **only if the index is valid.**
 
-* Command **Remove Stop:**\{**start_index**\}**:**\{**end_index**\}:
+* Command "**Remove Stop:**\{**start_index**\}**:**\{**end_index**\}":
 
 **Remove** the elements of the string from the **start index** to the **end index** (inclusive) if both indices are valid. 
 
