@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Problem: Heroic Inventory
 
-[code-task title="Heroic Inventory" taskId="java-path-js-advanced-objects-and-classes- " executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Heroic Inventory" taskId="java-path-js-advanced-objects-and-classes- heroic-inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function heroicInventory(input) {
@@ -20,7 +20,9 @@ Write a function that creates a **register for the heroes** with their **names**
 The register should accept data in a specified format and return it presented in a specified format.  
 
 ## Input 
-The **input** comes as an array of strings. Each element holds data for a hero, in the following format: 
+The **input** comes as an array of strings. 
+
+Each element holds data for a hero, in the following format: 
 
 `{heroName} / {heroLevel} / {item1}, {item2}, {item3}...` 
 
@@ -82,7 +84,8 @@ Let’s do that with a simple `for...of` loop.
 
 ```js
 for (const iterator of input) {
-    let [name, level, items] = iterator.split(' / ');
+    let [name, level, items] = 
+        iterator.split(' / ');
 
     level = Number(level);
 
@@ -130,7 +133,8 @@ Now what is left is to add that data to **an object** and **add** the object to 
 
 ```js
 for (const iterator of input) {
-    let [name, level, items] = iterator.split(' / ');
+    let [name, level, items] = 
+        iterator.split(' / ');
     level = Number(level);
     items = items ? items.split(', ') : [];
 
@@ -230,8 +234,191 @@ What / 1 / The, Fuck
 [slide hideTitle]
 # Problem: JSON's Table
 
-Content will be added once the homework document has been revised.
+[code-task title="JSON's Table" taskId="java-path-js-advanced-objects-and-classes-json-s-table" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function jsonTable {
+    // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+## Description
+JSON’s Table is a magical table which turns JSON data into an HTML table. 
 
+You will be given **JSON strings** holding data about employees, including their **name**, **position**, and **salary**. 
+
+You should **parse the strings** to **objects** and create an **HTML table** that holds the data for each **employee on a different row** as **columns**.  
+
+The **name** and **position** of the employee are **strings**, the **salary** is an **integer**. 
+
+## Input 
+The **input** comes as an array of strings. 
+
+Each element is a JSON string which represents the data for a certain employee. 
+
+## Output 
+The **output** is the HTML code of a table which holds the data exactly as explained above. 
+
+Check the examples for more information. 
+
+## Example
+
+### Input
+
+`['{"name":"Peter","position":"Director","salary":100000}', '{"name":"Ted","position":"Lecturer","salary":1000}', '{"name":"George","position":"Lecturer","salary":1000}']`
+
+### Output
+
+```html
+<table>
+	<tr>
+		<td>Peter</td>
+		<td>Director</td>
+		<td>100000</td>
+	</tr>
+	<tr>
+		<td>Ted</td>
+		<td>Lecturer</td>
+		<td>1000</td>
+	</tr>
+	<tr>
+		<td>George</td>
+		<td>Lecturer</td>
+		<td>1000</td>
+	</tr>
+</table>
+```
+
+[hints]
+[hint]
+You should **escape the HTML**. 
+
+Otherwise, you might find yourself victim to malicious JavaScript **code in the input**. 
+[/hint] 
+[/hints] 
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+\{"name":"Peter","position":"Director","salary":100000\}
+\{"name":"Ted","position":"Lecturer","salary":1000\}
+\{"name":"George","position":"Lecturer","salary":1000\}
+[/input]
+[output]
+\<table\>
+	\<tr\>
+		\<td\>Peter\</td\>
+		\<td\>Director\</td\>
+		\<td\>100000\</td\>
+	\</tr\>
+	\<tr\>
+		\<td\>Ted\</td\>
+		\<td\>Lecturer\</td\>
+		\<td\>1000\</td\>
+	\</tr\>
+	\<tr\>
+		\<td\>George\</td\>
+		\<td\>Lecturer\</td\>
+		\<td\>1000\</td\>
+	\</tr\>
+\</table\>
+[/output]
+[/test]
+[test]
+[input]
+\{"name":"George","position":"CEO","salary":10000\}
+\{"name":"Peter","position":"Employee","salary":1000\}
+\{"name":"John","position":"Employee","salary":1000\}
+\{"name":"Henrick","position":"Employee","salary":1000\}
+\{"name":"Phillip","position":"Employee","salary":1000\}
+\{"name":"Alex","position":"Cleaner","salary":500\}
+\{"name":"Ivan","position":"Cleaner","salary":500\}
+[/input]
+[output]
+\<table\>
+	\<tr\>
+		\<td\>George\</td\>
+		\<td\>CEO\</td\>
+		\<td\>10000\</td\>
+	\</tr\>
+	\<tr\>
+		\<td\>Peter\</td\>
+		\<td\>Employee\</td\>
+		\<td\>1000\</td\>
+	\</tr\>
+	\<tr\>
+		\<td\>John\</td\>
+		\<td\>Employee\</td\>
+		\<td\>1000\</td\>
+	\</tr\>
+	\<tr\>
+		\<td\>Henrick\</td\>
+		\<td\>Employee\</td\>
+		\<td\>1000\</td\>
+	\</tr\>
+	\<tr\>
+		\<td\>Phillip\</td\>
+		\<td\>Employee\</td\>
+		\<td\>1000\</td\>
+	\</tr\>
+	\<tr\>
+		\<td\>Alex\</td\>
+		\<td\>Cleaner\</td\>
+		\<td\>500\</td\>
+	\</tr\>
+	\<tr\>
+		\<td\>Ivan\</td\>
+		\<td\>Cleaner\</td\>
+		\<td\>500\</td\>
+	\</tr\>
+\</table\>
+[/output]
+[/test]
+[test]
+[input]
+\{"name":"This","position":"Will","salary":123\}
+\{"name":"Be","position":"ALot","salary":456\}
+\{"name":"Of","position":"Fun","salary":789\}
+[/input]
+[output]
+\<table\>
+	\<tr\>
+		\<td\>This\</td\>
+		\<td\>Will\</td\>
+		\<td\>123\</td\>
+	\</tr\>
+	\<tr\>
+		\<td\>Be\</td\>
+		\<td\>ALot\</td\>
+		\<td\>456\</td\>
+	\</tr\>
+	\<tr\>
+		\<td\>Of\</td\>
+		\<td\>Fun\</td\>
+		\<td\>789\</td\>
+	\</tr\>
+\</table\>
+[/output]
+[/test]
+[test]
+[input]
+\{"name":"test","position":"out.txt","salary":3\}
+[/input]
+[output]
+\<table\>
+	\<tr\>
+		\<td\>test\</td\>
+		\<td\>out.txt\</td\>
+		\<td\>3\</td\>
+	\</tr\>
+\</table\>
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide hideTitle]
