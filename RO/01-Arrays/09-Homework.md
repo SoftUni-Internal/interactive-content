@@ -51,9 +51,9 @@ The 2nd element (1) is the sum of the three elements before it or all of them if
 
 The third element is the sum of the first two elements (1 and 1). 
 
-The 4th element is the sum of 1, 1 and 2. 
+The 4th element is the sum of 1, 1, and 2. 
 
-The 5th element is the sum of the 2nd, 3rd and 4th (1, 2 and 4) and so on. 
+The 5th element is the sum of the 2nd, 3rd, and 4th (1, 2, and 4) and so on. 
 
 [/task-description]
 [code-io /]
@@ -171,7 +171,7 @@ One-Two-Three-Four-Five
 [/test]
 [test open]
 [input]
-print([ How', 'about', 'no?', 'I', 'will', 'not', 'do', 'it!', '_' ])
+print([ 'How', 'about', 'no?', 'I', 'will', 'not', 'do', 'it!', '_' ])
 [/input]
 [output]
 How_about_no?_I_will_not_do_it!
@@ -385,7 +385,7 @@ of...
 
 [slide hideTitle]
 
-# Problem: Add and Remove Elements 
+# Problem: Add and Remove Elements 
 
 [code-task title="Add and Remove Elements" taskId="java-path-js-advanced-arrays-Add-and-Remove-Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -777,7 +777,7 @@ extractSubsequence([ 100, 101, 100, 102, 100, 13 ])
 [/test]
 [test]
 [input]
-extractSubsequence([ 12, 21, 34, 43, 56, 65, 78, 87 910, 109, 910, 910 ])
+extractSubsequence([ 12, 21, 34, 43, 56, 65, 78, 87, 910, 109, 910, 910 ])
 [/input]
 [output]
 12
@@ -1132,9 +1132,7 @@ The initial state of the dashboard is
 
 ```js
 [[false, false, false], 
-
 [false, false, false], 
-
 [false, false, false]] 
 ```
 The first player's mark is **X** and the second player's mark is **O**. 
@@ -1161,7 +1159,7 @@ One parameter:
 
 "**Player** \{ **X/0** \} **wins**" 
 
-**Note**: When printing the state of the dashboard, the elements of each row of the dashboard should be separated by "**\t**" and each row should be on new line. 
+**Note**: When printing the state of the dashboard, the elements of each row of the dashboard should be separated by "**\t**" and each row should be on a new line.  
 
  
 
@@ -1334,7 +1332,7 @@ O	O	X
 [/test]
 [test]
 [input]
-ticTacToe([ 0 0', '1 1', '0 2', '0 1', '2 1', '1 0', '1 2', '2 2', '0 2', '2 0' ])
+ticTacToe([ '0 0', '1 1', '0 2', '0 1', '2 1', '1 0', '1 2', '2 2', '0 2', '2 0' ])
 [/input]
 [output]
 This place is already taken. Please choose another!
