@@ -646,8 +646,290 @@ Test =\> 1
 [slide hideTitle]
 # Problem: Store Catalogue
 
-Content will be added once the homework document has been revised.
+[code-task title="Store Catalogue" taskId="java-path-js-advanced-objects-and-classes-store-catalogue" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function store(products) {
+    // Write your code here
+}
+```
+[/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
+[task-description]
+## Description
 
+You have to create a sorted catalogue of store products. 
+
+You will be given the products’ names and prices. 
+
+You need to order them **alphabetically**.  
+
+## Input 
+The **input** comes as array of strings.
+
+Each element holds information about a product in the following format: 
+
+`{productName} : {productPrice}`
+
+The **product’s name** will be a **string**, which will **always start with a capital letter**.
+
+The price will be a number.
+
+You can safely assume there will be **NO duplicates**.
+
+The comparison for alphabetical order is **case-insensitive**.
+
+
+## Output 
+As **output**, you must print all the products in the specified format.
+
+They must be ordered **exactly as shown above**.
+
+The products must be **divided into groups**, based on the **first letter of their name**.
+
+The **group’s initial should be printed**, and after that the products should be printed with **2 spaces before their name**s.
+
+For more information, check the examples.
+
+## Example One
+
+### Input
+
+`['Apricot : 20.4', 'Fridge : 1500', 'TV : 1499', 'Deodorant : 10', 'Boiler : 300', 'Apple : 1.25', 'Anti-Bug Spray : 15', 'T-Shirt : 10']`
+
+### Output
+
+```
+A 
+  Anti-Bug Spray: 15 
+  Apple: 1.25 
+  Apricot: 20.4 
+B 
+  Boiler: 300 
+D 
+  Deodorant: 10 
+F 
+  Fridge: 1500 
+T 
+  T-Shirt: 10 
+  TV: 1499 
+```
+
+## Example Two
+
+### Input
+
+`['Banana : 2', 'Rubic's Cube : 5', 'Raspberry P : 4999', 'Rolex : 100000', 'Rollon : 10', 'Rally Car : 2000000', 'Paper : 0.000001', 'Barrel : 10'] `
+
+### Output
+
+```
+B 
+  Banana: 2 
+  Barrel: 10 
+P 
+  Paper: 0.000001 
+R 
+  Rali Car: 2000000 
+  Raspberry P: 4999 
+  Rolex: 100000 
+  Rollon: 10 
+  Rubic's Cube: 5 
+```
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+Apricot : 20.4
+Fridge : 1500
+TV : 1499
+Deodorant : 10
+Boiler : 300
+Apple : 1.25
+Anti-Bug Spray : 15
+T-Shirt : 10
+[/input]
+[output]
+A
+  Anti-Bug Spray: 15
+  Apple: 1.25
+  Apricot: 20.4
+B
+  Boiler: 300
+D
+  Deodorant: 10
+F
+  Fridge: 1500
+T
+  T-Shirt: 10
+  TV: 1499
+[/output]
+[/test]
+[test open]
+[input]
+Banana : 2
+Rubic's Cube : 5
+Raspberry P : 4999
+Rolex : 100000
+Rollon : 10
+Rally Car : 2000000
+Paper : 0.000001
+Barrel : 10
+[/input]
+[output]
+B
+  Banana: 2
+  Barrel: 10
+P
+  Paper: 0.000001
+R
+  Rally Car: 2000000
+  Raspberry P: 4999
+  Rolex: 100000
+  Rollon: 10
+  Rubic's Cube: 5
+[/output]
+[/test]
+[test]
+[input]
+Apple : 1
+Broccoli : 2
+Corn : 3
+Deagle : 4
+Eclipse : 5
+Flirt : 6
+Gargoyle : 7
+Heart : 8
+Iris : 9
+Juice : 10
+King : 11
+Lemon : 12
+Melolemonmelon : 13
+Nestea : 14
+Opium : 15
+Pineapple Pen : 16
+Quartz : 17
+Rocket : 18
+Sphere : 19
+Tantrum : 20
+Uranium : 21
+Vi\*\*\*tor : 22
+Wolfy : 23
+Xeno : 24
+Yoyo : 25
+Zord : 26
+[/input]
+[output]
+A
+  Apple: 1
+B
+  Broccoli: 2
+C
+  Corn: 3
+D
+  Deagle: 4
+E
+  Eclipse: 5
+F
+  Flirt: 6
+G
+  Gargoyle: 7
+H
+  Heart: 8
+I
+  Iris: 9
+J
+  Juice: 10
+K
+  King: 11
+L
+  Lemon: 12
+M
+  Melolemonmelon: 13
+N
+  Nestea: 14
+O
+  Opium: 15
+P
+  Pineapple Pen: 16
+Q
+  Quartz: 17
+R
+  Rocket: 18
+S
+  Sphere: 19
+T
+  Tantrum: 20
+U
+  Uranium: 21
+V
+  Vi\*\*\*tor: 22
+W
+  Wolfy: 23
+X
+  Xeno: 24
+Y
+  Yoyo: 25
+Z
+  Zord: 26
+[/output]
+[/test]
+[test]
+[input]
+HueHueHue : 1000
+Harley Davidson : 10
+Halberd : 101
+Broccoli : 10
+Beans : 2302
+KFC : 1000
+McDonalds : 10
+Kitchen : 10
+[/input]
+[output]
+B
+  Beans: 2302
+  Broccoli: 10
+H
+  Halberd: 101
+  Harley Davidson: 10
+  HueHueHue: 1000
+K
+  KFC: 1000
+  Kitchen: 10
+M
+  McDonalds: 10
+[/output]
+[/test]
+[test]
+[input]
+Test : 300
+Out : 200
+Txt : 100
+Milionaaa : 300
+[/input]
+[output]
+M
+  Milionaaa: 300
+O
+  Out: 200
+T
+  Test: 300
+  Txt: 100
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide hideTitle]
