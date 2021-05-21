@@ -189,13 +189,21 @@ As a result, the value of `book.age` is `undefined`.
 # Problem with Solution: City Record
 [code-task title="City Record" taskId="java-path-js-advanced-objects-and-classes-city-record" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
-
 ```
-function cityRecord(input){
+function cityRecord(name, population, treasury){
   // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 ## Description
 You will receive a city’s **name** (string), **population** (number), and **treasury** (number) as arguments. 
