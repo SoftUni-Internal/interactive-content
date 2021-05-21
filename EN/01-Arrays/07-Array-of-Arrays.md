@@ -97,15 +97,15 @@ The **output** is printed to the console on a single line, separated by space. F
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|biggerHalf([ [ 20, 40 ], [ 10, 60 ] ]) | 80 50  |
-|biggerHalf([ [ 3, 5, 17 ], [ -1, 7, 14 ], [ 1, -8, 89 ] ]) | 99 25   |
+|diagonalSums([ [ 20, 40 ], [ 10, 60 ] ]) | 80 50  |
+|diagonalSums([ [ 3, 5, 17 ], [ -1, 7, 14 ], [ 1, -8, 89 ] ]) | 99 25   |
 
 [/task-description]
 [code-io /]
 [tests]
 [test]
 [input]
-biggerHalf([ [6 45], [1 17] ])
+diagonalSums([ [ 6 45 ], [ 1 17 ] ])
 [/input]
 [output]
 23 46
@@ -113,7 +113,7 @@ biggerHalf([ [6 45], [1 17] ])
 [/test]
 [test]
 [input]
-biggerHalf([ [10] ])
+diagonalSums([ [10] ])
 [/input]
 [output]
 10 10
@@ -121,7 +121,7 @@ biggerHalf([ [10] ])
 [/test]
 [test]
 [input]
-biggerHalf([ [54 123 130 63], [51 181 112 35], [47 35 110 77], [14 106 156 117] ])
+diagonalSums([ [ 54 123 130 63 ], [ 51 181 112 35 ], [ 47 35 110 77 ], [ 14 106 156 117 ] ])
 [/input]
 [output]
 462 224
@@ -129,23 +129,23 @@ biggerHalf([ [54 123 130 63], [51 181 112 35], [47 35 110 77], [14 106 156 117] 
 [/test]
 [test]
 [input]
-biggerHalf([ [-8 13], [22 8] ])
+diagonalSums([ [ -8 13 ], [ 22 8 ] ])
 [/input]
 [output]
 0 35
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-biggerHalf([ [20 40], [10 60] ])
+diagonalSums([ [ 20 40 ], [ 10 60 ] ])
 [/input]
 [output]
 80 50
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-biggerHalf([ [3 5 17], [-1 7 14], [1 -8 89] ])
+diagonalSums([ [ 3 5 17 ], [ -1 7 14 ], [ 1 -8 89 ] ])
 [/input]
 [output]
 99 25
