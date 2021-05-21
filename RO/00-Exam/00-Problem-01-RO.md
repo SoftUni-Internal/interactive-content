@@ -24,25 +24,19 @@ function adapter(input, code) {
 
 Câțiva dintre prietenii voștri au decis să meargă într-o călătorie destul de lungă. Ei sunt foarte ocupați în această perioadă, deoarece trebuie să se pregătească pentru drum.
 
-Așadar, v-au cerut să îi ajutați să-și organizeze călătoria prin crearea unui program care va procesa unele modificări ale planului lor inițial de călătorie.
+Așadar, v-au cerut să îi ajutați să își organizeze călătoria prin crearea unui program care va procesa unele modificări ale planului lor inițial de călătorie.
 
 Veți primi un șir care conține lista inițială a **destinațiilor de călătorie.**
 
-Ulterior, veți primi **comenzi**, care reprezintă modificări ale șirului care conține destinațiile călătoriei, până la introducerea comenzii "**Travel**".
+Ulterior, până la introducerea comenzii "**Travel**", veți primi **comenzi** care reprezintă modificări ale șirului care conține destinațiile călătoriei.
 
 Comenzile pot fi:
 
-* Comanda "**Add Stop:**\{**index**\}**:**\{**string**\}":
+* "**Add Stop:**\{**index**\}**:**\{**string**\}": **dacă indicele este valid**, **introduceți** șirul dat la indicele specificat
 
-**Dacă indicele este valid**, **introduceți** șirul dat la indicele specificat.
+* "**Remove Stop:**\{**start_index**\}**:**\{**end_index**\}": **dacă ambii indici sunt valabili, eliminați** elementele șirului care începe de la **primul indice** și se termină la **al doilea indice** (inclusiv)
 
-* Comanda **Remove Stop:**\{**start_index**\}**:**\{**end_index**\}:
-
-**Dacă ambii indici sunt valabili, eliminați** elementele șirului care începe de la **primul indice** și se termină la **al doilea indice** (inclusiv).
-
-* Comanda "**Switch:**\{**oldString**\}**:**\{**newString**\}":
-
-Dacă **vechiul șir** este prezent în momentul dat în șirul planului de călătorie, **înlocuiți toate aparițiile ale acestuia cu noul șir.**
+* "**Switch:**\{**oldString**\}**:**\{**newString**\}": dacă **vechiul șir** este prezent la momentul dat în șirul planului de călătorie, **înlocuiți toate aparițiile ale acestuia cu noul șir**
 
 **Notă: După fiecare comandă, tipăriți starea curentă a șirului.**
 
