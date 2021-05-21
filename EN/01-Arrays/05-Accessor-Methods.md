@@ -136,10 +136,10 @@ The **output** is the **return** value of the function and should be an **array 
 [tests]
 [test open]
 [input]
-biggerHalf([4, 7, 2, 5])
+biggerHalf(\[4, 7, 2, 5\])
 [/input]
 [output]
-[5, 7]
+\[5, 7\]
 [/output]
 [/test]
 [test open]
