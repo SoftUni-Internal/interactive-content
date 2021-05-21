@@ -250,10 +250,10 @@ The **output** is the **return** value of the function and should be an **array 
 [tests]
 [test open]
 [input]
-peiceOfPie([ "Pumpkin Pie", "Key Lime Pie", "Cherry Pie", "Lemon Meringue Pie", "Sugar Cream Pie" ], "Key Lime Pie", "Lemon Meringue Pie")
+peiceOfPie([ 'Pumpkin Pie', 'Key Lime Pie', 'Cherry Pie', 'Lemon Meringue Pie', 'Sugar Cream Pie' ], 'Key Lime Pie', 'Lemon Meringue Pie')
 [/input]
 [output]
-[ "Key Lime Pie", "Cherry Pie", "Lemon Meringue Pie" ]
+[ 'Key Lime Pie', 'Cherry Pie', 'Lemon Meringue Pie' ]
 [/output]
 [/test]
 [test open]
