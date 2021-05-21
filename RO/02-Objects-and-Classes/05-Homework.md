@@ -11,6 +11,15 @@ function heroicInventory(input) {
 };
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 # Description
 In the era of heroes, every hero has their own items which make them unique. 
@@ -149,9 +158,6 @@ Lastly, we need to turn the array of objects into a JSON string, which is done w
 console.log(JSON.stringify(result));
 ```
 [/hint] 
-[hint]
-
-[/hint] 
 [/hints] 
 
 
@@ -237,11 +243,20 @@ What / 1 / The, Fuck
 [code-task title="JSON's Table" taskId="java-path-js-advanced-objects-and-classes-json-s-table" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function jsonTable {
+function jsonTable(arr) {
     // Write your code here
 }
 ```
 [/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
 [task-description]
 ## Description
 JSON’s Table is a magical table which turns JSON data into an HTML table. 
@@ -424,8 +439,208 @@ Otherwise, you might find yourself victim to malicious JavaScript **code in the 
 [slide hideTitle]
 # Problem: Juice
 
-Content will be added once the homework document has been revised.
+[code-task title="Juice" taskId="java-path-js-advanced-objects-and-classes-juice" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function juice(arr) {
+    // Write your code here
+}
+```
+[/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
+[task-description]
+## Description
 
+You will be given different types of juices as **strings**.
+
+You will also **receive milliliters** as a **number**.
+
+If you receive a type of juice that you already have, you should **combine their volumes**.
+
+When a type of juice reaches **1000 milliliters**, it is poured into a bottle.
+
+You must **store all bottles**, and you must **print them** at the end.
+
+
+**Note:** 1000 milliliters of **juice** is **one bottle**.
+
+If you happen to have **more than 1000**, you must make **as many bottles as you can** and store **what is left** from the juice.
+
+
+**Example:** You have **2643 milliliters** of Orange Juice – this is **2 bottles** of Orange Juice and **643 milliliters left**.
+
+
+## Input 
+The **input** comes as array of strings.
+
+Each element holds data about a type of juice and its volume in the following format: 
+`{juiceName} => {juiceVolume}`
+ 
+## Output 
+The **output** consists of all the filled bottles.
+
+They are to be printed in the **order of filling**.
+
+Check the second example bellow.
+
+Even though we receive the Kiwi juice first, we do not fill a bottle of Kiwi juice until the 4th line.
+
+By that time, we have already filled Pear and Watermelon juice bottles, so the Kiwi bottles appear last in the output.
+
+## Example One
+
+### Input
+
+`['Orange => 2000', 'Peach => 1432', 'Banana => 450', 'Peach => 600', 'Strawberry => 549']`
+
+### Output
+
+```
+Orange => 2 
+Peach => 2 
+```
+
+## Example Two
+
+### Input
+
+`['Kiwi => 234', 'Pear => 2345', 'Watermelon => 3456', 'Kiwi => 4567', 'Pear => 5678', 'Watermelon => 6789']`
+
+### Output
+
+```
+Pear => 8 
+Watermelon => 10 
+Kiwi => 4 
+```
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+Orange =\> 2000
+Peach =\> 1432
+Banana =\> 450
+Peach =\> 600
+Strawberry =\> 549
+[/input]
+[output]
+Orange =\> 2
+Peach =\> 2
+[/output]
+[/test]
+[test open]
+[input]
+Kiwi =\> 234
+Pear =\> 2345
+Watermelon =\> 3456
+Kiwi =\> 4567
+Pear =\> 5678
+Watermelon =\> 6789
+[/input]
+[output]
+Pear =\> 8
+Watermelon =\> 10
+Kiwi =\> 4
+[/output]
+[/test]
+[test]
+[input]
+Hell =\> 100000
+Coca Cola =\> 1000000000
+Water =\> 10000
+Nestea =\> 11111
+[/input]
+[output]
+Hell =\> 100
+Coca Cola =\> 1000000
+Water =\> 10
+Nestea =\> 11
+[/output]
+[/test]
+[test]
+[input]
+Musaka =\> 1000
+Lambda =\> 1000
+Filter =\> 1000
+Function =\> 1000
+Judge =\> 1000
+Mojem =\> 1000
+Zadacha =\> 1000
+Reshenie =\> 1000
+Prav =\> 1000
+Nakov =\> 1000
+Izvrashtenie =\> 1000
+[/input]
+[output]
+Musaka =\> 1
+Lambda =\> 1
+Filter =\> 1
+Function =\> 1
+Judge =\> 1
+Mojem =\> 1
+Zadacha =\> 1
+Reshenie =\> 1
+Prav =\> 1
+Nakov =\> 1
+Izvrashtenie =\> 1
+[/output]
+[/test]
+[test]
+[input]
+Code =\> 999
+Software =\> 1000
+SoftwareShouldBeBeforeCode =\> 1345
+Code =\> 1
+[/input]
+[output]
+Software =\> 1
+SoftwareShouldBeBeforeCode =\> 1
+Code =\> 1
+[/output]
+[/test]
+[test]
+[input]
+What =\> 919
+The =\> 191
+Fuck =\> 1110
+What =\> 191
+The =\> 919
+The =\> 889
+The =\> 1
+[/input]
+[output]
+Fuck =\> 1
+What =\> 1
+The =\> 2
+[/output]
+[/test]
+[test]
+[input]
+Test =\> 500
+Out =\> 500
+Txt =\> 1000
+Out =\> 512
+Test =\> 499
+Test =\> 1
+[/input]
+[output]
+Txt =\> 1
+Out =\> 1
+Test =\> 1
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide hideTitle]
