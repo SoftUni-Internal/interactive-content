@@ -8,13 +8,13 @@
 
 An Assert statement is a code used during the development process.
 
-The **Assert statements** or **Assertion** simply allows a programs to inspect itselfs as it runs.
+The **Assert statements** or **Assertion** simply allows programs to inspect itself as it runs.
 
 The assertion may be true or false. If the result is true, that means everything is operating as expected.
 
 If the result is false, that means there is **unexpected error** in our code.
 
-Assertions are very useful in complicated programs and in high-reliability projects.
+Assertions are very useful in complicated programs and high-reliability projects.
 
 ## Bool Assertions
 
@@ -57,7 +57,7 @@ Assert.IsTrue(greeting.Contains("Hello"));
  */ 
 ```
 
-We can use use **Assertions** by **regex matching**.
+We can use **Assertions** by **regex matching**.
 
 Take a look at the example below:
 
