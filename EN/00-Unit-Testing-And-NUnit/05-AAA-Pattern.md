@@ -17,7 +17,7 @@ Let us take a look at this simple example:
 
 ```csharp
 [Test]
-    public void testAddition() 
+    public void testCalculatorMultiplying() 
         // Arrange - prepare required data
         Calculator calculator = new Calculator();
         var expectedResult = 8;
@@ -30,7 +30,7 @@ Let us take a look at this simple example:
     }
 ```
 
-First we should **аrrange** all conditions for the testing system.
+First, we should **аrrange** all conditions for the testing system.
 
 Then we take the actions **аct**, which aim to produce a certain result.
 
