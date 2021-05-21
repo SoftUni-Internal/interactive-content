@@ -934,9 +934,310 @@ T
 
 [slide hideTitle]
 # Problem: System Components
+[code-task title="System Components" taskId="java-path-js-advanced-objects-and-classes-system-components" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function system(components) {
+    // Write your code here
+}
+```
+[/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
+[task-description]
+## Description
+You will be given a register of systems with components and subcomponents.
 
-Content will be added once the homework document has been revised.
+You need to build an ordered database of all the elements you have.
 
+
+The elements are registered in a very simple way.
+
+When you have processed all of the input data, you must print them in a specific order.
+
+For every System, you must print its components in a specified order and for every Component, you must print its Subcomponents in a specified order.
+
+
+The **Systems** you have stored must be ordered by the **number of components** in **descending order** as **first criteria** and by **alphabetical order** as **second criteria**.
+
+The **Components** must be ordered by the **number of Subcomponents** in **descending order**.
+
+
+## Input 
+The **input** comes as array of strings.
+
+Each element holds **data** about a **system**, a **component** in that **system**, and a **subcomponent** in that **component**.
+
+If the given **system already exists**, you should just **add the new component** to it.
+
+If even the **component exists**, you should just **add** the **new subcomponent** to it.
+
+The **subcomponents** will **always be unique**.
+
+**The input format is:** 
+
+`{systemName} | {componentName} | {subcomponentName}`
+
+All of the elements are strings, and can contain **any ASCII characters**.
+
+The **string comparison** for the alphabetical order is **case-insensitive**.
+
+
+## Output 
+As **output**, you need to print all of the elements, ordered exactly in the way specified above.
+
+**The format is:**
+
+```
+{systemName} 
+|||{componentName} 
+|||{component2Name} 
+||||||{subcomponentName} 
+||||||{subcomponent2Name} 
+{system2Name}  
+...
+```
+
+## Examples
+
+### Input
+
+`['SULS | Main Site | Home Page', 'SULS | Main Site | Login Page', 'SULS | Main Site | Register Page', 'SULS | Judge Site | Login Page', 'SULS | Judge Site | Submittion Page', 'Lambda | CoreA | A23', 'SULS | Digital Site | Login Page', 'Lambda | CoreB | B24', 'Lambda | CoreA | A24', 'Lambda | CoreA | A25', 'Lambda | CoreC | C4', 'Indice | Session | Default Storage', 'Indice | Session | Default Security']`
+
+### Output
+
+```
+Lambda 
+|||CoreA 
+||||||A23 
+||||||A24 
+||||||A25 
+|||CoreB 
+||||||B24 
+|||CoreC 
+||||||C4 
+SULS 
+|||Main Site 
+||||||Home Page 
+||||||Login Page 
+||||||Register Page 
+|||Judge Site 
+||||||Login Page 
+||||||Submittion Page 
+|||Digital Site 
+||||||Login Page 
+Indice 
+|||Session 
+||||||Default Storage 
+||||||Default Security
+```
+
+[hints]
+[hint]
+Creating a sorting function with two criteria might seem very challenging, but it can be simplified to the following: 
+
+- If elements **a** and **b** are different based on the **first criteria**, then that result is the result of the sorting function
+  * checking the second criteria is not required. 
+
+- If elements **a** and **b** are **equal** based on the **first criteri**a, then the result of comparing **a** and **b** based on the **second criteria** is the result of the sorting
+[/hint] 
+[/hints] 
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+SULS \| Main Site \| Home Page
+SULS \| Main Site \| Login Page
+SULS \| Main Site \| Register Page
+SULS \| Judge Site \| Login Page
+SULS \| Judge Site \| Submittion Page
+Lambda \| CoreA \| A23
+SULS \| Digital Site \| Login Page
+Lambda \| CoreB \| B24
+Lambda \| CoreA \| A24
+Lambda \| CoreA \| A25
+Lambda \| CoreC \| C4
+Indice \| Session \| Default Storage
+Indice \| Session \| Default Security
+[/input]
+[output]
+Lambda
+\|\|\|CoreA
+\|\|\|\|\|\|A23
+\|\|\|\|\|\|A24
+\|\|\|\|\|\|A25
+\|\|\|CoreB
+\|\|\|\|\|\|B24
+\|\|\|CoreC
+\|\|\|\|\|\|C4
+SULS
+\|\|\|Main Site
+\|\|\|\|\|\|Home Page
+\|\|\|\|\|\|Login Page
+\|\|\|\|\|\|Register Page
+\|\|\|Judge Site
+\|\|\|\|\|\|Login Page
+\|\|\|\|\|\|Submittion Page
+\|\|\|Digital Site
+\|\|\|\|\|\|Login Page
+Indice
+\|\|\|Session
+\|\|\|\|\|\|Default Storage
+\|\|\|\|\|\|Default Security
+[/output]
+[/test]
+[test]
+[input]
+Shift \| Section-A \| A-2
+Shift \| Section-A \| A-3
+Shift \| Section-A \| A-23
+Shift \| Section-B \| B-1
+Shift \| Section-B \| B-64
+Shift \| Section-B \| B-56
+Shit \| Anex \| Indie
+Shit \| Bider \| Indie
+[/input]
+[output]
+Shift
+\|\|\|Section-A
+\|\|\|\|\|\|A-2
+\|\|\|\|\|\|A-3
+\|\|\|\|\|\|A-23
+\|\|\|Section-B
+\|\|\|\|\|\|B-1
+\|\|\|\|\|\|B-64
+\|\|\|\|\|\|B-56
+Shit
+\|\|\|Anex
+\|\|\|\|\|\|Indie
+\|\|\|Bider
+\|\|\|\|\|\|Indie
+[/output]
+[/test]
+[test]
+[input]
+Aniel \| Defa \| Aidi
+Bari \| Defa \| Aidi
+Bari \| Defa \| Isex
+Bari \| Aha \| Xeno
+Bari \| Defa \| Xeno
+Aniel \| Defa \| Insiel
+Ciel \| Defa \| Insiel
+[/input]
+[output]
+Bari
+\|\|\|Defa
+\|\|\|\|\|\|Aidi
+\|\|\|\|\|\|Isex
+\|\|\|\|\|\|Xeno
+\|\|\|Aha
+\|\|\|\|\|\|Xeno
+Aniel
+\|\|\|Defa
+\|\|\|\|\|\|Aidi
+\|\|\|\|\|\|Insiel
+Ciel
+\|\|\|Defa
+\|\|\|\|\|\|Insiel
+[/output]
+[/test]
+[test]
+[input]
+Iris \| Main System \| Radiation Reducer
+Iris \| Main System \| Blue Light Reducer
+Iris \| Sub-System Alpha \| Resistor Level-5
+Iris \| Core \| Memory Reducer
+Iris \| Core \| Electricity Reducer
+Iris \| Sub-System Gamma \| Resistor Level-2
+Iris \| Sub-System Gamma \| Resistor Level-3
+Iris \| Main System \| Interface
+[/input]
+[output]
+Iris
+\|\|\|Main System
+\|\|\|\|\|\|Radiation Reducer
+\|\|\|\|\|\|Blue Light Reducer
+\|\|\|\|\|\|Interface
+\|\|\|Core
+\|\|\|\|\|\|Memory Reducer
+\|\|\|\|\|\|Electricity Reducer
+\|\|\|Sub-System Gamma
+\|\|\|\|\|\|Resistor Level-2
+\|\|\|\|\|\|Resistor Level-3
+\|\|\|Sub-System Alpha
+\|\|\|\|\|\|Resistor Level-5
+[/output]
+[/test]
+[test]
+[input]
+Creativity \| Going \| Down
+Creativity \| Reducing \| Fast
+Creativity \| Is \| Dead
+Creativity \| Going \| Down Really Fast
+Creativity \| Is \| Really Dead
+Tests \| Are \| Dying
+Tests \| Are \| Dead
+[/input]
+[output]
+Creativity
+\|\|\|Going
+\|\|\|\|\|\|Down
+\|\|\|\|\|\|Down Really Fast
+\|\|\|Is
+\|\|\|\|\|\|Dead
+\|\|\|\|\|\|Really Dead
+\|\|\|Reducing
+\|\|\|\|\|\|Fast
+Tests
+\|\|\|Are
+\|\|\|\|\|\|Dying
+\|\|\|\|\|\|Dead
+[/output]
+[/test]
+[test]
+[input]
+Tests \| 001 \| In
+Tests \| 001 \| Out
+Tests \| 002 \| In
+Tests \| 002 \| Out
+Tests \| 003 \| In
+Tests \| 003 \| Out
+Tests \| 004 \| In
+Tests \| 004 \| Out
+Tests \| 005 \| In
+Tests \| 005 \| Out
+[/input]
+[output]
+Tests
+\|\|\|001
+\|\|\|\|\|\|In
+\|\|\|\|\|\|Out
+\|\|\|002
+\|\|\|\|\|\|In
+\|\|\|\|\|\|Out
+\|\|\|003
+\|\|\|\|\|\|In
+\|\|\|\|\|\|Out
+\|\|\|004
+\|\|\|\|\|\|In
+\|\|\|\|\|\|Out
+\|\|\|005
+\|\|\|\|\|\|In
+\|\|\|\|\|\|Out
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide hideTitle]
