@@ -154,4 +154,3 @@ biggerHalf([ [3 5 17], [-1 7 14], [1 -8 89] ])
 [/tests]
 [/code-task]
 [/slide]
-[/slide]

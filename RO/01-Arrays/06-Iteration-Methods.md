@@ -194,7 +194,6 @@ processOddNumbers([ 3, 0, 10, 4, 7, 3 ])
 [/tests]
 [/code-task]
 [/slide]
-[/slide]
 
 [slide hideTitle]
 # Reduce

@@ -39,12 +39,12 @@ let arr = [
 ## In the next lesson, you will learn:
 
 - Objects
-  - Object and Properties
-  - Looping Through Objects
+  - object and Properties
+  - looping Through Objects
 - JSON
 - Classes
-  - Definition
-  - Constructor
-  - Fields
+  - definition
+  - constructor
+  - fields
 
 [/slide]
