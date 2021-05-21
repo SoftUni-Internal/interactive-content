@@ -60,7 +60,7 @@ Choose **Class** and name it **Summator**.
 
 Let's write a very simple function that will **sum** two numbers.
 
-```C#
+```Csharp
 public static int Sum(int[] arr) {
   int sum = arr[0];
   for (int i = 1; i < arr.Length; i++)
@@ -73,7 +73,7 @@ This is the class that we want to test.
 
 Now, we can return to our **Main** method and run our function:
 
-```C#
+```csharp
 static void Main() {
   Console.WriteLine(Summator.Sum(new int[] {
     10,
