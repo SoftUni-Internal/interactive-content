@@ -24,13 +24,13 @@ function adapter(input, code) {
 
 # Descriere
 
-Pe prima linie cu date de intrare vi se va oferi un **șir**, care conține articolele care sunt **stocate în prezent în frigiderul vostru.**
+Pe prima linie cu date de intrare vi se va oferi un **șir** care conține articolele **stocate în prezent în frigiderul vostru.**
 
-Trebuie **să extrageți informațiile despre fiecare articol** și să calculați numărul lor de calorii.
+Trebuie **să extrageți informațiile despre fiecare articol** și să calculați numărul lor total de calorii.
 
 Mai întâi, trebuie să **extrageți informațiile despre alimente.**
 
-Va respecta întotdeauna următoarele reguli:
+Următoarele reguli vor fi întotdeauna respectate:
 
 * Articolele vor fi separate prin simbolul "\|" sau "\#" (doar unul din cele două) în următorul format:
 
@@ -40,11 +40,11 @@ Va respecta întotdeauna următoarele reguli:
 
 * Numele articolului poate conține numai **minuscule**, **majuscule** și **spații**
 
-* Data de expirare va urma întotdeauna modelul: "\{**day**\} \/ \{**month**\} \/ \{**year**\}"
+* Data de expirare va urma întotdeauna modelul: "\{**day**\}\/\{**month**\}\/\{**year**\}"
 
 **Ziua**, **luna** și **anul** vor fi formate din două cifre.
 
-* Caloriile vor fi un **număr întreg în intervalul: 0-10000**
+* Caloriile vor fi date sub forma unui **număr întreg în intervalul 0-10000**
 
 Calculați **numărul total de calorii al tuturor produselor alimentare** din șir și apoi determinați câte zile ați putea rezista cu această cantitate, **presupunând că consumați 2000 kcal pe zi.**
 
@@ -54,7 +54,7 @@ Calculați **numărul total de calorii al tuturor produselor alimentare** din ș
 
 ## Ieșire
 
-- Pe prima linie de ieșire tipăriți numărul de zile pentru care această aprovizionare cu alimente este suficientă, înainte de a fi nevoie să mergeți la magazin:
+- Pe prima linie de ieșire tipăriți numărul de zile pentru care această aprovizionare cu alimente este suficientă, înainte să fiți nevoit să mergeți la magazin:
 
 "**You have enough food for** \{**days**\} **days!**"
 
@@ -84,7 +84,7 @@ Avem **trei** corespondențe valabile:
 [/hint] 
 [hint]
 Suma caloriilor lor este de **4700 kcal**.
-Deoarece aveți nevoie de **2000 kcal** pe zi, **împărțiți** 4700/2000, ceea ce înseamnă că aprovizionarea va fi suficientă pentru **2 zile**.
+Deoarece aveți nevoie de **2000 kcal** pe zi, **efectuați împărțirea** 4700/2000, ceea ce înseamnă că aprovizionarea va fi suficientă pentru **2 zile**.
 [/hint] 
 [hint]
 **Tipărim** fiecare articol.
