@@ -55,9 +55,9 @@ Imprimați starea actuală a tuturor țintelor din poligon.
 
 De fiecare dată când Peter se află în dreptul țintei:
 
-* El trage la țință și primește 5 puncte, scăzând numărul de puncte ale țintei cu 5
+* El trage la țință și primește 5 puncte, scăzând numărul de puncte al țintei cu 5
 
-* Dacă ținta valorează mai puțin de 5 puncte, Peter trebuie să ia toate punctele și să scadă numărul de puncte ale țintei la 0
+* Dacă ținta valorează mai puțin de 5 puncte, Peter trebuie să ia toate punctele și să scadă numărul de puncte al țintei la 0
 
 ## Intrare
 
