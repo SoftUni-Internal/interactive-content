@@ -313,17 +313,540 @@ console.log(machine.milkInLitres); // 50
 [/slide]
 
 [slide hideTitle]
-
 # Problem with Solution: Person
 
-Content will be added once the lab document has been revised.
+[code-task title="Person" taskId="java-path-js-advanced-objects-and-classes-person" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
+[code-editor language=javascript]
+```
+class Person {
+    // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+## Description
+Create a **class** that represents a personal record. 
 
+It has the following properties, all set from the constructor: 
+
+- `firstName` - **String**
+- `lastName` - **String**
+- `age` - **Number**
+- `email` - **String**
+
+It also has a method called `toString()`, which prints a summary of the information. 
+
+See the example for formatting details. 
+
+## Input 
+The constructor function will receive valid parameters. 
+
+## Output 
+The `toString()` method should return a string in the following format: 
+
+`{firstName} {lastName} (age: {age}, email: {email})`
+
+Submit the class definition as it is, **without** wrapping it in any function. 
+
+## Example 
+
+### Sample Input 
+
+```js
+let person = new Person('Anna', 'Simpson', 22, 'anna@yahoo.com'); 
+
+console.log(person.toString()); 
+```
+
+### Output 
+
+```
+Anna Simpson (age: 22, email: anna@yahoo.com) 
+```
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+let Person = result;
+
+let person = new Person("Anna", "Simpson", 18, "anna@yahoo.com");
+let str = person.toString();
+
+expect(str).to.be.equal('Anna Simpson (age: 22, email: anna@yahoo.com)');
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let Person = result;
+
+expect(typeof Person).to.be.equal('function',
+            "Class 'Person' not found");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let Person = result;
+
+expect(typeof Person.constructor).to.be.equal('function',
+            "'Person.constructor' not found");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let Person = result;
+
+expect(Person.length).to.be.equal(4,
+            "'Rectangle.constructor' should take 4 parameters");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let Person = result;
+
+expect(typeof Person.constructor.name).to.be.equal('string',
+            "'Person.constructor' not found");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let Person = result;
+let p = new Person("Peter", "Marinov", 18, "pesho18@abv.bg");
+
+expect(p.firstName).to.be.equal("Peter",
+            "Property 'firstName' not working");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let Person = result;
+let p = new Person("Peter", "Marinov", 18, "pesho18@abv.bg");
+
+expect(p.lastName).to.be.equal("Marinov",
+            "Property 'lastName' not working");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let Person = result;
+let p = new Person("Peter", "Marinov", 18, "pesho18@abv.bg");
+
+expect(p.age).to.be.equal(18,
+            "Property 'age' not working");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let Person = result;
+let p = new Person("Peter", "Marinov", 18, "pesho18@abv.bg");
+
+expect(p.email).to.be.equal("pesho18@abv.bg",
+            "Property 'email' not working");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let Person = result;
+let p = new Person("Peter", "Marinov", 18, "pesho18@abv.bg");
+
+expect(typeof p.toString).to.be.equal('function',
+            "Method 'toString()' does not exist");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let Person = result;
+let p = new Person("Peter", "Marinov", 18, "pesho18@abv.bg");
+let str = p.toString();
+
+expect(str).to.be.equal('Peter Marinov (age: 18, email: pesho18@abv.bg)');
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide hideTitle]
 
 # Problem with Solution: Get People
+[code-task title="Get People" taskId="java-path-js-advanced-objects-and-classes-get-people" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
+[code-editor language=javascript]
+```
+function getPeople() {
+    // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+## Description
 
-Content will be added once the lab document has been revised.
+Write a function that returns an array of `Person` instances. 
 
+Use the class from the previous task, create the following instances, and return them in an array: 
+
+|**First Name**|**Last Name**|**Age**|**Email**|
+|---|---|---|---|
+|**Anna**|Simpson|22|anna@yahoo.com|
+|**SoftUni**| | | |
+|**Stephan**|Johnson|25| |
+|**Gabriel**|Peterson|24|g.p@gmail.com|
+
+For any empty cells, do not supply a parameter (call the constructor with less parameters).
+
+## Input 
+There will be **no input**, the data is static and matches the table above. 
+
+## Output 
+As **output, return an array** of `Person` instances. 
+
+**Submit** a **function** that returns the required output. 
+
+[/task-description]
+[code-io/]
+[tests]
+[test]
+[input]
+let getPersons = result;
+
+expect(typeof getPersons).to.be.equal('function',
+            "function 'getPersons' not found");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(Array.isArray(persons)).to.be.equal(true,
+            "getPersons() should return array");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons.length).to.be.greaterThan(0,
+            "getPersons() should return non-empty array");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(typeof persons\[0\]).to.be.equal('object',
+            "getPersons() should return array of objects");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons.length).to.be.equal(4,
+            "getPersons() should return array of 4 elements");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[0\].firstName).to.be.equal('Anna',
+            "getPersons()\[0\].firstName should be Anna");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[0\].lastName).to.be.equal('Simpson',
+            "getPersons()\[0\].lastName should be Simpson");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[0\].age).to.be.equal(22,
+            "getPersons()\[0\].age should be 22");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[0\].email).to.be.equal('anna@yahoo.com',
+            "getPersons()\[0\].email should be anna@yahoo.com");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[1\].firstName).to.be.equal('SoftUni',
+            "getPersons()\[1\].firstName should be SoftUni");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[1\].lastName).to.be.equal(undefined,
+            "getPersons()\[1\].lastName should be undefined");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[1\].age).to.be.equal(undefined,
+            "getPersons()\[1\].age should be undefined");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[1\].email).to.be.equal(undefined,
+            "getPersons()\[1\].email should be undefined");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[2\].firstName).to.be.equal('Stephan',
+            "getPersons()\[2\].firstName should be Stephan");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[2\].lastName).to.be.equal('Johnson',
+            "getPersons()\[2\].lastName should be Johnson");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[2\].age).to.be.equal(25,
+            "getPersons()\[2\].age should be 25");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[2\].email).to.be.equal(undefined,
+            "getPersons()\[2\].email should be undefined");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[3\].firstName).to.be.equal('Gabriel',
+            "getPersons()\[3\].firstName should be Gabriel");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[3\].lastName).to.be.equal('Peterson',
+            "getPersons()\[3\].lastName should be Peterson");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[3\].age).to.be.equal(24,
+            "getPersons()\[3\].age should be 24");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+
+expect(persons\[0\].constructor.name).to.be.equal('Person',
+            "getPersons() should return array of instances of class Person (class name must be exact)");
+expect(persons\[3\].email).to.be.equal('g.p@gmail.com',
+            "getPersons()\[3\].email should be g.p@gmail.com");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[test]
+[input]
+let getPersons = result;
+let persons = getPersons();
+let personsAsString = persons.join(", ");
+
+expect(personsAsString).to.be.equal(
+            'Anna Simpson (age: 22, email: anna@yahoo.com), SoftUni undefined (age: undefined, email: undefined), Stephan Johnson (age: 25, email: undefined), Gabriel Peterson (age: 24, email: g.p@gmail.com)',
+            "Person.toString()");
+[/input]
+[output]
+yes
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]

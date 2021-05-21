@@ -146,44 +146,7 @@ The **output** should be printed to the console – for each **entry row** in th
 Object’s **keys** will always be the **same**. Check more information for the **HTML Entity** [here](https://developer.mozilla.org/en-US/docs/Glossary/Entity). 
 
 ## HTML 
-You are provided with an HTML file to test your table in the browser. 
-
-```html
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <title>FromJSONToHTMLTable</title> 
-    <style> 
-        table,th{ 
-            border: groove; 
-            border-collapse: collapse; 
-        } 
-        td{ 
-            border: 1px solid black; 
-        } 
-        td,th{ 
-            padding: 5px; 
-        } 
-    </style> 
-</head> 
-<body> 
-    <div id="wrapper"> 
-    </div> 
-    <script> 
-        function fromJSONToHTMLTable(input){ 
-            //Write your code here 
-        } 
-        window.onload = function(){ 
-            let container = document
-              .getElementById('wrapper'); 
-            container.innerHTML 
-              = fromJSONToHTMLTable(['[{"Name":"Tomatoes & Chips", "Price":2.35}, {"Name":"J&B Chocolate", "Price":0.96}]']); 
-        }; 
-    </script> 
-</body> 
-</html> 
-```
+You are **provided** with an **HTML file** to test your table in the **browser**. 
 
 ## Example One
 
