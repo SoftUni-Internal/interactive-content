@@ -185,7 +185,6 @@ biggerHalf([-1, -10, -4, -7])
 [/tests]
 [/code-task]
 [/slide]
-[/slide]
 
 [slide hideTitle]
 # Includes
@@ -299,5 +298,4 @@ peiceOfPie(["g", "f", "s", "k", "t"], "f", "t")
 [/test]
 [/tests]
 [/code-task]
-[/slide]
 [/slide]
