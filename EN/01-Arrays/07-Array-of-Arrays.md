@@ -105,7 +105,7 @@ The **output** is printed to the console on a single line, separated by space. F
 [tests]
 [test]
 [input]
-diagonalSums([ [ 6 45 ], [ 1 17 ] ])
+diagonalSums([ [ 6, 45 ], [ 1, 17 ] ])
 [/input]
 [output]
 23 46
@@ -121,7 +121,7 @@ diagonalSums([ [10] ])
 [/test]
 [test]
 [input]
-diagonalSums([ [ 54 123 130 63 ], [ 51 181 112 35 ], [ 47 35 110 77 ], [ 14 106 156 117 ] ])
+diagonalSums([ [ 54, 123, 130, 63 ], [ 51, 181, 112, 35 ], [ 47, 35, 110, 77 ], [ 14, 106, 156, 117 ] ])
 [/input]
 [output]
 462 224
@@ -129,7 +129,7 @@ diagonalSums([ [ 54 123 130 63 ], [ 51 181 112 35 ], [ 47 35 110 77 ], [ 14 106 
 [/test]
 [test]
 [input]
-diagonalSums([ [ -8 13 ], [ 22 8 ] ])
+diagonalSums([ [ -8, 13 ], [ 22, 8 ] ])
 [/input]
 [output]
 0 35
@@ -137,7 +137,7 @@ diagonalSums([ [ -8 13 ], [ 22 8 ] ])
 [/test]
 [test open]
 [input]
-diagonalSums([ [ 20 40 ], [ 10 60 ] ])
+diagonalSums([ [ 20, 40 ], [ 10, 60 ] ])
 [/input]
 [output]
 80 50
@@ -145,7 +145,7 @@ diagonalSums([ [ 20 40 ], [ 10 60 ] ])
 [/test]
 [test open]
 [input]
-diagonalSums([ [ 3 5 17 ], [ -1 7 14 ], [ 1 -8 89 ] ])
+diagonalSums([ [ 3, 5, 17 ], [ -1, 7, 14 ], [ 1, -8, 89 ] ])
 [/input]
 [output]
 99 25
