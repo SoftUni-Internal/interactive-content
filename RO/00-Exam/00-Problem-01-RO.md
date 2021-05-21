@@ -55,9 +55,9 @@ Imprimați starea actuală a tuturor țintelor din poligon.
 
 De fiecare dată când Peter se află în dreptul țintei:
 
-* El trage la țință și primește 5 puncte, scăzând valoarea totală a punctelor țintei cu 5
+* El trage la țință și primește 5 puncte, scăzând numărul de puncte ale țintei cu 5
 
-* Dacă ținta valorează mai puțin de 5 puncte, Peter trebuie să ia toate punctele sale și să scadă totalul punctelor țintei la 0
+* Dacă ținta valorează mai puțin de 5 puncte, Peter trebuie să ia toate punctele și să scadă numărul de puncte ale țintei la 0
 
 ## Intrare
 
@@ -67,7 +67,7 @@ De fiecare dată când Peter se află în dreptul țintei:
 
 ## Ieșire
 
-* Imprimați starea fiecărei ținte din poligon, în următorul format:
+* Imprimați starea fiecărei ținte din poligon în următorul format:
 
 "\{**target**\} - \{**target**\} - \{**target**\} ... - \{**target**\}"
 
@@ -82,7 +82,7 @@ De fiecare dată când Peter se află în dreptul țintei:
 
 [hints]
 [hint]
-Mai întâi, Peter primește comanda "**Shoot Left@0@2**", așa că începe să meargă poligon de la "**indicele 0**", cu "**lungimea 2**", și se oprește la "**indicele 3**".
+Mai întâi, Peter primește comanda "**Shoot Left@0@2**", așa că începe să meargă spre stânga de la "**indicele 0**", cu "**lungimea 2**", și se oprește la "**indicele 3**".
 
 El trage la țintă, iar țintele din poligon arată așa: `10 - 10 - 10 - 5 - 10`.
 
@@ -92,7 +92,7 @@ El trage la țintă, iar țintele din poligon arată așa: `10 - 10 - 10 - 5 - 1
 Apoi, Peter primește comanda "**Shoot Right@4@5**" \-\> `10 - 10 - 10 - 5 - 5`.
 [/hint] 
 [hint]
-Tragerea "**Right@6@5**" \-\> "**Indicele 6**" este în afara intervalului, așa că Peter ignoră comanda.
+"**Shoot Right@6@5**" \-\> "**Indicele 6**" este în afara intervalului, așa că Peter ignoră comanda.
 [/hint] 
 [hint]
 "**Reverse**" \-\> Rezultatul final este: `5 - 5 - 10 - 10 - 10`.
@@ -111,7 +111,7 @@ Tragerea "**Right@6@5**" \-\> "**Indicele 6**" este în afara intervalului, așa
 [hint]
 Împărțiți primul șir din intrare cu ajutorul delimitatorului (`|`) și salvați rezultatul într-o matrice.
 
-Parcurgeți elementele din **câmp** și convertiți-le la `Number`.
+Parcurgeți elementele din **matrice** și convertiți-le la `Number`.
 [/hint] 
 [hint]
 Folosiți instrucțiunile condiționale potrivite pentru a gestiona fiecare tip de comandă.
