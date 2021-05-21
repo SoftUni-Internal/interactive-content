@@ -22,44 +22,36 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-*Sunteți pianist și vă place să păstrați o listă a pieselor dvs. preferate de pian.*
-*Creați un program, pentru a vă ajuta să îl organizați și să adăugați, să schimbați, să eliminați piese din el!*
+*Sunteți pianist și vă place să păstrați o listă a pieselor voastre preferate de pian.*
+*Creați un program care să vă ajute să organizați lista și să adăugați, să schimbați sau să eliminați piese din listă!*
 
-Pe prima linie a intrării, veți primi un **integer** "**n**" - reprezentând numărul de piese pe care le veți avea inițial.
+Pe prima linie cu date de intrare veți primi un **număr întreg** "**n**" - reprezentând numărul de piese pe care le veți avea inițial.
 
-Pe următoarele rânduri "**n**", veți primi titlul fiecărei piese, urmat de **compozitorul și cheia**, separate prin "\|" în următorul format:
+Pe următoarele "**n**" rânduri veți primi titlul fiecărei piese, urmat de **compozitor și cheie**, separate prin simbolul "\|" în următorul format:
 
 "\{**piece**}\|\{**composer**\}\|\{**key**\}"
 
-Apoi, veți primi **comenzi diferite**, fiecare pe o nouă linie, separate prin "\|", până când este dată comanda "**Stop**":
+Apoi, veți primi **diferite comenzi**, fiecare pe o nouă linie, separate prin simbolul "\|", până când este dată comanda "**Stop**":
 
-* Comanda "**Add**\|\{**piece**\}\|\{**composer**\}\|\{**key**\}":
-Trebuie să **adăugați piesa și informațiile** despre aceasta la celelalte piese.
+* Comanda "**Add**\|\{**piece**\}\|\{**composer**\}\|\{**key**\}": trebuie să **adăugați piesa și informațiile** despre aceasta în listă
 
-Dacă piesa este deja **în colecție**, ar trebui să tipăriți: 
-"\{**piece**\} **is already in the collection!**"
+Dacă piesa se află deja **în colecție**, trebuie să tipăriți următorul mesaj: "\{**piece**\} **is already in the collection!**".
 
-Dacă piesa **nu se află în colecție**, ar trebui să tipăriți:
-"\{**piece**\} **by** \{**composer**\} **in** \{**key**\} **added to the collection!**"
+Dacă piesa **nu se află în colecție**, trebuie să tipăriți: "\{**piece**\} **by** \{**composer**\} **in** \{**key**\} **added to the collection!**".
 
-* Comanda "**Remove**\|\{**piece**\}":
-Dacă **piesa este în colecție**, trebuie să o eliminați.
+* Comanda "**Remove**\|\{**piece**\}": dacă **piesa se află în colecție**, trebuie să o eliminați.
 
-Apoi, trebuie să imprimați următorul mesaj:
-"**Successfully removed** \{**piece**\}!"
+Apoi, trebuie să imprimați următorul mesaj: "**Successfully removed** \{**piece**\}!".
 
-Dacă **piesa nu se află în colecție**, trebuie să imprimați:
-"**Invalid operation!** \{**piece**\} **does not exist in the collection.**"
+Dacă **piesa nu se află în colecție**, trebuie să imprimați: "**Invalid operation!** \{**piece**\} **does not exist in the collection.**".
 
-* Comanda "**ChangeKey**\|\{**piece**\}\|\{**newKey**\}":
-Dacă **piesa este în colecție**, schimbați cheia cu cea specificată și imprimați:
+* Comanda "**ChangeKey**\|\{**piece**\}\|\{**newKey**\}": 
 
-"**Changed the key of** \{**piece**\} **to** \{**newKey**\}!"
+Dacă **piesa se află în colecție**, schimbați cheia cu cea specificată și imprimați următorul mesaj: "**Changed the key of** \{**piece**\} **to** \{**newKey**\}!".
 
-Dacă **piesa nu se află în colecție**, tipăriți:
-"**Invalid operation!** \{**piece**\} **does not exist in the collection.**"
+Dacă **piesa nu se află în colecție**, tipăriți: "**Invalid operation!** \{**piece**\} **does not exist in the collection.**".
 
-La primirea comenzii "**Stop**", trebuie să imprimați toate piesele din colecție, sortate după **numele lor și după numele compozitorului lor în ordine alfabetică**, în următorul format:
+La primirea comenzii "**Stop**", trebuie să imprimați toate piesele din colecție, ordonate alfabetic după **numele lor și după numele compozitorului lor**, în următorul format:
 
 "\{**piece**\} \-\> **composer:** \{**composer**\}, **Key:** \{**key**\}"
 
@@ -96,24 +88,24 @@ La primirea comenzii "**Stop**", trebuie să imprimați toate piesele din colec�
 După ce primiți **piesele inițiale** și informațiile despre ele, începeți să primiți **comenzi**.
 [/hint] 
 [hint]
-**Primele două** comenzi sunt **adăugarea** unei piese la colecție. 
+**Primele două** comenzi reprezintă **adăugarea** unei piese la colecție. 
 
-Deoarece piesele **nu se află** în colecție, le adăugați.
+Deoarece piesele **nu se află** în colecție, trebuie să le adăugați.
 [/hint] 
 [hint]
-Prin a treia comandă, care este și "**add**", **încercați să adăugați o piesă** care este deja în colecție, astfel încât să **imprimați mesajul corespunzător**, dar nu adăugați bucată.
+Prin a treia comandă, care este "**add**", **încercați să adăugați o piesă** care se află deja în colecție, deci veți **imprima mesajul corespunzător**, dar nu adăugați piesa în colecție.
 [/hint] 
 [hint]
-După aceea, primiți comanda "**remove**" command. 
+După aceea, primiți comanda "**remove**". 
 
 Ultima comandă **necesită schimbarea cheii unei piese**.
 
-Deoarece piesa este **prezentă în colecție**, îi **modificați** cheia.
+Deoarece piesa este **prezentă în colecție**, îi veți **modifica** cheia.
 [/hint] 
 [hint]
 Apoi, primiți comanda "**Stop**".
 
-**Imprimați informațiile despre piese**, ați sortat modul descris mai sus și programul se încheie.
+**Imprimați informațiile despre piese**, ordonate în modul descris mai sus, iar programul se încheie.
 [/hint] 
 [/hints] 
 
