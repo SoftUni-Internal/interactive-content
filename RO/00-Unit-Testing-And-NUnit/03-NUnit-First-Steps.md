@@ -39,7 +39,7 @@ After we have created a blank solution we can right-click on the newly created s
 
 We choose at **Console Application** and the appropriate name for it.
 
-In this case, we will name our solution **Summator**.
+In this case, we will name our solution **ConsoleAppSummator**.
 
 [image assetsSrc="Unit-Testing-NUnit(3).png" /]
 
@@ -133,6 +133,60 @@ Next, we **link** our project to be able to access the **Summator** project.
 
 # Writing The First Test
 
+To write our first test, we will need to create a test method.
+
+```csharp
+[Test]
+public void Test_SumTwoNumbers()
+{
+    var numbers = new int[] {3 , 7}; // here we are passing the numbers that we want to test
+    var actualSum = Summator.Sum(numbers); // This will apply our Sum function and it will sum the two numbers
+    var expectedSum = 10; // correct expected output.
+    Assert.AreEqual(expectedSum, actualSum) // Test if the output from our Sum function is the same as the expectedSum
+}
+
+```
+
+To run the test we need to **right click** -> **Run Test(s)**.
+
+When the test is compiled we can see the result in the **Test Explorer**.
+
+[image assetsSrc="Unit-Testing-NUnit(11).png" /]
+
+We can test the same function **multiple times**.
+
+For example, we can test the function with an empty array.
+
+Let's write a second test and see the following example:
+
+```csharp
+
+public void Test_Summator_EmptyArray() {
+  var nums = new int[] {};
+  var actualSum = Summator.Sum(nums);
+  var expectedSum = 0;
+  Assert.AreEqual(expectedSum, actualSum);
+}
+
+```
+
+Now on running our test will **fail** because our **Summator** function will expect an array.
+
+To be able to run this test, we have to adjust the function.
+
+
+
+```csharp
+int Sum(int[] arr) {
+  int sum = 0;
+  for (int i = 0; i < arr
+    .Length; i++)
+    sum += arr[i];
+  return sum;
+}
+```
+
+Now, if we **re-run** the tests again the tests will **pass** successfully.
 
 
 
