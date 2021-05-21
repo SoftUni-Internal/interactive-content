@@ -186,11 +186,143 @@ As a result, the value of `book.age` is `undefined`.
 [/slide]
 
 [slide hideTitle]
-
 # Problem with Solution: City Record
+[code-task title="City Record" taskId="java-path-js-advanced-objects-and-classes-city-record" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
 
-Content will be added once the document has been revised.
+```
+function cityRecord(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[task-description]
+## Description
+You will receive a city’s **name** (string), **population** (number), and **treasury** (number) as arguments. 
 
+Set them as **properties** of an object and **return** it. 
+
+## Example One
+
+### Input
+
+`'Tortuga', 7000, 15000`
+
+### Output
+
+```
+{ 
+  name: 'Tortuga', 
+  population: 7000, 
+  treasury: 15000 
+} 
+```
+
+## Example Two
+
+### Input
+
+`'Santo Domingo', 12000, 23500`
+
+### Output
+
+```
+{ 
+  name: 'Santo Domingo', 
+  population: 12000, 
+  treasury: 23500 
+} 
+```
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+Tortuga
+7000
+15000
+[/input]
+[output]
+\{
+  name: 'Tortuga',
+  population: 7000,
+  treasury: 15000
+\}
+[/output]
+[/test]
+[test open]
+[input]
+Santo Domingo
+12000
+23500
+[/input]
+[output]
+\{
+  name: 'Santo Domingo',
+  population: 12000,
+  treasury: 23500
+\}
+[/output]
+[/test]
+[test]
+[input]
+Hong Kong
+50000
+45262
+[/input]
+[output]
+\{
+  name: 'Hong Kong',
+  population: 50000,
+  treasury: 45262
+\}
+[/output]
+[/test]
+[test]
+[input]
+California
+75203720
+45121262
+[/input]
+[output]
+\{
+  name: 'California',
+  population: 75203720,
+  treasury: 45121262
+\}
+[/output]
+[/test]
+[test]
+[input]
+Paris
+75203720
+45121262
+[/input]
+[output]
+\{
+  name: 'Paris',
+  population: 75203720,
+  treasury: 45121262
+\}
+[/output]
+[/test]
+[test]
+[input]
+Barcelona
+47297302
+91231262
+[/input]
+[output]
+\{
+  name: 'Barcelona',
+  population: 47297302,
+  treasury: 91231262
+\}
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide hideTitle]
@@ -330,7 +462,7 @@ That is because while they may look the same, they are pointing to different pla
 
 Here, we create an object and assign it to the `bagOne` variable.
 
-This time, instead of writing the object again, we set `bagTwo` to be equal to the value of `bagOne`
+This time, instead of writing the object again, we set `bagTwo` to be equal to the value of `bagOne`.
 
 ```js live
 let bagOne = { 
@@ -356,7 +488,7 @@ As we know already, each object entry is a `key: value` pair.
 
 Тhere are a number of built-in methods in the `Object` prototype that provide a way of **looping through** objects.
 
-## `Object.entries()`
+## Object.entries
 
 The `Object.entries()` method returns an **array** with the **key-value pairs** of **every** object entry:
 
@@ -369,7 +501,7 @@ let cat = {
 console.log(Object.entries(cat));
 ```
 
-## `Object.keys()`
+## Object.keys
 
 `Object.keys()` returns an array holding the keys of all object properties (without the values):
 
@@ -382,7 +514,7 @@ let giraffe = {
 console.log(Object.keys(giraffe));
 ```
 
-## `Object.values()`
+## Object.values
 
 The `Object.values()` method returns an array containg the values of all object properties (not including their keys):
 
@@ -453,10 +585,152 @@ for (const [key, value] of Object.entries(computer)) {
 [/slide]
 
 [slide hideTitle]
-
 # Problem with Solution: Town Population
+[code-task title="Town Population" taskId="java-path-js-advanced-objects-and-classes-town-population" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+```
+function townPopulation(input){
+  // Write your code here
+}
+```
+[/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
+[task-description]
+## Description
+You have been tasked to create a registry for different **towns** and their **population**. 
 
-Content will be added once the document has been revised.
+## Input 
+The **input** comes as an array of strings. 
 
+Each element will contain data for a town and its population in the following format: `{townName} <-> {townPopulation}`
+
+If you receive the same town twice, **you should add** the **given population** to the **current one**. 
+
+## Output 
+As **output**, you should print all the towns and their population. 
+
+## Example One
+
+## Input
+
+`['Bucharest <-> 1830000',`
+`'Vienna <-> 1900000',` 
+`'New York <-> 10000000',`
+`'Washington <-> 2345000',`
+`'Las Vegas <-> 1000000']`
+
+## Output
+
+**Bucharest : 1830000** 
+**Vienna : 1900000** 
+**New York : 10000000** 
+**Washington : 2345000** 
+**Las Vegas : 1000000** 
+
+
+## Example Two
+
+## Input
+
+`['Istanbul <-> 100000',` 
+`'Hong Kong <-> 2100004',` 
+`'Jerusalem <-> 2352344', `
+`'Mexico City <-> 23401925',` 
+`'Istanbul <-> 1000']` 
+
+## Output
+
+**Istanbul : 101000** 
+**Hong Kong : 2100004** 
+**Jerusalem : 2352344** 
+**Mexico City : 23401925** 
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+Bucharest \<-\> 1830000
+Vienna \<-\> 1900000
+New York \<-\> 10000000
+Washington \<-\> 2345000
+Las Vegas \<-\> 1000000
+[/input]
+[output]
+Bucharest : 1830000
+Vienna : 1900000
+New York : 10000000
+Washington : 2345000
+Las Vegas : 1000000
+[/output]
+[/test]
+[test open]
+[input]
+Istanbul \<-\> 100000
+Hong Kong \<-\> 2100004
+Jerusalem \<-\> 2352344
+Mexico City \<-\> 23401925
+Istanbul \<-\> 1000
+[/input]
+[output]
+Istanbul : 101000
+Hong Kong : 2100004
+Jerusalem : 2352344
+Mexico City : 23401925
+[/output]
+[/test]
+[test]
+[input]
+CreativityDead \<-\> 1234
+CreativityDead \<-\> 1111
+CreativityDead \<-\> 1111
+CreativityDead \<-\> 1111
+CreativityDead \<-\> 1111
+CreativityDead \<-\> 1111
+ImDead \<-\> 0
+[/input]
+[output]
+CreativityDead : 6789
+ImDead : 0
+[/output]
+[/test]
+[test]
+[input]
+Test \<-\> 0
+Out \<-\> 0
+Txt \<-\> 5
+[/input]
+[output]
+Test : 0
+Out : 0
+Txt : 5
+[/output]
+[/test]
+[test]
+[input]
+Silent Hill \<-\> 0
+Tin City \<-\> 0
+King Island \<-\> 0
+Kern \<-\> 0
+Three Saints Bay \<-\> 1
+[/input]
+[output]
+Silent Hill : 0
+Tin City : 0
+King Island : 0
+Kern : 0
+Three Saints Bay : 1
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
-
