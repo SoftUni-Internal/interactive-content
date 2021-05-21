@@ -88,6 +88,113 @@ In this example when **-2 is passed** to the `slice()`, it takes the **last** "n
 
 [slide hideTitle]
 # Problem: Bigger Half
+
+[code-task title="Bigger Half" taskId="java-path-js-advanced-arrays-bigger-half" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```
+function biggerHalf(input){
+  // Write your code here
+}
+
+```
+[/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
+[task-description]
+
+You are given an array of numbers. 
+
+Write a JavaScript function that **sorts** the array in **ascending order** and returns a new array containing only the **second half** of the input. 
+
+If there is an odd number of elements in the input, always take the bigger half. 
+
+For example, if the input array contains 4 elements, the new array should have 2 elements. 
+
+If the input array has a length of 5, the result should have 3 elements. 
+
+The **input** comes as **array of number elements**. 
+
+The **output** is the **return** value of the function and should be an **array of numbers**. 
+
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|biggerHalf([4, 7, 2, 5]) | [5, 7] |
+|biggerHalf([3, 19, 14, 7, 2, 19, 6]) | [7, 14, 19, 19]  |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+biggerHalf([4, 7, 2, 5])
+[/input]
+[output]
+5
+7
+[/output]
+[/test]
+[test open]
+[input]
+biggerHalf([3, 19, 14, 7, 2, 19, 6])
+[/input]
+[output]
+7
+14
+19
+19
+[/output]
+[/test]
+[test]
+[input]
+biggerHalf([1, 2, 3])
+[/input]
+[output]
+2
+3
+[/output]
+[/test]
+[test]
+[input]
+biggerHalf([53, 5, 43, 7])
+[/input]
+[output]
+43
+53
+[/output]
+[/test]
+[test]
+[input]
+biggerHalf([100, 90, 90, 5, 67, 4, 3])
+[/input]
+[output]
+67
+90
+90
+100
+[/output]
+[/test]
+[test]
+[input]
+biggerHalf([-1, -10, -4, -7])
+[/input]
+[output]
+-4
+-1
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
 [/slide]
 
 [slide hideTitle]
@@ -109,4 +216,113 @@ console.log(isJohnIncluded);
 
 [slide hideTitle]
 # Problem: Piece of Pie
+
+[code-task title="Piece of Pie" taskId="java-path-js-advanced-arrays-Piece-of-Pie" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```
+function peiceOfPie(input, startSection, endSection){
+  // Write your code here
+}
+
+```
+[/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
+[task-description]
+
+Write a function that receives **three parameters** - an **array** of pie flavors as strings and two target flavors as **strings**. 
+
+The result should be a new array - the section of the original array, starting at the first flavor parameter and ending at (including) the second flavor parameter. 
+
+The **input** comes as **three arguments**: 
+
+- An **array of strings**, representing pie flavors 
+
+- **Two more strings**, representing the start and end of the section, respectively 
+
+The **output** is the **return** value of the function and should be an **array of strings**. 
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|peiceOfPie(['Pumpkin Pie', 'Key Lime Pie', 'Cherry Pie', 'Lemon Meringue Pie', 'Sugar Cream Pie'], 'Key Lime Pie', 'Lemon Meringue Pie') | ['Key Lime Pie', 'Cherry Pie', 'Lemon Meringue Pie'] |
+|peiceOfPie(['Apple Crisp', 'Mississippi Mud Pie', 'Pot Pie', 'Steak and Cheese Pie', 'Butter Chicken Pie', 'Smoked Fish Pie'], 'Pot Pie', 'Smoked Fish Pie' ) | ['Pot Pie', 'Steak and Cheese Pie', 'Butter Chicken Pie', 'Smoked Fish Pie']  |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+peiceOfPie(["Pumpkin Pie", "Key Lime Pie", "Cherry Pie", "Lemon Meringue Pie", "Sugar Cream Pie"], "Key Lime Pie", "Lemon Meringue Pie")
+[/input]
+[output]
+Key Lime Pie
+Cherry Pie
+Lemon Meringue Pie
+[/output]
+[/test]
+[test open]
+[input]
+peiceOfPie(["Apple Crisp", "Mississippi Mud Pie", "Pot Pie", "Steak and Cheese Pie", "Butter Chicken Pie", "Smoked Fish Pie"], "Pot Pie", "Smoked Fish Pie")
+[/input]
+[output]
+Pot Pie
+Steak and Cheese Pie
+Butter Chicken Pie
+Smoked Fish Pie
+[/output]
+[/test]
+[test]
+[input]
+peiceOfPie(["a", "b", "c", "d"], "a", "b")
+[/input]
+[output]
+a
+b
+[/output]
+[/test]
+[test]
+[input]
+peiceOfPie(["a", "b", "c", "d"], "b", "d")
+[/input]
+[output]
+b
+c
+d
+[/output]
+[/test]
+[test]
+[input]
+peiceOfPie(["f", "f", "s", "q", "r", "g"], "f", "r")
+[/input]
+[output]
+f
+f
+s
+q
+r
+[/output]
+[/test]
+[test]
+[input]
+peiceOfPie(["g", "f", "s", "k", "t"\], "f", "t")
+[/input]
+[output]
+f
+s
+k
+t
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
 [/slide]
