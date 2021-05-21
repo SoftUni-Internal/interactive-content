@@ -119,7 +119,81 @@ You can read more about the "map" in mathematics [here](https://en.wikipedia.org
 [/slide]
 
 [slide hideTitle]
-# Problem Process Odd Numbers
+# Problem: Process Odd Numbers
+
+[code-task title="Process Odd Numbers" taskId="java-path-js-advanced-arrays-Process-Odd-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-editor language=javascript]
+
+```
+function processOddNumbers(input){
+  // Write your code here
+}
+
+```
+[/code-editor]
+[code-adapter]
+```
+function adapter(input, code) {
+    let inputParams = /\((.+)\)$/.exec(input)[1];
+    inputParams = eval(`[${inputParams}]`);
+    return code(...inputParams);
+}
+```
+[/code-adapter]
+[task-description]
+
+You are given an array of numbers. 
+
+Write a JS function that prints the elements at odd positions, doubled and in reversed order. 
+
+The **input** comes as **array of number elements**. 
+
+The **output** is printed to the console on a single line, separated by space. 
+
+## Examples
+| **Input** | **Output** |
+| --- | --- |
+|processOddNumbers([ 10, 15, 20, 25 ]) | 50 30  |
+|processOddNumbers([ 3, 0, 10, 4, 7, 3 ]) | 6 8 0  |
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+processOddNumbers([ 100, 20, -2, -3, 400, 2000, 5 ])
+[/input]
+[output]
+4000 -6 40
+[/output]
+[/test]
+[test]
+[input]
+processOddNumbers([ 3.40, 2.55, 9.55, 8.12, 12.73, -3.2, -5.4, 13.44, 0, 0, 1.5 ])
+[/input]
+[output]
+0 26.88 -6.4 16.24 5.1
+[/output]
+[/test]
+[test]
+[input]
+processOddNumbers([ 10, 15, 20, 25 ])
+[/input]
+[output]
+50 30
+[/output]
+[/test]
+[test]
+[input]
+processOddNumbers([ 3, 0, 10, 4, 7, 3 ])
+[/input]
+[output]
+6 8 0
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
 [/slide]
 
 [slide hideTitle]
