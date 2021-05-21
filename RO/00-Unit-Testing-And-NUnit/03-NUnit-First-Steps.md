@@ -60,7 +60,7 @@ Choose **Class** and name it **Summator**.
 
 Let's write a very simple function that will **sum** two numbers.
 
-```Csharp
+```csharp
 public static int Sum(int[] arr) {
   int sum = arr[0];
   for (int i = 1; i < arr.Length; i++)
