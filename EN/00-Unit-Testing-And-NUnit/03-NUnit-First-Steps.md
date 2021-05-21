@@ -33,7 +33,7 @@ We can imagine the "blank solution" as a package that will hold our project insi
 
 [image assetsSrc="Unit-Testing-NUnit(2).png" /]
 
-After we have created a blank solution we can right click on the newly created solution and press **Add** -> **New project** 
+After we have created a blank solution we can right click on the newly created solution and press **Add** -> **New Project** 
 
 [image assetsSrc="Unit-Testing-NUnit(4).png" /]
 
@@ -44,6 +44,18 @@ In this case we will name our solution **Summator**.
 [image assetsSrc="Unit-Testing-NUnit(3).png" /]
 
 
+[/slide]
 
+[slide hideTitle]
+
+# Creating a Class for Testing
+
+Now, lets create a class called "**Summator**".
+
+Right click on the **Solution** -> **Add** -> **New Item**
+
+Choose **Class** and name it **Summator**.
+
+[image assetsSrc="Unit-Testing-NUnit(5).png" /]
 
 [/slide]
