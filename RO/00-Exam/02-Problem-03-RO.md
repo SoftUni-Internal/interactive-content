@@ -22,12 +22,11 @@ function adapter(input, code) {
 [task-description]
 # Descriere
 
-*Sunteți pianist și vă place să păstrați o listă a pieselor voastre preferate de pian.*
-*Creați un program care să vă ajute să organizați lista și să adăugați, să schimbați sau să eliminați piese din listă!*
+*Sunteți pianist și vă place să păstrați o listă a pieselor voastre preferate de pian.* *Creați un program care să vă ajute să organizați lista și să adăugați, să schimbați sau să eliminați piese din listă!*
 
 Pe prima linie cu date de intrare veți primi un **număr întreg** "**n**" - reprezentând numărul de piese pe care le veți avea inițial.
 
-Pe următoarele "**n**" rânduri veți primi titlul fiecărei piese, urmat de **compozitor și cheie**, separate prin simbolul "\|" în următorul format:
+Pe următoarele "**n**" rânduri veți primi titlul fiecărei piese, urmat de **compozitor și cheie**, separate prin simbolul "\|", în următorul format:
 
 "\{**piece**}\|\{**composer**\}\|\{**key**\}"
 
@@ -39,7 +38,7 @@ Dacă piesa se află deja **în colecție**, trebuie să tipăriți următorul m
 
 Dacă piesa **nu se află în colecție**, trebuie să tipăriți: "\{**piece**\} **by** \{**composer**\} **in** \{**key**\} **added to the collection!**".
 
-* Comanda "**Remove**\|\{**piece**\}": dacă **piesa se află în colecție**, trebuie să o eliminați.
+* Comanda "**Remove**\|\{**piece**\}": dacă **piesa se află în colecție**, trebuie să o eliminați
 
 Apoi, trebuie să imprimați următorul mesaj: "**Successfully removed** \{**piece**\}!".
 
@@ -67,7 +66,7 @@ La primirea comenzii "**Stop**", trebuie să imprimați toate piesele din colec�
 
 ## Ieșire
 
-* Toate mesajele de ieșire și formatele corespunzătoare sunt descrise în descrierea problemei
+* Toate mesajele de ieșire și formatele corespunzătoare sunt specificate în descrierea problemei
 
 ## Exemplul Unu
 
@@ -105,7 +104,7 @@ Deoarece piesa este **prezentă în colecție**, îi veți **modifica** cheia.
 [hint]
 Apoi, primiți comanda "**Stop**".
 
-**Imprimați informațiile despre piese**, ordonate în modul descris mai sus, iar programul se încheie.
+**Imprimați informațiile despre piese**, ordonate în modul descris mai sus, după care programul se oprește.
 [/hint] 
 [/hints] 
 
