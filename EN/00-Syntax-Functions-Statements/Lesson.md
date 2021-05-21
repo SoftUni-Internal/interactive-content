@@ -1,1 +1,1 @@
-# Syntax, Functions, Statements - Coming Soon
+# Syntax, Functions, Statements
