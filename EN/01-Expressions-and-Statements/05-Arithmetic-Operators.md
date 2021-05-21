@@ -42,7 +42,7 @@ console.log(a * b);
 
 ## Dividing Numbers
 
-**Dividing** numbers are done using the `/` operator.
+**Dividing** numbers is done using the `/` operator.
 
 The number type represents **both** integer and floating-point numbers. There is **no integer division by default**.
 * If you do this
