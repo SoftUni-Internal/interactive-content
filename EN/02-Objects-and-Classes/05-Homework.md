@@ -166,7 +166,7 @@ console.log(JSON.stringify(result));
 [tests]
 [test open]
 [input]
-heroicInventory('Isacc / 25 / Apple, GravityGun', 'Derek / 12 / BarrelVest, DestructionSword', 'Hes / 1 / Desolator, Sentinel, Antara')
+heroicInventory(['Isacc / 25 / Apple, GravityGun', 'Derek / 12 / BarrelVest, DestructionSword', 'Hes / 1 / Desolator, Sentinel, Antara'])
 [/input]
 [output]
 \[\{"name":"Isacc","level":25,"items":\["Apple","GravityGun"\]\},\{"name":"Derek","level":12,"items":\["BarrelVest","DestructionSword"\]\},\{"name":"Hes","level":1,"items":\["Desolator","Sentinel","Antara"\]\}\]
@@ -174,7 +174,7 @@ heroicInventory('Isacc / 25 / Apple, GravityGun', 'Derek / 12 / BarrelVest, Dest
 [/test]
 [test open]
 [input]
-heroicInventory('Jake / 1000 / Gauss, HolidayGrenade')
+heroicInventory(['Jake / 1000 / Gauss, HolidayGrenade'])
 [/input]
 [output]
 \[\{"name":"Jake","level":1000,"items":\["Gauss","HolidayGrenade"\]\}\]
@@ -182,7 +182,7 @@ heroicInventory('Jake / 1000 / Gauss, HolidayGrenade')
 [/test]
 [test]
 [input]
-heroicInventory('Kayden / 24 / Apple, Orange, Grapefruit', 'Joseph / 50 / AK47, M4A1, ES21, Deagle', 'Chris / 10 / Knife', 'Eve / 23 / Gummy, Depathy')
+heroicInventory(['Kayden / 24 / Apple, Orange, Grapefruit', 'Joseph / 50 / AK47, M4A1, ES21, Deagle', 'Chris / 10 / Knife', 'Eve / 23 / Gummy, Depathy'])
 [/input]
 [output]
 \[\{"name":"Kayden","level":24,"items":\["Apple","Orange","Grapefruit"\]\},\{"name":"Joseph","level":50,"items":\["AK47","M4A1","ES21","Deagle"\]\},\{"name":"Chris","level":10,"items":\["Knife"\]\},\{"name":"Eve","level":23,"items":\["Gummy","Depathy"\]\}\]
@@ -190,7 +190,7 @@ heroicInventory('Kayden / 24 / Apple, Orange, Grapefruit', 'Joseph / 50 / AK47, 
 [/test]
 [test]
 [input]
-heroicInventory('EmptyOne / 200', 'Anderson / 250 / StrikeForge, HeavensGuard', 'Hendricksen / 300 / DemonHeart, DemonSoul, DemonEdge')
+heroicInventory(['EmptyOne / 200', 'Anderson / 250 / StrikeForge, HeavensGuard', 'Hendricksen / 300 / DemonHeart, DemonSoul, DemonEdge'])
 [/input]
 [output]
 \[\{"name":"EmptyOne","level":200,"items":\[\]\},\{"name":"Anderson","level":250,"items":\["StrikeForge","HeavensGuard"\]\},\{"name":"Hendricksen","level":300,"items":\["DemonHeart","DemonSoul","DemonEdge"\]\}\]
@@ -198,7 +198,7 @@ heroicInventory('EmptyOne / 200', 'Anderson / 250 / StrikeForge, HeavensGuard', 
 [/test]
 [test]
 [input]
-heroicInventory('Test / 3 / In, Txt')
+heroicInventory(['Test / 3 / In, Txt'])
 [/input]
 [output]
 \[\{"name":"Test","level":3,"items":\["In","Txt"\]\}\]
@@ -206,7 +206,7 @@ heroicInventory('Test / 3 / In, Txt')
 [/test]
 [test]
 [input]
-heroicInventory('Destroyer / 25 / DivineRapier, AghanimScepter, Dagon', 'Geomancer / 25 / AghanimScepter, VladmirsOffering, Mekanism', 'Juggernaut / 25 / AghanimScepter, Desolator, BattleFury', 'Earthshaker / 20 / AghanimScepter, RefresherOrb, BlinkDagger', 'Chieftain / 20 / AghanimScepter, BlinkDagger, Battlefury, TravelBoots, DrumOfEndurance', 'Invoker / 25 / AghanimScepter, Satanic, EyeOfSkadi, Butterfly', 'NogoTheNextLevel / 150 / DomoSweather')
+heroicInventory(['Destroyer / 25 / DivineRapier, AghanimScepter, Dagon', 'Geomancer / 25 / AghanimScepter, VladmirsOffering, Mekanism', 'Juggernaut / 25 / AghanimScepter, Desolator, BattleFury', 'Earthshaker / 20 / AghanimScepter, RefresherOrb, BlinkDagger', 'Chieftain / 20 / AghanimScepter, BlinkDagger, Battlefury, TravelBoots, DrumOfEndurance', 'Invoker / 25 / AghanimScepter, Satanic, EyeOfSkadi, Butterfly', 'NogoTheNextLevel / 150 / DomoSweather'])
 [/input]
 [output]
 \[\{"name":"Destroyer","level":25,"items":\["DivineRapier","AghanimScepter","Dagon"\]\},\{"name":"Geomancer","level":25,"items":\["AghanimScepter","VladmirsOffering","Mekanism"\]\},\{"name":"Juggernaut","level":25,"items":\["AghanimScepter","Desolator","BattleFury"\]\},\{"name":"Earthshaker","level":20,"items":\["AghanimScepter","RefresherOrb","BlinkDagger"\]\},\{"name":"Chieftain","level":20,"items":\["AghanimScepter","BlinkDagger","Battlefury","TravelBoots","DrumOfEndurance"\]\},\{"name":"Invoker","level":25,"items":\["AghanimScepter","Satanic","EyeOfSkadi","Butterfly"\]\},\{"name":"NogoTheNextLevel","level":150,"items":\["DomoSweather"\]\}\]
@@ -214,7 +214,7 @@ heroicInventory('Destroyer / 25 / DivineRapier, AghanimScepter, Dagon', 'Geomanc
 [/test]
 [test]
 [input]
-heroicInventory(What / 1 / The, Fuck)
+heroicInventory(['What / 1 / The, Fuck'])
 [/input]
 [output]
 \[\{"name":"What","level":1,"items":\["The","Fuck"\]\}\]
