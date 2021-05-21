@@ -175,7 +175,7 @@ processOddNumbers([ 3.40, 2.55, 9.55, 8.12, 12.73, -3.2, -5.4, 13.44, 0, 0, 1.5 
 0 26.88 -6.4 16.24 5.1
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 processOddNumbers([ 10, 15, 20, 25 ])
 [/input]
@@ -183,7 +183,7 @@ processOddNumbers([ 10, 15, 20, 25 ])
 50 30
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 processOddNumbers([ 3, 0, 10, 4, 7, 3 ])
 [/input]
