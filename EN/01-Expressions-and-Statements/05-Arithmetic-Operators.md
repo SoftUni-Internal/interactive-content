@@ -9,7 +9,7 @@ Let us examine the basic **arithmetic operations** in programming.
 
 We can add, subtract, multiply and divide numbers using the operators `+`, `-`, `*`, and `/`.
 
-## Summing up Numbers
+## Summing Numbers
 We can **sum** up numbers using the `+` operator:
 ```js live
 let a = 5;
