@@ -324,7 +324,7 @@ class Person {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Create a **class** that represents a personal record. 
 
 It has the following properties, all set from the constructor: 
@@ -512,7 +512,7 @@ function getPeople() {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Write a function that returns an array of `Person` instances. 
 

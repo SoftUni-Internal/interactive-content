@@ -191,7 +191,7 @@ As a result, the value of `book.age` is `undefined`.
 [code-editor language=javascript]
 ```
 function cityRecord(name, population, treasury){
-  // Write your code here
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -205,51 +205,29 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
+# Description
 You will receive a city’s **name** (string), **population** (number), and **treasury** (number) as arguments. 
 
 Set them as **properties** of an object and **return** it. 
 
 ## Example One
 
-### Input
-
-`'Tortuga', 7000, 15000`
-
-### Output
-
-```
-{ 
-  name: 'Tortuga', 
-  population: 7000, 
-  treasury: 15000 
-} 
-```
+|**Input**|**Output**|
+|---|---|
+| cityRecord('Tortuga', 7000, 15000) | \{ name: 'Tortuga', population: 7000, treasury: 15000 \} |
 
 ## Example Two
 
-### Input
-
-`'Santo Domingo', 12000, 23500`
-
-### Output
-
-```
-{ 
-  name: 'Santo Domingo', 
-  population: 12000, 
-  treasury: 23500 
-} 
-```
+|**Input**|**Output**|
+|---|---|
+| cityRecord('Santo Domingo', 12000, 23500) | \{ name: 'Santo Domingo', population: 12000, treasury: 23500 \} |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-Tortuga
-7000
-15000
+cityRecord('Tortuga', 7000, 15000)
 [/input]
 [output]
 \{
@@ -261,9 +239,7 @@ Tortuga
 [/test]
 [test open]
 [input]
-Santo Domingo
-12000
-23500
+cityRecord('Santo Domingo', 12000, 23500)
 [/input]
 [output]
 \{
@@ -275,9 +251,7 @@ Santo Domingo
 [/test]
 [test]
 [input]
-Hong Kong
-50000
-45262
+cityRecord('Hong Kong', 50000, 45262)
 [/input]
 [output]
 \{
@@ -289,9 +263,7 @@ Hong Kong
 [/test]
 [test]
 [input]
-California
-75203720
-45121262
+cityRecord('California', 75203720, 45121262)
 [/input]
 [output]
 \{
@@ -303,9 +275,7 @@ California
 [/test]
 [test]
 [input]
-Paris
-75203720
-45121262
+cityRecord('Paris', 75203720, 45121262)
 [/input]
 [output]
 \{
@@ -317,9 +287,7 @@ Paris
 [/test]
 [test]
 [input]
-Barcelona
-47297302
-91231262
+cityRecord('Barcelona', 47297302, 91231262)
 [/input]
 [output]
 \{
@@ -597,8 +565,8 @@ for (const [key, value] of Object.entries(computer)) {
 [code-task title="Town Population" taskId="java-path-js-advanced-objects-and-classes-town-population" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function townPopulation(input){
-  // Write your code here
+function townPopulation(townData){
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -612,7 +580,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
+# Description
 You have been tasked to create a registry for different **towns** and their **population**. 
 
 ## Input 
@@ -627,51 +595,29 @@ As **output**, you should print all the towns and their population.
 
 ## Example One
 
-## Input
-
-`['Bucharest <-> 1830000',`
-`'Vienna <-> 1900000',` 
-`'New York <-> 10000000',`
-`'Washington <-> 2345000',`
-`'Las Vegas <-> 1000000']`
-
-## Output
-
-**Bucharest : 1830000** 
-**Vienna : 1900000** 
-**New York : 10000000** 
-**Washington : 2345000** 
-**Las Vegas : 1000000** 
-
+|**Input**|**Output**|
+|---|---|
+|townPopulation(\['Bucharest \<-\> 1830000', 'Vienna \<-\> 1900000', 'New York \<-\> 10000000', 'Washington \<-\> 2345000', 'Las Vegas \<-\> 1000000'\])| Bucharest : 1830000 |
+| | Vienna : 1900000 |
+| | New York : 10000000 |
+| | Washington : 2345000 |
+| | Las Vegas : 1000000 |
 
 ## Example Two
 
-## Input
-
-`['Istanbul <-> 100000',` 
-`'Hong Kong <-> 2100004',` 
-`'Jerusalem <-> 2352344', `
-`'Mexico City <-> 23401925',` 
-`'Istanbul <-> 1000']` 
-
-## Output
-
-**Istanbul : 101000** 
-**Hong Kong : 2100004** 
-**Jerusalem : 2352344** 
-**Mexico City : 23401925** 
-
+|**Input**|**Output**|
+|---|---|
+|townPopulation(\['Istanbul \<-\> 100000', 'Hong Kong \<-\> 2100004', 'Jerusalem \<-\> 2352344', 'Mexico City \<-\> 23401925', 'Istanbul \<-\> 1000'\])| Istanbul : 101000 |
+| | Hong Kong : 2100004 |
+| | Jerusalem : 2352344 |
+| | Mexico City : 23401925 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-Bucharest \<-\> 1830000
-Vienna \<-\> 1900000
-New York \<-\> 10000000
-Washington \<-\> 2345000
-Las Vegas \<-\> 1000000
+townPopulation(['Bucharest \<-\> 1830000', 'Vienna \<-\> 1900000', 'New York \<-\> 10000000', 'Washington \<-\> 2345000', 'Las Vegas \<-\> 1000000'])
 [/input]
 [output]
 Bucharest : 1830000
@@ -683,11 +629,7 @@ Las Vegas : 1000000
 [/test]
 [test open]
 [input]
-Istanbul \<-\> 100000
-Hong Kong \<-\> 2100004
-Jerusalem \<-\> 2352344
-Mexico City \<-\> 23401925
-Istanbul \<-\> 1000
+townPopulation(['Istanbul \<-\> 100000', 'Hong Kong \<-\> 2100004', 'Jerusalem \<-\> 2352344', 'Mexico City \<-\> 23401925', 'Istanbul \<-\> 1000'])
 [/input]
 [output]
 Istanbul : 101000
@@ -698,13 +640,7 @@ Mexico City : 23401925
 [/test]
 [test]
 [input]
-CreativityDead \<-\> 1234
-CreativityDead \<-\> 1111
-CreativityDead \<-\> 1111
-CreativityDead \<-\> 1111
-CreativityDead \<-\> 1111
-CreativityDead \<-\> 1111
-ImDead \<-\> 0
+townPopulation(['CreativityDead \<-\> 1234', 'CreativityDead \<-\> 1111', 'CreativityDead \<-\> 1111', 'CreativityDead \<-\> 1111', 'CreativityDead \<-\> 1111', 'CreativityDead \<-\> 1111', 'ImDead \<-\> 0'])
 [/input]
 [output]
 CreativityDead : 6789
@@ -713,9 +649,7 @@ ImDead : 0
 [/test]
 [test]
 [input]
-Test \<-\> 0
-Out \<-\> 0
-Txt \<-\> 5
+townPopulation(['Test \<-\> 0', 'Out \<-\> 0', 'Txt \<-\> 5'])
 [/input]
 [output]
 Test : 0
@@ -725,11 +659,7 @@ Txt : 5
 [/test]
 [test]
 [input]
-Silent Hill \<-\> 0
-Tin City \<-\> 0
-King Island \<-\> 0
-Kern \<-\> 0
-Three Saints Bay \<-\> 1
+townPopulation(['Silent Hill \<-\> 0', 'Tin City \<-\> 0', 'King Island \<-\> 0', 'Kern \<-\> 0', 'Three Saints Bay \<-\> 1'])
 [/input]
 [output]
 Silent Hill : 0

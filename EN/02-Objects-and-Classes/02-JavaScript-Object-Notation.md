@@ -109,8 +109,8 @@ As evident by the output, `stringify` returns a ready for transfer **JSON** stri
 [code-task title="From JSON to HTML Table" taskId="java-path-js-advanced-objects-and-classes-from-json-to-html-table" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function convertToHtml(arr){
-  // Write your code here
+function fromJSONToHTMLTable(studentData){
+    // Write your code here
 }
 ```
 [/code-editor]
@@ -124,11 +124,9 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
+# Description
 
-**Download the resources for this task** [here]().
-
-You’re tasked with creating an HTML table of students and their scores. 
+You are tasked with creating an HTML table of students and their scores. 
 
 You will receive a single string representing an **array of objects**. 
 
@@ -146,30 +144,62 @@ The **output** should be printed to the console – for each **entry row** in th
 Object’s **keys** will always be the **same**. Check more information for the **HTML Entity** [here](https://developer.mozilla.org/en-US/docs/Glossary/Entity). 
 
 ## HTML 
-You are **provided** with an **HTML file** to test your table in the **browser**.
-
-
-## Example One
-
-### Input
-
-`['[{"Name":"Tomatoes & Chips", "Price":2.35}, {"Name":"J&B Chocolate", "Price":0.96}]']`
-
-### Output
+You are **provided** with an **HTML file** to test your table in the **browser**:
 
 ```html
-<table> 
-   <tr><th>Name</th><th>Price</th></tr> 
-   <tr><td>Tomatoes &amp; Chips</td><td>2.35</td></tr> 
-   <tr><td>J&amp;B Chocolate</td><td>0.96</td></tr> 
-</table> 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>FromJSONToHTMLTable</title>
+  <style>
+    table,
+    th {
+      border: groove;
+      border-collapse: collapse;
+    }
+
+    td {
+      border: 1px solid black;
+    }
+
+    td,
+    th {
+      padding: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrapper">
+  </div>
+  <script>
+    function fromJSONToHTMLTable(studentData) {
+      // Write your code here
+    }
+    window.onload = function () {
+      let container = 
+        document.getElementById('wrapper');
+      container.innerHTML = 
+        fromJSONToHTMLTable(['input goes here']);
+    };
+  </script>
+</body>
+
+</html>
 ```
 
-## Example Two
+## Submission
+
+Submit **only** the `fromJSONToHTMLTable` function.
+
+
+## Example
 
 ### Input
 
-`['[{"Name":"Peter <div>-a","Age":20,"City":"London"}, {"Name":"George","Age":18,"City":"Liverpool"}, {"Name":"Tom","Age":18,"City":"Manchester"}]']`
+`fromJSONToHTMLTable('[{"Name":"Peter <div>-a","Age":20,"City":"London"}, {"Name":"George","Age":18,"City":"Liverpool"}, {"Name":"Tom","Age":18,"City":"Manchester"}]')`
 
 ### Output
 
@@ -187,19 +217,7 @@ You are **provided** with an **HTML file** to test your table in the **browser**
 [tests]
 [test open]
 [input]
-\[\{"Name":"Tomatoes & Chips","Price":2.35\},\{"Name":"J&B Chocolate","Price":0.96\}\]
-[/input]
-[output]
-\<table\>
-   \<tr\>\<th\>Name\</th\>\<th\>Price\</th\>\</tr\>
-   \<tr\>\<td\>Tomatoes &amp; Chips\</td\>\<td\>2.35\</td\>\</tr\>
-   \<tr\>\<td\>J&amp;B Chocolate\</td\>\<td\>0.96\</td\>\</tr\>
-\</table\>
-[/output]
-[/test]
-[test open]
-[input]
-\[\{"Name":"Peter \<div\>-a","Age":20,"City":"London"\},\{"Name":"George","Age":18,"City":"Liverpool"\},\{"Name":"Tom","Age":18,"City":"Manchester"\}\]
+fromJSONToHTMLTable('\[\{"Name":"Peter \<div\>-a","Age":20,"City":"London"\},\{"Name":"George","Age":18,"City":"Liverpool"\},\{"Name":"Tom","Age":18,"City":"Manchester"\}\]')
 [/input]
 [output]
 \<table\>
@@ -212,7 +230,19 @@ You are **provided** with an **HTML file** to test your table in the **browser**
 [/test]
 [test]
 [input]
-\[\{"X":5,"Y":7\},\{"X":2,"Y":4\},\{"X":-5,"Y":13\},\{"X":4.44,"Y":8\},\{"X":-10,"Y":-120.12\}\]
+fromJSONToHTMLTable('\[\{"Name":"Tomatoes & Chips","Price":2.35\},\{"Name":"J&B Chocolate","Price":0.96\}\]')
+[/input]
+[output]
+\<table\>
+   \<tr\>\<th\>Name\</th\>\<th\>Price\</th\>\</tr\>
+   \<tr\>\<td\>Tomatoes &amp; Chips\</td\>\<td\>2.35\</td\>\</tr\>
+   \<tr\>\<td\>J&amp;B Chocolate\</td\>\<td\>0.96\</td\>\</tr\>
+\</table\>
+[/output]
+[/test]
+[test]
+[input]
+fromJSONToHTMLTable('\[\{"X":5,"Y":7\},\{"X":2,"Y":4\},\{"X":-5,"Y":13\},\{"X":4.44,"Y":8\},\{"X":-10,"Y":-120.12\}\]')
 [/input]
 [output]
 \<table\>
@@ -227,7 +257,7 @@ You are **provided** with an **HTML file** to test your table in the **browser**
 [/test]
 [test]
 [input]
-\[\{"Name":"\<script\>alert('Hacked');\</script\>","Age":20,"City":"'Vinkel Town' Pernik & Co."\}\]
+fromJSONToHTMLTable('\[\{"Name":"\<script\>alert('Hacked');\</script\>","Age":20,"City":"'Vinkel Town' Pernik & Co."\}\]')
 [/input]
 [output]
 \<table\>
