@@ -335,10 +335,12 @@ Create a **class** that represents a personal record.
 
 It has the following properties, all set from the constructor: 
 
-- `firstName` - **String**
-- `lastName` - **String**
+- `fName` - **String**
+- `lName` - **String**
 - `age` - **Number**
 - `email` - **String**
+
+**Keep the names of the properties the same as above.**
 
 It also has a method called `toString()`, which prints a summary of the information. 
 
@@ -350,7 +352,7 @@ The constructor function will receive valid parameters.
 ## Output 
 The `toString()` method should return a string in the following format: 
 
-`{firstName} {lastName} (age: {age}, email: {email})`
+`{fName} {lName} (age: {age}, email: {email})`
 
 Submit the class definition as it is, **without** wrapping it in any function. 
 
@@ -359,7 +361,8 @@ Submit the class definition as it is, **without** wrapping it in any function.
 ### Sample Input 
 
 ```js
-let person = new Person('Anna', 'Simpson', 22, 'anna@yahoo.com'); 
+let person = new Person('Anna', 'Simpson',
+  22, 'anna@yahoo.com'); 
 
 console.log(person.toString()); 
 ```
@@ -377,7 +380,7 @@ Anna Simpson (age: 22, email: anna@yahoo.com)
 [input]
 let Person = result;
 
-let person = new Person("Anna", "Simpson", 18, "anna@yahoo.com");
+let person = new Person("Anna", "Simpson", 22, "anna@yahoo.com");
 let str = person.toString();
 
 expect(str).to.be.equal('Anna Simpson (age: 22, email: anna@yahoo.com)');
@@ -435,8 +438,8 @@ yes
 let Person = result;
 let p = new Person("Peter", "Marinov", 18, "pesho18@abv.bg");
 
-expect(p.firstName).to.be.equal("Peter",
-            "Property 'firstName' not working");
+expect(p.fName).to.be.equal("Peter",
+            "Property 'fName' not working");
 [/input]
 [output]
 yes
@@ -447,8 +450,8 @@ yes
 let Person = result;
 let p = new Person("Peter", "Marinov", 18, "pesho18@abv.bg");
 
-expect(p.lastName).to.be.equal("Marinov",
-            "Property 'lastName' not working");
+expect(p.lName).to.be.equal("Marinov",
+            "Property 'lName' not working");
 [/input]
 [output]
 yes

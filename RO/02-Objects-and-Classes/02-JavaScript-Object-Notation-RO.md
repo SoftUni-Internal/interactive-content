@@ -242,7 +242,7 @@ JsonToHtmlTable('\[\{"Name":"Tomatoes & Chips","Price":2.35\},\{"Name":"J&B Choc
 [/test]
 [test]
 [input]
-JsonToHtmlTable('\[\{"X":5,"Y":7\},\{"X":2,"Y":4\},\{"X":-5,"Y":13\},\{"X":4.44,"Y":8\},\{"X":-10,"Y":-120.12\}\]')
+JsonToHtmlTable('\[\{"X":5,"Y":7\},\{"X":2,"Y":4\},\{"X":\-5,"Y":13\},\{"X":4.44,"Y":8\},\{"X":\-10,"Y":\-120.12\}\]')
 [/input]
 [output]
 \<table\>
