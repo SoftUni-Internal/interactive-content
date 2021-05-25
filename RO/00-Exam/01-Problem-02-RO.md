@@ -25,19 +25,19 @@ function adapter(input, code) {
 
 # Descriere
 
-Veți primi un șir, reprezentând un raft în bibliotecă. Pe raft, fiecare titlu de carte este separat de un "\&".
+Veți primi un șir care reprezintă un raft din bibliotecă. Pe raft, fiecare titlu de carte este separat prin simbolul "\&".
 
-Până când veți primi "**Done**" ca comandă, veți primi următoarele comenzi:
+Până la introducerea comenzii "**Done**", veți primi următoarele comenzi:
 
 * Comanda "**Add Book** \| \{**book name**\}": 
 
-Adăugați cartea pe raft și așezați-o înaintea tuturor celorlalte.
+Adăugați cartea pe raft și așezați-o înaintea tuturor celorlalte cărți.
 
 Dacă cartea este deja prezentă pe raft, ignorați comanda.
 
-* Comandă "**Take Book**" \| \{**book name**\}": 
+* Comanda "**Take Book**" \| \{**book name**\}": 
 
-Eliminați cartea cu titlul specificat numai dacă este pe raft, altfel ignorați această comandă.
+Eliminați cartea cu titlul specificat numai dacă aceasta se află pe raft, altfel ignorați această comandă.
 
 * Comanda "**Swap Books** \| \{**book1**\} \| \{**book2**\}": 
 
@@ -49,25 +49,25 @@ Adăugați o carte la capătul raftului.
 
 * Comanda "**Check Book** \| \{**index**\}": 
 
-Imprimați numele cărții la indexul specificat pe raft.
+Imprimați numele cărții corespunzătoare indicelui specificat.
 
-Dacă indexul este nevalid, ignorați comanda.
+Dacă indicele nu este valid, ignorați comanda.
 
 
 ## Intrare
 
-* Veți primi un șir, care conține titluri de carte, separate printr-un "\&"
+* Veți primi un șir care conține titluri de carte, separate prin simbolul "\&"
 
-* Până când primiți "**Done**", veți primi comenzi în formatul descris mai sus
+* Până la introducerea comenzii "**Done**", veți primi comenzi în formatul descris mai sus
 
 
 ## Ieșire
 
-* Imprimați colecția de cărți alăturate de (", ")
+* Imprimați colecția de cărți, unite prin ", "
 
 "\{**firstBook**\}, \{**secondBook**\}, ...\{**lastBook**\}"
 
-## Limitări
+## Constrângeri
 
 * Nu veți primi niciun nume de carte duplicat în lista inițială de cărți
 
