@@ -16,7 +16,7 @@ Here are some of the more commonly used properties:
 
 - `headers` - passes **context and credentials** as request headers
 
-- `method` - specifies the type of the request (`GET`, `POST`, `PUT`, `DELETE` etc.)
+- `method` - specifies the type of the request (`GET`, `POST`, `PUT`, `DELETE`, etc.)
 
 - `url` - the request's **URL**
 
@@ -44,7 +44,7 @@ http.createServer((req, res) => {
 }).listen(port);
 ```
 
-As you can see, we use the `parse` method to get the URL string.
+As we can see, we use the `parse` method to get the URL string.
 
 Using an **if-statement**, we determine if we are on the **home page**.
 
@@ -68,7 +68,7 @@ These are some of the methods used with it:
 
 - `res.statusCode` - Specifies the **HTTP status code** when not using `writeHead`
 
-It is recommended to **use the proper HTTP status codes in every response** as it **significantly improves the website's SEO**
+It is recommended to **use the proper HTTP status codes in every response** as it **significantly improves the website's SEO**.
 
 Here are some of the more common status codes and their meaning: 
 
@@ -113,7 +113,7 @@ http.createServer((req, res) => {
 
 ```
 
-As you can see from this example, the `writeHead` method is used to send a **response header** to the request.
+As we can see from this example, the `writeHead` method is used to send a **response header** to the request.
 
 Here, it accepts two parameters - a **status code** and a `Content-Type` header.
 
