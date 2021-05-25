@@ -30,7 +30,7 @@ In the stack, functions are executed **top-to-bottom**.
 
 This means that **the most recently added function will be executed first**.
 
-The following graphic illustrates the behavior for two functions called one after another:
+The following graphic illustrates the behavior of two functions that are called one after another:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-5.gif" /]
 
