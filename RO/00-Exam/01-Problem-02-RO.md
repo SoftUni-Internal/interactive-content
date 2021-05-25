@@ -24,15 +24,15 @@ function adapter(input, code) {
 
 # Descriere
 
-Pe prima linie de intrare, vi se va oferi un **șir**, care conține articolele care sunt **stocate în prezent în frigiderul dvs.**
+Pe prima linie cu date de intrare vi se va oferi un **șir** care conține articolele **stocate în prezent în frigiderul vostru.**
 
-Trebuie **să extrageți informațiile despre fiecare dintre ele** și să calculați caloriile lor totale.
+Trebuie **să extrageți informațiile despre fiecare articol** și să calculați numărul lor total de calorii.
 
 Mai întâi, trebuie să **extrageți informațiile despre alimente.**
 
-Va respecta întotdeauna regulile cu **același model**:
+Următoarele reguli vor fi întotdeauna respectate:
 
-* Articolele vor fi separate prin "\|" sau "\#" (doar unul din cele două) în următorul format:
+* Articolele vor fi separate prin simbolul "\|" sau "\#" (doar unul din cele două) în următorul format:
 
 "\#\{**itemName**\}\#\{**expirationDate**\}\#\{**calories**\}\#"
 
@@ -40,13 +40,13 @@ Va respecta întotdeauna regulile cu **același model**:
 
 * Numele articolului poate conține numai **minuscule**, **majuscule** și **spații**
 
-* Data de expirare va urma întotdeauna modelul: "\{**zi**\} \/ \{**lună**\} \/ \{**an**\}"
+* Data de expirare va urma întotdeauna modelul: "\{**day**\}\/\{**month**\}\/\{**year**\}"
 
 **Ziua**, **luna** și **anul** vor fi formate din două cifre.
 
-* Caloriile vor fi un **întreg în intervalul: 0-10000**
+* Caloriile vor fi date sub forma unui **număr întreg în intervalul 0-10000**
 
-Calculați **caloriile totale ale tuturor produselor alimentare** din șir și apoi determinați câte zile ați putea rezista cu această cantitate, **presupunând că consumați 2000 kcal pe zi.**
+Calculați **numărul total de calorii al tuturor produselor alimentare** din șir și apoi determinați câte zile ați putea rezista cu această cantitate, **presupunând că consumați 2000 kcal pe zi.**
 
 ## Intrare
 
@@ -54,13 +54,13 @@ Calculați **caloriile totale ale tuturor produselor alimentare** din șir și a
 
 ## Ieșire
 
-- Pe prima linie de ieșire, tipăriți numărul de zile pe care ar dura această aprovizionare cu alimente înainte de a fi nevoie să mergeți la magazin pentru mai multe:
+- Pe prima linie de ieșire tipăriți numărul de zile pentru care această aprovizionare cu alimente este suficientă, înainte să fiți nevoit să mergeți la magazin:
 
 "**You have enough food for** \{**days**\} **days!**"
 
 - După aceea, tipăriți toate articolele valide
 
-- Rezultatul ar trebui să arate astfel:
+- Rezultatul trebuie să arate astfel:
 
 "**Item:** \{**itemName**\}**, Best before:** \{**expirationDate**\}**, Nutrition:** \{**calories**\}"
 
@@ -76,15 +76,15 @@ Calculați **caloriile totale ale tuturor produselor alimentare** din șir și a
 
 [hints]
 [hint]
-Avem **trei** meciuri în total:
+Avem **trei** corespondențe valabile:
 
 - "\#**Bread**\#**19/03/21**\#**4000**\#": bread
 - "\|**Apples**\|**08/10/20**\|**200**\|": apples
 - "\|**Carrots**\|**06/08/20**\|**500**\|": carrots
 [/hint] 
 [hint]
-Suma caloriilor lor este de **4700**.
-Deoarece aveți nevoie de **2000kcal** pe zi, **împărțiți** 4700/2000, ceea ce înseamnă că acest aliment va dura **2 zile**.
+Suma caloriilor lor este de **4700 kcal**.
+Deoarece aveți nevoie de **2000 kcal** pe zi, **efectuați împărțirea** 4700/2000, ceea ce înseamnă că aprovizionarea va fi suficientă pentru **2 zile**.
 [/hint] 
 [hint]
 **Tipărim** fiecare articol.
@@ -104,17 +104,17 @@ Deoarece aveți nevoie de **2000kcal** pe zi, **împărțiți** 4700/2000, ceea 
 
 [hints]
 [hint]
-Avem **trei** potriviri în total:
+Avem **trei** corespondențe în total:
 
 - "\#**Fish**\#**24/12/20**\#**8500**\#"
 - "\#**Ice Cream**\#**03/10/21**\#**9000**\#"
 - "\|**Milk**\|**05/09/20**\|**2000**\|"
 
-Caloriile **totale** sunt **19500** (8500 + 9000 + 2000), ceea ce înseamnă că aveți alimente pentru un total de **9 zile**.
+Numărul **total** de calorii este **19500** (8500 + 9000 + 2000), ceea ce înseamnă că aveți alimente pentru un total de **9 zile**.
 [/hint] 
 [/hints]
 
-## Exemplul al Treilea
+## Exemplul Trei
 
 | **Intrare** | **Ieșire** |
 | --- | --- |
@@ -122,9 +122,9 @@ Caloriile **totale** sunt **19500** (8500 + 9000 + 2000), ceea ce înseamnă că
 
 [hints]
 [hint]
-**Nu există potriviri**, ceea ce înseamnă că nu ai mâncare.
+**Nu există corespondențe**, ceea ce înseamnă că nu aveți mâncare.
 
-"\#**Invalid food**\#**19/03/20**\#**450**" nu este o potrivire, deoarece **nu are**  "\#" la sfârșit.
+"\#**Invalid food**\#**19/03/20**\#**450**" nu este o potrivire, deoarece **nu are** simbolul "\#" la sfârșit.
 [/hint] 
 [/hints]
 
