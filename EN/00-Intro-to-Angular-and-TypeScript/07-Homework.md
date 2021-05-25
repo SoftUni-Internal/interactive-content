@@ -152,11 +152,9 @@ JsonToHtmlTable('\[\{"X":5,"Y":7\},\{"X":2,"Y":4\},\{"X":\-5,"Y":13\},\{"X":4.44
 \</table\>
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-```
-JsonToHtmlTable([{"Name":"<script>alert('Hacked');</script>","Age":20,"City":"'Vinkel Town' Pernik & Co."}])
-```
+JsonToHtmlTable(\[\{"Name":"\<script\>alert('Hacked');\</script\>","Age":20,"City":"'Vinkel Town' Pernik & Co."\}\])
 [/input]
 [output]
 \<table\>
