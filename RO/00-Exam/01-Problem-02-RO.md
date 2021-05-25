@@ -17,27 +17,27 @@ public class Main {
 [task-description]
 ## Descriere
 
-Prima dvs. sarcină este de a determina dacă secvența dată de caractere este un cod de bare **valid** sau **nu**.
+Prima voastră sarcină este de a determina dacă secvența dată de caractere este un cod de bare **valid** sau **nu**.
 
 **Fiecare linie trebuie să conțină numai coduri de bare valide**.
 
 Un cod de bare este valabil atunci când:
 
-- Este înconjurat de un "**@**" urmat de unul sau mai multe "\#"
+- este încadrat de un simbol "**@**", urmat de unul sau mai multe simboluri "\#"
 
-- Are cel puțin 6 caractere (fără "**@**" sau "\#" din jur)
+- are cel puțin 6 caractere (nu se ține cont de simbolul "**@**" sau "\#" care îl încadrează)
 
-- începe cu o literă mare
+- începe cu o majusculă
 
-- Conține doar litere (litere mici și majuscule) și cifre
+- conține doar litere (litere mici și majuscule) și cifre
 
-- Se termină cu o majusculă
+- se termină cu o majusculă
 
 Exemple de coduri de bare valide: "\@\#FreshFisH\@\#", "\@\#\#\#Brea0D\@\#\#\#", "\@\#\#Che46sE\ @\#\#"
 
 Exemple de coduri de bare **nevalide**: "\#\#InvaliDiteM\#\#", "\@InvalidIteM\@", "\@\#Invalid_IteM\@\#"
 
-Apoi, trebuie să determinați **grupul de produse** al articolului din **codul de bare**.
+După aceea, trebuie să determinați **grupul de produse** al articolului din **codul de bare**.
 
 Grupul de produse se obține prin **concatenarea tuturor cifrelor găsite în codul de bare**.
 
@@ -53,9 +53,9 @@ Exemple:
 
 ### Intrare
 
-Pe prima linie, vi se va da un număr întreg "**n**" - numărul de coduri de bare pe care le veți primi în continuare.
+Pe prima linie vi se va da un număr întreg "**n**" - numărul de coduri de bare pe care le veți primi în continuare.
 
-Pe următoarele linii "**n**", veți primi șiruri diferite.
+Pe următoarele "**n**" linii veți primi diferite șiruri.
 
 ### Ieșire
 

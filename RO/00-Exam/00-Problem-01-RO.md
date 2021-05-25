@@ -16,35 +16,33 @@ public class Main {
 [task-description]
 ## Descriere
 
-Prima linie de intrare va fi cheia dvs. de activare brută. Acesta va consta numai din **litere și cifre**.
+Prima linie de intrare va fi cheia voastră brută de activare. Aceasta va consta numai din **litere și cifre**.
 
-După aceea, până când este dată comanda "**Generate**", veți primi șiruri cu instrucțiuni pentru diferite operațiuni care trebuie efectuate pe cheia de activare brută.
+După aceea, până când este dată comanda "**Generate**", veți primi șiruri cu instrucțiuni pentru diferite operații care trebuie efectuate pe cheia brută de activare.
 
-Există mai multe tipuri de instrucțiuni, împărțite la `>>>`:
+Există mai multe tipuri de instrucțiuni, separate prin `>>>`:
 
 * "**Contains**\>\>\>\{**substring**\}" - Verifică dacă cheia brută de activare conține subșirul dat
 
-  - dacă se întâmplă, tipăriți: "\{**raw activation key**\} **contains** \{**substring**\}"
+  - dacă acest lucru este valabil, tipăriți: "\{**raw activation key**\} **contains** \{**substring**\}"
 
   - dacă nu, tipăriți: "**Substring not found!**"
 
-* "**Flip**\>\>\>**Upper/Lower**\>\>\>\{**startIndex**\}\>\>\>\{**endIndex**\}" - Schimbă șirul **între indicii dați (indexul final este exclusiv)** cu majuscule sau minuscule
+* "**Flip**\>\>\>**Upper/Lower**\>\>\>\{**startIndex**\}\>\>\>\{**endIndex**\}" - Schimbă șirul aflat **între indicii dați (indicele final este exclus)** cu majuscule sau minuscule
 
-Toți indicii dați vor fi valabili.
+  - toți indicii dați vor fi valabili
 
-Tipărește cheia de activare.
+  - tipărește cheia de activare
 
-- "**Slice**\>\>\>\{**startIndex**\}\>\>\>\{**endIndex**\}"
+- "**Slice**\>\>\>\{**startIndex**\}\>\>\>\{**endIndex**\}" - **Șterge** caracterele aflate între indicele de început și cel de sfârșit (**indicele final este exclus**)
 
-**Șterge** caracterele dintre indicii de început și sfârșit (**indexul final este exclusiv**).
+  - ambii indici vor fi **valabili**
 
-Ambii indici vor fi **valabili**.
-
-Tipărește cheia de activare.
+  - tipărește cheia de activare
 
 ### Intrare
 
-Prima linie a intrării va fi un șir și va consta din **numai litere și cifre**.
+Prima linie cu date de intrare va fi un șir și va consta numai din **litere și cifre**.
 
 După prima linie, până când este dată comanda "**Generate**", veți primi șiruri.
 
@@ -67,26 +65,26 @@ După primirea comenzii "**Generate**", tipăriți:
 
 [hints]
 [hint]
-Prima comandă este `Slice>>2>>6`
+Prima comandă este `Slice>>2>>6`.
 
-Eliminăm caracterele dintre indexul 2 and 6(neincluse) - **cdef**
+Eliminăm caracterele aflate între indicii 2 și 6 (care nu este inclus) - **cdef**.
 
 ab**cdef**ghijklmnopqrstuvwxyz -\> "**abghijklmnopqrstuvwxyz**"
 [/hint] 
 [hint]
-Al doilea vine `Flip>>>Upper>>>3>>>14`
+A doua comandă este `Flip>>>Upper>>>3>>>14`.
 
-Comutăm caracterele între indexurile 3 și 14(neincluse) cu majuscule - **hijklmnopqr**
+Comutăm caracterele aflate între indicii 3 și 14 (care nu este inclus) cu majuscule - **hijklmnopqr**.
 
 abg**hijklmnopqr**stuvwxyz -\> abg**HIJKLMNOPQR**stuvwxyz
 [/hint] 
 [hint]
-A patra comandă este `Flip>>>Lower>>>5>>>7`
+A treia comandă este `Flip>>>Lower>>>5>>>7`.
 
 abgHI**JK**LMNOPQRstuvwxyz -\> abgHI**jk**LMNOPQRstuvwxyz
 [/hint] 
 [hint]
-Următoarea comandă este `Contains>>>def`
+Următoarea comandă este `Contains>>>def`.
 
 "**abgHIjkLMNOPQRstuvwxyz**" **nu** conține "**def**", deci imprimăm:
 
@@ -95,10 +93,10 @@ Următoarea comandă este `Contains>>>def`
 [hint]
 Ultima comandă este `Contains>>>deF`:
 
-"**abgHIjkLMNOPQRstuvwxyz**" **nu** conține "**deF**"
+"**abgHIjkLMNOPQRstuvwxyz**" **nu** conține "**deF**".
 [/hint]
 [hint]
-Cheia de activare finală este "**abgHIjkLMNOPQRstuvwxyz**"
+Cheia finală de activare este "**abgHIjkLMNOPQRstuvwxyz**".
 [/hint] 
 [/hints] 
 
