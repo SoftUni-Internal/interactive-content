@@ -454,7 +454,7 @@ specialNumber('41')
 specialNumber('32')
 [/input]
 [output]
-32 is special
+32 is not special
 [/output]
 [/test]
 [test]
