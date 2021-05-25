@@ -171,9 +171,15 @@ In other words, adding a method inside the class body, makes it available to all
 [slide hideTitle]
 # Accessor Properties
 
-**Accessor properties** provide access to properties by using the dot and bracket notation we mentioned earlier.
+JavaScript class instances have two types of properties.
 
-With the EcmaScript 6 standard in 2015, JavaScript also introduced support for the `get` and `set` keywords.
+One of them is **data properties** which, as the name implies, is used to store information.
+
+They are simply the **variables** that belong to an object.
+ 
+The second kind is **accessor properties**.
+
+With the EcmaScript 6 standard in 2015, JavaScript introduced support for the `get` and `set` keywords.
 
 They allow for retrieving and modifying property values in a similar fashion to Java.
 
@@ -189,20 +195,20 @@ class User {
   },
 
   set fullName(value) {
-    [this.name, this.surname] = value.split(" ");
+    [this.name, this.surname] = value.split(' ');
   }
 };
 
 let userOne = new User();
 
-userOne.fullName = "James Cooper";
+userOne.fullName = 'James Cooper';
 ```
 
 Defining a property getter is done using the `get` keyword, followed by the method.
 
 Setters are created with the `set` keyword and a method that typically accepts a new value.
 
-Using getters and setters allows for data encapsulation - some properties can only be read, with no write access from outside the class.
+Using getters and setters allows for **data encapsulation** - some properties can only be read, with no write access from outside the class.
 
 [/slide]
 
@@ -219,10 +225,10 @@ class Teacher {
     }
 }
 
-let myTeacher = new Teacher("Dale Oliver", "History");
+let myTeacher = new Teacher('Dale Oliver', 'History');
 console.log(myTeacher.subject);
 
-myTeacher.subject = "Programming";
+myTeacher.subject = 'Programming';
 console.log(myTeacher.subject);
 ```
 
@@ -231,7 +237,7 @@ As you can see, here we use dot notation to change the `subject` property of the
 This can also be done using bracket notation:
 
 ```js
-myTeacher["subject"] = "Programming";
+myTeacher['subject'] = 'Programming';
 ```
 [/slide]
 

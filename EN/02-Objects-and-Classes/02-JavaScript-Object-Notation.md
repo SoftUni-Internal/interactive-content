@@ -109,7 +109,7 @@ As evident by the output, `stringify` returns a ready for transfer **JSON** stri
 [code-task title="From JSON to HTML Table" taskId="java-path-js-advanced-objects-and-classes-from-json-to-html-table" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function fromJSONToHTMLTable(studentData){
+function JsonToHtmlTable(json){
     // Write your code here
 }
 ```
@@ -175,14 +175,14 @@ You are **provided** with an **HTML file** to test your table in the **browser**
   <div id="wrapper">
   </div>
   <script>
-    function fromJSONToHTMLTable(studentData) {
+    function JsonToHtmlTable(studentData) {
       // Write your code here
     }
     window.onload = function () {
       let container = 
         document.getElementById('wrapper');
       container.innerHTML = 
-        fromJSONToHTMLTable(['input goes here']);
+        JsonToHtmlTable(['input goes here']);
     };
   </script>
 </body>
@@ -199,7 +199,7 @@ Submit **only** the `fromJSONToHTMLTable` function.
 
 ### Input
 
-`fromJSONToHTMLTable('[{"Name":"Peter <div>-a","Age":20,"City":"London"}, {"Name":"George","Age":18,"City":"Liverpool"}, {"Name":"Tom","Age":18,"City":"Manchester"}]')`
+`JsonToHtmlTable('[{"Name":"Peter <div>-a","Age":20,"City":"London"}, {"Name":"George","Age":18,"City":"Liverpool"}, {"Name":"Tom","Age":18,"City":"Manchester"}]')`
 
 ### Output
 
@@ -217,7 +217,7 @@ Submit **only** the `fromJSONToHTMLTable` function.
 [tests]
 [test open]
 [input]
-fromJSONToHTMLTable('\[\{"Name":"Peter \<div\>-a","Age":20,"City":"London"\},\{"Name":"George","Age":18,"City":"Liverpool"\},\{"Name":"Tom","Age":18,"City":"Manchester"\}\]')
+JsonToHtmlTable('\[\{"Name":"Peter \<div\>-a","Age":20,"City":"London"\},\{"Name":"George","Age":18,"City":"Liverpool"\},\{"Name":"Tom","Age":18,"City":"Manchester"\}\]')
 [/input]
 [output]
 \<table\>
@@ -230,7 +230,7 @@ fromJSONToHTMLTable('\[\{"Name":"Peter \<div\>-a","Age":20,"City":"London"\},\{"
 [/test]
 [test]
 [input]
-fromJSONToHTMLTable('\[\{"Name":"Tomatoes & Chips","Price":2.35\},\{"Name":"J&B Chocolate","Price":0.96\}\]')
+JsonToHtmlTable('\[\{"Name":"Tomatoes & Chips","Price":2.35\},\{"Name":"J&B Chocolate","Price":0.96\}\]')
 [/input]
 [output]
 \<table\>
@@ -242,7 +242,7 @@ fromJSONToHTMLTable('\[\{"Name":"Tomatoes & Chips","Price":2.35\},\{"Name":"J&B 
 [/test]
 [test]
 [input]
-fromJSONToHTMLTable('\[\{"X":5,"Y":7\},\{"X":2,"Y":4\},\{"X":-5,"Y":13\},\{"X":4.44,"Y":8\},\{"X":-10,"Y":-120.12\}\]')
+JsonToHtmlTable('\[\{"X":5,"Y":7\},\{"X":2,"Y":4\},\{"X":-5,"Y":13\},\{"X":4.44,"Y":8\},\{"X":-10,"Y":-120.12\}\]')
 [/input]
 [output]
 \<table\>
@@ -257,7 +257,7 @@ fromJSONToHTMLTable('\[\{"X":5,"Y":7\},\{"X":2,"Y":4\},\{"X":-5,"Y":13\},\{"X":4
 [/test]
 [test]
 [input]
-fromJSONToHTMLTable('\[\{"Name":"\<script\>alert('Hacked');\</script\>","Age":20,"City":"'Vinkel Town' Pernik & Co."\}\]')
+JsonToHtmlTable('\[\{"Name":"\<script\>alert('Hacked');\</script\>","Age":20,"City":"'Vinkel Town' Pernik & Co."\}\]')
 [/input]
 [output]
 \<table\>
