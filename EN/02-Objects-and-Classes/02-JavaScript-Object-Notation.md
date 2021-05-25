@@ -222,7 +222,7 @@ JsonToHtmlTable('\[\{"Name":"Peter \<div\>-a","Age":20,"City":"London"\},\{"Name
 [output]
 \<table\>
    \<tr\>\<th\>Name\</th\>\<th\>Age\</th\>\<th\>City\</th\>\</tr\>
-   \<tr\>\<td\>Peter \&lt\;div\&gt\;\-a\</td\>\<td\>20\</td\>\<td\>London\</td\>\</tr\>
+   \<tr\>\<td\>Peter &lt;div&gt;-a\</td\>\<td\>20\</td\>\<td\>London\</td\>\</tr\>
    \<tr\>\<td\>George\</td\>\<td\>18\</td\>\<td\>Liverpool\</td\>\</tr\>
    \<tr\>\<td\>Tom\</td\>\<td\>18\</td\>\<td\>Manchester\</td\>\</tr\>
 \</table\>
@@ -262,7 +262,7 @@ JsonToHtmlTable('\[\{"Name":"\<script\>alert\('Hacked'\);\</script\>","Age":20,"
 [output]
 \<table\>
    \<tr\>\<th\>Name\</th\>\<th\>Age\</th\>\<th\>City\</th\>\</tr\>
-   \<tr\>\<td\>\&lt\;script\&gt\;alert(\&\#39\;Hacked\&\#39\;)\;\&lt\;/script\&gt\;\</td\>\<td\>20\</td\>\<td\>\&\#39\;Vinkel Town\&\#39\; Pernik \&amp\; Co.\</td\>\</tr\>
+   \<tr\>\<td\>&lt;script&gt;alert(&\#39;Hacked&\#39;);&lt;/script&gt;\</td\>\<td\>20\</td\>\<td\>&\#39;Vinkel Town&\#39; Pernik &amp; Co.\</td\>\</tr\>
 \</table\>
 [/output]
 [/test]
