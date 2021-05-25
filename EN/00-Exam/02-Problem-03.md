@@ -76,7 +76,7 @@ Print the following message:
 
 - On the first line of the standard input, you will receive an integer "**n**"
 
-- On the next `n` lines, the heroes themselves will follow with their **hit points** and **mana points** separated by empty space in the following format
+- On the next `n` lines, the heroes themselves will follow with their **hit points** and **mana points** separated by empty space in the described format
 
 - You will be receiving different **commands**, each on a new line, separated by " - " (space dash space ), until the "**End**" command is given
 
