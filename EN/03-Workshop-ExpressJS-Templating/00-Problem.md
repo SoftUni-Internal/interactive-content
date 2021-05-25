@@ -5,25 +5,28 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/03-Cubicle-Workshop-Part-1-Resources.zip) **for this task.**
 
-"**Cubicle**" is a place, where you can browse some of the most popular Rubik's cubes in the world and add some new cubes that you have discovered. 
+"**Cubicle**" is a place where you can browse some of the most popular Rubik's cubes in the world and add some new cubes that you have discovered. 
 
 ## Folder Structure View
 
-You are provided with a project structure skeleton like this:
+You are given this folder structure for the project:
 
 [image assetsSrc="cubicle-workshop-01.png" /]
 
 ## Config Folder View
-This structure includes the following configurations:
+
+It includes the following configurations:
 
 [image assetsSrc="cubicle-workshop-02.png" /]
 
 - `Config.js`
-This is where the port on which the application will be accessible is configured.
+Here you can set the port on which your application will be accessible.
+ 
 [image assetsSrc="cubicle-workshop-03.png" /]
 
 - `Database.json`
 Initially contains only an empty array. Will be used later as a local database.
+
 [image assetsSrc="cubicle-workshop-04.png" /]
 
 - `Express.js`
@@ -31,13 +34,15 @@ Initially contains only an empty array. Will be used later as a local database.
 [image assetsSrc="cubicle-workshop-05.png" /]
 
 - `Routes.js`
-This is where controllers and routes will be configured.
+This is where the controllers and routes will be configured.
+
 [image assetsSrc="cubicle-workshop-06.png" /]
 
 - `Index.js`
-Calls the entire configuration based on the current environment that the app is running in. 
+Runs the entire configuration based on the current environment that the app is running in. 
 
-Configures the app to work with Express JS and to use the routes that are set up in `./config/routes`
+Configures the app to work with Express and the routes that are set up in the `./config/routes` file.
+
 [image assetsSrc="cubicle-workshop-07.png" /]
 
 [/slide]
@@ -47,9 +52,9 @@ Configures the app to work with Express JS and to use the routes that are set up
 
 - **Cube Model**
 
-Each cube should have the following properties (for now it could be an **ES6** class):
+Each cube should have the following properties (you may use an **ES6** class for now):
 
-**id**: number
+**id**: integer
 
 **name**: string
 
@@ -57,14 +62,14 @@ Each cube should have the following properties (for now it could be an **ES6** c
 
 **imageUrl**: string
 
-**difficultyLevel**: number
+**difficultyLevel**: integer
 
 - **Storage** 
 
-Store the cubes inside `/config/database.json`
+Store the cubes inside the `/config/database.json` file.
 
-It is not a good practice, but as this is not the focus of this project, you can do it like this for now.
+It is not a good practice, but we can work like that for now.
 
-In a later workshop, you will learn how to connect to and work with an actual database.
+In the following workshops, you will learn how to connect to and work with an actual database.
 
 [/slide]
