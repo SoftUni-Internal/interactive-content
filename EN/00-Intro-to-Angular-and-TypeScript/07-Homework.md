@@ -96,7 +96,7 @@ Submit **only** the `JsonToHtmlTable` function.
 
 ### Input
 
-`JsonToHtmlTable('[{"Name":"Peter <div>-a", "Age":20,"City":"London"}, {"Name":"George","Age":18,"City":"Liverpool"}, {"Name":"Tom","Age":18,"City":"Manchester"}]')`
+JsonToHtmlTable('\[\{"Name":"Peter \<div\>\-a", "Age":20,"City":"London"\}, \{"Name":"George","Age":18,"City":"Liverpool"\}, \{"Name":"Tom","Age":18,"City":"Manchester"\}\]')
 
 ### Output
 
