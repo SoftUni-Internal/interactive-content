@@ -92,7 +92,7 @@ At this point he aquires **5** points.
 Then he receives "**Shoot Right@4@5**" \-\> `10 - 10 - 10 - 5 - 5`
 [/hint] 
 [hint]
-Shoot "**Right@6@5**" \-\> "**Index 6**" is out of range (does not exist in the range), so Peter ignores the command.
+"**Shoot Right@6@5**" \-\> "**Index 6**" is out of range (does not exist in the range), so Peter ignores the command.
 [/hint] 
 [hint]
 "**Reverse**" \-\> The end result should be: `5 - 5 - 10 - 10 - 10`
