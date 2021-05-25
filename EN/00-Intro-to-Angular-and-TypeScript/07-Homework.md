@@ -119,7 +119,7 @@ JsonToHtmlTable('\[\{"Name":"Peter \<div\>-a","Age":20,"City":"London"\},\{"Name
 [output]
 \<table\>
    \<tr\>\<th\>Name\</th\>\<th\>Age\</th\>\<th\>City\</th\>\</tr\>
-   \<tr\>\<td\>Peter \&lt;div\&gt;-a\</td\>\<td\>20\</td\>\<td\>London\</td\>\</tr\>
+   \<tr\>\<td\>Peter \<div\>-a\</td\>\<td\>20\</td\>\<td\>London\</td\>\</tr\>
    \<tr\>\<td\>George\</td\>\<td\>18\</td\>\<td\>Liverpool\</td\>\</tr\>
    \<tr\>\<td\>Tom\</td\>\<td\>18\</td\>\<td\>Manchester\</td\>\</tr\>
 \</table\>
