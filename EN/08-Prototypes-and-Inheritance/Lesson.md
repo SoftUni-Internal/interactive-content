@@ -1,1 +1,1 @@
-# Prototypes and Inheritance - Coming Soon
+# Prototypes and Inheritance

@@ -1,1 +1,1 @@
-# Advanced Functions - Coming Soon
+# Advanced Functions
