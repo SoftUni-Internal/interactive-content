@@ -5,7 +5,7 @@
 ## In this lesson you learned:
 
 - Event loop
-  * defines the **order of execution** for called functions
+  * defines the **order of execution** of all called functions
   * continuously looks for, stacks, and handles events 
 
 - Modules
