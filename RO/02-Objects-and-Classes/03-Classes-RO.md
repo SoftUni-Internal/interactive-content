@@ -547,7 +547,7 @@ As **output, return an array** of `Person` instances.
 [/task-description]
 [code-io/]
 [tests]
-[test]
+[test open]
 [input]
 let getPersons = result;
 

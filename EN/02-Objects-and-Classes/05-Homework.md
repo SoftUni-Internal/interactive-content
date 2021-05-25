@@ -54,11 +54,11 @@ Check the examples for more information.
 
 ```json
 [{"name":"Isacc","level":25,"items":
-["Apple","GravityGun"]},
+  ["Apple","GravityGun"]},
 {"name":"Derek","level":12,"items":
-["BarrelVest","DestructionSword"]},
+  ["BarrelVest","DestructionSword"]},
 {"name":"Hes","level":1,"items":
-["Desolator","Sentinel","Antara"]}] 
+  ["Desolator","Sentinel","Antara"]}] 
 ```
 
 ## Example Two
@@ -199,7 +199,7 @@ heroicInventory(['EmptyOne / 200', 'Anderson / 250 / StrikeForge, HeavensGuard',
 [/test]
 [test]
 [input]
-heroicInventory('Test / 3 / In, Txt')
+heroicInventory(['Test / 3 / In, Txt'])
 [/input]
 [output]
 \[\{"name":"Test","level":3,"items":\["In","Txt"\]\}\]
@@ -269,7 +269,7 @@ Check the examples for more information.
 
 ### Input
 
-`jsonTable(['{"name":"Peter","position":"Director","salary":100000}', '{"name":"Ted","position":"Lecturer","salary":1000}', '{"name":"George","position":"Lecturer","salary":1000}'])`
+`jsonTable(['{"name":"Peter","position":"Director", "salary":100000}', '{"name":"Ted","position":"Lecturer","salary":1000}', '{"name":"George","position":"Lecturer","salary":1000}'])`
 
 ### Output
 
@@ -535,8 +535,7 @@ Nestea =\> 11
 [/test]
 [test]
 [input]
-juice(['Musaka =\> 1000', 'Lambda =\> 1000', 'Filter =\> 1000', 'Function =\> 1000
-Judge =\> 1000', 'Mojem =\> 1000', 'Zadacha =\> 1000', 'Reshenie =\> 1000', 'Prav =\> 1000', 'Nakov =\> 1000', 'Izvrashtenie =\> 1000'])
+juice(['Musaka =\> 1000', 'Lambda =\> 1000', 'Filter =\> 1000', 'Function =\> 1000', 'Judge =\> 1000', 'Mojem =\> 1000', 'Zadacha =\> 1000', 'Reshenie =\> 1000', 'Prav =\> 1000', 'Nakov =\> 1000', 'Izvrashtenie =\> 1000'])
 [/input]
 [output]
 Musaka =\> 1
@@ -714,7 +713,7 @@ T
 [/test]
 [test open]
 [input]
-store(['Banana : 2', 'Rubic's Cube : 5', 'Raspberry P : 4999', 'Rolex : 100000', 'Rollon : 10', 'Rally Car : 2000000', 'Paper : 0.000001', 'Barrel : 10'])
+store(['Banana : 2', 'Rubic Cube : 5', 'Raspberry P : 4999', 'Rolex : 100000', 'Rollon : 10', 'Rally Car : 2000000', 'Paper : 0.000001', 'Barrel : 10'])
 [/input]
 [output]
 B
@@ -727,7 +726,7 @@ R
   Raspberry P: 4999
   Rolex: 100000
   Rollon: 10
-  Rubic's Cube: 5
+  Rubic Cube: 5
 [/output]
 [/test]
 [test]
