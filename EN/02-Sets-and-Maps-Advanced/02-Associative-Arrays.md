@@ -467,7 +467,7 @@ All numbers must be formatted to the **first digit after the decimal point**.
 |  | 4.5 \-\> 5 |
 |  | 5.5 \-\> 4 |
 |  | 3.0 \-\> 7 |
-|  | 1.0 \-\> 1 |
+|  | 4.0 \-\> 1 |
 
 [/task-description]
 [code-io /]
