@@ -80,7 +80,7 @@ We need an **array** that will hold our **hero** data.
 
 That is the **first** thing we create. 
 
-[image assetsSrc="syntax-hint-01.png" /]
+[image assetsSrc="../syntax-hint-01.png" /]
 
 ```js
 function heroicInventory(input) {
