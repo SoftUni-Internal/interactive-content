@@ -356,7 +356,7 @@ If all are true it returns the **last truthy value**.
 
 ```js live
 const value =   false && 5 && 'yes';
-console.log(value );
+console.log(value);
 ```
 
 The above returns `false` as it is the leftmost "false" value in this example.
@@ -377,7 +377,7 @@ If all are false it returns the **last falsy value**.
 
 ```js live
 const value =   false || '' || 5;
-console.log(const value );
+console.log( value );
 ```
 
 The above returns **5** as it is the leftmost "true" value in this example.
