@@ -1,8 +1,9 @@
+[slide]
 
-# Coming Soon
+# Exam Information
 
-[slide hideTitle]
+[exam-information]
 
-# Coming Soon
+[/exam-information]
 
 [/slide]
