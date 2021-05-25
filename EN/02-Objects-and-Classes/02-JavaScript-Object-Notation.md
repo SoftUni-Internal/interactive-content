@@ -235,8 +235,8 @@ JsonToHtmlTable('\[\{"Name":"Tomatoes & Chips","Price":2.35\},\{"Name":"J&B Choc
 [output]
 \<table\>
    \<tr\>\<th\>Name\</th\>\<th\>Price\</th\>\</tr\>
-   \<tr\>\<td\>Tomatoes &amp; Chips\</td\>\<td\>2.35\</td\>\</tr\>
-   \<tr\>\<td\>J&amp;B Chocolate\</td\>\<td\>0.96\</td\>\</tr\>
+   \<tr\>\<td\>Tomatoes \&amp\; Chips\</td\>\<td\>2.35\</td\>\</tr\>
+   \<tr\>\<td\>J\&amp\;B Chocolate\</td\>\<td\>0.96\</td\>\</tr\>
 \</table\>
 [/output]
 [/test]
@@ -251,7 +251,7 @@ JsonToHtmlTable('\[\{"X":5,"Y":7\},\{"X":2,"Y":4\},\{"X":-5,"Y":13\},\{"X":4.44,
    \<tr\>\<td\>2\</td\>\<td\>4\</td\>\</tr\>
    \<tr\>\<td\>-5\</td\>\<td\>13\</td\>\</tr\>
    \<tr\>\<td\>4.44\</td\>\<td\>8\</td\>\</tr\>
-   \<tr\>\<td\>-10\</td\>\<td\>-120.12\</td\>\</tr\>
+   \<tr\>\<td\>\-10\</td\>\<td\>\-120.12\</td\>\</tr\>
 \</table\>
 [/output]
 [/test]
@@ -262,7 +262,7 @@ JsonToHtmlTable('\[\{"Name":"\<script\>alert('Hacked');\</script\>","Age":20,"Ci
 [output]
 \<table\>
    \<tr\>\<th\>Name\</th\>\<th\>Age\</th\>\<th\>City\</th\>\</tr\>
-   \<tr\>\<td\>&lt;script&gt;alert(&\#39;Hacked&\#39;);&lt;/script&gt;\</td\>\<td\>20\</td\>\<td\>&\#39;Vinkel Town&\#39; Pernik &amp; Co.\</td\>\</tr\>
+   \<tr\>\<td\>\&lt\;script\&gt\;alert(\&\#39\;Hacked\&\#39\;)\;\&lt\;/script\&gt\;\</td\>\<td\>20\</td\>\<td\>\&\#39\;Vinkel Town\&\#39\; Pernik \&amp\; Co.\</td\>\</tr\>
 \</table\>
 [/output]
 [/test]
