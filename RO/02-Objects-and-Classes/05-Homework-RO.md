@@ -1253,7 +1253,7 @@ yes
 [code-task title="Tickets" taskId="java-path-js-advanced-objects-and-classes-tickets" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 ```
-tickets(ticketArr, sortCrit) {
+function tickets(ticketArr, sortCrit) {
     // Write your code here
 }
 ```

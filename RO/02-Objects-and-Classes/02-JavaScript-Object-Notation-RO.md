@@ -192,7 +192,7 @@ You are **provided** with an **HTML file** to test your table in the **browser**
 
 ## Submission
 
-Submit **only** the `fromJSONToHTMLTable` function.
+Submit **only** the `JsonToHtmlTable` function.
 
 
 ## Example
@@ -257,7 +257,7 @@ JsonToHtmlTable('\[\{"X":5,"Y":7\},\{"X":2,"Y":4\},\{"X":\-5,"Y":13\},\{"X":4.44
 [/test]
 [test]
 [input]
-JsonToHtmlTable('\[\{"Name":"\<script\>alert('Hacked');\</script\>","Age":20,"City":"'Vinkel Town' Pernik & Co."\}\]')
+JsonToHtmlTable('\[\{"Name":"\<script\>alert('Hacked');"\</script\>","Age":20,"City":"'Vinkel Town' Pernik & Co."\}\]')
 [/input]
 [output]
 \<table\>
