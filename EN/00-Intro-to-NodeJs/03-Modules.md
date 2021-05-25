@@ -2,7 +2,7 @@
 
 # Modules
 
-Modules in Node.js are groups of files, **providing certain functionality**.
+Modules in Node.js are groups of files that **provide certain functionality**.
 
 Using modules brings several benefits, including:
 
@@ -42,7 +42,7 @@ Here is an example of a folder structure:
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-2.jpg" /]
 
-The `simple-function.js` file holds a basic function which **exported as a local module** and **usable in other files**:
+The `simple-function.js` file holds a basic function that is **exported as a local module** and **usable in other files**:
 
 ```js
 function calculateTax(rate, amount) {
@@ -106,7 +106,7 @@ npm install express
 // Type the name of the module after npm install
 ```
 
-You can also install a module with **additional options**:
+We can also install a module, specifying some **additional options**:
 
 ```js
 npm install -g express
@@ -120,7 +120,7 @@ npm install mocha --save-dev
 // Saves the mocha module as a developer dependency, as it is not needed by the users
 ```
 
-After installation, use a third-party module as shown below:
+After installation, we can use a third-party module as shown below:
 
 ```js
 const express = require("express");
