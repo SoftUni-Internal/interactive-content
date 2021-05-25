@@ -44,7 +44,7 @@ Otherwise, try running the installer again.
 
 # Environment Setup
 
-There are two ways to execute Node.js code:
+There are two ways to execute JS code using Node.js:
 
 - Running it **directly from the terminal**
 
@@ -96,7 +96,7 @@ npm init
 
 - Open an **editor** and start coding
 
-To **apply default values** to all questions about the project's characteristics, just type: 
+To **apply default values** to all questions about the project's characteristics, just type in: 
 
 ```js
 npm init -y
@@ -108,7 +108,7 @@ npm init -y
 
 # Configuration (package.json)
 
-The `package.json` file is an object, which holds a **metadata** key, and **general information** about a project.
+The `package.json` file is an object, which holds a **metadata** key and **general information** about a certain project.
 
 Here is a part of the information, discoverable in a `package.json` file:
 
