@@ -146,7 +146,7 @@ Object’s **keys** will always be the **same**. Check more information for the 
 ## HTML 
 You are **provided** with an **HTML file** to test your table in the **browser**:
 
-```html
+```js
 <!DOCTYPE html>
 <html lang="en">
 
@@ -222,7 +222,7 @@ JsonToHtmlTable('\[\{"Name":"Peter \<div\>-a","Age":20,"City":"London"\},\{"Name
 [output]
 \<table\>
    \<tr\>\<th\>Name\</th\>\<th\>Age\</th\>\<th\>City\</th\>\</tr\>
-   \<tr\>\<td\>Peter &lt;div&gt;-a\</td\>\<td\>20\</td\>\<td\>London\</td\>\</tr\>
+   \<tr\>\<td\>Peter \&lt;div\&gt;-a\</td\>\<td\>20\</td\>\<td\>London\</td\>\</tr\>
    \<tr\>\<td\>George\</td\>\<td\>18\</td\>\<td\>Liverpool\</td\>\</tr\>
    \<tr\>\<td\>Tom\</td\>\<td\>18\</td\>\<td\>Manchester\</td\>\</tr\>
 \</table\>
