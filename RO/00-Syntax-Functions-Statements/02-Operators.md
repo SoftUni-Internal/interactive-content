@@ -14,14 +14,14 @@ Arithmetic operations return a single numerical value as a result.
 
 | **Operator** | **Description** |
 | --- | --- |
-| + | Addition |
-| ++ | Increment|
-| - | Subtraction |
-| -- | Decrement |
+| \+ | Addition |
+| \+\+ | Increment|
+| \- | Subtraction |
+| \-\- | Decrement |
 | \* | Multiplication | 
 | \*\* | Exponentiation (ES2016 onward) |
-| / | Division |
-| % | Modulus division (remainder) |
+| \/ | Division |
+| \% | Modulus division (remainder) |
 
 
 
@@ -146,8 +146,8 @@ Below are some of the commonly used assignment operators:
 | x = x + y | x += y | Addition assignment |
 | x = x - y | x -= y | Subtraction assignment |
 | x = x \* y | x \*= y | Multiplication assignment |
-| x = x / y | x /= y | Division assignment |
-| x = x % y | x %= y | Remainder assignment |
+| x = x \/ y | x \/= y | Division assignment |
+| x = x \% y | x \%= y | Remainder assignment |
 | x = x \*\* y | x \*\*= y | Exponentiation assignment |
 
 You can either use the complete expression or its shorthand representation.
@@ -192,10 +192,10 @@ Using the shorthand division assignment is the same as doing `y = y / a`.
 | === | Checks for **equal value** and **equal type** |
 | != | Checks whether two values are different |
 | !== | Checks whether the** values and their types** are equal |
-| > | Checks whether left value of the left operand is **greater than** the right |
-| >= | **Greater than** or **equal to** |
-| < | **Less than** |
-| <= | **Less than** or **Equal to** |
+| \> | Checks whether left value of the left operand is **greater than** the right |
+| \>= | **Greater than** or **equal to** |
+| \< | **Less than** |
+| \<= | **Less than** or **Equal to** |
 
 Comparison operations evaluate to boolean results, the result can either be `true` or `false`.
 
