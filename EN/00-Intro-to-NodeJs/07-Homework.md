@@ -231,7 +231,7 @@ Once we require our HTTP module, we can create our server via a `createServer` f
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-24.jpg" /]
 
-When you do that, just open the Terminal with **(Ctrl +** `\`**)** and run the server with the `node index` command.
+When you do that, just open the Terminal with **(Ctrl +** \`**)** and run the server with the `node index` command.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-25.jpg" /]
 
