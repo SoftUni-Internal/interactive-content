@@ -67,7 +67,7 @@ console.log('a + b = ', x)
 
 Multiplying is done with the `*` operator, and division with the `/` operator.
 
-```jv live
+```js live
 let a = 20;
 let b = 4;
 let x;
