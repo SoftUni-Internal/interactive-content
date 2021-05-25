@@ -1769,7 +1769,7 @@ The IP addresses must be split with a comma, and each line of IP addresses must 
 | **Input** | **Output** |
 | --- | --- |
 | `IP=FE80:0000:0000:0000:0202:B3FF:FE1E:8329 message='Hey&son' user=mother` | child0:  |
-| `IP=192.23.33.40 message='Hi&mom!' user=child0 | 192.23.33.40 => 1.` |
+| `IP=192.23.33.40 message='Hi&mom!' user=child0` | 192.23.33.40 => 1. |
 | `IP=192.23.30.40 message='Hi&from&me&too' user=child1` | child1:  |
 | `IP=192.23.30.42 message='spam' user=destroyer`| 192.23.30.40 \=\> 1. |
 | `IP=192.23.30.42 message='spam' user=destroyer` | destroyer:  |
