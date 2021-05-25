@@ -142,13 +142,13 @@ Below are some of the commonly used assignment operators:
 
 | **Operator** | **Shorthand** | **Description** |
 | --- | --- | --- |
-| x = y | x = y | Assigns a value to a variable |
-| x = x + y | x += y | Addition assignment |
-| x = x - y | x -= y | Subtraction assignment |
-| x = x \* y | x \*= y | Multiplication assignment |
-| x = x \/ y | x \/= y | Division assignment |
-| x = x \% y | x \%= y | Remainder assignment |
-| x = x \*\* y | x \*\*= y | Exponentiation assignment |
+| x \= y | x \= y | Assigns a value to a variable |
+| x \= x \+ y | x \+\= y | Addition assignment |
+| x \= x \- y | x \-\= y | Subtraction assignment |
+| x \= x \* y | x \*\= y | Multiplication assignment |
+| x \= x \/ y | x \/\= y | Division assignment |
+| x \= x \% y | x \%\= y | Remainder assignment |
+| x \= x \*\* y | x \*\*\= y | Exponentiation assignment |
 
 You can either use the complete expression or its shorthand representation.
 
@@ -188,14 +188,14 @@ Using the shorthand division assignment is the same as doing `y = y / a`.
 
 | **Operator** | **Description** | 
 | --- | --- |
-| == | Checks for equality between two values | 
-| === | Checks for **equal value** and **equal type** |
-| != | Checks whether two values are different |
-| !== | Checks whether the** values and their types** are equal |
+| \=\= | Checks for equality between two values | 
+| \=\=\= | Checks for **equal value** and **equal type** |
+| \!\= | Checks whether two values are different |
+| \!\=\= | Checks whether the** values and their types** are equal |
 | \> | Checks whether left value of the left operand is **greater than** the right |
-| \>= | **Greater than** or **equal to** |
+| \>\= | **Greater than** or **equal to** |
 | \< | **Less than** |
-| \<= | **Less than** or **Equal to** |
+| \<\= | **Less than** or **Equal to** |
 
 Comparison operations evaluate to boolean results, the result can either be `true` or `false`.
 
@@ -330,7 +330,7 @@ The resulting output may seem arbitrary but there is some logic behind this:
 - `null` is **falsy**
 - 0 and `undefined` are **falsy**
 - `false` is **falsy**
-` `true` is **truthy**
+- `true` is **truthy**
 
 [/slide]
 
