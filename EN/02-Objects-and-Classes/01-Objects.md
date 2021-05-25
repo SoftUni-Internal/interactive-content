@@ -230,11 +230,7 @@ Set them as **properties** of an object and **return** it.
 cityRecord('Tortuga', 7000, 15000)
 [/input]
 [output]
-\{
-  name: 'Tortuga',
-  population: 7000,
-  treasury: 15000
-\}
+\{ name: 'Tortuga', population: 7000, treasury: 15000 \}
 [/output]
 [/test]
 [test open]
@@ -242,11 +238,7 @@ cityRecord('Tortuga', 7000, 15000)
 cityRecord('Santo Domingo', 12000, 23500)
 [/input]
 [output]
-\{
-  name: 'Santo Domingo',
-  population: 12000,
-  treasury: 23500
-\}
+\{ name: 'Santo Domingo', population: 12000, treasury: 23500 \}
 [/output]
 [/test]
 [test]
@@ -254,11 +246,7 @@ cityRecord('Santo Domingo', 12000, 23500)
 cityRecord('Hong Kong', 50000, 45262)
 [/input]
 [output]
-\{
-  name: 'Hong Kong',
-  population: 50000,
-  treasury: 45262
-\}
+\{ name: 'Hong Kong', population: 50000, treasury: 45262 \}
 [/output]
 [/test]
 [test]
@@ -266,11 +254,7 @@ cityRecord('Hong Kong', 50000, 45262)
 cityRecord('California', 75203720, 45121262)
 [/input]
 [output]
-\{
-  name: 'California',
-  population: 75203720,
-  treasury: 45121262
-\}
+\{ name: 'California', population: 75203720, treasury: 45121262 \}
 [/output]
 [/test]
 [test]
@@ -278,11 +262,7 @@ cityRecord('California', 75203720, 45121262)
 cityRecord('Paris', 75203720, 45121262)
 [/input]
 [output]
-\{
-  name: 'Paris',
-  population: 75203720,
-  treasury: 45121262
-\}
+\{ name: 'Paris', population: 75203720, treasury: 45121262 \}
 [/output]
 [/test]
 [test]
@@ -290,11 +270,7 @@ cityRecord('Paris', 75203720, 45121262)
 cityRecord('Barcelona', 47297302, 91231262)
 [/input]
 [output]
-\{
-  name: 'Barcelona',
-  population: 47297302,
-  treasury: 91231262
-\}
+\{ name: 'Barcelona', population: 47297302, treasury: 91231262 \}
 [/output]
 [/test]
 [/tests]
