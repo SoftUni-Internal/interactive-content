@@ -35,13 +35,10 @@ This is how the app looks like:
 [image assetsSrc="Unit-Testing-NUnit-Homework(16).png" /]
 
 <------------------------------------>
-asd
 
 [image assetsSrc="Unit-Testing-NUnit-Homework(17).png" /]
-dsa
 <------------------------------------>
 
-dsa
 [image assetsSrc="Unit-Testing-NUnit-Homework(18).png" /]
 
 
