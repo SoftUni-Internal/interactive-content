@@ -1,5 +1,5 @@
 [slide]
-# Problem:: Math Operations
+# Problem: Math Operations
 [code-task title="Math Operations" taskId="js-syntax-functions-statements-mathops" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -132,7 +132,7 @@ calculate(11, 2, '\*\*')
 
 
 [slide]
-# Problem:: Sum of Numbers N...M
+# Problem: Sum of Numbers N...M
 [code-task title="Sum of Numbers N...M" taskId="js-syntax-functions-statements-sumofnumsnm" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
