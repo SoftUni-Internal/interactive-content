@@ -1,4 +1,4 @@
-# Unit Testing a C# Web App *
+# Unit Testing a C# Web App 
 
 [slide hideTitle]
 
