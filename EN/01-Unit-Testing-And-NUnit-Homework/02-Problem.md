@@ -35,11 +35,13 @@ This is how the app looks like:
 [image assetsSrc="Unit-Testing-NUnit-Homework(16).png" /]
 
 <------------------------------------>
+asd
 
 [image assetsSrc="Unit-Testing-NUnit-Homework(17).png" /]
-
+dsa
 <------------------------------------>
 
+dsa
 [image assetsSrc="Unit-Testing-NUnit-Homework(18).png" /]
 
 
@@ -80,8 +82,6 @@ The code, that we shall unit test, are the controller classes HomeController and
 To create the unit tests, we need to create a new app of type "**NUnit Test Project**" in your Visual Studio solution:
 
 [image assetsSrc="Unit-Testing-NUnit-Homework(20).png" /]
-
-
 
 [/slide]
 
