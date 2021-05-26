@@ -211,9 +211,9 @@ Create a program that performs different operations on an array of elements. Imp
 
 - **Sum(a)** - calculates the sum of all elements from the input array
 
-- **Sum(1/a) **- calculates the sum of the inverse values (1/a) of all elements from the array
+- **Sum(1/a)**- calculates the sum of the inverse values (1/a) of all elements from the array
 
-- **Concat(a) **- concatenates the string representations of all elements from the array
+- **Concat(a)**- concatenates the string representations of all elements from the array
 
 The **input** comes as an array of number elements.
 
