@@ -4,6 +4,7 @@
 
 # Test Classes and Test Methods
 
+
 [video src="https://videos.softuni.bg/hls/PROFESSIONAL-MODULES/QA/2021-04-QA-Automation/02.Unit-Testing/5.nunit-basics-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To be able to work with **NUnit** framework you will need **3** main components:
@@ -61,6 +62,7 @@ public class SummatorTests {
 [slide hideTitle]
 
 # Initialization and Cleanup Methods
+
 
 Sometimes we will have a more expensive and heavy operations that will take a time.
 
