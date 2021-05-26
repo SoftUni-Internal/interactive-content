@@ -895,7 +895,7 @@ function adapter(input, code) {
 [task-description]
 ## Description
 
-Create a program that receives a **number** and five operations. Perform the operations **sequentially** by starting with the **input number** and using the result of every operation as starting point for the next one. Print the result of every operation in order. The operations can be one of the following:
+Create a program that receives a **number** and five operations. Perform the operations **sequentially** by starting with the **input number** and using the result of every operation as a starting point for the next one. Print the result of every operation in order. The operations can be one of the following:
 
 -   **chop**  - divide the number by two
 -   **dice** - find the square root of the number
