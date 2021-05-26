@@ -39,20 +39,6 @@ Ensure that the **code coverage** is high and that all interesting cases are cov
 
 Test the **private methods** indirectly, but especially designed invocations of the public methods.
 
-[hints]
-[hint]
-Create a Visual Studio solution, holding two projects:
-
-- **CircularQueue** – it will hold the `CircularQueue<T>` class, which should be unit tested
-
-- **CircularQueue.Tests** – it will hold the **test classes**, which cover the circular queue functionality
-
-You may implement the following **test cases**:
-
-[image assetsSrc="Unit-Testing-NUnit-Homework(3).png" /]
-
-[/hint]
-[/hints]
 
 [/slide]
 
