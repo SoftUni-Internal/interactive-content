@@ -4,15 +4,28 @@
 
 # What is HTTP?
 
-**HTTP** means **Hyper Text Transfer Protocol**, it is an application-layer protocol.
+**Hyper Text Transfer Protocol** or **HTTP**, is an application-level protocol for distributed, collaborative, hypermedia information systems, between a web client and a server.
 
-**HTTP** is a text-based **client-server** protocol used for transferring Web resources, like HTML files or images.
+**HTTP** is a text-based **client-server** protocol that can be used for transferring Web resources, like HTML files, images, query results, and more, by using a standardized way of communication. 
 
-It is **text-based** protocol working on a **request-response** model.
+What makes HTTP a powerful protocol are the following features:
 
-HTTP relies on a **URL**s and provides **metadata** in the headers.
+- Connectionless: The web browser and the server are not connected, when the web browser sends a request to the server the connection is created
 
-Every request is individual, HTTP is **stateless**.
+The server is obligated to respond and after the response, it proceeds, the connection between both is terminated. 
+
+The only time when web client and web server know about each other during current request and response only.
+
+- Media independence: There is no restriction about what kind of data type can be sent by HTTP
+
+If the web browser has specified a content type (MIME-type) and the webserver can handle such data content, the HTTP request will be handled successfully.
+
+- Stateless: The web server and the web client are not aware of each other all the time, which means that
+the connection is created only when a request is made
+
+That way neither the client nor the browser retain information between requests, and often cookies are used to overcome this issue.
+
+
 
 [/slide]
 
@@ -20,23 +33,25 @@ Every request is individual, HTTP is **stateless**.
 
 # Request-Response Model
 
-With the **request-response** model, we have a client and a server.
+When using HTTP protocol in the majority of the cases we have client program and server program, where:
 
-The client program is running at the **end-host**.
-
-For example, in the **browser**, his main job is to **request** data.
-
-While the server program is running on a **server**.
-
-For example, on a **web server**.
-
-And His main job is to provide the requested data.
+- Client program is a web browser (Google Chrome, Mozilla Firefox, Safari, etc.) that can start the connection
+- Server program is a web server, which is up and running, waiting for requests that could be written (created) using different programming languages, for example:
+   - [ASP.Net Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core) - CSharp
+   - [Spring](https://spring.io/) - Java
+   - [Node.js](https://nodejs.org/en/about/) - JavaScript
+   - [Django](https://www.djangoproject.com/) - Python
 
 For example:
 
 [image assetsSrc="Angular-Introduction.png" /]
 
-As we can see, the client sends a **request**, and the server answers with a **response**.
+In this example a web server sends a "GET" request for a file named "index.html", using HTTP/2.0 protocol, which "2.0" is the latest version of the HTTP protocol.
+
+
+And the server is obligated to return a response, and in this case, the server agrees to use the HTTP/2.0 protocol.
+
+The actual response is "200 OK" which is self-explanatory and also a text is returned "Welcome to our Web site!".
 
 [/slide]
 
@@ -50,12 +65,7 @@ We send **GET** requests when we want to obtain data from the server.
 
 Here is an example request:
 
-```
-    GET /courses/about.aspx HTTP/1.1
-    Host: www.softuni.com
-    User-Agent: Mozilla/5.0
-    <CRLF>
-```
+[image assetsSrc="Angular-Get-Request-Example.png" /]
 
 On the first line is the **request type**, the **requested resource**, and the **protocol version**.
 
@@ -65,15 +75,7 @@ The **Host**, the **User-Agent**, and the **body** are on the following lines.
 
 This response will look like this:
 
-```
-    HTTP/1.1 200 OK
-    Date: Mon, 5 Jul 2010 13:09:03 GMT
-    Server: Microsoft-HTTPAPI/2.0
-    Last-Modified: Mon, 12 Jul 2010 15:33:23 GMT
-    Content-Length: 54
-    <CRLF>
-    <html><title>Hello</title>Welcome to our site</html>
-```
+[image assetsSrc="Angular-Get-Responce-Example.png" /]
 
 In the first line, we see the **protocol version** and the **status code**.
 
