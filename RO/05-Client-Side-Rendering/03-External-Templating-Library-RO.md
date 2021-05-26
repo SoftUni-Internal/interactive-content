@@ -1,4 +1,4 @@
-# Librărie Externă de Șablonare
+# lit-html
 
 [slide hideTitle]
 
