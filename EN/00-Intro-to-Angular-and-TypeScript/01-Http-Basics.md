@@ -65,7 +65,12 @@ We send **GET** requests when we want to obtain data from the server.
 
 Here is an example request:
 
-[image assetsSrc="Angular-Get-Request-Example.png" /]
+```js
+    GET /courses/about.aspx HTTP/2.0
+    Host: www.softuni.com
+    User-Agent: Mozilla/5.0
+    <CRLF>
+```
 
 On the first line is the **request type**, the **requested resource**, and the **protocol version**.
 
@@ -75,7 +80,15 @@ The **Host**, the **User-Agent**, and the **body** are on the following lines.
 
 This response will look like this:
 
-[image assetsSrc="Angular-Get-Responce-Example.png" /]
+```js
+    HTTP/1.1 200 OK
+    Date: Mon, 5 Jul 2019 13:09:03 GMT
+    Server: Microsoft-HTTPAPI/2.0
+    Last-Modified: Mon, 12 Jul 2010 15:33:23 GMT
+    Content-Length: 54
+    <CRLF>
+    <html><title>Hello</title>Welcome to our site</html>
+```
 
 In the first line, we see the **protocol version** and the **status code**.
 
