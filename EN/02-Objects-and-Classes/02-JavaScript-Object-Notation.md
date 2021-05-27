@@ -5,9 +5,9 @@
 
 JSON, short for **JavaScript Object Notation**, is a **text-based** format for data exchange.
 
-It is **language independent**, although it is most often used in the context of JavaScript-based projects, such as websites and single-page applications.
+It is **language-independent**, although it is most often used in the context of JavaScript-based projects, such as websites and single-page applications.
 
-JSON is a method of storing information in an **organized** and easily **understandable** approach. 
+JSON is a way of storing information in an **organized** and easily **understandable** approach. 
 
 ```js
 {
@@ -21,7 +21,7 @@ JSON is a method of storing information in an **organized** and easily **underst
 
 The syntax of JSON closely resembles that of a JavaScript **object** - it consists of **key-value** pairs, and can serve as a **representation** of all JavaScript data types, with the exception of functions.
 
-Similarly to XML, it can be used to store data in a **hierarchical** order.
+Similar to XML, it can be used to store data in a **hierarchical** order.
 
 [/slide]
 
@@ -99,7 +99,7 @@ console.log(notebookData);
 console.log(cityData);
 ```
 
-As evident by the output, `stringify` returns a ready for transfer **JSON** string.
+As evident by the output, `stringify` returns a ready-for-transfer **JSON** string.
 
 [/slide]
 
@@ -126,7 +126,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-You are tasked with creating an HTML table of students and their scores. 
+Your task is to create an HTML table that contains students and their scores. 
 
 You will receive a single string representing an **array of objects**. 
 
@@ -135,7 +135,7 @@ The table’s headings should be equal to the **object’s keys**, while **each 
 Any **text values** in an object should be **escaped** in order to avoid introducing dangerous code into the HTML.  
  
 ## Input 
-The **input** comes a **single string argument** (the array of objects). 
+The **input** comes as a **single string argument** (the array of objects). 
 
 ## Output 
 The **output** should be printed to the console – for each **entry row** in the input, print the **object representing it**. 
