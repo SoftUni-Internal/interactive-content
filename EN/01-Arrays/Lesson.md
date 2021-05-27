@@ -1,1 +1,1 @@
-# Arrays - Coming Soon
+# Arrays
