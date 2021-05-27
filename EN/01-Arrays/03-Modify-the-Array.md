@@ -5,15 +5,15 @@
 
 # Add Elements
 
-To modify arrays in JavaScipt **methods** similar to the methods that come from the **Java stream**, can be used.
+The **methods** used to modify arrays in JavaScipt are similar to the ones in the **Java stream**.
 
-When any of the following **method** is applied, it will **change** (modify) the original array. 
+When any of the following **methods** is applied, it will **change** (modify) the original array. 
 
 ## Push
 
-The `array.push()` method adds **one or more elements** to the end of an array and **returns** the new **length** of the array.
+The `array.push()` method adds **one or more elements** to the end of an array and **returns** its **new length**.
 
-This method is similar to the `STACK.push(E element)` in Java.
+It is similar to the `STACK.push(E element)` method in Java.
 
 ```js live
 let nums = [10, 20, 30, 40, 50, 60, 70];
@@ -25,9 +25,10 @@ let insertElement = nums.push(80);
 console.log(insertElement);
 console.log(nums);
 ```
+
 ## Unshift
 
-The `array.unshift()` adds **one or more elements** to the **beginning** of an array and returns the **new length** of the array.
+The `array.unshift()` adds **one or more elements** to the **beginning** of an array and returns its **new length**.
 
 ```js live
 let nums = [40, 50, 60];
@@ -72,11 +73,11 @@ function adapter(input, code) {
 
 Write a function that processes **all the elements of an array one by one** and **creates a new array**. 
 
-Append each **negative** element to the **beginning**, and each **positive** (or 0) element, to the **end** of the new array. 
+Append each **negative** element to the **beginning** and each **positive** (or 0) element to the **end** of the new array. 
 
-The **input** comes as an **array** of string elements, holding **numbers**. 
+The **input** comes as an **array** of string elements representing **numbers**. 
 
-The **output** has to be **printed to the console**, each element on a **new line**.
+The **output** has to be **printed to the console** with each element on a **new line**.
 
 
 ## Example One
@@ -199,13 +200,17 @@ negativePositive([\-2, 3, 0, 5, \-6, 0, 8])
 
 [slide hideTitle]
 
-# Remove Elements
+# Removing Elements
 
 ## Pop
 
-The `array.pop()` method **removes** and **returns** the last element from an array and also decreases the **length** of the collection.
+The `array.pop()` method **removes** and **returns** the last element from an array. 
 
-This method is similar to the `STACK.pop()` in Java.
+It decreases the **length** of the collection.
+
+This method is similar to `STACK.pop()` in Java.
+
+Here is an example:
 
 ```js live
 let nums = [10, 20, 30, 40, 50, 60, 70];
@@ -221,7 +226,11 @@ console.log(nums);
 
 ## Shift
 
-The `array.shift()` method **removes** the **first** element from an array, **returns** that **removed element**, and changes the length of the array.
+The `array.shift()` method **removes** the **first** element from an array and **returns it**.
+
+It decreases the **length** of the array.
+
+This is how to use it:
 
 ```js live
 let nums = [10, 20, 30, 40, 50, 60, 70];
@@ -264,7 +273,7 @@ function adapter(input, code) {
 
 Write a function that **calculates** and **prints** the **sum** of the **first and the last elements** of an array. 
 
-The **input** comes as an **array** of **string** elements, holding **numbers**. 
+The **input** comes as an **array** of **string** elements representing **numbers**.
 
 The **output** should be the **value, which is returned from the function**. 
 
@@ -341,9 +350,9 @@ solve(['5', '10'])
 
 # Splice
 
-The `array.splice()` **changes** the contents of an array by **deleting**, **adding**, or **replace** elements to a specific index.
+The `array.splice()` method **changes** the contents of an array by **deleting**, **adding**, or **replacing** elements at a specific index.
 
-This method is similar to the `remove(int index)` and `ArrayList.addAll()` methods in Java, but in Java there are is **no option for removing** multiple elements.
+It is similar to the `remove(int index)` and `ArrayList.addAll()` methods in Java but with the additional option of **removing multiple elements**.
 
 ``` js live
 let nums = [1, 3, 4, 5, 6];
@@ -361,15 +370,15 @@ let el = nums.splice(2, 1); //Only two arguments when deleting
 console.log(nums); 
 console.log(el);
 ```
-In first example `array.splice()` receives **three** arguments:
+
+In the first example, `array.splice()` receives **three** arguments:
 
 - First argument: **starting index** of the operation
-- Second argument: **how many elements to delete**
+- Second argument: **number of elements to delete**
 
-When **deleting** elements, there is **no need** for passing the third argument.
+When **deleting** elements, there is **no need** to pass the third argument.
 
-- Third element: to pass **three** or **more** elements and those are the elements that will be **added** to the given index
-
+- Third argument: the elements that will be **added** to the given index
 
 [/slide]
 
@@ -400,9 +409,9 @@ console.log(fruits.fill('blueberry'));
 
 # Reverse
 
-The `array.fill()` reverses the array, where the **first** array element becomes the **last**, and the **last** array element becomes the **first**.
+The `array.reverse()` method reverses an array, where the **first** array element becomes the **last**, and the **last** array element becomes the **first**.
 
-In Java, **there is no** similar method, rather a **custom** reverse method should be **created**.
+In Java, **there is no** similar method.
 
 ```js live
 let arr = [1, 2, 3, 4];
@@ -417,7 +426,7 @@ console.log(arr);
 
 The `array.sort()` method **sorts the items** of an array.
 
-This method is similar to the `Stream sorted()` method in Java.
+It is similar to the `Stream sorted()` method in Java.
 
 Depending on the provided **compare function**, the sort order can either be **alphabetic** or **numeric**, and either **ascending** (up) or **descending** (down). 
 
@@ -425,9 +434,9 @@ By default, the `array.sort()` method sorts the values as **strings in alphabeti
 
 If we want to sort numbers or other values, we need to provide a correct **compare function.** 
 
-In this example, we have an array of names. 
+In the following example, we have an array of names. 
 
-If we call the `array.sort()` method directly, without passing a **compare function**, the method will work correctly - it will sort the names in ascending alphabetic order.
+If we call the `array.sort()` method directly, without passing a **compare function**, the method will sort the names in ascending alphabetic order.
 
 ```js live
 let names = ['Peter', 'George', 'Mary'];
@@ -436,7 +445,7 @@ names.sort();
 console.log(names); 
 ```
 
-However, if we have an array that contains numbers, not strings, the result will be **unexpected and incorrect**. 
+However, if we have an array that contains numbers, the result will be **unexpected and incorrect**. 
 
 Without a passed **compare function**, the `array.sort()` method will treat the array as an array of strings, not as an array of numbers.
 
