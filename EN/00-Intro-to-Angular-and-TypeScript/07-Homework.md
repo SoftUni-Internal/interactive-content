@@ -158,14 +158,14 @@ We should begin by creating a parent class, that will hold all properties, share
 Looking at the problem description, we see the following structure for our parent object:
 
 ```
-    \{
+    {
       age: Number,
       name: String,
       salary: Number,
       tasks: [],
       work: Function,
       collectSalary: Function
-    \}
+    }
 ```
 
 Data variables will be part of the object attached to its local context with **this** inside the **constructor**.
