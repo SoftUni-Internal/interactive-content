@@ -17,14 +17,14 @@
 - Initial module properties
 
 **4. Data Bindings & Templates**
-- From Model to View
-- From View to Model
+- From model to view
+- From view to model
 - Two-way data binding
 
 **5. Lifecycle Hooks**
 
 **6. Component Interaction**
-- From Parent to Child
-- From Child to Parent
+- From parent to child
+- From child to parent
 
 [/slide]

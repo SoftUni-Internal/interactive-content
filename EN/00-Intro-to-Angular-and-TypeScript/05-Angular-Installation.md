@@ -4,6 +4,9 @@
 
 # Create a New App
 
+Intro-to-Angular-and-Typescript-22-23-Angular-Installation
+Intro-to-Angular-and-Typescript-24-Finding-Information
+
 To install **Angular CLI**, we need to write the following command in the terminal: `npm install -g @angular/cli`.
 
 This command will install **Angular CLI** globally.
@@ -27,6 +30,8 @@ You can find more information on [Official Website](https://angular.io) or at th
 [slide hideTitle]
 
 # IDE Support
+
+Intro-to-Angular-and-Typescript-25-IDE-Support
 
 Most of the modern **IDEs** support TypeScript or have **plugins** that we can install.
 

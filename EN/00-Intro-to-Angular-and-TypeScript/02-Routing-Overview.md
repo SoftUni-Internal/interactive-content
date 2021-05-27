@@ -4,6 +4,7 @@
 
 # What is Routing?
 
+Intro-to-Angular-and-Typescript-8-9-Routing-Overview
 
 **Routing** is the **client-side** navigation and it is responsible for **switching** between different views (pages).
 
@@ -43,6 +44,8 @@ Here we have **many pages** (**many views**), which are waiting to be **rendered
 
 # Single Page Application
 
+Intro-to-Angular-and-Typescript-10-Single-Page-Applications
+
 The **router navigation** will load the correct resource when the **location is changed**.
 
 In reverse, a difference in the content represents itself in the **URL**.
@@ -60,4 +63,3 @@ With this type of routing, we get many **benefits**:
 - Smooth transitions between pages 
 
 [/slide]
-s

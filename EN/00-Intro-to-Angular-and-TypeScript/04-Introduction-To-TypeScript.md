@@ -4,6 +4,8 @@
 
 # TypeScript Overview
 
+Intro-to-Angular-and-Typescript-14-15-Introduction-to-TypeScript
+
 **TypeScript** is a **JavaScript superset** developed by Google and Microsoft.
 
 It allows us to write **typed** JavaScript, but it does not force us.
@@ -62,6 +64,8 @@ The variable **types** in TypeScript are:
 
 # Classes in TypeScript
 
+Intro-to-Angular-and-Typescript-17-Classes
+
 The **classes** in **TypeScript** are a little bit different from the ones in JavaScript.
 
 **TypeScript** gives us **access modifiers** and functions can have a **return type**.
@@ -98,6 +102,8 @@ After we have instantiated the **Greeter** class, we have also printed it to the
 [slide hideTitle]
 
 # Inheritance in TypeScript
+
+Intro-to-Angular-and-Typescript-18-Inheritance
 
 **Inheritance** in **TypeScript** is the same as the one in **JavaScript**.
 
@@ -138,6 +144,8 @@ To the `bark()` and the `move()` methods, we added the **void** annotation becau
 
 # Interfaces
 
+Intro-to-Angular-and-Typescript-19-Interfaces
+
 The **interfaces** are another ability that TypeScript gives us.
 
 With **interfaces**, we can take apart the most used properties and **re-use** them instead of writing them every time.
@@ -174,6 +182,8 @@ This function will return a string with `Hi, John` printed to the console.
 [slide hideTitle]
 
 # Generics and Enumerations
+
+Intro-to-Angular-and-Typescript-20-Generics-and-Enumerations
 
 Generics gives us a **more flexible** and more **re-usable** code, also make the component to work with **more than one type**.
 
@@ -237,6 +247,8 @@ Unlike the Numeric enums, the **String-Based** enumerations can store strings as
 [slide hideTitle]
 
 # Modules
+
+Intro-to-Angular-and-Typescript-21-Modules
 
 Modules in TypeScript are the same as the ones in **ES6**.
 

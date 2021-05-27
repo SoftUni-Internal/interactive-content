@@ -4,6 +4,8 @@
 
 # What is Angular?
 
+Intro-to-Angular-and-Typescript-11-12-Angular-Overview
+
 **Angular** is an open-source **web application framework**, developed by **Google**, written in [TypeScript](https://en.wikipedia.org/wiki/TypeScript), made for building **enterprise-level front-end** applications.
 
 Angular concentrates on best the **front-end practices** and the **end-to-end tooling**, as well **Angular CLI** gives us a **high-quality** build process, which allows us to create quickly a very well structured app.
@@ -43,6 +45,8 @@ That means whenever there is an HTML tag with `my-app`, the **AppComponent** wil
 [slide hideTitle]
 
 # Angular Versions
+
+Intro-to-Angular-and-Typescript-13-Angular-Versions
 
 The first version is **Angular 1**, which now is called **AngularJS**.
 

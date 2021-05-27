@@ -1,8 +1,8 @@
-# Summary
-
 [slide hideTitle]
 
 # Summary
+
+Intro-to-Angular-and-Typescript-27-Summary
 
 ## In this lesson you learned:
 

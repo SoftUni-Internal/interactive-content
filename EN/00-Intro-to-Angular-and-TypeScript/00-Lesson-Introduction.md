@@ -4,6 +4,8 @@
 
 # Lesson Contents
 
+Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents
+
 ## In this lesson you will learn:
 
 **1. What is HTTP**

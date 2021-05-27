@@ -4,6 +4,8 @@
 
 # What is HTTP?
 
+Intro-to-Angular-and-Typescript-3-4-HTTP-Basics
+
 **Hypertext Transfer Protocol** or **HTTP** is an application-level protocol for distributed, collaborative, hypermedia information systems, between a web client and a web server.
 
 **HTTP** is a text-based **client-server** protocol that can be used for **transferring** Web resources, like **HTML** files, **images**, **query results**, and more, by using a **standardized** way of communication. 
@@ -29,6 +31,8 @@ That way neither the client nor the browser **retain information between request
 [slide hideTitle]
 
 # Request-Response Model
+
+Intro-to-Angular-and-Typescript-5-6-HTTP-Request-Response-Protocol
 
 When using HTTP protocol in the **majority** of the cases we have **communication** between **client** program and **server** program, where:
 
@@ -58,6 +62,8 @@ You can read more about status codes in [MDN Web Documentation](https://develope
 [slide hideTitle]
 
 # HTTP Request Examples
+
+Intro-to-Angular-and-Typescript-7-Example - Hyper-Text-Transfer-Protocol
 
 By default, when we sent a request, it will be **GET**.
 
