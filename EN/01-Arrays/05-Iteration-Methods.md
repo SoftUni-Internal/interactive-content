@@ -5,7 +5,9 @@
 
 The `array.forEach()` method **executes** a provided function **once** for each array element.
 
-This method is similar to the `Stream.forEach()` in Java.
+It is similar to the `Stream.forEach()` method in Java.
+
+Here is an example:
 
 ```js live
 const names = ['Peter', 'George', 'Arnold'];
@@ -15,12 +17,15 @@ names.forEach(name => { copy.push(name); });
 
 console.log(copy);
 ```
-In this example, forEach is used with a **lambda function**, which **accepts** one parameter - the **current element** from the array.
 
-ForEach can accept **two parameters**:
+In this example, `.forEach()` is used with a **callback**, which **accepts** one parameter - the **current element** from the array.
 
-- First parameter: the **current** element of the array
-- Second parameter: the **index**.
+The callback function can receive **two arguments**:
+
+- First argument: the **current** element of the array
+- Second argument: the **index**
+
+In the following example, the callback function has both parameters:
 
 ```js live
 const names = ['Peter', 'George', 'Arnold'];
@@ -28,18 +33,21 @@ const names = ['Peter', 'George', 'Arnold'];
 names.forEach((name, index) => console.log(`${index} -> ${name}`));
 
 ```
-ForEach method can not be stopped with `break`.
 
-Once executed it will **go through the entire collection**, and if the collection is very big it may cost **performance** issues.
+The `.forEach()` method cannot be stopped with `break`.
+
+Once executed it will **go through the entire array**, and if it is very big, it may cost **performance** issues.
 
 [/slide]
 
 [slide hideTitle]
 # Some
 
-The `array.some()` method tests whether at **least one element in the array** fulfill the the **condition** implemented by the **provided** function (**predicate**) and returns a boolean value.
+The `array.some()` method checks whether at **least one element in the array** meets the **requirements** set by the **given** function (**predicate**) and returns a boolean value.
 
-This method is similar to the `Stream.anyMatch()` in Java.
+It is similar to the `Stream.anyMatch()` method in Java.
+
+This is how to use this method:
 
 ```js live
 let array = [1, 2, 3, 4, 5];
@@ -56,7 +64,9 @@ console.log(array.some(isEven));
 [slide hideTitle]
 # Find
 
-The `array.find()` returns the **found value** in the array if an element in the array **satisfies** the provided condition, or undefined if not found.
+The `array.find()` returns the **first element** in the array that **satisfies** the provided condition or undefined if there is none.
+
+Here is an example:
 
 ```js live
 let numbers = [5, 12, 8, 130, 44];
@@ -72,9 +82,9 @@ console.log(found);
 [slide hideTitle]
 # Filter
 
-The `array.filter()` creates a new array with **filtered** elements only, which **satisfy** the given condition and **does not mutate** the array on which it is called.
+The `array.filter()` method returns a new array only with elements, which **satisfy** a given condition without **changing** the original.
 
-This method is similar to the `Stream.filter()` in Java.
+It is similar to the `Stream.filter()` method in Java.
 
 ```js live
 let numbers = [5, 12, 8, 130, 44, 3, 17];
@@ -89,9 +99,9 @@ console.log(filterNumbers);
 [slide hideTitle]
 # Map
 
-The `array.map()` creates a **new array** with the **results** of calling a provided function on **every element** in the calling array.
+The `array.map()` method creates a **new array** with the **results** of calling a provided function on **every element** in the calling array.
 
-This method is similar to the `Stream.map()` in Java.
+It is similar to the `Stream.map()` method in Java.
 
 ```js live
 let numbersAsStrings = ['1', '2', '3'];
@@ -102,7 +112,7 @@ console.log(numbers);
 
 ```
 
-It is also possible to **chain** methods:
+You can also also possible to **chain** methods like this:
 
 ```js live
 let numbersAsStrings = ['1', '2', '3'];
@@ -115,7 +125,7 @@ console.log(numbers);
 
 ```
 
-You can read more about the "map" in mathematics [here](https://en.wikipedia.org/wiki/Map_(mathematics)).
+You can read more about the "map" function in mathematics [here](https://en.wikipedia.org/wiki/Map_(mathematics)).
 [/slide]
 
 [slide hideTitle]
@@ -202,21 +212,21 @@ The `array.reduce()` method **executes** a reducer function on **each element** 
 
 [image assetsSrc="java-js-adv-arrays-02.png" /]
 
-The reducer function takes four arguments:
+The reducer function has four parameters:
 - Accumulator 
 - Current Value 
 - Current Index (Optional)
 - Source Array (Optional)
 
-The reducer function's **returned** value is **assigned** to the accumulator's **value**, which is the final **resulting** value.
+The reducer function's **return** value is **assigned** to the accumulator's **value**, which is the final **resulting** value.
 
-This method is similar to the `Stream.reduce()` in Java.
+This method is similar to `Stream.reduce()` in Java.
 
 ## Example One
 
-The `reduce()` method accepts two parameters:
+The `reduce()` method has two parameters:
 - Reducer function: which is created outside of the `reduce()` method
-- Starting value: in this case, is 0
+- Starting value: in this case, it is 0
 
 ```js live
 let numbers = [7, 6, 1, 5, 2, 13];
@@ -226,17 +236,17 @@ let result = numbers.reduce(sumReducer, 0);
 
 console.log(result);
 ```
-As the result, we receive the **sum** of every number in the array.
+As a result, we receive the **sum** of every number in the array.
 
 ## Example Two
 
-To receive the **average value** of the array, the reduce method has been used.
+We can use the `.reduce()` method to calculate the **average value** of the numbers in an array.
 
-In this example the reducer function receives **four** parameters:
+In this example, the reducer function has **four** parameters:
 - Accumulator: where the value will be stored
 - Current number (c)
-- Index (i) - it is **not used in this example**, it has to be declared because the `array.length` is needed
-- Array (arr) - to find average the array.length is needed
+- Index (i) - it is **not used in this example**, it is declared because we need to use the fourth parameter
+- Array (arr)
 
 ```js live
 let numbers = [7, 6, 1, 5, 2, 13];
@@ -246,7 +256,7 @@ let avarege = numbers.reduce((acc, c, i, arr) => acc + c /arr.length, 0);
 console.log(avarege);
 ```
 ## Example Three
-In this example, the `Math.max()` is used to find the biggest number in the array.
+In this example, the `Math.max()` function is used to find the biggest number in the array.
 
 ```js live
 let numbers = [7, 6, 1, 5, 2, 13];
@@ -257,11 +267,13 @@ console.log(max);
 ```
 The "acc" is the **biggest** number so far and "c" is the **current** number. 
 
-Using `Math.max()` the "acc" is **compared** to "c" and the **result** again is **stored** in "acc", the function will be **executed** until there are no more **elements** in the array.
+Using `Math.max()` the "acc" is **compared** to "c" and the **result** again is **stored** in "acc". 
 
-You can read more about **reduce** [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
+The function will be **executed** until there are no more **elements** in the array.
 
-Those were **not all methods** that can be executed on the array, for more information you can read the [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
+You can read more about the `.reduce()` method [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce).
+
+Those were **not all the methods** that can be executed on the array, for more information you can read the [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array).
 [/slide]
 
 
