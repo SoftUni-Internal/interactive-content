@@ -166,6 +166,7 @@ printCopyright("Noble Co. LLC");
 [/slide]
 
 [slide hideTitle]
+
 # Problem with Solution: Largest Number
 [code-task title="Largest Number" taskId="js-syntax-functions-statements-largest-number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -283,7 +284,7 @@ The largest number is -1.
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem with Solution: Circle Area
 [code-task title="Circle Area" taskId="js-syntax-functions-statements-circlearea" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -423,7 +424,7 @@ We could not calculate the circle area because we received a boolean.
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem with Solution: String Length
 [code-task title="String Length" taskId="js-syntax-functions-statements-stringlength" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

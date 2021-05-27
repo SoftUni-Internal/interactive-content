@@ -1,5 +1,5 @@
 # Homework
-[slide]
+[slide hideTitle]
 # Problem: Math Operations
 [code-task title="Math Operations" taskId="js-syntax-functions-statements-mathops" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -132,7 +132,7 @@ calculate(11, 2, '\*\*')
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Sum of Numbers N...M
 [code-task title="Sum of Numbers N...M" taskId="js-syntax-functions-statements-sumofnumsnm" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -252,7 +252,7 @@ sum('0.5', '0.5')
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Fruit
 [code-task title="Fruit" taskId="js-syntax-functions-statements-fruit" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -361,7 +361,7 @@ I need \\$0.05 to buy 0.01 kilograms of ppp.
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 # Problem: Greatest Common Divisor - GCD
 [code-task title="Greatest Common Divisor - GCD" taskId="js-syntax-functions-statements-gcd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -478,7 +478,7 @@ calculateGCD(145, 9)
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Same Numbers
 [code-task title="Same Numbers" taskId="js-syntax-functions-statements-samenumbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -596,7 +596,7 @@ true
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Time to Walk
 [code-task title="Time to Walk" taskId="js-syntax-functions-statements-timetowalk" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -707,7 +707,7 @@ calculateTime(1600, 1.95, 9.4)
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Road Radar
 [code-task title="Road Radar" taskId="js-syntax-functions-statements-roadradar" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -873,7 +873,7 @@ reckless driving
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Cooking by Numbers
 [code-task title="Cooking by Numbers" taskId="js-syntax-functions-statements-cookingbynums" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -991,7 +991,7 @@ cook(['10', 'fillet', 'chop', 'dice', 'chop', 'dice'])
 [/code-task]
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem: Validity Checker
 [code-task title="Validity Checker" taskId="js-syntax-functions-statements-validitycheck" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

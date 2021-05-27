@@ -184,7 +184,7 @@ This will also not work and will result in a **TypeError** because the **walk** 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # Problem with Solution: Aggregate Elements
 [code-task title="Aggregate Elements" taskId="js-syntax-functions-statements-aggregateelements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
