@@ -66,7 +66,7 @@ We send **GET** requests when we want to obtain data from the server.
 Here is an example request:
 
 ```js
-    GET /courses/about.aspx HTTP/2.0
+    GET /courses/about.aspx HTTP/1.1
     Host: www.softuni.com
     User-Agent: Mozilla/5.0
     <CRLF>

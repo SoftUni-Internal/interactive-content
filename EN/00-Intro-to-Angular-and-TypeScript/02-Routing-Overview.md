@@ -55,7 +55,7 @@ With this type of routing, we get many **benefits**:
 
 - We can use **browser history**
 
-- quicker **UX**
+- Quicker **UX**
 
 - Smooth transitions between pages 
 
