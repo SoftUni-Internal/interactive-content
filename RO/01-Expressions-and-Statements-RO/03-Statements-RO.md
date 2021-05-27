@@ -5,15 +5,15 @@
 
 **Acțiunile** pe care le execută un program sunt exprimate ca **instrucțiuni**. 
 
-Java suporta câteva tipuri diferite de instrucțiuni  și aici sunt câteva dintre ele:
-  * **Declaration statements** - declară variabilele locale și constante
-  * **Expression statements** - evaluează expresii
-  * **Selection statements** - selectează una dintre o serie de afirmații posibile
-  * **Iteration statements** - executa în mod repetat o declarație încorporată
-  * **Jump statements** - transferă controlul
+Java admite diferite de instrucțiuni și aici sunt câteva dintre ele:
+  * **Declaration** - declară constante și variabile locale
+  * **Expression** - evaluează expresii
+  * **Selection** - selectează o intrucțiune dint-o serie de instrucțiuni posibile
+  * **Iteration** - executa în mod repetat o instrucțiune încorporată
+  * **Jump** - transferă controlul
   
-Acțiunile obișnuite includ:
-- **Declararea** variabilei
+Cele mai utilizate instrucțiuni includ:
+- **Declararea** unei variabile
 
 Declararea unei variabile înseamnă **definirea** tipului său.
 
@@ -21,11 +21,11 @@ Declararea unei variabile înseamnă **definirea** tipului său.
   int counter;
   ```
 
-- **Atribuirea** unei valori
+- **Atribuirea** unei valori (inițializare)
 
-După ce declarați o variabilă, puteți atribui o valoare unei variabile.
+După ce declarați o variabilă, puteți să îi atribuiți o valoare.
 
-Atribuirea unei valori a variabilei înseamnă **stocarea** unei **valori** unei variabile.
+Atribuirea unei valori unei variabilei înseamnă **stocarea** unei **valori** într-o variabilă.
 
 ```java
 counter = 1;
@@ -37,13 +37,13 @@ counter = 1;
 int counter = 1;
 ```
 
-- **Tipărirea** valorii
+- **Tipărirea** unei valori
 
 ```java
 System.out.println(counter);
 ```
 
-- **Modificarea** valorii
+- **Modificarea** unei valori
 ```java
 counter++;
 ```
@@ -130,6 +130,6 @@ Orice proiect bun trebuie să aibă de asemenea o pagină de documentare bună.
 *există și multe alte tipuri de etichete*/
 ```
 
-Puteți învăța mai multe despre ele [here](https://www.oracle.com/java/technologies/javase/codeconventions-comments.html).
+Puteți învăța mai multe despre ele [aici](https://www.oracle.com/java/technologies/javase/codeconventions-comments.html).
   
 [/slide]

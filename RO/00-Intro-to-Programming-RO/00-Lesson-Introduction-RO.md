@@ -8,7 +8,7 @@
 
 ## În această lecție veți învăța:
 
-**1. Ce reprezintă codificarea**
+**1. Ce reprezintă codarea**
 
 - Cum să scrieți comenzi și programe simple 
 
@@ -18,7 +18,7 @@
 
 **3. Medii de dezvoltare (IDEs) pentru Java**
 
-- Cum să configurăm mediul nostru integrat de dezvoltare IDE pentru lucru
+- Cum să configurați un IDE 
 
 **4. Crearea și rularea aplicațiilor consolei**
 

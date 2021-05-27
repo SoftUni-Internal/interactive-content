@@ -1,28 +1,31 @@
 [slide hideTitle]
-# Bucla While sau Bucla For?
+# Diferența dintre Bucla While și Bucla For
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/05-while-loops/RO/Java-While-Loops-12-13-While-or-for-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Buclele `while` și `for` **repetă** o secvență de **code**.
+Buclele `while` și `for` **repetă** ambele un bloc de **cod**.
 
-Dar există diverse situații în care scrierea codului necesită fie prima buclă, fie celelalte. 
+Alegerea buclei de care avem nevoie depinde de situație și de scopul nostru final.
 
-Atunci când știm **de câte ori exact** vrem să repetăm bucla într-o anumită secvență de cod, folosim bucla  `for`.
+Atunci când știm **exact de câte ori** vrem să repetăm un anumit bloc de cod, folosim `bucla for`.
 ```java live
 for (int i = 0; i <= 5; i++) {
     System.out.println(i);
 }
 ```
+**Bucla for** este definită într-un mod mai detaliat în comparație cu **bucla while**. Aceasta este structurată în felul următor:
 
-Este, de obicei, potrivit pentru buclele a căror inițializare și incrementare sunt instrucțiuni simple și înrudite ca logică. 
+- Instrucțiunea 1 setează o variabilă înainte de începutul buclei (int `i` = 0)
 
-Este mult mai compactă decât bucla `while` și adună declarațiile care controlează bucla în același loc. 
+- Instrucțiunea 2 definește o condiție până la care bucla este executată (`i` mai mic sau egal cu 5). Dacă condiția este **true**, corpul buclei va fi executat. Dacă este **false** - bucla se va opri.
 
-Dar apar mai multe probleme **complexe** atunci când numărul iterațiilor  depinde de o anumită **condiție** și nu pot fi prevăzute dinainte.
+- Instrucțiunea 3 mărește valoarea variabilei (`i`++) de fiecare dată când blocul de cod din buclă este executat
 
-Aceasta înseamnă că nu putem ști în avans **de câte ori** trebuie să repetăm bucla. 
+Pot exista multe probleme **complexe** în care numărul iterațiilor depinde de o anumită **condiție** și nu pot fi prevăzute.
 
-In această situație este mai bine să folosim bucla `while`.
+Acest lucru înseamnă că nu putem ști în avans **de câte ori** trebuie să repetăm bucla. 
+
+În această situație este mai bine să folosim bucla `while`.
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -71,7 +74,7 @@ Scrieți un program care:
 
 ## Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | ---- | ---- |
 | 2 | 3 |
 | 4 |
@@ -131,14 +134,14 @@ public class Program {
 Scrieți un program care:
 
 * Citește un număr de pe consolă 
-* Citește următoarele comenzi
-* **Add** - Аdaugă 1 numărului
-* **Subtract** - Scade 1 din număr
-* **END** -  Imprimă numărul și oprește programul
+* Citește următoarele comenzi și execută acțiunile specificate:
+    * **Add** - Аdaugă **1** la număr
+    * **Subtract** - Scade **1** din număr
+    * **END** - Imprimă numărul și oprește programul
 
 ## Exemplu
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | ---- | ---- |
 | 5 | 6 |
 | Add |

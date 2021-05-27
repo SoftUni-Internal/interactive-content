@@ -20,24 +20,24 @@ public class Main {
 # Descriere
 În pauza de masă doriți să urmăriți un episod din serialul preferat.
 
-Sarcina dvs. este să scrieți un program care vă va ajuta să determinați dacă aveți suficient timp pentru a viziona episodul.
+Sarcina voastră este să scrieți un program care vă va ajuta să determinați dacă aveți suficient timp pentru a viziona episodul.
 
 În pauza de masă petreceți timpul pentru a lua masa și pentru a vă relaxa.
 
-Timpul pentru prânz va fi **1/8** din pauza, iar timpul pentru relaxare va fi **1/4** din pauza.
+Timpul pentru prânz va fi **1/8** din pauză, iar timpul pentru relaxare va fi **1/4** din pauză.
 
 ## Intrare
 Primiți 3 linii de pe consolă:
-- Numele seriei - un șir
-- Durata unui episod - un număr întreg în intervalul [10… 90]
+- Numele serialului - un **șir**
+- Durata unui episod - un **număr întreg** în intervalul [10… 90]
 - Durata pauzei - un număr întreg în intervalul [10 ... 120]
 
 ## Ieșire
-Imprimați pe consolă o linie:
+Imprimați pe consolă o singură linie în formatul următor:
 - Dacă timpul este suficient pentru a viziona episodul: **"You have enough time to watch** \{**name of the series**\} **and left with** \{**time left**\} **minutes free time."**
 - Dacă timpul nu este suficient: **"You don't have enough time to watch** \{**name of the series**\}**, you need** \{**time needed**\} **more minutes."**
 
-Rotunjiți timpul până la cel mai apropiat număr întreg.
+Rotunjiți **timpul** în sus la cel mai apropiat număr întreg.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|

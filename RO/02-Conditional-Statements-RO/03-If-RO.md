@@ -1,21 +1,22 @@
 [slide hideTitle]
-# Condiții Simple "if"
+# Condiții Simple "If"
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/RO/interactive-programming-basics-with-java-conditional-statements-14-15-simple-conditions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Una dintre cele mai importante instrucțiuni  din fiecare limbaj de programare este instrucțiunea`if`. 
+Unul dintre cele mai importante concepte din fiecare limbaj de programare este instrucțiunea `if`. 
 
-În programare adeseori  **verificăm  condiții particulare** și efectuăm diferite acțiuni în funcție de rezultatul verificării.
+În programare adeseori **verificăm condiții particulare** și efectuăm diferite acțiuni în funcție de rezultatul verificării.
 [image assetsSrc="02-usecase-if-statement.png" /]
-Acest lucru se execută prin condiția `if`, care are următoarea structură:
+
+Acest lucru se execută prin utilizarea condiției `if`, care are următoarea structură:
 ```java
 if (condition) {
   // condition body;
 }
 ```
 
-## Exemplu: Vreme
-Aici, dacă starea vremii ploioase la evaluează in `true`, atunci corpul instrucțiunii este executat.
+## Exemplu: Weather
+Aici, dacă starea vremii ploioase este evaluată ca fiind `true`, atunci corpul instrucțiunii este executat.
 ```java
 Scanner scanner = new Scanner(System.in);
 String weather = scanner.nextLine();
@@ -38,17 +39,17 @@ import java.util.Scanner;
 
 public class Program {
    public static void main(String[] args) {
-      // Scrieți codul aici
+      // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 # Descriere
-Scrieți un program pentru a verifica dacă vremea e rece:
+Scrieți un program pentru a verifica dacă vremea e răcoroasă:
 
-  * Citește o temperatură în Celsius (un număr real reprezentat în virgulă mobilă cu simplă precizie (float))
-  * Imprimă "**Freezing weather!**", dacă temperatura este **egală** sau **mai mică de 0**
+  * Citiți o temperatură în Celsius (un număr în virgulă mobilă - float)
+  * Imprimați "**Freezing weather!**" dacă temperatura este **egală** sau **mai mică decât 0**
   
 ## Exemplu
 

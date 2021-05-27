@@ -36,7 +36,7 @@ The demand for Java developers is currently among the highest.
 
 This greatly increases the chances of professional realization for those who acquire the necessary skills. 
 
-Java is used by about **7,1 million** programmers around the world (according to the website SlashData.co). 
+Java is used by more than **7,1 million** programmers around the world (according to the website SlashData.co). 
 
 Java is also one of the most suitable programming languages for **beginners**. 
 

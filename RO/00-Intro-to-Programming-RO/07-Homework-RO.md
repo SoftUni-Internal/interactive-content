@@ -1,6 +1,6 @@
 # Teme Pentru Acasă
 [slide hideTitle]
-# O problemă cu soluție: Print Hello Java
+# Problemă cu Soluție: Print Hello Java
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-36-37-Problem-and-solution-Print-Hello-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -19,9 +19,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program în limbajul Java care să execute următoarele:
-
-Tipărește "**Hello Java**" pe consolă
+Scrieți un program în limbajul Java care tipărește "**Hello Java**" pe consolă.
 [/task-description]
 [code-io /]
 [tests]
@@ -86,7 +84,7 @@ Scrieți un program în limbajul Java care să execute următoarele:
 [/slide]
 
 [slide hideTitle]
-# O problemă cu Soluție: Name and Expression
+# Problemă cu Soluție: Name and Expression
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-41-name-and-expression-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -106,7 +104,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care să tipărească "**Catlyn**" pe prima linie și să calculeze și să imprime rezultatul expresiei 5 + 3 pe cea de-a doua linie
+Scrieți un program care să tipărească "**Catlyn**" pe prima linie și să calculeze și să imprime rezultatul expresiei 5 + 3 pe cea de-a doua linie.
 [/task-description]
 [tests]
 [test open]
@@ -131,7 +129,7 @@ Catlyn
 [/slide]
 
 [slide hideTitle]
-# O problemă cu Soluție: Calculations
+# Problemă cu Soluție: Calculations
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-43-calculations-slution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -181,7 +179,7 @@ Scrieți un program care să calculeze și să imprime valoarea următoarelor ex
 [/slide]
 
 [slide hideTitle]
-# O problemă cu Soluție: Square of 7 * 7 Stars
+# Problemă cu Soluție: Square of 7 * 7 Stars
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/RO/Java-basics-introduction-to-programming-45-square-of-7-by-7-stars-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -200,9 +198,7 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care:
-
-Imprimă un pătrat format din 7 * 7 steluțe, ca în imaginea de mai jos:
+Scrieți un program care imprimă un pătrat format din 7 * 7 steluțe, ca în imaginea de mai jos:
 ```
 * * * * * * *
 * * * * * * *
@@ -262,13 +258,11 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care să execute următoarele:
-* Calculează suprafața dreptunghiului
-* Laturile dreptunghiului au valorile 5 și 10
+Scrieți un program care calculează aria unui dreptunghi ale cărui laturi au dimensiunea 5, respectiv 10.
 
 
 ## Ieșire
-* Printează suprafața calculată
+* Imprimați suprafața calculată
 
 [/task-description]
 [code-io /]
@@ -310,9 +304,9 @@ public class Main {
 
 Scrieți un program care să tipărească numerele de la 1 la 10 (inclusiv).
 
-## Rezultat
+## Ieșire
 
-Fiecare număr ar trebui să fie pe o linie nouă.
+Fiecare număr trebuie să fie pe o linie nouă.
 [/task-description]
 [code-io /]
 [tests]
@@ -373,7 +367,7 @@ Scrieți un program care să **imprime un triunghi** format din steluțe.
 
 Veți imprima un simbol asterisc \(\*\) pe primul rând, două simboluri asterisc pe al doilea rând, și așa mai departe, pentru un total de 5 rânduri. 
 
-## Rezultat
+## Ieșire
 ```
 *
 **

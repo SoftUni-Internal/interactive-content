@@ -112,9 +112,9 @@ public class Program {
 ## Descriere
 Scrieți un program care: 
 
-* Citește **numele unei cărți** de pe consolă
-* Primește nume până ce ajunge la **cartea cu același nume ca prima**
-* Imprimă "**Book found! Attempts:** \{**attemptsCount**\}" și după aceea se  oprește
+* Citește de pe consolă un șir care reprezintă **numele unei cărți** 
+* Primește nume sub formă de șiruri până ce ajunge la **cartea cu același nume ca prima**
+* Imprimă "**Book found! Attempts:** \{**attemptsCount**\}" și după aceea se oprește
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -123,6 +123,7 @@ Scrieți un program care:
 | Winnie the Pooh | |
 | Peter Pan | |
 | Alice in Wonderland | |
+
 [/task-description]
 [tests]
 [test open]
@@ -180,7 +181,7 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Descirere
+## Descriere
 Scrieți un program care: 
 
 * Primește numere întregi până la mesajul **"END"**
@@ -292,12 +293,12 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Desciere
-Numărul special este un număr **divizibil cu toate cifrele sale** fără rest. 
+## Descriere
+Un număr special este un număr **divizibil cu toate cifrele sale** fără rest. 
 
 Scrieți un program care: 
 * Primește un număr întreg
-* **Prints** "\{**num**\} **is special**", dacă numărul este special
+* **Imprimă** "\{**num**\} **is special**", dacă numărul este special
 * În celelalte situații, imprimă "\{**num**\} **is not special**"
 
 ## Exemplu
@@ -372,12 +373,12 @@ public class Program {
 ```
 [/code-editor]
 [task-description]
-## Desciere
+## Descriere
 Scrieți un program care: 
 
 * Citește un număr **întreg** de pe consolă
-* Continuă să citescă numerele întregi până ce ajunge la **același număr ca primul**
-* Când îl găsește, crește valoarea **numărului** anterior **dinaintea lui** cu 100% și îl imprimă
+* Continuă să citescă numere întregi până ce primește din nou **același număr**
+* Când îl găsește, mărește valoarea **numărului** **anterior** cu 100% și îl imprimă
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -386,6 +387,7 @@ Scrieți un program care:
 | 20 | |
 | 30 | |
 | 25 | |
+
 [/task-description]
 [tests]
 [test open]
@@ -445,7 +447,7 @@ Scrieți un program care:
 
 * Citește un număr **n** de pe consolă
 * Imprimă o **secvență** de numere care sunt **<= n** și îndeplinesc următoarea condiție:
-* Fiecare dintre numere este egal cu numărul aflat imediat înaintea sa, multiplicat cu **2**, plus **1**
+   * Fiecare dintre numere este egal cu numărul aflat imediat înaintea sa, multiplicat cu **2**, plus **1**
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -453,6 +455,7 @@ Scrieți un program care:
 | 8 | 1 |
 |  | 3 |
 |  | 7 |
+
 [/task-description]
 [tests]
 [test open]
@@ -556,10 +559,9 @@ public class Program {
 ## Descriere
 Scrieți un program care: 
 
-* Primește **o sumă de bani** pentru fiecare tranzacție până la **"END"**
-
-* **Adaugă** banii în  **sold** și **tipărește: "**Increase:**\{**money**\}", formatați `banii` la **a două cifră** după punctul zecimal 
-* După **"END"** calculează și **imprimă** suma totală din cont: "**Total:** \{**balance**\}", formatați `balance` până la **a doua cifră** după punctul zecimal
+* Primește **o sumă de bani** pentru fiecare tranzacție până la primirea comenzii **"END"**
+* **Adaugă** banii în **sold** și **tipărește: "**Increase:**\{**money**\}"; formatați `money` la **a două cifră** după punctul zecimal 
+* După primirea comenzii **"END"** calculează și **imprimă** suma totală din cont: "**Total:** \{**balance**\}"; formatați `balance` până la **a doua cifră** după punctul zecimal
 
 
 
@@ -570,6 +572,7 @@ Scrieți un program care:
 | 69.42 | Increase: 69.42 |
 | 100 | Increase: 100.00 |
 | END | Total: 174.93 |
+
 [/task-description]
 [tests]
 [test open]
@@ -625,7 +628,7 @@ Andreea merge acasă după ce a fost plecată mult timp în afara țării.
 
 Când ajunge acasă, ea vede biblioteca bunicii și își amintește de cartea sa preferată.
 
-Ajutați-o pe Andreea scriind un program în care Andreea să introducă titlul unei **cărți** pe care o caută  (**un șir**) și **capacitatea** bibliotecii(**un număr întreg**). 
+Ajutați-o pe Andreea prin crearea unui program în care Andreea să introducă titlul unei **cărți** pe care o caută (**un șir**) și **capacitatea** bibliotecii(**un număr întreg**). 
 
 **Până ce** Andreea găsește cartea sa preferată **sau** nu verifică toate cărțile din bibliotecă, programul trebuie să citească de fiecare dată titlul următoarei cărți pe o linie separată.
 
@@ -635,10 +638,10 @@ Ajutați-o pe Andreea scriind un program în care Andreea să introducă titlul 
 - Pe fiecare dintre liniile următoare - titlul unei cărți din bibliotecă - un șir
 
 ## Ieșire
-- Dacă Andreea **nu** găsește cartea, imprimă **două** linii:
+- Dacă Andreea **nu** găsește cartea, imprimați **două** linii:
   - "**The book you search is not here!**"
   - "**You checked** \{**count**\} **books.**"
-- Dacă Andreea **găsește** cartea, imprimă o **singură** linie:
+- Dacă Andreea **găsește** cartea, imprimați o **singură** linie:
     - "**You checked** \{**count**\} **books and found it.**"
 
 ## Exemplu
@@ -893,27 +896,27 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program prin care Martin rezolvă probleme pentru examen până când primește din partea profesorului său mesajul: "**Enough**". 
+Scrieți un program prin care Martin rezolvă probleme pentru examen până când primește din partea profesorului său mesajul "**Enough**". 
 
-De fiecare dată când rezolvă o problemă, primește o notă. **Programul trebuie să se oprească când** Martin primește comanda "Enough" sau **primește un număr de note slabe**. 
+De fiecare dată când rezolvă o problemă, primește o notă. **Programul trebuie să se oprească când** Martin primește comanda "Enough" sau **primește un număr de note proaste**. 
 
-O notă slabă este mai mică sau egală cu 4.00.
+O notă proastă este mai mică sau egală cu **4.00**.
 
 ## Intrare
-- Pe prima linie – **număr de note proaste** – un număr întreg în intervalul \[1…5\]
+- Pe prima linie – **numărul limită de note proaste** – un număr întreg în intervalul \[1…5\]
 - **După aceea în mod repetat două linii**:
-  - **numele problemei - text**
+  - **numele problemei** - șir
   - **notă** - un număr întreg în intervalul\[2…6\]
 
 ## Ieșire
-- Dacă Martin ajunge la comanda **Enough**", imprimă **3** linii:
+- Dacă Martin ajunge la comanda **Enough**", imprimați **3** linii:
   - "**Average score:** \{**average grade**\}"
   - "**Number of problems:** \{**number of ALL problems**\}"
   - "**Last problem:** \{**last problem\'s name**\}"
-- **Dacă obține numărul specificat de note slabe**:
+- **Dacă obține numărul specificat de note proaste**:
    - "**You need a break**, \{**number poor grades**\} **poor grades.**"
 
-**Nota medie trebuie să fie formatată la a doua zecimală.**
+**Nota medie** trebuie să fie formatată la a doua zecimală.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -931,14 +934,14 @@ O notă slabă este mai mică sau egală cu 4.00.
 
 [hints]
 [hint]
-Numărul de note slabe este 3.
+Numărul de note proaste este 3.
 [/hint]
 [hint]
 Numele primei probleme este Money, nota lui Martin este 6.
 A doua problemă - Story, nota - 4.
 A treia problemă - Spring Time, nota - 5.
 A patra problemă - Bus, nota - 6.
-Următoarea comandă este Enough, programul se încheie.
+Următoarea comandă este **Enough**, iar programul se încheie.
 [/hint]
 [hint]
 Media notelor: 21 / 4 = 5.25
@@ -1261,14 +1264,14 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Gaby vrea să înceapă o viață sănătoasă și își propune să meargă **10000 de pași** pe **zi**.
+Gaby vrea să înceapă o un stil de viață sănătos și își propune să meargă **10000 de pași** pe **zi**.
 
-Scrieți un program **care citește de pe consolă câți pași** Gaby merge de fiecare dată când iese și **când atinge obiectivul stabilit**, printează mesajul: 
+Scrieți un program **care citește de pe consolă câți pași** face Gaby de fiecare dată când iese afară, iar **când atinge obiectivul stabilit**, imprimă mesajul: 
 - "**Goal reached! Good job!**"
 
-În cazul în care vrea să ajungă acasă **înainte de** atingerea scopului, va introduce comanda "**Going home**" și numărul de **pași** pe care i-a **făcut** în timp ce **merge acasă**. 
+În cazul în care vrea să ajungă acasă **înainte de** atingerea obiectivului, va introduce comanda "**Going home**" și numărul de **pași** pe care i-a **făcut** în timp ce **merge acasă**. 
 
-După aceea, dacă nu reușește să atingă obiectivul, va trebui să imprimați mesajul următor pe consolă: 
+Dacă nu reușește să atingă obiectivul, va trebui să imprimați mesajul următor pe consolă: 
 - "\{**difference in steps**\} **more steps to reach goal.**"
 
 ## Exemple
@@ -1289,6 +1292,7 @@ După aceea, dacă nu reușește să atingă obiectivul, va trebui să imprimaț
 | 3000| |
 | Going home| |
 | 200| |
+
 [/task-description]
 [tests]
 [test open]
@@ -1503,25 +1507,25 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-John lucrează la un restaurant și este responsabil de încărcarea mașinii de spălat vase, la finalul zilei.
+John lucrează într-un restaurant și este responsabil de încărcarea mașinii de spălat vase, la finalul zilei.
 
-Sarcina voastră este să scrieți un program care să calculeze **dacă** o cantitate de sticle de detergent este  **suficientă** pentru spălarea unui anumit număr de vase.
+Sarcina voastră este să scrieți un program care să calculeze **dacă** o cantitate de sticle de detergent este **suficientă** pentru spălarea unui anumit număr de vase.
 
 Știm că fiecare sticlă conține **750 ml.** de detergent. 
 
-Pentru o  **farfurie** sunt necesari 5 ml., iar pentru o **cană** 15 ml. 
+Pentru o **farfurie** sunt necesari 5 ml., iar pentru o **cană** 15 ml. 
 
 La fiecare **a treia** umplere cu vase, mașina de spălat vase este plină doar cu căni, iar în celelalte cazuri cu farfurii. 
 
-Până la primirea comenzii **"END"** veți continua să primiți numărul de vase care trebuie să fie spălate.
+Până la primirea comenzii **"End"** veți continua să primiți numărul de vase care trebuie să fie spălate.
 
 ## Intrare
 Citiți din consolă: 
 - **Numărul de sticle de detergent** care vor fi utilizate pentru spălarea vaselor - un număr întreg în intervalul \[1...10\] 
-- Pe fiecare linie **următoare**, până la comanda **"End"** sau până ce **cantitatea de detergent este epuizată**, **numărul de vase** care trebuie să fie spălate - un număr întreg în intervalul \[1...100\]
+- Pe fiecare linie **următoare**, până la primirea comenzii **"End"** sau până ce **cantitatea de detergent este epuizată**, **numărul de vase** care trebuie să fie spălate - un număr întreg în intervalul \[1...100\]
 
 ## Ieșire
-- În cazul în care cantitatea de detergent **a fost suficientă** pentru spălarea vaselor, printați trei linii de ieșire: 
+- În cazul în care cantitatea de detergent **a fost suficientă** pentru spălarea vaselor, tipăriți trei linii de ieșire: 
     - "**Detergent was enough!**"
     - "\{**Number of clean plates**\} **dishes and** \{**number of clean pots**\} **pots were washed.**"
     - "**Leftover detergent** \{**amount of detergent remaining**\} **ml.**" 
@@ -1541,9 +1545,9 @@ Citiți din consolă:
 [hints]
 [hint]
 Cantitatea de detergent = 2 \* 750 = 1500 ml.
-53 farfurii încărcate = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. (rest)
-65 farfurii = > 65 \* 5 = 325 ml 1235 \- 325 = 910 ml. (rest)
-55 căni = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. (rest)
+53 farfurii încărcate = > 53 \* 5 = 265 ml. 1500 \- 265 = 1235 ml. (rămași)
+65 farfurii = > 65 \* 5 = 325 ml. 1235 \- 325 = 910 ml. (rămași)
+55 căni = > 55 \* 15 = 825 ml 910\- 825 = 85 ml. (rămași)
 [/hint]
 [hint]
 Primim comanda "End". Putem concluziona că detergentul a fost suficient, deci mesajele corespunzătoare trebuie imprimate: 
@@ -1562,6 +1566,7 @@ Primim comanda "End". Putem concluziona că detergentul a fost suficient, deci m
 | 12 | |
 | 13 | |
 | 30 | |
+
 [/task-description]
 [tests]
 [test open]
@@ -1982,7 +1987,7 @@ Scrieți un program care să calculeze **nota medie** a unui student pentru înt
 
 ## Intrare
 - Pe prima linie, vom primi **numele studentului**
-- Pe fiecare linie următoare sunt notele pe ani
+- Pe fiecare linie următoare sunt notele studentului
 - Studentul promovează anul dacă **nota anuală este 4.00 sau mai mare** 
 - Dacă nota sa este mai mică decât 4.00, el trebuie să **repete** clasa
 
@@ -1990,7 +1995,7 @@ Scrieți un program care să calculeze **nota medie** a unui student pentru înt
 ## Ieșire
 - Dacă studentul promovează clasa trebuie să imprimați:
 
-    - "\{**student name**\}**graduated. Average grade:** \{**average grade from his entire education**\}"
+    - "\{**student name**\} **graduated. Average grade:** \{**average grade from his entire education**\}"
 
 **Nota trebuie să fie formatată la a două cifră după punctul zecimal.**
 
@@ -2011,6 +2016,7 @@ Scrieți un program care să calculeze **nota medie** a unui student pentru înt
 | 6 | | 
 | 5.43 | |
 | 5 | |
+
 [/task-description]
 [tests]
 [test open]
@@ -2182,14 +2188,14 @@ public class Main {
 ## Descriere
 Vom primi simboluri până când comanda **End** este primită. 
 
-Trebuie să omitem caracterele care **nu sunt litere** și prima apariție a **c**, **o** și **n**.
+Trebuie să omitem caracterele care **nu sunt litere** și prima apariție a literelor **c**, **o** și **n**.
 
-Când **primim prima dată** una dintre aceste litere, trebuie să o marcăm ca vizitată, **dar nu este salvată în cuvânt**.
+Când **primim pentru prima dată** una dintre aceste litere, trebuie să o marcăm ca vizitată, **dar nu este salvată în cuvânt**.
 
 Dacă am găsit **toate cele trei litere din comandă**, trebuie să imprimăm cuvântul nostru cu un spațiu la sfârșit. Trebuie să resetăm numărătoarea apariției fiecărei litere la 0.
 
 ## Intrare
-- Vom primi o secvență de linii cu un singur simbol pe linie, până când primim comanda "**End**"
+- Vom primi o secvență de linii cu un singur simbol pe fiecare linie, până când primim comanda "**End**"
 
 ## Ieșire
 - Imprimați pe consolă cuvântul, urmat de **un spațiu**
@@ -2211,10 +2217,10 @@ Dacă am găsit **toate cele trei litere din comandă**, trebuie să imprimăm c
 [hint]
 "**H**", "**n**", "**e**", "**l**", "**l**", "**o**", "**o**", "**c**" sunt toate literele citite.
 Mai întâi citim simbolul "**H**" și îl adăugăm la cuvânt. Următorul simbol este "**n**". Face parte din comandă și **nu îl adăugăm la cuvânt când îl întâlnim pentru prima dată**.
-Următoarele simboluri sunt"**e**", "**l**", "**l**" și le adăugăm la cuvânt. Citim "**o**" și îl notăm ca vizitat, dar încă o dată **nu îl** adăugăm la cuvânt. Următoarea literă este din nou  "**o**" și o adăugăm. Următorul simbol este  "**c**" și toate cele trei simboluri pentru comanda secretă sunt deja disponibile.
+Următoarele simboluri sunt "**e**", "**l**", "**l**" și le adăugăm la cuvânt. Citim "**o**" și îl notăm ca vizitat, dar încă o dată **nu îl** adăugăm la cuvânt. Următoarea literă este din nou "**o**" și o adăugăm. Următorul simbol este "**c**" și toate cele trei simboluri pentru comanda secretă sunt deja disponibile.
 [/hint]
 [hint]
-Imprimăm "**Hello**",  primim comanda  "End" și programul se încheie. Rezultatul este "Hello".
+Imprimăm "**Hello**", primim comanda "End" și programul se încheie. Rezultatul este "Hello".
 [/hint]
 [/hints]
 

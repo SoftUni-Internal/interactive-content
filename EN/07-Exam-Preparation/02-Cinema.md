@@ -49,7 +49,7 @@ The price must be formatted to the second digit after the decimal point.
 
 ## Example
 | **Input** | **Output** |
-| --- | --- | --- |
+| --- | --- | 
 | John Wick | Your bill is 72.00$ | 
 | Drink | 
 | 6 | 

@@ -1,11 +1,11 @@
 [slide hideTitle]
-# Iterația Peste Caractere
+# Iterarea Peste Caractere
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/RO/interactive-programming-basics-with-java-for-loops-25-26-27-the-ASCII-table-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## ASCII Table
-Calculatoarele pot înțelege doar numerele, deci un cod **ASCII** este reprezentarea numerică a unui caracter precum "a" sau "@" sau o acțiune de un fel.
+## Tabelul ASCII 
+Calculatoarele pot înțelege doar numere, deci un cod **ASCII** este reprezentarea numerică a unui caracter precum "a" sau "@".
 
-Acesta este un exemplu de parte a tabelului:
+Aici este o parte din tabelul ASCII:
 
 | **Dec** | **Hex** | **Char** | **Dec** | **Hex** | **Char** |
 | :-----: | :-----: | :------: | :-----: | :-----: | :------: |
@@ -21,18 +21,18 @@ Acesta este un exemplu de parte a tabelului:
 |   73    |   49    |    I     |   105   |   69    |    i     |
 |   74    |   4A    |    J     |   106   |   6A    |    j     |
 
-Și aici puteți verifica întregul [Tabel ASCII](http://www.asciitable.com)
+Aici puteți verifica întregul [Tabel ASCII](http://www.asciitable.com).
 
-Coloanele pe care le-ați folosi cel mai probabil în scopul acestui curs sunt cele **zecimale** și **charactere**.
+Coloanele pe care le-ați folosi cel mai probabil în scopul acestui curs sunt cele **zecimale** și cele pentru **caractere**.
 
-De exemplu, valoarea zecimală a caracterului **'a'** este **97** și cea corespunzătoare **'@'** este **64**.
+De exemplu, valoarea zecimală a caracterului **'a'** este **97** și cea corespunzătoare lui **'@'** este **64**.
 
-## Iterația Peste Caractere
+## Iterarea Peste Caractere
 Este bine de știut că **buclele for** nu funcționează doar cu numere.
 
 De asemenea, putem folosi **buclele for** pentru a itera peste **caractere**.
 
-Iată un exemplu despre cum o buclă poate trece secvențial prin unele **litere** din alfabetul englez:
+Iată un exemplu despre cum o buclă poate trece secvențial print-un interval de **litere** din alfabetul englez:
 
 ```java live
 for (char ch = 'a'; ch <= 'd'; ch++) {
@@ -63,7 +63,7 @@ public class Program {
 Scrieți un program care:
 
 * Citește **2 litere**, fiecare pe o linie separată
-* Tipărește **toate literele** din intervalul dat **inclusiv**
+* Tipărește **toate literele** din intervalul dat, **inclusiv** cele 2 litere din intrare
 
 ## Exemplu
 |**Intrare**|**Ieșire** |

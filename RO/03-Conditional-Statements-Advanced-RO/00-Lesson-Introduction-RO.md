@@ -17,8 +17,8 @@
 
 **3. Switch-case**
 
-- Etichete de caz în Switch-Case
+- Definirea unor instrucțiuni multiple cu ajutorul construcției Switch-Case
 
-**4. Exerciții de programare practice**
+**4. Exerciții practice de programare**
 
 [/slide]

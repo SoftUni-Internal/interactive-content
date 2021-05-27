@@ -1,28 +1,19 @@
-# Instrucțiunea Switch-case
+# Instrucțiunea Switch
 
 [slide hideTitle]
-# Instrucțiunea de Comutare a Clauzelor "switch-case"
+# Instrucțiunea Switch
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-24-25-switch-case-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Instrucțiunea de comutare a clauzelor funcționează ca o secvență de blocuri **if-else**.
+Instrucțiunea `switch` funcționează ca o secvență de blocuri **if-else**.
 
 Ori de câte ori munca programului nostru depinde de valoarea unei variabile, în loc să facem condiții consecutive cu blocuri `if-else`, putem **folosi** instrucțiunea condițională `switch`.
 
-Aceasta  este utilizată pentru **alegerea între o listă de posibilități**.
+Instrucțiunea switch furnizează o sintaxă mai simplă pentru construcții cu mai multe posibilități.
 
-Instrucțiunea compară o valoare dată cu constante definite și, în funcție de rezultat, ia o măsură.
+Instrucțiunea compară o valoare dată cu valoarea unor cazuri definite și, în funcție de rezultat, execută blocul corespunzător.
 
-- Punem **variabila** pe care vrem să o **comparăm**, în **parantezele după operatorul** `switch` și acesta se numește **"selector"**
--  **Tipul trebuie să fie comparabil** (numere, șiruri)
-- **Consecutiv**, programul începe **să compare** fiecare **valoare** care este **găsită** după **etichetele** `case`
-- În caz de potrivire, executarea codului din locul respectiv începe și continuă până când ajunge la operatorul `break`
-
-În unele limbaje de programare (cum ar fi C și C ++) `break` ar putea fi sărit, pentru a executa un cod din altă construcție 'caz' până când ajunge la un alt operator.
-
-În Java, însă, prezența `break` este **obligatoriu** pentru **fiecare** `caz` care conține o logică de program.
-
-Când **nu sunt găsite** potriviri, se execută construcția 'implicită', **if** astfel **există**.
+## Exemplu de instrucțiune switch
 
 ```java
 switch (selector) {
@@ -34,13 +25,25 @@ switch (selector) {
     break;
 }
 ```
+- Plasăm **variabila** pe care vrem să o **comparăm** între **parantezele care urmează după operatorul** `switch`, această variabilă fiind numită **"selector"**
+- **Tipul de date trebuie să fie comparabil** (numere, șiruri)
+- **Consecutiv**, programul începe **să compare** variabila cu fiecare **valoare** care este **găsită** după **etichetele** `case`
+- În caz de potrivire, executarea codului din locul respectiv începe și continuă până când ajunge la operatorul `break`
+
+În unele limbaje de programare (cum ar fi C și C ++) `break` poate fi omis, pentru a permite executarea unui cod din altă construcție `case`.
+
+În Java, prezența operatorului `break` este **obligatorie** pentru **fiecare** caz care conține o logică de program.
+
+Când **nu sunt găsite** potriviri, se execută construcția `default`, dacă aceasta **există**.
 
 ## Cazul Implicit
-Cazul implicit specifică secțiunea `switch` de executat **dacă expresia de potrivire nu se potrivește cu nici o altă etichetă de caz**.
+Cazul implicit este executat **dacă selectorul nu se potrivește cu nicio altă etichetă de caz**.
 
-Dacă un caz implicit nu este prezent și expresia de potrivire nu se potrivește cu nici o altă etichetă de caz, fluxul de program **cade** prin instrucțiunea de comutare.
+Dacă un caz implicit nu este prezent și selectorul nu se potrivește cu nicio altă etichetă de caz, programul iese din instrucțiunea switch și continuă executarea codului de după aceasta.
 
-Cazul implicit poate apărea în orice ordine în instrucțiunea de comutare, dar indiferent de ordinea acesteia în codul sursă este întotdeauna evaluată **ultima**, după ce au fost evaluate toate etichetele de caz.
+Cazul implicit poate apărea în orice ordine în instrucțiunea switch, dar indiferent de ordinea acestuia în codul sursă, este întotdeauna evaluat **ultimul**, după ce au fost evaluate toate etichetele de caz.
+
+## Exemplu de instrucțiune switch cu un caz implicit
 
 ```java
 switch (selector) {
@@ -62,7 +65,7 @@ switch (selector) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-26-switch-case-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Să scriem un program care tipărește **"Yes" or "No"** (în limba engleză) în funcție de **numărul dat** (Y, N) sau **"Invalid response"** dacă este dată o intrare nevalidă.
+Să scriem un program care tipărește **"Yes" sau "No"** în funcție de **o valoare dată** (`Y`, `N`) sau **"Invalid response"** dacă este dată o intrare non-validă.
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -86,9 +89,9 @@ switch (choice) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/RO/interactive-programming-basics-with-java-conditional-statements-advanced-27-29-multiple-labels-in-switch-case-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-În **Java** avem posibilitatea de a utiliza etichete **multiple** de caz în construcția "**switch-case**", atunci când trebuie să execute **același cod**.
+În **Java** avem posibilitatea de a utiliza etichete **multiple** de caz în construcția `switch-case`, atunci când trebuie să execute **același cod**.
 
-În acest fel, când **programul nostru** găsește o **potrivire**, acesta va executa **următorul** cod, deoarece **după** eticheta respectivă `case` **nu există cod** de executat și un operator `break`. 
+În acest fel, când **programul nostru** găsește o **potrivire**, acesta va executa **următorul** bloc de cod, până când întâlnește un operator `break`:
 
 ```java
 switch (selector) {
@@ -106,13 +109,13 @@ switch (selector) {
         break;
 }
 ```
-## Exemplu: Tipul de Animal
-Scrieți un program care tipărește tipul animalului în funcție de numele acestuia:
+# Exemplu: Animal Type
+Scrieți un program care tipărește tipul unui animal în funcție de numele acestuia:
 -  Dog -> **mammal**
 -  Crocodile, tortoise, snake -> **reptile**
 -  Others -> **unknown**
 
-Putem rezolva sarcina cu condiții de `switch-case` cu mai multe etichete în felul următor:
+Putem rezolva sarcina cu ajutorul condițiilor `switch-case` cu mai multe etichete în felul următor:
 ```java
 Scanner scanner = new Scanner(System.in);
 String animal = scanner.nextLine();

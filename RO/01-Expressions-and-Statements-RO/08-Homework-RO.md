@@ -16,9 +16,9 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a calcula viteza în funcție de timp și distanță:
+Scrieți un program care calculează viteza în funcție de timp și distanță:
   * Citiți 2 numere în virgulă mobilă: distanță și timp
-  * Calculați viteza necesară pentru a parcurge o distanță dată pentru un anumit timp
+  * Calculați viteza necesară pentru a parcurge o distanță dată într-un timp dat
   * Imprimați rezultatul calculat
   * Folosiți formula: **viteză = distanță/timp**
   
@@ -100,10 +100,10 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru convertirea din USD în EUR:
-  * Citiți **numărul în virgulă mobilă**: suma în dolari care urmează să fie convertită
-  * Convertiți **dolari în euro** (utilizați **rata fixă** de dolari în euro: 0.88)
-  * Tipăriți valoarea convertită în euro, formatată la a doua cifră după punctul zecimal.
+Scrieți un program pentru a converti USD în EUR:
+  * Citiți un **număr în virgulă mobilă**: suma în dolari care urmează să fie convertită
+  * Convertiți **dolari în euro** (utilizați **rata de schimb valutar** pentru conversiunea dolarilor în euro: 0.88)
+  * Imprimați valoarea convertită în euro, formatată la a doua cifră după punctul zecimal
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -184,11 +184,11 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a calcula aria triunghiului:
+Scrieți un program pentru a calcula aria unui triunghi:
 
-   * Citiți din intrare `latura` și `înălțimea` - **numere în virgulă mobilă**.
-   * Calculați aria triunghiului.
-   * Imprimați aria, formatată la a doua cifră după punctul zecimal.
+   * Citiți din intrare `side a` și `height` - **numere în virgulă mobilă**
+   * Calculați aria triunghiului
+   * Imprimați aria, formatată la a doua cifră după punctul zecimal
   
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -276,7 +276,7 @@ public class Program {
 ## Descriere
 Scrieți un program care:
   * Citește 2 **numere reale** de pe consolă
-  * Efectuează 4 **operații aritmetice** cu cele 2 numere obținute, în următoarea ordine:`+`, `-`, `*`, `/`
+  * Efectuează 4 **operații aritmetice** cu cele 2 numere, în următoarea ordine: `+`, `-`, `*`, `/`
   * Formatează și imprimă rezultatele ca în acest exemplu:
 
 ## Exemplu
@@ -541,7 +541,7 @@ public class Program {
 
 ## Descriere
 Scrieți un program care:
-* Citește **4 rânduri** de șiruri: nume, prenume, țară și oraș
+* Citește **4 rânduri** de șiruri: prenume, nume, țară și oraș
 * Tipărește informațiile despre o persoană în următorul format: 
 "\{**firstName**\} \{**lastName**\} **from** \{**country**\} - \{**town**\}!"
 
@@ -633,7 +633,7 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program care:
-  * Citește **3 rânduri** de intrare: nume (**șir**), populație și zonă (**numere întregi**)
+  * Citește **3 rânduri** de intrare: nume (**șir**), populație și suprafață (**numere întregi**)
   * Tipărește informațiile despre un oraș în următorul format: 
    "**Town** \{**name**\} **has population of** \{**population**\} **and area** \{**area**\} **square km.**"
 
@@ -724,7 +724,7 @@ Scrieți un program de consolă care citește un număr **întreg** `a` și calc
 ## Intrare
 
 Citiți de pe consolă:
-- Dimensiunea pătratului - un număr **întreg** în intervalul [1 ... 1000]
+- Dimensiunea laturii pătratului - un număr **întreg** în intervalul [1 ... 1000]
 
 ## Ieșire
 
@@ -814,9 +814,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care să calculeze câte ore vor fi necesare unui arhitect pentru a crea niște proiecte.
+Scrieți un program care să calculeze câte ore vor fi necesare unui arhitect pentru a crea un număr dat de proiecte.
 
-Crearea unui proiect durează aproximativ 3 ore.
+Crearea unui proiect durează 3 ore.
 
 ## Intrare
 Citiți **două rânduri** de pe consolă:
@@ -973,7 +973,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care **calculează** aria trapezului cu bazele **b1** și **b2** și înălțimea **h**.
+Scrieți un program care **calculează** aria unui trapez cu bazele **b1** și **b2** și înălțimea **h**.
 
 Formula pentru calcularea ariei unui trapez este ((b1 + b2)/2) * h.
 
@@ -985,7 +985,7 @@ Citiți trei numere de pe consolă:
 
 ## Ieșire
 
-Imprimați pe consolă un singur număr - aria trapezului, formatat la **a doua zecimală**.
+Imprimați pe consolă un singur număr - aria trapezului, formatată la **a doua zecimală**.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |
@@ -1087,14 +1087,14 @@ El vinde legume cu **N dolari** pe kilogram și fructe cu **M dolari** pe kilogr
 Scrieți un program care calculează veniturile din recoltă în euro (**1 USD = 0.89 EUR**).
 
 ## Intrare
-Intrarea va fi de **4 numere**, fiecare pe o **singură linie**:
+Intrarea va consta în **4 numere**, fiecare pe o **singură linie**:
 - Prețul kilogramului de legume - **număr în virgulă mobilă** [0.00 ... 1000.00]
 - Prețul kilogramului de fructe - **număr în virgulă mobilă** [0.00 ... 1000.00]
-- Kilograme în total de legume - **număr întreg** [0 ... 1000]
-- Kilograme în total de fructe - **număr întreg** [0 ... 1000]
+- Kilograme de legume - **număr întreg** [0 ... 1000]
+- Kilograme de fructe - **număr întreg** [0 ... 1000]
 
 ## Ieșire
-Imprimați pe consolă un **singur număr**: venitul din toate fructele și legumele în euro.
+Imprimați pe consolă un **singur număr**: venitul din toate fructele și legumele vândute, în euro.
 
 Rezultatul trebuie formatat la **a doua zecimală**.
 
@@ -1282,9 +1282,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Scrieți un program care să calculeze cheltuielile pentru cumpărarea alimentelor pentru câini și alte animale. Fiecare animal necesită un pachet de alimente.
+Scrieți un program care să calculeze costul unor pachete de mâncare pentru animale. Fiecare animal necesită un pachet de mâncare.
 
-Fiecare pachet de alimente pentru câini costă 2.5 dolari, iar fiecare altul care NU este pentru câini - 4 dolari.
+Fiecare pachet de mâncare pentru câini costă 2.5 dolari, iar fiecare pachet care NU este pentru câini - 4 dolari.
 
 ## Intrare
 
@@ -1296,7 +1296,7 @@ Intrarea va fi formată din două linii de pe consolă:
 ## Ieșire
 Imprimați pe consolă: "\{**total sum**\} **dollars**". 
 
-Rezultatul trebuie să fie formatat la al doilea punct zecimal.
+Rezultatul trebuie formatat la a doua cifră după punctul zecimal.
 
 ## Exemple
 
@@ -1452,7 +1452,7 @@ George decide să cumpere ton, macrou și midii.
 
 Ciiți de la consolă **prețurile** de macrou și șprot, cantitatea de ton, macrou și midii în **kilograme**.
 
-**Calculați** de  câți bani va avea nevoie ca să plătească factura, în cazul în care prețurile la Fishland sunt:
+**Calculați** de câți bani va avea nevoie ca să plătească factura, în cazul în care prețurile la Fishland sunt:
 - Ton - **cu 60% mai scump decât macroul**
 - Macrou - **cu 80% mai scump decât șprot**
 - Midii - **7.50 dolari pe kilogram**
@@ -1467,7 +1467,9 @@ Trebuie să citiți **5 numere** de pe consolă:
 
 ## Ieșire
 
-Imprimați pe consolă un singur număr în virgulă mobilă: banii de care George are nevoie să plătească factura, formatat la **a doua zecimală**.
+Imprimați pe consolă un singur număr în virgulă mobilă: banii de care George are nevoie să plătească factura.
+
+Rezultatul trebuie formatat la **a doua zecimală**.
 
 ## Exemplu
 |**Intrare**|**Ieșire** |

@@ -92,7 +92,7 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește **n**, reprezentând numărul de numere întregi de citit în continuare
+* Citește **n**, reprezentând numărul de numere întregi care trebuie citite în continuare
 * Găsește numerele întregi **max** și **min**
 * Le imprimă pe consolă în următorul format:
    - "**Max number:** \{**max number**\}"
@@ -191,6 +191,7 @@ Scrieți un program care:
 | --- | --- |
 | 5 | 32 |
 | 2 | |
+
 [/task-description]
 [tests]
 [test open]
@@ -248,6 +249,7 @@ Scrieți un program care:
 | 0 | |
 | 0 | |
 | -1 | |
+
 [/task-description]
 [tests]
 [test open]
@@ -391,8 +393,8 @@ Scrieți un program care:
 
 * Citește **n** - număr care reprezintă totalul de numere care urmează să fie introduse
 * Citește **n numere întregi**
-    * pentru fiecare linie **pară**  **se adaugă** numărul la rezultat
-    * pentru fiecare linie  **impară**  **se scade** numărul din rezultat
+    * pentru fiecare linie **pară** de intrare, **se adună** numărul la rezultat
+    * pentru fiecare linie **impară** de intrare, **se scade** numărul din rezultat
     * numărarea începe de la 1
 * **Tipărește** rezultatul
 
@@ -402,6 +404,7 @@ Scrieți un program care:
 | 2 | 10 |
 | 10 | |
 | 20 | |
+
 [/task-description]
 [tests]
 [test open]
@@ -462,7 +465,7 @@ Scrieți un program care:
 
 * Citește **n** și apoi **n numere**
 * Găsește în **procente** câte dintre acestea pot fi **împărțite fără rest** la **2**, **3** și **4**
-* Imprimă procentele p1, p2 and p3, **formatate** până la a două zecimală
+* Imprimă procentele p1, p2 și p3 pentru fiecare divizor, **formatate** la a două zecimală
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -471,6 +474,7 @@ Scrieți un program care:
 | 3 | 33.33% |
 | 6 | 100.00% |
 | 9 | 0.00% |
+
 [/task-description]
 [tests]
 [test open]
@@ -523,14 +527,14 @@ public class Program {
 ## Descriere
 Scrieți un program care:
 
-* Citește **n**- numărul de caractere care vor urma în intrare
-* Dacă caracterul este o **vocală** își adaugă valoarea rezultatului
+* Citește **n** - numărul de caractere care vor urma în intrare
+* Dacă caracterul este o **vocală** își adaugă valoarea la rezultat
 
 |caracter|a|e|i|o|u|
 |---------|-|-|-|-|-|
 |valoare|1|2|3|4|5|
 
-* Tipărește rezultatul
+* Tipărește rezultatul final
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -538,6 +542,7 @@ Scrieți un program care:
 | 2 | 1 |
 | a | |
 | g | |
+
 [/task-description]
 [tests]
 [test open]
@@ -621,7 +626,7 @@ public class Program {
 [task-description]
 ## Descriere
 Scrieți un program care determină dacă sunt destui pasageri ca să ocupe toate locurile într-un rollercoaster.
- * Citește **locurile disponibile**, **vârsta minimă**, **numărul de persoane** de la coadă 
+ * Citiți **locurile disponibile**, **vârsta minimă**, **numărul de persoane** de la coadă 
 Vârsta fiecărui pasager va fi specificată ca un număr separat.
 * Dacă toate locurile sunt luate, tipăriți: **"The rollercoaster departures"**
 * Într-un alt caz, tipăriți **"Waiting..."**
@@ -736,8 +741,8 @@ public class Program {
 Scrieți un program care:
 
 * Citește un număr **n**
-* Tipărește acel număr înmulțit cu `i` "\{n\} x \{i\} = \{result\}"
-* Unde `i` este reprezentat de numerele de la **1 până la 10**(**inclusiv**)
+* Tipărește acel număr înmulțit cu `i` în formatul următor: "\{n\} x \{i\} = \{result\}"
+* Unde `i` este reprezentat de numerele de la **1 până la 10** (**inclusiv**)
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -752,6 +757,7 @@ Scrieți un program care:
 | | 2 x 8 = 16 |
 | | 2 x 9 = 18 |
 | | 2 x 10 = 20 |
+
 [/task-description]
 [tests]
 [test open]
@@ -821,7 +827,7 @@ Scrieți un program care să calculeze dacă Josh va avea suficienți bani pentr
 ## Intrare
 Intrarea este citită de pe consolă și conține exact 2 linii:
 - Banii moșteniți - număr real în intervalul \[1.00 ... 1.00.000.00\]
-- An până la  care trebuie calculate costurile - un număr întreg în intervalul \[1801 ... 1900\]
+- An până la care trebuie calculate costurile - un număr întreg în intervalul \[1801 ... 1900\]
 
 
 
@@ -964,7 +970,6 @@ Scrieți un program pentru a calcula costul mediu pe lună pentru o familie pe o
 Pentru fiecare lună, costurile sunt următoarele:
 
 - Pentru electricitate - în fiecare lună factura este diferită și va fi citită de pe consolă
-
 - Pentru apă - 20 $
 - Pentru internet - 15 $
 - Pentru altele - însumați facturile pentru electricitate, apă și internet și adăugați 20%
@@ -975,7 +980,6 @@ Pentru fiecare factură, trebuie să calculați suma totală plătită pentru to
 # Intrare
 
 Intrarea este citită de pe consolă:
-
 
 - Numărul de luni - număr întreg în intervalul \[1 ... 100\]
 - Pentru fiecare lună - factura pentru electricitate - un număr real în intervalul \[1.00... 1000.00\]
@@ -1008,7 +1012,7 @@ Pentru 5 luni:
 - Apă -> 5 luni \* 20$ = 100$
 - Internet -> 5 luni \* 15$ = 75$
 - Altele:
-    - 68.63+20+15) + 20% = 124.356  
+    - (68.63+20+15) + 20% = 124.356  
     - (89.25+20+15) + 20% = 149.1
     - (132.53+20+15) + 20% = 201.036
     - (93.53+20+15) + 20% = 154.236
@@ -1244,7 +1248,7 @@ Fiecare medic poate examina doar un pacient pe zi, dar uneori există un deficit
 
 La fiecare trei zile, spitalul face calcule și dacă numărul pacienților neevaluați este mai mare decât numărul celor acceptați, este numit încă un medic.
 
-Numirea medicului are loc înainte de preluarea pacienților pentru o zi.
+Numirea medicului are loc înainte de preluarea pacienților pentru acea zi.
 
 Scrieți un program care să calculeze numărul de pacienți examinați și neexaminați pentru perioada dată.
 
@@ -1459,7 +1463,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește un număr întreg care reprezintă totalul de numere introduse de utilizator și calculează care sunt numerele minime și maxime de pe poziții impare și pare (numărând de la 1). 
+Scrieți un program care citește un număr întreg care reprezintă totalul de numere introduse de utilizator și calculează care sunt valorile minime și maxime ale numerelor de pe poziții impare și pare (numărând de la 1). 
 
 Dacă nu există element minim / maxim tipăriți "**No**".
 
@@ -1468,7 +1472,7 @@ Dacă nu există element minim / maxim tipăriți "**No**".
 - Pe fiecare rând următor - număr în virgulă mobilă \[-100...100\]
 
 ## Ieșire
-Ieșirea trebuie să aibă următoarea  structură:
+Ieșirea trebuie să aibă următoarea structură:
 
 - "OddSum=" + \{sum of the numbers on odd positions\},
 - "OddMin=" + \{minimum value of the numbers of odd positions\} / \{"No"\},
@@ -1497,6 +1501,7 @@ Ieșirea trebuie să aibă următoarea  structură:
 | | EvenSum=0.00, |
 | | EvenMin=No, |
 | | EvenMax=No |
+
 [/task-description]
 [tests]
 [test open]
@@ -1697,7 +1702,7 @@ Programul trebuie să imprime procentul de elevi cu nota cuprinsă între
  - 2,00 și 2,99 
  - 3,00 și 3,99
  - 4,00 și 4,99
- - 5,00 sau mai mult.
+ - 5,00 sau mai mare
  - nota medie a tuturor participanților la examen
 
 
@@ -1707,9 +1712,9 @@ Programul trebuie să imprime procentul de elevi cu nota cuprinsă între
 
 ## Ieșire
 Imprimați pe consolă 5 linii care conțin următoarele informații:
-- "Top students: \{percent student with grade 5.00 or more\}%"
-- "Between 4.00 and 4.99: \{between 4.00 and 4.99 inclusive\}%"
-- "Between 3.00 and 3.99: \{between 3.00 and 3.99 inclusive\}%"
+- "Top students: \{percentage of students with grade 5.00 or more\}%"
+- "Between 4.00 and 4.99: \{percentage of students with grades between 4.00 and 4.99 inclusive\}%"
+- "Between 3.00 and 3.99: \{percentage of students with grades between 3.00 and 3.99 inclusive\}%"
 - "Fail: \{less than 3.00\}%"
 - "Average: \{average grade\}"
 
@@ -1732,7 +1737,7 @@ Toate numerele trebuie formatate la a doua zecimală.
 
 [hints]
 [hint]
-Obțineți numărul total de elevi, apoi folosiți o buclă for, determinați câți elevi au note între:
+Obțineți numărul total de elevi, apoi folosiți o buclă for pentru a determina câți elevi au note între:
  - 5 și mai mult
  - 4 și 4.99
  - 3 și 3.99

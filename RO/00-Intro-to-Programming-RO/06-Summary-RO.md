@@ -7,13 +7,13 @@
 
 ## În această lecție ați învățat:
 
-- Ce este codificarea
+- Ce este codarea
 
 - Cum să scrieți un cod de bază 
 
-- Programul reprezintă secvențe de comenzi
+- Programul reprezintă o **secvență de comenzi**
 
-- Cum să instalați și să rulați IntelliJ
+- Cum să **instalați** și să rulați **IntelliJ**
 
 - Cum să creați un proiect, fișiere și aplicații simple în IntelliJ
 
@@ -23,7 +23,7 @@
 
 - Ce reprezintă instrucțiunile
 
-- Cum să citiți și să imprimați datele intrare de utilizator
+- Cum să citiți și să imprimați datele de intrare ale utilizatorului
 
 - Cum să efectuați operații simple
 
