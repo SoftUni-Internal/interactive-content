@@ -114,7 +114,7 @@ Place all common functionality in a **parent abstract** class.
 
 Follow the diagram below:
 
-
+[image assetsSrc="Angular-Introduction-7.png" /]
 
 Every position has different tasks.
 
@@ -157,7 +157,7 @@ We should begin by creating a parent class, that will hold all properties, share
 
 Looking at the problem description, we see the following structure for our parent object:
 
-
+```
     \{
       age: Number,
       name: String,
@@ -166,7 +166,7 @@ Looking at the problem description, we see the following structure for our paren
       work: Function,
       collectSalary: Function
     \}
-
+```
 
 Data variables will be part of the object attached to its local context with **this** inside the **constructor**.
 
