@@ -19,8 +19,8 @@
 
 - Definition
 
-- Loop through nested arrays
+- Looping through nested arrays
 
-- Manipulate data
+- Manipulating data
 
 [/slide]
