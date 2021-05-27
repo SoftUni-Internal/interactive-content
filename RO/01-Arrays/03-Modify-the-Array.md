@@ -45,15 +45,15 @@ console.log(nums);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Negative or Positive Numbers - DO NOT TRANSLATE IN RO
+# Problemă cu Soluție: Negative or Positive Numbers
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-12-problem-and-solution-negative-posivite-numbers-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05. JS-Fundamentals-Arrays-Advanced-12--negative-posivite-numbers-Solution-ONLY-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Negative or Positive Numbers" taskId="fundamentals-js-arrays-advanced-lab-Negative-or-Positive-Numbers"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Negative or Positive Numbers" taskId="java-path-js-advanced-arrays-Negative-or-Positive-Numbers"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function negativePositive(input){
-  // Write your code here
+  // Scrieți codul dvs. aici
 }
 
 ```
@@ -68,19 +68,18 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
+# Descriere
 
-Write a function that processes **all the elements of an array one by one** and **creates a new array**. 
+Scrieți o funcție care procesează **toate elementele unei matrice unul câte unul** și **creează o matrice nouă**.
 
-Append each **negative** element to the **beginning**, and each **positive** (or 0) element, to the **end** of the new array. 
+Adăugați fiecare element negativ la început și fiecare element pozitiv (sau 0) la sfârșitul noii matrice.
 
-The **input** comes as an **array** of string elements, holding **numbers**. 
+**Intrarea** este dată ca **o matrice de șiruri**, care conțin **numere**.
 
-The **output** has to be **printed to the console**, each element on a **new line**.
+**Ieșirea** trebuie imprimată pe consolă, fiecare element pe **o nouă linie**.
 
-
-## Example One
-| **Input** | **Output** |
+## Exemplul Unu
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |negativePositive([7, -2, 8, 9]) | \-2 |
 | | 7 |
@@ -88,8 +87,8 @@ The **output** has to be **printed to the console**, each element on a **new lin
 | | 9 |
 
 
-## Example Two
-| **Input** | **Output** |
+## Exemplul Doi
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |negativePositive([3, -2, 0, -1])  | \-1 |
 | | \-2 |
@@ -98,12 +97,12 @@ The **output** has to be **printed to the console**, each element on a **new lin
 
 [hints]
 [hint]
-Use `unshift()` to add an element at the **first** position.
-[/hint] 
+Utilizați `unshift()` pentru a adăuga un element pe prima poziție.
+[/hint] 
 [hint]
-Use `push()` to add an element at the **last** position.
-[/hint] 
-[/hints] 
+Folosiți `push()` pentru a adăuga un element pe ultima poziție.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]
@@ -236,16 +235,16 @@ console.log(nums);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Sum First Last - DO NOT TRANSLATE IN RO
+# Problemă cu Soluție: Sum First Last
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-problem-1-solution-sum-first-last-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-problem-1-solution-sum-first-last-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Sum First Last" taskId="fundamentals-js-arrays-advanced-lab-Sum-First-Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sum First Last" taskId="java-path-js-advanced-arrays-Sum-First-Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
-function solve(input){
-  // Write your code here
+function sumFirstLast(input){
+ // Scrieți codul dvs. aici
 }
 
 ```
@@ -260,26 +259,26 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
+# Descriere
 
-Write a function that **calculates** and **prints** the **sum** of the **first and the last elements** of an array. 
+Scrieți o funcție care **calculează** și **imprimă** suma primului și ultimului element al unei matrice.
 
-The **input** comes as an **array** of **string** elements, holding **numbers**. 
+**Intrarea** este dată ca o **matrice** de **șiruri**, care conțin **numere**.
 
-The **output** should be the **value, which is returned from the function**. 
+**Ieșirea** trebuie să fie **valoarea returnată de către funcție**.
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+|**Intrare**|**Ieșire** |
 | --- | --- |
-|solve(['20', '30', '40']) | 60 |
-|solve(['5', '10']) | 15 |
+|sumFirstLast(['20', '30', '40']) | 60 |
+|sumFirstLast(['5', '10']) | 15 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-solve(['20', '30', '40'])
+sumFirstLast(['20', '30', '40'])
 [/input]
 [output]
 60
@@ -287,7 +286,7 @@ solve(['20', '30', '40'])
 [/test]
 [test open]
 [input]
-solve(['5', '10'])
+sumFirstLast(['5', '10'])
 [/input]
 [output]
 15
@@ -295,7 +294,7 @@ solve(['5', '10'])
 [/test]
 [test]
 [input]
-solve(['2', '3', '2', '14', '3'])
+sumFirstLast(['2', '3', '2', '14', '3'])
 [/input]
 [output]
 5
@@ -303,7 +302,7 @@ solve(['2', '3', '2', '14', '3'])
 [/test]
 [test]
 [input]
-solve(['2.5', '3.6', '1.1', '3.33'])
+sumFirstLast(['2.5', '3.6', '1.1', '3.33'])
 [/input]
 [output]
 5.83
@@ -311,7 +310,7 @@ solve(['2.5', '3.6', '1.1', '3.33'])
 [/test]
 [test]
 [input]
-solve(['1000', '2000', '3000', '4000'])
+sumFirstLast(['1000', '2000', '3000', '4000'])
 [/input]
 [output]
 5000
@@ -319,7 +318,7 @@ solve(['1000', '2000', '3000', '4000'])
 [/test]
 [test]
 [input]
-solve(['20', '30', '40'])
+sumFirstLast(['20', '30', '40'])
 [/input]
 [output]
 60
@@ -327,7 +326,7 @@ solve(['20', '30', '40'])
 [/test]
 [test]
 [input]
-solve(['5', '10'])
+sumFirstLast(['5', '10'])
 [/input]
 [output]
 15

@@ -50,7 +50,7 @@ console.log(nums);
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-12-problem-and-solution-negative-posivite-numbers-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Negative or Positive Numbers" taskId="fundamentals-js-arrays-advanced-lab-Negative-or-Positive-Numbers"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Negative or Positive Numbers" taskId="java-path-js-advanced-arrays-Negative-or-Positive-Numbers"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function negativePositive(input){
@@ -245,15 +245,15 @@ console.log(nums);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Sum First Last - DO NOT TRANSLATE IN RO
+# Problem with Solution: Sum First Last
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-problem-1-solution-sum-first-last-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[code-task title="Sum First Last" taskId="fundamentals-js-arrays-advanced-lab-Sum-First-Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
+[code-task title="Sum First Last" taskId="java-path-js-advanced-arrays-Sum-First-Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
-function solve(input){
+function sumFirstLast(input){
   // Write your code here
 }
 
@@ -280,15 +280,15 @@ The **output** should be the **value, which is returned from the function**.
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|solve(['20', '30', '40']) | 60 |
-|solve(['5', '10']) | 15 |
+|sumFirstLast(['20', '30', '40']) | 60 |
+|sumFirstLast(['5', '10']) | 15 |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-solve(['20', '30', '40'])
+sumFirstLast(['20', '30', '40'])
 [/input]
 [output]
 60
@@ -296,7 +296,7 @@ solve(['20', '30', '40'])
 [/test]
 [test open]
 [input]
-solve(['5', '10'])
+sumFirstLast(['5', '10'])
 [/input]
 [output]
 15
@@ -304,7 +304,7 @@ solve(['5', '10'])
 [/test]
 [test]
 [input]
-solve(['2', '3', '2', '14', '3'])
+sumFirstLast(['2', '3', '2', '14', '3'])
 [/input]
 [output]
 5
@@ -312,7 +312,7 @@ solve(['2', '3', '2', '14', '3'])
 [/test]
 [test]
 [input]
-solve(['2.5', '3.6', '1.1', '3.33'])
+sumFirstLast(['2.5', '3.6', '1.1', '3.33'])
 [/input]
 [output]
 5.83
@@ -320,7 +320,7 @@ solve(['2.5', '3.6', '1.1', '3.33'])
 [/test]
 [test]
 [input]
-solve(['1000', '2000', '3000', '4000'])
+sumFirstLast(['1000', '2000', '3000', '4000'])
 [/input]
 [output]
 5000
@@ -328,7 +328,7 @@ solve(['1000', '2000', '3000', '4000'])
 [/test]
 [test]
 [input]
-solve(['20', '30', '40'])
+sumFirstLast(['20', '30', '40'])
 [/input]
 [output]
 60
@@ -336,7 +336,7 @@ solve(['20', '30', '40'])
 [/test]
 [test]
 [input]
-solve(['5', '10'])
+sumFirstLast(['5', '10'])
 [/input]
 [output]
 15
