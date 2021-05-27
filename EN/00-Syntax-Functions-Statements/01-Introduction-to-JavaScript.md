@@ -43,6 +43,62 @@ Ultimately, it is the programmer's responsibility to ensure that user input does
 [/slide]
 
 [slide hideTitle]
+# Installing Node.js and Visual Studio Code
+
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-20-21-22-Installing-NodeJS-and-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+We need **Node.js** so that we can execute JavaScript code outside of a browser.
+
+* Server-side JS runtime
+
+[image assetsSrc="intro-to-programming-3.png" /]
+
+You can download [Node.js](https://nodejs.org/en/download/).
+
+[image assetsSrc="intro-to-programming-install-nodejs-1.png" /]
+
+Select your operating system and go on with installing.
+[image assetsSrc="intro-to-programming-install-nodejs-2.png" /]
+
+Let us continue with the installation of the integrated environment **Microsoft Visual Studio Code**.
+
+Installing later versions of Visual Studio Code should be very similar.
+
+[Visual Studio Code](https://code.visualstudio.com/download) (VS Code) is distributed freely by Microsoft.
+
+The next lines describe in detail the steps for the installation of Visual Studio Code. 
+
+After we download the installation file and start it, the following screen will appear:
+[image assetsSrc="intro-to-programming-install-vscode-1.png" /]
+
+We press the `[Next]` button and we will see the screen below:
+[image assetsSrc="intro-to-programming-install-vscode-2.png" /]
+
+We can choose a destination location or leave the default one. Then we press the `[Next]` button again.
+[image assetsSrc="intro-to-programming-install-vscode-3.png" /]
+
+Next, we have to specify a name for the program folder that will be created in the Start Menu. 
+
+The next step is to put check marks on these tasks:
+[image assetsSrc="intro-to-programming-install-vscode-4.png" /]
+
+VS is now ready for installation. We press the `[Install]` button. This is everything.
+[image assetsSrc="intro-to-programming-install-vscode-5.png" /]
+
+Installation of Visual Studio begins, and a screen like the one below will appear:
+[image assetsSrc="intro-to-programming-install-vscode-6.png" /]
+
+After Visual Studio is installed, the following screen will appear. Press the `[Launch]` button to start VS.
+[image assetsSrc="intro-to-programming-install-vscode-7.png" /]
+
+Upon **starting Visual Studio Code**, the main view is displayed. 
+
+[image assetsSrc="intro-to-programming-install-vscode-8.png" /]
+
+We are ready to start using Visual Studio Code.
+[/slide]
+
+[slide hideTitle]
 # Data Types
 
 We can divide the types of data available in JavaScript into two groups - **primitives** and **reference** types. 
