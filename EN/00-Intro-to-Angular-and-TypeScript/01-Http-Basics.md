@@ -4,28 +4,25 @@
 
 # What is HTTP?
 
-**Hyper Text Transfer Protocol** or **HTTP**, is an application-level protocol for distributed, collaborative, hypermedia information systems, between a web client and a server.
+**Hypertext Transfer Protocol** or **HTTP** is an application-level protocol for distributed, collaborative, hypermedia information systems, between a web client and a web server.
 
-**HTTP** is a text-based **client-server** protocol that can be used for transferring Web resources, like HTML files, images, query results, and more, by using a standardized way of communication. 
+**HTTP** is a text-based **client-server** protocol that can be used for **transferring** Web resources, like **HTML** files, **images**, **query results**, and more, by using a **standardized** way of communication. 
 
-What makes HTTP a powerful protocol are the following features:
+What makes HTTP a powerful protocol are the **following features**:
 
-- Connectionless: The web browser and the server are not connected, when the web browser sends a request to the server the connection is created
+- **Connectionless**: The web browser and the server are not **connected**, when the web browser sends a request to the server the **connection is created**
 
-The server is obligated to respond and after the response, it proceeds, the connection between both is terminated. 
+The server is **obligated** to respond and after the response has been **proceeded**, the connection between both is **terminated**. 
 
-The only time when web client and web server know about each other during current request and response only.
+The only time when web client and web server **know about each other** is during current request and response only.
 
-- Media independence: There is no restriction about what kind of data type can be sent by HTTP
+- **Media independence**: There is no **restriction** about what kind of data type can be sent by HTTP
 
-If the web browser has specified a content type (MIME-type) and the webserver can handle such data content, the HTTP request will be handled successfully.
+If the web browser has specified a **content type** (MIME-type) and the **webserver** can handle such data **content**, the HTTP request will be handled **successfully**.
 
-- Stateless: The web server and the web client are not aware of each other all the time, which means that
-the connection is created only when a request is made
+- **Stateless**: The **web server** and the **web client** are not aware of each other all the time, which means that the **connection** is created only when a **request** is made
 
-That way neither the client nor the browser retain information between requests, and often cookies are used to overcome this issue.
-
-
+That way neither the client nor the browser **retain information between requests**, and often cookies are used to **overcome** this issue.
 
 [/slide]
 
@@ -33,10 +30,12 @@ That way neither the client nor the browser retain information between requests,
 
 # Request-Response Model
 
-When using HTTP protocol in the majority of the cases we have client program and server program, where:
+When using HTTP protocol in the **majority** of the cases we have **communication** between **client** program and **server** program, where:
 
-- Client program is a web browser (Google Chrome, Mozilla Firefox, Safari, etc.) that can start the connection
-- Server program is a web server, which is up and running, waiting for requests that could be written (created) using different programming languages, for example:
+- Client program is a **web browser** (Google Chrome, Mozilla Firefox, Safari, etc.) that is able to **start** the connection
+- Server program is a **web server**, which is **up and running**, waiting for **requests**
+
+The **web server** could be written (created) using different **programming languages**, for example:
    - [ASP.Net Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core) - CSharp
    - [Spring](https://spring.io/) - Java
    - [Node.js](https://nodejs.org/en/about/) - JavaScript
@@ -46,12 +45,13 @@ For example:
 
 [image assetsSrc="Angular-Introduction.png" /]
 
-In this example a web server sends a "GET" request for a file named "index.html", using HTTP/2.0 protocol, which "2.0" is the latest version of the HTTP protocol.
+In this example a web server sends a "**GET**" **request** for a file **named** "index.html", **using** HTTP/1.1 protocol, which "1.1" is the **current version** of the HTTP protocol.
 
+And the server is **obligated** to return a response, and in this case, the server **agrees** use the HTTP/1.1 protocol.
 
-And the server is obligated to return a response, and in this case, the server agrees to use the HTTP/2.0 protocol.
+The **actual response** is "200 OK" which is **self-explanatory** and also a text is **returned** "Welcome to our Web site!".
 
-The actual response is "200 OK" which is self-explanatory and also a text is returned "Welcome to our Web site!".
+You can read more about status codes in [MDN Web Documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
 [/slide]
 
