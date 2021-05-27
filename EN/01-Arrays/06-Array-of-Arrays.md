@@ -5,13 +5,13 @@
 
 # Nested Arrays in JavaScript
 
-The arrays we have been using so far have only held **one column** of data.
+The arrays we have been using so far only had **one column** of data.
 
-But we can set up an array to hold more than one column, called **multi-dimensional arrays** or matrices.
+But we can set up an array to hold more than one column, called a **multi-dimensional array** or a matrice.
 
 As an example, think of a **spreadsheet** with rows and columns.
 
-If you have 6 rows and 5 columns then your **spreadsheet** can hold 30 numbers, which is a classical example of a **matrix**.
+If you have 6 rows and 5 columns, then your **spreadsheet** can hold 30 numbers, which is a classic example of a **matrix**.
 
 It might look like this:
 
@@ -23,7 +23,7 @@ There is also another type of **multi-dimensional arrays**, called a **jagged ar
 
 In this example, there is an array of four arrays (**jagged array**), and each row has a different number of elements.
 
-JavaScript representation of this example is:
+The JavaScript representation of this example is:
 
 ```js live
 let arr = [
@@ -43,7 +43,9 @@ console.log(arr[2][0])
 
 # Looping Through a Nested Array
 
-**Example:**
+We can print elements of nested arrays with multiple loops.
+
+Take a look at the following example:
 
 ```js live
 let arr = [[4, 5, 6],
@@ -57,9 +59,10 @@ function printRow(row){
     row.forEach(el => console.log(el));
 }
 ```
-A **matrix** can be print using **forEach** loop, where an argument (current row) is passed to a function.
 
-Another forEach is **used** to iterate through every **element** from the **row**, and print it to the **console**.
+The **matrix** is printed using a **forEach** loop, where an argument (current row) is passed to a function.
+
+In that function, another **forEach** is **used** to iterate through every **element** from the **row**, and print it to the **console**.
 
 [/slide]
 
@@ -92,7 +95,9 @@ Write a function that finds the sum of the two diagonals in a square matrix.
 
 The **input** comes as **array of arrays**, containing number elements (2D matrix of numbers). 
 
-The **output** is printed to the console on a single line, separated by space. First, print the sum of the main diagonal, then the sum of the secondary diagonal. 
+The **output** is printed to the console on a single line, separated by space. 
+
+First, print the sum of the main diagonal, then the sum of the secondary diagonal. 
 
 ## Examples
 | **Input** | **Output** |
