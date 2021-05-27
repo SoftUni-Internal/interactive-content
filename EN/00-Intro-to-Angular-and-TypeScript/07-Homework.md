@@ -218,7 +218,7 @@ The easiest way to do this is to shift the first element from the array and push
 
 Printing the salary is pretty straightforward.
 
-However, since the manager has an added bonus to his salary, it’s best to get the whole sum with an internal function, that the manager can **override**.
+However, since the manager has a bonus to his salary, it’s best to get the whole sum with an internal function, that the manager can **override**.
 
 ```js
     public collectSalary(): void {
@@ -234,7 +234,7 @@ Now any objects that inherit from Employee will have all of their properties as 
 
 To inherit (extend) a class, a new class is defined with the **extends** keyword after its name.
 
-They also have to call the parent constructor from their own constructor, so the prototype chain is established.
+They also have to call the parent constructor from their constructor, so the prototype chain is established.
 
 For **Junior** and **Senior**, the only difference from the parent **Employee** is the elements inside the tasks array, since they can use the functions directly from the base class.
 

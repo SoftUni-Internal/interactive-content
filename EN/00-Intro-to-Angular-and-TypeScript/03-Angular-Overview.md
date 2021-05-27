@@ -14,7 +14,7 @@ Components in Angular are the basics elements, which are organized in "**NgModul
 
 An Angular app is defined by a set of "**NgModules**", which collect related code into functional sets.
 
-The minimum requirement for an Angular application is to have no less than one root module that enables bootstrapping, and also has many more feature modules.
+The **minimum requirement** for an Angular application is to have no less than **one root module** that enables bootstrapping, and also has many more feature modules.
 
 Here is an example of an Angular component:
 
