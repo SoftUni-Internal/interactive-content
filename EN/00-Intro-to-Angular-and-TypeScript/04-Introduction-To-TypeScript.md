@@ -40,7 +40,7 @@ The variable **types** in TypeScript are:
    let decimal: number = 6;
    let hex: number = 0xf00d;
    let binary: number = 0b1010;
-l  et octal: number = 0o744;
+   let octal: number = 0o744;
 ```
 
 -  **String**
@@ -283,5 +283,7 @@ Here are some ways to import methods:
 ```
 
 If we have used the **default exporting**, we can use `import example from "./example";`.
+
+You can learn more about TypeScript [here](https://www.typescriptlang.org/docs/).
 
 [/slide]

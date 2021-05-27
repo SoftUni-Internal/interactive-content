@@ -20,7 +20,7 @@ To run the application, we need to start a server with `ng serve`.
 
 By default, it will run on **port 4200**.
 
-You can find more information on [Official Website](https://angular.io/https://angular.io/) or at the [documentation](https://angular.io/docs).
+You can find more information on [Official Website](https://angular.io) or at the [documentation](https://angular.io/docs).
 
 [/slide]
 
@@ -31,6 +31,8 @@ You can find more information on [Official Website](https://angular.io/https://a
 Most of the modern **IDEs** support TypeScript or have **plugins** that we can install.
 
 For example, **Visual Studio Code** fully supports TypeScript, without the need for any plugins.
+
+When using VSCode for writing Angular, the "**Angular Language Service**" extension could be installed, which will help to receive intellisense when binding class properties or components into HTML files.
 
 Also, with **Angular CLI**, **everything** is included.
 

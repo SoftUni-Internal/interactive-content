@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# TypeScript playground
+# TypeScript Playground
 
 Install typescript with the `npm install typescript -g`.
 
@@ -11,26 +11,21 @@ Install typescript with the `npm install typescript -g`.
 Create a **.vscode** folder and a **tsconfig.json** file with the following configuration:
 
 ```
-    {
-      "compilerOptions": {
-        "target": "es6",
-        "module": "commonjs",
-        "sourceMap": true
-      }
-    }
+{
+   "compilerOptions":{
+      "target":"es6",
+      "module":"commonjs",
+      "sourceMap":true
+   }
+}
 ```
 
 [image assetsSrc="Angular-Introduction-5.png" /]
 
 After you have your **.ts** file, open the **terminal** and execute the **following commands**:
 
-```
-    tsc {filename}.ts
-```
-
-```
-    node {filename}
-```
+`tsc {filename}.ts`
+`node {filename}`
 
 [image assetsSrc="Angular-Introduction-6.jpg" /]
 
@@ -44,19 +39,19 @@ Write a TypeScript class that holds data about an HTTP request.
 
 It has the following properties:
 
--  **method** \(String\)
+-  **method** (String)
 
--  **uri** \(String\)
+-  **uri** (String)
 
--  **version** \(String\)
+-  **version** (String)
 
--  **message** \(String\)
+-  **message** (String)
 
--  **response** \(String\)
+-  **response** (String)
 
--  **fulfilled** \(Boolean\)
+-  **fulfilled** (Boolean)
 
-The first four properties \(**method**, **uri**, **version**, **message**\) are set trough the **constructor**, in the listed order.
+The first four properties (**method**, **uri**, **version**, **message**) are set trough the **constructor**, in the listed order.
 
 The **response** property is initialized to **undefined** and the **fulfilled** property is initially set to **false**.
 
@@ -64,7 +59,7 @@ The **response** property is initialized to **undefined** and the **fulfilled** 
 
 | **Sample Input**| **Resulting object**|
 | --- | --- |
-| `let myData = new Request('GET', 'http://google.com', 'HTTP/1.1', '')` | `{ method: 'GET', uri: 'http://google.com', version: 'HTTP/1.1',message: '', response: undefined, fulfilled: false }` |
+|let myData = new Request('GET', 'http://google.com', 'HTTP/1.1', '') | \{ method: 'GET', uri: 'http://google.com', version: 'HTTP/1.1',message: '', response: undefined, fulfilled: false \} |
 
 [/slide]
 
@@ -74,19 +69,17 @@ The **response** property is initialized to **undefined** and the **fulfilled** 
 
 Write a program using TS that manages a database of tickets.
 
-A ticket has a **destination** \(string\), a **price** \(number\) and a **status** \(string\).
+A ticket has a **destination** (string), a **price** (number) and a **status** (string).
 
-Your program will receive **two arguments** – the first is an **array of strings** for ticket descriptions and the second is a **string**, representing **sorting criteria**.
+Your program will receive **two arguments** - the first is an **array of strings** for ticket descriptions and the second is a **string**, representing **sorting criteria**.
 
 The ticket descriptions have the following format:
 
-```
-<destinationName>|<price>|<status>
-```
+"\<**destinationName**\>\|\<**price**\>\|\<**status**\>"
 
 Store each ticket and at the end of execution **return** a sorted summary of all tickets, sorted by either **destination**, **price** or **status**, depending on the **second parameter** that your program received.
 
-Always sort in ascending order \(the default behavior for **alphabetical** sort\).
+Always sort in ascending order (the default behavior for **alphabetical** sort).
 
 If two tickets compare the same, use order of appearance.
 
@@ -94,7 +87,7 @@ See the examples for more information.
 
 ## Input
 
-Your program will receive two parameters – an array of strings and a single string.
+Your program will receive two parameters - an array of strings and a single string.
 
 ## Output
 
@@ -104,8 +97,8 @@ Your program will receive two parameters – an array of strings and a single st
 
 | **Sample Input** | **Output Array** |
 | --- | --- | 
-| `\['Philadelphia\|94.20\|available', 'New York City\|95.99\|available', 'New York City\|95.99\|sold', 'Boston\|126.20\|departed'],'destination'` | `[ Ticket { destination: 'Boston', price: 126.20, status: 'departed' }, Ticket { destination: 'New York City', price: 95.99, status: 'available' }, Ticket {destination: 'New York City', price: 95.99, status: 'sold' }, Ticket { destination: 'Philadelphia', price: 94.20, status: 'available' } ]` |
-|`'Philadelphia | 94.20 | available', 'New York City | 95.99 | available', 'New York City | 95.99 | sold', 'Boston | 126.20 | departed'],'status'` | `[ Ticket { destination: 'Philadelphia', price: 94.20, status: 'available' }, Ticket { destination: 'New York City', price: 95.99, status: 'available' }, Ticket { destination: 'Boston', price: 126.20, status: 'departed' }, Ticket { destination: 'New York City', price: 95.99, status: 'sold' } ]` |
+| \['Philadelphia\|94.20\|available', 'New York City\|95.99\|available', 'New York City\|95.99\|sold', 'Boston\|126.20\|departed'],'destination' | [ Ticket \{ destination: 'Boston', price: 126.20, status: 'departed' \}, Ticket \{ destination: 'New York City', price: 95.99, status: 'available' \}, Ticket \{destination: 'New York City', price: 95.99, status: 'sold' \}, Ticket \{ destination: 'Philadelphia', price: 94.20, status: 'available' \} ] |
+|'Philadelphia\|94.20\|available', 'New York City\|95.99\|available', 'New York City\|95.99\|sold', 'Boston\|126.20\|departed'],'status' | [ Ticket \{ destination: 'Philadelphia', price: 94.20, status: 'available' \}, Ticket \{ destination: 'New York City', price: 95.99, status: 'available' \}, Ticket \{ destination: 'Boston', price: 126.20, status: 'departed' \}, Ticket \{ destination: 'New York City', price: 95.99, status: 'sold' \} ] |
 
 [/slide]
 
@@ -143,20 +136,20 @@ The resulting objects also expose the functions `work()` and `collectSalary()`.
 
 When `work()` is called, one of the following lines is printed on the console, depending on the current task in the list:
 
-```
-    {employee name} is working on a simple task.
-    {employee name} is working on a complicated task.
-    {employee name} is taking time off work.
-    {employee name} is supervising junior workers.
-    {employee name} scheduled a meeting.
-    {employee name} is preparing a quarterly report.
-```
+
+"\{**employee name**\} **is working on a simple task.**"
+"\{**employee name**\} **is working on a complicated task.**"
+"\{**employee name**\} **is taking time off work.**"
+"\{**employee name**\} **is supervising junior workers.**"
+"\{**employee name**\} **scheduled a meeting.**"
+"\{**employee name**\} **is preparing a quarterly report.**"
+
 
 And when `collectSalary()` is called, print the following:
 
-```
-    {employee name} received {salary + bonuses} this month.
-```
+
+"\{**employee name**\} **received** \{**salary + bonuses**\} **this month.**"
+
 
 ## Hints
 
@@ -164,16 +157,16 @@ We should begin by creating a parent class, that will hold all properties, share
 
 Looking at the problem description, we see the following structure for our parent object:
 
-```
-    {
+
+    \{
       age: Number,
       name: String,
       salary: Number,
       tasks: [],
       work: Function,
       collectSalary: Function
-    }
-```
+    \}
+
 
 Data variables will be part of the object attached to its local context with **this** inside the **constructor**.
 
@@ -307,17 +300,16 @@ Create classes **Watermelon**, **Firemelon**, **Earthmelon**, **Airmelon**.
 
 Each of them should **inherit** the **abstract class Melon** and its functionality.
 
-Aside from the abstract functionality, **each** of the **Elemelons** should have property **elementIndex** \(Number\), which is **equal** to its **weight \* the string length** of its **melonSort**.
+Aside from the abstract functionality, **each** of the **Elemelons** should have property **elementIndex** \(Number\), which is **equal** to its "**weight** \* **the string length**" of its **melonSort**.
 
 The property should have only a **getter**.
 
 All of the classes should hold a `toString()` function, which returns the following result for them:
 
-```
-    "Element: {Water/Fire/Earth/Air}"
-    "Sort: {elemelonSort}"
-    "Element Index: {elemelonElementIndex}"
-```
+"**Element:** \{**Water/Fire/Earth/Air**\}"
+"**Sort:** \{**elemelonSort**\}"
+"**Element Index:** \{**elemelonElementIndex**\}"
+
 
 Create one more class which is called **Melolemonmelon**, which inherits **one** of the **4 elements, regardless of which**.
 
@@ -325,7 +317,7 @@ The Melolemonmelon **has no element**, but it can **morph** into any of the othe
 
 Upon initialization, the **initial element is Water**.
 
-From then it should go in the following order: **Fire, Earth, Air, Water, Fire**… and so on.
+From then it should go in the following order: **Fire, Earth, Air, Water, Fire** and so on.
 
 The `toString()` function should remain the same as its parent class.
 
@@ -367,17 +359,17 @@ Remove should get the topmost element.
 
 | **Input**| **Output** |
 | --- | --- |
-| `let box = new Box<Number>();` | 3 |
-| `box.add(1);` ||
-| `box.add(2);` ||
-| `box.add(3);` ||
-| `console.log(box.count);` ||
-| `let box = new Box<String>();` | 2 |
-| `box.add("Pesho");` | 1 |
-| `box.add("Gosho");` ||
-| `console.log(box.count);` ||
-| `box.remove();` ||
-| `console.log(box.count);` ||
+| let box = new Box\<Number\>(); | 3 |
+| box.add(1); ||
+| box.add(2); ||
+| box.add(3); ||
+| console.log(box.count); ||
+| let box = new Box\<String\>(); | 2 |
+| box.add("Pesho"); | 1 |
+| box.add("Gosho"); ||
+| console.log(box.count); ||
+| box.remove(); ||
+| console.log(box.count); ||
 
 ```js
     class Box<T> {
@@ -411,15 +403,15 @@ It should have the following public methods:
 
 -  `setKeyValue(key: T, value: U)`
 
--  `display()` – log the key and the value in the following format: `key = {key}, value = {value}`
+-  `display()` - log the key and the value in the following format: "**key =** \{**key**\}, **value =** \{**value**\}"
 
 ## Example
 
 | **Input**| **Output**|
 | --- | --- |
-| `let kvp = new KeyValuePair<number, string>();` | `key = 1, value = Steve` |
-| `kvp.setKeyValue(1, "Steve");`||
-| `kvp.display();`||
+| let kvp = new KeyValuePair\<number, string\>(); | key = 1, value = Steve |
+| kvp.setKeyValue(1, "Steve");||
+| kvp.display();||
 
 ```js
     class KeyValuePair<T, U>

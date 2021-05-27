@@ -8,19 +8,19 @@
 
 - What is **Angular**
 
-   - Angular is an open-source **web application framework**
+   - angular is an open-source **web application framework**
 
-   - Used for **enterprise-level** **front-end** applications
+   - used for **enterprise-level** **front-end** applications
 
-   - Angular applications concentrate on fundamental concepts
+   - angular applications concentrate on fundamental concepts
 
 - What is **TypeScript**
 
    - **TypeScript** is a JavaScript superset
 
-   - Allows us to write **typed** JavaScript
+   - allows us to write **typed** JavaScript
 
-   - The output which we receive is plain JavaScript
+   - the output which we receive is plain JavaScript
 
    ```js
       class Greeter {
@@ -38,24 +38,24 @@
 
 - Angular CLI
 
-   - **Toolkit** for Angular
+   - **toolkit** for Angular
 
-   - Gives us a **high-quality** build process
+   - gives us a **high-quality** build process
 
 ## In the next lesson, you will learn:
 
 - Components and Data Binding:
 
-   - Basic Idea of Components
+   - basic Idea of Components
 
-   - Creating Components
+   - creating Components
 
-   - Bootstrapping and Modules
+   - bootstrapping and Modules
 
-   - Data Binding and Templates
+   - data Binding and Templates
 
-   - Lifecycle Hooks
+   - lifecycle Hooks
 
-   -  Component Interaction
+   - component Interaction
 
 [/slide]
