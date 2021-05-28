@@ -176,6 +176,7 @@ function largestNumber() {
 };
 ```
 [/code-editor]
+
 [code-adapter]
 ```
 function adapter(input, code) {
