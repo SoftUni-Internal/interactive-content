@@ -1,6 +1,6 @@
 # Lesson Introduction
 
-[slide]
+[slide hideTitle]
 
 # Lesson Content
 
@@ -13,12 +13,12 @@
 - The five principles of object\-oriented programming
 
 **3. Services**
-- Constructor Injection and Providers
+- Constructor injection and providers
 
 **4. Observables and RxJS**
-- Introduction to Functional Reactive Programming
+- Introduction to functional reactive programming
 
 **5. HTTP Client**
-- Fetching data from a Remote API
+- Fetching data from a remote API
 
 [/slide]
