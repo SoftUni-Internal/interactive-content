@@ -373,13 +373,13 @@ function calculateGCD(num1, num2) {
 [/code-editor]
 
 [code-adapter]
-
-
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
+```
 [/code-adapter]
 
 [task-description]
@@ -491,13 +491,13 @@ function checkNumber(input) {
 [/code-editor]
 
 [code-adapter]
-
-
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
+```
 [/code-adapter]
 
 [task-description]
@@ -613,13 +613,13 @@ function calculateTime(stepsCount, stepLength, speed) {
 [/code-editor]
 
 [code-adapter]
-
-
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
+```
 [/code-adapter]
 
 [task-description]
@@ -725,13 +725,13 @@ function speedCheck(speed, areaType) {
 [/code-editor]
 
 [code-adapter]
-
-
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
+```
 [/code-adapter]
 
 [task-description]
