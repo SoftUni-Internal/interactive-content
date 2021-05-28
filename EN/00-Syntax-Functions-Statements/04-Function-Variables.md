@@ -205,7 +205,6 @@ function adapter(input, code) {
 ```
 [task-description]
 
-[task-description]
 ## Description
 
 Create a program that performs different operations on an array of elements. Implement the following operations:
