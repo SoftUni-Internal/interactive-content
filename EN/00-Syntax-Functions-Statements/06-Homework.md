@@ -19,8 +19,6 @@ function adapter(input, code) {
 [/code-adapter]
 ```
 [task-description]
-
-[task-description]
 ## Description
 Write a JS function that receives **two** **numbers** and **a string** as input.
 
@@ -153,8 +151,6 @@ function adapter(input, code) {
 [/code-adapter]
 ```
 [task-description]
-
-[task-description]
 ## Description
 
 Write a function that receives two numbers **n** and **m** as input and **prints the sum** of all numbers from **n** to **m**.
@@ -273,8 +269,6 @@ function adapter(input, code) {
 }
 [/code-adapter]
 ```
-[task-description]
-
 [task-description]
 ## Description
 
@@ -1020,8 +1014,6 @@ function adapter(input, code) {
 }
 [/code-adapter]
 ```
-[task-description]
-
 [task-description]
 ## Description
 
