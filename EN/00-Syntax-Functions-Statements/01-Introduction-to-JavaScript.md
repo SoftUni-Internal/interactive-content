@@ -66,69 +66,59 @@ Here is a table containing the seven primitive data types in JavaScript.
 [/slide]
 
 [slide hideTitle]
-# Instalarea Node.js și Visual Studio Code
+# Installing Node.js and Visual Studio Code
 
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-20-21-22-Installing-NodeJS-and-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-20-21-22-Installing-NodeJS-and-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Avem nevoie de **Node.js**, astfel încât să putem executa cod JavaScript în afara unui browser.
+We need **Node.js** so that we can execute JavaScript code outside of a browser.
 
-* Runtime JS pe partea de server
+* Server-side JS runtime
 
 [image assetsSrc="intro-to-programming-3.png" /]
 
-Puteți descărca [Node.js](https://nodejs.org/en/download/).
+You can download [Node.js](https://nodejs.org/en/download/).
 
 [image assetsSrc="intro-to-programming-install-nodejs-1.png" /]
 
-Selectați OS-ul vostru și continuați cu instalarea.
-
+Select your operating system and go on with installing.
 [image assetsSrc="intro-to-programming-install-nodejs-2.png" /]
 
-Să continuăm cu instalarea mediului integrat **Microsoft Visual Studio Code**.
+Let us continue with the installation of the integrated environment **Microsoft Visual Studio Code**.
 
-Instalarea versiunilor ulterioare ale Visual Studio Code ar trebui să fie foarte asemănătoare.
+Installing later versions of Visual Studio Code should be very similar.
 
-[Visual Studio Code](https://code.visualstudio.com/download) (VS Code) este distribuit gratuit de Microsoft.
+[Visual Studio Code](https://code.visualstudio.com/download) (VS Code) is distributed freely by Microsoft.
 
-Instalarea este tipică pentru Windows cu `[Next]`, `[Next]` și `[Finish]`.
+The next lines describe in detail the steps for the installation of Visual Studio Code. 
 
-Următoarele linii descriu în detaliu pașii pentru instalarea Visual Studio Code.
-
-După ce descărcăm fișierul de instalare și îl pornim, apare următorul ecran:
-
+After we download the installation file and start it, the following screen will appear:
 [image assetsSrc="intro-to-programming-install-vscode-1.png" /]
 
-Apăsăm butonul `[Next]` și vom vedea ecranul de mai jos:
-
+We press the `[Next]` button and we will see the screen below:
 [image assetsSrc="intro-to-programming-install-vscode-2.png" /]
 
-Putem alege o locație de destinație sau să o lăsăm pe cea implicită. Apoi apăsăm din nou butonul `[Next]`.
-
+We can choose a destination location or leave the default one. Then we press the `[Next]` button again.
 [image assetsSrc="intro-to-programming-install-vscode-3.png" /]
 
-Acum trebuie să specificăm un nume pentru folderul programului care va fi creat în meniul Start.
+Next, we have to specify a name for the program folder that will be created in the Start Menu. 
 
-Următorul pas este să punem bife pentru următoarele sarcini:
-
+The next step is to put check marks on these tasks:
 [image assetsSrc="intro-to-programming-install-vscode-4.png" /]
 
-VS este acum gata pentru instalare. Apăsați butonul `[Install]`. Practic asta este totul.
-
+VS is now ready for installation. We press the `[Install]` button. This is everything.
 [image assetsSrc="intro-to-programming-install-vscode-5.png" /]
 
-Instalarea Visual Studio începe și va apărea un ecran ca cel de mai jos:
-
+Installation of Visual Studio begins, and a screen like the one below will appear:
 [image assetsSrc="intro-to-programming-install-vscode-6.png" /]
 
-După instalarea Visual Studio, va apărea un ecran informativ. Apăsați butonul `[Launch]` pentru a-l porni.
-
+After Visual Studio is installed, the following screen will appear. Press the `[Launch]` button to start VS.
 [image assetsSrc="intro-to-programming-install-vscode-7.png" /]
 
-La **pornirea VS Code** se afișează vizualizarea principală a Visual Studio Code.
+Upon **starting Visual Studio Code**, the main view is displayed. 
 
 [image assetsSrc="intro-to-programming-install-vscode-8.png" /]
 
-Suntem pregătiți să lucrăm cu Visual Studio Code.
+We are ready to start using Visual Studio Code.
 [/slide]
 
 [slide hideTitle]
