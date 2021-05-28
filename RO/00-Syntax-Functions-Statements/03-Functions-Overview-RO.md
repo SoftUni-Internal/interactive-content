@@ -176,7 +176,6 @@ function largestNumber() {
 };
 ```
 [/code-editor]
-
 [code-adapter]
 ```
 function adapter(input, code) {
@@ -192,7 +191,7 @@ function adapter(input, code) {
 
 Write a function that takes **three number arguments** as input and finds the **largest** of them. 
 
-Print the following text to the console:  '**The largest number is {number}.**'.
+Print the following text to the console:  "**The largest number is** \{number\}."
 
 The **input** comes as **three number arguments** passed to your function.
 
@@ -295,7 +294,6 @@ function circleArea(radius) {
 };
 ```
 [/code-editor]
-
 [code-adapter]
 ```
 function adapter(input, code) {
@@ -431,7 +429,6 @@ function findStringLength(string1, string2, string3) {
 };
 ```
 [/code-editor]
-
 [code-adapter]
 ```
 function adapter(input, code) {
@@ -441,7 +438,6 @@ function adapter(input, code) {
 }
 ```
 [/code-adapter]
-
 [task-description]
 ## Description
 Write a JS function that takes **three string arguments** as input. 
