@@ -195,14 +195,15 @@ function aggregate(array) {
 ```
 [/code-editor]
 
-[code-adapter]
-
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
 [/code-adapter]
+```
+[task-description]
 
 [task-description]
 ## Description
