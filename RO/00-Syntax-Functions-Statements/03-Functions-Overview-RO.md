@@ -176,7 +176,7 @@ function largestNumber() {
 };
 ```
 [/code-editor]
-
+[code-adapter]
 ```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
@@ -294,7 +294,7 @@ function circleArea(radius) {
 };
 ```
 [/code-editor]
-
+[code-adapter]
 ```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
@@ -429,7 +429,7 @@ function findStringLength(string1, string2, string3) {
 };
 ```
 [/code-editor]
-
+[code-adapter]
 ```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
