@@ -177,13 +177,13 @@ function largestNumber() {
 ```
 [/code-editor]
 
-[code-adapter]
-
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
+```
 [/code-adapter]
 
 [task-description]
@@ -295,15 +295,14 @@ function circleArea(radius) {
 ```
 [/code-editor]
 
-[code-adapter]
-
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
+```
 [/code-adapter]
-
 [task-description]
 ## Description
 
@@ -431,15 +430,14 @@ function findStringLength(string1, string2, string3) {
 ```
 [/code-editor]
 
-[code-adapter]
-
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
+```
 [/code-adapter]
-
 [task-description]
 ## Description
 Write a JS function that takes **three string arguments** as input. 
