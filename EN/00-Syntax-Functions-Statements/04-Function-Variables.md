@@ -201,8 +201,8 @@ function adapter(input, code) {
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
-[/code-adapter]
 ```
+[/code-adapter]
 [task-description]
 
 ## Description
