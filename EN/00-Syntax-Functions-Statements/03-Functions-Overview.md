@@ -183,8 +183,9 @@ function adapter(input, code) {
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
-[/code-adapter]
 ```
+[/code-adapter]
+
 [task-description]
 ## Description
 
@@ -300,8 +301,8 @@ function adapter(input, code) {
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
-[/code-adapter]
 ```
+[/code-adapter]
 [task-description]
 ## Description
 
@@ -435,8 +436,8 @@ function adapter(input, code) {
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
-[/code-adapter]
 ```
+[/code-adapter]
 [task-description]
 ## Description
 Write a JS function that takes **three string arguments** as input. 
