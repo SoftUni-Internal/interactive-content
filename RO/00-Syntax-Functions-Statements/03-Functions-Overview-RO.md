@@ -295,6 +295,7 @@ function circleArea(radius) {
 };
 ```
 [/code-editor]
+
 [code-adapter]
 ```
 function adapter(input, code) {
@@ -430,6 +431,7 @@ function findStringLength(string1, string2, string3) {
 };
 ```
 [/code-editor]
+
 [code-adapter]
 ```
 function adapter(input, code) {
@@ -439,6 +441,7 @@ function adapter(input, code) {
 }
 ```
 [/code-adapter]
+
 [task-description]
 ## Description
 Write a JS function that takes **three string arguments** as input. 
