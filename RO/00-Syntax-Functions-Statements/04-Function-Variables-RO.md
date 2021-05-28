@@ -196,15 +196,16 @@ function aggregate(array) {
 [/code-editor]
 
 [code-adapter]
-
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
+```
 [/code-adapter]
-
 [task-description]
+
 ## Description
 
 Create a program that performs different operations on an array of elements. Implement the following operations:
