@@ -10,14 +10,15 @@ function calculate(num1, num2, operator) {
 ```
 [/code-editor]
 
-[code-adapter]
-
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
 [/code-adapter]
+```
+[task-description]
 
 [task-description]
 ## Description
@@ -143,14 +144,15 @@ function sum(n, m) {
 ```
 [/code-editor]
 
-[code-adapter]
-
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
 [/code-adapter]
+```
+[task-description]
 
 [task-description]
 ## Description
@@ -263,14 +265,15 @@ function calculateCost(fruit, weightInGrams, pricePerKG) {
 ```
 [/code-editor]
 
-[code-adapter]
-
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
 [/code-adapter]
+```
+[task-description]
 
 [task-description]
 ## Description
@@ -279,7 +282,7 @@ Write a function that calculates how much money you need to buy fruits. You will
 
 Print the following text to the console: 
 
-**'I need $\\{money\\} to buy \\{weight\\} kilograms of of \\{fruit\\}.'**
+I need $\{money\} to buy \{weight\} kilograms of of \{fruit\}.
 
 Print the weight and the money **rounded** to two decimal places.
 
@@ -305,7 +308,7 @@ The **output** should be printed on the console.
 calculateCost('oranges', 2500, 1.80)
 [/input]
 [output]
-I need \\$4.50 to buy 2.50 kilograms of oranges.
+I need $4.50 to buy 2.50 kilograms of oranges.
 [/output]
 [/test]
 [test open]
@@ -313,7 +316,7 @@ I need \\$4.50 to buy 2.50 kilograms of oranges.
 calculateCost('apples', 1563, 2.35)
 [/input]
 [output]
-I need \\$3.67 to buy 1.56 kilograms of apples.
+I need $3.67 to buy 1.56 kilograms of apples.
 [/output]
 [/test]
 [test]
@@ -321,7 +324,7 @@ I need \\$3.67 to buy 1.56 kilograms of apples.
 calculateCost('bananas', 21.20, 55.2)
 [/input]
 [output]
-I need \\$1.17 to buy 0.02 kilograms of bananas.
+I need $1.17 to buy 0.02 kilograms of bananas.
 [/output]
 [/test]
 [test]
@@ -329,7 +332,7 @@ I need \\$1.17 to buy 0.02 kilograms of bananas.
 calculateCost('jkkhkj', 566, 2.15)
 [/input]
 [output]
-I need \\$1.22 to buy 0.57 kilograms of jkkhkj.
+I need $1.22 to buy 0.57 kilograms of jkkhkj.
 [/output]
 [/test]
 [test]
@@ -337,7 +340,7 @@ I need \\$1.22 to buy 0.57 kilograms of jkkhkj.
 calculateCost('aaa', 1111, 32.15)
 [/input]
 [output]
-I need \\$35.72 to buy 1.11 kilograms of aaa.
+I need $35.72 to buy 1.11 kilograms of aaa.
 [/output]
 [/test]
 [test]
@@ -345,7 +348,7 @@ I need \\$35.72 to buy 1.11 kilograms of aaa.
 calculateCost('aaal', 0, 32.15)
 [/input]
 [output]
-I need \\$0.00 to buy 0.00 kilograms of aaal.
+I need $0.00 to buy 0.00 kilograms of aaal.
 [/output]
 [/test]
 [test]
@@ -353,7 +356,7 @@ I need \\$0.00 to buy 0.00 kilograms of aaal.
 calculateCost('ppp', 10, 5)
 [/input]
 [output]
-I need \\$0.05 to buy 0.01 kilograms of ppp.
+I need $0.05 to buy 0.01 kilograms of ppp.
 [/output]
 [/test]
 [/tests]
@@ -373,6 +376,7 @@ function calculateGCD(num1, num2) {
 [/code-editor]
 
 [code-adapter]
+
 
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
@@ -491,6 +495,7 @@ function checkNumber(input) {
 
 [code-adapter]
 
+
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
@@ -501,11 +506,14 @@ function adapter(input, code) {
 [task-description]
 ## Description
 
-Write a function that receives **two** **positive** **numbers** as input and finds the greatest common divisor.
+Write a function that receives **an integer** as input and checks if all the digits in the given number are the same or not.
 
-The **input** comes **as two positive integer numbers**.
+Print true to the console if all numbers are same and **false** if not. On the next line print **the sum of all digits**.
+
+The **input** comes as an integer.
 
 The **output** should be printed to the console.
+
 
 
 ## Examples
@@ -608,6 +616,7 @@ function calculateTime(stepsCount, stepLength, speed) {
 [/code-editor]
 
 [code-adapter]
+
 
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
@@ -719,6 +728,7 @@ function speedCheck(speed, areaType) {
 [/code-editor]
 
 [code-adapter]
+
 
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
@@ -885,14 +895,14 @@ function cook(start, action1, action2, action3, action4, action5) {
 [/code-editor]
 
 [code-adapter]
-
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
 [/code-adapter]
-
+```
 [task-description]
 ## Description
 
@@ -1002,33 +1012,34 @@ function validate(x1, y1, x2, y2) {
 ```
 [/code-editor]
 
-[code-adapter]
-
+```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
     inputParams = eval(`[${inputParams}]`);
     return code(...inputParams);
 }
 [/code-adapter]
+```
+[task-description]
 
 [task-description]
 ## Description
 
-Create a program that receives two points on a plane in the format **\\[x1, y1, x2, y2\\].** 
+Create a program that receives two points on a plane in the format \[x1, y1, x2, y2\]. 
 
 Check if the distance between each point and the start of the cartesian coordinate system (0, 0) is **valid**. 
 
 A distance between two points is considered **valid**, if it is has a **positive value**.
 
-In case a distance is valid, print "**\\{x1, y1\\} to \\{x2, y2\\} is valid**"
+In case a distance is valid, print "\{x1, y1\} to \{x2, y2\} is valid"
 
-If the distance is invalid, print "**\\{x1, y1\\} to \\{x2, y2\\} is invalid**"
+If the distance is invalid, print "\{x1, y1\} to \{x2, y2\} is invalid"
 
-The order of comparisons should always be first **\\{x1, y1\\}** to **\\{0, 0\\}**, then **\\{x2, y2\\}** to **\\{0, 0\\}** and finally **\\{x1, y1\\}** to **\\{x2, y2\\}**.
+The order of comparisons should always be first \{x1, y1\} to \{0, 0\}, then \{x2, y2\} to \{0, 0\} and finally \{x1, y1\} to \{x2, y2\}**.
 
 The **input** consists of two points given as an **array of numbers**.
 
-For each comparison print either **"\\{x1, y1\\} to \\{x2, y2\\} is valid"** if the distance is valid, or **"\\{x1, y1\\} to \\{x2, y2\\} is invalid"** if it is invalid.
+For each comparison print either "\{x1, y1\} to \{x2, y2\} is valid" if the distance is valid, or "\{x1, y1\} to \{x2, y2\} is invalid" if it is invalid.
 
 
 ## Examples
@@ -1050,9 +1061,9 @@ For each comparison print either **"\\{x1, y1\\} to \\{x2, y2\\} is valid"** if 
 validate([3, 0, 0, 4])
 [/input]
 [output]
-\{3, 0\} to \{0, 0\} is valid
-\{0, 4\} to \{0, 0\} is valid
-\{3, 0\} to \{0, 4\} is valid
+{3, 0} to {0, 0} is valid
+{0, 4} to {0, 0} is valid
+{3, 0} to {0, 4} is valid
 [/output]
 [/test]
 [test open]
@@ -1060,9 +1071,9 @@ validate([3, 0, 0, 4])
 validate([2, 1, 1, 1]
 [/input]
 [output]
-\{2, 1\} to \{0, 0\} is invalid
-\{1, 1\} to \{0, 0\} is invalid
-\{2, 1\} to \{1, 1\} is valid
+{2, 1} to {0, 0} is invalid
+{1, 1} to {0, 0} is invalid
+{2, 1} to {1, 1} is valid
 [/output]
 [/test]
 [test]
@@ -1070,9 +1081,9 @@ validate([2, 1, 1, 1]
 validate([10, 10, 10, 10])
 [/input]
 [output]
-\{10, 10\} to \{0, 0\} is invalid
-\{10, 10\} to \{0, 0\} is invalid
-\{10, 10\} to \{10, 10\} is valid
+{10, 10} to {0, 0} is invalid
+{10, 10} to {0, 0} is invalid
+{10, 10} to {10, 10} is valid
 [/output]
 [/test]
 [test]
@@ -1080,9 +1091,9 @@ validate([10, 10, 10, 10])
 validate([0, 0, 0, 0])
 [/input]
 [output]
-\{0, 0\} to \{0, 0\} is valid
-\{0, 0\} to \{0, 0\} is valid
-\{0, 0\} to \{0, 0\} is valid
+{0, 0} to {0, 0} is valid
+{0, 0} to {0, 0} is valid
+{0, 0} to {0, 0} is valid
 [/output]
 [/test]
 [test]
@@ -1090,9 +1101,9 @@ validate([0, 0, 0, 0])
 validate([0, 5, 0, -12])
 [/input]
 [output]
-\{0, 5\} to \{0, 0\} is valid
-\{0, -12\} to \{0, 0\} is valid
-\{0, 5\} to \{0, -12\} is valid
+{0, 5} to {0, 0} is valid
+{0, -12} to {0, 0} is valid
+{0, 5} to {0, -12} is valid
 [/output]
 [/test]
 [test]
@@ -1100,9 +1111,9 @@ validate([0, 5, 0, -12])
 validate([13, 7, 1, -1])
 [/input]
 [output]
-\{13, 7\} to \{0, 0\} is invalid
-\{1, -1\} to \{0, 0\} is invalid
-\{13, 7\} to \{1, -1\} is invalid
+{13, 7} to {0, 0} is invalid
+{1, -1} to {0, 0} is invalid
+{13, 7} to {1, -1} is invalid
 [/output]
 [/test]
 [test]
@@ -1110,9 +1121,9 @@ validate([13, 7, 1, -1])
 validate([-2, 5, -6, 8])
 [/input]
 [output]
-\{-2, 5\} to \{0, 0\} is invalid
-\{-6, 8\} to \{0, 0\} is valid
-\{-2, 5\} to \{-6, 8\} is valid
+{-2, 5} to {0, 0} is invalid
+{-6, 8} to {0, 0} is valid
+{-2, 5} to {-6, 8} is valid
 [/output]
 [/test]
 [/tests]
