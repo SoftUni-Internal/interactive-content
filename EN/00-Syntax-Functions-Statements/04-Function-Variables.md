@@ -195,6 +195,7 @@ function aggregate(array) {
 ```
 [/code-editor]
 
+[code-adapter]
 ```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
