@@ -10,6 +10,7 @@ function calculate(num1, num2, operator) {
 ```
 [/code-editor]
 
+[code-adapter]
 ```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
@@ -142,6 +143,7 @@ function sum(n, m) {
 ```
 [/code-editor]
 
+[code-adapter]
 ```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
@@ -261,6 +263,7 @@ function calculateCost(fruit, weightInGrams, pricePerKG) {
 ```
 [/code-editor]
 
+[code-adapter]
 ```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
@@ -1006,6 +1009,7 @@ function validate(x1, y1, x2, y2) {
 ```
 [/code-editor]
 
+[code-adapter]
 ```
 function adapter(input, code) {
     let inputParams = /\((.+)\)$/.exec(input)[1];
