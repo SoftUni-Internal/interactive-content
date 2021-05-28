@@ -226,7 +226,7 @@ The **output** should be printed to the console on a new line for each of the op
 | aggregate([1, 2, 3]) | 6 |
 | | 1.8333 |
 | | 123 |
-| **aggregate([2, 4, 8, 16])** | **30** |
+| aggregate([2, 4, 8, 16]) | 30 |
 |  | 0.9375 |
 |  | 24816 |
 

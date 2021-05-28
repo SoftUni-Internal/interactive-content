@@ -353,11 +353,7 @@ You can find more information about calculating the area of a circle [here](http
 
 If the type is **NOT** a '**number**', print the following message to the console:
 
-```js
-else {
-    console.log(`We could not calculate the circle area because we received a ${inputType}.`)
-}
-```
+"We could not calculate the circle area because we received a \{inputType\}"
 
 
 [/task-description]
@@ -405,7 +401,7 @@ We could not calculate the circle area because we received a object.
 [/test]
 [test]
 [input]
-circleArea(\{ "name": "pesho" \})
+circleArea({ "name": "pesho" })
 [/input]
 [output]
 We could not calculate the circle area because we received a object.

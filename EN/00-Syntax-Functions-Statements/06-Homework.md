@@ -48,7 +48,7 @@ Write a function that receives **three** arguments:
 
 Declare a variable named **result** that will keep your mathematical result.
 
-- Use a **switch** statement to take the string from your input and based on it, perform the mathematical operation between the two numbers.
+Use a **switch** statement to take the string from your input and based on it, perform the mathematical operation between the two numbers.
 
 [image assetsSrc="syntax-homework-02.png" /]
 
@@ -71,7 +71,7 @@ calculate(5, 6, '+')
 [/test]
 [test open]
 [input]
-calculate(3, 5.5, '\*')
+calculate(3, 5.5, '*')
 [/input]
 [output]
 16.5
@@ -105,7 +105,7 @@ calculate(53, 55, '-')
 [/test]
 [test]
 [input]
-calculate(333, 1, '\*')
+calculate(333, 1, '*')
 [/input]
 [output]
 333
@@ -121,7 +121,7 @@ calculate(877, 21, '%')
 [/test]
 [test]
 [input]
-calculate(11, 2, '\*\*')
+calculate(11, 2, '**')
 [/input]
 [output]
 121
@@ -279,7 +279,7 @@ Write a function that calculates how much money you need to buy fruits. You will
 
 Print the following text to the console: 
 
-**'I need $\{money\} to buy \{weight\} kilograms of of \{fruit\}.'**
+**'I need $\\{money\\} to buy \\{weight\\} kilograms of of \\{fruit\\}.'**
 
 Print the weight and the money **rounded** to two decimal places.
 
@@ -918,7 +918,7 @@ The **output** should be printed to the console.
 |  | 4 |
 |  | 2 |
 |  | 1 |
-| **cook(['9', 'dice', 'spice', 'chop', 'bake', 'fillet'])** | **3** |
+| cook(['9', 'dice', 'spice', 'chop', 'bake', 'fillet']) | 3 |
 |  | 4 |
 |  | 2 |
 |  | 6 |
@@ -1014,21 +1014,21 @@ function adapter(input, code) {
 [task-description]
 ## Description
 
-Create a program that receives two points on a plane in the format **\[x1, y1, x2, y2\].** 
+Create a program that receives two points on a plane in the format **\\[x1, y1, x2, y2\\].** 
 
 Check if the distance between each point and the start of the cartesian coordinate system (0, 0) is **valid**. 
 
 A distance between two points is considered **valid**, if it is has a **positive value**.
 
-In case a distance is valid, print "**\{x1, y1\} to \{x2, y2\} is valid**"
+In case a distance is valid, print "**\\{x1, y1\\} to \\{x2, y2\\} is valid**"
 
-If the distance is invalid, print "**\{x1, y1\} to \{x2, y2\} is invalid**"
+If the distance is invalid, print "**\\{x1, y1\\} to \\{x2, y2\\} is invalid**"
 
-The order of comparisons should always be first **\{x1, y1\}** to **\{0, 0\}**, then **\{x2, y2\}** to **\{0, 0\}** and finally **\{x1, y1\}** to **\{x2, y2\}**.
+The order of comparisons should always be first **\\{x1, y1\\}** to **\\{0, 0\\}**, then **\\{x2, y2\\}** to **\\{0, 0\\}** and finally **\\{x1, y1\\}** to **\\{x2, y2\\}**.
 
 The **input** consists of two points given as an **array of numbers**.
 
-For each comparison print either **"\{x1, y1\} to \{x2, y2\} is valid"** if the distance is valid, or **"\{x1, y1\} to \{x2, y2\} is invalid"** if it is invalid.
+For each comparison print either **"\\{x1, y1\\} to \\{x2, y2\\} is valid"** if the distance is valid, or **"\\{x1, y1\\} to \\{x2, y2\\} is invalid"** if it is invalid.
 
 
 ## Examples
@@ -1038,7 +1038,7 @@ For each comparison print either **"\{x1, y1\} to \{x2, y2\} is valid"** if the 
 | validate([3, 0, 0, 4]) | \{3, 0\} to \{0, 0\} is valid |
 |  | \{0, 4\} to \{0, 0\} is valid |
 |  | \{3, 0\} to \{0, 4\} is valid |
-| **validate([2, 1, 1, 1])** | **{2, 1} to {0, 0} is invalid** |
+| validate([2, 1, 1, 1]) | {2, 1} to {0, 0} is invalid |
 |  | \{1, 1\} to \{0, 0\} is invalid |
 |  | \{2, 1\} to \{1, 1\} is valid |
 
