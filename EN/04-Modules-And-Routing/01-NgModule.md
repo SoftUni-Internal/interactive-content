@@ -4,11 +4,13 @@
 
 # Angular Modules Overview
 
-An Angular module is a deployment sub-set of your whole Angular application.
+Angular-Modules-and-routing-3-4-The-NgModule
 
-**NgModules** help us to organize our code into blocks that work as one unit.
+An Angular module is a deployment **subset** of your whole Angular application.
 
-NgModules are ordinary objects **decorated** with `@NgModule` decorator and you can inject them into other modules or components:
+**NgModules** help us organize our code into blocks that work as a singular unit.
+
+You can inject them into other modules or components:
 
 ```js
 @NgModule({
@@ -19,12 +21,13 @@ class AppModule {
 }
 ```
 
+As shown above, they are ordinary objects **decorated** with an `@NgModule` decorator.
 
 The most popular **Angular** and **third-party** libraries **NgModules** are:
 
-- Material Design
-- Ionic
-- AngularFire2
+- [Material UI](https://material.angular.io/)
+- [Ionic](https://ionicframework.com/)
+- [AngularFire2](https://github.com/IdanCo/angularfire2)
 
 [/slide]
 
@@ -32,7 +35,9 @@ The most popular **Angular** and **third-party** libraries **NgModules** are:
 
 # Creating Custom Modules
 
-Custom Modules or Feature Modules are used when the app gets bigger.
+Angular-Modules-and-routing-5-6-Creating-Custom-modules
+
+We implement custom modules (also known as feature modules) when the app becomes larger.
 
 They need to import **CommonModule**, but we do not need to import the **BrowserModule** because **CommonModule** is part of it.
 
@@ -43,8 +48,6 @@ When we create a component in a module, it will show in the **declarations** arr
 By default, components in the **declaration** array are private.
 
 So if we want to use that component outside that module, we will need the **exports** array.
-
-Here is an example:
 
 ```js
 import { NgModule } from '@angular/core';
@@ -59,11 +62,11 @@ import { CommonModule } from '@angular/common';
 export class CustomersModule {}
 ```
 
-Here we create a module called **CustomersModule**.
+In this example, we create a module called **CustomersModule**.
 
 This module **imports** the CommonModule and **declares** two components.
 
-CustomersModule exports only one of the components also uses a provider called **CustomersService**.
+CustomersModule exports only one of the components and also uses a provider, called **CustomersService**.
 
 [/slide]
 
@@ -71,27 +74,31 @@ CustomersModule exports only one of the components also uses a provider called *
 
 # Suggested Common Module
 
-If we are dealing with a small size project, we may use the single `AppModule` for all declarations.
+Angular-Modules-and-routing-7-Suggested-Common-Module
 
-However, when the application grows bigger and more complex we should use **shared**, **core**, and **feature** modules.
+When working with a small-sized project, we may use the single `AppModule` for all declarations.
 
-Doing so will ensure proper separation of concerns, and scalability will be not a problem as our application grows.
+However, when the application expands and becomes more complex, we should use **shared**, **core**, and **feature** modules.
+
+Doing so will ensure proper separation of concerns, and it will improve scalability.
 
 Let us see how each type of module works:
 
-- **Shared Module**: as the name suggests is used pieces of our application that need to be used across multiple areas.
+- **Shared Modules**:  contains pieces of our application, shared across multiple areas
 
-We declare a shared module If a component is going to be re-used multiple times.
+We declare a shared module to enable component reuse.
 
-- **Core Module:** is a way to separate the configuration layer of our application from the rest of the application.
+- **Core Modules:** a way to separate the configuration layer of our application from the rest of the application
 
-We can do that by declaring our features and shared modules in a **Core Module** and just provide that **Core Module** to the `AppModule`.
+We can do that by declaring our features and shared modules in a **Core Module** and simply providing it to the `AppModule`.
 
-We can look at this as a parent feature module for content that we are going to add to an application.
+We can look at this as a parent feature module for the content we add to an application.
 
-- **Feature Module:** all of the content is going to be encapsulated inside of a single area.
+- **Feature Module:** all of the content is encapsulated inside of a single area
 
-A feature module is a stand alone application inside your full application, which should be made up of multiple feature modules.
+A feature module is a sub-application inside your project.
+
+An Angular application contains multiple feature modules.
 
 You can find more information about NgModules in the [Angular guide](https://angular.io/guide/ngmodules).
 
