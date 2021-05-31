@@ -109,7 +109,7 @@ Let’s create a simple piece of code that requires a number from the console (s
 It does that by multiplying the initial input by a predetermined exchange rate and prints out the result.
 
 This will be a program of 3 consecutive commands:
-```java live
+```java live no-template
 import java.util.Scanner;
 
 public class Program {
