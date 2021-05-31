@@ -17,10 +17,10 @@ Unit tests are part of the product source code. They aim to improve the code **q
 Let's see a simple example to illustrate the idea behind "**unit testing**":
 
 ```csharp
-int Sum(int[] arr) {
+int Sum(int[] arr)
+{
     int sum = arr[0];
-    for (int i = 1; i < arr
-        .Length; i++)
+    for (int i = 1; i < arr.Length; i++)
         sum += arr[i];
     return sum;
 }
@@ -34,27 +34,24 @@ So, let's write code, which confirms that this function works correctly.
 
 The first test case will check if the sum of the array elements \[1,2\] is **3**.
 
-```java
-void Test_SumTwoNumbers() {
-        if (Sum(new int[] {
-                1,
-                2
-            }) != 3)
-            throw new Exception("1+2 != 3");
+```csharp
+void Test_SumTwoNumbers()
+{
+    if (Sum(new int[] { 1, 2 }) != 3)
+        throw new Exception("1+2 != 3");
 }
-
 ```
 
 If the execution result is not as expected, the function will **fail with an error**.
 
 Let's see one more test:
 
-```java
-void Test_SumEmptyArray() {
+```csharp
+void Test_SumEmptyArray()
+{
     if (Sum(new int[] {}) != 0)
         throw new Exception("sum [] != 0");
 }
-
 ```
 
 The second test checks whether the sum of an **empty array** is **0**.
@@ -131,8 +128,7 @@ Integration testing is performed early in the development process after some of 
 
 System tests and acceptance tests test the entire system: all its components together.
 
-They are the most complex and cover **end-to-end scenarios** (from the front-end to the back-end, the database, and all other system components.
-)
+They are the most complex and cover **end-to-end scenarios** (from the front-end to the back-end, the database, and all other system components).
 
 For example, if we test whether, after **user registration in the mobile app** of a complex software system, the new user is correctly stored in the database at the server-side, this is a **system test**.
 
@@ -161,9 +157,5 @@ An example of a smoke test could be to check whether the home page of the system
 Projects with more QA resources **automate the testing of the entire system** with all its functionality, covering all its use cases.
 
 This approach is heavy and time-consuming and is rarely used.
-
-
-
-
 
 [/slide]
