@@ -4,31 +4,31 @@
 
 # Lesson Content
 
+Angular-Modules-and-routing-1-2-Introduction-and-table-of-contents
+
 ## In this lesson you will learn:
 
-**1. What is NgModule?**
+**1. What NgModules are**
 
-- Overview
+- Overview and syntax
 
-- How to create our own module
+- Creating custom modules
 
 **2. Routing Overview**
 
-- What is Routing?
+- Definition and types
 
-- Navigation for Single Page Applications
+- Navigation in single-page applications
 
 **3. Router Module**
 
-- Links
-
-- Redirects
-
-- Query Params
+- Links, Redirects and Query Params
 
 **4. Router Guards**
 
-- Overview
+- Initializing a guard service
+
+- The `canActivate` guard
 
 - Router Resolver
 
