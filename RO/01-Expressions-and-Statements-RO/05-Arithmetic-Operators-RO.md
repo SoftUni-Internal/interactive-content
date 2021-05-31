@@ -39,17 +39,17 @@ Pentru **împărțirea** numerelor folosim operatorul `/`.
 
 Funcționează diferit cu **numere întregi** și **numere în virgulă mobilă**.
 
-* Când împărțim două numere întregi, se aplică o **împărțire întreagă**, iar ieșirea obținută nu va conține o parte fracționară (un rest)
-  * Exemplu: `11 / 3 = 3`
+Când împărțim două numere întregi, se aplică o **împărțire întreagă**, iar ieșirea obținută nu va conține o parte fracționară (un rest)
+- Exemplu: `11 / 3 = 3`
   
-* Când împărțim două numere și cel puțin unul dintre ele este un număr real de tip **float**, se aplică o **împărțire reală**, iar rezultatul obținut este un număr de tip float
-  * Exemplu: `11 / 4.0 = 2.75`
-  * Când împărțirea nu se poate face cu o precizie exactă, rezultatul este rotunjit, de exemplu `11.0 / 3 = 3.66666666666667`
+Când împărțim două numere și cel puțin unul dintre ele este un număr real de tip **float**, se aplică o **împărțire reală**, iar rezultatul obținut este un număr de tip float
+- Exemplu: `11 / 4.0 = 2.75`
+- Când împărțirea nu se poate face cu o precizie exactă, rezultatul este rotunjit, de exemplu `11.0 / 3 = 3.66666666666667`
 
-* Un număr întreg **împărțit la 0** cauzează o **excepție** în timpul rulării (excepție runtime)
+Un număr întreg **împărțit la 0** cauzează o **excepție** în timpul rulării (excepție runtime)
 
-* Un număr float **împărțit la 0** nu provoacă o excepție, iar rezultatul este **+/- infinity** sau o valoare specială **NaN**
-  * Exemplu `5 / 0.0 = ∞`
+Un număr float **împărțit la 0** nu provoacă o excepție, iar rezultatul este **+/- infinity** sau o valoare specială **NaN**
+- Exemplu `5 / 0.0 = ∞`
 
 Mai jos avem câteva exemple ale operatorului împărțirii:
 

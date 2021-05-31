@@ -23,7 +23,11 @@
 
 **5. Simple Operators**
 
-- How to use the simple math operators ( +, -, *, / ) 
+- Addition: **+**
+- Subtraction: **-**
+- Multiplication: **\***
+- Division: **/**
+
 
 **6. Expressions** 
 

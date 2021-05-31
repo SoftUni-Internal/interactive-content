@@ -16,9 +16,9 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program to calculate the speed of a moving vehicle by its travel time and distance traveled:
+Create a program that calculates the speed of a moving vehicle given the distance and time travelled.
   * Read 2 floating-point numbers: distance and time
-  * Calculate the speed at which the body needs to move to travel a given distance for a given time
+  * Calculate the speed at which the vehicle needs to be traveling in order to get from point **A** to point **B** for the specified time.
   * Print out the result
   * Use the formula: **speed = distance / time**
   
@@ -101,9 +101,9 @@ public class Program {
 [task-description]
 ## Description
 Create a program to convert USD to EUR:
-  * Read a **floating-point number**: the amount dollars to be converted
-  * Convert **dollars to euro** (use this **transfer rate** of dollars to euro: 0.88)
-  * Print the converted value in euro, formatted to the 2nd digit after the decimal point.
+  * Read a **floating-point number**: the amount of dollars to be converted
+  * Convert **dollars to euro** (use the **exchange rate** of USD to EUR: 0.88)
+  * Print the converted value in EUR, formatted to the 2nd digit after the decimal point.
 
 ## Examples
 | **Input** | **Output** |
@@ -186,7 +186,7 @@ public class Program {
 ## Description
 Create a program to calculate the area of a triangle:
 
-  * Read as input `side a` and `height` - **floating-point numbers**
+  * Read as input `side - a` and `height - h` - **floating-point numbers**
   * Calculate the area of the triangle
   * Print the area, formatted to the 2nd digit after the decimal point
 
@@ -638,7 +638,7 @@ public class Program {
 [task-description]
 ## Description
 Create a program, which:
-  * Reads **3 lines** of input: a name (**string**), population and area (**integers**)
+  * Reads **3 lines** of input: a name (**string**), population(**integer**) and area (**integer**)
   * Prints information about a town in the following format: 
   
   "**Town** \{**name**\} **has population of** \{**population**\} **and area** \{**area**\} **square km.**"
@@ -725,7 +725,7 @@ public class Main {
 [task-description]
 ## Description
 
-Create a console program that reads an **integer** `a` and calculates the area of a square with side size `a`.
+Create a console program that reads an **integer** `a` and calculates the area of a square with a side `a`.
 
 ## Input
 
@@ -988,7 +988,8 @@ The formula to calculate the area of a trapezoid is ((b1 + b2) / 2) * h.
 ## Input
 
 Read three numbers from the console:
-- Bases - b1 and b2 - real numbers in range \[1...1000\]
+- Base - b1 - real number in range \[1...1000\]
+- Base - b2 - real number in range \[1...1000\]
 - Height - h - real number in range \[1...1000\]
 
 ## Output
@@ -1088,7 +1089,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-A gardener is selling some products on the farmers market. We need to help him with the calculations.
+A gardener is selling some products at the farmers market. We have to help him with the calculations.
 
 He sells vegetables for **N dollars** per kilogram and fruits for **M dollars** per kilogram. 
 
@@ -1117,11 +1118,11 @@ The result should be formatted to the **second decimal point.**
 
 [hints]
 [hint]
-The vegetables cost - 0.194$ \* 10kg = 1.94$
-The fruits cost - 19.4$ \* 10kg  = 194$
+The vegetables cost - $0.194 \* 10kg = $1.94
+The fruits cost - $19.4 \* 10kg  = $194
 [/hint]
 [hint]
-Total - 195.94$ = 174.39€
+Total - $195.94 = $174.39
 [/hint]
 [/hints]
 

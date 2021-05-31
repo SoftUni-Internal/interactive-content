@@ -5,7 +5,7 @@
 
 ## In this lesson you learned: 
 
-- Coding. Definition
+- Coding: Definition
 
 - Writing basic code
 
@@ -13,7 +13,7 @@
 
 - How to **install** and run **IntelliJ**
 
-- How to create a project, a file, and simple applications using IntelliJ
+- How to create a project, a file and simple аpp using IntelliJ.
 
 ## In the next lesson you will learn:
 

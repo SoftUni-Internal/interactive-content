@@ -41,22 +41,22 @@ System.out.println(a * b); // 35
 
 It works differently with **integers** and **floating point numbers**.
 
-* When we divide two integers, **integer division** is applied, and the obtained output will not contain a fractional part (a remainder)
+When we divide two integers, **integer division** is applied, and the obtained output will not contain a fractional part (a remainder)
 
-  * Example: `11 / 3 = 3`
+- Example: `11 / 3 = 3`
 
-* When we divide two numbers and at least one of them is a **float** number, **floating division** is applied, and the obtained result will be a float number. 
+When we divide two numbers and at least one of them is a **float** number, **floating division** is applied, and the obtained result will be a float number. 
 
-  * Example: `11 / 4.0 = 2.75`
+- Example: `11 / 4.0 = 2.75`
 
-  * When the division cannot be completed with exact precision, the result will be rounded, for example: `11.0 / 3 = 3.66666666666667`
+- When the division cannot be completed with exact precision, the result will be rounded, for example: `11.0 / 3 = 3.66666666666667`
 
-* Integer **division by 0** causes an **exception** during runtime (runtime exception)
+Integer **division by 0** causes an **exception** during runtime (runtime exception)
 
-* Float numbers **divided by 0** do not cause an exception and the result is **+/- infinity** or the special value **NaN**
-  * Example `5 / 0.0 = ∞`
+Float numbers **divided by 0** do not cause an exception and the result is **+/- infinity** or the special value **NaN**
+- Example `5 / 0.0 = ∞`
 
-Here are a few examples with the division operator:
+Here are a few examples of the division operator:
 ```java live
 int a = 25;
 int i = a / 4;
@@ -153,7 +153,7 @@ Note that the numeric values `a` and `b` were not summed.
 
 The result above is absolutely correct, according to the language logic. 
 
-If we want to sum the numbers, we have to use **parentheses**, in to change the order of execution:
+If we want to sum the numbers, we have to use parentheses in order to change the execution sequence.
 
 ```java live
 double a = 1.5;

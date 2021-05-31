@@ -51,13 +51,13 @@ The command `System.out.println("Hello Java")` in Java means to print (`System.o
 
 This way the interpreter will recognize that we are referring to a piece of text.
 
-We pace `;` at the end of each command. 
+We place `;` at the end of each command. 
 
 This signifies that the command ends (it does not continue on the next line).
 
 This command is very typical in programming: we say a given **object** should be found (in this case the console) and some **action** should be executed upon it (in this case - print out the specified text). 
 
-More technically explained, `out` is a static member in the `System` class, being an instance of PrintStream. 
+From a technical point of view, `out` is a static member in the `System` class, being an instance of PrintStream. 
 
 And **println** is a normal (overloaded) method of the PrintStream class. 
 

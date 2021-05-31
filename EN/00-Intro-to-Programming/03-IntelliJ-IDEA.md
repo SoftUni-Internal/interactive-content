@@ -7,9 +7,18 @@ To program we usually use an **Integrated Development Environment** (IDE).
 
 In the development environment, we can create code, compile and execute the programs. 
 
-Development environments could contain any number of the following components: a code text editor, a programming language, a compiler or an interpreter, and a runtime environment to execute programs, a debugger used to indentify code errors, tools for user interface design. There can be a number of further tools and addons depending on which IDE is used.
+**Development environments** could contain any number of the following components:
+
+- Code text editor
+- Programming language
+- Compiler or an interpreter
+- Runtime environment to execute programs
+- Debugger used to identify code errors
+- Tools for user interface design
 
 **Integrated Development Environments** are convenient, because they integrate everything necessary for the development of a program, without the need to exit the environment. 
+
+Тhere can be a number of further tools and addons depending on which IDE is used.
 
 If we do not use an IDE, we will have to create the code in a text editor, compile it with a command using the console, run it with another console command, some additional input might be required for its proper execution. This can be very time-consuming. 
 
@@ -37,7 +46,7 @@ Installing newer versions of IntelliJ IDEA (like IntelliJ IDEA 2020 and IntelliJ
 
 The **Community** version of IntelliJ IDEA is distributed freely by Jetbrains and can be downloaded [here](https://www.jetbrains.com/idea/download/).
 
-The installation is not at all complicated and can be completed by following some simple steps:
+The installation process is straight forward and can be completed by following these few simple steps:
 
 After we download the installation file and start it, the following screen appears:
 
@@ -113,7 +122,7 @@ In the classes, there are methods, which are blocks of code, using to logically 
 
 It sounds complicated, but in bigger projects, a structure like this one is very convenient and allows for a better organization of all necessary files.
 
-Also, an **IntelliJ IDEA Project** is a container, in which **a few modules are logically bound**. 
+Also, an **IntelliJ IDEA Project** is a container in which **a few modules are logically bound**. 
 
 In IntelliJ IDEA, a module is an essential part of any project. 
 

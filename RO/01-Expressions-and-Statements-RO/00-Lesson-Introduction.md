@@ -23,7 +23,10 @@
 
 **5. Operatori simpli**
 
-- Cum să utilzați operatorii aritmetici simpli ( +, -, *, / )
+- Addition: **+**
+- Subtraction: **-**
+- Multiplication: **\***
+- Division: **/**
 
 **6. Expresii** 
 

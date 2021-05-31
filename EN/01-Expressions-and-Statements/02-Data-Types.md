@@ -33,11 +33,11 @@ Data types are characterized by:
 [slide hideTitle]
 # Naming Conventions
 
-In computer programming, a **naming convention** is a set of **rules** which we use when creating variable names.
+In computer programming, a **naming convention** is a set of **rules** which are sued when creating variable names.
 
 The naming convention used in Java is called ***"camelCase"***.
 
-Different naming conventions are used in different languages. Some are: PascalCase, snake_case. 
+Different naming conventions are used in different languages. Some examples of such are: **PascalCase, snake_case**. 
 
 **camelCase** combines words by:
 * Capitalizing all words following the first one

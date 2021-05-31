@@ -14,7 +14,7 @@ int y = x + 5;
 ```java
 String name = "John Doe";
 ```
-In most contexts where expressions are used, for example in statements, the expression is expected to evaluate to some value. 
+In most contexts, after expressions are processed, the result is a single value.
 
 * If `x` and `y` are integers, the expression `x + y` evaluates to a numeric value. Every value has an associated type
 
@@ -30,7 +30,7 @@ We can calculate numeric expressions:
 int r = (150-20) / 2 + 5;
 ```
 
-The standard mathematical rules for the **priorities** of arithmetic operations is applied here as well: multiplication and division are always executed before addition and sutraction. 
+The standard mathematical rules for the **priorities** of arithmetic operations is applied here as well: multiplications and divisions are always executed before additions and sutractions. 
 
 If there is an expression placed in **parentheses**, it is calculated **with priority**, just like in math.
 

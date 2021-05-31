@@ -186,7 +186,7 @@ public class Program {
 ## Descriere
 Scrieți un program pentru a calcula aria unui triunghi:
 
-   * Citiți din intrare `side a` și `height` - **numere în virgulă mobilă**
+   * Citiți din intrare `side - a` și `height - a` - **numere în virgulă mobilă**
    * Calculați aria triunghiului
    * Imprimați aria, formatată la a doua cifră după punctul zecimal
   
@@ -980,7 +980,8 @@ Formula pentru calcularea ariei unui trapez este ((b1 + b2)/2) * h.
 ## Intrare
 
 Citiți trei numere de pe consolă:
-- Baze - b1 și b2 - numere reale în intervalul \[1 ... 1000 \]
+- Baze - b1 - numere reale în intervalul \[1 ... 1000 \]
+- Baze - b2 - numere reale în intervalul \[1 ... 1000 \]
 - Înălțime - h - număr real în intervalul \[1 ... 1000 \]
 
 ## Ieșire
@@ -1110,11 +1111,11 @@ Rezultatul trebuie formatat la **a doua zecimală**.
 [hints]
 [hint]
 
-Legumele costă - 0.194$ \* 10kg = 1.94$
-Fructele costă - 19.4$ \* 10kg  = 194$
+Legumele costă - $0.194 \* 10kg = $1.94
+Fructele costă - $19.4 \* 10kg  = $194
 [/hint]
 [hint]
-Total - 195.94$ = 174.39€
+Total - $195.94 = $174.39
 [/hint]
 [/hints]
 

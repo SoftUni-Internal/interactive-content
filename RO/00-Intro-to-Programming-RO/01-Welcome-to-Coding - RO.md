@@ -7,7 +7,7 @@
 
 **Programele de calculator** reprezintă secvențe de asemenea comenzi. 
 
-Textul unui program de calculator se numește **cod de program** (sau **cod sursă**, sau chiar și mai scurt – **cod**).
+Toate literele și simbolurile care formează orice **program de calculator** sunt cunoscute sub denumirea de cod de calculator, cod sursă sau doar **cod**.
 
 Exemple de comenzi pentru calculator:
 
@@ -49,7 +49,9 @@ Programul menționat mai sus definește o **clasă** `Main`, care conține o **m
 
 - Prima comandă declară și inițializează o **variabilă**: `int size = 5;`
 - A doua comandă **imprimă** o **expresie**: `System.out.println("Size = " + size);`
+  * note that the **"Size"** string we declared in the double quotation marks is just a **text** representation. The "**size**" variable will hold the actual number inside.
 - A treia comandă calculează și **imprimă** o **expresie**: `System.out.println("Area = " + size * size);`
+  * the same principle applies here. The **"Area"** string is just a text representation that will be printed to the console.
 
 Rezultatul (datele de ieșire) programului menționat mai sus este următorul:
 ```
@@ -85,10 +87,10 @@ Programele de computer execută, de obicei, algoritmi.
 **Algoritmii** sunt o **secvență de pași**, necesari pentru finalizarea unei anumite sarcini și pentru atingerea unui anumit rezultat așteptat, asemănător unei "rețete".
 
 De exemplu, dacă facem ouă prăjite, vom folosi următoarea rețetă (un algoritm): 
-- Se încălzește uleiul într-o tigaie
-- Se sparg ouăle în tigaie
-- Se așteaptă până se prăjesc
-- Se îndepărtează de aragaz
+- Heat oil in a pan
+- Crack a couple of eggs
+- Let the eggs cook for about 2 - 3 minutes
+- Transfer the cooked eggs to a plate
 
 În mod similar, în programare, **programele de calculator execută algoritmi**: secvențe de comenzi, necesare pentru finalizarea unei anumite sarcini. 
 

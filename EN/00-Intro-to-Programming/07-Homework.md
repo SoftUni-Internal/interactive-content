@@ -24,7 +24,7 @@ public class Main {
 
 Create a Java program, that:
 
-Prints "**Hello Java**" to the console.
+Print "**Hello Java**" to the console.
 
 [/task-description]
 [code-io /]
@@ -313,6 +313,7 @@ Create a program which prints out the numbers from 1 to 10 (inclsuive).
 ## Output
 
 Each number should be on a new line.
+
 [/task-description]
 [code-io /]
 [tests]
@@ -369,7 +370,7 @@ public class Main {
 ## Description
 Create a program, which **prints a triangle** of stars. 
 
-Print one asterik symbol \(\*\) for the first row, two asterik symbols for the second row and so on.
+Print one asterisk symbol \(\*\) for the first row, two asterisk symbols for the second row and so on.
 
 ## Output
 ```

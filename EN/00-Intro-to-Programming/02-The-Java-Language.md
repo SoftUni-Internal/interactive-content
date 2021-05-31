@@ -4,23 +4,24 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/Java-basics-introduction-to-programming-10-11-Programming Languages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A programming language is an artificial language designed to instruct a computer to **read**, **process**, and **execute** commands.
+A programming language is an artificial language designed to instruct a computer to **read**, **process** and **execute** commands.
 
-Programming languages differ in their syntax, purpose, programming constructions, execution environment.
+Programming languages differ in their syntax, purpose, programming constructions, execution environment and much more.
 
 The execution of computer programs can be done using a **compiler** or an **interpreter**.
 
 ## Compilers
-The **compiler** translates code from a programming language to **machine code** and replaces each of the constructions (commands) with predefined fragments of machine code, in this process it also **checks** the code for **errors**. 
+The **compiler** translates code from a programming language to **machine code** and replaces each of the constructions (commands) with predefined fragments of machine code, in the process it also **checks** the code for **errors**. 
 
 This process makes the code executable by a **microprocessor**.
 
 ## Interpreters
 The **interpreter** is "**a program which executes programs**". 
 
-An interpreter itself is also written in a programming language. 
+The interpreter itself is also written in a programming language. 
 
-It executes the commands in the program code **one after another**, it can process not only a single command or sequences of commands, but also more complicated constructions.
+It executes the commands in the program code **one after another**, not only can it process a single command or sequence of commands but it can cope with 
+much more complicated constructions.
 [/slide]
 
 [slide hideTitle]

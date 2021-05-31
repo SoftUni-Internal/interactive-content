@@ -59,7 +59,8 @@ The most common ones are:
 
 They are a way for programmers to write **notes** to themselves or other programmers.
 
-We can use comments to give **better clarity** about what we are trying to **achieve** with our code.
+For clarity, we often use comments in order to explain in further detail how a particular 
+line of code works.
 
 There are **multiple ways** to declare them.
 

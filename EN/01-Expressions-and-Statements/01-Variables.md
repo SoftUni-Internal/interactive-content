@@ -15,7 +15,7 @@ Here are some examples of data types:
 * There could be variables storing days (DayOfWeek): Monday, Tuesday, …, Sunday
 * Date and time: 14-June-1980 6:30:00, 25-Dec-2017 23:17:22
 
-**Variables** can ve viewed as containers for data (or named areas in computer memory). The data that they store can be read and changed at any time. 
+**Variables** can be viewed as "containers" for data (or named areas in computer memory). The data that they store can be read and changed at any time. 
 
 **Variables** provide means for:
   * **Storing** data
