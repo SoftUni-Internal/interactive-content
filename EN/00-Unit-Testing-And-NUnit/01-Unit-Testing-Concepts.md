@@ -78,9 +78,9 @@ There are different **unit testing frameworks**. They structure the tests consis
 
 [slide hideTitle]
 
-# Unit Tests
+## Unit Tests
 
-Unit tests take a single component (called "**unit**") and test it.
+**Unit tests** take a single component (called "**unit**") and test it.
 
 This can be a **function** or **method** in the code, a **class** or other code component.
 
@@ -98,9 +98,9 @@ They examine the functionality of the single component or unit.
 
 Usually, unit testing is performed at the **earliest stages** of the development process, long before the software is developed and ready for testing by QA engineers.
 
-# Integration Tests
+## Integration Tests
 
-Another type of tests are **"Integration Tests"**
+Another type of tests are **"integration tests"**
 
 They check the interaction between several components.
 
@@ -124,9 +124,9 @@ Integration Tests implement more complex scenarios.
 Integration testing is performed early in the development process after some of the components are written and unit tested, and they need to be integrated into modules with more complex functionality.
 
 
-# System Tests
+## System Tests
 
-System tests and acceptance tests test the entire system: all its components together.
+**System tests** and acceptance tests test the entire system: all its components together.
 
 They are the most complex and cover **end-to-end scenarios** (from the front-end to the back-end, the database, and all other system components).
 
