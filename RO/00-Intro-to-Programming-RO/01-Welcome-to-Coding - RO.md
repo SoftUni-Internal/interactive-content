@@ -109,7 +109,7 @@ Un IDE ne ajută să rulăm și să depanăm cod, evitând erorile de sintaxă. 
 Să ne uităm puțin la un program simplu care citește ca date de intrare ale utilizatorului anumite sume de bani exprimate în dolari (USD) - un număr întreg, apoi îl convertește în Euro (EUR) înmulțind suma cu cursul de schimb valutar, și tipărește rezultatul obținut.
 
 Acesta este un program cu 3 comenzi consecutive:
-```java
+```java live no-template
 import java.util.Scanner;
 
 public class Program {
