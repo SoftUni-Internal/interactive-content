@@ -171,9 +171,9 @@ printCopyright("Noble Co. LLC");
 [code-task title="Largest Number" taskId="js-syntax-functions-statements-largest-number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function largestNumber() {
+function largestNumber(firstNum, secondNum, thirdNum) {
     // Write your code here
-};
+}
 ```
 [/code-editor]
 [code-adapter]
@@ -191,7 +191,7 @@ function adapter(input, code) {
 
 Write a function that takes **three number arguments** as input and finds the **largest** of them. 
 
-Print the following text to the console: `The largest number is {number}`.
+Print the following text to the console: "**The largest number is** \{**number**\}".
 
 The **input** comes as **three number arguments** passed to your function.
 
@@ -310,11 +310,13 @@ Write a function that takes **a single argument** as input.
 
 **Check the type**  of the input argument. 
 
-If it is a **number**, assume it is the radius of a circle and **calculate the circle area**. Print the **area** **rounded** to **the second decimal place**.
+If it is a **number**, assume it is the radius of a circle and **calculate the circle area**. 
+
+Print the **area** **rounded** to **the second decimal place**.
 
 If the argument type is **NOT** a number, print the following text to the console:
-
-- "We can not calculate the circle area, because we receive a \{type of argument\}."
+This calculation cannot be completed using a variable of type: String.
+- "**This calculation cannot be completed using a variable of type:** \{**type of argument**\}**.**"
 
 The **input** comes as a **single argument** passed to your function.
 
@@ -326,7 +328,7 @@ The **output** should be printed to the console.
 | **Input** | **Output** |
 | --- | --- |
 | circleArea(5) | 78.54 |
-| circleArea('name') | We could not calculate the circle area because we received a string. |
+| circleArea('name') | This calculation cannot be completed using a variable of type: string. |
 
 
 Write a function that receives a single argument.
@@ -340,11 +342,11 @@ Check the type of the input argument with the `typeof` operator.
 
 [image assetsSrc="syntax-hint-06.png" /]
 
-If the type is equal to 'number', calculate the circle area and print it to the console rounded to the second decimal place. 
+If the type is equal to '**number**', calculate the circle area and print it to the console rounded to the second decimal place. 
 
-To do this, use the toFixed() method.
+To do this, use the `toFixed()` method.
 
-The Math.pow() function returns the base to the exponent power. 
+The `Math.pow()` function returns the base to the exponent power. 
 
 You can find more information about calculating the area of a circle [here](https://en.wikipedia.org/wiki/Circle).
 
@@ -352,7 +354,7 @@ You can find more information about calculating the area of a circle [here](http
 
 If the type is **NOT** a '**number**', print the following message to the console:
 
-"We could not calculate the circle area because we received a \{inputType\}"
+"**This calculation cannot be completed using a variable of type:** \{**type of argument**\}**.**"
 
 
 [/task-description]
@@ -371,7 +373,7 @@ circleArea(5)
 circleArea('name')
 [/input]
 [output]
-We could not calculate the circle area because we received a string.
+This calculation cannot be completed using a variable of type: string.
 [/output]
 [/test]
 [test]
@@ -395,7 +397,7 @@ circleArea(10)
 circleArea([1, 2, 3])
 [/input]
 [output]
-We could not calculate the circle area because we received a object.
+This calculation cannot be completed using a variable of type: object.
 [/output]
 [/test]
 [test]
@@ -403,7 +405,7 @@ We could not calculate the circle area because we received a object.
 circleArea({ "name": "pesho" })
 [/input]
 [output]
-We could not calculate the circle area because we received a object.
+This calculation cannot be completed using a variable of type: object.
 [/output]
 [/test]
 [test]
@@ -411,7 +413,7 @@ We could not calculate the circle area because we received a object.
 circleArea(true)
 [/input]
 [output]
-We could not calculate the circle area because we received a boolean.
+This calculation cannot be completed using a variable of type: boolean.
 [/output]
 [/test]
 [/tests]
@@ -424,9 +426,9 @@ We could not calculate the circle area because we received a boolean.
 [code-task title="String Length" taskId="js-syntax-functions-statements-stringlength" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function findStringLength(string1, string2, string3) {
+function findStringLength(firstString, secondString, thirdString){
     // Write your code here
-};
+}
 ```
 [/code-editor]
 [code-adapter]
@@ -455,7 +457,10 @@ The **output** should be printed to the console on two lines.
 | --- | --- |
 | findStringLength('chocolate', 'ice cream', 'cake') | 22 |
 | | 7 |
-| **findStringLength('pasta', '5', '22.3')** | **10** |
+
+| **Input** | **Output** |
+| --- | --- |
+| findStringLength('pasta', '5', '22.3') | 10 |
 |  | 30 |
 
 
@@ -509,7 +514,7 @@ findStringLength('pesho', 'stamat', 'blah')
 [/test]
 [test]
 [input]
-findStringLength('dsa', 'dddd')
+findStringLength('dsa', 'dddd', '')
 [/input]
 [output]
 7

@@ -318,7 +318,7 @@ Because JavaScript is a dynamically typed language, the declared variables are *
 As long as you did not declare a variable with the **const** keyword, any variable can be assigned and re-assigned 
 different values of any type.
 
-```
+```js
 let myVariable = "Gone with the wind"; //String
 myVariable = 15; //Turns into a number
 myVariable = false; //And now a boolean value

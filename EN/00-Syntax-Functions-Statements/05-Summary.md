@@ -8,8 +8,8 @@
 - You can change the type of a variable or add new properties/methods while the program is running
 
 - Data types can be primitive or reference data types:
-    - Primitive types store the value directly
-    - Reference types store a reference to a memory location
+    - primitive types store the value directly
+    - reference types store a reference to a memory location
 
 - Declaring variables using `let`, `const`, `var`:
 
@@ -25,9 +25,9 @@ var age = 5;
 ```
 
 - Variables scope - determines where the variable can be accessed:
-    - Global scope - any variable not inside a function or a block of code
-    - Functional scope - variables that are declared inside functions
-    - Block scope - `let` and `const` are visible within the code block they are placed
+    - global scope - any variable not inside a function or a block of code
+    - functional scope - variables that are declared inside functions
+    - block scope - `let` and `const` are visible within the code block they are placed
 
 - Arithmetic operators return a single numerical value (`+`, `-`, `*`, `/`, etc.)
 

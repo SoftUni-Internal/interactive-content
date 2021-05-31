@@ -189,7 +189,7 @@ This will also not work and will result in a **TypeError** because the **walk** 
 [code-task title="Aggregate Elements" taskId="js-syntax-functions-statements-aggregateelements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function aggregate(array) {
+function aggregateElements(input) {
     //Write your code here
 }
 ```
@@ -212,9 +212,9 @@ Create a program that performs different operations on an array of elements. Imp
 
 - **Sum(a)** - calculates the sum of all elements from the input array
 
-- **Sum(1/a)**- calculates the sum of the inverse values (1/a) of all elements from the array
+- **Sum(1/a)** - calculates the sum of the inverse values (1/a) of all elements from the array
 
-- **Concat(a)**- concatenates the string representations of all elements from the array
+- **Concat(a)** - concatenates the string representations of all elements from the array
 
 The **input** comes as an array of number elements.
 
@@ -227,6 +227,9 @@ The **output** should be printed to the console on a new line for each of the op
 | aggregate([1, 2, 3]) | 6 |
 | | 1.8333 |
 | | 123 |
+
+| **Input** | **Output** |
+| --- | --- |
 | aggregate([2, 4, 8, 16]) | 30 |
 |  | 0.9375 |
 |  | 24816 |
@@ -257,7 +260,7 @@ aggregate([2, 4, 8, 16])
 [/test]
 [test]
 [input]
-aggregate([1, -1, 1, -1, 1, -1]
+aggregate([1, -1, 1, -1, 1, -1])
 [/input]
 [output]
 0
