@@ -36,8 +36,6 @@ action();
 ```
 
 A function that returns another function, like in the example above is called a **Higher-order Function**.
-
-
 [/slide]
 
 [slide hideTitle]

@@ -318,10 +318,15 @@ Because JavaScript is a dynamically typed language, the declared variables are *
 As long as you did not declare a variable with the **const** keyword, any variable can be assigned and re-assigned 
 different values of any type.
 
-```js
+```js live
 let myVariable = "Gone with the wind"; //String
+console.log(myVariable);
+
 myVariable = 15; //Turns into a number
+console.log(myVariable);
+
 myVariable = false; //And now a boolean value
+console.log(myVariable);
 ```
 
 Just because you can store any type of value in a single variable, it does not mean you should.

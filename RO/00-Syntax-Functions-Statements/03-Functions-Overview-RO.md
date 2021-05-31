@@ -26,7 +26,7 @@ You can have functions with zero, one, or more parameters (arguments).
 
 By using parameters your function can utilize different input data, process that data, and output a result.
 
-```js
+```js live
 function sayMyName(name) {
   console.log("Your name is: ", name);
 }
@@ -53,7 +53,7 @@ Functions can be declared in several ways.
 
 - Function declaration:
 
-```js live
+```js
 function fly() {
   console.log("I'm flying!");
 }
@@ -66,7 +66,7 @@ The code is then placed in a code block surrounded by curly brackets.
 
 - Function expression:
 
-```js live
+```js
 const run = function() {
   console.log("I am running!");
 }
@@ -81,7 +81,7 @@ Functions declared in this way do not need to have a name and can be anonymous a
 
 - Arrow function:
 
-```js live
+```js
 const saySomething = () => {
   console.log("I said something...");
 }

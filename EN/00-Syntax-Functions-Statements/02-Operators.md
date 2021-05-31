@@ -7,7 +7,7 @@
 
 They represent the arithmetic operators in mathematics.
 
-The values on the left and right sides of an arithmetic operator are called **operands**.
+The values on the left and right side of an arithmetic operator are called **operands**.
 
 Arithmetic operations return a single numerical value as a result.
 
@@ -105,7 +105,7 @@ console.log(result);
 
 Normally dividing -6 by 5 equals -1, yet we got -2.
 
-You can use `Math.trunc()` if you are expecting a negative value as a result of the operation, it will work from ES6 onward.
+You can use `Math.trunc()` if you are expecting a negative value as a result from the operation, it will work from ES6 onward.
 
 ```js live
 let result = Math.trunc(-6 / 5);
@@ -191,13 +191,13 @@ Using the shorthand division assignment is the same as doing `y = y / a`.
 | \=\= | Checks for equality between two values | 
 | \=\=\= | Checks for **equal value** and **equal type** |
 | \!\= | Checks whether two values are different |
-| \!\=\= | Checks whether the** values and their types** are equal |
+| \!\=\= | Checks whether the **values and their types** are equal |
 | \> | Checks whether left value of the left operand is **greater than** the right |
 | \>\= | **Greater than** or **equal to** |
 | \< | **Less than** |
 | \<\= | **Less than** or **Equal to** |
 
-Comparison operations evaluate boolean results, the result can either be `true` or `false`.
+Comparison operations evaluate to boolean results, the result can either be `true` or `false`.
 
 A simple comparison between two numeric values:
 
