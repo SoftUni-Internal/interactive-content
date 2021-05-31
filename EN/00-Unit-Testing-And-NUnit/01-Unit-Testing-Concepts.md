@@ -14,6 +14,8 @@ Unit tests isolate a chunk of code **assuring** and **verifying** its accuracy.
 
 Unit tests are part of the product source code. They aim to improve the code **quality**, **reliability**, and **maintainability**.
 
+## Unit Testing: Examples
+
 Let's see a simple example to illustrate the idea behind "**unit testing**":
 
 ```csharp
