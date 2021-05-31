@@ -1,4 +1,4 @@
-[slide hideTitle]
+[slide]
 
 # The path to becoming a programmer
 
