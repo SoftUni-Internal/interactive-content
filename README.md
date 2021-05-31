@@ -1,1 +1,1 @@
-# JS Application
+# QA Automation
