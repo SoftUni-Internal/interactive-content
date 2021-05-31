@@ -3,7 +3,7 @@
 
 # Meme Lounge
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Overview-and-resources-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-Overview-and-resources-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 **Aici aveți un link către** [resurse](https://videos.softuni.org/resources/javascript/javascript-applications/Meme_Lounge.zip) **pentru aceasta sarcină.**
@@ -68,7 +68,7 @@ De asemenea, puteți adăuga elemente ascunse pentru a vă ajuta să implementa�
 
 ## Pornirea serviciului
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Overview-and-resources-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-Overview-and-resources-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Serviciul REST** va fi folderul "**server**" din resursele furnizate.
 
@@ -133,12 +133,12 @@ Puteți găsi mai multe detalii în GitHub [depozit] (https://github.com/softuni
 
 [slide hideTitle]
 # Api Logic
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-2.1-API.JS-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-2.1-API.JS-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
 # App Logic
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 [/slide]
 
