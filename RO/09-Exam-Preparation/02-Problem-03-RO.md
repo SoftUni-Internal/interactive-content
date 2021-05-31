@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Starea proiectului
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Testing-27-28-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-Testing-27-28-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Testele necesită un server web pentru a livra conținutul aplicației.
 

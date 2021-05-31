@@ -4,7 +4,7 @@
 
 # Ecranul de start
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Home-4-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-Home-4-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Ecranul inițial ar trebui să afișeze navigarea, înregistrarea, autentificarea, imaginea inițială și un subsol.
 
@@ -19,7 +19,7 @@ Utilizatorii conectați trebuie redirecționați către pagina **All memes**.
 [slide hideTitle]
 # Bară de navigare
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Navigation-6-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-Navigation-6-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Implementați un **NavBar** pentru aplicație: linkurile de navigare ar trebui să schimbe ecranul curent (vizualizare).
 
@@ -45,7 +45,7 @@ Exemplu de navigare utilizator:
 [slide hideTitle]
 # Pagina de logare
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Login-8-9-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-Login-8-9-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Serviciul REST inclus** vine cu următoarele conturi de utilizator **făcute în prealabil**, pe care le puteți utiliza pentru dezvoltare:
 
@@ -87,7 +87,7 @@ Dacă există o eroare, afișați un mesaj de eroare utilizând un dialog de sis
 
 [slide hideTitle]
 # Înregistrați utilizatorul
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Register-10-11-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-Register-10-11-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pagina **Register** conține un formular pentru înregistrarea unui nou utilizator.
 
@@ -126,7 +126,7 @@ Dacă există o eroare sau **validările** nu trec, afișați mesajul de eroare 
 [slide hideTitle]
 # Deconectare 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Logout-12-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-Logout-12-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Acțiunea de deconectare este disponibilă utilizatorilor conectați. Trimiteți următoarea solicitare pentru a deconecta un utilizator:
 
@@ -149,7 +149,7 @@ Dacă deconectarea a reușit, **redirecționați** utilizatorul către **Home pa
 [slide hideTitle]
 # Toate memele
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-All-Memes-13-14-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-All-Memes-13-14-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Această pagină afișează o listă cu toate memele din sistem.
  
@@ -178,7 +178,7 @@ URL: /data/memes?sortBy=_createdOn%20desc
 [slide hideTitle]
 # Create Meme Screen 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Create-Meme-15-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-Create-Meme-15-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pagina **Create** este disponibilă utilizatorilor conectați.
 
@@ -217,7 +217,7 @@ După succes, **redirecționați** utilizatorul către pagina **All memes**.
 # Meme Details
 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Details-16-17-18-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-Details-16-17-18-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Toți utilizatorii ar trebui să poată **vizualiza pagina de detalii** a memelor.
 
@@ -244,7 +244,7 @@ Serviciul va returna un singur obiect.
 [slide hideTitle]
 # Edit Meme Screen 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Edit-meme-19-20-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-Edit-meme-19-20-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pagina **Edit** este disponibilă utilizatorilor conectați și permite autorului să **editeze** **propriul** lor meme.
 
@@ -286,7 +286,7 @@ Dacă reușiți, redirecționați utilizatorul către pagina **Details**.
 [slide hideTitle]
 # Delete Meme  
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Delete-21-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-Delete-21-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Funcționalitatea de ștergere este disponibilă pentru **utilizatorii conectați** și numai pentru memele create de aceștia.
@@ -315,7 +315,7 @@ După succes, **redirecționați** utilizatorul către pagina **All memes**.
 
 [slide hideTitle]
 # User Profile
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Profile-23-24-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-Profile-23-24-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Fiecare **utilizator conectat** ar trebui să-și poată vedea profilul făcând clic pe butonul `[My Profile]`.
 
@@ -347,7 +347,7 @@ Serviciul va returna o serie de listări.
 [slide hideTitle]
 # Bonus: Notificări 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/EN/JS-APPS-Meme-Lounge-Notifications-25-26-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/10-JS-Applications-Exam-Prep/RO/JS-APPS-Meme-Lounge-Notifications-25-26-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În cazul unei **erori cauzate de acțiunile utilizatorului**, aplicația ar trebui să afișeze un **mesaj de notificare a erorii**, care dispare după 3 secunde.
 
