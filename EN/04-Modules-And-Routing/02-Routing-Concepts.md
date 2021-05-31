@@ -18,6 +18,8 @@ In this example you can notice the difference between the two types of navigatio
 
 ## Server-Side
 
+
+
 [image assetsSrc="Angular-Modules-And-Routing.png" /]
 
 ## Client-Side

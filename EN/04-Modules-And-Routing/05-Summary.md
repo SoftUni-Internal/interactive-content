@@ -2,13 +2,13 @@
 
 # Summary
 
+Angular-Modules-and-routing-31-Summary
+
 # In this lesson you learned:
 
--  What is NgModule?
-
-   -  Helps us to organize the application
-
-   -  They organize the application into **blocks of functionality**
+-  What NgModules are
+   *  they define the structure of our project
+   *  organizing the application into **blocks of functionality**
 
    ```js
    @NgModule({
@@ -19,15 +19,10 @@
    })
    ```
 
--  What is Routing?
+-  **Routing** allows us to display different views, without reloading the entire page
 
-   -  It allows us to have navigation without reloading the entire page
-
--  What is Router Module?
-
-   -  Gives us in-app navigation
-
-   -  Provides us guards, resolvers, and more
+-  The **Router Module** provides us with in-app navigation
+   * contains guards, resolvers, and more
 
    ```js
    <nav>
@@ -36,22 +31,14 @@
    </nav>
    ```
 
-## In the next lesson you will learn about:
+## In the next lesson you will learn:
 
--  Directives and Forms:
-
-   -  What are Directives?
-
-      -  Attribute Directives
-
-      -  Structural Directives
-
-      -  Building an Attribute Directive
-
-   -  How to Handle Forms.
-
-   -  Template-Driven Forms
-
-   -  Reactive Forms
+-  What **directives** are
+   *  attribute directives
+   *  structural directives
+   *  building an attribute directive
+-  Using forms in Angular
+   *  template-driven forms
+   *  reactive forms
 
 [/slide]

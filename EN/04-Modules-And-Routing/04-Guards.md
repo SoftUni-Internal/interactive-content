@@ -4,6 +4,8 @@
 
 # Guards Overview
 
+Angular-Modules-and-routing-24-25-Guards-overview
+
 Guards are used for **stopping** the user from accessing routes that he has **no** permission to access.
 
 To have guards in our application, we need to create a **guard service**.
@@ -19,6 +21,8 @@ And finally, we can add the **guard** to the wanted **route**.
 [slide hideTitle]
 
 # CanActivate Guard
+
+Angular-Modules-and-routing-26-27-CanActivate-Guard
 
 We can use **CanActivate** if we want to check before the route **activation**.
 
@@ -58,6 +62,8 @@ This function will return true if the user is logged in and false when he is not
 
 # Router Resolver
 
+Angular-Modules-and-routing-28-29-Angular-Router-Resolver
+
 Resolvers are **data providers**.
 
 They allow us to fetch data **before navigating** to the specific route.
@@ -85,6 +91,8 @@ If we have guards in the route, the resolver will wait for their result.
 [slide hideTitle]
 
 # Example of Resolver
+
+Angular-Modules-and-routing-30-ActivatedRoute-example
 
 To create a Resolver, we can use the command from Angular CLI, `ng g resolver nameOfTheResolver`.
 
