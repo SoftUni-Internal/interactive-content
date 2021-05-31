@@ -4,7 +4,7 @@
 [code-task title="Math Operations" taskId="js-syntax-functions-statements-mathops" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function calculate(num1, num2, operator) {
+function calculate(firstNum, secondNum, operator) {
     //Write your code here
 }
 ```
@@ -95,9 +95,7 @@ calculate(53, 55, '-')
 [/test]
 [test]
 [input]
-11
-5
-/
+calculate(11, 5, '/')
 [/input]
 [output]
 2.2
@@ -137,7 +135,7 @@ calculate(11, 2, '**')
 [code-task title="Sum of Numbers N...M" taskId="js-syntax-functions-statements-sumofnumsnm" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function sum(n, m) {
+function sum(firstString, secondString) {
     //Write your code here
 }
 ```
@@ -173,15 +171,16 @@ The **output** should **return** the sum.
 
 ## Hints
 
-Write a function that receives two string arguments and parse them to numbers. Use `Number(string)` function or just put the '**+**' sign before the string. 
+Write a function that receives two string arguments and parse them into numbers. Use `Number(string)` function or just put the '**+**' sign before the string. 
 
 
 [image assetsSrc="syntax-homework-04.png" /]
+
 [image assetsSrc="syntax-homework-05.png" /]
 
 Declare a variable named **result** that will keep the mathematical results.
 
-Write a **for** **loop** from **num1** to **num2** and for every turn of the cycle, until it’s completed, add the current value.
+Write a **for** **loop** from **num1** to **num2** and for every turn of the cycle, until it iscompleted, add the current value.
 
 [image assetsSrc="syntax-homework-06.png" /]
 
@@ -277,9 +276,9 @@ function adapter(input, code) {
 
 Write a function that calculates how much money you need to buy fruits. You will receive a **string** representing the type of fruits you want to buy, **a number** for their weight in grams, and another **number** for the price per kilogram.
 
-Print the following text to the console: 
+Print the following text to the console: 
 
-I need $\{money\} to buy \{weight\} kilograms of of \{fruit\}.
+"**I need $**\{**money**\} **to buy** \{**weight**\} **kilograms of** \{**fruit**\}."
 
 Print the weight and the money **rounded** to two decimal places.
 
@@ -293,8 +292,8 @@ The **output** should be printed on the console.
 
 | **Input** | **Output** |
 | --- | --- |
-| calculateCost('oranges', 2500, 1.80) | I need $4.50 to buy 2.50 kilograms of of oranges. |
-| calculateCost('apples', 1563, 2.35) | I need $3.67 to buy 1.56 kilograms of of apples. |
+| calculateCost('oranges', 2500, 1.80) | I need $4.50 to buy 2.50 kilograms of oranges. |
+| calculateCost('apples', 1563, 2.35) | I need $3.67 to buy 1.56 kilograms of apples. |
 
 
 [/task-description]
@@ -366,7 +365,7 @@ I need $0.05 to buy 0.01 kilograms of ppp.
 [code-task title="Greatest Common Divisor - GCD" taskId="js-syntax-functions-statements-gcd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
-function calculateGCD(num1, num2) {
+function calculateGCD(firstNum, secondNum) {
     //Write your code here
 }
 ```
@@ -505,7 +504,9 @@ function adapter(input, code) {
 
 Write a function that receives **an integer** as input and checks if all the digits in the given number are the same or not.
 
-Print true to the console if all numbers are same and **false** if not. On the next line print **the sum of all digits**.
+Print true to the console if all numbers are the same and **false** if not. 
+
+On the next line print **the sum of all digits**.
 
 The **input** comes as an integer.
 
@@ -519,7 +520,10 @@ The **output** should be printed to the console.
 | --- | --- |
 | checkNumber(2222222) | true |
 |  | 14 |
-| **checkNumber(1234)** | **false** |
+
+| **Input** | **Output** |
+| --- | --- |
+| checkNumber(1234) | false |
 |  | 10 |
 
 [/task-description]
@@ -736,7 +740,9 @@ function adapter(input, code) {
 
 [task-description]
 ## Description
-Write a function that determines whether a driver is within the speed limit. You will receive the speed and the area. Each area has a different limit:
+Write a function that determines whether a driver is within the speed limit. 
+
+You will receive the speed and the area. Each area has a different limit:
 
 - On the **motorway,** the limit is **130 km/h**
 
@@ -746,17 +752,23 @@ Write a function that determines whether a driver is within the speed limit. You
 
 - Within a **residential** area, the limit is **20 km/h**
 
-If the driver is **within the limits**, there should not be any output. If the driver is **over the limit**, however, your function should print the severity of the infraction.
+If the driver is **within the limits**, there should not be any output. 
+
+If the driver is **over the limit**, however, your function should print the severity of the infraction.
 
 For speeding up to **20** km/hover the limit, speeding should be printed.
 
-For speeding up to **40** km/h over the limit, excessive speeding  should be printed.
+For speeding up to **40** km/h over the limit, excessive speeding should be printed.
 
-For anything else, reckless driving  should be printed.
+For anything else, reckless driving should be printed.
 
-The **input** comes as an **array of elements**. The first element is the current speed (**number**), the second element is the area.
+The **input** comes as an **array of elements**. 
 
-The **output** should be printed to the console. Note that in certain cases there isn't any output.
+The first element is the current speed (**number**), the second element is the area.
+
+The **output** should be printed to the console. 
+
+Note that in certain cases there isn't any output.
 
 
 ## Examples
@@ -908,10 +920,14 @@ Create a program that receives a **number** and five operations. Perform the ope
 -   **chop**  - divide the number by two
 -   **dice** - find the square root of the number
 -   **spice**  - add 1 to the number
--   **bake**  - multiply the number by 3
+-   **bake** - multiply the number by 3
 -   **fillet**  - subtract 20% from the number
 
-The **input** comes as an **array of 6 string elements**. The first element is the starting point and must be **parsed** to a number. The remaining 5 elements are the names of the operations to be performed.
+The **input** comes as an **array of 6 string elements**. 
+
+The first element is the starting point and must be **parsed** to a number. 
+
+The remaining 5 elements are the names of the operations to be performed.
 
 The **output** should be printed to the console.
 
@@ -925,6 +941,9 @@ The **output** should be printed to the console.
 |  | 4 |
 |  | 2 |
 |  | 1 |
+
+| **Input** | **Output** |
+| --- | --- |
 | cook(['9', 'dice', 'spice', 'chop', 'bake', 'fillet']) | 3 |
 |  | 4 |
 |  | 2 |
@@ -1025,17 +1044,17 @@ Create a program that receives two points on a plane in the format \[x1, y1, x2,
 
 Check if the distance between each point and the start of the cartesian coordinate system (0, 0) is **valid**. 
 
-A distance between two points is considered **valid**, if it is has a **positive value**.
+A distance between two points is considered **valid** if it is has a **positive value**.
 
-In case a distance is valid, print "\{x1, y1\} to \{x2, y2\} is valid"
+In case a distance is valid, print "\{**x1, y1**\} **to** \{**x2, y2**\} **is valid**"
 
-If the distance is invalid, print "\{x1, y1\} to \{x2, y2\} is invalid"
+If the distance is invalid, print "\{**x1, y1**\} **to** \{**x2, y2**\} **is invalid**"
 
-The order of comparisons should always be first \{x1, y1\} to \{0, 0\}, then \{x2, y2\} to \{0, 0\} and finally \{x1, y1\} to \{x2, y2\}**.
+The order of comparisons should always be first \{**x1, y1**\} to \{**0, 0**\}, then \{**x2, y2**\} to \{**0, 0**\} and finally \{**x1, y1**\} to \{**x2, y2**\}.
 
 The **input** consists of two points given as an **array of numbers**.
 
-For each comparison print either "\{x1, y1\} to \{x2, y2\} is valid" if the distance is valid, or "\{x1, y1\} to \{x2, y2\} is invalid" if it is invalid.
+For each comparison print either "\{**x1, y1**\} **to** \{**x2, y2**\} **is valid**" if the distance is valid, or "\{**x1, y1**\} to \{**x2, y2**\} **is invalid**" if it is invalid.
 
 
 ## Examples
@@ -1045,7 +1064,10 @@ For each comparison print either "\{x1, y1\} to \{x2, y2\} is valid" if the dist
 | validate([3, 0, 0, 4]) | \{3, 0\} to \{0, 0\} is valid |
 |  | \{0, 4\} to \{0, 0\} is valid |
 |  | \{3, 0\} to \{0, 4\} is valid |
-| validate([2, 1, 1, 1]) | {2, 1} to {0, 0} is invalid |
+
+| **Input** | **Output** |
+| --- | --- |
+| validate([2, 1, 1, 1]) | \{2, 1\} to \{0, 0\} is invalid |
 |  | \{1, 1\} to \{0, 0\} is invalid |
 |  | \{2, 1\} to \{1, 1\} is valid |
 
@@ -1064,7 +1086,7 @@ validate([3, 0, 0, 4])
 [/test]
 [test open]
 [input]
-validate([2, 1, 1, 1]
+validate([2, 1, 1, 1])
 [/input]
 [output]
 {2, 1} to {0, 0} is invalid
