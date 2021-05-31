@@ -4,15 +4,17 @@
 
 # Functional Programming
 
-**Functional programming** is a paradigm in which programs are created by **composing** functions.
+The premise of functional programming is that functions should have no side effects.
 
-In functional programming, functions are **first-class citizens**, meaning that they can be:
+This means a function only does one thing and does not change the state.
 
-- **Passed as arguments** to other functions
-- **Returned** by a function
-- **Assigned** to variables
+There are of course some exceptions to this rule, especially when dealing with IO libraries or functions.
 
-Functional programming is **declarative** rather than imperative.
+Functions can be treated the same way as objects in object-oriented programming you can assign them to variables, you can return them from functions, and you can even pass them to functions and use them in calculations.
+ 
+Everything you can do with objects you can do with functions that is what is often referred to as treating functions like "first-class citizens".
+
+Functional programming is **declarative**, where a parameter is given to the function as a and a certain result from that function is expected, rather than imperative which explains step by step what needs to be done to receive the expected result.
 
 As a result, functional code tends to be **easier to predict** and **test**, while also being more **concise**.
 
@@ -20,39 +22,19 @@ Most modern JavaScript applications make use of functional programming ideas.
 
 ## Asynchronous Programming
 
-At its core, JavaScript is a **single-threaded language**.
+JavaScript is a single-threaded language, the majority of JavaScript code thas is has been written so far is being run as a single process on the computer.
 
-This means that it can only perform a **single task at a time**.
+That means for the most part the code runs from top to bottom, always in the same order, in kind of a procedural way.
 
-**Asynchronous JavaScript** aims to solve this problem.
+Asynchronous code starts very similar, at the top of the file and execute the code until it gets to the bottom, but during that execution could run into certain asynchronous functions.
 
-The most common way to **handle** asynchronous operations is by using **streams**.
+Then the code will split off and execute that asynchronous code separately from the rest of the code and that's usually because it needs to wait for the result of some operation that takes a long period.
 
-In **Angular**, handling streams is done by using **Observables**.
+So the synchronous code will execute from the top and execute until it hits something asynchronous and then it will execute that as a result, we may have multiple different threads running the code in different sections.
 
-[/slide]
+So the code may execute in a different order depending on how to log a certain operation takes, thus make code is harder to work with.
 
-
-
-[slide hideTitle]
-
-# The Observable
-
-**Observables** are Angular's way of **passing values** between different application parts.
-
-They are the recommended technique for **event handling** and **asynchronous programming**.
-
-Oservables can be used to deliver multiple values of **any type** - like literals, messages, or events, for example. 
-
-They can be used to:
-- **Create** Streams
-- **Subscribe** to Streams and **unsubscribe** from them
-- **React** to new values
-- **Combine** streams to build new ones
-
-A common use case for **Observables** is when setting up our **HTTP requests**. 
-
-We will learn about Angular's HTTP Client in a later video.
+Potentially means that we have to make sure that the code will work no matter which path it takes, whether it executes everything in order and reverse order or any other scrambled order.
 
 [/slide]
 
@@ -60,18 +42,58 @@ We will learn about Angular's HTTP Client in a later video.
 
 # Function Reactive Programming
 
-**Function Reactive Programming** is a **paradigm** for software development which integrates time flow and **compositional events** into functional programming.
+**Function Reactive Programming** is a **paradigm** for software development that integrates time flow and **compositional events** into functional programming, which often works with asynchronous data streams.
 
-In pure **functional** programming, there are **no side-effects**.
+These data streams can come from or be created by:
 
-However, for anything related to **user interaction**, side-effects are **necessary** to a degree.
+- UI events 
+- Clicks or key presses
+- HTTP requests file systems array-like object strings
+- Machines memory and cache 
 
-The basic idea behind FRP is that there are certain **datatypes** that represent a **value** "over time". 
+These events can be turned into or can be viewed as a data stream.
 
-Computations that involve these **changing-over-time values** will themselves have values that change **over time**.
+Stream is defined as a sequence of ongoing events, ordered in time.
 
-In FRP, **entire programs** can be **build** exclusively around the notion of **streams**.
+A few things can get from a stream:
+- The data that it emits which could be virtually anything and any kind any type of data 
+- Any errors could be thrown if something goes wrong 
+- A notifies signal could be received when it is complete 
 
+
+The stream starts with some kind of event indicates an event with some kind of value for example coordinates of a click.
+
+So moves along the stream if something goes wrong it can send off an error which can notify.
+
+We can have our application react to that our ok and then it keeps going and it can send off a signal when it is complete.
+
+Now some streams will not complete, for instance, you can get a stream from most movements and those do not complete they are just going to keep going as long as you move the mouse.
+
+Whereas something like an HTTP GET request you are going to get the data through the stream and it is going to complete.
+ 
+The way that we work with these streams is with what's called an observable.
+
+[/slide]
+
+[slide hideTitle]
+
+# The Observable
+
+Observables are used to watch these streams and they will emit a function when the value is omitted or an error or a complete signal is returned.
+
+Observables can be subscribed to by an observer and there is no limit to how many subscriptions an observable can have.
+
+We can interact with these data streams as if they were just a regular array by using array-like methods and there are a lot of operators that will allow us to manipulate the data however we want.
+
+Right standard JavaScript es5 or even es6 can not be used to work with observables and streams and reactive extensions like ReactiveX (RxJS) are what allows to manipulate them.
+
+Observables can be used to deliver multiple values of **any type** - like literals, messages, or events, for example. 
+
+They can be used to:
+- **Create** Streams
+- **Subscribe** to Streams and **unsubscribe** from them
+- **React** to new values
+- **Combine** streams to build new ones
 
 [/slide]
 
@@ -79,13 +101,14 @@ In FRP, **entire programs** can be **build** exclusively around the notion of **
 
 # Introducing RxJS
 
-RxJS, short for **R**eactive E**x**tensions for **J**ava**S**cript, is a **library** for composing **asynchronous** and **event-based programs** by using **observables**.
+ReactiveX or RxJS, short for **R**eactive E**x**tensions for **J**ava**S**cript it is a library for composing asynchronous programs by using observable sequences and it provides a long list of operators which allows to:
 
-RxJS provides multiple **utility functions** for **stream manipulations** like:
+- Filter observables
+- Select observables
+- Transform observables
+- Combined and compose observables 
 
-- Iterating through stream values;
-- Stream filtering;
-- Composing multiple streams.
+Reactive extensions are not limited to just JavaScript it is also available for many of the popular programming languages like Java, C#, Scala, Clojure, Swift and others.
 
 
 ## How to install RxJS
@@ -164,7 +187,7 @@ let hotObservable = Observable.create((observer : any) => {
 }).pipe(share());
 ```
 
-In order to apply the `share` operator, we must pass it as an argument to the `pipe` method.
+To apply the `share` operator, we must pass it as an argument to the `pipe` method.
 
 The `share` operator returns a new Observable that shares the original one.
 
@@ -205,7 +228,7 @@ The following output will be displayed in the console:
 
 - The filter operator
 
-This operator **filters** items emitted by the source Observable and emmmits only those that **satisfy** a given **condition**.
+This operator **filters** items emitted by the source Observable and emits only those that **satisfy** a given **condition**.
 
 ```js
 import { from } from 'rxjs';
@@ -247,6 +270,8 @@ In this example, we sum the three elements from the **source**.
 
 The resulting value equals **82**.
 
+You can learn more about ReactiveX [here](http://reactivex.io).
+
 
 [/slide]
 
@@ -254,10 +279,12 @@ The resulting value equals **82**.
 
 # RxJS and FRP Overview
 
+// Here
+
 Both RxJS and are **powerful concepts**, and even more so when **combined**.
 
 Good knowledge of both will give you the ability to choose the way you **structure** your Angular application.
 
-You can go **fully reactive** by utilising RxJS to the fullest, or structure your app via **parts**, like Forms or Http.
+You can go **fully reactive** by utilizing RxJS to the fullest, or structure your app via **parts**, like Forms or HTTP.
 
 [/slide]
