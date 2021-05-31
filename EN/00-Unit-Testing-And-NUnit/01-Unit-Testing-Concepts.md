@@ -4,13 +4,13 @@
 
 [video src="https://videos.softuni.bg/hls/PROFESSIONAL-MODULES/QA/2021-04-QA-Automation/02.Unit-Testing/2.unit-testing-concepts-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Unit Testing is an important concept and practice in software development.
+**Unit testing** is an important concept and practice in software development.
 
-In the Unit Testing technique, individual components called **units** are tested.
+In the unit testing technique, individual components called **units** are tested.
 
 The main reason is to validate that each specific **unit** performs as expected.
 
-Unit Tests isolate a chunk of code **assuring** and **verifying** its accuracy.
+Unit tests isolate a chunk of code **assuring** and **verifying** its accuracy.
 
 Unit tests are part of the product source code. They aim to improve the code **quality**, **reliability**, and **maintainability**.
 
@@ -66,7 +66,7 @@ Unit tests execute the code with sample input data and entrance conditions and *
 
 There are different **unit testing frameworks**. They structure the tests consistently.
 
-**Unit Testing** consists of different "testing" levels:
+**Unit testing** consists of different "testing" levels:
 
 - Unit Testing
 - Integration Testing
