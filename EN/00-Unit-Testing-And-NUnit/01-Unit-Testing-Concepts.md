@@ -4,23 +4,25 @@
 
 [video src="https://videos.softuni.bg/hls/PROFESSIONAL-MODULES/QA/2021-04-QA-Automation/02.Unit-Testing/2.unit-testing-concepts-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Unit Testing is an important concept and practice in software development.
+**Unit testing** is an important concept and practice in software development.
 
-In the Unit Testing technique, individual components called **units** are tested.
+In the unit testing technique, individual components called **units** are tested.
 
 The main reason is to validate that each specific **unit** performs as expected.
 
-Unit Tests isolate a chunk of code **assuring** and **verifying** its accuracy.
+Unit tests isolate a chunk of code **assuring** and **verifying** its accuracy.
 
 Unit tests are part of the product source code. They aim to improve the code **quality**, **reliability**, and **maintainability**.
+
+## Unit Testing: Examples
 
 Let's see a simple example to illustrate the idea behind "**unit testing**":
 
 ```csharp
-int Sum(int[] arr) {
+int Sum(int[] arr)
+{
     int sum = arr[0];
-    for (int i = 1; i < arr
-        .Length; i++)
+    for (int i = 1; i < arr.Length; i++)
         sum += arr[i];
     return sum;
 }
@@ -34,27 +36,24 @@ So, let's write code, which confirms that this function works correctly.
 
 The first test case will check if the sum of the array elements \[1,2\] is **3**.
 
-```java
-void Test_SumTwoNumbers() {
-        if (Sum(new int[] {
-                1,
-                2
-            }) != 3)
-            throw new Exception("1+2 != 3");
+```csharp
+void Test_SumTwoNumbers()
+{
+    if (Sum(new int[] { 1, 2 }) != 3)
+        throw new Exception("1+2 != 3");
 }
-
 ```
 
 If the execution result is not as expected, the function will **fail with an error**.
 
 Let's see one more test:
 
-```java
-void Test_SumEmptyArray() {
+```csharp
+void Test_SumEmptyArray()
+{
     if (Sum(new int[] {}) != 0)
         throw new Exception("sum [] != 0");
 }
-
 ```
 
 The second test checks whether the sum of an **empty array** is **0**.
@@ -69,7 +68,7 @@ Unit tests execute the code with sample input data and entrance conditions and *
 
 There are different **unit testing frameworks**. They structure the tests consistently.
 
-**Unit Testing** consists of different "testing" levels:
+**Unit testing** consists of different "testing" levels:
 
 - Unit Testing
 - Integration Testing
@@ -81,9 +80,9 @@ There are different **unit testing frameworks**. They structure the tests consis
 
 [slide hideTitle]
 
-# Unit Tests
+## Unit Tests
 
-Unit tests take a single component (called "**unit**") and test it.
+**Unit tests** take a single component (called "**unit**") and test it.
 
 This can be a **function** or **method** in the code, a **class** or other code component.
 
@@ -101,9 +100,9 @@ They examine the functionality of the single component or unit.
 
 Usually, unit testing is performed at the **earliest stages** of the development process, long before the software is developed and ready for testing by QA engineers.
 
-# Integration Tests
+## Integration Tests
 
-Another type of tests are **"Integration Tests"**
+Another type of tests are **"integration tests"**
 
 They check the interaction between several components.
 
@@ -127,12 +126,11 @@ Integration Tests implement more complex scenarios.
 Integration testing is performed early in the development process after some of the components are written and unit tested, and they need to be integrated into modules with more complex functionality.
 
 
-# System Tests
+## System Tests
 
-System tests and acceptance tests test the entire system: all its components together.
+**System tests** and acceptance tests test the entire system: all its components together.
 
-They are the most complex and cover **end-to-end scenarios** (from the front-end to the back-end, the database, and all other system components.
-)
+They are the most complex and cover **end-to-end scenarios** (from the front-end to the back-end, the database, and all other system components).
 
 For example, if we test whether, after **user registration in the mobile app** of a complex software system, the new user is correctly stored in the database at the server-side, this is a **system test**.
 
@@ -161,9 +159,5 @@ An example of a smoke test could be to check whether the home page of the system
 Projects with more QA resources **automate the testing of the entire system** with all its functionality, covering all its use cases.
 
 This approach is heavy and time-consuming and is rarely used.
-
-
-
-
 
 [/slide]
