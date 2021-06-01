@@ -27,11 +27,7 @@ console.log(elements[10]);
 console.log(elements[-1]);
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Valid and Non-Valid Properties
+## Valid and Non-Valid Properties
 
 In JavaScript, **object properties** can be accessed by using:
 

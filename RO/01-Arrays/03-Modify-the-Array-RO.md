@@ -1,23 +1,17 @@
 
-# Modify the Array
+# Mutator Methods
 
 [slide hideTitle]
 
-# Mutator Methods
- 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-12-Modify-the-array-Mutator-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Add Elements
+12-Modify-the-array-Mutator-methods
+14-Push-
+16-Unshift-
+
 
 The **methods** used to modify arrays in JavaScipt are similar to the ones in the **Java stream**.
 
 When any of the following **methods** is applied, it will **change** (modify) the original array. 
-[/slide]
-
-[slide hideTitle]
-# Add Elements
-
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-14-Push-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-16-Unshift-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Push
 

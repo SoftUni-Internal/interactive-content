@@ -3,7 +3,7 @@
 [slide hideTitle]
 # What is an Array?
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-5-What-is-an-array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-3-4-Working-with-arrays-of-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You have already learned about the **different** types of collections such as **arrays**, **lists**, **stacks**, **queues**, and how to **modify** them by using methods from **java streams**.
 
@@ -45,7 +45,7 @@ const numbers = [10, 20, 30, 40, 50];
 [slide hideTitle]
 # Specifics of JavaScipt Arrays
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-3-4-Working-with-arrays-of-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-5-What-is-an-array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In Java, when an array is **initialized**, its **data type** and **length** must be specified.
 
