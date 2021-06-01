@@ -18,7 +18,8 @@ A similar case is presented in the following example:
 
 ```csharp
 [Test]
-public void testAlarmClockShouldRingInTheMorning() {
+public void testAlarmClockShouldRingInTheMorning() 
+{
   Time time = new Time();
   AlarmClock clock = new AlarmClock(time);
   if (time.isMorning()) {
@@ -44,9 +45,6 @@ There are **more cases** for example where you will need to recreate a **specifi
 
 The only way this can be done is when the components required for this state can be easily configurated.
 
-
-
-TODO: Add more examples and explanations.
 
 
 

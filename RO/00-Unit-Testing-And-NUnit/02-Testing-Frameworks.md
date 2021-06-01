@@ -4,7 +4,7 @@
 
 [video src="https://videos.softuni.bg/hls/PROFESSIONAL-MODULES/QA/2021-04-QA-Automation/02.Unit-Testing/3.testing-frameworks-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Unit testing frameworks execute the tests and generate reports.
+**Unit testing frameworks** execute the tests and generate reports.
 
 When developers use the testing frameworks:
 - When they want to **organize** them in a hierarchy using classes and functions
@@ -28,13 +28,12 @@ Let's see the following example:
 ```c#
 using NUnit.Framework;
 
-public class SummatorTests {
+public class SummatorTests 
+{
     [Test]
-    public void Test_SumTwoNumbers() {
-        var sum = Sum(new int[] {
-            1,
-            2
-        });
+    public void Test_SumTwoNumbers() 
+    {
+        var sum = Sum(new int[] { 1, 2});
         Assert.AreEqual(3, sum);
     }
 }

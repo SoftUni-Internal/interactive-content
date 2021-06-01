@@ -32,7 +32,8 @@ The lines can be **orange** if they were **partially executed**.
 It would occur when we have a condition and not all of the terms are executed.
 
 ```csharp
-if (isEmptyString(url) && isEmptyString(name)) {
+if (isEmptyString(url) && isEmptyString(name)) 
+{
     return false;
 }
 ```

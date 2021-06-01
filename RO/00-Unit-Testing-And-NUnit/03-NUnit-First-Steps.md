@@ -23,7 +23,7 @@ Let's see how to create a blank project in Visual Studio.
 
 # Creating a Blank Solution
 
-Opening a new Visual Studio tab we are going to create a "new project".
+Let's enter the Visual Studio and create a **"new project"**.
 
 We can type "**blank solution**" in the template search block.
 
@@ -52,7 +52,7 @@ In this case, we will name our solution **ConsoleAppSummator**.
 
 Now, let's create a class called "**Summator**".
 
-Right click on the **Solution** -> **Add** -> **New Item**
+Right click on the `[Solution]` -> `[Add]` -> `[New Item]`
 
 Choose **Class** and name it **Summator**.
 
@@ -61,7 +61,8 @@ Choose **Class** and name it **Summator**.
 Let's write a very simple function that will **sum** two numbers.
 
 ```csharp
-public static int Sum(int[] arr) {
+public static int Sum(int[] arr) 
+{
   int sum = arr[0];
   for (int i = 1; i < arr.Length; i++)
     sum += arr[i];
@@ -74,8 +75,10 @@ This is the class that we want to test.
 Now, we can return to our **Main** method and run our function:
 
 ```csharp
-static void Main() {
-  Console.WriteLine(Summator.Sum(new int[] {
+static void Main() 
+{
+  Console.WriteLine(Summator.Sum(new int[] 
+  {
     10,
     20,
     30
@@ -85,7 +88,7 @@ static void Main() {
 
 Press **Ctrl + F5** to enter the **Run Mode**.
 
-We will see the follow output:
+We will see the following output:
 
 [image assetsSrc="Unit-Testing-NUnit(6).png" /]
 
@@ -98,7 +101,7 @@ We will see the follow output:
 
 Let's create a new NUnit project.
 
-Right click -> **Add** -> **New Project**.
+Right click -> `[Add]` -> `[New Project]`.
 
 [image assetsSrc="Unit-Testing-NUnit(4).png" /]
 
@@ -106,9 +109,9 @@ Choose the **NUnit Test Project** template.
 
 [image assetsSrc="Unit-Testing-NUnit(8).png" /]
 
-Click **Next** and name the project. Let's name it **SummatorTests**.
+Click `[Next]` and name the project. Let's name it **SummatorTests**.
 
-Choose the **Target Framework** and click **Create**.
+Choose the **Target Framework** and click `[Create]`
 
 Now, if we look in the "Solution Explorer" tab we will see two different projects.
 
@@ -118,7 +121,7 @@ The first one will be our actual code and the second will be our project where w
 
 To be able to **access** the different projects, we must create a **project reference**.
 
-Right click -> **Add** -> **Project Reference**.
+Right click -> `[Add]` -> `[Project Reference]`
 
 [image assetsSrc="Unit-Testing-NUnit(7).png" /]
 
@@ -147,7 +150,7 @@ public void Test_SumTwoNumbers()
 
 ```
 
-To run the test we need to **right click** -> **Run Test(s)**.
+To run the test we need to **right click** -> `[Run Test(s)]`.
 
 When the test is compiled we can see the result in the **Test Explorer**.
 
@@ -161,7 +164,8 @@ Let's write a second test and see the following example:
 
 ```csharp
 [Test]
-public void Test_Summator_EmptyArray() {
+public void Test_Summator_EmptyArray() 
+{
   var nums = new int[] {};
   var actualSum = Summator.Sum(nums);
   var expectedSum = 0;
@@ -177,11 +181,11 @@ To be able to run this test, we have to adjust the function.
 
 
 ```csharp
-int Sum(int[] arr) {
+int Sum(int[] arr) 
+{
   int sum = 0;
-  for (int i = 0; i < arr
-    .Length; i++)
-    sum += arr[i];
+      for (int i = 0; i < arr.Length; i++)
+      sum += arr[i];
   return sum;
 }
 ```

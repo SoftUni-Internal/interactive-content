@@ -35,7 +35,7 @@ They marks a class that contains tests and methods.
 [TestFixture]
 ```
 
-The test class contains the \[Test\] annotation.
+The test class contains the `[Test]` annotation.
 
 The name of the method must be easy understandable and point what part we are testing and how.
 
@@ -43,13 +43,12 @@ The name of the method must be easy understandable and point what part we are te
 using NUnit.Framework;
 
 [TestFixture]
-public class SummatorTests {
+public class SummatorTests 
+{
   [Test]
-  public void Test_SumTwoNumbers() {
-    var sum = Sum(new int[] {
-      1,
-      2
-    });
+  public void Test_SumTwoNumbers() 
+  {
+    var sum = Sum(new int[] {1, 2});
     Assert.AreEqual(3, sum);
   }
 }
