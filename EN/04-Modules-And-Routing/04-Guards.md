@@ -70,6 +70,7 @@ This function returns a boolean - in this case, it will return true for a logged
 # Router Resolver
 
 Angular-Modules-and-routing-28-29-Angular-Router-Resolver
+Angular-Modules-and-routing-30-ActivatedRoute-example
 
 Resolvers are **data providers**.
 
@@ -77,9 +78,7 @@ They allow us to fetch data **before navigating** to the specific route.
 
 The router will wait for the data to be fetched.
 
-We call them inside the route object with the **resolve property**.
-
-Which looks like this:
+We call them inside the route object with the **resolve property**:
 
 ```js
 {
@@ -89,19 +88,13 @@ Which looks like this:
 }
 ```
 
-We can add resolvers to the route like an object or like an array.
+We can add resolvers to the route either as an object or as an array.
 
 If we have guards in the route, the resolver will wait for their result.
 
 It will determine whether to fetch the information or not, depending on the guard's return value.
 
-[/slide]
-
-[slide hideTitle]
-
-# Example of Resolver
-
-Angular-Modules-and-routing-30-ActivatedRoute-example
+## Creating a Resolver
 
 To create a Resolver, we can use Angular CLI:
 
@@ -120,7 +113,7 @@ export class TestResolver implements Resolve<boolean> {
    ): Observable<boolean> {
       return of(true);
 
-      // return a service
+      // Return a service
    }
 }
 ```
