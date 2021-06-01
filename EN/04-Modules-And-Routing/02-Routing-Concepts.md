@@ -18,13 +18,31 @@ In this example you can notice the difference between the two types of navigatio
 
 ## Server-Side
 
-
-
 [image assetsSrc="Angular-Modules-And-Routing.png" /]
+
+First, the user clicks on an **anchor** element and the browser detects the event.
+
+Then, the client creates a **GET** request to route found in the `href` tag.
+
+On the **server** side, the request is processed and a response (in the form of HTML, JSON, images, etc.) is returned.
+
+Finally, the browser loads a completely **new webpage**, discarding the previous one.
 
 ## Client-Side
 
 [image assetsSrc="Angular-Modules-And-Routing-1.png" /]
+
+Once again, the browser detects a click event, but a client-side routing library handles it.
+
+It detects that the URL is in the form of a path (e.g. `'/users/jane.michaels`) and does not perform a GET request.
+
+The library then modifies the URL using the History API, and changes the state of the given component.
+
+A front-end framework (such as Angular) processes state changes and renders the required components.
+
+If new information is reqquired, it fetches it in small chunks.
+
+Instead of downloading a whole webpage, Angular will download only the new assets, and will generate the client-ready HTML locally.
 
 [/slide]
 

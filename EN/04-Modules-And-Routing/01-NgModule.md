@@ -10,15 +10,21 @@ An Angular module is a deployment **subset** of your whole Angular application.
 
 **NgModules** help us organize our code into blocks that work as a singular unit.
 
-You can inject them into other modules or components:
+You can inject them into other modules or components.
+
+This is how the main `app.module.ts` looks.
 
 ```js
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 @NgModule({
-  imports: [TalksModule]
+  imports:      [ BrowserModule ],
+  providers:    [ Logger ],
+  declarations: [ AppComponent ],
+  exports:      [ AppComponent ],
+  bootstrap:    [ AppComponent ]
 })
-class AppModule {
-  constructor(t: TalksModule) {}
-}
+export class AppModule { }
 ```
 
 As shown above, they are ordinary objects **decorated** with an `@NgModule` decorator.
