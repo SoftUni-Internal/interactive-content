@@ -58,7 +58,7 @@ In SPAs, the browser sends an initial request and receives an almost empty HTML 
 
 What it contains however, are references to JavaScript files - the main engine of a single page app.
 
-In traditional (single page) web applications, when the route is changed, the server responds with an entirely separate webpage.
+In traditional (multi page) web applications, when the route is changed, the server responds with an entirely separate webpage.
 
 In an SPA, when the **location is changed**, the **router** will load the corresponding component, which is already stored on the client.
 
