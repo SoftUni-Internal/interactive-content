@@ -4,41 +4,45 @@
 
 # Functions
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-22-23-declaring-and-invoking-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Functions are named blocks of code. 
 
-They can be declared with a name `function functionName()` but we can also write anonymous functions, which can even be stored in variables.
+They can be declared with a name `function functionName()` but we can also write **anonymous** functions, which can even be stored in variables.
 
-The main advantage of using functions is that you write the code once, and use it as many times as you need without having to rewrite the same lines over and over again.
+The main **advantage** of using functions is that you write the **code once**, and use it **as many times** as you need without having to **rewrite** the same lines over and over again.
 
-Functions help organize code into reusable chunks that are easy to understand and easy to debug.
+Functions help organize code into **reusable** chunks that are easy to understand and easy to debug.
 
 Here is the syntax of a function:
 
 ```js
-function functionName([param1, param2, paramN]){  
- //code  
-}  
+function functionName([param1, param2, paramN]) {
+    //code  
+}
 ```
 
 Function names should be written in **camelCase**.
 
-You can have functions with zero, one, or more parameters (arguments).
+You can have functions with **zero**, **one**, or **more** parameters (arguments).
 
-By using parameters your function can utilize different input data, process that data, and output a result.
+By using parameters your function can **utilize** different input data, process that data, and output a result.
 
 ```js live
 function sayMyName(name) {
-  console.log("Your name is: ", name);
+    console.log('Your name is: ', name);
 }
-sayMyName("Akeem");
+
+sayMyName('Akeem');
 ```
 
 Functions can also return a result.
 
 ```js live
 function convertInches(inches) {
-  return inches * 2.54;
+    return inches * 2.54;
 }
+
 let inches = 10;
 console.log(convertInches(inches));
 ```
@@ -49,45 +53,47 @@ console.log(convertInches(inches));
 
 # Declaring Functions
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-24-declaring-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Functions can be declared in several ways.
 
 - Function declaration:
 
 ```js
 function fly() {
-  console.log("I'm flying!");
+    console.log("I'm flying!");
 }
 ```
-This is the most typical way to write a function and it strongly resembles the syntax in other languages.
+This is the most typical way to write a function and it **strongly** resembles the syntax in other languages.
 
-You define a function, give it a name and add zero or more parameters to work with.
+You **define** a function, **give** it a name and add **zero** or **more** parameters to work with.
 
-The code is then placed in a code block surrounded by curly brackets.
+The code is then placed in a **code block** surrounded by curly brackets.
 
 - Function expression:
 
 ```js
 const run = function() {
-  console.log("I am running!");
+    console.log('I am running!');
 }
 ```
 
-You can also store a function into a constant.
+You can also store a function into a **constant**.
 
-When using a function expression you can store a function into a variable and use it to call the function.
+When using a **function expression** you can store a function into a **variable** and use it to call the function.
 
-Functions declared in this way do not need to have a name and can be anonymous as in the previous example.
+Functions declared in this way **do not need** to have a **name** and can be **anonymous** as in the previous example.
 
 
 - Arrow function:
 
 ```js
 const saySomething = () => {
-  console.log("I said something...");
+    console.log('I said something...');
 }
 ```
 
-Arrow functions are similar to function expressions but they are even shorter to write because the function keyword is not required, and the function is anonymous.
+Arrow functions are **similar** to function expressions but they are even **shorter** to write because the function keyword is **not required**, and the function is anonymous.
 
 [/slide]
 
@@ -95,38 +101,42 @@ Arrow functions are similar to function expressions but they are even shorter to
 
 # Parameters
 
-When writing JavaScript functions with several parameters, the additional parameters will be ignored if no value is passed to them.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-25-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+When writing JavaScript functions with **several parameters**, the additional parameters will be **ignored** if no value is passed to them.
 
 
 ```js live
 function multiplyNumbers(a, b, c) {
-  console.log(a * b * c);
+    console.log(a * b * c);
 }
+
 multiplyNumbers(2, 3);
 ```
 
 The result of the above operation is `NaN` or Not a Number. 
 
-This is because we did not supply a third parameter and JavaScript gave it a value of `undefined` by default.
+This is because we did not **supply** a third **parameter** and JavaScript gave it a value of `undefined` by default.
 
-Notice how the program execution did not stop.
+Notice how the program **execution** did not stop.
 
-In languages such as Java or C# you would be able to start the program, but JavaScript gives you more flexibility and it is ultimately up to the programmer to ensure functions receive the necessary parameters to operate properly.
+In languages such as **Java** or **C#** you **would not** be able to start the program, but JavaScript gives you more **flexibility** and it is ultimately up to the programmer to **ensure** functions receive the **necessary** parameters to operate properly.
 
-We also never defined the type of data we will be passing.
+We also **never defined** the type of data we will be passing.
 
-This is another thing to watch for as any type of parameter will be accepted but your function will not work unless it is programmed to operate with that particular type.
+This is another thing to watch for as any **type** of parameter will be **accepted** but your function will not work unless it is programmed to operate with that particular type.
 
-If you pass more parameters than defined in the function declaration they are ignored with no consequence.
+If you pass **more parameters** than defined in the function declaration they are ignored with no consequence.
 
 ```js live
 function multiplyNumbers(a, b, c) {
-  console.log(a * b * c);
+    console.log(a * b * c);
 }
+
 multiplyNumbers(2, 3, 5, 10, 6000);
 ```
 
-Only the first three parameters were used and the last two were completely ignored.
+Only the first **three parameters** were used and the last two were completely **ignored**.
 
 [/slide]
 
@@ -134,32 +144,37 @@ Only the first three parameters were used and the last two were completely ignor
 
 # Default Function Parameter Values
 
-Sometimes you might want to pass default parameters to your functions.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-26-default-function-parameters-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-This is usually done when there is an exact value that is essential for the function to work properly.
+Sometimes you might want to pass **default** parameters to your functions.
+
+This is usually done when there is an exact value that is **essential** for the function to work properly.
 
 ```js live
 function convertInches(inches, value = 2.45) {
-  return inches * value;
+    return inches * value;
 }
 let inches = 10;
+
 console.log(convertInches(inches));
 ```
 When a function has a default value it can be called without any parameters.
 
 ```js live
 function printCopyright(year = 2021) {
-  console.log("Copyright ", year)
+    console.log('Copyright ', year)
 }
+
 printCopyright();
 ```
 You could also overwrite the default parameter:
 
 ```js live
 function printCopyright(year = 2021) {
-  console.log("Copyright ", year)
+    console.log('Copyright ', year)
 }
-printCopyright("Noble Co. LLC");
+
+printCopyright('Noble Co. LLC');
 ```
 
 
@@ -168,6 +183,11 @@ printCopyright("Noble Co. LLC");
 [slide hideTitle]
 
 # Problem with Solution: Largest Number
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-27-problem-largest-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-28-solutions-largest-number-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Largest Number" taskId="js-syntax-functions-statements-largest-number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -285,7 +305,8 @@ The largest number is -1.
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Circle Area
+# Problem: Circle Area
+
 [code-task title="Circle Area" taskId="js-syntax-functions-statements-circlearea" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -422,7 +443,7 @@ This calculation cannot be completed using a variable of type: boolean.
 
 
 [slide hideTitle]
-# Problem with Solution: String Length
+# Problem: String Length
 [code-task title="String Length" taskId="js-syntax-functions-statements-stringlength" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```

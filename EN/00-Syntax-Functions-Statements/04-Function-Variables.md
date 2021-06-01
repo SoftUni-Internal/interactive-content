@@ -2,7 +2,9 @@
 
 [slide hideTitle]
 
-# First-class Functions
+# First-Class Functions
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-29-first-class-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Functions in JavaScript can be used as variables for other functions. 
 
@@ -12,11 +14,13 @@ Passing a function to another function as an argument:
 
 ```js live
 function calculateResult(num1, num2) {
-  return num1 + num2;
+    return num1 + num2;
 }
+
 function printResult(calculate) {
-  console.log(calculateResult(52, 300));
+    console.log(calculateResult(52, 300));
 }
+
 printResult(calculateResult);
 ```
 
@@ -27,10 +31,11 @@ Returning a function:
 
 ```js live
 function teleport() {
-  return function() {
-    console.log("Teleporting to unknown location.")
-  }
+    return function() {
+        console.log('Teleporting to unknown location.');
+    }
 }
+
 const action = teleport();
 action();
 ```
@@ -42,38 +47,42 @@ A function that returns another function, like in the example above is called a 
 
 # Nested Functions
 
-JavaScript allows function nesting and inner functions can access variables from their parent function.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-30-nested-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The functions that are nested inside another function will not be accessible outside of that function.
+JavaScript allows **function nesting** and inner functions can **access** variables from their parent function.
 
-To understand this better, keep in mind that JavaScript treats functions as variables, so creating a function inside another function changes its scope just as the scope of a variable would change.
+The functions that are **nested** inside another function will **not be accessible outside of that function.**
+
+To understand this better, keep in mind that JavaScript treats **functions as variables**, so creating a function inside another function **changes its scope** just as the scope of a variable would change.
 
 
 ```js live
 function joinWords(word1, word2) {
-  function checkLength(word1, word2) {
-    return word1.length + word2.length;
-  }
-  return `New word: "${word1.concat(word2)}",
+    function checkLength(word1, word2) {
+        return word1.length + word2.length;
+    }
+    return `New word: '${word1.concat(word2)}',
   length: ${checkLength(word1,word2)}`;
 }
+
 console.log(joinWords('one', 'two'));
 ```
 
 In the last example, `joinWords()` is **the outer function** or parent function, while `checkLength()` is the **inner function** or child function.
 
-The child function has access to the arguments passed to the parent function (word1, word2) but its scope begins and ends in the parent function, it will not be accessible outside of it.
+The child function has **access** to the arguments passed to the **parent** function (word1, word2) but its scope **begins** and ends in the parent function, it will not be **accessible** outside of it.
 
 Attempting to access the inner function outside of the scope of the parent results in a **Reference Error**:
 
 ```js live
 function joinWords(word1, word2) {
-  function checkLength(word1, word2) {
-    return word1.length + word2.length;
-  }
-  return `New word: "${word1.concat(word2)}",
+    function checkLength(word1, word2) {
+        return word1.length + word2.length;
+    }
+    return `New word: '${word1.concat(word2)}',
   length: ${checkLength(word1,word2)}`;
 }
+
 checkLength('words', 'like');
 ```
 [/slide]
@@ -82,13 +91,15 @@ checkLength('words', 'like');
 
 # Hoisting
 
-Hoisting in real life is the act of raising or lifting something. 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-31-hoisting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Similarly, hoisting in JavaScript is a mechanism that ensures that a variable or function can be used before declaration.
+Hoisting in real life is the act of **raising** or **lifting** something. 
 
-This does not mean that you do not need to declare it but it can be declared on a line that is further down than and JavaScript will "pull" it to the top so that it can be used.
+Similarly, hoisting in JavaScript is a mechanism that ensures that a **variable** or **function** can be **used** before **declaration**.
 
-The benefit of hoisting is that we can use functions anywhere in the code and not just below the line where they are declared. 
+This does not mean that you **do not need to declare it** but it can be **declared** on a line that is further **down** than and JavaScript will "**pull**" it to the top so that it **can be used.**
+
+The benefit of hoisting is that we can use functions **anywhere** in the code and **not just below the line** where they are declared. 
 
 
 [/slide]
@@ -97,6 +108,8 @@ The benefit of hoisting is that we can use functions anywhere in the code and no
 [slide hideTitle]
 
 # Hoisting Variables
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-32-hoisting-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Variables declarations using the `var` keyword are hoisted:
 
@@ -131,18 +144,19 @@ console.log(length); 
 const length;
 ```
 
-Hoisting does not change the scope of variables and functions.
+Hoisting does not **change the scope** of variables and functions.
 
-If a variable is declared within a function it will only be hoisted to the top of that function and will not be accessible outside of the function.
+If a variable is declared **within a function** it will only be hoisted to the **top of that function** and will not be accessible outside of the function.
 
 This will work:
 
 ```js live
 function speak() {
-  words = 'I was hoisted!';
-  console.log(words);
-  var words;
+    words = 'I was hoisted!';
+    console.log(words);
+    var words;
 }
+
 speak();
 ```
 
@@ -152,29 +166,34 @@ speak();
 
 # Hoisting Functions
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-33-hoisting-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Functions can also be called before declaring them.
 
 ```js live
-walk()
+walk();
+
 function walk() {
-  console.log("Walking briskly...");
+    console.log('Walking briskly...');
 }
 ```
 
 However, **hoisting works only for function declarations** and **will not work** if you write a function using a **function expression**.
 
 ```js live
-walk()
+walk();
+
 let walk = function() {
-  console.log("Walking briskly...");
+    console.log('Walking briskly...');
 }
 ```
 The above results in a **ReferenceError**.
 
 ```js live
-walk()
+walk();
+
 var walk = function() {
-  console.log("Walking briskly...");
+    console.log('Walking briskly...');
 }
 ```
 
@@ -184,6 +203,11 @@ This will also not work and will result in a **TypeError** because the **walk** 
 
 [slide hideTitle]
 # Problem with Solution: Aggregate Elements
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-34-problems-sum-inverse-concatenate-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-35-solution-sum-inverse-concatenation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Aggregate Elements" taskId="js-syntax-functions-statements-aggregateelements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```

@@ -4,6 +4,8 @@
 
 # Dynamic Programming Language
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-3-4-Introduction-to-java-script-dynamic-programming-language-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 JavaScript is what is known as a **dynamic programming language**.
 
 This type of language is more flexible compared to **static programming languages** because the programmer can pass parameters during the runtime of the program, and they do not need to define the type of variable in advance.
@@ -36,22 +38,24 @@ lastPlaceVisited = 13;
 console.log(lastPlaceVisited);
 ```
 
-If you run the code from the example above, you will see that JavaScript accepts the assignment of a numerical value even though the **lastPlaceVisited** variable was first used for storing text.
+If you run the code from the example above, you will see that JavaScript **accepts** the assignment of a numerical value even though the **lastPlaceVisited** variable was first used for storing text.
 
-Ultimately, it is the programmer's responsibility to ensure that user input does not cause errors in the application and is handled correctly, regardless of type.
+Ultimately, it is the programmer's **responsibility** to **ensure** that user input **does not cause** errors in the application and is handled correctly, regardless of type.
 
 [/slide]
 
 [slide hideTitle]
 # Data Types
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-5-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can divide the types of data available in JavaScript into two groups - **primitives** and **reference** types. 
 
-A variable that is assigned a primitive data type value, holds the value of the data directly, and contains no additional properties or methods.
+A variable that is assigned a **primitive data type value**, holds the value of the data **directly**, and contains no additional properties or methods.
 
 Variables that contain **Reference** data such as **Objects** actually hold references to the memory locations of the data stored in them.
 
-Here is a table containing the seven primitive data types in JavaScript.
+Here is a table containing the s**even primitive data types** in JavaScript.
 
 | **Type** | **Description** |
 | --- | --- |
@@ -125,9 +129,11 @@ We are ready to start using Visual Studio Code.
 
 # Identifiers
 
-Identifiers are sequences of characters in the code used to identify a particular variable, function, or property.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-6-Identifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When you are giving a name to a variable, you are assigning it a unique identifier.
+Identifiers are **sequences** of characters in the code used to **identify** a particular variable, function, or property.
+
+When you are giving a name to a variable, you are **assigning** it a unique identifier.
 
 Here are some rules that apply to identifiers:
 
@@ -144,7 +150,9 @@ Valid identifiers:
 Invalid identifier:
 - `var 2price`
 
-Identifiers are not the same as strings because a string is, while identifiers are considered part of the code.
+Identifiers are not the **same as strings** because a string **contains data**, while identifiers are **considered** part of the code. 
+
+For example, "**Good morning**" stored in a string called **greeting** is data of type string, while greeting is the **name of the string** - the identifier.
 
 [/slide]
 
@@ -152,11 +160,13 @@ Identifiers are not the same as strings because a string is, while identifiers a
 
 # Variable Values
 
-Every variable stores a value inside it. 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-7-8-variable-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Primitive values are stored directly in the variables, while variables that are assigned non-primitive values, hold references to those values.
+Every variable **stores** a value inside it. 
 
-A variable that has been declared with no value assigned to it will contain a value of `undefined` by default.
+Primitive values are stored **directly in the variables**, while variables that are assigned non-primitive values, hold **references** to those values.
+
+A variable that has been declared with **no value assigned to it** will contain a value of `undefined` by default.
 
 We can demonstrate it with some code:
 
@@ -176,10 +186,10 @@ console.log(topScore);
 Variables that are not defined at all are considered `Undeclared` and trying to access such variables results in a **Reference Error**.
 
 In summary variables can contain:
-- primitive data values
-- non-primitive data values (references in memory)
-- undeclared
-- undefined 
+- Primitive data values
+- Non-primitive data values (references in memory)
+- Undeclared
+- Undefined 
 
 ## Declaring Variables
 
@@ -189,17 +199,17 @@ Each of them serves a different purpose.
 
 **let** is used for declaring **reassignable** variables and is **block-scoped**. 
 
-Reassignable means that you can change the value of the variable after assigning.
+**Reassignable** means that you can change the value of the variable **after** assigning.
 
-Block-scoped means that the variable will be accessible only inside the block where it is declared. 
+Block-scoped means that the variable will be **accessible only inside the block where it is declared.** 
 
 ```js live
 {
-  let profession = "Lawyer";
-  console.log(profession);
+    let profession = 'Lawyer';
+    console.log(profession);
 }
 
-console.log(profession)
+console.log(profession);
 ```
 
 The above example shows the concept of **block-scope** as the **profession** variable is not available outside the code block; attempting to log it to the console results in an error.
@@ -217,11 +227,11 @@ The **var** is similar to **let** but it is **not block-scoped**, meaning that t
 
 ```js live
 {
-  var profession = "Lawyer";
-  console.log(profession);
+    var profession = 'Lawyer';
+    console.log(profession);
 }
 
-console.log(profession)
+console.log(profession);
 ```
 
 Last time we attempted this, we could not log the value of **profession** but since we used **var** which has a bigger scope, this works fine.
@@ -234,11 +244,11 @@ Declaring variables with **let** is generally considered safer as their scope is
 
 ```js live
 function announceProfession() {
-  var profession = "Software Architect";
-  console.log(profession);
+    var profession = 'Software Architect';
+    console.log(profession);
 }
 
-console.log(profession)
+console.log(profession);
 ```
 
 The above results in a **ReferenceError** because **var** is **function-scoped**.
@@ -248,6 +258,8 @@ The above results in a **ReferenceError** because **var** is **function-scoped**
 [slide hideTitle]
 
 # Variable Scopes
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-9-variable-scopes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are a few different types of variable scopes in JavaScript.
 
@@ -260,21 +272,21 @@ var subject = 'Applied Physics'
 console.log(subject); //Applied Physics
 
 function getSubject() {
-  console.log(subject); //still accessible
+    console.log(subject); //still accessible
 }
 
-getSubject();   
+getSubject();  
 ```
 
 - **Function scope** - this is the code area within a function declaration; function-scope variables are available only within the function declared
 
 ```js live
 function displayName() {
-  var name = 'Leon';
-  console.log('functions-scoped: ', leon);
+    var name = 'Leon';
+    console.log('functions-scoped: ', leon);
 }
 
-displayName(); 
+displayName();
 console.log(name); //error
 ```
 
@@ -285,15 +297,15 @@ In the above example, logging the **name** from inside the function works, but t
 
 ```js live
 function checkStatus() {
-  if (true) {
-    let status1 = 'DISCONNECTED'; 
-    var status2 = 'OK'; 
-    const status3 = 'DENIED'; 
+    if (true) {
+        let status1 = 'DISCONNECTED';
+        var status2 = 'OK';
+        const status3 = 'DENIED';
 
-  }
-  //console.log(status1);
-  console.log(status2);
-  //console.log(status3);
+    }
+    //console.log(status1);
+    console.log(status2);
+    //console.log(status3);
 }
 
 checkStatus();
@@ -303,7 +315,7 @@ Run the code above and you should see the value of **status2** printed to the co
 
 This works because **var** is function scoped.
 
-Now remove the comments for **status1** or **status3** (the ``//`` in front of the ``console.log()`` function), and run the code again.
+Now remove the comments for **status1** or **status3** (the `//` in front of the `console.log()` function), and run the code again.
 
 This immediately causes an error because **let** and **const** are both block scoped and can only be used within the if code block. 
 
@@ -313,13 +325,15 @@ This immediately causes an error because **let** and **const** are both block sc
 
 # Dynamic Typing
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-10-dynamic-typing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Because JavaScript is a dynamically typed language, the declared variables are **not directly associated** with a particular value type.
 
 As long as you did not declare a variable with the **const** keyword, any variable can be assigned and re-assigned 
 different values of any type.
 
 ```js live
-let myVariable = "Gone with the wind"; //String
+let myVariable = 'Gone with the wind'; //String
 console.log(myVariable);
 
 myVariable = 15; //Turns into a number
@@ -329,9 +343,9 @@ myVariable = false; //And now a boolean value
 console.log(myVariable);
 ```
 
-Just because you can store any type of value in a single variable, it does not mean you should.
+Just because you can store **any type of value** in a single variable, it does not mean you **should**.
 
-Most of the time this is considered a bad practice and should be avoided as each variable should serve one purpose.
+Most of the time this is considered a **bad practice** and should be **avoided** as each variable should serve one purpose.
 
 
 [/slide]
