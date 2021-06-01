@@ -2890,9 +2890,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that aggregates the logs of data and print for each user the **total duration** of his sessions and a **list of unique IP addresses** in format 
+You are given a sequence of access logs in the following format:
 
-`< IP > < user > < duration >`.
+`< IP > < user > < duration >`
 
 **For example:**
 
@@ -2904,9 +2904,9 @@ Create a program that aggregates the logs of data and print for each user th
 - 50.118.81 alex 46
 - 50.118.81 alex 4
 
-Write a program to aggregate the logs data and print **for each user** the **total duration** of his sessions and a **list of unique IP addresses** in format 
+Create a program that aggregates the logs of data and prints for each user the **total duration** of their sessions and a **list of unique IP addresses** in the format:
 
-`< user > < duration > [ < IP1 >, < IP2 >, ...]`. 
+`< user > < duration > [ < IP1 >, < IP2 >, ...]` 
 
 Order the **users alphabetically**. 
 
