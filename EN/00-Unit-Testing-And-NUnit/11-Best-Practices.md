@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Naming the Test Methods
+## Naming the Test Methods
 
 [video src="https://videos.softuni.bg/hls/PROFESSIONAL-MODULES/QA/2021-04-QA-Automation/02.Unit-Testing/12.best-practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -43,12 +43,7 @@ depositNegativeShouldNotAddMoney() {}
 transferSubtractsFromSourceAddsToDestAccount() {}
 ```
 
-[/slide]
-
-
-[slide hideTitle]
-
-# Automated Tests: Good Practices
+## Automated Tests: Good Practices
 
 We must write reliable and trustworthy tests.
 
