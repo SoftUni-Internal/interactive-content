@@ -3,13 +3,15 @@
 [slide hideTitle]
 
 # Lesson Content
+js-angular-forms-1-2-Directives-and-Forms-and-table-of-contents
 
 ## In this lesson you will learn:
 
 **1. Directives**
-- Attribute Directives
-- Structural Directives
-- Building An Anttribute Directive
+- Overview and usage
+- Attribute and structural directives
+- How to implement Renderer2
+- The `HostBinding` decorator
 
 **2. Handling Forms**
 - Template Driven Forms
