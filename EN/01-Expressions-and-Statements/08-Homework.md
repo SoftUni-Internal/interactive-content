@@ -1122,7 +1122,7 @@ The vegetables cost - $0.194 \* 10kg = $1.94
 The fruits cost - $19.4 \* 10kg  = $194
 [/hint]
 [hint]
-Total - $195.94 = $174.39
+Total - $195.94 = €174.39
 [/hint]
 [/hints]
 
