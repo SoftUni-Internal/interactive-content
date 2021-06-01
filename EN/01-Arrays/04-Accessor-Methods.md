@@ -4,6 +4,8 @@
 [slide hideTitle]
 # Definition
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-22-23-Accessor-Methods-Join -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Аccessor methods** return a **new array** without **changing** the **original** one.
 
 ## Join
@@ -22,6 +24,8 @@ console.log(arr.join('@@'));
 
 [slide hideTitle]
 # IndexOf
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-24-Index-of-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.indexOf()` method returns the **index at which the given value is stored**.
 
@@ -44,7 +48,9 @@ console.log(indexOfNick);
 [slide hideTitle]
 # Concat
 
-The `.concat()` method is used to **merge** two or more arrays **without** changing any of them.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-25-Concat-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+The `array.concat()` method is used to **merge** two or more arrays **without** changing any of them.
 
 ``` js live
 const num1 = [1, 2, 3];
@@ -59,6 +65,8 @@ console.log(numbers);
 [slide hideTitle]
 
 # Slice
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-27-Slice-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.slice()` method **returns** the **selected elements** in an array as a **new array object**.
 
@@ -191,6 +199,8 @@ biggerHalf([ -1, -10, -4, -7 ])
 
 [slide hideTitle]
 # Includes
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-26-Includes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.includes()` method returns **true** if the given **value** is a **part of the array**.
 

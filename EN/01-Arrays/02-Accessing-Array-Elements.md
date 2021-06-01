@@ -5,6 +5,8 @@
 
 # Accessing Array Elements by Index
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-8-9-10-Accessing-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In JavaScript, elements of an array are accessed by their **indexes**:
 
 ```js live
@@ -50,6 +52,8 @@ A dot notation with numbers can **not be used** to retrieve an array's element.
 [slide hideTitle]
 
 # Rest Operator
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-11-REST-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The rest operator allows us to **use** an indefinite amount of array or object elements.
 

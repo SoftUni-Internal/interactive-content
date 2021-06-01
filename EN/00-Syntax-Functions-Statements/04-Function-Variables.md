@@ -230,7 +230,9 @@ function adapter(input, code) {
 
 ## Description
 
-Create a program that performs different operations on an array of elements. Implement the following operations:
+Create a program that performs different operations on an array of elements. 
+
+Implement the following operations:
 
 - **Sum(a)** - calculates the sum of all elements from the input array
 

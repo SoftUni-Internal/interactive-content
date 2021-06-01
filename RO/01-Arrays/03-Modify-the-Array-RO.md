@@ -3,17 +3,27 @@
 
 [slide hideTitle]
 
+# Mutator Methods
+ 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-12-Modify-the-array-Mutator-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+The **methods** used to modify arrays in JavaScipt are similar to the ones in the **Java stream**.
+
+When any of the following **methods** is applied, it will **change** (modify) the original array. 
+[/slide]
+
+[slide hideTitle]
 # Add Elements
 
-To modify arrays in JavaScipt **methods** similar to the methods that come from the **Java stream**, can be used.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-14-Push-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When any of the following **method** is applied, it will **change** (modify) the original array. 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-16-Unshift-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Push
 
-The `array.push()` method adds **one or more elements** to the end of an array and **returns** the new **length** of the array.
+The `array.push()` method adds **one or more elements** to the end of an array and **returns** its **new length**.
 
-This method is similar to the `STACK.push(E element)` in Java.
+It is similar to the `STACK.push(E element)` method in Java.
 
 ```js live
 let nums = [10, 20, 30, 40, 50, 60, 70];
@@ -25,9 +35,10 @@ let insertElement = nums.push(80);
 console.log(insertElement);
 console.log(nums);
 ```
+
 ## Unshift
 
-The `array.unshift()` adds **one or more elements** to the **beginning** of an array and returns the **new length** of the array.
+The `array.unshift()` adds **one or more elements** to the **beginning** of an array and returns its **new length**.
 
 ```js live
 let nums = [40, 50, 60];
@@ -45,15 +56,15 @@ console.log(nums);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție: Negative or Positive Numbers
+# Problem with Solution: Negative or Positive Numbers - DO NOT TRANSLATE IN RO
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05. JS-Fundamentals-Arrays-Advanced-12--negative-posivite-numbers-Solution-ONLY-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-12-problem-and-solution-negative-posivite-numbers-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Negative or Positive Numbers" taskId="java-path-js-advanced-arrays-Negative-or-Positive-Numbers"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
 function negativePositive(input){
-  // Scrieți codul dvs. aici
+  // Write your code here
 }
 
 ```
@@ -68,18 +79,19 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Descriere
+# Description
 
-Scrieți o funcție care procesează **toate elementele unei matrice unul câte unul** și **creează o matrice nouă**.
+Write a function that processes **all the elements of an array one by one** and **creates a new array**. 
 
-Adăugați fiecare element negativ la început și fiecare element pozitiv (sau 0) la sfârșitul noii matrice.
+Append each **negative** element to the **beginning** and each **positive** (or 0) element to the **end** of the new array. 
 
-**Intrarea** este dată ca **o matrice de șiruri**, care conțin **numere**.
+The **input** comes as an **array** of string elements representing **numbers**. 
 
-**Ieșirea** trebuie imprimată pe consolă, fiecare element pe **o nouă linie**.
+The **output** has to be **printed to the console** with each element on a **new line**.
 
-## Exemplul Unu
-| **Intrare** | **Ieșire** |
+
+## Example One
+| **Input** | **Output** |
 | --- | --- |
 |negativePositive([7, -2, 8, 9]) | \-2 |
 | | 7 |
@@ -87,8 +99,8 @@ Adăugați fiecare element negativ la început și fiecare element pozitiv (sau 
 | | 9 |
 
 
-## Exemplul Doi
-| **Intrare** | **Ieșire** |
+## Example Two
+| **Input** | **Output** |
 | --- | --- |
 |negativePositive([3, -2, 0, -1])  | \-1 |
 | | \-2 |
@@ -97,12 +109,12 @@ Adăugați fiecare element negativ la început și fiecare element pozitiv (sau 
 
 [hints]
 [hint]
-Utilizați `unshift()` pentru a adăuga un element pe prima poziție.
-[/hint] 
+Use `unshift()` to add an element at the **first** position.
+[/hint] 
 [hint]
-Folosiți `push()` pentru a adăuga un element pe ultima poziție.
-[/hint] 
-[/hints] 
+Use `push()` to add an element at the **last** position.
+[/hint] 
+[/hints] 
 
 [/task-description]
 [tests]
@@ -198,13 +210,21 @@ negativePositive([\-2, 3, 0, 5, \-6, 0, 8])
 
 [slide hideTitle]
 
-# Remove Elements
+# Removing Elements
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-13-Pop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-15-Shift-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Pop
 
-The `array.pop()` method **removes** and **returns** the last element from an array and also decreases the **length** of the collection.
+The `array.pop()` method **removes** and **returns** the last element from an array. 
 
-This method is similar to the `STACK.pop()` in Java.
+It decreases the **length** of the collection.
+
+This method is similar to `STACK.pop()` in Java.
+
+Here is an example:
 
 ```js live
 let nums = [10, 20, 30, 40, 50, 60, 70];
@@ -220,7 +240,11 @@ console.log(nums);
 
 ## Shift
 
-The `array.shift()` method **removes** the **first** element from an array, **returns** that **removed element**, and changes the length of the array.
+The `array.shift()` method **removes** the **first** element from an array and **returns it**.
+
+It decreases the **length** of the array.
+
+This is how to use it:
 
 ```js live
 let nums = [10, 20, 30, 40, 50, 60, 70];
@@ -235,16 +259,16 @@ console.log(nums);
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluție: Sum First Last
+# Problem with Solution: Sum First Last
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-problem-1-solution-sum-first-last-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-problem-1-solution-sum-first-last-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum First Last" taskId="java-path-js-advanced-arrays-Sum-First-Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function sumFirstLast(input){
- // Scrieți codul dvs. aici
+  // Write your code here
 }
 
 ```
@@ -259,16 +283,16 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Descriere
+# Description
 
-Scrieți o funcție care **calculează** și **imprimă** suma primului și ultimului element al unei matrice.
+Write a function that **calculates** and **prints** the **sum** of the **first and the last elements** of an array. 
 
-**Intrarea** este dată ca o **matrice** de **șiruri**, care conțin **numere**.
+The **input** comes as an **array** of **string** elements representing **numbers**.
 
-**Ieșirea** trebuie să fie **valoarea returnată de către funcție**.
+The **output** should be the **value, which is returned from the function**. 
 
-## Exemple
-|**Intrare**|**Ieșire** |
+## Examples
+| **Input** | **Output** |
 | --- | --- |
 |sumFirstLast(['20', '30', '40']) | 60 |
 |sumFirstLast(['5', '10']) | 15 |
@@ -340,9 +364,11 @@ sumFirstLast(['5', '10'])
 
 # Splice
 
-The `array.splice()` **changes** the contents of an array by **deleting**, **adding**, or **replace** elements to a specific index.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-17-Splice-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-This method is similar to the `remove(int index)` and `ArrayList.addAll()` methods in Java, but in Java there are is **no option for removing** multiple elements.
+The `array.splice()` method **changes** the contents of an array by **deleting**, **adding**, or **replacing** elements at a specific index.
+
+It is similar to the `remove(int index)` and `ArrayList.addAll()` methods in Java but with the additional option of **removing multiple elements**.
 
 ``` js live
 let nums = [1, 3, 4, 5, 6];
@@ -360,21 +386,23 @@ let el = nums.splice(2, 1); //Only two arguments when deleting
 console.log(nums); 
 console.log(el);
 ```
-In first example `array.splice()` receives **three** arguments:
+
+In the first example, `array.splice()` receives **three** arguments:
 
 - First argument: **starting index** of the operation
-- Second argument: **how many elements to delete**
+- Second argument: **number of elements to delete**
 
-When **deleting** elements, there is **no need** for passing the third argument.
+When **deleting** elements, there is **no need** to pass the third argument.
 
-- Third element: to pass **three** or **more** elements and those are the elements that will be **added** to the given index
-
+- Third argument: the elements that will be **added** to the given index
 
 [/slide]
 
 [slide hideTitle]
 
 # Fill
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-18-Fill-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.fill()` fills all the **elements** of an array from a **start** index to an **end** index with a static value.
 
@@ -399,9 +427,11 @@ console.log(fruits.fill('blueberry'));
 
 # Reverse
 
-The `array.fill()` reverses the array, where the **first** array element becomes the **last**, and the **last** array element becomes the **first**.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-19-Reverse-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In Java, **there is no** similar method, rather a **custom** reverse method should be **created**.
+The `array.reverse()` method reverses an array, where the **first** array element becomes the **last**, and the **last** array element becomes the **first**.
+
+In Java, **there is no** similar method.
 
 ```js live
 let arr = [1, 2, 3, 4];
@@ -412,11 +442,13 @@ console.log(arr);
 [/slide]
 
 [slide hideTitle]
-# Sort
+# Sorting Strings
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-20-21-Sort-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.sort()` method **sorts the items** of an array.
 
-This method is similar to the `Stream sorted()` method in Java.
+It is similar to the `Stream sorted()` method in Java.
 
 Depending on the provided **compare function**, the sort order can either be **alphabetic** or **numeric**, and either **ascending** (up) or **descending** (down). 
 
@@ -424,9 +456,9 @@ By default, the `array.sort()` method sorts the values as **strings in alphabeti
 
 If we want to sort numbers or other values, we need to provide a correct **compare function.** 
 
-In this example, we have an array of names. 
+In the following example, we have an array of names. 
 
-If we call the `array.sort()` method directly, without passing a **compare function**, the method will work correctly - it will sort the names in ascending alphabetic order.
+If we call the `array.sort()` method directly, without passing a **compare function**, the method will sort the names in ascending alphabetic order.
 
 ```js live
 let names = ['Peter', 'George', 'Mary'];
@@ -434,8 +466,12 @@ names.sort();
 
 console.log(names); 
 ```
+[/slide]
 
-However, if we have an array that contains numbers, not strings, the result will be **unexpected and incorrect**. 
+[slide hideTitle]
+# Sorting Numbers
+
+However, if we have an array that contains numbers, the result will be **unexpected and incorrect**. 
 
 Without a passed **compare function**, the `array.sort()` method will treat the array as an array of strings, not as an array of numbers.
 
@@ -448,3 +484,4 @@ numbers.sort();
 console.log(numbers);
 ```
 [/slide]
+

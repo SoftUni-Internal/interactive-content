@@ -5,6 +5,8 @@
 
 # Nested Arrays in JavaScript
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-38-39-Nested-Arrays-in-JS-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The arrays we have been using so far only had **one column** of data.
 
 But we can set up an array to hold more than one column, called a **multi-dimensional array** or a matrice.
@@ -43,6 +45,8 @@ console.log(arr[2][0])
 
 # Looping Through a Nested Array
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-40-Looping-through-a-nested-array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can print elements of nested arrays with multiple loops.
 
 Take a look at the following example:
@@ -69,6 +73,8 @@ In that function, another **forEach** is **used** to iterate through every **ele
 [slide hideTitle]
 
 # Problem: Diagonal Sums
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-41-Problem-Diagonal-Sums-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Diagonal Sums" taskId="java-path-js-advanced-arrays-Diagonal-Sums" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

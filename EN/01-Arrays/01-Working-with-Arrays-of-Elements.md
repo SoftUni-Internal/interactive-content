@@ -3,6 +3,8 @@
 [slide hideTitle]
 # What is an Array?
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-5-What-is-an-array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 You have already learned about the **different** types of collections such as **arrays**, **lists**, **stacks**, **queues**, and how to **modify** them by using methods from **java streams**.
 
 In this course, you are going to learn about the **two most important data structures** in JavaScript:
@@ -42,6 +44,8 @@ const numbers = [10, 20, 30, 40, 50];
 
 [slide hideTitle]
 # Specifics of JavaScipt Arrays
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-3-4-Working-with-arrays-of-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In Java, when an array is **initialized**, its **data type** and **length** must be specified.
 
@@ -99,6 +103,8 @@ console.log(`The new element on index 1 is: ${elements[1]}`);
 [slide hideTitle]
 # Arrays of Different Types
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-6-Arrays-of-different-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Arrays in JavaScript can hold **different** types of data:
 
 This is an array of **numbers**:
@@ -119,6 +125,8 @@ let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
 
 [slide hideTitle]
 # Arrays Indexation
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-7-Array-Indexation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Setting** or **accessing** elements with **non-integers** and **bracket** notation (or dot notation) will **not work**.
 

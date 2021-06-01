@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Summary
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-44-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## In this lesson you learned:
 
 - Arrays are list-like objects
@@ -10,14 +12,16 @@ let furits = ['Orange', 'Peach', 'Grapes']
 ```
 
 - Elements are accessed using their index number
+
 ```js
 let furits = ['Orange', 'Peach', 'Grapes']
 
 console.log(fruits[0]) // Orange
 ```
+
 - Mutator methods - methods that change the original array
    - `array.pop()`, `array.push()`, `array.shift()`, `array.unshift()`, `array.Splice()`, `array.fill()`, `array.reverse()`, `array.sort()`
-- Accessor methods - methods that return new array
+- Accessor methods - methods that return a new array
   - `array.join()`, `array.IndexOf()`, `array.concat()`, `array.includes()`, `array.slice()`
 - Looping through arrays 
 ```js

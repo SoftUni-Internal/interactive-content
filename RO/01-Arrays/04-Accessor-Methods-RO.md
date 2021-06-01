@@ -4,11 +4,15 @@
 [slide hideTitle]
 # Definition
 
-When any of the following **methods** are applied, they will not **change** (modify) the **original** array, rather they return a **new object**, and the original array stays **unchanged**.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-22-23-Accessor-Methods-Join -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+**Аccessor methods** return a **new array** without **changing** the **original** one.
 
 ## Join
 
-The `array.join()` creates a string by **concatenating string representations of all elements**, using the specified in the brackets string as a separator:
+The `array.join()` method creates a string by **concatenating string representations of all elements**.
+
+It receives a **string** argument, which is used as a **separator**.
 
 ``` js live
 let arr = [10, 20, 30];
@@ -21,9 +25,11 @@ console.log(arr.join('@@'));
 [slide hideTitle]
 # IndexOf
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-24-Index-of-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `array.indexOf()` method returns the **index at which the given value is stored**.
 
-It returns the **special value** \-1 if the value is **not found**. 
+It returns the **special value** \-1 if the element is **not found**. 
 
 This method is similar to the `List.indexOf` in Java.
 
@@ -42,7 +48,9 @@ console.log(indexOfNick);
 [slide hideTitle]
 # Concat
 
-The `concat()` method is used to **merge** two or more arrays and **does not change** the existing arrays, but instead returns a **new array**.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-25-Concat-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+The `array.concat()` method is used to **merge** two or more arrays **without** changing any of them.
 
 ``` js live
 const num1 = [1, 2, 3];
@@ -58,11 +66,13 @@ console.log(numbers);
 
 # Slice
 
-The `array.slice()` method **returns** the **selected elements** in an array, as a **new array object**.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-27-Slice-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-It selects the elements starting at the given **start index** and ends at, but does not include, an optional **end index**. 
+The `array.slice()` method **returns** the **selected elements** in an array as a **new array object**.
 
-This method is similar to the `List.subList; Stream.skil + limit` in Java.
+It selects the elements starting from the given **start index** to the **end index** without including the last element.  
+
+It is similar to the `List.subList; Stream.skil + limit` method in Java.
 
 ``` js live
 let myArray = ['one', 'two', 'three', 'four', 'five'];
@@ -74,7 +84,7 @@ console.log(sliced);
 console.log(myArray.slice(2,4));
 ```
 
-Slice can **receive** a **negative** number as a parameter:
+This method can **receive** a **negative** number as an argument:
 
 ``` js live
 let myArray = ['one', 'two', 'three', 'four', 'five'];
@@ -83,7 +93,8 @@ console.log(myArray.slice(-2));
 console.log(myArray.slice(2, -1));
 ```
 
-In this example when **-2 is passed** to the `slice()`, it takes the **last** "n" elements of the array.
+In this example, when **-2 is passed** as an argument, the method takes the **last two** elements of the array.
+
 [/slide]
 
 [slide hideTitle]
@@ -188,6 +199,8 @@ biggerHalf([ -1, -10, -4, -7 ])
 
 [slide hideTitle]
 # Includes
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-26-Includes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.includes()` method returns **true** if the given **value** is a **part of the array**.
 

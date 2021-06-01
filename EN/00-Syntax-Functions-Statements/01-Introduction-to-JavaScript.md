@@ -62,8 +62,8 @@ Here is a table containing the s**even primitive data types** in JavaScript.
 | String | Represents text |
 | Number | Represents numeric values |
 | Boolean | A logical data type that contains either `true` or `false` |
-| undefined | Assigned automatically to variables at the time of their declaration |
-| null | Represents the intentional absence of any object value  |
+| Undefined | Assigned automatically to variables at the time of their declaration |
+| Null | Represents the intentional absence of any object value  |
 | BigInt | Used for working with very big integers, and it is limited by the amount of memory available in the system |
 | Symbol | Represents a unique identifier. Each time a symbol value is created, an anonymous unique value is created. |
 

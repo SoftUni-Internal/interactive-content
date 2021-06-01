@@ -3,11 +3,21 @@
 
 [slide hideTitle]
 
-# Add Elements
+# Mutator Methods
+ 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-12-Modify-the-array-Mutator-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **methods** used to modify arrays in JavaScipt are similar to the ones in the **Java stream**.
 
 When any of the following **methods** is applied, it will **change** (modify) the original array. 
+[/slide]
+
+[slide hideTitle]
+# Add Elements
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-14-Push-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-16-Unshift-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Push
 
@@ -202,6 +212,10 @@ negativePositive([\-2, 3, 0, 5, \-6, 0, 8])
 
 # Removing Elements
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-13-Pop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-15-Shift-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## Pop
 
 The `array.pop()` method **removes** and **returns** the last element from an array. 
@@ -350,6 +364,8 @@ sumFirstLast(['5', '10'])
 
 # Splice
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-17-Splice-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `array.splice()` method **changes** the contents of an array by **deleting**, **adding**, or **replacing** elements at a specific index.
 
 It is similar to the `remove(int index)` and `ArrayList.addAll()` methods in Java but with the additional option of **removing multiple elements**.
@@ -386,6 +402,8 @@ When **deleting** elements, there is **no need** to pass the third argument.
 
 # Fill
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-18-Fill-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `array.fill()` fills all the **elements** of an array from a **start** index to an **end** index with a static value.
 
 In Java, **there is no** similar method.
@@ -409,6 +427,8 @@ console.log(fruits.fill('blueberry'));
 
 # Reverse
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-19-Reverse-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `array.reverse()` method reverses an array, where the **first** array element becomes the **last**, and the **last** array element becomes the **first**.
 
 In Java, **there is no** similar method.
@@ -422,7 +442,9 @@ console.log(arr);
 [/slide]
 
 [slide hideTitle]
-# Sort
+# Sorting Strings
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-20-21-Sort-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.sort()` method **sorts the items** of an array.
 
@@ -444,6 +466,10 @@ names.sort();
 
 console.log(names); 
 ```
+[/slide]
+
+[slide hideTitle]
+# Sorting Numbers
 
 However, if we have an array that contains numbers, the result will be **unexpected and incorrect**. 
 
@@ -458,3 +484,4 @@ numbers.sort();
 console.log(numbers);
 ```
 [/slide]
+

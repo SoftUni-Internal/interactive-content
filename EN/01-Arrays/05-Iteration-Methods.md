@@ -3,6 +3,8 @@
 [slide hideTitle]
 # ForEach
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-28-29-Iteration-Methods-For-each-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `array.forEach()` method **executes** a provided function **once** for each array element.
 
 It is similar to the `Stream.forEach()` method in Java.
@@ -43,6 +45,8 @@ Once executed it will **go through the entire array**, and if it is very big, it
 [slide hideTitle]
 # Some
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-32-Some-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `array.some()` method checks whether at **least one element in the array** meets the **requirements** set by the **given** function (**predicate**) and returns a boolean value.
 
 It is similar to the `Stream.anyMatch()` method in Java.
@@ -64,6 +68,8 @@ console.log(array.some(isEven));
 [slide hideTitle]
 # Find
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-31-Find-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `array.find()` returns the **first element** in the array that **satisfies** the provided condition or undefined if there is none.
 
 Here is an example:
@@ -82,6 +88,8 @@ console.log(found);
 [slide hideTitle]
 # Filter
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-30-Filter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `array.filter()` method returns a new array only with elements, which **satisfy** a given condition without **changing** the original.
 
 It is similar to the `Stream.filter()` method in Java.
@@ -98,6 +106,8 @@ console.log(filterNumbers);
 
 [slide hideTitle]
 # Map
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-33-Map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.map()` method creates a **new array** with the **results** of calling a provided function on **every element** in the calling array.
 
@@ -125,11 +135,13 @@ console.log(numbers);
 
 ```
 
-You can read more about the "map" function in mathematics [here](https://en.wikipedia.org/wiki/Map_(mathematics)).
+You can read more about the `array.map()` function in mathematics [here](https://en.wikipedia.org/wiki/Map_(mathematics)).
 [/slide]
 
 [slide hideTitle]
 # Problem: Process Odd Numbers
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-37-Problem-Process-Odd-Numbers-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Process Odd Numbers" taskId="java-path-js-advanced-arrays-Process-Odd-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -207,6 +219,8 @@ processOddNumbers([ 3, 0, 10, 4, 7, 3 ])
 
 [slide hideTitle]
 # Reduce
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-34-35-36-Reduce-method-Reducer-Function-and-Examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.reduce()` method **executes** a reducer function on **each element** of the array, resulting in a **single output value**.
 
