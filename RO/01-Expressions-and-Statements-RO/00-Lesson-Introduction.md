@@ -23,10 +23,10 @@
 
 **5. Operatori simpli**
 
-- Addition: **+**
-- Subtraction: **-**
-- Multiplication: **\***
-- Division: **/**
+- Adunare: **+**
+- Scădere: **-**
+- Înmulțire: **\***
+- Împărțire: **/**
 
 **6. Expresii** 
 

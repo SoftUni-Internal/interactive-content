@@ -49,9 +49,9 @@ Programul menționat mai sus definește o **clasă** `Main`, care conține o **m
 
 - Prima comandă declară și inițializează o **variabilă**: `int size = 5;`
 - A doua comandă **imprimă** o **expresie**: `System.out.println("Size = " + size);`
-  * note that the **"Size"** string we declared in the double quotation marks is just a **text** representation. The "**size**" variable will hold the actual number inside.
+  * Observați că șirul **"Size"** pe care l-am declarat între ghilimele este doar o reprezentare **text**. Variabila **size** va stoca numărul propiu-zis.
 - A treia comandă calculează și **imprimă** o **expresie**: `System.out.println("Area = " + size * size);`
-  * the same principle applies here. The **"Area"** string is just a text representation that will be printed to the console.
+  * Același principiu se aplică și aici. Șirul **"Area"** este doar o reprezentare text care va fi imprimată pe consolă.
 
 Rezultatul (datele de ieșire) programului menționat mai sus este următorul:
 ```
@@ -87,10 +87,10 @@ Programele de computer execută, de obicei, algoritmi.
 **Algoritmii** sunt o **secvență de pași**, necesari pentru finalizarea unei anumite sarcini și pentru atingerea unui anumit rezultat așteptat, asemănător unei "rețete".
 
 De exemplu, dacă facem ouă prăjite, vom folosi următoarea rețetă (un algoritm): 
-- Heat oil in a pan
-- Crack a couple of eggs
-- Let the eggs cook for about 2 - 3 minutes
-- Transfer the cooked eggs to a plate
+- Încălziți ulei într-o tigaie
+- Spargeți câteva ouă
+- Lăsați ouăle în tigaie aproximativ 2-3 minute
+- Mutați ouăle gătite pe o farfurie
 
 În mod similar, în programare, **programele de calculator execută algoritmi**: secvențe de comenzi, necesare pentru finalizarea unei anumite sarcini. 
 

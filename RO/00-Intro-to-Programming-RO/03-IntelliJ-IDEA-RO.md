@@ -7,16 +7,17 @@ Pentru a programa avem nevoie de un mediu integrat de dezvoltare (**Integrated D
 
 În mediul de dezvoltare scriem cod, compilăm și executăm programele. 
 
-Development environments could contain any number of the following components:
+Mediile de dezvoltare pot conține orice număr de componente dintre următoarele:
 
-- Code text editor
-- Programming language
-- Compiler or an interpreter
-- Runtime environment to execute programs
-- Debugger used to identify code errors
-- Tools for user interface design
+- Editor de text pentru cod
+- Limbaj de programare
+- Compilator sau interpretor
+- Mediu de execuție pentru executarea programelor
+- Depanator utilizat pentru identificarea erorilor
+- Instrumente pentru design-ul interfeței cu utilizatorul
 
-Тhere can be a number of further tools and addons depending on which IDE is used.
+Pot exista și alte instrumente și addons în funcție de IDE-ul folosit.
+
 
 **Mediile de dezvoltare** sunt convenabile pentru că integrează toate elementele necesare pentru dezvoltarea programului, fără a fi nevoie să ieșim din mediu. 
 
