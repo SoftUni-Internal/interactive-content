@@ -92,7 +92,9 @@ We will see the following output:
 
 [image assetsSrc="Unit-Testing-NUnit(6).png" /]
 
-[image srcset="Unit-Testing-NUnit(6).png 0.7x" /]
+----------->
+
+[image assetsSrc="Unit-Testing-NUnit(6).png 0.7x" /]
 
 [/slide]
 
