@@ -6,13 +6,26 @@
 
 Angular-Modules-and-routing-24-25-Guards-overview
 
-Guards are used for **stopping** the user from accessing routes that he has **no** permission to access.
+Guards **prevent** the user from accessing routes that they have **no** permission to access.
 
-To have guards in our application, we need to create a **guard service**.
+To implement guards in our application, we need to create a **guard service**.
 
 We can use the `ng generate guard` command from the Angular CLI.
 
-After the service is created, we need to **provide** it in the module, where the routing configuration is.
+```js
+ng generate guard guard-name
+```
+
+You can add flags after the guard's name, such as `--implements` and `--flat`.
+
+The `--implements` flag specifies which interfaces to implement.
+
+The possible options are:
+-  `CanActivate`
+-  `CanActivateChild`
+-  `CanLoad`
+
+Once the service is instantiated, it must be **provided** in the module, where the routing configuration is.
 
 And finally, we can add the **guard** to the wanted **route**.
 
@@ -24,15 +37,11 @@ And finally, we can add the **guard** to the wanted **route**.
 
 Angular-Modules-and-routing-26-27-CanActivate-Guard
 
-We can use **CanActivate** if we want to check before the route **activation**.
+We can use **CanActivate** when we want to verify something before letting the user access the route.
 
-It is useful for checking if the user is **logged in** or **not**
+For example, if a user is logged in, they can see their profile page.
 
-For example, on a profile page, if the user is logged in, he will be able to see the profile page.
-
-But if not, he will be redirected to the **login page** or the **registration page**.
-
-Here is an example:
+If not, they will instead be redirected to the **login ** or **registration pages**:
 
 ```js
 @Injectable()
@@ -50,11 +59,9 @@ export class AuthGuard implements CanActivate {
 }
 ```
 
-In this example, if the user is **logged in**.
+In this example, if the user is **logged in**, **CanActivate** returns the `checkIfLogged()` function.
 
-**CanActivate** returns the `checkIfLogged()` function.
-
-This function will return true if the user is logged in and false when he is not.
+This function returns a boolean - in this case, it will return true for a logged-in user and else otherwise.
 
 [/slide]
 
@@ -86,6 +93,8 @@ We can add resolvers to the route like an object or like an array.
 
 If we have guards in the route, the resolver will wait for their result.
 
+It will determine whether to fetch the information or not, depending on the guard's return value.
+
 [/slide]
 
 [slide hideTitle]
@@ -94,9 +103,13 @@ If we have guards in the route, the resolver will wait for their result.
 
 Angular-Modules-and-routing-30-ActivatedRoute-example
 
-To create a Resolver, we can use the command from Angular CLI, `ng g resolver nameOfTheResolver`.
+To create a Resolver, we can use Angular CLI:
 
-The Resolver looks like this:
+```
+ng g resolver nameOfTheResolver
+```
+
+This example illustrates its syntax:
 
 ```js
 @Injectable()
@@ -118,12 +131,12 @@ We have a **TestResolver** class decorated with an injectable.
 
 In this case, Resolve will return a boolean.
 
-After the Resolver is created, we need to provide it in the `app.module` file.
+Once the Resolver has been created, we must provide it in the `app.module` file.
 
-Also, we need to add the Resolver to the **route**.
+After that, we need to add the Resolver to the **given route**.
 
 And finally, we can implement it into a component.
 
-To do that, we need to take the data from the snapshot, with `this.route.snapshot.data['user'];`.
+To do that, we need to take the data from the snapshot by using `this.route.snapshot.data['user'];`.
 
 [/slide]
