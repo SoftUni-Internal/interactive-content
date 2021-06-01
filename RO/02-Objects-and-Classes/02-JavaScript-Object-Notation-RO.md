@@ -3,11 +3,13 @@
 [slide hideTitle]
 # What is JSON?
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-16-17-json-javascript-object-notation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 JSON, short for **JavaScript Object Notation**, is a **text-based** format for data exchange.
 
-It is **language independent**, although it is most often used in the context of JavaScript-based projects, such as websites and single-page applications.
+It is **language-independent**, although it is most often used in the context of JavaScript-based projects, such as websites and single-page applications.
 
-JSON is a method of storing information in an **organized** and easily **understandable** approach. 
+JSON is a way of storing information in an **organized** and easily **understandable** approach. 
 
 ```js
 {
@@ -21,12 +23,14 @@ JSON is a method of storing information in an **organized** and easily **underst
 
 The syntax of JSON closely resembles that of a JavaScript **object** - it consists of **key-value** pairs, and can serve as a **representation** of all JavaScript data types, with the exception of functions.
 
-Similarly to XML, it can be used to store data in a **hierarchical** order.
+Similar to XML, it can be used to store data in a **hierarchical** order.
 
 [/slide]
 
 [slide hideTitle]
 # Syntax Rules
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-18-syntax-rules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The following snippet illustrates a typical **JSON** response from a server:
 
@@ -60,6 +64,8 @@ Similarly to JavaScript, **arrays** are held in square brackets, and **objects**
 [slide hideTitle]
 # Parsing from Strings
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-19-parsing-from-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 JSON is often used for **reading data from a server**, and using the response to **render** an interface on the client's browser.
 
 To do so, we have to **convert** the **JSON** response into a JavaScript **object** using the `JSON.parse()` method.
@@ -78,6 +84,8 @@ In this example, we receive a JSON string - `car`, which we then **parse** to a 
 
 [slide hideTitle]
 # Converting to String
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-20-converting-to-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `JSON.stringify()` method converts a JavaScript value to a JSON string representation.
 
@@ -99,12 +107,14 @@ console.log(notebookData);
 console.log(cityData);
 ```
 
-As evident by the output, `stringify` returns a ready for transfer **JSON** string.
+As evident by the output, `stringify` returns a ready-for-transfer **JSON** string.
 
 [/slide]
 
 [slide hideTitle]
 # Problem with Solution: From JSON to HTML Table
+21-problem-from-json-to-html-table-
+22-solution- from-json-to-html-table-
 
 [code-task title="From JSON to HTML Table" taskId="java-path-js-advanced-objects-and-classes-from-json-to-html-table" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -126,7 +136,7 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-You are tasked with creating an HTML table of students and their scores. 
+Your task is to create an HTML table that contains students and their scores. 
 
 You will receive a single string representing an **array of objects**. 
 
@@ -135,7 +145,7 @@ The table’s headings should be equal to the **object’s keys**, while **each 
 Any **text values** in an object should be **escaped** in order to avoid introducing dangerous code into the HTML.  
  
 ## Input 
-The **input** comes a **single string argument** (the array of objects). 
+The **input** comes as a **single string argument** (the array of objects). 
 
 ## Output 
 The **output** should be printed to the console – for each **entry row** in the input, print the **object representing it**. 

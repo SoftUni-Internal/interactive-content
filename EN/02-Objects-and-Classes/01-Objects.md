@@ -168,10 +168,7 @@ let x = 'brand';
 console.log(car[x]);
 ```
 
-[/slide]
-
-[slide hideTitle]
-# Accessing Unassigned Properties
+## Accessing Unassigned Properties
 
 Trying to access an unassigned object property returns `undefined`:
 

@@ -5,8 +5,6 @@
 
 [video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-16-17-json-javascript-object-notation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-18-syntax-rules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 JSON, short for **JavaScript Object Notation**, is a **text-based** format for data exchange.
 
 It is **language-independent**, although it is most often used in the context of JavaScript-based projects, such as websites and single-page applications.
@@ -31,6 +29,8 @@ Similar to XML, it can be used to store data in a **hierarchical** order.
 
 [slide hideTitle]
 # Syntax Rules
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-18-syntax-rules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The following snippet illustrates a typical **JSON** response from a server:
 
@@ -113,10 +113,8 @@ As evident by the output, `stringify` returns a ready-for-transfer **JSON** stri
 
 [slide hideTitle]
 # Problem with Solution: From JSON to HTML Table
-
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-21-problem-from-json-to-html-table-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-22-solution- from-json-to-html-table-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+21-problem-from-json-to-html-table-
+22-solution- from-json-to-html-table-
 
 [code-task title="From JSON to HTML Table" taskId="java-path-js-advanced-objects-and-classes-from-json-to-html-table" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

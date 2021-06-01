@@ -3,6 +3,8 @@
 [slide hideTitle]
 # What is an Object?
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-3-4-objects-what-is-an-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Objects** in **JavaScript**, similarly to **Java**, can be compared to objects in real life.
 
 An object consists of several **variables** - called **properties**, and **functions** - called **methods**.
@@ -24,16 +26,18 @@ To define an object in JavaScript, we use **curly brackets**.
 
 This object has **four properties** - `name`, `capital`, `population`, and `language`.
 
-We can **access** a property's value by writing the class name, followed by a period `.`, and the property name (e.g. `country.name`).
+We can **access** a property's value by writing the class name, followed by a dot `.`, and the property name (e.g. `country.name`).
 
 [/slide]
 
 [slide hideTitle]
 # Variables Holding References
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-5-variables-holding-references-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Objects** are a reference data type.
 
-Contrary to primitive data types, such as `Number` and `String`, reference types hold only the **pointer** to the data in memory.
+Contrary to primitive data types, such as `Number` and `String`, reference types hold only the **pointer** to the data in the memory.
 
 Variables that are assigned a non-primitive value are given a **reference** to that value:
 
@@ -55,15 +59,15 @@ console.log(`The first person's name is ${personOne.name}.`);
 console.log(`The second person's name is ${personTwo.name}.`);
 ```
  
-In this example, we are creating a `personOne` object to which we assign a **name**, **age**, and **city**. 
+In this example, we create a `personOne` object to which we assign the following properties: **name**, **age**, and **city**. 
 
 This value is stored in the memory, and **only the reference** is assigned to the variable. 
 
-When we assign `personOne` to the second variable - `personTwo`, we create a copy of the **reference** that points to the memory. 
+When we assign `personOne` to the second variable, which is `personTwo`, we create a copy of the **reference** that points to the memory. 
 
 As a result, when we log both objects' **name** propeties to the console, we receive the same result - `Michelle`.
 
-When we change `personOne.name` to be equal to `Maria`, we are altering the **object** stored in memory. 
+When we change the `personOne.name` to be equal to `Maria`, we are altering the **object** stored in memory. 
  
 Because `objectTwo` is simply a reference to the same value, we get the same result when we `console.log` both properties - `Maria.`
 
@@ -71,6 +75,8 @@ Because `objectTwo` is simply a reference to the same value, we get the same res
 
 [slide hideTitle]
 # Object Properties
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-6-object-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When a variable is assigned to an **object**, it is called a **property**.
 
@@ -89,7 +95,7 @@ let color = {
 console.log(color);
 ```
 
-As you can see, properties can be of different **data types**.
+As we can see, properties can be of different **data types**.
 
 In this example, the `color` object has three properties.
 
@@ -104,7 +110,9 @@ In this example, the `color` object has three properties.
 [slide hideTitle]
 # Assigning and Accessing Properties
 
-There are **two** syntaxes for assigning and accessing propeties - **dot** and **bracket notation**.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-7-8-assigning-and-accesssing-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+There are **two** syntaxes for assigning and accessing properties - **dot notation** and **bracket notation**.
 
 ## Dot Notation
 
@@ -130,7 +138,7 @@ Subsequently, we assign four properties to it - `firstName`, `lastName`, `age`, 
 
 A common **downside** of dot notation is that it does **not allow** for the use of **special symbols**, such as hyphens.
 
-Bracket notation solves this problem by accepting strings , numbers, and even arrays and objects as keys, although the latter is not recommended.
+Bracket notation solves this problem by accepting strings, numbers, and even arrays and objects as keys, although the latter is not recommended.
 
 The syntax for a bracket selector looks like this: `object[key]`
 
@@ -144,7 +152,7 @@ console.log(student['school-name']);
 console.log(student.school-name);
 ```
 
-As you can see, using dot notation in this example results in a `ReferenceError`.
+As we can see, using dot notation in this example results in a `ReferenceError`.
 
 Bracket notation also enables selecting keys by using **variables**:
 
@@ -160,10 +168,7 @@ let x = 'brand';
 console.log(car[x]);
 ```
 
-[/slide]
-
-[slide hideTitle]
-# Accessing Unassigned Properties
+## Accessing Unassigned Properties
 
 Trying to access an unassigned object property returns `undefined`:
 
@@ -280,13 +285,15 @@ cityRecord('Barcelona', 47297302, 91231262)
 [slide hideTitle]
 # Object Methods
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-9-object-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Along with properties, JavaScript objects can also have **methods**.
 
 A method is simply a **function** that is **part of an object**.
 
 You can think of methods as **actions** - they can be used to **retrieve, modify, or delete data** from their parent object.
 
-There are multiple ways to **define** methods - two of them require declaring the method at the moment of **class creation**, while the third enables adding one at a **later time**.
+There are multiple ways to **define** methods - two of them require declaring the method at the moment of the **class creation**, while the third enables adding one at a **later time**.
 
 ## Property Declaration
 
@@ -306,11 +313,11 @@ let dog = {
 dog.bark();
 ```
 
-In this `dog` object, we have added a `bark` method that prints an output to the console.
+In this `dog` object, we have added a `bark` method that prints output to the console.
 
 Then, we write the name of the object (`dog`), followed by a period, and the key - `bark`.
 
-At the end, we add opening and closing brackets to **invoke** it.
+In the end, we add opening and closing brackets to **invoke** it.
 
 ## Function Declaration
 
@@ -354,6 +361,8 @@ Here, we add a `sayHello` **arrow function** to the `person` object.
 [slide hideTitle]
 # Deleting Propeties
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-10-deleteing-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 To remove a property from an object, we use the `delete` operator.
 
 ```js live
@@ -370,16 +379,18 @@ delete fruit.species;
 console.log(fruit.species);
 ```
 
-In this example, we create a `fruit` with a `species` property, and we print its value to the console.
+In this example, we create a `fruit` object that has a `species` property, and we print its value to the console.
 
 Then, we **delete** it using the `delete object.property` syntax.
 
-Trying to access its value a second time, we receive `undefined`.
+If we try to access its value for a second time, we receive `undefined`.
 
 [/slide]
 
 [slide hideTitle]
 # Comparing Objects
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-11-comparing-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 As we learned earlier, objects are a **reference** data type.
 
@@ -408,7 +419,7 @@ console.log(bagOne === bagTwo);
 
 When comparing them, it turns out that they are not equal to each other.
 
-That is because while they may look the same, they are pointing to different places in memory.
+That is because while they may look the same, they are pointing to different places in the memory.
 
 ## Comparing Two Variables Pointing to a Single Object
 
@@ -436,9 +447,11 @@ Both comparisons return `true`, because the two variables hold a reference to th
 [slide hideTitle]
 # Object Keys and Values
 
-As we know already, each object entry is a `key: value` pair.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-12-13-looping-through-objects-and-objects-keys-and-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Тhere are a number of built-in methods in the `Object` prototype that provide a way of **looping through** objects.
+As we already know, each object entry is a `key: value` pair.
+
+Тhere are many built-in methods in the `Object` prototype that provide a way of **looping through** objects.
 
 ## Object.entries
 
@@ -468,7 +481,7 @@ console.log(Object.keys(giraffe));
 
 ## Object.values
 
-The `Object.values()` method returns an array containg the values of all object properties (not including their keys):
+The `Object.values()` method returns an array containing the values of all object properties (not including their keys):
 
 ```js live
 let swan = {
@@ -484,9 +497,11 @@ console.log(Object.values(swan));
 [slide hideTitle]
 # For-in Loop
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-14-for-in-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can use a **for-in loop** to iterate over the **keys** of an object.
 
-This way we can access the **value** of a given key:
+This way, we can access the **value** of a given key:
 
 ``` js live
 let pencil = {
@@ -505,6 +520,8 @@ for (let key in pencil) {
 
 [slide hideTitle]
 # For-of Loop
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-15-for-of-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A **for-of loop** iterates through the **values** of an object.
 
@@ -557,17 +574,17 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-You have been tasked to create a registry for different **towns** and their **population**. 
+Your task is to create a registry for different **towns** and their **population**. 
 
 ## Input 
 The **input** comes as an array of strings. 
 
 Each element will contain data for a town and its population in the following format: `{townName} <-> {townPopulation}`
 
-If you receive the same town twice, **you should add** the **given population** to the **current one**. 
+If you receive the same town twice, **you should add** the **given population** to the **existing one**. 
 
 ## Output 
-As **output**, you should print all the towns and their population. 
+You should print out all the towns and their population. 
 
 ## Example One
 
