@@ -88,21 +88,13 @@ However, when the application expands and becomes more complex, we should use **
 
 Doing so will ensure proper separation of concerns, and it will improve scalability.
 
-Let us see how each type of module works.
-
 ## Shared Modules
 
 Shared modules contain pieces of our application, shared across multiple areas.
 
 We declare a shared module to enable component reuse.
 
-## Core Modules
-
-Core Modules are a way to separate the configuration layer of our application from the rest of the application.
-
-We can do that by declaring our features and shared modules in a **Core Module** and simply providing it to the `AppModule`.
-
-We can look at this as a parent feature module for the content we add to an application.
+An example of a shared module is a loading animation, used throughout our app.
 
 ## Feature Module 
 
@@ -111,6 +103,16 @@ Feature modules encapsulate all of the content inside of a single area.
 A feature module is a sub-application inside your project.
 
 An Angular application contains multiple feature modules.
+
+Using them ensures better scalabity and also enables lazy loading, which we will learn about in a later lesson.
+
+## Core Modules
+
+Core Modules are a way to separate the configuration layer of our application from the rest of the application.
+
+We can do that by declaring our features and shared modules in a **Core Module** and simply providing it to the `AppModule`.
+
+We can look at it as a parent feature module for the content we add to an application.
 
 You can find more information about NgModules in the [Angular guide](https://angular.io/guide/ngmodules).
 
