@@ -18,6 +18,7 @@ Let us take a look at this simple example:
 ```csharp
 [Test]
     public void testCalculatorMultiplying() 
+    {
         // Arrange - prepare required data
         Calculator calculator = new Calculator();
         var expectedResult = 8;

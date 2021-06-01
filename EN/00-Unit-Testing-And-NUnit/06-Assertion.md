@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.bg/hls/PROFESSIONAL-MODULES/QA/2021-04-QA-Automation/02.Unit-Testing/7.Assertions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-An Assert statement is a code used during the development process.
+An **Assert** statement is a code used during the development process.
 
 The **Assert statements** or **Assertion** simply allows programs to inspect itself as it runs.
 
@@ -89,17 +89,17 @@ Take a look at the next examples:
 
 
 ```csharp
-var ListOfNumbers = new List<int>(){ 1, 3, 5, 9 };
+var listOfNumbers = new List<int>(){ 1, 3, 5, 9 };
 
 // Equality => we can check element by element equality
-Assert.That(ListOfNumbers, Is.EqualTo(new []{ 1, 3, 5, 9 }));
+Assert.That(listOfNumbers, Is.EqualTo(new []{ 1, 3, 5, 9 }));
 
 // Equivalence => same elements, but can be in a different order
-Assert.That(ListOfNumbers, Is.EquivalentTo(new []{ 3, 1, 9, 5 }));
+Assert.That(listOfNumbers, Is.EquivalentTo(new []{ 3, 1, 9, 5 }));
 
 // Counts
-Assert.That(ListOfNumbers.Count, Is.EqualTo(4));
-Assert.That(ListOfNumbers, Has.Count.EqualTo(4));
+Assert.That(listOfNumbers.Count, Is.EqualTo(4));
+Assert.That(listOfNumbers, Has.Count.EqualTo(4));
 ```
 
 
