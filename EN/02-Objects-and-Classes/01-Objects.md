@@ -3,6 +3,8 @@
 [slide hideTitle]
 # What is an Object?
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-3-4-objects-what-is-an-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Objects** in **JavaScript**, similarly to **Java**, can be compared to objects in real life.
 
 An object consists of several **variables** - called **properties**, and **functions** - called **methods**.
@@ -30,6 +32,8 @@ We can **access** a property's value by writing the class name, followed by a do
 
 [slide hideTitle]
 # Variables Holding References
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-5-variables-holding-references-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Objects** are a reference data type.
 
@@ -72,6 +76,8 @@ Because `objectTwo` is simply a reference to the same value, we get the same res
 [slide hideTitle]
 # Object Properties
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-6-object-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When a variable is assigned to an **object**, it is called a **property**.
 
 The only difference between both is that properties **belong** to an object.
@@ -103,6 +109,8 @@ In this example, the `color` object has three properties.
 
 [slide hideTitle]
 # Assigning and Accessing Properties
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-7-8-assigning-and-accesssing-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are **two** syntaxes for assigning and accessing properties - **dot notation** and **bracket notation**.
 
@@ -280,6 +288,8 @@ cityRecord('Barcelona', 47297302, 91231262)
 [slide hideTitle]
 # Object Methods
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-9-object-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Along with properties, JavaScript objects can also have **methods**.
 
 A method is simply a **function** that is **part of an object**.
@@ -354,6 +364,8 @@ Here, we add a `sayHello` **arrow function** to the `person` object.
 [slide hideTitle]
 # Deleting Propeties
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-10-deleteing-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 To remove a property from an object, we use the `delete` operator.
 
 ```js live
@@ -380,6 +392,8 @@ If we try to access its value for a second time, we receive `undefined`.
 
 [slide hideTitle]
 # Comparing Objects
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-11-comparing-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 As we learned earlier, objects are a **reference** data type.
 
@@ -436,6 +450,8 @@ Both comparisons return `true`, because the two variables hold a reference to th
 [slide hideTitle]
 # Object Keys and Values
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-12-13-looping-through-objects-and-objects-keys-and-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 As we already know, each object entry is a `key: value` pair.
 
 Тhere are many built-in methods in the `Object` prototype that provide a way of **looping through** objects.
@@ -484,6 +500,8 @@ console.log(Object.values(swan));
 [slide hideTitle]
 # For-in Loop
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-14-for-in-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can use a **for-in loop** to iterate over the **keys** of an object.
 
 This way, we can access the **value** of a given key:
@@ -505,6 +523,8 @@ for (let key in pencil) {
 
 [slide hideTitle]
 # For-of Loop
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-15-for-of-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A **for-of loop** iterates through the **values** of an object.
 

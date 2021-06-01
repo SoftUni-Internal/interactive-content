@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Class Definition​
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-23-24-classes-class-definition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Classes are used as a blueprint, defining the structure of an object.
 
 Inside its body, a class can **contain**:
@@ -21,6 +23,8 @@ Scoping and `this` binding have very different behavior in JavaScript, compared 
 
 [slide hideTitle]
 # Defining a Class​
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-25-defining-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In **JavaScript**, there are two ways to **define** a class - class **declaration** and class **expression**.
 
@@ -74,6 +78,8 @@ As a result, we can leave the class itself either with or without a name - as sh
 [slide hideTitle]
 # Hoisting
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-26-hoisting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In JavaScript, we can use variables and functions before they are declared, if we use the `var` keyword:
 
 ```js live
@@ -117,6 +123,8 @@ class Bike {
 [slide hideTitle]
 # Class Body
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-27-class-body-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The class body is defined using opening and closing curly braces: `{...}`
 
 Inside, we define class members like properties and methods.
@@ -140,6 +148,8 @@ This method defines the **initial** values for all properties that a child objec
 
 [slide hideTitle]
 # Prototype Methods
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-28-prototype-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The ability to modify data is performed by special functions that are part of the class, which are called methods. 
 
@@ -170,6 +180,8 @@ In other words, adding a method inside the class body makes it available to all 
 
 [slide hideTitle]
 # Accessor Properties
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-29-accessor-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript class instances have two types of properties.
 
@@ -215,6 +227,8 @@ Using getters and setters allows for **data encapsulation** - some properties ca
 [slide hideTitle]
 # Accessor Properties in Action
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-30-accessor-properties-in-action-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can use accessor properties to modify an object's property values after its creation:
 
 ```js live
@@ -243,6 +257,8 @@ myTeacher['subject'] = 'Programming';
 
 [slide hideTitle]
 # Static Methods
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-31-static-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript classes support both **instance** and **static** methods.
 
@@ -273,6 +289,8 @@ As a result, we can only call them on the **class itself**, because they lack ac
 [slide hideTitle]
 # Private Properties
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-32-private-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Recently introduced to JavaScript, **private properties** are only accessible from inside the class.
 
 They always begin with a hash symbol `#`, followed by a name: `#myPrivateProperty`
@@ -298,6 +316,8 @@ Accessing a private property from outside its parent class results in an error.
 
 # Accessing Private Properties​
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-33-accessing-private-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Since private fields are **limited** to the class's own scope, we must use **getters and setters** to make them public:
 
 ```js
@@ -320,6 +340,10 @@ console.log(machine.milkInLitres); // 50
 
 [slide hideTitle]
 # Problem with Solution: Person
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-35-solution-person-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-34-problem-person-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Person" taskId="java-path-js-advanced-objects-and-classes-person" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
@@ -512,6 +536,11 @@ yes
 [slide hideTitle]
 
 # Problem with Solution: Get People
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-36-problem-get-people-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-37-solution-get-people-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Get People" taskId="java-path-js-advanced-objects-and-classes-get-people" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 ```
