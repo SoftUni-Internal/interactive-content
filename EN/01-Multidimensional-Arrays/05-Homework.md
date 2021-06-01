@@ -3051,13 +3051,17 @@ public class Main {
 ## Description
 You are given a matrix (2D array) of integers.
 
-You have to print the matrix diagonal but in reversed order.
+You have to print its diagonals in reversed order.
 
 Print each diagonal on a new line.
 
+The following image illustrates the direction of the diagonals:
+
+[image assetsSrc="homework-matrix-order.png" /]
+
 ## Input
 
-On the first line, single integer the number **R** of rows in the matrix. 
+On the first line, two integers - the number **R** of rows in the matrix and the number **C** of characters per row. 
 
 On each of the next **R** lines, **C** numbers are separated by single spaces. 
 
@@ -3065,7 +3069,7 @@ Note that **R** and **C** may have different values.
 
 ## Output
 
-The output should consist of R lines, each consisting of exactly C characters, separated by spaces, representing the matrix diagonals reversed.
+The output should consist of a new line for every diagonal of the matrix.
 
 ## Constraints
 
