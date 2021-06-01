@@ -33,11 +33,11 @@ We can imagine the "blank solution" as a package that will hold our project insi
 
 [image assetsSrc="Unit-Testing-NUnit(2).png" /]
 
-After we have created a blank solution we can right-click on the newly created solution and press **Add** -> **New Project** 
+After we have created a blank solution we can right-click on the newly created solution and press `[Add]` -> `[New Project]`
 
 [image assetsSrc="Unit-Testing-NUnit(4).png" /]
 
-We choose at **Console Application** and the appropriate name for it.
+We choose at **console application** and the appropriate name for it.
 
 In this case, we will name our solution **ConsoleAppSummator**.
 
@@ -99,7 +99,7 @@ We will see the following output:
 
 # Creating an NUnit Project
 
-Let's create a new NUnit project.
+Let's create a new **NUnit** project.
 
 Right click -> `[Add]` -> `[New Project]`.
 

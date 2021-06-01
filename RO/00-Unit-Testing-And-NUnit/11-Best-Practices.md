@@ -2,9 +2,11 @@
 
 [slide hideTitle]
 
-## Naming the Test Methods
+# Best Unit Testing Practices
 
 [video src="https://videos.softuni.bg/hls/PROFESSIONAL-MODULES/QA/2021-04-QA-Automation/02.Unit-Testing/12.best-practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## Naming the Test Methods
 
 Name your tests well. They are the best documentation to track the **application** **behavior**.
 

@@ -33,7 +33,7 @@ public class SummatorTests
     [Test]
     public void Test_SumTwoNumbers() 
     {
-        var sum = Sum(new int[] { 1, 2});
+        var sum = Sum(new int[] { 1, 2 });
         Assert.AreEqual(3, sum);
     }
 }

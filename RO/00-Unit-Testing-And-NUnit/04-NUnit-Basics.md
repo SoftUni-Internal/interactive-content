@@ -19,7 +19,7 @@ The third element is the **Microsoft.NET.Test.Sdk** that will allow us to integr
 
 [image assetsSrc="Unit-Testing-NUnit(12).png" /]
 
-Let's take a look at the **Test Classes and Test Methods**.
+Let's take a look at the **test classes and test methods**.
 
 The first and main element is importing the **NUnit framework**:
 
