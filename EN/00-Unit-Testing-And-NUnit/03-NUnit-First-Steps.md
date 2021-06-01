@@ -52,7 +52,7 @@ In this case, we will name our solution **ConsoleAppSummator**.
 
 Now, let's create a class called "**Summator**".
 
-Right click on the **Solution** -> **Add** -> **New Item**
+Right click on the `[Solution]` -> `[Add]` -> `[New Item]`
 
 Choose **Class** and name it **Summator**.
 
@@ -102,7 +102,7 @@ We will see the following output:
 
 Let's create a new NUnit project.
 
-Right click -> **\[Add\]** -> **\[New Project\]**.
+Right click -> `[Add]` -> `[New Project]`.
 
 [image assetsSrc="Unit-Testing-NUnit(4).png" /]
 
@@ -110,9 +110,9 @@ Choose the **NUnit Test Project** template.
 
 [image assetsSrc="Unit-Testing-NUnit(8).png" /]
 
-Click **\[Next\]** and name the project. Let's name it **SummatorTests**.
+Click `[Next]` and name the project. Let's name it **SummatorTests**.
 
-Choose the **Target Framework** and click **\[Create\]**.
+Choose the **Target Framework** and click `[Create]`
 
 Now, if we look in the "Solution Explorer" tab we will see two different projects.
 
@@ -122,7 +122,7 @@ The first one will be our actual code and the second will be our project where w
 
 To be able to **access** the different projects, we must create a **project reference**.
 
-Right click -> **\[Add\]** -> **\[Project Reference\]**.
+Right click -> `[Add]` -> `[Project Reference]`
 
 [image assetsSrc="Unit-Testing-NUnit(7).png" /]
 
@@ -151,7 +151,7 @@ public void Test_SumTwoNumbers()
 
 ```
 
-To run the test we need to **right click** -> **Run Test(s)**.
+To run the test we need to **right click** -> `[Run Test(s)]`.
 
 When the test is compiled we can see the result in the **Test Explorer**.
 
