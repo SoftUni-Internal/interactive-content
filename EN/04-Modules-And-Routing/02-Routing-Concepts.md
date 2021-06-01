@@ -32,27 +32,35 @@ Finally, the browser loads a completely **new webpage**, discarding the previous
 
 [image assetsSrc="Angular-Modules-And-Routing-1.png" /]
 
-Once again, the browser detects a click event, but a client-side routing library handles it.
+Once again, the browser detects a click event, but a **client-side routing library** handles it.
 
-It detects that the URL is in the form of a path (e.g. `'/users/jane.michaels`) and does not perform a GET request.
+It detects that the URL is in the form of a **path** (e.g. `'/users/jane.michaels`) and does **not** perform a GET request.
 
-The library then modifies the URL using the History API, and changes the state of the given component.
+The library then modifies the current URL using the [History API](https://developer.mozilla.org/en-US/docs/Web/API/History_API), and changes the **state** of the given component.
 
-A front-end framework (such as Angular) processes state changes and renders the required components.
+A front-end framework (such as Angular) **processes** state changes and **renders** the required **components**.
 
-If new information is reqquired, it fetches it in small chunks.
+If new information is required, it **fetches** it in small chunks.
 
-Instead of downloading a whole webpage, Angular will download only the new assets, and will generate the client-ready HTML locally.
+Instead of downloading a whole webpage, Angular will download **only** the new assets, and will **generate** the client-ready HTML **locally**.
 
 [/slide]
 
 [slide hideTitle]
 
-# Single Page Application
+# Single Page Applications
 
 Angular-Modules-and-routing-10-Single-page-applications
 
-When the **location is changed**, the **router** will load the corresponding resource for that location.
+Single page applications work by leveraging the power of JavaScript and frameworks, such as Angular.
+
+In SPAs, the browser sends an initial request and receives an almost empty HTML file.
+
+What it contains however, are references to JavaScript files - the main engine of a single page app.
+
+In traditional (single page) web applications, when the route is changed, the server responds with an entirely separate webpage.
+
+In an SPA, when the **location is changed**, the **router** will load the corresponding component, which is already stored on the client.
 
 Also, on the opposite side, a difference in the content will be represented in the URL.
 
@@ -65,5 +73,11 @@ This type of routing has many benefits, including:
 - We can use **browser history**
 
 - Тhe user interface has increased response times
+
+However, there is a minor downside - SPAs are not optimised for search engine discovery.
+
+This means that our application may rank lower in search results, or appear on wrong queries.
+
+This can become somewhat less of an issue if we apply the appropriate metatags and use SEO (Search Engine Optimisation) friendly URLs.
 
 [/slide]
