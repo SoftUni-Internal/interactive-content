@@ -49,17 +49,17 @@ If `isEmptyString(url)` returns false, `isEmptyString(name)` is **never executed
 
 # Code Coverage Tools for C#
 
-**Visual Studio** supports **code coverage** for C# only in the **Enterprise edition** which is a **paid product**.
+**Visual Studio** supports **code coverage** for C# only in the **enterprise edition** which is a **paid product**.
 
-Alternatively, you can use the **Fine Code Coverage** tool which is a **free** extension for **Visual Studio**.
+Alternatively, you can use the **fine code coverage** tool which is a **free** extension for **Visual Studio**.
 
-You can download the **Fine Code Coverage** by going into the **"Extensions Tab"** or by clicking **Ctrl + Shift + X** shortcut for Windows.
+You can download the **fine code coverage** by going into the **"Extensions Tab"** or by clicking **Ctrl + Shift + X** shortcut for Windows.
 
 [image assetsSrc="Unit-Testing-NUnit(17).png" /]
 
 The last step is to run the unit tests to view the **covered lines** in **green** , **red** or **yellow**.
 
-You can view your code coverage report in the **Fine Code Coverage** window.
+You can view your code coverage report in the **fine code coverage** window.
 
 [image assetsSrc="Unit-Testing-NUnit(18).png" /]
 

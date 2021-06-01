@@ -33,7 +33,7 @@ Assert.That(percentage, Is.InRange(20, 40)); // assert that the given percentage
 
 ## String Assertions
 
-Let's take a look at some **String Assertions**:
+Let's take a look at some **string assertions**:
 
 We can use this **testing assertion**:
 
@@ -57,7 +57,7 @@ Assert.IsTrue(greeting.Contains("Hello"));
  */ 
 ```
 
-We can use **Assertions** by **regex matching**.
+We can use **assertions** by **regex matching**.
 
 Take a look at the example below:
 
