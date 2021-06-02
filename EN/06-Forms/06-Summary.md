@@ -2,7 +2,9 @@
 
 [slide hideTitle]
 
-## In this lesson you learnt:
+## In this lesson you learned:
+
+js-angular-forms-49-Summary.mp4
 
 - There are three types of Directives
     - Components, Structural, Attribute
@@ -34,6 +36,6 @@ export class NameEditorComponent {
 
 ## In the next lesson you will learn:
 
-Workshop - Forms
+- An in-depth Forms Workshop
 
 [/slide]

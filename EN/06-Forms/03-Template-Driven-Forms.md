@@ -2,6 +2,8 @@
 
 # Template-Driven Forms
 
+js-angular-forms-14-Template-Driven-Forms
+
 Template-driven forms are not as scalable as Reactive forms. 
 
 We use them when we want a very basic form requirement and logic that can be managed solely in the template.
@@ -18,6 +20,8 @@ Follow these steps when building a form by writing templates using the Angular t
 
 # Problem: Create a Template-Driven Form
 
+js-angular-forms-15-problem-Create-a-Template-Driven-Form
+
 Create a **Template-Driven** form that looks like this:
 
 [image assetsSrc="Angular-Forms.png" /]
@@ -27,6 +31,8 @@ Create a **Template-Driven** form that looks like this:
 [slide hideTitle]
 
 # Import Bootstrap
+
+js-angular-forms-16-Import-Bootstrap
 
 First, install Bootstrap. 
 
@@ -48,6 +54,8 @@ Create **containers**, **form-groups**, **form-controls**, **style buttons** and
 [slide hideTitle]
 
 # Introducing Forms Module
+
+js-angular-forms-17-Introducing-Forms-Module
 
 Angular is module-based, and to handle forms, we need **Forms Module**.
 
@@ -71,6 +79,8 @@ export class AppModule { }
 
 # Create a Form Component
 
+js-angular-forms-18-Create-Form-Component
+
 An Angular form has two parts: An **HTML** based **template** and a component **class** to handle data.
 
 ```js
@@ -89,6 +99,8 @@ export class LaptopFormComponent {
 [slide hideTitle]
 
 # Initial HTML Template
+
+js-angular-forms-19-20-Initial-HTML-Template
 
 Use the following HTML to create the template.
 
@@ -131,6 +143,8 @@ Use the following HTML to create the template.
 
 # The NgModel Directive
 
+js-angular-forms-21-The-NgModel-Directive
+
 We need to display, listen and extract data at the same time.
 
 To do this use the **ngModel** directive.
@@ -155,6 +169,8 @@ So, we need to include this in our HTML template.
 
 # The NgForm Directive
 
+js-angular-forms-22-The-NgForm-Directive
+
 Declare a template variable inside the form.
 
 ```html
@@ -173,6 +189,8 @@ The **NgForm Directive** will also add additional features:
 [slide hideTitle]
 
 # Access the Local Reference
+
+js-angular-forms-23-Access-the-Local-Reference
 
 In Angular, we can easily fetch a value of any input through local references.
 
@@ -193,6 +211,8 @@ export class LaptopFormComponent implements AfterViewInit {
 [slide hideTitle]
 
 # Submit a Form
+
+js-angular-forms-24-Submit-a-Form
 
 To submit a form bind **ngSubmit** event property to the form component's `onSubmit()` method.
 
@@ -215,6 +235,8 @@ onSubmit() {
 
 # Tracking Form State
 
+js-angular-forms-25-Tracking-Form-State
+
 The **NgForm Directive** tracks if:
 - The user has touched the control
 - The user has changed the control
@@ -229,6 +251,8 @@ It can also **update** the control with special Angular CSS classes and leverage
 [slide hideTitle]
 
 # Track Control State
+
+js-angular-forms-26-Track-Control-State
 
 Angular provides three pairs of classes for the state of the form control.
  
@@ -256,6 +280,8 @@ This pair of classes define the state of the control, whether its value is valid
 
 # Add Custom CSS For a Visual Feedback
 
+js-angular-forms-27-Add-Custom-CSS-for-Visual-Feedback
+
 You can mark **required** fields and **invalid** data, at the same time with a **colored** bar on the **left** of the **input box**.
 
 ```css
@@ -272,6 +298,8 @@ input.ng-invalid.ng-touched {
 [slide hideTitle]
 
 # Add Validation
+
+js-angular-forms-28-Add-Validation
 
 Add **HTML 5 attributes** to the input fields for validation.
 
@@ -292,6 +320,8 @@ Angular tracks the attributes and changes the state depending on the user input.
 
 # Third-party Validators
 
+js-angular-forms-29-List-of-Validators-Third-party-Validators
+
 Angular comes with the following [validators](https://angular.io/api/forms/Validators).
 
 For **template-driven** forms you will need the following [directives](https://angular.io/api?type=directive).
@@ -302,7 +332,9 @@ And here you can find some npm packages with [custom validators](https://www.npm
 
 [slide hideTitle]
 
-# Displaying Error Messages - 1
+# Outputing Error Messages
+
+js-angular-forms-30-31-Outputing-Error-Messages
 
 In case of error, the user should receive a proper message with some explanation of what went wrong.
 
@@ -319,11 +351,6 @@ Add a template reference variable in the input.
     #processor="ngModel">
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Displaying Error Messages - 2
 
 Create a **div** and display it **only** when the control state is **invalid**.
 
@@ -343,6 +370,8 @@ Add a helpful message inside the **div**.
 
 # Form Overall Validity
 
+js-angular-forms-32-Form-Overall-Validity
+
 We can bind the form's overall validity using the reference variable declared in the `<form>` tag.
 
 Block the **submit** button in case a control has **invalid state**.
@@ -358,6 +387,8 @@ Block the **submit** button in case a control has **invalid state**.
 [slide hideTitle]
 
 # Two-way Data Binding
+
+js-angular-forms-33-Two-way-Data-Binding
 
 Instantly react to any changes using two-way data binding.
 
@@ -384,6 +415,8 @@ constructor() {
 
 # The NgModelGroup Directive
 
+js-angular-forms-34-The-NgModelGroup-Directive
+
 This directive can only be used as a child of **NgForm** within `<form>` tags.
 
 Use it to validate a sub-group of your form separately from the rest of your form.
@@ -408,6 +441,8 @@ For Example, Password and Confirm Password.
 
 # Setting and Patching a Form Value
 
+js-angular-forms-35-Setting-and-Patching-Form-Value
+
 Use `setValue()` or `patchValue()` to change the form from inside the component or add default values.
 
 ```js
@@ -423,6 +458,8 @@ changeInput() {this.laptopForm.form.patchValue({
 [slide hideTitle]
 
 # Resseting the Form
+
+js-angular-forms-36-Resetting-the-Form
 
 After a form is submitted, resetting is necessary to clear all input fields and reset the track state.
 

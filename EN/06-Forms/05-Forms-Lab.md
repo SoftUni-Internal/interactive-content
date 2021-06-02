@@ -6,7 +6,7 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/07-Forms.zip) **for this task.**
 
-Create a new angular application. 
+Create a new Angular application. 
 
 You are provided with **HTML** and **CSS** files containing the form itself with **styles** and **font awesome** icons.
 
