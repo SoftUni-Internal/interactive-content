@@ -4,6 +4,8 @@
 
 # Why We Need Services?
 
+18-19-Services-and-why-we-need-services
+
 An angular app can be **divided** into several components:
 
 - **Logo** component 
@@ -47,6 +49,8 @@ To register it as a part of the **component** you will have to **specify** it in
 
 # Create a Service
 
+20-Create-a-Service
+
 Angular **services** look like any other TypeScript **class** that handles **data manipulation**.
 
 Let us create a simple service which we will call `NotifyService`.
@@ -71,6 +75,8 @@ Our simple service contains a `notify()` function, which displays an alert in th
 [slide hideTitle]
 
 # Injecting Into Components
+
+21-Injecting-into-Components
 
 To **inject a service into a component**, first go to the component's TypeScript file.
 
@@ -105,6 +111,8 @@ Then, we add `NotifyService` to the constructor of the `AppComponent` class as a
 [slide hideTitle]
 
 # Injectable Decorator
+
+22-Injectable-Decorator
 
 The easiest way to create an injectable service is by using **Angular CLI**.
 

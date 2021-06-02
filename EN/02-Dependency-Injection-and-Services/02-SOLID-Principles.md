@@ -4,6 +4,9 @@
 
 # Single Responsibility Principle
 
+6-SOLID-Principles
+7-Single-Responsibility-Principle
+
 ## SOLID Overview
 
 The **SOLID** principles, introduced by American software engineer and instructor **Robert Cecil Martin** are the five most important principles in **object-oriented programming**.
@@ -38,6 +41,8 @@ This job is performed by services, which is the topic of the next section.
 
 # Open-Closed Principle
 
+8-Open-Closed-Principle
+
 The **Open-Closed Principle** states that a class, module, or function should be **open for extension**, but **closed for modification**.
 
 What this means is that as soon as a given **software entity** is **in use** by clients, you **should not change its behavior**. 
@@ -56,6 +61,8 @@ If you decide to **break** this principle and modify functionality that is alrea
 
 # Liskov Substitution Principle
 
+9-Liskov-Substitution-Principle
+
 Introduced by Barbara Liskov in 1987, the **Liskov substitution principle** states that **child classes** should **never break** the **parent class' type definitions**.
 
 In simple terms, derived types must be **completely substitutable** for their base types.
@@ -69,6 +76,8 @@ Child classes also **must not remove** the behavior of their **parent class**.
 [slide hideTitle]
 
 # Interface Segregation Principle
+
+10-Interface-Segregation-Principle
 
 The **Interface Segregation Principle**, abbreviated as (ISP), states that clients **should not** be forced to depend on **methods they do not use**.
 
@@ -161,6 +170,7 @@ A **downside** of dependencies is that they **decrease code reuse**.
 
 # Dependency Injection: Example
 
+
 The following code is an example for dependency injection:
 
 ```js
@@ -192,6 +202,8 @@ To inject a dependency in a **class**, we use the **constructor**, in which we c
 
 # Classic Violations
 
+15-Classic-Violations
+
 You **should not** use the `new` keyword inside the constructor or use **static** methods and properties.
 
 
@@ -215,6 +227,8 @@ This makes your class **brittle**, **inflexible**, and **hard to test**.
 [slide hideTitle]
 
 # How to Fix?
+
+16-How-to-Fix
 
 You should always add dependencies through the **constructor**:
 
@@ -242,6 +256,8 @@ let carTwo = new Car(
 [slide hideTitle]
 
 # General Requirements
+
+17-General-Requirements
 
 To conclude, these are the requirements for the DI Pattern:
 

@@ -4,6 +4,8 @@
 
 # The HTTP Client Module
 
+32-33-HTTP-Client-and-the-http-cllient-module
+
 Angular's HTTP module gives the ability to **interact** with thousands of **web-based APIs** like Facebook Twitter and Amazon Web Services and many more.
 
 What these products all have in common is that they provide a **restful API** that you can be **consumed** from an Angular app.
@@ -56,6 +58,8 @@ From now on `HttpClient` can be injected in Services.
 
 # Using the HTTP Client in Services
 
+34-Using-the-HTTP-Client-in-Services
+
 While it is possible to import `HttpClient` in a component, it is not recommended.
 
 A better solution will be to **separate** it into its very own Angular **service**.
@@ -95,6 +99,8 @@ The `getAllPhotos()` method makes a GET request to a demo REST API.
 
 # Subscribe to the Observable
 
+35-Subscribe-to-the-Observable
+
 To subscribe to the Observable, create a `PhotosComponent` with Angular CLI:
 
 `ng g c photos`
@@ -129,6 +135,8 @@ Inside `ngOnInit()`, use the `subcribe()` method.
 
 # Type Checking the Response
 
+36-Type-Checking-the-Response
+
 A major upside of TypeScript is that we can use **Interfaces** to **explicitly** type what the `Photo` class must include:
 
 ```js
@@ -146,6 +154,8 @@ interface Photo {
 [slide hideTitle]
 
 # Handling Errors
+
+37-Handling-Errors
 
 While accessing remote data, many **issues** may occur.
 
