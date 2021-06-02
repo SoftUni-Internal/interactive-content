@@ -113,7 +113,7 @@ Click `[Next]` and name the project. Let's name it **SummatorTests**.
 
 Choose the **Target Framework** and click `[Create]`
 
-Now, if we look in the "Solution Explorer" tab we will see two different projects.
+Now, if we look in the "**Solution Explorer**" tab we will see two different projects.
 
 The first one will be our actual code and the second will be our project where we will handle our tests.
 

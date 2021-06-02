@@ -53,7 +53,7 @@ When we run the tests, we see a test execution report like this, shown on the sc
 
 Unit test writers usually follow the **"AAA pattern"** which we will cover later in this lesson.
 
-Unit Testing usually covers:
+Unit testing usually covers:
 
 - The straightforward case – the typical use of the function
 
