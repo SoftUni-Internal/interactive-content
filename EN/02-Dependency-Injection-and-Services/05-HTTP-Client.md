@@ -4,7 +4,29 @@
 
 # The HTTP Client Module
 
-We use Angular's **HTTP Client** Module to fetch data from a remote API.
+Angular's HTTP module gives the ability to **interact** with thousands of **web-based APIs** like Facebook Twitter and Amazon Web Services and many more.
+
+What these products all have in common is that they provide a **restful API** that you can be **consumed** from an Angular app.
+
+A **restful API** is and how **communication** works between the client and the server. 
+
+On the one side there is a **client** on the other side is a **server**, restful is simply a way for these two parties to **communicate** in a **standardized** way by using the HTTP protocol. 
+
+Data can be only retrieve without **modifying** it by using the "**GET**" request, and the server will respond with the **status code** as well as the data that was **requested**.
+
+If the request is successful the server will return a "**200 OK**" plus the **requested** data.
+
+If the request was **not valid**, or there is a **problem with the server**, a **400** or **500** level error will be return.
+
+A **400 response** generally means the request is **invalid** and a **500 level** response generally means there was an **error on the server itself**.
+
+There also other types of requests:
+
+- "**Post**" - which tells the server that new data will be created and also send data payload with it which is the data that will be saved on the server
+- "**Put**" - update a resource available on the server
+- "**Patch**" - sets instructions on how to modify a resource on the server
+- "**Delete**" - delete a resource on the server
+ 
 
 To get started, go to `src/app/app.module.ts`:
 
@@ -52,7 +74,7 @@ At the top of the `PhotosService` file, import `HttpClient`.
 import { HttpClient } from '@angular/common/http';
 
 @Injectable()
-export class PhotosService {
+export class PhotosService {
   constructor (private http : HttpClient) {
 
   }
@@ -88,7 +110,7 @@ export class PhotosComponent implements OnInit {
    private photosService : PhotosService
   ) { }
 
-  ngOnInit(): void {
+ngOnInit(): void {
    this.photosService.getAllPhotos()
       .subscribe(data => {
          this.photos = data;
