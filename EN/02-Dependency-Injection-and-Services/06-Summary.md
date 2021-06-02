@@ -4,11 +4,11 @@
 
 ## In this lesson you learned:
 
-- The SOLID Principles are the most important principles of Object-oriented programming 
-  - Applying them makes our applications easier to maintain and extend
+- The SOLID Principles are **the most important principles** of Object-oriented programming 
+  - applying them makes our applications easier to maintain and extend
 
-- Dependency Injection is a popular design pattern
-  - Allows us to inject dependencies in different components
+- Dependency Injection is a **popular** design pattern
+  - allows us to **inject dependencies** in different components
 
 ```js
 import { Injectable } from "@angular/core";
@@ -23,7 +23,7 @@ export class DemoService {
 }
 ```
 
-- RxJS and Functional Reactive Programming are a powerful combination
+- RxJS and Functional Reactive Programming are a **powerful combination**
   - RxJS provides utility functions for manipulating streams
   - FRP integrates time flow and compositional events into functional programming
 
@@ -51,6 +51,6 @@ export class PostsService { constructor(
 
 ## In the next lesson, you will learn:
 
-- In\-depth Components Workshop
+- In-depth Components Workshop
 
 [/slide]

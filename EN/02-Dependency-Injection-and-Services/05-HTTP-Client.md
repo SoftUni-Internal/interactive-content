@@ -166,3 +166,11 @@ this.photosService.getAllPhotos()
 ```
 
 [/slide]
+
+[slide hideTitle]
+
+# HTTP Client - Demo
+
+03-Angular_Fundamentals_Dependency_Injection_and_Services_Demo-1-2
+
+[/slide]
