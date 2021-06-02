@@ -50,16 +50,16 @@ JSON Web Token consists of **three parts**, separated using **dots**:
 
 - **Payload**: contains **claims** about a given **entity** (most often a **user**) which can be **registered**, **public**, and **private**:
 
-  - **Registered** claims include `iss` \(issuer\), `sub` \(subject\) and `exp` \(expiration time\), all of which are **optional** but recommended;
+  - **Registered** claims include `iss` \(issuer\), `sub` \(subject\) and `exp` \(expiration time\), all of which are **optional** but recommended
 
   - **Public** claims must be **defined** in [IANA JSON Web Token Registry](https://www.iana.org/assignments/jwt/jwt.xhtml) to prevent **collisions**;
 
-  - **Private** claims are used for sharing information between agreeing parties, in case they are neither **registered** nor **public**;
+  - **Private** claims are used for sharing information between agreeing parties, in case they are neither **registered** nor **public**
   
 
 - Signature: used to verify the information was **not changed** during **transmission**:
 
-  - Can be used to **confirm** that the **sender** of the token is who it says it is, in the case of tokens signed with a **private key**.
+  - Can be used to **confirm** that the **sender** of the token is who it says it is, in the case of tokens signed with a **private key**
   
 
 [/slide]

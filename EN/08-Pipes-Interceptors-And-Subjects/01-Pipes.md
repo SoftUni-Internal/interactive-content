@@ -4,19 +4,28 @@
 
 # What Are Pipes?
 
-**Pipes** allow us to **transform data** in an Angular template, before **displaying** it.
+The idea of pipes comes from Linux/Unix systems, where into the command line we can **write pipes**, which are just `|` symbols.
+
+This gives us the **ability** for output from one **command** to be forwarded to **another command**. 
+
+The ability for **chaining commands** is almost the same as in **promises**, where the result from one promise could be passed to another promise, and so on.
+
+It is well known that Angular data can be transformed by using a service or a component.
+
+What **Pipes** does is to allow **transform data**, and when pipes are pure functions they can **memorize parameters**.
+
+So when a pipe function **receives a parameter** that had been given, Angular does not calculate the result **yet again**, instead, the result is **instantly returned**.
 
 Pipes can be applied to **any property** - including **strings**, **numbers** and arrays.
 
 To **use** a pipe, put a **pipe operator** `|` **after the value** and then add the **name** of the pipe.
 
-`{{ message | lowercase }}`
+Some of the **build-in pipes** are:
 
-You can also **chain** pipes:
+- `{{ message | lowercase }}`: this pipe transform a string to **lowercase**
 
-`{{ message | uppercase | titlecase }}`
+- `{{ message | uppercase | titlecase }}`: pipes can be **chained**, where the order of **applying them** is from left to right (uppercase than titlecase)
 
-Chained pipes are applied **successively** from left to right.
 
 [/slide]
 
@@ -44,7 +53,7 @@ This is the **initial state** of `username`:
 
 After `slice` is applied, the `username` string will be **displayed** as `julie`.
 
-To learn about **other built-in pipes**, [visit Angular's documentation](https://angular.io/api?query=pipe
+To learn about **other built-in pipes**, visit Angular's [documentation](https://angular.io/api?query=pipe
 ).
 
 [/slide]
@@ -143,7 +152,7 @@ It **subscribes** to a **promise** or **observable** and **returns** the latest 
 notification = new Promise((resolve, reject) => {
   setTimeout(() => {
     resolve('Welcome back!');
-  }, 1000)}) 
+  }, 1000)}) 
 
 ```
 
