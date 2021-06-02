@@ -68,11 +68,6 @@ Unit tests execute the code with sample input data and entrance conditions and *
 
 There are different **unit testing frameworks**. They structure the tests consistently.
 
-**Unit testing** consists of different "testing" levels:
-
-- Unit Testing
-- Integration Testing
-- System Testing
 
 [/slide]
 
@@ -81,6 +76,12 @@ There are different **unit testing frameworks**. They structure the tests consis
 [slide hideTitle]
 
 ## Unit Tests
+
+**Unit testing** consists of different "testing" levels:
+
+- Unit Testing
+- Integration Testing
+- System Testing
 
 **Unit tests** take a single component (called "**unit**") and test it.
 
