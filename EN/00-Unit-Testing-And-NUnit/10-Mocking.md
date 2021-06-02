@@ -22,7 +22,8 @@ public void testAlarmClockShouldRingInTheMorning()
 {
   Time time = new Time();
   AlarmClock clock = new AlarmClock(time);
-  if (time.isMorning()) {
+  if (time.isMorning()) 
+  {
     // The test will pass only in the morning
     Assert.assertTrue(clock.isRinging());
   }
