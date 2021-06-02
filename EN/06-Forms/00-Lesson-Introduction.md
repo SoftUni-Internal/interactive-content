@@ -3,6 +3,7 @@
 [slide hideTitle]
 
 # Lesson Content
+
 js-angular-forms-1-2-Directives-and-Forms-and-table-of-contents
 
 ## In this lesson you will learn:

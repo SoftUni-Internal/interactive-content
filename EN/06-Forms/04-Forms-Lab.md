@@ -4,6 +4,8 @@
 
 # Initial Setup
 
+Forms-Lab-1
+
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/07-Forms.zip) **for this task.**
 
 Create a new Angular application. 
@@ -23,6 +25,8 @@ Go to [fontawesome](fontawesome.com) and add the provided HTML link inside `inde
 [slide hideTitle]
 
 # Template-Driven Form
+
+Forms-Lab-2
 
 Generate a **register-form** component and use the provided **HTML** to create a **template-driven** form. 
 
@@ -74,6 +78,8 @@ At the **end** your form should look like this:
 
 # Create a Custom Attribute Directive
 
+Forms-Lab 3-1
+
 Add another input field containing an **image URL** to a profile picture, use 'fa fa-image' for the font awesome icon. 
 
 Validate this input field by writing your own **attribute directive**.
@@ -93,6 +99,8 @@ Clearing the errors is done with `setErrors(null)`.
 [slide hideTitle]
 
 # Reactive Form
+
+Forms-Lab 3-2
 
 Create a new component **register-form-reactive** and build the same form using the reactive approach.
 

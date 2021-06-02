@@ -28,10 +28,10 @@ For example, the built-in **NgStyle** directive can change several element style
 
 Examples include: 
 
-- Highlighting the text of an element 
-- Focusing on an input when a specific action occurs 
-- Showing a definition for a word when the user hovers or clicks on an element 
-- Hiding and showing a modal when a button is clicked
+- **Highlighting** the text of an element 
+- **Focusing** on an input when a specific action occurs 
+- Showing a definition for a word when the user **hovers or clicks** on an element 
+- **Hiding and showing** a modal when a button is clicked
 
 
 ## Structural Directives
@@ -68,7 +68,7 @@ Attribute directives have their own layout view and styles.
 
 In other words, they deal with changing the look and behavior of a DOM element.
 
-An attribute directive has a single component on a host element, but supports multiple directives.
+An attribute directive has a single component on a host element but supports multiple directives.
 
 Some examples include the  `ngStyle` and `ngClass` directives.
 
@@ -94,13 +94,13 @@ We use `ngClass` to assign and remove CSS classes from an HTML element.
 
 It accepts three types of expressions:
 
-- `string` - the classes in the string are added, after being split by a space
+- `string` - the classes in the string are added after being split by a space
 
 ```js
 <div [ngClass]="'main navbar'">...</div>
 ```
 
-- `Array` - classes are added in the arrangment of the array
+- `Array` - classes are added in the same arrangement as the array
 
 ```js
 <article [ngClass]="['secondary', 'last-article']">...</article>
@@ -114,7 +114,7 @@ It accepts three types of expressions:
 
 ## Structural Directives
 
-The main purpose of structural directives is to define and modify the HTML layout, and the structure of the DOM.
+The main purpose of structural directives is to define and modify the HTML layout, and the DOM's structure.
 
 It is important to note that we can apply only one structural directive to a host element.
 

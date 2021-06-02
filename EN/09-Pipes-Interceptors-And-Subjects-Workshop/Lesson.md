@@ -1,1 +1,1 @@
-# Workshop: Pipes Interceptors And Subjects
+# Workshop: Pipes, Interceptors And Subjects

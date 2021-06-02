@@ -8,13 +8,15 @@ js-angular-forms-37-38-Handling-Forms-and-reactive-forms-overview
 
 Reactive forms provide a model-driven approach to handling form inputs whose values change over time.
 
-Reactive forms are immutable. A change to the form state returns a new state, which maintains the integrity of the model between changes. 
+Reactive forms are immutable. 
 
-They are built around observable streams, where form inputs and values are provided, as streams of input values, which can be accessed synchronously.
+A change to the form state returns a new state which maintains the model's integrity between changes. 
+
+They are built upon observable streams, where form inputs and values are provided as streams of input values that are synchronously accessible.
 
 Reactive forms also make testing easy.
 
-This way, we are assured that our data is consistent and predictable when requested.
+This way, we are sure that the information stored is consistent and predictable when requested.
 
 [/slide]
 
@@ -71,9 +73,9 @@ this.laptopForm = new FormGroup({
 
 js-angular-forms-41-Template
 
-In the template, we have to mark the main **formGroup** and after that add **formControlName** to each form control.
+In the template, we have to mark the main **formGroup**, after which we add **formControlName** to each form control.
 
-Here the **formControlName** is the name of the key instance.
+Here the **formControlName** is the key instance's name.
 
 ```html
 <form (ngSubmit)="save()" [formGroup]="laptopForm">
@@ -109,7 +111,7 @@ The idea is to shorten the template and transfer such logic in the component whe
 
 js-angular-forms-43-Using-Form-Builder
 
-Use the **FormBuilder** service to avoid creating instances of **FormGroup** and **FormControl** name.
+Use the **FormBuilder** service to bypass creating instances of **FormGroup** and **FormControl**.
 
 ```js
 import { FormBuilder } from '@angular/forms';
