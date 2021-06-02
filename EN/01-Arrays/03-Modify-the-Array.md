@@ -4,10 +4,8 @@
 [slide hideTitle]
 
 # Add Elements
-12-Modify-the-array-Mutator-methods
-14-Push-
-16-Unshift-
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/js-advanved-syntax-functions-and-statements-12-14-16-Mutator-Methods-Push-Unshift-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **methods** used to modify arrays in JavaScipt are similar to the ones in the **Java stream**.
 
@@ -50,7 +48,7 @@ console.log(nums);
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Negative or Positive Numbers - DO NOT TRANSLATE IN RO
+# Problem with Solution: Negative or Positive Numbers
 
 [video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-12-problem-and-solution-negative-posivite-numbers-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -206,9 +204,7 @@ negativePositive([\-2, 3, 0, 5, \-6, 0, 8])
 
 # Removing Elements
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-13-Pop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-15-Shift-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/js-advanved-syntax-functions-and-statements-13-15-Pop-Shift-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Pop
 
@@ -438,7 +434,7 @@ console.log(arr);
 [slide hideTitle]
 # Sorting Strings
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-20-21-Sort-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/js-advanved-syntax-functions-and-statements-20-Sorting-strings-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.sort()` method **sorts the items** of an array.
 
@@ -464,6 +460,8 @@ console.log(names);
 
 [slide hideTitle]
 # Sorting Numbers
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/js-advanved-syntax-functions-and-statements-21-Sorting-Numbers-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 However, if we have an array that contains numbers, the result will be **unexpected and incorrect**. 
 
