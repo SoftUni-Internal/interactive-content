@@ -6,9 +6,9 @@
 
 [video src="https://videos.softuni.bg/hls/PROFESSIONAL-MODULES/QA/2021-04-QA-Automation/02.Unit-Testing/7.Assertions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-An **Assert** statement is a code used during the development process.
+An **assert** statement is a code used during the development process.
 
-The **Assert statements** or **Assertion** simply allows programs to inspect itself as it runs.
+The **assert statements** or **Assertion** simply allows programs to inspect itself as it runs.
 
 The assertion may be true or false. If the result is true, that means everything is operating as expected.
 

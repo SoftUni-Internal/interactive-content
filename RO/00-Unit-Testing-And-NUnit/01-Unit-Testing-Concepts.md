@@ -119,9 +119,9 @@ This integration **test does not test the entire system**.
 The difference between unit testing and integration testing is that unit tests examine the functionality of a **single unit** and they mock the external dependencies,
 while integration tests examine the functionality on **several units together** and test the integration between the dependent units.
 
-Unit Tests have a smaller scope, which is usually a **single public method** (or function).
+Unit tests have a smaller scope, which is usually a **single public method** (or function).
 
-Integration Tests implement more complex scenarios.
+Integration tests implement more complex scenarios.
 
 Integration testing is performed early in the development process after some of the components are written and unit tested, and they need to be integrated into modules with more complex functionality.
 
@@ -140,7 +140,7 @@ This system test checks all system components together:
 
 - The **back-end services** at the server-side, which are called by the mobile app
 
-- The **data access logic**, implemented in the back-end to access the database, and the **database server**, which stored the app data.
+- The **data access logic**, implemented in the back-end to access the database, and the **database server**, which stored the app data
 
 System testing is performed late in the development process when the entire system is ready or partially ready.
 
