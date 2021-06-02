@@ -8,27 +8,43 @@ js-angular-forms-3-4-Directives-and-directives-overview
 
 There are three types of directives in Angular: **Components**, **Attribute**, and **Structural**.
 
-# Components Directives
+## Component Directives
 
-Angular components are a subset of directives, always associated with a template.
+Angular **components** are a **subset** of directives, always associated with a **template**.
 
 Only one component can be instantiated for a given element in a template.
 
+Since components are template-based, this enables us to build rich **user interfaces**, using an HTML-like syntax.
+
+This HTML is then directly inserted into the **DOM**.
+
 A component must belong to a **NgModule** for it to be available to another component or application.
 
-# Attribute Directives
+## Attribute Directives
 
-They change the appearance or behavior of an **element**, **component**, or another **directive**.
+Attribute directives change the appearance or behavior of an **element**, **component**, or another **directive**.
 
 For example, the built-in **NgStyle** directive can change several element styles at the same time.
 
-# Structural Directives
+Examples include: 
+
+- Highlighting the text of an element 
+- Focusing on an input when a specific action occurs 
+- Showing a definition for a word when the user hovers or clicks on an element 
+- Hiding and showing a modal when a button is clicked
+
+
+## Structural Directives
 
 Structural directives are responsible for the **HTML** layout. 
 
 They change the DOM's structure, usually by **adding**, **removing**, or **manipulating** elements.
 
-Here are some of the built-in structural directives: **NgIf**, **NgFor**, and **NgSwitch**.
+Here are some of the built-in structural directives: 
+
+- **NgIf** - accepts an expression which evaluates to either `true` or `false`
+- **NgFor** and **NgForOf** - renders templates for each items in a collection
+- **NgSwitch** - accepts a switch statement
 
 They are easy to recognize: 
 
@@ -36,7 +52,7 @@ They are easy to recognize:
 <div *ngIf="hero" class="name">{{hero.name}}</div>
 ```
 
-As shown above, an asterisk `*` precedes the directive attribute's name.
+As shown above, an asterisk `*` precedes a directive attribute's name.
 
 [/slide]
 
@@ -46,13 +62,63 @@ As shown above, an asterisk `*` precedes the directive attribute's name.
 
 js-angular-forms-5-Directives-Comparison
 
-Attribute directives look like **HTML** attributes, and they only change the element they are added to.
+## Attribute Directives
 
-Examples: **ngStyle**, **ngClass**.
+Attribute directives have their own layout view and styles.
 
-Structural directives have a leading `*` and make changes to the **DOM**.
+In other words, they deal with changing the look and behavior of a DOM element.
 
-Examples: `*ngIf`, `*ngFor`.
+An attribute directive has a single component on a host element, but supports multiple directives.
+
+Some examples include the  `ngStyle` and `ngClass` directives.
+
+### `ngStyle`
+
+The `ngStyle` directive is used to set CSS style properties to an element:
+
+```js
+<some-element [ngStyle]="{'font-style': styleExpression}">...</some-element>
+```
+
+It is declared using square brackets, with the `ngStyle` keyword inside.
+
+Each style property is defined just like in `CSS` file:
+
+```js
+{'max-width.px': widthExpression}
+```
+
+### `ngClass`
+
+We use `ngClass` to assign and remove CSS classes from an HTML element.
+
+It accepts three types of expressions:
+
+- `string` - the classes in the string are added, after being split by a space
+
+```js
+<div [ngClass]="'main navbar'">...</div>
+```
+
+- `Array` - classes are added in the arrangment of the array
+
+```js
+<article [ngClass]="['secondary', 'last-article']">...</article>
+```
+
+- `Object` - keys are CSS classes that get added when the expression given in the value evaluates to a truthy value, otherwise they are removed
+
+```js
+<ul [ngClass]="{'first': true, 'second': true, 'third': false}">...</ul>
+```
+
+## Structural Directives
+
+The main purpose of structural directives is to define and modify the HTML layout, and the structure of the DOM.
+
+It is important to note that we can apply only one structural directive to a host element.
+
+There are three main structural directives in Angular: `*ngIf`, `*ngFor` and `*ngSwitch`.
 
 [/slide]
 
