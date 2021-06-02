@@ -8,7 +8,7 @@ Angular-Modules-and-routing-11-12-Router-module
 
 To create a template, we need to go through a number of steps.
 
-The first one is to add a **base meta tag** in the index.html file.
+The first one is to add a **base meta tag** in the `index.html` file.
 
 The tag looks like this: `<base href="/">`.
 

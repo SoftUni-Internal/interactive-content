@@ -47,23 +47,24 @@ input.ng-invalid.ng-touched {
 }
 ```
 
-**Validation**
+## Validation
 
-- The full name input field must contain **two names** (letters only) separated by a **space**. Both should start with a **capital** letter.
-- The email input field must be a **valid email** address.
-- The phone number input field must be a **9 digit** number.
-- The password input field must be **between 3 and 16 symbols** and must contain only **letters** and **digits**.
-- Both passwords must **match**.
+- The full name input field must contain **two names** (letters only) separated by a **space**
+    * both should start with a **capital** letter.
+- The email input field must be a **valid email** address
+- The phone number input field must be a **9 digit** number
+- The password input field must be **between 3 and 16 symbols** and must contain only **letters** and **digits**
+- Both passwords must **match**
 
-Output error messages inside a **div** with class "**alert alert-danger**" when an input field is **invalid** and **touched**.
+Output error messages inside a `div` with class "**alert alert-danger**" when an input field is **invalid** and **touched**.
 
 Also **disable** the **submit button** if the input field is **invalid**.
 
-**Grouping**
+## Grouping
 
-Wrap both password fields inside a common **ngModelGroup** and add the **password validation** after the group definition.
+Wrap both password fields inside a common `ngModelGroup` and add the **password validation** after the group definition.
 
-The form should look like this:
+At the **end** your form should look like this:
 
 [image assetsSrc="Angular-Forms(1).png" /]
 
@@ -97,7 +98,7 @@ Create a new component **register-form-reactive** and build the same form using 
 
 Create your own **form groups** and **form controls**. 
 
-Optionally you can inject the **form builder**. 
+Optionally, you can inject the **form builder**. 
 
 Validate the fields using **Validators**.
 
