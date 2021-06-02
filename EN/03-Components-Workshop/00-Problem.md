@@ -4,19 +4,17 @@
 
 # Task Requirements
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/04-Components-Workshop.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/new-resources-workshop-Components.zip) **for this task.**
 
-You will be provided with a skeleton (HTML and CSS). 
+This task contains a program skeleton which consists of **HTML** and **CSS** code, please do not alter its structure. 
 
-When starting the `index.html`, the following page will appear:
+When starting the `index.html`, the following page will appear: 
 
-[image assetsSrc="Angular-Components-Workshop.png" /]
+[image assetsSrc="Angular-Components-Workshop-New.png" /]
 
-The application is a forum, where each registered user can create a theme or post a comment. 
+The application is a forum, where each registered user can create a theme or post a comment.
 
-For now, your task is to check the given skeleton (HTML and CSS files) and **split them into components**, so each part can be **reusable**.
-
-Be careful when you structure the components.
+The first part of the assignment is to split the HTML and CSS code from the skeleton **into components**, so that each part can be **reusable**. 
 
 [/slide]
 
@@ -24,29 +22,29 @@ Be careful when you structure the components.
 
 # MongoDB
 
-Before you start with creating a new project in Angular you need to install MongoDB. 
+Before you start a new project in Angular you need to install MongoDB. 
 
-You can find an installation guide in the provided [document](https://mega.nz/file/bMZC3ThT#1F--LRBifNwhKe_qg2eUgE9ZpV0u2tSx6u2jjpZO3cY).
+You can find an installation guide in the following document:  
 
-After the successful installation, your database will be empty, so you can load the provided from us initial data in it as follows:
+[MongoDB-Installation-Guide.docx](https://mega.nz/file/bMZC3ThT#1F--LRBifNwhKe_qg2eUgE9ZpV0u2tSx6u2jjpZO3cY).
 
-- Download the provided folder named `forum`.
+After the installation your database will be empty, so you can load the provided initial data: 
 
-- You have to have mongod running on a separate system command line.
+- Download the folder named "forum"
 
-- Open a new command line and in the console write the following command:
+- Start MongoDB on a system command line
+
+- Open a new command prompt and in the console type in the following command: 
 
 `mongorestore -d forum C:\Users\Name\Desktop\forum`
 
 **Note** `C:\Users\Name\Desktop\forum`- **replace with the path of the folder** `forum` **in your computer!!**
 
-On the console you will see something like this:
+If it runs correctly, the console output should have a similar look to this one: 
 
 [image assetsSrc="Angular-Components-Workshop(1).png" /]
 
-**This is it!**
-
-Now you can check if the **db** is in your **dbs** using the following commands:
+That's it! Now you can check if the db is in your dbs using the "show dbs" command: 
 
 [image assetsSrc="Angular-Components-Workshop(2).png" /]
 
@@ -56,13 +54,13 @@ Now you can check if the **db** is in your **dbs** using the following commands:
 
 # REST API
 
-You are also provided with a [REST API](https://mega.nz/file/yN4k0RoS#pGmJUZli5wta8YIUC496T10bSv45sgbm62MeIX8vKmQ).
+You can find the **REST API** in the [resources](https://mega.nz/file/yN4k0RoS#pGmJUZli5wta8YIUC496T10bSv45sgbm62MeIX8vKmQ).
 
-To bring life to that API you should first install the dependencies with the command `npm install`. 
+To make use of it you should install the required dependencies by typing in the `npm install` command. 
 
-After that, type the command `npm start`. 
+After that, type in `npm start`. 
 
-To fetch the themes, you will have to make a GET request on `localhost:3000/api/themes`.
+To fetch the themes, make a GET request on `localhost:3000/api/themes`.
 
 Here are the REST API endpoints specifications:
 
@@ -87,10 +85,9 @@ Here are the REST API endpoints specifications:
 
 ## Logged/Unlogged User
 
-**NOTE: Because we have not covered authentication yet (how to log in and register), you can hardcode it with a variable.**
+**NOTE: Because we have not covered authentication yet (ogging in and registering), you can hardcode it using a variable.**
 
-**Logged out** users see the login and Register buttons/links.
-
+**Logged out** users should see the **Login** and **Register** buttons/links. 
 
 [/slide]
 
@@ -98,13 +95,13 @@ Here are the REST API endpoints specifications:
 
 # Implementation of the Main Section
 
-After the backend is ready to use, you should **fetch all themes** and **list them** on the home page in the format you saw in the skeleton.
+After the backend is ready to use, you should **fetch all themes** and **list them** on the home page in the format provided in the skeleton.  
 
-The **themes** **in the main** section should be **descending sorted by the subscribers**.
+The **themes in the main** section should be **sorted in descending order according to the subscribers.**  
 
-Each theme should have a **title**, **date** (when the theme is created), the username of the creator, **count of the subscribers** of the theme. 
+Each theme should have a **title**, **date** (of creation), the **username** of its creator, **count of the subscribers** of that theme. 
 
-[image assetsSrc="Angular-Components-Workshop(3).png" /]
+[image assetsSrc="Angular-Components-Workshop-New-2.png" /]
 
 [/slide]
 
@@ -112,16 +109,16 @@ Each theme should have a **title**, **date** (when the theme is created), the us
 
 # Implementation of the Aside Section
 
-In the **Recent posts section, only the 5 latest posts** must be shown! 
+In the **Recent posts section, only the 5 latest posts** should be rendered.
 
 `https://localhost:3000/api/posts?limit=5` 
 
-The posts will be returned from the REST-API **sorted by the time of creation**.
+The posts will be returned from the REST-API **sorted by time of creation**.
 
-Each component should have a **title (the title of the theme)**, a **username** of the user, to whom the last comment in the theme belongs, and the **time** the post was created.
+Each component should contain the **theme title**, the **username** of the last user to post a comment in the theme thread and the **time** the post was created. 
 
 
-[image assetsSrc="Angular-Components-Workshop(4).png" /]
+[image assetsSrc="Angular-Components-Workshop-New-3.png" /]
 
 [/slide]
 
