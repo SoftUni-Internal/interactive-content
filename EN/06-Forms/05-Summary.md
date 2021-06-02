@@ -6,7 +6,7 @@
 
 js-angular-forms-49-Summary.mp4
 
-- There are three types of Directives
+- There are three types of **directives**
     - Components, Structural, Attribute
 ```js
 @Directive({
@@ -16,9 +16,9 @@ export class HighlightDirective {
     constructor() { }
 }
 ```
-- There are two ways to handle forms in Angular
-    - Template-driven Forms
-    - Reactive Forms
+- There are two ways to handle **forms** in Angular
+    - Template-driven forms
+    - Reactive forms
 ```js
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';

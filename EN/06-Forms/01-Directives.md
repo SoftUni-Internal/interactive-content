@@ -128,7 +128,7 @@ There are three main structural directives in Angular: `*ngIf`, `*ngFor` and `*n
 
 js-angular-forms-6-Build-a-Simple-Attribute-Directive
 
-An attribute directive requires the building of a controller class annotated with the `@Directive` decorator.
+An attribute directive requires building a controller class annotated with the `@Directive` decorator.
 
 ```js
 import { Directive } from '@angular/core'
@@ -171,7 +171,7 @@ export class HighlightDirective implements OnInit {
 
 Angular is not limited to run only on the browser. 
 
-Иt can also run with **service workers**.
+It can also run with **service workers**.
 
 **Services Worker** is an environment where the DOM is **inaccessible**.
 
@@ -189,9 +189,9 @@ import { Renderer2 } from '@angular/core'
 
 js-angular-forms-8-Warning - Use-Renderer2
 
-To be able to use **Renderer2** inject it. 
+In order to use Renderer2, we have to inject it.
 
-This way, we can access its methods to change the DOM.
+This way, we can access its methods and modify the DOM.
 
 ```js
 constructor( private renderer: Renderer2) { }
