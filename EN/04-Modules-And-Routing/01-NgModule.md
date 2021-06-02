@@ -90,15 +90,52 @@ Doing so will ensure proper separation of concerns, and it will improve scalabil
 
 ## Shared Modules
 
+```js
+import { CommonModule } from '@angular/common';
+import { NgModule } from '@angular/core';
+
+import { CustomerComponent } from './components/customer/customer.component';
+import { PercentagePipe } from './pipes/percentage/percentange.pipe';
+import { CustomerStyleDirective } from './directives/customer-style/customer-style.directive';
+
+@NgModule({
+  imports: [ CommonModule ],
+  exports: [
+    CommonModule,
+    CustomerComponent,
+    PercentagePipe,
+    CustomerStyleDirective 
+  ],
+  declarations: [ CustomerComponent, CustomerStyleDirective, PercentagePipe ]
+})
+export class SharedModule { }
+```
+
 Shared modules contain pieces of our application, shared across multiple areas.
 
 We declare a shared module to enable component reuse.
 
 An example of a shared module is a loading animation, used throughout our app.
 
-## Feature Module 
+## Feature Modules
 
-Feature modules encapsulate all of the content inside of a single area.
+```js
+import { NgModule } from '@angular/core';
+import { SharedModule } from '../shared/SharedModule';
+
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProjectComponent } from './project/project.component';
+
+@NgModule({
+  imports: [
+    NgModule,
+    SharedModule
+  ],
+  declarations: [ DashboardComponent, ProjectComponent ]
+})
+export class DashboardModule { }
+```
+
 
 A feature module is a sub-application inside your project.
 
@@ -107,6 +144,27 @@ An Angular application contains multiple feature modules.
 Using them ensures better scalabity and also enables lazy loading, which we will learn about in a later lesson.
 
 ## Core Modules
+
+```js
+import { NgModule, Optional, SkipSelf } from '@angular/core';
+
+import { ApiService } from './services/api.service';
+
+@NgModule({
+  providers: [ ApiService ]
+})
+
+export class CoreModule {
+   // Cannot be used more than once
+  constructor(@Optional() @SkipSelf() parent: CoreModule) {
+    if (parent) {
+      throw new Error(
+        'You can only import CoreModule in the root module.'
+      );
+    }
+  }
+}
+```
 
 Core Modules are a way to separate the configuration layer of our application from the rest of the application.
 
