@@ -47,7 +47,7 @@ transferSubtractsFromSourceAddsToDestAccount() {}
 
 ## Automated Tests: Good Practices
 
-We must write reliable and trustworthy tests.
+We must write **reliable** and **trustworthy** tests.
 
 The passing test should produce **no output** while the **failing** tests must have a clear output message that describes the errors.
 
@@ -65,7 +65,7 @@ Even 70 - 80 % code coverage is a very good goal to achieve.
 
 And not the final place, tests should **cleanup** properly any resources used.
 
-Unit Testing helps the development and delivery of modern applications by ensuring that all code meets quality standards before it's deployed.
+Unit testing helps the development and delivery of modern applications by ensuring that all code meets quality standards before it's deployed.
 
 By understanding all the best practices we can save much time and effort during our development process.
 
