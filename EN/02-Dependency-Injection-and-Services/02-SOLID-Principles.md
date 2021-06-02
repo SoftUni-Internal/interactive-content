@@ -27,11 +27,11 @@ When **combined**, these principles make our applications easier to **maintain**
 
 It states that **every class** should have **responsibility** over **only one** part of a program's functionality.
 
-In other words, class behavior should remind unchanged during the life of our application.
+In other words, class behavior should remind **unchanged during the life of our application**.
 
-In the Angular context, a certain component in our app should have only one mission, which is to represent certain data using templates, together to ensure the communication between a component and template. 
+In the Angular context, a certain component in **our app should have only one mission**, which is to represent **certain data using templates**, together to ensure the communication between a **component and template**. 
 
-A component should not make an HTTP call, then modify data, then sen those data, etc., which is not in the context of Angular's component.
+A component should **not make an HTTP call**, then modify data, then sen those data, etc., which is not in the **context of Angular's component**.
 
 This job is performed by services, which is the topic of the next section.
 
