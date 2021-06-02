@@ -21,7 +21,7 @@ Instead of having to **write the code for every component** we can just make use
 
 A service could be a **function**, it could be a **variable**, or a **feature** that an application needs, and once written they could be injected into all of these components.
  
-A component can basically **delegate** tasks like:
+A component can **delegate** tasks like:
 - **Fetching** data from the server
 - **Validating** user input
 
@@ -37,7 +37,7 @@ This decorator **tells** Angular that the class is a **service** and can be **in
 
 For example, if you want to make **AJAX calls** you can have **methods** to those calls in the **service** and then use it as a **dependency** in files.
 
-- Services are **singleton**, meaning that only a **single** instance of service gets **created** and the** same instance** is used by **each and every** building block in the application 
+- Services are **singleton**, meaning that only a **single** instance of service gets **created** and the** same instance** is used by ** each** building block in the application 
 
 - Service can be **registered** as a part of a **module** or it can be **registered** as a part of the **component** 
 
@@ -61,9 +61,9 @@ Inside, type in the following code:
 
 ```js
 export class NotifyService {
-	notify(message: string) { 
-		alert(message); 
-	}
+  notify(message: string) { 
+    alert(message); 
+  }
 }
 ```
 
@@ -93,15 +93,15 @@ import { NotifyService } from './notify.service.ts';
 })
 
 export class AppComponent {
-	constructor(private notifyService: NotifyService) {
-		this.notifyService.notify("Our service is working!")
-	}
+  constructor(private notifyService: NotifyService) {
+    this.notifyService.notify("Our service is working!")
+  }
 }
 ```
 
 At the top of our file, we import the `NotifyService` class.
 
-In the `@Component` decorator, we pass an array which contains our class, to the `providers` property.
+In the `@Component` decorator, we pass an array that contains our class, to the `providers` property.
 
 Then, we add `NotifyService` to the constructor of the `AppComponent` class as a parameter.
 

@@ -6,7 +6,7 @@
 
 23-24-RxJS-and-Observables-and-functional-programming
 
-The premise of functional programming is that functions should have **no side effects**, neaning a function only **does one thing** and does not change the state.
+The premise of functional programming is that functions should have **no side effects**, meaning a function only **does one thing** and does not change the state.
 
 There are of course some **exceptions** to this rule, especially when dealing with **IO libraries** or functions.
 
@@ -26,11 +26,11 @@ JavaScript is a **single-threaded** language, the majority of JavaScript code th
 
 That means for the most part the code runs from **top to bottom**, always in the same order, in kind of a **procedural** way.
 
-Asynchronous code starts **very similar**, at the top of the file and execute the code until it **gets to the bottom**, but during that execution could run into certain asynchronous functions.
+Asynchronous code starts **very similar**, at the top of the file and executes the code until it **gets to the bottom**, but during that execution could run into certain asynchronous functions.
 
-Then the code will **split off** and execute that **asynchronous code separately** from the rest of the code and that's usually because it needs to **wait for** the result of some operation that takes a l**ong period**.
+Then the code will **split off** and execute that **asynchronous code separately** from the rest of the code and that's usually because it needs to **wait for** the result of some operation that takes a **long period**.
 
-So the synchronous code will **execute from the top** and execute until it h**its something asynchronous** and then it will execute that as a result, we may have multiple **different threads** running the code in different sections.
+So the synchronous code will **execute from the top** and execute until it h**it is something asynchronous** and then it will execute that as a result, we may have multiple **different threads** running the code in different sections.
 
 So the code may execute in a **different order** depending on how **long** a certain operation takes, thus make code harder to work with.
 
@@ -67,11 +67,11 @@ The stream starts with some **kind of event** indicates an event with some kind 
 
 So stream is moving along, and if **something goes wrong** it can send off an **error which** can notify.
 
-We can have our a**pplication react to that**, and then it keeps going and it can **send off a signal when it is complete**.
+We can have our **application react to that**, and then it keeps going and it can **send off a signal when it is complete**.
 
-Some streams **will not complete**, for instance, you can get a **stream from most movements** and those do not complete they are just g**oing to keep going** as long as you move the mouse.
+Some streams **will not complete**, for instance, you can get a **stream from most movements** and those do not complete they are just **going to keep going** as long as you move the mouse.
 
-Whereas something like an **HTTP GET request** you are going to get the data through the stream and it is **going to complete**.
+Whereas something like an **HTTP GET request** you is going to get the data through the stream and it is **going to complete**.
  
 The way that we work with these streams is with what's called an observable.
 
@@ -105,7 +105,7 @@ They can be used to:
 
 # Introducing RxJS
 
-27-Intoducing-RxJS
+27-Introducing-RxJS
 
 ReactiveX or RxJS, short for **R**eactive E**x**tensions for **J**ava**S**cript it is a library for composing asynchronous programs by using observable sequences and it provides a long list of operators which allows to:
 
@@ -114,7 +114,7 @@ ReactiveX or RxJS, short for **R**eactive E**x**tensions for **J**ava**S**cript 
 - **Transform** observables
 - **Combined** and compose observables 
 
-Reactive extensions are not limited to just JavaScript it is also available for many of the popular programming languages like Java, C#, Scala, Clojure, Swift and others.
+Reactive extensions are not limited to just JavaScript it is also available for many of the popular programming languages like Java, C#, Scala, Clojure, Swift, and others.
 
 
 ## How to install RxJS

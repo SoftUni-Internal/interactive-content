@@ -12,7 +12,7 @@ For detecting every change, Angular uses [NgZone](https://angular.io/guide/zone)
 
 Monkey patching is a technique that we can use if we want to extend or modify the behavior of a piece of code/function.
 
-NgZone has the ability to realize when an asynchronous operation has been called and/or if this operation has finished. 
+NgZone can realize when an asynchronous operation has been called and/or if this operation has finished. 
 
 This gives an ability to Angular to know when changes are made by running the change detection, which goes from the main component down to the entire tree of components and checks for changes.
 

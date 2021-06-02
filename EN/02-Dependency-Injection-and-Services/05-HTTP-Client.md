@@ -12,7 +12,7 @@ What these products all have in common is that they provide a **restful API** th
 
 A **restful API** is and how **communication** works between the client and the server. 
 
-On the one side there is a **client** on the other side is a **server**, restful is simply a way for these two parties to **communicate** in a **standardized** way by using the HTTP protocol. 
+On the one side, there is a **client** on the other side is a **server**, restful is simply a way for these two parties to **communicate** in a **standardized** way by using the HTTP protocol. 
 
 Data can be only retrieve without **modifying** it by using the "**GET**" request, and the server will respond with the **status code** as well as the data that was **requested**.
 
@@ -50,7 +50,7 @@ At the beginning of your file, import `HttpClientModule`:
 
 Then, put `HttpClientModule` in the imports array.
 
-From now on `HttpClient` can be injected in Services.
+From now on `HttpClient` can be injected into Services.
 
 [/slide]
 
@@ -111,7 +111,7 @@ import { PhotosService } from 'services/photos.service.ts';
 // ...
 
 export class PhotosComponent implements OnInit {
-  photos: Photos[];  
+  photos: Photos[];   
   constructor (
    private photosService : PhotosService
   ) { }
