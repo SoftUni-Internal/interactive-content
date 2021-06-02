@@ -20,8 +20,7 @@ The **interpreter** is "**a program which executes programs**".
 
 The interpreter itself is also written in a programming language. 
 
-It executes the commands in the program code **one after another**, not only can it process a single command or sequence of commands but it can cope with 
-much more complicated constructions.
+It executes the commands in the program code **one after another**, not only can it process a single command or sequence of commands but it can cope with much more complicated constructions.
 [/slide]
 
 [slide hideTitle]
