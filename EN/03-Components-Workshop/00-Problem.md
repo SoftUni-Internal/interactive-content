@@ -26,7 +26,7 @@ Before you start a new project in Angular you need to install MongoDB.
 
 You can find an installation guide in the following document:  
 
-[MongoDB-Installation-Guide.docx](https://mega.nz/file/bMZC3ThT#1F--LRBifNwhKe_qg2eUgE9ZpV0u2tSx6u2jjpZO3cY).
+[MongoDB-Installation-Guide.docx](https://videos.softuni.org/resources/javascript/javascript-angular/MongoDB-Installation-Guide.zip).
 
 After the installation your database will be empty, so you can load the provided initial data: 
 
@@ -54,7 +54,7 @@ That's it! Now you can check if the db is in your dbs using the "show dbs" comma
 
 # REST API
 
-You can find the **REST API** in the [resources](https://mega.nz/file/yN4k0RoS#pGmJUZli5wta8YIUC496T10bSv45sgbm62MeIX8vKmQ).
+You can find the **REST API** in the [resources](https://videos.softuni.org/resources/javascript/javascript-angular/Rest-api-resources.zip).
 
 To make use of it you should install the required dependencies by typing in the `npm install` command. 
 
@@ -85,7 +85,7 @@ Here are the REST API endpoints specifications:
 
 ## Logged/Unlogged User
 
-**NOTE: Because we have not covered authentication yet (ogging in and registering), you can hardcode it using a variable.**
+**NOTE: Because we have not covered authentication yet (logging in and registering), you can hardcode it using a variable.**
 
 **Logged out** users should see the **Login** and **Register** buttons/links. 
 
