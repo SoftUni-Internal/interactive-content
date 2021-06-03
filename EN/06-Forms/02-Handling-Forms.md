@@ -14,6 +14,10 @@ Both capture user input events from the view, validate the user input, create a 
 
 They also provide a way to track changes.
 
+**Reactive** forms are easier to reuse and test, while also being more robust, and enabling better scalability.
+
+**Template-driven** forms are applicable in more basic use cases.
+
 [/slide]
 
 [slide hideTitle]
@@ -45,6 +49,16 @@ Create a **template-driven** form that looks like this:
 
 [image assetsSrc="Angular-Forms.png" /]
 
+As you can see above, it must contain:
+
+- A **processor** input field with a label, and a placeholder of "Intel Core i7"
+
+- A **RAM** input field and label, with a placeholder of "16 GB DDR4"
+
+- A **Hard Disk (GB)** input field of type "number", a label, and a "1000" placeholder 
+
+- And lastly, an input field and label for an **Operating System**, such as "Windows 10"
+
 [/slide]
 
 [slide hideTitle]
@@ -53,11 +67,15 @@ Create a **template-driven** form that looks like this:
 
 js-angular-forms-16-Import-Bootstrap
 
-First, install Bootstrap. 
+Bootstrap is a very powerful JavaScript plugin and one of the most popular front-end toolkits.
 
-It is the most popular open-source front-end framework for designing websites and web apps.
+Install it using **NPM**:
 
-Install via **npm** and import it inside `angular.json` file.
+```
+npm install bootstrap
+```
+
+Then, import it inside the `angular.json` file as follows:
 
 ```
 "styles": [
@@ -66,7 +84,9 @@ Install via **npm** and import it inside `angular.json` file.
 ]
 ```
 
-Create **containers**, **form-groups**, **form-controls**, **style buttons** and **errors**.
+As shown above, you have locate the `styles` array and paste the path to `bootstrap.min.css` in **node_modules**.
+
+You will use Bootstrap to create **containers**, **form-groups**, **form-controls**, **style buttons** and **errors**.
 
 [/slide]
 
@@ -76,9 +96,9 @@ Create **containers**, **form-groups**, **form-controls**, **style buttons** and
 
 js-angular-forms-17-Introducing-Forms-Module
 
-Angular is module-based, and to handle forms, we need **Forms Module**.
+Since Angular is module-based, to handle forms we have to import the **FormsModule**.
 
-Import the following in `app.module.ts`.
+You can do so in `app.module.ts` as shown below:
 
 ```js
 import { FormsModule } from '@angular/forms';
@@ -91,6 +111,8 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppModule { }
 ```
+
+The Forms Module exports multiple providers and directives, required for building template-driven forms.
 
 [/slide]
 

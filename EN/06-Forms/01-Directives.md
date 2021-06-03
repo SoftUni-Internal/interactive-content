@@ -214,6 +214,16 @@ ngOnInit() {
 }
 ```
 
+In this example, we use the `setStyle` callback to set a CSS style to the current element.
+
+It accepts three arguments:
+
+- The **element**
+- The **name** of the style
+- The corresponding **value**
+
+Renderer2 has multiple other methods, such as `setProperty`, `setValue`, and `removeStyle`.
+
 [/slide]
 
 [slide hideTitle]
@@ -243,6 +253,10 @@ Use the **HostListener** decorator.
 }
 ```
 
+In this example, we set the color of an element to yellow when a `mouseenter` event occurs.
+
+When the mouse pointer leaves the element, the color will be set to blue.
+
 [/slide]
 
 [slide hideTitle]
@@ -251,9 +265,13 @@ Use the **HostListener** decorator.
 
 js-angular-forms-11-Using-HostBinding
 
-**HostBinding** is a **decorator** that marks a DOM property as a host-binding property and supplies configuration metadata. 
+We use the `HostBinding` **decorator** to mark a DOM property as a host-binding property.
 
-Angular automatically checks host property bindings during change detection, and if a binding changes, it updates the host element of the directive.
+It also supplies configuration metadata. 
+
+Angular performs automatic checks on host property bindings during change detection.
+
+If a binding change is detected, it updates the host element of the directive.
 
 ```js
 import { HostBinding } from '@angular/core'
@@ -266,5 +284,7 @@ export class BasicHighlightDirective {
     }
 }
 ```
+
+In the above code, we create a directive that sets the `backgroundColor` CSS property on an element.
 
 [/slide]
