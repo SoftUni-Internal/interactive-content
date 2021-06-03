@@ -6,9 +6,9 @@
 
 03-04-introduction-to-state-management
 
-The **NgRx** framework is used for building **reactive Angular applications**.
+The **NgRx** framework is created for building **reactive Angular applications**.
 
-It provides a group of **libraries** for **controlling application state**, and the **flow of data** throughout the application.
+It provides a selection of **libraries** for **controlling application state** and the **flow of data** throughout the application.
 
 Inspired by **Redux**, **NgRx Store** makes working with complex data **easier** for us to **manage** and **test**.
 
@@ -48,7 +48,7 @@ Inspired by **Redux**, **NgRx Store** makes working with complex data **easier**
 ## View Control
 
 - **Component** - enables creating fully reactive Angular applications:
-  * allows for more control over how components are rendered
+  * allows for more control over the rendering process of components
   * currently in an experimental phase
 
 ## Developer Tooling
@@ -56,7 +56,7 @@ Inspired by **Redux**, **NgRx Store** makes working with complex data **easier**
 - **Store Devtools** - provides developer tools for `@ngrx/store`
 
 - **Schematics** - a scaffolding library that provides CLI commands for generating constructs:
-  * all other libraries must be installed first
+  * all the other libraries must be installed first
 
 
 [/slide]

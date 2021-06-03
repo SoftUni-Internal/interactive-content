@@ -10,7 +10,7 @@
   * install using `npm install @ngrx/store`
 
 
-- **Actions** in NgRx Store have a `type`, in the form of a string
+- **Actions** in NgRx Store have a `type` in the form of a string
   * they contain a payload of data
 
 ```js

@@ -10,7 +10,7 @@ The `@ngrx/store` library is a **state management tool** that implements the **R
 
 It stores all of our application **data** in a **single immutable object**, called the **Store**.
 
-The store is the **single source of truth** for our application, and as such it must have an **initial state**.
+The store is the **single source of truth** for our application, and as such, it must have an **initial state**.
 
 NgRx Store enforces a **one-way flow of data** and can only be **modified** using **reducers**.
 
@@ -48,7 +48,7 @@ The process of **sending data** is called **dispatching**.
 
 Actions are **dispatched to** and **handled** by **reducers**.
 
-Every **instance of an Action** implements the built-in **Action interface**, which has a mandatory `type` property.
+Every **instance of an Action** implements the built-in **Action interface** which has a mandatory `type` property.
 
 The `type` property is a **string**, which describes the **action** that will be **dispatched**.
 
@@ -73,17 +73,17 @@ Actions can also contain an optional **payload** of data, like an **email and pa
 
 This example shows three actions for **incrementing**, **decrementing** and **resetting** a **Counter Component**.
 
-If you have not already, now is the time to generate a new Angular project: `ng generate new ngrx-counter`.
+If you have not already, now is the time to generate a new Angular project: `ng generate new ngrx-counter`
 
 ```js
 import { createAction } from '@ngrx/store';
 
-// An action to increment the counter
+// An action to increment  the counter
 export const increment = createAction(
   '[Counter Component] Increment'
 )
 
-// An action to decrement the counter
+// An action to decrement  the counter
 export const increment = createAction(
   '[Counter Component] Increment'
 )
@@ -115,7 +115,7 @@ This method accepts the `type` string and a **payload**, if applicable, and **re
 
 11-Reducers
 
-**Reducers** are used to define **how our application state changes**.
+We use **reducers** to define **how our application state changes**.
 
 They are **responsible** for **handling the transition from one state to another**.
 
@@ -135,16 +135,16 @@ The **Reducer Function** will be used to **modify the state  in the Counter Comp
 ```js
 import { createReducer, on } from '@ngrx/store';
 import { increment, decrement, reset } from './counter.actions';
- 
+ 
 export const initialState = 0;
- 
+ 
 const _counterReducer = createReducer(
   initialState,
   on(increment, (state) => state + 1),
   on(decrement, (state) => state - 1),
   on(reset, (state) => 0)
 );
- 
+ 
 export function counterReducer(state, action) {
   return _counterReducer(state, action);
 }
@@ -157,7 +157,7 @@ Then, we import the actions we created earlier from `counter.actions.ts`.
 
 The `createReducer()` function accepts an **initial state** and a number of `on()` function calls for **every action**.
 
-The `on()` function is used to **make associations between actions and state changes**.
+By invoking the `on()` function, we **make associations between actions and state changes**.
 
 
 [/slide]
@@ -165,7 +165,7 @@ The `on()` function is used to **make associations between actions and state cha
 
 [slide hideTitle]
 
-# Add the StoreModule.forRoot
+# Add the StoreModule.forRoot
 
 13-Add-the-Store-Module.forRoot
 
@@ -206,7 +206,7 @@ Create a new **Counter Component** with **Angular CLI**:
 
 `ng generate component counter`
 
-This will create a `counter` folder inside `src/app` and will **automatically add the component** to the `declarations` array in `app.module.ts`.
+This command will create a `counter` folder inside `src/app` and will **automatically add the component** to the `declarations` array in `app.module.ts`.
 
 Inside `src/app/counter/`, open `counter.component.ts`.
 
@@ -270,7 +270,7 @@ reset() {
 }
 ```
 
-The next step is to generate a few **buttons** and a `div` to **visualize the counter**.
+The next step is to generate a `div`, and a few **buttons** to **visualize the counter**.
 
 Go to `src/app/counter/counter.component.html` and type:
 
