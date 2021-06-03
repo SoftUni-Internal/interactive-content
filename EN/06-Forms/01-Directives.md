@@ -134,7 +134,17 @@ An attribute directive requires building a controller class annotated with the `
 import { Directive } from '@angular/core'
 ```
 
-Then the directive can be imported into the declarations array.
+You can also generate a directive with Angular CLI:
+
+```js
+ng generate directive highlight
+```
+
+This command will create a `highlight.directive.ts` file in the `src/app` directory, as well as a `spec.ts` test file. 
+
+Then the directive can be imported into the declarations array in `AppModule`.
+
+Angular CLI takes care of that automatically.
 
 The **selector** is surrounded with **square brackets** as in the example.
 

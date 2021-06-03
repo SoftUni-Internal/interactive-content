@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-## In this lesson you learned:
+## In this lesson you learned
 
 js-angular-forms-49-Summary.mp4
 
