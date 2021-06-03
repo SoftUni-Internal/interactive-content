@@ -1,8 +1,8 @@
-# Homework
+# Exercise
 
 [slide hideTitle]
-# Problem: Personal Titles
-[code-task title="Problem: Personal Titles" taskId="Personal-Titles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Personal Titles
+[code-task title="Personal Titles" taskId="Personal-Titles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -151,8 +151,8 @@ Mr.
 [/slide]
 
 [slide hideTitle]
-# Problem: Small Shops
-[code-task title="Problem: Small Shops" taskId="Small-Shops" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Small Shops
+[code-task title="Small Shops" taskId="Small-Shops" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -325,8 +325,8 @@ Varna
 [/slide]
 
 [slide hideTitle]
-# Problem: Point of Rectangle
-[code-task title="Problem: Point of Rectangle" taskId="Point-of-Rectangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Point of Rectangle
+[code-task title="Point of Rectangle" taskId="Point-of-Rectangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -557,8 +557,8 @@ Outside
 [/slide]
 
 [slide hideTitle]
-# Problem: Fruit or Vegetable
-[code-task title="Problem: Fruit or Vegetable" taskId="Fruit-or-Vegetable" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Fruit or Vegetable
+[code-task title="Fruit or Vegetable" taskId="Fruit-or-Vegetable" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -678,8 +678,8 @@ unknown
 [/slide]
 
 [slide hideTitle]
-# Problem: Invalid Number
-[code-task title="Problem: Invalid Number" taskId="Invalid-Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Invalid Number
+[code-task title="Invalid Number" taskId="Invalid-Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -782,8 +782,8 @@ invalid
 [/slide]
 
 [slide hideTitle]
-# Problem: Point On Rectangle
-[code-task title="Problem: Point On Rectangle" taskId="Point-on-Rectangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Point On Rectangle
+[code-task title="Point On Rectangle" taskId="Point-on-Rectangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1040,8 +1040,8 @@ Inside / Outside
 [/slide]
 
 [slide hideTitle]
-# Problem: Fruit Shop
-[code-task title="Problem: Fruit Shop" taskId="Fruit-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Fruit Shop
+[code-task title="Fruit Shop" taskId="Fruit-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1244,8 +1244,8 @@ error
 [/slide]
 
 [slide hideTitle]
-# Problem: Trade Commision
-[code-task title="Problem: Trade Commision" taskId="Trade-Commision" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Trade Commision
+[code-task title="Trade Commision" taskId="Trade-Commision" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1421,8 +1421,8 @@ error
 [/slide]
 
 [slide hideTitle]
-# Problem: Day Of Week
-[code-task title="Problem: Day Of Week" taskId="Day-of-Week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Day Of Week
+[code-task title="Day Of Week" taskId="Day-of-Week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1509,8 +1509,8 @@ Error
 [/slide]
 
 [slide hideTitle]
-# Problem: Animal Type
-[code-task title="Problem: Animal Type" taskId="Animal-Type" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Animal Type
+[code-task title="Animal Type" taskId="Animal-Type" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1573,8 +1573,8 @@ unknown
 [/slide]
 
 [slide hideTitle]
-# Problem: Cinema 
-[code-task title="Problem: Cinema " taskId="Cinema" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Cinema 
+[code-task title="Cinema " taskId="Cinema" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1827,8 +1827,8 @@ Discount
 [/slide]
 
 [slide hideTitle]
-# Problem: Volleyball
-[code-task title="Problem: Volleyball" taskId="Volleyball" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Volleyball
+[code-task title="Volleyball" taskId="Volleyball" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2011,8 +2011,8 @@ leap
 [/slide]
 
 [slide hideTitle]
-# Problem: Point in the Figure
-[code-task title="Problem: Point in the Figure" taskId="Point-in-the-Figure" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Point in the Figure
+[code-task title="Point in the Figure" taskId="Point-in-the-Figure" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

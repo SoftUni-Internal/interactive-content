@@ -1,8 +1,8 @@
-# Homework
+# Exercise
 
 [slide hideTitle]
-# Problem: On Time for the Exam
-[code-task title="Problem: On Time for the Exam" taskId="On-Time-For-The-Exam" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+#  On Time for the Exam
+[code-task title=" On Time for the Exam" taskId="On-Time-For-The-Exam" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -325,8 +325,8 @@ Late
 
 
 [slide hideTitle]
-# Problem: Trip
-[code-task title="Problem: Trip" taskId="Trip" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+#  Trip
+[code-task title=" Trip" taskId="Trip" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -509,8 +509,8 @@ Hotel - 3530.79
 [/slide]
 
 [slide hideTitle]
-# Problem: Operations
-[code-task title="Problem: Operations" taskId="Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+#  Operations
+[code-task title=" Operations" taskId="Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -703,8 +703,8 @@ Cannot divide 0 by zero
 [/slide]
 
 [slide hideTitle]
-# Problem: Match Tickets
-[code-task title="Problem: Match Tickets" taskId="Match-Tickets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+#  Match Tickets
+[code-task title=" Match Tickets" taskId="Match-Tickets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -857,8 +857,8 @@ Yes! You have 22109.47 leva left.
 [/slide]
 
 [slide hideTitle]
-# Problem: Hotel Room
-[code-task title="Problem: Hotel Room" taskId="Hotel-Room" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+#  Hotel Room
+[code-task title=" Hotel Room" taskId="Hotel-Room" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

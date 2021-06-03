@@ -1,8 +1,8 @@
-# Homework
+# Exercise
 
 [slide hideTitle]
 # Problem: Excellent Result
-[code-task title="Problem: Excellent Result" taskId="Excellent-Result" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Excellent Result" taskId="Excellent-Result" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -98,7 +98,7 @@ Excellent!
 
 [slide hideTitle]
 # Problem: Excellent or Not
-[code-task title="Problem: Excellent or Not" taskId="Excellent-or-Not" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Excellent or Not" taskId="Excellent-or-Not" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -194,7 +194,7 @@ Not excellent.
 
 [slide hideTitle]
 # Problem: Even or Odd
-[code-task title="Problem: Even or Odd" taskId="Even-or-Odd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Even or Odd" taskId="Even-or-Odd" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -313,7 +313,7 @@ even
 
 [slide hideTitle]
 # Problem: Greater Number
-[code-task title="Problem: Greater Number" taskId="Greater-Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Greater Number" taskId="Greater-Number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -403,7 +403,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: Number 0...9
-[code-task title="Problem: Number 0...9" taskId="Number-0-9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Number 0...9" taskId="Number-0-9" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -548,7 +548,7 @@ number too big
 
 [slide hideTitle]
 # Problem: Bonus Score
-[code-task title="Problem: Bonus Score" taskId="Bonus-Score" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Bonus Score" taskId="Bonus-Score" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -690,7 +690,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: Sum Seconds
-[code-task title="Problem: Sum Seconds" taskId="Sum-Seconds" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Sum Seconds" taskId="Sum-Seconds" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -854,7 +854,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: Metric Converter
-[code-task title="Problem: Metric Converter" taskId="Metric-Converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Metric Converter" taskId="Metric-Converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1549,7 +1549,7 @@ yd
 
 [slide hideTitle]
 # Problem: Password Guess
-[code-task title="Problem: Password Guess" taskId="Password-Guess" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Password Guess" taskId="Password-Guess" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1621,7 +1621,7 @@ Wrong password!
 
 [slide hideTitle]
 # Problem: Number 100...200
-[code-task title="Problem: Number 100...200" taskId="Number-100-200" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Number 100...200" taskId="Number-100-200" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1749,7 +1749,7 @@ Greater than 200
 
 [slide hideTitle]
 # Problem: Equal Words
-[code-task title="Problem: Equal Words" taskId="Equal Words" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Equal Words" taskId="Equal Words" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -1863,7 +1863,7 @@ yes
 
 [slide hideTitle]
 # Problem: Speed Info
-[code-task title="Problem: Speed Info" taskId="Speed-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Speed Info" taskId="Speed-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2127,7 +2127,7 @@ slow
 
 [slide hideTitle]
 # Problem: Area of Figures
-[code-task title="Problem: Area of Figures" taskId="Area-Of-Figures" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Area of Figures" taskId="Area-Of-Figures" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2227,7 +2227,7 @@ triangle
 
 [slide hideTitle]
 # Problem: Time + 15 Minutes
-[code-task title="Problem: Time + 15 Minutes" taskId="Time-Plus-15-Minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Time + 15 Minutes" taskId="Time-Plus-15-Minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2449,7 +2449,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: 3 Equal Numbers
-[code-task title="Problem: 3 Equal Numbers" taskId="3-Equal-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="3 Equal Numbers" taskId="3-Equal-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -2623,7 +2623,7 @@ no
 
 [slide hideTitle]
 # Problem: Numbers 0...100
-[code-task title="Problem: Numbers 0...100" taskId="Numbers-0-100" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Numbers 0...100" taskId="Numbers-0-100" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

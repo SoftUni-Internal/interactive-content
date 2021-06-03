@@ -1,8 +1,8 @@
-# Homework
+# Exercise
 
 [slide hideTitle]
 # Problem: Training Lab
-[code-task title="Problem: Training Lab" taskId="Training-Lab" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Training Lab" taskId="Training-Lab" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -190,7 +190,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: Vegetable Market
-[code-task title="Problem: Vegetable Market" taskId="Vegetable-Market" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Vegetable Market" taskId="Vegetable-Market" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -348,7 +348,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: Change Tiles
-[code-task title="Problem: Change Tiles" taskId="Change-Tiles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Change Tiles" taskId="Change-Tiles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -529,7 +529,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: Money Tests
-[code-task title="Problem: Money Tests" taskId="Money-Tests" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Money Tests" taskId="Money-Tests" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -705,7 +705,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: Daily Earnings
-[code-task title="Problem: Daily Earnings" taskId="Daily-Earnings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Daily Earnings" taskId="Daily-Earnings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

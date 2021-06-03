@@ -1,7 +1,7 @@
-# Homework
+# Exercise
 [slide hideTitle]
 # Problem: Square Area
-[code-task title="Problem: Square Area" taskId="Square Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Square Area" taskId="Square Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -67,7 +67,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: Inches to Centimeters
-[code-task title="Problem: Inches to Centimeters" taskId="Inches to Centimeters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Inches to Centimeters" taskId="Inches to Centimeters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -132,7 +132,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: Greeting by Name
-[code-task title="Problem: Greeting by Name" taskId="Greeting-By-Name" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Greeting by Name" taskId="Greeting-By-Name" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -198,7 +198,7 @@ Hello, Software University!
 
 [slide hideTitle]
 # Problem: Concatenate Data
-[code-task title="Problem: Concatenate Data" taskId="Concatenate-Data" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Concatenate Data" taskId="Concatenate-Data" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -279,7 +279,7 @@ You are Geek Coder, a 15-years old person from Codeland.
 
 [slide hideTitle]
 # Problem: Trapezoid Area
-[code-task title="Problem: Trapezoid Area" taskId="Trapezoid-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Trapezoid Area" taskId="Trapezoid-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -364,7 +364,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: Circle Area and Perimeter
-[code-task title="Problem: Circle Area and Perimeter" taskId="Circle-Area-and-Perimeter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Circle Area and Perimeter" taskId="Circle-Area-and-Perimeter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -444,7 +444,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: 2D Rectangle Area
-[code-task title="Problem: 2D Rectangle Area" taskId="2D-Rectangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="2D Rectangle Area" taskId="2D-Rectangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -541,7 +541,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: Triangle Area
-[code-task title="Problem: Triangle Area" taskId="Triangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Triangle Area" taskId="Triangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -612,7 +612,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: Celsius to Fahrenhiet
-[code-task title="Problem: Celsius to Fahrenhiet" taskId="Celsius-to-Fahrenhiet" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Celsius to Fahrenhiet" taskId="Celsius-to-Fahrenhiet" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -678,7 +678,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: Radians to Degrees
-[code-task title="Problem: Radians to Degrees" taskId="Radians to Degrees" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Radians to Degrees" taskId="Radians to Degrees" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -745,7 +745,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: USD to BGN
-[code-task title="Problem: USD to BGN" taskId="USD-to-BGN" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="USD to BGN" taskId="USD-to-BGN" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -811,7 +811,7 @@ public class Main {
 
 [slide hideTitle]
 # Problem: Currency Converter
-[code-task title="Problem: Currency Converter" taskId="Currency-Converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Currency Converter" taskId="Currency-Converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -896,7 +896,7 @@ USD
 
 [slide hideTitle]
 # Problem: 1000 Days After Birth
-[code-task title="Problem: 1000 Days After Birth" taskId="1000-Days-After-Birth" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="1000 Days After Birth" taskId="1000-Days-After-Birth" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

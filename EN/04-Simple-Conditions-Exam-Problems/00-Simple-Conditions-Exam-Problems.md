@@ -1,8 +1,8 @@
-# Homework
+# Exercise
 
 [slide hideTitle]
-# Problem: Transport Price
-[code-task title="Problem: Transport Price" taskId="Transport Price" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Transport Price
+[code-task title="Transport Price" taskId="Transport Price" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -170,8 +170,8 @@ night
 [/slide]
 
 [slide hideTitle]
-# Problem: Pipes in Pool
-[code-task title="Problem: Pipes in Pool" taskId="Pipes-In-Pool" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Pipes in Pool
+[code-task title="Pipes in Pool" taskId="Pipes-In-Pool" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -381,8 +381,8 @@ The pool is 10% full. Pipe 1: 54%. Pipe 2: 45%.
 [/slide]
 
 [slide hideTitle]
-# Problem: Sleepy Tom Cat
-[code-task title="Problem: Sleepy Tom Cat" taskId="Sleey-Tom-Cat" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Sleepy Tom Cat
+[code-task title="Sleepy Tom Cat" taskId="Sleey-Tom-Cat" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -549,8 +549,8 @@ Tom will run away
 [/slide]
 
 [slide hideTitle]
-# Problem: Harvest
-[code-task title="Problem: Harvest" taskId="Harvest" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Harvest
+[code-task title="Harvest" taskId="Harvest" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
