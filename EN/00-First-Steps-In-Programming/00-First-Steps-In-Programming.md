@@ -9,7 +9,7 @@
 [slide hideTitle]
 # Problem: Hello Java
 [code-task title="Problem with Solution: Hello Java" taskId="Hello-Java" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java-code]
+[code-editor language=java]
 ```
 public class Main {
   public static void main(String[] args) {
@@ -49,7 +49,7 @@ Hello Java
 [slide hideTitle]
 # Problem with Solution: Hello Java
 [code-task title="Problem: Expression" taskId="Expression" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java-code]
+[code-editor language=java]
 ```
 public class Main {
   public static void main(String[] args) {
@@ -89,7 +89,7 @@ public class Main {
 [slide hideTitle]
 # Problem: Nums 1 to 20
 [code-task title="Problem: Nums 1 to 20" taskId="Nums-1-to-20" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java-code]
+[code-editor language=java]
 ```
 public class Main {
   public static void main(String[] args) {
@@ -167,7 +167,7 @@ public class Main {
 [slide hideTitle]
 # Problem: Triangle of 55 stars
 [code-task title="Problem: Triangle of 55 stars" taskId="Triangle-of-55-stars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java-code]
+[code-editor language=java]
 ```
 public class Main {
   public static void main(String[] args) {
@@ -224,7 +224,7 @@ public class Main {
 [slide hideTitle]
 # Problem: Rectangle Area
 [code-task title="Problem: Rectangle Area" taskId="Rectangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java-code]
+[code-editor language=java]
 ```
 public class Main {
   public static void main(String[] args) {
@@ -319,7 +319,7 @@ public class Main {
 [slide hideTitle]
 # Problem: Square of Stars
 [code-task title="Problem: Square of Stars" taskId="Square-of-Stars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java-code]
+[code-editor language=java]
 ```
 public class Main {
   public static void main(String[] args) {
