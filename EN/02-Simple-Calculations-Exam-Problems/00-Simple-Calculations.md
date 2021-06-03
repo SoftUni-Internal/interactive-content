@@ -1,7 +1,8 @@
 # Homework
+
 [slide hideTitle]
-# Problem: Square Area
-[code-task title="Problem: Square Area" taskId="Square Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Training Lab
+[code-task title="Problem: Training Lab" taskId="Training-Lab" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -23,587 +24,164 @@ public class Main {
 [tests]
 [test open]
 [input]
-2
-[/input]
-[output]
-4
-[/output]
-[/test]
-[test]
-[input]
-2
-[/input]
-[output]
-4
-[/output]
-[/test]
-[test]
-[input]
-5
-[/input]
-[output]
-25
-[/output]
-[/test]
-[test]
-[input]
-100
-[/input]
-[output]
-10000
-[/output]
-[/test]
-[test]
-[input]
-1
-[/input]
-[output]
-1
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Problem: Inches to Centimeters
-[code-task title="Problem: Inches to Centimeters" taskId="Inches to Centimeters" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-5
-[/input]
-[output]
-12.7
-[/output]
-[/test]
-[test]
-[input]
-5
-[/input]
-[output]
-12.7
-[/output]
-[/test]
-[test]
-[input]
-1.5
-[/input]
-[output]
-3.81
-[/output]
-[/test]
-[test]
-[input]
-3.14
-[/input]
-[output]
-7.9756
-[/output]
-[/test]
-[test]
-[input]
-100
-[/input]
-[output]
-254
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Problem: Greeting by Name
-[code-task title="Problem: Greeting by Name" taskId="Greeting-By-Name" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-Nakov
-[/input]
-[output]
-Hello, Nakov!
-[/output]
-[/test]
-[test]
-[input]
-Nakov
-[/input]
-[output]
-Hello, Nakov!
-[/output]
-[/test]
-[test]
-[input]
-beer
-[/input]
-[output]
-Hello, beer!
-[/output]
-[/test]
-[test]
-[input]
-SoftUni
-[/input]
-[output]
-Hello, SoftUni!
-[/output]
-[/test]
-[test]
-[input]
-Software University
-[/input]
-[output]
-Hello, Software University!
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Problem: Concatenate Data
-[code-task title="Problem: Concatenate Data" taskId="Concatenate-Data" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-Maria
-Ivanova
-19
-Pleven
-[/input]
-[output]
-You are Maria Ivanova, a 19-years old person from Pleven.
-[/output]
-[/test]
-[test]
-[input]
-Maria
-Ivanova
-19
-Pleven
-[/input]
-[output]
-You are Maria Ivanova, a 19-years old person from Pleven.
-[/output]
-[/test]
-[test]
-[input]
-Peter
-Nikolov
-22
-Varna
-[/input]
-[output]
-You are Peter Nikolov, a 22-years old person from Varna.
-[/output]
-[/test]
-[test]
-[input]
-???????
-?????
-29
-?????? ???????
-[/input]
-[output]
-You are ??????? ?????, a 29-years old person from ?????? ???????.
-[/output]
-[/test]
-[test]
-[input]
-Geek
-Coder
 15
-Codeland
+8.9
 [/input]
 [output]
-You are Geek Coder, a 15-years old person from Codeland.
+129
 [/output]
 [/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Problem: Trapezoid Area
-[code-task title="Problem: Trapezoid Area" taskId="Trapezoid-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-
-
-[/task-description]
-[code-io /]
-[tests]
 [test open]
 [input]
-8
-13
-7
+8.4
+5.2
 [/input]
 [output]
-73.5
+39
 [/output]
 [/test]
 [test]
 [input]
-4
-6
-8
+15
+9
 [/input]
 [output]
-40
-[/output]
-[/test]
-[test]
-[input]
-100
-200
-300
-[/input]
-[output]
-45000
+129
 [/output]
 [/test]
 [test]
 [input]
 3
-4
-5
+3
 [/input]
 [output]
-17.5
+1
 [/output]
 [/test]
 [test]
 [input]
-8
-13
-7
+3.6
+3.1
 [/input]
 [output]
-73.5
+6
 [/output]
 [/test]
 [test]
 [input]
-1.2
-2.5
-3.7
+3.5
+3.1
 [/input]
 [output]
-6.845
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Problem: Circle Area and Perimeter
-[code-task title="Problem: Circle Area and Perimeter" taskId="Circle-Area-and-Perimeter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-5
-[/input]
-[output]
-78.5398
-31.4159
+3
 [/output]
 [/test]
 [test]
 [input]
-5
+3.6
+3
 [/input]
 [output]
-78.5398
-31.4159
-[/output]
-[/test]
-[test]
-[input]
-20
-[/input]
-[output]
-1256.6370
-125.6637
-[/output]
-[/test]
-[test]
-[input]
-150
-[/input]
-[output]
-70685.8347
-942.4778
-[/output]
-[/test]
-[test]
-[input]
-2.5
-[/input]
-[output]
-19.6350
-15.7080
-[/output]
-[/test]
-[test]
-[input]
-35.875
-[/input]
-[output]
-4043.2788
-225.4093
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Problem: 2D Rectangle Area
-[code-task title="Problem: 2D Rectangle Area" taskId="2D-Rectangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-60
-20
-10
-50
-[/input]
-[output]
-1500
-160
-[/output]
-[/test]
-[test]
-[input]
-60
-20
-10
-50
-[/input]
-[output]
-1500
-160
-[/output]
-[/test]
-[test]
-[input]
-30
-40
-70
--10
-[/input]
-[output]
-2000
-180
-[/output]
-[/test]
-[test]
-[input]
-600.25
-500.75
-100.50
--200.5
-[/input]
-[output]
-350449.6875
-2402
-[/output]
-[/test]
-[test]
-[input]
--120
-36
--400
-12.5
-[/input]
-[output]
-6580
-607
-[/output]
-[/test]
-[test]
-[input]
-12.33
--43.56
-101.55
--203.44
-[/input]
-[output]
-14264.4936
-498.2
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Problem: Triangle Area
-[code-task title="Problem: Triangle Area" taskId="Triangle-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-20
-30
-[/input]
-[output]
-300
-[/output]
-[/test]
-[test]
-[input]
-20
-30
-[/input]
-[output]
-300
+3
 [/output]
 [/test]
 [test]
 [input]
 15
-35
+10
 [/input]
 [output]
-262.5
+141
 [/output]
 [/test]
 [test]
 [input]
-7.75
-8.45
+16
+12
 [/input]
 [output]
-32.74
+192
 [/output]
 [/test]
 [test]
 [input]
-1.23456
-4.56789
+18
+8.6
 [/input]
 [output]
-2.82
+147
+[/output]
+[/test]
+[test]
+[input]
+23.78
+8.78
+[/input]
+[output]
+206
+[/output]
+[/test]
+[test]
+[input]
+24.02
+9.13
+[/input]
+[output]
+217
+[/output]
+[/test]
+[test]
+[input]
+20
+20
+[/input]
+[output]
+429
+[/output]
+[/test]
+[test]
+[input]
+20
+16
+[/input]
+[output]
+333
+[/output]
+[/test]
+[test]
+[input]
+18
+12
+[/input]
+[output]
+222
+[/output]
+[/test]
+[test]
+[input]
+18
+18
+[/input]
+[output]
+357
+[/output]
+[/test]
+[test]
+[input]
+12
+12
+[/input]
+[output]
+147
+[/output]
+[/test]
+[test]
+[input]
+15
+15
+[/input]
+[output]
+237
 [/output]
 [/test]
 [/tests]
@@ -611,8 +189,8 @@ public class Main {
 [/slide]
 
 [slide hideTitle]
-# Problem: Celsius to Fahrenhiet
-[code-task title="Problem: Celsius to Fahrenhiet" taskId="Celsius-to-Fahrenhiet" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Vegetable Market
+[code-task title="Problem: Vegetable Market" taskId="Vegetable-Market" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -634,155 +212,42 @@ public class Main {
 [tests]
 [test open]
 [input]
-25
+0.194
+19.4
+10
+10
 [/input]
 [output]
-77
+101
 [/output]
 [/test]
-[test]
-[input]
-25
-[/input]
-[output]
-77
-[/output]
-[/test]
-[test]
-[input]
-0
-[/input]
-[output]
-32
-[/output]
-[/test]
-[test]
-[input]
--5.5
-[/input]
-[output]
-22.1
-[/output]
-[/test]
-[test]
-[input]
-32.3
-[/input]
-[output]
-90.14
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-# Problem: Radians to Degrees
-[code-task title="Problem: Radians to Degrees" taskId="Radians to Degrees" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-
-
-
-[/task-description]
-[code-io /]
-[tests]
 [test open]
 [input]
-3.1416
+1.5
+2.5
+10
+10
 [/input]
 [output]
-180
+20.6185567010309
 [/output]
 [/test]
 [test]
 [input]
-3.1416
+12.23
+10
+153
+12
 [/input]
 [output]
-180
+1026.38659793814
 [/output]
 [/test]
 [test]
 [input]
-6.2832
-[/input]
-[output]
-360
-[/output]
-[/test]
-[test]
-[input]
-0.7854
-[/input]
-[output]
-45
-[/output]
-[/test]
-[test]
-[input]
-0.5236
-[/input]
-[output]
-30
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-
-[slide hideTitle]
-# Problem: USD to BGN
-[code-task title="Problem: USD to BGN" taskId="USD-to-BGN" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-[/code-editor]
-[task-description]
-## Description
-
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-25
-[/input]
-[output]
-44.89
-[/output]
-[/test]
-[test]
-[input]
-25
-[/input]
-[output]
-44.89
-[/output]
-[/test]
-[test]
-[input]
+0
+0
+0
 0
 [/input]
 [output]
@@ -791,18 +256,90 @@ public class Main {
 [/test]
 [test]
 [input]
--5.5
+1
+1
+1
+1
 [/input]
 [output]
--9.88
+1.03092783505155
 [/output]
 [/test]
 [test]
 [input]
-32.3
+19.4
+0.0194
+200
+102
 [/input]
 [output]
-57.99
+2001.02
+[/output]
+[/test]
+[test]
+[input]
+1000
+1000
+1000
+1000
+[/input]
+[output]
+1030927.83505155
+[/output]
+[/test]
+[test]
+[input]
+999.999
+1929212
+75
+23
+[/input]
+[output]
+2.2910760786082473E7
+[/output]
+[/test]
+[test]
+[input]
+0.018
+0.217
+546
+897
+[/input]
+[output]
+105.400515463918
+[/output]
+[/test]
+[test]
+[input]
+14.85
+13
+932
+123
+[/input]
+[output]
+7958.35051546392
+[/output]
+[/test]
+[test]
+[input]
+232.21
+329.99
+10
+10
+[/input]
+[output]
+2897.9381443299
+[/output]
+[/test]
+[test]
+[input]
+42
+42
+42
+42
+[/input]
+[output]
+1818.55670103093
 [/output]
 [/test]
 [/tests]
@@ -810,8 +347,8 @@ public class Main {
 [/slide]
 
 [slide hideTitle]
-# Problem: Currency Converter
-[code-task title="Problem: Currency Converter" taskId="Currency-Converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Change Tiles
+[code-task title="Problem: Change Tiles" taskId="Change-Tiles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -833,61 +370,157 @@ public class Main {
 [test open]
 [input]
 20
-USD
-BGN
+5
+4
+1
+2
 [/input]
 [output]
-35.91
+19.9
+3.98
 [/output]
 [/test]
-[test]
+[test open]
 [input]
-20
-USD
-BGN
+40
+0.8
+0.6
+3
+5
 [/input]
 [output]
-35.91
+3302.08333333333
+660.416666666667
 [/output]
 [/test]
 [test]
 [input]
 100
-BGN
-EUR
+10
+10
+10
+10
 [/input]
 [output]
-51.13
+99
+19.8
 [/output]
 [/test]
 [test]
 [input]
-12.35
-EUR
-GBP
+1
+0.1
+0.1
+0
+0
 [/input]
 [output]
-9.53
+100
+20
 [/output]
 [/test]
 [test]
 [input]
-150.35
-USD
-EUR
+50
+5
+5
+10
+10
 [/input]
 [output]
-138.02
+96
+19.2
 [/output]
 [/test]
 [test]
 [input]
-12.35
-GBP
-USD
+100
+0.1
+0.40
+10
+20
 [/input]
 [output]
-17.43
+245000
+49000
+[/output]
+[/test]
+[test]
+[input]
+1
+0.2
+0.2
+0
+0
+[/input]
+[output]
+25
+5
+[/output]
+[/test]
+[test]
+[input]
+30
+4
+4
+2
+2
+[/input]
+[output]
+56
+11.2
+[/output]
+[/test]
+[test]
+[input]
+80
+20
+1
+1
+4
+[/input]
+[output]
+319.8
+63.96
+[/output]
+[/test]
+[test]
+[input]
+3
+0.1
+0.5
+0
+0
+[/input]
+[output]
+180
+36
+[/output]
+[/test]
+[test]
+[input]
+70
+2
+4
+2
+3
+[/input]
+[output]
+611.75
+122.35
+[/output]
+[/test]
+[test]
+[input]
+37
+0.2
+6
+10
+2
+[/input]
+[output]
+1124.16666666667
+224.833333333333
 [/output]
 [/test]
 [/tests]
@@ -895,8 +528,8 @@ USD
 [/slide]
 
 [slide hideTitle]
-# Problem: 1000 Days After Birth
-[code-task title="Problem: 1000 Days After Birth" taskId="1000-Days-After-Birth" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problem: Money Tests
+[code-task title="Problem: Money Tests" taskId="Money-Tests" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -912,55 +545,314 @@ public class Main {
 ## Description
 
 
+
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-25-02-1995
+1
+5
+5
 [/input]
 [output]
-21-11-1997
+569.6687179487179
+[/output]
+[/test]
+[test open]
+[input]
+20
+5678
+2.4
+[/input]
+[output]
+12442.24420102564
+[/output]
+[/test]
+[test open]
+[input]
+7
+50200.12
+3
+[/input]
+[output]
+10659.470117743589
 [/output]
 [/test]
 [test]
 [input]
-25-02-1995
+19
+50000
+0
 [/input]
 [output]
-21-11-1997
+18149.74358974359
 [/output]
 [/test]
 [test]
 [input]
-07-11-2003
+13
+37680
+0.1
 [/input]
 [output]
-03-08-2006
+12875.071015384616
 [/output]
 [/test]
 [test]
 [input]
-30-12-2002
+7
+619
+1.1
 [/input]
 [output]
-25-09-2005
+4229.58073025641
 [/output]
 [/test]
 [test]
 [input]
-01-01-2012
+3
+42712
+2.2
 [/input]
 [output]
-27-09-2014
+7412.722412307693
 [/output]
 [/test]
 [test]
 [input]
-14-06-1980
+7
+1232
+3.4
 [/input]
 [output]
-11-03-1983
+4211.38747076923
+[/output]
+[/test]
+[test]
+[input]
+14
+60319
+4.5
+[/input]
+[output]
+15807.069887179488
+[/output]
+[/test]
+[test]
+[input]
+17
+20320
+3.0403
+[/input]
+[output]
+12540.35987003077
+[/output]
+[/test]
+[test]
+[input]
+4
+703
+2.539
+[/input]
+[output]
+2427.8244815999997
+[/output]
+[/test]
+[test]
+[input]
+0
+5
+5
+[/input]
+[output]
+0.6430769230769231
+[/output]
+[/test]
+[test]
+[input]
+16
+0
+0
+[/input]
+[output]
+9583.589743589744
+[/output]
+[/test]
+[test]
+[input]
+0
+0
+0
+[/input]
+[output]
+0
+[/output]
+[/test]
+[test]
+[input]
+20
+50000.00
+5.00
+[/input]
+[output]
+17811.28205128205
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+[slide hideTitle]
+# Problem: Daily Earnings
+[code-task title="Problem: Daily Earnings" taskId="Daily-Earnings" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-editor language=java]
+```
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+        // Write your code here
+    }
+}
+```
+[/code-editor]
+[task-description]
+## Description
+
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+21
+75
+1.59
+[/input]
+[output]
+74.61
+[/output]
+[/test]
+[test open]
+[input]
+15
+105
+1.71
+[/input]
+[output]
+80.24
+[/output]
+[/test]
+[test open]
+[input]
+22
+199.99
+1.50
+[/input]
+[output]
+196.63
+[/output]
+[/test]
+[test]
+[input]
+20
+100.01
+1.01
+[/input]
+[output]
+60.19
+[/output]
+[/test]
+[test]
+[input]
+17
+156.65
+1.78
+[/input]
+[output]
+141.23
+[/output]
+[/test]
+[test]
+[input]
+13
+386.12
+0.99
+[/input]
+[output]
+148.06
+[/output]
+[/test]
+[test]
+[input]
+19
+99
+1.99
+[/input]
+[output]
+111.53
+[/output]
+[/test]
+[test]
+[input]
+26
+26.26
+1.26
+[/input]
+[output]
+25.63
+[/output]
+[/test]
+[test]
+[input]
+15
+2000
+1
+[/input]
+[output]
+893.84
+[/output]
+[/test]
+[test]
+[input]
+28
+550.44
+1.23
+[/input]
+[output]
+564.82
+[/output]
+[/test]
+[test]
+[input]
+1
+10.00
+1.11
+[/input]
+[output]
+0.33
+[/output]
+[/test]
+[test]
+[input]
+3
+1890
+1.89
+[/input]
+[output]
+319.29
+[/output]
+[/test]
+[test]
+[input]
+30
+47.74
+1.98
+[/input]
+[output]
+84.49
 [/output]
 [/test]
 [/tests]
