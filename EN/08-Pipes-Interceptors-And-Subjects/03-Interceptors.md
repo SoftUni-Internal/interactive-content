@@ -4,6 +4,8 @@
 
 # Interceptors Overview
 
+js-interactive-pipes-interceptors-and-subjects-14-15-HTTP-Interceptors-and-interceptors-overview
+
 **Interceptors** give us the ability to **intercept HTTP requests**, both **incoming** and **outgoing**, by using `HttpClient`.
 
 Intercepting a request allows to **swap** or **modify** its **value**.
@@ -18,6 +20,8 @@ In **Angular 4 and newer**, intercepting is implemented using the `HttpIntercept
 [slide hideTitle]
 
 # Create Http Interceptor
+
+js-interactive-pipes-interceptors-and-subjects-16-Create-Http-Interceptor
 
 The easiest way to create an interceptor is by using **Angular CLI**:
 
@@ -60,6 +64,8 @@ We do this in order to **use** the `intercept()` method.
 
 # Intercepting Requests
 
+js-interactive-pipes-interceptors-and-subjects-17-Intecepting-Requests
+
 **All HTTP requests** go through the `intercept()` method.
 
 ```js
@@ -92,6 +98,8 @@ We can then pass the **modified request** to the `next.handle` method:
 [slide hideTitle]
 
 # Provide the Interceptor
+
+js-interactive-pipes-interceptors-and-subjects-18-Provide-the-Interceptor
 
 Our newly created **interceptor** has to be **added** to the `HTTP_INTERCEPTORS` array.
 
@@ -149,6 +157,8 @@ The `multi` property should equal `true` if you plan to provide **more than one 
 
 # Handle Responses
 
+js-interactive-pipes-interceptors-and-subjects-19-Handle-Responses
+
 To **handle responses** we use the `pipe` and `tap` operators from RxJS:
 
 ```js
@@ -181,6 +191,8 @@ The `tap` method is used for performing **side effects**, in this case - **savin
 [slide hideTitle]
 
 # Handle Server Errors
+
+js-interactive-pipes-interceptors-and-subjects-20-Handle-Server-Errors
 
 The `catchError` and `throwError` operators are used to **handle server errors**:
 

@@ -2,6 +2,8 @@
 
 # Summary
 
+js-interactive-pipes-interceptors-and-subjects-36-Summary
+
 ## In this lesson you learned:
 
 - Pipes in Angular are used to transform data in the template

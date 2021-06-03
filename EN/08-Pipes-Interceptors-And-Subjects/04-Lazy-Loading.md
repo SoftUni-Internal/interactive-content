@@ -4,6 +4,8 @@
 
 # What is Lazy Loading?
 
+js-interactive-pipes-interceptors-and-subjects-21-22-Lazy-Loading-and-what-is-lazy-loading
+
 Angular loads **all application modules** once the application starts, even if they are **not going to be needed** at the moment.
 
 This **default** behaviour can affect **loading time negatively**, especially if your application is **large**.
@@ -20,6 +22,8 @@ Any of these **additional modules** will **not** be loaded until the user reache
 [slide hideTitle]
 
 # Preparing for Lazy Loading
+
+js-interactive-pipes-interceptors-and-subjects-23-Preparing-for-Lazy-Loading
 
 To **prepare** for **lazy loading**, create a **feature module** with the CLI:
 
@@ -42,6 +46,8 @@ A `ProductsComponent` will be **declared** and `ProductsRoutingModule` will be *
 
 # Warning - Do not Import in Bootstrap Module
 
+js-interactive-pipes-interceptors-and-subjects-24-Warning-Don't-Import-in-Bootstrap-Module
+
 You should **never** import a feature module inside `app.module.ts`.
 
 Since the `AppModule` is used for **bootstrapping the application**, any imported module will **start loading immediately** when the application is ran.
@@ -53,6 +59,8 @@ Since the `AppModule` is used for **bootstrapping the application**, any importe
 [slide hideTitle]
 
 # Load Children
+
+js-interactive-pipes-interceptors-and-subjects-25-Load-Children
 
 To **lazy load a feature module**, go to `src/app/app-routing.module.ts`:
 
@@ -77,6 +85,8 @@ Declare the new `products` path in the `routes` array and use `loadChildren` to 
 [slide hideTitle]
 
 # Protect Module with CanLoad
+
+js-interactive-pipes-interceptors-and-subjects-26-Protect-Module-with-CanLoad
 
 A class can **implement** the `CanLoad` **interface** in order to **act as a guard** which **decides** if **children** can be **loaded**. 
 

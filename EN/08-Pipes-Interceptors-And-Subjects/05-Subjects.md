@@ -4,6 +4,8 @@
 
 # What is a Subject?
 
+js-interactive-pipes-interceptors-and-subjects-27-28-Subjects-and-what-is-a-subject
+
 A **Subject** is a special type of **Observable** that can **cast values to multiple Observers**, as opposed to a single one.
 
 Subjects are both **Observables** and **Observers**.
@@ -18,6 +20,8 @@ The Observer has **no information** about **where** the Observable **execution**
 [slide hideTitle]
 
 # Subjects - Example
+
+js-interactive-pipes-interceptors-and-subjects-29-Subjects-Example
 
 To **create a Subject**, first **import** the corresponding class from RxJS:
 
@@ -54,6 +58,8 @@ Observer Two: Goodbye
 
 # Behavior Subject
 
+js-interactive-pipes-interceptors-and-subjects-30-Behavior-Subject
+
 The `BehaviorSubject` stores the **latest value** emitted to its consumers.
 
 It **replays** the **current value** whenever an observer **subscribes** to it.
@@ -66,6 +72,8 @@ An **initial value** is **required** as a parameter when **instantiating** a Beh
 [slide hideTitle]
 
 # Behavior Subject - Example
+
+js-interactive-pipes-interceptors-and-subjects-31-Behavrior-Subject-Example
 
 In this example, we **initialize** a `BehaviourSubject` with a value of 5:
 
@@ -104,6 +112,8 @@ Second Observer: 8
 
 # Replay Subject
 
+js-interactive-pipes-interceptors-and-subjects-32-Replay-Subject
+
 A `ReplaySubject` can send **old values** to **new subscribers**, similarly to a `BehaviorSubject`.
 
 While a regular `Subject` has **no memory**, a `ReplaySubject` can **record** a segment of the Observable **execution**.
@@ -119,6 +129,8 @@ It receives two parameters:
 [slide hideTitle]
 
 # Replay Subject - Example
+
+js-interactive-pipes-interceptors-and-subjects-33-Replay-Subject-Example
 
 The following example shows a `ReplaySubject` with a `bufferSize` of 2:
 
@@ -159,6 +171,8 @@ Observer Two: D
 
 # Async Subject
 
+js-interactive-pipes-interceptors-and-subjects-34-Async-Subject
+
 The `AsyncSubject` emits only the **last value it received** to its subscribers.
 
 In addition, the **value** will **only** be sent once execution **completes**.
@@ -172,6 +186,8 @@ Just like you would with a normal `Subject`, `AsyncSubject` can still be used to
 [slide hideTitle]
 
 # Async Subject - Example
+
+js-interactive-pipes-interceptors-and-subjects-35-Async-Subject-Example
 
 This is an example of an `AsyncSubject`:
 

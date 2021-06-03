@@ -4,6 +4,8 @@
 
 # What Are Pipes?
 
+js-interactive-pipes-interceptors-and-subjects-3-4-pipes-and-whar-are-pipes
+
 The idea of pipes comes from Linux/Unix systems, where into the command line we can **write pipes**, which are just `|` symbols.
 
 This gives us the **ability** for output from one **command** to be forwarded to **another command**. 
@@ -34,6 +36,8 @@ Some of the **build-in pipes** are:
 
 # Parameterizing Pipes
 
+js-interactive-pipes-interceptors-and-subjects-5-Parameterizing-Pipes
+
 Some pipes can also accept parameters.
 
 For example, the `slice` pipe creates a new **string** or an **array**, which contains a subset of the **original** one.
@@ -62,6 +66,8 @@ To learn about **other built-in pipes**, visit Angular's [documentation](https:/
 [slide hideTitle]
 
 # Creating Pipes
+
+js-interactive-pipes-interceptors-and-subjects-6-7-Creating-Pipes
 
 The easiest way to create a **custom pipe** is by using Angular CLI:
 
@@ -106,12 +112,7 @@ This is how the string looks before our custom pipe is applied:
 Once applied, `Hello, james.appleseed` will be **rendered in the view**.
 
 
-
-[/slide]
-
-[slide hideTitle]
-
-# Creating Pipes: Receiving Parameters
+## Creating Pipes: Receiving Parameters
 
 Just like some built-in pipes, **custom pipes** can also receive **parameters**.
 
@@ -144,6 +145,8 @@ The expected output is 750.
 
 # Async Pipe - Example
 
+js-interactive-pipes-interceptors-and-subjects-8-Async-Pipe-Example
+
 The async pipe is used to **run asynchronous code**.
 
 It **subscribes** to a **promise** or **observable** and **returns** the latest **data**.
@@ -164,6 +167,8 @@ notification = new Promise((resolve, reject) => {
 [slide hideTitle]
 
 # Async Pipe - Observables
+
+js-interactive-pipes-interceptors-and-subjects-9-Async-Pipe-Observables
 
 Working with **Observables**, `AsyncPipe` automatically **subscribes**, **unwraps data** and **unsubscribes** when a component gets **destroyed**.
 

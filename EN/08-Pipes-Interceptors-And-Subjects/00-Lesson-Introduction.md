@@ -4,6 +4,7 @@
 
 # Lesson Content
 
+js-interactive-pipes-interceptors-and-subjects-1-2-Pipes-JWT-Interceptors-and-table-of-contents
 ## In this lesson you will learn:
 
 **1. Pipes**

@@ -4,6 +4,8 @@
 
 # What is JWT?
 
+js-interactive-pipes-interceptors-and-subjects-10-11-JWT-and-what-is-jwt
+
 **JSON Web Token** (JWT) is a standard, which gives the ability to create a token, which is used for server authentication and avoiding the use of server-side session storage. 
 
 JWT is stored in the client, and every request sent to the server should contain JWT, which is better than keeping a session state on the server.
@@ -26,6 +28,8 @@ So a good JSON API should be able to send JWT via headers as well as been able t
 [slide hideTitle]
 
 # When should you use JWT?
+
+js-interactive-pipes-interceptors-and-subjects-12-When-should-you-use-JWT
 
 JWT is most commonly used for **authorization**, and **information exchange**:
 
@@ -57,6 +61,8 @@ They can use the same secret key in order to **encrypt** and **decrypt** those v
 [slide hideTitle]
 
 # JWT Structure
+
+js-interactive-pipes-interceptors-and-subjects-13-JWT-Structure
 
 JSON Web Token consists of **three parts**, separated using **dots**:
 
