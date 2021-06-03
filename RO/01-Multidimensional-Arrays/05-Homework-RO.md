@@ -3053,15 +3053,19 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Se dă o matrice (un vector bidimensional) de numere întregi.
+Vă este dată o matrice 2D cu numere întregi.
 
-Trebuie să printați diagonalele matricei, dar în ordine inversă.
+Trebuie să imprimați diagonalele sale în ordine inversă.
 
-Printați fiecare diagonală pe linie nouă.
+Imprimați fiecare diagonală pe o linie nouă.
+
+Imaginea următoare ilustrează direcția diagonalelor:
+
+[image assetsSrc="homework-matrix-order.png" /]
 
 ## Intrare
 
-Pe prima linie, se găsește un  singur număr întreg, **R**, care reprezintă numărul de rânduri ale matricei. 
+Pe prima linie, două numere întregi - numărul R care reprezintă numărul de rânduri din matrice și numărul C care reprezintă numărul de caractere de pe fiecare rând. 
 
 Pe fiecare din următoarele **R** linii, se găsesc **C** numere separate prin spațiu. 
 
@@ -3069,7 +3073,7 @@ Pe fiecare din următoarele **R** linii, se găsesc **C** numere separate prin s
 
 ## Ieșire
 
-Datele de ieșire constau în R linii, fiecare constând în exact C caractere, separate prin spațiu, reprezintând diagonalele inversate ale matricei.
+Datele de ieșire constă într-o linie nouă pentru fiecare diagonală din matrice.
 
 ## Constrângeri
 
