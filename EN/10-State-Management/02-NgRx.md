@@ -103,14 +103,6 @@ This method accepts the `type` string and a **payload**, if applicable, and **re
 
 [slide hideTitle]
 
-# NgRx: Demo
-
-11-NgRx-Demo
-
-[/slide]
-
-[slide hideTitle]
-
 # Reducers
 
 11-Reducers
@@ -283,4 +275,12 @@ Go to `src/app/counter/counter.component.html` and type:
 
 <button (click)="reset()">Reset</button>
 ```
+[/slide]
+
+[slide hideTitle]
+
+# NgRx: Demo
+
+11-NgRx-Demo
+
 [/slide]

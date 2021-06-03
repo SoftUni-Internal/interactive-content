@@ -442,7 +442,7 @@ Use it to validate a sub-group of your form separately from the rest of your for
 
 It is useful for input fields that have the same validation.
 
-For Example, Password and Confirm Password.
+For example, Password and Confirm Password.
 
 ```js
 <div ngModelGroup="passData" #passData="ngModelGroup"></div>
