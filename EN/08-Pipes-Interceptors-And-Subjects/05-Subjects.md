@@ -6,13 +6,19 @@
 
 js-interactive-pipes-interceptors-and-subjects-27-28-Subjects-and-what-is-a-subject
 
+Observables are kind of passive because we can not trigger the emission of a new value manually, which might not be optimal in some cases.
+
+In those cases, we can use observable like an event emitter where we can control when a new value is emitted.
+
+We can do this with something which is called a **subject**, which inherits from the observable.
+
 A **Subject** is a special type of **Observable** that can **cast values to multiple Observers**, as opposed to a single one.
 
 Subjects are both **Observables** and **Observers**.
 
 This means that we can **pass a Subject** as an argument to the **subscribe()** method of an **Observable**, because it **implements** `next()`, `error()` and `complete()`.
 
-The Observer has **no information** about **where** the Observable **execution** is coming **from** - a regular Observable or a Subject.
+Therefore we can have a more active approach of using observables with subjects that do not mean that we should always use subjects just use them if we need to use something like an event emitter.
 
 [/slide]
 
@@ -60,11 +66,13 @@ Observer Two: Goodbye
 
 js-interactive-pipes-interceptors-and-subjects-30-Behavior-Subject
 
-The `BehaviorSubject` stores the **latest value** emitted to its consumers.
-
-It **replays** the **current value** whenever an observer **subscribes** to it.
+The `BehaviorSubject` stores the "current" value, which means that the **latest emitted value** can be always retrieved.
 
 An **initial value** is **required** as a parameter when **instantiating** a Behaviour Subject.
+
+To receive the last emitted value, we can get the value by accessing the `.value` property or subscribe to it. 
+
+If the second approach is used, the BehaviorSubject will directly emit the current value to the subscriber. 
 
 
 [/slide]
