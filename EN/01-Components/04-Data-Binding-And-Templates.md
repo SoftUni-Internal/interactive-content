@@ -4,7 +4,11 @@
 
 # Templates and Data Binding Overview
 
-We define a component's view with its template. A template is a form of HTML that tells Angular how to render a component.
+Angular-Components-16-17-Data-Binding-And-Templates
+
+We define a component's view with its template. 
+
+A template is a form of HTML that tells Angular how to render a component.
 
 The template is immediately associated with a component and defines that component's view.
 
@@ -24,6 +28,8 @@ They can be both **inline** or in a **separate file**.
 [slide hideTitle]
 
 # Render An Array Using NgFor
+
+Angular-Components-18-Render-an-array-using-ngfor
 
 Here is an example of a class called "GamesComponent" and an HTML associated with it.
 
@@ -59,6 +65,8 @@ Notice that the `*` symbol is required before the "ngFor" keyword.
 
 # Conditional Statements Using ngIf
 
+Angular-Components-19-Conditional-Statements-Using-ngif
+
 Using the same example:
 
 ```js
@@ -93,6 +101,8 @@ We create **if** statements using the `*ngIf` keyword, as shown in the HTML belo
 
 # Attach Events
 
+Angular-Components-20-Attach-Events
+
 Showing additional content could be done with Event handlers.
 
 Here we have an HTML example of how to do the Angular event binding syntax:
@@ -122,6 +132,8 @@ export class GamesComponent {
 
 # Binding Attributes
 
+Angular-Components-21-Binding-attributes
+
 It is a recommendation, setting an element property with a property binding whenever possible. 
 
 If there is no element property to bind, use **attribute binding**.
@@ -149,13 +161,15 @@ export class GamesComponent {
 
 # Binding CSS Classes
 
-## Binding to a class
+Angular-Components-22-Binding-css-classes
+
+## Binding to a Class
 
 ```html
 <div [class]="badCurly">Bad curly</div>
 ```
 
-## Binding to a specific class name
+## Binding to a Specific Class Name
 
 To create a single class binding, use the prefix class followed by a dot and the name of the CSS class.
 
@@ -178,6 +192,8 @@ Angular adds the class when the bound expression, `isSpecial` is **truthy**, and
 [slide hideTitle]
 
 # Binding Styles
+
+Angular-Components-23-Binding-styles
 
 ## Binding to the style attribute
 
@@ -217,15 +233,17 @@ Alternatively, it sets the font-size in "%" unit if `isSpecial` is falsy.
 
 # Reference And Null-Safe Operator
 
+Angular-Components-24-Reference-and-nullsafe-operator
+
 Use variables from one part of a template to another part of the template.
 
 A template variable can refer to the following:
 
-- a DOM element within a template.
-- a directive.
-- an element.
-- TemplateRef.
-- a web component.
+- A DOM element within a template
+- A directive
+- An element
+- TemplateRef
+- A web component
 
 In the template, use the hash symbol `#` to declare a template variable. 
 
@@ -249,7 +267,7 @@ This will cause an exception.
 
 `?` stops evaluating when "game" is **null** or **undefined**, which usually happens when data is fetched async, for example, from the server, which can take some time.
 
-```html
+```js
 <div>The current hero's name is {{game?.title}}</div>
 <div>The null hero's name is {{game && game.name}}</div>
 ```
@@ -264,9 +282,15 @@ When "game" is different than **null** or **undefined**, then it will bind `game
 
 # Template Expressions
 
-A template expression produces a value. Angular executes the expression and assigns it to a property of a binding target.
+Angular-Components-25-Template-Expressions
 
-Put the expressions between braces like so `{{1 + 1}}`. The target could be an HTML element, a component, or a directive.
+A template expression produces a value.
+
+Angular executes the expression and assigns it to a property of a binding target.
+
+Put the expressions between braces like so `{{1 + 1}}`. 
+
+The target could be an HTML element, a component, or a directive.
 
 These template expressions look almost like JavaScript, but they are not pure JavaScript. 
 
@@ -274,15 +298,17 @@ Many JavaScript expressions are legal template expressions, but not all.
 
 JavaScript expressions that have or promote side effects are **prohibited**, including:
 
-- assignments `(=, +=, -=, ...)`.
-- new - the new operator.
-- increment and(or) decrement operators `(++ and --)`.
+- Assignments `(=, +=, -=, ...)`.
+- New - the new operator.
+- Increment and(or) decrement operators `(++ and --)`.
 
 [/slide]
 
 [slide hideTitle]
 
 # Types Of Data Binding
+
+Angular-Components-26-Types-of-data-binding
 
 There are three types of data binding.
 

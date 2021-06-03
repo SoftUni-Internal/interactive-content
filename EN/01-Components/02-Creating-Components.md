@@ -2,7 +2,9 @@
 
 [slide hideTitle]
 
-# Creating Components Manually 1
+# Creating Components Manually
+
+Angular-Components-6-7-8-9-Creating-components-manually
 
 Components are the most basic UI building blocks of an Angular app.
 
@@ -30,6 +32,7 @@ We can then call it inside the app module or other places in the project.
 
 ```js
 import { Component } from '@angular/core';
+
 @Component({
     selector: 'app-home',
     template: '<h1>Home View</h1>'
@@ -38,11 +41,7 @@ import { Component } from '@angular/core';
 export class AppComponent{}
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Creating Components Manually 2
+## Breakdown of Component Metadata
 
 The **selector** is for calling the component inside other HTML files of the project as an HTML tag: `<app-home></app-home>`
 
@@ -64,11 +63,7 @@ import { Component } from '@angular/core';
 export class AppComponent{}
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Creating Components Manually 3
+## Add Component to a Module
 
 After creating a component, we need to add it in the **declarations** array at the app module.
 
@@ -91,6 +86,8 @@ Without this declaration, a component would not be able to use directives and pi
 [slide hideTitle]
 
 # Creating Components With The CLI
+
+Angular-Components-10-Creating-Components-with-the-CLI
 
 We can use the **Angular CLI** - a command-line interface for Angular to generate a new component.
 

@@ -4,6 +4,10 @@
 
 # Create Angular App
 
+Angular-Components-Lab-1
+Angular-Components-Lab-2
+Angular-Components-Lab-3
+
 Generate a new angular app using the command "ng new articles-app". 
 
 After that, change the title of your site to "Article Site" in "app.component.ts" and replace the HTML in "app.component.html" with the following:
@@ -30,7 +34,7 @@ h1 {
 }
 ```
 
-Start the app with the command "ng serve –open". 
+Start the app with the command "ng serve -open". 
 
 This will build the angular application and open a new window in your default browser. 
 
@@ -43,6 +47,8 @@ Your app should look like this:
 [slide hideTitle]
 
 # Create Article Model
+
+Angular-Components-Lab-4
 
 We need an article model class to hold the information. 
 
@@ -68,6 +74,8 @@ export class Article{
 [slide hideTitle]
 
 # Create Article Data
+
+Angular-Components-Lab-5
 
 We have to create a seed file to hold our **dummy data** that we will display later.
 
@@ -131,6 +139,7 @@ export class ArticleData {
 ```
 
 The data has a `getData()` function that iterates through all data objects and creates instances of articles.
+
 These are saved in an array and returned from the function. 
 
 Later we will learn more about real services and injectables and how to implement this the correct way.
@@ -140,6 +149,8 @@ Later we will learn more about real services and injectables and how to implemen
 [slide hideTitle]
 
 # Create Article Component
+
+Angular-Components-Lab-6
 
 Generate an article component using the command "ng generate component article". 
 
@@ -216,6 +227,8 @@ It will receive **two properties** that need to be **transferred** from the pare
 
 # Create The HTML Markup
 
+Angular-Components-Lab-7
+
 Copy the following HTML inside "article.component.html":
 
 ```html
@@ -241,7 +254,7 @@ The moment our description ends we have to show "**Hide Desc**".
 
 Clicking "**Hide Desc**" should remove all the descriptions inside and reset the counter.
 
-Both buttons have an attached function to them – `readMore()` and `hideDesc()`. 
+Both buttons have an attached function to them - `readMore()` and `hideDesc()`. 
 
 We also have to show or hide the image, this is why we attach a `toggleImage()` function that we will implement later. 
 
@@ -252,6 +265,8 @@ All the properties inside the `*ngIf` directive are controlled in our article co
 [slide hideTitle]
 
 # Create The Needed Properties
+
+Angular-Components-Lab-8
 
 Inside the `article.component.ts` we have to declare the following properties which we showcased in the previous section:
 
@@ -296,19 +311,20 @@ We can also do this in the `ngOnInit` lifecycle hook.
 
 # Implement The Read More Function
 
+Angular-Components-Lab-9
+Angular-Components-Lab-10
+
 Each time we click on `readMore()` we have to **increase** the article description length with 250 symbols and, if the new length is **more** than the **actual** description length, we have to change **both boolean** properties accordingly. 
 
 If the new length is **less** than the actual, we have to **change** the description to show. 
 
-The following image is blurred. Try to implement the logic yourself:
+The following image is blurred. 
+
+Try to implement the logic yourself:
 
 [image assetsSrc="Angular-Components(2).png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Implement The ToggleImage Function
+## Implement The ToggleImage Function
 
 Each time we click on "**Show Image**" we have to switch the boolean property to **true** and change the **image title** to "**Hide Image**". 
 
@@ -316,11 +332,7 @@ If the content is "**Hide Image**" we have to do the opposite.
 
 [image assetsSrc="Angular-Components(3).png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Implement The HideDesc Function
+## Implement The HideDesc Function
 
 This function should **reset** the description to show the description length counter and **switch** both buttons.
 
@@ -331,6 +343,8 @@ This function should **reset** the description to show the description length co
 [slide hideTitle]
 
 # Create Articles Component
+
+Angular-Components-Lab-11
 
 After we have created the child component the only thing left is to create the articles component and pass the array of data from the **parent** to the **child**.
 
@@ -345,11 +359,7 @@ ul {
 }
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Implement Component Logic
+## Implement Component Logic
 
 Inside the articles component we need an array property, which will hold our articles and we need to initialize the array inside the `ngOnInit` hook. 
 
@@ -368,10 +378,6 @@ export class ArticlesComponent implements OnInit {
     }
 }
 ```
-
-[/slide]
-
-[slide hideTitle]
 
 # Create The HTML Markup
 
@@ -400,7 +406,11 @@ The only thing left is to place the articles selector inside "app.component.html
 
 # Test The Application
 
-If everything went smoothly, you can test your application and try out all of the functionality. Show/Hide the description and Show/Hide the image. 
+Angular-Components-Lab-12
+
+If everything went smoothly, you can test your application and try out all of the functionality. 
+
+Show/Hide the description and Show/Hide the image. 
 
 It should look like this:
 

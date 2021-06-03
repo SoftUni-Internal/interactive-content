@@ -2,7 +2,9 @@
 
 [slide hideTitle]
 
-# The Idea Behind Components - 1
+# Components - Overview
+
+Angular-Components-3-4-Components
 
 A component controls a **patch** of the screen called a **view**.
 
@@ -38,7 +40,9 @@ export class AppComponent { title = 'App Title'; }
 
 [slide hideTitle]
 
-# The Idea Behind Components - 2
+# The Idea Behind Components
+
+Angular-Components-5-The-Idea-behind-components
 
 The arrangement of the views is hierarchical, allowing you to modify or show and hide entire UI sections or pages as a unit. 
 

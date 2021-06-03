@@ -4,6 +4,8 @@
 
 # Bootstrapping an Application
 
+Angular-Components-11-12-Bootstrapping-An-Application
+
 A **NgModule** describes how the application parts fit together. 
 
 Every application has at least one Angular module, the root module, which must be present for **bootstrapping**, or in other words, **starting** the application on launch. 
@@ -15,6 +17,8 @@ By convention, the **NgModule** is called **AppModule**, but we can give it any 
 [slide hideTitle]
 
 # The Initial Module
+
+Angular-Components-13-The-Initial-Module
 
 After the import statements is a class with the `@NgModule` decorator.
 
@@ -42,6 +46,8 @@ export class AppModule { }
 [slide hideTitle]
 
 # Initial Module Properties
+
+Angular-Components-14-15-Initial-Module-Properties
 
 The module's **declarations array** tells Angular which components belong to that module. Newly created components are added to **declarations**.
 

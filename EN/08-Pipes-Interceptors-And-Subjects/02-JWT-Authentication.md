@@ -51,8 +51,6 @@ JWT is a good way to **secure way to transmit information** between different pa
 
 They can use the same secret key in order to **encrypt** and **decrypt** those values and to **verify the authentication** and the **validity of the token** that is been sent.
 
-
-
 [/slide]
 
 

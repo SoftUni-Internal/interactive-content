@@ -54,7 +54,7 @@ input.ng-invalid.ng-touched {
 ## Validation
 
 - The full name input field must contain **two names** (letters only) separated by a **space**
-    * both should start with a **capital** letter.
+    * both should start with a **capital** letter
 - The email input field must be a **valid email** address
 - The phone number input field must be a **9 digit** number
 - The password input field must be **between 3 and 16 symbols** and must contain only **letters** and **digits**

@@ -444,11 +444,11 @@ It is useful for input fields that have the same validation.
 
 For Example, Password and Confirm Password.
 
-```html
+```js
 <div ngModelGroup="passData" #passData="ngModelGroup"></div>
 ```
 
-```html
+```js
 <div *ngIf="passData.invalid && passData.touched">
     Both passwords must be valid!
 </div>

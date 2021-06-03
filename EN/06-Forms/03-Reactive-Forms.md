@@ -77,11 +77,11 @@ In the template, we have to mark the main **formGroup**, after which we add **fo
 
 Here the **formControlName** is the key instance's name.
 
-```html
+```js
 <form (ngSubmit)="save()" [formGroup]="laptopForm">
 ```
 
-```html
+```js
 <input type="text" class="form-control" id="processor"
     required
     formControlName="processor">

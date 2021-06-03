@@ -136,7 +136,6 @@ import { ProjectComponent } from './project/project.component';
 export class DashboardModule { }
 ```
 
-
 A feature module is a sub-application inside your project.
 
 An Angular application contains multiple feature modules.

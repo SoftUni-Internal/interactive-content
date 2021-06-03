@@ -107,9 +107,8 @@ Here are examples of both ways:
 
 -  Using an **array**:
 
-```
-<a
- [routerLink]="[ '/users', 12345, 'profile' ]">
+```js
+<a [routerLink]="[ '/users', 12345, 'profile' ]">
    Profile Page
 </a>
 ```
@@ -241,11 +240,8 @@ We can add **query parameters** and **fragments** to the URL.
 
 To do that, we need to add them to our `component.html` file:
 
-```
-<a
-   [routerLink]="[ '/users' ]"
-   [queryParams]="{ search: 'Peter' }"
-   fragment="loading"
+```js
+<a [routerLink]="[ '/users' ]" [queryParams]="{ search: 'Peter' }" fragment="loading">
 </a>
 ```
 

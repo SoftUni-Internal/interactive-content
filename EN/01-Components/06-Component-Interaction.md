@@ -4,6 +4,9 @@
 
 # From Parent To Child
 
+Angular-Components-31-Component-Interaction
+Angular-Components-32-33-From-Parent-To-Child
+
 This is the most common method of sharing data. 
 
 It works by using the `@Input()` decorator to allow data to be passed via the template. 
@@ -38,6 +41,8 @@ export class GameComponent {
 [slide hideTitle]
 
 # From Child To Parent
+
+Angular-Components-34-35-Component-Interaction
 
 Another way for sharing data is to emit data from the child. 
 

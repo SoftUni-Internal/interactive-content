@@ -4,6 +4,8 @@
 
 # Lifecycle Overview
 
+Angular-Components-27-28-Lifecycle-overview
+
 Angular calls lifecycle hook methods on directives and components. 
 
 A component has a lifecycle managed by Angular.
@@ -17,6 +19,8 @@ A directive has the same set of lifecycle hooks, minus the hooks that are specif
 [slide hideTitle]
 
 # NgOnInit And NgOnDestroy
+
+Angular-Components-29-NgOnInIt-and-NgOnDestroy-example
 
 `ngOnInit()` executes once on a component initialization.
 
@@ -46,18 +50,20 @@ export class GamesComponent implements OnInit, OnDestroy {
 
 # Other Lifecycle Hooks
 
-`ngOnChanges()` will fire before `ngOnInit()` and every time parent data is updated from its parent component.
+Angular-Components-30-Other-Lifecycle-Hooks
 
-`ngDoCheck()` is called whenever change detection is run. it is called immediately after `ngOnChanges()` and `ngOnInit()`.
+`ngOnChanges()` will fire before `ngOnInit()` and every time parent data is updated from its parent component
 
-`ngAfterContentInit()` runs once after the first `ngDoCheck()`.
+`ngDoCheck()` is called whenever change detection is run, and it is called immediately after `ngOnChanges()` and `ngOnInit()`
 
-`ngAfterContentChecked()` is called directly after `ngAfterContentInit()`.
+`ngAfterContentInit()` runs once after the first `ngDoCheck()`
 
-`ngAfterViewInit()` is called once after `ngAfterContentChecked()`.
+`ngAfterContentChecked()` is called directly after `ngAfterContentInit()`
 
-`ngAfterViewChecked()` is called after `ngAfterContentInit()`.
+`ngAfterViewInit()` is called once after `ngAfterContentChecked()`
 
-More about [lifecycle hooks](https://angular.io/guide/lifecycle-hooks) 
+`ngAfterViewChecked()` is called after `ngAfterContentInit()`
+
+More about [lifecycle hooks](https://angular.io/guide/lifecycle-hooks). 
 
 [/slide]

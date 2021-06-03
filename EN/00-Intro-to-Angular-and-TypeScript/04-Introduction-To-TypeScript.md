@@ -24,6 +24,8 @@ After the file compilation, we will receive plain JavaScript as output.
 
 # Variable Types in TypeScript
 
+Intro-to-Angular-and-Typescript-16-Variable-Types
+
 TypeScript allows us to have **annotations** attach to the variables.
 
 The annotations give us the ability to **specify** the **type** of every **variable**.

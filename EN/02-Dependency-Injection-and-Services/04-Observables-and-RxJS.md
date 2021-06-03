@@ -30,7 +30,7 @@ Asynchronous code starts **very similar**, at the top of the file and executes t
 
 Then the code will **split off** and execute that **asynchronous code separately** from the rest of the code and that's usually because it needs to **wait for** the result of some operation that takes a **long period**.
 
-So the synchronous code will **execute from the top** and execute until it h**it is something asynchronous** and then it will execute that as a result, we may have multiple **different threads** running the code in different sections.
+So the synchronous code will **execute from the top** and execute until it **hit is something asynchronous** and then it will execute that as a result, we may have multiple **different threads** running the code in different sections.
 
 So the code may execute in a **different order** depending on how **long** a certain operation takes, thus make code harder to work with.
 
