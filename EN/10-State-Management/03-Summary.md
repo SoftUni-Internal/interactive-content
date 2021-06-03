@@ -2,15 +2,16 @@
 
 # Summary
 
+16-Summary
+
 ## In this lesson you learned:
 
-- NgRx Store is a powerful State Management solution
-  - Install using `npm install @ngrx/store`
+- **NgRx Store** is a powerful State Management solution
+  * install using `npm install @ngrx/store`
 
 
-- Actions in NgRx Store
-  - Have a `type` in the form of a string
-  - Contain a payload of data
+- **Actions** in NgRx Store have a `type`, in the form of a string
+  * they contain a payload of data
 
 ```js
 import { createAction } from '@ngrx/store';
@@ -19,12 +20,11 @@ import { createAction } from '@ngrx/store';
 export const increment = createAction(
   '[Counter Component] Increment'
 )
-
 ```
 
-- Reducers are responsible for handling transitions from one state to another
-  - They are pure functions
-  - Determine which action to handle based on the action's type
+- **Reducers** are responsible for handling transitions from one state to another
+  * they are pure functions
+  * can determine which action to handle based on the action's type
 
 
 ```js
@@ -43,7 +43,6 @@ const _counterReducer = createReducer(
 export function counterReducer(state, action) {
   return _counterReducer(state, action);
 }
-
 ```
 
 [/slide]

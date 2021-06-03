@@ -4,6 +4,8 @@
 
 # NgRx Store
 
+07-08-NgRx-and-ngrx-store
+
 The `@ngrx/store` library is a **state management tool** that implements the **Redux** pattern using RxJS **Observables**.
 
 It stores all of our application **data** in a **single immutable object**, called the **Store**.
@@ -25,7 +27,7 @@ Open a command\-line tool in your project's root directory and type:
 
 ## Data Flow
 
-This simple diagram illustrates the b**asic flow of data in NgRx**.
+This simple diagram illustrates the **basic flow of data in NgRx**.
 
 [image assetsSrc="state-management(1).png" /]
 
@@ -35,6 +37,8 @@ This simple diagram illustrates the b**asic flow of data in NgRx**.
 [slide hideTitle]
 
 # Actions
+
+09-Actions
 
 **Actions** are used to **describe events** that **occur** during the use of an application.
 
@@ -64,6 +68,8 @@ Actions can also contain an optional **payload** of data, like an **email and pa
 [slide hideTitle]
 
 # Create Actions
+
+10-Create-Actions 
 
 This example shows three actions for **incrementing**, **decrementing** and **resetting** a **Counter Component**.
 
@@ -95,10 +101,19 @@ This method accepts the `type` string and a **payload**, if applicable, and **re
 
 [/slide]
 
+[slide hideTitle]
+
+# NgRx: Demo
+
+11-NgRx-Demo
+
+[/slide]
 
 [slide hideTitle]
 
 # Reducers
+
+11-Reducers
 
 **Reducers** are used to define **how our application state changes**.
 
@@ -112,6 +127,8 @@ Reducers are **pure functions**, which means that they have **no side effects** 
 [slide hideTitle]
 
 # Define a Reducer Function
+
+12-Define-a-Reducer-Function
 
 The **Reducer Function** will be used to **modify the state  in the Counter Component** based on the **Аctions** we created earlier:
 
@@ -150,6 +167,8 @@ The `on()` function is used to **make associations between actions and state cha
 
 # Add the StoreModule.forRoot
 
+13-Add-the-Store-Module.forRoot
+
 To make the Store **accessible** from **every part of our application** we must go to `app.module.ts` and add ` StoreModule.forRoot()` to the imports array:
 
 ```js
@@ -180,6 +199,8 @@ The `forRoot()` method accepts a **map of key\/value pairs** that define our **a
 [slide hideTitle]
 
 # Create a Counter Component
+
+14-15-Create-a-Counter-Component
 
 Create a new **Counter Component** with **Angular CLI**:
 
@@ -248,13 +269,6 @@ reset() {
   this.store.dispatch(reset());
 }
 ```
-
-[/slide]
-
-
-[slide hideTitle]
-
-# Create a Counter Component
 
 The next step is to generate a few **buttons** and a `div` to **visualize the counter**.
 

@@ -1,10 +1,10 @@
-# Summary
-
 [slide hideTitle]
 
-## In this lesson you learned
+# Summary
 
-js-angular-forms-49-Summary.mp4
+## In this lesson you learned:
+
+js-angular-forms-49-Summary
 
 - There are three types of **directives**
     * we use **component** directives to define user interfaces    
