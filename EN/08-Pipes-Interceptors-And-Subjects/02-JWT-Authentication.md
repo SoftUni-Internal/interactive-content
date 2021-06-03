@@ -64,26 +64,34 @@ JSON Web Token consists of **three parts**, separated using **dots**:
 
 [image assetsSrc="Pipes-Interceptors-And-Subjects-1.png" /]
 
-- **Header**: header which determines the algorithm that you're actually using to encode and decode
+- **Header**: header which determines the algorithm that you're using to encode and decode
 
 [image assetsSrc="Pipes-Interceptors-And-Subjects-2.png" /]
  
-- **Payload**: contains all the information tha is store in the token, **claims** about a given **entity** (most often a **user**) which can be **registered**, **public**, and **private**:
+- **Payload**: put all of your different data for your application:
 
 [image assetsSrc="Pipes-Interceptors-And-Subjects-3.png" /]
 
-  - **registered** claims include `iss` (issuer), `sub` (subject) and `exp` (expiration time), all of which are **optional** but recommended
+  - "**sub**" which stands for a subject, is the ID of the user that will be authenticated 
+  
+The user's information would be store in the session inside of the database or inside of the server.
 
-  - **public** claims must be **defined** in [IANA JSON Web Token Registry](https://www.iana.org/assignments/jwt/jwt.xhtml) to prevent **collisions**
+  - "**name**" which stands for the user's name
 
-  - **private** claims are used for sharing information between agreeing parties, in case they are neither **registered** nor **public**
+  - "**iat**"  which stands for issued, what this is saying is when the token was created
+
+It is useful information when the JWT expires, notice a lot of tokens have "**exp**" which is going to stand for "**expired**" at and this is the date that the token no longer becomes valid.
   
 
 - **Signature:** most important part of JWT, which allows verifying that the token has not been changed by the client before it gets sent back to the server:
 
 [image assetsSrc="Pipes-Interceptors-And-Subjects-4.png" /]
 
-Can be used to **confirm** that the **sender** of the token is who it says it is, in the case of tokens signed with a **private key**
-  
+So on the first line, the encoding header is taken and then it adds a period and then the encoded payload is added.
 
+The "base64" encoding is used for both of those sections then they are combined with the period.
+
+In simple words, all it does is take the header and takes the payload and it combines them, which is all of the data that was sent down to the user.
+
+Then what it does is it uses the algorithm which is defined in the header here "**HMACSHA256**" and uses that algorithm to encode the information.
 [/slide]
