@@ -6,14 +6,20 @@
 
 js-interactive-pipes-interceptors-and-subjects-14-15-HTTP-Interceptors-and-interceptors-overview
 
-**Interceptors** give us the ability to **intercept HTTP requests**, both **incoming** and **outgoing**, by using `HttpClient`.
+HTTP interceptors are a feature in Angular that provides a great way to intercept outgoing requests or incoming responses, by using `HttpClient`.
 
-Intercepting a request allows to **swap** or **modify** its **value**.
+When a request is made HTTP interceptors can be used to intercept **modify** or **swap** the request, in other words, we can mutate outgoing requests.
 
-It often involves **attaching JWT** or a similar **access token**.
+Mutation means to add, swap or remove a property, or a header to an outgoing request.
+
+Interceptors can be used, but not limited to the following scenarios:
+- If prefix all your API calls with a server name is needed
+- Setting an authorization header on each request 
+- A global error cache in case of HTTP request fails could be created
+- A mock response for your application to test could be created
+- **Attaching JWT** or a similar **access token**
 
 In **Angular 4 and newer**, intercepting is implemented using the `HttpInterceptor` interface.
-
 [/slide]
 
 
