@@ -20,8 +20,8 @@ Concepts related to **software architectures** are:
 - The concept of **"front-end"** (the user interface of the system) and **"back-end"** (the data storage and processing logic)
 - The classical **"3-tier"** and **"multi-tier"** architectural models, where the system is split into the user interface, business logic, and data storage
 - The concept of **"SOA"** (service-oriented architecture) and **microservices** (self-contained software components)
-- All these concepts are complicated, and developers learn them in detail as they gain experience for many years.
-- At **SoftUni** we shall **review only some of these concepts** because junior developers should be familiar with them.
+- All these concepts are complicated, and developers learn them in detail as they gain experience for many years
+- At **SoftUni** we shall **review only some of these concepts** because junior developers should be familiar with them
 
 
 
