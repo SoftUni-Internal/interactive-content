@@ -10,6 +10,14 @@ The **NgRx** framework is created for building **reactive Angular applications**
 
 It provides a selection of **libraries** for **controlling application state** and the **flow of data** throughout the application.
 
+When building an Angular application, the state is typically handled by a number of different services.
+
+As our project grows, state management can become a big problem - keeping track of changes is hard.
+
+In the case of a problem, debugging becomes almost impossible.
+
+NgRx solves this issue by handling state in a single object, making modification a lot easier.
+
 Inspired by **Redux**, **NgRx Store** makes working with complex data **easier** for us to **manage** and **test**.
 
 [/slide]
