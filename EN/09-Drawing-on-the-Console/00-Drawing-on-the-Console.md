@@ -43,7 +43,7 @@ public class Main {
 
 [slide hideTitle]
 # Rectangle Of N x N Stars
-[code-task title="Rectangle Of N x N Stars" taskId="Rectangle-of-N-x-N-stars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Rectangle Of N x N Stars" taskId="Rectangle-of-N-x-N-starsv2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
