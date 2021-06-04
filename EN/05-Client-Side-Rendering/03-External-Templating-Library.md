@@ -1,4 +1,4 @@
-# External Templating Library
+# lit-html
 
 [slide hideTitle]
 
