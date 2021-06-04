@@ -25,11 +25,13 @@ public class Main {
 0
 [/input]
 [output]
+```
 CASH RECEIPT
 ------------------------------
 Charged to____________________
 Received by___________________
 ------------------------------
+```
 (c) SoftUni
 [/output]
 [/test]
@@ -270,8 +272,10 @@ public class Main {
 2
 [/input]
 [output]
+```
 ----
 ----
+```
 [/output]
 [/test]
 [test]
@@ -279,9 +283,11 @@ public class Main {
 3
 [/input]
 [output]
+```
 ------
 -\/\/-
 ------
+```
 [/output]
 [/test]
 [test]
@@ -289,10 +295,12 @@ public class Main {
 4
 [/input]
 [output]
+```
 --------
 -\/\/\/-
 -\/\/\/-
 --------
+```
 [/output]
 [/test]
 [test]
@@ -300,11 +308,13 @@ public class Main {
 5
 [/input]
 [output]
+```
 ----------
 -\/\/\/\/-
 -\/\/\/\/-
 -\/\/\/\/-
 ----------
+```
 [/output]
 [/test]
 [test]
@@ -312,6 +322,7 @@ public class Main {
 8
 [/input]
 [output]
+```
 ----------------
 -\/\/\/\/\/\/\/-
 -\/\/\/\/\/\/\/-
@@ -320,6 +331,7 @@ public class Main {
 -\/\/\/\/\/\/\/-
 -\/\/\/\/\/\/\/-
 ----------------
+```
 [/output]
 [/test]
 [test]
@@ -327,6 +339,7 @@ public class Main {
 15
 [/input]
 [output]
+```
 ------------------------------
 -\/\/\/\/\/\/\/\/\/\/\/\/\/\/-
 -\/\/\/\/\/\/\/\/\/\/\/\/\/\/-
@@ -342,6 +355,7 @@ public class Main {
 -\/\/\/\/\/\/\/\/\/\/\/\/\/\/-
 -\/\/\/\/\/\/\/\/\/\/\/\/\/\/-
 ------------------------------
+```
 [/output]
 [/test]
 [/tests]
@@ -1259,6 +1273,7 @@ warning
 Customer has not email assigned
 [/input]
 [output]
+```
 Error: Failed to execute credit card purchase.
 ==============================================
 Reason: Invalid customer address.
@@ -1273,6 +1288,7 @@ User registered successfully.
 
 Warning: Customer has not email assigned.
 =========================================
+```
 [/output]
 [/test]
 [test]
@@ -1289,6 +1305,7 @@ warning
 Invalid credentials
 [/input]
 [output]
+```
 Error: Failed to execute go to page pornhub.com.
 ================================================
 Reason: Page not found.
@@ -1300,6 +1317,7 @@ Successfully called to Mama.
 
 Warning: Invalid credentials.
 =============================
+```
 [/output]
 [/test]
 [/tests]
