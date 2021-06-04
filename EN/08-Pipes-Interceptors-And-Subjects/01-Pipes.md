@@ -99,7 +99,7 @@ This is the name we will **use** when **applying our custom pipe in a template**
 
 The `PipeTransform` class contains the `transform` method, used for **transforming data**.
 
-Our `GreetingPipe` class implements it in order to **return the modified string**.
+Our `GreetingPipe` class implements it to **return the modified string**.
 
 We use our custom pipe as follows:
 

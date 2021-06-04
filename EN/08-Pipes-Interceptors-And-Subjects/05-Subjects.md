@@ -6,9 +6,9 @@
 
 js-interactive-pipes-interceptors-and-subjects-27-28-Subjects-and-what-is-a-subject
 
-Observables are kind of passive because we can not trigger the emission of a new value manually, which might not be optimal in some cases.
+Observables are kind of **passive because we can not trigger the emission** of a new value manually, which might **not be optimal in some cases**.
 
-In those cases, we can use observable like an event emitter where we can control when a new value is emitted.
+In those cases, we can use **observable like an event emitter** where we can control when a new **value is emitted**.
 
 We can do this with something which is called a **subject**, which inherits from the observable.
 
@@ -18,7 +18,9 @@ Subjects are both **Observables** and **Observers**.
 
 This means that we can **pass a Subject** as an argument to the **subscribe()** method of an **Observable**, because it **implements** `next()`, `error()` and `complete()`.
 
-Therefore we can have a more active approach of using observables with subjects that do not mean that we should always use subjects just use them if we need to use something like an event emitter.
+Therefore **we can have a more active approach** of using observables with subjects.
+
+That do not mean we **should always use subjects** just use them if something like an event emitter is needed.
 
 [/slide]
 
@@ -70,9 +72,9 @@ The `BehaviorSubject` stores the "current" value, which means that the **latest 
 
 An **initial value** is **required** as a parameter when **instantiating** a Behaviour Subject.
 
-To receive the last emitted value, we can get the value by accessing the `.value` property or subscribe to it. 
+To receive the **last emitted value**, we can get that **value by accessing** the `.value` property or **subscribe to it**. 
 
-If the second approach is used, the BehaviorSubject will directly emit the current value to the subscriber. 
+If the s**econd approach is used**, the BehaviorSubject will **directly emit the current value** to the subscriber. 
 
 
 [/slide]

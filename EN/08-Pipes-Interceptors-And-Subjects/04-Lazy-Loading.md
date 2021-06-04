@@ -8,23 +8,23 @@ js-interactive-pipes-interceptors-and-subjects-21-22-Lazy-Loading-and-what-is-la
 
 Angular loads **all application modules** once the application starts, even if they are **not going to be needed** at the moment.
 
-This **default** behaviour can affect **loading time negatively**, especially if your application is **large**.
+This **default** behavior can affect **loading time negatively**, especially if your application is **large**.
 
-For example, if a website has about 100 pages like home page, dashboard page, about us page, contact us page, etc.
+For example, if a website **has about 100 pages** like **home** page, **dashboard** page, **about** us page, **contact** us page, etc.
 
-When the user visits the website and goes for example to the homepage, if the lazy lading pattern is not used what will happen is the whole website will be downloaded.
+When the user visits that website and **goes for example to the homepage**, if the **lazy lading pattern is not used** what will happen is the **whole website will be downloaded**.
 
-The user will have to wait for every page to be downloaded before can see any page or can start interacting with the website, even if he is not going to use the contact us or about this page.
+The user will have to wait for **every page to be downloaded** before can see any page at all and **interact with the website**, even if he is not going to visit **every single** page in the application.
 
-It is a good idea to use lazy loading for images or videos because they're not critical resources.
+So it is a **good idea to use lazy loading** for images, videos, etc. because they are not **critical resources**.
 
-There is no need to download the complete video when a website is loaded, rather you should wait for the user to click the play button.
+There is **no need to download the complete video** when a website is loaded, rather you should wait for the user to **click the play button**.
 
-A video is not a critical resource, the user might never see that video so we should wait for a play button to be clicked and only then start downloading the video or buffering it.
+A video is not a **critical resource**, the user **might never see that video** so we should wait for a play button to be clicked and only then start downloading or buffering the video.
 
-That way **Lazy Loading** improves **performance** by **selectively downloading** only the modules **necessary** for a specific functionality to **run**.
+That way **Lazy Loading** improves **performance** by **selectively downloading** only the modules **necessary** for specific functionality to **run**.
 
-To **implement** Lazy Loading in our project, we need to **separate the application** in different **modules**.
+To **implement** Lazy Loading in our project, we need to **separate the application** into different **modules**.
 
 Any of these **additional modules** will **not** be loaded until the user reaches the **main route of a given module**.
 
@@ -62,7 +62,7 @@ js-interactive-pipes-interceptors-and-subjects-24-Warning-Don't-Import-in-Bootst
 
 You should **never** import a feature module inside `app.module.ts`.
 
-Since the `AppModule` is used for **bootstrapping the application**, any imported module will **start loading immediately** when the application is ran.
+Since the `AppModule` is used for **bootstrapping the application**, any imported module will **start loading immediately** when the application is running.
 
 **This defeats the purpose of lazy loading.**
 
