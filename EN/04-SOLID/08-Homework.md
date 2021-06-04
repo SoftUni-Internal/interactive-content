@@ -3,7 +3,10 @@
 
 [slide hideTitle]
 
-# Problem: Logger
+# Problem with Solution: Logger
+
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/05-SOLID/EN/Problem-1-Logger-Problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Logger" taskId="oop-advanced-java-SOLID-Principles-Logger" executionType="tests-execution" executionStrategy="java-zip-file-code" requiresInput]
 [code-upload allowedMemory="30" /] 
 [task-description]
