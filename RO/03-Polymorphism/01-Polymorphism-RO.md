@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Ce Este Polimorfismul?
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/RO/interactive-java-oop-advanced-polymorphism-3-4-What-is-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/RO/interactive-java-oop-advanced-polymorphism-3-4-5-6-What-is-polymorphism-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Polimorfismul este unul dintre cei patru piloni de bază OOP în limbajele **orientate pe obiecte**.
 
@@ -147,7 +147,7 @@ Operatorul `instanceOf` determină dacă există o **o relație** între clase (
 
 # Tipuri de Polimorfism
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/RO/interactive-java-oop-advanced-polymorphism-8-9-Types-of-polymorphism-compile-time-polymorphism-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/RO/java-oop-advanced-polymorphism-8-9-13-14-Types-of-polymorphism-compile-time-polymorphism-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există **două** tipuri ded **polimorfism** în Java:
 
@@ -399,7 +399,7 @@ Test Passed!
 
 # Principii ale Metodelor Suprascrise și Supraîncărcate
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/RO/interactive-java-oop-advanced-polymorphism-12-Rules-for-overloading-method-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Advanced/04-Polymorphism/RO/interactive-java-oop-advanced-polymorphism-12-15-Rules-for-overloading-method-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Metode suprascrise
 
