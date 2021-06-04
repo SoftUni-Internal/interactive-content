@@ -86,7 +86,7 @@ Then, import it inside the `angular.json` file as follows:
 ]
 ```
 
-As shown above, you have locate the `styles` array and paste the path to `bootstrap.min.css` in **node_modules**.
+As shown above, you have to locate the `styles` array and paste the path to `bootstrap.min.css` in **node_modules**.
 
 You will use Bootstrap to create **containers**, **form-groups**, **form-controls**, **style buttons** and **errors**.
 
@@ -250,7 +250,7 @@ There are **four** "form-group" `div` elements, three of which consist of a labe
 
 The **operating system** form group has a `select` element that uses the `*ngFor` structural directive to gather a list of OS `option` elements.
 
-At the bottom we can see a `button` of type `submit`, which has the classes of `btn` and `btn-success`.
+At the bottom, we can see a `button` of type `submit`, which has the classes of `btn` and `btn-success`.
 
 This is a **Bootstrap** class name that will automatically apply **styling** to our button.
 
@@ -282,7 +282,7 @@ So, we need to include this in our HTML template:
 <input name="processor"/>
 ```
 
-If we want for Angular to track the user interaction and value of a given form's control, keeping the view up-to-date, we must include the directive as follows:
+If we want Angular to track the user interaction and value of a given form's control, keeping the view up-to-date, we must include the directive as follows:
 
 - `[(ngmodel)]` - this is the syntax for two-way data binding
 
@@ -408,7 +408,7 @@ It can also **update** the control with special Angular CSS classes and leverage
 
 js-angular-forms-26-Track-Control-State
 
-Angular adds custom CSS classes to input fields and forms, depending on their states.
+Angular add custom CSS classes to input fields and forms, depending on their states.
  
 ## **ng-touched** / **ng-untouched**
 
@@ -424,9 +424,9 @@ The `ng-touched` class will be applied if the input field has been touched.
  
 ## **ng-valid** / **ng-invalid**
 
-These two classes are often used when we want to inform the user for wrong input data.
+These two classes are often used when we want to inform the user of wrong input data.
 
-`ngvalid` is applied to a form or input field when their content is valid, in the other case - Angular appiles `ng-invalid`.
+`ngvalid` is applied to a form or input field when their content is valid, in the other case - Angular applies `ng-invalid`.
 
 [/slide]
 
@@ -468,7 +468,7 @@ Angular tracks the attributes and changes the state depending on the user input.
     name="processor">
 ```
 
-We can use an `*ngIf` directive to inform the user for incompatible information.
+We can use an `*ngIf` directive to inform the user of incompatible information.
 
 For example:
 

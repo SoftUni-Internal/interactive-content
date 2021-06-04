@@ -25,7 +25,7 @@ In **Angular 4 and newer**, intercepting is implemented using the `HttpIntercept
 
 [slide hideTitle]
 
-# Create Http Interceptor
+# Create HTTP Interceptor
 
 js-interactive-pipes-interceptors-and-subjects-16-Create-Http-Interceptor
 
@@ -62,7 +62,7 @@ Interceptors are **services**, which means they use the `@Injectable` decorator.
 
 Our `TokenInterceptor` class must **implement** the `HttpInterceptor` interface from `@angular/common/http`.
 
-We do this in order to **use** the `intercept()` method.
+We do this to **use** the `intercept()` method.
 
 [/slide]
 
@@ -155,7 +155,7 @@ Inside the `providers` array, create a **new provider**:
 
 The `multi` property should equal `true` if you plan to provide **more than one class** to a given **token**.
 
-`HTTP_INTERCEPTORS` is a token for a **multiprovider** that injects **an array of values**, rather than a single value, so `multi` **must be set to true**.
+`HTTP_INTERCEPTORS` is a token for a **multi provider** that injects **an array of values**, rather than a single value, so `multi` **must be set to true**.
 
 [/slide]
 

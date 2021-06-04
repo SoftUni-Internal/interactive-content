@@ -90,7 +90,7 @@ subject.next(4);
 
 ## In the next lesson, you will learn:
 
-- Workshop - Pipes, Interceptors and Subjects
+- Workshop - Pipes, Interceptors, and Subjects
 
 
 [/slide]

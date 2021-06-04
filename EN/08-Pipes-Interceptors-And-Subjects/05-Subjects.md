@@ -20,7 +20,7 @@ This means that we can **pass a Subject** as an argument to the **subscribe()** 
 
 Therefore **we can have a more active approach** of using observables with subjects.
 
-That do not mean we **should always use subjects** just use them if something like an event emitter is needed.
+That does not mean we **should always use subjects** just use them if something like an event emitter is needed.
 
 [/slide]
 
@@ -74,7 +74,7 @@ An **initial value** is **required** as a parameter when **instantiating** a Beh
 
 To receive the **last emitted value**, we can get that **value by accessing** the `.value` property or **subscribe to it**. 
 
-If the s**econd approach is used**, the BehaviorSubject will **directly emit the current value** to the subscriber. 
+If the **second approach is used**, the BehaviorSubject will **directly emit the current value** to the subscriber. 
 
 
 [/slide]

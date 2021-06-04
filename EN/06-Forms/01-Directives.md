@@ -29,7 +29,7 @@ For example, the built-in **NgStyle** directive can change several element style
 Examples include: 
 
 - **Highlighting** the text of an element 
-- **Focusing** on an input when a specific action occurs 
+- **Focusing** on input when a specific action occurs 
 - Showing a definition for a word when the user **hovers or clicks** on an element 
 - **Hiding and showing** a modal when a button is clicked
 
@@ -64,7 +64,7 @@ js-angular-forms-5-Directives-Comparison
 
 ## Attribute Directives
 
-Attribute directives have their own layout view and styles.
+Attribute directives have their layout view and styles.
 
 In other words, they deal with changing the look and behavior of a DOM element.
 
@@ -118,7 +118,7 @@ The main purpose of structural directives is to define and modify the HTML layou
 
 It is important to note that we can apply only one structural directive to a host element.
 
-There are three main structural directives in Angular: `*ngIf`, `*ngFor` and `*ngSwitch`.
+There are three main structural directives in Angular: `*ngIf`, `*ngFor`, and `*ngSwitch`.
 
 [/slide]
 
@@ -199,7 +199,7 @@ import { Renderer2 } from '@angular/core'
 
 js-angular-forms-8-Warning - Use-Renderer2
 
-In order to use Renderer2, we have to inject it.
+To use Renderer2, we have to inject it.
 
 This way, we can access its methods and modify the DOM.
 

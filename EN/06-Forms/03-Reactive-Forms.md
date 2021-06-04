@@ -14,7 +14,7 @@ Also, they are built upon **observable streams** - this means that form inputs a
 
 These input values can then be accessed **synchronously**.
 
-This way, we are sure that the information stored is consistent and predictable, when requested.
+This way, we are sure that the information stored is consistent and predictable when requested.
 
 They also enable reactive transformations, such as adding elements dynamically, while also making unit testing much easier.
 
@@ -22,7 +22,7 @@ This approach to building forms brings even more advantages, such as:
 
 - being more **powerful** and **easier** to use
 - enabling more **customisability** in complex use-cases
-- being **immutable** means **no data binding** is done, a data modelling approach many developers **prefer**
+- being **immutable** means **no data binding** is done, a data modeling approach many developers **prefer**
 
 [/slide]
 
@@ -48,7 +48,7 @@ The `formGroup` directive is responsible for tracking the values and validity st
 
 We use `formControl` to track the value and validity of a single form control.
 
-`formControlName` is used to register a `FormControl` in an existing `FormGroup` to a f
+`formControlName` is used to register a `FormControl` in an existing `FormGroup` to an f
 
 ## formGroupName
 ## formArrayName
