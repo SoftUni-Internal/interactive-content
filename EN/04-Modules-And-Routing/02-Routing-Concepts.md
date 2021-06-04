@@ -14,7 +14,7 @@ There is also **server-side** navigation, which works differently than **client-
 
 **Server-side** navigation reloads on every **change** in the URL.
 
-In this example you can notice the difference between the two types of navigation:
+In this example you can notice the **difference between** the two types of navigation:
 
 ## Server-Side
 
@@ -24,7 +24,7 @@ First, the user clicks on an **anchor** element and the browser detects the even
 
 Then, the client creates a **GET** request to route found in the `href` tag.
 
-On the **server** side, the request is processed and a response (in the form of HTML, JSON, images, etc.) is returned.
+On the **server** side, the request is processed and response (in the form of HTML, JSON, images, etc.) is returned.
 
 Finally, the browser loads a completely **new webpage**, discarding the previous one.
 
@@ -52,17 +52,17 @@ Instead of downloading a whole webpage, Angular will download **only** the new a
 
 Angular-Modules-and-routing-10-Single-page-applications
 
-Single page applications work by leveraging the power of JavaScript and frameworks, such as Angular.
+Single-page applications work by **leveraging the power** of JavaScript and frameworks, such as Angular.
 
-In SPAs, the browser sends an initial request and receives an almost empty HTML file.
+In SPAs, the browser s**ends an initial request** and receives an almost empty HTML file.
 
-What it contains however, are references to JavaScript files - the main engine of a single page app.
+What it contains, however, are **references to JavaScript** files - the main engine of a single-page app.
 
-In traditional (multi page) web applications, when the route is changed, the server responds with an entirely separate webpage.
+In traditional (multi-page) web applications, when the route is changed, the server responds with an entirely separate webpage.
 
-In an SPA, when the **location is changed**, the **router** will load the corresponding component, which is already stored on the client.
+In a SPA, when the **location is changed**, the **router** will load the corresponding component, which is already stored on the client.
 
-Also, on the opposite side, a difference in the content will be represented in the URL.
+Also, on the opposite side, a **difference in the content will** be represented in the URL.
 
 This type of routing has many benefits, including:
 
@@ -74,10 +74,10 @@ This type of routing has many benefits, including:
 
 - Тhe user interface has increased response times
 
-However, there is a minor downside - SPAs are not optimised for search engine discovery.
+However, there is a minor downside - SPAs are not ** optimized for search engine discovery**.
 
-This means that our application may rank lower in search results, or appear on wrong queries.
+This means that our **application may rank lower** in search results, or appear on wrong queries.
 
-This can become somewhat less of an issue if we apply the appropriate metatags and use SEO (Search Engine Optimisation) friendly URLs.
+This can become somewhat **less of an issue** if we apply the appropriate metatags and use SEO (Search Engine Optimisation) friendly URLs.
 
 [/slide]

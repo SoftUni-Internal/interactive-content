@@ -6,7 +6,7 @@
 
 Angular-Modules-and-routing-11-12-Router-module
 
-To create a template, we need to go through a number of steps.
+To create a template, we need to go through several steps.
 
 The first one is to add a **base meta tag** in the `index.html` file.
 
@@ -21,7 +21,7 @@ After that, we can add a navigation tag to the `app.component.html` file or any 
 </nav>
 ```
 
-In this `nav` tag, we are using **routerLink** instead of **href**.
+In this `nav` tag, we are using **router link** instead of **href**.
 
 This custom attribute overrides the default page reload that **href** does.
 

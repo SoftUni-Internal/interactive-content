@@ -39,7 +39,7 @@ Angular-Modules-and-routing-26-27-CanActivate-Guard
 
 We can use **CanActivate** when we want to verify something before letting the user access the route.
 
-For example, if a user is logged in, they can see their profile page.
+For example, if a user is logged in, they **can see their profile page**.
 
 If not, they will instead be redirected to the **login ** or **registration pages**:
 
@@ -61,7 +61,7 @@ export class AuthGuard implements CanActivate {
 
 In this example, if the user is **logged in**, **CanActivate** returns the `checkIfLogged()` function.
 
-This function returns a boolean - in this case, it will return true for a logged-in user and else otherwise.
+This function returns a boolean - in this case, **it will return true** for a logged-in user and else otherwise.
 
 [/slide]
 
@@ -88,11 +88,11 @@ We call them inside the route object with the **resolve property**:
 }
 ```
 
-We can add resolvers to the route either as an object or as an array.
+We can add resolvers to the **route either as an object or as an array**.
 
 If we have guards in the route, the resolver will wait for their result.
 
-It will determine whether to fetch the information or not, depending on the guard's return value.
+It will determine whether to **fetch the information** or not, depending on the guard's return value.
 
 ## Creating a Resolver
 
@@ -128,7 +128,7 @@ Once the Resolver has been created, we must provide it in the `app.module` file.
 
 After that, we need to add the Resolver to the **given route**.
 
-And finally, we can implement it into a component.
+And finally, **we can implement it into a component**.
 
 To do that, we need to take the data from the snapshot by using `this.route.snapshot.data['user'];`.
 

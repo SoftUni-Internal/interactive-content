@@ -10,7 +10,7 @@ An Angular module is a deployment **subset** of your whole Angular application.
 
 **NgModules** help us organize our code into blocks that work as a singular unit.
 
-You can inject them into other modules or components.
+You can inject them into **other modules** or components.
 
 This is how the main `app.module.ts` looks.
 
@@ -43,7 +43,7 @@ The most popular **Angular** and **third-party** libraries **NgModules** are:
 
 Angular-Modules-and-routing-5-6-Creating-Custom-modules
 
-We implement custom modules (also known as feature modules) when the app becomes larger.
+We implement **custom modules** (also known as feature modules) when the app becomes larger.
 
 They need to import **CommonModule**, but we do not need to import the **BrowserModule** because **CommonModule** is part of it.
 
@@ -53,7 +53,7 @@ When we create a component in a module, it will show in the **declarations** arr
 
 By default, components in the **declaration** array are private.
 
-So if we want to use that component outside that module, we will need the **exports** array.
+So if we want to use that **component outside that module**, we will need the **exports** array.
 
 ```js
 import { NgModule } from '@angular/core';
@@ -111,7 +111,7 @@ import { CustomerStyleDirective } from './directives/customer-style/customer-sty
 export class SharedModule { }
 ```
 
-Shared modules contain pieces of our application, shared across multiple areas.
+Shared modules **contain pieces** of our application, shared across multiple areas.
 
 We declare a shared module to enable component reuse.
 
@@ -136,11 +136,11 @@ import { ProjectComponent } from './project/project.component';
 export class DashboardModule { }
 ```
 
-A feature module is a sub-application inside your project.
+A feature module is a **sub-application** inside your project.
 
 An Angular application contains multiple feature modules.
 
-Using them ensures better scalabity and also enables lazy loading, which we will learn about in a later lesson.
+Using them **ensures better scalabity** and also enables lazy loading, which we will learn about in a later lesson.
 
 ## Core Modules
 
@@ -167,9 +167,9 @@ export class CoreModule {
 
 Core Modules are a way to separate the configuration layer of our application from the rest of the application.
 
-We can do that by declaring our features and shared modules in a **Core Module** and simply providing it to the `AppModule`.
+We can do that by **declaring our features** and shared modules in a **Core Module** and simply providing it to the `AppModule`.
 
-We can look at it as a parent feature module for the content we add to an application.
+We can look at it as a **parent feature module** for the content we add to an application.
 
 You can find more information about NgModules in the [Angular guide](https://angular.io/guide/ngmodules).
 
