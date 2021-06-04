@@ -1,1 +1,0 @@
-# Simple Calculations - Exam Problems
