@@ -494,7 +494,31 @@ For example:
 
 js-angular-forms-29-List-of-Validators-Third-party-Validators
 
-Angular comes with the following [validators](https://angular.io/api/forms/Validators).
+Angular comes with the following [validators](https://angular.io/api/forms/Validators):
+
+- `min(num)` - this validator requires the control's value to be either greater than or equal to the number argument
+
+```js
+const ctrl = new FormControl(4, Validators.min(5));
+
+console.log(ctrl.errors); // Output: {min: {min: 5, actual: 4}}
+```
+
+- `max(num)` - requires the control's value to be either less than or equal to the passed-in number 
+
+```js
+const ctrl = new FormControl(4, Validators.max(3));
+
+console.log(ctrl.errors); // Output: {max: {max: 3, actual: 4}}
+```
+
+- `required()` - this validator makes sure the control's value is not empty
+
+```js
+const ctrl = new FormControl('', Validators.required);
+
+console.log(ctrl.errors); // Output: {required: true}
+```
 
 For **template-driven** forms you will need the following [directives](https://angular.io/api?type=directive).
 
@@ -595,7 +619,7 @@ Use it to validate a sub-group of your form separately from the rest of your for
 
 It is useful for input fields that have the same validation.
 
-For example, Password and Confirm Password.
+For example, **Password** and **Confirm Password**:
 
 ```js
 <div ngModelGroup="passData" #passData="ngModelGroup"></div>

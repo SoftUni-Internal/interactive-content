@@ -78,12 +78,12 @@ If you have not already, now is the time to generate a new Angular project: `ng 
 ```js
 import { createAction } from '@ngrx/store';
 
-// An action to increment  the counter
+// An action to increment the counter
 export const increment = createAction(
   '[Counter Component] Increment'
 )
 
-// An action to decrement  the counter
+// An action to decrement the counter
 export const increment = createAction(
   '[Counter Component] Increment'
 )
@@ -95,9 +95,22 @@ export const increment = createAction(
 
 ```
 
-Inside a new `counter.actions.ts` file, we import the `createAction()` method from `@ngrx/store`.
+We create a new `counter.actions.ts` file in the `app` folder.
+
+Inside, we import the `createAction()` method from `@ngrx/store`.
 
 This method accepts the `type` string and a **payload**, if applicable, and **returns an Action object**.
+
+They make the creation of actions less explicit, abstracting the underlying class-based logic from developers.
+
+Action creator functions can also accept another functions as a last argument:
+
+```js
+export const registrationSuccess = createAction(
+  '[Auth/API] Registration Success',
+  (response: Response) => response.user
+);
+```
 
 [/slide]
 
@@ -122,7 +135,7 @@ Reducers are **pure functions**, which means that they have **no side effects** 
 
 12-Define-a-Reducer-Function
 
-The **Reducer Function** will be used to **modify the state  in the Counter Component** based on the **Аctions** we created earlier:
+The **Reducer Function** will be used to **modify the state in the Counter Component** based on the **Аctions** we created earlier:
 
 ```js
 import { createReducer, on } from '@ngrx/store';
