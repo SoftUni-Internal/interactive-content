@@ -25,7 +25,6 @@ public class Main {
 0
 [/input]
 [output]
-```
 **********
 **********
 **********
@@ -36,7 +35,6 @@ public class Main {
 **********
 **********
 **********
-```
 [/output]
 [/test]
 [/tests]
@@ -45,7 +43,7 @@ public class Main {
 
 [slide hideTitle]
 # Rectangle Of N x N Stars
-[code-task title="Rectangle Of N x N Stars" taskId="Rectangle-of-N-x-N-stars" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Rectangle Of N x N Stars" taskId="Rectangle-of-N-x-N-starsv2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
@@ -443,10 +441,8 @@ public class Main {
 2
 [/input]
 [output]
-```
 + +
 + +
-```
 [/output]
 [/test]
 [test]
@@ -454,7 +450,6 @@ public class Main {
 20
 [/input]
 [output]
-```
 + - - - - - - - - - - - - - - - - - - +
 | - - - - - - - - - - - - - - - - - - |
 | - - - - - - - - - - - - - - - - - - |
@@ -475,7 +470,6 @@ public class Main {
 | - - - - - - - - - - - - - - - - - - |
 | - - - - - - - - - - - - - - - - - - |
 + - - - - - - - - - - - - - - - - - - +
-```
 [/output]
 [/test]
 [/tests]
@@ -507,7 +501,6 @@ public class Main {
 5
 [/input]
 [output]
-```
 *
    * *
   * * *
@@ -517,7 +510,6 @@ public class Main {
   * * *
    * *
     *
-```
 [/output]
 [/test]
 [test]
@@ -525,7 +517,6 @@ public class Main {
 4
 [/input]
 [output]
-```
 *
   * *
  * * *
@@ -533,7 +524,6 @@ public class Main {
  * * *
   * *
    *
-```
 [/output]
 [/test]
 [test]
@@ -541,13 +531,11 @@ public class Main {
 3
 [/input]
 [output]
-```
 *
  * *
 * * *
  * *
   *
-```
 [/output]
 [/test]
 [test]
@@ -555,11 +543,9 @@ public class Main {
 2
 [/input]
 [output]
-```
 *
 * *
  *
-```
 [/output]
 [/test]
 [test]
@@ -645,11 +631,9 @@ public class Main {
 2
 [/input]
 [output]
-```
 |   
  * | * 
 ** | **
-```
 [/output]
 [/test]
 [test open]
@@ -657,12 +641,10 @@ public class Main {
 3
 [/input]
 [output]
-```
 |    
   * | *  
  ** | ** 
 *** | ***
-```
 [/output]
 [/test]
 [test]
@@ -670,10 +652,8 @@ public class Main {
 1
 [/input]
 [output]
-```
 |  
 * | *
-```
 [/output]
 [/test]
 [test]
@@ -681,13 +661,11 @@ public class Main {
 4
 [/input]
 [output]
-```
 |     
    * | *   
   ** | **  
  *** | *** 
 **** | ****
-```
 [/output]
 [/test]
 [test]
@@ -695,14 +673,12 @@ public class Main {
 5
 [/input]
 [output]
-```
 |      
     * | *    
    ** | **   
   *** | ***  
  **** | **** 
 ***** | *****
-```
 [/output]
 [/test]
 [test]
@@ -710,7 +686,6 @@ public class Main {
 6
 [/input]
 [output]
-```
 |       
      * | *     
     ** | **    
@@ -718,7 +693,6 @@ public class Main {
   **** | ****  
  ***** | ***** 
 ****** | ******
-```
 [/output]
 [/test]
 [test]
@@ -726,7 +700,6 @@ public class Main {
 10
 [/input]
 [output]
-```
 |           
          * | *         
         ** | **        
@@ -738,7 +711,6 @@ public class Main {
   ******** | ********  
  ********* | ********* 
 ********** | **********
-```
 [/output]
 [/test]
 [test]
@@ -746,7 +718,6 @@ public class Main {
 11
 [/input]
 [output]
-```
 |            
           * | *          
          ** | **         
@@ -759,7 +730,6 @@ public class Main {
   ********* | *********  
  ********** | ********** 
 *********** | ***********
-```
 [/output]
 [/test]
 [test]
@@ -767,7 +737,6 @@ public class Main {
 25
 [/input]
 [output]
-```
 |                          
                         * | *                        
                        ** | **                       
@@ -794,7 +763,6 @@ public class Main {
   *********************** | ***********************  
  ************************ | ************************ 
 ************************* | *************************
-```
 [/output]
 [/test]
 [test]
@@ -802,7 +770,6 @@ public class Main {
 30
 [/input]
 [output]
-```
 |                               
                              * | *                             
                             ** | **                            
@@ -834,7 +801,6 @@ public class Main {
   **************************** | ****************************  
  ***************************** | ***************************** 
 ****************************** | ******************************
-```
 [/output]
 [/test]
 [test]
@@ -842,7 +808,6 @@ public class Main {
 49
 [/input]
 [output]
-```
 |                                                  
                                                 * | *                                                
                                                ** | **                                               
@@ -893,7 +858,6 @@ public class Main {
   *********************************************** | ***********************************************  
  ************************************************ | ************************************************ 
 ************************************************* | *************************************************
-```
 [/output]
 [/test]
 [test]
@@ -901,7 +865,6 @@ public class Main {
 50
 [/input]
 [output]
-```
 |                                                   
                                                  * | *                                                 
                                                 ** | **                                                
@@ -953,7 +916,6 @@ public class Main {
   ************************************************ | ************************************************  
  ************************************************* | ************************************************* 
 ************************************************** | **************************************************
-```
 [/output]
 [/test]
 [/tests]
@@ -1250,10 +1212,14 @@ public class Main {
 [tests]
 [test]
 [input]
+```
 1
+```
 [/input]
 [output]
+```
 *
+```
 [/output]
 [/test]
 [test]
@@ -1261,9 +1227,11 @@ public class Main {
 3
 [/input]
 [output]
+```
 -*-
 *-*
 -*-
+```
 [/output]
 [/test]
 [test]
@@ -1271,11 +1239,13 @@ public class Main {
 5
 [/input]
 [output]
+```
 --*--
 -*-*-
 *---*
 -*-*-
 --*--
+```
 [/output]
 [/test]
 [test]
@@ -1283,6 +1253,7 @@ public class Main {
 7
 [/input]
 [output]
+```
 ---*---
 --*-*--
 -*---*-
@@ -1290,6 +1261,7 @@ public class Main {
 -*---*-
 --*-*--
 ---*---
+```
 [/output]
 [/test]
 [test]
@@ -1297,6 +1269,7 @@ public class Main {
 11
 [/input]
 [output]
+```
 -----*-----
 ----*-*----
 ---*---*---
@@ -1308,6 +1281,7 @@ public class Main {
 ---*---*---
 ----*-*----
 -----*-----
+```
 [/output]
 [/test]
 [test]
@@ -1315,6 +1289,7 @@ public class Main {
 17
 [/input]
 [output]
+```
 --------*--------
 -------*-*-------
 ------*---*------
@@ -1332,6 +1307,7 @@ public class Main {
 ------*---*------
 -------*-*-------
 --------*--------
+```
 [/output]
 [/test]
 [test]
@@ -1347,9 +1323,11 @@ public class Main {
 4
 [/input]
 [output]
+```
 -**-
 *--*
 -**-
+```
 [/output]
 [/test]
 [test]
@@ -1357,11 +1335,13 @@ public class Main {
 6
 [/input]
 [output]
+```
 --**--
 -*--*-
 *----*
 -*--*-
 --**--
+```
 [/output]
 [/test]
 [test]
@@ -1369,6 +1349,7 @@ public class Main {
 16
 [/input]
 [output]
+```
 -------**-------
 ------*--*------
 -----*----*-----
@@ -1384,6 +1365,7 @@ public class Main {
 -----*----*-----
 ------*--*------
 -------**-------
+```
 [/output]
 [/test]
 [/tests]
