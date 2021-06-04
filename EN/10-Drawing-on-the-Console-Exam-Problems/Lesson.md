@@ -1,1 +1,0 @@
-# Drawing on the Console - Exam Problems
