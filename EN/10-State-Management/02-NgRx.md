@@ -96,23 +96,25 @@ export const increment = createAction(
 )
 
 // An action to decrement the counter
-export const increment = createAction(
-  '[Counter Component] Increment'
+export const decrement = createAction(
+  '[Counter Component] Decrement'
 )
 
 // An action to reset the counter
-export const increment = createAction(
-  '[Counter Component] Increment'
+export const reset = createAction(
+  '[Counter Component] Reset'
 )
 ```
-
-
 
 Inside, we import the `createAction()` method from `@ngrx/store`.
 
 This method accepts the `type` string and a **payload**, if applicable, and **returns an Action object**.
 
 They make the creation of actions less explicit, abstracting the underlying class-based logic from developers.
+
+Each of the three action creators are going to return **creator functions**.
+
+When any of these functions are invoked, they will return an object, in the shape of the **Action** interface.
 
 Action creator functions can also accept another functions as a last argument:
 
@@ -123,6 +125,7 @@ export const registrationSuccess = createAction(
 );
 ```
 
+In this example, we return the user from the response object, when a registration is performed successfully.
 
 [/slide]
 
@@ -147,7 +150,9 @@ Reducers are **pure functions**, which means that they have **no side effects** 
 
 12-Define-a-Reducer-Function
 
-The **Reducer Function** will be used to **modify the state in the Counter Component** based on the **Аctions** we created earlier:
+The **Reducer Function** will be used to **modify the state in the Counter Component** based on the **Аctions** we created earlier.
+
+Let us start by creating a `counter.reducer.ts` file:
 
 ```js
 import { createReducer, on } from '@ngrx/store';
@@ -168,7 +173,7 @@ export function counterReducer(state, action) {
 
 ```
 
-First, we create a new `counter.reducer.ts` file and import `createReducer()` and `on()` from **NgRx Store**.
+First, we import `createReducer()` and `on()` from **NgRx Store**.
 
 Then, we import the actions we created earlier from `counter.actions.ts`.
 
