@@ -25,6 +25,7 @@ public class Main {
 0
 [/input]
 [output]
+```
 **********
 **********
 **********
@@ -35,6 +36,7 @@ public class Main {
 **********
 **********
 **********
+```
 [/output]
 [/test]
 [/tests]
@@ -66,7 +68,9 @@ public class Main {
 1
 [/input]
 [output]
+```
 *
+```
 [/output]
 [/test]
 [test]
@@ -74,8 +78,10 @@ public class Main {
 2
 [/input]
 [output]
+```
 **
 **
+```
 [/output]
 [/test]
 [test]
@@ -83,9 +89,11 @@ public class Main {
 3
 [/input]
 [output]
+```
 ***
 ***
 ***
+```
 [/output]
 [/test]
 [test]
@@ -93,6 +101,7 @@ public class Main {
 10
 [/input]
 [output]
+```
 **********
 **********
 **********
@@ -103,6 +112,7 @@ public class Main {
 **********
 **********
 **********
+```
 [/output]
 [/test]
 [test]
@@ -110,6 +120,7 @@ public class Main {
 20
 [/input]
 [output]
+```
 ********************
 ********************
 ********************
@@ -130,6 +141,7 @@ public class Main {
 ********************
 ********************
 ********************
+```
 [/output]
 [/test]
 [/tests]
@@ -1403,7 +1415,9 @@ public class Main {
 2
 [/input]
 [output]
+```
 **
+```
 [/output]
 [/test]
 [test]
