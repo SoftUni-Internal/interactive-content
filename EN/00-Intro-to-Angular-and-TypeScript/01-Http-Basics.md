@@ -36,7 +36,7 @@ Intro-to-Angular-and-Typescript-5-6-HTTP-Request-Response-Protocol
 
 When using HTTP protocol in the **majority** of the cases we have **communication** between **client** program and **server** program, where:
 
-- Client program is a **web browser** (Google Chrome, Mozilla Firefox, Safari, etc.) that is able to **start** the connection
+- Client program is a **web browser** (Google Chrome, Mozilla Firefox, Safari, etc.) that can **start** the connection
 - Server program is a **web server**, which is **up and running**, waiting for **requests**
 
 The **web server** could be written (created) using different **programming languages**, for example:
@@ -67,11 +67,11 @@ Intro-to-Angular-and-Typescript-7-Example - Hyper-Text-Transfer-Protocol
 
 By default, when we sent a request, it will be **GET**.
 
-We send **GET** requests when we want to obtain data from the server.
+We send **GET** requests when we want to **obtain data** from the server.
 
 Here is an example request:
 
-```js
+```html
     GET /courses/about.aspx HTTP/1.1
     Host: www.softuni.com
     User-Agent: Mozilla/5.0
@@ -86,7 +86,7 @@ The **Host**, the **User-Agent**, and the **body** are on the following lines.
 
 This response will look like this:
 
-```js
+```html
     HTTP/1.1 200 OK
     Date: Mon, 5 Jul 2019 13:09:03 GMT
     Server: Microsoft-HTTPAPI/2.0

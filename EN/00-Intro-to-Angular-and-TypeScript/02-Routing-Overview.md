@@ -6,7 +6,7 @@
 
 Intro-to-Angular-and-Typescript-8-9-Routing-Overview
 
-**Routing** is the **client-side** navigation and it is responsible for **switching** between different views (pages).
+**Routing** is the **web site navigation** and it is responsible for **switching** between different views (pages).
 
 The routing can be **performed** on the **server-side** as well as on the **client-side** (in the browser).
 

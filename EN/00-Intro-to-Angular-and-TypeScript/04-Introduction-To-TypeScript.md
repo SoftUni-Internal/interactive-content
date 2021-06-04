@@ -16,7 +16,7 @@ We need to add the `.ts` extension to our files if we want to write **TypeScript
 
 To run **TypeScript** files, we need to write the `tsc myFile.ts` command in the terminal.
 
-After the file compilation, we will receive plain JavaScript as output.
+After the file compilation, we **will receive plain JavaScript** as output.
 
 [/slide]
 
@@ -156,7 +156,7 @@ That allows us to have more **re-usable** code, also to have fewer lines of code
 
 We can take the **interfaces** out in a different file if we use them a lot in the application.
 
-In this way, if we need them, we only need to import them.
+In this way, if we **need interfaces**, we only need to import them.
 
 If we are going to use an **interface**, we need to add it as an **annotation**.
 
@@ -175,7 +175,7 @@ Here is an example:
    console.log(john);
 ```
 
-In this example, we have the **interface** **Man**, used in the function **Person**.
+In this example, we have the **interface** "**Man**", used in the function **Person**.
 
 This function will return a string with `Hi, John` printed to the console.
 
@@ -216,7 +216,7 @@ The **Enumerations** are a set of named constants.
 
 TypeScript provides both **numeric** and **string-based** enums.
 
-They help us to create a set of individual cases.
+They help us to create a **set of individual cases**.
 
 Here is an example of **Numeric** enum:
 
@@ -252,7 +252,7 @@ Unlike the Numeric enums, the **String-Based** enumerations can store strings as
 
 Intro-to-Angular-and-Typescript-21-Modules
 
-Modules in TypeScript are the same as the ones in **ES6**.
+Modules in TypeScript are the **same as the ones in ES6**.
 
 Here are some ways to export methods:
 
