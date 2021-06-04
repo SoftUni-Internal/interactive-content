@@ -8,7 +8,7 @@ Angular-Components-11-12-Bootstrapping-An-Application
 
 A **NgModule** describes how the application parts fit together. 
 
-Every application has at least one Angular module, the root module, which must be present for **bootstrapping**, or in other words, **starting** the application on launch. 
+Every application has at **least one Angular module**, the root module, which must be present for **bootstrapping**, or in other words, **starting** the application on launch. 
 
 By convention, the **NgModule** is called **AppModule**, but we can give it any other meaningful name.
 

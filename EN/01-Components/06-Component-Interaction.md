@@ -9,7 +9,7 @@ Angular-Components-32-33-From-Parent-To-Child
 
 This is the most common method of sharing data. 
 
-It works by using the `@Input()` decorator to allow data to be passed via the template. 
+It works by using the `@Input()` decorator to **allow data to be passed via the template**. 
 
 ```js
 import { Component, Input } from '@angular/core';
@@ -44,9 +44,9 @@ export class GameComponent {
 
 Angular-Components-34-35-Component-Interaction
 
-Another way for sharing data is to emit data from the child. 
+Another way for **sharing data is to emit** data from the child. 
 
-This approach is useful when you want to share data changes that occur on things like button clicks, form entries, and other user events.
+This approach is useful when you want to **share data changes that occur on things** like **button clicks**, form **entries**, and other user events.
 
 In the child, declare an **onReacted** variable with the **Output decorator** and set it equal to a new event emitter.
 

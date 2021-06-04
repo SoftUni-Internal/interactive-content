@@ -8,9 +8,9 @@ Angular-Components-Lab-1
 Angular-Components-Lab-2
 Angular-Components-Lab-3
 
-Generate a new angular app using the command "ng new articles-app". 
+Generate a new angular app using the command "**ng new articles-app**". 
 
-After that, change the title of your site to "Article Site" in "app.component.ts" and replace the HTML in "app.component.html" with the following:
+After that, change the title of your site to "**Article Site**" in "**app.component.ts**" and replace the HTML in "**app.component.html**" with the following:
 
 ```html
 <div style="text-align:center">
@@ -20,7 +20,7 @@ After that, change the title of your site to "Article Site" in "app.component.ts
 </div>
 ```
 
-Change the header CSS in "app.component.css" like this:
+Change the header CSS in "**app.component.css**" like this:
 
 ```js
 @import url('https://fonts.googleapis.com/css?family=Raleway');
@@ -34,9 +34,9 @@ h1 {
 }
 ```
 
-Start the app with the command "ng serve -open". 
+Start the app with the command "**ng serve -open**". 
 
-This will build the angular application and open a new window in your default browser. 
+This will **build the angular application** and open a **new window in your default browser**. 
 
 Your app should look like this:
 
@@ -83,7 +83,7 @@ Create a folder called **data** in `src/app` and inside of it generate a new fil
 
 After that, export the array. 
 
-You can change the information inside the objects if you wish, but do not change the property names.
+You can change the information **inside the objects if you wish**, but do not change the property names.
 
 ```js
 const data = [{
@@ -124,7 +124,7 @@ We also need a fake **service** class.
 
 Inside, we will **map** each object to an **article instance** and return a new array of articles. 
 
-Create a new file in **data** called "data.ts" import the article model and the data from "seed.ts" and write the following class:
+Create a new file in **data** called "**data.ts**" import the article model and the data from "seed.ts" and write the following class:
 
 ```js
 export class ArticleData {
@@ -140,9 +140,9 @@ export class ArticleData {
 
 The data has a `getData()` function that iterates through all data objects and creates instances of articles.
 
-These are saved in an array and returned from the function. 
+These are **saved in an array** and returned from the function. 
 
-Later we will learn more about real services and injectables and how to implement this the correct way.
+Later we will learn more about **real services** and **injectables** and how to implement this the correct way.
 
 [/slide]
 
@@ -160,7 +160,7 @@ Remember to import the component you created into the **declarations array** ins
 
 The CLI does all that work for us. 
 
-Copy the following CSS inside "article.component.css":
+Copy the following CSS inside "**article.component.css**":
 
 ```js
 @import url('https://fonts.googleapis.com/css?family=Raleway');
@@ -256,7 +256,7 @@ Clicking "**Hide Desc**" should remove all the descriptions inside and reset the
 
 Both buttons have an attached function to them - `readMore()` and `hideDesc()`. 
 
-We also have to show or hide the image, this is why we attach a `toggleImage()` function that we will implement later. 
+We also have to **show** or **hide** the image, this is why we attach a `toggleImage()` function that we will implement later. 
 
 All the properties inside the `*ngIf` directive are controlled in our article component.
 
@@ -293,15 +293,15 @@ Both **article** and **aricleDesc** will come from **above** in the **articles c
 
 This is why we use the `@Input` decorator that we need to import. 
 
-We need a property to show the current description, which can vary from **0 symbols** until the end. 
+We need a property to show the **current description**, which can vary from **0 symbols** until the end. 
 
 The article description length is a **counter** which controls how many symbols to show. 
 
-The **3 boolean** properties are used inside the `*ngIf` directive to determine whether to show or hide a button. 
+The **3 booleans** properties are used inside the `*ngIf` directive to determine whether to show or hide a button. 
 
 Also, the content of the image button is switched between "**Show Image**" and "**Hide Image**".
 
-Inside the constructor of the component define the article description length to **zero** and the description to show to an **empty string**.
+Inside the constructor of the **component define the article description length** to **zero** and the description to show to an **empty string**.
 
 We can also do this in the `ngOnInit` lifecycle hook.
 
@@ -346,9 +346,9 @@ This function should **reset** the description to show the description length co
 
 Angular-Components-Lab-11
 
-After we have created the child component the only thing left is to create the articles component and pass the array of data from the **parent** to the **child**.
+After we have created the child component the only thing left is to create the component of the article and pass the array of data from the **parent** to the **child**.
 
-Create articles component using "ng generate component articles" and copy the following CSS inside "articles.component.css":
+Create articles component using "**ng generate component articles**" and copy the following CSS inside "**articles.component.css**":
 
 ```js
 ul {
@@ -361,7 +361,7 @@ ul {
 
 ## Implement Component Logic
 
-Inside the articles component we need an array property, which will hold our articles and we need to initialize the array inside the `ngOnInit` hook. 
+Inside the component of the article, we need an array property, which will hold our articles and we need to initialize the array inside the `ngOnInit` hook. 
 
 In this case, we create an **instance** of our article data.
 
@@ -381,7 +381,7 @@ export class ArticlesComponent implements OnInit {
 
 # Create The HTML Markup
 
-Now we have to create the HTML markup for the articles component. 
+Now we have to create the HTML markup for the component of the article. 
 
 We have to **iterate** through all articles using the `*ngFor` directive and **pass** each article and article description to the **child** article component using the square brackets. 
 
@@ -408,7 +408,7 @@ The only thing left is to place the articles selector inside "app.component.html
 
 Angular-Components-Lab-12
 
-If everything went smoothly, you can test your application and try out all of the functionality. 
+If everything went smoothly, **you can test your application** and try out all of the **functionality**. 
 
 Show/Hide the description and Show/Hide the image. 
 

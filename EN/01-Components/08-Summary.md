@@ -4,7 +4,7 @@
 
 ## In this lesson you learned:
 
-- Each component has its own template
+- Each component has its template
 
 ```js
 @Component({ 

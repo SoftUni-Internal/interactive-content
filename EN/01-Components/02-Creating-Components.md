@@ -6,9 +6,9 @@
 
 Angular-Components-6-7-8-9-Creating-components-manually
 
-Components are the most basic UI building blocks of an Angular app.
+Components are the **most basic UI building blocks** of an Angular app.
 
-The main tasks of a component is to display a specific page or section and to bind data between the **view** and the **model**.
+The main tasks of a component are to **display a specific page** or **section** and to bind data between the **view** and the **model**.
 
 A component contains 3 parts:
 
@@ -28,7 +28,7 @@ The `@Component` decorator marks the **TS** - **TypeScript** class as a Componen
 
 Finally, we export the class.
 
-We can then call it inside the app module or other places in the project.
+We can then call it **inside the app module** or other **places in the project**.
 
 ```js
 import { Component } from '@angular/core';
@@ -43,13 +43,13 @@ export class AppComponent{}
 
 ## Breakdown of Component Metadata
 
-The **selector** is for calling the component inside other HTML files of the project as an HTML tag: `<app-home></app-home>`
+The **selector** is for calling the component **inside other HTML files** of the project as an HTML tag: `<app-home></app-home>`
 
 The **template** is where the HTML View of the component is.
 
 The **templateUrl** is the path to the HTML file like so: `templateUrl: './app.component.html'`
 
-The **styleUrls** can be more than one and is where the style CSS of the component is. It is usually an array.
+The **styleUrls** can be more than one and **is where the style CSS** of the component is, which usually is an array.
 
 The **providers** is a list of providers which, can be injected using **Dependency Injection**.
 
@@ -69,11 +69,11 @@ After creating a component, we need to add it in the **declarations** array at t
 
 **NgModules** help organize an application into cohesive blocks of functionality.
 
-Use the declarations array to declare components, directives, and pipes into the module in which they belong. 
+Use the **declarations array** to **declare components**, **directives**, and **pipes** into the **module** in which they belong. 
 
-Every component, directive, and pipe gets to know about others through this declaration. 
+Every **component**, **directive**, and **pipe** gets to know **about others through this declaration**. 
 
-Without this declaration, a component would not be able to use directives and pipes.
+Without this **declaration**, a component would **not be able to use** directives and pipes.
 
 ```js
 @NgModule({
@@ -89,10 +89,10 @@ Without this declaration, a component would not be able to use directives and pi
 
 Angular-Components-10-Creating-Components-with-the-CLI
 
-We can use the **Angular CLI** - a command-line interface for Angular to generate a new component.
+We can use the **Angular CLI** - a **command-line interface** for Angular to generate a new component.
 
 Type in the following command: `ng generate component home`.
 
-The command-line interface creates a new folder in `src/app/home/` and imports the component in the app module.
+The **command-line interface** creates a new folder in `src/app/home/` and imports the component in the app module.
 
 [/slide]
