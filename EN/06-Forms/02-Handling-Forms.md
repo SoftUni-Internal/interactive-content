@@ -6,7 +6,9 @@
 
 js-angular-forms-12-13-Handling-Forms-and-forms-overview
 
-Forms in Angular allow us to work with user inputs like login, register, save, update, and many other data entry tasks.
+Forms in Angular allow us to handle user input data in a fast and interactive manner.
+
+This enables us to perform numerous data entry tasks, such as logging in, registering, ordering products, as well as storing and modifying information.
 
 There are two types of forms in Angular: **reactive forms** and **template-driven forms**. 
 
@@ -51,13 +53,13 @@ Create a **template-driven** form that looks like this:
 
 As you can see above, it must contain:
 
-- A **processor** input field with a label, and a placeholder of "Intel Core i7"
+- A **Processor** input field with a label, and a placeholder of "Intel Core i7"
 
 - A **RAM** input field and label, with a placeholder of "16 GB DDR4"
 
 - A **Hard Disk (GB)** input field of type "number", a label, and a "1000" placeholder 
 
-- And lastly, an input field and label for an **Operating System**, such as "Windows 10"
+- And lastly, a `select` element and label for an **Operating System**, such as "Windows 10"
 
 [/slide]
 
@@ -112,7 +114,9 @@ import { FormsModule } from '@angular/forms';
 export class AppModule { }
 ```
 
-The Forms Module exports multiple providers and directives, required for building template-driven forms.
+The Forms Module **exports** multiple **providers** and **directives**, required for building template-driven forms.r
+
+For a full list of the exported directives, you can refer to [Angular's documentation](https://angular.io/api/forms/FormsModule#directives).
 
 [/slide]
 
@@ -122,18 +126,79 @@ The Forms Module exports multiple providers and directives, required for buildin
 
 js-angular-forms-18-Create-Form-Component
 
-An Angular form has two parts: An **HTML** based **template** and a component **class** to handle data.
+## Defining the Data Model
+
+The first step to creating a form component is defining a blueprint for it.
+
+In the `src/app` directory, we have to create a `laptop.ts` file, for our **Laptop** form:
 
 ```js
-@Component({…})
+export class Laptop {
+
+  constructor(
+    public processsor: string,
+    public RAM: string,
+    public hardDisk: number,
+    public operatingSystem: string
+  ) {  }
+
+}
+```
+
+As shown above, we export a class, which contains the four main properties of a laptop:
+
+- `processor` - String
+- `RAM` - String
+- `hardDisk` - Number
+- `operatingSystem` - String
+
+## Creating the Form Component
+
+We must create a `LaptopFormComponent` class, which will define our form layout and details.
+
+In the `src/app` directory, we have to create a new `laptop-form` folder.
+
+We are going to store our component in a `laptop-form.component.ts` file.
+
+Angular CLI can do most of this for us as well:
+
+```js
+ng generate component laptop-form
+```
+
+An Angular form has two parts:
+
+- an **HTML** based **template** 
+- a component **class**, used to handle data
+- 
+
+```js
+@Component({
+    selector: 'app-laptop-form',
+    templateUrl: './laptop-form.component.html',
+    styleUrls: ['./laptop-form.component.css']
+})
+
 export class LaptopFormComponent {
     operatingSystems: string[] = [
         'Windows 10',
         'Linux',
         'Mac OS'
     ];
+
+    // ...
+
+    submitted = false;
+
+    onSubmit() { this.submitted = true; }
 }
 ```
+
+In the code above, we export the `LaptopFormComponent` class.
+
+It has an `operatingSystems` property - an array of strings.
+
+Keep an eye on the `submitted` property and `onSubmit` method - they will be used when handling the form submission
 
 [/slide]
 
@@ -144,6 +209,8 @@ export class LaptopFormComponent {
 js-angular-forms-19-20-Initial-HTML-Template
 
 Use the following HTML to create the template.
+
+This markup should be stored in our `src/app/laptop-form` directory, inside a `laptop-form.component.html` file.
 
 ```html
 <div class="container">
@@ -178,6 +245,16 @@ Use the following HTML to create the template.
 </div>
 ```
 
+Here we have a `div` with a class of "container", in which we store an `h1` **title** and a `form` element.
+
+There are **four** "form-group" `div` elements, three of which consist of a label and an input field.
+
+The **operating system** form group has a `select` element that uses the `*ngFor` structural directive to gather a list of OS `option` elements.
+
+At the bottom we can see a `button` of type `submit`, which has the classes of `btn` and `btn-success`.
+
+This is a **Bootstrap** class name that will automatically apply **styling** to our button.
+
 [/slide]
 
 [slide hideTitle]
@@ -188,7 +265,7 @@ js-angular-forms-21-The-NgModel-Directive
 
 We need to display, listen and extract data at the same time.
 
-To do this use the **ngModel** directive.
+To do this, we use the **ngModel** directive.
 
 ```js
 <input type="text"
@@ -196,13 +273,19 @@ To do this use the **ngModel** directive.
     ngModel />
 ```
 
+The **ngModel** directive binds the controls of a template-driven form to the properties of a data model.
+
 Note that this directive will not work without a **name attribute**!
 
-So, we need to include this in our HTML template.
+So, we need to include this in our HTML template:
 
 ```html
 <input name="processor"/>
 ```
+
+If we want for Angular to track the user interaction and value of a given form's control, keeping the view up-to-date, we must include the directive as follows:
+
+- `[(ngmodel)]` - this is the syntax for two-way data binding
 
 [/slide]
 
@@ -220,10 +303,10 @@ Declare a template variable inside the form.
 
 Angular will automatically attach a **NgForm Directive**.
 
-The **NgForm Directive** will also add additional features:
-- It can monitor properties.
-- It can validate properties.
-- It holds a **valid** property which is **true** only if **all controls** are valid.
+The **NgForm Directive** also includes these additional features:
+- It can monitor properties
+- It can validate properties
+- It holds a `valid` property, which is **true** only if **all controls** are valid
 
 [/slide]
 
@@ -247,6 +330,10 @@ export class LaptopFormComponent implements AfterViewInit {
 }
 ```
 
+As you can see, we also use the `ngAfterViewInit` lifecycle hook.
+
+Inside, we print the properties of `this.form` to the console by using the `console.dir` method.
+
 [/slide]
 
 [slide hideTitle]
@@ -255,7 +342,11 @@ export class LaptopFormComponent implements AfterViewInit {
 
 js-angular-forms-24-Submit-a-Form
 
-To submit a form bind **ngSubmit** event property to the form component's `onSubmit()` method.
+The **submit** button at the bottom of our form does not perform anything by itself.
+
+It does however trigger a **submit event**, because of its `type="submit"` attribute.
+
+To handle this event, bind **ngSubmit** event property to the form component's `onSubmit()` method.
 
 ```html
 <form (ngSubmit)="onSubmit()" #f="ngForm">
@@ -265,10 +356,29 @@ The `onSubmit()` method should send the **control values** directly to an API th
 
 ```js
 onSubmit() {
-    const content = this.form.value;
-    // Send model to API
+  const content = this.form.value;
+  // Send model to an API
 }
 ```
+
+## Handling Form Submission
+
+Once the form has been submitted, it is recommended to hide the encapsulating **div-block**:
+
+```html
+<div class="container" [hidden]="submitted">
+  <h1>Laptop Form</h1>
+  <form (ngSubmit)="onSubmit()" #f="ngForm">
+
+    <!-- Form elements go here -->
+
+  </form>
+</div>
+```
+
+To achieve that, we bind the **div** with class **container**'s property to the `LaptopFormComponent.submitted` property.
+
+This way we can show something else, like a **loading** animation, or a **read-only** form body.
 
 [/slide]
 
@@ -285,6 +395,10 @@ The **NgForm Directive** tracks if:
 
 The **NgForm Directive** does not just track the state of the form control.
 
+```html
+<form #heroForm="ngForm">
+```
+
 It can also **update** the control with special Angular CSS classes and leverage those class names to change the appearance.
 
 [/slide]
@@ -295,25 +409,25 @@ It can also **update** the control with special Angular CSS classes and leverage
 
 js-angular-forms-26-Track-Control-State
 
-Angular provides three pairs of classes for the state of the form control.
+Angular adds custom CSS classes to input fields and forms, depending on their states.
  
-The first one is **ng-touched** and **ng-untouched**.
+## **ng-touched** / **ng-untouched**
 
-This pair of classes define the state of the control whether it has been touched or not.
+The `ng-touched` class will be applied if the input field has been touched.
 
-**ng-touched** will be applied if the condition is **true** and **ng-untouched** will be applied if **false**.
+`ng-untouched` is applied if it has not yet been touched.
 
-The second one is **ng-dirty** and **ng-pristine**.
+## **ng-dirty** / **ng-pristine**
 
-This pair of classes define the state of the control whether its value has been changed or not.
+`ng-dirty` is used to indicate that one or more fields have been modified.
+
+`ng-pristine` indicates that they are in their original state.
  
-**ng-dirty** will be applied if the condition is **true** and **ng-pristine** will be applied if **false**.
- 
-The third one is **ng-valid** and **ng-invalid**.
+## **ng-valid** / **ng-invalid**
 
-This pair of classes define the state of the control, whether its value is valid or not.
- 
-**ng-valid** will be applied if the condition is **true** and **ng-invalid** will be applied if **false**.
+These two classes are often used when we want to inform the user for wrong input data.
+
+`ngvalid` is applied to a form or input field when their content is valid, in the other case - Angular appiles `ng-invalid`.
 
 [/slide]
 
@@ -323,7 +437,7 @@ This pair of classes define the state of the control, whether its value is valid
 
 js-angular-forms-27-Add-Custom-CSS-for-Visual-Feedback
 
-You can mark **required** fields and **invalid** data, at the same time with a **colored** bar on the **left** of the **input box**.
+You can mark **required** fields and **invalid** data at the same time, with **colored** bars on the **left** of the **input box**.
 
 ```css
 input.ng-valid {
@@ -353,6 +467,24 @@ Angular tracks the attributes and changes the state depending on the user input.
     minLength="5"
     ngModel
     name="processor">
+```
+
+We can use an `*ngIf` directive to inform the user for incompatible information.
+
+For example:
+
+```html
+<div *ngIf="processor.invalid && (processor.dirty || processor.touched)" class="alert">
+
+  <div *ngIf="processor.errors?.required">
+    A processor name is required.
+  </div>
+  <div *ngIf="processor.errors?.minlength">
+    The processor's name must be at least 4 characters long.
+  </div>
+  <div *ngIf="processor.errors?.forbiddenName">
+    The processor cannot be named like that.
+  </div>
 ```
 
 [/slide]

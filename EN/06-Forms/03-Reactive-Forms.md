@@ -8,9 +8,7 @@ js-angular-forms-37-38-Handling-Forms-and-reactive-forms-overview
 
 Reactive forms provide a model-driven approach to handling form inputs whose values change over time.
 
-Reactive forms are immutable. 
-
-A change to the form state returns a new state which maintains the model's integrity between changes. 
+They are immutable - a change to the form state returns a new state which maintains the model's integrity between changes. 
 
 They are built upon observable streams, where form inputs and values are provided as streams of input values that are synchronously accessible.
 
