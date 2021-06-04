@@ -175,7 +175,7 @@ js-angular-forms-46-Adjust-the-Template
 
 The **formGroup** directive has an errors property, which can be used to **show** errors only when needed.
 
-```html
+```js
 <div *ngIf="(laptopForm.get('processor').touched 
 || laptopForm.get('processor').dirty) 
 && laptopForm.get('processor').errors" class="alert alert-danger">

@@ -14,7 +14,7 @@ You are provided with **HTML** and **CSS** files containing the form itself with
 
 Go to [fontawesome](fontawesome.com) and add the provided HTML link inside `index.html`:
 
-```html
+```js
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">

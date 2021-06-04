@@ -51,7 +51,7 @@ Create a **template-driven** form that looks like this:
 
 [image assetsSrc="Angular-Forms.png" /]
 
-As you can see above, it must contain:
+As you can see above, it contains:
 
 - A **Processor** input field with a label, and a placeholder of "Intel Core i7"
 
@@ -136,7 +136,7 @@ In the `src/app` directory, we have to create a `laptop.ts` file, for our **Lapt
 export class Laptop {
 
   constructor(
-    public processsor: string,
+    public processor: string,
     public RAM: string,
     public hardDisk: number,
     public operatingSystem: string
@@ -170,7 +170,6 @@ An Angular form has two parts:
 
 - an **HTML** based **template** 
 - a component **class**, used to handle data
-- 
 
 ```js
 @Component({
@@ -212,7 +211,7 @@ Use the following HTML to create the template.
 
 This markup should be stored in our `src/app/laptop-form` directory, inside a `laptop-form.component.html` file.
 
-```html
+```js
 <div class="container">
   <h1>Laptop Form</h1>
   <form>
@@ -279,7 +278,7 @@ Note that this directive will not work without a **name attribute**!
 
 So, we need to include this in our HTML template:
 
-```html
+```js
 <input name="processor"/>
 ```
 
@@ -297,7 +296,7 @@ js-angular-forms-22-The-NgForm-Directive
 
 Declare a template variable inside the form.
 
-```html
+```js
 <form #f="ngForm">
 ```
 
@@ -348,7 +347,7 @@ It does however trigger a **submit event**, because of its `type="submit"` attri
 
 To handle this event, bind **ngSubmit** event property to the form component's `onSubmit()` method.
 
-```html
+```js
 <form (ngSubmit)="onSubmit()" #f="ngForm">
 ```
 
@@ -365,7 +364,7 @@ onSubmit() {
 
 Once the form has been submitted, it is recommended to hide the encapsulating **div-block**:
 
-```html
+```js
 <div class="container" [hidden]="submitted">
   <h1>Laptop Form</h1>
   <form (ngSubmit)="onSubmit()" #f="ngForm">
@@ -395,7 +394,7 @@ The **NgForm Directive** tracks if:
 
 The **NgForm Directive** does not just track the state of the form control.
 
-```html
+```js
 <form #heroForm="ngForm">
 ```
 
@@ -473,7 +472,7 @@ We can use an `*ngIf` directive to inform the user for incompatible information.
 
 For example:
 
-```html
+```js
 <div *ngIf="processor.invalid && (processor.dirty || processor.touched)" class="alert">
 
   <div *ngIf="processor.errors?.required">
@@ -515,7 +514,7 @@ Use the control's state to reveal a helpful message.
 
 Add a template reference variable in the input.
 
-```html
+```js
 <input type="text" class="form-control"
     id="processor"
     required
@@ -531,7 +530,7 @@ Use the reference variable to check the state.
 
 Add a helpful message inside the **div**.
 
-```html
+```js
 <div *ngIf="processor.invalid && proccer.touched" alert alert-danger>
     Processor is required!
 </div>
@@ -549,7 +548,7 @@ We can bind the form's overall validity using the reference variable declared in
 
 Block the **submit** button in case a control has **invalid state**.
 
-```html
+```js
 <button type="submit" class="btn btn-success" [disabled]="f.invalid">
     Submit
 </button>
@@ -567,7 +566,7 @@ Instantly react to any changes using two-way data binding.
 
 Use two-way binding syntax - a combination of square brackets and parentheses `[()]`.
 
-```html
+```js
 <input type="text" class="form-control"
     id="processor"
     required
