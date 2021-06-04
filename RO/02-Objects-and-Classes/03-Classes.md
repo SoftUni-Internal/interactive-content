@@ -3,7 +3,9 @@
 [slide hideTitle]
 # Class Definition​
 
-Classes are used as a blueprint, defining the structure for an object.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-23-24-classes-class-definition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Classes are used as a blueprint, defining the structure of an object.
 
 Inside its body, a class can **contain**:
 
@@ -11,18 +13,20 @@ Inside its body, a class can **contain**:
 
 - **Actions** that define its behavior and modify its state, by means of functions
 
-Being a template, classes can instantiated in the form of **objects**.
+Being a template, classes can be instantiated in the form of **objects**.
 
-What makes them different from Java classes, is that JavaScript classes are much more dependent on the proper use of the `this` keyword.
+What makes them different from Java classes is that JavaScript classes are much more dependent on the proper use of the `this` keyword.
 
-Scoping and `this` binding have a very different behavior in JavaScript, compared to Java.
+Scoping and `this` binding have very different behavior in JavaScript, compared to Java.
 
 [/slide]
 
 [slide hideTitle]
 # Defining a Class​
 
-In **JavaScript**, there are two ways to **define** a class - class **declarations** and class **expressions**.
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-25-defining-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+In **JavaScript**, there are two ways to **define** a class - class **declaration** and class **expression**.
 
 ## Class Declaration
 
@@ -48,12 +52,12 @@ To **instantiate** the `Person` class, we use the `new` keyword, followed by the
 let person = new Person('Mike', 37, 'Bern');
 ```
 
-Between the brackets, we pass in the `name`, `age` and `city` arguments.
+Between the brackets, we pass in the `name`, the `age` and the `city` arguments.
 
 
 ## Class Expression
 
-When using a **class expresssion**, the class is assigned as a value to a variable:
+When using a **class expression**, the class is assigned as a value to a variable:
 
 ```js
 let Car = class {
@@ -67,14 +71,16 @@ let Car = class {
 
 We will only be able to access this class by the **variable name**.
 
-As a result, we can leave the class itself either with, or without a name - as shown above.
+As a result, we can leave the class itself either with or without a name - as shown above.
 
 [/slide]
 
 [slide hideTitle]
 # Hoisting
 
-In JavaScript, we can use variables and functions before they are declared, if you use the `var` keyword:
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-26-hoisting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+In JavaScript, we can use variables and functions before they are declared, if we use the `var` keyword:
 
 ```js live
 favoriteGame = 'Rise of the Tomb Raider 🎮';
@@ -84,9 +90,9 @@ console.log(favoriteGame);
 var favoriteGame;
 ```
 
-Moving all declarations to top of their scope is referred to as **hoisting**.
+Moving all declarations to the top of their scope is referred to as **hoisting**.
 
-Keep in mind that we still **cannot** access the **values** of variables, declared with `let` and `const`.
+Keep in mind that we still **cannot** access the **values** of variables declared with `let` and `const`.
 
 ```js
 currentWeather = 'rainy 🌦'; // ReferenceError
@@ -117,9 +123,11 @@ class Bike {
 [slide hideTitle]
 # Class Body
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-27-class-body-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The class body is defined using opening and closing curly braces: `{...}`
 
-Inside, we define class members like properties an methods.
+Inside, we define class members like properties and methods.
 
 ```js
 class SupportEmployee {
@@ -130,7 +138,7 @@ class SupportEmployee {
 }
 ```
 
-A compulsory method all classes have is the **constructor**.
+A compulsory method that all classes have is the **constructor**.
 
 It is used every time a **new** instance (object) of the class is created.
 
@@ -141,7 +149,9 @@ This method defines the **initial** values for all properties that a child objec
 [slide hideTitle]
 # Prototype Methods
 
-The ability to modify data is performed by special functions that are a part of the class, which are called methods. 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-28-prototype-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+The ability to modify data is performed by special functions that are part of the class, which are called methods. 
 
 To add properties or methods to all existing objects, we add them to their prototype.
 
@@ -164,16 +174,18 @@ const squareTwo = new Square(35);
 console.log(squareTwo.calcArea());
 ```
 
-In other words, adding a method inside the class body, makes it available to all of its instances.
+In other words, adding a method inside the class body makes it available to all of its instances.
 
 [/slide]
 
 [slide hideTitle]
 # Accessor Properties
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-29-accessor-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 JavaScript class instances have two types of properties.
 
-One of them is **data properties** which, as the name implies, is used to store information.
+The first type is **data properties**, which, as the name implies, is used to store information.
 
 They are simply the **variables** that belong to an object.
  
@@ -181,7 +193,7 @@ The second kind is **accessor properties**.
 
 With the EcmaScript 6 standard in 2015, JavaScript introduced support for the `get` and `set` keywords.
 
-They allow for retrieving and modifying property values in a similar fashion to Java.
+They allow for retrieving and modifying property values in a similar way to Java.
 
 ```js
 class User {
@@ -215,6 +227,8 @@ Using getters and setters allows for **data encapsulation** - some properties ca
 [slide hideTitle]
 # Accessor Properties in Action
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-30-accessor-properties-in-action-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can use accessor properties to modify an object's property values after its creation:
 
 ```js live
@@ -232,7 +246,7 @@ myTeacher.subject = 'Programming';
 console.log(myTeacher.subject);
 ```
 
-As you can see, here we use dot notation to change the `subject` property of the `myTeacher` object.
+As we can see, here, we use dot notation to change the `subject` property of the `myTeacher` object.
 
 This can also be done using bracket notation:
 
@@ -244,13 +258,15 @@ myTeacher['subject'] = 'Programming';
 [slide hideTitle]
 # Static Methods
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-31-static-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 JavaScript classes support both **instance** and **static** methods.
 
 Instance methods can **access and modify** instance data.
 
 They can call other instance methods, as well as any static method.
 
-Static methods **refer to the class**, rather than an instance of it.
+Static methods **refer to the class**, rather than to an instance of it.
 
 ``` js
 class Car {
@@ -272,6 +288,8 @@ As a result, we can only call them on the **class itself**, because they lack ac
 
 [slide hideTitle]
 # Private Properties
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-32-private-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Recently introduced to JavaScript, **private properties** are only accessible from inside the class.
 
@@ -298,6 +316,8 @@ Accessing a private property from outside its parent class results in an error.
 
 # Accessing Private Properties​
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-33-accessing-private-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Since private fields are **limited** to the class's own scope, we must use **getters and setters** to make them public:
 
 ```js
@@ -321,6 +341,9 @@ console.log(machine.milkInLitres); // 50
 [slide hideTitle]
 # Problem with Solution: Person
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-34-35-person-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 [code-task title="Person" taskId="java-path-js-advanced-objects-and-classes-person" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 ```
@@ -333,7 +356,7 @@ class Person {
 # Description
 Create a **class** that represents a personal record. 
 
-It has the following properties, all set from the constructor: 
+It should have the following properties, all set from the constructor: 
 
 - `fName` - **String**
 - `lName` - **String**
@@ -342,7 +365,7 @@ It has the following properties, all set from the constructor:
 
 **Keep the names of the properties the same as above.**
 
-It also has a method called `toString()`, which prints a summary of the information. 
+It should also have a method called `toString()`, which prints a summary of the information. 
 
 See the example for formatting details. 
 
@@ -512,6 +535,10 @@ yes
 [slide hideTitle]
 
 # Problem with Solution: Get People
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-36-37-get-people-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 [code-task title="Get People" taskId="java-path-js-advanced-objects-and-classes-get-people" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 ```
@@ -523,9 +550,9 @@ function getPeople() {
 [task-description]
 # Description
 
-Write a function that returns an array of `Person` instances. 
+Create a function that returns an array of `Person` instances. 
 
-Use the class from the previous task, create the following instances, and return them in an array: 
+Use the class from the previous task, create the following instances and return them in an array: 
 
 |**First Name**|**Last Name**|**Age**|**Email**|
 |---|---|---|---|
@@ -534,13 +561,13 @@ Use the class from the previous task, create the following instances, and return
 |**Stephan**|Johnson|25| |
 |**Gabriel**|Peterson|24|g.p@gmail.com|
 
-For any empty cells, do not supply a parameter (call the constructor with less parameters).
+For any empty cells, do not supply a parameter (call the constructor with fewer parameters).
 
 ## Input 
 There will be **no input**, the data is static and matches the table above. 
 
 ## Output 
-As **output, return an array** of `Person` instances. 
+**Return an array** of `Person` instances. 
 
 **Submit** a **function** that returns the required output. 
 

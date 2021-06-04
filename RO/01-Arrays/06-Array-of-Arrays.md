@@ -72,7 +72,7 @@ In that function, another **forEach** is **used** to iterate through every **ele
 
 [slide hideTitle]
 
-# Problem: Diagonal Sums
+# Problem and Solution: Diagonal Sums
 
 [video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-41-Problem-Diagonal-Sums-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

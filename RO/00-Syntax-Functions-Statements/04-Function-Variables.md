@@ -204,9 +204,7 @@ This will also not work and will result in a **TypeError** because the **walk** 
 [slide hideTitle]
 # Problem with Solution: Aggregate Elements
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-34-problems-sum-inverse-concatenate-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-35-solution-sum-inverse-concatenation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-34-25-sum-inverse-concatenate-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Aggregate Elements" taskId="js-syntax-functions-statements-aggregateelements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -230,7 +228,9 @@ function adapter(input, code) {
 
 ## Description
 
-Create a program that performs different operations on an array of elements. Implement the following operations:
+Create a program that performs different operations on an array of elements. 
+
+Implement the following operations:
 
 - **Sum(a)** - calculates the sum of all elements from the input array
 

@@ -37,7 +37,7 @@ Write a JS function that generates and prints the following sequence of numbers:
 
 The **input** comes as two **integers**. 
 
-The **output** is printed to the console on a single line, separated by space. 
+The **output** is printed to the console on a single line, separated by spaces. 
 
 ## Examples
 | **Input** | **Output** |
@@ -252,9 +252,9 @@ The **input** comes as an **array of strings**.
 
 The last element is **N - the iteration step**. 
 
-The **output** is every **N-th** element **starting from the first one**. 
+The **output** should be every **N-th** element **starting from the first one**. 
 
-If the step is "**3**", you need to print the **1-st**, the** 4-th**, the **7-th** … and so on, until you reach the end of the array. 
+If the step is "**3**", you need to print the **1-st**, the** 4-th**, the **7-th** and so on, until you reach the end of the array. 
 
 The elements should be printed each on a new line. 
 
@@ -412,9 +412,10 @@ Write a JS function that **adds** and **removes** numbers to / from an array.
 
 You will receive a command which can either be "**add**" or "**remove**".  
 
-The **initial number** is 1. 
+The **starting number** is 1 and is not stored in the array initially. 
 
-Each input command should **increase that number**, regardless of what it is. 
+Each input command should **increase that number**, regardless of what it is.
+
 Upon receiving an "**add**" command you should add the current number to your array. 
 
 Upon receiving the "**remove**" command you should remove the last entered number, currently existent in the array. 
@@ -830,7 +831,7 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-Write a function that sorts a **given array of strings** by **length** in **ascending order** as **primary criteria** and by **alphabetical value** in ascending order as **second criteria**. 
+Write a function that sorts a **given array of strings** by **length** in **ascending order** as **primary criteria** and by **alphabetical value** in ascending order as **secondary criteria**. 
 
 The comparison should be **case-insensitive**. 
 
@@ -872,10 +873,9 @@ Creating a comparing function with 2 criteria can be achieved by comparing by th
 
 If the 2 items are different (the result of the compare function is not 0), return the result. 
 
-If the two items are the same by the **main criteria** (the result of the compare function is 0), we need to compare by the **second criteria** and the result of that comparison is the result of the comparing function. 
+If the two items are the same by the **main criteria** (the result of the compare function is 0), we need to compare by the **secondary criteria** and the result of that comparison is the result of the comparing function. 
 
 You can learn more about `Array.sort()` [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort).
-
 
 [/task-description]
 [code-io /]
@@ -1128,7 +1128,7 @@ As you know, there are two players in this game, so the first element of the inp
 
 The second element will be the second player's coordinates and so on. 
 
-The initial state of the dashboard is  
+The initial state of the dashboard is:  
 
 ```js
 [[false, false, false], 

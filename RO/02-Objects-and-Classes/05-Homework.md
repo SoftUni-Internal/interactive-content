@@ -31,16 +31,16 @@ The register should accept data in a specified format and return it presented in
 ## Input 
 The **input** comes as an array of strings. 
 
-Each element holds data for a hero, in the following format: 
+Each element holds data about a hero in the following format: 
 
 `{heroName} / {heroLevel} / {item1}, {item2}, {item3}...` 
 
 You must store the data about every hero. 
 
-The **name** is a **string**, the level is a number and the items are all strings. 
+The **name** is a **string**, the **level** is a **number** and the**items** are all **strings**. 
 
 ## Output 
-The **output** is a an array of **JSON representations** of the data for all the heroes you’ve stored. 
+The **output** is an array of **JSON representations** of the data for all the heroes you have stored. 
 
 Check the examples for more information. 
 
@@ -78,7 +78,7 @@ Check the examples for more information.
 [hint]
 We need an **array** that will hold our **hero** data.
 
-That is the **first** thing we create. 
+That is the **first** thing we should create. 
 
 ```js
 function heroicInventory(input) {
@@ -115,9 +115,9 @@ With the [destructuring assignment syntax](https://developer.mozilla.org/en-US/d
 Do not forget to parse the number. 
 [/hint] 
 [hint]
-However, here we remember there is something special about the items. 
+However, here, we remember there is something special about the items. 
 
-If you read the problem description again, you will notice that there might be a **case** where the hero **has no items**. 
+If we read the problem description again, we will notice that there might be a **case** where the hero **has no items**. 
 
 In that case, when we use **destructuring**, our property items will be undefined and trying to spit the array will throw an error.  
 
@@ -138,7 +138,7 @@ We have now extracted the needed data – we have stored the **input name** in a
 By definition, the **items** are **strings**, so we do not need to process the array we have created anymore.  
 [/hint] 
 [hint]
-Now what is left is to add that data to **an object** and **add** the object to the **array**.   
+What is left is to add that data to **an object** and to **add** the object to the **array**.   
 
 ```js
 for (const iterator of input) {
@@ -152,7 +152,7 @@ for (const iterator of input) {
 ```
 [/hint] 
 [hint]
-Lastly, we need to turn the array of objects into a JSON string, which is done with the `JSON.stringify()` method.
+Last, we need to turn the array of objects into a JSON string, which is done with the `JSON.stringify()` method.
 
 ```js
 console.log(JSON.stringify(result));
@@ -245,21 +245,21 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-JSON’s Table is a magical table which turns JSON data into an HTML table. 
+JSON’s Table is a magical table that turns JSON data into an HTML table. 
 
 You will be given **JSON strings** holding data about employees, including their **name**, **position**, and **salary**. 
 
-You should **parse the strings** to **objects** and create an **HTML table** that holds the data for each **employee on a different row** as **columns**.  
+You should **parse the strings** to **objects** and create an **HTML table** that holds the data about each **employee on a different row** as **columns**.  
 
-The **name** and **position** of the employee are **strings**, the **salary** is an **integer**. 
+The **name** and the **position** of the employee are **strings**, the **salary** is an **integer**. 
 
 ## Input 
 The **input** comes as an array of strings. 
 
-Each element is a JSON string which represents the data for a certain employee. 
+Each element is a JSON string that represents the data about a certain employee. 
 
 ## Output 
-The **output** is the HTML code of a table which holds the data exactly as explained above. 
+The **output** is the HTML code of a table that holds the data exactly as explained above. 
 
 Check the examples for more information. 
 
@@ -293,9 +293,9 @@ Check the examples for more information.
 
 [hints]
 [hint]
-You should **escape the HTML**. 
+You should **escape the HTML code**. 
 
-Otherwise, you might find yourself victim to malicious JavaScript **code in the input**. 
+Otherwise, you might find yourself the victim of malicious JavaScript **code received in the input**. 
 [/hint] 
 [/hints] 
 
@@ -448,16 +448,16 @@ You must **store all bottles**, and you must **print them** at the end.
 
 **Note:** 1000 milliliters of **juice** is **one bottle**.
 
-If you happen to have **more than 1000**, you must make **as many bottles as you can** and store **what is left** from the juice.
+If you happen to have **more than 1000 milliliters**, you have to make **as many bottles as you can** and store **what is left** from the juice.
 
 
 **Example:** You have **2643 milliliters** of Orange Juice – this is **2 bottles** of Orange Juice and **643 milliliters left**.
 
 
 ## Input 
-The **input** comes as array of strings.
+The **input** comes as an array of strings.
 
-Each element holds data about a type of juice and its volume in the following format: 
+Each element holds data about the type of the juice and its volume in the following format: 
 `{juiceName} => {juiceVolume}`
  
 ## Output 
@@ -465,7 +465,7 @@ The **output** consists of all the filled bottles.
 
 They are to be printed in the **order of filling**.
 
-Check the second example bellow.
+Check the second example below.
 
 Even though we receive the Kiwi juice first, we do not fill a bottle of Kiwi juice until the 4th line.
 
@@ -606,14 +606,14 @@ function adapter(input, code) {
 [task-description]
 # Description
 
-You have to create a sorted catalogue of store products. 
+You have to create a sorted catalogue of some products. 
 
 You will be given the products’ names and prices. 
 
 You need to order them **alphabetically**.  
 
 ## Input 
-The **input** comes as array of strings.
+The **input** comes as an array of strings.
 
 Each element holds information about a product in the following format: 
 
@@ -621,21 +621,21 @@ Each element holds information about a product in the following format:
 
 The **product’s name** will be a **string**, which will **always start with a capital letter**.
 
-The price will be a number.
+The **price** will be a **number**.
 
 You can safely assume there will be **NO duplicates**.
 
-The comparison for alphabetical order is **case-insensitive**.
+The comparison for the alphabetical order is **case-insensitive**.
 
 
 ## Output 
-As **output**, you must print all the products in the specified format.
+You have to print all the products in the specified format.
 
 They must be ordered **exactly as shown above**.
 
-The products must be **divided into groups**, based on the **first letter of their name**.
+The products need to be **divided into groups**, based on the **first letter of their name**.
 
-The **group’s initial should be printed**, and after that the products should be printed with **2 spaces before their name**s.
+The **group’s initial should be printed**, and after that, the products should be printed with **2 spaces before their name**s.
 
 For more information, check the examples.
 
@@ -851,9 +851,9 @@ You need to build an ordered database of all the elements you have.
 
 The elements are registered in a very simple way.
 
-When you have processed all of the input data, you must print them in a specific order.
+When you have processed all of the input data, you have to print them in a specific order.
 
-For every System, you must print its components in a specified order and for every Component, you must print its Subcomponents in a specified order.
+For every **system**, you need to print its components in a specified order, and for every **component**, you must print its Subcomponents in a specified order.
 
 
 The **Systems** you have stored must be ordered by the **number of components** in **descending order** as **first criteria** and by **alphabetical order** as **second criteria**.
@@ -862,7 +862,7 @@ The **Components** must be ordered by the **number of Subcomponents** in **desce
 
 
 ## Input 
-The **input** comes as array of strings.
+The **input** comes as an array of strings.
 
 Each element holds **data** about a **system**, a **component** in that **system**, and a **subcomponent** in that **component**.
 
@@ -882,7 +882,7 @@ The **string comparison** for the alphabetical order is **case-insensitive**.
 
 
 ## Output 
-As **output**, you need to print all of the elements, ordered exactly in the way specified above.
+You need to print all of the elements, ordered exactly in the way specified above.
 
 **The format is:**
 
@@ -934,10 +934,10 @@ Indice
 [hint]
 Creating a sorting function with two criteria might seem very challenging, but it can be simplified to the following: 
 
-- If elements **a** and **b** are different based on the **first criteria**, then that result is the result of the sorting function
+- If elements **a** and **b** are different, based on the **first criteria**, then that result is the result of the sorting function
   * checking the second criteria is not required 
 
-- If elements **a** and **b** are **equal** based on the **first criteria**, then the result of comparing **a** and **b** based on the **second criteria** is the result of the sorting
+- If elements **a** and **b** are **equal**, based on the **first criteria**, then the result of comparing **a** and **b** based on the **second criteria** is the result of the sorting
 [/hint] 
 [/hints] 
 
@@ -1109,13 +1109,13 @@ It has the following properties:
 - `response` (String) 
 - `fulfilled` (Boolean) 
 
-The first four properties (`method`, `uri`, `version`, `message`) are set trough the `constructor` in the listed order.
+The first four properties (`method`, `uri`, `version`, `message`) are set through the `constructor` in the listed order.
 
 The `response` property is initialized as `undefined`, and the `fulfilled` property is initially set to `false`.
 
 # Constraints 
 - The constructor of your class will receive valid parameters 
-- Submit the class definition as is without wrapping it in any function
+- Submit the class definition as it is, without wrapping it in any function
 
 ## Examples 
 
@@ -1176,7 +1176,7 @@ class Request {
 [hint]
 The description mentions some of the properties need to be set through the constructor.
 
-This means that the constructor must receive them as arguments.
+This means that the constructor has to receive them as arguments.
 
 We modify it to receive four named arguments that we then assign to the local variables: 
 
@@ -1576,7 +1576,7 @@ class List {
 
 Implement a **class** that **keeps** a list of numbers sorted in **ascending order**. 
 
-It must support the following functionality: 
+It needs to support the following functionality: 
 
 - `add(elemenent)` - adds a new element to the collection 
 - `remove(index)` - removes the element at the specified **index** 
@@ -1813,7 +1813,7 @@ Create the two properties `innerString` and `innerLength`.
 
 There should also be functionality for increasing and decreasing the initial **length** property.
 
-Implement the `increase(length)` and `decrease(length)` functions that manipulate the length property with the **given value**.
+Implement the `increase(length)` and the `decrease(length)` functions that manipulate the length property with the **given value**.
 
 The length property is **a numeric value** and should not fall below **0**.
 

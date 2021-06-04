@@ -113,8 +113,8 @@ As evident by the output, `stringify` returns a ready-for-transfer **JSON** stri
 
 [slide hideTitle]
 # Problem with Solution: From JSON to HTML Table
-21-problem-from-json-to-html-table-
-22-solution- from-json-to-html-table-
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-21-22-from-json-to-html-table-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="From JSON to HTML Table" taskId="java-path-js-advanced-objects-and-classes-from-json-to-html-table" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
