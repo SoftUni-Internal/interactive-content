@@ -19,7 +19,7 @@ All of these components could **performed** common tasks, for example accessing 
 
 Instead of having to **write the code for every component** we can just make use of Angular services.
 
-A service could be a **function**, it could be a **variable**, or a **feature** that an application needs, and once written they could be injected into all of these components.
+A service could be a **function**, it could be a **variable**, or a **feature** that an application needs, and once written it could be **injected into all** of these components.
  
 A component can **delegate** tasks like:
 - **Fetching** data from the server
@@ -114,9 +114,9 @@ Then, we add `NotifyService` to the constructor of the `AppComponent` class as a
 
 22-Injectable-Decorator
 
-The easiest way to create an injectable service is by using **Angular CLI**.
+The **easiest way to create** an injectable service is by using **Angular CLI**.
 
-Open a command\-line tool in your project directory and type `ng generate service demo`.
+Open a **command-line tool** in your project directory and type `ng generate service demo`.
 
 This command will generate a skeleton `DemoService` class.
 

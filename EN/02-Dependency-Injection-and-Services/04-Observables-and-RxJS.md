@@ -44,7 +44,7 @@ Potentially means that we have to make **sure that the code will work** no matte
 
 26-Functional-Reactive-Programming
 
-**Function Reactive Programming** is a **paradigm** for software development that integrates time flow and **compositional events** into functional programming, which often works with asynchronous data streams.
+**Function Reactive Programming** is a **paradigm** for software development that integrates time flow and **compositional events** into functional programming, **which often works** with asynchronous data streams.
 
 These data streams can come from or be created by:
 
@@ -107,19 +107,19 @@ They can be used to:
 
 27-Introducing-RxJS
 
-ReactiveX or RxJS, short for **R**eactive E**x**tensions for **J**ava**S**cript it is a library for composing asynchronous programs by using observable sequences and it provides a long list of operators which allows to:
+ReactiveX or RxJS, short for **R**eactive E**x**tensions for **J**ava**S**cript it is a library for **composing asynchronous programs** by using **observable sequences** and it provides a **long list of operators** which allows to:
 
 - **Filter** observables
 - **Select** observables
 - **Transform** observables
 - **Combined** and compose observables 
 
-Reactive extensions are not limited to just JavaScript it is also available for many of the popular programming languages like Java, C#, Scala, Clojure, Swift, and others.
+Reactive extensions are, **not limited** to just JavaScript it is **also available for many of the popular programming languages** like Java, C#, Scala, Clojure, Swift, and others.
 
 
 ## How to install RxJS
 
-Open a terminal in your Angular project's main directory and type `npm install rxjs`.
+Open a terminal in your **Angular project's** main directory and type `npm install rxjs`.
 
 To import a given functionality with CommonJS:
 
@@ -146,7 +146,7 @@ import { map, filter } from 'rxjs/operators'
 
 - **Tap Operator Overview**
 
-The `tap` operator performs a side effect for every emission on the source Observable.
+The `tap` operator performs a **side effect for every emission** on the source Observable.
 
 It returns an Observable that is **identical** to the source with a **callback function**.
 
@@ -165,7 +165,7 @@ The `pipe` method can take an infinite amount of **arguments**.
 
 - **Cold Observables**
 
-Cold observables create a data producer for each subscriber and start running upon subscription.
+Cold observables **create a data producer** for each subscriber and **start running upon subscription**.
 
 ```js
 let coldObservable = Observable.create((observer : any) => {
@@ -176,7 +176,7 @@ let coldObservable = Observable.create((observer : any) => {
 });
 ```
 
-In other words, the observable sequence only starts pushing values to the observers when Subscribe is called. 
+In other words, the **observable sequence only starts pushing values** to the observers when Subscribe is called. 
 
 ```js
 let firstSubscription = coldObservable.subscribe(

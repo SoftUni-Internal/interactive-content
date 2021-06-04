@@ -29,11 +29,11 @@ It states that **every class** should have **responsibility** over **only one** 
 
 In other words, class behavior should remind **unchanged during the life of our application**.
 
-In the Angular context, a certain component in **our app should have only one mission**, which is to represent **certain data using templates**, together to ensure the communication between a **component and template**. 
+In the Angular context, a certain component in **an app should have only one mission**, which is to represent **certain data using templates**, together to ensure the communication between a **component and template**. 
 
 A component should **not make an HTTP call**, then modify data, then sen those data, etc., which is not in the **context of Angular's component**.
 
-This job is performed by services, which is the topic of the next section.
+This job is performed by **services**, which is the topic of the next section.
 
 [/slide]
 
@@ -112,9 +112,9 @@ DEMO
 
 - **What are Abstractions?**
 
-Abstraction is the process of hiding all but the important data about a specific object, to increase efficiency and reduce complexity.
+Abstraction is the process of **hiding all but the important data** about a specific object, to **increase efficiency** and **reduce complexity**.
 
-Abstraction can be achieved by using abstract classes or interfaces to define what an implementing class **must** include.
+Abstraction can be achieved by using **abstract classes** or **interfaces** to define what an implementing class **must** include.
 
 ```js
 abstract class Person {
@@ -124,7 +124,7 @@ abstract class Person {
     city: string
 }
 ```
-A person can have many more properties, like eye color, gender, nationality, etc, but in this context, we need only these properties.
+A person can have **many more properties**, like eye color, gender, nationality, etc., but in **this context**, we need only these properties.
 
 Any class that **inherrit** the `Person` class **must include** the four **properties** with their respective **type**:
 
@@ -137,7 +137,7 @@ class Brandon extends Person {
 }
 ```
 
-We can create as many objects as we need, which will inherit the class `Person`, and all of them are going to have the same four properties. 
+We can create as **many objects as we need**, which will inherit the class `Person`, and all of them are **going to have the same four properties**. 
 
 - **What are Concretions?**
 
@@ -230,7 +230,7 @@ This makes your class **brittle**, **inflexible**, and **hard to test**.
 
 16-How-to-Fix
 
-You should always add dependencies through the **constructor**:
+You should always **add dependencies** through the **constructor**:
 
 ```js
 constructor( public engine: Engine, public gearbox: Gearbox)
