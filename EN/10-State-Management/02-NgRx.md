@@ -141,6 +141,15 @@ They are **responsible** for **handling the transition from one state to another
 
 Reducers are **pure functions**, which means that they have **no side effects** - the **return value** is determined only by the **input**.
 
+Having **no** side effects, they handle each state transition **synchronously**.
+
+A reducer function accepts:
+
+- The latest `Action` dispatched
+- The current **state**
+
+Depending on that, it decides to either **return** a modified state, or the current one.
+
 [/slide]
 
 

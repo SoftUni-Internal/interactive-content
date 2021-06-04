@@ -12,7 +12,7 @@ Create a new Angular application.
 
 You are provided with **HTML** and **CSS** files containing the form itself with **styles** and **font awesome** icons.
 
-Go to [fontawesome](fontawesome.com) and add the provided HTML link inside `index.html`:
+Go to [FontAwesome](fontawesome.com) and add the provided HTML link inside `index.html`:
 
 ```js
 <meta name="viewport" content="width=device-width, initial-scale=1">

@@ -48,10 +48,14 @@ The `formGroup` directive is responsible for tracking the values and validity st
 
 We use `formControl` to track the value and validity of a single form control.
 
-`formControlName` is used to register a `FormControl` in an existing `FormGroup` to an f
+`formControlName` is used to register a `FormControl` in an existing `FormGroup` to a form control element by name.
 
 ## formGroupName
+
+`formGroupName` syncs a nested `FormGroup` to a DOM element.
 ## formArrayName
+
+`formArrayName` syncs a nested `FormArray` to a DOM element.
 
 [/slide]
 
@@ -79,6 +83,8 @@ this.laptopForm = new FormGroup({
     ram : new FormControl('16 GB DDR4')
 });
 ```
+
+In this example, we create a `laptopForm` group which consists of two `formControl`s - **"processor"** and **"ram"**;
 
 [/slide]
 
@@ -158,8 +164,11 @@ Angular gives us the possibility to **add** or **remove** validators dynamically
 - **Cross-field** validation: It is validating one form control based on the value of another.
 - We can also create custom validators with parameters
 
-For that, we create a **factory function**, which accepts the **parameter**. The **factory function** returns the **validator function**.
-- We can adjust rules at runtime.
+For that, we create a **factory function**, which accepts the **parameter**. 
+
+The **factory function** returns the **validator function**.
+
+We can adjust rules at runtime.
 
 [/slide]
 
@@ -231,7 +240,7 @@ this.laptopForm.get('os')
 
 js-angular-forms-48-Reactive-Transformations-Example
 
-Import **throttleTIme** from the following library.
+Import **throttleTime** from the following library.
 
 ```js
 import { throttleTime } 'rxjs/operators';
