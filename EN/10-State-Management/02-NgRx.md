@@ -21,9 +21,9 @@ All of this results in **loose coupling**, which **reduces application complexit
 
 Open a command\-line tool in your project's root directory and type:
 
-`npm install @ngrx/store` if you are using **NPM**.
+- `npm install @ngrx/store` if you are using **NPM**.
 
-`yarn add @ngrx/store` for **Yarn**.
+- `yarn add @ngrx/store` for **Yarn**
 
 ## Data Flow
 
@@ -73,7 +73,19 @@ Actions can also contain an optional **payload** of data, like an **email and pa
 
 This example shows three actions for **incrementing**, **decrementing** and **resetting** a **Counter Component**.
 
-If you have not already, now is the time to generate a new Angular project: `ng generate new ngrx-counter`
+Now is the time to generate a new Angular project, if you have not already: 
+
+```js
+ng generate new ngrx-counter
+```
+
+The next step is to generate a `counter` component in Angular CLI:
+
+```js
+ng generate component counter
+```
+
+Then, we create a new `counter.actions.ts` file in the `app` folder.
 
 ```js
 import { createAction } from '@ngrx/store';
@@ -92,10 +104,9 @@ export const increment = createAction(
 export const increment = createAction(
   '[Counter Component] Increment'
 )
-
 ```
 
-We create a new `counter.actions.ts` file in the `app` folder.
+
 
 Inside, we import the `createAction()` method from `@ngrx/store`.
 
@@ -111,6 +122,7 @@ export const registrationSuccess = createAction(
   (response: Response) => response.user
 );
 ```
+
 
 [/slide]
 
@@ -174,7 +186,7 @@ By invoking the `on()` function, we **make associations between actions and stat
 
 13-Add-the-Store-Module.forRoot
 
-To make the Store **accessible** from **every part of our application** we must go to `app.module.ts` and add ` StoreModule.forRoot()` to the imports array:
+To make the Store **accessible** from **every part of our application** we must go to `app.module.ts` and add `StoreModule.forRoot()` to the imports array:
 
 ```js
 import { BrowserModule } from '@angular/platform-browser';
@@ -196,8 +208,9 @@ import { counterReducer } from './counter.reducer';
 export class AppModule { }
 ```
 
-The `forRoot()` method accepts a **map of key\/value pairs** that define our **application state**. 
+The `forRoot()` method accepts a **map of key-value pairs** that define our **application state**. 
 
+Here, we pass in an and object with a single `count` property, which stores the `counterReducer`.
 [/slide]
 
 
@@ -288,6 +301,15 @@ Go to `src/app/counter/counter.component.html` and type:
 
 <button (click)="reset()">Reset</button>
 ```
+
+Here we create a **div-block** which displays the current count of our Counter Component.
+
+We have three **buttons**:
+
+- `increment` - increases the counter's value by one when a `click` event occurs
+- `decrement` - decrements the counter by one when clicked
+- `reset` - sets the counter's value to zero
+
 [/slide]
 
 [slide hideTitle]

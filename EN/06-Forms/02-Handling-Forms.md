@@ -369,7 +369,7 @@ Once the form has been submitted, it is recommended to hide the encapsulating **
   <h1>Laptop Form</h1>
   <form (ngSubmit)="onSubmit()" #f="ngForm">
 
-    <!-- Form elements go here -->
+    // Form elements go here...
 
   </form>
 </div>
