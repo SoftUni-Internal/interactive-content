@@ -8,13 +8,21 @@ js-angular-forms-37-38-Handling-Forms-and-reactive-forms-overview
 
 Reactive forms provide a model-driven approach to handling form inputs whose values change over time.
 
-They are immutable - a change to the form state returns a new state which maintains the model's integrity between changes. 
+They are **immutable** - a change to the form state returns a new state which maintains the model's integrity between changes. 
 
-They are built upon observable streams, where form inputs and values are provided as streams of input values that are synchronously accessible.
+Also, they are built upon **observable streams** - this means that form inputs and values are provided as streams of input values.
 
-Reactive forms also make testing easy.
+These input values can then be accessed **synchronously**.
 
-This way, we are sure that the information stored is consistent and predictable when requested.
+This way, we are sure that the information stored is consistent and predictable, when requested.
+
+They also enable reactive transformations, such as adding elements dynamically, while also making unit testing much easier.
+
+This approach to building forms brings even more advantages, such as:
+
+- being more **powerful** and **easier** to use
+- enabling more **customisability** in complex use-cases
+- being **immutable** means **no data binding** is done, a data modelling approach many developers **prefer**
 
 [/slide]
 
@@ -24,17 +32,26 @@ This way, we are sure that the information stored is consistent and predictable 
 
 js-angular-forms-39-Reactive-Forms-Module
 
-To use reactive forms, we need the **Reactive Forms Module**.
+To use reactive forms, we must import the **Reactive Forms Module**:
 
 ```js
 import { ReactiveFormsModule } from '@angular/forms'
 ```
 
-After importing the **Reactive Forms Module**, we have access to all the needed directives like:
-- **formGroup**
-- **formControl** and **formControlName**
-- **formGroupName**
-- **formArrayName**
+This gives us access to multiple directives.
+
+## formGroup
+
+The `formGroup` directive is responsible for tracking the values and validity states of a group of `FormControl` instances.
+
+## formControl and formControlName
+
+We use `formControl` to track the value and validity of a single form control.
+
+`formControlName` is used to register a `FormControl` in an existing `FormGroup` to a f
+
+## formGroupName
+## formArrayName
 
 [/slide]
 
@@ -115,7 +132,7 @@ Use the **FormBuilder** service to bypass creating instances of **FormGroup** an
 import { FormBuilder } from '@angular/forms';
 ```
 
-Inject it into the constructor.
+Inject it into the constructor:
 
 ```js
 constructor(private fb : FormBuilder) { }
@@ -139,7 +156,7 @@ js-angular-forms-44-Validation
 Angular gives us the possibility to **add** or **remove** validators dynamically in reactive forms based on some user action.
 
 - **Cross-field** validation: It is validating one form control based on the value of another.
-- We can also create custom validators with parameters:
+- We can also create custom validators with parameters
 
 For that, we create a **factory function**, which accepts the **parameter**. The **factory function** returns the **validator function**.
 - We can adjust rules at runtime.
