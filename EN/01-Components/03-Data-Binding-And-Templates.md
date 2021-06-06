@@ -6,22 +6,21 @@
 
 Angular-Components-16-17-Data-Binding-And-Templates
 
-We define a **component's view with its template**. 
+Each component's view has a template attached to it.
 
-A template is a **form of HTML** that tells **Angular how to render a component**.
-
-The template is **immediately associated** with a component and **defines** that component's view.
+A template is simply HTML that defines how the component will be rendered.
 
 The arrangement of the **views is hierarchical**, allowing you to **modify** or **show** and **hide** entire UI sections or pages as a unit. 
 
-Inside a template, we can use:
+Inside a template, we can:
 
 - **Render array properties** using the `*ngFor` repeater
 - **Render nested properties** of an object
-- **Condition statements** using `*ngIf`
+- Use **condition statements** using `*ngIf`
 - **Attach events** and handle them in the component
 
-They can be both **inline** or in a **separate file**.
+A component's template can be defined with inline HTML or we can specify an external file to load the HTML from.
+
 
 [/slide]
 
@@ -46,9 +45,11 @@ This template includes **Angular template-syntax** elements, `*ngFor`, `{{game.t
 
 The template-syntax elements tell **Angular how to render the HTML**, using program logic and data.
 
-The `*ngFor` directive tells Angular to **iterate over a list**. 
+The `*ngFor` directive is used for **iterating over a list**. 
 
 Notice that the `*` symbol is required before the "ngFor" keyword.
+
+This symbol means that the attribute after it is a structural directive.
 
 ```html
 <h1>Games List</h1>
@@ -59,6 +60,14 @@ Notice that the `*` symbol is required before the "ngFor" keyword.
   </li>
 </ul>
 ```
+
+The code creates a new list item for each game in the array of games.
+
+If you want to access any of the properties of the **game** object you do so by writing `game.propertyName`
+
+These names are arbitrary, you can name them any way you want.
+
+
 [/slide]
 
 [slide hideTitle]
@@ -95,6 +104,8 @@ We create **if** statements using the `*ngIf` keyword, as shown in the HTML belo
 </ul>
 ```
 
+The code above checks the price property of each object in the array, and **only displays it if the price is greater than or equal to 100**.
+
 [/slide]
 
 [slide hideTitle]
@@ -103,7 +114,9 @@ We create **if** statements using the `*ngIf` keyword, as shown in the HTML belo
 
 Angular-Components-20-Attach-Events
 
-Showing additional **content could be done** with Event handlers.
+You can display additional content with the help of Event handlers.
+
+Even handlers are used for listening to certain events and they can be attached to html elements.
 
 Here we have an HTML example of **how to do the Angular event binding** syntax:
 
@@ -111,15 +124,17 @@ Here we have an HTML example of **how to do the Angular event binding** syntax:
 <button (click)="showContent($event)">Show Content</button>
 ```
 
-The event binding **listens for the button's click** events and calls the component's `showContent()` method whenever a click occurs.
+The event binding **listens for the button's click events** and calls the component's `showContent()` method whenever a click occurs.
 
 ```js
 export class GamesComponent {
     public games: Game[];
     showContent: boolean;
+
     constructor() {
         this.games = [ // Array of games ]
     }
+
     showAdditionalContent($event) {
         this.showContent = true;
     }
@@ -136,9 +151,11 @@ Angular-Components-21-Binding-attributes
 
 It is a recommendation, **setting an element property with a property binding** whenever possible. 
 
-If there is no element property to bind, use **attribute binding**.
+It is a good idea to always set an element property with a property binding when possible.
 
-Attribute binding syntax is **similar to property binding**, but instead of an **element property between brackets**, use the name of the attribute with the prefix **attr**, followed by a **dot**. 
+When there is no element property to bind you can use **attribute binding**.
+
+The attribute binding syntax is **similar to property binding**, but instead of an **element property between brackets**, we use the name of the attribute with the prefix **attr**, followed by a **dot**. 
 
 Then, set the **attribute value with an expression** that resolves to a string.
 
@@ -155,6 +172,8 @@ export class GamesComponent {
 <img [attr.src]="imgUrl" />
 ```
 
+Note: If the expression resolves to `null` or `undefined`, the entire attribute will be removed.
+
 [/slide]
 
 [slide hideTitle]
@@ -163,11 +182,18 @@ export class GamesComponent {
 
 Angular-Components-22-Binding-css-classes
 
-## Binding to a Class
+## Binding to Multiple CSS Classes
 
 ```html
-<div [class]="badCurly">Bad curly</div>
+<div [class]="expression">Bad curly</div>
 ```
+Angular will add the class to the expression that you choose. 
+
+This expression can be:
+- A string of class names, delimited by spaces
+- An object containing class names as keys and truthy/falsy expressions as values
+- An array containing class names
+
 
 ## Binding to a Specific Class Name
 
@@ -186,6 +212,9 @@ Angular adds the **class when the bound expression**, `isSpecial` is **truthy**,
  This one is not so special
 </div>
 ```
+
+When doing single class binding the expression used can be of type boolean, undefined or null, and the example input values are either true or false.
+
 
 [/slide]
 
@@ -235,7 +264,7 @@ Alternatively, it sets the font size in the "%" unit if `isSpecial` is falsy.
 
 Angular-Components-24-Reference-and-nullsafe-operator
 
-Use variables **from one part of a template** to **another part of the template**.
+Use variables **from one part of a template** in **another part of the template**.
 
 A template variable can **refer to the following**:
 
@@ -339,7 +368,7 @@ When data in the **model changes**, the **view changes as well**, and when data 
 
 It **happens automatically**, which makes sure that the **model** and the **view** are updated at all times.
 
-The "**ng-model**" directive provides a **two-way binding between** the model and the view.
+The `ng-model` directive enables a **two-way binding between** the model and the view.
 
 ```js
 [(ngModel)]="expression"
