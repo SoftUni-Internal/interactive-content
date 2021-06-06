@@ -44,7 +44,7 @@ export class GameComponent {
 
 Angular-Components-34-35-Component-Interaction
 
-Another way for **sharing data is to emit** data from the child. 
+Another way for **sharing data is to emit** data from the child component. 
 
 This approach is useful when you want to **share data changes that occur on things** like **button clicks**, form **entries**, and other user events.
 
