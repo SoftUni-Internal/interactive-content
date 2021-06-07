@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Definiția clasei​
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-23-24-classes-class-definition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Clasele sunt folosite ca plan, definind structura unui obiect.
 
 În corpul său, o clasă poate **conține**:
@@ -21,6 +23,8 @@ Definirea domeniului și legarea `this` au un comportament foarte diferit în Ja
 
 [slide hideTitle]
 # Definirea unei clase
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-25-defining-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În **JavaScript**, există două moduri de a defini o clasă - **declararea** clasei și **expresia** clasei.
 
@@ -74,6 +78,8 @@ Ca urmare, putem lăsa clasa în sine cu sau fără un nume - așa cum se arată
 [slide hideTitle]
 # Ridicarea
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-26-hoisting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 În JavaScript, putem folosi variabile și funcții înainte ca acestea să fie declarate, dacă folosim cuvântul cheie `var`:
 
 ```js live
@@ -117,6 +123,8 @@ class Bike {
 [slide hideTitle]
 # Corpul clasei
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-27-class-body-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Corpul clasei este definit folosind deschiderea și închiderea acoladelor: `{...}`
 
 În interior, definim membrii clasei ca proprietăți și metode.
@@ -140,6 +148,8 @@ Această metodă definește valorile **inițiale** pentru toate proprietățile 
 
 [slide hideTitle]
 # Metode prototip
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-28-prototype-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Capacitatea de a modifica datele este realizată de funcții speciale care fac parte din clasă, care se numesc metode. 
 
@@ -170,6 +180,8 @@ Cu alte cuvinte, adăugarea unei metode în corpul clasei o face disponibilă tu
 
 [slide hideTitle]
 # Proprietăți accesor
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-29-accessor-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Instanțele clasei JavaScript au două tipuri de proprietăți.
 
@@ -215,6 +227,8 @@ Utilizarea getterilor și seterilor permite **încapsularea datelor** - unele pr
 [slide hideTitle]
 # Proprietăți accesor în acțiune
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-30-accessor-properties-in-action-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Putem folosi proprietățile accesorului pentru a modifica valorile proprietăților unui obiect după crearea acestuia:
 
 ```js live
@@ -243,6 +257,8 @@ myTeacher['subject'] = 'Programming';
 
 [slide hideTitle]
 # Metode statice
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-31-static-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Clasele JavaScript acceptă atât metodele **de instanță**, cât și cele **statice**
 
@@ -273,6 +289,8 @@ Drept urmare, le putem apela numai la **clasa însăși**, deoarece nu au acces 
 [slide hideTitle]
 # Proprietăți private
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-32-private-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Recent introduse în JavaScript, **proprietățile private** sunt accesibile numai din interiorul clasei.
 
 Încep întotdeauna cu un simbol hash `#`, urmat de un nume: `#myPrivateProperty`
@@ -298,6 +316,8 @@ Accesarea unei proprietăți private din afara clasei părinte duce la o eroare.
 
 # Accesarea proprietăților private​
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-33-accessing-private-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Deoarece câmpurile private sunt **limitate** la domeniul de aplicare al clasei, trebuie să folosim **getters și setters** pentru a le face publice:
 
 ```js
@@ -320,6 +340,8 @@ console.log(machine.milkInLitres); // 50
 
 [slide hideTitle]
 # Problemă cu soluție: Person
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-34-35-person-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Person" taskId="java-path-js-advanced-objects-and-classes-person" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
@@ -512,6 +534,9 @@ yes
 [slide hideTitle]
 
 # Problemă cu soluție: Get People
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-36-37-get-people-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Get People" taskId="java-path-js-advanced-objects-and-classes-get-people" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 ```

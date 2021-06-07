@@ -2,6 +2,8 @@
 
 # Rezumat
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-38-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## În această lecție ați învățat:
 
 - **Obiectele** JavaScript sunt colecții de câmpuri

@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Ce este un obiect?
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-3-4-objects-what-is-an-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Obiectele** din **JavaScript**, similar cu **Java**, pot fi comparate cu obiectele din viața reală.
 
 Un obiect constă din mai multe **variabile** - numite **proprietăți** și **funcții** - numite **metode**.
@@ -30,6 +32,8 @@ Putem **accesa** valoarea unei proprietăți scriind numele clasei, urmat de un 
 
 [slide hideTitle]
 # Variabile care dețin referințe
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-5-variables-holding-references-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Obiectele** sunt un tip de date de referință.
 
@@ -72,6 +76,8 @@ Deoarece `objectTwo` este pur și simplu o referință la aceeași valoare, obț
 [slide hideTitle]
 # Proprietățile obiectului
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-6-object-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Când o variabilă este alocată unui **obiect**, aceasta se numește o **proprietate**.
 
 Singura diferență dintre ele este că proprietățile **aparțin** unui obiect.
@@ -103,6 +109,8 @@ După cum putem vedea, proprietățile pot avea diferite **tipuri de date**.
 
 [slide hideTitle]
 # Atribuirea și accesarea proprietăților
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-7-8-assigning-and-accesssing-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există **două** sintaxe pentru atribuirea și accesarea proprietăților - **notație punct** și **notație paranteză**.
 
@@ -160,10 +168,7 @@ let x = 'brand';
 console.log(car[x]);
 ```
 
-[/slide]
-
-[slide hideTitle]
-# Accesarea proprietăților neatribuite
+## Accesarea proprietăților neatribuite
 
 Încercarea de a accesa o proprietate obiect neatribuită returnează `undefined` (nedefinită):
 
@@ -280,6 +285,8 @@ cityRecord('Barcelona', 47297302, 91231262)
 [slide hideTitle]
 # Metodele obiectelor
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-9-object-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Împreună cu proprietățile, obiectele JavaScript pot avea și **metode**.
 
 O metodă este pur și simplu o **funcție** care este **parte a unui obiect**.
@@ -354,6 +361,8 @@ Aici, adăugăm o **funcție săgeată** `sayHello` obiectului `person`.
 [slide hideTitle]
 # Ștergerea proprietăților
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-10-deleteing-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Pentru a elimina o proprietate dintr-un obiect, folosim operatorul `delete` (șterge).
 
 ```js live
@@ -380,6 +389,8 @@ Dacă încercăm să îi accesăm valoarea pentru a doua oară, vom primi `undef
 
 [slide hideTitle]
 # Compararea obiectelor
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-11-comparing-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 După cum am aflat mai devreme, obiectele sunt un tip de date **de referință**.
 
@@ -436,6 +447,8 @@ Ambele comparații returnează `true`, deoarece cele două variabile conțin o r
 [slide hideTitle]
 # Cheile și valorile obiectului
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-12-13-looping-through-objects-and-objects-keys-and-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 După cum știm deja, fiecare intrare obiect este o pereche `cheie: valoare`.
 
 Există mai multe metode încorporate în prototipul `Object` care oferă o modalitate de **buclare prin** obiecte.
@@ -484,6 +497,8 @@ console.log(Object.values(swan));
 [slide hideTitle]
 # Bucla For-in
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-14-for-in-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Putem folosi o **buclă for-in** pentru a itera prin **cheile** unui obiect.
 
 În acest fel, putem accesa **valoarea** unei chei date:
@@ -505,6 +520,8 @@ for (let key in pencil) {
 
 [slide hideTitle]
 # Bucla For-of
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-15-for-of-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O **buclă for-of** iterează prin **valorile** unui obiect.
 
@@ -537,7 +554,7 @@ for (const [key, value] of Object.entries(computer)) {
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Town Population
+# Problemă: Town Population
 [code-task title="Town Population" taskId="java-path-js-advanced-objects-and-classes-town-population" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```

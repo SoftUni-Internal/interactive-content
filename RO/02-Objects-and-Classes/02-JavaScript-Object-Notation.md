@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Ce este JSON?
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-16-17-json-javascript-object-notation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 JSON, prescurtare pentru **JavaScript Object Notation**, este un format **bazat pe text** pentru schimbul de date.
 
 Este **independent de limbaj**, deși este cel mai des utilizat în contextul proiectelor bazate pe JavaScript, cum ar fi site-urile web și aplicațiile cu o singură pagină.
@@ -27,6 +29,8 @@ Similar cu XML, poate fi folosit pentru a stoca date într-o ordine **ierarhică
 
 [slide hideTitle]
 # Reguli de sintaxă
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-18-syntax-rules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Următorul fragment ilustrează un răspuns tipic **JSON** de la un server:
 
@@ -60,6 +64,8 @@ Valorile sunt **separate** de cheile lor folosind simbolul doua puncte - `:`.
 [slide hideTitle]
 # Transformarea șirurilor
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-19-parsing-from-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 JSON este adesea utilizat pentru **citirea datelor de pe un server** și utilizarea răspunsului pentru **randarea** unei interfețe din browserul clientului.
 
 Pentru a face acest lucru, trebuie să **convertim** răspunsul **JSON** într-un **obiect** JavaScript folosind metoda `JSON.parse()`.
@@ -78,6 +84,8 @@ console.log(data);
 
 [slide hideTitle]
 # Conversia în șir
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-20-converting-to-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `JSON.stringify()` convertește o valoare JavaScript într-o reprezentare șir JSON.
 
@@ -105,6 +113,8 @@ După cum reiese din rezultat, `stringify` returnează un șir **JSON** gata de 
 
 [slide hideTitle]
 # Problemă rezolvată: From JSON to HTML Table
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/02-Objects-and-Classes/JS-advanced-objects-and-classes-21-22-from-json-to-html-table-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="From JSON to HTML Table" taskId="java-path-js-advanced-objects-and-classes-from-json-to-html-table" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
