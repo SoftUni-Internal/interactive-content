@@ -67,21 +67,28 @@ js-angular-forms-40-The-Component-Class
 
 In the component class, create instances of **FormGroup** and **FormControl** that we will bind later in the template.
 
-By creating these controls in our component class, we get immediate access to listen for, **update**, and **validate** the state of the form input.
+These controls give us access to the form input's state, enabling us to **update** and **validate** it, as well as **listen** for changes.
 
-Update the template with the form control using the **formControl** binding provided by FormControlDirective.
+Update the template with the form control using the **formControl** binding provided by **FormControlDirective**.
 
 The core idea is to transfer most of the logic from the template inside the component class.
 
 ```js
-import { FormGroup, FormControl } from '@angular/forms'
-```
+import { Component } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
-```js
-this.laptopForm = new FormGroup({
+@Component({
+  selector: 'app-laptop-form',
+  templateUrl: './laptop-form.component.html',
+  styleUrls: ['./laptop-form.component.css']
+})
+
+export class LaptopFormComponent {
+  this.laptopForm = new FormGroup({
     processor : new FormControl('Intel Core i7'),
     ram : new FormControl('16 GB DDR4')
-});
+  });
+}
 ```
 
 In this example, we create a `laptopForm` group which consists of two `formControl`s - **"processor"** and **"ram"**;
@@ -94,19 +101,23 @@ In this example, we create a `laptopForm` group which consists of two `formContr
 
 js-angular-forms-41-Template
 
-In the template, we have to mark the main **formGroup**, after which we add **formControlName** to each form control.
-
-Here the **formControlName** is the key instance's name.
+Once we have created controls in the class, we have to associate the `formGroup` with a form element in the HTML:
 
 ```js
 <form (ngSubmit)="save()" [formGroup]="laptopForm">
 ```
+
+In the template, we mark the main **formGroup**, after which we add **formControlName** to each form control:
 
 ```js
 <input type="text" class="form-control" id="processor"
     required
     formControlName="processor">
 ```
+
+Here the **formControlName** is the key instance's name.
+
+Now the form control is registered to the `processor` input element.
 
 [/slide]
 
@@ -118,9 +129,17 @@ js-angular-forms-42-Accessing-Form-Model-Properties
 
 There are two ways to access the properties of the form model.
 
-This is the first one: `laptopForm.controls.processor.valid`.
+We can use **dot notation** as follows: 
 
-This is the second one: `laptopForm.get('processor').valid`.
+```js
+laptopForm.controls.processor.valid
+```
+
+The second way is by using the `getter` syntax: 
+
+```js
+laptopForm.get('processor').valid
+```
 
 The idea is to shorten the template and transfer such logic in the component when using reactive forms.
 
@@ -132,17 +151,25 @@ The idea is to shorten the template and transfer such logic in the component whe
 
 js-angular-forms-43-Using-Form-Builder
 
-Use the **FormBuilder** service to bypass creating instances of **FormGroup** and **FormControl**.
+Most Angular applications contain multiple forms.
+
+Creating form control instances manually can become a time-consuming task.
+
+The `FormBuilder` service contains a number of methods that generate form controls.
+
+To start using `FormBuilder`, we have to import the class in our `laptop-form.component.ts` file:
 
 ```js
 import { FormBuilder } from '@angular/forms';
 ```
 
-Inject it into the constructor:
+The next step is to inject the service into the constructor:
 
 ```js
 constructor(private fb : FormBuilder) { }
 ```
+
+The `FormBuilder` service has contains many useful methods, such as `control()`, `group()`, and `array()`.
 
 ```js
 this.laptopForm = this.fb.group({
@@ -159,16 +186,28 @@ this.laptopForm = this.fb.group({
 
 js-angular-forms-44-Validation
 
-Angular gives us the possibility to **add** or **remove** validators dynamically in reactive forms based on some user action.
+Validation in **reactive** forms can be performed both **synchronously** and **asynchronously**.
 
-- **Cross-field** validation: It is validating one form control based on the value of another.
-- We can also create custom validators with parameters
+Compared to template-driven forms, where the input is validated by adding **template** attributes, here we add validator functions to the form control model, directly in the **class**.
 
-For that, we create a **factory function**, which accepts the **parameter**. 
+## Validating Synchronously
 
-The **factory function** returns the **validator function**.
+**Synchronous** validator functions accept a control instance as an argument, and then **return**:
 
-We can adjust rules at runtime.
+- `null` - when the input is valid
+- a set of **errors** - in the case of invalid data
+
+When instantiating a `FormControl`, we can pass a synchronous function as a **second** argument.
+
+## Validating Asynchronously
+
+**Asynchronous** validators also accept a control instance as an argument, but they **return** either a `Promise` or an `Observable`, which evalute to `null`, or a set of errors.
+
+We can pass an asynchronous function as a **third** argument when instantiating a form control.
+
+By default, Angular invokes asynchronous validators after synchronous fail.
+
+This is done for performance reasons.
 
 [/slide]
 
@@ -181,6 +220,10 @@ js-angular-forms-45-Setting-Up-Build-in-Validation
 Defining our **FormGroup** with a **FormBuilder** allows us to add an array of validations using the **Validators** class.
 
 ```js
+import { Validators } from '@angular/forms';
+
+// ...
+
 this.laptopForm = this.fb.group({
     processor : [
         'Intel core i7', [
@@ -191,6 +234,10 @@ this.laptopForm = this.fb.group({
 });
 ```
 
+Here we use the `group` method, passing in an object with a `processor` property.
+
+The method creates a new instance of the `FormGroup` class.
+
 [/slide]
 
 [slide hideTitle]
@@ -199,7 +246,9 @@ this.laptopForm = this.fb.group({
 
 js-angular-forms-46-Adjust-the-Template
 
-The **formGroup** directive has an errors property, which can be used to **show** errors only when needed.
+The `formGroup` directive has an ``errors`` property
+
+We can use it to **show** errors, depending on its value:
 
 ```js
 <div *ngIf="(laptopForm.get('processor').touched 
@@ -213,6 +262,12 @@ The **formGroup** directive has an errors property, which can be used to **show*
 </span>
 </div>
 ```
+
+The `errors` property is equal to `null` in the case of valid input.
+
+This means that the `span` element with `ngIf*` directives will not be displayed if the input data is valid.
+
+In the other case, the property will contain an object with the errors.
 
 [/slide]
 
@@ -232,6 +287,10 @@ this.laptopForm.get('os')
 .subscribe(console.log);
 ```
 
+The `valueChanges` event returns an Observable.
+
+In this example, we then use the `subscribe` method to print the latest value of `os` to the console.
+
 [/slide]
 
 [slide hideTitle]
@@ -246,7 +305,7 @@ Import **throttleTime** from the following library.
 import { throttleTime } 'rxjs/operators';
 ```
 
-Attach the **throttleTIme** function to a form control's **valueChanges** event.
+Then, attach the **throttleTime** function to a form control's **valueChanges** event:
 
 ```js
 processorControl.valueChanges
@@ -255,5 +314,7 @@ processorControl.valueChanges
     console.log(value);
 });
 ```
+
+In this code, the `throtlleTime` method will emit the first value, and will then ignore for **1.5** seconds.
 
 [/slide]

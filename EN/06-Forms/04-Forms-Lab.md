@@ -10,6 +10,10 @@ Forms-Lab-1
 
 Create a new Angular application. 
 
+```js
+ng new my-app
+```
+
 You are provided with **HTML** and **CSS** files containing the form itself with **styles** and **font awesome** icons.
 
 Go to [FontAwesome](fontawesome.com) and add the provided HTML link inside `index.html`:
@@ -72,13 +76,7 @@ At the **end** your form should look like this:
 
 [image assetsSrc="Angular-Forms(1).png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Create a Custom Attribute Directive
-
-Forms-Lab 3-1
+## Create a Custom Attribute Directive
 
 Add another input field containing an **image URL** to a profile picture, use 'fa fa-image' for the font awesome icon. 
 
@@ -100,9 +98,16 @@ Clearing the errors is done with `setErrors(null)`.
 
 # Reactive Form
 
+Forms-Lab 3-1
 Forms-Lab 3-2
 
-Create a new component **register-form-reactive** and build the same form using the reactive approach.
+Now let us create a new component **register-form-reactive** and build the same form using the reactive approach.
+
+It is recommended to start from scratch by creating a new Angular application. 
+
+```js
+ng new my-app
+```
 
 Create your own **form groups** and **form controls**. 
 
