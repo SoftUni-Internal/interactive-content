@@ -1,7 +1,7 @@
-# Homework
+# Teme pentru acasă
 
 [slide hideTitle]
-# Problem: Heroic Inventory
+# Problemă: Heroic Inventory
 
 [code-task title="Heroic Inventory" taskId="java-path-js-advanced-objects-and-classes- heroic-inventory" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -21,36 +21,36 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
-In the era of heroes, every hero has their own items which make them unique. 
+# Descriere
+În era eroilor, fiecare erou are propriile obiecte care îl fac unic. 
 
-Write a function that creates a **register for the heroes** with their **names**, **level**, and **items**, if they have such. 
+Scrieți o funcție care creează un **registru pentru eroi** cu ale lor **names**, **level** și **items** (obiecte), dacă au. 
 
-The register should accept data in a specified format and return it presented in a specified format.  
+Registrul ar trebui să accepte date într-un format specificat și să le returneze prezentate într-un format specificat. 
 
-## Input 
-The **input** comes as an array of strings. 
+## Intrare 
+**Intrarea** vine ca o matrice de șiruri. 
 
-Each element holds data about a hero in the following format: 
+Fiecare element conține date despre un erou în următorul format: 
 
 `{heroName} / {heroLevel} / {item1}, {item2}, {item3}...` 
 
-You must store the data about every hero. 
+Trebuie să stocați datele despre fiecare erou. 
 
-The **name** is a **string**, the **level** is a **number** and the**items** are all **strings**. 
+**Name**  este un **șir**,**level** este un **număr** și **items** sunt toate **șiruri**. 
 
-## Output 
-The **output** is an array of **JSON representations** of the data for all the heroes you have stored. 
+## Ieșire 
+**Ieșirea** este o matrice de **reprezentări JSON** ale datelor pentru toți eroii pe care i-ați stocat. 
 
-Check the examples for more information. 
+Consultați exemplele pentru mai multe informații.
 
-## Example One
+## Examplul unu
 
-### Input
+### Intrare
 
 `heroicInventory(['Isacc / 25 / Apple, GravityGun', 'Derek / 12 / BarrelVest, DestructionSword', 'Hes / 1 / Desolator, Sentinel, Antara'])`
 
-### Output
+### Ieșire
 
 ```json
 [{"name":"Isacc","level":25,"items":
@@ -61,13 +61,13 @@ Check the examples for more information.
   ["Desolator","Sentinel","Antara"]}] 
 ```
 
-## Example Two
+## Examplul doi
 
-### Input
+### Intrare
 
 `heroicInventory(['Jake / 1000 / Gauss, HolidayGrenade'])`
 
-### Output
+### Ieșire
 
 ```json
 [{"name":"Jake","level":1000,"items":
@@ -76,9 +76,11 @@ Check the examples for more information.
 
 [hints]
 [hint]
-We need an **array** that will hold our **hero** data.
+Avem nevoie de o **matrice** care să conțină datele despre **eroul** nostru.
 
-That is the **first** thing we should create. 
+Acesta este **primul** lucru pe care ar trebui să-l creăm.
+
+[image assetsSrc="../syntax-hint-01.png" /]
 
 ```js
 function heroicInventory(input) {
@@ -87,9 +89,9 @@ function heroicInventory(input) {
 ```
 [/hint] 
 [hint]
-Next, we need to **loop over** the whole input and **process** it. 
+Apoi, trebuie să **buclăm** prin întreaga intrare și să o **procesăm**.
 
-Let’s do that with a simple `for...of` loop. 
+Să facem acest lucru cu o simplă buclă `for ... of`.
 
 ```js
 for (const iterator of input) {
@@ -103,42 +105,42 @@ for (const iterator of input) {
 ```
 [/hint] 
 [hint]
-Every element from the input holds information about a hero. 
+Fiecare element din intrare conține informații despre un erou.
 
-However, the **elements** we need are **separated by a delimiter**, so we just split each string by that **delimiter**. 
+Cu toate acestea, **elementele** de care avem nevoie sunt **separate printr-un delimitator**, deci doar împărțim fiecare șir cu acel **delimitator**. 
 [/hint] 
 [hint]
-Next, we need to take the elements from the **string array**, which is a result of the **string split method**. 
+Apoi, trebuie să luăm elementele din **matricea de șiruri**, care este rezultatul **metodei de împărțire a șirurilor**.
 
-With the [destructuring assignment syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment), we assign the array properties. 
+Cu [destructuring assignment syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment), atribuim proprietățile matricei.
 
-Do not forget to parse the number. 
+Nu uitați să transformați numărul. 
 [/hint] 
 [hint]
-However, here, we remember there is something special about the items. 
+Cu toate acestea, aici, ne amintim că există ceva special la articole. 
 
-If we read the problem description again, we will notice that there might be a **case** where the hero **has no items**. 
+Dacă citim din nou descrierea problemei, vom observa că ar putea exista un **caz** în care eroul **să nu aibă obiecte**.
 
-In that case, when we use **destructuring**, our property items will be undefined and trying to spit the array will throw an error.  
+În acest caz, când folosim **destructurarea**, elementele noastre de proprietate vor fi nedefinite și încercarea de a afișa matricea va genera o eroare. 
 
-That is why we need to perform a simple check using the [ternary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator). 
+De aceea trebuie să efectuăm o verificare simplă folosind [ternary operator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator). 
 
 ```js
 items = items ? items.split(', ') : [];
 ```
 [/hint] 
 [hint]
-If **there are any items** in the **input**, the **variable** will be set to the **split version of them**. 
+Dacă **există elemente** de **intrare**, **variabila** va fi setată la **versiunea divizată a acestora**.
 
-If not, it will just be set to an **empty array**. 
+Dacă nu, va fi setată doar la o **matrice goală**.
 [/hint] 
 [hint]
-We have now extracted the needed data – we have stored the **input name** in a **variable**, we have parsed the **given level** to a **number**, and we have also **split** the **items** that the **hero holds** by their **delimiter**. 
+Acum am extras datele necesare - am stocat **numele de intrare** într-o **variabilă**, am analizat **nivelul dat** la un **număr** și am și **împarțit** **obiectele** pe care **eroul le deține** prin **delimitatorul** lor. 
 
-By definition, the **items** are **strings**, so we do not need to process the array we have created anymore.  
+Prin definiție, **articolele** sunt **șiruri**, deci nu mai este nevoie să procesăm matricea pe care am creat-o. 
 [/hint] 
 [hint]
-What is left is to add that data to **an object** and to **add** the object to the **array**.   
+Ceea ce a mai rămas este să adăugați aceste date la **un obiect** și să **adăugați** obiectul la **matrice**.
 
 ```js
 for (const iterator of input) {
@@ -152,7 +154,7 @@ for (const iterator of input) {
 ```
 [/hint] 
 [hint]
-Last, we need to turn the array of objects into a JSON string, which is done with the `JSON.stringify()` method.
+În cele din urmă, trebuie să transformăm matricea de obiecte într-un șir JSON, care se face cu metoda `JSON.stringify()`.
 
 ```js
 console.log(JSON.stringify(result));
@@ -224,7 +226,7 @@ heroicInventory(['What / 1 / The, Fuck'])
 [/slide]
 
 [slide hideTitle]
-# Problem: JSON's Table
+# Problemă: JSON's Table
 
 [code-task title="JSON's Table" taskId="java-path-js-advanced-objects-and-classes-json-s-table" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -244,32 +246,32 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
-JSON’s Table is a magical table that turns JSON data into an HTML table. 
+# Descriere
+Tabelul JSON este un tabel magic care transformă datele JSON într-un tabel HTML. 
 
-You will be given **JSON strings** holding data about employees, including their **name**, **position**, and **salary**. 
+Veți primi **șiruri JSON** care dețin date despre angajați, inclusiv **name** (numele), **position** (poziția) și **salary** (salariul) acestora. 
 
-You should **parse the strings** to **objects** and create an **HTML table** that holds the data about each **employee on a different row** as **columns**.  
+Ar trebui să **transformați șirurile** în **obiecte** și să creați un **tabel HTML** care să conțină datele despre fiecare **angajat pe un rând diferit** ca **coloane**.
 
-The **name** and the **position** of the employee are **strings**, the **salary** is an **integer**. 
+Câmpurile **name** și **position** ale angajaților sunt **șiruri**, iar **salary** este **număr întreg**. 
 
-## Input 
-The **input** comes as an array of strings. 
+## Intrare
+** Intrarea ** vine ca o matrice de șiruri. 
 
-Each element is a JSON string that represents the data about a certain employee. 
+Fiecare element este un șir JSON care reprezintă datele despre un anumit angajat. 
 
-## Output 
-The **output** is the HTML code of a table that holds the data exactly as explained above. 
+## Ieșire
+**Ieșirea** este codul HTML al unui tabel care conține datele exact așa cum s-a explicat mai sus.
 
-Check the examples for more information. 
+Consultați exemplele pentru mai multe informații. 
 
-## Example
+## Examplu
 
-### Input
+### Intrare
 
 `jsonTable(['{"name":"Peter","position":"Director", "salary":100000}', '{"name":"Ted","position":"Lecturer","salary":1000}', '{"name":"George","position":"Lecturer","salary":1000}'])`
 
-### Output
+### Ieșire
 
 ```html
 <table>
@@ -293,9 +295,9 @@ Check the examples for more information.
 
 [hints]
 [hint]
-You should **escape the HTML code**. 
+Ar trebui să **scăpați de codul HTML**.
 
-Otherwise, you might find yourself the victim of malicious JavaScript **code received in the input**. 
+În caz contrar, s-ar putea să deveniți victima codului JavaScript rău intenționat **primit în intrare**.
 [/hint] 
 [/hints] 
 
@@ -413,7 +415,7 @@ jsonTable(['\{"name":"test","position":"out.txt","salary":3\}'])
 [/slide]
 
 [slide hideTitle]
-# Problem: Juice
+# Problemă: Juice
 
 [code-task title="Juice" taskId="java-path-js-advanced-objects-and-classes-juice" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -433,64 +435,64 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
+# Descriere
 
-You will be given different types of juices as **strings**.
+Vi se vor oferi diferite tipuri de sucuri ca **șiruri**.
 
-You will also **receive milliliters** as a **number**.
+De asemenea, veți primi **mililitri** ca **număr**.
 
-If you receive a type of juice that you already have, you should **combine their volumes**.
+Dacă primiți un tip de suc pe care îl aveți deja, ar trebui să **combinați volumul lor**.
 
-When a type of juice reaches **1000 milliliters**, it is poured into a bottle.
+Când un tip de suc ajunge la **1000 mililitri**, acesta este turnat într-o sticlă.
 
-You must **store all bottles**, and you must **print them** at the end.
-
-
-**Note:** 1000 milliliters of **juice** is **one bottle**.
-
-If you happen to have **more than 1000 milliliters**, you have to make **as many bottles as you can** and store **what is left** from the juice.
+Trebuie **să stocați toate sticlele** și trebuie să **le tipăriți** la final.
 
 
-**Example:** You have **2643 milliliters** of Orange Juice – this is **2 bottles** of Orange Juice and **643 milliliters left**.
+**Notă:** 1000 de mililitri de **suc** este **o sticlă**.
+
+Dacă se întâmplă să aveți **mai mult de 1000 de mililitri**, trebuie să faceți **cât mai multe sticle** și să păstrați **ceea ce a rămas** din suc.
 
 
-## Input 
-The **input** comes as an array of strings.
+**Examplu:** Aveți **2643 mililitri** de suc de portocale - aceasta înseamnă **2 sticle** de suc de portocale și **643 de mililitri rămași**.
 
-Each element holds data about the type of the juice and its volume in the following format: 
+
+## Intrare
+**Intrarea** vine ca o matrice de șiruri.
+
+Fiecare element conține date despre tipul sucului și volumul acestuia în următorul format:
 `{juiceName} => {juiceVolume}`
  
-## Output 
-The **output** consists of all the filled bottles.
+## Ieșire
+**Ieșirea** constă din toate sticlele umplute.
 
-They are to be printed in the **order of filling**.
+Acestea trebuie tipărite în **ordinea de umplere**.
 
-Check the second example below.
+Verificați al doilea exemplu de mai jos.
 
-Even though we receive the Kiwi juice first, we do not fill a bottle of Kiwi juice until the 4th line.
+Chiar dacă primim mai întâi sucul de kiwi, nu umplem o sticlă de suc de kiwi până la a 4-a linie.
 
-By that time, we have already filled Pear and Watermelon juice bottles, so the Kiwi bottles appear last in the output.
+În acel moment, am umplut deja sticle de suc de pere și pepene verde, astfel încât sticlele de Kiwi apar ultimele în ieșire.
 
-## Example One
+## Exemplul unu
 
-### Input
+### Intrare
 
 `juice(['Orange => 2000', 'Peach => 1432', 'Banana => 450', 'Peach => 600', 'Strawberry => 549'])`
 
-### Output
+### Ieșire
 
 ```js
 Orange => 2 
 Peach => 2 
 ```
 
-## Example Two
+## Exemplul doi
 
-### Input
+### Intrare
 
 `juice(['Kiwi => 234', 'Pear => 2345', 'Watermelon => 3456', 'Kiwi => 4567', 'Pear => 5678', 'Watermelon => 6789'])`
 
-### Output
+### Ieșire
 
 ```js
 Pear => 8 
@@ -584,7 +586,7 @@ Test =\> 1
 [/slide]
 
 [slide hideTitle]
-# Problem: Store Catalogue
+# Problemă: Store Catalogue
 
 [code-task title="Store Catalogue" taskId="java-path-js-advanced-objects-and-classes-store-catalogue" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -604,48 +606,48 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
+# Descriere
 
-You have to create a sorted catalogue of some products. 
+Trebuie să creați un catalog sortat cu unele produse.
 
-You will be given the products’ names and prices. 
+Veți primi numele și prețurile produselor.
 
-You need to order them **alphabetically**.  
+Trebuie să le comandați **alfabetic**. 
 
-## Input 
-The **input** comes as an array of strings.
+## Intrare
+**Intrarea** vine ca o matrice de șiruri.
 
-Each element holds information about a product in the following format: 
+Fiecare element conține informații despre un produs în următorul format:
 
 `{productName} : {productPrice}`
 
-The **product’s name** will be a **string**, which will **always start with a capital letter**.
+**Numele produsului** va fi un **șir**, care va începe **întotdeauna cu o majusculă**.
 
-The **price** will be a **number**.
+**Prețul** va fi un **număr**.
 
-You can safely assume there will be **NO duplicates**.
+Puteți presupune în siguranță că nu vor exista **duplicate**.
 
-The comparison for the alphabetical order is **case-insensitive**.
+Comparația pentru ordinea alfabetică este **insensibilă la majuscule**.
 
 
-## Output 
-You have to print all the products in the specified format.
+## Ieșire
+Trebuie să imprimați toate produsele în formatul specificat.
 
-They must be ordered **exactly as shown above**.
+Acestea trebuie comandate **exact așa cum se arată mai sus**.
 
-The products need to be **divided into groups**, based on the **first letter of their name**.
+Produsele trebuie să fie **împărțite în grupuri**, pe baza **primei litere a numelui lor**.
 
-The **group’s initial should be printed**, and after that, the products should be printed with **2 spaces before their name**s.
+Inițiala grupului **ar trebui să fie tipărită** și, după aceea, produsele ar trebui tipărite cu **2 spații înainte de numele lor**.
 
-For more information, check the examples.
+Pentru mai multe informații, consultați exemplele.
 
-## Example One
+## Exemplul unu
 
-### Input
+### Intrare
 
 `store(['Apricot : 20.4', 'Fridge : 1500', 'TV : 1499', 'Deodorant : 10', 'Boiler : 300', 'Apple : 1.25', 'Anti-Bug Spray : 15', 'T-Shirt : 10'])`
 
-### Output
+### Ieșire
 
 ```
 A 
@@ -663,13 +665,13 @@ T
   TV: 1499 
 ```
 
-## Example Two
+## Exemplul doi
 
-### Input
+### Intrare
 
 `store(['Banana : 2', 'Rubic's Cube : 5', 'Raspberry P : 4999', 'Rolex : 100000', 'Rollon : 10', 'Rally Car : 2000000', 'Paper : 0.000001', 'Barrel : 10'])`
 
-### Output
+### Ieșire
 
 ```
 B 
@@ -824,7 +826,7 @@ T
 [/slide]
 
 [slide hideTitle]
-# Problem: System Components
+# Problemă: System Components
 [code-task title="System Components" taskId="java-path-js-advanced-objects-and-classes-system-components" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -843,48 +845,48 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
-You will be given a register of systems with components and subcomponents.
+# Descriere
+Vi se va oferi un registru de sisteme cu componente și subcomponente.
 
-You need to build an ordered database of all the elements you have.
-
-
-The elements are registered in a very simple way.
-
-When you have processed all of the input data, you have to print them in a specific order.
-
-For every **system**, you need to print its components in a specified order, and for every **component**, you must print its Subcomponents in a specified order.
+Trebuie să construiți o bază de date ordonată cu toate elementele pe care le aveți.
 
 
-The **Systems** you have stored must be ordered by the **number of components** in **descending order** as **first criteria** and by **alphabetical order** as **second criteria**.
+Elementele sunt înregistrate într-un mod foarte simplu.
 
-The **Components** must be ordered by the **number of Subcomponents** in **descending order**.
+După ce ați procesat toate datele de intrare, trebuie să le imprimați într-o anumită ordine.
+
+Pentru fiecare **sistem**, trebuie să imprimați componentele sale într-o ordine specificată, iar pentru fiecare **componentă**, trebuie să le imprimați subcomponentele într-o ordine specificată.
 
 
-## Input 
-The **input** comes as an array of strings.
+**Sistemele** pe care le-ați stocat trebuie să fie ordonate după **numărul de componente** în **ordine descrescătoare** ca **prim criteriu** și în **ordine alfabetică** ca **al doilea criteriu** .
 
-Each element holds **data** about a **system**, a **component** in that **system**, and a **subcomponent** in that **component**.
+**Componentele** trebuie ordonate după **numărul de Subcomponente** în **ordine descendentă**.
 
-If the given **system already exists**, you should just **add the new component** to it.
 
-If even the **component exists**, you should just **add** the **new subcomponent** to it.
+## Intrare 
+**Intrarea** vine ca o serie de șiruri.
 
-The **subcomponents** will **always be unique**.
+Fiecare element conține **date** despre un **sistem**, o **componentă** a acelui **sistem** și o **subcomponentă** a acelei **componente**.
 
-**The input format is:** 
+Dacă sistemul dat **există deja**, trebuie doar să **adăugați noua componentă** la acesta.
+
+Dacă și **componenta există**, ar trebui să **adăugați** **noua subcomponentă** la aceasta.
+
+**Subcomponentele** vor fi **întotdeauna unice**.
+
+**Formatul de intrare este:** 
 
 `{systemName} | {componentName} | {subcomponentName}`
 
-All of the elements are strings, and can contain **any ASCII characters**.
+Toate elementele sunt șiruri și pot conține **orice caractere ASCII**.
 
-The **string comparison** for the alphabetical order is **case-insensitive**.
+**Comparația șirului** pentru ordinea alfabetică este **nesensibilă la majuscule**.
 
 
-## Output 
-You need to print all of the elements, ordered exactly in the way specified above.
+## Ieșire 
+Trebuie să imprimați toate elementele, ordonate exact în modul specificat mai sus.
 
-**The format is:**
+**Formatul este:**
 
 ```
 {systemName} 
@@ -896,13 +898,13 @@ You need to print all of the elements, ordered exactly in the way specified abov
 ...
 ```
 
-## Examples
+## Exemplu
 
-### Input
+### Intrare
 
 `system(['SULS | Main Site | Home Page', 'SULS | Main Site | Login Page', 'SULS | Main Site | Register Page', 'SULS | Judge Site | Login Page', 'SULS | Judge Site | Submittion Page', 'Lambda | CoreA | A23', 'SULS | Digital Site | Login Page', 'Lambda | CoreB | B24', 'Lambda | CoreA | A24', 'Lambda | CoreA | A25', 'Lambda | CoreC | C4', 'Indice | Session | Default Storage', 'Indice | Session | Default Security'])`
 
-### Output
+### Ieșire
 
 ```
 Lambda 
@@ -932,12 +934,12 @@ Indice
 
 [hints]
 [hint]
-Creating a sorting function with two criteria might seem very challenging, but it can be simplified to the following: 
+Crearea unei funcții de sortare cu două criterii ar putea părea foarte dificilă, dar poate fi simplificată cu următoarele: 
 
-- If elements **a** and **b** are different, based on the **first criteria**, then that result is the result of the sorting function
-  * checking the second criteria is not required 
+- Dacă elementele **a** și **b** sunt diferite, pe baza **primului criteriu**, atunci rezultatul este rezultatul funcției de sortare
+  * nu este necesară verificarea celui de-al doilea criteriu
 
-- If elements **a** and **b** are **equal**, based on the **first criteria**, then the result of comparing **a** and **b** based on the **second criteria** is the result of the sorting
+- Dacă elementele **a** și **b** sunt **egale**, pe baza **primului criteriu**, atunci rezultatul comparării **a** și **b** pe baza celui de-**al doilea criteriu** este rezultatul sortării
 [/hint] 
 [/hints] 
 
@@ -1085,7 +1087,7 @@ Tests
 [/slide]
 
 [slide hideTitle]
-# Problem: Data Class
+# Problemă: Data Class
 
 [code-task title="Data Class" taskId="java-path-js-advanced-objects-and-classes-data-class" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
@@ -1096,30 +1098,30 @@ class Request {
 ```
 [/code-editor]
 [task-description]
-# Description
+# Descriere
 
-Create a **class** that holds data about an HTTP **Request**.
+Creați o **clasă** care conține date despre o **cerere** HTTP.
 
-It has the following properties: 
+Are următoarele proprietăți: 
 
-- `method` (String) 
-- `uri` (String) 
-- `version` (String) 
-- `message` (String) 
-- `response` (String) 
+- `method` (string) 
+- `uri` (string) 
+- `version` (string) 
+- `message` (string) 
+- `response` (string) 
 - `fulfilled` (Boolean) 
 
-The first four properties (`method`, `uri`, `version`, `message`) are set through the `constructor` in the listed order.
+Primele patru proprietăți (`method`, `uri`, `version`, `message`) sunt setate prin `constructor` în ordinea listată.
 
-The `response` property is initialized as `undefined`, and the `fulfilled` property is initially set to `false`.
+Proprietatea `response` este inițializată ca  `undefined`, iar proprietatea `fulfilled` este setată inițial la `false`.
 
-# Constraints 
-- The constructor of your class will receive valid parameters 
-- Submit the class definition as it is, without wrapping it in any function
+# Constrângeri 
+- Constructorul clasei dvs. va primi parametri valizi
+- Trimiteți definiția clasei așa cum este, fără a o împacheta în nicio funcție
 
-## Examples 
+## Exemple 
 
-### Sample Input 
+### Exemplu de intrare 
 
 ```js
 let myData = new Request(
@@ -1128,7 +1130,7 @@ let myData = new Request(
 console.log(myData); 
 ```
 
-### Resulting Object 
+### Obiect rezultat 
 
 ```js
 Request { 
@@ -1143,7 +1145,7 @@ Request {
 
 [hints]
 [hint]
-Using ES6 syntax with the `class` keyword, a class can be defined similar to a function: 
+Folosind sintaxa ES6 cu cuvântul cheie `class`, o clasă poate fi definită similar unei funcții:
 
 ```js
 class Request {
@@ -1152,13 +1154,13 @@ class Request {
 ```
 [/hint] 
 [hint]
-At this point, the **class** can already **be instantiated**, but it will not hold anything useful, since it does not have a constructor.
+În acest moment, **clasa** poate **fi** deja **instanțiată**, dar nu va conține nimic util, deoarece nu are un constructor.
 
-A **constructor** is a function that **initializes** the object’s context and attaches **values** to it.
+Un **constructor** este o funcție care **inițializează** contextul obiectului și îi atașează **valori**.
 
-It is defined with the keyword `constructor` inside the body of the class definition and it follows the syntax of regular JS functions - it can receive **arguments** and execute **logic**.
+Este definit cu cuvântul cheie `constructor` în corpul definiției clasei și urmează sintaxa funcțiilor JS obișnuite - poate primi **argumente** și executa **logic**.
 
-Any variables we want to be attached to the **instance** must be prefixed with the `this` identifier: 
+Orice variabilă pe care dorim să o atașăm **instanței** trebuie să fie prefixată cu identificatorul `this`:
 
 ```js
 class Request {
@@ -1174,11 +1176,11 @@ class Request {
 ```
 [/hint] 
 [hint]
-The description mentions some of the properties need to be set through the constructor.
+Descrierea menționează că unele proprietăți trebuie setate prin intermediul constructorului.
 
-This means that the constructor has to receive them as arguments.
+Aceasta înseamnă că constructorul trebuie să le primească ca argumente.
 
-We modify it to receive four named arguments that we then assign to the local variables: 
+Îl modificăm pentru a primi patru argumente numite pe care le atribuim apoi variabilelor locale: 
 
 ```js
 class Request {
@@ -1193,11 +1195,11 @@ class Request {
 }
 ```
 
-Note that the input parameters have the same names as the instance variables.
+Rețineți că parametrii de intrare au aceleași nume ca și variabilele de instanță.
 
-This is not necessary, but it is easier to read.
+Acest lucru nu este necesar, dar este mai ușor de citit.
 
-There will be no name collision, because the `this` identifier instructs the interpreter to look for a variable in a different context, so `this.method` is not the same as `method`. 
+Nu va exista o coliziune de nume, deoarece identificatorul `this` instruiește interpretul să caute o variabilă într-un context diferit, deci `this.method` nu este același cu `method`. 
 [/hint] 
 [/hints] 
 
@@ -1246,7 +1248,7 @@ yes
 [/slide]
 
 [slide hideTitle]
-# Problem: Tickets
+# Problemă: Tickets
 
 [code-task title="Tickets" taskId="java-path-js-advanced-objects-and-classes-tickets" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
@@ -1257,45 +1259,45 @@ function tickets(ticketArr, sortCrit) {
 ```
 [/code-editor]
 [task-description]
-# Description
+# Descriere
 
-Create a program that manages a database of tickets.
+Creați un program care gestionează o bază de date cu bilete.
 
-A ticket has a `destination`, a `price`, and a `status`.
+Un bilet are `destination` (destinație), `price` (preț) și `status` (statut).
 
-Your function will receive **two arguments** - an **array of strings** representing ticket descriptions and a **string** representing a **sorting criterion**.
+Funcția dvs. va primi **două argumente** - o **matrice de șiruri** reprezentând descrieri de bilete și un **șir** reprezentând un **criteriu de sortare**.
 
-The ticket descriptions have the following format: 
+Descrierea biletelor are următorul format: 
 
 `<destinationName>|<price>|<status>`
 
-Store each ticket.
+Stocați fiecare bilet.
 
-After the execution, **return** a sorted summary of all tickets, sorted by either `destination`, `price`, or `status`, based on the **second parameter** that your program received.
+După execuție, **returnați** un rezumat sortat al tuturor biletelor, sortat fie după `destination`, `price` sau `status`, pe baza celui **de-al doilea parametru** primit de programul dvs.
 
-Always sort in ascending order (default behavior for **alphabetical** sort).
+Sortați întotdeauna în ordine crescătoare (comportament implicit pentru sortare **alfabetică**).
 
-If two tickets are the same, use order of appearance.
+Dacă două bilete sunt la fel, utilizați ordinea de apariție.
 
-See the examples for more information.
+Consultați exemplele pentru mai multe informații.
 
-## Input 
+## Intrare 
 
-Your program will receive two parameters - an **array of strings** and a **single string**. 
+Programul dvs. va primi doi parametri - o **matrice de șiruri** și un **singur șir**. 
 
-## Output 
+## Ieșire 
 
-**Return** a **sorted array** of all the tickets that were registered. 
+**Returnează** o **matrice sortată** a tuturor biletelor înregistrate.
 
-## Examples 
+## Exemple
 
-## Example One
+## Exemplul unu
 
-### Sample Input 
+### Exemplu de intrare 
 
 `tickets(['Philadelphia|94.20|available', 'New York City|95.99|available', 'New York City|95.99|sold', 'Boston|126.20|departed'], 'destination')`
 
-### Output Array
+### Matrice ieșire
 
 ```js
 [ Ticket { destination: 'Boston', 
@@ -1315,13 +1317,13 @@ Your program will receive two parameters - an **array of strings** and a **singl
     status: 'available' } ] 
 ```
 
-## Example Two
+## Exemplul doi
 
-### Sample Input 
+### Exemplu de intrare 
 
 `tickets(sort['Philadelphia|94.20|available', 'New York City|95.99|available', 'New York City|95.99|sold', Boston|126.20|departed'], 'status')`
 
-### Output Array
+### Matrice ieșire
 
 ```js
 [ Ticket { destination: 'Philadelphia', 
@@ -1561,7 +1563,7 @@ yes
 [/slide]
 
 [slide hideTitle]
-# Problem: Sorted List
+# Problemă: Sorted List
 
 [code-task title="Sorted List" taskId="java-path-js-advanced-objects-and-classes-sorted-list" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
@@ -1572,41 +1574,41 @@ class List {
 ```
 [/code-editor]
 [task-description]
-# Description
+# Descriere
 
-Implement a **class** that **keeps** a list of numbers sorted in **ascending order**. 
+Implementați o **clasă** care **păstrează** o listă de numere sortate în **ordine crescătoare**.
 
-It needs to support the following functionality: 
+Trebuie să accepte următoarele funcționalități: 
 
-- `add(elemenent)` - adds a new element to the collection 
-- `remove(index)` - removes the element at the specified **index** 
-- `get(index)` - returns the value of the element at the specified **index** 
-- `size` – returns the number of elements stored in the collection 
+- `add(elemenent)` - adaugă un element nou colecției 
+- `remove(index)` - elimină elementul de la **indexul** specificat 
+- `get(index)` - returnează valoarea elementului de la **indexul** specificat
+- `size` – returnează numărul de elemente stocate în colecție
 
-The **correct order** of the elements must be kept **at all times**, regardless of which operation is called.
+**Ordinea corectă** a elementelor trebuie păstrată **în orice moment**, indiferent de operațiunea care este apelată.
 
-**Removing** and **retrieving** elements **should not work** if the provided index points **outside the length** of the collection (either throw an error or do nothing).
+**Eliminarea** și **recuperarea** elementelor **nu ar trebui să funcționeze** dacă punctele index furnizate sunt **în afara lungimii** colecției (fie aruncă o eroare, fie nu face nimic).
 
-Note that the **size** of the collection is **not** a function.
+Rețineți că **dimensiunea** colecției **nu** este o funcție.
 
-# Input / Output 
+# Intrare / Ieșire 
 
-All functions that expect **input** will receive data as **arguments**.
+Toate funcțiile care așteaptă **intrare** vor primi date ca **argumente**.
 
-Functions that perform **validations** will be tested with both **valid and invalid** data.
+Funcțiile care efectuează **validări** vor fi testate atât cu date **valide, cât și cu date nevalide**.
 
-Any result expected from a function should be **returned** as its result.
+Orice rezultat așteptat de la o funcție trebuie **returnat** ca rezultat.
 
-Your `add` and `remove` **functions** should **return** a **class instance** with the required functionality as their result.
+**Funcțiile** dvs. `add` și `remove` ar trebui **să returneze** o **instanță de clasă** cu funcționalitatea necesară ca rezultat.
 
-## Submission
+## Transmitere
 
-Submit the class definition as is **without** wrapping it in any function.
+Transmiteți definiția clasei așa cum este **fără** să o înfășurați în nicio funcție.
 
 
-## Example
+## Exemplu
 
-### Sample Input 
+### Exemplu de intrare
 
 ```js
 let list = new List(); 
@@ -1618,7 +1620,7 @@ list.remove(1);
 console.log(list.get(1)); 
 ```
 
-### Output 
+### Ieșire 
 
 ```
 6 
@@ -1790,7 +1792,7 @@ yes
 [/slide]
 
 [slide hideTitle]
-# Problem: Length Limit
+# Problemă: Length Limit
 
 [code-task title="Length Limit" taskId="java-path-js-advanced-objects-and-classes-length-limit" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
@@ -1801,31 +1803,31 @@ class Stringer {
 ```
 [/code-editor]
 [task-description]
-# Description
+# Descriere
 
-Create a `Stringer` class that holds a **single string** and a **length** property.
+Creați o clasă `Stringer` care conține **un singur șir** și o proprietate **length** (lungime).
 
-The class should be initialized with a **string** and an **initial length**.
+Clasa ar trebui inițializată cu un **șir** și o **lungime inițială**.
 
-It should always keep the **initial state** of the **given string**.
+Ar trebui să păstreze întotdeauna **starea inițială** a **șirului dat**.
 
-Create the two properties `innerString` and `innerLength`.
+Creați cele două proprietăți `innerString` și` innerLength`.
 
-There should also be functionality for increasing and decreasing the initial **length** property.
+De asemenea, ar trebui să existe funcționalități pentru creșterea și micșorarea proprietății inițiale **length**.
 
-Implement the `increase(length)` and the `decrease(length)` functions that manipulate the length property with the **given value**.
+Implementați funcțiile `increase(length)` și `decrease(length)` care manipulează proprietatea lungime cu **valoarea dată**.
 
-The length property is **a numeric value** and should not fall below **0**.
+Proprietatea length este **o valoare numerică** și nu trebuie să scadă sub **0**.
 
-You do not need to throw any errors, but if an attempt to decrease it below 0 is made, set it to **0**.
+Nu este nevoie să aruncați erori, dar dacă se face o încercare de scădere sub 0, setați-l la **0**.
 
-You should also implement functionality for the `toString()` function that returns the string the object was initialized with.
+De asemenea, ar trebui să implementați o funcționalitate pentru funcția `toString()` care returnează șirul cu care a fost inițializat obiectul.
 
-If the length of the string is greater than the **length property**, cut it from right to left so that it has the same length as the l**ength property** and add **3 dots** after it.
+Dacă lungimea șirului este mai mare decât **proprietatea length**, tăiați-o de la dreapta la stânga, astfel încât să aibă aceeași lungime ca și **proprietatea length** și adăugați **3 puncte** după ea.
 
-If the length property is **0**, return **3 dots**. 
+Dacă proprietatea length este **0**, returnează **3 puncte**.
 
-## Examples 
+## Exemple 
 
 ### `lengthLimit.js`
 
@@ -1845,15 +1847,15 @@ console.log(test.toString()); // Test
 
 [hints]
 [hint]
-Store the initial string in a property and do not change it. 
+Stocați șirul inițial într-o proprietate și nu îl modificați.
 
-Upon calling the `toString()` function, truncate it to the desired value and return it. 
+La apelarea funcției `toString ()`, trunchiați-o la valoarea dorită și returnați-o. 
 
 [/hint] 
 [hint]
-Submit your solution as a class representation only! 
+Trimiteți soluția doar ca reprezentare de clasă!
 
-No need for IIFEs or wrapping of classes. 
+Nu este nevoie de IIFE sau de împachetarea claselor. 
 [/hint] 
 [/hints] 
 

@@ -1,13 +1,11 @@
 [slide hideTitle]
 
-# Summary
+# Rezumat
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-38-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## În această lecție ați învățat:
 
-## In this lesson you learned:
-
-- JavaScript **objects** are collections of fields
-  * they can hold properties in the form of **key-value** pairs
+- **Obiectele** JavaScript sunt colecții de câmpuri
+  * pot păstra proprietăți sub formă de perechi **cheie-valoare**
 
 ```js
 let person = {​
@@ -17,8 +15,8 @@ let person = {​
 };​
 ```
 
-- JavaScript Object Notation (**JSON**) is used for data transfer
-  * it is a self-describing, **text-based** format
+- Notarea obiectului JavaScript (** JSON **) este utilizată pentru transferul de date
+  * este un format autodescriptiv, **bazat pe text**
 
 ```js
 {​
@@ -30,8 +28,8 @@ let person = {​
 }​
 ```
 
-- **Classes** are blueprints for objects
-  * they can define **methods** and accessor **properties**
+- **Clasele** sunt planuri pentru obiecte
+  * pot defini **metode** și  **proprietăți** accesor
 
 ```js
 class Rectangle {​
@@ -42,13 +40,13 @@ class Rectangle {​
 };​
 ```
 
-## In the next lesson you will learn:
+## În lecția următoare veți învăța:
 
-- The **Document Object Model** (DOM)
-  * definition, methods and manipulations
-  * parents and children elements
-  * DOM properties, events and HTML attributes
-- **Browser Object Model** (BOM)
-  * how to manipulate browser history, navigation and windows
+- **Modelul de obiect document** (DOM)
+  * definiție, metode și manipulări
+  * elemente părinți și copii
+  * Proprietăți DOM, evenimente și atribute HTML
+- **Model de obiect pentru browser** (BOM)
+  * cum se manipulează istoricul browserului, navigarea și ferestrele
 
 [/slide]

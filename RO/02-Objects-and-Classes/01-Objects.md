@@ -1,15 +1,13 @@
-# Objects
+# Obiecte
 
 [slide hideTitle]
-# What is an Object?
+# Ce este un obiect?
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-3-4-objects-what-is-an-object-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+**Obiectele** din **JavaScript**, similar cu **Java**, pot fi comparate cu obiectele din viața reală.
 
-**Objects** in **JavaScript**, similarly to **Java**, can be compared to objects in real life.
+Un obiect constă din mai multe **variabile** - numite **proprietăți** și **funcții** - numite **metode**.
 
-An object consists of several **variables** - called **properties**, and **functions** - called **methods**.
-
-This is an example of a simple `country` object:
+Acesta este un exemplu de obiect simplu `country`:
 
 ```js live
 let country = {
@@ -22,24 +20,22 @@ let country = {
 console.log(country.name);
 ```
 
-To define an object in JavaScript, we use **curly brackets**.
+Pentru a defini un obiect în JavaScript, folosim **acolade**.
 
-This object has **four properties** - `name`, `capital`, `population`, and `language`.
+Acest obiect are **patru proprietăți** - `name`, `capital`, `population` și `language`.
 
-We can **access** a property's value by writing the class name, followed by a dot `.`, and the property name (e.g. `country.name`).
+Putem **accesa** valoarea unei proprietăți scriind numele clasei, urmat de un punct `.` și numele proprietății (de exemplu `country.name`).
 
 [/slide]
 
 [slide hideTitle]
-# Variables Holding References
+# Variabile care dețin referințe
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-5-variables-holding-references-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+**Obiectele** sunt un tip de date de referință.
 
-**Objects** are a reference data type.
+Spre deosebire de tipurile de date primitive, cum ar fi `Număr` și `Șir`, tipurile de referință dețin doar **indicatorul** pentru datele din memorie.
 
-Contrary to primitive data types, such as `Number` and `String`, reference types hold only the **pointer** to the data in the memory.
-
-Variables that are assigned a non-primitive value are given a **reference** to that value:
+Variabilelor cărora li se atribuie o valoare neprimitivă li se oferă o **referință** la acea valoare:
 
 ``` js live
 let personOne = {
@@ -59,30 +55,28 @@ console.log(`The first person's name is ${personOne.name}.`);
 console.log(`The second person's name is ${personTwo.name}.`);
 ```
  
-In this example, we create a `personOne` object to which we assign the following properties: **name**, **age**, and **city**. 
+În acest exemplu, creăm un obiect `personOne` căruia îi atribuim următoarele proprietăți: **name**, **age** și **city**. 
 
-This value is stored in the memory, and **only the reference** is assigned to the variable. 
+Această valoare este stocată în memorie și **numai referința** este atribuită variabilei.
 
-When we assign `personOne` to the second variable, which is `personTwo`, we create a copy of the **reference** that points to the memory. 
+Când atribuim `personOne` celei de-a doua variabile, care este `personTwo`, creăm o copie a **referinței** care arată spre memorie. 
 
-As a result, when we log both objects' **name** propeties to the console, we receive the same result - `Michelle`.
+Ca rezultat, când afișăm proprietățile **name** ale ambelor obiecte pe consolă, primim același rezultat- `Michelle`.
 
-When we change the `personOne.name` to be equal to `Maria`, we are altering the **object** stored in memory. 
+Când schimbăm `personOne.name` pentru a fi egal cu `Maria`, modificăm **obiectul** stocat în memorie. 
  
-Because `objectTwo` is simply a reference to the same value, we get the same result when we `console.log` both properties - `Maria.`
+Deoarece `objectTwo` este pur și simplu o referință la aceeași valoare, obținem același rezultat atunci când aplicăm `console.log` ambelor proprietăți - `Maria.`
 
 [/slide]
 
 [slide hideTitle]
-# Object Properties
+# Proprietățile obiectului
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-6-object-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Când o variabilă este alocată unui **obiect**, aceasta se numește o **proprietate**.
 
-When a variable is assigned to an **object**, it is called a **property**.
+Singura diferență dintre ele este că proprietățile **aparțin** unui obiect.
 
-The only difference between both is that properties **belong** to an object.
-
-Declaring a property is done using **key-value** pairs in the format `key: value`:
+Declararea unei proprietăți se face folosind perechi **cheie-valoare** în format `cheie: valoare`:
 
 ```js live
 let color = {
@@ -95,30 +89,28 @@ let color = {
 console.log(color);
 ```
 
-As we can see, properties can be of different **data types**.
+După cum putem vedea, proprietățile pot avea diferite **tipuri de date**.
 
-In this example, the `color` object has three properties.
+În acest exemplu, obiectul `color` are trei proprietăți.
 
-|**Property Name**|**Property Value**|**Data Type**|
+|| **Numele proprietății** | **Valoarea proprietății** | **Tipul de date** |
 |---|---|---|
-|name|red|**String**|
-|rgbValues|`[255, 0, 0]`|**Array**|
-|hexTriplet|\#FF0000|**String**|
+|name|red|**Șir**|
+|rgbValues|`[255, 0, 0]`|**Matrice**|
+|hexTriplet|\#FF0000|**Șir**|
 
 [/slide]
 
 [slide hideTitle]
-# Assigning and Accessing Properties
+# Atribuirea și accesarea proprietăților
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-7-8-assigning-and-accesssing-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Există **două** sintaxe pentru atribuirea și accesarea proprietăților - **notație punct** și **notație paranteză**.
 
-There are **two** syntaxes for assigning and accessing properties - **dot notation** and **bracket notation**.
+## Notație punct
 
-## Dot Notation
+Obținerea unei proprietăți folosind notația punct, așa cum sugerează și numele, are următoarea sintaxă: `obiect.proprietate`
 
-Obtaining a property using dot notation, as the name suggests, has the following syntax: `object.property`
-
-Being **faster and easier to write**, it is the most commonly used way to manipulate objects.
+Fiind **mai rapid și mai ușor de scris**, este cel mai des utilizat mod de manipulare a obiectelor.
 
 ```js live
 let artist = {};
@@ -130,17 +122,17 @@ artist.genres = ['Pop rock', 'Glam rock', 'Soft Rock'];
 console.log(`${artist.firstName} ${artist.lastName}`)
 ```
 
-In this example, we create an empty `artist` object.
+În acest exemplu, creăm un obiect `artist` gol.
 
-Subsequently, we assign four properties to it - `firstName`, `lastName`, `age`, and `genres`.
+Ulterior, îi atribuim patru proprietăți - `firstName`, `lastName`, `age` și `genres`.
 
-## Bracket Notation
+## Notație paranteză
 
-A common **downside** of dot notation is that it does **not allow** for the use of **special symbols**, such as hyphens.
+Un **dezavantaj** obișnuit al notației punct este faptul că **nu permite** utilizarea **simbolurilor speciale**, cum ar fi cratimele.
 
-Bracket notation solves this problem by accepting strings, numbers, and even arrays and objects as keys, although the latter is not recommended.
+Notarea paranteză rezolvă această problemă acceptând șiruri, numere și chiar matrice și obiecte ca chei, deși acesta din urmă nu este recomandat.
 
-The syntax for a bracket selector looks like this: `object[key]`
+Sintaxa pentru un selector paranteză arată astfel: `obiect[cheie]`
 
 ```js live
 let student = {
@@ -152,9 +144,9 @@ console.log(student['school-name']);
 console.log(student.school-name);
 ```
 
-As we can see, using dot notation in this example results in a `ReferenceError`.
+După cum putem vedea, utilizarea notării punct în acest exemplu are ca rezultat  `ReferenceError`.
 
-Bracket notation also enables selecting keys by using **variables**:
+Notarea în paranteză permite, de asemenea, selectarea cheilor folosind **variabile**::
 
 ```js
 let car = {
@@ -168,9 +160,12 @@ let x = 'brand';
 console.log(car[x]);
 ```
 
-## Accessing Unassigned Properties
+[/slide]
 
-Trying to access an unassigned object property returns `undefined`:
+[slide hideTitle]
+# Accesarea proprietăților neatribuite
+
+Încercarea de a accesa o proprietate obiect neatribuită returnează `undefined` (nedefinită):
 
 ```js live
 let book = {
@@ -182,16 +177,16 @@ let book = {
 console.log(book.age);
 ```
 
-This `book` object has three properties: **title**, **author** and **genre**.
+Acest obiect `book` are trei proprietăți: **title**, **author** și **genre**.
 
-It does not have an **age** property, as it would be irrelevant.
+Nu are o proprietate **age**, deoarece ar fi irelevantă.
 
-As a result, the value of `book.age` is `undefined`.
+Ca rezultat, valoarea `book.age` este `undefined`.
 
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: City Record
+# Problemă rezolvată: City Record
 [code-task title="City Record" taskId="java-path-js-advanced-objects-and-classes-city-record" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -210,20 +205,20 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
-You will receive a city’s **name** (string), **population** (number), and **treasury** (number) as arguments. 
+# Descriere
+Veți primi ca argumente urmatoarele date ale unui oraș: **name** (șir), **population** (număr) și **treasury** (număr). 
 
-Set them as **properties** of an object and **return** it. 
+Setați-le ca **proprietăți** ale unui obiect și **returnați-le**.
 
-## Example One
+## Exemplul Unu
 
-|**Input**|**Output**|
+|**Intrare**|**Ieșire**|
 |---|---|
 | cityRecord('Tortuga', 7000, 15000) | \{ name: 'Tortuga', population: 7000, treasury: 15000 \} |
 
-## Example Two
+## Exemplul Doi
 
-|**Input**|**Output**|
+|**Intrare**|**Ieșire**|
 |---|---|
 | cityRecord('Santo Domingo', 12000, 23500) | \{ name: 'Santo Domingo', population: 12000, treasury: 23500 \} |
 
@@ -283,23 +278,21 @@ cityRecord('Barcelona', 47297302, 91231262)
 [/slide]
 
 [slide hideTitle]
-# Object Methods
+# Metodele obiectelor
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-9-object-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Împreună cu proprietățile, obiectele JavaScript pot avea și **metode**.
 
-Along with properties, JavaScript objects can also have **methods**.
+O metodă este pur și simplu o **funcție** care este **parte a unui obiect**.
 
-A method is simply a **function** that is **part of an object**.
+Vă puteți gândi la metode ca **acțiuni** - acestea pot fi folosite pentru **preluarea, modificarea sau ștergerea datelor** din obiectul lor părinte.
 
-You can think of methods as **actions** - they can be used to **retrieve, modify, or delete data** from their parent object.
+Există mai multe modalități de a **defini** metodele - două dintre ele necesită declararea metodei în momentul **creării clasei**, în timp ce a treia permite adăugarea uneia **ulterior**.
 
-There are multiple ways to **define** methods - two of them require declaring the method at the moment of the **class creation**, while the third enables adding one at a **later time**.
+## Declararea proprietății
 
-## Property Declaration
+Adăugarea unui obiect utilizând sintaxa proprietății este foarte asemănătoare cu adăugarea unei proprietăți obișnuite - `cheie: valoare() {...}`
 
-Adding an object using the property syntax is very similar to adding a regular property - `key: value(){...}`
-
-The main difference is that the property value is a function:
+Diferența principală este că valoarea proprietății este o funcție:
 
 ``` js live
 let dog = {
@@ -313,17 +306,17 @@ let dog = {
 dog.bark();
 ```
 
-In this `dog` object, we have added a `bark` method that prints output to the console.
+În acest obiect `dog`, am adăugat o metodă `bark` care imprimă o ieșire pe consolă.
 
-Then, we write the name of the object (`dog`), followed by a period, and the key - `bark`.
+Apoi, scriem numele obiectului (`dog`), urmat de un punct și cheia -`bark`.
 
-In the end, we add opening and closing brackets to **invoke** it.
+La final, adăugăm paranteze de deschidere și închidere pentru a o **invoca**
 
-## Function Declaration
+## Declararea funcției
 
-Defining a method using a function declaration is identical to writing a regular function.
+Definirea unei metode folosind o declararea unei funcții este identică cu scrierea unei funcții obișnuite.
 
-The only requirement is that it must be in the object's body - between the opening and closing brackets:
+Singura cerință este că trebuie să se afle în corpul obiectului - între parantezele de deschidere și de închidere:
 
 ```js live
 let city = {
@@ -338,13 +331,13 @@ let city = {
 city.summarize();
 ```
 
-In this example, we create a `summarize` function.
+În acest exemplu, creăm o funcție `summarize`.
 
-We use the `this` keyword to refer to the **current object instance**.
+Folosim cuvântul cheie `this` pentru a ne referi la **instanța obiectului curent**.
 
-## Adding a Method to an Existing Object
+## Adăugarea unei metode unui obiect existent
 
-We can add a method to an already defined object by either using **dot** or **bracket** notation:
+Putem adăuga o metodă unui obiect deja definit fie folosind notația **punct** sau **paranteză**:
 
 ```js
 let person = {
@@ -354,16 +347,14 @@ let person = {
 person.sayHello = () => console.log('Hi, guys');
 ```
 
-Here, we add a `sayHello` **arrow function** to the `person` object.
+Aici, adăugăm o **funcție săgeată** `sayHello` obiectului `person`.
 
 [/slide]
 
 [slide hideTitle]
-# Deleting Propeties
+# Ștergerea proprietăților
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-10-deleteing-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-To remove a property from an object, we use the `delete` operator.
+Pentru a elimina o proprietate dintr-un obiect, folosim operatorul `delete` (șterge).
 
 ```js live
 let fruit = {
@@ -379,28 +370,26 @@ delete fruit.species;
 console.log(fruit.species);
 ```
 
-In this example, we create a `fruit` object that has a `species` property, and we print its value to the console.
+În acest exemplu, creăm un obiect `fruit` care are o proprietate `species` și îi imprimăm valoarea pe consolă.
 
-Then, we **delete** it using the `delete object.property` syntax.
+Apoi, îl **ștergem** folosind sintaxa `delete obiect.proprietate`.
 
-If we try to access its value for a second time, we receive `undefined`.
+Dacă încercăm să îi accesăm valoarea pentru a doua oară, vom primi `undefined`.
 
 [/slide]
 
 [slide hideTitle]
-# Comparing Objects
+# Compararea obiectelor
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-11-comparing-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+După cum am aflat mai devreme, obiectele sunt un tip de date **de referință**.
 
-As we learned earlier, objects are a **reference** data type.
+De aceea, atunci când le **comparăm**, putem ajunge la rezultate confuze.
 
-That is why when **comparing** them, we may end up with confusing results.
+## Compararea a două obiecte distincte cu proprietăți identice
 
-## Comparing Two Distinct Objects with Identical Properties
+În acest exemplu, creăm două obiecte separate - `bagOne` și `bagTwo`.
 
-In this example, we create two separate objects - `bagOne` and `bagTwo`.
-
-However, both of them have completely **identical properties**.
+Cu toate acestea, ambele au **proprietăți complet identice**.
 
 ```js live
 let bagOne = { 
@@ -417,15 +406,15 @@ console.log(bagOne == bagTwo);
 console.log(bagOne === bagTwo);
 ```
 
-When comparing them, it turns out that they are not equal to each other.
+Când le comparăm, se dovedește că nu sunt egale între ele.
 
-That is because while they may look the same, they are pointing to different places in the memory.
+Asta pentru că, deși pot arăta la fel, indică locuri diferite din memorie.
 
-## Comparing Two Variables Pointing to a Single Object
+## Compararea a două variabile care indică un singur obiect
 
-Here, we create an object and assign it to the `bagOne` variable.
+Aici, creăm un obiect și îl atribuim variabilei `bagOne`.
 
-This time, instead of writing the object again, we set `bagTwo` to be equal to the value of `bagOne`.
+De data aceasta, în loc să scriem din nou obiectul, am setat `bagTwo` să fie egal cu valoarea `bagOne`.
 
 ```js live
 let bagOne = { 
@@ -439,23 +428,21 @@ console.log(bagOne == bagTwo);
 console.log(bagOne === bagTwo);
 ```
 
-Both comparisons return `true`, because the two variables hold a reference to the **exact same object**.
+Ambele comparații returnează `true`, deoarece cele două variabile conțin o referință la **exact același obiect**.
 
 
 [/slide]
 
 [slide hideTitle]
-# Object Keys and Values
+# Cheile și valorile obiectului
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-12-13-looping-through-objects-and-objects-keys-and-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+După cum știm deja, fiecare intrare obiect este o pereche `cheie: valoare`.
 
-As we already know, each object entry is a `key: value` pair.
-
-Тhere are many built-in methods in the `Object` prototype that provide a way of **looping through** objects.
+Există mai multe metode încorporate în prototipul `Object` care oferă o modalitate de **buclare prin** obiecte.
 
 ## Object.entries
 
-The `Object.entries()` method returns an **array** with the **key-value pairs** of **every** object entry:
+Metoda `Object.entries ()` returnează o **matrice** cu **perechi cheie-valoare** din **fiecare** intrare obiect:
 
 ```js live
 let cat = {
@@ -468,7 +455,7 @@ console.log(Object.entries(cat));
 
 ## Object.keys
 
-`Object.keys()` returns an array holding the keys of all object properties (without the values):
+`Object.keys ()` returnează o matrice care conține cheile tuturor proprietăților obiectului (fără valori):
 
 ```js live
 let giraffe = {
@@ -481,7 +468,7 @@ console.log(Object.keys(giraffe));
 
 ## Object.values
 
-The `Object.values()` method returns an array containing the values of all object properties (not including their keys):
+Metoda `Object.values ​​()` returnează o matrice care conține valorile tuturor proprietăților obiectului (fără a include cheile acestora):
 
 ```js live
 let swan = {
@@ -495,13 +482,11 @@ console.log(Object.values(swan));
 [/slide]
 
 [slide hideTitle]
-# For-in Loop
+# Bucla For-in
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-14-for-in-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Putem folosi o **buclă for-in** pentru a itera prin **cheile** unui obiect.
 
-We can use a **for-in loop** to iterate over the **keys** of an object.
-
-This way, we can access the **value** of a given key:
+În acest fel, putem accesa **valoarea** unei chei date:
 
 ``` js live
 let pencil = {
@@ -519,13 +504,11 @@ for (let key in pencil) {
 [/slide]
 
 [slide hideTitle]
-# For-of Loop
+# Bucla For-of
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-15-for-of-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+O **buclă for-of** iterează prin **valorile** unui obiect.
 
-A **for-of loop** iterates through the **values** of an object.
-
-In order to use one, we have to pass in an enumerable object, such as the arrays returned by `Object.keys()`, `Object.values()`, and `Object.entries()`:
+Pentru a utiliza una, trebuie să trecem un obiect enumerabil, cum ar fi matricile returnate de `Object.keys()`, `Object.values()` și `Object.entries()`:
 
 ``` js live
 let computer = {
@@ -554,7 +537,7 @@ for (const [key, value] of Object.entries(computer)) {
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Town Population
+# Problemă cu soluție: Town Population
 [code-task title="Town Population" taskId="java-path-js-advanced-objects-and-classes-town-population" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -573,22 +556,22 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
-Your task is to create a registry for different **towns** and their **population**. 
+# Descriere
+Sarcina dvs. este să creați un registru pentru diferite **orașe** și **populația** lor. 
 
-## Input 
-The **input** comes as an array of strings. 
+## Intrare
+**Intrarea** vine ca o matrice de șiruri. 
 
-Each element will contain data for a town and its population in the following format: `{townName} <-> {townPopulation}`
+Fiecare element va conține date pentru un oraș și populația acestuia în următorul format: `{townName} <-> {townPopulation}`
 
-If you receive the same town twice, **you should add** the **given population** to the **existing one**. 
+Dacă primiți același oraș de două ori, **va trebui să adăugați** **populația dată** la **cea existentă**.
 
-## Output 
-You should print out all the towns and their population. 
+## Ieșire 
+Ar trebui să tipăriți toate orașele și populația lor. 
 
-## Example One
+## Exemplul unu
 
-|**Input**|**Output**|
+|**Intrare**|**Ieșire**|
 |---|---|
 |townPopulation(\['Bucharest \<-\> 1830000', 'Vienna \<-\> 1900000', 'New York \<-\> 10000000', 'Washington \<-\> 2345000', 'Las Vegas \<-\> 1000000'\])| Bucharest : 1830000 |
 | | Vienna : 1900000 |
@@ -596,9 +579,9 @@ You should print out all the towns and their population.
 | | Washington : 2345000 |
 | | Las Vegas : 1000000 |
 
-## Example Two
+## Exemplul doi
 
-|**Input**|**Output**|
+|**Intrare**|**Ieșire**|
 |---|---|
 |townPopulation(\['Istanbul \<-\> 100000', 'Hong Kong \<-\> 2100004', 'Jerusalem \<-\> 2352344', 'Mexico City \<-\> 23401925', 'Istanbul \<-\> 1000'\])| Istanbul : 101000 |
 | | Hong Kong : 2100004 |

@@ -1,36 +1,32 @@
-# Classes
+# Clase
 
 [slide hideTitle]
-# Class Definition​
+# Definiția clasei​
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-23-24-classes-class-definition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Clasele sunt folosite ca plan, definind structura unui obiect.
 
-Classes are used as a blueprint, defining the structure of an object.
+În corpul său, o clasă poate **conține**:
 
-Inside its body, a class can **contain**:
+- **Date**, sub formă de proprietăți și atribute
 
-- **Data**, in the form of properties and attributes
+- **Acțiuni** care îi definesc comportamentul și îi modifică starea, prin intermediul funcțiilor
 
-- **Actions** that define its behavior and modify its state, by means of functions
+Fiind un șablon, clasele pot fi instanțiate sub formă de **obiecte**.
 
-Being a template, classes can be instantiated in the form of **objects**.
+Ceea ce le face diferite de clasele Java este că clasele JavaScript sunt mult mai dependente de utilizarea corectă a cuvântului cheie `this`.
 
-What makes them different from Java classes is that JavaScript classes are much more dependent on the proper use of the `this` keyword.
-
-Scoping and `this` binding have very different behavior in JavaScript, compared to Java.
+Definirea domeniului și legarea `this` au un comportament foarte diferit în JavaScript, comparativ cu Java.
 
 [/slide]
 
 [slide hideTitle]
-# Defining a Class​
+# Definirea unei clase
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-25-defining-class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+În **JavaScript**, există două moduri de a defini o clasă - **declararea** clasei și **expresia** clasei.
 
-In **JavaScript**, there are two ways to **define** a class - class **declaration** and class **expression**.
+## Declararea clasei
 
-## Class Declaration
-
-We declare a class using the `class` keyword, followed by the name of the class, in this case - `Person`.
+Declarăm o clasă folosind cuvântul cheie `class`, urmat de numele clasei, în acest caz - `Person`.
 
 ``` js
 class Person {
@@ -42,22 +38,22 @@ class Person {
 }
 ```
 
-The `constructor` method will be called every time the class is **instantiated**.
+Metoda `constructor` va fi apelată de fiecare dată când clasa este **instanțiată**.
 
-The `this` keyword is used to set a property of the objects to a given value.
+Cuvântul cheie `this` este utilizat pentru a seta o proprietate a obiectelor la o valoare dată.
 
-To **instantiate** the `Person` class, we use the `new` keyword, followed by the name of the class:
+Pentru a **instanția** clasa `Person`, folosim cuvântul cheie `new`, urmat de numele clasei:
 
 ```js
 let person = new Person('Mike', 37, 'Bern');
 ```
 
-Between the brackets, we pass in the `name`, the `age` and the `city` arguments.
+Între paranteze, trecem argumente în `name`, `age` și `city`.
 
 
-## Class Expression
+## Expresia clasei
 
-When using a **class expression**, the class is assigned as a value to a variable:
+Când se utilizează **expresia clasei**, clasa este atribuită ca valoare unei variabile:
 
 ```js
 let Car = class {
@@ -69,18 +65,16 @@ let Car = class {
 }
 ```
 
-We will only be able to access this class by the **variable name**.
+Vom putea accesa această clasă numai cu **numele variabilei**.
 
-As a result, we can leave the class itself either with or without a name - as shown above.
+Ca urmare, putem lăsa clasa în sine cu sau fără un nume - așa cum se arată mai sus.
 
 [/slide]
 
 [slide hideTitle]
-# Hoisting
+# Ridicarea
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-26-hoisting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-In JavaScript, we can use variables and functions before they are declared, if we use the `var` keyword:
+În JavaScript, putem folosi variabile și funcții înainte ca acestea să fie declarate, dacă folosim cuvântul cheie `var`:
 
 ```js live
 favoriteGame = 'Rise of the Tomb Raider 🎮';
@@ -90,9 +84,9 @@ console.log(favoriteGame);
 var favoriteGame;
 ```
 
-Moving all declarations to the top of their scope is referred to as **hoisting**.
+Mutarea tuturor declarațiilor în partea de sus a domeniului lor de aplicare este denumită **ridicare**.
 
-Keep in mind that we still **cannot** access the **values** of variables declared with `let` and `const`.
+Rețineți că încă **nu putem** accesa **valorile** variabilelor declarate cu `let` și `const`.
 
 ```js
 currentWeather = 'rainy 🌦'; // ReferenceError
@@ -100,11 +94,11 @@ currentWeather = 'rainy 🌦'; // ReferenceError
 let currentWeather;
 ```
 
-Hoisting does **not** apply to neither class declarations nor class expressions.
+Ridicarea **nu** se aplică nici declarațiilor clasei, nici expresiilor clasei.
 
-We are required to declare our class **before** we can access it.
+Ni se cere să declarăm clasa noastră **înainte** să o putem accesa.
 
-Failing to do so will result in a `ReferenceError`:
+În caz contrar, va rezulta o `ReferenceError`:
 
 ```js live
 const mountainBike = new Bike('Trek Bikes 🚲', 'mountain 🏔', 'Kenda Kwest 28x700');
@@ -121,13 +115,11 @@ class Bike {
 [/slide]
 
 [slide hideTitle]
-# Class Body
+# Corpul clasei
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-27-class-body-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Corpul clasei este definit folosind deschiderea și închiderea acoladelor: `{...}`
 
-The class body is defined using opening and closing curly braces: `{...}`
-
-Inside, we define class members like properties and methods.
+În interior, definim membrii clasei ca proprietăți și metode.
 
 ```js
 class SupportEmployee {
@@ -138,22 +130,20 @@ class SupportEmployee {
 }
 ```
 
-A compulsory method that all classes have is the **constructor**.
+O metodă obligatorie pe care o au toate clasele este **constructorul**.
 
-It is used every time a **new** instance (object) of the class is created.
+Se folosește de fiecare dată când se creează o **nouă** instanță (obiect) a clasei.
 
-This method defines the **initial** values for all properties that a child object should have.
+Această metodă definește valorile **inițiale** pentru toate proprietățile pe care ar trebui să le aibă un obiect copil.
 
 [/slide]
 
 [slide hideTitle]
-# Prototype Methods
+# Metode prototip
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-28-prototype-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Capacitatea de a modifica datele este realizată de funcții speciale care fac parte din clasă, care se numesc metode. 
 
-The ability to modify data is performed by special functions that are part of the class, which are called methods. 
-
-To add properties or methods to all existing objects, we add them to their prototype.
+Pentru a adăuga proprietăți sau metode la toate obiectele existente, le adăugăm la prototipul lor.
 
 ```js live
 class Square {
@@ -174,26 +164,24 @@ const squareTwo = new Square(35);
 console.log(squareTwo.calcArea());
 ```
 
-In other words, adding a method inside the class body makes it available to all of its instances.
+Cu alte cuvinte, adăugarea unei metode în corpul clasei o face disponibilă tuturor instanțelor sale.
 
 [/slide]
 
 [slide hideTitle]
-# Accessor Properties
+# Proprietăți accesor
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-29-accessor-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Instanțele clasei JavaScript au două tipuri de proprietăți.
 
-JavaScript class instances have two types of properties.
+Primul tip este **proprietăți de date**, care, după cum sugerează și numele, este utilizat pentru a stoca informații.
 
-The first type is **data properties**, which, as the name implies, is used to store information.
-
-They are simply the **variables** that belong to an object.
+Ele sunt pur și simplu **variabilele** care aparțin unui obiect.
  
-The second kind is **accessor properties**.
+Al doilea tip este **proprietăți accesor**.
 
-With the EcmaScript 6 standard in 2015, JavaScript introduced support for the `get` and `set` keywords.
+Cu standardul EcmaScript 6 în 2015, JavaScript a introdus suport pentru cuvintele cheie `get` și `set`.
 
-They allow for retrieving and modifying property values in a similar way to Java.
+Acestea permit recuperarea și modificarea valorilor proprietății într-un mod similar cu Java.
 
 ```js
 class User {
@@ -216,20 +204,18 @@ let userOne = new User();
 userOne.fullName = 'James Cooper';
 ```
 
-Defining a property getter is done using the `get` keyword, followed by the method.
+Definirea unui getter de proprietate se face folosind cuvântul cheie `get`, urmat de metodă.
 
-Setters are created with the `set` keyword and a method that typically accepts a new value.
+Setările sunt create cu cuvântul cheie `set` și o metodă care acceptă de obicei o nouă valoare.
 
-Using getters and setters allows for **data encapsulation** - some properties can only be read, with no write access from outside the class.
+Utilizarea getterilor și seterilor permite **încapsularea datelor** - unele proprietăți pot fi citite doar, fără acces la scriere din afara clasei.
 
 [/slide]
 
 [slide hideTitle]
-# Accessor Properties in Action
+# Proprietăți accesor în acțiune
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-30-accessor-properties-in-action-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-We can use accessor properties to modify an object's property values after its creation:
+Putem folosi proprietățile accesorului pentru a modifica valorile proprietăților unui obiect după crearea acestuia:
 
 ```js live
 class Teacher {
@@ -246,9 +232,9 @@ myTeacher.subject = 'Programming';
 console.log(myTeacher.subject);
 ```
 
-As we can see, here, we use dot notation to change the `subject` property of the `myTeacher` object.
+După cum putem vedea, aici, folosim notația punct pentru a schimba proprietatea `subject` a obiectului `myTeacher`.
 
-This can also be done using bracket notation:
+Acest lucru se poate face și folosind notația paranteză:
 
 ```js
 myTeacher['subject'] = 'Programming';
@@ -256,17 +242,15 @@ myTeacher['subject'] = 'Programming';
 [/slide]
 
 [slide hideTitle]
-# Static Methods
+# Metode statice
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-31-static-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Clasele JavaScript acceptă atât metodele **de instanță**, cât și cele **statice**
 
-JavaScript classes support both **instance** and **static** methods.
+Metodele de instanță pot **accesa și modifica** datele instanței.
 
-Instance methods can **access and modify** instance data.
+Ei pot apela alte metode de instanță, precum și orice metodă statică.
 
-They can call other instance methods, as well as any static method.
-
-Static methods **refer to the class**, rather than to an instance of it.
+Metodele statice **se referă la clasă**, mai degrabă decât la o instanță a acesteia.
 
 ``` js
 class Car {
@@ -282,18 +266,16 @@ class Car {
 let myCar = new Car("Mazda");
 ```
 
-As a result, we can only call them on the **class itself**, because they lack access to instance data.
+Drept urmare, le putem apela numai la **clasa însăși**, deoarece nu au acces la datele instanței.
 
 [/slide]
 
 [slide hideTitle]
-# Private Properties
+# Proprietăți private
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-32-private-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Recent introduse în JavaScript, **proprietățile private** sunt accesibile numai din interiorul clasei.
 
-Recently introduced to JavaScript, **private properties** are only accessible from inside the class.
-
-They always begin with a hash symbol `#`, followed by a name: `#myPrivateProperty`
+Încep întotdeauna cu un simbol hash `#`, urmat de un nume: `#myPrivateProperty`
 
 ```js
 class iceCreamMaker {​
@@ -308,17 +290,15 @@ const machine = new iceCreamMaker();​
 machine.#milkInLitres === 40 // SyntaxError
 ```
 
-Accessing a private property from outside its parent class results in an error.
+Accesarea unei proprietăți private din afara clasei părinte duce la o eroare.
 
 [/slide]
 
 [slide hideTitle]
 
-# Accessing Private Properties​
+# Accesarea proprietăților private​
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-33-accessing-private-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-Since private fields are **limited** to the class's own scope, we must use **getters and setters** to make them public:
+Deoarece câmpurile private sunt **limitate** la domeniul de aplicare al clasei, trebuie să folosim **getters și setters** pentru a le face publice:
 
 ```js
 class iceCreamMaker {​
@@ -339,10 +319,7 @@ console.log(machine.milkInLitres); // 50
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Person
-
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-34-35-person-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
+# Problemă cu soluție: Person
 
 [code-task title="Person" taskId="java-path-js-advanced-objects-and-classes-person" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
@@ -353,35 +330,35 @@ class Person {
 ```
 [/code-editor]
 [task-description]
-# Description
-Create a **class** that represents a personal record. 
+# Descriere
+Creați o **clasă** care reprezintă o înregistrare personală.
 
-It should have the following properties, all set from the constructor: 
+Ar trebui să aibă următoarele proprietăți, toate setate din constructor:
 
-- `fName` - **String**
-- `lName` - **String**
-- `age` - **Number**
-- `email` - **String**
+- `fName` - **Șir**
+- `lName` - **Șir**
+- `age` - **Număr**
+- `email` - **Șir**
 
-**Keep the names of the properties the same as above.**
+**Păstrați numele proprietăților la fel ca mai sus.**
 
-It should also have a method called `toString()`, which prints a summary of the information. 
+De asemenea, ar trebui să aibă o metodă numită `toString()`, care tipărește un rezumat al informațiilor.
 
-See the example for formatting details. 
+Consultați exemplul pentru detalii de formatare. 
 
-## Input 
-The constructor function will receive valid parameters. 
+## Intrare
+Funcția constructor va primi parametri valizi. 
 
-## Output 
-The `toString()` method should return a string in the following format: 
+## Ieșire
+Metoda `toString()` trebuie să returneze un șir în următorul format: 
 
 `{fName} {lName} (age: {age}, email: {email})`
 
-Submit the class definition as it is, **without** wrapping it in any function. 
+Trimiteți definiția clasei așa cum este, **fără** înfășurarea acesteia în nicio funcție.
 
-## Example 
+## Exemplu
 
-### Sample Input 
+### Exemplu de intrare 
 
 ```js
 let person = new Person('Anna', 'Simpson',
@@ -390,7 +367,7 @@ let person = new Person('Anna', 'Simpson',
 console.log(person.toString()); 
 ```
 
-### Output 
+### Ieșire
 
 ```
 Anna Simpson (age: 22, email: anna@yahoo.com) 
@@ -534,11 +511,7 @@ yes
 
 [slide hideTitle]
 
-# Problem with Solution: Get People
-
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-36-37-get-people-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-
+# Problemă cu soluție: Get People
 [code-task title="Get People" taskId="java-path-js-advanced-objects-and-classes-get-people" executionType="tests-execution" executionStrategy="javascript-unit-tests-with-mocha" requiresInput]
 [code-editor language=javascript]
 ```
@@ -548,11 +521,11 @@ function getPeople() {
 ```
 [/code-editor]
 [task-description]
-# Description
+# Descriere
 
-Create a function that returns an array of `Person` instances. 
+Creați o funcție care returnează o matrice de instanțe `Person`. 
 
-Use the class from the previous task, create the following instances and return them in an array: 
+Utilizați clasa din sarcina anterioară, creați următoarele instanțe și returnați-le într-o matrice:
 
 |**First Name**|**Last Name**|**Age**|**Email**|
 |---|---|---|---|
@@ -561,15 +534,15 @@ Use the class from the previous task, create the following instances and return 
 |**Stephan**|Johnson|25| |
 |**Gabriel**|Peterson|24|g.p@gmail.com|
 
-For any empty cells, do not supply a parameter (call the constructor with fewer parameters).
+Pentru orice celule goale, nu furnizați un parametru (apelați constructorul cu mai puțini parametri).
 
-## Input 
-There will be **no input**, the data is static and matches the table above. 
+## Intrare 
+Nu va fi **nicio intrare**, datele sunt statice și se potrivesc cu tabelul de mai sus. 
 
-## Output 
-**Return an array** of `Person` instances. 
+## Ieșire 
+**Returnați o matrice** de instanțe `Person`. 
 
-**Submit** a **function** that returns the required output. 
+**Transmiteți** o **funcție** care returnează ieșirea necesară.
 
 [/task-description]
 [code-io/]

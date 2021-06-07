@@ -1,15 +1,13 @@
-# JavaScript Object Notation (JSON)
+# Notare obiect JavaScript (JSON)
 
 [slide hideTitle]
-# What is JSON?
+# Ce este JSON?
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-16-17-json-javascript-object-notation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+JSON, prescurtare pentru **JavaScript Object Notation**, este un format **bazat pe text** pentru schimbul de date.
 
-JSON, short for **JavaScript Object Notation**, is a **text-based** format for data exchange.
+Este **independent de limbaj**, deși este cel mai des utilizat în contextul proiectelor bazate pe JavaScript, cum ar fi site-urile web și aplicațiile cu o singură pagină.
 
-It is **language-independent**, although it is most often used in the context of JavaScript-based projects, such as websites and single-page applications.
-
-JSON is a way of storing information in an **organized** and easily **understandable** approach. 
+JSON este un mod de stocare a informațiilor într-o abordare **organizată** și ușor de **înțeles**.
 
 ```js
 {
@@ -21,18 +19,16 @@ JSON is a way of storing information in an **organized** and easily **understand
 }
 ```
 
-The syntax of JSON closely resembles that of a JavaScript **object** - it consists of **key-value** pairs, and can serve as a **representation** of all JavaScript data types, with the exception of functions.
+Sintaxa JSON seamănă foarte mult cu cea a unui **obiect**  JavaScript - constă din perechi **cheie-valoare** și poate servi ca o **reprezentare** a tuturor tipurilor de date JavaScript, cu excepția funcțiilor.
 
-Similar to XML, it can be used to store data in a **hierarchical** order.
+Similar cu XML, poate fi folosit pentru a stoca date într-o ordine **ierarhică**.
 
 [/slide]
 
 [slide hideTitle]
-# Syntax Rules
+# Reguli de sintaxă
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-18-syntax-rules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-The following snippet illustrates a typical **JSON** response from a server:
+Următorul fragment ilustrează un răspuns tipic **JSON** de la un server:
 
 ``` js
 {
@@ -49,26 +45,24 @@ The following snippet illustrates a typical **JSON** response from a server:
 }
 ```
 
-The first thing you might notice is that every data entry is a **key-value** pair.
+Primul lucru pe care l-ați putea observa este că fiecare intrare de date este o pereche **cheie-valoare**.
 
-These pairs are enclosed in curly braces `{}` - the syntax used to **define** a JSON.
+Aceste perechi sunt închise între acolade `{}` - sintaxa utilizată pentru a **defini** un JSON.
 
-All keys, as well as string values, are in **double quotes** - JSON **does not** support single quotes.
+Toate cheile, precum și valorile șirurilor, sunt în **ghilimele duble** - JSON **nu** acceptă ghilimele unice.
 
-The values are **separated** from their keys by using a colon - `:`.
+Valorile sunt **separate** de cheile lor folosind simbolul doua puncte - `:`.
 
-Similarly to JavaScript, **arrays** are held in square brackets, and **objects** - in curly braces.
+În mod similar cu JavaScript, **matricele** sunt ținute între paranteze drepte și **obiectele** - între acolade.
 
 [/slide]
 
 [slide hideTitle]
-# Parsing from Strings
+# Transformarea șirurilor
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-19-parsing-from-strings-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+JSON este adesea utilizat pentru **citirea datelor de pe un server** și utilizarea răspunsului pentru **randarea** unei interfețe din browserul clientului.
 
-JSON is often used for **reading data from a server**, and using the response to **render** an interface on the client's browser.
-
-To do so, we have to **convert** the **JSON** response into a JavaScript **object** using the `JSON.parse()` method.
+Pentru a face acest lucru, trebuie să **convertim** răspunsul **JSON** într-un **obiect** JavaScript folosind metoda `JSON.parse()`.
 
 ```js live
 let car = '{"make":"Renault","model":"Clio","colour":"grey"}';  
@@ -78,18 +72,16 @@ let data = JSON.parse(car);
 console.log(data);
 ```
 
-In this example, we receive a JSON string - `car`, which we then **parse** to a `data` object.
+În acest exemplu, primim un șir JSON - `car`, pe care apoi îl **transformăm** cu un obiect `data`.
 
 [/slide]
 
 [slide hideTitle]
-# Converting to String
+# Conversia în șir
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-20-converting-to-string-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Metoda `JSON.stringify()` convertește o valoare JavaScript într-o reprezentare șir JSON.
 
-The `JSON.stringify()` method converts a JavaScript value to a JSON string representation.
-
-It can accept objects, as well as arrays.
+Poate accepta obiecte, precum și matrice.
 
 ```js live
 let notebook = {
@@ -107,14 +99,12 @@ console.log(notebookData);
 console.log(cityData);
 ```
 
-As evident by the output, `stringify` returns a ready-for-transfer **JSON** string.
+După cum reiese din rezultat, `stringify` returnează un șir **JSON** gata de transfer.
 
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: From JSON to HTML Table
-
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/02-Objects-and-Classes/JS-advanced-objects-and-classes-21-22-from-json-to-html-table-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Problemă rezolvată: From JSON to HTML Table
 
 [code-task title="From JSON to HTML Table" taskId="java-path-js-advanced-objects-and-classes-from-json-to-html-table" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -134,27 +124,27 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
+# Descriere
 
-Your task is to create an HTML table that contains students and their scores. 
+Sarcina dvs. este să creați un tabel HTML care să conțină studenți și scorurile acestora. 
 
-You will receive a single string representing an **array of objects**. 
+Veți primi un singur șir reprezentând o **matrice de obiecte**.
 
-The table’s headings should be equal to the **object’s keys**, while **each of the object’s values** should be a **new entry** in the table. 
+Titlurile tabelului trebuie să fie egale cu **cheile obiectului**, în timp ce **fiecare dintre valorile obiectului** ar trebui să fie o **intrare nouă** în tabel. 
 
-Any **text values** in an object should be **escaped** in order to avoid introducing dangerous code into the HTML.  
+Toate **valorile text** dintr-un obiect trebuie **evitate** pentru a evita introducerea unui cod periculos în HTML.
  
-## Input 
-The **input** comes as a **single string argument** (the array of objects). 
+## Intrare
+**Intrarea** vine ca un **argument cu un singur șir** (matricea de obiecte). 
 
-## Output 
-The **output** should be printed to the console – for each **entry row** in the input, print the **object representing it**. 
+## Ieșire 
+**Ieșirea** ar trebui tipărită pe consolă - pentru fiecare **rând introdus** din intrare, tipăriți **obiectul care îl reprezintă**.
 
-## Note: 
-Object’s **keys** will always be the **same**. Check more information for the **HTML Entity** [here](https://developer.mozilla.org/en-US/docs/Glossary/Entity). 
+## Notă: 
+**Cheile** obiectului vor fi întotdeauna **aceleași**. Verificați mai multe informații despre **Entitatea HTML** [here](https://developer.mozilla.org/en-US/docs/Glossary/Entity). 
 
 ## HTML 
-You are **provided** with an **HTML file** to test your table in the **browser**:
+Vi se **oferă** un **fișier HTML** pentru a vă testa tabelul în **browser**::
 
 ```js
 <!DOCTYPE html>
@@ -200,18 +190,17 @@ You are **provided** with an **HTML file** to test your table in the **browser**
 </html>
 ```
 
-## Submission
+## Transmiterea
+Transmiteți **numai** funcția `JsonToHtmlTable`.
 
-Submit **only** the `JsonToHtmlTable` function.
 
+## Exemplu
 
-## Example
-
-### Input
+### Intrare
 
 JsonToHtmlTable('\[\{"Name":"Peter \<div\>\-a", "Age":20,"City":"London"\}, \{"Name":"George","Age":18,"City":"Liverpool"\}, \{"Name":"Tom","Age":18,"City":"Manchester"\}\]')
 
-### Output
+### Ieșire
 
 ```html
 <table> 
