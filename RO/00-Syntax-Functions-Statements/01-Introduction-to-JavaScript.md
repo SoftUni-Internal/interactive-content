@@ -4,7 +4,7 @@
 
 # Dynamic Programming Language
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-3-4-Introduction-to-java-script-dynamic-programming-language-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-3-4-Introduction-to-java-script-dynamic-programming-language-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript is what is known as a **dynamic programming language**.
 
@@ -47,7 +47,7 @@ Ultimately, it is the programmer's **responsibility** to **ensure** that user in
 [slide hideTitle]
 # Data Types
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-5-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-5-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can divide the types of data available in JavaScript into two groups - **primitives** and **reference** types. 
 
@@ -71,8 +71,6 @@ Here is a table containing the s**even primitive data types** in JavaScript.
 
 [slide hideTitle]
 # Installing Node.js and Visual Studio Code
-
-[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-20-21-22-Installing-NodeJS-and-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We need **Node.js** so that we can execute JavaScript code outside of a browser.
 
@@ -129,7 +127,7 @@ We are ready to start using Visual Studio Code.
 
 # Identifiers
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-6-Identifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-6-Identifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Identifiers are **sequences** of characters in the code used to **identify** a particular variable, function, or property.
 
@@ -160,7 +158,7 @@ For example, "**Good morning**" stored in a string called **greeting** is data o
 
 # Variable Values
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-7-8-variable-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-7-8-variable-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Every variable **stores** a value inside it. 
 
@@ -259,7 +257,7 @@ The above results in a **ReferenceError** because **var** is **function-scoped**
 
 # Variable Scopes
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-9-variable-scopes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-9-variable-scopes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are a few different types of variable scopes in JavaScript.
 
@@ -325,7 +323,7 @@ This immediately causes an error because **let** and **const** are both block sc
 
 # Dynamic Typing
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-10-dynamic-typing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-10-dynamic-typing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Because JavaScript is a dynamically typed language, the declared variables are **not directly associated** with a particular value type.
 

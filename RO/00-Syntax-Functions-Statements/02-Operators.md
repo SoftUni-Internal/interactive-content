@@ -3,7 +3,7 @@
 
 # Arithmetic Operators
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-11-12-arithmetic-assignment-comparison-logical-operators-arithmetic-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-11-12-arithmetic-assignment-comparison-logical-operators-arithmetic-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Arithmetic operators** are reserved symbols in the code that are used for performing arithmetic operations.
 
@@ -137,7 +137,7 @@ console.log(a);
 
 # Assignment Operators
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-13-assignment-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-13-assignment-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Assignment operators** assign a value to the operand on the left, depending on the value of the right operand.
 
@@ -188,7 +188,7 @@ Using the shorthand division assignment is the same as doing `y = y / a`.
 
 # Comparison Operators
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-14-15-comparison-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-14-15-comparison-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 **Comparison operators** are used in logical statements when comparing two operands.
@@ -291,7 +291,7 @@ console.log(result);
 
 # Truthy and Falsy Values
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-16-truthy-and-falsy-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-16-truthy-and-falsy-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When checked in a Boolean context **truthy** values evaluate to `true` and **falsy** evaluate to `false`.
 
@@ -352,7 +352,7 @@ The resulting output may seem arbitrary but there is some **logic behind** this:
 
 # Logical Operators
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-17-18-logical-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-17-18-logical-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are three logical operators that we can use in JavaScript.
 
@@ -436,7 +436,7 @@ The above example returns `true` because it is the opposite of `false`.
 
 # Typeof Operator
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-19-typeof-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-19-typeof-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `typeof` operator is used for checking the **type** of an operand.
 
@@ -488,7 +488,7 @@ Here are a few results of `typeof` depending on the type of data you are checkin
 
 # Instanceof Operator
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-20-instanceof-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-20-instanceof-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `instanceof` operator checks if an object belongs to a particular class. 
 
@@ -515,7 +515,7 @@ Checking if it is a **String** returns `false` because it **is** an object.
 
 # Some Interesting Examples
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-21-some-interesting-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-21-some-interesting-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="confused.png" /]
 

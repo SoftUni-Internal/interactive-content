@@ -4,7 +4,7 @@
 
 # First-Class Functions
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-29-first-class-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-29-first-class-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Functions in JavaScript can be used as variables for other functions. 
 
@@ -47,7 +47,7 @@ A function that returns another function, like in the example above is called a 
 
 # Nested Functions
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-30-nested-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-30-nested-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript allows **function nesting** and inner functions can **access** variables from their parent function.
 
@@ -91,7 +91,7 @@ checkLength('words', 'like');
 
 # Hoisting
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-31-hoisting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-31-hoisting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Hoisting in real life is the act of **raising** or **lifting** something. 
 
@@ -109,7 +109,7 @@ The benefit of hoisting is that we can use functions **anywhere** in the code an
 
 # Hoisting Variables
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-32-hoisting-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-32-hoisting-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Variables declarations using the `var` keyword are hoisted:
 
@@ -166,7 +166,7 @@ speak();
 
 # Hoisting Functions
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-33-hoisting-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-33-hoisting-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Functions can also be called before declaring them.
 
@@ -204,7 +204,7 @@ This will also not work and will result in a **TypeError** because the **walk** 
 [slide hideTitle]
 # Problem with Solution: Aggregate Elements
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-34-25-sum-inverse-concatenate-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-34-25-sum-inverse-concatenate-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Aggregate Elements" taskId="js-syntax-functions-statements-aggregateelements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

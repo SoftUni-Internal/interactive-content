@@ -4,7 +4,7 @@
 
 # Functions
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-22-23-declaring-and-invoking-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-22-23-declaring-and-invoking-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Functions are named blocks of code. 
 
@@ -53,7 +53,7 @@ console.log(convertInches(inches));
 
 # Declaring Functions
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-24-declaring-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-24-declaring-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Functions can be declared in several ways.
 
@@ -101,7 +101,7 @@ Arrow functions are **similar** to function expressions but they are even **shor
 
 # Parameters
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-25-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-25-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When writing JavaScript functions with **several parameters**, the additional parameters will be **ignored** if no value is passed to them.
 
@@ -144,7 +144,7 @@ Only the first **three parameters** were used and the last two were completely *
 
 # Default Function Parameter Values
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-26-default-function-parameters-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-26-default-function-parameters-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Sometimes you might want to pass **default** parameters to your functions.
 
@@ -184,7 +184,7 @@ printCopyright('Noble Co. LLC');
 
 # Problem with Solution: Largest Number
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-27-28-largest-number-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-27-28-largest-number-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Largest Number" taskId="js-syntax-functions-statements-largest-number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
