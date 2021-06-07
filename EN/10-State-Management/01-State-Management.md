@@ -84,4 +84,20 @@ The **store** holds the application **state** in a single **object** and **appli
 
 **Reducers** take the **last action that has been dispatched** and **compare** it to the current state, **updating the state** when needed.
 
+For example, let us say that the user clicks on a **button**. 
+
+When the click event occurs, we want to change a display **value** of a **sidebar** component - either show it or hide it.
+
+However, the two UI components are stored **separately**.
+
+NgRx **handles** and store these state changes for us in a **singular** state object.
+
+As soon as the button has been clicked, its encapsulating component dispatches an **action**.
+
+This action is sent to the **reducer**.
+
+The reducer takes the **current** state and returns a new one, depending on the action provided.
+
+Keep in mind that state is **immutable** - the reducer always returns a **new state**.
+
 [/slide]

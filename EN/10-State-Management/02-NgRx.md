@@ -10,7 +10,7 @@ The `@ngrx/store` library is a **state management tool** that implements the **R
 
 It stores all of our application **data** in a **single immutable object**, called the **Store**.
 
-The store is the **single source of truth** for our application, and as such, it must have an **initial state**.
+The store is the **single source of truth** for our application, and as such, it must also have an **initial state**.
 
 NgRx Store enforces a **one-way flow of data** and can only be **modified** using **reducers**.
 
