@@ -2,13 +2,13 @@
 
 # Triggers
 
-**Triggers** are small named programs in our database, which we can create, that will define a certain action that should happen when a certain operation gets performed on the database.
+**Triggers** are small **named programs** in our database, which we **can create**, that will **define a certain action** that should happen when a certain **operation has been performed** on the database.
 
-We could write a trigger that would tell MySQL to act when an event acquire like an entry was added or deleted into a particular table in the database. 
+We could write a trigger that would tell MySQL to **act when an event acquires** like an entry was **added** or **deleted** into a **particular table in the database**. 
 
-We do not call triggers explicitly, they are attached to our database and called only when a specific event, which is set on trigger creation occurs.
+We do **not call triggers explicitly**, they are **attached to our database** and are called only when a **specific event**, which is set on trigger creation occurs.
 
-We could say like anytime when a row gets deleted from this table we want you to insert for example new row into a table which makes triggers extremely powerful аnd extremely useful.
+For example **anytime when a row gets deleted** from this table we want you to **insert for example new row** into another table which makes **triggers extremely powerful** аnd extremely useful.
 
 [/slide]
 
@@ -16,9 +16,9 @@ We could say like anytime when a row gets deleted from this table we want you to
 
 # MySQL Types of Triggers
 
-Тhere is no type of triggers but the triggers are differentiated on the behalf of the event (insert, update, delete) activation time.
+Тhere is **no type of triggers** but the triggers are differentiated on the **behalf of the event** (insert, update, delete) activation time.
 
-By the differentiation of trivial activation, time triggers are divided into two types
+By the differentiation of trivial activation, time triggers are **divided into two types**:
 
 - **Before the even**
 
