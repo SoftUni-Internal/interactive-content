@@ -65,8 +65,8 @@ When registering a new student the following information is entered: **name**, *
 
 
 Columns: 
-- Student: **name**, **faculty number**, **photo date of enlistment**, **list of courses**.
-- Course: **town**.
+- Student: **name**, **faculty number**, **photo date of enlistment**, **list of courses**
+- Course: **town**
 
 
 [/slide]

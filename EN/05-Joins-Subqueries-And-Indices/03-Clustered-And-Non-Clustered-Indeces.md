@@ -43,10 +43,10 @@ When you define a **PRIMARY KEY** on your table, the database uses it as a clust
 
 Define a primary key for each table that you create!
 
-- **Clustered** index **determine the order** of data.
-  - Very useful for fast execution of **WHERE**, **ORDER BY** and **GROUP BY** clauses.
-- Maximum **1** clustered index per table.
-  - If a table has no clustered index, its data rows are stored in an **unordered structure** (heap).
+- **Clustered** index **determine the order** of data
+  * Very useful for fast execution of **WHERE**, **ORDER BY** and **GROUP BY** clauses
+- Maximum **1** clustered index per table
+  * If a table has no clustered index, its data rows are stored in an **unordered structure** (heap)
 
 [image assetsSrc="Joins-Subqueries-And-Indices(10).png" /]
 

@@ -57,7 +57,7 @@ The result:
 
 # Joins
 
-- **JOINS** - used to collect data from **two** or **more** tables.
+- **JOINS** - used to collect data from **two** or **more** tables
 - Types:
   - INNER JOIN
   - LEFT JOIN
@@ -251,9 +251,9 @@ And this is the resulting table:
 
 The **CROSS JOIN** produces a result set, which is the product of rows of two associated tables when no **WHERE** clause is used with a CROSS JOIN.
 
-- Produces a set of associated rows of two tables.
-  - Multiplication of each row in the first table with each in second.
-  - The result is a **Cartesian** product when there's **no condition** in the **WHERE** clause.
+- Produces a set of associated rows of two tables
+  - Multiplication of each row in the first table with each in second
+  - The result is a **Cartesian** product when there's **no condition** in the **WHERE** clause
 
 ```Java
 SELECT * FROM courses AS c

@@ -44,8 +44,8 @@ So here are some of the benefits of having well-structured databases:
 - Information of a given type is always stored once
 - Databases use the **ACID** set of properties
 - They are **fault-tolerant** and can handle very large data sets
-- Databases are **concurrent**, meaning multiple users can use them at the same time without corrupting the data.
-- They are **scalable**.
+- Databases are **concurrent**, meaning multiple users can use them at the same time without corrupting the data
+- They are **scalable**
 
 [/slide]
 

@@ -16,7 +16,7 @@ Here is the table of **supported arithmetic operators:**
 | %, MOD | Modulo operator |
 | + | Addition operator |
 | * | Multiplication operator | 
-| - (arg) | Change sign of argument |
+| - (arg) | Change the sign of an argument |
 
 Let us take a look at some **Math** functions:
 
@@ -29,12 +29,12 @@ Let us take a look at some **Math** functions:
 SELECT ABS(-243.5);
 ```
 
-**Output**:
+**Output:**
 ```
 243.5
 ```
 
-- `SQRT()` - Returns the square root of a number passed as an argument.
+- `SQRT()` - Returns the square root of a number passed as an argument
 
 ``` java
 SELECT SQRT(1024);
@@ -46,68 +46,68 @@ SELECT SQRT(1024);
 32
 ```
 
-- `POW()` - Returns the result of raising a number to the power of another number passed as an argument.
+- `POW()` - Returns the result of raising a number to the power of another number passed as an argument
 
 ``` java
 SELECT POW(5, 2);
 ```
 
-**Output**:
+**Output:**
 
 ```
 25
 ```
 
-- `CONV()` - This function converts a number from one numeric system to another. 
+- `CONV()` - This function converts a number from one numeric system to another
 
 
 ``` java
 SELECT CONV(15, 10, 2); // The first argument is "value", second is "from_base", third "to_base"
 ```
 
-**Output**:
+**Output:**
 
 ```
 12
 ```
 
-- `ROUND()` - Rounds the number to precision passed as an argument.
+- `ROUND()` - Rounds the number to precision passed as an argument
 
 ``` java
 SELECT ROUND(10.5021401, 2); 
 ```
 
-**Output**:
+**Output:**
 
 ```
 10.50
 ```
 
-- `FLOOR()` - Returns the value as an integer, smaller or equal to the number passed as an argument.
+- `FLOOR()` - Returns the value as an integer, smaller or equal to the number passed as an argument
 
 ``` java
 SELECT FLOOR(11.85);
 ```
 
-**Output**:
+**Output:**
 
 ```
 11
 ```
 
-- `CEILING()` - Returns an integer number greater than or equal to the number passed as an argument.
+- `CEILING()` - Returns an integer number greater than or equal to the number passed as an argument
 
 ``` java
 SELECT CEILING(6.55);
 ```
 
-**Output**:
+**Output:**
 
 ```
 7
 ```
 
-- `SIGN()` - This function returns the sign of a number depending on the value passed as an argument.
+- `SIGN()` - This function returns the sign of a number depending on the value passed as an argument
 
 **Example**:
 
@@ -121,12 +121,12 @@ If we have a number **lower than 0**, it will return **-1**.
 SELECT SIGN(-5);
 ```
 
-**Output**:
+**Output:**
 ```
 -1
 ```
 
-- `RAND()` - Returns a float number between 0 and 1 exclusively.
+- `RAND()` - Returns a float number between 0 and 1 exclusively
 
 If **Seed** is not specified, it will return a completely random number. 
 

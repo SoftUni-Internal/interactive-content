@@ -4,10 +4,10 @@
 
 The **Date** functions can handle date and time data effectively.
 
-- `EXTRACT()` - Extracts a segment from a date passed as argument.
+- `EXTRACT()` - Extracts a segment from a date passed as argument
 
 ``` java
-SELECT EXTRACT(YEAR FROM "1995-11-24"); // It will extract only the year.
+SELECT EXTRACT(YEAR FROM "1995-11-24"); # It will extract only the year.
 ```
 
 **Output:**
@@ -16,10 +16,10 @@ SELECT EXTRACT(YEAR FROM "1995-11-24"); // It will extract only the year.
 1995
 ```
 
-- `TIMESTAMPDIFF()` - Extracts the difference between two dates.
+- `TIMESTAMPDIFF()` - Extracts the difference between two dates
 
 ``` java
-TIMESTAMPDIFF(Part, FirstDate, SecondDate)  // Part can be any part and format of date or time
+TIMESTAMPDIFF(Part, FirstDate, SecondDate)  # Part can be any part and format of date or time
 ```
 
 Let's see a simple query example using our **soft_uni** database:
@@ -31,7 +31,7 @@ SELECT `employee_id`, `first_name`, `last_name`,
   FROM `employees`;
 ```
 
-The **Output** will be:
+The **output** will be:
 
 | employee_id | first_name | last_name | Years In Service |
 | --- | --- | --- | --- |
@@ -41,7 +41,7 @@ The **Output** will be:
 | 4 | Rob | Walters | 17 |
 | ... | ... | ... | ... |
 
-- `DATE_FORMAT()` - Formats the date as specified.
+- `DATE_FORMAT()` - Formats the date as specified
 
 ``` java
 SELECT DATE_FORMAT('2015/01/16', '%Y %b %D') AS 'Date';
@@ -54,7 +54,7 @@ Date
 2015 Jan 16th
 ```
 
-- `NOW()` - Obtains current date and time.
+- `NOW()` - Obtains the **current** date and time
 
 
 [/slide]

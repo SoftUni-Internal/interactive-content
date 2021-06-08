@@ -80,10 +80,10 @@ It also describes the storage structure of each relation on the hard disk.
 
 Examples of DDL commands:
 
-- **CREATE** - Creates a new table in a database.
-- **ALTER** - Modifies a table in a database.
-- **DROP** - Drop a column or a table from an existing database.
-- **TRUNCATE** - Erase all rows in a table.
+- **CREATE** - Creates a new table in a database
+- **ALTER** - Modifies a table in a database
+- **DROP** - Drop a column or a table from an existing database
+- **TRUNCATE** - Erase all rows in a table
 
 
 **DML**
@@ -92,9 +92,9 @@ The SQL commands that deals with the manipulation of data present in the databas
 
 Examples of DML commands:
 
-- **INSERT** - Used to insert data into a table.
-- **UPDATE** - Used to update existing data within a table.
-- **DELETE** - Used to delete records from a database table.
+- **INSERT** - Used to insert data into a table
+- **UPDATE** - Used to update existing data within a table
+- **DELETE** - Used to delete records from a database table
 
 **DCL**
 
@@ -102,8 +102,8 @@ DCL includes commands such as, **GRANT**, **REVOKE** and **DENY**, which mainly 
 
 Examples of DCL commands:
 
-- **GRANT** - Gives users access privileges to database.
-- **REVOKE** - Withdraw user’s access privileges given by using the **GRANT** command.
+- **GRANT** - Gives users access privileges to database
+- **REVOKE** - Withdraw user’s access privileges given by using the **GRANT** command
 
 **TCL**
 
@@ -111,8 +111,8 @@ TCL commands deal with the transaction within the database.
 
 Examples of TCL commands:
 
-- **COMMIT** - Commits a Transaction.
-- **ROLLBACK** - Rollbacks a transaction in case of any error occurs.
-- **SAVEPOINT** - Sets a savepoint within a transaction.
+- **COMMIT** - Commits a Transaction
+- **ROLLBACK** - Rollbacks a transaction in case of any error occurs
+- **SAVEPOINT** - Sets a savepoint within a transaction
 
 [/slide]

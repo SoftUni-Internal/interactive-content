@@ -27,7 +27,7 @@
     FROM people
     ```
 
-- How to modify and delete structures in our database.
+- How to modify and delete structures in our database
 
     ```Java
     TRUNCATE TABLE employees;
