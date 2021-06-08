@@ -197,7 +197,7 @@ The **front-end** and **back-end** come from **the "client-server" model** and a
 
 Most modern apps are not monolith and have **client-side (front-end)** and **server-side (back-end)**.
 
-## Fron-End
+## Front-End
 
 The **front-end** consists of the **client-side app components**, the so called "**presentation layer**".
 
