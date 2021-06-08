@@ -27,11 +27,7 @@ console.log(elements[10]);
 console.log(elements[-1]);
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Proprietăți valide și nevalide
+## Proprietăți valide și nevalide
 
 În JavaScript, **proprietățile obiectului** pot fi accesate utilizând:
 
