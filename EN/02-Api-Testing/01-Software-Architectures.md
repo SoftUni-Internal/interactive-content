@@ -69,17 +69,21 @@ The server usually implements a mechanism to resolve the eventual conflicts when
 
 Let's look at these few **examples** of client-server systems:
 
-- The first example is when a **Web browser opens a Web site**
+The first example is when a **Web browser opens a Web site**
 - The **Web browser** is the client software
 - The **Web server**, holding the Web site, is the server software
 - The **app data** stored at the server-side is the Web site itself
 - The **user interface** at the client side is the rendered Web page from the Website
-- The second **example** is when an **Email client retrieves the email messages from a mail server**
+
+The second **example** is when an **Email client retrieves the email messages from a mail server**
+
 - The **email client** is the client software. It retrieves and email messages from the server and displays them
 - The **mail server**, holding the users' mailboxes, is the server software
 - The **app data** stored at the server-side are the mailboxes with the mail messages for each user
 - The **user interface** at the client side is the email app (mobile, desktop, or Web app)
-- The **third example** is when a chat **client communicates with a chat server to display the most recent chat messages for a certain user**.
+
+The **third example** is when a chat **client communicates with a chat server to display the most recent chat messages for a certain user**.
+
 - The **chat client** is the client software. It listens for new messages and displays the chat conversations for the current user
 - The **chat server**, holding the users and their chat conversations, is the server software
 - The **app data** stored at the server-side are the users and their chat conversations, photos, videos, documents, files, etc
