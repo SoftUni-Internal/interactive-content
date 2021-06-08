@@ -99,7 +99,7 @@ După cum putem vedea, proprietățile pot avea diferite **tipuri de date**.
 
 În acest exemplu, obiectul `color` are trei proprietăți.
 
-|| **Numele proprietății** | **Valoarea proprietății** | **Tipul de date** |
+| **Numele proprietății** | **Valoarea proprietății** | **Tipul de date** |
 |---|---|---|
 |name|red|**Șir**|
 |rgbValues|`[255, 0, 0]`|**Matrice**|
