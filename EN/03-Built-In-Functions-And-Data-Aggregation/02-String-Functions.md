@@ -4,7 +4,8 @@
 
 We use **string** functions to manipulate string characters effectively.
 
-And example of a **string function** is `SUBSTRING()`.
+An example of a **string function** is `SUBSTRING()`.
+
 ## The SUBSTRING() Function
 
 The `SUBSTRING()` function allows us to extract parts of a string.
@@ -29,7 +30,8 @@ oftuni.org
 The second way of using our `SUBSTRING()` is by passing in a length:
 
 ```java
-SUBSTRING(String, Position, Length) # We pass in the index at which our result will start to the index at which it will finish.
+SUBSTRING(String, Position, Length) # We pass in the index at which our result will start
+                                    # to the index at which it will finish.
 ```
 
 **Example**:
@@ -48,7 +50,7 @@ We can use the `SUBSTRING()` method with `FROM` and `FOR` too:
 
 ``` java
 SUBSTRING(String FROM Position FOR Length) # This way, we can choose the position from which we want to 
- # start making the substring and for what length.
+                                           # start making the substring and for what length.
 ```
 
 For instance, if we substring `softuni.org` from the **second position**, for a **length** of **five**:
@@ -101,7 +103,7 @@ The `REPLACE()` function allows us to replace all occurrences of a substring wit
 It is crucial to know that this method performs on a **case-sensitive** match.
 
 ``` java
-REPLACE(String, Pattern, Replacement) # Where "String" is our field from the table.
+REPLACE(String, Pattern, Replacement) # Where "String" is our field from the table
                                       # "Pattern" is the string, which we need to replace
                                       # "Replacement" is our replacement string 
 ```
@@ -217,7 +219,7 @@ If our string **contains five two-byte characters**, our `CHAR_LENGTH()` functio
 **Example**:
 
 ``` java
-SELECT LENGTH('§'); # Returns 2
+SELECT LENGTH('§');      # Returns 2
 SELECT CHAR_LENGTH('§'); # Returns 1
 ```
 
@@ -324,7 +326,7 @@ The `REPEAT()` function allows us to repeat a string a specified number of times
 **Example**:
 
 ``` java
-SELECT REPEAT('softuni ', 3); # This will repeat softuni with the whitespace after exactly 3 times
+SELECT REPEAT('softuni ', 3); # This will repeat "softuni ", followed by the whitespace after, exactly 3 times
 ```
 
 **Output**:
@@ -338,7 +340,7 @@ softuni softuni softuni
 
 ## The LOCATE() & INSERT() Functions
 
-`LOCATE()` function in MySQL lets us locate a specific pattern (substring) in our string.
+The `LOCATE()` function in MySQL lets us locate a specific pattern (substring) in our string.
 
 The function performs a **case-insensitive** search.
 
@@ -346,7 +348,7 @@ The function performs a **case-insensitive** search.
 
 ``` java
 LOCATE(Pattern, String, [Position]) # Where the [Position] argument is optional. If omitted, it defaults to 1. 
- # The first position in our string is 1.
+                                    # The first position in our string is 1.
 ```
 
 **Example**:
@@ -366,7 +368,8 @@ The `INSERT()` function allows us to insert substring at a specific position.
 **Syntax**:
 
 ``` java
-INSERT(String, Position, Length, Substring) # The Length parameter indicates the count of characters that will be deleted from the start of the given Position.
+INSERT(String, Position, Length, Substring) # The Length parameter indicates the count of characters 
+                                            # that will be deleted from the start of the given Position.
 ```
 
 **Example**:

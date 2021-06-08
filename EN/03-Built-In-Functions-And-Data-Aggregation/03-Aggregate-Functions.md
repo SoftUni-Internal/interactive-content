@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# The Aggregate Functions
+# Aggregate Functions
 
 
 An **aggregate** function performs calculations on multiple values and then returns a single value.
@@ -22,8 +22,7 @@ Usually **aggregate** functions ignore **NULL** values.
 **Example**:
 
 ``` java
-SELECT e.`department_id`, 
- MIN(e.`salary`) AS 'MinSalary'
+SELECT e.`department_id`, MIN(e.`salary`) AS 'MinSalary'
 FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
@@ -58,8 +57,7 @@ When using `COUNT()`, we ignore any employees with **NULL** salary.
 Here is a simple example using our **soft_uni** database:
 
 ``` java
-SELECT e.`department_id`, 
- COUNT(e.`salary`) AS 'Salary Count'
+SELECT e.`department_id`, COUNT(e.`salary`) AS 'Salary Count'
 FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
@@ -130,7 +128,7 @@ The `MAX()` function will take the maximum value from a column.
 ``` java
 SELECT e.`department_id`, MAX(e.`salary`) AS 'MaxSalary'
 FROM `employees` AS e 
- GROUP BY e.`department_id`; 
+GROUP BY e.`department_id`; 
 ```
 
 **Output**:
@@ -189,8 +187,7 @@ The `AVG()` function will calculate the average value in a column.
 [image assetsSrc="Built-in-Functions-Data-Aggregations(4).png" /]
 
 ``` java
-SELECT e.`department_id`, 
- AVG(e.`salary`) AS 'AvgSalary'
+SELECT e.`department_id`, AVG(e.`salary`) AS 'AvgSalary'
 FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```

@@ -35,17 +35,16 @@ Keep in mind that in more complicated relations, where there is **circular refer
 **Example:**
 
 ```java
-CREATE TABLE `drivers` ( # Create the first table
- `driver_id` INT PRIMARY KEY, # Set its primary key
+CREATE TABLE `drivers` (                              # Create the first table
+ `driver_id` INT PRIMARY KEY,                         # Set its primary key
  `driver_name` VARCHAR(50)
 );
 
-CREATE TABLE `cars` ( # Create the second table
+CREATE TABLE `cars` (                                 # Create the second table
  `car_id` INT PRIMARY KEY, 
- `driver_id` INT, # Set a column for its foreign key.
- CONSTRAINT `fk_car_driver` FOREIGN KEY(`driver_id`) # Create the foreign key constraint.
- REFERENCES drivers(`driver_id`) ON DELETE CASCADE; # Set the behaviour on deletion.
-
+ `driver_id` INT,                                     # Set a column for its foreign key
+ CONSTRAINT `fk_car_driver` FOREIGN KEY(`driver_id`)  # Create the foreign key constraint
+ REFERENCES drivers(`driver_id`) ON DELETE CASCADE;   # Set the behaviour on deletion.
 ```
 [/slide]
 
@@ -73,16 +72,16 @@ It is best to use it when you have the **UNIQUE** constraints.
 **Example:**
 
 ```java
-CREATE TABLE `drivers` ( # Create the first table
+CREATE TABLE `drivers` (                               # Create the first table
  `driver_id` INT PRIMARY KEY,
  `driver_name` VARCHAR(50)
 );
 
-CREATE TABLE `cars` ( # Create the second table
+CREATE TABLE `cars` (                                  # Create the second table
  `car_id` INT PRIMARY KEY,
- `driver_id` INT, # Set a column for it's foreign key
- CONSTRAINT `fk_car_driver` FOREIGN KEY(`driver_id`) # Create a foreign key constraint
- REFERENCES `drivers`(`driver_id`) ON UPDATE CASCADE; # Set on Update behaviour.
+ `driver_id` INT,                                      # Set a column for its foreign key
+ CONSTRAINT `fk_car_driver` FOREIGN KEY(`driver_id`)   # Create a foreign key constraint
+ REFERENCES `drivers`(`driver_id`) ON UPDATE CASCADE;  # Set on Update behaviour
 ```
 
 Keep in mind that **Cascading** can be avoided using **triggers** or **procedures**.
