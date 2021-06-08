@@ -17,7 +17,7 @@ let person = {​
 };​
 ```
 
-- Notarea obiectului JavaScript (** JSON **) este utilizată pentru transferul de date
+- Notarea obiectului JavaScript (**JSON**) este utilizată pentru transferul de date
   * este un format autodescriptiv, **bazat pe text**
 
 ```js
