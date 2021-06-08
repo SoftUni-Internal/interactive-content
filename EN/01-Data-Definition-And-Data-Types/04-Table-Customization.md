@@ -32,7 +32,7 @@ balance DECIMAL(10, 2) DEFAULT 0 // Default value set to 0
 
 [slide hideTitle]
 
-## Problems: Create and Insert
+# Problems: Create and Insert
 
 1. Create new database called `gamebar`
 2. Create Tables:

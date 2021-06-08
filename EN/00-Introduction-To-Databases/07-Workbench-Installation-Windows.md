@@ -4,7 +4,7 @@
 
 # Installation Guidelines For Windows
 
-This document consists of guidelines for installing MySQL server. The installation file for Windows can be downloaded from here: https://dev.mysql.com/downloads/installer/
+This document consists of guidelines for installing MySQL server. The installation file for Windows can be downloaded from [here](https://dev.mysql.com/downloads/installer/)
 
 **Step 1. Download the MySQL Installer**
 

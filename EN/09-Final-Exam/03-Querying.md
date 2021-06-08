@@ -37,7 +37,7 @@ Extract from the **SoftUni Stores System** database, info about all of the **emp
 
 ### Required Column
 
--**first_name**
+- **first_name**
 
 -	**middle_name**
 
@@ -159,11 +159,11 @@ Order the results by **product price** in **descending** order.
 
 |  **product_name** |  **price** | **best_before**  | **short_description**  |  **url** |
 | --- | --- | --- | --- | --- |
-| Pasta - Bauletti Chicken White  | 48.85  | 2020-02-08  | Fusce cong...  |  http://dummyimage.com/241x194.jpg/5fa2dd/ffffff |
-| Oil - Sunflower  | 48.00  | 2019-10-25  | Lorem ipsu...  | http://dummyimage.com/243x233.jpg/cc0000/ffffff  |
-| Sugar - White Packet  | 40.89  | 2019-11-14  | Pellentesq...  |  http://dummyimage.com/197x104.jpg/cc0000/ffffff |
+| Pasta - Bauletti Chicken White  | 48.85  | 2020-02-08  | Fusce cong...  |  `http://dummyimage.com/241x194.jpg/5fa2dd/ffffff` |
+| Oil - Sunflower  | 48.00  | 2019-10-25  | Lorem ipsu...  | `http://dummyimage.com/243x233.jpg/cc0000/ffffff`  |
+| Sugar - White Packet  | 40.89  | 2019-11-14  | Pellentesq...  |  `http://dummyimage.com/197x104.jpg/cc0000/ffffff` |
 | …  |  …   |  …   |  …   |  …   |
-| Lemonade - Mandarin 591 Ml  | 25.53  | 2020-04-03  | Duis biben...  | http://dummyimage.com/208x226.jpg/cc0000/ffffff  |
+| Lemonade - Mandarin 591 Ml  | 25.53  | 2020-04-03  | Duis biben...  | `http://dummyimage.com/208x226.jpg/cc0000/ffffff`  |
 
 
 [/task-description]
@@ -491,8 +491,3 @@ ydixelF,VIDIN-83637 Reinke Alley,0,25.53,1,21st-Aug-2018
 [/code-task]
 [/slide]
 
-[slide hideTitle]
-# Exam Results
-[tasks-results/]
-
-[/slide]

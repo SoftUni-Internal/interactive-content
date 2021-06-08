@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Triple S – SoftUni Stores System
+# Triple S - SoftUni Stores System
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/10.Final-Exam-Resources.zip) **for this exam.**
 
@@ -12,7 +12,7 @@ Of course, they have many ideas, but they need to start from somewhere. You have
 
 that’s why you were chosen for a senior developer for one of the teams. 
 
-Your task is to create a store system – SoftUni Stores System. 
+Your task is to create a store system - SoftUni Stores System. 
 
 You and the other senior developers create an E/R Diagram, that looks like this. 
 

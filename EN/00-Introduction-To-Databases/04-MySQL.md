@@ -16,8 +16,8 @@ Works on many system platforms including **Windows**, **MAC OS**, **Linux**.
 
 Here are some links for downloading MySQL Server:
 
-- for Windows - https://dev.mysql.com/downloads/mysql/
-- for Ubuntu - https://dev.mysql.com/downloads/repo/apt/
+- [For Windows](https://dev.mysql.com/downloads/mysql/)
+- [For Ubuntu](https://dev.mysql.com/downloads/repo/apt/)
 
 [/slide]
 

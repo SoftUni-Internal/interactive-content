@@ -77,7 +77,6 @@ Your task is to create a database called **softuni_stores_system**. Then you wil
 | description |  A very long String field  |
 | category_id | Integer, from 1 to 2,147,483,647. | Relationship with table categories. NULL is NOT permitted. |
 | picture_id | Integer, from 1 to 2,147,483,647. |  Relationship with table pictures. NULL is NOT permitted. |
-|  |  |  |
 
 
 ### towns
@@ -85,7 +84,6 @@ Your task is to create a database called **softuni_stores_system**. Then you wil
 | --- | --- | --- |
 | id | Integer, from 1 to 2,147,483,647. | Primary Key AUTO_INCREMENT |
 | name | A string containing a maximum of 20 characters. Unicode is NOT needed. | NULL is NOT permitted. The name is unique. |
-|  |  |  |
 
 ### addresses
 | **Column Name** | **Data Type** | **Constraint** |
@@ -93,7 +91,7 @@ Your task is to create a database called **softuni_stores_system**. Then you wil
 | id | Integer, from 1 to 2,147,483,647. | Primary KeyAUTO_INCREMENT |
 | name | A string containing a maximum of 50 characters. Unicode is NOT needed. | NULL is NOT permitted. The name is unique. |
 | town_id | Integer, from 1 to 2,147,483,647. | Relationship with table towns. NULL is NOT permitted. |
-|  |  |  |
+
 
 
 ### stores
@@ -104,7 +102,7 @@ Your task is to create a database called **softuni_stores_system**. Then you wil
 | rating  | A floating point number  | NULL is NOT permitted. |
 | has_parking | Can be true or false | Default is FALSE |
 | address_id | Integer, from 1 to 2,147,483,647. | Relationship with table addresses.NULL is NOT permitted. |
-|  |  |  |
+
 
 
 ### products_stores
@@ -112,7 +110,7 @@ Your task is to create a database called **softuni_stores_system**. Then you wil
 | --- | --- | --- |
 | product_id | Integer, from 1 to 2,147,483,647. | NULL is NOT permitted. | 
 | store_id | Integer, from 1 to 2,147,483,647. | NULL is NOT permitted. | 
-|  |  |  |
+
 
 ### employees
 | **Column Name** | **Data Type** | **Constraint** |
@@ -125,12 +123,12 @@ Your task is to create a database called **softuni_stores_system**. Then you wil
 | hire_date | A date that employee was hired |  NULL is NOT permitted. |
 | manager_id | Integer, from 1 to 2,147,483,647. |
 | store_id | Integer, from 1 to 2,147,483,647. |  NULL is NOT permitted. |
-|  |  |  |
+
 
 [/slide]
 
 [slide hideTitle]
-# Problem: Table Design – 13pts
+# Problem: Table Design - 13pts
 [code-task title="Problem: Table Design – 13pts" taskId="1b216b03-738f-43ab-a7d4-4ef1c91d6938" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
