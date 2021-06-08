@@ -2,9 +2,13 @@
 
 # Triggers
 
-**Triggers** are small named programs in our database, which wait for a given event to occur.
+**Triggers** are small named programs in our database, which we can create, that will define a certain action that should happen when a certain operation gets performed on the database.
+
+We could write a trigger that would tell MySQL to act when an event acquire like an entry was added or deleted into a particular table in the database. 
 
 We do not call triggers explicitly, they are attached to our database and called only when a specific event, which is set on trigger creation occurs.
+
+We could say like anytime when a row gets deleted from this table we want you to insert for example new row into a table which makes triggers extremely powerful аnd extremely useful.
 
 [/slide]
 
