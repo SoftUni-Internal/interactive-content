@@ -1,18 +1,16 @@
 
-# Accessor Methods
+# Metodele Accessor
 
 [slide hideTitle]
-# Definition
+# Definiție
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-22-23-Accessor-Methods-Join -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-**Аccessor methods** return a **new array** without **changing** the **original** one.
+**Metodele accesor** returnează o **matrice nouă** fără a o **schimba** pe cea **originală**.
 
 ## Join
 
-The `array.join()` method creates a string by **concatenating string representations of all elements**.
+Metoda `array.join()` creează un șir prin **concatenarea reprezentărilor șirului tuturor elementelor**.
 
-It receives a **string** argument, which is used as a **separator**.
+Acesta primește un argument **șir**, care este folosit ca un **separator**.
 
 ``` js live
 let arr = [10, 20, 30];
@@ -25,13 +23,11 @@ console.log(arr.join('@@'));
 [slide hideTitle]
 # IndexOf
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-24-Index-of-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Metoda `array.indexOf()` returnează **indexul la care este stocată valoarea dată**.
 
-The `array.indexOf()` method returns the **index at which the given value is stored**.
+Returnează **valoarea specială** \ -1 dacă elementul **nu este găsit**.
 
-It returns the **special value** \-1 if the element is **not found**. 
-
-This method is similar to the `List.indexOf` in Java.
+Această metodă este similară cu `List.indexOf` din Java.
 
 ``` js live
 let myArray = ['Peter','George','Mary'];
@@ -48,9 +44,7 @@ console.log(indexOfNick);
 [slide hideTitle]
 # Concat
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-25-Concat-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-The `array.concat()` method is used to **merge** two or more arrays **without** changing any of them.
+Metoda `.concat()` este utilizată pentru a **concatena** două sau mai multe matrici **fără a** modifica niciuna dintre ele.
 
 ``` js live
 const num1 = [1, 2, 3];
@@ -66,13 +60,11 @@ console.log(numbers);
 
 # Slice
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-27-Slice-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Metoda `array.slice()`**returnează** elementele **selectate** dintr-o matrice ca un **nou obiect matrice**.
 
-The `array.slice()` method **returns** the **selected elements** in an array as a **new array object**.
+Selectează elementele începând de la **indexul de start** dat până la **indexul final** fără a include ultimul element. 
 
-It selects the elements starting from the given **start index** to the **end index** without including the last element.  
-
-It is similar to the `List.subList; Stream.skil + limit` method in Java.
+Este similar cu metoda `List.subList; Stream.skil + limit` din Java.
 
 ``` js live
 let myArray = ['one', 'two', 'three', 'four', 'five'];
@@ -84,7 +76,7 @@ console.log(sliced);
 console.log(myArray.slice(2,4));
 ```
 
-This method can **receive** a **negative** number as an argument:
+Această metodă poate **primi** un număr **negativ** ca argument:
 
 ``` js live
 let myArray = ['one', 'two', 'three', 'four', 'five'];
@@ -93,19 +85,19 @@ console.log(myArray.slice(-2));
 console.log(myArray.slice(2, -1));
 ```
 
-In this example, when **-2 is passed** as an argument, the method takes the **last two** elements of the array.
+În acest exemplu, când **- 2 este trecut** ca argument, metoda ia **ultimele două** elemente ale tabloului.
 
 [/slide]
 
 [slide hideTitle]
-# Problem: Bigger Half
+# Problemă: Bigger Half
 
 [code-task title="Bigger Half" taskId="java-path-js-advanced-arrays-bigger-half" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function biggerHalf(input){
-  // Write your code here
+  // Scrieți codul aici
 }
 
 ```
@@ -121,23 +113,23 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-You are given an array of numbers. 
+Vi se oferă o serie de numere. 
 
-Write a JavaScript function that **sorts** the array in **ascending order** and returns a new array containing only the **second half** of the input. 
+Scrieți o funcție JavaScript care **sortează** matricea în **ordine crescătoare** și returnează o matrice nouă care conține doar **a doua jumătate** a intrării.
 
-If there is an odd number of elements in the input, always take the bigger half. 
+Dacă există un număr impar de elemente în intrare, luați întotdeauna jumătatea mai mare.
 
-For example, if the input array contains 4 elements, the new array should have 2 elements. 
+De exemplu, dacă tabloul de intrare conține 4 elemente, noul tablou ar trebui să aibă 2 elemente.
 
-If the input array has a length of 5, the result should have 3 elements. 
+Dacă matricea de intrare are o lungime de 5, rezultatul ar trebui să aibă 3 elemente.
 
-The **input** comes as **array of number elements**. 
+**Intrarea** vine ca **matrice de elemente numerice**.
 
-The **output** is the **return** value of the function and should be an **array of numbers**. 
+**Ieșirea** este valoarea **returnată** a funcției și ar trebui să fie o **matrice de numere**.
 
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |biggerHalf([ 4, 7, 2, 5 ]) | [ 5, 7 ] |
 |biggerHalf([ 3, 19, 14, 7, 2, 19, 6 ]) | [ 7, 14, 19, 19 ]  |
@@ -200,9 +192,7 @@ biggerHalf([ -1, -10, -4, -7 ])
 [slide hideTitle]
 # Includes
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-26-Includes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-The `array.includes()` method returns **true** if the given **value** is a **part of the array**.
+Metoda `array.includes()` returnează **adevărat** dacă **valoarea** dată **este o parte a matricei**.
 
 ``` js live
 let myArray = ['Peter','George','Mary'];
@@ -217,14 +207,14 @@ console.log(isJohnIncluded);
 [/slide]
 
 [slide hideTitle]
-# Problem: Piece of Pie
+# Problemă: Piece of Pie
 
 [code-task title="Piece of Pie" taskId="java-path-js-advanced-arrays-Piece-of-Pie" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function pieceOfPie(input, startSection, endSection){
-  // Write your code here
+  // Scrieți codul aici
 }
 
 ```
@@ -240,20 +230,20 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-Write a function that receives **three parameters** - an **array** of pie flavors as strings and two target flavors as **strings**. 
+Scrieți o funcție care primește **trei parametri** - o **matrice** de arome de plăcintă ca șiruri și două arome țintă ca **șiruri**.
 
-The result should be a new array - the section of the original array, starting at the first flavor parameter and ending at (including) the second flavor parameter. 
+Rezultatul ar trebui să fie o nouă matrice - secțiunea matricei originale, începând de la primul parametru de aromă și terminând la (inclusiv) al doilea parametru de aromă.
 
-The **input** comes as **three arguments**: 
+**Intrarea** vine ca **trei argumente**:
 
-- An **array of strings**, representing pie flavors 
+- Un **set de șiruri**, reprezentând arome de plăcintă
 
-- **Two more strings**, representing the start and end of the section, respectively 
+- **Încă două șiruri**, care reprezintă începutul și respectiv sfârșitul secțiunii
 
-The **output** is the **return** value of the function and should be an **array of strings**. 
+**Ieșirea** este valoarea **returnată** a funcției și ar trebui să fie o **matrice de șiruri**.
 
 ## Examples
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |pieceOfPie([ 'Pumpkin Pie', 'Key Lime Pie', 'Cherry Pie', 'Lemon Meringue Pie', 'Sugar Cream Pie' ], 'Key Lime Pie', 'Lemon Meringue Pie') | [ 'Key Lime Pie', 'Cherry Pie', 'Lemon Meringue Pie' ] |
 |pieceOfPie([ 'Apple Crisp', 'Mississippi Mud Pie', 'Pot Pie', 'Steak and Cheese Pie', 'Butter Chicken Pie', 'Smoked Fish Pie' ], 'Pot Pie', 'Smoked Fish Pie' ) | [ 'Pot Pie', 'Steak and Cheese Pie', 'Butter Chicken Pie', 'Smoked Fish Pie' ]  |

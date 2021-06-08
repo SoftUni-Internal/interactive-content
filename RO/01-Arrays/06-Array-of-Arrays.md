@@ -1,31 +1,29 @@
 
-# Nested Arrays
+# Matrice imbricate
 
 [slide hideTitle]
 
-# Nested Arrays in JavaScript
+# Matrice imbricate în JavaScript
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-38-39-Nested-Arrays-in-JS-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Matricele pe care le-am folosit până acum au avut doar **o singură coloană** de date.
 
-The arrays we have been using so far only had **one column** of data.
+Dar putem configura o matrice pentru a conține mai multe coloane, numită **matrice multidimensională**.
 
-But we can set up an array to hold more than one column, called a **multi-dimensional array** or a matrice.
+De exemplu, gândiți-vă la o **foaie de calcul** cu rânduri și coloane.
 
-As an example, think of a **spreadsheet** with rows and columns.
+Dacă aveți 6 rânduri și 5 coloane, atunci **foaia dvs. de calcul** poate conține 30 de numere, ceea ce este un exemplu clasic de **matrice**.
 
-If you have 6 rows and 5 columns, then your **spreadsheet** can hold 30 numbers, which is a classic example of a **matrix**.
-
-It might look like this:
+Ar putea arăta astfel:
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-1.png" /]
 
-There is also another type of **multi-dimensional arrays**, called a **jagged array**, where every row has a **different** number of elements:
+Există, de asemenea, un alt tip de **tablouri multi-dimensionale**, numite **matrice zimțate**, în care fiecare rând are un număr **diferit** de elemente:
 
 [image assetsSrc="java-js-adv-arrays-03.png" /]
 
-In this example, there is an array of four arrays (**jagged array**), and each row has a different number of elements.
+În acest exemplu, există o matrice de patru matrice (**matrice zimțată**) și fiecare rând are un număr diferit de elemente.
 
-The JavaScript representation of this example is:
+Reprezentarea JavaScript a acestui exemplu este:
 
 ```js live
 let arr = [
@@ -43,13 +41,11 @@ console.log(arr[2][0])
 
 [slide hideTitle]
 
-# Looping Through a Nested Array
+# Buclarea printr-o matrice imbricată
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-40-Looping-through-a-nested-array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Putem imprima elemente de matrice imbricate cu mai multe bucle.
 
-We can print elements of nested arrays with multiple loops.
-
-Take a look at the following example:
+Aruncați o privire la următorul exemplu:
 
 ```js live
 let arr = [[4, 5, 6],
@@ -64,24 +60,22 @@ function printRow(row){
 }
 ```
 
-The **matrix** is printed using a **forEach** loop, where an argument (current row) is passed to a function.
+**Matricea** este tipărită folosind o buclă **forEach**, unde un argument (rândul curent) este transmis unei funcții.
 
-In that function, another **forEach** is **used** to iterate through every **element** from the **row**, and print it to the **console**.
+În acea funcție, un alt **forEach** este **folosit** pentru a itera prin fiecare **element** din **rând** și pentru a-l imprima pe **consolă**.
 
 [/slide]
 
 [slide hideTitle]
 
-# Problem and Solution: Diagonal Sums
-
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-41-Problem-Diagonal-Sums-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Problemă: Diagonal Sums
 
 [code-task title="Diagonal Sums" taskId="java-path-js-advanced-arrays-Diagonal-Sums" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function diagonalSums(input){
-  // Write your code here
+  // Scrieți codul aici
 }
 
 ```
@@ -97,16 +91,16 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-Write a function that finds the sum of the two diagonals in a square matrix. 
+Scrieți o funcție care găsește suma celor două diagonale într-o matrice pătrată.
 
-The **input** comes as **array of arrays**, containing number elements (2D matrix of numbers). 
+**Intrarea** vine ca **matrice de matrice**, care conține elemente numerice (matrice 2D de numere).
 
-The **output** is printed to the console on a single line, separated by space. 
+**Ieșirea** este tipărită pe consolă pe o singură linie, separată de spațiu.
 
-First, print the sum of the main diagonal, then the sum of the secondary diagonal. 
+Mai întâi, tipăriți suma diagonalei principale, apoi suma diagonalei secundare.
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |diagonalSums([ [ 20, 40 ], [ 10, 60 ] ]) | 80 50  |
 |diagonalSums([ [ 3, 5, 17 ], [ -1, 7, 14 ], [ 1, -8, 89 ] ]) | 99 25   |

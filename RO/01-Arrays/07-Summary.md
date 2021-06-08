@@ -1,17 +1,15 @@
 [slide hideTitle]
-# Summary
+# Rezumat
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-44-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## În această lecție ați învățat:
 
-## In this lesson you learned:
-
-- Arrays are list-like objects
+- Matricele sunt obiecte asemănătoare listelor
 
 ```js
 let furits = ['Orange', 'Peach', 'Grapes']
 ```
 
-- Elements are accessed using their index number
+- Elementele sunt accesate folosind numărul lor de index
 
 ```js
 let furits = ['Orange', 'Peach', 'Grapes']
@@ -19,17 +17,17 @@ let furits = ['Orange', 'Peach', 'Grapes']
 console.log(fruits[0]) // Orange
 ```
 
-- Mutator methods - methods that change the original array
+- Metode mutatoare - metode care schimbă matricea originală
    - `array.pop()`, `array.push()`, `array.shift()`, `array.unshift()`, `array.Splice()`, `array.fill()`, `array.reverse()`, `array.sort()`
-- Accessor methods - methods that return a new array
+- Metode accesorii - metode care returnează o nouă matrice
   - `array.join()`, `array.IndexOf()`, `array.concat()`, `array.includes()`, `array.slice()`
-- Looping through arrays 
+- Iterarea prin matrice
 ```js
 let furits = ['Orange', 'Peach', 'Grapes']
 furits.forEach(fruit => { console.log(fruit); });
 
 ```
-- Nested arrays
+- Matrice imbricate
 ```js
 let arr = [
     [4, 6, 3, 0],
@@ -40,15 +38,15 @@ let arr = [
 
 ```
 
-## In the next lesson, you will learn:
+## În lecția următoare, veți învăța:
 
-- Objects
-  - object and Properties
-  - looping Through Objects
+- Obiecte
+  - obiect și proprietăți
+  - iterarea prin obiecte
 - JSON
-- Classes
-  - definition
+- Clase
+  - definiție
   - constructor
-  - fields
+  - câmpuri
 
 [/slide]

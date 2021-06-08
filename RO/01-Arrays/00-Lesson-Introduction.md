@@ -1,28 +1,26 @@
 
-# Lesson Introduction
+# Introducere
 
 [slide hideTitle]
 
-# Lesson Content
+# Conținutul lecției
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/EN/01-Arrays/02.JS-Advanced-Arrays-1-2-Introduction-Table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## În această lecție veți învăța:
 
-## In this lesson you will learn:
+**1. Matrice**
 
-**1. Arrays**
+- Definiție
 
-- Definition
+- Accesarea elementelor
 
-- Accessing elements
+- Proprietăți și metode
 
-- Properties and Methods
+**2. Matrice imbricate**
 
-**2. Nested Arrays**
+- Definiție
 
-- Definition
+- Buclarea prin matrice imbricate
 
-- Looping through nested arrays
-
-- Manipulating data
+- Manipularea datelor
 
 [/slide]

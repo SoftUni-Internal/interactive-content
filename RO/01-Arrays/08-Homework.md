@@ -1,15 +1,15 @@
 
-# Homework
+# Teme pentru acasă
 [slide hideTitle]
 
-# Problem: Last K Numbers Sequence 
+# Problemă: Last K Numbers Sequence 
 
 [code-task title="Last K Numbers Sequence" taskId="java-path-js-advanced-arrays-Last-K-Numbers-Sequence" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function sequence(n, k){
-  // Write your code here
+  // Scrie codul aici
 }
 
 ```
@@ -25,35 +25,35 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-You are given two integers **n** and **k**. 
+Vi se dau două numere întregi **n** și **k**.
 
-Write a JS function that generates and prints the following sequence of numbers: 
+Scrieți o funcție JS care generează și tipărește următoarea succesiune de numere:
 
-- The first number is 1 
+- Primul număr este 1
 
-- Every other number equals the sum of the previous **k** numbers 
+- Orice alt număr este egal cu suma numerelor **k** anterioare
 
-- The length of the sequence is **n** numbers 
+- Lungimea secvenței este de **n** numere
 
-The **input** comes as two **integers**. 
+**Intrarea** vine ca două **numere întregi**.
 
-The **output** is printed to the console on a single line, separated by spaces. 
+**Ieșirea** este tipărită pe consolă pe o singură linie, separată de spații.
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |sequence(6, 3) | 1 1 2 4 7 13 |
 |sequence(8, 2) | 1 1 2 3 5 8 13 21 |
 
-## Explanation 
+## Explicaţie 
 
-The 2nd element (1) is the sum of the three elements before it or all of them if they are less than three. 
+Al doilea element (1) este suma celor trei elemente dinaintea acestuia sau a tuturor, dacă acestea sunt mai mici de trei.
 
-The third element is the sum of the first two elements (1 and 1). 
+Al treilea element este suma primelor două elemente (1 și 1).
 
-The 4th element is the sum of 1, 1, and 2. 
+Al patrulea element este suma de 1, 1 și 2.
 
-The 5th element is the sum of the 2nd, 3rd, and 4th (1, 2, and 4) and so on. 
+Al 5-lea element este suma celui de-al 2-lea, al 3-lea și al 4-lea (1, 2 și 4) și așa mai departe.
 
 [/task-description]
 [code-io /]
@@ -121,14 +121,14 @@ sequence(9, 5)
 
 [slide hideTitle]
 
-# Problem: Print an Array with a Given Delimiter 
+# Problemă: Print an Array with a Given Delimiter 
 
 [code-task title="Print an Array with a Given Delimiter " taskId="java-path-js-advanced-arrays-Print-an-Array-with-a-Given-Delimiter" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function print(input){
-  // Write your code here
+  // Scrie codul aici
 }
 
 ```
@@ -144,16 +144,16 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-Write a function that **separates** the elements of an array with a given **delimiter**. 
+Scrieți o funcție care **separă** elementele unei matrice cu un **delimitator** dat.
 
-The **input** comes as an **array of strings**. 
+**Intrarea** vine ca o **matrice de șiruri**.
 
-The last element of the array is the delimiter. 
+Ultimul element al matricei este delimitatorul.
 
-The **output** is the same array, printed to the console, where each element is separated from the others by the given delimiter. 
+**Ieșirea** este aceeași matrice, tipărită pe consolă, unde fiecare element este separat de celelalte prin delimitatorul dat.
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |print([ 'One', 'Two', 'Three', 'Four', 'Five', '-' ]) | One-Two-Three-Four-Five |
 |print([ 'How about no?', 'I', 'will', 'not', 'do', 'it!', '_' ]) | How about no?_I_will_not_do_it! |
@@ -223,14 +223,14 @@ test.005.out.txt
 
 [slide hideTitle]
 
-# Problem: Print Every N-th Element of an Array 
+# Problemă: Print Every N-th Element of an Array 
 
 [code-task title="Print Every N-th Element of an Array" taskId="java-path-js-advanced-arrays-Print-Every-N-th-Element-of-an-Array" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function print(input){
-  // Write your code here
+  // Scrie codul aici
 }
 
 ```
@@ -246,40 +246,40 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-Write a function that **iterates** through an array with a **given step** and prints the values after each step. 
+Scrieți o funcție care va **itera** printr-o matrice cu un **pas dat** și tipărește valorile după fiecare pas.
 
-The **input** comes as an **array of strings**. 
+**Intrarea** vine ca o **matrice de șiruri**.
 
-The last element is **N - the iteration step**. 
+Ultimul element este **N - pasul de iterație**.
 
-The **output** should be every **N-th** element **starting from the first one**. 
+**Ieșirea** ar trebui să fie fiecare **al N-lea** element **începând cu primul**.
 
-If the step is "**3**", you need to print the **1-st**, the** 4-th**, the **7-th** and so on, until you reach the end of the array. 
+Dacă pasul este "**3**", trebuie să imprimați pe **primul**, **al-4-lea**, **al-7-lea** și așa mai departe, până când ajungeți la sfârșitul matricei.
 
-The elements should be printed each on a new line. 
+Elementele trebuie imprimate fiecare pe o nouă linie.
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |print([ '5', '20', '31', '4', '20', '2' ]) | 5 |
 ||31 |
 ||20  |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |print([ 'dsa', 'asd', 'test', 'tset', '2' ]) | dsa |
 ||test |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |print([ '1', '2', '3', '4', '5', '6' ]) | 1 |
 
-## Hints
-Use what you have seen from the **previous problem** to **extract the last element** of the array. 
+## Sugestii
+Folosiți ceea ce ați văzut din **problema anterioară** pentru a **extrage ultimul element** al tabloului.
 
-Create a **step** variable to hold the **given step** of the array. 
+Creați o variabilă **pas** pentru a menține **pasul dat** al matricei.
 
-Then, **print all the elements** with a **for** loop, **incrementing** the **loop variable** with the value of the step variable. 
+Apoi, **tipăriți toate elementele** cu o buclă **for**, **incrementând** variabila **buclă** cu valoarea variabilei pas.
 
 [/task-description]
 [code-io /]
@@ -385,14 +385,14 @@ of...
 
 [slide hideTitle]
 
-# Problem: Add and Remove Elements 
+# Problemă: Add and Remove Elements 
 
 [code-task title="Add and Remove Elements" taskId="java-path-js-advanced-arrays-Add-and-Remove-Elements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function andAndRemove(input){
-  // Write your code here
+  // Scrie codul aici
 }
 
 ```
@@ -408,29 +408,29 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-Write a JS function that **adds** and **removes** numbers to / from an array. 
+Scrieți o funcție JS care **adaugă** și **elimină** numerele din / dintr-o matrice.
 
-You will receive a command which can either be "**add**" or "**remove**".  
+Veți primi o comandă care poate fi "**add**" sau "**remove**".
 
-The **starting number** is 1 and is not stored in the array initially. 
+**Numărul inițial** este 1 și nu este stocat inițial în matrice.
 
-Each input command should **increase that number**, regardless of what it is.
+Fiecare comandă de intrare trebuie să **mărească acel număr**, indiferent de ce este.
 
-Upon receiving an "**add**" command you should add the current number to your array. 
+La primirea unei comenzi "**add**", ar trebui să adăugați numărul curent în matricea dvs.
 
-Upon receiving the "**remove**" command you should remove the last entered number, currently existent in the array. 
+După ce primiți comanda "**remove**", trebuie să eliminați ultimul număr introdus, existent în prezent în matrice.
 
-The **input** comes as an **array of strings**. 
+**Intrarea** vine ca o **matrice de șiruri**.
 
-Each element holds a **command**.  
+Fiecare element deține o **comandă**.
 
-The **output** is the array itself, with each element printed on a new line. 
+**Ieșirea** este matricea însăși, cu fiecare element imprimat pe o nouă linie.
 
-In case of an empty array, just print "**Empty**". 
+În cazul unei matrice goale, pur și simplu tipăriți "**Empty**".
 
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |andAndRemove([ 'add', 'add', 'add', 'add' ]) | 1 |
 ||2 |
@@ -438,13 +438,13 @@ In case of an empty array, just print "**Empty**".
 ||4  |
 
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |andAndRemove([ 'add', 'add', 'remove', 'add', 'add' ]) | 1 |
 ||4 |
 ||5 |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |andAndRemove([ 'remove', 'remove', 'remove' ]) | Empty|
 
@@ -530,14 +530,14 @@ andAndRemove([ 'add', 'remove', 'add', 'remove', 'add', 'remove', 'add', 'remove
 
 [slide hideTitle]
 
-# Problem: Rotate an Array  
+# Problemă: Rotate an Array  
 
 [code-task title="Rotate an Array" taskId="java-path-js-advanced-arrays-Rotate-an-Array" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function rotateAnArray(input){
-  // Write your code here
+  // Scrie codul aici
 }
 
 ```
@@ -553,27 +553,27 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-Write a JS function that rotates an array. 
+Scrieți o funcție JS care rotește o matrice.
 
-The array should be rotated **to the right side**, meaning that the last element should become the first upon rotation.  
+Matricea trebuie rotită **spre partea dreaptă**, ceea ce înseamnă că ultimul element ar trebui să devină primul la rotație.
 
-The **input** comes as an **array of strings**. 
+**Intrarea** vine ca o **matrice de șiruri**.
 
-The **last element** of the array is the number of rotations you need to perform. 
+**Ultimul element** al tabloului este numărul de rotații pe care trebuie să le efectuați.
 
-The **output** is the new array after the rotations. 
+**Ieșirea** este noua matrice după rotații.
 
-The elements should be printed on one line, separated by a **single space**. 
+Elementele trebuie să fie tipărite pe o singură linie, separate printr-un **spațiu unic**.
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Output** |
 | --- | --- |
 |rotateAnArray([ '1', '2', '3', '4', '2' ]) | 3 4 1 2  |
 |rotateAnArray([ 'Banana', 'Orange', 'Coconut', 'Apple', '15' ]) | Orange Coconut Apple Banana |
 
-## Hints 
+## Sugestii 
 
-Check if there is a **built-in function** for inserting elements **at the start** of the array. 
+Verificați dacă există o **funcție încorporată** pentru inserarea elementelor **la începutul** matricei.
 
 [/task-description]
 [code-io /]
@@ -640,14 +640,14 @@ rotateAnArray([ '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '2000000000' ]
 
 [slide hideTitle]
 
-# Problem: Extract Increasing Subsequence from Array 
+# Problemă: Extract Increasing Subsequence from Array 
 
 [code-task title="Extract Increasing Subsequence from Array" taskId="java-path-js-advanced-arrays-Extract-Increasing-Subsequence-from-Array" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function extractSubsequence(input){
-  // Write your code here
+  // Scrie codul aici
 }
 
 ```
@@ -663,22 +663,22 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-Write a function that extracts only those numbers that **form a non-decreasing subsequence**. 
+Scrieți o funcție care extrage numai acele numere care **formează o subsecvență nedescrescătoare**.
 
-In other words, you start from the **first element** and continue to **the end** of the **given array of numbers**. 
+Cu alte cuvinte, începeți de la **primul element** și continuați până la **sfârșitul**  **matricei de numere date**.
 
-If a number is **LESS THAN** the **current biggest** number, **ignore it**.
+Dacă un număr este **MAI MIC decât** **cel mai mare număr actual**, **ignorați-l**.
 
-Alternatively, if it is equal or higher than the **current biggest** one, you set it as the **new biggest number** and continue.   
+Alternativ, dacă este egal sau mai mare decât **cel mai mare** actual, îl setați ca **nou cel mai mare număr** și continuați.
 
-The **input** comes as an **array of numbers**. 
+**Intrarea** vine ca o **matrice de numere**.
 
-The **output** is the processed array after the filtration, which should be a non-decreasing subsequence. 
+**Ieșirea** este matricea procesată după filtrare, care ar trebui să fie o subsecvență care nu descrește.
 
-Each element should be printed on a new line. 
+Fiecare element trebuie să fie tipărit pe o nouă linie.
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |extractSubsequence([ 1, 3, 8, 4, 10, 12, 3, 2, 24 ]) |1 |
 ||3|
@@ -688,20 +688,20 @@ Each element should be printed on a new line.
 ||24|
 
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |extractSubsequence([ 1, 2, 3, 4 ]) |1 |
 ||2|
 ||3|
 ||4|
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |extractSubsequence([ 20, 3, 2, 15, 6, 1 ]) |20 |
 
-## Hints 
+## Sugestii 
 
-The `Array.reduce()` built-in function might help you a lot with this problem. 
+Funcția încorporată `Array.reduce ()` vă poate ajuta foarte mult cu această problemă.
 
 [/task-description]
 [code-io /]
@@ -808,14 +808,14 @@ extractSubsequence([ 0, -1, -2, -3, -4 ])
 
 [slide hideTitle]
 
-# Problem: Sort an Array by 2 Criteria  
+# Problemă: Sort an Array by 2 Criteria  
 
 [code-task title="Sort an Array by 2 Criteria" taskId="java-path-js-advanced-arrays-Sort-an-Array-by-2-Criteria" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function sort(input){
-  // Write your code here
+  // Scrie codul aici
 }
 
 ```
@@ -831,24 +831,24 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-Write a function that sorts a **given array of strings** by **length** in **ascending order** as **primary criteria** and by **alphabetical value** in ascending order as **secondary criteria**. 
+Scrieți o funcție care sortează o **matrice dată de șiruri** după **lungime** în **ordine crescătoare** ca **criterii primare** și după **valoare alfabetică** în ordine crescătoare ca **criterii secundare**.
 
-The comparison should be **case-insensitive**. 
+Comparația ar trebui să fie **diferențiată de majuscule**.
 
-The **input** comes as an **array of strings**. 
+**Intrarea** vine ca o **matrice de șiruri**.
 
-The **output** is the ordered array of strings where each element is printed on a new line. 
+**Ieșirea** este matricea ordonată de șiruri în care fiecare element este tipărit pe o nouă linie. 
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |sort([ 'alpha', 'beta', 'gamma' ]) |beta |
 ||alpha|
 ||gamma|
 
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |sort([ 'Isacc', 'Theodor', 'Jack', 'Harrison', 'George' ]) |Jack |
 ||Isacc |
@@ -857,25 +857,25 @@ The **output** is the ordered array of strings where each element is printed on 
 ||Harrison|
 
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |sort([ 'test', 'Deny', 'omen', 'Default' ]) |Deny |
 ||omen|
 ||test|
 ||Default|
 
-## Hints 
+## Sugestii 
 
-An array can be sorted by passing a comparing function to the `Array.sort()` method. 
+O matrice poate fi sortată prin trecerea unei funcții de comparare la metoda `Array.sort()`.
 
-Creating a comparing function with 2 criteria can be achieved by comparing by the **main criteria** first. 
+Crearea unei funcții de comparare cu 2 criterii poate fi realizată prin compararea mai întâi cu **criteriile principale**.
 
-If the 2 items are different (the result of the compare function is not 0), return the result. 
+Dacă cele 2 elemente sunt diferite (rezultatul funcției de comparare nu este 0), returnează rezultatul.
 
-If the two items are the same by the **main criteria** (the result of the compare function is 0), we need to compare by the **secondary criteria** and the result of that comparison is the result of the comparing function. 
+Dacă cele două elemente sunt aceleași după **criteriile principale** (rezultatul funcției de comparare este 0), trebuie să comparăm după **criteriile secundare** și rezultatul acestei comparații este rezultatul comparării funcţie.
 
-You can learn more about `Array.sort()` [here](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort).
+Puteți afla mai multe despre `Array.sort()` [aici](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort).
 
 [/task-description]
 [code-io /]
@@ -984,14 +984,14 @@ I swear it is!
 
 [slide hideTitle]
 
-# Problem: Magic Matrices   
+# Problemă: Magic Matrices   
 
 [code-task title="Magic Matrices" taskId="java-path-js-advanced-arrays-Magic-Matrices" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function magicMatrices(input){
-  // Write your code here
+  // Scrieti codul aici
 }
 
 ```
@@ -1007,18 +1007,18 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 
-Write a function that checks if a given matrix of numbers is **magical**. 
+Scrieți o funcție care verifică dacă o anumită matrice de numere este **magică**.
 
-A matrix is magical if the **sums of the cells** of every row and **every column** are **equal**.  
+O matrice este magică dacă **sumele celulelor** din fiecare rând și **fiecare coloană** sunt **egale**.
 
-The **input** comes as an **array of arrays**, containing numbers (number 2D matrix).
+**Intrarea** vine ca o **matrice de matrice**, care conține numere (matricea numărului 2D).
 
-The input numbers will **always be positive**. 
+Numerele de intrare **vor fi întotdeauna pozitive**.
 
-The **output** is a Boolean result indicating whether the matrix is magical or not. 
+**Ieșirea** este un rezultat boolean care indică dacă matricea este magică sau nu.
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 |magicMatrices([ [ 4, 5, 6 ], [ 6, 5, 4 ], [ 5, 5, 5 ] ]) |true |
 |magicMatrices([ [ 11, 32, 45 ], [ 21, 0, 1 ], [ 21, 1, 1 ] ])|false|
@@ -1097,14 +1097,14 @@ true
 
 [slide hideTitle]
 
-# Problem: Tic-Tac-Toe   
+# Problemă: Tic-Tac-Toe   
 
 [code-task title="Tic-Tac-Toe" taskId="java-path-js-advanced-arrays-Tic-Tac-Toe" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 
 ```
 function ticTacToe(input){
-  // Write your code here
+  // Scrie codul aici
 }
 
 ```
@@ -1119,64 +1119,64 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-# Description
-Create a tic-tac-toe console application. 
+# Descriere
+Creați o aplicație pentru consolă tic-tac-toe.
 
-You will receive an array of arrays. 
+Veți primi o serie de matrici.
 
-As you know, there are two players in this game, so the first element of the input will be first player's chosen coordinates. 
+După cum știți, există doi jucători în acest joc, deci primul element al intrării va fi coordonatele alese de primul jucător.
 
-The second element will be the second player's coordinates and so on. 
+Al doilea element va fi coordonatele celui de-al doilea jucător și așa mai departe.
 
-The initial state of the dashboard is:  
+Starea inițială a tabloului de bord este: 
 
 ```js
 [[false, false, false], 
 [false, false, false], 
 [false, false, false]] 
 ```
-The first player's mark is **X** and the second player's mark is **O**. 
+Marca primului jucător este **X**, iar marca celui de-al doilea jucător este **O**. 
 
-## Input 
+## Intrare 
 
-One parameter: 
+Un parametru:
 
-- An array - **the moves** that the players make 
+- O matrice - **mișcările** pe care le fac jucătorii
 
-## Output 
+## Ieșire
 
-- There are two players - X and O 
+- Există doi jucători - X și O
 
-- If a player tries to make their turn an on already taken place, they have to make a turn again, and you should print the following message: 
+- Dacă un jucător încearcă să facă rândul său să aibă loc deja, trebuie să facă din nou un rând și ar trebui să tipăriți următorul mesaj:
 
 "**This place is already taken. Please choose another!**" 
 
-- If there are no free spaces on the dashboard and nobody wins, the game should end, and you should print the following message: 
+- Dacă nu există spații libere pe tabloul de bord și nimeni nu câștigă, jocul ar trebui să se încheie și ar trebui să imprimați următorul mesaj:
 
 "**The game ended! Nobody wins :(**" 
 
-- If someone wins, you should print the following message and the **current state** of the **dashboard**: 
+- Dacă cineva câștigă, trebuie să imprimați următorul mesaj și **starea actuală** a **tabloului de bord**:
 
 "**Player** \{ **X/0** \} **wins**" 
 
-**Note**: When printing the state of the dashboard, the elements of each row of the dashboard should be separated by "**\t**" and each row should be on a new line.  
+**Notă**: la tipărirea stării tabloului de bord, elementele fiecărui rând al tabloului de bord trebuie separate de "**\ t**" și fiecare rând trebuie să fie pe o nouă linie.
 
  
 
-## Constraints 
+## Constrângeri
 
-The elements in the input array will always be enough to end the game.
+Elementele din matricea de intrare vor fi întotdeauna suficiente pentru a încheia jocul.
 
 
-## Examples One
-|**Input**|**Output**| 
+## Exemplul Unu
+|**Intrare**|**Ieșire**| 
 | --- | --- |
 |ticTacToe([ '0 1', '0 0', '0 2', '2 0', '1 0', '1 1', '1 2', '2 2', '2 1', '0 0' ]) |Player O wins!|
 ||O X	X |
 ||X	O	X|
 ||O	false	O |
 
-|**Input**|**Output**| 
+|**Intrare**|**Ieșire**| 
 | --- | --- |
 |ticTacToe([ '0 0', '0 0', '1 1', '0 1', '1 2', '0 2', '2 2', '1 2', '2 2', '2 1' ]) |This place is already taken. Please choose another! |
 ||Player X wins!  |
@@ -1185,7 +1185,7 @@ The elements in the input array will always be enough to end the game.
 ||false	false	false| 
 
 
-|**Input**|**Output**| 
+|**Intrare**|**Ieșire**| 
 | --- | --- |
 |ticTacToe([ '0 1', '0 0', '0 2', '2 0', '1 0', '1 2', '1 1', '2 1', '2 2', '0 0' ]) |The game ended! Nobody wins :(  |
 ||O	X	X  |
