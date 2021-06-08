@@ -38,7 +38,8 @@ Here is a step-by-step guide on how to create the schemas.
 
 [image assetsSrc="Diagram-Creation(3).png" /]
 
-**Result**
+## Result:
+
 [image assetsSrc="Diagram-Creation(4).png" /]
 
 [/slide]
