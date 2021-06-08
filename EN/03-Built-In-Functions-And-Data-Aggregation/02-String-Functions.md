@@ -30,7 +30,7 @@ oftuni.org
 The second way of using our `SUBSTRING()` is:
 
 ``` java
-SUBSTRING(String, Position, Length) # We pass in the index at which our result will start to the index at which it will finish
+SUBSTRING(String, Position, Length) # We pass in the index at which our result will start to the index at which it will finish.
 ```
 
 **Example**:
@@ -69,7 +69,7 @@ ouftun
 
 [slide hideTitle]
 
-# Problem with Solution: Find Book Titles
+# Problem with Solution: Find Book Titles - TODO: Add Tests
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/04.Built-In-Functions-And-Data-Aggregation-Lab.zip) **for this task.**
 
@@ -141,7 +141,7 @@ We can replace the word ***** with a different symbol or word.
 
 [slide hideTitle]
 
-# Problem with Solution: Replace Titles
+# Problem with Solution: Replace Titles - TODO: Add Tests
 
 Create an SQL query to find books, which titles **start with the word "The" and replace the word with 3 asterisks.**
 
@@ -379,7 +379,7 @@ SELECT INSERT('SoftuniTestString', 2, 4, ' insert ');
 **Output after executing:**
 
 ```
-'S insert niTestString'
+S insert niTestString
 ```
 [/slide]
 

@@ -3,7 +3,7 @@
 # The Aggregate Functions
 
 
-An **aggregate** function is used to performs calculations on multiple values then returning a single value.
+An **aggregate** function performs calculations on multiple values and then returns a single value.
 
 We have 5 main functions:
 
@@ -13,9 +13,9 @@ We have 5 main functions:
 - MIN()
 - AVG()
 
-This type of functions allows us to build **summarized** data information from our database.
+These functions allow us to build **summarized** data information from our database.
 
-**For this examples, we will use our soft_uni database.**
+**For these examples, we will use our soft_uni database.**
 
 Usually **aggregate** functions ignore **NULL** values.
 
@@ -49,9 +49,9 @@ After knowing this, let us take a look at the functions and their syntax:
 
 ## The COUNT() Function
 
-We use `COUNT()` function when we need to count values (**not nulls**) in one or more columns based on grouping criteria.
+We use the `COUNT()` function when we need to count values (**not nulls**) in one or more columns based on grouping criteria.
 
-When we use `COUNT()` we will ignore any employees with **NULL** salary.
+When using `COUNT()`, we ignore any employees with **NULL** salary.
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations.png" /]
 
@@ -59,7 +59,7 @@ Here is a simple example using our **soft_uni** database:
 
 ``` java
 SELECT e.`department_id`, 
-  COUNT(e.`salary`) AS 'Salary Count'
+ COUNT(e.`salary`) AS 'Salary Count'
 FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
@@ -129,8 +129,8 @@ The `MAX()` function will take the maximum value from a column.
 
 ``` java
 SELECT e.`department_id`, MAX(e.`salary`) AS 'MaxSalary'
-FROM `employees` AS e       
- GROUP BY e.`department_id`;           
+FROM `employees` AS e 
+ GROUP BY e.`department_id`; 
 ```
 
 **Output**:
@@ -159,7 +159,7 @@ The `MIN()` function will take the minimum value from a column.
 [image assetsSrc="Built-in-Functions-Data-Aggregations(3).png" /]
 
 ``` java
-SELECT e.`department_id`,  MIN(e.`salary`) AS 'MinSalary'
+SELECT e.`department_id`, MIN(e.`salary`) AS 'MinSalary'
 FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
@@ -190,7 +190,7 @@ The `AVG()` function will calculate the average value in a column.
 
 ``` java
 SELECT e.`department_id`, 
-  AVG(e.`salary`) AS 'AvgSalary'
+ AVG(e.`salary`) AS 'AvgSalary'
 FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
@@ -211,3 +211,4 @@ GROUP BY e.`department_id`;
 
 
 [/slide]
+

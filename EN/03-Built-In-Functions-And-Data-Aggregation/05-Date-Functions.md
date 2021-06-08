@@ -61,13 +61,7 @@ Date
 
 [slide hideTitle]
 
-# Problem with Solution: Days Lived
-[code-task title="Days Lived" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-days-lived" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-
-[/code-editor]
-[task-description]
-# Description
+# Problem with Solution: Days Lived - TODO: Add Tests
 
 Create an SQL query to calculate the days that the authors have lived. 
 
@@ -75,7 +69,7 @@ The **NULL** values mean that the author is still alive.
 
 **Run your query statements & submit the output from the queries as plain text.**
 
-## Example:
+## Example
 
 | Full Name | Days Lived |
 | --- | --- |
@@ -84,91 +78,4 @@ The **NULL** values mean that the author is still alive.
 | Danielle Schuelein-Steel | NULL |
 | .... | .... |
 
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-Agatha Christie
-31164
-William Shakespeare
-18990
-Danielle Schuelein-Steel
-
-Joanne Rowling
-
-Lev Tolstoy
-30021
-Paulo Souza
-
-Stephen King
-
-John Tolkien
-29827
-Erika Mitchell
-[/input]
-[output]
-Agatha Christie
-31164
-William Shakespeare
-18990
-Danielle Schuelein-Steel
-
-Joanne Rowling
-
-Lev Tolstoy
-30021
-Paulo Souza
-
-Stephen King
-
-John Tolkien
-29827
-Erika Mitchell
-[/output]
-[/test]
-[test]
-[input]
-Agatha Christie
-31164
-William Shakespeare
-18990
-Danielle Schuelein-Steel 
-
-Joanne Rowling
-
-Lev Tolstoy
-30021
-Paulo Souza
-
-Stephen King
-
-John Tolkien
-29827
-Erika Mitchell
-[/input]
-[output]
-Agatha Christie
-31164
-William Shakespeare
-18990
-Danielle Schuelein-Steel 
-
-Joanne Rowling
-
-Lev Tolstoy
-30021
-Paulo Souza
-
-Stephen King
-
-John Tolkien
-29827
-Erika Mitchell
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]
