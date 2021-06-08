@@ -361,7 +361,7 @@ High
 
 [slide hideTitle]
 # Problem: Define Function
-[code-task title="Define Function" taskId="java-db-and-mysql-database-programmability-salary-level-function" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Define Function" taskId="java-db-and-mysql-database-programmability-define-function" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;
