@@ -11,9 +11,9 @@ The **foreign key** is an **identifier** of a record located in another table (u
 By using relationships, we avoid repeating data in the database.
 
 Relationships have multiplicity:
-    - **One-to-many** - e.g. mountain/peaks
-    - **Many-to-many** - e.g. students/courses
-    - **One-to-one** - e.g. driver/driver licence
+- **One-to-many** - e.g. mountain/peaks
+- **Many-to-many** - e.g. students/courses
+- **One-to-one** - e.g. driver/driver licence
 
 [/slide]
 
