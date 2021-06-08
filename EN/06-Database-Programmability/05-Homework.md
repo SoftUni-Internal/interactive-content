@@ -6,7 +6,7 @@
 
 [slide hideTitle]
 # Problem: Employees with Salary Above 35000
-[code-task title="Employees with Salary Above 35000" taskId="java-db-and-mysql-database-programmability-employees0with-salary-above-35000" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employees with Salary Above 35000" taskId="java-db-and-mysql-database-programmability-employees-with-salary-above-35000" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 
 [code-editor language=java]
 [/code-editor]
@@ -138,7 +138,7 @@ Kahn
 
 [slide hideTitle]
 # Problem: Employees with а Salary Above Specified
-[code-task title="Employees with а Salary Above Specified" taskId="java-db-and-mysql-database-programmability-employees-with-salary-above-35000" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Employees with а Salary Above Specified" taskId="java-db-and-mysql-database-programmability-employees-with-а-salary-above-specified" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 
 [code-editor language=java]
 [/code-editor]
