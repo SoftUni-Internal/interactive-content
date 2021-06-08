@@ -5,6 +5,8 @@
 
 # Adăugarea elementelor
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-12-14-16-Mutator-Methods-Push-Unshift-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Metodele** utilizate pentru modificarea matricelor în JavaScipt sunt similare cu cele din **fluxul Java**.
 
 Când se aplică oricare dintre următoarele **metode**, acesta va **schimba** (modifica) matricea originală.
@@ -48,7 +50,7 @@ console.log(nums);
 [slide hideTitle]
 # Problemă cu Soluţie: Negative or Positive Numbers 
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-12-problem-and-solution-negative-posivite-numbers-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05. JS-Fundamentals-Arrays-Advanced-12--negative-posivite-numbers-Solution-ONLY-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Negative or Positive Numbers" taskId="java-path-js-advanced-arrays-Negative-or-Positive-Numbers"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -202,6 +204,8 @@ negativePositive([\-2, 3, 0, 5, \-6, 0, 8])
 
 # Eliminarea Elementelor
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-13-15-Pop-Shift-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## Pop
 
 Metoda `array.pop()` **elimină** și **returnează** ultimul element dintr-o matrice.
@@ -247,7 +251,7 @@ console.log(nums);
 [slide hideTitle]
 # Problemă cu Soluţie: Sum First Last
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-problem-1-solution-sum-first-last-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/RO/04.JS-Fundamentals-Arrays-Advanced/05.JS-Fundamentals-Arrays-Advanced-problem-1-solution-sum-first-last-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum First Last" taskId="java-path-js-advanced-arrays-Sum-First-Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -350,6 +354,8 @@ sumFirstLast(['5', '10'])
 
 # Splice
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-17-Splice-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Metoda `array.splice()`**modifică** conținutul unei matrice prin **ștergerea**, **adăugarea** sau **înlocuirea** elementelor la un anumit index.
 
 Este similar cu metodele `remove(int index)` și  `ArrayList.addAll()`din Java, dar cu opțiunea suplimentară de **eliminare a mai multor elemente**.
@@ -386,6 +392,8 @@ Când **ștergeți** elemente, nu este **necesar** să treceți al treilea argum
 
 # Fill
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-18-Fill-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 `array.fill()`  umple toate **elementele** unei matrice de la un **start** index la un **end** index cu o valoare statică.
 
 În Java, **nu există o** metodă similară.
@@ -409,6 +417,8 @@ console.log(fruits.fill('blueberry'));
 
 # Reverse
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-19-Reverse-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Metoda `array.reverse()` inversează o matrice, unde **primul** element de matrice devine **ultimul**, iar **ultimul** element de matrice devine **primul**.
 
 În Java, **nu există o** metodă similară.
@@ -423,6 +433,8 @@ console.log(arr);
 
 [slide hideTitle]
 # Sort
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-19-Reverse-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `array.sort()` **sortează elementele** unei matrice.
 
@@ -444,6 +456,14 @@ names.sort();
 
 console.log(names); 
 ```
+
+[/slide]
+
+[slide hideTitle]
+
+# Sortarea numerelor
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-21-Sorting-Numbers-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cu toate acestea, dacă avem o matrice care conține numere, rezultatul va fi **neașteptat și incorect**.
 

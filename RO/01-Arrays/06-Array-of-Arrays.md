@@ -5,6 +5,8 @@
 
 # Matrice imbricate în JavaScript
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-38-39-Nested-Arrays-in-JS-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Matricele pe care le-am folosit până acum au avut doar **o singură coloană** de date.
 
 Dar putem configura o matrice pentru a conține mai multe coloane, numită **matrice multidimensională**.
@@ -43,6 +45,8 @@ console.log(arr[2][0])
 
 # Buclarea printr-o matrice imbricată
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-40-Looping-through-a-nested-array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Putem imprima elemente de matrice imbricate cu mai multe bucle.
 
 Aruncați o privire la următorul exemplu:
@@ -68,7 +72,9 @@ function printRow(row){
 
 [slide hideTitle]
 
-# Problemă: Diagonal Sums
+# Problemă cu soluțue: Diagonal Sums
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-41-Problem-Diagonal-Sums-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Diagonal Sums" taskId="java-path-js-advanced-arrays-Diagonal-Sums" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]

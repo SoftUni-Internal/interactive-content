@@ -5,6 +5,8 @@
 
 # Accesarea elementelor matricei după index
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-8-9-10-Accessing-array-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 În JavaScript, elementele dintr-o matrice sunt accesate prin **indecșii** lor:
 
 ```js live
@@ -50,6 +52,8 @@ O notație cu punct cu numere **nu poate fi** utilizată pentru a recupera eleme
 [slide hideTitle]
 
 # Operatorul Rest
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-11-REST-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Operatorul rest ne permite să **folosim** o cantitate nedeterminată de matrice sau obiecte.
 

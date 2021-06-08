@@ -4,6 +4,8 @@
 [slide hideTitle]
 # Definiție
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-22-23-Accessor-Methods-Join--,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Metodele accesor** returnează o **matrice nouă** fără a o **schimba** pe cea **originală**.
 
 ## Join
@@ -22,6 +24,8 @@ console.log(arr.join('@@'));
 
 [slide hideTitle]
 # IndexOf
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-24-Index-of-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `array.indexOf()` returnează **indexul la care este stocată valoarea dată**.
 
@@ -44,6 +48,8 @@ console.log(indexOfNick);
 [slide hideTitle]
 # Concat
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-25-Concat-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Metoda `.concat()` este utilizată pentru a **concatena** două sau mai multe matrici **fără a** modifica niciuna dintre ele.
 
 ``` js live
@@ -59,6 +65,8 @@ console.log(numbers);
 [slide hideTitle]
 
 # Slice
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-27-Slice-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `array.slice()`**returnează** elementele **selectate** dintr-o matrice ca un **nou obiect matrice**.
 
@@ -191,6 +199,8 @@ biggerHalf([ -1, -10, -4, -7 ])
 
 [slide hideTitle]
 # Includes
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-26-Includes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `array.includes()` returnează **adevărat** dacă **valoarea** dată **este o parte a matricei**.
 

@@ -3,6 +3,8 @@
 [slide hideTitle]
 # ForEach
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-28-29-Iteration-Methods-For-each-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Metoda `array.forEach()` **execută** o funcție furnizată **o dată** pentru fiecare element de matrice.
 
 Este similar cu metoda `Stream.forEach()` din Java.
@@ -43,6 +45,8 @@ Odată executat, **va trece prin întreaga matrice** și, dacă este foarte mare
 [slide hideTitle]
 # Some
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-32-Some-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Metoda `array.some()` verifică dacă cel puțin **un element din matrice** îndeplinește **cerințele** stabilite de funcția **dată** (**predicat**) și returnează o valoare booleană .
 
 Este similar cu metoda `Stream.anyMatch()` din Java.
@@ -64,6 +68,8 @@ console.log(array.some(isEven));
 [slide hideTitle]
 # Find
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-31-Find-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 `array.find()` returnează **primul element** din matricea care **îndeplinește** condiția furnizată sau nedefinit dacă nu există.
 
 Iată un exemplu:
@@ -82,6 +88,8 @@ console.log(found);
 [slide hideTitle]
 # Filter
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-30-Filter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Metoda `array.filter()` returnează o nouă matrice numai cu elemente, care **satisfac** o condiție dată fără **schimbarea** originalului.
 
 Este similar cu metoda `Stream.filter()` din Java.
@@ -98,6 +106,8 @@ console.log(filterNumbers);
 
 [slide hideTitle]
 # Map
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-33-Map-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `array.map()` creează o **matrice nouă** cu **rezultatele** apelării unei funcții furnizate pe **fiecare element** din matricea apelantă.
 
@@ -129,7 +139,9 @@ Puteți citi mai multe despre funcția "map" în matematică aici [here](https:/
 [/slide]
 
 [slide hideTitle]
-# Problemă: Process Odd Numbers
+# Problemă cu soluțue: Process Odd Numbers
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-37-Problem-Process-Odd-Numbers-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Process Odd Numbers" taskId="java-path-js-advanced-arrays-Process-Odd-Numbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -207,6 +219,8 @@ processOddNumbers([ 3, 0, 10, 4, 7, 3 ])
 
 [slide hideTitle]
 # Reduce
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-34-35-36-Reduce-method-Reducer-Function-and-Examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `array.reduce()` **execută** o funcție de reducere pe **fiecare element** al tabloului, rezultând o **valoare unică de ieșire**.
 

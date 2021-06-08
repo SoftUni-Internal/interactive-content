@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Ce este o matrice?
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-3-4-Working-with-arrays-of-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Ați aflat deja despre **diferitele** tipuri de colecții, cum ar fi **matrice**, **liste**, **stive**, **cozi** și cum să **le modificați**  folosind metode din **fluxurile Java**.
 
 În acest curs, veți afla despre **cele mai importante două structuri de date** din JavaScript:
@@ -42,6 +44,8 @@ const numbers = [10, 20, 30, 40, 50];
 
 [slide hideTitle]
 # Specificații ale matricelor JavaScript
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-5-What-is-an-array-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În Java, când o matrice este **inițializată**, trebuie specificate **tipul său de date** și **lungimea**.
 
@@ -99,6 +103,8 @@ console.log(`The new element on index 1 is: ${elements[1]}`);
 [slide hideTitle]
 # Matrice de diferite tipuri
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-6-Arrays-of-different-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Matricele din JavaScript pot conține **diferite** tipuri de date:
 
 Aceasta este o matrice de **numere**:
@@ -119,6 +125,8 @@ let mixedArr = [20, new Date(), 'hello', {x:5, y:8}];
 
 [slide hideTitle]
 # Indexarea matricelor
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-7-Array-Indexation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Setarea** sau **accesarea** elementelor cu o notație cu **non-întregi** și **paranteză** (sau notație punct) **nu va funcționa**.
 
