@@ -20,9 +20,10 @@ Here is the table of **supported arithmetic operators:**
 
 Let us take a look at some **Math** functions:
 
-- `PI()` - Returns the PI value. It has a 15 digit precision.
+- `PI()` - returns the PI value
+    * it has a 15 digit precision
 
-- `ABS()` - Returns the absolute value of an number.
+- `ABS()` - returns the absolute value of an number
 
 ``` java
 SELECT ABS(-243.5);

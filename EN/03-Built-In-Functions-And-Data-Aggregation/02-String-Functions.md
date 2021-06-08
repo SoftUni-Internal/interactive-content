@@ -15,13 +15,13 @@ The `SUBSTRING()` function allows us to extract parts of a string.
 SUBSTRING(String, Position) # Here, we select our string and the position from which we will take the substring.
 ```
 
-**For example:**
+### For example:
 
 ``` java
 SELECT SUBSTRING('softuni.org', 2);
 ```
 
-**The corresponding output is**:
+### The corresponding output is:
 
 ```
 oftuni.org
@@ -108,13 +108,13 @@ REPLACE(String, Pattern, Replacement) # Where "String" is our field from the tab
                                       # "Replacement" is our replacement string 
 ```
 
-**Example:**
+### Example
 
 ``` java
 SELECT REPLACE('aaa.softuni.org','a','w'); # In this example, "a" will be replaced with "w"
 ```
 
-**Output**:
+### Output
 
 ```
 www.softuni.org
@@ -130,7 +130,7 @@ SELECT REPLACE('We can replace the word blood with a different symbol or word.',
 # And finally, we pass in the replacement symbols or characters
 ```
 
-**The output is**:
+## The output is:
 
 ```
 We can replace the word ***** with a different symbol or word.

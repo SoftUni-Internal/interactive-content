@@ -66,8 +66,10 @@ This means that when a **mountain gets deleted from the database, all of his pea
 # CASCADE UPDATE
 
 **Cascade Update** is used when the primary key is NOT identity(not **auto-incremented**), and therefore, it is changeable.
-It is best to use it when you have the **UNIQUE** constraints.
-**Do not use** it when the primary key is **identity**(auto-increment).
+
+It is best to use it when you have **UNIQUE** constraints.
+
+**Do not use** it when the primary key is **identity** (auto-increment).
 
 **Example:**
 
