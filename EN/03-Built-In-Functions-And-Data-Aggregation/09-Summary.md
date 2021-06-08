@@ -66,10 +66,7 @@ HAVING 'TotalSalary' < 25000;
     * **One-to-one**
   
 - How to **design** a database
-  
 - What **JOIN statements** are
-  
 - How to use **cascade** operations
   
-
 [/slide]

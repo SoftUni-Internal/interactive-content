@@ -2,9 +2,9 @@
 
 # Relational Schema
 
-After finishing with creating the database and its entities, we can view them and their relations using a tool called **E/R Diagram**.
+After we finish creating the database and its entities, we can view them and their relations using a tool named **E/R Diagram**.
 
-This tool is integrated into MySQL Workbench and it creates a **Relational schema** of all the entities in the database. 
+Integrated into MySQL Workbench, it creates a **Relational schema** of all the entities in the database. 
 
 The relational schemas describe the structure of our database.
 
@@ -12,11 +12,11 @@ The relational schemas describe the structure of our database.
 
 - The schemas of all tables
 
-- The relations between tables.
+- The relations between tables
 
-- Any other database object (e.g. constraints)
+- Any other database object (e. g. - constraints)
 
-- It contains only **metadata**, no entity records.
+- It contains only **metadata**, no entity records
 
 [/slide]
 
@@ -24,7 +24,7 @@ The relational schemas describe the structure of our database.
 
 # E/R Schema
 
-The schemas are meant to display graphicly the entities and their relations and nothing more than that.
+The schemas have a single purpose -  graphicly displaying the entities and their relations.
 
 Here is a step-by-step guide on how to create the schemas. 
 
@@ -38,7 +38,9 @@ Here is a step-by-step guide on how to create the schemas.
 
 [image assetsSrc="Diagram-Creation(3).png" /]
 
-**Result**
+## Result:
+
 [image assetsSrc="Diagram-Creation(4).png" /]
 
 [/slide]
+

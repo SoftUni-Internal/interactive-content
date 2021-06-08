@@ -3,7 +3,14 @@
 
 # In this lesson you learned:
 
-- Designing databases
+- Designing databases is done in six steps:
+    * identificatiion of entities
+    * defining table columns
+    * defining primary keys
+    * modeling relationships
+    * defining constraints
+    * filling test data
+  
 - Reading specifications and finding entities, their characteristics and relations
 - Types of relationships:
     - **One-to-Many**
@@ -32,8 +39,8 @@
 
 # In the next lesson you will learn:
 
-- Joins and gathering data from multiple tables
-- Subqueries, query manipulation on multiple levels
-- Clustered and Non-Clustered Indices
+- **Joins** and gathering data from multiple tables
+- **Subqueries**, query manipulation on multiple levels
+- Clustered and Non-Clustered **Indices**
 
 [/slide]

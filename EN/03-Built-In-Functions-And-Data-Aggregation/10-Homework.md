@@ -1,12 +1,12 @@
+# Homework
+
 [slide hideTitle]
 
-# Homework
+## Part 1 - Queries From SoftUni Database
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/04.Built-In-Functions-And-Data-Aggregation-Exercise.zip) **for this homework.**
 
 *You will need the databases from "built-in-functions-data-aggregation" for the first 16 problems and the "built-in-functions-data-aggregation" resources for the rest of the problems.*
-
-## Part 1 - Queries From SoftUni Database
 
 [/slide]
 
