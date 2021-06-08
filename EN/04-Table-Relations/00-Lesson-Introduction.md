@@ -6,7 +6,6 @@
 
 ## In this lesson you will learn:
 
-
 **1. Database Design**
 
 - Design databases
@@ -23,17 +22,16 @@
 
 - Using foreign keys to join tables
 
-
 **4. Cascade Operations**
 
 - What happens if we want to do an operation on an entity connected to other tables
 
 - Cascading operations
 
-**5. Relationship Schema**
+**5. Relational Schema**
 
-- What is **Relationship Schema**
+- What a **relational Schema** is
 
-- Creating a relationship schema for the database
+- Creating a relational schema for the database
 
 [/slide]

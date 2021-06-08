@@ -49,7 +49,7 @@ FROM `employees` AS e                    // titles and the number of employees a
 GROUP BY e.`job_title`;
 ```
 
-- **Having** summarises records, returned by the **GROUP BY** clause
+- The **HAVING** clause summarises records, returned by **GROUP BY**
 ``` java
 SELECT e.`department_id`,
 SUM(e.salary) AS 'TotalSalary'
