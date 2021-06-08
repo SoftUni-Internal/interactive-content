@@ -2,18 +2,21 @@
 
 # Stored Procedures
 
-Stored procedures, also refered to as just "**Procedure**", is a custom logic that is removed from the application server and set to the database server.
+Stored procedures, also referred to as just "**Procedure**", is a **custom logic** that is removed from the **application server** and set to the **database server**.
 
-Procedures are a useful tool that bring many benefits to our applications.
-- The main reason behind that is because they are reducing the network traffic
-- It improves the security of the database server
-- You can run them on any platform that runs MySQL, which makes them portable
-- It creates a component from the data access routines, separating it from the business logic
-- You can access procedures through different programs and APIs
+A stored procedure **can accept parameters** as well as is able to **set up variables**.
 
-When to use **procedures**: 
+Procedures are a useful tool that brings many benefits to our applications.
 
-If you have repatative task like looping, multiple statements and no user interaction do it with a single call of a stored procedure or the database server.
+The main reason behind that is **because they are reducing the network traffic** and improves the **security of the database server**.
+
+We can run procedures on any **platform that runs MySQL**, which makes them portable.
+
+Also we can creates a **component from the data access routines**, separating it from the business logic.
+
+Procedures can be **accessed through different programs** and APIs
+
+Procedures can be used when there is a **repetitive task like looping**, **multiple statements**, and **no user interaction do** it with a single call of a stored procedure or the database server.
 
 [/slide]
 
@@ -21,7 +24,7 @@ If you have repatative task like looping, multiple statements and no user intera
 
 # Creating Stored Procedure
 
-Now let's see how you can create one: 
+Now let us see how we can create one: 
 
 ```java
 DELIMITER $$
@@ -68,7 +71,7 @@ CALL usp_select_employees_by_seniority(15);
 
 # Returning Values Using Output Parameters
 
-You can also return values with a stored procedure.
+We can also return values with a stored procedure.
 
 ```java
 CREATE PROCEDURE usp_add_numbers
