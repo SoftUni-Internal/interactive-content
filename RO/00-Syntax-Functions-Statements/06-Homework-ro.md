@@ -1,6 +1,6 @@
-# Homework
+# Teme pentru acasă
 [slide hideTitle]
-# Problem: Math Operations
+# Problemă: Math Operations
 [code-task title="Math Operations" taskId="js-syntax-functions-statements-mathops" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -20,40 +20,40 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
-Write a JS function that receives **two** **numbers** and **a string** as input.
+## Descriere
+Scrieți o funcție JS care primește **două** **numere** și **un șir** ca intrare.
 
-The string may be one of the following: '**+**', '**-**', '**\***', '**/**', '**%**', '**\*\***'.
+Șirul poate fi unul dintre următoarele: '**+**', '**-**', '**\***', '**/**', '**%**', '**\*\***'.
 
-Print the result of the mathematical **operation** between **both numbers** and the **operator** you receive as a string to the console.
+Imprimați rezultatul operației **matematice** între **ambele numere** și **operatorul** pe care îl primiți ca un șir către consolă.
 
-The **input** comes as **two numbers** and **a string argument** passed to your function.
+**Intrarea** vine ca **două numere** și **un argument șir** transmis funcției dvs.
 
-The **output** should be printed to the console.
+**Ieșirea** ar trebui tipărită pe consolă.
 
 
 
-## Examples
-| **Input** | **Output** |
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | calculate(5, 6, '+') | 11 |
 | calculate(3, 5.5, '*') | 16.5 |
 
 
-## Hints
+## Sfaturi
 
-Write a function that receives **three** arguments:
+Scrieți o funcție care primește **trei** argumente:
 
 [image assetsSrc="syntax-homework-01.png" /]
 
-Declare a variable named **result** that will keep your mathematical result.
+Declarați o variabilă numită **result** care va păstra rezultatul matematic.
 
-Use a **switch** statement to take the string from your input and based on it, perform the mathematical operation between the two numbers.
+Folosiți o instrucțiune **switch** pentru a lua șirul de la intrare și pe baza acestuia, efectuați operația matematică dintre cele două numere.
 
-[image assetsSrc="syntax-homework-02.png" /]
+[image assetsSrc = "syntax-homework-02.png" /]
 
 
-Print the result to the console.
+Imprimați rezultatul pe consolă.
 
 [image assetsSrc="syntax-homework-03.png" /]
 
@@ -131,7 +131,7 @@ calculate(11, 2, '**')
 
 
 [slide hideTitle]
-# Problem: Sum of Numbers N...M
+# Problemă: Sum of Numbers N...M
 [code-task title="Sum of Numbers N...M" taskId="js-syntax-functions-statements-sumofnumsnm" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -151,40 +151,39 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
+## Descriere
 
-Write a function that receives two numbers **n** and **m** as input and **prints the sum** of all numbers from **n** to **m**.
+Scrieți o funcție care primește două numere **n** și **m** ca intrare și **tipărește suma** tuturor numerelor de la **n** la **m**.
 
-The **input** comes as **two string elements** that need to be **parsed** to numbers.
+**Intrarea** vine ca **două elemente de șir** care trebuie **parsate** la numere.
 
-The **output** should **return** the sum.
-
-
+**Ieșirea** ar trebui **să returneze** suma.
 
 
-## Examples
-| **Input** | **Output** |
+
+## Exemple
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | sum('1', '5') | 15 |
 | sum('-8', '20') | 174 |
 
 
-## Hints
+## Sfaturi
 
-Write a function that receives two string arguments and parse them into numbers. Use `Number(string)` function or just put the '**+**' sign before the string. 
+Scrieți o funcție care primește două argumente șir și parasți-le în numere. Utilizați funcția `Number(string)` sau pur și simpu puneți semnul '**+**' înainte de șir.
 
 
 [image assetsSrc="syntax-homework-04.png" /]
 
 [image assetsSrc="syntax-homework-05.png" /]
 
-Declare a variable named **result** that will keep the mathematical results.
+Declarați o variabilă numită **result** care va păstra rezultatul matematic.
 
-Write a **for** **loop** from **num1** to **num2** and for every turn of the cycle, until it iscompleted, add the current value.
+Scrieți **o buclă** **for** de la **num1** până la **num2** și pentru fiecare pas al ciclului, până când este finalizat, adăugați valoarea curentă.
 
 [image assetsSrc="syntax-homework-06.png" /]
 
-Finally, return the result.
+La final, returnați rezultatul
 
 [image assetsSrc="syntax-homework-07.png" /]
 
@@ -252,7 +251,7 @@ sum('0.5', '0.5')
 [/slide]
 
 [slide hideTitle]
-# Problem: Fruit
+# Problemă: Fruit
 [code-task title="Fruit" taskId="js-syntax-functions-statements-fruit" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -272,25 +271,24 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
+## Descriere
 
-Write a function that calculates how much money you need to buy fruits. You will receive a **string** representing the type of fruits you want to buy, **a number** for their weight in grams, and another **number** for the price per kilogram.
+Scrieți o funcție care calculează câți bani aveți nevoie pentru a cumpăra fructe. Veți primi un **șir** care reprezintă tipul de fructe pe care doriți să îl cumpărați, **un număr** pentru greutatea lor în grame și un alt **număr** pentru prețul pe kilogram.
 
-Print the following text to the console: 
+Imprimați următorul text pe consolă:
 
 "**I need $**\{**money**\} **to buy** \{**weight**\} **kilograms of** \{**fruit**\}."
 
-Print the weight and the money **rounded** to two decimal places.
+Imprimați greutatea și banii **rotunjiți** la două zecimale.
 
-The **input** comes as **three arguments** passed to your function.
+**Intrarea** vine ca **trei argumente** transmise funcției dvs.
 
-The **output** should be printed on the console.
+**Ieșirea** ar trebui tipărită pe consolă.
 
 
+## Exemple
 
-## Examples
-
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | calculateCost('oranges', 2500, 1.80) | I need $4.50 to buy 2.50 kilograms of oranges. |
 | calculateCost('apples', 1563, 2.35) | I need $3.67 to buy 1.56 kilograms of apples. |
@@ -361,7 +359,7 @@ I need $0.05 to buy 0.01 kilograms of ppp.
 
 
 [slide hideTitle]
-# Problem: Greatest Common Divisor - GCD
+# Problemă: Greatest Common Divisor - GCD
 [code-task title="Greatest Common Divisor - GCD" taskId="js-syntax-functions-statements-gcd" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -382,18 +380,17 @@ function adapter(input, code) {
 [/code-adapter]
 
 [task-description]
-## Description
+## Descriere
 
-Write a function that receives **two** **positive** **numbers** as input and finds the greatest common divisor.
+Scrieți o funcție care primește **două** **pozitive** **numere** ca intrare și găsește cel mai mare divizor comun.
 
-The **input** comes **as two positive integer numbers**.
+**Intrarea** vine **ca două numere întregi pozitive**.
 
-The **output** should be printed to the console.
+**Ieșirea** ar trebui tipărită pe consolă.
 
+## Exemple
 
-## Examples
-
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | calculateGCD(15, 5) | 5 |
 | calculateGCD(2154, 458) | 2 |
@@ -479,7 +476,7 @@ calculateGCD(145, 9)
 [/slide]
 
 [slide hideTitle]
-# Problem: Same Numbers
+# Problemă: Same Numbers
 [code-task title="Same Numbers" taskId="js-syntax-functions-statements-samenumbers" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -500,28 +497,28 @@ function adapter(input, code) {
 [/code-adapter]
 
 [task-description]
-## Description
+## Descriere
 
-Write a function that receives **an integer** as input and checks if all the digits in the given number are the same or not.
+Scrieți o funcție care primește **un întreg** ca intrare și verifică dacă toate cifrele din numărul dat sunt aceleași sau nu.
 
-Print true to the console if all numbers are the same and **false** if not. 
+Imprimați în consolă dacă toate numerele sunt aceleași și **false** dacă nu.
 
-On the next line print **the sum of all digits**.
+Pe următoarea linie tipăriți **suma tuturor cifrelor**.
 
-The **input** comes as an integer.
+**Intrarea** vine ca un număr întreg.
 
-The **output** should be printed to the console.
+**Ieșirea** ar trebui tipărită pe consolă.
 
 
 
-## Examples
+## Exemple
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | checkNumber(2222222) | true |
 |  | 14 |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | checkNumber(1234) | false |
 |  | 10 |
@@ -606,7 +603,7 @@ true
 [/slide]
 
 [slide hideTitle]
-# Problem: Time to Walk
+# Problemă: Time to Walk
 [code-task title="Time to Walk" taskId="js-syntax-functions-statements-timetowalk" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -627,29 +624,29 @@ function adapter(input, code) {
 [/code-adapter]
 
 [task-description]
-## Description
+## Descriere
 
-Write a function that **calculates** how long it takes a student to get to university.
+Scrieți o funcție care **calculează** cât timp îi trebuie unui student pentru a ajunge la universitate.
 
-The function receives **three numbers**:
+Funcția primește **trei numere**:
 
-- The **first** one is the number of **steps** the student takes from their home to the university
+- **Primul** este numărul de **pași** pe care îi face studentul de la domiciliu la universitate
 
-- Тhe **second** number is the length of the student's steps in **meters**
+- Numărul **al doilea** este lungimea pașilor elevului în **metri**
 
-- Тhe **third** number is the student's speed in **km/h**
+- **Numărul al treilea** este viteza studentului în **km/h**
 
-Every 500 meters, the student rests and takes a **1-minute break**.
+La fiecare 500 de metri, studentul se odihnește și face o pauză de **1 minut**.
 
-Calculate how long the student walks from home to university and print to the console the result in the following format: `hours:minutes:seconds`.
+Calculați cât de mult merge studentul de acasă la universitate și imprimați pe consolă rezultatul în următorul format:`hours:minutes:seconds`.
 
-The **input** comes as **three numbers**.
+**Intrarea** vine ca **trei numere**.
 
-The **output** should be printed to the console.
+**Ieșirea** ar trebui tipărită pe consolă.
 
-## Examples
+## Exemple
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | calculateTime(4000, 0.60, 5) | 00:32:48 |
 | calculateTime(2564, 0.70, 5.5) | 00:22:35 |
@@ -718,7 +715,7 @@ calculateTime(1600, 1.95, 9.4)
 [/slide]
 
 [slide hideTitle]
-# Problem: Road Radar
+# Problemă: Road Radar
 [code-task title="Road Radar" taskId="js-syntax-functions-statements-roadradar" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -739,41 +736,42 @@ function adapter(input, code) {
 [/code-adapter]
 
 [task-description]
-## Description
-Write a function that determines whether a driver is within the speed limit. 
+## Descriere
 
-You will receive the speed and the area. Each area has a different limit:
+Scrieți o funcție care determină dacă un șofer se află în limita de viteză.
 
-- On the **motorway,** the limit is **130 km/h**
+Veți primi viteza și zona. Fiecare zonă are o limită diferită:
 
-- On the **interstate,** the limit is **90 km/h**
+- Pe **autostradă** limita este de **130 km/h**
 
-- In the **city,** the limit is **50 km/h**
+- Pe **drumul dintre județe** limita este de **90 km/h**
 
-- Within a **residential** area, the limit is **20 km/h**
+- În **oraș** limita este de **50 km/h**
 
-If the driver is **within the limits**, there should not be any output. 
+- Într-o zonă **rezidențială**, limita este de **20 km/h**
 
-If the driver is **over the limit**, however, your function should print the severity of the infraction.
+Dacă șoferul este **în limite**, nu ar trebui să existe nicio ieșire.
 
-For speeding up to **20** km/hover the limit, speeding should be printed.
+Cu toate acestea, dacă șoferul este **peste limită**, funcția dvs. ar trebui să imprime gravitatea infracțiunii.
 
-For speeding up to **40** km/h over the limit, excessive speeding should be printed.
+Pentru a accelera până la **20** km/h peste limită, viteza ar trebui să fie tipărită.
 
-For anything else, reckless driving should be printed.
+Pentru viteza de până la **40** km/h peste limită, ar trebui tipărită viteza excesivă.
 
-The **input** comes as an **array of elements**. 
+Pentru orice altceva, conducerea imprudentă ar trebui tipărită.
 
-The first element is the current speed (**number**), the second element is the area.
+**Intrarea** vine ca o **matrice de elemente**.
 
-The **output** should be printed to the console. 
+Primul element este viteza curentă (**număr**), al doilea element este zona.
 
-Note that in certain cases there isn't any output.
+**Ieșirea** ar trebui tipărită pe consolă.
+
+Rețineți că, în anumite cazuri, nu există nicio ieșire.
 
 
-## Examples
+## Exemple
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | speedCheck(40, 'city') |  |
 | speedCheck(21, 'residential') | speeding |
@@ -893,7 +891,7 @@ reckless driving
 [/slide]
 
 [slide hideTitle]
-# Problem: Cooking by Numbers
+# Problemă: Cooking by Numbers
 [code-task title="Cooking by Numbers" taskId="js-syntax-functions-statements-cookingbynums" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -913,7 +911,7 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
+## Descriere
 
 Create a program that receives a **number** and five operations. Perform the operations **sequentially** by starting with the **input number** and using the result of every operation as a starting point for the next one. Print the result of every operation in order. The operations can be one of the following:
 
@@ -931,10 +929,26 @@ The remaining 5 elements are the names of the operations to be performed.
 
 The **output** should be printed to the console.
 
+Creați un program care primește un **număr** și cinci operații. Efectuați operațiile **secvențial** începând cu **numărul de intrare** și folosind rezultatul fiecărei operațiuni ca punct de plecare pentru următoarea. Imprimați rezultatul fiecărei operații în ordine. Operațiunile pot fi una dintre următoarele:
 
-## Examples
+- **chop** - împarte numărul la doi
+-  **dice** - găsiți rădăcina pătrată a numărului
+- **spice** - adăugați 1 la număr
+-  **bake** - înmulțește numărul cu 3
+- **fillet**- scade 20% din număr
 
-| **Input** | **Output** |
+**Intrarea** vine ca o **matrice de 6 elemente de șir**.
+
+Primul element este punctul de plecare și trebuie să fie **parsat** la un număr.
+
+Cele 5 elemente rămase sunt numele operațiunilor care trebuie efectuate.
+
+**Ieșirea** ar trebui tipărită pe consolă.
+
+
+## Exemple
+
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | cook(['32', 'chop', 'chop', 'chop', 'chop', 'chop']) | 16 |
 |  | 8 |
@@ -942,7 +956,7 @@ The **output** should be printed to the console.
 |  | 2 |
 |  | 1 |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | cook(['9', 'dice', 'spice', 'chop', 'bake', 'fillet']) | 3 |
 |  | 4 |
@@ -1018,7 +1032,7 @@ cook(['10', 'fillet', 'chop', 'dice', 'chop', 'dice'])
 [/slide]
 
 [slide hideTitle]
-# Problem: Validity Checker
+# Problemă: Validity Checker
 [code-task title="Validity Checker" taskId="js-syntax-functions-statements-validitycheck" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -1038,34 +1052,34 @@ function adapter(input, code) {
 ```
 [/code-adapter]
 [task-description]
-## Description
+## Descriere
 
-Create a program that receives two points on a plane in the format \[x1, y1, x2, y2\]. 
+Creați un program care primește două puncte pe un plan în format \[x1, y1, x2, y2 \].
 
-Check if the distance between each point and the start of the cartesian coordinate system (0, 0) is **valid**. 
+Verificați dacă distanța dintre fiecare punct și începutul sistemului de coordonate cartezian (0,0) este **validă**.
 
-A distance between two points is considered **valid** if it is has a **positive value**.
+O distanță între două puncte este considerată **valabilă** dacă are o **valoare pozitivă**.
 
-In case a distance is valid, print "\{**x1, y1**\} **to** \{**x2, y2**\} **is valid**"
+În cazul în care distanța este validă, tipăriți "\{**x1, y1**\} **to** \{**x2, y2**\} **is valid**"
 
-If the distance is invalid, print "\{**x1, y1**\} **to** \{**x2, y2**\} **is invalid**"
+În cazul în care distanța este nevalidă, tipăriți "\{**x1, y1**\} **to** \{**x2, y2**\} **is invalid**"
 
-The order of comparisons should always be first \{**x1, y1**\} to \{**0, 0**\}, then \{**x2, y2**\} to \{**0, 0**\} and finally \{**x1, y1**\} to \{**x2, y2**\}.
+Ordinea comparațiilor ar trebui să fie întotdeauna: prima \{**x1, y1**\} to \{**0, 0**\}, atunci \{**x2, y2**\} la \{**0, 0**\} și în cele din urmă \{**x1, y1**\} la \{**x2, y2**\}.
 
-The **input** consists of two points given as an **array of numbers**.
+ **Intrarea** constă din două puncte date ca o **matrice de numere**.
 
-For each comparison print either "\{**x1, y1**\} **to** \{**x2, y2**\} **is valid**" if the distance is valid, or "\{**x1, y1**\} to \{**x2, y2**\} **is invalid**" if it is invalid.
+Pentru fiecare comparație imprimați fie "\{**x1, y1**\} **to** \{**x2, y2**\} **is valid**" dacă distanța este validă, sau "\{**x1, y1**\} la \{**x2, y2**\} **is invalid**" dacă nu este validă.
 
 
-## Examples
+## Exemple
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | validate([3, 0, 0, 4]) | \{3, 0\} to \{0, 0\} is valid |
 |  | \{0, 4\} to \{0, 0\} is valid |
 |  | \{3, 0\} to \{0, 4\} is valid |
 
-| **Input** | **Output** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | validate([2, 1, 1, 1]) | \{2, 1\} to \{0, 0\} is invalid |
 |  | \{1, 1\} to \{0, 0\} is invalid |
