@@ -2,10 +2,9 @@
 
 # String Functions
 
-We use **string** functions to manipulate our character string effectively.
+We use **string** functions to manipulate string characters effectively.
 
-Example of **string functions**:
-
+And example of a **string function** is `SUBSTRING()`.
 ## The SUBSTRING() Function
 
 The `SUBSTRING()` function allows us to extract parts of a string.
@@ -15,21 +14,21 @@ The `SUBSTRING()` function allows us to extract parts of a string.
 SUBSTRING(String, Position) # Here, we select our string and the position from which we will take the substring.
 ```
 
-**Example:**
+**For example:**
 
 ``` java
 SELECT SUBSTRING('softuni.org', 2);
 ```
 
-**Output**:
+**The corresponding output is**:
 
 ```
 oftuni.org
 ```
 
-The second way of using our `SUBSTRING()` is:
+The second way of using our `SUBSTRING()` is by passing in a length:
 
-``` java
+```java
 SUBSTRING(String, Position, Length) # We pass in the index at which our result will start to the index at which it will finish.
 ```
 
@@ -45,20 +44,20 @@ SELECT SUBSTRING('softuni.org', 1, 3);
 sof
 ```
 
-We can use the `SUBSTRING()` method this way too:
+We can use the `SUBSTRING()` method with `FROM` and `FOR` too:
 
 ``` java
 SUBSTRING(String FROM Position FOR Length) # This way, we can choose the position from which we want to 
  # start making the substring and for what length.
 ```
 
-**Example:**
+For instance, if we substring `softuni.org` from the **second position**, for a **length** of **five**:
 
 ``` java
 SELECT SUBSTRING('softuni.org' FROM 2 FOR 5);
 ```
 
-**The output will be:**
+The **output** will be:
 
 ```
 ouftun
@@ -94,8 +93,7 @@ Create an SQL query to find **books, which titles start with "The".**
 
 ## The REPLACE() Function
 
-
-Now, let us take a look at the `REPLACE()` function in MySQL:
+Now, let us take a look at the `REPLACE()` function in MySQL.
 
 The `REPLACE()` function allows us to replace all occurrences of a substring with a string.
 
@@ -104,8 +102,8 @@ It is crucial to know that this method performs on a **case-sensitive** match.
 
 ``` java
 REPLACE(String, Pattern, Replacement) # Where "String" is our field from the table.
- # "Pattern" is the string, which we need to replace
- # "Replacement" is our replacement string 
+                                      # "Pattern" is the string, which we need to replace
+                                      # "Replacement" is our replacement string 
 ```
 
 **Example:**
@@ -120,9 +118,7 @@ SELECT REPLACE('aaa.softuni.org','a','w'); # In this example, "a" will be replac
 www.softuni.org
 ```
 
-Using this method, we can **replace entire words**
-
-**Example**:
+Using this method, we can **replace entire words**:
 
 ``` java
 SELECT REPLACE('We can replace the word blood with a different symbol or word.', 'blood', '*****') 
@@ -131,7 +127,7 @@ SELECT REPLACE('We can replace the word blood with a different symbol or word.',
 # And finally, we pass in the replacement symbols or characters
 ```
 
-**Output**:
+**The output is**:
 
 ```
 We can replace the word ***** with a different symbol or word.
