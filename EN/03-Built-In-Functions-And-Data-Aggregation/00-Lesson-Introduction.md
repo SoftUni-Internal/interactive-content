@@ -7,7 +7,7 @@
 ## In this lesson you will learn:
 
 **1. Functions in MySQL**
-- Manipulate the entries in databases by the integrated functions in MySQL
+- Manipulate database entries by using the integrated functions in MySQL
 
 **2. String Functions**
 - Integrated functions to manipulate strings
@@ -16,13 +16,13 @@
 - Different aggregate functions we can use with our numberic types
 
 **4. Math Functions**
-- Different math functions in MySQL
+- The types of math functions in MySQL
 
 **5. Date Functions**
 - What date functions we have in MySQL
 
 **6. Wildcards**
-- Wildcards and how to use them
+- Definition and how to use them
 
 **7. Grouping**
 - Grouping records by different criteriea
