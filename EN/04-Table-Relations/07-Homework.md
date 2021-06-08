@@ -9,11 +9,11 @@ Create two tables as follows. Use the appropriate data types.
 
 **Insert the data from the example below.**
 
-•	Alter the **people** table and make **person_id** a **primary key**. 
+- Alter the **people** table and make **person_id** a **primary key**. 
 
-•	Create a **foreign key** between **people** and **passports** by using the **passport_id** column. 
+- Create a **foreign key** between **people** and **passports** by using the **passport_id** column. 
 
-•	Think about which passport field should be **UNIQUE**.
+- Think about which passport field should be **UNIQUE**.
 
 ## Examples
 

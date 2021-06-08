@@ -122,6 +122,7 @@ Using this method, we can **replace entire words**:
 
 ``` java
 SELECT REPLACE('We can replace the word blood with a different symbol or word.', 'blood', '*****') 
+
 # First, we have our text
 # Then, we write the word we need to replace
 # And finally, we pass in the replacement symbols or characters
@@ -151,9 +152,9 @@ Extract data about the updated titles.
 
 ## The LTRIM() & RTRIM() Functions
 
-The **LTRIM()** and **RTRIM()** functions remove the space character from a string passed as an argument.
+The **LTRIM()** and **RTRIM()** functions remove whitespace characters from a string, passed as an argument.
 
-We can use the function like this:
+We can use the function as follows:
 
 ``` java
 LTRIM(String)
@@ -172,10 +173,10 @@ The `LTRIM()` function will trim the spaces at the beginning of the string, befo
 SoftUni rocks!
 ```
 
-The same principle is valid for the `RTRIM()` function, but this time it will remove the trailing spaces at the end after the text.
+The same principle is valid for the `RTRIM()` function, but this time it will remove the trailing spaces at the end after the text:
 
 ``` java
-SELECT RTRIM('SoftUni rocks!' )
+SELECT RTRIM('SoftUni rocks! ')
 ```
 
 **Output**:
@@ -190,26 +191,28 @@ SoftUni rocks!
 
 ## The CHAR_LENGTH() & LENGTH() Functions
 
+## `CHAR_LENGTH()`
+
 The `CHAR_LENGTH()` function will return the length of the provided string. 
 
 ``` java
-SELECT CHAR_LENGTH('Let us count the characters in this sentence');
+SELECT CHAR_LENGTH('Let us count the characters in this sentence.');
 # This will count the whitespaces too
 ```
 
 **Output**:
 
 ```
-44
+45
 ```
 
-The `LENGTH()` will return the **same result** from the input above:
+## `LENGTH()`
 
-It is important to know that a **multi-byte character will count as a single character**.
+The `LENGTH()` function will return the **same result** from the input above.
 
+It is important to know that when using `LENGTH()`, a **multi-byte character** will count as **multiple characters**.
 
-If our string **contains five two-byte characters**, our `CHAR_LENGTH()` function will return **5**, but our `LENGTH()` will return **10**.
-
+If our string **contains five two-byte characters**, our `CHAR_LENGTH()` function will return **5**, but `LENGTH()` will return **10**.
 
 **Example**:
 
@@ -218,7 +221,7 @@ SELECT LENGTH('§'); # Returns 2
 SELECT CHAR_LENGTH('§'); # Returns 1
 ```
 
-As we see here, the `LENGTH()` function will return a result of **2** and the `CHAR_LENGTH()` a return of **1**.
+As we see here, the `LENGTH()` function will return a result of **2** and `CHAR_LENGTH()` - a return of **1**.
 
 [/slide]
 
@@ -238,24 +241,24 @@ RIGHT(String, Count)
 **Example**:
 
 ``` java
-SELECT LEFT('Testing Left Function', 5); # This syntax returns the first five characters from the left side of our string.
+SELECT LEFT('Testing Left Function', 4); # This syntax returns the first four characters from the left side of our string.
 ```
 
 **Output**:
 
 ```
-Testi
+Test
 ```
 
 Similarly, the `RIGHT()` function will return the first characters from the right in the provided string:
 
-**Example**:
+**For example**:
 
 ``` java
 SELECT RIGHT('Testing Left Function', 5);
 ```
 
-**Output**:
+**The output will be:**:
 
 ```
 ction
