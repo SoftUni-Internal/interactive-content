@@ -434,7 +434,7 @@ console.log(arr);
 [slide hideTitle]
 # Sort
 
-[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-19-Reverse-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/01-Arrays/02.JS-Advanced-Arrays-20-Sorting-strings-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Metoda `array.sort()` **sortează elementele** unei matrice.
 
