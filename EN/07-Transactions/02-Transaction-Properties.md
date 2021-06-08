@@ -1,3 +1,5 @@
+# Transaction Properties
+
 [slide hideTitle]
 
 # Transaction Properties
@@ -47,19 +49,8 @@ Even if there is a system failure our **recovery-management component** of datab
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Employee Promotion by ID
+# Problem with Solution: Employee Promotion by ID TODO:
 
-[code-task title="Employee Promotion by ID" taskId="java-db-and-mysql-transactions-employee-promotion-by-id" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
 
-[/code-editor]
-[task-description]
-## Description
-
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/07.MySQL-Database-Programmability-Lab-Resource.zip) **for this task.**
-
-Create a **transaction** that **raises** the salary of an employee by the given **id** only **if the employee exists in the database.**
-
-If not, **no changes** should be made.
 
 [/slide]
