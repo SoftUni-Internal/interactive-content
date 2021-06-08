@@ -1,4 +1,5 @@
-[slide]
+[slide hideTitle]
+
 
 # TestTest
 

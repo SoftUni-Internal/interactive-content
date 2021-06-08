@@ -69,7 +69,6 @@ You have been tasked to create the tables in the database by the following model
 | age | Integer, from 1 to 2,147,483,647. | NULL is NOT permitted. |
 | job_title | A string containing a maximum of 40 characters. Unicode is NOT needed. | NULL is NOT permitted. |
 | ip | A string containing a maximum of 30 characters. Unicode is NOT needed. | NULL is NOT permitted. |
-|  |  |  |
 
 ### addresses
 | **Column Name** | **Data Type** |**Constraints** |
@@ -79,7 +78,6 @@ You have been tasked to create the tables in the database by the following model
 | town | A string containing a maximum of 30 characters. Unicode is NOT needed. | NULL is NOT permitted. |
 | country | A string containing a maximum of 30 characters. Unicode is NOT needed. | NULL is NOT permitted. |
 | user_id | Integer, from 1 to 2,147,483,647. | Relationship with table users. | Relationship with table users. NULL is NOT permitted. |
-|  |  |  |
 
 
 ### photos
@@ -89,7 +87,6 @@ You have been tasked to create the tables in the database by the following model
 | description | Very big String. | NULL is NOT permitted. |
 | date | The exact date and time. | NULL is NOT permitted. |
 | views | Integer, from 1 to 2,147,483,647. | DEFAULT value is 0. NULL is NOT permitted |
-|  |  |  |
 
 
 ### comments
@@ -99,7 +96,6 @@ You have been tasked to create the tables in the database by the following model
 | comment | A String containing a maximum of 255 characters. Unicode is NOT needed. |  NULL is NOT permitted. |
 | date | The exact date and time. |  NULL is NOT permitted. |
 | photo_id | Integer, from 1 to 2,147,483,647. | Relationship with table photos. NULL is NOT permitted. |
-|  |  |  |
 
 
 ### users_photos 
@@ -107,7 +103,6 @@ You have been tasked to create the tables in the database by the following model
 | --- | --- | --- |
 | user_id | Integer, from 1 to 2,147,483,647. | Relationship with table users. NULL is NOT permitted. |
 | photo_id | Integer, from 1 to 2,147,483,647. | Relationship with table photos. NULL is NOT permitted. |
-|  |  |  |
 
 
 ### likes
@@ -116,6 +111,5 @@ You have been tasked to create the tables in the database by the following model
 | id | Integer, from 1 to 2,147,483,647. |  Primary Key AUTO_INCREMENT |
 | photo_id | Integer, from 1 to 2,147,483,647. | Relationship with table photos. |
 | user_id | Integer, from 1 to 2,147,483,647. | Relationship with table users. |
-|  |  |  |
 
 [/slide]

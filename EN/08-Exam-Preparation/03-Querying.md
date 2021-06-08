@@ -48,7 +48,6 @@ Extract from the Insta Database (instd), info about all the **users**.
 | mcaygill1d | F | 100 |
 | mgethingq | M | 99 |
 | … | … | … |
-|  |  |  |
 
 
 

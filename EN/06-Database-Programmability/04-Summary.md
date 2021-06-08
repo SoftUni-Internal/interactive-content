@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learned:
+## In this lesson you learned:
 
 - What a User-Defined-Function is
     ```java
@@ -42,7 +42,7 @@
     CALL usp_select_employees_by_seniority(15);
     ```
 
-# In the next lesson, you will learn:
+## In the next lesson, you will learn:
 
 - Transations
     - definition

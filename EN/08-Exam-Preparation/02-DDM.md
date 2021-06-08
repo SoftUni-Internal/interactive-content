@@ -411,11 +411,11 @@ public class Main {
 ## Description
 **Rename** those **countries**, which meet the following conditions:
 
-•	If the country name starts with 'B' – **change** it to '**Blocked**'.
+If the country name starts with 'B' – **change** it to '**Blocked**'.
 
-•	If the country name starts with 'T' – **change** it to '**Test**'.
+If the country name starts with 'T' – **change** it to '**Test**'.
 
-•	If the country name starts with 'P' – **change** it to '**In Progress**'.
+If the country name starts with 'P' – **change** it to '**In Progress**'.
 
 
 

@@ -2,6 +2,8 @@
 
 # Summary
 
+## In this lesson you learned:
+
 - Transactions
   ``` java
   CREATE PROCEDURE usp_raise_salary_by_id(id int)
