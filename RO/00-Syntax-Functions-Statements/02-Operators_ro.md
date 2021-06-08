@@ -3,6 +3,8 @@
 
 # Operatorii aritmetici
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-11-12-arithmetic-assignment-comparison-logical-operators-arithmetic-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Operatorii aritmetici** sunt simboluri rezervate în cod care sunt utilizate pentru efectuarea operațiilor aritmetice.
 
 Ele reprezintă operatorii aritmetici din matematică.
@@ -135,6 +137,8 @@ console.log(a);
 
 # Operatorii de atribuire
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-13-assignment-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Operatorii de atribuire** atribuie o valoare operandului din stânga, în funcție de valoarea operandului din dreapta.
 
 Mai jos puteți găsi câțiva dintre operatorii de atribuire utilizați în mod obișnuit:
@@ -183,6 +187,8 @@ Folosirea prescurtării  operatorului de atribuire a împărțirii este la fel c
 [slide hideTitle]
 
 # Operatorii de comparație
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-14-15-comparison-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Operatorii de comparație** sunt utilizați în instrucțiuni logice atunci când sunt comparați doi operanzi.
 
@@ -279,6 +285,8 @@ console.log(result);
 
 # Valorile Truthy and Falsy 
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-16-truthy-and-falsy-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Atunci când sunt verificate într-un context boolean, valorile  **truthy** se evaluează la  `true` și  **falsy** se evaluează la `false`.
 
 JavaScript este un pic dificil când vine vorba de acest lucru, deci merită să vedeți câteva exemple.
@@ -337,6 +345,8 @@ Ieșirea rezutlată poate părea arbitrar, dar există o logică în spatele ace
 [slide hideTitle]
 
 # Operatorii logici
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-17-18-logical-operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Sunt trei operatori logici pe care le folosim în JavaScript.
 
@@ -414,6 +424,8 @@ Exemplul de mai sus returnează `true` deoarece este opusul lui `false`.
 
 #  Operatorul Typeof 
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-19-typeof-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Operatorul  `typeof` este folosit pentru a verifica tipul unui operand.
 
 Returnează tipul de dare în format string.
@@ -460,6 +472,8 @@ Aici sunt prezentate câteva rezultate ale `typeof`, în funcție de tipul datel
 
 #  Operatorul Instanceof 
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-20-instanceof-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Operatorul `instanceof` verifică dacă un obiect aparține unei anumite clase. 
 
 Sintaxa pentru utilizarea acestuia este `[Some Object] instanceof [Type]`
@@ -483,6 +497,8 @@ Verificarea dacă este **String** returnează `false` deoarecea acesta  **este**
 [slide hideTitle]
 
 # Câteva exemple interesante
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-21-some-interesting-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="confused.png" /]
 

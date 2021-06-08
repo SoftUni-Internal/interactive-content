@@ -4,6 +4,8 @@
 
 # Funcții
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-22-23-declaring-and-invoking-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Funcțiile sunt denumite blocuri de cod. 
 
 Acestea pot fi declarate cu un nume `function functionName()` , dar putem scruie și funcții anonime care pot fi stacate chiar și în variabile.
@@ -48,6 +50,8 @@ console.log(convertInches(inches));
 [slide hideTitle]
 
 # Declararea funcțiilor
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-24-declaring-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Funcțiile pot fi declarate în câteva moduri.
 
@@ -95,6 +99,8 @@ Funcțiile săgeată sunt similare cu expresiile funcțiilor, dar sunt chiar mai
 
 # Parametrii
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-25-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Când scrieți funcții JavaScript cu mai mulți parametri, parametrii suplimentari vor fi ignorați dacă nu li se pasează nicio valoare.
 
 
@@ -134,6 +140,8 @@ Doar primii trei parametri au fost utilizați, iar ultimii doi au fost complet i
 
 # Default Function Parameter Values
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-26-default-function-parameters-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Uneori s-ar putea să doriți să transmiteți parametrii impliciți funcțiilor dvs.
 
 Acest lucru se face de obicei atunci când există o valoare exactă care este esențială pentru ca funcția să funcționeze corect.
@@ -168,6 +176,9 @@ printCopyright("Noble Co. LLC");
 [slide hideTitle]
 
 # Problemă cu soluțue: Largest Number
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-27-28-largest-number-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Largest Number" taskId="js-syntax-functions-statements-largest-number" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -285,7 +296,7 @@ The largest number is -1.
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluțue: Circle Area
+# Problemă: Circle Area
 [code-task title="Circle Area" taskId="js-syntax-functions-statements-circlearea" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```
@@ -422,7 +433,7 @@ This calculation cannot be completed using a variable of type: boolean.
 
 
 [slide hideTitle]
-# Problemă cu soluție: String Length
+# Problemă: String Length
 [code-task title="String Length" taskId="js-syntax-functions-statements-stringlength" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```

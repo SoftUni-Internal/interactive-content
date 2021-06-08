@@ -4,6 +4,8 @@
 
 # Funcții de prima clasă
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-29-first-class-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Funcțiile din JavaScript pot fi utilizate ca variabile pentru alte funcții.
 
 Cu alte cuvinte, funcțiile care sunt transmise către alte funcții ca argumente sau returnate ca rezultat al unei funcții, se numesc funcții **de primă clasă**.
@@ -42,6 +44,8 @@ O funcție care returnează o altă funcție, ca în exemplul de mai sus, se num
 [slide hideTitle]
 
 # Funcții imbricate
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-30-nested-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript permite imbricare  funcțiilor și funcțiile interioare pot accesa variabile din funcția lor părinte.
 
@@ -83,6 +87,8 @@ checkLength('words', 'like');
 
 # Hoisting
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-31-hoisting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Hoisting-ul în viața reală este actul de a ridica ceva.
 
 În mod similar, ridicarea în JavaScript este un mecanism care asigură că o variabilă sau o funcție poate fi utilizată înainte de declarare.
@@ -98,6 +104,8 @@ Avantajul ridicării este că putem folosi funcții oriunde în cod și nu doar 
 [slide hideTitle]
 
 # Ridicarea variabilelor
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-32-hoisting-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Declarațiile variabilelor care folosesc cuvântul-cheie  `var` sunt ridicate:
 
@@ -153,6 +161,8 @@ speak();
 
 # Ridicarea funcțiilor
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-33-hoisting-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Funcțiile pot, de asemenea, a fi apelate înainte de a fi declarate.
 
 ```js live
@@ -184,7 +194,7 @@ Acest cod de asemenea nu va funcționa și va rezulta în  **TypeError** deoarec
 [/slide]
 
 [slide hideTitle]
-# Problemă cu soluție: Aggregate Elements
+# Problemă: Aggregate Elements
 [code-task title="Aggregate Elements" taskId="js-syntax-functions-statements-aggregateelements" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
 ```

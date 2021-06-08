@@ -4,6 +4,8 @@
 
 # Limbaj de programare dinamic
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-3-4-Introduction-to-java-script-dynamic-programming-language-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 JavaScript este ceea ce este cunoscut ca  **un limbaj de programare dinamic**.
 
 Acest tip de limbaj este mai flexibil în comparație cu  **limbajele de programare statice** deoarece programatorul poate transmite parametri în timpul rulării programului și nu trebuie să definească în avans tipul variabilei.
@@ -45,6 +47,8 @@ Dacă rulați codul din exemplul de mai sus, veți vedea că JavaScript acceptă
 [slide hideTitle]
 # Tipuri de date
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-5-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Putem împărți tipurile de date disponibile în JavaScript în două grupuri - **primitive** și **tipuri de referință**.
 
 O variabilă căreia i se atribuie valoarea unui tip de date primitiv, deține direct valoarea datelor și nu conține proprietăți sau metode suplimentare.
@@ -68,7 +72,7 @@ Iată un tabel care conține cele șapte tipuri de date primitive în JavaScript
 [slide hideTitle]
 # Instalarea Node.js și  Visual Studio Code
 
-[video src="https://videos.softuni.org/hls/javascript-basics/00.Introduction-to-Programming/EN/interactive-JS-PB-intorduction-to-programming-20-21-22-Installing-NodeJS-and-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/RO/00-Intro-to-Programming/interactive-JS-PB-intorduction-to-programming-20-21-22-Installing-NodeJS-and-Visual-Studio-Code-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Avem nevoie de **Node.js** pentru a putea executa codul JavaScript în afara browserului.
 
@@ -125,6 +129,8 @@ Suntem gata să începem să folosim Visual Studio Code.
 
 # Identificatori
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-6-Identifiers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Identificatorii sunt secvențe de caractere din cod utilizate pentru a identifica o anumită variabilă, funcție sau proprietate.
 
 Când dați un nume unei variabile, îi atribuiți un identificator unic.
@@ -151,6 +157,8 @@ Identificatorii nu sunt același lucru ca șirurile, deoarece șirurile reprezin
 [slide hideTitle]
 
 # Valorile variabilelor
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-7-8-variable-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Fiecare variabilă stochează o valoare în interiorul său. 
 
@@ -249,6 +257,8 @@ Codul de mai sus rezultă în **ReferenceError** pentru că **var** este **funct
 
 # Domeniile de aplicare a variabilelor
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-9-variable-scopes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Există câteva diferite tipuri de domenii de aplicare a variabilelor în JavaScript.
 
 Haideți să vedem trei dintre acestea: 
@@ -312,6 +322,8 @@ Acest lucru provoacă imediat o eroare deoarece **let** și **const** sunt ambel
 [slide hideTitle]
 
 # Tastarea dinamică
+
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-10-dynamic-typing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Din cauză că JavaScript este un limbaj tastat dinamic, variabilele declarate nu sunt **asociate direct** cu un anumit tip de valoare.
 

@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Conținutul lecției
 
+[video src="https://videos.softuni.org/hls/Java/JS-Fundamentals/RO/00-Syntax-Statements-Functions/js-advanved-syntax-functions-and-statements-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## În aceasstă lecție veți învăța:
 
 **1. Tipuri de date și variabile**
