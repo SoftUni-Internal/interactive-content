@@ -7,13 +7,13 @@ Transactions in MySQL are a **sequence of actions** that perform like one single
 When we execute our transaction, two things can happen:
 
 - **Аll of the operations** are completed successfully
-- Аll modifications that were made are **undone** when the **transaction is rollback**
+- Аll modifications made are **undone** when the **transaction gets rolled back**
 
-Transactions cannot be **succesfully executed** without completing each operation in the statement. 
+Transactions cannot be **successfully executed** without completing each operation in the statement. 
 
 We can consider bank transactions for the accurate examples of **transactions.**
 
-If withdraw or the deposit fails **the whole operation is cancelled.**
+If withdraw or the deposit fails **the whole operation is canceled.**
 
 ## Transactions: Lifecycle (Rollback)
 
@@ -23,9 +23,9 @@ If withdraw or the deposit fails **the whole operation is cancelled.**
 
 [image assetsSrc="Transactions(2).png" /]
 
-Transactions are used to guarantee the **consistency** and the **integrity** of the database.
+Transactions guarantee the **consistency** and the **integrity** of the database.
 
-All changes in a transaction are **temporary**, and they are persisted when **COMMIT** is executed.
+All changes in a transaction are **temporary**, and they only get persisted when the **COMMIT** statement gets executed.
 
 [/slide]
 
@@ -40,9 +40,9 @@ Let us take a look at this example:
 
 We can consider the **checkpoint** in games as simple transactions.
 
-If our character is able to survive through and reach next level, we can tell that our transaction is commited.
+If our character can survive through it and reach the next level, we can be sure that our transaction is committed.
 
-While, if he dies during the level the whole operation is canceled and **ROLLBACK** is executed.
+While, if they die during the level, the whole operation gets canceled, and **ROLLBACK** gets executed.
 
 [/slide]
 

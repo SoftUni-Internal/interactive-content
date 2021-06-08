@@ -4,9 +4,9 @@
 
 # Transaction Properties
 
-To maintain stability in our database, before and after transaction, there are properties that are followed.
+We must follow some properties before and after a transaction to keep our database stable.
 
-They are called **ACID** properties.
+They are named **ACID** properties, an acronym for:
 - Atomicity
 - Consistency
 - Isolation
@@ -14,42 +14,46 @@ They are called **ACID** properties.
 
 ## Atomicity 
 
-Atomicity simply means that either all of our operations are successful or none of them, and the transaction is aborted.
+Atomicity means that either all of our operations are successful, or none of them, and the transaction gets aborted.
 
-If our transaction is canceled, all of the changes we made are not visible.
+If our transaction gets canceled, all of the changes we made are not visible.
 
 If commits, all the changes made are visible.
 
 ## Consistency
 
-As the name suggests we need to perserve **consistency** in our database. 
+As the name suggests, we need to preserve **consistency** in our database. 
 
-To make this possible, no other transaction should run concurrently when there is already running transaction.
+For this to be possible, no other transaction should be concurrently running when there is an already running transaction.
 
 For example account **A** is having a balance of 500$ and it is transferring **100$** to account **B** & **C** **both.**
 
-So we have two transactions here. These transactions can run concurrently and both the transactions read **500$** balance. In that case the final balance of A would be **400$** instead of **300$**. This is incorrect.
+So we have two transactions here. 
+
+These transactions can run concurrently, and both of them read a **500$** balance. 
+
+In that case, the final balance of A would be **400$** instead of **300$**, which is incorrect.
 
 ## Isolation
 
 Transactions execution must be **serialized.**
 
-In the previous example, where we discuss the **consistency** property we already illustrated the **serialization** process.
+In the previous example, where we discuss the **consistency** property, we already illustrated the **serialization** process.
 
-In other words, one transaction should start executing only if previous transactions are finished.
+In other words, one transaction should start executing only if previous transactions finish.
 
 ## Durability
 
-If we are working on banking software, it is very important to ensure that after a transaction is completed, changes to data will persist permanently 
+If we are working on banking software, it is vital to ensure that after a transaction is complete, changes to data will persist permanently 
 and would not be undone.
 
-Even if there is a system failure our **recovery-management component** of database must ensure the **durability** of transaction.
+Even if there is a system failure, our **recovery-management component** of the database must ensure the **durability** of the transaction.
 
 
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Employee Promotion by ID TODO:
+# Problem with Solution: Employee Promotion by ID TODO: Add desc and tests
 
 
 
