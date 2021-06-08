@@ -47,53 +47,5 @@ DROP TRIGGER ins_sum; // The syntax for dropping a trigger
 
 [slide hideTitle]
 # Problem with Solution: Triggered
-[code-task title="Triggered" taskId="java-db-and-mysql-database-programmability-triggered" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 
-[code-editor language=java]
-[/code-editor]
-
-[task-description]
-
-## Description
-Create a table caled **deleted_employees(employee_id PK, first_name, last_name, middle_name, job_title, deparment_id, salary)** 
-
-that will hold information about the **fired(deleted)** employees from the employees table. 
-
-Add a trigger to the employees table that inserts the corresponding information in **deleted_employees**. 
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-deleted_employees
-employee_id
-first_name
-last_name
-middle_name
-job_title
-department_id
-salary
-employee_id
-1
-Mike
-Seamans
-[/input]
-[output]
-deleted_employees
-employee_id
-first_name
-last_name
-middle_name
-job_title
-department_id
-salary
-employee_id
-1
-Mike
-Seamans
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]

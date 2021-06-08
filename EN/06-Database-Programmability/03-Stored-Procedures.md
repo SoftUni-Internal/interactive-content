@@ -5,11 +5,11 @@
 Stored procedures, also refered to as just "**Procedure**", is a custom logic that is removed from the application server and set to the database server.
 
 Procedures are a useful tool that bring many benefits to our applications.
-	- The main reason behind that is because they are reducing the network traffic
-	- It improves the security of the database server
-	- You can run them on any platform that runs MySQL, which makes them portable
-	- It creates a component from the data access routines, separating it from the business logic
-	- You can access procedures through different programs and APIs.
+- The main reason behind that is because they are reducing the network traffic
+- It improves the security of the database server
+- You can run them on any platform that runs MySQL, which makes them portable
+- It creates a component from the data access routines, separating it from the business logic
+- You can access procedures through different programs and APIs
 
 When to use **procedures**: 
 
@@ -69,6 +69,7 @@ CALL usp_select_employees_by_seniority(15);
 # Returning Values Using Output Parameters
 
 You can also return values with a stored procedure.
+
 ```java
 CREATE PROCEDURE usp_add_numbers
 (first_number INT
@@ -85,45 +86,7 @@ SELECT @answer;
 [/slide]
 
 [slide hideTitle]
+
 # Problem with Solution: Employees Promotion
-[code-task title="Employees Promotion" taskId="java-db-and-mysql-database-programmability-employees-promotion" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
 
-[/code-editor]
-[task-description]
-## Description
-Create a stored procedure called **usp_raise_salaries(department_name)** that raises the **salary** of all employees in the given department as parameter by 5%. 
-
-## Examples
-| **first_name** | **salary** |
-| --- | --- |
-| Barbara | 27 720.00 |
-| Bryan | 19 950.00 |
-| Candy | 19 950.00 |
-| … | … |
-|  |  |
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-Barbara
-27720.0000
-Bryan
-19950.0000
-Candy
-19950.0000
-[/input]
-[output]
-Barbara
-27720.0000
-Bryan
-19950.0000
-Candy
-19950.0000
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]

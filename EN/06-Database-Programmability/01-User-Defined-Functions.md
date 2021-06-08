@@ -50,49 +50,6 @@ END                                                                             
 
 [slide hideTitle]
 # Problem with Solution: Count Employees by Town
-[code-task title="Count Employees by Town" taskId="java-db-and-mysql-database-programmability-count-employees-by-town" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
 
-[/code-editor]
-[task-description]
-## Description
-
-Download the resources from [here](https://mega.nz/file/PIJXWaRZ#s4x7gN5hOng6QXNw60Ku2COWk__M8X4zWFa5GtDYpjY).
-
-Create a function **ufn_count_employees_by_town(town_name)** that accepts a **town_name** as parameter
-
-and returns the **count** of employees who live in that town.
-
-## Example outputs:
-
-```java
-SELECT ufn_count_employees_by_town('Berlin'); -> 3
-
-SELECT ufn_count_employees_by_town(NULL); -> 0
-```
-
-
-## Example outputs:
-
-```java
-SELECT ufn_count_employees_by_town('Berlin');  -> 3
-
-SELECT ufn_count_employees_by_town(NULL);  -> 0
-```
-
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-3
-[/input]
-[output]
-3
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]
 

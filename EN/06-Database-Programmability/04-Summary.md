@@ -45,7 +45,7 @@
 # In the next lesson, you will learn:
 
 - Transations
-    - Definition
+    - definition
 - Improving the security and consistency
 
 [/slide]
