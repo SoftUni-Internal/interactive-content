@@ -10,5 +10,8 @@
  1. Transactions
     - Definition
     - Usage
+    - Transaction Properties
+
+    
 
 [/slide]

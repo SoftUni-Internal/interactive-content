@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Executing Operations As a Whole
+# Executing Operations аs a Whole
 
 Transactions in MySQL are a **sequence of actions** that perform like one single unit.
 
