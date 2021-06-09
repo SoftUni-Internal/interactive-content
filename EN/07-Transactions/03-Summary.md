@@ -20,10 +20,10 @@
 
 
 - Transaction Properties
-  - Atomicity
-  - Consistency
-  - Isolation
-  - Durability
+  - atomicity
+  - consistency
+  - isolation
+  - durability
 
 
 [/slide]
