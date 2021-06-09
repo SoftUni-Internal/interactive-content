@@ -97,13 +97,14 @@ There are a few pieces of advice, which you should keep in mind to choose a prop
 - Must be declared as `PRIMARY KEY`: when creating your database, do not forget to identify the primary key
 
 - Use `AUTO_INCREMENT` to automatically increase a given value
-    * that will make the **id** always different and will be responsible for sustaining it
+    * this will make the **id** always different and will be responsible for sustaining it
 
-- Put the primary key as the first column - this makes the table easier to comprehend, and it is a commonly applied convention
+- Put the primary key as the first column
+    * this makes the table easier to comprehend, and it is a commonly applied convention
 
-There are exceptions for the id.
+There are exceptions for the **id**.
 
-Entities that have well-known ids, like countries (USA, DK, DE) and currencies (USD, EUR), can be set as primary keys, as they are unique.
+Entities that have well-known **id**s, like countries (USA, DK, DE) and currencies (USD, EUR), can be set as primary keys, as they are unique.
 
 If you want a unique primary key, which is harder to guess, you should consider using a **GUID**. 
 

@@ -4,7 +4,9 @@
 
 The **Date** functions are used to handle date and time data effectively.
 
-- `EXTRACT()` - Extracts a segment from a date passed as argument
+## EXTRACT()
+
+The `EXTRACT()` function extracts a segment from a date passed as argument.
 
 ``` java
 SELECT EXTRACT(YEAR FROM "1995-11-24"); 
@@ -18,7 +20,9 @@ In this case, the function will extract only the year from `1995-11-24`.
 1995
 ```
 
-- `TIMESTAMPDIFF()` - Extracts the difference between two dates
+## TIMESTAMPDIFF()
+
+`TIMESTAMPDIFF()` extracts the difference between two dates.
 
 ``` java
 TIMESTAMPDIFF(Part, FirstDate, SecondDate)  
@@ -58,7 +62,13 @@ Date
 2015 Jan 16th
 ```
 
-- `NOW()` - Obtains the **current** date and time
+## NOW()
+
+`NOW()` obtains the **current** date and time.
+
+```java
+SELECT NOW();
+```
 
 
 [/slide]

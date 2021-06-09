@@ -14,7 +14,7 @@ Let us see the following **example:**
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(6).png" /]
 
-**HAVING Syntax:**
+**HAVING syntax:**
 
 ``` java
 SELECT e.`department_id`,
@@ -34,7 +34,5 @@ HAVING 'TotalSalary' < 25000;
 | 8 | 112100,0000 |
 | 9 108100,0000 |
 | ..... | ..... |
-
-
 
 [/slide]

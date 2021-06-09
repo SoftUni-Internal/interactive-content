@@ -20,9 +20,9 @@ Cascade can be either **DELETE** OR **UPDATE**, followed with a few guidelines y
 
 [slide hideTitle]
 
-# CASCADE DELETE
+# Cascade DELETE
 
-**Cascade Delete** is used only when the related entities are meaningless without the "main" entity.
+**Cascade DELETE** is used only when the related entities are meaningless without the "main" entity.
 
 Avoid using it when performing **logical delete/soft delete**. 
 
@@ -63,9 +63,9 @@ This means that when a **mountain gets deleted from the database, all of his pea
 
 [slide hideTitle]
 
-# CASCADE UPDATE
+# Cascade UPDATE
 
-**Cascade Update** is used when the primary key is NOT identity(not **auto-incremented**), and therefore, it is changeable.
+**Cascade UPDATE** is used when the primary key is NOT identity(not **auto-incremented**), and therefore, it is changeable.
 
 It is best to use it when you have **UNIQUE** constraints.
 
@@ -86,7 +86,7 @@ CREATE TABLE `cars` (                                  # Create the second table
  REFERENCES `drivers`(`driver_id`) ON UPDATE CASCADE;  # Set on Update behaviour
 ```
 
-Keep in mind that **Cascading** can be avoided using **triggers** or **procedures**.
+Keep in mind that **cascading** can be avoided using **triggers** or **procedures**.
 
 [/slide]
 

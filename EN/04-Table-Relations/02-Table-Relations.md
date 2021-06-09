@@ -6,7 +6,9 @@ Now let us take a closer look over **table relations**.
 
 Table relations connect two tables by a common field, often named the same way. This field is called a **foreign key**.
 
-The **foreign key** is an **identifier** of a record located in another table (usually it is a primary key). **It must be unique**!
+The **foreign key** is an **identifier** of a record located in another table (usually it is a **primary key**). 
+
+**It must be unique!**
 
 By using relationships, we avoid repeating data in the database.
 
@@ -29,13 +31,14 @@ The data type of the referencing column must match the data type of the refered 
 
 [image assetsSrc="Table-Relations.png" /]
 
-Here we can examine the **One-To-Many** relationship.
+Here we can examine the **one-to-many** relationship.
 
 Paraphrased: **"One country has many cities"**.
 
-А **One-to-many** relationship is done by adding a unique identifier in an enitity and then referencing it from another entity with a foreign key constraint.
+А **one-to-many** relationship is done by adding a unique identifier in an enitity and then referencing it from another entity with a foreign key constraint.
 
-Foreign key is introduced with this code:
+A foreign key is introduced with the following code:
+
 ``` java 
 CONSTRAINT `fk_peaks_mountains`         // Giving a name of the constraint/foreign key by convention starting with "fk".
 FOREIGN KEY (mountain_id)               // Setting a column for a foreign key.
@@ -66,17 +69,21 @@ The tables should have:
 
 [slide hideTitle]
 
-# Many-to-Many
+# Many-To-Many
 
-When we want to reference multiple records in a given table to multiple referenes in another table, we use а **Many-to-Many** relationship.
+When we want to reference multiple records in a given table to multiple referenes in another table, we use а **many-to-many** relationship.
 
 We manage to do that through the help of a mapping table.
 
 [image assetsSrc="Table-Relations(1).png" /]
 
-Each record in the mapping table must contain a reference to the first table and a reference to the second table in order for us to manage to **JOIN** them and take the full information we need.
+**Each record** in the mapping table must contain:
+- a reference to the **first** table 
+- a reference to the **second** table 
 
-Creating a **Many-to-Many** relationship:
+That is in order for us to be able to **JOIN** them and **obtain** the full information we need.
+
+Creating a **many-to-many** relationship:
 
 ```java
 CREATE TABLE `employees` (              // Create the first table
@@ -105,9 +112,9 @@ CREATE TABLE `employees_projects` (`employee_id` INT, `project_id` INT,    // Cr
 
 [slide hideTitle]
 
-# One-to-One
+# One-To-One
 
-As the name suggests, **One-to-One** relationship is when one entity references only one other entity.
+As the name suggests, **one-to-one** relationship is when one entity references only one other entity.
 
 We can see that in the relationship: Driver-Driving licence.
 
@@ -124,25 +131,47 @@ It is achieved by two records referencing eachother.
 
 # Setup
 
-The setup for it would be as follows:
+This is an example of a **one-to-one** relationship:
 
 ```java
-CREATE TABLE `drivers` (                                                // We create the first table                  
+CREATE TABLE `drivers` (                                              
   `id` INT PRIMARY KEY,
   `driver_name` VARCHAR(50),
   `driving_licence_id` INT
 );
 
-CREATE TABLE `driving_licence` (                                        // We create the second table.
+CREATE TABLE `driving_license` (                                        
   `id` INT PRIMARY KEY,
   `number` VARCHAR(10),
   `driver_id` INT UNIQUE,
   CONSTRAINT `fk_driving_licence_drivers` 
-  FOREIGN KEY (`driver_id`) REFERENCES `drivers`(`driver_id`)           // We set the first foreign key constraint.
+  FOREIGN KEY (`driver_id`) 
+  REFERENCES `drivers`(`driver_id`)      
 );
 
-CONSTRAINT `fk_driver_driving_licence`                                  // Then we set the other constraint.
+CONSTRAINT `fk_driver_driving_licence`                                
 FOREIGN KEY (`driver_licence_id`)
 REFERENCES `driving_licence`(`id`)
- ```
+```
+
+We begin by creating the **first** table - `drivers`.
+
+Then, we create a **second** table, called `driving_license`.
+
+After that, we set the **first foreign key constraint**:
+
+```java
+CONSTRAINT `fk_driving_licence_drivers` 
+FOREIGN KEY (`driver_id`) 
+REFERENCES `drivers`(`driver_id`)   
+```
+
+Finally, we set the **other constraint**:
+
+```java
+CONSTRAINT `fk_driver_driving_licence`                                
+FOREIGN KEY (`driver_licence_id`)
+REFERENCES `driving_licence`(`id`)
+```
+
 [/slide]

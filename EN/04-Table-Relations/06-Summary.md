@@ -12,17 +12,20 @@
     * filling test data
   
 - Reading specifications and finding entities, their characteristics and relations
+  
 - Types of relationships:
-    - **One-to-Many**
-    - **Many-to-Many**
-    - **One-to-One**
+    * **one-to-many**
+    * **many-to-many**
+    * **one-to-one**
 
     ``` java 
     CONSTRAINT `fk_peaks_mountains`
     FOREIGN KEY (`mountain_id`)      
     REFERENCES `mountains`(`mountain_id`);
     ```
-- Cascade operations
+    
+- **Cascade** operations
+  
     ```java
     CREATE TABLE `drivers`(
       `driver_id` INT PRIMARY KEY,
@@ -35,6 +38,7 @@
       CONSTRAINT `fk_car_driver` FOREIGN KEY(`driver_id`)
       REFERENCES `drivers`(`driver_id`) ON DELETE CASCADE);
     ```
+
 - Visualizing databases using **E/R Diagrams**
 
 ## In the next lesson you will learn:
