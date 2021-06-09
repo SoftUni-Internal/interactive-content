@@ -2,7 +2,7 @@
 
 # Functions in MySQL
 
-**Download the resources needed for this lesson from** [here]() **.** 
+**Download the resources needed for this lesson from** [here]()**.** 
 
 With MySQL, we can do much more than just store or retrieve data information.
 
@@ -12,7 +12,7 @@ That is the purpose of **functions** - they are small pieces of code.
 
 Using them, we perform some **operations** and return the result from them.
 
-Let us review the **built-in functions** provided in MySQL:
+In this lesson, we will review the four types of **built-in functions** provided in MySQL:
 
 - **String** functions
 
@@ -22,6 +22,6 @@ Let us review the **built-in functions** provided in MySQL:
 
 - **Math** functions
 
-These are the **most commonly** used functions. 
+These are the **most commonly** used function types. 
 
 [/slide]

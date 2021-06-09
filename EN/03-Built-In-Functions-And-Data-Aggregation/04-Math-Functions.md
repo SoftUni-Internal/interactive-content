@@ -18,7 +18,7 @@ Here is the table of **supported arithmetic operators:**
 | * | Multiplication operator | 
 | - (arg) | Change the sign of an argument |
 
-Let us take a look at some **Math** functions:
+Let us take a look at some **Math** functions.
 
 - `PI()` - returns the PI value
     * it has a 15 digit precision

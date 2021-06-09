@@ -10,29 +10,33 @@ An example of a **string function** is `SUBSTRING()`.
 
 The `SUBSTRING()` function allows us to extract parts of a string.
 
-
 ``` java
-SUBSTRING(String, Position) # Here, we select our string and the position from which we will take the substring.
+SUBSTRING(String, Position)
 ```
 
-### For example:
+Here, we select our **string**, and the **position** from which we permorm the substring operation.
+
+**For example:**
 
 ``` java
 SELECT SUBSTRING('softuni.org', 2);
 ```
 
-### The corresponding output is:
+**The corresponding output is:**
 
 ```
 oftuni.org
 ```
 
+### Using `SUBSTRING()` With A Length Parameter
+
 The second way of using our `SUBSTRING()` is by passing in a length:
 
 ```java
-SUBSTRING(String, Position, Length) # We pass in the index at which our result will start
-                                    # to the index at which it will finish.
+SUBSTRING(String, Position, Length) 
 ```
+
+We pass in the index at which our result will **start**, to the index at which it will **finish**.
 
 **Example**:
 
@@ -46,12 +50,15 @@ SELECT SUBSTRING('softuni.org', 1, 3);
 sof
 ```
 
+### Using `SUBSTRING()` With `FROM` and `FOR`
+
 We can use the `SUBSTRING()` method with `FROM` and `FOR` too:
 
 ``` java
-SUBSTRING(String FROM Position FOR Length) # This way, we can choose the position from which we want to 
-                                           # start making the substring and for what length.
+SUBSTRING(String FROM Position FOR Length) 
 ```
+
+This way, we can choose the position from which we want to **start** taking the substring, and for what **length**.
 
 For instance, if we substring `softuni.org` from the **second position**, for a **length** of **five**:
 
@@ -93,28 +100,31 @@ Create an SQL query to find **books, which titles start with "The".**
 
 [slide hideTitle]
 
-## The REPLACE() Function
+# The REPLACE() Function
 
 Now, let us take a look at the `REPLACE()` function in MySQL.
 
 The `REPLACE()` function allows us to replace all occurrences of a substring with a string.
 
-
-It is crucial to know that this method performs on a **case-sensitive** match.
+It is crucial to remember that this method performs on a **case-sensitive** match.
 
 ``` java
-REPLACE(String, Pattern, Replacement) # Where "String" is our field from the table
-                                      # "Pattern" is the string, which we need to replace
-                                      # "Replacement" is our replacement string 
+REPLACE(String, Pattern, Replacement) 
 ```
 
-### Example
+Here, the "**String**" parameter is our field from the table.
+
+"**Pattern**" is the string which we need to replace.
+
+And lastly, "**Replacement**" is the new string.
+
+**Example:**
 
 ``` java
 SELECT REPLACE('aaa.softuni.org','a','w'); # In this example, "a" will be replaced with "w"
 ```
 
-### Output
+**Output**
 
 ```
 www.softuni.org
@@ -123,12 +133,14 @@ www.softuni.org
 Using this method, we can **replace entire words**:
 
 ``` java
-SELECT REPLACE('We can replace the word blood with a different symbol or word.', 'blood', '*****') 
-
-# First, we have our text
-# Then, we write the word we need to replace
-# And finally, we pass in the replacement symbols or characters
+SELECT REPLACE('We can replace the word blood with a different symbol or word.', 'blood', '*****')
 ```
+
+First, we have our **text**.
+
+Then, we write the **word** we need to replace.
+
+And finally, we pass in the **replacement** symbols or characters.
 
 ## The output is:
 
@@ -152,7 +164,7 @@ Extract data about the updated titles.
 
 [slide hideTitle]
 
-## The LTRIM() & RTRIM() Functions
+# The LTRIM() & RTRIM() Functions
 
 The **LTRIM()** and **RTRIM()** functions remove whitespace characters from a string, passed as an argument.
 
@@ -191,7 +203,7 @@ SoftUni rocks!
 
 [slide hideTitle]
 
-## The CHAR_LENGTH() & LENGTH() Functions
+# The CHAR_LENGTH() & LENGTH() Functions
 
 ## `CHAR_LENGTH()`
 
@@ -199,8 +211,9 @@ The `CHAR_LENGTH()` function will return the length of the provided string.
 
 ``` java
 SELECT CHAR_LENGTH('Let us count the characters in this sentence.');
-# This will count the whitespaces too
 ```
+
+Keep in mind that this will count the **whitespaces** too.
 
 **Output**:
 
@@ -216,14 +229,14 @@ It is important to know that when using `LENGTH()`, a **multi-byte character** w
 
 If our string **contains five two-byte characters**, our `CHAR_LENGTH()` function will return **5**, but `LENGTH()` will return **10**.
 
-**Example**:
+For **example**, `§` is a **two-byte** character:
 
 ``` java
 SELECT LENGTH('§');      # Returns 2
 SELECT CHAR_LENGTH('§'); # Returns 1
 ```
 
-As we see here, the `LENGTH()` function will return a result of **2** and `CHAR_LENGTH()` - a return of **1**.
+As we see here, the `LENGTH()` function will return a result of **2**, while `CHAR_LENGTH()` - a result of **1**.
 
 [/slide]
 
@@ -243,8 +256,10 @@ RIGHT(String, Count)
 **Example**:
 
 ``` java
-SELECT LEFT('Testing Left Function', 4); # This syntax returns the first four characters from the left side of our string.
+SELECT LEFT('Testing Left Function', 4); 
 ```
+
+The above syntax returns the **first four** characters from the left side of our string.
 
 **Output**:
 
@@ -252,7 +267,7 @@ SELECT LEFT('Testing Left Function', 4); # This syntax returns the first four ch
 Test
 ```
 
-Similarly, the `RIGHT()` function will return the first characters from the right in the provided string:
+Similarly, the `RIGHT()` function will return the first **N** characters on the right of the provided string.
 
 **For example**:
 
@@ -271,25 +286,25 @@ ction
 
 [slide hideTitle]
 
-## The LOWER() & UPPER() Functions
+# The LOWER() & UPPER() Functions
 
 The `LOWER()` function converts all characters in the provided string to **lowercase** letters.
 
 **Example**:
 
 ``` java
-SELECT LOWER('SOFTUNI DB COURSE');
+SELECT LOWER('MYSQL IS AWESOME');
 ```
 
 **Output**:
 
 ```
-softuni db course
+mysql is awesome
 ```
 
-Similarly, the `UPPER()` function to convert all characters to **uppercase** letters.
+Similarly, use the `UPPER()` function to convert all characters to **uppercase** letters.
 
-**Example:**
+**For example:**
 
 ``` java
 SELECT UPPER('this is an uppercase string');
@@ -305,15 +320,17 @@ THIS IS AN UPPERCASE STRING
 
 [slide hideTitle]
 
-## The REVERSE() & REPEAT() Functions
+# The REVERSE() & REPEAT() Functions
 
 The `REVERSE()` function allows us to reverse the order of all characters in the provided string.
 
 **Example**:
 
 ``` java
-SELECT REVERSE('softuni'); # This will reverse the characters in the "softuni" string
+SELECT REVERSE('softuni'); 
 ```
+
+The code above will reverse the characters in the "**softuni**" string.
 
 **Output**:
 
@@ -326,8 +343,10 @@ The `REPEAT()` function allows us to repeat a string a specified number of times
 **Example**:
 
 ``` java
-SELECT REPEAT('softuni ', 3); # This will repeat "softuni ", followed by the whitespace after, exactly 3 times
+SELECT REPEAT('softuni ', 3); 
 ```
+
+This will **repeat** "softuni ", followed by the whitespace after, exactly **3 times**.
 
 **Output**:
 
@@ -338,7 +357,7 @@ softuni softuni softuni
 
 [slide hideTitle]
 
-## The LOCATE() & INSERT() Functions
+# The LOCATE() & INSERT() Functions
 
 The `LOCATE()` function in MySQL lets us locate a specific pattern (substring) in our string.
 
@@ -347,9 +366,14 @@ The function performs a **case-insensitive** search.
 **Syntax**:
 
 ``` java
-LOCATE(Pattern, String, [Position]) # Where the [Position] argument is optional. If omitted, it defaults to 1. 
-                                    # The first position in our string is 1.
+LOCATE(Pattern, String, [Position])
 ```
+
+The `[Position]` argument is **optional**. 
+
+If **omitted**, it defaults to 1. 
+
+The **first** position in our string is on index 1.
 
 **Example**:
 
@@ -357,7 +381,7 @@ LOCATE(Pattern, String, [Position]) # Where the [Position] argument is optional.
 SELECT LOCATE('st','teststring');
 ```
 
-The following **output** will be:
+**Result**:
 
 ```
 3
@@ -368,9 +392,10 @@ The `INSERT()` function allows us to insert substring at a specific position.
 **Syntax**:
 
 ``` java
-INSERT(String, Position, Length, Substring) # The Length parameter indicates the count of characters 
-                                            # that will be deleted from the start of the given Position.
+INSERT(String, Position, Length, Substring) 
 ```
+
+The **Length** parameter indicates the count of characters that will be deleted from the start of the given **Position**.
 
 **Example**:
 

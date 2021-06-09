@@ -10,24 +10,30 @@
 | _ | Represents a single character |
 | ^ | Represents any character that is not in brackets |
 | [] | Represents any single character within the brackets |
-| - | Represents range of characters |
+| - | Represents a range of characters |
 
 We use them with the **LIKE** operator in a **WHERE** clause. 
 
-It is pretty similar to **Regular expressions**.
+It is pretty similar to how **regular expressions** work.
 
-**Example**:
+Here are a few **examples**.
+
+- Finding any values that **start with "a"** (Customer name in our case):
 
 ``` java
-WHERE CustomerName LIKE 'a%'; // It will find any values that start with "a" (Customer name in our case)
+WHERE CustomerName LIKE 'a%'; 
 ```
 
-``` java
-WHERE CustomerName LIKE '_r%'; // It will find values that have "r" in second position
-```
+- Here we are looking for values that have **"r"** in their **second position**:
 
 ``` java
-WHERE ContactName LIKE 'a%o'; // It will find values that start with "a", and end with "o".
+WHERE CustomerName LIKE '_r%'; 
+```
+
+- The following code will find values that **start with "a"**, and **end with "o"**:
+  
+``` java
+WHERE ContactName LIKE 'a%o'; 
 ```
 
 The \[charlist\] wildcards specify **which characters** to look for.
@@ -36,12 +42,14 @@ Similarly, we can use \[!charlist\] wildcard to specify **excluding** characters
 
 We can use the `REGEXP` function to match it to any pattern.
 
-**Example**:
+**For example**:
 
 ``` java
-SELECT * FROM `customers` // In this case, we will look for the city which is "a" , "b" or "c".
+SELECT * FROM `customers` 
 WHERE `city` REGEXP '[a-c]%'; 
 ```
+
+In the above case, we will look for a **city**, named **either "a" , "b" or "c"**.
 
 [/slide]
 
