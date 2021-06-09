@@ -49,7 +49,9 @@ The **resulting table** will look as follows:
 | 4 | Rob | Walters | 17 |
 | ... | ... | ... | ... |
 
-- `DATE_FORMAT()` - Formats the date as specified
+## DATE_FORMAT()
+
+The `DATE_FORMAT()` function formats the date as specified.
 
 ``` java
 SELECT DATE_FORMAT('2015/01/16', '%Y %b %D') AS 'Date';

@@ -38,9 +38,11 @@ WHERE ContactName LIKE 'a%o';
 
 The \[charlist\] wildcards specify **which characters** to look for.
 
-Similarly, we can use \[!charlist\] wildcard to specify **excluding** characters.
+Similarly, we can use the \[!charlist\] wildcard to specify **excluding** characters.
 
-We can use the `REGEXP` function to match it to any pattern.
+## Using Regular Expressions
+
+We can also use the `REGEXP` function to match it to any pattern.
 
 **For example**:
 

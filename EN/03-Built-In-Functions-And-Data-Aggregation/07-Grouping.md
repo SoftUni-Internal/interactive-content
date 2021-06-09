@@ -6,15 +6,17 @@ The **Group By** clause in SQL allows us to take data in to **separate groups** 
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(5).png" /]
 
-Using **GROUP BY** we can get each **separate** group and use an **aggregate** function over it. (Average, Min, Max)
+Using **GROUP BY** we can get each **separate** group and use an **aggregate** function over it (Average, Min, Max).
 
 Let us take a look at this simple example using **soft_uni** database:
 
 ``` java
-SELECT e.`job_title`, count(employee_id)  // This query will return a list of position 
-  FROM `employees` AS e                   // titles and the number of employees assigned to each one of them.
+SELECT e.`job_title`, count(employee_id)  
+  FROM `employees` AS e                   
 GROUP BY e.`job_title`;
 ```
+
+This query will return a **list** of **position titles** and the **number of employees** assigned to each one of them.
 
 **Output:**
 

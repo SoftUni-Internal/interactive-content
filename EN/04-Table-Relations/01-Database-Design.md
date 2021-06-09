@@ -106,7 +106,7 @@ There are exceptions for the **id**.
 
 Entities that have well-known **id**s, like countries (USA, DK, DE) and currencies (USD, EUR), can be set as primary keys, as they are unique.
 
-If you want a unique primary key, which is harder to guess, you should consider using a **GUID**. 
+If you want a unique primary key, which is harder to guess, you should consider using a [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier). 
 
 [/slide]
 
@@ -130,9 +130,9 @@ The **courses are held in different towns**.
 
 When registering a new student, the following information is entered: **name**, **faculty number**, **photo** and **date**.
 
-- **"Students are trained in courses."** can be paraphrased to **"Many students are trained in many courses."**, which is a **Many-to-Many** relationship
+- **"Students are trained in courses."** can be paraphrased to **"Many students are trained in many courses."**, which is a **many-to-many** relationship
 
-- **"A course can be held in towns."** can be paraphrased to **"One course is held in many towns"**, which is a **One-To-Many** relationship
+- **"A course can be held in towns."** can be paraphrased to **"One course is held in many towns"**, which is a **one-to-many** relationship
 
 [/slide]
 
