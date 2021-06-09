@@ -2,16 +2,15 @@
 
 # Aggregate Functions
 
-
 An **aggregate** function performs calculations on multiple values and then returns a single value.
 
 We have 5 main functions:
 
-- COUNT()
-- SUM()
-- MAX()
-- MIN()
-- AVG()
+- `COUNT()`
+- `SUM()`
+- `MAX()`
+- `MIN()`
+- `AVG()`
 
 These functions allow us to build **summarized** data information from our database.
 
@@ -39,16 +38,16 @@ This SQL query will produce the following result:
 | 6 | 40900,0000 |
 | 7 | 9500,0000 |
 
-After knowing this, let us take a look at the functions and their syntax:
+After knowing this, let us take a look at the functions and their syntax.
 
 
 [/slide]
 
 [slide hideTitle]
 
-## The COUNT() Function
+# The COUNT() Function
 
-We use the `COUNT()` function when we need to count values (**not nulls**) in one or more columns based on grouping criteria.
+We use the `COUNT()` function when we need to count values (**excluding null**) in one or more columns based on grouping criteria.
 
 When using `COUNT()`, we ignore any employees with **NULL** salary.
 
@@ -88,7 +87,7 @@ GROUP BY e.`department_id`;
 
 [slide hideTitle]
 
-## The SUM() Function
+# The SUM() Function
 
 The `SUM()` function sums all the values in a column.
 
@@ -162,7 +161,7 @@ FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
 
-**Output**:
+**The resulting table looks like this**:
 
 | department_id | Min_salary |
 | --- | --- |
@@ -192,7 +191,7 @@ FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
 
-**Output:**
+**Result:**
 
 | department_id | Average_Salary |
 | --- | --- |

@@ -2,7 +2,7 @@
 
 # The Having Clause
 
-We can use the **HAVING** clause to summarize group records, whereas **WHERE** applies to individual records.
+We can use the **HAVING** clause to summarize group records, as compared to **WHERE**, which applies to individual records only.
 
 The **HAVING** clause operates on records returned by **GROUP BY**.
 
@@ -10,7 +10,7 @@ Unlike **HAVING**, the **WHERE** clause filters rows **before** the aggregation.
 
 Any aggregated functions in the **HAVING** clause and the **SELECT** statement are executed only once.
 
-Let see the following **example:**
+Let us see the following **example:**
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(6).png" /]
 

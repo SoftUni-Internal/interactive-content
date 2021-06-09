@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learned:
+## In this lesson you learned:
 
 - Designing databases is done in six steps:
     * identificatiion of entities
@@ -37,7 +37,7 @@
     ```
 - Visualizing databases using **E/R Diagrams**
 
-# In the next lesson you will learn:
+## In the next lesson you will learn:
 
 - **Joins** and gathering data from multiple tables
 - **Subqueries**, query manipulation on multiple levels

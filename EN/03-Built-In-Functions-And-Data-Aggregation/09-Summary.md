@@ -2,7 +2,7 @@
 
 # Summary
 
-# In this lesson you learned:
+## In this lesson you learned:
 
 - **Functions** in MySQL are small pieces of code that manipulate data
   
@@ -44,7 +44,7 @@ WHERE CustomerName LIKE 'a%';  // It will find any values that starts with "a" (
 
 - **Grouping** helps us obtain data in separeate groups, based on a single property
 ``` java
-SELECT e.`job_title`, count(employee_id) // This query would return a list of position 
+SELECT e.`job_title`, count(employee_id) // This query will return a list of position 
 FROM `employees` AS e                    // titles and the number of employees assigned to each one of them.
 GROUP BY e.`job_title`;
 ```
@@ -58,7 +58,7 @@ GROUP BY e.`department_id`
 HAVING 'TotalSalary' < 25000;
 ```
 
-# In the next lesson you will learn:
+## In the next lesson you will learn:
 
 - **Table Relations**
     * **One-to-many** 

@@ -2,13 +2,15 @@
 
 # The Date Functions
 
-The **Date** functions can handle date and time data effectively.
+The **Date** functions are used to handle date and time data effectively.
 
 - `EXTRACT()` - Extracts a segment from a date passed as argument
 
 ``` java
-SELECT EXTRACT(YEAR FROM "1995-11-24"); # It will extract only the year.
+SELECT EXTRACT(YEAR FROM "1995-11-24"); 
 ```
+
+In this case, the function will extract only the year from `1995-11-24`.
 
 **Output:**
 
@@ -19,10 +21,12 @@ SELECT EXTRACT(YEAR FROM "1995-11-24"); # It will extract only the year.
 - `TIMESTAMPDIFF()` - Extracts the difference between two dates
 
 ``` java
-TIMESTAMPDIFF(Part, FirstDate, SecondDate)  # Part can be any part and format of date or time
+TIMESTAMPDIFF(Part, FirstDate, SecondDate)  
 ```
 
-Let's see a simple query example using our **soft_uni** database:
+**Part** can be any part and format of a date or time.
+
+Let us see a simple query example using our **soft_uni** database:
 
 ``` java
 SELECT `employee_id`, `first_name`, `last_name`,
@@ -31,7 +35,7 @@ SELECT `employee_id`, `first_name`, `last_name`,
   FROM `employees`;
 ```
 
-The **output** will be:
+The **resulting table** will look as follows:
 
 | employee_id | first_name | last_name | Years In Service |
 | --- | --- | --- | --- |
