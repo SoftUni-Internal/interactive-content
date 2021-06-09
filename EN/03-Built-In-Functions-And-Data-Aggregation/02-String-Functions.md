@@ -121,10 +121,12 @@ And lastly, "**Replacement**" is the new string.
 **Example:**
 
 ``` java
-SELECT REPLACE('aaa.softuni.org','a','w'); # In this example, "a" will be replaced with "w"
+SELECT REPLACE('aaa.softuni.org','a','w');
 ```
 
-**Output**
+In this example, **"a"** will be replaced with **"w"**.
+
+**Output:**
 
 ```
 www.softuni.org

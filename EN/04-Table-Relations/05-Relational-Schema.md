@@ -4,7 +4,7 @@
 
 After we finish creating the database and its entities, we can view them and their relations using a tool named **E/R Diagram**.
 
-Integrated into MySQL Workbench, it creates a **Relational schema** of all the entities in the database. 
+Integrated into MySQL Workbench, it creates a **relational schema** of all the entities in the database. 
 
 The relational schemas describe the structure of our database.
 
