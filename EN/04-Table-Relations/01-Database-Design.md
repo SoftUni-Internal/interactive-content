@@ -69,7 +69,9 @@ When given **specifications**, we can also try and seek information that will he
 ## Specification
 
 We need to develop a system that stores information about **students** enrolled in various courses. 
+
 The courses are held in different towns.
+
 When registering a new student the following information is entered: **name**, **faculty number**, **photo** and **date**.
 
 
@@ -97,14 +99,14 @@ There are a few pieces of advice, which you should keep in mind to choose a prop
 - Must be declared as `PRIMARY KEY`: when creating your database, do not forget to identify the primary key
 
 - Use `AUTO_INCREMENT` to automatically increase a given value
-    * this will make the **id** always different and will be responsible for sustaining it
+    * this will make the **ID** always different and will be responsible for sustaining it
 
 - Put the primary key as the first column
     * this makes the table easier to comprehend, and it is a commonly applied convention
 
-There are exceptions for the **id**.
+There are exceptions for the **ID**.
 
-Entities that have well-known **id**s, like countries (USA, DK, DE) and currencies (USD, EUR), can be set as primary keys, as they are unique.
+Entities that have well-known **ID**s, like countries (USA, DK, DE) and currencies (USD, EUR), can be set as primary keys, as they are unique.
 
 If you want a unique primary key, which is harder to guess, you should consider using a [GUID](https://en.wikipedia.org/wiki/Universally_unique_identifier). 
 
