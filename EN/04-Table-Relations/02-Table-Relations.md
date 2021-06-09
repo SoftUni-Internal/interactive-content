@@ -124,12 +124,7 @@ It is achieved by two records referencing eachother.
 
 [image assetsSrc="Table-Relations(2).png" /]
 
-[/slide]
-
-
-[slide hideTitle]
-
-# Setup
+## Example
 
 This is an example of a **one-to-one** relationship:
 

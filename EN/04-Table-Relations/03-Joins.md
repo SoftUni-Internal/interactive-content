@@ -10,7 +10,7 @@ Take a look at this example:
 
 ```java
 SELECT * 
-FROM `table_a` /
+FROM `table_a` 
 JOIN `table_b` ON `table_b`.common_column = `table_a`.common_column 
 ```
 
