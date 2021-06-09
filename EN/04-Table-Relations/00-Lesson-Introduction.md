@@ -8,7 +8,7 @@
 
 **1. Database Design**
 
-- Design databases
+- The six steps of designing databases
 
 - Reading specifications and finding the database units
 

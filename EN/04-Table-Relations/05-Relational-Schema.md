@@ -28,7 +28,7 @@ The schemas have a single purpose -  graphicly displaying the entities and their
 
 Here is a step-by-step guide on how to create the schemas. 
 
-1. Click on "Database" then select "Reverse Engineer"
+1. Click on "Database" then select "Reverse Engineer":
 
 [image assetsSrc="Diagram-Creation.png" /]
 

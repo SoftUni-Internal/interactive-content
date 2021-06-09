@@ -19,7 +19,7 @@ Relationships have multiplicity:
 
 [slide hideTitle]
 
-## One-To-Many
+# One-To-Many
 
 For the referenced table, it is a constraint that the referenced column is unique.
 
@@ -37,9 +37,9 @@ Paraphrased: **"One country has many cities"**.
 
 Foreign key is introduced with this code:
 ``` java 
-CONSTRAINT `fk_peaks_mountains`         //Giving a name of the constraint/foreign key by convention starting with "fk".
-FOREIGN KEY (mountain_id)               //Setting a column for a foreign key.
-REFERENCES mountains(mountain_id);      //Referencing the unique identifier in another column.
+CONSTRAINT `fk_peaks_mountains`         // Giving a name of the constraint/foreign key by convention starting with "fk".
+FOREIGN KEY (mountain_id)               // Setting a column for a foreign key.
+REFERENCES mountains(mountain_id);      // Referencing the unique identifier in another column.
 ```
 
 [/slide]
@@ -47,13 +47,7 @@ REFERENCES mountains(mountain_id);      //Referencing the unique identifier in a
 [slide hideTitle]
 
 # Problem with Solution: Mountains and Peaks
-[code-task title="Mountains and Peaks" taskId="java-db-and-mysql-table-relations-mountains-and-peaks" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 
-[code-editor language=java]
-
-[/code-editor]
-[task-description]
-## Description
 Write a query that creates two tables – **mountains** and **peaks**.
 
 The tables should have:
@@ -67,58 +61,12 @@ The tables should have:
   -	**mountain_id**
 
 ## Examples
-[/task-description]
-[code-io /]
-[tests]
-[test]
-[input]
-SELECT DISTINCT lower(column_name)
-FROM INFORMATION_SCHEMA.key_column_usage
-WHERE TABLE_SCHEMA = database()
-  and lower(table_name) = 'mountains'
-order by lower(column_name);
 
-
-SELECT DISTINCT lower(column_name)
-FROM INFORMATION_SCHEMA.key_column_usage
-WHERE TABLE_SCHEMA = database()
-  and lower(table_name) = 'peaks'
-order by lower(column_name);
-[/input]
-[output]
-id
-id
-mountain_id
-[/output]
-[/test]
-[test]
-[input]
-SELECT DISTINCT lower(column_name)
-FROM INFORMATION_SCHEMA.key_column_usage
-WHERE TABLE_SCHEMA = database()
-  and lower(table_name) = 'mountains'
-order by lower(column_name);
-
-
-SELECT DISTINCT lower(column_name)
-FROM INFORMATION_SCHEMA.key_column_usage
-WHERE TABLE_SCHEMA = database()
-  and lower(table_name) = 'peaks'
-order by lower(column_name);
-[/input]
-[output]
-id
-id
-mountain_id
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]
 
 [slide hideTitle]
 
-## Many-to-many
+# Many-to-Many
 
 When we want to reference multiple records in a given table to multiple referenes in another table, we use а **Many-to-Many** relationship.
 
@@ -137,14 +85,14 @@ CREATE TABLE `employees` (              // Create the first table
 );
 
 CREATE TABLE `projects` (               // Crate the second table
-  `project_id` INT PRIMARY KEY,         // set unique identifier as well.
+  `project_id` INT PRIMARY KEY,         // Set a unique identifier as well
    `project_name` VARCHAR(50)
 );
 
 CREATE TABLE `employees_projects` (`employee_id` INT, `project_id` INT,    // Create the mapping table
   CONSTRAINT `pk_employees_projects`                                       // with foreign keys referencing to both tables
-  PRIMARY KEY(`employee_id`, `project_id`),                                // do not forget that you cannot add entities to the table
-  CONSTRAINT `fk_employees_projects_employees`                             // which do not already exist as records in their original tables.
+  PRIMARY KEY(`employee_id`, `project_id`),                                // Do not forget that you cannot add entities to the table
+  CONSTRAINT `fk_employees_projects_employees`                             // which do not already exist as records in their original tables
   FOREIGN KEY(`employee_id`)
   REFERENCES `employees`(`employee_id`),
   CONSTRAINT `fk_employees_projects_projects`
@@ -157,7 +105,7 @@ CREATE TABLE `employees_projects` (`employee_id` INT, `project_id` INT,    // Cr
 
 [slide hideTitle]
 
-## One-to-One
+# One-to-One
 
 As the name suggests, **One-to-One** relationship is when one entity references only one other entity.
 

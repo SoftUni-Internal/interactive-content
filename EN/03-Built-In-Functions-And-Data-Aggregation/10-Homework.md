@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-## Part 1 - Queries From SoftUni Database
+# Part 1 - Queries From SoftUni Database
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/04.Built-In-Functions-And-Data-Aggregation-Exercise.zip) **for this homework.**
 

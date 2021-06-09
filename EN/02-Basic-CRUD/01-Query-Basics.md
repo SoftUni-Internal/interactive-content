@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-## The Basics of Querying
+# The Basics of Querying
 
 The **CRUD** operations are the most used functionallities in databases and applications.
 

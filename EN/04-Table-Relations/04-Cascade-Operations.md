@@ -4,11 +4,11 @@
 
 As mentioned earlier, creating table relations with **foreign keys** brings several benefits.
 
-One of those benefits is **Cascade Operations**.
+One of those benefits is **cascade operations**.
 
-Cascading applies a change made to a single entity to all related entities.
+Cascading applies the **mofifications** of a **single** entity to **all** related entities.
 
-It is a powerful tool but should be used with caution, as it may be pretty tricky and even lead us to changes to the data that we have not intended.
+It is a powerful tool but should be used with caution, as it may be pretty tricky and even lead us to data changes that we may not intend to do.
 
 [image assetsSrc="Table-Relations(3).png" /]
 

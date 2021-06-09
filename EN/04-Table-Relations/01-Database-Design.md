@@ -2,22 +2,20 @@
 
 # Database Designs and Rules
 
-The process of creating a database starts with designing the database.
+The process of creating a database starts with **designing** it.
 
-When we are building a database, we should always consider how to organize the entities in it correctly.
+When we are building a database, we should always consider how to **organize the entities** inside correctly.
 
-That will make our database easier to comprehend while also making our queries work easier and faster.
-
-Designing the data is a crucial part of creating a database.
+That will make our database **easier to comprehend** while also making our queries work faster.
 
 These are the six steps of database design:
 
-1. Identificatiion of entities
-2. Defining table columns
-3. Defining primary keys
-4. Modeling relationships
-5. Defining constraints
-6. Filling test data
+1. **Identificatiion** of entities
+2. Defining table **columns**
+3. Defining **primary keys**
+4. Modeling **relationships**
+5. Defining **constraints**
+6. Filling **test data**
 
 [/slide]
 
@@ -27,31 +25,42 @@ These are the six steps of database design:
 
 When designing a database, the first thing we should consider is **defining its entities**.
 
-This process is complex, and you should always pay attention to defining the entities correctly. 
+This process is complex, and you should always pay attention to defining them **correctly**. 
 
-The first thing to realize is that the entities are nothing more than a real-world object, and your job is to find these objects and define their characteristics in the given context.
+The first thing to realize is that the entities are nothing more than a real-world **object**.
+
+Your job is to **find** these objects and define their **characteristics** in the given context.
 
 We usually receive specifications for our software, in which we can find the information we needed, for the process of defining the entities. 
 
 **Most often, the nouns in the given specification are our entities.**
 
 ## Specification
+
 We need to develop a system that stores information about **students** enrolled in various courses. 
+
 The **courses** are held in different **towns**. 
-When registering a new student, we must enter the following information: name, faculty number, photo, and date.
- 
 
-Entities: **Student**, **Course**, **Town**
+When registering a **new student**, we must enter the following information: 
+ - **Name**
+ - **Faculty number**
+ - **Photo**
+ - **Date**
 
-As evident above, the nouns from our specification became our entities.
+There are **three** entities we must define:
+- **Student**
+- **Course**
+- **Town**
+
+As evident above, the **nouns** from our specification became our entities.
 
 [/slide]
 
 [slide hideTitle]
 
-## Identification of the Columns
+# Identification of the Columns
 
-After figuring out which are our entities, now we should consider what characteristics they have. 
+After figuring out which are our entities, now we should consider what **characteristics** they have. 
 
 This step also plays a significant role in our database design as this will determine what information we are going to store for our entities.
 
@@ -65,7 +74,7 @@ When registering a new student the following information is entered: **name**, *
 
 
 Columns: 
-- Student: **name**, **faculty number**, **photo date of enlistment**, **list of courses**
+- Student: **name**, **faculty number**, **photo**, **date of enlistment**, **list of courses**
 - Course: **town**
 
 
@@ -73,7 +82,7 @@ Columns:
 
 [slide hideTitle]
 
-## Choosing a Primary Key
+# Choosing a Primary Key
 
 The primary key is the **identity of your entity** - it is what makes each row inside unique.
 
@@ -102,7 +111,7 @@ If you want a unique primary key, which is harder to guess, you should consider 
 
 [slide hideTitle]
 
-## Types of Relationships
+# Types of Relationships
 
 In relational databases there are three types of relations: 
 
@@ -110,11 +119,14 @@ In relational databases there are three types of relations:
 - **One-to-Many** / **Many-to-One**
 - **Many-to-Many**
 
+In the following slides, we will take a closer look at them.
 
 ## Specification
 
 We need to develop a system that stores information about **students, who are trained in various courses**.
+
 The **courses are held in different towns**.
+
 When registering a new student, the following information is entered: **name**, **faculty number**, **photo** and **date**.
 
 - **"Students are trained in courses."** can be paraphrased to **"Many students are trained in many courses."**, which is a **Many-to-Many** relationship
