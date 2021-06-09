@@ -28,7 +28,7 @@ SELECT SUBSTRING('softuni.org', 2);
 oftuni.org
 ```
 
-### Using `SUBSTRING()` With A Length Parameter
+### Using SUBSTRING() With A Length Parameter
 
 The second way of using our `SUBSTRING()` is by passing in a length:
 
@@ -50,7 +50,7 @@ SELECT SUBSTRING('softuni.org', 1, 3);
 sof
 ```
 
-### Using `SUBSTRING()` With `FROM` and `FOR`
+### Using SUBSTRING() With FROM and FOR
 
 We can use the `SUBSTRING()` method with `FROM` and `FOR` too:
 
@@ -69,7 +69,7 @@ SELECT SUBSTRING('softuni.org' FROM 2 FOR 5);
 The **output** will be:
 
 ```
-ouftun
+oftun
 ```
 
 [/slide]
@@ -130,6 +130,8 @@ SELECT REPLACE('aaa.softuni.org','a','w'); # In this example, "a" will be replac
 www.softuni.org
 ```
 
+## Replacing Entire Words
+
 Using this method, we can **replace entire words**:
 
 ``` java
@@ -142,7 +144,7 @@ Then, we write the **word** we need to replace.
 
 And finally, we pass in the **replacement** symbols or characters.
 
-## The output is:
+**The output is:**
 
 ```
 We can replace the word ***** with a different symbol or word.
@@ -168,12 +170,14 @@ Extract data about the updated titles.
 
 The **LTRIM()** and **RTRIM()** functions remove whitespace characters from a string, passed as an argument.
 
-We can use the function as follows:
+We can use the functions as follows:
 
 ``` java
 LTRIM(String)
 RTRIM(String)
 ```
+
+## LTRIM()
 
 Let us take a look at this simple example:
 
@@ -187,7 +191,9 @@ The `LTRIM()` function will trim the spaces at the beginning of the string, befo
 SoftUni rocks!
 ```
 
-The same principle is valid for the `RTRIM()` function, but this time it will remove the trailing spaces at the end after the text:
+## RTRIM()
+
+The same principle is valid for the `RTRIM()` function, but this time it will remove the trailing spaces at the **end**, after the text:
 
 ``` java
 SELECT RTRIM('SoftUni rocks! ')
@@ -205,7 +211,7 @@ SoftUni rocks!
 
 # The CHAR_LENGTH() & LENGTH() Functions
 
-## `CHAR_LENGTH()`
+## CHAR_LENGTH()
 
 The `CHAR_LENGTH()` function will return the length of the provided string. 
 
@@ -221,7 +227,7 @@ Keep in mind that this will count the **whitespaces** too.
 45
 ```
 
-## `LENGTH()`
+## LENGTH()
 
 The `LENGTH()` function will return the **same result** from the input above.
 
@@ -253,7 +259,9 @@ LEFT(String, Count)
 RIGHT(String, Count)
 ```
 
-**Example**:
+## LEFT()
+
+This is an **example** use of `LEFT()`:
 
 ``` java
 SELECT LEFT('Testing Left Function', 4); 
@@ -266,6 +274,8 @@ The above syntax returns the **first four** characters from the left side of our
 ```
 Test
 ```
+
+## RIGHT()
 
 Similarly, the `RIGHT()` function will return the first **N** characters on the right of the provided string.
 
@@ -288,6 +298,8 @@ ction
 
 # The LOWER() & UPPER() Functions
 
+## LOWER()
+
 The `LOWER()` function converts all characters in the provided string to **lowercase** letters.
 
 **Example**:
@@ -301,6 +313,8 @@ SELECT LOWER('MYSQL IS AWESOME');
 ```
 mysql is awesome
 ```
+
+## UPPER()
 
 Similarly, use the `UPPER()` function to convert all characters to **uppercase** letters.
 
@@ -322,6 +336,8 @@ THIS IS AN UPPERCASE STRING
 
 # The REVERSE() & REPEAT() Functions
 
+## REVERSE()
+
 The `REVERSE()` function allows us to reverse the order of all characters in the provided string.
 
 **Example**:
@@ -337,6 +353,8 @@ The code above will reverse the characters in the "**softuni**" string.
 ```
 inutfos
 ```
+
+## REPEAT()
 
 The `REPEAT()` function allows us to repeat a string a specified number of times.
 
@@ -358,6 +376,8 @@ softuni softuni softuni
 [slide hideTitle]
 
 # The LOCATE() & INSERT() Functions
+
+## LOCATE()
 
 The `LOCATE()` function in MySQL lets us locate a specific pattern (substring) in our string.
 
@@ -386,6 +406,8 @@ SELECT LOCATE('st','teststring');
 ```
 3
 ```
+
+## INSERT()
 
 The `INSERT()` function allows us to insert substring at a specific position.
 

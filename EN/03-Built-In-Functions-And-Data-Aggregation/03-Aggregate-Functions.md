@@ -26,7 +26,7 @@ FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
 
-This SQL query will produce the following result:
+This SQL query will produce the following **result**:
 
 | department_id | MinSalary | 
 | --- | --- |

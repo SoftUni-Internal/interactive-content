@@ -20,10 +20,17 @@ Here is the table of **supported arithmetic operators:**
 
 Let us take a look at some **Math** functions.
 
-- `PI()` - returns the PI value
-    * it has a 15 digit precision
+## PI()
 
-- `ABS()` - returns the absolute value of an number
+`PI()` returns the **PI** value.
+
+It has a **15 digit** precision.
+
+PI is approximately equal to **3.14159**.
+
+## ABS()
+
+`ABS()` returns the **absolute value** of a number.
 
 ``` java
 SELECT ABS(-243.5);
@@ -34,7 +41,9 @@ SELECT ABS(-243.5);
 243.5
 ```
 
-- `SQRT()` - Returns the square root of a number passed as an argument
+## SQRT()
+
+`SQRT()` returns the **square root** of a number passed as an argument.
 
 ``` java
 SELECT SQRT(1024);
@@ -46,7 +55,9 @@ SELECT SQRT(1024);
 32
 ```
 
-- `POW()` - Returns the result of raising a number to the power of another number passed as an argument
+## POW()
+
+`POW()` returns the result of raising a number to the **power** of another number passed as an argument.
 
 ``` java
 SELECT POW(5, 2);
@@ -58,20 +69,29 @@ SELECT POW(5, 2);
 25
 ```
 
-- `CONV()` - This function converts a number from one numeric system to another
+## CONV()
 
+The `CONV()` function **converts** a number from one numeric system to another.
 
 ``` java
-SELECT CONV(15, 10, 2); // The first argument is "value", second is "from_base", third "to_base"
+SELECT CONV(15, 10, 2); 
 ```
+
+It accepts three arguments:
+
+- "**value**": 15
+- "**from_base**": in this case, decimal - 10
+- "**to_base**": 2 (binary)
 
 **Output:**
 
 ```
-12
+1111
 ```
 
-- `ROUND()` - Rounds the number to precision passed as an argument
+## ROUND()
+
+As the name suggests, `ROUND()` is used to round a number to a **precision** passed as an argument.
 
 ``` java
 SELECT ROUND(10.5021401, 2); 
@@ -83,7 +103,9 @@ SELECT ROUND(10.5021401, 2);
 10.50
 ```
 
-- `FLOOR()` - Returns the value as an integer, smaller or equal to the number passed as an argument
+## FLOOR()
+
+`FLOOR()` returns the value as an **integer**, **smaller or equal to** the number passed as an **argument**.
 
 ``` java
 SELECT FLOOR(11.85);
@@ -95,7 +117,9 @@ SELECT FLOOR(11.85);
 11
 ```
 
-- `CEILING()` - Returns an integer number greater than or equal to the number passed as an argument
+## CEILING()
+
+`CEILING()` returns an **integer** number **greater than or equal to** the number passed as an argument.
 
 ``` java
 SELECT CEILING(6.55);
@@ -107,9 +131,11 @@ SELECT CEILING(6.55);
 7
 ```
 
-- `SIGN()` - This function returns the sign of a number depending on the value passed as an argument
+## SIGN()
 
-**Example**:
+The `SIGN()` function returns the **sign** of a number depending on the value passed as an argument.
+
+**Example:**
 
 If we have a number **higher than 0**, it will return **1**.
 
@@ -126,14 +152,16 @@ SELECT SIGN(-5);
 -1
 ```
 
-- `RAND()` - Returns a float number between 0 and 1 exclusively
+## RAND()
+
+`RAND()` returns a **float** number between 0 and 1 exclusively.
 
 If **Seed** is not specified, it will return a completely random number. 
 
-If we use **seed**, it will return a sequence of random numbers.
+If we use **Seed**, it will return a sequence of random numbers.
 
 ``` java
-SELECT RAND(); // It will return a completely random number
+SELECT RAND(); # It will return a completely random number
 ```
 
 **Output:**
