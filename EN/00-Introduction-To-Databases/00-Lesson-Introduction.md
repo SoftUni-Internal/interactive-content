@@ -1726,7 +1726,8 @@ select ufn_count_employees_by_town("San Francisco")
 
 # Problem with Solution: Create Tables
 
-[code-task title="Problem: Create Tables" taskId="mysql-run-Create-Tables" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput] [code-editor language=sql]
+[code-task title="Problem: Create Tables" taskId="Create-Tables" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+[code-editor language=sql]
 
 ```
 
