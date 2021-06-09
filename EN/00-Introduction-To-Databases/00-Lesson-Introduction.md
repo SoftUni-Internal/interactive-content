@@ -1722,3 +1722,123 @@ select ufn_count_employees_by_town("San Francisco")
 [/code-task]
 [/slide]
 
+[slide hideTitle]
+
+# Problem with Solution: Create Tables
+
+[code-task title="Problem: Create Tables" taskId="mysql-run-Create-Tables" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput] [code-editor language=sql]
+
+```
+
+```
+[task-description]
+## Description
+Description ...
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+SELECT lower(TABLE_NAME), lower(COLUMN_NAME) 
+FROM information_schema.COLUMNS 
+WHERE TABLE_SCHEMA = database()
+    and lower(TABLE_NAME) = 'minions'
+order by lower(COLUMN_NAME);
+
+SELECT DISTINCT lower(column_name)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'minions'
+    order by lower(COLUMN_NAME);
+
+SELECT lower(TABLE_NAME), lower(COLUMN_NAME) 
+FROM information_schema.COLUMNS 
+WHERE TABLE_SCHEMA = database()
+    and lower(TABLE_NAME) = 'towns' AND lower(COLUMN_NAME) = 'town_id'
+ORDER by lower(COLUMN_NAME);
+[/input]
+[output]
+minions
+age
+minions
+id
+minions
+name
+id
+towns
+town_id
+[/output]
+[/test]
+[test]
+[input]
+SELECT DISTINCT lower(TABLE_NAME) as t
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'minions';
+[/input]
+[output]
+minions
+[/output]
+[/test]
+[test]
+[input]
+SELECT lower(COLUMN_NAME) 
+FROM information_schema.COLUMNS 
+WHERE TABLE_SCHEMA = database()
+    and lower(TABLE_NAME) = 'minions'
+order by lower(COLUMN_NAME);
+[/input]
+[output]
+age
+id
+name
+[/output]
+[/test]
+[test]
+[input]
+SELECT DISTINCT lower(column_name)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'minions';
+[/input]
+[output]
+id
+[/output]
+[/test]
+[test]
+[input]
+SELECT DISTINCT lower(TABLE_NAME) as t
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'towns';
+[/input]
+[output]
+towns
+[/output]
+[/test]
+[test]
+[input]
+SELECT lower(COLUMN_NAME)
+FROM information_schema.COLUMNS 
+WHERE TABLE_SCHEMA = database() AND lower(TABLE_NAME) = 'towns' AND lower(COLUMN_NAME) = 'town_id';
+[/input]
+[output]
+town_id
+[/output]
+[/test]
+[test]
+[input]
+SELECT DISTINCT lower(column_name)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'towns' AND lower(COLUMN_NAME) = 'town_id';
+[/input]
+[output]
+town_id
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
