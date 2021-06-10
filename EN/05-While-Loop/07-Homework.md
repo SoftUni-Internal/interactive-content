@@ -574,7 +574,7 @@ END
 Increase: 5.51
 Increase: 69.42
 Increase: 100.00
-Total: Total: 174.93
+Total: 174.93
 [/output]
 [/test]
 [test]
