@@ -475,13 +475,18 @@ Intern
 [/code-task]
 [/slide]
 
+
+
 [slide hideTitle]
 # Problem with Solution: Triggered
-
-[code-task title="Triggered" taskId="java-dn-and-mysql-triggered" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+[code-task title="Triggered" taskId="java-db-and-mysql-triggered" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
-
+INSERT INTO coaches (first_name, last_name, salary, coach_level)
+SELECT p.first_name AS first_name, p.last_name AS last_name, p.salary * 2 AS salary,
+CHAR_LENGTH(p.first_name) AS coach_level
+FROM players AS p
+WHERE age >= 45
 ```
 [/code-editor]
 [code-adapter]
