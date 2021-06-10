@@ -38,7 +38,7 @@ The notification **below each button** should display the **status** of the **fo
 
 # Valid and Invalid Cases
 
-## Valid Cases
+## Invalid Cases
 In case some of the input fields аrе invalid, the following **input field** should be styled with class **input-error**, which has the following style: 
 
 ```css
