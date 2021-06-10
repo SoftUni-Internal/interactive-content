@@ -13,6 +13,7 @@ WHERE age >= 45
 ```
 [/code-editor]
 [code-adapter]
+```
 CREATE TABLE countries(
 	id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(45) NOT NULL
@@ -634,6 +635,7 @@ insert into players_coaches(player_id , coach_id) VALUE (90, 5);
 insert into players_coaches(player_id , coach_id) VALUE (4, 6);
 insert into players_coaches(player_id , coach_id) VALUE (39, 10);
 insert into players_coaches(player_id , coach_id) VALUE (71, 8);
+```
 [/code-adapter]
 [task-description]
 ## Description
@@ -650,7 +652,6 @@ SELECT COUNT(id) FROM coaches;
 30
 [/output]
 [/test]
-
 [test]
 [input]
 SELECT c.id,c.first_name,coach_level FROM coaches as c

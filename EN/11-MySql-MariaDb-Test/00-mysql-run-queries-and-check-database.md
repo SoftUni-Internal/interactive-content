@@ -151,7 +151,6 @@ id
 name
 [/output]
 [/test]
-
 [test]
 [input]
 SELECT COLUMN_TYPE FROM INFORMATION_SCHEMA.COLUMNS
