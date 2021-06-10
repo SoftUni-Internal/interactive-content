@@ -14,46 +14,48 @@ Implement the following **validation**, **notification** and **styling rules** f
 
 **By default:** 
 
-- The input fields are **neutral** (neither valid nor invalid). 
+- The input fields are **neutral** (neither valid nor invalid)
+  * if some of the fields are **touched**, you should determine the status of validation from the given data inside it
 
-If some of the fields are touched, you should determine the status of validation from the given data inside it.
-
-- Each input field is **required**.
+- Each input field is **required**
 
 **Notifications** should be shown as paragraph (`<p>`) elements **below** each input field or button.
 
-The notification **below each button** should display the **status** of the form **validation**: 
+The notification **below each button** should display the **status** of the **form validation**: 
 
-- If the status is **untouched** or **valid** the **left border** of the input field must be green, else red.
 
-- If the status is invalid, use - `You can't continue until you provide valid data` as text or the default text provided from the skeleton. 
+- If the status is invalid, use - "**You can't continue until you provide valid data**" as text
 
 **The color** inside that paragraph should be "red" and the **button** should be **disabled**.
 
-- If the status is **valid** just **remove** the notification and **enable** the **button**.
+- If the status is **valid** just **remove** the notification and **enable** the **button**
 
-Check the examples below each form for more clarity. 
+**Check the examples below each form for more clarity.**
 
 [/slide]
 
 [slide hideTitle]
 
-# Valid or Invalid Cases
+# Valid and Invalid Cases
 
-- **Valid Cases**
-In case some of the input fields аrе invalid, the following **input field** should be styled with class input-error, which has the following style: 
+## Valid Cases
+In case some of the input fields аrе invalid, the following **input field** should be styled with class **input-error**, which has the following style: 
 
 ```css
-border-left-color: red;
+.input-error { 
+  	margin-bottom: 10px; 
+   color: red;  
+  	font-weight: bold; 
+} 
 ```
 
-And **notification** should be shown with information about the validation. 
+And a **notification** should be shown with information about the validation. 
 
-The text inside that paragraph also should be red. 
+The text inside that paragraph also should be **red**. 
 
-- **Invalid Cases**
+## Valid Cases
 
-When the input field is filled with **valid** information, the class input-error should be **disabled** or **removed** so the left border should be green again.
+When the input field is filled with **valid** information, the class **input-error** should be **disabled / removed**.
 
 [/slide]
 
@@ -61,29 +63,25 @@ When the input field is filled with **valid** information, the class input-error
 
 # Reactive Forms 
 
-Use the **model driven** (**reactive**) **approach** to build login and the **register** form. 
+Use the **model driven** (**reactive**) **approach** to build the login and **register** forms. 
 
 ## Login
 
-Valid credentials in this case are: 
+The login form expects an **email** and a **password** as input.
 
-- **Email address** must have at least 6 symbols, after that the symbol `@` is followed. 
+Valid credentials are: 
 
-The valid domain name is only `Gmail` again followed by `.`. 
+- **Email address** must have at least 6 symbols, and the symbol `@` after that
+   * the only valid **domain name** is `gmail` followed by a full stop "**.**". 
+   * the top-level domain can only be `com`
+   * **valid** email addresses: `testing@gmail.com`, `something.else@gmail.com`
+   * **invalid** email addresses: `qwe@gmail.com`
 
-The top-level domain can be `bg` or `com`. 
-
-   - **Valid** email addresses: `testing@gmail.com`, `testing@gmail.bg`, `something.else@gmail.com`. 
-
-   - **Invalid** email addresses: `qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`.
-
-- **Password** should be at least **5 symbols** as well
+- The **password** should be at least **5 characters** long
 
 [image assetsSrc="Angular-Forms-Workshop-1.png" /]
 
 [image assetsSrc="Angular-Forms-Workshop-2.png" /]
-
-[image assetsSrc="Angular-Forms-Workshop-3.png" /]
 
 [/slide]
 
@@ -91,70 +89,63 @@ The top-level domain can be `bg` or `com`.
 
 # Register
 
-The register form expects as input: **username**, **email**, **password**, **repeat password** and **telephone number** (not required).
+The register form expects: **a username**, **an email**, **a password**, **a password repeat** and **a telephone number** (not required).
 
-**Username validation** here is:
+**Username validation**:
 
-- Should have at least **5 symbols** and is **required**.
+- Should be least **5 characters** long and is **required**
 
-**Email validation** here is the same as the log in case:
+**Email validation** for this purpose is the same as the login case:
 
-- Should have at least 6 symbols, after that the symbol of `@` is followed. 
+- Should be at least 6 characters long, followed by `@` 
+   * the only valid domain name is `gmail`, followed by a full stop "**.**"
+   * the top-level domain can only be `com`
+   * valid email addresses: `testing@gmail.com`, `something.else@gmail.com`
+   * invalid email addresses: `qwe@gmail.com`
 
-The valid domain name is only `Gmail` again followed by `.`. 
+**Both passwords** should be placed in the "**passwords**" group. 
 
-The top-level domain can be `bg` or `com`.
+The validation process is:
 
-   - Valid email addresses: `testing@gmail.com`, `testing@gmail.bg`, `something.else@gmail.com`.
+- The entered **password** should be at **least 5 characters** (any English letters and/or digits are allowed)
 
-   - Invalid email addresses: `qwe@gmail.com`, `123@gmail.bg`, `somethingelse@abv.bg`, `another@abv.com`.
+- The given **password repeat** should be the **same** as the password
 
-**Both passwords** should be grouped in the "**passwords**" group. 
+**Both fields** are considered **invalid** if one of them **does not cover** the described details. 
 
-The validation here is:
+If that happens, apply the **invalid stylization for both**. 
 
-- The given **password** should be at **least 5 characters** (any English letter and digits are allowed).
+Otherwise, the **valid stylization** is applied.
 
-- The given **repeat password should** be the **same** as the given password.
-
-**Both fields** are considered **invalid** if some of them **do not cover** the described validation. 
-
-If that happens apply the **invalid stylization for both**. 
-
-Otherwise the **valid stylization** is applied.
+[image assetsSrc="Angular-Forms-Workshop-3.png" /]
 
 [image assetsSrc="Angular-Forms-Workshop-4.png" /]
-
-[image assetsSrc="Angular-Forms-Workshop-5.png" /]
-
-[image assetsSrc="Angular-Forms-Workshop-6.png" /]
 
 
 [/slide]
 
 [slide hideTitle]
 
-# Template-driven Forms
+# Template-Driven Forms
 
-Use the **template-driven approach** to build the **create new theme** and the **change user information** form.
-
+Use the **template-driven approach** to build the **"create new theme"** form and the **"change user information"** form.
 
 ## New Theme
 
-The new theme form expects as input: **theme name**, **post text**.
+The new theme form expects as input: a **theme name**, a **post text**.
 
-Valid data in this case is:
+Data validation:
 
-- **Theme name**: should be at **least 5 characters** long.
+- **Theme name**: should be at **least 5 characters** long
 
-- **Post text**: should be at **least 10 characters** long.
+- **Post text**: should be at **least 10 characters** long
 
-The `Post` button should be **disabled** if the inputs are **NOT** valid.
+The "**Post**" button should be **disabled** if the input is **NOT** valid.
 
 
-[image assetsSrc="Angular-Forms-Workshop-7.png" /]
+[image assetsSrc="Angular-Forms-Workshop-5.png" /]
 
-[image assetsSrc="Angular-Forms-Workshop-8.png" /]
+[image assetsSrc="Angular-Forms-Workshop-6.png" /]
 
 [/slide]
 
@@ -162,39 +153,35 @@ The `Post` button should be **disabled** if the inputs are **NOT** valid.
 
 # Change Profile Information
 
-When you are logged in you can see your **profile information**.
+When logged in, a user should be able to see their **profile information**.
 
-[image assetsSrc="Angular-Forms-Workshop-9.png" /]
+[image assetsSrc="Angular-Forms-Workshop-7.png" /]
 
-By clicking the `Edit` button, the profile information should be turned into **form with editable fields**. 
+By clicking the `Edit` button, the profile information should be turned into a **form with editable fields**. 
 
-The input fields should have the current information of the user.
+The input fields should still hold the current information of the user.
 
-[image assetsSrc="Angular-Forms-Workshop-10.png" /]
+[image assetsSrc="Angular-Forms-Workshop-8.png" /]
 
 **Username validation** here is the same as the register case:
 
-- Should have at least **5 symbols** and is **required**.
+- Should contain at least **5 symbols** and is **required**
 
 **Email** validation is the same as the login and register cases:
 
-- Should have at least **6 symbols**, after that the symbol of `@` is followed. 
-
-The valid domain name is only `Gmail` again followed by `.`.
-
-The top-level domain can be `bg` or `com`.
-
-   - **Valid** email addresses: `testing@gmail.com`, `testing@gmail.bg`, `somethingelse@gmail.com`.
-
-   - **Invalid** email addresses:`qwe@gmail.com`,`123@gmail.bg`, `somethingelse@abv.bg`,`another@abv.com`.
+- Should be at least **6 symbols** long, followed by `@` 
+   * the only valid domain name is `gmail` followed by a full stop "**.**"
+   * the top-level domain can only be `com`
+   * **valid** email addresses: `testing@gmail.com`, `somethingelse@gmail.com`
+   * **invalid** email addresses: `qwe@gmail.com`,`123@gmail.com`
 
 If the validation passes, the `Save` button should be enabled, and the user can make a **post** request to change the information.
 
-If the `Cancel` button is clicked all changes must be **reverted**, and the user information should be displayed **unchanged**.
+If the `Cancel` button is clicked all changes must be **reverted**,  the user information should then be displayed **unchanged**.
 
 ## Custom Directives
 
-Think about for a second which logic can be isolated in custom directive so you avoid repeating part of the code.
+Can any of the functionalities be isolated in a custom directive, to avoid repeating parts of the code?
 
 **Hint: Stylization / Validation**
 
