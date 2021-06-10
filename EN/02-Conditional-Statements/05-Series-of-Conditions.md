@@ -58,7 +58,7 @@ if (num == 1) {
 }
 ```
 
-The program **sequentially compares** the input number with the digits from 1 to 9,**each following comparison is being performed only in case the previous comparison was not true**. 
+The program **sequentially compares** the input number with the digits from 1 to 9, **each following comparison is being performed only in case the previous comparison was not true**. 
 
 Eventually, if none of the `if` statements are true, the `else` **clause** is performed.
 [/slide]

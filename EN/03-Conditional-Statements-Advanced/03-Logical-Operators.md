@@ -27,7 +27,7 @@ if ((animal == "horse" || animal == "donkey") && (speed > 40)) {
 }
 ```
 
-Let us explain the logical **AND** (`&&`), the logical **OR** (`||`), and the logical **NOT** (`!`) in the next few sections, along with examples and exercises.
+Let us explain the logical **AND** (`&&`), the logical **OR** (`||`) and the logical **NOT** (`!`) in the next few sections, along with examples and exercises.
 [/slide]
 
 [slide hideTitle]
@@ -35,7 +35,7 @@ Let us explain the logical **AND** (`&&`), the logical **OR** (`||`), and the lo
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-19-logical-and-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-As we saw, in some tasks we have to perform **more than one check at once**. 
+As already pointed out, in some tasks **multiple checks** have to be performed.
 
 The logical **AND** operator (`&&`) helps us check several conditions **simultaneously**. 
 
@@ -58,7 +58,7 @@ Using it instead of a couple of nested `if` blocks, makes the code **more legibl
 
 There is a particular execution flow when using more than one logical operator.
 
-As we saw, the logical **AND** returns `true` **only** when both its operands are `true`.
+As previously explained, the logical **AND** returns `true` **only** when both its operands are `true`.
 
 So a sequence of logical **AND** comparisons returns `false` as a result if one of the boolean variables is `false` and `true` if all variables hold `true` values.
 
@@ -99,7 +99,7 @@ The input data is read from the console and consists of 6 lines:
 |-1||
 
 ## Solution
-A point is internal for a given polygon if the following four conditions are applied at the same time:
+A point is internal for a given rectangle if the following four conditions are applied at the same time:
 -  The point is placed to the right from the left side of the rectangle
 -  The point is placed to the left from the right side of the rectangle
 -  The point is placed downwards from the upper side of the rectangle

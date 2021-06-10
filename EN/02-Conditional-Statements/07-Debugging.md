@@ -4,7 +4,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-32-34-debugging-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Now we take look into a commonly used instrument that can help us find errors in our code: **the debugger**.
+Now we take a look into a commonly used instrument that can help us find errors in our code: **the debugger**.
 
 ## What is "Debugging"?
 **Debugging** is the process that allows us to **track the execution of a program step by step**. 

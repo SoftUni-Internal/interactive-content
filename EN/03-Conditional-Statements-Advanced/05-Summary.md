@@ -47,7 +47,7 @@ switch (selector) {
 }
 ```
 
-  * Plcaing Multiple Labels in a **Switch-Case**
+  * Placing Multiple Labels in a **Switch-Case**
 
 ## In the next lesson you will learn:
 

@@ -19,7 +19,7 @@ if (condition1) {
 ```
 
 ## Example: Personal Titles
-Depending on someones **age** (integer) and their **gender** (**m** / **f**), print their personal title:
+According to someone's **age** (integer) and their **gender** (**m** / **f**), print their personal title:
 -  "Mr." - a man (gender "m") - 16 or older
 -  "Master" - a boy (gender "m") - under 16 years old
 -  "Ms." - a woman (gender "f") – 16 or older

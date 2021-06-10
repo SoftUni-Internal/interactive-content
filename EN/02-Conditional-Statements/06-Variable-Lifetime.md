@@ -19,7 +19,7 @@ Therefore, it is important to know that **any variable defined inside the body o
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-30-31-variable-scope-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In the example below, on the last line we are trying to print out the `salary` variable that is defined inside the `if` statement, this will result in an **error** because we do not have access to it.
+In the example below, trying to print out the variable `salary` that is defined inside the `if` statement, this will result in an **error** because we do not have access to it.
 
 ```java
 int myMoney = 500;

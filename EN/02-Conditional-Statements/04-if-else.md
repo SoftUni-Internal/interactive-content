@@ -68,7 +68,7 @@ When we want to execute a **block of code** (a group of commands), the curly bra
 
 In case we omit them, **only the first line** after the **if clause** will be executed.
 
-Here is an example where dropping the curly brackets changes the order of execution completely:
+Here is an example where removing the curly brackets changes the order of execution completely:
 ```java live
 String color = "red";
 if (color.equals("red")) 

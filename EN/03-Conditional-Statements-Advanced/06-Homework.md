@@ -471,9 +471,12 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-Create a program that calculates vacation expenses according to the following instructions:
+Create a program that calculates vacation expenses based on the following factors.
 
-* Reads: a **season**, the **accommodation type** and the **numer of days**
+- Season
+- Accommodation type
+- Number of days
+
 * Prints the total expenses, based on the price table bellow, formatted to the 2nd digit after the decimal point
 
 |**Season**|**Hotel**|**Camping**|**Discount**|
@@ -1149,7 +1152,7 @@ public class Main {
 
 ## Example: Personal Titles
 
-Depending on someones **age** (integer) and their **gender** (**m** / **f**), print their personal title:
+Depending on someone's **age** (integer) and **gender** (**m** / **f**), print their personal title:
 -  "Mr." - a man (gender "m") - 16 or older
 -  "Master" - a boy (gender "m") - under 16 years old
 -  "Ms." - a woman (gender "f") - 16 or older
@@ -2132,9 +2135,9 @@ public class Main {
 Tony and his friends decided to rent a fishing boat - the rent depends on the **season** and the **number** of fishermen.
 
 **The boat rental price** according to the **season** is:
-- **Spring - 3000 $**
-- **Summer/Autumn - 4200 $**
-- **Winter - 2600 $**
+- **Spring - $3000**
+- **Summer/Autumn - $4200**
+- **Winter - $2600**
 
 **The price** based on the **number** of fishermen is **discounted** in the following amounts:
 - **Up to 6 people (inclusive) - 10% discount**
@@ -2148,7 +2151,7 @@ If it is **autumn** - they do **NOT** get an additional discount.
 Create a **program** to **calculate** whether the fishermen will have **enough** money for the boat.
 
 ## Input
-The input holds **3 lines**:
+The input consists of **3 lines**:
 - The **budget** of the group - real number in range \[1 .... 8000\]
 - **Season**  - String : "**Spring**", "**Summer**", "**Autumn**", "**Winter**"
 - **Number** of fishermen - integer in range \[4 .... 18\]
@@ -2183,9 +2186,9 @@ Print out a **single** line:
 [hints]
 [hint]
 Determine the discount for the fishermen and if there's any additional discount.
-In the summer fishing costs 4200$
-**11 fishermen take 15% discount** -> **4200 - 15% = 3570** $, their number is **odd** so they do **not** use **additional** discount.
-3000 <= 3570, hence they need 570.00 $ more
+In the summer fishing costs $4200
+**11 fishermen take 15% discount** -> **4200 - 15% = $3570** , their number is **odd** so they do **not** use **additional** discount.
+3000 <= 3570, hence they need $570.00 more
 [/hint]
 [hint]
 Print the correct output.

@@ -642,7 +642,7 @@ Let us assume that 1 square meter of land yields **Y kilos of grapes**. This val
 
 To produce **1 liter** we need **2.5kg of grapes**.
 
-The company has a goal for the number of liters they need to produce for sale. You will also receive this as input.
+The company has set a goal to produce a certain volume of wine. That number will be in litres and you will receive it as input.
 
 Create a program that calculates how much wine can be produced and whether this quantity is enough for the company to reach its production goal.
 
@@ -653,7 +653,7 @@ You will receive the following as input from the console:
 - **The size of the vineyard** in square meters - an integer in range \[10 … 5000\]
 - **The yield per sq. m** - a floating-point number in range \[0.00 … 10.00\]
 - **The production goal in liters** - an integer in range \[10 … 600\]
-    - Remember that this particular vineyard is responsible for only 40% of the total production
+    - remember that this particular vineyard is responsible for only 40% of the total production
 - **Number of workers** - an integer in range \[1 … 20\]
 
 ## Output
@@ -841,7 +841,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that receives two integers representing an exact time in the format: **"\{hours\}:\{minutes\}"** and prints out what the time will be after 15 minutes.
+Create a program that receives two integers representing an exact time in the format: "\{**hours**\}:\{**minutes**\}" and prints out what the time will be after 15 minutes.
 
 ## Input
 The input consists of **two** lines:
@@ -1437,26 +1437,25 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-A pool with a **volume of V** is filled by **two pipes**.
 
-Each pipe has a maximal transfer volume per hour
+- To fill a swimming pool two pipes are to be used
+- Its volume is **V** litres
+- Each pipe has a constant flow rate
+- Both pipes are **opened** simultaneously and left running for N hours
 
-A worker turns on both pipes **at the same time** and leaves them running for **N hours**. 
-
-Create a program that calculates the water level in the pool **at the moment the worker comes back**.
+Create a program that calculates the volume of water in the pool **after the specified time runs out**.
 
 ## Input
 **Four** lines of input:
-- **V** - **The volume of the pool in liters** - integer in range \[1 ... 10000\]
-- **P1** - **flow of the first pipe per hour** - integer in range \[1 ... 5000\]
-- **P2** - **flow of the second pipe per hour** - integer in range \[1 ... 5000\]
-- **H** - **hours the worker is away** - float-pointing number in range \[1.0 ... 24.00\]
+- **V** - **Volume of water in litres** - integer in range \[1 ... 10000\]
+- **P1** - **flow rate of first pipe per hr** - integer in range \[1 ... 5000\]
+- **P2** - **flow rate of second pipe per hr** - integer in range \[1 ... 5000\]
+- **H** - **hrs the pipes are left opened** - float-pointing number in range \[1.0 ... 24.00\]
 
 ## Output
 Print out **one of the following outcomes**:
 - How full the pool is and the percentage of water each pipe transferred to the pool in the process
-  - "**The pool is** \**{percentage of volume**\}% **full.** **Pipe 1:** \{**transferred percentage**\}**%.** **Pipe 2:** \{**transferred percentage**\}**%.**"
-  - 
+  - "**The pool is** \{**percentage of volume**\}% **full.** **Pipe 1:** \{**transferred percentage**\}**%.** **Pipe 2:** \{**transferred percentage**\}**%.**"
 - If the pool is overflowing – the volume of unnecessary water transferred
   - "**For** \{**amount of time**\} **hours the pool overflows with** \{**liters of unnecessary water transferred**\} **liters.**"
 - All numbers in the output should be formatted up to the 2nd digit after the decimal point

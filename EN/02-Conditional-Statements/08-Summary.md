@@ -25,7 +25,7 @@ if (condition) {
 }
 ```
 
-- How to perform Series of Checks: **if-else-if-else-if...**
+- How to Perform a Series of Checks: **if-else-if-else-if...**
 
 ```java
 if (condition) {
