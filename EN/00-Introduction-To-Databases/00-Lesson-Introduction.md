@@ -1,7 +1,7 @@
 # Homework
 
 [slide hideTitle]
-# Problem with Solution: Triggered
+# Problem with Solution: Triggered - mysql-run-skeleton-run-queries-and-check-database
 [code-task title="Triggered" taskId="java-db-and-mysql-triggered" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
@@ -1762,6 +1762,202 @@ employee_id
 1
 Deborah
 Poe
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
+
+
+
+[slide hideTitle]
+# Find All Information About Departments - mysql-prepare-db-and-run-queries
+[code-task title="Find All Information About Departments" taskId="java-db-and-mysql-find-all-information-about-departments" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-editor language=sql]
+```
+SELECT MAX(`sd`.`speed`) AS `max_speed`,`t`.`name` AS `town_name` FROM `skills_data` AS `sd`
+RIGHT JOIN `players` AS `p`
+ON `sd`.`id` = `p`.`skills_data_id`
+RIGHT JOIN `teams` AS `te`
+ON `p`.`team_id` = `te`.`id`
+RIGHT JOIN `stadiums` AS `st`
+ON `te`.`stadium_id` = `st`.`id`
+RIGHT JOIN `towns` AS `t`
+ON `st`.`town_id` = `t`.`id`
+WHERE `te`.`name` != 'Devify'
+GROUP BY `t`.`name`
+ORDER BY `max_speed` DESC, `t`.`name`;
+```
+[/code-editor]
+[task-description]
+## Description
+Description ...
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `PK_Departments` (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+
+/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
+INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
+	(1, 'Engineering', 12),
+	(2, 'Tool Design', 4),
+	(3, 'Sales', 273),
+	(4, 'Marketing', 46),
+	(5, 'Purchasing', 6),
+	(6, 'Research and Development', 42),
+	(7, 'Production', 148),
+	(8, 'Production Control', 21),
+	(9, 'Human Resources', 30),
+	(10, 'Finance', 3),
+	(11, 'Information Services', 42),
+	(12, 'Document Control', 90),
+	(13, 'Quality Assurance', 274),
+	(14, 'Facilities and Maintenance', 218),
+	(15, 'Shipping and Receiving', 85),
+	(16, 'Executive', 109);
+/\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
+[/input]
+[output]
+1
+Engineering
+12
+2
+Tool Design
+4
+3
+Sales
+273
+4
+Marketing
+46
+5
+Purchasing
+6
+6
+Research and Development
+42
+7
+Production
+148
+8
+Production Control
+21
+9
+Human Resources
+30
+10
+Finance
+3
+11
+Information Services
+42
+12
+Document Control
+90
+13
+Quality Assurance
+274
+14
+Facilities and Maintenance
+218
+15
+Shipping and Receiving
+85
+16
+Executive
+109
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `PK_Departments` (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+
+/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
+INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
+	(1, 'Engineering', 12),
+	(2, 'Tool Design', 4),
+	(3, 'Sales', 273),
+	(4, 'Marketing', 46),
+	(5, 'Purchasing', 6),
+	(6, 'Research and Development', 42),
+	(7, 'Production', 148),
+	(8, 'Production Control', 21),
+	(9, 'Human Resources', 30),
+	(10, 'Finance', 3),
+	(11, 'Information Services', 42),
+	(12, 'Document Control', 90),
+	(13, 'Quality Assurance', 274),
+	(14, 'Facilities and Maintenance', 218),
+	(15, 'Shipping and Receiving', 85),
+	(16, 'Executive', 109);
+/\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
+[/input]
+[output]
+1
+Engineering
+12
+2
+Tool Design
+4
+3
+Sales
+273
+4
+Marketing
+46
+5
+Purchasing
+6
+6
+Research and Development
+42
+7
+Production
+148
+8
+Production Control
+21
+9
+Human Resources
+30
+10
+Finance
+3
+11
+Information Services
+42
+12
+Document Control
+90
+13
+Quality Assurance
+274
+14
+Facilities and Maintenance
+218
+15
+Shipping and Receiving
+85
+16
+Executive
+109
 [/output]
 [/test]
 [/tests]
