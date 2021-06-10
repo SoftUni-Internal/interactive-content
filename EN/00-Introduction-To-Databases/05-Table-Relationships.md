@@ -22,19 +22,19 @@ It would be more logical and efficient if we create the name and the information
 
 We split the data and introduce **relationships** between the tables to **avoid repeating** the information. 
 
-This is the idea behind the **relational database** concept. 
+That is the concept of **relational databases**. 
 
-We have separate, carefully designed, unique lists of data and we relate them to each other by using their unique identifiers, known as **primary keys**.
+We have separate, carefully designed, unique lists of data, and we relate them to each other by using their unique identifiers, known as **primary keys**.
 
-In the first table from the example, we have the **user_id** column set as a **primary key**.
+In the first table from the example, we have the **user_id** column as a **primary key**.
 
-We also have columns for the first name and the last name of the customer, as well as the date of registration.
+There are also columns for the first and last name of the customer, as well as the date of registration.
 
 [image assetsSrc="Introduction-To-Databases(9).png" /]
 
 For the emails, we have a separate table where we use the **user_id** value from the customer table as a **foreign key**.
 
-The connection is done via a **foreign key** as one table pointing to a **primary key** in another table.
+The connection is made by a **foreign key** in one table that points to a **primary key** in another table.
 
 [image assetsSrc="Introduction-To-Databases(10).png" /]
 

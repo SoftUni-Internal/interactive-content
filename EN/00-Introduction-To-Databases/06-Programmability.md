@@ -6,15 +6,17 @@
 
 A database index is a data structure that improves the speed of operations in a table.
 
-Indexes can be created using one or more columns, providing the basis for both rapid random lookups and efficient ordering of access to records.
+Indexes are created using one or more columns, providing the basis for both rapid random lookups and efficient ordering of access to records.
 
-While creating an index, it should be taken into consideration which of the columns will be used to make SQL queries and create one or more indexes on those columns.
+While creating an index, you should consider which column will be used to make SQL queries and create one or more indexes on those columns.
 
 There are two types of indexes: **Clustered** and **Non-Clustered**.
 
 **Clustered** indexes are bound to the **primary key** and are used to physically sort data.
 
-**Non-Clustered** indexes can be bound to any field and they are used to **reference** the primary index.
+**Non-Clustered** indexes can be bound to any field. 
+
+They are used to **reference** the primary index.
 
 [image assetsSrc="Introduction-To-Databases(12).png" /]
 
@@ -28,9 +30,9 @@ Views are prepared queries for displaying sections of our data.
 
 The `CREATE VIEW` statement is used to create a new view.
 
-Once we execute the `CREATE VIEW` statement, MySQL creates the view and stores it in the database so we can use it later if we need it.
+Once we execute it, MySQL creates the view and stores it in the database for later use.
 
-Example of create view statement:
+Here is an example of the statement:
 
 ```java
 CREATE VIEW v_employee_names AS
@@ -45,7 +47,7 @@ SELECT * FROM v_employee_names
 
 [slide hideTitle]
 
-# Procedures, FunctionsAnd Triggers
+# Procedures, Functions, and Triggers
 
 A database can also store reusable code such as **Procedures**, **Functions**, and **Triggers**.
 
@@ -57,8 +59,8 @@ A MySQL procedure has a **name**, a **parameter list**, and **SQL statement(s)**
 
 **Triggers** are a set of SQL statements that **reside in a system catalog**. 
 
-They are a special type of stored procedure that are invoked automatically in response to an event. 
+They are a type of stored procedure that is invoked automatically in response to an event. 
 
-Each trigger is associated with a table, which is activated on any DML statement such as **INSERT**, **UPDATE**, or **DELETE**.
+Each trigger is associated with a table, which is activated on any DML statement such as `INSERT`, `UPDATE`, or `DELETE`.
 
 [/slide]
