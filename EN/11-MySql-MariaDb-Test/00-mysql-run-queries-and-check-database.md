@@ -1,6 +1,6 @@
 [slide hideTitle]
 # mysql-run-queries-and-check-database
-[code-task title="Problem: Find All Information About Departments" taskId="mysql-run-queries-and-check-database" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+[code-task title="Problem: Find All Information About Departments" taskId="mysql-run-queries-and-check-database1" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
 

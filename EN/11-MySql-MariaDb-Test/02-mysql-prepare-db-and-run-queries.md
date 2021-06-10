@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # mysql-prepare-db-and-run-queries
-[code-task title="Problem: Find All Information About Departments" taskId="mysql-prepare-db-and-run-queries" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Problem: Find All Information About Departments" taskId="mysql-prepare-db-and-run-queries1" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 SELECT MAX(`sd`.`speed`) AS `max_speed`,`t`.`name` AS `town_name` FROM `skills_data` AS `sd`
