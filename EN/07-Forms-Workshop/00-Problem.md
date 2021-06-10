@@ -6,9 +6,9 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/08-Forms-Workshop.zip) **for this task.**
 
-At this point, the application has **forms**.
+At this point the application has **forms**.
 
-Now it is time to edit them so the given information is handled properly as expected.
+Edit them, so the given information is handled properly.
 
 Implement the following **validation**, **notification** and **styling rules** for each form.
 
