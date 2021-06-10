@@ -43,9 +43,9 @@ In case some of the input fields аrе invalid, the following **input field** sh
 
 ```css
 .input-error { 
-  	margin-bottom: 10px; 
+   margin-bottom: 10px; 
    color: red;  
-  	font-weight: bold; 
+   font-weight: bold; 
 } 
 ```
 
