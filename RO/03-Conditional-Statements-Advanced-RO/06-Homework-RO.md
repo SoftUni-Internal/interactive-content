@@ -2154,9 +2154,9 @@ public class Main {
 Tony și prietenii săi au decis să închirieze o barcă de pescuit - tariful de închiriere depinde de **sezon** și de **numărul** de pescari.
 
 **Prețul** în funcție de **sezon**:
-- **Primăvara - 3000 $**
-- **Vara și toamna - 4200 $**
-- **Iarna - 2600 $**
+- **Primăvara - $3000**
+- **Vara și toamna - $4200**
+- **Iarna - $2600**
 
 **Prețul** pe baza **numărului** de pescari utilizează **reducerile:**
 - Dacă grupul este **până la 6 persoane (inclusiv) - 10% reducere**
@@ -2205,8 +2205,8 @@ Imprimați pe consolă o linie **unică**:
 [hint]
 Determinați reducerea pentru pescari și dacă există vreo reducere suplimentară.
 Vara, pescuitul costă 4200 USD.
-**11 pescari beneficiază de 15% reducere** -> **4200 - 15% = 3570** $, numărul lor este **impar**, deci **nu** folosesc **reducere suplimentară**.
-3000 <= 3570, deci mai au nevoie de 570,00 $ 
+**11 pescari beneficiază de 15% reducere** -> **4200 - 15% = $3570**, numărul lor este **impar**, deci **nu** folosesc **reducere suplimentară**.
+3000 <= 3570, deci mai au nevoie de $570,00 
 [/hint]
 [hint]
 Imprimați rezultatul corect.
