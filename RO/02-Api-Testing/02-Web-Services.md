@@ -7,6 +7,12 @@
 
 ## What is API?
 
+An acronym **API** stands for "**Application Programming Interface**".
+
+The "**API**" defines how software elements will **interact** with each other. They are responsible for the communication between **data** making **requests** and  connecting platforms or programs.
+
+The application programming interface guarantee communication between platforms, different type of codes and integrating different types of architectures.
+
 
 
 [/slide]
