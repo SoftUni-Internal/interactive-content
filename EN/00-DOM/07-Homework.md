@@ -1457,6 +1457,67 @@ And we press "**Clear**", the expected result should be:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-20.png" /]
 
+[hints]
+[hint]
+Create an **operations** object with property methods for **each** arithmetic operation:
+
+```js
+const operations = {
+  '+': (num1, num2) => Number(num1) + Number(num2),
+  '-': (num1, num2) => Number(num1) - Number(num2),
+  '*': (num1, num2) => Number(num1) * Number(num2),
+  '/': (num1, num2) => Number(num1) / Number(num2)
+};
+```
+
+Get the **value** of the current click target.
+[/hint] 
+[hint]
+Obtain the **pad** using the `keys` classname and attach an event listener to it:
+
+```js
+const pad = document.getElementsByClassName('keys')[0];
+
+pad.addEventListener('click', (e) => {
+  let value = e.target.value;
+
+  // ... 
+})
+```
+
+Get the **value** of the current click target.
+[/hint] 
+[hint]
+If the user presses on the **equal** sign, you should display the result in the `resultOutput` div:
+
+```js
+if (value === '=') {
+  const params = expressionOutput
+    .innerHTML
+    .split(' ')
+    .filter(x => x !== '');
+
+  const numOne = params[0];
+  const operation = params[1];
+  const numTwo = params[2];
+
+   return resultOutput.innerHTML = 
+     operations[operation](numOne, numTwo);
+}
+```
+[/hint] 
+[hint]
+If they press on any of the **arithmetic operators**, update `expressionOutput`'s `innerHTML`:
+
+```js
+if (operators.includes(value)) {
+  return expressionOutput.innerHTML 
+    += ` ${value} `;
+}
+```
+[/hint] 
+[/hints]
+
 [/task-description]
 [code-io /]
 [tests]
