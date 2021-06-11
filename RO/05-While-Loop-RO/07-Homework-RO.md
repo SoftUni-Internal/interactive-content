@@ -1983,7 +1983,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care să calculeze **nota medie** a unui student pentru întreaga sa perioadă de educație.
+Scrieți un program care să calculeze **nota medie** a unui student pentru întreaga sa perioadă de educație. (De la **clasa 1-a** până la **clasa 12-a**)
 
 ## Intrare
 - Pe prima linie, vom primi **numele studentului**

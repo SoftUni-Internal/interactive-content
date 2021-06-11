@@ -1978,7 +1978,7 @@ public class Main {
 [task-description]
 ## Description
 
-Create a program that calculates the **average grade** of a student for his entire education. 
+Create a program that calculates the **average grade** of a student for his entire education. (From **1st** to **12th** grade).
 
 ## Input
 - On the first line, we will receive **the name of the student** 
