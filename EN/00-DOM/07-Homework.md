@@ -53,7 +53,7 @@ We can take the numbers directly from the input field by using the `getElementBy
 [hint]
 After we have taken the **elements** from the **DOM**, it is time to do the actual work.
 
-We get the values of the two **textboxes**
+We get the values of the two **textboxes**:
 
 ```js
 let firstNumber = document
@@ -356,7 +356,7 @@ After that, we should change the **display style** of the `div` with an `id` of 
 If the display style is "**none**", we should **change** it to "**block**" and the **opposite**.
 [/hint] 
 [hint]
-Along with all of this, we should **change** the text content of the **button** to `[Less]`/`[More]`
+Along with all of this, we should **change** the text content of the **button** to `[Less]`/`[More]`.
 [/hint] 
 [/hints]
 
