@@ -516,9 +516,11 @@ If you **receive more than one name with the same starting letter**, you should 
 Attach a `click` event listener to the `ADD` button:
 
 ```js
-const addButton = document.getElementsByTagName('button')[0];
+const addButton = document
+  .getElementsByTagName('button')[0];
 
-addButton.addEventListener('click', addName);
+addButton
+  .addEventListener('click', addName);
 ```
 [/hint] 
 [hint]
@@ -526,7 +528,9 @@ Create an `addName` event handler and obtain the **name** input field's **value*
 
 ```js
 function addName() { 
-    const nameInput = document.getElementsByTagName('input')[0];
+    const nameInput = document
+      .getElementsByTagName('input')[0];
+
     let name = nameInput.value;
 }
 ```
@@ -536,9 +540,11 @@ Make sure to format the first letter to **uppercase**, and the rest to lowercase
 
 ```js
 let firstLetter = name[0].toUpperCase();
-let fixedName = firstLetter + name.substring(1).toLowerCase();
+let fixedName = firstLetter 
+  + name.substring(1).toLowerCase();
 
-let charIndex = Number(firstLetter.charCodeAt('0') - 65);
+let charIndex = 
+  Number(firstLetter.charCodeAt('0') - 65);
 ```
 
 Then, use the `charCodeAt` method to get the first character's **ASCII** value.
@@ -552,13 +558,17 @@ Depending on the `innerHTML` of the corresponding list item, you can either:
 - If it happens to be the first one for the given letter, simply **add** it
 
 ```js
-const liElements = document.getElementsByTagName('li');
+const liElements = 
+  document.getElementsByTagName('li');
 
 if (liElements[charIndex].innerHTML !== '') {
-  liElements[charIndex].innerHTML += ', ' + fixedName;
+
+  liElements[charIndex]
+    .innerHTML += ', ' + fixedName;
 }
 else {
-  liElements[charIndex].innerHTML = fixedName;
+  liElements[charIndex]
+    .innerHTML = fixedName;
 }
 
 nameInput.value = '';
@@ -1006,7 +1016,7 @@ The **current** `div` should be appended to the `div` with an `id="chat_messages
 
 [hints]
 [hint]
-Use the `classlist.add()` method to add the required **classes** to the new *div*:
+Use the `classlist.add()` method to add the required **classes** to the new **div**:
 
 ```js
 let myMessage = document.createElement("div");
@@ -1476,7 +1486,8 @@ Get the **value** of the current click target.
 Obtain the **pad** using the `keys` classname and attach an event listener to it:
 
 ```js
-const pad = document.getElementsByClassName('keys')[0];
+const pad = document
+  .getElementsByClassName('keys')[0];
 
 pad.addEventListener('click', (e) => {
   let value = e.target.value;

@@ -356,7 +356,7 @@ După aceea, ar trebui să schimbăm **stilul de afișare** al `div` cu un `id` 
 Dacă stilul de afișare este "**none**", ar trebui să-l **schimbăm** în "**block**" și **opusul**.
 [/hint] 
 [hint]
-Împreună cu toate acestea, ar trebui **să schimbăm** conținutul textului a **butonului** de `[Less]`/`[More]`
+Împreună cu toate acestea, ar trebui **să schimbăm** conținutul textului a **butonului** de `[Less]`/`[More]`.
 [/hint] 
 [/hints]
 
@@ -510,6 +510,74 @@ De exemplu, dacă îl înregistrăm pe **David**, numele său ar trebui să apar
 Dacă **primiți mai multe nume cu aceeași literă de pornire**, ar trebui să **alăturați toate numele** prin comma și un spațiu **(", ")**.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-10.jpg" /]
+
+[hints]
+[hint]
+Attach a `click` event listener to the `ADD` button:
+
+```js
+const addButton = document
+  .getElementsByTagName('button')[0];
+
+addButton
+  .addEventListener('click', addName);
+```
+[/hint] 
+[hint]
+Create an `addName` event handler and obtain the **name** input field's **value**:
+
+```js
+function addName() { 
+    const nameInput = document
+      .getElementsByTagName('input')[0];
+
+    let name = nameInput.value;
+}
+```
+[/hint] 
+[hint]
+Make sure to format the first letter to **uppercase**, and the rest to lowercase:
+
+```js
+let firstLetter = name[0].toUpperCase();
+let fixedName = firstLetter 
+  + name.substring(1).toLowerCase();
+
+let charIndex = 
+  Number(firstLetter.charCodeAt('0') - 65);
+```
+
+Then, use the `charCodeAt` method to get the first character's **ASCII** value.
+[/hint] 
+[hint]
+Obtain all **list item** elements using `getElementsByTagName`.
+
+Depending on the `innerHTML` of the corresponding list item, you can either:
+
+- **Append** the new name, preceded by a **comma and a space** (**", "**)
+- If it happens to be the first one for the given letter, simply **add** it
+
+```js
+const liElements = 
+  document.getElementsByTagName('li');
+
+if (liElements[charIndex].innerHTML !== '') {
+
+  liElements[charIndex]
+    .innerHTML += ', ' + fixedName;
+}
+else {
+  liElements[charIndex]
+    .innerHTML = fixedName;
+}
+
+nameInput.value = '';
+```
+
+Remember to clean the **input box's value** afterwards.
+
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
@@ -946,6 +1014,31 @@ Scrieți o **funcție** pentru a crea funcționalitatea de **chat room**.
 
 [image assetsSrc="JS-Advanced-DOM-Homework-13.jpg" /]
 
+[hints]
+[hint]
+Use the `classlist.add()` method to add the required **classes** to the new **div**:
+
+```js
+let myMessage = document.createElement("div");
+myMessage.classList.add("message", "my-message");
+```
+[/hint] 
+[hint]
+Set the `textContent` of the new **div** to the value of the `#chat_input` element:
+
+```js
+myMessage.textContent = chatInput.value;
+```
+[/hint] 
+[hint]
+Append **your div** to the `#chat_messages` div by using `appendChild()`:
+
+```js
+chatMessages.appendChild(myMessage);
+```
+[/hint] 
+[/hints]
+
 [/task-description]
 [code-io /]
 [tests]
@@ -1373,6 +1466,69 @@ De exemplu, dacă avem următoarea expresie
 Și apăsăm "**Clear**", rezultatul așteptat ar trebui să fie:
 
 [image assetsSrc="JS-Advanced-DOM-Homework-20.png" /]
+
+[hints]
+[hint]
+Create an **operations** object with property methods for **each** arithmetic operation:
+
+```js
+const operations = {
+  '+': (num1, num2) => Number(num1) + Number(num2),
+  '-': (num1, num2) => Number(num1) - Number(num2),
+  '*': (num1, num2) => Number(num1) * Number(num2),
+  '/': (num1, num2) => Number(num1) / Number(num2)
+};
+```
+
+Get the **value** of the current click target.
+[/hint] 
+[hint]
+Obtain the **pad** using the `keys` classname and attach an event listener to it:
+
+```js
+const pad = document
+  .getElementsByClassName('keys')[0];
+
+pad.addEventListener('click', (e) => {
+  let value = e.target.value;
+
+  // ... 
+})
+```
+
+Get the **value** of the current click target.
+[/hint] 
+[hint]
+If the user presses on the **equal** sign, you should display the result in the `resultOutput` div:
+
+```js
+if (value === '=') {
+  const params = expressionOutput
+    .innerHTML
+    .split(' ')
+    .filter(x => x !== '');
+
+  const numOne = params[0];
+  const operation = params[1];
+  const numTwo = params[2];
+
+   return resultOutput.innerHTML = 
+     operations[operation](numOne, numTwo);
+}
+```
+[/hint] 
+[hint]
+If they press on any of the **arithmetic operators**, update `expressionOutput`'s `innerHTML`:
+
+```js
+if (operators.includes(value)) {
+  return expressionOutput.innerHTML 
+    += ` ${value} `;
+}
+```
+[/hint] 
+[/hints]
+
 
 [/task-description]
 [code-io /]
