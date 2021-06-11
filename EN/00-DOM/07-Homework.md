@@ -549,7 +549,7 @@ Obtain all **list item** elements using `getElementsByTagName`.
 Depending on the `innerHTML` of the corresponding list item, you can either:
 
 - **Append** the new name, preceded by a **comma and a space** (**", "**)
-- Simply **add** it if it the first one for the given letter
+- If it happens to be the first one for the given letter, simply **add** it
 
 ```js
 const liElements = document.getElementsByTagName('li');
@@ -1003,6 +1003,31 @@ The **current** `div` should be appended to the `div` with an `id="chat_messages
 [image assetsSrc="JS-Advanced-DOM-Homework-12.jpg" /]
 
 [image assetsSrc="JS-Advanced-DOM-Homework-13.jpg" /]
+
+[hints]
+[hint]
+Use the `classlist.add()` method to add the required **classes** to the new *div*:
+
+```js
+let myMessage = document.createElement("div");
+myMessage.classList.add("message", "my-message");
+```
+[/hint] 
+[hint]
+Set the `textContent` of the new **div** to the value of the `#chat_input` element:
+
+```js
+myMessage.textContent = chatInput.value;
+```
+[/hint] 
+[hint]
+Append **your div** to the `#chat_messages` div by using `appendChild()`:
+
+```js
+chatMessages.appendChild(myMessage);
+```
+[/hint] 
+[/hints]
 
 [/task-description]
 [code-io /]
