@@ -1518,7 +1518,7 @@ if (value === '=') {
 ```
 [/hint] 
 [hint]
-If they press on any of the **arithmetic operators**, update `expressionOutput`'s `innerHTML`:
+If they press on any of the **arithmetic operators**, update `expressionOutput`'s `innerHTML` with the **" {sign} "** syntax:
 
 ```js
 if (operators.includes(value)) {

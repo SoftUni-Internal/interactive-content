@@ -33,6 +33,46 @@ Finally, you should **append** all `div`s to the element with an **id** of **con
 
 [image assetsSrc="Dom-Manipulation(5).gif" /]
 
+[hints]
+[hint]
+Iterate through the input with a **for-of** loop:
+ 
+```js       
+for (let word of input) {
+    let divElement = document.createElement('div');
+    let pElement = document.createElement('p');
+}
+```
+
+Create new **div** and **paragraph** elements for each word.
+[/hint] 
+[hint]
+Set the **text content** of the paragraph to the value of the current word.
+
+```js
+pElement.textContent = word;
+pElement.style.display = 'none';
+```
+
+Set the `display` property to `none` to hide it.
+[/hint] 
+[hint]
+Append the paragraph to the div and add a `click` event listener.
+
+```js
+divElement.appendChild(pElement);
+
+divElement.addEventListener('click', () => {
+  pElement.style.display = 'inline-block';
+});
+
+content.appendChild(divElement);
+```
+
+Finally, append the div to the `#content` element.
+[/hint] 
+[/hints] 
+
 [/task-description]
 [code-io /]
 [tests]
