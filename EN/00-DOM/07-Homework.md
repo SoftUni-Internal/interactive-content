@@ -511,6 +511,64 @@ If you **receive more than one name with the same starting letter**, you should 
 
 [image assetsSrc="JS-Advanced-DOM-Homework-10.jpg" /]
 
+[hints]
+[hint]
+Attach a `click` event listener to the `ADD` button:
+
+```js
+const addButton = document.getElementsByTagName('button')[0];
+
+addButton.addEventListener('click', addName);
+```
+[/hint] 
+[hint]
+Create an `addName` event handler and obtain the **name** input field's **value**:
+
+```js
+function addName() { 
+    const nameInput = document.getElementsByTagName('input')[0];
+    let name = nameInput.value;
+}
+```
+[/hint] 
+[hint]
+Make sure to format the first letter to **uppercase**, and the rest to lowercase:
+
+```js
+let firstLetter = name[0].toUpperCase();
+let fixedName = firstLetter + name.substring(1).toLowerCase();
+
+let charIndex = Number(firstLetter.charCodeAt('0') - 65);
+```
+
+Then, use the `charCodeAt` method to get the first character's **ASCII** value.
+[/hint] 
+[hint]
+Obtain all **list item** elements using `getElementsByTagName`.
+
+Depending on the `innerHTML` of the corresponding list item, you can either:
+
+- **Append** the new name, preceded by a **comma and a space** (**", "**)
+- Simply **add** it if it the first one for the given letter
+
+```js
+const liElements = document.getElementsByTagName('li');
+
+if (liElements[charIndex].innerHTML !== '') {
+  liElements[charIndex].innerHTML += ', ' + fixedName;
+}
+else {
+  liElements[charIndex].innerHTML = fixedName;
+}
+
+nameInput.value = '';
+```
+
+Remember to clean the **input box's value** afterwards.
+
+[/hint] 
+[/hints]
+
 [/task-description]
 [code-io /]
 [tests]
