@@ -2021,7 +2021,7 @@ Scrieți un program care să calculeze **nota medie** a unui student pentru înt
 [tests]
 [test open]
 [input]
-David
+John
 4
 5.5
 6
@@ -2037,7 +2037,7 @@ David
 6
 [/input]
 [output]
-David graduated. Average grade: 5.37
+John graduated. Average grade: 5.37
 [/output]
 [/test]
 [test]

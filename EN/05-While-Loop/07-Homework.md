@@ -1989,7 +1989,7 @@ Create a program that calculates the **average grade** of a student for his enti
 
 ## Output
 - If the student graduates, we have to print out:
-    - "\{**student name**\}**graduated. Average grade:** \{**average grade from his entire education**\}"
+    - "\{**student name**\} **graduated. Average grade:** \{**average grade from his entire education**\}"
 
 **The grade should be formatted to the second decimal point.**
 
@@ -2014,7 +2014,7 @@ Create a program that calculates the **average grade** of a student for his enti
 [tests]
 [test open]
 [input]
-David
+John
 4
 5.5
 6
@@ -2030,7 +2030,7 @@ David
 6
 [/input]
 [output]
-David graduated. Average grade: 5.37
+John graduated. Average grade: 5.37
 [/output]
 [/test]
 [test]
