@@ -2034,7 +2034,6 @@ John
 6
 5.43
 5
-6
 [/input]
 [output]
 John graduated. Average grade: 5.37
