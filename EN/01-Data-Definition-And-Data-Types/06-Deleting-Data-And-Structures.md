@@ -4,7 +4,7 @@
 
 # Deleting from Database
 
-Deleting structures from the database is called `DROP-ping`
+Deleting structures from the database is done using the `DROP` keyword.
 
 You can drop `keys`, `constraints`, `tables` and entire `databases`
 
@@ -21,20 +21,21 @@ Both of these actions cannot be **undone** so use with caution!
 To delete all the entries in a table:
 
 ```Java
-TRUNCATE TABLE employees; // Table name
+TRUNCATE TABLE employees; 
 ```
 
 To drop a table - delete data and structure:
 
 ```Java
-DROP TABLE employees; // Table name
+DROP TABLE employees;
 ```
 
-To drop entire databases:
+To drop the entire databases:
 
 ```Java
-DROP DATABASE soft_uni; // Database name
+DROP DATABASE soft_uni; 
 ```
+
 [/slide]
 
 [slide hideTitle]

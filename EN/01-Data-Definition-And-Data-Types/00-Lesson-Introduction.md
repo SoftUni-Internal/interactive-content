@@ -7,18 +7,18 @@
 ## In this lesson you will learn: 
 
 **1. Data Types in MySQL**
-- What the right data type is for every situation
+- Data types supported by MySQL their uses
 
 **2. Database Modeling**
 
 **3. Basic SQL Queries**
-- Communicating with the database
+- Retrieving data from the database
 
 **4. Table Customization**
-- Declaring tables and table constraint definition
+- Declaring tables and table constraints 
  
 **5. Altering Tables**
-
+- Changing the properties of tables after creation
 **6. Deleting Data and Structures**
 
 [/slide]

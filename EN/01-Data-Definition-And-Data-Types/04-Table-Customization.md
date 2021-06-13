@@ -10,314 +10,105 @@
 id INT NOT NULL PRIMARY KEY // PRIMARY KEY is a column property
 ```
 
+The primary key is a field that is used for identifying each record. 
+
+Each record can have a primary key attached to it, used for indexing and retrieving the record.
+
+For example, each product in a database can have its own unique ID and you can retrieve product details by it to display on some page.
+
+Not every table needs to have a primary key.
+
 ## Auto-Increment (Identity)
 
 ```Java
 id INT AUTO_INCREMENT PRIMARY KEY // Auto-Increment PRIMARY KEY
 ```
 
-## Unique constraint – no repeating values in entire table
+When auto-increment is enabled the value of the id field will be generated automatically when a new record is inserted.
 
-```jAVA
-EMAIL varchar(50) UNIQUE
-```
+The default value for AUTO_INCREMENT is 1.
 
-## Default value – if not specified (otherwise set to NULL)
+It will increase by 1 for each subsequent record.
+
+Let us take a look at some useful checks you can add to the columns.
+
+These are called constraints because a set condition will be verified before any data is inserted.
+
+If the conditions are not met, no data will be inserted.
+
+## UNIQUE constraint
 
 ```Java
-balance DECIMAL(10, 2) DEFAULT 0 // Default value set to 0
+email_address varchar(50) UNIQUE
 ```
+
+Adding the UNIQUE constraint ensures that every **email_address** entered into the table will be unique.
+
+## DEFAULT constraint 
+
+```Java
+balance DECIMAL(10, 2) DEFAULT 0
+```
+
+Specifies that the default value of the column should be 0.
+
+If a default value is not specified the value will be set to NULL by default if null values are allowed.
 
 [/slide]
 
 [slide hideTitle]
 
-# Problems: Create and Insert
+# Problem: Create and Insert
 
-1. Create new database called `gamebar`
+1. Create a new database called `gamebar`
 2. Create Tables:
    - `employees` - id, first_name, last_name
    - `categories` - id, name
    - `products` - id, name, category_id
 3. Insert Data:
-   - Populate the `employees` table with 3 test values
+   - Populate the `employees` table with 3 test records.
+
+
+
+**Solution:**
+- Create the `gamebar` database visually in SQL Workbench or run the following query `CREATE DATABASE gamebar`
+
+- Refresh the Schemas in the Object browser / Navigator Schema panel in SQL Workbench to be able to see the new database
+
+- Double click on the newly created database in the Schemas panel or run the `USE gamebar` query to switch to it
+
+- Write the query for creating the **employees table**
+
+[image assetsSrc="DData-Definition-And-Data-Types-q3.png" /]
+
+- Create the rest of the tables using the above logic
+
+- Populate the `employees` table:
+
+```Java
+INSERT INTO employees (id, first_name, last_name) VALUES (1, 'Sean', 'Langhorne');
+INSERT INTO employees (id, first_name, last_name) VALUES (2, 'Jordan', 'Blais');
+INSERT INTO employees (id, first_name, last_name) VALUES (3, 'Priscilla', 'Graffin');
+```
+
+The above query should work if you did the previous steps correctly.
+
+Run `SELECT * FROM employees` to make sure the 3 records were inserted correctly. 
+
 
 [/slide]
 
 [slide hideTitle]
 
-# Problem: Create Tables
+# Problem with Solution: Create Tables
 
-[code-task title="Problem: Create Tables" taskId="0423b2de-8ec2-4d0d-8280-eb7cf9ab62c2" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
+TODO: Generate task
 
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-
-[/code-editor]
-[task-description]
-
-## Description
-
-When we create tables, we specify the database we want to add them to.
-
-Use the "**USE**" clause.
-
-**Run your query statements & submit the output from the queries as plain text**.
-
-Table "**employees**":
-
-- id – **INT, primary key, AUTO_INCREMENT**;
-- first_name – **VARCHAR, NOT NULL**;
-- last_name – **VARCHAR, NOT NULL**;
-
-Create the "**categories**" and "**products**" tables analogically:
-
-Table "**categories**":
-
-- id – **INT, primary key, AUTO_INCREMENT**;
-- name – **VARCHAR, NOT NULL**;
-  Table "**products**":
-- id – **INT, primary key, AUTO_INCREMENT**;
-- name – **VARCHAR, NOT NULL**;
-- category_id – **INT, NOT NULL** – it is not a foreign key for now.
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-employees
-first_name
-employees
-id
-employees
-last_name
-id
-categories
-id
-categories
-name
-id
-products
-category_id
-products
-id
-products
-name
-id
-[/input]
-[output]
-employees
-first_name
-employees
-id
-employees
-last_name
-id
-categories
-id
-categories
-name
-id
-products
-category_id
-products
-id
-products
-name
-id
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]
 
 [slide hideTitle]
 
-# Solution: Create Tables
+# Problem with Solution: Insert Data in Tables
+TODO: Generate task
 
-[code-task title="Problem: Create Tables" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-
-[/code-editor]
-[task-description]
-
-## Description
-
-When we create tables, we specify the database we want to add them to.
-
-Use the "**USE**" clause.
-
-**Run your query statements & submit the output from the queries as plain text**.
-
-Table "**employees**":
-
-- id – **INT, primary key, AUTO_INCREMENT**;
-- first_name – **VARCHAR, NOT NULL**;
-- last_name – **VARCHAR, NOT NULL**;
-
-Create the "**categories**" and "**products**" tables analogically:
-
-Table "**categories**":
-
-- id – **INT, primary key, AUTO_INCREMENT**;
-- name – **VARCHAR, NOT NULL**;
-  Table "**products**":
-- id – **INT, primary key, AUTO_INCREMENT**;
-- name – **VARCHAR, NOT NULL**;
-- category_id – **INT, NOT NULL** – it is not a foreign key for now.
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-employees
-first_name
-employees
-id
-employees
-last_name
-id
-categories
-id
-categories
-name
-id
-products
-category_id
-products
-id
-products
-name
-id
-[/input]
-[output]
-employees
-first_name
-employees
-id
-employees
-last_name
-id
-categories
-id
-categories
-name
-id
-products
-category_id
-products
-id
-products
-name
-id
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-
-# Problem: Insert Data in Tables
-
-[code-task title="Problem: Insert Data in Tables" taskId="5a1cda6f-110a-4d66-9373-8c33071ea14c" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-
-[/code-editor]
-[task-description]
-
-## Description
-
-Inserting data can be done with a query too.
-
-To do that, use the "**INSERT**" clause. 
-
-Populate the "**employees**" table with 3 test values.
-
-[/task-description]
-[code-io /]
-[tests]
-[test]
-[input]
-3
-[/input]
-[output]
-3
-[/output]
-[/test]
-[/tests]
-[/code-task]
-[/slide]
-
-[slide hideTitle]
-
-# Solution: Insert Data in Tables
-
-[code-task title="Problem: Insert Data in Tables" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-
-```
-import java.util.*;
-
-public class Main {
-    public static void main(String[] args) {
-        // Write your code here
-    }
-}
-```
-
-[/code-editor]
-[task-description]
-
-## Description
-
-Inserting data can be done with a query too.
-
-To do that, use the "**INSERT**" clause. 
-
-Populate the "**employees**" table with 3 test values.
-
-[/task-description]
-[code-io /]
-[tests]
-[test]
-[input]
-3
-[/input]
-[output]
-3
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]

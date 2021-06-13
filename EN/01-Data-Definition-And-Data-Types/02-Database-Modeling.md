@@ -4,7 +4,7 @@
 
 # Working with IDEs
 
-Мanage databases with **MySQL Workbench**, which will allow us to:
+We can manage databases with **MySQL Workbench** which will allow us to:
 
 - create new databases
 - create objects in the database (tables, stored procedures, relationships, and others)
