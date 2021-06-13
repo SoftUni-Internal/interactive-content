@@ -6,32 +6,15 @@
 
 ## In this lesson you will learn:
 
-**1. Database Design**
+**1. The Query Basics**
+- What **CRUD** stands for
 
-- The six steps of designing databases
+**2. Retrieving Data**
 
-- Reading specifications and finding the database units
+**3. Writing Data in Tables**
+- Using SQL to persist (save) data to the database
 
-**2. Table Relations**
-
-- The types of table relations
-
-- Creating different relations between tables
-
-**3. JOINs**
-
-- Using foreign keys to join tables
-
-**4. Cascade Operations**
-
-- What happens if we want to do an operation on an entity connected to other tables
-
-- Cascading operations
-
-**5. Relational Schema**
-
-- What a **relational Schema** is
-
-- Creating a relational schema for the database
-
+**4. Modifying Existing Records**
+- Updating existing records
+    
 [/slide]
