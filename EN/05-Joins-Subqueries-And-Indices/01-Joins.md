@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Resources 
+# Resources TODO: fix resources
 
 _Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/3IZTXSDR#FHeTo3uqIs6yEfIMQ1AXZh02WgkbUGaDsecPveCrSho)
 
@@ -14,9 +14,9 @@ _Download the resources needed for this lesson from here:_ [Mega.nz](https://meg
 
 А relational database consists of multiple related tables.
 
-Sometimes we will need to combine data from several tables into a new table.
+Sometimes you will need to combine data from several tables into a new table.
 
-A **JOIN** clause is used to combine rows from two or more tables, based on a related column between them.
+A `JOIN` clause combines rows from two or more tables based on a column they share.
 
 The related column is a column, which exists as a **primary key** in the first table and as a **foreign key** in the second table.
 
@@ -24,24 +24,25 @@ The related column is a column, which exists as a **primary key** in the first t
 
 [slide hideTitle]
 
-# Cartesian Product
+# Cartesian Product 
 
-The following example will produce a **cartesian** product:
+A **Cartesian Product** in databases is when each row of a table is paired with all the rows from another table.
+
+The following example will produce a cartesian product:
 
 ```Java
 SELECT last_name, name, AS department_name
 FROM employees, departments;
 ```
 
-When there is no relationship defined between the two tables, each row in the first table is paired with all of the rows in the second table.
+This product of rows occurs because no relationship is defined between the two tables.
 
-This is formed when:
-  - A join condition is omitted
-  - A join condition is invalid
+There are two ways to get a cartesian product:
 
-To avoid this, always include a valid **JOIN condition**.
+- If a `JOIN` condition is **omitted**
+- If a `JOIN` condition is **invalid**
 
-The result:
+After running the query, we will see the following table:
 
 | **last_name** | **department_name** |
 | ------------- | ------------------- |
@@ -51,51 +52,49 @@ The result:
 | Gilbert       | Sales               |
 | Brown         | Sales               |
 
-[/slide]
-
-[slide hideTitle]
-
-# Joins
-
-- **JOINS** - used to collect data from **two** or **more** tables
-- Types:
-  - INNER JOIN
-  - LEFT JOIN
-  - RIGHT JOIN
-  - OUTER (UNION) JOIN
-  - CROSS JOIN
+If you want to avoid this result, always include a valid `JOIN` condition.
 
 [/slide]
 
 [slide hideTitle]
 
-# Tables
+# JOINs and Tables
 
-Have a look at the example below.
+There are several different types of `JOIN` clauses:
 
-Notice that the `course_id` column in the `students` table refers to the `id` column in the `Courses` table.
+- **INNER JOIN**
+- **LEFT JOIN**
+- **RIGHT JOIN**
+- **OUTER (UNION) JOIN**
+- **CROSS JOIN**
 
-The relationship between the two tables is the courses "id" column.
+The following slides will cover each of them in detail.
 
-Table students:
+We will use the two tables below for the next examples.
 
-| **id** | **name** | **course_id** |
+The `brand_id` column in the `racers` table refers to the `id` column in the `bikes` table.
+
+This column defines the relationship between the two tables.
+
+Table `racers`:
+
+| **id** | **name** | **brand_id**  |
 | ------ | -------- | ------------- |
-| 1      | Alice    | 1             |
-| 2      | Michael  | 1             |
-| 3      | Caroline | 2             |
-| 4      | David    | 5             |
-| 5      | Emma     | NULL          |
+| 1      | Max      | 1             |
+| 2      | Jennifer | 1             |
+| 3      | Kate     | 2             |
+| 4      | Rob      | 5             |
+| 5      | Mike     | NULL          |
 
-Table courses:
+Table `bikes`:
 
-| **id** | **name**   |
-| ------ | ---------- |
-| 1      | HTML5      |
-| 2      | CSS3       |
-| 3      | JavaScript |
-| 4      | PHP        |
-| 5      | MySQL      |
+| **id** | **brand**   |
+| ------ | ----------  |
+| 1      | BMW         |
+| 2      | Honda       |
+| 3      | Kawasaki    |
+| 4      | Ducati      |
+| 5      | Suzuki      |
 
 [/slide]
 
@@ -103,29 +102,29 @@ Table courses:
 
 # Inner join
 
+The `INNER JOIN` is used to return rows from both tables that satisfy a given condition.
+
 ```Java
-SELECT students.name, courses.name
-FROM students
-INNER JOIN courses  # Or just JOIN
-ON students.course_id = courses.id
+SELECT racers.name, bikes.brand
+FROM racers
+INNER JOIN bikes
+ON racers.brand_id = bikes.id
 ```
 
-The **INNER JOIN** is used to return rows from both tables that satisfy a given condition.
+In this case the condition is `racers.brand_id = bikes.id`.
 
-In this case the condition is **students.course_id = courses.id**.
-
-If you want to get a list of students and their courses, you can use an INNER JOIN for that, which returns rows from both tables that satisfy the condition above.
+We are using `INNER JOIN` to retrieve bikers and the brand of their bike.
 
 The resulting table would be:
 
-| **students_name** | **course_name** |
+| **racers_name**   | **bikes_brand** |
 | ----------------- | --------------- |
-| Alice             | HTML5           |
-| Michael           | HTML5           |
-| Caroline          | CSS3            |
-| David             | MySQL           |
+| Max               | BMW             |
+| Jennifer          | BMW             |
+| Kate              | Honda           |
+| Rob               | Suzuki          |
 
-Produces a set of records which **match in both tables**!
+This type of join clause produces a set of records which **match in both tables**.
 
 [image assetsSrc="Joins-Subqueries-And-Indices(1).png" /]
 
@@ -135,30 +134,32 @@ Produces a set of records which **match in both tables**!
 
 # LEFT JOIN
 
-The **LEFT JOIN** returns all the rows from the table on the left even if no matching rows have been found in the table on the right.
+The `LEFT JOIN` returns **all the rows** from the table on the **left** even if no matching rows have been found in the table on the right.
 
-Where no matches have been found in the table on the right, **NULL** is returned.
+If there are no matches in the table on the right, `NULL` will be returned.
 
 ```Java
-SELECT students.name, courses.name
-FROM students
-LEFT JOIN courses
-ON students.course_id = courses.id  # Matching condition
+SELECT racers.name, bikes.brand
+FROM racers
+LEFT JOIN bikes
+ON racers.brand_id = bikes.id
 ```
 
-And this is the resulting table:
+In this case, `racers.brand_id = bikes.id` is our **matching condition**.
 
-| **students_name** | **courses_name** |
-| ----------------- | ---------------- |
-| Alice             | HTML5            |
-| Michael           | HTML5            |
-| Caroline          | CSS3             |
-| David             | MySQL            |
-| Emma              | NULL             |
+This is the resulting table:
 
-Matches, every entry in the **left** table, regardless of the match in the **right** one.
+| **racers_name**   | **bikes_brand** |
+| ----------------- | --------------- |
+| Max               | BMW             |
+| Jennifer          | BMW             |
+| Kate              | Honda           |
+| Rob               | Suzuki          |
+| Mike              | NULL            |
 
-There was no match found for Emma, so we have **NULL** in the courses_name column.
+This type of join clause matches, every entry in the **left** table, regardless of the match in the **right** one.
+
+There was no matching course for the last entry, so there is `NULL` in the `courses_name` column.
 
 [image assetsSrc="Joins-Subqueries-And-Indices(2).png" /]
 
@@ -168,33 +169,33 @@ There was no match found for Emma, so we have **NULL** in the courses_name colum
 
 # RIGHT JOIN
 
-The **RIGHT JOIN** is the opposite of the **LEFT JOIN**.
+The `RIGHT JOIN` works like `LEFT JOIN`, but in the opposite direction.
 
-It returns all the columns from the table on the right even if no matching rows have been found in the table on the left.
+It returns **all the rows** from the table on the **right** even if no matching rows have been found in the table on the left.
 
-If no matches have been found in the table on the left, **NULL** is returned.
+It will also set a `NULL` value if there is no match for a given row.
 
 ```Java
-SELECT students.name, courses.name
-FROM students
-RIGHT JOIN courses
-ON students.course_id = courses.id
+SELECT racers.name, bikes.brand
+FROM racers
+RIGHT JOIN bikes
+ON racers.brand_id = bikes.id
 ```
 
-And this is the resulting table:
+This is the result of our query:
 
-| **students_name** | **courses_name** |
-| ----------------- | ---------------- |
-| Alice             | HTML5            |
-| Michael           | HTML5            |
-| Caroline          | CSS3             |
-| NULL              | JavaScript       |
-| NULL              | PHP              |
-| David             | MySQL            |
+| **racers_name** | **bikes_brand**   |
+| --------- | ------------------ |
+| Max       | BMW               |
+| Jennifer  | BMW               |
+| Kate      | Honda             |
+| NULL      | Kawasaki          |
+| NULL      | Ducati            |
+| Rob       | Suzuki            |
 
-Matches every entry in the **right** table regardless of the match in the **left** one.
+This type of join clause matches every entry in the **right** table regardless of the match in the **left** one.
 
-As a result, we have **NULL** for **JavaScript** and **PHP**.
+As a result, we have a `NULL` value for `Kawasaki` and `Ducati`.
 
 [image assetsSrc="Joins-Subqueries-And-Indices(3).png" /]
 
@@ -204,10 +205,15 @@ As a result, we have **NULL** for **JavaScript** and **PHP**.
 
 # OUTER JOIN - FULL JOIN
 
-Returns all records in both tables regardless of **any** match.
+The `OUTER JOIN` returns all records in both tables regardless of **any** match.
 
-- Less useful than **INNER**, **LEFT** or **RIGHT JOINs** and it is **not implemented in MySQL**
-- We can use **UNION** of a **LEFT** and **RIGHT JOIN**
+It is not as useful as the other join types and is **not implemented** in **MySQL**.
+
+However, it is still good to know about it.
+
+As an alternative, you can use `UNION` of a `LEFT` and `RIGHT JOIN`.
+
+This image is a representation of how `OUTER JOIN` matches records in the database:
 
 [image assetsSrc="Joins-Subqueries-And-Indices(4).png" /]
 
@@ -215,33 +221,37 @@ Returns all records in both tables regardless of **any** match.
 
 [slide hideTitle]
 
-# Union of LEFT and RIGHT JOINs
+# The "UNION" clause
+
+You can use the `UNION` clause to combine the results from **two or more** `SELECT` statements.
+
+In the following example, we use it to combine a `LEFT JOIN` with a `RIGHT JOIN`:
 
 ```Java
-SELECT students.name, courses.name
-FROM students
-LEFT JOIN courses
-ON students.course_id = courses.id
+SELECT racers.name, bikes.brand
+FROM racers
+LEFT JOIN bikes
+ON racers.brand_id = bikes.id
 
 UNION
 
-SELECT students.name, courses.name
-FROM students
-RIGHT JOIN courses
-ON students.course_id = courses.id
+SELECT racers.name, bikes.brand
+FROM racers
+RIGHT JOIN bikes
+ON racers.brand_id = bikes.id
 ```
 
-And this is the resulting table:
+This table is the result of our query:
 
-| **students_name** | **courses_name** |
+| **racers_name** | **bikes_brand** |
 | ----------------- | ---------------- |
-| Alice             | HTML5            |
-| Michael           | HTML5            |
-| Caroline          | CSS3             |
-| David             | MySQL            |
-| Emma              | NULL             |
-| NULL              | JavaScript       |
-| NULL              | PHP              |
+| Max             | BMW            |
+| Jennifer           | BMW            |
+| Kate          | Honda             |
+| Rob             | Suzuki            |
+| Mike              | NULL             |
+| NULL              | Kawasaki       |
+| NULL              | DUCATI              |
 
 [/slide]
 
@@ -249,22 +259,22 @@ And this is the resulting table:
 
 # CROSS JOIN
 
-The **CROSS JOIN** produces a result set, which is the product of rows of two associated tables when no **WHERE** clause is used with a CROSS JOIN.
+The `CROSS JOIN` returns the product of rows of two associated tables.
 
-- Produces a set of associated rows of two tables
-  - Multiplication of each row in the first table with each in second
-  - The result is a **Cartesian** product when there's **no condition** in the **WHERE** clause
+The result is a **Cartesian** product without a **condition** in the `WHERE` clause.
+
+This is the correct way of using it:
 
 ```Java
-SELECT * FROM courses AS c
-CROSS JOIN students AS s;  # No Join Condition
+SELECT * FROM bikes AS c
+CROSS JOIN racers AS s;
 ```
 
-Cross JOIN is the simplest form of JOIN, which matches each row from one database table to all rows of another.
+It is the simplest one of the join clauses, which matches each row from one database table to all rows of another.
 
-In MySQL, the **CROSS JOIN** behaves like a **JOIN** and an **INNER JOIN** without using any condition.
+In MySQL, `CROSS JOIN` behaves like `JOIN` and `INNER JOIN` without a given condition.
 
-Have a look at the following example below:
+The following image illustrates how this join clause works:
 
 [image assetsSrc="Joins-Subqueries-And-Indices(5).png" /]
 
@@ -273,13 +283,7 @@ Have a look at the following example below:
 
 [slide hideTitle]
 
-# Problem with Solution: Managers
-
-[code-task title="Managers" taskId="java-db-and-mysql-joins-subqueries-and-indices-managers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-
-[/code-editor]
-[task-description]
+# Problem with Solution: Managers TODO ADD TESTS
 
 ## Description
 
@@ -297,68 +301,11 @@ Select the **first 5** departments ordered by **employee_id**.
 | 4               | Rob Walters        | 2                 | Tool Design         |
 | ...             | ...                | ...               | ...                 |
 
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-3
-Roberto Tamburello
-10
-Finance
-4
-Rob Walters
-2
-Tool Design
-6
-David Bradley
-5
-Purchasing
-12
-Terri Duffy
-1
-Engineering
-21
-Peter Krebs
-8
-Production Control
-[/input]
-[output]
-3
-Roberto Tamburello
-10
-Finance
-4
-Rob Walters
-2
-Tool Design
-6
-David Bradley
-5
-Purchasing
-12
-Terri Duffy
-1
-Engineering
-21
-Peter Krebs
-8
-Production Control
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]
 
 [slide hideTitle]
 
-# Problem with Solution: Towns Addresses
-
-[code-task title="Towns Addresses" taskId="java-db-and-mysql-joins-subqueries-and-indices-town-addresses" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-
-[/code-editor]
-[task-description]
+# Problem with Solution: Towns Addresses TODO ADD TESTS
 
 ## Description
 
@@ -379,76 +326,11 @@ Order the result by **town_id** then by **address_id**.
 | 15          | Carnation     | 1411 Ranch Drive |
 | ...         | ...           | ...              |
 
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-9
-San Francisco
-1234 Seaside Way
-9
-San Francisco
-5725 Glaze Drive
-15
-Carnation
-1411 Ranch Drive
-15
-Carnation
-3074 Arbor Drive
-15
-Carnation
-390 Ridgewood Ct.
-15
-Carnation
-9666 Northridge Ct.
-15
-Carnation
-9752 Jeanne Circle
-32
-Sofia
-163 Nishava Str, ent A, apt. 1
-[/input]
-[output]
-9
-San Francisco
-1234 Seaside Way
-9
-San Francisco
-5725 Glaze Drive
-15
-Carnation
-1411 Ranch Drive
-15
-Carnation
-3074 Arbor Drive
-15
-Carnation
-390 Ridgewood Ct.
-15
-Carnation
-9666 Northridge Ct.
-15
-Carnation
-9752 Jeanne Circle
-32
-Sofia
-163 Nishava Str, ent A, apt. 1
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]
 
 [slide hideTitle]
 
-# Problem with Solution: Employees Without Managers
-
-[code-task title="Employees Without Managers" taskId="java-db-and-mysql-joins-subqueries-and-indices-employees-without-managers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-
-[/code-editor]
-[task-description]
+# Problem with Solution: Employees Without Managers TODO ADD TESTS
 
 ## Description
 
@@ -456,55 +338,4 @@ Create a query that retrieves information about **employee_id**, **first_name**,
 
 **Run your query statements & submit the output from the queries as plain text**.
 
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-109
-Ken
-Sanchez
-16
-125500.0000
-291
-Svetlin
-Nakov
-6
-48000.0000
-292
-Martin
-Kulov
-6
-48000.0000
-293
-George
-Denchev
-6
-48000.0000
-[/input]
-[output]
-109
-Ken
-Sanchez
-16
-125500.0000
-291
-Svetlin
-Nakov
-6
-48000.0000
-292
-Martin
-Kulov
-6
-48000.0000
-293
-George
-Denchev
-6
-48000.0000
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]

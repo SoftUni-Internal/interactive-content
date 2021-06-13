@@ -4,23 +4,24 @@
 
 # Subqueries
 
-A **subquery** is a query **nested within** another query such as a **SELECT**, an **INSERT**, an **UPDATE**, or a **DELETE**.
+A **subquery** is a query **nested within** another query like `SELECT`, `INSERT`, `UPDATE`, or `DELETE`.
 
-A subquery can also be **nested inside another subquery**.
+It can also be **nested inside another subquery**.
 
 The subquery is called an **inner query**, while the query that contains the subquery is called an **outer query**.
 
-A subquery can be used anywhere that expression is used and must be closed in parentheses.
+The **inner query** should always be within **parentheses**. 
 
-- Can be nested in **SELECT**, **INSERT**, **UPDATE**, **DELETE**
-  - Usually added within a **WHERE** clause
+Most of the time, subqueries are placed after a `WHERE` clause.
+
+Here is an example of a simple subquery:
 
 ```Java
 SELECT * FROM students
 WHERE course_id = 1;
 ```
 
-And the resulting table is:
+This is the resulting table:
 
 | **id** | **name** | **course_id** |
 | ------ | -------- | ------------- |
@@ -31,14 +32,7 @@ And the resulting table is:
 
 [slide hideTitle]
 
-# Problem with Solution: Higher Salary
-
-[code-task title="Higher Salary" taskId="java-db-and-mysql-joins-subqueries-and-indices-higher-salary" executionType="tests-execution" executionStrategy="java-code" requiresInput]
-[code-editor language=java]
-
-
-[/code-editor]
-[task-description]
+# Problem with Solution: Higher Salary TODO ADD TESTS
 
 ## Description
 
@@ -48,17 +42,4 @@ Create a query that counts the number of employees who receive a **salary** that
 
 **Run your query statements & submit the output from the queries as plain text**.
 
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-88
-[/input]
-[output]
-88
-[/output]
-[/test]
-[/tests]
-[/code-task]
 [/slide]

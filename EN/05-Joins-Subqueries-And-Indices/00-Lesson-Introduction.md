@@ -4,16 +4,16 @@
 
 # Lesson Content
 
-## In this lesson you will learn
+## In this lesson you will learn:
 
 **1. Built-in Functions in MySQL**
-- What are the different types of functions in MySQL
+- What the different types of functions in MySQL are
 
 **2. String Functions**
-- Different functions used to manipualte strings
+- Different functions used to manipulate strings
 
 **3. Aggregate Functions**
-- Aggregate functions usage
+- Using aggregate functions
 
 **4. Math Functions**
 - The math functions integrated in MySQL
@@ -22,7 +22,7 @@
 - How to work with dates
 
 **6. Wildcards**
-- What is wildcards and why are they usefull
+- What wildcards are and why they are useful
 
 **7. Grouping**
 - How to use the `GROUP BY` function
