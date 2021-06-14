@@ -10,27 +10,27 @@
 
     ```Java
     SELECT
-        concat(first_name,' ',last_name) AS 'full_name',
-        course AS  'Course',  
-        grade AS 'Grade'
-    FROM students;
+        concat(`first_name`,' ',`last_name`) AS 'full_name',
+        `course` AS  'Course',  
+        `grade` AS 'Grade'
+    FROM `students`;
     ```
 
 - Visualizing data
 
     ```java
-        SELECT concat_ws(' ', first_name, last_name) AS full_name
-        FROM students
+        SELECT concat_ws(' ', `first_name`, `last_name`) AS `full_name`
+        FROM `students`
     ```
 
 - Filtering data
 
     ```java
-    SELECT first_name AS 'First Name'
-           second_name AS 'Last Name'
-           age AS 'Age'
-    FROM students
-    WHERE course_id = 10
+    SELECT `first_name` AS 'First Name'
+           `second_name` AS 'Last Name'
+           `age` AS 'Age'
+    FROM `students`
+    WHERE `course_id` = 10
     ```
 - The definition of **Views** and how to make one
 
