@@ -6,17 +6,17 @@
 
 Intro-to-Angular-and-Typescript-11-12-Angular-Overview
 
-**Angular** is an open-source **web application framework**, developed by **Google**, written in [TypeScript](https://en.wikipedia.org/wiki/TypeScript), made for building **enterprise-level front-end** applications.
+**Angular** is an open-source **web application framework**, developed by **Google**, written in [TypeScript](https://en.wikipedia.org/wiki/TypeScript), for building **enterprise-level front-end** applications.
 
-Angular concentrates on best the **front-end practices** and the **end-to-end tooling**, as well **Angular CLI** gives us a **high-quality** build process, which allows us to create quickly a very well structured app.
+Angular encorporates the best **front-end practices** and **end-to-end tooling**, also **Angular CLI** gives us a **high-quality** build process, which allows us to create a well structured app quickly.
 
 Also, it gives us **end-to-end testing**, **unit testing**, and more.
 
-Components in Angular are the basics elements, which are organized in "**NgModules**".
+Angular components are its basic elements, which are organized in "**NgModules**".
 
 An Angular app is defined by a set of "**NgModules**", which collect related code into functional sets.
 
-The **minimum requirement for an Angular application** is to have no less than **one root module** that enables bootstrapping, and also has many more feature modules.
+The **minimum requirement for an Angular application** is to have no less than **one root module** that enables bootstrapping, there can be many additonal feature modules.
 
 Here is an example of an Angular component:
 
@@ -36,9 +36,9 @@ In this example, we have the **AppComponent** class decorated with **component d
 
 This **decorator** has a **selector** and a **template**.
 
-The **selector** wraps the template as instruction and triggers the instantiation of that instruction.
+The **selector** wraps the template as an instruction and triggers the instantiation of that instruction.
 
-That means whenever there is an HTML tag with `my-app`, the **AppComponent** will create itself, and the **template** will render.
+That means whenever there is an HTML `my-app` tag, the **AppComponent** will initialize itself, and the **template** will render.
 
 [/slide]
 
@@ -48,11 +48,11 @@ That means whenever there is an HTML tag with `my-app`, the **AppComponent** wil
 
 Intro-to-Angular-and-Typescript-13-Angular-Versions
 
-The first version is **Angular 1**, which now is called **AngularJS**.
+The first Angular version was called **Angular 1**, now called **AngularJS**.
 
-The second version of **Angular** is called **Angular 2**, which is a **complete re-write** of the **Angular** (**AngularJS**).
+The second - **Angular 2** is a **complete re-write** of **AngularJS**.
 
-The following versions after the **Angular 2**, nowadays are called just **Angular**.
+All following versions after **Angular 2** are just called: **Angular**.
 
 [image assetsSrc="Angular-Introduction-3.png" /]
 
