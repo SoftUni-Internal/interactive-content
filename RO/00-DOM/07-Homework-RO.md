@@ -513,7 +513,7 @@ Dacă **primiți mai multe nume cu aceeași literă de pornire**, ar trebui să 
 
 [hints]
 [hint]
-Attach a `click` event listener to the `ADD` button:
+Atașați un ascultător pentru evenimentul `click` la butonul `ADD`:
 
 ```js
 const addButton = document
@@ -524,7 +524,7 @@ addButton
 ```
 [/hint] 
 [hint]
-Create an `addName` event handler and obtain the **name** input field's **value**:
+Creați un handler pentru evenimentul `addName` și obțineți **valoarea** câmpului de intrare **name**:
 
 ```js
 function addName() { 
@@ -536,7 +536,7 @@ function addName() {
 ```
 [/hint] 
 [hint]
-Make sure to format the first letter to **uppercase**, and the rest to lowercase:
+Asigurați-vă că prima literă va fi o **majusculă**, iar celelalte caractere litere mici:
 
 ```js
 let firstLetter = name[0].toUpperCase();
@@ -547,15 +547,15 @@ let charIndex =
   Number(firstLetter.charCodeAt('0') - 65);
 ```
 
-Then, use the `charCodeAt` method to get the first character's **ASCII** value.
+Apoi, folosiți metoda `charCodeAt` pentru a obține valoarea **ASCII** a primului caracter.
 [/hint] 
 [hint]
-Obtain all **list item** elements using `getElementsByTagName`.
+Obțineți toate elementele **list item** folosind `getElementsByTagName`.
 
-Depending on the `innerHTML` of the corresponding list item, you can either:
+În funcție de `innerHTML` al list item-ului corespunzător, puteți:
 
-- **Append** the new name, preceded by a **comma and a space** (**", "**)
-- If it happens to be the first one for the given letter, simply **add** it
+- **Să adăugați** noul nume, precedat de **o virgulă și un spațiu** (**", "**)
+- Dacă se întâmplă să fie primul pentru litera dată, **adăugați**-l simplu
 
 ```js
 const liElements = 
@@ -574,7 +574,7 @@ else {
 nameInput.value = '';
 ```
 
-Remember to clean the **input box's value** afterwards.
+Țineți minte să ștergeți **valoarea casetei de intrare** după aceea.
 
 [/hint] 
 [/hints]
@@ -1016,7 +1016,7 @@ Scrieți o **funcție** pentru a crea funcționalitatea de **chat room**.
 
 [hints]
 [hint]
-Use the `classlist.add()` method to add the required **classes** to the new **div**:
+Folosiți metoda `classlist.add()` pentru a adăuga **clasele** necesare la noul **div**:
 
 ```js
 let myMessage = document.createElement("div");
@@ -1024,14 +1024,14 @@ myMessage.classList.add("message", "my-message");
 ```
 [/hint] 
 [hint]
-Set the `textContent` of the new **div** to the value of the `#chat_input` element:
+Setați `textContent` al noului **div** la valoarea elementului `#chat_input`:
 
 ```js
 myMessage.textContent = chatInput.value;
 ```
 [/hint] 
 [hint]
-Append **your div** to the `#chat_messages` div by using `appendChild()`:
+Adăugați **div-ul vostru** la div-ul `#chat_messages` folosind `appendChild()`:
 
 ```js
 chatMessages.appendChild(myMessage);
