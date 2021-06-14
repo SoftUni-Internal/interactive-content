@@ -24,10 +24,10 @@ This is how to add a Pre middleware function:
 
 ``` js
 const schema = new Schema(..);
-schema.pre('save', function() { 
-  return hashPassword()
-    .then(() => validateData());
-  });
+schema.pre('save', function() {
+    return hashPassword()
+        .then(() => validateData());
+});
 ```
 [/slide]
 

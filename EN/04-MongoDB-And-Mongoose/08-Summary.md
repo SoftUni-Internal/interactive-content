@@ -6,7 +6,7 @@
 - **NoSQL databases** have higher **performance**
 - **Mongoose** gives us a **schema-based** solution
 
-``` js
+```js
 const modelSchema = new mongoose.Schema({
    propString: String 
 });
@@ -15,7 +15,7 @@ const modelSchema = new mongoose.Schema({
 - **Mongoose** supports all **CRUD** operations
 - **Chaining queries** with **Mongoose** is possible
 
-``` js
+```js
 Student.find({}).where('firstName').equals('george').where('age').gt(18).lt(65).sort({age:1}).skip(10).limit(10)
 ```
 

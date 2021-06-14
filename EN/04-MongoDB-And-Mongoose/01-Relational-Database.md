@@ -61,7 +61,7 @@ Here is a simple example of a table in a **relational database:**
 
 The **same** data in a **non-relational database:**
 
-```
+```js
 {
     id: 1,
     name: "Milk",
@@ -90,7 +90,7 @@ The main difference is that in the **non-relational database** we can add other 
 
 So, a new product with different properties can be added:
 
-``` 
+```js 
 {
     id: 4,
     name: "Coca-Cola",

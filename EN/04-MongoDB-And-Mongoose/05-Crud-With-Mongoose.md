@@ -15,12 +15,12 @@ We have to create a Model Object first.
 ``` js
 let newEmployee = new Employee(employee); // this is model object.
 newEmployee.save() // Saving method
-  .then((data)=> {
-    console.log(data);
-   })
-  .catch((err)=> {
-    console.log(err);
-  })
+    .then((data) => {
+        console.log(data);
+    })
+    .catch((err) => {
+        console.log(err);
+    })
 ```
 
 - **Read**: We can use `.find()` to retrieve data.
@@ -57,17 +57,26 @@ const mongoose = require('mongoose');
 const connectionStr = 'mongodb://localhost:27017/unidb';
 
 const studentSchema = new mongoose.Schema({
-  name: { type: String, required: true, minlength: 3 },
-  age: { type: Number }
+    name: {
+        type: String,
+        required: true,
+        minlength: 3
+    },
+    age: {
+        type: Number
+    }
 });
 const Student = mongoose.model('Student', studentSchema);
 
 mongoose.connect(connectionStr).then(() => {
-  new Student({ name: 'Peter', age: 21 })
-    .save()
-    .then(student => {
-      console.log(student._id)
-    });
+    new Student({
+            name: 'Peter',
+            age: 21
+        })
+        .save()
+        .then(student => {
+            console.log(student._id)
+        });
 });
 ```
 
@@ -92,13 +101,17 @@ Student
     .find({})
     .then(students => console.log(students))
     .catch(err => console.error(err))
-    
+
 Student
-    .find({name: 'Peter'})
+    .find({
+        name: 'Peter'
+    })
     .then(students => console.log(students))
-    
+
 Student
-    .findOne({name: 'Peter'})
+    .findOne({
+        name: 'Peter'
+    })
     .then(student => console.log(student))
 ```
 
@@ -123,21 +136,24 @@ We can also **update** one or multiple entities with several methods.
 ``` js
 Student
     .findById('57fb9fe1853ab747b0f692d1')
-    .then((student) => { 
-      student.firstName = 'Steven'
-      student.save()
+    .then((student) => {
+        student.firstName = 'Steven'
+        student.save()
     });
-    
+
 Student
-    .findByIdAndUpdate('57fb9fe90cd76e4e2c59e1a2',
-     { name: 'Steven' }
-    );
-    
+    .findByIdAndUpdate('57fb9fe90cd76e4e2c59e1a2', {
+        name: 'Steven'
+    });
+
 Student
-    .update(
-      { firstName: 'Chris' },
-      { name: 'Peter' },
-      { multi: true });
+    .update({
+        firstName: 'Chris'
+    }, {
+        name: 'Peter'
+    }, {
+        multi: true
+    });
 ```
 [/slide]
 
@@ -152,14 +168,14 @@ Note that if the condition is **not passed** or **empty**, then all the records 
 
 Take a look at the following example:
 
-``` js
+```js
 userModel.remove({userid:"George"})
 // Removes the record with userid "George"
 ```
 
 We can **remove** all records of the users collection:
 
-``` js
+```js
 userModel.remove()
 ```
 

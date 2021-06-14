@@ -9,7 +9,7 @@ The **Mongoose Query** class provides an interface for **finding**, **updating**
 
 This is an example of writing a query in default **MongoDB** syntax:
 
-``` js
+```js
 {
   $or: [
     {conditionOne: true},
@@ -37,11 +37,11 @@ This is an example of writing the same query in **Mongoose** syntax:
 
 A lot of methods like `.find()` return a **mongoose query**.
 
-``` js
+```js
 const Character = mongoose.model('Employee', Schema({
-  fname: String,
-  lname: String,
-  age: Number
+    fname: String,
+    lname: String,
+    age: Number
 }));
 
 const query = Character.find();
@@ -75,7 +75,7 @@ Student.findOne({'lastName':'Smith'}).select('name age')
 
 - `.sort()`: **Sorting by a given criteria**
 
-``` js
+```js
 Student.find({}).sort({age:-1})
 ```
 
@@ -83,7 +83,9 @@ The **keywords** you can use when sorting are: **asc**, **desc**, **ascending**,
 
 - `.limit()` / `.skip()`: **Limit or Skip query results**
 
-`Student.find({}).sort({age:-1}).skip(10).limit(10)`
+```js
+Student.find({}).sort({age:-1}).skip(10).limit(10)
+```
 
 Sometimes we need all documents and sometimes we need only a few.
 
@@ -95,11 +97,13 @@ We can **stack** different methods one upon the others.
 
 ``` js
 Student.find({})
-  .where('firstName').equals('George')
-  .where('age').gt(18).lt(65)
-  .sort({age:-1})
-  .skip(10)
-  .limit(10)
+    .where('firstName').equals('George')
+    .where('age').gt(18).lt(65)
+    .sort({
+        age: -1
+    })
+    .skip(10)
+    .limit(10)
 ```
 
 [/slide]
@@ -112,18 +116,27 @@ Population is the process of **automatically replacing** the **specified paths**
 
 We may **populate** a single document, multiple documents, a plain object, multiple plain objects, or all objects returned from a query.
 
-``` js
+```js
 const studentSchema = new mongoose.Schema({
-  name: String,
-  age: Number,
-  facultyNumber: String
-  teacher: { type: Schema.Types.ObjectId, ref: 'Teacher' }
-  subjects: [{ type: Schema.Types.ObjectId, ref: 'Subject' }]
+    name: String,
+    age: Number,
+    facultyNumber: String
+    teacher: {
+        type: Schema.Types.ObjectId,
+        ref: 'Teacher'
+    }
+    subjects: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Subject'
+    }]
 });
 
 const subjectSchema = new mongoose.Schema({
-  title: String,
-  students: [{ type: Schema.Types.ObjectId, ref: 'Student' }]
+    title: String,
+    students: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Student'
+    }]
 });
 
 const Student = mongoose.model('Student', studentSchema);
@@ -135,21 +148,27 @@ In this example, we are creating **two models** that reference each other.
 To load all the data referenced with the entity use `populate()` method.
 
 ``` js
-Student.findOne({ name: 'Peter' })
-  .populate('subjects')
-  .then(student => {
-     console.log(student.subjects)   })
+Student.findOne({
+        name: 'Peter'
+    })
+    .populate('subjects')
+    .then(student => {
+        console.log(student.subjects)
+    })
 ```
 
 We can also load **multiple** paths:
 
 ``` js
-Student.findOne({ name: 'Peter' })
-   .populate('subjects')
-   .populate('teacher')
-   .then(student => {
-      console.log(student.teacher)
-      console.log(student.subjects)   })
+Student.findOne({
+        name: 'Peter'
+    })
+    .populate('subjects')
+    .populate('teacher')
+    .then(student => {
+        console.log(student.teacher)
+        console.log(student.subjects)
+    })
 ```
 
 Note the following features of the `populate()` method:
@@ -166,13 +185,19 @@ We can populate based on a **condition**:
 
 ``` js
 Subject.
-  find({})
-  .populate({
-    path: 'students',
-    match: { age: { $gte: 19 }},
-    select: 'name facultyNumber',
-    options: { limit: 3 }
-  })
+find({})
+    .populate({
+        path: 'students',
+        match: {
+            age: {
+                $gte: 19
+            }
+        },
+        select: 'name facultyNumber',
+        options: {
+            limit: 3
+        }
+    })
 ```
 
 You can read more about population [here.](mongoosejs.com/docs/populate.html)

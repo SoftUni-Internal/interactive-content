@@ -20,7 +20,9 @@ These are some of its features:
 
 To **install** it, just open a **command line** and type:
 
-`npm install mongoose`
+```js
+npm install mongoose
+```
 
 There are some benefits to using **Mongoose** over **native MongoDB**:
 
@@ -42,11 +44,15 @@ You can learn more about **MongooseJS** [here.](https://mongoosejs.com/docs/api.
 
 To work with Mongoose, we must load the following **module**:
 
-`const mongoose = require('mongoose')`
+```js
+const mongoose = require('mongoose')
+```
 
 Then, we connect to the database with the `.connect()` method:
 
-`mongoose.connect('mongodb://localhost:27017/unidb')`
+```js
+mongoose.connect('mongodb://localhost:27017/unidb')
+```
 
 These two lines of code are all we need to begin working with Mongoose.
 [/slide]

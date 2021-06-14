@@ -15,11 +15,11 @@ Take a look at the following example:
 
 ``` js
 const exampleSchema = new mongoose.Schema({
-  propString: String,
-  propNumber: Number,
-  propObject: {},
-  propArray: [],
-  propBool: Boolean
+    propString: String,
+    propNumber: Number,
+    propObject: {},
+    propArray: [],
+    propBool: Boolean
 });
 const Model = mongoose.model('Example', exampleSchema);
 ```
@@ -42,7 +42,7 @@ Here is how their syntax differs from plain JS:
 ``` js
 const studentSchema = new mongoose.Schema({…});
 studentSchema.methods.getInfo = function() { // Avoid arrow functions
-   return `I am ${this.firstName} ${this.lastName}`;
+    return `I am ${this.firstName} ${this.lastName}`;
 };
 ```
 
@@ -106,10 +106,10 @@ We can use setters to manipulate our string.
 This example **splits** the passed name at every whitespace.
 
 ``` js
-userSchema.virtual('fullname').set(function (name) {  
-  var split = name.split(' ');
-  this.first = split[0];
-  this.last = split[1];
+userSchema.virtual('fullname').set(function(name) {
+    var split = name.split(' ');
+    this.first = split[0];
+    this.last = split[1];
 });
 ```
 
@@ -125,10 +125,10 @@ Validation is defined in the *SchemaType*.
 
 ``` js 
 studentSchema.path('firstName')
-  .validate(function () {
-    return this.firstName.length >= 2 
-  && this.firstName.length <= 10
-}, 'First name must be between 2 and 10 symbols long!') // Error message passed as a second parameter
+    .validate(function() {
+        return this.firstName.length >= 2 &&
+            this.firstName.length <= 10
+    }, 'First name must be between 2 and 10 symbols long!') // Error message passed as a second parameter
 ```
 
 By validating, we can make sure that "**bad**" data does not get in the application.
@@ -150,10 +150,22 @@ That is the reason Node.js has **modules** in the first place.
 ```js
 const mongoose = require('mongoose');
 const studentSchema = new mongoose.Schema({
-   firstName: { type: String, required: true },
-   lastName: { type: String, required: true },
-   facultyNumber: { type: String, required: true, unique: true },
-   age: { type: Number }
+    firstName: {
+        type: String,
+        required: true
+    },
+    lastName: {
+        type: String,
+        required: true
+    },
+    facultyNumber: {
+        type: String,
+        required: true,
+        unique: true
+    },
+    age: {
+        type: Number
+    }
 });
 
 module.exports = mongoose.model('Student', studentSchema);
