@@ -127,8 +127,8 @@ The values can be numbers, text, or even dates.
 
 ```java                                                                   
 SELECT *                                                               
-FROM students                                                          
-WHERE course IN ('Java Basics', 'Java Fundamentals', 'Java Advanced')  
+FROM `students`                                                          
+WHERE `course` IN ('Java Basics', 'Java Fundamentals', 'Java Advanced')  
 ```
 
 We want to use **IN/NOT IN** operators when we know the exact value we want, following the same logic we can understand what the **NOT IN** operator does.
