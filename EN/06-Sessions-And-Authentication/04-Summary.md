@@ -16,13 +16,13 @@ const cookieParser = require("cookie-parser");
 app.use(cookieParser());
 
 app.get("/createCookie", (req, res) => {
-  res.cookie("greeting", "Hello world!");
+    res.cookie("greeting", "Hello world!");
 
-  res.end("Cookie was set successfully");
+    res.end("Cookie was set successfully");
 });
 
 app.get("/receiveCookie", (req, res) => {
-  res.json(req.cookies);
+    res.json(req.cookies);
 });
 ```
 
@@ -42,9 +42,9 @@ const saltRounds = 7;
 const myPlainTextPassword = "catchMeIfYouCan";
 
 bcrypt.genSalt(saltRounds, (err, salt) => {
-  bcrypt.hash(myPlainTextPassword, salt, (err, hash) => {
-    console.log(hash);
-  });
+    bcrypt.hash(myPlainTextPassword, salt, (err, hash) => {
+        console.log(hash);
+    });
 });
 ```
 
@@ -59,8 +59,13 @@ bcrypt.genSalt(saltRounds, (err, salt) => {
 ```js
 const jwt = require("jsonwebtoken");
 
-const payload = { name: "Tedd", age: 43 };
-const options = { expiresIn: "1d" };
+const payload = {
+    name: "Tedd",
+    age: 43
+};
+const options = {
+    expiresIn: "1d"
+};
 const secret = "dontTellToAnyone";
 
 const token = jwt.sign(payload, secret, options);

@@ -79,16 +79,16 @@ app.use(cookieParser());
 
 // Setting a cookie
 app.get("/createCookie", (req, res) => {
-  res.cookie("greeting", "Hello world!");
-  // Here, "greeting" is the key, and the value is "Hello, world!"
+    res.cookie("greeting", "Hello world!");
+    // Here, "greeting" is the key, and the value is "Hello, world!"
 
-  res.end("Cookie was set successfully");
+    res.end("Cookie was set successfully");
 });
 
 // Getting a cookie
 app.get("/receiveCookie", (req, res) => {
-  res.json(req.cookies);
-  // Sends the cookies as JSON
+    res.json(req.cookies);
+    // Sends the cookies as JSON
 });
 ```
 
@@ -118,22 +118,21 @@ This is how to set up this middleware for work:
 const session = require("express-session");
 
 app.use(session({
-  secret: "ISO2Z0UzWW",
-  httpOnly: true,
-  secure: true,
-  })
-);
+    secret: "ISO2Z0UzWW",
+    httpOnly: true,
+    secure: true,
+}));
 
 app.get("/setSession", (req, res) => {
-  req.session.greeting = "Hello, world!";
-  // Setting the greeting key to have a "Hello world!" value
+    req.session.greeting = "Hello, world!";
+    // Setting the greeting key to have a "Hello world!" value
 
-  res.end("Successfully set session!");
+    res.end("Successfully set session!");
 });
 
 app.get("/getSession", (req, res) => {
-  req.json(req.session);
-  // Sends the session as a JSON
+    req.json(req.session);
+    // Sends the session as a JSON
 });
 ```
 

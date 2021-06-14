@@ -59,10 +59,10 @@ const saltRounds = 8; // Salt iterations, a higher value reduces performance
 const myPlainTextPassword = "unhackable"; // The initial password is "unhackable"
 
 bcrypt.genSalt(saltRounds, (err, salt) => {
-  bcrypt.hash(myPlainTextPassword, salt, (err, hash) => {
-    console.log(hash);
-    // $2b$08$O24n5Ol.4XmN.egE5ceSOem5nWms85DQnZjmAl3Az8TYqcuWlRbty
-  })
+    bcrypt.hash(myPlainTextPassword, salt, (err, hash) => {
+        console.log(hash);
+        // $2b$08$O24n5Ol.4XmN.egE5ceSOem5nWms85DQnZjmAl3Az8TYqcuWlRbty
+    })
 });
 ```
 
@@ -78,11 +78,11 @@ const hash = "$2b$08$O24n5Ol.4XmN.egE5ceSOem5nWms85DQnZjmAl3Az8TYqcuWlRbty";
 const fakeHash = "$2b$08$O24n5Ol.4XmN.egE5ceFFem5nWms85DQnZjmAl3Az8TYqcuWlRbty"
 
 bcrypt.compare(plainTextPassword, hash, (err, res) => {
-  console.log(res); // true
+    console.log(res); // true
 });
 
 bcrypt.compare(plainTextPassword, fakeHash, (err, res) => {
-  console.log(res); // false
+    console.log(res); // false
 });
 ```
 

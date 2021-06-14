@@ -105,8 +105,13 @@ This is how to sign a JSON Web Token:
 ```js
 const jwt = require("jsonwebtoken");
 
-const payload = { name: "Garry", age: 27 }; // data for transfer
-const options = { expiresIn: "2d" }; // sets expiration date after 2 days
+const payload = {
+    name: "Garry",
+    age: 27
+}; // data for transfer
+const options = {
+    expiresIn: "2d"
+}; // sets expiration date after 2 days
 const secret = "signing secret"; // secret for the signature
 
 const token = jwt.sign(payload, secret, options);
@@ -130,7 +135,7 @@ Decoding the token is performed as follows:
 
 ```js
 const token =
- "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FycnkiLCJhZ2UiOjI3LCJpYXQiOjE2MDk4ODc5NzMsImV4cCI6MTYxMDA2MDc3M30.AIuFu04O39uokaGwfxy7iWzjr9vnsI00gqxXJ-peT8Y";
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiR2FycnkiLCJhZ2UiOjI3LCJpYXQiOjE2MDk4ODc5NzMsImV4cCI6MTYxMDA2MDc3M30.AIuFu04O39uokaGwfxy7iWzjr9vnsI00gqxXJ-peT8Y";
 
 const decodedToken = jwt.verify(token, "signing secret"); // decode with the initial secret key
 
