@@ -10,6 +10,7 @@
 - Data types supported by MySQL their uses
 
 **2. Database Modeling**
+- Creating a database and working with it
 
 **3. Basic SQL Queries**
 - Retrieving data from the database
@@ -19,6 +20,7 @@
  
 **5. Altering Tables**
 - Changing the properties of tables after creation
+
 **6. Deleting Data and Structures**
 
 [/slide]
