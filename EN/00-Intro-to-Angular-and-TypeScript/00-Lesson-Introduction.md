@@ -26,7 +26,7 @@ Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents
 
 -  Javascript Superset
 
-**5. How to install Angular**
+**5. Installing Angular**
 
 -  Angular CLI
 
