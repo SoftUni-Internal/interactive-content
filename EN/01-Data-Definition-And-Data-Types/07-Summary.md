@@ -4,17 +4,17 @@
 
 ## In this lesson you learned:
 
-- What Data Types are and how to use them
+- The data types in MySQL, their uses and limitations
     
     ```Java
     VARCHAR(50)
     DOUBLE(12,3)
     DATETIME
     ```
-- The main types of data you can use are String, Numerical and DATETIME
+- The main types of data you can use are **STRING**, **NUMERICAL** and **DATETIME**
 
 
-- How we model databases
+- How to model databases using MySQL Workbench
 
 - SQL Queries
     - Table creation:
