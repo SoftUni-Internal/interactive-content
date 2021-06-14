@@ -1,7 +1,6 @@
 [slide hideTitle]
 # Summary
 
-
 # In this lesson you learned:
 
 - **Express.js** is a server framework
@@ -51,7 +50,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 - **Templating** enables code readability and speeds up development
   - Templating engines **assemble** **logic** and **data**
 
-```
+```js
 <div class="entry">
   <h1>{{ title }}</h1>
   <div class="body">
@@ -61,7 +60,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 
 ```
 
-```
+```js
 <div class="entry">
   <h1>My New Post</h1>
   <div class="body">
@@ -74,7 +73,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 - **Handlebars** is a templating engine with a lot of features
 
   - **For-Loops**
-  ```
+  ```js
   <ul class="product_list">
     {{#each products}}
     <li>{{product}}</li>
@@ -82,7 +81,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
   </ul>
   ```
   - **Conditional Statements**
-  ```
+  ```js
   {{#if sunny}}
     The sky is clear
   {{else}}
@@ -91,22 +90,18 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 
   ```  
   - **Partials**
-  ```
-  {{> myPartial }}
-  ```
-
-
-
-
+  
+  `{{> myPartial }}`
+  
 
 ## In the next lesson you will learn:
 
 - Relational and NoSQL Databases
 - MongoDB
 - Mongoose
-  - Models
+  - models
   - CRUD Operations
-  - Middleware and Queries
-  - Model population
+  - middleware and Queries
+  - model population
 
 [/slide]

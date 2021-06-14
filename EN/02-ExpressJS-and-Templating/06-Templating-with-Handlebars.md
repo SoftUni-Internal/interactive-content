@@ -177,3 +177,7 @@ If you do not want Handlebars to **escape a value**, you can use the "triple-sta
 `{{{Any symbol inside here will not be escaped}}}`
 
 [/slide]
+
+[slide hideTitle]
+# Demo: Handlebars
+[/slide]

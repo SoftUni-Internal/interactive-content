@@ -1,4 +1,4 @@
-# Cubicle – Part 2
+# Cubicle - Part 2
 
 [slide hideTitle]
 
@@ -8,7 +8,7 @@
 
 "**Cubicle**" is a place, where you can browse some of the most popular Rubik cubes in the world and add some new cubes that you have discovered.
 
-# Main Task
+## Main Task
 
 If you were able to complete the previous task, **good job!** 
 
@@ -16,7 +16,7 @@ Now it is time to **upgrade** your app and **implement** a few new features.
 
 For instance, to replace the way you **store** data using **MongoDB** and **Mongoose**, **creating and attaching** new accessories to each cube, make some relations between them and **include** a few more **pages**.
 
-# Installing Dependencies
+## Installing Dependencies
 
 As you already know, you should **install** a bunch of new things so you could be able to continue with this part of the workshop.
 
@@ -45,7 +45,7 @@ So, make sure inside it, the **mongoose connection** via **MongoDB** **connectio
 
 The `index.js` file should **require** the exported mongoose connection (**database**) before the server starts. 
 
-# Model
+## Model
 
 If you follow the previous structure you probably created **ES6** class Model for each cube in this format:
 

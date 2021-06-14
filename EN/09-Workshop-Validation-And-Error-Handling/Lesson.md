@@ -1,2 +1,2 @@
-# Workshop: Validation and Error Handling - Not translated
+# Workshop: Validation and Error Handling
 
