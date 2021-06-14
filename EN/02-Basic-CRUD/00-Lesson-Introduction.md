@@ -8,7 +8,7 @@
 
 **1. The Query Basics**
 - What **CRUD** stands for
-а
+
 **2. Retrieving Data**
 
 **3. Writing Data in Tables**

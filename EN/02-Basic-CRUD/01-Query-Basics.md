@@ -14,8 +14,8 @@
 Using the **INSERT INTO** statement we can choose tables and rows which we want to populate, indicating the values after the **VALUES** keyword.
 
 ``` java
-INSERT INTO students (full_name, age, course)     
-VAlUES 
+INSERT INTO `students` (`full_name`, `age`, `course`)     
+VALUES 
 ('Jane Doe', 14, 'Java Basics'), 
 ('John Doe', 22, 'JavaScript Applications');
 ```
@@ -31,23 +31,23 @@ If you are inserting values into all the columns, writing the column names is op
 Using the **SELECT** keyword, which indicates *retrieve* combined with the **FROM** keyword, which indicates the table, we retreive our records from the database. 
 
 ``` java
-SELECT full_name, age, course
-FROM students;
+SELECT `full_name`, `age`, `course`
+FROM `students`;
 ```
 
 We retrieve information for the name, age, and course columns, any other columns available in the table will not be shown.
 
 Specifying the exact column names rather than using the `SELECT *` allows you to control what kinds of information you're retrieving.
 
-## **UPDATE**
+## UPDATE
 Using the **UPDATE** keyword, we can change the specified records to different values in their columns.
 
 Doing so requires another keyword - **WHERE** which helps us with filtering the table and updating only the records we want. 
 
 ``` java
-UPDATE students                    
-SET course = 'Java Fundamentals'   
-WHERE full_name = 'Jane Doe'       
+UPDATE `students`                    
+SET `course` = 'Java Fundamentals'   
+WHERE `full_name` = 'Jane Doe'       
 ```
 
 We are updating the values in the course field of any record that matches the condition specified after the **WHERE** keyword.
@@ -64,7 +64,10 @@ Using the **DELETE** statement we can remove records from our database.
 Don't forget to add a **WHERE** statement, so that you can specify a condition for the records that should be deleted.
 
 ``` java
-DELETE FROM students                --Here we delete a record from the table students.
-WHERE course = 'JavaScipt Basics'   --where certain condition is true.
+DELETE FROM `students`               
+WHERE `course` = 'JavaScipt Basics'   
 ```
+
+We are deleting a record from the **students** table, where a certain condition is true.
+
 [/slide]
