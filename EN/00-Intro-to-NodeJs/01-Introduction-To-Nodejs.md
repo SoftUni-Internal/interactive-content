@@ -18,11 +18,8 @@ Here are some of the benefits that come along with it:
 
 - Its community is very **large and active** which means bug fixes and updates on packages occur **frequently**
 
-[/slide]
 
-[slide hideTitle]
-
-# Installation
+## Installation
 
 **Here is a** [link](https://nodejs.org/en/) **to the Node.js's official website.**
 
@@ -38,11 +35,8 @@ If the command returns a version number, Node.js has been successfully installed
 
 Otherwise, try running the installer again.
 
-[/slide]
 
-[slide hideTitle]
-
-# Environment Setup
+## Environment Setup
 
 There are two ways to execute JS code using Node.js:
 
@@ -74,11 +68,8 @@ You can execute it using the `node` command, followed by the name of the file:
 node app.js
 ```
 
-[/slide]
 
-[slide hideTitle]
-
-# NPM Packages
+## NPM Packages
 
 Node.js projects are **initialized as NPM Packages**.
 
@@ -102,11 +93,8 @@ To **apply default values** to all questions about the project's characteristics
 npm init -y
 ```
 
-[/slide]
 
-[slide hideTitle]
-
-# Configuration (package.json)
+## Configuration (package.json)
 
 The `package.json` file is an object, which holds a **metadata** key and **general information** about a certain project.
 
