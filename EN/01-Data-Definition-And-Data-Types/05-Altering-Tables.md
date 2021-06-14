@@ -22,7 +22,7 @@ ALTER TABLE `employees`
 ADD `salary` DECIMAL;
 ```
 
-The name of the new column will be `salary` and the data type is `DECIMAL`.
+The name of the new column will be **salary** and the data type is **DECIMAL**.
 
 ## Deleting a Column
 
