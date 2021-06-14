@@ -6,25 +6,26 @@
 
 Intro-to-Angular-and-Typescript-3-4-HTTP-Basics
 
-**Hypertext Transfer Protocol** or **HTTP** is an application-level protocol for distributed, collaborative, hypermedia information systems, between a web client and a web server.
+The **Hypertext Transfer Protocol** or **HTTP** is an application-level protocol for distributed, collaborative, hypermedia information systems, between a web client and a web server.
 
 **HTTP** is a text-based **client-server** protocol that can be used for **transferring** Web resources, like **HTML** files, **images**, **query results**, and more, by using a **standardized** way of communication. 
 
 What makes HTTP a powerful protocol are the **following features**:
 
-- **Connectionless**: The web browser and the server are not **connected**, when the web browser sends a request to the server the **connection is created**
+- **Connectionless**: The web browser and the server are not **connected**, when the web browser sends a request to the server a **connection is established**
 
-The server is **obligated** to respond and after the response has been **proceeded**, the connection between both is **terminated**. 
+The server is **requested** to respond and after the response has been **sent**, the connection between them is **terminated**. 
 
-The only time when web client and web server **know about each other** is during current request and response only.
+The only time when a web client and a web server **can address each other** is during a "request-response" exchange.
 
-- **Media independence**: There is no **restriction** about what kind of data type can be sent by HTTP
+- **Media independence**: There is no **restriction** on what kind of data type can be sent using HTTP
 
-If the web browser has specified a **content type** (MIME-type) and the **webserver** can handle such data **content**, the HTTP request will be handled **successfully**.
+
+The web browser specifies the **content type** (MIME-type) and if the **webserver** can handle data of this type, the HTTP request will be handled.
 
 - **Stateless**: The **web server** and the **web client** are not aware of each other all the time, which means that the **connection** is created only when a **request** is made
 
-That way neither the client nor the browser **retain information between requests**, and often cookies are used to **overcome** this issue.
+That way neither the client nor the browser **retain information between requests** cookies can be used to **resolve** this issue.
 
 [/slide]
 
@@ -34,26 +35,26 @@ That way neither the client nor the browser **retain information between request
 
 Intro-to-Angular-and-Typescript-5-6-HTTP-Request-Response-Protocol
 
-When using HTTP protocol in the **majority** of the cases we have **communication** between **client** program and **server** program, where:
+When using the HTTP protocol in the **majority** of the cases we have a **communication** between a **client** and a **server** :
 
-- Client program is a **web browser** (Google Chrome, Mozilla Firefox, Safari, etc.) that can **start** the connection
-- Server program is a **web server**, which is **up and running**, waiting for **requests**
+- A client program is usually a **web browser** (Google Chrome, Mozilla Firefox, Safari, etc.). It can **start** the connection
+- A server program is a **web server**, which is **constantly running** and waiting for **requests**
 
-The **web server** could be written (created) using different **programming languages**, for example:
+The **web server** cmay be nuilt using different **programming languages**,some possible options are:
    - [ASP.Net Core](https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-core) - CSharp
    - [Spring](https://spring.io/) - Java
    - [Node.js](https://nodejs.org/en/about/) - JavaScript
    - [Django](https://www.djangoproject.com/) - Python
 
-For example:
+Example:
 
 [image assetsSrc="Angular-Introduction.png" /]
 
-In this example a web server sends a "**GET**" **request** for a file **named** "index.html", **using** HTTP/1.1 protocol, which "1.1" is the **current version** of the HTTP protocol.
+In this example a web server sends a "**GET**" **request** referring to a file **named** "index.html", **using** HTTP/1.1 protocol, which "1.1" is the **current version** of the HTTP protocol.
 
-And the server is **obligated** to return a response, and in this case, the server **agrees** use the HTTP/1.1 protocol.
+The server **returns** a response, in this case the server **confirms** the use of the HTTP/1.1 protocol.
 
-The **actual response** is "200 OK" which is **self-explanatory** and also a text is **returned** "Welcome to our Web site!".
+The **actual server response** is "200 OK" and also the text: "Welcome to our Web site!".
 
 You can read more about status codes in [MDN Web Documentation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
@@ -65,11 +66,9 @@ You can read more about status codes in [MDN Web Documentation](https://develope
 
 Intro-to-Angular-and-Typescript-7-Example - Hyper-Text-Transfer-Protocol
 
-By default, when we sent a request, it will be **GET**.
-
 We send **GET** requests when we want to **obtain data** from the server.
 
-Here is an example request:
+Here is an example:
 
 ```html
     GET /courses/about.aspx HTTP/1.1
@@ -78,9 +77,9 @@ Here is an example request:
     <CRLF>
 ```
 
-On the first line is the **request type**, the **requested resource**, and the **protocol version**.
+The first line contains the **request type**, the **requested resource** and the **protocol version**.
 
-The **Host**, the **User-Agent**, and the **body** are on the following lines.
+The **Host**, the **User-Agent** and the **body** are placed on the next lines.
 
 ## HTTP Response
 
@@ -96,7 +95,7 @@ This response will look like this:
     <html><title>Hello</title>Welcome to our site</html>
 ```
 
-In the first line, we see the **protocol version** and the **status code**.
+On the first line, we can see the **protocol version** and the **status code**.
 
 The next lines contain:
 
@@ -104,10 +103,10 @@ The next lines contain:
 
 -  The **Server Type**
 
--  The **date** when the resource is **modified**
+-  The **date** when the resource was **modified**
 
 -  The **length** of the **content**
 
-The **body** is after the **headers**.
+The **body** is placed after the **headers**.
 
 [/slide]
