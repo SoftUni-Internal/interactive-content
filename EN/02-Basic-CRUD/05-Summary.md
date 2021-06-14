@@ -1,7 +1,7 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learned:
+## In this lesson you learned:
 
 - The **CRUD** operations - Create, Read, Update Delete
 - The capabilities of SQL **SELECT**
@@ -64,7 +64,7 @@
     ```
 
 
-# In the next lesson you will learn:
+## In the next lesson you will learn:
 
 - Built-in functions
 - Wildcards

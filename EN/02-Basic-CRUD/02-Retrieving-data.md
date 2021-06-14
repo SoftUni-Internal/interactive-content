@@ -9,14 +9,14 @@ Retrieving data is the action of pulling data from our database based on specifi
 **Retrieving all available information from a table:**
 
 ``` java
-SELECT * FROM students;
+SELECT * FROM `students`;
 ```
 
 
 **Retrieving only the columns you need::**
 
 ``` java
-SELECT full_name, course, grade FROM students; 
+SELECT `full_name`, `course`, `grade` FROM `students`; 
 ```
 
 
@@ -27,9 +27,9 @@ We take only data that we need, which optimizes our query uses less resources.
 **Retrieving a subset of rows:**
 
 ``` java
-SELECT full_name, grade                  
-FROM students                              
-WHERE courseName = "Java Advanced";
+SELECT `full_name`, `grade`                  
+FROM `students`                              
+WHERE `courseName` = "Java Advanced";
 ```
 
 This operation will not boost the performance, as the database has to iterate through all the records to find the one that meets the requirements, but it will find you only the records that you need based on the condition after the WHERE keyword.
@@ -38,9 +38,9 @@ This operation will not boost the performance, as the database has to iterate th
 **Joining tables:**
 
 ``` java
-SELECT course_name, course_schedule, teacher_full_name  
-FROM Orders                                                  
-INNER JOIN Customers ON Courses.teacherId=Teachers.id;          
+SELECT `course_name`, `course_schedule`, `teacher_full_name`  
+FROM `Orders`                                                  
+INNER JOIN `Customers` ON `Courses`.teacherId=Teachers.id;          
 ```
 
 [image assetsSrc="Retrieving-data(3).png" /]
@@ -59,7 +59,7 @@ TODO: Add task
 
 [slide hideTitle]
 
-# Problem with SOlution: Select Employees with Filter
+# Problem with Solution: Select Employees with Filter
 
 TODO: Add task
 
@@ -67,25 +67,25 @@ TODO: Add task
 
 [slide hideTitle]
 
-# Other comparison conditions
+# Other Comparison Conditions
 
 Here are some other useful conditions you can specify after the WHERE keyword.
 
 
 ``` java
-SELECT first_name                                        
-FROM students                                               
-WHERE NOT (course_name = 'JS Basics' AND 'Java Basics')       
+SELECT `first_name`                                        
+FROM `students`                                               
+WHERE NOT (`course_name` = 'JS Basics' AND 'Java Basics')       
 ```
 
-This will select all records where course_name is not equal to the specified values.
+This will select all records where **course_name** is not equal to the specified values.
 
 There is an another syntax that you can use instead - `WHERE course_name NOT IN('JS Basics', 'Java Basics')`.
 
 
-The **NOT** keyword is something you may have already used in your Java projects as the **!** logical NOT operator.
+The **NOT** keyword is something you may have already used in your Java projects as the `!` logical NOT operator.
 
-Following the same logic, the keyword **AND** is equal to the **&& operator** in Java.
+Following the same logic, the keyword **AND** is equal to the `&&` in Java.
 
 
 Let's have a look over the 'OR' keyword.
@@ -105,7 +105,7 @@ Additionally we are displaying the concatenated information in a column called *
 This is purely for displaying the information and it will have no effect on the data within the students  table.
 
 
-The equivalent of **OR** in Java would be **|| operator**.
+The equivalent of **OR** in Java would be the `||` operator.
 
 
 Let us have a look over a few operators that are native only to SQL.
@@ -113,7 +113,7 @@ Let us have a look over a few operators that are native only to SQL.
 
 
 ```java
-SELECT concat_ws(' ', first_name, last_name) AS full_name`     
+SELECT concat_ws(' ', `first_name`, `last_name`) AS `full_name`     
 FROM `students`                                                     
 WHERE `age` BETWEEN 14 AND 18                                       
 ```
@@ -151,7 +151,7 @@ First, we have to understand that **NULL** does not mean **No value** it concept
 
 Null is not the same as zero or space. Zero is a number, and space is a character. 
 
-## Arithmetic comparison and NULL
+## Arithmetic Comparison and NULL
 
 When we are talking about **NULL**, we should always be careful with its behavior when we compare it with **><=**, as it does not give us the results we expect.
 
@@ -202,9 +202,9 @@ By default the **ORDER BY** clause uses **ASC** strategy.
 
 ```java
 SELECT *                              //Here we choose all the information
-FROM students                      //for the table students
-WHERE age BETWEEN 14 AND 50         //filtered by where they meet the condition
-ORDER BY age DESC                   // Ordered by their age descending.
+FROM `students`                      //for the table students
+WHERE `age` BETWEEN 14 AND 50         //filtered by where they meet the condition
+ORDER BY `age` DESC                   // Ordered by their age descending.
 ```
 
 We select all the information from the **students** table, retrieve everyone who is between 14 and 50 years old, and **order them by age** in **descending order**.
@@ -235,9 +235,9 @@ In other words **Views** are nothing but **saved SQL queries**.
 For example:
 
 ```java
-CREATE VIEW StudentsView AS                             
-SELECT full_name, course, study_hours
-FROM students
+CREATE VIEW `StudentsView` AS                             
+SELECT `full_name`, `course`, `study_hours`
+FROM `students`
 ```
 
 This is how views can also be used to restrict access to data.
