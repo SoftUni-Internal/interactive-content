@@ -130,6 +130,15 @@ Then we load the cookie-parsing middleware:
 
 `app.use(cookieParser())`
 
+The following table showcases some commonly used middleware.
+
+| **Middleware module** | **Description** |
+| --- | --- |
+| `cookie-parser`       | Parses the header of a cookie. Populates the `cookies` property of the request object. |
+| `errorhandler`        | Enables debugging and error handling in the developer environment. |
+| `cors`                | Enables cross-origin resource sharing (CORS). |
+| `serve-static`        | Used for working with static files. |
+
 [/slide]
 
 [slide hideTitle]
@@ -164,20 +173,3 @@ Depending on that, we either redirect the user to the homepage or show more info
 
 [/slide]
 
-[slide hideTitle]
-
-# Third-Party Middleware
-
-There is a lot of **third-party middleware**, which enables extra features.
-
-The following table showcases some commonly used middleware.
-
-| **Middleware module** | **Description** |
-| --- | --- |
-| `body-parser`         | Parses the body of an HTTP request. |
-| `cookie-parser`       | Parses the header of a cookie. Populates the `cookies` property of the request object. |
-| `errorhandler`        | Enables debugging and error handling in the developer environment. |
-| `cors`                | Enables cross-origin resource sharing (CORS). |
-| `serve-static`        | Used for working with static files. |
-
-[/slide]
