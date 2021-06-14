@@ -85,21 +85,21 @@ const http = require('http');
 const port = 3000;
 
 http.createServer((req, res) => {
-    
-    res.writeHead(200, {
-    'Content-Type': 'text/plain'
-    }); 
 
-    // Sends a status code 200 (success)
-    // Specifies that the data sent will be of type text
+    res.writeHead(200, {
+        'Content-Type': 'text/plain'
+    });
+
+    // Trimite un cod de stare 200 (succes)
+    // Specifică faptul că datele transmise vor fi de tip text
 
     res.write("How are things going on the client side?");
 
-    // Sends a UTF-8 encoded text message to the client
+    // Trimite clientului un mesaj codificat text UTF-8
 
-    res.end();  
-    
-    // Ends the response
+    res.end();
+
+    // Încheie răspunsul
 
 }).listen(port);
 

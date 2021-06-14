@@ -138,7 +138,6 @@ If we use the search bar to check all Persian cats, the result should be:
 [slide hideTitle]
 # Routing
 
-
 There will be different **views** that will be displayed based on the **routing** (the current URL).
 
 There are no strict rules of how the current application routing should look like, but there are some common set of **rules** to **follow**:

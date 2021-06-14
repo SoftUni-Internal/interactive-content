@@ -60,9 +60,9 @@ readable.pause();
 
 This method does not accept any parameters.
 
-```js
-readable.resume();
-```
+
+`readable.resume();`
+
 
 ## Events
 
@@ -101,7 +101,9 @@ const http = require('http');
 http.createServer((req, res) => {
     if (req.method === 'POST') {
         let body = '';
-        req.on('data', data => { body += data });
+        req.on('data', data => {
+            body += data
+        });
         req.on('end', () => {
             console.log(body);
         });
@@ -167,17 +169,17 @@ The cause of something like this can be reading a data source from one stream fa
 The following code is an example of how to use the **finish** event:
 
 ```js
-const stream = require('stream'); 
-const writable = new stream.Writable({ 
-  write: function(chunk, encoding, next) { 
-    console.log(chunk.toString()); 
-    next(); 
-  } 
-}); 
-writable.write('Hello There'); 
-writable.end(); 
-writable.on('finish', function() { 
-   console.log("Write is completed."); 
+const stream = require('stream');
+const writable = new stream.Writable({
+    write: function(chunk, encoding, next) {
+        console.log(chunk.toString());
+        next();
+    }
+});
+writable.write('Hello There');
+writable.end();
+writable.on('finish', function() {
+    console.log("Write is completed.");
 });
 ```
 

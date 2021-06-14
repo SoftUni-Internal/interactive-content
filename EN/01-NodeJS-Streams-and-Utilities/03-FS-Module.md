@@ -142,7 +142,7 @@ let fs = require('fs');
 let filePath = './data.txt';
 let data = 'Some text';
 fs.writeFile(filePath, data, err => {
-    If(err){
+    If(err) {
         console.log(err);
         return;
     }

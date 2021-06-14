@@ -33,11 +33,11 @@ const queryObject = qs.parse(query);
 const http = require("http");
 
 http
-  .createServer((req, res) => {
-    res.write("This text will be sent to the client.");
-    res.end();
-  })
-  .listen(3000);
+    .createServer((req, res) => {
+        res.write("This text will be sent to the client.");
+        res.end();
+    })
+    .listen(3000);
 
 console.log("Node.js server running on port 3000");
 ```

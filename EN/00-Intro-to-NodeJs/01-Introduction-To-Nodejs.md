@@ -27,9 +27,7 @@ Download and install the latest version, if you have not already
 
 To check Node.js's current version on a machine, just open a terminal and type:
 
-```js
-node -v
-```
+`node -v`
 
 If the command returns a version number, Node.js has been successfully installed.
 
@@ -44,7 +42,7 @@ There are two ways to execute JS code using Node.js:
 
 ```js live
 function greeting() {
- console.log("Hello Node.js!");
+ console.log('Hello Node.js!');
 }
 
 greeting(); 
@@ -64,10 +62,7 @@ Let us assume that the code has been stored in an `app.js` file.
 
 You can execute it using the `node` command, followed by the name of the file:
 
-```js
-node app.js
-```
-
+`node app.js`
 
 ## NPM Packages
 
@@ -77,9 +72,7 @@ To initialize a personal Node.js project:
 
 - Open a **terminal** and type:
 
-```js
-npm init
-```
+`npm init`
 
 - Define the project's key **characteristics**
 
@@ -89,10 +82,7 @@ npm init
 
 To **apply default values** to all questions about the project's characteristics, just type in: 
 
-```js
-npm init -y
-```
-
+`npm init -y`
 
 ## Configuration (package.json)
 
@@ -115,18 +105,18 @@ Here is a part of the information, discoverable in a `package.json` file:
 Here is what a typical `package.json` file looks like:
 
 
-```json
+```js
 {
     "name": "demo",
     "version": "1.0.0",
     "description": "Node.js demo project",
     "main": "index.js",
-    "engines": {  
+    "engines": {
         // Sets versions of Node.js and others
         "node": ">= 6.0.0",
         "npm": ">= 3.0.0"
     },
-    "scripts": {                   
+    "scripts": {
         // Defines a set of node scripts
         "start": "node index.js"
     },

@@ -46,7 +46,7 @@ The `simple-function.js` file holds a basic function that is **exported as a loc
 
 ```js
 function calculateTax(rate, amount) {
-  return rate * amount;
+    return rate * amount;
 }
 
 module.exports = calculateTax;
@@ -58,13 +58,13 @@ The `app.js` file **imports a local module and uses its functionality** like thi
 const calculateTax = require("./simple-function.js");
 
 function doAccounting(income, propertyValue, VAT) {
-  const incomeTax = calculateTax(0.2, income);
-  const propertyTax = calculateTax(0.3, propertyValue);
-  const vatTax = calculateTax(0.1, VAT);
+    const incomeTax = calculateTax(0.2, income);
+    const propertyTax = calculateTax(0.3, propertyValue);
+    const vatTax = calculateTax(0.1, VAT);
 
-  console.log(`Income tax -> ${incomeTax}$`);
-  console.log(`Property tax -> ${propertyTax}$`);
-  console.log(`VAT -> ${vatTax}$`);
+    console.log(`Income tax -> ${incomeTax}$`);
+    console.log(`Property tax -> ${propertyTax}$`);
+    console.log(`VAT -> ${vatTax}$`);
 }
 
 doAccounting(20000, 50000, 1000);
@@ -243,7 +243,7 @@ const qs = require("querystring");
 const queryObject = qs.parse(qString);
 
 console.log(queryObject.name); // David
-console.log(queryobject.age);  // 35
+console.log(queryobject.age); // 35
 ```
 
 The `parse` method accepts `qString` as an argument.
