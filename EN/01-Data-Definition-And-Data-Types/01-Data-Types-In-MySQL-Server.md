@@ -168,13 +168,13 @@ MySQL retrieves values for a given date type in a **standard output format**.
 Example: 'YYYY-MM-DD' or 'YY-MM-DD'
 
 
-TIMESTAMP and DATETIME have built in automatic behavior for setting the current time on initialization, they can be used for retrieving the time once during during creation of a record or updating a field with the current time and date every time any value in the record's row changes.
+**TIMESTAMP** and **DATETIME** have built in automatic behavior for setting the current time on initialization, they can be used for retrieving the time once during during creation of a record or updating a field with the current time and date every time any value in the record's row changes.
 
-DATETIME has a range of **1000-01-01 00:00:00** to **9999-12-31 23:59:59**, while TIMESTAMP supports a range of **1970-01-01 00:00:01** UTC to **2038-01-19 03:14:07** UTC.
+**DATETIME** has a range of **1000-01-01 00:00:00** to **9999-12-31 23:59:59**, while **TIMESTAMP** supports a range of **1970-01-01 00:00:01** UTC to **2038-01-19 03:14:07** UTC.
 
-The main difference is not just their range but that TIMESTAMP will convert the current date and time into UTC format (Universal Time Zone).
+The main difference is not just their range but that **TIMESTAMP** will convert the current date and time into **UTC format** (Universal Time Zone).
 
-This means that when you retrieve the time and date stored into a TIMESTAMP field, a conversion to the current time zone will be done.
+This means that when you retrieve the time and date stored into a **TIMESTAMP** field, a conversion to the current time zone will be done.
 
 By default it is converted to the server's timezone.
 
