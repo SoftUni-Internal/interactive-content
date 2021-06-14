@@ -4,8 +4,6 @@
 
 # Lesson Content
 
-Angular-Components-1-2-Introduction-and-table-of-contents
-
 ## In this lesson you will learn:
 
 **1. Components Basic Idea**
