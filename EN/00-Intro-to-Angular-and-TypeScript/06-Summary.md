@@ -10,15 +10,13 @@ Intro-to-Angular-and-Typescript-27-Summary
 
    - angular is an open-source **web application framework**
 
-   - used for **enterprise-level** **front-end** applications
-
-   - angular applications concentrate on fundamental concepts
+   - angular is used for **enterprise-level** **front-end** applications
 
 - What is **TypeScript**
 
    - **TypeScript** is a JavaScript superset
 
-   - allows us to write **typed** JavaScript
+   - it allows us to write **typed** JavaScript
 
    - the output which we receive is plain JavaScript
 
@@ -38,7 +36,7 @@ Intro-to-Angular-and-Typescript-27-Summary
 
 - Angular CLI
 
-   - **toolkit** for Angular
+   - is a **toolkit** for Angular
 
    - gives us a **high-quality** build process
 
@@ -46,7 +44,7 @@ Intro-to-Angular-and-Typescript-27-Summary
 
 - Components and Data Binding:
 
-   - basic Idea of Components
+   - basic Component concepts
 
    - creating Components
 
