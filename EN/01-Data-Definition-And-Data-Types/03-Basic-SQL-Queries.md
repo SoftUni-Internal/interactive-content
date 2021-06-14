@@ -61,7 +61,7 @@ VALUES (value1, value2, value3, value...);
 If we were to successfully insert a record into an employees table that has an **id** (manually added, not auto-increment), **email**,  **first_name**, and **last_name** fields we would need to write this query:
 
 ```java
-INSERT INTO employees (id, email, first_name, last_name)
+INSERT INTO `employees` (id, email, first_name, last_name)
 VALUES (1, 'john.doe@gmail.com', 'John', 'Doe')
 ```
 
