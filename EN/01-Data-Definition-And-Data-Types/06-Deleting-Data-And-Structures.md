@@ -1,8 +1,7 @@
 # Deleting Data and Structures
 
 [slide hideTitle]
-
-# Deleting From the Database
+# Deleting Data and Structures
 
 Deleting structures from the database is done using the `DROP` keyword.
 
@@ -12,11 +11,8 @@ Deleting all data in a table is called **truncating**.
 
 Both of these actions cannot be **undone** so use with caution!
 
-[/slide]
 
-[slide hideTitle]
-
-# Dropping and Truncating
+## Dropping and Truncating
 
 To delete all the entries in a table:
 
