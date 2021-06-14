@@ -1,1 +1,0 @@
-# Workshop: MongoDB and Mongoose
