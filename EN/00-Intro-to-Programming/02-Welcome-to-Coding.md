@@ -41,7 +41,7 @@ public class Main {
 
 The above program defines a **class** `Main`, holding a **method** `main()`, which holds a sequence of **3 commands**:
 - Declaring and assigning a **variable**: `int size = 5;`
-- Calculating and **printing** an **expression**: `System.out.println("Size = " + size);`
+- Calculates and prints an expression /which in this case is in the form of a string/: `System.out.println("Size = " + size);`
 - Calculating and **printing** an **expression**: `System.out.println("Area = " + size * size);`
 
 The result (output) from the above program is as follows:
