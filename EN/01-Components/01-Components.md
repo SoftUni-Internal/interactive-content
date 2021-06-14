@@ -4,6 +4,10 @@
 
 # The Idea Behind Components
 
+Merge: Angular-Components-3-4-Components with: Angular-Components-5-The-Idea-behind-components
+
+
+
 Components are the building blocks of all Angular applications. 
 
 We define a component's behavior using a TypeScript class.
