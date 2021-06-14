@@ -2,12 +2,12 @@
 
 [slide hideTitle]
 
-# Custom column properties
+# Custom Column properties
 
 ## Primary Key
 
 ```Java
-id INT NOT NULL PRIMARY KEY // PRIMARY KEY is a column property
+`id` INT NOT NULL PRIMARY KEY // PRIMARY KEY is a column property
 ```
 
 The primary key is a field that is used for identifying each record. 
@@ -21,7 +21,7 @@ Not every table needs to have a primary key.
 ## Auto-Increment (Identity)
 
 ```Java
-id INT AUTO_INCREMENT PRIMARY KEY // Auto-Increment PRIMARY KEY
+`id` INT AUTO_INCREMENT PRIMARY KEY // Auto-Increment PRIMARY KEY
 ```
 
 When auto-increment is enabled the value of the id field will be generated automatically when a new record is inserted.
@@ -36,18 +36,18 @@ These are called constraints because a set condition will be verified before any
 
 If the conditions are not met, no data will be inserted.
 
-## UNIQUE constraint
+## UNIQUE Constraint
 
 ```Java
-email_address varchar(50) UNIQUE
+`email_address` varchar(50) UNIQUE
 ```
 
 Adding the UNIQUE constraint ensures that every **email_address** entered into the table will be unique.
 
-## DEFAULT constraint 
+## DEFAULT Constraint
 
 ```Java
-balance DECIMAL(10, 2) DEFAULT 0
+`balance` DECIMAL(10, 2) DEFAULT 0
 ```
 
 Specifies that the default value of the column should be 0.
@@ -58,7 +58,7 @@ If a default value is not specified the value will be set to NULL by default if 
 
 [slide hideTitle]
 
-# Problem: Create and Insert
+# Problem with Solution: Create and Insert
 
 1. Create a new database called `gamebar`
 2. Create Tables:
@@ -79,16 +79,16 @@ If a default value is not specified the value will be set to NULL by default if 
 
 - Write the query for creating the **employees table**
 
-[image assetsSrc="DData-Definition-And-Data-Types-q3.png" /]
+[image assetsSrc="Data-Definition-And-Data-Types-q3.png" /]
 
 - Create the rest of the tables using the above logic
 
 - Populate the `employees` table:
 
 ```Java
-INSERT INTO employees (id, first_name, last_name) VALUES (1, 'Sean', 'Langhorne');
-INSERT INTO employees (id, first_name, last_name) VALUES (2, 'Jordan', 'Blais');
-INSERT INTO employees (id, first_name, last_name) VALUES (3, 'Priscilla', 'Graffin');
+INSERT INTO `employees` (`id`, `first_name`, `last_name`) VALUES (1, 'Sean', 'Langhorne');
+INSERT INTO `employees` (`id`, `first_name`, `last_name`) VALUES (2, 'Jordan', 'Blais');
+INSERT INTO `employees` (`id`, `first_name`, `last_name`) VALUES (3, 'Priscilla', 'Graffin');
 ```
 
 The above query should work if you did the previous steps correctly.

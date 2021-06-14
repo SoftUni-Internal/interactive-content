@@ -96,7 +96,7 @@ If you need to only store positive numbers in these columns you can use a CHECK 
 
 [slide hideTitle]
 
-# String data types
+# String Data Types
 
 The following table shows the summary of **String** data types in MySQL:
 
@@ -151,7 +151,7 @@ Character sets and collations can be defined in the database, table, or column l
 
 [slide hideTitle]
 
-# Date data types
+# Date Data Types
 
 The following table shows the summary of **Date** data types in MySQL:
 

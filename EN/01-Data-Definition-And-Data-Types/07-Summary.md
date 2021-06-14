@@ -19,17 +19,17 @@
 - SQL Queries
     - Table creation:
     ```Java
-    CREATE TABLE people
-    (id INT NOT NULL,
-    email VARCHAR(50) NOT NULL,
-    first_name VARCHAR(50),
-    last_name VARCHAR(50)
+    CREATE TABLE `people`
+    (`id` INT NOT NULL,
+    `email` VARCHAR(50) NOT NULL,
+    `first_name` VARCHAR(50),
+    `last_name` VARCHAR(50)
     );
     ```
     - Selecting all records:
 
     ```Java
-    SELECT * FROM people
+    SELECT * FROM `people`
     ```
 
     - Inserting records:
@@ -41,12 +41,12 @@
 - How to modify and delete structures in our database
 
     ```Java
-    TRUNCATE TABLE employees;
+    TRUNCATE TABLE `employees`;
 
-    DROP TABLE employees;
+    DROP TABLE `employees`;
 
-    ALTER TABLE employees
-    DROP CONSTRAINT pk_id;
+    ALTER TABLE `employees`
+    DROP CONSTRAINT `pk_id`;
     ```
 
 ## In the next lesson, you will learn:

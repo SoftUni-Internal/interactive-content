@@ -9,7 +9,7 @@ We use SQL queries to do any data operations on the database such as creating ne
 To create a database, type in the following command:
 
 ```Java
-CREATE DATABASE employees;  
+CREATE DATABASE `employees`;  
 ```
 
 The syntax for creating a new database is `CREATE DATABASE [name]`.
@@ -23,14 +23,14 @@ SQL keywords are conventionally `capitalized` - Example: **CREATE DATABASE**.
 
 [slide hideTitle]
 
-# Table Creation in SQL
+# Table Creation
 
 ```Java
-CREATE TABLE people
+CREATE TABLE `people`
 (id INT NOT NULL,
-email VARCHAR(50) NOT NULL,
-first_name VARCHAR(50),
-last_name VARCHAR(50)
+`email` VARCHAR(50) NOT NULL,
+`first_name` VARCHAR(50),
+`last_name` VARCHAR(50)
 );
 ```
 
@@ -49,8 +49,7 @@ In this example, the name of the table is **people**.
 
 [slide hideTitle]
 
-# Inserting & Retrieving Records IN SQL
-
+# Inserting & Retrieving Records
 
 This is the syntax for **inserting records** into a table.
 
@@ -69,10 +68,10 @@ VALUES (1, 'john.doe@gmail.com', 'John', 'Doe')
 When adding data to all the columns of a table, you do not need to specify the column names but the values must be in the exact order of the columns.
 
 ```Java
-SELECT * FROM employees; 
+SELECT * FROM `employees`; 
 ```
 
-[image assetsSrc="DData-Definition-And-Data-Types-q1.png" /]
+[image assetsSrc="Data-Definition-And-Data-Types-q1.png" /]
 
 
 The `SELECT * FROM [table]` query retrieves all the columns and all records from a table, which is not always recommended, especially if your database contains a lot of records.
@@ -81,11 +80,11 @@ The `SELECT * FROM [table]` query retrieves all the columns and all records from
 You can also specify the names of the columns that you want to get from the database as well as the number of records to retrieve.
 
 ```Java
-SELECT first_name, last_name FROM employees; 
+SELECT `first_name`, `last_name` FROM `employees`; 
 LIMIT 5;                                  
 ```
 
-[image assetsSrc="DData-Definition-And-Data-Types-q2.png" /]
+[image assetsSrc="Data-Definition-And-Data-Types-q2.png" /]
 
 
 The code above retrieves 5 records from the **employees** table, while selecting only the first_name and last_name columns.
