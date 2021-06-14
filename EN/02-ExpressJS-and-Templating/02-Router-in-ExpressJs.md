@@ -22,8 +22,8 @@ In this case:
 Here is an example:
 
 ```js
-app.get('/', function (req, res) {
-  res.send('Hello World!')
+app.get('/', function(req, res) {
+    res.send('Hello World!')
 })
 ```
 
@@ -31,7 +31,7 @@ or
 
 ```js
 app.get('/user', (req, res) => {
-  res.send('The user management page has been requested')
+    res.send('The user management page has been requested')
 })
 ```
 
@@ -47,15 +47,15 @@ The type of requests is `GET`, `POST`, and `PUT`, and each of the requests has i
 ```js
 // GET method route
 app.get('/', (req, res) => {
-  res.send('GET request to the homepage')
+    res.send('GET request to the homepage')
 })
 // POST method route
 app.post('/', (req, res) => {
-  res.send('POST request to the homepage')
+    res.send('POST request to the homepage')
 })
 // PUT method route
 app.put('/', (req, res) => {
-  res.send('PUT request to the homepage')
+    res.send('PUT request to the homepage')
 })
 ```
 
@@ -69,11 +69,11 @@ Take a look at the below example:
 ```js
 // A wildcard as a route means it will match any route
 app.get('*', (req, res) => {
-  res.send('Page not found!')
+    res.send('Page not found!')
 })
 // GET method route
 app.get('/', (req, res) => {
-  res.send('GET request to the homepage')
+    res.send('GET request to the homepage')
 })
 ```
 
@@ -89,10 +89,10 @@ You can use `next()` in the body of the function to pass control to the next cal
 
 ```js
 app.all('/about', (req, res, next) => {
-  console.log('Middleware execution..')
-  next()
+    console.log('Middleware execution..')
+    next()
 }, (req, res) => {
-  res.send('Show about page.')
+    res.send('Show about page.')
 })
 ```
 In this example, any type of request to the '/about' route calls the function with which prints "**Middleware execution..**" to the console.
@@ -114,14 +114,14 @@ In this example, we perform this function on all routes that end in `fly`.
 
 ```js
 app.get('/ab*cd', (req, res) => {
-  res.send('Match abcd or abANYTEXTcd')
+    res.send('Match abcd or abANYTEXTcd')
 })
 app.get(/.*fly$/, (req, res) => {
-  res.send('Matches words like butterfly, dragonfly') 
+    res.send('Matches words like butterfly, dragonfly')
 })
-app.get('*',(req, res) => {
-  res.send('Matches everything')
-})  
+app.get('*', (req, res) => {
+    res.send('Matches everything')
+}) 
 ```
 
 
@@ -141,8 +141,9 @@ You will need to read the id (1224) and use it to retrieve the correct product d
 
 ```js
 app.get('/product/:productId', (req, res) => {
-  const paramsObj = req.params
-  res.send(paramsObj) })
+    const paramsObj = req.params
+    res.send(paramsObj)
+})
 ```
 
 Receiving a GET request at a path such as `/product/121` would let you capture the product id and store it in the paramsObj variable.
@@ -170,13 +171,15 @@ You can chain handlers using `app.route()`
 
 ```js
 app.route('/home')
-  .get((req, res) => {
-    res.send('GET home page') })
-  .post((req, res) => {
-    res.send('POST home page') })
-  .all((req, res) => {
-    res.send('Everything else')
-  })
+    .get((req, res) => {
+        res.send('GET home page')
+    })
+    .post((req, res) => {
+        res.send('POST home page')
+    })
+    .all((req, res) => {
+        res.send('Everything else')
+    })
 ```
 
 This is very useful when you want to execute different actions based on request type on the same path, saving you a few lines of code.
@@ -195,13 +198,13 @@ We can use:
 
 ```js
 app.get('/pdf', (req, res) => {
-  res.download('FULL PATH TO PDF') })
+    res.download('FULL PATH TO PDF')
+})
 ```
 
 - `res.end()`: end the response process
 
 - `res.json()`: send response in JSON format
-
 ```js
 res.json({ product: 'Tootbrush' })
 ```
@@ -217,8 +220,9 @@ app.get('/about/old', (req, res) => {
 
 ```js
 app.get('/file/:fileName', (req, res) => {
-  const fileName = req.params.fileName
-  res.sendFile("PATH TO FILE" + fileName) })
+    const fileName = req.params.fileName
+    res.sendFile("PATH TO FILE" + fileName)
+})
 ```
 
 - `res.render`: render a view template, index HTML or other template
@@ -238,8 +242,8 @@ For example we can create an about.js file with the following contents:
 ```js
 const express = require('express')
 const router = express.Router()
-router.use(/* add middleware */)
-router.get(/* define route handlers */)
+router.use( /* add middleware */ )
+router.get( /* define route handlers */ )
 app.use('/about', router)
 ```
 

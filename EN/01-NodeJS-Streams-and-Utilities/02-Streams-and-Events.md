@@ -60,9 +60,9 @@ readable.pause();
 
 This method does not accept any parameters.
 
-
-`readable.resume();`
-
+```js
+readable.resume();
+```
 
 ## Events
 

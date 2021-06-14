@@ -5,7 +5,9 @@
 
 In order to serve **static files** like images, CSS and JavaScript files, we use the `express.static()` function, built into ExpressJS:
 
-`app.use(express.static('public'))`
+```js
+app.use(express.static('public'))
+```
 
 You can use the above code to serve images, css, or any other static file from a directory with the name "public".
 
@@ -15,7 +17,9 @@ The **path** provided to the function is **relative** to the directory in which 
 
 In case you run the Express app from another directory, it is safer to use an absolute path:
 
-`app.use('/static', express.static(path.join(__dirname, 'public')))`
+```js
+app.use('/static', express.static(path.join(__dirname, 'public')))
+```
 
 Configuring your app to serve static files would make them available at the root path by default.
 

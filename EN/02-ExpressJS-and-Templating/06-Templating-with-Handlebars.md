@@ -13,7 +13,7 @@ Handlebars **expressions** are the **basic unit** of a Handlebars **template**.
 
 They use the **double curly brace notation**:
 
-```
+```js
 <body>
 <p>My name is {{name}}</p>
 </body>
@@ -54,15 +54,21 @@ app.listen(port, () => console.log(`App listening to port ${port}`));
 
 We install Handlebars using NPM:
 
-`npm install express-handlebars`
+```js
+npm install express-handlebars
+```
 
 Then, we need to require Handlebars on application or router level:
 
-`const handlebars = require('express-handlebars');`
+```js
+const handlebars = require('express-handlebars');
+```
 
 We need to declare Handlebars as our view engine as follows:
 
-`app.set('view engine', 'handlebars');`
+```js
+app.set('view engine', 'handlebars');
+```
 
 Using the `app.engine()` method, we define the location of our template files:
 
@@ -75,7 +81,9 @@ app.engine( "handlebars", handlebars({
 
 We locate the directory in which our static files are stored:
 
-`app.use(express.static('public'));`
+```js
+app.use(express.static('public'));
+```
 
 Finally, we declare our homepage view:
 
@@ -149,13 +157,18 @@ Handlebars allows us to **reuse templates** through **partials**.
 
 To use a partial, we must register it using the `Handlebars.registerPartial()` method:
 
-`Handlebars.registerPartial('myPartial', '{{newVar}}');`
+```js
+Handlebars.registerPartial('myPartial', '{{newVar}}');
+
+```
 
 Partials may be precompiled with a new template, which is passed a second parameter.
 
 Calling a partial is done by double curly braces, preceding the name with a `>` sign:
 
-`{{> myPartial }}`
+```js
+{{> myPartial }}
+```
 
 An example of a partial might be a menu, an info card, or any other element you would like to insert into another template.
 
@@ -174,7 +187,9 @@ For example, if the expression contains `&`, then the returned HTML-escaped outp
 
 If you do not want Handlebars to **escape a value**, you can use the "triple-stash", `{{{`:
 
-`{{{Any symbol inside here will not be escaped}}}`
+```js
+{{{Any symbol inside here will not be escaped}}}
+```
 
 [/slide]
 

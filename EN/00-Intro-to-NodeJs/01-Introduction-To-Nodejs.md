@@ -26,9 +26,9 @@ Here are some of the benefits that come along with it:
 Download and install the latest version, if you have not already
 
 To check Node.js's current version on a machine, just open a terminal and type:
-
-`node -v`
-
+```js
+node -v
+```
 If the command returns a version number, Node.js has been successfully installed.
 
 Otherwise, try running the installer again.
@@ -62,7 +62,9 @@ Let us assume that the code has been stored in an `app.js` file.
 
 You can execute it using the `node` command, followed by the name of the file:
 
-`node app.js`
+```js
+node app.js
+```
 
 ## NPM Packages
 
@@ -72,7 +74,9 @@ To initialize a personal Node.js project:
 
 - Open a **terminal** and type:
 
-`npm init`
+```js
+npm init
+```
 
 - Define the project's key **characteristics**
 
@@ -82,8 +86,9 @@ To initialize a personal Node.js project:
 
 To **apply default values** to all questions about the project's characteristics, just type in: 
 
-`npm init -y`
-
+```js
+npm init -y
+```
 ## Configuration (package.json)
 
 The `package.json` file is an object, which holds a **metadata** key and **general information** about a certain project.

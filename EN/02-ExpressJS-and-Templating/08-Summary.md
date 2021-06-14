@@ -12,8 +12,8 @@ const express = require('express')
 const app = express();
 const port = 3000;
 app.get('/', (req, res) => {
-  res.status(200);
-  res.send('Welcome to Express.js!');
+    res.status(200);
+    res.send('Welcome to Express.js!');
 })
 app.listen(port, () => console.log(`Express running on port: ${port}...`));
 ```
@@ -38,7 +38,7 @@ app.get('/product/:productId', (req, res) => {
 
 
 - Middlewares are functions that have access to the response and request objects
- - Load them by using `app.use()`
+ - load them by using `app.use()`
 
 
 - You can easily serve static files as a response to requests:
@@ -48,7 +48,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 ```
 
 - **Templating** enables code readability and speeds up development
-  - Templating engines **assemble** **logic** and **data**
+  - templating engines **assemble** **logic** and **data**
 
 ```js
 <div class="entry">
@@ -72,7 +72,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
 
 - **Handlebars** is a templating engine with a lot of features
 
-  - **For-Loops**
+  - **for-Loops**
   ```js
   <ul class="product_list">
     {{#each products}}
@@ -80,7 +80,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
     {{/each}}
   </ul>
   ```
-  - **Conditional Statements**
+  - **conditional Statements**
   ```js
   {{#if sunny}}
     The sky is clear

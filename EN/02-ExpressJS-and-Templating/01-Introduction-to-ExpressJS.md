@@ -21,8 +21,8 @@ const express = require('express');
 const app = express();
 const port = 3000;
 app.get('/', (req, res) => {
-  res.status(200);
-  res.send('Welcome to Express.js!');
+    res.status(200);
+    res.send('Welcome to Express.js!');
 })
 app.listen(port, () => console.log(`Express running on port: ${port}...`));
 ```
@@ -35,8 +35,8 @@ After that, we make a handler, that will be responsible for `GET` type requests:
 
 ```js
 app.get('/', (req, res) => {
-  res.status(200);
-  res.send('Welcome to Express.js!');
+    res.status(200);
+    res.send('Welcome to Express.js!');
 })
 ```
 

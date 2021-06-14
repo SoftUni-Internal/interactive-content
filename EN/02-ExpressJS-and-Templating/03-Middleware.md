@@ -33,9 +33,9 @@ To load **middleware**, we utilize the `app.use()` method which accepts a functi
 var express = require("express");
 var app = express();
 
-app.use(function (req, res, next) {
-  console.log("Hello World!");
-  next();
+app.use(function(req, res, next) {
+    console.log("Hello World!");
+    next();
 });
 ```
 
@@ -66,7 +66,9 @@ We can also use the `app.METHOD()` function to create **route-specific** middlew
 
 One **main difference** is that we **bind it** to an instance of `express.Router()`, instead of `express()`:
 
-`const router = express.Router()`
+```js
+const router = express.Router()
+```
 
 To load router-level middleware, we use the `router.use()` or `router.METHOD()` functions:
 
@@ -78,8 +80,8 @@ const app = express();
 const router = express.Router();
 
 router.use((req, res, next) => {
-  console.log("Time:", new Date());
-  next();
+    console.log("Time:", new Date());
+    next();
 });
 ```
 
@@ -92,9 +94,9 @@ We define **error-handling middleware** functions in mostly the same fashion as 
 The main characteristic of error-handling functions is that they accept a fourth argument \- the `error` object:
 
 ```js
-app.use(function (err, req, res, next) {
-  console.error(err.stack);
-  res.status(404).send("This page does not exist.");
+app.use(function(err, req, res, next) {
+    console.error(err.stack);
+    res.status(404).send("This page does not exist.");
 });
 ```
 
@@ -108,7 +110,9 @@ We also assign a status of "**404 - Not Found**" to the response object.
 
 We install third-party middleware as any other **Node.js module**:
 
-`npm install name-of-middleware-module`
+```js
+npm install name-of-middleware-module
+```
 
 After it finishes installing, we have to **import it**, either at the application level or at the router level.
 
@@ -124,11 +128,14 @@ app.use(cookieParser()));
 
 Assuming we have already run `npm install cookie-parser`, our next step is to import it into our file:
 
-`const cookieParser = require('cookie-parser');`
+```js
+const cookieParser = require('cookie-parser');
+```
 
 Then we load the cookie-parsing middleware:
-
-`app.use(cookieParser())`
+```js
+app.use(cookieParser())
+```
 
 The following table showcases some commonly used middleware.
 
@@ -151,19 +158,19 @@ The `app.use()` and `app.METHOD()` functions can accept a string-formatted **rou
 
 ```js
 app.use("/post/:postId", (req, res, next) => {
-  const postId = req.params.postId;
+    const postId = req.params.postId;
 
-  let postExists = postId !== undefined;
+    let postExists = postId !== undefined;
 
-  if (!postExists) {
-    res.redirect("/home");
-  } else {
-    next();
-  }
+    if (!postExists) {
+        res.redirect("/home");
+    } else {
+        next();
+    }
 });
 
 app.get("/post/:postId", (req, res) => {
-  res.send("Post details");
+    res.send("Post details");
 });
 ```
 
