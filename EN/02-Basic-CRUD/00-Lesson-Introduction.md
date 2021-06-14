@@ -4,17 +4,23 @@
 
 # Lesson Content
 
-## In this lesson you will learn:
+## In this lesson you will learn: 
 
-**1. The Query Basics**
-- What **CRUD** stands for
+**1. Data Types in MySQL**
+- Data types supported by MySQL their uses
 
-**2. Retrieving Data**
+**2. Database Modeling**
+- Creating a database and working with it
 
-**3. Writing Data in Tables**
-- Using SQL to persist (save) data to the database
+**3. Basic SQL Queries**
+- Retrieving data from the database
 
-**4. Modifying Existing Records**
-- Updating existing records
-    
+**4. Table Customization**
+- Declaring tables and table constraints 
+ 
+**5. Altering Tables**
+- Changing the properties of tables after creation
+
+**6. Deleting Data and Structures**
+
 [/slide]
