@@ -1,76 +1,86 @@
-# Altering Tables
-
 [slide hideTitle]
 
-# Altering tables using SQL (1)
+# Altering Tables
 
 A table can be changed using the `ALTER` keyword.
 
-```Java
-ALTER TABLE employees;
-```
+Altering a table or adding a constraint might not be possible if there is already data in the table.
 
-Use the keyword `ADD` to add a new column.
+That is why, it is always best to plan ahead, else you will end up having to populate the table from scratch.
 
-```Java
-ALTER TABLE employees
-ADD salary DECIMAL; // `salary` is the name of the column and `DECIMAL` specifies the data type
-```
-
-[/slide]
-
-[slide hideTitle]
-
-# Altering Tables Using SQL (2)
-
-Delete an existing column:
 
 ```Java
-ALTER TABLE people
-DROP COLUMN full_name; // Delete column with name `full_name`
+ALTER TABLE `employees`;
 ```
 
-Modify data type of existing column:
+## Adding a New Column
+
+Use the `ADD` keyword to add a new column.
 
 ```Java
-ALTER TABLE people
-MODIFY COLUMN email VARCHAR(100); // `VARCHAR(100)` is the new data type
+ALTER TABLE `employees`
+ADD `salary` DECIMAL;
 ```
 
-[/slide]
+The name of the new column will be `salary` and the data type is `DECIMAL`.
 
-[slide hideTitle]
+## Deleting a Column
 
-# Altering Tables Using SQL (3)
+Use the `DROP` keyword to remove (drop) a column.
 
-Add a primary key to an existing column:
 
 ```Java
-ALTER TABLE people
-ADD CONSTRAINT pk_id // Constraint name
-PRIMARY KEY (id); // Column name which can be more than one for composite key
+ALTER TABLE `people`
+DROP COLUMN `full_name`; 
 ```
 
-Add unique constraint:
+**DROP** will delete the data in the **full_name** column.
+
+## Modifying the Data Type
 
 ```Java
-ALTER TABLE people
-ADD CONSTRAINT uq_email // Constraint name
-UNIQUE (email) // Columns
+ALTER TABLE `people`
+MODIFY COLUMN `email` VARCHAR(100); 
 ```
 
-[/slide]
+The **email** column of the **people** table will now be of type `VARCHAR(100)`.
 
-[slide hideTitle]
 
-# Altering Tables Using SQL (4)
-
-Set default value:
+## Adding a Primary Key
 
 ```Java
-ALTER TABLE people
-ALTER COLUMN balance SET DEFAULT 0; // Default value - 0, column name `balance`
+ALTER TABLE `people`
+ADD CONSTRAINT `pk_id` 
+PRIMARY KEY (`id`); 
 ```
+
+This will add a primary key constraint on the **id** field.
+
+**pk_id** is the arbitrary name that we gave to our constraint but it can be anything you want.
+
+You can create more complex (composite) keys by specifying two columns instead of one.
+
+## Adding a UNIQUE Constraint
+
+```Java
+ALTER TABLE `people`
+ADD CONSTRAINT `unique_email` 
+UNIQUE (`email`)
+```
+
+We have chosen **unique_email** for the constraint name but it could be any other meaningful name.
+
+The above code will alter the **email** column in the **people** table and require any value that is inserted to be unique.
+
+## Setting a Default Value
+
+```Java
+ALTER TABLE `people`
+ALTER COLUMN `balance` SET DEFAULT 0; 
+```
+
+The default value for the **balance** column will be 0.
+
 
 [/slide]
 

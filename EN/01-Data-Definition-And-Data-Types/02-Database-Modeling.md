@@ -15,7 +15,7 @@ We can manage databases with **MySQL Workbench** which will allow us to:
 
 [slide hideTitle]
 
-# Creating new Databases
+# Creating New Databases
 
 Select "**Create New Schema**" from the command menu.
 
