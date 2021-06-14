@@ -10,7 +10,7 @@ Each component's view has a template attached to it.
 
 A template is simply HTML that defines how the component will be rendered.
 
-The arrangement of the **views is hierarchical**, allowing you to **modify** or **show** and **hide** entire UI sections or pages as a unit. 
+The arrangement of the **views is hierarchical**, allowing us to **modify** or **show** and **hide** entire UI sections or pages as a unit. 
 
 Inside a template, we can:
 
@@ -63,9 +63,9 @@ This symbol means that the attribute after it is a structural directive.
 
 The code creates a new list item for each game in the array of games.
 
-If you want to access any of the properties of the **game** object you do so by writing `game.propertyName`
+If we want to access any of the properties of the **game** object, we do so by writing `game.propertyName`
 
-These names are arbitrary, you can name them any way you want.
+These names are arbitrary. We can name them any way we want.
 
 
 [/slide]
@@ -76,7 +76,7 @@ These names are arbitrary, you can name them any way you want.
 
 Angular-Components-19-Conditional-Statements-Using-ngif
 
-Using the same example:
+Here is the same example:
 
 ```js
 export class GamesComponent {
@@ -87,7 +87,7 @@ export class GamesComponent {
 }
 ```
 
-We create **if** statements using the `*ngIf` keyword, as shown in the HTML below.
+We create **if** statements using the `*ngIf` keyword, as shown in the HTML code below.
 
 ```html
 <h1>Games List</h1>
@@ -104,7 +104,7 @@ We create **if** statements using the `*ngIf` keyword, as shown in the HTML belo
 </ul>
 ```
 
-The code above checks the price property of each object in the array, and **only displays it if the price is greater than or equal to 100**.
+The code above checks the **price** property of each object in the array and **only displays it if the price is greater than or equal to 100**.
 
 [/slide]
 
@@ -114,11 +114,11 @@ The code above checks the price property of each object in the array, and **only
 
 Angular-Components-20-Attach-Events
 
-You can display additional content with the help of Event handlers.
+We can display additional content with the help of Event handlers.
 
-Even handlers are used for listening to certain events and they can be attached to html elements.
+Even handlers are used for listening to certain events and they can be attached to HTML elements.
 
-Here we have an HTML example of **how to do the Angular event binding** syntax:
+Here we have an HTML example of **how to implement the Angular event binding** syntax:
 
 ```html
 <button (click)="showContent($event)">Show Content</button>
@@ -149,15 +149,13 @@ export class GamesComponent {
 
 Angular-Components-21-Binding-attributes
 
-It is a recommendation, **setting an element property with a property binding** whenever possible. 
-
 It is a good idea to always set an element property with a property binding when possible.
 
-When there is no element property to bind you can use **attribute binding**.
+When there is no element property to bind, we can use **attribute binding**.
 
-The attribute binding syntax is **similar to property binding**, but instead of an **element property between brackets**, we use the name of the attribute with the prefix **attr**, followed by a **dot**. 
+The attribute binding syntax is **similar to the property binding** syntax, but instead of an **element property between the brackets**, we use the name of the attribute with the prefix **attr**, followed by a **dot**. 
 
-Then, set the **attribute value with an expression** that resolves to a string.
+Then, we set the **attribute value with an expression** that resolves to a string.
 
 ```js
 export class GamesComponent {
@@ -187,7 +185,7 @@ Angular-Components-22-Binding-css-classes
 ```html
 <div [class]="expression">Bad curly</div>
 ```
-Angular will add the class to the expression that you choose. 
+Angular will add the class to the expression that we choose. 
 
 This expression can be:
 - A string of class names, delimited by spaces
@@ -197,11 +195,11 @@ This expression can be:
 
 ## Binding to a Specific Class Name
 
-To create a single class binding, **use the prefix class** followed by a **dot** and the **name of the CSS class**.
+To create a single class binding, we **use the prefix class**, followed by a **dot** and the **name of the CSS class**.
 
 For example: `[class.special]="isSpecial"`. 
 
-Angular adds the **class when the bound expression**, `isSpecial` is **truthy**, and it removes the class when the expression is **falsy**.
+Angular adds the **class when the bound expression** `isSpecial` is **truthy**, and it removes the class when the expression is **falsy**.
 
 ```html
 <div [class.special]="isSpecial">
@@ -213,7 +211,7 @@ Angular adds the **class when the bound expression**, `isSpecial` is **truthy**,
 </div>
 ```
 
-When doing single class binding the expression used can be of type boolean, undefined or null, and the example input values are either true or false.
+When creating a single class binding, the expression used can be of type boolean, undefined, or null, and the example input values can be either true or false.
 
 
 [/slide]
@@ -226,7 +224,7 @@ Angular-Components-23-Binding-styles
 
 ## Binding to the style attribute
 
-If you need to create a **single style binding**, use the **prefix style** followed by a **dot** and the **name of the CSS style property**.
+If we need to create a **single style binding**, we use the **prefix style**, followed by a **dot** and the **name of the CSS style property**.
 
 For example: `[style.color]="isSpecial ? 'red' : 'green'"`. 
 
@@ -245,7 +243,7 @@ The styles like **font-size**, **width**, etc, have a unit extension.
 
 The following example **conditionally sets the font-size** in the "em" unit if `isSpecial` is truthy.
 
-Alternatively, it sets the font size in the "%" unit if `isSpecial` is falsy.
+Alternatively, it sets the font-size in the "%" unit if `isSpecial` is falsy.
 
 ```html
 <button [style.font-size.em]="isSpecial ? 3 : 1">
@@ -264,7 +262,7 @@ Alternatively, it sets the font size in the "%" unit if `isSpecial` is falsy.
 
 Angular-Components-24-Reference-and-nullsafe-operator
 
-Use variables **from one part of a template** in **another part of the template**.
+We can use variables **from one part of a template** in **another part of the template**.
 
 A template variable can **refer to the following**:
 
@@ -274,7 +272,7 @@ A template variable can **refer to the following**:
 - **TemplateRef**
 - A **web component**
 
-In the template, **use the hash symbol** `#` to declare a **template variable**. 
+In the template, we **use the hash symbol** `#` to declare a **template variable**. 
 
 The following **template variable** `#phone` declares a phone variable on an `<input>` element.
 
@@ -282,19 +280,19 @@ The following **template variable** `#phone` declares a phone variable on an `<i
 <input #phone placeholder="phone number" />
 ```
 
-You can refer **to a template variable anywhere** in the component's template. 
+We can refer **to a template variable anywhere** in the component's template. 
 
-Here a `<button>` refers to the phone variable.
+Here, a `<button>` refers to the phone variable.
 
 ```html
 <button (click)="callPhone(phone.value)">Call</button>
 ```
 
-In the example below, Angular renders the "**game**" view before "**game**" got a value assigned.
+In the example below, Angular renders the "**game**" view before the "**game**" got a value assigned.
 
 This will cause an **exception**. 
 
-`?` stops evaluating when "**game**" is **null** or **undefined**, which usually happens when **data is fetched async**, for example, from the server, which can take some time.
+`?` stops evaluating when "**game**" is **null** or **undefined**, which usually happens when **data is fetched asynchronously**, for example, from the server, which can take some time.
 
 ```js
 <div>The current hero's name is {{game?.title}}</div>
@@ -303,7 +301,7 @@ This will cause an **exception**.
 
 The next time when **change is detected**, the bindings will be re-evaluated. 
 
-When "game" is different than **null** or **undefined**, then it will bind `game.title`.
+When "game" is different than **null** or **undefined**, then it will bind the `game.title`.
 
 [/slide]
 
@@ -328,8 +326,8 @@ Many JavaScript expressions are **legal template expressions**, but not all.
 JavaScript **expressions that have** or promote side effects are **prohibited**, including:
 
 - Assignments `(=, +=, -=, ...)`.
-- New - the new operator.
-- Increment and(or) decrement operators `(++ and --)`.
+- New - the `new` operator.
+- Increment and decrement operators `(++ and --)`.
 
 [/slide]
 
