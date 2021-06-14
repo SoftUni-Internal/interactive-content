@@ -87,7 +87,7 @@ DOUBLE[(M, D)][UNSIGNED];  //  "M" is the count of digits stored for the value
 DECIMAL[(M, D)][UNSIGNED]; 
 ```
 
-Note that after MySQL version 8.0.17 table columns of type FLOAT, DOUBLE, and DECIMAL should not use the unsigned attribute as it is deprecated for those types. 
+Note that after MySQL version 8.0.17 table columns of type **FLOAT**, **DOUBLE**, and **DECIMAL** should not use the unsigned attribute as it is deprecated for those types. 
 
 If you need to only store positive numbers in these columns you can use a CHECK constraint.
 
