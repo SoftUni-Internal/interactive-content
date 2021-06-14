@@ -26,7 +26,7 @@ Then, **open the installation file** and go through the **setup process**.
 
 Alternatively, you can [install GitHub Desktop](https://desktop.github.com/), which comes **bundled with Git** in addition to helping you **manage** your GitHub repositories.
 
-## Installing on macOS
+## Installing on MacOS
 
 Installing Git on **macOS** requires **Homebrew**.
 

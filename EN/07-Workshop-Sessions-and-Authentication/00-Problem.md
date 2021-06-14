@@ -19,19 +19,19 @@ Some of the functionality should **requires authentication** (such as **create t
 
 Also, all **routes** should be **protected!** 
 
-# Installing Dependencies 
+## Installing Dependencies 
 
 You should install a few more packages which you will use. 
 
 They are: 
 
-- [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken): allows you to decode, verify and generate JWT
+- [Jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken): allows you to decode, verify and generate JWT
 
-- [bcrypt](https://www.npmjs.com/package/bcrypt): a library to help you hash passwords
+- [Bcrypt](https://www.npmjs.com/package/bcrypt): a library to help you hash passwords
 
-- [cookie-parser](https://www.npmjs.com/package/cookie-parser): parse **cookie header** and populate `req.cookies` with an object keyed by the cookie names (if you choose to store the jwt as а cookie)
+- [Cookie-parser](https://www.npmjs.com/package/cookie-parser): parse **cookie header** and populate `req.cookies` with an object keyed by the cookie names (if you choose to store the jwt as а cookie)
 
-# Model 
+## Model 
 
 The **User Model** structure:
 

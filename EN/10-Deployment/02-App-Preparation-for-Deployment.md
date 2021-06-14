@@ -93,9 +93,7 @@ However, on Heroku it must listen on a **specific** port.
 
 If you are using Express, go to your server file and make sure your server is going to listen to `process.env.PORT`:
 
-```js
-app.listen(process.env.PORT);
-```
+`app.listen(process.env.PORT);`
 
 `process.env.PORT` is the variable Heroku will assign a **port number** to.
 
@@ -111,7 +109,7 @@ if (port == null || port == '') {
 app.listen(port);
 ```
 
-## Use a database instead of writing to your local filesystem
+## Use a Database Instead of Writing to Your Local Filesystem
 
 Heroku uses Linux containers called **dynos** to run your code.
 

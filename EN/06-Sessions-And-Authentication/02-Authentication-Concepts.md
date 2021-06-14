@@ -98,11 +98,11 @@ As covered previously, **authentication** is the process of verifying the identi
 
 It happens by providing specific credentials, such as:
 
-- **password**
+- **Password**
 
-- **tokens**
+- **Tokens**
 
-- **smart cards**
+- **Smart cards**
 
 Another concept of cyber-security is **authorization**.
 
