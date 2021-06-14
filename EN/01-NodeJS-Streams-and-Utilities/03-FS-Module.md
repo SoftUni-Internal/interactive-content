@@ -180,9 +180,3 @@ fs.rmdir('./myDir', err => {
 ```
 
 [/slide]
-
-
-[slide hideTitle]
-# Demo: FS Modules
-
-[/slide]

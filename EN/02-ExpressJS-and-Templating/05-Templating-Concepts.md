@@ -12,11 +12,7 @@ This clear **distinction** between **logic and data** makes our code much **easi
 
 This introduces a more **effective** way to build user interfaces and results in **less boilerplate code**.
 
-
 [image assetsSrc="JS-Back-End-ExpressJs-and-Templating-1.png" /]
-
-
-
 
 [/slide]
 
@@ -33,14 +29,14 @@ We will discuss templating engines later in this lesson.
 These are the main **templating concepts**:
 
 - Templates are used to **define the structure** of our website
-    - Isolating **HTML components** from the actual **content**
+    - isolating **HTML components** from the actual **content**
 
 - Every **templating system** has its **own syntax**
-    - Generally very **easy to learn**
-    - **Minor differences in syntax** between **templating engines**
+    - generally very **easy to learn**
+    - **minor differences in syntax** between **templating engines**
 
 - Every template should be kept as **simple** as possible
-    - **Breaking up into smaller units** whenever possible
+    - **breaking up into smaller units** whenever possible
 
 [/slide]
 
@@ -76,12 +72,12 @@ This means that applications with server-side rendering **are not real SPAs**.
 
 Many templating engines support Express:
 
-- **express-handlebars**: Adaptation of the Handlebars engine, tailored to work better with Express.
+- **Express-handlebars**: Adaptation of the Handlebars engine, tailored to work better with Express.
   
 - **Pug**: Haml\-inspired template engine (formerly called Jade).
   
-- **express-views-dom**: A DOM view engine for Express.
+- **Express-views-dom**: A DOM view engine for Express.
 
-- **rivets-server**: Renders [Rivets.js](http://rivetsjs.com) templates on the server.
+- **Rivets-server**: Renders [Rivets.js](http://rivetsjs.com) templates on the server.
 
 [/slide]

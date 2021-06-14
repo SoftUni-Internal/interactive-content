@@ -76,11 +76,7 @@ The most important events on a readable stream are:
 
 - **Error** - emitted when there is an error receiving data
 
-[/slide]
-
-[slide hideTitle]
-
-# DEMO: Readable Stream Example - add demo
+## DEMO: Readable Stream Example
 
 An HTTP request is an instance of the readable stream.
 
@@ -185,11 +181,8 @@ writable.on('finish', function() {
 });
 ```
 
-[/slide]
 
-[slide hideTitle]
-
-# DEMO: Writable Stream Example - add demo
+## DEMO: Writable Stream Example
 
 An HTTP response is an instance of a writable stream.
 
@@ -218,7 +211,7 @@ server.listen(5000);
 
 [slide hideTitle]
 
-# Piping Streams - add demo
+# Piping Streams
 
 Piping happens when the input of a stream is provided by the output of another stream.
 
@@ -244,7 +237,7 @@ server.listen(5000);
 
 [slide hideTitle]
 
-# Duplex and Transform Streams - add demo
+# Duplex and Transform Streams
 
 A duplex stream is both readable and writable similar to a **Transform** stream. 
 

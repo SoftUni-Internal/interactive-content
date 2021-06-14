@@ -83,9 +83,7 @@ The **keywords** you can use when sorting are: **asc**, **desc**, **ascending**,
 
 - `.limit()` / `.skip()`: **Limit or Skip query results**
 
-```js
-Student.find({}).sort({age:-1}).skip(10).limit(10)
-```
+`Student.find({}).sort({age:-1}).skip(10).limit(10)`
 
 Sometimes we need all documents and sometimes we need only a few.
 

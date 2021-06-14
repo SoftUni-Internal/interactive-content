@@ -16,11 +16,7 @@ The "**event bus**" receives messages from the "**Publisher**" and then sends th
 
 [image assetsSrc="JS-Back-End-Streams-And-Utilities.png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Demo: Publisher-Subscriber Pattern - add demo
+## Demo: Publisher-Subscriber Pattern
 
 First, we will declare a local variable inside the function to store subscribed callbacks like so: `const subscribers = {}`.
 

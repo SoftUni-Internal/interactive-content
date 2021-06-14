@@ -13,7 +13,7 @@ The application will consist of the basic CRUD operations (**Create** cat, **Rea
 
 **Each cat** has a **name**, a **description**, an **image** and a **breed**.
 
-# Project Specification
+## Project Specification
 
 Design and implement a "**Cat Shelter**" **web application** (containing routing and multiple web pages) using HTML 5, CSS 3 and Node.js.
 
@@ -432,9 +432,9 @@ A new handler should be created for the logic about the cats.
 Create a file called `cat.js` inside the "**handlers**" folder.
 
 The handler will be responsible for:
-- **displaying** the (HTML) form
-- **parsing** the data from it 
-- **adding** a new cat inside the **JSON** file
+- **Displaying** the (HTML) form
+- **Parsing** the data from it 
+- **Adding** a new cat inside the **JSON** file
 
 First, **include** all needed libraries:
 
@@ -661,9 +661,9 @@ The only difference between them is the **encoding**, which is the second argume
 When some of the following files are served, there should be no encoding, including no **utf8** encoding: **png**, **jpg**, **jpeg**, etc.
 
 You should just **check** when:
-- the **pathname starts with** `/content`
-- the **request method** is `GET`
-- the **pathname ends with** any of the above image extensions
+- The **pathname starts with** `/content`
+- The **request method** is `GET`
+- The **pathname ends with** any of the above image extensions
 
 Read the file, pass the **pathname** and the **callback** as arguments.
 
@@ -690,9 +690,9 @@ We should implement the following logic:
 
 When some of the `[Change info]` buttons are clicked, you should:
 
-- check the **cat id** which is provided in the **URL**
-- **search** that cat in the `cat.json` file
-- use templates to **replace** the static data with the current cat information
+- Check the **cat id** which is provided in the **URL**
+- **Search** that cat in the `cat.json` file
+- Use templates to **replace** the static data with the current cat information
 
 If you check the `home.js` handler, you will see this:
 

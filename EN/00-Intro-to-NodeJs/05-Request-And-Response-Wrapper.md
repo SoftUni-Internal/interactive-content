@@ -20,11 +20,7 @@ Here are some of the more commonly used properties:
 
 - `url` - the request's **URL**
 
-[/slide]
-
-[slide hideTitle]
-
-# Example 1: Request Wrapper
+## Example 1: Request Wrapper
 
 Here is an example of how to use the request wrapper:
 
@@ -80,11 +76,7 @@ Here are some of the more common status codes and their meaning:
 | 404 | Resource not found | 
 | 500 | Server error |
 
-[/slide]
-
-[slide hideTitle]
-
-# Example 2: Response Wrapper
+## Example 2: Response Wrapper
 
 Here is how to send data to the client from the server:
 

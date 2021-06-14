@@ -18,9 +18,9 @@
 **2. View Engines**
 
 - Templating Concepts
-   - What templates are and the concept of templating 
+   - what templates are and the concept of templating 
 
 - Handlebars
-  - Introduction to the Handlebars templating engine
+  - introduction to the Handlebars templating engine
   
 [/slide]

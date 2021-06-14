@@ -103,7 +103,7 @@ const context = {
 
 ```
 
-```
+```js
 <ul class="people_list">
   {{#each people}}
     <li>{{firstName}} {{lastName}}, {{age}}</li>
@@ -126,7 +126,7 @@ Similar to JavaScript, you can also use **conditional statements** in your **tem
 
 The `#if` helper, followed by a condition is used to achieve this:
 
-```
+```js
 <div class="entry">
 {{#if person}}
 <h1>{{firstName}} {{lastName}}</h1>

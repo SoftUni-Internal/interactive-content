@@ -59,7 +59,7 @@ app.put('/', (req, res) => {
 })
 ```
 
-You can also use `app.all()`` to handle all types of HTTP methods.
+You can also use `app.all()` to handle all types of HTTP methods.
 
 It is important to note is that Express.js will prioritize routes based on how specific they are and also based on the order that they appear in the code.
 
@@ -81,11 +81,7 @@ The wildcard route will match any route that is entered and because it is in the
 
 The correct approach is to always keep the least specific routes below the most specific ones, and the wildcard route is a good example of a route that should be last to appear in the code.
 
-
-[/slide]
-
-[slide hideTitle]
-# Route Methods - 2
+## Route Methods - 2
 
 The routing methods can have  more than one callback function. 
 
@@ -248,5 +244,10 @@ app.use('/about', router)
 ```
 
 If we want to use the router anywhere within the app, we can load it with `var aboutRouter = require('./about')`
+
+[/slide]
+
+[slide hideTitle]
+# Demo: Express.js
 
 [/slide]

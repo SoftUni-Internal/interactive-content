@@ -26,6 +26,9 @@ Depending on the database response, it sends the appropriate status **code**, al
 
 # Node.js Web Server
 
+53-node.js-web-server
+creating-a-web-server
+
 Node.js allows for the **simple** and **easy** creation of a web server.
 
 The whole process can be done with a few lines of code:
@@ -53,12 +56,5 @@ This server is an object with multiple methods, such as:
   * has a default value of **2000** (2 minutes)
 
 The server is now ready to **handle incoming requests** and **send data to the client**.
-
-[/slide]
-
-[slide hideTitle]
-# Creating a Web Server with Node.js: Demo
-
-A live demonstration video will be added later.
 
 [/slide]

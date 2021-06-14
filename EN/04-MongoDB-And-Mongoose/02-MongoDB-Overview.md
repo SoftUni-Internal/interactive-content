@@ -7,9 +7,8 @@ You can download MongoDB from the [official site](https://www.mongodb.com/downlo
 
 When installed, MongoDB needs a **driver** that works with **Node.js**, **.NET**, and **Java**.
 
-``` js
-npm install mongodb -g
-```
+`npm install mongodb -g`
+
 
 [/slide]
 
@@ -23,9 +22,7 @@ When installed, additional configurations will be needed.
 
 - Type the following command:
 
-```
-<path to mongod.exe> mongod --dbpath <path to store data>
-```
+`<path to mongod.exe> mongod --dbpath <path to store data>`
 
 Usually, the path is `C:\Program Files\MongoDB\Server\3.4\bin`.
 
@@ -48,7 +45,7 @@ This is how you can add or find data in MongoDB:
 
 ```js
 db.mycollection.insertOne({"name":"George"})
-db.mycollection.find({"name":" George"})
+db.mycollection.find({"name":"George"})
 db.mycollection.find({})
 ```
 
