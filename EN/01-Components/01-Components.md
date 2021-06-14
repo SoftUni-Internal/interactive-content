@@ -4,9 +4,6 @@
 
 # The Idea Behind Components
 
-Merge: Angular-Components-3-4-Components with: Angular-Components-5-The-Idea-behind-components
-
-
 Components are the building blocks of all Angular applications. 
 
 We define a component's behavior using a TypeScript class.
@@ -17,7 +14,7 @@ The class interacts with the view through an **API** of **properties** and **met
 
 The `@Component` decorator identifies the class immediately below it as a component class and specifies its metadata. 
 
-In the example code below, you can see that **AppComponent** is just a class, with no special Angular notation or syntax at all. 
+In the example code below, we can see that **AppComponent** is just a class, with no special Angular notation or syntax at all. 
 
 It is not a component until we use the `@Component` decorator to mark it as such.
 
@@ -38,9 +35,9 @@ The **selector** statement is the CSS selector that will be used for referring t
 The **template** holds the HTML contents of the component.
 
 
-And **styles** is the CSS template of the component. 
+**styles** is the CSS template of the component. 
 
-The **template** and **styles** statements can also load external CSS and HTML files.
+The **template** and the **styles** statements can also load external CSS and HTML files.
 
 
 ```js
@@ -49,9 +46,9 @@ export class AppComponent { title = 'App Title'; }
 
 This last line of code is the final piece needed so that the **AppComponent** can be exported for use anywhere in our application.
 
-We are also passing a property to **title** with a value of **App Title** which will replace the `{{title}}` property once the component is displayed in a view.
+We are also passing a property called **title** with a value of **App Title**, which will replace the `{{title}}` property once the component is displayed in a view.
 
-The arrangement of the views is hierarchical, allowing you to modify or show and hide entire UI sections or pages based on user permissions or actions taken by the user.
+The arrangement of the views is hierarchical, allowing us to modify or show and hide entire UI sections or pages based on user permissions or actions taken by the user.
 
 Components can interact with each other and can be embedded inside other components creating a hierarchy.
 
@@ -67,7 +64,7 @@ The template's host view is defined by the template that is directly associated 
 
 Components are the most basic building blocks of an Angular app.
 
-The main tasks of a component is to display a specific page or section and to bind data between the **view** and the **model**.
+The main tasks of a component are to display a specific page or section and to bind data between the **view** and the **model**.
 
 A component contains 3 parts:
 
@@ -99,7 +96,7 @@ import { Component } from '@angular/core';
 export class AppComponent{}
 ```
 
-Writing the HTML and CSS inline or using external files is up to you and how you want to structure your project. 
+Writing the HTML and CSS inline or using external files is up to us and how we want to structure our project. 
 
 In some situations when the template requires more than one line of code, it might be better to create an external HTML or CSS file to keep things organized.
 
@@ -109,15 +106,16 @@ In some situations when the template requires more than one line of code, it mig
 
 # Creating Components Manually 2
 
-The **selector** is for calling the component inside other HTML files of the project as an HTML tag: `<app-home></app-home>`
+The **selector** is used for calling the component inside other HTML files of the project as an HTML tag: `<app-home></app-home>`
 
 The **template** is where the HTML View of the component is.
 
+
 The **templateUrl** is the path to the HTML file like so: `templateUrl: './app.component.html'`
 
-The **styleUrls** can be more than one and is where the style CSS of the component is. It is usually an array.
+The **styleUrls** can be more than one. This is where the style CSS of the component is. It is usually an array.
 
-The **providers** is a list of services which, can be injected using **Dependency Injection**.
+The **providers** is a list of services, which can be injected using **Dependency Injection**.
 
 ```js
 import { Component } from '@angular/core';
@@ -140,7 +138,7 @@ An example with `providers`:
 })
 ```
 
-This is done when you want to eagerly load a module that needs a specific service to operate.
+This is done when we want to eagerly load a module that needs a specific service to operate.
 
 The service will be available to the component and its descendants only.
 
@@ -158,7 +156,7 @@ After creating a component, we need to add it in the **declarations** array at t
 
 The declarations array is where all the components, directives and pipes are added to make them usable within that particular module.
 
-Adding them to this array ensures that every that the different elements can communicate with each other.
+Adding them to this array ensures that the different elements can communicate with each other.
 
 Without this declaration, a component would not be able to use directives and pipes.
 
@@ -177,9 +175,9 @@ Without this declaration, a component would not be able to use directives and pi
 
 [slide hideTitle]
 
-# Creating Components With The CLI
+# Creating Components Using The CLI
 
-We can use the **Angular CLI** - a command-line interface for Angular to generate a new component.
+We can use the **Angular CLI**, which is a command-line interface for Angular, to generate a new component.
 
 Type in the following command: `ng generate component home`.
 
@@ -187,7 +185,7 @@ The command-line interface creates a new folder with the name of the component l
 
 This is the fastest way to create a new component.
 
-When you create a component through the CLI a few things will be added for you:
+When we create a component through the CLI a few things will be added for us:
 - a folder with the name of the component
 - a component file
 - an HTML template file
