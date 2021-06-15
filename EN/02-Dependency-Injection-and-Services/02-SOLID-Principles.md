@@ -43,17 +43,17 @@ This job is performed by **services**, which will be the topic of the next secti
 
 8-Open-Closed-Principle
 
-The **Open-Closed Principle** states that a class, module, or function should be **open for extension**, but **closed for modification**.
+The **Open-Closed Principle** states that a class, a module, or a function should be **open for extension**, but **closed for modification**.
 
-What this means is that as soon as a given **software entity** is **in use** by clients, you **should not change its behavior**. 
+This means is that as soon as a given **software entity** is **in use** by clients, we **should not change its behavior**.
 
-However, it should be possible to **extend** it as long as adding new functionality **does not require changes** in the already established codebase.
+However, it should be possible to **extend** it as long as adding a new functionality **does not require changes** in the already established codebase.
 
-**Bugfixes** are an **exception** of this rule and you are **allowed** to **modify** the source code directly for debugging purposes.
+**Bugfixes** are an **exception** to this rule and we are **allowed** to **modify** the source code directly for debugging purposes.
 
-By following the Open-Closed Principle, a component is more likely to contain **maintainable** and **reusable code**.
+By following the Open-Closed Principle, a component is more likely to contain **maintainable** and **reusable** code.
 
-If you decide to **break** this principle and modify functionality that is already deployed and is being used by clients, this change can have a **profound impact** on the application and its users.
+If we decide to **break** this principle and modify functionality that is already deployed and being used by clients, this change can have a **profound impact** on the application and its users.
 
 [/slide]
 
