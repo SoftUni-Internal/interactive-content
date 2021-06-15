@@ -12,7 +12,7 @@ Angular-Components-1-2-Introduction-and-table-of-contents
 
 **2. Creating Components**
 - Creating components manually
-- Creating components with the CLI
+- Creating components using the CLI
 
 **3. Bootstrapping & Modules**
 - Initial module
