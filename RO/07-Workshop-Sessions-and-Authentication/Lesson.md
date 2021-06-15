@@ -1,1 +1,1 @@
-# Workshop: Sessions and Authentication
+# Workshop: Sesiuni și Autentificare
