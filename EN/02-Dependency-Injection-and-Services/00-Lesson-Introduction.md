@@ -6,7 +6,7 @@
 
 ## In this lesson you will learn:
 
-**1. Changing Detection Strategy**
+**1. Change Detection Strategy**
 - Modifying how Angular detects changes
 
 **2. SOLID Principles**
