@@ -1,4 +1,4 @@
-# Implementări prin Heroku GitHub 
+# Implementări Prin Heroku GitHub 
 
 [slide hideTitle]
 
@@ -16,7 +16,7 @@ Selectați GitHub ca **metodă de implementare** și faceți clic pe `Connect to
 
 [image assetsSrc="JS-BackEnd-deployment-2.png" /]
 
-Vi se va solicita să acordați Heroku **acces la depozitul dvs.**.
+Vi se va solicita să acordați Heroku **acces la depozitul dvs.**
 
 Apoi veți fi redirecționat la pagina **Deploy**.
 
@@ -70,6 +70,6 @@ Pentru a **deconecta** o aplicație de la GitHub, apăsați butonul `Disconnect`
 
 [image assetsSrc="JS-BackEnd-deployment-6.png" /]
 
-De asemenea, puteți **să deconectați profilul GitHub** în general [accesând setările contului dvs.](https://dashboard.heroku.com/account/applications#third-party-applications).
+De asemenea, puteți **să deconectați profilul GitHub** în general [accesând setările contului dvs](https://dashboard.heroku.com/account/applications#third-party-applications).
 
 [/slide]

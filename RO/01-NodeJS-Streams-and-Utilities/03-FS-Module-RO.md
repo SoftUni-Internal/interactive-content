@@ -128,7 +128,7 @@ fs.rename('./oldName', './newName', err => {
 
 [slide hideTitle]
 
-# Scrieți într-un Fișier
+# Scrieți Într-un Fișier
 
 Când scriem date într-un fișier, trebuie mai întâi să specificăm calea către fișier.
 

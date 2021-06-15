@@ -24,7 +24,7 @@ Pentru a face acest lucru, serverul se conectează la **baza de date**, unde sun
 
 [slide hideTitle]
 
-# Serverul web Node.js
+# Serverul Web Node.js
 
 53-node.js-web-server
 creating-a-web-server

@@ -8,7 +8,7 @@
 
 Aceasta este ultima parte acestui workshop, asigurați-vă că le completați cele precedente înainte de a continua, deoarece toate părțile acestui workshop sunt legate între ele.
 
-## Sarcina principală
+## Sarcina Principală
 
 Ca pas final, ar trebui să implementați unele **validări**, **notificări** pentru **îmbunătățirea experienței utilizatorului** și **protejarea datelor** care sunt **stocate în baza de date**.
 
@@ -52,11 +52,11 @@ Formularele **cube** și **accessory** ar trebui, de asemenea, să aibă unele v
 
 - **Name**:
 
-   - cel puțin **5 caractere** care pot fi **litere engleze, **cifre** și **spații albe**
+   - cel puțin **5 caractere** care pot fi litere engleze, **cifre** și **spații albe**
 
 - **Description**:
 
-   - cel puțin 20 caractere care pot fi **litere engleze, **cifre** și **spații albe**
+   - cel puțin 20 caractere care pot fi litere engleze, **cifre** și **spații albe**
 
 - **ImageUrl**:
 
@@ -70,7 +70,7 @@ Formularele **cube** și **accessory** ar trebui, de asemenea, să aibă unele v
 
 # Error Handling
 
-În caz de erori, de exemplu, dacă numele de utilizator furnizat este **deja luat**, **nu există ** sau **parola dată** (în timp ce autentificarea) este **incorectă**, gestionați corect eroarea și afișați o notificare adecvată.
+În caz de erori, de exemplu, dacă numele de utilizator furnizat este **deja luat**, **nu există** sau **parola dată** (în timp ce autentificarea) este **incorectă**, gestionați corect eroarea și afișați o notificare adecvată.
 
 [image assetsSrc="JS-Web-Validation-And-Error-Handling-4.png" /]
 

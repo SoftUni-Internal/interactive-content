@@ -25,7 +25,7 @@ http.createServer((req, res) => {
 
 - Evenimentele simplifică comunicarea în cadrul unei aplicații mari
 
-- **modulul fs** vă oferă acces la sistemul de fișiere
+- **Modulul fs** vă oferă acces la sistemul de fișiere
 
 ```js
 let fs = require('fs');

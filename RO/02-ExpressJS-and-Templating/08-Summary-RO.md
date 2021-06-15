@@ -90,7 +90,7 @@ app.use('/static', express.static(path.join(__dirname, 'public')))
   {{/if}}
 
   ```  
-  - **Partials**
+  - **partials**
   
   `{{> myPartial }}`
   

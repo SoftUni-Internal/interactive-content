@@ -68,7 +68,7 @@ O caracteristică importantă a tokenelor de acces este că au o durată de via�
 
 Deși acest lucru este excelent pentru **securitate**, acesta introduce o problemă pe termen lung - dacă o aplicație încearcă să acceseze o resursă **după ce simbolul de acces a expirat**, trebuie **să ceară** utilizatorului permisiunea din nou.
 
-** Tokenele Refresh** vizează abordarea acestei probleme obținând automat un nou token de acces la expirarea celui actual.
+**Tokenele Refresh** vizează abordarea acestei probleme obținând automat un nou token de acces la expirarea celui actual.
 
 [/slide]
 

@@ -36,24 +36,24 @@ schema.post('save', () => {});
 
 - We can handle errors using a `try-catch` block
 
-  ```js
-  try {
-     console.log('Hello');
-  } catch (error) {
-     console.error(error);
-  }
-  ```
+```js
+try {
+    console.log('Hello');
+} catch (error) {
+    console.error(error);
+}
+```
 
 - For **asynchronous** operations, use `then().catch()`
 
-  ```js
-  .then((example) => {
-     console.log('Hello');
-  })
-  .catch((error) => {
-     console.error(error);
-  });
-  ```
+```js
+.then((example) => {
+        console.log('Hello');
+    })
+    .catch((error) => {
+        console.error(error);
+    });
+```
 
 ## In the next lesson you will learn:
 

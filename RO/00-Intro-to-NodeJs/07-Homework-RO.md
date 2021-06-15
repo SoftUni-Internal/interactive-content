@@ -169,7 +169,7 @@ Nu există reguli stricte referitoare la cum ar trebui să arate rutarea aplica�
 [/slide]
 
 [slide hideTitle]
-## Configurarea mediului integrat de dezvoltare (IDE)
+## Configurarea Mediului Integrat de Dezvoltare (IDE)
 
 Pentru început, configurați mediul integrat de dezvoltare (IDE) sau editorul de text.
 
@@ -230,7 +230,7 @@ Odată ce solicităm modulul HTTP, putem crea serverul printr-o funcție de tip 
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-24.jpg" /]
 
-Când faceți acest lucru, deschideți terminalul cu comanda `(Ctrl + \)` și rulați serverul cu comanda `node index` .
+Când faceți acest lucru, deschideți terminalul cu comanda `(Ctrl + \)` și rulați serverul cu comanda `node index`.
 
 [image assetsSrc="JS-BackEnd-Intro-To-Nodejs-Homework-25.jpg" /]
 

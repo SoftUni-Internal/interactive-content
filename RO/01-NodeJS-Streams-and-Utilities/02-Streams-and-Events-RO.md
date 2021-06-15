@@ -211,7 +211,7 @@ server.listen(5000);
 
 [slide hideTitle]
 
-# Fluxuri de tip Piping 
+# Fluxuri de Tip Piping 
 
 Piping-ul se întâmplă atunci când intrarea unui flux este furnizată de ieșirea unui alt flux.
 

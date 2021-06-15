@@ -42,7 +42,7 @@ De asemenea, puteți [instala GitHub Desktop](https://desktop.github.com/).
 
 ## Instalarea pe Linux
 
-Dacă utilizați **Ubuntu** sau o altă **distribuție bazată pe Debian, utilizați `apt`:
+Dacă utilizați **Ubuntu** sau o altă distribuție bazată pe Debian, utilizați `apt`:
 
 `sudo apt install git-all`
 

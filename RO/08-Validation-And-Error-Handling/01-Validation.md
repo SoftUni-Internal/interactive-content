@@ -123,11 +123,11 @@ If the user input is `John@example.com` for example, after the sanitizer functio
 
 These are cases where **sanitizers** could be useful:
 
-- **normalizing** emails - e.g. making sure all characters are in lowercase
+- **Normalizing** emails - e.g. making sure all characters are in lowercase
 
-- **trimming** characters from the input, like unnecessary spaces
+- **Trimming** characters from the input, like unnecessary spaces
 
-- removing characters that are **blacklisted**
+- Removing characters that are **blacklisted**
 
 Take a look at these **sanitizer** functions:
 
@@ -321,16 +321,16 @@ With the custom validators, we can send a custom message:
 
 ```js
 const userSchema = new Schema({
-  phone: {
-    type: String,
-    validate: {
-      validator: function (validate) {
-        return /\d{3}-\d{3}-\d{4}/.test(validate);
-      },
-      message: (props) => `${props.value} is not a valid phone number!`,
+    phone: {
+        type: String,
+        validate: {
+            validator: function(validate) {
+                return /\d{3}-\d{3}-\d{4}/.test(validate);
+            },
+            message: (props) => `${props.value} is not a valid phone number!`,
+        },
+        required: [true, 'User phone number required'],
     },
-    required: [true, 'User phone number required'],
-  },
 });
 ```
 
@@ -360,11 +360,11 @@ Here is an example:
 
 ```js
 toy.save((err) => {
-  assert.equal(err.errors.color.message, 'Color');
-  assert.equal(err.errors.color.kind, 'Invalid color');
-  assert.equal(err.errors.color.path, 'color');
-  assert.equal(err.errors.color.value, 'Green');
-  ...
+    assert.equal(err.errors.color.message, 'Color');
+    assert.equal(err.errors.color.kind, 'Invalid color');
+    assert.equal(err.errors.color.path, 'color');
+    assert.equal(err.errors.color.value, 'Green');
+    ...
 });
 ```
 
@@ -397,8 +397,8 @@ When validation fails, it is recommended to:
 
 You can find more information about **express-validator** and **mongoose** here:
 
-- [express-validator](https://express-validator.github.io/docs/)
-- [mongoose](https://mongoosejs.com/docs/validation.html)
+- [Express-validator](https://express-validator.github.io/docs/)
+- [Mongoose](https://mongoosejs.com/docs/validation.html)
 
 [/slide]
 

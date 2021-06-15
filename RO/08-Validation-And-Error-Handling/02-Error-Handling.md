@@ -47,9 +47,9 @@ When we use the **ExpressJS** functionality, we need to use the `next()` functio
 This is an example of how to use `next`:
 
 ```js
-async function validateCookies (req, res, next) {
-  await cookieValidator(req.cookies);
-  next();
+async function validateCookies(req, res, next) {
+    await cookieValidator(req.cookies);
+    next();
 }
 
 app.use(cookieParser());
@@ -69,13 +69,18 @@ Here is an example:
 const User = require('../models/User/');
 
 async (req, res, next) => {
-  const { username, password } = req.body;
-  try {
-    const currentUser = await User.findOne({ username });
-    console.log(username);
-  } catch (error) {
-    console.error(error);
-  }
+    const {
+        username,
+        password
+    } = req.body;
+    try {
+        const currentUser = await User.findOne({
+            username
+        });
+        console.log(username);
+    } catch (error) {
+        console.error(error);
+    }
 };
 ```
 
@@ -93,15 +98,15 @@ We can handle asynchronous errors with the `.then().catch()` block statement:
 
 ```js
 Post.findById(productId)
-  .then((product) => {
-    console.log(product)
-  })
-  .catch((error) => {
-    if (!error.statusCode) {
-      error.statusCode = 500;
-    }
-    next(error);
-  });
+    .then((product) => {
+        console.log(product)
+    })
+    .catch((error) => {
+        if (!error.statusCode) {
+            error.statusCode = 500;
+        }
+        next(error);
+    });
 ```
 
 In the `then()` statement, we print the **product** to the console.

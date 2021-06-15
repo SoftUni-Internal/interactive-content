@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Ce este Middleware?
+# Ce Este Middleware?
 
 Middleware vă permite să definiți una sau mai multe acțiuni care sunt executate în ordine.
 
@@ -24,7 +24,7 @@ Un **middleware** este o **funcție** care are acces la:
 - Obiectul **response** (`res`)
 
 
-## Cum se încarcă un middleware
+## Cum se Încarcă un Middleware
 
 Pentru a încărca **middleware**, utilizăm metoda `app.use()` care acceptă o funcție ca parametru.
 
@@ -60,7 +60,7 @@ Putem folosi middleware-ul **Application-level** declarând `app.use()`, despre 
 
 De asemenea, putem utiliza funcția `app.METHOD()` pentru a crea middleware **specific rutei**.
 
-## Middleware-ul Router-level 
+## Middleware-ul Router-Level 
 
 Middleware **Router-level**  este foarte similar cu middleware application-level.
 

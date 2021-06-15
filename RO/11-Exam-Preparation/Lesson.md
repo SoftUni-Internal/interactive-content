@@ -1,2 +1,2 @@
-# Exam Preparation - Not translated
+# Exam Preparation
 

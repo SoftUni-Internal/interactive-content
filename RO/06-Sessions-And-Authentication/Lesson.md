@@ -1,1 +1,1 @@
-# Sesiuni și autentificare
+# Sesiuni și Autentificare

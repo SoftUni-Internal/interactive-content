@@ -13,7 +13,7 @@ Dacă ați ratat primele două părți ale acestui workshop, **asigurați-vă c�
 
 Acum este timpul să implementați serviciul utilizatorului în aplicația dvs., astfel încât persoanele să se poată **înregistra**, **conecta** și **deconecta**.
 
-Și fiecare cub poate fi **editat** sau ** șters**.
+Și fiecare cub poate fi **editat** sau **șters**.
 
 Unele dintre funcționalitățile ar trebui **să necesite autentificare** (cum ar fi **create the cube**, **create accessory**) și autorizare (cum ar fi **edit** și **delete**).
 
@@ -41,7 +41,7 @@ Structura a **User Model**:
 
 - **Password**: string (**hashed**), utilizați `bcrypt` pentru utiliza hash și compara parola
 
-Asigurați-vă că, atunci când creați cu succes un nou utilizator în baza de date, să generați un **JSON web token** și să îl utilizați mai târziu pentru **autentificare** și ** autorizare.**
+Asigurați-vă că, atunci când creați cu succes un nou utilizator în baza de date, să generați un **JSON web token** și să îl utilizați mai târziu pentru **autentificare** și **autorizare.**
 
 De asemenea, trebuie să adăugați o proprietate pe **Cube Model**, care este `creatorId` (tip: **Șir** și **este obligatoriu**), astfel încât să puteți urmări în continuare creatorul fiecărui cub.
 [/slide]
