@@ -30,7 +30,7 @@ Finally, the browser loads a completely **new webpage**, discarding the previous
 
 ## Client-Side
 
-[image assetsSrc="Angular-Modules-And-Routing-1.png" /]
+[image assetsSrc="Angular-Introduction-2.gif" /]
 
 Once again, the browser detects a click event, but a **client-side routing library** handles it.
 
