@@ -12,7 +12,7 @@ It is advisable to exclude **non-essential files and directories** that **take u
 
 Create a file called `.gitignore` and paste the following code inside:
 
-```
+```js
 node_modules
 package-lock.json
 ```
@@ -93,7 +93,9 @@ However, on Heroku it must listen on a **specific** port.
 
 If you are using Express, go to your server file and make sure your server is going to listen to `process.env.PORT`:
 
-`app.listen(process.env.PORT);`
+```js
+app.listen(process.env.PORT);
+```
 
 `process.env.PORT` is the variable Heroku will assign a **port number** to.
 
@@ -103,7 +105,7 @@ You can make sure your application will still **run locally** by using an `if` s
 let port = process.env.PORT;
 
 if (port == null || port == '') {
- port = 5000;
+    port = 5000;
 }
 
 app.listen(port);

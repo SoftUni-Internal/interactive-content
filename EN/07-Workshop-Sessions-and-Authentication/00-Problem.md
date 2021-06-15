@@ -9,7 +9,7 @@
 
 If you missed the first two parts of this workshop, **make sure you complete them** before you continue because all parts of this workshop are related to each other.
 
-# Main Task 
+## Main Task 
 
 Now it's time to implement user service in your app, so people can **register**, **login**, and **logout**. 
 
