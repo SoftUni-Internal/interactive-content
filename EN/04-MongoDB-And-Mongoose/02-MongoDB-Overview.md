@@ -11,12 +11,7 @@ When installed, MongoDB needs a **driver** that works with **Node.js**, **.NET**
 npm install mongodb -g
 ```
 
-
-[/slide]
-
-[slide hideTitle]
-
-# Configuring MongoDB
+## Configuring MongoDB
 
 When installed, additional configurations will be needed.
 
@@ -30,11 +25,7 @@ Usually, the path is `C:\Program Files\MongoDB\Server\3.4\bin`.
 
 You can find more information [here.](https://docs.mongodb.com/manual/tutorial/)
 
-[/slide]
-
-[slide hideTitle]
-
-# Working with MongoDB Shell Client
+## Working with MongoDB Shell Client
 
 There are several steps to follow when working with the Shell Client.
 
