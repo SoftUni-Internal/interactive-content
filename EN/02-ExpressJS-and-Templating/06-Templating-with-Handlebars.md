@@ -15,7 +15,7 @@ They use the **double curly brace notation**:
 
 ```js
 <body>
-<p>My name is {{name}}</p>
+   <p>My name is {{name}}</p>
 </body>
 ```
 

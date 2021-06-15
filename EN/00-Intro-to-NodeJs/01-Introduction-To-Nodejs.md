@@ -26,6 +26,7 @@ Here are some of the benefits that come along with it:
 Download and install the latest version, if you have not already
 
 To check Node.js's current version on a machine, just open a terminal and type:
+
 ```js
 node -v
 ```
@@ -42,7 +43,7 @@ There are two ways to execute JS code using Node.js:
 
 ```js live
 function greeting() {
- console.log('Hello Node.js!');
+   console.log('Hello Node.js!');
 }
 
 greeting(); 

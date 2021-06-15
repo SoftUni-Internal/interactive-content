@@ -15,7 +15,7 @@ Ele folosesc **notația cu acoladă dublă**:
 
 ```js
 <body>
-<p>My name is {{name}}</p>
+   <p>My name is {{name}}</p>
 </body>
 ```
 
