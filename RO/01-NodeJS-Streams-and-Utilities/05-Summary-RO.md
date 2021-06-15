@@ -1,12 +1,12 @@
 [slide hideTitle]
-# Summary
+# Rezumat
 
 
-# In this lesson you learned:
+# În această lecție am învățat:
 
-- The **Pub/Sub** pattern is used to communicate messages
-- Different utility modules in Node.js
-- Streams allow working with big data sequentially
+- Șablonul **Pub/Sub** este folosit pentru a comunica mesaje
+- Diferite module utilitare în Node.js
+- Fluxurile permit lucrul cu date mari secvențial
 
 ```js
 const http = require('http');
@@ -23,9 +23,9 @@ http.createServer((req, res) => {
 }).listen(5000);
 ```
 
-- Events simplify communication within a large application
+- Evenimentele simplifică comunicarea în cadrul unei aplicații mari
 
-- The **fs module** gives you access to the file system
+- **modulul fs** vă oferă acces la sistemul de fișiere
 
 ```js
 let fs = require('fs');
@@ -33,9 +33,9 @@ let data = fs.readdirSync('./myDir', 'utf8');
 console.log(data);
 ```
 
-## In the next lesson you will learn:
+## În lecția următoare veți învăța:
 
 - Express
-- View Engines
+- Engine-uri de vizualizare
 
 [/slide]
