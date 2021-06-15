@@ -6,19 +6,19 @@
 
 3-4-Change-Detection-Strategy
 
-When we make **changes** to data in our components, the view updates **automatically**.
+When we make **changes** to the data in our components, the view updates **automatically**.
 
-For detecting every change, Angular uses [NgZone](https://angular.io/guide/zone), which performs so-called "**monkey patching**" upon every asynchronous function.
+For detecting every change, Angular uses [NgZone](https://angular.io/guide/zone), which performs the so-called "**monkey patching**" upon every asynchronous function.
 
 Monkey patching is a technique that we can use if we want to **extend** or **modify** the behavior of a **piece** of code/function.
 
-NgZone can realize when an **asynchronous operation has been called** and/or if this operation has finished. 
+NgZone can recognize when an **asynchronous operation has been called** and/or if this operation has finished. 
 
-This gives an ability to Angular to know **when changes are made** by running the change detection, which goes from the **main component down to the entire tree of components** and checks for changes.
+This gives Angular the ability to notice **when changes are made** by running the change detection, which goes from the **top component node, all the way to the bottom leaves of the tree** and scans for changes.
 
 If changes have been **detected**, Angular marks the **component**, and only the **changed component will be re-rendered**.
 
-And here if our **application is very big**, delays may happen, but we as **developers** can direct how our component will be searched for changes, and be marked for **re-rendering**.
+If our **application is very big**, delays may happen, but we, as **developers**, can manage how our component will be searched for changes, and how it will be marked for **re-rendering**.
 
 [/slide]
 
@@ -51,9 +51,9 @@ We need to set the `changeDetection` property in our `@Component` decorator as f
 
 In this example, we set the detection strategy to `onPush`.
 
-When set, takes effect the **next time change detection is triggered**.
+When set, it takes effect the **next time when change detection is triggered**.
 
-If you **do not set** a `changeDetection` property, Angular will apply the **default** change detection method.
+If we **do not set** a `changeDetection` property, Angular will apply the **default** change detection method.
 
 We will learn what `onPush` means in the next video.
 
@@ -77,7 +77,7 @@ We will learn what `onPush` means in the next video.
 - `Default: 1`:
   - uses the `CheckAlways` strategy
   - set by default;
-  - change detection happens automatically, until it is **deactivated** explicitly by setting the strategy to `OnPush` (`CheckOnce`)
+  - change detection happens automatically until it is **deactivated** explicitly by setting the strategy to `OnPush` (`CheckOnce`)
 
 
 [/slide]
