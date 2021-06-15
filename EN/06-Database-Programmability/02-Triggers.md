@@ -20,16 +20,17 @@ For example **anytime when a row gets deleted** from this table we want you to *
 
 By the differentiation of trivial activation, time triggers are **divided into two types**:
 
-- **Before the even**
+- **Before the even:**
 
 These triggers are activated **BEFORE** the **event**.
 
 [image assetsSrc="Database-Programabillity.png" /]
 
-- After the even
+- **After the even:**
+
 These triggers are activated **AFTER** the given **event**.
 
-[image assetsSrc="Database-Programabillity(1).png" /]с
+[image assetsSrc="Database-Programabillity(1).png" /]
 
 [/slide]
 
