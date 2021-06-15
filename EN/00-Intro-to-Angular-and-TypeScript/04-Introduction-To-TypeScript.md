@@ -12,9 +12,9 @@ It allows us to write **typed** JavaScript, but it does not force us.
 
 We can install the **TypeScript** compiler from **npm** with the following command: `npm install -g typescript`.
 
-We need to add the `.ts` extension to our files if we want to write **TypeScript**.
+We need to add the `.ts` extension to our files in order to use **TypeScript**.
 
-To run **TypeScript** files, we need to write the `tsc myFile.ts` command in the terminal.
+To run **TypeScript** files, we need to type in the `tsc myFile.ts` command in the terminal.
 
 After the file compilation, we **will receive plain JavaScript** as output.
 
@@ -26,9 +26,9 @@ After the file compilation, we **will receive plain JavaScript** as output.
 
 Intro-to-Angular-and-Typescript-16-Variable-Types
 
-TypeScript allows us to have **annotations** attach to the variables.
+TypeScript allows us to have **annotations** attached to the variables.
 
-The annotations give us the ability to **specify** the **type** of every **variable**.
+The annotations give us the ability to **specify** the **type** of the **variable**.
 
 The variable **types** in TypeScript are:
 
@@ -91,13 +91,13 @@ A **class** in **TypeScript** looks like this:
    console.log(greeter.greet());
 ```
 
-In this class, the **greeting** property is а **public** one also, it is a **string**.
+In this class, the **greeting** property is **public** and also a **string**.
 
 The **constructor** is a usual JavaScript constructor, with the difference that we set a **type** to the message property.
 
 We set the **return type** of the **greet** function, which returns a **string**.
 
-After we have instantiated the **Greeter** class, we have also printed it to the console.
+After instanting the **Greeter** class, also print it to the console.
 
 [/slide]
 
@@ -107,11 +107,11 @@ After we have instantiated the **Greeter** class, we have also printed it to the
 
 Intro-to-Angular-and-Typescript-18-Inheritance
 
-**Inheritance** in **TypeScript** is the same as the one in **JavaScript**.
+**Inheritance** in **TypeScript** is the same as in **JavaScript**.
 
-In **TypeScript** to inherit a class, we use the **extends** keyword.
+In **TypeScript** we use the **extends** keyword in order to inherit a class.
 
-The difference between the inheritance in **TypeScript** and the one in **JavaScript**, is that in **TypeScript** we can add **annotations**.
+The difference between the inheritance in **TypeScript** and the one utilized in **JavaScript**, is that in **TypeScript** we can add **annotations**.
 
 Here is an example:
 
@@ -134,11 +134,10 @@ Here is an example:
    dog.bark();
 ```
 
-In this example, the **Dog** class inherits the **Animal** one.
+The **Dog** class inherits the **Animal** one.
 
-The **Dog** will have all the methods that the **Animal** has.
-
-To the `bark()` and the `move()` methods, we added the **void** annotation because they **do not** return anything.
+The **Dog** class will have all the methods that the **Animal** class has.
+We add  **void** annotation to the `bark()` and the `move()` methods because they **do not** return anything.
 
 [/slide]
 
@@ -148,17 +147,17 @@ To the `bark()` and the `move()` methods, we added the **void** annotation becau
 
 Intro-to-Angular-and-Typescript-19-Interfaces
 
-The **interfaces** are another ability that TypeScript gives us.
+**Interfaces** is another concept provided by TypeScript.
 
-With **interfaces**, we can take apart the most used properties and **re-use** them instead of writing them every time.
+With **interfaces**, we can separate and group the most used properties of a certain feature and **re-use** them instead of rewriting them every time.
 
-That allows us to have more **re-usable** code, also to have fewer lines of code.
+That allows us to have more **reusable** code which decreases its size and complexity.
 
-We can take the **interfaces** out in a different file if we use them a lot in the application.
+We can separate **interfaces** in different files which makes them easier to address and use in an application.
 
-In this way, if we **need interfaces**, we only need to import them.
+This way, if we **need to use interfaces**, we only have to import them.
 
-If we are going to use an **interface**, we need to add it as an **annotation**.
+If we are going to use a certain **interface**, we need to add it as an **annotation**.
 
 Here is an example:
 
@@ -175,9 +174,9 @@ Here is an example:
    console.log(john);
 ```
 
-In this example, we have the **interface** "**Man**", used in the function **Person**.
+In this example, we have the "**Man**" **interface** used in the **Person** function.
 
-This function will return a string with `Hi, John` printed to the console.
+This function will return the string: `Hi, John`, printing it to the console.
 
 [/slide]
 
@@ -187,11 +186,11 @@ This function will return a string with `Hi, John` printed to the console.
 
 Intro-to-Angular-and-Typescript-20-Generics-and-Enumerations
 
-Generics gives us a **more flexible** and more **re-usable** code, also make the component to work with **more than one type**.
+The generics allow for yet **more flexible** and more **reusable** code they also make a component work with **more than one type**.
 
-We can set a specific function to work with **any** given type, but in this way, after the return, we are **losing the type**.
+We can set a specific function to work with **any** given type, but in this way, after the return statement,**the data type** is lost.
 
-But we can use the **type variable** - `T`, which allows us to **capture** the provided type.
+We can address this issue by useing the **type variable** - `T`, which allows us to **capture** the provided type.
 
 For example:
 
@@ -204,21 +203,21 @@ For example:
    let outputNumber = identity<number>5;
 ```
 
-In this example, we set the type of the `outputString` variable to be a **string**.
+In this example, we set the datatype of the `outputString` variable to **string**.
 
-We set `outputNumber` variable to be a **number**
+We set the `outputNumber` variable to be a **number**
 
-The `outputString` will be **string** but the `outputNumber` will be **number**.
+The `outputString` will be of type **string** and the `outputNumber` will be a **number**.
 
 ## Enumerations
 
-The **Enumerations** are a set of named constants.
+**Enumerations** are a set of named constants.
 
 TypeScript provides both **numeric** and **string-based** enums.
 
-They help us to create a **set of individual cases**.
+They help us create a **set of individual cases**.
 
-Here is an example of **Numeric** enum:
+Here is a **Numeric** enum:
 
 ```js
    enum Direction {
@@ -231,7 +230,7 @@ Here is an example of **Numeric** enum:
 
 The **Numeric** enumerations can store values as numbers.
 
-Have a look a **String-Based** enum:
+**String-Based** enum:
 
 ```js
    enum Direction {
@@ -242,7 +241,7 @@ Have a look a **String-Based** enum:
    }
 ```
 
-Unlike the Numeric enums, the **String-Based** enumerations can store strings as values.
+**String-Based** enumerations can store strings as values.
 
 [/slide]
 
@@ -252,7 +251,7 @@ Unlike the Numeric enums, the **String-Based** enumerations can store strings as
 
 Intro-to-Angular-and-Typescript-21-Modules
 
-Modules in TypeScript are the **same as the ones in ES6**.
+Modules in TypeScript are the **same as in ES6**.
 
 Here are some ways to export methods:
 
@@ -270,7 +269,7 @@ Here are some ways to export methods:
    export { Example };
 ```
 
-- **Export** a **function** with **different** **name**:
+- **Export** a **function** with a **different** **name**:
 
 ```js
    export { Example as mainExample };
@@ -296,7 +295,7 @@ Here are some ways to import methods:
    import { Example as mainExample } from './example';
 ```
 
-If we have used the **default exporting**, we can use `import example from "./example";`.
+If we used the **default exporting**, we can use `import example from "./example";`.
 
 You can learn more about TypeScript [here](https://www.typescriptlang.org/docs/).
 

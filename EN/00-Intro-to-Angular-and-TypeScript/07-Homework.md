@@ -4,7 +4,8 @@
 
 # TypeScript Playground
 
-Install typescript with the `npm install typescript -g`.
+Install typescript by typing the following command into a terminal:
+`npm install typescript -g`.
 
 [image assetsSrc="Angular-Introduction-4.png" /]
 
@@ -22,7 +23,7 @@ Create a **.vscode** folder and a **tsconfig.json** file with the following conf
 
 [image assetsSrc="Angular-Introduction-5.png" /]
 
-After you have your **.ts** file, open the **terminal** and execute the **following commands**:
+After you have your **.ts** file, open a **terminal** and execute the **following commands**:
 
 `tsc {filename}.ts`
 `node {filename}`
@@ -37,7 +38,7 @@ After you have your **.ts** file, open the **terminal** and execute the **follow
 
 Write a TypeScript class that holds data about an HTTP request.
 
-It has the following properties:
+It should have the following properties:
 
 -  **method** (String)
 
@@ -53,7 +54,7 @@ It has the following properties:
 
 The first four properties (**method**, **uri**, **version**, **message**) are set trough the **constructor**, in the listed order.
 
-The **response** property is initialized to **undefined** and the **fulfilled** property is initially set to **false**.
+The **response** property is initialized as **undefined** and the **fulfilled** property is initially set to **false**.
 
 ## Example
 
@@ -67,21 +68,21 @@ The **response** property is initialized to **undefined** and the **fulfilled** 
 
 # Tickets
 
-Write a program using TS that manages a database of tickets.
+Write a program using TS that manages a ticket database.
 
 A ticket has a **destination** (string), a **price** (number) and a **status** (string).
 
-Your program will receive **two arguments** - the first is an **array of strings** for ticket descriptions and the second is a **string**, representing **sorting criteria**.
+The program will receive **two arguments** - the first one is an **array of strings** representing ticket descriptions and the second is a **string**, representing the **sorting criteria**.
 
 The ticket descriptions have the following format:
 
 "\<**destinationName**\>\|\<**price**\>\|\<**status**\>"
 
-Store each ticket and at the end of execution **return** a sorted summary of all tickets, sorted by either **destination**, **price** or **status**, depending on the **second parameter** that your program received.
+Store each ticket and **return** a sorted summary of all tickets, sorted by **destination**, **price** or **status**, depending on the **second parameter** that your program received.
 
-Always sort in ascending order (the default behavior for **alphabetical** sort).
+Always sort the entries in ascending order (the default behavior for **alphabetical** sort).
 
-If two tickets compare the same, use order of appearance.
+If two tickets compare the same, use their order of appearance.
 
 See the examples for more information.
 
@@ -108,7 +109,7 @@ Your program will receive two parameters - an array of strings and a single stri
 
 Define several TS classes, that represent a company's employee records.
 
-Every employee has a **name** and **age**, a **salary**, and a list of **tasks**, while every position has specific properties not present in the others.
+Each employee has a **name** and **age**, a **salary** and a list of **tasks**, while every position has specific properties not present for the others.
 
 Place all common functionality in a **parent abstract** class.
 
@@ -118,23 +119,23 @@ Follow the diagram below:
 
 Every position has different tasks.
 
-In addition to all common properties, the manager position has a **dividend** he can collect along with his salary.
+In addition to all common properties, the manager position has a **dividend** property they can collect in addition to their salary.
 
-All employees have a **work** function that when called cycles through the list responsibilities for that position and prints the current one.
+All employees have a **work** function that, when called, cycles through the list of responsibilities for that position and prints the current one.
 
 When all tasks have been printed, the list starts over from the beginning.
 
-Employees can also **collect salary**, which outputs the amount, plus any **bonuses**.
+Employees can also **collect their salary**, which outputs the amount, plus any **bonuses**.
 
-Your program needs to expose a module, containing the three classes **Junior**, **Senior**, and **Manager**.
+Your program needs to include a module, containing the three classes **Junior**, **Senior**, and **Manager**.
 
 The properties **name** and **age** are set through the constructor, while the **salary** and a manager’s **dividend** are initially set to zero and can be changed later.
 
-The list of **tasks** is filled by each position.
+The list of **tasks** is filled for each position.
 
-The resulting objects also expose the functions `work()` and `collectSalary()`.
+The resulting objects also hold the functions `work()` and `collectSalary()`.
 
-When `work()` is called, one of the following lines is printed on the console, depending on the current task in the list:
+When `work()` is called, one of the following lines is printed to the console, depending on the current task in the list:
 
 
 "\{**employee name**\} **is working on a simple task.**"
@@ -153,9 +154,9 @@ And when `collectSalary()` is called, print the following:
 
 ## Hints
 
-We should begin by creating a parent class, that will hold all properties, shared among the different positions.
+We should begin by creating a parent class, that will hold all properties, shared among all positions.
 
-Looking at the problem description, we see the following structure for our parent object:
+The following structure should be used for our parent object:
 
 ```
     {
@@ -168,9 +169,9 @@ Looking at the problem description, we see the following structure for our paren
     }
 ```
 
-Data variables will be part of the object attached to its local context with **this** inside the **constructor**.
+Data variables will be part of the object and attached to its local context using **this** inside the **constructor**.
 
-Any properties that need to be initialized at instantiation time are defined as function parameters.
+Any properties that should be assigned a value during the object initialization are defined as function parameters.
 
 Functions are defined inside the class body.
 
@@ -206,7 +207,7 @@ Why should the class be abstract?
 
 The `work()` function has to cycle through the list of tasks and print the current one.
 
-The easiest way to do this is to shift the first element from the array and push it at the end.
+The easiest way to do this is to `shift` the first element from the array and `push` it to the end.
 
 ```js
     public work(): void {
@@ -218,7 +219,7 @@ The easiest way to do this is to shift the first element from the array and push
 
 Printing the salary is pretty straightforward.
 
-However, since the manager has a bonus to his salary, it’s best to get the whole sum with an internal function, that the manager can **override**.
+However, since the manager has a bonus to their salary, it is best to calculate the whole sum with an internal function, that the manager can **override**.
 
 ```js
     public collectSalary(): void {
@@ -230,13 +231,13 @@ However, since the manager has a bonus to his salary, it’s best to get the who
     }
 ```
 
-Now any objects that inherit from Employee will have all of their properties as well as anything new that’s defined in their declaration.
+Now any objects that inherit from the Employee class will have all of their properties as well as anything new that’s defined in their declaration.
 
-To inherit (extend) a class, a new class is defined with the **extends** keyword after its name.
+To inherit (extend) a class, a new class is defined with the **extends** keyword.
 
 They also have to call the parent constructor from their constructor, so the prototype chain is established.
 
-For **Junior** and **Senior**, the only difference from the parent **Employee** is the elements inside the tasks array, since they can use the functions directly from the base class.
+For the **Junior** and **Senior** classes, the only difference from the parent **Employee** class is the elements inside their tasks array, since they can use the functions directly from the base class.
 
 Child classes will call the parent with any parameters that are needed and push their tasks directly to the array.
 
@@ -258,9 +259,9 @@ Child classes will call the parent with any parameters that are needed and push 
     }
 ```
 
-The **Manager** is not much different, with the exception that his constructor has to attach a **dividend** property that is initially set to zero.
+The **Manager** is not much different, with the exception that their constructor has to hold a **dividend** property that is initially set to zero.
 
-His definition also needs to override the `getSalary()` function we added to the base class earlier, so it includes the bonus.
+The class has to override the `getSalary()` function we added to the base class earlier, so it includes the bonus.
 
 ```js
     export class Manager extends Employee {
@@ -292,32 +293,32 @@ Create an **abstract class** for the Elemelons.
 
 Name it **Melon**.
 
-The **Melon** class should be initialized with **weight** \(Number\), and **melonSort** \(String\).
+The **Melon** class should be initialized with **weight** \(Number\) and **melonSort** \(String\) as arguments.
 
-The 2 arguments should be **public members**.
+The two arguments should be **public members**.
 
 Create classes **Watermelon**, **Firemelon**, **Earthmelon**, **Airmelon**.
 
 Each of them should **inherit** the **abstract class Melon** and its functionality.
 
-Aside from the abstract functionality, **each** of the **Elemelons** should have property **elementIndex** \(Number\), which is **equal** to its "**weight** \* **the string length**" of its **melonSort**.
+Aside from the abstract functionality, **each** of the **Elemelons** should have a property called **elementIndex** \(Number\), which is **equal** to its "**weight** multiplied by **the string length**" of its **melonSort**.
 
-The property should have only a **getter**.
+The property should only have a **getter**.
 
-All of the classes should hold a `toString()` function, which returns the following result for them:
+All of the classes should hold a `toString()` function, which returns the following result from them:
 
 "**Element:** \{**Water/Fire/Earth/Air**\}"
 "**Sort:** \{**elemelonSort**\}"
 "**Element Index:** \{**elemelonElementIndex**\}"
 
 
-Create one more class which is called **Melolemonmelon**, which inherits **one** of the **4 elements, regardless of which**.
+Create one more class which is called **Melolemonmelon**, which inherits **one** of the **4 elements, regardless which**.
 
-The Melolemonmelon **has no element**, but it can **morph** into any of the others. Implement a function `morph()`, which **changes the current element** of the Melolemonmelon, **each time** it is called.
+The Melolemonmelon **has no element**, but it can **morph** into any of the others. Implement a function `morph()` into it which **changes the current element** of the Melolemonmelon **each time** it is called.
 
-Upon initialization, the **initial element is Water**.
+Upon initialization, the **startiong element is Water**.
 
-From then it should go in the following order: **Fire, Earth, Air, Water, Fire** and so on.
+From then on it should go in the following order: **Fire, Earth, Air, Water, Fire**.
 
 The `toString()` function should remain the same as its parent class.
 
@@ -351,9 +352,9 @@ It should have two public methods and a getter:
 
 -  **count - getter**
 
-Adding should add on top of its contents.
+`Add` should add an element on top of its contents.
 
-Remove should get the topmost element.
+`Remove` should remove the last placed element.
 
 ## Example
 
