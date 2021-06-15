@@ -20,7 +20,7 @@ This code will run in the **browser** and will **dictate** which parts of our SP
 
 Example: 
 
-[image assetsSrc="Angular-Introduction-2.png" /]
+[image assetsSrc="Angular-Introduction-2.gif" /]
 
 Here **JavaScript** (**Angular**) **controls** which page will be displayed, based on the **URL locations**.
 
