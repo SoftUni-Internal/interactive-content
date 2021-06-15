@@ -19,9 +19,9 @@ import { Component } from '@angular/core';
 export class AppComponent{}
 ```
 
-- Components can be created with the Angular CLI by using the `ng generate component home` command
+- Components can be created with the Angular CLI by using the `ng generate component` command, followed by the name of the component.
 
-- Each component has its own template which can be rendered from inline HTML or loaded from an external file
+- Each component has its own template that can be rendered from inline HTML or loaded from an external file
 
 ```js
 @Component({ 
