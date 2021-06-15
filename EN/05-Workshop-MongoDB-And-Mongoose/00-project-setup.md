@@ -22,7 +22,7 @@ As you already know, you should **install** a bunch of new things so you could b
 
 Here is the list:
 
-1. [MongoDB Download Center](https://www.mongodb.com/try). 
+1. [MongoDB Download Center](https://www.mongodb.com/try)
 
     - You can check the [Installation Instructions](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/) as well
 
