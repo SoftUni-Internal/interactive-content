@@ -9,7 +9,7 @@
 
 ## SOLID Overview
 
-The **SOLID** principles, introduced by American software engineer and instructor **Robert Cecil Martin** are the five most important principles in **object-oriented programming**.
+The **SOLID** principles, introduced by the American software engineer and instructor **Robert Cecil Martin**, are the five most important principles in **object-oriented programming**.
 
 **SOLID** is an acronym for:
 
@@ -19,21 +19,21 @@ The **SOLID** principles, introduced by American software engineer and instructo
 - **I**: Interface segregation principle
 - **D**: Dependency inversion principle
 
-The SOLID principles form a core **philosophy** for methodologies such as **agile** and **adaptive** software development.
+The SOLID principles form a core **philosophy** for methodologies such as **Agile** development and **Adaptive** software development.
 
 When **combined**, these principles make our applications easier to **maintain** and **extend**.
 
-## What is the Single Responsibility Principle?
+## Single Responsibility Principle
 
-It states that **every class** should have **responsibility** over **only one** part of a program's functionality.
+It states that **every class** should have **responsibility** for **only one** part of a program's functionality.
 
 In other words, class behavior should remind **unchanged during the life of our application**.
 
-In the Angular context, a certain component in **an app should have only one mission**, which is to represent **certain data using templates**, together to ensure the communication between a **component and template**. 
+In the Angular context, a certain component in **an app should have only one mission**, which is to represent **certain data together, using templates**, to ensure the communication between a **component and template**. 
 
-A component should **not make an HTTP call**, then modify data, then sen those data, etc., which is not in the **context of Angular's component**.
+A component should **not** make an HTTP call, then modify data, then send those data, etc.
 
-This job is performed by **services**, which is the topic of the next section.
+This job is performed by **services**, which will be the topic of the next section.
 
 [/slide]
 
