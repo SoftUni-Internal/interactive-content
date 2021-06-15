@@ -6,7 +6,7 @@
 
 Bootstrapping is the action of initializing our Angular application.
 
-When loading an application Angular uses the following initialization order:
+When loading an application, Angular uses the following initialization order:
 
 - Loading the index.html file
 - Loading Angular, the libraries needed for running the app and the App code
@@ -19,7 +19,7 @@ The App-level module, also called the root module, has one app-level component a
 
 Every application has at least one Angular module, the root module, which must be present for **bootstrapping**, or in other words, **starting** the application on launch. 
 
-To specify which component should be loaded by Angular we use the `@NgModule` decorator.
+To specify which component should be loaded by Angular, we use the `@NgModule` decorator.
 
 **NgModule** describes how the application parts fit together. 
 
@@ -33,7 +33,7 @@ By convention, the **NgModule** is called **AppModule**, but we can give it any 
 
 We add the `@NgModule` decorator after the import statements.
 
-The `@NgModule` decorator identifies **AppModule** as an **NgModule** class. 
+The `@NgModule` decorator identifies the **AppModule** as an **NgModule** class. 
 
 `@NgModule` takes a metadata object that tells Angular how to compile and launch the application.
 
@@ -52,7 +52,7 @@ import { AppComponent } from './app.component';
 export class AppModule { }
 ```
 
-The `bootstrap` property of the NgModule specifies the correct app-level component to load.
+The `bootstrap` property of the **NgModule** specifies the correct app-level component to load.
 
 [/slide]
 
@@ -64,15 +64,15 @@ The module's **declarations array** tells Angular which components belong to tha
 
 Newly created components are added to **declarations**.
 
-Declare a component in one **NgModule** class. 
+We declare a component in one **NgModule** class. 
 
 Using a component without declaring it will result in an error message.
 
 The module's **imports array** appears only in the `@NgModule` metadata object. 
 
-This is how you indicate which **NgModules** are needed by this particular module needs to function properly.
+This is how we indicate which **NgModules** are needed by this particular module needs to function properly.
 
-The component, in this case, is **AppComponent**, which references components directives or pipes in **BrowserModule**.
+The component, in this case, is **AppComponent**, which references components directives or pipes in the **BrowserModule**.
 
 The services that are required for the functioning of the Angular app are declared in the **providers array**.
 
