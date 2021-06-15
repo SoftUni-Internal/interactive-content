@@ -20,9 +20,9 @@ Intermediarul "**event bus**" primește mesaje de la "**Editor**" și apoi le tr
 
 În primul rând, vom declara o variabilă locală în interiorul funcției pentru a stoca funcțiile de apel invers abonate astfel: `const subscribers = {}`.
 
-Apoi, vom defini metoda `subscribe`, care va fi responsabilă pentru introducerea funcțiilor de apel invers în obiectul  `subscribers`.
+Apoi, vom defini metoda `subscribe`, care va fi responsabilă pentru introducerea funcțiilor de apel invers în obiectul `subscribers`.
 
-Verifică dacă proprietatea  "**eventName**" din stocarea abonatului este deja o matrice. 
+Verifică dacă proprietatea "**eventName**" din stocarea abonatului este deja o matrice. 
 
 În caz contrar, presupune că acesta va fi prima funcție de apel invers înregistrată pentru `subscribers[eventName]` și inițializează o matrice. 
 
@@ -76,7 +76,7 @@ function pubSub() {
 
 # Avantaje
 
-Șablonul **Pub/Sub**  face codul nostru mai flexibil, deoarece editorii și abonații sunt decuplați și lucrează independent unul de celălalt.
+Șablonul **Pub/Sub** face codul nostru mai flexibil, deoarece editorii și abonații sunt decuplați și lucrează independent unul de celălalt.
 
 Acest lucru permite o scalabilitate mai bună, deoarece este ușor să refolosească funcționalitatea sau să gestioneze o mulțime de evenimente, abonați și editori.
 

@@ -42,7 +42,7 @@ app.get('/', (req, res) => {
 
 Când primim o solicitare `GET`, acest coordonator va fi apelat și va returna răspunsul corespunzător.
 
-În acest caz `200` și  `Welcome to Express.js!`, ceea ce înseamnă că solicitarea noastră a fost procesată.
+În acest caz `200` și `Welcome to Express.js!`, ceea ce înseamnă că solicitarea noastră a fost procesată.
 
 În cele din urmă, apelăm `app.listen`, trecând portul pe care o va asculta aplicația noastră și o funcție de apel invers `Express running on port: $ {port} ...`.
 

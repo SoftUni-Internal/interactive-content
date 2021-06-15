@@ -13,9 +13,9 @@ Sintaxa este `app.METHOD(PATH, HANDLER)`.
 În acest caz:
 - `app` - o instanță a express
 
-- `METHOD` -  o metodă de solicitare HTTP (cu litere mici)
+- `METHOD` - o metodă de solicitare HTTP (cu litere mici)
 
-- `PATH` -  o cale din server
+- `PATH` - o cale din server
 
 - `HANDLER` - funcția de executare a traseului este potrivită
 
@@ -202,7 +202,7 @@ app.get('/pdf', (req, res) => {
 })
 ```
 
-- `res.end()`:  încheie procesul de răspuns
+- `res.end()`: încheie procesul de răspuns
 
 - `res.json()`: trimite răspuns în format JSON
 
@@ -232,7 +232,7 @@ app.get('/file/:fileName', (req, res) => {
 [slide hideTitle]
 # Routers Modulare
 
-Puteți utiliza  `express.Router` pentru a crea coordonatori de rută modulare care să fie montate pe căi specifice.
+Puteți utiliza `express.Router` pentru a crea coordonatori de rută modulare care să fie montate pe căi specifice.
 
 În acest fel, puteți utiliza middleware, specific numai pentru acel router.
 

@@ -39,14 +39,15 @@ const handlebars = require("express-handlebars");
 
 app.set("view engine", "handlebars");
 
-app.engine( "handlebars", handlebars({
+app.engine("handlebars", handlebars({
     layoutsDir: __dirname + "/views/layouts",
-  })
-);
+}));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render("home", { layout: "index" });
+    res.render("home", {
+        layout: "index"
+    });
 });
 
 app.listen(port, () => console.log(`App listening to port ${port}`));
@@ -73,10 +74,9 @@ app.set('view engine', 'handlebars');
 Folosind metoda `app.engine()`, definim locația fișierelor noastre șablon:
 
 ```js
-app.engine( "handlebars", handlebars({
+app.engine("handlebars", handlebars({
     layoutsDir: __dirname + "/views/layouts",
-  })
-);
+}));
 ```
 
 Localizăm directorul în care sunt stocate fișierele noastre statice:
@@ -89,7 +89,9 @@ La final, declarăm vizualizarea paginii noastre de pornire:
 
 ```js
 app.get("/", (req, res) => {
-  res.render("home", { layout: "index" });
+    res.render("home", {
+        layout: "index"
+    });
 });
 ```
 
@@ -106,18 +108,23 @@ Folosind `#each` **ajutorul special**, putem itera printr-o matrice:
 
 ```js
 const context = {
-  people: [
-    { name: 'Samantha', lastname: 'Smith' age: 26}, name: 'John', lastname: 'Peterson' age: 34}]};
-
+    people: [{
+            name: 'Samantha',
+            lastname: 'Smith'
+            age: 26
+        }, name: 'John', lastname: 'Peterson'
+        age: 34
+    }]
+};
 ```
 
 ```js
 <ul class="people_list">
-  {{#each people}}
-    <li>{{firstName}} {{lastName}}, {{age}}</li>
-  {{else}}
-    <p class="empty">There are no people</p>
-{{/each}}
+   {{#each people}}
+   <li>{{firstName}} {{lastName}}, {{age}}</li>
+   {{else}}
+   <p class="empty">There are no people</p>
+   {{/each}}
 </ul>
 ```
 
@@ -136,11 +143,11 @@ Similar to JavaScript, putem folosi și **instucțiunile condiționate** în **�
 
 ```js
 <div class="entry">
-{{#if person}}
-<h1>{{firstName}} {{lastName}}</h1>
-{{/if}}
-{{else}}
-    <p class="empty">This person does not exist in our database</p>
+   {{#if person}}
+   <h1>{{firstName}} {{lastName}}</h1>
+   {{/if}}
+   {{else}}
+   <p class="empty">This person does not exist in our database</p>
 </div>
 ```
 

@@ -80,7 +80,7 @@ Multe motoare de șablonare acceptă Express:
   
 - **Pug**: Haml\-motor șablon cu inspirație (anterior denumit Jade).
   
-- **Express-views-dom**:  un motor de vizualizare DOM pentru Express.
+- **Express-views-dom**: un motor de vizualizare DOM pentru Express.
 
 - **Rivets-server**: randează șabloanele [Rivets.js](http://rivetsjs.com) de pe server.
 

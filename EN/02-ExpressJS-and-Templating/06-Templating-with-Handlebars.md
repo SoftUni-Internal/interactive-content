@@ -39,14 +39,15 @@ const handlebars = require("express-handlebars");
 
 app.set("view engine", "handlebars");
 
-app.engine( "handlebars", handlebars({
+app.engine("handlebars", handlebars({
     layoutsDir: __dirname + "/views/layouts",
-  })
-);
+}));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
-  res.render("home", { layout: "index" });
+    res.render("home", {
+        layout: "index"
+    });
 });
 
 app.listen(port, () => console.log(`App listening to port ${port}`));
@@ -73,10 +74,9 @@ app.set('view engine', 'handlebars');
 Using the `app.engine()` method, we define the location of our template files:
 
 ```js
-app.engine( "handlebars", handlebars({
+app.engine("handlebars", handlebars({
     layoutsDir: __dirname + "/views/layouts",
-  })
-);
+}));
 ```
 
 We locate the directory in which our static files are stored:
@@ -89,7 +89,9 @@ Finally, we declare our homepage view:
 
 ```js
 app.get("/", (req, res) => {
-  res.render("home", { layout: "index" });
+    res.render("home", {
+        layout: "index"
+    });
 });
 ```
 
@@ -106,18 +108,23 @@ Using the `#each` **special helper**, we can iterate through an array:
 
 ```js
 const context = {
-  people: [
-    { name: 'Samantha', lastname: 'Smith' age: 26}, name: 'John', lastname: 'Peterson' age: 34}]};
-
+    people: [{
+            name: 'Samantha',
+            lastname: 'Smith'
+            age: 26
+        }, name: 'John', lastname: 'Peterson'
+        age: 34
+    }]
+};
 ```
 
 ```js
 <ul class="people_list">
-  {{#each people}}
-    <li>{{firstName}} {{lastName}}, {{age}}</li>
-  {{else}}
-    <p class="empty">There are no people</p>
-{{/each}}
+   {{#each people}}
+   <li>{{firstName}} {{lastName}}, {{age}}</li>
+   {{else}}
+   <p class="empty">There are no people</p>
+   {{/each}}
 </ul>
 ```
 
@@ -136,11 +143,11 @@ The `#if` helper, followed by a condition is used to achieve this:
 
 ```js
 <div class="entry">
-{{#if person}}
-<h1>{{firstName}} {{lastName}}</h1>
-{{/if}}
-{{else}}
-    <p class="empty">This person does not exist in our database</p>
+   {{#if person}}
+   <h1>{{firstName}} {{lastName}}</h1>
+   {{/if}}
+   {{else}}
+   <p class="empty">This person does not exist in our database</p>
 </div>
 ```
 

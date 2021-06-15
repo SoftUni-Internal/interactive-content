@@ -62,7 +62,7 @@ De asemenea, putem utiliza funcția `app.METHOD()` pentru a crea middleware **sp
 
 ## Middleware-ul Router-Level 
 
-Middleware **Router-level**  este foarte similar cu middleware application-level.
+Middleware **Router-level** este foarte similar cu middleware application-level.
 
 O **diferență principală** este că **o legăm** de o instanță de `express.Router()`, în loc de `express()`:
 
@@ -87,11 +87,11 @@ router.use((req, res, next) => {
 
 ## Middleware-ul Error-Handling 
 
-**Express.js**  este livrat împreună cu **gestionarea erorilor** în mod **implicit**
+**Express.js** este livrat împreună cu **gestionarea erorilor** în mod **implicit**
 
 Definim **funcțiile middleware** de gestionare a erorilor în cea mai mare parte la fel ca alte funcții middleware.
 
-Principala caracteristică a funcțiilor de gestionare a erorilor este că acceptă un al patrulea argument, obiectul \-  `error`:
+Principala caracteristică a funcțiilor de gestionare a erorilor este că acceptă un al patrulea argument, obiectul \- `error`:
 
 ```js
 app.use(function(err, req, res, next) {
