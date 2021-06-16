@@ -2318,7 +2318,7 @@ End
 BooM
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 o
 S

@@ -2309,7 +2309,7 @@ D
 End
 [/input]
 [output]
-BooM 
+BooM
 [/output]
 [/test]
 [test open]
