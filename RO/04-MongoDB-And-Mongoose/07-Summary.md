@@ -16,7 +16,9 @@ const modelSchema = new mongoose.Schema({
 - **Chaining queries** with **Mongoose** is possible
 
 ```js
-Student.find({}).where('firstName').equals('george').where('age').gt(18).lt(65).sort({age:1}).skip(10).limit(10)
+Student.find({}).where('firstName').equals('george').where('age').gt(18).lt(65).sort({
+    age: 1
+}).skip(10).limit(10)
 ```
 
 ## In the next lesson, you will learn:
