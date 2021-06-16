@@ -183,9 +183,9 @@ All form fields should be **filled in automatically** with the corresponding inf
 
 - **Users** (logged in) can access the **Play Details** page and its functionality
 
-    * **Users** (not play creator) can **Like** a play **once** 
+    * **users** (not play creator) can **Like** a play **once** 
 
-    * **Users** (play creator) can **Edit** and **Delete** their plays
+    * **users** (play creator) can **Edit** and **Delete** their plays
 
 - **Users** (logged in) can access the **Create Play** page and its functionality
 
