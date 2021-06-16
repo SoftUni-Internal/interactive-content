@@ -2193,6 +2193,8 @@ Când **primim pentru prima dată** una dintre aceste litere, trebuie să o marc
 
 Dacă am găsit **toate cele trei litere din comandă**, trebuie să imprimăm cuvântul nostru cu un spațiu la sfârșit. Trebuie să resetăm numărătoarea apariției fiecărei litere la 0.
 
+Se începe un cuvânt nou care urmează același principiu pentru a fi tipărit (necesită tipărirea simbolurilor secrete pe consolă).
+
 ## Intrare
 - Vom primi o secvență de linii cu un singur simbol pe fiecare linie, până când primim comanda "**End**"
 

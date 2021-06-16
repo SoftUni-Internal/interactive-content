@@ -2182,9 +2182,11 @@ We will receive symbols until the **End** command is received.
 
 We should skip the **non-letter chars** and the first occurrence of **c**, **o**, and **n**.
 
-When we receive one of those letters ( **c**, **o**, or **n**) for the first time, we should not use it to form our word, but we have to note that it is encountered. 
+When we receive one of those letters (**c**, **o**, or **n**) for the first time, we should not use it to form our word, but we have to note that it is encountered. 
 
-If we receive all three letters, we have to add а **white space** to the end of our word and print it out. We should reset the count of the appearance of each letter to **0**.
+If we receive all three **secret symbols**, we have to add а **white space** to the end of our word and **print it out**. We should reset the count of the appearance of each letter to **0**.
+
+A **new word** is started which follows the same principle for it to be printed. (requires the **secret symbols** to be printed to the console).
 
 ## Input
 - We will receive symbols, each on a new line, until we receive the "**End**" command
@@ -2212,7 +2214,7 @@ First, we receive "**H**" and we add it to the word. The next symbol is "**n**".
 The next symbols are: "**e**", "**l**", "**l**" and we add them to the word. We receive "**o**" for a first time, so we **do not** add it to the word. The next letter is "**o**", but this time, we add it to the word. The next letter is "**c**", so all the three symbols (**c**, **o**  and **n**) are met.
 [/hint]
 [hint]
-We print "**Hello** ". Then we recieve the **"End"** command and the program ends. The result is **"Hello "**.
+We print "**Hello** ". Then we receive the **"End"** command and the program ends. The result is **"Hello "**.
 [/hint]
 [/hints]
 
@@ -2310,7 +2312,7 @@ End
 BooM 
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 o
 S
