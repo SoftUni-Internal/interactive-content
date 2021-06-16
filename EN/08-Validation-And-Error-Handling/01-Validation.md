@@ -397,8 +397,8 @@ When validation fails, it is recommended to:
 
 You can find more information about **express-validator** and **mongoose** here:
 
-- [express-validator](https://express-validator.github.io/docs/)
-- [mongoose](https://mongoosejs.com/docs/validation.html)
+- [Express-validator](https://express-validator.github.io/docs/)
+- [Mongoose](https://mongoosejs.com/docs/validation.html)
 
 [/slide]
 

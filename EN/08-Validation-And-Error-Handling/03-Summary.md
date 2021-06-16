@@ -8,7 +8,7 @@
    * **preventing** incorrect information from reaching the database
    * done by notifiying the **user** for improperly formatted data 
 
-- **express-validator** can validate and sanitize data
+- **Express-validator** can validate and sanitize data
 
 ```js
 body('email').isEmail()
