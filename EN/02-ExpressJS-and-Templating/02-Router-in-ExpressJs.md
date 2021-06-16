@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Router
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-5-6-router-in-express-js-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Routing refers to how an application handles requests to specific paths.
 
 Routing in Express.js is done by using the `app.METHOD()` function, which receives the **path** and a **handler** callback function as parameters.
@@ -38,7 +40,9 @@ app.get('/user', (req, res) => {
 [/slide]
 
 [slide hideTitle]
-# Route Methods - 1
+# Route Methods
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-7-8-route-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8 poster="" /]
 
 In this example, there are different requests as well as their path.
 
@@ -81,9 +85,9 @@ The wildcard route will match any route that is entered and because it is in the
 
 The correct approach is to always keep the least specific routes below the most specific ones, and the wildcard route is a good example of a route that should be last to appear in the code.
 
-## Route Methods - 2
+## Route Methods with Multiple Callbacks
 
-The routing methods can have  more than one callback function. 
+Route methods can have more than just one callback function. 
 
 You can use `next()` in the body of the function to pass control to the next callback.
 
@@ -105,6 +109,8 @@ This is especially useful if you want to execute some function (a middleware) be
 
 [slide hideTitle]
 # Router Paths
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-9-router-paths-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Routes are not strictly defined.
 
@@ -129,6 +135,9 @@ app.get('*', (req, res) => {
 
 [slide hideTitle]
 # Extracting Parameters
+
+[video src="[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-10-extracting-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+" poster="" /]
 
 Paths can contain parameters. 
 
@@ -167,6 +176,8 @@ The regex check in the path above ensures that the parameter received is a numbe
 [slide hideTitle]
 # Chaining Routes
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-11-chainable-routes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 You can chain handlers using `app.route()`
 
 ```js
@@ -189,6 +200,8 @@ This is very useful when you want to execute different actions based on request 
 
 [slide hideTitle]
 # Router Responses
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-13-router-responses-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are several different types of responses we can specify.
 
@@ -231,6 +244,8 @@ app.get('/file/:fileName', (req, res) => {
 [slide hideTitle]
 # Modular Routers
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-14-modular-routers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 You can use `express.Router` for creating modular route handlers that be mounted to specific paths.
 
 In this way, you can use middleware, specific only to that router.
@@ -253,5 +268,7 @@ If we want to use the router anywhere within the app, we can load it with `var a
 
 [slide hideTitle]
 # Demo: Express.js
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/Express-routing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
