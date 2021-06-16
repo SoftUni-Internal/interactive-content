@@ -4,6 +4,8 @@
 
 # Debugging and Watching in Node.js
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-26-27-debugging-and-watching-in-nodejs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Debugging in Node.js is done by using the **V8 debugging protocol**, which is a **JSON-based** protocol.
 
 We can also use **IDE**s with a debugger like:
@@ -23,6 +25,8 @@ It helps development by automatically restarting the node application when file 
 
 [slide hideTitle]
 # Demo: Debugging
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/Debugging-Nodemon-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
