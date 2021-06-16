@@ -4,6 +4,8 @@
 
 # The Request Wrapper
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-54-55-56-Request-and-Response-Wrappers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The request wrapper is used to **provide information about the HTTP request** to the server.
 
 It is called a wrapper because it is **an object, containing key-value pairs of information from the request**.
@@ -51,6 +53,8 @@ Then, we **print** the corresponding output to the console.
 [slide hideTitle]
 
 # The Response Wrapper
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-57-58-the-response-wrapper-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The response wrapper does the **exact opposite of the request wrapper**.
 
