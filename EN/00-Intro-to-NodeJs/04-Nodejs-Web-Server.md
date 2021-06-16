@@ -4,6 +4,8 @@
 
 # Web Servers
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-51-52-node-js-web-server-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Although they share the same word, **web servers are quite different from physical servers**.
 
 Physical servers are those **big pieces of hardware**, controlled by the operating system and stored in large, cold places.
@@ -25,6 +27,8 @@ Depending on the database response, it sends the appropriate status **code**, al
 [slide hideTitle]
 
 # Node.js Web Server
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-53-node-js-web-server-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 53-node.js-web-server
 creating-a-web-server

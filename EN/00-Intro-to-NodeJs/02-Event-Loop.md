@@ -4,6 +4,8 @@
 
 # The Event Loop
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-9-10-event-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The event loop in JavaScript **detects**, **collects** and **orders** events.
 
 It is responsible for the **function execution order**.
@@ -23,6 +25,8 @@ Here is a visual representation of how the event loop operates:
 [slide hideTitle]
 
 # Stack Calls
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-11-42-stack-calls-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 As mentioned above, functions are **added to the call stack** where they **start being executed**.
 
