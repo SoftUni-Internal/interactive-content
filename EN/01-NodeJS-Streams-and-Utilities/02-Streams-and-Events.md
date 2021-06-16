@@ -183,7 +183,6 @@ writable.on('finish', function() {
 });
 ```
 
-
 ## DEMO: Writable Stream Example
 
 An HTTP response is an instance of a writable stream.
