@@ -8,9 +8,9 @@
 
 The premise of functional programming is that functions should have **no side effects**, meaning a function only **does one thing** and does not change the state.
 
-There are of course some **exceptions** to this rule, especially when dealing with **IO libraries** or functions.
+There are, of course, some **exceptions** to this rule, especially when dealing with **IO libraries** or functions.
 
-Functions can be treated the **same way as objects** in object-oriented programming you can assign them to **variables**, you can return them from **functions**, and you can even **pass them to functions** and use them in calculations.
+Functions can be treated the **same way as objects** in object-oriented programming. We can assign them to **variables**, we can return them from **functions**, and we can even **pass them to functions** and use them in calculations.
  
 Everything you can do with **objects** you can do with **functions** that is what is often referred to as treating functions like "**first-class citizens**".
 
@@ -22,11 +22,11 @@ Most modern JavaScript applications make use of functional programming ideas.
 
 ## Asynchronous Programming
 
-JavaScript is a **single-threaded** language, the majority of JavaScript code thas is has been **written** so far is being run as a **single process** on the computer.
+JavaScript is a **single-threaded** language, which means it has only one call stack and one memory heap. Also, JavaScript is synchronous by default.
 
-That means for the most part the code runs from **top to bottom**, always in the same order, in kind of a **procedural** way.
+This means that only one statement is executed at a time. Every statement of the code gets executed one by one. So, basically a statement has to wait for the earlier statement to get executed.
 
-Asynchronous code starts **very similar**, at the top of the file and executes the code until it **gets to the bottom**, but during that execution could run into certain asynchronous functions.
+In contrast, asynchronous programming allows multiple processes to be started, lets the processes do their work, without blocking the main one, and when their job is finished, it gets the result and puts it through the steps.
 
 Then the code will **split off** and execute that **asynchronous code separately** from the rest of the code and that's usually because it needs to **wait for** the result of some operation that takes a **long period**.
 
