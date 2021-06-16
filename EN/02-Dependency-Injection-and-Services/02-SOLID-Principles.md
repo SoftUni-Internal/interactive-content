@@ -65,7 +65,7 @@ If we decide to **break** this principle and modify functionality that is alread
 
 Introduced by Barbara Liskov in 1987, the **Liskov substitution principle** states that **child classes** should **never break** the **parent class' type definitions**.
 
-In simple terms, derived types must be **completely substitutable** for their base types.
+In simple terms, derived types have to be **completely substitutable** for their base types.
 
 Derived classes that follow this rule only **extend** the functionality of the base class.
 
@@ -81,7 +81,7 @@ Child classes also **must not remove** the behavior of their **parent class**.
 
 The **Interface Segregation Principle**, abbreviated as (ISP), states that clients **should not** be forced to depend on **methods they do not use**.
 
-The main objective of ISP is to split the so-called **"fat" interfaces** that are very large, into smaller and more specific **"role" interfaces**.
+The main objective of ISP is to split the so-called **"fat" interfaces** that are very large into smaller and more specific **"role" interfaces**.
  
 By doing so, **clients** will only have to know about the **methods** that are of interest to **them**.
 
@@ -100,7 +100,7 @@ The **Dependency Inversion Principle** (DIP) states that:
 - Both **high** and **low-level modules** should depend on **abstractions**, but high-level modules **should not depend** on low-level modules
 - **Details(concretions)** should **depend** on abstractions, but abstractions should **not depend** on details
 
-DIP changes the **direction** of the dependency and **splits it** between the high and low levels.
+DIP changes the **direction** of the dependency and **splits it** between the high and the low levels.
 
 [/slide]
 
@@ -126,7 +126,7 @@ abstract class Person {
 ```
 A person can have **many more properties**, like eye color, gender, nationality, etc., but in **this context**, we need only these properties.
 
-Any class that **inherrit** the `Person` class **must include** the four **properties** with their respective **type**:
+Any class that **inherits** the `Person` class **must include** the four **properties** with their respective **type**:
 
 ```js
 class Brandon extends Person {
@@ -143,7 +143,7 @@ We can create as **many objects as we need**, which will inherit the class `Pers
 
 Being the opposite of **Abstractions**, the current class contains the **full implementation** of an abstract class.
 
-In the above example, the `Person` abstract class is a model for all other classes that will inherit.
+In the above example, the `Person` abstract class is a model for all other classes that will inherit it.
 
 The classes that **inherit** it, like `Brandon` for example, are **Concretions**, which means that they contain the **implementation** of the `Person` abstract class.
 
@@ -157,9 +157,9 @@ The classes that **inherit** it, like `Brandon` for example, are **Concretions**
 
 **Dependency Injection** is a popular design pattern and one of Angular's **most important features**.
 
-It allows us to **inject** dependencies, like a **framework** or **database**, in different **components** across our applications.
+It allows us to **inject** dependencies, like a **framework** or a **database**, in different **components** across our applications.
 
-Also referred to as **Inversion of Control**, Dependency Injection is the practice of separating **configuration** from **implementation**.
+Also referred to as **Inversion of Control**, Dependency Injection is the principle of separating **configuration** from **implementation**.
 
 A **downside** of dependencies is that they **decrease code reuse**.
 
@@ -194,7 +194,7 @@ module.exports = ManageUsersService;
 const ManageUsersService = new ManageUsersService({ users });
 ```
 
-To inject a dependency in a **class**, we use the **constructor**, in which we can pass them as parameters **one by one** or by a single **object**.
+To inject a dependency in a **class**, we use the **constructor**, in which we can pass the users as parameters **one by one** or by a single **object**.
 
 [/slide]
 
@@ -204,7 +204,7 @@ To inject a dependency in a **class**, we use the **constructor**, in which we c
 
 15-Classic-Violations
 
-You **should not** use the `new` keyword inside the constructor or use **static** methods and properties.
+We **should not** use the `new` keyword inside the constructor or use **static** methods and properties.
 
 
 ```js
@@ -219,7 +219,7 @@ public class Car {
 }
 ```
 
-This makes your class **brittle**, **inflexible**, and **hard to test**.
+This will make our class **brittle**, **inflexible**, and **hard to test**.
 
 
 [/slide]
@@ -230,15 +230,15 @@ This makes your class **brittle**, **inflexible**, and **hard to test**.
 
 16-How-to-Fix
 
-You should always **add dependencies** through the **constructor**:
+We should always **add dependencies** through the **constructor**:
 
 ```js
 constructor( public engine: Engine, public gearbox: Gearbox)
 ```
 
-**Do not** create **dependencies** inside the **current** class.
+**We should not** create **dependencies** inside the **current** class.
 
-Then, create as many new instances as you like:
+Then, we can create as many new instances as we like:
 
 ```js
 let carOne = new Car(
@@ -263,10 +263,10 @@ To conclude, these are the requirements for the DI Pattern:
 
 - Classes should **never** create dependencies themselves
   - they should be received from **external sources**
-- You should **decouple** dependencies through constructor injection
-- Your code should be **easier to test**
+- We should **decouple** dependencies through constructor injection
+- Our code should be **easier to test**
 
-For additional information visit [Angular's documentation](https://angular.io/guide/dependency-injection).
+For additional information, visit [Angular's documentation](https://angular.io/guide/dependency-injection).
 
 You can learn more about SOLID principles in JavaScript [here](https://aspiringcraftsman.com/2011/12/08/solid-javascript-single-responsibility-principle/).
 
