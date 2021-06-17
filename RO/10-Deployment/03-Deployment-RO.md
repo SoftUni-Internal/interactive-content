@@ -73,3 +73,10 @@ Pentru a **deconecta** o aplicație de la GitHub, apăsați butonul `Disconnect`
 De asemenea, puteți **să deconectați profilul GitHub** în general [accesând setările contului dvs](https://dashboard.heroku.com/account/applications#third-party-applications).
 
 [/slide]
+
+[slide hideTitle]
+# Demo: Deployment
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/deployment-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
