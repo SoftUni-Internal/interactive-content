@@ -98,6 +98,48 @@ We can use **Application-level** middleware by declaring `app.use()`, which we d
 
 We can also use the `app.METHOD()` function to create **route-specific** middleware.
 
+## Third-Party Middleware
+
+**Third-party middleware** enables a lot of **additional functionality**.
+
+We install third-party middleware as any other **Node.js module**:
+
+```js
+npm install name-of-middleware-module
+```
+
+After it finishes installing, we have to **import it**, either at the application level or at the router level.
+
+We will use the `cookie-parser` module as an example:
+
+```js
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const app = express();
+
+app.use(cookieParser()));
+```
+
+Assuming we have already run `npm install cookie-parser`, our next step is to import it into our file:
+
+```js
+const cookieParser = require('cookie-parser');
+```
+
+Then we load the cookie-parsing middleware:
+```js
+app.use(cookieParser())
+```
+
+The following table showcases some commonly used middleware.
+
+| **Middleware module** | **Description** |
+| --- | --- |
+| `cookie-parser`       | Parses the header of a cookie. Populates the `cookies` property of the request object. |
+| `errorhandler`        | Enables debugging and error handling in the developer environment. |
+| `cors`                | Enables cross-origin resource sharing (CORS). |
+| `serve-static`        | Used for working with static files. |
+
 ## Router-Level Middleware
 
 **Router-level** middleware is very similar to the application-level middleware.
@@ -141,47 +183,5 @@ app.use(function(err, req, res, next) {
 In this example, we call the `console.error()` with the error stack as a parameter.
 
 We also assign a status of "**404 - Not Found**" to the response object.
-
-## Third-Party Middleware
-
-**Third-party middleware** enables a lot of **additional functionality**.
-
-We install third-party middleware as any other **Node.js module**:
-
-```js
-npm install name-of-middleware-module
-```
-
-After it finishes installing, we have to **import it**, either at the application level or at the router level.
-
-We will use the `cookie-parser` module as an example:
-
-```js
-const express = require('express');
-const cookieParser = require('cookie-parser');
-const app = express();
-
-app.use(cookieParser()));
-```
-
-Assuming we have already run `npm install cookie-parser`, our next step is to import it into our file:
-
-```js
-const cookieParser = require('cookie-parser');
-```
-
-Then we load the cookie-parsing middleware:
-```js
-app.use(cookieParser())
-```
-
-The following table showcases some commonly used middleware.
-
-| **Middleware module** | **Description** |
-| --- | --- |
-| `cookie-parser`       | Parses the header of a cookie. Populates the `cookies` property of the request object. |
-| `errorhandler`        | Enables debugging and error handling in the developer environment. |
-| `cors`                | Enables cross-origin resource sharing (CORS). |
-| `serve-static`        | Used for working with static files. |
 
 [/slide]
