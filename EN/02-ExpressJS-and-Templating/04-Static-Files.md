@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Static Files
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-19-20-static-files-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In order to serve **static files** like images, CSS and JavaScript files, we use the `express.static()` function, built into ExpressJS:
 
 ```js
