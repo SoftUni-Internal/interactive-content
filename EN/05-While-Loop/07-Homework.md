@@ -3,7 +3,7 @@
 # Homework
 
 [slide hideTitle]
-# Problem with Solution: Sum Digits
+# Problem with Solution: Sum Digitss
 
 
 [video src="https://videos.softuni.org/hls/javascript-basics/05.While-Loop/EN/05.PB-JavaScript-While-Loop-28-Solution-Sum-Digits-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
