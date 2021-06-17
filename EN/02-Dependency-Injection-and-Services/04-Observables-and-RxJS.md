@@ -12,11 +12,13 @@ There are, of course, some **exceptions** to this rule, especially when dealing 
 
 Functions can be treated the **same way as objects** in object-oriented programming. We can assign them to **variables**, we can return them from **functions**, and we can even **pass them to functions** and use them in calculations.
  
-Everything you can do with **objects** you can do with **functions** that is what is often referred to as treating functions like "**first-class citizens**".
+That is why in Javascript, we can say that **functions are first-class citizens**.
 
-Functional programming is **declarative**, where a parameter is given to the function as a and a **certain result** from that function is expected, rather than imperative which explains **step by step** what needs to be done to receive the expected result.
+Functional programming is **declarative**. Declarative programming is a programming paradigm that expresses the logic of a computation without describing its control flow. In other words, a parameter is given to the function and a result is expected from that function. 
 
-As a result, functional code tends to be **easier to predict** and **test**, while also being more **concise**.
+In contast, **imperative** programming is a paradigm that describes how the program executes step by step.
+
+Because of these facts, functional code tends to be **easier to predict** and **test**, while also being more **concise**.
 
 Most modern JavaScript applications make use of functional programming ideas.
 
