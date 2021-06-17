@@ -4,6 +4,8 @@
 
 # What is Templating?
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-23-templating-concepts-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Templating** is the process of separating an **HTML document's structure** from the actual **content**.
 
 **Templates** enable the **replication of similar content** in a webpage, such as a list of products in an online store, by automatically generating the needed markup.
@@ -14,11 +16,7 @@ This introduces a more **effective** way to build user interfaces and results in
 
 [image assetsSrc="JS-Back-End-ExpressJs-and-Templating-1.png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Templating Concepts
+## Templating Concepts
 
 The **static** parts of our webpage are stored in the form of **templates**, while the **dynamic** content, such as entity data, is being stored **separately**, most often in a database.
 
@@ -44,15 +42,17 @@ These are the main **templating concepts**:
 [slide hideTitle]
 # Templating Examples
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-24-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Examples of actual situations in which templating will be useful are: 
 
-- Displaying articles in a blog
+- Displaying **articles** in a blog
 
-- Displaying a gallery of photos
+- Displaying a gallery of **photos**
 
-- Visualizing user profiles
+- Visualizing user **profiles**
 
-- Showing items in a catalog
+- Showing items in a **catalog**
 
 [image assetsSrc="JS-Back-End-ExpressJs-and-Templating-2.png" /]
 
@@ -61,6 +61,8 @@ Examples of actual situations in which templating will be useful are:
 [slide hideTitle]
 
 # Server View Engines
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-25-server-view-engines-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Server view engines** parse the data to HTML **directly on the server**.
 
