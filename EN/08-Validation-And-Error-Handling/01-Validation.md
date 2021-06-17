@@ -2,7 +2,11 @@
 
 [slide hideTitle]
 
-# Why you should validate data
+# Why you Should Validate Data
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/interactive-js-back-end-validation-and-error-handling-3-20-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/interactive-js-back-end-validation-and-error-handling-20-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Validation** is the process of checking if data meets specific requirements.
 
@@ -41,7 +45,7 @@ In most database engines, there is **built-in validation**, which can be easily 
 
 [slide hideTitle]
 
-# The validator.js library
+# The Validator.js Library
 
 The **validator.js** library can be used both on the **client-side** or the **server-side**.
 
@@ -200,6 +204,8 @@ After that, we use `customSanitizer()` method, which will return the **ObjectId*
 
 # Mongoose Validation
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/mongoose-validations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Mongoose validation is a **middleware** validation performed in the **SchemaType**:
 
 
@@ -238,6 +244,8 @@ Remember that `unique` is **not** a validator.
 
 # Mongoose Save and Validate Hooks
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/interactive-js-back-end-validation-and-error-handling-16-mongoose-save-validate-hooks-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 To trigger the `validate()` hook we need the `save()` function.
 
 Before any `pre('save')` hook, the `pre('validate')` and `post('validate')` hooks are called.
@@ -272,6 +280,8 @@ Again the `pre('save')` hook will be before the `post('save')`.
 [slide hideTitle]
 
 # Mongoose Built-in Validators
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/interactive-js-back-end-validation-and-error-handling-17-mongoose-built-in-validators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 All Mongoose **SchemaTypes** have **built-in** validators.
 
@@ -315,6 +325,8 @@ We also set `minlength` and `maxlength` to make sure sure the username's length 
 
 # Mongoose Custom Validators
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/interactive-js-back-end-validation-and-error-handling-18-mongoose-custom-validators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Although we have many **built-in** validators, if we cannot find what we need, we can make a **custom** one.
 
 With the custom validators, we can send a custom message:
@@ -349,6 +361,8 @@ The **message** function returns an error if the validation **fails**.
 [slide hideTitle]
 
 # Mongoose Validation Errors
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/interactive-js-back-end-validation-and-error-handling-19-mongoose-validation-errors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **ValidationError** object is returned when the validation fails.
 

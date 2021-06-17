@@ -4,6 +4,8 @@
 
 # Types of Errors
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/interactive-js-back-end-validation-and-error-handling-22-24-error-handling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When we have errors in our app, we have to handle them properly.
 
 There are several types of errors:
@@ -31,6 +33,8 @@ There are several types of errors:
 [slide hideTitle]
 
 # Working with Errors
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/interactive-js-back-end-validation-and-error-handling-25-working-with-errors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There is a **built-in error** object in **node.js**, which we can use to throw an error.
 
@@ -119,6 +123,8 @@ After that, we pass the **error** to the `next()` middleware.
 [slide hideTitle]
 
 # Error Handling
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/interactive-js-back-end-validation-and-error-handling-26-28-error-handling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Error handling** is important for a number of reasons:
 
