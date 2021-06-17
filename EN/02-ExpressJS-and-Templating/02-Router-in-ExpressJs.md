@@ -265,10 +265,3 @@ app.use('/about', router)
 If we want to use the router anywhere within the app, we can load it with `var aboutRouter = require('./about')`
 
 [/slide]
-
-[slide hideTitle]
-# Demo: Express.js
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/Express-routing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[/slide]
