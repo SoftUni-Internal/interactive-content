@@ -3,6 +3,8 @@
 [slide hideTitle]
 # What is Handlebars?
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-23-templating-concepts-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Handlebars** is a simple **templating language**, based on the Mustache specification.
 
 **Handlebars templates** look like regular text with embedded Handlebars **expressions**.
@@ -27,6 +29,8 @@ Handlebars enables the use of conditional statements and loops to iterate throug
 
 [slide hideTitle]
 # Integration in Express
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-28-integration-in-express-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is a simple web server with a Handlebars integration:
 
@@ -104,6 +108,8 @@ The method serves the body of our page to the `index.hbs` container.
 [slide hideTitle]
 # For-Loops
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-29-for-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Using the `#each` **special helper**, we can iterate through an array:
 
 ```js
@@ -137,6 +143,8 @@ It will be **rendered** in case the given **array** is **empty**.
 [slide hideTitle]
 # Conditional Statements
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-30-conditional-statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Similar to JavaScript, you can also use **conditional statements** in your **template**.
 
 The `#if` helper, followed by a condition is used to achieve this:
@@ -157,6 +165,8 @@ If its argument returns `false`, `undefined`, `null`, `""`, `0`, or `[]`, then H
 
 [slide hideTitle]
 # Partials
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-31-partials-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Handlebars allows us to **reuse templates** through **partials**.
 
@@ -186,6 +196,8 @@ Partials can be reused in as many locations as you require and are a good way to
 [slide hideTitle]
 # HTML Escaping
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-32-html-escaping-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 As we learned earlier, **double curly braces** are used to **declare** Handlebars **expressions**.
 
 In Handlebars, the values returned by the `{{expression}}` are HTML\-escaped.
@@ -202,4 +214,7 @@ If you do not want Handlebars to **escape a value**, you can use the "triple-sta
 
 [slide hideTitle]
 # Demo: Handlebars
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/handlebars-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [/slide]
