@@ -251,8 +251,3 @@ app.use('/about', router)
 Dacă dorim să folosim routerul oriunde în cadrul aplicației, îl putem încărca cu `var aboutRouter = require('./about')`
 
 [/slide]
-
-[slide hideTitle]
-# Demo: Express.js
-
-[/slide]
