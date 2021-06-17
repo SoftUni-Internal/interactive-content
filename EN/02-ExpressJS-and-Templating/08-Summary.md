@@ -1,7 +1,9 @@
 [slide hideTitle]
 # Summary
 
-# In this lesson you learned:
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-33-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## In this lesson you learned:
 
 - **Express.js** is a server framework
   - Used with **Node.js**
