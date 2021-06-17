@@ -114,7 +114,7 @@ Student.find({})
 
 # Model Population
 
-[video src="[https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/34-35-36-37- Mongoose-Queries-1-2-Examples-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8](https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/38-39-40-41-Model-Population-Definition-Example-Population-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8)" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/38-39-40-41-Model-Population-Definition-Example-Population-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Population is the process of **automatically replacing** the **specified paths** in a document with document(s) from **other** collection(s). 
 
