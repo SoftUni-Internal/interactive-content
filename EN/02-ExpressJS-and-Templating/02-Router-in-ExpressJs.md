@@ -42,7 +42,7 @@ app.get('/user', (req, res) => {
 [slide hideTitle]
 # Route Methods
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-7-8-route-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8 poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-7-8-route-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In this example, there are different requests as well as their path.
 
@@ -136,8 +136,8 @@ app.get('*', (req, res) => {
 [slide hideTitle]
 # Extracting Parameters
 
-[video src="[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-10-extracting-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-10-extracting-parameters-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Paths can contain parameters. 
 
