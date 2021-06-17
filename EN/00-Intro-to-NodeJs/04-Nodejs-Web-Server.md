@@ -30,9 +30,6 @@ Depending on the database response, it sends the appropriate status **code**, al
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-53-node-js-web-server-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-53-node.js-web-server
-creating-a-web-server
-
 Node.js allows for the **simple** and **easy** creation of a web server.
 
 The whole process can be done with a few lines of code:
