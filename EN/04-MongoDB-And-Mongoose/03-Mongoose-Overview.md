@@ -4,6 +4,8 @@
 
 # Mongoose Overview
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/13-14-15-16-Mongoose-Overview-Working-with-Mongoose-in-node-js-Hosting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Mongoose** is an **Object Data Modeling library** for MongoDB and Node.Js.
 
 It is used to manage the relations between data and translate our objects into code.
@@ -62,6 +64,8 @@ You can store up to 512 MB of data for free.
 
 [slide hideTitle]
 # Models
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/18-19-20-Mongoose-Nodels-and-Model-Methos-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Models are constructors compiled from **Schema** definitions.
 
@@ -176,6 +180,8 @@ userSchema.virtual('fullname').set(function(name) {
 
 # Property Validation
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/21-Property-Validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Using Mongoose, developers can **define** custom **validations** on their properties.
 
 Validation is defined in the *SchemaType*.
@@ -199,6 +205,8 @@ By validating, we can make sure that "**bad**" data does not get in the applicat
 [slide hideTitle]
 
 # Exporting Modules
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/22. Exporting-Modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Having all model definitions in the **main** module is a bad practice.
 
@@ -240,6 +248,6 @@ const Student = require('./models/Student');
 
 # Mongoose: Demo
 
-//MongoDB-Demo-2
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/MongoDB-Demo-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

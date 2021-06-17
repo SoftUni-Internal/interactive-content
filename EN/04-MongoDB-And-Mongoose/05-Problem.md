@@ -4,6 +4,8 @@
 
 # Pre Middleware
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/31-32-33-Mongoose-Middleware-Pre-and-Post-Middleware-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Middleware** is a function that runs during the execution of asynchronous functions.
 
 They are executed before or after a certain function that we specify.

@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Installing MongoDB
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/07-08-09-10-MongoDB-Overview-Install-Configure-MongoDB-Working-with-Schell-client-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 You can download MongoDB from the [official site](https://www.mongodb.com/download-center)
 
 When installed, MongoDB needs a **driver** that works with **Node.js**, **.NET**, and **Java**.
@@ -49,13 +51,16 @@ You can find more information about all other methods and commands [here.](https
 
 [slide hideTitle]
 # MongoDB Shell Client: Demo
-//MongoDB-Demo-1
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/MongoDB-Demo-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
 
 # Working with MongoDB GUI
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/11-Working-woth-MongoDB-GUI-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Many **MongoDB graphical user interfaces** help developers to manage their databases.
 
@@ -77,6 +82,8 @@ You can choose one that matches your project the most.
 [slide hideTitle]
 
 # Working with MongoDB from Node.js
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/12-Working-with-MongoDB-from-NodeJS-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is a simple example of how to connect with **MongoDB** using Node.js
 

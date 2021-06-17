@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Summary
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/43-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## In this lesson you learned:
 
 - **NoSQL databases** have higher **performance**

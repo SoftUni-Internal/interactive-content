@@ -4,6 +4,8 @@
 
 # CRUD
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/24-25-26-CRUD-with-Mongoose-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Using Mongoose, you can perform all the **CRUD** operations wherever you want in your code.
 
 **CRUD** stands for - **Create**, **Retrieve**, **Update**, **Delete**.
@@ -94,6 +96,8 @@ Finally, we print the added student.
 
 # Example: Read
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/28-Read-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Here are **three** different ways to retrieve data with Mongoose:
 
 ``` js
@@ -131,6 +135,8 @@ Do not forget to always handle potential errors.
 
 # Example: Update
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/29-Update-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can also **update** one or multiple entities with several methods.
 
 ``` js
@@ -161,6 +167,8 @@ Student
 [slide hideTitle]
 
 # Example: Remove
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/30-Remove-&-Count-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To remove data from the database, use: `remove(conditions, [callback])`.
 

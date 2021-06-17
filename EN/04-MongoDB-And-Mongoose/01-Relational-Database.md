@@ -5,6 +5,8 @@
 
 # Relational Database
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/03-04-05-03-Relational-and-NoSQL-Databases-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A **relational database** is a collection of information stored in tables.
 
 Each column of the table contains a different attribute of the data.
@@ -34,6 +36,8 @@ Some of the most popular **relational database** are:
 [slide hideTitle]
 
 # Non-relational Database (NoSQL)
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/06-Non-relationa-Database-(NoSQL)-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Non-relational databases** store data differently than traditional relational databases. 
 
