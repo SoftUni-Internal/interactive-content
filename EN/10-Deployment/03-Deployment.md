@@ -6,6 +6,8 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/interactive-js-back-end-deployment-11-12-deployment-and-what-is-deployment-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/deployment-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Integrating** Heroku with **Github** enables helpful features like automatic **builds** and **releases**.
 
 To enable Github integration, [go to your Heroku Dashboard](https://dashboard.heroku.com/apps).
