@@ -6,8 +6,6 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-7-8-streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-15-streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 Node.js streams are objects that are used to handle reading and writing operations sequentially.
 
 A stream is a collection of data that is not available at once and may come continuously in chunks.
@@ -32,11 +30,7 @@ Like all Duplex streams, Transform streams implement both the Readable and Writa
 
 # Readable Stream
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-9-10-readable-stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-9-10-readable-stream-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/Readable-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A readable stream is a type of stream that reads a file or data, often very large, and breaks it into small pieces (chunks). 
 
@@ -128,8 +122,6 @@ http.createServer((req, res) => {
 # Writable Stream
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-11-12-writable-stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/Writable-streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A writable stream is used for writing small pieces of data in files.
 
@@ -229,11 +221,7 @@ server.listen(5000);
 
 # Piping Streams
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-13-piping-streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-11-12-writable-stream-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/piping-streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-13-piping-streams-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Piping happens when the input of a stream is provided by the output of another stream.
 
@@ -262,12 +250,6 @@ server.listen(5000);
 # Duplex and Transform Streams
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-14-15-duplex-and-transform-streams-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-14-duplex-and-transform-streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/Debugging-Nodemon-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/Duplex-Transform-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A duplex stream is both readable and writable similar to a **Transform** stream. 
 
