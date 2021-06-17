@@ -139,3 +139,11 @@ app.get("/getSession", (req, res) => {
 
 [/slide]
 
+[slide hideTitle]
+
+# Cookies, Local şi Session Storage: Demo
+
+
+
+[/slide]
+
