@@ -4,7 +4,9 @@
 
 # App Preparation
 
-## Track your codebase in a Git repository
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/interactive-js-back-end-deployment-9-10-github-and-what-is-github-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## Track Your Codebase in a Git Repository
 
 To **initialize a Git repository**, open a command\-line window in your **root project directory** and type `git init`.
 
@@ -27,7 +29,7 @@ To make your first **commit** to the `master` branch, type:
 
 You can **check the status of your repository** at any given time using `git status`.
 
-## Creating a Github repository
+## Creating a Github Repository
 
 It is recommended to create a **Github repository**, which you can later use to implement **automatic deploys**.
 
@@ -85,7 +87,7 @@ Otherwise, you can just **run your main file**, most often `index.js` or `server
 
 `web: node index.js`
 
-## Make sure you are listening on the correct port
+## Make Sure You are Listening on the Correct Port
 
 When you run your application **locally**, the web server can listen on **any open port**.
 

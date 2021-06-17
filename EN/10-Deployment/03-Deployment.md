@@ -4,6 +4,8 @@
 
 # Enabling GitHub Integration
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/interactive-js-back-end-deployment-11-12-deployment-and-what-is-deployment-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Integrating** Heroku with **Github** enables helpful features like automatic **builds** and **releases**.
 
 To enable Github integration, [go to your Heroku Dashboard](https://dashboard.heroku.com/apps).
@@ -35,6 +37,8 @@ Once your repository has been located, click `Connect`.
 
 # Manual Deploys
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/interactive-js-back-end-deployment-13-where-to-deploy-a-js-project-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 You can **manually deploy** any branch of your GitHub repository.
 
 Manual deploys can be helpful when you want to deploy a **test branch** temporarily, **without affecting** your **automatic deploy** settings.
@@ -49,6 +53,8 @@ Choose the branch you want to deploy and click the `Deploy Branch` button.
 [slide hideTitle]
 
 # Automatic Deploys
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/interactive-js-back-end-deployment-14-16-deploying-on-heroku-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When **automatic deploys** are **enabled** for a given branch, Heroku deploys your application **every time there is a change** in the codebase.
 
@@ -65,6 +71,8 @@ This means Heroku will only deploy automatically if **all commit statuses** disp
 [slide hideTitle]
 
 # Disconnecting from GitHub
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/interactive-js-back-end-deployment-17-20-github-integration-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To **disconnect** an application from GitHub, press the `Disconnect` button, located in the `Deploy` tab.
 

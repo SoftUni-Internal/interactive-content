@@ -4,6 +4,12 @@
 
 # Set up: Installing Git
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/interactive-js-back-end-deployment-3-4-git-and-what-is-git-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/interactive-js-back-end-deployment-5-using-git-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/interactive-js-back-end-deployment-6-installing-git-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Git** is a **version-control system** that helps you **keep track of changes** in your codebase.
 
 The first step to **deploying** your **NodeJS application** is making sure you have Git **installed**.
@@ -58,6 +64,8 @@ If you are using a **different Linux distribution**, [go to Git's website](https
 [slide hideTitle]
 
 # Set up: Installing Heroku
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/interactive-js-back-end-deployment-7-8-basic-commands-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Heroku** is one of the most popular **platform-as-a-service (PaaS)** solutions.
 
