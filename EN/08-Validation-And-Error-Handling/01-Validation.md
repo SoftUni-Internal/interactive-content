@@ -6,7 +6,6 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/interactive-js-back-end-validation-and-error-handling-3-20-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/interactive-js-back-end-validation-and-error-handling-20-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Validation** is the process of checking if data meets specific requirements.
 
@@ -206,6 +205,8 @@ After that, we use `customSanitizer()` method, which will return the **ObjectId*
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/mongoose-validations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/interactive-js-back-end-validation-and-error-handling-15-mongoose-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Mongoose validation is a **middleware** validation performed in the **SchemaType**:
 
 
@@ -395,6 +396,10 @@ And the **value** returns the value of the failed property.
 [slide hideTitle]
 
 # Best practices
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/interactive-js-back-end-validation-and-error-handling-15-mongoose-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Validation-And-Error-Handling/interactive-js-back-end-validation-and-error-handling-20-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In the end, every type of validation is prone to failure.
 
