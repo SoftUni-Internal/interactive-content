@@ -4,6 +4,8 @@
 
 # What is JWT?
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Sessions-And-Authentication/interactive-js-back-end-sessions-and-authentication-16-17-json-web-token-what-is-jwt-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **JWT** or **JSON Web Token** is a **standard** used to **securely transfer** a **JSON object** between two parties.
 
 **JWT** is secure because of its digital signature.
@@ -29,6 +31,8 @@ However, the whole conversation can be altered by the man in the middle, as the 
 [slide hideTitle]
 
 # When to use JWT?
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Sessions-And-Authentication/interactive-js-back-end-sessions-and-authentication-18-when-should-you-use-jwt-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are two universal use cases for **JWT**:
 
@@ -76,6 +80,8 @@ While this is great for **security**, it introduces a problem in the long term -
 
 # JWT Structure
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Sessions-And-Authentication/interactive-js-back-end-sessions-and-authentication-19-jwt-structure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A **JSON Web Token** consists of **three** parts:
 
 - **Header**: specifies the **type of token** and **signature algorithm**
@@ -93,6 +99,8 @@ JWT and its **structure**, visualized:
 [slide hideTitle]
 
 # JWT Usage
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Sessions-And-Authentication/interactive-js-back-end-sessions-and-authentication-20-21-jwt-usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Before using the **JWT**, install it with the following command:
 

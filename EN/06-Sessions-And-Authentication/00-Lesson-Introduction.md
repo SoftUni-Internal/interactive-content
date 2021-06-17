@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Lesson Content
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-23-templating-concepts-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## In this lesson you will learn:
 
 **1. Cookies and Sessions**

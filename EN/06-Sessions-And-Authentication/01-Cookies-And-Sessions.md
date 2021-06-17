@@ -4,6 +4,8 @@
 
 # HTTP Communication
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Sessions-And-Authentication/interactive-js-back-end-sessions-and-authentication-3-4-sessions-and-cookies-http-communication-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **HTTP** or **Hypertext Transfer Protocol** is responsible for conveying information between a **browser** and a **web server**.
 
 The communication happens by **sending a request** to the server and **waiting for its response**.
@@ -30,6 +32,8 @@ Data can also be stored on the server when necessary with **session cookies**.
 [slide hideTitle]
 
 # Session vs. Cookie
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Sessions-And-Authentication/interactive-js-back-end-sessions-and-authentication-5-session-vs-cookie-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 It is crucial to understand the differences between **sessions** and **client cookies**.
 
@@ -60,6 +64,8 @@ They can also be **deleted** or set to **last forever**.
 [slide hideTitle]
 
 # Using Cookies
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Sessions-And-Authentication/interactive-js-back-end-sessions-and-authentication-6-using-cookies-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When working with **cookies** in **Express**, use the `cookie-parser` middleware.
 
@@ -97,6 +103,8 @@ app.get("/receiveCookie", (req, res) => {
 [slide hideTitle]
 
 # Using Sessions
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Sessions-And-Authentication/interactive-js-back-end-sessions-and-authentication-7-using-sessions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Working with sessions **requires the installation** of the `express-session` middleware.
 

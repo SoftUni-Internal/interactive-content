@@ -3,6 +3,8 @@
 
 ## In this lesson you learned:
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Sessions-And-Authentication/interactive-js-back-end-sessions-and-authentication-23-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - **Cookies and sessions**
 
   * **cookies** are used for storing user preferences and settings

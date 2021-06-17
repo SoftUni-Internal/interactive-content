@@ -4,6 +4,8 @@
 
 # Application Security
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Sessions-And-Authentication/interactive-js-back-end-sessions-and-authentication-9-application-security-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 As technology advances, proper security is all the more necessary.
 
 An **indispensable part** of application security is the concept of **authentication**.
@@ -29,6 +31,8 @@ Here you can see a simplified diagram of how authentication is performed:
 [slide hideTitle]
 
 # Bcrypt
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Sessions-And-Authentication/interactive-js-back-end-sessions-and-authentication-11-13-bcrypt-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Hashing** is a fundamental concept of cyber-security.
 
@@ -93,6 +97,8 @@ Note that `compare` also runs **asynchronously** to **avoid blocking the code ex
 [slide hideTitle]
 
 # Authentication vs. Authorization
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Sessions-And-Authentication/interactive-js-back-end-sessions-and-authentication-14-authentication-vs-authorization-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 As covered previously, **authentication** is the process of verifying the identity of a user.
 
