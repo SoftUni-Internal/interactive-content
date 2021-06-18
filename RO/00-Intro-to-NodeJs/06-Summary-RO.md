@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-60-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## În cadrul acestei lecții ați învățat următoarele:
+## În această lecție am învățat:
 
 - Bucla eveniment
   * definește **ordinea de execuție** a tuturor funcțiilor apelate
@@ -47,7 +47,7 @@ console.log("Node.js server running on port 3000");
 
    * **învelirea** informației despre cereri și răspunsuri într-un **obiect unic**
 
-## În lecția următoare veți învăța despre:
+## În lecția următoare veți învăța:
 
 - Fluxuri și utilități
 

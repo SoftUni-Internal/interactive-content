@@ -84,7 +84,7 @@ VAT -> 100$
 
 [slide hideTitle]
 
-# Modulele terților
+# Modulele Terților
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-46-third-party-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
