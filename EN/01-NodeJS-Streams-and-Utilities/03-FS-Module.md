@@ -178,6 +178,7 @@ fs.appendFile('newFile.txt', ' Appended text', function(err) {
 It can accept up to **four** arguments:
 
 - `path` - the file's name or location, `newFile.txt` in our case
+    * if such a file does not exist, it will be created automatically
 - `data` - the new information we want to append - such as **" Appended text"**
     * can be of type `string` or `Buffer`
 - a **callback** function
