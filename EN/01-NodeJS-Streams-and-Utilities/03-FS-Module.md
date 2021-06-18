@@ -106,7 +106,7 @@ Using the `writeHead` method, we send a response header to the request.
 
 Then, we send the data using `write`.
 
-Similarly to `readdir()`, it a accepts three arguments - the file **path**, a callback function, and `options`.
+`readFile()` accepts three arguments, similarly to `readdir()` - the file **path**, a callback function, and `options`.
 
 The `options` argument can either be of type `Object` or `string`.
 
@@ -116,7 +116,7 @@ As an `Object`, it can specify:
 
 - the `encoding` - like **"utf-8"**, for example
     * has a **default** value of `null`
-- a `flag` property - customises the **read/write** permissios of the file
+- a `flag` property - customises the **read/write** permissions of the file
     * defaults to **'r'** (read-only)
 - `signal` - allows us to **terminate** an ongoing `readFile` process before completion
     * unavalable in the synchronous version - `readFileSync()` 
@@ -149,6 +149,44 @@ fs.mkdir('./myDir', err => {
         return;
     }
 });
+```
+
+## Using `appendFile()` and `appendFileSync()`
+
+We use the `appendFile()` and `appendFileSync()` methods when we want to append data to an existing file.
+
+For example, let us say we have a `newFile.txt` with the following **content**:
+
+```
+Creating a new file with FS Module
+```
+
+If we want to **modify** it, we can use `fs.appendFile`:
+
+```js
+const fs = require('fs');
+
+fs.appendFile('newFile.txt', ' Appended text', function(err) {
+    if (err) {
+        throw err;
+    }
+
+    console.log('Updated');
+})
+```
+
+It can accept up to **four** arguments:
+
+- `path` - the file's name or location, `newFile.txt` in our case
+- `data` - the new information we want to append - such as **" Appended text"**
+    * can be of type `string` or `Buffer`
+- a **callback** function
+- `options` - include `encoding`, `mode` and `flag`
+
+After executing the above code, `newFile.txt` looks like this:
+
+```
+Creating a new file with FS Module Appended text
 ```
 
 [/slide]
