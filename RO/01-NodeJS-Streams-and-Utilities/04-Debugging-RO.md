@@ -4,6 +4,8 @@
 
 # Depanare și vizionare în Node.js
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-26-27-debugging-and-watching-in-nodejs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Depanarea în Node.js se face folosind **V8 debugging protocol**, care este un protocol **JSON-based**.
 
 Putem folosi și **IDE**-uri cu un depanator de genul:

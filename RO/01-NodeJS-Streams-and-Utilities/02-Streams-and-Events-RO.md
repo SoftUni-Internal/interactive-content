@@ -4,6 +4,8 @@
 
 # Flux
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-7-8-streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Fluxurile Node.js sunt obiecte care sunt utilizate pentru a gestiona secvențial operațiile de citire și scriere.
 
 Un flux este o colecție de date care nu sunt disponibile simultan și care pot veni continuu în bucăți.
@@ -27,6 +29,8 @@ La fel ca toate fluxurile Duplex, fluxurile Transform implementează atât inter
 [slide hideTitle]
 
 # Flux Citibil
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-9-10-readable-stream-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un flux citibil este un tip de flux care citește un fișier sau date, adesea foarte mari, și îl împarte în bucăți mici. 
 
@@ -114,6 +118,8 @@ http.createServer((req, res) => {
 [slide hideTitle]
 
 # Flux Scriibil
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-11-12-writable-stream-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un flux scriibil este utilizat pentru scrierea unor bucăți mici de date în fișiere.
 
@@ -213,6 +219,8 @@ server.listen(5000);
 
 # Fluxuri de Tip Piping 
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-13-piping-streams-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Piping-ul se întâmplă atunci când intrarea unui flux este furnizată de ieșirea unui alt flux.
 
 Un exemplu tipic de utilizare a piping-ului este dacă doriți să transferați date dintr-un fișier în altul.
@@ -238,6 +246,8 @@ server.listen(5000);
 [slide hideTitle]
 
 # Fluxurile de tip Duplex și Transform 
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-13-piping-streams-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un flux duplex este atât de citit, cât și de scris, similar cu un flux de tip **Transform**. 
 
@@ -265,6 +275,8 @@ readStream.pipe(gzip).pipe(writeStream);
 [slide hideTitle]
 
 # Evenimentele Node.js
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-16-17-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Modulul "Events" este utilizat pentru a gestiona evenimentele cu ușurință în Node.js.
 

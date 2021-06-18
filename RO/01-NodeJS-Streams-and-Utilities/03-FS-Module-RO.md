@@ -4,6 +4,8 @@
 
 # Lucrul cu Sistemul de Fișiere
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-18-19-FS-Module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **modulul fișierelor de sistem** al Node.js vă permite să lucrați cu fișiere sincron sau asincron.
 
 Pentru a-l include în codul dvs., utilizați metoda `require()`.
@@ -38,6 +40,8 @@ let data = fs.readFile('./package.json', 'utf8', (err, data) => {
 [slide hideTitle]
 
 # Listează Fișierele Dintr-un Director
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-20-List-Files-fs-reading-files-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Utilizați metoda `readdirSync()` pentru a citi conținutul unui director dat în mod sincron.
 
@@ -128,6 +132,8 @@ It is recommended to use `createReadStream()` whenever possible.
 
 # Creați un Director
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-21-Create-fs-writing-files-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Puteți crea un director cu metodele `mkdir()` sau `mkdirSync()`.
 
 ```js
@@ -191,6 +197,8 @@ Creating a new file with FS Module Appended text
 
 # Redenumiți Fișierul sau Directorul
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-22-Rename-fs-renaming-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Utilizați metoda `renameSync()` pentru a redenumi sincron un fișier sau un director.
 
 ```js
@@ -214,6 +222,8 @@ fs.rename('./oldName', './newName', err => {
 [slide hideTitle]
 
 # Scrieți Într-un Fișier
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-23-Write-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când scriem date într-un fișier, trebuie mai întâi să specificăm calea către fișier.
 
@@ -240,6 +250,8 @@ fs.writeFile(filePath, data, err => {
 [slide hideTitle]
 
 # Ștergeți un Fișier
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-23-Delete-fs-delete-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În cazul în care dorim să ștergem un fișier, folosim `unlinkSync()` sau `unlink()`.
 
