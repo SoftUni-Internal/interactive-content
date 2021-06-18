@@ -50,7 +50,7 @@ Use the options argument to change the format in which the files are returned fr
 
 The method accepts three arguments:
 
-- The **path** to the file we are reading from
+- The **path** to the directory we are reading from
 
 - The **encoding** format, a string value that specifies which encoding would be used for the filenames given to the callback argument
 
@@ -78,6 +78,52 @@ let data = fs.readdir('./myDir', 'utf8', (err, data) => {
     console.log(data);
 });
 ```
+
+## Using `readFile()` and `readFileSync()`
+
+The `readFile()` and `readFileSync()` methods work in a similar fashion to the previous two, with one notable difference - they are used to **read a single file**, not a directory.
+
+In the following **example**, we create a simple server:
+
+```js
+const http = require('http');
+const fs = require('fs');
+
+http.createServer(function(req, res) {
+    fs.readFile('dummyFile.html', function(err, data) {
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.write(data);
+        return res.end;
+    });
+}).listen(8080);
+
+console.log('Server is running!');
+```
+
+We use the `fs.readFile()` method to read the contents of `dummyFile.html` **asynchronously**.
+
+Using the `writeHead` method, we send a response header to the request.
+
+Then, we send the data using `write`.
+
+Similarly to `readdir()`, it a accepts three arguments - the file **path**, a callback function, and `options`.
+
+The `options` argument can either be of type `Object` or `string`.
+
+If of type `string`, it is used to specify the **encoding**.
+
+As an `Object`, it can specify:
+
+- the `encoding` - like **"utf-8"**, for example
+    * has a **default** value of `null`
+- a `flag` property - customises the **read/write** permissios of the file
+    * defaults to **'r'** (read-only)
+- `signal` - allows us to **terminate** an ongoing `readFile` process before completion
+    * unavalable in the synchronous version - `readFileSync()` 
+
+Keep in mind that `readFile()` buffers the entire file - this can result in higher memory use.
+
+It is recommended to use `createReadStream()` whenever possible.
 
 [/slide]
 
