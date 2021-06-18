@@ -4,6 +4,8 @@
 
 # Ce este Pub/Sub?
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-3-4-5-pub-sub-pattern-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Șablonul Publicare-Abonare este un model de proiectare arhitecturală utilizat pentru schimbul de mesaje între diferite componente ale sistemului, fără ca acestea să știe despre identitatea celuilalt.
 
 Expeditorii sau, cei numiți editori, nu programează mesajele pentru a fi trimise direct la anumiți destinatari (abonați).
@@ -75,6 +77,8 @@ function pubSub() {
 [slide hideTitle]
 
 # Avantaje
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-6-advantages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Șablonul **Pub/Sub** face codul nostru mai flexibil, deoarece editorii și abonații sunt decuplați și lucrează independent unul de celălalt.
 
