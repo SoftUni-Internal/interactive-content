@@ -4,6 +4,8 @@
 
 # Bucla Eveniment
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-9-10-event-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Bucla eveniment în limbajul JavaScript **detectează**, **colectează** și **ordonează** evenimente.
 
 Ea este responsabilă pentru **ordinea execuției funcțiilor**.
@@ -23,6 +25,8 @@ Iată o reprezentare vizuală a modului cum operează o buclă eveniment:
 [slide hideTitle]
 
 # Apelarea Stivei
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-11-42-stack-calls-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Așa cum am menționat mai sus, funcțiile sunt **adăugate în stiva de apelări** unde **încep să fie executate**.
 

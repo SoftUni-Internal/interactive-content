@@ -4,6 +4,8 @@
 
 # Descrierea Node.js 
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-3-4-5-6-7-8-introduction-to-nodejs-installation-and-setup-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 În mod normal, JavaScript este utilizat **în browser** pentru a permite unei pagini web să fie **mai interactivă**.
 
 Node.js este un **mediu de rulare** care ne permite să scriem cod JavaScript **direct pe server**.

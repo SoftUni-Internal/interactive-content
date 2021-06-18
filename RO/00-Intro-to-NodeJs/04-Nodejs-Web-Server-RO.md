@@ -4,6 +4,8 @@
 
 # Serverele Web
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-51-52-node-js-web-server-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Deși împărtășesc același cuvând, **serverele web sunt foarte diferite de serverele fizice tipice**.
 
 Serverele fizice tipice sunt acele **bucăți mari de infrastructură hardware**, controlate de un sistem de operare și depozitate în locuri largi și răcoroase.
@@ -26,8 +28,8 @@ Pentru a face acest lucru, serverul se conectează la **baza de date**, unde sun
 
 # Serverul Web Node.js
 
-53-node.js-web-server
-creating-a-web-server
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-53-node-js-web-server-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Node.js permite crearea într-un mod **simplu** și **facil** a unui server web.
 

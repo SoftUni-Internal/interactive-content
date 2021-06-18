@@ -4,6 +4,8 @@
 
 # Interfața de Solicitare
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-54-55-56-Request-and-Response-Wrappers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Suportul de solicitări este folosit pentru a **furniza informații despre o solicitare HTTP** efectuată către server.
 
 Se numește suport, interfață sau înveliș pentru că este **un obiect, conținând perechi de informații de tipul cheie-valoare ce aparțin acelei solicitări**.
@@ -51,6 +53,8 @@ Apoi, **tipărim** rezultatul corespondent pe consolă.
 [slide hideTitle]
 
 # Interfața de Răspuns
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-57-58-the-response-wrapper-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Interfața sau suportul de răspuns face **exact opusul interfeței de cerere**.
 

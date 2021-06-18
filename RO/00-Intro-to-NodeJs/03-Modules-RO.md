@@ -2,6 +2,8 @@
 
 # Modulele
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-43-44-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Modulele în Node.js sunt grupuri de fișiere care **furnizează anumite funcționalități**.
 
 Utilizarea modulelor aduce câteva beneficii, printre care enumerăm:
@@ -31,6 +33,8 @@ Atunci când sunt puse laolaltă, ele devin un produs finit.
 [slide hideTitle]
 
 # Modulele Locale
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-45-local-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Modulele locale sunt **funcții** sau **variabile**, folosite local într-un proiect.
 
@@ -82,6 +86,8 @@ VAT -> 100$
 
 # Modulele terților
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-46-third-party-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Node.js permite utilizarea **modulelor de la persoane terțe (third-party)**.
 
 Așa cum reiese și din denumire, aceste module sunt **create de alte persoane** și **încărcate în domeniul public pentru a fi utilizate**.
@@ -131,6 +137,8 @@ const express = require("express");
 [slide hideTitle]
 
 # Modulele Centrale
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-47-core-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Modulele centrale sunt **fundația** mediului Node.js.
 
@@ -182,6 +190,8 @@ const stream = require("stream");
 
 # Modulele URL
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-48-49-url-modules-and-parts-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Modulul `url` offeră câteva funcționalități pentru a executa **diverse operațiuni cu URL-uri**.
 
 Cel mai des întâlnit motiv de a utiliza acest modul este pentru a **separa un URL în părți** și a **extrage informații** din acestea.
@@ -219,6 +229,8 @@ console.log(query); // ?year=2017&month=february
 [slide hideTitle]
 
 # Modulul șir de Interogare (Query String) 
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/01-Intro-to-NodeJS/interactive-js-backend-nodejs-50-query-string-module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un șir de interogare este o modalitate de a **aloca valori** unor variabile și de a le **pasa drept parametri ai unui URL**.
 
