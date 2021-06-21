@@ -92,7 +92,7 @@ Depending on that, we either redirect the user to the homepage or show more info
 
 # Types of Middleware
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-18-third-party-middleware-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-18-third-party-middleware-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can use **Application-level** middleware by declaring `app.use()`, which we discussed earlier.
 
