@@ -189,3 +189,7 @@ userModel.remove()
 
 [/slide]
 
+[slide hideTitle]
+
+# Demo: Mongoose
+[/slide]

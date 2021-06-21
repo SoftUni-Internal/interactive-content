@@ -1,1 +1,1 @@
-# ExpressJS și Șablonarea
+# ExpressJS and Templating

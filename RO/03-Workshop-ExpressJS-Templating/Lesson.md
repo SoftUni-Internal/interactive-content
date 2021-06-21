@@ -1,1 +1,1 @@
-# Workshop: Șablonare ExpressJS
+# Workshop: ExpressJS Templating
