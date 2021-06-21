@@ -3,22 +3,22 @@
 [slide hideTitle]
 # Routes
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You should implement the following routes:
 
-- `/` - The main page where all the cubes and a search field should be visualized.
-- `/about` - Render the `about` page.
-- `/create` - Render the `create cube` form.
-- `/details/:id` - Display the details for the selected cube.
-- `Any other` - You should display the `404 Not Found` page.
+- `/` - The main page where all the cubes and a search field should be visualized
+- `/about` - Render the `about` page
+- `/create` - Render the `create cube` form
+- `/details/:id` - Display the details for the selected cube
+- `Any other` - You should display the `404 Not Found` page
 
 [/slide]
 
 [slide hideTitle]
 # Main Page
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Display the following view when there are cubes in the database:
 
@@ -33,8 +33,6 @@ If no cubes were found, the user should see this:
 [slide hideTitle]
 # About Page
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 This is how the `about` page should look:
 
 [image assetsSrc="cubicle-workshop-10.png" /]
@@ -43,8 +41,6 @@ This is how the `about` page should look:
 
 [slide hideTitle]
 # Create Page
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You should render the following form on the `create` page:
 
@@ -80,6 +76,8 @@ Identify the dynamic parts, then use the appropriate syntax for interpolating an
 
 [slide hideTitle]
 # Bonus: Search
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Implement search functionality. 
 

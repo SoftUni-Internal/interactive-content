@@ -5,8 +5,6 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/03-Cubicle-Workshop-Part-1-Resources.zip) **for this task.**
 
 "**Cubicle**" is a place where you can browse some of the most popular Rubik's cubes in the world and add some new cubes that you have discovered. 
@@ -53,6 +51,10 @@ Configures the app to work with Express and the routes that are set up in the `.
 
 [slide hideTitle]
 # Cube Model and Storage
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - **Cube Model**
 
