@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Rute
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Ar trebui să implementați următoarele rute:
 
 - `/` - Pagina principală în care ar trebui vizualizate toate cuburile și un câmp de căutare.
@@ -14,7 +16,9 @@ Ar trebui să implementați următoarele rute:
 [/slide]
 
 [slide hideTitle]
-# Pagina principală
+# Pagina Principală
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Afișați următoarea vizualizare atunci când există cuburi în baza de date:
 
@@ -72,6 +76,8 @@ Identificați părțile dinamice, apoi utilizați sintaxa adecvată pentru inter
 
 [slide hideTitle]
 # Bonus: Search
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Implementați funcționalitatea de căutare.
 
