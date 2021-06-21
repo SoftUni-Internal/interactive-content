@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Routes
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 You should implement the following routes:
 
 - `/` - The main page where all the cubes and a search field should be visualized.
@@ -15,6 +17,8 @@ You should implement the following routes:
 
 [slide hideTitle]
 # Main Page
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Display the following view when there are cubes in the database:
 
@@ -29,6 +33,8 @@ If no cubes were found, the user should see this:
 [slide hideTitle]
 # About Page
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 This is how the `about` page should look:
 
 [image assetsSrc="cubicle-workshop-10.png" /]
@@ -37,6 +43,8 @@ This is how the `about` page should look:
 
 [slide hideTitle]
 # Create Page
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You should render the following form on the `create` page:
 
