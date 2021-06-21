@@ -206,7 +206,7 @@ By validating, we can make sure that "**bad**" data does not get in the applicat
 
 # Exporting Modules
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/22. Exporting-Modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/22-23-Exporting-and-using-Modules-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Having all model definitions in the **main** module is a bad practice.
 
