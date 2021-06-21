@@ -4,6 +4,8 @@
 
 # Pregătirea Aplicației
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/08-Deployment/interactive-js-back-end-deployment-9-10-github-and-what-is-github-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## Urmăriți Baza de Cod Într-un Depozit Git
 
 Pentru a **inițializa un depozit Git**, deschideți o fereastră de comandă\-line în **root project directory** și tastați `git init`.
