@@ -40,7 +40,7 @@ app.get('/user', (req, res) => {
 [/slide]
 
 [slide hideTitle]
-# Metode Route - 1
+# Metode Route
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-7-8-route-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -85,7 +85,7 @@ Ruta wildcard se va potrivi cu orice rută introdusă și, deoarece se află în
 
 Abordarea corectă este de a păstra întotdeauna rutele mai puțin specifice sub cele mai specifice, iar ruta wildcard este un bun exemplu de rută care ar trebui să fie ultima care apare în cod.
 
-## Metode Route - 2
+## Metodele de rutare cu funcții de apel invers multiple
 
 Metodele de rutare pot avea mai multe funcții de apel invers.
 
