@@ -46,7 +46,9 @@ Această metodă acceptă un singur parametru **mărimea**, care specifică câ�
 
 Dacă nu există date în tampon, atunci **null** este returnat.
 
-`readable.read(size);`
+```js
+readable.read(size);
+```
 
 - `.pause()` - oprește modul flux din a emite evenimente de date
 
