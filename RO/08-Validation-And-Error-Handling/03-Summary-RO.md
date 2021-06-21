@@ -2,6 +2,8 @@
 
 # Rezumat
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/07-Validation-and-Error-Handling/interactive-js-back-end-validation-and-error-handling-30-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## În această lecție ați învățat:
 
 - Ce este validarea

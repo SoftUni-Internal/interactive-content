@@ -4,6 +4,8 @@
 
 # De ce ar Trebui să Validați Datele
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/07-Validation-and-Error-Handling/interactive-js-back-end-validation-and-error-handling-3-20-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Validarea** este procesul de verificare dacă datele îndeplinesc cerințele specifice.
 
 Ar trebui să efectuați întotdeauna validarea pentru a preveni **datele incorecte** să vă polueze baza de date.
@@ -214,6 +216,8 @@ După aceea, folosim metoda `customSanitizer()`, care va returna **ObjectId**.
 
 # Validarea Mongoose
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/07-Validation-and-Error-Handling/interactive-js-back-end-validation-and-error-handling-15-mongoose-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Validarea Mongoose este o validare **middleware** efectuată în **SchemaType**:
 
 
@@ -252,6 +256,8 @@ Amintiți-vă că `unique` **nu** este un validator.
 
 # Cârligele Mongoose Save și Validate
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/07-Validation-and-Error-Handling/interactive-js-back-end-validation-and-error-handling-16-mongoose-save-validate-hooks-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Pentru a declanșa cârligul `validate()` avem nevoie de funcția `save()`.
 
 Înainte de orice cârlig  `pre('save')`, se apelează cârligele `pre('validate')` și `post('validate')`.
@@ -286,6 +292,8 @@ Din nou cârligul `pre('save')` va fi înainte de `post('save')`.
 [slide hideTitle]
 
 # Validatoarii Încorporați Mongoose
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/07-Validation-and-Error-Handling/interactive-js-back-end-validation-and-error-handling-17-mongoose-built-in-validators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Toate Mongoose **SchemaTypes** au validatori **încorporați**.
 
@@ -329,6 +337,8 @@ De asemenea, setăm `minlength` și `maxlength` pentru a ne asigura că lungimea
 
 # Validatori Personalizați Mongoose
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/07-Validation-and-Error-Handling/interactive-js-back-end-validation-and-error-handling-18-mongoose-custom-validators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Deși avem multe **validatori** încorporați, dacă nu putem găsi ceea ce avem nevoie, putem face unul **personalizat**.
 
 Cu validatorii personalizați, putem trimite un mesaj personalizat:
@@ -362,7 +372,9 @@ Funcția **message** returnează o eroare dacă validarea **eșuează**.
 
 [slide hideTitle]
 
-# Erori de Validare la  Baza de Date Mongoose
+# Erori de Validare la Baza de Date Mongoose
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/07-Validation-and-Error-Handling/interactive-js-back-end-validation-and-error-handling-19-mongoose-validation-errors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Obiectul **ValidationError** este returnat atunci când validarea eșuează.
 
@@ -395,6 +407,8 @@ Proprietatea **path** returnează istoricul proprietății de validare eșuate.
 [slide hideTitle]
 
 # Cele mai Bune Practici
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/07-Validation-and-Error-Handling/interactive-js-back-end-validation-and-error-handling-20-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În cele din urmă, orice tip de validare este predispus la eșec.
 

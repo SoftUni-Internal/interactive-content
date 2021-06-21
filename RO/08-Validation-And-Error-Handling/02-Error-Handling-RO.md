@@ -4,6 +4,8 @@
 
 # Tipuri de Erori
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/07-Validation-and-Error-Handling/interactive-js-back-end-validation-and-error-handling-22-24-error-handling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Atunci când avem erori în aplicația noastră, trebuie să le gestionăm în mod corespunzător.
 
 Există mai multe tipuri de erori:
@@ -31,6 +33,8 @@ Există mai multe tipuri de erori:
 [slide hideTitle]
 
 # Lucrul cu Erorile
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/07-Validation-and-Error-Handling/interactive-js-back-end-validation-and-error-handling-25-working-with-errors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există un obiect **built-in error** în **node.js**, pe care îl putem folosi pentru a arunca o eroare.
 
@@ -60,6 +64,8 @@ app.use(cookieParser());
 [slide hideTitle]
 
 # Procesul de Lucru Sincronizat cu Erorile
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/07-Validation-and-Error-Handling/interactive-js-back-end-validation-and-error-handling-26-28-error-handling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Utilizăm declarația bloc **try-catch** cu **async** și **await** pentru a gestiona erorile în mod sincron.
 
