@@ -4,6 +4,8 @@
 
 # Introducere
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-3-4-introduction-to-express-js-and-simple-express-app-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Express.js** este un **framework** Node.js, conceput special pentru construirea **aplicațiilor web**. 
 
 Este **cel mai popular** framework de server pentru **Node.js** și este open-source și cross-platform.

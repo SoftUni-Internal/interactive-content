@@ -15,14 +15,13 @@ Aceasta introduce o modalitate mai **eficientă** de a construi interfețe utili
 
 [image assetsSrc="JS-Back-End-ExpressJs-and-Templating-1.png" /]
 
-
-
-
 [/slide]
 
 [slide hideTitle]
 
 # Concepte de Șablonare
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-23-templating-concepts-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Părțile **statice** ale paginii noastre web sunt stocate sub formă de **șabloane**, în timp ce conținutul **dinamic**, cum ar fi datele entității, este stocat **separat**, cel mai adesea într-o bază de date.
 
@@ -48,6 +47,8 @@ Acestea sunt principalele **concepte de șablonare**:
 [slide hideTitle]
 # Exemple de Șablonare
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-23-templating-concepts-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Exemple de situații reale în care șablonarea va fi utilă sunt
 
 - Afișarea articolelor într-un blog
@@ -65,6 +66,8 @@ Exemple de situații reale în care șablonarea va fi utilă sunt
 [slide hideTitle]
 
 # Motoare de Vizualizare Server
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-25-server-view-engines-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Motoarele de vizualizare server** transformă datele în HTML **direct pe server**.
 

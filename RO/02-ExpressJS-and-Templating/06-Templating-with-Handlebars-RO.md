@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Ce este Handlebars?
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-26-27-templating-with-handlebars-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Handlebars** este un simplu **limbaj de șablonare**, bazat pe specificația Mustache.
 
 **Șablonanele Handlebars** arată ca un text obișnuit cu **expresii** încorporate Handlebars.
@@ -27,6 +29,8 @@ Handlebars permit utilizarea instrucțiunilor condiționale și a buclelor pentr
 
 [slide hideTitle]
 # Integrarea în Express
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-28-integration-in-express-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Iată un server web simplu, cu o integrare de Handlebars:
 
@@ -104,6 +108,8 @@ Metoda servește corpul paginii noastre către containerul `index.hbs`.
 [slide hideTitle]
 # Bucle-For
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-29-for-loops-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Folosind `#each` **ajutorul special**, putem itera printr-o matrice:
 
 ```js
@@ -137,6 +143,8 @@ Acesta va fi **randată** în cazul în care **matricea** este **goală**.
 [slide hideTitle]
 # Instucțiuni Condiționate
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-30-conditional-statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Similar to JavaScript, putem folosi și **instucțiunile condiționate** în **șablonul** nostru.
 
  `#if` helper, urmat de o condiție este utilizat pentru a realiza acest lucru:
@@ -157,6 +165,8 @@ Dacă argumentul său returnează `false`, `undefined`, `null`, `""`, `0`, or `[
 
 [slide hideTitle]
 # Partials
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-31-partials-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Handlebars ne permite să **reutilizăm șabloanele** prin **partials**.
 
@@ -185,6 +195,8 @@ Partials pot fi refolosite în câte locații aveți nevoie și sunt o modalitat
 [slide hideTitle]
 # HTML Escaping
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-32-html-escaping-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 După cum am aflat mai devreme, **acoladele duble** sunt folosite pentru a **declara** **expresiile** Handlebars.
 
 În Handlebars, valorile returnate de către `{{expression}}` sunt HTML\-escaped.
@@ -201,5 +213,7 @@ Dacă nu vreți ca Handlebars să omită o **valoare de evadare**, puteți folos
 
 [slide hideTitle]
 # Demo: Handlebars
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/handlebars-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

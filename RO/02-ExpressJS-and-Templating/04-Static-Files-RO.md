@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Fișiere Statice
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-19-20-static-files-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Pentru a servi **fișiere statice** precum imagini, fișiere CSS și JavaScript, folosim funcția `express.static()`, încorporată în ExpressJS:
 
 ```js
