@@ -2,7 +2,7 @@
 
 # Modules
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-43-44-45-46-47-48-49-50-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-43-44-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Modules in Node.js are groups of files that **provide certain functionality**.
 
@@ -33,6 +33,8 @@ In Node.js, there are three types of modules:
 [slide hideTitle]
 
 # Local Modules
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-45-local-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Local modules are **functions** or **variables**, used locally within a project.
 
@@ -84,6 +86,8 @@ VAT -> 100$
 
 # Third-Party Modules
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-46-third-party-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Node.js allows for the use of **third-party modules**.
 
 As the name suggests, these modules are **created by other people** and **uploaded for public use**.
@@ -133,6 +137,8 @@ const express = require("express");
 [slide hideTitle]
 
 # Core Modules
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-47-core-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Core modules are the **foundation** of the Node.js environment.
 
@@ -184,6 +190,8 @@ const stream = require("stream");
 
 # URL Module
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-48-49-url-modules-and-parts-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `url` module offers some functionality to perform **various operations with URLs**.
 
 The most common reason to use this module is to **separate a URL into parts** and **extract information** from them.
@@ -221,6 +229,8 @@ console.log(query); // ?year=2017&month=february
 [slide hideTitle]
 
 # Query String Module
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-50-query-string-module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A query string is a way to **assign values** to variables and **pass them as URL parameters**.
 
