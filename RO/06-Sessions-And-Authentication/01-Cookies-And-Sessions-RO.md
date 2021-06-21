@@ -4,6 +4,8 @@
 
 # HTTP Communication
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/05-Session-and-Authentication/interactive-js-back-end-sessions-and-authentication-3-4-sessions-and-cookies-http-communication-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **HTTP** sau **Hypertext Transfer Protocol** este responsabil pentru transmiterea informațiilor între un **browser** și un **server web**
 
 Comunicarea are loc prin **trimiterea unei cereri** către server și **așteptarea răspunsului acesteia**
@@ -31,6 +33,8 @@ De asemenea, datele pot fi stocate pe server atunci când este necesar prin **co
 [slide hideTitle]
 
 # Session vs. Cookie
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/05-Session-and-Authentication/interactive-js-back-end-sessions-and-authentication-5-session-vs-cookie-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Este crucial să înțelegem diferențele dintre **sessions** și **client cookies**.
 
@@ -61,6 +65,8 @@ Acestea pot fi, de asemenea, **șterse** sau setate ca **să dureze pentru totde
 [slide hideTitle]
 
 # Utilizarea Cookie-Urilor
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/05-Session-and-Authentication/interactive-js-back-end-sessions-and-authentication-6-using-cookies-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când lucrați cu **cookie-uri** in **Express**, utilizați middleware-ul `cookie-parser`.
 
@@ -98,6 +104,8 @@ app.get("/receiveCookie", (req, res) => {
 [slide hideTitle]
 
 # Utilizarea Sesiunilor
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/05-Session-and-Authentication/interactive-js-back-end-sessions-and-authentication-7-using-sessions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Lucrul cu sesiunile  **necesită instalarea** middleware-ului `express-session`.
 
@@ -143,7 +151,7 @@ app.get("/getSession", (req, res) => {
 
 # Cookies, Local şi Session Storage: Demo
 
-
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/05-Session-and-Authentication/Cookies, Local & Session Storage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 

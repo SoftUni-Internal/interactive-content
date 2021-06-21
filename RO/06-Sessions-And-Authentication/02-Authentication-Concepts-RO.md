@@ -3,6 +3,8 @@
 
 # Securitatea Aplicației
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/05-Session-and-Authentication/interactive-js-back-end-sessions-and-authentication-9-application-security-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Pe măsură ce tehnologia avansează, securitatea adecvată este cu atât mai necesară.
 
 O **parte indispensabilă** a securității aplicației este conceptul de **autentificare**.
@@ -28,6 +30,8 @@ Aici puteți vedea o diagramă simplificată a modului în care se efectuează a
 [slide hideTitle]
 
 # Bcrypt
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/05-Session-and-Authentication/interactive-js-back-end-sessions-and-authentication-11-13-bcrypt-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Hashing** este un concept fundamental al securității cibernetice.
 
@@ -92,6 +96,9 @@ Rețineți că `compare` rulează și **asincron** pentru a evita blocarea execu
 [slide hideTitle]
 
 # Authentication vs. Authorization
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/05-Session-and-Authentication/interactive-js-back-end-sessions-and-authentication-14-authentication-vs-authorization-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 După cum s-a discutat anterior, **autentificarea** este procesul de verificare a identității unui utilizator.
 

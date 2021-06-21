@@ -4,6 +4,9 @@
 
 # Ce este JWT?
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/05-Session-and-Authentication/interactive-js-back-end-sessions-and-authentication-16-17-json-web-token-what-is-jwt-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 **JWT** sau **JSON Web Token** este **standard** folosit pentru a **transfera în siguranță** un **obiect JSON** între două părți.
 
 **JWT** este sigur datorită semnăturii sale digitale.
@@ -29,6 +32,8 @@ Cu toate acestea, întreaga conversație poate fi modificată de man in the midd
 [slide hideTitle]
 
 # Când se folosește JWT?
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/05-Session-and-Authentication/interactive-js-back-end-sessions-and-authentication-18-when-should-you-use-jwt-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există două cazuri de utilizare universale pentru **JWT**:
 
@@ -76,6 +81,8 @@ Deși acest lucru este excelent pentru **securitate**, acesta introduce o proble
 
 #  Structura JWT 
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/05-Session-and-Authentication/interactive-js-back-end-sessions-and-authentication-19-jwt-structure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Un **JSON Web Token** constă din **trei** părți:
 
 - **Header**: specifică **tipul de simbol** și **algoritmul de semnătură**
@@ -93,6 +100,10 @@ JWT și **structura sa**, vizualizate:
 [slide hideTitle]
 
 #  Utilizarea JWT 
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/05-Session-and-Authentication/interactive-js-back-end-sessions-and-authentication-20-21-jwt-usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/05-Session-and-Authentication/JWT-Auth-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Înainte de a utiliza **JWT**, instalați-l cu următoarea comandă:
 
