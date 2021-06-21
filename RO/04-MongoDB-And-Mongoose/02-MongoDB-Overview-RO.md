@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Instalarea MongoDB
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/07-08-09-10-MongoDB-Overview-Install-Configure-MongoDB-Working-with-Schell-client-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Puteți descărca MongoDB de pe [official site](https://www.mongodb.com/download-center)
 
 Când este instalată, MongoDB are nevoie de un **driver** care să funcționeze cu **Node.js**, **.NET** și **Java**.
@@ -51,13 +53,16 @@ Puteți găsi mai multe informații despre toate celelalte metode și comenzi [h
 
 [slide hideTitle]
 # MongoDB Shell Client: Demo
-//MongoDB-Demo-1
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/MongoDB-Demo-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
 
 # Lucrul cu MongoDB GUI
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/11-Working-woth-MongoDB-GUI-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Multe **interfețe grafice de utilizator MongoDB** ajută dezvoltatorii să-și gestioneze bazele de date.
 
@@ -79,6 +84,8 @@ Puteți alege unul care se potrivește cel mai mult cu proiectul dvs.
 [slide hideTitle]
 
 # Lucrul cu MongoDB din Node.js
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/12-Working-with-MongoDB-from-NodeJS-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Iată un exemplu simplu de conectare cu **MongoDB** folosind Node.js
 

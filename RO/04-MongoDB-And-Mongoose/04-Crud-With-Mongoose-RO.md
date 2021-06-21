@@ -4,6 +4,8 @@
 
 # CRUD
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/24-25-26-CRUD-with-Mongoose-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Folosind Mongoose, puteți efectua toate operațiunile **CRUD** oriunde doriți în codul dvs.
 
 ** CRUD ** înseamnă - **Create**, **Retrieve**, **Update**, **Delete**.
@@ -94,6 +96,8 @@ Apoi, îl salvăm folosind metoda `save()`.
 
 # Exemplu: Citire
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/28-Read-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Iată **trei** modalități diferite de a prelua date cu Mongoose:
 
 ``` js
@@ -131,6 +135,8 @@ Nu uitați să gestionați întotdeauna potențialele erori.
 
 # Exemplu: Update
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/29-Update-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 De asemenea, putem **actualiza** una sau mai multe entități cu mai multe metode.
 
 ``` js
@@ -161,6 +167,8 @@ Student
 [slide hideTitle]
 
 # Exemplu: Delete
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/30-Remove-&-Count-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a elimina date din baza de date, utilizați: `remove(conditions, [callback])`.
 

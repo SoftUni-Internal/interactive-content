@@ -5,6 +5,8 @@
 
 # Baza de Date Relațională
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/03-04-05-03-Relational-and-NoSQL-Databases-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 O **bază de date relațională** este o colecție de informații stocate în tabele.
 
 Fiecare coloană a tabelului conține un atribut diferit al datelor.
@@ -34,6 +36,8 @@ Unele dintre cele mai populare **baze de date relaționale** sunt:
 [slide hideTitle]
 
 # Baza de Date Non-Relațională (NoSQL)
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/06-Non-relationa-Database-(NoSQL)-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Bazele de date non-relaționale** stochează datele diferit de bazele de date relaționale tradiționale.
 

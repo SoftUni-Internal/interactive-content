@@ -4,6 +4,8 @@
 
 # Prezentare Generală a Mongoose
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/13-14-15-16-Mongoose-Overview-Working-with-Mongoose-in-node-js-Hosting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Mongoose** este o **bibliotecă de modelare a datelor obiectelor** pentru MongoDB și Node.Js.
 
 Este folosit pentru a gestiona relațiile dintre date și pentru a traduce obiectele noastre în cod.
@@ -64,6 +66,8 @@ Puteți stoca până la 512 MB de date gratuit.
 [slide hideTitle]
 # Modele
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/18-19-20-Mongoose-Nodels-and-Model-Methos-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Modelele sunt constructori compilați din definițiile **Schemei**.
 
 **Schema** în sine formează structura documentului.
@@ -110,7 +114,7 @@ După cum puteți vedea, alte metode pot fi adăugate la o schemă.
 
 [slide hideTitle]
 
-# Modele de proprietăți virtuale
+# Modele de Proprietăți Virtuale
 
 Putem crea Proprietăți **Virtuale** care există doar în **Modelul Mongoose** și nu în MongoDB.
 
@@ -177,6 +181,8 @@ userSchema.virtual('fullname').set(function (name) {
 
 # Validarea Proprietății
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/21-Property-Validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Folosind Mongoose, dezvoltatorii pot **defini** **validări** personalizate pe proprietățile lor.
 
 Validarea este definită în *SchemaType*.
@@ -200,6 +206,8 @@ Prin validare, ne putem asigura că datele "**rele**" nu intră în aplicație.
 [slide hideTitle]
 
 # Exportarea modulelor
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/22-23-Exporting-and-Using-Modules-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A avea toate definițiile modelului în modulul **principal** este o practică proastă.
 
@@ -241,7 +249,7 @@ const Student = require('./models/Student');
 
 # Mongoose: Demo
 
-//MongoDB-Demo-2
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/MongoDB-Demo-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 

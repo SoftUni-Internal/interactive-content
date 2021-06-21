@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Interogări
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/34-35-Mongoose-Queries-1-2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Clasa **Mongoose Query** oferă o interfață pentru **găsirea**, **actualizarea** și **ștergerea** documentelor.
 
 **Mongoose** definește toate interogările driverului nativ MongoDB într-un mod mai **clar** și **ușor de înțeles**.
@@ -34,6 +36,8 @@ Acesta este un exemplu de scriere a aceleiași interogări în sintaxa **Mongoos
 [slide hideTitle]
 
 # Exemplu de Interogări Mongoose
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/36-37- Mongoose-Queries-1-2-Examples-1-2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O mulțime de metode precum `.find()` returnează o **interogare mongoose**.
 
@@ -111,6 +115,8 @@ Student.find({})
 [slide hideTitle]
 
 # Model de Populare
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/38-39-40-41-Model-Population-Definition-Example-Population-Query-Conditions-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Popularea este procesul de **înlocuire automată** a **căilor specificate** într-un document cu document(e) din **alte** colecții.
 

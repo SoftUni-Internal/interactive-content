@@ -4,6 +4,8 @@
 
 # Pre Middleware
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/31-32-Mongoose-Middleware-and-Pre-Middleware-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Middleware** este o funcție care rulează în timpul executării funcțiilor asincrone.
 
 Acestea sunt executate înainte sau după o anumită funcție pe care o specificăm.
@@ -35,6 +37,8 @@ schema.pre('save', function() {
 [slide hideTitle]
 
 # Post Middleware
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/33-Post-Middleware-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Post middleware** este executat odată ce toate  **pre hooks** și **metoda originală** au fost executate.
 
