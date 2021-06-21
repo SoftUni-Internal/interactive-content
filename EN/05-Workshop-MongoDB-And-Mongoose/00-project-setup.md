@@ -4,6 +4,10 @@
 
 # Project Setup
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/04-Cubicle-Homework-Part-2-Resources.zip) **for this task.**
 
 "**Cubicle**" is a place, where you can browse some of the most popular Rubik cubes in the world and add some new cubes that you have discovered.
@@ -32,20 +36,22 @@ Here is the list:
 
 4. [Robo 3T](https://robomongo.org/download)
 
+## Database Connection with ExpressJS
 
-[/slide]
-
-[slide hideTitle]
-
-# Database Connection with ExpressJS
-
-Your **database.json** file inside **config folder** will be **modified**, because you **no longer** will **store** the data in **json** file. 
+Your **database.json** file inside the **config folder** will be **modified**, because you **no longer** will **store** the data in **json** file. 
 
 So, make sure inside it, the **mongoose connection** via **MongoDB** **connection string** is **made** and **exported**.
 
 The `index.js` file should **require** the exported mongoose connection (**database**) before the server starts. 
 
-## Model
+
+[/slide]
+
+[slide hideTitle]
+
+# Database Model
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 If you follow the previous structure you probably created **ES6** class Model for each cube in this format:
 
@@ -80,9 +86,19 @@ Your models folder should look like:
 
 [slide hideTitle]
 
-# Database Persistence
+# Creating Views
 
-**All pages** in the application should persist data to **MongoDB** & work with **MongoDB**.
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## Database Persistence
+
+**All pages** in the application should **persist** data to **MongoDB** & work with **MongoDB**.
 
 - **Additional Pages**
 

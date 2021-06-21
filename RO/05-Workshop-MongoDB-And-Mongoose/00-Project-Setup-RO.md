@@ -4,6 +4,10 @@
 
 # Sterarea proiectului
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Aici este link-ul către** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/04-Cubicle-Homework-Part-2-Resources.zip) **pentru această sarcină.**
 
 "**Cubicle**" este un loc în care puteți răsfoi unele dintre cele mai populare cuburi Rubik și puteți adăuga cuburile noi pe care le-ați descoperit.
@@ -32,11 +36,6 @@ Aici este lista:
 
 4. [Robo 3T](https://robomongo.org/download)
 
-
-[/slide]
-
-[slide hideTitle]
-
 ## Conectarea Bazei de Date cu ExpressJS
 
 Fișierul dvs. **database.json** din **config folder** va fi **modificat**, deoarece **nu mai** veți **stoca** datele în fișierul **json**. 
@@ -45,7 +44,13 @@ Deci, asigurați-vă că în interiorul său **mongoose connection** prin **Mong
 
 Fișierul `index.js` trebuie să **necesite** conexiunea mongoose exportată (**baza de date**) înainte ca serverul să fie startat.
 
-## Model
+
+[/slide]
+
+[slide hideTitle]
+# Database Model
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Dacă urmați structura anterioară, probabil ați creat clasă Model **ES6** pentru fiecare cub în acest format:
 
@@ -79,8 +84,17 @@ Modelele dvs. ar trebui să arate in acest mod:
 [/slide]
 
 [slide hideTitle]
+# Creating Views
 
-# Database Persistence
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## Database Persistence
 
 **Toate paginile** din aplicație ar trebui să păstreze datele în **MongoDB** și să funcționeze cu **MongoDB**.
 
