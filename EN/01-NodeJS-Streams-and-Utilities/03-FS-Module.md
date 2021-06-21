@@ -4,7 +4,7 @@
 
 # Working with the File System
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-18-25-fs-module-and-working-with-file-system-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-18-19-FS-Module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The Node.js **file system module** allows you to work with files synchronously or asynchronously.
 
@@ -40,7 +40,7 @@ let data = fs.readFile('./package.json', 'utf8', (err, data) => {
 
 # List Files in a Directory
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/fs-reading-files-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-20-List-Files-fs-reading-files-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Use the `readdirSync()` method to read the contents of a given directory synchronously.
 
@@ -131,7 +131,7 @@ It is recommended to use `createReadStream()` whenever possible.
 
 # Create a Directory
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/fs-updating-files-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-21-Create-fs-writing-files-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You can create a directory with the `mkdir()` or `mkdirSync()` methods.
 
@@ -196,7 +196,7 @@ Creating a new file with FS Module Appended text
 
 # Rename File or Directory
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/fs-renaming-and-deleting-files-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-22-Rename-fs-renaming-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Use the `renameSync()` method to rename a file or a directory synchronously.
 
@@ -222,7 +222,7 @@ fs.rename('./oldName', './newName', err => {
 
 # Write to a File
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/fs-writing-files-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-23-Write-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When writing data to a file, we need to specify the path to the file first.
 
@@ -249,6 +249,8 @@ fs.writeFile(filePath, data, err => {
 [slide hideTitle]
 
 # Delete a File
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/02.NodeJS-Streams-And-Utilities/NodeJS-Streams-And-Utilities-23-Delete-fs-delete-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In case we want to delete a file, we use `unlinkSync()` or `unlink()`.
 
