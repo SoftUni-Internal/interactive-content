@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Installing MongoDB
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/07-08-09-10-MongoDB-Overview-Install-Configure-MongoDB-Working-with-Schell-client-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.MongoDB-And-Mongoose/07-08-09-10-MongoDB-Overview-Install-Configure-MongoDB-Working-with-Schell-client-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You can download MongoDB from the [official site](https://www.mongodb.com/download-center)
 
