@@ -150,6 +150,6 @@ app.get("/getSession", (req, res) => {
 
 # Cookies, Local and Session Storage: Demo
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Sessions-And-Authentication/Cookies,%20Local%20&%20Session%20Storage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Sessions-And-Authentication/Cookies-Local-and-Session-Storage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
