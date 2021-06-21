@@ -4,10 +4,7 @@
 
 # Set up: Installing Git
 
-3-4-git-and-what-is-git- 
-5-using-git-
-6-installing-git-
-7-8-basic-commands-
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/interactive-js-back-end-deployment-3-4-5-6-7-8-Git-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Git** is a **version-control system** that helps you **keep track of changes** in your codebase.
 

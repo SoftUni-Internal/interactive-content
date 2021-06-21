@@ -4,10 +4,7 @@
 
 # Enabling GitHub Integration
 
-11-12-deployment-and-what-is-deployment-
-13-where-to-deploy-a-js-project-
-14-16-deploying-on-heroku-
-17-20-github-integration-
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/interactive-js-back-end-deployment-11-12-13-14-16-17-20-Deployment-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Integrating** Heroku with **Github** enables helpful features like automatic **builds** and **releases**.
 

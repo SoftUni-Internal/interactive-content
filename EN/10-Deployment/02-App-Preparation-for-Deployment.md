@@ -3,7 +3,7 @@
 [slide hideTitle]
 
 # App Preparation
-9-10-github-and-what-is-github-
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/interactive-js-back-end-deployment-9-10-github-and-what-is-github-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Track Your Codebase in a Git Repository
 
