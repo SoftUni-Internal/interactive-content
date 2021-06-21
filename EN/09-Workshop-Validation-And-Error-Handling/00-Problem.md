@@ -4,6 +4,8 @@
 
 # Project Setup
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Workshop-Validation-And-Error-Handling/workshop-validation-and-error-handling-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 "**Cubicle**" is a place, where you can browse some of the most popular Rubik's cubes in the world and add some new cubes that you have discovered.
 
 This is the final part of the workshop, so if you missed some parts, make sure you complete them before you continue because all parts of this workshop are related to each other.
