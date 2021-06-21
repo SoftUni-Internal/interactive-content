@@ -4,6 +4,8 @@
 
 # Setare: Instalarea Git
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/08-Deployment/interactive-js-back-end-deployment-3-4-5-6-7-8-Git-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Git** este **un sistem de control al versiunilor** care vă ajută **să țineți evidența modificărilor** în baza de date a codului dvs.
 
 Primul pas către **implementarea** aplicației dvs. **NodeJS application** este asigurarea faptului că aveți Git **instalat**.

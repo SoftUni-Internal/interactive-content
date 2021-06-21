@@ -4,6 +4,8 @@
 
 # Activarea Integrării GitHub
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/08-Deployment/interactive-js-back-end-deployment-11-12-13-14-16-17-20-Deployment-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Integrаrea** Heroku cu **Github** permite funcții utile, cum ar fi automatic **builds** și **releases**.
 
 Pentru a activa integrarea Github, [accesați Heroku Dashboard](https://dashboard.heroku.com/apps).
@@ -77,6 +79,6 @@ De asemenea, puteți **să deconectați profilul GitHub** în general [accesând
 [slide hideTitle]
 # Demo: Deployment
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/07.Deployment/deployment-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/08-Deployment/deployment-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

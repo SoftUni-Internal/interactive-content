@@ -2,6 +2,8 @@
 
 # Rezumat
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/08-Deployment/interactive-js-back-end-deployment-21-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 # În această lecție ați învățat:
 
 - **Heroku** este o soluție  Platform-as-a-Service

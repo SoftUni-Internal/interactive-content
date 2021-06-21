@@ -4,6 +4,8 @@
 
 # Setarea Proiectului
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/06.Workshop-Validation-And-Error-Handling/workshop-validation-and-error-handling-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 "**Cubicle**"este un loc în care puteți răsfoi unele dintre cele mai populare cuburi Rubik din lume și puteți adăuga câteva cuburi noi pe care le-ați descoperit.
 
 Aceasta este ultima parte acestui workshop, asigurați-vă că le completați cele precedente înainte de a continua, deoarece toate părțile acestui workshop sunt legate între ele.
