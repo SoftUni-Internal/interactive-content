@@ -85,7 +85,7 @@ Ruta wildcard se va potrivi cu orice rută introdusă și, deoarece se află în
 
 Abordarea corectă este de a păstra întotdeauna rutele mai puțin specifice sub cele mai specifice, iar ruta wildcard este un bun exemplu de rută care ar trebui să fie ultima care apare în cod.
 
-## Metode de rutare cu funcții de apel invers multiple
+## Metode de Rută cu Funcții de Apel Invers Multiple
 
 Metodele de rutare pot avea mai multe funcții de apel invers.
 
