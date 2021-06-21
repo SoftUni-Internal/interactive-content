@@ -47,7 +47,7 @@ Acestea sunt principalele **concepte de șablonare**:
 [slide hideTitle]
 # Exemple de Șablonare
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-23-templating-concepts-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-24-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Exemple de situații reale în care șablonarea va fi utilă sunt
 
