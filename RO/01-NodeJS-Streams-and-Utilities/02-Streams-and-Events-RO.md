@@ -249,7 +249,7 @@ server.listen(5000);
 
 # Fluxurile de tip Duplex și Transform 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-13-piping-streams-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/02-Streams-and-Utilities/NodeJS-Streams-And-Utilities-14-15-duplex-and-transform-streams-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un flux duplex este atât de citit, cât și de scris, similar cu un flux de tip **Transform**. 
 
