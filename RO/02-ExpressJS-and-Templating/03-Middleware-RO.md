@@ -4,7 +4,7 @@
 
 # Ce Este Middleware?
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-15-16-middleware-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-15-17-middleware-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Middleware vă permite să definiți una sau mai multe acțiuni care sunt executate în ordine.
 
@@ -58,7 +58,7 @@ Numim **următoarea funcție**, dacă există în **stiva de middleware**, cu aj
 
 # Tipuri de Middleware
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-18-third-party-middleware-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-18-third-party-middleware-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem folosi middleware-ul **Application-level** declarând `app.use()`, despre care am discutat mai devreme.
 

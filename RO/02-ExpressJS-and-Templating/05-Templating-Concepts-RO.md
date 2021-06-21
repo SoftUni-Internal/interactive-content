@@ -4,6 +4,8 @@
 
 # Ce este Șablonarea?
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-22-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Șablonarea** este procesul de separare a **structurii unui document HTML** de conținutul **actual**.
 
 **Șabloanele** permit **reproducerea conținutului similar** într-o pagină web, cum ar fi o listă de produse dintr-un magazin online, generând automat marcajul necesar.

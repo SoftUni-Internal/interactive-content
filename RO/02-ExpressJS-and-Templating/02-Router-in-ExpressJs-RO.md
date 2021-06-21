@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Rutarea
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-5-6-router-in-express-js-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-5-6-router-in-express-js-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Rutarea se referă la modul în care o aplicație tratează cererile către căi specifice.
 
@@ -200,7 +200,7 @@ Acest lucru este foarte util atunci când doriți să executați acțiuni diferi
 [slide hideTitle]
 # Răspunsuri Router
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-13-router-responses-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/03-ExpressJS-and-Templating/interactive-express.js-and-view-engines-12-13-router-responses-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există mai multe tipuri diferite de răspunsuri pe care le putem specifica.
 
