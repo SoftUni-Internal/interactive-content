@@ -52,9 +52,8 @@ Configures the app to work with Express and the routes that are set up in the `.
 [slide hideTitle]
 # Cube Model and Storage
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/JS-Backend-Templating-Workshop-2-3-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.Workshop-ExpressJS-Templating/3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - **Cube Model**
 
