@@ -4,7 +4,7 @@
 
 # Node.js Overview
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-3-4-introduction-to-nodejs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/Intro-to-Node-JS/interactive-js-backend-nodejs-3-4-5-6-7-8-introduction-to-nodejs-installation-and-setup-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Typically, JavaScript is used **in the browser** to make a web page **more interactive**.
 
