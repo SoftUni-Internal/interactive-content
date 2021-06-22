@@ -6,28 +6,28 @@
 
 Angular-Modules-and-routing-24-25-Guards-overview
 
-Guards **prevent** the user from accessing routes that they have **no** permission to access.
+Guards **prevent** the user from accessing **restricted** routes.
 
 To implement guards in our application, we need to create a **guard service**.
 
-We can use the `ng generate guard` command from the Angular CLI.
+We can use the `ng generate guard` command in the Angular CLI.
 
 ```js
 ng generate guard guard-name
 ```
 
-You can add flags after the guard's name, such as `--implements` and `--flat`.
+You can add flags after the guard's name, such as `--implements` or `--flat`.
 
-The `--implements` flag specifies which interfaces to implement.
+The `--implements` flag specifies which interfaces should be implemented in the service.
 
 The possible options are:
 -  `CanActivate`
 -  `CanActivateChild`
 -  `CanLoad`
 
-Once the service is instantiated, it must be **provided** in the module, where the routing configuration is.
+Once the service is instantiated, it should be **provided** in the module, where the routing configuration is.
 
-And finally, we can add the **guard** to the wanted **route**.
+Finally, we can add the **guard** to the wanted **route**.
 
 [/slide]
 
@@ -61,7 +61,7 @@ export class AuthGuard implements CanActivate {
 
 In this example, if the user is **logged in**, **CanActivate** returns the `checkIfLogged()` function.
 
-This function returns a boolean - in this case, **it will return true** for a logged-in user and else otherwise.
+This function returns a boolean - it should **return true** for a logged-in user and **false** otherwise.
 
 [/slide]
 
@@ -74,7 +74,7 @@ Angular-Modules-and-routing-30-ActivatedRoute-example
 
 Resolvers are **data providers**.
 
-They allow us to fetch data **before navigating** to the specific route.
+They allow us to fetch data **before navigating** to a specific route.
 
 The router will wait for the data to be fetched.
 
@@ -96,13 +96,13 @@ It will determine whether to **fetch the information** or not, depending on the 
 
 ## Creating a Resolver
 
-To create a Resolver, we can use Angular CLI:
+To create a Resolver, we can use the Angular CLI:
 
 ```
 ng g resolver nameOfTheResolver
 ```
 
-This example illustrates its syntax:
+The following example shows the correct syntax:
 
 ```js
 @Injectable()
