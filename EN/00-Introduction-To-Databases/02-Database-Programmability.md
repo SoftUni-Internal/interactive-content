@@ -11,18 +11,18 @@
 ```
 [/code-editor]
 [code-adapter]
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `PK_Addresses` (`address_id`),
-  KEY `fk_addresses_towns` (`town_id`),
-  CONSTRAINT `fk_addresses_towns` FOREIGN KEY (`town_id`) REFERENCES `towns` (`town_id`)
+CREATE TABLE IF NOT EXISTS addresses (
+  address_id int(10) NOT NULL AUTO_INCREMENT,
+  address_text varchar(100) NOT NULL,
+  town_id int(10) DEFAULT NULL,
+  PRIMARY KEY (address_id),
+  UNIQUE KEY PK_Addresses (address_id),
+  KEY fk_addresses_towns (town_id),
+  CONSTRAINT fk_addresses_towns FOREIGN KEY (town_id) REFERENCES towns (town_id)
 ) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
+INSERT INTO addresses (address_id, address_text, town_id) VALUES
 	(1, '108 Lakeside Court', 5),
 	(2, '1343 Prospect St', 5),
 	(3, '1648 Eastgate Lane', 5),
@@ -316,18 +316,18 @@ INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
 	(291, '163 Nishava Str, ent A, apt. 1', 32);
 
 
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`),
-  KEY `fk_departments_employees` (`manager_id`),
-  CONSTRAINT `fk_departments_employees` FOREIGN KEY (`manager_id`) REFERENCES `employees` (`employee_id`)
+CREATE TABLE IF NOT EXISTS departments (
+  department_id int(10) NOT NULL AUTO_INCREMENT,
+  name varchar(50) NOT NULL,
+  manager_id int(10) NOT NULL,
+  PRIMARY KEY (department_id),
+  UNIQUE KEY PK_Departments (department_id),
+  KEY fk_departments_employees (manager_id),
+  CONSTRAINT fk_departments_employees FOREIGN KEY (manager_id) REFERENCES employees (employee_id)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
+INSERT INTO departments (department_id, name, manager_id) VALUES
 	(1, 'Engineering', 12),
 	(2, 'Tool Design', 4),
 	(3, 'Sales', 273),
@@ -347,30 +347,30 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 
 
 
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`),
-  KEY `CL_FirstName` (`first_name`),
-  KEY `fk_employees_departments` (`department_id`),
-  KEY `fk_employees_employees` (`manager_id`),
-  KEY `fk_employees_addresses` (`address_id`),
-  CONSTRAINT `fk_employees_addresses` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`),
-  CONSTRAINT `fk_employees_departments` FOREIGN KEY (`department_id`) REFERENCES `departments` (`department_id`),
-  CONSTRAINT `fk_employees_employees` FOREIGN KEY (`manager_id`) REFERENCES `employees` (`employee_id`)
+CREATE TABLE IF NOT EXISTS employees (
+  employee_id int(10) NOT NULL AUTO_INCREMENT,
+  first_name varchar(50) NOT NULL,
+  last_name varchar(50) NOT NULL,
+  middle_name varchar(50) DEFAULT NULL,
+  job_title varchar(50) NOT NULL,
+  department_id int(10) NOT NULL,
+  manager_id int(10) DEFAULT NULL,
+  hire_date timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  salary decimal(19,4) NOT NULL,
+  address_id int(10) DEFAULT NULL,
+  PRIMARY KEY (employee_id),
+  UNIQUE KEY PK_Employees (employee_id),
+  KEY CL_FirstName (first_name),
+  KEY fk_employees_departments (department_id),
+  KEY fk_employees_employees (manager_id),
+  KEY fk_employees_addresses (address_id),
+  CONSTRAINT fk_employees_addresses FOREIGN KEY (address_id) REFERENCES addresses (address_id),
+  CONSTRAINT fk_employees_departments FOREIGN KEY (department_id) REFERENCES departments (department_id),
+  CONSTRAINT fk_employees_employees FOREIGN KEY (manager_id) REFERENCES employees (employee_id)
 ) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+INSERT INTO employees (employee_id, first_name, last_name, middle_name, job_title, department_id, manager_id, hire_date, salary, address_id) VALUES
 	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
 	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
@@ -668,18 +668,18 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 
 
 
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`),
-  KEY `fk_employees_projects_projects` (`project_id`),
-  CONSTRAINT `fk_employees_projects_employees` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`employee_id`),
-  CONSTRAINT `fk_employees_projects_projects` FOREIGN KEY (`project_id`) REFERENCES `projects` (`project_id`)
+CREATE TABLE IF NOT EXISTS employees_projects (
+  employee_id int(10) NOT NULL,
+  project_id int(10) NOT NULL,
+  PRIMARY KEY (employee_id,project_id),
+  UNIQUE KEY PK_EmployeesProjects (employee_id,project_id),
+  KEY fk_employees_projects_projects (project_id),
+  CONSTRAINT fk_employees_projects_employees FOREIGN KEY (employee_id) REFERENCES employees (employee_id),
+  CONSTRAINT fk_employees_projects_projects FOREIGN KEY (project_id) REFERENCES projects (project_id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
+INSERT INTO employees_projects (employee_id, project_id) VALUES
 	(3, 1),
 	(15, 1),
 	(18, 1),
@@ -1526,18 +1526,18 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 
 
 
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `PK_Projects` (`project_id`)
+CREATE TABLE IF NOT EXISTS projects (
+  project_id int(10) NOT NULL AUTO_INCREMENT,
+  name varchar(50) NOT NULL,
+  description text,
+  start_date timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  end_date timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (project_id),
+  UNIQUE KEY PK_Projects (project_id)
 ) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
+INSERT INTO projects (project_id, name, description, start_date, end_date) VALUES
 	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2003-06-01 00:00:00.000000', NULL),
 	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
@@ -1621,15 +1621,15 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 
 
 
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `PK_Towns` (`town_id`)
+CREATE TABLE IF NOT EXISTS towns (
+  town_id int(10) NOT NULL AUTO_INCREMENT,
+  name varchar(50) NOT NULL,
+  PRIMARY KEY (town_id),
+  UNIQUE KEY PK_Towns (town_id)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
 
-INSERT INTO `towns` (`town_id`, `name`) VALUES
+INSERT INTO towns (town_id, name) VALUES
 	(1, 'Redmond'),
 	(2, 'Calgary'),
 	(3, 'Edmonds'),
