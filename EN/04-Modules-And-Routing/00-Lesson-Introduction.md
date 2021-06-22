@@ -14,17 +14,17 @@ Angular-Modules-and-routing-1-2-Introduction-and-table-of-contents
 
 - Creating custom modules
 
-**2. Routing Overview**
+**2. How to implement Routing in Angular**
 
 - Definition and types
 
 - Navigation in single-page applications
 
-**3. Router Module**
+**3. How to use the Router Module**
 
-- Links, Redirects and Query Params
+- Links, Redirects, and Query Params
 
-**4. Router Guards**
+**4. What Router Guards are**
 
 - Initializing a guard service
 
