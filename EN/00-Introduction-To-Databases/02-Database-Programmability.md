@@ -11,11 +11,6 @@
 ```
 [/code-editor]
 [code-adapter]
-```
-CREATE DATABASE IF NOT EXISTS `soft_uni`
-USE `soft_uni`;
-
-
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -1667,7 +1662,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(30, 'Bordeaux'),
 	(31, 'Berlin'),
 	(32, 'Sofia');
-```
+
 [/code-adapter]
 [task-description]
 ## Description
