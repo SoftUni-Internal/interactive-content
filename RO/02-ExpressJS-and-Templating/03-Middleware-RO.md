@@ -64,6 +64,49 @@ Putem folosi middleware-ul **Application-level** declarând `app.use()`, despre 
 
 De asemenea, putem utiliza funcția `app.METHOD()` pentru a crea middleware **specific rutei**.
 
+## Middleware Third-party 
+
+**Middleware Third-party** permite o mulțime de **funcționalități suplimentare**.
+
+Instalăm middleware third party ca orice alt modul **Node.js**:
+
+```js
+npm install name-of-middleware-module
+```
+
+După terminarea instalării, trebuie să **importăm**, fie la nivel de aplicație, fie la nivel de router.
+
+Vom folosi modulul `cookie-parser` ca exemplu:
+
+```js
+const express = require('express');
+const cookieParser = require('cookie-parser');
+const app = express();
+
+app.use(cookieParser()));
+```
+
+Presupunând că am rulat deja `npm install cookie-parser`, următorul nostru pas este să-l importăm în fișierul nostru:
+
+```js
+const cookieParser = require('cookie-parser');
+```
+
+Apoi încărcăm middleware-ul de analiză a cookie-urilor:
+
+```js
+app.use(cookieParser())
+```
+
+Următorul tabel prezintă unele middleware utilizate în mod obișnuit.
+
+| **Modul Middleware** | **Descriere** |
+| --- | --- |
+| `cookie-parser`       | Transformă antetul unui cookie. Populează proprietatea `cookies` a obiectului cererii. |
+| `errorhandler`        | Permite depanarea și gestionarea erorilor în mediul dezvoltator.  |
+| `cors`                | Permite partajarea resurselor cross-origin (CORS). |
+| `serve-static`        | Folosit pentru lucrul cu fișiere statice. |
+
 ## Middleware-ul Router-Level 
 
 Middleware **Router-level** este foarte similar cu middleware application-level.
@@ -107,49 +150,6 @@ app.use(function(err, req, res, next) {
 În acest exemplu, numim `console.error()` cu stiva de erori ca parametru.
 
 De asemenea, atribuim obiectului de răspuns o stare "**404 - Not Found**".
-
-## Middleware Third-party 
-
-**Middleware Third-party** permite o mulțime de **funcționalități suplimentare**.
-
-Instalăm middleware third party ca orice alt modul **Node.js**:
-
-```js
-npm install name-of-middleware-module
-```
-
-După terminarea instalării, trebuie să **importăm**, fie la nivel de aplicație, fie la nivel de router.
-
-Vom folosi modulul `cookie-parser` ca exemplu:
-
-```js
-const express = require('express');
-const cookieParser = require('cookie-parser');
-const app = express();
-
-app.use(cookieParser()));
-```
-
-Presupunând că am rulat deja `npm install cookie-parser`, următorul nostru pas este să-l importăm în fișierul nostru:
-
-```js
-const cookieParser = require('cookie-parser');
-```
-
-Apoi încărcăm middleware-ul de analiză a cookie-urilor:
-
-```js
-app.use(cookieParser())
-```
-
-Următorul tabel prezintă unele middleware utilizate în mod obișnuit.
-
-| **Modul Middleware** | **Descriere** |
-| --- | --- |
-| `cookie-parser`       | Transformă antetul unui cookie. Populează proprietatea `cookies` a obiectului cererii. |
-| `errorhandler`        | Permite depanarea și gestionarea erorilor în mediul dezvoltator.  |
-| `cors`                | Permite partajarea resurselor cross-origin (CORS). |
-| `serve-static`        | Folosit pentru lucrul cu fișiere statice. |
 
 [/slide]
 

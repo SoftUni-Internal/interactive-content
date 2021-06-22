@@ -56,40 +56,6 @@ We call the **next function**, if such exists in the **middleware stack**, with 
 
 [slide hideTitle]
 
-# Custom Middleware
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-17-custom-middleware-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-We can create **custom middleware** for **specific paths**.
-
-The `app.use()` and `app.METHOD()` functions can accept a string-formatted **route** alongside the **middleware function** as parameters:
-
-```js
-app.use("/post/:postId", (req, res, next) => {
-    const postId = req.params.postId;
-
-    let postExists = postId !== undefined;
-
-    if (!postExists) {
-        res.redirect("/home");
-    } else {
-        next();
-    }
-});
-
-app.get("/post/:postId", (req, res) => {
-    res.send("Post details");
-});
-```
-
-We check if a blog post with a given `postId` exists in a database.
-
-Depending on that, we either redirect the user to the homepage or show more information about the post.
-
-[/slide]
-
-[slide hideTitle]
-
 # Types of Middleware
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-18-third-party-middleware-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -183,5 +149,39 @@ app.use(function(err, req, res, next) {
 In this example, we call the `console.error()` with the error stack as a parameter.
 
 We also assign a status of "**404 - Not Found**" to the response object.
+
+[/slide]
+
+[slide hideTitle]
+
+# Custom Middleware
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/03.ExpressJS-And-Templating/interactive-express.js-and-view-engines-17-custom-middleware-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+We can create **custom middleware** for **specific paths**.
+
+The `app.use()` and `app.METHOD()` functions can accept a string-formatted **route** alongside the **middleware function** as parameters:
+
+```js
+app.use("/post/:postId", (req, res, next) => {
+    const postId = req.params.postId;
+
+    let postExists = postId !== undefined;
+
+    if (!postExists) {
+        res.redirect("/home");
+    } else {
+        next();
+    }
+});
+
+app.get("/post/:postId", (req, res) => {
+    res.send("Post details");
+});
+```
+
+We check if a blog post with a given `postId` exists in a database.
+
+Depending on that, we either redirect the user to the homepage or show more information about the post.
 
 [/slide]

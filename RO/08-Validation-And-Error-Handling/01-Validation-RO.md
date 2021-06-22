@@ -216,7 +216,7 @@ După aceea, folosim metoda `customSanitizer()`, care va returna **ObjectId**.
 
 # Validarea Mongoose
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/07-Validation-and-Error-Handling/interactive-js-back-end-validation-and-error-handling-15-mongoose-validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/07-Validation-and-Error-Handling/interactive-js-back-end-validation-and-error-handling-15-mongoose-validation-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Validarea Mongoose este o validare **middleware** efectuată în **SchemaType**:
 
