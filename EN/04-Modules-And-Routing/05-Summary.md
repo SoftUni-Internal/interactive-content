@@ -4,11 +4,11 @@
 
 Angular-Modules-and-routing-31-Summary
 
-# In this lesson you learned:
+## In this lesson you learned:
 
 -  What NgModules are
    *  they define the structure of our project
-   *  organizing the application into **blocks of functionality**
+   *  they organize the application into **blocks of functionality**
 
    ```js
    @NgModule({
@@ -19,10 +19,10 @@ Angular-Modules-and-routing-31-Summary
    })
    ```
 
--  **Routing** allows us to display different views, without reloading the entire page
+-  **Routing** allows us to display different views without reloading the entire page
 
 -  The **Router Module** provides us with in-app navigation
-   * contains guards, resolvers, and more
+   * it contains guards, resolvers, and more
 
    ```js
    <nav>
