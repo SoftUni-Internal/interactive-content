@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Project Setup
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Workshop-Sessions-and-Authentication/1-2-3-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/05-Sessions-and-Authentication-Workshop-Resources.zip) **for this task.**
 
 "**Cubicle**" is a place, where you can browse some of the most popular Rubik cubes in the world and add some new cubes that you have discovered.  
@@ -49,7 +51,11 @@ Also, you have to add a property on **Cube Model**, which is `creatorId` (type: 
 
 
 [slide hideTitle]
-# Authentication 
+# Authentication and Authorization
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Workshop-Sessions-and-Authentication/4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## Authentication
 
 Make sure the **anonymous** (guest) users **cannot reach** the functionality which requires **authentication**, such as "**create cube view**".
 
@@ -83,10 +89,7 @@ and cannot access and see everyone else.
 - **Edit Cube page**
 - **Delete Cube page**
 
-[/slide]
-
-[slide hideTitle]
-# Authorization
+## Authorization
 
 Only authorized users should see the `[Edit]` and `[Delete]` buttons and if the **currently logged in user is the creator of this cube.**
 
@@ -98,6 +101,8 @@ Otherwise, they should be **hidden.**
 
 [slide hideTitle]
 # Additional Pages
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Workshop-Sessions-and-Authentication/5-6-7-8-9-10-11-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You should implement four new routes:
 

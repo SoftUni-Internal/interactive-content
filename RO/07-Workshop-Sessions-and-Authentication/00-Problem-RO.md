@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Setarea Proiectului
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Workshop-Sessions-and-Authentication/1-2-3-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Avem un link către** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/05-Sessions-and-Authentication-Workshop-Resources.zip) **pentru această sarcină.**
 
 "**Cubicle**"este un loc în care puteți răsfoi unele dintre cele mai populare cuburi Rubik din lume și puteți adăuga câteva cuburi noi pe care le-ați descoperit.
@@ -48,7 +50,11 @@ De asemenea, trebuie să adăugați o proprietate pe **Cube Model**, care este `
 
 
 [slide hideTitle]
-# Authentificare
+# Authentificare și Autorizare
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Workshop-Sessions-and-Authentication/4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## Authentificare
 
 Asigurați-vă că utilizatorii **anonimi** **nu pot atinge** funcționalitatea care necesită **autentificare**, cum ar fi "**create cube view**".
 
@@ -82,10 +88,7 @@ Utilizatorii **înregistrați** pot vedea și accesa următoarele adrese URL:
 - **Edit Cube page**
 - **Delete Cube page**
 
-[/slide]
-
-[slide hideTitle]
-# Autorizare
+## Autorizare
 
 Numai utilizatorii autorizați ar trebui să vadă butoanele `[Edit]` și `[Delete]` și dacă **utilizatorul conectat în prezent este creatorul acestui cub.**
 
@@ -97,6 +100,8 @@ Numai utilizatorii autorizați ar trebui să vadă butoanele `[Edit]` și `[Dele
 
 [slide hideTitle]
 # Pagini adiționale
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/05.Workshop-Sessions-and-Authentication/5-6-7-8-9-10-11-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Ar trebui să implementați patru rute noi:
 
