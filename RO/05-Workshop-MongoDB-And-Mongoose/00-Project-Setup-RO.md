@@ -4,9 +4,7 @@
 
 # Sterarea proiectului
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/1-2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Aici este link-ul către** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/04-Cubicle-Homework-Part-2-Resources.zip) **pentru această sarcină.**
 
@@ -84,15 +82,9 @@ Modelele dvs. ar trebui să arate in acest mod:
 [/slide]
 
 [slide hideTitle]
-# Creating Views
+# Views
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/4-5-6-7-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Database Persistence
 

@@ -84,7 +84,7 @@ Your models folder should look like:
 
 [slide hideTitle]
 
-# Creating Views
+# Views
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/04.Workshop-MongoDB-And-Mongoose/4-5-6-7-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
