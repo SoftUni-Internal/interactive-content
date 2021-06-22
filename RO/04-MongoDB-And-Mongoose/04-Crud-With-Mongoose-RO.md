@@ -192,4 +192,8 @@ userModel.remove()
 [slide hideTitle]
 
 # Demo: Mongoose
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/RO/04-Mongoose-MongoDB/MongoDB-Mongoose-Demo-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 [/slide]
