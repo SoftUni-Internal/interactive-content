@@ -5,9 +5,18 @@
 # Problem: Count Employees by Town
 [code-task title="Count Employees by Town" taskId="database-programmability-count-employees-by-town" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
-
 ```
+CREATE FUNCTION ufn_count_employees_by_town(town_name VARCHAR(30)) RETURNS int
+    DETERMINISTIC
+BEGIN
 
+RETURN (SELECT COUNT(*) FROM employees AS e
+JOIN addresses AS a
+ON e.address_id = a.address_id
+JOIN towns AS t
+ON t.town_id = a.town_id
+WHERE t.name = town_name);
+END
 ```
 [/code-editor]
 [code-adapter]
@@ -19,9 +28,9 @@ CREATE TABLE IF NOT EXISTS addresses (
   UNIQUE KEY PK_Addresses (address_id),
   KEY fk_addresses_towns (town_id),
   CONSTRAINT fk_addresses_towns FOREIGN KEY (town_id) REFERENCES towns (town_id)
-) 
+);
 
-INSERT INTO addresses (address_id, address_text, town_id) VALUES
+insert into addresses (address_id, address_text, town_id) values
 	(1, '108 Lakeside Court', 5),
 	(2, '1343 Prospect St', 5),
 	(3, '1648 Eastgate Lane', 5),
@@ -363,7 +372,7 @@ CREATE TABLE IF NOT EXISTS employees (
   CONSTRAINT fk_employees_addresses FOREIGN KEY (address_id) REFERENCES addresses (address_id),
   CONSTRAINT fk_employees_departments FOREIGN KEY (department_id) REFERENCES departments (department_id),
   CONSTRAINT fk_employees_employees FOREIGN KEY (manager_id) REFERENCES employees (employee_id)
-)
+);
 
 
 INSERT INTO employees (employee_id, first_name, last_name, middle_name, job_title, department_id, manager_id, hire_date, salary, address_id) VALUES
@@ -1524,7 +1533,7 @@ CREATE TABLE IF NOT EXISTS projects (
   end_date timestamp(6) NULL DEFAULT NULL,
   PRIMARY KEY (project_id),
   UNIQUE KEY PK_Projects (project_id)
-)
+);
 
 INSERT INTO projects (project_id, name, description, start_date, end_date) VALUES
 	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2003-06-01 00:00:00.000000', NULL),
@@ -1613,7 +1622,7 @@ CREATE TABLE IF NOT EXISTS towns (
   name varchar(50) NOT NULL,
   PRIMARY KEY (town_id),
   UNIQUE KEY PK_Towns (town_id)
-) 
+); 
 
 INSERT INTO towns (town_id, name) VALUES
 	(1, 'Redmond'),
