@@ -2,7 +2,7 @@
 
 
 [slide hideTitle]
-# # Problem with Solution: Trip Organization
+# Problem with Solution: Trip Organization
 [code-task title="Problem: Find All Information About Departments" taskId="mysql-prepare-db-and-run-queries" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
@@ -28,9 +28,6 @@ It should get information about the **drivers** (**name** and **id**) and their 
 [tests]
 [test open]
 [input]
-CREATE DATABASE camp;
-use camp;
-
 CREATE TABLE rooms(
 	id INT PRIMARY KEY,
 	occupation VARCHAR(20) not null,
@@ -135,9 +132,6 @@ Henry Wilson
 [/test]
 [test]
 [input]
-CREATE DATABASE camp;
-use camp;
-
 CREATE TABLE rooms(
 	id INT PRIMARY KEY,
 	occupation VARCHAR(20) not null,
