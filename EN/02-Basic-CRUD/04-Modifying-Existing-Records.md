@@ -18,9 +18,136 @@ Make sure you do not forget to filter the records you want to change otherwise t
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Update Employees Salary
-TODO: Add Task
+# Problem with Solution: Update Employees\\' Salary
 
+[code-task title="Update Employees\\' Salary" taskId="update-employees-salary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-editor language=sql]
+```
+-- Write your query here
+
+```
+[/code-editor]
+
+[task-description]
+## Description
+
+Update the salary of all employees whose **job_title** is "**Manager**", **increasing it by 100**.
+
+Retrieve information about all the salaries from the employees table.
+
+**Hint**: Running this query in MySQL Workbench might produce the following error - Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column.
+
+You can solve it by disabling safe mode and trying to run the query again.
+
+To disable safe mode, execute the following query:
+
+```sql
+SET SQL_SAFE_UPDATES = 0
+```
+
+## Example
+
+| **salary** |
+| --- |
+| 1100 | 
+| 880 | 
+| 1100 | 
+| 1100 | 
+| 1500.23 | 
+| ... | 
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+1000
+880
+1100
+1100
+1500.23
+990
+1800
+2100
+1600
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+1000
+880
+1100
+1100
+1500.23
+990
+1800
+2100
+1600
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide hideTitle]
@@ -51,6 +178,149 @@ TRUNCATE TABLE `users`;
 [slide hideTitle]
 # Problem with Solution: Delete from Table
 
-TODO: ADD Task
+[code-task title="Delete from Table" taskId="delete-from-table-o" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-editor language=sql]
+```
+-- Write your query here
 
+```
+[/code-editor]
+
+[task-description]
+## Description
+
+Write a query that **deletes all employees who are in departments 1 or 2** from the **employees** table. Then select all the records from the **employees** table and **order the results by id**.
+
+## Example
+
+| id | first_name | last_name | job_title | department_id | salary |
+| --- | --- | --- | --- | --- | --- |
+| 3 | Smith | Johnson | Porter | 4 | 1100 |
+| 6 | Ivan | Petrov | Waiter | 3 | 990 |
+| 7 | Jack | Jackson | Executive Chef | 3 | 1800 |
+| 9 | Nikolay | Ivanov | Housekeeping | 4 | 1600 |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+3
+Smith
+Johnson
+Porter
+4
+1100
+6
+Ivan
+Petrov
+Waiter
+3
+990
+7
+Jack
+Jackson
+Executive Chef
+3
+1800
+9
+Nikolay
+Ivanov
+Housekeeping
+4
+1600
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+3
+Smith
+Johnson
+Porter
+4
+1100
+6
+Ivan
+Petrov
+Waiter
+3
+990
+7
+Jack
+Jackson
+Executive Chef
+3
+1800
+9
+Nikolay
+Ivanov
+Housekeeping
+4
+1600
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
