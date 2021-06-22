@@ -2,73 +2,242 @@
 
 
 [slide hideTitle]
-# Mountains and Peaks
-[code-task title="Mountains and Peaks" taskId="table-relations-mountains-and-peaks" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+# # Problem with Solution: Trip Organization
+[code-task title="Problem: Find All Information About Departments" taskId="mysql-prepare-db-and-run-queries" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
+
 ```
-
-CREATE TABLE `mountains`(
-	`id` INT PRIMARY KEY,
-    `name` VARCHAR(50)
-);
-
-CREATE TABLE `peaks`(
-	`id` INT PRIMARY KEY,
-    `name` VARCHAR(50),
-    `mountain_id` INT,
-    CONSTRAINT `fk_peaks_mountains`
-    FOREIGN KEY (`mountain_id`)
-    REFERENCES `mountains`(`id`)
-);
+-- Write your query here
 ```
 [/code-editor]
 [task-description]
 ## Description
-Description ...
+Write a query that retrieves information about SoftUni Camp's transport organization. 
+
+It should get information about the **drivers** (**name** and **id**) and their **vehicle_type**. 
+
+|**driver_id**|**vehicle_type**|**driver_name**|
+|:---:|:---:|:---:|
+|1|bus|Simo Sheytanov|
+|2|van|Roli Dimitrova|
+|1|van|Simo Sheytanov|
+|...|...|...|
 
 [/task-description]
 [code-io /]
 [tests]
-[test]
+[test open]
 [input]
-SELECT DISTINCT lower(column_name)
-FROM INFORMATION_SCHEMA.key_column_usage
-WHERE TABLE_SCHEMA = database()
-  and lower(table_name) = 'mountains'
-order by lower(column_name);
+CREATE DATABASE camp;
+use camp;
 
+CREATE TABLE rooms(
+	id INT PRIMARY KEY,
+	occupation VARCHAR(20) not null,
+	beds_count int not null
+);
 
-SELECT DISTINCT lower(column_name)
-FROM INFORMATION_SCHEMA.key_column_usage
-WHERE TABLE_SCHEMA = database()
-  and lower(table_name) = 'peaks'
-order by lower(column_name);
+CREATE TABLE vehicles(
+	id int primary key auto_increment not null,
+	driver_id int not null,
+	vehicle_type varchar(30) not null,
+	passengers int not null
+);
+
+CREATE TABLE campers(
+	id INT PRIMARY KEY auto_increment,
+	first_name varchar(20) not null,
+	last_name varchar(20) not null,
+	age int not null,
+	room int,
+	vehicle_id int,
+	CONSTRAINT fk_room_id FOREIGN KEY(room) REFERENCES rooms(id),
+  	CONSTRAINT fk_vehicle_id FOREIGN KEY(vehicle_id) REFERENCES vehicles(id) on delete cascade
+);
+
+CREATE TABLE routes(
+	id INT PRIMARY KEY auto_increment,
+	starting_point varchar(30) not null,
+	end_point varchar(30) not null,
+	leader_id int not null,
+	route_time TIME NOT NULL,	
+	CONSTRAINT fk_leader_id FOREIGN KEY(leader_id) REFERENCES campers(id)
+);
+
+insert into rooms(id,occupation,beds_count) values(101,"occupied",3),
+(102,"free",3),
+(103,"free",3),
+(104,"free",2),
+(105,"free",2),
+(201,"free",3),
+(202,"free",3),
+(203,"free",2),
+(204,"free",3),
+(205,"free",3),
+(301,"free",2),
+(302,"free",2),
+(303,"free",2),
+(304,"free",3),
+(305,"free",3);
+
+insert into campers(first_name, last_name, age,room) values("Oliver", "Smith", 20,101),
+("Emma", "Johnson", 27,102),
+("Thomas", "Williams", 25,301),
+("William", "Jones", 28,301),
+("Florence", "Brown", 25,102),
+("Chloe", "Davis", 26,102),
+("Charlotte", "Miller", 21,301),
+("Henry", "Wilson", 28,302),
+("Edward", "Young", 28,302);
+
+insert into vehicles(driver_id,vehicle_type,passengers) values
+(1,"bus",20),
+(2,"van",10),
+(1,"van",10),
+(4,"car",5),
+(5,"car",5),
+(6,"car",4),
+(7,"car",3),
+(8,"bus",3);
+
+insert into routes(starting_point,end_point,leader_id,route_time) values
+("Four Seasons", "Mont Blanc Peak", 3, '02:00:00'),
+("Mercure", "Monte Rosa", 3, '00:40:00'),
+("Fish Lake Hut", "Rila Monastery", 3, '06:00:00'),
+("Borovets", "Musala Peak", 4, '03:30:00');
 [/input]
 [output]
-id
-id
-mountain_id
+1
+bus	
+Oliver Smith
+2
+van
+Emma Johnson
+1
+van
+Oliver Smith
+4
+car
+William Jones
+5
+car
+Florence Brown
+6
+car
+Chloe Davis
+7
+car
+Charlotte Miller
+8
+bus
+Henry Wilson
 [/output]
 [/test]
 [test]
 [input]
-SELECT DISTINCT lower(column_name)
-FROM INFORMATION_SCHEMA.key_column_usage
-WHERE TABLE_SCHEMA = database()
-  and lower(table_name) = 'mountains'
-order by lower(column_name);
+CREATE DATABASE camp;
+use camp;
 
+CREATE TABLE rooms(
+	id INT PRIMARY KEY,
+	occupation VARCHAR(20) not null,
+	beds_count int not null
+);
 
-SELECT DISTINCT lower(column_name)
-FROM INFORMATION_SCHEMA.key_column_usage
-WHERE TABLE_SCHEMA = database()
-  and lower(table_name) = 'peaks'
-order by lower(column_name);
+CREATE TABLE vehicles(
+	id int primary key auto_increment not null,
+	driver_id int not null,
+	vehicle_type varchar(30) not null,
+	passengers int not null
+);
+
+CREATE TABLE campers(
+	id INT PRIMARY KEY auto_increment,
+	first_name varchar(20) not null,
+	last_name varchar(20) not null,
+	age int not null,
+	room int,
+	vehicle_id int,
+	CONSTRAINT fk_room_id FOREIGN KEY(room) REFERENCES rooms(id),
+  	CONSTRAINT fk_vehicle_id FOREIGN KEY(vehicle_id) REFERENCES vehicles(id) on delete cascade
+);
+
+CREATE TABLE routes(
+	id INT PRIMARY KEY auto_increment,
+	starting_point varchar(30) not null,
+	end_point varchar(30) not null,
+	leader_id int not null,
+	route_time TIME NOT NULL,	
+	CONSTRAINT fk_leader_id FOREIGN KEY(leader_id) REFERENCES campers(id)
+);
+
+insert into rooms(id,occupation,beds_count) values(101,"occupied",3),
+(102,"free",3),
+(103,"free",3),
+(104,"free",2),
+(105,"free",2),
+(201,"free",3),
+(202,"free",3),
+(203,"free",2),
+(204,"free",3),
+(205,"free",3),
+(301,"free",2),
+(302,"free",2),
+(303,"free",2),
+(304,"free",3),
+(305,"free",3);
+
+insert into campers(first_name, last_name, age,room) values("Oliver", "Smith", 20,101),
+("Emma", "Johnson", 27,102),
+("Thomas", "Williams", 25,301),
+("William", "Jones", 28,301),
+("Florence", "Brown", 25,102),
+("Chloe", "Davis", 26,102),
+("Charlotte", "Miller", 21,301),
+("Henry", "Wilson", 28,302),
+("Edward", "Young", 28,302);
+
+insert into vehicles(driver_id,vehicle_type,passengers) values
+(1,"bus",20),
+(2,"van",10),
+(1,"van",10),
+(4,"car",5),
+(5,"car",5),
+(6,"car",4),
+(7,"car",3),
+(8,"bus",3);
+
+insert into routes(starting_point,end_point,leader_id,route_time) values
+("Four Seasons", "Mont Blanc Peak", 3, '02:00:00'),
+("Mercure", "Monte Rosa", 3, '00:40:00'),
+("Fish Lake Hut", "Rila Monastery", 3, '06:00:00'),
+("Borovets", "Musala Peak", 4, '03:30:00');
 [/input]
 [output]
-id
-id
-mountain_id
+1
+bus	
+Oliver Smith
+2
+van
+Emma Johnson
+1
+van
+Oliver Smith
+4
+car
+William Jones
+5
+car
+Florence Brown
+6
+car
+Chloe Davis
+7
+car
+Charlotte Miller
+8
+bus
+Henry Wilson
 [/output]
 [/test]
 [/tests]
