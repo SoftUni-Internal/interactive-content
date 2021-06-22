@@ -53,7 +53,7 @@ We will learn how to do this in the next lesson, for now just note that there is
 
 # Problem with Solution: Select Employee Information
 
-[code-task title="Delete Mountains" taskId="select-employee-info" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Select Employee Information" taskId="select-employee-info" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -152,11 +152,148 @@ Housekeeping
 [/slide]
 
 [slide hideTitle]
-
 # Problem with Solution: Select Employees with Filter
 
-TODO: Add task
+[code-task title="Select Employees with Filter" taskId="select-employee-info-filter" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-editor language=sql]
+```
+-- Write your query here
 
+```
+[/code-editor]
+
+[task-description]
+## Description
+
+Write a query to select all employees (**id**, **first_name** and **last_name**, **job_title**, **salary**) whose salaries are **higher than 1000**. Order the results by **id**. Concatenate the **first_name** and **last_name** fields into a column called **full_name**.
+
+## Example
+
+| **id** | **full_name** | **job_title* | **salary** | 
+| --- | --- | --- | --- |
+| 3 | Smith Johnson | Porter | 1100 |
+| 4 | Peter Petrov | Front Desk Clerk | 1100 |
+| 5 | Peter Ivanov | Sales | 1500.23 |
+| ...  | ... | ...  | ... |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+3
+Smith Johnson
+Porter
+1100
+4
+Peter Petrov
+Front Desk Clerk
+1100
+5
+Peter Ivanov
+Sales
+1500.23
+7
+Jack Jackson
+Executive Chef
+1800
+8
+Pedro Petrov
+Front Desk Supervisor
+2100
+9
+Nikolay Ivanov
+Housekeeping
+1600
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+3
+Smith Johnson
+Porter
+1100
+4
+Peter Petrov
+Front Desk Clerk
+1100
+5
+Peter Ivanov
+Sales
+1500.23
+7
+Jack Jackson
+Executive Chef
+1800
+8
+Pedro Petrov
+Front Desk Supervisor
+2100
+9
+Nikolay Ivanov
+Housekeeping
+1600
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide hideTitle]
@@ -229,12 +366,129 @@ We want to use **IN/NOT IN** operators when we know the exact value we want, fol
 [/slide]
 
 [slide hideTitle]
+# Problem with Solution: Select Employees by Multiple Criteria
 
-# Problem with Solution: Select Employees by Multiple Filters
+[code-task title="Select Employees by Multiple Criteria" taskId="select-employee-info-filter-multiple" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-editor language=sql]
+```
+-- Write your query here
 
-TODO: add task
+```
+[/code-editor]
+
+[task-description]
+## Description
+
+Write a query to retrieve information about employees, who are in **department 4** and have a **salary higher than or equal to 1000**. Order the information by **id**.
+
+## Example
+
+| **id** | **first_name** | **last_name* | **job_title** | **department_id** | **salary** |
+| --- | --- | --- | --- | --- | --- |
+| 3 | Smith | Johnson | Porter | 4 | 1100 |
+| 9 | Nikolay | Ivanov | Housekeeping | 4 | 1600 |
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+3
+Smith
+Johnson
+Porter
+4
+1100
+9
+Nikolay
+Ivanov
+Housekeeping
+4
+1600
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+3
+Smith
+Johnson
+Porter
+4
+1100
+9
+Nikolay
+Ivanov
+Housekeeping
+4
+1600
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
-
 [slide hideTitle]
 
 # Comparison with NULL
@@ -349,6 +603,107 @@ This way of access management is quite common in organizations where certain peo
 [slide hideTitle]
 # Problem with Solution: Top Paid Employee
 
-TODO: Add task
+[code-task title="Top Paid Employee" taskId="top-paid-employee" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-editor language=sql]
+```
+-- Write your query here
 
+```
+[/code-editor]
+
+[task-description]
+## Description
+
+Write a query to **create a view** that selects all information about the **top paid employee** from the **employees** table in the **hotel** database.
+
+## Example
+
+| **id** | **first_name** | **last_name* | **job_title** | **department_id** | **salary** |
+| --- | --- | --- | --- | --- | --- |
+| 8 | Pedro | Petrov | Front Desk Supervisor | 1 | 2100 |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+8
+Pedro
+Petrov
+Front Desk Supervisor
+1
+2100
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
+
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+8
+Pedro
+Petrov
+Front Desk Supervisor
+1
+2100
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
