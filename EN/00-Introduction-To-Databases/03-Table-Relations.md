@@ -36,7 +36,6 @@ Use the appropriate data types.
 [tests]
 [test open]
 [input]
-\# table people name and column names check
 SELECT lower(table_name)
 FROM information_schema.TABLES
 WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'people'
@@ -47,7 +46,6 @@ FROM information_schema.COLUMNS
 WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'people'
 order by lower(COLUMN_NAME);
 
-\# table passports name and column names check
 SELECT lower(table_name)
 FROM information_schema.TABLES
 WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'passports'
@@ -58,7 +56,6 @@ FROM information_schema.COLUMNS
 WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'passports'
 order by lower(COLUMN_NAME);
 
-\# primary keys check
 
 SELECT TABLE_NAME, COUNT(\*) AS pk_count
 FROM information_schema.COLUMNS
@@ -68,8 +65,6 @@ WHERE TABLE_SCHEMA = DATABASE()
 GROUP BY TABLE_NAME
 ORDER BY TABLE_NAME;
 
-\# check if people.passport_id has unique constraint
-
 SELECT lower(column_name)
 FROM INFORMATION_SCHEMA.columns
 WHERE TABLE_SCHEMA = database()
@@ -77,9 +72,6 @@ WHERE TABLE_SCHEMA = database()
   and column_name = 'passport_id'
   and column_key = 'UNI'
 order by lower(column_name);
-
-
-\# foreign key check
 
 SELECT
     lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
@@ -90,8 +82,6 @@ WHERE
         lower(REFERENCED_COLUMN_NAME) = 'passport_id' AND
         lower(REFERENCED_TABLE_NAME) = 'passports'
 order by tn, cn, ref_tn, ref_cn;
-
-\# data insertion check
 
 select \* from
     people per inner join passports pas on per.passport_id = pas.passport_id
@@ -157,8 +147,6 @@ salary
 [/test]
 [test]
 [input]
-\# test 2 : passports table name and columns names check
-
 SELECT lower(table_name)
 	 FROM information_schema.TABLES 
 WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'passports';
@@ -174,8 +162,6 @@ passport_number
 [/test]
 [test]
 [input]
-\# test 3 : table persons PK check
-
 SELECT TABLE_NAME, COUNT(\*) AS pk_count
   FROM information_schema.COLUMNS
  WHERE TABLE_SCHEMA = DATABASE()
@@ -191,8 +177,6 @@ people
 [/test]
 [test]
 [input]
-\# test 4 : table passports PK check
-
 SELECT TABLE_NAME, COUNT(\*) AS pk_count
   FROM information_schema.COLUMNS
  WHERE TABLE_SCHEMA = DATABASE()
@@ -208,8 +192,6 @@ passports
 [/test]
 [test]
 [input]
-\# test 5 : check if persons.passport_id has unique constraint
-
 SELECT lower(column_name)
     FROM INFORMATION_SCHEMA.columns
     WHERE TABLE_SCHEMA = database()
@@ -223,9 +205,6 @@ passport_id
 [/test]
 [test]
 [input]
-\# test 6 : FK check
-
-
 SELECT 
   lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
 FROM
@@ -244,8 +223,6 @@ passport_id
 [/test]
 [test]
 [input]
-\# test 7 : check data insertion
-
 select \* from 
 people per inner join passports pas on per.passport_id = pas.passport_id
 order by per.person_id;
