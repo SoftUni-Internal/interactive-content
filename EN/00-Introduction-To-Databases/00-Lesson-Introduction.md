@@ -11,7 +11,7 @@
 [/code-editor]
 [task-description]
 
-Write an SQL query to calculate the lifetimes of the authors, in days. 
+Write an SQL query to **calculate** the **lifetimes** of the authors, in **days**. 
 
 **NULL** values indicate that the author is still alive.  
 
@@ -22,12 +22,12 @@ Write an SQL query to calculate the lifetimes of the authors, in days.
 | Agatha Christie | 31164 |
 | William Shakespeare | 18990 |
 | Danielle Schuelein-Steel | NULL |
-| Joanne Rowling | (NULL) |
+| Joanne Rowling | NULL |
 | Lev Tolstoy | 30021 |
-| Paulo Souza | (NULL) |
-| Stephen King | (NULL) |
+| Paulo Souza | NULL |
+| Stephen King | NULL |
 | John Tolkien | 29827 |
-| Erika Mitchell | (NULL) |
+| Erika Mitchell | NULL |
 
 [/task-description]
 [code-io /]
@@ -72,13 +72,13 @@ INSERT INTO books(author_id,title, year_of_release,cost) VALUES
 	(2,'Julius Caesar', '1599-01-02',11.99),
 	(2,'Timon of Athens', '1607-01-02',13.99),
 	(2,'As You Like It', '1600-01-02',18.99),
-	(2,'A Midsummer Night\'s Dream', '1595-01-02',15.99),
+	(2,'A Midsummer Night''s Dream', '1595-01-02',15.99),
 	(3,'Going Home', '1973-01-02',15.99),
 	(3,'The Ring', '1980-01-02',14.99),
 	(3,'Secrets', '1985-01-02',15.99),
 	(3,'Message From Nam', '1990-01-02',13.99),
 	(4,'Career of Evil', '2015-01-02',15.99),
-	(4, 'Harry Potter and the Philosopher\'s Stone','1997-01-02',19.99),
+	(4, 'Harry Potter and the Philosopher''s Stone','1997-01-02',19.99),
 	(4,'Harry Potter and the Chamber of Secrets','1998-01-02',19.99),
 	(4,'Harry Potter and the Prisoner of Azkaban','1999-01-02',19.99),
 	(4,'Harry Potter and the Goblet of Fire','2000-01-02',19.99),
@@ -163,13 +163,13 @@ INSERT INTO books(author_id,title, year_of_release,cost) VALUES
 	(2,'Julius Caesar', '1599-01-02',11.99),
 	(2,'Timon of Athens', '1607-01-02',13.99),
 	(2,'As You Like It', '1600-01-02',18.99),
-	(2,'A Midsummer Night\'s Dream', '1595-01-02',15.99),
+	(2,'A Midsummer Night''s Dream', '1595-01-02',15.99),
 	(3,'Going Home', '1973-01-02',15.99),
 	(3,'The Ring', '1980-01-02',14.99),
 	(3,'Secrets', '1985-01-02',15.99),
 	(3,'Message From Nam', '1990-01-02',13.99),
 	(4,'Career of Evil', '2015-01-02',15.99),
-	(4, 'Harry Potter and the Philosopher\'s Stone','1997-01-02',19.99),
+	(4, 'Harry Potter and the Philosopher''s Stone','1997-01-02',19.99),
 	(4,'Harry Potter and the Chamber of Secrets','1998-01-02',19.99),
 	(4,'Harry Potter and the Prisoner of Azkaban','1999-01-02',19.99),
 	(4,'Harry Potter and the Goblet of Fire','2000-01-02',19.99),
