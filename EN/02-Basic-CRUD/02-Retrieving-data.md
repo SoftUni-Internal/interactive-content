@@ -383,7 +383,7 @@ Write a query to retrieve information about employees, who are in **department 4
 
 ## Example
 
-| **id** | **first_name** | **last_name* | **job_title** | **department_id** | **salary** |
+| id | first_name | last_name | job_title | department_id | salary |
 | --- | --- | --- | --- | --- | --- |
 | 3 | Smith | Johnson | Porter | 4 | 1100 |
 | 9 | Nikolay | Ivanov | Housekeeping | 4 | 1600 |
