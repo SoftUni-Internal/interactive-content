@@ -618,7 +618,7 @@ Write a query to **create a view** that selects all information about the **top 
 
 ## Example
 
-| **id** | **first_name** | **last_name* | **job_title** | **department_id** | **salary** |
+| **id** | **first_name** | **last_name** | **job_title** | **department_id** | **salary** |
 | --- | --- | --- | --- | --- | --- |
 | 8 | Pedro | Petrov | Front Desk Supervisor | 1 | 2100 |
 
