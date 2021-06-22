@@ -8,11 +8,13 @@ Angular-Modules-and-routing-3-4-The-NgModule
 
 An Angular module is a deployment **subset** of your whole Angular application.
 
-**NgModules** help us organize our code into blocks that work as a singular unit.
+It can help us organize our code into blocks that work as a singular unit.
+
+Modules are created with the `@NgModule()` decorator.
 
 You can inject them into **other modules** or components.
 
-This is how the main `app.module.ts` looks.
+This is how the main `app.module.ts` looks:
 
 ```js
 import { NgModule } from '@angular/core';
@@ -27,9 +29,9 @@ import { BrowserModule } from '@angular/platform-browser';
 export class AppModule { }
 ```
 
-As shown above, they are ordinary objects **decorated** with an `@NgModule` decorator.
+You can see from our example that they are just **regular objects** inside a **decorator**.
 
-The most popular **Angular** and **third-party** libraries **NgModules** are:
+The most popular **Angular** and **third-party** libraries that come as **NgModules** are:
 
 - [Material UI](https://material.angular.io/)
 - [Ionic](https://ionicframework.com/)
@@ -43,17 +45,19 @@ The most popular **Angular** and **third-party** libraries **NgModules** are:
 
 Angular-Modules-and-routing-5-6-Creating-Custom-modules
 
-We implement **custom modules** (also known as feature modules) when the app becomes larger.
+We can implement **custom modules** (also known as feature modules) when the app becomes larger.
 
-They need to import **CommonModule**, but we do not need to import the **BrowserModule** because **CommonModule** is part of it.
+You should import the **CommonModule** when creating a custom module. 
 
-Also, the **BrowserModule** should be only in the root module.
+There is no need to import the **BrowserModule** as the **CommonModule** is part of it.
 
-When we create a component in a module, it will show in the **declarations** array.
+It is a good practice to keep the **BrowserModule** only in the root module.
 
-By default, components in the **declaration** array are private.
+When we create a component in a module, it will appear in the **declarations** array.
 
-So if we want to use that **component outside that module**, we will need the **exports** array.
+By default, components in the **declarations** array are private.
+
+If we want to use the **component outside that module**, we will need the **exports** array.
 
 ```js
 import { NgModule } from '@angular/core';
@@ -70,9 +74,9 @@ export class CustomersModule {}
 
 In this example, we create a module called **CustomersModule**.
 
-This module **imports** the CommonModule and **declares** two components.
+It **imports** the **CommonModule** and **declares** two components.
 
-CustomersModule exports only one of the components and also uses a provider, called **CustomersService**.
+**CustomersModule** exports only one of the components and uses a provider, called **CustomersService**.
 
 [/slide]
 
@@ -115,7 +119,7 @@ Shared modules **contain pieces** of our application, shared across multiple are
 
 We declare a shared module to enable component reuse.
 
-An example of a shared module is a loading animation, used throughout our app.
+An example of a shared module is a loading animation used throughout our app.
 
 ## Feature Modules
 
