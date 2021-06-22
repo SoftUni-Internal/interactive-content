@@ -53,7 +53,7 @@ We will learn how to do this in the next lesson, for now just note that there is
 
 # Problem with Solution: Select Employee Information
 
-[code-task title="Delete Mountains" taskId="select-employee-info" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+[code-task title="Delete Mountains" taskId="select-employee-info" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
