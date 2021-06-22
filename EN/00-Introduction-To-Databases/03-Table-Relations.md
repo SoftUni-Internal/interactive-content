@@ -1,7 +1,7 @@
 
 [slide hideTitle]
-# Problem with Solution: One-To-One Relationship
-[code-task title="One-To-One Relationship" taskId="table-relations-one-to-one-relationship" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+# Problem with Solution: One-To-Many Relationship
+[code-task title="One-To-One Relationship" taskId="table-relations-one-to-many-relationship" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 
 ```
@@ -12,23 +12,30 @@
 ## Description
 Create two tables: 
 
-- **people** 
+- **manufacturers** 
 
-| **person_id** | **first_name** | **salary** | **passport_id** |
-| --- | --- | --- | --- |
-| 1   | Roberto | 43300.00 | 102 |
-| 2 | Tom | 56100.00 | 103 |
-| 3 | Yana | 60200.00 | 101 |
+| **manufacturer_id** | **name** | **established_on** | 
+| --- | --- | --- | 
+| 1   | BMW  | 01/03/1916 | 
+| 2 | Tesla | 01/01/2003 | 
+| 3 | Lada | 01/05/1966 | 
 
-- **passports**
+- **models**
 
-| **passport_id** | **passport_number** |
-| --- | --- |
-| 101 | N34FG21B |
-| 102 | K65LO4R7 |
-| 103 | ZE657QP2 |
+| **model_id** | **name** | **manufacturer_id**|
+| --- | --- | --- |
+| 101 | X1 |1 |
+| 102 | i6 | 1|
+| 103 | Model S |2 |
+| 104 | Model X | 2|
+| 105 | Model 3 |2 |
+| 106 | Nova |3 |
 
 Use the appropriate data types.
+
+**Insert the data from the examples above.**
+- Add primary and foreign keys
+
 
 
 [/task-description]
