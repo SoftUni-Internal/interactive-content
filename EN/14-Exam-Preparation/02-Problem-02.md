@@ -25,7 +25,7 @@ The time for lunch will be 1/8 of the break time and the time for relaxing will 
 ## Input
 You receive 3 lines from the console:
 - Name of the series - string
-- Duration of an episode - whole number in the range [10… 90]
+- Duration of an episode - whole number in the range [10… 35468456854684568]
 - Duration of the break - whole number in the range [10… 120]
 
 ## Output
