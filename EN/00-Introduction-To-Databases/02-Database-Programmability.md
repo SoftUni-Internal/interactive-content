@@ -11,6 +11,7 @@
 ```
 [/code-editor]
 [code-adapter]
+```
 CREATE DATABASE IF NOT EXISTS `soft_uni`
 USE `soft_uni`;
 
@@ -1666,7 +1667,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(30, 'Bordeaux'),
 	(31, 'Berlin'),
 	(32, 'Sofia');
-
+```
 [/code-adapter]
 [task-description]
 ## Description
