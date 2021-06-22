@@ -45,22 +45,27 @@ Use the appropriate data types.
 [input]
 SELECT lower(table_name)
 FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'people'
+WHERE TABLE_SCHEMA = database()
+  and lower(TABLE_NAME) = 'manufacturers'
 order by lower(table_name);
 
 SELECT lower(COLUMN_NAME)
 FROM information_schema.COLUMNS
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'people'
+WHERE TABLE_SCHEMA = database()
+  and lower(TABLE_NAME) = 'manufacturers'
 order by lower(COLUMN_NAME);
 
 SELECT lower(table_name)
 FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'passports'
+WHERE TABLE_SCHEMA = database()
+  and lower(TABLE_NAME) = 'models'
 order by lower(table_name);
+
 
 SELECT lower(COLUMN_NAME)
 FROM information_schema.COLUMNS
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'passports'
+WHERE TABLE_SCHEMA = database()
+  and lower(TABLE_NAME) = 'models'
 order by lower(COLUMN_NAME);
 
 
@@ -68,103 +73,113 @@ SELECT TABLE_NAME, COUNT(\*) AS pk_count
 FROM information_schema.COLUMNS
 WHERE TABLE_SCHEMA = DATABASE()
   AND COLUMN_KEY = 'PRI'
-  AND TABLE_NAME IN ('passports', 'people')
+  AND TABLE_NAME IN ('manufacturers', 'models')
 GROUP BY TABLE_NAME
 ORDER BY TABLE_NAME;
 
-SELECT lower(column_name)
-FROM INFORMATION_SCHEMA.columns
-WHERE TABLE_SCHEMA = database()
-  and lower(table_name) = 'people'
-  and column_name = 'passport_id'
-  and column_key = 'UNI'
-order by lower(column_name);
 
-SELECT
-    lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
-FROM
-    INFORMATION_SCHEMA.KEY_COLUMN_USAGE
-WHERE
-        REFERENCED_TABLE_SCHEMA = database() AND
-        lower(REFERENCED_COLUMN_NAME) = 'passport_id' AND
-        lower(REFERENCED_TABLE_NAME) = 'passports'
-order by tn, cn, ref_tn, ref_cn;
+SELECT TABLE_NAME, COLUMN_NAME, COUNT(\*) AS pk_count
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = DATABASE()
+  AND COLUMN_KEY = 'MUL'
+  AND TABLE_NAME IN ('manufacturers', 'models')
+GROUP BY TABLE_NAME, COLUMN_NAME
+ORDER BY TABLE_NAME, COLUMN_NAME;
 
-select \* from
-    people per inner join passports pas on per.passport_id = pas.passport_id
-order by per.person_id;
+select man.manufacturer_id, man.name, date(man.established_on), m.model_id, m.name
+from manufacturers man
+         inner join models m on man.manufacturer_id = m.manufacturer_id
+order by man.manufacturer_id;
 [/input]
 [output]
-people
-first_name
-passport_id
-person_id
-salary
-passports
-passport_id
-passport_number
-passports
+manufacturers
+established_on
+manufacturer_id
+name
+models
+manufacturer_id
+model_id
+name
+manufacturers
 1
-people
+models
 1
-passport_id
-people
-passport_id
-passports
-passport_id
+models
+manufacturer_id
 1
-Roberto
-43300.00
+1
+BMW
+1916-03-01 00:00:00
+101
+X1
+1
+BMW
+1916-03-01 00:00:00
 102
-102
-K65LO4R7
+i6
 2
-Tom
-56100.00
+Tesla
+2003-01-01 00:00:00
 103
-103
-ZE657QP2
+Model S
+2
+Tesla
+2003-01-01 00:00:00
+104
+Model X
+2
+Tesla
+2003-01-01 00:00:00
+105
+Model 3
 3
-Yana
-60200.00
-101
-101
-N34FG21B
+Lada
+1966-05-01 00:00:00
+106
+Nova
 [/output]
 [/test]
 [test]
 [input]
 SELECT lower(table_name)
 FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'people'
+WHERE TABLE_SCHEMA = database()
+  and lower(TABLE_NAME) = 'manufacturers'
 order by lower(table_name);
 
 SELECT lower(COLUMN_NAME)
 FROM information_schema.COLUMNS
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'people'
+WHERE TABLE_SCHEMA = database()
+  and lower(TABLE_NAME) = 'manufacturers'
 order by lower(COLUMN_NAME);
 [/input]
 [output]
-people
-first_name
-passport_id
-person_id
-salary
+manufacturers
+established_on
+manufacturer_id
+name
 [/output]
 [/test]
 [test]
 [input]
 SELECT lower(table_name)
-	 FROM information_schema.TABLES 
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'passports';
-	 SELECT lower(COLUMN_NAME) 
-FROM information_schema.COLUMNS 
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'passports';
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = database()
+  and lower(TABLE_NAME) = 'models'
+order by lower(table_name);
+
+
+SELECT lower(COLUMN_NAME)
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = database()
+  and lower(TABLE_NAME) = 'models'
+order by lower(COLUMN_NAME);
 [/input]
 [output]
-passports
-passport_id
-passport_number
+models
+manufacturer_id
+model_id
+name
 [/output]
 [/test]
 [test]
@@ -173,12 +188,12 @@ SELECT TABLE_NAME, COUNT(\*) AS pk_count
   FROM information_schema.COLUMNS
  WHERE TABLE_SCHEMA = DATABASE()
    AND COLUMN_KEY = 'PRI'
-   AND TABLE_NAME IN ('people')
+   AND TABLE_NAME IN ('manufacturers')
  GROUP BY TABLE_NAME
  ORDER BY TABLE_NAME;
 [/input]
 [output]
-people
+manufacturers
 1
 [/output]
 [/test]
@@ -188,71 +203,68 @@ SELECT TABLE_NAME, COUNT(\*) AS pk_count
   FROM information_schema.COLUMNS
  WHERE TABLE_SCHEMA = DATABASE()
    AND COLUMN_KEY = 'PRI'
-   AND TABLE_NAME IN ('passports')
+   AND TABLE_NAME IN ('models')
  GROUP BY TABLE_NAME
  ORDER BY TABLE_NAME;
 [/input]
 [output]
-passports
+models
 1
 [/output]
 [/test]
 [test]
 [input]
-SELECT lower(column_name)
-    FROM INFORMATION_SCHEMA.columns
-    WHERE TABLE_SCHEMA = database()
-    and lower(table_name) = 'people'
-	and column_name = 'passport_id'
-	 and column_key = 'UNI';
+SELECT TABLE_NAME, COLUMN_NAME,  COUNT(\*) AS pk_count
+  FROM information_schema.COLUMNS
+ WHERE TABLE_SCHEMA = DATABASE()
+   AND COLUMN_KEY = 'MUL'
+   AND TABLE_NAME IN ('manufacturers', 'models')
+ GROUP BY TABLE_NAME, COLUMN_NAME
+ ORDER BY TABLE_NAME, COLUMN_NAME
 [/input]
 [output]
-passport_id
+models
+manufacturer_id
+1
 [/output]
 [/test]
 [test]
 [input]
-SELECT 
-  lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
-FROM
-  INFORMATION_SCHEMA.KEY_COLUMN_USAGE
-WHERE
-  REFERENCED_TABLE_SCHEMA = database() AND
-  lower(REFERENCED_COLUMN_NAME) = 'passport_id' AND 
-  lower(REFERENCED_TABLE_NAME) = 'passports';
-[/input]
-[output]
-people
-passport_id
-passports
-passport_id
-[/output]
-[/test]
-[test]
-[input]
-select \* from 
-people per inner join passports pas on per.passport_id = pas.passport_id
-order by per.person_id;
+select man.manufacturer_id, man.name, date(man.established_on), m.model_id, m.name from 
+manufacturers man inner join models m on man.manufacturer_id = m.manufacturer_id
+order by man.manufacturer_id;
 [/input]
 [output]
 1
-Roberto
-43300.00
+BMW
+1916-03-01 00:00:00
+101
+X1
+1
+BMW
+1916-03-01 00:00:00
 102
-102
-K65LO4R7
+i6
 2
-Tom
-56100.00
+Tesla
+2003-01-01 00:00:00
 103
-103
-ZE657QP2
+Model S
+2
+Tesla
+2003-01-01 00:00:00
+104
+Model X
+2
+Tesla
+2003-01-01 00:00:00
+105
+Model 3
 3
-Yana
-60200.00
-101
-101
-N34FG21B
+Lada
+1966-05-01 00:00:00
+106
+Nova
 [/output]
 [/test]
 [/tests]
