@@ -21,27 +21,27 @@ It includes the following configurations:
 
 [image assetsSrc="cubicle-workshop-02.png" /]
 
-- `Config.js`
-Here you can set the port on which your application will be accessible.
+`Config.js`
+- Here you can set the port on which your application will be accessible.
  
 [image assetsSrc="cubicle-workshop-03.png" /]
 
-- `Database.json`
-Initially contains only an empty array. Will be used later as a local database.
+`Database.json`
+- Initially contains only an empty array. Will be used later as a local database.
 
 [image assetsSrc="cubicle-workshop-04.png" /]
 
-- `Express.js`
+`Express.js`
 
 [image assetsSrc="cubicle-workshop-05.png" /]
 
-- `Routes.js`
-This is where the controllers and routes will be configured.
+`Routes.js`
+- This is where the controllers and routes will be configured.
 
 [image assetsSrc="cubicle-workshop-06.png" /]
 
-- `Index.js`
-Runs the entire configuration based on the current environment that the app is running in. 
+`Index.js`
+- Runs the entire configuration based on the current environment that the app is running in. 
 
 Configures the app to work with Express and the routes that are set up in the `./config/routes` file.
 

@@ -21,27 +21,27 @@ Include următoarele configurații:
 
 [image assetsSrc="cubicle-workshop-02.png" /]
 
-- `Config.js`
-Aici puteți seta portul pe care aplicația dvs. va fi accesibilă.
+`Config.js`
+- Aici puteți seta portul pe care aplicația dvs. va fi accesibilă.
  
 [image assetsSrc="cubicle-workshop-03.png" /]
 
-- `Database.json`
-Inițial conține doar o matrice goală. Va fi folosit ulterior ca bază de date locală.
+`Database.json`
+- Inițial conține doar o matrice goală. Va fi folosit ulterior ca bază de date locală.
 
 [image assetsSrc="cubicle-workshop-04.png" /]
 
-- `Express.js`
+`Express.js`
 
 [image assetsSrc="cubicle-workshop-05.png" /]
 
-- `Routes.js`
-Aici vor fi configurate controlerele și rutele.
+`Routes.js`
+- Aici vor fi configurate controlerele și rutele.
 
 [image assetsSrc="cubicle-workshop-06.png" /]
 
-- `Index.js`
-Rulează întreaga configurație pe baza mediului curent în care rulează aplicația.
+`Index.js`
+- Rulează întreaga configurație pe baza mediului curent în care rulează aplicația.
 
 Configurează aplicația să funcționeze cu Express și rutele care sunt configurate în fișierul `./config/routes`.
 
