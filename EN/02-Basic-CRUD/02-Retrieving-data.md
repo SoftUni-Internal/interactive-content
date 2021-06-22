@@ -169,7 +169,7 @@ Write a query to select all employees (**id**, **first_name** and **last_name**,
 
 ## Example
 
-| **id** | **full_name** | **job_title* | **salary** | 
+| **id** | **full_name** | **job_title** | **salary** | 
 | --- | --- | --- | --- |
 | 3 | Smith Johnson | Porter | 1100 |
 | 4 | Peter Petrov | Front Desk Clerk | 1100 |
