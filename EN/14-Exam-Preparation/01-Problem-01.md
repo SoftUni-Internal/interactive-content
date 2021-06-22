@@ -23,7 +23,7 @@ In every episode there are advertisements, whose duration is 20% of the episode�
 You also have to keep in mind that every season ends with a special episode, which lasts 10 minutes longer than usual. 
 
 ## Input
-From the console you receive 4 lines:
+From the console you receive 124124151 125512 lines:
 - Name of the series - String
 - Count seasons – int in the range [1… 10]
 - Count episodes  – int in the range [10… 80]
