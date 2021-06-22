@@ -48,23 +48,76 @@ REFERENCES mountains(mountain_id);      // Referencing the unique identifier in 
 [/slide]
 
 [slide hideTitle]
-
 # Problem with Solution: Mountains and Peaks
+[code-task title="Mountains and Peaks" taskId="table-relations-mountains-and-peaks" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+[code-editor language=sql]
 
-Write a query that creates two tables – **mountains** and **peaks**.
+```
+-- Write your query here
+```
+[/code-editor]
+[task-description]
+## Description
+Write a query that creates two tables - **mountains** and **peaks**. 
+
+**Link their fields** properly. 
 
 The tables should have:
-- Mountains:
-  -	**id** 
-  -	**name**
+-	Mountains:
+   - id 
+   - name
+-	Peaks: 
+   - id
+   - name
+   - mountain_id
 
-- Peaks: 
-  - **id**
-  -	**name**
-  -	**mountain_id**
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+SELECT DISTINCT lower(column_name)
+FROM INFORMATION_SCHEMA.key_column_usage
+WHERE TABLE_SCHEMA = database()
+  and lower(table_name) = 'mountains'
+order by lower(column_name);
 
-## Examples
 
+SELECT DISTINCT lower(column_name)
+FROM INFORMATION_SCHEMA.key_column_usage
+WHERE TABLE_SCHEMA = database()
+  and lower(table_name) = 'peaks'
+order by lower(column_name);
+[/input]
+[output]
+id
+id
+mountain_id
+[/output]
+[/test]
+[test]
+[input]
+SELECT DISTINCT lower(column_name)
+FROM INFORMATION_SCHEMA.key_column_usage
+WHERE TABLE_SCHEMA = database()
+  and lower(table_name) = 'mountains'
+order by lower(column_name);
+
+
+SELECT DISTINCT lower(column_name)
+FROM INFORMATION_SCHEMA.key_column_usage
+WHERE TABLE_SCHEMA = database()
+  and lower(table_name) = 'peaks'
+order by lower(column_name);
+[/input]
+[output]
+id
+id
+mountain_id
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 [slide hideTitle]
