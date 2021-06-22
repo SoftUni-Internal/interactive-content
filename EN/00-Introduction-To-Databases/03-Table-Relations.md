@@ -2,8 +2,8 @@
 
 
 [slide hideTitle]
-# Problem with Solution: Trip Organization
-[code-task title="Problem: Find All Information About Departments" taskId="mysql-prepare-db-and-run-queries" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+# Problem with Solution: SoftUni Hiking
+[code-task title="SoftUni Hiking" taskId="table-relations-softUni-hiking" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
 ```
@@ -12,16 +12,15 @@
 [/code-editor]
 [task-description]
 ## Description
-Write a query that retrieves information about SoftUni Camp's transport organization. 
 
-It should get information about the **drivers** (**name** and **id**) and their **vehicle_type**. 
+Get information about hiking **routes** - **starting point** and **ending point**, and their **leaders** - **name** and **id**. 
 
-|**driver_id**|**vehicle_type**|**driver_name**|
-|:---:|:---:|:---:|
-|1|bus|Simo Sheytanov|
-|2|van|Roli Dimitrova|
-|1|van|Simo Sheytanov|
-|...|...|...|
+|**route_starting_point**|**route_ending_point**|**leader_id**| **leader_name** |
+|:---:|:---:|:---:| :---:|
+|Four Seasons|	Mont Blanc Peak	|3|	Thomas Williams|
+|Mercure	Monte Rosa	|3	|Thomas Williams|
+|Fish Lake Hut	|Rila Monastery|	3	|Thomas Williams|
+|Borovets	|Musala Peak|	4	|William Jones|
 
 [/task-description]
 [code-io /]
@@ -104,30 +103,22 @@ insert into routes(starting_point,end_point,leader_id,route_time) values
 ("Borovets", "Musala Peak", 4, '03:30:00');
 [/input]
 [output]
-1
-bus	
-Oliver Smith
-2
-van
-Emma Johnson
-1
-van
-Oliver Smith
-4
-car
+Four Seasons
+Mont Blanc Peak	
+3	
+Thomas Williams
+Mercure
+Monte Rosa
+3	
+Thomas Williams
+Fish Lake Hut
+Rila Monastery
+3	
+Thomas Williams
+Borovets	
+Musala Peak	
+4	
 William Jones
-5
-car
-Florence Brown
-6
-car
-Chloe Davis
-7
-car
-Charlotte Miller
-8
-bus
-Henry Wilson
 [/output]
 [/test]
 [test]
@@ -208,30 +199,22 @@ insert into routes(starting_point,end_point,leader_id,route_time) values
 ("Borovets", "Musala Peak", 4, '03:30:00');
 [/input]
 [output]
-1
-bus	
-Oliver Smith
-2
-van
-Emma Johnson
-1
-van
-Oliver Smith
-4
-car
+Four Seasons
+Mont Blanc Peak	
+3	
+Thomas Williams
+Mercure
+Monte Rosa
+3	
+Thomas Williams
+Fish Lake Hut
+Rila Monastery
+3	
+Thomas Williams
+Borovets	
+Musala Peak	
+4	
 William Jones
-5
-car
-Florence Brown
-6
-car
-Chloe Davis
-7
-car
-Charlotte Miller
-8
-bus
-Henry Wilson
 [/output]
 [/test]
 [/tests]
