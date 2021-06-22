@@ -1,9 +1,7 @@
-# Table Relations
-
 
 [slide hideTitle]
-# Problem with Solution: Delete Mountains
-[code-task title="Delete Mountains" taskId="table-relations-delete-mountains" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+# Problem with Solution: One-To-One Relationship
+[code-task title="One-To-One Relationship" taskId="table-relations-one-to-one-relationship" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 
 ```
@@ -12,9 +10,25 @@
 [/code-editor]
 [task-description]
 ## Description
-Use the tables from the **first** problem - **Mountains and Peaks**.
+Create two tables: 
 
-Write a query to create a **one-to-many** relationship between one table, holding information about **mountains** (**id**, **name**) and another table - about **peaks** (**id**, **name**, **mountain_id**), so that when a mountain gets removed from the database, all of its peaks get deleted too.
+- **people** 
+
+| **person_id** | **first_name** | **salary** | **passport_id** |
+| --- | --- | --- | --- |
+| 1   | Roberto | 43300.00 | 102 |
+| 2 | Tom | 56100.00 | 103 |
+| 3 | Yana | 60200.00 | 101 |
+
+- **passports**
+
+| **passport_id** | **passport_number** |
+| --- | --- |
+| 101 | N34FG21B |
+| 102 | K65LO4R7 |
+| 103 | ZE657QP2 |
+
+Use the appropriate data types.
 
 
 [/task-description]
@@ -22,31 +36,239 @@ Write a query to create a **one-to-many** relationship between one table, holdin
 [tests]
 [test open]
 [input]
-insert into mountains(id,name) values(1,"Pirin"),(2,"Rila");
-insert into peaks(id,name,mountain_id) values(1, "Vihren",1),(2, "Kutelo",1),(4, "Musala",2);
-delete from mountains where id = 1;
-select \* from peaks;
+\# table people name and column names check
+SELECT lower(table_name)
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'people'
+order by lower(table_name);
+
+SELECT lower(COLUMN_NAME)
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'people'
+order by lower(COLUMN_NAME);
+
+\# table passports name and column names check
+SELECT lower(table_name)
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'passports'
+order by lower(table_name);
+
+SELECT lower(COLUMN_NAME)
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'passports'
+order by lower(COLUMN_NAME);
+
+\# primary keys check
+
+SELECT TABLE_NAME, COUNT(\*) AS pk_count
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = DATABASE()
+  AND COLUMN_KEY = 'PRI'
+  AND TABLE_NAME IN ('passports', 'people')
+GROUP BY TABLE_NAME
+ORDER BY TABLE_NAME;
+
+\# check if people.passport_id has unique constraint
+
+SELECT lower(column_name)
+FROM INFORMATION_SCHEMA.columns
+WHERE TABLE_SCHEMA = database()
+  and lower(table_name) = 'people'
+  and column_name = 'passport_id'
+  and column_key = 'UNI'
+order by lower(column_name);
+
+
+\# foreign key check
+
+SELECT
+    lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
+FROM
+    INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE
+        REFERENCED_TABLE_SCHEMA = database() AND
+        lower(REFERENCED_COLUMN_NAME) = 'passport_id' AND
+        lower(REFERENCED_TABLE_NAME) = 'passports'
+order by tn, cn, ref_tn, ref_cn;
+
+\# data insertion check
+
+select \* from
+    people per inner join passports pas on per.passport_id = pas.passport_id
+order by per.person_id;
 [/input]
 [output]
-4
-Musala
+people
+first_name
+passport_id
+person_id
+salary
+passports
+passport_id
+passport_number
+passports
+1
+people
+1
+passport_id
+people
+passport_id
+passports
+passport_id
+1
+Roberto
+43300.00
+102
+102
+K65LO4R7
 2
+Tom
+56100.00
+103
+103
+ZE657QP2
+3
+Yana
+60200.00
+101
+101
+N34FG21B
 [/output]
 [/test]
 [test]
 [input]
-insert into mountains(name) values("Pirin"),("Rila");
-insert into peaks(id,name,mountain_id) values(1, "Vihren",1),(2, "Kutelo",1),(4, "Musala",2);
-delete from mountains where id = 2;
-select \* from peaks;
+SELECT lower(table_name)
+FROM information_schema.TABLES
+WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'people'
+order by lower(table_name);
+
+SELECT lower(COLUMN_NAME)
+FROM information_schema.COLUMNS
+WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'people'
+order by lower(COLUMN_NAME);
+[/input]
+[output]
+people
+first_name
+passport_id
+person_id
+salary
+[/output]
+[/test]
+[test]
+[input]
+\# test 2 : passports table name and columns names check
+
+SELECT lower(table_name)
+	 FROM information_schema.TABLES 
+WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'passports';
+	 SELECT lower(COLUMN_NAME) 
+FROM information_schema.COLUMNS 
+WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'passports';
+[/input]
+[output]
+passports
+passport_id
+passport_number
+[/output]
+[/test]
+[test]
+[input]
+\# test 3 : table persons PK check
+
+SELECT TABLE_NAME, COUNT(\*) AS pk_count
+  FROM information_schema.COLUMNS
+ WHERE TABLE_SCHEMA = DATABASE()
+   AND COLUMN_KEY = 'PRI'
+   AND TABLE_NAME IN ('people')
+ GROUP BY TABLE_NAME
+ ORDER BY TABLE_NAME;
+[/input]
+[output]
+people
+1
+[/output]
+[/test]
+[test]
+[input]
+\# test 4 : table passports PK check
+
+SELECT TABLE_NAME, COUNT(\*) AS pk_count
+  FROM information_schema.COLUMNS
+ WHERE TABLE_SCHEMA = DATABASE()
+   AND COLUMN_KEY = 'PRI'
+   AND TABLE_NAME IN ('passports')
+ GROUP BY TABLE_NAME
+ ORDER BY TABLE_NAME;
+[/input]
+[output]
+passports
+1
+[/output]
+[/test]
+[test]
+[input]
+\# test 5 : check if persons.passport_id has unique constraint
+
+SELECT lower(column_name)
+    FROM INFORMATION_SCHEMA.columns
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'people'
+	and column_name = 'passport_id'
+	 and column_key = 'UNI';
+[/input]
+[output]
+passport_id
+[/output]
+[/test]
+[test]
+[input]
+\# test 6 : FK check
+
+
+SELECT 
+  lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
+FROM
+  INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE
+  REFERENCED_TABLE_SCHEMA = database() AND
+  lower(REFERENCED_COLUMN_NAME) = 'passport_id' AND 
+  lower(REFERENCED_TABLE_NAME) = 'passports';
+[/input]
+[output]
+people
+passport_id
+passports
+passport_id
+[/output]
+[/test]
+[test]
+[input]
+\# test 7 : check data insertion
+
+select \* from 
+people per inner join passports pas on per.passport_id = pas.passport_id
+order by per.person_id;
 [/input]
 [output]
 1
-Vihren
-1
+Roberto
+43300.00
+102
+102
+K65LO4R7
 2
-Kutelo
-1
+Tom
+56100.00
+103
+103
+ZE657QP2
+3
+Yana
+60200.00
+101
+101
+N34FG21B
 [/output]
 [/test]
 [/tests]
