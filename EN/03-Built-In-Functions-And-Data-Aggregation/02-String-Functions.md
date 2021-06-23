@@ -86,10 +86,9 @@ oftun
 [/code-editor]
 [task-description]
 
-**Here is a link to the** [resources]() **for this task.**
-// Book-Library.zip
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/Booklibrary_Built-In-Functions.zip) **for this task.**
 
-Download and get familiar with the **book_library** database. 
+Download and get familiar with the **booklibrary** database. 
 
 You will use it in the following exercises.
 

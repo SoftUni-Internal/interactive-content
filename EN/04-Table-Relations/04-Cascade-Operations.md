@@ -59,7 +59,7 @@ CREATE TABLE `cars` (                                 # Create the second table
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Use the tables from the **first** problem - **Mountains and Peaks**.
 
 Write a query to create a **one-to-many** relationship between one table, holding information about **mountains** (**id**, **name**) and another table - about **peaks** (**id**, **name**, **mountain_id**), so that when a mountain gets removed from the database, all of its peaks get deleted too.

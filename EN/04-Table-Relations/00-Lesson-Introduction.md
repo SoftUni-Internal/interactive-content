@@ -44,15 +44,15 @@
 
 |**Problem Name**|**Database**|
 |---|---|
-|Trip Organization|[camp_db]()|
-|SoftUni Hiking|camp_db|
+|Trip Organization|[Camp Database](https://videos.softuni.org/resources/java/java-mysql/camp_db_table_relations.zip)|
+|SoftUni Hiking|Camp Database|
 
 ## Homework
 
 |**Problem Name**|**Database**|
 |---|---|
-|SoftUni Design|[soft_uni_database]()|
-|Geography Design|[geography_database]()|
-|Peaks in Rila|geography_database|
+|SoftUni Design|[SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/soft_uni_database_table_relations.zip)|
+|Geography Design|[Geography Database](https://videos.softuni.org/resources/java/java-mysql/geography_database_table_relations.zip)|
+|Peaks in Rila|Geography Database|
 
 [/slide]

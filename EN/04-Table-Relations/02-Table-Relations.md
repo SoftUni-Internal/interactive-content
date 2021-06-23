@@ -57,7 +57,7 @@ REFERENCES mountains(mountain_id);      // Referencing the unique identifier in 
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Write a query that creates two tables - **mountains** and **peaks**. 
 
 **Link their fields** properly. 

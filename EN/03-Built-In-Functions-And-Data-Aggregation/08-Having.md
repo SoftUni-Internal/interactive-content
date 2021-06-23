@@ -1,3 +1,5 @@
+# Having
+
 [slide hideTitle]
 
 # The Having Clause
