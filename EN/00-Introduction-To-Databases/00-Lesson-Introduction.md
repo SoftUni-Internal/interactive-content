@@ -105,25 +105,25 @@ INSERT INTO books(author_id,title, year_of_release,cost) VALUES
 [/input]
 [output]
 Full Name
-days_lived
+days\_lived
 Agatha Christie
 31164
 William Shakespeare
 18990
-Danielle Schuelein-Steel
-
+Danielle Schuelein\-Steel
+NULL
 Joanne Rowling
-
+NULL
 Lev Tolstoy
 30021
 Paulo Souza
-
+NULL
 Stephen King
-
+NULL
 John Tolkien
 29827
 Erika Mitchell
-
+NULL
 [/output]
 [/test]
 [test]
@@ -199,25 +199,25 @@ INSERT INTO books(author_id,title, year_of_release,cost) VALUES
 [/input]
 [output]
 Full Name
-days_lived
+days\_lived
 Agatha Christie
 31164
 William Shakespeare
 18990
-Danielle Schuelein-Steel
-
+Danielle Schuelein\-Steel
+NULL
 Joanne Rowling
-
+NULL
 Lev Tolstoy
 30021
 Paulo Souza
-
+NULL
 Stephen King
-
+NULL
 John Tolkien
 29827
 Erika Mitchell
-
+NULL
 [/output]
 [/test]
 [/tests]
