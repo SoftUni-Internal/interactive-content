@@ -10,7 +10,7 @@
   - applying them makes our applications easier to maintain and extend
 
 - Dependency Injection is a **popular** design pattern
-  - allows us to **inject dependencies** in different components
+  - it allows us to **inject dependencies** into different components
 
 ```js
 import { Injectable } from "@angular/core";
