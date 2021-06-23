@@ -185,6 +185,22 @@ TRUNCATE TABLE `users`;
 
 ```
 [/code-editor]
+
+
+[task-description]
+## Description
+
+Write a query that **deletes all employees who are in departments 1 or 2** from the **employees** table. Then select all the records from the **employees** table and **order the results by id**.
+
+## Example
+
+| id | first_name | last_name | job_title | department_id | salary |
+| --- | --- | --- | --- | --- | --- |
+| 3 | Samuel | Bridges | Porter | 4 | 1100 |
+| 6 | Edwin | Young | Waiter | 3 | 990 |
+| 7 | Alexander | Garner | Executive Chef | 3 | 1800 |
+| 9 | Eileen | Clayton | Housekeeping | 4 | 1600 |
+
 [/task-description]
 [code-io /]
 [tests]
