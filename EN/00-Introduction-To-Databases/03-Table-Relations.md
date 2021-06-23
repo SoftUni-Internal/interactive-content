@@ -33,7 +33,7 @@ Create a tables:
 [tests]
 [test open]
 [input]
-SELECT lower(table_name)
+SELECT lower(TABLE_NAME)
 	 FROM information_schema.TABLES 
 WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'teachers';
 
