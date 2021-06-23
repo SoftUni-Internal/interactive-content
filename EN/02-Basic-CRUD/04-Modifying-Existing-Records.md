@@ -232,7 +232,7 @@ INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`
 	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
 	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
 	('Edwin' ,'Young', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Alexander', 'Garner', 'Executive Chef', 3, 1800.00),
 	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
 	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
@@ -291,7 +291,7 @@ INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`
 	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
 	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
 	('Edwin' ,'Young', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Alexander', 'Garner', 'Executive Chef', 3, 1800.00),
 	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
 	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
