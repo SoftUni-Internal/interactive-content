@@ -31,8 +31,8 @@ This query will return a **list** of **position titles** and the **number of emp
 [/slide]
 
 [slide hideTitle]
-# Problem and Solution: Department Info
-[code-task title="Department Info" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-department-info" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+# Problem and Solution: Menu Prices
+[code-task title="Menu Prices" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-menu-prices" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -40,9 +40,27 @@ This query will return a **list** of **position titles** and the **number of emp
 [/code-editor]
 [task-description]
 
-Write an SQL query to **count** the number of employees **in each department by id**. 
+Write a query to retrieve information about the prices of each **category**. 
 
-Order the information by **deparment_id**, then by the **number of employees**. 
+The **output** should consist of the following: 
+- Category_id 
+- Average Price  
+- Cheapest Product 
+- Most Expensive Product 
+  
+See the examples for more information. 
+
+**Round** the results to **2 digits after the decimal point**.   
+
+## Example
+
+| category_id | Average Price | Cheapest Product | Most Expensive Product |
+|---|---|---|---|
+| 1 | 7.49 | 6.79 | 8.79 |
+| 2 | 10.93 | 7.99 | 14.89 |
+| 3 | 7.90 | 6.90 | 8.89 |
+| 4 | 12.79 | 11.69 | 13.69 |
+| 5 | 5.37 | 4.90 | 5.60 |
 
 [/task-description]
 [code-io /]
@@ -103,11 +121,25 @@ INSERT INTO products (name, category_id,price) VALUES ("Lasagne", 4,12.99),
 [/input]
 [output]
 1
+7.49
+6.79
+8.79
 2
-2
+10.93
+7.99
+14.89
+3
+7.9
+6.9
+8.89
 4
-3
-3
+12.79
+11.69
+13.69
+5
+5.37
+4.9
+5.6
 [/output]
 [/test]
 [test]
@@ -166,11 +198,25 @@ INSERT INTO products (name, category_id,price) VALUES ("Lasagne", 4,12.99),
 [/input]
 [output]
 1
+7.49
+6.79
+8.79
 2
-2
+10.93
+7.99
+14.89
+3
+7.9
+6.9
+8.89
 4
-3
-3
+12.79
+11.69
+13.69
+5
+5.37
+4.9
+5.6
 [/output]
 [/test]
 [/tests]

@@ -35,3 +35,24 @@
 - Creating a relational schema for the database
 
 [/slide]
+
+
+[slide hideTitle]
+# Resources
+
+## Lab problems
+
+|**Problem Name**|**Database**|
+|---|---|
+|Trip Organization|[camp_db]()|
+|SoftUni Hiking|camp_db|
+
+## Homework
+
+|**Problem Name**|**Database**|
+|---|---|
+|SoftUni Design|[soft_uni_database]()|
+|Geography Design|[geography_database]()|
+|Peaks in Rila|geography_database|
+
+[/slide]
