@@ -332,9 +332,7 @@ To do that we use the "**INSERT**" clause. Populate the "employees" table with 3
 [tests]
 [test]
 [input]
-```
 SELECT count(id) from `employees`;
-```
 [/input]
 [output]
 3
