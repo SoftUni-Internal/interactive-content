@@ -93,6 +93,7 @@ order by teacher_id;
 ```
 [/input]
 [output]
+```
 teachers
 manager_id
 name
@@ -120,6 +121,7 @@ Mark
 106
 Greta
 101
+```
 [/output]
 [/test]
 [test]
