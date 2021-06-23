@@ -104,6 +104,8 @@ INSERT INTO books(author_id,title, year_of_release,cost) VALUES
 	(9,'Fifty Shades Freed','2012-01-02',13.99);
 [/input]
 [output]
+Full Name 
+days_lived
 Agatha Christie
 31164
 William Shakespeare
@@ -196,6 +198,8 @@ INSERT INTO books(author_id,title, year_of_release,cost) VALUES
 	(9,'Fifty Shades Freed','2012-01-02',13.99);
 [/input]
 [output]
+Full Name 
+days_lived
 Agatha Christie
 31164
 William Shakespeare
