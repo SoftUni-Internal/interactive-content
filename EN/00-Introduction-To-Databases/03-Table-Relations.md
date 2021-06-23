@@ -57,7 +57,7 @@ WHERE
   lower(REFERENCED_COLUMN_NAME) = 'teacher_id' AND 
   lower(REFERENCED_TABLE_NAME) = 'teachers';
   
-select \* from 
+select * from 
 teachers 
 order by teacher_id;
 [/input]
@@ -150,7 +150,7 @@ teacher_id
 [/test]
 [test]
 [input]
-select \* from 
+select * from 
 teachers 
 order by teacher_id;
 [/input]
