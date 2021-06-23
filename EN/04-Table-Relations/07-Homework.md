@@ -2072,7 +2072,7 @@ Create an E/R Diagram of the "**Geography Database**".
 [code-task title="Peaks in Rila" taskId="java-db-and-MySQL-table-relations-peaks-in-rila"executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
-
+-- Write your query here
 ```
 [/code-editor]
 [task-description]
