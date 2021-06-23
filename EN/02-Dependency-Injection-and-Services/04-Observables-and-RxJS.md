@@ -8,13 +8,19 @@
 
 The premise of functional programming is that functions should have **no side effects**, meaning a function only **does one thing** and does not change the state.
 
-There are of course some **exceptions** to this rule, especially when dealing with **IO libraries** or functions.
+There are some **exceptions** to this rule, especially when dealing with **IO libraries** or functions.
 
-Functions can be treated the **same way as objects** in object-oriented programming you can assign them to **variables**, you can return them from **functions**, and you can even **pass them to functions** and use them in calculations.
+Functions can be treated the **same way as objects** in object-oriented programming. 
+
+You can assign them to **variables**, you can return them from **functions**, and you can even **pass them to other functions**.
  
-Everything you can do with **objects** you can do with **functions** that is what is often referred to as treating functions like "**first-class citizens**".
+Everything you can do with **objects**, you can do with **functions**. 
 
-Functional programming is **declarative**, where a parameter is given to the function as a and a **certain result** from that function is expected, rather than imperative which explains **step by step** what needs to be done to receive the expected result.
+That is often referred to as treating functions like "**first-class citizens**".
+
+Functional programming is **declarative**, which means that it utilizes functions to perform specific operations without keeping state.
+
+This makes it different from **imperative** programming, where the solution is described one step at a time.  
 
 As a result, functional code tends to be **easier to predict** and **test**, while also being more **concise**.
 
@@ -22,19 +28,21 @@ Most modern JavaScript applications make use of functional programming ideas.
 
 ## Asynchronous Programming
 
-JavaScript is a **single-threaded** language, the majority of JavaScript code thas is has been **written** so far is being run as a **single process** on the computer.
+JavaScript is a **single-threaded** language, meaning that the majority of code that has been **written** so far is being run as a **single process** on the computer.
 
-That means for the most part the code runs from **top to bottom**, always in the same order, in kind of a **procedural** way.
+The code runs from **top to bottom**, always in the same order, in kind of a **procedural** way.
 
-Asynchronous code starts **very similar**, at the top of the file and executes the code until it **gets to the bottom**, but during that execution could run into certain asynchronous functions.
+Asynchronous execution starts **very similarly** at the top of the file and executes the code until it **gets to the bottom**, but during that execution, it could run into certain asynchronous functions.
 
-Then the code will **split off** and execute that **asynchronous code separately** from the rest of the code and that's usually because it needs to **wait for** the result of some operation that takes a **long period**.
+The asynchronous functions that occur during the process are executed separately from the rest of the code.
 
-So the synchronous code will **execute from the top** and execute until it **hit is something asynchronous** and then it will execute that as a result, we may have multiple **different threads** running the code in different sections.
+This is because the function takes **longer** to return a result.
 
-So the code may execute in a **different order** depending on how **long** a certain operation takes, thus make code harder to work with.
+As a result of that process, we may have multiple **different threads** running the code in different sections.
 
-Potentially means that we have to make **sure that the code will work** no matter which path it takes, whether it **executes everything in order** and reverse order or any other scrambled order.
+During asynchronous execution, the code could be executed in a **different order**, making it harder to work with.
+
+This means that we have to make **sure that the code will work** regardless of the execution order.
 
 [/slide]
 
@@ -44,7 +52,7 @@ Potentially means that we have to make **sure that the code will work** no matte
 
 26-Functional-Reactive-Programming
 
-**Function Reactive Programming** is a **paradigm** for software development that integrates time flow and **compositional events** into functional programming, **which often works** with asynchronous data streams.
+**Functional Reactive Programming** is a **paradigm** for software development that integrates time flow and **compositional events** into functional programming, **which often works** with asynchronous data streams.
 
 These data streams can come from or be created by:
 
@@ -53,27 +61,27 @@ These data streams can come from or be created by:
 - **HTTP requests** file systems array-like object strings
 - **Machines memory** or cache 
 
-These events can be **turned into** or can be **viewed** as a data stream.
+A stream is defined as a sequence of **ongoing events** ordered in time.
 
-Stream is defined as a sequence of **ongoing events**, ordered in time.
+This is some of the information that we can get from streams:
 
-A few things can get from a stream:
-- The data that it **emits which could be virtually anything** and **any kind**
-- Any **errors could be thrown** if something goes wrong 
-- A **notifies signal could be received** when it is complete 
+- The data that they **emit which could be virtually anything** and of **any kind**
+- The **errors they throw** if something goes wrong 
+- A **notifying signal can be received** when they are complete 
 
+The stream starts with some **kind of event** with a specific value like the **coordinates of a click**.
 
-The stream starts with some **kind of event** indicates an event with some kind of value for example **coordinates of a click**.
+If **something goes wrong** during the streaming process, it can **throw an error**.
 
-So stream is moving along, and if **something goes wrong** it can send off an **error which** can notify.
+Our **application can react to the error** while still running and **send off a signal when it has processed it**.
 
-We can have our **application react to that**, and then it keeps going and it can **send off a signal when it is complete**.
+Most streams like an **HTTP GET request** are eventually **completed** after passing the data.
 
-Some streams **will not complete**, for instance, you can get a **stream from most movements** and those do not complete they are just **going to keep going** as long as you move the mouse.
+Some streams, however, could keep on going **without completion**.
 
-Whereas something like an **HTTP GET request** you is going to get the data through the stream and it is **going to complete**.
+For example, you can get a stream from the **movement of the mouse**, which will **keep on going** until the mouse is still.
  
-The way that we work with these streams is with what's called an observable.
+We can use observables to work with streams in Angular.
 
 [/slide]
 
@@ -83,17 +91,24 @@ The way that we work with these streams is with what's called an observable.
 
 25-The-Observables
 
-Observables are used to **watch these streams** and they will **emit a function when the value is omitted** or an error or a complete signal is returned.
+Observables are used to **monitor these streams** will **emit a function in one of the following cases:
 
-Observables can be **subscribed** to by an observer and there is no **limit to how many subscriptions an observable can have**.
+- If a value is omitted
+- If there is an error
+- If a complete signal is returned
 
-We can interact with these data streams as **if they were just a regular array** by using array-like methods and there are a lot of **operators that will allow us to manipulate** the data however we want.
+An observer can be used to **subscribe** to observables. Keep in mind that one observable can have multiple observers.
 
-Right standard JavaScript ES5 or even ES6 **can not be used to work with observables** and **streams** and reactive extensions like ReactiveX (RxJS) are what **allows to manipulate them.**
+We can interact with a data stream as if it were just a **regular array** by using array-like methods.
 
-Observables can be used to deliver multiple values of **any type** - like literals, messages, or events, for example. 
+Standard JavaScript ES5 or even ES6 **cannot be used to work with observables** or **streams**. 
+
+Reactive extensions like ReactiveX (RxJS) are what **allows us to manipulate them.**
+
+Observables can be used to deliver multiple values of **any type** like literals, messages, or events.
 
 They can be used to:
+
 - **Create** Streams
 - **Subscribe** to Streams and **unsubscribe** from them
 - **React** to new values
@@ -107,21 +122,24 @@ They can be used to:
 
 27-Introducing-RxJS
 
-ReactiveX or RxJS, short for **R**eactive E**x**tensions for **J**ava**S**cript it is a library for **composing asynchronous programs** by using **observable sequences** and it provides a **long list of operators** which allows to:
+ReactiveX or RxJS stands for **R**eactive E**x**tensions for **J**ava**S**cript. 
+
+It is a library for **composing asynchronous programs** by using **observable sequences** and it provides a **long list of operators** which allows us to:
 
 - **Filter** observables
 - **Select** observables
 - **Transform** observables
-- **Combined** and compose observables 
+- **Combine** and compose observables 
 
-Reactive extensions are, **not limited** to just JavaScript it is **also available for many of the popular programming languages** like Java, C#, Scala, Clojure, Swift, and others.
+Reactive extensions are **not limited** to just JavaScript.
 
+They are also **available for many of the popular programming languages** like Java, C#, Scala, Clojure, Swift, and others.
 
 ## How to install RxJS
 
-Open a terminal in your **Angular project's** main directory and type `npm install rxjs`.
+To install RxJS, open a terminal in your **Angular project's** main directory and type `npm install rxjs`.
 
-To import a given functionality with CommonJS:
+You can import a given functionality with CommonJS like this:
 
 ```js
 const { range } = require('rxjs')
@@ -144,7 +162,7 @@ import { map, filter } from 'rxjs/operators'
 28-Observables-Side-Effect-(Hot-vs-Cold)
 29-Observable-Side-Effects
 
-- **Tap Operator Overview**
+## Tap Operator Overview
 
 The `tap` operator performs a **side effect for every emission** on the source Observable.
 
@@ -163,7 +181,7 @@ The `pipe` method can take an infinite amount of **arguments**.
 
 Еach argument is an **operator** you want to apply to the **Observable**.
 
-- **Cold Observables**
+## Cold Observables
 
 Cold observables **create a data producer** for each subscriber and **start running upon subscription**.
 
@@ -184,9 +202,9 @@ let firstSubscription = coldObservable.subscribe(
   );
 ```
 
-- **Hot Observables**
+## Hot Observables
 
-For an Observable to be regarded as **hot**, the producer must be **created** or **activated** outside of the **subscription**.
+With Hot Observables, the producer must be **created** or **activated** outside of the **subscription**.
 
 Using the RxJS `share` operator, we can make any cold observable hot:
 
@@ -198,7 +216,7 @@ let hotObservable = Observable.create((observer : any) => {
 
 To apply the `share` operator, we must pass it as an argument to the `pipe` method.
 
-The `share` operator returns a new Observable that shares the original one.
+It returns a new Observable that shares the original one.
 
 If there are **no subscribers**, the newly-created observable will **unsubscribe** from the source Observable.
 
@@ -212,9 +230,9 @@ To conclude, hot observables create a **data producer** first, and each **subscr
 
 30-Commonly-Used-RxJS-Operators
 
-- The map operator
+These are some of the more commonly used operators in RxJS:
 
-The `map` operator applies a **projection** to each **value** in the provided **source**.
+- `map` - Transforms each **value** in the provided **source**.
 
 ```js
 import { from } from 'rxjs';
@@ -237,9 +255,7 @@ The following output will be displayed in the console:
 9
 ```
 
-- The filter operator
-
-This operator **filters** items emitted by the source Observable and emits only those that **satisfy** a given **condition**.
+- `filter` - **Filters** items emitted by a given Observable and emits only those that **satisfy** a given **condition**.
 
 ```js
 import { from } from 'rxjs';
@@ -262,9 +278,7 @@ This is the corresponding output:
 31
 ```
 
-- The reduce operator
-
-The `reduce` operator sums the values from the source Observable and returns a singular value, once the source completes.
+- `reduce` - Sums the values from a given Observable and returns a singular value.
 
 ```js
 import { of } from 'rxjs';
@@ -283,7 +297,6 @@ The resulting value equals **82**.
 
 You can learn more about ReactiveX [here](http://reactivex.io).
 
-
 [/slide]
 
 [slide hideTitle]
@@ -292,10 +305,10 @@ You can learn more about ReactiveX [here](http://reactivex.io).
 
 31-RxJS-and-FRP-Overview
 
-Both RxJS and are **powerful concepts**, and even more so when **combined**.
+**Functional Reactive Programming** uses streams to handle data coming synchronously or asynchronously.
 
-Good knowledge of both will give you the ability to choose the way you **structure** your Angular application.
+In Angular, we use **Observables** to implement FRP.
 
-You can go **fully reactive** by utilizing RxJS to the fullest, or structure your app via **parts**, like Forms or HTTP.
+A popular library for FRP is **RxJS**, which comes with an implementation for Observables and many other features.
 
 [/slide]
