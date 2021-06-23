@@ -66,6 +66,8 @@ In the above case, we will look for a **city**, named **either "a" , "b" or "c"*
 [/code-editor]
 [task-description]
 
+**Use the booklibrary database.**
+
 Write an SQL query to retrieve the titles of all Harry Potter books. 
 
 **Order the information by id.** 

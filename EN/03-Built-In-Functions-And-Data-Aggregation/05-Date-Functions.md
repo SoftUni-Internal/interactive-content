@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# The Date Functions
+# Date Functions
 
 The **Date** functions are used to handle date and time data effectively.
 
@@ -77,7 +77,7 @@ SELECT NOW();
 
 [slide hideTitle]
 
-# Problem with Solution: Days Lived - Not Working
+# Problem with Solution: Days Lived
 [code-task title="Days Lived" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-days-lived" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```

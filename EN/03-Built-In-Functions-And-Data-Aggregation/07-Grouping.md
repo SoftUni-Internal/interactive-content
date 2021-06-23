@@ -40,6 +40,8 @@ This query will return a **list** of **position titles** and the **number of emp
 [/code-editor]
 [task-description]
 
+**Use the restaurant database for the rest of the tasks.**
+
 Write a query to retrieve information about the prices of each **category**. 
 
 The **output** should consist of the following: 

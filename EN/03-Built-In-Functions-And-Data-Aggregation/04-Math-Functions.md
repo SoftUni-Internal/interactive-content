@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# The Math Functions
+# Math Functions
 
 Execution of mathematical functions usually is based on input values, provided as arguments.
 
