@@ -81,7 +81,7 @@ WHERE
   lower(REFERENCED_TABLE_NAME) = 'teachers';
   
 
-select \* from 
+select * from 
 teachers 
 order by teacher_id;
 [/input]
@@ -175,7 +175,7 @@ teacher_id
 [test]
 [input]
 
-select \* from 
+select * from 
 teachers 
 order by teacher_id;
 [/input]
