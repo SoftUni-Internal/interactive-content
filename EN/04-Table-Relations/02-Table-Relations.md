@@ -64,11 +64,11 @@ Write a query that creates two tables - **mountains** and **peaks**.
 
 The tables should have:
 
-*	Mountains:
+**Mountains:**
   - id 
   - name
 
-*	Peaks: 
+**Peaks:**
   - id
   - name
   - mountain_id
