@@ -75,6 +75,7 @@ Write a query to select all employees and retrieve information about their **id*
 | 3 | Samuel | Bridges | Porter |
 | ...  | ... | ...  | ... |
 
+
 [/task-description]
 [code-io /]
 [tests]
