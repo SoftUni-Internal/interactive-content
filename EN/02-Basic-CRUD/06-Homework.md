@@ -51,7 +51,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
+```/*!40000 ALTER TABLE `departments` DISABLE KEYS */;```
 INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(1, 'Engineering', 12),
 	(2, 'Tool Design', 4),
@@ -69,7 +69,7 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(14, 'Facilities and Maintenance', 218),
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
-/\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
+```/*!40000 ALTER TABLE `departments` ENABLE KEYS */;```
 [/input]
 [output]
 1
@@ -133,7 +133,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
+```/*!40000 ALTER TABLE `departments` DISABLE KEYS */;```
 INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(1, 'Engineering', 12),
 	(2, 'Tool Design', 4),
@@ -151,7 +151,7 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(14, 'Facilities and Maintenance', 218),
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
-/\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
+```/*!40000 ALTER TABLE `departments` ENABLE KEYS */;```
 [/input]
 [output]
 1
