@@ -315,7 +315,6 @@ id
 [/code-task]
 [/slide]
 
-[/slide]
 
 [slide hideTitle]
 
