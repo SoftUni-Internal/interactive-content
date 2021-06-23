@@ -51,7 +51,7 @@ CREATE TABLE `cars` (                                 # Create the second table
 
 [slide hideTitle]
 # Problem with Solution: Delete Mountains
-[code-task title="Delete Mountains" taskId="table-relations-delete-mountains" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+[code-task title="Delete Mountains" taskId="java-db-and-MySQL-table-relations-delete-mountains" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 
 ```

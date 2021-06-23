@@ -24,7 +24,7 @@ And then, we create a "**Join condition**" using "**FOREIGN KEYS**".
 
 [slide hideTitle]
 # Problem with Solution: Trip Organization
-[code-task title="Trip Organization" taskId="table-relations-trip-organization" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Trip Organization" taskId="java-db-and-MySQL-table-relations-trip-organization" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
 ```
@@ -264,7 +264,7 @@ Henry Wilson
 
 [slide hideTitle]
 # Problem with Solution: SoftUni Hiking
-[code-task title="SoftUni Hiking" taskId="table-relations-softUni-hiking" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="SoftUni Hiking" taskId="java-db-and-MySQL-table-relations-softUni-hiking" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
 ```
