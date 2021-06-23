@@ -49,7 +49,7 @@ REFERENCES mountains(mountain_id);      // Referencing the unique identifier in 
 
 [slide hideTitle]
 # Problem with Solution: Mountains and Peaks
-[code-task title="Mountains and Peaks" taskId="table-relations-mountains-and-peaks" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+[code-task title="Mountains and Peaks" taskId="java-db-and-MySQL-table-relations-mountains-and-peaks" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 
 ```
