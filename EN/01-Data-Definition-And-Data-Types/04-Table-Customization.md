@@ -322,6 +322,13 @@ id
 -- Write your SQL query here
 ```
 [/code-editor]
+[code-adapter]
+CREATE TABLE IF NOT EXISTS employees(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name varchar(50) not null,
+	last_name varchar(50) not null
+);
+[/code-adapter]
 [task-description]
 ## Description
 Inserting data can be done with a query too. 
@@ -332,9 +339,7 @@ To do that we use the "**INSERT**" clause. Populate the "employees" table with 3
 [tests]
 [test]
 [input]
-```
 SELECT count(id) from `employees`;
-```
 [/input]
 [output]
 3

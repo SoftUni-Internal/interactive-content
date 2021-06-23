@@ -35,3 +35,24 @@
 - Creating a relational schema for the database
 
 [/slide]
+
+
+[slide hideTitle]
+# Resources
+
+## Lab problems
+
+|**Problem Name**|**Database**|
+|---|---|
+|Trip Organization|[Camp Database](https://videos.softuni.org/resources/java/java-mysql/camp_db_table_relations.zip)|
+|SoftUni Hiking|Camp Database|
+
+## Homework
+
+|**Problem Name**|**Database**|
+|---|---|
+|SoftUni Design|[SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/soft_uni_database_table_relations.zip)|
+|Geography Design|[Geography Database](https://videos.softuni.org/resources/java/java-mysql/geography_database_table_relations.zip)|
+|Peaks in Rila|Geography Database|
+
+[/slide]
