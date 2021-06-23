@@ -33,21 +33,30 @@ Create a tables:
 [tests]
 [test open]
 [input]
-SELECT lower(TABLE_NAME)
+\# test 1 : 'teachers' table name
+
+SELECT lower(table_name)
 	 FROM information_schema.TABLES 
 WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'teachers';
+
+\# test 2 : 'teachers' column names
 
 SELECT lower(COLUMN_NAME)
 FROM information_schema.COLUMNS
 WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'teachers'
 order by lower(COLUMN_NAME);
 
+
+\# test 3 : table teachers PK check
+
 SELECT COLUMN_NAME AS pk_count
   FROM information_schema.COLUMNS
  WHERE TABLE_SCHEMA = DATABASE()
    AND COLUMN_KEY = 'PRI'
    AND TABLE_NAME IN ('teachers');
-  
+   
+\# FK check
+
 SELECT 
   lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
 FROM
@@ -57,7 +66,9 @@ WHERE
   lower(REFERENCED_COLUMN_NAME) = 'teacher_id' AND 
   lower(REFERENCED_TABLE_NAME) = 'teachers';
   
-select * from 
+  \# test 5 : data check
+
+select \* from 
 teachers 
 order by teacher_id;
 [/input]
@@ -93,6 +104,7 @@ Greta
 [/test]
 [test]
 [input]
+\# test 1 : 'teachers' table name
 
 SELECT lower(table_name)
 	 FROM information_schema.TABLES 
@@ -104,6 +116,7 @@ teachers
 [/test]
 [test]
 [input]
+\# test 2 : 'teachers' column names
 
 SELECT lower(COLUMN_NAME)
 FROM information_schema.COLUMNS
@@ -118,6 +131,7 @@ teacher_id
 [/test]
 [test]
 [input]
+\# test 3 : table teachers PK check
 
 SELECT COLUMN_NAME AS pk_count
   FROM information_schema.COLUMNS
@@ -131,6 +145,7 @@ teacher_id
 [/test]
 [test]
 [input]
+\# FK check
 
 SELECT 
   lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
@@ -150,7 +165,9 @@ teacher_id
 [/test]
 [test]
 [input]
-select * from 
+\# test 5 : data check
+
+select \* from 
 teachers 
 order by teacher_id;
 [/input]
