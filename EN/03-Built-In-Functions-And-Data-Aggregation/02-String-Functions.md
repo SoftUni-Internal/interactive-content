@@ -81,7 +81,7 @@ oftun
 [code-task title="Find Book Titles" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-book-titles" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
-
+-- Write your query here
 ```
 [/code-editor]
 [task-description]
@@ -347,7 +347,7 @@ We can replace the word ***** with a different symbol or word.
 [code-task title="Replace Titles" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-replace-titles" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
-
+-- Write your query here
 ```
 [/code-editor]
 [task-description]
