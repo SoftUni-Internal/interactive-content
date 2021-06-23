@@ -54,7 +54,7 @@ SELECT COLUMN_NAME AS pk_count
    
 
 SELECT 
-  lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
+  lower(TABLE_NAME) tn, lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn, lower(REFERENCED_COLUMN_NAME) ref_cn
 FROM
   INFORMATION_SCHEMA.KEY_COLUMN_USAGE
 WHERE
@@ -157,7 +157,6 @@ teacher_id
 [/test]
 [test]
 [input]
-
 select \* from 
 teachers 
 order by teacher_id;
