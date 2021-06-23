@@ -33,21 +33,30 @@ Create a tables:
 [tests]
 [test open]
 [input]
+
+
 SELECT lower(table_name)
 	 FROM information_schema.TABLES 
 WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'teachers';
+
+
 
 SELECT lower(COLUMN_NAME)
 FROM information_schema.COLUMNS
 WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'teachers'
 order by lower(COLUMN_NAME);
 
+
+
+
 SELECT COLUMN_NAME AS pk_count
   FROM information_schema.COLUMNS
  WHERE TABLE_SCHEMA = DATABASE()
    AND COLUMN_KEY = 'PRI'
    AND TABLE_NAME IN ('teachers');
-  
+   
+
+
 SELECT 
   lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
 FROM
@@ -57,6 +66,8 @@ WHERE
   lower(REFERENCED_COLUMN_NAME) = 'teacher_id' AND 
   lower(REFERENCED_TABLE_NAME) = 'teachers';
   
+
+
 select \* from 
 teachers 
 order by teacher_id;
@@ -93,7 +104,6 @@ Greta
 [/test]
 [test]
 [input]
-
 SELECT lower(table_name)
 	 FROM information_schema.TABLES 
 WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'teachers';
@@ -104,7 +114,6 @@ teachers
 [/test]
 [test]
 [input]
-
 SELECT lower(COLUMN_NAME)
 FROM information_schema.COLUMNS
 WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'teachers'
@@ -118,7 +127,6 @@ teacher_id
 [/test]
 [test]
 [input]
-
 SELECT COLUMN_NAME AS pk_count
   FROM information_schema.COLUMNS
  WHERE TABLE_SCHEMA = DATABASE()
@@ -131,7 +139,6 @@ teacher_id
 [/test]
 [test]
 [input]
-
 SELECT 
   lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
 FROM
