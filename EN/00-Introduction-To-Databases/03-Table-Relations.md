@@ -1,7 +1,7 @@
 
 [slide hideTitle]
-# Problem with Solution: Many-To-Many Relationship
-[code-task title="One-To-One Relationship" taskId="table-relations-many-to-many-relationship" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+# Problem with Solution: Self Referencing
+[code-task title="One-To-One Relationship" taskId="table-relations-self-referencing" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 
 ```
@@ -10,39 +10,22 @@
 [/code-editor]
 [task-description]
 ## Description
-Create two tables: 
+Create a tables: 
 
-- **exams** 
-| **exam_id** | **name** | 
-| --- | --- | 
-| 101 | Spring MVC |
-| 102 | Neo4j |
-| 103 | Oracle 11g |
-
-- **students**
-| **student_id** | **name** | 
-| --- | --- |  
-| 1   | Mila | 
-| 2 | Toni | 
-| 3 | Ron | 
-
-- **students_exams**
-| **student_id** | **exam_id** | 
-| --- | --- |  
-| 1   | 101 | 
-| 1 | 102 | 
-| 2 | 101 |
-| 3 | 103 |
-| 2 | 102 |
-| 2 | 103 |
-
-Use the appropriate data types.
+- **teachers** 
+| **teacher_id** | **name** | **manager_id**|
+| --- | --- | --- |
+| 101 | John ||
+| 102 | Maya |106|
+| 103 | Silvia |106|
+| 104 | Ted |105|
+| 105 | Mark |101|
+| 106 | Greta |101|
 
 
-**Insert the data from the examples above.**
-
+**Insert the data from the example above.**
 -	Add primary and foreign keys
--	Keep in mind that the **student_exams** table should have a **composite** primary key
+-	The foreign key must be between **manager_id** and **teacher_id**
 
 [/task-description]
 [code-io /]
@@ -51,189 +34,91 @@ Use the appropriate data types.
 [input]
 
 SELECT lower(table_name)
-FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'students'
-order by lower(table_name);
+	 FROM information_schema.TABLES 
+WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'teachers';
+
 
 SELECT lower(COLUMN_NAME)
 FROM information_schema.COLUMNS
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'students'
+WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'teachers'
 order by lower(COLUMN_NAME);
 
-SELECT lower(table_name)
-FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'exams'
-order by lower(table_name);
-
-SELECT lower(COLUMN_NAME)
-FROM information_schema.COLUMNS
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'exams'
-order by lower(COLUMN_NAME);
-
-SELECT lower(table_name)
-FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'students_exams'
-order by lower(table_name);
-
-SELECT lower(COLUMN_NAME)
-FROM information_schema.COLUMNS
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'students_exams'
-order by lower(COLUMN_NAME);
 
 
 SELECT COLUMN_NAME AS pk_count
   FROM information_schema.COLUMNS
  WHERE TABLE_SCHEMA = DATABASE()
    AND COLUMN_KEY = 'PRI'
-   AND TABLE_NAME IN ('students');
+   AND TABLE_NAME IN ('teachers');
    
-   SELECT COLUMN_NAME AS pk_count
-  FROM information_schema.COLUMNS
- WHERE TABLE_SCHEMA = DATABASE()
-   AND COLUMN_KEY = 'PRI'
-   AND TABLE_NAME IN ('exams');
-   
-   
-  
-SELECT 
-  lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
-FROM
-  INFORMATION_SCHEMA.KEY_COLUMN_USAGE
-WHERE
-  REFERENCED_TABLE_SCHEMA = database() AND
-  lower(REFERENCED_COLUMN_NAME) = 'student_id' AND 
-  lower(REFERENCED_TABLE_NAME) = 'students';
-  
-  
-  
-SELECT 
-  lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
-FROM
-  INFORMATION_SCHEMA.KEY_COLUMN_USAGE
-WHERE
-  REFERENCED_TABLE_SCHEMA = database() AND
-  lower(REFERENCED_COLUMN_NAME) = 'exam_id' AND 
-  lower(REFERENCED_TABLE_NAME) = 'exams';
-  
-  
 
+SELECT 
+  lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
+FROM
+  INFORMATION_SCHEMA.KEY_COLUMN_USAGE
+WHERE
+  REFERENCED_TABLE_SCHEMA = database() AND
+  lower(REFERENCED_COLUMN_NAME) = 'teacher_id' AND 
+  lower(REFERENCED_TABLE_NAME) = 'teachers';
+  
+ 
 select \* from 
-students s inner join students_exams se on s.student_id = se.student_id 
-inner join exams e on e.exam_id = se.exam_id
-order by s.student_id, e.exam_id;
+teachers 
+order by teacher_id;
 [/input]
 [output]
-students
+teachers
+manager_id
 name
-student_id
-exams
-exam_id
-name
-students_exams
-exam_id
-student_id
-student_id
-exam_id
-students_exams
-student_id
-students
-student_id
-students_exams
-exam_id
-exams
-exam_id
-1
-Mila
-1
+teacher_id
+teacher_id
+teachers
+manager_id
+teachers
+teacher_id
 101
+John
+
+102
+Maya
+106
+103
+Silvia
+106
+104
+Ted
+105
+105
+Mark
 101
-Spring MVC
-1
-Mila
-1
-102
-102
-Neo4j
-2
-Toni
-2
+106
+Greta
 101
-101
-Spring MVC
-2
-Toni
-2
-102
-102
-Neo4j
-2
-Toni
-2
-103
-103
-Oracle 11g
-3
-Ron
-3
-103
-103
-Oracle 11g
 [/output]
 [/test]
 [test]
 [input]
 
 SELECT lower(table_name)
-FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'students'
-order by lower(table_name);
-
-SELECT lower(COLUMN_NAME)
-FROM information_schema.COLUMNS
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'students'
-order by lower(COLUMN_NAME);
+	 FROM information_schema.TABLES 
+WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'teachers';
 [/input]
 [output]
-students
-name
-student_id
-[/output]
-[/test]
-[test]
-[input]
-SELECT lower(table_name)
-FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'exams'
-order by lower(table_name);
-
-SELECT lower(COLUMN_NAME)
-FROM information_schema.COLUMNS
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'exams'
-order by lower(COLUMN_NAME);
-[/input]
-[output]
-exams
-exam_id
-name
+teachers
 [/output]
 [/test]
 [test]
 [input]
 
-SELECT lower(table_name)
-FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'students_exams'
-order by lower(table_name);
-
 SELECT lower(COLUMN_NAME)
 FROM information_schema.COLUMNS
-WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'students_exams'
+WHERE TABLE_SCHEMA = database() and lower(TABLE_NAME) = 'teachers'
 order by lower(COLUMN_NAME);
 [/input]
 [output]
-students_exams
-exam_id
-student_id
+manager_id
+name
+teacher_id
 [/output]
 [/test]
 [test]
@@ -243,23 +128,10 @@ SELECT COLUMN_NAME AS pk_count
   FROM information_schema.COLUMNS
  WHERE TABLE_SCHEMA = DATABASE()
    AND COLUMN_KEY = 'PRI'
-   AND TABLE_NAME IN ('students');
+   AND TABLE_NAME IN ('teachers');
 [/input]
 [output]
-student_id
-[/output]
-[/test]
-[test]
-[input]
-
-SELECT COLUMN_NAME AS pk_count
-  FROM information_schema.COLUMNS
- WHERE TABLE_SCHEMA = DATABASE()
-   AND COLUMN_KEY = 'PRI'
-   AND TABLE_NAME IN ('exams');
-[/input]
-[output]
-exam_id
+teacher_id
 [/output]
 [/test]
 [test]
@@ -271,80 +143,42 @@ FROM
   INFORMATION_SCHEMA.KEY_COLUMN_USAGE
 WHERE
   REFERENCED_TABLE_SCHEMA = database() AND
-  lower(REFERENCED_COLUMN_NAME) = 'student_id' AND 
-  lower(REFERENCED_TABLE_NAME) = 'students';
+  lower(REFERENCED_COLUMN_NAME) = 'teacher_id' AND 
+  lower(REFERENCED_TABLE_NAME) = 'teachers';
 [/input]
 [output]
-students_exams
-student_id
-students
-student_id
-[/output]
-[/test]
-[test]
-[input]
-
-SELECT 
-  lower(TABLE_NAME) tn,lower(COLUMN_NAME) cn, lower(REFERENCED_TABLE_NAME) ref_tn,lower(REFERENCED_COLUMN_NAME) ref_cn
-FROM
-  INFORMATION_SCHEMA.KEY_COLUMN_USAGE
-WHERE
-  REFERENCED_TABLE_SCHEMA = database() AND
-  lower(REFERENCED_COLUMN_NAME) = 'exam_id' AND 
-  lower(REFERENCED_TABLE_NAME) = 'exams';
-[/input]
-[output]
-students_exams
-exam_id
-exams
-exam_id
+teachers
+manager_id
+teachers
+teacher_id
 [/output]
 [/test]
 [test]
 [input]
 
 select \* from 
-students s inner join students_exams se on s.student_id = se.student_id 
-inner join exams e on e.exam_id = se.exam_id
-order by s.student_id, e.exam_id;
+teachers 
+order by teacher_id;
 [/input]
 [output]
-1
-Mila
-1
 101
+John
+
+102
+Maya
+106
+103
+Silvia
+106
+104
+Ted
+105
+105
+Mark
 101
-Spring MVC
-1
-Mila
-1
-102
-102
-Neo4j
-2
-Toni
-2
+106
+Greta
 101
-101
-Spring MVC
-2
-Toni
-2
-102
-102
-Neo4j
-2
-Toni
-2
-103
-103
-Oracle 11g
-3
-Ron
-3
-103
-103
-Oracle 11g
 [/output]
 [/test]
 [/tests]
