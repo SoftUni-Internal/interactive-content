@@ -8,7 +8,7 @@
 
 When we make **changes** to the data in our components, the view updates **automatically**.
 
-For detecting every change, Angular uses [NgZone](https://angular.io/guide/zone), which performs the so-called "**monkey patching**" upon every asynchronous function.
+To detect every change, Angular uses [NgZone](https://angular.io/guide/zone), which performs the so-called "**monkey patching**" upon every asynchronous function.
 
 Monkey patching is a technique that we can use if we want to **extend** or **modify** the behavior of a **piece** of code/function.
 
@@ -18,7 +18,7 @@ This gives Angular the ability to notice **when changes are made** by running th
 
 If changes have been **detected**, Angular marks the **component**, and only the **changed component will be re-rendered**.
 
-If our **application is very big**, delays may happen, but we, as **developers**, can manage how our component will be searched for changes, and how it will be marked for **re-rendering**.
+If our **application is very big**, delays may happen, but we can optimize that process by specifying how the component will be searched and marked. 
 
 [/slide]
 
@@ -49,14 +49,13 @@ We need to set the `changeDetection` property in our `@Component` decorator as f
 })
 ```
 
-In this example, we set the detection strategy to `onPush`.
+In this example, we set the detection strategy to `OnPush`.
 
 When set, it takes effect the **next time when change detection is triggered**.
 
 If we **do not set** a `changeDetection` property, Angular will apply the **default** change detection method.
 
 We will learn what `onPush` means in the next video.
-
 
 [/slide]
 
@@ -70,7 +69,7 @@ We will learn what `onPush` means in the next video.
 
 - `OnPush: 0`:
   - uses the `CheckOnce` strategy
-  - this means that automatic change detection is **deactivated** until reactivated by setting the strategy to `Default` (`CheckAlways`)
+  - automatic change detection is **deactivated** until reactivated by setting the strategy to `Default` (`CheckAlways`)
   - change detection can still be invoked explicitly
   - this strategy applies to all child directives and **cannot** be overridden
   
@@ -78,6 +77,5 @@ We will learn what `onPush` means in the next video.
   - uses the `CheckAlways` strategy
   - set by default;
   - change detection happens automatically until it is **deactivated** explicitly by setting the strategy to `OnPush` (`CheckOnce`)
-
 
 [/slide]
