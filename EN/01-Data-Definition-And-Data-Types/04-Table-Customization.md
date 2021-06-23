@@ -337,9 +337,7 @@ SELECT count(id) from `employees`;
 ```
 [/input]
 [output]
-```
 3
-```
 [/output]
 [/test]
 [/tests]
