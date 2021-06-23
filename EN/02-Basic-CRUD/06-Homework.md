@@ -13,7 +13,7 @@ For part 1 run the provided sql code to create the **soft_uni_crud** database in
 [slide hideTitle]
 # Problem: Find All Information About Departments 
 
-[code-task title="Find All Information About Departments" taskId="find-info-about-departments" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Find All Information About Departments " taskId="find-info-about-departments" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -42,6 +42,7 @@ Write an SQL query to find **all available information about the departments in 
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `departments` (
   `department_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -51,6 +52,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 
+/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
 INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(1, 'Engineering', 12),
 	(2, 'Tool Design', 4),
@@ -68,6 +70,8 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(14, 'Facilities and Maintenance', 218),
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
+/\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
+```
 [/input]
 [output]
 1
@@ -122,6 +126,7 @@ Executive
 [/test]
 [test]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `departments` (
   `department_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -131,6 +136,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 
+/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
 INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(1, 'Engineering', 12),
 	(2, 'Tool Design', 4),
@@ -148,6 +154,8 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(14, 'Facilities and Maintenance', 218),
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
+/\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
+```
 [/input]
 [output]
 1
