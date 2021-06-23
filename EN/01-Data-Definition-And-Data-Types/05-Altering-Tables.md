@@ -184,14 +184,41 @@ id
 
 [slide hideTitle]
 
-# Problem with Solution: Adding Constraints
-
-TODO: Add task
-[/slide]
-
-[slide hideTitle]
-
 # Problem with Solution: Modifying Columns
 
-TODO: Add task
+[code-task title="Modifying Columns" taskId="MySQL-Data-definitions-and-Data-Types-Modifying-Columns" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+[code-editor language=sql]
+```
+-- Write your SQL query here
+```
+[/code-editor]
+[code-adapter]
+CREATE TABLE employees(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name varchar(50) not null,
+	last_name varchar(50) not null,
+        middle_name varchar(50) not null
+);
+[/code-adapter]
+[task-description]
+## Description
+Change the property **"VARCHAR(50)" to "VARCHAR(100)"** in the "**middle_name**" column from the "**employees**" table.
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+select COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS
+where DATA_TYPE = 'varchar'
+and CHARACTER_MAXIMUM_LENGTH = 100
+and TABLE_NAME = 'employees'
+[/input]
+[output]
+middle_name
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
