@@ -181,10 +181,9 @@ teacher_id
 [/test]
 [test]
 [input]
-
 select * from 
 teachers 
-order by teacher_id;
+order by teacher_id(COLUMN_NAME);
 [/input]
 [output]
 101
