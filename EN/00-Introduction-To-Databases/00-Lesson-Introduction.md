@@ -104,26 +104,16 @@ INSERT INTO books(author_id,title, year_of_release,cost) VALUES
 	(9,'Fifty Shades Freed','2012-01-02',13.99);
 [/input]
 [output]
-Full Name 
-days_lived
-Agatha Christie
-31164
-William Shakespeare
-18990
-Danielle Schuelein-Steel
-NULL
-Joanne Rowling
-NULL
-Lev Tolstoy
-30021
-Paulo Souza
-NULL
-Stephen King
-NULL
-John Tolkien
-29827
-Erika Mitchell
-NULL
+Full Name	days_lived
+Agatha Christie	31164
+William Shakespeare	18990
+Danielle Schuelein-Steel	NULL
+Joanne Rowling	NULL
+Lev Tolstoy	30021
+Paulo Souza	NULL
+Stephen King	NULL
+John Tolkien	29827
+Erika Mitchell	NULL
 [/output]
 [/test]
 [test]
@@ -198,26 +188,16 @@ INSERT INTO books(author_id,title, year_of_release,cost) VALUES
 	(9,'Fifty Shades Freed','2012-01-02',13.99);
 [/input]
 [output]
-Full Name 
-days_lived
-Agatha Christie
-31164
-William Shakespeare
-18990
-Danielle Schuelein-Steel
-NULL
-Joanne Rowling
-NULL
-Lev Tolstoy
-30021
-Paulo Souza
-NULL
-Stephen King
-NULL
-John Tolkien
-29827
-Erika Mitchell
-NULL
+Full Name	days_lived
+Agatha Christie	31164
+William Shakespeare	18990
+Danielle Schuelein-Steel	NULL
+Joanne Rowling	NULL
+Lev Tolstoy	30021
+Paulo Souza	NULL
+Stephen King	NULL
+John Tolkien	29827
+Erika Mitchell	NULL
 [/output]
 [/test]
 [/tests]
