@@ -890,3 +890,39 @@ Oracle 11g
 # Problem: Self Referencing
 
 [/slide]
+
+[slide hideTitle]
+# Problem: Online Store Database
+
+Create a new database and design the following structure:
+
+[image assetsSrc="Table-Relations-Homework(1).png" /]
+[/slide]
+
+[slide hideTitle]
+# Problem: Online University Database
+
+Create a new database and design the following structure: 
+
+[image assetsSrc="Table-Relations-Homework(2).png" /]
+[/slide]
+
+[slide hideTitle]
+# Problem: SoftUni Design
+
+**Here is a link to the** [resources]() **for this task.**
+
+Create an E/R Diagram of the SoftUni Database. 
+
+There are some special relations you should check out: **employees** are **self-referenced (manager_id)** and **departments** have **One-to-One** with the **employees (manager_id)** while the **employees** have **One-to-Many (department_id)**. 
+
+You might find it interesting how it looks on а diagram. 
+[/slide]
+
+[slide hideTitle]
+# Problem: Geography Design
+
+**Here is a link to the** [resources]() **for this task.**
+
+Create an E/R Diagram of the Geography Database.
+[/slide]
