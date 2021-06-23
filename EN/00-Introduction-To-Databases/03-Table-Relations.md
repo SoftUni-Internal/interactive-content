@@ -222,6 +222,8 @@ Greta
 [task-description]
 # Description
 
+**Here is a link to the** [resources]() **for this task.**
+
 Display all peaks of the "**Rila**" **mountain_range**. 
 
 Include:
@@ -244,10 +246,10 @@ Peaks should be sorted in descending order by **peak_elevation**.
 [tests]
 [test open]
 [input]
-/\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
-/\*!40101 SET NAMES utf8mb4 \*/;
-/\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
-/\*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' \*/;
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
@@ -257,7 +259,7 @@ CREATE TABLE IF NOT EXISTS `continents` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `continents` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `continents` DISABLE KEYS */;
 INSERT INTO `continents` (`continent_code`, `continent_name`) VALUES
 	('AF', 'Africa'),
 	('AN', 'Antarctica'),
@@ -266,7 +268,7 @@ INSERT INTO `continents` (`continent_code`, `continent_name`) VALUES
 	('NA', 'North America'),
 	('OC', 'Oceania'),
 	('SA', 'South America');
-/\*!40000 ALTER TABLE `continents` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `continents` ENABLE KEYS */;
 
 
 
@@ -288,12 +290,12 @@ CREATE TABLE IF NOT EXISTS `countries` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `countries` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `countries` DISABLE KEYS */;
 INSERT INTO `countries` (`country_code`, `iso_code`, `country_name`, `currency_code`, `continent_code`, `population`, `are_in_sq_km`, `capital`) VALUES
 	('AD', 'AND', 'Andorra', 'EUR', 'EU', 84000, 468, 'Andorra la Vella'),
 	('AE', 'ARE', 'United Arab Emirates', 'AED', 'AS', 4975593, 82880, 'Abu Dhabi'),
 	('AF', 'AFG', 'Afghanistan', 'AFN', 'AS', 29121286, 647500, 'Kabul'),
-	('AG', 'ATG', 'Antigua and Barbuda', 'XCD', 'NA', 86754, 443, 'St. John\'s'),
+	('AG', 'ATG', 'Antigua and Barbuda', 'XCD', 'NA', 86754, 443, 'St. John''s'),
 	('AI', 'AIA', 'Anguilla', 'XCD', 'NA', 13254, 102, 'The Valley'),
 	('AL', 'ALB', 'Albania', 'ALL', 'EU', 2986952, 28748, 'Tirana'),
 	('AM', 'ARM', 'Armenia', 'AMD', 'AS', 2968000, 29800, 'Yerevan'),
@@ -367,7 +369,7 @@ INSERT INTO `countries` (`country_code`, `iso_code`, `country_name`, `currency_c
 	('FR', 'FRA', 'France', 'EUR', 'EU', 64768389, 547030, 'Paris'),
 	('GA', 'GAB', 'Gabon', 'XAF', 'AF', 1545255, 267667, 'Libreville'),
 	('GB', 'GBR', 'United Kingdom', 'GBP', 'EU', 62348447, 244820, 'London'),
-	('GD', 'GRD', 'Grenada', 'XCD', 'NA', 107818, 344, 'St. George\'s'),
+	('GD', 'GRD', 'Grenada', 'XCD', 'NA', 107818, 344, 'St. George''s'),
 	('GE', 'GEO', 'Georgia', 'GEL', 'AS', 4630000, 69700, 'Tbilisi'),
 	('GF', 'GUF', 'French Guiana', 'EUR', 'SA', 195506, 91000, 'Cayenne'),
 	('GG', 'GGY', 'Guernsey', 'GBP', 'EU', 65228, 78, 'St Peter Port'),
@@ -504,7 +506,7 @@ INSERT INTO `countries` (`country_code`, `iso_code`, `country_name`, `currency_c
 	('SY', 'SYR', 'Syria', 'SYP', 'AS', 22198110, 185180, 'Damascus'),
 	('SZ', 'SWZ', 'Swaziland', 'SZL', 'AF', 1354051, 17363, 'Mbabane'),
 	('TC', 'TCA', 'Turks and Caicos Islands', 'USD', 'NA', 20556, 430, 'Cockburn Town'),
-	('TD', 'TCD', 'Chad', 'XAF', 'AF', 10543464, 1284000, 'N\'Djamena'),
+	('TD', 'TCD', 'Chad', 'XAF', 'AF', 10543464, 1284000, 'N''Djamena'),
 	('TF', 'ATF', 'French Southern Territories', 'EUR', 'AN', 140, 7829, 'Port-aux-Français'),
 	('TG', 'TGO', 'Togo', 'XOF', 'AF', 6587239, 56785, 'Lomé'),
 	('TH', 'THA', 'Thailand', 'THB', 'AS', 67089500, 514000, 'Bangkok'),
@@ -513,7 +515,7 @@ INSERT INTO `countries` (`country_code`, `iso_code`, `country_name`, `currency_c
 	('TL', 'TLS', 'East Timor', 'USD', 'OC', 1154625, 15007, 'Dili'),
 	('TM', 'TKM', 'Turkmenistan', 'TMT', 'AS', 4940916, 488100, 'Ashgabat'),
 	('TN', 'TUN', 'Tunisia', 'TND', 'AF', 10589025, 163610, 'Tunis'),
-	('TO', 'TON', 'Tonga', 'TOP', 'OC', 122580, 748, 'Nuku\'alofa'),
+	('TO', 'TON', 'Tonga', 'TOP', 'OC', 122580, 748, 'Nuku''alofa'),
 	('TR', 'TUR', 'Turkey', 'TRY', 'AS', 77804122, 780580, 'Ankara'),
 	('TT', 'TTO', 'Trinidad and Tobago', 'TTD', 'NA', 1228691, 5128, 'Port of Spain'),
 	('TV', 'TUV', 'Tuvalu', 'AUD', 'OC', 10472, 26, 'Funafuti'),
@@ -540,7 +542,7 @@ INSERT INTO `countries` (`country_code`, `iso_code`, `country_name`, `currency_c
 	('ZA', 'ZAF', 'South Africa', 'ZAR', 'AF', 49000000, 1219912, 'Pretoria'),
 	('ZM', 'ZMB', 'Zambia', 'ZMW', 'AF', 13460305, 752614, 'Lusaka'),
 	('ZW', 'ZWE', 'Zimbabwe', 'ZWD', 'AF', 11651858, 390580, 'Harare');
-/\*!40000 ALTER TABLE `countries` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `countries` ENABLE KEYS */;
 
 
 
@@ -554,7 +556,7 @@ CREATE TABLE IF NOT EXISTS `countries_rivers` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `countries_rivers` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `countries_rivers` DISABLE KEYS */;
 INSERT INTO `countries_rivers` (`river_id`, `country_code`) VALUES
 	(1, 'BI'),
 	(1, 'CD'),
@@ -660,7 +662,7 @@ INSERT INTO `countries_rivers` (`river_id`, `country_code`) VALUES
 	(30, 'RO'),
 	(30, 'RS'),
 	(30, 'SK');
-/\*!40000 ALTER TABLE `countries_rivers` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `countries_rivers` ENABLE KEYS */;
 
 
 
@@ -672,7 +674,7 @@ CREATE TABLE IF NOT EXISTS `currencies` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `currencies` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `currencies` DISABLE KEYS */;
 INSERT INTO `currencies` (`currency_code`, `description`) VALUES
 	('AED', 'United Arab Emirates Dirham'),
 	('AFN', 'Afghanistan Afghani'),
@@ -813,7 +815,7 @@ INSERT INTO `currencies` (`currency_code`, `description`) VALUES
 	('TJS', 'Tajikistan Somoni'),
 	('TMT', 'Turkmenistan Manat'),
 	('TND', 'Tunisia Dinar'),
-	('TOP', 'Tonga Pa\'anga'),
+	('TOP', 'Tonga Pa''anga'),
 	('TRY', 'Turkey Lira'),
 	('TTD', 'Trinidad and Tobago Dollar'),
 	('TVD', 'Tuvalu Dollar'),
@@ -837,7 +839,7 @@ INSERT INTO `currencies` (`currency_code`, `description`) VALUES
 	('ZAR', 'South Africa Rand'),
 	('ZMW', 'Zambia Kwacha'),
 	('ZWD', 'Zimbabwe Dollar');
-/\*!40000 ALTER TABLE `currencies` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `currencies` ENABLE KEYS */;
 
 
 
@@ -849,7 +851,7 @@ CREATE TABLE IF NOT EXISTS `mountains` (
 ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `mountains` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `mountains` DISABLE KEYS */;
 INSERT INTO `mountains` (`id`, `mountain_range`) VALUES
 	(1, 'Alaska Range'),
 	(2, 'Alborz'),
@@ -877,7 +879,7 @@ INSERT INTO `mountains` (`id`, `mountain_range`) VALUES
 	(24, 'Vitosha'),
 	(25, 'Strandza'),
 	(26, 'Monte Rosa');
-/\*!40000 ALTER TABLE `mountains` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `mountains` ENABLE KEYS */;
 
 
 
@@ -892,7 +894,7 @@ CREATE TABLE IF NOT EXISTS `mountains_countries` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `mountains_countries` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `mountains_countries` DISABLE KEYS */;
 INSERT INTO `mountains_countries` (`mountain_id`, `country_code`) VALUES
 	(3, 'AR'),
 	(4, 'BG'),
@@ -923,7 +925,7 @@ INSERT INTO `mountains_countries` (`mountain_id`, `country_code`) VALUES
 	(13, 'TZ'),
 	(14, 'TZ'),
 	(1, 'US');
-/\*!40000 ALTER TABLE `mountains_countries` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `mountains_countries` ENABLE KEYS */;
 
 
 
@@ -939,7 +941,7 @@ CREATE TABLE IF NOT EXISTS `peaks` (
 ) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `peaks` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `peaks` DISABLE KEYS */;
 INSERT INTO `peaks` (`id`, `peak_name`, `elevation`, `mountain_id`) VALUES
 	(62, 'Aconcagua', 6962, 3),
 	(63, 'Botev', 2376, 4),
@@ -989,7 +991,7 @@ INSERT INTO `peaks` (`id`, `peak_name`, `elevation`, `mountain_id`) VALUES
 	(107, 'Orlovets', 2685, 17),
 	(108, 'Vezhen', 2198, 4),
 	(109, 'Kom', 2016, 4);
-/\*!40000 ALTER TABLE `peaks` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `peaks` ENABLE KEYS */;
 
 
 
@@ -1005,7 +1007,7 @@ CREATE TABLE IF NOT EXISTS `rivers` (
 ) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `rivers` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `rivers` DISABLE KEYS */;
 INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_discharge`, `outflow`) VALUES
 	(1, 'Nile', 6650, 3254555, 5100, 'Mediterranean'),
 	(2, 'Amazon', 6400, 7050000, 219000, 'Atlantic Ocean'),
@@ -1037,10 +1039,10 @@ INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_di
 	(28, 'Lower Tunguska', 2989, 473000, 3600, 'Yenisei'),
 	(29, 'Brahmaputra', 2948, 1730000, 19200, 'Ganges'),
 	(30, 'Danube', 2888, 817000, 7130, 'Black Sea');
-/\*!40000 ALTER TABLE `rivers` ENABLE KEYS \*/;
-/\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
-/\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
-/\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+/*!40000 ALTER TABLE `rivers` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 [/input]
 [output]
 Rila
@@ -1059,8 +1061,6 @@ Orlovets
 [/test]
 [test]
 [input]
-\# test 1 : select m.mountain_range, p.peak_name, p.elevation
-\#          from peaks p inner join mountains m on p.mountain_id = m.id
 
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
@@ -1110,10 +1110,10 @@ CREATE TABLE IF NOT EXISTS `mountains` (
 ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `mountains` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `mountains` DISABLE KEYS */;
 INSERT INTO `mountains` (`id`, `mountain_range`) VALUES
 	(17, 'Rila');
-/\*!40000 ALTER TABLE `mountains` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `mountains` ENABLE KEYS */;
 
 
 
@@ -1138,13 +1138,13 @@ CREATE TABLE IF NOT EXISTS `peaks` (
 ) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `peaks` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `peaks` DISABLE KEYS */;
 INSERT INTO `peaks` (`id`, `peak_name`, `elevation`, `mountain_id`) VALUES
 	(1, 'Musala', 2925, 17),
 	(2, 'Malka Musala', 2902, 17),
 	(3, 'Malyovitsa', 2729, 17),
 	(4, 'Orlovets', 2685, 17);
-/\*!40000 ALTER TABLE `peaks` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `peaks` ENABLE KEYS */;
 
 
 
@@ -1176,9 +1176,6 @@ Orlovets
 [/test]
 [test]
 [input]
-\# test 2 : select m.mountain_range, p.peak_name, p.elevation
-\#          from peaks p inner join mountains m on p.mountain_id = m.id
-\#          where m.mountain_range = 'Rila';
 
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
@@ -1228,11 +1225,11 @@ CREATE TABLE IF NOT EXISTS `mountains` (
 ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `mountains` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `mountains` DISABLE KEYS */;
 INSERT INTO `mountains` (`id`, `mountain_range`) VALUES
 	(17, 'Rila'),
 	(18, 'Pirin');
-/\*!40000 ALTER TABLE `mountains` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `mountains` ENABLE KEYS */;
 
 
 
@@ -1257,14 +1254,14 @@ CREATE TABLE IF NOT EXISTS `peaks` (
 ) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `peaks` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `peaks` DISABLE KEYS */;
 INSERT INTO `peaks` (`id`, `peak_name`, `elevation`, `mountain_id`) VALUES
 	(1, 'Musala', 2925, 17),
 	(2, 'Malka Musala', 2902, 17),
 	(3, 'Malyovitsa', 2729, 17),
 	(4, 'Orlovets', 2685, 17),
 	(5, 'Vihren', 2785, 18);
-/\*!40000 ALTER TABLE `peaks` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `peaks` ENABLE KEYS */;
 
 
 
@@ -1296,9 +1293,6 @@ Orlovets
 [/test]
 [test]
 [input]
-\# test 3 : select m.mountain_range, p.peak_name, p.elevation
-\#          from peaks p inner join mountains m on p.mountain_id = m.id
-\#          order by p.elevation desc;
 
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
@@ -1348,10 +1342,10 @@ CREATE TABLE IF NOT EXISTS `mountains` (
 ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `mountains` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `mountains` DISABLE KEYS */;
 INSERT INTO `mountains` (`id`, `mountain_range`) VALUES
 	(17, 'Rila');
-/\*!40000 ALTER TABLE `mountains` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `mountains` ENABLE KEYS */;
 
 
 
@@ -1376,13 +1370,13 @@ CREATE TABLE IF NOT EXISTS `peaks` (
 ) ENGINE=InnoDB AUTO_INCREMENT=110 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `peaks` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `peaks` DISABLE KEYS */;
 INSERT INTO `peaks` (`id`, `peak_name`, `elevation`, `mountain_id`) VALUES
 	(1, 'Malka Musala', 2902, 17),
 	(2, 'Orlovets', 2685, 17),
 	(3, 'Malyovitsa', 2729, 17),
 	(4, 'Musala', 2925, 17);
-/\*!40000 ALTER TABLE `peaks` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `peaks` ENABLE KEYS */;
 
 
 
