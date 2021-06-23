@@ -298,7 +298,7 @@ GROUP BY e.`department_id`;
 [/code-editor]
 [task-description]
 
-[Download](https://videos.softuni.org/resources/java/java-mysql/Restaurant_Built-In-Functions.zip) and familiarize yourself with **the restaurant database.**
+[Download](https://videos.softuni.org/resources/java/java-mysql/Restaurant_Built-In-Functions.zip) and get familiar with **the restaurant database.**
 
 You will use it in the following assignments. 
 

@@ -88,7 +88,7 @@ oftun
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/Booklibrary_Built-In-Functions.zip) **for this task.**
 
-Download and get familiar with the **booklibrary** database. 
+Familiarize yourself with the **booklibrary** database. 
 
 You will use it in the following exercises.
 
