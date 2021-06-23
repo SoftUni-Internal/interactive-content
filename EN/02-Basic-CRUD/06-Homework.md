@@ -13,7 +13,7 @@ For part 1 run the provided sql code to create the **soft_uni_crud** database in
 [slide hideTitle]
 # Problem: Find All Information About Departments 
 
-[code-task title="Update Employees' Salary" taskId="update-employees-salary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Find All Information About Departments" taskId="find-info-about-departments" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
