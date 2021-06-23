@@ -102,12 +102,10 @@ Run `SELECT * FROM employees` to make sure the 3 records were inserted correctly
 
 # Problem with Solution: Create Tables
 
-[slide hideTitle]
-# Problem: Create Tables
 [code-task title="Create Tables" taskId="MySQL-Data-Definitions-and-Data-Types-Create-Table" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
-
+-- Write your SQL query here
 ```
 [/code-editor]
 [task-description]
