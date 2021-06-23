@@ -213,3 +213,21 @@ Greta
 [/tests]
 [/code-task]
 [/slide]
+
+[slide hideTitle]
+# Problem: Online Store Database
+
+Create a new database and design the following structure:
+
+[image assetsSrc="Table-Relations-Homework(11).png" /]
+[image assetsSrc="Table-Relations-Homework(1).png" /]
+[/slide]
+
+[slide hideTitle]
+# Problem: Online University Database
+
+Create a new database and design the following structure: 
+
+[image assetsSrc="Table-Relations-Homework(2).png" /]
+[image assetsSrc="Table-Relations-Homework.png" /]
+[/slide]
