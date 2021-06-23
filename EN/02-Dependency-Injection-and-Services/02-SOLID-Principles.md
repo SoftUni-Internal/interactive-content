@@ -29,11 +29,11 @@ It states that **every class** should have **responsibility** for **only one** p
 
 In other words, class behavior should remind **unchanged during the life of our application**.
 
-In the Angular context, a certain component in **an app should have only one mission**, which is to represent **certain data together, using templates**, to ensure the communication between a **component and template**. 
+In the Angular context, a certain component in an app should have **only one mission**, which is to represent **data by using templates**.
 
-A component should **not** make an HTTP call, then modify data, then send those data, etc.
+A component should **not** make an HTTP call, modify data, send data, etc.
 
-This job is performed by **services**, which will be the topic of the next section.
+This is performed by **services**, which will be the topic of the next section.
 
 [/slide]
 
@@ -43,17 +43,17 @@ This job is performed by **services**, which will be the topic of the next secti
 
 8-Open-Closed-Principle
 
-The **Open-Closed Principle** states that a class, a module, or a function should be **open for extension**, but **closed for modification**.
+The **Open-Closed Principle** states that a class, a module, or a function should be **open for extension** but **closed for modification**.
 
 This means is that as soon as a given **software entity** is **in use** by clients, we **should not change its behavior**.
 
 However, it should be possible to **extend** it as long as adding a new functionality **does not require changes** in the already established codebase.
 
-**Bugfixes** are an **exception** to this rule and we are **allowed** to **modify** the source code directly for debugging purposes.
+**Bugfixes** are an **exception** to this rule, and we are **allowed** to **modify** the source code directly for debugging purposes.
 
 By following the Open-Closed Principle, a component is more likely to contain **maintainable** and **reusable** code.
 
-If we decide to **break** this principle and modify functionality that is already deployed and being used by clients, this change can have a **profound impact** on the application and its users.
+If we decide to **break** this principle and modify functionality that is already deployed and being used by clients, this change can have a **negative impact** on the application and its users.
 
 [/slide]
 
@@ -69,7 +69,7 @@ In simple terms, derived types have to be **completely substitutable** for their
 
 Derived classes that follow this rule only **extend** the functionality of the base class.
 
-Child classes also **must not remove** the behavior of their **parent class**.
+Child classes also **should not remove** the behavior of their **parent class**.
 
 [/slide]
 
@@ -110,9 +110,9 @@ DIP changes the **direction** of the dependency and **splits it** between the hi
 
 DEMO
 
-- **What are Abstractions?**
+## Abstractions
 
-Abstraction is the process of **hiding all but the important data** about a specific object, to **increase efficiency** and **reduce complexity**.
+Abstraction is the process of **hiding all but the important data** about a specific object in order to **increase efficiency** and **reduce complexity**.
 
 Abstraction can be achieved by using **abstract classes** or **interfaces** to define what an implementing class **must** include.
 
@@ -139,9 +139,9 @@ class Brandon extends Person {
 
 We can create as **many objects as we need**, which will inherit the class `Person`, and all of them are **going to have the same four properties**. 
 
-- **What are Concretions?**
+## Concretions
 
-Being the opposite of **Abstractions**, the current class contains the **full implementation** of an abstract class.
+Concretions are the opposite of **Abstractions**, where the current class contains the **full implementation** of an abstract class.
 
 In the above example, the `Person` abstract class is a model for all other classes that will inherit it.
 
@@ -163,13 +163,11 @@ Also referred to as **Inversion of Control**, Dependency Injection is the princi
 
 A **downside** of dependencies is that they **decrease code reuse**.
 
-
 [/slide]
 
 [slide hideTitle]
 
 # Dependency Injection: Example
-
 
 The following code is an example for dependency injection:
 
@@ -206,7 +204,6 @@ To inject a dependency in a **class**, we use the **constructor**, in which we c
 
 We **should not** use the `new` keyword inside the constructor or use **static** methods and properties.
 
-
 ```js
 public class Car {
   public engine: Engine;
@@ -220,7 +217,6 @@ public class Car {
 ```
 
 This will make our class **brittle**, **inflexible**, and **hard to test**.
-
 
 [/slide]
 
@@ -268,6 +264,6 @@ To conclude, these are the requirements for the DI Pattern:
 
 For additional information, visit [Angular's documentation](https://angular.io/guide/dependency-injection).
 
-You can learn more about SOLID principles in JavaScript [here](https://aspiringcraftsman.com/2011/12/08/solid-javascript-single-responsibility-principle/).
+You can learn more about the SOLID principles in JavaScript [here](https://aspiringcraftsman.com/2011/12/08/solid-javascript-single-responsibility-principle/).
 
 [/slide]
