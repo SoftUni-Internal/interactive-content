@@ -2,7 +2,7 @@
 
 
 [slide hideTitle]
-# Problem with Solution: One-To-One Relationship
+# Problem: One-To-One Relationship
 [code-task title="One-To-One Relationship" taskId="java-db-and-MySQL-table-relations-one-to-one-relationship" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 
@@ -262,7 +262,7 @@ N34FG21B
 
 
 [slide hideTitle]
-# Problem with Solution: One-To-Many Relationship
+# Problem: One-To-Many Relationship
 [code-task title="One-To-One Relationship" taskId="java-db-and-MySQL-table-relations-one-to-many-relationship" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 
@@ -535,7 +535,7 @@ Nova
 
 
 [slide hideTitle]
-# Problem with Solution: Many to Many Relationship
+# Problem: Many to Many Relationship
 [code-task title="One-To-One Relationship" taskId="java-db-and-MySQL-table-relations-many-to-many-relationship" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 
@@ -884,4 +884,9 @@ Oracle 11g
 [/test]
 [/tests]
 [/code-task]
+[/slide]
+
+[slide hideTitle]
+# Problem: Self Referencing
+
 [/slide]
