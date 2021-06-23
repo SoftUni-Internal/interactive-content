@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Custom Column properties
+# Custom Column Properties
 
 ## Primary Key
 
@@ -102,7 +102,218 @@ Run `SELECT * FROM employees` to make sure the 3 records were inserted correctly
 
 # Problem with Solution: Create Tables
 
-TODO: Generate task
+[slide hideTitle]
+# Problem: Create Tables
+[code-task title="Create Tables" taskId="MySQL-Data-Definitions-and-Data-Types-Create-Table" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+[code-editor language=sql]
+```
+
+```
+[/code-editor]
+[task-description]
+## Description
+When we create tables, we specify which database we want to add them to. This is done by using the "**USE**" clause.
+
+**Submit your solutions in JUDGE without the "USE** \{**database name**\}**" row.**
+
+`"employees":`
+
+- id – **INT, primary key, AUTO_INCREMENT;**
+- first_name – **VARCHAR, NOT NULL;**
+- last_name – **VARCHAR, NOT NULL;**  
+
+Create the "**categories**" and "**products**" tables analogically:
+
+`"categories":`
+
+- id – **INT, primary key, AUTO_INCREMENT;**
+
+- name – **VARCHAR, NOT NULL;** 
+
+`"products":`
+
+- id –  **INT, primary key, AUTO_INCREMENT;**
+
+- name – **VARCHAR, NOT NULL;** 
+
+- category_id – **INT, NOT NULL** – it is not a foreign key for now.
+
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+SELECT lower(TABLE_NAME), lower(COLUMN_NAME) 
+FROM information_schema.COLUMNS 
+WHERE TABLE_SCHEMA = database()
+    and lower(TABLE_NAME) = 'employees'
+ORDER BY lower(COLUMN_NAME);
+
+SELECT DISTINCT lower(column_name)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'employees'
+    ORDER BY lower(COLUMN_NAME);
+    
+SELECT lower(TABLE_NAME), lower(COLUMN_NAME) 
+FROM information_schema.COLUMNS 
+WHERE TABLE_SCHEMA = database()
+    and lower(TABLE_NAME) = 'categories'
+ORDER BY lower(COLUMN_NAME);
+
+
+SELECT DISTINCT lower(column_name)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'categories'
+    ORDER BY lower(COLUMN_NAME);
+
+SELECT lower(TABLE_NAME), lower(COLUMN_NAME) 
+FROM information_schema.COLUMNS 
+WHERE TABLE_SCHEMA = database()
+    and lower(TABLE_NAME) = 'products'
+ORDER BY lower(COLUMN_NAME);
+
+SELECT DISTINCT lower(column_name)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'products'
+    ORDER BY lower(COLUMN_NAME);
+[/input]
+[output]
+employees
+first_name
+employees
+id
+employees
+last_name
+id
+categories
+id
+categories
+name
+id
+products
+category_id
+products
+id
+products
+name
+id
+[/output]
+[/test]
+[test]
+[input]
+SELECT DISTINCT lower(TABLE_NAME) as t
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'employees';
+[/input]
+[output]
+employees
+[/output]
+[/test]
+[test]
+[input]
+SELECT lower(COLUMN_NAME) 
+FROM information_schema.COLUMNS 
+WHERE TABLE_SCHEMA = database()
+    and lower(TABLE_NAME) = 'employees'
+ORDER BY lower(COLUMN_NAME);
+[/input]
+[output]
+first_name
+id
+last_name
+[/output]
+[/test]
+[test]
+[input]
+SELECT DISTINCT lower(column_name)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'employees';
+[/input]
+[output]
+id
+[/output]
+[/test]
+[test]
+[input]
+SELECT DISTINCT lower(TABLE_NAME) as t
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'products';
+[/input]
+[output]
+products
+[/output]
+[/test]
+[test]
+[input]
+SELECT lower(COLUMN_NAME)
+FROM information_schema.COLUMNS 
+WHERE TABLE_SCHEMA = database()
+    and lower(TABLE_NAME) = 'products'
+ORDER BY lower(COLUMN_NAME);
+[/input]
+[output]
+category_id
+id
+name
+[/output]
+[/test]
+[test]
+[input]
+SELECT DISTINCT lower(column_name)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'products';
+[/input]
+[output]
+id
+[/output]
+[/test]
+[test]
+[input]
+SELECT DISTINCT lower(table_name)
+    FROM INFORMATION_SCHEMA.TABLES
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'categories';
+[/input]
+[output]
+categories
+[/output]
+[/test]
+[test]
+[input]
+SELECT DISTINCT lower(column_name)
+    FROM INFORMATION_SCHEMA.COLUMNS
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'categories'
+ORDER BY lower(COLUMN_NAME);
+[/input]
+[output]
+id
+name
+[/output]
+[/test]
+[test]
+[input]
+SELECT DISTINCT lower(column_name)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and lower(table_name) = 'categories';
+[/input]
+[output]
+id
+[/output]
+[/test]
+[/tests]
+[/code-task]
+[/slide]
 
 [/slide]
 
