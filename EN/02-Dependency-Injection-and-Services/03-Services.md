@@ -13,13 +13,13 @@ An angular app can be **divided** into several components:
 - **Image** component 
 - **Create account** component
 
-These components are **standalone** and each of them **represents** a part of the user interface.
+These components are **standalone**, and each of them **represents** a part of the user interface.
 
-All of these components could **performe** common tasks, for example, accessing the **database** or **rendering** images on the view.
+All of them could **perform** common tasks like accessing the **database** or **rendering** images on the view.
 
-Instead of having to **write the code for every component**, we can just make use of Angular services.
+Instead of having to **write the code for every component**, we can just use Angular services.
 
-A service could be a **function**, it could be a **variable**, or a **feature** that an application needs, and once written, it could be **injected into all** of these components.
+A service could be a **function**, a **variable**, or a **feature** that an application needs, and once written, it could be **injected into all** of these components.
  
 A component can **delegate** tasks like:
 - **Fetching** data from the server
@@ -29,13 +29,15 @@ These tasks can be made **available** to any component in the app.
 
 Angular services have the following **features**:
 
-- Angular service is simply a TypeScript **class** with an **injectable** decorator
+- They are simply TypeScript **classes** with an **injectable** decorator
 
 This decorator **tells** Angular that the class is a **service** and can be **injected** into **components** that need that service.
 
 - Services hold **valuable business logic** and can also be used to interact with the server-side 
 
-For example, if we want to make **AJAX calls**, we can have **methods** for those calls in the **service**. Then, we can use them as a **dependency** in the files.
+For example, if we want to make **AJAX calls**, we can have **methods** for those calls in the **service**.
+
+Then, we can use them as a **dependency** in the files.
 
 - Services are **singleton**, meaning that only a **single** instance of service gets **created** and the **same instance** is used by **each** building block in the application 
 
@@ -47,13 +49,13 @@ To register it as part of the **component**, we will have to **specify** it in t
 
 [slide hideTitle]
 
-# Create a Service
+# Creating a Service
 
 20-Create-a-Service
 
-Angular **services** look like any other TypeScript **class** that handles **data manipulation**.
+Angular **services** look like any other TypeScript **class** that performs **data manipulation**.
 
-Let us create a simple service that we will call `NotifyService`.
+In the following example, we will create a simple service and call it `NotifyService`.
 
 In the `src/app` directory of our project, we will create a new file, which will be called `notify.service.ts`.
 
@@ -78,7 +80,7 @@ Our simple service contains a `notify()` function, which displays an alert in th
 
 21-Injecting-into-Components
 
-To **inject a service into a component**, first, we should go to the component's TypeScript file.
+To **inject a service into a component**, we should go to the component's TypeScript file.
 
 We will use the main `AppComponent` as an example:
 
@@ -101,7 +103,7 @@ export class AppComponent {
 
 At the top of our file, we import the `NotifyService` class.
 
-In the `@Component` decorator, we pass an array that contains our class, to the `providers` property.
+In the `@Component` decorator, we pass an array that contains our class to the `providers` property.
 
 Then, we add `NotifyService` to the constructor of the `AppComponent` class as a parameter.
 
@@ -116,7 +118,7 @@ Then, we add `NotifyService` to the constructor of the `AppComponent` class as a
 
 The **easiest way to create** an injectable service is by using the **Angular CLI**.
 
-We should open a **command-line tool** in our project directory and type `ng generate service demo`.
+After opening a **command-line tool** in the project directory, type `ng generate service demo`.
 
 This command will generate a skeleton `DemoService` class.
 
