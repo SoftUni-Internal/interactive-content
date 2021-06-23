@@ -135,6 +135,57 @@ middle_name
 
 # Problem with Solution: Adding Constraints
 
+[code-task title="Adding Constraints" taskId="MySQL-Data-definitions-and-Data-Types-Adding-Constraints" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+[code-editor language=sql]
+```
+-- Write your SQL query here
+```
+[/code-editor]
+[code-adapter]
+CREATE TABLE categories(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name varchar(50) not null
+);
+
+CREATE TABLE products(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name varchar(50) not null,
+	category_id int not null
+);
+[/code-adapter]
+[task-description]
+## Description
+Create the connection via a foreign key between the "**products**" and "**categories**" tables that you've created earlier. 
+
+Make **"category_id" foreign key linked to "id" in the "categories" table.**
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+SELECT lower(COLUMN_NAME) 
+FROM information_schema.key_column_usage 
+WHERE TABLE_SCHEMA = database() 
+AND lower(TABLE_NAME) = 'products'
+ORDER BY lower(COLUMN_NAME);
+[/input]
+[output]
+category_id
+id
+
+[/output]
+[/test]
+[/tests]
+[/code-task]
+
+
+[/slide]
+
+[slide hideTitle]
+
+# Problem with Solution: Adding Constraints
+
 TODO: Add task
 [/slide]
 
