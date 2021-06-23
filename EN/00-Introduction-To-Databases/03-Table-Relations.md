@@ -13,6 +13,7 @@
 Create a tables: 
 
 - **teachers** 
+
 | **teacher_id** | **name** | **manager_id**|
 | --- | --- | --- |
 | 101 | John ||
@@ -61,7 +62,7 @@ WHERE
   lower(REFERENCED_COLUMN_NAME) = 'teacher_id' AND 
   lower(REFERENCED_TABLE_NAME) = 'teachers';
   
- 
+  
 select \* from 
 teachers 
 order by teacher_id;
