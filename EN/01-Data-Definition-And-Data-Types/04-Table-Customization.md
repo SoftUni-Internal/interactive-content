@@ -315,8 +315,31 @@ id
 
 
 [slide hideTitle]
+# Problem: Data Into Tables
+[code-task title="Problem: Data into Tables" taskId="MySQL-Data-definitions-and-Data-Types-Data-into-Problem" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+[code-editor language=sql]
+```
+-- Write your SQL query here
+```
+[/code-editor]
+[task-description]
+## Description
+Inserting data can be done with a query too. 
 
-# Problem with Solution: Insert Data in Tables
-TODO: Generate task
-
+To do that we use the "**INSERT**" clause. Populate the "employees" table with 3 test values.
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+SELECT count(id) from `employees`;
+[/input]
+[output]
+3
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
+
+
