@@ -32,9 +32,9 @@ And then, we create a "**Join condition**" using "**FOREIGN KEYS**".
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
-**Here is a link to the** [resources]() **for this task.**
+Use the database that is called "**Camp Database**".
 
 Write a query that retrieves information about SoftUni Camp's transport organization. 
 
@@ -272,7 +272,9 @@ Henry Wilson
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
+
+Use the database that is called "**Camp Database**".
 
 Get information about hiking **routes** - **starting point** and **ending point**, and their **leaders** - **name** and **id**. 
 
