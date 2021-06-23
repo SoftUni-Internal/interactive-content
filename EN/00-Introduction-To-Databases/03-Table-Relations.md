@@ -181,11 +181,14 @@ teacher_id
 [/test]
 [test]
 [input]
+```
 select * from 
 teachers 
 order by teacher_id;
+```
 [/input]
 [output]
+```
 101 
 John 
 
@@ -204,6 +207,7 @@ Mark
 106 
 Greta 
 101
+```
 [/output]
 [/test]
 [/tests]
