@@ -383,8 +383,9 @@ Write a query to retrieve information about employees, who are in **department 4
 
 | id | first_name | last_name | job_title | department_id | salary |
 | --- | --- | --- | --- | --- | --- |
-| 3 | Smith | Johnson | Porter | 4 | 1100 |
-| 9 | Nikolay | Ivanov | Housekeeping | 4 | 1600 |
+| 3 | Samuel | Bridges | Porter | 4 | 1100 |
+| 9 | Eileen | Clayton | Housekeeping | 4 | 1600 |
+
 
 
 [/task-description]
@@ -414,24 +415,24 @@ CREATE TABLE employees (
 INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
 	('John', 'Smith', 'Manager',1, 900.00),
 	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
+	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
 	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
 3
-Smith
-Johnson
+Samuel
+Bridges
 Porter
 4
 1100
 9
-Nikolay
-Ivanov
+Eileen
+Clayton
 Housekeeping
 4
 1600
@@ -461,24 +462,24 @@ CREATE TABLE employees (
 INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
 	('John', 'Smith', 'Manager',1, 900.00),
 	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
+	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
 	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
 3
-Smith
-Johnson
+Samuel
+Bridges
 Porter
 4
 1100
 9
-Nikolay
-Ivanov
+Eileen
+Clayton
 Housekeeping
 4
 1600
@@ -487,6 +488,7 @@ Housekeeping
 [/tests]
 [/code-task]
 [/slide]
+
 [slide hideTitle]
 
 # Comparison with NULL
