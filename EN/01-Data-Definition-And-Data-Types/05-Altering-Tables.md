@@ -84,11 +84,50 @@ The default value for the **balance** column will be 0.
 
 [/slide]
 
+
+
 [slide hideTitle]
-
 # Problem with Solution: Alter Tables
+[code-task title="Alter Tables" taskId="MySQL-Data-definitions-and-Data-Types-Alter-Tables" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+[code-editor language=sql]
+```
+-- Write your SQL query here
+```
+[/code-editor]
+[code-adapter]
+CREATE TABLE IF NOT EXISTS employees(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name varchar(50) not null,
+	last_name varchar(50) not null
+);
+[/code-adapter]
+[task-description]
+## Description
+Altering the tables is done via the "**ALTER TABLE**" clause. 
 
-TODO: Add task
+Add a new column – "**middle_name**" to the "**employees**" table. 
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+SELECT lower(COLUMN_NAME) 
+FROM information_schema.COLUMNS 
+WHERE TABLE_SCHEMA = database()
+    and lower(TABLE_NAME) = 'employees'
+ORDER BY lower(COLUMN_NAME);
+[/input]
+[output]
+first_name
+id
+last_name
+middle_name
+[/output]
+[/test]
+[/tests]
+[/code-task]
+
 
 [/slide]
 

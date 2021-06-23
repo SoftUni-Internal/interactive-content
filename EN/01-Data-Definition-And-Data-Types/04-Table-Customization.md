@@ -315,7 +315,7 @@ id
 
 
 [slide hideTitle]
-# Problem: Data Into Tables
+# Problem with Solution: Data Into Tables
 [code-task title="Data into Tables" taskId="MySQL-Data-definitions-and-Data-Types-Data-into-Problem" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
