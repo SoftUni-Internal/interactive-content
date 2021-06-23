@@ -1,7 +1,7 @@
 
 [slide hideTitle]
 # Problem with Solution: Self Referencing
-[code-task title="Self Referencing" taskId="table-relations-self-referencing" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+[code-task title="Self Referencing" taskId="java-db-and-MySQL-table-relations-self-referencing" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 
 ```
