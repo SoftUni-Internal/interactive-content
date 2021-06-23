@@ -1,7 +1,7 @@
 
 [slide hideTitle]
 # Problem with Solution: Self Referencing
-[code-task title="One-To-One Relationship" taskId="table-relations-self-referencing" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+[code-task title="Self Referencing" taskId="table-relations-self-referencing" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 
 ```
@@ -80,7 +80,6 @@ teachers
 teacher_id
 101
 John
-
 102
 Maya
 106
@@ -164,7 +163,6 @@ order by teacher_id;
 [output]
 101
 John
-
 102
 Maya
 106
