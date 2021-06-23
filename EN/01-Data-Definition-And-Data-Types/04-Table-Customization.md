@@ -322,6 +322,13 @@ id
 -- Write your SQL query here
 ```
 [/code-editor]
+[code-adapter]
+CREATE TABLE IF NOT EXISTS employees(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name varchar(50) not null,
+	last_name varchar(50) not null
+);
+[/code-adapter]
 [task-description]
 ## Description
 Inserting data can be done with a query too. 
