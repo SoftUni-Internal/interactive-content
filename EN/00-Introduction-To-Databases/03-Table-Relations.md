@@ -51,6 +51,7 @@ Create a tables:
 [tests]
 [test open]
 [input]
+```
 # test 1 : 'teachers' table name
 
 SELECT lower(table_name)
@@ -89,6 +90,7 @@ WHERE
 select * from 
 teachers 
 order by teacher_id;
+```
 [/input]
 [output]
 teachers
