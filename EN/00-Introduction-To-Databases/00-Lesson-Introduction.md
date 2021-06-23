@@ -44,21 +44,21 @@ CREATE TABLE authors (
 );
 
 INSERT INTO authors(id,first_name, middle_name, last_name, born, died) VALUES
-	(1,'Agatha', 'Mary Clarissa','Christie', '1890-09-15 00:00:00', '1976-01-12 00:00:00'),
-	(2,'William', NULL,'Shakespeare', '1564-04-26 00:00:00', '1616-04-23 00:00:00'),
-	(3,'Danielle', 'Fernandes Dominique', 'Schuelein-Steel', '1947-07-14 00:00:00', NULL),
-	(4,'Joanne', NULL,'Rowling' , '1965-07-31 00:00:00', NULL),
-	(5,'Lev', 'Nikolayevich', 'Tolstoy', '1828-09-09 00:00:00', '1910-11-20 00:00:00'),
-	(6,'Paulo', 'Coelho de', 'Souza', '1947-08-24 00:00:00', NULL),
-	(7,'Stephen', 'Edwin', 'King', '1947-09-21 00:00:00', NULL),
-	(8,'John', 'Ronald Reuel', 'Tolkien', '1892-01-03 00:00:00', '1973-09-02 00:00:00'),
-	(9,'Erika', NULL, 'Mitchell', '1963-03-07 00:00:00', NULL);
+	(1,'Agatha', 'Mary Clarissa','Christie', '1890-09-15', '1976-01-12'),
+	(2,'William', NULL,'Shakespeare', '1564-04-26', '1616-04-23'),
+	(3,'Danielle', 'Fernandes Dominique', 'Schuelein-Steel', '1947-07-14', NULL),
+	(4,'Joanne', NULL,'Rowling' , '1965-07-31', NULL),
+	(5,'Lev', 'Nikolayevich', 'Tolstoy', '1828-09-09', '1910-11-20'),
+	(6,'Paulo', 'Coelho de', 'Souza', '1947-08-24', NULL),
+	(7,'Stephen', 'Edwin', 'King', '1947-09-21', NULL),
+	(8,'John', 'Ronald Reuel', 'Tolkien', '1892-01-03', '1973-09-02'),
+	(9,'Erika', NULL, 'Mitchell', '1963-03-07', NULL);
 	
 CREATE TABLE books (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	title VARCHAR(100) NOT NULL,
 	author_id INT NOT NULL,
-	year_of_release DATE,
+	year_of_release DATETIME,
 	cost DOUBLE NOT NULL,
 	CONSTRAINT fk_author_id FOREIGN KEY (author_id) REFERENCES authors(id)
 );
@@ -72,13 +72,13 @@ INSERT INTO books(author_id,title, year_of_release,cost) VALUES
 	(2,'Julius Caesar', '1599-01-02',11.99),
 	(2,'Timon of Athens', '1607-01-02',13.99),
 	(2,'As You Like It', '1600-01-02',18.99),
-	(2,'A Midsummer Night''s Dream', '1595-01-02',15.99),
+	(2,'A Midsummer Night\'s Dream', '1595-01-02',15.99),
 	(3,'Going Home', '1973-01-02',15.99),
 	(3,'The Ring', '1980-01-02',14.99),
 	(3,'Secrets', '1985-01-02',15.99),
 	(3,'Message From Nam', '1990-01-02',13.99),
 	(4,'Career of Evil', '2015-01-02',15.99),
-	(4, 'Harry Potter and the Philosopher''s Stone','1997-01-02',19.99),
+	(4, 'Harry Potter and the Philosopher\'s Stone','1997-01-02',19.99),
 	(4,'Harry Potter and the Chamber of Secrets','1998-01-02',19.99),
 	(4,'Harry Potter and the Prisoner of Azkaban','1999-01-02',19.99),
 	(4,'Harry Potter and the Goblet of Fire','2000-01-02',19.99),
@@ -104,26 +104,14 @@ INSERT INTO books(author_id,title, year_of_release,cost) VALUES
 	(9,'Fifty Shades Freed','2012-01-02',13.99);
 [/input]
 [output]
-Full Name
-days\_lived
-Agatha Christie
-31164
-William Shakespeare
-18990
-Danielle Schuelein\-Steel
-NULL
-Joanne Rowling
-NULL
-Lev Tolstoy
-30021
-Paulo Souza
-NULL
-Stephen King
-NULL
-John Tolkien
-29827
-Erika Mitchell
-NULL
+Harry Potter and the Philosopher's Stone
+Harry Potter and the Chamber of Secrets
+Harry Potter and the Prisoner of Azkaban
+Harry Potter and the Goblet of Fire
+Harry Potter and the Order of the Phoenix
+Harry Potter and the Half-Blood Prince
+Harry Potter and the Deathly Hallows
+Harry Potter and the Deathly Hallows
 [/output]
 [/test]
 [test]
@@ -138,21 +126,21 @@ CREATE TABLE authors (
 );
 
 INSERT INTO authors(id,first_name, middle_name, last_name, born, died) VALUES
-	(1,'Agatha', 'Mary Clarissa','Christie', '1890-09-15 00:00:00', '1976-01-12 00:00:00'),
-	(2,'William', NULL,'Shakespeare', '1564-04-26 00:00:00', '1616-04-23 00:00:00'),
+	(1,'Agatha', 'Mary Clarissa','Christie', '1890-09-15', '1976-01-12'),
+	(2,'William', NULL,'Shakespeare', '1564-04-26', '1616-04-23'),
 	(3,'Danielle', 'Fernandes Dominique', 'Schuelein-Steel', '1947-07-14', NULL),
-	(4,'Joanne', NULL,'Rowling' , '1965-07-31 00:00:00', NULL),
-	(5,'Lev', 'Nikolayevich', 'Tolstoy', '1828-09-09 00:00:00', '1910-11-20 00:00:00'),
-	(6,'Paulo', 'Coelho de', 'Souza', '1947-08-24 00:00:00', NULL),
-	(7,'Stephen', 'Edwin', 'King', '1947-09-21 00:00:00', NULL),
-	(8,'John', 'Ronald Reuel', 'Tolkien', '1892-01-03 00:00:00', '1973-09-02 00:00:00'),
-	(9,'Erika', NULL, 'Mitchell', '1963-03-07 00:00:00', NULL);
+	(4,'Joanne', NULL,'Rowling' , '1965-07-31', NULL),
+	(5,'Lev', 'Nikolayevich', 'Tolstoy', '1828-09-09', '1910-11-20'),
+	(6,'Paulo', 'Coelho de', 'Souza', '1947-08-24', NULL),
+	(7,'Stephen', 'Edwin', 'King', '1947-09-21', NULL),
+	(8,'John', 'Ronald Reuel', 'Tolkien', '1892-01-03', '1973-09-02'),
+	(9,'Erika', NULL, 'Mitchell', '1963-03-07', NULL);
 	
 CREATE TABLE books (
 	id INT PRIMARY KEY AUTO_INCREMENT,
 	title VARCHAR(100) NOT NULL,
 	author_id INT NOT NULL,
-	year_of_release DATE,
+	year_of_release DATETIME,
 	cost DOUBLE NOT NULL,
 	CONSTRAINT fk_author_id FOREIGN KEY (author_id) REFERENCES authors(id)
 );
@@ -166,13 +154,13 @@ INSERT INTO books(author_id,title, year_of_release,cost) VALUES
 	(2,'Julius Caesar', '1599-01-02',11.99),
 	(2,'Timon of Athens', '1607-01-02',13.99),
 	(2,'As You Like It', '1600-01-02',18.99),
-	(2,'A Midsummer Night''s Dream', '1595-01-02',15.99),
+	(2,'A Midsummer Night\'s Dream', '1595-01-02',15.99),
 	(3,'Going Home', '1973-01-02',15.99),
 	(3,'The Ring', '1980-01-02',14.99),
 	(3,'Secrets', '1985-01-02',15.99),
 	(3,'Message From Nam', '1990-01-02',13.99),
 	(4,'Career of Evil', '2015-01-02',15.99),
-	(4, 'Harry Potter and the Philosopher''s Stone','1997-01-02',19.99),
+	(4, 'Harry Potter and the Philosopher\'s Stone','1997-01-02',19.99),
 	(4,'Harry Potter and the Chamber of Secrets','1998-01-02',19.99),
 	(4,'Harry Potter and the Prisoner of Azkaban','1999-01-02',19.99),
 	(4,'Harry Potter and the Goblet of Fire','2000-01-02',19.99),
@@ -198,26 +186,14 @@ INSERT INTO books(author_id,title, year_of_release,cost) VALUES
 	(9,'Fifty Shades Freed','2012-01-02',13.99);
 [/input]
 [output]
-Full Name
-days\_lived
-Agatha Christie
-31164
-William Shakespeare
-18990
-Danielle Schuelein\-Steel
-NULL
-Joanne Rowling
-NULL
-Lev Tolstoy
-30021
-Paulo Souza
-NULL
-Stephen King
-NULL
-John Tolkien
-29827
-Erika Mitchell
-NULL
+Harry Potter and the Philosopher's Stone
+Harry Potter and the Chamber of Secrets
+Harry Potter and the Prisoner of Azkaban
+Harry Potter and the Goblet of Fire
+Harry Potter and the Order of the Phoenix
+Harry Potter and the Half-Blood Prince
+Harry Potter and the Deathly Hallows
+Harry Potter and the Deathly Hallows
 [/output]
 [/test]
 [/tests]
