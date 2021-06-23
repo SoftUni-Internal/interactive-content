@@ -21,9 +21,9 @@ After that, we can add a navigation tag to the `app.component.html` file or any 
 </nav>
 ```
 
-In this `nav` tag, we are using **router link** instead of **href**.
+In this `nav` tag, we are using **router links** instead of **href**.
 
-This custom attribute overrides the default page reload that **href** does.
+This custom attribute overrides the default page reload that the **href** does.
 
 Finally, we have to define the **router outlet**:
 
@@ -39,17 +39,17 @@ Finally, we have to define the **router outlet**:
 
 Angular-Modules-and-routing-13-14-15-Create-Routes-Module
 
-To create a Router Module, we need to create a file called `app-routing.module.ts`.
+To create a Router Module, we first need to create a file called `app-routing.module.ts`.
 
-You can do this either manually or by using **Angular CLI**:
+You can do this either manually or by using the **Angular CLI**:
 
 ```
 ng generate module app-routing --flat --module=app
 ```
 
-Once the file has been saved, we must import **NgModule**, **RouterModule**, and **Routes**, as well as our **components**.
+Once the file has been saved, you should import **NgModule**, **RouterModule**, and **Routes**, as well as your **components**.
 
-We put the routes in an array, as shown below:
+Then, put the routes in an array, as shown below:
 
 ```js
 const routes: Routes = [
@@ -89,15 +89,15 @@ The final step is to **import** the **routes** in the **app** module.
 
 Angular-Modules-and-routing-16-The-RouterLink-Directive
 
-`RouterLink` turns elements into links.
+The `RouterLink` directive turns elements into links.
 
-It gives the element an **href** to a route, and the user can open it.
+It gives the element a similar behavior to an **href**.
 
 We can pass the location by using a **string path**, again, similarly to an **href**.
 
-And the other way is to pass an **array**.
+The other way is to pass an **array**.
 
-Here are examples of both ways:
+Here is an example of both ways:
 
 -  Using a **string**:
 
@@ -169,7 +169,7 @@ In this example, we pass a single **id** as a parameter:
 { path: 'catalog/:id', component: ProductDetailsComponent }
 ```
 
-And here, we have two parameters: `:category` and `:id`
+And here, we have two parameters: `:category` and `:id`:
 
 ```js
 { path: 'catalog/:category/:id', component: ProductDetailsComponent }
@@ -184,7 +184,7 @@ And here, we have two parameters: `:category` and `:id`
 Angular-Modules-and-routing-19-Fetching-Parameters
 Angular-Modules-and-routing-20-Fetching-Parameters-Reactively
 
-We use **ActivatedRoute** when we want to fetch a route associated with the component loaded in an outlet.
+We can use **ActivatedRoute** when we want to fetch a route associated with the component in an outlet.
 
 To use it, we need to set it in the constructor of the component:
 
@@ -194,11 +194,11 @@ constructor(
 ) { }
 ```
 
-After **ActivatedRoute** has been set we can use `this.route.params` to retrieve the parameters from the URL.
+After **ActivatedRoute** has been set, we can use `this.route.params` to retrieve the parameters from the URL.
 
 If we want to get the parameters **only once**, we can use `this.route.snapshot.params`.
 
-This must be done in the  **ngOnInit** lifecycle hook:
+This should be done inside the **ngOnInit** lifecycle hook:
 
 ```js
 ngOnInit() {
@@ -245,7 +245,7 @@ To do that, we need to add them to our `component.html` file:
 </a>
 ```
 
-The URL that we will receive looks like this: `/users?search=Peter#loading`.
+The resulting URL from the example above would be: `/users?search=Peter#loading`.
 
 We can get the parameter or the fragments from the URL with the following properties:
 
@@ -282,7 +282,7 @@ In this example, we have a path called **product**.
 
 As a component, we add the **children** property, where we store the nested routes.
 
-Also, we must add the `<router-outlet></router-outlet>` placeholder to the component's **html** file.
+Also, we should add the `<router-outlet></router-outlet>` placeholder to the component's **html** file.
 
 [/slide]
 
@@ -296,7 +296,7 @@ We can redirect the user to a different path.
 
 That can happen by rendering a different component.
 
-Redirecting is useful, for example, when the user tries to access a page that does not exist.
+Redirecting is useful  when the user tries to access a page that does not exist.
 
 We can return the **404** page by using a **wildcard**:
 
