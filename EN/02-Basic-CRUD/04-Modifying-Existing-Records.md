@@ -1,17 +1,24 @@
-# Homework
-
 [slide hideTitle]
-# Part 1 - Queries for the SoftUni Database 
 
-Here is a link to [the resources](ADD_THE_LINK) you will need for solving all the tasks in this Homework assignment.
+# Updating data
 
-For part 1 run the provided sql code to create the **soft_uni_crud** database in **MySQL Workbench** before you begin.
+Persisting our records in the database is the first step but we will often need to modify existing data.
 
+This can be done with the keyword **UPDATE**. 
+
+```java
+UPDATE `students`                                               
+SET `age` = 14                                               
+WHERE `first_name` = 'Mary' AND `last_name` = 'Johnson';
+```
+We choose the column or columns we want to change with the **SET** keyword.
+
+Make sure you do not forget to filter the records you want to change otherwise the **UPDATE** operation will change the whole table.
 
 [/slide]
 
 [slide hideTitle]
-# Problem: Find All Information About Departments 
+# Problem with Solution: Update Employees' Salary
 
 [code-task title="Update Employees' Salary" taskId="update-employees-salary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
@@ -24,328 +31,297 @@ For part 1 run the provided sql code to create the **soft_uni_crud** database in
 [task-description]
 ## Description
 
-Write an SQL query to find **all available information about the departments in the SoftUni database**. 
+Update the salary of all employees whose **job_title** is "**Manager**", **increasing it by 100**.
 
-**Sort the information by id**. 
+Retrieve information about all the salaries from the employees table.
+
+**Hint**: Running this query in MySQL Workbench might produce the following error - Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column.
+
+You can solve it by disabling safe mode and trying to run the query again.
+
+To disable safe mode, execute the following query:
+
+```sql
+SET SQL_SAFE_UPDATES = 0
+```
 
 ## Example
 
-| department_id | name | manager_id |
-| --- | --- | --- |
-| 1 | Engineering | 12 | 
-| 2 | Tool Design | 4 | 
-| 3 | Sales | 273 | 
-| ... | ... | ... | 
+| **salary** |
+| --- |
+| 1100 | 
+| 880 | 
+| 1100 | 
+| 1100 | 
+| 1500.23 | 
+| ... | 
+
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
 
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
 
-/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
-INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
-	(1, 'Engineering', 12),
-	(2, 'Tool Design', 4),
-	(3, 'Sales', 273),
-	(4, 'Marketing', 46),
-	(5, 'Purchasing', 6),
-	(6, 'Research and Development', 42),
-	(7, 'Production', 148),
-	(8, 'Production Control', 21),
-	(9, 'Human Resources', 30),
-	(10, 'Finance', 3),
-	(11, 'Information Services', 42),
-	(12, 'Document Control', 90),
-	(13, 'Quality Assurance', 274),
-	(14, 'Facilities and Maintenance', 218),
-	(15, 'Shipping and Receiving', 85),
-	(16, 'Executive', 109);
-/\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
+	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
-1
-Engineering
-12
-2
-Tool Design
-4
-3
-Sales
-273
-4
-Marketing
-46
-5
-Purchasing
-6
-6
-Research and Development
-42
-7
-Production
-148
-8
-Production Control
-21
-9
-Human Resources
-30
-10
-Finance
-3
-11
-Information Services
-42
-12
-Document Control
-90
-13
-Quality Assurance
-274
-14
-Facilities and Maintenance
-218
-15
-Shipping and Receiving
-85
-16
-Executive
-109
+1000
+880
+1100
+1100
+1500.23
+990
+1800
+2100
+1600
 [/output]
 [/test]
 [test]
 [input]
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
 
 
-/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
-INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
-	(1, 'Engineering', 12),
-	(2, 'Tool Design', 4),
-	(3, 'Sales', 273),
-	(4, 'Marketing', 46),
-	(5, 'Purchasing', 6),
-	(6, 'Research and Development', 42),
-	(7, 'Production', 148),
-	(8, 'Production Control', 21),
-	(9, 'Human Resources', 30),
-	(10, 'Finance', 3),
-	(11, 'Information Services', 42),
-	(12, 'Document Control', 90),
-	(13, 'Quality Assurance', 274),
-	(14, 'Facilities and Maintenance', 218),
-	(15, 'Shipping and Receiving', 85),
-	(16, 'Executive', 109);
-/\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
+
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
+
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
+	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
+	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
-1
-Engineering
-12
-2
-Tool Design
-4
-3
-Sales
-273
-4
-Marketing
-46
-5
-Purchasing
-6
-6
-Research and Development
-42
-7
-Production
-148
-8
-Production Control
-21
-9
-Human Resources
-30
-10
-Finance
-3
-11
-Information Services
-42
-12
-Document Control
-90
-13
-Quality Assurance
-274
-14
-Facilities and Maintenance
-218
-15
-Shipping and Receiving
-85
-16
-Executive
-109
+1000
+880
+1100
+1100
+1500.23
+990
+1800
+2100
+1600
 [/output]
 [/test]
 [/tests]
 [/code-task]
 [/slide]
 
-[/slide]
-
 [slide hideTitle]
 
-# Problem: Find all Department Names
+# Deleting Data
 
-TODO: Generate tasks
+Keeping our data in check and removing the records we don't need anymore is as important as persisting our records. 
 
-[/slide]
+You can delete specific rows:
 
+```java
+DELETE FROM `employees`      
+WHERE `employee_id` = 1;    
+```
 
-[slide hideTitle]
-# Problem: Find Salary of Each Employee 
+As well as in the **UPDATE** action, you should not forget to add a **WHERE** clause to filter and **DELETE** only the results you want. 
 
-TODO: Generate tasks
+Be careful, the **DELETE** is permanent unless you have a back-up of your database.
 
-[/slide]
+You can also delete all records from a given table by using the **TRUNCATE** keyword (it works faster than **DELETE**).
 
-
-[slide hideTitle]
-# Problem: Find Full Name of Each Employee 
-
-TODO: Generate tasks
-
-[/slide]
-
-
-[slide hideTitle]
-# Problem: Find Email Address of Each Employee 
-
-TODO: Generate tasks
+```java
+TRUNCATE TABLE `users`;   
+```
 
 [/slide]
 
 [slide hideTitle]
-# Problem: Find All Different Employee's Salaries 
+# Problem with Solution: Delete from Table
 
-TODO: Generate tasks
+[code-task title="Delete from Table" taskId="delete-from-table-o" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-editor language=sql]
+```
+-- Write your query here
 
-[/slide]
-
-
-[slide hideTitle]
-# Problem: Find Names of All Employees  
-
-TODO: Generate tasks
-
-[/slide]
+```
+[/code-editor]
 
 
-[slide hideTitle]
-# Problem: Find All Employees with salary More Than 50000 
+[task-description]
+## Description
 
-TODO: Generate tasks
+Write a query that **deletes all employees who are in departments 1 or 2** from the **employees** table. Then select all the records from the **employees** table and **order the results by id**.
 
-[/slide]
+## Example
 
+| id | first_name | last_name | job_title | department_id | salary |
+| --- | --- | --- | --- | --- | --- |
+| 3 | Samuel | Bridges | Porter | 4 | 1100 |
+| 6 | Edwin | Young | Waiter | 3 | 990 |
+| 7 | Alexander | Garner | Executive Chef | 3 | 1800 |
+| 9 | Eileen | Clayton | Housekeeping | 4 | 1600 |
 
-[slide hideTitle]
-# Problem: Find All Employees Except Marketing 
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
 
-TODO: Generate tasks
-
-[/slide]
-
-[slide hideTitle]
-# Problem: Sort Employees Table 
-
-TODO: Generate tasks
-
-[/slide]
-
-
-[slide hideTitle]
-# Problem: Create View Employees with Salaries 
-
-TODO: Generate tasks
-
-[/slide]
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
 
 
-[slide hideTitle]
-# Problem: Create View Employees with Job Titles
 
-TODO: Generate tasks
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
 
-[/slide]
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
+	('Alexander', 'Garner', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+3
+Samuel
+Bridges
+Porter
+4
+1100
+6
+Edwin
+Young
+Waiter
+3
+990
+7
+Alexander
+Garner
+Executive Chef
+3
+1800
+9
+Eileen
+Clayton
+Housekeeping
+4
+1600
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE departments (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	name VARCHAR(50)
+);
+
+INSERT INTO departments(name) VALUES('Front Office'), ('Support'), ('Kitchen'), ('Other');
 
 
-[slide hideTitle]
-# Problem: Distinct Job Titles 
 
-TODO: Generate tasks
+CREATE TABLE employees (
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(50) NOT NULL,
+	last_name VARCHAR(50) NOT NULL,
+	job_title VARCHAR(50) NOT NULL,
+	department_id INT NOT NULL,
+	salary DOUBLE NOT NULL,
+	CONSTRAINT `fk_department_id` FOREIGN KEY (`department_id`) REFERENCES `departments` (`id`)
+);
 
-[/slide]
-
-
-[slide hideTitle]
-# Problem: Find First 10 Started Projects
-
-TODO: Generate tasks
-
-[/slide]
-
-
-[slide hideTitle]
-# Problem: Last 7 Hired Employees 
-
-TODO: Generate tasks
-
-[/slide]
-
-
-[slide hideTitle]
-# Problem: Increase Salaries
-
-TODO: Generate tasks
-
-[/slide]
-
-[slide hideTitle]
-# Problem: All Mountain Peaks 
-TODO: Generate tasks
-
-[/slide]
-
-
-[slide hideTitle]
-# Problem: Countries and Currency (Euro / Not Euro) 
-
-TODO: Generate tasks
-
-[/slide]
-
-
-[slide hideTitle]
-# Problem: All Diablo Characters 
-
-TODO: Generate tasks
-
+INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
+	('John', 'Smith', 'Manager',1, 900.00),
+	('John', 'Johnson', 'Customer Service',2, 880.00),
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
+	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
+	('Alexander', 'Garner', 'Executive Chef', 3, 1800.00),
+	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
+[/input]
+[output]
+3
+Samuel
+Bridges
+Porter
+4
+1100
+6
+Edwin
+Young
+Waiter
+3
+990
+7
+Alexander
+Garner
+Executive Chef
+3
+1800
+9
+Eileen
+Clayton
+Housekeeping
+4
+1600
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
