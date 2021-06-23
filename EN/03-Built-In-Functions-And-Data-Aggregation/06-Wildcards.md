@@ -57,7 +57,7 @@ In the above case, we will look for a **city**, named **either "a" , "b" or "c"*
 
 
 [slide hideTitle]
-# Problem and Solution: Harry Potter Books - TODO: Add Tests
+# Problem and Solution: Harry Potter Books
 [code-task title="Harry Potter Books" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-harry-potter-books" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
