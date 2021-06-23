@@ -108,20 +108,20 @@ Agatha Christie
 31164
 William Shakespeare
 18990
-Danielle Schuelein\-Steel
-NULL
+Danielle Schuelein-Steel
+
 Joanne Rowling
-NULL
+
 Lev Tolstoy
 30021
 Paulo Souza
-NULL
+
 Stephen King
-NULL
+
 John Tolkien
 29827
 Erika Mitchell
-NULL
+
 [/output]
 [/test]
 [test]
@@ -200,20 +200,20 @@ Agatha Christie
 31164
 William Shakespeare
 18990
-Danielle Schuelein\-Steel
-NULL
+Danielle Schuelein-Steel
+
 Joanne Rowling
-NULL
+
 Lev Tolstoy
 30021
 Paulo Souza
-NULL
+
 Stephen King
-NULL
+
 John Tolkien
 29827
 Erika Mitchell
-NULL
+
 [/output]
 [/test]
 [/tests]
