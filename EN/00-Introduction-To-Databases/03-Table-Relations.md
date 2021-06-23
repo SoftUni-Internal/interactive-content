@@ -188,7 +188,7 @@ order by teacher_id;
 [output]
 101 
 John 
- 
+
 102 
 Maya 
 106 
