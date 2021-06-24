@@ -6,30 +6,27 @@
 
 32-33-HTTP-Client-and-the-http-cllient-module
 
-Angular's HTTP module gives the ability to **interact** with thousands of **web-based APIs** like Facebook Twitter and Amazon Web Services and many more.
+Angular's HTTP module enables us to **interact** with thousands of **web-based APIs** like Facebook, Twitter, and Amazon Web Services.
 
-What these products all have in common is that they provide a **restful API** that you can be **consumed** from an Angular app.
+What these products all have in common is that they provide a **restful API** that you can **consume** from an Angular app.
 
-A **restful API** is and how **communication** works between the client and the server. 
+The **restful API** is responsible for the **communication** between the client and the server. 
 
-On the one side, there is a **client** on the other side is a **server**, restful is simply a way for these two parties to **communicate** in a **standardized** way by using the HTTP protocol. 
+Data can be retrieved without **modification**  by using a "**GET**" request. 
 
-Data can be only retrieve without **modifying** it by using the "**GET**" request, and the server will respond with the **status code** as well as the data that was **requested**.
+The server will respond with the **status code** as well as the data that was **requested**.
 
-If the request is successful the server will return a "**200 OK**" plus the **requested** data.
+If the request is successful, the server will return status "**200 OK**" and the **requested** data.
 
-If the request was **not valid**, or there is a **problem with the server**, a **400** or **500** level error will be return.
-
-A **400 response** generally means the request is **invalid** and a **500 level** response generally means there was an **error on the server itself**.
+If the request was **not valid**, or there was an **internal server issue**, you will receive a status code **400** or **500** respectively.
 
 There also other types of requests:
 
-- "**Post**" - which tells the server that new data will be created and also send data payload with it which is the data that will be saved on the server
-- "**Put**" - update a resource available on the server
-- "**Patch**" - sets instructions on how to modify a resource on the server
-- "**Delete**" - delete a resource on the server
+- "**POST**" - Tells the server that new data will be created and sends a payload that carries it.
+- "**PUT**" - Updates a resource available on the server.
+- "**PATCH**" - Sets instructions on how to modify a resource on the server.
+- "**DELETE**" - Deletes a resource from the server.
  
-
 To get started, go to `src/app/app.module.ts`:
 
 ```js
@@ -50,7 +47,7 @@ At the beginning of your file, import `HttpClientModule`:
 
 Then, put `HttpClientModule` in the imports array.
 
-From now on `HttpClient` can be injected into Services.
+From now on, the `HttpClient` can be injected into different Services.
 
 [/slide]
 
@@ -60,13 +57,13 @@ From now on `HttpClient` can be injected into Services.
 
 34-Using-the-HTTP-Client-in-Services
 
-While it is possible to import `HttpClient` in a component, it is not recommended.
+While it is possible to import the `HttpClient` module in a component, it is not recommended.
 
-A better solution will be to **separate** it into its very own Angular **service**.
+A better solution would be to **separate** it into its very own Angular **service**.
 
-For the sake of this example, we will simulate accessing photos in a database.
+In the following slides, we will simulate accessing photos in a database.
 
-Using Angular CLI, type in:
+Using the Angular CLI, type in:
 
 `ng generate service services/Photos`
 
@@ -97,11 +94,11 @@ The `getAllPhotos()` method makes a GET request to a demo REST API.
 
 [slide hideTitle]
 
-# Subscribe to the Observable
+# Subscribing to the Observable
 
 35-Subscribe-to-the-Observable
 
-To subscribe to the Observable, create a `PhotosComponent` with Angular CLI:
+To subscribe to the Observable, create a `PhotosComponent` with the Angular CLI:
 
 `ng g c photos`
 
@@ -137,7 +134,9 @@ Inside `ngOnInit()`, use the `subcribe()` method.
 
 36-Type-Checking-the-Response
 
-A major upside of TypeScript is that we can use **Interfaces** to **explicitly** type what the `Photo` class must include:
+A major upside of TypeScript is that we can use **Interfaces** to **explicitly** type what a class must include.
+
+The following example shows the correct syntax when checking the data types of a class:
 
 ```js
 interface Photo {
@@ -159,7 +158,7 @@ interface Photo {
 
 While accessing remote data, many **issues** may occur.
 
-Thankfully, we can **handle errors** by passing an error handling function as a **parameter** to `subscribe()`:
+We can **handle these errors** by passing an error handling function as an **argument** to the `subscribe()` method:
 
 ```js
 ngOnInit(): void {
@@ -174,7 +173,6 @@ this.photosService.getAllPhotos()
   )
 }
 ```
-
 [/slide]
 
 [slide hideTitle]
