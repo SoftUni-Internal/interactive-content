@@ -20,7 +20,7 @@ Examples of programming languages are C#, Java, JavaScript, Python, C, C++, PHP,
 These languages differ in their philosophy, syntax, purpose, programming constructions and execution environment. 
 
 The execution of computer programs can be done with a **compiler** or with an **interpreter**.
-
+123123
 # Compilers
 The **compiler** translates the code from programming language to **machine code**, as for each of the constructions (commands) in the code it chooses a proper, previously prepared fragment of machine code and in the meantime it **checks** the text of the program for **errors**. 
 
