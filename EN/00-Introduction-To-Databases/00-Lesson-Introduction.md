@@ -36,6 +36,7 @@ Display their **first** and **last names**.
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -1706,6 +1707,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
 Sariya
@@ -1724,8 +1726,7 @@ Kaliyath
 [/test]
 [test]
 [input]
-\# test 1 : SELECT first_name, last_name FROM employees WHERE first_name = 'SA';
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -1796,6 +1797,7 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
 SA
@@ -1812,8 +1814,7 @@ D'Hers
 [/test]
 [test]
 [input]
-\# test 2 : SELECT first_name, last_name FROM employees WHERE first_name like 'SA%';
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -1884,6 +1885,7 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
 Samuel
@@ -1928,6 +1930,7 @@ Write an SQL query that finds all employees whose **last names contain "ei" (cas
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -3598,6 +3601,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
 Kendall
@@ -3618,8 +3622,7 @@ Reiter
 [/test]
 [test]
 [input]
-\# test 1 : SELECT first_name, last_name FROM employees;
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -3690,6 +3693,7 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
 John
@@ -3706,8 +3710,7 @@ ei
 [/test]
 [test]
 [input]
-\# test 2 : SELECT first_name, last_name FROM employees WHERE last_name LIKE 'ei%';
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -3778,6 +3781,7 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
 John
@@ -3790,8 +3794,7 @@ Eibraham
 [/test]
 [test]
 [input]
-\# test 3 : SELECT first_name, last_name FROM employees WHERE last_name LIKE '%ei';
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -3862,6 +3865,7 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
 John
