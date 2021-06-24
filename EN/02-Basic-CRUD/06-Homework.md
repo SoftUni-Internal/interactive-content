@@ -42,7 +42,6 @@ Write an SQL query to find **all available information about the departments in 
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `departments` (
   `department_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -50,7 +49,6 @@ CREATE TABLE IF NOT EXISTS `departments` (
   PRIMARY KEY (`department_id`),
   UNIQUE KEY `PK_Departments` (`department_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
 
 /\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
 INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
@@ -71,7 +69,6 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
 /\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
-```
 [/input]
 [output]
 1
@@ -126,7 +123,6 @@ Executive
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `departments` (
   `department_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -155,7 +151,7 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
 /\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
-```
+
 [/input]
 [output]
 1
@@ -245,7 +241,6 @@ Write an SQL query to find **all department names**. **Sort** the information **
 [tests]
 [test open]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -1916,7 +1911,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
+
 [/input]
 [output]
 Engineering
@@ -1939,7 +1934,7 @@ Executive
 [/test]
 [test]
 [input]
-```
+
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -3610,7 +3605,6 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
 Engineering
