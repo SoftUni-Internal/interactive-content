@@ -1,33 +1,21 @@
 [slide hideTitle]
-# Problem: Employees Without Managers
-[code-task title="Employees Without Managers" taskId="java-db-and-MySQL-subqueries-and-JOINs-employees-without-managers" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+# Problem: Higher Salary
+[code-task title="EHigher Salary" taskId="java-db-and-MySQL-subqueries-and-JOINs-employees-higher-salary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
 ```
 -- Write your query here
 ```
-[/code-editor]
-[task-description]
-# Description
 
 Use the database that is called "**SoftUni Database**".
 
-Write a query that finds the following information for all employees who **do not have** a manager:
-
-- **employee_id**
-- **first_name**
-- **last_name**
-- **department_id**
-- **salary** 
+Write a query that counts the employees who receive a **salary** higher than the **average**. 
 
 ## Example
 
-| **employee_id** | **first_name** |**last_name** |**department_id** | **salary**|
-| --- | --- | --- | --- | --- | 
-| 109 | Ken |Sanchez | 16 | 125 500 | 
-| 291 | Edward | Young | 6 | 48 000| 
-| 292 | Emma | Johnson | 6 | 48 000 | 
-| 293 | Thomas | Miller | 6 | 48 000 |
+|**count**|
+| --- |
+| 88 |
 
 [/task-description]
 [code-io /]
@@ -1705,26 +1693,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
 [/input]
 [output]
-109
-Ken
-Sanchez
-16
-125500.0000
-291
-Edward
-Young
-6
-48000.0000
-292
-Emma
-Johnson
-6
-48000.0000
-293
-Thomas
-Miller
-6
-48000.0000
+88
 [/output]
 [/test]
 [test]
@@ -2389,7 +2358,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(288, 'Syed', 'Abbas', 'E', 'Pacific Sales Manager', 3, 273, '2005-04-15 00:00:00.000000', 48100.0000, 49),
 	(289, 'Rachel', 'Valdez', 'B', 'Sales Representative', 3, 284, '2005-07-01 00:00:00.000000', 23100.0000, 37),
 	(290, 'Lynn', 'Tsoflias', '', 'Sales Representative', 3, 288, '2005-07-01 00:00:00.000000', 23100.0000, 153),
-	(291, 'Edward', 'Young', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
+	(291, 'Edward', 'Young', 'I', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Emma', 'Johnson', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'Thomas', 'Miller', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 /\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
@@ -3400,26 +3369,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
 [/input]
 [output]
-109
-Ken
-Sanchez
-16
-125500.0000
-291
-Edward
-Edward
-6
-48000.0000
-292
-Emma
-Johnson
-6
-48000.0000
-293
-Thomas
-Miller
-6
-48000.0000
+88
 [/output]
 [/test]
 [/tests]
