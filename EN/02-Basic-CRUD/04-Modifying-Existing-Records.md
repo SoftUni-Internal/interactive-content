@@ -20,7 +20,7 @@ Make sure you do not forget to filter the records you want to change otherwise t
 [slide hideTitle]
 # Problem with Solution: Update Employees' Salary
 
-[code-task title="Update Employees' Salary" taskId="update-employees-salary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Update Employees' Salary" taskId="java-db-and-MySQL-basic-crud-update-employees-salary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -178,7 +178,7 @@ TRUNCATE TABLE `users`;
 [slide hideTitle]
 # Problem with Solution: Delete from Table
 
-[code-task title="Delete from Table" taskId="delete-from-table-o" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Delete from Table" taskId="java-db-and-MySQL-basic-crud-delete-from-table" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
