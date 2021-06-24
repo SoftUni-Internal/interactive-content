@@ -12,6 +12,7 @@
 
 [slide]
 # What is Coding?
+gosho
 **To program** means to **give commands** to the computer, for example *"to play a sound"*, *"to print something on the screen"* or *"to multiply two numbers"*. 
 
 When the commands are one after another, they are called **a computer program**. 
