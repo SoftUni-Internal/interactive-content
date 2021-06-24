@@ -16,12 +16,11 @@ NgRx Store enforces a **one-way flow of data** and can only be **modified** usin
 
 All of this results in **loose coupling**, which **reduces application complexity** and makes **development easier**.
 
-
 ## Installation
 
 Open a command\-line tool in your project's root directory and type:
 
-- `npm install @ngrx/store` if you are using **NPM**.
+- `npm install @ngrx/store` if you are using **NPM**
 
 - `yarn add @ngrx/store` for **Yarn**
 
@@ -42,7 +41,7 @@ This simple diagram illustrates the **basic flow of data in NgRx**.
 
 **Actions** are used to **describe events** that **occur** during the use of an application.
 
-These events include every type of **user interaction**, like **sending a login form**, as well as **API interaction**.
+These events include every type of **user interaction** like **sending a login form** or interacting with the **API**.
 
 The process of **sending data** is called **dispatching**.
 
@@ -60,14 +59,13 @@ For example, if we want to create an Action for **signing up a user**, the type 
 
 `[Register Page] Signup`
 
-Actions can also contain an optional **payload** of data, like an **email and password** from a **registration form**.
+Actions can also contain an optional **payload** of data like an **email and password** from a **registration form**.
 
 [/slide]
 
-
 [slide hideTitle]
 
-# Create Actions
+# Creating Actions
 
 10-Create-Actions 
 
@@ -79,7 +77,7 @@ Now is the time to generate a new Angular project, if you have not already:
 ng generate new ngrx-counter
 ```
 
-The next step is to generate a `counter` component in Angular CLI:
+The next step is to generate a `counter` component in the Angular CLI:
 
 ```js
 ng generate component counter
@@ -112,11 +110,11 @@ This method accepts the `type` string and a **payload**, if applicable, and **re
 
 They make the creation of actions less explicit, abstracting the underlying class-based logic from developers.
 
-Each of the three action creators are going to return **creator functions**.
+Each of the three action creators is going to return **creator functions**.
 
-When any of these functions are invoked, they will return an object, in the shape of the **Action** interface.
+When any of these functions is invoked, it will return an object in the shape of the **Action** interface.
 
-Action creator functions can also accept another functions as a last argument:
+Action creator functions can also accept another function as a last argument:
 
 ```js
 export const registrationSuccess = createAction(
@@ -125,7 +123,7 @@ export const registrationSuccess = createAction(
 );
 ```
 
-In this example, we return the user from the response object, when a registration is performed successfully.
+In this example, we return the user from the response object when a registration is performed successfully.
 
 [/slide]
 
@@ -148,14 +146,14 @@ A reducer function accepts:
 - The latest `Action` dispatched
 - The current **state**
 
-Depending on that, it decides to either **return** a modified state, or the current one.
+Depending on that, it decides to either **return** a modified state or the current one.
 
 [/slide]
 
 
 [slide hideTitle]
 
-# Define a Reducer Function
+# Defining a Reducer Function
 
 12-Define-a-Reducer-Function
 
@@ -190,13 +188,11 @@ The `createReducer()` function accepts an **initial state** and a number of `on(
 
 By invoking the `on()` function, we **make associations between actions and state changes**.
 
-
 [/slide]
-
 
 [slide hideTitle]
 
-# Add the StoreModule.forRoot
+# Adding the StoreModule.forRoot
 
 13-Add-the-Store-Module.forRoot
 
@@ -224,17 +220,17 @@ export class AppModule { }
 
 The `forRoot()` method accepts a **map of key-value pairs** that define our **application state**. 
 
-Here, we pass in an and object with a single `count` property, which stores the `counterReducer`.
+Here, we pass an object with a single `count` property which stores the `counterReducer`.
 [/slide]
 
 
 [slide hideTitle]
 
-# Create a Counter Component
+# Creating a Counter Component
 
 14-15-Create-a-Counter-Component
 
-Create a new **Counter Component** with **Angular CLI**:
+We create a new **Counter Component** with the **Angular CLI**:
 
 `ng generate component counter`
 
@@ -274,7 +270,7 @@ export class MyCounterComponent {
 }
 ```
 
-Inside, add the following imports:
+Then, add the following imports:
 
 ```js
 import { Store } from '@ngrx/store';
@@ -284,7 +280,7 @@ import { increment, decrement, reset } from '../counter.actions';
 
 Create a new `count$` **Observable**.
 
-Inside the constructor, connect `this.count$` **stream** to the **current** Store `count` **state**.
+Inside the constructor, connect the `this.count$` **stream** to the **current** Store `count` **state**.
 
 In the class' body, **define functions for each action**:
 
@@ -318,7 +314,7 @@ Go to `src/app/counter/counter.component.html` and type:
 
 Here we create a **div-block** which displays the current count of our Counter Component.
 
-We have three **buttons**:
+We have the following **buttons**:
 
 - `increment` - increases the counter's value by one when a `click` event occurs
 - `decrement` - decrements the counter by one when clicked
