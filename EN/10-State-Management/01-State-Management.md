@@ -6,22 +6,21 @@
 
 03-04-introduction-to-state-management
 
-The **NgRx** framework is created for building **reactive Angular applications**.
+The **NgRx** framework was created for building **reactive Angular applications**.
 
-It provides a selection of **libraries** for **controlling application state** and the **flow of data** throughout the application.
+It provides a selection of **libraries** for **controlling the application state** and the **data flow**.
 
 When building an Angular application, the state is typically handled by a number of different services.
 
-As our project grows, state management can become a big problem - keeping track of changes is hard.
+As our project grows, it can become hard to keep track of changes in the state.
 
 In the case of a problem, debugging becomes almost impossible.
 
-NgRx solves this issue by handling state in a single object, making modification a lot easier.
+NgRx solves this issue by putting the state in a single object, making modification a lot easier.
 
 Inspired by **Redux**, **NgRx Store** makes working with complex data **easier** for us to **manage** and **test**.
 
 [/slide]
-
 
 [slide hideTitle]
 
@@ -29,11 +28,11 @@ Inspired by **Redux**, **NgRx Store** makes working with complex data **easier**
 
 05-NgRx-Packages
 
-**NgRx libraries** are divided in **four main categories**:
+**NgRx libraries** are divided into **four main categories**:
 
 ## State Management
 
-- **Store** - a state management solution made for Angular:
+- **Store** - a state management solution made for Angular
   * built on the Redux principles, it leverages the power of RxJS
   * embraces the use of Observables
 
@@ -66,7 +65,6 @@ Inspired by **Redux**, **NgRx Store** makes working with complex data **easier**
 - **Schematics** - a scaffolding library that provides CLI commands for generating constructs:
   * all the other libraries must be installed first
 
-
 [/slide]
 
 
@@ -76,7 +74,7 @@ Inspired by **Redux**, **NgRx Store** makes working with complex data **easier**
 
 06-State-Management-Lifecycle
 
-The three most important pieces of the **state management lifecycle** are the **store**, **actions** and **reducers**.
+The three most important pieces of the **state management lifecycle** are the **store**, **actions**, and **reducers**.
 
 The **store** holds the application **state** in a single **object** and **applies changes** to it when an action is **dispatched**.
 
@@ -90,7 +88,7 @@ When the click event occurs, we want to change a display **value** of a **sideba
 
 However, the two UI components are stored **separately**.
 
-NgRx **handles** and store these state changes for us in a **singular** state object.
+NgRx **handles** and stores these state changes for us in a **singular** state object.
 
 As soon as the button has been clicked, its encapsulating component dispatches an **action**.
 
