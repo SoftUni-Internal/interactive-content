@@ -53,7 +53,7 @@ We will learn how to do this in the next lesson, for now just note that there is
 
 # Problem with Solution: Select Employee Information
 
-[code-task title="Select Employee Information" taskId="select-employee-info" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Select Employee Information" taskId="java-db-and-MySQL-basic-crud-select-employee-information" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -154,7 +154,7 @@ Housekeeping
 [slide hideTitle]
 # Problem with Solution: Select Employees with Filter
 
-[code-task title="Select Employees with Filter" taskId="select-employee-info-filter" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Select Employees with Filter" taskId="java-db-and-MySQL-basic-crud-select-employee-info-filter" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -367,7 +367,7 @@ We want to use **IN/NOT IN** operators when we know the exact value we want, fol
 [slide hideTitle]
 # Problem with Solution: Select Employees by Multiple Criteria
 
-[code-task title="Select Employees by Multiple Criteria" taskId="select-employee-info-filter-multiple" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Select Employees by Multiple Criteria" taskId="java-db-and-MySQL-basic-crud-select-employee-info-filter-multiple" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -604,7 +604,7 @@ This way of access management is quite common in organizations where certain peo
 [slide hideTitle]
 # Problem with Solution: Top Paid Employee
 
-[code-task title="Top Paid Employee" taskId="top-paid-employee" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Top Paid Employee" taskId="java-db-and-MySQL-basic-crud-top-paid-employee" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
