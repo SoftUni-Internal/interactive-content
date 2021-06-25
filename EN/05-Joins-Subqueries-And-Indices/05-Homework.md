@@ -12537,7 +12537,7 @@ Finance
 
 [slide hideTitle]
 # Problem: Employees with Project
-[code-task title="Employees with Project" taskId="java-db-and-MySQL-subqueries-and-JOINs-sales-employee" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Employees with Project" taskId="java-db-and-MySQL-subqueries-and-JOINs-employees-with-project" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
 ```
