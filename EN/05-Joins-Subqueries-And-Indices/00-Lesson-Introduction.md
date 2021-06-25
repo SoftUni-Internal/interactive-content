@@ -47,6 +47,6 @@
 
 ## Homework
 
-For problems from "**Employee Address**" to "**Min Average Salary**" (inclusively), use the **SoftUni Database** database, and for the others - use [Geography Database]().
+For problems from "**Employee Address**" to "**Min Average Salary**" (inclusively), use the [SoftUni Database]() database, and for the others - use [Geography Database]().
 
 [/slide]
