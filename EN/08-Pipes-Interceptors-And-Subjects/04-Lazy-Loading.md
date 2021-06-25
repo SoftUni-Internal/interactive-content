@@ -12,24 +12,21 @@ This **default** behavior can affect **loading time negatively**, especially if 
 
 For example, if a website **has about 100 pages** like **home** page, **dashboard** page, **about** us page, **contact** us page, etc.
 
-When the user visits that website and **goes for example to the homepage**, if the **lazy lading pattern is not used** what will happen is the **whole website will be downloaded**.
+When the user visits that website and **goes to the homepage**, if the **lazy lading pattern is not used*, the **whole website will be downloaded**.
 
-The user will have to wait for **every page to be downloaded** before can see any page at all and **interact with the website**, even if he is not going to visit **every single** page in the application.
+The user will have to wait for **every page to be downloaded** before they can see any page at all, even if they are not going to visit all of them.
 
-So it is a **good idea to use lazy loading** for images, videos, etc. because they are not **critical resources**.
+So it is a **good idea to use lazy loading** for images and videos because they are not **critical resources**.
 
-There is **no need to download the complete video** when a website is loaded, rather you should wait for the user to **click the play button**.
+There is **no need to download the complete video** when a website is loading, you should wait for the user to **click the play button**.
 
-A video is not a **critical resource**, the user **might never see that video** so we should wait for a play button to be clicked and only then start downloading or buffering the video.
-
-That way **Lazy Loading** improves **performance** by **selectively downloading** only the modules **necessary** for specific functionality to **run**.
+That way, **Lazy Loading** improves **performance** by **selectively downloading** only the modules **necessary** for specific functionality to **run**.
 
 To **implement** Lazy Loading in our project, we need to **separate the application** into different **modules**.
 
 Any of these **additional modules** will **not** be loaded until the user reaches the **main route of a given module**.
 
 [/slide]
-
 
 [slide hideTitle]
 
@@ -43,20 +40,19 @@ To **prepare** for **lazy loading**, create a **feature module** with the CLI:
 
 You can replace `products` with a name that fits your use case.
 
-Executing this command will create a **folder** named `products`, which will include **two files**:
+Executing this command will create a **folder** named `products` which will include **two files**:
 
-- `products.module.ts` - contains the **lazy-loadable** `ProductsModule` class;
+- `products.module.ts` - contains the **lazy-loadable** `ProductsModule` class
 
-- `products-routing.module.ts` - contains the `ProductsRoutingModule` class.
+- `products-routing.module.ts` - contains the `ProductsRoutingModule` class
 
 A `ProductsComponent` will be **declared** and `ProductsRoutingModule` will be **imported** inside the new **feature module**.
 
 [/slide]
 
-
 [slide hideTitle]
 
-# Warning - Do not Import in Bootstrap Module
+# Do not Import in Bootstrap Module
 
 js-interactive-pipes-interceptors-and-subjects-24-Warning-Don't-Import-in-Bootstrap-Module
 
@@ -70,7 +66,7 @@ Since the `AppModule` is used for **bootstrapping the application**, any importe
 
 [slide hideTitle]
 
-# Load Children
+# Loading Children
 
 js-interactive-pipes-interceptors-and-subjects-25-Load-Children
 
@@ -96,7 +92,7 @@ Declare the new `products` path in the `routes` array and use `loadChildren` to 
 
 [slide hideTitle]
 
-# Protect Module with CanLoad
+# Protecting a Module with CanLoad
 
 js-interactive-pipes-interceptors-and-subjects-26-Protect-Module-with-CanLoad
 
@@ -129,6 +125,6 @@ The `canLoad()` function has **multiple guards**.
 
 **All guards** must **return** `true` for navigation to **continue**.
 
-If **even one guard** returns either `false` or a `UrlTree`, navigation will be **cancelled**.
+If **even one guards** returns either `false` or an `UrlTree`, navigation will be **cancelled**.
 
 [/slide]
