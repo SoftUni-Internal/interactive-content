@@ -10,7 +10,7 @@ Observables are kind of **passive because we can not trigger the emission** of a
 
 In those cases, we can use **observable like an event emitter** where we can control when a new **value is emitted**.
 
-We can do this with something which is called a **subject**, which inherits from the observable.
+We can do this with something called a **subject**, which inherits the observable.
 
 A **Subject** is a special type of **Observable** that can **cast values to multiple Observers**, as opposed to a single one.
 
@@ -18,9 +18,9 @@ Subjects are both **Observables** and **Observers**.
 
 This means that we can **pass a Subject** as an argument to the **subscribe()** method of an **Observable**, because it **implements** `next()`, `error()` and `complete()`.
 
-Therefore **we can have a more active approach** of using observables with subjects.
+We can have a more **active approach** by using observables with subjects.
 
-That does not mean we **should always use subjects** just use them if something like an event emitter is needed.
+That does not mean you should **always** use subjects. Use them in case you need something like an event emitter.
 
 [/slide]
 
@@ -61,7 +61,6 @@ Observer Two: Goodbye
 
 [/slide]
 
-
 [slide hideTitle]
 
 # Behavior Subject
@@ -70,12 +69,11 @@ js-interactive-pipes-interceptors-and-subjects-30-Behavior-Subject
 
 The `BehaviorSubject` stores the "current" value, which means that the **latest emitted value** can be always retrieved.
 
-An **initial value** is **required** as a parameter when **instantiating** a Behaviour Subject.
+An **initial value** is **required** as an argument when **instantiating** a Behavior Subject.
 
 To receive the **last emitted value**, we can get that **value by accessing** the `.value` property or **subscribe to it**. 
 
 If the **second approach is used**, the BehaviorSubject will **directly emit the current value** to the subscriber. 
-
 
 [/slide]
 
@@ -85,7 +83,7 @@ If the **second approach is used**, the BehaviorSubject will **directly emit the
 
 js-interactive-pipes-interceptors-and-subjects-31-Behavrior-Subject-Example
 
-In this example, we **initialize** a `BehaviourSubject` with a value of 5:
+In this example, we **initialize** a `BehaviorSubject` with a value of 5:
 
 ```js
 let subject = new BehaviorSubject(5);
@@ -128,11 +126,11 @@ A `ReplaySubject` can send **old values** to **new subscribers**, similarly to a
 
 While a regular `Subject` has **no memory**, a `ReplaySubject` can **record** a segment of the Observable **execution**.
 
-It receives two parameters:
+It receives two arguments:
 
-- `bufferSize`: the **number of values** to keep in memory;
+- `bufferSize` - the **number of values** to keep in memory
 
-- `windowsTime`: optional, used to define **how long** the old **values** should be **stored** in memory.
+- `windowsTime` - optional, used to define **how long** the old **values** should be **stored** in the memory
 
 [/slide]
 
@@ -189,7 +187,7 @@ In addition, the **value** will **only** be sent once execution **completes**.
 
 To **halt execution**, we must call the `complete()` method.
 
-Just like you would with a normal `Subject`, `AsyncSubject` can still be used to **multicast**.
+Just like you would with a normal `Subject`, you can still use an `AsyncSubject` to **multicast**.
  
 [/slide]
 
