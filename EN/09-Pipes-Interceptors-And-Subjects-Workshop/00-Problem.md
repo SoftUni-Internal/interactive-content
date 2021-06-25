@@ -4,13 +4,13 @@
 
 # Task Requirements
 
-Last time we saw what JWT (JSON WEB TOKEN) is the **INTERCEPTORS** concept. 
+In the previous lesson, you got familiar with **JWT** and **Interceptors**.
 
-Try to intercept the **requests** and **responses** between the front-end part and the back-end.
+Try to implement these concepts and intercept the **requests** and **responses** between the front-end and the back-end.
 
 - **Auth Interceptor**
 
-When a user is registered or is trying to log in, the API should return a cookie, which holds JSON WEB TOKEN (JWT). 
+After a user has **registered** or trying to **log in**, the API should return a **cookie** which holds a **JSON Web Token** (**JWT**).
 
 Use it to authenticate the current user.
 
@@ -20,11 +20,13 @@ Use it to authenticate the current user.
 
 # Error Interceptor
 
-In some cases, errors will occur. This is inevitable. 
+Good error handling is very important for every website.
 
-Use the interceptor, and try to prevent bad user experience by handling these error cases. 
+Use interceptors to handle potential errors in your project. 
 
-You can use, **404** page to show **error** info or put a **paragraph** `<p>` element in the **header** as shown in the example below with the provided **styling**:
+You can create a **404 error page** or a **paragraph** `<p>` with the provided styling.
+
+The following image illustrates where in your HTML code you should place the error paragraph:
 
 ```html
 <nav>
@@ -67,9 +69,15 @@ You can use, **404** page to show **error** info or put a **paragraph** `<p>` el
 
 ## Lazy Loading
 
-Lazy Loading helps us download the web pages in chunks. 
+Managing resources and improving loading speed is what separates a good website from a great website.
 
-Try to lazy load all the modules you can.
+One way of doing that is by implementing **lazy loading** in your project.
+
+Lazy loading is the process of delivering resources to the user only when they are requested.
+
+It improves the overall user experience by not slowing down your website to load unnecessary resources.
+
+Try to implement it on as many modules as you can.
 
 [/slide]
 
@@ -77,19 +85,19 @@ Try to lazy load all the modules you can.
 
 # Pipes
 
-Try to write pipes as follows:
+Try to write the following pipes for your project:
 
-- Write a "pipe" for slicing long titles of the themes (25 characters max). 
+- Write a pipe for slicing long titles of the themes (25 characters max). 
 
 You can use the "**SlicePipe**" provided from Angular or write your own.
 
 [image assetsSrc="Angular-Pipes-Interceptors-And-Subjects-Workshop.png" /]
 
-- Write a "pipe" to convert the date, as shown in the pictures:
+- Write a pipe that converts the date as shown in the next image:
 
 [image assetsSrc="Angular-Pipes-Interceptors-And-Subjects-Workshop(1).png" /]
 
-- Write another "pipe", that calculates the time since the post has been created:
+- Write another pipe that calculates how much time has passed after creating a post:
 
 [image assetsSrc="Angular-Pipes-Interceptors-And-Subjects-Workshop(2).png" /]
 
