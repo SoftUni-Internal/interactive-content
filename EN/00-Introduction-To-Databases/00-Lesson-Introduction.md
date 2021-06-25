@@ -1,44 +1,34 @@
 [slide hideTitle]
-# Problem: Employee Addresss
-[code-task title="Employee Addresss" taskId="java-db-and-MySQL-subqueries-and-JOINs-employee-addresss" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+# Problem with Solution: Triggered
+[code-task title="Triggered" taskId="java-db-and-MySQL-database-programmability-triggered" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
-
 ```
--- Write your query here
+CREATE TABLE deleted_employees(
+	employee_id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(20),
+	last_name VARCHAR(20),
+	middle_name VARCHAR(20),
+	job_title VARCHAR(50),
+	department_id INT,
+	salary DOUBLE 
+);
+
+CREATE TRIGGER tr_deleted_employees
+AFTER DELETE
+ON employees
+FOR EACH ROW
+BEGIN
+	INSERT INTO deleted_employees(first_name, last_name, middle_name, job_title, department_id, salary)
+    VALUES
+    (OLD.first_name, OLD.last_name, OLD.middle_name, OLD.job_title, OLD.department_id, OLD.salary);
+END;
 ```
 [/code-editor]
-[task-description]
-# Description
-Write a query that selects the following fields:
-
-- **employee_id**
-
-- **job_title**
-
-- **address_id**
-
-- **address_text**
-
-Return the first 5 rows sorted by **address_id in ascending order**.
-
-## Example
-
-| **employee_id** | **job_title** |**address_id** | **address_text** | 
-| --- | --- | --- | --- | 
-| 142 | Production Technician | 1 | 108 Lakeside Court |
-| 30 | Human Resources Manager | 2 | 1341 Prospect St |
-| ... | ... | ... | 
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-/\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
-/\*!40101 SET NAMES utf8mb4 \*/;
-/\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
-/\*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' \*/;
-
+[code-adapter]
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -51,7 +41,7 @@ CREATE TABLE IF NOT EXISTS `addresses` (
 ) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `addresses` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `addresses` DISABLE KEYS */;
 INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
 	(1, '108 Lakeside Court', 5),
 	(2, '1343 Prospect St', 5),
@@ -344,7 +334,7 @@ INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
 	(289, '591 Merriewood Drive', 11),
 	(290, '7230 Vine Maple Street', 11),
 	(291, '163 Nishava Str, ent A, apt. 1', 32);
-/\*!40000 ALTER TABLE `addresses` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `addresses` ENABLE KEYS */;
 
 
 CREATE TABLE IF NOT EXISTS `departments` (
@@ -358,7 +348,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `departments` DISABLE KEYS */;
 INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(1, 'Engineering', 12),
 	(2, 'Tool Design', 4),
@@ -376,7 +366,7 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(14, 'Facilities and Maintenance', 218),
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
-/\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `departments` ENABLE KEYS */;
 
 
 
@@ -403,7 +393,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
 ) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `employees` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `employees` DISABLE KEYS */;
 INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
 	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
 	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
@@ -698,7 +688,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Edward', 'Young', 'I', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Emma', 'Johnson', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'Thomas', 'Miller', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
-/\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `employees` ENABLE KEYS */;
 
 
 
@@ -713,7 +703,7 @@ CREATE TABLE IF NOT EXISTS `employees_projects` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `employees_projects` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `employees_projects` DISABLE KEYS */;
 INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(3, 1),
 	(15, 1),
@@ -1558,7 +1548,7 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(185, 127),
 	(234, 127),
 	(245, 127);
-/\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `employees_projects` ENABLE KEYS */;
 
 
 
@@ -1573,7 +1563,7 @@ CREATE TABLE IF NOT EXISTS `projects` (
 ) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `projects` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `projects` DISABLE KEYS */;
 INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
 	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2003-06-01 00:00:00.000000', NULL),
 	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
@@ -1654,7 +1644,7 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(121, 'Fender Set - Mountain', 'Research, design and development of Fender Set - Mountain. Clip-on fenders fit most mountain bikes.', '2003-06-01 00:00:00.000000', NULL),
 	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
 	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
-/\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `projects` ENABLE KEYS */;
 
 
 
@@ -1666,7 +1656,7 @@ CREATE TABLE IF NOT EXISTS `towns` (
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `towns` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `towns` DISABLE KEYS */;
 INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(1, 'Redmond'),
 	(2, 'Calgary'),
@@ -1700,328 +1690,92 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(30, 'Bordeaux'),
 	(31, 'Berlin'),
 	(32, 'Sofia');
-/\*!40000 ALTER TABLE `towns` ENABLE KEYS \*/;
-/\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
-/\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
-/\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+/*!40000 ALTER TABLE `towns` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+
+[/code-adapter]
+[task-description]
+# Description
+
+Create a table **deleted_employees(employee_id PK, first_name,last_name,middle_name,job_title,deparment_id,salary)** that will hold information about fired (deleted) **employees** from the employees table. 
+
+Add a trigger to the **employees** table that inserts the corresponding information in **deleted_employees**. 
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+SELECT lower(TABLE_NAME)
+FROM information_schema.TABLES 
+WHERE lower(TABLE_SCHEMA) = database() and lower(TABLE_NAME) = 'deleted_employees';
+
+SELECT lower(COLUMN_NAME)
+FROM information_schema.COLUMNS 
+WHERE lower(TABLE_NAME) = 'deleted_employees';
+
+SELECT lower(COLUMN_NAME)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and CONSTRAINT_NAME='PRIMARY'
+    and lower(table_name) = 'deleted_employees';
+    
+
+DELETE FROM employees WHERE employee_id = 216;
+SELECT employee_id, first_name, last_name
+FROM deleted_employees as de order by employee_id;
 [/input]
 [output]
-142
-Production Technician
+deleted_employees
+employee_id
+first_name
+last_name
+middle_name
+job_title
+department_id
+salary
+employee_id
 1
-108 Lakeside Court
-30
-Human Resources Manager
-2
-1343 Prospect St
-183
-Production Technician
-3
-1648 Eastgate Lane
-68
-Production Technician
-4
-2284 Azalea Avenue
-69
-Production Technician
-5
-2947 Vine Lane
+Mike
+Seamans
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT e.employee_id, e.job_title, e.address_id, a.address_text 
-\#          FROM employees AS e
-\#          INNER JOIN addresses AS a ON a.address_id = e.address_id;
+SELECT lower(TABLE_NAME)
+FROM information_schema.TABLES 
+WHERE lower(TABLE_SCHEMA) = database() and lower(TABLE_NAME) = 'deleted_employees';
 
+SELECT lower(COLUMN_NAME)
+FROM information_schema.COLUMNS 
+WHERE lower(TABLE_NAME) = 'deleted_employees';
 
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `PK_Addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
+SELECT lower(COLUMN_NAME)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and CONSTRAINT_NAME='PRIMARY'
+    and lower(table_name) = 'deleted_employees';
+    
 
-
-/\*!40000 ALTER TABLE `addresses` DISABLE KEYS \*/;
-INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
-	(1, '108 Lakeside Court', 6),
-	(2, '1343 Prospect St', 7),
-	(3, '1648 Eastgate Lane', 8),
-	(4, '1000 Hristo Botev', 9);
-
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 1);
-
-
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `PK_Projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `PK_Towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+DELETE FROM employees WHERE employee_id = 59;
+SELECT employee_id, first_name, last_name
+FROM deleted_employees as de order by employee_id;
 [/input]
 [output]
+deleted_employees
+employee_id
+first_name
+last_name
+middle_name
+job_title
+department_id
+salary
+employee_id
 1
-Production Technician
-1
-108 Lakeside Court
-[/output]
-[/test]
-[test]
-[input]
-\# test 2 : SELECT e.employee_id, e.job_title, e.address_id, a.address_text 
-\#          FROM employees AS e
-\#          INNER JOIN addresses AS a ON a.address_id = e.address_id
-\#          ORDER BY e.address_id;
-
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `PK_Addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `addresses` DISABLE KEYS \*/;
-INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
-	(1, '108 Lakeside Court', 5),
-	(2, '1343 Prospect St', 5),
-	(3, '1648 Eastgate Lane', 5),
-	(4, '2284 Azalea Avenue', 5),
-	(5, '2947 Vine Lane', 5);
-
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`),
-  CONSTRAINT `fk_employees_addresses` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 5),
-	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 3),
-	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 4),
-	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 2),
-	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 1);
-
-
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `PK_Projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `PK_Towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-[/input]
-[output]
-5
-Tool Designer
-1
-108 Lakeside Court
-4
-Senior Tool Designer
-2
-1343 Prospect St
-2
-Marketing Assistant
-3
-1648 Eastgate Lane
-3
-Engineering Manager
-4
-2284 Azalea Avenue
-1
-Production Technician
-5
-2947 Vine Lane
-[/output]
-[/test]
-[test]
-[input]
-\# test 3 : SELECT e.employee_id, e.job_title, e.address_id, a.address_text 
-\#          FROM employees AS e
-\#          INNER JOIN addresses AS a ON a.address_id = e.address_id
-\#          ORDER BY e.address_id
-\#          LIMIT 5;
-
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `PK_Addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `addresses` DISABLE KEYS \*/;
-INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
-	(1, '108 Lakeside Court', 5),
-	(2, '1343 Prospect St', 5),
-	(3, '1648 Eastgate Lane', 5),
-	(4, '2284 Azalea Avenue', 5),
-	(5, '2947 Vine Lane', 5),
-	(6, '3067 Maya', 5);
-
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`),
-  CONSTRAINT `fk_employees_addresses` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 6),
-	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 1),
-	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 5),
-	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 4),
-	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 3),
-	(6, 'John', 'Jovy', 'B', 'Entertainer', 2, 263, '2004-10-13 00:00:00.000000', 125000.0000, 2);
-
-
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `PK_Projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `PK_Towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-[/input]
-[output]
-2
-Marketing Assistant
-1
-108 Lakeside Court
-6
-Entertainer
-2
-1343 Prospect St
-5
-Tool Designer
-3
-1648 Eastgate Lane
-4
-Senior Tool Designer
-4
-2284 Azalea Avenue
-3
-Engineering Manager
-5
-2947 Vine Lane
+Deborah
+Poe
 [/output]
 [/test]
 [/tests]
