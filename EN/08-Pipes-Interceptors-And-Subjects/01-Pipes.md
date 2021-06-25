@@ -6,28 +6,21 @@
 
 js-interactive-pipes-interceptors-and-subjects-3-4-pipes-and-whar-are-pipes
 
-The idea of pipes comes from Linux/Unix systems, where into the command line we can **write pipes**, which are just `|` symbols.
+Pipes come from Linux/Unix systems, where you can type `|` into the command\-line and forward the output from one **command** to **another**.
 
-This gives us the **ability** for output from one **command** to be forwarded to **another command**. 
+The **chaining of commands** is almost the same as in **promises**, where the result from one promise could be passed to another promise, and so on.
 
-The ability for **chaining commands** is almost the same as in **promises**, where the result from one promise could be passed to another promise, and so on.
+In Angular, we use pipes inside **template expressions** to transform data.
 
-It is well known that Angular data can be transformed by using a service or a component.
-
-What **Pipes** does is to allow **transform data**, and when pipes are pure functions they can **memorize parameters**.
-
-So when a pipe function **receives a parameter** that had been given, Angular does not calculate the result **yet again**, instead, the result is **instantly returned**.
-
-Pipes can be applied to **any property** - including **strings**, **numbers** and arrays.
+Pipes can be applied to **any data type** like **strings**, **numbers**, and **arrays**.
 
 To **use** a pipe, put a **pipe operator** `|` **after the value** and then add the **name** of the pipe.
 
 Some of the **build-in pipes** are:
 
-- `{{ message | lowercase }}`: this pipe transform a string to **lowercase**
+- `{{ message | lowercase }}` - transforms all string characters to **lowercase**
 
-- `{{ message | uppercase | titlecase }}`: pipes can be **chained**, where the order of **applying them** is from left to right (uppercase than titlecase)
-
+- `{{ message | uppercase | titlecase }}` - pipes can be **chained**, where the order of **applying them** is from left to right (uppercase than titlecase)
 
 [/slide]
 
@@ -42,7 +35,7 @@ Some pipes can also accept parameters.
 
 For example, the `slice` pipe creates a new **string** or an **array**, which contains a subset of the **original** one.
 
-It accepts **two parameters**:
+It accepts **two arguments**:
 
 - **Start index**
 - **End index**, which is non-inclusive and optional
@@ -55,7 +48,7 @@ This is the **initial state** of `username`:
 
 `this.username = 'juliemiller'`
 
-After `slice` is applied, the `username` string will be **displayed** as `julie`.
+After the `slice` pipe is applied, the `username` string will be **displayed** as `julie`.
 
 To learn about **other built-in pipes**, visit Angular's [documentation](https://angular.io/api?query=pipe
 ).
@@ -69,7 +62,7 @@ To learn about **other built-in pipes**, visit Angular's [documentation](https:/
 
 js-interactive-pipes-interceptors-and-subjects-6-7-Creating-Pipes
 
-The easiest way to create a **custom pipe** is by using Angular CLI:
+The easiest way to create a **custom pipe** is by using the Angular CLI:
 
 `ng generate pipe greeting`
 
@@ -111,7 +104,6 @@ This is how the string looks before our custom pipe is applied:
 
 Once applied, `Hello, james.appleseed` will be **rendered in the view**.
 
-
 ## Creating Pipes: Receiving Parameters
 
 Just like some built-in pipes, **custom pipes** can also receive **parameters**.
@@ -136,8 +128,7 @@ The `multiply` pipe receives a `multiplier` as an additional **parameter**.
 
 `<p>The number is {{250 | multiply:3}}</p>`
 
-The expected output is 750.
-
+The expected output is "750".
 
 [/slide]
 
@@ -161,7 +152,6 @@ notification = new Promise((resolve, reject) => {
 
 `<h1>{{ notification | async }}</h1>`
 
-
 [/slide]
 
 [slide hideTitle]
@@ -170,9 +160,9 @@ notification = new Promise((resolve, reject) => {
 
 js-interactive-pipes-interceptors-and-subjects-9-Async-Pipe-Observables
 
-Working with **Observables**, `AsyncPipe` automatically **subscribes**, **unwraps data** and **unsubscribes** when a component gets **destroyed**.
+When working with **Observables**, `AsyncPipe` automatically **subscribes**, **unwraps data**, and **unsubscribes** when a component gets **destroyed**.
 
-This example **fetches** a **list of users** from a **database**:
+In the following example, we **fetch** a **list of users** from a **database**:
 
 ```js
 import { Component } from '@angular/core';
