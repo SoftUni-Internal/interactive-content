@@ -3900,7 +3900,7 @@ Write an SQL query that finds the **first names** of all employees that are **bo
 | first_name |
 | --- |
 | Deborah |
-| Wendey |
+| Wendy |
 | Candy |
 | ..... |
 
@@ -16412,2047 +16412,1112 @@ Select all from the generated view.
 [tests]
 [test open]
 [input]
-/\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
-/\*!40101 SET NAMES utf8mb4 \*/;
-/\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
-/\*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' \*/;
-
-
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `PK_Addresses` (`address_id`),
-  KEY `fk_addresses_towns` (`town_id`),
-  CONSTRAINT `fk_addresses_towns` FOREIGN KEY (`town_id`) REFERENCES `towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `addresses` DISABLE KEYS \*/;
-INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
-	(1, '108 Lakeside Court', 5),
-	(2, '1343 Prospect St', 5),
-	(3, '1648 Eastgate Lane', 5),
-	(4, '2284 Azalea Avenue', 5),
-	(5, '2947 Vine Lane', 5),
-	(6, '3067 Maya', 5),
-	(7, '3197 Thornhill Place', 5),
-	(8, '3284 S. Blank Avenue', 5),
-	(9, '332 Laguna Niguel', 5),
-	(10, '3454 Bel Air Drive', 5),
-	(11, '3670 All Ways Drive', 5),
-	(12, '3708 Montana', 5),
-	(13, '3711 Rollingwood Dr', 5),
-	(14, '3919 Pinto Road', 5),
-	(15, '4311 Clay Rd', 5),
-	(16, '4777 Rockne Drive', 5),
-	(17, '5678 Clear Court', 5),
-	(18, '5863 Sierra', 5),
-	(19, '6058 Hill Street', 5),
-	(20, '6118 Grasswood Circle', 5),
-	(21, '620 Woodside Ct.', 5),
-	(22, '6307 Greenbelt Way', 5),
-	(23, '6448 Castle Court', 5),
-	(24, '6774 Bonanza', 5),
-	(25, '6968 Wren Ave.', 5),
-	(26, '7221 Peachwillow Street', 5),
-	(27, '7270 Pepper Way', 5),
-	(28, '7396 Stratton Circle', 5),
-	(29, '7808 Brown St.', 5),
-	(30, '7902 Grammercy Lane', 5),
-	(31, '8668 Via Neruda', 5),
-	(32, '8684 Military East', 5),
-	(33, '8751 Norse Drive', 5),
-	(34, '9320 Teakwood Dr.', 5),
-	(35, '9435 Breck Court', 5),
-	(36, '9745 Bonita Ct.', 5),
-	(37, 'Pascalstr 951', 31),
-	(38, '94, rue Descartes', 30),
-	(39, '1226 Shoe St.', 8),
-	(40, '1399 Firestone Drive', 8),
-	(41, '1902 Santa Cruz', 8),
-	(42, '1970 Napa Ct.', 8),
-	(43, '250 Race Court', 8),
-	(44, '5672 Hale Dr.', 8),
-	(45, '5747 Shirley Drive', 8),
-	(46, '6387 Scenic Avenue', 8),
-	(47, '6872 Thornwood Dr.', 8),
-	(48, '7484 Roundtree Drive', 8),
-	(49, '8157 W. Book', 8),
-	(50, '9539 Glenside Dr', 8),
-	(51, '9833 Mt. Dias Blv.', 8),
-	(52, '10203 Acorn Avenue', 2),
-	(53, '3997 Via De Luna', 23),
-	(54, 'Downshire Way', 23),
-	(55, '1411 Ranch Drive', 15),
-	(56, '3074 Arbor Drive', 15),
-	(57, '390 Ridgewood Ct.', 15),
-	(58, '9666 Northridge Ct.', 15),
-	(59, '9752 Jeanne Circle', 15),
-	(60, '8154 Via Mexico', 27),
-	(61, '80 Sunview Terrace', 26),
-	(62, '1825 Corte Del Prado', 17),
-	(63, '2598 La Vista Circle', 17),
-	(64, '3421 Bouncing Road', 17),
-	(65, '3977 Central Avenue', 17),
-	(66, '5086 Nottingham Place', 17),
-	(67, '5379 Treasure Island Way', 17),
-	(68, '8209 Green View Court', 17),
-	(69, '8463 Vista Avenue', 17),
-	(70, '9693 Mellowood Street', 17),
-	(71, '991 Vista Verde', 17),
-	(72, '1061 Buskrik Avenue', 3),
-	(73, '172 Turning Dr.', 3),
-	(74, '2038 Encino Drive', 3),
-	(75, '2046 Las Palmas', 3),
-	(76, '2059 Clay Rd', 3),
-	(77, '207 Berry Court', 3),
-	(78, '2080 Sycamore Drive', 3),
-	(79, '2466 Clearland Circle', 3),
-	(80, '2687 Ridge Road', 3),
-	(81, '2812 Mazatlan', 3),
-	(82, '3026 Anchor Drive', 3),
-	(83, '3281 Hillview Dr.', 3),
-	(84, '3632 Bank Way', 3),
-	(85, '371 Apple Dr.', 3),
-	(86, '504 O St.', 3),
-	(87, '5423 Champion Rd.', 3),
-	(88, '6057 Hill Street', 3),
-	(89, '6870 D Bel Air Drive', 3),
-	(90, '7338 Green St.', 3),
-	(91, '7511 Cooper Dr.', 3),
-	(92, '8152 Claudia Dr.', 3),
-	(93, '8411 Mt. Orange Place', 3),
-	(94, '9277 Country View Lane', 3),
-	(95, '9784 Mt Etna Drive', 3),
-	(96, '9825 Coralie Drive', 3),
-	(97, '1185 Dallas Drive', 7),
-	(98, '1362 Somerset Place', 7),
-	(99, '181 Gaining Drive', 7),
-	(100, '1962 Cotton Ct.', 7),
-	(101, '2176 Apollo Way', 7),
-	(102, '2294 West 39th St.', 7),
-	(103, '3238 Laguna Circle', 7),
-	(104, '3385 Crestview Drive', 7),
-	(105, '3665 Oak Creek Ct.', 7),
-	(106, '3928 San Francisco', 7),
-	(107, '475 Santa Maria', 7),
-	(108, '5242 Marvelle Ln.', 7),
-	(109, '5452 Corte Gilberto', 7),
-	(110, '6629 Polson Circle', 7),
-	(111, '7640 First Ave.', 7),
-	(112, '7883 Missing Canyon Court', 7),
-	(113, '8624 Pepper Way', 7),
-	(114, '9241 St George Dr.', 7),
-	(115, '213 Stonewood Drive', 18),
-	(116, '2425 Notre Dame Ave', 18),
-	(117, '3884 Beauty Street', 18),
-	(118, '8036 Summit View Dr.', 18),
-	(119, '9605 Pheasant Circle', 18),
-	(120, '1245 Clay Road', 10),
-	(121, '1748 Bird Drive', 10),
-	(122, '310 Winter Lane', 10),
-	(123, '3127 El Camino Drive', 10),
-	(124, '3514 Sunshine', 10),
-	(125, '1144 Paradise Ct.', 6),
-	(126, '1921 Ranch Road', 6),
-	(127, '3333 Madhatter Circle', 6),
-	(128, '342 San Simeon', 6),
-	(129, '3848 East 39th Street', 6),
-	(130, '5256 Chickpea Ct.', 6),
-	(131, '5979 El Pueblo', 6),
-	(132, '6580 Poor Ridge Court', 6),
-	(133, '7435 Ricardo', 6),
-	(134, '7691 Benedict Ct.', 6),
-	(135, '7772 Golden Meadow', 6),
-	(136, '8585 Los Gatos Ct.', 6),
-	(137, '9314 Icicle Way', 6),
-	(138, '9530 Vine Lane', 6),
-	(139, '989 Crown Ct', 6),
-	(140, '25 95th Ave NE', 20),
-	(141, '4095 Cooper Dr.', 20),
-	(142, '4155 Working Drive', 20),
-	(143, '463 H Stagecoach Rd.', 20),
-	(144, '5050 Mt. Wilson Way', 20),
-	(145, '5203 Virginia Lane', 20),
-	(146, '5458 Gladstone Drive', 20),
-	(147, '5553 Cash Avenue', 20),
-	(148, '5669 Ironwood Way', 20),
-	(149, '6697 Ridge Park Drive', 20),
-	(150, '7048 Laurel', 20),
-	(151, '8192 Seagull Court', 20),
-	(152, '350 Pastel Drive', 22),
-	(153, '34 Waterloo Road', 21),
-	(154, '8291 Crossbow Way', 28),
-	(155, '5678 Lakeview Blvd.', 24),
-	(156, '1356 Grove Way', 12),
-	(157, '158 Walnut Ave', 12),
-	(158, '1792 Belmont Rd.', 12),
-	(159, '2275 Valley Blvd.', 12),
-	(160, '3747 W. Landing Avenue', 12),
-	(161, '3841 Silver Oaks Place', 12),
-	(162, '4566 La Jolla', 12),
-	(163, '4734 Sycamore Court', 12),
-	(164, '5030 Blue Ridge Dr.', 12),
-	(165, '5734 Ashford Court', 12),
-	(166, '7726 Driftwood Drive', 12),
-	(167, '8310 Ridge Circle', 12),
-	(168, '896 Southdale', 12),
-	(169, '9652 Los Angeles', 12),
-	(170, '2487 Riverside Drive', 19),
-	(171, '1397 Paradise Ct.', 14),
-	(172, '1400 Gate Drive', 14),
-	(173, '3030 Blackburn Ct.', 14),
-	(174, '4350 Minute Dr.', 14),
-	(175, '8967 Hamilton Ave.', 14),
-	(176, '9297 Kenston Dr.', 14),
-	(177, '9687 Shakespeare Drive', 14),
-	(178, '9100 Sheppard Avenue North', 29),
-	(179, '636 Vine Hill Way', 25),
-	(180, '101 Candy Rd.', 1),
-	(181, '1275 West Street', 1),
-	(182, '2137 Birchwood Dr', 1),
-	(183, '2383 Pepper Drive', 1),
-	(184, '2427 Notre Dame Ave.', 1),
-	(185, '2482 Buckingham Dr.', 1),
-	(186, '3066 Wallace Dr.', 1),
-	(187, '3397 Rancho View Drive', 1),
-	(188, '3768 Door Way', 1),
-	(189, '4909 Poco Lane', 1),
-	(190, '6369 Ellis Street', 1),
-	(191, '6891 Ham Drive', 1),
-	(192, '7297 RisingView', 1),
-	(193, '8000 Crane Court', 1),
-	(194, '8040 Hill Ct', 1),
-	(195, '8467 Clifford Court', 1),
-	(196, '9006 Woodside Way', 1),
-	(197, '9322 Driving Drive', 1),
-	(198, '9863 Ridge Place', 1),
-	(199, '9882 Clay Rde', 1),
-	(200, '9906 Oak Grove Road', 1),
-	(201, '1378 String Dr', 13),
-	(202, '1803 Olive Hill', 13),
-	(203, '2176 Brown Street', 13),
-	(204, '2266 Greenwood Circle', 13),
-	(205, '2598 Breck Court', 13),
-	(206, '2736 Scramble Rd', 13),
-	(207, '4312 Cambridge Drive', 13),
-	(208, '5009 Orange Street', 13),
-	(209, '5670 Bel Air Dr.', 13),
-	(210, '5980 Icicle Circle', 13),
-	(211, '6510 Hacienda Drive', 13),
-	(212, '6937 E. 42nd Street', 13),
-	(213, '7165 Brock Lane', 13),
-	(214, '7559 Worth Ct.', 13),
-	(215, '7985 Center Street', 13),
-	(216, '9495 Limewood Place', 13),
-	(217, '9533 Working Drive', 13),
-	(218, '177 11th Ave', 16),
-	(219, '1962 Ferndale Lane', 16),
-	(220, '2473 Orchard Way', 16),
-	(221, '4096 San Remo', 16),
-	(222, '4310 Kenston Dr.', 16),
-	(223, '4444 Pepper Way', 16),
-	(224, '4525 Benedict Ct.', 16),
-	(225, '5263 Etcheverry Dr', 16),
-	(226, '535 Greendell Pl', 16),
-	(227, '6871 Thornwood Dr.', 16),
-	(228, '6951 Harmony Way', 16),
-	(229, '7086 O St.', 16),
-	(230, '7145 Matchstick Drive', 16),
-	(231, '7820 Bird Drive', 16),
-	(232, '7939 Bayview Court', 16),
-	(233, '8316 La Salle St.', 16),
-	(234, '9104 Mt. Sequoia Ct.', 16),
-	(235, '1234 Seaside Way', 9),
-	(236, '5725 Glaze Drive', 9),
-	(237, '1064 Slow Creek Road', 4),
-	(238, '1102 Ravenwood', 4),
-	(239, '1220 Bradford Way', 4),
-	(240, '1349 Steven Way', 4),
-	(241, '136 Balboa Court', 4),
-	(242, '137 Mazatlan', 4),
-	(243, '1398 Yorba Linda', 4),
-	(244, '1619 Stillman Court', 4),
-	(245, '2144 San Rafael', 4),
-	(246, '2354 Frame Ln.', 4),
-	(247, '2639 Anchor Court', 4),
-	(248, '3029 Pastime Dr', 4),
-	(249, '3243 Buckingham Dr.', 4),
-	(250, '426 San Rafael', 4),
-	(251, '4598 Manila Avenue', 4),
-	(252, '4948 West 4th St', 4),
-	(253, '502 Alexander Pl.', 4),
-	(254, '5025 Holiday Hills', 4),
-	(255, '5125 Cotton Ct.', 4),
-	(256, '5375 Clearland Circle', 4),
-	(257, '5376 Catanzaro Way', 4),
-	(258, '5407 Cougar Way', 4),
-	(259, '5666 Hazelnut Lane', 4),
-	(260, '5802 Ampersand Drive', 4),
-	(261, '6498 Mining Rd.', 4),
-	(262, '6578 Woodhaven Ln.', 4),
-	(263, '6657 Sand Pointe Lane', 4),
-	(264, '6843 San Simeon Dr.', 4),
-	(265, '7126 Ending Ct.', 4),
-	(266, '7127 Los Gatos Court', 4),
-	(267, '7166 Brock Lane', 4),
-	(268, '7403 N. Broadway', 4),
-	(269, '7439 Laguna Niguel', 4),
-	(270, '7594 Alexander Pl.', 4),
-	(271, '7616 Honey Court', 4),
-	(272, '77 Birchwood', 4),
-	(273, '7765 Sunsine Drive', 4),
-	(274, '7842 Ygnacio Valley Road', 4),
-	(275, '8290 Margaret Ct.', 4),
-	(276, '8656 Lakespring Place', 4),
-	(277, '874 Olivera Road', 4),
-	(278, '931 Corte De Luna', 4),
-	(279, '9537 Ridgewood Drive', 4),
-	(280, '9964 North Ridge Drive', 4),
-	(281, '1285 Greenbrier Street', 11),
-	(282, '2115 Passing', 11),
-	(283, '2601 Cambridge Drive', 11),
-	(284, '3114 Notre Dame Ave.', 11),
-	(285, '3280 Pheasant Circle', 11),
-	(286, '4231 Spar Court', 11),
-	(287, '4852 Chaparral Court', 11),
-	(288, '5724 Victory Lane', 11),
-	(289, '591 Merriewood Drive', 11),
-	(290, '7230 Vine Maple Street', 11),
-	(291, '163 Nishava Str, ent A, apt. 1', 32);
-/\*!40000 ALTER TABLE `addresses` ENABLE KEYS \*/;
-
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`),
-  KEY `fk_departments_employees` (`manager_id`),
-  CONSTRAINT `fk_departments_employees` FOREIGN KEY (`manager_id`) REFERENCES `employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
-INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
-	(1, 'Engineering', 12),
-	(2, 'Tool Design', 4),
-	(3, 'Sales', 273),
-	(4, 'Marketing', 46),
-	(5, 'Purchasing', 6),
-	(6, 'Research and Development', 42),
-	(7, 'Production', 148),
-	(8, 'Production Control', 21),
-	(9, 'Human Resources', 30),
-	(10, 'Finance', 3),
-	(11, 'Information Services', 42),
-	(12, 'Document Control', 90),
-	(13, 'Quality Assurance', 274),
-	(14, 'Facilities and Maintenance', 218),
-	(15, 'Shipping and Receiving', 85),
-	(16, 'Executive', 109);
-/\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
-
-
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`),
-  KEY `CL_FirstName` (`first_name`),
-  KEY `fk_employees_departments` (`department_id`),
-  KEY `fk_employees_employees` (`manager_id`),
-  KEY `fk_employees_addresses` (`address_id`),
-  CONSTRAINT `fk_employees_addresses` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`),
-  CONSTRAINT `fk_employees_departments` FOREIGN KEY (`department_id`) REFERENCES `departments` (`department_id`),
-  CONSTRAINT `fk_employees_employees` FOREIGN KEY (`manager_id`) REFERENCES `employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `employees` DISABLE KEYS \*/;
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
-	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
-	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
-	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
-	(6, 'David', 'Bradley', 'M', 'Marketing Manager', 5, 109, '2000-01-20 00:00:00.000000', 37500.0000, 199),
-	(7, 'JoLynn', 'Dobney', 'M', 'Production Supervisor', 7, 21, '2000-01-26 00:00:00.000000', 25000.0000, 275),
-	(8, 'Ruth', 'Ellerbrock', 'Ann', 'Production Technician', 7, 185, '2000-02-06 00:00:00.000000', 13500.0000, 108),
-	(9, 'Gail', 'Erickson', 'A', 'Design Engineer', 1, 3, '2000-02-06 00:00:00.000000', 32700.0000, 22),
-	(10, 'Barry', 'Johnson', 'K', 'Production Technician', 7, 185, '2000-02-07 00:00:00.000000', 13500.0000, 285),
-	(11, 'Jossef', 'Goldberg', 'H', 'Design Engineer', 1, 3, '2000-02-24 00:00:00.000000', 32700.0000, 214),
-	(12, 'Terri', 'Duffy', 'Lee', 'Vice President of Engineering', 1, 109, '2000-03-03 00:00:00.000000', 63500.0000, 209),
-	(13, 'Sidney', 'Higa', 'M', 'Production Technician', 7, 185, '2000-03-05 00:00:00.000000', 13500.0000, 73),
-	(14, 'Taylor', 'Maxwell', 'R', 'Production Supervisor', 7, 21, '2000-03-11 00:00:00.000000', 25000.0000, 82),
-	(15, 'Jeffrey', 'Ford', 'L', 'Production Technician', 7, 185, '2000-03-23 00:00:00.000000', 13500.0000, 156),
-	(16, 'Jo', 'Brown', 'A', 'Production Supervisor', 7, 21, '2000-03-30 00:00:00.000000', 25000.0000, 70),
-	(17, 'Doris', 'Hartwig', 'M', 'Production Technician', 7, 185, '2000-04-11 00:00:00.000000', 13500.0000, 144),
-	(18, 'John', 'Campbell', 'T', 'Production Supervisor', 7, 21, '2000-04-18 00:00:00.000000', 25000.0000, 245),
-	(19, 'Diane', 'Glimp', 'R', 'Production Technician', 7, 185, '2000-04-29 00:00:00.000000', 13500.0000, 184),
-	(20, 'Steven', 'Selikoff', 'T', 'Production Technician', 7, 173, '2001-01-02 00:00:00.000000', 9500.0000, 104),
-	(21, 'Peter', 'Krebs', 'J', 'Production Control Manager', 8, 148, '2001-01-02 00:00:00.000000', 24500.0000, 11),
-	(22, 'Stuart', 'Munson', 'V', 'Production Technician', 7, 197, '2001-01-03 00:00:00.000000', 10000.0000, 36),
-	(23, 'Greg', 'Alderson', 'F', 'Production Technician', 7, 197, '2001-01-03 00:00:00.000000', 10000.0000, 18),
-	(24, 'David', 'Johnson', '', 'Production Technician', 7, 184, '2001-01-03 00:00:00.000000', 9500.0000, 142),
-	(25, 'Zheng', 'Mu', 'W', 'Production Supervisor', 7, 21, '2001-01-04 00:00:00.000000', 25000.0000, 278),
-	(26, 'Ivo', 'Salmre', 'William', 'Production Technician', 7, 108, '2001-01-05 00:00:00.000000', 14000.0000, 165),
-	(27, 'Paul', 'Komosinski', 'B', 'Production Technician', 7, 87, '2001-01-05 00:00:00.000000', 15000.0000, 32),
-	(28, 'Ashvini', 'Sharma', 'R', 'Network Administrator', 11, 150, '2001-01-05 00:00:00.000000', 32500.0000, 133),
-	(29, 'Kendall', 'Keil', 'C', 'Production Technician', 7, 14, '2001-01-06 00:00:00.000000', 11000.0000, 257),
-	(30, 'Paula', 'Barreto de Mattos', 'M', 'Human Resources Manager', 9, 140, '2001-01-07 00:00:00.000000', 27100.0000, 2),
-	(31, 'Alejandro', 'McGuel', 'E', 'Production Technician', 7, 210, '2001-01-07 00:00:00.000000', 15000.0000, 274),
-	(32, 'Garrett', 'Young', 'R', 'Production Technician', 7, 184, '2001-01-08 00:00:00.000000', 9500.0000, 283),
-	(33, 'Jian Shuo', 'Wang', NULL, 'Production Technician', 7, 135, '2001-01-08 00:00:00.000000', 9500.0000, 160),
-	(34, 'Susan', 'Eaton', 'W', 'Stocker', 15, 85, '2001-01-08 00:00:00.000000', 9000.0000, 204),
-	(35, 'Vamsi', 'Kuppa', '', 'Shipping and Receiving Clerk', 15, 85, '2001-01-08 00:00:00.000000', 9500.0000, 51),
-	(36, 'Alice', 'Ciccu', 'O', 'Production Technician', 7, 38, '2001-01-08 00:00:00.000000', 11000.0000, 284),
-	(37, 'Simon', 'Rapier', 'D', 'Production Technician', 7, 7, '2001-01-09 00:00:00.000000', 12500.0000, 64),
-	(38, 'Jinghao', 'Liu', 'K', 'Production Supervisor', 7, 21, '2001-01-09 00:00:00.000000', 25000.0000, 55),
-	(39, 'Michael', 'Hines', 'T', 'Production Technician', 7, 182, '2001-01-10 00:00:00.000000', 14000.0000, 168),
-	(40, 'Yvonne', 'McKay', 'S', 'Production Technician', 7, 159, '2001-01-10 00:00:00.000000', 10000.0000, 107),
-	(41, 'Peng', 'Wu', 'J', 'Quality Assurance Supervisor', 13, 200, '2001-01-10 00:00:00.000000', 21600.0000, 39),
-	(42, 'Jean', 'Trenary', 'E', 'Information Services Manager', 11, 109, '2001-01-12 00:00:00.000000', 50500.0000, 194),
-	(43, 'Russell', 'Hunter', NULL, 'Production Technician', 7, 74, '2001-01-13 00:00:00.000000', 11000.0000, 258),
-	(44, 'A. Scott', 'Wright', NULL, 'Master Scheduler', 8, 148, '2001-01-13 00:00:00.000000', 23600.0000, 172),
-	(45, 'Fred', 'Northup', 'T', 'Production Technician', 7, 210, '2001-01-13 00:00:00.000000', 15000.0000, 282),
-	(46, 'Sariya', 'Harnpadoungsataya', 'E', 'Marketing Specialist', 4, 6, '2001-01-13 00:00:00.000000', 14400.0000, 106),
-	(47, 'Willis', 'Johnson', 'T', 'Recruiter', 9, 30, '2001-01-14 00:00:00.000000', 18300.0000, 99),
-	(48, 'Jun', 'Cao', 'T', 'Production Technician', 7, 38, '2001-01-15 00:00:00.000000', 11000.0000, 197),
-	(49, 'Christian', 'Kleinerman', 'E', 'Maintenance Supervisor', 14, 218, '2001-01-15 00:00:00.000000', 20400.0000, 118),
-	(50, 'Susan', 'Metters', 'A', 'Production Technician', 7, 184, '2001-01-15 00:00:00.000000', 9500.0000, 224),
-	(51, 'Reuben', 'D''sa', 'H', 'Production Supervisor', 7, 21, '2001-01-16 00:00:00.000000', 25000.0000, 249),
-	(52, 'Kirk', 'Koenigsbauer', 'J', 'Production Technician', 7, 123, '2001-01-16 00:00:00.000000', 10000.0000, 250),
-	(53, 'David', 'Ortiz', 'J', 'Production Technician', 7, 18, '2001-01-16 00:00:00.000000', 12500.0000, 267),
-	(54, 'Tengiz', 'Kharatishvili', '', 'Control Specialist', 12, 90, '2001-01-17 00:00:00.000000', 16800.0000, 129),
-	(55, 'Hanying', 'Feng', 'P', 'Production Technician', 7, 143, '2001-01-17 00:00:00.000000', 14000.0000, 182),
-	(56, 'Kevin', 'Liu', 'H', 'Production Technician', 7, 210, '2001-01-18 00:00:00.000000', 15000.0000, 259),
-	(57, 'Annik', 'Stahl', 'O', 'Production Technician', 7, 16, '2001-01-18 00:00:00.000000', 12500.0000, 262),
-	(58, 'Suroor', 'Fatima', 'R', 'Production Technician', 7, 38, '2001-01-18 00:00:00.000000', 11000.0000, 86),
-	(59, 'Deborah', 'Poe', 'E', 'Accounts Receivable Specialist', 10, 139, '2001-01-19 00:00:00.000000', 19000.0000, 103),
-	(60, 'Jim', 'Scardelis', 'H', 'Production Technician', 7, 74, '2001-01-20 00:00:00.000000', 11000.0000, 88),
-	(61, 'Carole', 'Poland', 'M', 'Production Technician', 7, 173, '2001-01-20 00:00:00.000000', 9500.0000, 72),
-	(62, 'George', 'Li', 'Z', 'Production Technician', 7, 184, '2001-01-22 00:00:00.000000', 9500.0000, 58),
-	(63, 'Gary', 'Yukish', 'W', 'Production Technician', 7, 87, '2001-01-23 00:00:00.000000', 15000.0000, 80),
-	(64, 'Cristian', 'Petculescu', 'K', 'Production Supervisor', 7, 21, '2001-01-23 00:00:00.000000', 25000.0000, 276),
-	(65, 'Raymond', 'Sam', 'K', 'Production Technician', 7, 143, '2001-01-24 00:00:00.000000', 14000.0000, 75),
-	(66, 'Janaina', 'Bueno', 'Barreiro Gambaro', 'Application Specialist', 11, 42, '2001-01-24 00:00:00.000000', 27400.0000, 131),
-	(67, 'Bob', 'Hohman', '', 'Production Technician', 7, 14, '2001-01-25 00:00:00.000000', 11000.0000, 44),
-	(68, 'Shammi', 'Mohamed', 'G', 'Production Technician', 7, 210, '2001-01-25 00:00:00.000000', 15000.0000, 4),
-	(69, 'Linda', 'Moschell', 'K', 'Production Technician', 7, 38, '2001-01-26 00:00:00.000000', 11000.0000, 5),
-	(70, 'Mindy', 'Martin', 'C', 'Benefits Specialist', 9, 30, '2001-01-26 00:00:00.000000', 16600.0000, 171),
-	(71, 'Wendy', 'Kahn', 'Beth', 'Finance Manager', 10, 140, '2001-01-26 00:00:00.000000', 43300.0000, 232),
-	(72, 'Kim', 'Ralls', 'T', 'Stocker', 15, 85, '2001-01-27 00:00:00.000000', 9000.0000, 42),
-	(73, 'Sandra', 'Reategui Alayo', NULL, 'Production Technician', 7, 135, '2001-01-27 00:00:00.000000', 9500.0000, 255),
-	(74, 'Kok-Ho', 'Loh', 'T', 'Production Supervisor', 7, 21, '2001-01-28 00:00:00.000000', 25000.0000, 10),
-	(75, 'Douglas', 'Hite', 'B', 'Production Technician', 7, 159, '2001-01-28 00:00:00.000000', 10000.0000, 57),
-	(76, 'James', 'Kramer', 'D', 'Production Technician', 7, 7, '2001-01-28 00:00:00.000000', 12500.0000, 162),
-	(77, 'Sean', 'Alexander', 'P', 'Quality Assurance Technician', 13, 41, '2001-01-29 00:00:00.000000', 10600.0000, 210),
-	(78, 'Nitin', 'Mirchandani', 'S', 'Production Technician', 7, 182, '2001-01-29 00:00:00.000000', 14000.0000, 231),
-	(79, 'Diane', 'Margheim', 'L', 'Research and Development Engineer', 6, 158, '2001-01-30 00:00:00.000000', 40900.0000, 111),
-	(80, 'Rebecca', 'Laszlo', 'A', 'Production Technician', 7, 16, '2001-01-30 00:00:00.000000', 12500.0000, 6),
-	(81, 'Rajesh', 'Patel', 'M', 'Production Technician', 7, 210, '2001-02-01 00:00:00.000000', 15000.0000, 81),
-	(82, 'Vidur', 'Luthra', 'X', 'Recruiter', 9, 30, '2001-02-02 00:00:00.000000', 18300.0000, 176),
-	(83, 'John', 'Evans', 'P', 'Production Technician', 7, 38, '2001-02-02 00:00:00.000000', 11000.0000, 253),
-	(84, 'Nancy', 'Anderson', 'A', 'Production Technician', 7, 7, '2001-02-03 00:00:00.000000', 12500.0000, 227),
-	(85, 'Pilar', 'Ackerman', 'G', 'Shipping and Receiving Supervisor', 15, 21, '2001-02-03 00:00:00.000000', 19200.0000, 269),
-	(86, 'David', 'Yalovsky', 'A', 'Production Technician', 7, 184, '2001-02-03 00:00:00.000000', 9500.0000, 241),
-	(87, 'David', 'Hamilton', 'P', 'Production Supervisor', 7, 21, '2001-02-04 00:00:00.000000', 25000.0000, 150),
-	(88, 'Laura', 'Steele', 'C', 'Production Technician', 7, 123, '2001-02-04 00:00:00.000000', 10000.0000, 62),
-	(89, 'Margie', 'Shoop', 'W', 'Production Technician', 7, 16, '2001-02-05 00:00:00.000000', 12500.0000, 92),
-	(90, 'Zainal', 'Arifin', 'T', 'Document Control Manager', 12, 200, '2001-02-05 00:00:00.000000', 17800.0000, 128),
-	(91, 'Lorraine', 'Nay', 'O', 'Production Technician', 7, 210, '2001-02-05 00:00:00.000000', 15000.0000, 94),
-	(92, 'Fadi', 'Fakhouri', 'K', 'Production Technician', 7, 143, '2001-02-05 00:00:00.000000', 14000.0000, 281),
-	(93, 'Ryan', 'Cornelsen', 'L', 'Production Technician', 7, 51, '2001-02-06 00:00:00.000000', 15000.0000, 228),
-	(94, 'Candy', 'Spoon', 'L', 'Accounts Receivable Specialist', 10, 139, '2001-02-07 00:00:00.000000', 19000.0000, 122),
-	(95, 'Nuan', 'Yu', NULL, 'Production Technician', 7, 74, '2001-02-07 00:00:00.000000', 11000.0000, 12),
-	(96, 'William', 'Vong', 'S', 'Scheduling Assistant', 8, 44, '2001-02-08 00:00:00.000000', 16000.0000, 35),
-	(97, 'Bjorn', 'Rettig', 'M', 'Production Technician', 7, 173, '2001-02-08 00:00:00.000000', 9500.0000, 268),
-	(98, 'Scott', 'Gode', 'R', 'Production Technician', 7, 197, '2001-02-09 00:00:00.000000', 10000.0000, 256),
-	(99, 'Michael', 'Rothkugel', 'L', 'Production Technician', 7, 87, '2001-02-11 00:00:00.000000', 15000.0000, 93),
-	(100, 'Lane', 'Sacksteder', 'M', 'Production Technician', 7, 143, '2001-02-12 00:00:00.000000', 14000.0000, 239),
-	(101, 'Pete', 'Male', 'C', 'Production Technician', 7, 14, '2001-02-12 00:00:00.000000', 11000.0000, 273),
-	(102, 'Dan', 'Bacon', 'K', 'Application Specialist', 11, 42, '2001-02-12 00:00:00.000000', 27400.0000, 126),
-	(103, 'David', 'Barber', 'M', 'Assistant to the Chief Financial Officer', 10, 140, '2001-02-13 00:00:00.000000', 13500.0000, 173),
-	(104, 'Lolan', 'Song', 'B', 'Production Technician', 7, 74, '2001-02-13 00:00:00.000000', 11000.0000, 77),
-	(105, 'Paula', 'Nartker', 'R', 'Production Technician', 7, 210, '2001-02-13 00:00:00.000000', 15000.0000, 247),
-	(106, 'Mary', 'Gibson', 'E', 'Marketing Specialist', 4, 6, '2001-02-13 00:00:00.000000', 14400.0000, 110),
-	(107, 'Mindaugas', 'Krapauskas', 'J', 'Production Technician', 7, 38, '2001-02-14 00:00:00.000000', 11000.0000, 74),
-	(108, 'Eric', 'Gubbels', NULL, 'Production Supervisor', 7, 21, '2001-02-15 00:00:00.000000', 25000.0000, 85),
-	(109, 'Ken', 'Sanchez', 'J', 'Chief Executive Officer', 16, NULL, '2001-02-15 00:00:00.000000', 125500.0000, 177),
-	(110, 'Jason', 'Watters', 'M', 'Production Technician', 7, 135, '2001-02-15 00:00:00.000000', 9500.0000, 21),
-	(111, 'Mark', 'Harrington', 'L', 'Quality Assurance Technician', 13, 41, '2001-02-16 00:00:00.000000', 10600.0000, 139),
-	(112, 'Janeth', 'Esteves', 'M', 'Production Technician', 7, 159, '2001-02-16 00:00:00.000000', 10000.0000, 163),
-	(113, 'Marc', 'Ingle', 'J', 'Production Technician', 7, 184, '2001-02-17 00:00:00.000000', 9500.0000, 230),
-	(114, 'Gigi', 'Matthew', '', 'Research and Development Engineer', 6, 158, '2001-02-17 00:00:00.000000', 40900.0000, 23),
-	(115, 'Paul', 'Singh', 'R', 'Production Technician', 7, 108, '2001-02-18 00:00:00.000000', 14000.0000, 16),
-	(116, 'Frank', 'Lee', 'T', 'Production Technician', 7, 210, '2001-02-18 00:00:00.000000', 15000.0000, 263),
-	(117, 'Francois', 'Ajenstat', 'P', 'Database Administrator', 11, 42, '2001-02-18 00:00:00.000000', 38500.0000, 127),
-	(118, 'Diane', 'Tibbott', 'H', 'Production Technician', 7, 14, '2001-02-19 00:00:00.000000', 11000.0000, 140),
-	(119, 'Jill', 'Williams', 'A', 'Marketing Specialist', 4, 6, '2001-02-19 00:00:00.000000', 14400.0000, 114),
-	(120, 'Angela', 'Barbariol', 'W', 'Production Technician', 7, 38, '2001-02-21 00:00:00.000000', 11000.0000, 91),
-	(121, 'Matthias', 'Berndt', 'T', 'Shipping and Receiving Clerk', 15, 85, '2001-02-21 00:00:00.000000', 9500.0000, 201),
-	(122, 'Bryan', 'Baker', NULL, 'Production Technician', 7, 7, '2001-02-22 00:00:00.000000', 12500.0000, 166),
-	(123, 'Jeff', 'Hay', 'V', 'Production Supervisor', 7, 21, '2001-02-22 00:00:00.000000', 25000.0000, 113),
-	(124, 'Eugene', 'Zabokritski', 'R', 'Production Technician', 7, 184, '2001-02-22 00:00:00.000000', 9500.0000, 226),
-	(125, 'Barbara', 'Decker', 'S', 'Production Technician', 7, 182, '2001-02-23 00:00:00.000000', 14000.0000, 219),
-	(126, 'Chris', 'Preston', 'T', 'Production Technician', 7, 123, '2001-02-23 00:00:00.000000', 10000.0000, 279),
-	(127, 'Sean', 'Chai', '', 'Document Control Assistant', 12, 90, '2001-02-23 00:00:00.000000', 10300.0000, 138),
-	(128, 'Dan', 'Wilson', 'B', 'Database Administrator', 11, 42, '2001-02-23 00:00:00.000000', 38500.0000, 30),
-	(129, 'Mark', 'McArthur', 'K', 'Production Technician', 7, 16, '2001-02-24 00:00:00.000000', 12500.0000, 186),
-	(130, 'Bryan', 'Walton', 'A', 'Accounts Receivable Specialist', 10, 139, '2001-02-25 00:00:00.000000', 19000.0000, 175),
-	(131, 'Houman', 'Pournasseh', '', 'Production Technician', 7, 74, '2001-02-26 00:00:00.000000', 11000.0000, 185),
-	(132, 'Sairaj', 'Uddin', 'L', 'Scheduling Assistant', 8, 44, '2001-02-27 00:00:00.000000', 16000.0000, 190),
-	(133, 'Michiko', 'Osada', 'F', 'Production Technician', 7, 173, '2001-02-27 00:00:00.000000', 9500.0000, 229),
-	(134, 'Benjamin', 'Martin', 'R', 'Production Technician', 7, 184, '2001-02-28 00:00:00.000000', 9500.0000, 286),
-	(135, 'Cynthia', 'Randall', 'S', 'Production Supervisor', 7, 21, '2001-02-28 00:00:00.000000', 25000.0000, 147),
-	(136, 'Kathie', 'Flood', 'E', 'Production Technician', 7, 197, '2001-02-28 00:00:00.000000', 10000.0000, 100),
-	(137, 'Britta', 'Simon', 'L', 'Production Technician', 7, 16, '2001-03-02 00:00:00.000000', 12500.0000, 95),
-	(138, 'Brian', 'Lloyd', 'T', 'Production Technician', 7, 210, '2001-03-02 00:00:00.000000', 15000.0000, 288),
-	(139, 'David', 'Liu', 'J', 'Accounts Manager', 10, 140, '2001-03-03 00:00:00.000000', 34700.0000, 119),
-	(140, 'Laura', 'Norman', 'F', 'Chief Financial Officer', 16, 109, '2001-03-04 00:00:00.000000', 60100.0000, 215),
-	(141, 'Michael', 'Patten', 'W', 'Production Technician', 7, 38, '2001-03-04 00:00:00.000000', 11000.0000, 96),
-	(142, 'Andy', 'Ruth', 'M', 'Production Technician', 7, 135, '2001-03-04 00:00:00.000000', 9500.0000, 1),
-	(143, 'Yuhong', 'Li', 'L', 'Production Supervisor', 7, 21, '2001-03-05 00:00:00.000000', 25000.0000, 242),
-	(144, 'Robert', 'Rounthwaite', 'J', 'Production Technician', 7, 159, '2001-03-06 00:00:00.000000', 10000.0000, 280),
-	(145, 'Andreas', 'Berglund', 'T', 'Quality Assurance Technician', 13, 41, '2001-03-06 00:00:00.000000', 10600.0000, 208),
-	(146, 'Reed', 'Koch', 'T', 'Production Technician', 7, 184, '2001-03-06 00:00:00.000000', 9500.0000, 191),
-	(147, 'Linda', 'Randall', 'A', 'Production Technician', 7, 143, '2001-03-07 00:00:00.000000', 14000.0000, 260),
-	(148, 'James', 'Hamilton', 'R', 'Vice President of Production', 7, 109, '2001-03-07 00:00:00.000000', 84100.0000, 158),
-	(149, 'Ramesh', 'Meyyappan', 'V', 'Application Specialist', 11, 42, '2001-03-07 00:00:00.000000', 27400.0000, 130),
-	(150, 'Stephanie', 'Conroy', 'A', 'Network Manager', 11, 42, '2001-03-08 00:00:00.000000', 39700.0000, 136),
-	(151, 'Samantha', 'Smith', 'H', 'Production Technician', 7, 108, '2001-03-08 00:00:00.000000', 14000.0000, 14),
-	(152, 'Tawana', 'Nusbaum', 'G', 'Production Technician', 7, 210, '2001-03-09 00:00:00.000000', 15000.0000, 237),
-	(153, 'Denise', 'Smith', 'H', 'Production Technician', 7, 14, '2001-03-09 00:00:00.000000', 11000.0000, 143),
-	(154, 'Hao', 'Chen', 'O', 'Human Resources Administrative Assistant', 9, 30, '2001-03-10 00:00:00.000000', 13900.0000, 135),
-	(155, 'Alex', 'Nayberg', 'M', 'Production Technician', 7, 123, '2001-03-12 00:00:00.000000', 10000.0000, 174),
-	(156, 'Eugene', 'Kogan', 'O', 'Production Technician', 7, 7, '2001-03-12 00:00:00.000000', 12500.0000, 71),
-	(157, 'Brandon', 'Heidepriem', 'G', 'Production Technician', 7, 16, '2001-03-12 00:00:00.000000', 12500.0000, 189),
-	(158, 'Dylan', 'Miller', 'A', 'Research and Development Manager', 6, 3, '2001-03-12 00:00:00.000000', 50500.0000, 141),
-	(159, 'Shane', 'Kim', 'S', 'Production Supervisor', 7, 21, '2001-03-12 00:00:00.000000', 25000.0000, 20),
-	(160, 'John', 'Chen', 'Y', 'Production Technician', 7, 182, '2001-03-13 00:00:00.000000', 14000.0000, 65),
-	(161, 'Karen', 'Berge', 'R', 'Document Control Assistant', 12, 90, '2001-03-13 00:00:00.000000', 10300.0000, 123),
-	(162, 'Jose', 'Lugo', 'R', 'Production Technician', 7, 16, '2001-03-14 00:00:00.000000', 12500.0000, 271),
-	(163, 'Mandar', 'Samant', 'H', 'Production Technician', 7, 74, '2001-03-14 00:00:00.000000', 11000.0000, 63),
-	(164, 'Mikael', 'Sandberg', 'Q', 'Buyer', 5, 274, '2001-03-14 00:00:00.000000', 18300.0000, 50),
-	(165, 'Sameer', 'Tejani', 'A', 'Production Technician', 7, 74, '2001-03-15 00:00:00.000000', 11000.0000, 66),
-	(166, 'Dragan', 'Tomic', 'K', 'Accounts Payable Specialist', 10, 139, '2001-03-15 00:00:00.000000', 19000.0000, 115),
-	(167, 'Carol', 'Philips', 'M', 'Production Technician', 7, 173, '2001-03-16 00:00:00.000000', 9500.0000, 45),
-	(168, 'Rob', 'Caron', 'T', 'Production Technician', 7, 87, '2001-03-17 00:00:00.000000', 15000.0000, 161),
-	(169, 'Don', 'Hall', 'L', 'Production Technician', 7, 38, '2001-03-17 00:00:00.000000', 11000.0000, 59),
-	(170, 'Alan', 'Brewer', 'J', 'Scheduling Assistant', 8, 44, '2001-03-17 00:00:00.000000', 16000.0000, 151),
-	(171, 'David', 'Lawrence', 'Oliver', 'Production Technician', 7, 184, '2001-03-18 00:00:00.000000', 9500.0000, 167),
-	(172, 'Baris', 'Cetinok', 'F', 'Production Technician', 7, 87, '2001-03-19 00:00:00.000000', 15000.0000, 244),
-	(173, 'Michael', 'Ray', 'Sean', 'Production Supervisor', 7, 21, '2001-03-19 00:00:00.000000', 25000.0000, 277),
-	(174, 'Steve', 'Masters', 'F', 'Production Technician', 7, 18, '2001-03-19 00:00:00.000000', 12500.0000, 252),
-	(175, 'Suchitra', 'Mohan', 'O', 'Production Technician', 7, 16, '2001-03-20 00:00:00.000000', 12500.0000, 31),
-	(176, 'Karen', 'Berg', 'A', 'Application Specialist', 11, 42, '2001-03-20 00:00:00.000000', 27400.0000, 132),
-	(177, 'Terrence', 'Earls', 'W', 'Production Technician', 7, 143, '2001-03-20 00:00:00.000000', 14000.0000, 34),
-	(178, 'Barbara', 'Moreland', 'C', 'Accountant', 10, 139, '2001-03-22 00:00:00.000000', 26400.0000, 254),
-	(179, 'Chad', 'Niswonger', 'W', 'Production Technician', 7, 38, '2001-03-22 00:00:00.000000', 11000.0000, 46),
-	(180, 'Rostislav', 'Shabalin', 'E', 'Production Technician', 7, 135, '2001-03-23 00:00:00.000000', 9500.0000, 9),
-	(181, 'Belinda', 'Newman', 'M', 'Production Technician', 7, 197, '2001-03-24 00:00:00.000000', 10000.0000, 43),
-	(182, 'Katie', 'McAskill-White', 'L', 'Production Supervisor', 7, 21, '2001-03-24 00:00:00.000000', 25000.0000, 240),
-	(183, 'Russell', 'King', 'M', 'Production Technician', 7, 184, '2001-03-25 00:00:00.000000', 9500.0000, 3),
-	(184, 'Jack', 'Richins', 'S', 'Production Supervisor', 7, 21, '2001-03-25 00:00:00.000000', 25000.0000, 169),
-	(185, 'Andrew', 'Hill', 'R', 'Production Supervisor', 7, 21, '2001-03-26 00:00:00.000000', 25000.0000, 97),
-	(186, 'Nicole', 'Holliday', 'B', 'Production Technician', 7, 87, '2001-03-26 00:00:00.000000', 15000.0000, 238),
-	(187, 'Frank', 'Miller', 'T', 'Production Technician', 7, 14, '2001-03-27 00:00:00.000000', 11000.0000, 289),
-	(188, 'Peter', 'Connelly', 'I', 'Network Administrator', 11, 150, '2001-03-27 00:00:00.000000', 32500.0000, 137),
-	(189, 'Anibal', 'Sousa', 'T', 'Production Technician', 7, 108, '2001-03-27 00:00:00.000000', 14000.0000, 183),
-	(190, 'Ken', 'Myer', 'L', 'Production Technician', 7, 210, '2001-03-28 00:00:00.000000', 15000.0000, 105),
-	(191, 'Grant', 'Culbertson', '', 'Human Resources Administrative Assistant', 9, 30, '2001-03-29 00:00:00.000000', 13900.0000, 117),
-	(192, 'Michael', 'Entin', 'T', 'Production Technician', 7, 38, '2001-03-29 00:00:00.000000', 11000.0000, 195),
-	(193, 'Lionel', 'Penuchot', 'C', 'Production Technician', 7, 159, '2001-03-30 00:00:00.000000', 10000.0000, 261),
-	(194, 'Thomas', 'Michaels', 'R', 'Production Technician', 7, 7, '2001-03-30 00:00:00.000000', 12500.0000, 78),
-	(195, 'Jimmy', 'Bischoff', 'T', 'Stocker', 15, 85, '2001-03-30 00:00:00.000000', 9000.0000, 206),
-	(196, 'Michael', 'Vanderhyde', 'T', 'Production Technician', 7, 135, '2001-03-30 00:00:00.000000', 9500.0000, 90),
-	(197, 'Lori', 'Kane', 'A', 'Production Supervisor', 7, 21, '2001-03-30 00:00:00.000000', 25000.0000, 198),
-	(198, 'Arvind', 'Rao', 'B', 'Buyer', 5, 274, '2001-04-01 00:00:00.000000', 18300.0000, 212),
-	(199, 'Stefen', 'Hesse', 'A', 'Production Technician', 7, 182, '2001-04-01 00:00:00.000000', 14000.0000, 68),
-	(200, 'Hazem', 'Abolrous', 'E', 'Quality Assurance Manager', 13, 148, '2001-04-01 00:00:00.000000', 28800.0000, 148),
-	(201, 'Janet', 'Sheperdigian', 'L', 'Accounts Payable Specialist', 10, 139, '2001-04-02 00:00:00.000000', 19000.0000, 218),
-	(202, 'Elizabeth', 'Keyser', 'I', 'Production Technician', 7, 74, '2001-04-03 00:00:00.000000', 11000.0000, 152),
-	(203, 'Terry', 'Eminhizer', 'J', 'Marketing Specialist', 4, 6, '2001-04-03 00:00:00.000000', 14400.0000, 19),
-	(204, 'John', 'Frum', '', 'Production Technician', 7, 184, '2001-04-04 00:00:00.000000', 9500.0000, 112),
-	(205, 'Merav', 'Netz', 'A', 'Production Technician', 7, 173, '2001-04-04 00:00:00.000000', 9500.0000, 270),
-	(206, 'Brian', 'LaMee', 'P', 'Scheduling Assistant', 8, 44, '2001-04-04 00:00:00.000000', 16000.0000, 109),
-	(207, 'Kitti', 'Lertpiriyasuwat', 'H', 'Production Technician', 7, 38, '2001-04-05 00:00:00.000000', 11000.0000, 272),
-	(208, 'Jay', 'Adams', 'G', 'Production Technician', 7, 18, '2001-04-06 00:00:00.000000', 12500.0000, 157),
-	(209, 'Jan', 'Miksovsky', 'S', 'Production Technician', 7, 184, '2001-04-06 00:00:00.000000', 9500.0000, 101),
-	(210, 'Brenda', 'Diaz', 'M', 'Production Supervisor', 7, 21, '2001-04-06 00:00:00.000000', 25000.0000, 251),
-	(211, 'Andrew', 'Cencini', 'M', 'Production Technician', 7, 123, '2001-04-07 00:00:00.000000', 10000.0000, 233),
-	(212, 'Chris', 'Norred', 'K', 'Control Specialist', 12, 90, '2001-04-07 00:00:00.000000', 16800.0000, 125),
-	(213, 'Chris', 'Okelberry', 'O', 'Production Technician', 7, 16, '2001-04-08 00:00:00.000000', 12500.0000, 188),
-	(214, 'Shelley', 'Dyck', '', 'Production Technician', 7, 143, '2001-04-08 00:00:00.000000', 14000.0000, 164),
-	(215, 'Gabe', 'Mares', 'B', 'Production Technician', 7, 210, '2001-04-09 00:00:00.000000', 15000.0000, 87),
-	(216, 'Mike', 'Seamans', 'K', 'Accountant', 10, 139, '2001-04-09 00:00:00.000000', 26400.0000, 120),
-	(217, 'Michael', 'Raheem', NULL, 'Research and Development Manager', 6, 158, '2001-06-04 00:00:00.000000', 42500.0000, 236),
-	(218, 'Gary', 'Altman', 'E.', 'Facilities Manager', 14, 148, '2002-01-03 00:00:00.000000', 24000.0000, 203),
-	(219, 'Charles', 'Fitzgerald', 'B', 'Production Technician', 7, 18, '2002-01-04 00:00:00.000000', 12500.0000, 223),
-	(220, 'Ebru', 'Ersan', '', 'Production Technician', 7, 25, '2002-01-07 00:00:00.000000', 13500.0000, 225),
-	(221, 'Sylvester', 'Valdez', 'A', 'Production Technician', 7, 108, '2002-01-12 00:00:00.000000', 14000.0000, 25),
-	(222, 'Brian', 'Goldstein', 'Richard', 'Production Technician', 7, 51, '2002-01-12 00:00:00.000000', 15000.0000, 48),
-	(223, 'Linda', 'Meisner', 'P', 'Buyer', 5, 274, '2002-01-18 00:00:00.000000', 18300.0000, 28),
-	(224, 'Betsy', 'Stadick', 'A', 'Production Technician', 7, 64, '2002-01-19 00:00:00.000000', 13500.0000, 47),
-	(225, 'Magnus', 'Hedlund', 'E', 'Facilities Administrative Assistant', 14, 218, '2002-01-22 00:00:00.000000', 9800.0000, 211),
-	(226, 'Karan', 'Khanna', 'R', 'Production Technician', 7, 18, '2002-01-23 00:00:00.000000', 12500.0000, 248),
-	(227, 'Mary', 'Baker', 'R', 'Production Technician', 7, 25, '2002-01-26 00:00:00.000000', 13500.0000, 246),
-	(228, 'Kevin', 'Homer', 'M', 'Production Technician', 7, 25, '2002-01-26 00:00:00.000000', 13500.0000, 29),
-	(229, 'Mihail', 'Frintu', 'U', 'Production Technician', 7, 51, '2002-01-30 00:00:00.000000', 15000.0000, 89),
-	(230, 'Bonnie', 'Kearney', '', 'Production Technician', 7, 185, '2002-02-02 00:00:00.000000', 13500.0000, 287),
-	(231, 'Fukiko', 'Ogisu', 'J', 'Buyer', 5, 274, '2002-02-05 00:00:00.000000', 18300.0000, 17),
-	(232, 'Hung-Fu', 'Ting', 'T', 'Production Technician', 7, 108, '2002-02-07 00:00:00.000000', 14000.0000, 220),
-	(233, 'Gordon', 'Hee', 'L', 'Buyer', 5, 274, '2002-02-12 00:00:00.000000', 18300.0000, 15),
-	(234, 'Kimberly', 'Zimmerman', 'B', 'Production Technician', 7, 64, '2002-02-13 00:00:00.000000', 13500.0000, 266),
-	(235, 'Kim', 'Abercrombie', 'B', 'Production Technician', 7, 16, '2002-02-17 00:00:00.000000', 12500.0000, 56),
-	(236, 'Sandeep', 'Kaliyath', 'P', 'Production Technician', 7, 51, '2002-02-18 00:00:00.000000', 15000.0000, 234),
-	(237, 'Prasanna', 'Samarawickrama', 'E', 'Production Technician', 7, 108, '2002-02-23 00:00:00.000000', 14000.0000, 187),
-	(238, 'Frank', 'Pellow', 'S', 'Buyer', 5, 274, '2002-02-24 00:00:00.000000', 18300.0000, 213),
-	(239, 'Min', 'Su', 'G', 'Production Technician', 7, 108, '2002-02-25 00:00:00.000000', 14000.0000, 24),
-	(240, 'Eric', 'Brown', 'L', 'Production Technician', 7, 51, '2002-02-25 00:00:00.000000', 15000.0000, 67),
-	(241, 'Eric', 'Kurjan', 'S', 'Buyer', 5, 274, '2002-02-28 00:00:00.000000', 18300.0000, 207),
-	(242, 'Pat', 'Coleman', 'H', 'Janitor', 14, 49, '2002-02-28 00:00:00.000000', 9300.0000, 116),
-	(243, 'Maciej', 'Dusza', 'W', 'Production Technician', 7, 18, '2002-03-01 00:00:00.000000', 12500.0000, 83),
-	(244, 'Erin', 'Hagens', 'M', 'Buyer', 5, 274, '2002-03-03 00:00:00.000000', 18300.0000, 8),
-	(245, 'Patrick', 'Wedge', 'C', 'Production Technician', 7, 64, '2002-03-04 00:00:00.000000', 13500.0000, 7),
-	(246, 'Frank', 'Martinez', 'R', 'Production Technician', 7, 51, '2002-03-08 00:00:00.000000', 15000.0000, 290),
-	(247, 'Ed', 'Dudenhoefer', 'R', 'Production Technician', 7, 16, '2002-03-08 00:00:00.000000', 12500.0000, 243),
-	(248, 'Christopher', 'Hill', 'E', 'Production Technician', 7, 25, '2002-03-11 00:00:00.000000', 13500.0000, 41),
-	(249, 'Patrick', 'Cook', 'M', 'Production Technician', 7, 51, '2002-03-15 00:00:00.000000', 15000.0000, 264),
-	(250, 'Krishna', 'Sunkammurali', NULL, 'Production Technician', 7, 108, '2002-03-16 00:00:00.000000', 14000.0000, 79),
-	(251, 'Lori', 'Penor', 'K', 'Janitor', 14, 49, '2002-03-19 00:00:00.000000', 9300.0000, 124),
-	(252, 'Danielle', 'Tiedt', 'C', 'Production Technician', 7, 64, '2002-03-23 00:00:00.000000', 13500.0000, 146),
-	(253, 'Sootha', 'Charncherngkha', 'T', 'Quality Assurance Technician', 13, 41, '2002-03-26 00:00:00.000000', 10600.0000, 149),
-	(254, 'Michael', 'Zwilling', 'J', 'Production Technician', 7, 18, '2002-03-26 00:00:00.000000', 12500.0000, 76),
-	(255, 'Randy', 'Reeves', 'T', 'Production Technician', 7, 18, '2002-03-26 00:00:00.000000', 12500.0000, 84),
-	(256, 'John', 'Kane', 'T', 'Production Technician', 7, 25, '2002-03-30 00:00:00.000000', 13500.0000, 69),
-	(257, 'Jack', 'Creasey', 'T', 'Production Technician', 7, 51, '2002-04-03 00:00:00.000000', 15000.0000, 265),
-	(258, 'Olinda', 'Turner', 'C', 'Production Technician', 7, 108, '2002-04-04 00:00:00.000000', 14000.0000, 33),
-	(259, 'Stuart', 'Macrae', 'J', 'Janitor', 14, 49, '2002-04-05 00:00:00.000000', 9300.0000, 205),
-	(260, 'Jo', 'Berry', 'L', 'Janitor', 14, 49, '2002-04-07 00:00:00.000000', 9300.0000, 121),
-	(261, 'Ben', 'Miller', 'T', 'Buyer', 5, 274, '2002-04-09 00:00:00.000000', 18300.0000, 192),
-	(262, 'Tom', 'Vande Velde', 'M', 'Production Technician', 7, 64, '2002-04-10 00:00:00.000000', 13500.0000, 98),
-	(263, 'Ovidiu', 'Cracium', 'V', 'Senior Tool Designer', 2, 3, '2003-01-05 00:00:00.000000', 28800.0000, 145),
-	(264, 'Annette', 'Hill', 'L', 'Purchasing Assistant', 5, 274, '2003-01-06 00:00:00.000000', 12800.0000, 181),
-	(265, 'Janice', 'Galvin', 'M', 'Tool Designer', 2, 263, '2003-01-23 00:00:00.000000', 25000.0000, 200),
-	(266, 'Reinout', 'Hillmann', '', 'Purchasing Assistant', 5, 274, '2003-01-25 00:00:00.000000', 12800.0000, 27),
-	(267, 'Michael', 'Sullivan', 'I', 'Senior Design Engineer', 1, 3, '2003-01-30 00:00:00.000000', 36100.0000, 217),
-	(268, 'Stephen', 'Jiang', 'Y', 'North American Sales Manager', 3, 273, '2003-02-04 00:00:00.000000', 48100.0000, 196),
-	(269, 'Wanida', 'Benshoof', 'M', 'Marketing Assistant', 4, 6, '2003-02-07 00:00:00.000000', 13500.0000, 221),
-	(270, 'Sharon', 'Salavaria', 'B', 'Design Engineer', 1, 3, '2003-02-18 00:00:00.000000', 32700.0000, 216),
-	(271, 'John', 'Wood', 'L', 'Marketing Specialist', 4, 6, '2003-03-10 00:00:00.000000', 14400.0000, 180),
-	(272, 'Mary', 'Dempsey', 'A', 'Marketing Assistant', 4, 6, '2003-03-17 00:00:00.000000', 13500.0000, 26),
-	(273, 'Brian', 'Welcker', 'S', 'Vice President of Sales', 3, 109, '2003-03-18 00:00:00.000000', 72100.0000, 134),
-	(274, 'Sheela', 'Word', 'H', 'Purchasing Manager', 13, 71, '2003-03-28 00:00:00.000000', 30000.0000, 222),
-	(275, 'Michael', 'Blythe', 'G', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 60),
-	(276, 'Linda', 'Mitchell', 'C', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 170),
-	(277, 'Jillian', 'Carson', NULL, 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 61),
-	(278, 'Garrett', 'Vargas', 'R', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 52),
-	(279, 'Tsvi', 'Reiter', 'Michael', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 154),
-	(280, 'Pamela', 'Ansman-Wolfe', 'O', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 179),
-	(281, 'Shu', 'Ito', 'K', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 235),
-	(282, 'Jose', 'Saraiva', 'Edvaldo', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 178),
-	(283, 'David', 'Campbell', 'R', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 13),
-	(284, 'Amy', 'Alberts', 'E', 'European Sales Manager', 3, 273, '2004-05-18 00:00:00.000000', 48100.0000, 202),
-	(285, 'Jae', 'Pak', 'B', 'Sales Representative', 3, 284, '2004-07-01 00:00:00.000000', 23100.0000, 54),
-	(286, 'Ranjit', 'Varkey Chudukatil', 'R', 'Sales Representative', 3, 284, '2004-07-01 00:00:00.000000', 23100.0000, 38),
-	(287, 'Tete', 'Mensa-Annan', 'A', 'Sales Representative', 3, 268, '2004-11-01 00:00:00.000000', 23100.0000, 53),
-	(288, 'Syed', 'Abbas', 'E', 'Pacific Sales Manager', 3, 273, '2005-04-15 00:00:00.000000', 48100.0000, 49),
-	(289, 'Rachel', 'Valdez', 'B', 'Sales Representative', 3, 284, '2005-07-01 00:00:00.000000', 23100.0000, 37),
-	(290, 'Lynn', 'Tsoflias', '', 'Sales Representative', 3, 288, '2005-07-01 00:00:00.000000', 23100.0000, 153),
-	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
-	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
-	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
-/\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
-
-
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`),
-  KEY `fk_employees_projects_projects` (`project_id`),
-  CONSTRAINT `fk_employees_projects_employees` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`employee_id`),
-  CONSTRAINT `fk_employees_projects_projects` FOREIGN KEY (`project_id`) REFERENCES `projects` (`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `employees_projects` DISABLE KEYS \*/;
-INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
-	(3, 1),
-	(15, 1),
-	(18, 1),
-	(36, 1),
-	(66, 1),
-	(68, 1),
-	(81, 1),
-	(112, 1),
-	(162, 1),
-	(182, 1),
-	(235, 1),
-	(246, 1),
-	(8, 2),
-	(37, 2),
-	(38, 2),
-	(69, 2),
-	(88, 2),
-	(102, 2),
-	(113, 2),
-	(163, 2),
-	(197, 2),
-	(10, 3),
-	(39, 3),
-	(51, 3),
-	(89, 3),
-	(115, 3),
-	(149, 3),
-	(167, 3),
-	(200, 3),
-	(210, 3),
-	(218, 3),
-	(237, 3),
-	(248, 3),
-	(1, 4),
-	(40, 4),
-	(41, 4),
-	(64, 4),
-	(83, 4),
-	(116, 4),
-	(168, 4),
-	(176, 4),
-	(191, 4),
-	(211, 4),
-	(226, 4),
-	(249, 4),
-	(26, 5),
-	(45, 5),
-	(65, 5),
-	(84, 5),
-	(103, 5),
-	(123, 5),
-	(145, 5),
-	(154, 5),
-	(169, 5),
-	(29, 7),
-	(42, 7),
-	(50, 7),
-	(53, 7),
-	(54, 7),
-	(77, 7),
-	(92, 7),
-	(135, 7),
-	(152, 7),
-	(221, 7),
-	(229, 7),
-	(255, 7),
-	(22, 8),
-	(49, 8),
-	(55, 8),
-	(60, 8),
-	(93, 8),
-	(108, 8),
-	(153, 8),
-	(212, 8),
-	(222, 8),
-	(230, 8),
-	(253, 8),
-	(256, 8),
-	(9, 9),
-	(23, 9),
-	(44, 9),
-	(56, 9),
-	(61, 9),
-	(79, 9),
-	(86, 9),
-	(87, 9),
-	(155, 9),
-	(213, 9),
-	(11, 10),
-	(21, 10),
-	(24, 10),
-	(57, 10),
-	(62, 10),
-	(74, 10),
-	(110, 10),
-	(114, 10),
-	(156, 10),
-	(214, 10),
-	(224, 10),
-	(258, 10),
-	(25, 11),
-	(31, 11),
-	(58, 11),
-	(63, 11),
-	(75, 11),
-	(107, 11),
-	(157, 11),
-	(159, 11),
-	(215, 11),
-	(7, 12),
-	(19, 12),
-	(32, 12),
-	(48, 12),
-	(76, 12),
-	(95, 12),
-	(158, 12),
-	(161, 12),
-	(173, 12),
-	(202, 12),
-	(239, 12),
-	(252, 12),
-	(14, 19),
-	(20, 19),
-	(33, 19),
-	(73, 19),
-	(78, 19),
-	(104, 19),
-	(127, 19),
-	(170, 19),
-	(184, 19),
-	(207, 19),
-	(13, 20),
-	(16, 20),
-	(17, 20),
-	(67, 20),
-	(80, 20),
-	(90, 20),
-	(105, 20),
-	(185, 20),
-	(206, 20),
-	(208, 20),
-	(234, 20),
-	(245, 20),
-	(3, 21),
-	(15, 21),
-	(18, 21),
-	(36, 21),
-	(68, 21),
-	(81, 21),
-	(97, 21),
-	(132, 21),
-	(182, 21),
-	(209, 21),
-	(235, 21),
-	(246, 21),
-	(8, 22),
-	(37, 22),
-	(38, 22),
-	(69, 22),
-	(88, 22),
-	(96, 22),
-	(98, 22),
-	(196, 22),
-	(197, 22),
-	(225, 22),
-	(236, 22),
-	(247, 22),
-	(10, 23),
-	(39, 23),
-	(51, 23),
-	(89, 23),
-	(99, 23),
-	(199, 23),
-	(200, 23),
-	(210, 23),
-	(218, 23),
-	(237, 23),
-	(248, 23),
-	(1, 24),
-	(40, 24),
-	(41, 24),
-	(64, 24),
-	(83, 24),
-	(100, 24),
-	(191, 24),
-	(204, 24),
-	(211, 24),
-	(226, 24),
-	(249, 24),
-	(263, 24),
-	(4, 25),
-	(26, 25),
-	(45, 25),
-	(84, 25),
-	(101, 25),
-	(123, 25),
-	(145, 25),
-	(154, 25),
-	(205, 25),
-	(27, 26),
-	(30, 26),
-	(43, 26),
-	(91, 26),
-	(111, 26),
-	(136, 26),
-	(143, 26),
-	(183, 26),
-	(220, 26),
-	(228, 26),
-	(254, 26),
-	(5, 27),
-	(29, 27),
-	(42, 27),
-	(50, 27),
-	(77, 27),
-	(92, 27),
-	(135, 27),
-	(137, 27),
-	(189, 27),
-	(221, 27),
-	(229, 27),
-	(255, 27),
-	(12, 28),
-	(22, 28),
-	(49, 28),
-	(55, 28),
-	(93, 28),
-	(108, 28),
-	(138, 28),
-	(190, 28),
-	(23, 29),
-	(44, 29),
-	(56, 29),
-	(79, 29),
-	(86, 29),
-	(87, 29),
-	(131, 29),
-	(148, 29),
-	(192, 29),
-	(213, 29),
-	(232, 29),
-	(257, 29),
-	(21, 30),
-	(24, 30),
-	(57, 30),
-	(74, 30),
-	(110, 30),
-	(114, 30),
-	(133, 30),
-	(193, 30),
-	(214, 30),
-	(25, 31),
-	(31, 31),
-	(58, 31),
-	(75, 31),
-	(107, 31),
-	(134, 31),
-	(159, 31),
-	(194, 31),
-	(215, 31),
-	(217, 31),
-	(243, 31),
-	(7, 32),
-	(19, 32),
-	(32, 32),
-	(76, 32),
-	(95, 32),
-	(144, 32),
-	(158, 32),
-	(173, 32),
-	(186, 32),
-	(202, 32),
-	(239, 32),
-	(14, 33),
-	(20, 33),
-	(33, 33),
-	(78, 33),
-	(104, 33),
-	(146, 33),
-	(170, 33),
-	(184, 33),
-	(187, 33),
-	(207, 33),
-	(13, 34),
-	(16, 34),
-	(17, 34),
-	(80, 34),
-	(105, 34),
-	(147, 34),
-	(179, 34),
-	(185, 34),
-	(206, 34),
-	(208, 34),
-	(234, 34),
-	(15, 35),
-	(18, 35),
-	(36, 35),
-	(81, 35),
-	(97, 35),
-	(132, 35),
-	(141, 35),
-	(180, 35),
-	(182, 35),
-	(209, 35),
-	(235, 35),
-	(8, 36),
-	(37, 36),
-	(38, 36),
-	(88, 36),
-	(96, 36),
-	(98, 36),
-	(142, 36),
-	(181, 36),
-	(196, 36),
-	(197, 36),
-	(236, 36),
-	(10, 37),
-	(51, 37),
-	(89, 37),
-	(99, 37),
-	(124, 37),
-	(174, 37),
-	(199, 37),
-	(200, 37),
-	(210, 37),
-	(237, 37),
-	(267, 37),
-	(1, 38),
-	(41, 38),
-	(64, 38),
-	(83, 38),
-	(100, 38),
-	(125, 38),
-	(175, 38),
-	(204, 38),
-	(211, 38),
-	(226, 38),
-	(4, 39),
-	(26, 39),
-	(84, 39),
-	(101, 39),
-	(123, 39),
-	(126, 39),
-	(145, 39),
-	(177, 39),
-	(205, 39),
-	(27, 40),
-	(91, 40),
-	(111, 40),
-	(122, 40),
-	(136, 40),
-	(143, 40),
-	(165, 40),
-	(183, 40),
-	(220, 40),
-	(228, 40),
-	(5, 41),
-	(29, 41),
-	(77, 41),
-	(92, 41),
-	(129, 41),
-	(135, 41),
-	(137, 41),
-	(171, 41),
-	(189, 41),
-	(221, 41),
-	(229, 41),
-	(12, 42),
-	(22, 42),
-	(93, 42),
-	(108, 42),
-	(120, 42),
-	(138, 42),
-	(172, 42),
-	(190, 42),
-	(222, 42),
-	(230, 42),
-	(253, 42),
-	(23, 43),
-	(79, 43),
-	(86, 43),
-	(87, 43),
-	(118, 43),
-	(131, 43),
-	(148, 43),
-	(160, 43),
-	(192, 43),
-	(213, 43),
-	(232, 43),
-	(24, 44),
-	(66, 44),
-	(74, 44),
-	(110, 44),
-	(112, 44),
-	(114, 44),
-	(133, 44),
-	(162, 44),
-	(193, 44),
-	(214, 44),
-	(224, 44),
-	(31, 45),
-	(75, 45),
-	(102, 45),
-	(107, 45),
-	(113, 45),
-	(134, 45),
-	(159, 45),
-	(163, 45),
-	(194, 45),
-	(215, 45),
-	(217, 45),
-	(32, 46),
-	(76, 46),
-	(95, 46),
-	(115, 46),
-	(144, 46),
-	(149, 46),
-	(158, 46),
-	(167, 46),
-	(173, 46),
-	(186, 46),
-	(202, 46),
-	(33, 47),
-	(78, 47),
-	(104, 47),
-	(116, 47),
-	(146, 47),
-	(168, 47),
-	(170, 47),
-	(176, 47),
-	(184, 47),
-	(187, 47),
-	(207, 47),
-	(13, 48),
-	(65, 48),
-	(80, 48),
-	(103, 48),
-	(105, 48),
-	(147, 48),
-	(169, 48),
-	(179, 48),
-	(185, 48),
-	(206, 48),
-	(208, 48),
-	(36, 49),
-	(52, 49),
-	(70, 49),
-	(81, 49),
-	(97, 49),
-	(132, 49),
-	(141, 49),
-	(151, 49),
-	(180, 49),
-	(182, 49),
-	(209, 49),
-	(37, 50),
-	(53, 50),
-	(54, 50),
-	(88, 50),
-	(96, 50),
-	(98, 50),
-	(142, 50),
-	(152, 50),
-	(181, 50),
-	(196, 50),
-	(197, 50),
-	(60, 51),
-	(89, 51),
-	(99, 51),
-	(124, 51),
-	(153, 51),
-	(174, 51),
-	(199, 51),
-	(200, 51),
-	(210, 51),
-	(212, 51),
-	(9, 52),
-	(41, 52),
-	(61, 52),
-	(83, 52),
-	(100, 52),
-	(125, 52),
-	(155, 52),
-	(175, 52),
-	(204, 52),
-	(211, 52),
-	(4, 53),
-	(11, 53),
-	(62, 53),
-	(84, 53),
-	(101, 53),
-	(126, 53),
-	(145, 53),
-	(156, 53),
-	(177, 53),
-	(205, 53),
-	(219, 53),
-	(63, 54),
-	(91, 54),
-	(111, 54),
-	(122, 54),
-	(136, 54),
-	(157, 54),
-	(165, 54),
-	(183, 54),
-	(220, 54),
-	(5, 55),
-	(48, 55),
-	(77, 55),
-	(92, 55),
-	(129, 55),
-	(137, 55),
-	(161, 55),
-	(171, 55),
-	(189, 55),
-	(221, 55),
-	(252, 55),
-	(12, 56),
-	(73, 56),
-	(93, 56),
-	(120, 56),
-	(127, 56),
-	(138, 56),
-	(172, 56),
-	(190, 56),
-	(222, 56),
-	(253, 56),
-	(262, 56),
-	(67, 57),
-	(79, 57),
-	(86, 57),
-	(90, 57),
-	(118, 57),
-	(131, 57),
-	(148, 57),
-	(160, 57),
-	(192, 57),
-	(213, 57),
-	(245, 57),
-	(3, 58),
-	(66, 58),
-	(68, 58),
-	(110, 58),
-	(112, 58),
-	(114, 58),
-	(133, 58),
-	(162, 58),
-	(193, 58),
-	(214, 58),
-	(246, 58),
-	(69, 59),
-	(102, 59),
-	(107, 59),
-	(113, 59),
-	(134, 59),
-	(163, 59),
-	(194, 59),
-	(215, 59),
-	(217, 59),
-	(225, 59),
-	(247, 59),
-	(39, 60),
-	(95, 60),
-	(115, 60),
-	(144, 60),
-	(149, 60),
-	(158, 60),
-	(167, 60),
-	(186, 60),
-	(202, 60),
-	(218, 60),
-	(248, 60),
-	(40, 61),
-	(104, 61),
-	(116, 61),
-	(146, 61),
-	(168, 61),
-	(170, 61),
-	(176, 61),
-	(187, 61),
-	(191, 61),
-	(207, 61),
-	(249, 61),
-	(45, 77),
-	(65, 77),
-	(103, 77),
-	(105, 77),
-	(147, 77),
-	(154, 77),
-	(169, 77),
-	(179, 77),
-	(206, 77),
-	(208, 77),
-	(250, 77),
-	(30, 78),
-	(43, 78),
-	(52, 78),
-	(70, 78),
-	(97, 78),
-	(132, 78),
-	(141, 78),
-	(151, 78),
-	(180, 78),
-	(209, 78),
-	(254, 78),
-	(42, 79),
-	(50, 79),
-	(53, 79),
-	(54, 79),
-	(96, 79),
-	(98, 79),
-	(142, 79),
-	(152, 79),
-	(181, 79),
-	(196, 79),
-	(255, 79),
-	(49, 80),
-	(55, 80),
-	(60, 80),
-	(99, 80),
-	(124, 80),
-	(153, 80),
-	(174, 80),
-	(199, 80),
-	(212, 80),
-	(256, 80),
-	(267, 80),
-	(9, 104),
-	(44, 104),
-	(56, 104),
-	(61, 104),
-	(100, 104),
-	(125, 104),
-	(155, 104),
-	(175, 104),
-	(204, 104),
-	(257, 104),
-	(4, 105),
-	(11, 105),
-	(21, 105),
-	(57, 105),
-	(62, 105),
-	(101, 105),
-	(126, 105),
-	(156, 105),
-	(177, 105),
-	(205, 105),
-	(258, 105),
-	(25, 106),
-	(58, 106),
-	(63, 106),
-	(122, 106),
-	(136, 106),
-	(157, 106),
-	(165, 106),
-	(183, 106),
-	(243, 106),
-	(5, 107),
-	(7, 107),
-	(19, 107),
-	(48, 107),
-	(129, 107),
-	(137, 107),
-	(161, 107),
-	(171, 107),
-	(189, 107),
-	(239, 107),
-	(252, 107),
-	(12, 108),
-	(14, 108),
-	(20, 108),
-	(73, 108),
-	(120, 108),
-	(127, 108),
-	(138, 108),
-	(172, 108),
-	(190, 108),
-	(240, 108),
-	(262, 108),
-	(16, 109),
-	(17, 109),
-	(67, 109),
-	(90, 109),
-	(118, 109),
-	(131, 109),
-	(148, 109),
-	(160, 109),
-	(192, 109),
-	(234, 109),
-	(245, 109),
-	(3, 110),
-	(15, 110),
-	(18, 110),
-	(66, 110),
-	(68, 110),
-	(112, 110),
-	(133, 110),
-	(162, 110),
-	(193, 110),
-	(235, 110),
-	(246, 110),
-	(8, 111),
-	(38, 111),
-	(69, 111),
-	(102, 111),
-	(113, 111),
-	(134, 111),
-	(163, 111),
-	(194, 111),
-	(225, 111),
-	(236, 111),
-	(247, 111),
-	(10, 112),
-	(39, 112),
-	(51, 112),
-	(115, 112),
-	(144, 112),
-	(149, 112),
-	(167, 112),
-	(186, 112),
-	(218, 112),
-	(237, 112),
-	(248, 112),
-	(1, 113),
-	(40, 113),
-	(64, 113),
-	(116, 113),
-	(146, 113),
-	(168, 113),
-	(176, 113),
-	(187, 113),
-	(191, 113),
-	(226, 113),
-	(249, 113),
-	(26, 114),
-	(45, 114),
-	(65, 114),
-	(103, 114),
-	(123, 114),
-	(147, 114),
-	(154, 114),
-	(169, 114),
-	(179, 114),
-	(227, 114),
-	(250, 114),
-	(27, 115),
-	(30, 115),
-	(43, 115),
-	(52, 115),
-	(70, 115),
-	(141, 115),
-	(143, 115),
-	(151, 115),
-	(180, 115),
-	(228, 115),
-	(254, 115),
-	(29, 116),
-	(42, 116),
-	(50, 116),
-	(53, 116),
-	(54, 116),
-	(135, 116),
-	(142, 116),
-	(152, 116),
-	(181, 116),
-	(229, 116),
-	(255, 116),
-	(22, 117),
-	(49, 117),
-	(55, 117),
-	(60, 117),
-	(108, 117),
-	(124, 117),
-	(153, 117),
-	(174, 117),
-	(212, 117),
-	(230, 117),
-	(256, 117),
-	(9, 118),
-	(23, 118),
-	(44, 118),
-	(56, 118),
-	(61, 118),
-	(87, 118),
-	(125, 118),
-	(155, 118),
-	(175, 118),
-	(232, 118),
-	(257, 118),
-	(11, 119),
-	(21, 119),
-	(24, 119),
-	(57, 119),
-	(62, 119),
-	(74, 119),
-	(126, 119),
-	(156, 119),
-	(177, 119),
-	(224, 119),
-	(258, 119),
-	(25, 120),
-	(31, 120),
-	(58, 120),
-	(63, 120),
-	(75, 120),
-	(122, 120),
-	(157, 120),
-	(159, 120),
-	(165, 120),
-	(243, 120),
-	(7, 121),
-	(19, 121),
-	(32, 121),
-	(48, 121),
-	(76, 121),
-	(129, 121),
-	(161, 121),
-	(171, 121),
-	(173, 121),
-	(239, 121),
-	(252, 121),
-	(14, 122),
-	(20, 122),
-	(33, 122),
-	(73, 122),
-	(78, 122),
-	(120, 122),
-	(127, 122),
-	(172, 122),
-	(184, 122),
-	(240, 122),
-	(262, 122),
-	(13, 127),
-	(16, 127),
-	(17, 127),
-	(67, 127),
-	(80, 127),
-	(90, 127),
-	(118, 127),
-	(160, 127),
-	(185, 127),
-	(234, 127),
-	(245, 127);
-/\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
-
-
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `PK_Projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `projects` DISABLE KEYS \*/;
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2003-06-01 00:00:00.000000', NULL),
-	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(6, 'HL Road Frame', 'Research, design and development of HL Road Frame. Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.', '1998-05-02 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(7, 'HL Touring Frame', 'Research, design and development of HL Touring Frame. The HL aluminum frame is custom-shaped for both good looks and strength; it will withstand the most rigorous challenges of daily riding. Men''s version.', '2005-05-16 16:34:00.000000', NULL),
-	(8, 'LL Mountain Frame', 'Research, design and development of LL Mountain Frame. Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(9, 'LL Road Frame', 'Research, design and development of LL Road Frame. The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(10, 'LL Touring Frame', 'Research, design and development of LL Touring Frame. Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.', '2005-05-16 16:34:00.000000', NULL),
-	(11, 'Long-Sleeve Logo Jersey', 'Research, design and development of Long-Sleeve Logo Jersey. Unisex long-sleeve AWC logo microfiber cycling jersey', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(12, 'Men''s Bib-Shorts', 'Research, design and development of Men''s Bib-Shorts. Designed for the AWC team with stay-put straps, moisture-control, chamois padding, and leg grippers.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(19, 'Mountain-100', 'Research, design and development of Mountain-100. Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(20, 'Mountain-200', 'Research, design and development of Mountain-200. Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.', '2002-06-01 00:00:00.000000', '2004-03-11 10:32:00.000000'),
-	(21, 'Mountain-300', 'Research, design and development of Mountain-300. For true trail addicts.  An extremely durable bike that will go anywhere and keep you in control on challenging terrain - without breaking your budget.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(22, 'Mountain-400-W', 'Research, design and development of Mountain-400-W. This bike delivers a high-level of performance on a budget. It is responsive and maneuverable, and offers peace-of-mind when you decide to go off-road.', '2006-02-22 00:00:00.000000', NULL),
-	(23, 'Mountain-500', 'Research, design and development of Mountain-500. Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(24, 'Racing Socks', 'Research, design and development of Racing Socks. Thin, lightweight and durable with cuffs that stay up.', '2005-11-22 00:00:00.000000', NULL),
-	(25, 'Road-150', 'Research, design and development of Road-150. This bike is ridden by race winners. Developed with the Adventure Works Cycles professional race team, it has a extremely light heat-treated aluminum frame, and steering that allows precision control.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(26, 'Road-250', 'Research, design and development of Road-250. Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(27, 'Road-350-W', 'Research, design and development of Road-350-W. Cross-train, race, or just socialize on a sleek, aerodynamic bike designed for a woman.  Advanced seat technology provides comfort all day.', '2003-06-01 00:00:00.000000', NULL),
-	(28, 'Road-450', 'Research, design and development of Road-450. A true multi-sport bike that offers streamlined riding and a revolutionary design. Aerodynamic design lets you ride with the pros, and the gearing will conquer hilly roads.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(29, 'Road-550-W', 'Research, design and development of Road-550-W. Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(30, 'Road-650', 'Research, design and development of Road-650. Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we''re famous for.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(31, 'Road-750', 'Research, design and development of Road-750. Entry level adult bike; offers a comfortable ride cross-country or down the block. Quick-release hubs and rims.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(32, 'Short-Sleeve Classic Jersey', 'Research, design and development of Short-Sleeve Classic Jersey. Short sleeve classic breathable jersey with superior moisture control, front zipper, and 3 back pockets.', '2003-06-01 00:00:00.000000', NULL),
-	(33, 'Sport-100', 'Research, design and development of Sport-100. Universal fit, well-vented, lightweight , snap-on visor.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(34, 'Touring-1000', 'Research, design and development of Touring-1000. Travel in style and comfort. Designed for maximum comfort and safety. Wide gear range takes on all hills. High-tech aluminum alloy construction provides durability without added weight.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(35, 'Touring-2000', 'Research, design and development of Touring-2000. The plush custom saddle keeps you riding all day,  and there''s plenty of space to add panniers and bike bags to the newly-redesigned carrier.  This bike has stability when fully-loaded.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(36, 'Touring-3000', 'Research, design and development of Touring-3000. All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(37, 'Women''s Mountain Shorts', 'Research, design and development of Women''s Mountain Shorts. Heavy duty, abrasion-resistant shorts feature seamless, lycra inner shorts with anti-bacterial chamois for comfort.', '2003-06-01 00:00:00.000000', NULL),
-	(38, 'Women''s Tights', 'Research, design and development of Women''s Tights. Warm spandex tights for winter riding; seamless chamois construction eliminates pressure points.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(39, 'Mountain-400', 'Research, design and development of Mountain-400. Suitable for any type of off-road trip. Fits any budget.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(40, 'Road-550', 'Research, design and development of Road-550. Same technology as all of our Road series bikes.  Perfect all-around bike for road or racing.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(41, 'Road-350', 'Research, design and development of Road-350. Cross-train, race, or just socialize on a sleek, aerodynamic bike.  Advanced seat technology provides comfort all day.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(42, 'LL Mountain Front Wheel', 'Research, design and development of LL Mountain Front Wheel. Replacement mountain wheel for entry-level rider.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(43, 'Touring Rear Wheel', 'Research, design and development of Touring Rear Wheel. Excellent aerodynamic rims guarantee a smooth ride.', '2005-05-16 16:34:00.000000', NULL),
-	(44, 'Touring Front Wheel', 'Research, design and development of Touring Front Wheel. Aerodynamic rims for smooth riding.', '2005-05-16 16:34:00.000000', NULL),
-	(45, 'ML Mountain Front Wheel', 'Research, design and development of ML Mountain Front Wheel. Replacement mountain wheel for the casual to serious rider.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(46, 'HL Mountain Front Wheel', 'Research, design and development of HL Mountain Front Wheel. High-performance mountain replacement wheel.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(47, 'LL Touring Handlebars', 'Research, design and development of LL Touring Handlebars. Unique shape reduces fatigue for entry level riders.', '2005-05-16 16:34:00.000000', NULL),
-	(48, 'HL Touring Handlebars', 'Research, design and development of HL Touring Handlebars. A light yet stiff aluminum bar for long distance riding.', '2005-05-16 16:34:00.000000', NULL),
-	(49, 'LL Road Front Wheel', 'Research, design and development of LL Road Front Wheel. Replacement road front wheel for entry-level cyclist.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(50, 'ML Road Front Wheel', 'Research, design and development of ML Road Front Wheel. Sturdy alloy features a quick-release hub.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(51, 'HL Road Front Wheel', 'Research, design and development of HL Road Front Wheel. Strong wheel with double-walled rim.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(52, 'LL Mountain Handlebars', 'Research, design and development of LL Mountain Handlebars. All-purpose bar for on or off-road.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(53, 'Touring Pedal', 'Research, design and development of Touring Pedal. A stable pedal for all-day riding.', '2005-05-16 16:34:00.000000', NULL),
-	(54, 'ML Mountain Handlebars', 'Research, design and development of ML Mountain Handlebars. Tough aluminum alloy bars for downhill.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(55, 'HL Mountain Handlebars', 'Research, design and development of HL Mountain Handlebars. Flat bar strong enough for the pro circuit.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(56, 'LL Road Handlebars', 'Research, design and development of LL Road Handlebars. Unique shape provides easier reach to the levers.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(57, 'ML Road Handlebars', 'Research, design and development of ML Road Handlebars. Anatomically shaped aluminum tube bar will suit all riders.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(58, 'HL Road Handlebars', 'Research, design and development of HL Road Handlebars. Designed for racers; high-end anatomically shaped bar from aluminum alloy.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(59, 'LL Headset', 'Research, design and development of LL Headset. Threadless headset provides quality at an economical price.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(60, 'ML Headset', 'Research, design and development of ML Headset. Sealed cartridge keeps dirt out.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(61, 'HL Headset', 'Research, design and development of HL Headset. High-quality 1" threadless headset with a grease port for quick lubrication.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(77, 'ML Road Rear Wheel', 'Research, design and development of ML Road Rear Wheel. Aluminum alloy rim with stainless steel spokes; built for speed.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(78, 'HL Road Rear Wheel', 'Research, design and development of HL Road Rear Wheel. Strong rear wheel with double-walled rim.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(79, 'LL Mountain Seat/Saddle 2', 'Research, design and development of LL Mountain Seat/Saddle 2. Synthetic leather. Features gel for increased comfort.', '2003-06-01 00:00:00.000000', NULL),
-	(80, 'ML Mountain Seat/Saddle 2', 'Research, design and development of ML Mountain Seat/Saddle 2. Designed to absorb shock.', '2003-06-01 00:00:00.000000', '2004-03-11 10:32:00.000000'),
-	(104, 'LL Fork', 'Research, design and development of LL Fork. Stout design absorbs shock and offers more precise steering.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(105, 'ML Fork', 'Research, design and development of ML Fork. Composite road fork with an aluminum steerer tube.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(106, 'HL Fork', 'Research, design and development of HL Fork. High-performance carbon road fork with curved legs.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(107, 'Hydration Pack', 'Research, design and development of Hydration Pack. Versatile 70 oz hydration pack offers extra storage, easy-fill access, and a waist belt.', '2003-06-01 00:00:00.000000', NULL),
-	(108, 'Taillight', 'Research, design and development of Taillight. Affordable light for safe night riding - uses 3 AAA batteries', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(109, 'Headlights - Dual-Beam', 'Research, design and development of Headlights - Dual-Beam. Rechargeable dual-beam headlight.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(110, 'Headlights - Weatherproof', 'Research, design and development of Headlights - Weatherproof. Rugged weatherproof headlight.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(111, 'Water Bottle', 'Research, design and development of Water Bottle. AWC logo water bottle - holds 30 oz; leak-proof.', '2003-06-01 00:00:00.000000', NULL),
-	(112, 'Mountain Bottle Cage', 'Research, design and development of Mountain Bottle Cage. Tough aluminum cage holds bottle securly on tough terrain.', '2003-06-01 00:00:00.000000', NULL),
-	(113, 'Road Bottle Cage', 'Research, design and development of Road Bottle Cage. Aluminum cage is lighter than our mountain version; perfect for long distance trips.', '2004-02-21 00:00:00.000000', NULL),
-	(114, 'Patch kit', 'Research, design and development of Patch kit. Includes 8 different size patches, glue and sandpaper.', '2003-06-01 00:00:00.000000', NULL),
-	(115, 'Cable Lock', 'Research, design and development of Cable Lock. Wraps to fit front and rear tires, carrier and 2 keys included.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(116, 'Minipump', 'Research, design and development of Minipump. Designed for convenience. Fits in your pocket. Aluminum barrel. 160psi rated.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(117, 'Mountain Pump', 'Research, design and development of Mountain Pump. Simple and light-weight. Emergency patches stored in handle.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(118, 'Hitch Rack - 4-Bike', 'Research, design and development of Hitch Rack - 4-Bike. Carries 4 bikes securely; steel construction, fits 2" receiver hitch.', '2003-06-01 00:00:00.000000', NULL),
-	(119, 'Bike Wash', 'Research, design and development of Bike Wash. Washes off the toughest road grime; dissolves grease, environmentally safe. 1-liter bottle.', '2005-08-01 00:00:00.000000', NULL),
-	(120, 'Touring-Panniers', 'Research, design and development of Touring-Panniers. Durable, water-proof nylon construction with easy access. Large enough for weekend trips.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(121, 'Fender Set - Mountain', 'Research, design and development of Fender Set - Mountain. Clip-on fenders fit most mountain bikes.', '2003-06-01 00:00:00.000000', NULL),
-	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
-	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
-/\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
-
-
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `PK_Towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `towns` DISABLE KEYS \*/;
-INSERT INTO `towns` (`town_id`, `name`) VALUES
-	(1, 'Redmond'),
-	(2, 'Calgary'),
-	(3, 'Edmonds'),
-	(4, 'Seattle'),
-	(5, 'Bellevue'),
-	(6, 'Issaquah'),
-	(7, 'Everett'),
-	(8, 'Bothell'),
-	(9, 'San Francisco'),
-	(10, 'Index'),
-	(11, 'Snohomish'),
-	(12, 'Monroe'),
-	(13, 'Renton'),
-	(14, 'Newport Hills'),
-	(15, 'Carnation'),
-	(16, 'Sammamish'),
-	(17, 'Duvall'),
-	(18, 'Gold Bar'),
-	(19, 'Nevada'),
-	(20, 'Kenmore'),
-	(21, 'Melbourne'),
-	(22, 'Kent'),
-	(23, 'Cambridge'),
-	(24, 'Minneapolis'),
-	(25, 'Portland'),
-	(26, 'Duluth'),
-	(27, 'Detroit'),
-	(28, 'Memphis'),
-	(29, 'Ottawa'),
-	(30, 'Bordeaux'),
-	(31, 'Berlin'),
-	(32, 'Sofia');
-/\*!40000 ALTER TABLE `towns` ENABLE KEYS \*/;
-/\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
-/\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
-/\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+SELECT \* FROM v_employees_hired_after_2000;
 [/input]
 [output]
-2
-Calgary
-23
-Cambridge
-15
-Carnation
-3
-Edmonds
-7
-Everett
-18
-Gold Bar
-10
-Index
-6
-Issaquah
-20
-Kenmore
-22
-Kent
-21
-Melbourne
-28
-Memphis
-24
-Minneapolis
-12
-Monroe
-19
-Nevada
-14
-Newport Hills
-29
-Ottawa
-25
-Portland
-16
-Sammamish
-9
-San Francisco
-4
-Seattle
-11
-Snohomish
-32
-Sofia
+Steven
+Selikoff
+Peter
+Krebs
+Stuart
+Munson
+Greg
+Alderson
+David
+Johnson
+Zheng
+Mu
+Ivo
+Salmre
+Paul
+Komosinski
+Ashvini
+Sharma
+Kendall
+Keil
+Paula
+Barreto de Mattos
+Alejandro
+McGuel
+Garrett
+Young
+Jian Shuo
+Wang
+Susan
+Eaton
+Vamsi
+Kuppa
+Alice
+Ciccu
+Simon
+Rapier
+Jinghao
+Liu
+Michael
+Hines
+Yvonne
+McKay
+Peng
+Wu
+Jean
+Trenary
+Russell
+Hunter
+A. Scott
+Wright
+Fred
+Northup
+Sariya
+Harnpadoungsataya
+Willis
+Johnson
+Jun
+Cao
+Christian
+Kleinerman
+Susan
+Metters
+Reuben
+D'sa
+Kirk
+Koenigsbauer
+David
+Ortiz
+Tengiz
+Kharatishvili
+Hanying
+Feng
+Kevin
+Liu
+Annik
+Stahl
+Suroor
+Fatima
+Deborah
+Poe
+Jim
+Scardelis
+Carole
+Poland
+George
+Li
+Gary
+Yukish
+Cristian
+Petculescu
+Raymond
+Sam
+Janaina
+Bueno
+Bob
+Hohman
+Shammi
+Mohamed
+Linda
+Moschell
+Mindy
+Martin
+Wendy
+Kahn
+Kim
+Ralls
+Sandra
+Reategui Alayo
+Kok-Ho
+Loh
+Douglas
+Hite
+James
+Kramer
+Sean
+Alexander
+Nitin
+Mirchandani
+Diane
+Margheim
+Rebecca
+Laszlo
+Rajesh
+Patel
+Vidur
+Luthra
+John
+Evans
+Nancy
+Anderson
+Pilar
+Ackerman
+David
+Yalovsky
+David
+Hamilton
+Laura
+Steele
+Margie
+Shoop
+Zainal
+Arifin
+Lorraine
+Nay
+Fadi
+Fakhouri
+Ryan
+Cornelsen
+Candy
+Spoon
+Nuan
+Yu
+William
+Vong
+Bjorn
+Rettig
+Scott
+Gode
+Michael
+Rothkugel
+Lane
+Sacksteder
+Pete
+Male
+Dan
+Bacon
+David
+Barber
+Lolan
+Song
+Paula
+Nartker
+Mary
+Gibson
+Mindaugas
+Krapauskas
+Eric
+Gubbels
+Ken
+Sanchez
+Jason
+Watters
+Mark
+Harrington
+Janeth
+Esteves
+Marc
+Ingle
+Gigi
+Matthew
+Paul
+Singh
+Frank
+Lee
+Francois
+Ajenstat
+Diane
+Tibbott
+Jill
+Williams
+Angela
+Barbariol
+Matthias
+Berndt
+Bryan
+Baker
+Jeff
+Hay
+Eugene
+Zabokritski
+Barbara
+Decker
+Chris
+Preston
+Sean
+Chai
+Dan
+Wilson
+Mark
+McArthur
+Bryan
+Walton
+Houman
+Pournasseh
+Sairaj
+Uddin
+Michiko
+Osada
+Benjamin
+Martin
+Cynthia
+Randall
+Kathie
+Flood
+Britta
+Simon
+Brian
+Lloyd
+David
+Liu
+Laura
+Norman
+Michael
+Patten
+Andy
+Ruth
+Yuhong
+Li
+Robert
+Rounthwaite
+Andreas
+Berglund
+Reed
+Koch
+Linda
+Randall
+James
+Hamilton
+Ramesh
+Meyyappan
+Stephanie
+Conroy
+Samantha
+Smith
+Tawana
+Nusbaum
+Denise
+Smith
+Hao
+Chen
+Alex
+Nayberg
+Eugene
+Kogan
+Brandon
+Heidepriem
+Dylan
+Miller
+Shane
+Kim
+John
+Chen
+Karen
+Berge
+Jose
+Lugo
+Mandar
+Samant
+Mikael
+Sandberg
+Sameer
+Tejani
+Dragan
+Tomic
+Carol
+Philips
+Rob
+Caron
+Don
+Hall
+Alan
+Brewer
+David
+Lawrence
+Baris
+Cetinok
+Michael
+Ray
+Steve
+Masters
+Suchitra
+Mohan
+Karen
+Berg
+Terrence
+Earls
+Barbara
+Moreland
+Chad
+Niswonger
+Rostislav
+Shabalin
+Belinda
+Newman
+Katie
+McAskill-White
+Russell
+King
+Jack
+Richins
+Andrew
+Hill
+Nicole
+Holliday
+Frank
+Miller
+Peter
+Connelly
+Anibal
+Sousa
+Ken
+Myer
+Grant
+Culbertson
+Michael
+Entin
+Lionel
+Penuchot
+Thomas
+Michaels
+Jimmy
+Bischoff
+Michael
+Vanderhyde
+Lori
+Kane
+Arvind
+Rao
+Stefen
+Hesse
+Hazem
+Abolrous
+Janet
+Sheperdigian
+Elizabeth
+Keyser
+Terry
+Eminhizer
+John
+Frum
+Merav
+Netz
+Brian
+LaMee
+Kitti
+Lertpiriyasuwat
+Jay
+Adams
+Jan
+Miksovsky
+Brenda
+Diaz
+Andrew
+Cencini
+Chris
+Norred
+Chris
+Okelberry
+Shelley
+Dyck
+Gabe
+Mares
+Mike
+Seamans
+Michael
+Raheem
+Gary
+Altman
+Charles
+Fitzgerald
+Ebru
+Ersan
+Sylvester
+Valdez
+Brian
+Goldstein
+Linda
+Meisner
+Betsy
+Stadick
+Magnus
+Hedlund
+Karan
+Khanna
+Mary
+Baker
+Kevin
+Homer
+Mihail
+Frintu
+Bonnie
+Kearney
+Fukiko
+Ogisu
+Hung-Fu
+Ting
+Gordon
+Hee
+Kimberly
+Zimmerman
+Kim
+Abercrombie
+Sandeep
+Kaliyath
+Prasanna
+Samarawickrama
+Frank
+Pellow
+Min
+Su
+Eric
+Brown
+Eric
+Kurjan
+Pat
+Coleman
+Maciej
+Dusza
+Erin
+Hagens
+Patrick
+Wedge
+Frank
+Martinez
+Ed
+Dudenhoefer
+Christopher
+Hill
+Patrick
+Cook
+Krishna
+Sunkammurali
+Lori
+Penor
+Danielle
+Tiedt
+Sootha
+Charncherngkha
+Michael
+Zwilling
+Randy
+Reeves
+John
+Kane
+Jack
+Creasey
+Olinda
+Turner
+Stuart
+Macrae
+Jo
+Berry
+Ben
+Miller
+Tom
+Vande Velde
+Ovidiu
+Cracium
+Annette
+Hill
+Janice
+Galvin
+Reinout
+Hillmann
+Michael
+Sullivan
+Stephen
+Jiang
+Wanida
+Benshoof
+Sharon
+Salavaria
+John
+Wood
+Mary
+Dempsey
+Brian
+Welcker
+Sheela
+Word
+Michael
+Blythe
+Linda
+Mitchell
+Jillian
+Carson
+Garrett
+Vargas
+Tsvi
+Reiter
+Pamela
+Ansman-Wolfe
+Shu
+Ito
+Jose
+Saraiva
+David
+Campbell
+Amy
+Alberts
+Jae
+Pak
+Ranjit
+Varkey Chudukatil
+Tete
+Mensa-Annan
+Syed
+Abbas
+Rachel
+Valdez
+Lynn
+Tsoflias
+Svetlin
+Nakov
+Martin
+Kulov
+George
+Denchev
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT \* FROM towns WHERE name NOT LIKE 'R%'
-
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `PK_Addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `PK_Projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `PK_Towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `towns` DISABLE KEYS \*/;
-INSERT INTO `towns` (`town_id`, `name`) VALUES
-	(1, 'Redmond'),
-	(2, 'Ravlon'),
-	(3, 'Adronds'),
-	(4, 'Rotev'),
-	(5, 'Mellevue');
+SELECT \* FROM v_employees_hired_after_2000;
 [/input]
 [output]
-3
-Adronds
-5
-Mellevue
-[/output]
-[/test]
-[test]
-[input]
-\# test 2 : SELECT \* FROM towns WHERE name NOT LIKE 'B%'
-
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `PK_Addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `PK_Projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `PK_Towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `towns` DISABLE KEYS \*/;
-INSERT INTO `towns` (`town_id`, `name`) VALUES
-	(1, 'Aedmond'),
-	(2, 'Fablon'),
-	(3, 'Bonds'),
-	(4, 'Zotev'),
-	(5, 'Bellevue');
-[/input]
-[output]
-1
-Aedmond
-2
-Fablon
-4
-Zotev
-[/output]
-[/test]
-[test]
-[input]
-\# test 3 : SELECT \* FROM towns WHERE name NOT LIKE 'D%'
-
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `PK_Addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `PK_Projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `PK_Towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `towns` DISABLE KEYS \*/;
-INSERT INTO `towns` (`town_id`, `name`) VALUES
-	(1, 'Aedmond'),
-	(2, 'Dablon'),
-	(3, 'Konds'),
-	(4, 'Zotev'),
-	(5, 'Dellevue');
-[/input]
-[output]
-1
-Aedmond
-3
-Konds
-4
-Zotev
-[/output]
-[/test]
-[test]
-[input]
-\# test 5 : SELECT \* FROM towns order by name;
-
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `PK_Addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `PK_Projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `PK_Towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `towns` DISABLE KEYS \*/;
-INSERT INTO `towns` (`town_id`, `name`) VALUES
-	(1, 'Mm'),
-	(2, 'Kkkkkk'),
-	(3, 'Eeeeeeeeee'),
-	(4, 'aaaaaaaaa');
-[/input]
-[output]
-4
-aaaaaaaaa
-3
-Eeeeeeeeee
-2
-Kkkkkk
-1
-Mm
+Steven
+Selikoff
+Peter
+Krebs
+Stuart
+Munson
+Greg
+Alderson
+David
+Johnson
+Zheng
+Mu
+Ivo
+Salmre
+Paul
+Komosinski
+Ashvini
+Sharma
+Kendall
+Keil
+Paula
+Barreto de Mattos
+Alejandro
+McGuel
+Garrett
+Young
+Jian Shuo
+Wang
+Susan
+Eaton
+Vamsi
+Kuppa
+Alice
+Ciccu
+Simon
+Rapier
+Jinghao
+Liu
+Michael
+Hines
+Yvonne
+McKay
+Peng
+Wu
+Jean
+Trenary
+Russell
+Hunter
+A. Scott
+Wright
+Fred
+Northup
+Sariya
+Harnpadoungsataya
+Willis
+Johnson
+Jun
+Cao
+Christian
+Kleinerman
+Susan
+Metters
+Reuben
+D'sa
+Kirk
+Koenigsbauer
+David
+Ortiz
+Tengiz
+Kharatishvili
+Hanying
+Feng
+Kevin
+Liu
+Annik
+Stahl
+Suroor
+Fatima
+Deborah
+Poe
+Jim
+Scardelis
+Carole
+Poland
+George
+Li
+Gary
+Yukish
+Cristian
+Petculescu
+Raymond
+Sam
+Janaina
+Bueno
+Bob
+Hohman
+Shammi
+Mohamed
+Linda
+Moschell
+Mindy
+Martin
+Wendy
+Kahn
+Kim
+Ralls
+Sandra
+Reategui Alayo
+Kok-Ho
+Loh
+Douglas
+Hite
+James
+Kramer
+Sean
+Alexander
+Nitin
+Mirchandani
+Diane
+Margheim
+Rebecca
+Laszlo
+Rajesh
+Patel
+Vidur
+Luthra
+John
+Evans
+Nancy
+Anderson
+Pilar
+Ackerman
+David
+Yalovsky
+David
+Hamilton
+Laura
+Steele
+Margie
+Shoop
+Zainal
+Arifin
+Lorraine
+Nay
+Fadi
+Fakhouri
+Ryan
+Cornelsen
+Candy
+Spoon
+Nuan
+Yu
+William
+Vong
+Bjorn
+Rettig
+Scott
+Gode
+Michael
+Rothkugel
+Lane
+Sacksteder
+Pete
+Male
+Dan
+Bacon
+David
+Barber
+Lolan
+Song
+Paula
+Nartker
+Mary
+Gibson
+Mindaugas
+Krapauskas
+Eric
+Gubbels
+Ken
+Sanchez
+Jason
+Watters
+Mark
+Harrington
+Janeth
+Esteves
+Marc
+Ingle
+Gigi
+Matthew
+Paul
+Singh
+Frank
+Lee
+Francois
+Ajenstat
+Diane
+Tibbott
+Jill
+Williams
+Angela
+Barbariol
+Matthias
+Berndt
+Bryan
+Baker
+Jeff
+Hay
+Eugene
+Zabokritski
+Barbara
+Decker
+Chris
+Preston
+Sean
+Chai
+Dan
+Wilson
+Mark
+McArthur
+Bryan
+Walton
+Houman
+Pournasseh
+Sairaj
+Uddin
+Michiko
+Osada
+Benjamin
+Martin
+Cynthia
+Randall
+Kathie
+Flood
+Britta
+Simon
+Brian
+Lloyd
+David
+Liu
+Laura
+Norman
+Michael
+Patten
+Andy
+Ruth
+Yuhong
+Li
+Robert
+Rounthwaite
+Andreas
+Berglund
+Reed
+Koch
+Linda
+Randall
+James
+Hamilton
+Ramesh
+Meyyappan
+Stephanie
+Conroy
+Samantha
+Smith
+Tawana
+Nusbaum
+Denise
+Smith
+Hao
+Chen
+Alex
+Nayberg
+Eugene
+Kogan
+Brandon
+Heidepriem
+Dylan
+Miller
+Shane
+Kim
+John
+Chen
+Karen
+Berge
+Jose
+Lugo
+Mandar
+Samant
+Mikael
+Sandberg
+Sameer
+Tejani
+Dragan
+Tomic
+Carol
+Philips
+Rob
+Caron
+Don
+Hall
+Alan
+Brewer
+David
+Lawrence
+Baris
+Cetinok
+Michael
+Ray
+Steve
+Masters
+Suchitra
+Mohan
+Karen
+Berg
+Terrence
+Earls
+Barbara
+Moreland
+Chad
+Niswonger
+Rostislav
+Shabalin
+Belinda
+Newman
+Katie
+McAskill-White
+Russell
+King
+Jack
+Richins
+Andrew
+Hill
+Nicole
+Holliday
+Frank
+Miller
+Peter
+Connelly
+Anibal
+Sousa
+Ken
+Myer
+Grant
+Culbertson
+Michael
+Entin
+Lionel
+Penuchot
+Thomas
+Michaels
+Jimmy
+Bischoff
+Michael
+Vanderhyde
+Lori
+Kane
+Arvind
+Rao
+Stefen
+Hesse
+Hazem
+Abolrous
+Janet
+Sheperdigian
+Elizabeth
+Keyser
+Terry
+Eminhizer
+John
+Frum
+Merav
+Netz
+Brian
+LaMee
+Kitti
+Lertpiriyasuwat
+Jay
+Adams
+Jan
+Miksovsky
+Brenda
+Diaz
+Andrew
+Cencini
+Chris
+Norred
+Chris
+Okelberry
+Shelley
+Dyck
+Gabe
+Mares
+Mike
+Seamans
+Michael
+Raheem
+Gary
+Altman
+Charles
+Fitzgerald
+Ebru
+Ersan
+Sylvester
+Valdez
+Brian
+Goldstein
+Linda
+Meisner
+Betsy
+Stadick
+Magnus
+Hedlund
+Karan
+Khanna
+Mary
+Baker
+Kevin
+Homer
+Mihail
+Frintu
+Bonnie
+Kearney
+Fukiko
+Ogisu
+Hung-Fu
+Ting
+Gordon
+Hee
+Kimberly
+Zimmerman
+Kim
+Abercrombie
+Sandeep
+Kaliyath
+Prasanna
+Samarawickrama
+Frank
+Pellow
+Min
+Su
+Eric
+Brown
+Eric
+Kurjan
+Pat
+Coleman
+Maciej
+Dusza
+Erin
+Hagens
+Patrick
+Wedge
+Frank
+Martinez
+Ed
+Dudenhoefer
+Christopher
+Hill
+Patrick
+Cook
+Krishna
+Sunkammurali
+Lori
+Penor
+Danielle
+Tiedt
+Sootha
+Charncherngkha
+Michael
+Zwilling
+Randy
+Reeves
+John
+Kane
+Jack
+Creasey
+Olinda
+Turner
+Stuart
+Macrae
+Jo
+Berry
+Ben
+Miller
+Tom
+Vande Velde
+Ovidiu
+Cracium
+Annette
+Hill
+Janice
+Galvin
+Reinout
+Hillmann
+Michael
+Sullivan
+Stephen
+Jiang
+Wanida
+Benshoof
+Sharon
+Salavaria
+John
+Wood
+Mary
+Dempsey
+Brian
+Welcker
+Sheela
+Word
+Michael
+Blythe
+Linda
+Mitchell
+Jillian
+Carson
+Garrett
+Vargas
+Tsvi
+Reiter
+Pamela
+Ansman-Wolfe
+Shu
+Ito
+Jose
+Saraiva
+David
+Campbell
+Amy
+Alberts
+Jae
+Pak
+Ranjit
+Varkey Chudukatil
+Tete
+Mensa-Annan
+Syed
+Abbas
+Rachel
+Valdez
+Lynn
+Tsoflias
+Svetlin
+Nakov
+Martin
+Kulov
+George
+Denchev
 [/output]
 [/test]
 [/tests]
@@ -39401,6 +38466,8 @@ Extra Long
 
 ## Part 4 - Date Functions Queries
 
+For this task you will use the **orders** database, which you can [download]() here.
+
 ## Description
 
 You will receive an **orders (id, product_name, order_date)** table filled with data.
@@ -39657,180 +38724,376 @@ Make sure nothing got lost.
 [tests]
 [test open]
 [input]
-CREATE TABLE IF NOT EXISTS orders
-(
-id INT NOT NULL,
-product_name VARCHAR(50) NOT NULL,
-order_date DATETIME NOT NULL,
-CONSTRAINT pk_orders PRIMARY KEY (id)
+CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
+  `id` int(10) PRIMARY KEY,
+  `first_name` varchar(50),
+  `last_name` varchar(60),
+  `notes` text,
+  `age` int(10),
+  `magic_wand_creator` varchar(100),
+  `magic_wand_size` smallint(6),
+  `deposit_group` varchar(20),
+  `deposit_start_date` date,
+  `deposit_amount` decimal(8,2),
+  `deposit_interest` decimal(5,2),
+  `deposit_charge` decimal(8,2),
+  `deposit_expiration_date` date,
+  `is_deposit_expired` bit(1)
 );
 
-INSERT INTO orders (id, product_name, order_date) VALUES (1, 'Butter', '20160919');
-INSERT INTO orders (id, product_name, order_date) VALUES (2, 'Milk', '20160930');
-INSERT INTO orders (id, product_name, order_date) VALUES (3, 'Cheese', '20160904');
-INSERT INTO orders (id, product_name, order_date) VALUES (4, 'Bread', '20151220');
-INSERT INTO orders (id, product_name, order_date) VALUES (5, 'Tomatoes', '20150101');
-INSERT INTO orders (id, product_name, order_date) VALUES (6, 'Tomatoe2', '20150201');
-INSERT INTO orders (id, product_name, order_date) VALUES (7, 'Tomatoess', '20150401');
-INSERT INTO orders (id, product_name, order_date) VALUES (8, 'Tomatoe3', '20150128');
-INSERT INTO orders (id, product_name, order_date) VALUES (9, 'Tomatoe4', '20150628');
-INSERT INTO orders (id, product_name, order_date) VALUES (10, 'Tomatoe44s', '20150630');
-INSERT INTO orders (id, product_name, order_date) VALUES (11, 'Tomatoefggs', '20150228');
-INSERT INTO orders (id, product_name, order_date) VALUES (12, 'Tomatoesytu', '20160228');
-INSERT INTO orders (id, product_name, order_date) VALUES (13, 'Toyymatddoehys', '20151231');
-INSERT INTO orders (id, product_name, order_date) VALUES (14, 'Tom443atoes', '20151215');
-INSERT INTO orders (id, product_name, order_date) VALUES (15, 'Tomat65434foe23gfhgsPep', '20151004');
+INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
+	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry\'s year and member of Dumbledore\'s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
+	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 63, 'Ollivander family', 20, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1'),
+	(3, 'Ludo', 'Bagman', 'Quidditch Beater for the Wimbourne Wasps and Head of the Department of Magical Games and Sports within the Ministry of Magic', 19, 'Mykew Gregorovitch', 18, 'Venomous Tongue', '1990-07-04', 23190.94, 14.92, 30.00, '1990-12-27', b'0'),
+	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Jimmy Kiddell', 15, 'Blue Phoenix', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
+	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Arturo Cephalopos', 14, 'Troll Chest', '1981-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'1'),
+	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Death', 23, 'Human Pride', '1985-10-26', 11902.72, 24.84, 95.00, '1985-12-27', b'1'),
+	(7, 'Phineas', 'Nigellus', 'deceased great-great-grandfather of Sirius Black and former headmaster of Hogwarts, whose painting still hangs in the office and helps out the current headmaster.', 47, 'Mykew Gregorovitch', 18, 'Venomous Tongue', '1985-12-05', 11248.58, 12.31, 32.00, '1986-11-12', b'1'),
+	(8, 'Regulus', 'Arcturus', 'Late brother of Sirius Black, a Death Eater who had turned against Lord Voldemort.', 46, 'Ollivander family', 22, 'Blue Phoenix', '1989-05-31', 1173.12, 9.68, 56.00, '1989-10-13', b'0'),
+	(9, 'Sirius', 'Black', 'Harry Potter\'s godfather, a member of the Order of the Phoenix and prisoner on the run.', 25, 'Mykew Gregorovitch', 30, 'Troll Chest', '1993-08-29', 15793.54, 26.34, 17.00, '1994-05-21', b'0'),
+	(10, 'Amelia', 'Bones', 'Head of the Department of Magical Law Enforcement, aunt of Susan Bones.', 16, 'Antioch Peverell', 30, 'Human Pride', '1981-05-15', 18778.37, 7.85, 54.00, '1982-05-06', b'1'),
+	(11, 'Susan', 'Bones', 'Hufflepuff student in Harry\'s year, a member of Dumbledore\'s Army.', 72, 'Ollivander family', 11, 'Venomous Tongue', '1992-05-03', 26463.40, 30.54, 30.00, '1993-03-11', b'0'),
+	(12, 'Terry', 'Boot', 'Ravenclaw student in Harry\'s year, a member of Dumbledore\'s Army.', 69, 'Mykew Gregorovitch', 28, 'Blue Phoenix', '1989-09-09', 31029.60, 27.98, 10.00, '1990-02-15', b'0'),
+	(13, 'Lavender', 'Brown', 'Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army, briefly Ron Weasley\'s girlfriend.', 31, 'Jimmy Kiddell', 24, 'Troll Chest', '1992-03-26', 26572.86, 26.64, 94.00, '1992-08-21', b'0'),
+	(14, 'Millicent', 'Bulstrode', 'Slytherin student in Harry\'s year, a member of Umbridge\'s Inquisitorial Squad.', 65, 'Arturo Cephalopos', 17, 'Human Pride', '1988-08-16', 33309.81, 25.43, 44.00, '1988-08-21', b'1'),
+	(15, 'Charity', 'Burbage', 'Professor of Muggle Studies at Hogwarts during Harry\'s time at school.', 38, 'Death', 30, 'Venomous Tongue', '1994-07-21', 33508.64, 17.14, 31.00, '1995-04-06', b'0'),
+	(16, 'Frank', 'Bryce', 'Muggle gardener for the Riddle family.', 24, 'Antioch Peverell', 29, 'Blue Phoenix', '1991-12-20', 19955.71, 6.52, 30.00, '1992-07-22', b'0'),
+	(17, 'Alecto', 'Carrow', 'Sister of Amycus Carrow, Death Eater and professor of Muggle Studies for one year, Deputy Headmistress of Hogwarts under Severus Snape', 52, 'Jimmy Kiddell', 24, 'Troll Chest', '1982-03-28', 25434.21, 14.96, 36.00, '1982-09-17', b'1'),
+	(18, 'Amycus', 'Carrow', 'Brother of Alecto Carrow, Death Eater and professor of Defence Against the Dark Arts for one year, even though he changed it to just "Dark Arts", Deputy Headmaster of Hogwarts under Severus Snape', 23, 'Arturo Cephalopos', 30, 'Human Pride', '1988-04-18', 46943.10, 5.08, 6.00, '1988-08-05', b'1'),
+	(19, 'Reginald', 'Cattermole', 'Employee of the Magical Maintenance Department for the Ministry of Magic, impersonated by Ron Weasley', 25, 'Death', 28, 'Venomous Tongue', '1981-08-14', 39864.33, 15.75, 8.00, '1981-11-24', b'1'),
+	(20, 'Mary', 'Cattermole', 'Muggle-born wife of Reginald Cattermole, saved by Harry Potter from the Muggle-born Registration Commission.', 53, 'Antioch Peverell', 25, 'Blue Phoenix', '1981-08-18', 34176.09, 12.34, 71.00, '1982-04-21', b'1'),
+	(21, 'Cho', 'Chang', 'Ravenclaw student one year above Harry, Quidditch Seeker, member of Dumbledore\'s Army and Harry\'s first Love interest', 64, 'Ollivander family', 20, 'Troll Chest', '1984-01-31', 49964.03, 10.83, 53.00, '1984-03-29', b'1'),
+	(22, 'Penelope', 'Clearwater', 'Ravenclaw prefect and girlfriend of Percy Weasley', 58, 'Mykew Gregorovitch', 17, 'Human Pride', '1983-05-06', 5130.24, 11.04, 42.00, '1983-06-11', b'1'),
+	(23, 'Michael', 'Corner', 'Ravenclaw student in Harry\'s year, member of Dumbledore\'s Army', 56, 'Jimmy Kiddell', 15, 'Venomous Tongue', '1985-03-23', 23295.97, 20.97, 35.00, '1985-04-13', b'1'),
+	(24, 'Vincent', 'Crabbe,', 'Death Eater, father of Vincent Crabbe', 37, 'Arturo Cephalopos', 24, 'Blue Phoenix', '1993-03-30', 35436.82, 26.54, 17.00, '1993-04-07', b'0'),
+	(25, 'Vincent', 'Crabbe', 'Slytherin student in Harry\'s year, son of Death Eater, Slytherin Quidditch team Beater, a member of the Inquisitorial Squad, a friend of Draco Malfoy.', 37, 'Death', 12, 'Troll Chest', '1986-07-18', 8597.40, 20.09, 97.00, '1986-10-18', b'1'),
+	(26, 'Colin', 'Creevey', 'Muggle-born Gryffindor student one year below Harry, brother of Dennis Creevey, member of Dumbledore\'s Army, killed during the Battle of Hogwarts, after sneaking away from the younger evacuated students in the seventh book', 38, 'Antioch Peverell', 15, 'Human Pride', '1991-02-19', 27282.08, 11.82, 76.00, '1992-01-08', b'0'),
+	(27, 'Dennis', 'Creevey', 'Muggle-born Gryffindor student three years below Harry, brother of Colin Creevey, member of Dumbledore\'s Army', 61, 'Ollivander family', 24, 'Venomous Tongue', '1992-07-13', 10649.78, 1.77, 23.00, '1992-09-24', b'0'),
+	(28, 'Dirk', 'Cresswell', 'Muggle-born Head of the Goblin Liaison Office, went on the run in Deathly Hallows with fellow muggle-born Ted Tonks, Dean Thomas and goblins Gornuk and Griphook.', 65, 'Mykew Gregorovitch', 26, 'Blue Phoenix', '1985-02-14', 11481.54, 25.13, 23.00, '1985-04-22', b'1'),
+	(29, 'Bartemius', 'Barty', 'Head of the Department of International Magical Cooperation, killed by his son Barty Crouch Jr, Transfigurated into a bone before being buried', 48, 'Jimmy Kiddell', 20, 'Troll Chest', '1992-01-24', 11137.18, 3.48, 74.00, '1992-02-17', b'0'),
+	(30, 'Bartemius', 'Barty', 'Death Eater, credited with facilitating the return of Lord Voldemort, received a Dementor\'s Kiss, used Polyjuice Potion to impersonate Alastor Moody', 69, 'Arturo Cephalopos', 25, 'Human Pride', '1984-08-03', 615.09, 29.72, 36.00, '1984-11-18', b'1'),
+	(31, 'John', 'Dawlish', '', 30, 'Death', 19, 'Venomous Tongue', '1984-09-14', 45046.67, 9.80, 93.00, '1985-07-11', b'1'),
+	(32, 'Fleur', 'Delacour', 'French student who participated in the Triwizard Tournament representing Beauxbatons, later wed Bill Weasley.', 49, 'Antioch Peverell', 13, 'Blue Phoenix', '1982-07-24', 33063.59, 23.49, 67.00, '1982-12-08', b'1'),
+	(33, 'Gabrielle', 'Delacour', 'Younger sister of Fleur Delacour, saved by Harry in the Triwizard Tournament', 66, 'Ollivander family', 14, 'Troll Chest', '1993-11-24', 9488.33, 19.45, 22.00, '1994-06-21', b'0'),
+	(34, 'Dedalus', 'Diggle', 'Member of the Order of the Phoenix who took the Dursleys into hiding', 39, 'Mykew Gregorovitch', 26, 'Human Pride', '1980-10-10', 45456.26, 15.85, 85.00, '1981-06-02', b'1'),
+	(35, 'Amos', 'Diggory', 'Works for the Department for the Regulation and Control of Magical Creatures, father of Cedric Diggory', 54, 'Jimmy Kiddell', 17, 'Venomous Tongue', '1985-01-27', 17997.81, 9.87, 41.00, '1985-02-20', b'1'),
+	(36, 'Cedric', 'Diggory', 'Hufflepuff student two years above Harry, school prefect, Quidditch Seeker and captain, co-winner of the Triwizard Tournament', 19, 'Arturo Cephalopos', 27, 'Blue Phoenix', '1981-01-13', 16443.96, 1.12, 37.00, '1982-01-14', b'1'),
+	(37, 'Elphias', 'Doge', 'School friend of Albus Dumbledore', 59, 'Death', 24, 'Troll Chest', '1982-07-07', 32356.08, 9.68, 37.00, '1983-06-11', b'1'),
+	(38, 'Antonin', 'Dolohov', 'Death Eater who killed Fabian Prewett, Gideon Prewett, and Remus Lupin.', 28, 'Antioch Peverell', 23, 'Human Pride', '1991-02-28', 5585.72, 21.16, 36.00, '1991-04-16', b'0'),
+	(39, 'Aberforth', 'Dumbledore', 'Brother of Albus and Ariana Dumbledore, owner of the Hog\'s Head', 49, 'Ollivander family', 11, 'Venomous Tongue', '1991-04-02', 22349.31, 9.72, 81.00, '1992-02-21', b'0'),
+	(40, 'Albus', 'Dumbledore', 'Hogwarts Headmaster in Harry Potter\'s time, Transfiguration professor in Tom Riddle\'s time, founder of the Order of the Phoenix.', 50, 'Mykew Gregorovitch', 10, 'Blue Phoenix', '1992-12-18', 21106.66, 15.75, 93.00, '1993-12-07', b'0'),
+	(41, 'Ariana', 'Dumbledore', '', 27, 'Jimmy Kiddell', 22, 'Troll Chest', '1980-07-26', 27191.21, 11.67, 13.00, '1981-06-12', b'1'),
+	(42, 'Dudley', 'Dursley', 'Muggle son of Vernon Dursley and Petunia Evans, first cousin of Harry Potter', 15, 'Arturo Cephalopos', 29, 'Human Pride', '1994-10-07', 49767.47, 21.73, 40.00, '1995-04-01', b'0'),
+	(43, 'Marjorie', 'Marge', 'Muggle sister of Vernon Dursley, breeds bulldogs, her favourite one named Ripper.', 65, 'Death', 25, 'Venomous Tongue', '1994-01-05', 909.41, 13.29, 14.00, '1994-04-14', b'0'),
+	(44, 'Petunia', 'Dursley', 'Harry\'s aunt, the sister of his mother Lily. Married to Vernon Dursley and mother of Dudley Dursley', 27, 'Ollivander family', 12, 'Blue Phoenix', '1994-05-15', 36558.54, 19.54, 57.00, '1994-09-02', b'0'),
+	(45, 'Vernon', 'Dursley', 'Harry Potter\'s muggle uncle, married to his aunt Petunia and father of Dudley Dursley.', 22, 'Mykew Gregorovitch', 22, 'Troll Chest', '1983-07-28', 6498.38, 11.41, 44.00, '1984-01-08', b'1'),
+	(46, 'Marietta', 'Edgecombe', 'Ravenclaw student one year above Harry, member of Dumbledore\'s Army', 17, 'Jimmy Kiddell', 16, 'Human Pride', '1993-06-10', 13938.86, 9.44, 16.00, '1993-07-16', b'0'),
+	(47, 'Everard', '', 'Former Headmaster of Hogwarts, a particularly famous wizard, whose portrait hangs in many institutions, including the Ministry of Magic', 54, 'Arturo Cephalopos', 30, 'Venomous Tongue', '1984-03-31', 31293.40, 9.00, 77.00, '1984-08-31', b'1'),
+	(48, 'Arabella', 'Figg', 'Squib neighbour of the Dursleys\', member of the Order of the Phoenix.', 59, 'Death', 28, 'Blue Phoenix', '1986-05-09', 40953.48, 12.53, 71.00, '1986-05-15', b'1'),
+	(49, 'Argus', 'Filch', 'Squib caretaker of Hogwarts', 67, 'Ollivander family', 10, 'Troll Chest', '1982-07-12', 21519.32, 6.94, 28.00, '1983-01-18', b'1'),
+	(50, 'Justin', 'Finch-Fletchley', 'Muggle-born Hufflepuff student in Harry\'s year, a member of Dumbledore\'s Army.', 61, 'Mykew Gregorovitch', 28, 'Human Pride', '1987-04-02', 40613.55, 0.93, 67.00, '1987-04-04', b'1'),
+	(51, 'Seamus', 'Finnigan', 'Irish Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army best friend of Dean Thomas.', 35, 'Jimmy Kiddell', 25, 'Venomous Tongue', '1993-12-26', 43680.93, 30.44, 66.00, '1994-07-08', b'0'),
+	(52, 'Marcus', 'Flint', 'Slytherin sixth year Quidditch captain', 57, 'Arturo Cephalopos', 30, 'Blue Phoenix', '1988-02-06', 346.16, 30.17, 20.00, '1988-07-31', b'1'),
+	(53, 'Nicolas', 'Flamel', 'alchemist, the only known creator of the Philosopher\'s Stone.', 42, 'Death', 27, 'Troll Chest', '1990-01-02', 31483.33, 23.72, 26.00, '1990-08-27', b'0'),
+	(54, 'Mundungus', 'Fletcher', 'Common thief and shifty member of the Order of the Phoenix', 73, 'Antioch Peverell', 29, 'Human Pride', '1993-11-02', 42130.06, 17.24, 68.00, '1994-03-21', b'0'),
+	(55, 'Filius', 'Flitwick', 'Charms professor at Hogwarts and Head of Ravenclaw', 34, 'Ollivander family', 28, 'Venomous Tongue', '1990-07-14', 33656.19, 21.72, 24.00, '1990-08-17', b'0'),
+	(56, 'Cornelius', 'Fudge', 'Minister for Magic in the first five books, sacked when he denied Lord Voldemort\'s return for a year.', 15, 'Mykew Gregorovitch', 22, 'Blue Phoenix', '1990-03-08', 48394.70, 1.00, 46.00, '1991-02-06', b'0'),
+	(57, 'Marvolo', 'Gaunt', 'Pure-blood father of Merope and Morfin Gaunt, grandfather of Tom Marvolo Riddle.', 41, 'Antioch Peverell', 14, 'Troll Chest', '1981-04-12', 22895.49, 0.15, 89.00, '1981-09-20', b'1'),
+	(58, 'Merope', 'Gaunt', 'Daughter of Marvolo Gaunt, sister of Morfin Gaunt, wife of Tom Riddle Sr, mother of Tom Marvolo Riddle/Lord Voldemort, died after childbirth, named for Merope, one of the Pleiades, who married a mortal\[1\]', 15, 'Ollivander family', 25, 'Human Pride', '1992-03-13', 20809.21, 18.62, 19.00, '1993-02-08', b'0'),
+	(59, 'Morfin', 'Gaunt', 'Son of Marvolo Gaunt, brother of Merope Gaunt, uncle of Tom Marvolo Riddle, framed by his nephew for Muggle killings.', 45, 'Mykew Gregorovitch', 25, 'Venomous Tongue', '1994-05-03', 33175.63, 20.71, 14.00, '1995-03-24', b'0'),
+	(60, 'Anthony', 'Goldstein', 'Ravenclaw student in Harry\'s year, member of Dumbledore\'s Army', 34, 'Jimmy Kiddell', 26, 'Blue Phoenix', '1980-05-11', 5264.16, 29.66, 4.00, '1980-05-22', b'1'),
+	(61, 'Goyle', 'Sr', 'Death Eater, father of Gregory Goyle', 65, 'Arturo Cephalopos', 31, 'Troll Chest', '1981-05-01', 42520.28, 4.72, 75.00, '1982-03-30', b'1'),
+	(62, 'Gregory', 'Goyle', 'Slytherin student in Harry\'s year, Slytherin Quidditch Beater, a member of the Inquisitorial Squad.', 51, 'Death', 25, 'Human Pride', '1983-04-06', 22014.91, 21.61, 33.00, '1984-02-20', b'1'),
+	(63, 'Hermione', 'Granger', 'Muggle-born Gryffindor student in Harry\'s year, one of Harry\'s best friends, founder of Dumbledore\'s Army, Gryffindor Prefect', 18, 'Antioch Peverell', 16, 'Venomous Tongue', '1980-11-17', 20232.87, 17.54, 27.00, '1981-01-13', b'1'),
+	(64, 'Gregorovitch', '', 'highly regarded East European wand-maker.', 28, 'Death', 22, 'Blue Phoenix', '1992-07-18', 44377.51, 22.05, 80.00, '1992-09-01', b'0'),
+	(65, 'Fenrir', 'Greyback', 'Werewolf, infected Remus Lupin, maimed Bill Weasley and wounded Lavender Brown.', 72, 'Antioch Peverell', 11, 'Troll Chest', '1991-09-05', 15747.72, 18.22, 94.00, '1992-05-21', b'0'),
+	(66, 'Gellert', 'Grindelwald', 'Dark Wizard, friend, and later rival, of Albus Dumbledore who defeated him in the 1940s.', 52, 'Ollivander family', 20, 'Human Pride', '1985-04-16', 12681.80, 14.28, 19.00, '1985-12-27', b'1'),
+	(67, 'Wilhelmina', 'Grubbly-Plank', 'Substitute Care of Magical Creatures professor during Harry\'s fourth year', 29, 'Mykew Gregorovitch', 18, 'Venomous Tongue', '1980-08-19', 21263.21, 5.66, 76.00, '1980-08-21', b'1'),
+	(68, 'Godric', 'Gryffindor', 'One of the four founders of Hogwarts', 24, 'Jimmy Kiddell', 16, 'Blue Phoenix', '1991-06-06', 30425.03, 22.28, 89.00, '1991-09-13', b'0'),
+	(69, 'Rubeus', 'Hagrid', 'Half-giant keeper of Keys and Grounds at Hogwarts, Care of Magical Creatures professor starting from Harry\'s third year, a member of the Order of the Phoenix. Once a Hogwarts student, Hagrid was expelled in his third year.', 15, 'Death', 14, 'Troll Chest', '1983-02-04', 29087.26, 19.94, 94.00, '1983-02-18', b'1'),
+	(70, 'Rolanda', 'Hooch', 'Hogwarts flying instructor, Quidditch referee', 38, 'Antioch Peverell', 29, 'Human Pride', '1989-05-05', 30985.51, 8.64, 33.00, '1989-07-03', b'0'),
+	(71, 'Mafalda', 'Hopkirk', 'Witch who works in the Ministry of Magic, impersonated by Hermione Granger in Deathly Hallows.', 63, 'Ollivander family', 23, 'Venomous Tongue', '1980-08-27', 39189.95, 12.73, 46.00, '1981-07-26', b'1'),
+	(72, 'Helga', 'Hufflepuff', 'One of the four founders of Hogwarts, ancestor of Hepzibah Smith', 72, 'Mykew Gregorovitch', 16, 'Blue Phoenix', '1987-02-12', 25971.83, 23.85, 74.00, '1987-06-02', b'1'),
+	(73, 'Angelina', 'Johnson', 'Gryffindor student two years above Harry, Quidditch Chaser and later captain', 70, 'Jimmy Kiddell', 21, 'Troll Chest', '1984-04-04', 17479.62, 3.20, 39.00, '1984-08-25', b'1'),
+	(74, 'Lee', 'Jordan', 'Gryffindor student two years above Harry, Hogwarts Quidditch commentator, good friend of Fred and George Weasley at Hogwarts', 67, 'Arturo Cephalopos', 26, 'Human Pride', '1994-07-28', 11937.54, 17.30, 39.00, '1994-12-23', b'0'),
+	(75, 'Bertha', 'Jorkins', '', 58, 'Death', 11, 'Venomous Tongue', '1987-07-25', 42482.75, 30.46, 51.00, '1988-03-20', b'1'),
+	(76, 'Igor', 'Karkaroff', 'Reformed Death Eater, Headmaster of Durmstrang.', 31, 'Mykew Gregorovitch', 25, 'Blue Phoenix', '1986-12-30', 21847.43, 12.66, 88.00, '1987-09-24', b'1'),
+	(77, 'Viktor', 'Krum', 'Durmstrang student, Bulgarian Quidditch Seeker, participated in the Triwizard Tournament.', 37, 'Jimmy Kiddell', 28, 'Troll Chest', '1980-12-28', 31596.15, 21.29, 35.00, '1981-09-02', b'1'),
+	(78, 'Bellatrix', 'Lestrange', 'Death Eater, sister of Narcissa Malfoy and Andromeda Tonks, cousin of Sirius and Regulus Black, she tortured Frank and Alice Longbottom into insanity.', 14, 'Arturo Cephalopos', 12, 'Human Pride', '1983-05-09', 37635.01, 5.85, 43.00, '1983-08-21', b'1'),
+	(79, 'Rabastan', 'Lestrange', 'Death Eater, brother of Rodolphus Lestrange', 55, 'Death', 29, 'Venomous Tongue', '1984-10-22', 39468.45, 23.33, 69.00, '1985-04-23', b'1'),
+	(80, 'Rodolphus', 'Lestrange', 'Death Eater, brother of Rabastan Lestrange, husband of Bellatrix Lestrange', 71, 'Antioch Peverell', 23, 'Blue Phoenix', '1982-03-26', 1302.18, 0.02, 75.00, '1982-08-25', b'1'),
+	(81, 'Gilderoy', 'Lockhart', 'Fraudulent celebrity author, Defence Against the Dark Arts teacher.', 60, 'Death', 18, 'Troll Chest', '1980-10-19', 15745.69, 23.18, 16.00, '1981-07-06', b'1'),
+	(82, 'Alice', 'Longbottom', 'Wife of Frank Longbottom, mother of Neville Longbottom, member of the original Order of the Phoenix, Auror, tortured into insanity by Bellatrix Lestrange along with her husband', 40, 'Antioch Peverell', 17, 'Human Pride', '1985-01-26', 4817.78, 29.58, 79.00, '1985-02-10', b'1'),
+	(83, 'Augusta', 'Longbottom', 'Mother of Frank Longbottom and grandmother of Neville Longbottom', 29, 'Ollivander family', 22, 'Venomous Tongue', '1982-08-17', 28036.29, 16.55, 87.00, '1983-07-27', b'1'),
+	(84, 'Frank', 'Longbottom', 'Father of Neville Longbottom, a member of the original Order of the Phoenix, Auror, tortured into insanity by Bellatrix Lestrange along with his wife.', 24, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1991-06-23', 31439.10, 11.55, 57.00, '1991-09-09', b'0'),
+	(85, 'Neville', 'Longbottom', 'Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army.', 47, 'Jimmy Kiddell', 20, 'Troll Chest', '1992-07-19', 1369.52, 21.04, 1.00, '1993-05-13', b'0'),
+	(86, 'Luna', 'Lovegood', 'Ravenclaw student one year below Harry, a member of Dumbledore\'s Army.', 14, 'Arturo Cephalopos', 21, 'Human Pride', '1986-12-21', 9014.64, 2.83, 24.00, '1987-10-29', b'1'),
+	(87, 'Xenophilius', 'Lovegood', 'Father of Luna Lovegood, and editor of The Quibbler.', 25, 'Death', 16, 'Venomous Tongue', '1992-08-09', 5908.36, 6.99, 1.00, '1992-11-19', b'0'),
+	(88, 'Remus', 'Lupin', 'Gryffindor student before Harry\'s time, Marauder, a friend of James Potter, werewolf, Professor of Defence Against the Dark Arts in Harry\'s third year, a member of the Order of the Phoenix.', 19, 'Death', 11, 'Blue Phoenix', '1982-05-08', 17821.66, 19.64, 45.00, '1982-06-04', b'1'),
+	(89, 'Walden', 'Macnair', 'The Committee of Disposal of Dangerous Creatures\'s executioner, also a Death-Eater', 48, 'Antioch Peverell', 29, 'Troll Chest', '1986-09-22', 23216.19, 29.39, 46.00, '1986-11-01', b'1'),
+	(90, 'Draco', 'Malfoy', 'Slytherin student in Harry\'s year, Slytherin Quidditch Seeker, school prefect, member of the Inquisitorial Squad, Death Eater', 18, 'Ollivander family', 14, 'Human Pride', '1989-12-02', 33253.04, 8.37, 7.00, '1990-05-07', b'0'),
+	(91, 'Lucius', 'Malfoy', 'Draco Malfoy\'s father, an influential Death-Eater, and, early in the series, governor of Hogwarts', 25, 'Mykew Gregorovitch', 22, 'Venomous Tongue', '1981-07-29', 36572.61, 2.45, 5.00, '1981-11-19', b'1'),
+	(92, 'Narcissa', 'Malfoy', 'Lucius Malfoy\'s wife and Draco Malfoy\'s mother, sister of Bellatrix Lestrange.', 17, 'Jimmy Kiddell', 18, 'Blue Phoenix', '1988-06-16', 1169.86, 25.09, 98.00, '1988-07-17', b'1'),
+	(93, 'Madam', 'Malkin', 'Clothes shop owner at Diagon Alley', 23, 'Arturo Cephalopos', 15, 'Troll Chest', '1985-07-17', 40137.28, 8.17, 45.00, '1986-06-13', b'1'),
+	(94, 'Olympe', 'Maxime', 'Half-giantess, Headmistress of Beauxbatons', 56, 'Death', 22, 'Human Pride', '1986-02-22', 27473.95, 22.31, 39.00, '1986-05-22', b'1'),
+	(95, 'Ernie', 'Macmillan', 'Hufflepuff student in Harry\'s year, school prefect, member of Dumbledore\'s Army', 63, 'Arturo Cephalopos', 13, 'Venomous Tongue', '1989-04-15', 18960.62, 13.15, 22.00, '1989-12-12', b'0'),
+	(96, 'Minerva', 'McGonagall', 'Hogwarts Transfiguration professor, Head of Gryffindor House, Deputy Headmistress of Hogwarts, a member of the Order of the Phoenix.', 29, 'Death', 16, 'Blue Phoenix', '1988-07-08', 7298.35, 15.19, 39.00, '1988-12-24', b'1'),
+	(97, 'Alastor', 'Mad-Eye', 'Retired Auror, member of the Order of the Phoenix, impersonated by Barty Crouch Jr. in \'The Goblet of Fire\'', 27, 'Mykew Gregorovitch', 21, 'Troll Chest', '1987-02-17', 8294.06, 18.27, 90.00, '1988-01-08', b'1'),
+	(98, 'Theodore', 'Nott', 'Slytherin student in the same year as Harry Potter. Nott is one of the few students who can see Thestrals, suggesting that he has witnessed a death at some point. His father is a Death Eater and described as an elderly widower.', 17, 'Jimmy Kiddell', 26, 'Human Pride', '1982-01-20', 49041.09, 26.22, 15.00, '1982-04-14', b'1'),
+	(99, 'Garrick', 'Ollivander', 'Wandmaker, owner of Ollivanders shop.', 72, 'Arturo Cephalopos', 27, 'Venomous Tongue', '1994-07-01', 41627.25, 30.61, 22.00, '1994-10-11', b'0'),
+	(100, 'Pansy', 'Parkinson', 'Slytherin student in Harry\'s year, school prefect, a member of the Inquisitorial Squad, Draco Malfoy\'s girlfriend for some time.', 35, 'Death', 21, 'Blue Phoenix', '1994-01-20', 11941.54, 29.19, 71.00, '1994-05-29', b'0'),
+	(101, 'Padma', 'Patil', 'Ravenclaw student in Harry\'s year, identical twin sister of Gryffindor Parvati Patil, a member of Dumbledore\'s Army.', 37, 'Antioch Peverell', 22, 'Troll Chest', '1980-05-09', 26117.57, 9.05, 47.00, '1981-03-30', b'1'),
+	(102, 'Parvati', 'Patil', 'Gryffindor student in Harry\'s year, identical twin sister of Ravenclaw Padma Patil, a member of Dumbledore\'s Army.', 55, 'Death', 25, 'Human Pride', '1990-01-12', 11798.51, 1.00, 71.00, '1990-03-19', b'0'),
+	(103, 'Peter', 'Pettigrew', 'Former school friend of James Potter, Sirius Black and Remus Lupin. Betrays James and Lily Potter. Death Eater, an unregistered animagus, Pettigrew is first introduced as a rat known as Scabbers.', 41, 'Jimmy Kiddell', 29, 'Venomous Tongue', '1993-03-12', 43424.70, 19.06, 87.00, '1993-07-06', b'0'),
+	(104, 'Antioch', 'Peverell', 'Original owner of The Elder Wand in The Tale of the Three Brothers.', 49, 'Arturo Cephalopos', 26, 'Blue Phoenix', '1989-01-19', 36394.90, 20.56, 18.00, '1989-08-09', b'0'),
+	(105, 'Cadmus', 'Peverell', 'Original owner of The Resurrection Stone in The Tale of the Three Brothers', 36, 'Death', 20, 'Troll Chest', '1983-12-16', 22327.50, 30.46, 82.00, '1984-03-20', b'1'),
+	(106, 'Ignotus', 'Peverell', 'Original owner of The Invisibility Cloak in The Tale of the Three Brothers.', 43, 'Ollivander family', 29, 'Human Pride', '1983-06-10', 35261.39, 9.39, 68.00, '1983-10-05', b'1'),
+	(107, 'Irma', 'Pince', 'Hogwarts librarian', 19, 'Mykew Gregorovitch', 17, 'Venomous Tongue', '1984-05-03', 12766.45, 17.02, 85.00, '1984-08-05', b'1'),
+	(108, 'Sturgis', 'Podmore', 'Member of the Order of the Phoenix, imprisoned in Azkaban', 64, 'Jimmy Kiddell', 24, 'Blue Phoenix', '1980-04-07', 22485.06, 15.05, 67.00, '1981-03-22', b'1'),
+	(109, 'Poppy', 'Pomfrey', 'Hogwarts school nurse', 32, 'Arturo Cephalopos', 23, 'Troll Chest', '1988-04-19', 27957.52, 6.77, 68.00, '1988-06-12', b'1'),
+	(110, 'Harry', 'Potter', 'Main character of the series, son of James Potter and Lily Evans, Gryffindor student, Gryffindor Quidditch Seeker and captain, leader of Dumbledore\'s Army.', 68, 'Death', 18, 'Human Pride', '1986-09-21', 44889.88, 23.09, 10.00, '1986-11-15', b'1'),
+	(111, 'James', 'Potter', 'Harry Potter\'s father, a member of the Order of the Phoenix, murdered by Lord Voldemort before the series begins.', 47, 'Ollivander family', 31, 'Venomous Tongue', '1993-06-16', 27296.66, 1.22, 86.00, '1993-11-16', b'0'),
+	(112, 'Lily', 'Potter', 'Harry Potter\'s mother, a member of the Order of the Phoenix, murdered by Lord Voldemort before the series begins.', 28, 'Antioch Peverell', 13, 'Blue Phoenix', '1984-02-27', 21972.24, 26.11, 49.00, '1984-06-16', b'1'),
+	(113, 'Ernest', 'Ernie', '(fl. 1993-1997), also called Ern by Stanley Shunpike, was the driver of the Knight Bus.', 58, 'Ollivander family', 20, 'Troll Chest', '1991-11-05', 11948.37, 16.85, 99.00, '1992-07-10', b'0'),
+	(114, 'Quirinus', 'Quirrell', 'Defence Against the Dark Arts professor in Harry\'s first year, possessed by Lord Voldemort in Philosopher\'s Stone.', 34, 'Mykew Gregorovitch', 15, 'Human Pride', '1992-10-17', 13212.49, 5.67, 55.00, '1992-12-26', b'0'),
+	(115, 'Helena', 'Ravenclaw/The', 'Daughter of Rowena Ravenclaw, stole her mother\'s diadem and hid it, killed by the Bloody Baron and became Ravenclaw\'s house ghost.', 62, 'Jimmy Kiddell', 18, 'Venomous Tongue', '1985-10-13', 1238.51, 10.17, 57.00, '1985-12-30', b'1'),
+	(116, 'Rowena', 'Ravenclaw', 'Co-founder of Hogwarts, mother of Helena Ravenclaw', 40, 'Arturo Cephalopos', 28, 'Blue Phoenix', '1994-10-16', 16236.00, 11.11, 26.00, '1995-04-25', b'0'),
+	(117, 'Mary', 'Riddle', 'Muggle wife of Thomas Riddle, mother of Tom Riddle Sr, mother-in-law of Merope Gaunt, grandmother of Tom Marvolo Riddle/Lord Voldemort, killed by her grandson', 24, 'Death', 12, 'Troll Chest', '1982-06-14', 43375.01, 23.97, 82.00, '1982-08-30', b'1'),
+	(118, 'Thomas', 'Riddle', 'Muggle husband of Mary Riddle, father of Tom Riddle Sr, grandfather of Tom Marvolo Riddle/Lord Voldemort, killed by his grandson.', 36, 'Arturo Cephalopos', 28, 'Human Pride', '1989-05-14', 24304.57, 21.47, 86.00, '1989-12-04', b'0'),
+	(119, 'Tom', 'Riddle', 'Muggle husband of Merope Gaunt, father of Tom Marvolo Riddle/Lord Voldemort, son of Thomas and Mary Riddle, killed by his son', 26, 'Death', 23, 'Venomous Tongue', '1990-04-22', 44456.65, 25.24, 76.00, '1990-08-03', b'0'),
+	(120, 'Tom', 'Marvolo', 'see Lord Voldemort', 33, 'Mykew Gregorovitch', 30, 'Blue Phoenix', '1986-05-20', 23897.12, 29.66, 23.00, '1987-01-27', b'1'),
+	(121, 'Demelza', 'Robins', '', 45, 'Mykew Gregorovitch', 24, 'Troll Chest', '1988-09-19', 8523.42, 5.34, 40.00, '1989-02-21', b'0'),
+	(122, 'Augustus', 'Rookwood', 'Death Eater, spy working in the Department of Mysteries', 26, 'Death', 28, 'Human Pride', '1994-12-06', 43137.27, 13.09, 61.00, '1995-01-01', b'0'),
+	(123, 'Albert', 'Runcorn', '', 23, 'Jimmy Kiddell', 12, 'Venomous Tongue', '1982-12-06', 47140.32, 3.77, 35.00, '1983-01-13', b'1'),
+	(124, 'Scabior', '', 'Snatcher who captures Harry Potter, Ron Weasley and Hermione Granger in Deathly Hallows.', 23, 'Arturo Cephalopos', 21, 'Blue Phoenix', '1992-06-06', 25342.73, 14.88, 27.00, '1993-05-07', b'0'),
+	(125, 'Newt', 'Scamander', 'Author of Fantastic Beasts and Where to Find Them, among other books. Headmaster and, Hufflepuff student at Hogwarts.', 49, 'Death', 24, 'Troll Chest', '1988-02-08', 36247.69, 28.85, 22.00, '1988-12-31', b'1'),
+	(126, 'Rufus', 'Scrimgeour', 'Head of the Auror Office, replaces Cornelius Fudge as Minister for Magic.', 61, 'Ollivander family', 13, 'Human Pride', '1987-07-31', 39764.02, 25.14, 10.00, '1988-04-03', b'1'),
+	(127, 'Kingsley', 'Shacklebolt', 'Auror, replaces Pius Thicknesse as Minister for Magic, member of the Order of the Phoenix', 33, 'Mykew Gregorovitch', 26, 'Venomous Tongue', '1992-03-06', 31218.37, 8.53, 42.00, '1993-01-30', b'0'),
+	(128, 'Stan', 'Shunpike', 'Conductor of the Knight Bus, later jailed in Azkaban on suspicions of being a death-eater.', 30, 'Jimmy Kiddell', 22, 'Blue Phoenix', '1992-09-21', 19775.78, 0.14, 61.00, '1992-12-07', b'0'),
+	(129, 'Aurora', 'Sinistra', 'Professor and member of the Astronomy Department at Hogwarts, a witch with dark skin, hair, and eyes.', 47, 'Arturo Cephalopos', 22, 'Troll Chest', '1991-06-28', 17257.17, 30.67, 45.00, '1992-01-25', b'0'),
+	(130, 'Rita', 'Skeeter', 'Reporter for the Daily Prophet, author of The Life and Lies of Albus Dumbledore, unregistered animagus.', 38, 'Death', 13, 'Human Pride', '1990-04-18', 22876.54, 17.02, 3.00, '1990-07-06', b'0'),
+	(131, 'Horace', 'Slughorn', 'Former Potions professor at Hogwarts and Head of Slytherin House who taught Tom Marvolo Riddle and returns to Hogwarts in Harry\'s sixth year.', 32, 'Ollivander family', 10, 'Venomous Tongue', '1986-10-30', 19165.02, 7.95, 76.00, '1987-09-27', b'1'),
+	(132, 'Salazar', 'Slytherin', 'Co-founder of Hogwarts, Parseltongue, ancestor of the Gaunt family and Lord Voldemort.', 59, 'Antioch Peverell', 28, 'Blue Phoenix', '1980-10-26', 1168.22, 26.55, 71.00, '1981-01-30', b'1'),
+	(133, 'Hepzibah', 'Smith', 'Elderly, wealthy antique collector, descendant of Helga Hufflepuff, murdered and robbed by Tom Marvolo Riddle', 30, 'Ollivander family', 12, 'Troll Chest', '1983-05-25', 33665.13, 7.98, 21.00, '1983-08-17', b'1'),
+	(134, 'Zacharias', 'Smith', 'Hufflepuff student, a member of Dumbledore\'s Army.', 39, 'Antioch Peverell', 15, 'Human Pride', '1985-12-01', 45543.40, 24.78, 98.00, '1986-10-29', b'1'),
+	(135, 'Severus', 'Snape', 'Hogwarts, Potions and later Defence Against the Dark Arts professor, Head of Slytherin House, a member of both the Death Eaters and the Order of the Phoenix.', 53, 'Mykew Gregorovitch', 15, 'Venomous Tongue', '1992-11-06', 17820.90, 16.53, 38.00, '1992-12-20', b'0'),
+	(136, 'Alicia', 'Spinnet', 'Chaser on the Gryffindor Quidditch team, two years above Harry Potter at Hogwarts. Member of Dumbledore\'s Army.', 65, 'Jimmy Kiddell', 16, 'Blue Phoenix', '1980-02-06', 6269.39, 3.66, 77.00, '1980-03-04', b'1'),
+	(137, 'Pomona', 'Sprout', 'Hogwarts Herbology professor, Head of Hufflepuff House.', 46, 'Arturo Cephalopos', 24, 'Troll Chest', '1993-06-10', 16789.73, 30.80, 58.00, '1993-10-07', b'0'),
+	(138, 'Pius', 'Thicknesse', 'Minister for Magic while under the Imperius Curse, later replaced by Kingsley Shacklebolt.', 47, 'Death', 24, 'Human Pride', '1982-06-01', 8359.46, 26.64, 59.00, '1983-01-04', b'1'),
+	(139, 'Dean', 'Thomas', 'Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army, briefly Ginny Weasley\'s boyfriend, Gryffindor Quidditch Chaser.', 69, 'Antioch Peverell', 18, 'Venomous Tongue', '1992-12-04', 6579.08, 7.43, 69.00, '1993-04-09', b'0'),
+	(140, 'Andromeda', 'Tonks', 'Sister of Bellatrix Lestrange and Narcissa Malfoy, disowned by her family for marrying Muggle-born Ted Tonks, mother of Nymphadora Tonks.', 68, 'Death', 28, 'Blue Phoenix', '1993-02-18', 30024.64, 8.80, 36.00, '1993-06-14', b'0'),
+	(141, 'Nymphadora', 'Tonks', 'Daughter of Ted and Andromeda Tonks, Auror and member of the Order of the Phoenix. She marries Remus Lupin, and become the mother of Teddy Lupin.', 18, 'Jimmy Kiddell', 13, 'Troll Chest', '1982-11-25', 16724.98, 22.83, 37.00, '1983-09-21', b'1'),
+	(142, 'Ted', 'Tonks', 'Muggle-born husband of Andromeda and father of Nymphadora Tonks.', 19, 'Arturo Cephalopos', 13, 'Human Pride', '1984-03-07', 39096.67, 25.20, 82.00, '1984-10-04', b'1'),
+	(143, 'Travers', '', '', 53, 'Death', 24, 'Venomous Tongue', '1984-01-05', 25085.58, 1.95, 91.00, '1984-05-27', b'1'),
+	(144, 'Sybill', 'Patricia', 'Hogwarts Divination professor, predicted the prophecy that prompted Lord Voldemort to go after the Potters', 25, 'Ollivander family', 17, 'Blue Phoenix', '1994-07-05', 15237.30, 7.31, 21.00, '1994-07-21', b'0'),
+	(145, 'Dolores', 'Jane', 'Senior Undersecretary to the Minister for Magic, Defence Against the Dark Arts professor, Hogwarts High Inquisitor, Headmistress of Hogwarts, who enthusiastically joins in the persecution of half-bloods under Voldermort.', 34, 'Mykew Gregorovitch', 30, 'Troll Chest', '1982-09-25', 10628.58, 12.08, 50.00, '1983-01-22', b'1'),
+	(146, 'Emmeline', 'Vance', 'a member of the party that brings Harry to Grimmauld Place, a member of the Order of the Phoenix. Described as "A stately looking witch in an emerald green shawl".', 57, 'Jimmy Kiddell', 25, 'Human Pride', '1992-10-30', 34993.10, 29.94, 82.00, '1992-11-03', b'0'),
+	(147, 'Romilda', 'Vane', 'Hogwarts student who tried to romance Harry with Chocolate Cauldrons containing a love potion from Weasley\'s Wizard Wheezes', 17, 'Mykew Gregorovitch', 16, 'Venomous Tongue', '1983-09-06', 26267.34, 16.63, 100.00, '1984-04-15', b'1'),
+	(148, 'Septima', 'Vector', 'Arithmancy professor at Hogwarts.', 43, 'Arturo Cephalopos', 26, 'Blue Phoenix', '1981-01-23', 6146.94, 6.57, 66.00, '1982-01-22', b'1'),
+	(149, 'Lord', 'Voldemort', 'The villain of the series, the murderer of Harry Potter\'s parents and many others in his quest for immortality and absolute power.', 25, 'Death', 31, 'Troll Chest', '1989-04-28', 38085.84, 22.53, 88.00, '1989-08-01', b'0'),
+	(150, 'Arthur', 'Weasley', 'Muggle-obsessed Ministry of Magic employee. Husband of Molly Weasley, father of Bill, Charlie, Percy, Fred, George, Ron, and Ginny Weasley, member of the Order of the Phoenix', 65, 'Antioch Peverell', 26, 'Human Pride', '1989-09-05', 6647.70, 15.82, 23.00, '1989-09-28', b'0'),
+	(151, 'Bill', 'Weasley', 'Oldest son of Arthur and Molly Weasley, Gringotts employee.', 51, 'Death', 30, 'Venomous Tongue', '1988-04-01', 11346.57, 2.63, 98.00, '1988-08-03', b'1'),
+	(152, 'Charlie', 'Weasley', 'Second son of Arthur and Molly Weasley, and a member of the Order of the Phoenix, works with dragons in Romania.', 21, 'Jimmy Kiddell', 16, 'Blue Phoenix', '1988-11-14', 7831.46, 26.31, 20.00, '1989-07-26', b'0'),
+	(153, 'Fred', 'Weasley', 'Son of Arthur and Molly Weasley and identical twin brother of George Weasley, a member of Dumbledore\'s Army, Gryffindor Quidditch Beater, co-owner of Weasleys\' Wizard Wheezes, killed in an explosion caused by Augustus Rookwood in the Battle of Hogwarts.', 48, 'Arturo Cephalopos', 18, 'Troll Chest', '1992-02-22', 23860.37, 28.37, 39.00, '1992-05-06', b'0'),
+	(154, 'George', 'Weasley', 'Son of Arthur and Molly Weasley and identical twin brother of Fred Weasley, member of Dumbledore\'s Army, Gryffindor Quidditch Beater, co-owner of Weasleys\' Wizard Wheezes, marries Angelina Johnson', 48, 'Death', 13, 'Human Pride', '1994-11-16', 16556.88, 2.82, 19.00, '1994-12-13', b'0'),
+	(155, 'Ginny', 'Weasley', 'Only daughter and youngest child of Arthur and Molly Weasley, Gryffindor student one year under Harry, Gryffindor Quidditch Seeker and Chaser, a member of Dumbledore\'s Army.', 47, 'Ollivander family', 12, 'Venomous Tongue', '1990-03-21', 9347.41, 28.27, 78.00, '1990-03-31', b'0'),
+	(156, 'Molly', 'Weasley', 'Wife of Arthur Weasley, mother of Bill, Charlie, Percy, Fred, George, Ron and Ginny Weasley, a member of the Order of the Phoenix.', 14, 'Mykew Gregorovitch', 18, 'Blue Phoenix', '1992-02-03', 39815.04, 9.43, 53.00, '1992-08-30', b'0'),
+	(157, 'Percy', 'Weasley', 'Third son of Arthur and Molly Weasley, Gryffindor prefect and Head Boy then Ministry of Magic employee, long estranged from his family before joining them against the Death Eaters in Deathly Hallows,', 54, 'Arturo Cephalopos', 14, 'Troll Chest', '1985-04-24', 25537.20, 3.05, 12.00, '1985-05-16', b'1'),
+	(158, 'Ron', 'Weasley', 'Harry\'s close friend, youngest Son of Arthur and Molly Weasley, Gryffindor Quidditch Keeper, school prefect, a member of Dumbledore\'s Army.', 51, 'Death', 26, 'Human Pride', '1985-07-16', 4085.37, 25.25, 32.00, '1985-09-29', b'1'),
+	(159, 'Oliver', 'Wood', 'Hogwarts student, Gryffindor Quidditch Keeper and captain.', 26, 'Ollivander family', 10, 'Venomous Tongue', '1985-06-29', 40902.03, 10.82, 68.00, '1985-08-01', b'1'),
+	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
+	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort\'s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
+	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry\'s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
 [/input]
 [output]
-Butter
-2016-09-19 00:00:00
-2016-09-22 00:00:00
-2016-10-19 00:00:00
-Milk
-2016-09-30 00:00:00
-2016-10-03 00:00:00
-2016-10-30 00:00:00
-Cheese
-2016-09-04 00:00:00
-2016-09-07 00:00:00
-2016-10-04 00:00:00
-Bread
-2015-12-20 00:00:00
-2015-12-23 00:00:00
-2016-01-20 00:00:00
-Tomatoes
-2015-01-01 00:00:00
-2015-01-04 00:00:00
-2015-02-01 00:00:00
-Tomatoe2
-2015-02-01 00:00:00
-2015-02-04 00:00:00
-2015-03-01 00:00:00
-Tomatoess
-2015-04-01 00:00:00
-2015-04-04 00:00:00
-2015-05-01 00:00:00
-Tomatoe3
-2015-01-28 00:00:00
-2015-01-31 00:00:00
-2015-02-28 00:00:00
-Tomatoe4
-2015-06-28 00:00:00
-2015-07-01 00:00:00
-2015-07-28 00:00:00
-Tomatoe44s
-2015-06-30 00:00:00
-2015-07-03 00:00:00
-2015-07-30 00:00:00
-Tomatoefggs
-2015-02-28 00:00:00
-2015-03-03 00:00:00
-2015-03-28 00:00:00
-Tomatoesytu
-2016-02-28 00:00:00
-2016-03-02 00:00:00
-2016-03-28 00:00:00
-Toyymatddoehys
-2015-12-31 00:00:00
-2016-01-03 00:00:00
-2016-01-31 00:00:00
-Tom443atoes
-2015-12-15 00:00:00
-2015-12-18 00:00:00
-2016-01-15 00:00:00
-Tomat65434foe23gfhgsPep
-2015-10-04 00:00:00
-2015-10-07 00:00:00
-2015-11-04 00:00:00
+162
 [/output]
 [/test]
 [test]
 [input]
-CREATE TABLE IF NOT EXISTS orders
-(
-id INT NOT NULL,
-product_name VARCHAR(50) NOT NULL,
-order_date DATETIME NOT NULL,
-CONSTRAINT pk_orders PRIMARY KEY (id)
+CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
+  `id` int(10) PRIMARY KEY,
+  `first_name` varchar(50),
+  `last_name` varchar(60),
+  `notes` text,
+  `age` int(10),
+  `magic_wand_creator` varchar(100),
+  `magic_wand_size` smallint(6),
+  `deposit_group` varchar(20),
+  `deposit_start_date` date,
+  `deposit_amount` decimal(8,2),
+  `deposit_interest` decimal(5,2),
+  `deposit_charge` decimal(8,2),
+  `deposit_expiration_date` date,
+  `is_deposit_expired` bit(1)
 );
 
-INSERT INTO orders (id, product_name, order_date) VALUES (1, 'Butter', '20160919');
-INSERT INTO orders (id, product_name, order_date) VALUES (2, 'Milk', '20160930');
-INSERT INTO orders (id, product_name, order_date) VALUES (3, 'Cheese', '20160904');
-INSERT INTO orders (id, product_name, order_date) VALUES (4, 'Bread', '20151220');
-INSERT INTO orders (id, product_name, order_date) VALUES (5, 'Tomatoes', '20150101');
-INSERT INTO orders (id, product_name, order_date) VALUES (6, 'Tomatoe2', '20150201');
-INSERT INTO orders (id, product_name, order_date) VALUES (7, 'Tomatoess', '20150401');
-INSERT INTO orders (id, product_name, order_date) VALUES (8, 'Tomatoe3', '20150128');
-INSERT INTO orders (id, product_name, order_date) VALUES (9, 'Tomatoe4', '20150628');
-INSERT INTO orders (id, product_name, order_date) VALUES (10, 'Tomatoe44s', '20150630');
-INSERT INTO orders (id, product_name, order_date) VALUES (11, 'Tomatoefggs', '20150228');
-INSERT INTO orders (id, product_name, order_date) VALUES (12, 'Tomatoesytu', '20160228');
-INSERT INTO orders (id, product_name, order_date) VALUES (13, 'Toyymatddoehys', '20151231');
-INSERT INTO orders (id, product_name, order_date) VALUES (14, 'Tom443atoes', '20151215');
-INSERT INTO orders (id, product_name, order_date) VALUES (15, 'Tomat65434foe23gfhgsPep', '20151004');
+INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
+	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry\'s year and member of Dumbledore\'s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
+	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 63, 'Ollivander family', 20, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1'),
+	(3, 'Ludo', 'Bagman', 'Quidditch Beater for the Wimbourne Wasps and Head of the Department of Magical Games and Sports within the Ministry of Magic', 19, 'Mykew Gregorovitch', 18, 'Venomous Tongue', '1990-07-04', 23190.94, 14.92, 30.00, '1990-12-27', b'0'),
+	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Jimmy Kiddell', 15, 'Blue Phoenix', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
+	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Arturo Cephalopos', 14, 'Troll Chest', '1981-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'1'),
+	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Death', 23, 'Human Pride', '1985-10-26', 11902.72, 24.84, 95.00, '1985-12-27', b'1'),
+	(7, 'Phineas', 'Nigellus', 'deceased great-great-grandfather of Sirius Black and former headmaster of Hogwarts, whose painting still hangs in the office and helps out the current headmaster.', 47, 'Mykew Gregorovitch', 18, 'Venomous Tongue', '1985-12-05', 11248.58, 12.31, 32.00, '1986-11-12', b'1'),
+	(8, 'Regulus', 'Arcturus', 'Late brother of Sirius Black, a Death Eater who had turned against Lord Voldemort.', 46, 'Ollivander family', 22, 'Blue Phoenix', '1989-05-31', 1173.12, 9.68, 56.00, '1989-10-13', b'0'),
+	(9, 'Sirius', 'Black', 'Harry Potter\'s godfather, a member of the Order of the Phoenix and prisoner on the run.', 25, 'Mykew Gregorovitch', 30, 'Troll Chest', '1993-08-29', 15793.54, 26.34, 17.00, '1994-05-21', b'0'),
+	(10, 'Amelia', 'Bones', 'Head of the Department of Magical Law Enforcement, aunt of Susan Bones.', 16, 'Antioch Peverell', 30, 'Human Pride', '1981-05-15', 18778.37, 7.85, 54.00, '1982-05-06', b'1'),
+	(11, 'Susan', 'Bones', 'Hufflepuff student in Harry\'s year, a member of Dumbledore\'s Army.', 72, 'Ollivander family', 11, 'Venomous Tongue', '1992-05-03', 26463.40, 30.54, 30.00, '1993-03-11', b'0'),
+	(12, 'Terry', 'Boot', 'Ravenclaw student in Harry\'s year, a member of Dumbledore\'s Army.', 69, 'Mykew Gregorovitch', 28, 'Blue Phoenix', '1989-09-09', 31029.60, 27.98, 10.00, '1990-02-15', b'0'),
+	(13, 'Lavender', 'Brown', 'Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army, briefly Ron Weasley\'s girlfriend.', 31, 'Jimmy Kiddell', 24, 'Troll Chest', '1992-03-26', 26572.86, 26.64, 94.00, '1992-08-21', b'0'),
+	(14, 'Millicent', 'Bulstrode', 'Slytherin student in Harry\'s year, a member of Umbridge\'s Inquisitorial Squad.', 65, 'Arturo Cephalopos', 17, 'Human Pride', '1988-08-16', 33309.81, 25.43, 44.00, '1988-08-21', b'1'),
+	(15, 'Charity', 'Burbage', 'Professor of Muggle Studies at Hogwarts during Harry\'s time at school.', 38, 'Death', 30, 'Venomous Tongue', '1994-07-21', 33508.64, 17.14, 31.00, '1995-04-06', b'0'),
+	(16, 'Frank', 'Bryce', 'Muggle gardener for the Riddle family.', 24, 'Antioch Peverell', 29, 'Blue Phoenix', '1991-12-20', 19955.71, 6.52, 30.00, '1992-07-22', b'0'),
+	(17, 'Alecto', 'Carrow', 'Sister of Amycus Carrow, Death Eater and professor of Muggle Studies for one year, Deputy Headmistress of Hogwarts under Severus Snape', 52, 'Jimmy Kiddell', 24, 'Troll Chest', '1982-03-28', 25434.21, 14.96, 36.00, '1982-09-17', b'1'),
+	(18, 'Amycus', 'Carrow', 'Brother of Alecto Carrow, Death Eater and professor of Defence Against the Dark Arts for one year, even though he changed it to just "Dark Arts", Deputy Headmaster of Hogwarts under Severus Snape', 23, 'Arturo Cephalopos', 30, 'Human Pride', '1988-04-18', 46943.10, 5.08, 6.00, '1988-08-05', b'1'),
+	(19, 'Reginald', 'Cattermole', 'Employee of the Magical Maintenance Department for the Ministry of Magic, impersonated by Ron Weasley', 25, 'Death', 28, 'Venomous Tongue', '1981-08-14', 39864.33, 15.75, 8.00, '1981-11-24', b'1'),
+	(20, 'Mary', 'Cattermole', 'Muggle-born wife of Reginald Cattermole, saved by Harry Potter from the Muggle-born Registration Commission.', 53, 'Antioch Peverell', 25, 'Blue Phoenix', '1981-08-18', 34176.09, 12.34, 71.00, '1982-04-21', b'1'),
+	(21, 'Cho', 'Chang', 'Ravenclaw student one year above Harry, Quidditch Seeker, member of Dumbledore\'s Army and Harry\'s first Love interest', 64, 'Ollivander family', 20, 'Troll Chest', '1984-01-31', 49964.03, 10.83, 53.00, '1984-03-29', b'1'),
+	(22, 'Penelope', 'Clearwater', 'Ravenclaw prefect and girlfriend of Percy Weasley', 58, 'Mykew Gregorovitch', 17, 'Human Pride', '1983-05-06', 5130.24, 11.04, 42.00, '1983-06-11', b'1'),
+	(23, 'Michael', 'Corner', 'Ravenclaw student in Harry\'s year, member of Dumbledore\'s Army', 56, 'Jimmy Kiddell', 15, 'Venomous Tongue', '1985-03-23', 23295.97, 20.97, 35.00, '1985-04-13', b'1'),
+	(24, 'Vincent', 'Crabbe,', 'Death Eater, father of Vincent Crabbe', 37, 'Arturo Cephalopos', 24, 'Blue Phoenix', '1993-03-30', 35436.82, 26.54, 17.00, '1993-04-07', b'0'),
+	(25, 'Vincent', 'Crabbe', 'Slytherin student in Harry\'s year, son of Death Eater, Slytherin Quidditch team Beater, a member of the Inquisitorial Squad, a friend of Draco Malfoy.', 37, 'Death', 12, 'Troll Chest', '1986-07-18', 8597.40, 20.09, 97.00, '1986-10-18', b'1'),
+	(26, 'Colin', 'Creevey', 'Muggle-born Gryffindor student one year below Harry, brother of Dennis Creevey, member of Dumbledore\'s Army, killed during the Battle of Hogwarts, after sneaking away from the younger evacuated students in the seventh book', 38, 'Antioch Peverell', 15, 'Human Pride', '1991-02-19', 27282.08, 11.82, 76.00, '1992-01-08', b'0'),
+	(27, 'Dennis', 'Creevey', 'Muggle-born Gryffindor student three years below Harry, brother of Colin Creevey, member of Dumbledore\'s Army', 61, 'Ollivander family', 24, 'Venomous Tongue', '1992-07-13', 10649.78, 1.77, 23.00, '1992-09-24', b'0'),
+	(28, 'Dirk', 'Cresswell', 'Muggle-born Head of the Goblin Liaison Office, went on the run in Deathly Hallows with fellow muggle-born Ted Tonks, Dean Thomas and goblins Gornuk and Griphook.', 65, 'Mykew Gregorovitch', 26, 'Blue Phoenix', '1985-02-14', 11481.54, 25.13, 23.00, '1985-04-22', b'1'),
+	(29, 'Bartemius', 'Barty', 'Head of the Department of International Magical Cooperation, killed by his son Barty Crouch Jr, Transfigurated into a bone before being buried', 48, 'Jimmy Kiddell', 20, 'Troll Chest', '1992-01-24', 11137.18, 3.48, 74.00, '1992-02-17', b'0'),
+	(30, 'Bartemius', 'Barty', 'Death Eater, credited with facilitating the return of Lord Voldemort, received a Dementor\'s Kiss, used Polyjuice Potion to impersonate Alastor Moody', 69, 'Arturo Cephalopos', 25, 'Human Pride', '1984-08-03', 615.09, 29.72, 36.00, '1984-11-18', b'1'),
+	(31, 'John', 'Dawlish', '', 30, 'Death', 19, 'Venomous Tongue', '1984-09-14', 45046.67, 9.80, 93.00, '1985-07-11', b'1'),
+	(32, 'Fleur', 'Delacour', 'French student who participated in the Triwizard Tournament representing Beauxbatons, later wed Bill Weasley.', 49, 'Antioch Peverell', 13, 'Blue Phoenix', '1982-07-24', 33063.59, 23.49, 67.00, '1982-12-08', b'1'),
+	(33, 'Gabrielle', 'Delacour', 'Younger sister of Fleur Delacour, saved by Harry in the Triwizard Tournament', 66, 'Ollivander family', 14, 'Troll Chest', '1993-11-24', 9488.33, 19.45, 22.00, '1994-06-21', b'0'),
+	(34, 'Dedalus', 'Diggle', 'Member of the Order of the Phoenix who took the Dursleys into hiding', 39, 'Mykew Gregorovitch', 26, 'Human Pride', '1980-10-10', 45456.26, 15.85, 85.00, '1981-06-02', b'1'),
+	(35, 'Amos', 'Diggory', 'Works for the Department for the Regulation and Control of Magical Creatures, father of Cedric Diggory', 54, 'Jimmy Kiddell', 17, 'Venomous Tongue', '1985-01-27', 17997.81, 9.87, 41.00, '1985-02-20', b'1'),
+	(36, 'Cedric', 'Diggory', 'Hufflepuff student two years above Harry, school prefect, Quidditch Seeker and captain, co-winner of the Triwizard Tournament', 19, 'Arturo Cephalopos', 27, 'Blue Phoenix', '1981-01-13', 16443.96, 1.12, 37.00, '1982-01-14', b'1'),
+	(37, 'Elphias', 'Doge', 'School friend of Albus Dumbledore', 59, 'Death', 24, 'Troll Chest', '1982-07-07', 32356.08, 9.68, 37.00, '1983-06-11', b'1'),
+	(38, 'Antonin', 'Dolohov', 'Death Eater who killed Fabian Prewett, Gideon Prewett, and Remus Lupin.', 28, 'Antioch Peverell', 23, 'Human Pride', '1991-02-28', 5585.72, 21.16, 36.00, '1991-04-16', b'0'),
+	(39, 'Aberforth', 'Dumbledore', 'Brother of Albus and Ariana Dumbledore, owner of the Hog\'s Head', 49, 'Ollivander family', 11, 'Venomous Tongue', '1991-04-02', 22349.31, 9.72, 81.00, '1992-02-21', b'0'),
+	(40, 'Albus', 'Dumbledore', 'Hogwarts Headmaster in Harry Potter\'s time, Transfiguration professor in Tom Riddle\'s time, founder of the Order of the Phoenix.', 50, 'Mykew Gregorovitch', 10, 'Blue Phoenix', '1992-12-18', 21106.66, 15.75, 93.00, '1993-12-07', b'0'),
+	(41, 'Ariana', 'Dumbledore', '', 27, 'Jimmy Kiddell', 22, 'Troll Chest', '1980-07-26', 27191.21, 11.67, 13.00, '1981-06-12', b'1'),
+	(42, 'Dudley', 'Dursley', 'Muggle son of Vernon Dursley and Petunia Evans, first cousin of Harry Potter', 15, 'Arturo Cephalopos', 29, 'Human Pride', '1994-10-07', 49767.47, 21.73, 40.00, '1995-04-01', b'0'),
+	(43, 'Marjorie', 'Marge', 'Muggle sister of Vernon Dursley, breeds bulldogs, her favourite one named Ripper.', 65, 'Death', 25, 'Venomous Tongue', '1994-01-05', 909.41, 13.29, 14.00, '1994-04-14', b'0'),
+	(44, 'Petunia', 'Dursley', 'Harry\'s aunt, the sister of his mother Lily. Married to Vernon Dursley and mother of Dudley Dursley', 27, 'Ollivander family', 12, 'Blue Phoenix', '1994-05-15', 36558.54, 19.54, 57.00, '1994-09-02', b'0'),
+	(45, 'Vernon', 'Dursley', 'Harry Potter\'s muggle uncle, married to his aunt Petunia and father of Dudley Dursley.', 22, 'Mykew Gregorovitch', 22, 'Troll Chest', '1983-07-28', 6498.38, 11.41, 44.00, '1984-01-08', b'1'),
+	(46, 'Marietta', 'Edgecombe', 'Ravenclaw student one year above Harry, member of Dumbledore\'s Army', 17, 'Jimmy Kiddell', 16, 'Human Pride', '1993-06-10', 13938.86, 9.44, 16.00, '1993-07-16', b'0'),
+	(47, 'Everard', '', 'Former Headmaster of Hogwarts, a particularly famous wizard, whose portrait hangs in many institutions, including the Ministry of Magic', 54, 'Arturo Cephalopos', 30, 'Venomous Tongue', '1984-03-31', 31293.40, 9.00, 77.00, '1984-08-31', b'1'),
+	(48, 'Arabella', 'Figg', 'Squib neighbour of the Dursleys\', member of the Order of the Phoenix.', 59, 'Death', 28, 'Blue Phoenix', '1986-05-09', 40953.48, 12.53, 71.00, '1986-05-15', b'1'),
+	(49, 'Argus', 'Filch', 'Squib caretaker of Hogwarts', 67, 'Ollivander family', 10, 'Troll Chest', '1982-07-12', 21519.32, 6.94, 28.00, '1983-01-18', b'1'),
+	(50, 'Justin', 'Finch-Fletchley', 'Muggle-born Hufflepuff student in Harry\'s year, a member of Dumbledore\'s Army.', 61, 'Mykew Gregorovitch', 28, 'Human Pride', '1987-04-02', 40613.55, 0.93, 67.00, '1987-04-04', b'1'),
+	(51, 'Seamus', 'Finnigan', 'Irish Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army best friend of Dean Thomas.', 35, 'Jimmy Kiddell', 25, 'Venomous Tongue', '1993-12-26', 43680.93, 30.44, 66.00, '1994-07-08', b'0'),
+	(52, 'Marcus', 'Flint', 'Slytherin sixth year Quidditch captain', 57, 'Arturo Cephalopos', 30, 'Blue Phoenix', '1988-02-06', 346.16, 30.17, 20.00, '1988-07-31', b'1'),
+	(53, 'Nicolas', 'Flamel', 'alchemist, the only known creator of the Philosopher\'s Stone.', 42, 'Death', 27, 'Troll Chest', '1990-01-02', 31483.33, 23.72, 26.00, '1990-08-27', b'0'),
+	(54, 'Mundungus', 'Fletcher', 'Common thief and shifty member of the Order of the Phoenix', 73, 'Antioch Peverell', 29, 'Human Pride', '1993-11-02', 42130.06, 17.24, 68.00, '1994-03-21', b'0'),
+	(55, 'Filius', 'Flitwick', 'Charms professor at Hogwarts and Head of Ravenclaw', 34, 'Ollivander family', 28, 'Venomous Tongue', '1990-07-14', 33656.19, 21.72, 24.00, '1990-08-17', b'0'),
+	(56, 'Cornelius', 'Fudge', 'Minister for Magic in the first five books, sacked when he denied Lord Voldemort\'s return for a year.', 15, 'Mykew Gregorovitch', 22, 'Blue Phoenix', '1990-03-08', 48394.70, 1.00, 46.00, '1991-02-06', b'0'),
+	(57, 'Marvolo', 'Gaunt', 'Pure-blood father of Merope and Morfin Gaunt, grandfather of Tom Marvolo Riddle.', 41, 'Antioch Peverell', 14, 'Troll Chest', '1981-04-12', 22895.49, 0.15, 89.00, '1981-09-20', b'1'),
+	(58, 'Merope', 'Gaunt', 'Daughter of Marvolo Gaunt, sister of Morfin Gaunt, wife of Tom Riddle Sr, mother of Tom Marvolo Riddle/Lord Voldemort, died after childbirth, named for Merope, one of the Pleiades, who married a mortal\[1\]', 15, 'Ollivander family', 25, 'Human Pride', '1992-03-13', 20809.21, 18.62, 19.00, '1993-02-08', b'0'),
+	(59, 'Morfin', 'Gaunt', 'Son of Marvolo Gaunt, brother of Merope Gaunt, uncle of Tom Marvolo Riddle, framed by his nephew for Muggle killings.', 45, 'Mykew Gregorovitch', 25, 'Venomous Tongue', '1994-05-03', 33175.63, 20.71, 14.00, '1995-03-24', b'0'),
+	(60, 'Anthony', 'Goldstein', 'Ravenclaw student in Harry\'s year, member of Dumbledore\'s Army', 34, 'Jimmy Kiddell', 26, 'Blue Phoenix', '1980-05-11', 5264.16, 29.66, 4.00, '1980-05-22', b'1'),
+	(61, 'Goyle', 'Sr', 'Death Eater, father of Gregory Goyle', 65, 'Arturo Cephalopos', 31, 'Troll Chest', '1981-05-01', 42520.28, 4.72, 75.00, '1982-03-30', b'1'),
+	(62, 'Gregory', 'Goyle', 'Slytherin student in Harry\'s year, Slytherin Quidditch Beater, a member of the Inquisitorial Squad.', 51, 'Death', 25, 'Human Pride', '1983-04-06', 22014.91, 21.61, 33.00, '1984-02-20', b'1'),
+	(63, 'Hermione', 'Granger', 'Muggle-born Gryffindor student in Harry\'s year, one of Harry\'s best friends, founder of Dumbledore\'s Army, Gryffindor Prefect', 18, 'Antioch Peverell', 16, 'Venomous Tongue', '1980-11-17', 20232.87, 17.54, 27.00, '1981-01-13', b'1'),
+	(64, 'Gregorovitch', '', 'highly regarded East European wand-maker.', 28, 'Death', 22, 'Blue Phoenix', '1992-07-18', 44377.51, 22.05, 80.00, '1992-09-01', b'0'),
+	(65, 'Fenrir', 'Greyback', 'Werewolf, infected Remus Lupin, maimed Bill Weasley and wounded Lavender Brown.', 72, 'Antioch Peverell', 11, 'Troll Chest', '1991-09-05', 15747.72, 18.22, 94.00, '1992-05-21', b'0'),
+	(66, 'Gellert', 'Grindelwald', 'Dark Wizard, friend, and later rival, of Albus Dumbledore who defeated him in the 1940s.', 52, 'Ollivander family', 20, 'Human Pride', '1985-04-16', 12681.80, 14.28, 19.00, '1985-12-27', b'1'),
+	(67, 'Wilhelmina', 'Grubbly-Plank', 'Substitute Care of Magical Creatures professor during Harry\'s fourth year', 29, 'Mykew Gregorovitch', 18, 'Venomous Tongue', '1980-08-19', 21263.21, 5.66, 76.00, '1980-08-21', b'1'),
+	(68, 'Godric', 'Gryffindor', 'One of the four founders of Hogwarts', 24, 'Jimmy Kiddell', 16, 'Blue Phoenix', '1991-06-06', 30425.03, 22.28, 89.00, '1991-09-13', b'0'),
+	(69, 'Rubeus', 'Hagrid', 'Half-giant keeper of Keys and Grounds at Hogwarts, Care of Magical Creatures professor starting from Harry\'s third year, a member of the Order of the Phoenix. Once a Hogwarts student, Hagrid was expelled in his third year.', 15, 'Death', 14, 'Troll Chest', '1983-02-04', 29087.26, 19.94, 94.00, '1983-02-18', b'1'),
+	(70, 'Rolanda', 'Hooch', 'Hogwarts flying instructor, Quidditch referee', 38, 'Antioch Peverell', 29, 'Human Pride', '1989-05-05', 30985.51, 8.64, 33.00, '1989-07-03', b'0'),
+	(71, 'Mafalda', 'Hopkirk', 'Witch who works in the Ministry of Magic, impersonated by Hermione Granger in Deathly Hallows.', 63, 'Ollivander family', 23, 'Venomous Tongue', '1980-08-27', 39189.95, 12.73, 46.00, '1981-07-26', b'1'),
+	(72, 'Helga', 'Hufflepuff', 'One of the four founders of Hogwarts, ancestor of Hepzibah Smith', 72, 'Mykew Gregorovitch', 16, 'Blue Phoenix', '1987-02-12', 25971.83, 23.85, 74.00, '1987-06-02', b'1'),
+	(73, 'Angelina', 'Johnson', 'Gryffindor student two years above Harry, Quidditch Chaser and later captain', 70, 'Jimmy Kiddell', 21, 'Troll Chest', '1984-04-04', 17479.62, 3.20, 39.00, '1984-08-25', b'1'),
+	(74, 'Lee', 'Jordan', 'Gryffindor student two years above Harry, Hogwarts Quidditch commentator, good friend of Fred and George Weasley at Hogwarts', 67, 'Arturo Cephalopos', 26, 'Human Pride', '1994-07-28', 11937.54, 17.30, 39.00, '1994-12-23', b'0'),
+	(75, 'Bertha', 'Jorkins', '', 58, 'Death', 11, 'Venomous Tongue', '1987-07-25', 42482.75, 30.46, 51.00, '1988-03-20', b'1'),
+	(76, 'Igor', 'Karkaroff', 'Reformed Death Eater, Headmaster of Durmstrang.', 31, 'Mykew Gregorovitch', 25, 'Blue Phoenix', '1986-12-30', 21847.43, 12.66, 88.00, '1987-09-24', b'1'),
+	(77, 'Viktor', 'Krum', 'Durmstrang student, Bulgarian Quidditch Seeker, participated in the Triwizard Tournament.', 37, 'Jimmy Kiddell', 28, 'Troll Chest', '1980-12-28', 31596.15, 21.29, 35.00, '1981-09-02', b'1'),
+	(78, 'Bellatrix', 'Lestrange', 'Death Eater, sister of Narcissa Malfoy and Andromeda Tonks, cousin of Sirius and Regulus Black, she tortured Frank and Alice Longbottom into insanity.', 14, 'Arturo Cephalopos', 12, 'Human Pride', '1983-05-09', 37635.01, 5.85, 43.00, '1983-08-21', b'1'),
+	(79, 'Rabastan', 'Lestrange', 'Death Eater, brother of Rodolphus Lestrange', 55, 'Death', 29, 'Venomous Tongue', '1984-10-22', 39468.45, 23.33, 69.00, '1985-04-23', b'1'),
+	(80, 'Rodolphus', 'Lestrange', 'Death Eater, brother of Rabastan Lestrange, husband of Bellatrix Lestrange', 71, 'Antioch Peverell', 23, 'Blue Phoenix', '1982-03-26', 1302.18, 0.02, 75.00, '1982-08-25', b'1'),
+	(81, 'Gilderoy', 'Lockhart', 'Fraudulent celebrity author, Defence Against the Dark Arts teacher.', 60, 'Death', 18, 'Troll Chest', '1980-10-19', 15745.69, 23.18, 16.00, '1981-07-06', b'1'),
+	(82, 'Alice', 'Longbottom', 'Wife of Frank Longbottom, mother of Neville Longbottom, member of the original Order of the Phoenix, Auror, tortured into insanity by Bellatrix Lestrange along with her husband', 40, 'Antioch Peverell', 17, 'Human Pride', '1985-01-26', 4817.78, 29.58, 79.00, '1985-02-10', b'1'),
+	(83, 'Augusta', 'Longbottom', 'Mother of Frank Longbottom and grandmother of Neville Longbottom', 29, 'Ollivander family', 22, 'Venomous Tongue', '1982-08-17', 28036.29, 16.55, 87.00, '1983-07-27', b'1'),
+	(84, 'Frank', 'Longbottom', 'Father of Neville Longbottom, a member of the original Order of the Phoenix, Auror, tortured into insanity by Bellatrix Lestrange along with his wife.', 24, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1991-06-23', 31439.10, 11.55, 57.00, '1991-09-09', b'0'),
+	(85, 'Neville', 'Longbottom', 'Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army.', 47, 'Jimmy Kiddell', 20, 'Troll Chest', '1992-07-19', 1369.52, 21.04, 1.00, '1993-05-13', b'0'),
+	(86, 'Luna', 'Lovegood', 'Ravenclaw student one year below Harry, a member of Dumbledore\'s Army.', 14, 'Arturo Cephalopos', 21, 'Human Pride', '1986-12-21', 9014.64, 2.83, 24.00, '1987-10-29', b'1'),
+	(87, 'Xenophilius', 'Lovegood', 'Father of Luna Lovegood, and editor of The Quibbler.', 25, 'Death', 16, 'Venomous Tongue', '1992-08-09', 5908.36, 6.99, 1.00, '1992-11-19', b'0'),
+	(88, 'Remus', 'Lupin', 'Gryffindor student before Harry\'s time, Marauder, a friend of James Potter, werewolf, Professor of Defence Against the Dark Arts in Harry\'s third year, a member of the Order of the Phoenix.', 19, 'Death', 11, 'Blue Phoenix', '1982-05-08', 17821.66, 19.64, 45.00, '1982-06-04', b'1'),
+	(89, 'Walden', 'Macnair', 'The Committee of Disposal of Dangerous Creatures\'s executioner, also a Death-Eater', 48, 'Antioch Peverell', 29, 'Troll Chest', '1986-09-22', 23216.19, 29.39, 46.00, '1986-11-01', b'1'),
+	(90, 'Draco', 'Malfoy', 'Slytherin student in Harry\'s year, Slytherin Quidditch Seeker, school prefect, member of the Inquisitorial Squad, Death Eater', 18, 'Ollivander family', 14, 'Human Pride', '1989-12-02', 33253.04, 8.37, 7.00, '1990-05-07', b'0'),
+	(91, 'Lucius', 'Malfoy', 'Draco Malfoy\'s father, an influential Death-Eater, and, early in the series, governor of Hogwarts', 25, 'Mykew Gregorovitch', 22, 'Venomous Tongue', '1981-07-29', 36572.61, 2.45, 5.00, '1981-11-19', b'1'),
+	(92, 'Narcissa', 'Malfoy', 'Lucius Malfoy\'s wife and Draco Malfoy\'s mother, sister of Bellatrix Lestrange.', 17, 'Jimmy Kiddell', 18, 'Blue Phoenix', '1988-06-16', 1169.86, 25.09, 98.00, '1988-07-17', b'1'),
+	(93, 'Madam', 'Malkin', 'Clothes shop owner at Diagon Alley', 23, 'Arturo Cephalopos', 15, 'Troll Chest', '1985-07-17', 40137.28, 8.17, 45.00, '1986-06-13', b'1'),
+	(94, 'Olympe', 'Maxime', 'Half-giantess, Headmistress of Beauxbatons', 56, 'Death', 22, 'Human Pride', '1986-02-22', 27473.95, 22.31, 39.00, '1986-05-22', b'1'),
+	(95, 'Ernie', 'Macmillan', 'Hufflepuff student in Harry\'s year, school prefect, member of Dumbledore\'s Army', 63, 'Arturo Cephalopos', 13, 'Venomous Tongue', '1989-04-15', 18960.62, 13.15, 22.00, '1989-12-12', b'0'),
+	(96, 'Minerva', 'McGonagall', 'Hogwarts Transfiguration professor, Head of Gryffindor House, Deputy Headmistress of Hogwarts, a member of the Order of the Phoenix.', 29, 'Death', 16, 'Blue Phoenix', '1988-07-08', 7298.35, 15.19, 39.00, '1988-12-24', b'1'),
+	(97, 'Alastor', 'Mad-Eye', 'Retired Auror, member of the Order of the Phoenix, impersonated by Barty Crouch Jr. in \'The Goblet of Fire\'', 27, 'Mykew Gregorovitch', 21, 'Troll Chest', '1987-02-17', 8294.06, 18.27, 90.00, '1988-01-08', b'1'),
+	(98, 'Theodore', 'Nott', 'Slytherin student in the same year as Harry Potter. Nott is one of the few students who can see Thestrals, suggesting that he has witnessed a death at some point. His father is a Death Eater and described as an elderly widower.', 17, 'Jimmy Kiddell', 26, 'Human Pride', '1982-01-20', 49041.09, 26.22, 15.00, '1982-04-14', b'1'),
+	(99, 'Garrick', 'Ollivander', 'Wandmaker, owner of Ollivanders shop.', 72, 'Arturo Cephalopos', 27, 'Venomous Tongue', '1994-07-01', 41627.25, 30.61, 22.00, '1994-10-11', b'0'),
+	(100, 'Pansy', 'Parkinson', 'Slytherin student in Harry\'s year, school prefect, a member of the Inquisitorial Squad, Draco Malfoy\'s girlfriend for some time.', 35, 'Death', 21, 'Blue Phoenix', '1994-01-20', 11941.54, 29.19, 71.00, '1994-05-29', b'0'),
+	(101, 'Padma', 'Patil', 'Ravenclaw student in Harry\'s year, identical twin sister of Gryffindor Parvati Patil, a member of Dumbledore\'s Army.', 37, 'Antioch Peverell', 22, 'Troll Chest', '1980-05-09', 26117.57, 9.05, 47.00, '1981-03-30', b'1'),
+	(102, 'Parvati', 'Patil', 'Gryffindor student in Harry\'s year, identical twin sister of Ravenclaw Padma Patil, a member of Dumbledore\'s Army.', 55, 'Death', 25, 'Human Pride', '1990-01-12', 11798.51, 1.00, 71.00, '1990-03-19', b'0'),
+	(103, 'Peter', 'Pettigrew', 'Former school friend of James Potter, Sirius Black and Remus Lupin. Betrays James and Lily Potter. Death Eater, an unregistered animagus, Pettigrew is first introduced as a rat known as Scabbers.', 41, 'Jimmy Kiddell', 29, 'Venomous Tongue', '1993-03-12', 43424.70, 19.06, 87.00, '1993-07-06', b'0'),
+	(104, 'Antioch', 'Peverell', 'Original owner of The Elder Wand in The Tale of the Three Brothers.', 49, 'Arturo Cephalopos', 26, 'Blue Phoenix', '1989-01-19', 36394.90, 20.56, 18.00, '1989-08-09', b'0'),
+	(105, 'Cadmus', 'Peverell', 'Original owner of The Resurrection Stone in The Tale of the Three Brothers', 36, 'Death', 20, 'Troll Chest', '1983-12-16', 22327.50, 30.46, 82.00, '1984-03-20', b'1'),
+	(106, 'Ignotus', 'Peverell', 'Original owner of The Invisibility Cloak in The Tale of the Three Brothers.', 43, 'Ollivander family', 29, 'Human Pride', '1983-06-10', 35261.39, 9.39, 68.00, '1983-10-05', b'1'),
+	(107, 'Irma', 'Pince', 'Hogwarts librarian', 19, 'Mykew Gregorovitch', 17, 'Venomous Tongue', '1984-05-03', 12766.45, 17.02, 85.00, '1984-08-05', b'1'),
+	(108, 'Sturgis', 'Podmore', 'Member of the Order of the Phoenix, imprisoned in Azkaban', 64, 'Jimmy Kiddell', 24, 'Blue Phoenix', '1980-04-07', 22485.06, 15.05, 67.00, '1981-03-22', b'1'),
+	(109, 'Poppy', 'Pomfrey', 'Hogwarts school nurse', 32, 'Arturo Cephalopos', 23, 'Troll Chest', '1988-04-19', 27957.52, 6.77, 68.00, '1988-06-12', b'1'),
+	(110, 'Harry', 'Potter', 'Main character of the series, son of James Potter and Lily Evans, Gryffindor student, Gryffindor Quidditch Seeker and captain, leader of Dumbledore\'s Army.', 68, 'Death', 18, 'Human Pride', '1986-09-21', 44889.88, 23.09, 10.00, '1986-11-15', b'1'),
+	(111, 'James', 'Potter', 'Harry Potter\'s father, a member of the Order of the Phoenix, murdered by Lord Voldemort before the series begins.', 47, 'Ollivander family', 31, 'Venomous Tongue', '1993-06-16', 27296.66, 1.22, 86.00, '1993-11-16', b'0'),
+	(112, 'Lily', 'Potter', 'Harry Potter\'s mother, a member of the Order of the Phoenix, murdered by Lord Voldemort before the series begins.', 28, 'Antioch Peverell', 13, 'Blue Phoenix', '1984-02-27', 21972.24, 26.11, 49.00, '1984-06-16', b'1'),
+	(113, 'Ernest', 'Ernie', '(fl. 1993-1997), also called Ern by Stanley Shunpike, was the driver of the Knight Bus.', 58, 'Ollivander family', 20, 'Troll Chest', '1991-11-05', 11948.37, 16.85, 99.00, '1992-07-10', b'0'),
+	(114, 'Quirinus', 'Quirrell', 'Defence Against the Dark Arts professor in Harry\'s first year, possessed by Lord Voldemort in Philosopher\'s Stone.', 34, 'Mykew Gregorovitch', 15, 'Human Pride', '1992-10-17', 13212.49, 5.67, 55.00, '1992-12-26', b'0'),
+	(115, 'Helena', 'Ravenclaw/The', 'Daughter of Rowena Ravenclaw, stole her mother\'s diadem and hid it, killed by the Bloody Baron and became Ravenclaw\'s house ghost.', 62, 'Jimmy Kiddell', 18, 'Venomous Tongue', '1985-10-13', 1238.51, 10.17, 57.00, '1985-12-30', b'1'),
+	(116, 'Rowena', 'Ravenclaw', 'Co-founder of Hogwarts, mother of Helena Ravenclaw', 40, 'Arturo Cephalopos', 28, 'Blue Phoenix', '1994-10-16', 16236.00, 11.11, 26.00, '1995-04-25', b'0'),
+	(117, 'Mary', 'Riddle', 'Muggle wife of Thomas Riddle, mother of Tom Riddle Sr, mother-in-law of Merope Gaunt, grandmother of Tom Marvolo Riddle/Lord Voldemort, killed by her grandson', 24, 'Death', 12, 'Troll Chest', '1982-06-14', 43375.01, 23.97, 82.00, '1982-08-30', b'1'),
+	(118, 'Thomas', 'Riddle', 'Muggle husband of Mary Riddle, father of Tom Riddle Sr, grandfather of Tom Marvolo Riddle/Lord Voldemort, killed by his grandson.', 36, 'Arturo Cephalopos', 28, 'Human Pride', '1989-05-14', 24304.57, 21.47, 86.00, '1989-12-04', b'0'),
+	(119, 'Tom', 'Riddle', 'Muggle husband of Merope Gaunt, father of Tom Marvolo Riddle/Lord Voldemort, son of Thomas and Mary Riddle, killed by his son', 26, 'Death', 23, 'Venomous Tongue', '1990-04-22', 44456.65, 25.24, 76.00, '1990-08-03', b'0'),
+	(120, 'Tom', 'Marvolo', 'see Lord Voldemort', 33, 'Mykew Gregorovitch', 30, 'Blue Phoenix', '1986-05-20', 23897.12, 29.66, 23.00, '1987-01-27', b'1'),
+	(121, 'Demelza', 'Robins', '', 45, 'Mykew Gregorovitch', 24, 'Troll Chest', '1988-09-19', 8523.42, 5.34, 40.00, '1989-02-21', b'0'),
+	(122, 'Augustus', 'Rookwood', 'Death Eater, spy working in the Department of Mysteries', 26, 'Death', 28, 'Human Pride', '1994-12-06', 43137.27, 13.09, 61.00, '1995-01-01', b'0'),
+	(123, 'Albert', 'Runcorn', '', 23, 'Jimmy Kiddell', 12, 'Venomous Tongue', '1982-12-06', 47140.32, 3.77, 35.00, '1983-01-13', b'1'),
+	(124, 'Scabior', '', 'Snatcher who captures Harry Potter, Ron Weasley and Hermione Granger in Deathly Hallows.', 23, 'Arturo Cephalopos', 21, 'Blue Phoenix', '1992-06-06', 25342.73, 14.88, 27.00, '1993-05-07', b'0'),
+	(125, 'Newt', 'Scamander', 'Author of Fantastic Beasts and Where to Find Them, among other books. Headmaster and, Hufflepuff student at Hogwarts.', 49, 'Death', 24, 'Troll Chest', '1988-02-08', 36247.69, 28.85, 22.00, '1988-12-31', b'1'),
+	(126, 'Rufus', 'Scrimgeour', 'Head of the Auror Office, replaces Cornelius Fudge as Minister for Magic.', 61, 'Ollivander family', 13, 'Human Pride', '1987-07-31', 39764.02, 25.14, 10.00, '1988-04-03', b'1'),
+	(127, 'Kingsley', 'Shacklebolt', 'Auror, replaces Pius Thicknesse as Minister for Magic, member of the Order of the Phoenix', 33, 'Mykew Gregorovitch', 26, 'Venomous Tongue', '1992-03-06', 31218.37, 8.53, 42.00, '1993-01-30', b'0'),
+	(128, 'Stan', 'Shunpike', 'Conductor of the Knight Bus, later jailed in Azkaban on suspicions of being a death-eater.', 30, 'Jimmy Kiddell', 22, 'Blue Phoenix', '1992-09-21', 19775.78, 0.14, 61.00, '1992-12-07', b'0'),
+	(129, 'Aurora', 'Sinistra', 'Professor and member of the Astronomy Department at Hogwarts, a witch with dark skin, hair, and eyes.', 47, 'Arturo Cephalopos', 22, 'Troll Chest', '1991-06-28', 17257.17, 30.67, 45.00, '1992-01-25', b'0'),
+	(130, 'Rita', 'Skeeter', 'Reporter for the Daily Prophet, author of The Life and Lies of Albus Dumbledore, unregistered animagus.', 38, 'Death', 13, 'Human Pride', '1990-04-18', 22876.54, 17.02, 3.00, '1990-07-06', b'0'),
+	(131, 'Horace', 'Slughorn', 'Former Potions professor at Hogwarts and Head of Slytherin House who taught Tom Marvolo Riddle and returns to Hogwarts in Harry\'s sixth year.', 32, 'Ollivander family', 10, 'Venomous Tongue', '1986-10-30', 19165.02, 7.95, 76.00, '1987-09-27', b'1'),
+	(132, 'Salazar', 'Slytherin', 'Co-founder of Hogwarts, Parseltongue, ancestor of the Gaunt family and Lord Voldemort.', 59, 'Antioch Peverell', 28, 'Blue Phoenix', '1980-10-26', 1168.22, 26.55, 71.00, '1981-01-30', b'1'),
+	(133, 'Hepzibah', 'Smith', 'Elderly, wealthy antique collector, descendant of Helga Hufflepuff, murdered and robbed by Tom Marvolo Riddle', 30, 'Ollivander family', 12, 'Troll Chest', '1983-05-25', 33665.13, 7.98, 21.00, '1983-08-17', b'1'),
+	(134, 'Zacharias', 'Smith', 'Hufflepuff student, a member of Dumbledore\'s Army.', 39, 'Antioch Peverell', 15, 'Human Pride', '1985-12-01', 45543.40, 24.78, 98.00, '1986-10-29', b'1'),
+	(135, 'Severus', 'Snape', 'Hogwarts, Potions and later Defence Against the Dark Arts professor, Head of Slytherin House, a member of both the Death Eaters and the Order of the Phoenix.', 53, 'Mykew Gregorovitch', 15, 'Venomous Tongue', '1992-11-06', 17820.90, 16.53, 38.00, '1992-12-20', b'0'),
+	(136, 'Alicia', 'Spinnet', 'Chaser on the Gryffindor Quidditch team, two years above Harry Potter at Hogwarts. Member of Dumbledore\'s Army.', 65, 'Jimmy Kiddell', 16, 'Blue Phoenix', '1980-02-06', 6269.39, 3.66, 77.00, '1980-03-04', b'1'),
+	(137, 'Pomona', 'Sprout', 'Hogwarts Herbology professor, Head of Hufflepuff House.', 46, 'Arturo Cephalopos', 24, 'Troll Chest', '1993-06-10', 16789.73, 30.80, 58.00, '1993-10-07', b'0'),
+	(138, 'Pius', 'Thicknesse', 'Minister for Magic while under the Imperius Curse, later replaced by Kingsley Shacklebolt.', 47, 'Death', 24, 'Human Pride', '1982-06-01', 8359.46, 26.64, 59.00, '1983-01-04', b'1'),
+	(139, 'Dean', 'Thomas', 'Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army, briefly Ginny Weasley\'s boyfriend, Gryffindor Quidditch Chaser.', 69, 'Antioch Peverell', 18, 'Venomous Tongue', '1992-12-04', 6579.08, 7.43, 69.00, '1993-04-09', b'0'),
+	(140, 'Andromeda', 'Tonks', 'Sister of Bellatrix Lestrange and Narcissa Malfoy, disowned by her family for marrying Muggle-born Ted Tonks, mother of Nymphadora Tonks.', 68, 'Death', 28, 'Blue Phoenix', '1993-02-18', 30024.64, 8.80, 36.00, '1993-06-14', b'0'),
+	(141, 'Nymphadora', 'Tonks', 'Daughter of Ted and Andromeda Tonks, Auror and member of the Order of the Phoenix. She marries Remus Lupin, and become the mother of Teddy Lupin.', 18, 'Jimmy Kiddell', 13, 'Troll Chest', '1982-11-25', 16724.98, 22.83, 37.00, '1983-09-21', b'1'),
+	(142, 'Ted', 'Tonks', 'Muggle-born husband of Andromeda and father of Nymphadora Tonks.', 19, 'Arturo Cephalopos', 13, 'Human Pride', '1984-03-07', 39096.67, 25.20, 82.00, '1984-10-04', b'1'),
+	(143, 'Travers', '', '', 53, 'Death', 24, 'Venomous Tongue', '1984-01-05', 25085.58, 1.95, 91.00, '1984-05-27', b'1'),
+	(144, 'Sybill', 'Patricia', 'Hogwarts Divination professor, predicted the prophecy that prompted Lord Voldemort to go after the Potters', 25, 'Ollivander family', 17, 'Blue Phoenix', '1994-07-05', 15237.30, 7.31, 21.00, '1994-07-21', b'0'),
+	(145, 'Dolores', 'Jane', 'Senior Undersecretary to the Minister for Magic, Defence Against the Dark Arts professor, Hogwarts High Inquisitor, Headmistress of Hogwarts, who enthusiastically joins in the persecution of half-bloods under Voldermort.', 34, 'Mykew Gregorovitch', 30, 'Troll Chest', '1982-09-25', 10628.58, 12.08, 50.00, '1983-01-22', b'1'),
+	(146, 'Emmeline', 'Vance', 'a member of the party that brings Harry to Grimmauld Place, a member of the Order of the Phoenix. Described as "A stately looking witch in an emerald green shawl".', 57, 'Jimmy Kiddell', 25, 'Human Pride', '1992-10-30', 34993.10, 29.94, 82.00, '1992-11-03', b'0'),
+	(147, 'Romilda', 'Vane', 'Hogwarts student who tried to romance Harry with Chocolate Cauldrons containing a love potion from Weasley\'s Wizard Wheezes', 17, 'Mykew Gregorovitch', 16, 'Venomous Tongue', '1983-09-06', 26267.34, 16.63, 100.00, '1984-04-15', b'1'),
+	(148, 'Septima', 'Vector', 'Arithmancy professor at Hogwarts.', 43, 'Arturo Cephalopos', 26, 'Blue Phoenix', '1981-01-23', 6146.94, 6.57, 66.00, '1982-01-22', b'1'),
+	(149, 'Lord', 'Voldemort', 'The villain of the series, the murderer of Harry Potter\'s parents and many others in his quest for immortality and absolute power.', 25, 'Death', 31, 'Troll Chest', '1989-04-28', 38085.84, 22.53, 88.00, '1989-08-01', b'0'),
+	(150, 'Arthur', 'Weasley', 'Muggle-obsessed Ministry of Magic employee. Husband of Molly Weasley, father of Bill, Charlie, Percy, Fred, George, Ron, and Ginny Weasley, member of the Order of the Phoenix', 65, 'Antioch Peverell', 26, 'Human Pride', '1989-09-05', 6647.70, 15.82, 23.00, '1989-09-28', b'0'),
+	(151, 'Bill', 'Weasley', 'Oldest son of Arthur and Molly Weasley, Gringotts employee.', 51, 'Death', 30, 'Venomous Tongue', '1988-04-01', 11346.57, 2.63, 98.00, '1988-08-03', b'1'),
+	(152, 'Charlie', 'Weasley', 'Second son of Arthur and Molly Weasley, and a member of the Order of the Phoenix, works with dragons in Romania.', 21, 'Jimmy Kiddell', 16, 'Blue Phoenix', '1988-11-14', 7831.46, 26.31, 20.00, '1989-07-26', b'0'),
+	(153, 'Fred', 'Weasley', 'Son of Arthur and Molly Weasley and identical twin brother of George Weasley, a member of Dumbledore\'s Army, Gryffindor Quidditch Beater, co-owner of Weasleys\' Wizard Wheezes, killed in an explosion caused by Augustus Rookwood in the Battle of Hogwarts.', 48, 'Arturo Cephalopos', 18, 'Troll Chest', '1992-02-22', 23860.37, 28.37, 39.00, '1992-05-06', b'0'),
+	(154, 'George', 'Weasley', 'Son of Arthur and Molly Weasley and identical twin brother of Fred Weasley, member of Dumbledore\'s Army, Gryffindor Quidditch Beater, co-owner of Weasleys\' Wizard Wheezes, marries Angelina Johnson', 48, 'Death', 13, 'Human Pride', '1994-11-16', 16556.88, 2.82, 19.00, '1994-12-13', b'0'),
+	(155, 'Ginny', 'Weasley', 'Only daughter and youngest child of Arthur and Molly Weasley, Gryffindor student one year under Harry, Gryffindor Quidditch Seeker and Chaser, a member of Dumbledore\'s Army.', 47, 'Ollivander family', 12, 'Venomous Tongue', '1990-03-21', 9347.41, 28.27, 78.00, '1990-03-31', b'0'),
+	(156, 'Molly', 'Weasley', 'Wife of Arthur Weasley, mother of Bill, Charlie, Percy, Fred, George, Ron and Ginny Weasley, a member of the Order of the Phoenix.', 14, 'Mykew Gregorovitch', 18, 'Blue Phoenix', '1992-02-03', 39815.04, 9.43, 53.00, '1992-08-30', b'0'),
+	(157, 'Percy', 'Weasley', 'Third son of Arthur and Molly Weasley, Gryffindor prefect and Head Boy then Ministry of Magic employee, long estranged from his family before joining them against the Death Eaters in Deathly Hallows,', 54, 'Arturo Cephalopos', 14, 'Troll Chest', '1985-04-24', 25537.20, 3.05, 12.00, '1985-05-16', b'1'),
+	(158, 'Ron', 'Weasley', 'Harry\'s close friend, youngest Son of Arthur and Molly Weasley, Gryffindor Quidditch Keeper, school prefect, a member of Dumbledore\'s Army.', 51, 'Death', 26, 'Human Pride', '1985-07-16', 4085.37, 25.25, 32.00, '1985-09-29', b'1'),
+	(159, 'Oliver', 'Wood', 'Hogwarts student, Gryffindor Quidditch Keeper and captain.', 26, 'Ollivander family', 10, 'Venomous Tongue', '1985-06-29', 40902.03, 10.82, 68.00, '1985-08-01', b'1'),
+	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
+	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort\'s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
+	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry\'s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
 [/input]
 [output]
-Butter
-2016-09-19 00:00:00
-2016-09-22 00:00:00
-2016-10-19 00:00:00
-Milk
-2016-09-30 00:00:00
-2016-10-03 00:00:00
-2016-10-30 00:00:00
-Cheese
-2016-09-04 00:00:00
-2016-09-07 00:00:00
-2016-10-04 00:00:00
-Bread
-2015-12-20 00:00:00
-2015-12-23 00:00:00
-2016-01-20 00:00:00
-Tomatoes
-2015-01-01 00:00:00
-2015-01-04 00:00:00
-2015-02-01 00:00:00
-Tomatoe2
-2015-02-01 00:00:00
-2015-02-04 00:00:00
-2015-03-01 00:00:00
-Tomatoess
-2015-04-01 00:00:00
-2015-04-04 00:00:00
-2015-05-01 00:00:00
-Tomatoe3
-2015-01-28 00:00:00
-2015-01-31 00:00:00
-2015-02-28 00:00:00
-Tomatoe4
-2015-06-28 00:00:00
-2015-07-01 00:00:00
-2015-07-28 00:00:00
-Tomatoe44s
-2015-06-30 00:00:00
-2015-07-03 00:00:00
-2015-07-30 00:00:00
-Tomatoefggs
-2015-02-28 00:00:00
-2015-03-03 00:00:00
-2015-03-28 00:00:00
-Tomatoesytu
-2016-02-28 00:00:00
-2016-03-02 00:00:00
-2016-03-28 00:00:00
-Toyymatddoehys
-2015-12-31 00:00:00
-2016-01-03 00:00:00
-2016-01-31 00:00:00
-Tom443atoes
-2015-12-15 00:00:00
-2015-12-18 00:00:00
-2016-01-15 00:00:00
-Tomat65434foe23gfhgsPep
-2015-10-04 00:00:00
-2015-10-07 00:00:00
-2015-11-04 00:00:00
+162
 [/output]
 [/test]
 [/tests]
@@ -44665,7 +43928,7 @@ Your query should return:
 
 | department_id | minimum_salary |
 | --- | --- |
-| 2 | 25000.00 |
+| 2 | 25000.0000 |
 | ... | ... |
 
 [/task-description]
@@ -45504,6 +44767,8 @@ Sort the result by **department_id** in **ascending** order.
 
 ## Example
 
+// check tests
+
 | department_id | avg_salary |
 | --- | --- |
 | 1 | 45166.66666667 |
@@ -45698,7 +44963,7 @@ Sort the result by **department_id** in **ascending** order.
 
 | department_id | max_salary |
 | --- | --- |
-| 2 | 29800.00 |
+| 2 | 29800.0000 |
 | ... | ... |
 
 [/task-description]
@@ -46151,7 +45416,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 
 Count the salaries of all employees who **do not have a manager.**
 
-| |
+| ***blank*** |
 | --- |
 | 4 |
 
@@ -46586,7 +45851,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
+	(5, 'Thierry', 'D\'Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
 	(6, 'David', 'Bradley', 'M', 'Marketing Manager', 5, 109, '2000-01-20 00:00:00.000000', 37500.0000, 199),
 	(7, 'JoLynn', 'Dobney', 'M', 'Production Supervisor', 7, 21, '2000-01-26 00:00:00.000000', 25000.0000, 275),
 	(8, 'Ruth', 'Ellerbrock', 'Ann', 'Production Technician', 7, 185, '2000-02-06 00:00:00.000000', 13500.0000, 108),
@@ -46632,7 +45897,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(48, 'Jun', 'Cao', 'T', 'Production Technician', 7, 38, '2001-01-15 00:00:00.000000', 11000.0000, 197),
 	(49, 'Christian', 'Kleinerman', 'E', 'Maintenance Supervisor', 14, 218, '2001-01-15 00:00:00.000000', 20400.0000, 118),
 	(50, 'Susan', 'Metters', 'A', 'Production Technician', 7, 184, '2001-01-15 00:00:00.000000', 9500.0000, 224),
-	(51, 'Reuben', 'D''sa', 'H', 'Production Supervisor', 7, 21, '2001-01-16 00:00:00.000000', 25000.0000, 249),
+	(51, 'Reuben', 'D\'sa', 'H', 'Production Supervisor', 7, 21, '2001-01-16 00:00:00.000000', 25000.0000, 249),
 	(52, 'Kirk', 'Koenigsbauer', 'J', 'Production Technician', 7, 123, '2001-01-16 00:00:00.000000', 10000.0000, 250),
 	(53, 'David', 'Ortiz', 'J', 'Production Technician', 7, 18, '2001-01-16 00:00:00.000000', 12500.0000, 267),
 	(54, 'Tengiz', 'Kharatishvili', '', 'Control Specialist', 12, 90, '2001-01-17 00:00:00.000000', 16800.0000, 129),
@@ -46877,67 +46142,377 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 [/input]
 [output]
-4
-[/output]
-[/test]
-[test]
-[input]
-\# test 1 : SELECT COUNT(\*) AS employee_count FROM employees AS e;
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`)
-); 
-
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, null, '1998-07-31 00:00:00.000000', 12500.0000, 166),
-	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, null, '1999-02-26 00:00:00.000000', 13500.0000, 102),
-	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, null, '1999-12-12 00:00:00.000000', 43300.0000, 193),
-	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, null, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, null, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-[/input]
-[output]
-5
-[/output]
-[/test]
-[test]
-[input]
-\# test 2 : SELECT COUNT(\*) AS employee_count FROM employees AS e WHERE e.manager_id IS NULL;
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`)
-); 
-
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, null, '1998-07-31 00:00:00.000000', 12500.0000, 166),
-	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 1, '1999-02-26 00:00:00.000000', 13500.0000, 102),
-	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, null, '1999-12-12 00:00:00.000000', 43300.0000, 193),
-	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, null, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-[/input]
-[output]
+1
+36100.0000
+2
+25000.0000
 3
+23100.0000
+5
+12800.0000
+6
+42500.0000
+7
+15000.0000
+8
+16000.0000
+9
+16600.0000
+10
+26400.0000
+11
+38500.0000
+12
+10300.0000
+13
+21600.0000
+14
+9800.0000
+15
+9000.0000
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `PK_Employees` (`employee_id`)
+); 
+
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
+	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
+	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
+	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
+	(5, 'Thierry', 'D\'Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
+	(6, 'David', 'Bradley', 'M', 'Marketing Manager', 5, 109, '2000-01-20 00:00:00.000000', 37500.0000, 199),
+	(7, 'JoLynn', 'Dobney', 'M', 'Production Supervisor', 7, 21, '2000-01-26 00:00:00.000000', 25000.0000, 275),
+	(8, 'Ruth', 'Ellerbrock', 'Ann', 'Production Technician', 7, 185, '2000-02-06 00:00:00.000000', 13500.0000, 108),
+	(9, 'Gail', 'Erickson', 'A', 'Design Engineer', 1, 3, '2000-02-06 00:00:00.000000', 32700.0000, 22),
+	(10, 'Barry', 'Johnson', 'K', 'Production Technician', 7, 185, '2000-02-07 00:00:00.000000', 13500.0000, 285),
+	(11, 'Jossef', 'Goldberg', 'H', 'Design Engineer', 1, 3, '2000-02-24 00:00:00.000000', 32700.0000, 214),
+	(12, 'Terri', 'Duffy', 'Lee', 'Vice President of Engineering', 1, 109, '2000-03-03 00:00:00.000000', 63500.0000, 209),
+	(13, 'Sidney', 'Higa', 'M', 'Production Technician', 7, 185, '2000-03-05 00:00:00.000000', 13500.0000, 73),
+	(14, 'Taylor', 'Maxwell', 'R', 'Production Supervisor', 7, 21, '2000-03-11 00:00:00.000000', 25000.0000, 82),
+	(15, 'Jeffrey', 'Ford', 'L', 'Production Technician', 7, 185, '2000-03-23 00:00:00.000000', 13500.0000, 156),
+	(16, 'Jo', 'Brown', 'A', 'Production Supervisor', 7, 21, '2000-03-30 00:00:00.000000', 25000.0000, 70),
+	(17, 'Doris', 'Hartwig', 'M', 'Production Technician', 7, 185, '2000-04-11 00:00:00.000000', 13500.0000, 144),
+	(18, 'John', 'Campbell', 'T', 'Production Supervisor', 7, 21, '2000-04-18 00:00:00.000000', 25000.0000, 245),
+	(19, 'Diane', 'Glimp', 'R', 'Production Technician', 7, 185, '2000-04-29 00:00:00.000000', 13500.0000, 184),
+	(20, 'Steven', 'Selikoff', 'T', 'Production Technician', 7, 173, '2001-01-02 00:00:00.000000', 9500.0000, 104),
+	(21, 'Peter', 'Krebs', 'J', 'Production Control Manager', 8, 148, '2001-01-02 00:00:00.000000', 24500.0000, 11),
+	(22, 'Stuart', 'Munson', 'V', 'Production Technician', 7, 197, '2001-01-03 00:00:00.000000', 10000.0000, 36),
+	(23, 'Greg', 'Alderson', 'F', 'Production Technician', 7, 197, '2001-01-03 00:00:00.000000', 10000.0000, 18),
+	(24, 'David', 'Johnson', '', 'Production Technician', 7, 184, '2001-01-03 00:00:00.000000', 9500.0000, 142),
+	(25, 'Zheng', 'Mu', 'W', 'Production Supervisor', 7, 21, '2001-01-04 00:00:00.000000', 25000.0000, 278),
+	(26, 'Ivo', 'Salmre', 'William', 'Production Technician', 7, 108, '2001-01-05 00:00:00.000000', 14000.0000, 165),
+	(27, 'Paul', 'Komosinski', 'B', 'Production Technician', 7, 87, '2001-01-05 00:00:00.000000', 15000.0000, 32),
+	(28, 'Ashvini', 'Sharma', 'R', 'Network Administrator', 11, 150, '2001-01-05 00:00:00.000000', 32500.0000, 133),
+	(29, 'Kendall', 'Keil', 'C', 'Production Technician', 7, 14, '2001-01-06 00:00:00.000000', 11000.0000, 257),
+	(30, 'Paula', 'Barreto de Mattos', 'M', 'Human Resources Manager', 9, 140, '2001-01-07 00:00:00.000000', 27100.0000, 2),
+	(31, 'Alejandro', 'McGuel', 'E', 'Production Technician', 7, 210, '2001-01-07 00:00:00.000000', 15000.0000, 274),
+	(32, 'Garrett', 'Young', 'R', 'Production Technician', 7, 184, '2001-01-08 00:00:00.000000', 9500.0000, 283),
+	(33, 'Jian Shuo', 'Wang', NULL, 'Production Technician', 7, 135, '2001-01-08 00:00:00.000000', 9500.0000, 160),
+	(34, 'Susan', 'Eaton', 'W', 'Stocker', 15, 85, '2001-01-08 00:00:00.000000', 9000.0000, 204),
+	(35, 'Vamsi', 'Kuppa', '', 'Shipping and Receiving Clerk', 15, 85, '2001-01-08 00:00:00.000000', 9500.0000, 51),
+	(36, 'Alice', 'Ciccu', 'O', 'Production Technician', 7, 38, '2001-01-08 00:00:00.000000', 11000.0000, 284),
+	(37, 'Simon', 'Rapier', 'D', 'Production Technician', 7, 7, '2001-01-09 00:00:00.000000', 12500.0000, 64),
+	(38, 'Jinghao', 'Liu', 'K', 'Production Supervisor', 7, 21, '2001-01-09 00:00:00.000000', 25000.0000, 55),
+	(39, 'Michael', 'Hines', 'T', 'Production Technician', 7, 182, '2001-01-10 00:00:00.000000', 14000.0000, 168),
+	(40, 'Yvonne', 'McKay', 'S', 'Production Technician', 7, 159, '2001-01-10 00:00:00.000000', 10000.0000, 107),
+	(41, 'Peng', 'Wu', 'J', 'Quality Assurance Supervisor', 13, 200, '2001-01-10 00:00:00.000000', 21600.0000, 39),
+	(42, 'Jean', 'Trenary', 'E', 'Information Services Manager', 11, 109, '2001-01-12 00:00:00.000000', 50500.0000, 194),
+	(43, 'Russell', 'Hunter', NULL, 'Production Technician', 7, 74, '2001-01-13 00:00:00.000000', 11000.0000, 258),
+	(44, 'A. Scott', 'Wright', NULL, 'Master Scheduler', 8, 148, '2001-01-13 00:00:00.000000', 23600.0000, 172),
+	(45, 'Fred', 'Northup', 'T', 'Production Technician', 7, 210, '2001-01-13 00:00:00.000000', 15000.0000, 282),
+	(46, 'Sariya', 'Harnpadoungsataya', 'E', 'Marketing Specialist', 4, 6, '2001-01-13 00:00:00.000000', 14400.0000, 106),
+	(47, 'Willis', 'Johnson', 'T', 'Recruiter', 9, 30, '2001-01-14 00:00:00.000000', 18300.0000, 99),
+	(48, 'Jun', 'Cao', 'T', 'Production Technician', 7, 38, '2001-01-15 00:00:00.000000', 11000.0000, 197),
+	(49, 'Christian', 'Kleinerman', 'E', 'Maintenance Supervisor', 14, 218, '2001-01-15 00:00:00.000000', 20400.0000, 118),
+	(50, 'Susan', 'Metters', 'A', 'Production Technician', 7, 184, '2001-01-15 00:00:00.000000', 9500.0000, 224),
+	(51, 'Reuben', 'D\'sa', 'H', 'Production Supervisor', 7, 21, '2001-01-16 00:00:00.000000', 25000.0000, 249),
+	(52, 'Kirk', 'Koenigsbauer', 'J', 'Production Technician', 7, 123, '2001-01-16 00:00:00.000000', 10000.0000, 250),
+	(53, 'David', 'Ortiz', 'J', 'Production Technician', 7, 18, '2001-01-16 00:00:00.000000', 12500.0000, 267),
+	(54, 'Tengiz', 'Kharatishvili', '', 'Control Specialist', 12, 90, '2001-01-17 00:00:00.000000', 16800.0000, 129),
+	(55, 'Hanying', 'Feng', 'P', 'Production Technician', 7, 143, '2001-01-17 00:00:00.000000', 14000.0000, 182),
+	(56, 'Kevin', 'Liu', 'H', 'Production Technician', 7, 210, '2001-01-18 00:00:00.000000', 15000.0000, 259),
+	(57, 'Annik', 'Stahl', 'O', 'Production Technician', 7, 16, '2001-01-18 00:00:00.000000', 12500.0000, 262),
+	(58, 'Suroor', 'Fatima', 'R', 'Production Technician', 7, 38, '2001-01-18 00:00:00.000000', 11000.0000, 86),
+	(59, 'Deborah', 'Poe', 'E', 'Accounts Receivable Specialist', 10, 139, '2001-01-19 00:00:00.000000', 19000.0000, 103),
+	(60, 'Jim', 'Scardelis', 'H', 'Production Technician', 7, 74, '2001-01-20 00:00:00.000000', 11000.0000, 88),
+	(61, 'Carole', 'Poland', 'M', 'Production Technician', 7, 173, '2001-01-20 00:00:00.000000', 9500.0000, 72),
+	(62, 'George', 'Li', 'Z', 'Production Technician', 7, 184, '2001-01-22 00:00:00.000000', 9500.0000, 58),
+	(63, 'Gary', 'Yukish', 'W', 'Production Technician', 7, 87, '2001-01-23 00:00:00.000000', 15000.0000, 80),
+	(64, 'Cristian', 'Petculescu', 'K', 'Production Supervisor', 7, 21, '2001-01-23 00:00:00.000000', 25000.0000, 276),
+	(65, 'Raymond', 'Sam', 'K', 'Production Technician', 7, 143, '2001-01-24 00:00:00.000000', 14000.0000, 75),
+	(66, 'Janaina', 'Bueno', 'Barreiro Gambaro', 'Application Specialist', 11, 42, '2001-01-24 00:00:00.000000', 27400.0000, 131),
+	(67, 'Bob', 'Hohman', '', 'Production Technician', 7, 14, '2001-01-25 00:00:00.000000', 11000.0000, 44),
+	(68, 'Shammi', 'Mohamed', 'G', 'Production Technician', 7, 210, '2001-01-25 00:00:00.000000', 15000.0000, 4),
+	(69, 'Linda', 'Moschell', 'K', 'Production Technician', 7, 38, '2001-01-26 00:00:00.000000', 11000.0000, 5),
+	(70, 'Mindy', 'Martin', 'C', 'Benefits Specialist', 9, 30, '2001-01-26 00:00:00.000000', 16600.0000, 171),
+	(71, 'Wendy', 'Kahn', 'Beth', 'Finance Manager', 10, 140, '2001-01-26 00:00:00.000000', 43300.0000, 232),
+	(72, 'Kim', 'Ralls', 'T', 'Stocker', 15, 85, '2001-01-27 00:00:00.000000', 9000.0000, 42),
+	(73, 'Sandra', 'Reategui Alayo', NULL, 'Production Technician', 7, 135, '2001-01-27 00:00:00.000000', 9500.0000, 255),
+	(74, 'Kok-Ho', 'Loh', 'T', 'Production Supervisor', 7, 21, '2001-01-28 00:00:00.000000', 25000.0000, 10),
+	(75, 'Douglas', 'Hite', 'B', 'Production Technician', 7, 159, '2001-01-28 00:00:00.000000', 10000.0000, 57),
+	(76, 'James', 'Kramer', 'D', 'Production Technician', 7, 7, '2001-01-28 00:00:00.000000', 12500.0000, 162),
+	(77, 'Sean', 'Alexander', 'P', 'Quality Assurance Technician', 13, 41, '2001-01-29 00:00:00.000000', 10600.0000, 210),
+	(78, 'Nitin', 'Mirchandani', 'S', 'Production Technician', 7, 182, '2001-01-29 00:00:00.000000', 14000.0000, 231),
+	(79, 'Diane', 'Margheim', 'L', 'Research and Development Engineer', 6, 158, '2001-01-30 00:00:00.000000', 40900.0000, 111),
+	(80, 'Rebecca', 'Laszlo', 'A', 'Production Technician', 7, 16, '2001-01-30 00:00:00.000000', 12500.0000, 6),
+	(81, 'Rajesh', 'Patel', 'M', 'Production Technician', 7, 210, '2001-02-01 00:00:00.000000', 15000.0000, 81),
+	(82, 'Vidur', 'Luthra', 'X', 'Recruiter', 9, 30, '2001-02-02 00:00:00.000000', 18300.0000, 176),
+	(83, 'John', 'Evans', 'P', 'Production Technician', 7, 38, '2001-02-02 00:00:00.000000', 11000.0000, 253),
+	(84, 'Nancy', 'Anderson', 'A', 'Production Technician', 7, 7, '2001-02-03 00:00:00.000000', 12500.0000, 227),
+	(85, 'Pilar', 'Ackerman', 'G', 'Shipping and Receiving Supervisor', 15, 21, '2001-02-03 00:00:00.000000', 19200.0000, 269),
+	(86, 'David', 'Yalovsky', 'A', 'Production Technician', 7, 184, '2001-02-03 00:00:00.000000', 9500.0000, 241),
+	(87, 'David', 'Hamilton', 'P', 'Production Supervisor', 7, 21, '2001-02-04 00:00:00.000000', 25000.0000, 150),
+	(88, 'Laura', 'Steele', 'C', 'Production Technician', 7, 123, '2001-02-04 00:00:00.000000', 10000.0000, 62),
+	(89, 'Margie', 'Shoop', 'W', 'Production Technician', 7, 16, '2001-02-05 00:00:00.000000', 12500.0000, 92),
+	(90, 'Zainal', 'Arifin', 'T', 'Document Control Manager', 12, 200, '2001-02-05 00:00:00.000000', 17800.0000, 128),
+	(91, 'Lorraine', 'Nay', 'O', 'Production Technician', 7, 210, '2001-02-05 00:00:00.000000', 15000.0000, 94),
+	(92, 'Fadi', 'Fakhouri', 'K', 'Production Technician', 7, 143, '2001-02-05 00:00:00.000000', 14000.0000, 281),
+	(93, 'Ryan', 'Cornelsen', 'L', 'Production Technician', 7, 51, '2001-02-06 00:00:00.000000', 15000.0000, 228),
+	(94, 'Candy', 'Spoon', 'L', 'Accounts Receivable Specialist', 10, 139, '2001-02-07 00:00:00.000000', 19000.0000, 122),
+	(95, 'Nuan', 'Yu', NULL, 'Production Technician', 7, 74, '2001-02-07 00:00:00.000000', 11000.0000, 12),
+	(96, 'William', 'Vong', 'S', 'Scheduling Assistant', 8, 44, '2001-02-08 00:00:00.000000', 16000.0000, 35),
+	(97, 'Bjorn', 'Rettig', 'M', 'Production Technician', 7, 173, '2001-02-08 00:00:00.000000', 9500.0000, 268),
+	(98, 'Scott', 'Gode', 'R', 'Production Technician', 7, 197, '2001-02-09 00:00:00.000000', 10000.0000, 256),
+	(99, 'Michael', 'Rothkugel', 'L', 'Production Technician', 7, 87, '2001-02-11 00:00:00.000000', 15000.0000, 93),
+	(100, 'Lane', 'Sacksteder', 'M', 'Production Technician', 7, 143, '2001-02-12 00:00:00.000000', 14000.0000, 239),
+	(101, 'Pete', 'Male', 'C', 'Production Technician', 7, 14, '2001-02-12 00:00:00.000000', 11000.0000, 273),
+	(102, 'Dan', 'Bacon', 'K', 'Application Specialist', 11, 42, '2001-02-12 00:00:00.000000', 27400.0000, 126),
+	(103, 'David', 'Barber', 'M', 'Assistant to the Chief Financial Officer', 10, 140, '2001-02-13 00:00:00.000000', 13500.0000, 173),
+	(104, 'Lolan', 'Song', 'B', 'Production Technician', 7, 74, '2001-02-13 00:00:00.000000', 11000.0000, 77),
+	(105, 'Paula', 'Nartker', 'R', 'Production Technician', 7, 210, '2001-02-13 00:00:00.000000', 15000.0000, 247),
+	(106, 'Mary', 'Gibson', 'E', 'Marketing Specialist', 4, 6, '2001-02-13 00:00:00.000000', 14400.0000, 110),
+	(107, 'Mindaugas', 'Krapauskas', 'J', 'Production Technician', 7, 38, '2001-02-14 00:00:00.000000', 11000.0000, 74),
+	(108, 'Eric', 'Gubbels', NULL, 'Production Supervisor', 7, 21, '2001-02-15 00:00:00.000000', 25000.0000, 85),
+	(109, 'Ken', 'Sanchez', 'J', 'Chief Executive Officer', 16, NULL, '2001-02-15 00:00:00.000000', 125500.0000, 177),
+	(110, 'Jason', 'Watters', 'M', 'Production Technician', 7, 135, '2001-02-15 00:00:00.000000', 9500.0000, 21),
+	(111, 'Mark', 'Harrington', 'L', 'Quality Assurance Technician', 13, 41, '2001-02-16 00:00:00.000000', 10600.0000, 139),
+	(112, 'Janeth', 'Esteves', 'M', 'Production Technician', 7, 159, '2001-02-16 00:00:00.000000', 10000.0000, 163),
+	(113, 'Marc', 'Ingle', 'J', 'Production Technician', 7, 184, '2001-02-17 00:00:00.000000', 9500.0000, 230),
+	(114, 'Gigi', 'Matthew', '', 'Research and Development Engineer', 6, 158, '2001-02-17 00:00:00.000000', 40900.0000, 23),
+	(115, 'Paul', 'Singh', 'R', 'Production Technician', 7, 108, '2001-02-18 00:00:00.000000', 14000.0000, 16),
+	(116, 'Frank', 'Lee', 'T', 'Production Technician', 7, 210, '2001-02-18 00:00:00.000000', 15000.0000, 263),
+	(117, 'Francois', 'Ajenstat', 'P', 'Database Administrator', 11, 42, '2001-02-18 00:00:00.000000', 38500.0000, 127),
+	(118, 'Diane', 'Tibbott', 'H', 'Production Technician', 7, 14, '2001-02-19 00:00:00.000000', 11000.0000, 140),
+	(119, 'Jill', 'Williams', 'A', 'Marketing Specialist', 4, 6, '2001-02-19 00:00:00.000000', 14400.0000, 114),
+	(120, 'Angela', 'Barbariol', 'W', 'Production Technician', 7, 38, '2001-02-21 00:00:00.000000', 11000.0000, 91),
+	(121, 'Matthias', 'Berndt', 'T', 'Shipping and Receiving Clerk', 15, 85, '2001-02-21 00:00:00.000000', 9500.0000, 201),
+	(122, 'Bryan', 'Baker', NULL, 'Production Technician', 7, 7, '2001-02-22 00:00:00.000000', 12500.0000, 166),
+	(123, 'Jeff', 'Hay', 'V', 'Production Supervisor', 7, 21, '2001-02-22 00:00:00.000000', 25000.0000, 113),
+	(124, 'Eugene', 'Zabokritski', 'R', 'Production Technician', 7, 184, '2001-02-22 00:00:00.000000', 9500.0000, 226),
+	(125, 'Barbara', 'Decker', 'S', 'Production Technician', 7, 182, '2001-02-23 00:00:00.000000', 14000.0000, 219),
+	(126, 'Chris', 'Preston', 'T', 'Production Technician', 7, 123, '2001-02-23 00:00:00.000000', 10000.0000, 279),
+	(127, 'Sean', 'Chai', '', 'Document Control Assistant', 12, 90, '2001-02-23 00:00:00.000000', 10300.0000, 138),
+	(128, 'Dan', 'Wilson', 'B', 'Database Administrator', 11, 42, '2001-02-23 00:00:00.000000', 38500.0000, 30),
+	(129, 'Mark', 'McArthur', 'K', 'Production Technician', 7, 16, '2001-02-24 00:00:00.000000', 12500.0000, 186),
+	(130, 'Bryan', 'Walton', 'A', 'Accounts Receivable Specialist', 10, 139, '2001-02-25 00:00:00.000000', 19000.0000, 175),
+	(131, 'Houman', 'Pournasseh', '', 'Production Technician', 7, 74, '2001-02-26 00:00:00.000000', 11000.0000, 185),
+	(132, 'Sairaj', 'Uddin', 'L', 'Scheduling Assistant', 8, 44, '2001-02-27 00:00:00.000000', 16000.0000, 190),
+	(133, 'Michiko', 'Osada', 'F', 'Production Technician', 7, 173, '2001-02-27 00:00:00.000000', 9500.0000, 229),
+	(134, 'Benjamin', 'Martin', 'R', 'Production Technician', 7, 184, '2001-02-28 00:00:00.000000', 9500.0000, 286),
+	(135, 'Cynthia', 'Randall', 'S', 'Production Supervisor', 7, 21, '2001-02-28 00:00:00.000000', 25000.0000, 147),
+	(136, 'Kathie', 'Flood', 'E', 'Production Technician', 7, 197, '2001-02-28 00:00:00.000000', 10000.0000, 100),
+	(137, 'Britta', 'Simon', 'L', 'Production Technician', 7, 16, '2001-03-02 00:00:00.000000', 12500.0000, 95),
+	(138, 'Brian', 'Lloyd', 'T', 'Production Technician', 7, 210, '2001-03-02 00:00:00.000000', 15000.0000, 288),
+	(139, 'David', 'Liu', 'J', 'Accounts Manager', 10, 140, '2001-03-03 00:00:00.000000', 34700.0000, 119),
+	(140, 'Laura', 'Norman', 'F', 'Chief Financial Officer', 16, 109, '2001-03-04 00:00:00.000000', 60100.0000, 215),
+	(141, 'Michael', 'Patten', 'W', 'Production Technician', 7, 38, '2001-03-04 00:00:00.000000', 11000.0000, 96),
+	(142, 'Andy', 'Ruth', 'M', 'Production Technician', 7, 135, '2001-03-04 00:00:00.000000', 9500.0000, 1),
+	(143, 'Yuhong', 'Li', 'L', 'Production Supervisor', 7, 21, '2001-03-05 00:00:00.000000', 25000.0000, 242),
+	(144, 'Robert', 'Rounthwaite', 'J', 'Production Technician', 7, 159, '2001-03-06 00:00:00.000000', 10000.0000, 280),
+	(145, 'Andreas', 'Berglund', 'T', 'Quality Assurance Technician', 13, 41, '2001-03-06 00:00:00.000000', 10600.0000, 208),
+	(146, 'Reed', 'Koch', 'T', 'Production Technician', 7, 184, '2001-03-06 00:00:00.000000', 9500.0000, 191),
+	(147, 'Linda', 'Randall', 'A', 'Production Technician', 7, 143, '2001-03-07 00:00:00.000000', 14000.0000, 260),
+	(148, 'James', 'Hamilton', 'R', 'Vice President of Production', 7, 109, '2001-03-07 00:00:00.000000', 84100.0000, 158),
+	(149, 'Ramesh', 'Meyyappan', 'V', 'Application Specialist', 11, 42, '2001-03-07 00:00:00.000000', 27400.0000, 130),
+	(150, 'Stephanie', 'Conroy', 'A', 'Network Manager', 11, 42, '2001-03-08 00:00:00.000000', 39700.0000, 136),
+	(151, 'Samantha', 'Smith', 'H', 'Production Technician', 7, 108, '2001-03-08 00:00:00.000000', 14000.0000, 14),
+	(152, 'Tawana', 'Nusbaum', 'G', 'Production Technician', 7, 210, '2001-03-09 00:00:00.000000', 15000.0000, 237),
+	(153, 'Denise', 'Smith', 'H', 'Production Technician', 7, 14, '2001-03-09 00:00:00.000000', 11000.0000, 143),
+	(154, 'Hao', 'Chen', 'O', 'Human Resources Administrative Assistant', 9, 30, '2001-03-10 00:00:00.000000', 13900.0000, 135),
+	(155, 'Alex', 'Nayberg', 'M', 'Production Technician', 7, 123, '2001-03-12 00:00:00.000000', 10000.0000, 174),
+	(156, 'Eugene', 'Kogan', 'O', 'Production Technician', 7, 7, '2001-03-12 00:00:00.000000', 12500.0000, 71),
+	(157, 'Brandon', 'Heidepriem', 'G', 'Production Technician', 7, 16, '2001-03-12 00:00:00.000000', 12500.0000, 189),
+	(158, 'Dylan', 'Miller', 'A', 'Research and Development Manager', 6, 3, '2001-03-12 00:00:00.000000', 50500.0000, 141),
+	(159, 'Shane', 'Kim', 'S', 'Production Supervisor', 7, 21, '2001-03-12 00:00:00.000000', 25000.0000, 20),
+	(160, 'John', 'Chen', 'Y', 'Production Technician', 7, 182, '2001-03-13 00:00:00.000000', 14000.0000, 65),
+	(161, 'Karen', 'Berge', 'R', 'Document Control Assistant', 12, 90, '2001-03-13 00:00:00.000000', 10300.0000, 123),
+	(162, 'Jose', 'Lugo', 'R', 'Production Technician', 7, 16, '2001-03-14 00:00:00.000000', 12500.0000, 271),
+	(163, 'Mandar', 'Samant', 'H', 'Production Technician', 7, 74, '2001-03-14 00:00:00.000000', 11000.0000, 63),
+	(164, 'Mikael', 'Sandberg', 'Q', 'Buyer', 5, 274, '2001-03-14 00:00:00.000000', 18300.0000, 50),
+	(165, 'Sameer', 'Tejani', 'A', 'Production Technician', 7, 74, '2001-03-15 00:00:00.000000', 11000.0000, 66),
+	(166, 'Dragan', 'Tomic', 'K', 'Accounts Payable Specialist', 10, 139, '2001-03-15 00:00:00.000000', 19000.0000, 115),
+	(167, 'Carol', 'Philips', 'M', 'Production Technician', 7, 173, '2001-03-16 00:00:00.000000', 9500.0000, 45),
+	(168, 'Rob', 'Caron', 'T', 'Production Technician', 7, 87, '2001-03-17 00:00:00.000000', 15000.0000, 161),
+	(169, 'Don', 'Hall', 'L', 'Production Technician', 7, 38, '2001-03-17 00:00:00.000000', 11000.0000, 59),
+	(170, 'Alan', 'Brewer', 'J', 'Scheduling Assistant', 8, 44, '2001-03-17 00:00:00.000000', 16000.0000, 151),
+	(171, 'David', 'Lawrence', 'Oliver', 'Production Technician', 7, 184, '2001-03-18 00:00:00.000000', 9500.0000, 167),
+	(172, 'Baris', 'Cetinok', 'F', 'Production Technician', 7, 87, '2001-03-19 00:00:00.000000', 15000.0000, 244),
+	(173, 'Michael', 'Ray', 'Sean', 'Production Supervisor', 7, 21, '2001-03-19 00:00:00.000000', 25000.0000, 277),
+	(174, 'Steve', 'Masters', 'F', 'Production Technician', 7, 18, '2001-03-19 00:00:00.000000', 12500.0000, 252),
+	(175, 'Suchitra', 'Mohan', 'O', 'Production Technician', 7, 16, '2001-03-20 00:00:00.000000', 12500.0000, 31),
+	(176, 'Karen', 'Berg', 'A', 'Application Specialist', 11, 42, '2001-03-20 00:00:00.000000', 27400.0000, 132),
+	(177, 'Terrence', 'Earls', 'W', 'Production Technician', 7, 143, '2001-03-20 00:00:00.000000', 14000.0000, 34),
+	(178, 'Barbara', 'Moreland', 'C', 'Accountant', 10, 139, '2001-03-22 00:00:00.000000', 26400.0000, 254),
+	(179, 'Chad', 'Niswonger', 'W', 'Production Technician', 7, 38, '2001-03-22 00:00:00.000000', 11000.0000, 46),
+	(180, 'Rostislav', 'Shabalin', 'E', 'Production Technician', 7, 135, '2001-03-23 00:00:00.000000', 9500.0000, 9),
+	(181, 'Belinda', 'Newman', 'M', 'Production Technician', 7, 197, '2001-03-24 00:00:00.000000', 10000.0000, 43),
+	(182, 'Katie', 'McAskill-White', 'L', 'Production Supervisor', 7, 21, '2001-03-24 00:00:00.000000', 25000.0000, 240),
+	(183, 'Russell', 'King', 'M', 'Production Technician', 7, 184, '2001-03-25 00:00:00.000000', 9500.0000, 3),
+	(184, 'Jack', 'Richins', 'S', 'Production Supervisor', 7, 21, '2001-03-25 00:00:00.000000', 25000.0000, 169),
+	(185, 'Andrew', 'Hill', 'R', 'Production Supervisor', 7, 21, '2001-03-26 00:00:00.000000', 25000.0000, 97),
+	(186, 'Nicole', 'Holliday', 'B', 'Production Technician', 7, 87, '2001-03-26 00:00:00.000000', 15000.0000, 238),
+	(187, 'Frank', 'Miller', 'T', 'Production Technician', 7, 14, '2001-03-27 00:00:00.000000', 11000.0000, 289),
+	(188, 'Peter', 'Connelly', 'I', 'Network Administrator', 11, 150, '2001-03-27 00:00:00.000000', 32500.0000, 137),
+	(189, 'Anibal', 'Sousa', 'T', 'Production Technician', 7, 108, '2001-03-27 00:00:00.000000', 14000.0000, 183),
+	(190, 'Ken', 'Myer', 'L', 'Production Technician', 7, 210, '2001-03-28 00:00:00.000000', 15000.0000, 105),
+	(191, 'Grant', 'Culbertson', '', 'Human Resources Administrative Assistant', 9, 30, '2001-03-29 00:00:00.000000', 13900.0000, 117),
+	(192, 'Michael', 'Entin', 'T', 'Production Technician', 7, 38, '2001-03-29 00:00:00.000000', 11000.0000, 195),
+	(193, 'Lionel', 'Penuchot', 'C', 'Production Technician', 7, 159, '2001-03-30 00:00:00.000000', 10000.0000, 261),
+	(194, 'Thomas', 'Michaels', 'R', 'Production Technician', 7, 7, '2001-03-30 00:00:00.000000', 12500.0000, 78),
+	(195, 'Jimmy', 'Bischoff', 'T', 'Stocker', 15, 85, '2001-03-30 00:00:00.000000', 9000.0000, 206),
+	(196, 'Michael', 'Vanderhyde', 'T', 'Production Technician', 7, 135, '2001-03-30 00:00:00.000000', 9500.0000, 90),
+	(197, 'Lori', 'Kane', 'A', 'Production Supervisor', 7, 21, '2001-03-30 00:00:00.000000', 25000.0000, 198),
+	(198, 'Arvind', 'Rao', 'B', 'Buyer', 5, 274, '2001-04-01 00:00:00.000000', 18300.0000, 212),
+	(199, 'Stefen', 'Hesse', 'A', 'Production Technician', 7, 182, '2001-04-01 00:00:00.000000', 14000.0000, 68),
+	(200, 'Hazem', 'Abolrous', 'E', 'Quality Assurance Manager', 13, 148, '2001-04-01 00:00:00.000000', 28800.0000, 148),
+	(201, 'Janet', 'Sheperdigian', 'L', 'Accounts Payable Specialist', 10, 139, '2001-04-02 00:00:00.000000', 19000.0000, 218),
+	(202, 'Elizabeth', 'Keyser', 'I', 'Production Technician', 7, 74, '2001-04-03 00:00:00.000000', 11000.0000, 152),
+	(203, 'Terry', 'Eminhizer', 'J', 'Marketing Specialist', 4, 6, '2001-04-03 00:00:00.000000', 14400.0000, 19),
+	(204, 'John', 'Frum', '', 'Production Technician', 7, 184, '2001-04-04 00:00:00.000000', 9500.0000, 112),
+	(205, 'Merav', 'Netz', 'A', 'Production Technician', 7, 173, '2001-04-04 00:00:00.000000', 9500.0000, 270),
+	(206, 'Brian', 'LaMee', 'P', 'Scheduling Assistant', 8, 44, '2001-04-04 00:00:00.000000', 16000.0000, 109),
+	(207, 'Kitti', 'Lertpiriyasuwat', 'H', 'Production Technician', 7, 38, '2001-04-05 00:00:00.000000', 11000.0000, 272),
+	(208, 'Jay', 'Adams', 'G', 'Production Technician', 7, 18, '2001-04-06 00:00:00.000000', 12500.0000, 157),
+	(209, 'Jan', 'Miksovsky', 'S', 'Production Technician', 7, 184, '2001-04-06 00:00:00.000000', 9500.0000, 101),
+	(210, 'Brenda', 'Diaz', 'M', 'Production Supervisor', 7, 21, '2001-04-06 00:00:00.000000', 25000.0000, 251),
+	(211, 'Andrew', 'Cencini', 'M', 'Production Technician', 7, 123, '2001-04-07 00:00:00.000000', 10000.0000, 233),
+	(212, 'Chris', 'Norred', 'K', 'Control Specialist', 12, 90, '2001-04-07 00:00:00.000000', 16800.0000, 125),
+	(213, 'Chris', 'Okelberry', 'O', 'Production Technician', 7, 16, '2001-04-08 00:00:00.000000', 12500.0000, 188),
+	(214, 'Shelley', 'Dyck', '', 'Production Technician', 7, 143, '2001-04-08 00:00:00.000000', 14000.0000, 164),
+	(215, 'Gabe', 'Mares', 'B', 'Production Technician', 7, 210, '2001-04-09 00:00:00.000000', 15000.0000, 87),
+	(216, 'Mike', 'Seamans', 'K', 'Accountant', 10, 139, '2001-04-09 00:00:00.000000', 26400.0000, 120),
+	(217, 'Michael', 'Raheem', NULL, 'Research and Development Manager', 6, 158, '2001-06-04 00:00:00.000000', 42500.0000, 236),
+	(218, 'Gary', 'Altman', 'E.', 'Facilities Manager', 14, 148, '2002-01-03 00:00:00.000000', 24000.0000, 203),
+	(219, 'Charles', 'Fitzgerald', 'B', 'Production Technician', 7, 18, '2002-01-04 00:00:00.000000', 12500.0000, 223),
+	(220, 'Ebru', 'Ersan', '', 'Production Technician', 7, 25, '2002-01-07 00:00:00.000000', 13500.0000, 225),
+	(221, 'Sylvester', 'Valdez', 'A', 'Production Technician', 7, 108, '2002-01-12 00:00:00.000000', 14000.0000, 25),
+	(222, 'Brian', 'Goldstein', 'Richard', 'Production Technician', 7, 51, '2002-01-12 00:00:00.000000', 15000.0000, 48),
+	(223, 'Linda', 'Meisner', 'P', 'Buyer', 5, 274, '2002-01-18 00:00:00.000000', 18300.0000, 28),
+	(224, 'Betsy', 'Stadick', 'A', 'Production Technician', 7, 64, '2002-01-19 00:00:00.000000', 13500.0000, 47),
+	(225, 'Magnus', 'Hedlund', 'E', 'Facilities Administrative Assistant', 14, 218, '2002-01-22 00:00:00.000000', 9800.0000, 211),
+	(226, 'Karan', 'Khanna', 'R', 'Production Technician', 7, 18, '2002-01-23 00:00:00.000000', 12500.0000, 248),
+	(227, 'Mary', 'Baker', 'R', 'Production Technician', 7, 25, '2002-01-26 00:00:00.000000', 13500.0000, 246),
+	(228, 'Kevin', 'Homer', 'M', 'Production Technician', 7, 25, '2002-01-26 00:00:00.000000', 13500.0000, 29),
+	(229, 'Mihail', 'Frintu', 'U', 'Production Technician', 7, 51, '2002-01-30 00:00:00.000000', 15000.0000, 89),
+	(230, 'Bonnie', 'Kearney', '', 'Production Technician', 7, 185, '2002-02-02 00:00:00.000000', 13500.0000, 287),
+	(231, 'Fukiko', 'Ogisu', 'J', 'Buyer', 5, 274, '2002-02-05 00:00:00.000000', 18300.0000, 17),
+	(232, 'Hung-Fu', 'Ting', 'T', 'Production Technician', 7, 108, '2002-02-07 00:00:00.000000', 14000.0000, 220),
+	(233, 'Gordon', 'Hee', 'L', 'Buyer', 5, 274, '2002-02-12 00:00:00.000000', 18300.0000, 15),
+	(234, 'Kimberly', 'Zimmerman', 'B', 'Production Technician', 7, 64, '2002-02-13 00:00:00.000000', 13500.0000, 266),
+	(235, 'Kim', 'Abercrombie', 'B', 'Production Technician', 7, 16, '2002-02-17 00:00:00.000000', 12500.0000, 56),
+	(236, 'Sandeep', 'Kaliyath', 'P', 'Production Technician', 7, 51, '2002-02-18 00:00:00.000000', 15000.0000, 234),
+	(237, 'Prasanna', 'Samarawickrama', 'E', 'Production Technician', 7, 108, '2002-02-23 00:00:00.000000', 14000.0000, 187),
+	(238, 'Frank', 'Pellow', 'S', 'Buyer', 5, 274, '2002-02-24 00:00:00.000000', 18300.0000, 213),
+	(239, 'Min', 'Su', 'G', 'Production Technician', 7, 108, '2002-02-25 00:00:00.000000', 14000.0000, 24),
+	(240, 'Eric', 'Brown', 'L', 'Production Technician', 7, 51, '2002-02-25 00:00:00.000000', 15000.0000, 67),
+	(241, 'Eric', 'Kurjan', 'S', 'Buyer', 5, 274, '2002-02-28 00:00:00.000000', 18300.0000, 207),
+	(242, 'Pat', 'Coleman', 'H', 'Janitor', 14, 49, '2002-02-28 00:00:00.000000', 9300.0000, 116),
+	(243, 'Maciej', 'Dusza', 'W', 'Production Technician', 7, 18, '2002-03-01 00:00:00.000000', 12500.0000, 83),
+	(244, 'Erin', 'Hagens', 'M', 'Buyer', 5, 274, '2002-03-03 00:00:00.000000', 18300.0000, 8),
+	(245, 'Patrick', 'Wedge', 'C', 'Production Technician', 7, 64, '2002-03-04 00:00:00.000000', 13500.0000, 7),
+	(246, 'Frank', 'Martinez', 'R', 'Production Technician', 7, 51, '2002-03-08 00:00:00.000000', 15000.0000, 290),
+	(247, 'Ed', 'Dudenhoefer', 'R', 'Production Technician', 7, 16, '2002-03-08 00:00:00.000000', 12500.0000, 243),
+	(248, 'Christopher', 'Hill', 'E', 'Production Technician', 7, 25, '2002-03-11 00:00:00.000000', 13500.0000, 41),
+	(249, 'Patrick', 'Cook', 'M', 'Production Technician', 7, 51, '2002-03-15 00:00:00.000000', 15000.0000, 264),
+	(250, 'Krishna', 'Sunkammurali', NULL, 'Production Technician', 7, 108, '2002-03-16 00:00:00.000000', 14000.0000, 79),
+	(251, 'Lori', 'Penor', 'K', 'Janitor', 14, 49, '2002-03-19 00:00:00.000000', 9300.0000, 124),
+	(252, 'Danielle', 'Tiedt', 'C', 'Production Technician', 7, 64, '2002-03-23 00:00:00.000000', 13500.0000, 146),
+	(253, 'Sootha', 'Charncherngkha', 'T', 'Quality Assurance Technician', 13, 41, '2002-03-26 00:00:00.000000', 10600.0000, 149),
+	(254, 'Michael', 'Zwilling', 'J', 'Production Technician', 7, 18, '2002-03-26 00:00:00.000000', 12500.0000, 76),
+	(255, 'Randy', 'Reeves', 'T', 'Production Technician', 7, 18, '2002-03-26 00:00:00.000000', 12500.0000, 84),
+	(256, 'John', 'Kane', 'T', 'Production Technician', 7, 25, '2002-03-30 00:00:00.000000', 13500.0000, 69),
+	(257, 'Jack', 'Creasey', 'T', 'Production Technician', 7, 51, '2002-04-03 00:00:00.000000', 15000.0000, 265),
+	(258, 'Olinda', 'Turner', 'C', 'Production Technician', 7, 108, '2002-04-04 00:00:00.000000', 14000.0000, 33),
+	(259, 'Stuart', 'Macrae', 'J', 'Janitor', 14, 49, '2002-04-05 00:00:00.000000', 9300.0000, 205),
+	(260, 'Jo', 'Berry', 'L', 'Janitor', 14, 49, '2002-04-07 00:00:00.000000', 9300.0000, 121),
+	(261, 'Ben', 'Miller', 'T', 'Buyer', 5, 274, '2002-04-09 00:00:00.000000', 18300.0000, 192),
+	(262, 'Tom', 'Vande Velde', 'M', 'Production Technician', 7, 64, '2002-04-10 00:00:00.000000', 13500.0000, 98),
+	(263, 'Ovidiu', 'Cracium', 'V', 'Senior Tool Designer', 2, 3, '2003-01-05 00:00:00.000000', 28800.0000, 145),
+	(264, 'Annette', 'Hill', 'L', 'Purchasing Assistant', 5, 274, '2003-01-06 00:00:00.000000', 12800.0000, 181),
+	(265, 'Janice', 'Galvin', 'M', 'Tool Designer', 2, 263, '2003-01-23 00:00:00.000000', 25000.0000, 200),
+	(266, 'Reinout', 'Hillmann', '', 'Purchasing Assistant', 5, 274, '2003-01-25 00:00:00.000000', 12800.0000, 27),
+	(267, 'Michael', 'Sullivan', 'I', 'Senior Design Engineer', 1, 3, '2003-01-30 00:00:00.000000', 36100.0000, 217),
+	(268, 'Stephen', 'Jiang', 'Y', 'North American Sales Manager', 3, 273, '2003-02-04 00:00:00.000000', 48100.0000, 196),
+	(269, 'Wanida', 'Benshoof', 'M', 'Marketing Assistant', 4, 6, '2003-02-07 00:00:00.000000', 13500.0000, 221),
+	(270, 'Sharon', 'Salavaria', 'B', 'Design Engineer', 1, 3, '2003-02-18 00:00:00.000000', 32700.0000, 216),
+	(271, 'John', 'Wood', 'L', 'Marketing Specialist', 4, 6, '2003-03-10 00:00:00.000000', 14400.0000, 180),
+	(272, 'Mary', 'Dempsey', 'A', 'Marketing Assistant', 4, 6, '2003-03-17 00:00:00.000000', 13500.0000, 26),
+	(273, 'Brian', 'Welcker', 'S', 'Vice President of Sales', 3, 109, '2003-03-18 00:00:00.000000', 72100.0000, 134),
+	(274, 'Sheela', 'Word', 'H', 'Purchasing Manager', 13, 71, '2003-03-28 00:00:00.000000', 30000.0000, 222),
+	(275, 'Michael', 'Blythe', 'G', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 60),
+	(276, 'Linda', 'Mitchell', 'C', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 170),
+	(277, 'Jillian', 'Carson', NULL, 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 61),
+	(278, 'Garrett', 'Vargas', 'R', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 52),
+	(279, 'Tsvi', 'Reiter', 'Michael', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 154),
+	(280, 'Pamela', 'Ansman-Wolfe', 'O', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 179),
+	(281, 'Shu', 'Ito', 'K', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 235),
+	(282, 'Jose', 'Saraiva', 'Edvaldo', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 178),
+	(283, 'David', 'Campbell', 'R', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 13),
+	(284, 'Amy', 'Alberts', 'E', 'European Sales Manager', 3, 273, '2004-05-18 00:00:00.000000', 48100.0000, 202),
+	(285, 'Jae', 'Pak', 'B', 'Sales Representative', 3, 284, '2004-07-01 00:00:00.000000', 23100.0000, 54),
+	(286, 'Ranjit', 'Varkey Chudukatil', 'R', 'Sales Representative', 3, 284, '2004-07-01 00:00:00.000000', 23100.0000, 38),
+	(287, 'Tete', 'Mensa-Annan', 'A', 'Sales Representative', 3, 268, '2004-11-01 00:00:00.000000', 23100.0000, 53),
+	(288, 'Syed', 'Abbas', 'E', 'Pacific Sales Manager', 3, 273, '2005-04-15 00:00:00.000000', 48100.0000, 49),
+	(289, 'Rachel', 'Valdez', 'B', 'Sales Representative', 3, 284, '2005-07-01 00:00:00.000000', 23100.0000, 37),
+	(290, 'Lynn', 'Tsoflias', '', 'Sales Representative', 3, 288, '2005-07-01 00:00:00.000000', 23100.0000, 153),
+	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
+	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
+	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
+[/input]
+[output]
+1
+36100.0000
+2
+25000.0000
+3
+23100.0000
+5
+12800.0000
+6
+42500.0000
+7
+15000.0000
+8
+16000.0000
+9
+16600.0000
+10
+26400.0000
+11
+38500.0000
+12
+10300.0000
+13
+21600.0000
+14
+9800.0000
+15
+9000.0000
 [/output]
 [/test]
 [/tests]
@@ -46945,8 +46520,8 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 [/slide]
 
 [slide hideTitle]
-# Problem: Total Salaries of Each Department
-[code-task title="Total Salaries of Each Department" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-total-salaries-of-each-department" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+# Problem: Total Salary Sum of Each Department
+[code-task title="Total Salary Sum of Each Department" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-total-salary-sum-of-each-department" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
