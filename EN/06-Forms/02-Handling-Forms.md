@@ -16,7 +16,7 @@ Both capture user input events from the view, validate the user input, create a 
 
 They also provide a way to track changes.
 
-**Reactive** forms are easier to reuse and test, while also being more robust, and enabling better scalability.
+**Reactive** forms are easier to reuse and test while also being more robust and enabling better scalability.
 
 **Template-driven** forms are applicable in more basic use cases.
 
@@ -53,9 +53,9 @@ Create a **template-driven** form that looks like this:
 
 As you can see above, it contains:
 
-- A **Processor** input field with a label, and a placeholder of "Intel Core i7"
+- A **Processor** input field with a label and a placeholder of "Intel Core i7"
 
-- A **RAM** input field and label, with a placeholder of "16 GB DDR4"
+- A **RAM** input field and label with a placeholder of "16 GB DDR4"
 
 - A **Hard Disk (GB)** input field of type "number", a label, and a "1000" placeholder 
 
@@ -65,7 +65,7 @@ As you can see above, it contains:
 
 [slide hideTitle]
 
-# Import Bootstrap
+# Importing Bootstrap
 
 js-angular-forms-16-Import-Bootstrap
 
@@ -98,7 +98,7 @@ You will use Bootstrap to create **containers**, **form-groups**, **form-control
 
 js-angular-forms-17-Introducing-Forms-Module
 
-Since Angular is module-based, to handle forms we have to import the **FormsModule**.
+Since Angular is module-based, in order to handle forms, we have to import the **FormsModule**.
 
 You can do so in `app.module.ts` as shown below:
 
@@ -114,7 +114,7 @@ import { FormsModule } from '@angular/forms';
 export class AppModule { }
 ```
 
-The Forms Module **exports** multiple **providers** and **directives**, required for building template-driven forms.r
+The Forms Module **exports** multiple **providers** and **directives**, required for building template-driven forms.
 
 For a full list of the exported directives, you can refer to [Angular's documentation](https://angular.io/api/forms/FormsModule#directives).
 
@@ -122,7 +122,7 @@ For a full list of the exported directives, you can refer to [Angular's document
 
 [slide hideTitle]
 
-# Create a Form Component
+# Creating a Form Component
 
 js-angular-forms-18-Create-Form-Component
 
@@ -130,7 +130,7 @@ js-angular-forms-18-Create-Form-Component
 
 The first step to creating a form component is defining a blueprint for it.
 
-In the `src/app` directory, we have to create a `laptop.ts` file, for our **Laptop** form:
+In the `src/app` directory, we have to create a `laptop.ts` file for our **Laptop** form:
 
 ```js
 export class Laptop {
@@ -154,13 +154,13 @@ As shown above, we export a class, which contains the four main properties of a 
 
 ## Creating the Form Component
 
-We must create a `LaptopFormComponent` class, which will define our form layout and details.
+We should create a `LaptopFormComponent` class, which will define our form layout and details.
 
 In the `src/app` directory, we have to create a new `laptop-form` folder.
 
 We are going to store our component in a `laptop-form.component.ts` file.
 
-Angular CLI can do most of this for us as well:
+The Angular CLI can do most of this for us as well:
 
 ```js
 ng generate component laptop-form
@@ -197,7 +197,7 @@ In the code above, we export the `LaptopFormComponent` class.
 
 It has an `operatingSystems` property - an array of strings.
 
-Keep an eye on the `submitted` property and `onSubmit` method - they will be used when handling the form submission
+Keep an eye on the `submitted` property and `onSubmit` method - they will be used when handling the form submission.
 
 [/slide]
 
@@ -244,13 +244,13 @@ This markup should be stored in our `src/app/laptop-form` directory, inside a `l
 </div>
 ```
 
-Here we have a `div` with a class of "container", in which we store an `h1` **title** and a `form` element.
+Here, we have a `div` with a class "container" in which we store an `h1` **title** and a `form` element.
 
 There are **four** "form-group" `div` elements, three of which consist of a label and an input field.
 
 The **operating system** form group has a `select` element that uses the `*ngFor` structural directive to gather a list of OS `option` elements.
 
-At the bottom, we can see a `button` of type `submit`, which has the classes of `btn` and `btn-success`.
+At the bottom, we can see a `button` of type `submit` which has the classes `btn` and `btn-success`.
 
 This is a **Bootstrap** class name that will automatically apply **styling** to our button.
 
@@ -262,7 +262,7 @@ This is a **Bootstrap** class name that will automatically apply **styling** to 
 
 js-angular-forms-21-The-NgModel-Directive
 
-We need to display, listen and extract data at the same time.
+We need to display, listen, and extract data at the same time.
 
 To do this, we use the **ngModel** directive.
 
@@ -274,7 +274,7 @@ To do this, we use the **ngModel** directive.
 
 The **ngModel** directive binds the controls of a template-driven form to the properties of a data model.
 
-Note that this directive will not work without a **name attribute**!
+Note that this directive will not work without a **name attribute**.
 
 So, we need to include this in our HTML template:
 
@@ -303,6 +303,7 @@ Declare a template variable inside the form.
 Angular will automatically attach a **NgForm Directive**.
 
 The **NgForm Directive** also includes these additional features:
+
 - It can monitor properties
 - It can validate properties
 - It holds a `valid` property, which is **true** only if **all controls** are valid
@@ -311,7 +312,7 @@ The **NgForm Directive** also includes these additional features:
 
 [slide hideTitle]
 
-# Access the Local Reference
+# Accessing the Local Reference
 
 js-angular-forms-23-Access-the-Local-Reference
 
@@ -328,7 +329,6 @@ export class LaptopFormComponent implements AfterViewInit {
     }
 }
 ```
-
 As you can see, we also use the `ngAfterViewInit` lifecycle hook.
 
 Inside, we print the properties of `this.form` to the console by using the `console.dir` method.
@@ -337,7 +337,7 @@ Inside, we print the properties of `this.form` to the console by using the `cons
 
 [slide hideTitle]
 
-# Submit a Form
+# Submitting a Form
 
 js-angular-forms-24-Submit-a-Form
 
@@ -345,7 +345,7 @@ The **submit** button at the bottom of our form does not perform anything by its
 
 It does however trigger a **submit event**, because of its `type="submit"` attribute.
 
-To handle this event, bind **ngSubmit** event property to the form component's `onSubmit()` method.
+To handle this event, bind the **ngSubmit** event property to the form component's `onSubmit()` method.
 
 ```js
 <form (ngSubmit)="onSubmit()" #f="ngForm">
@@ -377,7 +377,7 @@ Once the form has been submitted, it is recommended to hide the encapsulating **
 
 To achieve that, we bind the **div** with class **container**'s property to the `LaptopFormComponent.submitted` property.
 
-This way we can show something else, like a **loading** animation, or a **read-only** form body.
+This way we can show something else like a **loading** animation or a **read-only** form body.
 
 [/slide]
 
@@ -404,11 +404,11 @@ It can also **update** the control with special Angular CSS classes and leverage
 
 [slide hideTitle]
 
-# Track Control State
+# Tracking Control State
 
 js-angular-forms-26-Track-Control-State
 
-Angular add custom CSS classes to input fields and forms, depending on their states.
+Angular adds custom CSS classes to input fields and forms, depending on their states.
  
 ## **ng-touched** / **ng-untouched**
 
@@ -426,17 +426,17 @@ The `ng-touched` class will be applied if the input field has been touched.
 
 These two classes are often used when we want to inform the user of wrong input data.
 
-`ngvalid` is applied to a form or input field when their content is valid, in the other case - Angular applies `ng-invalid`.
+`ngvalid` is applied to a form or an input field when their content is valid, in the other case - Angular applies `ng-invalid`.
 
 [/slide]
 
 [slide hideTitle]
 
-# Add Custom CSS For a Visual Feedback
+# Adding Custom CSS For a Visual Feedback
 
 js-angular-forms-27-Add-Custom-CSS-for-Visual-Feedback
 
-You can mark **required** fields and **invalid** data at the same time, with **colored** bars on the **left** of the **input box**.
+You can mark **required** fields and **invalid** data at the same time,with **colored** bars on the **left** of the **input box**.
 
 ```css
 input.ng-valid {
@@ -451,11 +451,11 @@ input.ng-invalid.ng-touched {
 
 [slide hideTitle]
 
-# Add Validation
+# Adding Validation
 
 js-angular-forms-28-Add-Validation
 
-Add **HTML 5 attributes** to the input fields for validation.
+You can add **HTML 5 attributes** to the input fields for validation.
 
 Angular tracks the attributes and changes the state depending on the user input.
 
@@ -528,11 +528,11 @@ And here you can find some npm packages with [custom validators](https://www.npm
 
 [slide hideTitle]
 
-# Outputing Error Messages
+# Outputting Error Messages
 
 js-angular-forms-30-31-Outputing-Error-Messages
 
-In case of error, the user should receive a proper message with some explanation of what went wrong.
+In case of an error, the user should receive a proper message with some explanation of what went wrong.
 
 Use the control's state to reveal a helpful message.
 
@@ -546,7 +546,6 @@ Add a template reference variable in the input.
     name="processor"
     #processor="ngModel">
 ```
-
 
 Create a **div** and display it **only** when the control state is **invalid**.
 
@@ -586,7 +585,7 @@ Block the **submit** button in case a control has **invalid state**.
 
 js-angular-forms-33-Two-way-Data-Binding
 
-Instantly react to any changes using two-way data binding.
+You can instantly react to any changes using two-way data binding.
 
 Use two-way binding syntax - a combination of square brackets and parentheses `[()]`.
 
@@ -613,7 +612,7 @@ constructor() {
 
 js-angular-forms-34-The-NgModelGroup-Directive
 
-This directive can only be used as a child of **NgForm** within `<form>` tags.
+This directive can only be used as a child of an **NgForm** within `<form>` tags.
 
 Use it to validate a sub-group of your form separately from the rest of your form.
 
@@ -653,7 +652,7 @@ changeInput() {this.laptopForm.form.patchValue({
 
 [slide hideTitle]
 
-# Resseting the Form
+# Resetting the Form
 
 js-angular-forms-36-Resetting-the-Form
 
