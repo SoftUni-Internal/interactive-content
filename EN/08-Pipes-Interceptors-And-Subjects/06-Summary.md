@@ -7,7 +7,7 @@ js-interactive-pipes-interceptors-and-subjects-36-Summary
 ## In this lesson you learned:
 
 - Pipes in Angular are **used to transform data** in the template
-  - they take **integers**, **strings**, **arrays** and **date** as input separated with (\|\) to be converted
+  - they take **integers**, **strings**, **arrays**, and **dates** as input
 
 ```js
 @Pipe({
@@ -30,10 +30,10 @@ export class ShortenPipe implements PipeTransform {
 
 - JSON Web Tokens are used for **transmitting information securely** between parties as a JSON object
   - this information can be **verified and trusted because** it is digitally signed
-  - they consist of a **header**, **payload** and **signature**, separated by dots
+  - they consist of a **header**, a **payload**, and a **signature**, separated by dots
 
-- Interceptors are most often u**sed to automatically attach authentication** information to requests
-  - implemented since Angular 4 using `HttpInterceptor`
+- Interceptors are most often **used to automatically attach authentication** information to requests
+  - implemented since Angular 4 using the `HttpInterceptor`
 
 ```js
 export class TokenInterceptor implements HttpInterceptor {
@@ -55,8 +55,8 @@ export class TokenInterceptor implements HttpInterceptor {
 
 ```
 
-- **Lazy Loading** improves page load time
-  - **downloads** applications in pieces
+- **Lazy Loading** improves a page's loading time
+  - it **downloads** applications in pieces
   - done by **organizing the application into separate modules**
 
 ```js
@@ -87,10 +87,8 @@ subject.next(4);
 
 ```
 
-
 ## In the next lesson, you will learn:
 
 - Workshop - Pipes, Interceptors, and Subjects
-
 
 [/slide]
