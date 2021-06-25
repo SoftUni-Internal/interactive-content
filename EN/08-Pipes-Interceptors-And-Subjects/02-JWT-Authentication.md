@@ -6,11 +6,11 @@
 
 js-interactive-pipes-interceptors-and-subjects-10-11-JWT-and-what-is-jwt
 
-**JSON Web Token** (JWT) is a standard, which gives the ability to create a **token**, used for **server authentication** and eliminating the use of **server-side session storage**. 
+**JSON Web Token** (JWT) is a standard for creating a **token** used for **server authentication**, which eliminates the need for **server-side session storage**. 
 
-JWT is **stored in the client**, and every request sent to the server should contain JWT, which is a **better option** than keeping a **session state** on the server.
+JWT is **stored in the client**, and every request sent to the server should contain a JWT.
 
-Web tokens can be **encrypted** and **signed**, where **signed** JWTs can **verify** the **integrity** of the **data** they contain.
+Web tokens can be **encrypted** and **signed**, which **verifies** the **integrity** of the **data** they contain.
 
 Every JSON Web Token contains a **unique digital signature** which ensures **information** is **safely transmitted**.
 
@@ -18,45 +18,44 @@ Every JSON Web Token contains a **unique digital signature** which ensures **inf
 
 Using JWT allows **scaling a web server** because there is no need for an **allocation** of **server memory** to keep the session storage. 
 
-JWT comes in handy when creating an **API for mobile applications** because they **do not use cookies**, only a web browser supports cookies.
+JWT comes in handy when creating an **API for mobile applications** because they **do not use cookies**.
 
-So a good **JSON API should be able to send JWT** via headers as well as being able to **send cookies**, depending on the type of application. 
+A good **JSON API should be able to send JWTs** via headers as well as being able to **send cookies**, depending on the type of application. 
 
 [/slide]
 
 
 [slide hideTitle]
 
-# When Should you use JWT?
+# When should you use JWT?
 
 js-interactive-pipes-interceptors-and-subjects-12-When-should-you-use-JWT
 
 JWT is most commonly used for **authorization**, and **information exchange**:
 
-- **Authorization**: this is one of the most common usages of JWT
+- **Authorization**:
 
 Every **request** of a **logged in user** includes the JWT token, allowing them to **access data and services** only available to **registered users**.
 
-Common use cases of JWT is when an application uses **two different servers**, for example, a bank that owns a **server that runs all of the banking applications** and a separate server that takes care of the **retirement plans**. 
+A common use case of JWT is when an application uses **two different servers**, for example, a bank that owns a **server that runs all of the banking applications** and a separate server that takes care of the **retirement plans**. 
 
-Those are **completely separate web applications** but the bank wants their users that log in to the bank application to also be able to be **automatically logged into the retirement account** as well.
+Those are **completely separate web applications**, but the bank wants their users that log in to the bank application to also be able to be **automatically logged into the retirement account** as well.
 
-So when a user ** switches from the bank server** to the **retirement server** they do not want the user to have to **re-log back**.
+So when a user **switches from the bank server** to the **retirement server**, they do not want the user to have to **re-log back**.
 
-What happens to a normal session-based server is as the client's **session is stored inside of the bank's server** and not inside of the **retirement server**, the session Id from the client **is not found in the retirement server** and the user has to log in when switching between two accounts. 
+What happens to a normal session-based server is as the client's **session is stored inside of the bank's server**, the session Id from the client **is not found in the retirement server**, and the user has to log in when switching between two accounts. 
 
-But when using JWT **the same secret key could be shared between both** the bank and retirement server.
+But when using JWT, **the same secret key could be shared between both** the bank and retirement server.
 
-Then all that is needs to be done is **send the same JWT from the client to both** servers and **user will be authenticated both times** without having to re-log back in.
+Then, all that needs to be done is to **send the same JWT from the client to both** servers, and the **user will be authenticated** without having to re-log in.
  
 - **Information Enchange**:
 
-JWT is a good way to **secure way to transmit information** between different parties because it can be **signed**.
+JWT is a secure way to **transmit information** between different parties as it can be **signed**.
 
-They can use the same secret key to **encrypt** and **decrypt** those values and to **verify the authentication** and the **validity of the token** that is been sent.
+They can use the same secret key to **encrypt** and **decrypt** those values as well as to **verify the authentication** and the **validity of the token**.
 
 [/slide]
-
 
 [slide hideTitle]
 
@@ -64,38 +63,37 @@ They can use the same secret key to **encrypt** and **decrypt** those values and
 
 js-interactive-pipes-interceptors-and-subjects-13-JWT-Structure
 
-JSON Web Token consists of **three parts**, separated using **dots**:
+A JSON Web Token consists of **three parts**, separated with **dots**:
 
 [image assetsSrc="Pipes-Interceptors-And-Subjects-1.png" /]
 
-- "**Header**": determines the **algorithm that you are using to encode and decode**
+- "**Header**" - determines the **algorithm that you are using to encode and decode**
 
 [image assetsSrc="Pipes-Interceptors-And-Subjects-2.png" /]
  
-- "**Payload**": put all of **the different data** for the application:
+- "**Payload**" - carries all of **the different data** for the application:
 
 [image assetsSrc="Pipes-Interceptors-And-Subjects-3.png" /]
 
-  - "**sub**": stands for a **subject**, is the user's Id that will be authenticated 
+  - "**sub**" - stands for **subject**, is the user's Id that will be authenticated 
   
-The user's information would be store in the **session inside of the database** or **inside** of the server.
+The user's information will be stored in the **session inside the database** or inside the **server**.
 
-  - "**name**": stands for the **user's name**
+  - "**name**" - stands for the **user's name**
 
-  - "**iat**":  stands for **issued**, what this is saying is when the **token was created**
+  - "**iat**" -  stands for **issued at**, it specifies when the **token was created**
 
-It is useful information when the JWT **expires**, notice a lot of tokens have "**exp**" which is going to stand for "**expired**", this is the date that the token **no longer becomes valid**.
+Note that a JWT can **expire** after a certain amout of time, and the data it carries will **no longer be valid**.
   
-
-- "**Signature:**" most important part of JWT, which **allows verifying** that the token has **not been changed by the client** before it gets sent back to the server:
+- "**Signature**" - the most important part of JWT, which **allows us to verify** that the token has **not been changed by the client** before it gets sent back to the server:
 
 [image assetsSrc="Pipes-Interceptors-And-Subjects-4.png" /]
 
-So on the first line, the **encoding header is taken** and then it **adds a period** and then the **encoded payload is added**.
+The **encoding header** is on the first line, followed by a **dot**, followed by the **encoded payload**.
 
 The "**base64**" encoding is used **for both of those sections** then they are combined with the period.
 
-In simple words, all it does is **take the header** and **takes the payload** and it **combines them**, which is **all of the data that was sent** down to the user.
+In simple words, **the header** and **the payload** are **combined**, which is **all of the data that is sent** to the user.
 
-Then what it does is it uses an **algorithm** which is **defined in the header** here "**HMACSHA256**" and uses that algorithm to encode the information.
+Then, an **algorithm** which is **defined in the header**, in our case it is "**HMACSHA256**", encodes the information.
 [/slide]
