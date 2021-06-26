@@ -36,6 +36,7 @@ Display their **first** and **last names**.
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -379,9 +380,6 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
 /\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -701,9 +699,6 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 /\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
@@ -1561,9 +1556,6 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(234, 127),
 	(245, 127);
 /\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -1657,9 +1649,6 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
 	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
 /\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `towns` (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -1706,8 +1695,10 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
+```
 Sariya
 Harnpadoungsataya
 Sandra
@@ -1720,12 +1711,12 @@ Sameer
 Tejani
 Sandeep
 Kaliyath
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT first_name, last_name FROM employees WHERE first_name = 'SA';
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -1767,18 +1758,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'SA', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'SA', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'SA', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -1796,8 +1781,10 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 SA
 Gilbert
 SA
@@ -1808,12 +1795,12 @@ SA
 Walters
 SA
 D'Hers
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT first_name, last_name FROM employees WHERE first_name like 'SA%';
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -1855,18 +1842,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Josh', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Sara', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'SAMANTA', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -1884,14 +1865,17 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 Samuel
 Gilbert
 Sara
 Walters
 SAMANTA
 D'Hers
+```
 [/output]
 [/test]
 [/tests]
@@ -1928,6 +1912,7 @@ Write an SQL query that finds all employees whose **last names contain "ei" (cas
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -2271,9 +2256,6 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
 /\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -2593,9 +2575,6 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 /\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
@@ -3453,9 +3432,6 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(234, 127),
 	(245, 127);
 /\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -3549,9 +3525,6 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
 	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
 /\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `towns` (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -3598,8 +3571,10 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
+```
 Kendall
 Keil
 Christian
@@ -3614,12 +3589,12 @@ Linda
 Meisner
 Tsvi
 Reiter
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT first_name, last_name FROM employees;
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -3661,18 +3636,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'ei', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', 'ei', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', 'ei', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -3690,8 +3659,10 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 John
 ei
 Sara
@@ -3702,12 +3673,12 @@ Kevin
 ei
 Steven
 ei
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT first_name, last_name FROM employees WHERE last_name LIKE 'ei%';
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -3749,18 +3720,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'Eibraham', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', null, NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', null, 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -3778,20 +3743,22 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 John
 Eimi
 Sara
 Eimily
 Michel
 Eibraham
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT first_name, last_name FROM employees WHERE last_name LIKE '%ei';
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -3833,18 +3800,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'BANADEI', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', null, NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', null, 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -3862,14 +3823,17 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 John
 Goremei
 Sara
 Bonei
 Michel
 BANADEI
+```
 [/output]
 [/test]
 [/tests]
@@ -3909,6 +3873,7 @@ Write an SQL query that finds the **first names** of all employees that are **bo
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -4252,9 +4217,6 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
 /\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -4574,9 +4536,6 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 /\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
@@ -5434,9 +5393,6 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(234, 127),
 	(245, 127);
 /\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -5530,9 +5486,6 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
 	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
 /\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `towns` (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -5579,8 +5532,10 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
+```
 Deborah
 Wendy
 Candy
@@ -5605,12 +5560,12 @@ Tete
 Syed
 Rachel
 Lynn
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT first_name FROM employees WHERE department_id = 3;
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -5652,18 +5607,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'ei', NULL, 'Engineering Manager', 3, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', 'ei', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', 'ei', 'B', 'Tool Designer', 3, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -5681,17 +5630,19 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 John
 Michel
 Steven
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT first_name FROM employees WHERE department_id = 10;
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -5733,18 +5684,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'ei', NULL, 'Engineering Manager', 10, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', 'ei', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', 'ei', 'B', 'Tool Designer', 10, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -5762,17 +5707,19 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 John
 Michel
 Steven
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT first_name FROM employees WHERE YEAR(hire_date) \>= 1995;
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -5814,18 +5761,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'ei', NULL, 'Engineering Manager', 3, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', 'ei', NULL, 'Senior Tool Designer', 3, 3, '1994-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', 'ei', 'B', 'Tool Designer', 3, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -5843,17 +5784,19 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 John
 Michel
 Steven
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 4 : SELECT first_name FROM employees WHERE YEAR(hire_date) between 1995 and 2005;
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -5895,18 +5838,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'ei', NULL, 'Engineering Manager', 10, 12, '2006-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', 'ei', NULL, 'Senior Tool Designer', 3, 3, '1994-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', 'ei', 'B', 'Tool Designer', 3, 263, '1995-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -5924,11 +5861,14 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 John
 Sara
 Steven
+```
 [/output]
 [/test]
 [/tests]
@@ -5963,6 +5903,7 @@ Write an SQL query that finds the **first** and **last names** of all employees 
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -6306,9 +6247,6 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
 /\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -6628,9 +6566,6 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 /\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
@@ -7488,9 +7423,6 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(234, 127),
 	(245, 127);
 /\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -7584,9 +7516,6 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
 	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
 /\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `towns` (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -7633,8 +7562,10 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
+```
 Guy
 Gilbert
 Kevin
@@ -8205,12 +8136,12 @@ Martin
 Kulov
 George
 Denchev
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT first_name, last_name FROM employees;
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -8252,18 +8183,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'Fleita', NULL, 'Sales Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', 'Dekorative', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', 'Small', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -8281,8 +8206,10 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 John
 Something
 Sara
@@ -8293,12 +8220,12 @@ Kevin
 Dekorative
 Steven
 Small
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT first_name, last_name FROM employees WHERE job_title NOT LIKE '%engineer';
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -8340,18 +8267,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'Fleita', NULL, 'Sales Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', 'Dekorative', NULL, 'Senior Tool Engineer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', 'Small', 'B', 'Tool Engineer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -8369,18 +8290,20 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 Sara
 Kerosin
 Michel
 Fleita
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT first_name, last_name FROM employees WHERE job_title NOT LIKE 'engineer%';
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -8422,18 +8345,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'Fleita', NULL, 'Engineer Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', 'Dekorative', NULL, 'Senior Tool Tester', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', 'Small', 'B', 'Tool Architect', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -8451,20 +8368,22 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 John
 Something
 Kevin
 Dekorative
 Steven
 Small
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 4 : SELECT first_name, last_name FROM employees WHERE job_title NOT LIKE '%engineer%';
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -8506,18 +8425,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'Fleita', NULL, 'Marketing Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', 'Dekorative', NULL, 'Engineer Tool Tester', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', 'Small', 'B', 'Tool Architect Engineer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -8535,14 +8448,17 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 John
 Something
 Sara
 Kerosin
 Michel
 Fleita
+```
 [/output]
 [/test]
 [/tests]
@@ -8578,6 +8494,7 @@ Write an SQL query that finds **town names** that are **5** or **6** symbols lon
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -8921,9 +8838,6 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
 /\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -9243,9 +9157,6 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 /\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
@@ -10103,9 +10014,6 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(234, 127),
 	(245, 127);
 /\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -10199,9 +10107,6 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
 	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
 /\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `towns` (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -10248,8 +10153,10 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
+```
 Berlin
 Duluth
 Duvall
@@ -10259,12 +10166,12 @@ Nevada
 Ottawa
 Renton
 Sofia
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT name FROM towns WHERE name LIKE '_____';
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -10281,9 +10188,6 @@ CREATE TABLE IF NOT EXISTS `departments` (
   PRIMARY KEY (`department_id`),
   UNIQUE KEY `PK_Departments` (`department_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -10337,17 +10241,19 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(8, 'Bothell'),
 	(9, 'San Francisco'),
 	(10, 'Sofia');
+```
 [/input]
 [output]
+```
 Avlon
 Botev
 Sofia
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT name FROM towns WHERE name LIKE '______';
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -10364,9 +10270,6 @@ CREATE TABLE IF NOT EXISTS `departments` (
   PRIMARY KEY (`department_id`),
   UNIQUE KEY `PK_Departments` (`department_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -10420,17 +10323,19 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(8, 'Fothel'),
 	(9, 'San Francisco'),
 	(10, 'SofiaCity');
+```
 [/input]
 [output]
+```
 Burgas
 Everet
 Fothel
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT name FROM towns order by name;
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -10447,9 +10352,6 @@ CREATE TABLE IF NOT EXISTS `departments` (
   PRIMARY KEY (`department_id`),
   UNIQUE KEY `PK_Departments` (`department_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -10497,12 +10399,15 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(2, 'Yyyyy'),
 	(3, 'Xxxxx'),
 	(4, 'Wwwww');
+```
 [/input]
 [output]
+```
 Wwwww
 Xxxxx
 Yyyyy
 Zzzzz
+```
 [/output]
 [/test]
 [/tests]
@@ -10538,6 +10443,7 @@ Write an SQL query that finds all towns that **start with** the letters **M**, *
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -10881,9 +10787,6 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
 /\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -11203,9 +11106,6 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 /\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
@@ -12063,9 +11963,6 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(234, 127),
 	(245, 127);
 /\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -12159,9 +12056,6 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
 	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
 /\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `towns` (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -12208,8 +12102,10 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
+```
 5
 Bellevue
 31
@@ -12234,12 +12130,12 @@ Memphis
 Minneapolis
 12
 Monroe
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT \* FROM towns WHERE name LIKE 'M%'
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -12256,9 +12152,6 @@ CREATE TABLE IF NOT EXISTS `departments` (
   PRIMARY KEY (`department_id`),
   UNIQUE KEY `PK_Departments` (`department_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -12307,18 +12200,20 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(3, 'Admonds'),
 	(4, 'Zotev'),
 	(5, 'Mellevue');
+```
 [/input]
 [output]
+```
 2
 Mavlon
 5
 Mellevue
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT \* FROM towns WHERE name LIKE 'K%'
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -12335,9 +12230,6 @@ CREATE TABLE IF NOT EXISTS `departments` (
   PRIMARY KEY (`department_id`),
   UNIQUE KEY `PK_Departments` (`department_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -12386,18 +12278,20 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(3, 'Admonds'),
 	(4, 'Kotel'),
 	(5, 'Tellevue');
+```
 [/input]
 [output]
+```
 1
 Kedmond
 4
 Kotel
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT \* FROM towns WHERE name LIKE 'B%'
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -12414,9 +12308,6 @@ CREATE TABLE IF NOT EXISTS `departments` (
   PRIMARY KEY (`department_id`),
   UNIQUE KEY `PK_Departments` (`department_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -12465,18 +12356,20 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(3, 'Admonds'),
 	(4, 'Botel'),
 	(5, 'Tellevue');
+```
 [/input]
 [output]
+```
 2
 Bavlon
 4
 Botel
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 4 : SELECT \* FROM towns WHERE name LIKE 'E%'
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -12493,9 +12386,6 @@ CREATE TABLE IF NOT EXISTS `departments` (
   PRIMARY KEY (`department_id`),
   UNIQUE KEY `PK_Departments` (`department_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -12544,16 +12434,18 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(3, 'Edmonds'),
 	(4, 'Wotel'),
 	(5, 'Tellevue');
+```
 [/input]
 [output]
+```
 3
 Edmonds
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 5 : SELECT \* FROM towns order by name;
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -12570,9 +12462,6 @@ CREATE TABLE IF NOT EXISTS `departments` (
   PRIMARY KEY (`department_id`),
   UNIQUE KEY `PK_Departments` (`department_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -12620,8 +12509,10 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(2, 'Kkkkkk'),
 	(3, 'Eeeeeeeeee'),
 	(4, 'BbbbBBBBBbbBB');
+```
 [/input]
 [output]
+```
 4
 BbbbBBBBBbbBB
 3
@@ -12630,6 +12521,7 @@ Eeeeeeeeee
 Kkkkkk
 1
 Mm
+```
 [/output]
 [/test]
 [/tests]
@@ -12665,6 +12557,7 @@ Write an SQL query that finds all towns that **do not start** with the letters *
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -13008,9 +12901,6 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
 /\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -13330,9 +13220,6 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 /\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
@@ -14190,9 +14077,6 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(234, 127),
 	(245, 127);
 /\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -14286,9 +14170,6 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
 	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
 /\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `towns` (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -14335,8 +14216,10 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
+```
 2
 Calgary
 23
@@ -14383,12 +14266,12 @@ Seattle
 Snohomish
 32
 Sofia
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT \* FROM towns WHERE name NOT LIKE 'R%'
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -14405,9 +14288,6 @@ CREATE TABLE IF NOT EXISTS `departments` (
   PRIMARY KEY (`department_id`),
   UNIQUE KEY `PK_Departments` (`department_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -14456,18 +14336,20 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(3, 'Adronds'),
 	(4, 'Rotev'),
 	(5, 'Mellevue');
+```
 [/input]
 [output]
+```
 3
 Adronds
 5
 Mellevue
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT \* FROM towns WHERE name NOT LIKE 'B%'
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -14484,9 +14366,6 @@ CREATE TABLE IF NOT EXISTS `departments` (
   PRIMARY KEY (`department_id`),
   UNIQUE KEY `PK_Departments` (`department_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -14535,20 +14414,22 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(3, 'Bonds'),
 	(4, 'Zotev'),
 	(5, 'Bellevue');
+```
 [/input]
 [output]
+```
 1
 Aedmond
 2
 Fablon
 4
 Zotev
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT \* FROM towns WHERE name NOT LIKE 'D%'
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -14565,9 +14446,6 @@ CREATE TABLE IF NOT EXISTS `departments` (
   PRIMARY KEY (`department_id`),
   UNIQUE KEY `PK_Departments` (`department_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -14616,20 +14494,22 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(3, 'Konds'),
 	(4, 'Zotev'),
 	(5, 'Dellevue');
+```
 [/input]
 [output]
+```
 1
 Aedmond
 3
 Konds
 4
 Zotev
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 5 : SELECT \* FROM towns order by name;
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -14646,9 +14526,6 @@ CREATE TABLE IF NOT EXISTS `departments` (
   PRIMARY KEY (`department_id`),
   UNIQUE KEY `PK_Departments` (`department_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -14696,8 +14573,10 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(2, 'Kkkkkk'),
 	(3, 'Eeeeeeeeee'),
 	(4, 'aaaaaaaaa');
+```
 [/input]
 [output]
+```
 4
 aaaaaaaaa
 3
@@ -14706,6 +14585,7 @@ Eeeeeeeeee
 Kkkkkk
 1
 Mm
+```
 [/output]
 [/test]
 [/tests]
@@ -14721,6 +14601,7 @@ Mm
 ```
 [/code-editor]
 [code-adapter]
+```
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
@@ -15064,9 +14945,6 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
 /*!40000 ALTER TABLE `departments` ENABLE KEYS */;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -15386,9 +15264,6 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 /*!40000 ALTER TABLE `employees` ENABLE KEYS */;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
@@ -16246,9 +16121,6 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(234, 127),
 	(245, 127);
 /*!40000 ALTER TABLE `employees_projects` ENABLE KEYS */;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -16342,9 +16214,6 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
 	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
 /*!40000 ALTER TABLE `projects` ENABLE KEYS */;
-
-
-
 CREATE TABLE IF NOT EXISTS `towns` (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -16391,6 +16260,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+```
 [/code-adapter]
 [task-description]
 
@@ -16412,9 +16282,12 @@ Select all from the generated view.
 [tests]
 [test open]
 [input]
+```
 SELECT \* FROM v_employees_hired_after_2000;
+```
 [/input]
 [output]
+```
 Steven
 Selikoff
 Peter
@@ -16963,13 +16836,17 @@ Martin
 Kulov
 George
 Denchev
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 SELECT \* FROM v_employees_hired_after_2000;
+```
 [/input]
 [output]
+```
 Steven
 Selikoff
 Peter
@@ -17518,6 +17395,7 @@ Martin
 Kulov
 George
 Denchev
+```
 [/output]
 [/test]
 [/tests]
@@ -17552,6 +17430,7 @@ Write an SQL query that finds the names of all employees whose last names are **
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -17895,9 +17774,6 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
 /\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -18217,9 +18093,6 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 /\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
@@ -19077,9 +18950,6 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(234, 127),
 	(245, 127);
 /\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -19173,9 +19043,6 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
 	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
 /\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `towns` (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -19222,8 +19089,10 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
+```
 Kevin
 Brown
 Terri
@@ -19336,10 +19205,12 @@ Svetlin
 Nakov
 Martin
 Kulov
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -19683,9 +19554,6 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
 /\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -20005,9 +19873,6 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 /\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
@@ -20865,9 +20730,6 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(234, 127),
 	(245, 127);
 /\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -20961,9 +20823,6 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
 	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
 /\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `towns` (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -21010,8 +20869,10 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
+```
 Kevin
 Brown
 Terri
@@ -21124,6 +20985,7 @@ Svetlin
 Nakov
 Martin
 Kulov
+```
 [/output]
 [/test]
 [/tests]
@@ -21168,6 +21030,7 @@ Find all countries that contain the **letter 'A' in their names at least 3 times
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -21192,9 +21055,6 @@ INSERT INTO `continents` (`continent_code`, `continent_name`) VALUES
 	('OC', 'Oceania'),
 	('SA', 'South America');
 /\*!40000 ALTER TABLE `continents` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `countries` (
   `country_code` char(2) NOT NULL,
   `iso_code` char(3) NOT NULL,
@@ -21466,9 +21326,6 @@ INSERT INTO `countries` (`country_code`, `iso_code`, `country_name`, `currency_c
 	('ZM', 'ZMB', 'Zambia', 'ZMW', 'AF', 13460305, 752614, 'Lusaka'),
 	('ZW', 'ZWE', 'Zimbabwe', 'ZWD', 'AF', 11651858, 390580, 'Harare');
 /\*!40000 ALTER TABLE `countries` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `countries_rivers` (
   `river_id` int(10) NOT NULL,
   `country_code` char(2) NOT NULL,
@@ -21586,9 +21443,6 @@ INSERT INTO `countries_rivers` (`river_id`, `country_code`) VALUES
 	(30, 'RS'),
 	(30, 'SK');
 /\*!40000 ALTER TABLE `countries_rivers` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `currencies` (
   `currency_code` char(3) NOT NULL,
   `description` varchar(200) NOT NULL,
@@ -21763,9 +21617,6 @@ INSERT INTO `currencies` (`currency_code`, `description`) VALUES
 	('ZMW', 'Zambia Kwacha'),
 	('ZWD', 'Zimbabwe Dollar');
 /\*!40000 ALTER TABLE `currencies` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `mountains` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `mountain_range` varchar(50) NOT NULL,
@@ -21803,9 +21654,6 @@ INSERT INTO `mountains` (`id`, `mountain_range`) VALUES
 	(25, 'Strandza'),
 	(26, 'Monte Rosa');
 /\*!40000 ALTER TABLE `mountains` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `mountains_countries` (
   `mountain_id` int(10) NOT NULL,
   `country_code` char(2) NOT NULL,
@@ -21849,9 +21697,6 @@ INSERT INTO `mountains_countries` (`mountain_id`, `country_code`) VALUES
 	(14, 'TZ'),
 	(1, 'US');
 /\*!40000 ALTER TABLE `mountains_countries` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `peaks` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `peak_name` varchar(50) NOT NULL,
@@ -21915,9 +21760,6 @@ INSERT INTO `peaks` (`id`, `peak_name`, `elevation`, `mountrain_id`) VALUES
 	(108, 'Vezhen', 2198, 4),
 	(109, 'Kom', 2016, 4);
 /\*!40000 ALTER TABLE `peaks` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `rivers` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `river_name` varchar(50) NOT NULL,
@@ -21966,8 +21808,10 @@ INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_di
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
+```
 Afghanistan
 AFG
 Albania
@@ -22042,13 +21886,12 @@ Saint Vincent and the Grenadines
 VCT
 Wallis and Futuna
 WLF
+```
 [/output]
 [/test]
 [test]
 [input]
-\#test 1 : SELECT country_name, iso_code FROM countries WHERE country_name LIKE '%A%A%A%'
-
-
+```
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
   `continent_name` varchar(50) NOT NULL,
@@ -22078,9 +21921,6 @@ INSERT INTO `countries` (`country_code`, `iso_code`, `country_name`, `currency_c
 	('AF', 'AFG', 'Afghanistan', 'AFN', 'AS', 29121286, 647500, 'Kabul'),
 	('AG', 'ATG', 'Antigua and Barbuda', 'XCD', 'NA', 86754, 443, 'St. John''s'),
 	('AI', 'AIA', 'Anguilla', 'XCD', 'NA', 13254, 102, 'The Valley');
-
-
-
 CREATE TABLE IF NOT EXISTS `countries_rivers` (
   `river_id` int(10) NOT NULL,
   `country_code` char(2) NOT NULL,
@@ -22129,21 +21969,22 @@ CREATE TABLE IF NOT EXISTS `rivers` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `PK_Rivers` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 United Arab Emirates
 AAE
 Afghanistan
 AFG
 Antigua and Barbuda
 ATG
+```
 [/output]
 [/test]
 [test]
 [input]
-\#test 2 : SELECT country_name, iso_code FROM countries ORDER BY iso_code;
-
-
+```
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
   `continent_name` varchar(50) NOT NULL,
@@ -22171,9 +22012,6 @@ INSERT INTO `countries` (`country_code`, `iso_code`, `country_name`, `currency_c
 	('AD', 'ZZZ', 'Andorrata', 'EUR', 'EU', 84000, 468, 'Andorra la Vella'),
 	('AE', 'DDD', 'United Arab Emirates', 'AED', 'AS', 4975593, 82880, 'Abu Dhabi'),
 	('AI', 'AAA', 'Anguillalalala', 'XCD', 'NA', 13254, 102, 'The Valley');
-
-
-
 CREATE TABLE IF NOT EXISTS `countries_rivers` (
   `river_id` int(10) NOT NULL,
   `country_code` char(2) NOT NULL,
@@ -22222,14 +22060,17 @@ CREATE TABLE IF NOT EXISTS `rivers` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `PK_Rivers` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 Anguillalalala
 AAA
 United Arab Emirates
 DDD
 Andorrata
 ZZZ
+```
 [/output]
 [/test]
 [/tests]
@@ -22268,6 +22109,7 @@ The matching letters must **overlap**, as shown below.
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -22292,9 +22134,6 @@ INSERT INTO `continents` (`continent_code`, `continent_name`) VALUES
 	('OC', 'Oceania'),
 	('SA', 'South America');
 /\*!40000 ALTER TABLE `continents` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `countries` (
   `country_code` char(2) NOT NULL,
   `iso_code` char(3) NOT NULL,
@@ -22566,9 +22405,6 @@ INSERT INTO `countries` (`country_code`, `iso_code`, `country_name`, `currency_c
 	('ZM', 'ZMB', 'Zambia', 'ZMW', 'AF', 13460305, 752614, 'Lusaka'),
 	('ZW', 'ZWE', 'Zimbabwe', 'ZWD', 'AF', 11651858, 390580, 'Harare');
 /\*!40000 ALTER TABLE `countries` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `countries_rivers` (
   `river_id` int(10) NOT NULL,
   `country_code` char(2) NOT NULL,
@@ -22686,9 +22522,6 @@ INSERT INTO `countries_rivers` (`river_id`, `country_code`) VALUES
 	(30, 'RS'),
 	(30, 'SK');
 /\*!40000 ALTER TABLE `countries_rivers` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `currencies` (
   `currency_code` char(3) NOT NULL,
   `description` varchar(200) NOT NULL,
@@ -22863,9 +22696,6 @@ INSERT INTO `currencies` (`currency_code`, `description`) VALUES
 	('ZMW', 'Zambia Kwacha'),
 	('ZWD', 'Zimbabwe Dollar');
 /\*!40000 ALTER TABLE `currencies` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `mountains` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `mountain_range` varchar(50) NOT NULL,
@@ -22903,9 +22733,6 @@ INSERT INTO `mountains` (`id`, `mountain_range`) VALUES
 	(25, 'Strandza'),
 	(26, 'Monte Rosa');
 /\*!40000 ALTER TABLE `mountains` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `mountains_countries` (
   `mountain_id` int(10) NOT NULL,
   `country_code` char(2) NOT NULL,
@@ -22949,9 +22776,6 @@ INSERT INTO `mountains_countries` (`mountain_id`, `country_code`) VALUES
 	(14, 'TZ'),
 	(1, 'US');
 /\*!40000 ALTER TABLE `mountains_countries` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `peaks` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `peak_name` varchar(50) NOT NULL,
@@ -23015,9 +22839,6 @@ INSERT INTO `peaks` (`id`, `peak_name`, `elevation`, `mountrain_id`) VALUES
 	(108, 'Vezhen', 2198, 4),
 	(109, 'Kom', 2016, 4);
 /\*!40000 ALTER TABLE `peaks` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `rivers` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `river_name` varchar(50) NOT NULL,
@@ -23066,8 +22887,10 @@ INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_di
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
+```
 Aconcagua
 Amazon
 aconcaguamazon
@@ -23308,12 +23131,12 @@ vihreniger
 Vihren
 Nile
 vihrenile
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT p.peak_name, r.river_name, LOWER(CONCAT(p.peak_name, SUBSTRING(r.river_name, 2, LENGTH(r.river_name)))) AS mix FROM Peaks p, Rivers r
-
+```
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
   `continent_name` varchar(50) NOT NULL,
@@ -23394,19 +23217,19 @@ CREATE TABLE IF NOT EXISTS `rivers` (
 /\*!40000 ALTER TABLE `rivers` DISABLE KEYS \*/;
 INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_discharge`, `outflow`) VALUES
 	(1, 'ANile', 6650, 3254555, 5100, 'Mediterranean');
+```
 [/input]
 [output]
+```
 Aconcagua
 ANile
 aconcaguanile
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT p.peak_name, r.river_name, LOWER(CONCAT(p.peak_name, SUBSTRING(r.river_name, 2, LENGTH(r.river_name)))) AS mix
-\# FROM Peaks p, Rivers r
-\# WHERE RIGHT(p.peak_name, 1) = LEFT(r.river_name, 1)
-
+```
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
   `continent_name` varchar(50) NOT NULL,
@@ -23489,22 +23312,22 @@ CREATE TABLE IF NOT EXISTS `rivers` (
 /\*!40000 ALTER TABLE `rivers` DISABLE KEYS \*/;
 INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_discharge`, `outflow`) VALUES
 	(1, 'ANile', 6650, 3254555, 5100, 'Mediterranean');
+```
 [/input]
 [output]
+```
 Aaconcagua
 ANile
 aaconcaguanile
 Aconcagua
 ANile
 aconcaguanile
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT p.peak_name, r.river_name, LOWER(CONCAT(p.peak_name, SUBSTRING(r.river_name, 2, LENGTH(r.river_name)))) AS mix
-\# FROM Peaks p, Rivers r
-\# order by mix
-
+```
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
   `continent_name` varchar(50) NOT NULL,
@@ -23588,8 +23411,10 @@ CREATE TABLE IF NOT EXISTS `rivers` (
 /\*!40000 ALTER TABLE `rivers` DISABLE KEYS \*/;
 INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_discharge`, `outflow`) VALUES
 	(1, 'ANile', 6650, 3254555, 5100, 'Mediterranean');
+```
 [/input]
 [output]
+```
 Aconcagua
 ANile
 aconcaguanile
@@ -23599,14 +23424,12 @@ bconcaguanile
 Caconcagua
 ANile
 caconcaguanile
+```
 [/output]
 [/test]
 [/tests]
 [/code-task]
 [/slide]
-
-
-
 [slide hideTitle]
 # Problem: Games from 2011 and 2012
 [code-task title="Games from 2011 and 2012" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-games-from-2011-and-2012" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
@@ -23628,9 +23451,6 @@ Find the **top 50 games ordered by start date**, then **by name.**
 Display only the **games from the years 2011 and 2012.**
 
 Display the start date in the format **"YYYY-MM-DD".**
-
-
-
 ## Example
 
 | name | start |
@@ -23645,6 +23465,7 @@ Display the start date in the format **"YYYY-MM-DD".**
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -23676,9 +23497,6 @@ INSERT INTO `characters` (`id`, `name`, `statistics_id`) VALUES
 	(11, 'Paladin', 12),
 	(12, 'Sorceress', 13);
 /\*!40000 ALTER TABLE `characters` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `games` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -23937,9 +23755,6 @@ INSERT INTO `games` (`id`, `name`, `start`, `duration`, `game_type_id`, `is_fini
 	(240, 'Lotte World', '2012-09-13 00:00:00.000000', 6, 4, b'1'),
 	(241, 'Victoria Peak', '2014-01-01 00:00:00.000000', 1, 1, b'1');
 /\*!40000 ALTER TABLE `games` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `game_types` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -23959,9 +23774,6 @@ INSERT INTO `game_types` (`id`, `name`, `bonus_stats_id`) VALUES
 	(4, 'Intermediate', 119),
 	(5, 'Funny', 120);
 /\*!40000 ALTER TABLE `game_types` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `game_type_forbidden_items` (
   `item_id` int(10) NOT NULL,
   `game_type_id` int(10) NOT NULL,
@@ -24102,9 +23914,6 @@ INSERT INTO `game_type_forbidden_items` (`item_id`, `game_type_id`) VALUES
 	(481, 5),
 	(528, 5);
 /\*!40000 ALTER TABLE `game_type_forbidden_items` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `items` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) DEFAULT NULL,
@@ -24701,9 +24510,6 @@ INSERT INTO `items` (`id`, `name`, `item_type_id`, `statistics_id`, `price`, `mi
 	(576, 'Zeis Stone of Vengeance', 6, 108, 371.0000, 28),
 	(577, 'Ziggurat Tooth', 16, 47, 788.0000, 56);
 /\*!40000 ALTER TABLE `items` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `item_types` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -24743,9 +24549,6 @@ INSERT INTO `item_types` (`id`, `name`) VALUES
 	(27, 'Orbs'),
 	(28, 'Quivers');
 /\*!40000 ALTER TABLE `item_types` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `statistics` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `strength` int(10) NOT NULL,
@@ -24880,9 +24683,6 @@ INSERT INTO `statistics` (`id`, `strength`, `defence`, `mind`, `speed`, `luck`) 
 	(119, -5, -5, -5, -5, -5),
 	(120, -10, -10, 15, 15, 10);
 /\*!40000 ALTER TABLE `statistics` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `user_name` varchar(50) NOT NULL,
@@ -24971,9 +24771,6 @@ INSERT INTO `users` (`id`, `user_name`, `first_name`, `last_name`, `email`, `reg
 	(70, 'terrifymarzipan', 'JANICE', 'RIVERA', 'grfurniture@yahoo.com', '2010-02-10 00:00:00.000000', b'1', '136.208.113.14'),
 	(71, 'rotoriginally', 'KELLY', 'ROGERS', 'gosyen2000@hotmail.com', '2010-11-11 00:00:00.000000', b'1', '146.141.16.116');
 /\*!40000 ALTER TABLE `users` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `users_games` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `game_id` int(10) NOT NULL,
@@ -25320,9 +25117,6 @@ INSERT INTO `users_games` (`id`, `game_id`, `user_id`, `character_id`, `level`, 
 	(323, 10, 28, 12, 43, '2014-12-08 00:00:00.000000', 8119.0000),
 	(324, 122, 9, 1, 16, '2013-01-24 00:00:00.000000', 5832.0000);
 /\*!40000 ALTER TABLE `users_games` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `user_game_items` (
   `item_id` int(10) NOT NULL,
   `user_game_id` int(10) NOT NULL,
@@ -27747,8 +27541,10 @@ INSERT INTO `user_game_items` (`item_id`, `user_game_id`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
+```
 Rose Royalty
 2011-01-05
 London
@@ -27849,10 +27645,12 @@ Stockholm
 2012-04-18
 Machu Picchu
 2012-04-30
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -27880,9 +27678,6 @@ INSERT INTO `games` (`id`, `name`, `start`, `duration`, `game_type_id`, `is_fini
 	(3, 'Apple', '2012-08-15 03:38:00.000000', 6, 3, b'1'),
 	(4, 'Broadway', '2012-12-08 03:57:00.000000', 5, 5, b'0'),
 	(5, 'Ancalagon', '2012-12-09 07:16:00.000000', 5, 5, b'0');
-
-
-
 CREATE TABLE IF NOT EXISTS `game_types` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -27958,8 +27753,10 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 Aithusa
 2011-06-07
 Acid green
@@ -27970,10 +27767,12 @@ Broadway
 2012-12-08
 Ancalagon
 2012-12-09
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -28001,9 +27800,6 @@ INSERT INTO `games` (`id`, `name`, `start`, `duration`, `game_type_id`, `is_fini
 	(3, 'Apple', '2014-08-15 03:38:00.000000', 6, 3, b'1'),
 	(4, 'Broadway', '2012-12-08 03:57:00.000000', 5, 5, b'0'),
 	(5, 'Ancalagon', '2010-12-09 07:16:00.000000', 5, 5, b'0');
-
-
-
 CREATE TABLE IF NOT EXISTS `game_types` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -28079,18 +27875,22 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 Aithusa
 2011-06-07
 Acid green
 2011-09-11
 Broadway
 2012-12-08
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -28118,9 +27918,6 @@ INSERT INTO `games` (`id`, `name`, `start`, `duration`, `game_type_id`, `is_fini
 	(3, 'Apple', '2011-12-08 03:38:00.000000', 6, 3, b'1'),
 	(4, 'Broadway', '2012-04-15 03:57:00.000000', 5, 5, b'0'),
 	(5, 'Ancalagon', '2012-06-11 07:16:00.000000', 5, 5, b'0');
-
-
-
 CREATE TABLE IF NOT EXISTS `game_types` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -28196,8 +27993,10 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 Acid green
 2011-10-09
 Apple
@@ -28208,11 +28007,12 @@ Ancalagon
 2012-06-11
 Aithusa
 2012-09-07
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 4 : SELECT name AS game, DATE_FORMAT(start, '%Y-%m-%d') as "start" FROM games order by 2, 1
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -28242,9 +28042,6 @@ INSERT INTO `games` (`id`, `name`, `start`, `duration`, `game_type_id`, `is_fini
 	(5, 'Broadway', '2011-12-08 03:57:00.000000', 5, 5, b'0'),
 	(6, 'ZAncalagon', '2012-10-09 07:16:00.000000', 5, 5, b'0'),
 	(7, 'Ancalagon', '2011-10-09 07:16:00.000000', 5, 5, b'0');
-
-
-
 CREATE TABLE IF NOT EXISTS `game_types` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -28320,8 +28117,10 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 Aithusa
 2011-09-07
 Ancalagon
@@ -28336,11 +28135,12 @@ Acid green
 2012-06-11
 ZAncalagon
 2012-10-09
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 5 : SELECT name AS game, DATE_FORMAT(start, '%Y-%m-%d') as "start" FROM games limit 50
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -28415,9 +28215,6 @@ INSERT INTO `games` (`id`, `name`, `start`, `duration`, `game_type_id`, `is_fini
 	(50, 'Ancalagon', '2012-10-27 07:16:00.000000', 5, 5, b'0'),
 	(51, 'Ancalagon', '2012-10-28 07:16:00.000000', 5, 5, b'0'),
 	(52, 'Ancalagon', '2012-10-29 07:16:00.000000', 5, 5, b'0');
-
-
-
 CREATE TABLE IF NOT EXISTS `game_types` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -28493,8 +28290,10 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 Aithusa
 2011-06-07
 Acid green
@@ -28595,6 +28394,7 @@ Ancalagon
 2012-10-26
 Ancalagon
 2012-10-27
+```
 [/output]
 [/test]
 [/tests]
@@ -28632,6 +28432,7 @@ Sort the results **alphabetically** by the **email provider**, then by **usernam
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -28663,9 +28464,6 @@ INSERT INTO `characters` (`id`, `name`, `statistics_id`) VALUES
 	(11, 'Paladin', 12),
 	(12, 'Sorceress', 13);
 /\*!40000 ALTER TABLE `characters` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `games` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -28924,9 +28722,6 @@ INSERT INTO `games` (`id`, `name`, `start`, `duration`, `game_type_id`, `is_fini
 	(240, 'Lotte World', '2012-09-13 00:00:00.000000', 6, 4, b'1'),
 	(241, 'Victoria Peak', '2014-01-01 00:00:00.000000', 1, 1, b'1');
 /\*!40000 ALTER TABLE `games` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `game_types` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -28946,9 +28741,6 @@ INSERT INTO `game_types` (`id`, `name`, `bonus_stats_id`) VALUES
 	(4, 'Intermediate', 119),
 	(5, 'Funny', 120);
 /\*!40000 ALTER TABLE `game_types` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `game_type_forbidden_items` (
   `item_id` int(10) NOT NULL,
   `game_type_id` int(10) NOT NULL,
@@ -29089,9 +28881,6 @@ INSERT INTO `game_type_forbidden_items` (`item_id`, `game_type_id`) VALUES
 	(481, 5),
 	(528, 5);
 /\*!40000 ALTER TABLE `game_type_forbidden_items` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `items` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) DEFAULT NULL,
@@ -29688,9 +29477,6 @@ INSERT INTO `items` (`id`, `name`, `item_type_id`, `statistics_id`, `price`, `mi
 	(576, 'Zeis Stone of Vengeance', 6, 108, 371.0000, 28),
 	(577, 'Ziggurat Tooth', 16, 47, 788.0000, 56);
 /\*!40000 ALTER TABLE `items` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `item_types` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -29730,9 +29516,6 @@ INSERT INTO `item_types` (`id`, `name`) VALUES
 	(27, 'Orbs'),
 	(28, 'Quivers');
 /\*!40000 ALTER TABLE `item_types` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `statistics` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `strength` int(10) NOT NULL,
@@ -29867,9 +29650,6 @@ INSERT INTO `statistics` (`id`, `strength`, `defence`, `mind`, `speed`, `luck`) 
 	(119, -5, -5, -5, -5, -5),
 	(120, -10, -10, 15, 15, 10);
 /\*!40000 ALTER TABLE `statistics` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `user_name` varchar(50) NOT NULL,
@@ -29958,9 +29738,6 @@ INSERT INTO `users` (`id`, `user_name`, `first_name`, `last_name`, `email`, `reg
 	(70, 'terrifymarzipan', 'JANICE', 'RIVERA', 'grfurniture@yahoo.com', '2010-02-10 00:00:00.000000', b'1', '136.208.113.14'),
 	(71, 'rotoriginally', 'KELLY', 'ROGERS', 'gosyen2000@hotmail.com', '2010-11-11 00:00:00.000000', b'1', '146.141.16.116');
 /\*!40000 ALTER TABLE `users` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `users_games` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `game_id` int(10) NOT NULL,
@@ -30307,9 +30084,6 @@ INSERT INTO `users_games` (`id`, `game_id`, `user_id`, `character_id`, `level`, 
 	(323, 10, 28, 12, 43, '2014-12-08 00:00:00.000000', 8119.0000),
 	(324, 122, 9, 1, 16, '2013-01-24 00:00:00.000000', 5832.0000);
 /\*!40000 ALTER TABLE `users_games` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `user_game_items` (
   `item_id` int(10) NOT NULL,
   `user_game_id` int(10) NOT NULL,
@@ -32734,8 +32508,10 @@ INSERT INTO `user_game_items` (`item_id`, `user_game_id`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
+```
 Pesho
 abv.bg
 monoxidecos
@@ -32878,12 +32654,12 @@ wagtailspicy
 yahoo.com
 loosenoise
 yahoo.com.sg
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT user_name, SUBSTRING(email, LOCATE('@', email) + 1, LENGTH(email) - LOCATE('@', email)) AS "Email Provider" FROM users
-
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -32936,9 +32712,6 @@ CREATE TABLE IF NOT EXISTS `item_types` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `PK_ItemTypes` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `statistics` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `strength` int(10) NOT NULL,
@@ -32973,9 +32746,6 @@ INSERT INTO `users` (`id`, `user_name`, `first_name`, `last_name`, `email`, `reg
 	(4, 'Petya', 'Petya', 'Grozdarska', 'petya@dir.bg', '2014-01-10 00:00:00.000000', b'0', '134.108.213.164'),
 	(5, 'Alex', 'Alexandra', 'Svilarova', 'alex@softuni.bg', '2015-06-03 00:00:00.000000', b'0', '116.33.3.1');
 /\*!40000 ALTER TABLE `users` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `users_games` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `game_id` int(10) NOT NULL,
@@ -32995,8 +32765,10 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 VGeorgiev
 abv.bg
 nakov
@@ -33007,12 +32779,12 @@ Petya
 dir.bg
 Alex
 softuni.bg
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT user_name, SUBSTRING(email, LOCATE('@', email) + 1, LENGTH(email) - LOCATE('@', email)) AS "Email Provider" FROM users order by 2;
-
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -33065,9 +32837,6 @@ CREATE TABLE IF NOT EXISTS `item_types` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `PK_ItemTypes` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `statistics` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `strength` int(10) NOT NULL,
@@ -33102,9 +32871,6 @@ INSERT INTO `users` (`id`, `user_name`, `first_name`, `last_name`, `email`, `reg
 	(4, 'Petya', 'Petya', 'Grozdarska', 'petya@civ.bg', '2014-01-10 00:00:00.000000', b'0', '134.108.213.164'),
 	(5, 'Alex', 'Alexandra', 'Svilarova', 'alex@abv.bg', '2015-06-03 00:00:00.000000', b'0', '116.33.3.1');
 /\*!40000 ALTER TABLE `users` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `users_games` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `game_id` int(10) NOT NULL,
@@ -33124,8 +32890,10 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 Alex
 abv.bg
 vladislav.karamfilov
@@ -33136,12 +32904,12 @@ nakov
 dir.bg
 VGeorgiev
 softuni.bg
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT user_name, SUBSTRING(email, LOCATE('@', email) + 1, LENGTH(email) - LOCATE('@', email)) AS "Email Provider" FROM users order by 2, 1;
-
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -33194,9 +32962,6 @@ CREATE TABLE IF NOT EXISTS `item_types` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `PK_ItemTypes` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `statistics` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `strength` int(10) NOT NULL,
@@ -33231,9 +32996,6 @@ INSERT INTO `users` (`id`, `user_name`, `first_name`, `last_name`, `email`, `reg
 	(4, 'betya', 'Petya', 'Grozdarska', 'petya@dir.bg', '2014-01-10 00:00:00.000000', b'0', '134.108.213.164'),
 	(5, 'Alex', 'Alexandra', 'Svilarova', 'alex@abv.bg', '2015-06-03 00:00:00.000000', b'0', '116.33.3.1');
 /\*!40000 ALTER TABLE `users` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `users_games` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `game_id` int(10) NOT NULL,
@@ -33253,8 +33015,10 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 Alex
 abv.bg
 aladislav.karamfilov
@@ -33265,6 +33029,7 @@ Zakov
 dir.bg
 VGeorgiev
 softuni.bg
+```
 [/output]
 [/test]
 [/tests]
@@ -33300,6 +33065,7 @@ Display only the rows where the **ip_address** matches the pattern: "\_\_\_.1%.%
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -33331,9 +33097,6 @@ INSERT INTO `characters` (`id`, `name`, `statistics_id`) VALUES
 	(11, 'Paladin', 12),
 	(12, 'Sorceress', 13);
 /\*!40000 ALTER TABLE `characters` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `games` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -33592,9 +33355,6 @@ INSERT INTO `games` (`id`, `name`, `start`, `duration`, `game_type_id`, `is_fini
 	(240, 'Lotte World', '2012-09-13 00:00:00.000000', 6, 4, b'1'),
 	(241, 'Victoria Peak', '2014-01-01 00:00:00.000000', 1, 1, b'1');
 /\*!40000 ALTER TABLE `games` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `game_types` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -33614,9 +33374,6 @@ INSERT INTO `game_types` (`id`, `name`, `bonus_stats_id`) VALUES
 	(4, 'Intermediate', 119),
 	(5, 'Funny', 120);
 /\*!40000 ALTER TABLE `game_types` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `game_type_forbidden_items` (
   `item_id` int(10) NOT NULL,
   `game_type_id` int(10) NOT NULL,
@@ -33757,9 +33514,6 @@ INSERT INTO `game_type_forbidden_items` (`item_id`, `game_type_id`) VALUES
 	(481, 5),
 	(528, 5);
 /\*!40000 ALTER TABLE `game_type_forbidden_items` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `items` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) DEFAULT NULL,
@@ -34356,9 +34110,6 @@ INSERT INTO `items` (`id`, `name`, `item_type_id`, `statistics_id`, `price`, `mi
 	(576, 'Zeis Stone of Vengeance', 6, 108, 371.0000, 28),
 	(577, 'Ziggurat Tooth', 16, 47, 788.0000, 56);
 /\*!40000 ALTER TABLE `items` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `item_types` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -34398,9 +34149,6 @@ INSERT INTO `item_types` (`id`, `name`) VALUES
 	(27, 'Orbs'),
 	(28, 'Quivers');
 /\*!40000 ALTER TABLE `item_types` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `statistics` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `strength` int(10) NOT NULL,
@@ -34535,9 +34283,6 @@ INSERT INTO `statistics` (`id`, `strength`, `defence`, `mind`, `speed`, `luck`) 
 	(119, -5, -5, -5, -5, -5),
 	(120, -10, -10, 15, 15, 10);
 /\*!40000 ALTER TABLE `statistics` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `user_name` varchar(50) NOT NULL,
@@ -34626,9 +34371,6 @@ INSERT INTO `users` (`id`, `user_name`, `first_name`, `last_name`, `email`, `reg
 	(70, 'terrifymarzipan', 'JANICE', 'RIVERA', 'grfurniture@yahoo.com', '2010-02-10 00:00:00.000000', b'1', '136.208.113.14'),
 	(71, 'rotoriginally', 'KELLY', 'ROGERS', 'gosyen2000@hotmail.com', '2010-11-11 00:00:00.000000', b'1', '146.141.16.116');
 /\*!40000 ALTER TABLE `users` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `users_games` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `game_id` int(10) NOT NULL,
@@ -34975,9 +34717,6 @@ INSERT INTO `users_games` (`id`, `game_id`, `user_id`, `character_id`, `level`, 
 	(323, 10, 28, 12, 43, '2014-12-08 00:00:00.000000', 8119.0000),
 	(324, 122, 9, 1, 16, '2013-01-24 00:00:00.000000', 5832.0000);
 /\*!40000 ALTER TABLE `users_games` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `user_game_items` (
   `item_id` int(10) NOT NULL,
   `user_game_id` int(10) NOT NULL,
@@ -37402,8 +37141,10 @@ INSERT INTO `user_game_items` (`item_id`, `user_game_id`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+```
 [/input]
 [output]
+```
 bindbawdy
 192.157.20.222
 evolvingimportant
@@ -37426,12 +37167,12 @@ Stamat
 180.166.72.243
 sweethorseman
 174.165.203.176
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT user_name, ip_address AS "IP Address" FROM Users WHERE ip_address LIKE '___.1%.%.___';
-
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -37484,9 +37225,6 @@ CREATE TABLE IF NOT EXISTS `item_types` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `PK_ItemTypes` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `statistics` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `strength` int(10) NOT NULL,
@@ -37521,9 +37259,6 @@ INSERT INTO `users` (`id`, `user_name`, `first_name`, `last_name`, `email`, `reg
 	(4, 'ddd', 'Petya', 'Grozdarska', 'petya@dir.bg', '2014-01-10 00:00:00.000000', b'0', '134.108.213.164'),
 	(5, 'fff', 'Alexandra', 'Svilarova', 'alex@softuni.bg', '2015-06-03 00:00:00.000000', b'0', '216.1.3.100');
 /\*!40000 ALTER TABLE `users` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `users_games` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `game_id` int(10) NOT NULL,
@@ -37543,18 +37278,20 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 ddd
 134.108.213.164
 fff
 216.1.3.100
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT user_name, ip_address AS "IP Address" FROM Users WHERE ip_address LIKE '___.1%';
-
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -37607,9 +37344,6 @@ CREATE TABLE IF NOT EXISTS `item_types` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `PK_ItemTypes` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `statistics` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `strength` int(10) NOT NULL,
@@ -37644,9 +37378,6 @@ INSERT INTO `users` (`id`, `user_name`, `first_name`, `last_name`, `email`, `reg
 	(4, 'ddd', 'Petya', 'Grozdarska', 'petya@dir.bg', '2014-01-10 00:00:00.000000', b'0', '134.108.213.164'),
 	(5, 'fff', 'Alexandra', 'Svilarova', 'alex@softuni.bg', '2015-06-03 00:00:00.000000', b'0', '216.3.3.100');
 /\*!40000 ALTER TABLE `users` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `users_games` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `game_id` int(10) NOT NULL,
@@ -37666,18 +37397,20 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 bbb
 140.15.35.230
 ddd
 134.108.213.164
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT user_name, ip_address AS "IP Address" FROM Users WHERE ip_address LIKE '%.___';
-
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -37730,9 +37463,6 @@ CREATE TABLE IF NOT EXISTS `item_types` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `PK_ItemTypes` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `statistics` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `strength` int(10) NOT NULL,
@@ -37767,9 +37497,6 @@ INSERT INTO `users` (`id`, `user_name`, `first_name`, `last_name`, `email`, `reg
 	(4, 'ddd', 'Petya', 'Grozdarska', 'petya@dir.bg', '2014-01-10 00:00:00.000000', b'0', '134.108.213.16'),
 	(5, 'fff', 'Alexandra', 'Svilarova', 'alex@softuni.bg', '2015-06-03 00:00:00.000000', b'0', '216.1.3.200');
 /\*!40000 ALTER TABLE `users` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `users_games` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `game_id` int(10) NOT NULL,
@@ -37789,18 +37516,20 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 aaa
 174.112.145.183
 fff
 216.1.3.200
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 4 : SELECT user_name, ip_address AS "IP Address" FROM Users WHERE ip_address LIKE '%.%.%.%';
-
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -37853,9 +37582,6 @@ CREATE TABLE IF NOT EXISTS `item_types` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `PK_ItemTypes` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `statistics` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `strength` int(10) NOT NULL,
@@ -37890,9 +37616,6 @@ INSERT INTO `users` (`id`, `user_name`, `first_name`, `last_name`, `email`, `reg
 	(4, 'ddd', 'Petya', 'Grozdarska', 'petya@dir.bg', '2014-01-10 00:00:00.000000', b'0', '134.108.213.16'),
 	(5, 'fff', 'Alexandra', 'Svilarova', 'alex@softuni.bg', '2015-06-03 00:00:00.000000', b'0', '216.1_3.200');
 /\*!40000 ALTER TABLE `users` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `users_games` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `game_id` int(10) NOT NULL,
@@ -37912,16 +37635,18 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 aaa
 174.112.145.183
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 5 : SELECT user_name, ip_address AS "IP Address" FROM Users WHERE ip_address LIKE '___.1%.%.___' ORDER BY user_name;
-
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -37974,9 +37699,6 @@ CREATE TABLE IF NOT EXISTS `item_types` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `PK_ItemTypes` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `statistics` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `strength` int(10) NOT NULL,
@@ -38077,9 +37799,6 @@ INSERT INTO `users` (`id`, `user_name`, `first_name`, `last_name`, `email`, `reg
 	(70, 'terrifymarzipan', 'JANICE', 'RIVERA', 'grfurniture@yahoo.com', '2010-02-10 00:00:00.000000', b'1', '136.208.113.14'),
 	(71, 'rotoriginally', 'KELLY', 'ROGERS', 'gosyen2000@hotmail.com', '2010-11-11 00:00:00.000000', b'1', '146.141.16.116');
 /\*!40000 ALTER TABLE `users` ENABLE KEYS \*/;
-
-
-
 CREATE TABLE IF NOT EXISTS `users_games` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `game_id` int(10) NOT NULL,
@@ -38099,8 +37818,10 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 bindbawdy
 192.157.20.222
 evolvingimportant
@@ -38123,6 +37844,7 @@ Stamat
 180.166.72.243
 sweethorseman
 174.165.203.176
+```
 [/output]
 [/test]
 [/tests]
@@ -38170,13 +37892,7 @@ There are **three parts of the day**:
 [tests]
 [test open]
 [input]
-\# test 1 : SELECT name as Game, 
-\#	CASE WHEN hour(start) \>= 0 and hour(start) \< 12 THEN 'Morning'
-\#		WHEN hour(start) \>= 12 and hour(start) \< 18 THEN 'Afternoon'
-\#		WHEN hour(start) \>= 18 and hour(start) \< 24 THEN 'Evening' END AS "Part of the Day", 
-\#		CASE WHEN duration \<= 3 THEN 'Extra Short' WHEN duration \> 3 and duration \<= 6 THEN 'Short' WHEN duration \> 6 and duration \<= 10 THEN 'Long' ELSE 'Extra Long' END AS duration 
-\#   FROM Games
-
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -38205,9 +37921,6 @@ INSERT INTO `games` (`id`, `name`, `start`, `duration`, `game_type_id`, `is_fini
 	(3, 'ccc', '2014-08-15 18:38:00.000000', 10, 3, b'1'),
 	(4, 'ddd', '2014-08-15 18:38:00.000000', 12, 3, b'1'),
 	(5, 'fff', '2014-08-15 18:38:00.000000', null, 3, b'1');
-
-
-
 CREATE TABLE IF NOT EXISTS `game_types` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -38253,9 +37966,6 @@ CREATE TABLE IF NOT EXISTS `statistics` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `PK_Statistics` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=121 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `user_name` varchar(50) NOT NULL,
@@ -38289,8 +37999,10 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 aaa
 Morning
 Extra Short
@@ -38306,17 +38018,12 @@ Extra Long
 fff
 Evening
 Extra Long
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT name as Game, 
-\#	CASE WHEN hour(start) \>= 0 and hour(start) \< 12 THEN 'Morning'
-\#		WHEN hour(start) \>= 12 and hour(start) \< 18 THEN 'Afternoon'
-\#		WHEN hour(start) \>= 18 and hour(start) \< 24 THEN 'Evening' END AS "Part of the Day", 
-\#		CASE WHEN duration \<= 3 THEN 'Extra Short' WHEN duration \> 3 and duration \<= 6 THEN 'Short' WHEN duration \> 6 and duration \<= 10 THEN 'Long' ELSE 'Extra Long' END AS duration 
-\#   FROM Games
-
+```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -38345,9 +38052,6 @@ INSERT INTO `games` (`id`, `name`, `start`, `duration`, `game_type_id`, `is_fini
 	(3, 'ccc', '2014-08-15 18:38:00.000000', 10, 3, b'1'),
 	(4, 'ddd', '2014-08-15 18:38:00.000000', 12, 3, b'1'),
 	(5, 'fff', '2014-08-15 18:38:00.000000', null, 3, b'1');
-
-
-
 CREATE TABLE IF NOT EXISTS `game_types` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -38393,9 +38097,6 @@ CREATE TABLE IF NOT EXISTS `statistics` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `PK_Statistics` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=121 DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `users` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `user_name` varchar(50) NOT NULL,
@@ -38429,8 +38130,10 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 aaa
 Morning
 Extra Short
@@ -38446,14 +38149,12 @@ Extra Long
 fff
 Evening
 Extra Long
+```
 [/output]
 [/test]
 [/tests]
 [/code-task]
 [/slide]
-
-
-
 [slide hideTitle]
 # Problem: Orders Table
 [code-task title="Orders Table" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-orders-table" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
@@ -38507,6 +38208,7 @@ Write a query to display each product's **name, order date, payment and delivery
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS orders
 (
 id INT NOT NULL,
@@ -38530,8 +38232,10 @@ INSERT INTO orders (id, product_name, order_date) VALUES (12, 'Tomatoesytu', '20
 INSERT INTO orders (id, product_name, order_date) VALUES (13, 'Toyymatddoehys', '20151231');
 INSERT INTO orders (id, product_name, order_date) VALUES (14, 'Tom443atoes', '20151215');
 INSERT INTO orders (id, product_name, order_date) VALUES (15, 'Tomat65434foe23gfhgsPep', '20151004');
+```
 [/input]
 [output]
+```
 Butter
 2016-09-19 00:00:00
 2016-09-22 00:00:00
@@ -38592,10 +38296,12 @@ Tomat65434foe23gfhgsPep
 2015-10-04 00:00:00
 2015-10-07 00:00:00
 2015-11-04 00:00:00
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CREATE TABLE IF NOT EXISTS orders
 (
 id INT NOT NULL,
@@ -38619,8 +38325,10 @@ INSERT INTO orders (id, product_name, order_date) VALUES (12, 'Tomatoesytu', '20
 INSERT INTO orders (id, product_name, order_date) VALUES (13, 'Toyymatddoehys', '20151231');
 INSERT INTO orders (id, product_name, order_date) VALUES (14, 'Tom443atoes', '20151215');
 INSERT INTO orders (id, product_name, order_date) VALUES (15, 'Tomat65434foe23gfhgsPep', '20151004');
+```
 [/input]
 [output]
+```
 Butter
 2016-09-19 00:00:00
 2016-09-22 00:00:00
@@ -38681,14 +38389,12 @@ Tomat65434foe23gfhgsPep
 2015-10-04 00:00:00
 2015-10-07 00:00:00
 2015-11-04 00:00:00
+```
 [/output]
 [/test]
 [/tests]
 [/code-task]
 [/slide]
-
-
-
 [slide hideTitle]
 # Problem: Records Count
 [code-task title="Records Count" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-records-count" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
@@ -38724,6 +38430,7 @@ Make sure nothing got lost.
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -38904,13 +38611,17 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort\'s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry\'s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 162
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -39091,9 +38802,12 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort\'s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry\'s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 162
+```
 [/output]
 [/test]
 [/tests]
@@ -39125,6 +38839,7 @@ Rename the new column appropriately.
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -39305,13 +39020,17 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 31
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -39492,9 +39211,12 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 31
+```
 [/output]
 [/test]
 [/tests]
@@ -39530,6 +39252,7 @@ Choose a fitting name for the new column.
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -39710,8 +39433,10 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 Human Pride
 30
 Blue Phoenix
@@ -39720,12 +39445,12 @@ Troll Chest
 31
 Venomous Tongue
 31
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT deposit_group, max(magic_wand_size) FROM task3.wizzard_deposits group by deposit_group;
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -39906,8 +39631,10 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 Human Pride
 30
 Blue Phoenix
@@ -39916,6 +39643,7 @@ Troll Chest
 31
 Venomous Tongue
 31
+```
 [/output]
 [/test]
 [/tests]
@@ -39943,6 +39671,7 @@ Select the deposit group with the **smallest** average wand size.
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -40123,23 +39852,17 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 Troll Chest
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : 	CREATE view  v_deposits_average_size AS
-\#  SELECT deposit_group, AVG(magic_wand_size) AS average_magic_wand_size
-\#   FROM gringotts.wizzard_deposits AS w
-\#   GROUP BY deposit_group;
-
-\# SELECT deposit_group
-\#   FROM v_deposits_average_size AS wdas
-\#  WHERE wdas.average_magic_wand_size =
-\# (SELECT MIN(average_magic_wand_size) AS LowestAveragemagic_wand_size
-\#   FROM v_deposits_average_size AS wdas);
+```
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
@@ -40321,9 +40044,12 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 Troll Chest
+```
 [/output]
 [/test]
 [/tests]
@@ -40357,6 +40083,7 @@ Sort result by **total_sum** in **ascending order.**
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -40537,8 +40264,10 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 Blue Phoenix
 819598.73
 Troll Chest
@@ -40547,10 +40276,12 @@ Human Pride
 1041291.52
 Venomous Tongue
 1054128.94
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -40731,8 +40462,10 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 Blue Phoenix
 819598.73
 Troll Chest
@@ -40741,6 +40474,7 @@ Human Pride
 1041291.52
 Venomous Tongue
 1054128.94
+```
 [/output]
 [/test]
 [/tests]
@@ -40775,6 +40509,7 @@ Sort the result by **deposit_group alphabetically.**
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -40955,8 +40690,10 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 Blue Phoenix
 52968.96
 Human Pride
@@ -40965,12 +40702,12 @@ Troll Chest
 126585.18
 Venomous Tongue
 257056.04
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT w.deposit_group, SUM(deposit_amount) AS total_deposit_amount FROM wizzard_deposits AS w WHERE w.magic_wand_creator = 'Ollivander family';
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -40994,16 +40731,18 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(3, 'Ludo', 'Bagman', 'Quidditch Beater for the Wimbourne Wasps and Head of the Department of Magical Games and Sports within the Ministry of Magic', 19, 'Ollivander family', 18, 'Venomous Tongue', '1990-07-04', 23190.94, 14.92, 30.00, '1990-12-27', b'0'),
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Mr. Bean', 15, 'Venomous Tongue', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Ollivander family', 14, 'Venomous Tongue', '1981-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'1');
+```
 [/input]
 [output]
+```
 Venomous Tongue
 78726.90
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT w.deposit_group, SUM(deposit_amount) AS total_deposit_amount FROM wizzard_deposits AS w GROUP BY w.deposit_group;
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41027,18 +40766,22 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(3, 'Ludo', 'Bagman', 'Quidditch Beater for the Wimbourne Wasps and Head of the Department of Magical Games and Sports within the Ministry of Magic', 19, 'Ollivander family', 18, 'Venomous Tongue', '1990-07-04', 23190.94, 14.92, 30.00, '1990-12-27', b'0'),
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Ollivander family', 15, 'Other group', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Ollivander family', 14, 'Some group', '1981-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'1');
+```
 [/input]
 [output]
+```
 Other group
 687.67
 Some group
 55535.96
 Venomous Tongue
 69788.34
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41219,8 +40962,10 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 Blue Phoenix
 52968.96
 Human Pride
@@ -41229,6 +40974,7 @@ Troll Chest
 126585.18
 Venomous Tongue
 257056.04
+```
 [/output]
 [/test]
 [/tests]
@@ -41263,6 +41009,7 @@ Order by `total_sum` in **descending order.**
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41443,18 +41190,20 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 Troll Chest
 126585.18
 Blue Phoenix
 52968.96
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT w.deposit_group, SUM(deposit_amount) AS total_deposit_amount FROM wizzard_deposits AS w
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41479,16 +41228,18 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Ollivander family', 15, 'Human Pride', '1993-06-07', 1.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Ollivander family', 14, 'Human Pride', '1981-05-08', 5.5, 16.58, 11.00, '1982-02-03', b'1'),
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Ollivander family', 23, 'Human Pride', '1985-10-26', 3.9, 24.84, 95.00, '1985-12-27', b'1');
+```
 [/input]
 [output]
+```
 Human Pride
 15.37
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT w.deposit_group, SUM(deposit_amount) AS total_deposit_amount FROM wizzard_deposits AS w  WHERE w.magic_wand_creator = 'Ollivander family';
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41513,16 +41264,18 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Smiths', 15, 'Human Pride', '1993-06-07', 1.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Ollivander family', 14, 'Human Pride', '1981-05-08', 5.5, 16.58, 11.00, '1982-02-03', b'1'),
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Ollivander family', 23, 'Human Pride', '1985-10-26', 3.9, 24.84, 95.00, '1985-12-27', b'1');
+```
 [/input]
 [output]
+```
 Human Pride
 11.50
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT w.deposit_group, SUM(deposit_amount) AS total_deposit_amount FROM wizzard_deposits AS w GROUP BY w.deposit_group;
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41547,20 +41300,22 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Ollivander family', 15, 'Human Pride', '1993-06-07', 1.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Ollivander family', 14, 'Human Pride', '1981-05-08', 5.5, 16.58, 11.00, '1982-02-03', b'1'),
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Ollivander family', 23, 'Human Pride', '1985-10-26', 3.9, 24.84, 95.00, '1985-12-27', b'1');
+```
 [/input]
 [output]
+```
 Human Pride
 11.07
 Other group
 2.20
 Some group
 2.10
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 4 : SELECT w.deposit_group, SUM(deposit_amount) AS total_deposit_amount FROM wizzard_deposits AS w GROUP BY w.deposit_group HAVING SUM(deposit_amount) \< 150000;
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41585,16 +41340,20 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Ollivander family', 15, 'Human Pride', '1993-06-07', 10000, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Ollivander family', 14, 'Human Pride', '1981-05-08', 20000, 16.58, 11.00, '1982-02-03', b'1'),
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Ollivander family', 23, 'Human Pride', '1985-10-26', 119999, 24.84, 95.00, '1985-12-27', b'1');
+```
 [/input]
 [output]
+```
 Human Pride
 149999.00
 Other group
 10000.00
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41775,12 +41534,15 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 Troll Chest
 126585.18
 Blue Phoenix
 52968.96
+```
 [/output]
 [/test]
 [/tests]
@@ -41820,6 +41582,7 @@ Select the data in **ascending order** by **magic_wand_creator** and **deposit_g
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -42000,8 +41763,10 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 Blue Phoenix
 Antioch Peverell
 30.00
@@ -42074,12 +41839,12 @@ Ollivander family
 Venomous Tongue
 Ollivander family
 23.00
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT w.deposit_group, w.magic_wand_creator, MIN(w.deposit_charge) AS min_deposit_charge FROM wizzard_deposits AS w
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -42104,17 +41869,19 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Antioch Peverell', 15, 'Venomous Tongue', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Antioch Peverell', 14, 'Venomous Tongue', '1981-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'1'),
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Antioch Peverell', 23, 'Venomous Tongue', '1985-10-26', 11902.72, 24.84, 95.00, '1985-12-27', b'1');
+```
 [/input]
 [output]
+```
 Venomous Tongue
 Antioch Peverell
 11.00
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT w.deposit_group, w.magic_wand_creator, MIN(w.deposit_charge) AS min_deposit_charge FROM wizzard_deposits AS w GROUP BY w.deposit_group;
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -42139,20 +41906,22 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Some creator', 15, 'Venomous Tongue', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Antioch Peverell', 14, 'Some group', '1981-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'1'),
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Antioch Peverell', 23, 'Some group', '1985-10-26', 11902.72, 24.84, 95.00, '1985-12-27', b'1');
+```
 [/input]
 [output]
+```
 Some group
 Antioch Peverell
 11.00
 Venomous Tongue
 Some creator
 30.00
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT w.deposit_group, w.magic_wand_creator, MIN(w.deposit_charge) AS min_deposit_charge FROM wizzard_deposits AS w GROUP BY w.deposit_group, w.magic_wand_creator;
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -42177,8 +41946,10 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'CCC creator', 15, 'CCC group', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'DDD creator', 14, 'CCC group', '1981-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'1'),
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'DDD creator', 23, 'CCC group', '1985-10-26', 11902.72, 24.84, 95.00, '1985-12-27', b'1');
+```
 [/input]
 [output]
+```
 BBB group
 AAA creator
 73.00
@@ -42191,10 +41962,12 @@ CCC creator
 CCC group
 DDD creator
 11.00
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -42375,8 +42148,10 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 Blue Phoenix
 Antioch Peverell
 30.00
@@ -42449,6 +42224,7 @@ Ollivander family
 Venomous Tongue
 Ollivander family
 23.00
+```
 [/output]
 [/test]
 [/tests]
@@ -42497,6 +42273,7 @@ Sort the results in **ascending order by the size** of the age groups.
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -42677,8 +42454,10 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 \[11-20\]
 21
 \[21-30\]
@@ -42691,17 +42470,12 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 26
 \[61+\]
 31
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT CASE
-\#			WHEN w.Age BETWEEN 0 AND 10 THEN '\[0-10\]'
-\#		END AS 'SizeGroup'
-\#		,COUNT(\*) as wizzard_count
-\# FROM wizzard_deposits AS w
-\# GROUP BY SizeGroup;
-
+```
 
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
@@ -42724,21 +42498,18 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 0, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 10, 'Ollivander family', 20, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
+```
 [/input]
 [output]
+```
 \[0-10\]
 2
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT CASE
-\#			WHEN w.Age BETWEEN 11 AND 20 THEN '\[11-20\]'
-\#		END AS 'SizeGroup'
-\#		,COUNT(\*) as wizzard_count
-\# FROM wizzard_deposits AS w
-\# GROUP BY SizeGroup;
-
+```
 
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
@@ -42761,21 +42532,18 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 11, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 20, 'Ollivander family', 20, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
+```
 [/input]
 [output]
+```
 \[11-20\]
 2
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT CASE
-\#			WHEN w.Age BETWEEN 21 AND 30 THEN '\[21-30\]'
-\#		END AS 'SizeGroup'
-\#		,COUNT(\*) as wizzard_count
-\# FROM wizzard_deposits AS w
-\# GROUP BY SizeGroup;
-
+```
 
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
@@ -42798,21 +42566,18 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 21, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 30, 'Ollivander family', 30, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
+```
 [/input]
 [output]
+```
 \[21-30\]
 2
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 4 : SELECT CASE
-\#			WHEN w.Age BETWEEN 31 AND 40 THEN '\[31-40\]'
-\#		END AS 'SizeGroup'
-\#		,COUNT(\*) as wizzard_count
-\# FROM wizzard_deposits AS w
-\# GROUP BY SizeGroup;
-
+```
 
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
@@ -42835,21 +42600,18 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 31, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 40, 'Ollivander family', 30, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
+```
 [/input]
 [output]
+```
 \[31-40\]
 2
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 5 : SELECT CASE
-\#			WHEN w.Age BETWEEN 41 AND 50 THEN '\[41-50\]'
-\#		END AS 'SizeGroup'
-\#		,COUNT(\*) as wizzard_count
-\# FROM wizzard_deposits AS w
-\# GROUP BY SizeGroup;
-
+```
 
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
@@ -42872,21 +42634,18 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 41, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 50, 'Ollivander family', 30, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
+```
 [/input]
 [output]
+```
 \[41-50\]
 2
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 6 : SELECT CASE
-\#			WHEN w.Age BETWEEN 51 AND 60 THEN '\[51-60\]'
-\#		END AS 'SizeGroup'
-\#		,COUNT(\*) as wizzard_count
-\# FROM wizzard_deposits AS w
-\# GROUP BY SizeGroup;
-
+```
 
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
@@ -42909,21 +42668,18 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 51, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 60, 'Ollivander family', 30, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
+```
 [/input]
 [output]
+```
 \[51-60\]
 2
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 7 : SELECT CASE
-\#			WHEN w.Age \>= 61 THEN '\[61+\]'
-\#		END AS 'SizeGroup'
-\#		,COUNT(\*) as wizzard_count
-\# FROM wizzard_deposits AS w
-\# GROUP BY SizeGroup;
-
+```
 
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
@@ -42946,10 +42702,13 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 61, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 70, 'Ollivander family', 30, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
+```
 [/input]
 [output]
+```
 \[61+\]
 2
+```
 [/output]
 [/test]
 [/tests]
@@ -42984,6 +42743,7 @@ Use `GROUP BY` to ensure the uniqueness of the entries.
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43164,8 +42924,10 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 A
 B
 C
@@ -43184,12 +42946,12 @@ S
 V
 W
 Y
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT SUBSTRING(w.first_name,1,1) AS first_letter FROM wizzard_deposits AS w
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43209,15 +42971,17 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Anna', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0');
+```
 [/input]
 [output]
+```
 A
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT SUBSTRING(w.first_name,1,1) AS first_letter FROM wizzard_deposits AS w WHERE deposit_group = 'Troll Chest';
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43238,15 +43002,17 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Anna', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 63, 'Ollivander family', 20, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
+```
 [/input]
 [output]
+```
 A
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT SUBSTRING(w.first_name,1,1) AS first_letter FROM wizzard_deposits AS w GROUP BY first_letter;
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43267,15 +43033,17 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Anna', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Amanda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 63, 'Ollivander family', 20, 'Troll Chest', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
+```
 [/input]
 [output]
+```
 A
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 4 : SELECT SUBSTRING(w.first_name,1,1) AS first_letter FROM wizzard_deposits AS w ORDER BY first_letter ASC;
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43296,10 +43064,13 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Bob', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Amanda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 63, 'Ollivander family', 20, 'Troll Chest', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
+```
 [/input]
 [output]
+```
 A
 B
+```
 [/output]
 [/test]
 [/tests]
@@ -43338,6 +43109,7 @@ Order the data in **descending** order by Deposit Group and in **ascending order
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43518,8 +43290,10 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 Venomous Tongue
 0
 16.698947
@@ -43544,12 +43318,12 @@ Blue Phoenix
 Blue Phoenix
 1
 21.785000
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT w.deposit_group, is_deposit_expired, AVG(w.deposit_interest) AS average_interest FROM wizzard_deposits AS w;
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43571,17 +43345,19 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 63, 'Ollivander family', 20, 'Troll Chest', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'0'),
 	(3, 'Ludo', 'Bagman', 'Quidditch Beater for the Wimbourne Wasps and Head of the Department of Magical Games and Sports within the Ministry of Magic', 19, 'Mykew Gregorovitch', 18, 'Troll Chest', '1990-07-04', 23190.94, 14.92, 30.00, '1990-12-27', b'0');
+```
 [/input]
 [output]
+```
 Troll Chest
 0
 23.613333
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT w.deposit_group, is_deposit_expired, AVG(w.deposit_interest) AS average_interest FROM wizzard_deposits AS w WHERE w.deposit_start_date \> '1985-01-01';
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43603,17 +43379,19 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 63, 'Ollivander family', 20, 'Troll Chest', '1985-01-01', 46597.40, 26.64, 64.00, '1986-01-01', b'0'),
 	(3, 'Ludo', 'Bagman', 'Quidditch Beater for the Wimbourne Wasps and Head of the Department of Magical Games and Sports within the Ministry of Magic', 19, 'Mykew Gregorovitch', 18, 'Troll Chest', '1990-07-04', 23190.94, 14.92, 30.00, '1990-12-27', b'0');
+```
 [/input]
 [output]
+```
 Troll Chest
 0
 22.100000
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT w.deposit_group, is_deposit_expired, AVG(w.deposit_interest) AS average_interest FROM wizzard_deposits AS w GROUP BY w.deposit_group;
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43634,17 +43412,19 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Arturo Cephalopos', 14, 'Troll Chest', '1987-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'0');
+```
 [/input]
 [output]
+```
 Troll Chest
 0
 22.930000
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 4 : SELECT w.deposit_group, is_deposit_expired, AVG(w.deposit_interest) AS average_interest FROM wizzard_deposits AS w GROUP BY w.deposit_group, is_deposit_expired;
-
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43667,18 +43447,22 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(2, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Jimmy Kiddell', 15, 'Human Pride', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(3, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Arturo Cephalopos', 14, 'Human Pride', '1987-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'1'),
 	(4, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Death', 23, 'Human Pride', '1989-10-26', 11902.72, 24.84, 95.00, '1989-12-27', b'1');
+```
 [/input]
 [output]
+```
 Human Pride
 0
 22.410000
 Human Pride
 1
 20.710000
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43859,8 +43643,10 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
+```
 [/input]
 [output]
+```
 Venomous Tongue
 0
 16.698947
@@ -43885,6 +43671,7 @@ Blue Phoenix
 Blue Phoenix
 1
 21.785000
+```
 [/output]
 [/test]
 [/tests]
@@ -43936,6 +43723,7 @@ Your query should return:
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -44245,20 +44033,22 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291)
+```
 [/input]
 [output]
+```
 2
 25000.0000
 5
 12800.0000
 7
 9500.0000
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT department_id ,MIN(salary) AS min_salary FROM employees AS e
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -44300,18 +44090,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'ei', NULL, 'Engineering Manager', 2, 12, '2005-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', 'ei', NULL, 'Senior Tool Designer', 2, 3, '2003-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', 'ei', 'B', 'Tool Designer', 2, 263, '2004-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -44329,16 +44113,18 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 2
 12500.0000
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT department_id ,MIN(salary) AS min_salary FROM employees AS e WHERE e.department_id = 2;
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -44380,18 +44166,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'ei', NULL, 'Engineering Manager', 9, 12, '2005-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', 'ei', NULL, 'Senior Tool Designer', 2, 3, '2003-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', 'ei', 'B', 'Tool Designer', 8, 263, '2004-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -44409,16 +44189,18 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 2
 13500.0000
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT department_id ,MIN(salary) AS min_salary FROM employees AS e WHERE e.department_id = 5;
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -44460,18 +44242,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'ei', NULL, 'Engineering Manager', 5, 12, '2005-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', 'ei', NULL, 'Senior Tool Designer', 14, 3, '2003-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', 'ei', 'B', 'Tool Designer', 5, 263, '2004-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -44489,16 +44265,18 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 5
 25000.0000
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 4 : SELECT department_id ,MIN(salary) AS min_salary FROM employees AS e WHERE e.department_id = 7;
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -44540,18 +44318,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'ei', NULL, 'Engineering Manager', 7, 12, '2005-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', 'ei', NULL, 'Senior Tool Designer', 7, 3, '2003-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', 'ei', 'B', 'Tool Designer', 15, 263, '2004-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -44569,16 +44341,18 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 7
 29800.0000
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 5 : SELECT department_id ,MIN(salary) AS min_salary FROM employees AS e WHERE e.hire_date \> '20000101';
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -44620,18 +44394,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Michel', 'ei', NULL, 'Engineering Manager', 2, 12, '2005-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Kevin', 'ei', NULL, 'Senior Tool Designer', 2, 3, '2003-01-05 00:00:00.000000', 20000.0000, 155),
 	(5, 'Steven', 'ei', 'B', 'Tool Designer', 2, 263, '1999-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -44649,16 +44417,18 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 2
 20000.0000
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 6 : SELECT department_id ,MIN(salary) AS min_salary FROM employees AS e GROUP BY department_id;
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -44701,18 +44471,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(4, 'Kevin', 'ei', NULL, 'Senior Tool Designer', 2, 3, '2003-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Steven', 'ei', 'B', 'Tool Designer', 5, 263, '2004-01-11 00:00:00.000000', 25000.0000, 40),
 	(6, 'John', 'Kirov', 'B', 'Tool Designer', 7, 263, '2004-01-11 00:00:00.000000', 44000.0000, 40);
-
-
-
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -44730,14 +44494,17 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 2
 12500.0000
 5
 13500.0000
 7
 43300.0000
+```
 [/output]
 [/test]
 [/tests]
@@ -44779,6 +44546,7 @@ Sort the result by **department_id** in **ascending** order.
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -44800,16 +44568,19 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 2, 12, '1999-12-12 00:00:00.000000', 40000.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 51000.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
+```
 [/input]
 [output]
+```
 2
 40666.66666667
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : CREATE TABLE high_paid_employees AS SELECT \* FROM employees AS e WHERE e.salary \> 30000;
-\#           SELECT department_id, AVG(salary) AS average_salary FROM high_paid_employees AS e
+```
+
 
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -44832,18 +44603,18 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 2, 12, '1999-12-12 00:00:00.000000', 40000.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 51000.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
+```
 [/input]
 [output]
+```
 2
 40666.66666667
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : CREATE TABLE high_paid_employees AS SELECT \* FROM employees AS e WHERE e.salary \> 30000;
-\#           DELETE FROM high_paid_employees WHERE manager_id = 42;
-\#           SELECT department_id, AVG(salary) AS average_salary FROM high_paid_employees AS e
-
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -44865,18 +44636,18 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 2, 12, '1999-12-12 00:00:00.000000', 41000.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 42, '2000-01-05 00:00:00.000000', 51000.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
+```
 [/input]
 [output]
+```
 2
 36000.00000000
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : CREATE TABLE high_paid_employees AS SELECT \* FROM employees AS e WHERE e.salary \> 30000;
-\#           UPDATE high_paid_employees SET salary = salary + 5000 WHERE department_id = 1;
-\#           SELECT department_id, AVG(salary) AS average_salary FROM high_paid_employees AS e
-
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -44898,16 +44669,19 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 1, '1999-12-12 00:00:00.000000', 41000.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 1, 43, '2000-01-05 00:00:00.000000', 51000.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 1, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
+```
 [/input]
 [output]
+```
 1
 46000.00000000
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 4 : CREATE TABLE high_paid_employees AS SELECT \* FROM employees AS e WHERE e.salary \> 30000;
-\#           SELECT department_id, AVG(salary) AS average_salary FROM high_paid_employees AS e GROUP BY department_id;
+```
+
 
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -44930,12 +44704,15 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 2, 1, '1999-12-12 00:00:00.000000', 41000.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 43, '2000-01-05 00:00:00.000000', 51000.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
+```
 [/input]
 [output]
+```
 2
 46000.00000000
 3
 36000.00000000
+```
 [/output]
 [/test]
 [/tests]
@@ -44971,6 +44748,7 @@ Sort the result by **department_id** in **ascending** order.
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45280,8 +45058,10 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
+```
 [/input]
 [output]
+```
 2
 29800.0000
 3
@@ -45302,12 +45082,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 19200.0000
 16
 125500.0000
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT department_id ,MAX(salary) AS max_salary FROM employees AS e;
-
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45329,16 +45109,18 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 71000.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 1, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 1, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
+```
 [/input]
 [output]
+```
 1
 71000.0000
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT department_id ,MAX(salary) AS max_salary FROM employees AS e GROUP BY department_id;
-
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45360,18 +45142,20 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 71000.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 1, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
+```
 [/input]
 [output]
+```
 1
 71000.0000
 2
 25000.0000
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 3 : SELECT department_id ,MAX(salary) AS max_salary FROM employees AS e GROUP BY department_id HAVING MAX(salary) NOT BETWEEN 30000 AND 70000;
-
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45394,10 +45178,13 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 3, 3, '2000-01-05 00:00:00.000000', 71000.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 30000.0000, 40),
 	(6, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 3, 3, '2000-01-05 00:00:00.000000', 29000.0000, 155);
+```
 [/input]
 [output]
+```
 3
 71000.0000
+```
 [/output]
 [/test]
 [/tests]
@@ -45425,6 +45212,7 @@ Count the salaries of all employees who **do not have a manager.**
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45734,15 +45522,17 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
+```
 [/input]
 [output]
+```
 4
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 1 : SELECT COUNT(\*) AS employee_count FROM employees AS e;
-
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45764,15 +45554,17 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, null, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, null, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, null, '2000-01-11 00:00:00.000000', 25000.0000, 40);
+```
 [/input]
 [output]
+```
 5
+```
 [/output]
 [/test]
 [test]
 [input]
-\# test 2 : SELECT COUNT(\*) AS employee_count FROM employees AS e WHERE e.manager_id IS NULL;
-
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45794,9 +45586,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, null, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, null, '2000-01-11 00:00:00.000000', 25000.0000, 40);
+```
 [/input]
 [output]
+```
 3
+```
 [/output]
 [/test]
 [/tests]
@@ -45831,6 +45626,7 @@ Sort the result by **department_id** in **ascending order.**
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -46140,8 +45936,10 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
+```
 [/input]
 [output]
+```
 1
 36100.0000
 2
@@ -46170,10 +45968,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 9800.0000
 15
 9000.0000
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -46483,8 +46283,10 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
+```
 [/input]
 [output]
+```
 1
 36100.0000
 2
@@ -46513,6 +46315,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 9800.0000
 15
 9000.0000
+```
 [/output]
 [/test]
 [/tests]
@@ -46551,6 +46354,7 @@ Your query should return:
 [tests]
 [test open]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -46860,8 +46664,10 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
+```
 [/input]
 [output]
+```
 1
 241000.0000
 2
@@ -46894,10 +46700,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 65200.0000
 16
 185600.0000
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -47207,8 +47015,10 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
+```
 [/input]
 [output]
+```
 1
 241000.0000
 2
@@ -47241,6 +47051,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 65200.0000
 16
 185600.0000
+```
 [/output]
 [/test]
 [/tests]
