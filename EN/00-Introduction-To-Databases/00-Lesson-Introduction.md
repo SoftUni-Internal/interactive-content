@@ -36,7 +36,6 @@ Display their **first** and **last names**.
 [tests]
 [test open]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -1695,10 +1694,8 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
-```
 Sariya
 Harnpadoungsataya
 Sandra
@@ -1711,12 +1708,10 @@ Sameer
 Tejani
 Sandeep
 Kaliyath
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -1781,10 +1776,8 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 SA
 Gilbert
 SA
@@ -1795,12 +1788,10 @@ SA
 Walters
 SA
 D'Hers
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -1865,17 +1856,14 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 Samuel
 Gilbert
 Sara
 Walters
 SAMANTA
 D'Hers
-```
 [/output]
 [/test]
 [/tests]
@@ -1912,7 +1900,6 @@ Write an SQL query that finds all employees whose **last names contain "ei" (cas
 [tests]
 [test open]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -3571,10 +3558,8 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
-```
 Kendall
 Keil
 Christian
@@ -3589,12 +3574,10 @@ Linda
 Meisner
 Tsvi
 Reiter
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -3659,10 +3642,8 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 John
 ei
 Sara
@@ -3673,12 +3654,10 @@ Kevin
 ei
 Steven
 ei
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -3743,22 +3722,18 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 John
 Eimi
 Sara
 Eimily
 Michel
 Eibraham
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -3823,17 +3798,14 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 John
 Goremei
 Sara
 Bonei
 Michel
 BANADEI
-```
 [/output]
 [/test]
 [/tests]
@@ -3873,7 +3845,6 @@ Write an SQL query that finds the **first names** of all employees that are **bo
 [tests]
 [test open]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -5532,10 +5503,8 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
-```
 Deborah
 Wendy
 Candy
@@ -5560,12 +5529,10 @@ Tete
 Syed
 Rachel
 Lynn
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -5630,19 +5597,15 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 John
 Michel
 Steven
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -5707,19 +5670,15 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 John
 Michel
 Steven
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -5784,19 +5743,15 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 John
 Michel
 Steven
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -5861,14 +5816,11 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 John
 Sara
 Steven
-```
 [/output]
 [/test]
 [/tests]
@@ -5903,7 +5855,6 @@ Write an SQL query that finds the **first** and **last names** of all employees 
 [tests]
 [test open]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -7562,10 +7513,8 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
-```
 Guy
 Gilbert
 Kevin
@@ -8136,12 +8085,10 @@ Martin
 Kulov
 George
 Denchev
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -8206,10 +8153,8 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 John
 Something
 Sara
@@ -8220,12 +8165,10 @@ Kevin
 Dekorative
 Steven
 Small
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -8290,20 +8233,16 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 Sara
 Kerosin
 Michel
 Fleita
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -8368,22 +8307,18 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 John
 Something
 Kevin
 Dekorative
 Steven
 Small
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -8448,17 +8383,14 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 John
 Something
 Sara
 Kerosin
 Michel
 Fleita
-```
 [/output]
 [/test]
 [/tests]
@@ -8494,7 +8426,6 @@ Write an SQL query that finds **town names** that are **5** or **6** symbols lon
 [tests]
 [test open]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -10153,10 +10084,8 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
-```
 Berlin
 Duluth
 Duvall
@@ -10166,12 +10095,10 @@ Nevada
 Ottawa
 Renton
 Sofia
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -10241,19 +10168,15 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(8, 'Bothell'),
 	(9, 'San Francisco'),
 	(10, 'Sofia');
-```
 [/input]
 [output]
-```
 Avlon
 Botev
 Sofia
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -10323,19 +10246,15 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(8, 'Fothel'),
 	(9, 'San Francisco'),
 	(10, 'SofiaCity');
-```
 [/input]
 [output]
-```
 Burgas
 Everet
 Fothel
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -10399,15 +10318,12 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(2, 'Yyyyy'),
 	(3, 'Xxxxx'),
 	(4, 'Wwwww');
-```
 [/input]
 [output]
-```
 Wwwww
 Xxxxx
 Yyyyy
 Zzzzz
-```
 [/output]
 [/test]
 [/tests]
@@ -10443,7 +10359,6 @@ Write an SQL query that finds all towns that **start with** the letters **M**, *
 [tests]
 [test open]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -12102,10 +12017,8 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
-```
 5
 Bellevue
 31
@@ -12130,12 +12043,10 @@ Memphis
 Minneapolis
 12
 Monroe
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -12200,20 +12111,16 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(3, 'Admonds'),
 	(4, 'Zotev'),
 	(5, 'Mellevue');
-```
 [/input]
 [output]
-```
 2
 Mavlon
 5
 Mellevue
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -12278,20 +12185,16 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(3, 'Admonds'),
 	(4, 'Kotel'),
 	(5, 'Tellevue');
-```
 [/input]
 [output]
-```
 1
 Kedmond
 4
 Kotel
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -12356,20 +12259,16 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(3, 'Admonds'),
 	(4, 'Botel'),
 	(5, 'Tellevue');
-```
 [/input]
 [output]
-```
 2
 Bavlon
 4
 Botel
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -12434,18 +12333,14 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(3, 'Edmonds'),
 	(4, 'Wotel'),
 	(5, 'Tellevue');
-```
 [/input]
 [output]
-```
 3
 Edmonds
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -12509,10 +12404,8 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(2, 'Kkkkkk'),
 	(3, 'Eeeeeeeeee'),
 	(4, 'BbbbBBBBBbbBB');
-```
 [/input]
 [output]
-```
 4
 BbbbBBBBBbbBB
 3
@@ -12521,7 +12414,6 @@ Eeeeeeeeee
 Kkkkkk
 1
 Mm
-```
 [/output]
 [/test]
 [/tests]
@@ -12557,7 +12449,6 @@ Write an SQL query that finds all towns that **do not start** with the letters *
 [tests]
 [test open]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -14216,10 +14107,8 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
-```
 2
 Calgary
 23
@@ -14266,12 +14155,10 @@ Seattle
 Snohomish
 32
 Sofia
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -14336,20 +14223,16 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(3, 'Adronds'),
 	(4, 'Rotev'),
 	(5, 'Mellevue');
-```
 [/input]
 [output]
-```
 3
 Adronds
 5
 Mellevue
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -14414,22 +14297,18 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(3, 'Bonds'),
 	(4, 'Zotev'),
 	(5, 'Bellevue');
-```
 [/input]
 [output]
-```
 1
 Aedmond
 2
 Fablon
 4
 Zotev
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -14494,22 +14373,18 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(3, 'Konds'),
 	(4, 'Zotev'),
 	(5, 'Dellevue');
-```
 [/input]
 [output]
-```
 1
 Aedmond
 3
 Konds
 4
 Zotev
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -14573,10 +14448,8 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(2, 'Kkkkkk'),
 	(3, 'Eeeeeeeeee'),
 	(4, 'aaaaaaaaa');
-```
 [/input]
 [output]
-```
 4
 aaaaaaaaa
 3
@@ -14585,7 +14458,6 @@ Eeeeeeeeee
 Kkkkkk
 1
 Mm
-```
 [/output]
 [/test]
 [/tests]
@@ -14601,7 +14473,6 @@ Mm
 ```
 [/code-editor]
 [code-adapter]
-```
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
@@ -16260,7 +16131,6 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-```
 [/code-adapter]
 [task-description]
 
@@ -16282,12 +16152,9 @@ Select all from the generated view.
 [tests]
 [test open]
 [input]
-```
 SELECT \* FROM v_employees_hired_after_2000;
-```
 [/input]
 [output]
-```
 Steven
 Selikoff
 Peter
@@ -16836,17 +16703,13 @@ Martin
 Kulov
 George
 Denchev
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 SELECT \* FROM v_employees_hired_after_2000;
-```
 [/input]
 [output]
-```
 Steven
 Selikoff
 Peter
@@ -17395,7 +17258,6 @@ Martin
 Kulov
 George
 Denchev
-```
 [/output]
 [/test]
 [/tests]
@@ -17430,7 +17292,6 @@ Write an SQL query that finds the names of all employees whose last names are **
 [tests]
 [test open]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -19089,10 +18950,8 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
-```
 Kevin
 Brown
 Terri
@@ -19205,12 +19064,10 @@ Svetlin
 Nakov
 Martin
 Kulov
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -20869,10 +20726,8 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
-```
 Kevin
 Brown
 Terri
@@ -20985,7 +20840,6 @@ Svetlin
 Nakov
 Martin
 Kulov
-```
 [/output]
 [/test]
 [/tests]
@@ -21030,7 +20884,6 @@ Find all countries that contain the **letter 'A' in their names at least 3 times
 [tests]
 [test open]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -21808,10 +21661,8 @@ INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_di
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
-```
 Afghanistan
 AFG
 Albania
@@ -21886,12 +21737,10 @@ Saint Vincent and the Grenadines
 VCT
 Wallis and Futuna
 WLF
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
   `continent_name` varchar(50) NOT NULL,
@@ -21969,22 +21818,18 @@ CREATE TABLE IF NOT EXISTS `rivers` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `PK_Rivers` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 United Arab Emirates
 AAE
 Afghanistan
 AFG
 Antigua and Barbuda
 ATG
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
   `continent_name` varchar(50) NOT NULL,
@@ -22060,17 +21905,14 @@ CREATE TABLE IF NOT EXISTS `rivers` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `PK_Rivers` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=31 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 Anguillalalala
 AAA
 United Arab Emirates
 DDD
 Andorrata
 ZZZ
-```
 [/output]
 [/test]
 [/tests]
@@ -22109,7 +21951,6 @@ The matching letters must **overlap**, as shown below.
 [tests]
 [test open]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -22887,10 +22728,8 @@ INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_di
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
-```
 Aconcagua
 Amazon
 aconcaguamazon
@@ -23131,12 +22970,10 @@ vihreniger
 Vihren
 Nile
 vihrenile
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
   `continent_name` varchar(50) NOT NULL,
@@ -23217,19 +23054,15 @@ CREATE TABLE IF NOT EXISTS `rivers` (
 /\*!40000 ALTER TABLE `rivers` DISABLE KEYS \*/;
 INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_discharge`, `outflow`) VALUES
 	(1, 'ANile', 6650, 3254555, 5100, 'Mediterranean');
-```
 [/input]
 [output]
-```
 Aconcagua
 ANile
 aconcaguanile
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
   `continent_name` varchar(50) NOT NULL,
@@ -23312,22 +23145,18 @@ CREATE TABLE IF NOT EXISTS `rivers` (
 /\*!40000 ALTER TABLE `rivers` DISABLE KEYS \*/;
 INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_discharge`, `outflow`) VALUES
 	(1, 'ANile', 6650, 3254555, 5100, 'Mediterranean');
-```
 [/input]
 [output]
-```
 Aaconcagua
 ANile
 aaconcaguanile
 Aconcagua
 ANile
 aconcaguanile
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
   `continent_name` varchar(50) NOT NULL,
@@ -23411,10 +23240,8 @@ CREATE TABLE IF NOT EXISTS `rivers` (
 /\*!40000 ALTER TABLE `rivers` DISABLE KEYS \*/;
 INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_discharge`, `outflow`) VALUES
 	(1, 'ANile', 6650, 3254555, 5100, 'Mediterranean');
-```
 [/input]
 [output]
-```
 Aconcagua
 ANile
 aconcaguanile
@@ -23424,7 +23251,6 @@ bconcaguanile
 Caconcagua
 ANile
 caconcaguanile
-```
 [/output]
 [/test]
 [/tests]
@@ -23465,7 +23291,6 @@ Display the start date in the format **"YYYY-MM-DD".**
 [tests]
 [test open]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -27541,10 +27366,8 @@ INSERT INTO `user_game_items` (`item_id`, `user_game_id`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
-```
 Rose Royalty
 2011-01-05
 London
@@ -27645,12 +27468,10 @@ Stockholm
 2012-04-18
 Machu Picchu
 2012-04-30
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -27753,10 +27574,8 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 Aithusa
 2011-06-07
 Acid green
@@ -27767,12 +27586,10 @@ Broadway
 2012-12-08
 Ancalagon
 2012-12-09
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -27875,22 +27692,18 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 Aithusa
 2011-06-07
 Acid green
 2011-09-11
 Broadway
 2012-12-08
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -27993,10 +27806,8 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 Acid green
 2011-10-09
 Apple
@@ -28007,12 +27818,10 @@ Ancalagon
 2012-06-11
 Aithusa
 2012-09-07
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -28117,10 +27926,8 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 Aithusa
 2011-09-07
 Ancalagon
@@ -28135,12 +27942,10 @@ Acid green
 2012-06-11
 ZAncalagon
 2012-10-09
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -28290,10 +28095,8 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 Aithusa
 2011-06-07
 Acid green
@@ -28394,7 +28197,6 @@ Ancalagon
 2012-10-26
 Ancalagon
 2012-10-27
-```
 [/output]
 [/test]
 [/tests]
@@ -28432,7 +28234,6 @@ Sort the results **alphabetically** by the **email provider**, then by **usernam
 [tests]
 [test open]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -32508,10 +32309,8 @@ INSERT INTO `user_game_items` (`item_id`, `user_game_id`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
-```
 Pesho
 abv.bg
 monoxidecos
@@ -32654,12 +32453,10 @@ wagtailspicy
 yahoo.com
 loosenoise
 yahoo.com.sg
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -32765,10 +32562,8 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 VGeorgiev
 abv.bg
 nakov
@@ -32779,12 +32574,10 @@ Petya
 dir.bg
 Alex
 softuni.bg
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -32890,10 +32683,8 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 Alex
 abv.bg
 vladislav.karamfilov
@@ -32904,12 +32695,10 @@ nakov
 dir.bg
 VGeorgiev
 softuni.bg
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -33015,10 +32804,8 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 Alex
 abv.bg
 aladislav.karamfilov
@@ -33029,7 +32816,6 @@ Zakov
 dir.bg
 VGeorgiev
 softuni.bg
-```
 [/output]
 [/test]
 [/tests]
@@ -33065,7 +32851,6 @@ Display only the rows where the **ip_address** matches the pattern: "\_\_\_.1%.%
 [tests]
 [test open]
 [input]
-```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -37141,10 +36926,8 @@ INSERT INTO `user_game_items` (`item_id`, `user_game_id`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-```
 [/input]
 [output]
-```
 bindbawdy
 192.157.20.222
 evolvingimportant
@@ -37167,12 +36950,10 @@ Stamat
 180.166.72.243
 sweethorseman
 174.165.203.176
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -37278,20 +37059,16 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 ddd
 134.108.213.164
 fff
 216.1.3.100
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -37397,20 +37174,16 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 bbb
 140.15.35.230
 ddd
 134.108.213.164
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -37516,20 +37289,16 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 aaa
 174.112.145.183
 fff
 216.1.3.200
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -37635,18 +37404,14 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 aaa
 174.112.145.183
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -37818,10 +37583,8 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 bindbawdy
 192.157.20.222
 evolvingimportant
@@ -37844,7 +37607,6 @@ Stamat
 180.166.72.243
 sweethorseman
 174.165.203.176
-```
 [/output]
 [/test]
 [/tests]
@@ -37892,7 +37654,6 @@ There are **three parts of the day**:
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -37999,10 +37760,8 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 aaa
 Morning
 Extra Short
@@ -38018,12 +37777,10 @@ Extra Long
 fff
 Evening
 Extra Long
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `characters` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -38130,10 +37887,8 @@ CREATE TABLE IF NOT EXISTS `user_game_items` (
   PRIMARY KEY (`item_id`,`user_game_id`),
   UNIQUE KEY `PK_UserGameItems` (`item_id`,`user_game_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 aaa
 Morning
 Extra Short
@@ -38149,7 +37904,6 @@ Extra Long
 fff
 Evening
 Extra Long
-```
 [/output]
 [/test]
 [/tests]
@@ -38208,7 +37962,6 @@ Write a query to display each product's **name, order date, payment and delivery
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS orders
 (
 id INT NOT NULL,
@@ -38232,10 +37985,8 @@ INSERT INTO orders (id, product_name, order_date) VALUES (12, 'Tomatoesytu', '20
 INSERT INTO orders (id, product_name, order_date) VALUES (13, 'Toyymatddoehys', '20151231');
 INSERT INTO orders (id, product_name, order_date) VALUES (14, 'Tom443atoes', '20151215');
 INSERT INTO orders (id, product_name, order_date) VALUES (15, 'Tomat65434foe23gfhgsPep', '20151004');
-```
 [/input]
 [output]
-```
 Butter
 2016-09-19 00:00:00
 2016-09-22 00:00:00
@@ -38296,12 +38047,10 @@ Tomat65434foe23gfhgsPep
 2015-10-04 00:00:00
 2015-10-07 00:00:00
 2015-11-04 00:00:00
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS orders
 (
 id INT NOT NULL,
@@ -38325,10 +38074,8 @@ INSERT INTO orders (id, product_name, order_date) VALUES (12, 'Tomatoesytu', '20
 INSERT INTO orders (id, product_name, order_date) VALUES (13, 'Toyymatddoehys', '20151231');
 INSERT INTO orders (id, product_name, order_date) VALUES (14, 'Tom443atoes', '20151215');
 INSERT INTO orders (id, product_name, order_date) VALUES (15, 'Tomat65434foe23gfhgsPep', '20151004');
-```
 [/input]
 [output]
-```
 Butter
 2016-09-19 00:00:00
 2016-09-22 00:00:00
@@ -38389,7 +38136,6 @@ Tomat65434foe23gfhgsPep
 2015-10-04 00:00:00
 2015-10-07 00:00:00
 2015-11-04 00:00:00
-```
 [/output]
 [/test]
 [/tests]
@@ -38430,7 +38176,6 @@ Make sure nothing got lost.
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -38449,7 +38194,7 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 );
 
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
-	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry\'s year and member of Dumbledore\'s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
+	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 63, 'Ollivander family', 20, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1'),
 	(3, 'Ludo', 'Bagman', 'Quidditch Beater for the Wimbourne Wasps and Head of the Department of Magical Games and Sports within the Ministry of Magic', 19, 'Mykew Gregorovitch', 18, 'Venomous Tongue', '1990-07-04', 23190.94, 14.92, 30.00, '1990-12-27', b'0'),
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Jimmy Kiddell', 15, 'Blue Phoenix', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
@@ -38457,28 +38202,28 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Death', 23, 'Human Pride', '1985-10-26', 11902.72, 24.84, 95.00, '1985-12-27', b'1'),
 	(7, 'Phineas', 'Nigellus', 'deceased great-great-grandfather of Sirius Black and former headmaster of Hogwarts, whose painting still hangs in the office and helps out the current headmaster.', 47, 'Mykew Gregorovitch', 18, 'Venomous Tongue', '1985-12-05', 11248.58, 12.31, 32.00, '1986-11-12', b'1'),
 	(8, 'Regulus', 'Arcturus', 'Late brother of Sirius Black, a Death Eater who had turned against Lord Voldemort.', 46, 'Ollivander family', 22, 'Blue Phoenix', '1989-05-31', 1173.12, 9.68, 56.00, '1989-10-13', b'0'),
-	(9, 'Sirius', 'Black', 'Harry Potter\'s godfather, a member of the Order of the Phoenix and prisoner on the run.', 25, 'Mykew Gregorovitch', 30, 'Troll Chest', '1993-08-29', 15793.54, 26.34, 17.00, '1994-05-21', b'0'),
+	(9, 'Sirius', 'Black', 'Harry Potter''s godfather, a member of the Order of the Phoenix and prisoner on the run.', 25, 'Mykew Gregorovitch', 30, 'Troll Chest', '1993-08-29', 15793.54, 26.34, 17.00, '1994-05-21', b'0'),
 	(10, 'Amelia', 'Bones', 'Head of the Department of Magical Law Enforcement, aunt of Susan Bones.', 16, 'Antioch Peverell', 30, 'Human Pride', '1981-05-15', 18778.37, 7.85, 54.00, '1982-05-06', b'1'),
-	(11, 'Susan', 'Bones', 'Hufflepuff student in Harry\'s year, a member of Dumbledore\'s Army.', 72, 'Ollivander family', 11, 'Venomous Tongue', '1992-05-03', 26463.40, 30.54, 30.00, '1993-03-11', b'0'),
-	(12, 'Terry', 'Boot', 'Ravenclaw student in Harry\'s year, a member of Dumbledore\'s Army.', 69, 'Mykew Gregorovitch', 28, 'Blue Phoenix', '1989-09-09', 31029.60, 27.98, 10.00, '1990-02-15', b'0'),
-	(13, 'Lavender', 'Brown', 'Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army, briefly Ron Weasley\'s girlfriend.', 31, 'Jimmy Kiddell', 24, 'Troll Chest', '1992-03-26', 26572.86, 26.64, 94.00, '1992-08-21', b'0'),
-	(14, 'Millicent', 'Bulstrode', 'Slytherin student in Harry\'s year, a member of Umbridge\'s Inquisitorial Squad.', 65, 'Arturo Cephalopos', 17, 'Human Pride', '1988-08-16', 33309.81, 25.43, 44.00, '1988-08-21', b'1'),
-	(15, 'Charity', 'Burbage', 'Professor of Muggle Studies at Hogwarts during Harry\'s time at school.', 38, 'Death', 30, 'Venomous Tongue', '1994-07-21', 33508.64, 17.14, 31.00, '1995-04-06', b'0'),
+	(11, 'Susan', 'Bones', 'Hufflepuff student in Harry''s year, a member of Dumbledore''s Army.', 72, 'Ollivander family', 11, 'Venomous Tongue', '1992-05-03', 26463.40, 30.54, 30.00, '1993-03-11', b'0'),
+	(12, 'Terry', 'Boot', 'Ravenclaw student in Harry''s year, a member of Dumbledore''s Army.', 69, 'Mykew Gregorovitch', 28, 'Blue Phoenix', '1989-09-09', 31029.60, 27.98, 10.00, '1990-02-15', b'0'),
+	(13, 'Lavender', 'Brown', 'Gryffindor student in Harry''s year, a member of Dumbledore''s Army, briefly Ron Weasley''s girlfriend.', 31, 'Jimmy Kiddell', 24, 'Troll Chest', '1992-03-26', 26572.86, 26.64, 94.00, '1992-08-21', b'0'),
+	(14, 'Millicent', 'Bulstrode', 'Slytherin student in Harry''s year, a member of Umbridge''s Inquisitorial Squad.', 65, 'Arturo Cephalopos', 17, 'Human Pride', '1988-08-16', 33309.81, 25.43, 44.00, '1988-08-21', b'1'),
+	(15, 'Charity', 'Burbage', 'Professor of Muggle Studies at Hogwarts during Harry''s time at school.', 38, 'Death', 30, 'Venomous Tongue', '1994-07-21', 33508.64, 17.14, 31.00, '1995-04-06', b'0'),
 	(16, 'Frank', 'Bryce', 'Muggle gardener for the Riddle family.', 24, 'Antioch Peverell', 29, 'Blue Phoenix', '1991-12-20', 19955.71, 6.52, 30.00, '1992-07-22', b'0'),
 	(17, 'Alecto', 'Carrow', 'Sister of Amycus Carrow, Death Eater and professor of Muggle Studies for one year, Deputy Headmistress of Hogwarts under Severus Snape', 52, 'Jimmy Kiddell', 24, 'Troll Chest', '1982-03-28', 25434.21, 14.96, 36.00, '1982-09-17', b'1'),
 	(18, 'Amycus', 'Carrow', 'Brother of Alecto Carrow, Death Eater and professor of Defence Against the Dark Arts for one year, even though he changed it to just "Dark Arts", Deputy Headmaster of Hogwarts under Severus Snape', 23, 'Arturo Cephalopos', 30, 'Human Pride', '1988-04-18', 46943.10, 5.08, 6.00, '1988-08-05', b'1'),
 	(19, 'Reginald', 'Cattermole', 'Employee of the Magical Maintenance Department for the Ministry of Magic, impersonated by Ron Weasley', 25, 'Death', 28, 'Venomous Tongue', '1981-08-14', 39864.33, 15.75, 8.00, '1981-11-24', b'1'),
 	(20, 'Mary', 'Cattermole', 'Muggle-born wife of Reginald Cattermole, saved by Harry Potter from the Muggle-born Registration Commission.', 53, 'Antioch Peverell', 25, 'Blue Phoenix', '1981-08-18', 34176.09, 12.34, 71.00, '1982-04-21', b'1'),
-	(21, 'Cho', 'Chang', 'Ravenclaw student one year above Harry, Quidditch Seeker, member of Dumbledore\'s Army and Harry\'s first Love interest', 64, 'Ollivander family', 20, 'Troll Chest', '1984-01-31', 49964.03, 10.83, 53.00, '1984-03-29', b'1'),
+	(21, 'Cho', 'Chang', 'Ravenclaw student one year above Harry, Quidditch Seeker, member of Dumbledore''s Army and Harry''s first Love interest', 64, 'Ollivander family', 20, 'Troll Chest', '1984-01-31', 49964.03, 10.83, 53.00, '1984-03-29', b'1'),
 	(22, 'Penelope', 'Clearwater', 'Ravenclaw prefect and girlfriend of Percy Weasley', 58, 'Mykew Gregorovitch', 17, 'Human Pride', '1983-05-06', 5130.24, 11.04, 42.00, '1983-06-11', b'1'),
-	(23, 'Michael', 'Corner', 'Ravenclaw student in Harry\'s year, member of Dumbledore\'s Army', 56, 'Jimmy Kiddell', 15, 'Venomous Tongue', '1985-03-23', 23295.97, 20.97, 35.00, '1985-04-13', b'1'),
+	(23, 'Michael', 'Corner', 'Ravenclaw student in Harry''s year, member of Dumbledore''s Army', 56, 'Jimmy Kiddell', 15, 'Venomous Tongue', '1985-03-23', 23295.97, 20.97, 35.00, '1985-04-13', b'1'),
 	(24, 'Vincent', 'Crabbe,', 'Death Eater, father of Vincent Crabbe', 37, 'Arturo Cephalopos', 24, 'Blue Phoenix', '1993-03-30', 35436.82, 26.54, 17.00, '1993-04-07', b'0'),
-	(25, 'Vincent', 'Crabbe', 'Slytherin student in Harry\'s year, son of Death Eater, Slytherin Quidditch team Beater, a member of the Inquisitorial Squad, a friend of Draco Malfoy.', 37, 'Death', 12, 'Troll Chest', '1986-07-18', 8597.40, 20.09, 97.00, '1986-10-18', b'1'),
-	(26, 'Colin', 'Creevey', 'Muggle-born Gryffindor student one year below Harry, brother of Dennis Creevey, member of Dumbledore\'s Army, killed during the Battle of Hogwarts, after sneaking away from the younger evacuated students in the seventh book', 38, 'Antioch Peverell', 15, 'Human Pride', '1991-02-19', 27282.08, 11.82, 76.00, '1992-01-08', b'0'),
-	(27, 'Dennis', 'Creevey', 'Muggle-born Gryffindor student three years below Harry, brother of Colin Creevey, member of Dumbledore\'s Army', 61, 'Ollivander family', 24, 'Venomous Tongue', '1992-07-13', 10649.78, 1.77, 23.00, '1992-09-24', b'0'),
+	(25, 'Vincent', 'Crabbe', 'Slytherin student in Harry''s year, son of Death Eater, Slytherin Quidditch team Beater, a member of the Inquisitorial Squad, a friend of Draco Malfoy.', 37, 'Death', 12, 'Troll Chest', '1986-07-18', 8597.40, 20.09, 97.00, '1986-10-18', b'1'),
+	(26, 'Colin', 'Creevey', 'Muggle-born Gryffindor student one year below Harry, brother of Dennis Creevey, member of Dumbledore''s Army, killed during the Battle of Hogwarts, after sneaking away from the younger evacuated students in the seventh book', 38, 'Antioch Peverell', 15, 'Human Pride', '1991-02-19', 27282.08, 11.82, 76.00, '1992-01-08', b'0'),
+	(27, 'Dennis', 'Creevey', 'Muggle-born Gryffindor student three years below Harry, brother of Colin Creevey, member of Dumbledore''s Army', 61, 'Ollivander family', 24, 'Venomous Tongue', '1992-07-13', 10649.78, 1.77, 23.00, '1992-09-24', b'0'),
 	(28, 'Dirk', 'Cresswell', 'Muggle-born Head of the Goblin Liaison Office, went on the run in Deathly Hallows with fellow muggle-born Ted Tonks, Dean Thomas and goblins Gornuk and Griphook.', 65, 'Mykew Gregorovitch', 26, 'Blue Phoenix', '1985-02-14', 11481.54, 25.13, 23.00, '1985-04-22', b'1'),
 	(29, 'Bartemius', 'Barty', 'Head of the Department of International Magical Cooperation, killed by his son Barty Crouch Jr, Transfigurated into a bone before being buried', 48, 'Jimmy Kiddell', 20, 'Troll Chest', '1992-01-24', 11137.18, 3.48, 74.00, '1992-02-17', b'0'),
-	(30, 'Bartemius', 'Barty', 'Death Eater, credited with facilitating the return of Lord Voldemort, received a Dementor\'s Kiss, used Polyjuice Potion to impersonate Alastor Moody', 69, 'Arturo Cephalopos', 25, 'Human Pride', '1984-08-03', 615.09, 29.72, 36.00, '1984-11-18', b'1'),
+	(30, 'Bartemius', 'Barty', 'Death Eater, credited with facilitating the return of Lord Voldemort, received a Dementor''s Kiss, used Polyjuice Potion to impersonate Alastor Moody', 69, 'Arturo Cephalopos', 25, 'Human Pride', '1984-08-03', 615.09, 29.72, 36.00, '1984-11-18', b'1'),
 	(31, 'John', 'Dawlish', '', 30, 'Death', 19, 'Venomous Tongue', '1984-09-14', 45046.67, 9.80, 93.00, '1985-07-11', b'1'),
 	(32, 'Fleur', 'Delacour', 'French student who participated in the Triwizard Tournament representing Beauxbatons, later wed Bill Weasley.', 49, 'Antioch Peverell', 13, 'Blue Phoenix', '1982-07-24', 33063.59, 23.49, 67.00, '1982-12-08', b'1'),
 	(33, 'Gabrielle', 'Delacour', 'Younger sister of Fleur Delacour, saved by Harry in the Triwizard Tournament', 66, 'Ollivander family', 14, 'Troll Chest', '1993-11-24', 9488.33, 19.45, 22.00, '1994-06-21', b'0'),
@@ -38487,37 +38232,37 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(36, 'Cedric', 'Diggory', 'Hufflepuff student two years above Harry, school prefect, Quidditch Seeker and captain, co-winner of the Triwizard Tournament', 19, 'Arturo Cephalopos', 27, 'Blue Phoenix', '1981-01-13', 16443.96, 1.12, 37.00, '1982-01-14', b'1'),
 	(37, 'Elphias', 'Doge', 'School friend of Albus Dumbledore', 59, 'Death', 24, 'Troll Chest', '1982-07-07', 32356.08, 9.68, 37.00, '1983-06-11', b'1'),
 	(38, 'Antonin', 'Dolohov', 'Death Eater who killed Fabian Prewett, Gideon Prewett, and Remus Lupin.', 28, 'Antioch Peverell', 23, 'Human Pride', '1991-02-28', 5585.72, 21.16, 36.00, '1991-04-16', b'0'),
-	(39, 'Aberforth', 'Dumbledore', 'Brother of Albus and Ariana Dumbledore, owner of the Hog\'s Head', 49, 'Ollivander family', 11, 'Venomous Tongue', '1991-04-02', 22349.31, 9.72, 81.00, '1992-02-21', b'0'),
-	(40, 'Albus', 'Dumbledore', 'Hogwarts Headmaster in Harry Potter\'s time, Transfiguration professor in Tom Riddle\'s time, founder of the Order of the Phoenix.', 50, 'Mykew Gregorovitch', 10, 'Blue Phoenix', '1992-12-18', 21106.66, 15.75, 93.00, '1993-12-07', b'0'),
+	(39, 'Aberforth', 'Dumbledore', 'Brother of Albus and Ariana Dumbledore, owner of the Hog''s Head', 49, 'Ollivander family', 11, 'Venomous Tongue', '1991-04-02', 22349.31, 9.72, 81.00, '1992-02-21', b'0'),
+	(40, 'Albus', 'Dumbledore', 'Hogwarts Headmaster in Harry Potter''s time, Transfiguration professor in Tom Riddle''s time, founder of the Order of the Phoenix.', 50, 'Mykew Gregorovitch', 10, 'Blue Phoenix', '1992-12-18', 21106.66, 15.75, 93.00, '1993-12-07', b'0'),
 	(41, 'Ariana', 'Dumbledore', '', 27, 'Jimmy Kiddell', 22, 'Troll Chest', '1980-07-26', 27191.21, 11.67, 13.00, '1981-06-12', b'1'),
 	(42, 'Dudley', 'Dursley', 'Muggle son of Vernon Dursley and Petunia Evans, first cousin of Harry Potter', 15, 'Arturo Cephalopos', 29, 'Human Pride', '1994-10-07', 49767.47, 21.73, 40.00, '1995-04-01', b'0'),
 	(43, 'Marjorie', 'Marge', 'Muggle sister of Vernon Dursley, breeds bulldogs, her favourite one named Ripper.', 65, 'Death', 25, 'Venomous Tongue', '1994-01-05', 909.41, 13.29, 14.00, '1994-04-14', b'0'),
-	(44, 'Petunia', 'Dursley', 'Harry\'s aunt, the sister of his mother Lily. Married to Vernon Dursley and mother of Dudley Dursley', 27, 'Ollivander family', 12, 'Blue Phoenix', '1994-05-15', 36558.54, 19.54, 57.00, '1994-09-02', b'0'),
-	(45, 'Vernon', 'Dursley', 'Harry Potter\'s muggle uncle, married to his aunt Petunia and father of Dudley Dursley.', 22, 'Mykew Gregorovitch', 22, 'Troll Chest', '1983-07-28', 6498.38, 11.41, 44.00, '1984-01-08', b'1'),
-	(46, 'Marietta', 'Edgecombe', 'Ravenclaw student one year above Harry, member of Dumbledore\'s Army', 17, 'Jimmy Kiddell', 16, 'Human Pride', '1993-06-10', 13938.86, 9.44, 16.00, '1993-07-16', b'0'),
+	(44, 'Petunia', 'Dursley', 'Harry''s aunt, the sister of his mother Lily. Married to Vernon Dursley and mother of Dudley Dursley', 27, 'Ollivander family', 12, 'Blue Phoenix', '1994-05-15', 36558.54, 19.54, 57.00, '1994-09-02', b'0'),
+	(45, 'Vernon', 'Dursley', 'Harry Potter''s muggle uncle, married to his aunt Petunia and father of Dudley Dursley.', 22, 'Mykew Gregorovitch', 22, 'Troll Chest', '1983-07-28', 6498.38, 11.41, 44.00, '1984-01-08', b'1'),
+	(46, 'Marietta', 'Edgecombe', 'Ravenclaw student one year above Harry, member of Dumbledore''s Army', 17, 'Jimmy Kiddell', 16, 'Human Pride', '1993-06-10', 13938.86, 9.44, 16.00, '1993-07-16', b'0'),
 	(47, 'Everard', '', 'Former Headmaster of Hogwarts, a particularly famous wizard, whose portrait hangs in many institutions, including the Ministry of Magic', 54, 'Arturo Cephalopos', 30, 'Venomous Tongue', '1984-03-31', 31293.40, 9.00, 77.00, '1984-08-31', b'1'),
-	(48, 'Arabella', 'Figg', 'Squib neighbour of the Dursleys\', member of the Order of the Phoenix.', 59, 'Death', 28, 'Blue Phoenix', '1986-05-09', 40953.48, 12.53, 71.00, '1986-05-15', b'1'),
+	(48, 'Arabella', 'Figg', 'Squib neighbour of the Dursleys'', member of the Order of the Phoenix.', 59, 'Death', 28, 'Blue Phoenix', '1986-05-09', 40953.48, 12.53, 71.00, '1986-05-15', b'1'),
 	(49, 'Argus', 'Filch', 'Squib caretaker of Hogwarts', 67, 'Ollivander family', 10, 'Troll Chest', '1982-07-12', 21519.32, 6.94, 28.00, '1983-01-18', b'1'),
-	(50, 'Justin', 'Finch-Fletchley', 'Muggle-born Hufflepuff student in Harry\'s year, a member of Dumbledore\'s Army.', 61, 'Mykew Gregorovitch', 28, 'Human Pride', '1987-04-02', 40613.55, 0.93, 67.00, '1987-04-04', b'1'),
-	(51, 'Seamus', 'Finnigan', 'Irish Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army best friend of Dean Thomas.', 35, 'Jimmy Kiddell', 25, 'Venomous Tongue', '1993-12-26', 43680.93, 30.44, 66.00, '1994-07-08', b'0'),
+	(50, 'Justin', 'Finch-Fletchley', 'Muggle-born Hufflepuff student in Harry''s year, a member of Dumbledore''s Army.', 61, 'Mykew Gregorovitch', 28, 'Human Pride', '1987-04-02', 40613.55, 0.93, 67.00, '1987-04-04', b'1'),
+	(51, 'Seamus', 'Finnigan', 'Irish Gryffindor student in Harry''s year, a member of Dumbledore''s Army best friend of Dean Thomas.', 35, 'Jimmy Kiddell', 25, 'Venomous Tongue', '1993-12-26', 43680.93, 30.44, 66.00, '1994-07-08', b'0'),
 	(52, 'Marcus', 'Flint', 'Slytherin sixth year Quidditch captain', 57, 'Arturo Cephalopos', 30, 'Blue Phoenix', '1988-02-06', 346.16, 30.17, 20.00, '1988-07-31', b'1'),
-	(53, 'Nicolas', 'Flamel', 'alchemist, the only known creator of the Philosopher\'s Stone.', 42, 'Death', 27, 'Troll Chest', '1990-01-02', 31483.33, 23.72, 26.00, '1990-08-27', b'0'),
+	(53, 'Nicolas', 'Flamel', 'alchemist, the only known creator of the Philosopher''s Stone.', 42, 'Death', 27, 'Troll Chest', '1990-01-02', 31483.33, 23.72, 26.00, '1990-08-27', b'0'),
 	(54, 'Mundungus', 'Fletcher', 'Common thief and shifty member of the Order of the Phoenix', 73, 'Antioch Peverell', 29, 'Human Pride', '1993-11-02', 42130.06, 17.24, 68.00, '1994-03-21', b'0'),
 	(55, 'Filius', 'Flitwick', 'Charms professor at Hogwarts and Head of Ravenclaw', 34, 'Ollivander family', 28, 'Venomous Tongue', '1990-07-14', 33656.19, 21.72, 24.00, '1990-08-17', b'0'),
-	(56, 'Cornelius', 'Fudge', 'Minister for Magic in the first five books, sacked when he denied Lord Voldemort\'s return for a year.', 15, 'Mykew Gregorovitch', 22, 'Blue Phoenix', '1990-03-08', 48394.70, 1.00, 46.00, '1991-02-06', b'0'),
+	(56, 'Cornelius', 'Fudge', 'Minister for Magic in the first five books, sacked when he denied Lord Voldemort''s return for a year.', 15, 'Mykew Gregorovitch', 22, 'Blue Phoenix', '1990-03-08', 48394.70, 1.00, 46.00, '1991-02-06', b'0'),
 	(57, 'Marvolo', 'Gaunt', 'Pure-blood father of Merope and Morfin Gaunt, grandfather of Tom Marvolo Riddle.', 41, 'Antioch Peverell', 14, 'Troll Chest', '1981-04-12', 22895.49, 0.15, 89.00, '1981-09-20', b'1'),
 	(58, 'Merope', 'Gaunt', 'Daughter of Marvolo Gaunt, sister of Morfin Gaunt, wife of Tom Riddle Sr, mother of Tom Marvolo Riddle/Lord Voldemort, died after childbirth, named for Merope, one of the Pleiades, who married a mortal\[1\]', 15, 'Ollivander family', 25, 'Human Pride', '1992-03-13', 20809.21, 18.62, 19.00, '1993-02-08', b'0'),
 	(59, 'Morfin', 'Gaunt', 'Son of Marvolo Gaunt, brother of Merope Gaunt, uncle of Tom Marvolo Riddle, framed by his nephew for Muggle killings.', 45, 'Mykew Gregorovitch', 25, 'Venomous Tongue', '1994-05-03', 33175.63, 20.71, 14.00, '1995-03-24', b'0'),
-	(60, 'Anthony', 'Goldstein', 'Ravenclaw student in Harry\'s year, member of Dumbledore\'s Army', 34, 'Jimmy Kiddell', 26, 'Blue Phoenix', '1980-05-11', 5264.16, 29.66, 4.00, '1980-05-22', b'1'),
+	(60, 'Anthony', 'Goldstein', 'Ravenclaw student in Harry''s year, member of Dumbledore''s Army', 34, 'Jimmy Kiddell', 26, 'Blue Phoenix', '1980-05-11', 5264.16, 29.66, 4.00, '1980-05-22', b'1'),
 	(61, 'Goyle', 'Sr', 'Death Eater, father of Gregory Goyle', 65, 'Arturo Cephalopos', 31, 'Troll Chest', '1981-05-01', 42520.28, 4.72, 75.00, '1982-03-30', b'1'),
-	(62, 'Gregory', 'Goyle', 'Slytherin student in Harry\'s year, Slytherin Quidditch Beater, a member of the Inquisitorial Squad.', 51, 'Death', 25, 'Human Pride', '1983-04-06', 22014.91, 21.61, 33.00, '1984-02-20', b'1'),
-	(63, 'Hermione', 'Granger', 'Muggle-born Gryffindor student in Harry\'s year, one of Harry\'s best friends, founder of Dumbledore\'s Army, Gryffindor Prefect', 18, 'Antioch Peverell', 16, 'Venomous Tongue', '1980-11-17', 20232.87, 17.54, 27.00, '1981-01-13', b'1'),
+	(62, 'Gregory', 'Goyle', 'Slytherin student in Harry''s year, Slytherin Quidditch Beater, a member of the Inquisitorial Squad.', 51, 'Death', 25, 'Human Pride', '1983-04-06', 22014.91, 21.61, 33.00, '1984-02-20', b'1'),
+	(63, 'Hermione', 'Granger', 'Muggle-born Gryffindor student in Harry''s year, one of Harry''s best friends, founder of Dumbledore''s Army, Gryffindor Prefect', 18, 'Antioch Peverell', 16, 'Venomous Tongue', '1980-11-17', 20232.87, 17.54, 27.00, '1981-01-13', b'1'),
 	(64, 'Gregorovitch', '', 'highly regarded East European wand-maker.', 28, 'Death', 22, 'Blue Phoenix', '1992-07-18', 44377.51, 22.05, 80.00, '1992-09-01', b'0'),
 	(65, 'Fenrir', 'Greyback', 'Werewolf, infected Remus Lupin, maimed Bill Weasley and wounded Lavender Brown.', 72, 'Antioch Peverell', 11, 'Troll Chest', '1991-09-05', 15747.72, 18.22, 94.00, '1992-05-21', b'0'),
 	(66, 'Gellert', 'Grindelwald', 'Dark Wizard, friend, and later rival, of Albus Dumbledore who defeated him in the 1940s.', 52, 'Ollivander family', 20, 'Human Pride', '1985-04-16', 12681.80, 14.28, 19.00, '1985-12-27', b'1'),
-	(67, 'Wilhelmina', 'Grubbly-Plank', 'Substitute Care of Magical Creatures professor during Harry\'s fourth year', 29, 'Mykew Gregorovitch', 18, 'Venomous Tongue', '1980-08-19', 21263.21, 5.66, 76.00, '1980-08-21', b'1'),
+	(67, 'Wilhelmina', 'Grubbly-Plank', 'Substitute Care of Magical Creatures professor during Harry''s fourth year', 29, 'Mykew Gregorovitch', 18, 'Venomous Tongue', '1980-08-19', 21263.21, 5.66, 76.00, '1980-08-21', b'1'),
 	(68, 'Godric', 'Gryffindor', 'One of the four founders of Hogwarts', 24, 'Jimmy Kiddell', 16, 'Blue Phoenix', '1991-06-06', 30425.03, 22.28, 89.00, '1991-09-13', b'0'),
-	(69, 'Rubeus', 'Hagrid', 'Half-giant keeper of Keys and Grounds at Hogwarts, Care of Magical Creatures professor starting from Harry\'s third year, a member of the Order of the Phoenix. Once a Hogwarts student, Hagrid was expelled in his third year.', 15, 'Death', 14, 'Troll Chest', '1983-02-04', 29087.26, 19.94, 94.00, '1983-02-18', b'1'),
+	(69, 'Rubeus', 'Hagrid', 'Half-giant keeper of Keys and Grounds at Hogwarts, Care of Magical Creatures professor starting from Harry''s third year, a member of the Order of the Phoenix. Once a Hogwarts student, Hagrid was expelled in his third year.', 15, 'Death', 14, 'Troll Chest', '1983-02-04', 29087.26, 19.94, 94.00, '1983-02-18', b'1'),
 	(70, 'Rolanda', 'Hooch', 'Hogwarts flying instructor, Quidditch referee', 38, 'Antioch Peverell', 29, 'Human Pride', '1989-05-05', 30985.51, 8.64, 33.00, '1989-07-03', b'0'),
 	(71, 'Mafalda', 'Hopkirk', 'Witch who works in the Ministry of Magic, impersonated by Hermione Granger in Deathly Hallows.', 63, 'Ollivander family', 23, 'Venomous Tongue', '1980-08-27', 39189.95, 12.73, 46.00, '1981-07-26', b'1'),
 	(72, 'Helga', 'Hufflepuff', 'One of the four founders of Hogwarts, ancestor of Hepzibah Smith', 72, 'Mykew Gregorovitch', 16, 'Blue Phoenix', '1987-02-12', 25971.83, 23.85, 74.00, '1987-06-02', b'1'),
@@ -38533,24 +38278,24 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(82, 'Alice', 'Longbottom', 'Wife of Frank Longbottom, mother of Neville Longbottom, member of the original Order of the Phoenix, Auror, tortured into insanity by Bellatrix Lestrange along with her husband', 40, 'Antioch Peverell', 17, 'Human Pride', '1985-01-26', 4817.78, 29.58, 79.00, '1985-02-10', b'1'),
 	(83, 'Augusta', 'Longbottom', 'Mother of Frank Longbottom and grandmother of Neville Longbottom', 29, 'Ollivander family', 22, 'Venomous Tongue', '1982-08-17', 28036.29, 16.55, 87.00, '1983-07-27', b'1'),
 	(84, 'Frank', 'Longbottom', 'Father of Neville Longbottom, a member of the original Order of the Phoenix, Auror, tortured into insanity by Bellatrix Lestrange along with his wife.', 24, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1991-06-23', 31439.10, 11.55, 57.00, '1991-09-09', b'0'),
-	(85, 'Neville', 'Longbottom', 'Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army.', 47, 'Jimmy Kiddell', 20, 'Troll Chest', '1992-07-19', 1369.52, 21.04, 1.00, '1993-05-13', b'0'),
-	(86, 'Luna', 'Lovegood', 'Ravenclaw student one year below Harry, a member of Dumbledore\'s Army.', 14, 'Arturo Cephalopos', 21, 'Human Pride', '1986-12-21', 9014.64, 2.83, 24.00, '1987-10-29', b'1'),
+	(85, 'Neville', 'Longbottom', 'Gryffindor student in Harry''s year, a member of Dumbledore''s Army.', 47, 'Jimmy Kiddell', 20, 'Troll Chest', '1992-07-19', 1369.52, 21.04, 1.00, '1993-05-13', b'0'),
+	(86, 'Luna', 'Lovegood', 'Ravenclaw student one year below Harry, a member of Dumbledore''s Army.', 14, 'Arturo Cephalopos', 21, 'Human Pride', '1986-12-21', 9014.64, 2.83, 24.00, '1987-10-29', b'1'),
 	(87, 'Xenophilius', 'Lovegood', 'Father of Luna Lovegood, and editor of The Quibbler.', 25, 'Death', 16, 'Venomous Tongue', '1992-08-09', 5908.36, 6.99, 1.00, '1992-11-19', b'0'),
-	(88, 'Remus', 'Lupin', 'Gryffindor student before Harry\'s time, Marauder, a friend of James Potter, werewolf, Professor of Defence Against the Dark Arts in Harry\'s third year, a member of the Order of the Phoenix.', 19, 'Death', 11, 'Blue Phoenix', '1982-05-08', 17821.66, 19.64, 45.00, '1982-06-04', b'1'),
-	(89, 'Walden', 'Macnair', 'The Committee of Disposal of Dangerous Creatures\'s executioner, also a Death-Eater', 48, 'Antioch Peverell', 29, 'Troll Chest', '1986-09-22', 23216.19, 29.39, 46.00, '1986-11-01', b'1'),
-	(90, 'Draco', 'Malfoy', 'Slytherin student in Harry\'s year, Slytherin Quidditch Seeker, school prefect, member of the Inquisitorial Squad, Death Eater', 18, 'Ollivander family', 14, 'Human Pride', '1989-12-02', 33253.04, 8.37, 7.00, '1990-05-07', b'0'),
-	(91, 'Lucius', 'Malfoy', 'Draco Malfoy\'s father, an influential Death-Eater, and, early in the series, governor of Hogwarts', 25, 'Mykew Gregorovitch', 22, 'Venomous Tongue', '1981-07-29', 36572.61, 2.45, 5.00, '1981-11-19', b'1'),
-	(92, 'Narcissa', 'Malfoy', 'Lucius Malfoy\'s wife and Draco Malfoy\'s mother, sister of Bellatrix Lestrange.', 17, 'Jimmy Kiddell', 18, 'Blue Phoenix', '1988-06-16', 1169.86, 25.09, 98.00, '1988-07-17', b'1'),
+	(88, 'Remus', 'Lupin', 'Gryffindor student before Harry''s time, Marauder, a friend of James Potter, werewolf, Professor of Defence Against the Dark Arts in Harry''s third year, a member of the Order of the Phoenix.', 19, 'Death', 11, 'Blue Phoenix', '1982-05-08', 17821.66, 19.64, 45.00, '1982-06-04', b'1'),
+	(89, 'Walden', 'Macnair', 'The Committee of Disposal of Dangerous Creatures''s executioner, also a Death-Eater', 48, 'Antioch Peverell', 29, 'Troll Chest', '1986-09-22', 23216.19, 29.39, 46.00, '1986-11-01', b'1'),
+	(90, 'Draco', 'Malfoy', 'Slytherin student in Harry''s year, Slytherin Quidditch Seeker, school prefect, member of the Inquisitorial Squad, Death Eater', 18, 'Ollivander family', 14, 'Human Pride', '1989-12-02', 33253.04, 8.37, 7.00, '1990-05-07', b'0'),
+	(91, 'Lucius', 'Malfoy', 'Draco Malfoy''s father, an influential Death-Eater, and, early in the series, governor of Hogwarts', 25, 'Mykew Gregorovitch', 22, 'Venomous Tongue', '1981-07-29', 36572.61, 2.45, 5.00, '1981-11-19', b'1'),
+	(92, 'Narcissa', 'Malfoy', 'Lucius Malfoy''s wife and Draco Malfoy''s mother, sister of Bellatrix Lestrange.', 17, 'Jimmy Kiddell', 18, 'Blue Phoenix', '1988-06-16', 1169.86, 25.09, 98.00, '1988-07-17', b'1'),
 	(93, 'Madam', 'Malkin', 'Clothes shop owner at Diagon Alley', 23, 'Arturo Cephalopos', 15, 'Troll Chest', '1985-07-17', 40137.28, 8.17, 45.00, '1986-06-13', b'1'),
 	(94, 'Olympe', 'Maxime', 'Half-giantess, Headmistress of Beauxbatons', 56, 'Death', 22, 'Human Pride', '1986-02-22', 27473.95, 22.31, 39.00, '1986-05-22', b'1'),
-	(95, 'Ernie', 'Macmillan', 'Hufflepuff student in Harry\'s year, school prefect, member of Dumbledore\'s Army', 63, 'Arturo Cephalopos', 13, 'Venomous Tongue', '1989-04-15', 18960.62, 13.15, 22.00, '1989-12-12', b'0'),
+	(95, 'Ernie', 'Macmillan', 'Hufflepuff student in Harry''s year, school prefect, member of Dumbledore''s Army', 63, 'Arturo Cephalopos', 13, 'Venomous Tongue', '1989-04-15', 18960.62, 13.15, 22.00, '1989-12-12', b'0'),
 	(96, 'Minerva', 'McGonagall', 'Hogwarts Transfiguration professor, Head of Gryffindor House, Deputy Headmistress of Hogwarts, a member of the Order of the Phoenix.', 29, 'Death', 16, 'Blue Phoenix', '1988-07-08', 7298.35, 15.19, 39.00, '1988-12-24', b'1'),
-	(97, 'Alastor', 'Mad-Eye', 'Retired Auror, member of the Order of the Phoenix, impersonated by Barty Crouch Jr. in \'The Goblet of Fire\'', 27, 'Mykew Gregorovitch', 21, 'Troll Chest', '1987-02-17', 8294.06, 18.27, 90.00, '1988-01-08', b'1'),
+	(97, 'Alastor', 'Mad-Eye', 'Retired Auror, member of the Order of the Phoenix, impersonated by Barty Crouch Jr. in ''The Goblet of Fire''', 27, 'Mykew Gregorovitch', 21, 'Troll Chest', '1987-02-17', 8294.06, 18.27, 90.00, '1988-01-08', b'1'),
 	(98, 'Theodore', 'Nott', 'Slytherin student in the same year as Harry Potter. Nott is one of the few students who can see Thestrals, suggesting that he has witnessed a death at some point. His father is a Death Eater and described as an elderly widower.', 17, 'Jimmy Kiddell', 26, 'Human Pride', '1982-01-20', 49041.09, 26.22, 15.00, '1982-04-14', b'1'),
 	(99, 'Garrick', 'Ollivander', 'Wandmaker, owner of Ollivanders shop.', 72, 'Arturo Cephalopos', 27, 'Venomous Tongue', '1994-07-01', 41627.25, 30.61, 22.00, '1994-10-11', b'0'),
-	(100, 'Pansy', 'Parkinson', 'Slytherin student in Harry\'s year, school prefect, a member of the Inquisitorial Squad, Draco Malfoy\'s girlfriend for some time.', 35, 'Death', 21, 'Blue Phoenix', '1994-01-20', 11941.54, 29.19, 71.00, '1994-05-29', b'0'),
-	(101, 'Padma', 'Patil', 'Ravenclaw student in Harry\'s year, identical twin sister of Gryffindor Parvati Patil, a member of Dumbledore\'s Army.', 37, 'Antioch Peverell', 22, 'Troll Chest', '1980-05-09', 26117.57, 9.05, 47.00, '1981-03-30', b'1'),
-	(102, 'Parvati', 'Patil', 'Gryffindor student in Harry\'s year, identical twin sister of Ravenclaw Padma Patil, a member of Dumbledore\'s Army.', 55, 'Death', 25, 'Human Pride', '1990-01-12', 11798.51, 1.00, 71.00, '1990-03-19', b'0'),
+	(100, 'Pansy', 'Parkinson', 'Slytherin student in Harry''s year, school prefect, a member of the Inquisitorial Squad, Draco Malfoy''s girlfriend for some time.', 35, 'Death', 21, 'Blue Phoenix', '1994-01-20', 11941.54, 29.19, 71.00, '1994-05-29', b'0'),
+	(101, 'Padma', 'Patil', 'Ravenclaw student in Harry''s year, identical twin sister of Gryffindor Parvati Patil, a member of Dumbledore''s Army.', 37, 'Antioch Peverell', 22, 'Troll Chest', '1980-05-09', 26117.57, 9.05, 47.00, '1981-03-30', b'1'),
+	(102, 'Parvati', 'Patil', 'Gryffindor student in Harry''s year, identical twin sister of Ravenclaw Padma Patil, a member of Dumbledore''s Army.', 55, 'Death', 25, 'Human Pride', '1990-01-12', 11798.51, 1.00, 71.00, '1990-03-19', b'0'),
 	(103, 'Peter', 'Pettigrew', 'Former school friend of James Potter, Sirius Black and Remus Lupin. Betrays James and Lily Potter. Death Eater, an unregistered animagus, Pettigrew is first introduced as a rat known as Scabbers.', 41, 'Jimmy Kiddell', 29, 'Venomous Tongue', '1993-03-12', 43424.70, 19.06, 87.00, '1993-07-06', b'0'),
 	(104, 'Antioch', 'Peverell', 'Original owner of The Elder Wand in The Tale of the Three Brothers.', 49, 'Arturo Cephalopos', 26, 'Blue Phoenix', '1989-01-19', 36394.90, 20.56, 18.00, '1989-08-09', b'0'),
 	(105, 'Cadmus', 'Peverell', 'Original owner of The Resurrection Stone in The Tale of the Three Brothers', 36, 'Death', 20, 'Troll Chest', '1983-12-16', 22327.50, 30.46, 82.00, '1984-03-20', b'1'),
@@ -38558,12 +38303,12 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(107, 'Irma', 'Pince', 'Hogwarts librarian', 19, 'Mykew Gregorovitch', 17, 'Venomous Tongue', '1984-05-03', 12766.45, 17.02, 85.00, '1984-08-05', b'1'),
 	(108, 'Sturgis', 'Podmore', 'Member of the Order of the Phoenix, imprisoned in Azkaban', 64, 'Jimmy Kiddell', 24, 'Blue Phoenix', '1980-04-07', 22485.06, 15.05, 67.00, '1981-03-22', b'1'),
 	(109, 'Poppy', 'Pomfrey', 'Hogwarts school nurse', 32, 'Arturo Cephalopos', 23, 'Troll Chest', '1988-04-19', 27957.52, 6.77, 68.00, '1988-06-12', b'1'),
-	(110, 'Harry', 'Potter', 'Main character of the series, son of James Potter and Lily Evans, Gryffindor student, Gryffindor Quidditch Seeker and captain, leader of Dumbledore\'s Army.', 68, 'Death', 18, 'Human Pride', '1986-09-21', 44889.88, 23.09, 10.00, '1986-11-15', b'1'),
-	(111, 'James', 'Potter', 'Harry Potter\'s father, a member of the Order of the Phoenix, murdered by Lord Voldemort before the series begins.', 47, 'Ollivander family', 31, 'Venomous Tongue', '1993-06-16', 27296.66, 1.22, 86.00, '1993-11-16', b'0'),
-	(112, 'Lily', 'Potter', 'Harry Potter\'s mother, a member of the Order of the Phoenix, murdered by Lord Voldemort before the series begins.', 28, 'Antioch Peverell', 13, 'Blue Phoenix', '1984-02-27', 21972.24, 26.11, 49.00, '1984-06-16', b'1'),
+	(110, 'Harry', 'Potter', 'Main character of the series, son of James Potter and Lily Evans, Gryffindor student, Gryffindor Quidditch Seeker and captain, leader of Dumbledore''s Army.', 68, 'Death', 18, 'Human Pride', '1986-09-21', 44889.88, 23.09, 10.00, '1986-11-15', b'1'),
+	(111, 'James', 'Potter', 'Harry Potter''s father, a member of the Order of the Phoenix, murdered by Lord Voldemort before the series begins.', 47, 'Ollivander family', 31, 'Venomous Tongue', '1993-06-16', 27296.66, 1.22, 86.00, '1993-11-16', b'0'),
+	(112, 'Lily', 'Potter', 'Harry Potter''s mother, a member of the Order of the Phoenix, murdered by Lord Voldemort before the series begins.', 28, 'Antioch Peverell', 13, 'Blue Phoenix', '1984-02-27', 21972.24, 26.11, 49.00, '1984-06-16', b'1'),
 	(113, 'Ernest', 'Ernie', '(fl. 1993-1997), also called Ern by Stanley Shunpike, was the driver of the Knight Bus.', 58, 'Ollivander family', 20, 'Troll Chest', '1991-11-05', 11948.37, 16.85, 99.00, '1992-07-10', b'0'),
-	(114, 'Quirinus', 'Quirrell', 'Defence Against the Dark Arts professor in Harry\'s first year, possessed by Lord Voldemort in Philosopher\'s Stone.', 34, 'Mykew Gregorovitch', 15, 'Human Pride', '1992-10-17', 13212.49, 5.67, 55.00, '1992-12-26', b'0'),
-	(115, 'Helena', 'Ravenclaw/The', 'Daughter of Rowena Ravenclaw, stole her mother\'s diadem and hid it, killed by the Bloody Baron and became Ravenclaw\'s house ghost.', 62, 'Jimmy Kiddell', 18, 'Venomous Tongue', '1985-10-13', 1238.51, 10.17, 57.00, '1985-12-30', b'1'),
+	(114, 'Quirinus', 'Quirrell', 'Defence Against the Dark Arts professor in Harry''s first year, possessed by Lord Voldemort in Philosopher''s Stone.', 34, 'Mykew Gregorovitch', 15, 'Human Pride', '1992-10-17', 13212.49, 5.67, 55.00, '1992-12-26', b'0'),
+	(115, 'Helena', 'Ravenclaw/The', 'Daughter of Rowena Ravenclaw, stole her mother''s diadem and hid it, killed by the Bloody Baron and became Ravenclaw''s house ghost.', 62, 'Jimmy Kiddell', 18, 'Venomous Tongue', '1985-10-13', 1238.51, 10.17, 57.00, '1985-12-30', b'1'),
 	(116, 'Rowena', 'Ravenclaw', 'Co-founder of Hogwarts, mother of Helena Ravenclaw', 40, 'Arturo Cephalopos', 28, 'Blue Phoenix', '1994-10-16', 16236.00, 11.11, 26.00, '1995-04-25', b'0'),
 	(117, 'Mary', 'Riddle', 'Muggle wife of Thomas Riddle, mother of Tom Riddle Sr, mother-in-law of Merope Gaunt, grandmother of Tom Marvolo Riddle/Lord Voldemort, killed by her grandson', 24, 'Death', 12, 'Troll Chest', '1982-06-14', 43375.01, 23.97, 82.00, '1982-08-30', b'1'),
 	(118, 'Thomas', 'Riddle', 'Muggle husband of Mary Riddle, father of Tom Riddle Sr, grandfather of Tom Marvolo Riddle/Lord Voldemort, killed by his grandson.', 36, 'Arturo Cephalopos', 28, 'Human Pride', '1989-05-14', 24304.57, 21.47, 86.00, '1989-12-04', b'0'),
@@ -38579,15 +38324,15 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(128, 'Stan', 'Shunpike', 'Conductor of the Knight Bus, later jailed in Azkaban on suspicions of being a death-eater.', 30, 'Jimmy Kiddell', 22, 'Blue Phoenix', '1992-09-21', 19775.78, 0.14, 61.00, '1992-12-07', b'0'),
 	(129, 'Aurora', 'Sinistra', 'Professor and member of the Astronomy Department at Hogwarts, a witch with dark skin, hair, and eyes.', 47, 'Arturo Cephalopos', 22, 'Troll Chest', '1991-06-28', 17257.17, 30.67, 45.00, '1992-01-25', b'0'),
 	(130, 'Rita', 'Skeeter', 'Reporter for the Daily Prophet, author of The Life and Lies of Albus Dumbledore, unregistered animagus.', 38, 'Death', 13, 'Human Pride', '1990-04-18', 22876.54, 17.02, 3.00, '1990-07-06', b'0'),
-	(131, 'Horace', 'Slughorn', 'Former Potions professor at Hogwarts and Head of Slytherin House who taught Tom Marvolo Riddle and returns to Hogwarts in Harry\'s sixth year.', 32, 'Ollivander family', 10, 'Venomous Tongue', '1986-10-30', 19165.02, 7.95, 76.00, '1987-09-27', b'1'),
+	(131, 'Horace', 'Slughorn', 'Former Potions professor at Hogwarts and Head of Slytherin House who taught Tom Marvolo Riddle and returns to Hogwarts in Harry''s sixth year.', 32, 'Ollivander family', 10, 'Venomous Tongue', '1986-10-30', 19165.02, 7.95, 76.00, '1987-09-27', b'1'),
 	(132, 'Salazar', 'Slytherin', 'Co-founder of Hogwarts, Parseltongue, ancestor of the Gaunt family and Lord Voldemort.', 59, 'Antioch Peverell', 28, 'Blue Phoenix', '1980-10-26', 1168.22, 26.55, 71.00, '1981-01-30', b'1'),
 	(133, 'Hepzibah', 'Smith', 'Elderly, wealthy antique collector, descendant of Helga Hufflepuff, murdered and robbed by Tom Marvolo Riddle', 30, 'Ollivander family', 12, 'Troll Chest', '1983-05-25', 33665.13, 7.98, 21.00, '1983-08-17', b'1'),
-	(134, 'Zacharias', 'Smith', 'Hufflepuff student, a member of Dumbledore\'s Army.', 39, 'Antioch Peverell', 15, 'Human Pride', '1985-12-01', 45543.40, 24.78, 98.00, '1986-10-29', b'1'),
+	(134, 'Zacharias', 'Smith', 'Hufflepuff student, a member of Dumbledore''s Army.', 39, 'Antioch Peverell', 15, 'Human Pride', '1985-12-01', 45543.40, 24.78, 98.00, '1986-10-29', b'1'),
 	(135, 'Severus', 'Snape', 'Hogwarts, Potions and later Defence Against the Dark Arts professor, Head of Slytherin House, a member of both the Death Eaters and the Order of the Phoenix.', 53, 'Mykew Gregorovitch', 15, 'Venomous Tongue', '1992-11-06', 17820.90, 16.53, 38.00, '1992-12-20', b'0'),
-	(136, 'Alicia', 'Spinnet', 'Chaser on the Gryffindor Quidditch team, two years above Harry Potter at Hogwarts. Member of Dumbledore\'s Army.', 65, 'Jimmy Kiddell', 16, 'Blue Phoenix', '1980-02-06', 6269.39, 3.66, 77.00, '1980-03-04', b'1'),
+	(136, 'Alicia', 'Spinnet', 'Chaser on the Gryffindor Quidditch team, two years above Harry Potter at Hogwarts. Member of Dumbledore''s Army.', 65, 'Jimmy Kiddell', 16, 'Blue Phoenix', '1980-02-06', 6269.39, 3.66, 77.00, '1980-03-04', b'1'),
 	(137, 'Pomona', 'Sprout', 'Hogwarts Herbology professor, Head of Hufflepuff House.', 46, 'Arturo Cephalopos', 24, 'Troll Chest', '1993-06-10', 16789.73, 30.80, 58.00, '1993-10-07', b'0'),
 	(138, 'Pius', 'Thicknesse', 'Minister for Magic while under the Imperius Curse, later replaced by Kingsley Shacklebolt.', 47, 'Death', 24, 'Human Pride', '1982-06-01', 8359.46, 26.64, 59.00, '1983-01-04', b'1'),
-	(139, 'Dean', 'Thomas', 'Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army, briefly Ginny Weasley\'s boyfriend, Gryffindor Quidditch Chaser.', 69, 'Antioch Peverell', 18, 'Venomous Tongue', '1992-12-04', 6579.08, 7.43, 69.00, '1993-04-09', b'0'),
+	(139, 'Dean', 'Thomas', 'Gryffindor student in Harry''s year, a member of Dumbledore''s Army, briefly Ginny Weasley''s boyfriend, Gryffindor Quidditch Chaser.', 69, 'Antioch Peverell', 18, 'Venomous Tongue', '1992-12-04', 6579.08, 7.43, 69.00, '1993-04-09', b'0'),
 	(140, 'Andromeda', 'Tonks', 'Sister of Bellatrix Lestrange and Narcissa Malfoy, disowned by her family for marrying Muggle-born Ted Tonks, mother of Nymphadora Tonks.', 68, 'Death', 28, 'Blue Phoenix', '1993-02-18', 30024.64, 8.80, 36.00, '1993-06-14', b'0'),
 	(141, 'Nymphadora', 'Tonks', 'Daughter of Ted and Andromeda Tonks, Auror and member of the Order of the Phoenix. She marries Remus Lupin, and become the mother of Teddy Lupin.', 18, 'Jimmy Kiddell', 13, 'Troll Chest', '1982-11-25', 16724.98, 22.83, 37.00, '1983-09-21', b'1'),
 	(142, 'Ted', 'Tonks', 'Muggle-born husband of Andromeda and father of Nymphadora Tonks.', 19, 'Arturo Cephalopos', 13, 'Human Pride', '1984-03-07', 39096.67, 25.20, 82.00, '1984-10-04', b'1'),
@@ -38595,33 +38340,29 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(144, 'Sybill', 'Patricia', 'Hogwarts Divination professor, predicted the prophecy that prompted Lord Voldemort to go after the Potters', 25, 'Ollivander family', 17, 'Blue Phoenix', '1994-07-05', 15237.30, 7.31, 21.00, '1994-07-21', b'0'),
 	(145, 'Dolores', 'Jane', 'Senior Undersecretary to the Minister for Magic, Defence Against the Dark Arts professor, Hogwarts High Inquisitor, Headmistress of Hogwarts, who enthusiastically joins in the persecution of half-bloods under Voldermort.', 34, 'Mykew Gregorovitch', 30, 'Troll Chest', '1982-09-25', 10628.58, 12.08, 50.00, '1983-01-22', b'1'),
 	(146, 'Emmeline', 'Vance', 'a member of the party that brings Harry to Grimmauld Place, a member of the Order of the Phoenix. Described as "A stately looking witch in an emerald green shawl".', 57, 'Jimmy Kiddell', 25, 'Human Pride', '1992-10-30', 34993.10, 29.94, 82.00, '1992-11-03', b'0'),
-	(147, 'Romilda', 'Vane', 'Hogwarts student who tried to romance Harry with Chocolate Cauldrons containing a love potion from Weasley\'s Wizard Wheezes', 17, 'Mykew Gregorovitch', 16, 'Venomous Tongue', '1983-09-06', 26267.34, 16.63, 100.00, '1984-04-15', b'1'),
+	(147, 'Romilda', 'Vane', 'Hogwarts student who tried to romance Harry with Chocolate Cauldrons containing a love potion from Weasley''s Wizard Wheezes', 17, 'Mykew Gregorovitch', 16, 'Venomous Tongue', '1983-09-06', 26267.34, 16.63, 100.00, '1984-04-15', b'1'),
 	(148, 'Septima', 'Vector', 'Arithmancy professor at Hogwarts.', 43, 'Arturo Cephalopos', 26, 'Blue Phoenix', '1981-01-23', 6146.94, 6.57, 66.00, '1982-01-22', b'1'),
-	(149, 'Lord', 'Voldemort', 'The villain of the series, the murderer of Harry Potter\'s parents and many others in his quest for immortality and absolute power.', 25, 'Death', 31, 'Troll Chest', '1989-04-28', 38085.84, 22.53, 88.00, '1989-08-01', b'0'),
+	(149, 'Lord', 'Voldemort', 'The villain of the series, the murderer of Harry Potter''s parents and many others in his quest for immortality and absolute power.', 25, 'Death', 31, 'Troll Chest', '1989-04-28', 38085.84, 22.53, 88.00, '1989-08-01', b'0'),
 	(150, 'Arthur', 'Weasley', 'Muggle-obsessed Ministry of Magic employee. Husband of Molly Weasley, father of Bill, Charlie, Percy, Fred, George, Ron, and Ginny Weasley, member of the Order of the Phoenix', 65, 'Antioch Peverell', 26, 'Human Pride', '1989-09-05', 6647.70, 15.82, 23.00, '1989-09-28', b'0'),
 	(151, 'Bill', 'Weasley', 'Oldest son of Arthur and Molly Weasley, Gringotts employee.', 51, 'Death', 30, 'Venomous Tongue', '1988-04-01', 11346.57, 2.63, 98.00, '1988-08-03', b'1'),
 	(152, 'Charlie', 'Weasley', 'Second son of Arthur and Molly Weasley, and a member of the Order of the Phoenix, works with dragons in Romania.', 21, 'Jimmy Kiddell', 16, 'Blue Phoenix', '1988-11-14', 7831.46, 26.31, 20.00, '1989-07-26', b'0'),
-	(153, 'Fred', 'Weasley', 'Son of Arthur and Molly Weasley and identical twin brother of George Weasley, a member of Dumbledore\'s Army, Gryffindor Quidditch Beater, co-owner of Weasleys\' Wizard Wheezes, killed in an explosion caused by Augustus Rookwood in the Battle of Hogwarts.', 48, 'Arturo Cephalopos', 18, 'Troll Chest', '1992-02-22', 23860.37, 28.37, 39.00, '1992-05-06', b'0'),
-	(154, 'George', 'Weasley', 'Son of Arthur and Molly Weasley and identical twin brother of Fred Weasley, member of Dumbledore\'s Army, Gryffindor Quidditch Beater, co-owner of Weasleys\' Wizard Wheezes, marries Angelina Johnson', 48, 'Death', 13, 'Human Pride', '1994-11-16', 16556.88, 2.82, 19.00, '1994-12-13', b'0'),
-	(155, 'Ginny', 'Weasley', 'Only daughter and youngest child of Arthur and Molly Weasley, Gryffindor student one year under Harry, Gryffindor Quidditch Seeker and Chaser, a member of Dumbledore\'s Army.', 47, 'Ollivander family', 12, 'Venomous Tongue', '1990-03-21', 9347.41, 28.27, 78.00, '1990-03-31', b'0'),
+	(153, 'Fred', 'Weasley', 'Son of Arthur and Molly Weasley and identical twin brother of George Weasley, a member of Dumbledore''s Army, Gryffindor Quidditch Beater, co-owner of Weasleys'' Wizard Wheezes, killed in an explosion caused by Augustus Rookwood in the Battle of Hogwarts.', 48, 'Arturo Cephalopos', 18, 'Troll Chest', '1992-02-22', 23860.37, 28.37, 39.00, '1992-05-06', b'0'),
+	(154, 'George', 'Weasley', 'Son of Arthur and Molly Weasley and identical twin brother of Fred Weasley, member of Dumbledore''s Army, Gryffindor Quidditch Beater, co-owner of Weasleys'' Wizard Wheezes, marries Angelina Johnson', 48, 'Death', 13, 'Human Pride', '1994-11-16', 16556.88, 2.82, 19.00, '1994-12-13', b'0'),
+	(155, 'Ginny', 'Weasley', 'Only daughter and youngest child of Arthur and Molly Weasley, Gryffindor student one year under Harry, Gryffindor Quidditch Seeker and Chaser, a member of Dumbledore''s Army.', 47, 'Ollivander family', 12, 'Venomous Tongue', '1990-03-21', 9347.41, 28.27, 78.00, '1990-03-31', b'0'),
 	(156, 'Molly', 'Weasley', 'Wife of Arthur Weasley, mother of Bill, Charlie, Percy, Fred, George, Ron and Ginny Weasley, a member of the Order of the Phoenix.', 14, 'Mykew Gregorovitch', 18, 'Blue Phoenix', '1992-02-03', 39815.04, 9.43, 53.00, '1992-08-30', b'0'),
 	(157, 'Percy', 'Weasley', 'Third son of Arthur and Molly Weasley, Gryffindor prefect and Head Boy then Ministry of Magic employee, long estranged from his family before joining them against the Death Eaters in Deathly Hallows,', 54, 'Arturo Cephalopos', 14, 'Troll Chest', '1985-04-24', 25537.20, 3.05, 12.00, '1985-05-16', b'1'),
-	(158, 'Ron', 'Weasley', 'Harry\'s close friend, youngest Son of Arthur and Molly Weasley, Gryffindor Quidditch Keeper, school prefect, a member of Dumbledore\'s Army.', 51, 'Death', 26, 'Human Pride', '1985-07-16', 4085.37, 25.25, 32.00, '1985-09-29', b'1'),
+	(158, 'Ron', 'Weasley', 'Harry''s close friend, youngest Son of Arthur and Molly Weasley, Gryffindor Quidditch Keeper, school prefect, a member of Dumbledore''s Army.', 51, 'Death', 26, 'Human Pride', '1985-07-16', 4085.37, 25.25, 32.00, '1985-09-29', b'1'),
 	(159, 'Oliver', 'Wood', 'Hogwarts student, Gryffindor Quidditch Keeper and captain.', 26, 'Ollivander family', 10, 'Venomous Tongue', '1985-06-29', 40902.03, 10.82, 68.00, '1985-08-01', b'1'),
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
-	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort\'s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
-	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry\'s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
+	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
+	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
 [/input]
 [output]
-```
 162
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -38640,7 +38381,7 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 );
 
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
-	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry\'s year and member of Dumbledore\'s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
+	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 63, 'Ollivander family', 20, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1'),
 	(3, 'Ludo', 'Bagman', 'Quidditch Beater for the Wimbourne Wasps and Head of the Department of Magical Games and Sports within the Ministry of Magic', 19, 'Mykew Gregorovitch', 18, 'Venomous Tongue', '1990-07-04', 23190.94, 14.92, 30.00, '1990-12-27', b'0'),
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Jimmy Kiddell', 15, 'Blue Phoenix', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
@@ -38648,28 +38389,28 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Death', 23, 'Human Pride', '1985-10-26', 11902.72, 24.84, 95.00, '1985-12-27', b'1'),
 	(7, 'Phineas', 'Nigellus', 'deceased great-great-grandfather of Sirius Black and former headmaster of Hogwarts, whose painting still hangs in the office and helps out the current headmaster.', 47, 'Mykew Gregorovitch', 18, 'Venomous Tongue', '1985-12-05', 11248.58, 12.31, 32.00, '1986-11-12', b'1'),
 	(8, 'Regulus', 'Arcturus', 'Late brother of Sirius Black, a Death Eater who had turned against Lord Voldemort.', 46, 'Ollivander family', 22, 'Blue Phoenix', '1989-05-31', 1173.12, 9.68, 56.00, '1989-10-13', b'0'),
-	(9, 'Sirius', 'Black', 'Harry Potter\'s godfather, a member of the Order of the Phoenix and prisoner on the run.', 25, 'Mykew Gregorovitch', 30, 'Troll Chest', '1993-08-29', 15793.54, 26.34, 17.00, '1994-05-21', b'0'),
+	(9, 'Sirius', 'Black', 'Harry Potter''s godfather, a member of the Order of the Phoenix and prisoner on the run.', 25, 'Mykew Gregorovitch', 30, 'Troll Chest', '1993-08-29', 15793.54, 26.34, 17.00, '1994-05-21', b'0'),
 	(10, 'Amelia', 'Bones', 'Head of the Department of Magical Law Enforcement, aunt of Susan Bones.', 16, 'Antioch Peverell', 30, 'Human Pride', '1981-05-15', 18778.37, 7.85, 54.00, '1982-05-06', b'1'),
-	(11, 'Susan', 'Bones', 'Hufflepuff student in Harry\'s year, a member of Dumbledore\'s Army.', 72, 'Ollivander family', 11, 'Venomous Tongue', '1992-05-03', 26463.40, 30.54, 30.00, '1993-03-11', b'0'),
-	(12, 'Terry', 'Boot', 'Ravenclaw student in Harry\'s year, a member of Dumbledore\'s Army.', 69, 'Mykew Gregorovitch', 28, 'Blue Phoenix', '1989-09-09', 31029.60, 27.98, 10.00, '1990-02-15', b'0'),
-	(13, 'Lavender', 'Brown', 'Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army, briefly Ron Weasley\'s girlfriend.', 31, 'Jimmy Kiddell', 24, 'Troll Chest', '1992-03-26', 26572.86, 26.64, 94.00, '1992-08-21', b'0'),
-	(14, 'Millicent', 'Bulstrode', 'Slytherin student in Harry\'s year, a member of Umbridge\'s Inquisitorial Squad.', 65, 'Arturo Cephalopos', 17, 'Human Pride', '1988-08-16', 33309.81, 25.43, 44.00, '1988-08-21', b'1'),
-	(15, 'Charity', 'Burbage', 'Professor of Muggle Studies at Hogwarts during Harry\'s time at school.', 38, 'Death', 30, 'Venomous Tongue', '1994-07-21', 33508.64, 17.14, 31.00, '1995-04-06', b'0'),
+	(11, 'Susan', 'Bones', 'Hufflepuff student in Harry''s year, a member of Dumbledore''s Army.', 72, 'Ollivander family', 11, 'Venomous Tongue', '1992-05-03', 26463.40, 30.54, 30.00, '1993-03-11', b'0'),
+	(12, 'Terry', 'Boot', 'Ravenclaw student in Harry''s year, a member of Dumbledore''s Army.', 69, 'Mykew Gregorovitch', 28, 'Blue Phoenix', '1989-09-09', 31029.60, 27.98, 10.00, '1990-02-15', b'0'),
+	(13, 'Lavender', 'Brown', 'Gryffindor student in Harry''s year, a member of Dumbledore''s Army, briefly Ron Weasley''s girlfriend.', 31, 'Jimmy Kiddell', 24, 'Troll Chest', '1992-03-26', 26572.86, 26.64, 94.00, '1992-08-21', b'0'),
+	(14, 'Millicent', 'Bulstrode', 'Slytherin student in Harry''s year, a member of Umbridge''s Inquisitorial Squad.', 65, 'Arturo Cephalopos', 17, 'Human Pride', '1988-08-16', 33309.81, 25.43, 44.00, '1988-08-21', b'1'),
+	(15, 'Charity', 'Burbage', 'Professor of Muggle Studies at Hogwarts during Harry''s time at school.', 38, 'Death', 30, 'Venomous Tongue', '1994-07-21', 33508.64, 17.14, 31.00, '1995-04-06', b'0'),
 	(16, 'Frank', 'Bryce', 'Muggle gardener for the Riddle family.', 24, 'Antioch Peverell', 29, 'Blue Phoenix', '1991-12-20', 19955.71, 6.52, 30.00, '1992-07-22', b'0'),
 	(17, 'Alecto', 'Carrow', 'Sister of Amycus Carrow, Death Eater and professor of Muggle Studies for one year, Deputy Headmistress of Hogwarts under Severus Snape', 52, 'Jimmy Kiddell', 24, 'Troll Chest', '1982-03-28', 25434.21, 14.96, 36.00, '1982-09-17', b'1'),
 	(18, 'Amycus', 'Carrow', 'Brother of Alecto Carrow, Death Eater and professor of Defence Against the Dark Arts for one year, even though he changed it to just "Dark Arts", Deputy Headmaster of Hogwarts under Severus Snape', 23, 'Arturo Cephalopos', 30, 'Human Pride', '1988-04-18', 46943.10, 5.08, 6.00, '1988-08-05', b'1'),
 	(19, 'Reginald', 'Cattermole', 'Employee of the Magical Maintenance Department for the Ministry of Magic, impersonated by Ron Weasley', 25, 'Death', 28, 'Venomous Tongue', '1981-08-14', 39864.33, 15.75, 8.00, '1981-11-24', b'1'),
 	(20, 'Mary', 'Cattermole', 'Muggle-born wife of Reginald Cattermole, saved by Harry Potter from the Muggle-born Registration Commission.', 53, 'Antioch Peverell', 25, 'Blue Phoenix', '1981-08-18', 34176.09, 12.34, 71.00, '1982-04-21', b'1'),
-	(21, 'Cho', 'Chang', 'Ravenclaw student one year above Harry, Quidditch Seeker, member of Dumbledore\'s Army and Harry\'s first Love interest', 64, 'Ollivander family', 20, 'Troll Chest', '1984-01-31', 49964.03, 10.83, 53.00, '1984-03-29', b'1'),
+	(21, 'Cho', 'Chang', 'Ravenclaw student one year above Harry, Quidditch Seeker, member of Dumbledore''s Army and Harry''s first Love interest', 64, 'Ollivander family', 20, 'Troll Chest', '1984-01-31', 49964.03, 10.83, 53.00, '1984-03-29', b'1'),
 	(22, 'Penelope', 'Clearwater', 'Ravenclaw prefect and girlfriend of Percy Weasley', 58, 'Mykew Gregorovitch', 17, 'Human Pride', '1983-05-06', 5130.24, 11.04, 42.00, '1983-06-11', b'1'),
-	(23, 'Michael', 'Corner', 'Ravenclaw student in Harry\'s year, member of Dumbledore\'s Army', 56, 'Jimmy Kiddell', 15, 'Venomous Tongue', '1985-03-23', 23295.97, 20.97, 35.00, '1985-04-13', b'1'),
+	(23, 'Michael', 'Corner', 'Ravenclaw student in Harry''s year, member of Dumbledore''s Army', 56, 'Jimmy Kiddell', 15, 'Venomous Tongue', '1985-03-23', 23295.97, 20.97, 35.00, '1985-04-13', b'1'),
 	(24, 'Vincent', 'Crabbe,', 'Death Eater, father of Vincent Crabbe', 37, 'Arturo Cephalopos', 24, 'Blue Phoenix', '1993-03-30', 35436.82, 26.54, 17.00, '1993-04-07', b'0'),
-	(25, 'Vincent', 'Crabbe', 'Slytherin student in Harry\'s year, son of Death Eater, Slytherin Quidditch team Beater, a member of the Inquisitorial Squad, a friend of Draco Malfoy.', 37, 'Death', 12, 'Troll Chest', '1986-07-18', 8597.40, 20.09, 97.00, '1986-10-18', b'1'),
-	(26, 'Colin', 'Creevey', 'Muggle-born Gryffindor student one year below Harry, brother of Dennis Creevey, member of Dumbledore\'s Army, killed during the Battle of Hogwarts, after sneaking away from the younger evacuated students in the seventh book', 38, 'Antioch Peverell', 15, 'Human Pride', '1991-02-19', 27282.08, 11.82, 76.00, '1992-01-08', b'0'),
-	(27, 'Dennis', 'Creevey', 'Muggle-born Gryffindor student three years below Harry, brother of Colin Creevey, member of Dumbledore\'s Army', 61, 'Ollivander family', 24, 'Venomous Tongue', '1992-07-13', 10649.78, 1.77, 23.00, '1992-09-24', b'0'),
+	(25, 'Vincent', 'Crabbe', 'Slytherin student in Harry''s year, son of Death Eater, Slytherin Quidditch team Beater, a member of the Inquisitorial Squad, a friend of Draco Malfoy.', 37, 'Death', 12, 'Troll Chest', '1986-07-18', 8597.40, 20.09, 97.00, '1986-10-18', b'1'),
+	(26, 'Colin', 'Creevey', 'Muggle-born Gryffindor student one year below Harry, brother of Dennis Creevey, member of Dumbledore''s Army, killed during the Battle of Hogwarts, after sneaking away from the younger evacuated students in the seventh book', 38, 'Antioch Peverell', 15, 'Human Pride', '1991-02-19', 27282.08, 11.82, 76.00, '1992-01-08', b'0'),
+	(27, 'Dennis', 'Creevey', 'Muggle-born Gryffindor student three years below Harry, brother of Colin Creevey, member of Dumbledore''s Army', 61, 'Ollivander family', 24, 'Venomous Tongue', '1992-07-13', 10649.78, 1.77, 23.00, '1992-09-24', b'0'),
 	(28, 'Dirk', 'Cresswell', 'Muggle-born Head of the Goblin Liaison Office, went on the run in Deathly Hallows with fellow muggle-born Ted Tonks, Dean Thomas and goblins Gornuk and Griphook.', 65, 'Mykew Gregorovitch', 26, 'Blue Phoenix', '1985-02-14', 11481.54, 25.13, 23.00, '1985-04-22', b'1'),
 	(29, 'Bartemius', 'Barty', 'Head of the Department of International Magical Cooperation, killed by his son Barty Crouch Jr, Transfigurated into a bone before being buried', 48, 'Jimmy Kiddell', 20, 'Troll Chest', '1992-01-24', 11137.18, 3.48, 74.00, '1992-02-17', b'0'),
-	(30, 'Bartemius', 'Barty', 'Death Eater, credited with facilitating the return of Lord Voldemort, received a Dementor\'s Kiss, used Polyjuice Potion to impersonate Alastor Moody', 69, 'Arturo Cephalopos', 25, 'Human Pride', '1984-08-03', 615.09, 29.72, 36.00, '1984-11-18', b'1'),
+	(30, 'Bartemius', 'Barty', 'Death Eater, credited with facilitating the return of Lord Voldemort, received a Dementor''s Kiss, used Polyjuice Potion to impersonate Alastor Moody', 69, 'Arturo Cephalopos', 25, 'Human Pride', '1984-08-03', 615.09, 29.72, 36.00, '1984-11-18', b'1'),
 	(31, 'John', 'Dawlish', '', 30, 'Death', 19, 'Venomous Tongue', '1984-09-14', 45046.67, 9.80, 93.00, '1985-07-11', b'1'),
 	(32, 'Fleur', 'Delacour', 'French student who participated in the Triwizard Tournament representing Beauxbatons, later wed Bill Weasley.', 49, 'Antioch Peverell', 13, 'Blue Phoenix', '1982-07-24', 33063.59, 23.49, 67.00, '1982-12-08', b'1'),
 	(33, 'Gabrielle', 'Delacour', 'Younger sister of Fleur Delacour, saved by Harry in the Triwizard Tournament', 66, 'Ollivander family', 14, 'Troll Chest', '1993-11-24', 9488.33, 19.45, 22.00, '1994-06-21', b'0'),
@@ -38678,37 +38419,37 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(36, 'Cedric', 'Diggory', 'Hufflepuff student two years above Harry, school prefect, Quidditch Seeker and captain, co-winner of the Triwizard Tournament', 19, 'Arturo Cephalopos', 27, 'Blue Phoenix', '1981-01-13', 16443.96, 1.12, 37.00, '1982-01-14', b'1'),
 	(37, 'Elphias', 'Doge', 'School friend of Albus Dumbledore', 59, 'Death', 24, 'Troll Chest', '1982-07-07', 32356.08, 9.68, 37.00, '1983-06-11', b'1'),
 	(38, 'Antonin', 'Dolohov', 'Death Eater who killed Fabian Prewett, Gideon Prewett, and Remus Lupin.', 28, 'Antioch Peverell', 23, 'Human Pride', '1991-02-28', 5585.72, 21.16, 36.00, '1991-04-16', b'0'),
-	(39, 'Aberforth', 'Dumbledore', 'Brother of Albus and Ariana Dumbledore, owner of the Hog\'s Head', 49, 'Ollivander family', 11, 'Venomous Tongue', '1991-04-02', 22349.31, 9.72, 81.00, '1992-02-21', b'0'),
-	(40, 'Albus', 'Dumbledore', 'Hogwarts Headmaster in Harry Potter\'s time, Transfiguration professor in Tom Riddle\'s time, founder of the Order of the Phoenix.', 50, 'Mykew Gregorovitch', 10, 'Blue Phoenix', '1992-12-18', 21106.66, 15.75, 93.00, '1993-12-07', b'0'),
+	(39, 'Aberforth', 'Dumbledore', 'Brother of Albus and Ariana Dumbledore, owner of the Hog''s Head', 49, 'Ollivander family', 11, 'Venomous Tongue', '1991-04-02', 22349.31, 9.72, 81.00, '1992-02-21', b'0'),
+	(40, 'Albus', 'Dumbledore', 'Hogwarts Headmaster in Harry Potter''s time, Transfiguration professor in Tom Riddle''s time, founder of the Order of the Phoenix.', 50, 'Mykew Gregorovitch', 10, 'Blue Phoenix', '1992-12-18', 21106.66, 15.75, 93.00, '1993-12-07', b'0'),
 	(41, 'Ariana', 'Dumbledore', '', 27, 'Jimmy Kiddell', 22, 'Troll Chest', '1980-07-26', 27191.21, 11.67, 13.00, '1981-06-12', b'1'),
 	(42, 'Dudley', 'Dursley', 'Muggle son of Vernon Dursley and Petunia Evans, first cousin of Harry Potter', 15, 'Arturo Cephalopos', 29, 'Human Pride', '1994-10-07', 49767.47, 21.73, 40.00, '1995-04-01', b'0'),
 	(43, 'Marjorie', 'Marge', 'Muggle sister of Vernon Dursley, breeds bulldogs, her favourite one named Ripper.', 65, 'Death', 25, 'Venomous Tongue', '1994-01-05', 909.41, 13.29, 14.00, '1994-04-14', b'0'),
-	(44, 'Petunia', 'Dursley', 'Harry\'s aunt, the sister of his mother Lily. Married to Vernon Dursley and mother of Dudley Dursley', 27, 'Ollivander family', 12, 'Blue Phoenix', '1994-05-15', 36558.54, 19.54, 57.00, '1994-09-02', b'0'),
-	(45, 'Vernon', 'Dursley', 'Harry Potter\'s muggle uncle, married to his aunt Petunia and father of Dudley Dursley.', 22, 'Mykew Gregorovitch', 22, 'Troll Chest', '1983-07-28', 6498.38, 11.41, 44.00, '1984-01-08', b'1'),
-	(46, 'Marietta', 'Edgecombe', 'Ravenclaw student one year above Harry, member of Dumbledore\'s Army', 17, 'Jimmy Kiddell', 16, 'Human Pride', '1993-06-10', 13938.86, 9.44, 16.00, '1993-07-16', b'0'),
+	(44, 'Petunia', 'Dursley', 'Harry''s aunt, the sister of his mother Lily. Married to Vernon Dursley and mother of Dudley Dursley', 27, 'Ollivander family', 12, 'Blue Phoenix', '1994-05-15', 36558.54, 19.54, 57.00, '1994-09-02', b'0'),
+	(45, 'Vernon', 'Dursley', 'Harry Potter''s muggle uncle, married to his aunt Petunia and father of Dudley Dursley.', 22, 'Mykew Gregorovitch', 22, 'Troll Chest', '1983-07-28', 6498.38, 11.41, 44.00, '1984-01-08', b'1'),
+	(46, 'Marietta', 'Edgecombe', 'Ravenclaw student one year above Harry, member of Dumbledore''s Army', 17, 'Jimmy Kiddell', 16, 'Human Pride', '1993-06-10', 13938.86, 9.44, 16.00, '1993-07-16', b'0'),
 	(47, 'Everard', '', 'Former Headmaster of Hogwarts, a particularly famous wizard, whose portrait hangs in many institutions, including the Ministry of Magic', 54, 'Arturo Cephalopos', 30, 'Venomous Tongue', '1984-03-31', 31293.40, 9.00, 77.00, '1984-08-31', b'1'),
-	(48, 'Arabella', 'Figg', 'Squib neighbour of the Dursleys\', member of the Order of the Phoenix.', 59, 'Death', 28, 'Blue Phoenix', '1986-05-09', 40953.48, 12.53, 71.00, '1986-05-15', b'1'),
+	(48, 'Arabella', 'Figg', 'Squib neighbour of the Dursleys'', member of the Order of the Phoenix.', 59, 'Death', 28, 'Blue Phoenix', '1986-05-09', 40953.48, 12.53, 71.00, '1986-05-15', b'1'),
 	(49, 'Argus', 'Filch', 'Squib caretaker of Hogwarts', 67, 'Ollivander family', 10, 'Troll Chest', '1982-07-12', 21519.32, 6.94, 28.00, '1983-01-18', b'1'),
-	(50, 'Justin', 'Finch-Fletchley', 'Muggle-born Hufflepuff student in Harry\'s year, a member of Dumbledore\'s Army.', 61, 'Mykew Gregorovitch', 28, 'Human Pride', '1987-04-02', 40613.55, 0.93, 67.00, '1987-04-04', b'1'),
-	(51, 'Seamus', 'Finnigan', 'Irish Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army best friend of Dean Thomas.', 35, 'Jimmy Kiddell', 25, 'Venomous Tongue', '1993-12-26', 43680.93, 30.44, 66.00, '1994-07-08', b'0'),
+	(50, 'Justin', 'Finch-Fletchley', 'Muggle-born Hufflepuff student in Harry''s year, a member of Dumbledore''s Army.', 61, 'Mykew Gregorovitch', 28, 'Human Pride', '1987-04-02', 40613.55, 0.93, 67.00, '1987-04-04', b'1'),
+	(51, 'Seamus', 'Finnigan', 'Irish Gryffindor student in Harry''s year, a member of Dumbledore''s Army best friend of Dean Thomas.', 35, 'Jimmy Kiddell', 25, 'Venomous Tongue', '1993-12-26', 43680.93, 30.44, 66.00, '1994-07-08', b'0'),
 	(52, 'Marcus', 'Flint', 'Slytherin sixth year Quidditch captain', 57, 'Arturo Cephalopos', 30, 'Blue Phoenix', '1988-02-06', 346.16, 30.17, 20.00, '1988-07-31', b'1'),
-	(53, 'Nicolas', 'Flamel', 'alchemist, the only known creator of the Philosopher\'s Stone.', 42, 'Death', 27, 'Troll Chest', '1990-01-02', 31483.33, 23.72, 26.00, '1990-08-27', b'0'),
+	(53, 'Nicolas', 'Flamel', 'alchemist, the only known creator of the Philosopher''s Stone.', 42, 'Death', 27, 'Troll Chest', '1990-01-02', 31483.33, 23.72, 26.00, '1990-08-27', b'0'),
 	(54, 'Mundungus', 'Fletcher', 'Common thief and shifty member of the Order of the Phoenix', 73, 'Antioch Peverell', 29, 'Human Pride', '1993-11-02', 42130.06, 17.24, 68.00, '1994-03-21', b'0'),
 	(55, 'Filius', 'Flitwick', 'Charms professor at Hogwarts and Head of Ravenclaw', 34, 'Ollivander family', 28, 'Venomous Tongue', '1990-07-14', 33656.19, 21.72, 24.00, '1990-08-17', b'0'),
-	(56, 'Cornelius', 'Fudge', 'Minister for Magic in the first five books, sacked when he denied Lord Voldemort\'s return for a year.', 15, 'Mykew Gregorovitch', 22, 'Blue Phoenix', '1990-03-08', 48394.70, 1.00, 46.00, '1991-02-06', b'0'),
+	(56, 'Cornelius', 'Fudge', 'Minister for Magic in the first five books, sacked when he denied Lord Voldemort''s return for a year.', 15, 'Mykew Gregorovitch', 22, 'Blue Phoenix', '1990-03-08', 48394.70, 1.00, 46.00, '1991-02-06', b'0'),
 	(57, 'Marvolo', 'Gaunt', 'Pure-blood father of Merope and Morfin Gaunt, grandfather of Tom Marvolo Riddle.', 41, 'Antioch Peverell', 14, 'Troll Chest', '1981-04-12', 22895.49, 0.15, 89.00, '1981-09-20', b'1'),
 	(58, 'Merope', 'Gaunt', 'Daughter of Marvolo Gaunt, sister of Morfin Gaunt, wife of Tom Riddle Sr, mother of Tom Marvolo Riddle/Lord Voldemort, died after childbirth, named for Merope, one of the Pleiades, who married a mortal\[1\]', 15, 'Ollivander family', 25, 'Human Pride', '1992-03-13', 20809.21, 18.62, 19.00, '1993-02-08', b'0'),
 	(59, 'Morfin', 'Gaunt', 'Son of Marvolo Gaunt, brother of Merope Gaunt, uncle of Tom Marvolo Riddle, framed by his nephew for Muggle killings.', 45, 'Mykew Gregorovitch', 25, 'Venomous Tongue', '1994-05-03', 33175.63, 20.71, 14.00, '1995-03-24', b'0'),
-	(60, 'Anthony', 'Goldstein', 'Ravenclaw student in Harry\'s year, member of Dumbledore\'s Army', 34, 'Jimmy Kiddell', 26, 'Blue Phoenix', '1980-05-11', 5264.16, 29.66, 4.00, '1980-05-22', b'1'),
+	(60, 'Anthony', 'Goldstein', 'Ravenclaw student in Harry''s year, member of Dumbledore''s Army', 34, 'Jimmy Kiddell', 26, 'Blue Phoenix', '1980-05-11', 5264.16, 29.66, 4.00, '1980-05-22', b'1'),
 	(61, 'Goyle', 'Sr', 'Death Eater, father of Gregory Goyle', 65, 'Arturo Cephalopos', 31, 'Troll Chest', '1981-05-01', 42520.28, 4.72, 75.00, '1982-03-30', b'1'),
-	(62, 'Gregory', 'Goyle', 'Slytherin student in Harry\'s year, Slytherin Quidditch Beater, a member of the Inquisitorial Squad.', 51, 'Death', 25, 'Human Pride', '1983-04-06', 22014.91, 21.61, 33.00, '1984-02-20', b'1'),
-	(63, 'Hermione', 'Granger', 'Muggle-born Gryffindor student in Harry\'s year, one of Harry\'s best friends, founder of Dumbledore\'s Army, Gryffindor Prefect', 18, 'Antioch Peverell', 16, 'Venomous Tongue', '1980-11-17', 20232.87, 17.54, 27.00, '1981-01-13', b'1'),
+	(62, 'Gregory', 'Goyle', 'Slytherin student in Harry''s year, Slytherin Quidditch Beater, a member of the Inquisitorial Squad.', 51, 'Death', 25, 'Human Pride', '1983-04-06', 22014.91, 21.61, 33.00, '1984-02-20', b'1'),
+	(63, 'Hermione', 'Granger', 'Muggle-born Gryffindor student in Harry''s year, one of Harry''s best friends, founder of Dumbledore''s Army, Gryffindor Prefect', 18, 'Antioch Peverell', 16, 'Venomous Tongue', '1980-11-17', 20232.87, 17.54, 27.00, '1981-01-13', b'1'),
 	(64, 'Gregorovitch', '', 'highly regarded East European wand-maker.', 28, 'Death', 22, 'Blue Phoenix', '1992-07-18', 44377.51, 22.05, 80.00, '1992-09-01', b'0'),
 	(65, 'Fenrir', 'Greyback', 'Werewolf, infected Remus Lupin, maimed Bill Weasley and wounded Lavender Brown.', 72, 'Antioch Peverell', 11, 'Troll Chest', '1991-09-05', 15747.72, 18.22, 94.00, '1992-05-21', b'0'),
 	(66, 'Gellert', 'Grindelwald', 'Dark Wizard, friend, and later rival, of Albus Dumbledore who defeated him in the 1940s.', 52, 'Ollivander family', 20, 'Human Pride', '1985-04-16', 12681.80, 14.28, 19.00, '1985-12-27', b'1'),
-	(67, 'Wilhelmina', 'Grubbly-Plank', 'Substitute Care of Magical Creatures professor during Harry\'s fourth year', 29, 'Mykew Gregorovitch', 18, 'Venomous Tongue', '1980-08-19', 21263.21, 5.66, 76.00, '1980-08-21', b'1'),
+	(67, 'Wilhelmina', 'Grubbly-Plank', 'Substitute Care of Magical Creatures professor during Harry''s fourth year', 29, 'Mykew Gregorovitch', 18, 'Venomous Tongue', '1980-08-19', 21263.21, 5.66, 76.00, '1980-08-21', b'1'),
 	(68, 'Godric', 'Gryffindor', 'One of the four founders of Hogwarts', 24, 'Jimmy Kiddell', 16, 'Blue Phoenix', '1991-06-06', 30425.03, 22.28, 89.00, '1991-09-13', b'0'),
-	(69, 'Rubeus', 'Hagrid', 'Half-giant keeper of Keys and Grounds at Hogwarts, Care of Magical Creatures professor starting from Harry\'s third year, a member of the Order of the Phoenix. Once a Hogwarts student, Hagrid was expelled in his third year.', 15, 'Death', 14, 'Troll Chest', '1983-02-04', 29087.26, 19.94, 94.00, '1983-02-18', b'1'),
+	(69, 'Rubeus', 'Hagrid', 'Half-giant keeper of Keys and Grounds at Hogwarts, Care of Magical Creatures professor starting from Harry''s third year, a member of the Order of the Phoenix. Once a Hogwarts student, Hagrid was expelled in his third year.', 15, 'Death', 14, 'Troll Chest', '1983-02-04', 29087.26, 19.94, 94.00, '1983-02-18', b'1'),
 	(70, 'Rolanda', 'Hooch', 'Hogwarts flying instructor, Quidditch referee', 38, 'Antioch Peverell', 29, 'Human Pride', '1989-05-05', 30985.51, 8.64, 33.00, '1989-07-03', b'0'),
 	(71, 'Mafalda', 'Hopkirk', 'Witch who works in the Ministry of Magic, impersonated by Hermione Granger in Deathly Hallows.', 63, 'Ollivander family', 23, 'Venomous Tongue', '1980-08-27', 39189.95, 12.73, 46.00, '1981-07-26', b'1'),
 	(72, 'Helga', 'Hufflepuff', 'One of the four founders of Hogwarts, ancestor of Hepzibah Smith', 72, 'Mykew Gregorovitch', 16, 'Blue Phoenix', '1987-02-12', 25971.83, 23.85, 74.00, '1987-06-02', b'1'),
@@ -38724,24 +38465,24 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(82, 'Alice', 'Longbottom', 'Wife of Frank Longbottom, mother of Neville Longbottom, member of the original Order of the Phoenix, Auror, tortured into insanity by Bellatrix Lestrange along with her husband', 40, 'Antioch Peverell', 17, 'Human Pride', '1985-01-26', 4817.78, 29.58, 79.00, '1985-02-10', b'1'),
 	(83, 'Augusta', 'Longbottom', 'Mother of Frank Longbottom and grandmother of Neville Longbottom', 29, 'Ollivander family', 22, 'Venomous Tongue', '1982-08-17', 28036.29, 16.55, 87.00, '1983-07-27', b'1'),
 	(84, 'Frank', 'Longbottom', 'Father of Neville Longbottom, a member of the original Order of the Phoenix, Auror, tortured into insanity by Bellatrix Lestrange along with his wife.', 24, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1991-06-23', 31439.10, 11.55, 57.00, '1991-09-09', b'0'),
-	(85, 'Neville', 'Longbottom', 'Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army.', 47, 'Jimmy Kiddell', 20, 'Troll Chest', '1992-07-19', 1369.52, 21.04, 1.00, '1993-05-13', b'0'),
-	(86, 'Luna', 'Lovegood', 'Ravenclaw student one year below Harry, a member of Dumbledore\'s Army.', 14, 'Arturo Cephalopos', 21, 'Human Pride', '1986-12-21', 9014.64, 2.83, 24.00, '1987-10-29', b'1'),
+	(85, 'Neville', 'Longbottom', 'Gryffindor student in Harry''s year, a member of Dumbledore''s Army.', 47, 'Jimmy Kiddell', 20, 'Troll Chest', '1992-07-19', 1369.52, 21.04, 1.00, '1993-05-13', b'0'),
+	(86, 'Luna', 'Lovegood', 'Ravenclaw student one year below Harry, a member of Dumbledore''s Army.', 14, 'Arturo Cephalopos', 21, 'Human Pride', '1986-12-21', 9014.64, 2.83, 24.00, '1987-10-29', b'1'),
 	(87, 'Xenophilius', 'Lovegood', 'Father of Luna Lovegood, and editor of The Quibbler.', 25, 'Death', 16, 'Venomous Tongue', '1992-08-09', 5908.36, 6.99, 1.00, '1992-11-19', b'0'),
-	(88, 'Remus', 'Lupin', 'Gryffindor student before Harry\'s time, Marauder, a friend of James Potter, werewolf, Professor of Defence Against the Dark Arts in Harry\'s third year, a member of the Order of the Phoenix.', 19, 'Death', 11, 'Blue Phoenix', '1982-05-08', 17821.66, 19.64, 45.00, '1982-06-04', b'1'),
-	(89, 'Walden', 'Macnair', 'The Committee of Disposal of Dangerous Creatures\'s executioner, also a Death-Eater', 48, 'Antioch Peverell', 29, 'Troll Chest', '1986-09-22', 23216.19, 29.39, 46.00, '1986-11-01', b'1'),
-	(90, 'Draco', 'Malfoy', 'Slytherin student in Harry\'s year, Slytherin Quidditch Seeker, school prefect, member of the Inquisitorial Squad, Death Eater', 18, 'Ollivander family', 14, 'Human Pride', '1989-12-02', 33253.04, 8.37, 7.00, '1990-05-07', b'0'),
-	(91, 'Lucius', 'Malfoy', 'Draco Malfoy\'s father, an influential Death-Eater, and, early in the series, governor of Hogwarts', 25, 'Mykew Gregorovitch', 22, 'Venomous Tongue', '1981-07-29', 36572.61, 2.45, 5.00, '1981-11-19', b'1'),
-	(92, 'Narcissa', 'Malfoy', 'Lucius Malfoy\'s wife and Draco Malfoy\'s mother, sister of Bellatrix Lestrange.', 17, 'Jimmy Kiddell', 18, 'Blue Phoenix', '1988-06-16', 1169.86, 25.09, 98.00, '1988-07-17', b'1'),
+	(88, 'Remus', 'Lupin', 'Gryffindor student before Harry''s time, Marauder, a friend of James Potter, werewolf, Professor of Defence Against the Dark Arts in Harry''s third year, a member of the Order of the Phoenix.', 19, 'Death', 11, 'Blue Phoenix', '1982-05-08', 17821.66, 19.64, 45.00, '1982-06-04', b'1'),
+	(89, 'Walden', 'Macnair', 'The Committee of Disposal of Dangerous Creatures''s executioner, also a Death-Eater', 48, 'Antioch Peverell', 29, 'Troll Chest', '1986-09-22', 23216.19, 29.39, 46.00, '1986-11-01', b'1'),
+	(90, 'Draco', 'Malfoy', 'Slytherin student in Harry''s year, Slytherin Quidditch Seeker, school prefect, member of the Inquisitorial Squad, Death Eater', 18, 'Ollivander family', 14, 'Human Pride', '1989-12-02', 33253.04, 8.37, 7.00, '1990-05-07', b'0'),
+	(91, 'Lucius', 'Malfoy', 'Draco Malfoy''s father, an influential Death-Eater, and, early in the series, governor of Hogwarts', 25, 'Mykew Gregorovitch', 22, 'Venomous Tongue', '1981-07-29', 36572.61, 2.45, 5.00, '1981-11-19', b'1'),
+	(92, 'Narcissa', 'Malfoy', 'Lucius Malfoy''s wife and Draco Malfoy''s mother, sister of Bellatrix Lestrange.', 17, 'Jimmy Kiddell', 18, 'Blue Phoenix', '1988-06-16', 1169.86, 25.09, 98.00, '1988-07-17', b'1'),
 	(93, 'Madam', 'Malkin', 'Clothes shop owner at Diagon Alley', 23, 'Arturo Cephalopos', 15, 'Troll Chest', '1985-07-17', 40137.28, 8.17, 45.00, '1986-06-13', b'1'),
 	(94, 'Olympe', 'Maxime', 'Half-giantess, Headmistress of Beauxbatons', 56, 'Death', 22, 'Human Pride', '1986-02-22', 27473.95, 22.31, 39.00, '1986-05-22', b'1'),
-	(95, 'Ernie', 'Macmillan', 'Hufflepuff student in Harry\'s year, school prefect, member of Dumbledore\'s Army', 63, 'Arturo Cephalopos', 13, 'Venomous Tongue', '1989-04-15', 18960.62, 13.15, 22.00, '1989-12-12', b'0'),
+	(95, 'Ernie', 'Macmillan', 'Hufflepuff student in Harry''s year, school prefect, member of Dumbledore''s Army', 63, 'Arturo Cephalopos', 13, 'Venomous Tongue', '1989-04-15', 18960.62, 13.15, 22.00, '1989-12-12', b'0'),
 	(96, 'Minerva', 'McGonagall', 'Hogwarts Transfiguration professor, Head of Gryffindor House, Deputy Headmistress of Hogwarts, a member of the Order of the Phoenix.', 29, 'Death', 16, 'Blue Phoenix', '1988-07-08', 7298.35, 15.19, 39.00, '1988-12-24', b'1'),
-	(97, 'Alastor', 'Mad-Eye', 'Retired Auror, member of the Order of the Phoenix, impersonated by Barty Crouch Jr. in \'The Goblet of Fire\'', 27, 'Mykew Gregorovitch', 21, 'Troll Chest', '1987-02-17', 8294.06, 18.27, 90.00, '1988-01-08', b'1'),
+	(97, 'Alastor', 'Mad-Eye', 'Retired Auror, member of the Order of the Phoenix, impersonated by Barty Crouch Jr. in ''The Goblet of Fire''', 27, 'Mykew Gregorovitch', 21, 'Troll Chest', '1987-02-17', 8294.06, 18.27, 90.00, '1988-01-08', b'1'),
 	(98, 'Theodore', 'Nott', 'Slytherin student in the same year as Harry Potter. Nott is one of the few students who can see Thestrals, suggesting that he has witnessed a death at some point. His father is a Death Eater and described as an elderly widower.', 17, 'Jimmy Kiddell', 26, 'Human Pride', '1982-01-20', 49041.09, 26.22, 15.00, '1982-04-14', b'1'),
 	(99, 'Garrick', 'Ollivander', 'Wandmaker, owner of Ollivanders shop.', 72, 'Arturo Cephalopos', 27, 'Venomous Tongue', '1994-07-01', 41627.25, 30.61, 22.00, '1994-10-11', b'0'),
-	(100, 'Pansy', 'Parkinson', 'Slytherin student in Harry\'s year, school prefect, a member of the Inquisitorial Squad, Draco Malfoy\'s girlfriend for some time.', 35, 'Death', 21, 'Blue Phoenix', '1994-01-20', 11941.54, 29.19, 71.00, '1994-05-29', b'0'),
-	(101, 'Padma', 'Patil', 'Ravenclaw student in Harry\'s year, identical twin sister of Gryffindor Parvati Patil, a member of Dumbledore\'s Army.', 37, 'Antioch Peverell', 22, 'Troll Chest', '1980-05-09', 26117.57, 9.05, 47.00, '1981-03-30', b'1'),
-	(102, 'Parvati', 'Patil', 'Gryffindor student in Harry\'s year, identical twin sister of Ravenclaw Padma Patil, a member of Dumbledore\'s Army.', 55, 'Death', 25, 'Human Pride', '1990-01-12', 11798.51, 1.00, 71.00, '1990-03-19', b'0'),
+	(100, 'Pansy', 'Parkinson', 'Slytherin student in Harry''s year, school prefect, a member of the Inquisitorial Squad, Draco Malfoy''s girlfriend for some time.', 35, 'Death', 21, 'Blue Phoenix', '1994-01-20', 11941.54, 29.19, 71.00, '1994-05-29', b'0'),
+	(101, 'Padma', 'Patil', 'Ravenclaw student in Harry''s year, identical twin sister of Gryffindor Parvati Patil, a member of Dumbledore''s Army.', 37, 'Antioch Peverell', 22, 'Troll Chest', '1980-05-09', 26117.57, 9.05, 47.00, '1981-03-30', b'1'),
+	(102, 'Parvati', 'Patil', 'Gryffindor student in Harry''s year, identical twin sister of Ravenclaw Padma Patil, a member of Dumbledore''s Army.', 55, 'Death', 25, 'Human Pride', '1990-01-12', 11798.51, 1.00, 71.00, '1990-03-19', b'0'),
 	(103, 'Peter', 'Pettigrew', 'Former school friend of James Potter, Sirius Black and Remus Lupin. Betrays James and Lily Potter. Death Eater, an unregistered animagus, Pettigrew is first introduced as a rat known as Scabbers.', 41, 'Jimmy Kiddell', 29, 'Venomous Tongue', '1993-03-12', 43424.70, 19.06, 87.00, '1993-07-06', b'0'),
 	(104, 'Antioch', 'Peverell', 'Original owner of The Elder Wand in The Tale of the Three Brothers.', 49, 'Arturo Cephalopos', 26, 'Blue Phoenix', '1989-01-19', 36394.90, 20.56, 18.00, '1989-08-09', b'0'),
 	(105, 'Cadmus', 'Peverell', 'Original owner of The Resurrection Stone in The Tale of the Three Brothers', 36, 'Death', 20, 'Troll Chest', '1983-12-16', 22327.50, 30.46, 82.00, '1984-03-20', b'1'),
@@ -38749,12 +38490,12 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(107, 'Irma', 'Pince', 'Hogwarts librarian', 19, 'Mykew Gregorovitch', 17, 'Venomous Tongue', '1984-05-03', 12766.45, 17.02, 85.00, '1984-08-05', b'1'),
 	(108, 'Sturgis', 'Podmore', 'Member of the Order of the Phoenix, imprisoned in Azkaban', 64, 'Jimmy Kiddell', 24, 'Blue Phoenix', '1980-04-07', 22485.06, 15.05, 67.00, '1981-03-22', b'1'),
 	(109, 'Poppy', 'Pomfrey', 'Hogwarts school nurse', 32, 'Arturo Cephalopos', 23, 'Troll Chest', '1988-04-19', 27957.52, 6.77, 68.00, '1988-06-12', b'1'),
-	(110, 'Harry', 'Potter', 'Main character of the series, son of James Potter and Lily Evans, Gryffindor student, Gryffindor Quidditch Seeker and captain, leader of Dumbledore\'s Army.', 68, 'Death', 18, 'Human Pride', '1986-09-21', 44889.88, 23.09, 10.00, '1986-11-15', b'1'),
-	(111, 'James', 'Potter', 'Harry Potter\'s father, a member of the Order of the Phoenix, murdered by Lord Voldemort before the series begins.', 47, 'Ollivander family', 31, 'Venomous Tongue', '1993-06-16', 27296.66, 1.22, 86.00, '1993-11-16', b'0'),
-	(112, 'Lily', 'Potter', 'Harry Potter\'s mother, a member of the Order of the Phoenix, murdered by Lord Voldemort before the series begins.', 28, 'Antioch Peverell', 13, 'Blue Phoenix', '1984-02-27', 21972.24, 26.11, 49.00, '1984-06-16', b'1'),
+	(110, 'Harry', 'Potter', 'Main character of the series, son of James Potter and Lily Evans, Gryffindor student, Gryffindor Quidditch Seeker and captain, leader of Dumbledore''s Army.', 68, 'Death', 18, 'Human Pride', '1986-09-21', 44889.88, 23.09, 10.00, '1986-11-15', b'1'),
+	(111, 'James', 'Potter', 'Harry Potter''s father, a member of the Order of the Phoenix, murdered by Lord Voldemort before the series begins.', 47, 'Ollivander family', 31, 'Venomous Tongue', '1993-06-16', 27296.66, 1.22, 86.00, '1993-11-16', b'0'),
+	(112, 'Lily', 'Potter', 'Harry Potter''s mother, a member of the Order of the Phoenix, murdered by Lord Voldemort before the series begins.', 28, 'Antioch Peverell', 13, 'Blue Phoenix', '1984-02-27', 21972.24, 26.11, 49.00, '1984-06-16', b'1'),
 	(113, 'Ernest', 'Ernie', '(fl. 1993-1997), also called Ern by Stanley Shunpike, was the driver of the Knight Bus.', 58, 'Ollivander family', 20, 'Troll Chest', '1991-11-05', 11948.37, 16.85, 99.00, '1992-07-10', b'0'),
-	(114, 'Quirinus', 'Quirrell', 'Defence Against the Dark Arts professor in Harry\'s first year, possessed by Lord Voldemort in Philosopher\'s Stone.', 34, 'Mykew Gregorovitch', 15, 'Human Pride', '1992-10-17', 13212.49, 5.67, 55.00, '1992-12-26', b'0'),
-	(115, 'Helena', 'Ravenclaw/The', 'Daughter of Rowena Ravenclaw, stole her mother\'s diadem and hid it, killed by the Bloody Baron and became Ravenclaw\'s house ghost.', 62, 'Jimmy Kiddell', 18, 'Venomous Tongue', '1985-10-13', 1238.51, 10.17, 57.00, '1985-12-30', b'1'),
+	(114, 'Quirinus', 'Quirrell', 'Defence Against the Dark Arts professor in Harry''s first year, possessed by Lord Voldemort in Philosopher''s Stone.', 34, 'Mykew Gregorovitch', 15, 'Human Pride', '1992-10-17', 13212.49, 5.67, 55.00, '1992-12-26', b'0'),
+	(115, 'Helena', 'Ravenclaw/The', 'Daughter of Rowena Ravenclaw, stole her mother''s diadem and hid it, killed by the Bloody Baron and became Ravenclaw''s house ghost.', 62, 'Jimmy Kiddell', 18, 'Venomous Tongue', '1985-10-13', 1238.51, 10.17, 57.00, '1985-12-30', b'1'),
 	(116, 'Rowena', 'Ravenclaw', 'Co-founder of Hogwarts, mother of Helena Ravenclaw', 40, 'Arturo Cephalopos', 28, 'Blue Phoenix', '1994-10-16', 16236.00, 11.11, 26.00, '1995-04-25', b'0'),
 	(117, 'Mary', 'Riddle', 'Muggle wife of Thomas Riddle, mother of Tom Riddle Sr, mother-in-law of Merope Gaunt, grandmother of Tom Marvolo Riddle/Lord Voldemort, killed by her grandson', 24, 'Death', 12, 'Troll Chest', '1982-06-14', 43375.01, 23.97, 82.00, '1982-08-30', b'1'),
 	(118, 'Thomas', 'Riddle', 'Muggle husband of Mary Riddle, father of Tom Riddle Sr, grandfather of Tom Marvolo Riddle/Lord Voldemort, killed by his grandson.', 36, 'Arturo Cephalopos', 28, 'Human Pride', '1989-05-14', 24304.57, 21.47, 86.00, '1989-12-04', b'0'),
@@ -38770,15 +38511,15 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(128, 'Stan', 'Shunpike', 'Conductor of the Knight Bus, later jailed in Azkaban on suspicions of being a death-eater.', 30, 'Jimmy Kiddell', 22, 'Blue Phoenix', '1992-09-21', 19775.78, 0.14, 61.00, '1992-12-07', b'0'),
 	(129, 'Aurora', 'Sinistra', 'Professor and member of the Astronomy Department at Hogwarts, a witch with dark skin, hair, and eyes.', 47, 'Arturo Cephalopos', 22, 'Troll Chest', '1991-06-28', 17257.17, 30.67, 45.00, '1992-01-25', b'0'),
 	(130, 'Rita', 'Skeeter', 'Reporter for the Daily Prophet, author of The Life and Lies of Albus Dumbledore, unregistered animagus.', 38, 'Death', 13, 'Human Pride', '1990-04-18', 22876.54, 17.02, 3.00, '1990-07-06', b'0'),
-	(131, 'Horace', 'Slughorn', 'Former Potions professor at Hogwarts and Head of Slytherin House who taught Tom Marvolo Riddle and returns to Hogwarts in Harry\'s sixth year.', 32, 'Ollivander family', 10, 'Venomous Tongue', '1986-10-30', 19165.02, 7.95, 76.00, '1987-09-27', b'1'),
+	(131, 'Horace', 'Slughorn', 'Former Potions professor at Hogwarts and Head of Slytherin House who taught Tom Marvolo Riddle and returns to Hogwarts in Harry''s sixth year.', 32, 'Ollivander family', 10, 'Venomous Tongue', '1986-10-30', 19165.02, 7.95, 76.00, '1987-09-27', b'1'),
 	(132, 'Salazar', 'Slytherin', 'Co-founder of Hogwarts, Parseltongue, ancestor of the Gaunt family and Lord Voldemort.', 59, 'Antioch Peverell', 28, 'Blue Phoenix', '1980-10-26', 1168.22, 26.55, 71.00, '1981-01-30', b'1'),
 	(133, 'Hepzibah', 'Smith', 'Elderly, wealthy antique collector, descendant of Helga Hufflepuff, murdered and robbed by Tom Marvolo Riddle', 30, 'Ollivander family', 12, 'Troll Chest', '1983-05-25', 33665.13, 7.98, 21.00, '1983-08-17', b'1'),
-	(134, 'Zacharias', 'Smith', 'Hufflepuff student, a member of Dumbledore\'s Army.', 39, 'Antioch Peverell', 15, 'Human Pride', '1985-12-01', 45543.40, 24.78, 98.00, '1986-10-29', b'1'),
+	(134, 'Zacharias', 'Smith', 'Hufflepuff student, a member of Dumbledore''s Army.', 39, 'Antioch Peverell', 15, 'Human Pride', '1985-12-01', 45543.40, 24.78, 98.00, '1986-10-29', b'1'),
 	(135, 'Severus', 'Snape', 'Hogwarts, Potions and later Defence Against the Dark Arts professor, Head of Slytherin House, a member of both the Death Eaters and the Order of the Phoenix.', 53, 'Mykew Gregorovitch', 15, 'Venomous Tongue', '1992-11-06', 17820.90, 16.53, 38.00, '1992-12-20', b'0'),
-	(136, 'Alicia', 'Spinnet', 'Chaser on the Gryffindor Quidditch team, two years above Harry Potter at Hogwarts. Member of Dumbledore\'s Army.', 65, 'Jimmy Kiddell', 16, 'Blue Phoenix', '1980-02-06', 6269.39, 3.66, 77.00, '1980-03-04', b'1'),
+	(136, 'Alicia', 'Spinnet', 'Chaser on the Gryffindor Quidditch team, two years above Harry Potter at Hogwarts. Member of Dumbledore''s Army.', 65, 'Jimmy Kiddell', 16, 'Blue Phoenix', '1980-02-06', 6269.39, 3.66, 77.00, '1980-03-04', b'1'),
 	(137, 'Pomona', 'Sprout', 'Hogwarts Herbology professor, Head of Hufflepuff House.', 46, 'Arturo Cephalopos', 24, 'Troll Chest', '1993-06-10', 16789.73, 30.80, 58.00, '1993-10-07', b'0'),
 	(138, 'Pius', 'Thicknesse', 'Minister for Magic while under the Imperius Curse, later replaced by Kingsley Shacklebolt.', 47, 'Death', 24, 'Human Pride', '1982-06-01', 8359.46, 26.64, 59.00, '1983-01-04', b'1'),
-	(139, 'Dean', 'Thomas', 'Gryffindor student in Harry\'s year, a member of Dumbledore\'s Army, briefly Ginny Weasley\'s boyfriend, Gryffindor Quidditch Chaser.', 69, 'Antioch Peverell', 18, 'Venomous Tongue', '1992-12-04', 6579.08, 7.43, 69.00, '1993-04-09', b'0'),
+	(139, 'Dean', 'Thomas', 'Gryffindor student in Harry''s year, a member of Dumbledore''s Army, briefly Ginny Weasley''s boyfriend, Gryffindor Quidditch Chaser.', 69, 'Antioch Peverell', 18, 'Venomous Tongue', '1992-12-04', 6579.08, 7.43, 69.00, '1993-04-09', b'0'),
 	(140, 'Andromeda', 'Tonks', 'Sister of Bellatrix Lestrange and Narcissa Malfoy, disowned by her family for marrying Muggle-born Ted Tonks, mother of Nymphadora Tonks.', 68, 'Death', 28, 'Blue Phoenix', '1993-02-18', 30024.64, 8.80, 36.00, '1993-06-14', b'0'),
 	(141, 'Nymphadora', 'Tonks', 'Daughter of Ted and Andromeda Tonks, Auror and member of the Order of the Phoenix. She marries Remus Lupin, and become the mother of Teddy Lupin.', 18, 'Jimmy Kiddell', 13, 'Troll Chest', '1982-11-25', 16724.98, 22.83, 37.00, '1983-09-21', b'1'),
 	(142, 'Ted', 'Tonks', 'Muggle-born husband of Andromeda and father of Nymphadora Tonks.', 19, 'Arturo Cephalopos', 13, 'Human Pride', '1984-03-07', 39096.67, 25.20, 82.00, '1984-10-04', b'1'),
@@ -38786,28 +38527,25 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(144, 'Sybill', 'Patricia', 'Hogwarts Divination professor, predicted the prophecy that prompted Lord Voldemort to go after the Potters', 25, 'Ollivander family', 17, 'Blue Phoenix', '1994-07-05', 15237.30, 7.31, 21.00, '1994-07-21', b'0'),
 	(145, 'Dolores', 'Jane', 'Senior Undersecretary to the Minister for Magic, Defence Against the Dark Arts professor, Hogwarts High Inquisitor, Headmistress of Hogwarts, who enthusiastically joins in the persecution of half-bloods under Voldermort.', 34, 'Mykew Gregorovitch', 30, 'Troll Chest', '1982-09-25', 10628.58, 12.08, 50.00, '1983-01-22', b'1'),
 	(146, 'Emmeline', 'Vance', 'a member of the party that brings Harry to Grimmauld Place, a member of the Order of the Phoenix. Described as "A stately looking witch in an emerald green shawl".', 57, 'Jimmy Kiddell', 25, 'Human Pride', '1992-10-30', 34993.10, 29.94, 82.00, '1992-11-03', b'0'),
-	(147, 'Romilda', 'Vane', 'Hogwarts student who tried to romance Harry with Chocolate Cauldrons containing a love potion from Weasley\'s Wizard Wheezes', 17, 'Mykew Gregorovitch', 16, 'Venomous Tongue', '1983-09-06', 26267.34, 16.63, 100.00, '1984-04-15', b'1'),
+	(147, 'Romilda', 'Vane', 'Hogwarts student who tried to romance Harry with Chocolate Cauldrons containing a love potion from Weasley''s Wizard Wheezes', 17, 'Mykew Gregorovitch', 16, 'Venomous Tongue', '1983-09-06', 26267.34, 16.63, 100.00, '1984-04-15', b'1'),
 	(148, 'Septima', 'Vector', 'Arithmancy professor at Hogwarts.', 43, 'Arturo Cephalopos', 26, 'Blue Phoenix', '1981-01-23', 6146.94, 6.57, 66.00, '1982-01-22', b'1'),
-	(149, 'Lord', 'Voldemort', 'The villain of the series, the murderer of Harry Potter\'s parents and many others in his quest for immortality and absolute power.', 25, 'Death', 31, 'Troll Chest', '1989-04-28', 38085.84, 22.53, 88.00, '1989-08-01', b'0'),
+	(149, 'Lord', 'Voldemort', 'The villain of the series, the murderer of Harry Potter''s parents and many others in his quest for immortality and absolute power.', 25, 'Death', 31, 'Troll Chest', '1989-04-28', 38085.84, 22.53, 88.00, '1989-08-01', b'0'),
 	(150, 'Arthur', 'Weasley', 'Muggle-obsessed Ministry of Magic employee. Husband of Molly Weasley, father of Bill, Charlie, Percy, Fred, George, Ron, and Ginny Weasley, member of the Order of the Phoenix', 65, 'Antioch Peverell', 26, 'Human Pride', '1989-09-05', 6647.70, 15.82, 23.00, '1989-09-28', b'0'),
 	(151, 'Bill', 'Weasley', 'Oldest son of Arthur and Molly Weasley, Gringotts employee.', 51, 'Death', 30, 'Venomous Tongue', '1988-04-01', 11346.57, 2.63, 98.00, '1988-08-03', b'1'),
 	(152, 'Charlie', 'Weasley', 'Second son of Arthur and Molly Weasley, and a member of the Order of the Phoenix, works with dragons in Romania.', 21, 'Jimmy Kiddell', 16, 'Blue Phoenix', '1988-11-14', 7831.46, 26.31, 20.00, '1989-07-26', b'0'),
-	(153, 'Fred', 'Weasley', 'Son of Arthur and Molly Weasley and identical twin brother of George Weasley, a member of Dumbledore\'s Army, Gryffindor Quidditch Beater, co-owner of Weasleys\' Wizard Wheezes, killed in an explosion caused by Augustus Rookwood in the Battle of Hogwarts.', 48, 'Arturo Cephalopos', 18, 'Troll Chest', '1992-02-22', 23860.37, 28.37, 39.00, '1992-05-06', b'0'),
-	(154, 'George', 'Weasley', 'Son of Arthur and Molly Weasley and identical twin brother of Fred Weasley, member of Dumbledore\'s Army, Gryffindor Quidditch Beater, co-owner of Weasleys\' Wizard Wheezes, marries Angelina Johnson', 48, 'Death', 13, 'Human Pride', '1994-11-16', 16556.88, 2.82, 19.00, '1994-12-13', b'0'),
-	(155, 'Ginny', 'Weasley', 'Only daughter and youngest child of Arthur and Molly Weasley, Gryffindor student one year under Harry, Gryffindor Quidditch Seeker and Chaser, a member of Dumbledore\'s Army.', 47, 'Ollivander family', 12, 'Venomous Tongue', '1990-03-21', 9347.41, 28.27, 78.00, '1990-03-31', b'0'),
+	(153, 'Fred', 'Weasley', 'Son of Arthur and Molly Weasley and identical twin brother of George Weasley, a member of Dumbledore''s Army, Gryffindor Quidditch Beater, co-owner of Weasleys'' Wizard Wheezes, killed in an explosion caused by Augustus Rookwood in the Battle of Hogwarts.', 48, 'Arturo Cephalopos', 18, 'Troll Chest', '1992-02-22', 23860.37, 28.37, 39.00, '1992-05-06', b'0'),
+	(154, 'George', 'Weasley', 'Son of Arthur and Molly Weasley and identical twin brother of Fred Weasley, member of Dumbledore''s Army, Gryffindor Quidditch Beater, co-owner of Weasleys'' Wizard Wheezes, marries Angelina Johnson', 48, 'Death', 13, 'Human Pride', '1994-11-16', 16556.88, 2.82, 19.00, '1994-12-13', b'0'),
+	(155, 'Ginny', 'Weasley', 'Only daughter and youngest child of Arthur and Molly Weasley, Gryffindor student one year under Harry, Gryffindor Quidditch Seeker and Chaser, a member of Dumbledore''s Army.', 47, 'Ollivander family', 12, 'Venomous Tongue', '1990-03-21', 9347.41, 28.27, 78.00, '1990-03-31', b'0'),
 	(156, 'Molly', 'Weasley', 'Wife of Arthur Weasley, mother of Bill, Charlie, Percy, Fred, George, Ron and Ginny Weasley, a member of the Order of the Phoenix.', 14, 'Mykew Gregorovitch', 18, 'Blue Phoenix', '1992-02-03', 39815.04, 9.43, 53.00, '1992-08-30', b'0'),
 	(157, 'Percy', 'Weasley', 'Third son of Arthur and Molly Weasley, Gryffindor prefect and Head Boy then Ministry of Magic employee, long estranged from his family before joining them against the Death Eaters in Deathly Hallows,', 54, 'Arturo Cephalopos', 14, 'Troll Chest', '1985-04-24', 25537.20, 3.05, 12.00, '1985-05-16', b'1'),
-	(158, 'Ron', 'Weasley', 'Harry\'s close friend, youngest Son of Arthur and Molly Weasley, Gryffindor Quidditch Keeper, school prefect, a member of Dumbledore\'s Army.', 51, 'Death', 26, 'Human Pride', '1985-07-16', 4085.37, 25.25, 32.00, '1985-09-29', b'1'),
+	(158, 'Ron', 'Weasley', 'Harry''s close friend, youngest Son of Arthur and Molly Weasley, Gryffindor Quidditch Keeper, school prefect, a member of Dumbledore''s Army.', 51, 'Death', 26, 'Human Pride', '1985-07-16', 4085.37, 25.25, 32.00, '1985-09-29', b'1'),
 	(159, 'Oliver', 'Wood', 'Hogwarts student, Gryffindor Quidditch Keeper and captain.', 26, 'Ollivander family', 10, 'Venomous Tongue', '1985-06-29', 40902.03, 10.82, 68.00, '1985-08-01', b'1'),
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
-	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort\'s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
-	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry\'s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
+	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
+	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
 [/input]
 [output]
-```
 162
-```
 [/output]
 [/test]
 [/tests]
@@ -38839,7 +38577,6 @@ Rename the new column appropriately.
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -39020,17 +38757,13 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 31
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -39211,12 +38944,9 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 31
-```
 [/output]
 [/test]
 [/tests]
@@ -39252,7 +38982,6 @@ Choose a fitting name for the new column.
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -39433,10 +39162,8 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 Human Pride
 30
 Blue Phoenix
@@ -39445,12 +39172,10 @@ Troll Chest
 31
 Venomous Tongue
 31
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -39631,10 +39356,8 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 Human Pride
 30
 Blue Phoenix
@@ -39643,7 +39366,6 @@ Troll Chest
 31
 Venomous Tongue
 31
-```
 [/output]
 [/test]
 [/tests]
@@ -39671,7 +39393,6 @@ Select the deposit group with the **smallest** average wand size.
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -39852,17 +39573,13 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 Troll Chest
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
@@ -40044,12 +39761,9 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 Troll Chest
-```
 [/output]
 [/test]
 [/tests]
@@ -40083,7 +39797,6 @@ Sort result by **total_sum** in **ascending order.**
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -40264,10 +39977,8 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 Blue Phoenix
 819598.73
 Troll Chest
@@ -40276,12 +39987,10 @@ Human Pride
 1041291.52
 Venomous Tongue
 1054128.94
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -40462,10 +40171,8 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 Blue Phoenix
 819598.73
 Troll Chest
@@ -40474,7 +40181,6 @@ Human Pride
 1041291.52
 Venomous Tongue
 1054128.94
-```
 [/output]
 [/test]
 [/tests]
@@ -40509,7 +40215,6 @@ Sort the result by **deposit_group alphabetically.**
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -40690,10 +40395,8 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 Blue Phoenix
 52968.96
 Human Pride
@@ -40702,12 +40405,10 @@ Troll Chest
 126585.18
 Venomous Tongue
 257056.04
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -40731,18 +40432,14 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(3, 'Ludo', 'Bagman', 'Quidditch Beater for the Wimbourne Wasps and Head of the Department of Magical Games and Sports within the Ministry of Magic', 19, 'Ollivander family', 18, 'Venomous Tongue', '1990-07-04', 23190.94, 14.92, 30.00, '1990-12-27', b'0'),
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Mr. Bean', 15, 'Venomous Tongue', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Ollivander family', 14, 'Venomous Tongue', '1981-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'1');
-```
 [/input]
 [output]
-```
 Venomous Tongue
 78726.90
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -40766,22 +40463,18 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(3, 'Ludo', 'Bagman', 'Quidditch Beater for the Wimbourne Wasps and Head of the Department of Magical Games and Sports within the Ministry of Magic', 19, 'Ollivander family', 18, 'Venomous Tongue', '1990-07-04', 23190.94, 14.92, 30.00, '1990-12-27', b'0'),
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Ollivander family', 15, 'Other group', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Ollivander family', 14, 'Some group', '1981-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'1');
-```
 [/input]
 [output]
-```
 Other group
 687.67
 Some group
 55535.96
 Venomous Tongue
 69788.34
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -40962,10 +40655,8 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 Blue Phoenix
 52968.96
 Human Pride
@@ -40974,7 +40665,6 @@ Troll Chest
 126585.18
 Venomous Tongue
 257056.04
-```
 [/output]
 [/test]
 [/tests]
@@ -41009,7 +40699,6 @@ Order by `total_sum` in **descending order.**
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41190,20 +40879,16 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 Troll Chest
 126585.18
 Blue Phoenix
 52968.96
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41228,18 +40913,14 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Ollivander family', 15, 'Human Pride', '1993-06-07', 1.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Ollivander family', 14, 'Human Pride', '1981-05-08', 5.5, 16.58, 11.00, '1982-02-03', b'1'),
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Ollivander family', 23, 'Human Pride', '1985-10-26', 3.9, 24.84, 95.00, '1985-12-27', b'1');
-```
 [/input]
 [output]
-```
 Human Pride
 15.37
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41264,18 +40945,14 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Smiths', 15, 'Human Pride', '1993-06-07', 1.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Ollivander family', 14, 'Human Pride', '1981-05-08', 5.5, 16.58, 11.00, '1982-02-03', b'1'),
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Ollivander family', 23, 'Human Pride', '1985-10-26', 3.9, 24.84, 95.00, '1985-12-27', b'1');
-```
 [/input]
 [output]
-```
 Human Pride
 11.50
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41300,22 +40977,18 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Ollivander family', 15, 'Human Pride', '1993-06-07', 1.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Ollivander family', 14, 'Human Pride', '1981-05-08', 5.5, 16.58, 11.00, '1982-02-03', b'1'),
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Ollivander family', 23, 'Human Pride', '1985-10-26', 3.9, 24.84, 95.00, '1985-12-27', b'1');
-```
 [/input]
 [output]
-```
 Human Pride
 11.07
 Other group
 2.20
 Some group
 2.10
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41340,20 +41013,16 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Ollivander family', 15, 'Human Pride', '1993-06-07', 10000, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Ollivander family', 14, 'Human Pride', '1981-05-08', 20000, 16.58, 11.00, '1982-02-03', b'1'),
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Ollivander family', 23, 'Human Pride', '1985-10-26', 119999, 24.84, 95.00, '1985-12-27', b'1');
-```
 [/input]
 [output]
-```
 Human Pride
 149999.00
 Other group
 10000.00
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41534,15 +41203,12 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 Troll Chest
 126585.18
 Blue Phoenix
 52968.96
-```
 [/output]
 [/test]
 [/tests]
@@ -41582,7 +41248,6 @@ Select the data in **ascending order** by **magic_wand_creator** and **deposit_g
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41763,10 +41428,8 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 Blue Phoenix
 Antioch Peverell
 30.00
@@ -41839,12 +41502,10 @@ Ollivander family
 Venomous Tongue
 Ollivander family
 23.00
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41869,19 +41530,15 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Antioch Peverell', 15, 'Venomous Tongue', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Antioch Peverell', 14, 'Venomous Tongue', '1981-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'1'),
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Antioch Peverell', 23, 'Venomous Tongue', '1985-10-26', 11902.72, 24.84, 95.00, '1985-12-27', b'1');
-```
 [/input]
 [output]
-```
 Venomous Tongue
 Antioch Peverell
 11.00
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41906,22 +41563,18 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Some creator', 15, 'Venomous Tongue', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Antioch Peverell', 14, 'Some group', '1981-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'1'),
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Antioch Peverell', 23, 'Some group', '1985-10-26', 11902.72, 24.84, 95.00, '1985-12-27', b'1');
-```
 [/input]
 [output]
-```
 Some group
 Antioch Peverell
 11.00
 Venomous Tongue
 Some creator
 30.00
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -41946,10 +41599,8 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(4, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'CCC creator', 15, 'CCC group', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(5, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'DDD creator', 14, 'CCC group', '1981-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'1'),
 	(6, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'DDD creator', 23, 'CCC group', '1985-10-26', 11902.72, 24.84, 95.00, '1985-12-27', b'1');
-```
 [/input]
 [output]
-```
 BBB group
 AAA creator
 73.00
@@ -41962,12 +41613,10 @@ CCC creator
 CCC group
 DDD creator
 11.00
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -42148,10 +41797,8 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 Blue Phoenix
 Antioch Peverell
 30.00
@@ -42224,7 +41871,6 @@ Ollivander family
 Venomous Tongue
 Ollivander family
 23.00
-```
 [/output]
 [/test]
 [/tests]
@@ -42273,7 +41919,6 @@ Sort the results in **ascending order by the size** of the age groups.
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -42454,10 +42099,8 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 \[11-20\]
 21
 \[21-30\]
@@ -42470,12 +42113,10 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 26
 \[61+\]
 31
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
@@ -42498,18 +42139,14 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 0, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 10, 'Ollivander family', 20, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
-```
 [/input]
 [output]
-```
 \[0-10\]
 2
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
@@ -42532,18 +42169,14 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 11, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 20, 'Ollivander family', 20, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
-```
 [/input]
 [output]
-```
 \[11-20\]
 2
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
@@ -42566,18 +42199,14 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 21, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 30, 'Ollivander family', 30, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
-```
 [/input]
 [output]
-```
 \[21-30\]
 2
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
@@ -42600,18 +42229,14 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 31, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 40, 'Ollivander family', 30, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
-```
 [/input]
 [output]
-```
 \[31-40\]
 2
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
@@ -42634,18 +42259,14 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 41, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 50, 'Ollivander family', 30, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
-```
 [/input]
 [output]
-```
 \[41-50\]
 2
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
@@ -42668,18 +42289,14 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 51, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 60, 'Ollivander family', 30, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
-```
 [/input]
 [output]
-```
 \[51-60\]
 2
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 
 
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
@@ -42702,13 +42319,10 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 61, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 70, 'Ollivander family', 30, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
-```
 [/input]
 [output]
-```
 \[61+\]
 2
-```
 [/output]
 [/test]
 [/tests]
@@ -42743,7 +42357,6 @@ Use `GROUP BY` to ensure the uniqueness of the entries.
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -42924,10 +42537,8 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 A
 B
 C
@@ -42946,12 +42557,10 @@ S
 V
 W
 Y
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -42971,17 +42580,13 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Anna', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0');
-```
 [/input]
 [output]
-```
 A
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43002,17 +42607,13 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Anna', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 63, 'Ollivander family', 20, 'Human Pride', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
-```
 [/input]
 [output]
-```
 A
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43033,17 +42634,13 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Anna', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Amanda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 63, 'Ollivander family', 20, 'Troll Chest', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
-```
 [/input]
 [output]
-```
 A
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43064,13 +42661,10 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Bob', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Amanda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 63, 'Ollivander family', 20, 'Troll Chest', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'1');
-```
 [/input]
 [output]
-```
 A
 B
-```
 [/output]
 [/test]
 [/tests]
@@ -43109,7 +42703,6 @@ Order the data in **descending** order by Deposit Group and in **ascending order
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43290,10 +42883,8 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 Venomous Tongue
 0
 16.698947
@@ -43318,12 +42909,10 @@ Blue Phoenix
 Blue Phoenix
 1
 21.785000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43345,19 +42934,15 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 63, 'Ollivander family', 20, 'Troll Chest', '1986-03-27', 46597.40, 26.64, 64.00, '1986-05-16', b'0'),
 	(3, 'Ludo', 'Bagman', 'Quidditch Beater for the Wimbourne Wasps and Head of the Department of Magical Games and Sports within the Ministry of Magic', 19, 'Mykew Gregorovitch', 18, 'Troll Chest', '1990-07-04', 23190.94, 14.92, 30.00, '1990-12-27', b'0');
-```
 [/input]
 [output]
-```
 Troll Chest
 0
 23.613333
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43379,19 +42964,15 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Bathsheda', 'Babbling', 'Ancient Runes teacher at Hogwarts', 63, 'Ollivander family', 20, 'Troll Chest', '1985-01-01', 46597.40, 26.64, 64.00, '1986-01-01', b'0'),
 	(3, 'Ludo', 'Bagman', 'Quidditch Beater for the Wimbourne Wasps and Head of the Department of Magical Games and Sports within the Ministry of Magic', 19, 'Mykew Gregorovitch', 18, 'Troll Chest', '1990-07-04', 23190.94, 14.92, 30.00, '1990-12-27', b'0');
-```
 [/input]
 [output]
-```
 Troll Chest
 0
 22.100000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43412,19 +42993,15 @@ CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
 INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, `magic_wand_creator`, `magic_wand_size`, `deposit_group`, `deposit_start_date`, `deposit_amount`, `deposit_interest`, `deposit_charge`, `deposit_expiration_date`, `is_deposit_expired`) VALUES
 	(1, 'Hannah', 'Abbott', 'Hufflepuff student in Harry''s year and member of Dumbledore''s Army.', 71, 'Antioch Peverell', 19, 'Troll Chest', '1990-09-27', 47443.03, 29.28, 73.00, '1991-04-08', b'0'),
 	(2, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Arturo Cephalopos', 14, 'Troll Chest', '1987-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'0');
-```
 [/input]
 [output]
-```
 Troll Chest
 0
 22.930000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43447,22 +43024,18 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(2, 'Bathilda', 'Bagshot', 'Author of A History of Magic, great aunt of Gellert Grindelwald.', 52, 'Jimmy Kiddell', 15, 'Human Pride', '1993-06-07', 687.67, 18.18, 62.00, '1993-09-10', b'0'),
 	(3, 'Katie', 'Bell', 'Gryffindor student one year above Harry Potter; Chaser on the Gryffindor Quidditch team.', 40, 'Arturo Cephalopos', 14, 'Human Pride', '1987-05-08', 8092.93, 16.58, 11.00, '1982-02-03', b'1'),
 	(4, 'Cuthbert', 'Binns', 'Ghost, History of Magic professor.', 28, 'Death', 23, 'Human Pride', '1989-10-26', 11902.72, 24.84, 95.00, '1989-12-27', b'1');
-```
 [/input]
 [output]
-```
 Human Pride
 0
 22.410000
 Human Pride
 1
 20.710000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `wizzard_deposits` (
   `id` int(10) PRIMARY KEY,
   `first_name` varchar(50),
@@ -43643,10 +43216,8 @@ INSERT INTO `wizzard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`,
 	(160, 'Kennilworthy', 'Whisp', 'author of "Quidditch Through the Ages"', 57, 'Mykew Gregorovitch', 31, 'Blue Phoenix', '1989-03-11', 17335.62, 21.72, 7.00, '1989-10-09', b'0'),
 	(161, 'Yaxley', '', 'Death Eater, Head of Magical Law Enforcement under Voldemort''s regime.', 38, 'Jimmy Kiddell', 16, 'Troll Chest', '1988-01-03', 26638.92, 7.11, 74.00, '1988-02-21', b'1'),
 	(162, 'Blaise', 'Zabini', 'Slytherin student in Harry''s year, friends with Draco Malfoy.', 16, 'Mykew Gregorovitch', 11, 'Human Pride', '1990-03-28', 3049.06, 6.27, 61.00, '1990-07-04', b'0');
-```
 [/input]
 [output]
-```
 Venomous Tongue
 0
 16.698947
@@ -43671,7 +43242,6 @@ Blue Phoenix
 Blue Phoenix
 1
 21.785000
-```
 [/output]
 [/test]
 [/tests]
@@ -43723,7 +43293,6 @@ Your query should return:
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -44033,22 +43602,18 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291)
-```
 [/input]
 [output]
-```
 2
 25000.0000
 5
 12800.0000
 7
 9500.0000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -44113,18 +43678,14 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 2
 12500.0000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -44189,18 +43750,14 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 2
 13500.0000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -44265,18 +43822,14 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 5
 25000.0000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -44341,18 +43894,14 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 7
 29800.0000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -44417,18 +43966,14 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 2
 20000.0000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -44494,17 +44039,14 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
-```
 2
 12500.0000
 5
 13500.0000
 7
 43300.0000
-```
 [/output]
 [/test]
 [/tests]
@@ -44546,7 +44088,6 @@ Sort the result by **department_id** in **ascending** order.
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -44568,18 +44109,14 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 2, 12, '1999-12-12 00:00:00.000000', 40000.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 51000.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-```
 [/input]
 [output]
-```
 2
 40666.66666667
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 
 
 CREATE TABLE IF NOT EXISTS `employees` (
@@ -44603,18 +44140,14 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 2, 12, '1999-12-12 00:00:00.000000', 40000.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 51000.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-```
 [/input]
 [output]
-```
 2
 40666.66666667
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -44636,18 +44169,14 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 2, 12, '1999-12-12 00:00:00.000000', 41000.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 42, '2000-01-05 00:00:00.000000', 51000.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-```
 [/input]
 [output]
-```
 2
 36000.00000000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -44669,18 +44198,14 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 1, '1999-12-12 00:00:00.000000', 41000.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 1, 43, '2000-01-05 00:00:00.000000', 51000.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 1, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-```
 [/input]
 [output]
-```
 1
 46000.00000000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 
 
 CREATE TABLE IF NOT EXISTS `employees` (
@@ -44704,15 +44229,12 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 2, 1, '1999-12-12 00:00:00.000000', 41000.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 43, '2000-01-05 00:00:00.000000', 51000.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-```
 [/input]
 [output]
-```
 2
 46000.00000000
 3
 36000.00000000
-```
 [/output]
 [/test]
 [/tests]
@@ -44748,7 +44270,6 @@ Sort the result by **department_id** in **ascending** order.
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45058,10 +44579,8 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
-```
 [/input]
 [output]
-```
 2
 29800.0000
 3
@@ -45082,12 +44601,10 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 19200.0000
 16
 125500.0000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45109,18 +44626,14 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 71000.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 1, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 1, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-```
 [/input]
 [output]
-```
 1
 71000.0000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45142,20 +44655,16 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 71000.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 1, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-```
 [/input]
 [output]
-```
 1
 71000.0000
 2
 25000.0000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45178,13 +44687,10 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 3, 3, '2000-01-05 00:00:00.000000', 71000.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 30000.0000, 40),
 	(6, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 3, 3, '2000-01-05 00:00:00.000000', 29000.0000, 155);
-```
 [/input]
 [output]
-```
 3
 71000.0000
-```
 [/output]
 [/test]
 [/tests]
@@ -45212,7 +44718,6 @@ Count the salaries of all employees who **do not have a manager.**
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45522,17 +45027,13 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
-```
 [/input]
 [output]
-```
 4
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45554,17 +45055,13 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, null, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, null, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, null, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-```
 [/input]
 [output]
-```
 5
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45586,12 +45083,9 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, null, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
 	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, null, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-```
 [/input]
 [output]
-```
 3
-```
 [/output]
 [/test]
 [/tests]
@@ -45626,7 +45120,6 @@ Sort the result by **department_id** in **ascending order.**
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45647,7 +45140,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Thierry', 'D\'Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
+	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
 	(6, 'David', 'Bradley', 'M', 'Marketing Manager', 5, 109, '2000-01-20 00:00:00.000000', 37500.0000, 199),
 	(7, 'JoLynn', 'Dobney', 'M', 'Production Supervisor', 7, 21, '2000-01-26 00:00:00.000000', 25000.0000, 275),
 	(8, 'Ruth', 'Ellerbrock', 'Ann', 'Production Technician', 7, 185, '2000-02-06 00:00:00.000000', 13500.0000, 108),
@@ -45693,7 +45186,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(48, 'Jun', 'Cao', 'T', 'Production Technician', 7, 38, '2001-01-15 00:00:00.000000', 11000.0000, 197),
 	(49, 'Christian', 'Kleinerman', 'E', 'Maintenance Supervisor', 14, 218, '2001-01-15 00:00:00.000000', 20400.0000, 118),
 	(50, 'Susan', 'Metters', 'A', 'Production Technician', 7, 184, '2001-01-15 00:00:00.000000', 9500.0000, 224),
-	(51, 'Reuben', 'D\'sa', 'H', 'Production Supervisor', 7, 21, '2001-01-16 00:00:00.000000', 25000.0000, 249),
+	(51, 'Reuben', 'D''sa', 'H', 'Production Supervisor', 7, 21, '2001-01-16 00:00:00.000000', 25000.0000, 249),
 	(52, 'Kirk', 'Koenigsbauer', 'J', 'Production Technician', 7, 123, '2001-01-16 00:00:00.000000', 10000.0000, 250),
 	(53, 'David', 'Ortiz', 'J', 'Production Technician', 7, 18, '2001-01-16 00:00:00.000000', 12500.0000, 267),
 	(54, 'Tengiz', 'Kharatishvili', '', 'Control Specialist', 12, 90, '2001-01-17 00:00:00.000000', 16800.0000, 129),
@@ -45936,10 +45429,8 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
-```
 [/input]
 [output]
-```
 1
 36100.0000
 2
@@ -45968,12 +45459,10 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 9800.0000
 15
 9000.0000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -45994,7 +45483,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Thierry', 'D\'Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
+	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
 	(6, 'David', 'Bradley', 'M', 'Marketing Manager', 5, 109, '2000-01-20 00:00:00.000000', 37500.0000, 199),
 	(7, 'JoLynn', 'Dobney', 'M', 'Production Supervisor', 7, 21, '2000-01-26 00:00:00.000000', 25000.0000, 275),
 	(8, 'Ruth', 'Ellerbrock', 'Ann', 'Production Technician', 7, 185, '2000-02-06 00:00:00.000000', 13500.0000, 108),
@@ -46040,7 +45529,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(48, 'Jun', 'Cao', 'T', 'Production Technician', 7, 38, '2001-01-15 00:00:00.000000', 11000.0000, 197),
 	(49, 'Christian', 'Kleinerman', 'E', 'Maintenance Supervisor', 14, 218, '2001-01-15 00:00:00.000000', 20400.0000, 118),
 	(50, 'Susan', 'Metters', 'A', 'Production Technician', 7, 184, '2001-01-15 00:00:00.000000', 9500.0000, 224),
-	(51, 'Reuben', 'D\'sa', 'H', 'Production Supervisor', 7, 21, '2001-01-16 00:00:00.000000', 25000.0000, 249),
+	(51, 'Reuben', 'D''sa', 'H', 'Production Supervisor', 7, 21, '2001-01-16 00:00:00.000000', 25000.0000, 249),
 	(52, 'Kirk', 'Koenigsbauer', 'J', 'Production Technician', 7, 123, '2001-01-16 00:00:00.000000', 10000.0000, 250),
 	(53, 'David', 'Ortiz', 'J', 'Production Technician', 7, 18, '2001-01-16 00:00:00.000000', 12500.0000, 267),
 	(54, 'Tengiz', 'Kharatishvili', '', 'Control Specialist', 12, 90, '2001-01-17 00:00:00.000000', 16800.0000, 129),
@@ -46283,10 +45772,8 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
-```
 [/input]
 [output]
-```
 1
 36100.0000
 2
@@ -46315,7 +45802,6 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 9800.0000
 15
 9000.0000
-```
 [/output]
 [/test]
 [/tests]
@@ -46354,7 +45840,6 @@ Your query should return:
 [tests]
 [test open]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -46664,10 +46149,8 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
-```
 [/input]
 [output]
-```
 1
 241000.0000
 2
@@ -46700,12 +46183,10 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 65200.0000
 16
 185600.0000
-```
 [/output]
 [/test]
 [test]
 [input]
-```
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -47015,10 +46496,8 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
-```
 [/input]
 [output]
-```
 1
 241000.0000
 2
@@ -47051,7 +46530,6 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 65200.0000
 16
 185600.0000
-```
 [/output]
 [/test]
 [/tests]
