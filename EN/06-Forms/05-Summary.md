@@ -6,7 +6,7 @@
 
 js-angular-forms-49-Summary
 
-- There are three types of **directives**
+- There are three types of **directives**:
     * we use **component** directives to define user interfaces    
     * **attribute** directives change the appearance and behavior of components or other directives
     * **structural** directives control the HTML's layout
@@ -20,7 +20,7 @@ export class HighlightDirective {
 }
 ```
 
-- There are two ways to handle **forms** in Angular
+- There are two ways to handle **forms** in Angular:
     * template-driven forms provide direct access to the forms object model
     * reactive forms are immutable and easier to test
     
