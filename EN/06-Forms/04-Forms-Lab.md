@@ -38,7 +38,7 @@ Attach all the needed directives like **ngForm** and **ngModel**.
 
 Use `@ViewChild` to reference the **NgForm** inside the component.
 
-Handle ** submission** of the form. Inside the handler function **reset** the form.
+Handle **submission** of the form. Inside the handler function **reset** the form.
 
 Define the options for both select lists as an **array of strings** and loop through the arrays inside the template. 
 
@@ -59,20 +59,20 @@ input.ng-invalid.ng-touched {
 
 - The full name input field must contain **two names** (letters only) separated by a **space**
     * both should start with a **capital** letter
-- The email input field must be a **valid email** address
-- The phone number input field must be a **9 digits** number
+- The email input field must contain a **valid email** address
+- The phone number input field must contain a **9 digits** number
 - The password input field must be **between 3 and 16 symbols** and must contain only **letters** and **digits**
 - Both passwords must **match**
 
 Output error messages inside a `div` with class "**alert alert-danger**" when an input field is **invalid** and **touched**.
 
-Also **disable** the **submit button** if the input field is **invalid**.
+**Disable** the **submit button** if the input field is **invalid**.
 
 ## Grouping
 
 Wrap both password fields inside a common `ngModelGroup` and add the **password validation** after the group definition.
 
-At the **end** your form should look like this:
+At the **end**, your form should look like this:
 
 [image assetsSrc="Angular-Forms(1).png" /]
 
@@ -86,7 +86,7 @@ The directive should listen to **input** events and validate if the input value 
 
 Use **Renderer2** to set the border-left **styling** of the field to either red or green. 
 
-To manually change the state of an input field to **invalid** you must inject the **NgForm** inside the directive and use the `setErrors({ 'incorrect': true })` method on the control to mark it as invalid.
+To manually change the state of an input field to **invalid**, you must inject the **NgForm** inside the directive and use the `setErrors({ 'incorrect': true })` method on the control to mark it as invalid.
 
 Clearing the errors is done with `setErrors(null)`.
 
@@ -101,7 +101,7 @@ Clearing the errors is done with `setErrors(null)`.
 Forms-Lab 3-1
 Forms-Lab 3-2
 
-Now let us create a new component **register-form-reactive** and build the same form using the reactive approach.
+Now, let us create a new component with the name **register-form-reactive** and build the same form using the reactive approach.
 
 It is recommended to start from scratch by creating a new Angular application. 
 
