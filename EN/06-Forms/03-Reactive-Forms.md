@@ -10,19 +10,19 @@ Reactive forms provide a model-driven approach to handling form inputs whose val
 
 They are **immutable** - a change to the form state returns a new state which maintains the model's integrity between changes. 
 
-Also, they are built upon **observable streams** - this means that form inputs and values are provided as streams of input values.
+Also, they are built upon **observable streams**, meaning that form inputs and values are provided as streams of input values.
 
 These input values can then be accessed **synchronously**.
 
 This way, we are sure that the information stored is consistent and predictable when requested.
 
-They also enable reactive transformations, such as adding elements dynamically, while also making unit testing much easier.
+They also enable reactive transformations such as adding elements dynamically while also making unit testing much easier.
 
 This approach to building forms brings even more advantages, such as:
 
-- being more **powerful** and **easier** to use
-- enabling more **customisability** in complex use-cases
-- being **immutable** means **no data binding** is done, a data modeling approach many developers **prefer**
+- Being more **powerful** and **easier** to use
+- Enabling more **customisability** in complex use-cases
+- Being **immutable** which means **no data binding** is done, a data modeling approach many developers **prefer**
 
 [/slide]
 
@@ -32,7 +32,7 @@ This approach to building forms brings even more advantages, such as:
 
 js-angular-forms-39-Reactive-Forms-Module
 
-To use reactive forms, we must import the **Reactive Forms Module**:
+To use reactive forms, we should import the **Reactive Forms Module**:
 
 ```js
 import { ReactiveFormsModule } from '@angular/forms'
@@ -53,6 +53,7 @@ We use `formControl` to track the value and validity of a single form control.
 ## formGroupName
 
 `formGroupName` syncs a nested `FormGroup` to a DOM element.
+
 ## formArrayName
 
 `formArrayName` syncs a nested `FormArray` to a DOM element.
@@ -65,13 +66,13 @@ We use `formControl` to track the value and validity of a single form control.
 
 js-angular-forms-40-The-Component-Class
 
-In the component class, create instances of **FormGroup** and **FormControl** that we will bind later in the template.
+In the component class, we will create instances of **FormGroup** and **FormControl** that we will bind later in the template.
 
 These controls give us access to the form input's state, enabling us to **update** and **validate** it, as well as **listen** for changes.
 
-Update the template with the form control using the **formControl** binding provided by **FormControlDirective**.
+We can update the template with the form control using the **formControl** binding provided by **FormControlDirective**.
 
-The core idea is to transfer most of the logic from the template inside the component class.
+The main idea is to transfer most of the logic from the template inside the component class.
 
 ```js
 import { Component } from '@angular/core';
@@ -91,7 +92,7 @@ export class LaptopFormComponent {
 }
 ```
 
-In this example, we create a `laptopForm` group which consists of two `formControl`s - **"processor"** and **"ram"**;
+In this example, we create a `laptopForm` group which consists of two `formControls` - **"processor"** and **"ram"**;
 
 [/slide]
 
@@ -115,9 +116,9 @@ In the template, we mark the main **formGroup**, after which we add **formContro
     formControlName="processor">
 ```
 
-Here the **formControlName** is the key instance's name.
+Here, the **formControlName** is the key instance's name.
 
-Now the form control is registered to the `processor` input element.
+The form control is now registered to the `processor` input element.
 
 [/slide]
 
@@ -188,7 +189,7 @@ js-angular-forms-44-Validation
 
 Validation in **reactive** forms can be performed both **synchronously** and **asynchronously**.
 
-Compared to template-driven forms, where the input is validated by adding **template** attributes, here we add validator functions to the form control model, directly in the **class**.
+Compared to template-driven forms, where the input is validated by adding **template** attributes, here we add validator functions to the form control model directly in the **class**.
 
 ## Validating Synchronously
 
@@ -201,7 +202,7 @@ When instantiating a `FormControl`, we can pass a synchronous function as a **se
 
 ## Validating Asynchronously
 
-**Asynchronous** validators also accept a control instance as an argument, but they **return** either a `Promise` or an `Observable`, which evalute to `null`, or a set of errors.
+**Asynchronous** validators also accept a control instance as an argument, but they **return** either a `Promise` or an `Observable` which evalutes to `null` or a set of errors.
 
 We can pass an asynchronous function as a **third** argument when instantiating a form control.
 
@@ -234,7 +235,7 @@ this.laptopForm = this.fb.group({
 });
 ```
 
-Here we use the `group` method, passing in an object with a `processor` property.
+Here, we use the `group` method, passing in an object with a `processor` property.
 
 The method creates a new instance of the `FormGroup` class.
 
@@ -242,13 +243,13 @@ The method creates a new instance of the `FormGroup` class.
 
 [slide hideTitle]
 
-# Adjust the Template
+# Adjusting the Template
 
 js-angular-forms-46-Adjust-the-Template
 
 The `formGroup` directive has an ``errors`` property
 
-We can use it to **show** errors, depending on its value:
+We can use it to **show** errors depending on its value:
 
 ```js
 <div *ngIf="(laptopForm.get('processor').touched 
@@ -315,6 +316,6 @@ processorControl.valueChanges
 });
 ```
 
-In this code, the `throtlleTime` method will emit the first value, and will then ignore for **1.5** seconds.
+In this code, the `throtlleTime` method will emit the first value and will then ignore for **1.5** seconds.
 
 [/slide]
