@@ -5,6 +5,12 @@
 
 ```
 -- Write your query here
+
+SELECT e.`first_name`, e.`last_name`, t.`name` AS `town`, a.`address_text`
+FROM `employees` AS e
+JOIN `addresses` AS a ON e.`address_id` = a.`address_id`
+JOIN `towns` AS t ON a.`town_id` = t.`town_id`
+ORDER BY e.`first_name`, e.`last_name` LIMIT 5;
 ```
 [/code-editor]
 [task-description]
@@ -38,7 +44,7 @@ Select **first 5 employees**.
 [tests]
 [test open]
 [input]
-
+```
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
@@ -1709,8 +1715,10 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+```
 [/input]
 [output]
+```
 A. Scott
 Wright
 Newport Hills
@@ -1731,6 +1739,7 @@ Alice
 Ciccu
 Snohomish
 3114 Notre Dame Ave.
+```
 [/output]
 [/test]
 [test]
