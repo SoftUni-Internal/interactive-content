@@ -1,30 +1,48 @@
 [slide hideTitle]
-# Problem with Solution: Triggered
-[code-task title="Triggered" taskId="java-db-and-MySQL-database-programmability-triggered" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+# Problem: Addresses with Towns
+[code-task title="Addresses with Towns" taskId="java-db-and-MySQL-subqueries-and-JOINs-addresses-with-towns" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
-```
-CREATE TABLE deleted_employees(
-	employee_id INT PRIMARY KEY AUTO_INCREMENT,
-	first_name VARCHAR(20),
-	last_name VARCHAR(20),
-	middle_name VARCHAR(20),
-	job_title VARCHAR(50),
-	department_id INT,
-	salary DOUBLE 
-);
 
-CREATE TRIGGER tr_deleted_employees
-AFTER DELETE
-ON employees
-FOR EACH ROW
-BEGIN
-	INSERT INTO deleted_employees(first_name, last_name, middle_name, job_title, department_id, salary)
-    VALUES
-    (OLD.first_name, OLD.last_name, OLD.middle_name, OLD.job_title, OLD.department_id, OLD.salary);
-END;
+```
+-- Write your query here
 ```
 [/code-editor]
-[code-adapter]
+[task-description]
+# Description
+Write a query that selects the following fields:
+
+- **first_name**
+
+- **last_name**
+
+- **town**
+
+- **address_text**
+
+Sort the result by **first_name in ascending order** then by **last_name**. 
+
+Select **first 5 employees**.
+
+
+## Example
+
+| **first_name** | **last_name** |**town** | **address_text** | 
+| --- | --- | --- | --- | 
+| A.Scott | Wright | Newport Hills | 1400 Gate Drive |
+| Alan | Brewer | Kenmore | 8192 Seagull Court |
+| ... | ... | ... | ... | 
+
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+/\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
+/\*!40101 SET NAMES utf8mb4 \*/;
+/\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
+/\*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' \*/;
+
 
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -36,101 +54,8 @@ CREATE TABLE IF NOT EXISTS `addresses` (
   CONSTRAINT `fk_addresses_towns` FOREIGN KEY (`town_id`) REFERENCES `towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
 
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `PK_Towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`),
-  KEY `fk_departments_employees` (`manager_id`),
-  CONSTRAINT `fk_departments_employees` FOREIGN KEY (`manager_id`) REFERENCES `employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`),
-  KEY `CL_FirstName` (`first_name`),
-  KEY `fk_employees_departments` (`department_id`),
-  KEY `fk_employees_employees` (`manager_id`),
-  KEY `fk_employees_addresses` (`address_id`),
-  CONSTRAINT `fk_employees_addresses` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`),
-  CONSTRAINT `fk_employees_departments` FOREIGN KEY (`department_id`) REFERENCES `departments` (`department_id`),
-  CONSTRAINT `fk_employees_employees` FOREIGN KEY (`manager_id`) REFERENCES `employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`),
-  KEY `fk_employees_projects_projects` (`project_id`),
-  CONSTRAINT `fk_employees_projects_employees` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`employee_id`),
-  CONSTRAINT `fk_employees_projects_projects` FOREIGN KEY (`project_id`) REFERENCES `projects` (`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `PK_Projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-INSERT INTO `towns` (`town_id`, `name`) VALUES
-	(1, 'Redmond'),
-	(2, 'Calgary'),
-	(3, 'Edmonds'),
-	(4, 'Seattle'),
-	(5, 'Bellevue'),
-	(6, 'Issaquah'),
-	(7, 'Everett'),
-	(8, 'Bothell'),
-	(9, 'San Francisco'),
-	(10, 'Index'),
-	(11, 'Snohomish'),
-	(12, 'Monroe'),
-	(13, 'Renton'),
-	(14, 'Newport Hills'),
-	(15, 'Carnation'),
-	(16, 'Sammamish'),
-	(17, 'Duvall'),
-	(18, 'Gold Bar'),
-	(19, 'Nevada'),
-	(20, 'Kenmore'),
-	(21, 'Melbourne'),
-	(22, 'Kent'),
-	(23, 'Cambridge'),
-	(24, 'Minneapolis'),
-	(25, 'Portland'),
-	(26, 'Duluth'),
-	(27, 'Detroit'),
-	(28, 'Memphis'),
-	(29, 'Ottawa'),
-	(30, 'Bordeaux'),
-	(31, 'Berlin'),
-	(32, 'Sofia');
-
-
+/\*!40000 ALTER TABLE `addresses` DISABLE KEYS \*/;
 INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
 	(1, '108 Lakeside Court', 5),
 	(2, '1343 Prospect St', 5),
@@ -423,7 +348,21 @@ INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
 	(289, '591 Merriewood Drive', 11),
 	(290, '7230 Vine Maple Street', 11),
 	(291, '163 Nishava Str, ent A, apt. 1', 32);
+/\*!40000 ALTER TABLE `addresses` ENABLE KEYS \*/;
 
+
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `PK_Departments` (`department_id`),
+  KEY `fk_departments_employees` (`manager_id`),
+  CONSTRAINT `fk_departments_employees` FOREIGN KEY (`manager_id`) REFERENCES `employees` (`employee_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+
+/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
 INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(1, 'Engineering', 12),
 	(2, 'Tool Design', 4),
@@ -441,7 +380,34 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(14, 'Facilities and Maintenance', 218),
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
+/\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
 
+
+
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `PK_Employees` (`employee_id`),
+  KEY `CL_FirstName` (`first_name`),
+  KEY `fk_employees_departments` (`department_id`),
+  KEY `fk_employees_employees` (`manager_id`),
+  KEY `fk_employees_addresses` (`address_id`),
+  CONSTRAINT `fk_employees_addresses` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`),
+  CONSTRAINT `fk_employees_departments` FOREIGN KEY (`department_id`) REFERENCES `departments` (`department_id`),
+  CONSTRAINT `fk_employees_employees` FOREIGN KEY (`manager_id`) REFERENCES `employees` (`employee_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
+
+
+/\*!40000 ALTER TABLE `employees` DISABLE KEYS \*/;
 INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
 	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
 	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
@@ -466,7 +432,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(21, 'Peter', 'Krebs', 'J', 'Production Control Manager', 8, 148, '2001-01-02 00:00:00.000000', 24500.0000, 11),
 	(22, 'Stuart', 'Munson', 'V', 'Production Technician', 7, 197, '2001-01-03 00:00:00.000000', 10000.0000, 36),
 	(23, 'Greg', 'Alderson', 'F', 'Production Technician', 7, 197, '2001-01-03 00:00:00.000000', 10000.0000, 18),
-	(24, 'David', 'Johnson', \', 'Production Technician', 7, 184, '2001-01-03 00:00:00.000000', 9500.0000, 142),
+	(24, 'David', 'Johnson', '', 'Production Technician', 7, 184, '2001-01-03 00:00:00.000000', 9500.0000, 142),
 	(25, 'Zheng', 'Mu', 'W', 'Production Supervisor', 7, 21, '2001-01-04 00:00:00.000000', 25000.0000, 278),
 	(26, 'Ivo', 'Salmre', 'William', 'Production Technician', 7, 108, '2001-01-05 00:00:00.000000', 14000.0000, 165),
 	(27, 'Paul', 'Komosinski', 'B', 'Production Technician', 7, 87, '2001-01-05 00:00:00.000000', 15000.0000, 32),
@@ -477,7 +443,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(32, 'Garrett', 'Young', 'R', 'Production Technician', 7, 184, '2001-01-08 00:00:00.000000', 9500.0000, 283),
 	(33, 'Jian Shuo', 'Wang', NULL, 'Production Technician', 7, 135, '2001-01-08 00:00:00.000000', 9500.0000, 160),
 	(34, 'Susan', 'Eaton', 'W', 'Stocker', 15, 85, '2001-01-08 00:00:00.000000', 9000.0000, 204),
-	(35, 'Vamsi', 'Kuppa', \', 'Shipping and Receiving Clerk', 15, 85, '2001-01-08 00:00:00.000000', 9500.0000, 51),
+	(35, 'Vamsi', 'Kuppa', '', 'Shipping and Receiving Clerk', 15, 85, '2001-01-08 00:00:00.000000', 9500.0000, 51),
 	(36, 'Alice', 'Ciccu', 'O', 'Production Technician', 7, 38, '2001-01-08 00:00:00.000000', 11000.0000, 284),
 	(37, 'Simon', 'Rapier', 'D', 'Production Technician', 7, 7, '2001-01-09 00:00:00.000000', 12500.0000, 64),
 	(38, 'Jinghao', 'Liu', 'K', 'Production Supervisor', 7, 21, '2001-01-09 00:00:00.000000', 25000.0000, 55),
@@ -496,7 +462,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(51, 'Reuben', 'D\'sa', 'H', 'Production Supervisor', 7, 21, '2001-01-16 00:00:00.000000', 25000.0000, 249),
 	(52, 'Kirk', 'Koenigsbauer', 'J', 'Production Technician', 7, 123, '2001-01-16 00:00:00.000000', 10000.0000, 250),
 	(53, 'David', 'Ortiz', 'J', 'Production Technician', 7, 18, '2001-01-16 00:00:00.000000', 12500.0000, 267),
-	(54, 'Tengiz', 'Kharatishvili', \', 'Control Specialist', 12, 90, '2001-01-17 00:00:00.000000', 16800.0000, 129),
+	(54, 'Tengiz', 'Kharatishvili', '', 'Control Specialist', 12, 90, '2001-01-17 00:00:00.000000', 16800.0000, 129),
 	(55, 'Hanying', 'Feng', 'P', 'Production Technician', 7, 143, '2001-01-17 00:00:00.000000', 14000.0000, 182),
 	(56, 'Kevin', 'Liu', 'H', 'Production Technician', 7, 210, '2001-01-18 00:00:00.000000', 15000.0000, 259),
 	(57, 'Annik', 'Stahl', 'O', 'Production Technician', 7, 16, '2001-01-18 00:00:00.000000', 12500.0000, 262),
@@ -509,7 +475,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(64, 'Cristian', 'Petculescu', 'K', 'Production Supervisor', 7, 21, '2001-01-23 00:00:00.000000', 25000.0000, 276),
 	(65, 'Raymond', 'Sam', 'K', 'Production Technician', 7, 143, '2001-01-24 00:00:00.000000', 14000.0000, 75),
 	(66, 'Janaina', 'Bueno', 'Barreiro Gambaro', 'Application Specialist', 11, 42, '2001-01-24 00:00:00.000000', 27400.0000, 131),
-	(67, 'Bob', 'Hohman', \', 'Production Technician', 7, 14, '2001-01-25 00:00:00.000000', 11000.0000, 44),
+	(67, 'Bob', 'Hohman', '', 'Production Technician', 7, 14, '2001-01-25 00:00:00.000000', 11000.0000, 44),
 	(68, 'Shammi', 'Mohamed', 'G', 'Production Technician', 7, 210, '2001-01-25 00:00:00.000000', 15000.0000, 4),
 	(69, 'Linda', 'Moschell', 'K', 'Production Technician', 7, 38, '2001-01-26 00:00:00.000000', 11000.0000, 5),
 	(70, 'Mindy', 'Martin', 'C', 'Benefits Specialist', 9, 30, '2001-01-26 00:00:00.000000', 16600.0000, 171),
@@ -556,7 +522,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(111, 'Mark', 'Harrington', 'L', 'Quality Assurance Technician', 13, 41, '2001-02-16 00:00:00.000000', 10600.0000, 139),
 	(112, 'Janeth', 'Esteves', 'M', 'Production Technician', 7, 159, '2001-02-16 00:00:00.000000', 10000.0000, 163),
 	(113, 'Marc', 'Ingle', 'J', 'Production Technician', 7, 184, '2001-02-17 00:00:00.000000', 9500.0000, 230),
-	(114, 'Gigi', 'Matthew', \', 'Research and Development Engineer', 6, 158, '2001-02-17 00:00:00.000000', 40900.0000, 23),
+	(114, 'Gigi', 'Matthew', '', 'Research and Development Engineer', 6, 158, '2001-02-17 00:00:00.000000', 40900.0000, 23),
 	(115, 'Paul', 'Singh', 'R', 'Production Technician', 7, 108, '2001-02-18 00:00:00.000000', 14000.0000, 16),
 	(116, 'Frank', 'Lee', 'T', 'Production Technician', 7, 210, '2001-02-18 00:00:00.000000', 15000.0000, 263),
 	(117, 'Francois', 'Ajenstat', 'P', 'Database Administrator', 11, 42, '2001-02-18 00:00:00.000000', 38500.0000, 127),
@@ -569,11 +535,11 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(124, 'Eugene', 'Zabokritski', 'R', 'Production Technician', 7, 184, '2001-02-22 00:00:00.000000', 9500.0000, 226),
 	(125, 'Barbara', 'Decker', 'S', 'Production Technician', 7, 182, '2001-02-23 00:00:00.000000', 14000.0000, 219),
 	(126, 'Chris', 'Preston', 'T', 'Production Technician', 7, 123, '2001-02-23 00:00:00.000000', 10000.0000, 279),
-	(127, 'Sean', 'Chai', \', 'Document Control Assistant', 12, 90, '2001-02-23 00:00:00.000000', 10300.0000, 138),
+	(127, 'Sean', 'Chai', '', 'Document Control Assistant', 12, 90, '2001-02-23 00:00:00.000000', 10300.0000, 138),
 	(128, 'Dan', 'Wilson', 'B', 'Database Administrator', 11, 42, '2001-02-23 00:00:00.000000', 38500.0000, 30),
 	(129, 'Mark', 'McArthur', 'K', 'Production Technician', 7, 16, '2001-02-24 00:00:00.000000', 12500.0000, 186),
 	(130, 'Bryan', 'Walton', 'A', 'Accounts Receivable Specialist', 10, 139, '2001-02-25 00:00:00.000000', 19000.0000, 175),
-	(131, 'Houman', 'Pournasseh', \', 'Production Technician', 7, 74, '2001-02-26 00:00:00.000000', 11000.0000, 185),
+	(131, 'Houman', 'Pournasseh', '', 'Production Technician', 7, 74, '2001-02-26 00:00:00.000000', 11000.0000, 185),
 	(132, 'Sairaj', 'Uddin', 'L', 'Scheduling Assistant', 8, 44, '2001-02-27 00:00:00.000000', 16000.0000, 190),
 	(133, 'Michiko', 'Osada', 'F', 'Production Technician', 7, 173, '2001-02-27 00:00:00.000000', 9500.0000, 229),
 	(134, 'Benjamin', 'Martin', 'R', 'Production Technician', 7, 184, '2001-02-28 00:00:00.000000', 9500.0000, 286),
@@ -633,7 +599,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(188, 'Peter', 'Connelly', 'I', 'Network Administrator', 11, 150, '2001-03-27 00:00:00.000000', 32500.0000, 137),
 	(189, 'Anibal', 'Sousa', 'T', 'Production Technician', 7, 108, '2001-03-27 00:00:00.000000', 14000.0000, 183),
 	(190, 'Ken', 'Myer', 'L', 'Production Technician', 7, 210, '2001-03-28 00:00:00.000000', 15000.0000, 105),
-	(191, 'Grant', 'Culbertson', \', 'Human Resources Administrative Assistant', 9, 30, '2001-03-29 00:00:00.000000', 13900.0000, 117),
+	(191, 'Grant', 'Culbertson', '', 'Human Resources Administrative Assistant', 9, 30, '2001-03-29 00:00:00.000000', 13900.0000, 117),
 	(192, 'Michael', 'Entin', 'T', 'Production Technician', 7, 38, '2001-03-29 00:00:00.000000', 11000.0000, 195),
 	(193, 'Lionel', 'Penuchot', 'C', 'Production Technician', 7, 159, '2001-03-30 00:00:00.000000', 10000.0000, 261),
 	(194, 'Thomas', 'Michaels', 'R', 'Production Technician', 7, 7, '2001-03-30 00:00:00.000000', 12500.0000, 78),
@@ -646,7 +612,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(201, 'Janet', 'Sheperdigian', 'L', 'Accounts Payable Specialist', 10, 139, '2001-04-02 00:00:00.000000', 19000.0000, 218),
 	(202, 'Elizabeth', 'Keyser', 'I', 'Production Technician', 7, 74, '2001-04-03 00:00:00.000000', 11000.0000, 152),
 	(203, 'Terry', 'Eminhizer', 'J', 'Marketing Specialist', 4, 6, '2001-04-03 00:00:00.000000', 14400.0000, 19),
-	(204, 'John', 'Frum', \', 'Production Technician', 7, 184, '2001-04-04 00:00:00.000000', 9500.0000, 112),
+	(204, 'John', 'Frum', '', 'Production Technician', 7, 184, '2001-04-04 00:00:00.000000', 9500.0000, 112),
 	(205, 'Merav', 'Netz', 'A', 'Production Technician', 7, 173, '2001-04-04 00:00:00.000000', 9500.0000, 270),
 	(206, 'Brian', 'LaMee', 'P', 'Scheduling Assistant', 8, 44, '2001-04-04 00:00:00.000000', 16000.0000, 109),
 	(207, 'Kitti', 'Lertpiriyasuwat', 'H', 'Production Technician', 7, 38, '2001-04-05 00:00:00.000000', 11000.0000, 272),
@@ -656,13 +622,13 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(211, 'Andrew', 'Cencini', 'M', 'Production Technician', 7, 123, '2001-04-07 00:00:00.000000', 10000.0000, 233),
 	(212, 'Chris', 'Norred', 'K', 'Control Specialist', 12, 90, '2001-04-07 00:00:00.000000', 16800.0000, 125),
 	(213, 'Chris', 'Okelberry', 'O', 'Production Technician', 7, 16, '2001-04-08 00:00:00.000000', 12500.0000, 188),
-	(214, 'Shelley', 'Dyck', \', 'Production Technician', 7, 143, '2001-04-08 00:00:00.000000', 14000.0000, 164),
+	(214, 'Shelley', 'Dyck', '', 'Production Technician', 7, 143, '2001-04-08 00:00:00.000000', 14000.0000, 164),
 	(215, 'Gabe', 'Mares', 'B', 'Production Technician', 7, 210, '2001-04-09 00:00:00.000000', 15000.0000, 87),
 	(216, 'Mike', 'Seamans', 'K', 'Accountant', 10, 139, '2001-04-09 00:00:00.000000', 26400.0000, 120),
 	(217, 'Michael', 'Raheem', NULL, 'Research and Development Manager', 6, 158, '2001-06-04 00:00:00.000000', 42500.0000, 236),
 	(218, 'Gary', 'Altman', 'E.', 'Facilities Manager', 14, 148, '2002-01-03 00:00:00.000000', 24000.0000, 203),
 	(219, 'Charles', 'Fitzgerald', 'B', 'Production Technician', 7, 18, '2002-01-04 00:00:00.000000', 12500.0000, 223),
-	(220, 'Ebru', 'Ersan', \', 'Production Technician', 7, 25, '2002-01-07 00:00:00.000000', 13500.0000, 225),
+	(220, 'Ebru', 'Ersan', '', 'Production Technician', 7, 25, '2002-01-07 00:00:00.000000', 13500.0000, 225),
 	(221, 'Sylvester', 'Valdez', 'A', 'Production Technician', 7, 108, '2002-01-12 00:00:00.000000', 14000.0000, 25),
 	(222, 'Brian', 'Goldstein', 'Richard', 'Production Technician', 7, 51, '2002-01-12 00:00:00.000000', 15000.0000, 48),
 	(223, 'Linda', 'Meisner', 'P', 'Buyer', 5, 274, '2002-01-18 00:00:00.000000', 18300.0000, 28),
@@ -672,7 +638,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(227, 'Mary', 'Baker', 'R', 'Production Technician', 7, 25, '2002-01-26 00:00:00.000000', 13500.0000, 246),
 	(228, 'Kevin', 'Homer', 'M', 'Production Technician', 7, 25, '2002-01-26 00:00:00.000000', 13500.0000, 29),
 	(229, 'Mihail', 'Frintu', 'U', 'Production Technician', 7, 51, '2002-01-30 00:00:00.000000', 15000.0000, 89),
-	(230, 'Bonnie', 'Kearney', \', 'Production Technician', 7, 185, '2002-02-02 00:00:00.000000', 13500.0000, 287),
+	(230, 'Bonnie', 'Kearney', '', 'Production Technician', 7, 185, '2002-02-02 00:00:00.000000', 13500.0000, 287),
 	(231, 'Fukiko', 'Ogisu', 'J', 'Buyer', 5, 274, '2002-02-05 00:00:00.000000', 18300.0000, 17),
 	(232, 'Hung-Fu', 'Ting', 'T', 'Production Technician', 7, 108, '2002-02-07 00:00:00.000000', 14000.0000, 220),
 	(233, 'Gordon', 'Hee', 'L', 'Buyer', 5, 274, '2002-02-12 00:00:00.000000', 18300.0000, 15),
@@ -708,7 +674,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(263, 'Ovidiu', 'Cracium', 'V', 'Senior Tool Designer', 2, 3, '2003-01-05 00:00:00.000000', 28800.0000, 145),
 	(264, 'Annette', 'Hill', 'L', 'Purchasing Assistant', 5, 274, '2003-01-06 00:00:00.000000', 12800.0000, 181),
 	(265, 'Janice', 'Galvin', 'M', 'Tool Designer', 2, 263, '2003-01-23 00:00:00.000000', 25000.0000, 200),
-	(266, 'Reinout', 'Hillmann', \', 'Purchasing Assistant', 5, 274, '2003-01-25 00:00:00.000000', 12800.0000, 27),
+	(266, 'Reinout', 'Hillmann', '', 'Purchasing Assistant', 5, 274, '2003-01-25 00:00:00.000000', 12800.0000, 27),
 	(267, 'Michael', 'Sullivan', 'I', 'Senior Design Engineer', 1, 3, '2003-01-30 00:00:00.000000', 36100.0000, 217),
 	(268, 'Stephen', 'Jiang', 'Y', 'North American Sales Manager', 3, 273, '2003-02-04 00:00:00.000000', 48100.0000, 196),
 	(269, 'Wanida', 'Benshoof', 'M', 'Marketing Assistant', 4, 6, '2003-02-07 00:00:00.000000', 13500.0000, 221),
@@ -732,94 +698,26 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(287, 'Tete', 'Mensa-Annan', 'A', 'Sales Representative', 3, 268, '2004-11-01 00:00:00.000000', 23100.0000, 53),
 	(288, 'Syed', 'Abbas', 'E', 'Pacific Sales Manager', 3, 273, '2005-04-15 00:00:00.000000', 48100.0000, 49),
 	(289, 'Rachel', 'Valdez', 'B', 'Sales Representative', 3, 284, '2005-07-01 00:00:00.000000', 23100.0000, 37),
-	(290, 'Lynn', 'Tsoflias', \', 'Sales Representative', 3, 288, '2005-07-01 00:00:00.000000', 23100.0000, 153),
-	(291, 'Edward', 'Young', 'I', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
-	(292, 'Emma', 'Johnson', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
-	(293, 'Thomas', 'Miller', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
+	(290, 'Lynn', 'Tsoflias', '', 'Sales Representative', 3, 288, '2005-07-01 00:00:00.000000', 23100.0000, 153),
+	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
+	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
+	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
+/\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
 
 
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2003-06-01 00:00:00.000000', NULL),
-	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(6, 'HL Road Frame', 'Research, design and development of HL Road Frame. Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.', '1998-05-02 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(7, 'HL Touring Frame', 'Research, design and development of HL Touring Frame. The HL aluminum frame is custom-shaped for both good looks and strength; it will withstand the most rigorous challenges of daily riding. Men\'s version.', '2005-05-16 16:34:00.000000', NULL),
-	(8, 'LL Mountain Frame', 'Research, design and development of LL Mountain Frame. Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(9, 'LL Road Frame', 'Research, design and development of LL Road Frame. The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(10, 'LL Touring Frame', 'Research, design and development of LL Touring Frame. Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.', '2005-05-16 16:34:00.000000', NULL),
-	(11, 'Long-Sleeve Logo Jersey', 'Research, design and development of Long-Sleeve Logo Jersey. Unisex long-sleeve AWC logo microfiber cycling jersey', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(12, 'Men\'s Bib-Shorts', 'Research, design and development of Men\'s Bib-Shorts. Designed for the AWC team with stay-put straps, moisture-control, chamois padding, and leg grippers.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(19, 'Mountain-100', 'Research, design and development of Mountain-100. Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(20, 'Mountain-200', 'Research, design and development of Mountain-200. Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.', '2002-06-01 00:00:00.000000', '2004-03-11 10:32:00.000000'),
-	(21, 'Mountain-300', 'Research, design and development of Mountain-300. For true trail addicts.  An extremely durable bike that will go anywhere and keep you in control on challenging terrain - without breaking your budget.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(22, 'Mountain-400-W', 'Research, design and development of Mountain-400-W. This bike delivers a high-level of performance on a budget. It is responsive and maneuverable, and offers peace-of-mind when you decide to go off-road.', '2006-02-22 00:00:00.000000', NULL),
-	(23, 'Mountain-500', 'Research, design and development of Mountain-500. Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(24, 'Racing Socks', 'Research, design and development of Racing Socks. Thin, lightweight and durable with cuffs that stay up.', '2005-11-22 00:00:00.000000', NULL),
-	(25, 'Road-150', 'Research, design and development of Road-150. This bike is ridden by race winners. Developed with the Adventure Works Cycles professional race team, it has a extremely light heat-treated aluminum frame, and steering that allows precision control.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(26, 'Road-250', 'Research, design and development of Road-250. Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(27, 'Road-350-W', 'Research, design and development of Road-350-W. Cross-train, race, or just socialize on a sleek, aerodynamic bike designed for a woman.  Advanced seat technology provides comfort all day.', '2003-06-01 00:00:00.000000', NULL),
-	(28, 'Road-450', 'Research, design and development of Road-450. A true multi-sport bike that offers streamlined riding and a revolutionary design. Aerodynamic design lets you ride with the pros, and the gearing will conquer hilly roads.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(29, 'Road-550-W', 'Research, design and development of Road-550-W. Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(30, 'Road-650', 'Research, design and development of Road-650. Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we\'re famous for.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(31, 'Road-750', 'Research, design and development of Road-750. Entry level adult bike; offers a comfortable ride cross-country or down the block. Quick-release hubs and rims.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(32, 'Short-Sleeve Classic Jersey', 'Research, design and development of Short-Sleeve Classic Jersey. Short sleeve classic breathable jersey with superior moisture control, front zipper, and 3 back pockets.', '2003-06-01 00:00:00.000000', NULL),
-	(33, 'Sport-100', 'Research, design and development of Sport-100. Universal fit, well-vented, lightweight , snap-on visor.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(34, 'Touring-1000', 'Research, design and development of Touring-1000. Travel in style and comfort. Designed for maximum comfort and safety. Wide gear range takes on all hills. High-tech aluminum alloy construction provides durability without added weight.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(35, 'Touring-2000', 'Research, design and development of Touring-2000. The plush custom saddle keeps you riding all day,  and there\'s plenty of space to add panniers and bike bags to the newly-redesigned carrier.  This bike has stability when fully-loaded.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(36, 'Touring-3000', 'Research, design and development of Touring-3000. All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(37, 'Women\'s Mountain Shorts', 'Research, design and development of Women\'s Mountain Shorts. Heavy duty, abrasion-resistant shorts feature seamless, lycra inner shorts with anti-bacterial chamois for comfort.', '2003-06-01 00:00:00.000000', NULL),
-	(38, 'Women\'s Tights', 'Research, design and development of Women\'s Tights. Warm spandex tights for winter riding; seamless chamois construction eliminates pressure points.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(39, 'Mountain-400', 'Research, design and development of Mountain-400. Suitable for any type of off-road trip. Fits any budget.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(40, 'Road-550', 'Research, design and development of Road-550. Same technology as all of our Road series bikes.  Perfect all-around bike for road or racing.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(41, 'Road-350', 'Research, design and development of Road-350. Cross-train, race, or just socialize on a sleek, aerodynamic bike.  Advanced seat technology provides comfort all day.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(42, 'LL Mountain Front Wheel', 'Research, design and development of LL Mountain Front Wheel. Replacement mountain wheel for entry-level rider.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(43, 'Touring Rear Wheel', 'Research, design and development of Touring Rear Wheel. Excellent aerodynamic rims guarantee a smooth ride.', '2005-05-16 16:34:00.000000', NULL),
-	(44, 'Touring Front Wheel', 'Research, design and development of Touring Front Wheel. Aerodynamic rims for smooth riding.', '2005-05-16 16:34:00.000000', NULL),
-	(45, 'ML Mountain Front Wheel', 'Research, design and development of ML Mountain Front Wheel. Replacement mountain wheel for the casual to serious rider.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(46, 'HL Mountain Front Wheel', 'Research, design and development of HL Mountain Front Wheel. High-performance mountain replacement wheel.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(47, 'LL Touring Handlebars', 'Research, design and development of LL Touring Handlebars. Unique shape reduces fatigue for entry level riders.', '2005-05-16 16:34:00.000000', NULL),
-	(48, 'HL Touring Handlebars', 'Research, design and development of HL Touring Handlebars. A light yet stiff aluminum bar for long distance riding.', '2005-05-16 16:34:00.000000', NULL),
-	(49, 'LL Road Front Wheel', 'Research, design and development of LL Road Front Wheel. Replacement road front wheel for entry-level cyclist.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(50, 'ML Road Front Wheel', 'Research, design and development of ML Road Front Wheel. Sturdy alloy features a quick-release hub.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(51, 'HL Road Front Wheel', 'Research, design and development of HL Road Front Wheel. Strong wheel with double-walled rim.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(52, 'LL Mountain Handlebars', 'Research, design and development of LL Mountain Handlebars. All-purpose bar for on or off-road.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(53, 'Touring Pedal', 'Research, design and development of Touring Pedal. A stable pedal for all-day riding.', '2005-05-16 16:34:00.000000', NULL),
-	(54, 'ML Mountain Handlebars', 'Research, design and development of ML Mountain Handlebars. Tough aluminum alloy bars for downhill.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(55, 'HL Mountain Handlebars', 'Research, design and development of HL Mountain Handlebars. Flat bar strong enough for the pro circuit.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(56, 'LL Road Handlebars', 'Research, design and development of LL Road Handlebars. Unique shape provides easier reach to the levers.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(57, 'ML Road Handlebars', 'Research, design and development of ML Road Handlebars. Anatomically shaped aluminum tube bar will suit all riders.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(58, 'HL Road Handlebars', 'Research, design and development of HL Road Handlebars. Designed for racers; high-end anatomically shaped bar from aluminum alloy.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(59, 'LL Headset', 'Research, design and development of LL Headset. Threadless headset provides quality at an economical price.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(60, 'ML Headset', 'Research, design and development of ML Headset. Sealed cartridge keeps dirt out.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(61, 'HL Headset', 'Research, design and development of HL Headset. High-quality 1" threadless headset with a grease port for quick lubrication.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(77, 'ML Road Rear Wheel', 'Research, design and development of ML Road Rear Wheel. Aluminum alloy rim with stainless steel spokes; built for speed.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(78, 'HL Road Rear Wheel', 'Research, design and development of HL Road Rear Wheel. Strong rear wheel with double-walled rim.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(79, 'LL Mountain Seat/Saddle 2', 'Research, design and development of LL Mountain Seat/Saddle 2. Synthetic leather. Features gel for increased comfort.', '2003-06-01 00:00:00.000000', NULL),
-	(80, 'ML Mountain Seat/Saddle 2', 'Research, design and development of ML Mountain Seat/Saddle 2. Designed to absorb shock.', '2003-06-01 00:00:00.000000', '2004-03-11 10:32:00.000000'),
-	(104, 'LL Fork', 'Research, design and development of LL Fork. Stout design absorbs shock and offers more precise steering.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(105, 'ML Fork', 'Research, design and development of ML Fork. Composite road fork with an aluminum steerer tube.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(106, 'HL Fork', 'Research, design and development of HL Fork. High-performance carbon road fork with curved legs.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(107, 'Hydration Pack', 'Research, design and development of Hydration Pack. Versatile 70 oz hydration pack offers extra storage, easy-fill access, and a waist belt.', '2003-06-01 00:00:00.000000', NULL),
-	(108, 'Taillight', 'Research, design and development of Taillight. Affordable light for safe night riding - uses 3 AAA batteries', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(109, 'Headlights - Dual-Beam', 'Research, design and development of Headlights - Dual-Beam. Rechargeable dual-beam headlight.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(110, 'Headlights - Weatherproof', 'Research, design and development of Headlights - Weatherproof. Rugged weatherproof headlight.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(111, 'Water Bottle', 'Research, design and development of Water Bottle. AWC logo water bottle - holds 30 oz; leak-proof.', '2003-06-01 00:00:00.000000', NULL),
-	(112, 'Mountain Bottle Cage', 'Research, design and development of Mountain Bottle Cage. Tough aluminum cage holds bottle securly on tough terrain.', '2003-06-01 00:00:00.000000', NULL),
-	(113, 'Road Bottle Cage', 'Research, design and development of Road Bottle Cage. Aluminum cage is lighter than our mountain version; perfect for long distance trips.', '2004-02-21 00:00:00.000000', NULL),
-	(114, 'Patch kit', 'Research, design and development of Patch kit. Includes 8 different size patches, glue and sandpaper.', '2003-06-01 00:00:00.000000', NULL),
-	(115, 'Cable Lock', 'Research, design and development of Cable Lock. Wraps to fit front and rear tires, carrier and 2 keys included.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(116, 'Minipump', 'Research, design and development of Minipump. Designed for convenience. Fits in your pocket. Aluminum barrel. 160psi rated.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(117, 'Mountain Pump', 'Research, design and development of Mountain Pump. Simple and light-weight. Emergency patches stored in handle.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(118, 'Hitch Rack - 4-Bike', 'Research, design and development of Hitch Rack - 4-Bike. Carries 4 bikes securely; steel construction, fits 2" receiver hitch.', '2003-06-01 00:00:00.000000', NULL),
-	(119, 'Bike Wash', 'Research, design and development of Bike Wash. Washes off the toughest road grime; dissolves grease, environmentally safe. 1-liter bottle.', '2005-08-01 00:00:00.000000', NULL),
-	(120, 'Touring-Panniers', 'Research, design and development of Touring-Panniers. Durable, water-proof nylon construction with easy access. Large enough for weekend trips.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(121, 'Fender Set - Mountain', 'Research, design and development of Fender Set - Mountain. Clip-on fenders fit most mountain bikes.', '2003-06-01 00:00:00.000000', NULL),
-	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
-	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
+
+CREATE TABLE IF NOT EXISTS `employees_projects` (
+  `employee_id` int(10) NOT NULL,
+  `project_id` int(10) NOT NULL,
+  PRIMARY KEY (`employee_id`,`project_id`),
+  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`),
+  KEY `fk_employees_projects_projects` (`project_id`),
+  CONSTRAINT `fk_employees_projects_employees` FOREIGN KEY (`employee_id`) REFERENCES `employees` (`employee_id`),
+  CONSTRAINT `fk_employees_projects_projects` FOREIGN KEY (`project_id`) REFERENCES `projects` (`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
+/\*!40000 ALTER TABLE `employees_projects` DISABLE KEYS \*/;
 INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(3, 1),
 	(15, 1),
@@ -1664,87 +1562,597 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(185, 127),
 	(234, 127),
 	(245, 127);
-[/code-adapter]
-[task-description]
-# Description
+/\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
 
-Create a table **deleted_employees(employee_id PK, first_name,last_name,middle_name,job_title,deparment_id,salary)** that will hold information about fired (deleted) **employees** from the employees table. 
 
-Add a trigger to the **employees** table that inserts the corresponding information in **deleted_employees**. 
 
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-SELECT lower(TABLE_NAME)
-FROM information_schema.TABLES 
-WHERE lower(TABLE_SCHEMA) = database() and lower(TABLE_NAME) = 'deleted_employees';
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `PK_Projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
 
-SELECT lower(COLUMN_NAME)
-FROM information_schema.COLUMNS 
-WHERE lower(TABLE_NAME) = 'deleted_employees';
 
-SELECT lower(COLUMN_NAME)
-    FROM INFORMATION_SCHEMA.key_column_usage
-    WHERE TABLE_SCHEMA = database()
-    and CONSTRAINT_NAME='PRIMARY'
-    and lower(table_name) = 'deleted_employees';
-    
+/\*!40000 ALTER TABLE `projects` DISABLE KEYS \*/;
+INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
+	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2003-06-01 00:00:00.000000', NULL),
+	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(6, 'HL Road Frame', 'Research, design and development of HL Road Frame. Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.', '1998-05-02 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(7, 'HL Touring Frame', 'Research, design and development of HL Touring Frame. The HL aluminum frame is custom-shaped for both good looks and strength; it will withstand the most rigorous challenges of daily riding. Men\'s version.', '2005-05-16 16:34:00.000000', NULL),
+	(8, 'LL Mountain Frame', 'Research, design and development of LL Mountain Frame. Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
+	(9, 'LL Road Frame', 'Research, design and development of LL Road Frame. The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(10, 'LL Touring Frame', 'Research, design and development of LL Touring Frame. Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.', '2005-05-16 16:34:00.000000', NULL),
+	(11, 'Long-Sleeve Logo Jersey', 'Research, design and development of Long-Sleeve Logo Jersey. Unisex long-sleeve AWC logo microfiber cycling jersey', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(12, 'Men\'s Bib-Shorts', 'Research, design and development of Men\'s Bib-Shorts. Designed for the AWC team with stay-put straps, moisture-control, chamois padding, and leg grippers.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(19, 'Mountain-100', 'Research, design and development of Mountain-100. Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(20, 'Mountain-200', 'Research, design and development of Mountain-200. Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.', '2002-06-01 00:00:00.000000', '2004-03-11 10:32:00.000000'),
+	(21, 'Mountain-300', 'Research, design and development of Mountain-300. For true trail addicts.  An extremely durable bike that will go anywhere and keep you in control on challenging terrain - without breaking your budget.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(22, 'Mountain-400-W', 'Research, design and development of Mountain-400-W. This bike delivers a high-level of performance on a budget. It is responsive and maneuverable, and offers peace-of-mind when you decide to go off-road.', '2006-02-22 00:00:00.000000', NULL),
+	(23, 'Mountain-500', 'Research, design and development of Mountain-500. Suitable for any type of riding, on or off-road. Fits any budget. Smooth-shifting with a comfortable ride.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
+	(24, 'Racing Socks', 'Research, design and development of Racing Socks. Thin, lightweight and durable with cuffs that stay up.', '2005-11-22 00:00:00.000000', NULL),
+	(25, 'Road-150', 'Research, design and development of Road-150. This bike is ridden by race winners. Developed with the Adventure Works Cycles professional race team, it has a extremely light heat-treated aluminum frame, and steering that allows precision control.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(26, 'Road-250', 'Research, design and development of Road-250. Alluminum-alloy frame provides a light, stiff ride, whether you are racing in the velodrome or on a demanding club ride on country roads.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(27, 'Road-350-W', 'Research, design and development of Road-350-W. Cross-train, race, or just socialize on a sleek, aerodynamic bike designed for a woman.  Advanced seat technology provides comfort all day.', '2003-06-01 00:00:00.000000', NULL),
+	(28, 'Road-450', 'Research, design and development of Road-450. A true multi-sport bike that offers streamlined riding and a revolutionary design. Aerodynamic design lets you ride with the pros, and the gearing will conquer hilly roads.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(29, 'Road-550-W', 'Research, design and development of Road-550-W. Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(30, 'Road-650', 'Research, design and development of Road-650. Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we\'re famous for.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(31, 'Road-750', 'Research, design and development of Road-750. Entry level adult bike; offers a comfortable ride cross-country or down the block. Quick-release hubs and rims.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
+	(32, 'Short-Sleeve Classic Jersey', 'Research, design and development of Short-Sleeve Classic Jersey. Short sleeve classic breathable jersey with superior moisture control, front zipper, and 3 back pockets.', '2003-06-01 00:00:00.000000', NULL),
+	(33, 'Sport-100', 'Research, design and development of Sport-100. Universal fit, well-vented, lightweight , snap-on visor.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(34, 'Touring-1000', 'Research, design and development of Touring-1000. Travel in style and comfort. Designed for maximum comfort and safety. Wide gear range takes on all hills. High-tech aluminum alloy construction provides durability without added weight.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
+	(35, 'Touring-2000', 'Research, design and development of Touring-2000. The plush custom saddle keeps you riding all day,  and there\'s plenty of space to add panniers and bike bags to the newly-redesigned carrier.  This bike has stability when fully-loaded.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
+	(36, 'Touring-3000', 'Research, design and development of Touring-3000. All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
+	(37, 'Women\'s Mountain Shorts', 'Research, design and development of Women\'s Mountain Shorts. Heavy duty, abrasion-resistant shorts feature seamless, lycra inner shorts with anti-bacterial chamois for comfort.', '2003-06-01 00:00:00.000000', NULL),
+	(38, 'Women\'s Tights', 'Research, design and development of Women\'s Tights. Warm spandex tights for winter riding; seamless chamois construction eliminates pressure points.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(39, 'Mountain-400', 'Research, design and development of Mountain-400. Suitable for any type of off-road trip. Fits any budget.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(40, 'Road-550', 'Research, design and development of Road-550. Same technology as all of our Road series bikes.  Perfect all-around bike for road or racing.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(41, 'Road-350', 'Research, design and development of Road-350. Cross-train, race, or just socialize on a sleek, aerodynamic bike.  Advanced seat technology provides comfort all day.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
+	(42, 'LL Mountain Front Wheel', 'Research, design and development of LL Mountain Front Wheel. Replacement mountain wheel for entry-level rider.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
+	(43, 'Touring Rear Wheel', 'Research, design and development of Touring Rear Wheel. Excellent aerodynamic rims guarantee a smooth ride.', '2005-05-16 16:34:00.000000', NULL),
+	(44, 'Touring Front Wheel', 'Research, design and development of Touring Front Wheel. Aerodynamic rims for smooth riding.', '2005-05-16 16:34:00.000000', NULL),
+	(45, 'ML Mountain Front Wheel', 'Research, design and development of ML Mountain Front Wheel. Replacement mountain wheel for the casual to serious rider.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(46, 'HL Mountain Front Wheel', 'Research, design and development of HL Mountain Front Wheel. High-performance mountain replacement wheel.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(47, 'LL Touring Handlebars', 'Research, design and development of LL Touring Handlebars. Unique shape reduces fatigue for entry level riders.', '2005-05-16 16:34:00.000000', NULL),
+	(48, 'HL Touring Handlebars', 'Research, design and development of HL Touring Handlebars. A light yet stiff aluminum bar for long distance riding.', '2005-05-16 16:34:00.000000', NULL),
+	(49, 'LL Road Front Wheel', 'Research, design and development of LL Road Front Wheel. Replacement road front wheel for entry-level cyclist.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(50, 'ML Road Front Wheel', 'Research, design and development of ML Road Front Wheel. Sturdy alloy features a quick-release hub.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(51, 'HL Road Front Wheel', 'Research, design and development of HL Road Front Wheel. Strong wheel with double-walled rim.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(52, 'LL Mountain Handlebars', 'Research, design and development of LL Mountain Handlebars. All-purpose bar for on or off-road.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(53, 'Touring Pedal', 'Research, design and development of Touring Pedal. A stable pedal for all-day riding.', '2005-05-16 16:34:00.000000', NULL),
+	(54, 'ML Mountain Handlebars', 'Research, design and development of ML Mountain Handlebars. Tough aluminum alloy bars for downhill.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(55, 'HL Mountain Handlebars', 'Research, design and development of HL Mountain Handlebars. Flat bar strong enough for the pro circuit.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(56, 'LL Road Handlebars', 'Research, design and development of LL Road Handlebars. Unique shape provides easier reach to the levers.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(57, 'ML Road Handlebars', 'Research, design and development of ML Road Handlebars. Anatomically shaped aluminum tube bar will suit all riders.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(58, 'HL Road Handlebars', 'Research, design and development of HL Road Handlebars. Designed for racers; high-end anatomically shaped bar from aluminum alloy.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(59, 'LL Headset', 'Research, design and development of LL Headset. Threadless headset provides quality at an economical price.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(60, 'ML Headset', 'Research, design and development of ML Headset. Sealed cartridge keeps dirt out.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(61, 'HL Headset', 'Research, design and development of HL Headset. High-quality 1" threadless headset with a grease port for quick lubrication.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(77, 'ML Road Rear Wheel', 'Research, design and development of ML Road Rear Wheel. Aluminum alloy rim with stainless steel spokes; built for speed.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(78, 'HL Road Rear Wheel', 'Research, design and development of HL Road Rear Wheel. Strong rear wheel with double-walled rim.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(79, 'LL Mountain Seat/Saddle 2', 'Research, design and development of LL Mountain Seat/Saddle 2. Synthetic leather. Features gel for increased comfort.', '2003-06-01 00:00:00.000000', NULL),
+	(80, 'ML Mountain Seat/Saddle 2', 'Research, design and development of ML Mountain Seat/Saddle 2. Designed to absorb shock.', '2003-06-01 00:00:00.000000', '2004-03-11 10:32:00.000000'),
+	(104, 'LL Fork', 'Research, design and development of LL Fork. Stout design absorbs shock and offers more precise steering.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(105, 'ML Fork', 'Research, design and development of ML Fork. Composite road fork with an aluminum steerer tube.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(106, 'HL Fork', 'Research, design and development of HL Fork. High-performance carbon road fork with curved legs.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(107, 'Hydration Pack', 'Research, design and development of Hydration Pack. Versatile 70 oz hydration pack offers extra storage, easy-fill access, and a waist belt.', '2003-06-01 00:00:00.000000', NULL),
+	(108, 'Taillight', 'Research, design and development of Taillight. Affordable light for safe night riding - uses 3 AAA batteries', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(109, 'Headlights - Dual-Beam', 'Research, design and development of Headlights - Dual-Beam. Rechargeable dual-beam headlight.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(110, 'Headlights - Weatherproof', 'Research, design and development of Headlights - Weatherproof. Rugged weatherproof headlight.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(111, 'Water Bottle', 'Research, design and development of Water Bottle. AWC logo water bottle - holds 30 oz; leak-proof.', '2003-06-01 00:00:00.000000', NULL),
+	(112, 'Mountain Bottle Cage', 'Research, design and development of Mountain Bottle Cage. Tough aluminum cage holds bottle securly on tough terrain.', '2003-06-01 00:00:00.000000', NULL),
+	(113, 'Road Bottle Cage', 'Research, design and development of Road Bottle Cage. Aluminum cage is lighter than our mountain version; perfect for long distance trips.', '2004-02-21 00:00:00.000000', NULL),
+	(114, 'Patch kit', 'Research, design and development of Patch kit. Includes 8 different size patches, glue and sandpaper.', '2003-06-01 00:00:00.000000', NULL),
+	(115, 'Cable Lock', 'Research, design and development of Cable Lock. Wraps to fit front and rear tires, carrier and 2 keys included.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(116, 'Minipump', 'Research, design and development of Minipump. Designed for convenience. Fits in your pocket. Aluminum barrel. 160psi rated.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(117, 'Mountain Pump', 'Research, design and development of Mountain Pump. Simple and light-weight. Emergency patches stored in handle.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(118, 'Hitch Rack - 4-Bike', 'Research, design and development of Hitch Rack - 4-Bike. Carries 4 bikes securely; steel construction, fits 2" receiver hitch.', '2003-06-01 00:00:00.000000', NULL),
+	(119, 'Bike Wash', 'Research, design and development of Bike Wash. Washes off the toughest road grime; dissolves grease, environmentally safe. 1-liter bottle.', '2005-08-01 00:00:00.000000', NULL),
+	(120, 'Touring-Panniers', 'Research, design and development of Touring-Panniers. Durable, water-proof nylon construction with easy access. Large enough for weekend trips.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(121, 'Fender Set - Mountain', 'Research, design and development of Fender Set - Mountain. Clip-on fenders fit most mountain bikes.', '2003-06-01 00:00:00.000000', NULL),
+	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
+	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
+/\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
 
-DELETE FROM employees WHERE employee_id = 216;
-SELECT employee_id, first_name, last_name
-FROM deleted_employees as de order by employee_id;
+
+
+CREATE TABLE IF NOT EXISTS `towns` (
+  `town_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`town_id`),
+  UNIQUE KEY `PK_Towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+
+
+/\*!40000 ALTER TABLE `towns` DISABLE KEYS \*/;
+INSERT INTO `towns` (`town_id`, `name`) VALUES
+	(1, 'Redmond'),
+	(2, 'Calgary'),
+	(3, 'Edmonds'),
+	(4, 'Seattle'),
+	(5, 'Bellevue'),
+	(6, 'Issaquah'),
+	(7, 'Everett'),
+	(8, 'Bothell'),
+	(9, 'San Francisco'),
+	(10, 'Index'),
+	(11, 'Snohomish'),
+	(12, 'Monroe'),
+	(13, 'Renton'),
+	(14, 'Newport Hills'),
+	(15, 'Carnation'),
+	(16, 'Sammamish'),
+	(17, 'Duvall'),
+	(18, 'Gold Bar'),
+	(19, 'Nevada'),
+	(20, 'Kenmore'),
+	(21, 'Melbourne'),
+	(22, 'Kent'),
+	(23, 'Cambridge'),
+	(24, 'Minneapolis'),
+	(25, 'Portland'),
+	(26, 'Duluth'),
+	(27, 'Detroit'),
+	(28, 'Memphis'),
+	(29, 'Ottawa'),
+	(30, 'Bordeaux'),
+	(31, 'Berlin'),
+	(32, 'Sofia');
+/\*!40000 ALTER TABLE `towns` ENABLE KEYS \*/;
+/\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
+/\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
+/\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
 [/input]
 [output]
-deleted_employees
-employee_id
-first_name
-last_name
-middle_name
-job_title
-department_id
-salary
-employee_id
-1
-Mike
-Seamans
+A. Scott
+Wright
+Newport Hills
+1400 Gate Drive
+Alan
+Brewer
+Kenmore
+8192 Seagull Court
+Alejandro
+McGuel
+Seattle
+7842 Ygnacio Valley Road
+Alex
+Nayberg
+Newport Hills
+4350 Minute Dr.
+Alice
+Ciccu
+Snohomish
+3114 Notre Dame Ave.
 [/output]
 [/test]
 [test]
 [input]
-SELECT lower(TABLE_NAME)
-FROM information_schema.TABLES 
-WHERE lower(TABLE_SCHEMA) = database() and lower(TABLE_NAME) = 'deleted_employees';
 
-SELECT lower(COLUMN_NAME)
-FROM information_schema.COLUMNS 
-WHERE lower(TABLE_NAME) = 'deleted_employees';
+CREATE TABLE IF NOT EXISTS `towns` (
+  `town_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`town_id`),
+  UNIQUE KEY `PK_Towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
-SELECT lower(COLUMN_NAME)
-    FROM INFORMATION_SCHEMA.key_column_usage
-    WHERE TABLE_SCHEMA = database()
-    and CONSTRAINT_NAME='PRIMARY'
-    and lower(table_name) = 'deleted_employees';
-    
 
-DELETE FROM employees WHERE employee_id = 59;
-SELECT employee_id, first_name, last_name
-FROM deleted_employees as de order by employee_id;
+INSERT INTO `towns` (`town_id`, `name`) VALUES
+	(1, 'Redmond'),
+	(2, 'Calgary'),
+	(3, 'Edmonds');
+
+CREATE TABLE IF NOT EXISTS `addresses` (
+  `address_id` int(10) NOT NULL AUTO_INCREMENT,
+  `address_text` varchar(100) NOT NULL,
+  `town_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`address_id`),
+  UNIQUE KEY `PK_Addresses` (`address_id`),
+  KEY `fk_addresses_towns` (`town_id`),
+  CONSTRAINT `fk_addresses_towns` FOREIGN KEY (`town_id`) REFERENCES `towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
+
+
+/\*!40000 ALTER TABLE `addresses` DISABLE KEYS \*/;
+INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
+	(1, '108 Lakeside Court', 3),
+	(2, '1343 Prospect St', 2),
+	(3, '1648 Eastgate Lane', 3),
+	(4, '1000 Hristo Botev', 1);
+
+
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `PK_Departments` (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `PK_Employees` (`employee_id`),
+  CONSTRAINT `fk_employees_addresses` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
+
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 1),
+	(2, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 2),
+	(3, 'Cidny', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 3),
+	(4, 'David', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 4);
+
+
+
+CREATE TABLE IF NOT EXISTS `employees_projects` (
+  `employee_id` int(10) NOT NULL,
+  `project_id` int(10) NOT NULL,
+  PRIMARY KEY (`employee_id`,`project_id`),
+  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `PK_Projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
 [/input]
 [output]
-deleted_employees
-employee_id
-first_name
-last_name
-middle_name
-job_title
-department_id
-salary
-employee_id
-1
-Deborah
-Poe
+Antony
+Gilbert
+Edmonds
+108 Lakeside Court
+Bob
+Brown
+Calgary
+1343 Prospect St
+Cidny
+Tamburello
+Edmonds
+1648 Eastgate Lane
+David
+Walters
+Redmond
+1000 Hristo Botev
+[/output]
+[/test]
+[test]
+[input]
+
+CREATE TABLE IF NOT EXISTS `towns` (
+  `town_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`town_id`),
+  UNIQUE KEY `PK_Towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `towns` (`town_id`, `name`) VALUES
+	(1, 'Redmond'),
+	(2, 'Calgary'),
+	(3, 'Edmonds');
+
+CREATE TABLE IF NOT EXISTS `addresses` (
+  `address_id` int(10) NOT NULL AUTO_INCREMENT,
+  `address_text` varchar(100) NOT NULL,
+  `town_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`address_id`),
+  UNIQUE KEY `PK_Addresses` (`address_id`),
+  KEY `fk_addresses_towns` (`town_id`),
+  CONSTRAINT `fk_addresses_towns` FOREIGN KEY (`town_id`) REFERENCES `towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
+
+
+/\*!40000 ALTER TABLE `addresses` DISABLE KEYS \*/;
+INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
+	(1, '108 Lakeside Court', 3),
+	(2, '1343 Prospect St', 2),
+	(3, '1648 Eastgate Lane', 3),
+	(4, '1000 Hristo Botev', 1);
+
+
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `PK_Departments` (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `PK_Employees` (`employee_id`),
+  CONSTRAINT `fk_employees_addresses` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
+
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 4),
+	(2, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 1),
+	(3, 'Cidny', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 2),
+	(4, 'David', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 3);
+
+
+
+CREATE TABLE IF NOT EXISTS `employees_projects` (
+  `employee_id` int(10) NOT NULL,
+  `project_id` int(10) NOT NULL,
+  PRIMARY KEY (`employee_id`,`project_id`),
+  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `PK_Projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+[/input]
+[output]
+Antony
+Gilbert
+Redmond
+1000 Hristo Botev
+Bob
+Brown
+Edmonds
+108 Lakeside Court
+Cidny
+Tamburello
+Calgary
+1343 Prospect St
+David
+Walters
+Edmonds
+1648 Eastgate Lane
+[/output]
+[/test]
+[test]
+[input]
+
+CREATE TABLE IF NOT EXISTS `towns` (
+  `town_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`town_id`),
+  UNIQUE KEY `PK_Towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `towns` (`town_id`, `name`) VALUES
+	(1, 'Redmond'),
+	(2, 'Calgary'),
+	(3, 'Edmonds');
+
+CREATE TABLE IF NOT EXISTS `addresses` (
+  `address_id` int(10) NOT NULL AUTO_INCREMENT,
+  `address_text` varchar(100) NOT NULL,
+  `town_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`address_id`),
+  UNIQUE KEY `PK_Addresses` (`address_id`),
+  KEY `fk_addresses_towns` (`town_id`),
+  CONSTRAINT `fk_addresses_towns` FOREIGN KEY (`town_id`) REFERENCES `towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
+
+
+/\*!40000 ALTER TABLE `addresses` DISABLE KEYS \*/;
+INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
+	(1, '108 Lakeside Court', 3),
+	(2, '1343 Prospect St', 2),
+	(3, '1648 Eastgate Lane', 3),
+	(4, '1000 Hristo Botev', 1);
+
+
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `PK_Departments` (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `PK_Employees` (`employee_id`),
+  CONSTRAINT `fk_employees_addresses` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
+
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 4),
+	(2, 'Bob', 'Walton', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 1),
+	(3, 'Bob', 'Zanetti', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 2),
+	(4, 'Bob', 'Antony', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 3);
+
+
+
+CREATE TABLE IF NOT EXISTS `employees_projects` (
+  `employee_id` int(10) NOT NULL,
+  `project_id` int(10) NOT NULL,
+  PRIMARY KEY (`employee_id`,`project_id`),
+  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `PK_Projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+[/input]
+[output]
+Antony
+Gilbert
+Redmond
+1000 Hristo Botev
+Bob
+Antony
+Edmonds
+1648 Eastgate Lane
+Bob
+Walton
+Edmonds
+108 Lakeside Court
+Bob
+Zanetti
+Calgary
+1343 Prospect St
+[/output]
+[/test]
+[test]
+[input]
+
+CREATE TABLE IF NOT EXISTS `towns` (
+  `town_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`town_id`),
+  UNIQUE KEY `pk_towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `towns` (`town_id`, `name`) VALUES
+	(1, 'Redmond'),
+	(2, 'Calgary'),
+	(3, 'Edmonds'),
+	(4, 'Sofia'),
+	(5, 'Plovdiv'),
+	(6, 'Pazardjik');
+
+CREATE TABLE IF NOT EXISTS `addresses` (
+  `address_id` int(10) NOT NULL AUTO_INCREMENT,
+  `address_text` varchar(100) NOT NULL,
+  `town_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`address_id`),
+  UNIQUE KEY `PK_Addresses` (`address_id`),
+  KEY `fk_addresses_towns` (`town_id`),
+  CONSTRAINT `fk_addresses_towns` FOREIGN KEY (`town_id`) REFERENCES `towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
+
+
+/\*!40000 ALTER TABLE `addresses` DISABLE KEYS \*/;
+INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
+	(1, '108 Lakeside Court', 1),
+	(2, '1343 Prospect St', 2),
+	(3, '1648 Eastgate Lane', 3),
+	(4, '1000 Hristo Botev', 4),
+	(5, '1000 Tintiava', 5),
+	(6, '1000 Samuil', 6);
+
+
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `pk_departments` (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `pk_employees` (`employee_id`),
+  CONSTRAINT `fk_employees_addresses` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
+
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 1),
+	(2, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 2),
+	(3, 'Cidny', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 3),
+	(4, 'David', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 4),
+	(5, 'Edmond', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 5),
+	(6, 'Frank', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 6);
+
+
+
+CREATE TABLE IF NOT EXISTS `employees_projects` (
+  `employee_id` int(10) NOT NULL,
+  `project_id` int(10) NOT NULL,
+  PRIMARY KEY (`employee_id`,`project_id`),
+  UNIQUE KEY `pk_employees_projects` (`employee_id`,`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `pk_projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+[/input]
+[output]
+Antony
+Gilbert
+Redmond
+108 Lakeside Court
+Bob
+Brown
+Calgary
+1343 Prospect St
+Cidny
+Tamburello
+Edmonds
+1648 Eastgate Lane
+David
+Walters
+Sofia
+1000 Hristo Botev
+Edmond
+Tamburello
+Plovdiv
+1000 Tintiava
 [/output]
 [/test]
 [/tests]
