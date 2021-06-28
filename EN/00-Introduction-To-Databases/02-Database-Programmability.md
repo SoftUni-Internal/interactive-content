@@ -1825,8 +1825,6 @@ Sales
 [/test]
 [test]
 [input]
-\# test 1 : SELECT e.first_name, e.last_name, e.hire_date, d.name FROM employees AS e
-\#          INNER JOIN departments AS d ON d.department_id = e.department_id;
 
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -1911,9 +1909,6 @@ Finance
 [/test]
 [test]
 [input]
-\# test 2 : SELECT e.first_name, e.last_name, e.hire_date, d.name FROM employees AS e
-\#          INNER JOIN departments AS d ON d.department_id = e.department_id
-\#          WHERE date(e.hire_date) \> '19990101';
 
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -2000,9 +1995,6 @@ Finance
 [/test]
 [test]
 [input]
-\# test 3 : SELECT e.first_name, e.last_name, e.hire_date, d.name FROM employees AS e
-\#          INNER JOIN departments AS d ON d.department_id = e.department_id
-\#          WHERE date(e.hire_date) \> '19990101' AND d.name IN ('Sales', 'Finance');
 
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -2094,9 +2086,6 @@ Finance
 [/test]
 [test]
 [input]
-\# test 4 : SELECT e.first_name, e.last_name, e.hire_date, d.name FROM employees AS e
-\#          INNER JOIN departments AS d ON d.department_id = e.department_id
-\#          ORDER BY e.hire_date;
 
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
