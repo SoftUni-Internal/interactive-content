@@ -1,11 +1,11 @@
 # Homework
 
 [slide hideTitle]
-# Problem: Employee Summary123
+# Problem: Employee Summary Fixed
 [code-task title="Employee Summary" taskId="java-db-and-MySQL-subqueries-and-JOINs-employee-summary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
--- Write your query here
+-- Write your query here Fixed
 ```
 [/code-editor]
 [task-description]
@@ -39,7 +39,7 @@ Order by **employee_id**.
 [tests]
 [test open]
 [input]
-
+```
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
@@ -1708,10 +1708,10 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-
+```
 [/input]
 [output]
-
+```
 1
 Guy Gilbert
 Jo Brown
@@ -1732,12 +1732,12 @@ Tool Design
 Thierry D'Hers
 Ovidiu Cracium
 Tool Design
-
+```
 [/output]
 [/test]
 [test]
 [input]
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -1809,20 +1809,20 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `pk_towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-
+```
 [/input]
 [output]
-
+```
 3
 Cidney Andrews
 Fillip D'Hers
 Engineering
-
+```
 [/output]
 [/test]
 [test]
 [input]
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -1894,10 +1894,10 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `pk_towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-
+```
 [/input]
 [output]
-
+```
 1
 Fillip Kennedy
 Bob Brown
@@ -1918,12 +1918,12 @@ Marketing
 Antony Gilbert
 Fillip Kennedy
 Sales
-
+```
 [/output]
 [/test]
 [test]
 [input]
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -3588,10 +3588,10 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-
+```
 [/input]
 [output]
-
+```
 1
 Guy Gilbert
 Jo Brown
@@ -3612,7 +3612,7 @@ Tool Design
 Thierry D'Hers
 Ovidiu Cracium
 Tool Design
-
+```
 [/output]
 [/test]
 [/tests]
