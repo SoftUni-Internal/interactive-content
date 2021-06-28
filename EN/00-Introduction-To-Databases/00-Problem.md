@@ -1,11 +1,11 @@
 # Homework
 
 [slide hideTitle]
-# Problem: Employee Summary Fixed
+# Problem: Employee Summary Fixed Newest
 [code-task title="Employee Summary" taskId="java-db-and-MySQL-subqueries-and-JOINs-employee-summary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
--- Write your query here Fixed
+-- Write your query here Fixed Newest
 ```
 [/code-editor]
 [task-description]
@@ -51,6 +51,45 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+
+/*!40000 ALTER TABLE `towns` DISABLE KEYS */;
+INSERT INTO `towns` (`town_id`, `name`) VALUES
+	(1, 'Redmond'),
+	(2, 'Calgary'),
+	(3, 'Edmonds'),
+	(4, 'Seattle'),
+	(5, 'Bellevue'),
+	(6, 'Issaquah'),
+	(7, 'Everett'),
+	(8, 'Bothell'),
+	(9, 'San Francisco'),
+	(10, 'Index'),
+	(11, 'Snohomish'),
+	(12, 'Monroe'),
+	(13, 'Renton'),
+	(14, 'Newport Hills'),
+	(15, 'Carnation'),
+	(16, 'Sammamish'),
+	(17, 'Duvall'),
+	(18, 'Gold Bar'),
+	(19, 'Nevada'),
+	(20, 'Kenmore'),
+	(21, 'Melbourne'),
+	(22, 'Kent'),
+	(23, 'Cambridge'),
+	(24, 'Minneapolis'),
+	(25, 'Portland'),
+	(26, 'Duluth'),
+	(27, 'Detroit'),
+	(28, 'Memphis'),
+	(29, 'Ottawa'),
+	(30, 'Bordeaux'),
+	(31, 'Berlin'),
+	(32, 'Sofia');
+/*!40000 ALTER TABLE `towns` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -1670,44 +1709,7 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 
 
 
-/*!40000 ALTER TABLE `towns` DISABLE KEYS */;
-INSERT INTO `towns` (`town_id`, `name`) VALUES
-	(1, 'Redmond'),
-	(2, 'Calgary'),
-	(3, 'Edmonds'),
-	(4, 'Seattle'),
-	(5, 'Bellevue'),
-	(6, 'Issaquah'),
-	(7, 'Everett'),
-	(8, 'Bothell'),
-	(9, 'San Francisco'),
-	(10, 'Index'),
-	(11, 'Snohomish'),
-	(12, 'Monroe'),
-	(13, 'Renton'),
-	(14, 'Newport Hills'),
-	(15, 'Carnation'),
-	(16, 'Sammamish'),
-	(17, 'Duvall'),
-	(18, 'Gold Bar'),
-	(19, 'Nevada'),
-	(20, 'Kenmore'),
-	(21, 'Melbourne'),
-	(22, 'Kent'),
-	(23, 'Cambridge'),
-	(24, 'Minneapolis'),
-	(25, 'Portland'),
-	(26, 'Duluth'),
-	(27, 'Detroit'),
-	(28, 'Memphis'),
-	(29, 'Ottawa'),
-	(30, 'Bordeaux'),
-	(31, 'Berlin'),
-	(32, 'Sofia');
-/*!40000 ALTER TABLE `towns` ENABLE KEYS */;
-/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+
 ```
 [/input]
 [output]
