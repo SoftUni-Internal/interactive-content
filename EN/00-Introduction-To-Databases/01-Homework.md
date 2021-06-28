@@ -8782,8 +8782,7 @@ Denchev
 [/output]
 [/test]
 [/tests]
-
-
+[/code-task]
 [/slide]
 
 
