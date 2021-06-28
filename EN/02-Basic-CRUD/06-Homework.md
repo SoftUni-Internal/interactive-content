@@ -1,11 +1,20 @@
 # Homework
 
 [slide hideTitle]
-# Problem: Find All Information About Departments
+# Part 1 - Queries for the SoftUni Database 
 
 Here is a link to [the resources](ADD_THE_LINK) you will need for solving all the tasks in this Homework assignment.
 
-TODO: Generate tasks
+For part 1 run the provided sql code to create the **soft_uni_crud** database in **MySQL Workbench** before you begin.
+
+
+[/slide]
+
+[slide hideTitle]
+# Problem: Find All Information About Departments 
+
+TODO: Add task
+
 
 [/slide]
 
@@ -13,10 +22,10 @@ TODO: Generate tasks
 
 # Problem: Find all Department Names
 
-TODO: Generate tasks
+TODO: Add task
+
 
 [/slide]
-
 
 [slide hideTitle]
 # Problem: Find Salary of Each Employee 

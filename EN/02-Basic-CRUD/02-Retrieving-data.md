@@ -53,7 +53,7 @@ We will learn how to do this in the next lesson, for now just note that there is
 
 # Problem with Solution: Select Employee Information
 
-[code-task title="Select Employee Information" taskId="select-employee-info" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Select Employee Information" taskId="java-db-and-MySQL-basic-crud-select-employee-information" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -64,6 +64,10 @@ We will learn how to do this in the next lesson, for now just note that there is
 [task-description]
 ## Description
 
+Here is a [link](https://videos.softuni.org/resources/java/java-mysql/hotel_db_Lab.zip) to the resources for this task.
+
+Familiarize yourself with **the hotel database**.
+
 Write a query to select all employees and retrieve information about their **id**, **first_name**, **last_name** and **job_title** ordered by **id**.
 
 ## Example
@@ -72,8 +76,9 @@ Write a query to select all employees and retrieve information about their **id*
 | --- | --- | --- | --- |
 | 1 | John | Smith | Manager |
 | 2 | John | Johnson | Customer Service |
-| 3 | Smith | Johnson | Porter |
+| 3 | Samuel | Bridges | Porter |
 | ...  | ... | ...  | ... |
+
 
 [/task-description]
 [code-io /]
@@ -99,13 +104,13 @@ CREATE TABLE employees (
 INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
 	('John', 'Smith', 'Manager',1, 900.00),
 	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
+	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
+	('Alexander', 'Garner', 'Executive Chef', 3, 1800.00),
+	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
 1
@@ -117,44 +122,43 @@ John
 Johnson
 Customer Service
 3
-Smith
-Johnson
+Samuel
+Bridges
 Porter
 4
-Peter
-Petrov
+Carl
+Reeves
 Front Desk Clerk
 5
-Peter
-Ivanov
+Stanley
+Gibbs
 Sales
 6
-Ivan
-Petrov
+Edwin
+Young
 Waiter
 7
-Jack
-Jackson
+Alexander
+Garner
 Executive Chef
 8
-Pedro
-Petrov
+Maxwell
+Pearson
 Front Desk Supervisor
 9
-Nikolay
-Ivanov
+Eileen
+Clayton
 Housekeeping
 [/output]
 [/test]
 [/tests]
 [/code-task]
-
 [/slide]
 
 [slide hideTitle]
 # Problem with Solution: Select Employees with Filter
 
-[code-task title="Select Employees with Filter" taskId="select-employee-info-filter" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Select Employees with Filter" taskId="java-db-and-MySQL-basic-crud-select-employee-info-filter" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -171,9 +175,9 @@ Write a query to select all employees (**id**, **first_name** and **last_name**,
 
 | **id** | **full_name** | **job_title** | **salary** | 
 | --- | --- | --- | --- |
-| 3 | Smith Johnson | Porter | 1100 |
-| 4 | Peter Petrov | Front Desk Clerk | 1100 |
-| 5 | Peter Ivanov | Sales | 1500.23 |
+| 3 | Samuuel Bridges | Porter | 1100 |
+| 4 | Carl Reeves | Front Desk Clerk | 1100 |
+| 5 | Stanley Gibbs | Sales | 1500.23 |
 | ...  | ... | ...  | ... |
 
 [/task-description]
@@ -201,37 +205,37 @@ CREATE TABLE employees (
 INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
 	('John', 'Smith', 'Manager',1, 900.00),
 	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
+	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
+	('Alexander', 'Garner', 'Executive Chef', 3, 1800.00),
+	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
 3
-Smith Johnson
+Samuel Bridges
 Porter
 1100
 4
-Peter Petrov
+Carl Reeves
 Front Desk Clerk
 1100
 5
-Peter Ivanov
+Stanley Gibbs
 Sales
 1500.23
 7
-Jack Jackson
+Alexander Garner
 Executive Chef
 1800
 8
-Pedro Petrov
+Maxwell Pearson
 Front Desk Supervisor
 2100
 9
-Nikolay Ivanov
+Eileen Clayton
 Housekeeping
 1600
 [/output]
@@ -257,37 +261,37 @@ CREATE TABLE employees (
 INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
 	('John', 'Smith', 'Manager',1, 900.00),
 	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
+	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
+	('Alexander', 'Garner', 'Executive Chef', 3, 1800.00),
+	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
 3
-Smith Johnson
+Samuel Bridges
 Porter
 1100
 4
-Peter Petrov
+Carl Reeves
 Front Desk Clerk
 1100
 5
-Peter Ivanov
+Stanley Gibbs
 Sales
 1500.23
 7
-Jack Jackson
+Alexander Garner
 Executive Chef
 1800
 8
-Pedro Petrov
+Maxwell Pearson
 Front Desk Supervisor
 2100
 9
-Nikolay Ivanov
+Eileen Clayton
 Housekeeping
 1600
 [/output]
@@ -295,7 +299,6 @@ Housekeeping
 [/tests]
 [/code-task]
 [/slide]
-
 [slide hideTitle]
 
 # Other Comparison Conditions
@@ -368,7 +371,7 @@ We want to use **IN/NOT IN** operators when we know the exact value we want, fol
 [slide hideTitle]
 # Problem with Solution: Select Employees by Multiple Criteria
 
-[code-task title="Select Employees by Multiple Criteria" taskId="select-employee-info-filter-multiple" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Select Employees by Multiple Criteria" taskId="java-db-and-MySQL-basic-crud-select-employee-info-filter-multiple" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -385,8 +388,9 @@ Write a query to retrieve information about employees, who are in **department 4
 
 | id | first_name | last_name | job_title | department_id | salary |
 | --- | --- | --- | --- | --- | --- |
-| 3 | Smith | Johnson | Porter | 4 | 1100 |
-| 9 | Nikolay | Ivanov | Housekeeping | 4 | 1600 |
+| 3 | Samuel | Bridges | Porter | 4 | 1100 |
+| 9 | Eileen | Clayton | Housekeeping | 4 | 1600 |
+
 
 
 [/task-description]
@@ -416,24 +420,24 @@ CREATE TABLE employees (
 INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
 	('John', 'Smith', 'Manager',1, 900.00),
 	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
+	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
+	('Alexander', 'Garner', 'Executive Chef', 3, 1800.00),
+	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
 3
-Smith
-Johnson
+Samuel
+Bridges
 Porter
 4
 1100
 9
-Nikolay
-Ivanov
+Eileen
+Clayton
 Housekeeping
 4
 1600
@@ -463,24 +467,24 @@ CREATE TABLE employees (
 INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
 	('John', 'Smith', 'Manager',1, 900.00),
 	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
+	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
+	('Alexander', 'Garner', 'Executive Chef', 3, 1800.00),
+	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
 3
-Smith
-Johnson
+Samuel
+Bridges
 Porter
 4
 1100
 9
-Nikolay
-Ivanov
+Eileen
+Clayton
 Housekeeping
 4
 1600
@@ -489,6 +493,7 @@ Housekeeping
 [/tests]
 [/code-task]
 [/slide]
+
 [slide hideTitle]
 
 # Comparison with NULL
@@ -603,7 +608,7 @@ This way of access management is quite common in organizations where certain peo
 [slide hideTitle]
 # Problem with Solution: Top Paid Employee
 
-[code-task title="Top Paid Employee" taskId="top-paid-employee" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Top Paid Employee" taskId="java-db-and-MySQL-basic-crud-top-paid-employee" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -620,7 +625,7 @@ Write a query to **create a view** that selects all information about the **top 
 
 | **id** | **first_name** | **last_name** | **job_title** | **department_id** | **salary** |
 | --- | --- | --- | --- | --- | --- |
-| 8 | Pedro | Petrov | Front Desk Supervisor | 1 | 2100 |
+| 8 | Maxwell | Pearson | Front Desk Supervisor | 1 | 2100 |
 
 [/task-description]
 [code-io /]
@@ -647,18 +652,18 @@ CREATE TABLE employees (
 INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
 	('John', 'Smith', 'Manager',1, 900.00),
 	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
+	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
+	('Alexander', 'Garner', 'Executive Chef', 3, 1800.00),
+	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
 8
-Pedro
-Petrov
+Maxwell
+Pearson
 Front Desk Supervisor
 1
 2100
@@ -687,18 +692,18 @@ CREATE TABLE employees (
 INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
 	('John', 'Smith', 'Manager',1, 900.00),
 	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
+	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
+	('Alexander', 'Garner', 'Executive Chef', 3, 1800.00),
+	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
 8
-Pedro
-Petrov
+Maxwell
+Pearson
 Front Desk Supervisor
 1
 2100

@@ -20,7 +20,7 @@ Make sure you do not forget to filter the records you want to change otherwise t
 [slide hideTitle]
 # Problem with Solution: Update Employees' Salary
 
-[code-task title="Update Employees' Salary" taskId="update-employees-salary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Update Employees' Salary" taskId="java-db-and-MySQL-basic-crud-update-employees-salary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -49,7 +49,7 @@ SET SQL_SAFE_UPDATES = 0
 
 | **salary** |
 | --- |
-| 1100 | 
+| 1000 | 
 | 880 | 
 | 1100 | 
 | 1100 | 
@@ -82,13 +82,13 @@ CREATE TABLE employees (
 INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
 	('John', 'Smith', 'Manager',1, 900.00),
 	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
+	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
 	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
 1000
@@ -126,13 +126,13 @@ CREATE TABLE employees (
 INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
 	('John', 'Smith', 'Manager',1, 900.00),
 	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
-	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
-	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
+	('Carl', 'Reeves', 'Front Desk Clerk', 1, 1100.00),
+	('Stanley', 'Gibbs', 'Sales', 2, 1500.23),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
 	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
-	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+	('Maxwell', 'Pearson', 'Front Desk Supervisor', 1, 2100.00),
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
 1000
@@ -178,13 +178,14 @@ TRUNCATE TABLE `users`;
 [slide hideTitle]
 # Problem with Solution: Delete from Table
 
-[code-task title="Delete from Table" taskId="delete-from-table-o" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Delete from Table" taskId="java-db-and-MySQL-basic-crud-delete-from-table" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
 
 ```
 [/code-editor]
+
 
 [task-description]
 ## Description
@@ -195,10 +196,10 @@ Write a query that **deletes all employees who are in departments 1 or 2** from 
 
 | id | first_name | last_name | job_title | department_id | salary |
 | --- | --- | --- | --- | --- | --- |
-| 3 | Smith | Johnson | Porter | 4 | 1100 |
-| 6 | Ivan | Petrov | Waiter | 3 | 990 |
-| 7 | Jack | Jackson | Executive Chef | 3 | 1800 |
-| 9 | Nikolay | Ivanov | Housekeeping | 4 | 1600 |
+| 3 | Samuel | Bridges | Porter | 4 | 1100 |
+| 6 | Edwin | Young | Waiter | 3 | 990 |
+| 7 | Alexander | Garner | Executive Chef | 3 | 1800 |
+| 9 | Eileen | Clayton | Housekeeping | 4 | 1600 |
 
 [/task-description]
 [code-io /]
@@ -227,36 +228,36 @@ CREATE TABLE employees (
 INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
 	('John', 'Smith', 'Manager',1, 900.00),
 	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
 	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
 	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
+	('Alexander', 'Garner', 'Executive Chef', 3, 1800.00),
 	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
 3
-Smith
-Johnson
+Samuel
+Bridges
 Porter
 4
 1100
 6
-Ivan
-Petrov
+Edwin
+Young
 Waiter
 3
 990
 7
-Jack
-Jackson
+Alexander
+Garner
 Executive Chef
 3
 1800
 9
-Nikolay
-Ivanov
+Eileen
+Clayton
 Housekeeping
 4
 1600
@@ -286,36 +287,36 @@ CREATE TABLE employees (
 INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`salary`) VALUES
 	('John', 'Smith', 'Manager',1, 900.00),
 	('John', 'Johnson', 'Customer Service',2, 880.00),
-	('Smith', 'Johnson', 'Porter', 4, 1100.00),
+	('Samuel', 'Bridges', 'Porter', 4, 1100.00),
 	('Peter', 'Petrov', 'Front Desk Clerk', 1, 1100.00),
 	('Peter', 'Ivanov', 'Sales', 2, 1500.23),
-	('Ivan' ,'Petrov', 'Waiter', 3, 990.00),
-	('Jack', 'Jackson', 'Executive Chef', 3, 1800.00),
+	('Edwin' ,'Young', 'Waiter', 3, 990.00),
+	('Alexander', 'Garner', 'Executive Chef', 3, 1800.00),
 	('Pedro', 'Petrov', 'Front Desk Supervisor', 1, 2100.00),
-	('Nikolay', 'Ivanov', 'Housekeeping', 4, 1600.00);
+	('Eileen', 'Clayton', 'Housekeeping', 4, 1600.00);
 [/input]
 [output]
 3
-Smith
-Johnson
+Samuel
+Bridges
 Porter
 4
 1100
 6
-Ivan
-Petrov
+Edwin
+Young
 Waiter
 3
 990
 7
-Jack
-Jackson
+Alexander
+Garner
 Executive Chef
 3
 1800
 9
-Nikolay
-Ivanov
+Eileen
+Clayton
 Housekeeping
 4
 1600

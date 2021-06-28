@@ -31,3 +31,22 @@
 - How to filter results from grouping
     
 [/slide]
+
+[slide hideTitle]
+# Resources
+
+## Lab problems
+
+|**Problem Name**|**Database**|
+|---|---|
+|Managers|[SoftUni Database]()|
+|Towns Addresses|SoftUni Database|
+|Employees Without Managers|SoftUni Database|
+|Higher Salary|SoftUni Database|
+
+
+## Homework
+
+For problems from "**Employee Address**" to "**Min Average Salary**" (inclusively), use the [SoftUni Database]() database, and for the others - use [Geography Database]().
+
+[/slide]
