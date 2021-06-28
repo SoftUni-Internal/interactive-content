@@ -42,7 +42,7 @@ Write an SQL query to find **all available information about the departments in 
 [tests]
 [test open]
 [input]
-```
+
 CREATE TABLE IF NOT EXISTS `departments` (
   `department_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -71,7 +71,7 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
 /\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
-```
+
 [/input]
 [output]
 1
@@ -126,7 +126,7 @@ Executive
 [/test]
 [test]
 [input]
-```
+
 CREATE TABLE IF NOT EXISTS `departments` (
   `department_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -155,7 +155,6 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
 /\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
-```
 [/input]
 [output]
 1
