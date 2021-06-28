@@ -1,6 +1,6 @@
 [slide hideTitle]
-# Problem: Employees with Project
-[code-task title="Employees with Project" taskId="java-db-and-MySQL-subqueries-and-JOINs-employees-with-project" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+# Problem: Employee 24
+[code-task title="Employee 24" taskId="java-db-and-MySQL-subqueries-and-JOINs-employee-24" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
 ```
@@ -19,19 +19,20 @@ Write a query that selects the following fields:
 
 - **project_name**
 
-Filter only the employees who are working on a project that has started after **13.08.2002** and it is still ongoing (no end date). 
+Return all the **projects** of employees with **id equal to 24**. 
 
-Return the first 5 rows sorted by **first_name then by project_name both in ascending order.**
+If the project has started after **2005 inclusively**, the return value should be **NULL**. 
+
+Sort the result by **project_name alphabetically.**
 
 
 ## Example
 
-| **employee_id** | **first_name** |**project_name** | 
+| **employee_id** | **first_name** |**last_name** | 
 | --- | --- | --- | 
-|44|	A. Scott|	Hitch Rack - 4-Bike|	
-|170	|Alan|	LL Touring Handlebars|
-|...|	...|	...|
-
+|24|	David|	NULL|	
+|24	|David|	NULL	|
+|24|	David|	Road-650|
 
 [/task-description]
 [code-io /]
@@ -1713,27 +1714,24 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [/input]
 [output]
 ```
-44
-A. Scott
-Hitch Rack - 4-Bike
-170
-Alan
-LL Touring Handlebars
-155
-Alex
-Hitch Rack - 4-Bike
-145
-Andreas
-Touring Pedal
-185
-Andrew
-HL Touring Handlebars
+24
+David
+
+24
+David
+
+24
+David
+
+24
+David
+Road-650
 ```
 [/output]
 [/test]
 [test]
 [input]
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -1769,7 +1767,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
 
 /*!40000 ALTER TABLE `employees` DISABLE KEYS */;
 INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
+	(24, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '2006-07-31 00:00:00.000000', 12500.0000, 166),
 	(2, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
 	(3, 'Cidney', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Dadiv', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
@@ -1784,11 +1782,8 @@ CREATE TABLE IF NOT EXISTS `employees_projects` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
-	(1, 2),
-	(2, 1),
-	(3, 1),
-	(4, 2),
-	(5, 1);
+	(24, 2),
+	(24, 1);
 
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -1810,28 +1805,22 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `pk_towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
-1
+```
+24
+Antony
+Classic Vest
+24
 Antony
 Cycling Cap
-2
-Bob
-Classic Vest
-3
-Cidney
-Classic Vest
-4
-Dadiv
-Cycling Cap
-5
-Fillip
-Classic Vest
+```
 [/output]
 [/test]
 [test]
 [input]
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -1867,7 +1856,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
 
 /*!40000 ALTER TABLE `employees` DISABLE KEYS */;
 INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
+	(24, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '2006-07-31 00:00:00.000000', 12500.0000, 166),
 	(2, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
 	(3, 'Cidney', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Dadiv', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
@@ -1882,11 +1871,8 @@ CREATE TABLE IF NOT EXISTS `employees_projects` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
-	(1, 1),
-	(2, 2),
-	(3, 3),
-	(4, 4),
-	(5, 5);
+	(24, 2),
+	(24, 1);
 
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -1899,11 +1885,8 @@ CREATE TABLE IF NOT EXISTS `projects` (
 ) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
 
 INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2002-08-13 00:00:00.000000', NULL),
-	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2002-08-13 01:00:00.000000', NULL),
-	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2002-08-14 00:00:00.000000', NULL),
-	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2003-06-01 00:00:00.000000', NULL),
-	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2004-06-01 00:00:00.000000', NULL);
+	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2005-01-01 00:00:00.000000', NULL),
+	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2004-06-01 00:00:00.000000', NULL);
 
 CREATE TABLE IF NOT EXISTS `towns` (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -1911,22 +1894,22 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `pk_towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
-3
-Cidney
-Full-Finger Gloves
-4
-Dadiv
-Half-Finger Gloves
-5
-Fillip
-HL Mountain Frame
+```
+24
+Antony
+
+24
+Antony
+Cycling Cap
+```
 [/output]
 [/test]
 [test]
 [input]
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -1962,7 +1945,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
 
 /*!40000 ALTER TABLE `employees` DISABLE KEYS */;
 INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
+	(24, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '2006-07-31 00:00:00.000000', 12500.0000, 166),
 	(2, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
 	(3, 'Cidney', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Dadiv', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
@@ -1977,12 +1960,10 @@ CREATE TABLE IF NOT EXISTS `employees_projects` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
-	(1, 1),
-	(2, 2),
-	(3, 3),
-	(4, 4),
-	(5, 5);
-
+	(24, 3),
+	(2, 1),
+	(3, 2),
+	(5, 3);
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -1994,34 +1975,28 @@ CREATE TABLE IF NOT EXISTS `projects` (
 ) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
 
 INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2002-09-13 00:00:00.000000', NULL),
-	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2002-10-13 01:00:00.000000', NULL),
-	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2002-08-14 00:00:00.000000', '2005-06-01 00:00:00.000000'),
-	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2003-06-01 00:00:00.000000', NULL),
-	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2004-06-01 00:00:00.000000', '2007-06-01 00:00:00.000000');
-
+	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2007-01-01 00:00:00.000000', NULL),
+	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2009-06-01 00:00:00.000000', NULL),
+	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2004-06-01 00:00:00.000000', '2011-06-01 00:00:00.000000');
 CREATE TABLE IF NOT EXISTS `towns` (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `pk_towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
-1
+```
+24
 Antony
-Classic Vest
-2
-Bob
-Cycling Cap
-4
-Dadiv
-Half-Finger Gloves
+Full-Finger Gloves
+```
 [/output]
 [/test]
 [test]
 [input]
-
+```
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
@@ -2057,12 +2032,11 @@ CREATE TABLE IF NOT EXISTS `employees` (
 
 /*!40000 ALTER TABLE `employees` DISABLE KEYS */;
 INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
+	(24, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '2006-07-31 00:00:00.000000', 12500.0000, 166),
 	(2, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
 	(3, 'Cidney', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Dadiv', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Fillip', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
-	(6, 'Gilles', 'Bradley', 'M', 'Marketing Manager', 5, 109, '2000-01-20 00:00:00.000000', 37500.0000, 199);
+	(5, 'Fillip', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
 
 
 CREATE TABLE IF NOT EXISTS `employees_projects` (
@@ -2073,13 +2047,9 @@ CREATE TABLE IF NOT EXISTS `employees_projects` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
-	(1, 1),
-	(2, 2),
-	(3, 3),
-	(4, 4),
-	(5, 5),
-	(6, 1);
-
+	(24, 2),
+	(24, 1),
+	(24, 3);
 CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
@@ -2091,239 +2061,29 @@ CREATE TABLE IF NOT EXISTS `projects` (
 ) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
 
 INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2002-09-13 00:00:00.000000', NULL),
-	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2002-10-13 01:00:00.000000', NULL),
-	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2002-08-14 00:00:00.000000', NULL),
-	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2003-06-01 00:00:00.000000', NULL),
-	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2004-06-01 00:00:00.000000', NULL);
-
+	(1, 'CCC', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2003-01-01 00:00:00.000000', NULL),
+	(2, 'AAA', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2002-06-01 00:00:00.000000', NULL),
+	(3, 'BBB', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2001-06-01 00:00:00.000000', '2011-06-01 00:00:00.000000');
 CREATE TABLE IF NOT EXISTS `towns` (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `pk_towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
-1
-Antony
-Classic Vest
-2
-Bob
-Cycling Cap
-3
-Cidney
-Full-Finger Gloves
-4
-Dadiv
-Half-Finger Gloves
-5
-Fillip
-HL Mountain Frame
-[/output]
-[/test]
-[test]
-[input]
-
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `pk_addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `pk_employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-
-/*!40000 ALTER TABLE `employees` DISABLE KEYS */;
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Gilles', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
-	(2, 'Fillip', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
-	(3, 'Bob', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
-	(4, 'Dadiv', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Cidney', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
-	(6, 'Antony', 'Bradley', 'M', 'Marketing Manager', 5, 109, '2000-01-20 00:00:00.000000', 37500.0000, 199);
-
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `pk_employees_projects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
-	(3, 1),
-	(4, 2),
-	(5, 3),
-	(1, 4),
-	(2, 5);
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `pk_projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2002-09-13 00:00:00.000000', NULL),
-	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2002-10-13 01:00:00.000000', NULL),
-	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2002-08-14 00:00:00.000000', NULL),
-	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2003-06-01 00:00:00.000000', NULL),
-	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2004-06-01 00:00:00.000000', NULL);
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `pk_towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-[/input]
-[output]
-3
-Bob
-Classic Vest
-5
-Cidney
-Full-Finger Gloves
-4
-Dadiv
-Cycling Cap
-2
-Fillip
-HL Mountain Frame
-1
-Gilles
-Half-Finger Gloves
-[/output]
-[/test]
-[test]
-[input]
-
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `pk_addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `pk_employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-
-/*!40000 ALTER TABLE `employees` DISABLE KEYS */;
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Gilles', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
-	(2, 'BobAntony', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
-	(3, 'Antony', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
-	(4, 'Antony', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Antony', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
-	(6, 'Gilles', 'Bradley', 'M', 'Marketing Manager', 5, 109, '2000-01-20 00:00:00.000000', 37500.0000, 199);
-
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `pk_employees_projects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
-	(3, 1),
-	(4, 2),
-	(5, 3),
-	(1, 4),
-	(2, 5);
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `pk_projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'BBB', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2002-09-13 00:00:00.000000', NULL),
-	(2, 'AAA', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2002-10-13 01:00:00.000000', NULL),
-	(3, 'CCC', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2002-08-14 00:00:00.000000', NULL),
-	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2003-06-01 00:00:00.000000', NULL),
-	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2004-06-01 00:00:00.000000', NULL);
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `pk_towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-[/input]
-[output]
-4
+```
+24
 Antony
 AAA
-3
+24
 Antony
 BBB
-5
+24
 Antony
 CCC
-2
-BobAntony
-HL Mountain Frame
-1
-Gilles
-Half-Finger Gloves
+```
 [/output]
 [/test]
 [/tests]
