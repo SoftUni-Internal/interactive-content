@@ -841,28 +841,365 @@ username
 
 [slide hideTitle]
 
-# Problem: Set Default Value of a Field
-
-TODO: Generate problem
-
+# Problem: Set a Default Value of a Field
+[code-task title="Set a Default Value of a Field" taskId="MySQL-Data-Definitions-and-Data-Types-Set-A-Default-Value-Of-A-Field" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+[code-editor language=sql]
+```
+-- Write your query here
+```
+[/code-editor]
+[code-adapter]
+CREATE TABLE IF NOT EXISTS users
+(
+id BIGINT NOT NULL AUTO_INCREMENT,
+username VARCHAR(30) NOT NULL,
+password VARCHAR(26) NOT NULL,
+profile_picture BLOB,
+last_login_time DATETIME,
+is_deleted INT,
+CONSTRAINT pk_users PRIMARY KEY (id)
+);
+[/code-adapter]
+[task-description]
+## Description
+Using **SQL queries**, modify the **default value** of **last_login_time** field to be the **current time**.
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+SELECT TABLE_NAME, COLUMN_NAME, COLUMN_DEFAULT
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE table_name = 'users' and column_name='last_login_time ' AND COLUMN_DEFAULT IS NOT NULL;
+[/input]
+[output]
+users
+last_login_time
+CURRENT_TIMESTAMP
+[/output]
+[/test]
+[test]
+[input]
+SELECT TABLE_NAME, COLUMN_NAME
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE table_name = 'users' and column_name='last_login_time ' AND COLUMN_DEFAULT IS NOT NULL;
+[/input]
+[output]
+users
+last_login_time
+[/output]
+[/test]
+[test]
+[input]
+SELECT TABLE_NAME, COLUMN_NAME, COLUMN_DEFAULT
+FROM INFORMATION_SCHEMA.COLUMNS 
+WHERE table_name = 'users' and column_name='last_login_time ' AND COLUMN_DEFAULT IS NOT NULL;
+[/input]
+[output]
+users
+last_login_time
+CURRENT_TIMESTAMP
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 
 [slide hideTitle]
 
-# Problem: Set Unique Field
+# Problem: Set a Unique Field
+[code-task title="Set a Unique Field" taskId="MySQL-Data-Definitions-and-Data-Types-Set-A-Unique-Field" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+[code-editor language=sql]
+```
+-- Write your query here
+```
+[/code-editor]
+[code-adapter]
+drop table if exists users;
+create table users
+(
+id bigint not null auto_increment,
+username varchar(30) not null,
+password varchar(26) not null,
+profile_picture blob,
+last_login_time datetime,
+is_deleted int,
+constraint pk_users primary key (id, username)
+);
+[/code-adapter]
+[task-description]
+## Description
+Using **SQL queries** modify the **users** table.
 
-TODO: Generate problem
+Remove the **username** field from the primary key so only the **id** field would be primary key.
 
+Now **add a unique constraint** to the **username** field.
+
+The initial primary key name is **pk_users**.
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+SELECT DISTINCT lower(column_name)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and constraint_name = 'PRIMARY'
+    and lower(table_name) = 'users';
+	
+    SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS
+	WHERE TABLE_SCHEMA = database()
+    AND COLUMN_KEY = 'UNI';
+[/input]
+[output]
+id
+username
+[/output]
+[/test]
+[test]
+[input]
+SELECT DISTINCT lower(column_name)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and constraint_name = 'PRIMARY'
+    and lower(table_name) = 'users';
+[/input]
+[output]
+id
+[/output]
+[/test]
+[test]
+[input]
+SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS
+	WHERE TABLE_SCHEMA = database()
+    AND COLUMN_KEY = 'UNI';
+[/input]
+[output]
+username
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 
 [slide hideTitle]
 
 # Problem: Movies Database
+[code-task title="Movies Database" taskId="MySQL-Data-Definitions-and-Data-Types-Movies-Database" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+[code-editor language=sql]
+```
+-- Write your query here
+```
+[/code-editor]
+[task-description]
+## Description
 
-TODO: Generate problem
+Using **SQL queries** create the **Movies** database with the following entities: 
 
+- **directors** (id, director_name, notes)  
+
+  - director_name cannot be null 
+
+- **genres** (id, genre_name, notes)  
+
+  - genre_name cannot be null 
+
+- **categories** (id, category_name, notes)   
+
+  - category_name cannot be null 
+
+- **movies** (id, title, director_id, copyright_year, length, genre_id, category_id, rating, notes) 
+
+  - title cannot be null 
+
+Set **appropriate data types** for each column. 
+
+**Set a primary key** to each table. 
+
+Populate each table with **5 records**. 
+
+Make sure the columns that are present in any 2 tables would be of the **same data type**. 
+
+Define which fields are required and which are optional.  
+
+[/task-description]
+[code-io /]
+[tests]
+[test]
+[input]
+SELECT lower(TABLE_NAME)
+FROM information_schema.TABLES
+WHERE lower(TABLE_SCHEMA) = database() and lower(TABLE_NAME) = 'directors'
+order by lower(TABLE_NAME);
+
+SELECT DISTINCT (lower(COLUMN_NAME))
+FROM information_schema.COLUMNS
+WHERE lower(TABLE_NAME) = 'directors'
+order by lower(COLUMN_NAME);
+
+SELECT DISTINCT lower(column_name)
+FROM INFORMATION_SCHEMA.key_column_usage
+WHERE TABLE_SCHEMA = database() and lower(table_name) = 'directors'
+order by lower(COLUMN_NAME);
+[/input]
+[output]
+directors
+director_name
+id
+notes
+id
+[/output]
+[/test]
+[test]
+[input]
+SELECT lower(TABLE_NAME)
+FROM information_schema.TABLES
+WHERE lower(TABLE_SCHEMA) = database() and lower(TABLE_NAME) = 'genres'
+order by lower(TABLE_NAME);
+
+SELECT distinct lower(COLUMN_NAME)
+FROM information_schema.COLUMNS
+WHERE lower(TABLE_NAME) = 'genres'
+order by lower(COLUMN_NAME);
+
+SELECT DISTINCT lower(column_name)
+FROM INFORMATION_SCHEMA.key_column_usage
+WHERE TABLE_SCHEMA = database()
+  and lower(table_name) = 'genres'
+order by lower(COLUMN_NAME);
+[/input]
+[output]
+genres
+genre_name
+id
+notes
+id
+[/output]
+[/test]
+[test]
+[input]
+SELECT lower(TABLE_NAME)
+FROM information_schema.TABLES
+WHERE lower(TABLE_SCHEMA) = database()
+  and lower(TABLE_NAME) = 'categories'
+order by lower(TABLE_NAME);
+
+SELECT lower(COLUMN_NAME)
+FROM information_schema.COLUMNS
+WHERE lower(TABLE_SCHEMA) = database()
+  and lower(TABLE_NAME) = 'categories'
+order by lower(COLUMN_NAME);
+
+SELECT DISTINCT lower(column_name)
+FROM INFORMATION_SCHEMA.key_column_usage
+WHERE TABLE_SCHEMA = database()
+  and lower(table_name) = 'categories'
+order by lower(COLUMN_NAME);
+[/input]
+[output]
+categories
+category_name
+id
+notes
+id
+[/output]
+[/test]
+[test]
+[input]
+SELECT lower(TABLE_NAME)
+FROM information_schema.TABLES
+WHERE lower(TABLE_SCHEMA) = database() and lower(TABLE_NAME) = 'movies'
+order by lower(TABLE_NAME);
+
+SELECT Distinct(lower(COLUMN_NAME))
+FROM information_schema.COLUMNS
+WHERE lower(TABLE_NAME) = 'movies'
+order by lower(COLUMN_NAME);
+
+SELECT DISTINCT lower(column_name)
+FROM INFORMATION_SCHEMA.key_column_usage
+WHERE TABLE_SCHEMA = database()
+  and lower(table_name) = 'movies'
+order by lower(column_name);
+[/input]
+[output]
+movies
+category_id
+copyright_year
+director_id
+genre_id
+id
+length
+notes
+rating
+title
+id
+[/output]
+[/test]
+[test]
+[input]
+select count(id) from directors;
+[/input]
+[output]
+5
+[/output]
+[/test]
+[test]
+[input]
+select count(id) from categories;
+[/input]
+[output]
+5
+[/output]
+[/test]
+[test]
+[input]
+SELECT distinct lower(TABLE_NAME), lower(COLUMN_NAME) 
+FROM information_schema.COLUMNS 
+WHERE lower(TABLE_NAME) = 'directors' and lower(COLUMN_NAME) = 'director_name' AND IS_NULLABLE = 'NO';
+[/input]
+[output]
+directors
+director_name
+[/output]
+[/test]
+[test]
+[input]
+SELECT distinct lower(TABLE_NAME), lower(COLUMN_NAME) 
+FROM information_schema.COLUMNS 
+WHERE lower(TABLE_NAME) = 'genres' and lower(COLUMN_NAME) = 'genre_name' AND IS_NULLABLE = 'NO';
+[/input]
+[output]
+genres
+genre_name
+[/output]
+[/test]
+[test]
+[input]
+SELECT distinct lower(TABLE_NAME), lower(COLUMN_NAME) 
+FROM information_schema.COLUMNS 
+WHERE lower(TABLE_NAME) = 'categories' and lower(COLUMN_NAME) = 'category_name' AND IS_NULLABLE = 'NO';
+[/input]
+[output]
+categories
+category_name
+[/output]
+[/test]
+[test]
+[input]
+SELECT distinct lower(TABLE_NAME), lower(COLUMN_NAME) 
+FROM information_schema.COLUMNS 
+WHERE lower(TABLE_NAME) = 'movies' and lower(COLUMN_NAME) = 'title' AND IS_NULLABLE = 'NO';
+[/input]
+[output]
+movies
+title
+[/output]
+[/test]
+[/tests]
+[/code-task]
 [/slide]
 
 
