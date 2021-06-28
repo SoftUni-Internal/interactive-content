@@ -18,7 +18,7 @@ Since components are template-based, this enables us to build rich **user interf
 
 This HTML is then directly inserted into the **DOM**.
 
-A component must belong to a **NgModule** for it to be available to another component or application.
+A component must belong to an **NgModule** for it to be available to another components or the application.
 
 ## Attribute Directives
 
@@ -32,7 +32,6 @@ Examples include:
 - **Focusing** on input when a specific action occurs 
 - Showing a definition for a word when the user **hovers or clicks** on an element 
 - **Hiding and showing** a modal when a button is clicked
-
 
 ## Structural Directives
 
@@ -74,15 +73,15 @@ Some examples include the  `ngStyle` and `ngClass` directives.
 
 ### `ngStyle`
 
-The `ngStyle` directive is used to set CSS style properties to an element:
+The `ngStyle` directive is used to set the CSS style properties of an element:
 
 ```js
 <some-element [ngStyle]="{'font-style': styleExpression}">...</some-element>
 ```
 
-It is declared using square brackets, with the `ngStyle` keyword inside.
+It is declared using square brackets with the `ngStyle` keyword inside.
 
-Each style property is defined just like in `CSS` file:
+Each style property is defined just like in a `CSS` file:
 
 ```js
 {'max-width.px': widthExpression}
@@ -114,7 +113,7 @@ It accepts three types of expressions:
 
 ## Structural Directives
 
-The main purpose of structural directives is to define and modify the HTML layout, and the DOM's structure.
+The main purpose of structural directives is to define and modify the HTML layout and the DOM's structure.
 
 It is important to note that we can apply only one structural directive to a host element.
 
@@ -124,7 +123,7 @@ There are three main structural directives in Angular: `*ngIf`, `*ngFor`, and `*
 
 [slide hideTitle]
 
-# Build a Simple Attribute Directive
+# Building a Simple Attribute Directive
 
 js-angular-forms-6-Build-a-Simple-Attribute-Directive
 
@@ -134,7 +133,7 @@ An attribute directive requires building a controller class annotated with the `
 import { Directive } from '@angular/core'
 ```
 
-You can also generate a directive with Angular CLI:
+You can also generate a directive with the Angular CLI:
 
 ```js
 ng generate directive highlight
@@ -142,11 +141,11 @@ ng generate directive highlight
 
 This command will create a `highlight.directive.ts` file in the `src/app` directory, as well as a `spec.ts` test file. 
 
-Then the directive can be imported into the declarations array in `AppModule`.
+Then, the directive can be imported into the declarations array in `AppModule`.
 
-Angular CLI takes care of that automatically.
+The Angular CLI takes care of that automatically.
 
-The **selector** is surrounded with **square brackets** as in the example.
+The **selector** is surrounded with **square brackets** like in the example.
 
 ```js
 @Directive({
@@ -161,7 +160,7 @@ export class HighlightDirective {
 
 [slide hideTitle]
 
-# Attach Styles To Referenced Elements
+# Attaching Styles To Referenced Elements
 
 js-angular-forms-7-Attach-Styles-to-Referenced-Elements
 js-angular-forms-8-Warning - Use-Renderer2
@@ -183,7 +182,7 @@ Angular is not limited to run only on the browser.
 
 It can also run with **service workers**.
 
-**Services Worker** is an environment where the DOM is **inaccessible**.
+A **Services Worker** is an environment where the DOM is **inaccessible**.
 
 Use **Renderer2** to manipulate DOM elements.
 
@@ -228,19 +227,19 @@ Renderer2 has multiple other methods, such as `setProperty`, `setValue`, and `re
 
 [slide hideTitle]
 
-# Respond To Events
+# Responding To Events
 
 js-angular-forms-10-Respond-to-Events
 
-The directive could be more dynamic. 
+A directive could be more dynamic. 
 
-It could detect when the user mouses into or out of the element and respond by setting or clearing the highlight color.
+It could detect when the user moves their mouse into or out of the element and respond by setting or clearing the highlight color.
 
 ```js
 import { HostListener } from '@angular/core'
 ```
 
-Now we are going to add two event handlers that respond when the mouse enters or leaves.
+Now, we are going to add two event handlers that respond when the mouse enters or leaves.
 
 Use the **HostListener** decorator.
 
