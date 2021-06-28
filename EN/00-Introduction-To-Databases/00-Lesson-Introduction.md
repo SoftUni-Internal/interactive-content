@@ -38,6 +38,7 @@ Sort them by **country_name in ascending order**.
 [tests]
 [test open]
 [input]
+```
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
@@ -835,8 +836,10 @@ INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_di
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+```
 [/input]
 [output]
+```
 Algeria
 Niger
 Angola
@@ -847,11 +850,12 @@ Botswana
 
 Burkina Faso
 Niger
+```
 [/output]
 [/test]
 [test]
 [input]
-
+```
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
   `continent_name` varchar(50) NOT NULL,
@@ -931,14 +935,17 @@ CREATE TABLE IF NOT EXISTS `rivers` (
 
 INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_discharge`, `outflow`) VALUES
 	(1, 'Nile', 6650, 3254555, 5100, 'Mediterranean');
+```
 [/input]
 [output]
+```
 Angola
+```
 [/output]
 [/test]
 [test]
 [input]
-
+```
 
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
@@ -1021,14 +1028,17 @@ CREATE TABLE IF NOT EXISTS `rivers` (
 
 INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_discharge`, `outflow`) VALUES
 	(1, 'Nile', 6650, 3254555, 5100, 'Mediterranean');
+```
 [/input]
 [output]
+```
 Angola
+```
 [/output]
 [/test]
 [test]
 [input]
-
+```
 
 CREATE TABLE IF NOT EXISTS `continents` (
   `continent_code` char(2) NOT NULL,
@@ -1117,8 +1127,10 @@ CREATE TABLE IF NOT EXISTS `rivers` (
 
 INSERT INTO `rivers` (`id`, `river_name`, `length`, `drainage_area`, `average_discharge`, `outflow`) VALUES
 	(1, 'Nile', 6650, 3254555, 5100, 'Mediterranean');
+```
 [/input]
 [output]
+```
 Angola
 
 Burundi
@@ -1128,6 +1140,7 @@ Djibouti
 Madagascar
 
 Mali
+```
 [/output]
 [/test]
 [/tests]
