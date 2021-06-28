@@ -1,7 +1,7 @@
 # Homework
 [slide hideTitle]
 # Problem: Countries with Rivers
-[code-task title="Countries with Rivers" taskId="java-db-and-MySQL-subqueries-and-JOINs-countries-with-rivers" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Countries with Rivers" taskId="java-db-and-MySQL-subqueries-and-JOINs-countries-with-rivers2" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
 ```
