@@ -486,12 +486,11 @@ ADD CONSTRAINT fk_minions_towns FOREIGN KEY (town_id) REFERENCES towns(id)
 [test open]
 [input]
 ```
-\# check if both tables are dropped
-SELECT count(\*)
+SELECT count(*)
 FROM information_schema.TABLES
 WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'minions');
 
-SELECT count(\*)
+SELECT count(*)
 FROM information_schema.TABLES
 WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'towns');
 ```
@@ -505,9 +504,11 @@ WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'towns');
 [/test]
 [test]
 [input]
-SELECT count(\*)
+```
+SELECT count(*)
 FROM information_schema.TABLES
 WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'minions');
+```
 [/input]
 [output]
 0
@@ -515,9 +516,11 @@ WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'minions');
 [/test]
 [test]
 [input]
-SELECT count(\*)
+```
+SELECT count(*)
 FROM information_schema.TABLES
 WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'towns');
+```
 [/input]
 [output]
 0
@@ -584,6 +587,7 @@ WHERE TABLE_SCHEMA = database()
 select count(id) from people;
 [/input]
 [output]
+```
 id
 name
 picture
@@ -599,6 +603,7 @@ name
 gender
 birthdate
 5
+```
 [/output]
 [/test]
 [test]
