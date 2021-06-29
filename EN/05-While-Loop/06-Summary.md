@@ -30,7 +30,7 @@ while (true) {
 }
 ```
 
-- What **infinity loops** are 
+- What **infinite loops** are 
 
 
 ## In the next lesson you will learn:
@@ -41,7 +41,7 @@ while (true) {
 
   * a loop functioning inside another loop
 
-- Combining nested **for** and **while** loops
+- Combining nested **for-loops** and **while-loops** loops
 - Different combinations of nesting **for-loops** and **while-loops**
 
 
