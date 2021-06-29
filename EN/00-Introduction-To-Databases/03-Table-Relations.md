@@ -1,9 +1,9 @@
 [slide hideTitle]
-# Problem: Town Names Starting With
-[code-task title="Town Names Starting With" taskId="java-db-and-MySQL-database-programmability-town-names-starting-with" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+# Problem: Employees from Town
+[code-task title="Employees from Town" taskId="java-db-and-MySQL-database-programmability-employees-from-town" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
-
+-- Write your query here
 ```
 [/code-editor]
 [code-adapter]
@@ -1683,79 +1683,94 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [task-description]
 # Description
 
-Write a stored procedure **usp_get_towns_starting_with** that **accepts a string parameter** and returns **all town names starting with that string**. 
+Write a stored procedure **usp_get_employees_from_town** that accepts **town_name** as a parameter and returns the **first and last names of the employees living in the given town**. 
 
-The result should be sorted alphabetically by **town_name**. 
+The result should be sorted alphabetically (by **first_name**, then by **last_name**) as a first criterion and by **id** in **ascending** order as a second criterion. 
 
-## Example
-Here is the list of all town names starting with "**b**".
+## Examples
+Here is a list of employees **living in Sofia**.
 
-| **town_name** |
+| **first_name** | **last_name** |
 | --- | --- | 
-| Bellevue | 
-| Berlin  | 
-|Bordeaux|
-|Bothell | 
-| ... | 
+| George | Denis |
+| Martin  | Kull |
+| Sven | Nakamura |
 
+| **first_name** | **last_name** |
+| --- | --- | 
+| Michael | Blythe |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-CALL usp_get_towns_starting_with ('b');
+CALL usp_get_employees_from_town ('sofia')
 [/input]
 [output]
-Bellevue
-Berlin
-Bordeaux
-Bothell
+George
+Denis
+Martin
+Kull
+Svetlin
+Nakamura
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_get_towns_starting_with ('b');
+CALL usp_get_employees_from_town ('sofia')
 [/input]
 [output]
-Bellevue
-Berlin
-Bordeaux
-Bothell
+George
+Denis
+Martin
+Kull
+Svetlin
+Nakamura
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_get_towns_starting_with ('be')
+CALL usp_get_employees_from_town ('detroit')
 [/input]
 [output]
-Bellevue
-Berlin
+Michael
+Blythe
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_get_towns_starting_with ('sa')
+CALL usp_get_employees_from_town ('calgary')
 [/input]
 [output]
-Sammamish
-San Francisco
+Garrett
+Vargas
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_get_towns_starting_with ('dul')
+CALL usp_get_employees_from_town ('portland')
 [/input]
 [output]
-Duluth
+Pamela
+Ansman-Wolfe
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_get_towns_starting_with ('sofia')
+CALL usp_get_employees_from_town ('index')
 [/input]
 [output]
-Sofia
+Candy
+Spoon
+Jo
+Berry
+Karen
+Berge
+Lori
+Penor
+Mike
+Seamans
 [/output]
 [/test]
 [/tests]
