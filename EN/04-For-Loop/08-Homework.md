@@ -502,6 +502,12 @@ Create a program, which:
 [code-io/]
 [/code-task]
 
+[hints]
+[hint]
+The number that is being divided is called the **dividend**. The number that it is being divided by is called the **divisor**. The result of the division is the **quotient**.
+[/hint]
+[/hints]
+
 [/slide]
 
 [slide hideTitle]
