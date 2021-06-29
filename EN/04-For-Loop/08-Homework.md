@@ -164,7 +164,7 @@ Min number: -2
 [/slide]
 
 [slide hideTitle]
-# Problem: Power of Number
+# Problem: Base and Exponent
 [code-task title="Power of Number" taskId="pb-java-for-loop-power-of-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -181,9 +181,13 @@ public class Program {
 ## Description
 Create a program, that raises a given number to the power of another number:
 
-* Reads **p - the exponent** and **n - the base number**
-* Prints the result of n to the power of p
-* Do not use the `Math.pow()` method
+Reads:
+* **p - the exponent**
+* **n - the base number**
+Prints: 
+* the result of **n** to the power of **p**
+
+**Do not use the** `Math.pow()` **method**
 
 ## Example
 | **Input** | **Output** 
@@ -234,8 +238,11 @@ public class Program {
 ## Description
 Create a program, that:
 
-* Reads number **n** and **n pairs** of numbers (Sum up each pair and compare all sums with each other)
-* Prints "**Yes, value=**\{**sum**\}", if the **sum of all** pairs is **equal**
+Reads:
+* number **n**
+* **n pairs** of numbers (sum up each pair and compare all sums)
+Prints:
+* "**Yes, value=**\{**sum**\}", if the **sum of all** pairs is **equal**
 * **Otherwise**, prints "**No, maxdiff=**\{**diff**\}"
 * diff is the **max difference** in the sum between two pairs
 
@@ -459,9 +466,11 @@ public class Program {
 ## Description
 Create a program, which:
 
-* Reads **n** and afterward **n numbers**
-* Finds a **percentage** of how many of them can be **divided without a remainder** using **2**, **3** and **4** as divisors
-* Prints out the percentages for each divisor, **formatted** to the second digit
+* Reads a number, n – lines of input
+* Reads all lines of input, i.e. dividends
+* Calculates the percentage of quotients without remainder per divisor
+* Prints the answer formatted to the second digit
+
 
 ## Example
 | **Input** | **Output** 
@@ -625,11 +634,13 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, that calculates if there are enough passengers to fill all seats on a rollercoaster train.
+Create a program that calculates seat occupancy. Based on this information it determines whether or not a rollercoaster ride is ready to take off.
 
-* The input will consist of **available places**, **minimum age for the passengers**, **number of people on the queue**
-
-**The age of each passenger** will be specified as a separate number. 
+The input consists of:
+* Available seats
+* Minimum age for the ride
+* People queueing for tickets
+* The age of each passenger – specified as a separate integer
 
 * If all places are taken print out: **"The rollercoaster departures"**
 
@@ -977,8 +988,8 @@ Create a program to calculate the living cost for a family over a period of time
 Their monthly expenses are as follows:
 
 - Electricity - every month the bill is different and will be read from the console
-- Water - 20$
-- Internet - 15$
+- Water - $20
+- Internet - $15
 - Other expenses - calculated by summing the bills for electricity, water and internet and adding 20% to the final result
 
 # Input
@@ -990,11 +1001,11 @@ The input is read from the console:
 
 # Output
 The output should consist of 5 lines: 
-- "**Electricity:** \{**total cost for the entire period**\} **$**" 
-- "**Water:** \{**total cost for the entire period**\} **$**" 
-- "**Internet:** \{**total cost for the entire period**\} **$**" 
-- "**Other:** \{**total cost for the entire period**\} **$**" 
-- "**Average:** \{**total cost for the entire period**\} **$**"
+- "**Electricity:** **$**\{**total cost for the entire period**\}" 
+- "**Water:** **$**\{**total cost for the entire period**\}" 
+- "**Internet: **$**\{**total cost for the entire period**\}" 
+- "**Other:** **$**\{**total cost for the entire period**\}" 
+- "**Average:** **$**\{**total cost per month**\}"
 
 All bills should be formatted to the 2nd digit after the decimal point.
 
@@ -1002,19 +1013,19 @@ All bills should be formatted to the 2nd digit after the decimal point.
 
 | **Input** | **Output** |
 | --- | --- |
-| 5 | Electricity: 447.16 $ |
-| 68.63 | Water: 100.00 $ |
-| 89.25 | Internet: 75.00 $ |
-| 132.53 | Other: 746.59 $ |
-| 93.53 | Average: 273.75 $ |
+| 5 | Electricity: $447.16 |
+| 68.63 | Water: $100.00 |
+| 89.25 | Internet: $75.00 |
+| 132.53 | Other: $746.59 |
+| 93.53 | Average: $273.75 |
 | 63.22 | |
 
 [hints]
 [hint]
 For 5 months:
-- Electricity -> 68.63 \+ 89.25 \+ 132.53 \+ 93.53 \+ 63.22 = 447.16$
-- Water -> 5 months \* 20$ = 100$
-- Internet -> 5 months \* 15$ = 75$
+- Electricity -> 68.63 \+ 89.25 \+ 132.53 \+ 93.53 \+ 63.22 = $447.16
+- Water -> 5 months \* $20 = $100
+- Internet -> 5 months \* $15 = $75
 - Others:
     - 68.63+20+15) + 20% = 124.356  
     - (89.25+20+15) + 20% = 149.1
@@ -1023,8 +1034,8 @@ For 5 months:
     - (63.22+20+15) + 20% = 117.864
 [/hint]
 [hint]
-Total = 746.592$
-Average bills per month = (447.16+100+75+746.592)/5 = 273.7504$
+Total = $746.592
+Average bills per month = (447.16+100+75+746.592)/5 = $273.7504
 [/hint]
 [/hints]
 
@@ -1040,11 +1051,11 @@ Average bills per month = (447.16+100+75+746.592)/5 = 273.7504$
 63.22
 [/input]
 [output]
-Electricity: 447.16 $
-Water: 100.00 $
-Internet: 75.00 $
-Other: 746.59 $
-Average: 273.75 $
+Electricity: $447.16
+Water: $100.00
+Internet: $75.00
+Other: $746.59
+Average: $273.75
 [/output]
 [/test]
 [test]
@@ -1060,11 +1071,11 @@ Average: 273.75 $
 64.2
 [/input]
 [output]
-Electricity: 1390.43 $
-Water: 160.00 $
-Internet: 120.00 $
-Other: 2004.52 $
-Average: 459.37 $
+Electricity: $1390.43
+Water: $160.00
+Internet: $120.00
+Other: $2004.52
+Average: $459.37
 [/output]
 [/test]
 [test]
@@ -1082,11 +1093,11 @@ Average: 459.37 $
 321
 [/input]
 [output]
-Electricity: 2220.00 $
-Water: 200.00 $
-Internet: 150.00 $
-Other: 3084.00 $
-Average: 565.40 $
+Electricity: $2220.00
+Water: $200.00
+Internet: $150.00
+Other: $3084.00
+Average: $565.40
 [/output]
 [/test]
 [test]
@@ -1144,11 +1155,11 @@ Average: 565.40 $
 50
 [/input]
 [output]
-Electricity: 1275.00 $
-Water: 1000.00 $
-Internet: 750.00 $
-Other: 3630.00 $
-Average: 133.10 $
+Electricity: $1275.00
+Water: $1000.00
+Internet: $750.00
+Other: $3630.00
+Average: $133.10
 [/output]
 [/test]
 [test]
@@ -1179,11 +1190,11 @@ Average: 133.10 $
 523
 [/input]
 [output]
-Electricity: 7666.09 $
-Water: 460.00 $
-Internet: 345.00 $
-Other: 10165.31 $
-Average: 810.28 $
+Electricity: $7666.09
+Water: $460.00
+Internet: $345.00
+Other: $10165.31
+Average: $810.28
 [/output]
 [/test]
 [test]
@@ -1192,11 +1203,11 @@ Average: 810.28 $
 123.34
 [/input]
 [output]
-Electricity: 123.34 $
-Water: 20.00 $
-Internet: 15.00 $
-Other: 190.01 $
-Average: 348.35 $
+Electricity: $123.34
+Water: $20.00
+Internet: $15.00
+Other: $190.01
+Average: $348.35
 [/output]
 [/test]
 [test]
@@ -1214,11 +1225,11 @@ Average: 348.35 $
 10
 [/input]
 [output]
-Electricity: 55.00 $
-Water: 200.00 $
-Internet: 150.00 $
-Other: 486.00 $
-Average: 89.10 $
+Electricity: $55.00
+Water: $200.00
+Internet: $150.00
+Other: $486.00
+Average: $89.10
 [/output]
 [/test]
 [/tests]
@@ -1250,7 +1261,7 @@ A hospital has 7 doctors available.
 
 Each doctor can only see a single patient per day, but sometimes there is a shortage of doctors, so waiting patients are sent to other hospitals. 
 
-Every third day the hospital makes calculations and if the number of unserviced patients is greater than the number of the accepted ones, one more doctor is appointed to the hospital. 
+In the beginning of every third day the hospital makes calculations and if the number of unserviced patients is greater than the number of the accepted ones, one more doctor is appointed to the hospital. 
 
 The appointment of a new doctor occurs before the intake of patients for that day. 
 
@@ -1467,13 +1478,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that reads an integer representing the amount of numbers that will be contained in the following input and calculates which the minimum and maximum values of the numbers found at odd and even positions (counting from 1) is. 
+Create a program that reads a number representing the total amount of integers to be entered. Subsequently, calculates the **min** and **max** values of their sum at odd and even positions.
 
-If no minimal/maximal element can be identified print out "No".
+If **min** and **max** values cannot be determined, simply print out "No" to the console.
 
 ## Input
 - N numbers to be read - an integer \[0...100\]
-- On each next line - a floating-point number \[-100...100\]
+- On each subsequent line - a floating-point number \[-100...100\]
 
 ## Output
 The output should come in the following form:
@@ -1704,15 +1715,15 @@ The program should print out the percentage of students holding a grade between:
 - 3.00 and 3.99
 - 4.00 and 4.99
 - 5.00 or greater
-- The average grade for all participants
+- The average grade for all students
 
 ## Input
-- The first input line contains the number of students - an integer in range \[1 ... 1000\]
-- On each next line - each student's grade - a real number in range \[2.00 ... 6.00\]
+* The first input line contains the number of students - an integer in range \[1 ... 1000\]
+* On each next line – each student’s grade, a real number in the range \[2.00…6.00\]
 
 ## Output
 Print 5 lines of output with the following information:
-- "Top students: \{percentage of students with grades 5.00 or grater\}%"
+- "Top students: \{percentage of students with grades 5.00 or greater\}%"
 - "Between 4.00 and 4.99: \{percentage of students with grades between 4.00 and 4.99 inclusive\}%"
 - "Between 3.00 and 3.99: \{percentage of students with grades between 3.00 and 3.99 inclusive\}%"
 - "Fail: \{percentage of students with grades less than 3.00\}%"
