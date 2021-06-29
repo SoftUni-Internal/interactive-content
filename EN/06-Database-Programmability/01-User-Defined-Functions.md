@@ -55,16 +55,7 @@ END                                                                             
 [code-task title="Count Employees by Town Name" taskId="java-db-and-MySQL-database-programmability-count-employees-by-town-name" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
-CREATE FUNCTION ufn_count_employees_by_town(town_name VARCHAR(50))
-RETURNS INT DETERMINISTIC 
-BEGIN
-	DECLARE emp_count INT; 
-    SET emp_count :=(SELECT COUNT(*) FROM `employees` e
-    JOIN `addresses` a USING(`address_id`)
-    JOIN `towns` t USING(`town_id`)
-    WHERE t.`name` = town_name); 
-	RETURN emp_count;
-END
+-- Write your query here
 ```
 [/code-editor]
 [code-adapter]
