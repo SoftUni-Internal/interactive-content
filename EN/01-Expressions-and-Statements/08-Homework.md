@@ -1467,9 +1467,9 @@ Read the **prices** of mackerel and sprats, the quantity of tuna, scads, and mus
 You have to read **5 numbers** from the console:
 - Тhe price of the mackerel per kilogram - **floating-point** number in range [0.00 ... 40.00]
 - Тhe price of the sprats per kilogram - **floating-point** number in range [0.00 ... 30.00]
-- Кilograms of tuna - **floating-point** number in range [0.00 ... 50.00]
-- Кilograms of scads - **floating-point** number in range [0.00 ... 70.00]
-- Кilograms of mussels - **integer number** in range [0 ... 100]
+- Kilograms of tuna - **floating-point** number in range [0.00 ... 50.00]
+- Kilograms of scads - **floating-point** number in range [0.00 ... 70.00]
+- Kilograms of mussels - **integer number** in range [0 ... 100]
 
 ## Output
 Print a single float number to the console: the money George will need to pay the bill, formatted to the **second decimal point**
