@@ -66,7 +66,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
+	(5, 'Thierry', 'D\'Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
 	(6, 'David', 'Bradley', 'M', 'Marketing Manager', 5, 109, '2000-01-20 00:00:00.000000', 37500.0000, 199),
 	(7, 'JoLynn', 'Dobney', 'M', 'Production Supervisor', 7, 21, '2000-01-26 00:00:00.000000', 25000.0000, 275),
 	(8, 'Ruth', 'Ellerbrock', 'Ann', 'Production Technician', 7, 185, '2000-02-06 00:00:00.000000', 13500.0000, 108),
@@ -112,7 +112,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(48, 'Jun', 'Cao', 'T', 'Production Technician', 7, 38, '2001-01-15 00:00:00.000000', 11000.0000, 197),
 	(49, 'Christian', 'Kleinerman', 'E', 'Maintenance Supervisor', 14, 218, '2001-01-15 00:00:00.000000', 20400.0000, 118),
 	(50, 'Susan', 'Metters', 'A', 'Production Technician', 7, 184, '2001-01-15 00:00:00.000000', 9500.0000, 224),
-	(51, 'Reuben', 'D''sa', 'H', 'Production Supervisor', 7, 21, '2001-01-16 00:00:00.000000', 25000.0000, 249),
+	(51, 'Reuben', 'D\'sa', 'H', 'Production Supervisor', 7, 21, '2001-01-16 00:00:00.000000', 25000.0000, 249),
 	(52, 'Kirk', 'Koenigsbauer', 'J', 'Production Technician', 7, 123, '2001-01-16 00:00:00.000000', 10000.0000, 250),
 	(53, 'David', 'Ortiz', 'J', 'Production Technician', 7, 18, '2001-01-16 00:00:00.000000', 12500.0000, 267),
 	(54, 'Tengiz', 'Kharatishvili', '', 'Control Specialist', 12, 90, '2001-01-17 00:00:00.000000', 16800.0000, 129),
@@ -294,7 +294,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(230, 'Bonnie', 'Kearney', '', 'Production Technician', 7, 185, '2002-02-02 00:00:00.000000', 13500.0000, 287),
 	(231, 'Fukiko', 'Ogisu', 'J', 'Buyer', 5, 274, '2002-02-05 00:00:00.000000', 18300.0000, 17),
 	(232, 'Hung-Fu', 'Ting', 'T', 'Production Technician', 7, 108, '2002-02-07 00:00:00.000000', 14000.0000, 220),
-	(233, 'Gordon', 'Hee', 'L', 'Buyer', 5, 274, '2002-02-12 00:00:00.000000', 35000.0000, 15),
+	(233, 'Gordon', 'Hee', 'L', 'Buyer', 5, 274, '2002-02-12 00:00:00.000000', 18300.0000, 15),
 	(234, 'Kimberly', 'Zimmerman', 'B', 'Production Technician', 7, 64, '2002-02-13 00:00:00.000000', 13500.0000, 266),
 	(235, 'Kim', 'Abercrombie', 'B', 'Production Technician', 7, 16, '2002-02-17 00:00:00.000000', 12500.0000, 56),
 	(236, 'Sandeep', 'Kaliyath', 'P', 'Production Technician', 7, 51, '2002-02-18 00:00:00.000000', 15000.0000, 234),
@@ -356,6 +356,8 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(292, 'Martin', 'Kull', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denis', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 /*!40000 ALTER TABLE `employees` ENABLE KEYS */;
+
+
 
 CREATE TABLE IF NOT EXISTS `employees_projects` (
   `employee_id` int(10) NOT NULL,
