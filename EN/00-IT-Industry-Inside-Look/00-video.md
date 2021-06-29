@@ -1908,6 +1908,7 @@ INSERT INTO employees (first_name, middle_name, last_name, job_title, department
 INSERT INTO employees (first_name, middle_name, last_name, job_title, department_id, hire_date, salary) VALUES ('Peter', 'Pan', 'Pan', 'Intern', 3, '2016-08-28', 599.88);
 [/input]
 [output]
+```
 1
 Ivan
 Ivanov
@@ -1916,6 +1917,7 @@ Ivanov
 4
 2013-02-01 00:00:00
 3500
+
 2
 Petar
 Petrov
@@ -1924,6 +1926,7 @@ Senior Engineer
 1
 2004-03-02 00:00:00
 4000
+
 3
 Maria
 Petrova
@@ -1932,6 +1935,7 @@ Intern
 5
 2016-08-28 00:00:00
 525.25
+
 4
 Georgi
 Terziev
@@ -1940,6 +1944,7 @@ CEO
 2
 2007-12-09 00:00:00
 3000
+
 5
 Peter
 Pan
@@ -1948,6 +1953,7 @@ Intern
 3
 2016-08-28 00:00:00
 599.88
+```
 [/output]
 [/test]
 [/tests]
@@ -2036,6 +2042,7 @@ INSERT INTO employees (first_name, middle_name, last_name, job_title, department
 INSERT INTO employees (first_name, middle_name, last_name, job_title, department_id, hire_date, salary) VALUES ('Faye', 'Emberly', 'Paddon', 'Intern', 3, '2016-08-28', 599.88);
 [/input]
 [output]
+```
 1
 Berlin
 4
@@ -2062,6 +2069,7 @@ Senior Engineer
 1
 2004-03-02 00:00:00
 4000
+
 1
 Kyrie 
 Keefe 
@@ -2070,6 +2078,7 @@ Swanson
 4
 2013-02-01 00:00:00
 3500
+
 4
 Petal 
 Hylda 
@@ -2078,6 +2087,7 @@ CEO
 2
 2007-12-09 00:00:00
 3000
+
 5
 Faye 
 Emberly 
@@ -2086,6 +2096,7 @@ Intern
 3
 2016-08-28 00:00:00
 599.88
+
 3
 Sonia 
 Eddy 
@@ -2094,6 +2105,7 @@ Intern
 5
 2016-08-28 00:00:00
 525.25
+```
 [/output]
 [/test]
 [test]
@@ -2259,6 +2271,7 @@ INSERT INTO employees (first_name, middle_name, last_name, job_title, department
 INSERT INTO employees (first_name, middle_name, last_name, job_title, department_id, hire_date, salary) VALUES ('Peter', 'Pan', 'Pan', 'Intern', 3, '2016-08-28', 599.88);
 [/input]
 [output]
+```
 2
 Petar
 Petrov
@@ -2267,6 +2280,7 @@ Senior Engineer
 1
 2004-03-02 00:00:00
 4000
+
 1
 Ivan
 Ivanov
@@ -2275,6 +2289,7 @@ Ivanov
 4
 2013-02-01 00:00:00
 3500
+
 4
 Georgi
 Terziev
@@ -2283,6 +2298,7 @@ CEO
 2
 2007-12-09 00:00:00
 3000
+
 5
 Peter
 Pan
@@ -2291,6 +2307,7 @@ Intern
 3
 2016-08-28 00:00:00
 599.88
+
 3
 Maria
 Petrova
@@ -2299,6 +2316,7 @@ Intern
 5
 2016-08-28 00:00:00
 525.25
+```
 [/output]
 [/test]
 [/tests]
