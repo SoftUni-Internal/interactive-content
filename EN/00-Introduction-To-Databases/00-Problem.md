@@ -40,7 +40,7 @@ Order by **employee_id**.
 [test open]
 [input]
 
-CREATE TABLE IF NOT EXISTS `projects` (
+CREATE TABLE IF NOT EXISTS projects (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `description` text,
@@ -50,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `projects` (
   UNIQUE KEY `PK_Projects` (`project_id`)
 );
 
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
+INSERT INTO projects (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
 	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2002-08-13 01:00:00.000000', NULL),
 	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
@@ -135,7 +135,7 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 
 
 
-CREATE TABLE IF NOT EXISTS `employees` (
+CREATE TABLE IF NOT EXISTS employees (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
@@ -158,7 +158,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
 );
 
 
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
 	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
 	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
@@ -454,14 +454,14 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(293, 'Thomas', 'Miller', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 
 
-CREATE TABLE IF NOT EXISTS `towns` (
+CREATE TABLE IF NOT EXISTS towns (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 );
 
-INSERT INTO `towns` (`town_id`, `name`) VALUES
+INSERT INTO towns (`town_id`, `name`) VALUES
 	(1, 'Redmond'),
 	(2, 'Calgary'),
 	(3, 'Edmonds'),
@@ -495,7 +495,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(31, 'Berlin'),
 	(32, 'Sofia');
 
-CREATE TABLE IF NOT EXISTS `addresses` (
+CREATE TABLE addresses (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
   `town_id` int(10) DEFAULT NULL,
@@ -506,7 +506,7 @@ CREATE TABLE IF NOT EXISTS `addresses` (
 );
 
 
-INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
+INSERT INTO addresses (`address_id`, `address_text`, `town_id`) VALUES
 	(1, '108 Lakeside Court', 5),
 	(2, '1343 Prospect St', 5),
 	(3, '1648 Eastgate Lane', 5),
@@ -800,7 +800,7 @@ INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
 	(291, '163 Nishava Str, ent A, apt. 1', 32);
 
 
-CREATE TABLE IF NOT EXISTS `departments` (
+CREATE TABLE IF NOT EXISTS departments (
   `department_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `manager_id` int(10) NOT NULL,
@@ -811,7 +811,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
 );
 
 
-INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
+INSERT INTO departments (`department_id`, `name`, `manager_id`) VALUES
 	(1, 'Engineering', 12),
 	(2, 'Tool Design', 4),
 	(3, 'Sales', 273),
@@ -831,7 +831,7 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 
 
 
-CREATE TABLE IF NOT EXISTS `employees_projects` (
+CREATE TABLE IF NOT EXISTS employees_projects (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
@@ -842,7 +842,7 @@ CREATE TABLE IF NOT EXISTS `employees_projects` (
 );
 
 
-INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
+INSERT INTO employees_projects (`employee_id`, `project_id`) VALUES
 	(3, 1),
 	(15, 1),
 	(18, 1),
@@ -1716,7 +1716,7 @@ Tool Design
 [/test]
 [test]
 [input]
-CREATE TABLE IF NOT EXISTS `addresses` (
+CREATE TABLE IF NOT EXISTS addresses (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
   `town_id` int(10) DEFAULT NULL,
@@ -1724,7 +1724,7 @@ CREATE TABLE IF NOT EXISTS `addresses` (
   UNIQUE KEY `pk_addresses` (`address_id`)
 );
 
-CREATE TABLE IF NOT EXISTS `departments` (
+CREATE TABLE IF NOT EXISTS departments (
   `department_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `manager_id` int(10) NOT NULL,
@@ -1732,14 +1732,14 @@ CREATE TABLE IF NOT EXISTS `departments` (
   UNIQUE KEY `PK_Departments` (`department_id`)
 );
 
-INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
+INSERT INTO departments (`department_id`, `name`, `manager_id`) VALUES
 	(1, 'Engineering', 12),
 	(2, 'Tool Design', 4),
 	(3, 'Sales', 273),
 	(4, 'Marketing', 46),
 	(5, 'Purchasing', 6);
 
-CREATE TABLE IF NOT EXISTS `employees` (
+CREATE TABLE IF NOT EXISTS employees (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
@@ -1755,7 +1755,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
 );
 
 
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
 	(1, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, null, '2006-07-31 00:00:00.000000', 12500.0000, 166),
 	(2, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, null, '1999-02-26 00:00:00.000000', 13500.0000, 102),
 	(3, 'Cidney', 'Andrews', NULL, 'Engineering Manager', 1, 5, '1999-12-12 00:00:00.000000', 43300.0000, 193),
@@ -1763,14 +1763,14 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(5, 'Fillip', 'D''Hers', 'B', 'Tool Designer', 2, null, '2000-01-11 00:00:00.000000', 25000.0000, 40);
 
 
-CREATE TABLE IF NOT EXISTS `employees_projects` (
+CREATE TABLE IF NOT EXISTS employees_projects (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `pk_employees_projects` (`employee_id`,`project_id`)
 );
 
-CREATE TABLE IF NOT EXISTS `projects` (
+CREATE TABLE IF NOT EXISTS projects (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `description` text,
@@ -1780,7 +1780,7 @@ CREATE TABLE IF NOT EXISTS `projects` (
   UNIQUE KEY `pk_projects` (`project_id`)
 );
 
-CREATE TABLE IF NOT EXISTS `towns` (
+CREATE TABLE IF NOT EXISTS towns (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   PRIMARY KEY (`town_id`),
@@ -1798,7 +1798,7 @@ Engineering
 [/test]
 [test]
 [input]
-CREATE TABLE IF NOT EXISTS `addresses` (
+CREATE TABLE IF NOT EXISTS addresses (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
   `town_id` int(10) DEFAULT NULL,
@@ -1806,7 +1806,7 @@ CREATE TABLE IF NOT EXISTS `addresses` (
   UNIQUE KEY `pk_addresses` (`address_id`)
 );
 
-CREATE TABLE IF NOT EXISTS `departments` (
+CREATE TABLE IF NOT EXISTS departments (
   `department_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `manager_id` int(10) NOT NULL,
@@ -1814,14 +1814,14 @@ CREATE TABLE IF NOT EXISTS `departments` (
   UNIQUE KEY `PK_Departments` (`department_id`)
 );
 
-INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
+INSERT INTO departments (`department_id`, `name`, `manager_id`) VALUES
 	(1, 'Engineering', 12),
 	(2, 'Tool Design', 4),
 	(3, 'Sales', 273),
 	(4, 'Marketing', 46),
 	(5, 'Purchasing', 6);
 
-CREATE TABLE IF NOT EXISTS `employees` (
+CREATE TABLE IF NOT EXISTS employees (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
@@ -1837,7 +1837,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
 );
 
 
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
 	(5, 'Antony', 'Gilbert', 'R', 'Production Technician', 3, 1, '2006-07-31 00:00:00.000000', 12500.0000, 166),
 	(4, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, 1, '1999-02-26 00:00:00.000000', 13500.0000, 102),
 	(2, 'Cidney', 'Andrews', NULL, 'Engineering Manager', 1, 5, '1999-12-12 00:00:00.000000', 43300.0000, 193),
@@ -1845,14 +1845,14 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(1, 'Fillip', 'Kennedy', 'B', 'Tool Designer', 2, 4, '2000-01-11 00:00:00.000000', 25000.0000, 40);
 
 
-CREATE TABLE IF NOT EXISTS `employees_projects` (
+CREATE TABLE IF NOT EXISTS employees_projects (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
   UNIQUE KEY `pk_employees_projects` (`employee_id`,`project_id`)
 );
 
-CREATE TABLE IF NOT EXISTS `projects` (
+CREATE TABLE IF NOT EXISTS projects (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `description` text,
@@ -1862,7 +1862,7 @@ CREATE TABLE IF NOT EXISTS `projects` (
   UNIQUE KEY `pk_projects` (`project_id`)
 );
 
-CREATE TABLE IF NOT EXISTS `towns` (
+CREATE TABLE IF NOT EXISTS towns (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   PRIMARY KEY (`town_id`),
@@ -1896,7 +1896,7 @@ Sales
 [/test]
 [test]
 [input]
-CREATE TABLE IF NOT EXISTS `addresses` (
+CREATE TABLE IF NOT EXISTS addresses (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
   `town_id` int(10) DEFAULT NULL,
@@ -1907,7 +1907,7 @@ CREATE TABLE IF NOT EXISTS `addresses` (
 );
 
 
-INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
+INSERT INTO addresses (`address_id`, `address_text`, `town_id`) VALUES
 	(1, '108 Lakeside Court', 5),
 	(2, '1343 Prospect St', 5),
 	(3, '1648 Eastgate Lane', 5),
@@ -2201,7 +2201,7 @@ INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
 	(291, '163 Nishava Str, ent A, apt. 1', 32);
 
 
-CREATE TABLE IF NOT EXISTS `departments` (
+CREATE TABLE IF NOT EXISTS departments (
   `department_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `manager_id` int(10) NOT NULL,
@@ -2212,7 +2212,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
 );
 
 
-/*!40000 ALTER TABLE `departments` DISABLE KEYS */;
+/*!40000 ALTER TABLE departments DISABLE KEYS */;
 INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(1, 'Engineering', 12),
 	(2, 'Tool Design', 4),
@@ -2233,7 +2233,7 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 
 
 
-CREATE TABLE IF NOT EXISTS `employees` (
+CREATE TABLE IF NOT EXISTS employees (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
   `last_name` varchar(50) NOT NULL,
@@ -2256,7 +2256,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
 );
 
 
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
 	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
 	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
@@ -2553,7 +2553,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 
 
 
-CREATE TABLE IF NOT EXISTS `employees_projects` (
+CREATE TABLE IF NOT EXISTS employees_projects (
   `employee_id` int(10) NOT NULL,
   `project_id` int(10) NOT NULL,
   PRIMARY KEY (`employee_id`,`project_id`),
@@ -2564,7 +2564,7 @@ CREATE TABLE IF NOT EXISTS `employees_projects` (
 );
 
 
-INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
+INSERT INTO employees_projects (`employee_id`, `project_id`) VALUES
 	(3, 1),
 	(15, 1),
 	(18, 1),
@@ -3411,7 +3411,7 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 
 
 
-CREATE TABLE IF NOT EXISTS `projects` (
+CREATE TABLE IF NOT EXISTS projects (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `description` text,
@@ -3422,7 +3422,7 @@ CREATE TABLE IF NOT EXISTS `projects` (
 );
 
 
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
+INSERT INTO projects (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
 	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2002-08-13 01:00:00.000000', NULL),
 	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
@@ -3505,14 +3505,14 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 
 
 
-CREATE TABLE IF NOT EXISTS `towns` (
+CREATE TABLE IF NOT EXISTS towns (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 );
 
-INSERT INTO `towns` (`town_id`, `name`) VALUES
+INSERT INTO towns (`town_id`, `name`) VALUES
 	(1, 'Redmond'),
 	(2, 'Calgary'),
 	(3, 'Edmonds'),
