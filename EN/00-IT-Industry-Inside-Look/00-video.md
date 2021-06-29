@@ -309,7 +309,7 @@ Bob
 3
 3
 Steward
-
+NULL
 2
 [/output]
 [/test]
@@ -339,7 +339,7 @@ London
 2
 Barcelona
 3
-London
+Sofia
 [/output]
 [/test]
 [test]
@@ -357,7 +357,7 @@ Bob
 3
 3
 Steward
-
+NULL
 2
 [/output]
 [/test]
