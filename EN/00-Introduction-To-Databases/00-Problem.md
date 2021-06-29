@@ -40,6 +40,16 @@ Order by **employee_id**.
 [test open]
 [input]
 
+CREATE TABLE IF NOT EXISTS departments (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `PK_Departments` (`department_id`),
+  KEY `fk_departments_employees` (`manager_id`),
+  CONSTRAINT `fk_departments_employees` FOREIGN KEY (`manager_id`) REFERENCES `employees` (`employee_id`)
+);
+
 
 CREATE TABLE IF NOT EXISTS towns (
   `town_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -805,16 +815,6 @@ INSERT INTO addresses (`address_id`, `address_text`, `town_id`) VALUES
 	(290, '7230 Vine Maple Street', 11),
 	(291, '163 Nishava Str, ent A, apt. 1', 32);
 
-
-CREATE TABLE IF NOT EXISTS departments (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`),
-  KEY `fk_departments_employees` (`manager_id`),
-  CONSTRAINT `fk_departments_employees` FOREIGN KEY (`manager_id`) REFERENCES `employees` (`employee_id`)
-);
 
 
 INSERT INTO departments (`department_id`, `name`, `manager_id`) VALUES
