@@ -1839,12 +1839,7 @@ Alice
 [code-task title="Promote Employees By ID" taskId="java-db-and-MySQL-database-programmability-promote-employees-by-id" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
- CREATE PROCEDURE `usp_raise_salary_by_id`(`id` INT) 
- BEGIN 
- UPDATE `employees` AS e
- SET `salary` = `salary` * 1.05
- WHERE 	`employee_id` = `id`;
- END
+-- Write your query here
 ```
 [/code-editor]
 [code-adapter]
