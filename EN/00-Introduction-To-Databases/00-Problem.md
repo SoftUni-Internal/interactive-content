@@ -1,11 +1,11 @@
 # Homework
 
 [slide hideTitle]
-# Problem: Employee Summary Fixed Newest 2
+# Problem: Employee Summary
 [code-task title="Employee Summary" taskId="java-db-and-MySQL-subqueries-and-JOINs-employee-summary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
--- Write your query here Fixed Newest
+-- Write your query here
 ```
 [/code-editor]
 [task-description]
