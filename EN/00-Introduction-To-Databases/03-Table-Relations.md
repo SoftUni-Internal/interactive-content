@@ -1,6 +1,6 @@
 [slide hideTitle]
-# Problem: Employees from Town
-[code-task title="Employees from Town" taskId="java-db-and-MySQL-database-programmability-employees-from-town" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+# Problem: Salary Level Function
+[code-task title="Salary Level Function" taskId="java-db-and-MySQL-database-programmability-salary-level-function" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -1683,94 +1683,81 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [task-description]
 # Description
 
-Write a stored procedure **usp_get_employees_from_town** that accepts **town_name** as a parameter and returns the **first and last names of the employees living in the given town**. 
+Write a function **ufn_get_salary_level** that receives the **salary of an employee** and returns their salary level.
 
-The result should be sorted alphabetically (by **first_name**, then by **last_name**) as a first criterion and by **id** in **ascending** order as a second criterion. 
+- If the salary is **< 30000**, return "**Low**"
+- If the salary is **between 30000 and 50000** (inclusive), return "**Average**"
+- If the salary is** > 50000**, return "**High**"
+
 
 ## Examples
 Here is a list of employees **living in Sofia**.
 
-| **first_name** | **last_name** |
+| **salary** | **salary_Level** |
 | --- | --- | 
-| George | Denis |
-| Martin  | Kull |
-| Sven | Nakamura |
+| 13500.00 | Low |
+| 43300.00  | Average |
+| 125500.00 | High |
 
-| **first_name** | **last_name** |
-| --- | --- | 
-| Michael | Blythe |
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-CALL usp_get_employees_from_town ('sofia')
+select salary, ufn_get_salary_level(salary) from salaries order by salary;
 [/input]
 [output]
-George
-Denis
-Martin
-Kull
-Sven
-Nakamura
+13500.00
+Low
+30000.00
+Average
+43300.00
+Average
+50000.00
+Average
+125500.00
+High
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_get_employees_from_town ('sofia')
+select ufn_get_salary_level(13500.00);
 [/input]
 [output]
-George
-Denis
-Martin
-Kull
-Sven
-Nakamura
+Low
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_get_employees_from_town ('detroit')
+select ufn_get_salary_level(43300.00);
 [/input]
 [output]
-Michael
-Blythe
+Average
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_get_employees_from_town ('calgary')
+select ufn_get_salary_level(125500.00);
 [/input]
 [output]
-Garrett
-Vargas
+High
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_get_employees_from_town ('portland')
+select ufn_get_salary_level(30000.00);
 [/input]
 [output]
-Pamela
-Ansman-Wolfe
+Average
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_get_employees_from_town ('index')
+select ufn_get_salary_level(50000.00);
 [/input]
 [output]
-Candy
-Spoon
-Jo
-Berry
-Karen
-Berge
-Lori
-Penor
-Mike
-Seamans
+Average
 [/output]
 [/test]
 [/tests]
