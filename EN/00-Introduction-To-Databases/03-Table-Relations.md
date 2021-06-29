@@ -1,14 +1,27 @@
 [slide hideTitle]
-# Problem with Solution: Promote Employees By ID
-[code-task title="Promote Employees By ID" taskId="java-db-and-MySQL-database-programmability-promote-employees-by-id" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+# Problem with Solution: Triggered
+[code-task title="Triggered" taskId="java-db-and-MySQL-database-programmability-triggered" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
- CREATE PROCEDURE `usp_raise_salary_by_id`(`id` INT) 
- BEGIN 
- UPDATE `employees` AS e
- SET `salary` = `salary` * 1.05
- WHERE 	`employee_id` = `id`;
- END
+CREATE TABLE deleted_employees(
+	employee_id INT PRIMARY KEY AUTO_INCREMENT,
+	first_name VARCHAR(20),
+	last_name VARCHAR(20),
+	middle_name VARCHAR(20),
+	job_title VARCHAR(50),
+	department_id INT,
+	salary DOUBLE 
+);
+
+CREATE TRIGGER tr_deleted_employees
+AFTER DELETE
+ON employees
+FOR EACH ROW
+BEGIN
+	INSERT INTO deleted_employees(first_name, last_name, middle_name, job_title, department_id, salary)
+    VALUES
+    (OLD.first_name, OLD.last_name, OLD.middle_name, OLD.job_title, OLD.department_id, OLD.salary);
+END;
 ```
 [/code-editor]
 [code-adapter]
@@ -1686,46 +1699,84 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [/code-adapter]
 [task-description]
 # Description
-Write a stored procedure **usp_raise_salary_by_id(id)** that raises the **salary** of a given employee (found by using their **id**) by **5%**. 
 
-Keep in mind that you cannot promote a **non-existent** employee - if that happens, the database should be left unchanged. 
+Create a table **deleted_employees(employee_id PK, first_name,last_name,middle_name,job_title,deparment_id,salary)** that will hold information about fired (deleted) **employees** from the employees table. 
 
-# Example
-The following example is the result of calling the procedure with an **employee_id**  of **17**.
-
-
-| **first_name** | 
-| --- | 
-| 14175.0000 | 
+Add a trigger to the **employees** table that inserts the corresponding information in **deleted_employees**. 
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-call usp_raise_salary_by_id(178);
-select salary from employees as e where e.employee_id = 178;
+SELECT lower(TABLE_NAME)
+FROM information_schema.TABLES 
+WHERE lower(TABLE_SCHEMA) = database() and lower(TABLE_NAME) = 'deleted_employees';
+
+SELECT lower(COLUMN_NAME)
+FROM information_schema.COLUMNS 
+WHERE lower(TABLE_NAME) = 'deleted_employees';
+
+SELECT lower(COLUMN_NAME)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and CONSTRAINT_NAME='PRIMARY'
+    and lower(table_name) = 'deleted_employees';
+    
+
+DELETE FROM employees WHERE employee_id = 216;
+SELECT employee_id, first_name, last_name
+FROM deleted_employees as de order by employee_id;
 [/input]
 [output]
-27720.0000
+deleted_employees
+employee_id
+first_name
+last_name
+middle_name
+job_title
+department_id
+salary
+employee_id
+1
+Mike
+Seamans
 [/output]
 [/test]
 [test]
 [input]
-call usp_raise_salary_by_id(216);
-select salary from employees as e where e.employee_id = 216;
+SELECT lower(TABLE_NAME)
+FROM information_schema.TABLES 
+WHERE lower(TABLE_SCHEMA) = database() and lower(TABLE_NAME) = 'deleted_employees';
+
+SELECT lower(COLUMN_NAME)
+FROM information_schema.COLUMNS 
+WHERE lower(TABLE_NAME) = 'deleted_employees';
+
+SELECT lower(COLUMN_NAME)
+    FROM INFORMATION_SCHEMA.key_column_usage
+    WHERE TABLE_SCHEMA = database()
+    and CONSTRAINT_NAME='PRIMARY'
+    and lower(table_name) = 'deleted_employees';
+    
+
+DELETE FROM employees WHERE employee_id = 59;
+SELECT employee_id, first_name, last_name
+FROM deleted_employees as de order by employee_id;
 [/input]
 [output]
-27720.0000
-[/output]
-[/test]
-[test]
-[input]
-call usp_raise_salary_by_id(66);
-select salary from employees as e where e.employee_id = 66;
-[/input]
-[output]
-28770.0000
+deleted_employees
+employee_id
+first_name
+last_name
+middle_name
+job_title
+department_id
+salary
+employee_id
+1
+Deborah
+Poe
 [/output]
 [/test]
 [/tests]
