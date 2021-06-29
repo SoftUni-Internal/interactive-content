@@ -495,7 +495,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(31, 'Berlin'),
 	(32, 'Sofia');
 
-CREATE TABLE IF NOT EXISTS `addresses` (
+CREATE TABLE `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
   `address_text` varchar(100) NOT NULL,
   `town_id` int(10) DEFAULT NULL,
