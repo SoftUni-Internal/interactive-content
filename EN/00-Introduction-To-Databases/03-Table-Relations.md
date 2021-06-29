@@ -1,17 +1,14 @@
 [slide hideTitle]
-# Problem with Solution: Count Employees by Town Name
-[code-task title="Count Employees by Town Name" taskId="java-db-and-MySQL-database-programmability-count-employees-by-town-name" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+# Problem with Solution: Promote Employees
+[code-task title="Promote Employees" taskId="java-db-and-MySQL-database-programmability-promote-employees" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
-CREATE FUNCTION ufn_count_employees_by_town(town_name VARCHAR(50))
-RETURNS INT DETERMINISTIC 
+CREATE PROCEDURE usp_raise_salaries(department_name VARCHAR(45))
 BEGIN
-	DECLARE emp_count INT; 
-    SET emp_count :=(SELECT COUNT(*) FROM `employees` e
-    JOIN `addresses` a USING(`address_id`)
-    JOIN `towns` t USING(`town_id`)
-    WHERE t.`name` = town_name); 
-	RETURN emp_count;
+UPDATE `employees` AS e
+JOIN `departments` AS d USING (`department_id`)
+SET `salary` = `salary` * 1.05
+WHERE d.`name` = department_name;
 END
 ```
 [/code-editor]
@@ -1690,40 +1687,63 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [/code-adapter]
 [task-description]
 # Description
-
-Write a **ufn_count_employees_by_town(town_name)** function that accepts a **town_name** parameter and returns the count of employees living in the given town.
+Write a stored procedure **usp_raise_salaries(department_name)** that raises the **salaries** of all employees in the given department by 5%. 
 
 ## Example
-The following example displays the count of employees living in Sofia.
-|**count**|
-| --- |
-|3|
+
+The following table displays employees in the "**Finance**" department, ordered by **first_name** as a first criterion and by **salary** as a second criterion.
+
+| **efirst_name** | **salary** | 
+| --- | --- | 
+| Barbara | 27 720.00 | 
+| Bryan | 19 950.00 | 
+|Candy|19 950.00|
+| ... | ... | ... | 
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-select ufn_count_employees_by_town("Sofia")
+call usp_raise_salaries("Finance");
+select first_name, salary from employees where department_id = 10 order by first_name,salary limit 3;
 [/input]
 [output]
-3
+Barbara
+27720.0000
+Bryan
+19950.0000
+Candy
+19950.0000
 [/output]
 [/test]
 [test]
 [input]
-select ufn_count_employees_by_town("Bellevue")
+call usp_raise_salaries("Engineering");
+select first_name, salary from employees where department_id = 1
+order by first_name,salary limit 3;
 [/input]
 [output]
-36
+Gail
+34335.0000
+Jossef
+34335.0000
+Michael
+37905.0000
 [/output]
 [/test]
 [test]
 [input]
-select ufn_count_employees_by_town("San Francisco")
+call usp_raise_salaries("Production");
+select first_name, salary from employees where department_id = 7 order by first_name,salary limit 3;
 [/input]
 [output]
-2
+Alejandro
+15750.0000
+Alex
+10500.0000
+Alice
+11550.0000
 [/output]
 [/test]
 [/tests]
