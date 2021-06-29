@@ -24,7 +24,7 @@ System.out.println(x);   // output: 4
 ```
 
 ### Prefix Increment Operator
-The prefix incrementation`++x` is applied before the println statement comes into effect:
+The prefix incrementation `++x` is applied before the `println` statement comes into effect:
 ```java live
 double a = 1.5;
 System.out.println(x);   // output: 1.5
@@ -52,3 +52,4 @@ System.out.println(--x); // output: 0.5
 System.out.println(x);   // output: 0.5
 ```
 [/slide]
+
