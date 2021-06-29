@@ -31,3 +31,28 @@
 - Filtering data collected with the `GROUP BY` function
 
 [/slide]
+
+[slide hideTitle]
+# Lab Resources
+
+For this **lab**, you will need the following **databases**:
+
+- [BookLibrary](https://videos.softuni.org/resources/java/java-mysql/Booklibrary_Built-In-Functions.zip)
+- [Restaurant](https://videos.softuni.org/resources/java/java-mysql/Restaurant_Built-In-Functions.zip)
+
+## Usage Table
+
+|**Problem**|**Database**|
+|---|---|
+|**Find Book Titles**|[BookLibrary](https://videos.softuni.org/resources/java/java-mysql/Booklibrary_Built-In-Functions.zip)|
+|Replace Titles|BookLibrary|
+|Sum the Cost of All Books|BookLibrary|
+|**Department Info**|[Restaurant](https://videos.softuni.org/resources/java/java-mysql/Restaurant_Built-In-Functions.zip)|
+|Minimum Salary|Restaurant|
+|Average Salary|Restaurant|
+|Days Lived|**BookLibrary**|
+|Harry Potter Books|BookLibrary|
+|Menu Prices|**Restaurant**|
+|Appetizers Count|Restaurant|
+
+[/slide]

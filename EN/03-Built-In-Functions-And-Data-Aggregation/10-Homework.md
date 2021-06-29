@@ -1,6 +1,57 @@
 # Homework
 
 [slide hideTitle]
+# Homework Resources
+
+For this **homework**, you will need the following **databases**:
+
+- [SoftUni](https://videos.softuni.org/resources/java/java-mysql/softuni_built-in-functions.zip)
+- [Geography](https://videos.softuni.org/resources/java/java-mysql/geography_built-in-functions.zip)
+- [Diablo](https://videos.softuni.org/resources/java/java-mysql/diablo_built-in-functions.zip)
+- [Orders](https://videos.softuni.org/resources/java/java-mysql/orders_built-in-functions.zip)
+- [Gringotts](https://videos.softuni.org/resources/java/java-mysql/gringotts_built-in-functions.zip)
+
+## Usage Table
+
+|**Part**|**Database**|
+|---|---|
+|**Find All Employees by First Name**|[SoftUni](https://videos.softuni.org/resources/java/java-mysql/softuni_built-in-functions.zip)|
+|Find All Employees by Last Name|SoftUni|
+|Find the First Names of All Employees|SoftUni|
+|Find All Employees Except Engineers|SoftUni|
+|Find Towns by Name Length|SoftUni|
+|Find Towns Starting With|SoftUni|
+|Find Towns Not Starting With|SoftUni|
+|Create a View of Employees Hired After 2000|SoftUni|
+|Length of Last Names|SoftUni|
+|**Countries Holding 'A' Three or More Times**|[Geography](https://videos.softuni.org/resources/java/java-mysql/geography_built-in-functions.zip)|
+|Mix Peak and River Names|Geography|
+|**Games from 2011 and 2012**|[Diablo](https://videos.softuni.org/resources/java/java-mysql/diablo_built-in-functions.zip)|
+|User Email Providers|Diablo|
+|Match IP Adresses to a Pattern|Diablo|
+|Show All Games with Duration and Part of the Day|Diablo|
+|**Orders Table**|[Orders](https://videos.softuni.org/resources/java/java-mysql/orders_built-in-functions.zip)|
+|**Records Count**|[Gringotts](https://videos.softuni.org/resources/java/java-mysql/gringotts_built-in-functions.zip)|
+|Longest Magic Wand|Gringotts|
+|Longest Magic Wand Per Deposit Groups|Gringotts|
+|Smallest Deposit Group Per Magic Wand Size|Gringotts|
+|Deposits Sum|Gringotts|
+|Deposits Sum for Ollivander Family|Gringotts|
+|Filter Deposits|Gringotts|
+|Deposit Charge|Gringotts|
+|Age Groups|Gringotts|
+|First Letter|Gringotts|
+|Average Interest|Gringotts|
+|**Minimum Salaries of Employees**|**SoftUni**|
+|Employees Average Salaries|SoftUni|
+|Employees Maximum Salaries|SoftUni|
+|Count Salaries|SoftUni|
+|Third Highest Salary|SoftUni|
+|Total Salary Sum of Each Department|SoftUni|
+
+[/slide]
+
+[slide hideTitle]
 
 # Problem: Find All Employees by First Name 
 [code-task title="Find All Employees by First Name" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-all-employees-by-first-name" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
