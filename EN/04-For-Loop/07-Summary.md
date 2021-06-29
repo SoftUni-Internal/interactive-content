@@ -33,7 +33,21 @@ for (char ch = 'a'; ch <= 'd'; ch++) {
 }
 ```
 
-- Prefixes and Postfixes
+- Prefixes 
+
+``` java
+int i = 1;
+      System.out.println(++i);
+      System.out.println(i);
+```
+
+- Postfixes
+
+``` java
+int i = 1;
+      System.out.println(i++);
+      System.out.println(i);
+```
 
 
 ## In the next lesson you will learn:
@@ -44,7 +58,7 @@ for (char ch = 'a'; ch <= 'd'; ch++) {
 
 - The **Break** operator 
 
-- Infinite Loops and how to use them safely
+- **Infinite Loops** and how to use them safely
 
 
 [/slide]
