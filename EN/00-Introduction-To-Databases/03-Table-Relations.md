@@ -1,50 +1,26 @@
 [slide hideTitle]
-# Problem: Employee 24
-[code-task title="Employee 24" taskId="java-db-and-MySQL-subqueries-and-JOINs-employee-24" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+# Problem with Solution: Count Employees by Town Name
+[code-task title="Count Employees by Town Name" taskId="java-db-and-MySQL-database-programmability-count-employees-by-town-name" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
-
 ```
--- Write your query here
+CREATE FUNCTION ufn_count_employees_by_town(town_name VARCHAR(50))
+RETURNS INT DETERMINISTIC 
+BEGIN
+	DECLARE emp_count INT; 
+    SET emp_count :=(SELECT COUNT(*) FROM `employees` e
+    JOIN `addresses` a USING(`address_id`)
+    JOIN `towns` t USING(`town_id`)
+    WHERE t.`name` = town_name); 
+	RETURN emp_count;
+END
 ```
 [/code-editor]
-[task-description]
-# Description
-Use the database that is called "**SoftUni Database**".
-
-Write a query that selects the following fields:
-
-- **employee_id**
-
-- **first_name**
-
-- **project_name**
-
-Return all the **projects** of employees with **id equal to 24**. 
-
-If the project has started after **2005 inclusively**, the return value should be **NULL**. 
-
-Sort the result by **project_name alphabetically.**
-
-
-## Example
-
-| **employee_id** | **first_name** |**last_name** | 
-| --- | --- | --- | 
-|24|	David|	NULL|	
-|24	|David|	NULL	|
-|24|	David|	Road-650|
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
+[code-adapter]
 ```
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
-
 
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -685,22 +661,22 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(272, 'Mary', 'Dempsey', 'A', 'Marketing Assistant', 4, 6, '2003-03-17 00:00:00.000000', 13500.0000, 26),
 	(273, 'Brian', 'Welcker', 'S', 'Vice President of Sales', 3, 109, '2003-03-18 00:00:00.000000', 72100.0000, 134),
 	(274, 'Sheela', 'Word', 'H', 'Purchasing Manager', 13, 71, '2003-03-28 00:00:00.000000', 30000.0000, 222),
-	(275, 'Michael', 'Blythe', 'G', 'Sales Representative', 3, 268, '2003-07-03 00:00:00.000000', 23100.0000, 60),
-	(276, 'Linda', 'Mitchell', 'C', 'Sales Representative', 3, 268, '2003-07-02 00:00:00.000000', 23100.0000, 170),
+	(275, 'Michael', 'Blythe', 'G', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 60),
+	(276, 'Linda', 'Mitchell', 'C', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 170),
 	(277, 'Jillian', 'Carson', NULL, 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 61),
-	(278, 'Garrett', 'Vargas', 'R', 'Sales Representative', 3, 268, '2003-07-04 00:00:00.000000', 23100.0000, 52),
-	(279, 'Tsvi', 'Reiter', 'Michael', 'Sales Representative', 3, 268, '2003-07-05 00:00:00.000000', 23100.0000, 154),
-	(280, 'Pamela', 'Ansman-Wolfe', 'O', 'Sales Representative', 3, 268, '2003-07-07 00:00:00.000000', 23100.0000, 179),
-	(281, 'Shu', 'Ito', 'K', 'Sales Representative', 3, 268, '2003-07-20 00:00:00.000000', 23100.0000, 235),
-	(282, 'Jose', 'Saraiva', 'Edvaldo', 'Sales Representative', 3, 268, '2003-07-11 00:00:00.000000', 23100.0000, 178),
-	(283, 'David', 'Campbell', 'R', 'Sales Representative', 3, 268, '2003-07-19 00:00:00.000000', 23100.0000, 13),
+	(278, 'Garrett', 'Vargas', 'R', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 52),
+	(279, 'Tsvi', 'Reiter', 'Michael', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 154),
+	(280, 'Pamela', 'Ansman-Wolfe', 'O', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 179),
+	(281, 'Shu', 'Ito', 'K', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 235),
+	(282, 'Jose', 'Saraiva', 'Edvaldo', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 178),
+	(283, 'David', 'Campbell', 'R', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 13),
 	(284, 'Amy', 'Alberts', 'E', 'European Sales Manager', 3, 273, '2004-05-18 00:00:00.000000', 48100.0000, 202),
-	(285, 'Jae', 'Pak', 'B', 'Sales Representative', 3, 284, '2004-07-01 05:00:00.000000', 23100.0000, 54),
+	(285, 'Jae', 'Pak', 'B', 'Sales Representative', 3, 284, '2004-07-01 00:00:00.000000', 23100.0000, 54),
 	(286, 'Ranjit', 'Varkey Chudukatil', 'R', 'Sales Representative', 3, 284, '2004-07-01 00:00:00.000000', 23100.0000, 38),
 	(287, 'Tete', 'Mensa-Annan', 'A', 'Sales Representative', 3, 268, '2004-11-01 00:00:00.000000', 23100.0000, 53),
 	(288, 'Syed', 'Abbas', 'E', 'Pacific Sales Manager', 3, 273, '2005-04-15 00:00:00.000000', 48100.0000, 49),
-	(289, 'Rachel', 'Valdez', 'B', 'Sales Representative', 3, 284, '2005-07-01 02:00:00.000000', 23100.0000, 37),
-	(290, 'Lynn', 'Tsoflias', '', 'Sales Representative', 3, 288, '2005-07-01 01:00:00.000000', 23100.0000, 153),
+	(289, 'Rachel', 'Valdez', 'B', 'Sales Representative', 3, 284, '2005-07-01 00:00:00.000000', 23100.0000, 37),
+	(290, 'Lynn', 'Tsoflias', '', 'Sales Representative', 3, 288, '2005-07-01 00:00:00.000000', 23100.0000, 153),
 	(291, 'Edward', 'Young', 'I', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Emma', 'Johnson', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'Thomas', 'Miller', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
@@ -1581,7 +1557,7 @@ CREATE TABLE IF NOT EXISTS `projects` (
 
 /*!40000 ALTER TABLE `projects` DISABLE KEYS */;
 INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2002-08-13 01:00:00.000000', NULL),
+	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2003-06-01 00:00:00.000000', NULL),
 	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
@@ -1711,379 +1687,43 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 ```
+[/code-adapter]
+[task-description]
+# Description
+
+Write a **ufn_count_employees_by_town(town_name)** function that accepts a **town_name** parameter and returns the count of employees living in the given town.
+
+## Example
+The following example displays the count of employees living in Sofia.
+|**count**|
+| --- |
+|3|
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+select ufn_count_employees_by_town("Sofia")
 [/input]
 [output]
-```
-24
-David
-
-24
-David
-
-24
-David
-
-24
-David
-Road-650
-```
+3
 [/output]
 [/test]
 [test]
 [input]
-```
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `pk_addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `pk_employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-
-/*!40000 ALTER TABLE `employees` DISABLE KEYS */;
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(24, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '2006-07-31 00:00:00.000000', 12500.0000, 166),
-	(2, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
-	(3, 'Cidney', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
-	(4, 'Dadiv', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Fillip', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `pk_employees_projects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
-	(24, 2),
-	(24, 1);
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `pk_projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2003-08-01 00:00:00.000000', NULL),
-	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2004-06-01 00:00:00.000000', NULL);
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `pk_towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
+select ufn_count_employees_by_town("Bellevue")
 [/input]
 [output]
-```
-24
-Antony
-Classic Vest
-24
-Antony
-Cycling Cap
-```
+36
 [/output]
 [/test]
 [test]
 [input]
-```
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `pk_addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `pk_employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-
-/*!40000 ALTER TABLE `employees` DISABLE KEYS */;
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(24, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '2006-07-31 00:00:00.000000', 12500.0000, 166),
-	(2, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
-	(3, 'Cidney', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
-	(4, 'Dadiv', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Fillip', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `pk_employees_projects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
-	(24, 2),
-	(24, 1);
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `pk_projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2005-01-01 00:00:00.000000', NULL),
-	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2004-06-01 00:00:00.000000', NULL);
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `pk_towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
+select ufn_count_employees_by_town("San Francisco")
 [/input]
 [output]
-```
-24
-Antony
-
-24
-Antony
-Cycling Cap
-```
-[/output]
-[/test]
-[test]
-[input]
-```
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `pk_addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `pk_employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-
-/*!40000 ALTER TABLE `employees` DISABLE KEYS */;
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(24, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '2006-07-31 00:00:00.000000', 12500.0000, 166),
-	(2, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
-	(3, 'Cidney', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
-	(4, 'Dadiv', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Fillip', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `pk_employees_projects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
-	(24, 3),
-	(2, 1),
-	(3, 2),
-	(5, 3);
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `pk_projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2007-01-01 00:00:00.000000', NULL),
-	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2009-06-01 00:00:00.000000', NULL),
-	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2004-06-01 00:00:00.000000', '2011-06-01 00:00:00.000000');
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `pk_towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
-[/input]
-[output]
-```
-24
-Antony
-Full-Finger Gloves
-```
-[/output]
-[/test]
-[test]
-[input]
-```
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `pk_addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `pk_employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-
-/*!40000 ALTER TABLE `employees` DISABLE KEYS */;
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(24, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, 16, '2006-07-31 00:00:00.000000', 12500.0000, 166),
-	(2, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
-	(3, 'Cidney', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
-	(4, 'Dadiv', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Fillip', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `pk_employees_projects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
-	(24, 2),
-	(24, 1),
-	(24, 3);
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `pk_projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'CCC', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2003-01-01 00:00:00.000000', NULL),
-	(2, 'AAA', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2002-06-01 00:00:00.000000', NULL),
-	(3, 'BBB', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2001-06-01 00:00:00.000000', '2011-06-01 00:00:00.000000');
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `pk_towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
-[/input]
-[output]
-```
-24
-Antony
-AAA
-24
-Antony
-BBB
-24
-Antony
-CCC
-```
+2
 [/output]
 [/test]
 [/tests]
