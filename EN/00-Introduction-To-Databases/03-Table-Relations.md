@@ -444,9 +444,12 @@ Duffy
 [/test]
 [test]
 [input]
+```
 CALL usp_get_employees_salary_above (48100);
+```
 [/input]
 [output]
+```
 Amy
 Alberts
 Brian
@@ -467,13 +470,17 @@ Syed
 Abbas
 Terri
 Duffy
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CALL usp_get_employees_salary_above (12500.0000);
+```
 [/input]
 [output]
+```
 A. Scott
 Wright
 Alan
@@ -896,13 +903,17 @@ Zainal
 Arifin
 Zheng
 Mu
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 CALL usp_get_employees_salary_above (13500.0001);
+```
 [/input]
 [output]
+```
 A. Scott
 Wright
 Alan
@@ -1227,6 +1238,7 @@ Zainal
 Arifin
 Zheng
 Mu
+```
 [/output]
 [/test]
 [/tests]
