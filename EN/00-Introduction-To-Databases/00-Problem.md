@@ -1,7 +1,7 @@
 # Homework
 
 [slide hideTitle]
-# Problem: Employee Summary Fixed Newest
+# Problem: Employee Summary Fixed Newest 2
 [code-task title="Employee Summary" taskId="java-db-and-MySQL-subqueries-and-JOINs-employee-summary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
@@ -43,7 +43,9 @@ Order by **employee_id**.
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET NAMES utf8mb4 */;
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;CREATE TABLE IF NOT EXISTS `projects` (
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+CREATE TABLE IF NOT EXISTS `projects` (
   `project_id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `description` text,
