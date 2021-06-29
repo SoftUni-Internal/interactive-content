@@ -1726,12 +1726,9 @@ Welcker
 [/test]
 [test]
 [input]
-```
 CALL usp_get_employees_by_salary_level ('high');
-```
 [/input]
 [output]
-```
 Terri
 Duffy
 Laura
@@ -1746,14 +1743,16 @@ Dylan
 Miller
 Brian
 Welcker
-```
 [/output]
 [/test]
 [test]
 [input]
+```
 CALL usp_get_employees_by_salary_level ('low');
+```
 [/input]
 [output]
+```
 Zheng
 Mu
 Zainal
@@ -2280,6 +2279,7 @@ Alan
 Brewer
 A. Scott
 Wright
+```
 [/output]
 [/test]
 [test]
