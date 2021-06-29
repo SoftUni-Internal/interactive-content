@@ -686,9 +686,9 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(288, 'Syed', 'Abbas', 'E', 'Pacific Sales Manager', 3, 273, '2005-04-15 00:00:00.000000', 48100.0000, 49),
 	(289, 'Rachel', 'Valdez', 'B', 'Sales Representative', 3, 284, '2005-07-01 00:00:00.000000', 23100.0000, 37),
 	(290, 'Lynn', 'Tsoflias', '', 'Sales Representative', 3, 288, '2005-07-01 00:00:00.000000', 23100.0000, 153),
-	(291, 'Edward', 'Young', 'I', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
-	(292, 'Emma', 'Johnson', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
-	(293, 'Thomas', 'Miller', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
+	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
+	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
+	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 /*!40000 ALTER TABLE `employees` ENABLE KEYS */;
 
 
@@ -1695,6 +1695,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+
 ```
 [/code-adapter]
 [task-description]
