@@ -13,7 +13,7 @@ For this **homework**, you will need the following **databases**:
 
 ## Usage Table
 
-|**Part**|**Database**|
+|**Problem Name**|**Database**|
 |---|---|
 |**Find All Employees by First Name**|[SoftUni](https://videos.softuni.org/resources/java/java-mysql/softuni_built-in-functions.zip)|
 |Find All Employees by Last Name|SoftUni|

@@ -42,7 +42,7 @@ For this **lab**, you will need the following **databases**:
 
 ## Usage Table
 
-|**Problem**|**Database**|
+|**Problem Name**|**Database**|
 |---|---|
 |**Find Book Titles**|[BookLibrary](https://videos.softuni.org/resources/java/java-mysql/Booklibrary_Built-In-Functions.zip)|
 |Replace Titles|BookLibrary|
