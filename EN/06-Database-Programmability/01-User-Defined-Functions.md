@@ -1747,8 +1747,9 @@ Write a **ufn_count_employees_by_town(town_name)** function that accepts a **tow
 
 ## Example
 The following example displays the count of employees living in Sofia.
+
 |**count**|
-| --- |
+|---|
 |3|
 
 [/task-description]
