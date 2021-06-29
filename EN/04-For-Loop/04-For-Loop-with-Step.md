@@ -3,13 +3,13 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/04-for-loops/EN/interactive-programming-basics-with-java-for-loops-19-20-for-loop-with-step-and-demo -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-In this section, we will look into a particular and very important part of the **for-loop**, namely its **loop-step**.
+In this section we will take a look at the most important part of the **for-loop**, i.e. its **loop-step**.
 
-**The loop-step** is that **part** of the **for-loop** construction that specifies **how** to **increase** or **decrease** the value of the **loop variable**. 
+The **loop-step** is the part of the **for-loop** construction which specifies how to **increase** or **decrease** the value of the **loop variable**. 
 
-It the last element of the **declarative structure** of the for-loop.
+It is the last element of the **declarative structure** of the for-loop.
 
-Most often, we have **a step size of** `1`, and in this case, instead of writing `i += 1` or `i -= 1` we can use a shorter syntax: `i++` or `i--`.
+When using a **step size** of `1` a shorter syntax can be implemented: `i++` or `i--`, instead of `i += 1` or `i -= 1`
 
 ```java live
 for (int i = 0; i < 10; i++) {
@@ -17,18 +17,18 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-If we want our step to be **different than 1**, when **increasing**, we use the `i +=` + **a step size**.
+When required to increment using a value **greater than 1** the following syntax can be used: `i += x`.
 
- With a step of 2, the for-loop would look like this:
+For instance, when incrementing with a **step value of 2** the for-loop would be expressed as follows:
 ```java live
 for (int i = 0; i < 10; i += 2) {
   System.out.println(i);
 }
 ```
 
-We might want to have a **decreasing step** - `i -=` . 
+In case a **decreasing step** is requred: `i -= x` . 
 
-In this case, we should pay attention to the end condition to **avoid** creating an **infinite loop**.
+The **end condition** should be clearly defined in order to **avoid** unintentionally creating an **infinite loop**.
 
 ```java live
 for (int i = 10; i >= 1; i--) {
