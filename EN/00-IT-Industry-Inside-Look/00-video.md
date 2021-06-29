@@ -237,7 +237,7 @@ id
 [slide hideTitle]
 
 # Problem: Insert Records in Both Tables
-[code-task title="Insert Records in Both Tables" taskId="MySQL-Data-Definitions-and-Data-Types-Insert-Records-in-Both-Tables" executionType="tests-execution" executionStrategy="" requiresInput]
+[code-task title="Insert Records in Both Tables" taskId="MySQL-Data-Definitions-and-Data-Types-Insert-Records-in-Both-Tables" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -355,7 +355,7 @@ Steward
 ```
 -- Write your query here
 ```
-
+[/code-editor]
 [code-adapter]
 CREATE TABLE IF NOT EXISTS minions
 (
@@ -385,7 +385,6 @@ insert into minions values (1, 'Kevin', 22, 1);
 insert into minions values (2, 'Bob', 15, 3);
 insert into minions values (3, 'Steward',null, 2);
 [/code-adapter]
-[/code-editor]
 [task-description]
 ## Description
 Delete all data from the minions table using an SQL query. 
@@ -1675,7 +1674,6 @@ Swanson
 4
 2013-02-01 00:00:00
 3500
-
 2
 Tamsyn 
 Corrina 
@@ -1684,7 +1682,6 @@ Senior Engineer
 1
 2004-03-02 00:00:00
 4000
-
 3
 Sonia 
 Eddy 
@@ -1693,7 +1690,6 @@ Intern
 5
 2016-08-28 00:00:00
 525.25
-
 4
 Petal 
 Hylda 
@@ -1702,7 +1698,6 @@ CEO
 2
 2007-12-09 00:00:00
 3000
-
 5
 Faye 
 Emberly 
@@ -1884,7 +1879,6 @@ Ivanov
 4
 2013-02-01 00:00:00
 3500
-
 2
 Petar
 Petrov
@@ -1893,7 +1887,6 @@ Senior Engineer
 1
 2004-03-02 00:00:00
 4000
-
 3
 Maria
 Petrova
@@ -1902,7 +1895,6 @@ Intern
 5
 2016-08-28 00:00:00
 525.25
-
 4
 Georgi
 Terziev
@@ -1911,7 +1903,6 @@ CEO
 2
 2007-12-09 00:00:00
 3000
-
 5
 Peter
 Pan
@@ -2034,7 +2025,6 @@ Senior Engineer
 1
 2004-03-02 00:00:00
 4000
-
 1
 Kyrie 
 Keefe 
@@ -2043,7 +2033,6 @@ Swanson
 4
 2013-02-01 00:00:00
 3500
-
 4
 Petal 
 Hylda 
@@ -2052,7 +2041,6 @@ CEO
 2
 2007-12-09 00:00:00
 3000
-
 5
 Faye 
 Emberly 
@@ -2061,7 +2049,6 @@ Intern
 3
 2016-08-28 00:00:00
 599.88
-
 3
 Sonia 
 Eddy 
@@ -2243,7 +2230,6 @@ Senior Engineer
 1
 2004-03-02 00:00:00
 4000
-
 1
 Ivan
 Ivanov
@@ -2252,7 +2238,6 @@ Ivanov
 4
 2013-02-01 00:00:00
 3500
-
 4
 Georgi
 Terziev
@@ -2261,7 +2246,6 @@ CEO
 2
 2007-12-09 00:00:00
 3000
-
 5
 Peter
 Pan
@@ -2270,7 +2254,6 @@ Intern
 3
 2016-08-28 00:00:00
 599.88
-
 3
 Maria
 Petrova
@@ -2825,4 +2808,3 @@ SELECT COUNT(\*) FROM employees
 [/tests]
 [/code-task]
 [/slide]
-
