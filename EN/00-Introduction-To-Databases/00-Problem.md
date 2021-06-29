@@ -40,6 +40,14 @@ Order by **employee_id**.
 [test open]
 [input]
 
+
+CREATE TABLE IF NOT EXISTS towns (
+  `town_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`town_id`),
+  UNIQUE KEY `PK_Towns` (`town_id`)
+);
+
 CREATE TABLE addresses (
 
 
@@ -466,12 +474,6 @@ INSERT INTO employees (`employee_id`, `first_name`, `last_name`, `middle_name`, 
 	(293, 'Thomas', 'Miller', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
 
 
-CREATE TABLE IF NOT EXISTS towns (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `PK_Towns` (`town_id`)
-);
 
 INSERT INTO towns (`town_id`, `name`) VALUES
 	(1, 'Redmond'),
