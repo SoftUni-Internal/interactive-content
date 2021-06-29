@@ -39,6 +39,7 @@ Order by **employee_id**.
 [tests]
 [test open]
 [input]
+```
 # test 1 : SELECT
 #                e.employee_id, 
 #                concat(e.first_name, ' ', e.last_name) as employee_name, 
@@ -118,12 +119,15 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `pk_towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
+```
 3
 Cidney Andrews
 Fillip D'Hers
 Engineering
+```
 [/output]
 [/test]
 [/tests]
