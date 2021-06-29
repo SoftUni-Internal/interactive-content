@@ -280,6 +280,7 @@ ADD CONSTRAINT fk_minions_towns FOREIGN KEY (town_id) REFERENCES towns(id)
 - **towns**
 
 | **id** | **name** |
+|---|---|
 | 1 | London |
 | 2 | Barcelona |
 | 3 | Sofia |
@@ -289,8 +290,8 @@ ADD CONSTRAINT fk_minions_towns FOREIGN KEY (town_id) REFERENCES towns(id)
 [tests]
 [test open]
 [input]
-SELECT \* FROM towns;
-SELECT \* FROM minions;
+SELECT * FROM towns;
+SELECT * FROM minions;
 [/input]
 [output]
 1
@@ -309,7 +310,7 @@ Bob
 3
 3
 Steward
-NULL
+
 2
 [/output]
 [/test]
@@ -331,7 +332,7 @@ SELECT count(id) FROM minions;
 [/test]
 [test]
 [input]
-SELECT \* FROM towns;
+SELECT * FROM towns;
 [/input]
 [output]
 1
@@ -344,7 +345,7 @@ Sofia
 [/test]
 [test]
 [input]
-SELECT \* FROM minions;
+SELECT * FROM minions;
 [/input]
 [output]
 1
@@ -357,7 +358,7 @@ Bob
 3
 3
 Steward
-NULL
+
 2
 [/output]
 [/test]
