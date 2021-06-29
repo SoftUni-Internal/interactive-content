@@ -294,7 +294,7 @@ SELECT * FROM towns;
 SELECT * FROM minions;
 [/input]
 [output]
-1
+`1
 London
 2
 Barcelona
@@ -311,7 +311,7 @@ Bob
 3
 Steward
 
-2
+2`
 [/output]
 [/test]
 [test]
