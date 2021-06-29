@@ -1,15 +1,14 @@
 [slide hideTitle]
-# Problem with Solution: Promote Employees
-[code-task title="Promote Employees" taskId="java-db-and-MySQL-database-programmability-promote-employees" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+# Problem with Solution: Promote Employees By ID
+[code-task title="Promote Employees By ID" taskId="java-db-and-MySQL-database-programmability-promote-employees-by-id" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
-CREATE PROCEDURE usp_raise_salaries(department_name VARCHAR(45))
-BEGIN
-UPDATE `employees` AS e
-JOIN `departments` AS d USING (`department_id`)
-SET `salary` = `salary` * 1.05
-WHERE d.`name` = department_name;
-END
+ CREATE PROCEDURE `usp_raise_salary_by_id`(`id` INT) 
+ BEGIN 
+ UPDATE `employees` AS e
+ SET `salary` = `salary` * 1.05
+ WHERE 	`employee_id` = `id`;
+ END
 ```
 [/code-editor]
 [code-adapter]
@@ -1687,63 +1686,46 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [/code-adapter]
 [task-description]
 # Description
-Write a stored procedure **usp_raise_salaries(department_name)** that raises the **salaries** of all employees in the given department by 5%. 
+Write a stored procedure **usp_raise_salary_by_id(id)** that raises the **salary** of a given employee (found by using their **id**) by **5%**. 
 
-## Example
+Keep in mind that you cannot promote a **non-existent** employee - if that happens, the database should be left unchanged. 
 
-The following table displays employees in the "**Finance**" department, ordered by **first_name** as a first criterion and by **salary** as a second criterion.
+# Example
+The following example is the result of calling the procedure with an **employee_id**  of **17**.
 
-| **efirst_name** | **salary** | 
-| --- | --- | 
-| Barbara | 27 720.00 | 
-| Bryan | 19 950.00 | 
-|Candy|19 950.00|
-| ... | ... | ... | 
+
+| **first_name** | 
+| --- | 
+| 14175.0000 | 
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-call usp_raise_salaries("Finance");
-select first_name, salary from employees where department_id = 10 order by first_name,salary limit 3;
+call usp_raise_salary_by_id(178);
+select salary from employees as e where e.employee_id = 178;
 [/input]
 [output]
-Barbara
 27720.0000
-Bryan
-19950.0000
-Candy
-19950.0000
 [/output]
 [/test]
 [test]
 [input]
-call usp_raise_salaries("Engineering");
-select first_name, salary from employees where department_id = 1
-order by first_name,salary limit 3;
+call usp_raise_salary_by_id(216);
+select salary from employees as e where e.employee_id = 216;
 [/input]
 [output]
-Gail
-34335.0000
-Jossef
-34335.0000
-Michael
-37905.0000
+27720.0000
 [/output]
 [/test]
 [test]
 [input]
-call usp_raise_salaries("Production");
-select first_name, salary from employees where department_id = 7 order by first_name,salary limit 3;
+call usp_raise_salary_by_id(66);
+select salary from employees as e where e.employee_id = 66;
 [/input]
 [output]
-Alejandro
-15750.0000
-Alex
-10500.0000
-Alice
-11550.0000
+28770.0000
 [/output]
 [/test]
 [/tests]
