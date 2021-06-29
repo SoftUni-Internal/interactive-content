@@ -852,8 +852,8 @@ Steve
 Masters
 Suchitra
 Mohan
-Sven
-Nakamura
+Svetlin
+Nakov
 Syed
 Abbas
 Sylvester
