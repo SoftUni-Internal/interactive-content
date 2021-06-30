@@ -1,26 +1,43 @@
 [slide hideTitle]
-# Problem with Solution: Count Employees by Town Name
-[code-task title="Count Employees by Town Name" taskId="java-db-and-MySQL-database-programmability-count-employees-by-town-name" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+# Problem: Last 7 Hired Employees 
+
+
+[code-task title="Last 7 Hired Employees" taskId="java-db-and-MySQL-basic-crud-last-7-hired-employees" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
+
 ```
-CREATE FUNCTION ufn_count_employees_by_town(town_name VARCHAR(50))
-RETURNS INT DETERMINISTIC 
-BEGIN
-	DECLARE emp_count INT; 
-    SET emp_count :=(SELECT COUNT(*) FROM `employees` e
-    JOIN `addresses` a USING(`address_id`)
-    JOIN `towns` t USING(`town_id`)
-    WHERE t.`name` = town_name); 
-	RETURN emp_count;
-END
+-- Write your query here
+
 ```
 [/code-editor]
-[code-adapter]
-```
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET NAMES utf8mb4 */;
-/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
-/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+[task-description]
+## Description
+
+Write an SQL query to find **the seven employees that were hired last**.
+
+Select **their first and last name as well as their hire date**.
+
+
+## Example
+
+| first_name | last_name | hire_date |
+| --- | --- | --- |
+| Rachel | Valdez | 2005-07-01 00:00:00 |
+| Lynn | Tsoflias | 2005-07-01 00:00:00 |
+| Syed | Abbas | 2005-04-15 00:00:00 |
+| ... | ... | ... |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
+/\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
+/\*!40101 SET NAMES utf8mb4 \*/;
+/\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
+/\*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' \*/;
+
 
 CREATE TABLE IF NOT EXISTS `addresses` (
   `address_id` int(10) NOT NULL AUTO_INCREMENT,
@@ -33,7 +50,7 @@ CREATE TABLE IF NOT EXISTS `addresses` (
 ) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
 
 
-/*!40000 ALTER TABLE `addresses` DISABLE KEYS */;
+/\*!40000 ALTER TABLE `addresses` DISABLE KEYS \*/;
 INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
 	(1, '108 Lakeside Court', 5),
 	(2, '1343 Prospect St', 5),
@@ -326,7 +343,7 @@ INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
 	(289, '591 Merriewood Drive', 11),
 	(290, '7230 Vine Maple Street', 11),
 	(291, '163 Nishava Str, ent A, apt. 1', 32);
-/*!40000 ALTER TABLE `addresses` ENABLE KEYS */;
+/\*!40000 ALTER TABLE `addresses` ENABLE KEYS \*/;
 
 
 CREATE TABLE IF NOT EXISTS `departments` (
@@ -340,7 +357,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 
-/*!40000 ALTER TABLE `departments` DISABLE KEYS */;
+/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
 INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(1, 'Engineering', 12),
 	(2, 'Tool Design', 4),
@@ -358,7 +375,7 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(14, 'Facilities and Maintenance', 218),
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
-/*!40000 ALTER TABLE `departments` ENABLE KEYS */;
+/\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
 
 
 
@@ -385,7 +402,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
 ) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
 
 
-/*!40000 ALTER TABLE `employees` DISABLE KEYS */;
+/\*!40000 ALTER TABLE `employees` DISABLE KEYS \*/;
 INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
 	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
 	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
@@ -677,10 +694,10 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(288, 'Syed', 'Abbas', 'E', 'Pacific Sales Manager', 3, 273, '2005-04-15 00:00:00.000000', 48100.0000, 49),
 	(289, 'Rachel', 'Valdez', 'B', 'Sales Representative', 3, 284, '2005-07-01 00:00:00.000000', 23100.0000, 37),
 	(290, 'Lynn', 'Tsoflias', '', 'Sales Representative', 3, 288, '2005-07-01 00:00:00.000000', 23100.0000, 153),
-	(291, 'Edward', 'Young', 'I', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
-	(292, 'Emma', 'Johnson', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
-	(293, 'Thomas', 'Miller', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
-/*!40000 ALTER TABLE `employees` ENABLE KEYS */;
+	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
+	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
+	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
+/\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
 
 
 
@@ -695,7 +712,7 @@ CREATE TABLE IF NOT EXISTS `employees_projects` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-/*!40000 ALTER TABLE `employees_projects` DISABLE KEYS */;
+/\*!40000 ALTER TABLE `employees_projects` DISABLE KEYS \*/;
 INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(3, 1),
 	(15, 1),
@@ -1540,7 +1557,7 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(185, 127),
 	(234, 127),
 	(245, 127);
-/*!40000 ALTER TABLE `employees_projects` ENABLE KEYS */;
+/\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
 
 
 
@@ -1555,7 +1572,7 @@ CREATE TABLE IF NOT EXISTS `projects` (
 ) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
 
 
-/*!40000 ALTER TABLE `projects` DISABLE KEYS */;
+/\*!40000 ALTER TABLE `projects` DISABLE KEYS \*/;
 INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
 	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2003-06-01 00:00:00.000000', NULL),
 	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
@@ -1636,7 +1653,7 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(121, 'Fender Set - Mountain', 'Research, design and development of Fender Set - Mountain. Clip-on fenders fit most mountain bikes.', '2003-06-01 00:00:00.000000', NULL),
 	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
 	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
-/*!40000 ALTER TABLE `projects` ENABLE KEYS */;
+/\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
 
 
 
@@ -1648,7 +1665,7 @@ CREATE TABLE IF NOT EXISTS `towns` (
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
 
-/*!40000 ALTER TABLE `towns` DISABLE KEYS */;
+/\*!40000 ALTER TABLE `towns` DISABLE KEYS \*/;
 INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(1, 'Redmond'),
 	(2, 'Calgary'),
@@ -1682,48 +1699,325 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(30, 'Bordeaux'),
 	(31, 'Berlin'),
 	(32, 'Sofia');
-/*!40000 ALTER TABLE `towns` ENABLE KEYS */;
-/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/\*!40000 ALTER TABLE `towns` ENABLE KEYS \*/;
+/\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
+/\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
+/\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+[/input]
+[output]
+Rachel
+Valdez
+2005-07-01 00:00:00
+Lynn
+Tsoflias
+2005-07-01 00:00:00
+Syed
+Abbas
+2005-04-15 00:00:00
+Svetlin
+Nakov
+2005-03-01 00:00:00
+Martin
+Kulov
+2005-03-01 00:00:00
+George
+Denchev
+2005-03-01 00:00:00
+Tete
+Mensa-Annan
+2004-11-01 00:00:00
+[/output]
+[/test]
+[test]
+[input]
 ```
-[/code-adapter]
-[task-description]
-# Description
+\# test 1 : SELECT first_name, last_name, hire_date FROM employees;
 
-Write a **ufn_count_employees_by_town(town_name)** function that accepts a **town_name** parameter and returns the count of employees living in the given town.
 
-## Example
-The following example displays the count of employees living in Sofia.
-|**count**|
-| --- |
-|3|
+CREATE TABLE IF NOT EXISTS `addresses` (
+  `address_id` int(10) NOT NULL AUTO_INCREMENT,
+  `address_text` varchar(100) NOT NULL,
+  `town_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`address_id`),
+  UNIQUE KEY `PK_Addresses` (`address_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
 
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-select ufn_count_employees_by_town("Sofia")
+
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `PK_Departments` (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `PK_Employees` (`employee_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
+
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '2005-07-31 00:00:00', 12500.0000, 166),
+	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '2004-02-26 00:00:00', 13500.0000, 102),
+	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '2003-12-12 00:00:00', 43300.0000, 193),
+	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2002-01-05 00:00:00', 29800.0000, 155),
+	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2001-01-11 00:00:00', 25000.0000, 40);
+
+
+
+CREATE TABLE IF NOT EXISTS `employees_projects` (
+  `employee_id` int(10) NOT NULL,
+  `project_id` int(10) NOT NULL,
+  PRIMARY KEY (`employee_id`,`project_id`),
+  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `PK_Projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `towns` (
+  `town_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`town_id`),
+  UNIQUE KEY `PK_Towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
-3
+Guy
+Gilbert
+2005-07-31 00:00:00
+Kevin
+Brown
+2004-02-26 00:00:00
+Roberto
+Tamburello
+2003-12-12 00:00:00
+Rob
+Walters
+2002-01-05 00:00:00
+Thierry
+D'Hers
+2001-01-11 00:00:00
 [/output]
 [/test]
 [test]
 [input]
-select ufn_count_employees_by_town("Bellevue")
+```
+\# test 2: SELECT first_name, last_name, hire_date FROM employees ORDER BY hire_date DESC;
+
+
+CREATE TABLE IF NOT EXISTS `addresses` (
+  `address_id` int(10) NOT NULL AUTO_INCREMENT,
+  `address_text` varchar(100) NOT NULL,
+  `town_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`address_id`),
+  UNIQUE KEY `PK_Addresses` (`address_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `PK_Departments` (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `PK_Employees` (`employee_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
+
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '2001-07-31 00:00:00', 12500.0000, 166),
+	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '2002-02-26 00:00:00', 13500.0000, 102),
+	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '2003-12-12 00:00:00', 43300.0000, 193),
+	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2004-01-05 00:00:00', 29800.0000, 155),
+	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2005-01-11 00:00:00', 25000.0000, 40);
+
+
+
+CREATE TABLE IF NOT EXISTS `employees_projects` (
+  `employee_id` int(10) NOT NULL,
+  `project_id` int(10) NOT NULL,
+  PRIMARY KEY (`employee_id`,`project_id`),
+  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `PK_Projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `towns` (
+  `town_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`town_id`),
+  UNIQUE KEY `PK_Towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
-36
+Thierry
+D'Hers
+2005-01-11 00:00:00
+Rob
+Walters
+2004-01-05 00:00:00
+Roberto
+Tamburello
+2003-12-12 00:00:00
+Kevin
+Brown
+2002-02-26 00:00:00
+Guy
+Gilbert
+2001-07-31 00:00:00
 [/output]
 [/test]
 [test]
 [input]
-select ufn_count_employees_by_town("San Francisco")
+```
+\# test 3 : SELECT first_name, last_name, hire_date FROM employees limit 7;
+
+
+CREATE TABLE IF NOT EXISTS `addresses` (
+  `address_id` int(10) NOT NULL AUTO_INCREMENT,
+  `address_text` varchar(100) NOT NULL,
+  `town_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`address_id`),
+  UNIQUE KEY `PK_Addresses` (`address_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `PK_Departments` (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `PK_Employees` (`employee_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
+
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '2005-07-31 00:00:00', 12500.0000, 166),
+	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '2004-02-26 00:00:00', 13500.0000, 102),
+	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '2003-12-12 00:00:00', 43300.0000, 193),
+	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2002-01-05 00:00:00', 29800.0000, 155),
+	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2001-01-11 00:00:00', 25000.0000, 40),
+	(6, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00', 25000.0000, 40),
+	(7, 'John', 'Jovy', 'B', 'Marketing Assistant', 2, 263, '1999-01-11 00:00:00', 25000.0000, 40),
+	(8, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '1998-01-11 00:00:00', 25000.0000, 40),
+	(9, 'Thierry', 'D''Hers', 'B', 'Senior Tool Designer', 2, 263, '1997-01-11 00:00:00', 25000.0000, 40);
+
+
+
+CREATE TABLE IF NOT EXISTS `employees_projects` (
+  `employee_id` int(10) NOT NULL,
+  `project_id` int(10) NOT NULL,
+  PRIMARY KEY (`employee_id`,`project_id`),
+  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `PK_Projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `towns` (
+  `town_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`town_id`),
+  UNIQUE KEY `PK_Towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
 [/input]
 [output]
-2
+Guy
+Gilbert
+2005-07-31 00:00:00
+Kevin
+Brown
+2004-02-26 00:00:00
+Roberto
+Tamburello
+2003-12-12 00:00:00
+Rob
+Walters
+2002-01-05 00:00:00
+Thierry
+D'Hers
+2001-01-11 00:00:00
+Thierry
+D'Hers
+2000-01-11 00:00:00
+John
+Jovy
+1999-01-11 00:00:00
 [/output]
 [/test]
 [/tests]
