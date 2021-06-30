@@ -394,6 +394,8 @@ CREATE TABLE IF NOT EXISTS `towns` (
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write a stored procedure **usp_get_employees_salary_above_35000**. 
 
 It should return the first and last names of all employees with a **salary** above 35000. 
@@ -917,6 +919,8 @@ CREATE TABLE IF NOT EXISTS `towns` (
 [/code-adapter]
 [task-description]
 # Description
+
+Use the database that is called "**SoftUni Database**".
 
 Write a stored procedure **usp_get_employees_salary_above**. 
 
@@ -3453,6 +3457,8 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write a stored procedure **usp_get_towns_starting_with** that **accepts a string parameter** and returns **all town names starting with that string**. 
 
 The result should be sorted alphabetically by **town_name**. 
@@ -5217,6 +5223,9 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
+
 Write a stored procedure **usp_get_employees_from_town** that accepts **town_name** as a parameter and returns the **first and last names of the employees living in the given town**. 
 
 The result should be sorted alphabetically (by **first_name**, then by **last_name**) as a first criterion and by **id** in **ascending** order as a second criterion. 
@@ -5331,6 +5340,8 @@ insert into salaries values ('13500.00'), ('43300.00'), ('125500.00'),
 [/code-adapter]
 [task-description]
 # Description
+
+Use the database that is called "**SoftUni Database**".
 
 Write a function **ufn_get_salary_level** that receives the **salary of an employee** and returns their salary level.
 
@@ -7098,6 +7109,8 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write a stored procedure **usp_get_employees_by_salary_level** that receives a **salary level** (low, average, or high) as a parameter and prints the **names of all employees** that receive salaries within the given range. 
 
 The result should be sorted by **first_name** and then by **last_name**, both in descending order.
@@ -7735,6 +7748,8 @@ insert into comprise values ('bobr', 'Rob'), ('oistmiahf', 'halves'), ('oistmiah
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Define a function **ufn_is_word_comprised(set_of_letters varchar(50), word varchar(50))** that returns **1** or **0** depending on whether the word can be comprised of the given set of letters. 
 
 ## Examples
@@ -7938,6 +7953,8 @@ INSERT INTO `account_holders` (`id`, `first_name`, `last_name`, `ssn`) VALUES
 [task-description]
 # Description
 
+Use the database that is called "**Bank Database**".
+
 You are given a database schema with the following tables:
 
 - **account_holders(id (PK), first_name, last_name, ssn)** 
@@ -8090,6 +8107,8 @@ INSERT INTO `account_holders` (`id`, `first_name`, `last_name`, `ssn`) VALUES
 [task-description]
 # Description
 
+Use the database that is called "**Bank Database**".
+
 Your task is to write a stored procedure **usp_get_holders_with_balance_higher_than** that accepts a **number as a parameter** and returns all **people whose balance (in all of their accounts, combined) is above the supplied number**. 
 
 Sort the result in ascending order by account_holders_id. 
@@ -8218,6 +8237,9 @@ insert into deposits values (1000.0, 0.10, 5), (1000.55, 0.08, 5),
 [/code-adapter]
 [task-description]
 # Description
+
+Use the database that is called "**Bank Database**".
+
 Your task is to write a function **ufn_calculate_future_value** that accepts three parameters - **sum** (with a precision of **4 digits** after the decimal point), **yearly interest rate (double)** and **a number of years (int)**. 
 
 It should calculate and return the **future value of the initial sum**. 
@@ -8439,6 +8461,9 @@ INSERT INTO `account_holders` (`id`, `first_name`, `last_name`, `ssn`) VALUES
 [/code-adapter]
 [task-description]
 # Description
+
+Use the database that is called "**Bank Database**".
+
 Your task is to write a stored procedure **usp_calculate_future_value_for_account** that accepts two parameters - an account **id** and an **interest** rate. 
 
 The procedure uses the function from the previous problem to calculate the future value of a person's account **for 5 years**, along with information about their **account id**, **first name**, **last name** and **current balance**, as shown in the example below. 
@@ -8635,6 +8660,8 @@ INSERT INTO `account_holders` (`id`, `first_name`, `last_name`, `ssn`) VALUES
 [/code-adapter]
 [task-description]
 # Description
+Use the database that is called "**Bank Database**".
+
 Add a stored procedure **usp_deposit_money(account_id, money_amount)** used for processing transactions.
 
 Make sure to guarantee a valid and positive **money_amount** with a precision of **four digits after the decimal point**. 
@@ -8812,6 +8839,8 @@ INSERT INTO `account_holders` (`id`, `first_name`, `last_name`, `ssn`) VALUES
 [/code-adapter]
 [task-description]
 # Description
+Use the database that is called "**Bank Database**".
+
 Add stored procedures **usp_withdraw_money(account_id, money_amount)** that operate on transactions.
 
 Ensure that withdrawing is only possible when the balance is enough and **money_amount** is a valid positive number. 
@@ -9004,6 +9033,8 @@ INSERT INTO `account_holders` (`id`, `first_name`, `last_name`, `ssn`) VALUES
 [/code-adapter]
 [task-description]
 # Description
+
+Use the database that is called "**Bank Database**".
 Write a stored procedure **usp_transfer_money(from_account_id, to_account_id, amount)** that **transfers money from one account to another**. 
 
 Consider the cases when: 
@@ -9255,6 +9286,8 @@ INSERT INTO `account_holders` (`id`, `first_name`, `last_name`, `ssn`) VALUES
 [/code-adapter]
 [task-description]
 # Description
+
+Use the database that is called "**Bank Database**".
 
 Create another table – logs(log_id, account_id, old_sum, new_sum). Add a trigger to the accounts table that adds a new entry to the logs table every time the sum on the given account changes.
 
@@ -9590,6 +9623,8 @@ INSERT INTO `account_holders` (`id`, `first_name`, `last_name`, `ssn`) VALUES
 [/code-adapter]
 [task-description]
 # Description
+
+Use the database that is called "**Bank Database**".
 
 Create another table - **notification_emails(id, recipient, subject, body)**. 
 

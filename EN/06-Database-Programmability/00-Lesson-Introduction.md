@@ -27,7 +27,7 @@
 
 |**Problem Name**|**Database**|
 |---|---|
-|Count Employees by Town Name|[SoftUni Database]()|
+|Count Employees by Town Name|[SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/soft_uni_database_database_programmability_lab.zip)|
 |Promote Employees|SoftUni Database|
 |Promote Employees By ID|SoftUni Database|
 |Triggered|SoftUni Database|
@@ -35,6 +35,6 @@
 
 ## Homework
 
-For problems from "**Employee Address**" to "**Min Average Salary**" (inclusively), use the [SoftUni Database]() database, and for the others - use [Geography Database]().
+For problems from "**Employees with Salary Above 35000**" to "**Define a Function**" (inclusively), use the [SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/bank_db_database_programmability_homework.zip) database, and for the others - use [Bank Database](https://videos.softuni.org/resources/java/java-mysql/bank_db_database_programmability_homework.zip).
 
 [/slide]
