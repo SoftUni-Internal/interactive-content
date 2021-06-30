@@ -1,0 +1,1 @@
+# JPQL-And-Auto-Mapping-Objects

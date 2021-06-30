@@ -2,7 +2,7 @@
 
 # Summary
 
-# In this lesson you learnt:
+# In this lesson you learned:
 
 - What is **Spring-data**
     - **Spring data** is part of the **Spring Framework**.
@@ -48,13 +48,14 @@ public class StudentServiceImpl implements StudentService {
 
 # In the next lesson, we will learn:
 
-- Advanced queries.
+- JPQL syntax
 
-- **Spring data** translates methods to generates SQL queries.
+- Inheriting Repositories
 
-- How to write custom queries.
+- How to properly expose information about our entities
 
-- JPQL syntax.
+- What is Auto-Mapper
 
-- Repositories and inheritance.
+- How to use Auto-Mapper
+
 [/slide]
