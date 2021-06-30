@@ -589,6 +589,7 @@ select count(id) from people;
 ```
 [/input]
 [output]
+```
 id
 name
 picture
@@ -604,6 +605,7 @@ name
 gender
 birthdate
 5
+```
 [/output]
 [/test]
 [test]
