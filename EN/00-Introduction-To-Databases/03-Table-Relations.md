@@ -1,6 +1,6 @@
 [slide hideTitle]
-# Problem: Find Full Name
-[code-task title="Find Full Name" taskId="java-db-and-MySQL-database-programmability-find-full-name" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+# Problem: People with Balance Above N
+[code-task title="People with Balance Above N" taskId="java-db-and-MySQL-database-programmability-people-with-balance-above-N" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -89,25 +89,20 @@ INSERT INTO `account_holders` (`id`, `first_name`, `last_name`, `ssn`) VALUES
 [task-description]
 # Description
 
-You are given a database schema with the following tables:
+Your task is to write a stored procedure **usp_get_holders_with_balance_higher_than** that accepts a **number as a parameter** and returns all **people whose balance (in all of their accounts, combined) is above the supplied number**. 
 
-- **account_holders(id (PK), first_name, last_name, ssn)** 
-
-- **accounts(id (PK), account_holder_id (FK), balance)**
-
-Write a stored procedure **usp_get_holders_full_name** that selects the full names of all people. 
-
-The result should be sorted alphabetically by **full_name** as a first criterion and by **id** in **ascending** order as a second criterion.
-
+Sort the result in ascending order by account_holders_id. 
 
 ## Examples
 
-| **full_name** | 
+The supplied number for that example is 7000.
+
+| **first_name** |**last_name** |
 | --- |
-| Bjorn Sweden | 
-| Jimmy Henderson  | 
-| Kim Novac | 
-| ... |
+| Susan | Cane |
+| Peter  |  Kirbitson | 
+| Zlatan | Packil |
+| ... | ... |
 
 
 [/task-description]
@@ -115,40 +110,84 @@ The result should be sorted alphabetically by **full_name** as a first criterion
 [tests]
 [test open]
 [input]
-CALL usp_get_holders_full_name;
+CALL usp_get_holders_with_balance_higher_than(7000);
 [/input]
 [output]
-Bjorn Sweden
-Jimmy Henderson
-Kim Novac
-Kirana Peterson
-Micheal Tsiga
-Monika Michley
-Peter Kirbitson
-Peter Peabrick
-Steve Stevenson
-Susan Cane
-Zlatan Packil
-Zlock Zlotowitz
+Susan
+Cane
+Peter
+Kirbitson
+Zlatan
+Packil
+Monika
+Michley
+Zlock
+Zlotowitz
+Peter
+Peabrick
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_get_holders_full_name;
+CALL usp_get_holders_with_balance_higher_than(7000);
 [/input]
 [output]
-Bjorn Sweden
-Jimmy Henderson
-Kim Novac
-Kirana Peterson
-Micheal Tsiga
-Monika Michley
-Peter Kirbitson
-Peter Peabrick
-Steve Stevenson
-Susan Cane
-Zlatan Packil
-Zlock Zlotowitz
+Susan
+Cane
+Peter
+Kirbitson
+Zlatan
+Packil
+Monika
+Michley
+Zlock
+Zlotowitz
+Peter
+Peabrick
+[/output]
+[/test]
+[test]
+[input]
+CALL usp_get_holders_with_balance_higher_than(1000000);
+[/input]
+[output]
+Susan
+Cane
+Zlock
+Zlotowitz
+Peter
+Peabrick
+[/output]
+[/test]
+[test]
+[input]
+CALL usp_get_holders_with_balance_higher_than(0.0);
+[/input]
+[output]
+Susan
+Cane
+Kim
+Novac
+Jimmy
+Henderson
+Steve
+Stevenson
+Bjorn
+Sweden
+Kirana
+Peterson
+Peter
+Kirbitson
+Micheal
+Tsiga
+Zlatan
+Packil
+Monika
+Michley
+Zlock
+Zlotowitz
+Peter
+Peabrick
 [/output]
 [/test]
 [/tests]
