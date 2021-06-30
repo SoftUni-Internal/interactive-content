@@ -3,7 +3,7 @@
 ## Description
 This course teaches the **basics of coding**, such as:
  - Using variables and expressions
- - Reading and printing at the console
+ - Reading and printing on the console
  - Writing conditional logic (if-else)
  - Using loops: for-loops, while-loops, nested loops
  - Writing control-flow logic: combining conditions and loops
