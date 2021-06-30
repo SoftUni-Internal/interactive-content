@@ -4,10 +4,9 @@
 
 # Lifecycle Overview
 
-Angular-Components-27-28-Lifecycle-overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-27-28-Lifecycle-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Lifecycle hook methods** are called by Angular on all the directives and components.
-
 
 Each component's **lifecycle** is managed by Angular.
 
@@ -25,7 +24,7 @@ Directives also have a similar set of lifecycle hooks that manages them.
 
 # NgOnInit And NgOnDestroy
 
-Angular-Components-29-NgOnInIt-and-NgOnDestroy-example
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-29-NgOnInIt-and-NgOnDestroy-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 `ngOnInit()` is a hook that is invoked only once when the component is instantiated.
 
@@ -55,8 +54,7 @@ export class GamesComponent implements OnInit, OnDestroy {
 
 # Other Lifecycle Hooks
 
-Angular-Components-30-Other-Lifecycle-Hooks
-
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-30-Other-Lifecycle-Hooks-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 | **Lifecycle Hook** | **Description** |
 | --- | --- |
