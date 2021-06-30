@@ -24,9 +24,12 @@ Initialize the new database using only SQL queries. Start by **creating a new da
 [/code-editor]
 [task-description]
 ## Description
-After learning how to create a database using the GUI in Workbench, this task requires us to do so **using SQL queries**. 
 
-Initialize the new database using only **SQL queries**. Start by **creating a new database called minions**.
+In the newly created Minions database add a table **minions (id, name, age)**. 
+
+Then add a new table called **towns (town_id, name)**. 
+
+Set the **id** and **town_id** columns of both tables to be **primary key** as **constraint**, id's must be set to **auto increment**.  
 
 [/task-description]
 [code-io /]
@@ -162,11 +165,12 @@ create table towns (
 [/code-adapter]
 [task-description]
 ## Description
-In the newly created Minions database add a table **minions (id, name, age)**. 
 
-Then add a new table called **towns (town_id, name)**. 
+Before continuing with the next assignments, **rename the town_id** to id using the Workbench's GUI. 
 
-Set the **id** and **town_id** columns of both tables to be **primary key** as **constraint**, id's must be set to **auto increment**. 
+Change the structure of the Minions table to have a new column called **town_id** that should be of the same type as the **id** column of the **towns table**.
+
+Add a **new constraint** that makes **town_id** a **foreign key** and references the **id** column of the **towns** table. 
 
 [/task-description]
 [code-io /]
@@ -243,6 +247,27 @@ id
 -- Write your query here
 ```
 [/code-editor]
+[code-adapter]
+CREATE TABLE IF NOT EXISTS minions
+(
+id INT NOT NULL,
+name VARCHAR(50) NOT NULL,
+age INT NULL,
+CONSTRAINT pk_minions PRIMARY KEY (id)
+);
+
+CREATE TABLE IF NOT EXISTS towns
+(
+id INT NOT NULL,
+name VARCHAR(50) NOT NULL,
+CONSTRAINT pk_towns PRIMARY KEY (id)
+);
+ALTER TABLE minions
+ADD COLUMN town_id INT NOT NULL;
+
+ALTER TABLE minions
+ADD CONSTRAINT fk_minions_towns FOREIGN KEY (town_id) REFERENCES towns(id)
+[/code-adapter]
 [task-description]
 ## Description
 
@@ -259,6 +284,7 @@ id
 - **towns**
 
 | **id** | **name** |
+|---|---|
 | 1 | London |
 | 2 | Barcelona |
 | 3 | Sofia |
@@ -268,10 +294,11 @@ id
 [tests]
 [test open]
 [input]
-SELECT \* FROM towns;
-SELECT \* FROM minions;
+SELECT * FROM towns;
+SELECT * FROM minions;
 [/input]
 [output]
+```
 1
 London
 2
@@ -290,6 +317,7 @@ Bob
 Steward
 
 2
+```
 [/output]
 [/test]
 [test]
@@ -310,7 +338,7 @@ SELECT count(id) FROM minions;
 [/test]
 [test]
 [input]
-SELECT \* FROM towns;
+SELECT * FROM towns;
 [/input]
 [output]
 1
@@ -318,14 +346,15 @@ London
 2
 Barcelona
 3
-London
+Sofia
 [/output]
 [/test]
 [test]
 [input]
-SELECT \* FROM minions;
+SELECT * FROM minions;
 [/input]
 [output]
+```
 1
 Kevin
 22
@@ -338,6 +367,7 @@ Bob
 Steward
 
 2
+```
 [/output]
 [/test]
 [/tests]
@@ -387,7 +417,7 @@ insert into minions values (3, 'Steward',null, 2);
 [/code-adapter]
 [task-description]
 ## Description
-Delete all data from the minions table using an SQL query. 
+**Delete all data** from the minions table using an **SQL query**. 
 
 [/task-description]
 [code-io /]
@@ -460,12 +490,11 @@ ADD CONSTRAINT fk_minions_towns FOREIGN KEY (town_id) REFERENCES towns(id)
 [test open]
 [input]
 ```
-\# check if both tables are dropped
-SELECT count(\*)
+SELECT count(*)
 FROM information_schema.TABLES
 WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'minions');
 
-SELECT count(\*)
+SELECT count(*)
 FROM information_schema.TABLES
 WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'towns');
 ```
@@ -479,9 +508,11 @@ WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'towns');
 [/test]
 [test]
 [input]
-SELECT count(\*)
+```
+SELECT count(*)
 FROM information_schema.TABLES
 WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'minions');
+```
 [/input]
 [output]
 0
@@ -489,9 +520,11 @@ WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'minions');
 [/test]
 [test]
 [input]
-SELECT count(\*)
+```
+SELECT count(*)
 FROM information_schema.TABLES
 WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'towns');
+```
 [/input]
 [output]
 0
@@ -532,6 +565,7 @@ Make **id** primary key. Populate the table with **5 records**.
 [tests]
 [test open]
 [input]
+```
 SELECT lower(COLUMN_NAME) 
 FROM information_schema.COLUMNS 
 WHERE TABLE_SCHEMA = database()
@@ -556,23 +590,26 @@ WHERE TABLE_SCHEMA = database()
     AND IS_NULLABLE = 'NO';
 	
 select count(id) from people;
+```
 [/input]
 [output]
+```
+biography
+birthdate
+gender
+height
 id
 name
 picture
-height
 weight
-gender
+id
+id
 birthdate
-biography
-id
-id
+gender
 id
 name
-gender
-birthdate
 5
+```
 [/output]
 [/test]
 [test]
@@ -1648,6 +1685,7 @@ INSERT INTO employees (first_name, middle_name, last_name, job_title, department
 INSERT INTO employees (first_name, middle_name, last_name, job_title, department_id, hire_date, salary) VALUES ('Faye', 'Emberly', 'Paddon', 'Intern', 3, '2016-08-28', 599.88);
 [/input]
 [output]
+```
 1
 Berlin
 2
@@ -1674,6 +1712,7 @@ Swanson
 4
 2013-02-01 00:00:00
 3500
+
 2
 Tamsyn 
 Corrina 
@@ -1682,6 +1721,7 @@ Senior Engineer
 1
 2004-03-02 00:00:00
 4000
+
 3
 Sonia 
 Eddy 
@@ -1690,6 +1730,7 @@ Intern
 5
 2016-08-28 00:00:00
 525.25
+
 4
 Petal 
 Hylda 
@@ -1698,6 +1739,7 @@ CEO
 2
 2007-12-09 00:00:00
 3000
+
 5
 Faye 
 Emberly 
@@ -1706,6 +1748,7 @@ Intern
 3
 2016-08-28 00:00:00
 599.88
+```
 [/output]
 [/test]
 [test]
@@ -1871,6 +1914,7 @@ INSERT INTO employees (first_name, middle_name, last_name, job_title, department
 INSERT INTO employees (first_name, middle_name, last_name, job_title, department_id, hire_date, salary) VALUES ('Peter', 'Pan', 'Pan', 'Intern', 3, '2016-08-28', 599.88);
 [/input]
 [output]
+```
 1
 Ivan
 Ivanov
@@ -1879,6 +1923,7 @@ Ivanov
 4
 2013-02-01 00:00:00
 3500
+
 2
 Petar
 Petrov
@@ -1887,6 +1932,7 @@ Senior Engineer
 1
 2004-03-02 00:00:00
 4000
+
 3
 Maria
 Petrova
@@ -1895,6 +1941,7 @@ Intern
 5
 2016-08-28 00:00:00
 525.25
+
 4
 Georgi
 Terziev
@@ -1903,6 +1950,7 @@ CEO
 2
 2007-12-09 00:00:00
 3000
+
 5
 Peter
 Pan
@@ -1911,6 +1959,7 @@ Intern
 3
 2016-08-28 00:00:00
 599.88
+```
 [/output]
 [/test]
 [/tests]
@@ -1999,6 +2048,7 @@ INSERT INTO employees (first_name, middle_name, last_name, job_title, department
 INSERT INTO employees (first_name, middle_name, last_name, job_title, department_id, hire_date, salary) VALUES ('Faye', 'Emberly', 'Paddon', 'Intern', 3, '2016-08-28', 599.88);
 [/input]
 [output]
+```
 1
 Berlin
 4
@@ -2025,6 +2075,7 @@ Senior Engineer
 1
 2004-03-02 00:00:00
 4000
+
 1
 Kyrie 
 Keefe 
@@ -2033,6 +2084,7 @@ Swanson
 4
 2013-02-01 00:00:00
 3500
+
 4
 Petal 
 Hylda 
@@ -2041,6 +2093,7 @@ CEO
 2
 2007-12-09 00:00:00
 3000
+
 5
 Faye 
 Emberly 
@@ -2049,6 +2102,7 @@ Intern
 3
 2016-08-28 00:00:00
 599.88
+
 3
 Sonia 
 Eddy 
@@ -2057,6 +2111,7 @@ Intern
 5
 2016-08-28 00:00:00
 525.25
+```
 [/output]
 [/test]
 [test]
@@ -2222,6 +2277,7 @@ INSERT INTO employees (first_name, middle_name, last_name, job_title, department
 INSERT INTO employees (first_name, middle_name, last_name, job_title, department_id, hire_date, salary) VALUES ('Peter', 'Pan', 'Pan', 'Intern', 3, '2016-08-28', 599.88);
 [/input]
 [output]
+```
 2
 Petar
 Petrov
@@ -2230,6 +2286,7 @@ Senior Engineer
 1
 2004-03-02 00:00:00
 4000
+
 1
 Ivan
 Ivanov
@@ -2238,6 +2295,7 @@ Ivanov
 4
 2013-02-01 00:00:00
 3500
+
 4
 Georgi
 Terziev
@@ -2246,6 +2304,7 @@ CEO
 2
 2007-12-09 00:00:00
 3000
+
 5
 Peter
 Pan
@@ -2254,6 +2313,7 @@ Intern
 3
 2016-08-28 00:00:00
 599.88
+
 3
 Maria
 Petrova
@@ -2262,6 +2322,7 @@ Intern
 5
 2016-08-28 00:00:00
 525.25
+```
 [/output]
 [/test]
 [/tests]
