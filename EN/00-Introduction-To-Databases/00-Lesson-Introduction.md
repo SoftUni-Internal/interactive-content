@@ -1,4 +1,4 @@
-# Homework
+# Test Ground
 
 [slide hideTitle]
 # Problem: Find Each Employee's Salary
