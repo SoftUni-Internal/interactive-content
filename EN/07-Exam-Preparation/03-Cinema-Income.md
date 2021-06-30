@@ -18,19 +18,19 @@ public class Main {
 [/code-editor]
 [task-description]
 # Description
-You have been hired by a cinema to create a program that calculates whether there would be enough viewers to fill the cinema hall and what the income of the event would be.
+You have been hired by a cinema to create a program that calculates whether there would be enough viewers to fill the cinema hall and what would be the generated event income.
 
-On the first line, you are going to receive the number of seats in the hall.
+On the first line you are going to receive the number of seats in the hall.
 
-On the following lines, until the command **"Movie time!"** is received, you will receive numbers, representing how many people want to enter the hall.
+On the following lines, until the command **"Movie time!"** is received, you will receive an integer representing the number of people who want to enter the hall.
 
-The price for a ticket is **5$**. 
+The cost per ticket is **$5**. 
 
-If the current number of people that enter the hall can be divided by **3** without a remainder, there is a **5$** discount on the total price.
+If at any given moment the number of people entering the hall can be divided by **3** without a remainder there is a **$5** discount on the total price.
 
-If there are no more free seats for the people that want to enter, the program should end.
+If there are no more free seats for the people that want to enter the program should end.
 
-If more people than the available seats number try to enter the hall, it should be considered full and the program should stop.
+If the number of people is more than the available seats the hall is considered to be full and the program stops.
 
 ## Input
 Read from the console:
@@ -46,13 +46,13 @@ The output should consist of a single line in the following format:
 
 - If there are **no more free seats** in the hall: **"The cinema is full."**
 
-- Afterwards, print out: **"Cinema income -** \{**income**\}**$"**
+- Afterwards, print out: **"Cinema income - $**\{**income**\}**"**
 
 ## Example
 | **Input** | **Output** | 
 | --- | --- |
 | 60 | There are 6 seats left in the cinema. | 
-| 10 | Cinema income - 255$ | 
+| 10 | Cinema income - $255 | 
 | 6 | 
 | 3 | 
 | 20 | 
@@ -84,7 +84,7 @@ Movie time!
 [/input]
 [output]
 There are 6 seats left in the cinema.
-Cinema income - 255$
+Cinema income - $255
 [/output]
 [/test]
 [test]
@@ -102,7 +102,7 @@ Movie time!
 [/input]
 [output]
 There are 65 seats left in the cinema.
-Cinema income - 355$
+Cinema income - $355
 [/output]
 [/test]
 [test]
@@ -120,7 +120,7 @@ Movie time!
 [/input]
 [output]
 There are 45 seats left in the cinema.
-Cinema income - 500$
+Cinema income - $500
 [/output]
 [/test]
 [test]
@@ -134,7 +134,7 @@ Cinema income - 500$
 [/input]
 [output]
 The cinema is full.
-Cinema income - 240$
+Cinema income - $240
 [/output]
 [/test]
 [test]
@@ -150,7 +150,7 @@ Cinema income - 240$
 [/input]
 [output]
 The cinema is full.
-Cinema income - 420$
+Cinema income - $420
 [/output]
 [/test]
 [test]
@@ -172,7 +172,7 @@ Movie time!
 [/input]
 [output]
 There are 0 seats left in the cinema.
-Cinema income - 600$
+Cinema income - $600
 [/output]
 [/test]
 [test]
@@ -187,7 +187,7 @@ Cinema income - 600$
 [/input]
 [output]
 The cinema is full.
-Cinema income - 225$
+Cinema income - $225
 [/output]
 [/test]
 [test]
@@ -204,7 +204,7 @@ Movie time!
 [/input]
 [output]
 There are 30 seats left in the cinema.
-Cinema income - 320$
+Cinema income - $320
 [/output]
 [/test]
 [test]
@@ -218,7 +218,7 @@ Cinema income - 320$
 [/input]
 [output]
 The cinema is full.
-Cinema income - 230$
+Cinema income - $230
 [/output]
 [/test]
 [test]
@@ -235,7 +235,7 @@ Movie time!
 [/input]
 [output]
 There are 50 seats left in the cinema.
-Cinema income - 320$
+Cinema income - $320
 [/output]
 [/test]
 [/tests]
