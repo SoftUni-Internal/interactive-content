@@ -1,9 +1,7 @@
-# Test Ground
-
 [slide hideTitle]
 # Problem: Find Each Employee's Salary
 
-[code-task title="Find Each Employee's Salary" taskId="java-db-and-MySQL-basic-crud-find-each-employees-salary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Find Each Employee's Salary" taskId="java-db-and-MySQL-basic-crud-find-each-employees-salary-1" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
 ```
@@ -33,6 +31,7 @@ Write an SQL query to find the **first name**, **last name**, and **salary** of 
 [tests]
 [test open]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -1703,7 +1702,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-
+```
 [/input]
 [output]
 Guy
@@ -2585,10 +2584,12 @@ Kulov
 George
 Denchev
 48000.0000
+```
 [/output]
 [/test]
 [test]
 [input]
+```
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -4259,7 +4260,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-
+```
 [/input]
 [output]
 Guy
