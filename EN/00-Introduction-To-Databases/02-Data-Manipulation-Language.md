@@ -1604,13 +1604,16 @@ SELECT COUNT(*) FROM cars WHERE `condition` = 'C';
 [/test]
 [test]
 [input]
+```
 SELECT `id`, `condition` FROM  `cars` 
 WHERE
     (`mileage` \>= 800000 OR `mileage` IS NULL)
         AND `year` \<= 2010
         AND `make` != 'Mercedes-Benz';
+```
 [/input]
 [output]
+```
 3
 C
 18
@@ -1641,6 +1644,7 @@ C
 C
 89
 C
+```
 [/output]
 [/test]
 [/tests]
