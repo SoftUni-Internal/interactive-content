@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Problem: Find Each Employee's Salary
 
-[code-task title="Find Each Employee's Salary" taskId="java-db-and-MySQL-basic-crud-find-each-employees-salary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Find Each Employee's Salary" taskId="java-db-and-MySQL-basic-crud-find-each-employees-salary-1" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
 ```
