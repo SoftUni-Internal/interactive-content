@@ -3,6 +3,8 @@
 [slide hideTitle]
 
 # Installing MySQL Server 
+
+This is the step-by-step process of **installing** MySQL Server and MySQL Workbench on **macOS**.
  
 ## Step 1. Download MySQL Community Server 
 
@@ -18,36 +20,36 @@ You may be prompted to log in or sign up. This step can be **skipped** by clicki
  
 ## Step 2. Install MySQL Community Server  
  
-1. **Mount** the downloaded DMG file by opening it. Then, double click on the **installation** package to launch it. 
+**Mount** the downloaded DMG file by opening it. Then, double click on the **installation** package to launch it. 
 
 [image assetsSrc="Introduction-To-Databases(22).png" /]
         
  
-2. Once the installer is open, click on "**Continue**". 
+Once the installer is open, click on "**Continue**". 
         
 [image assetsSrc="Introduction-To-Databases(23).png" /]
  
 
-3. Make sure you read and agree to the **Terms and Conditions**. 
+Make sure you read and agree to the **Terms and Conditions**. 
  
 [image assetsSrc="Introduction-To-Databases(24).png" /]     
  
 
-4. You will be prompted to type in your **password**. Then, click on "**Install Software**". 
+You will be prompted to type in your **password**. Then, click on "**Install Software**". 
  
 [image assetsSrc="Introduction-To-Databases(25).png" /]
  
-5. The configuration process includes selecting a password **encryption type**. It is recommmended to use "**Strong Password Encryption**". 
+The configuration process includes selecting a password **encryption type**. It is recommmended to use "**Strong Password Encryption**". 
         
 [image assetsSrc="Introduction-To-Databases(26).png" /]
  
 
-6. You will then be required to **set a password for the root user**. Click on Finish to complete the installation. 
+You will then be required to **set a password for the root user**. Click on Finish to complete the installation. 
  
 [image assetsSrc="Introduction-To-Databases(27).png" /]
 
  
-7. By going to **System Preferences** \> **MySQL**, you can set the MySQL Server to start **automatically** when macOS boots up (**recommended**). 
+By going to **System Preferences** \> **MySQL**, you can set the MySQL Server to start **automatically** when macOS boots up (**recommended**). 
  
 [image assetsSrc="Introduction-To-Databases(28).png" /]
 
@@ -69,21 +71,25 @@ Then, download the **DMG archive**.
 
 [image assetsSrc="Introduction-To-Databases(29).png" /]
  
-You will be asked to log in or sign up. **Skip** this step by clicking on "No thanks, just start my download." 
+You will be asked to log in or sign up. 
+
+**Skip** this step by clicking on "No thanks, just start my download." 
  
 ## Step 2. Install MySQL Workbench
  
-1. **Mount** the downloaded DMG file by opening it. Then, drag the package over the **Applications** folder shortcut to install.   
+**Mount** the downloaded DMG file by opening it. 
+
+Then, drag the package over the **Applications** folder shortcut to install.   
         
 [image assetsSrc="Introduction-To-Databases(30).png" /]
 
  
-2. Now you can **open Workbench** and **connect** to the **local** MySQL intance (if running). 
+Now you can **open Workbench** and **connect** to the **local** MySQL intance (if running). 
        
 [image assetsSrc="Introduction-To-Databases(31).png" /]
 
  
-3. You may be required to enter **the password for the root user**, created when installing MySQL Server. 
+You may be required to enter **the password for the root user**, created when installing MySQL Server. 
 
 [image assetsSrc="Introduction-To-Databases(32).png" /]
         
