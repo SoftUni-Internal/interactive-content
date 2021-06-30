@@ -6,8 +6,6 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-14-15-Introduction-to-TypeScript-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Intro-to-Angular-and-Typescript-14-15-Introduction-to-TypeScript
-
 **TypeScript** is a **JavaScript superset** developed by Google and Microsoft.
 
 It allows us to write **typed** JavaScript, but it does not force us.
