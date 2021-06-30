@@ -29,20 +29,13 @@ The result from the function **must** be a number **with a precision** of **4 di
 
 Using the following formula:
 
-$$
-FV = I x ((1 + R)^T)
-$$
-
 [image assetsSrc="Database-Programmability-and-Transactions-1.png" /]
 
 - **I** - Initial sum
 - **R** - Yearly interest rate
 - **T** - Number of years
 
-
 ## Examples
-
-
 
 | **Input** |**Output** |
 | --- | --- |
