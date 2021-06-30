@@ -1730,8 +1730,6 @@ Mensa-Annan
 [/test]
 [test]
 [input]
-```
-\# test 1 : SELECT first_name, last_name, hire_date FROM employees;
 
 
 CREATE TABLE IF NOT EXISTS `addresses` (
@@ -1802,7 +1800,6 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
 Guy
@@ -1824,8 +1821,6 @@ D'Hers
 [/test]
 [test]
 [input]
-```
-\# test 2: SELECT first_name, last_name, hire_date FROM employees ORDER BY hire_date DESC;
 
 
 CREATE TABLE IF NOT EXISTS `addresses` (
@@ -1896,7 +1891,6 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
 Thierry
@@ -1918,8 +1912,6 @@ Gilbert
 [/test]
 [test]
 [input]
-```
-\# test 3 : SELECT first_name, last_name, hire_date FROM employees limit 7;
 
 
 CREATE TABLE IF NOT EXISTS `addresses` (
@@ -1994,7 +1986,6 @@ CREATE TABLE IF NOT EXISTS `towns` (
   PRIMARY KEY (`town_id`),
   UNIQUE KEY `PK_Towns` (`town_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-```
 [/input]
 [output]
 Guy
