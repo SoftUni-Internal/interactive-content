@@ -18,7 +18,7 @@
 
   * nested while-loops
   * nested for-loops
-  * combining while- and for-loops
+  * combining while-loops and for-loops
 
 **3. Practical Exercises**
 
