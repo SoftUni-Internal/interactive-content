@@ -1,6 +1,6 @@
 [slide hideTitle]
-# Problem: Calculating Interest
-[code-task title="Calculating Interest" taskId="java-db-and-MySQL-database-programmability-calculating-interest" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+# Problem: Deposit Money
+[code-task title="Deposit Money" taskId="java-db-and-MySQL-database-programmability-deposit-money" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -82,112 +82,93 @@ INSERT INTO `account_holders` (`id`, `first_name`, `last_name`, `ssn`) VALUES
 [/code-adapter]
 [task-description]
 # Description
-Your task is to write a stored procedure **usp_calculate_future_value_for_account** that accepts two parameters - an account **id** and an **interest** rate. 
+Add a stored procedure **usp_deposit_money(account_id, money_amount)** used for processing transactions.
 
-The procedure uses the function from the previous problem to calculate the future value of a person's account **for 5 years**, along with information about their **account id**, **first name**, **last name** and **current balance**, as shown in the example below. 
+Make sure to guarantee a valid and positive **money_amount** with a precision of **four digits after the decimal point**. 
 
-As mentioned above, it accepts the **account_id** and the **interest_rate** as parameters. 
-
-The interest rate should have precision up to 0.0001, the same as the calculated balance after 5 years. 
-
-**It is important to achieve the specified precision.**
+The procedure should produce exact results, working with the specified precision.
 
 ## Examples
 
-Here is the result for **account_id = 1** and **interest_rate = 0.1**.
+Here is the result for **account_id = 1** and **money_amount = 10**.
 
 | **account_id** |**first_name** |**last_name** |**current_balance** |**balance_in_5_years** |
 | --- | --- |--- |--- |--- |
 | 1 | Susan | Cane | 123.1200 |198.2860|
-
-
-
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-CALL usp_calculate_future_value_for_account (1, 0.1);
+CALL usp_deposit_money (1, 10);
+select \* from accounts
+WHERE id = 1;
 [/input]
 [output]
 1
-Susan
-Cane
-123.1200
-198.2860
+1
+133.1200
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_calculate_future_value_for_account (1, 0.1);
+CALL usp_deposit_money (2, 10);
+select \* from accounts
+WHERE id = 2;
 [/input]
 [output]
-1
-Susan
-Cane
-123.1200
-198.2860
+2
+3
+4364.2300
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_calculate_future_value_for_account (5, 0.01);
+CALL usp_deposit_money (3, 10.1);
+select \* from accounts
+WHERE id = 3;
+[/input]
+[output]
+3
+12
+6546553.3300
+[/output]
+[/test]
+[test]
+[input]
+CALL usp_deposit_money (4, 12.4324);
+select \* from accounts
+WHERE id = 4;
+[/input]
+[output]
+4
+9
+15358.0724
+[/output]
+[/test]
+[test]
+[input]
+CALL usp_deposit_money (5, 0);
+select \* from accounts
+WHERE id = 5;
 [/input]
 [output]
 5
-Zlock
-Zlotowitz
-36521.2000
-38384.1482
-[/output]
-[/test]
-[test]
-[input]
-CALL usp_calculate_future_value_for_account (1, 0.0000);
-[/input]
-[output]
-1
-Susan
-Cane
-123.1200
-123.1200
-[/output]
-[/test]
-[test]
-[input]
-CALL usp_calculate_future_value_for_account (1, 0.0001);
-[/input]
-[output]
-1
-Susan
-Cane
-123.1200
-123.1816
-[/output]
-[/test]
-[test]
-[input]
-CALL usp_calculate_future_value_for_account (5, 0.00001);
-[/input]
-[output]
-5
-Zlock
-Zlotowitz
-36521.2000
+11
 36521.2000
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_calculate_future_value_for_account (10, 0.00007);
+CALL usp_deposit_money (6, -50);
+select \* from accounts
+WHERE id = 6;
 [/input]
 [output]
-10
-Kim
-Novac
-543.3000
-543.5717
+6
+8
+5436.3400
 [/output]
 [/test]
 [/tests]
