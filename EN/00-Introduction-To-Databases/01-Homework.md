@@ -1703,7 +1703,6 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
 [/input]
 [output]
-```
 Guy
 Gilbert
 12500.0000
@@ -2583,10 +2582,9 @@ Kulov
 George
 Denchev
 48000.0000
-```
 [/output]
 [/test]
-[test]
+[test-open]
 [input]
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
@@ -4260,7 +4258,6 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
 [/input]
 [output]
-```
 Guy
 Gilbert
 12500.0000
@@ -5140,7 +5137,6 @@ Kulov
 George
 Denchev
 48000.0000
-```
 [/output]
 [/test]
 [/tests]
