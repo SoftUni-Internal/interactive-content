@@ -1734,8 +1734,6 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [task-description]
 # Description
 
-Use the database that is called "**SoftUni Database**".
-
 Write a **ufn_count_employees_by_town(town_name)** function that accepts a **town_name** parameter and returns the count of employees living in the given town.
 
 ## Example
