@@ -339,7 +339,7 @@ This function should **reset** the "description to show", the "article descripti
 
 # Create Articles Component
 
-Angular-Components-Lab-11
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-Lab-11-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 After we have created the child component, the only thing left is to create the component of the article and to pass the array of data from the **parent** to the **child**.
 
