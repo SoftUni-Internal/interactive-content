@@ -72,7 +72,7 @@ INSERT INTO `account_holders` (`id`, `first_name`, `last_name`, `ssn`) VALUES
 	(3, 'Jimmy', 'Henderson', '1234567890'),
 	(4, 'Steve', 'Stevenson', '1234567890'),
 	(5, 'Bjorn', 'Sweden', '1234567890'),
-	(6, 'Kiana', 'Peterson', '1234567890'),
+	(6, 'Kirana', 'Peterson', '1234567890'),
 	(7, 'Peter', 'Kirbitson', '1234567890'),
 	(8, 'Micheal', 'Tsiga', '1234567890'),
 	(9, 'Zlatan', 'Packil', '1234567890'),
@@ -121,7 +121,7 @@ CALL usp_get_holders_full_name;
 Bjorn Sweden
 Jimmy Henderson
 Kim Novac
-Kiana Peterson
+Kirana Peterson
 Micheal Tsiga
 Monika Michley
 Peter Kirbitson
@@ -140,7 +140,7 @@ CALL usp_get_holders_full_name;
 Bjorn Sweden
 Jimmy Henderson
 Kim Novac
-Kiana Peterson
+Kirana Peterson
 Micheal Tsiga
 Monika Michley
 Peter Kirbitson
