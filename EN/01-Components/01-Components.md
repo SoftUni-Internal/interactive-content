@@ -60,7 +60,9 @@ The template's host view is defined by the template that is directly associated 
 
 [slide hideTitle]
 
-# Creating Components Manually 1
+# Creating Components Manually
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-6-7-8-9-Creating-components-manually-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Components are the most basic building blocks of an Angular app.
 
@@ -100,16 +102,9 @@ Writing the HTML and CSS inline or using external files is up to us and how we w
 
 In some situations when the template requires more than one line of code, it might be better to create an external HTML or CSS file to keep things organized.
 
-[/slide]
-
-[slide hideTitle]
-
-# Creating Components Manually 2
-
 The **selector** is used for calling the component inside other HTML files of the project as an HTML tag: `<app-home></app-home>`
 
 The **template** is where the HTML View of the component is.
-
 
 The **templateUrl** is the path to the HTML file like so: `templateUrl: './app.component.html'`
 
@@ -144,12 +139,6 @@ The service will be available to the component and its descendants only.
 
 The other components in the same module will not be able to access it.
 
-[/slide]
-
-[slide hideTitle]
-
-# Creating Components Manually 3
-
 After creating a component, we need to add it in the **declarations** array at the app module.
 
 **NgModules** help organize an application into cohesive blocks of functionality.
@@ -163,7 +152,6 @@ Without this declaration, a component would not be able to use directives and pi
 **Directives** are attached to DOM elements to enhance their functionality in some way.
 
 **Pipes** are elements that receive some data as input and output that data in a different format.
-
 
 ```js
 @NgModule({
