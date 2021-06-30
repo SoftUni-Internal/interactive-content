@@ -42,7 +42,7 @@ First, print one of the following lines to the console:
 Then:
 - "**Club income -** \{**club's profit**\} **dollars.**"
 
-The amount of money must be formatted up **to the second decimal place**.
+The amount of money must be formatted **to the second decimal place**.
 
 
 ## Example
