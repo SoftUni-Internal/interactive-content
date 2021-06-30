@@ -4,8 +4,7 @@
 
 # From Parent To Child
 
-Angular-Components-31-Component-Interaction
-Angular-Components-32-33-From-Parent-To-Child
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-31-32-33-Component-Interaction-from-parent-to-child-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is the most common and straightforward method of sharing data. 
 
@@ -42,7 +41,7 @@ export class GameComponent {
 
 # From Child To Parent
 
-Angular-Components-34-35-Component-Interaction
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-34-35-Component-Interaction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Another way for **sharing data is to emit** data from the child component. 
 

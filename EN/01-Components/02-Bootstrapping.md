@@ -4,6 +4,8 @@
 
 # Bootstrapping an Application
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-11-12-Bootstrapping-An-Application-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Bootstrapping is the action of initializing our Angular application.
 
 When loading an application, Angular uses the following initialization order:
@@ -30,6 +32,8 @@ By convention, the **NgModule** is called **AppModule**, but we can give it any 
 [slide hideTitle]
 
 # The Initial Module
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-13-The-Initial-Module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We add the `@NgModule` decorator after the import statements.
 
@@ -59,6 +63,8 @@ The `bootstrap` property of the **NgModule** specifies the correct app-level com
 [slide hideTitle]
 
 # Initial Module Properties
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-14-15-Initial-Module-Properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The module's **declarations array** tells Angular which components belong to that module. 
 

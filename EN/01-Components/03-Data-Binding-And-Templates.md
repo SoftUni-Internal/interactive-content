@@ -4,7 +4,7 @@
 
 # Templates and Data Binding Overview
 
-Angular-Components-16-17-Data-Binding-And-Templates
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-16-17-Data-Binding-And-Templates-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Each component's view has a template attached to it.
 
@@ -28,7 +28,7 @@ A component's template can be defined with inline HTML or we can specify an exte
 
 # Render An Array Using NgFor
 
-Angular-Components-18-Render-an-array-using-ngfor
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-18-Render-an-array-using-ngfor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is an example of a class called "**GamesComponent**" and an HTML associated with it.
 
@@ -74,7 +74,7 @@ These names are arbitrary. We can name them any way we want.
 
 # Conditional Statements Using ngIf
 
-Angular-Components-19-Conditional-Statements-Using-ngif
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-19-Conditional-Statements-Using-ngif-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is the same example:
 
@@ -112,7 +112,7 @@ The code above checks the **price** property of each object in the array and **o
 
 # Attach Events
 
-Angular-Components-20-Attach-Events
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-20-Attach-Events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can display additional content with the help of Event handlers.
 
@@ -147,7 +147,7 @@ export class GamesComponent {
 
 # Binding Attributes
 
-Angular-Components-21-Binding-attributes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-21-Binding-attributes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 It is a good idea to always set an element property with a property binding when possible.
 
@@ -178,7 +178,7 @@ Note: If the expression resolves to `null` or `undefined`, the entire attribute 
 
 # Binding CSS Classes
 
-Angular-Components-22-Binding-css-classes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-22-Binding-css-classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Binding to Multiple CSS Classes
 
@@ -220,7 +220,7 @@ When creating a single class binding, the expression used can be of type boolean
 
 # Binding Styles
 
-Angular-Components-23-Binding-styles
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-23-Binding-styles-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Binding to the style attribute
 
@@ -260,7 +260,7 @@ Alternatively, it sets the font-size in the "%" unit if `isSpecial` is falsy.
 
 # Reference And Null-Safe Operator
 
-Angular-Components-24-Reference-and-nullsafe-operator
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-24-Reference-and-nullsafe-operator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can use variables **from one part of a template** in **another part of the template**.
 
@@ -309,7 +309,7 @@ When "game" is different than **null** or **undefined**, then it will bind the `
 
 # Template Expressions
 
-Angular-Components-25-Template-Expressions
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-25-Template-Expressions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A template **expression produces a value**.
 
@@ -335,7 +335,7 @@ JavaScript **expressions that have** or promote side effects are **prohibited**,
 
 # Types Of Data Binding
 
-Angular-Components-26-Types-of-data-binding
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-26-Types-of-data-binding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are three types of data binding.
 
