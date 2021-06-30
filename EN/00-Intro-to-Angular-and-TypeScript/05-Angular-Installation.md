@@ -34,8 +34,6 @@ You can find more information on [Official Website](https://angular.io) or at th
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-25-IDE-Support-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Intro-to-Angular-and-Typescript-25-IDE-Support
-
 Most modern **IDEs** support TypeScript or have **plugins** that we can install.
 
 For example, **Visual Studio Code** fully supports TypeScript, **with no need for additional plugins**.
