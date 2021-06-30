@@ -1,6 +1,6 @@
 [slide hideTitle]
-# Problem: Deposit Money
-[code-task title="Deposit Money" taskId="java-db-and-MySQL-database-programmability-deposit-money" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+# Problem: Withdraw Money
+[code-task title="Withdraw Money" taskId="java-db-and-MySQL-database-programmability-withdraw-money" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -82,86 +82,89 @@ INSERT INTO `account_holders` (`id`, `first_name`, `last_name`, `ssn`) VALUES
 [/code-adapter]
 [task-description]
 # Description
-Add a stored procedure **usp_deposit_money(account_id, money_amount)** used for processing transactions.
+Add stored procedures **usp_withdraw_money(account_id, money_amount)** that operate on transactions.
 
-Make sure to guarantee a valid and positive **money_amount** with a precision of **four digits after the decimal point**. 
+Ensure that withdrawing is only possible when the balance is enough and **money_amount** is a valid positive number. 
+
+**Work with precision of four digits after the decimal point.**
 
 The procedure should produce exact results, working with the specified precision.
+
 
 ## Examples
 
 Here is the result for **account_id = 1** and **money_amount = 10**.
 
-| **account_id** |**first_name** |**last_name** |**current_balance** |**balance_in_5_years** |
-| --- | --- |--- |--- |--- |
-| 1 | Susan | Cane | 123.1200 |198.2860|
+| **account_id** |**account_holder_id** |**balance** |
+| --- | --- |--- |
+| 1 | 1 | 123.1200 | 
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-CALL usp_deposit_money (1, 10);
+CALL usp_withdraw_money (1, 10);
 select \* from accounts
 WHERE id = 1;
 [/input]
 [output]
 1
 1
-133.1200
+113.1200
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_deposit_money (2, 10);
+CALL usp_withdraw_money (1, 10);
+select \* from accounts
+WHERE id = 1;
+[/input]
+[output]
+1
+1
+113.1200
+[/output]
+[/test]
+[test]
+[input]
+CALL usp_withdraw_money (2, 10.1);
 select \* from accounts
 WHERE id = 2;
 [/input]
 [output]
 2
 3
-4364.2300
+4344.1300
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_deposit_money (3, 10.1);
+CALL usp_withdraw_money (3, 12.4324);
 select \* from accounts
 WHERE id = 3;
 [/input]
 [output]
 3
 12
-6546553.3300
+6546530.7976
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_deposit_money (4, 12.4324);
+CALL usp_withdraw_money (4, 0.0);
 select \* from accounts
 WHERE id = 4;
 [/input]
 [output]
 4
 9
-15358.0724
+15345.6400
 [/output]
 [/test]
 [test]
 [input]
-CALL usp_deposit_money (5, 0);
-select \* from accounts
-WHERE id = 5;
-[/input]
-[output]
-5
-11
-36521.2000
-[/output]
-[/test]
-[test]
-[input]
-CALL usp_deposit_money (6, -50);
+CALL usp_withdraw_money (6, -50);
 select \* from accounts
 WHERE id = 6;
 [/input]
@@ -169,6 +172,18 @@ WHERE id = 6;
 6
 8
 5436.3400
+[/output]
+[/test]
+[test]
+[input]
+CALL usp_withdraw_money (7, 1000000);
+select \* from accounts
+WHERE id = 7;
+[/input]
+[output]
+7
+10
+565649.2000
 [/output]
 [/test]
 [/tests]
