@@ -1,32 +1,113 @@
 [slide hideTitle]
-# Problem: Define Function 
-[code-task title="Define Function" taskId="java-db-and-MySQL-database-programmability-define-function" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+# Problem: Find Full Name
+[code-task title="Find Full Name" taskId="java-db-and-MySQL-database-programmability-find-full-name" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
+CREATE PROCEDURE usp_get_holders_full_name()
+BEGIN
+	SELECT CONCAT(first_name,' ',last_name) AS 'full_name' FROM account_holders AS ah
+    ORDER BY `full_name`, ah.id;
+END;
 ```
 [/code-editor]
 [code-adapter]
-create table comprise (
-	set_of_chars varchar(50),
-	word varchar(50)
-);
-insert into comprise values ('bobr', 'Rob'), ('oistmiahf', 'halves'), ('oistmiahf', 'Sofia'), ('a', 'aaa'),
-('pppp', 'Guy'), ('ostmahf', 'Sofia'), ('itmiahfs', 'Sofia'), ('sitmiaho', 'Sofia'),('itmishof', 'Sofia');
+```
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+
+USE soft_uni;
+
+-- Dumping structure for table bank.accounts
+DROP TABLE IF EXISTS `accounts`;
+CREATE TABLE IF NOT EXISTS `accounts` (
+  `id` int(11) NOT NULL,
+  `account_holder_id` int(11) NOT NULL,
+  `balance` decimal(19,4) DEFAULT '0.0000',
+  PRIMARY KEY (`id`),
+  KEY `fk_accounts_account_holders` (`account_holder_id`),
+  CONSTRAINT `fk_accounts_account_holders` FOREIGN KEY (`account_holder_id`) REFERENCES `account_holders` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Dumping data for table bank.accounts: ~18 rows (approximately)
+/*!40000 ALTER TABLE `accounts` DISABLE KEYS */;
+INSERT INTO `accounts` (`id`, `account_holder_id`, `balance`) VALUES
+	(1, 1, 123.1200),
+	(2, 3, 4354.2300),
+	(3, 12, 6546543.2300),
+	(4, 9, 15345.6400),
+	(5, 11, 36521.2000),
+	(6, 8, 5436.3400),
+	(7, 10, 565649.2000),
+	(8, 11, 999453.5000),
+	(9, 1, 5349758.2300),
+	(10, 2, 543.3000),
+	(11, 3, 10.2000),
+	(12, 7, 245656.2300),
+	(13, 5, 5435.3200),
+	(14, 4, 1.2300),
+	(15, 6, 0.1900),
+	(16, 2, 5345.3400),
+	(17, 11, 76653.2000),
+	(18, 1, 235469.8900);
+/*!40000 ALTER TABLE `accounts` ENABLE KEYS */;
+
+
+-- Dumping structure for table bank.account_holders
+DROP TABLE IF EXISTS `account_holders`;
+CREATE TABLE IF NOT EXISTS `account_holders` (
+  `id` int(11) NOT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `ssn` char(10) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- Dumping data for table bank.account_holders: ~12 rows (approximately)
+/*!40000 ALTER TABLE `account_holders` DISABLE KEYS */;
+INSERT INTO `account_holders` (`id`, `first_name`, `last_name`, `ssn`) VALUES
+	(1, 'Susan', 'Cane', '1234567890'),
+	(2, 'Kim', 'Novac', '1234567890'),
+	(3, 'Jimmy', 'Henderson', '1234567890'),
+	(4, 'Steve', 'Stevenson', '1234567890'),
+	(5, 'Bjorn', 'Sweden', '1234567890'),
+	(6, 'Kiana', 'Peterson', '1234567890'),
+	(7, 'Peter', 'Kirbitson', '1234567890'),
+	(8, 'Micheal', 'Tsiga', '1234567890'),
+	(9, 'Zlatan', 'Packil', '1234567890'),
+	(10, 'Monika', 'Michley', '1234567890'),
+	(11, 'Zlock', 'Zlotowitz', '1234567890'),
+	(12, 'Peter', 'Peabrick', '1234567890');
+/*!40000 ALTER TABLE `account_holders` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+```
 [/code-adapter]
 [task-description]
 # Description
 
-Define a function **ufn_is_word_comprised(set_of_letters varchar(50), word varchar(50))** that returns **1** or **0** depending on whether the word can be comprised of the given set of letters. 
+You are given a database schema with the following tables:
+
+- **account_holders(id (PK), first_name, last_name, ssn)** 
+
+- **accounts(id (PK), account_holder_id (FK), balance)**
+
+Write a stored procedure **usp_get_holders_full_name** that selects the full names of all people. 
+
+The result should be sorted alphabetically by **full_name** as a first criterion and by **id** in **ascending** order as a second criterion.
+
 
 ## Examples
 
-| **set_of_letters** | **word** | **result** |
-| --- | --- | 
-| oistmiahf | Sofia |1 |
-| oistmiahf  | halves |0 |
-| bobr | Rob | 1|
-| pppp | Guy | 0|
+| **full_name** | 
+| --- |
+| Bjorn Sweden | 
+| Jimmy Henderson  | 
+| Kim Novac | 
+| ... |
 
 
 [/task-description]
@@ -34,95 +115,40 @@ Define a function **ufn_is_word_comprised(set_of_letters varchar(50), word varch
 [tests]
 [test open]
 [input]
-select \* from comprise where ufn_is_word_comprised(set_of_chars, word) = 1 order by set_of_chars;
+CALL usp_get_holders_full_name;
 [/input]
 [output]
-a
-aaa
-bobr
-Rob
-oistmiahf
-Sofia
+Bjorn Sweden
+Jimmy Henderson
+Kim Novac
+Kiana Peterson
+Micheal Tsiga
+Monika Michley
+Peter Kirbitson
+Peter Peabrick
+Steve Stevenson
+Susan Cane
+Zlatan Packil
+Zlock Zlotowitz
 [/output]
 [/test]
 [test]
 [input]
-select ufn_is_word_comprised('bobr', 'Rob');
+CALL usp_get_holders_full_name;
 [/input]
 [output]
-1
-[/output]
-[/test]
-[test]
-[input]
-select ufn_is_word_comprised('oistmiahf', 'halves');
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-select ufn_is_word_comprised('oistmiahf', 'Sofia');
-[/input]
-[output]
-1
-[/output]
-[/test]
-[test]
-[input]
-select ufn_is_word_comprised('pppp', 'Guy');
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-select ufn_is_word_comprised('ostmahf', 'Sofia');
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-select ufn_is_word_comprised('oitmiahf', 'Sofia');
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-select ufn_is_word_comprised('itmiahfs', 'Sofia');
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-select ufn_is_word_comprised('sitmiaho', 'Sofia');
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-select ufn_is_word_comprised('itmishof', 'Sofia');
-[/input]
-[output]
-0
-[/output]
-[/test]
-[test]
-[input]
-select ufn_is_word_comprised('a', 'aaa');
-[/input]
-[output]
-1
+Bjorn Sweden
+Jimmy Henderson
+Kim Novac
+Kiana Peterson
+Micheal Tsiga
+Monika Michley
+Peter Kirbitson
+Peter Peabrick
+Steve Stevenson
+Susan Cane
+Zlatan Packil
+Zlock Zlotowitz
 [/output]
 [/test]
 [/tests]
