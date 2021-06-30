@@ -20,7 +20,7 @@ public class Main {
 ## Description
 You are hired by a TV company to create a program that calculates whether it is possible for customers to purchase access to TV series that they would like to watch. 
 
-You receive a budget and the number of series that the user will want to purchase.
+You receive a budget and the number of series that the user wants to purchase.
 
 Each item has a **title** and a **price**.
 
@@ -40,7 +40,7 @@ You will receive the following input from the console:
 
 - Number of series - **integer** number in range [1 ... 10]
 
-For each series, you receive two lines:
+For each series you will receive two lines:
 
 - Title of the series - **string**
 
@@ -48,15 +48,15 @@ For each series, you receive two lines:
 
 ## Output
 The output should consist of a single line in the following format:
-- If the budget is greater than or equal to the price of the series: **"You bought all the series and left with** \{**money left**\}**$"**
-- If the budget is less than the price of the series: **"You need** \{**money needed**\}**$ more to buy the series!"**
+- If the budget is greater than or equal to the price of the series: **"You bought all the series and are left with $**\{**money left**\}**"**
+- If the budget is less than the price of the series: **"You need $**\{**money needed**\} **more to buy the series!"**
 
 The result must be formatted to the second digit after the decimal point.
 
 ## Example
 | **Input** | **Output** | 
 | --- | --- |
-| 10 | You bought all the series and left with 0.50$ | 
+| 10 | You bought all the series and are left with $0.50 | 
 | 3 | 
 | Thrones | 
 | 5 | 
@@ -68,7 +68,7 @@ The result must be formatted to the second digit after the decimal point.
 [hints]
 
 [hint]
-After receiving the budget and the series count, determine whether some of the received series have a discount.
+After receiving the budget and the series count determine whether some of the received series have a discount.
 Then, calculate the price for each series.
 [/hint]
 [hint]
@@ -93,7 +93,7 @@ Gotham
 2
 [/input]
 [output]
-You bought all the series and left with 0.50$
+You bought all the series and are left with $0.50
 [/output]
 [/test]
 [test]
@@ -106,7 +106,7 @@ Lucifer
 5
 [/input]
 [output]
-You bought all the series and left with 19.00$
+You bought all the series and are left with $19.00
 [/output]
 [/test]
 [test]
@@ -121,7 +121,7 @@ Area
 5
 [/input]
 [output]
-You bought all the series and left with 0.10$
+You bought all the series and are left with $0.10
 [/output]
 [/test]
 [test]
@@ -134,7 +134,7 @@ Gotham
 10
 [/input]
 [output]
-You bought all the series and left with 0.00$
+You bought all the series and are left with $0.00
 [/output]
 [/test]
 [test]
@@ -151,7 +151,7 @@ Unkown
 4
 [/input]
 [output]
-You bought all the series and left with 1.10$
+You bought all the series and are left with $1.10
 [/output]
 [/test]
 [test]
@@ -164,7 +164,7 @@ Legendarie
 48
 [/input]
 [output]
-You need 53.80$ more to buy the series!
+You need $53.80 more to buy the series!
 [/output]
 [/test]
 [test]
@@ -181,7 +181,7 @@ MK
 12
 [/input]
 [output]
-You need 13.00$ more to buy the series!
+You need $13.00 more to buy the series!
 [/output]
 [/test]
 [test]
@@ -198,7 +198,7 @@ Thrones
 4
 [/input]
 [output]
-You need 13.20$ more to buy the series!
+You need $13.20 more to buy the series!
 [/output]
 [/test]
 [test]
@@ -211,7 +211,7 @@ Scooby-Doo
 2.50
 [/input]
 [output]
-You bought all the series and left with 0.00$
+You bought all the series and are left with $0.00
 [/output]
 [/test]
 [test]
@@ -226,7 +226,7 @@ Unknown
 1.45
 [/input]
 [output]
-You need 4.25$ more to buy the series!
+You need $4.25 more to buy the series!
 [/output]
 [/test]
 [test]
@@ -243,7 +243,7 @@ Breaking bad
 15
 [/input]
 [output]
-You bought all the series and left with 51.50$
+You bought all the series and are left with $51.50
 [/output]
 [/test]
 [/tests]
