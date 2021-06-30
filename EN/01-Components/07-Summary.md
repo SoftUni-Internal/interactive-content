@@ -2,6 +2,8 @@
 
 # Summary
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-36-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## In this lesson you learned:
 
 - Components are the building blocks of any Angular application
