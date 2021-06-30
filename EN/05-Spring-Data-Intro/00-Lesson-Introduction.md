@@ -1,13 +1,14 @@
-[slide]
-
 # Lesson Introduction
 
+[slide hideTitle]
 # Lesson Content
 
 ## In this lesson you will learn:
 
-**1. Spring Data Framework**
-- What is Spring Data Framework and it's purpose
+**1. The Spring Ecosystem**
+- Spring Framework
+- Spring Data
+- Spring Boot
 
 **2. Spring Data Repositories**
 
@@ -16,6 +17,5 @@
 - Query Builder
 
 **4. Spring Data Service**
- - What is service layer
 
 [/slide]
