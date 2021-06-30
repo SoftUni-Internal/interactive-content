@@ -4,9 +4,7 @@
 
 # Create Angular App
 
-Angular-Components-Lab-1
-Angular-Components-Lab-2
-Angular-Components-Lab-3
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-Lab-1-2-3-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Generate a new angular app using the command "**ng new articles-app**". 
 
@@ -48,7 +46,7 @@ Your app should look like this:
 
 # Create Article Model
 
-Angular-Components-Lab-4
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-Lab-4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We need an article model class to hold the information. 
 
@@ -75,7 +73,7 @@ export class Article{
 
 # Create Article Data
 
-Angular-Components-Lab-5
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-Lab-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We have to create a seed file to hold the **data** that we will display later.
 
@@ -150,7 +148,7 @@ Later, we will learn more about **real services** and **injectables** and how to
 
 # Create Article Component
 
-Angular-Components-Lab-6
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-Lab-6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Generate an article component using the command "ng generate component article". 
 
@@ -227,7 +225,7 @@ It will receive **two properties** that need to be **transferred** from the pare
 
 # Create The HTML Markup
 
-Angular-Components-Lab-7
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-Lab-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Paste the following HTML code inside the "article.component.html" file:
 
@@ -266,7 +264,7 @@ All the properties inside the `*ngIf` directive are controlled in our article co
 
 # Create The Needed Properties
 
-Angular-Components-Lab-8
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-Lab-8-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Inside the `article.component.ts` file, we have to declare the following properties, which we showcased in the previous section:
 
@@ -310,9 +308,6 @@ We can also do this in the `ngOnInit` lifecycle hook.
 [slide hideTitle]
 
 # Implement The Read More Function
-
-Angular-Components-Lab-9
-Angular-Components-Lab-10
 
 Each time we click on `readMore()`, we have to **increase** the article description length with 250 symbols and, if the new length is **more** than the **actual** description length, we have to change **both boolean** properties accordingly. 
 
@@ -406,7 +401,7 @@ The only thing left is to place the articles selector inside the "app.component.
 
 # Test The Application
 
-Angular-Components-Lab-12
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-Lab-12-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 If you have implemented everything successfully, **you can test your application** and try out all of the **functionalities**. 
 
