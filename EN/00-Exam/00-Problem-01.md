@@ -17,13 +17,13 @@ public class Program {
 # Description
 It is hot and sunny outside so you decide to go to the swimming pool with your friends. 
 
-Your task is to create a program that calculates the amount that should be paid for entry to the pool. 
+Your task is to create a program that calculates the cost for entry to the pool. 
 
-**Every person should pay an entrace fee.** 
+**Everyone should pay an entrance fee.** 
 
-You should keep in mind that **an umbrella can provide shade for two people** and only **75% of the group would want sunbeds**. 
+Keep in mind that **an umbrella can provide shade for two people** and only **75% of the group wants sunbeds**. 
 
-When calculating the number of umbrellas and sunbeds, their number should be **rounded up to the next integer**.
+When calculating the number of umbrellas and sunbeds the number should be **rounded up to the closest integer**.
 
 ## Input
 You will receive **4 lines of input**: 
@@ -47,13 +47,13 @@ The result must be formatted up to **the second decimal place**.
 | 6.20 | | 
 [hints]
 [hint]
-Calculate the initial entrance fee for all the people.
+Calculate the initial entrance fee for everyone.
 [/hint]
 [hint]
 Determine how many of them will want a sunbed and calculate the price for all the sunbeds.
 [/hint]
 [hint]
-Note that 1 umbrella can be used by 2 people. Don't forget that when calculating the number of umbrellas and sunbeds, their number should be rounded up to the next integer.
+Note that 1 umbrella can be used by 2 people. Keep in mind that when calculating the number of umbrellas and sunbeds their number should be rounded up to the closest integer.
 [/hint]
 [hint]
 Determine the final price after adding the umbrellas and sunbeds fees to the entrance fee.
