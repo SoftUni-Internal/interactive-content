@@ -4,10 +4,6 @@
 
 # The Idea Behind Components
 
-Merge: Angular-Components-3-4-Components with: Angular-Components-5-The-Idea-behind-components
-
-
-
 Components are the building blocks of all Angular applications. 
 
 We define a component's behavior using a TypeScript class.
@@ -180,6 +176,8 @@ Without this declaration, a component would not be able to use directives and pi
 [slide hideTitle]
 
 # Creating Components Using The CLI
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-10-Creating-Components-with-the-CLI-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can use the **Angular CLI**, which is a command-line interface for Angular, to generate a new component.
 
