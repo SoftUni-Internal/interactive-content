@@ -4,7 +4,7 @@
 
 # What is HTTP?
 
-Intro-to-Angular-and-Typescript-3-4-HTTP-Basics
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-3-4-HTTP-Basics-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **Hypertext Transfer Protocol** or **HTTP** is an application-level protocol for distributed, collaborative, hypermedia information systems, between a web client and a web server.
 
@@ -33,7 +33,7 @@ That way neither the client nor the browser **retain information between request
 
 # Request-Response Model
 
-Intro-to-Angular-and-Typescript-5-6-HTTP-Request-Response-Protocol
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-5-6-HTTP-Request-Response-Protocol-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When using the HTTP protocol in the **majority** of the cases we have a **communication** between a **client** and a **server** :
 
@@ -64,7 +64,7 @@ You can read more about status codes in [MDN Web Documentation](https://develope
 
 # HTTP Request Examples
 
-Intro-to-Angular-and-Typescript-7-Example - Hyper-Text-Transfer-Protocol
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-7-Example - Hyper-Text-Transfer-Protocol-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We send **GET** requests when we want to **obtain data** from the server.
 

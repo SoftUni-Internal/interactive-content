@@ -4,6 +4,8 @@
 
 # TypeScript Overview
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-14-15-Introduction-to-TypeScript-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Intro-to-Angular-and-Typescript-14-15-Introduction-to-TypeScript
 
 **TypeScript** is a **JavaScript superset** developed by Google and Microsoft.
@@ -24,7 +26,7 @@ After the file compilation, we **will receive plain JavaScript** as output.
 
 # Variable Types in TypeScript
 
-Intro-to-Angular-and-Typescript-16-Variable-Types
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-16-Variable-Types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 TypeScript allows us to have **annotations** attached to the variables.
 
@@ -66,7 +68,7 @@ The variable **types** in TypeScript are:
 
 # Classes in TypeScript
 
-Intro-to-Angular-and-Typescript-17-Classes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-17-Classes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **classes** in **TypeScript** are a little bit different from the ones in JavaScript.
 
@@ -105,7 +107,7 @@ After instanting the **Greeter** class, also print it to the console.
 
 # Inheritance in TypeScript
 
-Intro-to-Angular-and-Typescript-18-Inheritance
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-18-Inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Inheritance** in **TypeScript** is the same as in **JavaScript**.
 
@@ -145,7 +147,7 @@ We add  **void** annotation to the `bark()` and the `move()` methods because the
 
 # Interfaces
 
-Intro-to-Angular-and-Typescript-19-Interfaces
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-19-Interfaces-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Interfaces** is another concept provided by TypeScript.
 
@@ -184,7 +186,7 @@ This function will return the string: `Hi, John`, printing it to the console.
 
 # Generics and Enumerations
 
-Intro-to-Angular-and-Typescript-20-Generics-and-Enumerations
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-20-Generics-and-Enumerations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The generics allow for yet **more flexible** and more **reusable** code they also make a component work with **more than one type**.
 
@@ -249,7 +251,7 @@ The **Numeric** enumerations can store values as numbers.
 
 # Modules
 
-Intro-to-Angular-and-Typescript-21-Modules
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-21-Modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Modules in TypeScript are the **same as in ES6**.
 

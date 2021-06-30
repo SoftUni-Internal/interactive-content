@@ -4,7 +4,7 @@
 
 # What is Routing?
 
-Intro-to-Angular-and-Typescript-8-9-Routing-Overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-8-9-Routing-Overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Routing** is is a part of **web site navigation**, it is responsible for **switching** between different views (pages).
 
@@ -44,7 +44,7 @@ Here are **some pages**, which are waiting to be **rendered** on the server once
 
 # Single Page Application
 
-Intro-to-Angular-and-Typescript-10-Single-Page-Applications
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-10-Single-Page-Applications-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Router navigation** will load the corresponding resource when the **location is changed**.
 

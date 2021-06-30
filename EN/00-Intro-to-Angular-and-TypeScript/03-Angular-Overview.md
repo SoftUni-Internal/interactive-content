@@ -4,7 +4,7 @@
 
 # What is Angular?
 
-Intro-to-Angular-and-Typescript-11-12-Angular-Overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-11-12-Angular-Overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Angular** is an open-source **web application framework**, developed by **Google**, written in [TypeScript](https://en.wikipedia.org/wiki/TypeScript), for building **enterprise-level front-end** applications.
 
@@ -46,7 +46,7 @@ That means whenever there is an HTML `my-app` tag, the **AppComponent** will ini
 
 # Angular Versions
 
-Intro-to-Angular-and-Typescript-13-Angular-Versions
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-13-Angular-Versions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The first Angular version was called **Angular 1**, now called **AngularJS**.
 
