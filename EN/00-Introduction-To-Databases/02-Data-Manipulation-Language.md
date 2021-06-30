@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Data Manipulation Language (DML) - 30 pts
+# Data Manipulation Language (DML)
 
 Here we need to do several manipulations in the database, like changing data, adding data etc.
 [/slide]
@@ -1581,7 +1581,7 @@ After many kilometers and over the years, the condition of cars is expected to d
 
 Update all **cars** and set the condition to be '**C**'. 
 
-The cars  must have a **mileage** greater than **800 000 (inclusive)** or **NULL** and must be older than **2010(inclusive)**.
+The cars  must have a **mileage** greater than **800 000 (inclusive)** or **NULL** and must be older than **2010 (inclusive)**.
 
 **Skip** the cars that contain a **make** value of **Mercedes-Benz**. 
 
@@ -1592,10 +1592,14 @@ They can work for many more years.
 [tests]
 [test open]
 [input]
-SELECT COUNT(\*) FROM cars WHERE `condition` = 'C';
+```
+SELECT COUNT(*) FROM cars WHERE `condition` = 'C';
+```
 [/input]
 [output]
+```
 43
+```
 [/output]
 [/test]
 [test]

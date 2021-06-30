@@ -1,6 +1,6 @@
 # Section One
 [slide hideTitle]
-# Data Definition Language (DDL) - 40 pts
+# Data Definition Language (DDL)
 
 Make sure you implement the whole database correctly on your local machine so that you can work with it.
 
@@ -21,20 +21,21 @@ The instructions you will be given will be the minimal required for you to imple
 # Description
 You have been tasked to create the tables in the database by the following models:
 
-- **addresses**
+## Addresses
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
 | **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
 | **name** | A **string** containing a maximum of **100 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
 
-- **categories**
+## Categories
+
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
 | **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
-| **name** | A **string** containing a maximum of **10 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
+| **name** | A **string** containing a maximum of **100 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
 
-- **clients**
+## Clients
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
@@ -42,7 +43,7 @@ You have been tasked to create the tables in the database by the following model
 | **full_name** | A **string** containing a maximum of **20 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
 | **phone_number** | A **string** containing a maximum of **20 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
 
-- **drivers**
+## Drivers
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
@@ -52,7 +53,7 @@ You have been tasked to create the tables in the database by the following model
 | **age** | **Integer**, from **1 to 2 147 483 647**. | **NULL is NOT** permitted. |
 | **rating** | **Floating point** number. | **DEFAULT value is 5.5**, **NULL** is permitted. |
 
-- **cars**
+## Cars
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
@@ -64,7 +65,7 @@ You have been tasked to create the tables in the database by the following model
 | **condition** | **Character** that shows the **condition** of the car.  One character. | **NULL is NOT** permitted. |
 | **category_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table "**categories**". **NULL is NOT** permitted. |
 
-- **courses**
+## Courses
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
@@ -76,7 +77,7 @@ You have been tasked to create the tables in the database by the following model
 | **car_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table "**cars**". **NULL is NOT** permitted.|
 | **client_id** | **Integer**, from **1 to 2 147 483 647**.  | Relationship with table "**clients**". **NULL is NOT** permitted. |
 
-- **cars_drivers**
+## Cars_drivers
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
@@ -87,7 +88,7 @@ Have composite primary key from the "**car_id**" column and the "**driver_id**" 
 
 Submit **all SQL table creation statements**.
 
-You will also be given a "**data.sql**" file. 
+You will also be given a [data.sql]() file. 
 
 It will contain a **dataset** with data which you will need to **store** in your **local database**. 
 
