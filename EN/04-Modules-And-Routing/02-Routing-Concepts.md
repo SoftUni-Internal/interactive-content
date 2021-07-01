@@ -4,7 +4,7 @@
 
 # What is Routing?
 
-Angular-Modules-and-routing-8-9-What-is-Routing
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-8-9-What-is-Routing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Routing** is navigation on the **client-side**. 
 
@@ -52,7 +52,7 @@ Instead of downloading a whole webpage, Angular will download **only** the new a
 
 # Single Page Applications
 
-Angular-Modules-and-routing-10-Single-page-applications
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-10-Single-page-applications-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Single-page applications work by **leveraging the power** of JavaScript and frameworks like Angular.
 

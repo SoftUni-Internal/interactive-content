@@ -4,7 +4,7 @@
 
 # Guards Overview
 
-Angular-Modules-and-routing-24-25-Guards-overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-24-25-Guards-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Guards **prevent** the user from accessing **restricted** routes.
 
@@ -35,7 +35,7 @@ Finally, we can add the **guard** to the wanted **route**.
 
 # CanActivate Guard
 
-Angular-Modules-and-routing-26-27-CanActivate-Guard
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-26-27-CanActivate-Guard-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can use **CanActivate** when we want to verify something before letting the user access the route.
 
@@ -69,8 +69,7 @@ This function returns a boolean - it should **return true** for a logged-in user
 
 # Router Resolver
 
-Angular-Modules-and-routing-28-29-Angular-Router-Resolver
-Angular-Modules-and-routing-30-ActivatedRoute-example
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-28-29-30-Angular-Router-Resolver-and-example-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Resolvers are **data providers**.
 

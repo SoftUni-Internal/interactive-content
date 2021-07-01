@@ -4,7 +4,7 @@
 
 # Define the Template
 
-Angular-Modules-and-routing-11-12-Router-module
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-11-12-Router-module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To create a template, we need to go through several steps.
 
@@ -35,9 +35,9 @@ Finally, we have to define the **router outlet**:
 
 [slide hideTitle]
 
-## Create Routes Module
+# Create Routes Module
 
-Angular-Modules-and-routing-13-14-15-Create-Routes-Module
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-13-14-15-Create-Routes-Module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To create a Router Module, we first need to create a file called `app-routing.module.ts`.
 
@@ -87,7 +87,7 @@ The final step is to **import** the **routes** in the **app** module.
 
 # The RouterLink Directive
 
-Angular-Modules-and-routing-16-The-RouterLink-Directive
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-16-The-RouterLink-Directive-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `RouterLink` directive turns elements into links.
 
@@ -119,7 +119,7 @@ Here is an example of both ways:
 
 # Navigate Programmatically
 
-Angular-Modules-and-routing-17-Navigate-Programmatically
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-17-Navigate-Programmatically-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can add a Router to a component.
 
@@ -147,7 +147,7 @@ loadData() {
 
 # Passing Parameters to Routes
 
-Angular-Modules-and-routing-18-Passing-Parameters-to-routes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-18-Passing-Parameters-to-routes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When we want to make a URL that contains a dynamic route, such as a product number, we need to configure the parameters.
 
@@ -181,8 +181,8 @@ And here, we have two parameters: `:category` and `:id`:
 
 # Fetching Parameters
 
-Angular-Modules-and-routing-19-Fetching-Parameters
-Angular-Modules-and-routing-20-Fetching-Parameters-Reactively
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-19-20-Fetching-Parameters-Reactively-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can use **ActivatedRoute** when we want to fetch a route associated with the component in an outlet.
 
@@ -234,7 +234,7 @@ In this case, it listens for **productId**.
 
 # Query String and Fragments
 
-Angular-Modules-and-routing-21-Query-strings-and-fragments
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-21-Query-strings-and-fragments-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can add **query parameters** and **fragments** to the URL.
 
@@ -261,7 +261,7 @@ The snapshot will retrieve them only once.
 
 # Setting Up Child Routes
 
-Angular-Modules-and-routing-22-Setting-up-child-routes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-22-Setting-up-child-routes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can also have nested routes.
 
@@ -290,7 +290,7 @@ Also, we should add the `<router-outlet></router-outlet>` placeholder to the com
 
 # Redirect
 
-Angular-Modules-and-routing-23-Using-Wildcards-and-redirects
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-23-Using-Wildcards-and-redirects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can redirect the user to a different path.
 

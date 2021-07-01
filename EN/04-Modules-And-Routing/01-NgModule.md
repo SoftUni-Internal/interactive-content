@@ -4,7 +4,7 @@
 
 # Angular Modules Overview
 
-Angular-Modules-and-routing-3-4-The-NgModule
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-3-4-The-NgModule-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 An Angular module is a deployment **subset** of your whole Angular application.
 
@@ -43,7 +43,7 @@ The most popular **Angular** and **third-party** libraries that come as **NgModu
 
 # Creating Custom Modules
 
-Angular-Modules-and-routing-5-6-Creating-Custom-modules
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-5-6-Creating-Custom-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can implement **custom modules** (also known as feature modules) when the app becomes larger.
 
@@ -84,7 +84,7 @@ It **imports** the **CommonModule** and **declares** two components.
 
 # Suggested Common Module
 
-Angular-Modules-and-routing-7-Suggested-Common-Module
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-7-Suggested-Common-Module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When working with a small-sized project, we may use the single `AppModule` for all declarations.
 

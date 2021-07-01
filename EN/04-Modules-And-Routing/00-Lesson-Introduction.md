@@ -4,7 +4,7 @@
 
 # Lesson Content
 
-Angular-Modules-and-routing-1-2-Introduction-and-table-of-contents
+[video src="[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-27-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]" poster="" /]
 
 ## In this lesson you will learn:
 
