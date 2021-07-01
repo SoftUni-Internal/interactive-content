@@ -1,16 +1,38 @@
-
 [slide hideTitle]
-# Problem: Create a View - Employees with Job Titles
+# Problem: Find the First 10 Started Projects 
 
-[code-task title="Create a View - Employees with Job Titles" taskId="java-db-and-MySQL-basic-crud-create-view-employees-with-job-titles" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+[code-task title="Find the First 10 Started Projects" taskId="java-db-and-MySQL-basic-crud-find-the-first-10-started-projects" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
 ```
--- Write the SQL for creating the view here.
+-- Write your query here
 
 ```
 [/code-editor]
-[code-adapter]
+
+[task-description]
+## Description
+
+Write an SQL query to find the **first 10 projects that have already started**.
+
+Select **all information about them** and **sort** them **by start date**, **then by name**.
+
+**Sort the information by id.**
+
+## Example
+
+| id | Name | Description | start_date | end_date |
+| --- | --- | --- | --- | --- |
+| 6 | HL Road Frame | Research, design and development of HL Road ... | 1998-05-02 00:00:00 | 2003-06-01 00:00:00 |
+| 2 | Cycling Cap | Research, design and development of C... | 2001-06-01 00:00:00 | 2003-06-01 00:00:00 |
+| 5 | HL Mountain Frame | Research, design and development of HL M... | 2001-06-01 00:00:00 | 2003-06-01 00:00:00 |
+| ... | ... | ... | ... | ... |
+
+[/task-description]
+[code-io /]
+[tests]
+[test open]
+[input]
 /\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
 /\*!40101 SET NAMES utf8mb4 \*/;
 /\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
@@ -1681,1214 +1703,285 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
 /\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
-[/code-adapter]
-[task-description]
-## Description
-
-Write an SQL query to create a view called **v_employees_job_titles** with **full employee name** and **job title**.
-
-If an employee's middle name is **NULL**, replace it with an **empty string ('')**.
-
-## Example
-
-| full_name | job_title |
-| --- | --- |
-| Guy R Gilbert | Production Technician |
-| Kevin F Brown | Marketing Assistant |
-| Roberto Tamburello | Engineering Manager |
-| ... | ... |
-
-[/task-description]
-[code-io /]
-[tests]
-[test open]
-[input]
-```
-SELECT * FROM v_employees_job_titles
-```
 [/input]
 [output]
-Guy R Gilbert
-Production Technician
-Kevin F Brown
-Marketing Assistant
-Roberto Tamburello
-Engineering Manager
-Rob Walters
-Senior Tool Designer
-Thierry B D'Hers
-Tool Designer
-David M Bradley
-Marketing Manager
-JoLynn M Dobney
-Production Supervisor
-Ruth Ann Ellerbrock
-Production Technician
-Gail A Erickson
-Design Engineer
-Barry K Johnson
-Production Technician
-Jossef H Goldberg
-Design Engineer
-Terri Lee Duffy
-Vice President of Engineering
-Sidney M Higa
-Production Technician
-Taylor R Maxwell
-Production Supervisor
-Jeffrey L Ford
-Production Technician
-Jo A Brown
-Production Supervisor
-Doris M Hartwig
-Production Technician
-John T Campbell
-Production Supervisor
-Diane R Glimp
-Production Technician
-Steven T Selikoff
-Production Technician
-Peter J Krebs
-Production Control Manager
-Stuart V Munson
-Production Technician
-Greg F Alderson
-Production Technician
-David  Johnson
-Production Technician
-Zheng W Mu
-Production Supervisor
-Ivo William Salmre
-Production Technician
-Paul B Komosinski
-Production Technician
-Ashvini R Sharma
-Network Administrator
-Kendall C Keil
-Production Technician
-Paula M Barreto de Mattos
-Human Resources Manager
-Alejandro E McGuel
-Production Technician
-Garrett R Young
-Production Technician
-Jian Shuo Wang
-Production Technician
-Susan W Eaton
-Stocker
-Vamsi  Kuppa
-Shipping and Receiving Clerk
-Alice O Ciccu
-Production Technician
-Simon D Rapier
-Production Technician
-Jinghao K Liu
-Production Supervisor
-Michael T Hines
-Production Technician
-Yvonne S McKay
-Production Technician
-Peng J Wu
-Quality Assurance Supervisor
-Jean E Trenary
-Information Services Manager
-Russell Hunter
-Production Technician
-A\. Scott Wright
-Master Scheduler
-Fred T Northup
-Production Technician
-Sariya E Harnpadoungsataya
-Marketing Specialist
-Willis T Johnson
-Recruiter
-Jun T Cao
-Production Technician
-Christian E Kleinerman
-Maintenance Supervisor
-Susan A Metters
-Production Technician
-Reuben H D'sa
-Production Supervisor
-Kirk J Koenigsbauer
-Production Technician
-David J Ortiz
-Production Technician
-Tengiz  Kharatishvili
-Control Specialist
-Hanying P Feng
-Production Technician
-Kevin H Liu
-Production Technician
-Annik O Stahl
-Production Technician
-Suroor R Fatima
-Production Technician
-Deborah E Poe
-Accounts Receivable Specialist
-Jim H Scardelis
-Production Technician
-Carole M Poland
-Production Technician
-George Z Li
-Production Technician
-Gary W Yukish
-Production Technician
-Cristian K Petculescu
-Production Supervisor
-Raymond K Sam
-Production Technician
-Janaina Barreiro Gambaro Bueno
-Application Specialist
-Bob  Hohman
-Production Technician
-Shammi G Mohamed
-Production Technician
-Linda K Moschell
-Production Technician
-Mindy C Martin
-Benefits Specialist
-Wendy Beth Kahn
-Finance Manager
-Kim T Ralls
-Stocker
-Sandra Reategui Alayo
-Production Technician
-Kok-Ho T Loh
-Production Supervisor
-Douglas B Hite
-Production Technician
-James D Kramer
-Production Technician
-Sean P Alexander
-Quality Assurance Technician
-Nitin S Mirchandani
-Production Technician
-Diane L Margheim
-Research and Development Engineer
-Rebecca A Laszlo
-Production Technician
-Rajesh M Patel
-Production Technician
-Vidur X Luthra
-Recruiter
-John P Evans
-Production Technician
-Nancy A Anderson
-Production Technician
-Pilar G Ackerman
-Shipping and Receiving Supervisor
-David A Yalovsky
-Production Technician
-David P Hamilton
-Production Supervisor
-Laura C Steele
-Production Technician
-Margie W Shoop
-Production Technician
-Zainal T Arifin
-Document Control Manager
-Lorraine O Nay
-Production Technician
-Fadi K Fakhouri
-Production Technician
-Ryan L Cornelsen
-Production Technician
-Candy L Spoon
-Accounts Receivable Specialist
-Nuan Yu
-Production Technician
-William S Vong
-Scheduling Assistant
-Bjorn M Rettig
-Production Technician
-Scott R Gode
-Production Technician
-Michael L Rothkugel
-Production Technician
-Lane M Sacksteder
-Production Technician
-Pete C Male
-Production Technician
-Dan K Bacon
-Application Specialist
-David M Barber
-Assistant to the Chief Financial Officer
-Lolan B Song
-Production Technician
-Paula R Nartker
-Production Technician
-Mary E Gibson
-Marketing Specialist
-Mindaugas J Krapauskas
-Production Technician
-Eric Gubbels
-Production Supervisor
-Ken J Sanchez
-Chief Executive Officer
-Jason M Watters
-Production Technician
-Mark L Harrington
-Quality Assurance Technician
-Janeth M Esteves
-Production Technician
-Marc J Ingle
-Production Technician
-Gigi  Matthew
-Research and Development Engineer
-Paul R Singh
-Production Technician
-Frank T Lee
-Production Technician
-Francois P Ajenstat
-Database Administrator
-Diane H Tibbott
-Production Technician
-Jill A Williams
-Marketing Specialist
-Angela W Barbariol
-Production Technician
-Matthias T Berndt
-Shipping and Receiving Clerk
-Bryan Baker
-Production Technician
-Jeff V Hay
-Production Supervisor
-Eugene R Zabokritski
-Production Technician
-Barbara S Decker
-Production Technician
-Chris T Preston
-Production Technician
-Sean  Chai
-Document Control Assistant
-Dan B Wilson
-Database Administrator
-Mark K McArthur
-Production Technician
-Bryan A Walton
-Accounts Receivable Specialist
-Houman  Pournasseh
-Production Technician
-Sairaj L Uddin
-Scheduling Assistant
-Michiko F Osada
-Production Technician
-Benjamin R Martin
-Production Technician
-Cynthia S Randall
-Production Supervisor
-Kathie E Flood
-Production Technician
-Britta L Simon
-Production Technician
-Brian T Lloyd
-Production Technician
-David J Liu
-Accounts Manager
-Laura F Norman
-Chief Financial Officer
-Michael W Patten
-Production Technician
-Andy M Ruth
-Production Technician
-Yuhong L Li
-Production Supervisor
-Robert J Rounthwaite
-Production Technician
-Andreas T Berglund
-Quality Assurance Technician
-Reed T Koch
-Production Technician
-Linda A Randall
-Production Technician
-James R Hamilton
-Vice President of Production
-Ramesh V Meyyappan
-Application Specialist
-Stephanie A Conroy
-Network Manager
-Samantha H Smith
-Production Technician
-Tawana G Nusbaum
-Production Technician
-Denise H Smith
-Production Technician
-Hao O Chen
-Human Resources Administrative Assistant
-Alex M Nayberg
-Production Technician
-Eugene O Kogan
-Production Technician
-Brandon G Heidepriem
-Production Technician
-Dylan A Miller
-Research and Development Manager
-Shane S Kim
-Production Supervisor
-John Y Chen
-Production Technician
-Karen R Berge
-Document Control Assistant
-Jose R Lugo
-Production Technician
-Mandar H Samant
-Production Technician
-Mikael Q Sandberg
-Buyer
-Sameer A Tejani
-Production Technician
-Dragan K Tomic
-Accounts Payable Specialist
-Carol M Philips
-Production Technician
-Rob T Caron
-Production Technician
-Don L Hall
-Production Technician
-Alan J Brewer
-Scheduling Assistant
-David Oliver Lawrence
-Production Technician
-Baris F Cetinok
-Production Technician
-Michael Sean Ray
-Production Supervisor
-Steve F Masters
-Production Technician
-Suchitra O Mohan
-Production Technician
-Karen A Berg
-Application Specialist
-Terrence W Earls
-Production Technician
-Barbara C Moreland
-Accountant
-Chad W Niswonger
-Production Technician
-Rostislav E Shabalin
-Production Technician
-Belinda M Newman
-Production Technician
-Katie L McAskill-White
-Production Supervisor
-Russell M King
-Production Technician
-Jack S Richins
-Production Supervisor
-Andrew R Hill
-Production Supervisor
-Nicole B Holliday
-Production Technician
-Frank T Miller
-Production Technician
-Peter I Connelly
-Network Administrator
-Anibal T Sousa
-Production Technician
-Ken L Myer
-Production Technician
-Grant  Culbertson
-Human Resources Administrative Assistant
-Michael T Entin
-Production Technician
-Lionel C Penuchot
-Production Technician
-Thomas R Michaels
-Production Technician
-Jimmy T Bischoff
-Stocker
-Michael T Vanderhyde
-Production Technician
-Lori A Kane
-Production Supervisor
-Arvind B Rao
-Buyer
-Stefen A Hesse
-Production Technician
-Hazem E Abolrous
-Quality Assurance Manager
-Janet L Sheperdigian
-Accounts Payable Specialist
-Elizabeth I Keyser
-Production Technician
-Terry J Eminhizer
-Marketing Specialist
-John  Frum
-Production Technician
-Merav A Netz
-Production Technician
-Brian P LaMee
-Scheduling Assistant
-Kitti H Lertpiriyasuwat
-Production Technician
-Jay G Adams
-Production Technician
-Jan S Miksovsky
-Production Technician
-Brenda M Diaz
-Production Supervisor
-Andrew M Cencini
-Production Technician
-Chris K Norred
-Control Specialist
-Chris O Okelberry
-Production Technician
-Shelley  Dyck
-Production Technician
-Gabe B Mares
-Production Technician
-Mike K Seamans
-Accountant
-Michael Raheem
-Research and Development Manager
-Gary E. Altman
-Facilities Manager
-Charles B Fitzgerald
-Production Technician
-Ebru  Ersan
-Production Technician
-Sylvester A Valdez
-Production Technician
-Brian Richard Goldstein
-Production Technician
-Linda P Meisner
-Buyer
-Betsy A Stadick
-Production Technician
-Magnus E Hedlund
-Facilities Administrative Assistant
-Karan R Khanna
-Production Technician
-Mary R Baker
-Production Technician
-Kevin M Homer
-Production Technician
-Mihail U Frintu
-Production Technician
-Bonnie  Kearney
-Production Technician
-Fukiko J Ogisu
-Buyer
-Hung-Fu T Ting
-Production Technician
-Gordon L Hee
-Buyer
-Kimberly B Zimmerman
-Production Technician
-Kim B Abercrombie
-Production Technician
-Sandeep P Kaliyath
-Production Technician
-Prasanna E Samarawickrama
-Production Technician
-Frank S Pellow
-Buyer
-Min G Su
-Production Technician
-Eric L Brown
-Production Technician
-Eric S Kurjan
-Buyer
-Pat H Coleman
-Janitor
-Maciej W Dusza
-Production Technician
-Erin M Hagens
-Buyer
-Patrick C Wedge
-Production Technician
-Frank R Martinez
-Production Technician
-Ed R Dudenhoefer
-Production Technician
-Christopher E Hill
-Production Technician
-Patrick M Cook
-Production Technician
-Krishna Sunkammurali
-Production Technician
-Lori K Penor
-Janitor
-Danielle C Tiedt
-Production Technician
-Sootha T Charncherngkha
-Quality Assurance Technician
-Michael J Zwilling
-Production Technician
-Randy T Reeves
-Production Technician
-John T Kane
-Production Technician
-Jack T Creasey
-Production Technician
-Olinda C Turner
-Production Technician
-Stuart J Macrae
-Janitor
-Jo L Berry
-Janitor
-Ben T Miller
-Buyer
-Tom M Vande Velde
-Production Technician
-Ovidiu V Cracium
-Senior Tool Designer
-Annette L Hill
-Purchasing Assistant
-Janice M Galvin
-Tool Designer
-Reinout  Hillmann
-Purchasing Assistant
-Michael I Sullivan
-Senior Design Engineer
-Stephen Y Jiang
-North American Sales Manager
-Wanida M Benshoof
-Marketing Assistant
-Sharon B Salavaria
-Design Engineer
-John L Wood
-Marketing Specialist
-Mary A Dempsey
-Marketing Assistant
-Brian S Welcker
-Vice President of Sales
-Sheela H Word
-Purchasing Manager
-Michael G Blythe
-Sales Representative
-Linda C Mitchell
-Sales Representative
-Jillian Carson
-Sales Representative
-Garrett R Vargas
-Sales Representative
-Tsvi Michael Reiter
-Sales Representative
-Pamela O Ansman-Wolfe
-Sales Representative
-Shu K Ito
-Sales Representative
-Jose Edvaldo Saraiva
-Sales Representative
-David R Campbell
-Sales Representative
-Amy E Alberts
-European Sales Manager
-Jae B Pak
-Sales Representative
-Ranjit R Varkey Chudukatil
-Sales Representative
-Tete A Mensa-Annan
-Sales Representative
-Syed E Abbas
-Pacific Sales Manager
-Rachel B Valdez
-Sales Representative
-Lynn  Tsoflias
-Sales Representative
-Svetlin Ivanov Nakov
-Independent Software Development  Consultant
-Martin Kulov
-Independent .NET Consultant
-George Denchev
-Independent Java Consultant
+```
+6
+HL Road Frame
+Research, design and development of HL Road Frame. Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.
+1998-05-02 00:00:00
+2003-06-01 00:00:00
+2
+Cycling Cap
+Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.
+2001-06-01 00:00:00
+2003-06-01 00:00:00
+5
+HL Mountain Frame
+Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.
+2001-06-01 00:00:00
+2003-06-01 00:00:00
+9
+LL Road Frame
+Research, design and development of LL Road Frame. The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.
+2001-06-01 00:00:00
+2003-06-01 00:00:00
+11
+Long-Sleeve Logo Jersey
+Research, design and development of Long-Sleeve Logo Jersey. Unisex long-sleeve AWC logo microfiber cycling jersey
+2001-06-01 00:00:00
+2003-06-01 00:00:00
+19
+Mountain-100
+Research, design and development of Mountain-100. Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.
+2001-06-01 00:00:00
+2003-06-01 00:00:00
+39
+Mountain-400
+Research, design and development of Mountain-400. Suitable for any type of off-road trip. Fits any budget.
+2001-06-01 00:00:00
+2003-06-01 00:00:00
+25
+Road-150
+Research, design and development of Road-150. This bike is ridden by race winners. Developed with the Adventure Works Cycles professional race team, it has a extremely light heat-treated aluminum frame, and steering that allows precision control.
+2001-06-01 00:00:00
+2003-06-01 00:00:00
+28
+Road-450
+Research, design and development of Road-450. A true multi-sport bike that offers streamlined riding and a revolutionary design. Aerodynamic design lets you ride with the pros, and the gearing will conquer hilly roads.
+2001-06-01 00:00:00
+2003-06-01 00:00:00
+30
+Road-650
+Research, design and development of Road-650. Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.
+2001-06-01 00:00:00
+2003-06-01 00:00:00
+```
 [/output]
 [/test]
 [test]
 [input]
-```
-SELECT * FROM v_employees_job_titles
-```
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `PK_Projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+
+INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
+	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2001-06-01 00:00:00.000000', NULL),
+	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2003-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2004-06-01 00:00:00.000000', '2006-06-01 00:00:00.000000'),
+	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2005-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000');
 [/input]
 [output]
-Guy R Gilbert
-Production Technician
-Kevin F Brown
-Marketing Assistant
-Roberto Tamburello
-Engineering Manager
-Rob Walters
-Senior Tool Designer
-Thierry B D'Hers
-Tool Designer
-David M Bradley
-Marketing Manager
-JoLynn M Dobney
-Production Supervisor
-Ruth Ann Ellerbrock
-Production Technician
-Gail A Erickson
-Design Engineer
-Barry K Johnson
-Production Technician
-Jossef H Goldberg
-Design Engineer
-Terri Lee Duffy
-Vice President of Engineering
-Sidney M Higa
-Production Technician
-Taylor R Maxwell
-Production Supervisor
-Jeffrey L Ford
-Production Technician
-Jo A Brown
-Production Supervisor
-Doris M Hartwig
-Production Technician
-John T Campbell
-Production Supervisor
-Diane R Glimp
-Production Technician
-Steven T Selikoff
-Production Technician
-Peter J Krebs
-Production Control Manager
-Stuart V Munson
-Production Technician
-Greg F Alderson
-Production Technician
-David  Johnson
-Production Technician
-Zheng W Mu
-Production Supervisor
-Ivo William Salmre
-Production Technician
-Paul B Komosinski
-Production Technician
-Ashvini R Sharma
-Network Administrator
-Kendall C Keil
-Production Technician
-Paula M Barreto de Mattos
-Human Resources Manager
-Alejandro E McGuel
-Production Technician
-Garrett R Young
-Production Technician
-Jian Shuo Wang
-Production Technician
-Susan W Eaton
-Stocker
-Vamsi  Kuppa
-Shipping and Receiving Clerk
-Alice O Ciccu
-Production Technician
-Simon D Rapier
-Production Technician
-Jinghao K Liu
-Production Supervisor
-Michael T Hines
-Production Technician
-Yvonne S McKay
-Production Technician
-Peng J Wu
-Quality Assurance Supervisor
-Jean E Trenary
-Information Services Manager
-Russell Hunter
-Production Technician
-A\. Scott Wright
-Master Scheduler
-Fred T Northup
-Production Technician
-Sariya E Harnpadoungsataya
-Marketing Specialist
-Willis T Johnson
-Recruiter
-Jun T Cao
-Production Technician
-Christian E Kleinerman
-Maintenance Supervisor
-Susan A Metters
-Production Technician
-Reuben H D'sa
-Production Supervisor
-Kirk J Koenigsbauer
-Production Technician
-David J Ortiz
-Production Technician
-Tengiz  Kharatishvili
-Control Specialist
-Hanying P Feng
-Production Technician
-Kevin H Liu
-Production Technician
-Annik O Stahl
-Production Technician
-Suroor R Fatima
-Production Technician
-Deborah E Poe
-Accounts Receivable Specialist
-Jim H Scardelis
-Production Technician
-Carole M Poland
-Production Technician
-George Z Li
-Production Technician
-Gary W Yukish
-Production Technician
-Cristian K Petculescu
-Production Supervisor
-Raymond K Sam
-Production Technician
-Janaina Barreiro Gambaro Bueno
-Application Specialist
-Bob  Hohman
-Production Technician
-Shammi G Mohamed
-Production Technician
-Linda K Moschell
-Production Technician
-Mindy C Martin
-Benefits Specialist
-Wendy Beth Kahn
-Finance Manager
-Kim T Ralls
-Stocker
-Sandra Reategui Alayo
-Production Technician
-Kok-Ho T Loh
-Production Supervisor
-Douglas B Hite
-Production Technician
-James D Kramer
-Production Technician
-Sean P Alexander
-Quality Assurance Technician
-Nitin S Mirchandani
-Production Technician
-Diane L Margheim
-Research and Development Engineer
-Rebecca A Laszlo
-Production Technician
-Rajesh M Patel
-Production Technician
-Vidur X Luthra
-Recruiter
-John P Evans
-Production Technician
-Nancy A Anderson
-Production Technician
-Pilar G Ackerman
-Shipping and Receiving Supervisor
-David A Yalovsky
-Production Technician
-David P Hamilton
-Production Supervisor
-Laura C Steele
-Production Technician
-Margie W Shoop
-Production Technician
-Zainal T Arifin
-Document Control Manager
-Lorraine O Nay
-Production Technician
-Fadi K Fakhouri
-Production Technician
-Ryan L Cornelsen
-Production Technician
-Candy L Spoon
-Accounts Receivable Specialist
-Nuan Yu
-Production Technician
-William S Vong
-Scheduling Assistant
-Bjorn M Rettig
-Production Technician
-Scott R Gode
-Production Technician
-Michael L Rothkugel
-Production Technician
-Lane M Sacksteder
-Production Technician
-Pete C Male
-Production Technician
-Dan K Bacon
-Application Specialist
-David M Barber
-Assistant to the Chief Financial Officer
-Lolan B Song
-Production Technician
-Paula R Nartker
-Production Technician
-Mary E Gibson
-Marketing Specialist
-Mindaugas J Krapauskas
-Production Technician
-Eric Gubbels
-Production Supervisor
-Ken J Sanchez
-Chief Executive Officer
-Jason M Watters
-Production Technician
-Mark L Harrington
-Quality Assurance Technician
-Janeth M Esteves
-Production Technician
-Marc J Ingle
-Production Technician
-Gigi  Matthew
-Research and Development Engineer
-Paul R Singh
-Production Technician
-Frank T Lee
-Production Technician
-Francois P Ajenstat
-Database Administrator
-Diane H Tibbott
-Production Technician
-Jill A Williams
-Marketing Specialist
-Angela W Barbariol
-Production Technician
-Matthias T Berndt
-Shipping and Receiving Clerk
-Bryan Baker
-Production Technician
-Jeff V Hay
-Production Supervisor
-Eugene R Zabokritski
-Production Technician
-Barbara S Decker
-Production Technician
-Chris T Preston
-Production Technician
-Sean  Chai
-Document Control Assistant
-Dan B Wilson
-Database Administrator
-Mark K McArthur
-Production Technician
-Bryan A Walton
-Accounts Receivable Specialist
-Houman  Pournasseh
-Production Technician
-Sairaj L Uddin
-Scheduling Assistant
-Michiko F Osada
-Production Technician
-Benjamin R Martin
-Production Technician
-Cynthia S Randall
-Production Supervisor
-Kathie E Flood
-Production Technician
-Britta L Simon
-Production Technician
-Brian T Lloyd
-Production Technician
-David J Liu
-Accounts Manager
-Laura F Norman
-Chief Financial Officer
-Michael W Patten
-Production Technician
-Andy M Ruth
-Production Technician
-Yuhong L Li
-Production Supervisor
-Robert J Rounthwaite
-Production Technician
-Andreas T Berglund
-Quality Assurance Technician
-Reed T Koch
-Production Technician
-Linda A Randall
-Production Technician
-James R Hamilton
-Vice President of Production
-Ramesh V Meyyappan
-Application Specialist
-Stephanie A Conroy
-Network Manager
-Samantha H Smith
-Production Technician
-Tawana G Nusbaum
-Production Technician
-Denise H Smith
-Production Technician
-Hao O Chen
-Human Resources Administrative Assistant
-Alex M Nayberg
-Production Technician
-Eugene O Kogan
-Production Technician
-Brandon G Heidepriem
-Production Technician
-Dylan A Miller
-Research and Development Manager
-Shane S Kim
-Production Supervisor
-John Y Chen
-Production Technician
-Karen R Berge
-Document Control Assistant
-Jose R Lugo
-Production Technician
-Mandar H Samant
-Production Technician
-Mikael Q Sandberg
-Buyer
-Sameer A Tejani
-Production Technician
-Dragan K Tomic
-Accounts Payable Specialist
-Carol M Philips
-Production Technician
-Rob T Caron
-Production Technician
-Don L Hall
-Production Technician
-Alan J Brewer
-Scheduling Assistant
-David Oliver Lawrence
-Production Technician
-Baris F Cetinok
-Production Technician
-Michael Sean Ray
-Production Supervisor
-Steve F Masters
-Production Technician
-Suchitra O Mohan
-Production Technician
-Karen A Berg
-Application Specialist
-Terrence W Earls
-Production Technician
-Barbara C Moreland
-Accountant
-Chad W Niswonger
-Production Technician
-Rostislav E Shabalin
-Production Technician
-Belinda M Newman
-Production Technician
-Katie L McAskill-White
-Production Supervisor
-Russell M King
-Production Technician
-Jack S Richins
-Production Supervisor
-Andrew R Hill
-Production Supervisor
-Nicole B Holliday
-Production Technician
-Frank T Miller
-Production Technician
-Peter I Connelly
-Network Administrator
-Anibal T Sousa
-Production Technician
-Ken L Myer
-Production Technician
-Grant  Culbertson
-Human Resources Administrative Assistant
-Michael T Entin
-Production Technician
-Lionel C Penuchot
-Production Technician
-Thomas R Michaels
-Production Technician
-Jimmy T Bischoff
-Stocker
-Michael T Vanderhyde
-Production Technician
-Lori A Kane
-Production Supervisor
-Arvind B Rao
-Buyer
-Stefen A Hesse
-Production Technician
-Hazem E Abolrous
-Quality Assurance Manager
-Janet L Sheperdigian
-Accounts Payable Specialist
-Elizabeth I Keyser
-Production Technician
-Terry J Eminhizer
-Marketing Specialist
-John  Frum
-Production Technician
-Merav A Netz
-Production Technician
-Brian P LaMee
-Scheduling Assistant
-Kitti H Lertpiriyasuwat
-Production Technician
-Jay G Adams
-Production Technician
-Jan S Miksovsky
-Production Technician
-Brenda M Diaz
-Production Supervisor
-Andrew M Cencini
-Production Technician
-Chris K Norred
-Control Specialist
-Chris O Okelberry
-Production Technician
-Shelley  Dyck
-Production Technician
-Gabe B Mares
-Production Technician
-Mike K Seamans
-Accountant
-Michael Raheem
-Research and Development Manager
-Gary E. Altman
-Facilities Manager
-Charles B Fitzgerald
-Production Technician
-Ebru  Ersan
-Production Technician
-Sylvester A Valdez
-Production Technician
-Brian Richard Goldstein
-Production Technician
-Linda P Meisner
-Buyer
-Betsy A Stadick
-Production Technician
-Magnus E Hedlund
-Facilities Administrative Assistant
-Karan R Khanna
-Production Technician
-Mary R Baker
-Production Technician
-Kevin M Homer
-Production Technician
-Mihail U Frintu
-Production Technician
-Bonnie  Kearney
-Production Technician
-Fukiko J Ogisu
-Buyer
-Hung-Fu T Ting
-Production Technician
-Gordon L Hee
-Buyer
-Kimberly B Zimmerman
-Production Technician
-Kim B Abercrombie
-Production Technician
-Sandeep P Kaliyath
-Production Technician
-Prasanna E Samarawickrama
-Production Technician
-Frank S Pellow
-Buyer
-Min G Su
-Production Technician
-Eric L Brown
-Production Technician
-Eric S Kurjan
-Buyer
-Pat H Coleman
-Janitor
-Maciej W Dusza
-Production Technician
-Erin M Hagens
-Buyer
-Patrick C Wedge
-Production Technician
-Frank R Martinez
-Production Technician
-Ed R Dudenhoefer
-Production Technician
-Christopher E Hill
-Production Technician
-Patrick M Cook
-Production Technician
-Krishna Sunkammurali
-Production Technician
-Lori K Penor
-Janitor
-Danielle C Tiedt
-Production Technician
-Sootha T Charncherngkha
-Quality Assurance Technician
-Michael J Zwilling
-Production Technician
-Randy T Reeves
-Production Technician
-John T Kane
-Production Technician
-Jack T Creasey
-Production Technician
-Olinda C Turner
-Production Technician
-Stuart J Macrae
-Janitor
-Jo L Berry
-Janitor
-Ben T Miller
-Buyer
-Tom M Vande Velde
-Production Technician
-Ovidiu V Cracium
-Senior Tool Designer
-Annette L Hill
-Purchasing Assistant
-Janice M Galvin
-Tool Designer
-Reinout  Hillmann
-Purchasing Assistant
-Michael I Sullivan
-Senior Design Engineer
-Stephen Y Jiang
-North American Sales Manager
-Wanida M Benshoof
-Marketing Assistant
-Sharon B Salavaria
-Design Engineer
-John L Wood
-Marketing Specialist
-Mary A Dempsey
-Marketing Assistant
-Brian S Welcker
-Vice President of Sales
-Sheela H Word
-Purchasing Manager
-Michael G Blythe
-Sales Representative
-Linda C Mitchell
-Sales Representative
-Jillian Carson
-Sales Representative
-Garrett R Vargas
-Sales Representative
-Tsvi Michael Reiter
-Sales Representative
-Pamela O Ansman-Wolfe
-Sales Representative
-Shu K Ito
-Sales Representative
-Jose Edvaldo Saraiva
-Sales Representative
-David R Campbell
-Sales Representative
-Amy E Alberts
-European Sales Manager
-Jae B Pak
-Sales Representative
-Ranjit R Varkey Chudukatil
-Sales Representative
-Tete A Mensa-Annan
-Sales Representative
-Syed E Abbas
-Pacific Sales Manager
-Rachel B Valdez
-Sales Representative
-Lynn  Tsoflias
-Sales Representative
-Svetlin Ivanov Nakov
-Independent Software Development  Consultant
-Martin Kulov
-Independent .NET Consultant
-George Denchev
-Independent Java Consultant
+```
+1
+Classic Vest
+Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.
+2001-06-01 00:00:00
+
+2
+Cycling Cap
+Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.
+2002-06-01 00:00:00
+2003-06-01 00:00:00
+3
+Full-Finger Gloves
+Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.
+2003-06-01 00:00:00
+2003-06-01 00:00:00
+4
+Half-Finger Gloves
+Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.
+2004-06-01 00:00:00
+2006-06-01 00:00:00
+5
+HL Mountain Frame
+Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.
+2005-06-01 00:00:00
+2003-06-01 00:00:00
+```
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `PK_Projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+
+INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
+	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2005-06-01 00:00:00.000000', NULL),
+	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2004-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2003-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2002-06-01 00:00:00.000000', '2006-06-01 00:00:00.000000'),
+	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000');
+[/input]
+[output]
+```
+5
+HL Mountain Frame
+Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.
+2001-06-01 00:00:00
+2003-06-01 00:00:00
+4
+Half-Finger Gloves
+Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.
+2002-06-01 00:00:00
+2006-06-01 00:00:00
+3
+Full-Finger Gloves
+Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.
+2003-06-01 00:00:00
+2003-06-01 00:00:00
+2
+Cycling Cap
+Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.
+2004-06-01 00:00:00
+2003-06-01 00:00:00
+1
+Classic Vest
+Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.
+2005-06-01 00:00:00
+```
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `PK_Projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+
+INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
+	(1, 'www', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2005-06-01 00:00:00.000000', NULL),
+	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2004-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(3, 'aaa', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2005-06-01 00:00:00.000000', '2007-06-01 00:00:00.000000'),
+	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2002-06-01 00:00:00.000000', '2006-06-01 00:00:00.000000'),
+	(5, 'hhh', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2005-06-01 00:00:00.000000', '2009-06-01 00:00:00.000000');
+[/input]
+[output]
+```
+4
+Half-Finger Gloves
+Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.
+2002-06-01 00:00:00
+2006-06-01 00:00:00
+2
+Cycling Cap
+Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.
+2004-06-01 00:00:00
+2003-06-01 00:00:00
+3
+aaa
+Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.
+2005-06-01 00:00:00
+2007-06-01 00:00:00
+5
+hhh
+Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.
+2005-06-01 00:00:00
+2009-06-01 00:00:00
+1
+www
+Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.
+2005-06-01 00:00:00
+```
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `PK_Projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+
+INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
+	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2001-06-01 00:00:00.000000', NULL),
+	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2003-06-01 00:00:00.000000', '2010-06-01 00:00:00.000000'),
+	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2004-06-01 00:00:00.000000', '2009-06-01 00:00:00.000000'),
+	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2005-06-01 00:00:00.000000', '2008-06-01 00:00:00.000000'),
+	(6, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2006-06-01 00:00:00.000000', NULL),
+	(9, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2007-06-01 00:00:00.000000', '2008-06-01 00:00:00.000000'),
+	(11, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2008-06-01 00:00:00.000000', '2009-06-01 00:00:00.000000'),
+	(13, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2009-06-01 00:00:00.000000', '2011-06-01 00:00:00.000000'),
+	(15, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2010-06-01 00:00:00.000000', '2011-06-01 00:00:00.000000'),
+	(17, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2011-06-01 00:00:00.000000', '2013-06-01 00:00:00.000000');
+[/input]
+[output]
+```
+1
+Classic Vest
+Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.
+2001-06-01 00:00:00
+
+2
+Cycling Cap
+Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.
+2002-06-01 00:00:00
+2003-06-01 00:00:00
+3
+Full-Finger Gloves
+Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.
+2003-06-01 00:00:00
+2010-06-01 00:00:00
+4
+Half-Finger Gloves
+Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.
+2004-06-01 00:00:00
+2009-06-01 00:00:00
+5
+HL Mountain Frame
+Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.
+2005-06-01 00:00:00
+2008-06-01 00:00:00
+6
+Classic Vest
+Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.
+2006-06-01 00:00:00
+
+9
+Cycling Cap
+Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.
+2007-06-01 00:00:00
+2008-06-01 00:00:00
+11
+Full-Finger Gloves
+Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.
+2008-06-01 00:00:00
+2009-06-01 00:00:00
+13
+Half-Finger Gloves
+Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.
+2009-06-01 00:00:00
+2011-06-01 00:00:00
+15
+HL Mountain Frame
+Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.
+2010-06-01 00:00:00
+2011-06-01 00:00:00
+```
 [/output]
 [/test]
 [/tests]
