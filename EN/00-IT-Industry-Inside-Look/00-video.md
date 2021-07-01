@@ -1,7 +1,7 @@
 [slide hideTitle]
-# Problem: Find the First 10 Started Projects 
+# Problem: Find All Information About Employees 
 
-[code-task title="Find the First 10 Started Projects" taskId="java-db-and-MySQL-basic-crud-find-the-first-10-started-projects" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Find All Information About Employees" taskId="java-db-and-MySQL-basic-crud-find-all-information-about-employees" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
 ```
@@ -13,20 +13,20 @@
 [task-description]
 ## Description
 
-Write an SQL query to find the **first 10 projects that have already started**.
+Write an SQL query to find **all information** about employees whose **job title** is **Sales Representative**. 
 
-Select **all information about them** and **sort** them **by start date**, **then by name**.
+**Sort** the results **by id**. 
 
-**Sort the information by id.**
 
 ## Example
 
-| id | Name | Description | start_date | end_date |
-| --- | --- | --- | --- | --- |
-| 6 | HL Road Frame | Research, design and development of HL Road ... | 1998-05-02 00:00:00 | 2003-06-01 00:00:00 |
-| 2 | Cycling Cap | Research, design and development of C... | 2001-06-01 00:00:00 | 2003-06-01 00:00:00 |
-| 5 | HL Mountain Frame | Research, design and development of HL M... | 2001-06-01 00:00:00 | 2003-06-01 00:00:00 |
-| ... | ... | ... | ... | ... |
+| id | first_name | last_name | middle_name | job_title | dept_id | mngr_id | hire_date | salary | address_id |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 275  | Michael | Blythe | G | Sales Representative | 3 | 268 | ... | 23100.00 | 60 |
+| 276  | Linda | Mitchell | C | Sales Representative | 3 | 268 | ... | 23100.00 | 170 |
+| 277  | Jillian | Carson | NULL | Sales Representative | 3 | 268 | ... | 23100.00 | 61 |
+| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+
 
 [/task-description]
 [code-io /]
@@ -1706,284 +1706,294 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [/input]
 [output]
 ```
-6
-HL Road Frame
-Research, design and development of HL Road Frame. Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.
-1998-05-02 00:00:00
-2003-06-01 00:00:00
-2
-Cycling Cap
-Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.
-2001-06-01 00:00:00
-2003-06-01 00:00:00
-5
-HL Mountain Frame
-Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.
-2001-06-01 00:00:00
-2003-06-01 00:00:00
-9
-LL Road Frame
-Research, design and development of LL Road Frame. The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.
-2001-06-01 00:00:00
-2003-06-01 00:00:00
-11
-Long-Sleeve Logo Jersey
-Research, design and development of Long-Sleeve Logo Jersey. Unisex long-sleeve AWC logo microfiber cycling jersey
-2001-06-01 00:00:00
-2003-06-01 00:00:00
-19
-Mountain-100
-Research, design and development of Mountain-100. Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.
-2001-06-01 00:00:00
-2003-06-01 00:00:00
-39
-Mountain-400
-Research, design and development of Mountain-400. Suitable for any type of off-road trip. Fits any budget.
-2001-06-01 00:00:00
-2003-06-01 00:00:00
-25
-Road-150
-Research, design and development of Road-150. This bike is ridden by race winners. Developed with the Adventure Works Cycles professional race team, it has a extremely light heat-treated aluminum frame, and steering that allows precision control.
-2001-06-01 00:00:00
-2003-06-01 00:00:00
-28
-Road-450
-Research, design and development of Road-450. A true multi-sport bike that offers streamlined riding and a revolutionary design. Aerodynamic design lets you ride with the pros, and the gearing will conquer hilly roads.
-2001-06-01 00:00:00
-2003-06-01 00:00:00
-30
-Road-650
-Research, design and development of Road-650. Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we're famous for.
-2001-06-01 00:00:00
-2003-06-01 00:00:00
-```
-[/output]
-[/test]
-[test]
-[input]
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `PK_Projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2001-06-01 00:00:00.000000', NULL),
-	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2003-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2004-06-01 00:00:00.000000', '2006-06-01 00:00:00.000000'),
-	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2005-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000');
-[/input]
-[output]
-```
-1
-Classic Vest
-Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.
-2001-06-01 00:00:00
-
-2
-Cycling Cap
-Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.
-2002-06-01 00:00:00
-2003-06-01 00:00:00
+275
+Michael
+Blythe
+G
+Sales Representative
 3
-Full-Finger Gloves
-Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.
-2003-06-01 00:00:00
-2003-06-01 00:00:00
-4
-Half-Finger Gloves
-Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.
-2004-06-01 00:00:00
-2006-06-01 00:00:00
-5
-HL Mountain Frame
-Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.
-2005-06-01 00:00:00
-2003-06-01 00:00:00
-```
-[/output]
-[/test]
-[test]
-[input]
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `PK_Projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2005-06-01 00:00:00.000000', NULL),
-	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2004-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2003-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2002-06-01 00:00:00.000000', '2006-06-01 00:00:00.000000'),
-	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000');
-[/input]
-[output]
-```
-5
-HL Mountain Frame
-Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.
-2001-06-01 00:00:00
-2003-06-01 00:00:00
-4
-Half-Finger Gloves
-Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.
-2002-06-01 00:00:00
-2006-06-01 00:00:00
+268
+2003-07-01 00:00:00
+23100.0000
+60
+276
+Linda
+Mitchell
+C
+Sales Representative
 3
-Full-Finger Gloves
-Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.
-2003-06-01 00:00:00
-2003-06-01 00:00:00
-2
-Cycling Cap
-Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.
-2004-06-01 00:00:00
-2003-06-01 00:00:00
-1
-Classic Vest
-Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.
-2005-06-01 00:00:00
-```
-[/output]
-[/test]
-[test]
-[input]
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `PK_Projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+268
+2003-07-01 00:00:00
+23100.0000
+170
+277
+Jillian
+Carson
 
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'www', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2005-06-01 00:00:00.000000', NULL),
-	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2004-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(3, 'aaa', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2005-06-01 00:00:00.000000', '2007-06-01 00:00:00.000000'),
-	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2002-06-01 00:00:00.000000', '2006-06-01 00:00:00.000000'),
-	(5, 'hhh', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2005-06-01 00:00:00.000000', '2009-06-01 00:00:00.000000');
-[/input]
-[output]
-```
-4
-Half-Finger Gloves
-Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.
-2002-06-01 00:00:00
-2006-06-01 00:00:00
-2
-Cycling Cap
-Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.
-2004-06-01 00:00:00
-2003-06-01 00:00:00
+Sales Representative
 3
-aaa
-Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.
-2005-06-01 00:00:00
-2007-06-01 00:00:00
-5
-hhh
-Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.
-2005-06-01 00:00:00
-2009-06-01 00:00:00
-1
-www
-Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.
-2005-06-01 00:00:00
-```
-[/output]
-[/test]
-[test]
-[input]
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `PK_Projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2001-06-01 00:00:00.000000', NULL),
-	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2003-06-01 00:00:00.000000', '2010-06-01 00:00:00.000000'),
-	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2004-06-01 00:00:00.000000', '2009-06-01 00:00:00.000000'),
-	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2005-06-01 00:00:00.000000', '2008-06-01 00:00:00.000000'),
-	(6, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2006-06-01 00:00:00.000000', NULL),
-	(9, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2007-06-01 00:00:00.000000', '2008-06-01 00:00:00.000000'),
-	(11, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2008-06-01 00:00:00.000000', '2009-06-01 00:00:00.000000'),
-	(13, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2009-06-01 00:00:00.000000', '2011-06-01 00:00:00.000000'),
-	(15, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2010-06-01 00:00:00.000000', '2011-06-01 00:00:00.000000'),
-	(17, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2011-06-01 00:00:00.000000', '2013-06-01 00:00:00.000000');
-[/input]
-[output]
-```
-1
-Classic Vest
-Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.
-2001-06-01 00:00:00
-
-2
-Cycling Cap
-Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.
-2002-06-01 00:00:00
-2003-06-01 00:00:00
+268
+2003-07-01 00:00:00
+23100.0000
+61
+278
+Garrett
+Vargas
+R
+Sales Representative
 3
-Full-Finger Gloves
-Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.
-2003-06-01 00:00:00
-2010-06-01 00:00:00
-4
-Half-Finger Gloves
-Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.
-2004-06-01 00:00:00
-2009-06-01 00:00:00
-5
-HL Mountain Frame
-Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.
-2005-06-01 00:00:00
-2008-06-01 00:00:00
-6
-Classic Vest
-Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.
-2006-06-01 00:00:00
-
-9
-Cycling Cap
-Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.
-2007-06-01 00:00:00
-2008-06-01 00:00:00
-11
-Full-Finger Gloves
-Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.
-2008-06-01 00:00:00
-2009-06-01 00:00:00
+268
+2003-07-01 00:00:00
+23100.0000
+52
+279
+Tsvi
+Reiter
+Michael
+Sales Representative
+3
+268
+2003-07-01 00:00:00
+23100.0000
+154
+280
+Pamela
+Ansman-Wolfe
+O
+Sales Representative
+3
+268
+2003-07-01 00:00:00
+23100.0000
+179
+281
+Shu
+Ito
+K
+Sales Representative
+3
+268
+2003-07-01 00:00:00
+23100.0000
+235
+282
+Jose
+Saraiva
+Edvaldo
+Sales Representative
+3
+268
+2003-07-01 00:00:00
+23100.0000
+178
+283
+David
+Campbell
+R
+Sales Representative
+3
+268
+2003-07-01 00:00:00
+23100.0000
 13
-Half-Finger Gloves
-Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.
-2009-06-01 00:00:00
-2011-06-01 00:00:00
-15
-HL Mountain Frame
-Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.
-2010-06-01 00:00:00
-2011-06-01 00:00:00
+285
+Jae
+Pak
+B
+Sales Representative
+3
+284
+2004-07-01 00:00:00
+23100.0000
+54
+286
+Ranjit
+Varkey Chudukatil
+R
+Sales Representative
+3
+284
+2004-07-01 00:00:00
+23100.0000
+38
+287
+Tete
+Mensa-Annan
+A
+Sales Representative
+3
+268
+2004-11-01 00:00:00
+23100.0000
+53
+289
+Rachel
+Valdez
+B
+Sales Representative
+3
+284
+2005-07-01 00:00:00
+23100.0000
+37
+290
+Lynn
+Tsoflias
+
+Sales Representative
+3
+288
+2005-07-01 00:00:00
+23100.0000
+153
+```
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `PK_Employees` (`employee_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'Guy', 'Gilbert', 'R', 'Sales Representative', 7, '1998-07-31 00:00:00', 12500.0000, 166),
+	(2, 'Kevin', 'Brown', 'F', 'Sales Representative', 4, '1999-02-26 00:00:00', 13500.0000, 102),
+	(3, 'Roberto', 'Tamburello', NULL, 'Sales Representative', 12, '1999-12-12 00:00:00', 43300.0000, 193),
+	(4, 'Rob', 'Walters', NULL, 'Sales Representative', 2, '2000-01-05 00:00:00', 29800.0000, 155),
+	(5, 'Thierry', 'D''Hers', 'B', 'Sales Representative', 2, '2000-01-11 00:00:00', 25000.0000, 40);
+[/input]
+[output]
+```
+1
+Guy
+Gilbert
+R
+Sales Representative
+7
+
+1998-07-31 00:00:00
+12500.0000
+166
+2
+Kevin
+Brown
+F
+Sales Representative
+4
+
+1999-02-26 00:00:00
+13500.0000
+102
+3
+Roberto
+Tamburello
+
+Sales Representative
+12
+
+1999-12-12 00:00:00
+43300.0000
+193
+4
+Rob
+Walters
+
+Sales Representative
+2
+
+2000-01-05 00:00:00
+29800.0000
+155
+5
+Thierry
+D'Hers
+B
+Sales Representative
+2
+
+2000-01-11 00:00:00
+25000.0000
+40
+```
+[/output]
+[/test]
+[test]
+[input]
+drop table if exists employees;
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `PK_Employees` (`employee_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
+
+
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, '1998-07-31 00:00:00.000000', 12500.0000, 166),
+	(2, 'Kevin', 'Brown', 'F', 'Sales Representative', 4, '1999-02-26 00:00:00.000000', 13500.0000, 102),
+	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
+	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, '2000-01-05 00:00:00.000000', 29800.0000, 155),
+	(5, 'Thierry', 'D''Hers', 'B', 'Sales Representative', 2, '2000-01-11 00:00:00.000000', 25000.0000, 40), 
+	(6, 'David', 'Bradley', 'M', 'Marketing Manager', 5, '2000-01-20 00:00:00.000000', 13500.0000, 199),
+	(7, 'Barry', 'Johnson', 'K', 'Sales Representative', 185, '2000-02-07 00:00:00.000000', 13500.0000, 285);
+[/input]
+[output]
+```
+2
+Kevin
+Brown
+F
+Sales Representative
+4
+
+1999-02-26 00:00:00
+13500.0000
+102
+5
+Thierry
+D'Hers
+B
+Sales Representative
+2
+
+2000-01-11 00:00:00
+25000.0000
+40
+7
+Barry
+Johnson
+K
+Sales Representative
+185
+
+2000-02-07 00:00:00
+13500.0000
+285
 ```
 [/output]
 [/test]
 [/tests]
 [/code-task]
 [/slide]
+
+
