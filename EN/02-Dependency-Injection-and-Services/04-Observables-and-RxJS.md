@@ -4,7 +4,7 @@
 
 # Functional Programming
 
-23-24-RxJS-and-Observables-and-functional-programming
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/23-24-RxJS-and-Observables-and-functional-programming-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The premise of functional programming is that functions should have **no side effects**, meaning a function only **does one thing** and does not change the state.
 
@@ -50,7 +50,7 @@ This means that we have to make **sure that the code will work** regardless of t
 
 # Function Reactive Programming
 
-26-Functional-Reactive-Programming
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/26-Functional-Reactive-Programming-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Functional Reactive Programming** is a **paradigm** for software development that integrates time flow and **compositional events** into functional programming, **which often works** with asynchronous data streams.
 
@@ -89,7 +89,7 @@ We can use observables to work with streams in Angular.
 
 # The Observable
 
-25-The-Observables
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/25-The-Observables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Observables are used to **monitor these streams** will **emit a function in one of the following cases:
 
@@ -120,7 +120,7 @@ They can be used to:
 
 # Introducing RxJS
 
-27-Introducing-RxJS
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/27-Intoducing-RxJS-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ReactiveX or RxJS stands for **R**eactive E**x**tensions for **J**ava**S**cript. 
 
@@ -159,8 +159,7 @@ import { map, filter } from 'rxjs/operators'
 
 # Observables Side Effect (Hot vs Cold)
 
-28-Observables-Side-Effect-(Hot-vs-Cold)
-29-Observable-Side-Effects
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/28-29-Observables-Side-Effect-(Hot-vs-Cold)-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Tap Operator Overview
 
@@ -228,7 +227,7 @@ To conclude, hot observables create a **data producer** first, and each **subscr
 
 # Commonly Used RxJS Operators
 
-30-Commonly-Used-RxJS-Operators
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/30-Commonly-Used-RxJS-Operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 These are some of the more commonly used operators in RxJS:
 
@@ -303,7 +302,7 @@ You can learn more about ReactiveX [here](http://reactivex.io).
 
 # RxJS and FRP Overview
 
-31-RxJS-and-FRP-Overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/31. RxJS-and-FRP-Overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Functional Reactive Programming** uses streams to handle data coming synchronously or asynchronously.
 
