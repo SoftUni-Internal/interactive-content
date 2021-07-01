@@ -4,7 +4,7 @@
 
 # What Are Pipes?
 
-js-interactive-pipes-interceptors-and-subjects-3-4-pipes-and-whar-are-pipes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-3-4-pipes-and-whar-are-pipes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pipes come from Linux/Unix systems, where you can type `|` into the command\-line and forward the output from one **command** to **another**.
 
@@ -29,7 +29,7 @@ Some of the **build-in pipes** are:
 
 # Parameterizing Pipes
 
-js-interactive-pipes-interceptors-and-subjects-5-Parameterizing-Pipes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-5-Parameterizing-Pipes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Some pipes can also accept parameters.
 
@@ -60,7 +60,7 @@ To learn about **other built-in pipes**, visit Angular's [documentation](https:/
 
 # Creating Pipes
 
-js-interactive-pipes-interceptors-and-subjects-6-7-Creating-Pipes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-6-7-Creating-Pipes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The easiest way to create a **custom pipe** is by using the Angular CLI:
 
@@ -136,7 +136,7 @@ The expected output is "750".
 
 # Async Pipe - Example
 
-js-interactive-pipes-interceptors-and-subjects-8-Async-Pipe-Example
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-8-Async-Pipe-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The async pipe is used to **run asynchronous code**.
 
@@ -158,7 +158,7 @@ notification = new Promise((resolve, reject) => {
 
 # Async Pipe - Observables
 
-js-interactive-pipes-interceptors-and-subjects-9-Async-Pipe-Observables
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-9-Async-Pipe-Observables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When working with **Observables**, `AsyncPipe` automatically **subscribes**, **unwraps data**, and **unsubscribes** when a component gets **destroyed**.
 

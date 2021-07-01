@@ -4,7 +4,7 @@
 
 # What is JWT?
 
-js-interactive-pipes-interceptors-and-subjects-10-11-JWT-and-what-is-jwt
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-10-11-JWT-and-what-is-jwt-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **JSON Web Token** (JWT) is a standard for creating a **token** used for **server authentication**, which eliminates the need for **server-side session storage**. 
 
@@ -29,7 +29,7 @@ A good **JSON API should be able to send JWTs** via headers as well as being abl
 
 # When should you use JWT?
 
-js-interactive-pipes-interceptors-and-subjects-12-When-should-you-use-JWT
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-12-When-should-you-use-JWT-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JWT is most commonly used for **authorization**, and **information exchange**:
 
@@ -61,7 +61,7 @@ They can use the same secret key to **encrypt** and **decrypt** those values as 
 
 # JWT Structure
 
-js-interactive-pipes-interceptors-and-subjects-13-JWT-Structure
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-13-JWT-Structure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A JSON Web Token consists of **three parts**, separated with **dots**:
 

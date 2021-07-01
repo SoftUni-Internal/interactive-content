@@ -4,7 +4,7 @@
 
 # What is a Subject?
 
-js-interactive-pipes-interceptors-and-subjects-27-28-Subjects-and-what-is-a-subject
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-27-28-Subjects-and-what-is-a-subject-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Observables are kind of **passive because we can not trigger the emission** of a new value manually, which might **not be optimal in some cases**.
 
@@ -29,7 +29,7 @@ That does not mean you should **always** use subjects. Use them in case you need
 
 # Subjects - Example
 
-js-interactive-pipes-interceptors-and-subjects-29-Subjects-Example
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-29-Subjects-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To **create a Subject**, first **import** the corresponding class from RxJS:
 
@@ -65,7 +65,7 @@ Observer Two: Goodbye
 
 # Behavior Subject
 
-js-interactive-pipes-interceptors-and-subjects-30-Behavior-Subject
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-30-Behavior-Subject-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `BehaviorSubject` stores the "current" value, which means that the **latest emitted value** can be always retrieved.
 
@@ -81,7 +81,7 @@ If the **second approach is used**, the BehaviorSubject will **directly emit the
 
 # Behavior Subject - Example
 
-js-interactive-pipes-interceptors-and-subjects-31-Behavrior-Subject-Example
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-31-Behavrior-Subject-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In this example, we **initialize** a `BehaviorSubject` with a value of 5:
 
@@ -120,7 +120,7 @@ Second Observer: 8
 
 # Replay Subject
 
-js-interactive-pipes-interceptors-and-subjects-32-Replay-Subject
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-32-Replay-Subject-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A `ReplaySubject` can send **old values** to **new subscribers**, similarly to a `BehaviorSubject`.
 
@@ -138,7 +138,7 @@ It receives two arguments:
 
 # Replay Subject - Example
 
-js-interactive-pipes-interceptors-and-subjects-33-Replay-Subject-Example
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-33-Replay-Subject-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The following example shows a `ReplaySubject` with a `bufferSize` of 2:
 
@@ -179,7 +179,7 @@ Observer Two: D
 
 # Async Subject
 
-js-interactive-pipes-interceptors-and-subjects-34-Async-Subject
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-34-Async-Subject-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `AsyncSubject` emits only the **last value it received** to its subscribers.
 
@@ -195,7 +195,7 @@ Just like you would with a normal `Subject`, you can still use an `AsyncSubject`
 
 # Async Subject - Example
 
-js-interactive-pipes-interceptors-and-subjects-35-Async-Subject-Example
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-35-Async-Subject-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is an example of an `AsyncSubject`:
 

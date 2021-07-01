@@ -4,7 +4,8 @@
 
 # Lesson Content
 
-js-interactive-pipes-interceptors-and-subjects-1-2-Pipes-JWT-Interceptors-and-table-of-contents
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-1-2-Pipes-JWT-Interceptors-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## In this lesson you will learn:
 
 **1. Pipes**

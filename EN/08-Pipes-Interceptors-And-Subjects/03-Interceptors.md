@@ -4,7 +4,7 @@
 
 # Interceptors Overview
 
-js-interactive-pipes-interceptors-and-subjects-14-15-HTTP-Interceptors-and-interceptors-overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-14-15-HTTP-Interceptors-and-interceptors-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **HTTP interceptors** are a feature in Angular that **provides a great way to intercept outgoing requests** or incoming responses by using `HttpClient`.
 
@@ -27,7 +27,7 @@ In **Angular 4 and newer versions**, intercepting is implemented using the `Http
 
 # Creating an HTTP Interceptor
 
-js-interactive-pipes-interceptors-and-subjects-16-Create-Http-Interceptor
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-16-Create-Http-Interceptor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The easiest way to create an interceptor is by using the **Angular CLI**:
 
@@ -70,7 +70,7 @@ We do this so we can **use** the `intercept()` method.
 
 # Intercepting Requests
 
-js-interactive-pipes-interceptors-and-subjects-17-Intecepting-Requests
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-17-Intecepting-Requests-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **All HTTP requests** go through the `intercept()` method.
 
@@ -105,7 +105,7 @@ We can then pass the **modified request** to the `next.handle` method:
 
 # Providing the Interceptor
 
-js-interactive-pipes-interceptors-and-subjects-18-Provide-the-Interceptor
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-18-Provide-the-Interceptor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Our newly created **interceptor** should be **added** to the `HTTP_INTERCEPTORS` array.
 
@@ -163,7 +163,7 @@ The `multi` property should be set to `true` if you plan to provide **more than 
 
 # Handling Responses
 
-js-interactive-pipes-interceptors-and-subjects-19-Handle-Responses
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-19-Handle-Responses-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To **handle responses**, we use the `pipe` and `tap` operators from RxJS:
 
@@ -198,7 +198,7 @@ The `tap` method is used for performing **side effects**, in this case - **savin
 
 # Handling Server Errors
 
-js-interactive-pipes-interceptors-and-subjects-20-Handle-Server-Errors
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-20-Handle-Server-Errors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `catchError` and `throwError` operators are used to **handle server errors**:
 
@@ -231,5 +231,11 @@ export class TokenInterceptor implements HttpInterceptor {
 Inside the `catchError` function body, we can **log the error** using a custom **service** and **redirect** the user to a fallback **route**.
 
 We typically **throw** an **error** in the `return` statement.
+
+[/slide]
+
+# Pipes and Interceptors: Demo
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-Pipes and Interceptors Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
