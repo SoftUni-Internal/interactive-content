@@ -178,3 +178,15 @@ We can look at it as a **parent feature module** for the content we add to an ap
 You can find more information about NgModules in the [Angular guide](https://angular.io/guide/ngmodules).
 
 [/slide]
+
+[slide hideTitle]
+
+# Feature Modules: Demo
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-creating-feature-module-demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
+" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-rendering-a-feature-module-component-template-demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
+" poster="" /]
+
+[/slide]
