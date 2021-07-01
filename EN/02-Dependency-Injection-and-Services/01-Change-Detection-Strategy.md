@@ -26,8 +26,6 @@ If our **application is very big**, delays may happen, but we can optimize that 
 
 # Change Detection Strategy
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/03-Angular_Fundamentals_Dependency_Injection_and_Services_Demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 TypeScript **enumerators** allow us to declare a set of named **constants**, or in other words, a **collection of related values** that can be either numbers or strings.
 
 To **change** the detection strategy, we use the `ChangeDetectionStrategy` enumerator:
