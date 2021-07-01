@@ -4,7 +4,7 @@
 
 # Why Do We Need Services?
 
-18-19-Services-and-why-we-need-services
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/18-19-Services-and-why-we-need-services-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 An angular app can be **divided** into several components:
 
@@ -51,7 +51,7 @@ To register it as part of the **component**, we will have to **specify** it in t
 
 # Creating a Service
 
-20-Create-a-Service
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/20-Create-a-Service-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Angular **services** look like any other TypeScript **class** that performs **data manipulation**.
 
@@ -78,7 +78,7 @@ Our simple service contains a `notify()` function, which displays an alert in th
 
 # Injecting Into Components
 
-21-Injecting-into-Components
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/21-Injecting-into-Components-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To **inject a service into a component**, we should go to the component's TypeScript file.
 
@@ -114,7 +114,7 @@ Then, we add `NotifyService` to the constructor of the `AppComponent` class as a
 
 # Injectable Decorator
 
-22-Injectable-Decorator
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/22-Injectable-Decorator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **easiest way to create** an injectable service is by using the **Angular CLI**.
 
