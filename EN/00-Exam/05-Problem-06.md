@@ -77,6 +77,31 @@ The output consists of one line:
 | win | |
 | **Finish** | |
 
+| **Input** | **Output** |
+| --- | --- | 
+| **3** | You lost the tournament! Total money raised: 84.00 |
+| darts | |
+| lose | | 
+| handball | |
+| lose | |
+| judo | |
+| win | |
+| **Finish** | |
+| snooker | | 
+| lose | |
+| swimming | |
+| lose | |
+| squash | |
+| lose | |
+| table tennis | |
+| win | |
+| **Finish** | |
+| volleyball | |
+| win | |
+| basketball | |
+| win | |
+| **Finish** | |
+
 [hints]
 [hint]
 Calculate how much money you have won for each day of the tournament. If you have more wins than loses in a day increase the earnings by 10%.

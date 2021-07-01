@@ -48,6 +48,12 @@ The price must be formatted up to **the second decimal place**.
 | Without |  |
 | 10 |  |
 
+| **Input** | **Output** |
+| --- | --- |
+| Espresso | You bought 4 cups of Espresso for 2.34 dollars. |
+| Without |  |
+| 4 |  |
+
 [hints]
 [hint]
 Calculate the total price for the drinks. Then check if there's a discount.
@@ -74,7 +80,7 @@ Without
 You bought 10 cups of Espresso for 4.39 dollars.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Espresso
 Without

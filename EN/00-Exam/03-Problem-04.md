@@ -55,6 +55,16 @@ The amount of money must be formatted up **to the second decimal place**.
 | 7 |  |
 | Party! |  |
 
+| **Input** | **Output** |
+| --- | --- |
+| 100 | Target acquired. |
+| Sidecar | Club income - 196.75 dollars. |
+| 7 |  |
+| Mojito |  |
+| 5 |  |
+| White Russian |  |
+| 10 |  |
+
 [hints]
 [hint]
 Note that the individual price of each cocktail is the length of its name. If the price for an order is an odd number, apply the discount. 

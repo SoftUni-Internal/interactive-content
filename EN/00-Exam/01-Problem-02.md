@@ -45,6 +45,13 @@ The sum must be formatted to the second digit after the decimal point.
 | 100 | |
 | 2 | |
 
+| **Input** | **Output** |
+| --- | --- |
+| 504.20 | 111.54 dollars needed. |
+| 10 | |
+| 54.20 | |
+| 20 | |
+
 [hints]
 [hint]
 Determine if there will be a discount if the Smiths are staying more than 7 days.
@@ -72,7 +79,7 @@ Check if their budget is sufficient and print the correct output.
 The Smiths will be left with 24.49 dollars after the vacation.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 504.20
 10

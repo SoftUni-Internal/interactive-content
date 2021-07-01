@@ -45,6 +45,15 @@ The result must be formatted up to **the second decimal place**.
 | 5.50 | | 
 | 4.40 | | 
 | 6.20 | | 
+
+
+| **Input** | **Output** |
+| --- | --- | --- |
+| 32 | 272.00 euro | 
+| 5 | | 
+| 2 | | 
+| 4 | | 
+
 [hints]
 [hint]
 Calculate the initial entrance fee for all the people.
@@ -73,7 +82,7 @@ Determine the final price after adding the umbrellas and sunbeds fees to the ent
 254.10 euro
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 32
 5
