@@ -2,10 +2,9 @@
 [slide hideTitle]
 # Data Definition Language (DDL)
 
-Make sure you implement the whole database correctly on your local machine so that you can work with it.
+Make sure you implement the whole database correctly on your local machine, so that you could work with it.
 
-The instructions you will be given will be the minimum required for you to implement the database.
-
+The instructions you will be given will be the minimal required for you to implement the database.
 [/slide]
 
 [slide hideTitle]
@@ -21,37 +20,45 @@ The instructions you will be given will be the minimum required for you to imple
 # Description
 You have been tasked to create the tables in the database by the following models:
 
-## Addresses
+## Users
+
+| **Column Name** |**Data Type** |**Constraints** |
+| --- | --- |--- | 
+| **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key** | 
+| **username** | A **string** containing a maximum of **30 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted, **UNIQUE** values. |
+|**password**|A **string** containing a maximum of **30 characters**. Unicode is **NOT** needed.|**NULL is NOT** permitted.|
+|**email**|A **string** containing a maximum of **50 characters**. Unicode is **NOT** needed.|**NULL is NOT** permitted.|
+|**gender**|**Exactly 1 character - M or F**|**NULL is NOT** permitted.|
+|**age**|**Integer**, from 1 to 2 147 483 647.|**NULL is NOT** permitted.|
+|**job_title**|A **string** containing a maximum of **40 characters**. Unicode is **NOT** needed.|**NULL is NOT** permitted.|
+|**ip**|A **string** containing a maximum of **30 characters**. Unicode is **NOT** needed.|**NULL is NOT** permitted.|
+
+## Аddresses
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
 | **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
-| **name** | A **string** containing a maximum of **100 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
+| **address** | A **string** containing a maximum of **30 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
+|country|A **string** containing a maximum of **30 characters**. Unicode is **NOT** needed.|**NULL is NOT** permitted.|
+|user_id|**Integer**, from **1 to 2 147 483 647**.|Relationship with table **users**. **NULL is NOT** permitted.|
 
-## Categories
-
-| **Column Name** |**Data Type** |**Constraints** |
-| --- | --- |--- | 
-| **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
-| **name** | A **string** containing a maximum of **100 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
-
-## Clients
+## Photos
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
 | **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
-| **full_name** | A **string** containing a maximum of **20 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
-| **phone_number** | A **string** containing a maximum of **20 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
+| **description** | Very big String. | **NULL is NOT** permitted. |
+| **date** | The exact date and time. | **DEFAULT value is 0.** **NULL is NOT** permitted. |
+|**views**|**Integer**, from **1 to 2 147 483 647**.|**DEFAULT value is 0.** **NULL is NOT** permitted.|
 
-## Drivers
+## Comments
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
 | **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
-| **first_name** | A **string** containing a maximum of **30 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
-| **last_name** | A **string** containing a maximum of **30 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
-| **age** | **Integer**, from **1 to 2 147 483 647**. | **NULL is NOT** permitted. |
-| **rating** | **Floating point** number. | **DEFAULT value is 5.5**, **NULL** is permitted. |
+| **comment** | A String containing a maximum of **255 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
+| **date** | The exact date and time. | **NULL is NOT** permitted. |
+| **photo_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table **photos**. **NULL is NOT** permitted. |
 
 ## Cars
 
@@ -65,34 +72,32 @@ You have been tasked to create the tables in the database by the following model
 | **condition** | **Character** that shows the **condition** of the car.  One character. | **NULL is NOT** permitted. |
 | **category_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table "**categories**". **NULL is NOT** permitted. |
 
-## Courses
+## Users_photos
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
-| **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
-| **from_address_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table "**addresses**".
-**NULL is NOT** permitted.|
-| **start** | The **date** and **time** when the course starts. | **NULL is NOT** permitted. |
-| **bill** | **DECIMAL**, up to **10 digits, 2** of which after the **decimal point**. | DEFAULT value is 10|
-| **car_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table "**cars**". **NULL is NOT** permitted.|
-| **client_id** | **Integer**, from **1 to 2 147 483 647**.  | Relationship with table "**clients**". **NULL is NOT** permitted. |
+| **user_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table **users**. **NULL is NOT** permitted. | 
+| **photo_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table **photos**. **NULL is NOT** permitted.|
 
-## Cars_drivers
+
+## Likes
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
-| **car_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table "**cars**". **NULL is NOT** permitted. | 
-| **driver_id** | **Integer**, from **1 to 2 147 483 647**.  | Relationship with table "**drivers**". **NULL is NOT** permitted. |
+| **id** | **Integer**, from **1 to 2 147 483 647**. |  **Primary Key AUTO_INCREMENT** | 
+| **photo_id** | **Integer**, from **1 to 2 147 483 647**.  | Relationship with table photos. |
+|**user_id**|**Integer**, from **1 to 2 147 483 647**.|Relationship with table **users**. |
 
-Have composite primary key from the "**car_id**" column and the "**driver_id**" column.
+Submit your solutions in Judge on the first task. 
 
-Submit **all SQL table creation statements**.
+Submit **all** SQL table creation statements.
 
 You will also be given a [data.sql]() file. 
 
-It will contain a **dataset** with data which you will need to **store** in your **local database**. 
+It will contain a **dataset** with random data which you will need to **store** in your **local database**. 
 
-This data will be given to you, so you do not have to imagine it and lose precious time in the process.
+This data will be given to you, so you do not have to imagine it and lose precious time in the process. 
+
 The data is in the form of **INSERT** statement queries.
 
 [/task-description]
@@ -105,33 +110,32 @@ WHERE TABLE_SCHEMA = DATABASE()
 ORDER BY TABLE_NAME, COLUMN_NAME;
 [/input]
 [output]
+address
+country
 id
-name
-category_id
-condition
+town
+user_id
+comment
+date
 id
-make
-mileage
-model
-year
-car_id
-driver_id
+photo_id
 id
-name
-full_name
+photo_id
+user_id
+date
+description
 id
-phone_number
-bill
-car_id
-client_id
-from_address_id
-id
-start
+views
 age
-first_name
+email
+gender
 id
-last_name
-rating
+ip
+job_title
+password
+username
+photo_id
+user_id
 [/output]
 [/test]
 [test open]
@@ -142,55 +146,52 @@ ORDER BY TABLE_NAME,COLUMN_TYPE;
 [/input]
 [output]
 int
-varchar(100)
+int
+varchar(30)
+varchar(30)
+varchar(30)
+datetime
+int
+int
+varchar(255)
+int
+int
+int
+datetime
+int
+int
+text
 char(1)
 int
 int
-int
-int
-varchar(20)
-varchar(20)
-int
-int
-int
-varchar(10)
-int
-varchar(20)
+varchar(30)
+varchar(30)
+varchar(30)
+varchar(40)
 varchar(50)
-datetime
-decimal(10,2)
 int
 int
-int
-int
-float
-int
-int
-varchar(30)
-varchar(30)
 [/output]
 [/test]
 [test open]
 [input]
 SELECT COLUMN_KEY FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_SCHEMA = DATABASE()
-AND COLUMN_NAME IN ('id','car_id','driver_id',
- 'from_address_id', 'client_id', 'category_id')
+AND COLUMN_NAME IN ('id','user_id','photo_id')
 ORDER BY TABLE_NAME, COLUMN_KEY;
 [/input]
 [output]
 PRI
+MUL
 PRI
 MUL
 PRI
-PRI
-PRI
+MUL
+MUL
 PRI
 PRI
 MUL
 MUL
-MUL
-PRI
 [/output]
 [/test]
 [test]
@@ -200,33 +201,32 @@ WHERE TABLE_SCHEMA = DATABASE()
 ORDER BY COLUMN_NAME;
 [/input]
 [output]
+address
 age
-bill
-car_id
-car_id
-category_id
-client_id
-condition
-driver_id
-first_name
-from_address_id
-full_name
+comment
+country
+date
+date
+description
+email
+gender
 id
 id
 id
 id
 id
-id
-last_name
-make
-mileage
-model
-name
-name
-phone_number
-rating
-start
-year
+ip
+job_title
+password
+photo_id
+photo_id
+photo_id
+town
+user_id
+user_id
+user_id
+username
+views
 [/output]
 [/test]
 [test]
@@ -238,8 +238,7 @@ ORDER BY COLUMN_TYPE;
 [output]
 char(1)
 datetime
-decimal(10,2)
-float
+datetime
 int
 int
 int
@@ -253,15 +252,15 @@ int
 int
 int
 int
-int
-int
-varchar(10)
-varchar(100)
-varchar(20)
-varchar(20)
-varchar(20)
+text
+varchar(255)
 varchar(30)
 varchar(30)
+varchar(30)
+varchar(30)
+varchar(30)
+varchar(30)
+varchar(40)
 varchar(50)
 [/output]
 [/test]
@@ -269,23 +268,21 @@ varchar(50)
 [input]
 SELECT COLUMN_KEY FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_SCHEMA = DATABASE()
-AND COLUMN_NAME IN ('id','car_id','driver_id',
- 'from_address_id', 'client_id', 'category_id')
-ORDER BY TABLE_NAME, COLUMN_KEY;
+AND COLUMN_NAME IN ('id','user_id','photo_id')
+ORDER BY COLUMN_KEY;
 [/input]
 [output]
 PRI
 PRI
-MUL
-PRI
-PRI
 PRI
 PRI
 PRI
 MUL
 MUL
 MUL
-PRI
+MUL
+MUL
+MUL
 [/output]
 [/test]
 [/tests]

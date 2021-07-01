@@ -1,37 +1,33 @@
-# MySQL Exam
+# MySQL Exam Preparation
 [slide hideTitle]
-# SoftUni Taxi Company
+# Insta Influencers
 
-As part of the best students in SoftUni, you are charged with the difficult task of developing an example database for another new direction of SoftUni - a taxi company. 
+You have been selected to help the most famous Insta influencers. 
 
-Since you are not so familiar with this industry you will be given a document with detailed explanations of what this database should be. 
+Thanks to your knowledge of databases, you have been selected to create the structure of a brand-new database and to fill it. 
 
-You will also receive testing data, with which you will be able to do many tests to prove that you have managed to fully cope with your task.
+Once the base is ready, you will be able to respond without any problems to any information request from the influencers based on certain criteria. 
+
+As with other databases, it is most important first to become familiar with the structure you need to build, and then fill it with given data.
 
 ## Database Overview
-You have been given an Entity / Relationship Diagram of the **SoftUni Taxi Company**:
+You have been given an Entity / Relationship Diagram of the **Insta Influencers**:
 
-[image assetsSrc="mysql_exam-1.png" /]
+[image assetsSrc="mysql_exam-prep.png" /]
 
-The **SoftUni Taxi Company** (**stc**) needs to hold information about cars, courses, drivers, clients, addresses, and categories.
-
-Your task is to create a database called **stc** (**SoftUni Taxi Company**). 
-
-Then you will have to create several **tables**:
-
-- "**cars**" - contains information about the **cars**
-   - Each car has a **make** column, a **model** column, a year column, a **mileage** column, a **condition** column and a **category** column
-- "**courses**" - contains information about the **courses**
-   - Each course has a "**from_address**" column, a **start** column, a **car** column, a **client** column and a **bill** column
-- "**drivers**" - contains information about the **drivers** 
-   - Each driver has a **first** and **last** name columns, an **age** column and a **rating** column
-- "**clients**" - contains information about the **clients**
-    - Each client has a **full name** column and a **phone number** column
-- "**addresses**" - contains information about the **addresses**
-- "**categories**" - contains information about the **categories**
-    - Contains the name of the category
-- "**cars_drivers**" - a **many** to **many mapping** tables between the **cars** and the **drivers**
-    - Have composite primary key from the "**car_id**" column and the "**driver_id**" column
-
+The **Insta Influencers** needs to hold information about "**users**", "**addresses**", "**photos**", "**comments**", "**users_photos**" and "**likes**".
+Your task is to create a database called instd (Insta Database). Then you will have to create several tables.
+- "**users**" - contains information about the users
+	- each user has an **id**, **username**, **password**, **email**, **gender**, **age**, **job_title** and **ip**
+- "**addresses**" - contains information about the addresses
+	- each address has an **id**, **address**, **town**, **country** and **user_id**
+- "**photos**" - contains information about the photos
+	- each photo has **id**, **description**, **date** and **views**
+- "**comments**" - contains information about the comments
+	- each comment has **id**, **comment**, **date** and **photo_id**
+- "**users_photos**" - a many to many mapping table between the users and the photos
+	- have composite primary key from **user_id** and **photo_id** 
+- "**likes**" - contains information about the likes
+	- each like has **id**, **photo_id** and **user_id**
 
 [/slide]

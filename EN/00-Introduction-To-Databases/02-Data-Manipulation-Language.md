@@ -4,14 +4,14 @@
 
 # Data Manipulation Language (DML)
 
-Here we need to do several manipulations in the database, like changing data, adding data, etc.
+Here we need to do several manipulations in the database, like changing data, adding data etc.
 [/slide]
 
 
 
 [slide hideTitle]
 # Problem: Insert
-[code-task title="Insert" taskId="java-db-and-MySQL-exam-table-insert" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+[code-task title="Insert" taskId="java-db-and-MySQL-exam-preparation-table-insert" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -19,957 +19,825 @@ Here we need to do several manipulations in the database, like changing data, ad
 [/code-editor]
 [code-adapter]
 ```
-CREATE TABLE `addresses` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT,
-    `name` VARCHAR(100) NOT NULL
+create table users (
+    id INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    username VARCHAR(30) NOT NULL UNIQUE,
+    password VARCHAR(30) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    gender CHAR(1) NOT NULL,
+    age INT(11) NOT NULL,
+    job_title VARCHAR(40) NOT NULL,
+    ip VARCHAR(30) NOT NULL
 );
 
-CREATE TABLE `categories` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT,
-    `name` VARCHAR(10) NOT NULL
+create table addresses (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    address VARCHAR(30) NOT NULL,
+    town VARCHAR(30) NOT NULL,
+    country VARCHAR(30) NOT NULL,
+    user_id INT(11),
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
-CREATE TABLE `clients` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT, 
-    `full_name` VARCHAR(50) NOT NULL,
-    `phone_number` VARCHAR(20) NOT NULL
+create table photos (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    description TEXT NOT NULL,
+    date DATETIME NOT NULL,
+    views INT DEFAULT 0
 );
 
-CREATE TABLE `drivers` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT,
-    `first_name` VARCHAR(30) NOT NULL,
-    `last_name` VARCHAR(30) NOT NULL,
-    `age` INT NOT NULL,
-    `rating` FLOAT DEFAULT 5.5
+create table likes (
+  id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  photo_id INT,
+  user_id INT,
+  FOREIGN KEY (photo_id) REFERENCES photos(id),
+  FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
-CREATE TABLE `cars`(
-	`id` INT PRIMARY KEY AUTO_INCREMENT,
-    `make` VARCHAR(20) NOT NULL,
-    `model` VARCHAR(20),
-    `year` INT NOT NULL,
-    `mileage` INT,
-    `condition` CHAR(1) NOT NULL, 
-    `category_id` INT NOT NULL,
-
-    CONSTRAINT fk_cars_categories 
-    FOREIGN KEY (`category_id`) REFERENCES `categories`(`id`)
-
+create table comments (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    comment VARCHAR(255) NOT NULL,
+    date DATETIME NOT NULL,
+    photo_id INT,
+    FOREIGN KEY (photo_id) REFERENCES photos(id)
 );
 
-CREATE TABLE `courses` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT, 
-    `from_address_id` INT NOT NULL,
-    `start` DATETIME NOT NULL,
-    `car_id` INT NOT NULL,
-    `client_id` INT NOT NULL,
-    `bill` DECIMAL (10,2) DEFAULT 10,
-    CONSTRAINT fk_courses_addresses_from 
-    FOREIGN KEY (`from_address_id`) REFERENCES `addresses`(`id`),
-    CONSTRAINT fk_courses_cars
-    FOREIGN KEY (`car_id`) REFERENCES `cars`(`id`),
-    CONSTRAINT fk_courses_clients
-    FOREIGN KEY (`client_id`) REFERENCES `clients`(`id`)
+create table users_photos (
+    user_id INT,
+    photo_id INT,
+    FOREIGN KEY (photo_id) REFERENCES photos(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
+insert into users (id, username, password, email, gender, age, job_title, ip) values (1, 'ygeratt0', '3rPO8dv0H', 'bjaszczak0@sitemeter.com', 'M', 71, 'Payment Adjustment Coordinator', '122.91.219.203');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (2, 'cdinesen1', 'hYFlUdgod', 'ekinforth1@wufoo.com', 'M', 11, 'Accounting Assistant IV', '247.227.234.168');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (3, 'djura2', '4BgVrIxhF2', 'jfanton2@washingtonpost.com', 'M', 68, 'Nuclear Power Engineer', '82.80.183.148');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (4, 'gjoannidi3', 'WEOjW29bH', 'dmingard3@domainmarket.com', 'M', 98, 'Engineer III', '8.5.83.122');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (5, 'hgrigoryov4', 'U9aH8s4wFns', 'mlittlekit4@cornell.edu', 'F', 4, 'Civil Engineer', '50.162.216.179');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (6, 'ftroppmann5', 'upbSORg4eaKF', 'kmedway5@weather.com', 'M', 1, 'Sales Associate', '163.36.202.248');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (7, 'wsline6', 'oeu5Gbdg0', 'bpidon6@clickbank.net', 'F', 21, 'VP Sales', '148.176.123.206');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (8, 'bvickress7', 'uof8US', 'lguildford7@github.io', 'F', 47, 'Marketing Assistant', '60.134.160.216');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (9, 'cbaythorp8', 'Wvv4a6', 'gbusby8@cmu.edu', 'M', 96, 'Operator', '191.229.117.229');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (10, 'oleckie9', 'r0yxd92hJ', 'tshippard9@dropbox.com', 'F', 77, 'Marketing Manager', '242.210.220.106');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (11, 'bgillingsa', 'kscOsFIZwN9', 'mcockshtta@hc360.com', 'F', 32, 'Sales Associate', '127.30.43.192');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (12, 'aroccob', 'BhDgNI', 'dpendrichb@hhs.gov', 'M', 77, 'Teacher', '138.207.96.207');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (13, 'mkitteringhamc', 'EymGHiRdq', 'bmillikenc@yolasite.com', 'F', 93, 'Programmer I', '2.102.135.89');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (14, 'ssantryd', 'TaaSt860lNym', 'phawksleed@va.gov', 'F', 52, 'Compensation Analyst', '62.112.67.85');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (15, 'cchadbournee', 'rn9E1VE', 'keime@sakura.ne.jp', 'M', 16, 'Senior Developer', '220.181.145.99');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (16, 'ebridatf', 'v5MjwBms', 'kgynnef@yale.edu', 'F', 98, 'Senior Financial Analyst', '110.171.38.253');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (17, 'bferenceg', '9DWf6M', 'fspontong@topsy.com', 'F', 50, 'Sales Associate', '209.13.165.58');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (18, 'jlutmanh', 'UWNMzJ', 'gyousefh@smh.com.au', 'F', 44, 'Clinical Specialist', '50.140.48.37');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (19, 'matthowei', 'RnJuNfYGY', 'sswepstonei@ifeng.com', 'F', 36, 'Internal Auditor', '236.183.33.245');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (20, 'rzywickij', 'L3RE59bc7UKT', 'mokinneallyj@google.com.au', 'M', 3, 'VP Marketing', '238.145.107.93');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (21, 'kwarbeyk', 'hJRjqLg7', 'cshirtk@census.gov', 'F', 72, 'Statistician I', '125.3.182.159');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (22, 'npaddisonl', 'PQJN1j4', 'thubanel@bing.com', 'F', 78, 'Research Associate', '172.15.110.96');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (23, 'rgreatreaxm', 'gUjBZkCsK3J', 'fsabatierm@barnesandnoble.com', 'M', 68, 'Research Nurse', '171.192.178.119');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (24, 'sknealen', 'oIDXyJd', 'mmatevosiann@wufoo.com', 'F', 4, 'Civil Engineer', '133.97.189.237');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (25, 'egurtono', 'a4mvibxK8x6K', 'csigarso@unesco.org', 'M', 71, 'Mechanical Systems Engineer', '236.250.246.104');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (26, 'ghingep', 'A7PgvgktisGD', 'dmacalessp@wordpress.com', 'M', 27, 'Geological Engineer', '200.102.183.66');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (27, 'mgethingq', 'QtqiTqO', 'jhexumq@techcrunch.com', 'M', 99, 'Software Consultant', '47.152.81.170');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (28, 'mbaxsterr', 'aZK2R53mHzzR', 'dlooneyr@linkedin.com', 'M', 93, 'Geologist IV', '209.80.102.59');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (29, 'dpauels', 'pYrcia', 'hmorhalls@tripadvisor.com', 'M', 58, 'Budget/Accounting Analyst III', '224.212.14.142');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (30, 'rmacauleyt', 'hNSexKJdW', 'aitzkint@liveinternet.ru', 'F', 40, 'Project Manager', '55.105.2.73');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (31, 'ceasonu', 'H0R3fZHg', 'sbuddingu@dedecms.com', 'F', 14, 'Computer Systems Analyst IV', '234.157.125.108');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (32, 'ichoakv', 'pVzO0J4qCkHd', 'cwaudv@prnewswire.com', 'F', 24, 'Graphic Designer', '68.224.67.251');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (33, 'htabordw', 'pQpesuiJ', 'rtwomeyw@wordpress.com', 'M', 18, 'Human Resources Assistant III', '194.95.118.38');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (34, 'prestorickx', 'ZFCo6cbFloq', 'rcrosslandx@fastcompany.com', 'M', 98, 'Design Engineer', '254.73.229.165');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (35, 'ylaimabley', 'GemK6Q', 'dfaichneyy@pinterest.com', 'M', 87, 'Recruiter', '9.96.57.246');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (36, 'chartfordz', 'KlUjNlk', 'acrakez@usatoday.com', 'M', 100, 'Web Designer IV', '204.216.76.85');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (37, 'chalgarth10', '4i7vhxzi', 'kwardesworth10@nationalgeographic.com', 'F', 34, 'Editor', '76.242.147.112');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (38, 'tduns11', 'njxK4Qg', 'jpollak11@sun.com', 'F', 61, 'General Manager', '254.69.68.200');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (39, 'lmckirdy12', 'yovJfc', 'ephilippard12@independent.co.uk', 'M', 30, 'Nuclear Power Engineer', '8.145.131.80');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (40, 'bfrichley13', 'pfcCeI7vT', 'anilles13@deviantart.com', 'M', 87, 'Help Desk Technician', '207.122.137.116');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (41, 'galchin14', 'xVO3qP9', 'jmarc14@usda.gov', 'F', 34, 'VP Sales', '21.54.65.122');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (42, 'rgurden15', 'HdSMTRgInY4', 'gmenichelli15@deviantart.com', 'M', 92, 'Civil Engineer', '25.66.13.208');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (43, 'rmcgirr16', 'vA7a5oE4DYJ4', 'ccraker16@studiopress.com', 'F', 25, 'Social Worker', '32.232.94.205');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (44, 'rdomeny17', '7Fe6yt', 'vbamforth17@bing.com', 'F', 77, 'Payment Adjustment Coordinator', '194.2.15.85');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (45, 'vlukasik18', '40zWlGSK', 'cmorshead18@mtv.com', 'M', 57, 'Accountant IV', '92.220.22.196');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (46, 'oseally19', 'uwP2utY', 'rshurmore19@geocities.jp', 'F', 77, 'Physical Therapy Assistant', '201.196.123.181');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (47, 'mhinsch1a', 'L0hzUJRFf', 'hfroggatt1a@wordpress.com', 'M', 72, 'Assistant Manager', '30.93.173.56');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (48, 'mosgood1b', 'fBALVc', 'fbattey1b@shop-pro.jp', 'M', 42, 'Tax Accountant', '2.9.107.221');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (49, 'mtansly1c', 'wF47C67c', 'ccozins1c@digg.com', 'M', 94, 'Nuclear Power Engineer', '83.145.203.194');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (50, 'mcaygill1d', '7j5UttHvB', 'lbelding1d@shinystat.com', 'F', 100, 'Office Assistant II', '222.71.252.186');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (51, 'btander1e', 'ezknvBcjIzs', 'adelue1e@cnet.com', 'F', 23, 'Research Associate', '208.112.162.223');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (52, 'koregan1f', 'un3tV7', 'ptelega1f@gravatar.com', 'F', 58, 'Compensation Analyst', '10.33.17.61');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (53, 'bkelling1g', 'CpZhojY', 'sglashby1g@desdev.cn', 'M', 49, 'Tax Accountant', '216.35.231.9');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (54, 'pcoomer1h', 'BpdKUNVBq', 'amcgahy1h@cornell.edu', 'F', 5, 'Sales Associate', '129.87.220.75');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (55, 'mvonoertzen1i', 'Ffy8msvHTa8', 'ojustun1i@mozilla.org', 'F', 40, 'Graphic Designer', '102.141.128.148');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (56, 'ndelamar1j', 'AB4RFbU8R2J', 'nflacknoe1j@apple.com', 'M', 11, 'Paralegal', '153.81.58.63');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (57, 'kbraitling1k', 'rOUewl0', 'katteridge1k@blogtalkradio.com', 'M', 41, 'Community Outreach Specialist', '170.167.138.146');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (58, 'thavoc1l', 'vxMv955Iw4Su', 'beick1l@plala.or.jp', 'F', 38, 'Pharmacist', '108.231.76.71');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (59, 'lcurtois1m', 'xD1DLJFAE', 'amurrock1m@nydailynews.com', 'F', 13, 'Project Manager', '152.1.228.136');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (60, 'jbousfield1n', '7xHZktv', 'blovart1n@lulu.com', 'F', 1, 'Media Manager IV', '181.127.73.11');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (61, 'abrameld1o', 'cm9bF1cCo7C', 'bpetrik1o@sitemeter.com', 'F', 56, 'Financial Advisor', '193.72.109.207');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (62, 'pbenes1p', '9yWEnJHr', 'istanlike1p@weebly.com', 'F', 12, 'Information Systems Manager', '97.25.153.174');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (63, 'pshellcross1q', 'C9vuYnzjP9M', 'ecurrm1q@rambler.ru', 'M', 79, 'Professor', '247.232.4.56');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (64, 'kkynoch1r', 'aJ48Y1OwP', 'ldunnet1r@devhub.com', 'F', 59, 'Media Manager IV', '173.87.190.122');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (65, 'dcrouch1s', 'Wy5GrY44vv', 'ebarck1s@gnu.org', 'M', 48, 'Senior Sales Associate', '221.189.39.91');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (66, 'ekennaway1t', 'cSfjMHzG2n', 'qdemeter1t@google.nl', 'M', 24, 'Quality Control Specialist', '123.130.49.187');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (67, 'jmauger1u', 'MGiJNeA', 'rgebbie1u@weather.com', 'F', 94, 'Compensation Analyst', '205.12.102.39');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (68, 'cmiddlemist1v', 'SCjLK36HtbEZ', 'npetrou1v@businessinsider.com', 'M', 84, 'Design Engineer', '92.23.118.154');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (69, 'moliveira1w', 'ztNbeirk', 'msoulsby1w@aboutads.info', 'F', 62, 'Research Nurse', '87.140.61.43');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (70, 'urihanek1x', 'V4ZWoTYY', 'mavison1x@imdb.com', 'F', 14, 'Sales Associate', '28.26.169.122');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (71, 'hmatonin1y', 'YjiCXwz', 'sdart1y@senate.gov', 'M', 66, 'General Manager', '132.184.167.20');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (72, 'aflexman1z', 'qoeI4nT', 'sjeannel1z@phoca.cz', 'M', 11, 'Sales Representative', '29.251.198.136');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (73, 'canscott20', 'K7wTETTV3', 'rkyngdon20@is.gd', 'F', 21, 'Electrical Engineer', '249.182.158.229');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (74, 'eblagden21', 'kANtau', 'eishak21@skyrock.com', 'M', 81, 'Associate Professor', '159.95.198.3');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (75, 'jgoody22', '3LU1ae', 'tpearson22@pbs.org', 'F', 8, 'Safety Technician IV', '225.16.97.183');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (76, 'joutright23', 'P6xHqcbdDa9p', 'jselbach23@taobao.com', 'M', 30, 'Environmental Tech', '161.97.33.126');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (77, 'vfaers24', 'e30sOBYHaZ1', 'dsauvain24@privacy.gov.au', 'F', 92, 'Sales Associate', '88.124.45.239');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (78, 'ebenoi25', 'en5iysah', 'ssheddan25@cocolog-nifty.com', 'M', 33, 'Actuary', '76.170.121.132');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (79, 'ddempster26', 'Sh72CkB9G2AO', 'zlates26@sfgate.com', 'F', 49, 'Web Designer III', '253.78.90.66');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (80, 'lizacenko27', '1yXTjx', 'dmcduffie27@multiply.com', 'M', 5, 'Librarian', '107.124.149.83');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (81, 'mbartles28', 'bIXO5oR', 'cmckeggie28@uol.com.br', 'M', 37, 'Account Representative II', '113.100.251.182');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (82, 'yzettoi29', 'ZB956UGda', 'xlancashire29@omniture.com', 'M', 62, 'Graphic Designer', '191.192.27.26');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (83, 'gciccottio2a', '1z6eAq1M3C', 'dgyer2a@cnbc.com', 'M', 65, 'Quality Control Specialist', '50.31.242.200');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (84, 'odalley2b', 'ckvXKP', 'dschrir2b@reddit.com', 'M', 96, 'Health Coach II', '38.54.250.164');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (85, 'sbarrowclough2c', 'apumztwX', 'etorbard2c@epa.gov', 'F', 21, 'Marketing Assistant', '254.148.230.146');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (86, 'ehayle2d', 'xPPoEsOnh', 'cmardell2d@goo.ne.jp', 'M', 5, 'Media Manager I', '59.30.175.162');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (87, 'efellibrand2e', '7ZA5l0lP', 'awinyard2e@reference.com', 'M', 74, 'Graphic Designer', '247.17.158.225');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (88, 'cvela2f', 'iwEiolT', 'ljackson2f@phoca.cz', 'M', 74, 'Administrative Officer', '255.20.9.183');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (89, 'agurney2g', 'j6VD5hZ2wTm', 'haikman2g@google.nl', 'M', 48, 'VP Product Management', '48.184.140.180');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (90, 'hbonelle2h', 'snT4sE8Q', 'mlyles2h@behance.net', 'M', 41, 'Assistant Professor', '181.159.73.18');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (91, 'akillelea2i', '5rUIEbpqzzC', 'mnorbury2i@sun.com', 'M', 8, 'Internal Auditor', '33.67.75.155');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (92, 'aosbourn2j', 'qxj95vBS', 'lbolley2j@is.gd', 'M', 75, 'Recruiting Manager', '202.14.140.226');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (93, 'gmintram2k', 'tOqncfhVuzG', 'atuckwood2k@hubpages.com', 'M', 4, 'Tax Accountant', '88.6.105.69');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (94, 'tszach2l', 'L16FlC', 'wzambonini2l@jiathis.com', 'M', 86, 'Geologist IV', '182.235.232.81');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (95, 'nclaye2m', '4SJbPw', 'cwennington2m@google.com.hk', 'F', 97, 'Staff Scientist', '222.104.84.31');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (96, 'bbodycombe2n', '9DKgekAUbb', 'lwoolrich2n@tuttocitta.it', 'M', 57, 'Data Coordiator', '157.3.62.40');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (97, 'godyvoy2o', 'e9VREWXB3w', 'lwakley2o@google.com.br', 'F', 11, 'Business Systems Development Analyst', '163.68.160.137');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (98, 'xbleby2p', 'YUhUbkriDWH7', 'mbuff2p@blogs.com', 'F', 69, 'Computer Systems Analyst III', '145.223.54.56');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (99, 'balbertson2q', 'dO29b9dn', 'brushton2q@jugem.jp', 'F', 84, 'Associate Professor', '77.198.52.22');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (100, 'lboultwood2r', 'aozaObAgzZY', 'lfortie2r@engadget.com', 'M', 48, 'Senior Developer', '14.159.202.220');
 
-CREATE TABLE `cars_drivers`(
-	`car_id` INT NOT NULL,
-    `driver_id` INT NOT NULL,
-	CONSTRAINT pk_cars_drivers 
-    PRIMARY KEY(`car_id`, `driver_id`),
-    CONSTRAINT fk_cars_drivers_cars 
-    FOREIGN KEY (`car_id`) REFERENCES `cars`(`id`),
-     CONSTRAINT fk_cars_drivers_drivers
-    FOREIGN KEY (`driver_id`) REFERENCES `drivers`(`id`)
-);
+insert into addresses (id, address, town, country, user_id) values (1, '97 Valley Edge Parkway', 'Divinópolis', 'Brazil', 74);
+insert into addresses (id, address, town, country, user_id) values (2, '0 Waubesa Road', 'Neundeut', 'Indonesia', 39);
+insert into addresses (id, address, town, country, user_id) values (3, '177 Blue Bill Park Center', 'Yurimaguas', 'Peru', 70);
+insert into addresses (id, address, town, country, user_id) values (4, '2604 Morrow Crossing', 'Verkh-Usugli', 'Russia', 23);
+insert into addresses (id, address, town, country, user_id) values (5, '2382 Ridgeway Park', 'Boyu', 'China', 50);
+insert into addresses (id, address, town, country, user_id) values (6, '574 Ohio Trail', 'Poitiers', 'France', 54);
+insert into addresses (id, address, town, country, user_id) values (7, '6259 Farwell Avenue', 'Huayacundo Arma', 'Peru', 73);
+insert into addresses (id, address, town, country, user_id) values (8, '929 Glacier Hill Place', 'Colmar', 'France', 63);
+insert into addresses (id, address, town, country, user_id) values (9, '1 Vahlen Avenue', 'Lambayong', 'Philippines', 65);
+insert into addresses (id, address, town, country, user_id) values (10, '47980 Westerfield Junction', 'Obollo-Afor', 'Nigeria', 89);
+insert into addresses (id, address, town, country, user_id) values (11, '9189 Novick Hill', 'La Sarrosa', 'Honduras', 71);
+insert into addresses (id, address, town, country, user_id) values (12, '15 Rusk Avenue', 'Nangan', 'Taiwan', 46);
+insert into addresses (id, address, town, country, user_id) values (13, '002 Jay Pass', 'Valmiera', 'Latvia', 8);
+insert into addresses (id, address, town, country, user_id) values (14, '64298 Parkside Circle', 'Jihuluntu Sumu', 'China', 64);
+insert into addresses (id, address, town, country, user_id) values (15, '7079 Atwood Drive', 'Volovets', 'Ukraine', 99);
+insert into addresses (id, address, town, country, user_id) values (16, '69 Talmadge Drive', 'Puerto Galera', 'Philippines', 94);
+insert into addresses (id, address, town, country, user_id) values (17, '0610 Marcy Court', 'Itapissuma', 'Brazil', 61);
+insert into addresses (id, address, town, country, user_id) values (18, '6308 Mallard Lane', 'Shibushi', 'Japan', 10);
+insert into addresses (id, address, town, country, user_id) values (19, '06 Badeau Street', 'El Cerrito', 'Colombia', 86);
+insert into addresses (id, address, town, country, user_id) values (20, '652 Saint Paul Road', 'Skien', 'Norway', 90);
+insert into addresses (id, address, town, country, user_id) values (21, '028 Browning Junction', 'San Pedro Sacatepéquez', 'Guatemala', 84);
+insert into addresses (id, address, town, country, user_id) values (22, '76801 Washington Point', 'Paris 13', 'France', 21);
+insert into addresses (id, address, town, country, user_id) values (23, '94487 Dunning Place', 'Jonava', 'Lithuania', 53);
+insert into addresses (id, address, town, country, user_id) values (24, '83 Monterey Center', 'Yangxiang', 'China', 15);
+insert into addresses (id, address, town, country, user_id) values (25, '5 Marcy Crossing', 'Reda', 'Poland', 87);
+insert into addresses (id, address, town, country, user_id) values (26, '9780 4th Center', 'Lincuo', 'China', 53);
+insert into addresses (id, address, town, country, user_id) values (27, '5875 Donald Parkway', 'Maragogipe', 'Brazil', 57);
+insert into addresses (id, address, town, country, user_id) values (28, '43 Forest Road', 'Congas', 'Peru', 47);
+insert into addresses (id, address, town, country, user_id) values (29, '564 Melvin Park', 'Svetlogorsk', 'Russia', 21);
+insert into addresses (id, address, town, country, user_id) values (30, '7 Dryden Avenue', 'Banjar Bias', 'Indonesia', 24);
+insert into addresses (id, address, town, country, user_id) values (31, '0662 Petterle Plaza', 'Hauhena', 'Indonesia', 75);
+insert into addresses (id, address, town, country, user_id) values (32, '80 Hansons Junction', 'Gorbunki', 'Russia', 28);
+insert into addresses (id, address, town, country, user_id) values (33, '45 Annamark Way', 'Bassar', 'Togo', 48);
+insert into addresses (id, address, town, country, user_id) values (34, '0 Dawn Trail', 'Itajubá', 'Brazil', 40);
+insert into addresses (id, address, town, country, user_id) values (35, '40 Hansons Crossing', 'Kitami', 'Japan', 69);
+insert into addresses (id, address, town, country, user_id) values (36, '5921 Farragut Terrace', 'Al Kittah', 'Jordan', 40);
+insert into addresses (id, address, town, country, user_id) values (37, '44746 Nobel Drive', 'Pantaibesar', 'Indonesia', 70);
+insert into addresses (id, address, town, country, user_id) values (38, '99066 Fairfield Junction', 'Xumai', 'China', 17);
+insert into addresses (id, address, town, country, user_id) values (39, '43 Colorado Plaza', 'Caohe', 'China', 29);
+insert into addresses (id, address, town, country, user_id) values (40, '518 Milwaukee Road', 'Sucre', 'Peru', 36);
+insert into addresses (id, address, town, country, user_id) values (41, '4001 Straubel Trail', 'Karangcombong', 'Indonesia', 42);
+insert into addresses (id, address, town, country, user_id) values (42, '95 American Place', 'Choco', 'Peru', 4);
+insert into addresses (id, address, town, country, user_id) values (43, '5 Manufacturers Terrace', 'Sanlifan', 'China', 63);
+insert into addresses (id, address, town, country, user_id) values (44, '8 Dapin Avenue', 'Xiaohe', 'China', 1);
+insert into addresses (id, address, town, country, user_id) values (45, '00 Merchant Terrace', 'Naukot', 'Pakistan', 63);
+insert into addresses (id, address, town, country, user_id) values (46, '98960 Fulton Hill', 'Neiva', 'Colombia', 52);
+insert into addresses (id, address, town, country, user_id) values (47, '1279 Twin Pines Terrace', 'Tumba', 'China', 78);
+insert into addresses (id, address, town, country, user_id) values (48, '77615 Mosinee Plaza', 'P’rimorsk’oe', 'Georgia', 85);
+insert into addresses (id, address, town, country, user_id) values (49, '71 Emmet Circle', 'Al Wuday‘', 'Yemen', 76);
+insert into addresses (id, address, town, country, user_id) values (50, '43457 Rowland Alley', 'Arauco', 'Chile', 96);
+insert into addresses (id, address, town, country, user_id) values (51, '16416 Pierstorff Parkway', 'Mulyorejo', 'Indonesia', 45);
+insert into addresses (id, address, town, country, user_id) values (52, '98 North Way', 'Boise', 'United States', 63);
+insert into addresses (id, address, town, country, user_id) values (53, '139 Canary Crossing', 'Pak Phanang', 'Thailand', 84);
+insert into addresses (id, address, town, country, user_id) values (54, '1737 Cody Plaza', 'Qijing', 'China', 70);
+insert into addresses (id, address, town, country, user_id) values (55, '6 Ramsey Place', 'Rawa Mazowiecka', 'Poland', 48);
+insert into addresses (id, address, town, country, user_id) values (56, '27400 Di Loreto Terrace', 'Marechal Deodoro', 'Brazil', 79);
+insert into addresses (id, address, town, country, user_id) values (57, '7991 Esch Trail', 'Bartniczka', 'Poland', 56);
+insert into addresses (id, address, town, country, user_id) values (58, '015 Goodland Circle', 'Lwówek Śląski', 'Poland', 76);
+insert into addresses (id, address, town, country, user_id) values (59, '64236 Maple Wood Junction', 'Longtou’an', 'China', 100);
+insert into addresses (id, address, town, country, user_id) values (60, '25 Saint Paul Crossing', 'Kumba', 'Cameroon', 42);
+insert into addresses (id, address, town, country, user_id) values (61, '9793 Armistice Terrace', 'Haarlem', 'Netherlands', 9);
+insert into addresses (id, address, town, country, user_id) values (62, '57 Springs Street', 'Ninomiya', 'Japan', 79);
+insert into addresses (id, address, town, country, user_id) values (63, '8 Blackbird Trail', 'Néa Róda', 'Greece', 94);
+insert into addresses (id, address, town, country, user_id) values (64, '1222 Stephen Place', 'Sembungan Kidul', 'Indonesia', 46);
+insert into addresses (id, address, town, country, user_id) values (65, '3686 Division Junction', 'Bor Ondor', 'China', 30);
+insert into addresses (id, address, town, country, user_id) values (66, '2 Ridge Oak Terrace', 'Thị Trấn Yên Cát', 'Vietnam', 6);
+insert into addresses (id, address, town, country, user_id) values (67, '9 Village Avenue', 'Criação Velha', 'Portugal', 1);
+insert into addresses (id, address, town, country, user_id) values (68, '90972 Burning Wood Junction', 'Haumeni', 'Indonesia', 78);
+insert into addresses (id, address, town, country, user_id) values (69, '73 Northland Alley', 'Domašinec', 'Croatia', 26);
+insert into addresses (id, address, town, country, user_id) values (70, '6904 Shopko Center', 'Santa Catalina', 'Venezuela', 17);
+insert into addresses (id, address, town, country, user_id) values (71, '1154 Service Park', 'Gunungkendeng', 'Indonesia', 51);
+insert into addresses (id, address, town, country, user_id) values (72, '276 Melrose Way', 'Seren Barat', 'Indonesia', 32);
+insert into addresses (id, address, town, country, user_id) values (73, '8 Ryan Lane', 'Huaqiao', 'China', 14);
+insert into addresses (id, address, town, country, user_id) values (74, '42 Menomonie Point', 'Dois Portos', 'Portugal', 22);
+insert into addresses (id, address, town, country, user_id) values (75, '99299 Fallview Hill', 'Winduraja', 'Indonesia', 93);
+insert into addresses (id, address, town, country, user_id) values (76, '13390 Dorton Pass', 'Brka', 'Bosnia and Herzegovina', 52);
+insert into addresses (id, address, town, country, user_id) values (77, '733 Holy Cross Lane', 'Kuta', 'Nigeria', 77);
+insert into addresses (id, address, town, country, user_id) values (78, '63 Mitchell Place', 'Labuhanjambu', 'Indonesia', 89);
+insert into addresses (id, address, town, country, user_id) values (79, '144 Sachs Road', 'Campina Grande do Sul', 'Brazil', 35);
+insert into addresses (id, address, town, country, user_id) values (80, '21264 Cottonwood Crossing', 'Yangjian', 'China', 91);
+insert into addresses (id, address, town, country, user_id) values (81, '0245 Macpherson Parkway', 'Gembu', 'Nigeria', 100);
+insert into addresses (id, address, town, country, user_id) values (82, '4 Sage Plaza', 'Pasirbitung', 'Indonesia', 55);
+insert into addresses (id, address, town, country, user_id) values (83, '9 Old Shore Trail', 'Daliang', 'China', 41);
+insert into addresses (id, address, town, country, user_id) values (84, '3 International Drive', 'Marseille', 'France', 67);
+insert into addresses (id, address, town, country, user_id) values (85, '8 Gerald Parkway', 'Francisco Morato', 'Brazil', 43);
+insert into addresses (id, address, town, country, user_id) values (86, '9338 Lukken Way', 'Cruz Alta', 'Brazil', 28);
+insert into addresses (id, address, town, country, user_id) values (87, '4 Fulton Road', 'Santo Amaro', 'Portugal', 96);
+insert into addresses (id, address, town, country, user_id) values (88, '9 Spenser Center', 'Sanshan', 'China', 28);
+insert into addresses (id, address, town, country, user_id) values (89, '8184 Canary Center', 'Paulínia', 'Brazil', 65);
+insert into addresses (id, address, town, country, user_id) values (90, '92 Bunting Street', 'Hengxi', 'China', 12);
+insert into addresses (id, address, town, country, user_id) values (91, '8 Pond Junction', 'Oslo', 'Norway', 1);
+insert into addresses (id, address, town, country, user_id) values (92, '6 Warrior Road', 'Cox’s Bāzār', 'Bangladesh', 85);
+insert into addresses (id, address, town, country, user_id) values (93, '28390 Mayfield Crossing', 'Henglian', 'China', 53);
+insert into addresses (id, address, town, country, user_id) values (94, '62795 Spohn Place', 'Kilkenny', 'Ireland', 70);
+insert into addresses (id, address, town, country, user_id) values (95, '95 Colorado Drive', 'Futu', 'China', 12);
+insert into addresses (id, address, town, country, user_id) values (96, '86740 East Way', 'Kairouan', 'Tunisia', 25);
+insert into addresses (id, address, town, country, user_id) values (97, '3858 Prentice Hill', 'Kayes', 'Republic of the Congo', 46);
+insert into addresses (id, address, town, country, user_id) values (98, '7 Grayhawk Trail', 'Malbork', 'Poland', 72);
+insert into addresses (id, address, town, country, user_id) values (99, '43 Sommers Street', 'Komsomol’skiy', 'Russia', 96);
+insert into addresses (id, address, town, country, user_id) values (100, '34 Nobel Point', 'Voloka', 'Ukraine', 87);
 
+insert into photos (id, description, date, views) values (1, 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-09-22 14:48:03', 0);
+insert into photos (id, description, date, views) values (2, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.Fusce consequat. Nulla nisl. Nunc nisl.', '2020-02-03 10:29:22', 0);
+insert into photos (id, description, date, views) values (3, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '2019-11-01 06:51:47', 0);
+insert into photos (id, description, date, views) values (4, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', '2019-05-16 20:59:44', 0);
+insert into photos (id, description, date, views) values (5, 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi77 eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2019-06-25 17:58:28', 0);
+insert into photos (id, description, date, views) values (6, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', '2020-02-21 20:47:40', 0);
+insert into photos (id, description, date, views) values (7, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.Sed ante. Vivamus tortor. Duis mattis egestas metus.', '2019-06-07 18:46:03', 0);
+insert into photos (id, description, date, views) values (8, 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', '2019-09-04 08:47:14', 0);
+insert into photos (id, description, date, views) values (9, 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', '2019-11-26 17:43:49', 0);
+insert into photos (id, description, date, views) values (10, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '2019-09-11 05:40:14', 0);
+insert into photos (id, description, date, views) values (11, 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', '2019-04-21 00:02:04', 0);
+insert into photos (id, description, date, views) values (12, 'In congue. Etiam justo. Etiam pretium iaculis justo.', '2019-09-29 10:11:56', 0);
+insert into photos (id, description, date, views) values (13, 'Fusce consequat. Nulla nisl. Nunc nisl.Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', '2020-02-17 04:46:39', 0);
+insert into photos (id, description, date, views) values (14, 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.Fusce consequat. Nulla nisl. Nunc nisl.', '2020-02-16 13:49:08', 0);
+insert into photos (id, description, date, views) values (15, 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2019-06-02 00:38:03', 0);
+insert into photos (id, description, date, views) values (16, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', '2019-12-11 12:31:32', 0);
+insert into photos (id, description, date, views) values (17, 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', '2020-02-02 09:14:40', 0);
+insert into photos (id, description, date, views) values (18, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', '2019-10-27 08:48:46', 0);
+insert into photos (id, description, date, views) values (19, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', '2020-02-01 07:46:42', 0);
+insert into photos (id, description, date, views) values (20, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-05-10 14:23:11', 0);
+insert into photos (id, description, date, views) values (21, 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-07-19 19:01:47', 0);
+insert into photos (id, description, date, views) values (22, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', '2019-11-24 07:45:45', 0);
+insert into photos (id, description, date, views) values (23, 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', '2019-10-13 14:13:42', 0);
+insert into photos (id, description, date, views) values (24, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', '2020-01-28 02:06:00', 0);
+insert into photos (id, description, date, views) values (25, 'In congue. Etiam justo. Etiam pretium iaculis justo.In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '2019-07-20 13:08:03', 0);
+insert into photos (id, description, date, views) values (26, 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', '2019-12-10 15:20:14', 0);
+insert into photos (id, description, date, views) values (27, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '2020-03-08 14:36:04', 0);
+insert into photos (id, description, date, views) values (28, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2019-05-23 19:11:19', 0);
+insert into photos (id, description, date, views) values (29, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '2019-04-29 00:55:07', 0);
+insert into photos (id, description, date, views) values (30, 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', '2019-08-31 11:10:56', 0);
+insert into photos (id, description, date, views) values (31, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '2019-05-06 05:45:48', 0);
+insert into photos (id, description, date, views) values (32, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', '2019-03-10 11:07:44', 0);
+insert into photos (id, description, date, views) values (33, 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', '2019-07-07 15:36:28', 0);
+insert into photos (id, description, date, views) values (34, 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', '2019-08-08 11:30:18', 0);
+insert into photos (id, description, date, views) values (35, 'Sed ante. Vivamus tortor. Duis mattis egestas metus.Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', '2020-02-08 04:53:44', 0);
+insert into photos (id, description, date, views) values (36, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-09-28 06:48:11', 0);
+insert into photos (id, description, date, views) values (37, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-06-30 14:53:38', 0);
+insert into photos (id, description, date, views) values (38, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-04-21 18:51:46', 0);
+insert into photos (id, description, date, views) values (39, 'Phasellus in felis. Donec semper sapien a libero. Nam dui.Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', '2019-10-21 17:34:48', 0);
+insert into photos (id, description, date, views) values (40, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', '2019-09-07 12:33:58', 0);
+insert into photos (id, description, date, views) values (41, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2020-02-03 00:44:25', 0);
+insert into photos (id, description, date, views) values (42, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.In congue. Etiam justo. Etiam pretium iaculis justo.', '2019-05-11 08:57:18', 0);
+insert into photos (id, description, date, views) values (43, 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', '2019-12-07 17:10:45', 0);
+insert into photos (id, description, date, views) values (44, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2019-07-12 14:13:37', 0);
+insert into photos (id, description, date, views) values (45, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2020-03-03 21:15:04', 0);
+insert into photos (id, description, date, views) values (46, 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', '2020-02-20 12:09:00', 0);
+insert into photos (id, description, date, views) values (47, 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.In congue. Etiam justo. Etiam pretium iaculis justo.', '2019-10-29 06:49:58', 0);
+insert into photos (id, description, date, views) values (48, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-07-20 22:37:34', 0);
+insert into photos (id, description, date, views) values (49, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-08-17 05:10:37', 0);
+insert into photos (id, description, date, views) values (50, 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', '2019-11-30 15:13:14', 0);
+insert into photos (id, description, date, views) values (51, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2020-02-08 11:31:47', 0);
+insert into photos (id, description, date, views) values (52, 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.Phasellus in felis. Donec semper sapien a libero. Nam dui.', '2019-11-06 00:48:48', 0);
+insert into photos (id, description, date, views) values (53, 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', '2020-03-09 01:13:10', 0);
+insert into photos (id, description, date, views) values (54, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', '2020-02-09 03:29:50', 0);
+insert into photos (id, description, date, views) values (55, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.In congue. Etiam justo. Etiam pretium iaculis justo.', '2019-10-10 08:58:52', 0);
+insert into photos (id, description, date, views) values (56, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', '2019-10-31 03:15:03', 0);
+insert into photos (id, description, date, views) values (57, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '2019-07-19 02:50:14', 0);
+insert into photos (id, description, date, views) values (58, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-05-30 12:06:27', 0);
+insert into photos (id, description, date, views) values (59, 'In congue. Etiam justo. Etiam pretium iaculis justo.In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '2019-07-22 20:32:43', 0);
+insert into photos (id, description, date, views) values (60, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2019-05-10 14:40:22', 0);
+insert into photos (id, description, date, views) values (61, 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', '2019-11-30 10:47:14', 0);
+insert into photos (id, description, date, views) values (62, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-10-17 04:14:21', 0);
+insert into photos (id, description, date, views) values (63, 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.In congue. Etiam justo. Etiam pretium iaculis justo.In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '2019-04-25 18:15:18', 0);
+insert into photos (id, description, date, views) values (64, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-04-15 19:25:07', 0);
+insert into photos (id, description, date, views) values (65, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-03-17 20:00:22', 0);
+insert into photos (id, description, date, views) values (66, 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', '2019-04-13 11:12:52', 0);
+insert into photos (id, description, date, views) values (67, 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2019-10-20 02:01:46', 0);
+insert into photos (id, description, date, views) values (68, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2019-06-20 00:45:13', 0);
+insert into photos (id, description, date, views) values (69, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', '2020-02-22 11:22:31', 0);
+insert into photos (id, description, date, views) values (70, 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', '2019-04-09 11:51:54', 0);
+insert into photos (id, description, date, views) values (71, 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', '2019-11-15 12:35:55', 0);
+insert into photos (id, description, date, views) values (72, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '2019-10-11 07:41:23', 0);
+insert into photos (id, description, date, views) values (73, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', '2019-11-29 22:35:21', 0);
+insert into photos (id, description, date, views) values (74, 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', '2019-08-22 05:42:52', 0);
+insert into photos (id, description, date, views) values (75, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', '2019-12-26 07:39:13', 0);
+insert into photos (id, description, date, views) values (76, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', '2019-10-20 20:47:48', 0);
+insert into photos (id, description, date, views) values (77, 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', '2019-10-17 07:22:26', 0);
+insert into photos (id, description, date, views) values (78, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', '2019-11-24 04:43:03', 0);
+insert into photos (id, description, date, views) values (79, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-04-20 05:44:37', 0);
+insert into photos (id, description, date, views) values (80, 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', '2019-06-24 00:14:23', 0);
+insert into photos (id, description, date, views) values (81, 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', '2019-06-11 08:05:29', 0);
+insert into photos (id, description, date, views) values (82, 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', '2019-04-17 15:53:56', 0);
+insert into photos (id, description, date, views) values (83, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', '2019-11-30 23:23:50', 0);
+insert into photos (id, description, date, views) values (84, 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2019-07-29 02:10:03', 0);
+insert into photos (id, description, date, views) values (85, 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '2020-02-23 23:55:36', 0);
+insert into photos (id, description, date, views) values (86, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '2019-07-30 19:28:29', 0);
+insert into photos (id, description, date, views) values (87, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2019-09-02 22:20:32', 0);
+insert into photos (id, description, date, views) values (88, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2020-01-23 09:43:44', 0);
+insert into photos (id, description, date, views) values (89, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', '2019-03-14 08:04:04', 0);
+insert into photos (id, description, date, views) values (90, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', '2019-11-23 13:58:33', 0);
+insert into photos (id, description, date, views) values (91, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', '2019-04-28 07:38:15', 0);
+insert into photos (id, description, date, views) values (92, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-07-05 22:20:32', 0);
+insert into photos (id, description, date, views) values (93, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2020-02-05 23:16:19', 0);
+insert into photos (id, description, date, views) values (94, 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', '2019-12-08 14:04:01', 0);
+insert into photos (id, description, date, views) values (95, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', '2019-03-23 14:59:46', 0);
+insert into photos (id, description, date, views) values (96, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', '2020-01-31 15:07:46', 0);
+insert into photos (id, description, date, views) values (97, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.Sed ante. Vivamus tortor. Duis mattis egestas metus.Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', '2019-07-09 17:14:52', 0);
+insert into photos (id, description, date, views) values (98, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-04-25 02:26:39', 0);
+insert into photos (id, description, date, views) values (99, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', '2019-07-27 12:51:46', 0);
+insert into photos (id, description, date, views) values (100, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2020-03-02 06:00:36', 0);
 
-insert into addresses (`name`) 
-values 
-('24402 Warner Place'),
-('4 La Follette Plaza'),
-('700 Monterey Avenue'),
-('93124 Comanche Way'),
-('57659 Karstens Junction'),
-('361 Caliangt Court'),
-('88941 Starling Drive'),
-('34 Briar Crest Crossing'),
-('2 Cascade Lane'),
-('40 Havey Road'),
-('67636 Tennessee Point'),
-('385 Rieder Center'),
-('32975 Hagan Street'),
-('86462 Buena Vista Point'),
-('1275 Pine View Court'),
-('4673 Colorado Road'),
-('6 Hanover Terrace'),
-('66 Thompson Drive'),
-('4 Haas Lane'),
-('8 Warner Drive'),
-('48738 Thompson Lane'),
-('0590 Lawn Hill'),
-('68 Roxbury Court'),
-('833 Kenwood Plaza'),
-('6 Sachs Way'),
-('77485 Commercial Drive'),
-('80678 Green Ridge Court'),
-('84320 Lotheville Way'),
-('2 Del Mar Park'),
-('04528 Carpenter Plaza'),
-('9590 Briar Crest Street'),
-('02335 Vernon Avenue'),
-('6638 Thompson Point'),
-('0 Mariners Cove Circle'),
-('897 Pine View Park'),
-('835 Calypso Place'),
-('904 Karstens Trail'),
-('52 Corben Pass'),
-('27803 Morningstar Avenue'),
-('214 Esker Trail'),
-('17 Huxley Pass'),
-('2061 Meadow Vale Point'),
-('02 Browning Parkway'),
-('54 3rd Pass'),
-('5 Truax Court'),
-('59402 Kim Court'),
-('59 Atwood Alley'),
-('55759 Valley Edge Pass'),
-('35 Kim Road'),
-('79 Gina Way');
+insert into comments (id, comment, date, photo_id) values (1, 'enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa', '2019-06-30 02:41:20', 4);
+insert into comments (id, comment, date, photo_id) values (2, 'et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum', '2019-10-03 22:43:29', 16);
+insert into comments (id, comment, date, photo_id) values (3, 'turpis a pede posuere nonummy integer non velit donec diam neque vestibulum', '2019-03-30 12:16:55', 88);
+insert into comments (id, comment, date, photo_id) values (4, 'gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras', '2019-10-28 09:33:28', 31);
+insert into comments (id, comment, date, photo_id) values (5, 'in eleifend quam a odio in hac habitasse platea dictumst maecenas ut', '2020-02-13 08:08:43', 68);
+insert into comments (id, comment, date, photo_id) values (6, 'libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla', '2019-07-01 16:22:13', 17);
+insert into comments (id, comment, date, photo_id) values (7, 'interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus', '2019-10-25 14:13:28', 58);
+insert into comments (id, comment, date, photo_id) values (8, 'amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus', '2020-01-08 19:36:41', 85);
+insert into comments (id, comment, date, photo_id) values (9, 'et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet', '2019-12-11 22:46:44', 33);
+insert into comments (id, comment, date, photo_id) values (10, 'fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam', '2019-10-11 22:30:14', 32);
+insert into comments (id, comment, date, photo_id) values (11, 'ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis', '2019-06-17 23:37:46', 19);
+insert into comments (id, comment, date, photo_id) values (12, 'lectus pellentesque eget nunc donec quis orci eget orci vehicula', '2019-11-17 17:25:26', 25);
+insert into comments (id, comment, date, photo_id) values (13, 'sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet', '2019-08-27 15:10:20', 72);
+insert into comments (id, comment, date, photo_id) values (14, 'posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut', '2020-02-09 01:50:14', 68);
+insert into comments (id, comment, date, photo_id) values (15, 'magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum', '2020-02-05 10:38:40', 20);
+insert into comments (id, comment, date, photo_id) values (16, 'curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor', '2019-10-14 04:55:09', 75);
+insert into comments (id, comment, date, photo_id) values (17, 'nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa', '2020-01-21 13:51:56', 87);
+insert into comments (id, comment, date, photo_id) values (18, 'morbi vestibulum velit id pretium iaculis diam erat fermentum justo', '2019-06-23 03:14:16', 32);
+insert into comments (id, comment, date, photo_id) values (19, 'amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla', '2019-06-09 22:09:57', 1);
+insert into comments (id, comment, date, photo_id) values (20, 'augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse', '2019-09-14 12:02:48', 86);
+insert into comments (id, comment, date, photo_id) values (21, 'sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus', '2019-09-08 01:08:25', 31);
+insert into comments (id, comment, date, photo_id) values (22, 'vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien', '2019-06-01 04:42:02', 86);
+insert into comments (id, comment, date, photo_id) values (23, 'eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in', '2019-06-23 09:37:03', 36);
+insert into comments (id, comment, date, photo_id) values (24, 'quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor', '2019-08-19 10:22:39', 14);
+insert into comments (id, comment, date, photo_id) values (25, 'lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis', '2019-04-28 02:29:51', 25);
+insert into comments (id, comment, date, photo_id) values (26, 'pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula', '2019-06-04 16:15:48', 6);
+insert into comments (id, comment, date, photo_id) values (27, 'platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum', '2019-05-20 17:32:37', 23);
+insert into comments (id, comment, date, photo_id) values (28, 'est congue elementum in hac habitasse platea dictumst morbi vestibulum velit', '2020-01-01 11:53:26', 41);
+insert into comments (id, comment, date, photo_id) values (29, 'enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet', '2019-09-01 11:50:53', 95);
+insert into comments (id, comment, date, photo_id) values (30, 'vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero', '2019-04-04 23:00:39', 30);
+insert into comments (id, comment, date, photo_id) values (31, 'nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit', '2019-08-20 02:09:40', 37);
+insert into comments (id, comment, date, photo_id) values (32, 'vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non', '2020-02-13 22:49:23', 51);
+insert into comments (id, comment, date, photo_id) values (33, 'in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero', '2019-11-15 14:41:35', 63);
+insert into comments (id, comment, date, photo_id) values (34, 'a ipsum integer a nibh in quis justo maecenas rhoncus', '2019-05-27 22:56:54', 94);
+insert into comments (id, comment, date, photo_id) values (35, 'nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse', '2019-08-09 16:51:20', 61);
+insert into comments (id, comment, date, photo_id) values (36, 'sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet', '2019-10-01 08:48:14', 15);
+insert into comments (id, comment, date, photo_id) values (37, 'consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer', '2019-09-21 09:55:09', 99);
+insert into comments (id, comment, date, photo_id) values (38, 'dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros', '2020-03-07 03:34:42', 39);
+insert into comments (id, comment, date, photo_id) values (39, 'est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi', '2019-04-19 10:47:36', 51);
+insert into comments (id, comment, date, photo_id) values (40, 'sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis', '2019-10-26 22:54:08', 2);
+insert into comments (id, comment, date, photo_id) values (41, 'convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum', '2019-08-24 06:59:37', 27);
+insert into comments (id, comment, date, photo_id) values (42, 'aliquam quis turpis eget elit sodales scelerisque mauris sit amet', '2020-02-18 21:43:48', 13);
+insert into comments (id, comment, date, photo_id) values (43, 'quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum', '2019-05-13 17:46:32', 84);
+insert into comments (id, comment, date, photo_id) values (44, 'elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula', '2019-12-31 12:37:20', 35);
+insert into comments (id, comment, date, photo_id) values (45, 'nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at', '2019-08-09 13:37:50', 18);
+insert into comments (id, comment, date, photo_id) values (46, 'maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi', '2019-07-14 01:05:30', 80);
+insert into comments (id, comment, date, photo_id) values (47, 'pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus', '2019-12-30 11:29:08', 36);
+insert into comments (id, comment, date, photo_id) values (48, 'purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a', '2020-03-02 11:38:38', 89);
+insert into comments (id, comment, date, photo_id) values (49, 'dolor quis odio consequat varius integer ac leo pellentesque ultrices', '2019-12-13 16:08:33', 47);
+insert into comments (id, comment, date, photo_id) values (50, 'consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris', '2019-10-24 03:52:51', 63);
+insert into comments (id, comment, date, photo_id) values (51, 'rutrum ac lobortis vel dapibus at diam nam tristique tortor', '2019-12-10 04:02:49', 48);
+insert into comments (id, comment, date, photo_id) values (52, 'sit amet turpis elementum ligula vehicula consequat morbi a ipsum', '2019-08-10 17:18:23', 11);
+insert into comments (id, comment, date, photo_id) values (53, 'rutrum nulla nunc purus phasellus in felis donec semper sapien a', '2019-04-14 16:50:46', 19);
+insert into comments (id, comment, date, photo_id) values (54, 'nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum', '2019-11-16 16:52:26', 43);
+insert into comments (id, comment, date, photo_id) values (55, 'ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo', '2020-01-24 08:44:53', 99);
+insert into comments (id, comment, date, photo_id) values (56, 'in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum', '2019-08-15 03:39:32', 100);
+insert into comments (id, comment, date, photo_id) values (57, 'proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut', '2019-03-18 02:19:14', 22);
+insert into comments (id, comment, date, photo_id) values (58, 'velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo', '2019-10-01 16:54:02', 29);
+insert into comments (id, comment, date, photo_id) values (59, 'maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat', '2020-01-08 20:47:38', 100);
+insert into comments (id, comment, date, photo_id) values (60, 'morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor', '2019-10-09 02:51:18', 91);
+insert into comments (id, comment, date, photo_id) values (61, 'amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere', '2019-11-23 12:54:40', 84);
+insert into comments (id, comment, date, photo_id) values (62, 'suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit', '2019-10-29 09:05:45', 31);
+insert into comments (id, comment, date, photo_id) values (63, 'nunc purus phasellus in felis donec semper sapien a libero nam dui', '2019-07-03 08:48:17', 74);
+insert into comments (id, comment, date, photo_id) values (64, 'amet diam in magna bibendum imperdiet nullam orci pede venenatis', '2019-07-12 13:11:48', 23);
+insert into comments (id, comment, date, photo_id) values (65, 'mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing', '2019-08-10 07:09:26', 11);
+insert into comments (id, comment, date, photo_id) values (66, 'augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet', '2019-07-26 13:31:51', 79);
+insert into comments (id, comment, date, photo_id) values (67, 'vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere', '2019-10-26 15:10:13', 94);
+insert into comments (id, comment, date, photo_id) values (68, 'rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat', '2019-04-04 14:26:33', 22);
+insert into comments (id, comment, date, photo_id) values (69, 'ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent', '2020-01-27 08:14:52', 53);
+insert into comments (id, comment, date, photo_id) values (70, 'amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum', '2019-03-14 12:13:49', 17);
+insert into comments (id, comment, date, photo_id) values (71, 'magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien', '2019-09-26 22:52:48', 26);
+insert into comments (id, comment, date, photo_id) values (72, 'iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris', '2019-09-17 18:39:23', 97);
+insert into comments (id, comment, date, photo_id) values (73, 'tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante', '2020-01-08 18:03:46', 14);
+insert into comments (id, comment, date, photo_id) values (74, 'libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas', '2019-11-09 03:19:30', 28);
+insert into comments (id, comment, date, photo_id) values (75, 'nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum', '2019-11-01 05:46:48', 40);
+insert into comments (id, comment, date, photo_id) values (76, 'in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat', '2019-04-01 15:35:44', 40);
+insert into comments (id, comment, date, photo_id) values (77, 'turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus', '2020-01-13 02:51:56', 23);
+insert into comments (id, comment, date, photo_id) values (78, 'ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget', '2019-09-23 06:54:17', 66);
+insert into comments (id, comment, date, photo_id) values (79, 'nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus', '2020-02-25 09:27:56', 17);
+insert into comments (id, comment, date, photo_id) values (80, 'pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum', '2019-12-10 19:05:30', 87);
+insert into comments (id, comment, date, photo_id) values (81, 'nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet', '2019-10-13 02:42:56', 60);
+insert into comments (id, comment, date, photo_id) values (82, 'lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci', '2020-01-09 17:16:51', 83);
+insert into comments (id, comment, date, photo_id) values (83, 'sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate', '2020-02-21 06:19:02', 6);
+insert into comments (id, comment, date, photo_id) values (84, 'at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer', '2020-02-01 20:31:43', 99);
+insert into comments (id, comment, date, photo_id) values (85, 'lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti', '2019-12-11 19:18:23', 28);
+insert into comments (id, comment, date, photo_id) values (86, 'posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar', '2019-12-15 07:01:13', 26);
+insert into comments (id, comment, date, photo_id) values (87, 'nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum', '2019-07-20 10:47:11', 3);
+insert into comments (id, comment, date, photo_id) values (88, 'lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales', '2020-02-01 19:49:30', 41);
+insert into comments (id, comment, date, photo_id) values (89, 'dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat', '2019-08-09 20:41:13', 60);
+insert into comments (id, comment, date, photo_id) values (90, 'sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam', '2019-05-08 04:44:30', 37);
+insert into comments (id, comment, date, photo_id) values (91, 'vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus', '2019-06-30 17:48:34', 5);
+insert into comments (id, comment, date, photo_id) values (92, 'venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet', '2019-07-28 18:14:25', 14);
+insert into comments (id, comment, date, photo_id) values (93, 'lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices', '2019-10-04 07:38:15', 42);
+insert into comments (id, comment, date, photo_id) values (94, 'lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti', '2019-05-13 11:51:30', 1);
+insert into comments (id, comment, date, photo_id) values (95, 'elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in', '2019-08-10 11:46:04', 100);
+insert into comments (id, comment, date, photo_id) values (96, 'amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan', '2019-06-27 06:02:35', 40);
+insert into comments (id, comment, date, photo_id) values (97, 'mi in porttitor pede justo eu massa donec dapibus duis at velit', '2020-01-12 00:42:35', 25);
+insert into comments (id, comment, date, photo_id) values (98, 'blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing', '2019-04-30 07:05:41', 25);
+insert into comments (id, comment, date, photo_id) values (99, 'morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla', '2019-12-14 21:29:01', 23);
+insert into comments (id, comment, date, photo_id) values (100, 'praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in', '2019-08-04 01:52:05', 33);
 
+insert into users_photos (user_id, photo_id) values (8, 11);
+insert into users_photos (user_id, photo_id) values (87, 8);
+insert into users_photos (user_id, photo_id) values (32, 21);
+insert into users_photos (user_id, photo_id) values (88, 43);
+insert into users_photos (user_id, photo_id) values (63, 30);
+insert into users_photos (user_id, photo_id) values (32, 23);
+insert into users_photos (user_id, photo_id) values (13, 38);
+insert into users_photos (user_id, photo_id) values (2, 93);
+insert into users_photos (user_id, photo_id) values (20, 67);
+insert into users_photos (user_id, photo_id) values (12, 12);
+insert into users_photos (user_id, photo_id) values (73, 47);
+insert into users_photos (user_id, photo_id) values (17, 25);
+insert into users_photos (user_id, photo_id) values (70, 70);
+insert into users_photos (user_id, photo_id) values (54, 54);
+insert into users_photos (user_id, photo_id) values (65, 92);
+insert into users_photos (user_id, photo_id) values (92, 99);
+insert into users_photos (user_id, photo_id) values (27, 7);
+insert into users_photos (user_id, photo_id) values (25, 2);
+insert into users_photos (user_id, photo_id) values (29, 97);
+insert into users_photos (user_id, photo_id) values (17, 80);
+insert into users_photos (user_id, photo_id) values (99, 71);
+insert into users_photos (user_id, photo_id) values (46, 61);
+insert into users_photos (user_id, photo_id) values (100, 91);
+insert into users_photos (user_id, photo_id) values (93, 96);
+insert into users_photos (user_id, photo_id) values (60, 34);
+insert into users_photos (user_id, photo_id) values (24, 88);
+insert into users_photos (user_id, photo_id) values (80, 95);
+insert into users_photos (user_id, photo_id) values (65, 27);
+insert into users_photos (user_id, photo_id) values (47, 85);
+insert into users_photos (user_id, photo_id) values (41, 52);
+insert into users_photos (user_id, photo_id) values (67, 24);
+insert into users_photos (user_id, photo_id) values (87, 58);
+insert into users_photos (user_id, photo_id) values (64, 18);
+insert into users_photos (user_id, photo_id) values (23, 83);
+insert into users_photos (user_id, photo_id) values (49, 81);
+insert into users_photos (user_id, photo_id) values (49, 87);
+insert into users_photos (user_id, photo_id) values (75, 64);
+insert into users_photos (user_id, photo_id) values (97, 75);
+insert into users_photos (user_id, photo_id) values (80, 60);
+insert into users_photos (user_id, photo_id) values (24, 33);
+insert into users_photos (user_id, photo_id) values (71, 39);
+insert into users_photos (user_id, photo_id) values (40, 62);
+insert into users_photos (user_id, photo_id) values (73, 79);
+insert into users_photos (user_id, photo_id) values (13, 90);
+insert into users_photos (user_id, photo_id) values (41, 29);
+insert into users_photos (user_id, photo_id) values (29, 31);
+insert into users_photos (user_id, photo_id) values (14, 19);
+insert into users_photos (user_id, photo_id) values (45, 4);
+insert into users_photos (user_id, photo_id) values (22, 3);
+insert into users_photos (user_id, photo_id) values (78, 6);
+insert into users_photos (user_id, photo_id) values (85, 77);
+insert into users_photos (user_id, photo_id) values (22, 28);
+insert into users_photos (user_id, photo_id) values (6, 1);
+insert into users_photos (user_id, photo_id) values (36, 40);
+insert into users_photos (user_id, photo_id) values (78, 82);
+insert into users_photos (user_id, photo_id) values (87, 50);
+insert into users_photos (user_id, photo_id) values (14, 44);
+insert into users_photos (user_id, photo_id) values (75, 32);
+insert into users_photos (user_id, photo_id) values (23, 98);
+insert into users_photos (user_id, photo_id) values (97, 76);
+insert into users_photos (user_id, photo_id) values (92, 66);
+insert into users_photos (user_id, photo_id) values (43, 26);
+insert into users_photos (user_id, photo_id) values (38, 13);
+insert into users_photos (user_id, photo_id) values (67, 65);
+insert into users_photos (user_id, photo_id) values (40, 17);
+insert into users_photos (user_id, photo_id) values (17, 20);
+insert into users_photos (user_id, photo_id) values (31, 86);
 
-insert into categories (`name`) values ('Hatchback'),
-('Coupe'),
-('Cabrio'),
-('Sedan'),
-('SUV');
-
-
-insert into clients (full_name, phone_number) values ('Kalindi Keningham', '(704) 2502909'),
-('Lois Leidl', '(933) 4279635'),
-('Casi Farens', '(933) 4275652'),
-('Janna Kellert', '(353) 9465732'),
-('Conny Barnwille', '(603) 3665240'),
-('Pierrette Dunmuir', '(259) 2916404'),
-('Jasen Yeldham', '(615) 5756557'),
-('Josi Hammelberg', '(481) 7459411'),
-('Ursulina Partner', '(794) 3735520'),
-('Meris Shale', '(842) 4350411'),
-('Colline Dann', '(698) 8299305'),
-('Joyann Garrettson', '(858) 8642667'),
-('Shane Arr', '(261) 2901780'),
-('Owen Strivens', '(807) 1053029'),
-('Moyna Bosnell', '(415) 6922926'),
-('Henrik Sivyer', '(700) 2525329'),
-('Cullan Dogerty', '(915) 9692328'),
-('Jens Aitken', '(537) 7882908'),
-('Lorilee Kryszkiecicz', '(790) 3469957'),
-('Myrta Sogg', '(526) 9403665'),
-('Craig Backe', '(529) 3516992'),
-('Jacquelynn Plackstone', '(121) 5447246'),
-('Therese Gerwood', '(398) 6493437'),
-('Jefferson Montacute', '(831) 1391236'),
-('Jameson Elgar', '(703) 1282215'),
-('Gilberte Shalders', '(370) 1870406'),
-('Siegfried Simony', '(916) 2984263'),
-('Kimball Deem', '(336) 9748036'),
-('Sascha Ruddom', '(940) 1681608'),
-('Janelle Southern', '(805) 3987551'),
-('Chaunce Taffe', '(668) 8705080'),
-('Dante Sagerson', '(973) 2192708'),
-('Carey Flannery', '(785) 9438304'),
-('Lizzie Iscowitz', '(710) 4823991'),
-('Zeke Rowston', '(928) 6001608'),
-('Adelle Kurten', '(612) 4238009'),
-('Rolland Trevna', '(203) 1783410'),
-('Gwynne Bleakley', '(214) 9879666'),
-('Darby Rothert', '(557) 6790489'),
-('Meridel Straker', '(358) 6416340'),
-('Raynor Dobbison', '(700) 1487068'),
-('Burnaby Blackater', '(387) 3392948'),
-('Yul Moseby', '(881) 8598583'),
-('Miles Scruby', '(329) 7886460'),
-('Jeanine Gerren', '(537) 1873169'),
-('Carmel Lendrem', '(745) 5215647'),
-('Allsun O'' Kelleher', '(877) 1770835'),
-('Lanita Crockatt', '(743) 9614592'),
-('Georges Lanston', '(395) 1729778'),
-('Abbey Pedri', '(404) 7308665'),
-('Micheal Newtown', '(994) 6249687'),
-('Sari Chicotti', '(765) 6287494'),
-('Gibbie Liggens', '(858) 2664934'),
-('Odele Sinncock', '(154) 6937931'),
-('Tisha Patey', '(217) 7073612'),
-('Mariele Drinkhall', '(109) 4031108'),
-('Raymund Clace', '(133) 4950964'),
-('Joshuah Duckers', '(252) 6637771'),
-('Kelcy Cody', '(381) 4339413'),
-('Kaylee Ponten', '(477) 2290344'),
-('Mady Viccary', '(380) 9161457'),
-('Mattie Hampton', '(100) 5043476'),
-('Kaylee Coushe', '(890) 6938856'),
-('Lucita Robelet', '(594) 6881660'),
-('Findley Iacoboni', '(443) 6898360'),
-('Allan Wedge', '(916) 3801366'),
-('Cordey Tremblet', '(697) 4597646'),
-('Gaye Sillars', '(828) 7835306'),
-('Pieter Curphey', '(150) 6914055'),
-('Ewen MacDearmont', '(922) 5120547'),
-('Mignon Pennell', '(145) 3388490'),
-('Alano Georgot', '(687) 9387537'),
-('Alley Couch', '(952) 2625195'),
-('Liam Offner', '(367) 8700276'),
-('Elbertina Kleinsinger', '(184) 4563380'),
-('Norean Sharpless', '(613) 5171498'),
-('Vincents Bould', '(918) 6855862'),
-('Parker McGeorge', '(826) 5332304'),
-('Gregorius May', '(519) 1982733'),
-('Bev Wrigglesworth', '(746) 4069382'),
-('Courtney Gawkes', '(872) 3681612'),
-('Courtney Matiasek', '(592) 5339110'),
-('Cori Gunda', '(377) 8637067'),
-('Mandy Scoggin', '(317) 9322808'),
-('Juan Gorry', '(919) 5716455'),
-('Randie Cridge', '(803) 6386812'),
-('Courtnay Devoy', '(560) 1656160'),
-('Haven Seaton', '(892) 2465728'),
-('Nicolai Seaborn', '(898) 4690765'),
-('Mona Crose', '(986) 7635057'),
-('Alyson Jankowski', '(841) 6231478'),
-('Jeralee Tue', '(542) 2919669'),
-('Lonny Carnachen', '(172) 6126123'),
-('Kora Nichol', '(129) 3239339'),
-('Kermy Bertot', '(992) 5466170'),
-('Stanislaus Baggallay', '(873) 4129451'),
-('Danny Simoneau', '(302) 6032370'),
-('Rubin Meaddowcroft', '(970) 9342061'),
-('Marsha Cridge', '(230) 6839868'),
-('Elysha Maydwell', '(842) 4057110');
-
-
-
-insert into drivers (first_name, last_name, age, rating) values ('Alexander', 'Jubb', 40, 3.3),
-('Cullan', 'Geram', 54, 1.5),
-('Germana', 'Emburey', 38, 9.2),
-('Janka', 'Loblie', 48, 7.5),
-('Krystal', 'Cuckson', 54, 9.0),
-('Susy', 'Borrel', 42, 3.7),
-('Saxon', 'Veldman', 43, 3.2),
-('Lenore', 'Romera', 19, 6.9),
-('Enrichetta', 'Jeremiah', 60, 4.4),
-('Delaney', 'Stove', 24, 6.9),
-('Ilaire', 'Tomaszewicz', 25, 7.8),
-('Genna', 'Jaquet', 36, 4.0),
-('Carlotta', 'Dykas', 34, 6.4),
-('Viki', 'Oneal', 57, 4.9),
-('Anthe', 'Larne', 43, 7.1),
-('Philip', 'Penwarden', 45, 3.7),
-('Cristi', 'Ravenshear', 38, 1.4),
-('Louie', 'Vogel', 44, 7.4),
-('Roddie', 'Gribben', 30, 8.0),
-('Boyce', 'Briddock', 45, 6.7),
-('Heidie', 'Blacksell', 19, 3.1),
-('Lexie', 'Salasar', 22, 9.5),
-('Harmony', 'Beincken', 46, 2.2),
-('Dick', 'Eton', 42, 8.8),
-('Philis', 'Treswell', 54, 6.8),
-('Crosby', 'Godlee', 55, 9.6),
-('Gerhard', 'Alderson', 44, 7.2),
-('Dominga', 'Cavy', 24, 3.6),
-('Judye', 'Albrooke', 28, 3.1),
-('Felice', 'Bartol', 47, 2.1),
-('Adolpho', 'Wainscot', 36, 4.7),
-('Aurilia', 'McCready', 49, 1.4),
-('Neill', 'Woof', 37, 8.5),
-('Rab', 'McDarmid', 60, 2.4),
-('Ardith', 'Kienlein', 46, 9.7),
-('Berenice', 'Liddiatt', 56, 1.6),
-('Ailina', 'Sebyer', 59, 8.7),
-('Jaynell', 'Kidson', 22, 6.2),
-('Carina', 'Vanyatin', 38, 4.3),
-('Edna', 'Heatley', 57, 7.5),
-('Hally', 'Barthelmes', 46, 8.9),
-('Leanna', 'Olensby', 40, 4.8),
-('Dell', 'Willoughey', 23, 6.3),
-('Guinevere', 'Gras', 33, 6.3),
-('Jerrie', 'Myles', 20, 1.8),
-('Francoise', 'Cusack', 52, 1.1),
-('Happy', 'Bezant', 41, 8.3),
-('Kingsly', 'Ianiello', 58, 7.1),
-('Leonhard', 'Tukely', 28, 5.1),
-('Joe', 'Waine', 20, 4.4);
-
-
-insert into cars (make, model, `year`, mileage, `condition`, category_id) 
-values 
-('Land Rover', 'Range Rover', 2021, 550259, 'A', 3),
-('GMC', 'Sierra 3500', 2012, 275538, 'A', 4),
-('Infiniti', 'IPL G', 2004, NULL, 'B', 1),
-('Pontiac', 'Grand Prix', 2020, 703642, 'C', 1),
-('Volkswagen', 'Touareg', 2016, 300933, 'B', 4),
-('Pontiac', 'Grand Prix', 2006, 676236, 'B', 5),
-('BMW', '745', 2001, 696455, 'C', 2),
-('Chevrolet', 'S10', 2015, 529397, 'C', 2),
-('Toyota', 'Yaris', 2013, 832895, 'B', 2),
-('Volkswagen', 'Passat', 2002, 62139, 'C', 1),
-('Ford', 'Crown Victoria', 2019, 892185, 'A', 5),
-('Mitsubishi', 'Diamante', 2008, 35697, 'C', 1),
-('Mercedes-Benz', 'CL-Class', 2007, 846549, 'B', 1),
-('Pontiac', 'Trans Sport', 2020, 967608, 'B', 4),
-('Chevrolet', 'Camaro', 2021, 376334, 'B', 5),
-('Nissan', 'Pathfinder', 2007, 613247, 'C', 3),
-('Ford', 'Escort', 2019, 786420, 'A', 3),
-('Infiniti', 'G35', 2004, NULL, 'A', 2),
-('Mercedes-Benz', 'CL-Class', 2015, 634834, 'B', 4),
-('Chevrolet', 'Aveo', 2015, 443680, 'C', 5),
-('Volkswagen', 'Golf', 2010, 693120, 'A', 3),
-('Hyundai', 'Tiburon', 2002, 705696, 'B', 1),
-('Maserati', 'GranTurismo', 2020, 954606, 'B', 1),
-('Chevrolet', 'Corvette', 2008, 149039, 'C', 5),
-('Isuzu', 'Rodeo Sport', 2002, 619414, 'A', 3),
-('Volkswagen', 'Jetta', 2002, 345452, 'C', 3),
-('Aston Martin', 'Vantage', 2010, 890984, 'C', 4),
-('Nissan', 'Altima', 2013, 383760, 'C', 2),
-('Mitsubishi', 'Galant', 2011, 135648, 'A', 1),
-('Suzuki', 'Daewoo Magnus', 2007, 648855, 'A', 1),
-('Mazda', 'B-Series Plus', 2007, 353195, 'B', 4),
-('Chevrolet', 'Astro', 2000, 939056, 'C', 4),
-('Pontiac', 'GTO', 2008, 197528, 'A', 3),
-('Volkswagen', 'Golf', 2004, 846697, 'C', 2),
-('Subaru', 'Forester', 2011, 115948, 'A', 1),
-('Mitsubishi', 'Pajero', 2005, 921496, 'B', 4),
-('Mitsubishi', 'Eclipse', 2020, 420053, 'B', 1),
-('Lincoln', 'Town Car', 2020, 117482, 'C', 1),
-('Kia', 'Spectra', 2002, 296475, 'A', 1),
-('Honda', 'Odyssey', 2007, 509682, 'B', 4),
-('Pontiac', 'Firebird', 2001, 502448, 'A', 1),
-('Chevrolet', 'Suburban 1500', 2004, 57014, 'B', 5),
-('Volkswagen', 'New Beetle', 2003, 499839, 'A', 2),
-('Hyundai', 'Tucson', 2004, 625603, 'C', 1),
-('Oldsmobile', 'Aurora', 2007, NULL, 'C', 3),
-('Audi', 'A4', 2019, 386826, 'B', 1),
-('GMC', 'Savana Cargo Van', 2009, 845679, 'A', 2),
-('Dodge', 'Viper', 2021, NULL, 'B', 3),
-('Porsche', 'Cayenne', 2010, 384812, 'B', 2),
-('BMW', '7 Series', 2011, 444510, 'A', 3),
-('Buick', 'LeSabre', 2013, 415144, 'B', 5),
-('GMC', 'Yukon', 2012, 598861, 'B', 2),
-('Ram', 'C/V', 2007, NULL, 'C', 4),
-('Dodge', 'Viper', 2013, 112908, 'C', 1),
-('Bentley', 'Continental', 2012, 239846, 'A', 1),
-('Jaguar', 'XJ Series', 2010, 172247, 'B', 3),
-('Mercedes-Benz', 'E-Class', 2019, 189389, 'A', 5),
-('Pontiac', 'Bonneville', 2001, 347829, 'B', 4),
-('Porsche', '911', 2013, 929285, 'C', 3),
-('Honda', 'Fit', 2007, 828960, 'C', 4),
-('Mercury', 'Cougar', 2005, 113831, 'B', 4),
-('Dodge', 'Dakota', 2002, 834870, 'C', 2),
-('Land Rover', 'LR2', 2020, 501999, 'C', 4),
-('Buick', 'Hearse', 2010, 827494, 'A', 2),
-('Subaru', 'Impreza', 2005, 720375, 'A', 1),
-('Pontiac', 'Fiero', 2005, 959778, 'B', 4),
-('Mercedes-Benz', '300SL', 2003, 101920, 'C', 4),
-('Nissan', 'Pathfinder', 2001, 257726, 'C', 2),
-('Ford', 'E250', 2006, 776506, 'C', 1),
-('Chevrolet', 'Caprice', 2010, 228425, 'C', 3),
-('Lexus', 'IS-F', 2011, 573601, 'B', 2),
-('Toyota', 'Land Cruiser', 2002, 552697, 'B', 2),
-('Honda', 'Odyssey', 2018, 834619, 'A', 3),
-('Suzuki', 'XL-7', 2008, 836605, 'C', 5),
-('Chevrolet', 'APV', 2016, 451469, 'C', 3),
-('GMC', 'Acadia', 2003, 127222, 'A', 2),
-('Lamborghini', 'Diablo', 2013, 653733, 'A', 5),
-('Chevrolet', 'Silverado 2500', 2004, 680803, 'A', 1),
-('Toyota', 'TundraMax', 2000, 649423, 'A', 2),
-('Lincoln', 'MKT', 2015, 711184, 'A', 1),
-('Chevrolet', 'Silverado 1500', 2004, 271471, 'A', 3),
-('Mitsubishi', 'Pajero', 2006, 289806, 'C', 5),
-('Acura', 'Legend', 2003, 568870, 'A', 2),
-('Mitsubishi', 'Galant', 2003, 409176, 'C', 3),
-('Saab', '9-5', 2000, 78600, 'B', 2),
-('Dodge', 'Challenger', 2012, 206143, 'C', 4),
-('Nissan', 'Altima', 2021, 359239, 'B', 4),
-('Mercedes-Benz', 'CLS-Class', 2015, 544501, 'B', 3),
-('Pontiac', 'Tempest', 2001, 890015, 'C', 3),
-('Mercedes-Benz', 'G-Class', 2017, 6482, 'A', 5),
-('Kia', 'Amanti', 2019, 910099, 'B', 1),
-('Acura', 'Integra', 2003, 767942, 'B', 1),
-('Toyota', 'Celica', 2010, 707042, 'B', 1),
-('Volkswagen', 'Routan', 2014, 47414, 'C', 4),
-('Land Rover', 'Range Rover Sport', 2016, 176967, 'A', 4),
-('Dodge', 'Viper', 2016, 405410, 'A', 4),
-('Ford', 'Escort', 2009, 470950, 'C', 5),
-('Suzuki', 'X-90', 2014, 82451, 'C', 1),
-('Ford', 'E250', 2010, 310386, 'C', 4),
-('Infiniti', 'EX', 2019, 472668, 'C', 3);
-
-insert into courses (from_address_id, `start`, car_id, client_id, bill) values (29, '2020-01-01 01:26:11', 29, 86, 46.92),
-(1, '2020-04-26 17:51:13', 80, 16, 14.47),
-(27, '2020-02-18 14:00:01', 25, 86, 44.01),
-(3, '2020-03-22 04:23:48', 92, 59, 24.24),
-(34, '2021-04-17 12:30:28', 74, 72, 45.83),
-(42, '2020-09-21 22:50:50', 1, 69, 18.23),
-(31, '2020-10-16 04:58:11', 78, 4, 21.93),
-(15, '2020-01-13 05:32:42', 100, 89, 21.56),
-(41, '2020-02-06 22:32:14', 22, 48, 40.49),
-(11, '2020-06-06 22:44:50', 63, 92, 15.56),
-(1, '2020-08-26 06:09:21', 83, 63, 29.98),
-(12, '2021-04-20 09:34:41', 93, 53, 43.27),
-(28, '2020-02-04 04:59:33', 80, 89, 32.36),
-(31, '2021-01-19 11:05:43', 13, 65, 33.05),
-(18, '2020-04-17 23:42:06', 49, 63, 37.56),
-(5, '2021-02-06 01:03:30', 37, 61, 17.6),
-(28, '2020-10-29 05:10:21', 47, 19, 30.46),
-(12, '2021-04-18 11:35:23', 5, 79, 21.54),
-(21, '2020-07-03 21:38:23', 77, 28, 11.36),
-(18, '2020-02-27 06:06:45', 4, 28, 44.72),
-(34, '2020-08-02 15:43:34', 50, 88, 30.46),
-(27, '2020-04-10 23:14:06', 33, 86, 16.99),
-(17, '2021-04-30 06:25:18', 36, 78, 30.07),
-(42, '2020-03-24 21:08:22', 6, 70, 27.03),
-(6, '2020-10-01 00:35:46', 33, 92, 47.11),
-(11, '2021-02-02 04:44:05', 55, 88, 46.57),
-(13, '2021-05-02 12:52:14', 2, 31, 31.31),
-(42, '2020-11-11 11:15:42', 44, 37, 23.86),
-(31, '2020-11-14 07:12:00', 20, 78, 32.51),
-(23, '2021-05-25 02:55:43', 45, 41, 45.97),
-(4, '2020-12-12 03:06:06', 79, 19, 26.58),
-(5, '2020-09-10 01:55:19', 75, 22, 36.22),
-(10, '2020-02-06 02:03:35', 76, 8, 17.93),
-(16, '2020-06-13 10:53:40', 82, 86, 31.57),
-(3, '2020-01-15 09:11:40', 77, 12, 38.32),
-(1, '2020-03-02 21:56:45', 38, 57, 35.42),
-(39, '2020-07-19 18:01:03', 80, 86, 15.16),
-(42, '2020-11-28 17:58:40', 91, 93, 33.81),
-(11, '2020-08-18 13:40:40', 1, 55, 14.62),
-(10, '2021-02-25 08:42:39', 66, 55, 17.27),
-(40, '2021-03-02 19:42:22', 83, 9, 25.78),
-(50, '2020-02-11 16:31:21', 62, 2, 28.72),
-(35, '2020-04-29 17:34:29', 30, 63, 43.19),
-(50, '2021-02-27 15:59:23', 14, 81, 29.01),
-(9, '2020-09-12 18:14:55', 61, 14, 36.19),
-(12, '2020-03-27 02:42:38', 39, 100, 31.39),
-(3, '2020-01-10 01:52:57', 37, 88, 36.61),
-(50, '2020-02-22 20:03:36', 15, 87, 18.93),
-(33, '2020-03-24 21:03:10', 85, 99, 31.51),
-(45, '2020-11-07 13:41:06', 99, 24, 49.12),
-(11, '2020-03-02 07:59:07', 87, 41, 20.8),
-(26, '2020-08-24 06:12:57', 67, 27, 41.56),
-(1, '2020-02-03 22:30:45', 60, 35, 23.86),
-(49, '2021-04-10 16:03:34', 70, 21, 26.44),
-(3, '2021-02-28 13:13:55', 76, 35, 27.65),
-(50, '2021-02-20 21:04:53', 96, 68, 42.21),
-(3, '2020-01-31 19:14:27', 88, 92, 18.95),
-(48, '2020-07-04 21:44:16', 48, 79, 34.77),
-(20, '2020-11-10 06:55:47', 5, 98, 27.25),
-(34, '2021-02-22 09:00:28', 8, 6, 27.65),
-(15, '2020-11-11 19:57:00', 25, 73, 45.02),
-(9, '2020-02-16 14:49:41', 13, 52, 11.68),
-(4, '2021-01-09 15:02:02', 79, 47, 47.63),
-(27, '2020-04-17 21:13:50', 65, 34, 11.59),
-(28, '2021-02-04 14:38:44', 67, 50, 23.91),
-(35, '2020-03-11 23:29:24', 61, 49, 32.71),
-(22, '2021-02-04 04:28:14', 69, 18, 49.84),
-(13, '2020-08-27 21:11:18', 13, 46, 28.17),
-(25, '2020-09-28 15:03:00', 59, 36, 42.55),
-(42, '2020-02-12 13:11:22', 52, 88, 16.01),
-(46, '2021-05-19 12:34:08', 96, 7, 28.93),
-(39, '2020-08-23 14:33:46', 97, 98, 47.43),
-(47, '2020-06-10 22:09:33', 8, 96, 14.85),
-(21, '2020-03-23 16:22:39', 44, 49, 34.18),
-(45, '2020-08-02 03:42:00', 35, 24, 12.46),
-(33, '2020-11-14 01:03:51', 98, 79, 29.14),
-(38, '2021-03-29 10:58:54', 8, 84, 27.1),
-(31, '2020-04-29 12:02:59', 14, 79, 32.12),
-(15, '2020-07-22 16:54:08', 76, 65, 31.98),
-(45, '2020-03-30 10:06:29', 79, 97, 32.38),
-(36, '2021-05-29 07:41:51', 46, 50, 19.56),
-(18, '2020-07-23 14:01:00', 43, 53, 49.88),
-(16, '2020-11-14 18:46:33', 54, 87, 15.88),
-(44, '2020-05-04 04:14:31', 64, 53, 33.49),
-(3, '2020-03-11 03:39:48', 88, 81, 10.23),
-(38, '2020-08-19 21:31:20', 61, 54, 28.19),
-(14, '2020-10-29 23:37:30', 1, 15, 11.29),
-(12, '2020-09-04 09:54:34', 80, 5, 27.57),
-(6, '2021-01-09 15:03:24', 31, 58, 34.22),
-(25, '2020-05-11 00:07:58', 94, 64, 32.56),
-(2, '2020-07-29 10:01:06', 72, 32, 45.93),
-(42, '2021-04-26 16:07:55', 87, 22, 28.14),
-(26, '2020-08-16 02:44:31', 32, 96, 44.77),
-(11, '2020-07-02 15:27:47', 13, 17, 34.89),
-(12, '2020-02-16 15:54:11', 44, 63, 24.98),
-(35, '2021-01-10 01:05:48', 37, 48, 43.63),
-(23, '2021-03-13 22:23:55', 84, 77, 21.41),
-(43, '2021-01-14 11:37:30', 87, 31, 40.24),
-(8, '2020-10-21 21:27:13', 25, 49, 14.86),
-(14, '2020-03-03 18:07:00', 64, 24, 16.06);
-
-
-insert into cars_drivers (car_id, driver_id) values (94, 4),
-(22, 33),
-(60, 26),
-(5, 12),
-(69, 41),
-(90, 37),
-(33, 24),
-(20, 49),
-(66, 10),
-(37, 35),
-(67, 42),
-(96, 6),
-(99, 5),
-(85, 2),
-(77, 37),
-(100, 2),
-(39, 10),
-(21, 36),
-(80, 39),
-(4, 11),
-(49, 9),
-(71, 50),
-(57, 16),
-(16, 31),
-(4, 14),
-(60, 25),
-(36, 1),
-(81, 38),
-(68, 41),
-(6, 50),
-(65, 39),
-(48, 20),
-(30, 18),
-(90, 27),
-(15, 30),
-(57, 33),
-(96, 19),
-(81, 26),
-(5, 22),
-(56, 45),
-(7, 18),
-(4, 48),
-(93, 7),
-(20, 8),
-(23, 17),
-(84, 3),
-(21, 40),
-(33, 8),
-(72, 7),
-(72, 37),
-(77, 43),
-(30, 4),
-(68, 38),
-(3, 3),
-(52, 32),
-(70, 30),
-(72, 21),
-(28, 9),
-(100, 3),
-(32, 36),
-(47, 13),
-(55, 38),
-(55, 18),
-(21, 24),
-(85, 29),
-(86, 22),
-(3, 11),
-(28, 49),
-(82, 42),
-(25, 36),
-(42, 28),
-(59, 20),
-(20, 3),
-(70, 21),
-(84, 7),
-(96, 26),
-(89, 47),
-(46, 19),
-(42, 7),
-(10, 9),
-(38, 15),
-(94, 14),
-(18, 4),
-(5, 38),
-(48, 2),
-(38, 20),
-(55, 23),
-(25, 33),
-(26, 37),
-(12, 35),
-(48, 26),
-(42, 27),
-(5, 19),
-(10, 7),
-(45, 47),
-(80, 29),
-(47, 48),
-(67, 47),
-(14, 40),
-(6, 18);
+insert into likes (id, user_id, photo_id) values (1, 78, 36);
+insert into likes (id, user_id, photo_id) values (2, 47, 59);
+insert into likes (id, user_id, photo_id) values (3, 9, 74);
+insert into likes (id, user_id, photo_id) values (4, 64, 15);
+insert into likes (id, user_id, photo_id) values (5, 47, 70);
+insert into likes (id, user_id, photo_id) values (6, 44, 85);
+insert into likes (id, user_id, photo_id) values (7, 35, 12);
+insert into likes (id, user_id, photo_id) values (8, 59, 61);
+insert into likes (id, user_id, photo_id) values (9, 86, 45);
+insert into likes (id, user_id, photo_id) values (10, 62, 76);
+insert into likes (id, user_id, photo_id) values (11, 52, 86);
+insert into likes (id, user_id, photo_id) values (12, 82, 69);
+insert into likes (id, user_id, photo_id) values (13, 55, 40);
+insert into likes (id, user_id, photo_id) values (14, 84, 30);
+insert into likes (id, user_id, photo_id) values (15, 4, 59);
+insert into likes (id, user_id, photo_id) values (16, 22, 37);
+insert into likes (id, user_id, photo_id) values (17, 50, 33);
+insert into likes (id, user_id, photo_id) values (18, 54, 34);
+insert into likes (id, user_id, photo_id) values (19, 15, 58);
+insert into likes (id, user_id, photo_id) values (20, 42, 52);
+insert into likes (id, user_id, photo_id) values (21, 23, 26);
+insert into likes (id, user_id, photo_id) values (22, 17, 12);
+insert into likes (id, user_id, photo_id) values (23, 66, 31);
+insert into likes (id, user_id, photo_id) values (24, 91, 69);
+insert into likes (id, user_id, photo_id) values (25, 25, 58);
+insert into likes (id, user_id, photo_id) values (26, 99, 53);
+insert into likes (id, user_id, photo_id) values (27, 84, 83);
+insert into likes (id, user_id, photo_id) values (28, 84, 4);
+insert into likes (id, user_id, photo_id) values (29, 75, 83);
+insert into likes (id, user_id, photo_id) values (30, 40, 32);
+insert into likes (id, user_id, photo_id) values (31, 74, 89);
+insert into likes (id, user_id, photo_id) values (32, 62, 97);
+insert into likes (id, user_id, photo_id) values (33, 53, 29);
+insert into likes (id, user_id, photo_id) values (34, 97, 27);
+insert into likes (id, user_id, photo_id) values (35, 60, 51);
+insert into likes (id, user_id, photo_id) values (36, 75, 8);
+insert into likes (id, user_id, photo_id) values (37, 42, 90);
+insert into likes (id, user_id, photo_id) values (38, 8, 38);
+insert into likes (id, user_id, photo_id) values (39, 33, 67);
+insert into likes (id, user_id, photo_id) values (40, 61, 41);
+insert into likes (id, user_id, photo_id) values (41, 36, 13);
+insert into likes (id, user_id, photo_id) values (42, 23, 52);
+insert into likes (id, user_id, photo_id) values (43, 84, 48);
+insert into likes (id, user_id, photo_id) values (44, 63, 17);
+insert into likes (id, user_id, photo_id) values (45, 3, 57);
+insert into likes (id, user_id, photo_id) values (46, 46, 1);
+insert into likes (id, user_id, photo_id) values (47, 89, 69);
+insert into likes (id, user_id, photo_id) values (48, 36, 34);
+insert into likes (id, user_id, photo_id) values (49, 36, 68);
+insert into likes (id, user_id, photo_id) values (50, 5, 41);
+insert into likes (id, user_id, photo_id) values (51, 90, 4);
+insert into likes (id, user_id, photo_id) values (52, 10, 1);
+insert into likes (id, user_id, photo_id) values (53, 18, 49);
+insert into likes (id, user_id, photo_id) values (54, 31, 46);
+insert into likes (id, user_id, photo_id) values (55, 60, 46);
+insert into likes (id, user_id, photo_id) values (56, 63, 16);
+insert into likes (id, user_id, photo_id) values (57, 18, 1);
+insert into likes (id, user_id, photo_id) values (58, 71, 46);
+insert into likes (id, user_id, photo_id) values (59, 65, 49);
+insert into likes (id, user_id, photo_id) values (60, 24, 61);
+insert into likes (id, user_id, photo_id) values (61, 47, 28);
+insert into likes (id, user_id, photo_id) values (62, 73, 42);
+insert into likes (id, user_id, photo_id) values (63, 80, 99);
+insert into likes (id, user_id, photo_id) values (64, 54, 79);
+insert into likes (id, user_id, photo_id) values (65, 98, 24);
+insert into likes (id, user_id, photo_id) values (66, 62, 64);
+insert into likes (id, user_id, photo_id) values (67, 22, 14);
+insert into likes (id, user_id, photo_id) values (68, 82, 30);
+insert into likes (id, user_id, photo_id) values (69, 48, 8);
+insert into likes (id, user_id, photo_id) values (70, 1, 83);
+insert into likes (id, user_id, photo_id) values (71, 95, 58);
+insert into likes (id, user_id, photo_id) values (72, 37, 15);
+insert into likes (id, user_id, photo_id) values (73, 48, 90);
+insert into likes (id, user_id, photo_id) values (74, 17, 21);
+insert into likes (id, user_id, photo_id) values (75, 8, 69);
+insert into likes (id, user_id, photo_id) values (76, 76, 61);
+insert into likes (id, user_id, photo_id) values (77, 16, 82);
+insert into likes (id, user_id, photo_id) values (78, 73, 90);
+insert into likes (id, user_id, photo_id) values (79, 50, 64);
+insert into likes (id, user_id, photo_id) values (80, 78, 98);
+insert into likes (id, user_id, photo_id) values (81, 95, 2);
+insert into likes (id, user_id, photo_id) values (82, 57, 7);
+insert into likes (id, user_id, photo_id) values (83, 1, 47);
+insert into likes (id, user_id, photo_id) values (84, 23, 72);
+insert into likes (id, user_id, photo_id) values (85, 52, 67);
+insert into likes (id, user_id, photo_id) values (86, 12, 81);
+insert into likes (id, user_id, photo_id) values (87, 15, 79);
+insert into likes (id, user_id, photo_id) values (88, 28, 1);
+insert into likes (id, user_id, photo_id) values (89, 3, 23);
+insert into likes (id, user_id, photo_id) values (90, 85, 60);
+insert into likes (id, user_id, photo_id) values (91, 31, 97);
+insert into likes (id, user_id, photo_id) values (92, 39, 58);
+insert into likes (id, user_id, photo_id) values (93, 43, 78);
+insert into likes (id, user_id, photo_id) values (94, 93, 9);
+insert into likes (id, user_id, photo_id) values (95, 65, 15);
+insert into likes (id, user_id, photo_id) values (96, 82, 66);
+insert into likes (id, user_id, photo_id) values (97, 19, 78);
+insert into likes (id, user_id, photo_id) values (98, 23, 47);
+insert into likes (id, user_id, photo_id) values (99, 27, 25);
+insert into likes (id, user_id, photo_id) values (100, 6, 48);
 ```
 [/code-adapter]
 [task-description]
 # Description
-When drivers are not working and need a taxi to transport them, they will also be registered 
-at the database as customers.
+You will have to insert records of data into the **addresses** table, based on the **users** table. 
 
-You will have to **insert** records of data into the **clients** table, based on the **drivers** table. 
+For users with **male gender**, **insert data** in the **addresses** table with the **following values**:
 
-For all **drivers** with an **id between 10** and **20 (both inclusive)**, **insert data** in the **clients** table with the **following values**:
+- "**address**" - set it to **username** of the **user**
+- "**town**" - set it to **password** of the **user**
+- "**country**" - set it to **ip** of the **user**
+- "**user_id**" - set it to **age** of the **user**
 
-- "**full_name**" - get first and last name of the driver separated by single space
-- "**phone_number**" - set it to start with **(088) 9999** and the "driver_id" multiplied by 2
-    - Example – the "phone_number" of the driver with id = 10 is (088) 999920
+
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-SELECT COUNT(id) FROM clients;
+SELECT COUNT(id) FROM addresses;
 [/input]
 [output]
-111
+154
 [/output]
 [/test]
 [test]
 [input]
-SELECT id, full_name, phone_number FROM clients
-ORDER BY id DESC;
+SELECT a.id,a.address,a.user_id FROM addresses as a
+where a.id BETWEEN 100 and 155
+ORDER BY a.id;
 [/input]
 [output]
-111
-Boyce Briddock
-(088) 999940
-110
-Roddie Gribben
-(088) 999938
-109
-Louie Vogel
-(088) 999936
-108
-Cristi Ravenshear
-(088) 999934
-107
-Philip Penwarden
-(088) 999932
-106
-Anthe Larne
-(088) 999930
-105
-Viki Oneal
-(088) 999928
-104
-Carlotta Dykas
-(088) 999926
-103
-Genna Jaquet
-(088) 999924
-102
-Ilaire Tomaszewicz
-(088) 999922
-101
-Delaney Stove
-(088) 999920
 100
-Elysha Maydwell
-(842) 4057110
-99
-Marsha Cridge
-(230) 6839868
-98
-Rubin Meaddowcroft
-(970) 9342061
-97
-Danny Simoneau
-(302) 6032370
-96
-Stanislaus Baggallay
-(873) 4129451
-95
-Kermy Bertot
-(992) 5466170
-94
-Kora Nichol
-(129) 3239339
-93
-Lonny Carnachen
-(172) 6126123
-92
-Jeralee Tue
-(542) 2919669
-91
-Alyson Jankowski
-(841) 6231478
-90
-Mona Crose
-(986) 7635057
-89
-Nicolai Seaborn
-(898) 4690765
-88
-Haven Seaton
-(892) 2465728
+34 Nobel Point
 87
-Courtnay Devoy
-(560) 1656160
-86
-Randie Cridge
-(803) 6386812
-85
-Juan Gorry
-(919) 5716455
-84
-Mandy Scoggin
-(317) 9322808
-83
-Cori Gunda
-(377) 8637067
-82
-Courtney Matiasek
-(592) 5339110
-81
-Courtney Gawkes
-(872) 3681612
-80
-Bev Wrigglesworth
-(746) 4069382
-79
-Gregorius May
-(519) 1982733
-78
-Parker McGeorge
-(826) 5332304
-77
-Vincents Bould
-(918) 6855862
-76
-Norean Sharpless
-(613) 5171498
-75
-Elbertina Kleinsinger
-(184) 4563380
-74
-Liam Offner
-(367) 8700276
-73
-Alley Couch
-(952) 2625195
-72
-Alano Georgot
-(687) 9387537
+101
+ygeratt0
 71
-Mignon Pennell
-(145) 3388490
-70
-Ewen MacDearmont
-(922) 5120547
-69
-Pieter Curphey
-(150) 6914055
-68
-Gaye Sillars
-(828) 7835306
-67
-Cordey Tremblet
-(697) 4597646
-66
-Allan Wedge
-(916) 3801366
-65
-Findley Iacoboni
-(443) 6898360
-64
-Lucita Robelet
-(594) 6881660
-63
-Kaylee Coushe
-(890) 6938856
-62
-Mattie Hampton
-(100) 5043476
-61
-Mady Viccary
-(380) 9161457
-60
-Kaylee Ponten
-(477) 2290344
-59
-Kelcy Cody
-(381) 4339413
-58
-Joshuah Duckers
-(252) 6637771
-57
-Raymund Clace
-(133) 4950964
-56
-Mariele Drinkhall
-(109) 4031108
-55
-Tisha Patey
-(217) 7073612
-54
-Odele Sinncock
-(154) 6937931
-53
-Gibbie Liggens
-(858) 2664934
-52
-Sari Chicotti
-(765) 6287494
-51
-Micheal Newtown
-(994) 6249687
-50
-Abbey Pedri
-(404) 7308665
-49
-Georges Lanston
-(395) 1729778
-48
-Lanita Crockatt
-(743) 9614592
-47
-Allsun O' Kelleher
-(877) 1770835
-46
-Carmel Lendrem
-(745) 5215647
-45
-Jeanine Gerren
-(537) 1873169
-44
-Miles Scruby
-(329) 7886460
-43
-Yul Moseby
-(881) 8598583
-42
-Burnaby Blackater
-(387) 3392948
-41
-Raynor Dobbison
-(700) 1487068
-40
-Meridel Straker
-(358) 6416340
-39
-Darby Rothert
-(557) 6790489
-38
-Gwynne Bleakley
-(214) 9879666
-37
-Rolland Trevna
-(203) 1783410
-36
-Adelle Kurten
-(612) 4238009
-35
-Zeke Rowston
-(928) 6001608
-34
-Lizzie Iscowitz
-(710) 4823991
-33
-Carey Flannery
-(785) 9438304
-32
-Dante Sagerson
-(973) 2192708
-31
-Chaunce Taffe
-(668) 8705080
-30
-Janelle Southern
-(805) 3987551
-29
-Sascha Ruddom
-(940) 1681608
-28
-Kimball Deem
-(336) 9748036
-27
-Siegfried Simony
-(916) 2984263
-26
-Gilberte Shalders
-(370) 1870406
-25
-Jameson Elgar
-(703) 1282215
-24
-Jefferson Montacute
-(831) 1391236
-23
-Therese Gerwood
-(398) 6493437
-22
-Jacquelynn Plackstone
-(121) 5447246
-21
-Craig Backe
-(529) 3516992
-20
-Myrta Sogg
-(526) 9403665
-19
-Lorilee Kryszkiecicz
-(790) 3469957
-18
-Jens Aitken
-(537) 7882908
-17
-Cullan Dogerty
-(915) 9692328
-16
-Henrik Sivyer
-(700) 2525329
-15
-Moyna Bosnell
-(415) 6922926
-14
-Owen Strivens
-(807) 1053029
-13
-Shane Arr
-(261) 2901780
-12
-Joyann Garrettson
-(858) 8642667
+102
+cdinesen1
 11
-Colline Dann
-(698) 8299305
-10
-Meris Shale
-(842) 4350411
-9
-Ursulina Partner
-(794) 3735520
-8
-Josi Hammelberg
-(481) 7459411
-7
-Jasen Yeldham
-(615) 5756557
-6
-Pierrette Dunmuir
-(259) 2916404
-5
-Conny Barnwille
-(603) 3665240
-4
-Janna Kellert
-(353) 9465732
-3
-Casi Farens
-(933) 4275652
-2
-Lois Leidl
-(933) 4279635
+103
+djura2
+68
+104
+gjoannidi3
+98
+105
+ftroppmann5
 1
-Kalindi Keningham
-(704) 2502909
+106
+cbaythorp8
+96
+107
+aroccob
+77
+108
+cchadbournee
+16
+109
+rzywickij
+3
+110
+rgreatreaxm
+68
+111
+egurtono
+71
+112
+ghingep
+27
+113
+mgethingq
+99
+114
+mbaxsterr
+93
+115
+dpauels
+58
+116
+htabordw
+18
+117
+prestorickx
+98
+118
+ylaimabley
+87
+119
+chartfordz
+100
+120
+lmckirdy12
+30
+121
+bfrichley13
+87
+122
+rgurden15
+92
+123
+vlukasik18
+57
+124
+mhinsch1a
+72
+125
+mosgood1b
+42
+126
+mtansly1c
+94
+127
+bkelling1g
+49
+128
+ndelamar1j
+11
+129
+kbraitling1k
+41
+130
+pshellcross1q
+79
+131
+dcrouch1s
+48
+132
+ekennaway1t
+24
+133
+cmiddlemist1v
+84
+134
+hmatonin1y
+66
+135
+aflexman1z
+11
+136
+eblagden21
+81
+137
+joutright23
+30
+138
+ebenoi25
+33
+139
+lizacenko27
+5
+140
+mbartles28
+37
+141
+yzettoi29
+62
+142
+gciccottio2a
+65
+143
+odalley2b
+96
+144
+ehayle2d
+5
+145
+efellibrand2e
+74
+146
+cvela2f
+74
+147
+agurney2g
+48
+148
+hbonelle2h
+41
+149
+akillelea2i
+8
+150
+aosbourn2j
+75
+151
+gmintram2k
+4
+152
+tszach2l
+86
+153
+bbodycombe2n
+57
+154
+lboultwood2r
+48
 [/output]
 [/test]
 [/tests]
@@ -979,7 +847,7 @@ Kalindi Keningham
 
 [slide hideTitle]
 # Problem: Update
-[code-task title="Insert" taskId="java-db-and-MySQL-exam-table-update" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+[code-task title="Insert" taskId="java-db-and-MySQL-exam-preparation-table-update" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -987,674 +855,706 @@ Kalindi Keningham
 [/code-editor]
 [code-adapter]
 ```
-CREATE TABLE `addresses` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT,
-    `name` VARCHAR(100) NOT NULL
+create table users (
+    id INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    username VARCHAR(30) NOT NULL UNIQUE,
+    password VARCHAR(30) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    gender CHAR(1) NOT NULL,
+    age INT(11) NOT NULL,
+    job_title VARCHAR(40) NOT NULL,
+    ip VARCHAR(30) NOT NULL
 );
 
-CREATE TABLE `categories` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT,
-    `name` VARCHAR(10) NOT NULL
+create table addresses (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    address VARCHAR(30) NOT NULL,
+    town VARCHAR(30) NOT NULL,
+    country VARCHAR(30) NOT NULL,
+    user_id INT(11),
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
-CREATE TABLE `clients` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT, 
-    `full_name` VARCHAR(50) NOT NULL,
-    `phone_number` VARCHAR(20) NOT NULL
+create table photos (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    description TEXT NOT NULL,
+    date DATETIME NOT NULL,
+    views INT DEFAULT 0
 );
 
-CREATE TABLE `drivers` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT,
-    `first_name` VARCHAR(30) NOT NULL,
-    `last_name` VARCHAR(30) NOT NULL,
-    `age` INT NOT NULL,
-    `rating` FLOAT DEFAULT 5.5
+create table likes (
+  id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  photo_id INT,
+  user_id INT,
+  FOREIGN KEY (photo_id) REFERENCES photos(id),
+  FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
-CREATE TABLE `cars`(
-	`id` INT PRIMARY KEY AUTO_INCREMENT,
-    `make` VARCHAR(20) NOT NULL,
-    `model` VARCHAR(20),
-    `year` INT NOT NULL,
-    `mileage` INT,
-    `condition` CHAR(1) NOT NULL, 
-    `category_id` INT NOT NULL,
-
-    CONSTRAINT fk_cars_categories 
-    FOREIGN KEY (`category_id`) REFERENCES `categories`(`id`)
-
+create table comments (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    comment VARCHAR(255) NOT NULL,
+    date DATETIME NOT NULL,
+    photo_id INT,
+    FOREIGN KEY (photo_id) REFERENCES photos(id)
 );
 
-CREATE TABLE `courses` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT, 
-    `from_address_id` INT NOT NULL,
-    `start` DATETIME NOT NULL,
-    `car_id` INT NOT NULL,
-    `client_id` INT NOT NULL,
-    `bill` DECIMAL (10,2) DEFAULT 10,
-    CONSTRAINT fk_courses_addresses_from 
-    FOREIGN KEY (`from_address_id`) REFERENCES `addresses`(`id`),
-    CONSTRAINT fk_courses_cars
-    FOREIGN KEY (`car_id`) REFERENCES `cars`(`id`),
-    CONSTRAINT fk_courses_clients
-    FOREIGN KEY (`client_id`) REFERENCES `clients`(`id`)
+create table users_photos (
+    user_id INT,
+    photo_id INT,
+    FOREIGN KEY (photo_id) REFERENCES photos(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
+insert into users (id, username, password, email, gender, age, job_title, ip) values (1, 'ygeratt0', '3rPO8dv0H', 'bjaszczak0@sitemeter.com', 'M', 71, 'Payment Adjustment Coordinator', '122.91.219.203');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (2, 'cdinesen1', 'hYFlUdgod', 'ekinforth1@wufoo.com', 'M', 11, 'Accounting Assistant IV', '247.227.234.168');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (3, 'djura2', '4BgVrIxhF2', 'jfanton2@washingtonpost.com', 'M', 68, 'Nuclear Power Engineer', '82.80.183.148');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (4, 'gjoannidi3', 'WEOjW29bH', 'dmingard3@domainmarket.com', 'M', 98, 'Engineer III', '8.5.83.122');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (5, 'hgrigoryov4', 'U9aH8s4wFns', 'mlittlekit4@cornell.edu', 'F', 4, 'Civil Engineer', '50.162.216.179');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (6, 'ftroppmann5', 'upbSORg4eaKF', 'kmedway5@weather.com', 'M', 1, 'Sales Associate', '163.36.202.248');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (7, 'wsline6', 'oeu5Gbdg0', 'bpidon6@clickbank.net', 'F', 21, 'VP Sales', '148.176.123.206');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (8, 'bvickress7', 'uof8US', 'lguildford7@github.io', 'F', 47, 'Marketing Assistant', '60.134.160.216');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (9, 'cbaythorp8', 'Wvv4a6', 'gbusby8@cmu.edu', 'M', 96, 'Operator', '191.229.117.229');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (10, 'oleckie9', 'r0yxd92hJ', 'tshippard9@dropbox.com', 'F', 77, 'Marketing Manager', '242.210.220.106');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (11, 'bgillingsa', 'kscOsFIZwN9', 'mcockshtta@hc360.com', 'F', 32, 'Sales Associate', '127.30.43.192');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (12, 'aroccob', 'BhDgNI', 'dpendrichb@hhs.gov', 'M', 77, 'Teacher', '138.207.96.207');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (13, 'mkitteringhamc', 'EymGHiRdq', 'bmillikenc@yolasite.com', 'F', 93, 'Programmer I', '2.102.135.89');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (14, 'ssantryd', 'TaaSt860lNym', 'phawksleed@va.gov', 'F', 52, 'Compensation Analyst', '62.112.67.85');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (15, 'cchadbournee', 'rn9E1VE', 'keime@sakura.ne.jp', 'M', 16, 'Senior Developer', '220.181.145.99');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (16, 'ebridatf', 'v5MjwBms', 'kgynnef@yale.edu', 'F', 98, 'Senior Financial Analyst', '110.171.38.253');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (17, 'bferenceg', '9DWf6M', 'fspontong@topsy.com', 'F', 50, 'Sales Associate', '209.13.165.58');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (18, 'jlutmanh', 'UWNMzJ', 'gyousefh@smh.com.au', 'F', 44, 'Clinical Specialist', '50.140.48.37');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (19, 'matthowei', 'RnJuNfYGY', 'sswepstonei@ifeng.com', 'F', 36, 'Internal Auditor', '236.183.33.245');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (20, 'rzywickij', 'L3RE59bc7UKT', 'mokinneallyj@google.com.au', 'M', 3, 'VP Marketing', '238.145.107.93');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (21, 'kwarbeyk', 'hJRjqLg7', 'cshirtk@census.gov', 'F', 72, 'Statistician I', '125.3.182.159');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (22, 'npaddisonl', 'PQJN1j4', 'thubanel@bing.com', 'F', 78, 'Research Associate', '172.15.110.96');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (23, 'rgreatreaxm', 'gUjBZkCsK3J', 'fsabatierm@barnesandnoble.com', 'M', 68, 'Research Nurse', '171.192.178.119');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (24, 'sknealen', 'oIDXyJd', 'mmatevosiann@wufoo.com', 'F', 4, 'Civil Engineer', '133.97.189.237');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (25, 'egurtono', 'a4mvibxK8x6K', 'csigarso@unesco.org', 'M', 71, 'Mechanical Systems Engineer', '236.250.246.104');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (26, 'ghingep', 'A7PgvgktisGD', 'dmacalessp@wordpress.com', 'M', 27, 'Geological Engineer', '200.102.183.66');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (27, 'mgethingq', 'QtqiTqO', 'jhexumq@techcrunch.com', 'M', 99, 'Software Consultant', '47.152.81.170');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (28, 'mbaxsterr', 'aZK2R53mHzzR', 'dlooneyr@linkedin.com', 'M', 93, 'Geologist IV', '209.80.102.59');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (29, 'dpauels', 'pYrcia', 'hmorhalls@tripadvisor.com', 'M', 58, 'Budget/Accounting Analyst III', '224.212.14.142');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (30, 'rmacauleyt', 'hNSexKJdW', 'aitzkint@liveinternet.ru', 'F', 40, 'Project Manager', '55.105.2.73');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (31, 'ceasonu', 'H0R3fZHg', 'sbuddingu@dedecms.com', 'F', 14, 'Computer Systems Analyst IV', '234.157.125.108');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (32, 'ichoakv', 'pVzO0J4qCkHd', 'cwaudv@prnewswire.com', 'F', 24, 'Graphic Designer', '68.224.67.251');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (33, 'htabordw', 'pQpesuiJ', 'rtwomeyw@wordpress.com', 'M', 18, 'Human Resources Assistant III', '194.95.118.38');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (34, 'prestorickx', 'ZFCo6cbFloq', 'rcrosslandx@fastcompany.com', 'M', 98, 'Design Engineer', '254.73.229.165');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (35, 'ylaimabley', 'GemK6Q', 'dfaichneyy@pinterest.com', 'M', 87, 'Recruiter', '9.96.57.246');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (36, 'chartfordz', 'KlUjNlk', 'acrakez@usatoday.com', 'M', 100, 'Web Designer IV', '204.216.76.85');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (37, 'chalgarth10', '4i7vhxzi', 'kwardesworth10@nationalgeographic.com', 'F', 34, 'Editor', '76.242.147.112');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (38, 'tduns11', 'njxK4Qg', 'jpollak11@sun.com', 'F', 61, 'General Manager', '254.69.68.200');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (39, 'lmckirdy12', 'yovJfc', 'ephilippard12@independent.co.uk', 'M', 30, 'Nuclear Power Engineer', '8.145.131.80');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (40, 'bfrichley13', 'pfcCeI7vT', 'anilles13@deviantart.com', 'M', 87, 'Help Desk Technician', '207.122.137.116');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (41, 'galchin14', 'xVO3qP9', 'jmarc14@usda.gov', 'F', 34, 'VP Sales', '21.54.65.122');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (42, 'rgurden15', 'HdSMTRgInY4', 'gmenichelli15@deviantart.com', 'M', 92, 'Civil Engineer', '25.66.13.208');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (43, 'rmcgirr16', 'vA7a5oE4DYJ4', 'ccraker16@studiopress.com', 'F', 25, 'Social Worker', '32.232.94.205');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (44, 'rdomeny17', '7Fe6yt', 'vbamforth17@bing.com', 'F', 77, 'Payment Adjustment Coordinator', '194.2.15.85');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (45, 'vlukasik18', '40zWlGSK', 'cmorshead18@mtv.com', 'M', 57, 'Accountant IV', '92.220.22.196');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (46, 'oseally19', 'uwP2utY', 'rshurmore19@geocities.jp', 'F', 77, 'Physical Therapy Assistant', '201.196.123.181');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (47, 'mhinsch1a', 'L0hzUJRFf', 'hfroggatt1a@wordpress.com', 'M', 72, 'Assistant Manager', '30.93.173.56');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (48, 'mosgood1b', 'fBALVc', 'fbattey1b@shop-pro.jp', 'M', 42, 'Tax Accountant', '2.9.107.221');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (49, 'mtansly1c', 'wF47C67c', 'ccozins1c@digg.com', 'M', 94, 'Nuclear Power Engineer', '83.145.203.194');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (50, 'mcaygill1d', '7j5UttHvB', 'lbelding1d@shinystat.com', 'F', 100, 'Office Assistant II', '222.71.252.186');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (51, 'btander1e', 'ezknvBcjIzs', 'adelue1e@cnet.com', 'F', 23, 'Research Associate', '208.112.162.223');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (52, 'koregan1f', 'un3tV7', 'ptelega1f@gravatar.com', 'F', 58, 'Compensation Analyst', '10.33.17.61');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (53, 'bkelling1g', 'CpZhojY', 'sglashby1g@desdev.cn', 'M', 49, 'Tax Accountant', '216.35.231.9');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (54, 'pcoomer1h', 'BpdKUNVBq', 'amcgahy1h@cornell.edu', 'F', 5, 'Sales Associate', '129.87.220.75');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (55, 'mvonoertzen1i', 'Ffy8msvHTa8', 'ojustun1i@mozilla.org', 'F', 40, 'Graphic Designer', '102.141.128.148');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (56, 'ndelamar1j', 'AB4RFbU8R2J', 'nflacknoe1j@apple.com', 'M', 11, 'Paralegal', '153.81.58.63');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (57, 'kbraitling1k', 'rOUewl0', 'katteridge1k@blogtalkradio.com', 'M', 41, 'Community Outreach Specialist', '170.167.138.146');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (58, 'thavoc1l', 'vxMv955Iw4Su', 'beick1l@plala.or.jp', 'F', 38, 'Pharmacist', '108.231.76.71');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (59, 'lcurtois1m', 'xD1DLJFAE', 'amurrock1m@nydailynews.com', 'F', 13, 'Project Manager', '152.1.228.136');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (60, 'jbousfield1n', '7xHZktv', 'blovart1n@lulu.com', 'F', 1, 'Media Manager IV', '181.127.73.11');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (61, 'abrameld1o', 'cm9bF1cCo7C', 'bpetrik1o@sitemeter.com', 'F', 56, 'Financial Advisor', '193.72.109.207');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (62, 'pbenes1p', '9yWEnJHr', 'istanlike1p@weebly.com', 'F', 12, 'Information Systems Manager', '97.25.153.174');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (63, 'pshellcross1q', 'C9vuYnzjP9M', 'ecurrm1q@rambler.ru', 'M', 79, 'Professor', '247.232.4.56');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (64, 'kkynoch1r', 'aJ48Y1OwP', 'ldunnet1r@devhub.com', 'F', 59, 'Media Manager IV', '173.87.190.122');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (65, 'dcrouch1s', 'Wy5GrY44vv', 'ebarck1s@gnu.org', 'M', 48, 'Senior Sales Associate', '221.189.39.91');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (66, 'ekennaway1t', 'cSfjMHzG2n', 'qdemeter1t@google.nl', 'M', 24, 'Quality Control Specialist', '123.130.49.187');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (67, 'jmauger1u', 'MGiJNeA', 'rgebbie1u@weather.com', 'F', 94, 'Compensation Analyst', '205.12.102.39');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (68, 'cmiddlemist1v', 'SCjLK36HtbEZ', 'npetrou1v@businessinsider.com', 'M', 84, 'Design Engineer', '92.23.118.154');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (69, 'moliveira1w', 'ztNbeirk', 'msoulsby1w@aboutads.info', 'F', 62, 'Research Nurse', '87.140.61.43');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (70, 'urihanek1x', 'V4ZWoTYY', 'mavison1x@imdb.com', 'F', 14, 'Sales Associate', '28.26.169.122');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (71, 'hmatonin1y', 'YjiCXwz', 'sdart1y@senate.gov', 'M', 66, 'General Manager', '132.184.167.20');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (72, 'aflexman1z', 'qoeI4nT', 'sjeannel1z@phoca.cz', 'M', 11, 'Sales Representative', '29.251.198.136');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (73, 'canscott20', 'K7wTETTV3', 'rkyngdon20@is.gd', 'F', 21, 'Electrical Engineer', '249.182.158.229');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (74, 'eblagden21', 'kANtau', 'eishak21@skyrock.com', 'M', 81, 'Associate Professor', '159.95.198.3');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (75, 'jgoody22', '3LU1ae', 'tpearson22@pbs.org', 'F', 8, 'Safety Technician IV', '225.16.97.183');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (76, 'joutright23', 'P6xHqcbdDa9p', 'jselbach23@taobao.com', 'M', 30, 'Environmental Tech', '161.97.33.126');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (77, 'vfaers24', 'e30sOBYHaZ1', 'dsauvain24@privacy.gov.au', 'F', 92, 'Sales Associate', '88.124.45.239');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (78, 'ebenoi25', 'en5iysah', 'ssheddan25@cocolog-nifty.com', 'M', 33, 'Actuary', '76.170.121.132');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (79, 'ddempster26', 'Sh72CkB9G2AO', 'zlates26@sfgate.com', 'F', 49, 'Web Designer III', '253.78.90.66');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (80, 'lizacenko27', '1yXTjx', 'dmcduffie27@multiply.com', 'M', 5, 'Librarian', '107.124.149.83');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (81, 'mbartles28', 'bIXO5oR', 'cmckeggie28@uol.com.br', 'M', 37, 'Account Representative II', '113.100.251.182');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (82, 'yzettoi29', 'ZB956UGda', 'xlancashire29@omniture.com', 'M', 62, 'Graphic Designer', '191.192.27.26');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (83, 'gciccottio2a', '1z6eAq1M3C', 'dgyer2a@cnbc.com', 'M', 65, 'Quality Control Specialist', '50.31.242.200');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (84, 'odalley2b', 'ckvXKP', 'dschrir2b@reddit.com', 'M', 96, 'Health Coach II', '38.54.250.164');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (85, 'sbarrowclough2c', 'apumztwX', 'etorbard2c@epa.gov', 'F', 21, 'Marketing Assistant', '254.148.230.146');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (86, 'ehayle2d', 'xPPoEsOnh', 'cmardell2d@goo.ne.jp', 'M', 5, 'Media Manager I', '59.30.175.162');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (87, 'efellibrand2e', '7ZA5l0lP', 'awinyard2e@reference.com', 'M', 74, 'Graphic Designer', '247.17.158.225');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (88, 'cvela2f', 'iwEiolT', 'ljackson2f@phoca.cz', 'M', 74, 'Administrative Officer', '255.20.9.183');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (89, 'agurney2g', 'j6VD5hZ2wTm', 'haikman2g@google.nl', 'M', 48, 'VP Product Management', '48.184.140.180');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (90, 'hbonelle2h', 'snT4sE8Q', 'mlyles2h@behance.net', 'M', 41, 'Assistant Professor', '181.159.73.18');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (91, 'akillelea2i', '5rUIEbpqzzC', 'mnorbury2i@sun.com', 'M', 8, 'Internal Auditor', '33.67.75.155');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (92, 'aosbourn2j', 'qxj95vBS', 'lbolley2j@is.gd', 'M', 75, 'Recruiting Manager', '202.14.140.226');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (93, 'gmintram2k', 'tOqncfhVuzG', 'atuckwood2k@hubpages.com', 'M', 4, 'Tax Accountant', '88.6.105.69');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (94, 'tszach2l', 'L16FlC', 'wzambonini2l@jiathis.com', 'M', 86, 'Geologist IV', '182.235.232.81');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (95, 'nclaye2m', '4SJbPw', 'cwennington2m@google.com.hk', 'F', 97, 'Staff Scientist', '222.104.84.31');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (96, 'bbodycombe2n', '9DKgekAUbb', 'lwoolrich2n@tuttocitta.it', 'M', 57, 'Data Coordiator', '157.3.62.40');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (97, 'godyvoy2o', 'e9VREWXB3w', 'lwakley2o@google.com.br', 'F', 11, 'Business Systems Development Analyst', '163.68.160.137');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (98, 'xbleby2p', 'YUhUbkriDWH7', 'mbuff2p@blogs.com', 'F', 69, 'Computer Systems Analyst III', '145.223.54.56');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (99, 'balbertson2q', 'dO29b9dn', 'brushton2q@jugem.jp', 'F', 84, 'Associate Professor', '77.198.52.22');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (100, 'lboultwood2r', 'aozaObAgzZY', 'lfortie2r@engadget.com', 'M', 48, 'Senior Developer', '14.159.202.220');
 
-CREATE TABLE `cars_drivers`(
-	`car_id` INT NOT NULL,
-    `driver_id` INT NOT NULL,
-	CONSTRAINT pk_cars_drivers 
-    PRIMARY KEY(`car_id`, `driver_id`),
-    CONSTRAINT fk_cars_drivers_cars 
-    FOREIGN KEY (`car_id`) REFERENCES `cars`(`id`),
-     CONSTRAINT fk_cars_drivers_drivers
-    FOREIGN KEY (`driver_id`) REFERENCES `drivers`(`id`)
-);
+insert into addresses (id, address, town, country, user_id) values (1, '97 Valley Edge Parkway', 'Divinópolis', 'Brazil', 74);
+insert into addresses (id, address, town, country, user_id) values (2, '0 Waubesa Road', 'Neundeut', 'Indonesia', 39);
+insert into addresses (id, address, town, country, user_id) values (3, '177 Blue Bill Park Center', 'Yurimaguas', 'Peru', 70);
+insert into addresses (id, address, town, country, user_id) values (4, '2604 Morrow Crossing', 'Verkh-Usugli', 'Russia', 23);
+insert into addresses (id, address, town, country, user_id) values (5, '2382 Ridgeway Park', 'Boyu', 'China', 50);
+insert into addresses (id, address, town, country, user_id) values (6, '574 Ohio Trail', 'Poitiers', 'France', 54);
+insert into addresses (id, address, town, country, user_id) values (7, '6259 Farwell Avenue', 'Huayacundo Arma', 'Peru', 73);
+insert into addresses (id, address, town, country, user_id) values (8, '929 Glacier Hill Place', 'Colmar', 'France', 63);
+insert into addresses (id, address, town, country, user_id) values (9, '1 Vahlen Avenue', 'Lambayong', 'Philippines', 65);
+insert into addresses (id, address, town, country, user_id) values (10, '47980 Westerfield Junction', 'Obollo-Afor', 'Nigeria', 89);
+insert into addresses (id, address, town, country, user_id) values (11, '9189 Novick Hill', 'La Sarrosa', 'Honduras', 71);
+insert into addresses (id, address, town, country, user_id) values (12, '15 Rusk Avenue', 'Nangan', 'Taiwan', 46);
+insert into addresses (id, address, town, country, user_id) values (13, '002 Jay Pass', 'Valmiera', 'Latvia', 8);
+insert into addresses (id, address, town, country, user_id) values (14, '64298 Parkside Circle', 'Jihuluntu Sumu', 'China', 64);
+insert into addresses (id, address, town, country, user_id) values (15, '7079 Atwood Drive', 'Volovets', 'Ukraine', 99);
+insert into addresses (id, address, town, country, user_id) values (16, '69 Talmadge Drive', 'Puerto Galera', 'Philippines', 94);
+insert into addresses (id, address, town, country, user_id) values (17, '0610 Marcy Court', 'Itapissuma', 'Brazil', 61);
+insert into addresses (id, address, town, country, user_id) values (18, '6308 Mallard Lane', 'Shibushi', 'Japan', 10);
+insert into addresses (id, address, town, country, user_id) values (19, '06 Badeau Street', 'El Cerrito', 'Colombia', 86);
+insert into addresses (id, address, town, country, user_id) values (20, '652 Saint Paul Road', 'Skien', 'Norway', 90);
+insert into addresses (id, address, town, country, user_id) values (21, '028 Browning Junction', 'San Pedro Sacatepéquez', 'Guatemala', 84);
+insert into addresses (id, address, town, country, user_id) values (22, '76801 Washington Point', 'Paris 13', 'France', 21);
+insert into addresses (id, address, town, country, user_id) values (23, '94487 Dunning Place', 'Jonava', 'Lithuania', 53);
+insert into addresses (id, address, town, country, user_id) values (24, '83 Monterey Center', 'Yangxiang', 'China', 15);
+insert into addresses (id, address, town, country, user_id) values (25, '5 Marcy Crossing', 'Reda', 'Poland', 87);
+insert into addresses (id, address, town, country, user_id) values (26, '9780 4th Center', 'Lincuo', 'China', 53);
+insert into addresses (id, address, town, country, user_id) values (27, '5875 Donald Parkway', 'Maragogipe', 'Brazil', 57);
+insert into addresses (id, address, town, country, user_id) values (28, '43 Forest Road', 'Congas', 'Peru', 47);
+insert into addresses (id, address, town, country, user_id) values (29, '564 Melvin Park', 'Svetlogorsk', 'Russia', 21);
+insert into addresses (id, address, town, country, user_id) values (30, '7 Dryden Avenue', 'Banjar Bias', 'Indonesia', 24);
+insert into addresses (id, address, town, country, user_id) values (31, '0662 Petterle Plaza', 'Hauhena', 'Indonesia', 75);
+insert into addresses (id, address, town, country, user_id) values (32, '80 Hansons Junction', 'Gorbunki', 'Russia', 28);
+insert into addresses (id, address, town, country, user_id) values (33, '45 Annamark Way', 'Bassar', 'Togo', 48);
+insert into addresses (id, address, town, country, user_id) values (34, '0 Dawn Trail', 'Itajubá', 'Brazil', 40);
+insert into addresses (id, address, town, country, user_id) values (35, '40 Hansons Crossing', 'Kitami', 'Japan', 69);
+insert into addresses (id, address, town, country, user_id) values (36, '5921 Farragut Terrace', 'Al Kittah', 'Jordan', 40);
+insert into addresses (id, address, town, country, user_id) values (37, '44746 Nobel Drive', 'Pantaibesar', 'Indonesia', 70);
+insert into addresses (id, address, town, country, user_id) values (38, '99066 Fairfield Junction', 'Xumai', 'China', 17);
+insert into addresses (id, address, town, country, user_id) values (39, '43 Colorado Plaza', 'Caohe', 'China', 29);
+insert into addresses (id, address, town, country, user_id) values (40, '518 Milwaukee Road', 'Sucre', 'Peru', 36);
+insert into addresses (id, address, town, country, user_id) values (41, '4001 Straubel Trail', 'Karangcombong', 'Indonesia', 42);
+insert into addresses (id, address, town, country, user_id) values (42, '95 American Place', 'Choco', 'Peru', 4);
+insert into addresses (id, address, town, country, user_id) values (43, '5 Manufacturers Terrace', 'Sanlifan', 'China', 63);
+insert into addresses (id, address, town, country, user_id) values (44, '8 Dapin Avenue', 'Xiaohe', 'China', 1);
+insert into addresses (id, address, town, country, user_id) values (45, '00 Merchant Terrace', 'Naukot', 'Pakistan', 63);
+insert into addresses (id, address, town, country, user_id) values (46, '98960 Fulton Hill', 'Neiva', 'Colombia', 52);
+insert into addresses (id, address, town, country, user_id) values (47, '1279 Twin Pines Terrace', 'Tumba', 'China', 78);
+insert into addresses (id, address, town, country, user_id) values (48, '77615 Mosinee Plaza', 'P’rimorsk’oe', 'Georgia', 85);
+insert into addresses (id, address, town, country, user_id) values (49, '71 Emmet Circle', 'Al Wuday‘', 'Yemen', 76);
+insert into addresses (id, address, town, country, user_id) values (50, '43457 Rowland Alley', 'Arauco', 'Chile', 96);
+insert into addresses (id, address, town, country, user_id) values (51, '16416 Pierstorff Parkway', 'Mulyorejo', 'Indonesia', 45);
+insert into addresses (id, address, town, country, user_id) values (52, '98 North Way', 'Boise', 'United States', 63);
+insert into addresses (id, address, town, country, user_id) values (53, '139 Canary Crossing', 'Pak Phanang', 'Thailand', 84);
+insert into addresses (id, address, town, country, user_id) values (54, '1737 Cody Plaza', 'Qijing', 'China', 70);
+insert into addresses (id, address, town, country, user_id) values (55, '6 Ramsey Place', 'Rawa Mazowiecka', 'Poland', 48);
+insert into addresses (id, address, town, country, user_id) values (56, '27400 Di Loreto Terrace', 'Marechal Deodoro', 'Brazil', 79);
+insert into addresses (id, address, town, country, user_id) values (57, '7991 Esch Trail', 'Bartniczka', 'Poland', 56);
+insert into addresses (id, address, town, country, user_id) values (58, '015 Goodland Circle', 'Lwówek Śląski', 'Poland', 76);
+insert into addresses (id, address, town, country, user_id) values (59, '64236 Maple Wood Junction', 'Longtou’an', 'China', 100);
+insert into addresses (id, address, town, country, user_id) values (60, '25 Saint Paul Crossing', 'Kumba', 'Cameroon', 42);
+insert into addresses (id, address, town, country, user_id) values (61, '9793 Armistice Terrace', 'Haarlem', 'Netherlands', 9);
+insert into addresses (id, address, town, country, user_id) values (62, '57 Springs Street', 'Ninomiya', 'Japan', 79);
+insert into addresses (id, address, town, country, user_id) values (63, '8 Blackbird Trail', 'Néa Róda', 'Greece', 94);
+insert into addresses (id, address, town, country, user_id) values (64, '1222 Stephen Place', 'Sembungan Kidul', 'Indonesia', 46);
+insert into addresses (id, address, town, country, user_id) values (65, '3686 Division Junction', 'Bor Ondor', 'China', 30);
+insert into addresses (id, address, town, country, user_id) values (66, '2 Ridge Oak Terrace', 'Thị Trấn Yên Cát', 'Vietnam', 6);
+insert into addresses (id, address, town, country, user_id) values (67, '9 Village Avenue', 'Criação Velha', 'Portugal', 1);
+insert into addresses (id, address, town, country, user_id) values (68, '90972 Burning Wood Junction', 'Haumeni', 'Indonesia', 78);
+insert into addresses (id, address, town, country, user_id) values (69, '73 Northland Alley', 'Domašinec', 'Croatia', 26);
+insert into addresses (id, address, town, country, user_id) values (70, '6904 Shopko Center', 'Santa Catalina', 'Venezuela', 17);
+insert into addresses (id, address, town, country, user_id) values (71, '1154 Service Park', 'Gunungkendeng', 'Indonesia', 51);
+insert into addresses (id, address, town, country, user_id) values (72, '276 Melrose Way', 'Seren Barat', 'Indonesia', 32);
+insert into addresses (id, address, town, country, user_id) values (73, '8 Ryan Lane', 'Huaqiao', 'China', 14);
+insert into addresses (id, address, town, country, user_id) values (74, '42 Menomonie Point', 'Dois Portos', 'Portugal', 22);
+insert into addresses (id, address, town, country, user_id) values (75, '99299 Fallview Hill', 'Winduraja', 'Indonesia', 93);
+insert into addresses (id, address, town, country, user_id) values (76, '13390 Dorton Pass', 'Brka', 'Bosnia and Herzegovina', 52);
+insert into addresses (id, address, town, country, user_id) values (77, '733 Holy Cross Lane', 'Kuta', 'Nigeria', 77);
+insert into addresses (id, address, town, country, user_id) values (78, '63 Mitchell Place', 'Labuhanjambu', 'Indonesia', 89);
+insert into addresses (id, address, town, country, user_id) values (79, '144 Sachs Road', 'Campina Grande do Sul', 'Brazil', 35);
+insert into addresses (id, address, town, country, user_id) values (80, '21264 Cottonwood Crossing', 'Yangjian', 'China', 91);
+insert into addresses (id, address, town, country, user_id) values (81, '0245 Macpherson Parkway', 'Gembu', 'Nigeria', 100);
+insert into addresses (id, address, town, country, user_id) values (82, '4 Sage Plaza', 'Pasirbitung', 'Indonesia', 55);
+insert into addresses (id, address, town, country, user_id) values (83, '9 Old Shore Trail', 'Daliang', 'China', 41);
+insert into addresses (id, address, town, country, user_id) values (84, '3 International Drive', 'Marseille', 'France', 67);
+insert into addresses (id, address, town, country, user_id) values (85, '8 Gerald Parkway', 'Francisco Morato', 'Brazil', 43);
+insert into addresses (id, address, town, country, user_id) values (86, '9338 Lukken Way', 'Cruz Alta', 'Brazil', 28);
+insert into addresses (id, address, town, country, user_id) values (87, '4 Fulton Road', 'Santo Amaro', 'Portugal', 96);
+insert into addresses (id, address, town, country, user_id) values (88, '9 Spenser Center', 'Sanshan', 'China', 28);
+insert into addresses (id, address, town, country, user_id) values (89, '8184 Canary Center', 'Paulínia', 'Brazil', 65);
+insert into addresses (id, address, town, country, user_id) values (90, '92 Bunting Street', 'Hengxi', 'China', 12);
+insert into addresses (id, address, town, country, user_id) values (91, '8 Pond Junction', 'Oslo', 'Norway', 1);
+insert into addresses (id, address, town, country, user_id) values (92, '6 Warrior Road', 'Cox’s Bāzār', 'Bangladesh', 85);
+insert into addresses (id, address, town, country, user_id) values (93, '28390 Mayfield Crossing', 'Henglian', 'China', 53);
+insert into addresses (id, address, town, country, user_id) values (94, '62795 Spohn Place', 'Kilkenny', 'Ireland', 70);
+insert into addresses (id, address, town, country, user_id) values (95, '95 Colorado Drive', 'Futu', 'China', 12);
+insert into addresses (id, address, town, country, user_id) values (96, '86740 East Way', 'Kairouan', 'Tunisia', 25);
+insert into addresses (id, address, town, country, user_id) values (97, '3858 Prentice Hill', 'Kayes', 'Republic of the Congo', 46);
+insert into addresses (id, address, town, country, user_id) values (98, '7 Grayhawk Trail', 'Malbork', 'Poland', 72);
+insert into addresses (id, address, town, country, user_id) values (99, '43 Sommers Street', 'Komsomol’skiy', 'Russia', 96);
+insert into addresses (id, address, town, country, user_id) values (100, '34 Nobel Point', 'Voloka', 'Ukraine', 87);
 
+insert into photos (id, description, date, views) values (1, 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-09-22 14:48:03', 0);
+insert into photos (id, description, date, views) values (2, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.Fusce consequat. Nulla nisl. Nunc nisl.', '2020-02-03 10:29:22', 0);
+insert into photos (id, description, date, views) values (3, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '2019-11-01 06:51:47', 0);
+insert into photos (id, description, date, views) values (4, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', '2019-05-16 20:59:44', 0);
+insert into photos (id, description, date, views) values (5, 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi77 eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2019-06-25 17:58:28', 0);
+insert into photos (id, description, date, views) values (6, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', '2020-02-21 20:47:40', 0);
+insert into photos (id, description, date, views) values (7, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.Sed ante. Vivamus tortor. Duis mattis egestas metus.', '2019-06-07 18:46:03', 0);
+insert into photos (id, description, date, views) values (8, 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', '2019-09-04 08:47:14', 0);
+insert into photos (id, description, date, views) values (9, 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', '2019-11-26 17:43:49', 0);
+insert into photos (id, description, date, views) values (10, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '2019-09-11 05:40:14', 0);
+insert into photos (id, description, date, views) values (11, 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', '2019-04-21 00:02:04', 0);
+insert into photos (id, description, date, views) values (12, 'In congue. Etiam justo. Etiam pretium iaculis justo.', '2019-09-29 10:11:56', 0);
+insert into photos (id, description, date, views) values (13, 'Fusce consequat. Nulla nisl. Nunc nisl.Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', '2020-02-17 04:46:39', 0);
+insert into photos (id, description, date, views) values (14, 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.Fusce consequat. Nulla nisl. Nunc nisl.', '2020-02-16 13:49:08', 0);
+insert into photos (id, description, date, views) values (15, 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2019-06-02 00:38:03', 0);
+insert into photos (id, description, date, views) values (16, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', '2019-12-11 12:31:32', 0);
+insert into photos (id, description, date, views) values (17, 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', '2020-02-02 09:14:40', 0);
+insert into photos (id, description, date, views) values (18, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', '2019-10-27 08:48:46', 0);
+insert into photos (id, description, date, views) values (19, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', '2020-02-01 07:46:42', 0);
+insert into photos (id, description, date, views) values (20, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-05-10 14:23:11', 0);
+insert into photos (id, description, date, views) values (21, 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-07-19 19:01:47', 0);
+insert into photos (id, description, date, views) values (22, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', '2019-11-24 07:45:45', 0);
+insert into photos (id, description, date, views) values (23, 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', '2019-10-13 14:13:42', 0);
+insert into photos (id, description, date, views) values (24, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', '2020-01-28 02:06:00', 0);
+insert into photos (id, description, date, views) values (25, 'In congue. Etiam justo. Etiam pretium iaculis justo.In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '2019-07-20 13:08:03', 0);
+insert into photos (id, description, date, views) values (26, 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', '2019-12-10 15:20:14', 0);
+insert into photos (id, description, date, views) values (27, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '2020-03-08 14:36:04', 0);
+insert into photos (id, description, date, views) values (28, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2019-05-23 19:11:19', 0);
+insert into photos (id, description, date, views) values (29, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '2019-04-29 00:55:07', 0);
+insert into photos (id, description, date, views) values (30, 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', '2019-08-31 11:10:56', 0);
+insert into photos (id, description, date, views) values (31, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '2019-05-06 05:45:48', 0);
+insert into photos (id, description, date, views) values (32, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', '2019-03-10 11:07:44', 0);
+insert into photos (id, description, date, views) values (33, 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', '2019-07-07 15:36:28', 0);
+insert into photos (id, description, date, views) values (34, 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', '2019-08-08 11:30:18', 0);
+insert into photos (id, description, date, views) values (35, 'Sed ante. Vivamus tortor. Duis mattis egestas metus.Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', '2020-02-08 04:53:44', 0);
+insert into photos (id, description, date, views) values (36, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-09-28 06:48:11', 0);
+insert into photos (id, description, date, views) values (37, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-06-30 14:53:38', 0);
+insert into photos (id, description, date, views) values (38, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-04-21 18:51:46', 0);
+insert into photos (id, description, date, views) values (39, 'Phasellus in felis. Donec semper sapien a libero. Nam dui.Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', '2019-10-21 17:34:48', 0);
+insert into photos (id, description, date, views) values (40, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', '2019-09-07 12:33:58', 0);
+insert into photos (id, description, date, views) values (41, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2020-02-03 00:44:25', 0);
+insert into photos (id, description, date, views) values (42, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.In congue. Etiam justo. Etiam pretium iaculis justo.', '2019-05-11 08:57:18', 0);
+insert into photos (id, description, date, views) values (43, 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', '2019-12-07 17:10:45', 0);
+insert into photos (id, description, date, views) values (44, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2019-07-12 14:13:37', 0);
+insert into photos (id, description, date, views) values (45, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2020-03-03 21:15:04', 0);
+insert into photos (id, description, date, views) values (46, 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', '2020-02-20 12:09:00', 0);
+insert into photos (id, description, date, views) values (47, 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.In congue. Etiam justo. Etiam pretium iaculis justo.', '2019-10-29 06:49:58', 0);
+insert into photos (id, description, date, views) values (48, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-07-20 22:37:34', 0);
+insert into photos (id, description, date, views) values (49, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-08-17 05:10:37', 0);
+insert into photos (id, description, date, views) values (50, 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', '2019-11-30 15:13:14', 0);
+insert into photos (id, description, date, views) values (51, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2020-02-08 11:31:47', 0);
+insert into photos (id, description, date, views) values (52, 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.Phasellus in felis. Donec semper sapien a libero. Nam dui.', '2019-11-06 00:48:48', 0);
+insert into photos (id, description, date, views) values (53, 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', '2020-03-09 01:13:10', 0);
+insert into photos (id, description, date, views) values (54, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', '2020-02-09 03:29:50', 0);
+insert into photos (id, description, date, views) values (55, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.In congue. Etiam justo. Etiam pretium iaculis justo.', '2019-10-10 08:58:52', 0);
+insert into photos (id, description, date, views) values (56, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', '2019-10-31 03:15:03', 0);
+insert into photos (id, description, date, views) values (57, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '2019-07-19 02:50:14', 0);
+insert into photos (id, description, date, views) values (58, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-05-30 12:06:27', 0);
+insert into photos (id, description, date, views) values (59, 'In congue. Etiam justo. Etiam pretium iaculis justo.In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '2019-07-22 20:32:43', 0);
+insert into photos (id, description, date, views) values (60, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2019-05-10 14:40:22', 0);
+insert into photos (id, description, date, views) values (61, 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', '2019-11-30 10:47:14', 0);
+insert into photos (id, description, date, views) values (62, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-10-17 04:14:21', 0);
+insert into photos (id, description, date, views) values (63, 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.In congue. Etiam justo. Etiam pretium iaculis justo.In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '2019-04-25 18:15:18', 0);
+insert into photos (id, description, date, views) values (64, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-04-15 19:25:07', 0);
+insert into photos (id, description, date, views) values (65, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-03-17 20:00:22', 0);
+insert into photos (id, description, date, views) values (66, 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', '2019-04-13 11:12:52', 0);
+insert into photos (id, description, date, views) values (67, 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2019-10-20 02:01:46', 0);
+insert into photos (id, description, date, views) values (68, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2019-06-20 00:45:13', 0);
+insert into photos (id, description, date, views) values (69, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', '2020-02-22 11:22:31', 0);
+insert into photos (id, description, date, views) values (70, 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', '2019-04-09 11:51:54', 0);
+insert into photos (id, description, date, views) values (71, 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', '2019-11-15 12:35:55', 0);
+insert into photos (id, description, date, views) values (72, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '2019-10-11 07:41:23', 0);
+insert into photos (id, description, date, views) values (73, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', '2019-11-29 22:35:21', 0);
+insert into photos (id, description, date, views) values (74, 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', '2019-08-22 05:42:52', 0);
+insert into photos (id, description, date, views) values (75, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', '2019-12-26 07:39:13', 0);
+insert into photos (id, description, date, views) values (76, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', '2019-10-20 20:47:48', 0);
+insert into photos (id, description, date, views) values (77, 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', '2019-10-17 07:22:26', 0);
+insert into photos (id, description, date, views) values (78, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', '2019-11-24 04:43:03', 0);
+insert into photos (id, description, date, views) values (79, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-04-20 05:44:37', 0);
+insert into photos (id, description, date, views) values (80, 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', '2019-06-24 00:14:23', 0);
+insert into photos (id, description, date, views) values (81, 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', '2019-06-11 08:05:29', 0);
+insert into photos (id, description, date, views) values (82, 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', '2019-04-17 15:53:56', 0);
+insert into photos (id, description, date, views) values (83, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', '2019-11-30 23:23:50', 0);
+insert into photos (id, description, date, views) values (84, 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2019-07-29 02:10:03', 0);
+insert into photos (id, description, date, views) values (85, 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '2020-02-23 23:55:36', 0);
+insert into photos (id, description, date, views) values (86, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '2019-07-30 19:28:29', 0);
+insert into photos (id, description, date, views) values (87, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2019-09-02 22:20:32', 0);
+insert into photos (id, description, date, views) values (88, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2020-01-23 09:43:44', 0);
+insert into photos (id, description, date, views) values (89, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', '2019-03-14 08:04:04', 0);
+insert into photos (id, description, date, views) values (90, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', '2019-11-23 13:58:33', 0);
+insert into photos (id, description, date, views) values (91, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', '2019-04-28 07:38:15', 0);
+insert into photos (id, description, date, views) values (92, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-07-05 22:20:32', 0);
+insert into photos (id, description, date, views) values (93, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2020-02-05 23:16:19', 0);
+insert into photos (id, description, date, views) values (94, 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', '2019-12-08 14:04:01', 0);
+insert into photos (id, description, date, views) values (95, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', '2019-03-23 14:59:46', 0);
+insert into photos (id, description, date, views) values (96, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', '2020-01-31 15:07:46', 0);
+insert into photos (id, description, date, views) values (97, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.Sed ante. Vivamus tortor. Duis mattis egestas metus.Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', '2019-07-09 17:14:52', 0);
+insert into photos (id, description, date, views) values (98, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-04-25 02:26:39', 0);
+insert into photos (id, description, date, views) values (99, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', '2019-07-27 12:51:46', 0);
+insert into photos (id, description, date, views) values (100, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2020-03-02 06:00:36', 0);
 
-insert into addresses (`name`) 
-values 
-('24402 Warner Place'),
-('4 La Follette Plaza'),
-('700 Monterey Avenue'),
-('93124 Comanche Way'),
-('57659 Karstens Junction'),
-('361 Caliangt Court'),
-('88941 Starling Drive'),
-('34 Briar Crest Crossing'),
-('2 Cascade Lane'),
-('40 Havey Road'),
-('67636 Tennessee Point'),
-('385 Rieder Center'),
-('32975 Hagan Street'),
-('86462 Buena Vista Point'),
-('1275 Pine View Court'),
-('4673 Colorado Road'),
-('6 Hanover Terrace'),
-('66 Thompson Drive'),
-('4 Haas Lane'),
-('8 Warner Drive'),
-('48738 Thompson Lane'),
-('0590 Lawn Hill'),
-('68 Roxbury Court'),
-('833 Kenwood Plaza'),
-('6 Sachs Way'),
-('77485 Commercial Drive'),
-('80678 Green Ridge Court'),
-('84320 Lotheville Way'),
-('2 Del Mar Park'),
-('04528 Carpenter Plaza'),
-('9590 Briar Crest Street'),
-('02335 Vernon Avenue'),
-('6638 Thompson Point'),
-('0 Mariners Cove Circle'),
-('897 Pine View Park'),
-('835 Calypso Place'),
-('904 Karstens Trail'),
-('52 Corben Pass'),
-('27803 Morningstar Avenue'),
-('214 Esker Trail'),
-('17 Huxley Pass'),
-('2061 Meadow Vale Point'),
-('02 Browning Parkway'),
-('54 3rd Pass'),
-('5 Truax Court'),
-('59402 Kim Court'),
-('59 Atwood Alley'),
-('55759 Valley Edge Pass'),
-('35 Kim Road'),
-('79 Gina Way');
+insert into comments (id, comment, date, photo_id) values (1, 'enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa', '2019-06-30 02:41:20', 4);
+insert into comments (id, comment, date, photo_id) values (2, 'et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum', '2019-10-03 22:43:29', 16);
+insert into comments (id, comment, date, photo_id) values (3, 'turpis a pede posuere nonummy integer non velit donec diam neque vestibulum', '2019-03-30 12:16:55', 88);
+insert into comments (id, comment, date, photo_id) values (4, 'gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras', '2019-10-28 09:33:28', 31);
+insert into comments (id, comment, date, photo_id) values (5, 'in eleifend quam a odio in hac habitasse platea dictumst maecenas ut', '2020-02-13 08:08:43', 68);
+insert into comments (id, comment, date, photo_id) values (6, 'libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla', '2019-07-01 16:22:13', 17);
+insert into comments (id, comment, date, photo_id) values (7, 'interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus', '2019-10-25 14:13:28', 58);
+insert into comments (id, comment, date, photo_id) values (8, 'amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus', '2020-01-08 19:36:41', 85);
+insert into comments (id, comment, date, photo_id) values (9, 'et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet', '2019-12-11 22:46:44', 33);
+insert into comments (id, comment, date, photo_id) values (10, 'fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam', '2019-10-11 22:30:14', 32);
+insert into comments (id, comment, date, photo_id) values (11, 'ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis', '2019-06-17 23:37:46', 19);
+insert into comments (id, comment, date, photo_id) values (12, 'lectus pellentesque eget nunc donec quis orci eget orci vehicula', '2019-11-17 17:25:26', 25);
+insert into comments (id, comment, date, photo_id) values (13, 'sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet', '2019-08-27 15:10:20', 72);
+insert into comments (id, comment, date, photo_id) values (14, 'posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut', '2020-02-09 01:50:14', 68);
+insert into comments (id, comment, date, photo_id) values (15, 'magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum', '2020-02-05 10:38:40', 20);
+insert into comments (id, comment, date, photo_id) values (16, 'curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor', '2019-10-14 04:55:09', 75);
+insert into comments (id, comment, date, photo_id) values (17, 'nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa', '2020-01-21 13:51:56', 87);
+insert into comments (id, comment, date, photo_id) values (18, 'morbi vestibulum velit id pretium iaculis diam erat fermentum justo', '2019-06-23 03:14:16', 32);
+insert into comments (id, comment, date, photo_id) values (19, 'amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla', '2019-06-09 22:09:57', 1);
+insert into comments (id, comment, date, photo_id) values (20, 'augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse', '2019-09-14 12:02:48', 86);
+insert into comments (id, comment, date, photo_id) values (21, 'sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus', '2019-09-08 01:08:25', 31);
+insert into comments (id, comment, date, photo_id) values (22, 'vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien', '2019-06-01 04:42:02', 86);
+insert into comments (id, comment, date, photo_id) values (23, 'eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in', '2019-06-23 09:37:03', 36);
+insert into comments (id, comment, date, photo_id) values (24, 'quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor', '2019-08-19 10:22:39', 14);
+insert into comments (id, comment, date, photo_id) values (25, 'lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis', '2019-04-28 02:29:51', 25);
+insert into comments (id, comment, date, photo_id) values (26, 'pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula', '2019-06-04 16:15:48', 6);
+insert into comments (id, comment, date, photo_id) values (27, 'platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum', '2019-05-20 17:32:37', 23);
+insert into comments (id, comment, date, photo_id) values (28, 'est congue elementum in hac habitasse platea dictumst morbi vestibulum velit', '2020-01-01 11:53:26', 41);
+insert into comments (id, comment, date, photo_id) values (29, 'enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet', '2019-09-01 11:50:53', 95);
+insert into comments (id, comment, date, photo_id) values (30, 'vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero', '2019-04-04 23:00:39', 30);
+insert into comments (id, comment, date, photo_id) values (31, 'nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit', '2019-08-20 02:09:40', 37);
+insert into comments (id, comment, date, photo_id) values (32, 'vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non', '2020-02-13 22:49:23', 51);
+insert into comments (id, comment, date, photo_id) values (33, 'in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero', '2019-11-15 14:41:35', 63);
+insert into comments (id, comment, date, photo_id) values (34, 'a ipsum integer a nibh in quis justo maecenas rhoncus', '2019-05-27 22:56:54', 94);
+insert into comments (id, comment, date, photo_id) values (35, 'nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse', '2019-08-09 16:51:20', 61);
+insert into comments (id, comment, date, photo_id) values (36, 'sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet', '2019-10-01 08:48:14', 15);
+insert into comments (id, comment, date, photo_id) values (37, 'consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer', '2019-09-21 09:55:09', 99);
+insert into comments (id, comment, date, photo_id) values (38, 'dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros', '2020-03-07 03:34:42', 39);
+insert into comments (id, comment, date, photo_id) values (39, 'est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi', '2019-04-19 10:47:36', 51);
+insert into comments (id, comment, date, photo_id) values (40, 'sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis', '2019-10-26 22:54:08', 2);
+insert into comments (id, comment, date, photo_id) values (41, 'convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum', '2019-08-24 06:59:37', 27);
+insert into comments (id, comment, date, photo_id) values (42, 'aliquam quis turpis eget elit sodales scelerisque mauris sit amet', '2020-02-18 21:43:48', 13);
+insert into comments (id, comment, date, photo_id) values (43, 'quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum', '2019-05-13 17:46:32', 84);
+insert into comments (id, comment, date, photo_id) values (44, 'elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula', '2019-12-31 12:37:20', 35);
+insert into comments (id, comment, date, photo_id) values (45, 'nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at', '2019-08-09 13:37:50', 18);
+insert into comments (id, comment, date, photo_id) values (46, 'maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi', '2019-07-14 01:05:30', 80);
+insert into comments (id, comment, date, photo_id) values (47, 'pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus', '2019-12-30 11:29:08', 36);
+insert into comments (id, comment, date, photo_id) values (48, 'purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a', '2020-03-02 11:38:38', 89);
+insert into comments (id, comment, date, photo_id) values (49, 'dolor quis odio consequat varius integer ac leo pellentesque ultrices', '2019-12-13 16:08:33', 47);
+insert into comments (id, comment, date, photo_id) values (50, 'consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris', '2019-10-24 03:52:51', 63);
+insert into comments (id, comment, date, photo_id) values (51, 'rutrum ac lobortis vel dapibus at diam nam tristique tortor', '2019-12-10 04:02:49', 48);
+insert into comments (id, comment, date, photo_id) values (52, 'sit amet turpis elementum ligula vehicula consequat morbi a ipsum', '2019-08-10 17:18:23', 11);
+insert into comments (id, comment, date, photo_id) values (53, 'rutrum nulla nunc purus phasellus in felis donec semper sapien a', '2019-04-14 16:50:46', 19);
+insert into comments (id, comment, date, photo_id) values (54, 'nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum', '2019-11-16 16:52:26', 43);
+insert into comments (id, comment, date, photo_id) values (55, 'ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo', '2020-01-24 08:44:53', 99);
+insert into comments (id, comment, date, photo_id) values (56, 'in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum', '2019-08-15 03:39:32', 100);
+insert into comments (id, comment, date, photo_id) values (57, 'proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut', '2019-03-18 02:19:14', 22);
+insert into comments (id, comment, date, photo_id) values (58, 'velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo', '2019-10-01 16:54:02', 29);
+insert into comments (id, comment, date, photo_id) values (59, 'maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat', '2020-01-08 20:47:38', 100);
+insert into comments (id, comment, date, photo_id) values (60, 'morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor', '2019-10-09 02:51:18', 91);
+insert into comments (id, comment, date, photo_id) values (61, 'amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere', '2019-11-23 12:54:40', 84);
+insert into comments (id, comment, date, photo_id) values (62, 'suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit', '2019-10-29 09:05:45', 31);
+insert into comments (id, comment, date, photo_id) values (63, 'nunc purus phasellus in felis donec semper sapien a libero nam dui', '2019-07-03 08:48:17', 74);
+insert into comments (id, comment, date, photo_id) values (64, 'amet diam in magna bibendum imperdiet nullam orci pede venenatis', '2019-07-12 13:11:48', 23);
+insert into comments (id, comment, date, photo_id) values (65, 'mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing', '2019-08-10 07:09:26', 11);
+insert into comments (id, comment, date, photo_id) values (66, 'augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet', '2019-07-26 13:31:51', 79);
+insert into comments (id, comment, date, photo_id) values (67, 'vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere', '2019-10-26 15:10:13', 94);
+insert into comments (id, comment, date, photo_id) values (68, 'rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat', '2019-04-04 14:26:33', 22);
+insert into comments (id, comment, date, photo_id) values (69, 'ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent', '2020-01-27 08:14:52', 53);
+insert into comments (id, comment, date, photo_id) values (70, 'amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum', '2019-03-14 12:13:49', 17);
+insert into comments (id, comment, date, photo_id) values (71, 'magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien', '2019-09-26 22:52:48', 26);
+insert into comments (id, comment, date, photo_id) values (72, 'iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris', '2019-09-17 18:39:23', 97);
+insert into comments (id, comment, date, photo_id) values (73, 'tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante', '2020-01-08 18:03:46', 14);
+insert into comments (id, comment, date, photo_id) values (74, 'libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas', '2019-11-09 03:19:30', 28);
+insert into comments (id, comment, date, photo_id) values (75, 'nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum', '2019-11-01 05:46:48', 40);
+insert into comments (id, comment, date, photo_id) values (76, 'in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat', '2019-04-01 15:35:44', 40);
+insert into comments (id, comment, date, photo_id) values (77, 'turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus', '2020-01-13 02:51:56', 23);
+insert into comments (id, comment, date, photo_id) values (78, 'ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget', '2019-09-23 06:54:17', 66);
+insert into comments (id, comment, date, photo_id) values (79, 'nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus', '2020-02-25 09:27:56', 17);
+insert into comments (id, comment, date, photo_id) values (80, 'pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum', '2019-12-10 19:05:30', 87);
+insert into comments (id, comment, date, photo_id) values (81, 'nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet', '2019-10-13 02:42:56', 60);
+insert into comments (id, comment, date, photo_id) values (82, 'lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci', '2020-01-09 17:16:51', 83);
+insert into comments (id, comment, date, photo_id) values (83, 'sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate', '2020-02-21 06:19:02', 6);
+insert into comments (id, comment, date, photo_id) values (84, 'at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer', '2020-02-01 20:31:43', 99);
+insert into comments (id, comment, date, photo_id) values (85, 'lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti', '2019-12-11 19:18:23', 28);
+insert into comments (id, comment, date, photo_id) values (86, 'posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar', '2019-12-15 07:01:13', 26);
+insert into comments (id, comment, date, photo_id) values (87, 'nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum', '2019-07-20 10:47:11', 3);
+insert into comments (id, comment, date, photo_id) values (88, 'lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales', '2020-02-01 19:49:30', 41);
+insert into comments (id, comment, date, photo_id) values (89, 'dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat', '2019-08-09 20:41:13', 60);
+insert into comments (id, comment, date, photo_id) values (90, 'sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam', '2019-05-08 04:44:30', 37);
+insert into comments (id, comment, date, photo_id) values (91, 'vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus', '2019-06-30 17:48:34', 5);
+insert into comments (id, comment, date, photo_id) values (92, 'venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet', '2019-07-28 18:14:25', 14);
+insert into comments (id, comment, date, photo_id) values (93, 'lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices', '2019-10-04 07:38:15', 42);
+insert into comments (id, comment, date, photo_id) values (94, 'lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti', '2019-05-13 11:51:30', 1);
+insert into comments (id, comment, date, photo_id) values (95, 'elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in', '2019-08-10 11:46:04', 100);
+insert into comments (id, comment, date, photo_id) values (96, 'amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan', '2019-06-27 06:02:35', 40);
+insert into comments (id, comment, date, photo_id) values (97, 'mi in porttitor pede justo eu massa donec dapibus duis at velit', '2020-01-12 00:42:35', 25);
+insert into comments (id, comment, date, photo_id) values (98, 'blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing', '2019-04-30 07:05:41', 25);
+insert into comments (id, comment, date, photo_id) values (99, 'morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla', '2019-12-14 21:29:01', 23);
+insert into comments (id, comment, date, photo_id) values (100, 'praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in', '2019-08-04 01:52:05', 33);
 
+insert into users_photos (user_id, photo_id) values (8, 11);
+insert into users_photos (user_id, photo_id) values (87, 8);
+insert into users_photos (user_id, photo_id) values (32, 21);
+insert into users_photos (user_id, photo_id) values (88, 43);
+insert into users_photos (user_id, photo_id) values (63, 30);
+insert into users_photos (user_id, photo_id) values (32, 23);
+insert into users_photos (user_id, photo_id) values (13, 38);
+insert into users_photos (user_id, photo_id) values (2, 93);
+insert into users_photos (user_id, photo_id) values (20, 67);
+insert into users_photos (user_id, photo_id) values (12, 12);
+insert into users_photos (user_id, photo_id) values (73, 47);
+insert into users_photos (user_id, photo_id) values (17, 25);
+insert into users_photos (user_id, photo_id) values (70, 70);
+insert into users_photos (user_id, photo_id) values (54, 54);
+insert into users_photos (user_id, photo_id) values (65, 92);
+insert into users_photos (user_id, photo_id) values (92, 99);
+insert into users_photos (user_id, photo_id) values (27, 7);
+insert into users_photos (user_id, photo_id) values (25, 2);
+insert into users_photos (user_id, photo_id) values (29, 97);
+insert into users_photos (user_id, photo_id) values (17, 80);
+insert into users_photos (user_id, photo_id) values (99, 71);
+insert into users_photos (user_id, photo_id) values (46, 61);
+insert into users_photos (user_id, photo_id) values (100, 91);
+insert into users_photos (user_id, photo_id) values (93, 96);
+insert into users_photos (user_id, photo_id) values (60, 34);
+insert into users_photos (user_id, photo_id) values (24, 88);
+insert into users_photos (user_id, photo_id) values (80, 95);
+insert into users_photos (user_id, photo_id) values (65, 27);
+insert into users_photos (user_id, photo_id) values (47, 85);
+insert into users_photos (user_id, photo_id) values (41, 52);
+insert into users_photos (user_id, photo_id) values (67, 24);
+insert into users_photos (user_id, photo_id) values (87, 58);
+insert into users_photos (user_id, photo_id) values (64, 18);
+insert into users_photos (user_id, photo_id) values (23, 83);
+insert into users_photos (user_id, photo_id) values (49, 81);
+insert into users_photos (user_id, photo_id) values (49, 87);
+insert into users_photos (user_id, photo_id) values (75, 64);
+insert into users_photos (user_id, photo_id) values (97, 75);
+insert into users_photos (user_id, photo_id) values (80, 60);
+insert into users_photos (user_id, photo_id) values (24, 33);
+insert into users_photos (user_id, photo_id) values (71, 39);
+insert into users_photos (user_id, photo_id) values (40, 62);
+insert into users_photos (user_id, photo_id) values (73, 79);
+insert into users_photos (user_id, photo_id) values (13, 90);
+insert into users_photos (user_id, photo_id) values (41, 29);
+insert into users_photos (user_id, photo_id) values (29, 31);
+insert into users_photos (user_id, photo_id) values (14, 19);
+insert into users_photos (user_id, photo_id) values (45, 4);
+insert into users_photos (user_id, photo_id) values (22, 3);
+insert into users_photos (user_id, photo_id) values (78, 6);
+insert into users_photos (user_id, photo_id) values (85, 77);
+insert into users_photos (user_id, photo_id) values (22, 28);
+insert into users_photos (user_id, photo_id) values (6, 1);
+insert into users_photos (user_id, photo_id) values (36, 40);
+insert into users_photos (user_id, photo_id) values (78, 82);
+insert into users_photos (user_id, photo_id) values (87, 50);
+insert into users_photos (user_id, photo_id) values (14, 44);
+insert into users_photos (user_id, photo_id) values (75, 32);
+insert into users_photos (user_id, photo_id) values (23, 98);
+insert into users_photos (user_id, photo_id) values (97, 76);
+insert into users_photos (user_id, photo_id) values (92, 66);
+insert into users_photos (user_id, photo_id) values (43, 26);
+insert into users_photos (user_id, photo_id) values (38, 13);
+insert into users_photos (user_id, photo_id) values (67, 65);
+insert into users_photos (user_id, photo_id) values (40, 17);
+insert into users_photos (user_id, photo_id) values (17, 20);
+insert into users_photos (user_id, photo_id) values (31, 86);
 
-insert into categories (`name`) values ('Hatchback'),
-('Coupe'),
-('Cabrio'),
-('Sedan'),
-('SUV');
-
-
-insert into clients (full_name, phone_number) values ('Kalindi Keningham', '(704) 2502909'),
-('Lois Leidl', '(933) 4279635'),
-('Casi Farens', '(933) 4275652'),
-('Janna Kellert', '(353) 9465732'),
-('Conny Barnwille', '(603) 3665240'),
-('Pierrette Dunmuir', '(259) 2916404'),
-('Jasen Yeldham', '(615) 5756557'),
-('Josi Hammelberg', '(481) 7459411'),
-('Ursulina Partner', '(794) 3735520'),
-('Meris Shale', '(842) 4350411'),
-('Colline Dann', '(698) 8299305'),
-('Joyann Garrettson', '(858) 8642667'),
-('Shane Arr', '(261) 2901780'),
-('Owen Strivens', '(807) 1053029'),
-('Moyna Bosnell', '(415) 6922926'),
-('Henrik Sivyer', '(700) 2525329'),
-('Cullan Dogerty', '(915) 9692328'),
-('Jens Aitken', '(537) 7882908'),
-('Lorilee Kryszkiecicz', '(790) 3469957'),
-('Myrta Sogg', '(526) 9403665'),
-('Craig Backe', '(529) 3516992'),
-('Jacquelynn Plackstone', '(121) 5447246'),
-('Therese Gerwood', '(398) 6493437'),
-('Jefferson Montacute', '(831) 1391236'),
-('Jameson Elgar', '(703) 1282215'),
-('Gilberte Shalders', '(370) 1870406'),
-('Siegfried Simony', '(916) 2984263'),
-('Kimball Deem', '(336) 9748036'),
-('Sascha Ruddom', '(940) 1681608'),
-('Janelle Southern', '(805) 3987551'),
-('Chaunce Taffe', '(668) 8705080'),
-('Dante Sagerson', '(973) 2192708'),
-('Carey Flannery', '(785) 9438304'),
-('Lizzie Iscowitz', '(710) 4823991'),
-('Zeke Rowston', '(928) 6001608'),
-('Adelle Kurten', '(612) 4238009'),
-('Rolland Trevna', '(203) 1783410'),
-('Gwynne Bleakley', '(214) 9879666'),
-('Darby Rothert', '(557) 6790489'),
-('Meridel Straker', '(358) 6416340'),
-('Raynor Dobbison', '(700) 1487068'),
-('Burnaby Blackater', '(387) 3392948'),
-('Yul Moseby', '(881) 8598583'),
-('Miles Scruby', '(329) 7886460'),
-('Jeanine Gerren', '(537) 1873169'),
-('Carmel Lendrem', '(745) 5215647'),
-('Allsun O'' Kelleher', '(877) 1770835'),
-('Lanita Crockatt', '(743) 9614592'),
-('Georges Lanston', '(395) 1729778'),
-('Abbey Pedri', '(404) 7308665'),
-('Micheal Newtown', '(994) 6249687'),
-('Sari Chicotti', '(765) 6287494'),
-('Gibbie Liggens', '(858) 2664934'),
-('Odele Sinncock', '(154) 6937931'),
-('Tisha Patey', '(217) 7073612'),
-('Mariele Drinkhall', '(109) 4031108'),
-('Raymund Clace', '(133) 4950964'),
-('Joshuah Duckers', '(252) 6637771'),
-('Kelcy Cody', '(381) 4339413'),
-('Kaylee Ponten', '(477) 2290344'),
-('Mady Viccary', '(380) 9161457'),
-('Mattie Hampton', '(100) 5043476'),
-('Kaylee Coushe', '(890) 6938856'),
-('Lucita Robelet', '(594) 6881660'),
-('Findley Iacoboni', '(443) 6898360'),
-('Allan Wedge', '(916) 3801366'),
-('Cordey Tremblet', '(697) 4597646'),
-('Gaye Sillars', '(828) 7835306'),
-('Pieter Curphey', '(150) 6914055'),
-('Ewen MacDearmont', '(922) 5120547'),
-('Mignon Pennell', '(145) 3388490'),
-('Alano Georgot', '(687) 9387537'),
-('Alley Couch', '(952) 2625195'),
-('Liam Offner', '(367) 8700276'),
-('Elbertina Kleinsinger', '(184) 4563380'),
-('Norean Sharpless', '(613) 5171498'),
-('Vincents Bould', '(918) 6855862'),
-('Parker McGeorge', '(826) 5332304'),
-('Gregorius May', '(519) 1982733'),
-('Bev Wrigglesworth', '(746) 4069382'),
-('Courtney Gawkes', '(872) 3681612'),
-('Courtney Matiasek', '(592) 5339110'),
-('Cori Gunda', '(377) 8637067'),
-('Mandy Scoggin', '(317) 9322808'),
-('Juan Gorry', '(919) 5716455'),
-('Randie Cridge', '(803) 6386812'),
-('Courtnay Devoy', '(560) 1656160'),
-('Haven Seaton', '(892) 2465728'),
-('Nicolai Seaborn', '(898) 4690765'),
-('Mona Crose', '(986) 7635057'),
-('Alyson Jankowski', '(841) 6231478'),
-('Jeralee Tue', '(542) 2919669'),
-('Lonny Carnachen', '(172) 6126123'),
-('Kora Nichol', '(129) 3239339'),
-('Kermy Bertot', '(992) 5466170'),
-('Stanislaus Baggallay', '(873) 4129451'),
-('Danny Simoneau', '(302) 6032370'),
-('Rubin Meaddowcroft', '(970) 9342061'),
-('Marsha Cridge', '(230) 6839868'),
-('Elysha Maydwell', '(842) 4057110');
-
-
-
-insert into drivers (first_name, last_name, age, rating) values ('Alexander', 'Jubb', 40, 3.3),
-('Cullan', 'Geram', 54, 1.5),
-('Germana', 'Emburey', 38, 9.2),
-('Janka', 'Loblie', 48, 7.5),
-('Krystal', 'Cuckson', 54, 9.0),
-('Susy', 'Borrel', 42, 3.7),
-('Saxon', 'Veldman', 43, 3.2),
-('Lenore', 'Romera', 19, 6.9),
-('Enrichetta', 'Jeremiah', 60, 4.4),
-('Delaney', 'Stove', 24, 6.9),
-('Ilaire', 'Tomaszewicz', 25, 7.8),
-('Genna', 'Jaquet', 36, 4.0),
-('Carlotta', 'Dykas', 34, 6.4),
-('Viki', 'Oneal', 57, 4.9),
-('Anthe', 'Larne', 43, 7.1),
-('Philip', 'Penwarden', 45, 3.7),
-('Cristi', 'Ravenshear', 38, 1.4),
-('Louie', 'Vogel', 44, 7.4),
-('Roddie', 'Gribben', 30, 8.0),
-('Boyce', 'Briddock', 45, 6.7),
-('Heidie', 'Blacksell', 19, 3.1),
-('Lexie', 'Salasar', 22, 9.5),
-('Harmony', 'Beincken', 46, 2.2),
-('Dick', 'Eton', 42, 8.8),
-('Philis', 'Treswell', 54, 6.8),
-('Crosby', 'Godlee', 55, 9.6),
-('Gerhard', 'Alderson', 44, 7.2),
-('Dominga', 'Cavy', 24, 3.6),
-('Judye', 'Albrooke', 28, 3.1),
-('Felice', 'Bartol', 47, 2.1),
-('Adolpho', 'Wainscot', 36, 4.7),
-('Aurilia', 'McCready', 49, 1.4),
-('Neill', 'Woof', 37, 8.5),
-('Rab', 'McDarmid', 60, 2.4),
-('Ardith', 'Kienlein', 46, 9.7),
-('Berenice', 'Liddiatt', 56, 1.6),
-('Ailina', 'Sebyer', 59, 8.7),
-('Jaynell', 'Kidson', 22, 6.2),
-('Carina', 'Vanyatin', 38, 4.3),
-('Edna', 'Heatley', 57, 7.5),
-('Hally', 'Barthelmes', 46, 8.9),
-('Leanna', 'Olensby', 40, 4.8),
-('Dell', 'Willoughey', 23, 6.3),
-('Guinevere', 'Gras', 33, 6.3),
-('Jerrie', 'Myles', 20, 1.8),
-('Francoise', 'Cusack', 52, 1.1),
-('Happy', 'Bezant', 41, 8.3),
-('Kingsly', 'Ianiello', 58, 7.1),
-('Leonhard', 'Tukely', 28, 5.1),
-('Joe', 'Waine', 20, 4.4);
-
-
-insert into cars (make, model, `year`, mileage, `condition`, category_id) 
-values 
-('Land Rover', 'Range Rover', 2021, 550259, 'A', 3),
-('GMC', 'Sierra 3500', 2012, 275538, 'A', 4),
-('Infiniti', 'IPL G', 2004, NULL, 'B', 1),
-('Pontiac', 'Grand Prix', 2020, 703642, 'C', 1),
-('Volkswagen', 'Touareg', 2016, 300933, 'B', 4),
-('Pontiac', 'Grand Prix', 2006, 676236, 'B', 5),
-('BMW', '745', 2001, 696455, 'C', 2),
-('Chevrolet', 'S10', 2015, 529397, 'C', 2),
-('Toyota', 'Yaris', 2013, 832895, 'B', 2),
-('Volkswagen', 'Passat', 2002, 62139, 'C', 1),
-('Ford', 'Crown Victoria', 2019, 892185, 'A', 5),
-('Mitsubishi', 'Diamante', 2008, 35697, 'C', 1),
-('Mercedes-Benz', 'CL-Class', 2007, 846549, 'B', 1),
-('Pontiac', 'Trans Sport', 2020, 967608, 'B', 4),
-('Chevrolet', 'Camaro', 2021, 376334, 'B', 5),
-('Nissan', 'Pathfinder', 2007, 613247, 'C', 3),
-('Ford', 'Escort', 2019, 786420, 'A', 3),
-('Infiniti', 'G35', 2004, NULL, 'A', 2),
-('Mercedes-Benz', 'CL-Class', 2015, 634834, 'B', 4),
-('Chevrolet', 'Aveo', 2015, 443680, 'C', 5),
-('Volkswagen', 'Golf', 2010, 693120, 'A', 3),
-('Hyundai', 'Tiburon', 2002, 705696, 'B', 1),
-('Maserati', 'GranTurismo', 2020, 954606, 'B', 1),
-('Chevrolet', 'Corvette', 2008, 149039, 'C', 5),
-('Isuzu', 'Rodeo Sport', 2002, 619414, 'A', 3),
-('Volkswagen', 'Jetta', 2002, 345452, 'C', 3),
-('Aston Martin', 'Vantage', 2010, 890984, 'C', 4),
-('Nissan', 'Altima', 2013, 383760, 'C', 2),
-('Mitsubishi', 'Galant', 2011, 135648, 'A', 1),
-('Suzuki', 'Daewoo Magnus', 2007, 648855, 'A', 1),
-('Mazda', 'B-Series Plus', 2007, 353195, 'B', 4),
-('Chevrolet', 'Astro', 2000, 939056, 'C', 4),
-('Pontiac', 'GTO', 2008, 197528, 'A', 3),
-('Volkswagen', 'Golf', 2004, 846697, 'C', 2),
-('Subaru', 'Forester', 2011, 115948, 'A', 1),
-('Mitsubishi', 'Pajero', 2005, 921496, 'B', 4),
-('Mitsubishi', 'Eclipse', 2020, 420053, 'B', 1),
-('Lincoln', 'Town Car', 2020, 117482, 'C', 1),
-('Kia', 'Spectra', 2002, 296475, 'A', 1),
-('Honda', 'Odyssey', 2007, 509682, 'B', 4),
-('Pontiac', 'Firebird', 2001, 502448, 'A', 1),
-('Chevrolet', 'Suburban 1500', 2004, 57014, 'B', 5),
-('Volkswagen', 'New Beetle', 2003, 499839, 'A', 2),
-('Hyundai', 'Tucson', 2004, 625603, 'C', 1),
-('Oldsmobile', 'Aurora', 2007, NULL, 'C', 3),
-('Audi', 'A4', 2019, 386826, 'B', 1),
-('GMC', 'Savana Cargo Van', 2009, 845679, 'A', 2),
-('Dodge', 'Viper', 2021, NULL, 'B', 3),
-('Porsche', 'Cayenne', 2010, 384812, 'B', 2),
-('BMW', '7 Series', 2011, 444510, 'A', 3),
-('Buick', 'LeSabre', 2013, 415144, 'B', 5),
-('GMC', 'Yukon', 2012, 598861, 'B', 2),
-('Ram', 'C/V', 2007, NULL, 'C', 4),
-('Dodge', 'Viper', 2013, 112908, 'C', 1),
-('Bentley', 'Continental', 2012, 239846, 'A', 1),
-('Jaguar', 'XJ Series', 2010, 172247, 'B', 3),
-('Mercedes-Benz', 'E-Class', 2019, 189389, 'A', 5),
-('Pontiac', 'Bonneville', 2001, 347829, 'B', 4),
-('Porsche', '911', 2013, 929285, 'C', 3),
-('Honda', 'Fit', 2007, 828960, 'C', 4),
-('Mercury', 'Cougar', 2005, 113831, 'B', 4),
-('Dodge', 'Dakota', 2002, 834870, 'C', 2),
-('Land Rover', 'LR2', 2020, 501999, 'C', 4),
-('Buick', 'Hearse', 2010, 827494, 'A', 2),
-('Subaru', 'Impreza', 2005, 720375, 'A', 1),
-('Pontiac', 'Fiero', 2005, 959778, 'B', 4),
-('Mercedes-Benz', '300SL', 2003, 101920, 'C', 4),
-('Nissan', 'Pathfinder', 2001, 257726, 'C', 2),
-('Ford', 'E250', 2006, 776506, 'C', 1),
-('Chevrolet', 'Caprice', 2010, 228425, 'C', 3),
-('Lexus', 'IS-F', 2011, 573601, 'B', 2),
-('Toyota', 'Land Cruiser', 2002, 552697, 'B', 2),
-('Honda', 'Odyssey', 2018, 834619, 'A', 3),
-('Suzuki', 'XL-7', 2008, 836605, 'C', 5),
-('Chevrolet', 'APV', 2016, 451469, 'C', 3),
-('GMC', 'Acadia', 2003, 127222, 'A', 2),
-('Lamborghini', 'Diablo', 2013, 653733, 'A', 5),
-('Chevrolet', 'Silverado 2500', 2004, 680803, 'A', 1),
-('Toyota', 'TundraMax', 2000, 649423, 'A', 2),
-('Lincoln', 'MKT', 2015, 711184, 'A', 1),
-('Chevrolet', 'Silverado 1500', 2004, 271471, 'A', 3),
-('Mitsubishi', 'Pajero', 2006, 289806, 'C', 5),
-('Acura', 'Legend', 2003, 568870, 'A', 2),
-('Mitsubishi', 'Galant', 2003, 409176, 'C', 3),
-('Saab', '9-5', 2000, 78600, 'B', 2),
-('Dodge', 'Challenger', 2012, 206143, 'C', 4),
-('Nissan', 'Altima', 2021, 359239, 'B', 4),
-('Mercedes-Benz', 'CLS-Class', 2015, 544501, 'B', 3),
-('Pontiac', 'Tempest', 2001, 890015, 'C', 3),
-('Mercedes-Benz', 'G-Class', 2017, 6482, 'A', 5),
-('Kia', 'Amanti', 2019, 910099, 'B', 1),
-('Acura', 'Integra', 2003, 767942, 'B', 1),
-('Toyota', 'Celica', 2010, 707042, 'B', 1),
-('Volkswagen', 'Routan', 2014, 47414, 'C', 4),
-('Land Rover', 'Range Rover Sport', 2016, 176967, 'A', 4),
-('Dodge', 'Viper', 2016, 405410, 'A', 4),
-('Ford', 'Escort', 2009, 470950, 'C', 5),
-('Suzuki', 'X-90', 2014, 82451, 'C', 1),
-('Ford', 'E250', 2010, 310386, 'C', 4),
-('Infiniti', 'EX', 2019, 472668, 'C', 3);
-
-insert into courses (from_address_id, `start`, car_id, client_id, bill) values (29, '2020-01-01 01:26:11', 29, 86, 46.92),
-(1, '2020-04-26 17:51:13', 80, 16, 14.47),
-(27, '2020-02-18 14:00:01', 25, 86, 44.01),
-(3, '2020-03-22 04:23:48', 92, 59, 24.24),
-(34, '2021-04-17 12:30:28', 74, 72, 45.83),
-(42, '2020-09-21 22:50:50', 1, 69, 18.23),
-(31, '2020-10-16 04:58:11', 78, 4, 21.93),
-(15, '2020-01-13 05:32:42', 100, 89, 21.56),
-(41, '2020-02-06 22:32:14', 22, 48, 40.49),
-(11, '2020-06-06 22:44:50', 63, 92, 15.56),
-(1, '2020-08-26 06:09:21', 83, 63, 29.98),
-(12, '2021-04-20 09:34:41', 93, 53, 43.27),
-(28, '2020-02-04 04:59:33', 80, 89, 32.36),
-(31, '2021-01-19 11:05:43', 13, 65, 33.05),
-(18, '2020-04-17 23:42:06', 49, 63, 37.56),
-(5, '2021-02-06 01:03:30', 37, 61, 17.6),
-(28, '2020-10-29 05:10:21', 47, 19, 30.46),
-(12, '2021-04-18 11:35:23', 5, 79, 21.54),
-(21, '2020-07-03 21:38:23', 77, 28, 11.36),
-(18, '2020-02-27 06:06:45', 4, 28, 44.72),
-(34, '2020-08-02 15:43:34', 50, 88, 30.46),
-(27, '2020-04-10 23:14:06', 33, 86, 16.99),
-(17, '2021-04-30 06:25:18', 36, 78, 30.07),
-(42, '2020-03-24 21:08:22', 6, 70, 27.03),
-(6, '2020-10-01 00:35:46', 33, 92, 47.11),
-(11, '2021-02-02 04:44:05', 55, 88, 46.57),
-(13, '2021-05-02 12:52:14', 2, 31, 31.31),
-(42, '2020-11-11 11:15:42', 44, 37, 23.86),
-(31, '2020-11-14 07:12:00', 20, 78, 32.51),
-(23, '2021-05-25 02:55:43', 45, 41, 45.97),
-(4, '2020-12-12 03:06:06', 79, 19, 26.58),
-(5, '2020-09-10 01:55:19', 75, 22, 36.22),
-(10, '2020-02-06 02:03:35', 76, 8, 17.93),
-(16, '2020-06-13 10:53:40', 82, 86, 31.57),
-(3, '2020-01-15 09:11:40', 77, 12, 38.32),
-(1, '2020-03-02 21:56:45', 38, 57, 35.42),
-(39, '2020-07-19 18:01:03', 80, 86, 15.16),
-(42, '2020-11-28 17:58:40', 91, 93, 33.81),
-(11, '2020-08-18 13:40:40', 1, 55, 14.62),
-(10, '2021-02-25 08:42:39', 66, 55, 17.27),
-(40, '2021-03-02 19:42:22', 83, 9, 25.78),
-(50, '2020-02-11 16:31:21', 62, 2, 28.72),
-(35, '2020-04-29 17:34:29', 30, 63, 43.19),
-(50, '2021-02-27 15:59:23', 14, 81, 29.01),
-(9, '2020-09-12 18:14:55', 61, 14, 36.19),
-(12, '2020-03-27 02:42:38', 39, 100, 31.39),
-(3, '2020-01-10 01:52:57', 37, 88, 36.61),
-(50, '2020-02-22 20:03:36', 15, 87, 18.93),
-(33, '2020-03-24 21:03:10', 85, 99, 31.51),
-(45, '2020-11-07 13:41:06', 99, 24, 49.12),
-(11, '2020-03-02 07:59:07', 87, 41, 20.8),
-(26, '2020-08-24 06:12:57', 67, 27, 41.56),
-(1, '2020-02-03 22:30:45', 60, 35, 23.86),
-(49, '2021-04-10 16:03:34', 70, 21, 26.44),
-(3, '2021-02-28 13:13:55', 76, 35, 27.65),
-(50, '2021-02-20 21:04:53', 96, 68, 42.21),
-(3, '2020-01-31 19:14:27', 88, 92, 18.95),
-(48, '2020-07-04 21:44:16', 48, 79, 34.77),
-(20, '2020-11-10 06:55:47', 5, 98, 27.25),
-(34, '2021-02-22 09:00:28', 8, 6, 27.65),
-(15, '2020-11-11 19:57:00', 25, 73, 45.02),
-(9, '2020-02-16 14:49:41', 13, 52, 11.68),
-(4, '2021-01-09 15:02:02', 79, 47, 47.63),
-(27, '2020-04-17 21:13:50', 65, 34, 11.59),
-(28, '2021-02-04 14:38:44', 67, 50, 23.91),
-(35, '2020-03-11 23:29:24', 61, 49, 32.71),
-(22, '2021-02-04 04:28:14', 69, 18, 49.84),
-(13, '2020-08-27 21:11:18', 13, 46, 28.17),
-(25, '2020-09-28 15:03:00', 59, 36, 42.55),
-(42, '2020-02-12 13:11:22', 52, 88, 16.01),
-(46, '2021-05-19 12:34:08', 96, 7, 28.93),
-(39, '2020-08-23 14:33:46', 97, 98, 47.43),
-(47, '2020-06-10 22:09:33', 8, 96, 14.85),
-(21, '2020-03-23 16:22:39', 44, 49, 34.18),
-(45, '2020-08-02 03:42:00', 35, 24, 12.46),
-(33, '2020-11-14 01:03:51', 98, 79, 29.14),
-(38, '2021-03-29 10:58:54', 8, 84, 27.1),
-(31, '2020-04-29 12:02:59', 14, 79, 32.12),
-(15, '2020-07-22 16:54:08', 76, 65, 31.98),
-(45, '2020-03-30 10:06:29', 79, 97, 32.38),
-(36, '2021-05-29 07:41:51', 46, 50, 19.56),
-(18, '2020-07-23 14:01:00', 43, 53, 49.88),
-(16, '2020-11-14 18:46:33', 54, 87, 15.88),
-(44, '2020-05-04 04:14:31', 64, 53, 33.49),
-(3, '2020-03-11 03:39:48', 88, 81, 10.23),
-(38, '2020-08-19 21:31:20', 61, 54, 28.19),
-(14, '2020-10-29 23:37:30', 1, 15, 11.29),
-(12, '2020-09-04 09:54:34', 80, 5, 27.57),
-(6, '2021-01-09 15:03:24', 31, 58, 34.22),
-(25, '2020-05-11 00:07:58', 94, 64, 32.56),
-(2, '2020-07-29 10:01:06', 72, 32, 45.93),
-(42, '2021-04-26 16:07:55', 87, 22, 28.14),
-(26, '2020-08-16 02:44:31', 32, 96, 44.77),
-(11, '2020-07-02 15:27:47', 13, 17, 34.89),
-(12, '2020-02-16 15:54:11', 44, 63, 24.98),
-(35, '2021-01-10 01:05:48', 37, 48, 43.63),
-(23, '2021-03-13 22:23:55', 84, 77, 21.41),
-(43, '2021-01-14 11:37:30', 87, 31, 40.24),
-(8, '2020-10-21 21:27:13', 25, 49, 14.86),
-(14, '2020-03-03 18:07:00', 64, 24, 16.06);
-
-
-insert into cars_drivers (car_id, driver_id) values (94, 4),
-(22, 33),
-(60, 26),
-(5, 12),
-(69, 41),
-(90, 37),
-(33, 24),
-(20, 49),
-(66, 10),
-(37, 35),
-(67, 42),
-(96, 6),
-(99, 5),
-(85, 2),
-(77, 37),
-(100, 2),
-(39, 10),
-(21, 36),
-(80, 39),
-(4, 11),
-(49, 9),
-(71, 50),
-(57, 16),
-(16, 31),
-(4, 14),
-(60, 25),
-(36, 1),
-(81, 38),
-(68, 41),
-(6, 50),
-(65, 39),
-(48, 20),
-(30, 18),
-(90, 27),
-(15, 30),
-(57, 33),
-(96, 19),
-(81, 26),
-(5, 22),
-(56, 45),
-(7, 18),
-(4, 48),
-(93, 7),
-(20, 8),
-(23, 17),
-(84, 3),
-(21, 40),
-(33, 8),
-(72, 7),
-(72, 37),
-(77, 43),
-(30, 4),
-(68, 38),
-(3, 3),
-(52, 32),
-(70, 30),
-(72, 21),
-(28, 9),
-(100, 3),
-(32, 36),
-(47, 13),
-(55, 38),
-(55, 18),
-(21, 24),
-(85, 29),
-(86, 22),
-(3, 11),
-(28, 49),
-(82, 42),
-(25, 36),
-(42, 28),
-(59, 20),
-(20, 3),
-(70, 21),
-(84, 7),
-(96, 26),
-(89, 47),
-(46, 19),
-(42, 7),
-(10, 9),
-(38, 15),
-(94, 14),
-(18, 4),
-(5, 38),
-(48, 2),
-(38, 20),
-(55, 23),
-(25, 33),
-(26, 37),
-(12, 35),
-(48, 26),
-(42, 27),
-(5, 19),
-(10, 7),
-(45, 47),
-(80, 29),
-(47, 48),
-(67, 47),
-(14, 40),
-(6, 18);
+insert into likes (id, user_id, photo_id) values (1, 78, 36);
+insert into likes (id, user_id, photo_id) values (2, 47, 59);
+insert into likes (id, user_id, photo_id) values (3, 9, 74);
+insert into likes (id, user_id, photo_id) values (4, 64, 15);
+insert into likes (id, user_id, photo_id) values (5, 47, 70);
+insert into likes (id, user_id, photo_id) values (6, 44, 85);
+insert into likes (id, user_id, photo_id) values (7, 35, 12);
+insert into likes (id, user_id, photo_id) values (8, 59, 61);
+insert into likes (id, user_id, photo_id) values (9, 86, 45);
+insert into likes (id, user_id, photo_id) values (10, 62, 76);
+insert into likes (id, user_id, photo_id) values (11, 52, 86);
+insert into likes (id, user_id, photo_id) values (12, 82, 69);
+insert into likes (id, user_id, photo_id) values (13, 55, 40);
+insert into likes (id, user_id, photo_id) values (14, 84, 30);
+insert into likes (id, user_id, photo_id) values (15, 4, 59);
+insert into likes (id, user_id, photo_id) values (16, 22, 37);
+insert into likes (id, user_id, photo_id) values (17, 50, 33);
+insert into likes (id, user_id, photo_id) values (18, 54, 34);
+insert into likes (id, user_id, photo_id) values (19, 15, 58);
+insert into likes (id, user_id, photo_id) values (20, 42, 52);
+insert into likes (id, user_id, photo_id) values (21, 23, 26);
+insert into likes (id, user_id, photo_id) values (22, 17, 12);
+insert into likes (id, user_id, photo_id) values (23, 66, 31);
+insert into likes (id, user_id, photo_id) values (24, 91, 69);
+insert into likes (id, user_id, photo_id) values (25, 25, 58);
+insert into likes (id, user_id, photo_id) values (26, 99, 53);
+insert into likes (id, user_id, photo_id) values (27, 84, 83);
+insert into likes (id, user_id, photo_id) values (28, 84, 4);
+insert into likes (id, user_id, photo_id) values (29, 75, 83);
+insert into likes (id, user_id, photo_id) values (30, 40, 32);
+insert into likes (id, user_id, photo_id) values (31, 74, 89);
+insert into likes (id, user_id, photo_id) values (32, 62, 97);
+insert into likes (id, user_id, photo_id) values (33, 53, 29);
+insert into likes (id, user_id, photo_id) values (34, 97, 27);
+insert into likes (id, user_id, photo_id) values (35, 60, 51);
+insert into likes (id, user_id, photo_id) values (36, 75, 8);
+insert into likes (id, user_id, photo_id) values (37, 42, 90);
+insert into likes (id, user_id, photo_id) values (38, 8, 38);
+insert into likes (id, user_id, photo_id) values (39, 33, 67);
+insert into likes (id, user_id, photo_id) values (40, 61, 41);
+insert into likes (id, user_id, photo_id) values (41, 36, 13);
+insert into likes (id, user_id, photo_id) values (42, 23, 52);
+insert into likes (id, user_id, photo_id) values (43, 84, 48);
+insert into likes (id, user_id, photo_id) values (44, 63, 17);
+insert into likes (id, user_id, photo_id) values (45, 3, 57);
+insert into likes (id, user_id, photo_id) values (46, 46, 1);
+insert into likes (id, user_id, photo_id) values (47, 89, 69);
+insert into likes (id, user_id, photo_id) values (48, 36, 34);
+insert into likes (id, user_id, photo_id) values (49, 36, 68);
+insert into likes (id, user_id, photo_id) values (50, 5, 41);
+insert into likes (id, user_id, photo_id) values (51, 90, 4);
+insert into likes (id, user_id, photo_id) values (52, 10, 1);
+insert into likes (id, user_id, photo_id) values (53, 18, 49);
+insert into likes (id, user_id, photo_id) values (54, 31, 46);
+insert into likes (id, user_id, photo_id) values (55, 60, 46);
+insert into likes (id, user_id, photo_id) values (56, 63, 16);
+insert into likes (id, user_id, photo_id) values (57, 18, 1);
+insert into likes (id, user_id, photo_id) values (58, 71, 46);
+insert into likes (id, user_id, photo_id) values (59, 65, 49);
+insert into likes (id, user_id, photo_id) values (60, 24, 61);
+insert into likes (id, user_id, photo_id) values (61, 47, 28);
+insert into likes (id, user_id, photo_id) values (62, 73, 42);
+insert into likes (id, user_id, photo_id) values (63, 80, 99);
+insert into likes (id, user_id, photo_id) values (64, 54, 79);
+insert into likes (id, user_id, photo_id) values (65, 98, 24);
+insert into likes (id, user_id, photo_id) values (66, 62, 64);
+insert into likes (id, user_id, photo_id) values (67, 22, 14);
+insert into likes (id, user_id, photo_id) values (68, 82, 30);
+insert into likes (id, user_id, photo_id) values (69, 48, 8);
+insert into likes (id, user_id, photo_id) values (70, 1, 83);
+insert into likes (id, user_id, photo_id) values (71, 95, 58);
+insert into likes (id, user_id, photo_id) values (72, 37, 15);
+insert into likes (id, user_id, photo_id) values (73, 48, 90);
+insert into likes (id, user_id, photo_id) values (74, 17, 21);
+insert into likes (id, user_id, photo_id) values (75, 8, 69);
+insert into likes (id, user_id, photo_id) values (76, 76, 61);
+insert into likes (id, user_id, photo_id) values (77, 16, 82);
+insert into likes (id, user_id, photo_id) values (78, 73, 90);
+insert into likes (id, user_id, photo_id) values (79, 50, 64);
+insert into likes (id, user_id, photo_id) values (80, 78, 98);
+insert into likes (id, user_id, photo_id) values (81, 95, 2);
+insert into likes (id, user_id, photo_id) values (82, 57, 7);
+insert into likes (id, user_id, photo_id) values (83, 1, 47);
+insert into likes (id, user_id, photo_id) values (84, 23, 72);
+insert into likes (id, user_id, photo_id) values (85, 52, 67);
+insert into likes (id, user_id, photo_id) values (86, 12, 81);
+insert into likes (id, user_id, photo_id) values (87, 15, 79);
+insert into likes (id, user_id, photo_id) values (88, 28, 1);
+insert into likes (id, user_id, photo_id) values (89, 3, 23);
+insert into likes (id, user_id, photo_id) values (90, 85, 60);
+insert into likes (id, user_id, photo_id) values (91, 31, 97);
+insert into likes (id, user_id, photo_id) values (92, 39, 58);
+insert into likes (id, user_id, photo_id) values (93, 43, 78);
+insert into likes (id, user_id, photo_id) values (94, 93, 9);
+insert into likes (id, user_id, photo_id) values (95, 65, 15);
+insert into likes (id, user_id, photo_id) values (96, 82, 66);
+insert into likes (id, user_id, photo_id) values (97, 19, 78);
+insert into likes (id, user_id, photo_id) values (98, 23, 47);
+insert into likes (id, user_id, photo_id) values (99, 27, 25);
+insert into likes (id, user_id, photo_id) values (100, 6, 48);
 ```
 [/code-adapter]
 [task-description]
 # Description
-After many kilometers and over the years, the condition of cars is expected to deteriorate.
+Rename those countries, which meet the following conditions:
+- If the country name starts with 'B' – **change** it to '**Blocked**'
+- If the country name starts with 'T' – **change** it to '**Test**'
+- If the country name starts with 'P' – **change** it to '**In Progress**'
 
-Update all **cars** and set the condition to be '**C**'. 
 
-The cars must have a **mileage** greater than **800 000 (inclusive)** or **NULL** and must be older than **2010 (inclusive)**.
-
-**Skip** the cars that contain a **make** value of **Mercedes-Benz**. 
-
-They can work for many more years.
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-```
-SELECT COUNT(*) FROM cars WHERE `condition` = 'C';
-```
+SELECT count(id) FROM addresses as a
+Where a.country ='Blocked';
+SELECT count(id) FROM addresses as a
+Where a.country ='Test';
+SELECT count(id) FROM addresses as a
+Where a.country ='In Progress';
 [/input]
 [output]
-```
-43
-```
+11
+4
+16
 [/output]
 [/test]
 [test]
 [input]
-```
-SELECT `id`, `condition` FROM  `cars` 
-WHERE
-    (`mileage` \>= 800000 OR `mileage` IS NULL)
-        AND `year` \<= 2010
-        AND `make` != 'Mercedes-Benz';
-```
+SELECT a.id FROM addresses as a
+Where a.country ='Blocked';
+SELECT a.id FROM addresses as a
+Where a.country ='Test';
+SELECT a.id FROM addresses as a
+Where a.country ='In Progress';
 [/input]
 [output]
-```
-3
-C
-18
-C
+1
+17
 27
-C
-32
-C
 34
-C
-36
-C
-45
-C
-47
-C
-53
-C
-60
-C
-62
-C
-64
-C
-66
-C
-74
-C
+56
+76
+79
+85
+86
 89
-C
-```
+92
+12
+33
+53
+96
+3
+7
+9
+16
+25
+28
+40
+42
+45
+55
+57
+58
+67
+74
+87
+98
 [/output]
 [/test]
 [/tests]
 [/code-task]
 [/slide]
 
-
 [slide hideTitle]
 # Problem: Delete
-[code-task title="Insert" taskId="java-db-and-MySQL-exam-table-delete" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+[code-task title="Insert" taskId="java-db-and-MySQL-exam-preparation-table-delete" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -1662,743 +1562,658 @@ C
 [/code-editor]
 [code-adapter]
 ```
-CREATE TABLE `addresses` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT,
-    `name` VARCHAR(100) NOT NULL
+create table users (
+    id INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    username VARCHAR(30) NOT NULL UNIQUE,
+    password VARCHAR(30) NOT NULL,
+    email VARCHAR(50) NOT NULL,
+    gender CHAR(1) NOT NULL,
+    age INT(11) NOT NULL,
+    job_title VARCHAR(40) NOT NULL,
+    ip VARCHAR(30) NOT NULL
 );
 
-CREATE TABLE `categories` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT,
-    `name` VARCHAR(10) NOT NULL
+create table addresses (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    address VARCHAR(30) NOT NULL,
+    town VARCHAR(30) NOT NULL,
+    country VARCHAR(30) NOT NULL,
+    user_id INT(11),
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
-CREATE TABLE `clients` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT, 
-    `full_name` VARCHAR(50) NOT NULL,
-    `phone_number` VARCHAR(20) NOT NULL
+create table photos (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    description TEXT NOT NULL,
+    date DATETIME NOT NULL,
+    views INT DEFAULT 0
 );
 
-CREATE TABLE `drivers` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT,
-    `first_name` VARCHAR(30) NOT NULL,
-    `last_name` VARCHAR(30) NOT NULL,
-    `age` INT NOT NULL,
-    `rating` FLOAT DEFAULT 5.5
+create table likes (
+  id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+  photo_id INT,
+  user_id INT,
+  FOREIGN KEY (photo_id) REFERENCES photos(id),
+  FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
-CREATE TABLE `cars`(
-	`id` INT PRIMARY KEY AUTO_INCREMENT,
-    `make` VARCHAR(20) NOT NULL,
-    `model` VARCHAR(20),
-    `year` INT NOT NULL,
-    `mileage` INT,
-    `condition` CHAR(1) NOT NULL, 
-    `category_id` INT NOT NULL,
-
-    CONSTRAINT fk_cars_categories 
-    FOREIGN KEY (`category_id`) REFERENCES `categories`(`id`)
-
+create table comments (
+    id INT PRIMARY KEY AUTO_INCREMENT NOT NULL,
+    comment VARCHAR(255) NOT NULL,
+    date DATETIME NOT NULL,
+    photo_id INT,
+    FOREIGN KEY (photo_id) REFERENCES photos(id)
 );
 
-CREATE TABLE `courses` (
-	`id` INT PRIMARY KEY AUTO_INCREMENT, 
-    `from_address_id` INT NOT NULL,
-    `start` DATETIME NOT NULL,
-    `car_id` INT NOT NULL,
-    `client_id` INT NOT NULL,
-    `bill` DECIMAL (10,2) DEFAULT 10,
-    CONSTRAINT fk_courses_addresses_from 
-    FOREIGN KEY (`from_address_id`) REFERENCES `addresses`(`id`),
-    CONSTRAINT fk_courses_cars
-    FOREIGN KEY (`car_id`) REFERENCES `cars`(`id`),
-    CONSTRAINT fk_courses_clients
-    FOREIGN KEY (`client_id`) REFERENCES `clients`(`id`)
+create table users_photos (
+    user_id INT,
+    photo_id INT,
+    FOREIGN KEY (photo_id) REFERENCES photos(id),
+    FOREIGN KEY (user_id) REFERENCES users(id)
 );
+insert into users (id, username, password, email, gender, age, job_title, ip) values (1, 'ygeratt0', '3rPO8dv0H', 'bjaszczak0@sitemeter.com', 'M', 71, 'Payment Adjustment Coordinator', '122.91.219.203');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (2, 'cdinesen1', 'hYFlUdgod', 'ekinforth1@wufoo.com', 'M', 11, 'Accounting Assistant IV', '247.227.234.168');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (3, 'djura2', '4BgVrIxhF2', 'jfanton2@washingtonpost.com', 'M', 68, 'Nuclear Power Engineer', '82.80.183.148');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (4, 'gjoannidi3', 'WEOjW29bH', 'dmingard3@domainmarket.com', 'M', 98, 'Engineer III', '8.5.83.122');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (5, 'hgrigoryov4', 'U9aH8s4wFns', 'mlittlekit4@cornell.edu', 'F', 4, 'Civil Engineer', '50.162.216.179');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (6, 'ftroppmann5', 'upbSORg4eaKF', 'kmedway5@weather.com', 'M', 1, 'Sales Associate', '163.36.202.248');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (7, 'wsline6', 'oeu5Gbdg0', 'bpidon6@clickbank.net', 'F', 21, 'VP Sales', '148.176.123.206');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (8, 'bvickress7', 'uof8US', 'lguildford7@github.io', 'F', 47, 'Marketing Assistant', '60.134.160.216');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (9, 'cbaythorp8', 'Wvv4a6', 'gbusby8@cmu.edu', 'M', 96, 'Operator', '191.229.117.229');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (10, 'oleckie9', 'r0yxd92hJ', 'tshippard9@dropbox.com', 'F', 77, 'Marketing Manager', '242.210.220.106');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (11, 'bgillingsa', 'kscOsFIZwN9', 'mcockshtta@hc360.com', 'F', 32, 'Sales Associate', '127.30.43.192');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (12, 'aroccob', 'BhDgNI', 'dpendrichb@hhs.gov', 'M', 77, 'Teacher', '138.207.96.207');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (13, 'mkitteringhamc', 'EymGHiRdq', 'bmillikenc@yolasite.com', 'F', 93, 'Programmer I', '2.102.135.89');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (14, 'ssantryd', 'TaaSt860lNym', 'phawksleed@va.gov', 'F', 52, 'Compensation Analyst', '62.112.67.85');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (15, 'cchadbournee', 'rn9E1VE', 'keime@sakura.ne.jp', 'M', 16, 'Senior Developer', '220.181.145.99');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (16, 'ebridatf', 'v5MjwBms', 'kgynnef@yale.edu', 'F', 98, 'Senior Financial Analyst', '110.171.38.253');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (17, 'bferenceg', '9DWf6M', 'fspontong@topsy.com', 'F', 50, 'Sales Associate', '209.13.165.58');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (18, 'jlutmanh', 'UWNMzJ', 'gyousefh@smh.com.au', 'F', 44, 'Clinical Specialist', '50.140.48.37');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (19, 'matthowei', 'RnJuNfYGY', 'sswepstonei@ifeng.com', 'F', 36, 'Internal Auditor', '236.183.33.245');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (20, 'rzywickij', 'L3RE59bc7UKT', 'mokinneallyj@google.com.au', 'M', 3, 'VP Marketing', '238.145.107.93');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (21, 'kwarbeyk', 'hJRjqLg7', 'cshirtk@census.gov', 'F', 72, 'Statistician I', '125.3.182.159');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (22, 'npaddisonl', 'PQJN1j4', 'thubanel@bing.com', 'F', 78, 'Research Associate', '172.15.110.96');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (23, 'rgreatreaxm', 'gUjBZkCsK3J', 'fsabatierm@barnesandnoble.com', 'M', 68, 'Research Nurse', '171.192.178.119');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (24, 'sknealen', 'oIDXyJd', 'mmatevosiann@wufoo.com', 'F', 4, 'Civil Engineer', '133.97.189.237');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (25, 'egurtono', 'a4mvibxK8x6K', 'csigarso@unesco.org', 'M', 71, 'Mechanical Systems Engineer', '236.250.246.104');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (26, 'ghingep', 'A7PgvgktisGD', 'dmacalessp@wordpress.com', 'M', 27, 'Geological Engineer', '200.102.183.66');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (27, 'mgethingq', 'QtqiTqO', 'jhexumq@techcrunch.com', 'M', 99, 'Software Consultant', '47.152.81.170');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (28, 'mbaxsterr', 'aZK2R53mHzzR', 'dlooneyr@linkedin.com', 'M', 93, 'Geologist IV', '209.80.102.59');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (29, 'dpauels', 'pYrcia', 'hmorhalls@tripadvisor.com', 'M', 58, 'Budget/Accounting Analyst III', '224.212.14.142');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (30, 'rmacauleyt', 'hNSexKJdW', 'aitzkint@liveinternet.ru', 'F', 40, 'Project Manager', '55.105.2.73');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (31, 'ceasonu', 'H0R3fZHg', 'sbuddingu@dedecms.com', 'F', 14, 'Computer Systems Analyst IV', '234.157.125.108');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (32, 'ichoakv', 'pVzO0J4qCkHd', 'cwaudv@prnewswire.com', 'F', 24, 'Graphic Designer', '68.224.67.251');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (33, 'htabordw', 'pQpesuiJ', 'rtwomeyw@wordpress.com', 'M', 18, 'Human Resources Assistant III', '194.95.118.38');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (34, 'prestorickx', 'ZFCo6cbFloq', 'rcrosslandx@fastcompany.com', 'M', 98, 'Design Engineer', '254.73.229.165');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (35, 'ylaimabley', 'GemK6Q', 'dfaichneyy@pinterest.com', 'M', 87, 'Recruiter', '9.96.57.246');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (36, 'chartfordz', 'KlUjNlk', 'acrakez@usatoday.com', 'M', 100, 'Web Designer IV', '204.216.76.85');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (37, 'chalgarth10', '4i7vhxzi', 'kwardesworth10@nationalgeographic.com', 'F', 34, 'Editor', '76.242.147.112');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (38, 'tduns11', 'njxK4Qg', 'jpollak11@sun.com', 'F', 61, 'General Manager', '254.69.68.200');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (39, 'lmckirdy12', 'yovJfc', 'ephilippard12@independent.co.uk', 'M', 30, 'Nuclear Power Engineer', '8.145.131.80');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (40, 'bfrichley13', 'pfcCeI7vT', 'anilles13@deviantart.com', 'M', 87, 'Help Desk Technician', '207.122.137.116');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (41, 'galchin14', 'xVO3qP9', 'jmarc14@usda.gov', 'F', 34, 'VP Sales', '21.54.65.122');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (42, 'rgurden15', 'HdSMTRgInY4', 'gmenichelli15@deviantart.com', 'M', 92, 'Civil Engineer', '25.66.13.208');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (43, 'rmcgirr16', 'vA7a5oE4DYJ4', 'ccraker16@studiopress.com', 'F', 25, 'Social Worker', '32.232.94.205');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (44, 'rdomeny17', '7Fe6yt', 'vbamforth17@bing.com', 'F', 77, 'Payment Adjustment Coordinator', '194.2.15.85');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (45, 'vlukasik18', '40zWlGSK', 'cmorshead18@mtv.com', 'M', 57, 'Accountant IV', '92.220.22.196');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (46, 'oseally19', 'uwP2utY', 'rshurmore19@geocities.jp', 'F', 77, 'Physical Therapy Assistant', '201.196.123.181');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (47, 'mhinsch1a', 'L0hzUJRFf', 'hfroggatt1a@wordpress.com', 'M', 72, 'Assistant Manager', '30.93.173.56');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (48, 'mosgood1b', 'fBALVc', 'fbattey1b@shop-pro.jp', 'M', 42, 'Tax Accountant', '2.9.107.221');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (49, 'mtansly1c', 'wF47C67c', 'ccozins1c@digg.com', 'M', 94, 'Nuclear Power Engineer', '83.145.203.194');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (50, 'mcaygill1d', '7j5UttHvB', 'lbelding1d@shinystat.com', 'F', 100, 'Office Assistant II', '222.71.252.186');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (51, 'btander1e', 'ezknvBcjIzs', 'adelue1e@cnet.com', 'F', 23, 'Research Associate', '208.112.162.223');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (52, 'koregan1f', 'un3tV7', 'ptelega1f@gravatar.com', 'F', 58, 'Compensation Analyst', '10.33.17.61');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (53, 'bkelling1g', 'CpZhojY', 'sglashby1g@desdev.cn', 'M', 49, 'Tax Accountant', '216.35.231.9');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (54, 'pcoomer1h', 'BpdKUNVBq', 'amcgahy1h@cornell.edu', 'F', 5, 'Sales Associate', '129.87.220.75');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (55, 'mvonoertzen1i', 'Ffy8msvHTa8', 'ojustun1i@mozilla.org', 'F', 40, 'Graphic Designer', '102.141.128.148');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (56, 'ndelamar1j', 'AB4RFbU8R2J', 'nflacknoe1j@apple.com', 'M', 11, 'Paralegal', '153.81.58.63');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (57, 'kbraitling1k', 'rOUewl0', 'katteridge1k@blogtalkradio.com', 'M', 41, 'Community Outreach Specialist', '170.167.138.146');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (58, 'thavoc1l', 'vxMv955Iw4Su', 'beick1l@plala.or.jp', 'F', 38, 'Pharmacist', '108.231.76.71');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (59, 'lcurtois1m', 'xD1DLJFAE', 'amurrock1m@nydailynews.com', 'F', 13, 'Project Manager', '152.1.228.136');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (60, 'jbousfield1n', '7xHZktv', 'blovart1n@lulu.com', 'F', 1, 'Media Manager IV', '181.127.73.11');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (61, 'abrameld1o', 'cm9bF1cCo7C', 'bpetrik1o@sitemeter.com', 'F', 56, 'Financial Advisor', '193.72.109.207');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (62, 'pbenes1p', '9yWEnJHr', 'istanlike1p@weebly.com', 'F', 12, 'Information Systems Manager', '97.25.153.174');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (63, 'pshellcross1q', 'C9vuYnzjP9M', 'ecurrm1q@rambler.ru', 'M', 79, 'Professor', '247.232.4.56');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (64, 'kkynoch1r', 'aJ48Y1OwP', 'ldunnet1r@devhub.com', 'F', 59, 'Media Manager IV', '173.87.190.122');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (65, 'dcrouch1s', 'Wy5GrY44vv', 'ebarck1s@gnu.org', 'M', 48, 'Senior Sales Associate', '221.189.39.91');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (66, 'ekennaway1t', 'cSfjMHzG2n', 'qdemeter1t@google.nl', 'M', 24, 'Quality Control Specialist', '123.130.49.187');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (67, 'jmauger1u', 'MGiJNeA', 'rgebbie1u@weather.com', 'F', 94, 'Compensation Analyst', '205.12.102.39');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (68, 'cmiddlemist1v', 'SCjLK36HtbEZ', 'npetrou1v@businessinsider.com', 'M', 84, 'Design Engineer', '92.23.118.154');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (69, 'moliveira1w', 'ztNbeirk', 'msoulsby1w@aboutads.info', 'F', 62, 'Research Nurse', '87.140.61.43');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (70, 'urihanek1x', 'V4ZWoTYY', 'mavison1x@imdb.com', 'F', 14, 'Sales Associate', '28.26.169.122');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (71, 'hmatonin1y', 'YjiCXwz', 'sdart1y@senate.gov', 'M', 66, 'General Manager', '132.184.167.20');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (72, 'aflexman1z', 'qoeI4nT', 'sjeannel1z@phoca.cz', 'M', 11, 'Sales Representative', '29.251.198.136');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (73, 'canscott20', 'K7wTETTV3', 'rkyngdon20@is.gd', 'F', 21, 'Electrical Engineer', '249.182.158.229');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (74, 'eblagden21', 'kANtau', 'eishak21@skyrock.com', 'M', 81, 'Associate Professor', '159.95.198.3');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (75, 'jgoody22', '3LU1ae', 'tpearson22@pbs.org', 'F', 8, 'Safety Technician IV', '225.16.97.183');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (76, 'joutright23', 'P6xHqcbdDa9p', 'jselbach23@taobao.com', 'M', 30, 'Environmental Tech', '161.97.33.126');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (77, 'vfaers24', 'e30sOBYHaZ1', 'dsauvain24@privacy.gov.au', 'F', 92, 'Sales Associate', '88.124.45.239');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (78, 'ebenoi25', 'en5iysah', 'ssheddan25@cocolog-nifty.com', 'M', 33, 'Actuary', '76.170.121.132');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (79, 'ddempster26', 'Sh72CkB9G2AO', 'zlates26@sfgate.com', 'F', 49, 'Web Designer III', '253.78.90.66');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (80, 'lizacenko27', '1yXTjx', 'dmcduffie27@multiply.com', 'M', 5, 'Librarian', '107.124.149.83');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (81, 'mbartles28', 'bIXO5oR', 'cmckeggie28@uol.com.br', 'M', 37, 'Account Representative II', '113.100.251.182');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (82, 'yzettoi29', 'ZB956UGda', 'xlancashire29@omniture.com', 'M', 62, 'Graphic Designer', '191.192.27.26');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (83, 'gciccottio2a', '1z6eAq1M3C', 'dgyer2a@cnbc.com', 'M', 65, 'Quality Control Specialist', '50.31.242.200');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (84, 'odalley2b', 'ckvXKP', 'dschrir2b@reddit.com', 'M', 96, 'Health Coach II', '38.54.250.164');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (85, 'sbarrowclough2c', 'apumztwX', 'etorbard2c@epa.gov', 'F', 21, 'Marketing Assistant', '254.148.230.146');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (86, 'ehayle2d', 'xPPoEsOnh', 'cmardell2d@goo.ne.jp', 'M', 5, 'Media Manager I', '59.30.175.162');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (87, 'efellibrand2e', '7ZA5l0lP', 'awinyard2e@reference.com', 'M', 74, 'Graphic Designer', '247.17.158.225');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (88, 'cvela2f', 'iwEiolT', 'ljackson2f@phoca.cz', 'M', 74, 'Administrative Officer', '255.20.9.183');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (89, 'agurney2g', 'j6VD5hZ2wTm', 'haikman2g@google.nl', 'M', 48, 'VP Product Management', '48.184.140.180');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (90, 'hbonelle2h', 'snT4sE8Q', 'mlyles2h@behance.net', 'M', 41, 'Assistant Professor', '181.159.73.18');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (91, 'akillelea2i', '5rUIEbpqzzC', 'mnorbury2i@sun.com', 'M', 8, 'Internal Auditor', '33.67.75.155');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (92, 'aosbourn2j', 'qxj95vBS', 'lbolley2j@is.gd', 'M', 75, 'Recruiting Manager', '202.14.140.226');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (93, 'gmintram2k', 'tOqncfhVuzG', 'atuckwood2k@hubpages.com', 'M', 4, 'Tax Accountant', '88.6.105.69');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (94, 'tszach2l', 'L16FlC', 'wzambonini2l@jiathis.com', 'M', 86, 'Geologist IV', '182.235.232.81');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (95, 'nclaye2m', '4SJbPw', 'cwennington2m@google.com.hk', 'F', 97, 'Staff Scientist', '222.104.84.31');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (96, 'bbodycombe2n', '9DKgekAUbb', 'lwoolrich2n@tuttocitta.it', 'M', 57, 'Data Coordiator', '157.3.62.40');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (97, 'godyvoy2o', 'e9VREWXB3w', 'lwakley2o@google.com.br', 'F', 11, 'Business Systems Development Analyst', '163.68.160.137');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (98, 'xbleby2p', 'YUhUbkriDWH7', 'mbuff2p@blogs.com', 'F', 69, 'Computer Systems Analyst III', '145.223.54.56');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (99, 'balbertson2q', 'dO29b9dn', 'brushton2q@jugem.jp', 'F', 84, 'Associate Professor', '77.198.52.22');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (100, 'lboultwood2r', 'aozaObAgzZY', 'lfortie2r@engadget.com', 'M', 48, 'Senior Developer', '14.159.202.220');
 
-CREATE TABLE `cars_drivers`(
-	`car_id` INT NOT NULL,
-    `driver_id` INT NOT NULL,
-	CONSTRAINT pk_cars_drivers 
-    PRIMARY KEY(`car_id`, `driver_id`),
-    CONSTRAINT fk_cars_drivers_cars 
-    FOREIGN KEY (`car_id`) REFERENCES `cars`(`id`),
-     CONSTRAINT fk_cars_drivers_drivers
-    FOREIGN KEY (`driver_id`) REFERENCES `drivers`(`id`)
-);
+insert into addresses (id, address, town, country, user_id) values (1, '97 Valley Edge Parkway', 'Divinópolis', 'Brazil', 74);
+insert into addresses (id, address, town, country, user_id) values (2, '0 Waubesa Road', 'Neundeut', 'Indonesia', 39);
+insert into addresses (id, address, town, country, user_id) values (3, '177 Blue Bill Park Center', 'Yurimaguas', 'Peru', 70);
+insert into addresses (id, address, town, country, user_id) values (4, '2604 Morrow Crossing', 'Verkh-Usugli', 'Russia', 23);
+insert into addresses (id, address, town, country, user_id) values (5, '2382 Ridgeway Park', 'Boyu', 'China', 50);
+insert into addresses (id, address, town, country, user_id) values (6, '574 Ohio Trail', 'Poitiers', 'France', 54);
+insert into addresses (id, address, town, country, user_id) values (7, '6259 Farwell Avenue', 'Huayacundo Arma', 'Peru', 73);
+insert into addresses (id, address, town, country, user_id) values (8, '929 Glacier Hill Place', 'Colmar', 'France', 63);
+insert into addresses (id, address, town, country, user_id) values (9, '1 Vahlen Avenue', 'Lambayong', 'Philippines', 65);
+insert into addresses (id, address, town, country, user_id) values (10, '47980 Westerfield Junction', 'Obollo-Afor', 'Nigeria', 89);
+insert into addresses (id, address, town, country, user_id) values (11, '9189 Novick Hill', 'La Sarrosa', 'Honduras', 71);
+insert into addresses (id, address, town, country, user_id) values (12, '15 Rusk Avenue', 'Nangan', 'Taiwan', 46);
+insert into addresses (id, address, town, country, user_id) values (13, '002 Jay Pass', 'Valmiera', 'Latvia', 8);
+insert into addresses (id, address, town, country, user_id) values (14, '64298 Parkside Circle', 'Jihuluntu Sumu', 'China', 64);
+insert into addresses (id, address, town, country, user_id) values (15, '7079 Atwood Drive', 'Volovets', 'Ukraine', 99);
+insert into addresses (id, address, town, country, user_id) values (16, '69 Talmadge Drive', 'Puerto Galera', 'Philippines', 94);
+insert into addresses (id, address, town, country, user_id) values (17, '0610 Marcy Court', 'Itapissuma', 'Brazil', 61);
+insert into addresses (id, address, town, country, user_id) values (18, '6308 Mallard Lane', 'Shibushi', 'Japan', 10);
+insert into addresses (id, address, town, country, user_id) values (19, '06 Badeau Street', 'El Cerrito', 'Colombia', 86);
+insert into addresses (id, address, town, country, user_id) values (20, '652 Saint Paul Road', 'Skien', 'Norway', 90);
+insert into addresses (id, address, town, country, user_id) values (21, '028 Browning Junction', 'San Pedro Sacatepéquez', 'Guatemala', 84);
+insert into addresses (id, address, town, country, user_id) values (22, '76801 Washington Point', 'Paris 13', 'France', 21);
+insert into addresses (id, address, town, country, user_id) values (23, '94487 Dunning Place', 'Jonava', 'Lithuania', 53);
+insert into addresses (id, address, town, country, user_id) values (24, '83 Monterey Center', 'Yangxiang', 'China', 15);
+insert into addresses (id, address, town, country, user_id) values (25, '5 Marcy Crossing', 'Reda', 'Poland', 87);
+insert into addresses (id, address, town, country, user_id) values (26, '9780 4th Center', 'Lincuo', 'China', 53);
+insert into addresses (id, address, town, country, user_id) values (27, '5875 Donald Parkway', 'Maragogipe', 'Brazil', 57);
+insert into addresses (id, address, town, country, user_id) values (28, '43 Forest Road', 'Congas', 'Peru', 47);
+insert into addresses (id, address, town, country, user_id) values (29, '564 Melvin Park', 'Svetlogorsk', 'Russia', 21);
+insert into addresses (id, address, town, country, user_id) values (30, '7 Dryden Avenue', 'Banjar Bias', 'Indonesia', 24);
+insert into addresses (id, address, town, country, user_id) values (31, '0662 Petterle Plaza', 'Hauhena', 'Indonesia', 75);
+insert into addresses (id, address, town, country, user_id) values (32, '80 Hansons Junction', 'Gorbunki', 'Russia', 28);
+insert into addresses (id, address, town, country, user_id) values (33, '45 Annamark Way', 'Bassar', 'Togo', 48);
+insert into addresses (id, address, town, country, user_id) values (34, '0 Dawn Trail', 'Itajubá', 'Brazil', 40);
+insert into addresses (id, address, town, country, user_id) values (35, '40 Hansons Crossing', 'Kitami', 'Japan', 69);
+insert into addresses (id, address, town, country, user_id) values (36, '5921 Farragut Terrace', 'Al Kittah', 'Jordan', 40);
+insert into addresses (id, address, town, country, user_id) values (37, '44746 Nobel Drive', 'Pantaibesar', 'Indonesia', 70);
+insert into addresses (id, address, town, country, user_id) values (38, '99066 Fairfield Junction', 'Xumai', 'China', 17);
+insert into addresses (id, address, town, country, user_id) values (39, '43 Colorado Plaza', 'Caohe', 'China', 29);
+insert into addresses (id, address, town, country, user_id) values (40, '518 Milwaukee Road', 'Sucre', 'Peru', 36);
+insert into addresses (id, address, town, country, user_id) values (41, '4001 Straubel Trail', 'Karangcombong', 'Indonesia', 42);
+insert into addresses (id, address, town, country, user_id) values (42, '95 American Place', 'Choco', 'Peru', 4);
+insert into addresses (id, address, town, country, user_id) values (43, '5 Manufacturers Terrace', 'Sanlifan', 'China', 63);
+insert into addresses (id, address, town, country, user_id) values (44, '8 Dapin Avenue', 'Xiaohe', 'China', 1);
+insert into addresses (id, address, town, country, user_id) values (45, '00 Merchant Terrace', 'Naukot', 'Pakistan', 63);
+insert into addresses (id, address, town, country, user_id) values (46, '98960 Fulton Hill', 'Neiva', 'Colombia', 52);
+insert into addresses (id, address, town, country, user_id) values (47, '1279 Twin Pines Terrace', 'Tumba', 'China', 78);
+insert into addresses (id, address, town, country, user_id) values (48, '77615 Mosinee Plaza', 'P’rimorsk’oe', 'Georgia', 85);
+insert into addresses (id, address, town, country, user_id) values (49, '71 Emmet Circle', 'Al Wuday‘', 'Yemen', 76);
+insert into addresses (id, address, town, country, user_id) values (50, '43457 Rowland Alley', 'Arauco', 'Chile', 96);
+insert into addresses (id, address, town, country, user_id) values (51, '16416 Pierstorff Parkway', 'Mulyorejo', 'Indonesia', 45);
+insert into addresses (id, address, town, country, user_id) values (52, '98 North Way', 'Boise', 'United States', 63);
+insert into addresses (id, address, town, country, user_id) values (53, '139 Canary Crossing', 'Pak Phanang', 'Thailand', 84);
+insert into addresses (id, address, town, country, user_id) values (54, '1737 Cody Plaza', 'Qijing', 'China', 70);
+insert into addresses (id, address, town, country, user_id) values (55, '6 Ramsey Place', 'Rawa Mazowiecka', 'Poland', 48);
+insert into addresses (id, address, town, country, user_id) values (56, '27400 Di Loreto Terrace', 'Marechal Deodoro', 'Brazil', 79);
+insert into addresses (id, address, town, country, user_id) values (57, '7991 Esch Trail', 'Bartniczka', 'Poland', 56);
+insert into addresses (id, address, town, country, user_id) values (58, '015 Goodland Circle', 'Lwówek Śląski', 'Poland', 76);
+insert into addresses (id, address, town, country, user_id) values (59, '64236 Maple Wood Junction', 'Longtou’an', 'China', 100);
+insert into addresses (id, address, town, country, user_id) values (60, '25 Saint Paul Crossing', 'Kumba', 'Cameroon', 42);
+insert into addresses (id, address, town, country, user_id) values (61, '9793 Armistice Terrace', 'Haarlem', 'Netherlands', 9);
+insert into addresses (id, address, town, country, user_id) values (62, '57 Springs Street', 'Ninomiya', 'Japan', 79);
+insert into addresses (id, address, town, country, user_id) values (63, '8 Blackbird Trail', 'Néa Róda', 'Greece', 94);
+insert into addresses (id, address, town, country, user_id) values (64, '1222 Stephen Place', 'Sembungan Kidul', 'Indonesia', 46);
+insert into addresses (id, address, town, country, user_id) values (65, '3686 Division Junction', 'Bor Ondor', 'China', 30);
+insert into addresses (id, address, town, country, user_id) values (66, '2 Ridge Oak Terrace', 'Thị Trấn Yên Cát', 'Vietnam', 6);
+insert into addresses (id, address, town, country, user_id) values (67, '9 Village Avenue', 'Criação Velha', 'Portugal', 1);
+insert into addresses (id, address, town, country, user_id) values (68, '90972 Burning Wood Junction', 'Haumeni', 'Indonesia', 78);
+insert into addresses (id, address, town, country, user_id) values (69, '73 Northland Alley', 'Domašinec', 'Croatia', 26);
+insert into addresses (id, address, town, country, user_id) values (70, '6904 Shopko Center', 'Santa Catalina', 'Venezuela', 17);
+insert into addresses (id, address, town, country, user_id) values (71, '1154 Service Park', 'Gunungkendeng', 'Indonesia', 51);
+insert into addresses (id, address, town, country, user_id) values (72, '276 Melrose Way', 'Seren Barat', 'Indonesia', 32);
+insert into addresses (id, address, town, country, user_id) values (73, '8 Ryan Lane', 'Huaqiao', 'China', 14);
+insert into addresses (id, address, town, country, user_id) values (74, '42 Menomonie Point', 'Dois Portos', 'Portugal', 22);
+insert into addresses (id, address, town, country, user_id) values (75, '99299 Fallview Hill', 'Winduraja', 'Indonesia', 93);
+insert into addresses (id, address, town, country, user_id) values (76, '13390 Dorton Pass', 'Brka', 'Bosnia and Herzegovina', 52);
+insert into addresses (id, address, town, country, user_id) values (77, '733 Holy Cross Lane', 'Kuta', 'Nigeria', 77);
+insert into addresses (id, address, town, country, user_id) values (78, '63 Mitchell Place', 'Labuhanjambu', 'Indonesia', 89);
+insert into addresses (id, address, town, country, user_id) values (79, '144 Sachs Road', 'Campina Grande do Sul', 'Brazil', 35);
+insert into addresses (id, address, town, country, user_id) values (80, '21264 Cottonwood Crossing', 'Yangjian', 'China', 91);
+insert into addresses (id, address, town, country, user_id) values (81, '0245 Macpherson Parkway', 'Gembu', 'Nigeria', 100);
+insert into addresses (id, address, town, country, user_id) values (82, '4 Sage Plaza', 'Pasirbitung', 'Indonesia', 55);
+insert into addresses (id, address, town, country, user_id) values (83, '9 Old Shore Trail', 'Daliang', 'China', 41);
+insert into addresses (id, address, town, country, user_id) values (84, '3 International Drive', 'Marseille', 'France', 67);
+insert into addresses (id, address, town, country, user_id) values (85, '8 Gerald Parkway', 'Francisco Morato', 'Brazil', 43);
+insert into addresses (id, address, town, country, user_id) values (86, '9338 Lukken Way', 'Cruz Alta', 'Brazil', 28);
+insert into addresses (id, address, town, country, user_id) values (87, '4 Fulton Road', 'Santo Amaro', 'Portugal', 96);
+insert into addresses (id, address, town, country, user_id) values (88, '9 Spenser Center', 'Sanshan', 'China', 28);
+insert into addresses (id, address, town, country, user_id) values (89, '8184 Canary Center', 'Paulínia', 'Brazil', 65);
+insert into addresses (id, address, town, country, user_id) values (90, '92 Bunting Street', 'Hengxi', 'China', 12);
+insert into addresses (id, address, town, country, user_id) values (91, '8 Pond Junction', 'Oslo', 'Norway', 1);
+insert into addresses (id, address, town, country, user_id) values (92, '6 Warrior Road', 'Cox’s Bāzār', 'Bangladesh', 85);
+insert into addresses (id, address, town, country, user_id) values (93, '28390 Mayfield Crossing', 'Henglian', 'China', 53);
+insert into addresses (id, address, town, country, user_id) values (94, '62795 Spohn Place', 'Kilkenny', 'Ireland', 70);
+insert into addresses (id, address, town, country, user_id) values (95, '95 Colorado Drive', 'Futu', 'China', 12);
+insert into addresses (id, address, town, country, user_id) values (96, '86740 East Way', 'Kairouan', 'Tunisia', 25);
+insert into addresses (id, address, town, country, user_id) values (97, '3858 Prentice Hill', 'Kayes', 'Republic of the Congo', 46);
+insert into addresses (id, address, town, country, user_id) values (98, '7 Grayhawk Trail', 'Malbork', 'Poland', 72);
+insert into addresses (id, address, town, country, user_id) values (99, '43 Sommers Street', 'Komsomol’skiy', 'Russia', 96);
+insert into addresses (id, address, town, country, user_id) values (100, '34 Nobel Point', 'Voloka', 'Ukraine', 87);
 
+insert into photos (id, description, date, views) values (1, 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-09-22 14:48:03', 0);
+insert into photos (id, description, date, views) values (2, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.Fusce consequat. Nulla nisl. Nunc nisl.', '2020-02-03 10:29:22', 0);
+insert into photos (id, description, date, views) values (3, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '2019-11-01 06:51:47', 0);
+insert into photos (id, description, date, views) values (4, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', '2019-05-16 20:59:44', 0);
+insert into photos (id, description, date, views) values (5, 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi77 eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2019-06-25 17:58:28', 0);
+insert into photos (id, description, date, views) values (6, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', '2020-02-21 20:47:40', 0);
+insert into photos (id, description, date, views) values (7, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.Sed ante. Vivamus tortor. Duis mattis egestas metus.', '2019-06-07 18:46:03', 0);
+insert into photos (id, description, date, views) values (8, 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.', '2019-09-04 08:47:14', 0);
+insert into photos (id, description, date, views) values (9, 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', '2019-11-26 17:43:49', 0);
+insert into photos (id, description, date, views) values (10, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '2019-09-11 05:40:14', 0);
+insert into photos (id, description, date, views) values (11, 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', '2019-04-21 00:02:04', 0);
+insert into photos (id, description, date, views) values (12, 'In congue. Etiam justo. Etiam pretium iaculis justo.', '2019-09-29 10:11:56', 0);
+insert into photos (id, description, date, views) values (13, 'Fusce consequat. Nulla nisl. Nunc nisl.Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', '2020-02-17 04:46:39', 0);
+insert into photos (id, description, date, views) values (14, 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.Fusce consequat. Nulla nisl. Nunc nisl.', '2020-02-16 13:49:08', 0);
+insert into photos (id, description, date, views) values (15, 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2019-06-02 00:38:03', 0);
+insert into photos (id, description, date, views) values (16, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', '2019-12-11 12:31:32', 0);
+insert into photos (id, description, date, views) values (17, 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.', '2020-02-02 09:14:40', 0);
+insert into photos (id, description, date, views) values (18, 'Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', '2019-10-27 08:48:46', 0);
+insert into photos (id, description, date, views) values (19, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', '2020-02-01 07:46:42', 0);
+insert into photos (id, description, date, views) values (20, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-05-10 14:23:11', 0);
+insert into photos (id, description, date, views) values (21, 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-07-19 19:01:47', 0);
+insert into photos (id, description, date, views) values (22, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', '2019-11-24 07:45:45', 0);
+insert into photos (id, description, date, views) values (23, 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', '2019-10-13 14:13:42', 0);
+insert into photos (id, description, date, views) values (24, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', '2020-01-28 02:06:00', 0);
+insert into photos (id, description, date, views) values (25, 'In congue. Etiam justo. Etiam pretium iaculis justo.In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '2019-07-20 13:08:03', 0);
+insert into photos (id, description, date, views) values (26, 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', '2019-12-10 15:20:14', 0);
+insert into photos (id, description, date, views) values (27, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '2020-03-08 14:36:04', 0);
+insert into photos (id, description, date, views) values (28, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2019-05-23 19:11:19', 0);
+insert into photos (id, description, date, views) values (29, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '2019-04-29 00:55:07', 0);
+insert into photos (id, description, date, views) values (30, 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', '2019-08-31 11:10:56', 0);
+insert into photos (id, description, date, views) values (31, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '2019-05-06 05:45:48', 0);
+insert into photos (id, description, date, views) values (32, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', '2019-03-10 11:07:44', 0);
+insert into photos (id, description, date, views) values (33, 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', '2019-07-07 15:36:28', 0);
+insert into photos (id, description, date, views) values (34, 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', '2019-08-08 11:30:18', 0);
+insert into photos (id, description, date, views) values (35, 'Sed ante. Vivamus tortor. Duis mattis egestas metus.Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', '2020-02-08 04:53:44', 0);
+insert into photos (id, description, date, views) values (36, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-09-28 06:48:11', 0);
+insert into photos (id, description, date, views) values (37, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-06-30 14:53:38', 0);
+insert into photos (id, description, date, views) values (38, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-04-21 18:51:46', 0);
+insert into photos (id, description, date, views) values (39, 'Phasellus in felis. Donec semper sapien a libero. Nam dui.Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.', '2019-10-21 17:34:48', 0);
+insert into photos (id, description, date, views) values (40, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', '2019-09-07 12:33:58', 0);
+insert into photos (id, description, date, views) values (41, 'Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2020-02-03 00:44:25', 0);
+insert into photos (id, description, date, views) values (42, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.In congue. Etiam justo. Etiam pretium iaculis justo.', '2019-05-11 08:57:18', 0);
+insert into photos (id, description, date, views) values (43, 'Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', '2019-12-07 17:10:45', 0);
+insert into photos (id, description, date, views) values (44, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2019-07-12 14:13:37', 0);
+insert into photos (id, description, date, views) values (45, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2020-03-03 21:15:04', 0);
+insert into photos (id, description, date, views) values (46, 'Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.', '2020-02-20 12:09:00', 0);
+insert into photos (id, description, date, views) values (47, 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.In congue. Etiam justo. Etiam pretium iaculis justo.', '2019-10-29 06:49:58', 0);
+insert into photos (id, description, date, views) values (48, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-07-20 22:37:34', 0);
+insert into photos (id, description, date, views) values (49, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-08-17 05:10:37', 0);
+insert into photos (id, description, date, views) values (50, 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', '2019-11-30 15:13:14', 0);
+insert into photos (id, description, date, views) values (51, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2020-02-08 11:31:47', 0);
+insert into photos (id, description, date, views) values (52, 'Cras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.Phasellus in felis. Donec semper sapien a libero. Nam dui.', '2019-11-06 00:48:48', 0);
+insert into photos (id, description, date, views) values (53, 'Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.Integer tincidunt ante vel ipsum. Praesent blandit lacinia erat. Vestibulum sed magna at nunc commodo placerat.', '2020-03-09 01:13:10', 0);
+insert into photos (id, description, date, views) values (54, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.', '2020-02-09 03:29:50', 0);
+insert into photos (id, description, date, views) values (55, 'Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.In congue. Etiam justo. Etiam pretium iaculis justo.', '2019-10-10 08:58:52', 0);
+insert into photos (id, description, date, views) values (56, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', '2019-10-31 03:15:03', 0);
+insert into photos (id, description, date, views) values (57, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '2019-07-19 02:50:14', 0);
+insert into photos (id, description, date, views) values (58, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-05-30 12:06:27', 0);
+insert into photos (id, description, date, views) values (59, 'In congue. Etiam justo. Etiam pretium iaculis justo.In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '2019-07-22 20:32:43', 0);
+insert into photos (id, description, date, views) values (60, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2019-05-10 14:40:22', 0);
+insert into photos (id, description, date, views) values (61, 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', '2019-11-30 10:47:14', 0);
+insert into photos (id, description, date, views) values (62, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-10-17 04:14:21', 0);
+insert into photos (id, description, date, views) values (63, 'Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.In congue. Etiam justo. Etiam pretium iaculis justo.In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '2019-04-25 18:15:18', 0);
+insert into photos (id, description, date, views) values (64, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-04-15 19:25:07', 0);
+insert into photos (id, description, date, views) values (65, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-03-17 20:00:22', 0);
+insert into photos (id, description, date, views) values (66, 'Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.Quisque id justo sit amet sapien dignissim vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla dapibus dolor vel est. Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.', '2019-04-13 11:12:52', 0);
+insert into photos (id, description, date, views) values (67, 'Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.', '2019-10-20 02:01:46', 0);
+insert into photos (id, description, date, views) values (68, 'Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2019-06-20 00:45:13', 0);
+insert into photos (id, description, date, views) values (69, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', '2020-02-22 11:22:31', 0);
+insert into photos (id, description, date, views) values (70, 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', '2019-04-09 11:51:54', 0);
+insert into photos (id, description, date, views) values (71, 'Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', '2019-11-15 12:35:55', 0);
+insert into photos (id, description, date, views) values (72, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.', '2019-10-11 07:41:23', 0);
+insert into photos (id, description, date, views) values (73, 'Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.', '2019-11-29 22:35:21', 0);
+insert into photos (id, description, date, views) values (74, 'Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.', '2019-08-22 05:42:52', 0);
+insert into photos (id, description, date, views) values (75, 'In hac habitasse platea dictumst. Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo, nec condimentum neque sapien placerat ante. Nulla justo.Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.', '2019-12-26 07:39:13', 0);
+insert into photos (id, description, date, views) values (76, 'In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.', '2019-10-20 20:47:48', 0);
+insert into photos (id, description, date, views) values (77, 'Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.', '2019-10-17 07:22:26', 0);
+insert into photos (id, description, date, views) values (78, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', '2019-11-24 04:43:03', 0);
+insert into photos (id, description, date, views) values (79, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-04-20 05:44:37', 0);
+insert into photos (id, description, date, views) values (80, 'Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.', '2019-06-24 00:14:23', 0);
+insert into photos (id, description, date, views) values (81, 'Proin interdum mauris non ligula pellentesque ultrices. Phasellus id sapien in sapien iaculis congue. Vivamus metus arcu, adipiscing molestie, hendrerit at, vulputate vitae, nisl.', '2019-06-11 08:05:29', 0);
+insert into photos (id, description, date, views) values (82, 'Curabitur gravida nisi at nibh. In hac habitasse platea dictumst. Aliquam augue quam, sollicitudin vitae, consectetuer eget, rutrum at, lorem.', '2019-04-17 15:53:56', 0);
+insert into photos (id, description, date, views) values (83, 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', '2019-11-30 23:23:50', 0);
+insert into photos (id, description, date, views) values (84, 'Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.', '2019-07-29 02:10:03', 0);
+insert into photos (id, description, date, views) values (85, 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '2020-02-23 23:55:36', 0);
+insert into photos (id, description, date, views) values (86, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '2019-07-30 19:28:29', 0);
+insert into photos (id, description, date, views) values (87, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2019-09-02 22:20:32', 0);
+insert into photos (id, description, date, views) values (88, 'Phasellus sit amet erat. Nulla tempus. Vivamus in felis eu sapien cursus vestibulum.Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.', '2020-01-23 09:43:44', 0);
+insert into photos (id, description, date, views) values (89, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', '2019-03-14 08:04:04', 0);
+insert into photos (id, description, date, views) values (90, 'Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.Duis consequat dui nec nisi volutpat eleifend. Donec ut dolor. Morbi vel lectus in quam fringilla rhoncus.Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.', '2019-11-23 13:58:33', 0);
+insert into photos (id, description, date, views) values (91, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.', '2019-04-28 07:38:15', 0);
+insert into photos (id, description, date, views) values (92, 'Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-07-05 22:20:32', 0);
+insert into photos (id, description, date, views) values (93, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2020-02-05 23:16:19', 0);
+insert into photos (id, description, date, views) values (94, 'Quisque porta volutpat erat. Quisque erat eros, viverra eget, congue eget, semper rutrum, nulla. Nunc purus.', '2019-12-08 14:04:01', 0);
+insert into photos (id, description, date, views) values (95, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec pharetra, magna vestibulum aliquet ultrices, erat tortor sollicitudin mi, sit amet lobortis sapien sapien non mi. Integer ac neque.', '2019-03-23 14:59:46', 0);
+insert into photos (id, description, date, views) values (96, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.Maecenas tristique, est et tempus semper, est quam pharetra magna, ac consequat metus sapien ut nunc. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam. Suspendisse potenti.Nullam porttitor lacus at turpis. Donec posuere metus vitae ipsum. Aliquam non mauris.', '2020-01-31 15:07:46', 0);
+insert into photos (id, description, date, views) values (97, 'Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.Sed ante. Vivamus tortor. Duis mattis egestas metus.Aenean fermentum. Donec ut mauris eget massa tempor convallis. Nulla neque libero, convallis eget, eleifend luctus, ultricies eu, nibh.', '2019-07-09 17:14:52', 0);
+insert into photos (id, description, date, views) values (98, 'Mauris enim leo, rhoncus sed, vestibulum sit amet, cursus id, turpis. Integer aliquet, massa id lobortis convallis, tortor risus dapibus augue, vel accumsan tellus nisi eu orci. Mauris lacinia sapien quis libero.Nullam sit amet turpis elementum ligula vehicula consequat. Morbi a ipsum. Integer a nibh.In quis justo. Maecenas rhoncus aliquam lacus. Morbi quis tortor id nulla ultrices aliquet.', '2019-04-25 02:26:39', 0);
+insert into photos (id, description, date, views) values (99, 'Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.', '2019-07-27 12:51:46', 0);
+insert into photos (id, description, date, views) values (100, 'In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2020-03-02 06:00:36', 0);
 
-insert into addresses (`name`) 
-values 
-('24402 Warner Place'),
-('4 La Follette Plaza'),
-('700 Monterey Avenue'),
-('93124 Comanche Way'),
-('57659 Karstens Junction'),
-('361 Caliangt Court'),
-('88941 Starling Drive'),
-('34 Briar Crest Crossing'),
-('2 Cascade Lane'),
-('40 Havey Road'),
-('67636 Tennessee Point'),
-('385 Rieder Center'),
-('32975 Hagan Street'),
-('86462 Buena Vista Point'),
-('1275 Pine View Court'),
-('4673 Colorado Road'),
-('6 Hanover Terrace'),
-('66 Thompson Drive'),
-('4 Haas Lane'),
-('8 Warner Drive'),
-('48738 Thompson Lane'),
-('0590 Lawn Hill'),
-('68 Roxbury Court'),
-('833 Kenwood Plaza'),
-('6 Sachs Way'),
-('77485 Commercial Drive'),
-('80678 Green Ridge Court'),
-('84320 Lotheville Way'),
-('2 Del Mar Park'),
-('04528 Carpenter Plaza'),
-('9590 Briar Crest Street'),
-('02335 Vernon Avenue'),
-('6638 Thompson Point'),
-('0 Mariners Cove Circle'),
-('897 Pine View Park'),
-('835 Calypso Place'),
-('904 Karstens Trail'),
-('52 Corben Pass'),
-('27803 Morningstar Avenue'),
-('214 Esker Trail'),
-('17 Huxley Pass'),
-('2061 Meadow Vale Point'),
-('02 Browning Parkway'),
-('54 3rd Pass'),
-('5 Truax Court'),
-('59402 Kim Court'),
-('59 Atwood Alley'),
-('55759 Valley Edge Pass'),
-('35 Kim Road'),
-('79 Gina Way');
+insert into comments (id, comment, date, photo_id) values (1, 'enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet massa', '2019-06-30 02:41:20', 4);
+insert into comments (id, comment, date, photo_id) values (2, 'et tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum', '2019-10-03 22:43:29', 16);
+insert into comments (id, comment, date, photo_id) values (3, 'turpis a pede posuere nonummy integer non velit donec diam neque vestibulum', '2019-03-30 12:16:55', 88);
+insert into comments (id, comment, date, photo_id) values (4, 'gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras', '2019-10-28 09:33:28', 31);
+insert into comments (id, comment, date, photo_id) values (5, 'in eleifend quam a odio in hac habitasse platea dictumst maecenas ut', '2020-02-13 08:08:43', 68);
+insert into comments (id, comment, date, photo_id) values (6, 'libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla', '2019-07-01 16:22:13', 17);
+insert into comments (id, comment, date, photo_id) values (7, 'interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus', '2019-10-25 14:13:28', 58);
+insert into comments (id, comment, date, photo_id) values (8, 'amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus', '2020-01-08 19:36:41', 85);
+insert into comments (id, comment, date, photo_id) values (9, 'et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet', '2019-12-11 22:46:44', 33);
+insert into comments (id, comment, date, photo_id) values (10, 'fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam', '2019-10-11 22:30:14', 32);
+insert into comments (id, comment, date, photo_id) values (11, 'ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis', '2019-06-17 23:37:46', 19);
+insert into comments (id, comment, date, photo_id) values (12, 'lectus pellentesque eget nunc donec quis orci eget orci vehicula', '2019-11-17 17:25:26', 25);
+insert into comments (id, comment, date, photo_id) values (13, 'sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet', '2019-08-27 15:10:20', 72);
+insert into comments (id, comment, date, photo_id) values (14, 'posuere cubilia curae duis faucibus accumsan odio curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut', '2020-02-09 01:50:14', 68);
+insert into comments (id, comment, date, photo_id) values (15, 'magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum', '2020-02-05 10:38:40', 20);
+insert into comments (id, comment, date, photo_id) values (16, 'curabitur convallis duis consequat dui nec nisi volutpat eleifend donec ut dolor', '2019-10-14 04:55:09', 75);
+insert into comments (id, comment, date, photo_id) values (17, 'nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit mi in porttitor pede justo eu massa', '2020-01-21 13:51:56', 87);
+insert into comments (id, comment, date, photo_id) values (18, 'morbi vestibulum velit id pretium iaculis diam erat fermentum justo', '2019-06-23 03:14:16', 32);
+insert into comments (id, comment, date, photo_id) values (19, 'amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi nulla', '2019-06-09 22:09:57', 1);
+insert into comments (id, comment, date, photo_id) values (20, 'augue aliquam erat volutpat in congue etiam justo etiam pretium iaculis justo in hac habitasse', '2019-09-14 12:02:48', 86);
+insert into comments (id, comment, date, photo_id) values (21, 'sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices phasellus', '2019-09-08 01:08:25', 31);
+insert into comments (id, comment, date, photo_id) values (22, 'vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien', '2019-06-01 04:42:02', 86);
+insert into comments (id, comment, date, photo_id) values (23, 'eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in', '2019-06-23 09:37:03', 36);
+insert into comments (id, comment, date, photo_id) values (24, 'quisque arcu libero rutrum ac lobortis vel dapibus at diam nam tristique tortor', '2019-08-19 10:22:39', 14);
+insert into comments (id, comment, date, photo_id) values (25, 'lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis', '2019-04-28 02:29:51', 25);
+insert into comments (id, comment, date, photo_id) values (26, 'pulvinar sed nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula', '2019-06-04 16:15:48', 6);
+insert into comments (id, comment, date, photo_id) values (27, 'platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum', '2019-05-20 17:32:37', 23);
+insert into comments (id, comment, date, photo_id) values (28, 'est congue elementum in hac habitasse platea dictumst morbi vestibulum velit', '2020-01-01 11:53:26', 41);
+insert into comments (id, comment, date, photo_id) values (29, 'enim leo rhoncus sed vestibulum sit amet cursus id turpis integer aliquet', '2019-09-01 11:50:53', 95);
+insert into comments (id, comment, date, photo_id) values (30, 'vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget massa tempor convallis nulla neque libero', '2019-04-04 23:00:39', 30);
+insert into comments (id, comment, date, photo_id) values (31, 'nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit', '2019-08-20 02:09:40', 37);
+insert into comments (id, comment, date, photo_id) values (32, 'vel nisl duis ac nibh fusce lacus purus aliquet at feugiat non', '2020-02-13 22:49:23', 51);
+insert into comments (id, comment, date, photo_id) values (33, 'in lacus curabitur at ipsum ac tellus semper interdum mauris ullamcorper purus sit amet nulla quisque arcu libero', '2019-11-15 14:41:35', 63);
+insert into comments (id, comment, date, photo_id) values (34, 'a ipsum integer a nibh in quis justo maecenas rhoncus', '2019-05-27 22:56:54', 94);
+insert into comments (id, comment, date, photo_id) values (35, 'nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse', '2019-08-09 16:51:20', 61);
+insert into comments (id, comment, date, photo_id) values (36, 'sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet', '2019-10-01 08:48:14', 15);
+insert into comments (id, comment, date, photo_id) values (37, 'consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer', '2019-09-21 09:55:09', 99);
+insert into comments (id, comment, date, photo_id) values (38, 'dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros', '2020-03-07 03:34:42', 39);
+insert into comments (id, comment, date, photo_id) values (39, 'est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi', '2019-04-19 10:47:36', 51);
+insert into comments (id, comment, date, photo_id) values (40, 'sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis', '2019-10-26 22:54:08', 2);
+insert into comments (id, comment, date, photo_id) values (41, 'convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum', '2019-08-24 06:59:37', 27);
+insert into comments (id, comment, date, photo_id) values (42, 'aliquam quis turpis eget elit sodales scelerisque mauris sit amet', '2020-02-18 21:43:48', 13);
+insert into comments (id, comment, date, photo_id) values (43, 'quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum', '2019-05-13 17:46:32', 84);
+insert into comments (id, comment, date, photo_id) values (44, 'elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula', '2019-12-31 12:37:20', 35);
+insert into comments (id, comment, date, photo_id) values (45, 'nulla tellus in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at', '2019-08-09 13:37:50', 18);
+insert into comments (id, comment, date, photo_id) values (46, 'maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum proin eu mi', '2019-07-14 01:05:30', 80);
+insert into comments (id, comment, date, photo_id) values (47, 'pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus', '2019-12-30 11:29:08', 36);
+insert into comments (id, comment, date, photo_id) values (48, 'purus aliquet at feugiat non pretium quis lectus suspendisse potenti in eleifend quam a', '2020-03-02 11:38:38', 89);
+insert into comments (id, comment, date, photo_id) values (49, 'dolor quis odio consequat varius integer ac leo pellentesque ultrices', '2019-12-13 16:08:33', 47);
+insert into comments (id, comment, date, photo_id) values (50, 'consequat metus sapien ut nunc vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae mauris', '2019-10-24 03:52:51', 63);
+insert into comments (id, comment, date, photo_id) values (51, 'rutrum ac lobortis vel dapibus at diam nam tristique tortor', '2019-12-10 04:02:49', 48);
+insert into comments (id, comment, date, photo_id) values (52, 'sit amet turpis elementum ligula vehicula consequat morbi a ipsum', '2019-08-10 17:18:23', 11);
+insert into comments (id, comment, date, photo_id) values (53, 'rutrum nulla nunc purus phasellus in felis donec semper sapien a', '2019-04-14 16:50:46', 19);
+insert into comments (id, comment, date, photo_id) values (54, 'nisi eu orci mauris lacinia sapien quis libero nullam sit amet turpis elementum ligula vehicula consequat morbi a ipsum', '2019-11-16 16:52:26', 43);
+insert into comments (id, comment, date, photo_id) values (55, 'ut mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo', '2020-01-24 08:44:53', 99);
+insert into comments (id, comment, date, photo_id) values (56, 'in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum', '2019-08-15 03:39:32', 100);
+insert into comments (id, comment, date, photo_id) values (57, 'proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut', '2019-03-18 02:19:14', 22);
+insert into comments (id, comment, date, photo_id) values (58, 'velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo', '2019-10-01 16:54:02', 29);
+insert into comments (id, comment, date, photo_id) values (59, 'maecenas tincidunt lacus at velit vivamus vel nulla eget eros elementum pellentesque quisque porta volutpat erat quisque erat', '2020-01-08 20:47:38', 100);
+insert into comments (id, comment, date, photo_id) values (60, 'morbi a ipsum integer a nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor', '2019-10-09 02:51:18', 91);
+insert into comments (id, comment, date, photo_id) values (61, 'amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere', '2019-11-23 12:54:40', 84);
+insert into comments (id, comment, date, photo_id) values (62, 'suspendisse ornare consequat lectus in est risus auctor sed tristique in tempus sit', '2019-10-29 09:05:45', 31);
+insert into comments (id, comment, date, photo_id) values (63, 'nunc purus phasellus in felis donec semper sapien a libero nam dui', '2019-07-03 08:48:17', 74);
+insert into comments (id, comment, date, photo_id) values (64, 'amet diam in magna bibendum imperdiet nullam orci pede venenatis', '2019-07-12 13:11:48', 23);
+insert into comments (id, comment, date, photo_id) values (65, 'mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing', '2019-08-10 07:09:26', 11);
+insert into comments (id, comment, date, photo_id) values (66, 'augue vel accumsan tellus nisi eu orci mauris lacinia sapien quis libero nullam sit amet', '2019-07-26 13:31:51', 79);
+insert into comments (id, comment, date, photo_id) values (67, 'vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere', '2019-10-26 15:10:13', 94);
+insert into comments (id, comment, date, photo_id) values (68, 'rutrum at lorem integer tincidunt ante vel ipsum praesent blandit lacinia erat vestibulum sed magna at nunc commodo placerat', '2019-04-04 14:26:33', 22);
+insert into comments (id, comment, date, photo_id) values (69, 'ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent', '2020-01-27 08:14:52', 53);
+insert into comments (id, comment, date, photo_id) values (70, 'amet erat nulla tempus vivamus in felis eu sapien cursus vestibulum', '2019-03-14 12:13:49', 17);
+insert into comments (id, comment, date, photo_id) values (71, 'magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien', '2019-09-26 22:52:48', 26);
+insert into comments (id, comment, date, photo_id) values (72, 'iaculis justo in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id mauris', '2019-09-17 18:39:23', 97);
+insert into comments (id, comment, date, photo_id) values (73, 'tempus semper est quam pharetra magna ac consequat metus sapien ut nunc vestibulum ante', '2020-01-08 18:03:46', 14);
+insert into comments (id, comment, date, photo_id) values (74, 'libero ut massa volutpat convallis morbi odio odio elementum eu interdum eu tincidunt in leo maecenas', '2019-11-09 03:19:30', 28);
+insert into comments (id, comment, date, photo_id) values (75, 'nunc viverra dapibus nulla suscipit ligula in lacus curabitur at ipsum ac tellus semper interdum', '2019-11-01 05:46:48', 40);
+insert into comments (id, comment, date, photo_id) values (76, 'in sagittis dui vel nisl duis ac nibh fusce lacus purus aliquet at feugiat', '2019-04-01 15:35:44', 40);
+insert into comments (id, comment, date, photo_id) values (77, 'turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus', '2020-01-13 02:51:56', 23);
+insert into comments (id, comment, date, photo_id) values (78, 'ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget', '2019-09-23 06:54:17', 66);
+insert into comments (id, comment, date, photo_id) values (79, 'nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus', '2020-02-25 09:27:56', 17);
+insert into comments (id, comment, date, photo_id) values (80, 'pharetra magna ac consequat metus sapien ut nunc vestibulum ante ipsum', '2019-12-10 19:05:30', 87);
+insert into comments (id, comment, date, photo_id) values (81, 'nisl nunc rhoncus dui vel sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet', '2019-10-13 02:42:56', 60);
+insert into comments (id, comment, date, photo_id) values (82, 'lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci', '2020-01-09 17:16:51', 83);
+insert into comments (id, comment, date, photo_id) values (83, 'sapien iaculis congue vivamus metus arcu adipiscing molestie hendrerit at vulputate', '2020-02-21 06:19:02', 6);
+insert into comments (id, comment, date, photo_id) values (84, 'at nibh in hac habitasse platea dictumst aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer', '2020-02-01 20:31:43', 99);
+insert into comments (id, comment, date, photo_id) values (85, 'lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti', '2019-12-11 19:18:23', 28);
+insert into comments (id, comment, date, photo_id) values (86, 'posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet pulvinar', '2019-12-15 07:01:13', 26);
+insert into comments (id, comment, date, photo_id) values (87, 'nibh in quis justo maecenas rhoncus aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum', '2019-07-20 10:47:11', 3);
+insert into comments (id, comment, date, photo_id) values (88, 'lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales', '2020-02-01 19:49:30', 41);
+insert into comments (id, comment, date, photo_id) values (89, 'dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat', '2019-08-09 20:41:13', 60);
+insert into comments (id, comment, date, photo_id) values (90, 'sit amet nulla quisque arcu libero rutrum ac lobortis vel dapibus at diam', '2019-05-08 04:44:30', 37);
+insert into comments (id, comment, date, photo_id) values (91, 'vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus', '2019-06-30 17:48:34', 5);
+insert into comments (id, comment, date, photo_id) values (92, 'venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus morbi sem mauris laoreet ut rhoncus aliquet', '2019-07-28 18:14:25', 14);
+insert into comments (id, comment, date, photo_id) values (93, 'lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum mauris non ligula pellentesque ultrices', '2019-10-04 07:38:15', 42);
+insert into comments (id, comment, date, photo_id) values (94, 'lacus purus aliquet at feugiat non pretium quis lectus suspendisse potenti', '2019-05-13 11:51:30', 1);
+insert into comments (id, comment, date, photo_id) values (95, 'elementum eu interdum eu tincidunt in leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in', '2019-08-10 11:46:04', 100);
+insert into comments (id, comment, date, photo_id) values (96, 'amet cursus id turpis integer aliquet massa id lobortis convallis tortor risus dapibus augue vel accumsan', '2019-06-27 06:02:35', 40);
+insert into comments (id, comment, date, photo_id) values (97, 'mi in porttitor pede justo eu massa donec dapibus duis at velit', '2020-01-12 00:42:35', 25);
+insert into comments (id, comment, date, photo_id) values (98, 'blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing', '2019-04-30 07:05:41', 25);
+insert into comments (id, comment, date, photo_id) values (99, 'morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla', '2019-12-14 21:29:01', 23);
+insert into comments (id, comment, date, photo_id) values (100, 'praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in', '2019-08-04 01:52:05', 33);
 
+insert into users_photos (user_id, photo_id) values (8, 11);
+insert into users_photos (user_id, photo_id) values (87, 8);
+insert into users_photos (user_id, photo_id) values (32, 21);
+insert into users_photos (user_id, photo_id) values (88, 43);
+insert into users_photos (user_id, photo_id) values (63, 30);
+insert into users_photos (user_id, photo_id) values (32, 23);
+insert into users_photos (user_id, photo_id) values (13, 38);
+insert into users_photos (user_id, photo_id) values (2, 93);
+insert into users_photos (user_id, photo_id) values (20, 67);
+insert into users_photos (user_id, photo_id) values (12, 12);
+insert into users_photos (user_id, photo_id) values (73, 47);
+insert into users_photos (user_id, photo_id) values (17, 25);
+insert into users_photos (user_id, photo_id) values (70, 70);
+insert into users_photos (user_id, photo_id) values (54, 54);
+insert into users_photos (user_id, photo_id) values (65, 92);
+insert into users_photos (user_id, photo_id) values (92, 99);
+insert into users_photos (user_id, photo_id) values (27, 7);
+insert into users_photos (user_id, photo_id) values (25, 2);
+insert into users_photos (user_id, photo_id) values (29, 97);
+insert into users_photos (user_id, photo_id) values (17, 80);
+insert into users_photos (user_id, photo_id) values (99, 71);
+insert into users_photos (user_id, photo_id) values (46, 61);
+insert into users_photos (user_id, photo_id) values (100, 91);
+insert into users_photos (user_id, photo_id) values (93, 96);
+insert into users_photos (user_id, photo_id) values (60, 34);
+insert into users_photos (user_id, photo_id) values (24, 88);
+insert into users_photos (user_id, photo_id) values (80, 95);
+insert into users_photos (user_id, photo_id) values (65, 27);
+insert into users_photos (user_id, photo_id) values (47, 85);
+insert into users_photos (user_id, photo_id) values (41, 52);
+insert into users_photos (user_id, photo_id) values (67, 24);
+insert into users_photos (user_id, photo_id) values (87, 58);
+insert into users_photos (user_id, photo_id) values (64, 18);
+insert into users_photos (user_id, photo_id) values (23, 83);
+insert into users_photos (user_id, photo_id) values (49, 81);
+insert into users_photos (user_id, photo_id) values (49, 87);
+insert into users_photos (user_id, photo_id) values (75, 64);
+insert into users_photos (user_id, photo_id) values (97, 75);
+insert into users_photos (user_id, photo_id) values (80, 60);
+insert into users_photos (user_id, photo_id) values (24, 33);
+insert into users_photos (user_id, photo_id) values (71, 39);
+insert into users_photos (user_id, photo_id) values (40, 62);
+insert into users_photos (user_id, photo_id) values (73, 79);
+insert into users_photos (user_id, photo_id) values (13, 90);
+insert into users_photos (user_id, photo_id) values (41, 29);
+insert into users_photos (user_id, photo_id) values (29, 31);
+insert into users_photos (user_id, photo_id) values (14, 19);
+insert into users_photos (user_id, photo_id) values (45, 4);
+insert into users_photos (user_id, photo_id) values (22, 3);
+insert into users_photos (user_id, photo_id) values (78, 6);
+insert into users_photos (user_id, photo_id) values (85, 77);
+insert into users_photos (user_id, photo_id) values (22, 28);
+insert into users_photos (user_id, photo_id) values (6, 1);
+insert into users_photos (user_id, photo_id) values (36, 40);
+insert into users_photos (user_id, photo_id) values (78, 82);
+insert into users_photos (user_id, photo_id) values (87, 50);
+insert into users_photos (user_id, photo_id) values (14, 44);
+insert into users_photos (user_id, photo_id) values (75, 32);
+insert into users_photos (user_id, photo_id) values (23, 98);
+insert into users_photos (user_id, photo_id) values (97, 76);
+insert into users_photos (user_id, photo_id) values (92, 66);
+insert into users_photos (user_id, photo_id) values (43, 26);
+insert into users_photos (user_id, photo_id) values (38, 13);
+insert into users_photos (user_id, photo_id) values (67, 65);
+insert into users_photos (user_id, photo_id) values (40, 17);
+insert into users_photos (user_id, photo_id) values (17, 20);
+insert into users_photos (user_id, photo_id) values (31, 86);
 
-insert into categories (`name`) values ('Hatchback'),
-('Coupe'),
-('Cabrio'),
-('Sedan'),
-('SUV');
-
-
-insert into clients (full_name, phone_number) values ('Kalindi Keningham', '(704) 2502909'),
-('Lois Leidl', '(933) 4279635'),
-('Casi Farens', '(933) 4275652'),
-('Janna Kellert', '(353) 9465732'),
-('Conny Barnwille', '(603) 3665240'),
-('Pierrette Dunmuir', '(259) 2916404'),
-('Jasen Yeldham', '(615) 5756557'),
-('Josi Hammelberg', '(481) 7459411'),
-('Ursulina Partner', '(794) 3735520'),
-('Meris Shale', '(842) 4350411'),
-('Colline Dann', '(698) 8299305'),
-('Joyann Garrettson', '(858) 8642667'),
-('Shane Arr', '(261) 2901780'),
-('Owen Strivens', '(807) 1053029'),
-('Moyna Bosnell', '(415) 6922926'),
-('Henrik Sivyer', '(700) 2525329'),
-('Cullan Dogerty', '(915) 9692328'),
-('Jens Aitken', '(537) 7882908'),
-('Lorilee Kryszkiecicz', '(790) 3469957'),
-('Myrta Sogg', '(526) 9403665'),
-('Craig Backe', '(529) 3516992'),
-('Jacquelynn Plackstone', '(121) 5447246'),
-('Therese Gerwood', '(398) 6493437'),
-('Jefferson Montacute', '(831) 1391236'),
-('Jameson Elgar', '(703) 1282215'),
-('Gilberte Shalders', '(370) 1870406'),
-('Siegfried Simony', '(916) 2984263'),
-('Kimball Deem', '(336) 9748036'),
-('Sascha Ruddom', '(940) 1681608'),
-('Janelle Southern', '(805) 3987551'),
-('Chaunce Taffe', '(668) 8705080'),
-('Dante Sagerson', '(973) 2192708'),
-('Carey Flannery', '(785) 9438304'),
-('Lizzie Iscowitz', '(710) 4823991'),
-('Zeke Rowston', '(928) 6001608'),
-('Adelle Kurten', '(612) 4238009'),
-('Rolland Trevna', '(203) 1783410'),
-('Gwynne Bleakley', '(214) 9879666'),
-('Darby Rothert', '(557) 6790489'),
-('Meridel Straker', '(358) 6416340'),
-('Raynor Dobbison', '(700) 1487068'),
-('Burnaby Blackater', '(387) 3392948'),
-('Yul Moseby', '(881) 8598583'),
-('Miles Scruby', '(329) 7886460'),
-('Jeanine Gerren', '(537) 1873169'),
-('Carmel Lendrem', '(745) 5215647'),
-('Allsun O'' Kelleher', '(877) 1770835'),
-('Lanita Crockatt', '(743) 9614592'),
-('Georges Lanston', '(395) 1729778'),
-('Abbey Pedri', '(404) 7308665'),
-('Micheal Newtown', '(994) 6249687'),
-('Sari Chicotti', '(765) 6287494'),
-('Gibbie Liggens', '(858) 2664934'),
-('Odele Sinncock', '(154) 6937931'),
-('Tisha Patey', '(217) 7073612'),
-('Mariele Drinkhall', '(109) 4031108'),
-('Raymund Clace', '(133) 4950964'),
-('Joshuah Duckers', '(252) 6637771'),
-('Kelcy Cody', '(381) 4339413'),
-('Kaylee Ponten', '(477) 2290344'),
-('Mady Viccary', '(380) 9161457'),
-('Mattie Hampton', '(100) 5043476'),
-('Kaylee Coushe', '(890) 6938856'),
-('Lucita Robelet', '(594) 6881660'),
-('Findley Iacoboni', '(443) 6898360'),
-('Allan Wedge', '(916) 3801366'),
-('Cordey Tremblet', '(697) 4597646'),
-('Gaye Sillars', '(828) 7835306'),
-('Pieter Curphey', '(150) 6914055'),
-('Ewen MacDearmont', '(922) 5120547'),
-('Mignon Pennell', '(145) 3388490'),
-('Alano Georgot', '(687) 9387537'),
-('Alley Couch', '(952) 2625195'),
-('Liam Offner', '(367) 8700276'),
-('Elbertina Kleinsinger', '(184) 4563380'),
-('Norean Sharpless', '(613) 5171498'),
-('Vincents Bould', '(918) 6855862'),
-('Parker McGeorge', '(826) 5332304'),
-('Gregorius May', '(519) 1982733'),
-('Bev Wrigglesworth', '(746) 4069382'),
-('Courtney Gawkes', '(872) 3681612'),
-('Courtney Matiasek', '(592) 5339110'),
-('Cori Gunda', '(377) 8637067'),
-('Mandy Scoggin', '(317) 9322808'),
-('Juan Gorry', '(919) 5716455'),
-('Randie Cridge', '(803) 6386812'),
-('Courtnay Devoy', '(560) 1656160'),
-('Haven Seaton', '(892) 2465728'),
-('Nicolai Seaborn', '(898) 4690765'),
-('Mona Crose', '(986) 7635057'),
-('Alyson Jankowski', '(841) 6231478'),
-('Jeralee Tue', '(542) 2919669'),
-('Lonny Carnachen', '(172) 6126123'),
-('Kora Nichol', '(129) 3239339'),
-('Kermy Bertot', '(992) 5466170'),
-('Stanislaus Baggallay', '(873) 4129451'),
-('Danny Simoneau', '(302) 6032370'),
-('Rubin Meaddowcroft', '(970) 9342061'),
-('Marsha Cridge', '(230) 6839868'),
-('Elysha Maydwell', '(842) 4057110');
-
-
-
-insert into drivers (first_name, last_name, age, rating) values ('Alexander', 'Jubb', 40, 3.3),
-('Cullan', 'Geram', 54, 1.5),
-('Germana', 'Emburey', 38, 9.2),
-('Janka', 'Loblie', 48, 7.5),
-('Krystal', 'Cuckson', 54, 9.0),
-('Susy', 'Borrel', 42, 3.7),
-('Saxon', 'Veldman', 43, 3.2),
-('Lenore', 'Romera', 19, 6.9),
-('Enrichetta', 'Jeremiah', 60, 4.4),
-('Delaney', 'Stove', 24, 6.9),
-('Ilaire', 'Tomaszewicz', 25, 7.8),
-('Genna', 'Jaquet', 36, 4.0),
-('Carlotta', 'Dykas', 34, 6.4),
-('Viki', 'Oneal', 57, 4.9),
-('Anthe', 'Larne', 43, 7.1),
-('Philip', 'Penwarden', 45, 3.7),
-('Cristi', 'Ravenshear', 38, 1.4),
-('Louie', 'Vogel', 44, 7.4),
-('Roddie', 'Gribben', 30, 8.0),
-('Boyce', 'Briddock', 45, 6.7),
-('Heidie', 'Blacksell', 19, 3.1),
-('Lexie', 'Salasar', 22, 9.5),
-('Harmony', 'Beincken', 46, 2.2),
-('Dick', 'Eton', 42, 8.8),
-('Philis', 'Treswell', 54, 6.8),
-('Crosby', 'Godlee', 55, 9.6),
-('Gerhard', 'Alderson', 44, 7.2),
-('Dominga', 'Cavy', 24, 3.6),
-('Judye', 'Albrooke', 28, 3.1),
-('Felice', 'Bartol', 47, 2.1),
-('Adolpho', 'Wainscot', 36, 4.7),
-('Aurilia', 'McCready', 49, 1.4),
-('Neill', 'Woof', 37, 8.5),
-('Rab', 'McDarmid', 60, 2.4),
-('Ardith', 'Kienlein', 46, 9.7),
-('Berenice', 'Liddiatt', 56, 1.6),
-('Ailina', 'Sebyer', 59, 8.7),
-('Jaynell', 'Kidson', 22, 6.2),
-('Carina', 'Vanyatin', 38, 4.3),
-('Edna', 'Heatley', 57, 7.5),
-('Hally', 'Barthelmes', 46, 8.9),
-('Leanna', 'Olensby', 40, 4.8),
-('Dell', 'Willoughey', 23, 6.3),
-('Guinevere', 'Gras', 33, 6.3),
-('Jerrie', 'Myles', 20, 1.8),
-('Francoise', 'Cusack', 52, 1.1),
-('Happy', 'Bezant', 41, 8.3),
-('Kingsly', 'Ianiello', 58, 7.1),
-('Leonhard', 'Tukely', 28, 5.1),
-('Joe', 'Waine', 20, 4.4);
-
-
-insert into cars (make, model, `year`, mileage, `condition`, category_id) 
-values 
-('Land Rover', 'Range Rover', 2021, 550259, 'A', 3),
-('GMC', 'Sierra 3500', 2012, 275538, 'A', 4),
-('Infiniti', 'IPL G', 2004, NULL, 'B', 1),
-('Pontiac', 'Grand Prix', 2020, 703642, 'C', 1),
-('Volkswagen', 'Touareg', 2016, 300933, 'B', 4),
-('Pontiac', 'Grand Prix', 2006, 676236, 'B', 5),
-('BMW', '745', 2001, 696455, 'C', 2),
-('Chevrolet', 'S10', 2015, 529397, 'C', 2),
-('Toyota', 'Yaris', 2013, 832895, 'B', 2),
-('Volkswagen', 'Passat', 2002, 62139, 'C', 1),
-('Ford', 'Crown Victoria', 2019, 892185, 'A', 5),
-('Mitsubishi', 'Diamante', 2008, 35697, 'C', 1),
-('Mercedes-Benz', 'CL-Class', 2007, 846549, 'B', 1),
-('Pontiac', 'Trans Sport', 2020, 967608, 'B', 4),
-('Chevrolet', 'Camaro', 2021, 376334, 'B', 5),
-('Nissan', 'Pathfinder', 2007, 613247, 'C', 3),
-('Ford', 'Escort', 2019, 786420, 'A', 3),
-('Infiniti', 'G35', 2004, NULL, 'A', 2),
-('Mercedes-Benz', 'CL-Class', 2015, 634834, 'B', 4),
-('Chevrolet', 'Aveo', 2015, 443680, 'C', 5),
-('Volkswagen', 'Golf', 2010, 693120, 'A', 3),
-('Hyundai', 'Tiburon', 2002, 705696, 'B', 1),
-('Maserati', 'GranTurismo', 2020, 954606, 'B', 1),
-('Chevrolet', 'Corvette', 2008, 149039, 'C', 5),
-('Isuzu', 'Rodeo Sport', 2002, 619414, 'A', 3),
-('Volkswagen', 'Jetta', 2002, 345452, 'C', 3),
-('Aston Martin', 'Vantage', 2010, 890984, 'C', 4),
-('Nissan', 'Altima', 2013, 383760, 'C', 2),
-('Mitsubishi', 'Galant', 2011, 135648, 'A', 1),
-('Suzuki', 'Daewoo Magnus', 2007, 648855, 'A', 1),
-('Mazda', 'B-Series Plus', 2007, 353195, 'B', 4),
-('Chevrolet', 'Astro', 2000, 939056, 'C', 4),
-('Pontiac', 'GTO', 2008, 197528, 'A', 3),
-('Volkswagen', 'Golf', 2004, 846697, 'C', 2),
-('Subaru', 'Forester', 2011, 115948, 'A', 1),
-('Mitsubishi', 'Pajero', 2005, 921496, 'B', 4),
-('Mitsubishi', 'Eclipse', 2020, 420053, 'B', 1),
-('Lincoln', 'Town Car', 2020, 117482, 'C', 1),
-('Kia', 'Spectra', 2002, 296475, 'A', 1),
-('Honda', 'Odyssey', 2007, 509682, 'B', 4),
-('Pontiac', 'Firebird', 2001, 502448, 'A', 1),
-('Chevrolet', 'Suburban 1500', 2004, 57014, 'B', 5),
-('Volkswagen', 'New Beetle', 2003, 499839, 'A', 2),
-('Hyundai', 'Tucson', 2004, 625603, 'C', 1),
-('Oldsmobile', 'Aurora', 2007, NULL, 'C', 3),
-('Audi', 'A4', 2019, 386826, 'B', 1),
-('GMC', 'Savana Cargo Van', 2009, 845679, 'A', 2),
-('Dodge', 'Viper', 2021, NULL, 'B', 3),
-('Porsche', 'Cayenne', 2010, 384812, 'B', 2),
-('BMW', '7 Series', 2011, 444510, 'A', 3),
-('Buick', 'LeSabre', 2013, 415144, 'B', 5),
-('GMC', 'Yukon', 2012, 598861, 'B', 2),
-('Ram', 'C/V', 2007, NULL, 'C', 4),
-('Dodge', 'Viper', 2013, 112908, 'C', 1),
-('Bentley', 'Continental', 2012, 239846, 'A', 1),
-('Jaguar', 'XJ Series', 2010, 172247, 'B', 3),
-('Mercedes-Benz', 'E-Class', 2019, 189389, 'A', 5),
-('Pontiac', 'Bonneville', 2001, 347829, 'B', 4),
-('Porsche', '911', 2013, 929285, 'C', 3),
-('Honda', 'Fit', 2007, 828960, 'C', 4),
-('Mercury', 'Cougar', 2005, 113831, 'B', 4),
-('Dodge', 'Dakota', 2002, 834870, 'C', 2),
-('Land Rover', 'LR2', 2020, 501999, 'C', 4),
-('Buick', 'Hearse', 2010, 827494, 'A', 2),
-('Subaru', 'Impreza', 2005, 720375, 'A', 1),
-('Pontiac', 'Fiero', 2005, 959778, 'B', 4),
-('Mercedes-Benz', '300SL', 2003, 101920, 'C', 4),
-('Nissan', 'Pathfinder', 2001, 257726, 'C', 2),
-('Ford', 'E250', 2006, 776506, 'C', 1),
-('Chevrolet', 'Caprice', 2010, 228425, 'C', 3),
-('Lexus', 'IS-F', 2011, 573601, 'B', 2),
-('Toyota', 'Land Cruiser', 2002, 552697, 'B', 2),
-('Honda', 'Odyssey', 2018, 834619, 'A', 3),
-('Suzuki', 'XL-7', 2008, 836605, 'C', 5),
-('Chevrolet', 'APV', 2016, 451469, 'C', 3),
-('GMC', 'Acadia', 2003, 127222, 'A', 2),
-('Lamborghini', 'Diablo', 2013, 653733, 'A', 5),
-('Chevrolet', 'Silverado 2500', 2004, 680803, 'A', 1),
-('Toyota', 'TundraMax', 2000, 649423, 'A', 2),
-('Lincoln', 'MKT', 2015, 711184, 'A', 1),
-('Chevrolet', 'Silverado 1500', 2004, 271471, 'A', 3),
-('Mitsubishi', 'Pajero', 2006, 289806, 'C', 5),
-('Acura', 'Legend', 2003, 568870, 'A', 2),
-('Mitsubishi', 'Galant', 2003, 409176, 'C', 3),
-('Saab', '9-5', 2000, 78600, 'B', 2),
-('Dodge', 'Challenger', 2012, 206143, 'C', 4),
-('Nissan', 'Altima', 2021, 359239, 'B', 4),
-('Mercedes-Benz', 'CLS-Class', 2015, 544501, 'B', 3),
-('Pontiac', 'Tempest', 2001, 890015, 'C', 3),
-('Mercedes-Benz', 'G-Class', 2017, 6482, 'A', 5),
-('Kia', 'Amanti', 2019, 910099, 'B', 1),
-('Acura', 'Integra', 2003, 767942, 'B', 1),
-('Toyota', 'Celica', 2010, 707042, 'B', 1),
-('Volkswagen', 'Routan', 2014, 47414, 'C', 4),
-('Land Rover', 'Range Rover Sport', 2016, 176967, 'A', 4),
-('Dodge', 'Viper', 2016, 405410, 'A', 4),
-('Ford', 'Escort', 2009, 470950, 'C', 5),
-('Suzuki', 'X-90', 2014, 82451, 'C', 1),
-('Ford', 'E250', 2010, 310386, 'C', 4),
-('Infiniti', 'EX', 2019, 472668, 'C', 3);
-
-insert into courses (from_address_id, `start`, car_id, client_id, bill) values (29, '2020-01-01 01:26:11', 29, 86, 46.92),
-(1, '2020-04-26 17:51:13', 80, 16, 14.47),
-(27, '2020-02-18 14:00:01', 25, 86, 44.01),
-(3, '2020-03-22 04:23:48', 92, 59, 24.24),
-(34, '2021-04-17 12:30:28', 74, 72, 45.83),
-(42, '2020-09-21 22:50:50', 1, 69, 18.23),
-(31, '2020-10-16 04:58:11', 78, 4, 21.93),
-(15, '2020-01-13 05:32:42', 100, 89, 21.56),
-(41, '2020-02-06 22:32:14', 22, 48, 40.49),
-(11, '2020-06-06 22:44:50', 63, 92, 15.56),
-(1, '2020-08-26 06:09:21', 83, 63, 29.98),
-(12, '2021-04-20 09:34:41', 93, 53, 43.27),
-(28, '2020-02-04 04:59:33', 80, 89, 32.36),
-(31, '2021-01-19 11:05:43', 13, 65, 33.05),
-(18, '2020-04-17 23:42:06', 49, 63, 37.56),
-(5, '2021-02-06 01:03:30', 37, 61, 17.6),
-(28, '2020-10-29 05:10:21', 47, 19, 30.46),
-(12, '2021-04-18 11:35:23', 5, 79, 21.54),
-(21, '2020-07-03 21:38:23', 77, 28, 11.36),
-(18, '2020-02-27 06:06:45', 4, 28, 44.72),
-(34, '2020-08-02 15:43:34', 50, 88, 30.46),
-(27, '2020-04-10 23:14:06', 33, 86, 16.99),
-(17, '2021-04-30 06:25:18', 36, 78, 30.07),
-(42, '2020-03-24 21:08:22', 6, 70, 27.03),
-(6, '2020-10-01 00:35:46', 33, 92, 47.11),
-(11, '2021-02-02 04:44:05', 55, 88, 46.57),
-(13, '2021-05-02 12:52:14', 2, 31, 31.31),
-(42, '2020-11-11 11:15:42', 44, 37, 23.86),
-(31, '2020-11-14 07:12:00', 20, 78, 32.51),
-(23, '2021-05-25 02:55:43', 45, 41, 45.97),
-(4, '2020-12-12 03:06:06', 79, 19, 26.58),
-(5, '2020-09-10 01:55:19', 75, 22, 36.22),
-(10, '2020-02-06 02:03:35', 76, 8, 17.93),
-(16, '2020-06-13 10:53:40', 82, 86, 31.57),
-(3, '2020-01-15 09:11:40', 77, 12, 38.32),
-(1, '2020-03-02 21:56:45', 38, 57, 35.42),
-(39, '2020-07-19 18:01:03', 80, 86, 15.16),
-(42, '2020-11-28 17:58:40', 91, 93, 33.81),
-(11, '2020-08-18 13:40:40', 1, 55, 14.62),
-(10, '2021-02-25 08:42:39', 66, 55, 17.27),
-(40, '2021-03-02 19:42:22', 83, 9, 25.78),
-(50, '2020-02-11 16:31:21', 62, 2, 28.72),
-(35, '2020-04-29 17:34:29', 30, 63, 43.19),
-(50, '2021-02-27 15:59:23', 14, 81, 29.01),
-(9, '2020-09-12 18:14:55', 61, 14, 36.19),
-(12, '2020-03-27 02:42:38', 39, 100, 31.39),
-(3, '2020-01-10 01:52:57', 37, 88, 36.61),
-(50, '2020-02-22 20:03:36', 15, 87, 18.93),
-(33, '2020-03-24 21:03:10', 85, 99, 31.51),
-(45, '2020-11-07 13:41:06', 99, 24, 49.12),
-(11, '2020-03-02 07:59:07', 87, 41, 20.8),
-(26, '2020-08-24 06:12:57', 67, 27, 41.56),
-(1, '2020-02-03 22:30:45', 60, 35, 23.86),
-(49, '2021-04-10 16:03:34', 70, 21, 26.44),
-(3, '2021-02-28 13:13:55', 76, 35, 27.65),
-(50, '2021-02-20 21:04:53', 96, 68, 42.21),
-(3, '2020-01-31 19:14:27', 88, 92, 18.95),
-(48, '2020-07-04 21:44:16', 48, 79, 34.77),
-(20, '2020-11-10 06:55:47', 5, 98, 27.25),
-(34, '2021-02-22 09:00:28', 8, 6, 27.65),
-(15, '2020-11-11 19:57:00', 25, 73, 45.02),
-(9, '2020-02-16 14:49:41', 13, 52, 11.68),
-(4, '2021-01-09 15:02:02', 79, 47, 47.63),
-(27, '2020-04-17 21:13:50', 65, 34, 11.59),
-(28, '2021-02-04 14:38:44', 67, 50, 23.91),
-(35, '2020-03-11 23:29:24', 61, 49, 32.71),
-(22, '2021-02-04 04:28:14', 69, 18, 49.84),
-(13, '2020-08-27 21:11:18', 13, 46, 28.17),
-(25, '2020-09-28 15:03:00', 59, 36, 42.55),
-(42, '2020-02-12 13:11:22', 52, 88, 16.01),
-(46, '2021-05-19 12:34:08', 96, 7, 28.93),
-(39, '2020-08-23 14:33:46', 97, 98, 47.43),
-(47, '2020-06-10 22:09:33', 8, 96, 14.85),
-(21, '2020-03-23 16:22:39', 44, 49, 34.18),
-(45, '2020-08-02 03:42:00', 35, 24, 12.46),
-(33, '2020-11-14 01:03:51', 98, 79, 29.14),
-(38, '2021-03-29 10:58:54', 8, 84, 27.1),
-(31, '2020-04-29 12:02:59', 14, 79, 32.12),
-(15, '2020-07-22 16:54:08', 76, 65, 31.98),
-(45, '2020-03-30 10:06:29', 79, 97, 32.38),
-(36, '2021-05-29 07:41:51', 46, 50, 19.56),
-(18, '2020-07-23 14:01:00', 43, 53, 49.88),
-(16, '2020-11-14 18:46:33', 54, 87, 15.88),
-(44, '2020-05-04 04:14:31', 64, 53, 33.49),
-(3, '2020-03-11 03:39:48', 88, 81, 10.23),
-(38, '2020-08-19 21:31:20', 61, 54, 28.19),
-(14, '2020-10-29 23:37:30', 1, 15, 11.29),
-(12, '2020-09-04 09:54:34', 80, 5, 27.57),
-(6, '2021-01-09 15:03:24', 31, 58, 34.22),
-(25, '2020-05-11 00:07:58', 94, 64, 32.56),
-(2, '2020-07-29 10:01:06', 72, 32, 45.93),
-(42, '2021-04-26 16:07:55', 87, 22, 28.14),
-(26, '2020-08-16 02:44:31', 32, 96, 44.77),
-(11, '2020-07-02 15:27:47', 13, 17, 34.89),
-(12, '2020-02-16 15:54:11', 44, 63, 24.98),
-(35, '2021-01-10 01:05:48', 37, 48, 43.63),
-(23, '2021-03-13 22:23:55', 84, 77, 21.41),
-(43, '2021-01-14 11:37:30', 87, 31, 40.24),
-(8, '2020-10-21 21:27:13', 25, 49, 14.86),
-(14, '2020-03-03 18:07:00', 64, 24, 16.06);
-
-
-insert into cars_drivers (car_id, driver_id) values (94, 4),
-(22, 33),
-(60, 26),
-(5, 12),
-(69, 41),
-(90, 37),
-(33, 24),
-(20, 49),
-(66, 10),
-(37, 35),
-(67, 42),
-(96, 6),
-(99, 5),
-(85, 2),
-(77, 37),
-(100, 2),
-(39, 10),
-(21, 36),
-(80, 39),
-(4, 11),
-(49, 9),
-(71, 50),
-(57, 16),
-(16, 31),
-(4, 14),
-(60, 25),
-(36, 1),
-(81, 38),
-(68, 41),
-(6, 50),
-(65, 39),
-(48, 20),
-(30, 18),
-(90, 27),
-(15, 30),
-(57, 33),
-(96, 19),
-(81, 26),
-(5, 22),
-(56, 45),
-(7, 18),
-(4, 48),
-(93, 7),
-(20, 8),
-(23, 17),
-(84, 3),
-(21, 40),
-(33, 8),
-(72, 7),
-(72, 37),
-(77, 43),
-(30, 4),
-(68, 38),
-(3, 3),
-(52, 32),
-(70, 30),
-(72, 21),
-(28, 9),
-(100, 3),
-(32, 36),
-(47, 13),
-(55, 38),
-(55, 18),
-(21, 24),
-(85, 29),
-(86, 22),
-(3, 11),
-(28, 49),
-(82, 42),
-(25, 36),
-(42, 28),
-(59, 20),
-(20, 3),
-(70, 21),
-(84, 7),
-(96, 26),
-(89, 47),
-(46, 19),
-(42, 7),
-(10, 9),
-(38, 15),
-(94, 14),
-(18, 4),
-(5, 38),
-(48, 2),
-(38, 20),
-(55, 23),
-(25, 33),
-(26, 37),
-(12, 35),
-(48, 26),
-(42, 27),
-(5, 19),
-(10, 7),
-(45, 47),
-(80, 29),
-(47, 48),
-(67, 47),
-(14, 40),
-(6, 18);
+insert into likes (id, user_id, photo_id) values (1, 78, 36);
+insert into likes (id, user_id, photo_id) values (2, 47, 59);
+insert into likes (id, user_id, photo_id) values (3, 9, 74);
+insert into likes (id, user_id, photo_id) values (4, 64, 15);
+insert into likes (id, user_id, photo_id) values (5, 47, 70);
+insert into likes (id, user_id, photo_id) values (6, 44, 85);
+insert into likes (id, user_id, photo_id) values (7, 35, 12);
+insert into likes (id, user_id, photo_id) values (8, 59, 61);
+insert into likes (id, user_id, photo_id) values (9, 86, 45);
+insert into likes (id, user_id, photo_id) values (10, 62, 76);
+insert into likes (id, user_id, photo_id) values (11, 52, 86);
+insert into likes (id, user_id, photo_id) values (12, 82, 69);
+insert into likes (id, user_id, photo_id) values (13, 55, 40);
+insert into likes (id, user_id, photo_id) values (14, 84, 30);
+insert into likes (id, user_id, photo_id) values (15, 4, 59);
+insert into likes (id, user_id, photo_id) values (16, 22, 37);
+insert into likes (id, user_id, photo_id) values (17, 50, 33);
+insert into likes (id, user_id, photo_id) values (18, 54, 34);
+insert into likes (id, user_id, photo_id) values (19, 15, 58);
+insert into likes (id, user_id, photo_id) values (20, 42, 52);
+insert into likes (id, user_id, photo_id) values (21, 23, 26);
+insert into likes (id, user_id, photo_id) values (22, 17, 12);
+insert into likes (id, user_id, photo_id) values (23, 66, 31);
+insert into likes (id, user_id, photo_id) values (24, 91, 69);
+insert into likes (id, user_id, photo_id) values (25, 25, 58);
+insert into likes (id, user_id, photo_id) values (26, 99, 53);
+insert into likes (id, user_id, photo_id) values (27, 84, 83);
+insert into likes (id, user_id, photo_id) values (28, 84, 4);
+insert into likes (id, user_id, photo_id) values (29, 75, 83);
+insert into likes (id, user_id, photo_id) values (30, 40, 32);
+insert into likes (id, user_id, photo_id) values (31, 74, 89);
+insert into likes (id, user_id, photo_id) values (32, 62, 97);
+insert into likes (id, user_id, photo_id) values (33, 53, 29);
+insert into likes (id, user_id, photo_id) values (34, 97, 27);
+insert into likes (id, user_id, photo_id) values (35, 60, 51);
+insert into likes (id, user_id, photo_id) values (36, 75, 8);
+insert into likes (id, user_id, photo_id) values (37, 42, 90);
+insert into likes (id, user_id, photo_id) values (38, 8, 38);
+insert into likes (id, user_id, photo_id) values (39, 33, 67);
+insert into likes (id, user_id, photo_id) values (40, 61, 41);
+insert into likes (id, user_id, photo_id) values (41, 36, 13);
+insert into likes (id, user_id, photo_id) values (42, 23, 52);
+insert into likes (id, user_id, photo_id) values (43, 84, 48);
+insert into likes (id, user_id, photo_id) values (44, 63, 17);
+insert into likes (id, user_id, photo_id) values (45, 3, 57);
+insert into likes (id, user_id, photo_id) values (46, 46, 1);
+insert into likes (id, user_id, photo_id) values (47, 89, 69);
+insert into likes (id, user_id, photo_id) values (48, 36, 34);
+insert into likes (id, user_id, photo_id) values (49, 36, 68);
+insert into likes (id, user_id, photo_id) values (50, 5, 41);
+insert into likes (id, user_id, photo_id) values (51, 90, 4);
+insert into likes (id, user_id, photo_id) values (52, 10, 1);
+insert into likes (id, user_id, photo_id) values (53, 18, 49);
+insert into likes (id, user_id, photo_id) values (54, 31, 46);
+insert into likes (id, user_id, photo_id) values (55, 60, 46);
+insert into likes (id, user_id, photo_id) values (56, 63, 16);
+insert into likes (id, user_id, photo_id) values (57, 18, 1);
+insert into likes (id, user_id, photo_id) values (58, 71, 46);
+insert into likes (id, user_id, photo_id) values (59, 65, 49);
+insert into likes (id, user_id, photo_id) values (60, 24, 61);
+insert into likes (id, user_id, photo_id) values (61, 47, 28);
+insert into likes (id, user_id, photo_id) values (62, 73, 42);
+insert into likes (id, user_id, photo_id) values (63, 80, 99);
+insert into likes (id, user_id, photo_id) values (64, 54, 79);
+insert into likes (id, user_id, photo_id) values (65, 98, 24);
+insert into likes (id, user_id, photo_id) values (66, 62, 64);
+insert into likes (id, user_id, photo_id) values (67, 22, 14);
+insert into likes (id, user_id, photo_id) values (68, 82, 30);
+insert into likes (id, user_id, photo_id) values (69, 48, 8);
+insert into likes (id, user_id, photo_id) values (70, 1, 83);
+insert into likes (id, user_id, photo_id) values (71, 95, 58);
+insert into likes (id, user_id, photo_id) values (72, 37, 15);
+insert into likes (id, user_id, photo_id) values (73, 48, 90);
+insert into likes (id, user_id, photo_id) values (74, 17, 21);
+insert into likes (id, user_id, photo_id) values (75, 8, 69);
+insert into likes (id, user_id, photo_id) values (76, 76, 61);
+insert into likes (id, user_id, photo_id) values (77, 16, 82);
+insert into likes (id, user_id, photo_id) values (78, 73, 90);
+insert into likes (id, user_id, photo_id) values (79, 50, 64);
+insert into likes (id, user_id, photo_id) values (80, 78, 98);
+insert into likes (id, user_id, photo_id) values (81, 95, 2);
+insert into likes (id, user_id, photo_id) values (82, 57, 7);
+insert into likes (id, user_id, photo_id) values (83, 1, 47);
+insert into likes (id, user_id, photo_id) values (84, 23, 72);
+insert into likes (id, user_id, photo_id) values (85, 52, 67);
+insert into likes (id, user_id, photo_id) values (86, 12, 81);
+insert into likes (id, user_id, photo_id) values (87, 15, 79);
+insert into likes (id, user_id, photo_id) values (88, 28, 1);
+insert into likes (id, user_id, photo_id) values (89, 3, 23);
+insert into likes (id, user_id, photo_id) values (90, 85, 60);
+insert into likes (id, user_id, photo_id) values (91, 31, 97);
+insert into likes (id, user_id, photo_id) values (92, 39, 58);
+insert into likes (id, user_id, photo_id) values (93, 43, 78);
+insert into likes (id, user_id, photo_id) values (94, 93, 9);
+insert into likes (id, user_id, photo_id) values (95, 65, 15);
+insert into likes (id, user_id, photo_id) values (96, 82, 66);
+insert into likes (id, user_id, photo_id) values (97, 19, 78);
+insert into likes (id, user_id, photo_id) values (98, 23, 47);
+insert into likes (id, user_id, photo_id) values (99, 27, 25);
+insert into likes (id, user_id, photo_id) values (100, 6, 48);
 ```
 [/code-adapter]
 [task-description]
 # Description
-Some of the clients have not used the services of our company recently, so we need to remove them 
-from the database.	
+As you remember at the beginning of our work, we **inserted** and **updated** some data. 
 
-**Delete** all **clients** from "**clients**" table, that do not have any courses and the **count** of the **characters** in the "**full_name**" is more than **3** characters. 
+Now you need to **remove** some **addresses**.	
+
+**Delete** all **addresses** from table **addresses**, which **id** is divisible by **3**.
+
+
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-SELECT COUNT(\*) FROM `clients`;
+SELECT count(\*) FROM addresses
+WHERE id BETWEEN 1 and 100;
 [/input]
 [output]
-63
+67
 [/output]
 [/test]
 [test]
 [input]
-SELECT id, full_name FROM `clients`;
+SELECT count(\*) FROM addresses as a
+WHERE a.id%3=0 BETWEEN 1 and 100;
 [/input]
 [output]
-2
-Lois Leidl
-4
-Janna Kellert
-5
-Conny Barnwille
-6
-Pierrette Dunmuir
-7
-Jasen Yeldham
-8
-Josi Hammelberg
-9
-Ursulina Partner
-12
-Joyann Garrettson
-14
-Owen Strivens
-15
-Moyna Bosnell
-16
-Henrik Sivyer
-17
-Cullan Dogerty
-18
-Jens Aitken
-19
-Lorilee Kryszkiecicz
-21
-Craig Backe
-22
-Jacquelynn Plackstone
-24
-Jefferson Montacute
-27
-Siegfried Simony
-28
-Kimball Deem
-31
-Chaunce Taffe
-32
-Dante Sagerson
-34
-Lizzie Iscowitz
-35
-Zeke Rowston
-36
-Adelle Kurten
-37
-Rolland Trevna
-41
-Raynor Dobbison
-46
-Carmel Lendrem
-47
-Allsun O' Kelleher
-48
-Lanita Crockatt
-49
-Georges Lanston
-50
-Abbey Pedri
-52
-Sari Chicotti
-53
-Gibbie Liggens
-54
-Odele Sinncock
-55
-Tisha Patey
-57
-Raymund Clace
-58
-Joshuah Duckers
-59
-Kelcy Cody
-61
-Mady Viccary
-63
-Kaylee Coushe
-64
-Lucita Robelet
-65
-Findley Iacoboni
-68
-Gaye Sillars
-69
-Pieter Curphey
-70
-Ewen MacDearmont
-72
-Alano Georgot
-73
-Alley Couch
-77
-Vincents Bould
-78
-Parker McGeorge
-79
-Gregorius May
-81
-Courtney Gawkes
-84
-Mandy Scoggin
-86
-Randie Cridge
-87
-Courtnay Devoy
-88
-Haven Seaton
-89
-Nicolai Seaborn
-92
-Jeralee Tue
-93
-Lonny Carnachen
-96
-Stanislaus Baggallay
-97
-Danny Simoneau
-98
-Rubin Meaddowcroft
-99
-Marsha Cridge
-100
-Elysha Maydwell
+0
 [/output]
 [/test]
 [/tests]
