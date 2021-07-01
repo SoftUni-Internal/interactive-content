@@ -4,7 +4,8 @@
 
 # Forms Overview
 
-js-angular-forms-12-13-Handling-Forms-and-forms-overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-12-13-Handling-Forms-and-forms-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Forms in Angular allow us to handle user input data in a fast and interactive manner.
 
@@ -26,7 +27,7 @@ They also provide a way to track changes.
 
 # Template-Driven Forms
 
-js-angular-forms-14-Template-Driven-Forms
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-14-Template-Driven-Forms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Template-driven forms are not as scalable as Reactive forms. 
 
@@ -45,7 +46,8 @@ Follow these steps when building a form by writing templates using the Angular t
 
 # Problem: Create a Template-Driven Form
 
-js-angular-forms-15-problem-Create-a-Template-Driven-Form
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-15-problem-Create-a-Template-Driven-Form-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Create a **template-driven** form that looks like this:
 
@@ -67,7 +69,8 @@ As you can see above, it contains:
 
 # Importing Bootstrap
 
-js-angular-forms-16-Import-Bootstrap
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-16-Import-Bootstrap-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Bootstrap is a very powerful JavaScript plugin and one of the most popular front-end toolkits.
 
@@ -96,7 +99,8 @@ You will use Bootstrap to create **containers**, **form-groups**, **form-control
 
 # Introducing Forms Module
 
-js-angular-forms-17-Introducing-Forms-Module
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-17-Introducing-Forms-Module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Since Angular is module-based, in order to handle forms, we have to import the **FormsModule**.
 
@@ -124,7 +128,7 @@ For a full list of the exported directives, you can refer to [Angular's document
 
 # Creating a Form Component
 
-js-angular-forms-18-Create-Form-Component
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-18-Create-Form-Component-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Defining the Data Model
 
@@ -205,7 +209,7 @@ Keep an eye on the `submitted` property and `onSubmit` method - they will be use
 
 # Initial HTML Template
 
-js-angular-forms-19-20-Initial-HTML-Template
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-19-20-Initial-HTML-Template-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Use the following HTML to create the template.
 
@@ -260,7 +264,7 @@ This is a **Bootstrap** class name that will automatically apply **styling** to 
 
 # The NgModel Directive
 
-js-angular-forms-21-The-NgModel-Directive
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-21-The-NgModel-Directive-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We need to display, listen, and extract data at the same time.
 
@@ -292,7 +296,7 @@ If we want Angular to track the user interaction and value of a given form's con
 
 # The NgForm Directive
 
-js-angular-forms-22-The-NgForm-Directive
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-22-The-NgForm-Directive-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Declare a template variable inside the form.
 
@@ -314,7 +318,7 @@ The **NgForm Directive** also includes these additional features:
 
 # Accessing the Local Reference
 
-js-angular-forms-23-Access-the-Local-Reference
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-23-Access-the-Local-Reference-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In Angular, we can easily fetch a value of any input through local references.
 
@@ -339,7 +343,8 @@ Inside, we print the properties of `this.form` to the console by using the `cons
 
 # Submitting a Form
 
-js-angular-forms-24-Submit-a-Form
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-24-Submit-a-Form-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 The **submit** button at the bottom of our form does not perform anything by itself.
 
@@ -385,7 +390,7 @@ This way we can show something else like a **loading** animation or a **read-onl
 
 # Tracking Form State
 
-js-angular-forms-25-Tracking-Form-State
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-25-Tracking-Form-State-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **NgForm Directive** tracks if:
 - The user has touched the control
@@ -406,7 +411,7 @@ It can also **update** the control with special Angular CSS classes and leverage
 
 # Tracking Control State
 
-js-angular-forms-26-Track-Control-State
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-26-Track-Control-State-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Angular adds custom CSS classes to input fields and forms, depending on their states.
  
@@ -434,7 +439,7 @@ These two classes are often used when we want to inform the user of wrong input 
 
 # Adding Custom CSS For a Visual Feedback
 
-js-angular-forms-27-Add-Custom-CSS-for-Visual-Feedback
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-27-Add-Custom-CSS-for-Visual-Feedback-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You can mark **required** fields and **invalid** data at the same time,with **colored** bars on the **left** of the **input box**.
 
@@ -453,7 +458,7 @@ input.ng-invalid.ng-touched {
 
 # Adding Validation
 
-js-angular-forms-28-Add-Validation
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-28-Add-Validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You can add **HTML 5 attributes** to the input fields for validation.
 
@@ -492,7 +497,7 @@ For example:
 
 # Third-party Validators
 
-js-angular-forms-29-List-of-Validators-Third-party-Validators
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-29-List-of-Validators-Third-party-Validators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Angular comes with the following [validators](https://angular.io/api/forms/Validators):
 
@@ -530,7 +535,7 @@ And here you can find some npm packages with [custom validators](https://www.npm
 
 # Outputting Error Messages
 
-js-angular-forms-30-31-Outputing-Error-Messages
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-30-31-Outputing-Error-Messages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In case of an error, the user should receive a proper message with some explanation of what went wrong.
 
@@ -565,7 +570,7 @@ Add a helpful message inside the **div**.
 
 # Form Overall Validity
 
-js-angular-forms-32-Form-Overall-Validity
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-32-Form-Overall-Validity-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can bind the form's overall validity using the reference variable declared in the `<form>` tag.
 
@@ -583,7 +588,7 @@ Block the **submit** button in case a control has **invalid state**.
 
 # Two-way Data Binding
 
-js-angular-forms-33-Two-way-Data-Binding
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-33-Two-way-Data-Binding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You can instantly react to any changes using two-way data binding.
 
@@ -610,7 +615,7 @@ constructor() {
 
 # The NgModelGroup Directive
 
-js-angular-forms-34-The-NgModelGroup-Directive
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-34-The-NgModelGroup-Directive-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This directive can only be used as a child of an **NgForm** within `<form>` tags.
 

@@ -4,7 +4,7 @@
 
 # Directives Overview
 
-js-angular-forms-3-4-Directives-and-directives-overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-3-4-Directives-and-directives-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are three types of directives in Angular: **Components**, **Attribute**, and **Structural**.
 
@@ -196,7 +196,7 @@ import { Renderer2 } from '@angular/core'
 
 # Renderer2 Usage
 
-js-angular-forms-8-Warning - Use-Renderer2
+js-angular-forms-9-Warning - Use-Renderer2
 
 To use Renderer2, we have to inject it.
 
@@ -229,7 +229,7 @@ Renderer2 has multiple other methods, such as `setProperty`, `setValue`, and `re
 
 # Responding To Events
 
-js-angular-forms-10-Respond-to-Events
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-10-Respond-to-Events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A directive could be more dynamic. 
 
@@ -262,7 +262,7 @@ When the mouse pointer leaves the element, the color will be set to blue.
 
 # Using HostBinding
 
-js-angular-forms-11-Using-HostBinding
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-11-Using-HostBinding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We use the `HostBinding` **decorator** to mark a DOM property as a host-binding property.
 

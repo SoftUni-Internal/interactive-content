@@ -4,7 +4,7 @@
 
 # Initial Setup
 
-Forms-Lab-1
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/Forms-Lab-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/07-Forms.zip) **for this task.**
 
@@ -30,7 +30,7 @@ Go to [FontAwesome](fontawesome.com) and add the provided HTML link inside `inde
 
 # Template-Driven Form
 
-Forms-Lab-2
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/Forms-Lab-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Generate a **register-form** component and use the provided **HTML** to create a **template-driven** form. 
 
@@ -98,8 +98,7 @@ Clearing the errors is done with `setErrors(null)`.
 
 # Reactive Form
 
-Forms-Lab 3-1
-Forms-Lab 3-2
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/Forms-Lab-3-1-3-2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Now, let us create a new component with the name **register-form-reactive** and build the same form using the reactive approach.
 
