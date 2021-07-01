@@ -1,5 +1,6 @@
 
-
+[slide hideTitle]
+# Problem: Find the Names of All Employees by Salary in Range
 
 [code-task title="Find the Names of All Employees by Salary in Range" taskId="java-db-and-MySQL-basic-crud-find-the-names-salary-range" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
