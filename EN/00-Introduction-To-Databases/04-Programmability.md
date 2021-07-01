@@ -612,9 +612,9 @@ Create a **user defined function** with the **name udf_courses_by_client (phone_
 ## Examples
 | **Query** |**Count** |
 | --- | --- |
-|"SELECT udf_courses_by_client ('(803) 6386812') as \`count\`;"   | 5 | 
-|"SELECT udf_courses_by_client ('(831) 1391236') as \`count\`;"| 3 | 
-|"SELECT udf_courses_by_client ('(704) 2502909') as \`count\`;"|0|
+|"SELECT udf_courses_by_client ('(803) 6386812') as \` count\`;"   | 5 | 
+|"SELECT udf_courses_by_client ('(831) 1391236') as \` count\`;"| 3 | 
+|"SELECT udf_courses_by_client ('(704) 2502909') as \` count\`;"|0|
 
 
 
