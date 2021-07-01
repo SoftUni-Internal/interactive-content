@@ -46,14 +46,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
   `salary` decimal(19,4) NOT NULL,
   `address_id` int(10) DEFAULT NULL,
   PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`),
-  KEY `CL_FirstName` (`first_name`),
-  KEY `fk_employees_departments` (`department_id`),
-  KEY `fk_employees_employees` (`manager_id`),
-  KEY `fk_employees_addresses` (`address_id`),
-  CONSTRAINT `fk_employees_addresses` FOREIGN KEY (`address_id`) REFERENCES `addresses` (`address_id`),
-  CONSTRAINT `fk_employees_departments` FOREIGN KEY (`department_id`) REFERENCES `departments` (`department_id`),
-  CONSTRAINT `fk_employees_employees` FOREIGN KEY (`manager_id`) REFERENCES `employees` (`employee_id`)
+  UNIQUE KEY `PK_Employees` (`employee_id`);
 ) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
 
 
