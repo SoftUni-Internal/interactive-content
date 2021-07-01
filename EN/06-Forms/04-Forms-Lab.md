@@ -76,6 +76,8 @@ At the **end**, your form should look like this:
 
 [image assetsSrc="Angular-Forms(1).png" /]
 
+[image assetsSrc="Angular-Forms(1-1).png" /]
+
 ## Create a Custom Attribute Directive
 
 Add another input field containing an **image URL** to a profile picture, use 'fa fa-image' for the font awesome icon. 
