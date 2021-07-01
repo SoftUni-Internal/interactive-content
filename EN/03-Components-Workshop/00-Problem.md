@@ -4,7 +4,7 @@
 
 # Task Requirements
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/new-resources-workshop-Components.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/Angular-Components-Resources.zip) **for this task.**
 
 This task contains a program skeleton which consists of **HTML** and **CSS** code, please do not alter its structure. 
 
@@ -56,7 +56,7 @@ That's it! Now you can check if you have the db with the "show dbs" command:
 
 # REST API
 
-You can find the **REST API** in the [resources](https://videos.softuni.org/resources/javascript/javascript-angular/Rest-api-resources.zip).
+You can find the **REST API** in the [resources](https://videos.softuni.org/resources/javascript/javascript-angular/Rest-api-latest.zip).
 
 To make use of it, you should install the required dependencies by typing in the `npm install` command. 
 
