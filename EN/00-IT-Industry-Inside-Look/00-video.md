@@ -46,7 +46,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
   `salary` decimal(19,4) NOT NULL,
   `address_id` int(10) DEFAULT NULL,
   PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`);
+  UNIQUE KEY `PK_Employees` (`employee_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
 
 
