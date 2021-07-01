@@ -4,7 +4,7 @@
 
 Make sure you implement the whole database correctly on your local machine so that you can work with it.
 
-The instructions you will be given will be the minimal required for you to implement the database.
+The instructions you will be given will be the minimum required for you to implement the database.
 
 [/slide]
 

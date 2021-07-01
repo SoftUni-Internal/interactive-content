@@ -13,7 +13,7 @@ You have been given an Entity / Relationship Diagram of the **SoftUni Taxi Compa
 
 [image assetsSrc="mysql_exam-1.png" /]
 
-The **SoftUni Taxi Company** (**stc**) needs to hold information about cars, courses, drivers, clients, addresses and categories.
+The **SoftUni Taxi Company** (**stc**) needs to hold information about cars, courses, drivers, clients, addresses, and categories.
 
 Your task is to create a database called **stc** (**SoftUni Taxi Company**). 
 
