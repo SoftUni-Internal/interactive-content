@@ -1,7 +1,7 @@
 [slide hideTitle]
-# Problem: Create a View - Employees with Salaries
+# Problem: Create a View - Employees with Job Titles
 
-[code-task title="Create a View - Employees with Salaries" taskId="java-db-and-MySQL-basic-crud-create-view-employees-with-salaries" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+[code-task title="Create a View - Employees with Job Titles" taskId="java-db-and-MySQL-basic-crud-create-view-employees-with-job-titles" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 
 ```
@@ -10,10 +10,10 @@
 ```
 [/code-editor]
 [code-adapter]
-/\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
-/\*!40101 SET NAMES utf8mb4 \*/;
-/\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
-/\*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' \*/;
+/\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT /\*;
+/\*!40101 SET NAMES utf8mb4 /\*;
+/\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 /\*;
+/\*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' /\*;
 
 
 CREATE TABLE IF NOT EXISTS `addresses` (
@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS `addresses` (
 ) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `addresses` DISABLE KEYS \*/;
+/\*!40000 ALTER TABLE `addresses` DISABLE KEYS /\*;
 INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
 	(1, '108 Lakeside Court', 5),
 	(2, '1343 Prospect St', 5),
@@ -320,7 +320,7 @@ INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
 	(289, '591 Merriewood Drive', 11),
 	(290, '7230 Vine Maple Street', 11),
 	(291, '163 Nishava Str, ent A, apt. 1', 32);
-/\*!40000 ALTER TABLE `addresses` ENABLE KEYS \*/;
+/\*!40000 ALTER TABLE `addresses` ENABLE KEYS /\*;
 
 
 CREATE TABLE IF NOT EXISTS `departments` (
@@ -334,7 +334,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
+/\*!40000 ALTER TABLE `departments` DISABLE KEYS /\*;
 INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(1, 'Engineering', 12),
 	(2, 'Tool Design', 4),
@@ -352,7 +352,7 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(14, 'Facilities and Maintenance', 218),
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
-/\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
+/\*!40000 ALTER TABLE `departments` ENABLE KEYS /\*;
 
 
 
@@ -379,7 +379,7 @@ CREATE TABLE IF NOT EXISTS `employees` (
 ) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `employees` DISABLE KEYS \*/;
+/\*!40000 ALTER TABLE `employees` DISABLE KEYS /\*;
 INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
 	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
 	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
@@ -674,7 +674,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
 	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
-/\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
+/\*!40000 ALTER TABLE `employees` ENABLE KEYS /\*;
 
 
 
@@ -689,7 +689,7 @@ CREATE TABLE IF NOT EXISTS `employees_projects` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `employees_projects` DISABLE KEYS \*/;
+/\*!40000 ALTER TABLE `employees_projects` DISABLE KEYS /\*;
 INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(3, 1),
 	(15, 1),
@@ -1534,7 +1534,7 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(185, 127),
 	(234, 127),
 	(245, 127);
-/\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
+/\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS /\*;
 
 
 
@@ -1549,7 +1549,7 @@ CREATE TABLE IF NOT EXISTS `projects` (
 ) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `projects` DISABLE KEYS \*/;
+/\*!40000 ALTER TABLE `projects` DISABLE KEYS /\*;
 INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
 	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2003-06-01 00:00:00.000000', NULL),
 	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
@@ -1630,7 +1630,7 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(121, 'Fender Set - Mountain', 'Research, design and development of Fender Set - Mountain. Clip-on fenders fit most mountain bikes.', '2003-06-01 00:00:00.000000', NULL),
 	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
 	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
-/\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
+/\*!40000 ALTER TABLE `projects` ENABLE KEYS /\*;
 
 
 
@@ -1642,7 +1642,7 @@ CREATE TABLE IF NOT EXISTS `towns` (
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `towns` DISABLE KEYS \*/;
+/\*!40000 ALTER TABLE `towns` DISABLE KEYS /\*;
 INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(1, 'Redmond'),
 	(2, 'Calgary'),
@@ -1676,25 +1676,26 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(30, 'Bordeaux'),
 	(31, 'Berlin'),
 	(32, 'Sofia');
-/\*!40000 ALTER TABLE `towns` ENABLE KEYS \*/;
-/\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
-/\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
-/\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+/\*!40000 ALTER TABLE `towns` ENABLE KEYS /\*;
+/\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') /\*;
+/\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) /\*;
+/\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT /\*;
 [/code-adapter]
 [task-description]
 ## Description
 
-Write an SQL query to create a view called **v_employees_salaries**.
+Write an SQL query to create a view called **v_employees_job_titles** with **full employee name** and **job title**.
 
-The view should include the **first name** , **last name**, and each employee's **salary**
+If an employee's middle name is **NULL**, replace it with an **empty string ('')**.
 
 ## Example
 
-| first_name | last_name | salary |
-| --- | --- | --- |
-| Guy | Gilbert | 12500.00 |
-| Kevin | Brown | 13500.00 |
-| ... | ... | ... |
+| full_name | job_title |
+| --- | --- |
+| Guy R Gilbert | Production Technician |
+| Kevin F Brown | Marketing Assistant |
+| Roberto Tamburello | Engineering Manager |
+| ... | ... |
 
 [/task-description]
 [code-io /]
@@ -1702,1777 +1703,1191 @@ The view should include the **first name** , **last name**, and each employee's 
 [test open]
 [input]
 ```
-SELECT * FROM v_employees_salaries
+SELECT * FROM v_employees_job_titles
 ```
 [/input]
 [output]
-Guy
-Gilbert
-12500.0000
-Kevin
-Brown
-13500.0000
-Roberto
-Tamburello
-43300.0000
-Rob
-Walters
-29800.0000
-Thierry
-D'Hers
-25000.0000
-David
-Bradley
-37500.0000
-JoLynn
-Dobney
-25000.0000
-Ruth
-Ellerbrock
-13500.0000
-Gail
-Erickson
-32700.0000
-Barry
-Johnson
-13500.0000
-Jossef
-Goldberg
-32700.0000
-Terri
-Duffy
-63500.0000
-Sidney
-Higa
-13500.0000
-Taylor
-Maxwell
-25000.0000
-Jeffrey
-Ford
-13500.0000
-Jo
-Brown
-25000.0000
-Doris
-Hartwig
-13500.0000
-John
-Campbell
-25000.0000
-Diane
-Glimp
-13500.0000
-Steven
-Selikoff
-9500.0000
-Peter
-Krebs
-24500.0000
-Stuart
-Munson
-10000.0000
-Greg
-Alderson
-10000.0000
-David
-Johnson
-9500.0000
-Zheng
-Mu
-25000.0000
-Ivo
-Salmre
-14000.0000
-Paul
-Komosinski
-15000.0000
-Ashvini
-Sharma
-32500.0000
-Kendall
-Keil
-11000.0000
-Paula
-Barreto de Mattos
-27100.0000
-Alejandro
-McGuel
-15000.0000
-Garrett
-Young
-9500.0000
-Jian Shuo
-Wang
-9500.0000
-Susan
-Eaton
-9000.0000
-Vamsi
-Kuppa
-9500.0000
-Alice
-Ciccu
-11000.0000
-Simon
-Rapier
-12500.0000
-Jinghao
-Liu
-25000.0000
-Michael
-Hines
-14000.0000
-Yvonne
-McKay
-10000.0000
-Peng
-Wu
-21600.0000
-Jean
-Trenary
-50500.0000
-Russell
-Hunter
-11000.0000
-A. Scott
-Wright
-23600.0000
-Fred
-Northup
-15000.0000
-Sariya
-Harnpadoungsataya
-14400.0000
-Willis
-Johnson
-18300.0000
-Jun
-Cao
-11000.0000
-Christian
-Kleinerman
-20400.0000
-Susan
-Metters
-9500.0000
-Reuben
-D'sa
-25000.0000
-Kirk
-Koenigsbauer
-10000.0000
-David
-Ortiz
-12500.0000
-Tengiz
-Kharatishvili
-16800.0000
-Hanying
-Feng
-14000.0000
-Kevin
-Liu
-15000.0000
-Annik
-Stahl
-12500.0000
-Suroor
-Fatima
-11000.0000
-Deborah
-Poe
-19000.0000
-Jim
-Scardelis
-11000.0000
-Carole
-Poland
-9500.0000
-George
-Li
-9500.0000
-Gary
-Yukish
-15000.0000
-Cristian
-Petculescu
-25000.0000
-Raymond
-Sam
-14000.0000
-Janaina
-Bueno
-27400.0000
-Bob
-Hohman
-11000.0000
-Shammi
-Mohamed
-15000.0000
-Linda
-Moschell
-11000.0000
-Mindy
-Martin
-16600.0000
-Wendy
-Kahn
-43300.0000
-Kim
-Ralls
-9000.0000
-Sandra
-Reategui Alayo
-9500.0000
-Kok-Ho
-Loh
-25000.0000
-Douglas
-Hite
-10000.0000
-James
-Kramer
-12500.0000
-Sean
-Alexander
-10600.0000
-Nitin
-Mirchandani
-14000.0000
-Diane
-Margheim
-40900.0000
-Rebecca
-Laszlo
-12500.0000
-Rajesh
-Patel
-15000.0000
-Vidur
-Luthra
-18300.0000
-John
-Evans
-11000.0000
-Nancy
-Anderson
-12500.0000
-Pilar
-Ackerman
-19200.0000
-David
-Yalovsky
-9500.0000
-David
-Hamilton
-25000.0000
-Laura
-Steele
-10000.0000
-Margie
-Shoop
-12500.0000
-Zainal
-Arifin
-17800.0000
-Lorraine
-Nay
-15000.0000
-Fadi
-Fakhouri
-14000.0000
-Ryan
-Cornelsen
-15000.0000
-Candy
-Spoon
-19000.0000
-Nuan
-Yu
-11000.0000
-William
-Vong
-16000.0000
-Bjorn
-Rettig
-9500.0000
-Scott
-Gode
-10000.0000
-Michael
-Rothkugel
-15000.0000
-Lane
-Sacksteder
-14000.0000
-Pete
-Male
-11000.0000
-Dan
-Bacon
-27400.0000
-David
-Barber
-13500.0000
-Lolan
-Song
-11000.0000
-Paula
-Nartker
-15000.0000
-Mary
-Gibson
-14400.0000
-Mindaugas
-Krapauskas
-11000.0000
-Eric
-Gubbels
-25000.0000
-Ken
-Sanchez
-125500.0000
-Jason
-Watters
-9500.0000
-Mark
-Harrington
-10600.0000
-Janeth
-Esteves
-10000.0000
-Marc
-Ingle
-9500.0000
-Gigi
-Matthew
-40900.0000
-Paul
-Singh
-14000.0000
-Frank
-Lee
-15000.0000
-Francois
-Ajenstat
-38500.0000
-Diane
-Tibbott
-11000.0000
-Jill
-Williams
-14400.0000
-Angela
-Barbariol
-11000.0000
-Matthias
-Berndt
-9500.0000
-Bryan
-Baker
-12500.0000
-Jeff
-Hay
-25000.0000
-Eugene
-Zabokritski
-9500.0000
-Barbara
-Decker
-14000.0000
-Chris
-Preston
-10000.0000
-Sean
-Chai
-10300.0000
-Dan
-Wilson
-38500.0000
-Mark
-McArthur
-12500.0000
-Bryan
-Walton
-19000.0000
-Houman
-Pournasseh
-11000.0000
-Sairaj
-Uddin
-16000.0000
-Michiko
-Osada
-9500.0000
-Benjamin
-Martin
-9500.0000
-Cynthia
-Randall
-25000.0000
-Kathie
-Flood
-10000.0000
-Britta
-Simon
-12500.0000
-Brian
-Lloyd
-15000.0000
-David
-Liu
-34700.0000
-Laura
-Norman
-60100.0000
-Michael
-Patten
-11000.0000
-Andy
-Ruth
-9500.0000
-Yuhong
-Li
-25000.0000
-Robert
-Rounthwaite
-10000.0000
-Andreas
-Berglund
-10600.0000
-Reed
-Koch
-9500.0000
-Linda
-Randall
-14000.0000
-James
-Hamilton
-84100.0000
-Ramesh
-Meyyappan
-27400.0000
-Stephanie
-Conroy
-39700.0000
-Samantha
-Smith
-14000.0000
-Tawana
-Nusbaum
-15000.0000
-Denise
-Smith
-11000.0000
-Hao
-Chen
-13900.0000
-Alex
-Nayberg
-10000.0000
-Eugene
-Kogan
-12500.0000
-Brandon
-Heidepriem
-12500.0000
-Dylan
-Miller
-50500.0000
-Shane
-Kim
-25000.0000
-John
-Chen
-14000.0000
-Karen
-Berge
-10300.0000
-Jose
-Lugo
-12500.0000
-Mandar
-Samant
-11000.0000
-Mikael
-Sandberg
-18300.0000
-Sameer
-Tejani
-11000.0000
-Dragan
-Tomic
-19000.0000
-Carol
-Philips
-9500.0000
-Rob
-Caron
-15000.0000
-Don
-Hall
-11000.0000
-Alan
-Brewer
-16000.0000
-David
-Lawrence
-9500.0000
-Baris
-Cetinok
-15000.0000
-Michael
-Ray
-25000.0000
-Steve
-Masters
-12500.0000
-Suchitra
-Mohan
-12500.0000
-Karen
-Berg
-27400.0000
-Terrence
-Earls
-14000.0000
-Barbara
-Moreland
-26400.0000
-Chad
-Niswonger
-11000.0000
-Rostislav
-Shabalin
-9500.0000
-Belinda
-Newman
-10000.0000
-Katie
-McAskill-White
-25000.0000
-Russell
-King
-9500.0000
-Jack
-Richins
-25000.0000
-Andrew
-Hill
-25000.0000
-Nicole
-Holliday
-15000.0000
-Frank
-Miller
-11000.0000
-Peter
-Connelly
-32500.0000
-Anibal
-Sousa
-14000.0000
-Ken
-Myer
-15000.0000
-Grant
-Culbertson
-13900.0000
-Michael
-Entin
-11000.0000
-Lionel
-Penuchot
-10000.0000
-Thomas
-Michaels
-12500.0000
-Jimmy
-Bischoff
-9000.0000
-Michael
-Vanderhyde
-9500.0000
-Lori
-Kane
-25000.0000
-Arvind
-Rao
-18300.0000
-Stefen
-Hesse
-14000.0000
-Hazem
-Abolrous
-28800.0000
-Janet
-Sheperdigian
-19000.0000
-Elizabeth
-Keyser
-11000.0000
-Terry
-Eminhizer
-14400.0000
-John
-Frum
-9500.0000
-Merav
-Netz
-9500.0000
-Brian
-LaMee
-16000.0000
-Kitti
-Lertpiriyasuwat
-11000.0000
-Jay
-Adams
-12500.0000
-Jan
-Miksovsky
-9500.0000
-Brenda
-Diaz
-25000.0000
-Andrew
-Cencini
-10000.0000
-Chris
-Norred
-16800.0000
-Chris
-Okelberry
-12500.0000
-Shelley
-Dyck
-14000.0000
-Gabe
-Mares
-15000.0000
-Mike
-Seamans
-26400.0000
-Michael
-Raheem
-42500.0000
-Gary
-Altman
-24000.0000
-Charles
-Fitzgerald
-12500.0000
-Ebru
-Ersan
-13500.0000
-Sylvester
-Valdez
-14000.0000
-Brian
-Goldstein
-15000.0000
-Linda
-Meisner
-18300.0000
-Betsy
-Stadick
-13500.0000
-Magnus
-Hedlund
-9800.0000
-Karan
-Khanna
-12500.0000
-Mary
-Baker
-13500.0000
-Kevin
-Homer
-13500.0000
-Mihail
-Frintu
-15000.0000
-Bonnie
-Kearney
-13500.0000
-Fukiko
-Ogisu
-18300.0000
-Hung-Fu
-Ting
-14000.0000
-Gordon
-Hee
-18300.0000
-Kimberly
-Zimmerman
-13500.0000
-Kim
-Abercrombie
-12500.0000
-Sandeep
-Kaliyath
-15000.0000
-Prasanna
-Samarawickrama
-14000.0000
-Frank
-Pellow
-18300.0000
-Min
-Su
-14000.0000
-Eric
-Brown
-15000.0000
-Eric
-Kurjan
-18300.0000
-Pat
-Coleman
-9300.0000
-Maciej
-Dusza
-12500.0000
-Erin
-Hagens
-18300.0000
-Patrick
-Wedge
-13500.0000
-Frank
-Martinez
-15000.0000
-Ed
-Dudenhoefer
-12500.0000
-Christopher
-Hill
-13500.0000
-Patrick
-Cook
-15000.0000
-Krishna
-Sunkammurali
-14000.0000
-Lori
-Penor
-9300.0000
-Danielle
-Tiedt
-13500.0000
-Sootha
-Charncherngkha
-10600.0000
-Michael
-Zwilling
-12500.0000
-Randy
-Reeves
-12500.0000
-John
-Kane
-13500.0000
-Jack
-Creasey
-15000.0000
-Olinda
-Turner
-14000.0000
-Stuart
-Macrae
-9300.0000
-Jo
-Berry
-9300.0000
-Ben
-Miller
-18300.0000
-Tom
-Vande Velde
-13500.0000
-Ovidiu
-Cracium
-28800.0000
-Annette
-Hill
-12800.0000
-Janice
-Galvin
-25000.0000
-Reinout
-Hillmann
-12800.0000
-Michael
-Sullivan
-36100.0000
-Stephen
-Jiang
-48100.0000
-Wanida
-Benshoof
-13500.0000
-Sharon
-Salavaria
-32700.0000
-John
-Wood
-14400.0000
-Mary
-Dempsey
-13500.0000
-Brian
-Welcker
-72100.0000
-Sheela
-Word
-30000.0000
-Michael
-Blythe
-23100.0000
-Linda
-Mitchell
-23100.0000
-Jillian
-Carson
-23100.0000
-Garrett
-Vargas
-23100.0000
-Tsvi
-Reiter
-23100.0000
-Pamela
-Ansman-Wolfe
-23100.0000
-Shu
-Ito
-23100.0000
-Jose
-Saraiva
-23100.0000
-David
-Campbell
-23100.0000
-Amy
-Alberts
-48100.0000
-Jae
-Pak
-23100.0000
-Ranjit
-Varkey Chudukatil
-23100.0000
-Tete
-Mensa-Annan
-23100.0000
-Syed
-Abbas
-48100.0000
-Rachel
-Valdez
-23100.0000
-Lynn
-Tsoflias
-23100.0000
-Svetlin
-Nakov
-48000.0000
-Martin
-Kulov
-48000.0000
-George
-Denchev
-48000.0000
+Guy R Gilbert
+Production Technician
+Kevin F Brown
+Marketing Assistant
+Roberto Tamburello
+Engineering Manager
+Rob Walters
+Senior Tool Designer
+Thierry B D'Hers
+Tool Designer
+David M Bradley
+Marketing Manager
+JoLynn M Dobney
+Production Supervisor
+Ruth Ann Ellerbrock
+Production Technician
+Gail A Erickson
+Design Engineer
+Barry K Johnson
+Production Technician
+Jossef H Goldberg
+Design Engineer
+Terri Lee Duffy
+Vice President of Engineering
+Sidney M Higa
+Production Technician
+Taylor R Maxwell
+Production Supervisor
+Jeffrey L Ford
+Production Technician
+Jo A Brown
+Production Supervisor
+Doris M Hartwig
+Production Technician
+John T Campbell
+Production Supervisor
+Diane R Glimp
+Production Technician
+Steven T Selikoff
+Production Technician
+Peter J Krebs
+Production Control Manager
+Stuart V Munson
+Production Technician
+Greg F Alderson
+Production Technician
+David  Johnson
+Production Technician
+Zheng W Mu
+Production Supervisor
+Ivo William Salmre
+Production Technician
+Paul B Komosinski
+Production Technician
+Ashvini R Sharma
+Network Administrator
+Kendall C Keil
+Production Technician
+Paula M Barreto de Mattos
+Human Resources Manager
+Alejandro E McGuel
+Production Technician
+Garrett R Young
+Production Technician
+Jian Shuo Wang
+Production Technician
+Susan W Eaton
+Stocker
+Vamsi  Kuppa
+Shipping and Receiving Clerk
+Alice O Ciccu
+Production Technician
+Simon D Rapier
+Production Technician
+Jinghao K Liu
+Production Supervisor
+Michael T Hines
+Production Technician
+Yvonne S McKay
+Production Technician
+Peng J Wu
+Quality Assurance Supervisor
+Jean E Trenary
+Information Services Manager
+Russell Hunter
+Production Technician
+A. Scott Wright
+Master Scheduler
+Fred T Northup
+Production Technician
+Sariya E Harnpadoungsataya
+Marketing Specialist
+Willis T Johnson
+Recruiter
+Jun T Cao
+Production Technician
+Christian E Kleinerman
+Maintenance Supervisor
+Susan A Metters
+Production Technician
+Reuben H D'sa
+Production Supervisor
+Kirk J Koenigsbauer
+Production Technician
+David J Ortiz
+Production Technician
+Tengiz  Kharatishvili
+Control Specialist
+Hanying P Feng
+Production Technician
+Kevin H Liu
+Production Technician
+Annik O Stahl
+Production Technician
+Suroor R Fatima
+Production Technician
+Deborah E Poe
+Accounts Receivable Specialist
+Jim H Scardelis
+Production Technician
+Carole M Poland
+Production Technician
+George Z Li
+Production Technician
+Gary W Yukish
+Production Technician
+Cristian K Petculescu
+Production Supervisor
+Raymond K Sam
+Production Technician
+Janaina Barreiro Gambaro Bueno
+Application Specialist
+Bob  Hohman
+Production Technician
+Shammi G Mohamed
+Production Technician
+Linda K Moschell
+Production Technician
+Mindy C Martin
+Benefits Specialist
+Wendy Beth Kahn
+Finance Manager
+Kim T Ralls
+Stocker
+Sandra Reategui Alayo
+Production Technician
+Kok-Ho T Loh
+Production Supervisor
+Douglas B Hite
+Production Technician
+James D Kramer
+Production Technician
+Sean P Alexander
+Quality Assurance Technician
+Nitin S Mirchandani
+Production Technician
+Diane L Margheim
+Research and Development Engineer
+Rebecca A Laszlo
+Production Technician
+Rajesh M Patel
+Production Technician
+Vidur X Luthra
+Recruiter
+John P Evans
+Production Technician
+Nancy A Anderson
+Production Technician
+Pilar G Ackerman
+Shipping and Receiving Supervisor
+David A Yalovsky
+Production Technician
+David P Hamilton
+Production Supervisor
+Laura C Steele
+Production Technician
+Margie W Shoop
+Production Technician
+Zainal T Arifin
+Document Control Manager
+Lorraine O Nay
+Production Technician
+Fadi K Fakhouri
+Production Technician
+Ryan L Cornelsen
+Production Technician
+Candy L Spoon
+Accounts Receivable Specialist
+Nuan Yu
+Production Technician
+William S Vong
+Scheduling Assistant
+Bjorn M Rettig
+Production Technician
+Scott R Gode
+Production Technician
+Michael L Rothkugel
+Production Technician
+Lane M Sacksteder
+Production Technician
+Pete C Male
+Production Technician
+Dan K Bacon
+Application Specialist
+David M Barber
+Assistant to the Chief Financial Officer
+Lolan B Song
+Production Technician
+Paula R Nartker
+Production Technician
+Mary E Gibson
+Marketing Specialist
+Mindaugas J Krapauskas
+Production Technician
+Eric Gubbels
+Production Supervisor
+Ken J Sanchez
+Chief Executive Officer
+Jason M Watters
+Production Technician
+Mark L Harrington
+Quality Assurance Technician
+Janeth M Esteves
+Production Technician
+Marc J Ingle
+Production Technician
+Gigi  Matthew
+Research and Development Engineer
+Paul R Singh
+Production Technician
+Frank T Lee
+Production Technician
+Francois P Ajenstat
+Database Administrator
+Diane H Tibbott
+Production Technician
+Jill A Williams
+Marketing Specialist
+Angela W Barbariol
+Production Technician
+Matthias T Berndt
+Shipping and Receiving Clerk
+Bryan Baker
+Production Technician
+Jeff V Hay
+Production Supervisor
+Eugene R Zabokritski
+Production Technician
+Barbara S Decker
+Production Technician
+Chris T Preston
+Production Technician
+Sean  Chai
+Document Control Assistant
+Dan B Wilson
+Database Administrator
+Mark K McArthur
+Production Technician
+Bryan A Walton
+Accounts Receivable Specialist
+Houman  Pournasseh
+Production Technician
+Sairaj L Uddin
+Scheduling Assistant
+Michiko F Osada
+Production Technician
+Benjamin R Martin
+Production Technician
+Cynthia S Randall
+Production Supervisor
+Kathie E Flood
+Production Technician
+Britta L Simon
+Production Technician
+Brian T Lloyd
+Production Technician
+David J Liu
+Accounts Manager
+Laura F Norman
+Chief Financial Officer
+Michael W Patten
+Production Technician
+Andy M Ruth
+Production Technician
+Yuhong L Li
+Production Supervisor
+Robert J Rounthwaite
+Production Technician
+Andreas T Berglund
+Quality Assurance Technician
+Reed T Koch
+Production Technician
+Linda A Randall
+Production Technician
+James R Hamilton
+Vice President of Production
+Ramesh V Meyyappan
+Application Specialist
+Stephanie A Conroy
+Network Manager
+Samantha H Smith
+Production Technician
+Tawana G Nusbaum
+Production Technician
+Denise H Smith
+Production Technician
+Hao O Chen
+Human Resources Administrative Assistant
+Alex M Nayberg
+Production Technician
+Eugene O Kogan
+Production Technician
+Brandon G Heidepriem
+Production Technician
+Dylan A Miller
+Research and Development Manager
+Shane S Kim
+Production Supervisor
+John Y Chen
+Production Technician
+Karen R Berge
+Document Control Assistant
+Jose R Lugo
+Production Technician
+Mandar H Samant
+Production Technician
+Mikael Q Sandberg
+Buyer
+Sameer A Tejani
+Production Technician
+Dragan K Tomic
+Accounts Payable Specialist
+Carol M Philips
+Production Technician
+Rob T Caron
+Production Technician
+Don L Hall
+Production Technician
+Alan J Brewer
+Scheduling Assistant
+David Oliver Lawrence
+Production Technician
+Baris F Cetinok
+Production Technician
+Michael Sean Ray
+Production Supervisor
+Steve F Masters
+Production Technician
+Suchitra O Mohan
+Production Technician
+Karen A Berg
+Application Specialist
+Terrence W Earls
+Production Technician
+Barbara C Moreland
+Accountant
+Chad W Niswonger
+Production Technician
+Rostislav E Shabalin
+Production Technician
+Belinda M Newman
+Production Technician
+Katie L McAskill-White
+Production Supervisor
+Russell M King
+Production Technician
+Jack S Richins
+Production Supervisor
+Andrew R Hill
+Production Supervisor
+Nicole B Holliday
+Production Technician
+Frank T Miller
+Production Technician
+Peter I Connelly
+Network Administrator
+Anibal T Sousa
+Production Technician
+Ken L Myer
+Production Technician
+Grant  Culbertson
+Human Resources Administrative Assistant
+Michael T Entin
+Production Technician
+Lionel C Penuchot
+Production Technician
+Thomas R Michaels
+Production Technician
+Jimmy T Bischoff
+Stocker
+Michael T Vanderhyde
+Production Technician
+Lori A Kane
+Production Supervisor
+Arvind B Rao
+Buyer
+Stefen A Hesse
+Production Technician
+Hazem E Abolrous
+Quality Assurance Manager
+Janet L Sheperdigian
+Accounts Payable Specialist
+Elizabeth I Keyser
+Production Technician
+Terry J Eminhizer
+Marketing Specialist
+John  Frum
+Production Technician
+Merav A Netz
+Production Technician
+Brian P LaMee
+Scheduling Assistant
+Kitti H Lertpiriyasuwat
+Production Technician
+Jay G Adams
+Production Technician
+Jan S Miksovsky
+Production Technician
+Brenda M Diaz
+Production Supervisor
+Andrew M Cencini
+Production Technician
+Chris K Norred
+Control Specialist
+Chris O Okelberry
+Production Technician
+Shelley  Dyck
+Production Technician
+Gabe B Mares
+Production Technician
+Mike K Seamans
+Accountant
+Michael Raheem
+Research and Development Manager
+Gary E. Altman
+Facilities Manager
+Charles B Fitzgerald
+Production Technician
+Ebru  Ersan
+Production Technician
+Sylvester A Valdez
+Production Technician
+Brian Richard Goldstein
+Production Technician
+Linda P Meisner
+Buyer
+Betsy A Stadick
+Production Technician
+Magnus E Hedlund
+Facilities Administrative Assistant
+Karan R Khanna
+Production Technician
+Mary R Baker
+Production Technician
+Kevin M Homer
+Production Technician
+Mihail U Frintu
+Production Technician
+Bonnie  Kearney
+Production Technician
+Fukiko J Ogisu
+Buyer
+Hung-Fu T Ting
+Production Technician
+Gordon L Hee
+Buyer
+Kimberly B Zimmerman
+Production Technician
+Kim B Abercrombie
+Production Technician
+Sandeep P Kaliyath
+Production Technician
+Prasanna E Samarawickrama
+Production Technician
+Frank S Pellow
+Buyer
+Min G Su
+Production Technician
+Eric L Brown
+Production Technician
+Eric S Kurjan
+Buyer
+Pat H Coleman
+Janitor
+Maciej W Dusza
+Production Technician
+Erin M Hagens
+Buyer
+Patrick C Wedge
+Production Technician
+Frank R Martinez
+Production Technician
+Ed R Dudenhoefer
+Production Technician
+Christopher E Hill
+Production Technician
+Patrick M Cook
+Production Technician
+Krishna Sunkammurali
+Production Technician
+Lori K Penor
+Janitor
+Danielle C Tiedt
+Production Technician
+Sootha T Charncherngkha
+Quality Assurance Technician
+Michael J Zwilling
+Production Technician
+Randy T Reeves
+Production Technician
+John T Kane
+Production Technician
+Jack T Creasey
+Production Technician
+Olinda C Turner
+Production Technician
+Stuart J Macrae
+Janitor
+Jo L Berry
+Janitor
+Ben T Miller
+Buyer
+Tom M Vande Velde
+Production Technician
+Ovidiu V Cracium
+Senior Tool Designer
+Annette L Hill
+Purchasing Assistant
+Janice M Galvin
+Tool Designer
+Reinout  Hillmann
+Purchasing Assistant
+Michael I Sullivan
+Senior Design Engineer
+Stephen Y Jiang
+North American Sales Manager
+Wanida M Benshoof
+Marketing Assistant
+Sharon B Salavaria
+Design Engineer
+John L Wood
+Marketing Specialist
+Mary A Dempsey
+Marketing Assistant
+Brian S Welcker
+Vice President of Sales
+Sheela H Word
+Purchasing Manager
+Michael G Blythe
+Sales Representative
+Linda C Mitchell
+Sales Representative
+Jillian Carson
+Sales Representative
+Garrett R Vargas
+Sales Representative
+Tsvi Michael Reiter
+Sales Representative
+Pamela O Ansman-Wolfe
+Sales Representative
+Shu K Ito
+Sales Representative
+Jose Edvaldo Saraiva
+Sales Representative
+David R Campbell
+Sales Representative
+Amy E Alberts
+European Sales Manager
+Jae B Pak
+Sales Representative
+Ranjit R Varkey Chudukatil
+Sales Representative
+Tete A Mensa-Annan
+Sales Representative
+Syed E Abbas
+Pacific Sales Manager
+Rachel B Valdez
+Sales Representative
+Lynn  Tsoflias
+Sales Representative
+Svetlin Ivanov Nakov
+Independent Software Development  Consultant
+Martin Kulov
+Independent .NET Consultant
+George Denchev
+Independent Java Consultant
 [/output]
 [/test]
 [test]
 [input]
 ```
-SELECT * FROM v_employees_salaries
+SELECT * FROM v_employees_job_titles
 ```
 [/input]
 [output]
-Guy
-Gilbert
-12500.0000
-Kevin
-Brown
-13500.0000
-Roberto
-Tamburello
-43300.0000
-Rob
-Walters
-29800.0000
-Thierry
-D'Hers
-25000.0000
-David
-Bradley
-37500.0000
-JoLynn
-Dobney
-25000.0000
-Ruth
-Ellerbrock
-13500.0000
-Gail
-Erickson
-32700.0000
-Barry
-Johnson
-13500.0000
-Jossef
-Goldberg
-32700.0000
-Terri
-Duffy
-63500.0000
-Sidney
-Higa
-13500.0000
-Taylor
-Maxwell
-25000.0000
-Jeffrey
-Ford
-13500.0000
-Jo
-Brown
-25000.0000
-Doris
-Hartwig
-13500.0000
-John
-Campbell
-25000.0000
-Diane
-Glimp
-13500.0000
-Steven
-Selikoff
-9500.0000
-Peter
-Krebs
-24500.0000
-Stuart
-Munson
-10000.0000
-Greg
-Alderson
-10000.0000
-David
-Johnson
-9500.0000
-Zheng
-Mu
-25000.0000
-Ivo
-Salmre
-14000.0000
-Paul
-Komosinski
-15000.0000
-Ashvini
-Sharma
-32500.0000
-Kendall
-Keil
-11000.0000
-Paula
-Barreto de Mattos
-27100.0000
-Alejandro
-McGuel
-15000.0000
-Garrett
-Young
-9500.0000
-Jian Shuo
-Wang
-9500.0000
-Susan
-Eaton
-9000.0000
-Vamsi
-Kuppa
-9500.0000
-Alice
-Ciccu
-11000.0000
-Simon
-Rapier
-12500.0000
-Jinghao
-Liu
-25000.0000
-Michael
-Hines
-14000.0000
-Yvonne
-McKay
-10000.0000
-Peng
-Wu
-21600.0000
-Jean
-Trenary
-50500.0000
-Russell
-Hunter
-11000.0000
-A. Scott
-Wright
-23600.0000
-Fred
-Northup
-15000.0000
-Sariya
-Harnpadoungsataya
-14400.0000
-Willis
-Johnson
-18300.0000
-Jun
-Cao
-11000.0000
-Christian
-Kleinerman
-20400.0000
-Susan
-Metters
-9500.0000
-Reuben
-D'sa
-25000.0000
-Kirk
-Koenigsbauer
-10000.0000
-David
-Ortiz
-12500.0000
-Tengiz
-Kharatishvili
-16800.0000
-Hanying
-Feng
-14000.0000
-Kevin
-Liu
-15000.0000
-Annik
-Stahl
-12500.0000
-Suroor
-Fatima
-11000.0000
-Deborah
-Poe
-19000.0000
-Jim
-Scardelis
-11000.0000
-Carole
-Poland
-9500.0000
-George
-Li
-9500.0000
-Gary
-Yukish
-15000.0000
-Cristian
-Petculescu
-25000.0000
-Raymond
-Sam
-14000.0000
-Janaina
-Bueno
-27400.0000
-Bob
-Hohman
-11000.0000
-Shammi
-Mohamed
-15000.0000
-Linda
-Moschell
-11000.0000
-Mindy
-Martin
-16600.0000
-Wendy
-Kahn
-43300.0000
-Kim
-Ralls
-9000.0000
-Sandra
-Reategui Alayo
-9500.0000
-Kok-Ho
-Loh
-25000.0000
-Douglas
-Hite
-10000.0000
-James
-Kramer
-12500.0000
-Sean
-Alexander
-10600.0000
-Nitin
-Mirchandani
-14000.0000
-Diane
-Margheim
-40900.0000
-Rebecca
-Laszlo
-12500.0000
-Rajesh
-Patel
-15000.0000
-Vidur
-Luthra
-18300.0000
-John
-Evans
-11000.0000
-Nancy
-Anderson
-12500.0000
-Pilar
-Ackerman
-19200.0000
-David
-Yalovsky
-9500.0000
-David
-Hamilton
-25000.0000
-Laura
-Steele
-10000.0000
-Margie
-Shoop
-12500.0000
-Zainal
-Arifin
-17800.0000
-Lorraine
-Nay
-15000.0000
-Fadi
-Fakhouri
-14000.0000
-Ryan
-Cornelsen
-15000.0000
-Candy
-Spoon
-19000.0000
-Nuan
-Yu
-11000.0000
-William
-Vong
-16000.0000
-Bjorn
-Rettig
-9500.0000
-Scott
-Gode
-10000.0000
-Michael
-Rothkugel
-15000.0000
-Lane
-Sacksteder
-14000.0000
-Pete
-Male
-11000.0000
-Dan
-Bacon
-27400.0000
-David
-Barber
-13500.0000
-Lolan
-Song
-11000.0000
-Paula
-Nartker
-15000.0000
-Mary
-Gibson
-14400.0000
-Mindaugas
-Krapauskas
-11000.0000
-Eric
-Gubbels
-25000.0000
-Ken
-Sanchez
-125500.0000
-Jason
-Watters
-9500.0000
-Mark
-Harrington
-10600.0000
-Janeth
-Esteves
-10000.0000
-Marc
-Ingle
-9500.0000
-Gigi
-Matthew
-40900.0000
-Paul
-Singh
-14000.0000
-Frank
-Lee
-15000.0000
-Francois
-Ajenstat
-38500.0000
-Diane
-Tibbott
-11000.0000
-Jill
-Williams
-14400.0000
-Angela
-Barbariol
-11000.0000
-Matthias
-Berndt
-9500.0000
-Bryan
-Baker
-12500.0000
-Jeff
-Hay
-25000.0000
-Eugene
-Zabokritski
-9500.0000
-Barbara
-Decker
-14000.0000
-Chris
-Preston
-10000.0000
-Sean
-Chai
-10300.0000
-Dan
-Wilson
-38500.0000
-Mark
-McArthur
-12500.0000
-Bryan
-Walton
-19000.0000
-Houman
-Pournasseh
-11000.0000
-Sairaj
-Uddin
-16000.0000
-Michiko
-Osada
-9500.0000
-Benjamin
-Martin
-9500.0000
-Cynthia
-Randall
-25000.0000
-Kathie
-Flood
-10000.0000
-Britta
-Simon
-12500.0000
-Brian
-Lloyd
-15000.0000
-David
-Liu
-34700.0000
-Laura
-Norman
-60100.0000
-Michael
-Patten
-11000.0000
-Andy
-Ruth
-9500.0000
-Yuhong
-Li
-25000.0000
-Robert
-Rounthwaite
-10000.0000
-Andreas
-Berglund
-10600.0000
-Reed
-Koch
-9500.0000
-Linda
-Randall
-14000.0000
-James
-Hamilton
-84100.0000
-Ramesh
-Meyyappan
-27400.0000
-Stephanie
-Conroy
-39700.0000
-Samantha
-Smith
-14000.0000
-Tawana
-Nusbaum
-15000.0000
-Denise
-Smith
-11000.0000
-Hao
-Chen
-13900.0000
-Alex
-Nayberg
-10000.0000
-Eugene
-Kogan
-12500.0000
-Brandon
-Heidepriem
-12500.0000
-Dylan
-Miller
-50500.0000
-Shane
-Kim
-25000.0000
-John
-Chen
-14000.0000
-Karen
-Berge
-10300.0000
-Jose
-Lugo
-12500.0000
-Mandar
-Samant
-11000.0000
-Mikael
-Sandberg
-18300.0000
-Sameer
-Tejani
-11000.0000
-Dragan
-Tomic
-19000.0000
-Carol
-Philips
-9500.0000
-Rob
-Caron
-15000.0000
-Don
-Hall
-11000.0000
-Alan
-Brewer
-16000.0000
-David
-Lawrence
-9500.0000
-Baris
-Cetinok
-15000.0000
-Michael
-Ray
-25000.0000
-Steve
-Masters
-12500.0000
-Suchitra
-Mohan
-12500.0000
-Karen
-Berg
-27400.0000
-Terrence
-Earls
-14000.0000
-Barbara
-Moreland
-26400.0000
-Chad
-Niswonger
-11000.0000
-Rostislav
-Shabalin
-9500.0000
-Belinda
-Newman
-10000.0000
-Katie
-McAskill-White
-25000.0000
-Russell
-King
-9500.0000
-Jack
-Richins
-25000.0000
-Andrew
-Hill
-25000.0000
-Nicole
-Holliday
-15000.0000
-Frank
-Miller
-11000.0000
-Peter
-Connelly
-32500.0000
-Anibal
-Sousa
-14000.0000
-Ken
-Myer
-15000.0000
-Grant
-Culbertson
-13900.0000
-Michael
-Entin
-11000.0000
-Lionel
-Penuchot
-10000.0000
-Thomas
-Michaels
-12500.0000
-Jimmy
-Bischoff
-9000.0000
-Michael
-Vanderhyde
-9500.0000
-Lori
-Kane
-25000.0000
-Arvind
-Rao
-18300.0000
-Stefen
-Hesse
-14000.0000
-Hazem
-Abolrous
-28800.0000
-Janet
-Sheperdigian
-19000.0000
-Elizabeth
-Keyser
-11000.0000
-Terry
-Eminhizer
-14400.0000
-John
-Frum
-9500.0000
-Merav
-Netz
-9500.0000
-Brian
-LaMee
-16000.0000
-Kitti
-Lertpiriyasuwat
-11000.0000
-Jay
-Adams
-12500.0000
-Jan
-Miksovsky
-9500.0000
-Brenda
-Diaz
-25000.0000
-Andrew
-Cencini
-10000.0000
-Chris
-Norred
-16800.0000
-Chris
-Okelberry
-12500.0000
-Shelley
-Dyck
-14000.0000
-Gabe
-Mares
-15000.0000
-Mike
-Seamans
-26400.0000
-Michael
-Raheem
-42500.0000
-Gary
-Altman
-24000.0000
-Charles
-Fitzgerald
-12500.0000
-Ebru
-Ersan
-13500.0000
-Sylvester
-Valdez
-14000.0000
-Brian
-Goldstein
-15000.0000
-Linda
-Meisner
-18300.0000
-Betsy
-Stadick
-13500.0000
-Magnus
-Hedlund
-9800.0000
-Karan
-Khanna
-12500.0000
-Mary
-Baker
-13500.0000
-Kevin
-Homer
-13500.0000
-Mihail
-Frintu
-15000.0000
-Bonnie
-Kearney
-13500.0000
-Fukiko
-Ogisu
-18300.0000
-Hung-Fu
-Ting
-14000.0000
-Gordon
-Hee
-18300.0000
-Kimberly
-Zimmerman
-13500.0000
-Kim
-Abercrombie
-12500.0000
-Sandeep
-Kaliyath
-15000.0000
-Prasanna
-Samarawickrama
-14000.0000
-Frank
-Pellow
-18300.0000
-Min
-Su
-14000.0000
-Eric
-Brown
-15000.0000
-Eric
-Kurjan
-18300.0000
-Pat
-Coleman
-9300.0000
-Maciej
-Dusza
-12500.0000
-Erin
-Hagens
-18300.0000
-Patrick
-Wedge
-13500.0000
-Frank
-Martinez
-15000.0000
-Ed
-Dudenhoefer
-12500.0000
-Christopher
-Hill
-13500.0000
-Patrick
-Cook
-15000.0000
-Krishna
-Sunkammurali
-14000.0000
-Lori
-Penor
-9300.0000
-Danielle
-Tiedt
-13500.0000
-Sootha
-Charncherngkha
-10600.0000
-Michael
-Zwilling
-12500.0000
-Randy
-Reeves
-12500.0000
-John
-Kane
-13500.0000
-Jack
-Creasey
-15000.0000
-Olinda
-Turner
-14000.0000
-Stuart
-Macrae
-9300.0000
-Jo
-Berry
-9300.0000
-Ben
-Miller
-18300.0000
-Tom
-Vande Velde
-13500.0000
-Ovidiu
-Cracium
-28800.0000
-Annette
-Hill
-12800.0000
-Janice
-Galvin
-25000.0000
-Reinout
-Hillmann
-12800.0000
-Michael
-Sullivan
-36100.0000
-Stephen
-Jiang
-48100.0000
-Wanida
-Benshoof
-13500.0000
-Sharon
-Salavaria
-32700.0000
-John
-Wood
-14400.0000
-Mary
-Dempsey
-13500.0000
-Brian
-Welcker
-72100.0000
-Sheela
-Word
-30000.0000
-Michael
-Blythe
-23100.0000
-Linda
-Mitchell
-23100.0000
-Jillian
-Carson
-23100.0000
-Garrett
-Vargas
-23100.0000
-Tsvi
-Reiter
-23100.0000
-Pamela
-Ansman-Wolfe
-23100.0000
-Shu
-Ito
-23100.0000
-Jose
-Saraiva
-23100.0000
-David
-Campbell
-23100.0000
-Amy
-Alberts
-48100.0000
-Jae
-Pak
-23100.0000
-Ranjit
-Varkey Chudukatil
-23100.0000
-Tete
-Mensa-Annan
-23100.0000
-Syed
-Abbas
-48100.0000
-Rachel
-Valdez
-23100.0000
-Lynn
-Tsoflias
-23100.0000
-Svetlin
-Nakov
-48000.0000
-Martin
-Kulov
-48000.0000
-George
-Denchev
-48000.0000
+Guy R Gilbert
+Production Technician
+Kevin F Brown
+Marketing Assistant
+Roberto Tamburello
+Engineering Manager
+Rob Walters
+Senior Tool Designer
+Thierry B D'Hers
+Tool Designer
+David M Bradley
+Marketing Manager
+JoLynn M Dobney
+Production Supervisor
+Ruth Ann Ellerbrock
+Production Technician
+Gail A Erickson
+Design Engineer
+Barry K Johnson
+Production Technician
+Jossef H Goldberg
+Design Engineer
+Terri Lee Duffy
+Vice President of Engineering
+Sidney M Higa
+Production Technician
+Taylor R Maxwell
+Production Supervisor
+Jeffrey L Ford
+Production Technician
+Jo A Brown
+Production Supervisor
+Doris M Hartwig
+Production Technician
+John T Campbell
+Production Supervisor
+Diane R Glimp
+Production Technician
+Steven T Selikoff
+Production Technician
+Peter J Krebs
+Production Control Manager
+Stuart V Munson
+Production Technician
+Greg F Alderson
+Production Technician
+David  Johnson
+Production Technician
+Zheng W Mu
+Production Supervisor
+Ivo William Salmre
+Production Technician
+Paul B Komosinski
+Production Technician
+Ashvini R Sharma
+Network Administrator
+Kendall C Keil
+Production Technician
+Paula M Barreto de Mattos
+Human Resources Manager
+Alejandro E McGuel
+Production Technician
+Garrett R Young
+Production Technician
+Jian Shuo Wang
+Production Technician
+Susan W Eaton
+Stocker
+Vamsi  Kuppa
+Shipping and Receiving Clerk
+Alice O Ciccu
+Production Technician
+Simon D Rapier
+Production Technician
+Jinghao K Liu
+Production Supervisor
+Michael T Hines
+Production Technician
+Yvonne S McKay
+Production Technician
+Peng J Wu
+Quality Assurance Supervisor
+Jean E Trenary
+Information Services Manager
+Russell Hunter
+Production Technician
+A. Scott Wright
+Master Scheduler
+Fred T Northup
+Production Technician
+Sariya E Harnpadoungsataya
+Marketing Specialist
+Willis T Johnson
+Recruiter
+Jun T Cao
+Production Technician
+Christian E Kleinerman
+Maintenance Supervisor
+Susan A Metters
+Production Technician
+Reuben H D'sa
+Production Supervisor
+Kirk J Koenigsbauer
+Production Technician
+David J Ortiz
+Production Technician
+Tengiz  Kharatishvili
+Control Specialist
+Hanying P Feng
+Production Technician
+Kevin H Liu
+Production Technician
+Annik O Stahl
+Production Technician
+Suroor R Fatima
+Production Technician
+Deborah E Poe
+Accounts Receivable Specialist
+Jim H Scardelis
+Production Technician
+Carole M Poland
+Production Technician
+George Z Li
+Production Technician
+Gary W Yukish
+Production Technician
+Cristian K Petculescu
+Production Supervisor
+Raymond K Sam
+Production Technician
+Janaina Barreiro Gambaro Bueno
+Application Specialist
+Bob  Hohman
+Production Technician
+Shammi G Mohamed
+Production Technician
+Linda K Moschell
+Production Technician
+Mindy C Martin
+Benefits Specialist
+Wendy Beth Kahn
+Finance Manager
+Kim T Ralls
+Stocker
+Sandra Reategui Alayo
+Production Technician
+Kok-Ho T Loh
+Production Supervisor
+Douglas B Hite
+Production Technician
+James D Kramer
+Production Technician
+Sean P Alexander
+Quality Assurance Technician
+Nitin S Mirchandani
+Production Technician
+Diane L Margheim
+Research and Development Engineer
+Rebecca A Laszlo
+Production Technician
+Rajesh M Patel
+Production Technician
+Vidur X Luthra
+Recruiter
+John P Evans
+Production Technician
+Nancy A Anderson
+Production Technician
+Pilar G Ackerman
+Shipping and Receiving Supervisor
+David A Yalovsky
+Production Technician
+David P Hamilton
+Production Supervisor
+Laura C Steele
+Production Technician
+Margie W Shoop
+Production Technician
+Zainal T Arifin
+Document Control Manager
+Lorraine O Nay
+Production Technician
+Fadi K Fakhouri
+Production Technician
+Ryan L Cornelsen
+Production Technician
+Candy L Spoon
+Accounts Receivable Specialist
+Nuan Yu
+Production Technician
+William S Vong
+Scheduling Assistant
+Bjorn M Rettig
+Production Technician
+Scott R Gode
+Production Technician
+Michael L Rothkugel
+Production Technician
+Lane M Sacksteder
+Production Technician
+Pete C Male
+Production Technician
+Dan K Bacon
+Application Specialist
+David M Barber
+Assistant to the Chief Financial Officer
+Lolan B Song
+Production Technician
+Paula R Nartker
+Production Technician
+Mary E Gibson
+Marketing Specialist
+Mindaugas J Krapauskas
+Production Technician
+Eric Gubbels
+Production Supervisor
+Ken J Sanchez
+Chief Executive Officer
+Jason M Watters
+Production Technician
+Mark L Harrington
+Quality Assurance Technician
+Janeth M Esteves
+Production Technician
+Marc J Ingle
+Production Technician
+Gigi  Matthew
+Research and Development Engineer
+Paul R Singh
+Production Technician
+Frank T Lee
+Production Technician
+Francois P Ajenstat
+Database Administrator
+Diane H Tibbott
+Production Technician
+Jill A Williams
+Marketing Specialist
+Angela W Barbariol
+Production Technician
+Matthias T Berndt
+Shipping and Receiving Clerk
+Bryan Baker
+Production Technician
+Jeff V Hay
+Production Supervisor
+Eugene R Zabokritski
+Production Technician
+Barbara S Decker
+Production Technician
+Chris T Preston
+Production Technician
+Sean  Chai
+Document Control Assistant
+Dan B Wilson
+Database Administrator
+Mark K McArthur
+Production Technician
+Bryan A Walton
+Accounts Receivable Specialist
+Houman  Pournasseh
+Production Technician
+Sairaj L Uddin
+Scheduling Assistant
+Michiko F Osada
+Production Technician
+Benjamin R Martin
+Production Technician
+Cynthia S Randall
+Production Supervisor
+Kathie E Flood
+Production Technician
+Britta L Simon
+Production Technician
+Brian T Lloyd
+Production Technician
+David J Liu
+Accounts Manager
+Laura F Norman
+Chief Financial Officer
+Michael W Patten
+Production Technician
+Andy M Ruth
+Production Technician
+Yuhong L Li
+Production Supervisor
+Robert J Rounthwaite
+Production Technician
+Andreas T Berglund
+Quality Assurance Technician
+Reed T Koch
+Production Technician
+Linda A Randall
+Production Technician
+James R Hamilton
+Vice President of Production
+Ramesh V Meyyappan
+Application Specialist
+Stephanie A Conroy
+Network Manager
+Samantha H Smith
+Production Technician
+Tawana G Nusbaum
+Production Technician
+Denise H Smith
+Production Technician
+Hao O Chen
+Human Resources Administrative Assistant
+Alex M Nayberg
+Production Technician
+Eugene O Kogan
+Production Technician
+Brandon G Heidepriem
+Production Technician
+Dylan A Miller
+Research and Development Manager
+Shane S Kim
+Production Supervisor
+John Y Chen
+Production Technician
+Karen R Berge
+Document Control Assistant
+Jose R Lugo
+Production Technician
+Mandar H Samant
+Production Technician
+Mikael Q Sandberg
+Buyer
+Sameer A Tejani
+Production Technician
+Dragan K Tomic
+Accounts Payable Specialist
+Carol M Philips
+Production Technician
+Rob T Caron
+Production Technician
+Don L Hall
+Production Technician
+Alan J Brewer
+Scheduling Assistant
+David Oliver Lawrence
+Production Technician
+Baris F Cetinok
+Production Technician
+Michael Sean Ray
+Production Supervisor
+Steve F Masters
+Production Technician
+Suchitra O Mohan
+Production Technician
+Karen A Berg
+Application Specialist
+Terrence W Earls
+Production Technician
+Barbara C Moreland
+Accountant
+Chad W Niswonger
+Production Technician
+Rostislav E Shabalin
+Production Technician
+Belinda M Newman
+Production Technician
+Katie L McAskill-White
+Production Supervisor
+Russell M King
+Production Technician
+Jack S Richins
+Production Supervisor
+Andrew R Hill
+Production Supervisor
+Nicole B Holliday
+Production Technician
+Frank T Miller
+Production Technician
+Peter I Connelly
+Network Administrator
+Anibal T Sousa
+Production Technician
+Ken L Myer
+Production Technician
+Grant  Culbertson
+Human Resources Administrative Assistant
+Michael T Entin
+Production Technician
+Lionel C Penuchot
+Production Technician
+Thomas R Michaels
+Production Technician
+Jimmy T Bischoff
+Stocker
+Michael T Vanderhyde
+Production Technician
+Lori A Kane
+Production Supervisor
+Arvind B Rao
+Buyer
+Stefen A Hesse
+Production Technician
+Hazem E Abolrous
+Quality Assurance Manager
+Janet L Sheperdigian
+Accounts Payable Specialist
+Elizabeth I Keyser
+Production Technician
+Terry J Eminhizer
+Marketing Specialist
+John  Frum
+Production Technician
+Merav A Netz
+Production Technician
+Brian P LaMee
+Scheduling Assistant
+Kitti H Lertpiriyasuwat
+Production Technician
+Jay G Adams
+Production Technician
+Jan S Miksovsky
+Production Technician
+Brenda M Diaz
+Production Supervisor
+Andrew M Cencini
+Production Technician
+Chris K Norred
+Control Specialist
+Chris O Okelberry
+Production Technician
+Shelley  Dyck
+Production Technician
+Gabe B Mares
+Production Technician
+Mike K Seamans
+Accountant
+Michael Raheem
+Research and Development Manager
+Gary E. Altman
+Facilities Manager
+Charles B Fitzgerald
+Production Technician
+Ebru  Ersan
+Production Technician
+Sylvester A Valdez
+Production Technician
+Brian Richard Goldstein
+Production Technician
+Linda P Meisner
+Buyer
+Betsy A Stadick
+Production Technician
+Magnus E Hedlund
+Facilities Administrative Assistant
+Karan R Khanna
+Production Technician
+Mary R Baker
+Production Technician
+Kevin M Homer
+Production Technician
+Mihail U Frintu
+Production Technician
+Bonnie  Kearney
+Production Technician
+Fukiko J Ogisu
+Buyer
+Hung-Fu T Ting
+Production Technician
+Gordon L Hee
+Buyer
+Kimberly B Zimmerman
+Production Technician
+Kim B Abercrombie
+Production Technician
+Sandeep P Kaliyath
+Production Technician
+Prasanna E Samarawickrama
+Production Technician
+Frank S Pellow
+Buyer
+Min G Su
+Production Technician
+Eric L Brown
+Production Technician
+Eric S Kurjan
+Buyer
+Pat H Coleman
+Janitor
+Maciej W Dusza
+Production Technician
+Erin M Hagens
+Buyer
+Patrick C Wedge
+Production Technician
+Frank R Martinez
+Production Technician
+Ed R Dudenhoefer
+Production Technician
+Christopher E Hill
+Production Technician
+Patrick M Cook
+Production Technician
+Krishna Sunkammurali
+Production Technician
+Lori K Penor
+Janitor
+Danielle C Tiedt
+Production Technician
+Sootha T Charncherngkha
+Quality Assurance Technician
+Michael J Zwilling
+Production Technician
+Randy T Reeves
+Production Technician
+John T Kane
+Production Technician
+Jack T Creasey
+Production Technician
+Olinda C Turner
+Production Technician
+Stuart J Macrae
+Janitor
+Jo L Berry
+Janitor
+Ben T Miller
+Buyer
+Tom M Vande Velde
+Production Technician
+Ovidiu V Cracium
+Senior Tool Designer
+Annette L Hill
+Purchasing Assistant
+Janice M Galvin
+Tool Designer
+Reinout  Hillmann
+Purchasing Assistant
+Michael I Sullivan
+Senior Design Engineer
+Stephen Y Jiang
+North American Sales Manager
+Wanida M Benshoof
+Marketing Assistant
+Sharon B Salavaria
+Design Engineer
+John L Wood
+Marketing Specialist
+Mary A Dempsey
+Marketing Assistant
+Brian S Welcker
+Vice President of Sales
+Sheela H Word
+Purchasing Manager
+Michael G Blythe
+Sales Representative
+Linda C Mitchell
+Sales Representative
+Jillian Carson
+Sales Representative
+Garrett R Vargas
+Sales Representative
+Tsvi Michael Reiter
+Sales Representative
+Pamela O Ansman-Wolfe
+Sales Representative
+Shu K Ito
+Sales Representative
+Jose Edvaldo Saraiva
+Sales Representative
+David R Campbell
+Sales Representative
+Amy E Alberts
+European Sales Manager
+Jae B Pak
+Sales Representative
+Ranjit R Varkey Chudukatil
+Sales Representative
+Tete A Mensa-Annan
+Sales Representative
+Syed E Abbas
+Pacific Sales Manager
+Rachel B Valdez
+Sales Representative
+Lynn  Tsoflias
+Sales Representative
+Svetlin Ivanov Nakov
+Independent Software Development  Consultant
+Martin Kulov
+Independent .NET Consultant
+George Denchev
+Independent Java Consultant
 [/output]
 [/test]
 [/tests]
