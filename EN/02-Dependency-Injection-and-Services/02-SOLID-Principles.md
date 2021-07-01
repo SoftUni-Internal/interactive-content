@@ -4,8 +4,7 @@
 
 # Single Responsibility Principle
 
-6-SOLID-Principles
-7-Single-Responsibility-Principle
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/6-7-SOLID-Principles-and-single-responsibility-principle-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## SOLID Overview
 
@@ -41,7 +40,7 @@ This is performed by **services**, which will be the topic of the next section.
 
 # Open-Closed Principle
 
-8-Open-Closed-Principle
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/8-Open-Closed-Principle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **Open-Closed Principle** states that a class, a module, or a function should be **open for extension** but **closed for modification**.
 
@@ -61,7 +60,7 @@ If we decide to **break** this principle and modify functionality that is alread
 
 # Liskov Substitution Principle
 
-9-Liskov-Substitution-Principle
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/9-Liskov-Substitution-Principle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Introduced by Barbara Liskov in 1987, the **Liskov substitution principle** states that **child classes** should **never break** the **parent class' type definitions**.
 
@@ -77,7 +76,7 @@ Child classes also **should not remove** the behavior of their **parent class**.
 
 # Interface Segregation Principle
 
-10-Interface-Segregation-Principle
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/10-Interface-Segregation-Principle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **Interface Segregation Principle**, abbreviated as (ISP), states that clients **should not** be forced to depend on **methods they do not use**.
 
@@ -93,7 +92,7 @@ The main intention of ISP is to keep a system **decoupled**, resulting in easier
 
 # Dependency Inversion Principle
 
-11-12-Dependency-Inversion-Principle
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/11-12-Dependency-Inversion-Principle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **Dependency Inversion Principle** (DIP) states that:
 
@@ -107,8 +106,6 @@ DIP changes the **direction** of the dependency and **splits it** between the hi
 [slide hideTitle]
 
 # Dependency Inversion Principle: Abstractions and Concretions
-
-DEMO
 
 ## Abstractions
 
@@ -153,7 +150,7 @@ The classes that **inherit** it, like `Brandon` for example, are **Concretions**
 
 # Dependency Injection
 
-13-14-Dependency-Injection
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/13-14-Dependency-Injection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Dependency Injection** is a popular design pattern and one of Angular's **most important features**.
 
@@ -200,7 +197,7 @@ To inject a dependency in a **class**, we use the **constructor**, in which we c
 
 # Classic Violations
 
-15-Classic-Violations
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/15-Classic-Violations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We **should not** use the `new` keyword inside the constructor or use **static** methods and properties.
 
@@ -224,7 +221,7 @@ This will make our class **brittle**, **inflexible**, and **hard to test**.
 
 # How to Fix?
 
-16-How-to-Fix
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/16-How-to-Fix-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We should always **add dependencies** through the **constructor**:
 
@@ -253,7 +250,7 @@ let carTwo = new Car(
 
 # General Requirements
 
-17-General-Requirements
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/17-General-Requirements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To conclude, these are the requirements for the DI Pattern:
 
