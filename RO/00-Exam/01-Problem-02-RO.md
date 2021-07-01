@@ -45,6 +45,13 @@ Suma trebuie formatată la a doua cifră după punctul zecimal.
 | 100 | |
 | 2 | |
 
+| **Input** | **Output** |
+| --- | --- |
+| 504.20 | 111.54 dollars needed. |
+| 10 | |
+| 54.20 | |
+| 20 | |
+
 [hints]
 [hint]
 Determinați dacă familia Smith va primi o reducere dacă aceștia stau mai mult de 7 zile.
@@ -72,7 +79,7 @@ Verificați dacă bugetul lor este suficient și tipăriți ieșirea corectă.
 The Smiths will be left with 24.49 dollars after the vacation.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 504.20
 10

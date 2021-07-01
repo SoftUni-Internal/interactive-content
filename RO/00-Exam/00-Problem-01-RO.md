@@ -45,6 +45,14 @@ Rezultatul trebuie formatat la a doua cifră după punctul zecimal:
 | 5.50 | | 
 | 4.40 | | 
 | 6.20 | | 
+
+
+| **Input** | **Output** |
+| --- | --- | --- |
+| 32 | 272.00 euro | 
+| 5 | | 
+| 2 | | 
+| 4 | | 
 [hints]
 [hint]
 Calculați taxa inițială de intrare pentru toate persoanele.
@@ -74,7 +82,7 @@ Determinați prețul final după adăugarea taxelor pentru umbrele și șezlongu
 254.10 euro
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 32
 5

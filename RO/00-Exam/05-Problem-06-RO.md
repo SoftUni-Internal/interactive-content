@@ -77,6 +77,31 @@ Ieșirea constă dintr-o singură linie:
 | win | |
 | **Finish** | |
 
+| **Input** | **Output** |
+| --- | --- | 
+| **3** | You lost the tournament! Total money raised: 84.00 |
+| darts | |
+| lose | | 
+| handball | |
+| lose | |
+| judo | |
+| win | |
+| **Finish** | |
+| snooker | | 
+| lose | |
+| swimming | |
+| lose | |
+| squash | |
+| lose | |
+| table tennis | |
+| win | |
+| **Finish** | |
+| volleyball | |
+| win | |
+| basketball | |
+| win | |
+| **Finish** | |
+
 [hints]
 [hint]
 Calculați câți bani ați câștigat în fiecare zi a turneului. Dacă în ziua respectivă ați câstigat mai multe jocuri decât ați pierdut, majorați câștigurile cu 10%.

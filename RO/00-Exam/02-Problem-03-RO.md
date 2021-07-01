@@ -48,6 +48,12 @@ Imprimați o linie pe consolă:
 | Without |  |
 | 10 |  |
 
+| **Input** | **Output** |
+| --- | --- |
+| Espresso | You bought 4 cups of Espresso for 2.34 dollars. |
+| Without |  |
+| 4 |  |
+
 [hints]
 [hint]
 Calculați prețul total pentru băuturi. Apoi verificați dacă există o reducere.
@@ -74,7 +80,7 @@ Without
 You bought 10 cups of Espresso for 4.39 dollars.
 [/output]
 [/test]
-[test]
+[test open]
 [input]
 Espresso
 Without

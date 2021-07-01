@@ -54,6 +54,16 @@ Suma trebuie formatată la a doua cifră după punctul zecimal.
 | 7 |  |
 | Party! |  |
 
+| **Input** | **Output** |
+| --- | --- |
+| 100 | Target acquired. |
+| Sidecar | Club income - 196.75 dollars. |
+| 7 |  |
+| Mojito |  |
+| 5 |  |
+| White Russian |  |
+| 10 |  |
+
 [hints]
 [hint]
 Țineți cont că prețul individual pentru fiecare cocktail este lungimea numelui său. Dacă prețul unei comenzi este un număr impar, aplicați reducerea.
