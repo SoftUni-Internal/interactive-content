@@ -1,7 +1,7 @@
-[slide hideTitle]
-# Problem: Find All Information About Employees 
 
-[code-task title="Find All Information About Employees" taskId="java-db-and-MySQL-basic-crud-find-all-information-about-employees" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+
+
+[code-task title="Find the Names of All Employees by Salary in Range" taskId="java-db-and-MySQL-basic-crud-find-the-names-salary-range" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
 ```
@@ -13,19 +13,19 @@
 [task-description]
 ## Description
 
-Write an SQL query to find **all information** about employees whose **job title** is **Sales Representative**. 
+Write an SQL query to find the first name, last name, and job title of all employees whose salary is in the range [**20000**, **30000**]. 
 
-**Sort** the results **by id**. 
+**Sort** the information **by id**. 
 
 
 ## Example
 
-| id | first_name | last_name | middle_name | job_title | dept_id | mngr_id | hire_date | salary | address_id |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 275  | Michael | Blythe | G | Sales Representative | 3 | 268 | ... | 23100.00 | 60 |
-| 276  | Linda | Mitchell | C | Sales Representative | 3 | 268 | ... | 23100.00 | 170 |
-| 277  | Jillian | Carson | NULL | Sales Representative | 3 | 268 | ... | 23100.00 | 61 |
-| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
+| first_name | last_name | job_title | 
+| --- | --- | --- |
+| Rob  | Walters | Senior Tool Designer | 
+| Thierry | D'Hers | Tool Designer | 
+| JoLynn | Dobney | Production Supervisor |
+| ... | ... | ... |
 
 
 [/task-description]
@@ -1705,146 +1705,165 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
 [/input]
 [output]
-275
+Rob
+Walters
+Senior Tool Designer
+Thierry
+D'Hers
+Tool Designer
+JoLynn
+Dobney
+Production Supervisor
+Taylor
+Maxwell
+Production Supervisor
+Jo
+Brown
+Production Supervisor
+John
+Campbell
+Production Supervisor
+Peter
+Krebs
+Production Control Manager
+Zheng
+Mu
+Production Supervisor
+Paula
+Barreto de Mattos
+Human Resources Manager
+Jinghao
+Liu
+Production Supervisor
+Peng
+Wu
+Quality Assurance Supervisor
+A\. Scott
+Wright
+Master Scheduler
+Christian
+Kleinerman
+Maintenance Supervisor
+Reuben
+D'sa
+Production Supervisor
+Cristian
+Petculescu
+Production Supervisor
+Janaina
+Bueno
+Application Specialist
+Kok-Ho
+Loh
+Production Supervisor
+David
+Hamilton
+Production Supervisor
+Dan
+Bacon
+Application Specialist
+Eric
+Gubbels
+Production Supervisor
+Jeff
+Hay
+Production Supervisor
+Cynthia
+Randall
+Production Supervisor
+Yuhong
+Li
+Production Supervisor
+Ramesh
+Meyyappan
+Application Specialist
+Shane
+Kim
+Production Supervisor
+Michael
+Ray
+Production Supervisor
+Karen
+Berg
+Application Specialist
+Barbara
+Moreland
+Accountant
+Katie
+McAskill-White
+Production Supervisor
+Jack
+Richins
+Production Supervisor
+Andrew
+Hill
+Production Supervisor
+Lori
+Kane
+Production Supervisor
+Hazem
+Abolrous
+Quality Assurance Manager
+Brenda
+Diaz
+Production Supervisor
+Mike
+Seamans
+Accountant
+Gary
+Altman
+Facilities Manager
+Ovidiu
+Cracium
+Senior Tool Designer
+Janice
+Galvin
+Tool Designer
+Sheela
+Word
+Purchasing Manager
 Michael
 Blythe
-G
 Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-60
-276
 Linda
 Mitchell
-C
 Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-170
-277
 Jillian
 Carson
-
 Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-61
-278
 Garrett
 Vargas
-R
 Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-52
-279
 Tsvi
 Reiter
-Michael
 Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-154
-280
 Pamela
 Ansman-Wolfe
-O
 Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-179
-281
 Shu
 Ito
-K
 Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-235
-282
 Jose
 Saraiva
-Edvaldo
 Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-178
-283
 David
 Campbell
-R
 Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-13
-285
 Jae
 Pak
-B
 Sales Representative
-3
-284
-2004-07-01 00:00:00
-23100.0000
-54
-286
 Ranjit
 Varkey Chudukatil
-R
 Sales Representative
-3
-284
-2004-07-01 00:00:00
-23100.0000
-38
-287
 Tete
 Mensa-Annan
-A
 Sales Representative
-3
-268
-2004-11-01 00:00:00
-23100.0000
-53
-289
 Rachel
 Valdez
-B
 Sales Representative
-3
-284
-2005-07-01 00:00:00
-23100.0000
-37
-290
 Lynn
 Tsoflias
-
 Sales Representative
-3
-288
-2005-07-01 00:00:00
-23100.0000
-153
 [/output]
 [/test]
 [test]
@@ -1866,63 +1885,65 @@ CREATE TABLE IF NOT EXISTS `employees` (
 
 
 INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Guy', 'Gilbert', 'R', 'Sales Representative', 7, '1998-07-31 00:00:00', 12500.0000, 166),
-	(2, 'Kevin', 'Brown', 'F', 'Sales Representative', 4, '1999-02-26 00:00:00', 13500.0000, 102),
-	(3, 'Roberto', 'Tamburello', NULL, 'Sales Representative', 12, '1999-12-12 00:00:00', 43300.0000, 193),
-	(4, 'Rob', 'Walters', NULL, 'Sales Representative', 2, '2000-01-05 00:00:00', 29800.0000, 155),
-	(5, 'Thierry', 'D''Hers', 'B', 'Sales Representative', 2, '2000-01-11 00:00:00', 25000.0000, 40);
+	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, '1998-07-31 00:00:00.000000', 22500.0000, 166),
+	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, '1999-02-26 00:00:00.000000', 23500.0000, 102),
+	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 12, '1999-12-12 00:00:00.000000', 20000.0000, 193),
+	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, '2000-01-05 00:00:00.000000', 30000.0000, 155),
+	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, '2000-01-11 00:00:00.000000', 25000.0000, 40);
 [/input]
 [output]
-1
 Guy
 Gilbert
-R
-Sales Representative
-7
-
-1998-07-31 00:00:00
-12500.0000
-166
-2
+Production Technician
 Kevin
 Brown
-F
-Sales Representative
-4
-
-1999-02-26 00:00:00
-13500.0000
-102
-3
+Marketing Assistant
 Roberto
 Tamburello
-
-Sales Representative
-12
-
-1999-12-12 00:00:00
-43300.0000
-193
-4
+Engineering Manager
 Rob
 Walters
-
-Sales Representative
-2
-
-2000-01-05 00:00:00
-29800.0000
-155
-5
+Senior Tool Designer
 Thierry
 D'Hers
-B
-Sales Representative
-2
+Tool Designer
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `PK_Employees` (`employee_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
 
-2000-01-11 00:00:00
-25000.0000
-40
+
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, '1998-07-31 00:00:00.000000', 12500.0000, 166),
+	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, '1999-02-26 00:00:00.000000', 13500.0000, 102),
+	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 12, '1999-12-12 00:00:00.000000', 20000.0000, 193),
+	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, '2000-01-05 00:00:00.000000', 29800.0000, 155),
+	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, '2000-01-11 00:00:00.000000', 25000.0000, 40);
+[/input]
+[output]
+Roberto
+Tamburello
+Engineering Manager
+Rob
+Walters
+Senior Tool Designer
+Thierry
+D'Hers
+Tool Designer
 [/output]
 [/test]
 [test]
@@ -1945,49 +1966,34 @@ CREATE TABLE IF NOT EXISTS `employees` (
 
 
 INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, '1998-07-31 00:00:00.000000', 12500.0000, 166),
-	(2, 'Kevin', 'Brown', 'F', 'Sales Representative', 4, '1999-02-26 00:00:00.000000', 13500.0000, 102),
+	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, '1998-07-31 00:00:00.000000', 125000.0000, 166),
+	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, '1999-02-26 00:00:00.000000', 30000.0000, 102),
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Thierry', 'D''Hers', 'B', 'Sales Representative', 2, '2000-01-11 00:00:00.000000', 25000.0000, 40), 
-	(6, 'David', 'Bradley', 'M', 'Marketing Manager', 5, '2000-01-20 00:00:00.000000', 13500.0000, 199),
-	(7, 'Barry', 'Johnson', 'K', 'Sales Representative', 185, '2000-02-07 00:00:00.000000', 13500.0000, 285);
+	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, '2000-01-11 00:00:00.000000', 25000.0000, 40), 
+	(6, 'David', 'Bradley', 'M', 'Marketing Manager', 5, '2000-01-20 00:00:00.000000', 23500.0000, 199),
+	(7, 'Barry', 'Johnson', 'K', 'Production Technician', 185, '2000-02-07 00:00:00.000000', 27500.0000, 285);
 [/input]
 [output]
-```
-2
 Kevin
 Brown
-F
-Sales Representative
-4
-
-1999-02-26 00:00:00
-13500.0000
-102
-5
+Marketing Assistant
+Rob
+Walters
+Senior Tool Designer
 Thierry
 D'Hers
-B
-Sales Representative
-2
-
-2000-01-11 00:00:00
-25000.0000
-40
-7
+Tool Designer
+David
+Bradley
+Marketing Manager
 Barry
 Johnson
-K
-Sales Representative
-185
-
-2000-02-07 00:00:00
-13500.0000
-285
-```
+Production Technician
 [/output]
 [/test]
 [/tests]
 [/code-task]
 [/slide]
+
+
