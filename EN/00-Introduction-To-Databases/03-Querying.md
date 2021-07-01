@@ -14,7 +14,7 @@ It is **highly recommended** that you **clear** the **database** that has been *
 
 [slide hideTitle]
 # Problem: Number of Courses for Each Car
-[code-task title="Number of courses for each car" taskId="java-db-and-MySQL-exam-number-of-courses-for-each-car" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Number of Courses for Each Car" taskId="java-db-and-MySQL-exam-number-of-courses-for-each-car" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
