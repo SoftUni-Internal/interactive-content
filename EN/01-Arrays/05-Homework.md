@@ -655,14 +655,6 @@ no
 [/test]
 [test]
 [input]
-1 2
-[/input]
-[output]
-no
-[/output]
-[/test]
-[test]
-[input]
 999
 [/input]
 [output]
