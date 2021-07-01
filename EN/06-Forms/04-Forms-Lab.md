@@ -74,7 +74,7 @@ Wrap both password fields inside a common `ngModelGroup` and add the **password 
 
 At the **end**, your form should look like this:
 
-[image assetsSrc="Angular-Forms(1).png" /]
+[image assetsSrc="Angular-Forms(1-2).png" /]
 
 [image assetsSrc="Angular-Forms(1-1).png" /]
 
