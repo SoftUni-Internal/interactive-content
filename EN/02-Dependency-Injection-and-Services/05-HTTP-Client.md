@@ -4,7 +4,7 @@
 
 # The HTTP Client Module
 
-32-33-HTTP-Client-and-the-http-cllient-module
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/32-33-HTTP-Client-and-the-http-cllient-module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Angular's HTTP module enables us to **interact** with thousands of **web-based APIs** like Facebook, Twitter, and Amazon Web Services.
 
@@ -55,7 +55,7 @@ From now on, the `HttpClient` can be injected into different Services.
 
 # Using the HTTP Client in Services
 
-34-Using-the-HTTP-Client-in-Services
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/34-Using-the-HTTP-Client-in-Services-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 While it is possible to import the `HttpClient` module in a component, it is not recommended.
 
@@ -96,7 +96,7 @@ The `getAllPhotos()` method makes a GET request to a demo REST API.
 
 # Subscribing to the Observable
 
-35-Subscribe-to-the-Observable
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/35. Subscribe-to-the-Observable-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To subscribe to the Observable, create a `PhotosComponent` with the Angular CLI:
 
@@ -132,7 +132,7 @@ Inside `ngOnInit()`, use the `subcribe()` method.
 
 # Type Checking the Response
 
-36-Type-Checking-the-Response
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/36-Type-Checking-the-Response-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A major upside of TypeScript is that we can use **Interfaces** to **explicitly** type what a class must include.
 
@@ -154,7 +154,7 @@ interface Photo {
 
 # Handling Errors
 
-37-Handling-Errors
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/37-Handling-Errors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 While accessing remote data, many **issues** may occur.
 
@@ -179,6 +179,6 @@ this.photosService.getAllPhotos()
 
 # HTTP Client - Demo
 
-03-Angular_Fundamentals_Dependency_Injection_and_Services_Demo-1-2
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/03-Angular_Fundamentals_Dependency_Injection_and_Services_Demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
