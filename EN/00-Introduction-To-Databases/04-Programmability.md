@@ -647,15 +647,6 @@ SELECT udf_courses_by_client ('(858) 2664934') as `count`;
 [/code-task]
 [/slide]
 
-# Section Four
-[slide hideTitle]
-# Programmability 
-The time has come for you to prove that you can be a little more dynamic on the database. 
-
-So, you will have to write several procedures.
-[/slide]
-
-
 [slide hideTitle]
 # Problem: Full Info for Address
 [code-task title="Full Info for Address" taskId="java-db-and-MySQL-exam-full-info-for-address" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
