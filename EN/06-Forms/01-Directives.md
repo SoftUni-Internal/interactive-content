@@ -59,6 +59,8 @@ As shown above, an asterisk `*` precedes a directive attribute's name.
 
 # Directives Comparison
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-5-Directives-Comparison-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 js-angular-forms-5-Directives-Comparison
 
 ## Attribute Directives
@@ -125,7 +127,7 @@ There are three main structural directives in Angular: `*ngIf`, `*ngFor`, and `*
 
 # Building a Simple Attribute Directive
 
-js-angular-forms-6-Build-a-Simple-Attribute-Directive
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-6-Build-a-Simple-Attribute-Directive-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 An attribute directive requires building a controller class annotated with the `@Directive` decorator.
 
@@ -162,8 +164,7 @@ export class HighlightDirective {
 
 # Attaching Styles To Referenced Elements
 
-js-angular-forms-7-Attach-Styles-to-Referenced-Elements
-js-angular-forms-8-Warning - Use-Renderer2
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Inject the referenced element and change its background color as in the example below.
 
@@ -196,7 +197,7 @@ import { Renderer2 } from '@angular/core'
 
 # Renderer2 Usage
 
-js-angular-forms-9-Warning - Use-Renderer2
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-9-Renderer2-Usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To use Renderer2, we have to inject it.
 

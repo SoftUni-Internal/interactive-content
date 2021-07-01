@@ -641,7 +641,7 @@ For example, **Password** and **Confirm Password**:
 
 # Setting and Patching a Form Value
 
-js-angular-forms-35-Setting-and-Patching-Form-Value
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-35-Setting-and-Patching-Form-Value-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Use `setValue()` or `patchValue()` to change the form from inside the component or add default values.
 
@@ -659,7 +659,7 @@ changeInput() {this.laptopForm.form.patchValue({
 
 # Resetting the Form
 
-js-angular-forms-36-Resetting-the-Form
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-36-Resetting-the-Form-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 After a form is submitted, resetting is necessary to clear all input fields and reset the track state.
 

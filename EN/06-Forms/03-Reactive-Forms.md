@@ -4,7 +4,7 @@
 
 # Reactive Forms Overview
 
-js-angular-forms-37-38-Handling-Forms-and-reactive-forms-overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-37-38-Handling-Forms-and-reactive-forms-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Reactive forms provide a model-driven approach to handling form inputs whose values change over time.
 
@@ -30,7 +30,7 @@ This approach to building forms brings even more advantages, such as:
 
 # Reactive Forms Module
 
-js-angular-forms-39-Reactive-Forms-Module
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-39-Reactive-Forms-Module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To use reactive forms, we should import the **Reactive Forms Module**:
 
@@ -64,7 +64,7 @@ We use `formControl` to track the value and validity of a single form control.
 
 # The Component Class
 
-js-angular-forms-40-The-Component-Class
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-40-The-Component-Class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In the component class, we will create instances of **FormGroup** and **FormControl** that we will bind later in the template.
 
@@ -100,7 +100,7 @@ In this example, we create a `laptopForm` group which consists of two `formContr
 
 # The Template
 
-js-angular-forms-41-Template
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-41-Template-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Once we have created controls in the class, we have to associate the `formGroup` with a form element in the HTML:
 
@@ -126,7 +126,7 @@ The form control is now registered to the `processor` input element.
 
 # Accessing Form Model Properties
 
-js-angular-forms-42-Accessing-Form-Model-Properties
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-42-Accessing-Form-Model-Properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are two ways to access the properties of the form model.
 
@@ -150,7 +150,7 @@ The idea is to shorten the template and transfer such logic in the component whe
 
 # Using Form Builder
 
-js-angular-forms-43-Using-Form-Builder
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-43-Using-Form-Builder-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Most Angular applications contain multiple forms.
 
@@ -185,7 +185,7 @@ this.laptopForm = this.fb.group({
 
 # Validation
 
-js-angular-forms-44-Validation
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-44-Validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Validation in **reactive** forms can be performed both **synchronously** and **asynchronously**.
 
@@ -216,7 +216,7 @@ This is done for performance reasons.
 
 # Setting Up Built-in Validation
 
-js-angular-forms-45-Setting-Up-Build-in-Validation
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-45-Setting-Up-Build-in-Validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Defining our **FormGroup** with a **FormBuilder** allows us to add an array of validations using the **Validators** class.
 
@@ -245,7 +245,7 @@ The method creates a new instance of the `FormGroup` class.
 
 # Adjusting the Template
 
-js-angular-forms-46-Adjust-the-Template
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-46-Adjust-the-Template-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `formGroup` directive has an ``errors`` property
 
@@ -276,7 +276,7 @@ In the other case, the property will contain an object with the errors.
 
 # Watching and Reacting to Changes
 
-js-angular-forms-47-Watching-and-Reacting-to-Changes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-47-Watching-and-Reacting-to-Changes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Using **Reactive Forms** we have the ability to **watch** and **react** to changes on form **groups** and form **controls**.
 
@@ -298,7 +298,7 @@ In this example, we then use the `subscribe` method to print the latest value of
 
 # Reactive Transformations: Example
 
-js-angular-forms-48-Reactive-Transformations-Example
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-48-Reactive-Transformations-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Import **throttleTime** from the following library.
 
