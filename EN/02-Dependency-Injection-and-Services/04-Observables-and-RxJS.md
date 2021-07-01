@@ -91,7 +91,7 @@ We can use observables to work with streams in Angular.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/25-The-Observables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Observables are used to **monitor these streams** will **emit a function in one of the following cases:
+Observables are used to **monitor these streams** will **emit a function** in one of the following cases:
 
 - If a value is omitted
 - If there is an error
