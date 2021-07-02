@@ -2,9 +2,10 @@
 [slide hideTitle]
 # Data Definition Language (DDL)
 
-Make sure you implement the whole database correctly on your local machine so that you can work with it.
+Make sure you implement the whole database correctly on your local machine so that you can work with it. 
 
 The instructions you will be given will be the minimum required for you to implement the database.
+
 
 [/slide]
 
@@ -19,7 +20,7 @@ The instructions you will be given will be the minimum required for you to imple
 [/code-editor]
 [task-description]
 # Description
-You have been tasked to create the tables in the database by the following models:
+You should create the tables in the database by the following models:
 
 ## Addresses
 

@@ -3,7 +3,7 @@
 # Programmability 
 The time has come for you to prove that you can be a little more dynamic on the database. 
 
-So, you will have to write several procedures.
+You will have to write several procedures.
 [/slide]
 
 
@@ -607,7 +607,7 @@ insert into cars_drivers (car_id, driver_id) values (94, 4),
 [/code-adapter]
 [task-description]
 # Description
-Create a ** user-defined function** with the **name udf_courses_by_client (phone_num VARCHAR (20))** that receives a **client's phone number** and returns the number of courses that clients have in the database.
+Create a **user defined function** with the name **udf_courses_by_client (phone_num VARCHAR (20))** that receives a **client's phone number** and returns the number of courses that clients have in the database.
 
 ## Examples
 | **Query** |**Count** |
@@ -1253,9 +1253,11 @@ Create a stored procedure **udp_courses_by_address** which accepts the following
 
 Extract data about the **addresses** with the given **address_name**. 
 
-The needed data is the **name** of the **address**, **full name** of the **client**, **level of bill** (depends of course bill - **Low** - lower than **20** (inclusive), **Medium** - lower than 30(inclusive), and **High**), **make** and **condition** of the car and the **name** of the **category**.
+Extract data about the **addresses** with the given **address_name**. 
 
-Order addresses by make, then by client's **full name**.
+The needed data is the **name** of the **address**, **full name** of the **client**, the **level of bill** (**Low** - lower than **20** (inclusive), **Medium** - lower than **30** (inclusive), and **High**), **make**, and **condition** of the car as well as the **name** of the **category**.
+
+**Order** addresses by **make**, then by the client's **full name**.
 
 Required Columns
 - "**name**" (address)

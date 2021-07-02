@@ -2,11 +2,11 @@
 [slide hideTitle]
 # Querying 
 
-And now we need to do some data extraction. 
+Now you need to do some data extraction. 
 
-**Note** that the **example results** from this section use a fresh database. 
+**Note** that the **example** results from **this section** use a **fresh database**. 
 
-It is **highly recommended** that you **clear** the **database** that has been **manipulated** by the **previous problems** from the **DML section** and **insert again** the **dataset** you have been given, to ensure **maximum consistency** with the **examples** given in this section.
+It is **highly recommended** that you **clear** the **database** that has been **manipulated** in the **previous problems** from the **DML section** and **insert** the initial **dataset** to ensure **maximum consistency**.
 
 [/slide]
 
@@ -20,9 +20,10 @@ It is **highly recommended** that you **clear** the **database** that has been *
 [/code-editor]
 [task-description]
 # Description
-Extract the info about all the cars. 
+Extract the information about all the cars. 
 
-**Order** the results by **car's id**.
+**Order** the results by their **id**.
+
 
 Required Columns:
 
@@ -1843,11 +1844,11 @@ C
 [/code-editor]
 [task-description]
 # Description
-Now, we need more detailed information about drivers and their cars.
+We need more detailed information about drivers and their cars.
 
-Select all drivers and cars that they drive. 
+Select all drivers and the cars that they drive. 
 
-Extract the driver's **first** and **last** name from the driver's table and the **make**, the **model** and the **mileage** from the car's table. 
+Extract each driver's **first** and **last** name from the **drivers** table combined with the **make**, the **model**, and the **mileage** from the **cars** table. 
 
 **Order** the result by the **mileage** in **descending** order, then by the **first** name alphabetically. 
 
@@ -1864,7 +1865,7 @@ Required Columns
 
 ## Example
 
-| **first_nam** |**last_name** |**make** |**model** |**mileage** |
+| **first_name** |**last_name** |**make** |**model** |**mileage** |
 | --- | --- |--- | --- | --- | 
 |Edna|	Heatley|	Pontiac|	Trans Sport|	967608|
 |Delaney|	Stove|	Pontiac|	Fiero|	959778|
@@ -4006,11 +4007,11 @@ G-Class
 [/code-editor]
 [task-description]
 # Description
-Extract from the database all the **cars** and the **count** of their courses. 
+Extract all the **cars** and the **count** of their courses from the database. 
 
-Also display the **average bill** of each course by the **car**, rounded to the second digit.
+Also, display the **average bill** of each course by the **car**, rounded to the second digit.
 
-**Order** the results **descending** by the **count** of **courses**, then by the car’s id. 
+**Order** the results in **descending** order by the **count** of **courses**, then by the **car's id**.
 
 **Skip** the cars with **exactly 2** courses.
 
@@ -6155,13 +6156,12 @@ Land Rover
 [/code-editor]
 [task-description]
 # Description
-Extract the **regular clients**, **who have ridden in more than one car**. 
 
-The **second letter** of the customer's **full name** must be '**a**'. 
+Extract the **regular clients**, **who have ridden in more than one car** and the **second letter** of their **full name** is '**a**'. 
 
-Select the **full name**, the **count** of **cars** that he ridden and total **sum** of all courses.
+Select the **full name**, the **count** of **cars** they have been in and the total **sum** of all courses.
 
-**Order** clients by their "**full_name**".
+**Order** the clients by their **full_name**.
 
 Required Columns
 
@@ -7427,11 +7427,12 @@ Raynor Dobbison
 [/code-editor]
 [task-description]
 # Description
-The headquarters want us to make a query that shows the complete information about all courses in the database. 
+The headquarters want us to write a query that shows the complete information about all courses in the database. 
 
-The information that they need is the **address**, if the course is made in the **Day** (between **6** and **20** (inclusive both)) or in the **Night** (between **21** and **5** (inclusive both)), the **bill** of the course, the **full name** of the **client**, the car **maker**, the **model** and the **name** of the **category**.
+The information that they need is the **address**, if the course is made in the **Day** (between **6** and **20** inclusive) or in the **Night** (between **21** and **5** inclusive), the **bill** of the course, the **full name** of the **client**, the car **maker**, the **model**, and the **name** of the **category**.
 
 Order the results by **course id**.
+
 
 
 Required Columns

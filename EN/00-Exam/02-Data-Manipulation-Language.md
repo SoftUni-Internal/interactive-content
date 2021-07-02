@@ -4,7 +4,7 @@
 
 # Data Manipulation Language (DML)
 
-Here we need to do several manipulations in the database, like changing data, adding data, etc.
+Now, you will need to perform several manipulations in the database, like changing and adding data.
 [/slide]
 
 
@@ -609,16 +609,16 @@ insert into cars_drivers (car_id, driver_id) values (94, 4),
 [/code-adapter]
 [task-description]
 # Description
-When drivers are not working and need a taxi to transport them, they will also be registered 
-at the database as customers.
+When drivers are not working and need a taxi to transport them, they will also be registered  at the database as customers.
 
-You will have to **insert** records of data into the **clients** table, based on the **drivers** table. 
+You will have to **insert** records of data into the **clients** table based on the **drivers** table. 
 
-For all **drivers** with an **id between 10** and **20 (both inclusive)**, **insert data** in the **clients** table with the **following values**:
+For all **drivers** with an **id between 10** and **20 (both inclusive)**, **insert data** in the clients table with the f**ollowing values**:
 
-- "**full_name**" - get first and last name of the driver separated by single space
-- "**phone_number**" - set it to start with **(088) 9999** and the "driver_id" multiplied by 2
-    - Example – the "phone_number" of the driver with id = 10 is (088) 999920
+
+- "**full_name**" - Get first and last name of the driver separated by single space
+- "**phone_number**" - Set it to start with **(088) 9999 followed** by the driver_id multiplied by 2
+    - Example - the phone_number of the driver with an id 10 is (088) 999920
 
 [/task-description]
 [code-io /]
@@ -1577,11 +1577,10 @@ insert into cars_drivers (car_id, driver_id) values (94, 4),
 [/code-adapter]
 [task-description]
 # Description
-After many kilometers and over the years, the condition of cars is expected to deteriorate.
+After many kilometers over the years, the condition of cars is expected to deteriorate.
 
-Update all **cars** and set the condition to be '**C**'. 
 
-The cars must have a **mileage** greater than **800 000 (inclusive)** or **NULL** and must be older than **2010 (inclusive)**.
+Update the **cars** and set their **condition** to be equal to '**C**' if they have a **mileage** greater than **800000 (inclusive)** or **NULL** and were made before **2010(inclusive)**.
 
 **Skip** the cars that contain a **make** value of **Mercedes-Benz**. 
 
@@ -2252,10 +2251,11 @@ insert into cars_drivers (car_id, driver_id) values (94, 4),
 [/code-adapter]
 [task-description]
 # Description
-Some of the clients have not used the services of our company recently, so we need to remove them 
-from the database.	
+Some of the clients have not used the services of our company recently, so we need to remove them from the database.	
 
-**Delete** all **clients** from "**clients**" table, that do not have any courses and the **count** of the **characters** in the "**full_name**" is more than **3** characters. 
+
+**Delete** all **clients** from the **clients** table that do not have any courses and the **count** of the **characters** in the **full_name** field is more than **3** characters. 
+
 
 [/task-description]
 [code-io /]
