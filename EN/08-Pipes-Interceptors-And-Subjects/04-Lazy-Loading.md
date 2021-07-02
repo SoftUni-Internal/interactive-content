@@ -48,13 +48,7 @@ Executing this command will create a **folder** named `products` which will incl
 
 A `ProductsComponent` will be **declared** and `ProductsRoutingModule` will be **imported** inside the new **feature module**.
 
-[/slide]
-
-[slide hideTitle]
-
-# Do not Import in Bootstrap Module
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-24-Warning-Do-Not-Import-in-Bootstrap-Module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## Do not Import in Bootstrap Module
 
 You should **never** import a feature module inside `app.module.ts`.
 
