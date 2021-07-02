@@ -1,6 +1,6 @@
 [slide hideTitle]
-# Problem: Count Likes and Comments
-[code-task title="Count Likes and Comments" taskId="java-db-and-MySQL-exam-preparation-count-likes-and-comments" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+# Problem: The Photo on the Tenth Day of the Month
+[code-task title="The Photo on the Tenth Day of the Month" taskId="java-db-and-MySQL-exam-preparation-the-photo-on-the-tenth-day-of-the-month" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -8,24 +8,27 @@
 [/code-editor]
 [task-description]
 # Description
-Extract from the database, **photos id** with **their likes and comments**. 
+Extract from the database those **photos** that their upload day is **10** and **summarize** their description. 
 
-**Order** them by the count of **likes descending**, then by **comments count descending** and lastly by **photo-id ascending**.
+**The summary must be 30 symbols long plus "..." at the end. **
+
+Order the results by **date descending order**. 
+
 
 Required Columns
-
-- "**photo_id**"
-- "**likes_count**"
-- "**comments_count**"
+- "**summary**" (address)
+- "**date**"
 
 ## Example
 
-| **photo_id** |**likes_count** |**comments_count** |
-| --- | --- |--- | 
-|1	|4	|2|
-|58|	4	|1|
-|69|	4	|0|
-|...|	...|	...|
+| **summary** |**date** |
+| --- | --- |
+|Suspendisse potenti. In eleife...|	2019-12-10 15:20:14|
+|Quisque id justo sit amet sapi...|2019-10-10 08:58:52|
+|Mauris enim leo, rhoncus sed, ...|2019-05-10 14:40:22|
+|...|...|
+
+
 
 
 [/task-description]
@@ -656,306 +659,16 @@ insert into likes (id, user_id, photo_id) values (99, 27, 25);
 insert into likes (id, user_id, photo_id) values (100, 6, 48);
 [/input]
 [output]
-1
-4
-2
-58
-4
-1
-69
-4
-0
-15
-3
-1
-61
-3
-1
-83
-3
-1
-46
-3
-0
-90
-3
-0
-41
-2
-2
-4
-2
-1
-30
-2
-1
-47
-2
-1
-48
-2
-1
-79
-2
-1
-97
-2
-1
-8
-2
-0
-12
-2
-0
-34
-2
-0
-49
-2
-0
-52
-2
-0
-59
-2
-0
-64
-2
-0
-67
-2
-0
-78
-2
-0
-23
-1
-4
-25
-1
-4
-14
-1
-3
-17
-1
-3
-31
-1
-3
-40
-1
-3
-99
-1
-3
-26
-1
-2
-28
-1
-2
-32
-1
-2
-33
-1
-2
-36
-1
-2
-37
-1
-2
-51
-1
-2
-60
-1
-2
-68
-1
-2
-86
-1
-2
-2
-1
-1
-13
-1
-1
-16
-1
-1
-27
-1
-1
-29
-1
-1
-42
-1
-1
-53
-1
-1
-66
-1
-1
-72
-1
-1
-74
-1
-1
-85
-1
-1
-89
-1
-1
-7
-1
-0
-9
-1
-0
-21
-1
-0
-24
-1
-0
-38
-1
-0
-45
-1
-0
-57
-1
-0
-70
-1
-0
-76
-1
-0
-81
-1
-0
-82
-1
-0
-98
-1
-0
-100
-0
-3
-6
-0
-2
-11
-0
-2
-19
-0
-2
-22
-0
-2
-63
-0
-2
-84
-0
-2
-87
-0
-2
-94
-0
-2
-3
-0
-1
-5
-0
-1
-18
-0
-1
-20
-0
-1
-35
-0
-1
-39
-0
-1
-43
-0
-1
-75
-0
-1
-80
-0
-1
-88
-0
-1
-91
-0
-1
-95
-0
-1
-10
-0
-0
-44
-0
-0
-50
-0
-0
-54
-0
-0
-55
-0
-0
-56
-0
-0
-62
-0
-0
-65
-0
-0
-71
-0
-0
-73
-0
-0
-77
-0
-0
-92
-0
-0
-93
-0
-0
-96
-0
-0
+Suspendisse potenti. In eleife...
+2019-12-10 15:20:14
+Quisque id justo sit amet sapi...
+2019-10-10 08:58:52
+Mauris enim leo, rhoncus sed, ...
+2019-05-10 14:40:22
+Sed sagittis. Nam congue, risu...
+2019-05-10 14:23:11
+In quis justo. Maecenas rhoncu...
+2019-03-10 11:07:44
 [/output]
 [/test]
 [test]
@@ -1236,7 +949,7 @@ insert into photos (id, description, date, views) values (22, 'Etiam vel augue. 
 insert into photos (id, description, date, views) values (23, 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', '2019-10-13 14:13:42', 0);
 insert into photos (id, description, date, views) values (24, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', '2020-01-28 02:06:00', 0);
 insert into photos (id, description, date, views) values (25, 'In congue. Etiam justo. Etiam pretium iaculis justo.In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '2019-07-20 13:08:03', 0);
-insert into photos (id, description, date, views) values (26, 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', '2019-12-10 15:20:14', 0);
+insert into photos (id, description, date, views) values (26, 'Suspendisse potanti. In eleifend quam a odio. In hac habitasse platea dictumst.', '2019-12-10 15:20:14', 0);
 insert into photos (id, description, date, views) values (27, 'In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.Maecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.', '2020-03-08 14:36:04', 0);
 insert into photos (id, description, date, views) values (28, 'Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.', '2019-05-23 19:11:19', 0);
 insert into photos (id, description, date, views) values (29, 'Proin eu mi. Nulla ac enim. In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem.Duis aliquam convallis nunc. Proin at turpis a pede posuere nonummy. Integer non velit.', '2019-04-29 00:55:07', 0);
@@ -1581,309 +1294,18 @@ insert into likes (id, user_id, photo_id) values (97, 19, 78);
 insert into likes (id, user_id, photo_id) values (98, 23, 47);
 insert into likes (id, user_id, photo_id) values (99, 27, 25);
 insert into likes (id, user_id, photo_id) values (100, 6, 48);
-insert into likes (id, user_id, photo_id) values (101, 18, 1);
 [/input]
 [output]
-1
-5
-2
-58
-4
-1
-69
-4
-0
-15
-3
-1
-61
-3
-1
-83
-3
-1
-46
-3
-0
-90
-3
-0
-41
-2
-2
-4
-2
-1
-30
-2
-1
-47
-2
-1
-48
-2
-1
-79
-2
-1
-97
-2
-1
-8
-2
-0
-12
-2
-0
-34
-2
-0
-49
-2
-0
-52
-2
-0
-59
-2
-0
-64
-2
-0
-67
-2
-0
-78
-2
-0
-23
-1
-4
-25
-1
-4
-14
-1
-3
-17
-1
-3
-31
-1
-3
-40
-1
-3
-99
-1
-3
-26
-1
-2
-28
-1
-2
-32
-1
-2
-33
-1
-2
-36
-1
-2
-37
-1
-2
-51
-1
-2
-60
-1
-2
-68
-1
-2
-86
-1
-2
-2
-1
-1
-13
-1
-1
-16
-1
-1
-27
-1
-1
-29
-1
-1
-42
-1
-1
-53
-1
-1
-66
-1
-1
-72
-1
-1
-74
-1
-1
-85
-1
-1
-89
-1
-1
-7
-1
-0
-9
-1
-0
-21
-1
-0
-24
-1
-0
-38
-1
-0
-45
-1
-0
-57
-1
-0
-70
-1
-0
-76
-1
-0
-81
-1
-0
-82
-1
-0
-98
-1
-0
-100
-0
-3
-6
-0
-2
-11
-0
-2
-19
-0
-2
-22
-0
-2
-63
-0
-2
-84
-0
-2
-87
-0
-2
-94
-0
-2
-3
-0
-1
-5
-0
-1
-18
-0
-1
-20
-0
-1
-35
-0
-1
-39
-0
-1
-43
-0
-1
-75
-0
-1
-80
-0
-1
-88
-0
-1
-91
-0
-1
-95
-0
-1
-10
-0
-0
-44
-0
-0
-50
-0
-0
-54
-0
-0
-55
-0
-0
-56
-0
-0
-62
-0
-0
-65
-0
-0
-71
-0
-0
-73
-0
-0
-77
-0
-0
-92
-0
-0
-93
-0
-0
-96
-0
-0
+Suspendisse potanti. In eleife...
+2019-12-10 15:20:14
+Quisque id justo sit amet sapi...
+2019-10-10 08:58:52
+Mauris enim leo, rhoncus sed, ...
+2019-05-10 14:40:22
+Sed sagittis. Nam congue, risu...
+2019-05-10 14:23:11
+In quis justo. Maecenas rhoncu...
+2019-03-10 11:07:44
 [/output]
 [/test]
 [/tests]
