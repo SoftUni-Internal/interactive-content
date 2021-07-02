@@ -4,7 +4,7 @@
 
 # Introduction to NgRx
 
-03-04-introduction-to-state-management
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/03-04-introduction-to-state-management-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **NgRx** framework was created for building **reactive Angular applications**.
 
@@ -26,7 +26,7 @@ Inspired by **Redux**, **NgRx Store** makes working with complex data **easier**
 
 # NgRx Packages
 
-05-NgRx-Packages
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/05-NgRx-Packages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **NgRx libraries** are divided into **four main categories**:
 
@@ -72,7 +72,7 @@ Inspired by **Redux**, **NgRx Store** makes working with complex data **easier**
 
 # State Management Lifecycle
 
-06-State-Management-Lifecycle
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/06-State-Management-Lifecycle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The three most important pieces of the **state management lifecycle** are the **store**, **actions**, and **reducers**.
 
