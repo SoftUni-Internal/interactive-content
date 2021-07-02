@@ -1,6 +1,6 @@
 [slide hideTitle]
-# Problem: Extract 5 Most Commented Photos
-[code-task title="Extract 5 Most Commented Photos" taskId="java-db-and-MySQL-exam-problem-extract-5-most-commented-photos" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+# Problem: Lucky Users
+[code-task title="Lucky Users" taskId="java-db-and-MySQL-exam-preparation-lucky-users" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -8,25 +8,25 @@
 [/code-editor]
 [task-description]
 # Description
-Extract from the database, 5 most commented **photos** with their count of **comments**. 
+When the user has the **same id** as its photo, it is considered Lucky User. 
 
-Sort the results by **commentsCount**, **descending**, then by **id** in **ascending** order.
+Extract from the database **all lucky users**. 
+
+Extract "**id_username**" (concat id + " " + username) and email of **all lucky users**. 
+
+Order the results ascending by user **id**.
+
 
 Required Columns
-
-- "**id**"
-- "**date_and_time**"
-- "**description**"
-- "**commentsCount**"
+- "**id_username**"
+- "**email**"
 
 ## Example
 
-| **first_nam** |**last_name** |**make** |**model** |
-| --- | --- |--- | --- |
-|23|	2019-10-13 14:13:42|	Duis bibendum, felis sed interdum venenatis, turpis enim blandit …|	4|	
-|25|	In congue. Etiam justo. Etiam pretium…|	Pontiac|	4|	
-|14|	Praesent blandit. Nam nulla. Integer pede justo…|	Maserati|	3	|
-|…|	…|	…|	…	|
+| **id_username** |**email** |
+| --- | --- |
+|12 aroccob|dpendrichb@hhs.gov|
+|...|...|
 
 
 
@@ -658,26 +658,12 @@ insert into likes (id, user_id, photo_id) values (99, 27, 25);
 insert into likes (id, user_id, photo_id) values (100, 6, 48);
 [/input]
 [output]
-23
-2019-10-13 14:13:42
-Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
-4
-25
-2019-07-20 13:08:03
-In congue. Etiam justo. Etiam pretium iaculis justo.In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-4
-14
-2020-02-16 13:49:08
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.Fusce consequat. Nulla nisl. Nunc nisl.
-3
-17
-2020-02-02 09:14:40
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-3
-31
-2019-05-06 05:45:48
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.
-3
+12 aroccob
+dpendrichb@hhs.gov
+54 pcoomer1h
+amcgahy1h@cornell.edu
+70 urihanek1x
+mavison1x@imdb.com
 [/output]
 [/test]
 [test]
@@ -742,7 +728,7 @@ insert into users (id, username, password, email, gender, age, job_title, ip) va
 insert into users (id, username, password, email, gender, age, job_title, ip) values (9, 'cbaythorp8', 'Wvv4a6', 'gbusby8@cmu.edu', 'M', 96, 'Operator', '191.229.117.229');
 insert into users (id, username, password, email, gender, age, job_title, ip) values (10, 'oleckie9', 'r0yxd92hJ', 'tshippard9@dropbox.com', 'F', 77, 'Marketing Manager', '242.210.220.106');
 insert into users (id, username, password, email, gender, age, job_title, ip) values (11, 'bgillingsa', 'kscOsFIZwN9', 'mcockshtta@hc360.com', 'F', 32, 'Sales Associate', '127.30.43.192');
-insert into users (id, username, password, email, gender, age, job_title, ip) values (12, 'aroccob', 'BhDgNI', 'dpendrichb@hhs.gov', 'M', 77, 'Teacher', '138.207.96.207');
+insert into users (id, username, password, email, gender, age, job_title, ip) values (12, 'aroccobb', 'BhDgNI', 'dpendrichb@hhs.gov', 'M', 77, 'Teacher', '138.207.96.207');
 insert into users (id, username, password, email, gender, age, job_title, ip) values (13, 'mkitteringhamc', 'EymGHiRdq', 'bmillikenc@yolasite.com', 'F', 93, 'Programmer I', '2.102.135.89');
 insert into users (id, username, password, email, gender, age, job_title, ip) values (14, 'ssantryd', 'TaaSt860lNym', 'phawksleed@va.gov', 'F', 52, 'Compensation Analyst', '62.112.67.85');
 insert into users (id, username, password, email, gender, age, job_title, ip) values (15, 'cchadbournee', 'rn9E1VE', 'keime@sakura.ne.jp', 'M', 16, 'Senior Developer', '220.181.145.99');
@@ -955,7 +941,7 @@ insert into photos (id, description, date, views) values (19, 'Maecenas leo odio
 insert into photos (id, description, date, views) values (20, 'Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.Pellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.', '2019-05-10 14:23:11', 0);
 insert into photos (id, description, date, views) values (21, 'Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.', '2019-07-19 19:01:47', 0);
 insert into photos (id, description, date, views) values (22, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo. In blandit ultrices enim. Lorem ipsum dolor sit amet, consectetuer adipiscing elit.', '2019-11-24 07:45:45', 0);
-insert into photos (id, description, date, views) values (23, 'Duis bibendum, sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', '2019-10-13 14:13:42', 0);
+insert into photos (id, description, date, views) values (23, 'Duis bibendum, felis sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.', '2019-10-13 14:13:42', 0);
 insert into photos (id, description, date, views) values (24, 'Etiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.Praesent id massa id nisl venenatis lacinia. Aenean sit amet justo. Morbi ut odio.', '2020-01-28 02:06:00', 0);
 insert into photos (id, description, date, views) values (25, 'In congue. Etiam justo. Etiam pretium iaculis justo.In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.', '2019-07-20 13:08:03', 0);
 insert into photos (id, description, date, views) values (26, 'Suspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.', '2019-12-10 15:20:14', 0);
@@ -1305,26 +1291,12 @@ insert into likes (id, user_id, photo_id) values (99, 27, 25);
 insert into likes (id, user_id, photo_id) values (100, 6, 48);
 [/input]
 [output]
-23
-2019-10-13 14:13:42
-Duis bibendum, sed interdum venenatis, turpis enim blandit mi, in porttitor pede justo eu massa. Donec dapibus. Duis at velit eu est congue elementum.
-4
-25
-2019-07-20 13:08:03
-In congue. Etiam justo. Etiam pretium iaculis justo.In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.
-4
-14
-2020-02-16 13:49:08
-Praesent blandit. Nam nulla. Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.Fusce consequat. Nulla nisl. Nunc nisl.
-3
-17
-2020-02-02 09:14:40
-Morbi non lectus. Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem.
-3
-31
-2019-05-06 05:45:48
-Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.Nam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.Curabitur at ipsum ac tellus semper interdum. Mauris ullamcorper purus sit amet nulla. Quisque arcu libero, rutrum ac, lobortis vel, dapibus at, diam.
-3
+12 aroccobb
+dpendrichb@hhs.gov
+54 pcoomer1h
+amcgahy1h@cornell.edu
+70 urihanek1x
+mavison1x@imdb.com
 [/output]
 [/test]
 [/tests]
