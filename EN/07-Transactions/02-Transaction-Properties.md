@@ -57,8 +57,12 @@ Even if there is a system failure, our **recovery-management component** of the 
 [/slide]
 
 [slide hideTitle]
-# Problem with Solution: Employee Promotion by ID TODO: Add desc and tests
+# Problem with Solution: Employee Promotion by ID
 
+Write a transaction that **raises** an employee's salary by **5%** if their "**id**" exists in the database​.
 
+If they are not in the database, no changes should be made.
+
+Use the[SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/soft_uni_database_database_programmability_lab.zip)
 
 [/slide]
