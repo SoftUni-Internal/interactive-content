@@ -22,14 +22,7 @@ We can have a more **active approach** by using observables with subjects.
 
 That does not mean you should **always** use subjects. Use them in case you need something like an event emitter.
 
-[/slide]
-
-
-[slide hideTitle]
-
-# Subjects - Example
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-29-Subjects-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## Example
 
 To **create a Subject**, first **import** the corresponding class from RxJS:
 
@@ -75,13 +68,7 @@ To receive the **last emitted value**, we can get that **value by accessing** th
 
 If the **second approach is used**, the BehaviorSubject will **directly emit the current value** to the subscriber. 
 
-[/slide]
-
-[slide hideTitle]
-
-# Behavior Subject - Example
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-31-Behavrior-Subject-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## Example
 
 In this example, we **initialize** a `BehaviorSubject` with a value of 5:
 
@@ -132,13 +119,7 @@ It receives two arguments:
 
 - `windowsTime` - optional, used to define **how long** the old **values** should be **stored** in the memory
 
-[/slide]
-
-[slide hideTitle]
-
-# Replay Subject - Example
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-33-Replay-Subject-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## Example
 
 The following example shows a `ReplaySubject` with a `bufferSize` of 2:
 
@@ -189,13 +170,7 @@ To **halt execution**, we must call the `complete()` method.
 
 Just like you would with a normal `Subject`, you can still use an `AsyncSubject` to **multicast**.
  
-[/slide]
-
-[slide hideTitle]
-
-# Async Subject - Example
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-35-Async-Subject-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## Example
 
 This is an example of an `AsyncSubject`:
 
