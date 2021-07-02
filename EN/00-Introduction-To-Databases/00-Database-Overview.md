@@ -1,13 +1,12 @@
 [slide hideTitle]
-# Problem: Get User's Photos Count
-[code-task title="Get User's Photos Count" taskId="java-db-and-MySQL-exam-preparation-get-users-photos-count" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
+# Problem: Increase User Age
+[code-task title="Increase User Age" taskId="java-db-and-MySQL-exam-preparation-increase-user-age" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
 ```
 [/code-editor]
 [code-adapter]
-```
 create table users (
     id INT(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
     username VARCHAR(30) NOT NULL UNIQUE,
@@ -629,43 +628,69 @@ insert into likes (id, user_id, photo_id) values (97, 19, 78);
 insert into likes (id, user_id, photo_id) values (98, 23, 47);
 insert into likes (id, user_id, photo_id) values (99, 27, 25);
 insert into likes (id, user_id, photo_id) values (100, 6, 48);
-```
 [/code-adapter]
 [task-description]
 # Description
+Create a stored procedure **udp_modify_user** which accepts the following parameters:
 
-Create a user-defined function with the name **udf_users_photos_count(username VARCHAR(30))** that receives a username and returns the number of photos this user has upload.
+- "**address**"
 
-## Examples
-| **Query** |**Count** |
-| --- | --- |
-|SELECT udf_users_photos_count('ssantryd') AS photosCount;  | 2 | 
+- "**town**" 
+
+**udp_modify_user (address VARCHAR(30), town VARCHAR(30))** that receives an **address** and **town** and increase the age of the user by **10** years **only if** the given user exists. 
+
+
+Show all needed info for this user: "**username**", "**email**", "**gender**", "**age**" and "**job_title**".
+
+CALL **udp_modify_user ('97 Valley Edge Parkway', 'Divinópolis');**
+
+
+## Example
+
+- **Query**
+
+CALL udp_modify_user ('97 Valley Edge Parkway', 'Divinópolis');
+SELECT u.username, u.email,u.gender,u.age,u.job_title FROM users AS u
+WHERE u.username = 'eblagden21';
+
+
+- **Result**
+
+| **username** |**email** |**gender** |**age** |**Job_title** |
+| --- | --- |--- |--- |--- |
+|eblagden21|	eishak21@skyrock.com	|M	|91	|Associate Professor|	
+
+
 
 [/task-description]
 [code-io /]
 [tests]
 [test open]
 [input]
-SELECT udf_users_photos_count('ssantryd') as photosCount;
+CALL udp_modify_user ('97 Valley Edge Parkway', 'Divinópolis');
+SELECT u.username, u.email,u.gender,u.age,u.job_title FROM users as u
+Where u.username = 'eblagden21';
 [/input]
 [output]
-2
+eblagden21
+eishak21@skyrock.com
+M
+91
+Associate Professor
 [/output]
 [/test]
 [test]
 [input]
-SELECT udf_users_photos_count('aroccob') as photosCount;
+CALL udp_modify_user ('6259 Farwell Avenue', 'Huayacundo Arma');
+SELECT u.username, u.email,u.gender,u.age,u.job_title FROM users as u
+Where u.username = 'canscott20';
 [/input]
 [output]
-1
-[/output]
-[/test]
-[test]
-[input]
-SELECT udf_users_photos_count('mcaygill1d') as photosCount;
-[/input]
-[output]
-0
+canscott20
+rkyngdon20@is.gd
+F
+31
+Electrical Engineer
 [/output]
 [/test]
 [/tests]
