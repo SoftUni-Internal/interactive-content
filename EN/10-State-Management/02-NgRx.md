@@ -4,7 +4,7 @@
 
 # NgRx Store
 
-07-08-NgRx-and-ngrx-store
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/07-08-NgRx-and-ngrx-store-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `@ngrx/store` library is a **state management tool** that implements the **Redux** pattern using RxJS **Observables**.
 
@@ -37,7 +37,7 @@ This simple diagram illustrates the **basic flow of data in NgRx**.
 
 # Actions
 
-09-Actions
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/09-Actions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Actions** are used to **describe events** that **occur** during the use of an application.
 
@@ -67,7 +67,7 @@ Actions can also contain an optional **payload** of data like an **email and pas
 
 # Creating Actions
 
-10-Create-Actions 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/10-Create-Actions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This example shows three actions for **incrementing**, **decrementing** and **resetting** a **Counter Component**.
 
@@ -131,7 +131,7 @@ In this example, we return the user from the response object when a registration
 
 # Reducers
 
-11-Reducers
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/11-Reducers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We use **reducers** to define **how our application state changes**.
 
@@ -155,7 +155,7 @@ Depending on that, it decides to either **return** a modified state or the curre
 
 # Defining a Reducer Function
 
-12-Define-a-Reducer-Function
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/12-Define-a-Reducer-Function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **Reducer Function** will be used to **modify the state in the Counter Component** based on the **Аctions** we created earlier.
 
@@ -194,7 +194,7 @@ By invoking the `on()` function, we **make associations between actions and stat
 
 # Adding the StoreModule.forRoot
 
-13-Add-the-Store-Module.forRoot
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/13-Add-the-Store-Module.forRoot-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To make the Store **accessible** from **every part of our application** we must go to `app.module.ts` and add `StoreModule.forRoot()` to the imports array:
 
@@ -228,7 +228,7 @@ Here, we pass an object with a single `count` property which stores the `counter
 
 # Creating a Counter Component
 
-14-15-Create-a-Counter-Component
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/14-15-Create-a-Counter-Component-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We create a new **Counter Component** with the **Angular CLI**:
 
@@ -326,6 +326,6 @@ We have the following **buttons**:
 
 # NgRx: Demo
 
-11-NgRx-Demo
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/11-NgRx-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
