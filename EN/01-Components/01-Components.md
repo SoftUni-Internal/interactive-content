@@ -93,9 +93,9 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-home',
     template: '<h1>Home View</h1>'
-    styleUrls: ['./app.component.css']
+    styleUrls: ['./home.component.css']
 })
-export class AppComponent{}
+export class HomeComponent{}
 ```
 
 Writing the HTML and CSS inline or using external files is up to us and how we want to structure our project. 
@@ -110,19 +110,9 @@ The **templateUrl** is the path to the HTML file like so: `templateUrl: './app.c
 
 The **styleUrls** can be more than one. This is where the style CSS of the component is. It is usually an array.
 
-The **providers** is a list of services, which can be injected using **Dependency Injection**.
+The **providers** property is a list of services, which can be injected using **Dependency Injection**.
 
-```js
-import { Component } from '@angular/core';
-@Component({
-    selector: 'app-home',
-    template: '<h1>Home View</h1>'
-    styleUrls: ['./app.component.css']
-})
-export class AppComponent{}
-```
-
-An example with `providers`:
+An example of `providers`:
 
 ```js
 @Component({
