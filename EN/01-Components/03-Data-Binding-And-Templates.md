@@ -116,7 +116,7 @@ The code above checks the **price** property of each object in the array and **o
 
 We can display additional content with the help of Event handlers.
 
-Even handlers are used for listening to certain events and they can be attached to HTML elements.
+Event handlers are used for listening to certain events and they can be attached to HTML elements.
 
 Here we have an HTML example of **how to implement the Angular event binding** syntax:
 
