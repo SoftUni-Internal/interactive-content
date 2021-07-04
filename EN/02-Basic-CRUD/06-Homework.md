@@ -21452,6 +21452,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
 [/input]
 [output]
+```
 275
 Michael
 Blythe
@@ -21592,6 +21593,7 @@ Sales Representative
 2005-07-01 00:00:00
 23100.0000
 153
+```
 [/output]
 [/test]
 [test]
@@ -21620,6 +21622,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(5, 'Thierry', 'D''Hers', 'B', 'Sales Representative', 2, '2000-01-11 00:00:00', 25000.0000, 40);
 [/input]
 [output]
+```
 1
 Guy
 Gilbert
@@ -21670,6 +21673,7 @@ Sales Representative
 2000-01-11 00:00:00
 25000.0000
 40
+```
 [/output]
 [/test]
 [test]
@@ -21739,8 +21743,8 @@ Sales Representative
 [/code-task]
 [/slide]
 
-[slide hideTitle]
 
+[slide hideTitle]
 
 # Problem: Find the Names of All Employees by Salary in Range
 
@@ -29491,6 +29495,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
 [/input]
 [output]
+```
 Guy
 Gilbert
 Roberto
@@ -30061,6 +30066,7 @@ Martin
 Kulov
 George
 Denchev
+```
 [/output]
 [/test]
 [test]
@@ -30138,7 +30144,6 @@ D'Hers
 [/tests]
 [/code-task]
 [/slide]
-
 
 [slide hideTitle]
 # Problem: Sort the Employees Table
@@ -45295,7 +45300,7 @@ CREATE TABLE IF NOT EXISTS `towns` (
 
 For part 2, run the provided sql code to create the **geography_crud** database in **MySQL Workbench** before you begin. 
 
-Download the database for Part 2 [here](https://videos.softuni.org/resources/java/java-mysql/geography_database_crud.zip).
+Download the database for part 2 [here](https://videos.softuni.org/resources/java/java-mysql/geography_database_crud.zip).
 
 
 [/slide]
@@ -49642,7 +49647,7 @@ Euro
 
 For part 3, run the provided sql code to create the **diablo_crud** database in **MySQL Workbench** before you begin. 
 
-Download the database for Part 3 [here](https://videos.softuni.org/resources/java/java-mysql/diablo_database_crud.zip).
+Download the database for part 3 [here](https://videos.softuni.org/resources/java/java-mysql/diablo_database_crud.zip).
 
 [/slide]
 
