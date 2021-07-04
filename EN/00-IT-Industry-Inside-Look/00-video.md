@@ -1703,6 +1703,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
 [/input]
 [output]
+```
 Guy
 Gilbert
 Roberto
@@ -1845,7 +1846,7 @@ Kim
 Ralls
 Sandra
 Reategui Alayo
-Kok\-Ho
+Kok-Ho
 Loh
 Douglas
 Hite
@@ -2058,7 +2059,7 @@ Shabalin
 Belinda
 Newman
 Katie
-McAskill\-White
+McAskill-White
 Russell
 King
 Jack
@@ -2155,7 +2156,7 @@ Bonnie
 Kearney
 Fukiko
 Ogisu
-Hung\-Fu
+Hung-Fu
 Ting
 Gordon
 Hee
@@ -2246,7 +2247,7 @@ Vargas
 Tsvi
 Reiter
 Pamela
-Ansman\-Wolfe
+Ansman-Wolfe
 Shu
 Ito
 Jose
@@ -2260,7 +2261,7 @@ Pak
 Ranjit
 Varkey Chudukatil
 Tete
-Mensa\-Annan
+Mensa-Annan
 Syed
 Abbas
 Rachel
@@ -2273,6 +2274,7 @@ Martin
 Kulov
 George
 Denchev
+```
 [/output]
 [/test]
 [test]
@@ -2350,3 +2352,4 @@ D'Hers
 [/tests]
 [/code-task]
 [/slide]
+
