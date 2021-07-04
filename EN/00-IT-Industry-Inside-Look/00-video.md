@@ -1,7 +1,7 @@
 [slide hideTitle]
-# Problem: Find All Information About Employees 
+# Problem: Find All Employees Except Marketing 
 
-[code-task title="Find All Information About Employees" taskId="java-db-and-MySQL-basic-crud-find-all-information-about-employees" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Find All Employees Except Marketing" taskId="java-db-and-MySQL-basic-crud-find-all-except-marketing" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
 ```
@@ -13,20 +13,18 @@
 [task-description]
 ## Description
 
-Write an SQL query to find **all information** about employees whose **job title** is **Sales Representative**. 
+Write an SQL query to find the **first and last names** of all employees **whose department ID is not equal to 4 (Marketing)**. 
 
-**Sort** the results **by id**. 
 
 
 ## Example
 
-| id | first_name | last_name | middle_name | job_title | dept_id | mngr_id | hire_date | salary | address_id |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| 275  | Michael | Blythe | G | Sales Representative | 3 | 268 | ... | 23100.00 | 60 |
-| 276  | Linda | Mitchell | C | Sales Representative | 3 | 268 | ... | 23100.00 | 170 |
-| 277  | Jillian | Carson | NULL | Sales Representative | 3 | 268 | ... | 23100.00 | 61 |
-| ... | ... | ... | ... | ... | ... | ... | ... | ... | ... |
-
+| first_name | last_name |
+| --- | --- |
+| Guy | Gilbert |
+| Roberto | Tamburello |
+| Rob | Walters |
+| ... | ... |
 
 [/task-description]
 [code-io /]
@@ -1705,233 +1703,580 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
 [/input]
 [output]
-```
-275
-Michael
-Blythe
-G
-Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-60
-276
-Linda
-Mitchell
-C
-Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-170
-277
-Jillian
-Carson
-
-Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-61
-278
-Garrett
-Vargas
-R
-Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-52
-279
-Tsvi
-Reiter
-Michael
-Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-154
-280
-Pamela
-Ansman-Wolfe
-O
-Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-179
-281
-Shu
-Ito
-K
-Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-235
-282
-Jose
-Saraiva
-Edvaldo
-Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-178
-283
-David
-Campbell
-R
-Sales Representative
-3
-268
-2003-07-01 00:00:00
-23100.0000
-13
-285
-Jae
-Pak
-B
-Sales Representative
-3
-284
-2004-07-01 00:00:00
-23100.0000
-54
-286
-Ranjit
-Varkey Chudukatil
-R
-Sales Representative
-3
-284
-2004-07-01 00:00:00
-23100.0000
-38
-287
-Tete
-Mensa-Annan
-A
-Sales Representative
-3
-268
-2004-11-01 00:00:00
-23100.0000
-53
-289
-Rachel
-Valdez
-B
-Sales Representative
-3
-284
-2005-07-01 00:00:00
-23100.0000
-37
-290
-Lynn
-Tsoflias
-
-Sales Representative
-3
-288
-2005-07-01 00:00:00
-23100.0000
-153
-```
-[/output]
-[/test]
-[test]
-[input]
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `PK_Employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Guy', 'Gilbert', 'R', 'Sales Representative', 7, '1998-07-31 00:00:00', 12500.0000, 166),
-	(2, 'Kevin', 'Brown', 'F', 'Sales Representative', 4, '1999-02-26 00:00:00', 13500.0000, 102),
-	(3, 'Roberto', 'Tamburello', NULL, 'Sales Representative', 12, '1999-12-12 00:00:00', 43300.0000, 193),
-	(4, 'Rob', 'Walters', NULL, 'Sales Representative', 2, '2000-01-05 00:00:00', 29800.0000, 155),
-	(5, 'Thierry', 'D''Hers', 'B', 'Sales Representative', 2, '2000-01-11 00:00:00', 25000.0000, 40);
-[/input]
-[output]
-```
-1
 Guy
 Gilbert
-R
-Sales Representative
-7
-
-1998-07-31 00:00:00
-12500.0000
-166
-2
-Kevin
-Brown
-F
-Sales Representative
-4
-
-1999-02-26 00:00:00
-13500.0000
-102
-3
 Roberto
 Tamburello
-
-Sales Representative
-12
-
-1999-12-12 00:00:00
-43300.0000
-193
-4
 Rob
 Walters
-
-Sales Representative
-2
-
-2000-01-05 00:00:00
-29800.0000
-155
-5
 Thierry
 D'Hers
-B
-Sales Representative
-2
-
-2000-01-11 00:00:00
-25000.0000
-40
-```
+David
+Bradley
+JoLynn
+Dobney
+Ruth
+Ellerbrock
+Gail
+Erickson
+Barry
+Johnson
+Jossef
+Goldberg
+Terri
+Duffy
+Sidney
+Higa
+Taylor
+Maxwell
+Jeffrey
+Ford
+Jo
+Brown
+Doris
+Hartwig
+John
+Campbell
+Diane
+Glimp
+Steven
+Selikoff
+Peter
+Krebs
+Stuart
+Munson
+Greg
+Alderson
+David
+Johnson
+Zheng
+Mu
+Ivo
+Salmre
+Paul
+Komosinski
+Ashvini
+Sharma
+Kendall
+Keil
+Paula
+Barreto de Mattos
+Alejandro
+McGuel
+Garrett
+Young
+Jian Shuo
+Wang
+Susan
+Eaton
+Vamsi
+Kuppa
+Alice
+Ciccu
+Simon
+Rapier
+Jinghao
+Liu
+Michael
+Hines
+Yvonne
+McKay
+Peng
+Wu
+Jean
+Trenary
+Russell
+Hunter
+A. Scott
+Wright
+Fred
+Northup
+Willis
+Johnson
+Jun
+Cao
+Christian
+Kleinerman
+Susan
+Metters
+Reuben
+D'sa
+Kirk
+Koenigsbauer
+David
+Ortiz
+Tengiz
+Kharatishvili
+Hanying
+Feng
+Kevin
+Liu
+Annik
+Stahl
+Suroor
+Fatima
+Deborah
+Poe
+Jim
+Scardelis
+Carole
+Poland
+George
+Li
+Gary
+Yukish
+Cristian
+Petculescu
+Raymond
+Sam
+Janaina
+Bueno
+Bob
+Hohman
+Shammi
+Mohamed
+Linda
+Moschell
+Mindy
+Martin
+Wendy
+Kahn
+Kim
+Ralls
+Sandra
+Reategui Alayo
+Kok-Ho
+Loh
+Douglas
+Hite
+James
+Kramer
+Sean
+Alexander
+Nitin
+Mirchandani
+Diane
+Margheim
+Rebecca
+Laszlo
+Rajesh
+Patel
+Vidur
+Luthra
+John
+Evans
+Nancy
+Anderson
+Pilar
+Ackerman
+David
+Yalovsky
+David
+Hamilton
+Laura
+Steele
+Margie
+Shoop
+Zainal
+Arifin
+Lorraine
+Nay
+Fadi
+Fakhouri
+Ryan
+Cornelsen
+Candy
+Spoon
+Nuan
+Yu
+William
+Vong
+Bjorn
+Rettig
+Scott
+Gode
+Michael
+Rothkugel
+Lane
+Sacksteder
+Pete
+Male
+Dan
+Bacon
+David
+Barber
+Lolan
+Song
+Paula
+Nartker
+Mindaugas
+Krapauskas
+Eric
+Gubbels
+Ken
+Sanchez
+Jason
+Watters
+Mark
+Harrington
+Janeth
+Esteves
+Marc
+Ingle
+Gigi
+Matthew
+Paul
+Singh
+Frank
+Lee
+Francois
+Ajenstat
+Diane
+Tibbott
+Angela
+Barbariol
+Matthias
+Berndt
+Bryan
+Baker
+Jeff
+Hay
+Eugene
+Zabokritski
+Barbara
+Decker
+Chris
+Preston
+Sean
+Chai
+Dan
+Wilson
+Mark
+McArthur
+Bryan
+Walton
+Houman
+Pournasseh
+Sairaj
+Uddin
+Michiko
+Osada
+Benjamin
+Martin
+Cynthia
+Randall
+Kathie
+Flood
+Britta
+Simon
+Brian
+Lloyd
+David
+Liu
+Laura
+Norman
+Michael
+Patten
+Andy
+Ruth
+Yuhong
+Li
+Robert
+Rounthwaite
+Andreas
+Berglund
+Reed
+Koch
+Linda
+Randall
+James
+Hamilton
+Ramesh
+Meyyappan
+Stephanie
+Conroy
+Samantha
+Smith
+Tawana
+Nusbaum
+Denise
+Smith
+Hao
+Chen
+Alex
+Nayberg
+Eugene
+Kogan
+Brandon
+Heidepriem
+Dylan
+Miller
+Shane
+Kim
+John
+Chen
+Karen
+Berge
+Jose
+Lugo
+Mandar
+Samant
+Mikael
+Sandberg
+Sameer
+Tejani
+Dragan
+Tomic
+Carol
+Philips
+Rob
+Caron
+Don
+Hall
+Alan
+Brewer
+David
+Lawrence
+Baris
+Cetinok
+Michael
+Ray
+Steve
+Masters
+Suchitra
+Mohan
+Karen
+Berg
+Terrence
+Earls
+Barbara
+Moreland
+Chad
+Niswonger
+Rostislav
+Shabalin
+Belinda
+Newman
+Katie
+McAskill-White
+Russell
+King
+Jack
+Richins
+Andrew
+Hill
+Nicole
+Holliday
+Frank
+Miller
+Peter
+Connelly
+Anibal
+Sousa
+Ken
+Myer
+Grant
+Culbertson
+Michael
+Entin
+Lionel
+Penuchot
+Thomas
+Michaels
+Jimmy
+Bischoff
+Michael
+Vanderhyde
+Lori
+Kane
+Arvind
+Rao
+Stefen
+Hesse
+Hazem
+Abolrous
+Janet
+Sheperdigian
+Elizabeth
+Keyser
+John
+Frum
+Merav
+Netz
+Brian
+LaMee
+Kitti
+Lertpiriyasuwat
+Jay
+Adams
+Jan
+Miksovsky
+Brenda
+Diaz
+Andrew
+Cencini
+Chris
+Norred
+Chris
+Okelberry
+Shelley
+Dyck
+Gabe
+Mares
+Mike
+Seamans
+Michael
+Raheem
+Gary
+Altman
+Charles
+Fitzgerald
+Ebru
+Ersan
+Sylvester
+Valdez
+Brian
+Goldstein
+Linda
+Meisner
+Betsy
+Stadick
+Magnus
+Hedlund
+Karan
+Khanna
+Mary
+Baker
+Kevin
+Homer
+Mihail
+Frintu
+Bonnie
+Kearney
+Fukiko
+Ogisu
+Hung-Fu
+Ting
+Gordon
+Hee
+Kimberly
+Zimmerman
+Kim
+Abercrombie
+Sandeep
+Kaliyath
+Prasanna
+Samarawickrama
+Frank
+Pellow
+Min
+Su
+Eric
+Brown
+Eric
+Kurjan
+Pat
+Coleman
+Maciej
+Dusza
+Erin
+Hagens
+Patrick
+Wedge
+Frank
+Martinez
+Ed
+Dudenhoefer
+Christopher
+Hill
+Patrick
+Cook
+Krishna
+Sunkammurali
+Lori
+Penor
+Danielle
+Tiedt
+Sootha
+Charncherngkha
+Michael
+Zwilling
+Randy
+Reeves
+John
+Kane
+Jack
+Creasey
+Olinda
+Turner
+Stuart
+Macrae
+Jo
+Berry
+Ben
+Miller
+Tom
+Vande Velde
+Ovidiu
+Cracium
+Annette
+Hill
+Janice
+Galvin
+Reinout
+Hillmann
+Michael
+Sullivan
+Stephen
+Jiang
+Sharon
+Salavaria
+Brian
+Welcker
+Sheela
+Word
+Michael
+Blythe
+Linda
+Mitchell
+Jillian
+Carson
+Garrett
+Vargas
+Tsvi
+Reiter
+Pamela
+Ansman-Wolfe
+Shu
+Ito
+Jose
+Saraiva
+David
+Campbell
+Amy
+Alberts
+Jae
+Pak
+Ranjit
+Varkey Chudukatil
+Tete
+Mensa-Annan
+Syed
+Abbas
+Rachel
+Valdez
+Lynn
+Tsoflias
+Svetlin
+Nakov
+Martin
+Kulov
+George
+Denchev
 [/output]
 [/test]
 [test]
 [input]
-drop table if exists employees;
 CREATE TABLE IF NOT EXISTS `employees` (
   `employee_id` int(10) NOT NULL AUTO_INCREMENT,
   `first_name` varchar(50) NOT NULL,
@@ -1949,51 +2294,60 @@ CREATE TABLE IF NOT EXISTS `employees` (
 
 
 INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, '1998-07-31 00:00:00.000000', 12500.0000, 166),
-	(2, 'Kevin', 'Brown', 'F', 'Sales Representative', 4, '1999-02-26 00:00:00.000000', 13500.0000, 102),
-	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
-	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Thierry', 'D''Hers', 'B', 'Sales Representative', 2, '2000-01-11 00:00:00.000000', 25000.0000, 40), 
-	(6, 'David', 'Bradley', 'M', 'Marketing Manager', 5, '2000-01-20 00:00:00.000000', 13500.0000, 199),
-	(7, 'Barry', 'Johnson', 'K', 'Sales Representative', 185, '2000-02-07 00:00:00.000000', 13500.0000, 285);
+	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, '1998-07-31 00:00:00.000000', 25000.0000, 166),
+	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 1, '1999-02-26 00:00:00.000000', 24000.0000, 102),
+	(3, 'Roberto', 'Tamburello', 'S', 'Engineering Manager', 12, '1999-12-12 00:00:00.000000', 23000.0000, 193),
+	(4, 'Rob', 'Walters', 'G', 'Senior Tool Designer', 2, '2000-01-05 00:00:00.000000', 22000.0000, 155),
+	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, '2000-01-11 00:00:00.000000', 21000.0000, 40);
 [/input]
 [output]
-```
-2
+Guy
+Gilbert
 Kevin
 Brown
-F
-Sales Representative
-4
-
-1999-02-26 00:00:00
-13500.0000
-102
-5
+Roberto
+Tamburello
+Rob
+Walters
 Thierry
 D'Hers
-B
-Sales Representative
-2
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `PK_Employees` (`employee_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
 
-2000-01-11 00:00:00
-25000.0000
-40
-7
-Barry
-Johnson
-K
-Sales Representative
-185
 
-2000-02-07 00:00:00
-13500.0000
-285
-```
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 5, '1998-07-31 00:00:00.000000', 27000.0000, 166),
+	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, null, '1999-02-26 00:00:00.000000', 26000.0000, 102),
+	(3, 'Roberto', 'Tamburello', 'S', 'Engineering Manager', 12, 4, '1999-12-12 00:00:00.000000', 21000.0000, 193),
+	(4, 'Rob', 'Walters', 'G', 'Senior Tool Designer', 4,null, '2000-01-05 00:00:00.000000', 25000.0000, 155),
+	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 4, '2000-01-11 00:00:00.000000', 22000.0000, 40);
+[/input]
+[output]
+Guy
+Gilbert
+Roberto
+Tamburello
+Thierry
+D'Hers
 [/output]
 [/test]
 [/tests]
 [/code-task]
 [/slide]
-
 
