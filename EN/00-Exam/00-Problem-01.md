@@ -39,15 +39,7 @@ Find the student with the **most bonus points** and print their total **points**
 
 In the end, round the bonus points up to **the next whole number**.
 
-### Input / Constrains
-
-- On the **first line**, you are going to receive the number of students - an integer in range \[0...50\]
-
-- On the **second line**, you are going to receive the number of lectures - an integer in range \[0...50\]
-
-- On the **third line**, you are going to receive **the initial bonus** - an integer in range \[0...100\]
-
-- **On the next lines**, you will be receiving the number of **attendances of each student**
+### Constrains
 
 - There will **not be students with the same final amount of bonus points**
 
