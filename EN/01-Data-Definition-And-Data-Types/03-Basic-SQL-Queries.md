@@ -4,7 +4,7 @@
 
 # SQL Queries
 
-We use SQL queries to do any data operations on the database such as creating new tables, inserting records, retrieving records, modifying information and so on.
+We use SQL queries to perform any data operations on the database, such as creating new tables, inserting records, retrieving records, and modifying information.
 
 To create a database, type in the following command:
 
@@ -16,14 +16,15 @@ The syntax for creating a new database is `CREATE DATABASE [name]`.
 
 In the example above, we created a database called "employees".
 
-
-SQL keywords are conventionally `capitalized` - Example: **CREATE DATABASE**.
+SQL keywords conventionally contain only **capital letters**.
 
 [/slide]
 
 [slide hideTitle]
 
 # Table Creation
+
+In the following example, we will create a table called `people`:
 
 ```Java
 CREATE TABLE `people`
@@ -34,16 +35,13 @@ CREATE TABLE `people`
 );
 ```
 
-In this example, the name of the table is **people**.
+The `id`, `email`, `first_name`, and `last_name` are the names of the columns.
 
-`id`, `email`, `first_name` and `last_name` are the names of the columns.
+`INT` and `VARCHAR(50)` specify the data type, in this case an INT for the **id** and `VARCHAR(50)` for the rest of the columns.
 
-`INT` and `VARCHAR(50)` specify the data type, in this case an INT for the **id** and `VARCHAR(50)` for the first and last names.
+When we specify the `VARCHAR(50)` data type, we set a limit of **50 characters** per record.
 
-`VARCHAR(50)` makes it so that the value held inside this column for a particular record will not exceed a length of 50 characters.
-
-`NOT NULL` is a custom property that makes it so  this table will require to be passed when inserting a record into this table.
-
+When using a `NOT NULL` property, we specify that the given field is **required** and must be filled.
 
 [/slide]
 
@@ -51,21 +49,30 @@ In this example, the name of the table is **people**.
 
 # Inserting & Retrieving Records
 
-This is the syntax for **inserting records** into a table.
+This is the syntax for **inserting records** into a table:
 
 ```java
 INSERT INTO [TABLE_NAME] (column1, column2, column3, column...)
 VALUES (value1, value2, value3, value...);
 ```
 
-If we were to successfully insert a record into an employees table that has an **id** (manually added, not auto-increment), **email**,  **first_name**, and **last_name** fields we would need to write this query:
+For the following example, we will insert a record into a table with the following fields:
+
+- **id** (manually added, not auto-increment)
+- **email**
+- **first_name**
+- **last_name**
 
 ```java
 INSERT INTO `employees` (id, email, first_name, last_name)
 VALUES (1, 'john.doe@gmail.com', 'John', 'Doe')
 ```
 
-When adding data to all the columns of a table, you do not need to specify the column names but the values must be in the exact order of the columns.
+When adding data to all the columns of a table, you do not need to specify the column names, but the values must be in the exact order of the columns.
+
+The `SELECT * FROM [table]` query retrieves all the columns and all records from a table. 
+
+It is used in very specific cases because it could be very slow if your database contains a lot of records.
 
 ```Java
 SELECT * FROM `employees`; 
@@ -73,22 +80,19 @@ SELECT * FROM `employees`;
 
 [image assetsSrc="Data-Definition-And-Data-Types-q1.png" /]
 
+You have the option of **limiting** a `SELECT` query with by using the `LIMIT` clause.
 
-The `SELECT * FROM [table]` query retrieves all the columns and all records from a table, which is not always recommended, especially if your database contains a lot of records.
+The following query selects all columns from the first **five** records in the `employees` table:
 
+[image assetsSrc="Data-Definition-And-Data-Types-q2.png" /]
 
-You can also specify the names of the columns that you want to get from the database as well as the number of records to retrieve.
+You can also specify the names of the columns that you want to get from the database, as well as the number of records to retrieve.
 
 ```Java
 SELECT `first_name`, `last_name` FROM `employees`; 
 LIMIT 5;                                  
 ```
 
-[image assetsSrc="Data-Definition-And-Data-Types-q2.png" /]
-
-
-The code above retrieves 5 records from the **employees** table, while selecting only the first_name and last_name columns.
-
-
+The code above retrieves the `first_name` and `last_name` columns of the first **five** records in the **employees** table.
 
 [/slide]
