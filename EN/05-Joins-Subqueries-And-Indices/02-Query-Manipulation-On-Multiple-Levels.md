@@ -39,7 +39,7 @@ This is the resulting table:
 -- Write your query here
 ```
 
-Use the database that is called "**SoftUni Database**".
+Use `SoftUni Database` for this problem.
 
 Write a query that counts the employees who receive a **salary** higher than the **average**. 
 
