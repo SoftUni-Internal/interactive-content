@@ -1,6 +1,14 @@
 # Homework
 
 [slide hideTitle]
+# Homework Resources
+
+For problems from "**Employees with Salary Above 35000**" to "**Define a Function**" (inclusively), use the [SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/bank_db_database_programmability_homework.zip) database, and for the others - use [Bank Database](https://videos.softuni.org/resources/java/java-mysql/bank_db_database_programmability_homework.zip).
+
+[/slide]
+
+
+[slide hideTitle]
 # Problem: Employees with Salary Above 35000
 [code-task title="Employees with Salary Above 35000" taskId="java-db-and-MySQL-database-programmability-employees-with-salary-above-35000" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]

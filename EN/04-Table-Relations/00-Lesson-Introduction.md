@@ -38,9 +38,7 @@
 
 
 [slide hideTitle]
-# Resources
-
-## Lab problems
+# Lab Resources
 
 |**Problem Name**|**Database**|
 |---|---|

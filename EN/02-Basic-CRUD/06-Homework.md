@@ -1,6 +1,16 @@
 # Homework
 
 [slide hideTitle]
+# Homework Resources
+
+For problems from "**Find All Information About Departments**" to "**Increase Salaries**" (inclusively), use the [SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/soft_uni_database_crud.zip).
+
+For problems from "**All Mountain Peaks**" to "**Countries and Currency (Euro / Not Euro)**" (inclusively), use the [Geography Database](https://videos.softuni.org/resources/java/java-mysql/geography_database_crud.zip), and for the "**All Diablo Characters**" problem - use [Diablo Database](https://videos.softuni.org/resources/java/java-mysql/diablo_database_crud.zip).
+
+[/slide]
+
+
+[slide hideTitle]
 # Problem: Find All Information About Departments 
 
 [code-task title="Find All Information About Departments" taskId="java-db-and-MySQL-basic-crud-find-info-about-departments" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]

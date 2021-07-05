@@ -20,16 +20,8 @@
 [/slide]
 
 [slide hideTitle]
-# Resources
-
-## Lab problems
+# Lab Resources
 
 For all **lab problems** use the [Hotel Database](https://videos.softuni.org/resources/java/java-mysql/hotel_db_Lab.zip).
-
-## Homework
-
-For problems from "**Find All Information About Departments**" to "**Increase Salaries**" (inclusively), use the [SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/soft_uni_database_crud.zip).
-
-For problems from "**All Mountain Peaks**" to "**Countries and Currency (Euro / Not Euro)**" (inclusively), use the [Geography Database](https://videos.softuni.org/resources/java/java-mysql/geography_database_crud.zip), and for the "**All Diablo Characters**" problem - use [Diablo Database](https://videos.softuni.org/resources/java/java-mysql/diablo_database_crud.zip).
 
 [/slide]

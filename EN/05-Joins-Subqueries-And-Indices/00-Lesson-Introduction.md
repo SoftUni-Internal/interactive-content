@@ -33,9 +33,7 @@
 [/slide]
 
 [slide hideTitle]
-# Resources
-
-## Lab problems
+# Lab Resources
 
 |**Problem Name**|**Database**|
 |---|---|
@@ -43,10 +41,5 @@
 |Towns Addresses|SoftUni Database|
 |Employees Without Managers|SoftUni Database|
 |Higher Salary|SoftUni Database|
-
-
-## Homework
-
-For problems from "**Employee Address**" to "**Min Average Salary**" (inclusively), use the [SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/soft_uni_database_subqueries_and_JOINs_homework.zip) database, and for the others - use [Geography Database](https://videos.softuni.org/resources/java/java-mysql/geography_database_subqueries_and_JOINs_.zip).
 
 [/slide]

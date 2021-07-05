@@ -1,6 +1,14 @@
 # Homework
 
 [slide hideTitle]
+# Homework Resources
+
+For problems from "**Employee Address**" to "**Min Average Salary**" (inclusively), use the [SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/soft_uni_database_subqueries_and_JOINs_homework.zip) database, and for the others - use [Geography Database](https://videos.softuni.org/resources/java/java-mysql/geography_database_subqueries_and_JOINs_.zip).
+
+[/slide]
+
+
+[slide hideTitle]
 # Problem: Employee Addresss
 [code-task title="Employee Addresss" taskId="java-db-and-MySQL-subqueries-and-JOINs-employee-addresss" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]

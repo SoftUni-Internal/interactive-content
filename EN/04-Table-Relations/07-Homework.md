@@ -1,5 +1,17 @@
 # Homework
 
+[slide hideTitle]
+# Homework Resources
+
+|**Problem Name**|**Database**|
+|---|---|
+|SoftUni Design|[SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/soft_uni_database_table_relations.zip)|
+|Geography Design|[Geography Database](https://videos.softuni.org/resources/java/java-mysql/geography_database_table_relations.zip)|
+|Peaks in Rila|Geography Database|
+
+[/slide]
+
+
 
 [slide hideTitle]
 # Problem: One-To-One Relationship

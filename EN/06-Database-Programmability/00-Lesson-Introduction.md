@@ -21,9 +21,7 @@
 [/slide]
 
 [slide hideTitle]
-# Resources
-
-## Lab problems
+# Lab Resources
 
 |**Problem Name**|**Database**|
 |---|---|
@@ -32,9 +30,5 @@
 |Promote Employees By ID|SoftUni Database|
 |Triggered|SoftUni Database|
 
-
-## Homework
-
-For problems from "**Employees with Salary Above 35000**" to "**Define a Function**" (inclusively), use the [SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/bank_db_database_programmability_homework.zip) database, and for the others - use [Bank Database](https://videos.softuni.org/resources/java/java-mysql/bank_db_database_programmability_homework.zip).
 
 [/slide]
