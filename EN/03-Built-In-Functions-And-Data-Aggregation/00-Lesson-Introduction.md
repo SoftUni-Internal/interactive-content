@@ -37,17 +37,17 @@
 
 For this **lab**, you will need the following **databases**:
 
-- [BookLibrary](https://videos.softuni.org/resources/java/java-mysql/Booklibrary_Built-In-Functions.zip)
-- [Restaurant](https://videos.softuni.org/resources/java/java-mysql/Restaurant_Built-In-Functions.zip)
+- [BookLibrary Databases](https://videos.softuni.org/resources/java/java-mysql/Booklibrary_Built-In-Functions.zip)
+- [Restaurant Databases](https://videos.softuni.org/resources/java/java-mysql/Restaurant_Built-In-Functions.zip)
 
 ## Usage Table
 
 |**Problem Name**|**Database**|
 |---|---|
-|**Find Book Titles**|[BookLibrary](https://videos.softuni.org/resources/java/java-mysql/Booklibrary_Built-In-Functions.zip)|
+|**Find Book Titles**|[BookLibrary Databases](https://videos.softuni.org/resources/java/java-mysql/Booklibrary_Built-In-Functions.zip)|
 |Replace Titles|BookLibrary|
 |Sum the Cost of All Books|BookLibrary|
-|**Department Info**|[Restaurant](https://videos.softuni.org/resources/java/java-mysql/Restaurant_Built-In-Functions.zip)|
+|**Department Info**|[Restaurant Databases](https://videos.softuni.org/resources/java/java-mysql/Restaurant_Built-In-Functions.zip)|
 |Minimum Salary|Restaurant|
 |Average Salary|Restaurant|
 |Days Lived|**BookLibrary**|

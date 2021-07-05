@@ -86,6 +86,8 @@ GROUP BY e.`department_id`;
 [/code-editor]
 [task-description]
 
+Use the database that is called "**BookLibrary Databases**".
+
 Write an SQL query to **sum** the **prices of all books**. 
 
 **Format** the output to **2 digits after the decimal point**.  
@@ -298,7 +300,7 @@ GROUP BY e.`department_id`;
 [/code-editor]
 [task-description]
 
-[Download](https://videos.softuni.org/resources/java/java-mysql/Restaurant_Built-In-Functions.zip) and get familiar with **the restaurant database.**
+Use the database that is called "**Restaurant Databases**".
 
 You will use it in the following assignments. 
 
@@ -519,6 +521,8 @@ GROUP BY e.`department_id`;
 [/code-editor]
 [task-description]
 
+Use the database that is called "**Restaurant Databases**".
+
 Write an SQL query to retrieve information about the departments grouped by `department_id` with a **minimum salary above 800**. 
 
 **Round** the resulting salary to **two digits after the decimal point**.  
@@ -695,6 +699,8 @@ GROUP BY e.`department_id`;
 ```
 [/code-editor]
 [task-description]
+
+Use the database that is called "**Restaurant Databases**".
 
 Write a query to calculate the **average salary** in each department. 
 

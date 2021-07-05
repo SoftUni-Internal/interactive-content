@@ -86,7 +86,7 @@ SELECT NOW();
 [/code-editor]
 [task-description]
 
-**Use the booklibrary database.**
+Use the database that is called "**BookLibrary Databases**".
 
 Write an SQL query to **calculate** the **lifetimes** of the authors, in **days**. 
 

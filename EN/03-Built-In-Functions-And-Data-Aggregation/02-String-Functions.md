@@ -86,7 +86,7 @@ oftun
 [/code-editor]
 [task-description]
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/Booklibrary_Built-In-Functions.zip) **for this task.**
+Use the database that is called "**BookLibrary Databases**".
 
 Familiarize yourself with the **booklibrary** database. 
 
@@ -350,6 +350,8 @@ We can replace the word ***** with a different symbol or word.
 ```
 [/code-editor]
 [task-description]
+
+Use the database that is called "**BookLibrary Databases**".
 
 Write an SQL query that finds **books which titles start with "The".** 
 

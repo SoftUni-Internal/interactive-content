@@ -62,11 +62,13 @@ For this **homework**, you will need the following **databases**:
 [/code-editor]
 [task-description]
 
-## Part 1 - Queries for the SoftUni Database
+# Part 1 - Queries for the SoftUni Database
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/softuni_built-in-functions.zip) **for the first part of the homework.**
+Get familiar with the **SoftUni** database.
 
-# Description
+You will use it for the following tasks.
+
+## Description
 
 Write an SQL query that finds all **employees** whose **first names start with "Sa" (case-insensitive)**. 
 
@@ -76,7 +78,7 @@ Display their **first** and **last names**.
 
 ## Example
 
-| first_name | last_name |
+| **first_name** | **last_name** |
 | --- | --- |
 | Sariya | Harnpadoungsataya |
 | Sandra | Reategui Alayo |
@@ -1931,6 +1933,7 @@ D'Hers
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Write an SQL query that finds all employees whose **last names contain "ei" (case-insensitive).**
 
@@ -1940,7 +1943,7 @@ Write an SQL query that finds all employees whose **last names contain "ei" (cas
 
 ## Example
 
-| first_name | last_name |
+| **first_name** | **last_name** |
 | --- | --- |
 | Kendall | Keil |
 | Christian | Kleinerman |
@@ -3873,18 +3876,19 @@ BANADEI
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Write an SQL query that finds the **first names** of all employees that are **both**:
 
-- in the **departments** with **IDs** of **3** or **10**  
-- **hired** between **1995 and 2005 (inclusively)** 
+- In the **departments** with **IDs** of **3** or **10**  
+- **Hired** between **1995 and 2005 (inclusively)** 
 
 **Order the information by id.**
 
 
 ## Example
 
-| first_name |
+| **first_name** |
 | --- |
 | Deborah |
 | Wendy |
@@ -5887,6 +5891,7 @@ Steven
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Write an SQL query that finds the **first** and **last names** of all employees whose **job titles do not contain "engineer".**
 
@@ -5894,7 +5899,7 @@ Write an SQL query that finds the **first** and **last names** of all employees 
 
 ## Example
 
-| first_name | last_name |
+| **first_name** | **last_name** |
 | --- | --- |
 | Guy | Gilbert |
 | Kevin | Brown |
@@ -8457,6 +8462,7 @@ Fleita
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Write an SQL query that finds **town names** that are **5** or **6** symbols long.
 
@@ -8465,7 +8471,7 @@ Write an SQL query that finds **town names** that are **5** or **6** symbols lon
 
 ## Example
 
-| name |
+| **name** |
 | --- |
 | Berlin |
 | Duluth |
@@ -10390,6 +10396,7 @@ Zzzzz
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Write an SQL query that finds all towns that **start with** the letters **M**, **K**, **B**, or **E** **(case-insensitive).**
 
@@ -10398,7 +10405,7 @@ Write an SQL query that finds all towns that **start with** the letters **M**, *
 
 ## Example
 
-| town_id | name |
+| **town_id** | **name** |
 | --- | --- |
 | 5 | Bellevue |
 | 31 | Berlin |
@@ -12480,6 +12487,7 @@ Mm
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Write an SQL query that finds all towns that **do not start** with the letters **R**, **B**, or **D** **(case-insensitive).**
 
@@ -12488,7 +12496,7 @@ Write an SQL query that finds all towns that **do not start** with the letters *
 
 ## Example
 
-| town_id | name |
+| **town_id** | **name** |
 | --- | --- |
 | 2 | Calgary |
 | 23 | Cambridge |
@@ -16184,6 +16192,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
 [/code-adapter]
 [task-description]
+# Description
 
 Write an SQL query that creates a view named **v_employees_hired_after_2000** with **the first and the last names** of all employees **hired after the year 2000.**
 
@@ -16191,7 +16200,7 @@ Select all from the generated view.
 
 ## Example
 
-| first_name | last_name |
+| **first_name** | **last_name** |
 | --- | --- |
 | Steven | Selikoff |
 | Peter | Krebs |
@@ -17324,13 +17333,13 @@ Denchev
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Write an SQL query that finds the names of all employees whose last names are **exactly 5 characters long.**
 
-
 ## Example
 
-| first_name | last_name |
+| **first_name** | **last_name** |
 | --- | --- |
 | Kevin | Brown |
 | Terri | Duffy |
@@ -20908,13 +20917,13 @@ Kulov
 [/code-editor]
 [task-description]
 
-## Part 2 - Queries for Geography Database
+# Part 2 - Queries for Geography Database
 
-[Download](https://videos.softuni.org/resources/java/java-mysql/geography_built-in-functions.zip) and get familiar with the **geography** database.
+Get familiar with the **Geography** database.
 
 You will use it for the following tasks.
 
-# Description
+## Description
 
 Find all countries that contain the **letter 'A' in their names at least 3 times (case-insensitive).**
 
@@ -20924,7 +20933,7 @@ Find all countries that contain the **letter 'A' in their names at least 3 times
 
 ## Example
 
-| contry_name | iso_code |
+| **contry_name** | **iso_code** |
 | --- | --- |
 | Afghanistan | AFG |
 | Albania | ALB |
@@ -21979,6 +21988,7 @@ ZZZ
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Combine the names of **all peaks and rivers** so that the last letter of each peak’s name **is identical** to the first letter of the river name.
 
@@ -21991,7 +22001,7 @@ The matching letters must **overlap**, as shown below.
 
 ## Example
 
-| peak_name | river_name | mix |
+| **peak_name** | **river_name** | **mix** |
 | --- | --- | --- |
 | Aconcagua | Amazon | aconcaguamazon |
 | Aconcagua | Amur | aconcaguamur |
@@ -23317,11 +23327,13 @@ caconcaguanile
 [/code-editor]
 [task-description]
 
-## Part 3 - Queries from Diablo Database
+# Part 3 - Queries from Diablo Database
 
-For the next tasks you will use the **Diablo** database, which you can [download](https://videos.softuni.org/resources/java/java-mysql/diablo_built-in-functions.zip) here.
+Get familiar with the **Diablo** database.
 
-# Description
+You will use it for the following tasks.
+
+## Description
 
 Find the **top 50 games ordered by start date**, then **by name.**
 
@@ -23330,7 +23342,7 @@ Display only the **games from the years 2011 and 2012.**
 Display the start date in the format **"YYYY-MM-DD".**
 ## Example
 
-| name | start |
+| **name** | **start** |
 | --- | --- |
 | Rose Royalty | 2011-01-05 |
 | London | 2011-01-13 |
@@ -28263,6 +28275,7 @@ Ancalagon
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Find information about the email providers of all users. 
 
@@ -28273,7 +28286,7 @@ Order the results **alphabetically** by the **email provider**, then by **userna
 
 ## Example
 
-| user_name | Email Provider |
+| **user_name** | **Email Provider** |
 | --- | --- |
 | monoxidecos | astonrasuna.com |
 | bashsassafras | balibless.com |
@@ -32881,6 +32894,7 @@ softuni.bg
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Find the **user_name** and the **ip_address** of each user sorted **alphabetically** by **user_name**.
 
@@ -32889,7 +32903,7 @@ Display only the rows where the **ip_address** matches the pattern: "\_\_\_.1%.%
 
 ## Example
 
-| user_name | ip_address |
+| **user_name** | **ip_address** |
 | --- | --- |
 | bindbawdy | 192.157.20.222 |
 | evolvingimportant | 223.175.227.173 |
@@ -37672,6 +37686,7 @@ sweethorseman
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Find all **games** with their corresponding **part of the day** and **duration**. 
 
@@ -37687,7 +37702,7 @@ There are **three parts of the day**:
 - **Long** - between 6 and 10 (inclusive) 
 - **Extra Long** - in any other cases or without **duration** 
 
-| game | Part of the Day | Duration |
+| **game** | **Part of the Day** | **Duration** |
 |---|---|---|
 | Aithusa | Evening | Short |
 | Acid green | Morning | Long |
@@ -42644,11 +42659,13 @@ Extra Long
 [/code-editor]
 [task-description]
 
-## Part 4 - Date Functions Queries
+# Part 4 - Date Functions Queries from Orders Database
 
-For this task you will use the **orders** database, which you can [download](https://videos.softuni.org/resources/java/java-mysql/orders_built-in-functions.zip) here.
+Get familiar with the **Orders** database.
 
-# Description
+You will use it for the following tasks.
+
+## Description
 
 You will receive an **orders (id, product_name, order_date)** table filled with data.
 
@@ -42661,7 +42678,7 @@ Write a query to display each product's **name, order date, payment and delivery
 
 ## Original Table
 
-| id | product_name | order_date |
+| **id** | **product_name** | **order_date** |
 | --- | --- | --- |
 | 1 | Butter | 2016-09-19 00:00:00 |
 | 2 | Milk | 2016-09-30 00:00:00 |
@@ -42876,15 +42893,17 @@ Tomat65434foe23gfhgsPep
 [/code-editor]
 [task-description]
 
-## Part 5 - Use The "gringotts" Database
+# Part 5 - Use The "Gringotts" Database
 
-Mr. Bodrog is a greedy small goblin. His most precious possession is a small database of the deposits in the wizard world. 
+Mr. Bodrog is a greedy small goblin. 
+
+His most precious possession is a small database of the deposits in the wizard world. 
 
 Mr. Bodrog wants you to send him some reports.
 
-You will use the **gringotts** database which you can download [here](https://videos.softuni.org/resources/java/java-mysql/gringotts_built-in-functions.zip).
+You will use the **Gringotts** database which.
 
-# Description
+## Description
 
 Import the database and send the **total count of records** to Mr. Bodrog.
 
@@ -42892,7 +42911,7 @@ Make sure nothing got lost.
 
 ## Example
 
-| count | 
+| **count** | 
 | --- | 
 | 162 | 
 
@@ -43286,6 +43305,7 @@ INSERT INTO `wizard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, 
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Obtain the size of the **longest magic wand.** 
 
@@ -43293,7 +43313,7 @@ Rename the new column appropriately.
 
 ## Example
 
-| longest_magic_wand | 
+| **longest_magic_wand** | 
 | --- | 
 | 31 | 
 
@@ -43687,6 +43707,7 @@ INSERT INTO `wizard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, 
 ```
 [/code-editor]
 [task-description]
+# Description
 
 For the wizards in each deposit group, show the longest magic wand.
 
@@ -43697,7 +43718,7 @@ Choose a fitting name for the new column.
 
 ## Example
 
-| deposit_group | longest_magic_wand |
+| **deposit_group** | **longest_magic_wand** |
 | --- | --- |
 | Human Pride | 30 |
 | ..... | ..... |
@@ -44106,10 +44127,11 @@ Venomous Tongue
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Select the deposit group with the **smallest** average wand size.
 
-| deposit_group |
+| **deposit_group** |
 | ---  | 
 | Troll Chest | 
 
@@ -44505,6 +44527,7 @@ Troll Chest
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Select all deposit groups and the **total deposit sum of each group**. 
 
@@ -44512,7 +44535,7 @@ Order result by **total_sum** in **ascending order.**
 
 ## Example
 
-| deposit_group | total_sum |
+| **deposit_group** | **total_sum** |
 | --- | --- |
 | Blue Phoenix | 819598.73 |
 | ..... | ..... |
@@ -44921,15 +44944,15 @@ Venomous Tongue
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Select all deposit groups and their total deposit sums but **only for the wizards with magic wands crafted by Ollivander family.** 
 
 Order the result by **deposit_group alphabetically.**
 
-
 ## Example
 
-| deposit_group | total_sum |
+| **deposit_group** | **total_sum** |
 | --- | --- |
 | Blue Phoenix | 52968.96 |
 | Human Pride | 188366.86 |
@@ -45405,6 +45428,7 @@ Venomous Tongue
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Select all deposit groups and their total deposit sums but **only for the wizards with magic wands crafted by Ollivander family.** 
 
@@ -45414,7 +45438,7 @@ Order by `total_sum` in **descending order.**
 
 ## Example
 
-| deposit_group | total_sum |
+| **deposit_group** | **total_sum** |
 | --- | --- |
 | Troll Chest | 126585.18 |
 | ..... | ..... |
@@ -45949,6 +45973,7 @@ Blue Phoenix
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Create a query that selects:
 
@@ -45963,7 +45988,7 @@ Select the data in **ascending order** by **magic_wand_creator** and **deposit_g
 
 ## Example
 
-| deposit_group | magic_wand_creator | min_deposit_charge |
+| **deposit_group** | **magic_wand_creator** | **min_deposit_charge** |
 | --- | --- | --- |
 | Blue Phoenix | Antioch Peverell | 30.00 |
 | ..... | ..... | ..... |
@@ -46611,6 +46636,7 @@ Ollivander family
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Write down a query that creates 7 different groups **based on their age.**
 
@@ -46634,7 +46660,7 @@ The query should return:
 
 ## Example
 
-| age_group | wizard_count |
+| **age_group** | **wizard_count** |
 | --- | --- |
 | \[11-20\] | 21 |
 | ..... | ..... | 
@@ -47063,6 +47089,7 @@ INSERT INTO `wizard_deposits` (`id`, `first_name`, `last_name`, `notes`, `age`, 
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Write a query that returns all **unique first letters** of wizards’ **first names**, but **only if they have made a deposit of type Troll Chest**. 
 
@@ -47072,7 +47099,7 @@ Use `GROUP BY` to ensure the uniqueness of the entries.
 
 ## Example
 
-| first_letter |
+| **first_letter** |
 | --- |
 | A |
 | ... |
@@ -47406,6 +47433,8 @@ B
 [/code-editor]
 [task-description]
 
+# Description
+
 Mr. Bodrog is highly interested in profitability. 
 
 He wants to know the average interest of all deposits groups and whether a deposit **has expired** or **not.** 
@@ -47417,7 +47446,7 @@ Order the data in **descending** order by Deposit Group and in **ascending order
 
 ## Examples
 
-| deposit_group | is_deposit_expired | average_interest |
+| **deposit_group** | **is_deposit_expired** | **average_interest** |
 | --- | --- | --- |
 | Venomous Tongue | 0 | 16.698947 |
 | Venomous Tongue | 1 | 13.147500 |
@@ -47982,8 +48011,9 @@ Blue Phoenix
 ```
 [/code-editor]
 [task-description]
+# Queries for SoftUni Databases
 
-**Use the soft_uni database.**
+Use the database that is called "**SoftUni Databases**".
 
 That is it! You no longer work for Mr. Bodrog. 
 
@@ -47991,7 +48021,7 @@ You have now decided to pursue a career as an analyst in **SoftUni**.
 
 It comes as no surprise that you will use the **soft_uni database.**
 
-# Description
+## Description
 
 Your task is to select the minimum salary from employees that are **both**:
 
@@ -48787,6 +48817,7 @@ CREATE TABLE IF NOT EXISTS `towns` (
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Select all highly paid employees who earn **more than 30000** and store them in a new table.
 
@@ -48801,7 +48832,7 @@ Order the result by **department_id** in **ascending** order.
 
 ## Example
 
-| department_id | avg_salary |
+| **department_id** | **avg_salary** |
 | --- | --- |
 | 1 | 45166.66666667 |
 | ... | ... |
@@ -49275,6 +49306,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Find the **highest** salary for each department. 
 
@@ -49282,10 +49314,9 @@ Filter those which have max salaries **outside the range of 30000 and 70000**.
 
 Order the result by **department_id** in **ascending** order. 
 
-
 ## Example
 
-| department_id | max_salary |
+| **department_id** | **max_salary** |
 | --- | --- |
 | 2 | 29800.0000 |
 | ... | ... |
@@ -49732,6 +49763,8 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 [/code-editor]
 [task-description]
 
+# Description
+
 Count the salaries of all employees who **do not have a manager.**
 
 |  |
@@ -50126,6 +50159,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 ```
 [/code-editor]
 [task-description]
+# Description
 
 Find the **third-highest salary** in each **department**, if such exists. 
 
@@ -50134,7 +50168,7 @@ Order the result by **department_id** in **ascending order.**
 
 ## Examples
 
-| department_id | third_highest_salary |
+| **department_id** | **third_highest_salary** |
 | --- | --- |
 | 1 | 36100.00 |
 | 2 | 25000.00 |
@@ -50843,6 +50877,8 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 [/code-editor]
 [task-description]
 
+# Description
+
 Create a query that shows the **total sum of salaries** for each department.
 
 **Order by department_id.**
@@ -50855,7 +50891,7 @@ Your query should return:
 
 ## Examples
 
-| department_id | total_salary |
+| **department_id** | **total_salary** |
 | --- | --- |
 | 1 | 241000.00 |
 | ..... | ..... |

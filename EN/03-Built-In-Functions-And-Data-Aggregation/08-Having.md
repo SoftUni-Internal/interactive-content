@@ -49,6 +49,8 @@ HAVING 'TotalSalary' < 25000;
 [/code-editor]
 [task-description]
 
+Use the database that is called "**Restaurant Databases**".
+
 Write a query to retrieve the count of all **appetizers (category id = 2)** with a price **higher than 8**.   
 
 [/task-description]
