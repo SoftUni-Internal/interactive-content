@@ -11,7 +11,7 @@
     DOUBLE(12,3)
     DATETIME
     ```
-- The main types of data you can use are **STRING**, **NUMERICAL** and **DATETIME**
+- The main types of data you can use are `STRING`, `NUMERICAL` and `DATETIME`
 
 
 - How to model databases using MySQL Workbench
