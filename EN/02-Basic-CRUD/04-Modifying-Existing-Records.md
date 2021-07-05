@@ -31,11 +31,15 @@ Make sure you do not forget to filter the records you want to change otherwise t
 [task-description]
 # Description
 
+Use the database that is called "**Hotel Database**".
+
 Update the salary of all employees whose **job_title** is "**Manager**", **increasing it by 100**.
 
 Retrieve information about all the salaries from the employees table.
 
-**Hint**: Running this query in MySQL Workbench might produce the following error - Error Code: 1175. You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column.
+**Hint**: Running this query in MySQL Workbench might produce the following error - Error Code: 1175. 
+
+You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column.
 
 You can solve it by disabling safe mode and trying to run the query again.
 
@@ -190,7 +194,11 @@ TRUNCATE TABLE `users`;
 [task-description]
 # Description
 
-Write a query that **deletes all employees who are in departments 1 or 2** from the **employees** table. Then select all the records from the **employees** table and **order the results by id**.
+Use the database that is called "**Hotel Database**".
+
+Write a query that **deletes all employees who are in departments 1 or 2** from the **employees** table. 
+
+Then select all the records from the **employees** table and **order the results by id**.
 
 ## Example
 

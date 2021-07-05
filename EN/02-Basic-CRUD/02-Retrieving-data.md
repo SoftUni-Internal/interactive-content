@@ -66,7 +66,7 @@ We will learn how to do this in the next lesson, for now just note that there is
 
 Here is a [link](https://videos.softuni.org/resources/java/java-mysql/hotel_db_Lab.zip) to the resources for this task.
 
-Familiarize yourself with **the hotel database**.
+Familiarize yourself with **the Hotel Database**.
 
 Write a query to select all employees and retrieve information about their **id**, **first_name**, **last_name** and **job_title** ordered by **id**.
 
@@ -169,7 +169,11 @@ Housekeeping
 [task-description]
 # Description
 
-Write a query to select all employees (**id**, **first_name** and **last_name**, **job_title**, **salary**) whose salaries are **higher than 1000**. Order the results by **id**. Concatenate the **first_name** and **last_name** fields into a column called **full_name**.
+Use the database that is called "**Hotel Database**".
+
+Write a query to select all employees (**id**, **first_name** and **last_name**, **job_title**, **salary**) whose salaries are **higher than 1000**. 
+
+Order the results by **id**. Concatenate the **first_name** and **last_name** fields into a column called **full_name**.
 
 ## Example
 
@@ -382,11 +386,15 @@ We want to use **IN/NOT IN** operators when we know the exact value we want, fol
 [task-description]
 # Description
 
-Write a query to retrieve information about employees, who are in **department 4** and have a **salary higher than or equal to 1000**. Order the information by **id**.
+Use the database that is called "**Hotel Database**".
+
+Write a query to retrieve information about employees, who are in **department 4** and have a **salary higher than or equal to 1000**. 
+
+Order the information by **id**.
 
 ## Example
 
-| id | first_name | last_name | job_title | department_id | salary |
+| **id** | **first_name** | **last_name** | **job_title** | **department_id** | **salary** |
 | --- | --- | --- | --- | --- | --- |
 | 3 | Samuel | Bridges | Porter | 4 | 1100 |
 | 9 | Eileen | Clayton | Housekeeping | 4 | 1600 |
@@ -618,6 +626,8 @@ This way of access management is quite common in organizations where certain peo
 
 [task-description]
 # Description
+
+Use the database that is called "**Hotel Database**".
 
 Write a query to **create a view** that selects all information about the **top paid employee** from the **employees** table in the **hotel** database.
 
