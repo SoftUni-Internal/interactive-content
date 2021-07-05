@@ -355,7 +355,7 @@ Next, we'll match the **decimal** part of the number, which **might or might not
 [/hint]
 
 [hint]
-- Finally, we’re going to use the same logic for the end of our string as the start – we’re going to match **only** if the number has **either a whitespace or the end of the string** `("$")`:
+Finally, we’re going to use the same logic for the end of our string as the start – we’re going to match **only** if the number has **either a whitespace or the end of the string** `("$")`:
 
 [image assetsSrc="Regex(4).png" /]
 [/hint]
