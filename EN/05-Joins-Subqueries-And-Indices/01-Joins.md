@@ -161,7 +161,7 @@ There was no matching course for the last entry, so there is `NULL` in the `cour
 
 # RIGHT JOIN
 
-The `RIGHT JOIN` works like `LEFT JOIN`, but in the opposite direction.
+The `RIGHT JOIN` works like `LEFT JOIN` but in the opposite direction.
 
 It returns **all the rows** from the table on the **right** even if no matching rows have been found in the table on the left.
 
@@ -284,7 +284,8 @@ The following image illustrates how this join clause works:
 [/code-editor]
 [task-description]
 # Description
-Use the database that is called "**SoftUni Database**".
+
+Use `SoftUni Database` for this problem.
 
 Write a query that retrieves the following information about the **managers** of different departments:
 -	**employee_id**
@@ -3711,9 +3712,9 @@ Production Control
 [/code-editor]
 [task-description]
 # Description
-Use the database that is called "**SoftUni Database**".
+Use `SoftUni Database` for this problem.
 
-Write a query that finds information about the **addresses** in the database, which are in **San Francisco**, **Sofia** or **Carnation**. 
+Write a query that finds information about the **addresses** in the database, which are in **San Francisco**, **Sofia**, or **Carnation**. 
 
 Select only: 
 
@@ -3722,7 +3723,6 @@ Select only:
 - **address_text**
 
 Order the result by **town_id**, then by **address_id**. 
-
 
 ## Example
 
@@ -7148,7 +7148,7 @@ Sofia
 [task-description]
 # Description
 
-Use the database that is called "**SoftUni Database**".
+Use `SoftUni Database` for this problem.
 
 Write a query that finds the following information for all employees who **do not have** a manager:
 
