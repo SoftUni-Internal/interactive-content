@@ -61,9 +61,9 @@ HAVING 'TotalSalary' < 25000;
 ## In the next lesson you will learn:
 
 - **Table Relations**
-    * **One-to-many** 
-    * **Many-to-many**
-    * **One-to-one**
+    * **one-to-many** 
+    * **many-to-many**
+    * **one-to-one**
   
 - How to **design** a database
 - What **JOIN statements** are
