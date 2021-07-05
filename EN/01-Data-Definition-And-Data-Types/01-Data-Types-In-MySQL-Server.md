@@ -17,7 +17,7 @@ There are several data types in MySQL:
     - DECIMAL
     - FLOAT
     - DOUBLE
-- **String** - used for storing text and characters to represent various kinds of data
+- **String** - Used for storing text and characters to represent various kinds of data:
     - CHAR
     - VARCHAR
     - BINARY
@@ -34,7 +34,7 @@ There are several data types in MySQL:
     - TIME
     - YEAR
 
-There are also **spatial types** and **JSON data type** which are not the focus of this lesson.
+There are also **spatial types** and **JSON data type**, which are not the focus of this lesson.
 
 [/slide]
 
@@ -44,9 +44,9 @@ There are also **spatial types** and **JSON data type** which are not the focus 
 
 The **Numeric** data types have a specific **range**
 
-Depending on the range, they can be **Signed** and **Unsigned** except for the **BIT** data type which only stores numbers from 1 to 64.
+Depending on the range, they can be **Signed** and **Unsigned** except for the **BIT** data type, which only stores numbers from 1 to 64.
 
-An example for Signed and Unsigned **INT**:
+This is an example of a Signed and Unsigned **INT**:
 
 `Signed`: Represents numbers both in the positive and negative range
 
@@ -55,8 +55,6 @@ An example for Signed and Unsigned **INT**:
 `Unsigned`: Represents numbers only in the positive range
 
 (min value: **0**, max value: **4294967295**)
-
-
 
 The following table shows a summary of the numeric types in MySQL:
 
@@ -71,7 +69,7 @@ The following table shows a summary of the numeric types in MySQL:
 | FLOAT | A single-precision floating point number | decimal (precision to 23 digits)|
 | DOUBLE| A double-precision floating point number | decimal (24 to 53 digits) |
 
-INTEGER, SMALLINT, DECIMAL and NUMERIC are called exact numeric types, while DOUBLE AND FLOAT are of varying precision.
+INTEGER, SMALLINT, DECIMAL, and NUMERIC are called exact numeric types, while DOUBLE AND FLOAT are of varying precision.
 
 ```Java
 INT[(M)][UNSIGNED];  // "M" is the count of digits stored for the value
@@ -87,10 +85,9 @@ DOUBLE[(M, D)][UNSIGNED];  //  "M" is the count of digits stored for the value
 DECIMAL[(M, D)][UNSIGNED]; 
 ```
 
-Note that after MySQL version 8.0.17 table columns of type **FLOAT**, **DOUBLE**, and **DECIMAL** should not use the unsigned attribute as it is deprecated for those types. 
+Note that after MySQL version 8.0.17, table columns of type **FLOAT**, **DOUBLE**, and **DECIMAL** should not use the unsigned attribute as it is deprecated for those types. 
 
-If you need to only store positive numbers in these columns you can use a CHECK constraint.
-
+If you need to only store positive numbers in these columns, you can use a CHECK constraint.
 
 [/slide]
 
@@ -126,7 +123,7 @@ A character set is a set of symbols and encodings.
 
 A collation is a set of rules for comparing characters in a character set.
 
-For example, a subset of a character set could consist of the letters: A, B and C. 
+For example, a subset of a character set could consist of the letters: A, B, and C. 
 
 A default collation could define these as appearing in ascending order of A, B, C.
 
@@ -165,10 +162,9 @@ The following table shows the summary of **Date** data types in MySQL:
 
 MySQL retrieves values for a given date type in a **standard output format**.
 
-Example: 'YYYY-MM-DD' or 'YY-MM-DD'
+Here is an example: 'YYYY-MM-DD' or 'YY-MM-DD'
 
-
-**TIMESTAMP** and **DATETIME** have built in automatic behavior for setting the current time on initialization, they can be used for retrieving the time once during during creation of a record or updating a field with the current time and date every time any value in the record's row changes.
+**TIMESTAMP** and **DATETIME** have built-in automatic behavior for setting the current time on initialization. They can be used for retrieving the time once during the creation of a record or updating a field with the current time and date when a value in the record's row changes.
 
 **DATETIME** has a range of **1000-01-01 00:00:00** to **9999-12-31 23:59:59**, while **TIMESTAMP** supports a range of **1970-01-01 00:00:01** UTC to **2038-01-19 03:14:07** UTC.
 
@@ -176,7 +172,6 @@ The main difference is not just their range but that **TIMESTAMP** will convert 
 
 This means that when you retrieve the time and date stored into a **TIMESTAMP** field, a conversion to the current time zone will be done.
 
-By default it is converted to the server's timezone.
-
+By default, it is converted to the server's timezone.
 
 [/slide]
