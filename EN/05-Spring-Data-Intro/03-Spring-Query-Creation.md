@@ -1,4 +1,4 @@
-# Query Creation
+# Query Creation and Query Structure
 
 [slide hideTitle]
 
@@ -154,7 +154,7 @@ Example:
 ```java
 @Repository
 public interface ShampooRepository extends JpaRepository<Shampoo, Long> {
-    List<Shampoo> getAllBySizeOrderById(Size sizeValue);
+    List<Shampoo> findAllBySizeOrderById(String sizeValue);
 }
 ```
 

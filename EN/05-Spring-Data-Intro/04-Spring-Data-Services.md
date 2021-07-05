@@ -1,10 +1,10 @@
+# Services and the Service Layer
+
 [slide hideTitle]
 
-# Spring Data Services
+# The Service Layer
 
-When talking about bigger applications, the **Service pattern** always finds it's way into the conversation. 
-
-**Service pattern** is an architecture pattern, which intends to take the business logic in a separate layer in the app's architecture. 
+The **Service pattern** is an architecture pattern, which intends to take the business logic in a separate layer in the app's architecture. 
 
 The service classes are categorized into different layers, depending on the functionality they introduce.
 
@@ -13,22 +13,6 @@ One such category is the **data services**, which must contain only services rel
 The main concept behind the service layer is to not expose any internal processes to the entities.
 
 The developers should be aiming of making the services re-usable, so any other future application that may need these services can make use of them with little to non-configuration. 
-
-[/slide]
-
-[slide hideTitle]
-
-# Spring Data Architecture
-
-[image assetsSrc="Spring-Data-Service.png" /]
-
-[/slide]
-
-[slide hideTitle]
-
-# Services
-
-Now let's have some code examples.
 
 ```java
 public interface StudentService {           //First we get the interface of our service
@@ -62,7 +46,18 @@ public class StudentServiceImpl implements StudentService {     //Then we have a
 }
 ```
 
-Now let's use the service that we just created. 
+[/slide]
+
+[slide hideTitle]
+# Spring Data Architecture
+
+[image assetsSrc="Spring-Data-Service.png" /]
+
+A model has a repository layer and a service layer.
+
+The repository establishes a link between the service layer and the database. It is responsible for the data that is being sent to the database from the service layer (incoming information) and the retrieved data that needs to be sent to the service layer.
+
+The service layer processes either the incoming information and sends it to the database or processes the incoming request and retrieves the necessary information from the database. 
 
 [/slide]
 
@@ -72,28 +67,38 @@ Now let's use the service that we just created.
 
 Firstly we will need an entry point for our **Spring Application**.
 
+The entry point is declared with the **@SpringBootApplication** annotation.
+The application underneath is a console, which requires a Main class. That is how we start the Spring Boot application.
+
 ```java
-@SpringBootApplication                                          //The entry point of our application is declared with this annotation. 
-public class MainApplication {                                  //the web application underneath is just a simple console application.
-public static void main(String[] args) {                        //as we know, every console application needs a static void main class.
-        SpringApplication.run(MainApplication.class,args);      //That's how we start our web app.
+@SpringBootApplication                                           
+public class MainApplication {                                  
+public static void main(String[] args) {                        
+        SpringApplication.run(MainApplication.class,args);      
     }
 }
+```
 
-    @Component                                                  //The component class will let spring to know
-public class ConsoleRunner implements CommandLineRunner {       // that this class will need dependency injection.    
-    @Autowired
-    private StudentService studentService;                      //We set the dependency for student service.
+We can also create a class to run custom logic when starting the project, similar to a main method. This can be done by creating a new class and implementing the CommandLineRunner interface. The class also needs to be annotated with the @Component annotation so that Spring can adding into its life cycle.
 
-    @Autowired
-    private MajorService major service;                         //Than we set the second dependency for major service.
+```java
+@Component
+public class ConsoleRunner implements CommandLineRunner {
+    
+    private final StudentService studentService;
+    private final CourseService courseService;
 
+    public ConsoleRunner(StudentService studentService, CourseService courseService) {
+        this.studentService = studentService;
+        this.courseService = courseService;
+    }
+    
     @Override
     public void run(String... strings) throws Exception {   
-        Major major = new Major("Java DB Fundamentals");
-        Student student = new Student("John",new Date(), major);
-        majorService.create(major);
-        studentService.register(student);                       //Than we create our records and persist the data.
+        Course course = new Course("ORM And Spring Data");
+        Student student = new Student("John", new LocalDate(), course);
+        courseService.create(course);
+        studentService.register(student);
     }
 }
 ```

@@ -2,46 +2,39 @@
 
 # Lab: Spring Data – Account System
 
-Your task is to create a simple account system that has users with accounts and manages money transfer or withdrawal.
+Your task is to create an account system that has users with accounts and manages money transfer or withdrawal.
 
-Build the system using code-first and Spring Data.
+Build the system using the code first approach and Spring Data.
 
-The goal is to implement services and repositories
+The goal is to implement the services and the repositories
 
 [/slide]
 
 [slide hideTitle]
 
-# Project Setup.
+# Project Setup
 
-### Create new Spring project:
+### Creating a new Spring project
 
-[image assetsSrc="Lab.png" /]
-
-### Add name and version:
-
-[image assetsSrc="Lab(1).png" /]
+On the [start.spring.io](https://start.spring.io/) website, we can create a new Spring project.
+From here, we can pick either a Maven or a Gradle project, the language that we will write our code in, the Spring Boot version, the information about the project and the dependencies.
 
 
-### Add Spring Data JPA:
-
-[image assetsSrc="Lab(2).png" /]
-
-
-- In the resources folder, add new **applications.properties** file, which will hold the Spring configuration of the project:
+- In the resources folder of the project, create a new **applications.properties** file, which will hold the  configurations for the project:
 
 ```java
 #Data Source Properties
 spring.datasource.driverClassName = com.mysql.cj.jdbc.Driver
-spring.datasource.url = jdbc:mysql://localhost:3306/new_lab?useSSL=false
+spring.datasource.url = jdbc:mysql://localhost:3306/new_lab?useSSL=false&createDatabaseIfNotExist=true&allowPublicKeyRetrieval=true&serverTimezone=UTC
 spring.datasource.username = root
 spring.datasource.password = 12345
 
 #JPA Properties
 spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect
 spring.jpa.hibernate.format_sql = TRUE
-spring.jpa.hibernate.ddl-auto = create-drop
-###Loging Levels
+spring.jpa.hibernate.ddl-auto = update
+
+###Logging Levels
 # Disable the default loggers
 logging.level.org = WARN
 logging.level.blog = WARN
@@ -69,67 +62,37 @@ Start splitting the java directory into packages. Create several ones to help yo
 Start by setting up the database models. Each one of them will be as follows:
 
 
-### User
+## The User Table
 
-| **Columns**  | **Constraints**  |
+| **Columns** | **Constraints** |
 |---|---|
-| Id   | long value, primary key  |
-| Username   | unique for each user  |
-| Age   | integar value  |
-| Accounts   | each user can have many accounts, which will be identified by their id  |
+| id | Accepts **Long** values ; the **Primary Key** |
+| username | A **unique value** for each user |
+| age | Accepts **Integer** values |
+| accounts | Each user can have many accounts, which will be identified by their **id** |
 |  |  |
 
-### Account
-| **Columns**  | **Constraints**  |
+## The Account Table
+| **Columns**  | **Constraints** |
 |---|---|
-| Id   | long value, primary key  |
-| Balance   | BigDecimal  |
-| User    | an account can be owned by a single user  |
+| id | Accepts **Long** values ; the **Primary Key** |
+| balance | Accepts **BigDecimal** values |
+| user | The owner of the account, which will be identified by their **id** |
 |  |  |
 
 Set up appropriate tables, columns, column properties and table relations.
+
 [/slide]
 
 [slide hideTitle]
 
 # Repositories
 
-Spring Data reduces the amount of boiler-plate code by using a central interface **Repository**. 
-The **JpaRepository** interface contains methods like:
-
-- **save(E entity)**
-
-- **findOne(Id primaryKey)**
-
-- **findAll()**
-
-- **count()** 
-
-- **delete(E entity)** 
-
-- **exists(Id primaryKey)** 
-
-You can define a custom repository,
-
-which extends the JpaRepository
-
-and defines several methods for operating with data besides those exposed by the greater interface. 
-
-The query builder mechanism of Spring Data requires following several rules when you define custom methods. 
-
-Query creation is done by parsing method names by prefixes like find…By,
-
-read…By, query…By, count…By, and get…By. 
-
-You can add more criteria by concatenating And and Or or apply ordering with OrderBy with sorting direction Asc or Desc.
-
-
-Create two Repository **interfaces** – **UserRepository** and **AccountRepository**. 
+Create two repository – one for the **User** and another for the **Account** 
 
 ```java
 @Repository
 public interface AccountRepository extends JPARepository<Account, Long> {
-    Account findAccountById(Long id);
 }
 ```
 
@@ -140,9 +103,7 @@ public interface UserRepository extends JPARepository<User, Long> {
 }
 ```
 
-Add several methods to help you look up the data source,
-
-for example **getByUsername(String username)** in the **UserRepository** interface.
+Add several methods to help with data retrieval.
 
 [/slide]
 
@@ -150,75 +111,54 @@ for example **getByUsername(String username)** in the **UserRepository** interfa
 
 # Services
 
-In bigger applications mixing business logic and crud operations to the database is not wanted. 
-
-Having a repository objects is implementing the **Domain Driven Design**. 
-
-Repositories are classes responsible **only for write/transactional operations** towards the data source. 
-
-Any business logic like validation, calculations and so on is implemented by a **Service Layer**. 
-
-One of the most important concepts to keep in mind is that a **service** should **never** expose **details of the internal processes** or the business entities used within the application. 
-
-
 Define several service **interfaces**:
 
 ```java
-@Service
-public interface AccountService{
-    void withdrawMoney(BigDecimal money, Long id);
-    void transferMoney(BigDecimal money, Long id);
+public interface AccountService {
+    void withdrawMoney(BigDecimal amount, Long id);
+    void transferMoney(BigDecimal amount, Long id);
 }
 ```
 
 ```java
-@Service
-public interface UserService{
-    void registerUser(User user);
+public interface UserService {
+    void register(User user);
 }
 ```
 
-Implement those services with classes **AccountServiceImpl** and **UserServiceImpl**. 
+Implement those services.
 
-Those classes will do the business logic of the application. 
+The implementation classes will work on the business logic of the application. 
 
-In order to do that, they should have certain type of **Repository** available – **AccountRepository** or **UserRepository** according to the service type.
+In order to do that, they should have certain type of **Repository** according to the service type.
 
 ```java
 @Service
-public class AccountServiceImpl implements AccountService{
+public class AccountServiceImpl implements AccountService {
     
     private final AccountRepository accountRepository:
 
-    @Autowired
     public AccountServiceImpl(AccountRepository accountRepository){
         this.accountRepository = accountRepository;
     }
 
-    public void withdrawMoney(BigDecimal money, Long id) {...}
+    public void withdrawMoney(BigDecimal amount, Long id) {...}
 
-    public void transferMoney(BigDecimal money, Long id) {...}
+    public void transferMoney(BigDecimal amount, Long id) {...}
 }
 ```
 
 ```java
 @Service
-public class UserServiceImpl implements UserService{
+public class UserServiceImpl implements UserService {
 
     private final UserRepository userRepository;
 
-    @Autowired
     public UserServiceImpl(UserRepository userRepository) {...}
 
-    public void registerUser(User user) {...}
+    public void register(User user) {...}
 }
 ```
-
-In Spring Data Framework, the usage of **@Service**, **@Repository** or **@Component** annotations is needed to separate different **“layers”** in the application.
-
-They are mainly used for programmers to know a class’s role and which logical layer it belongs to.
-
-The **@Autowired** annotation is required when **injecting a resource**, e.g. **Repository** to **Service**.
 
 The implementation of the methods is up to you. Here are some several tips:
 
@@ -232,25 +172,26 @@ The implementation of the methods is up to you. Here are some several tips:
 
 [slide hideTitle]
 
-# ConsoleRunner and Application
+# The CommandLineRunner 
 
-We will test our application in a ConsoleRunner class. Create such and inject needed repositories:
+We will test our application in a **CommandLineRunner** class.
 
 ```java
 @Component 
-public class ConsoleRunner implements CommandLineRunner{
+public class CLR implements CommandLineRunner {
 
     private UserService userService;
     private AccountService accountService;
 
-    @Autowired
     public ConsoleRunner(UserService userService, AccountService accountService){
         this.userService = userService;
         this.accountService = accountService;
     }
 
     @Override
-    public void run(String... args) throws Exception{}
+    public void run(String... args) throws Exception {
+
+    }
 }
 ```
 
@@ -260,12 +201,12 @@ public class ConsoleRunner implements CommandLineRunner{
 
 # Test
 
-Test the application by adding some logic in the **ConsoleRunner** class’s method **run**:
+Test the application by adding some logic in the **CommandLineRunner**'s **run** method class:
 
 ```java 
-public void run(String... args) throws Exception{
+public void run(String... args) throws Exception {
     User user = new User();
-    user.setUsername("Pesho");
+    user.setUsername("Peter");
     user.setAge(20);
 
     Account account = new Account();
@@ -279,11 +220,5 @@ public void run(String... args) throws Exception{
 }
 ```
 
-If you’ve written everything correctly, an **account_system** database should be created with tables:
-
-- users.
-
-- accounts.
-
-- users_accounts.
+If you have written everything correctly, an **account_system** database should be created.
 [/slide]
