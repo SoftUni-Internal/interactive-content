@@ -4,7 +4,7 @@
 
 ## In this lesson you learned:
 
-- Joins
+- How join data from different tables
     ```Java
     SELECT * FROM employees AS e
     JOIN departments AS d
@@ -31,10 +31,10 @@
 
 ## In the next lesson you will learn:
 
-- What is UDF and where to use it
+- What UDF is and where to use it
 
 - Triggers and their usage
 
-- Stored procedure, their differences with UDF and usage
+- Stored procedure, their differences with UDF, and usage
 
 [/slide]
