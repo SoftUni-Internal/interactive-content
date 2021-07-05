@@ -29,7 +29,7 @@ Make sure you do not forget to filter the records you want to change otherwise t
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Update the salary of all employees whose **job_title** is "**Manager**", **increasing it by 100**.
 
@@ -188,7 +188,7 @@ TRUNCATE TABLE `users`;
 
 
 [task-description]
-## Description
+# Description
 
 Write a query that **deletes all employees who are in departments 1 or 2** from the **employees** table. Then select all the records from the **employees** table and **order the results by id**.
 

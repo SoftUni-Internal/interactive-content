@@ -62,7 +62,7 @@ We will learn how to do this in the next lesson, for now just note that there is
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Here is a [link](https://videos.softuni.org/resources/java/java-mysql/hotel_db_Lab.zip) to the resources for this task.
 
@@ -167,7 +167,7 @@ Housekeeping
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write a query to select all employees (**id**, **first_name** and **last_name**, **job_title**, **salary**) whose salaries are **higher than 1000**. Order the results by **id**. Concatenate the **first_name** and **last_name** fields into a column called **full_name**.
 
@@ -380,7 +380,7 @@ We want to use **IN/NOT IN** operators when we know the exact value we want, fol
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write a query to retrieve information about employees, who are in **department 4** and have a **salary higher than or equal to 1000**. Order the information by **id**.
 
@@ -617,7 +617,7 @@ This way of access management is quite common in organizations where certain peo
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write a query to **create a view** that selects all information about the **top paid employee** from the **employees** table in the **hotel** database.
 

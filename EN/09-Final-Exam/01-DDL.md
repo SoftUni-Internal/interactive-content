@@ -142,7 +142,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 **Submit your output to the Judge system from the following sql querie:**
 
@@ -257,7 +257,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 ```java
 SELECT COLUMN_KEY FROM INFORMATION_SCHEMA.COLUMNS
 WHERE TABLE_SCHEMA = 'softuni_stores_system'

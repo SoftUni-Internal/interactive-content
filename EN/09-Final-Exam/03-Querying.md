@@ -29,7 +29,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Extract from the **SoftUni Stores System** database, info about all of the **employees**. 
 
@@ -128,7 +128,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 A photographer wants to take pictures of **products that have old pictures**. 
 
 You must select all of the products that have a description **more than 100 characters** long description, 
@@ -206,7 +206,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 The managers needs to know in which stores sell different products and their average price.
 
 Extract from the database all of the **stores (with or without products)** and the **count** of the **products** that they have. 
@@ -303,7 +303,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 There are many employees in our shop system, but we need to find only the ones that passes specific criterias. 
 
 Extract from the database, the **full name** (a combination of **first and last name**) of employee,
@@ -396,7 +396,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 The managers always want to know how the business goes. 
 
 Now, they want from us to show all store names, but for security, 

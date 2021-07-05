@@ -22,7 +22,7 @@ Download the database for Part 1 [here](https://videos.softuni.org/resources/jav
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find **all available information about the departments in the SoftUni database**. 
 
@@ -226,7 +226,7 @@ Executive
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find **all department names**. **Sort** the information **by id**. 
 
@@ -3643,7 +3643,7 @@ Executive
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find the **first name**, **last name**, and **salary** of each employee.
 
@@ -8790,7 +8790,7 @@ Denchev
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find the **first**, **middle**, and **last** **name** of each employee.
 
@@ -13941,7 +13941,7 @@ Denchev
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find the email address of each employee. Consider that the email domain is softuni.bg. 
 
@@ -17922,7 +17922,7 @@ George.Denchev@softuni.bg
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to **find all the unique salary values**. 
 
@@ -19758,7 +19758,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find **all information** about employees whose **job title** is **Sales Representative**. 
 
@@ -21758,7 +21758,7 @@ Sales Representative
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find the first name, last name, and job title of all employees whose salary is in the range [**20000**, **30000**]. 
 
@@ -23758,7 +23758,7 @@ Production Technician
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find the **full name** of all employees **whose salary is 25000, 14000, 12500, or 23600**. 
 
@@ -23991,7 +23991,7 @@ Thierry B D'Hers
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find **the first and last names** of **all employees that do not have a manager**. 
 
@@ -25779,7 +25779,7 @@ Walters
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find the **first name**, **last name**, and the **salary** of all employees **who earn more than 50000**. 
 
@@ -25964,7 +25964,7 @@ Gilbert
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find the **top 5 best-paid employees**. 
 
@@ -27803,7 +27803,7 @@ D'Hers
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find the **first and last names** of all employees **whose department ID is not equal to 4 (Marketing)**. 
 
@@ -30158,7 +30158,7 @@ D'Hers
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to sort all records in the **еmployees** table by the following criteria: 
 
@@ -32436,7 +32436,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
 [/code-adapter]
 [task-description]
-## Description
+# Description
 
 Write an SQL query to create a view called **v_employees_salaries**.
 
@@ -35918,7 +35918,7 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 /\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
 [/code-adapter]
 [task-description]
-## Description
+# Description
 
 Write an SQL query to create a view called **v_employees_job_titles** with **full employee name** and **job title**.
 
@@ -37143,7 +37143,7 @@ Independent Java Consultant
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find **all distinct job titles**.
 
@@ -38976,7 +38976,7 @@ Marketing Assistant
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find the **first 10 projects that have already started**.
 
@@ -40967,7 +40967,7 @@ Research, design and development of HL Mountain Frame. Each frame is hand-crafte
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to find **the seven employees that were hired last**.
 
@@ -42984,7 +42984,7 @@ Jovy
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Write an SQL query to increase the salaries of all employees that are in the **Engineering**, **Tool Design**, **Marketing**, or **Information Services** department by **12%**.
 
@@ -45318,7 +45318,7 @@ Download the database for part 2 [here](https://videos.softuni.org/resources/jav
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Display all **mountain peaks** in alphabetical order.
 
@@ -46402,7 +46402,7 @@ Elbrus
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Find the **30 biggest countries** by **population** from **Europe**. Display the **country name** and **population**. Sort the results by **population** (from biggest to smallest), **then by** country **alphabetically**.
 
@@ -47857,7 +47857,7 @@ zc
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Find all countries along with information about their currency. 
 
@@ -49664,7 +49664,7 @@ Download the database for part 3 [here](https://videos.softuni.org/resources/jav
 [/code-editor]
 
 [task-description]
-## Description
+# Description
 
 Display the **name** of all **character classes** in **alphabetical order**.
 

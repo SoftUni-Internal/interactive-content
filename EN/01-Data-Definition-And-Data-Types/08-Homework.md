@@ -23,7 +23,7 @@ Initialize the new database using only SQL queries. Start by **creating a new da
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 In the newly created Minions database add a table **minions (id, name, age)**. 
 
@@ -164,7 +164,7 @@ create table towns (
 );
 [/code-adapter]
 [task-description]
-## Description
+# Description
 
 Before continuing with the next assignments, **rename the town_id** to id using the Workbench's GUI. 
 
@@ -269,7 +269,7 @@ ALTER TABLE minions
 ADD CONSTRAINT fk_minions_towns FOREIGN KEY (town_id) REFERENCES towns(id)
 [/code-adapter]
 [task-description]
-## Description
+# Description
 
 **Populate both tables** with sample records given in the table below.
 
@@ -416,7 +416,7 @@ insert into minions values (2, 'Bob', 15, 3);
 insert into minions values (3, 'Steward',null, 2);
 [/code-adapter]
 [task-description]
-## Description
+# Description
 **Delete all data** from the minions table using an **SQL query**. 
 
 [/task-description]
@@ -481,7 +481,7 @@ ALTER TABLE minions
 ADD CONSTRAINT fk_minions_towns FOREIGN KEY (town_id) REFERENCES towns(id)
 [/code-adapter]
 [task-description]
-## Description
+# Description
 **Delete all tables** from the **minions** database using an **SQL query**. 
 
 [/task-description]
@@ -546,7 +546,7 @@ WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'towns');
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Using **SQL queries** create table "**people**" with columns:
 - **id** - unique number for every person, there will be **no more than 2^31 - 1 people**. (Auto incremented)
@@ -740,7 +740,7 @@ select count(id) from people;
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 Using **SQL queries** create table **users** with columns:
 
 - **id** - unique number for every user. There will be **no more than 2^63 - 1 users**. (Auto incremented)
@@ -832,7 +832,7 @@ CONSTRAINT pk_users PRIMARY KEY (id)
 );
 [/code-adapter]
 [task-description]
-## Description
+# Description
 Using **SQL queries** modify table **users** from the previous task. 
 
 First **remove current primary key** then create a **new primary key** that is a **combination** of their **id** and **username**. 
@@ -893,7 +893,7 @@ CONSTRAINT pk_users PRIMARY KEY (id)
 );
 [/code-adapter]
 [task-description]
-## Description
+# Description
 Using **SQL queries**, modify the **default value** of **last_login_time** field to be the **current time**.
 [/task-description]
 [code-io /]
@@ -961,7 +961,7 @@ constraint pk_users primary key (id, username)
 );
 [/code-adapter]
 [task-description]
-## Description
+# Description
 Using **SQL queries** modify the **users** table.
 
 Remove the **username** field from the primary key so only the **id** field would be primary key.
@@ -1026,7 +1026,7 @@ username
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Using **SQL queries** create the **Movies** database with the following entities: 
 
@@ -1245,7 +1245,7 @@ title
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Using **SQL queries** create a **car_rental** database with the following entities: 
 
@@ -1442,7 +1442,7 @@ CREATE TABLE IF NOT EXISTS employees
 );
 [/code-adapter]
 [task-description]
-## Description
+# Description
 
 Create a database called soft_uni. 
 
@@ -1619,7 +1619,7 @@ Intern
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Use the **soft_uni** database and select all records from **towns**, then from **departments** and finally from the **employees** table.  
 
@@ -1976,7 +1976,7 @@ Intern
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Modify the queries from the previous problem by sorting: 
 
@@ -2339,7 +2339,7 @@ Intern
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Modify the queries from the previous problem to show only **some of the columns**, as follows: 
 
@@ -2632,7 +2632,7 @@ Intern
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Use the **softuni** database and **increase the salaries** of all employees by **10%**. **Then** select **only the salary** column from the **employees** table.  
 
@@ -2843,7 +2843,7 @@ INSERT INTO employees (first_name, middle_name, last_name, job_title, department
 INSERT INTO employees (first_name, middle_name, last_name, job_title, department_id, hire_date, salary) VALUES ('Faye', 'Emberly', 'Paddon', 'Intern', 3, '2016-08-28', 599.88);
 [/code-adapter]
 [task-description]
-## Description
+# Description
 
 Use an SQL query to **delete all records** from the table called **employees**. 
 

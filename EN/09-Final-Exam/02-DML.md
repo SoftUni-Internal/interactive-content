@@ -23,7 +23,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 You will have to **insert** records of data into the **products_stores** table, based on the **products** table. 
 
 Find all **products** that are **not offered** in any stores (don’t have a relation with stores) and insert data in the 
@@ -154,7 +154,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 
 Update all **employees** that hire **after 2003(exclusive)** year and **not work** in store **Cardguard** and **Veribet**. 
 Set their **manager** to be **Carolyn Q Dyett** (with **id 3**) and **decrease salary** with 500.
@@ -231,7 +231,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 It is time for the stores to start working. All good employees already are in their stores. 
 
 But some of the employers are too expensive and we need to cut them, because of finances restrictions.

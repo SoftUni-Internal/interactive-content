@@ -66,7 +66,7 @@ For this **homework**, you will need the following **databases**:
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/java-mysql/softuni_built-in-functions.zip) **for the first part of the homework.**
 
-## Description
+# Description
 
 Write an SQL query that finds all **employees** whose **first names start with "Sa" (case-insensitive)**. 
 
@@ -20914,7 +20914,7 @@ Kulov
 
 You will use it for the following tasks.
 
-## Description
+# Description
 
 Find all countries that contain the **letter 'A' in their names at least 3 times (case-insensitive).**
 
@@ -23321,7 +23321,7 @@ caconcaguanile
 
 For the next tasks you will use the **Diablo** database, which you can [download](https://videos.softuni.org/resources/java/java-mysql/diablo_built-in-functions.zip) here.
 
-## Description
+# Description
 
 Find the **top 50 games ordered by start date**, then **by name.**
 
@@ -42648,7 +42648,7 @@ Extra Long
 
 For this task you will use the **orders** database, which you can [download](https://videos.softuni.org/resources/java/java-mysql/orders_built-in-functions.zip) here.
 
-## Description
+# Description
 
 You will receive an **orders (id, product_name, order_date)** table filled with data.
 
@@ -42884,7 +42884,7 @@ Mr. Bodrog wants you to send him some reports.
 
 You will use the **gringotts** database which you can download [here](https://videos.softuni.org/resources/java/java-mysql/gringotts_built-in-functions.zip).
 
-## Description
+# Description
 
 Import the database and send the **total count of records** to Mr. Bodrog.
 
@@ -47991,7 +47991,7 @@ You have now decided to pursue a career as an analyst in **SoftUni**.
 
 It comes as no surprise that you will use the **soft_uni database.**
 
-## Description
+# Description
 
 Your task is to select the minimum salary from employees that are **both**:
 

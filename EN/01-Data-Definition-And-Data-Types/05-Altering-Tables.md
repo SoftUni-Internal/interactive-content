@@ -102,7 +102,7 @@ CREATE TABLE IF NOT EXISTS employees(
 );
 [/code-adapter]
 [task-description]
-## Description
+# Description
 Altering the tables is done via the "**ALTER TABLE**" clause. 
 
 Add a new column - "**middle_name**" to the "**employees**" table. 
@@ -154,7 +154,7 @@ CREATE TABLE products(
 );
 [/code-adapter]
 [task-description]
-## Description
+# Description
 Create the connection via a foreign key between the "**products**" and "**categories**" tables that you've created earlier. 
 
 Make **"category_id" foreign key linked to "id" in the "categories" table.**
@@ -201,7 +201,7 @@ CREATE TABLE employees(
 );
 [/code-adapter]
 [task-description]
-## Description
+# Description
 Change the property **"VARCHAR(50)" to "VARCHAR(100)"** in the "**middle_name**" column from the "**employees**" table.
 
 [/task-description]

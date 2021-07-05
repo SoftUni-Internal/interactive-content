@@ -109,7 +109,7 @@ Run `SELECT * FROM employees` to make sure the 3 records were inserted correctly
 ```
 [/code-editor]
 [task-description]
-## Description
+# Description
 When we create tables, we specify which database we want to add them to. This is done by using the "**USE**" clause.
 
 **Submit your solutions in JUDGE without the "USE** \{**database name**\}**" row.**
@@ -330,7 +330,7 @@ CREATE TABLE IF NOT EXISTS employees(
 );
 [/code-adapter]
 [task-description]
-## Description
+# Description
 Inserting data can be done with a query too. 
 
 To do that we use the "**INSERT**" clause. Populate the "employees" table with 3 test values.

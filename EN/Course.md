@@ -1,6 +1,6 @@
 # Java DB and MySQL
 
-## Description
+# Description
 This course teaches the **basics of coding**, such as:
 
 ## Language
