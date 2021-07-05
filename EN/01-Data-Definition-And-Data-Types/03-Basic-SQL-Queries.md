@@ -56,7 +56,7 @@ INSERT INTO [TABLE_NAME] (column1, column2, column3, column...)
 VALUES (value1, value2, value3, value...);
 ```
 
-For the following example, we will insert a record into a table with the following fields:
+For the following example, we will insert a record into a table with the fields:
 
 - **id** (manually added, not auto-increment)
 - **email**
