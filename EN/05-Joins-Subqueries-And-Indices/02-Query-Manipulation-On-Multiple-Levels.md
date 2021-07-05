@@ -38,6 +38,9 @@ This is the resulting table:
 ```
 -- Write your query here
 ```
+[/code-editor]
+[task-description]
+# Description
 
 Use `SoftUni Database` for this problem.
 
