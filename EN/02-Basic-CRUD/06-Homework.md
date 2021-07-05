@@ -1,19 +1,9 @@
 # Homework
 
 [slide hideTitle]
-# Part 1 - Queries for the SoftUni Database 
-
-For part 1, run the provided sql code to create the **soft_uni_crud** database in **MySQL Workbench** before you begin. 
-
-Download the database for Part 1 [here](https://videos.softuni.org/resources/java/java-mysql/soft_uni_database_crud.zip).
-
-
-[/slide]
-
-[slide hideTitle]
 # Problem: Find All Information About Departments 
 
-[code-task title="Find All Information About Departments " taskId="java-db-and-MySQL-basic-crud-find-info-about-departments" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Find All Information About Departments" taskId="java-db-and-MySQL-basic-crud-find-info-about-departments" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -24,13 +14,15 @@ Download the database for Part 1 [here](https://videos.softuni.org/resources/jav
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find **all available information about the departments in the SoftUni database**. 
 
 **Sort the information by id**. 
 
 ## Example
 
-| department_id | name | manager_id |
+| **department_id** | **name** | **manager_id** |
 | --- | --- | --- |
 | 1 | Engineering | 12 | 
 | 2 | Tool Design | 4 | 
@@ -228,11 +220,13 @@ Executive
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find **all department names**. **Sort** the information **by id**. 
 
 ## Example
 
-| name |
+| **name** |
 | --- |
 | Engineering |
 | Tool Design | 
@@ -3645,13 +3639,15 @@ Executive
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find the **first name**, **last name**, and **salary** of each employee.
 
 **Sort** the information **by id**. 
 
 ## Example
 
-| first_name | last_name | salary |
+| **first_name** | **last_name** | **salary** |
 | --- | --- | --- |
 | Guy | Gilbert | 12500.00  |
 | Kevin | Brown | 13500.00 |
@@ -8792,13 +8788,15 @@ Denchev
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find the **first**, **middle**, and **last** **name** of each employee.
 
 **Sort** the information **by id**. 
 
 ## Example
 
-| first_name | middle_name | last_name |
+| **first_name** | **middle_name** | **last_name** |
 | --- | --- | --- |
 | Guy | R | Gilbert |
 | Kevin | F | BrownTam|
@@ -13943,6 +13941,8 @@ Denchev
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find the email address of each employee. Consider that the email domain is softuni.bg. 
 
 Name the the resulting column as **full_email_address**. 
@@ -13953,7 +13953,7 @@ The emails should be in the following format: "John.Doe@softuni.bg".
 
 ## Example
 
-| full_email_address |
+| **full_email_address** |
 | --- |
 | Guy.Gilbert@softuni.bg |
 | Kevin.Brown@softuni.bg | 
@@ -17924,6 +17924,8 @@ George.Denchev@softuni.bg
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to **find all the unique salary values**. 
 
 Show only the salaries. 
@@ -17932,7 +17934,7 @@ Show only the salaries.
 
 ## Example
 
-| salary |
+| **salary** |
 | --- |
 | 12500.00 |
 | 13500.00 | 
@@ -19760,6 +19762,8 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find **all information** about employees whose **job title** is **Sales Representative**. 
 
 **Sort** the results **by id**. 
@@ -19767,7 +19771,7 @@ Write an SQL query to find **all information** about employees whose **job title
 
 ## Example
 
-| id | first_name | last_name | middle_name | job_title | dept_id | mngr_id | hire_date | salary | address_id |
+| **id** | **first_name** | **last_name** | **middle_name** | **job_title** | **dept_id** | **mngr_id** | **hire_date** | **salary** | **address_id** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 275  | Michael | Blythe | G | Sales Representative | 3 | 268 | ... | 23100.00 | 60 |
 | 276  | Linda | Mitchell | C | Sales Representative | 3 | 268 | ... | 23100.00 | 170 |
@@ -21760,6 +21764,8 @@ Sales Representative
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find the first name, last name, and job title of all employees whose salary is in the range [**20000**, **30000**]. 
 
 **Sort** the information **by id**. 
@@ -21767,7 +21773,7 @@ Write an SQL query to find the first name, last name, and job title of all emplo
 
 ## Example
 
-| first_name | last_name | job_title | 
+| **first_name** | **last_name** | **job_title** | 
 | --- | --- | --- |
 | Rob  | Walters | Senior Tool Designer | 
 | Thierry | D'Hers | Tool Designer | 
@@ -23760,6 +23766,8 @@ Production Technician
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find the **full name** of all employees **whose salary is 25000, 14000, 12500, or 23600**. 
 
 The **full name** is a **combination of first, middle, and last names** (separated by space). 
@@ -23770,7 +23778,7 @@ Call the resulting column **Full Name**.
 
 ## Example
 
-| Full Name |
+| **Full Name** |
 | --- |
 | Guy R Gilbert | 
 | Thierry B D'Hers |
@@ -23993,13 +24001,15 @@ Thierry B D'Hers
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find **the first and last names** of **all employees that do not have a manager**. 
 
 
 
 ## Example
 
-| first_name | last_name |
+| **first_name** |**last_name** |
 | --- | --- |
 | Ken | Sanchez |
 | Svetlin | Nakov |
@@ -25781,6 +25791,8 @@ Walters
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find the **first name**, **last name**, and the **salary** of all employees **who earn more than 50000**. 
 
 Order them in decreasing order by salary.
@@ -25788,7 +25800,7 @@ Order them in decreasing order by salary.
 
 ## Example
 
-| first_name | last_name | salary |
+| **first_name** | **last_name** | **salary** |
 | --- | --- | --- |
 | Ken | Sanchez | 125500.00 |
 | James | Hamilton | 84100.00 |
@@ -25966,6 +25978,8 @@ Gilbert
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find the **top 5 best-paid employees**. 
 
 Retrieve their **first and last name**, and **sort** the results **by salary in descending order**.
@@ -25974,7 +25988,7 @@ Retrieve their **first and last name**, and **sort** the results **by salary in 
 
 ## Example
 
-| first_name | last_name |
+| **first_name** | **last_name** |
 | --- | --- |
 | Ken | Sanchez |
 | James | Hamilton |
@@ -27805,13 +27819,15 @@ D'Hers
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find the **first and last names** of all employees **whose department ID is not equal to 4 (Marketing)**. 
 
 
 
 ## Example
 
-| first_name | last_name |
+| **first_name** | **last_name** |
 | --- | --- |
 | Guy | Gilbert |
 | Roberto | Tamburello |
@@ -30160,6 +30176,8 @@ D'Hers
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to sort all records in the **еmployees** table by the following criteria: 
 
 - First by **salary** in **decreasing** order
@@ -30174,7 +30192,7 @@ Write an SQL query to sort all records in the **еmployees** table by the follow
 
 ## Example
 
-| id | first_name | last_name | middle_name | job_title | dept_id |mngr_id | hire_date | salary | address_id |
+| **id** | **first_name** | **last_name** | **middle_name** | **job_title** | **dept_id** |**mngr_id** | **hire_date** | **salary** | **address_id** |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 109 | Ken | Sanchez | J | Chief Executive Officer | 16 | NULL | ... | 125500.00 | 177 |
 | 148 | James | Hamilton | R | Vice President of Production | 7 | 109 | ... | 84100.00 | 158 |
@@ -32438,13 +32456,15 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to create a view called **v_employees_salaries**.
 
 The view should include the **first name** , **last name**, and each employee's **salary**
 
 ## Example
 
-| first_name | last_name | salary |
+| **first_name** | **last_name** | **salary** |
 | --- | --- | --- |
 | Guy | Gilbert | 12500.00 |
 | Kevin | Brown | 13500.00 |
@@ -35920,13 +35940,15 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to create a view called **v_employees_job_titles** with **full employee name** and **job title**.
 
 If an employee's middle name is **NULL**, replace it with an **empty string ('')**.
 
 ## Example
 
-| full_name | job_title |
+| **full_name** | **job_title** |
 | --- | --- |
 | Guy R Gilbert | Production Technician |
 | Kevin F Brown | Marketing Assistant |
@@ -37145,13 +37167,15 @@ Independent Java Consultant
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find **all distinct job titles**.
 
 **Sort the result by job title alphabetically.**
 
 ## Example
 
-| job_title |
+| **job_title** |
 | --- |
 | Accountant |
 | Accounts Manager |
@@ -38978,6 +39002,8 @@ Marketing Assistant
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find the **first 10 projects that have already started**.
 
 Select **all information about them** and **sort** them **by start date**, **then by name**.
@@ -38986,7 +39012,7 @@ Select **all information about them** and **sort** them **by start date**, **the
 
 ## Example
 
-| id | Name | Description | start_date | end_date |
+| **id** | **Name** | **Description** | **start_date** | **end_date** |
 | --- | --- | --- | --- | --- |
 | 6 | HL Road Frame | Research, design and development of HL Road ... | 1998-05-02 00:00:00 | 2003-06-01 00:00:00 |
 | 2 | Cycling Cap | Research, design and development of C... | 2001-06-01 00:00:00 | 2003-06-01 00:00:00 |
@@ -40969,6 +40995,8 @@ Research, design and development of HL Mountain Frame. Each frame is hand-crafte
 [task-description]
 # Description
 
+Use the database that is called "**SoftUni Database**".
+
 Write an SQL query to find **the seven employees that were hired last**.
 
 Select **their first and last name as well as their hire date**.
@@ -40976,7 +41004,7 @@ Select **their first and last name as well as their hire date**.
 
 ## Example
 
-| first_name | last_name | hire_date |
+| **first_name** | **last_name** | **hire_date** |
 | --- | --- | --- |
 | Rachel | Valdez | 2005-07-01 00:00:00 |
 | Lynn | Tsoflias | 2005-07-01 00:00:00 |
@@ -42985,6 +43013,8 @@ Jovy
 
 [task-description]
 # Description
+
+Use the database that is called "**SoftUni Database**".
 
 Write an SQL query to increase the salaries of all employees that are in the **Engineering**, **Tool Design**, **Marketing**, or **Information Services** department by **12%**.
 
@@ -45295,15 +45325,6 @@ CREATE TABLE IF NOT EXISTS `towns` (
 [/code-task]
 [/slide]
 
-[slide hideTitle]
-# Part 2 - Queries for the Geography Database
-
-For part 2, run the provided sql code to create the **geography_crud** database in **MySQL Workbench** before you begin. 
-
-Download the database for part 2 [here](https://videos.softuni.org/resources/java/java-mysql/geography_database_crud.zip).
-
-
-[/slide]
 
 [slide hideTitle]
 # Problem: All Mountain Peaks 
@@ -45320,13 +45341,15 @@ Download the database for part 2 [here](https://videos.softuni.org/resources/jav
 [task-description]
 # Description
 
+Use the database that is called "**Geography Database**".
+
 Display all **mountain peaks** in alphabetical order.
 
 
 
 ## Example
 
-| peak_name |
+| **peak_name** |
 | --- |
 | Aconcagua |
 | Banski Suhodol |
@@ -46404,7 +46427,13 @@ Elbrus
 [task-description]
 # Description
 
-Find the **30 biggest countries** by **population** from **Europe**. Display the **country name** and **population**. Sort the results by **population** (from biggest to smallest), **then by** country **alphabetically**.
+Use the database that is called "**Geography Database**".
+
+Find the **30 biggest countries** by **population** from **Europe**. 
+
+Display the **country name** and **population**. 
+
+Sort the results by **population** (from biggest to smallest), **then by** country **alphabetically**.
 
 
 ## Example
@@ -47859,17 +47888,19 @@ zc
 [task-description]
 # Description
 
+Use the database that is called "**Geography Database**".
+
 Find all countries along with information about their currency. 
 
 Display the **country name**, **country code**, its **currency**: either **Euro** or **Not Euro**. 
 
-**Sort the results by country name alphabetically. **
+**Sort the results by country name alphabetically.**
 
 
 
 ## Example
 
-| country_name | country_code | currency |
+| **country_name** | **country_code** | **currency** |
 | --- | --- | --- |
 | Afghanistan | AF | Not Euro |
 | Åland | AX | Euro |
@@ -49641,16 +49672,6 @@ Euro
 [/code-task]
 [/slide]
 
-
-[slide hideTitle]
-# Part 3 - Queries for the Diablo Database
-
-For part 3, run the provided sql code to create the **diablo_crud** database in **MySQL Workbench** before you begin. 
-
-Download the database for part 3 [here](https://videos.softuni.org/resources/java/java-mysql/diablo_database_crud.zip).
-
-[/slide]
-
 [slide hideTitle]
 # Problem: All Diablo Characters 
 
@@ -49665,6 +49686,8 @@ Download the database for part 3 [here](https://videos.softuni.org/resources/jav
 
 [task-description]
 # Description
+
+Use the database that is called "**Diablo Database**".
 
 Display the **name** of all **character classes** in **alphabetical order**.
 

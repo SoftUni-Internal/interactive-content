@@ -202,7 +202,7 @@ Then select all the records from the **employees** table and **order the results
 
 ## Example
 
-| id | first_name | last_name | job_title | department_id | salary |
+| **id** | **first_name** | **last_name** | **job_title** | **department_id** | **salary** |
 | --- | --- | --- | --- | --- | --- |
 | 3 | Samuel | Bridges | Porter | 4 | 1100 |
 | 6 | Edwin | Young | Waiter | 3 | 990 |

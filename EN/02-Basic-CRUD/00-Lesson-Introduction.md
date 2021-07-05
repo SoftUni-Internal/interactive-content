@@ -24,19 +24,12 @@
 
 ## Lab problems
 
-Delete when change the link: Here is a [link](https://videos.softuni.org/resources/java/java-mysql/hotel_db_Lab.zip) to the resources for this task.
-
-|**Problem Name**|**Database**|
-|---|---|
-|Select Employee Information|[Hotel Database]()|
-|Select Employees with Filter|Hotel Database|
-|Update Employees’ Salary|Hotel Database|
-|Top Paid Employee|Hotel Database|
-|Select Employees by Multiple Criteria|Hotel Database|
-|Delete from Table|Hotel Database|
+For all **lab problems** use the [Hotel Database](https://videos.softuni.org/resources/java/java-mysql/hotel_db_Lab.zip).
 
 ## Homework
 
-For problems from "**Employees with Salary Above 35000**" to "**Define a Function**" (inclusively), use the [SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/bank_db_database_programmability_homework.zip) database, and for the others - use [Bank Database](https://videos.softuni.org/resources/java/java-mysql/bank_db_database_programmability_homework.zip).
+For problems from "**Find All Information About Departments**" to "**Increase Salaries**" (inclusively), use the [SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/soft_uni_database_crud.zip).
+
+For problems from "**All Mountain Peaks**" to "**Countries and Currency (Euro / Not Euro)**" (inclusively), use the [Geography Database](https://videos.softuni.org/resources/java/java-mysql/geography_database_crud.zip), and for the "**All Diablo Characters**" problem - use [Diablo Database](https://videos.softuni.org/resources/java/java-mysql/diablo_database_crud.zip).
 
 [/slide]

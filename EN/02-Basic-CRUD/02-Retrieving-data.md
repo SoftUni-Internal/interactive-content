@@ -64,9 +64,7 @@ We will learn how to do this in the next lesson, for now just note that there is
 [task-description]
 # Description
 
-Here is a [link](https://videos.softuni.org/resources/java/java-mysql/hotel_db_Lab.zip) to the resources for this task.
-
-Familiarize yourself with **the Hotel Database**.
+Familiarize yourself with the **Hotel Database**.
 
 Write a query to select all employees and retrieve information about their **id**, **first_name**, **last_name** and **job_title** ordered by **id**.
 
