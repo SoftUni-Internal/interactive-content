@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 # Problem: Employee Summary
-[code-task title="Employee Summary" taskId="java-db-and-MySQL-subqueries-and-JOINs-employee-summary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+[code-task title="Employee Summary" taskId="java-db-and-MySQL-subqueries-and-JOINs-employee-summary-123" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
