@@ -62,7 +62,7 @@ It is stored in one place, while the table data is stored in another.
 
 Each **key value entry** has a pointer to the data row that contains the key value.
 
-This is similar to a textbook where the book content is located in one place and the index is located in another.
+This is similar to a textbook, where the book content is located in one place, and the index is located in another.
 
 This index is useful for fast retrieving a **single record** or a **range** of records.
 
