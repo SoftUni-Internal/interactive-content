@@ -98,7 +98,7 @@ Write an SQL query to find **books which titles begin with "The".**
 
 ## Example
 
-| Title |
+| **Title** |
 | --- |
 | The Mysterious Affair at Styles |
 | The Big Four |
@@ -361,7 +361,7 @@ Write an SQL query that finds **books which titles start with "The".**
 
 ## Example
 
-| Title |
+| **Title** |
 | --- |
 | \*\*\* Mysterious Affair at Styles |
 | \*\*\* Big Four |

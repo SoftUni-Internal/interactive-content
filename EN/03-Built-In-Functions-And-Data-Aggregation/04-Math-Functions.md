@@ -8,7 +8,7 @@ It returns a value as the result of the operation.
 
 Here is the table of **supported arithmetic operators:**
 
-| Name | Description |
+| **Name** | **Description** |
 | --- | --- |
 | DIV | Integer division |
 | / | Division operator |

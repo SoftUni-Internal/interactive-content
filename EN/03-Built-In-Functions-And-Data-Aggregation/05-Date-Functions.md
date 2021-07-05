@@ -94,7 +94,7 @@ Write an SQL query to **calculate** the **lifetimes** of the authors, in **days*
 
 ## Example
 
-| Full Name | Days Lived |
+| **Full Name** | **Days Lived** |
 | --- | --- |
 | Agatha Christie | 31164 |
 | William Shakespeare | 18990 |

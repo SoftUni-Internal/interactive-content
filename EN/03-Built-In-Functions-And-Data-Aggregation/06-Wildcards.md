@@ -74,7 +74,7 @@ Write an SQL query to retrieve the titles of all Harry Potter books.
 
 ## Example
 
-| title |
+| **title** |
 | --- |
 | Harry Potter and the Philosopher's Stone |
 | Harry Potter and the Chamber of Secrets |

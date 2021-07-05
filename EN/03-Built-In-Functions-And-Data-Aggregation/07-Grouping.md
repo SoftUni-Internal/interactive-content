@@ -56,7 +56,7 @@ See the examples for more information.
 
 ## Example
 
-| category_id | Average Price | Cheapest Product | Most Expensive Product |
+| **category_id** | **Average Price** | **Cheapest Product** | **Most Expensive Product** |
 |---|---|---|---|
 | 1 | 7.49 | 6.79 | 8.79 |
 | 2 | 10.93 | 7.99 | 14.89 |
