@@ -295,7 +295,6 @@ Create a regular expression that matches all **integer** and **floating-point nu
 
 Print the valid numbers out, separated by a **single space**.
 
-## Compose the Regular Expressions
 
 A number has the following characteristics:
 
