@@ -255,14 +255,14 @@ După aceea, veți primi un **nume de oraș**.
 ### Ieșire
 
 Imprimați numai studenții care sunt din orașul dat, în următorul format:
-"\{**firstName**\} \{**lastName**\} **is** \{**age**\} **years old.**"
+"\{**firstName**\} \{**lastName**\} **is** \{**age**\} **years old**"
 
 ## Exemple
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| Anthony Taylor 15 Chicago | Anthony Taylor is 15 years old. |
-| David Anderson 16 Washington | Jack Lewis is 14 years old. |
-| Jack Lewis 14 Chicago | David Lee is 14 years old. |
+| Anthony Taylor 15 Chicago | Anthony Taylor is 15 years old |
+| David Anderson 16 Washington | Jack Lewis is 14 years old |
+| Jack Lewis 14 Chicago | David Lee is 14 years old |
 | David Lee 14 Chicago | |
 | end | |
 | Chicago | |
@@ -400,8 +400,8 @@ Dacă primiți un student care există deja (numele întreg trebuie să fie **un
 
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| John Smith 15 Sofia | John Smith is 16 years old. |
-| John Smith 16 Sofia | Linda Bridge is 17 years old. |
+| John Smith 15 Sofia | John Smith is 16 years old |
+| John Smith 16 Sofia | Linda Bridge is 17 years old |
 | Linda Bridge 17 Sofia | |
 | Simon Stone 12 Varna | |
 | end | |
