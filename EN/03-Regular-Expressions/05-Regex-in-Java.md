@@ -308,11 +308,7 @@ A number has the following characteristics:
 
 - The decimal part (if it exists) consists of a period `(".")` and **one or more digits** after it. Use a **capturing group**
 
-- Has either **whitespace** before it or the **end** of the string (match either `$` or what's called a positive lookahead). The syntax for the **end** of the **RegEx** might look something like `($|(?=\s))`.
-
-Let's see how we would translate the above rules into a **regular expression**:
-
-
+- Has either **whitespace** before it or the **end** of the string (match either `$` or what's called a positive lookahead). The syntax for the **end** of the **RegEx** might look something like `($|(?=\s))`
 
 ## Examples
 | **Input** | **Output** |
