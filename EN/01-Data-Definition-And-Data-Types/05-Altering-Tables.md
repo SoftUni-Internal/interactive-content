@@ -105,7 +105,7 @@ CREATE TABLE IF NOT EXISTS employees(
 ## Description
 Altering the tables is done via the "**ALTER TABLE**" clause. 
 
-Add a new column – "**middle_name**" to the "**employees**" table. 
+Add a new column - "**middle_name**" to the "**employees**" table. 
 
 [/task-description]
 [code-io /]

@@ -6,10 +6,10 @@
 
 We can manage databases with **MySQL Workbench** which will allow us to:
 
-- create new databases
-- create objects in the database (tables, stored procedures, relationships, and others)
-- change properties of an object
-- enter records into tables
+- Create new databases
+- Create objects in the database (tables, stored procedures, relationships, and others)
+- Change properties of an object
+- Enter records into tables
 
 [/slide]
 
@@ -35,7 +35,7 @@ A **Primary Key** is used to uniquely identify and index records.
 
 [image assetsSrc="Data-Definition-And-Data-Types(6).png" /]
 
-Auto increment – on the "Default" field.
+Auto increment - on the "Default" field.
 
 [image assetsSrc="Data-Definition-And-Data-Types(7).png" /]
 

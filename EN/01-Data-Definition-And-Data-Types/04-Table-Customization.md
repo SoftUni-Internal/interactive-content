@@ -116,25 +116,25 @@ When we create tables, we specify which database we want to add them to. This is
 
 `"employees":`
 
-- id – **INT, primary key, AUTO_INCREMENT;**
-- first_name – **VARCHAR, NOT NULL;**
-- last_name – **VARCHAR, NOT NULL;**  
+- id - **INT, primary key, AUTO_INCREMENT;**
+- first_name - **VARCHAR, NOT NULL;**
+- last_name - **VARCHAR, NOT NULL;**  
 
 Create the "**categories**" and "**products**" tables analogically:
 
 `"categories":`
 
-- id – **INT, primary key, AUTO_INCREMENT;**
+- id - **INT, primary key, AUTO_INCREMENT;**
 
-- name – **VARCHAR, NOT NULL;** 
+- name - **VARCHAR, NOT NULL;** 
 
 `"products":`
 
-- id –  **INT, primary key, AUTO_INCREMENT;**
+- id -  **INT, primary key, AUTO_INCREMENT;**
 
-- name – **VARCHAR, NOT NULL;** 
+- name - **VARCHAR, NOT NULL;** 
 
-- category_id – **INT, NOT NULL** – it is not a foreign key for now.
+- category_id - **INT, NOT NULL** - it is not a foreign key for now.
 
 
 

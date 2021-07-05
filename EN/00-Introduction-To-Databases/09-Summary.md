@@ -23,12 +23,12 @@
 ## In the next lesson you will learn:
 
 - Data Types in MySQL
-    - What the correct data type is for every situation
+    - what the correct data type is for every situation
 - Database Modeling
 - Basic SQL Queries
-    - Communicating with the database
+    - communicating with the database
 - Table Customization
-    - Declaring tables and table constraint definition
+    - declaring tables and table constraint definition
 - Altering Tables
 - Deleting Data and Structures
  

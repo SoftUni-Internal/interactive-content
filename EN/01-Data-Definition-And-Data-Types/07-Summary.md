@@ -17,7 +17,7 @@
 - How to model databases using MySQL Workbench
 
 - SQL Queries
-    - Table creation:
+    - table creation:
     ```Java
     CREATE TABLE `people`
     (`id` INT NOT NULL,
@@ -26,13 +26,13 @@
     `last_name` VARCHAR(50)
     );
     ```
-    - Selecting all records:
+    - selecting all records:
 
     ```Java
     SELECT * FROM `people`
     ```
 
-    - Inserting records:
+    - inserting records:
     ```Java
     INSERT INTO [TABLE_NAME] (column1, column2, column3, column...)
     VALUES (value1, value2, value3, value...);

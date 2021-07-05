@@ -17,29 +17,29 @@ The **SoftUniStoresSystem** needs to hold information about **stores, products, 
 
 Your task is to create a database called **softuni_stores_system**. Then you will have to create several **tables**.
 
--	**stores** – contains information about the **stores**.
+-	**stores** - contains information about the **stores**.
     -	**Each store has a name, rating, has parking and relation with addresses**.
 
--	**products** – contains information about the **products**.
+-	**products** - contains information about the **products**.
     -	**Each product has a name, best before, price, description** and has 
         relations with **categories** and **pictures**.
 
--	**products_stores** – a **many** to **many mapping** table between the **products** and the **stores**.
+-	**products_stores** - a **many** to **many mapping** table between the **products** and the **stores**.
     -	Has a **composite primary key** from **product_id** and **store_id** 
 
--	**employees** – contains information about the **employees**.
+-	**employees** - contains information about the **employees**.
     -	**Each employee has first name, middle name, last name, salary and have relations with stores and with self**.
 
--	**addresses** – contains information about the **addresses** of stores.
+-	**addresses** - contains information about the **addresses** of stores.
     -	Each **address has name and relation with towns**.
 
 -	**towns** - contains information about the **towns**.
     -	**Each town has a name**.
 
--	**categories** – contains information about the **categories**.
+-	**categories** - contains information about the **categories**.
     -	**Each category has a name**.
 
--	**pictures** – contains information about the **pictures**.
+-	**pictures** - contains information about the **pictures**.
     -	**Each picture has a name and date and time when is added on**.
 
 [/slide]
@@ -129,7 +129,7 @@ Your task is to create a database called **softuni_stores_system**. Then you wil
 
 [slide hideTitle]
 # Problem: Table Design - 13pts
-[code-task title="Problem: Table Design – 13pts" taskId="1b216b03-738f-43ab-a7d4-4ef1c91d6938" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Problem: Table Design - 13pts" taskId="1b216b03-738f-43ab-a7d4-4ef1c91d6938" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```
 import java.util.*;

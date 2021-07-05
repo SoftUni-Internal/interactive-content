@@ -9289,7 +9289,7 @@ INSERT INTO `account_holders` (`id`, `first_name`, `last_name`, `ssn`) VALUES
 
 Use the database that is called "**Bank Database**".
 
-Create another table – logs(log_id, account_id, old_sum, new_sum). Add a trigger to the accounts table that adds a new entry to the logs table every time the sum on the given account changes.
+Create another table - logs(log_id, account_id, old_sum, new_sum). Add a trigger to the accounts table that adds a new entry to the logs table every time the sum on the given account changes.
 
 
 ## Examples

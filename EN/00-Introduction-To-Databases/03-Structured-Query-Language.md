@@ -74,8 +74,8 @@ The **Data Definition** section specifies:
 - The integrity constraint, which makes sure that any changes made to the database will not affect the consistency of the data
 
 It maintains:
-- the set of indices for each relation and lets you retrieve the records from the database quickly
-- the information about the security of data in the database while keeping the information regarding the authorization for each relation in the database
+- The set of indices for each relation and lets you retrieve the records from the database quickly
+- The information about the security of data in the database while keeping the information regarding the authorization for each relation in the database
 
 It also describes the **storage structure** of each relation on the hard disk.
 

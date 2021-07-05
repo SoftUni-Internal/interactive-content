@@ -433,7 +433,7 @@ Order the results by the **reversed name of the store in ascending order**, then
 
 -	**products_count**
 
--	**newest_pic – in a specific format**
+-	**newest_pic - in a specific format**
 
 **Submit your output to the Judge system from the following sql querie:**
 

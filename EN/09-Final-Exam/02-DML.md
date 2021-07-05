@@ -33,9 +33,9 @@ For every product saved -> **product_id** and **1(one)** as a **store_id**.
 
 And now this product will be offered in store with name **Wrapsafe** and **id 1**.
 
--	**product_id** – id of product
+-	**product_id** - id of product
 
--	**store_id** – set it to be 1 for all products.
+-	**store_id** - set it to be 1 for all products.
 
 
 **Submit your output to the Judge system from the following sql querie:**

@@ -538,8 +538,8 @@ WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'towns');
 
 [slide hideTitle]
 
-# Problem: Create A Table Called "People"
-[code-task title="Create A Table Called People" taskId="mysql-data-definitions-and-data-types-create-a-table-called-people" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
+# Problem: Create a Table Called "People"
+[code-task title="Create a Table Called People" taskId="mysql-data-definitions-and-data-types-create-a-table-called-people" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
@@ -549,14 +549,14 @@ WHERE (TABLE_SCHEMA = database()) AND (TABLE_NAME = 'towns');
 ## Description
 
 Using **SQL queries** create table "**people**" with columns:
-- **id** – unique number for every person, there will be **no more than 2^31 - 1 people**. (Auto incremented)
-- **name** – the full name of the person will be **no longer than 200 Unicode characters**. (Not null)
-- **picture** – image with **size up to 2 MB**. (Allow nulls)
-- **height** –  In meters. Real number precise up to **2 digits** after the floating point. (Allow nulls)
-- **weight** –  In kilograms. Real number precise up to **2 digits** after the floating point. (Allow nulls)
-- **gender** – Possible values are **m** or **f**. (Not null)
-- **birthdate** – (Not null)
-- **biography** – detailed biography of the person, it can contain the **max allowed Unicode characters**. (Allow nulls)
+- **id** - unique number for every person, there will be **no more than 2^31 - 1 people**. (Auto incremented)
+- **name** - the full name of the person will be **no longer than 200 Unicode characters**. (Not null)
+- **picture** - image with **size up to 2 MB**. (Allow nulls)
+- **height** -  In meters. Real number precise up to **2 digits** after the floating point. (Allow nulls)
+- **weight** -  In kilograms. Real number precise up to **2 digits** after the floating point. (Allow nulls)
+- **gender** - Possible values are **m** or **f**. (Not null)
+- **birthdate** - (Not null)
+- **biography** - detailed biography of the person, it can contain the **max allowed Unicode characters**. (Allow nulls)
 
 Make **id** primary key. Populate the table with **5 records**.  
 
@@ -743,12 +743,12 @@ select count(id) from people;
 ## Description
 Using **SQL queries** create table **users** with columns:
 
-- **id** – unique number for every user. There will be **no more than 2^63 - 1 users**. (Auto incremented)
-- **username** – unique identifier of the user, will be **no more than 30 characters long (non Unicode)**. (Required)
-- **password** – **no longer than 26 characters (non Unicode)**. (Required)
-- **profile_picture** – image with a **size up to 900 KB**. 
+- **id** - unique number for every user. There will be **no more than 2^63 - 1 users**. (Auto incremented)
+- **username** - unique identifier of the user, will be **no more than 30 characters long (non Unicode)**. (Required)
+- **password** - **no longer than 26 characters (non Unicode)**. (Required)
+- **profile_picture** - image with a **size up to 900 KB**. 
 - **last_login_time**
-- **is_deleted** – shows if the user deleted his/her profile. Possible states are **true** or **false**.
+- **is_deleted** - shows if the user deleted his/her profile. Possible states are **true** or **false**.
 
 Make **id** primary key. Populate the table with **5 records**.
 
@@ -2343,11 +2343,11 @@ Intern
 
 Modify the queries from the previous problem to show only **some of the columns**, as follows: 
 
-- **towns** – **name** 
+- **towns** - **name** 
 
-- **departments** – **name** 
+- **departments** - **name** 
 
-- **employees** – **first_name**, **last_name**, **job_title**, **salary**  
+- **employees** - **first_name**, **last_name**, **job_title**, **salary**  
 
 [/task-description]
 [code-io /]

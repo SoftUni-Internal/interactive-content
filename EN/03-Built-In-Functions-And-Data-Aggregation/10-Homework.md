@@ -23427,7 +23427,7 @@ INSERT INTO `games` (`id`, `name`, `start`, `duration`, `game_type_id`, `is_fini
 	(36, 'Japhette orchid', '2011-11-09 16:50:00.000000', 1, 1, b'0'),
 	(37, 'Kangaroo paw yellow', '2010-10-30 17:19:00.000000', 3, 5, b'0'),
 	(38, 'Lace fern', '2015-03-18 18:35:00.000000', 7, 4, b'0'),
-	(39, 'Lily of the Nile – Alba', '2013-07-07 18:54:00.000000', 9, 4, b'0'),
+	(39, 'Lily of the Nile - Alba', '2013-07-07 18:54:00.000000', 9, 4, b'0'),
 	(40, 'Lumex', '2012-07-02 17:28:00.000000', 2, 5, b'0'),
 	(41, 'Larkspur pink', '2014-03-05 14:11:00.000000', 2, 3, b'0'),
 	(42, 'Lily of the valley', '2014-12-27 07:34:00.000000', 7, 4, b'1'),
@@ -28369,7 +28369,7 @@ INSERT INTO `games` (`id`, `name`, `start`, `duration`, `game_type_id`, `is_fini
 	(36, 'Japhette orchid', '2011-11-09 16:50:00.000000', 1, 1, b'0'),
 	(37, 'Kangaroo paw yellow', '2010-10-30 17:19:00.000000', 3, 5, b'0'),
 	(38, 'Lace fern', '2015-03-18 18:35:00.000000', 7, 4, b'0'),
-	(39, 'Lily of the Nile – Alba', '2013-07-07 18:54:00.000000', 9, 4, b'0'),
+	(39, 'Lily of the Nile - Alba', '2013-07-07 18:54:00.000000', 9, 4, b'0'),
 	(40, 'Lumex', '2012-07-02 17:28:00.000000', 2, 5, b'0'),
 	(41, 'Larkspur pink', '2014-03-05 14:11:00.000000', 2, 3, b'0'),
 	(42, 'Lily of the valley', '2014-12-27 07:34:00.000000', 7, 4, b'1'),
@@ -32986,7 +32986,7 @@ INSERT INTO `games` (`id`, `name`, `start`, `duration`, `game_type_id`, `is_fini
 	(36, 'Japhette orchid', '2011-11-09 16:50:00.000000', 1, 1, b'0'),
 	(37, 'Kangaroo paw yellow', '2010-10-30 17:19:00.000000', 3, 5, b'0'),
 	(38, 'Lace fern', '2015-03-18 18:35:00.000000', 7, 4, b'0'),
-	(39, 'Lily of the Nile – Alba', '2013-07-07 18:54:00.000000', 9, 4, b'0'),
+	(39, 'Lily of the Nile - Alba', '2013-07-07 18:54:00.000000', 9, 4, b'0'),
 	(40, 'Lumex', '2012-07-02 17:28:00.000000', 2, 5, b'0'),
 	(41, 'Larkspur pink', '2014-03-05 14:11:00.000000', 2, 3, b'0'),
 	(42, 'Lily of the valley', '2014-12-27 07:34:00.000000', 7, 4, b'1'),
@@ -37787,7 +37787,7 @@ INSERT INTO `games` (`id`, `name`, `start`, `duration`, `game_type_id`, `is_fini
 	(36, 'Japhette orchid', '2011-11-09 16:50:00.000000', 1, 1, b'0'),
 	(37, 'Kangaroo paw yellow', '2010-10-30 17:19:00.000000', 3, 5, b'0'),
 	(38, 'Lace fern', '2015-03-18 18:35:00.000000', 7, 4, b'0'),
-	(39, 'Lily of the Nile – Alba', '2013-07-07 18:54:00.000000', 9, 4, b'0'),
+	(39, 'Lily of the Nile - Alba', '2013-07-07 18:54:00.000000', 9, 4, b'0'),
 	(40, 'Lumex', '2012-07-02 17:28:00.000000', 2, 5, b'0'),
 	(41, 'Larkspur pink', '2014-03-05 14:11:00.000000', 2, 3, b'0'),
 	(42, 'Lily of the valley', '2014-12-27 07:34:00.000000', 7, 4, b'1'),
@@ -41893,7 +41893,7 @@ Extra Short
 Lace fern
 Evening
 Long
-Lily of the Nile – Alba
+Lily of the Nile - Alba
 Evening
 Long
 Lumex
