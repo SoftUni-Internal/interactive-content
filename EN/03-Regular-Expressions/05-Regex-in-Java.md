@@ -295,7 +295,6 @@ Create a regular expression that matches all **integer** and **floating-point nu
 
 Print the valid numbers out, separated by a **single space**.
 
-## Compose the Regular Expressions
 
 A number has the following characteristics:
 
@@ -309,11 +308,7 @@ A number has the following characteristics:
 
 - The decimal part (if it exists) consists of a period `(".")` and **one or more digits** after it. Use a **capturing group**
 
-- Has either **whitespace** before it or the **end** of the string (match either `$` or what's called a positive lookahead). The syntax for the **end** of the **RegEx** might look something like `($|(?=\s))`.
-
-Let's see how we would translate the above rules into a **regular expression**:
-
-
+- Has either **whitespace** before it or the **end** of the string (match either `$` or what's called a positive lookahead). The syntax for the **end** of the **RegEx** might look something like `($|(?=\s))`
 
 ## Examples
 | **Input** | **Output** |
@@ -335,7 +330,7 @@ Instead, we'll use a **positive lookbehind**, which **matches** if there’s som
 [/hint]
 
 [hint]
-- Next, we'll check whether there's a **hyphen**, signifying a **negative number**:
+Next, we'll check whether there's a **hyphen**, signifying a **negative number**:
 
 [image assetsSrc="Regex(1).png" /]
 [/hint]
@@ -355,7 +350,7 @@ Next, we'll match the **decimal** part of the number, which **might or might not
 [/hint]
 
 [hint]
-- Finally, we’re going to use the same logic for the end of our string as the start – we’re going to match **only** if the number has **either a whitespace or the end of the string** `("$")`:
+Finally, we’re going to use the same logic for the end of our string as the start – we’re going to match **only** if the number has **either a whitespace or the end of the string** `("$")`:
 
 [image assetsSrc="Regex(4).png" /]
 [/hint]
