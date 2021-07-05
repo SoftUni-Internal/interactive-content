@@ -335,7 +335,7 @@ Instead, we'll use a **positive lookbehind**, which **matches** if there’s som
 [/hint]
 
 [hint]
-- Next, we'll check whether there's a **hyphen**, signifying a **negative number**:
+Next, we'll check whether there's a **hyphen**, signifying a **negative number**:
 
 [image assetsSrc="Regex(1).png" /]
 [/hint]
