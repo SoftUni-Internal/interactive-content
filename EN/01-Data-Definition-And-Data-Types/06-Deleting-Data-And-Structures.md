@@ -9,24 +9,25 @@ You can drop **keys**, **constraints**, **tables** and **entire databases**.
 
 Deleting all data in a table is called **truncating**.
 
-Both of these actions cannot be **undone** so use with caution!
-
+Both of these actions cannot be **reversed**, so use with caution.
 
 ## Dropping and Truncating
 
-To delete all the entries in a table:
+These are some examples of deleting data in a database:
+
+- Deleting all the entries in a table
 
 ```Java
 TRUNCATE TABLE `employees`; 
 ```
 
-To drop a table - delete data and structure:
+- Dropping a table
 
 ```Java
 DROP TABLE `employees`;
 ```
 
-To drop the entire databases:
+- Dropping an entire database
 
 ```Java
 DROP DATABASE `soft_uni`; 
@@ -34,16 +35,16 @@ DROP DATABASE `soft_uni`;
 
 ## Removing Constraints
 
-To remove a constraining rule from a column such as **primary key constraints**, **value constraints**, and **unique fields**:
+Follow the next example if you want to remove a constraining rule from a column such as **primary key constraints**, **value constraints**, and **unique fields**:
 
 ```Java
 ALTER TABLE `employees`
 DROP CONSTRAINT `pk_id`; 
 ```
 
-Here is where the naming of the constraints is important as you need to know the exact name of the constraint in order to drop it.
+The naming of the constraints is important as you need to know the exact name of the constraint in order to drop it.
 
-If you remove the DEFAULT value, the default value will revert to **NULL** (if the column is nullable).
+If you remove the `DEFAULT` value, it will revert to `NULL` (if the column is nullable).
 
 ```Java
 ALTER TABLE `employees` 
@@ -51,7 +52,6 @@ ALTER COLUMN `clients`
 DROP DEFAULT;
 ```
 
-The above query alters the **employees** table and targets the **clients** column, removing the **DEFAULT** constraint from it.
-
+The above query alters the `employees` table and targets the `clients` column, removing the `DEFAULT` constraint from it.
 
 [/slide]
