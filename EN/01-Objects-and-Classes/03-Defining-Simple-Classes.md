@@ -252,14 +252,14 @@ After that, you will receive a **city name**.
 ### Output
 
 Print the students which are from the given city in the following format: 
-"\{firstName\} \{lastName\} is \{age\} years old".
+"\{firstName\} \{lastName\} is \{age\} years old.".
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
-| Anthony Taylor 15 Chicago | Anthony Taylor is 15 years old |
-| David Anderson 16 Washington | Jack Lewis is 14 years old |
-| Jack Lewis 14 Chicago | David Lee is 14 years old |
+| Anthony Taylor 15 Chicago | Anthony Taylor is 15 years old. |
+| David Anderson 16 Washington | Jack Lewis is 14 years old. |
+| Jack Lewis 14 Chicago | David Lee is 14 years old. |
 | David Lee 14 Chicago | |
 | end | |
 | Chicago | |
@@ -278,8 +278,8 @@ end
 Sofia
 [/input]
 [output]
-John Smith is 15 years old
-Linda Bridge is 16 years old
+John Smith is 15 years old.
+Linda Bridge is 16 years old.
 [/output]
 [/test]
 [test open]
@@ -292,9 +292,9 @@ end
 Chicago
 [/input]
 [output]
-Anthony Taylor is 15 years old
-Jack Lewis is 14 years old
-David Lee is 14 years old
+Anthony Taylor is 15 years old.
+Jack Lewis is 14 years old.
+David Lee is 14 years old.
 [/output]
 [/test]
 [test]
@@ -307,9 +307,9 @@ end
 varna
 [/input]
 [output]
-Anthony Taylor is 13 years old
-Jack L is 16 years old
-David Lee is 17 years old
+Anthony Taylor is 13 years old.
+Jack L is 16 years old.
+David Lee is 17 years old.
 [/output]
 [/test]
 [test]
@@ -322,8 +322,8 @@ end
 b
 [/input]
 [output]
-David A is 14 years old
-David Lee is 17 years old
+David A is 14 years old.
+David Lee is 17 years old.
 [/output]
 [/test]
 [test]
@@ -337,7 +337,7 @@ end
 c
 [/input]
 [output]
-N m is 21 years old
+N m is 21 years old.
 [/output]
 [/test]
 [test]
@@ -351,11 +351,11 @@ end
 v
 [/input]
 [output]
-T T is 13 years old
-b Aa is 14 years old
-N m is 21 years old
-Jack L is 16 years old
-David Lee is 17 years old
+T T is 13 years old.
+b Aa is 14 years old.
+N m is 21 years old.
+Jack L is 16 years old.
+David Lee is 17 years old.
 [/output]
 [/test]
 [test]
@@ -369,9 +369,9 @@ end
 e
 [/input]
 [output]
-b Aa is 14 years old
-Jack L is 18 years old
-Port Lee is 14 years old
+b Aa is 14 years old.
+Jack L is 18 years old.
+Port Lee is 14 years old.
 [/output]
 [/test]
 [/tests]
@@ -395,8 +395,8 @@ If you receive a student who already exists, save the information about them.
 
 | **Input** | **Output** |
 | --- | --- |
-| John Smith 15 Sofia | John Smith is 16 years old |
-| John Smith 16 Sofia | Linda Bridge is 17 years old |
+| John Smith 15 Sofia | John Smith is 16 years old. |
+| John Smith 16 Sofia | Linda Bridge is 17 years old. |
 | Linda Bridge 17 Sofia | |
 | Simon Stone 12 Varna | |
 | end | |
@@ -416,8 +416,8 @@ end
 Sofia
 [/input]
 [output]
-John Smith is 16 years old
-Linda Bridge is 17 years old
+John Smith is 16 years old.
+Linda Bridge is 17 years old.
 [/output]
 [/test]
 [test]
@@ -431,9 +431,9 @@ end
 Sofia
 [/input]
 [output]
-John Smith is 15 years old
-Peter Ivanov is 14 years old
-Linda Bridge is 16 years old
+John Smith is 15 years old.
+Peter Ivanov is 14 years old.
+Linda Bridge is 16 years old.
 [/output]
 [/test]
 [test]
@@ -448,8 +448,8 @@ end
 Varna
 [/input]
 [output]
-Simon Stone is 12 years old
-Simon Sone is 12 years old
+Simon Stone is 12 years old.
+Simon Sone is 12 years old.
 [/output]
 [/test]
 [test]
@@ -464,9 +464,9 @@ end
 S
 [/input]
 [output]
-J S is 3 years old
-P J is 104 years old
-J P is 61 years old
+J S is 3 years old.
+P J is 104 years old.
+J P is 61 years old.
 [/output]
 [/test]
 [/tests]
