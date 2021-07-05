@@ -40,15 +40,7 @@ Găsiți studentul cu **cele mai multe puncte bonus** și tipăriți **punctele 
 
 La final, rotunjiți punctele bonus în sus la **următorul număr întreg**.
 
-### Intrare / Constrângeri
-
-- Pe **prima linie** veți primi numărul de studenți - un număr întreg în intervalul \[0...50\]
-
-- Pe **a doua linie** veți primi numărul de prelegeri - un număr întreg în intervalul \[0...50\]
-
-- Pe **a treia linie** veți primi **bonusul inițial** - un număr întreg în intervalul \[0...100\]
-
-- **În următoarele rânduri** veți primi numărul de **prezențe ale fiecărui student**
+### Constrângeri
 
 - Nu vor fi **studenți cu aceeași valoare finală de puncte bonus**
 
