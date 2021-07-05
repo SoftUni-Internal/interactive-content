@@ -10,11 +10,9 @@
 `id` INT NOT NULL PRIMARY KEY // PRIMARY KEY is a column property
 ```
 
-The primary key is a field that is used for identifying each record. 
+The primary key is a field that is used for identifying and retrieving each record.
 
-Each record can have a primary key attached to it, used for indexing and retrieving the record.
-
-For example, each product in a database can have its own unique ID and you can retrieve product details by it to display on some page.
+For example, each product in a database can have its own unique ID, and you can use it to retreive details about that product.
 
 Not every table needs to have a primary key.
 
@@ -24,9 +22,9 @@ Not every table needs to have a primary key.
 `id` INT AUTO_INCREMENT PRIMARY KEY // Auto-Increment PRIMARY KEY
 ```
 
-When auto-increment is enabled the value of the id field will be generated automatically when a new record is inserted.
+When auto-increment is enabled, the value of the "id" field will be generated automatically when a new record is inserted.
 
-The default value for AUTO_INCREMENT is 1.
+The default value for `AUTO_INCREMENT` is **1**.
 
 It will increase by 1 for each subsequent record.
 
@@ -42,7 +40,7 @@ If the conditions are not met, no data will be inserted.
 `email_address` varchar(50) UNIQUE
 ```
 
-Adding the UNIQUE constraint ensures that every **email_address** entered into the table will be unique.
+Adding the `UNIQUE` constraint ensures that every **email_address** entered into the table will be unique.
 
 ## DEFAULT Constraint
 
@@ -50,9 +48,9 @@ Adding the UNIQUE constraint ensures that every **email_address** entered into t
 `balance` DECIMAL(10, 2) DEFAULT 0
 ```
 
-Specifies that the default value of the column should be 0.
+Specifies that the default value of the column should be **0**.
 
-If a default value is not specified the value will be set to NULL by default if null values are allowed.
+If a default value is not specified, the value will be set to `NULL` by default if it is allowed.
 
 [/slide]
 
@@ -60,18 +58,21 @@ If a default value is not specified the value will be set to NULL by default if 
 
 # Problem with Solution: Create and Insert
 
-1. Create a new database called `gamebar`
-2. Create Tables:
+## Problem
+
+For this problem you have to:
+
+- Create a new database called `gamebar`
+- Create the following tables:
    - `employees` - id, first_name, last_name
    - `categories` - id, name
    - `products` - id, name, category_id
-3. Insert Data:
-   - Populate the `employees` table with 3 test records.
+- Insert Data:
+   - populate the `employees` table with 3 test records.
 
+## Solution
 
-
-**Solution:**
-- Create the `gamebar` database visually in SQL Workbench or run the following query `CREATE DATABASE gamebar`
+- Create the `gamebar` database in SQL Workbench or run the following query: `CREATE DATABASE gamebar`
 
 - Refresh the Schemas in the Object browser / Navigator Schema panel in SQL Workbench to be able to see the new database
 
@@ -81,7 +82,7 @@ If a default value is not specified the value will be set to NULL by default if 
 
 [image assetsSrc="Data-Definition-And-Data-Types-q3.png" /]
 
-- Create the rest of the tables using the above logic
+- Create the rest of the tables using the logic from the image
 
 - Populate the `employees` table:
 
@@ -91,10 +92,9 @@ INSERT INTO `employees` (`id`, `first_name`, `last_name`) VALUES (2, 'Jordan', '
 INSERT INTO `employees` (`id`, `first_name`, `last_name`) VALUES (3, 'Priscilla', 'Graffin');
 ```
 
-The above query should work if you did the previous steps correctly.
+This query should work if you did the previous steps correctly.
 
 Run `SELECT * FROM employees` to make sure the 3 records were inserted correctly. 
-
 
 [/slide]
 
@@ -113,6 +113,8 @@ Run `SELECT * FROM employees` to make sure the 3 records were inserted correctly
 When we create tables, we specify which database we want to add them to. This is done by using the "**USE**" clause.
 
 **Submit your solutions in JUDGE without the "USE** \{**database name**\}**" row.**
+
+Create the first table with the following fields:
 
 `"employees":`
 
@@ -134,9 +136,7 @@ Create the "**categories**" and "**products**" tables analogically:
 
 - name - **VARCHAR, NOT NULL;** 
 
-- category_id - **INT, NOT NULL** - it is not a foreign key for now.
-
-
+- category_id - **INT, NOT NULL;** - It is not a foreign key for now.
 
 [/task-description]
 [code-io /]
@@ -333,7 +333,9 @@ CREATE TABLE IF NOT EXISTS employees(
 # Description
 Inserting data can be done with a query too. 
 
-To do that we use the "**INSERT**" clause. Populate the "employees" table with 3 test values.
+To do that we use the "**INSERT**" clause. 
+
+Populate the `employees` table with 3 test values.
 [/task-description]
 [code-io /]
 [tests]
