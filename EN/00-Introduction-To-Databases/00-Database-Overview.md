@@ -1,8 +1,7 @@
 [slide hideTitle]
-# Problem: Sales Employee
-[code-task title="Sales Employee" taskId="java-db-and-MySQL-subqueries-and-JOINs-sales-employee" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
+# Problem: Employee Summary
+[code-task title="Employee Summary" taskId="java-db-and-MySQL-subqueries-and-JOINs-employee-summary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
-
 ```
 -- Write your query here
 ```
@@ -13,23 +12,23 @@ Write a query that selects the following fields:
 
 - **employee_id**
 
-- **first_name**
+- **employee_name**
 
-- **last_name**
+- **manager_name**	
 
 - **department_name**
 
-Sort the result by **employee_id in descending order**. 
+Show the first **5 employees** (only for employees who have a manager) with their **managers** and the **departments** they are in (show the departments of the **employees**). 
 
-Select only **employees** from the "**Sales**" department.
+Order by **employee_id**.
 
 
 ## Example
 
-| **employee_id** | **first_name** |**last_name** | **department_name** | 
+| **employee_id** | **employee_name** |**manager_name** | **department_name** | 
 | --- | --- | --- | --- | 
-|290|	Lynn|	Tsoflias|	Sales|
-|289	|Rachel|	Valdez	|Sales|
+|1|	Guy Gilbert|	Jo Brown|	Production|
+|2	|Kevin Brown|	David Bradley	|Marketing|
 |...|	...|	...|	...|
 
 
@@ -38,10 +37,216 @@ Select only **employees** from the "**Sales**" department.
 [tests]
 [test open]
 [input]
-/\*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT \*/;
-/\*!40101 SET NAMES utf8mb4 \*/;
-/\*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 \*/;
-/\*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' \*/;
+```
+# test 1 : SELECT
+#                e.employee_id, 
+#                concat(e.first_name, ' ', e.last_name) as employee_name, 
+#                concat(m.first_name, ' ', m.last_name) as manager_name,
+#                d.name as department_name FROM employees AS e
+#                INNER JOIN employees AS m ON m.employee_id = e.manager_id
+#                INNER JOIN departments AS d ON d.department_id = e.department_id
+
+CREATE TABLE IF NOT EXISTS `addresses` (
+  `address_id` int(10) NOT NULL AUTO_INCREMENT,
+  `address_text` varchar(100) NOT NULL,
+  `town_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`address_id`),
+  UNIQUE KEY `pk_addresses` (`address_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `PK_Departments` (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
+	(1, 'Engineering', 12),
+	(2, 'Tool Design', 4),
+	(3, 'Sales', 273),
+	(4, 'Marketing', 46),
+	(5, 'Purchasing', 6);
+
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `pk_employees` (`employee_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
+
+
+/*!40000 ALTER TABLE `employees` DISABLE KEYS */;
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'Antony', 'Gilbert', 'R', 'Production Technician', 7, null, '2006-07-31 00:00:00.000000', 12500.0000, 166),
+	(2, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, null, '1999-02-26 00:00:00.000000', 13500.0000, 102),
+	(3, 'Cidney', 'Andrews', NULL, 'Engineering Manager', 1, 5, '1999-12-12 00:00:00.000000', 43300.0000, 193),
+	(4, 'Dadiv', 'Walters', NULL, 'Senior Tool Designer', 2, null, '2000-01-05 00:00:00.000000', 29800.0000, 155),
+	(5, 'Fillip', 'D\'Hers', 'B', 'Tool Designer', 2, null, '2000-01-11 00:00:00.000000', 25000.0000, 40);
+
+
+CREATE TABLE IF NOT EXISTS `employees_projects` (
+  `employee_id` int(10) NOT NULL,
+  `project_id` int(10) NOT NULL,
+  PRIMARY KEY (`employee_id`,`project_id`),
+  UNIQUE KEY `pk_employees_projects` (`employee_id`,`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `pk_projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `towns` (
+  `town_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`town_id`),
+  UNIQUE KEY `pk_towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
+[/input]
+[output]
+```
+3
+Cidney Andrews
+Fillip D'Hers
+Engineering
+```
+[/output]
+[/test]
+[test]
+[input]
+```
+# test 5 : SELECT
+#                e.employee_id, 
+#                concat(e.first_name, ' ', e.last_name) as employee_name, 
+#                concat(m.first_name, ' ', m.last_name) as manager_name,
+#                d.name as department_name FROM employees AS e
+#                INNER JOIN employees AS m ON m.employee_id = e.manager_id
+#                INNER JOIN departments AS d ON d.department_id = e.department_id
+#                ORDER BY e.employee_id
+
+CREATE TABLE IF NOT EXISTS `addresses` (
+  `address_id` int(10) NOT NULL AUTO_INCREMENT,
+  `address_text` varchar(100) NOT NULL,
+  `town_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`address_id`),
+  UNIQUE KEY `pk_addresses` (`address_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `PK_Departments` (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
+	(1, 'Engineering', 12),
+	(2, 'Tool Design', 4),
+	(3, 'Sales', 273),
+	(4, 'Marketing', 46),
+	(5, 'Purchasing', 6);
+
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `pk_employees` (`employee_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
+
+
+/*!40000 ALTER TABLE `employees` DISABLE KEYS */;
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(5, 'Antony', 'Gilbert', 'R', 'Production Technician', 3, 1, '2006-07-31 00:00:00.000000', 12500.0000, 166),
+	(4, 'Bob', 'Brown', 'F', 'Marketing Assistant', 4, 1, '1999-02-26 00:00:00.000000', 13500.0000, 102),
+	(2, 'Cidney', 'Andrews', NULL, 'Engineering Manager', 1, 5, '1999-12-12 00:00:00.000000', 43300.0000, 193),
+	(3, 'Dadiv', 'Walters', NULL, 'Senior Tool Designer', 2, 2, '2000-01-05 00:00:00.000000', 29800.0000, 155),
+	(1, 'Fillip', 'Kennedy', 'B', 'Tool Designer', 2, 4, '2000-01-11 00:00:00.000000', 25000.0000, 40);
+
+
+CREATE TABLE IF NOT EXISTS `employees_projects` (
+  `employee_id` int(10) NOT NULL,
+  `project_id` int(10) NOT NULL,
+  PRIMARY KEY (`employee_id`,`project_id`),
+  UNIQUE KEY `pk_employees_projects` (`employee_id`,`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `pk_projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `towns` (
+  `town_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`town_id`),
+  UNIQUE KEY `pk_towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+```
+[/input]
+[output]
+```
+1
+Fillip Kennedy
+Bob Brown
+Tool Design
+2
+Cidney Andrews
+Antony Gilbert
+Engineering
+3
+Dadiv Walters
+Cidney Andrews
+Tool Design
+4
+Bob Brown
+Fillip Kennedy
+Marketing
+5
+Antony Gilbert
+Fillip Kennedy
+Sales
+```
+[/output]
+[/test]
+[test]
+[input]
+```
+# test 6 : Zero Test duplication
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8mb4 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 
 CREATE TABLE IF NOT EXISTS `addresses` (
@@ -55,7 +260,7 @@ CREATE TABLE IF NOT EXISTS `addresses` (
 ) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `addresses` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `addresses` DISABLE KEYS */;
 INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
 	(1, '108 Lakeside Court', 5),
 	(2, '1343 Prospect St', 5),
@@ -348,7 +553,7 @@ INSERT INTO `addresses` (`address_id`, `address_text`, `town_id`) VALUES
 	(289, '591 Merriewood Drive', 11),
 	(290, '7230 Vine Maple Street', 11),
 	(291, '163 Nishava Str, ent A, apt. 1', 32);
-/\*!40000 ALTER TABLE `addresses` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `addresses` ENABLE KEYS */;
 
 
 CREATE TABLE IF NOT EXISTS `departments` (
@@ -362,7 +567,7 @@ CREATE TABLE IF NOT EXISTS `departments` (
 ) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `departments` DISABLE KEYS */;
 INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(1, 'Engineering', 12),
 	(2, 'Tool Design', 4),
@@ -380,7 +585,7 @@ INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
 	(14, 'Facilities and Maintenance', 218),
 	(15, 'Shipping and Receiving', 85),
 	(16, 'Executive', 109);
-/\*!40000 ALTER TABLE `departments` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `departments` ENABLE KEYS */;
 
 
 
@@ -407,13 +612,13 @@ CREATE TABLE IF NOT EXISTS `employees` (
 ) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `employees` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `employees` DISABLE KEYS */;
 INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
 	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
 	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
 	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
 	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
+	(5, 'Thierry', 'D\'Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40),
 	(6, 'David', 'Bradley', 'M', 'Marketing Manager', 5, 109, '2000-01-20 00:00:00.000000', 37500.0000, 199),
 	(7, 'JoLynn', 'Dobney', 'M', 'Production Supervisor', 7, 21, '2000-01-26 00:00:00.000000', 25000.0000, 275),
 	(8, 'Ruth', 'Ellerbrock', 'Ann', 'Production Technician', 7, 185, '2000-02-06 00:00:00.000000', 13500.0000, 108),
@@ -459,7 +664,7 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(48, 'Jun', 'Cao', 'T', 'Production Technician', 7, 38, '2001-01-15 00:00:00.000000', 11000.0000, 197),
 	(49, 'Christian', 'Kleinerman', 'E', 'Maintenance Supervisor', 14, 218, '2001-01-15 00:00:00.000000', 20400.0000, 118),
 	(50, 'Susan', 'Metters', 'A', 'Production Technician', 7, 184, '2001-01-15 00:00:00.000000', 9500.0000, 224),
-	(51, 'Reuben', 'D''sa', 'H', 'Production Supervisor', 7, 21, '2001-01-16 00:00:00.000000', 25000.0000, 249),
+	(51, 'Reuben', 'D\'sa', 'H', 'Production Supervisor', 7, 21, '2001-01-16 00:00:00.000000', 25000.0000, 249),
 	(52, 'Kirk', 'Koenigsbauer', 'J', 'Production Technician', 7, 123, '2001-01-16 00:00:00.000000', 10000.0000, 250),
 	(53, 'David', 'Ortiz', 'J', 'Production Technician', 7, 18, '2001-01-16 00:00:00.000000', 12500.0000, 267),
 	(54, 'Tengiz', 'Kharatishvili', '', 'Control Specialist', 12, 90, '2001-01-17 00:00:00.000000', 16800.0000, 129),
@@ -683,26 +888,26 @@ INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`
 	(272, 'Mary', 'Dempsey', 'A', 'Marketing Assistant', 4, 6, '2003-03-17 00:00:00.000000', 13500.0000, 26),
 	(273, 'Brian', 'Welcker', 'S', 'Vice President of Sales', 3, 109, '2003-03-18 00:00:00.000000', 72100.0000, 134),
 	(274, 'Sheela', 'Word', 'H', 'Purchasing Manager', 13, 71, '2003-03-28 00:00:00.000000', 30000.0000, 222),
-	(275, 'Michael', 'Blythe', 'G', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 60),
-	(276, 'Linda', 'Mitchell', 'C', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 170),
+	(275, 'Michael', 'Blythe', 'G', 'Sales Representative', 3, 268, '2003-07-03 00:00:00.000000', 23100.0000, 60),
+	(276, 'Linda', 'Mitchell', 'C', 'Sales Representative', 3, 268, '2003-07-02 00:00:00.000000', 23100.0000, 170),
 	(277, 'Jillian', 'Carson', NULL, 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 61),
-	(278, 'Garrett', 'Vargas', 'R', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 52),
-	(279, 'Tsvi', 'Reiter', 'Michael', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 154),
-	(280, 'Pamela', 'Ansman-Wolfe', 'O', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 179),
-	(281, 'Shu', 'Ito', 'K', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 235),
-	(282, 'Jose', 'Saraiva', 'Edvaldo', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 178),
-	(283, 'David', 'Campbell', 'R', 'Sales Representative', 3, 268, '2003-07-01 00:00:00.000000', 23100.0000, 13),
+	(278, 'Garrett', 'Vargas', 'R', 'Sales Representative', 3, 268, '2003-07-04 00:00:00.000000', 23100.0000, 52),
+	(279, 'Tsvi', 'Reiter', 'Michael', 'Sales Representative', 3, 268, '2003-07-05 00:00:00.000000', 23100.0000, 154),
+	(280, 'Pamela', 'Ansman-Wolfe', 'O', 'Sales Representative', 3, 268, '2003-07-07 00:00:00.000000', 23100.0000, 179),
+	(281, 'Shu', 'Ito', 'K', 'Sales Representative', 3, 268, '2003-07-20 00:00:00.000000', 23100.0000, 235),
+	(282, 'Jose', 'Saraiva', 'Edvaldo', 'Sales Representative', 3, 268, '2003-07-11 00:00:00.000000', 23100.0000, 178),
+	(283, 'David', 'Campbell', 'R', 'Sales Representative', 3, 268, '2003-07-19 00:00:00.000000', 23100.0000, 13),
 	(284, 'Amy', 'Alberts', 'E', 'European Sales Manager', 3, 273, '2004-05-18 00:00:00.000000', 48100.0000, 202),
-	(285, 'Jae', 'Pak', 'B', 'Sales Representative', 3, 284, '2004-07-01 00:00:00.000000', 23100.0000, 54),
+	(285, 'Jae', 'Pak', 'B', 'Sales Representative', 3, 284, '2004-07-01 05:00:00.000000', 23100.0000, 54),
 	(286, 'Ranjit', 'Varkey Chudukatil', 'R', 'Sales Representative', 3, 284, '2004-07-01 00:00:00.000000', 23100.0000, 38),
 	(287, 'Tete', 'Mensa-Annan', 'A', 'Sales Representative', 3, 268, '2004-11-01 00:00:00.000000', 23100.0000, 53),
 	(288, 'Syed', 'Abbas', 'E', 'Pacific Sales Manager', 3, 273, '2005-04-15 00:00:00.000000', 48100.0000, 49),
-	(289, 'Rachel', 'Valdez', 'B', 'Sales Representative', 3, 284, '2005-07-01 00:00:00.000000', 23100.0000, 37),
-	(290, 'Lynn', 'Tsoflias', '', 'Sales Representative', 3, 288, '2005-07-01 00:00:00.000000', 23100.0000, 153),
-	(291, 'Edward', 'Young', 'I', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
-	(292, 'Emma', 'Johnson', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
-	(293, 'Thomas', 'Miller', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
-/\*!40000 ALTER TABLE `employees` ENABLE KEYS \*/;
+	(289, 'Rachel', 'Valdez', 'B', 'Sales Representative', 3, 284, '2005-07-01 02:00:00.000000', 23100.0000, 37),
+	(290, 'Lynn', 'Tsoflias', '', 'Sales Representative', 3, 288, '2005-07-01 01:00:00.000000', 23100.0000, 153),
+	(291, 'Svetlin', 'Nakov', 'Ivanov', 'Independent Software Development  Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291),
+	(292, 'Martin', 'Kulov', NULL, 'Independent .NET Consultant', 6, NULL, '2005-03-01 01:00:00.000000', 48000.0000, 291),
+	(293, 'George', 'Denchev', NULL, 'Independent Java Consultant', 6, NULL, '2005-03-01 00:00:00.000000', 48000.0000, 291);
+/*!40000 ALTER TABLE `employees` ENABLE KEYS */;
 
 
 
@@ -717,7 +922,7 @@ CREATE TABLE IF NOT EXISTS `employees_projects` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `employees_projects` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `employees_projects` DISABLE KEYS */;
 INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(3, 1),
 	(15, 1),
@@ -1562,7 +1767,7 @@ INSERT INTO `employees_projects` (`employee_id`, `project_id`) VALUES
 	(185, 127),
 	(234, 127),
 	(245, 127);
-/\*!40000 ALTER TABLE `employees_projects` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `employees_projects` ENABLE KEYS */;
 
 
 
@@ -1577,20 +1782,20 @@ CREATE TABLE IF NOT EXISTS `projects` (
 ) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `projects` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `projects` DISABLE KEYS */;
 INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_date`) VALUES
-	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2003-06-01 00:00:00.000000', NULL),
+	(1, 'Classic Vest', 'Research, design and development of Classic Vest. Light-weight, wind-resistant, packs to fit into a pocket.', '2002-08-13 01:00:00.000000', NULL),
 	(2, 'Cycling Cap', 'Research, design and development of Cycling Cap. Traditional style with a flip-up brim; one-size fits all.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(3, 'Full-Finger Gloves', 'Research, design and development of Full-Finger Gloves. Synthetic palm, flexible knuckles, breathable mesh upper. Worn by the AWC team riders.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(4, 'Half-Finger Gloves', 'Research, design and development of Half-Finger Gloves. Full padding, improved finger flex, durable palm, adjustable closure.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(5, 'HL Mountain Frame', 'Research, design and development of HL Mountain Frame. Each frame is hand-crafted in our Bothell facility to the optimum diameter and wall-thickness required of a premium mountain frame. The heat-treated welded aluminum frame has a larger diameter tube that absorbs the bumps.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(6, 'HL Road Frame', 'Research, design and development of HL Road Frame. Our lightest and best quality aluminum frame made from the newest alloy; it is welded and heat-treated for strength. Our innovative design results in maximum comfort and performance.', '1998-05-02 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(7, 'HL Touring Frame', 'Research, design and development of HL Touring Frame. The HL aluminum frame is custom-shaped for both good looks and strength; it will withstand the most rigorous challenges of daily riding. Men''s version.', '2005-05-16 16:34:00.000000', NULL),
+	(7, 'HL Touring Frame', 'Research, design and development of HL Touring Frame. The HL aluminum frame is custom-shaped for both good looks and strength; it will withstand the most rigorous challenges of daily riding. Men\'s version.', '2005-05-16 16:34:00.000000', NULL),
 	(8, 'LL Mountain Frame', 'Research, design and development of LL Mountain Frame. Our best value utilizing the same, ground-breaking frame technology as the ML aluminum frame.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
 	(9, 'LL Road Frame', 'Research, design and development of LL Road Frame. The LL Frame provides a safe comfortable ride, while offering superior bump absorption in a value-priced aluminum frame.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(10, 'LL Touring Frame', 'Research, design and development of LL Touring Frame. Lightweight butted aluminum frame provides a more upright riding position for a trip around town.  Our ground-breaking design provides optimum comfort.', '2005-05-16 16:34:00.000000', NULL),
 	(11, 'Long-Sleeve Logo Jersey', 'Research, design and development of Long-Sleeve Logo Jersey. Unisex long-sleeve AWC logo microfiber cycling jersey', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(12, 'Men''s Bib-Shorts', 'Research, design and development of Men''s Bib-Shorts. Designed for the AWC team with stay-put straps, moisture-control, chamois padding, and leg grippers.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(12, 'Men\'s Bib-Shorts', 'Research, design and development of Men\'s Bib-Shorts. Designed for the AWC team with stay-put straps, moisture-control, chamois padding, and leg grippers.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(19, 'Mountain-100', 'Research, design and development of Mountain-100. Top-of-the-line competition mountain bike. Performance-enhancing options include the innovative HL Frame, super-smooth front suspension, and traction for all terrain.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(20, 'Mountain-200', 'Research, design and development of Mountain-200. Serious back-country riding. Perfect for all levels of competition. Uses the same HL Frame as the Mountain-100.', '2002-06-01 00:00:00.000000', '2004-03-11 10:32:00.000000'),
 	(21, 'Mountain-300', 'Research, design and development of Mountain-300. For true trail addicts.  An extremely durable bike that will go anywhere and keep you in control on challenging terrain - without breaking your budget.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
@@ -1602,15 +1807,15 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(27, 'Road-350-W', 'Research, design and development of Road-350-W. Cross-train, race, or just socialize on a sleek, aerodynamic bike designed for a woman.  Advanced seat technology provides comfort all day.', '2003-06-01 00:00:00.000000', NULL),
 	(28, 'Road-450', 'Research, design and development of Road-450. A true multi-sport bike that offers streamlined riding and a revolutionary design. Aerodynamic design lets you ride with the pros, and the gearing will conquer hilly roads.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(29, 'Road-550-W', 'Research, design and development of Road-550-W. Same technology as all of our Road series bikes, but the frame is sized for a woman.  Perfect all-around bike for road or racing.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
-	(30, 'Road-650', 'Research, design and development of Road-650. Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we''re famous for.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(30, 'Road-650', 'Research, design and development of Road-650. Value-priced bike with many features of our top-of-the-line models. Has the same light, stiff frame, and the quick acceleration we\'re famous for.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(31, 'Road-750', 'Research, design and development of Road-750. Entry level adult bike; offers a comfortable ride cross-country or down the block. Quick-release hubs and rims.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
 	(32, 'Short-Sleeve Classic Jersey', 'Research, design and development of Short-Sleeve Classic Jersey. Short sleeve classic breathable jersey with superior moisture control, front zipper, and 3 back pockets.', '2003-06-01 00:00:00.000000', NULL),
 	(33, 'Sport-100', 'Research, design and development of Sport-100. Universal fit, well-vented, lightweight , snap-on visor.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(34, 'Touring-1000', 'Research, design and development of Touring-1000. Travel in style and comfort. Designed for maximum comfort and safety. Wide gear range takes on all hills. High-tech aluminum alloy construction provides durability without added weight.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(35, 'Touring-2000', 'Research, design and development of Touring-2000. The plush custom saddle keeps you riding all day,  and there''s plenty of space to add panniers and bike bags to the newly-redesigned carrier.  This bike has stability when fully-loaded.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
+	(35, 'Touring-2000', 'Research, design and development of Touring-2000. The plush custom saddle keeps you riding all day,  and there\'s plenty of space to add panniers and bike bags to the newly-redesigned carrier.  This bike has stability when fully-loaded.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
 	(36, 'Touring-3000', 'Research, design and development of Touring-3000. All-occasion value bike with our basic comfort and safety features. Offers wider, more stable tires for a ride around town or weekend trip.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
-	(37, 'Women''s Mountain Shorts', 'Research, design and development of Women''s Mountain Shorts. Heavy duty, abrasion-resistant shorts feature seamless, lycra inner shorts with anti-bacterial chamois for comfort.', '2003-06-01 00:00:00.000000', NULL),
-	(38, 'Women''s Tights', 'Research, design and development of Women''s Tights. Warm spandex tights for winter riding; seamless chamois construction eliminates pressure points.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
+	(37, 'Women\'s Mountain Shorts', 'Research, design and development of Women\'s Mountain Shorts. Heavy duty, abrasion-resistant shorts feature seamless, lycra inner shorts with anti-bacterial chamois for comfort.', '2003-06-01 00:00:00.000000', NULL),
+	(38, 'Women\'s Tights', 'Research, design and development of Women\'s Tights. Warm spandex tights for winter riding; seamless chamois construction eliminates pressure points.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(39, 'Mountain-400', 'Research, design and development of Mountain-400. Suitable for any type of off-road trip. Fits any budget.', '2001-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(40, 'Road-550', 'Research, design and development of Road-550. Same technology as all of our Road series bikes.  Perfect all-around bike for road or racing.', '2002-06-01 00:00:00.000000', '2003-06-01 00:00:00.000000'),
 	(41, 'Road-350', 'Research, design and development of Road-350. Cross-train, race, or just socialize on a sleek, aerodynamic bike.  Advanced seat technology provides comfort all day.', '2002-11-20 09:57:00.000000', '2003-06-01 00:00:00.000000'),
@@ -1658,7 +1863,7 @@ INSERT INTO `projects` (`project_id`, `name`, `description`, `start_date`, `end_
 	(121, 'Fender Set - Mountain', 'Research, design and development of Fender Set - Mountain. Clip-on fenders fit most mountain bikes.', '2003-06-01 00:00:00.000000', NULL),
 	(122, 'All-Purpose Bike Stand', 'Research, design and development of All-Purpose Bike Stand. Perfect all-purpose bike stand for working on your bike at home. Quick-adjusting clamps and steel construction.', '2005-09-01 00:00:00.000000', NULL),
 	(127, 'Rear Derailleur', 'Research, design and development of Rear Derailleur. Wide-link design.', '2003-06-01 00:00:00.000000', NULL);
-/\*!40000 ALTER TABLE `projects` ENABLE KEYS \*/;
+/*!40000 ALTER TABLE `projects` ENABLE KEYS */;
 
 
 
@@ -1670,7 +1875,7 @@ CREATE TABLE IF NOT EXISTS `towns` (
 ) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
 
-/\*!40000 ALTER TABLE `towns` DISABLE KEYS \*/;
+/*!40000 ALTER TABLE `towns` DISABLE KEYS */;
 INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(1, 'Redmond'),
 	(2, 'Calgary'),
@@ -1704,359 +1909,36 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 	(30, 'Bordeaux'),
 	(31, 'Berlin'),
 	(32, 'Sofia');
-/\*!40000 ALTER TABLE `towns` ENABLE KEYS \*/;
-/\*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') \*/;
-/\*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) \*/;
-/\*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT \*/;
+/*!40000 ALTER TABLE `towns` ENABLE KEYS */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+```
 [/input]
 [output]
-290
-Lynn
-Tsoflias
-Sales
-289
-Rachel
-Valdez
-Sales
-288
-Syed
-Abbas
-Sales
-287
-Tete
-Mensa-Annan
-Sales
-286
-Ranjit
-Varkey Chudukatil
-Sales
-285
-Jae
-Pak
-Sales
-284
-Amy
-Alberts
-Sales
-283
-David
-Campbell
-Sales
-282
-Jose
-Saraiva
-Sales
-281
-Shu
-Ito
-Sales
-280
-Pamela
-Ansman-Wolfe
-Sales
-279
-Tsvi
-Reiter
-Sales
-278
-Garrett
-Vargas
-Sales
-277
-Jillian
-Carson
-Sales
-276
-Linda
-Mitchell
-Sales
-275
-Michael
-Blythe
-Sales
-273
-Brian
-Welcker
-Sales
-268
-Stephen
-Jiang
-Sales
-[/output]
-[/test]
-[test]
-[input]
-
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `pk_addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
-INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
-	(1, 'Sales', 1),
-	(2, 'Sales', 2),
-	(3, 'Sales', 3),
-	(4, 'Sales', 4),
-	(5, 'Sales', 5);
-
-
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `pk_employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `employees` DISABLE KEYS \*/;
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 5, 1, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `pk_employees_projects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `pk_projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `pk_towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-[/input]
-[output]
+```
 1
-Thierry
-D'Hers
-Sales
-[/output]
-[/test]
-[test]
-[input]
-
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `pk_addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
-INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
-	(1, 'Not Sales', 1),
-	(2, 'Engineering', 2),
-	(3, 'Sales', 3),
-	(4, 'Marketing', 4),
-	(5, 'Sales ama ne bash', 5);
-
-
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `pk_employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `employees` DISABLE KEYS \*/;
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 1, 2, '1998-07-31 00:00:00.000000', 12500.0000, 166),
-	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 2, 3, '1999-02-26 00:00:00.000000', 13500.0000, 102),
-	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 3, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
-	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 4, 1, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 5, 1, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `pk_employees_projects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `pk_projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `pk_towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-[/input]
-[output]
-3
-Roberto
-Tamburello
-Sales
-[/output]
-[/test]
-[test]
-[input]
-
-CREATE TABLE IF NOT EXISTS `addresses` (
-  `address_id` int(10) NOT NULL AUTO_INCREMENT,
-  `address_text` varchar(100) NOT NULL,
-  `town_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`address_id`),
-  UNIQUE KEY `pk_addresses` (`address_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `departments` (
-  `department_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `manager_id` int(10) NOT NULL,
-  PRIMARY KEY (`department_id`),
-  UNIQUE KEY `PK_Departments` (`department_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `departments` DISABLE KEYS \*/;
-INSERT INTO `departments` (`department_id`, `name`, `manager_id`) VALUES
-	(1, 'Sales', 1),
-	(2, 'Sales', 2),
-	(3, 'Sales', 3),
-	(4, 'Sales', 4),
-	(5, 'Sales', 5);
-
-
-
-CREATE TABLE IF NOT EXISTS `employees` (
-  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
-  `first_name` varchar(50) NOT NULL,
-  `last_name` varchar(50) NOT NULL,
-  `middle_name` varchar(50) DEFAULT NULL,
-  `job_title` varchar(50) NOT NULL,
-  `department_id` int(10) NOT NULL,
-  `manager_id` int(10) DEFAULT NULL,
-  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `salary` decimal(19,4) NOT NULL,
-  `address_id` int(10) DEFAULT NULL,
-  PRIMARY KEY (`employee_id`),
-  UNIQUE KEY `pk_employees` (`employee_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
-
-
-/\*!40000 ALTER TABLE `employees` DISABLE KEYS \*/;
-INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
-	(1, 'Guy', 'Gilbert', 'R', 'Production Technician', 1, 2, '1998-07-31 00:00:00.000000', 12500.0000, 166),
-	(2, 'Kevin', 'Brown', 'F', 'Marketing Assistant', 2, 3, '1999-02-26 00:00:00.000000', 13500.0000, 102),
-	(3, 'Roberto', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
-	(4, 'Rob', 'Walters', NULL, 'Senior Tool Designer', 4, 1, '2000-01-05 00:00:00.000000', 29800.0000, 155),
-	(5, 'Thierry', 'D''Hers', 'B', 'Tool Designer', 5, 1, '2000-01-11 00:00:00.000000', 25000.0000, 40);
-
-
-
-CREATE TABLE IF NOT EXISTS `employees_projects` (
-  `employee_id` int(10) NOT NULL,
-  `project_id` int(10) NOT NULL,
-  PRIMARY KEY (`employee_id`,`project_id`),
-  UNIQUE KEY `pk_employees_projects` (`employee_id`,`project_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `projects` (
-  `project_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  `description` text,
-  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
-  `end_date` timestamp(6) NULL DEFAULT NULL,
-  PRIMARY KEY (`project_id`),
-  UNIQUE KEY `pk_projects` (`project_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
-
-CREATE TABLE IF NOT EXISTS `towns` (
-  `town_id` int(10) NOT NULL AUTO_INCREMENT,
-  `name` varchar(50) NOT NULL,
-  PRIMARY KEY (`town_id`),
-  UNIQUE KEY `pk_towns` (`town_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
-[/input]
-[output]
-5
-Thierry
-D'Hers
-Sales
-4
-Rob
-Walters
-Sales
-3
-Roberto
-Tamburello
-Sales
+Guy Gilbert
+Jo Brown
+Production
 2
-Kevin
-Brown
-Sales
-1
-Guy
-Gilbert
-Sales
+Kevin Brown
+David Bradley
+Marketing
+3
+Roberto Tamburello
+Terri Duffy
+Engineering
+4
+Rob Walters
+Roberto Tamburello
+Tool Design
+5
+Thierry D'Hers
+Ovidiu Cracium
+Tool Design
+```
 [/output]
-[/test]
 [/tests]
 [/code-task]
 [/slide]
