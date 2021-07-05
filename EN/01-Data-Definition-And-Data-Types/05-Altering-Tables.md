@@ -2,12 +2,11 @@
 
 # Altering Tables
 
-A table can be changed using the `ALTER` keyword.
+A table can be changed by using the `ALTER` keyword.
 
 Altering a table or adding a constraint might not be possible if there is already data in the table.
 
-That is why, it is always best to plan ahead, else you will end up having to populate the table from scratch.
-
+That is why it is always best to plan ahead, or you will end up having to populate the table from scratch.
 
 ```Java
 ALTER TABLE `employees`;
@@ -22,29 +21,29 @@ ALTER TABLE `employees`
 ADD `salary` DECIMAL;
 ```
 
-The name of the new column will be **salary** and the data type is **DECIMAL**.
+The newly created column will be called `salary`, and its data type will be `DECIMAL`.
 
 ## Deleting a Column
 
 Use the `DROP` keyword to remove (drop) a column.
-
 
 ```Java
 ALTER TABLE `people`
 DROP COLUMN `full_name`; 
 ```
 
-**DROP** will delete the data in the **full_name** column.
+It will delete the data in the `full_name` column.
 
 ## Modifying the Data Type
+
+You can use `MODIFY` to change the data type of a column.
 
 ```Java
 ALTER TABLE `people`
 MODIFY COLUMN `email` VARCHAR(100); 
 ```
 
-The **email** column of the **people** table will now be of type `VARCHAR(100)`.
-
+The `email` column of the `people` table will now be of type `VARCHAR(100)`.
 
 ## Adding a Primary Key
 
@@ -54,9 +53,9 @@ ADD CONSTRAINT `pk_id`
 PRIMARY KEY (`id`); 
 ```
 
-This will add a primary key constraint on the **id** field.
+This will add a primary key constraint on the `id` field.
 
-**pk_id** is the arbitrary name that we gave to our constraint but it can be anything you want.
+`pk_id` is the arbitrary name that we gave to our constraint but it can be anything you want.
 
 You can create more complex (composite) keys by specifying two columns instead of one.
 
@@ -68,9 +67,9 @@ ADD CONSTRAINT `unique_email`
 UNIQUE (`email`)
 ```
 
-We have chosen **unique_email** for the constraint name but it could be any other meaningful name.
+We have chosen `unique_email` for the constraint name but it could be any other meaningful name.
 
-The above code will alter the **email** column in the **people** table and require any value that is inserted to be unique.
+The above code will alter the `email` column in the `people` table and require any value that is inserted to be unique.
 
 ## Setting a Default Value
 
@@ -79,12 +78,9 @@ ALTER TABLE `people`
 ALTER COLUMN `balance` SET DEFAULT 0; 
 ```
 
-The default value for the **balance** column will be 0.
-
+The default value for the `balance` column will be **0**.
 
 [/slide]
-
-
 
 [slide hideTitle]
 # Problem with Solution: Alter Tables
@@ -103,9 +99,10 @@ CREATE TABLE IF NOT EXISTS employees(
 [/code-adapter]
 [task-description]
 # Description
-Altering the tables is done via the "**ALTER TABLE**" clause. 
 
-Add a new column - "**middle_name**" to the "**employees**" table. 
+Altering the tables is done via the `ALTER TABLE` clause. 
+
+Add a `middle_name` column to the `employees` table. 
 
 [/task-description]
 [code-io /]
@@ -155,9 +152,10 @@ CREATE TABLE products(
 [/code-adapter]
 [task-description]
 # Description
-Create the connection via a foreign key between the "**products**" and "**categories**" tables that you've created earlier. 
 
-Make **"category_id" foreign key linked to "id" in the "categories" table.**
+Create the connection via a **foreign key** between the `products` and `categories` tables that you've created earlier. 
+
+Make the `category_id` foreign key **linked to** `id` **in the** `categories` **table.**
 
 [/task-description]
 [code-io /]
@@ -202,7 +200,8 @@ CREATE TABLE employees(
 [/code-adapter]
 [task-description]
 # Description
-Change the property **"VARCHAR(50)" to "VARCHAR(100)"** in the "**middle_name**" column from the "**employees**" table.
+
+Change the `VARCHAR(50)` property to `VARCHAR(100)` in the `middle_name` column of the `employees` table.
 
 [/task-description]
 [code-io /]
