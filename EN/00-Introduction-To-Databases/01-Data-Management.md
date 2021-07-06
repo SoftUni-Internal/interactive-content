@@ -6,17 +6,17 @@
 
 MySQL is a **relational database** that stores data in a **tabular structure** and is grouped by **tables**.  
 
-It uses **SQL** as a language for **communicating with the database**, which allows for a very powerful syntax to **create both simple** and **complex queries** to retrieve and structure data as we want.  
+It uses **SQL** as a language for **communicating with the database**, which allows us to create both **simple** and **complex queries** to retrieve and structure data as we want.    
 
 A relational database is used when the data needs to be stored in different tables that are connected.
 
-NoSQL is a grouping of several different technologies defined as any database technology that is not SQL like **Document Store** or **Key-Value Store**.
+NoSQL is a grouping of several different technologies defined as any database technology that is not SQL like a **Document Store** or a **Key-Value Store**.
 
-**Document Store** works by storing the data as **JSON-objects** in documents whose structure does not have to be predefined. 
+A **Document Store** works by storing the data as **JSON-objects** in documents without predefining their structure. 
 
-As opposed to relational databases, these objects **do not need** to have a **common structure** and can also be nestled.
+As opposed to relational databases, these objects **do not need** to have a **common structure** and can also be nested.
 
-The support of nestling data removes the need to join data the same way as it is done in relational databases and can improve performance drastically.
+The support of nesting data removes the need to join data the same way as it is done in relational databases and can improve performance drastically.
 
 Here is an example of how data is structured in a relational and NoSQL database:
 
@@ -32,8 +32,8 @@ If we only use flat storage for storing data, we would run into some problems wi
 
 Here are some of the benefits of having well-structured databases:
 
-- Querying data in a database and look up the data from a database relatively quickly
-- Relating data from two different tables together using **JOINs**
+- Querying data and looking up data happens relatively quickly
+- Joining data from two different tables together using the **JOIN** clauses
 - Creating meaningful reports from data in a database because data has a built-in structure to it
 - Information of a given type is always stored once
 - Databases use the **ACID** set of properties
@@ -51,13 +51,13 @@ A database is an organized collection of structured information, or data, typica
 
 It is usually controlled by a database management system (**DBMS**).
 
-A **DBMS** is a piece of software for **storing** and **retrieving** user data while considering the appropriate security measures. 
+A **DBMS** is a piece of software for **storing** and **retrieving** user data while following the appropriate security measures. 
 
-It consists of a group of programs, which manipulate the database. 
+It consists of a group of programs, which manipulate the database.  
 
 The **DBMS** accepts the request for data from an application and instructs the operating system to provide the specific data. 
 
-In large systems, **DBMS** helps users and other third-party software to store and retrieve data. 
+In large systems, the **DBMS** helps users and other third-party software to store and retrieve data. 
 
 Together, the data and **DBMS**, along with the applications that are associated with them, are referred to as a database system, often shortened to just а **database**. 
 
@@ -93,7 +93,12 @@ NoSQL databases are **non-tabular** and store data differently than relational t
 
 They come in a variety of types based on their data model. 
 
-The main types are **document**, **key-value**, **wide-column**, and **graph**. 
+The main types are: 
+
+- **document**
+- **key-value**
+- **wide-column**
+- **graph**
 
 They provide flexible schemas and scale easily with large amounts of data and high user loads.
 
