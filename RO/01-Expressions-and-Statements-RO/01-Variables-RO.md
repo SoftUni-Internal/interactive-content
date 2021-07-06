@@ -38,10 +38,9 @@
 
 [/slide]
 
-# Variabilele și Stocarea Datelor
 
 [slide hideTitle]
-# Exemplu din Viața Reală
+# Variabilele și exemplu din Viața Reală
 
 [video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-4-5-6-Real-life-example-Variables-NEW-RO-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
