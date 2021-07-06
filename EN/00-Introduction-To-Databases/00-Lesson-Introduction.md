@@ -22,12 +22,12 @@
 - Database Table Elements
 
 **5. Table Relationships**
-- Why split related data
+- Why we split related data
 - Related tables
 
 **6. Programmability**
 - Indexes
 - Views
-- Procedures, Functions and Triggers
+- Procedures, Functions, and Triggers
 
 [/slide]
