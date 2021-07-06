@@ -1782,7 +1782,7 @@ The following table displays employees in the "**Finance**" department, ordered 
 | Barbara | 27 720.00 | 
 | Bryan | 19 950.00 | 
 |Candy|19 950.00|
-| ... | ... | ... | 
+| ... | ... | 
 
 [/task-description]
 [code-io /]

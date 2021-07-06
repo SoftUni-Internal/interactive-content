@@ -13,12 +13,7 @@ For problems from "**Employees with Salary Above 35000**" to "**Define a Functio
 [code-task title="Employees with Salary Above 35000" taskId="java-db-and-MySQL-database-programmability-employees-with-salary-above-35000" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
-CREATE PROCEDURE usp_get_employees_salary_above_35000()
-BEGIN
-	SELECT first_name, last_name FROM employees
-	WHERE salary > 35000
-	ORDER BY first_name, last_name, employee_id;
-END
+-- Write your query here
 ```
 [/code-editor]
 [code-adapter]
@@ -536,13 +531,7 @@ Kahn
 [code-task title="Employees with Salary Above Number" taskId="java-db-and-MySQL-database-programmability-employees-with-salary-above-number" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
-CREATE PROCEDURE usp_get_employees_salary_above(`decimal` DECIMAL(10,4))
-BEGIN
-	SELECT `first_name` , `last_name` FROM `employees`
-    WHERE `salary` = `decimal` OR `salary` > `decimal`
-    ORDER BY `first_name`, `last_name`, `employee_id`;
-END;
-CALL usp_get_employees_salary_above(45000);
+-- Write your query here
 ```
 [/code-editor]
 [code-adapter]
@@ -7117,8 +7106,6 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [task-description]
 # Description
 
-Use the database that is called "**SoftUni Database**".
-
 Write a stored procedure **usp_get_employees_by_salary_level** that receives a **salary level** (low, average, or high) as a parameter and prints the **names of all employees** that receive salaries within the given range. 
 
 The result should be sorted by **first_name** and then by **last_name**, both in descending order.
@@ -7133,7 +7120,6 @@ Here is the list of all employees with a **high salary**.
 | Laura  | Norman |
 | Ken | Sanchez |
 | ... | ... |
-
 
 
 [/task-description]
@@ -7188,6 +7174,7 @@ CALL usp_get_employees_by_salary_level ('low');
 ```
 [/input]
 [output]
+```
 Zheng
 Mu
 Zainal
@@ -7714,6 +7701,60 @@ Alan
 Brewer
 A. Scott
 Wright
+```
+[/output]
+[/test]
+[test]
+[input]
+CALL usp_get_employees_by_salary_level ('average');
+[/input]
+[output]
+Wendy
+Kahn
+Syed
+Abbas
+Sven
+Nakamura
+Stephen
+Jiang
+Stephanie
+Conroy
+Sheela
+Word
+Sharon
+Salavaria
+Roberto
+Tamburello
+Peter
+Connelly
+Michael
+Sullivan
+Michael
+Raheem
+Martin
+Kull
+Jossef
+Goldberg
+Gigi
+Matthew
+George
+Denis
+Gail
+Erickson
+Francois
+Ajenstat
+Diane
+Margheim
+David
+Liu
+David
+Bradley
+Dan
+Wilson
+Ashvini
+Sharma
+Amy
+Alberts
 [/output]
 [/test]
 [test]
@@ -7728,21 +7769,13 @@ CALL usp_get_employees_by_salary_level ('bla bla');
 [/code-task]
 [/slide]
 
+
 [slide hideTitle]
 # Problem: Define Function 
 [code-task title="Define Function" taskId="java-db-and-MySQL-database-programmability-define-function" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
 -- Write your query here
-CREATE FUNCTION ufn_is_word_comprised(set_of_letters varchar(50), word varchar(50))
-RETURNS bit
-BEGIN
-DECLARE output bit;
-
-SET output = word REGEXP CONCAT('^[', set_of_letters, ']+$');
-
-RETURN output;
-END
 ```
 [/code-editor]
 [code-adapter]
@@ -7876,11 +7909,6 @@ select ufn_is_word_comprised('a', 'aaa');
 [code-editor language=sql]
 ```
 -- Write your query here
-CREATE PROCEDURE usp_get_holders_full_name()
-BEGIN
-	SELECT CONCAT(first_name,' ',last_name) AS 'full_name' FROM account_holders AS ah
-    ORDER BY `full_name`, ah.id;
-END;
 ```
 [/code-editor]
 [code-adapter]
