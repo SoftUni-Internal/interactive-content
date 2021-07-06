@@ -6,7 +6,7 @@
 
 Your task is to **design** and **implement** a web application using Angular. 
 
-You can either use a service like Firebase for your **back-end**, create your own with Node.js and MongoDB or a framework in another language (ASP.NET, Spring, Symfony). 
+You can either use a service like Firebase for your **back-end**, create your own with Node.js and MongoDB, or a framework in another language (ASP.NET, Spring, Symfony). 
 
 Your project can be a discussion forum, blog system, e-commerce site, online gaming site, social network, or any other web application of your choice.
 
@@ -19,17 +19,17 @@ The application should have:
 ### Public Part
 The public part of your projects should be visible **without authentication**. 
 
-This public part could be the application start page, the user login and user registration forms, as well as the public data of the users, e.g. the blog posts in a blog system, the public offers in a bid system, the products in an e-commerce system, etc.
+This public part could be the application start page, the user login, and user registration forms, as well as the public data of the users, e.g. the blog posts in a blog system, the public offers in a bid system, the products in an e-commerce system, etc.
 
 ### Private Part (User Area)
 
-Registered users should have personal area in the web application **accessible after successful login**. 
+Registered users should have a personal area in the web application **accessible after successful login**. 
 
-This area could hold, for example, the user's profiles management functionality, the user's offers in a bid system, the user's posts in a blog system, the user's photos in a photo sharing system, the user's contacts in a social network, etc.
+This area could hold, for example, the user's profiles management functionality, the user's offers in a bid system, the user's posts in a blog system, the user's photos in a photo-sharing system, the user's contacts in a social network, etc.
 
 ## General Requirements
 
-Your Web application should use the following technologies, frameworks and development techniques:
+Your Web application should use the following technologies, frameworks, and development techniques:
 
 - At least 3 different **dynamic pages** (pages like about, contacts, login, register are not considered dynamic)
 
@@ -41,7 +41,7 @@ If your project **does not cover** this condition you will not be graded.
 
 - Implement **authentication**
 
-- Use a **source control system** like GitHub, Bitbucket etc
+- Use a **source control system** like GitHub, Bitbucket, etc.
 
 Commit inside the repository for at least 3 days.
 
@@ -53,7 +53,7 @@ Commit inside the repository for at least 3 days.
 
 - Good usability
 
-Good UI and UX (NGBootstrap, MDL, CSS Grids or another method of your choice)
+Good UI and UX (NGBootstrap, MDL, CSS Grids, or another method of your choice)
 
 ## Bonuses
 
@@ -85,6 +85,6 @@ Additional functionality or libraries outside the general requirements.
 
 ## Restrictions
 
-You can use **parts** (some components, routing configurations, form validation etc...) of the **course workshop**, but you are **NOT** allowed to use the **whole workshop** as your project assignment.
+You can use **parts** (some components, routing configurations, form validation, etc.) of the **course workshop**, but you are **NOT** allowed to use the **whole workshop** as your project assignment.
 
 [/slide]
