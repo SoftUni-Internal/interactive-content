@@ -44,7 +44,7 @@ Veți primi 3 linii de pe consolă:
 - Numărul biletelor - un număr întreg în intervalul [1 ... 30]
 
 ## Ieșire
-Imprimați un singur rând pe consolă: **"Your bill is** \{**$ total price**\}**"**
+Imprimați un singur rând pe consolă: **"Your bill is $**\{**total price**\}**"**
 
 Prețul trebuie formatat la două cifre după punctul zecimal.
 
