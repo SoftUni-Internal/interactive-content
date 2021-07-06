@@ -1920,6 +1920,7 @@ Ovidiu Cracium
 Tool Design
 ```
 [/output]
+[/test]
 [/tests]
 [/code-task]
 [/slide]
