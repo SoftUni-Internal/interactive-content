@@ -22,9 +22,9 @@ For the upcoming premiere of three popular productions, a local cinema has hired
 
 | -  | **John Wick** | **Star Wars**| **Jumanji** |
 |---|---|---|---|
-| Drink | 12$ | 18$ | 9$ |
-| Popcorn | 15$ | 25$ | 11$ |
-| Menu | 19$ | 30$ | 14$ |
+| Drink | $12 | $18 | $9 |
+| Popcorn | $15 | $25 | $11 |
+| Menu | $19 | $30 | $14 |
 
 Create a program that calculates the **total price** of the tickets.
 
@@ -43,14 +43,14 @@ You will receive 3 lines:
 - Number of the tickets – integer number in range [1 ... 30]
 
 ## Output
-Print out on a single line: **"Your bill is** \{**total price**\}**$"**
+Print out on a single line: **"Your bill is $**\{**total price**\}**"**
 
 The price must be formatted to the second digit after the decimal point.
 
 ## Example
 | **Input** | **Output** |
 | --- | --- | 
-| John Wick | Your bill is 72.00$ | 
+| John Wick | Your bill is $72.00 | 
 | Drink | 
 | 6 | 
 
@@ -75,7 +75,7 @@ Drink
 6
 [/input]
 [output]
-Your bill is 72.00$
+Your bill is $72.00
 [/output]
 [/test]
 [test]
@@ -85,7 +85,7 @@ Drink
 23
 [/input]
 [output]
-Your bill is 276.00$
+Your bill is $276.00
 [/output]
 [/test]
 [test]
@@ -95,7 +95,7 @@ Popcorn
 11
 [/input]
 [output]
-Your bill is 165.00$
+Your bill is $165.00
 [/output]
 [/test]
 [test]
@@ -105,7 +105,7 @@ Menu
 8
 [/input]
 [output]
-Your bill is 152.00$
+Your bill is $152.00
 [/output]
 [/test]
 [test]
@@ -115,7 +115,7 @@ Drink
 10
 [/input]
 [output]
-Your bill is 126.00$
+Your bill is $126.00
 [/output]
 [/test]
 [test]
@@ -125,7 +125,7 @@ Popcorn
 3
 [/input]
 [output]
-Your bill is 75.00$
+Your bill is $75.00
 [/output]
 [/test]
 [test]
@@ -135,7 +135,7 @@ Menu
 1
 [/input]
 [output]
-Your bill is 30.00$
+Your bill is $30.00
 [/output]
 [/test]
 [test]
@@ -145,7 +145,7 @@ Drink
 2
 [/input]
 [output]
-Your bill is 15.30$
+Your bill is $15.30
 [/output]
 [/test]
 [test]
@@ -155,7 +155,7 @@ Popcorn
 1
 [/input]
 [output]
-Your bill is 11.00$
+Your bill is $11.00
 [/output]
 [/test]
 [test]
@@ -165,7 +165,7 @@ Menu
 3
 [/input]
 [output]
-Your bill is 42.00$
+Your bill is $42.00
 [/output]
 [/test]
 [/tests]
