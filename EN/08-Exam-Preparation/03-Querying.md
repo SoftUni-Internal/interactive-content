@@ -1,4 +1,4 @@
-# Section Three
+
 [slide hideTitle]
 # Querying 
 

@@ -1,5 +1,3 @@
-# Section Two 
-
 [slide hideTitle]
 
 # Data Manipulation Language (DML)

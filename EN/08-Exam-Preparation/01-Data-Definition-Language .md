@@ -1,4 +1,4 @@
-# Section One
+
 [slide hideTitle]
 # Data Definition Language (DDL)
 
@@ -48,7 +48,7 @@ You have been tasked to create the tables in the database by the following model
 | --- | --- |--- | 
 | **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
 | **description** | Very big String. | **NULL is NOT** permitted. |
-| **date** | The exact date and time. | **DEFAULT value is 0.** **NULL is NOT** permitted. |
+| **date** | The exact date and time. | **NULL is NOT** permitted. |
 |**views**|**Integer**, from **1 to 2 147 483 647**.|**DEFAULT value is 0.** **NULL is NOT** permitted.|
 
 ## Comments
@@ -60,17 +60,6 @@ You have been tasked to create the tables in the database by the following model
 | **date** | The exact date and time. | **NULL is NOT** permitted. |
 | **photo_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table **photos**. **NULL is NOT** permitted. |
 
-## Cars
-
-| **Column Name** |**Data Type** |**Constraints** |
-| --- | --- |--- | 
-| **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
-| **make** | A **string** containing a maximum of **20 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
-| **model** | A **string** containing a maximum of **30 characters**. Unicode is **NOT** needed. | **NULL is** permitted. |
-| **year** | **Integer**, from **1 to 2 147 483 647**. | **DEFAULT** value is 0, **NULL is NOT** permitted.|
-| **mileage** | **Integer**, from **1 to 2 147 483 647**. | **DEFAULT value is 0**, **NULL** is permitted. |
-| **condition** | **Character** that shows the **condition** of the car.  One character. | **NULL is NOT** permitted. |
-| **category_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table "**categories**". **NULL is NOT** permitted. |
 
 ## Users_photos
 
@@ -92,7 +81,7 @@ Submit your solutions in Judge on the first task.
 
 Submit **all** SQL table creation statements.
 
-You will also be given a [data.sql]() file. 
+You will also be given a [data.sql](https://videos.softuni.org/resources/java/java-mysql/01-Exam-Preparation-Table-Design.zip) file. 
 
 It will contain a **dataset** with random data which you will need to **store** in your **local database**. 
 

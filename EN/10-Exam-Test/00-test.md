@@ -1,6 +1,0 @@
-[slide hideTitle]
-
-
-# TestTest
-
-[/slide]

@@ -1,4 +1,3 @@
-# Section Four
 [slide hideTitle]
 # Programmability 
 
