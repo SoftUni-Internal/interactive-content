@@ -1469,7 +1469,7 @@ De exemplu, dacă avem următoarea expresie
 
 [hints]
 [hint]
-Create an **operations** object with property methods for **each** arithmetic operation:
+Creați un obiect **"operations"** cu metode pentru **fiecare** operație aritmetică:
 
 ```js
 const operations = {
@@ -1480,10 +1480,10 @@ const operations = {
 };
 ```
 
-Get the **value** of the current click target.
+Obțineți **valoarea** țintei click curente.
 [/hint] 
 [hint]
-Obtain the **pad** using the `keys` classname and attach an event listener to it:
+Obțineți **tastatura** folosind numele de clasă `keys` și atașați la ea un ascultător de evenimente:
 
 ```js
 const pad = document
@@ -1496,10 +1496,10 @@ pad.addEventListener('click', (e) => {
 })
 ```
 
-Get the **value** of the current click target.
+Obțineți **valoarea** țintei click curente. 
 [/hint] 
 [hint]
-If the user presses on the **equal** sign, you should display the result in the `resultOutput` div:
+Dacă utilizatorul apasă pe semnul **egal**, trebuie să afișați rezultatul în div-ul `resultOutput`:
 
 ```js
 if (value === '=') {
@@ -1518,7 +1518,7 @@ if (value === '=') {
 ```
 [/hint] 
 [hint]
-If they press on any of the **arithmetic operators**, update `expressionOutput`'s `innerHTML` with the **" {sign} "** syntax:
+Dacă apasă pe oricare dintre **operatorii aritmetici**, actualizați `innerHTML` al `expressionOutput` cu sintaxa **" {sign} "**: 
 
 ```js
 if (operators.includes(value)) {

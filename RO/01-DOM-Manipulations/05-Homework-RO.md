@@ -35,7 +35,7 @@ Adăugați un **click event listener** fiecărui **div** care afișează paragra
 
 [hints]
 [hint]
-Iterate through the input with a **for-of** loop:
+Iterați prin datele de intrare cu ajutorul unei bucle **for-of**:
  
 ```js       
 for (let word of input) {
@@ -44,20 +44,20 @@ for (let word of input) {
 }
 ```
 
-Create new **div** and **paragraph** elements for each word.
+Creați elemente noi **div** și **paragraph** pentru fiecare cuvânt.
 [/hint] 
 [hint]
-Set the **text content** of the paragraph to the value of the current word.
+Setați proprietatea **textContent** a paragrafului la valoarea cuvântului curent.
 
 ```js
 pElement.textContent = word;
 pElement.style.display = 'none';
 ```
 
-Set the `display` property to `none` to hide it.
+Setați proprietatea `display` la `none` pentru a o ascunde.
 [/hint] 
 [hint]
-Append the paragraph to the div and add a `click` event listener.
+Adăugați paragraful la div și adăugați un ascultător de evenimente `click`.
 
 ```js
 divElement.appendChild(pElement);
@@ -69,7 +69,7 @@ divElement.addEventListener('click', () => {
 content.appendChild(divElement);
 ```
 
-Finally, append the div to the `#content` element.
+La final, adăugați div-ul la elementul `#content`.
 [/hint] 
 [/hints] 
 
