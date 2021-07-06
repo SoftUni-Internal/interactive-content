@@ -1,11 +1,48 @@
-// sectionId: "Javascript::Programming-Basics::Expressions-and-Statements::Variables"
+// sectionId: "Javascript::Programming-Basics::Expressions-and-Statements::Lesson-Introduction"
 
-# Variables and Storing Data
+# Lesson Introduction
 
 [slide hideTitle]
-# Real Life Example
 
-[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-4-Real-life-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Lesson Content
+
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-1-2-Introduction-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## In this lesson you will learn:
+
+**1. Variables: Declaring, Reading, Modifying**
+
+- Create and use variables
+
+**2. Data Types: Numbers, Text, Others**
+
+- Different data types in JavaScript
+
+**3. Statements (Commands)**
+
+- How to write commands
+
+**4. Reading User Input and Formatting Output**
+
+- Print output to the console
+
+**2. Arithmetic Operators: +, -, * and /**
+
+- How to manipulate variables
+
+**6. Expressions**
+
+- How to combine values and operators
+
+**7. Practical Exercises**
+
+[/slide]
+
+
+[slide hideTitle]
+# Variables and Real Life Example
+
+[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-4-5-6-Real-life-example-Variables-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 If we think of the variables as boxes that hold information, this is how they would look:
 
