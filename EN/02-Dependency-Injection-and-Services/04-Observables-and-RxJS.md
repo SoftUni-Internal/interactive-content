@@ -227,7 +227,7 @@ To conclude, hot observables create a **data producer** first, and each **subscr
 
 # Commonly Used RxJS Operators
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/30-Commonly-Used-RxJS-Operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/30-Commonly-Used-RxJS-Operators-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 These are some of the more commonly used operators in RxJS:
 

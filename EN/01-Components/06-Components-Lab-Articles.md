@@ -309,6 +309,8 @@ We can also do this in the `ngOnInit` lifecycle hook.
 
 # Implement The Read More Function
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-Lab-9-10-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Each time we click on `readMore()`, we have to **increase** the article description length with 250 symbols and, if the new length is **more** than the **actual** description length, we have to change **both boolean** properties accordingly. 
 
 If the new length is **less** than the actual one, we have to **change** the "description to show". 

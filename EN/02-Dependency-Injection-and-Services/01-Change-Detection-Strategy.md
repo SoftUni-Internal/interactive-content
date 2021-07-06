@@ -4,7 +4,7 @@
 
 # What is Change Detection?
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/3-4-Change-Detection-Strategy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/3-4-Change-Detection-Strategy-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When we make **changes** to the data in our components, the view updates **automatically**.
 
@@ -61,7 +61,7 @@ We will learn what `onPush` means in the next video.
 
 # Change Detection Strategy - Members
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/5-Change-Detection-Strategy-Members-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/5-Change-Detection-Strategy-Members-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 `ChangeDetectionStrategy` has two members:
 

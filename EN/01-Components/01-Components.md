@@ -4,6 +4,8 @@
 
 # The Idea Behind Components
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-3-4-5-Components-the-idea-behind-it-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Components are the building blocks of all Angular applications. 
 
 We define a component's behavior using a TypeScript class.

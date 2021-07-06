@@ -92,7 +92,7 @@ The main intention of ISP is to keep a system **decoupled**, resulting in easier
 
 # Dependency Inversion Principle
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/11-12-Dependency-Inversion-Principle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/11-12-Dependency-Inversion-Principle-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **Dependency Inversion Principle** (DIP) states that:
 
@@ -197,7 +197,7 @@ To inject a dependency in a **class**, we use the **constructor**, in which we c
 
 # Classic Violations
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/15-Classic-Violations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/03-Dependency-Injections/15-Classic-Violations-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We **should not** use the `new` keyword inside the constructor or use **static** methods and properties.
 

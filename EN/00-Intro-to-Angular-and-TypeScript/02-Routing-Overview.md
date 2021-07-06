@@ -44,7 +44,7 @@ Here are **some pages**, which are waiting to be **rendered** on the server once
 
 # Single Page Application
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-10-Single-Page-Applications-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-10-Single-Page-Applications-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Router navigation** will load the corresponding resource when the **location is changed**.
 
