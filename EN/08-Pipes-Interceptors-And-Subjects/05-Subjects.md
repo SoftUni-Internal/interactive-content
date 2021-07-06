@@ -4,7 +4,7 @@
 
 # What is a Subject?
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-27-28-Subjects-and-what-is-a-subject-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-27-28-29-Subjects-and-what-is-a-subject-and-example-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Observables are kind of **passive because we can not trigger the emission** of a new value manually, which might **not be optimal in some cases**.
 
@@ -58,7 +58,7 @@ Observer Two: Goodbye
 
 # Behavior Subject
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-30-Behavior-Subject-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-30-31-Behavior-Subject-example-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `BehaviorSubject` stores the "current" value, which means that the **latest emitted value** can be always retrieved.
 
@@ -107,7 +107,7 @@ Second Observer: 8
 
 # Replay Subject
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-32-Replay-Subject-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-32-33-Replay-Subject-example-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A `ReplaySubject` can send **old values** to **new subscribers**, similarly to a `BehaviorSubject`.
 
@@ -160,7 +160,7 @@ Observer Two: D
 
 # Async Subject
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-34-Async-Subject-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-34-35-Async-Subject-example-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `AsyncSubject` emits only the **last value it received** to its subscribers.
 

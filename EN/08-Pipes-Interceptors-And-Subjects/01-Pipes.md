@@ -29,7 +29,7 @@ Some of the **build-in pipes** are:
 
 # Parameterizing Pipes
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-5-Parameterizing-Pipes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-5-Parameterizing-Pipes-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Some pipes can also accept parameters.
 
@@ -60,7 +60,7 @@ To learn about **other built-in pipes**, visit Angular's [documentation](https:/
 
 # Creating Pipes
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-6-7-Creating-Pipes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-6-7-Creating-Pipes-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The easiest way to create a **custom pipe** is by using the Angular CLI:
 

@@ -155,7 +155,7 @@ Depending on that, it decides to either **return** a modified state or the curre
 
 # Defining a Reducer Function
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/12-Define-a-Reducer-Function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/12-Define-a-Reducer-Function-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **Reducer Function** will be used to **modify the state in the Counter Component** based on the **Аctions** we created earlier.
 
@@ -326,6 +326,6 @@ We have the following **buttons**:
 
 # NgRx: Demo
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/11-NgRx-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/11-State-Management/11-NgRx-Demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

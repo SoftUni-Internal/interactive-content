@@ -4,7 +4,7 @@
 
 ## In this lesson you learned:
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-49-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-49-Summary-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - There are three types of **directives**:
     * we use **component** directives to define user interfaces    

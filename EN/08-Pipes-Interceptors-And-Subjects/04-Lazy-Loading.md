@@ -32,7 +32,7 @@ Any of these **additional modules** will **not** be loaded until the user reache
 
 # Preparing for Lazy Loading
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-23-Preparing-for-Lazy-Loading-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-23-24-Preparing-for-Lazy-Loading-and-warning-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To **prepare** for **lazy loading**, create a **feature module** with the CLI:
 

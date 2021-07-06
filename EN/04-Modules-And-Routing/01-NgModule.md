@@ -4,7 +4,7 @@
 
 # Angular Modules Overview
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-3-4-The-NgModule-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-3-4-The-NgModule-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 An Angular module is a deployment **subset** of your whole Angular application.
 
@@ -183,10 +183,6 @@ You can find more information about NgModules in the [Angular guide](https://ang
 
 # Feature Modules: Demo
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-creating-feature-module-demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
-" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-rendering-a-feature-module-component-template-demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
-" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/05-Modules-and-Routing/Angular-Modules-and-routing-creating-feature-module-and-component-template-1-2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

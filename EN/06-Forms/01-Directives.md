@@ -127,7 +127,7 @@ There are three main structural directives in Angular: `*ngIf`, `*ngFor`, and `*
 
 # Building a Simple Attribute Directive
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-6-Build-a-Simple-Attribute-Directive-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-6-Build-a-Simple-Attribute-Directive-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 An attribute directive requires building a controller class annotated with the `@Directive` decorator.
 

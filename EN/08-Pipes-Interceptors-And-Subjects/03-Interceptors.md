@@ -4,7 +4,7 @@
 
 # Interceptors Overview
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-14-15-HTTP-Interceptors-and-interceptors-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-14-15-HTTP-Interceptors-and-interceptors-overview-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **HTTP interceptors** are a feature in Angular that **provides a great way to intercept outgoing requests** or incoming responses by using `HttpClient`.
 
@@ -27,7 +27,7 @@ In **Angular 4 and newer versions**, intercepting is implemented using the `Http
 
 # Creating an HTTP Interceptor
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-16-Create-Http-Interceptor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/09-Pipes-Interceptors-and-Subjects/js-interactive-pipes-interceptors-and-subjects-16-Create-Http-Interceptor-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The easiest way to create an interceptor is by using the **Angular CLI**:
 
