@@ -60,7 +60,7 @@ Good UI and UX (NGBootstrap, MDL, CSS Grids, or another method of your choice)
 - Deploy the application in a cloud environment
 - Use a **file storage cloud API**, e.g. **Dropbox**, **Google Drive** or other for storing the files
 
-- Use of features of HTML 5 like Geolocation, SVG, Canvas, etc
+- Use of features of HTML 5 like Geolocation, SVG, Canvas, etc.
 
 - Use **Angular Animations** somewhere in your application
 
