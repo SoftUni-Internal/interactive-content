@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Lab: Spring Data – Account System
+# Lab: Spring Data - Account System
 
 Your task is to create a simple account system that has users with accounts and manages money transfer or withdrawal.
 
@@ -54,11 +54,11 @@ logging.level.org.hibernate.type.descriptor = TRACE
 
 Start splitting the java directory into packages. Create several ones to help you organize your project:
 
-- **models** – the directory of our database models(entities)
+- **models** - the directory of our database models(entities)
 
-- **repositories** – the package where we will hold the repository interfaces
+- **repositories** - the package where we will hold the repository interfaces
 
-- **services** – where our service interfaces and implementations will be stored
+- **services** - where our service interfaces and implementations will be stored
 
 [/slide]
 
@@ -124,7 +124,7 @@ read…By, query…By, count…By, and get…By.
 You can add more criteria by concatenating And and Or or apply ordering with OrderBy with sorting direction Asc or Desc.
 
 
-Create two Repository **interfaces** – **UserRepository** and **AccountRepository**. 
+Create two Repository **interfaces** - **UserRepository** and **AccountRepository**. 
 
 ```java
 @Repository
@@ -182,7 +182,7 @@ Implement those services with classes **AccountServiceImpl** and **UserServiceIm
 
 Those classes will do the business logic of the application. 
 
-In order to do that, they should have certain type of **Repository** available – **AccountRepository** or **UserRepository** according to the service type.
+In order to do that, they should have certain type of **Repository** available - **AccountRepository** or **UserRepository** according to the service type.
 
 ```java
 @Service
@@ -223,11 +223,11 @@ The **@Autowired** annotation is required when **injecting a resource**, e.g. **
 The implementation of the methods is up to you. Here are some several tips:
 
 -  **AccountServiceImpl**
-    - -	Money withdrawal – should only happen if account is **present** in the database, **belongs to user** and **has enough balance**
-    - -	Money transfer – should only happen if **account belongs to user** and transfer value is **not negative**
+    - -	Money withdrawal - should only happen if account is **present** in the database, **belongs to user** and **has enough balance**
+    - -	Money transfer - should only happen if **account belongs to user** and transfer value is **not negative**
 
 - **UserServiceImpl**
-    -	**User registration** – should only happen if user does not exist in the database
+    -	**User registration** - should only happen if user does not exist in the database
 [/slide]
 
 [slide hideTitle]

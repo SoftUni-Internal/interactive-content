@@ -18,7 +18,7 @@ It needs to hold the information of all the tickets, that are being bought, all 
 
 The application should be able to easily **import** hard-formatted data and **support functionality** for also **exporting** the imported data. 
 
-The application is called – **Airline App**.
+The application is called - **Airline App**.
 
 Look at the pictures below to see what must happen:
 

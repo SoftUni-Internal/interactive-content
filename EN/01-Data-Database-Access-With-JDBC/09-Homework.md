@@ -76,7 +76,7 @@ In case the town of the minion is not in the database, insert it as well.
 
 In case the villain is not present in the database, add him too with the default evilness factor of “evil”. Finally, set the new minion to be a servant of the villain. 
 
-Print appropriate messages after each operation – see the examples.
+Print appropriate messages after each operation - see the examples.
 
 ## Example
 
@@ -140,7 +140,7 @@ For the output use the format given in the examples.
 # 7. Print All Minion Names
 
 ## Description
-Write a program that **prints all minion** names from the minion's table **in order** first record, last record, first + 1, last – 1, first + 2, last – 2… first + n, last – n. 
+Write a program that **prints all minion** names from the minion's table **in order** first record, last record, first + 1, last - 1, first + 2, last - 2… first + n, last - n. 
 
 ## Example
 

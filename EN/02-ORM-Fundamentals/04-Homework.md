@@ -40,7 +40,7 @@ Initially, no database driver is imported. Do that using Maven by adding a depen
 
 In the means of ORMs, database objects are mapped to object-oriented implementations called **“entities”**.
 
-They are objects that analogically to database tables, for example - users, hold fields containing user’s main characteristics – **id**, **username**, **first_name**, **last_name**, **age** etc.
+They are objects that analogically to database tables, for example - users, hold fields containing user’s main characteristics - **id**, **username**, **first_name**, **last_name**, **age** etc.
 
 In the "java" folder create a package called **entities** where every one of our entities will be.
 
@@ -66,11 +66,11 @@ Create a new package called **orm** and a **class Connector** in it that generat
 
 In order to achieve this, we would require the following parameters:
 
-- **Username** – database username
+- **Username** - database username
 
-- **Password** – database password
+- **Password** - database password
 
-- **Database Name** – the current database for the project. We need to create one manually
+- **Database Name** - the current database for the project. We need to create one manually
 
 [image assetsSrc="Java-ORM-Fundamentals-Homework-5.jpg" /]
 
@@ -84,15 +84,15 @@ Let us create an interface that will define the operations we can perform with t
 
 Define the following methods in it.
 
-- **boolean persist**(**E entity**) – it will insert or update an entity depending if it is attached to the context
+- **boolean persist**(**E entity**) - it will insert or update an entity depending if it is attached to the context
 
-- **Iterable**\<**E**\> **find**(**Class**\<**E**\> **table**) – returns collection of all entity objects of type **E**
+- **Iterable**\<**E**\> **find**(**Class**\<**E**\> **table**) - returns collection of all entity objects of type **E**
 
-- **Iterable**\<**E**\> **find**(**Class**\<**E**\> **table**, **String** **where**) – returns collection of all entity objects of type **T** matching the criteria given in **“where”**
+- **Iterable**\<**E**\> **find**(**Class**\<**E**\> **table**, **String** **where**) - returns collection of all entity objects of type **T** matching the criteria given in **“where”**
 
-- **E findFirst**(**Class**\<**E**\> **table**) – returns the first entity object of type **E**
+- **E findFirst**(**Class**\<**E**\> **table**) - returns the first entity object of type **E**
 
-- **E findFirst**(**Class**\<**E**\> **table**, **String** **where**) – returns the first entity object of type **E** matching the criteria given in “where”
+- **E findFirst**(**Class**\<**E**\> **table**, **String** **where**) - returns the first entity object of type **E** matching the criteria given in “where”
 
 [image assetsSrc="Java-ORM-Fundamentals-Homework-6.jpg" /]
 
@@ -126,7 +126,7 @@ The method returns whether the object was **successfully persisted** in the data
 
 We can do check if the user is in the database by using the value of its **id** field. If it is not empty that means we are trying to insert it.
 
-But the method works with a generic type – **E** and we do not have direct access to its **getter** methods.
+But the method works with a generic type - **E** and we do not have direct access to its **getter** methods.
 
 In order to minimize specifics and work with other entities in the future (not only **User**) we have to access the field some other way.
 
@@ -148,8 +148,8 @@ Create 3 annotations **Entity**, **Column**, and **Id**.
 
 **Annotate entities and their corresponding fields**.
 
-In the **Entity** annotation, specify the name of the database table you want to be mapped – **users**.
-In **Column** annotation – the corresponding table column name to the java field.
+In the **Entity** annotation, specify the name of the database table you want to be mapped - **users**.
+In **Column** annotation - the corresponding table column name to the java field.
 
 We are going to need a new additional method **getId** (**Class entity**) in the **EntityManager** class. It will return the **id** field via reflection:
 
@@ -177,7 +177,7 @@ The **иd** is generated on a database level. Both methods return whether the en
 
 Here are some tips for the **Insert** method:
 - Get the table name you will be inserting into
-- Start joining the components of your query – **INSERT** clause, table name + fields, **VALUES** and the corresponding values for the insertion
+- Start joining the components of your query - **INSERT** clause, table name + fields, **VALUES** and the corresponding values for the insertion
 
 **HINT**: Iterate over the fields of the entity.
 
@@ -187,7 +187,7 @@ Here are some tips for the **Insert** method:
 
 And some tips for the **Update** method:
 - Get the table name you will be updating into
-- Start joining the components of your query – **UPDATE** clause, table name, **SET**, **WHERE** and the given predicate
+- Start joining the components of your query - **UPDATE** clause, table name, **SET**, **WHERE** and the given predicate
 
 **HINT**: Iterate over the fields of the entity and add: `id = \{id\}”` to the **WHERE** clause
 

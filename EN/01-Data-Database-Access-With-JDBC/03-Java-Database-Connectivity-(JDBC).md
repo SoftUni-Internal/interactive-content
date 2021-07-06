@@ -1,27 +1,25 @@
-[slide hideTitle]
-
 # Client Access To A Database
 
-## Java Database Connectivity (JDBC)
+[slide hideTitle]
+# Java Database Connectivity (JDBC)
 
-- JDBC is a standard Java API for database-independent connectivity.
+- JDBC is a standard Java API for database-independent connectivity
 - Includes APIs for:
-  - Making a connection to a database.
-  - Creating and executing **SQL** queries in the database.
-  - Viewing & Modifying the resulting records.
+  - making a connection to a database
+  - creating and executing **SQL** queries in the database
+  - viewing & Modifying the resulting records
 
 [/slide]
 
 [slide hideTitle]
-
-## JDBC Architecture
+# JDBC Architecture
 
 [image assetsSrc="Spring-Data-Database-Access-With-JDBC.png" /]
 
-- JDBC **API** – provides the connection between the application and the driver manager.
-- JDBC **Driver Manager** – establishes the connection with the correct driver.
-  - Supports multiple drivers connected to different types of databases.
-- JDBC **Driver** - handles the communications with the database.
+- JDBC **API** - provides the connection between the application and the driver manager
+- JDBC **Driver Manager** - establishes the connection with the correct driver
+  - supports multiple drivers connected to different types of databases
+- JDBC **Driver** - handles the communications with the database
 
 [/slide]
 
@@ -30,11 +28,11 @@
 # JDBC API
 
 - JDBC API provides several interfaces and classes:
-  - DriverManager – matches requests from the application with the proper DB driver
-  - Driver – handles the communication with the DB server
-  - Connection – all methods for contacting a database
-  - Statement – methods and properties that enable you to send SQL
-  - ResultSet – retrieved data (set of table rows)
+  - driverManager - matches requests from the application with the proper DB driver
+  - driver - handles the communication with the DB server
+  - connection - all methods for contacting a database
+  - statement - methods and properties that enable you to send SQL
+  - resultSet - retrieved data (set of table rows)
   - SQLException
 
 [/slide]
@@ -44,8 +42,8 @@
 # JDBC API - ResultSet Class
 
 - ResultSet maintains a **cursor** pointing to its current row of data
-  - Not updatable
-  - Iterable only once and only from the first row to the last row
+  - not updatable
+  - iterable only once and only from the first row to the last row
 - Provides getter methods for retrieving column values from the current row
 
 Example:
@@ -59,9 +57,9 @@ Retrieved information is reached by getter methods:
 
 Example:
 
-- getString("column_name")
-- getDouble("column_name")
-- getBoolean("column_name") etc.
+- `getString("column_name")`
+- `getDouble("column_name")`
+- `getBoolean("column_name")` etc.
 
 The driver converts the underlying data to the Java type.
 
@@ -71,20 +69,18 @@ The driver converts the underlying data to the Java type.
 
 ## Java.sql and MySQL Driver
 
-- The java.sql package provides all previously mentioned JDBC classes.
-- In order to work with JDBC we need to download a MySQL Driver – Connector/J.
-- It can be found on the following webpage:
-
-https://dev.mysql.com/downloads/connector/j/
+- The java.sql package provides all previously mentioned JDBC classes
+- In order to work with JDBC we need to download a MySQL Driver - Connector/J
+- It can be found on the following [webpage](https://dev.mysql.com/downloads/connector/j/)
 
 [/slide]
 
 [slide hideTitle]
 
-## MySQL Driver Connection
+# MySQL Driver Connection
 
-- Connection with the database is established via **connection string**.
-  - jdbc:<driver protocol>:<connection details>
+- Connection with the database is established via **connection string**
+  - jdbc: `<driver protocol>:<connection details>`
 
 Example:
 
@@ -97,7 +93,7 @@ Connection c = DriverManager.getConnection(
 
 [slide hideTitle]
 
-## Setting Up The Driver In IntelliJ IDEA
+# Setting Up The Driver In IntelliJ IDEA
 
 [image assetsSrc="Spring-Data-Database-Access-With-JDBC(1).png" /]
 

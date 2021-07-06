@@ -23,7 +23,7 @@ Randomly **generate categories** for each product from the existing categories.
 
 Create the queries that are described below and **export** the returned data to the specified **format**. 
 
-## Query 1 – Products in Range
+## Query 1 - Products in Range
 
 Get all products in a specified **price range** (e.g. 500 to 1000), which have **not been bought**.
 
@@ -44,7 +44,7 @@ Export the result to an XML file.
 
 ```
 
-## Query 2 – Successfully Sold Products
+## Query 2 - Successfully Sold Products
 
 Get all users, who have **sold at least 1 item**.
 
@@ -79,7 +79,7 @@ For each of the **products sold** (products with buyers), select the **name** an
 </users>
 ```
 
-## Query 3 – Categories by Products Count
+## Query 3 - Categories by Products Count
 
 Get **all categories**.
 
@@ -104,7 +104,7 @@ For each category, select the **name**, the **number of products**, the **averag
 </categories>
 ```
 
-## Query 4 – Users and Products
+## Query 4 - Users and Products
 
 Get all users, who have **sold at least 1 product**.
 
@@ -162,7 +162,7 @@ Finally, import the **sales records** by **randomly** selecting a **car,** a **c
 
 Create the queries described below and **export** the returned data to the specified **format**.
 
-## Query 1 – Ordered Customers
+## Query 1 - Ordered Customers
 
 Get all **customers** ordered by their **birth date** in **ascending order**.
 
@@ -189,7 +189,7 @@ If two customers are born on the same date, **first print those, who are not you
 </customers>
 ```
 
-## Query 2 – Cars from Make Toyota
+## Query 2 - Cars from Make Toyota
 
 Get all **cars** manufactured by **Toyota** and **order them by model alphabetically**, then by **travelled distance in descending order**.
 
@@ -204,7 +204,7 @@ Get all **cars** manufactured by **Toyota** and **order them by model alphabetic
 </cars>
 ```
 
-## Query 3 – Local Suppliers
+## Query 3 - Local Suppliers
 
 Get all **suppliers** that **do not import parts from abroad**. Get their **id**, **name,** and **the number of parts they can offer to supply**. **Export** the list of suppliers **to XML** in the format provided below.
 
@@ -217,7 +217,7 @@ Get all **suppliers** that **do not import parts from abroad**. Get their **id**
 </suppliers>
 ```
 
-## Query 4 – Cars with Their List of Parts
+## Query 4 - Cars with Their List of Parts
 
 Get all **cars along with their list of parts**.
 
@@ -247,7 +247,7 @@ For the **car** get only **make, model,** and **travelled distance** and for the
 </cars>
 ```
 
-## Query 5 – Total Sales by Customer
+## Query 5 - Total Sales by Customer
 
 Get all **customers** that have bought **at least 1 car** and get their **names**, **count of cars bought** and **total money spent** on cars.
 
@@ -265,7 +265,7 @@ Get all **customers** that have bought **at least 1 car** and get their **names*
 </customer>
 ```
 
-## Query 6 – Sales with Applied Discount
+## Query 6 - Sales with Applied Discount
 
 Get all **sales** with information about the **car**, the **customer** and the **price** of the sale **with or without discount**.
 

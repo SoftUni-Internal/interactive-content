@@ -10,7 +10,7 @@ You have been employed by the Next Level Technologies Ltd. to finish the databas
 
 ## Description
 
-The firm has hired you as their application developer, to implement the **database layer**. The application should be able to easily **import** hard-formatted data and **support functionality** for also **exporting** the imported data. The application is called – **Football info**.
+The firm has hired you as their application developer, to implement the **database layer**. The application should be able to easily **import** hard-formatted data and **support functionality** for also **exporting** the imported data. The application is called - **Football info**.
 
 Look at the pictures below to see what must happen:
 

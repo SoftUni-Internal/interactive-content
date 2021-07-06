@@ -11,27 +11,27 @@ Design them in the **most appropriate** way, considering the following **data co
 
 ### Picture
 
-- **id** – **integer** number, **primary identification field**.
-- **url** – a **string (required)**.
+- **id** - **integer** number, **primary identification field**.
+- **url** - a **string (required)**.
 
 
 ### Team
 
-- **id** – **integer** number, **primary identification field**. 
-- **name** – a **string (required)** between 3 and 20 characters.
-- **picture** – a **Picture entity (required)**.
+- **id** - **integer** number, **primary identification field**. 
+- **name** - a **string (required)** between 3 and 20 characters.
+- **picture** - a **Picture entity (required)**.
 
 ### Player
 
-- **id** – **integer** number, **primary identification field**.
-- **first_name** – a **string (required)**.
-- **last_name** – a **string (required)** between 3 and 15 characters.
-- **number** – a Integer **(required)** between 1 and 99.
-- **salary** – a **BigDecimal (required)** min 0.
-- **position** – an **ENUM (required)**.
+- **id** - **integer** number, **primary identification field**.
+- **first_name** - a **string (required)**.
+- **last_name** - a **string (required)** between 3 and 15 characters.
+- **number** - a Integer **(required)** between 1 and 99.
+- **salary** - a **BigDecimal (required)** min 0.
+- **position** - an **ENUM (required)**.
     - **GK, CD, RB, LB, CM, DM, CDM, LM, RM, ST, CF, RW, LW**.
-- **picture** – a **Picture entity (required)**.
-- **team** – a **Team entity (required)**.
+- **picture** - a **Picture entity (required)**.
+- **team** - a **Team entity (required)**.
 
 **NOTE:** Name the entities and their class members, **exactly** in the **format stated** above. Do not name them in snake case with the dashes, of course. 
 

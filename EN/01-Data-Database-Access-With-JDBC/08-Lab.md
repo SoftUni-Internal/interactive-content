@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Part 0: Inspect SoftUni DB.
+# Part 0: Inspect SoftUni DB
 
 _Download the resources needed for this lesson from here:_ [Mega.nz](https://mega.nz/file/nQJjnI6I#hOJyBRhNPDz39xDXVlwY-zKJhc66jiDBrkzS4tEl75c)
 
@@ -18,7 +18,7 @@ _Download the resources needed for this lesson from here:_ [Mega.nz](https://meg
 
 ## Description 
 
-You are given a simple java program that opens a connection to a local database server and retrieves the following data – first name and last name from the “soft_uni” database. 
+You are given a simple java program that opens a connection to a local database server and retrieves the following data - first name and last name from the “soft_uni” database. 
 
 The data is filtered by salary criteria, which is given by the user at the input. 
 
@@ -64,21 +64,21 @@ The username and the password are given beforehand by the input.
 
 They are passed as an argument to the **DriverManager** static class’s method **getConnection** via the props instance.
 
-The **getConnection** method is a static method, which establishes a connection, for which the **DriverManager** selects the appropriate driver – the **MySQL Connector/J driver** in our case.
+The **getConnection** method is a static method, which establishes a connection, for which the **DriverManager** selects the appropriate driver - the **MySQL Connector/J driver** in our case.
 
-The **getConnection** method requires a second argument – a **connection string**. 
+The **getConnection** method requires a second argument - a **connection string**. 
 
 A **connection string** is a string, which holds information about the data source and consists of a database name and other parameters required to establish an initial connection. 
 
 In our case these parameters are:
 
--   host and port of our local server – **localhost:3306**.
+-   host and port of our local server - **localhost:3306**.
 
--   database name – can be diverse, but by the means of our assignment, it is **soft_uni**.
+-   database name - can be diverse, but by the means of our assignment, it is **soft_uni**.
 
--   user – by default **root**, or any other **specified by the user**.
+-   user - by default **root**, or any other **specified by the user**.
 
--   password – user password for connection if there is one.
+-   password - user password for connection if there is one.
 
 Remember that the user and the password are already included in the **Properties** instance **props**.
 
@@ -103,13 +103,13 @@ The user is asked to set the salary criteria, by which we will filter the result
 
 Then we use the **connection** to prepare a **PreparedStatement** and pass an unfinished SQL query, to which we must append the value for the salary criteria. 
 
-The question mark is a placeholder for that value. The **setDouble** method accepts two parameters – the index of the parameter to be replaced and the value. 
+The question mark is a placeholder for that value. The **setDouble** method accepts two parameters - the index of the parameter to be replaced and the value. 
 
 If we had done plain concatenation using only **Statement** and appended the value for the **salary** to the query, we would have made our program vulnerable to SQL Injection, because we wouldn’t be checking the value. 
 
 It could be another SQL query, which in the worst case would harm our database. 
 
-Therefore, we use **PreparedStatement**, **setDouble** and **Double.parseDouble** methods, to insure that the value is as expected – a **double** number.
+Therefore, we use **PreparedStatement**, **setDouble** and **Double.parseDouble** methods, to insure that the value is as expected - a **double** number.
 
 [/slide]
 
@@ -194,7 +194,7 @@ Ask the user for a username, which you will use to retrieve the desired info. Wr
 
 ## Description 
 
-Consider that the input may be invalid – **user with given username might not exist** and you will receive an empty **ResultSet**. 
+Consider that the input may be invalid - **user with given username might not exist** and you will receive an empty **ResultSet**. 
 
 If so, print **“No such user exists”**, otherwise, print the **user_name**, **first** and **last names** and the total **count** of games a user has played
 

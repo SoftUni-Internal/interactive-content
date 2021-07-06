@@ -1,12 +1,12 @@
 [slide hideTitle]
 
-# What is SQL Injection?
+# What is SQL Injection
 
 In the previous part of the lesson, we learned how to send raw SQL statements to the database.
 
 This practice leaves us in danger of an SQL injection attack.
 
-It's a technique with which a user with bad intentions can insert malicious SQL statements into a user input field.
+It is a technique with which a user with bad intentions can insert malicious SQL statements into a user input field.
 
 This way the abuser can harvest information directly from our database, which is a huge problem for our web applications.
 
@@ -22,9 +22,11 @@ It automatically escapes all the bad characters that can interact with our state
 
 [slide hideTitle]
 
-# SQL Injection example.
+# SQL Injection example
 
-SQL injection is best explained through an example. Now let's have one and see where the danger comes. 
+SQL injection is best explained through an example. 
+
+Now let us have one and see where the danger comes. 
 
 Our applications are used by people, that is why we are accepting custom data from the users all the time.
 
@@ -40,7 +42,7 @@ SELECT id FROM users
 WHERE username = 'example_user' AND password = '12345';
 ```
 
-Of course, we don't save our passwords raw, we are hashing them with hashing algorithms, but we will talk about it further in our lessons. 
+Of course, we do not save our passwords raw, we are hashing them with hashing algorithms, but we will talk about it further in our lessons. 
 
 But you get the point they can type anything they want in there even SQL queries.
 

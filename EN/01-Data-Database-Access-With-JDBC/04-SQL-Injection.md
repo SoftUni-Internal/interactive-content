@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# What is SQL Injection?
+# What is SQL Injection
 
 SQL Injection is a technique with is used to insert malicious SQL statements into a user input field.
 
@@ -20,7 +20,7 @@ It automatically escapes all the bad characters that can interact with our state
 
 [slide hideTitle]
 
-# SQL Injection example.
+# SQL Injection example
 
 SQL injection is best explained through an example. Now let's have one and see where the danger comes. 
 
@@ -38,7 +38,7 @@ SELECT id FROM users
 WHERE username = 'example_user' AND password = '12345';
 ```
 
-Of course, we don't save our passwords raw, we are hashing them with hashing algorithms, 
+Of course, we do not save our passwords raw, we are hashing them with hashing algorithms, 
 
 but we will talk about it further in our lessons. 
 
@@ -65,5 +65,5 @@ The only way of preventing this kind of attack is through sanitizing our input.
 
 This means escaping special characters, checking length, digit, etc.
 
-It's best practice to set up validations both in the front-end and back-end.
+It is best practice to set up validations both in the front-end and back-end.
 [/slide]

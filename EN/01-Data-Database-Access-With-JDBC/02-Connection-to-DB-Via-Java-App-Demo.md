@@ -5,8 +5,8 @@
 - Download the demo from the course platform
 - You are given a simple application that:
 
-  - Establishes connection with the "**soft_uni**" DB.
-  - Executes simple MySQL statement to retrieve the employees' names by **given salary criteria**.
+  - establishes connection with the "**soft_uni**" DB
+  - executes simple MySQL statement to retrieve the employees' names by **given salary criteria**
 
 [/slide]
 
@@ -15,7 +15,7 @@
 # Connection to DB via Java App Demo
 
 - Let us analyze the program:
-  - Connection to DB is established by asking the user to give credentials:
+  - connection to DB is established by asking the user to give credentials:
 
 ```Java
 System.out.print("Enter username default (root): ");
@@ -26,7 +26,7 @@ System.out.print("Enter password default (empty):");
 String password = sc.nextLine().trim();
 ```
 
-- Using an external library (**MySQL Connector/J**) we make a connection via a **DriverManager** and a **Connection** class.
+- Using an external library (**MySQL Connector/J**) we make a connection via a **DriverManager** and a **Connection** class
 
 ```Java
 Properties props = new Properties();
@@ -36,7 +36,7 @@ Properties props = new Properties();
 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/soft_uni", props);
 ```
 
-- We retrieve the result with the **ResultSet** and the **PreparedStatement** classes.
+- We retrieve the result with the **ResultSet** and the **PreparedStatement** classes
 
 ```Java
 PreparedStatement stmt = connection.prepareStatement
@@ -64,9 +64,9 @@ while(rs.next()) {  // Retrieving data
 # Demo Conclusion
 
 - We can access databases on a programmer level
-  - No manual actions needed
+  - no manual actions needed
 - In bigger applications we can:
-  - Encapsulate custom SQL logic in methods
-  - Achieve database abstraction
+  - encapsulate custom SQL logic in methods
+  - achieve database abstraction
 
 [/slide]

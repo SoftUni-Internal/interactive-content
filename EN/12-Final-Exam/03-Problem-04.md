@@ -237,7 +237,7 @@ Invalid Ticket
 Invalid Ticket
 Successfully imported Ticket Sofia - Los Angels
 Successfully imported Ticket New York - Rome
-Successfully imported Ticket Milano – Sofia
+Successfully imported Ticket Milano - Sofia
 ...
 ```
 

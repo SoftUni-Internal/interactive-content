@@ -1,6 +1,6 @@
 [slide]
 # Functionality Overview
-The firm has hired you as their application developer, to implement the database layer. The application should be able to easily import hard-formatted data and support functionality for also exporting the imported data. The application is called – NLT.
+The firm has hired you as their application developer, to implement the database layer. The application should be able to easily import hard-formatted data and support functionality for also exporting the imported data. The application is called - NLT.
 Look at the pictures below to see what must happen.
 
 

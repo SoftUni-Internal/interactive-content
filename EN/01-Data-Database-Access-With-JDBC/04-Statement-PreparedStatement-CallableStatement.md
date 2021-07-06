@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Statement types.
+# Statement types
 
 Once we obtain the connection, it is time to interact with the database. 
 
@@ -10,7 +10,7 @@ The interfaces used to interact with the database and send statements to it are 
 
 These interfaces provide you with the methods and properties used to send SQL statements to the database and receive information from it.
 
-Each of the interfaces is used on a different occasion, now let's have a look at each one of them, learn what they are used for, and have some examples. 
+Each of the interfaces is used on a different occasion, now let us have a look at each one of them, learn what they are used for, and have some examples. 
 
 [/slide]
 
@@ -19,9 +19,9 @@ Each of the interfaces is used on a different occasion, now let's have a look at
 # Statement
 We use this interface for general-purpose access to our database. 
 
-It's useful when we are using static SQL statements at runtime as this interface **cannot** accept parameters.
+It is useful when we are using static SQL statements at runtime as this interface **cannot** accept parameters.
 
-### Example
+## Example
 ```java
 Statement stmt = 
 connection.createStatement("UPDATE Employees set age=30 WHERE id=101");
@@ -33,13 +33,13 @@ System.out.prinln("Is employee updated = " + ret.toString())
 [/slide]
 
 [slide hideTitle]
-
 # PreparedStatement
+
 This interface is used when you intend to call a given statement several times. 
 
 This interface **can accept** parameters.
 
-### Example
+## Example
 ```java
 PreparedStatement stmt = 
 connection.prepareStatement("SELECT * FROM employees WHERE salary > ?");
@@ -58,7 +58,7 @@ We use this statement when we need to access the database's stored procedures.
 
 This method **does accept** parameters.
 
-### Example
+## Example
 ```java
 //Stored Procedure
 DELIMITER //
