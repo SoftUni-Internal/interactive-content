@@ -1,4 +1,4 @@
-# Client Access To A Database
+# Client Access to a Database
 
 [slide hideTitle]
 # Java Database Connectivity (JDBC)
@@ -71,7 +71,7 @@ The driver converts the underlying data to the Java type.
 
 - The java.sql package provides all previously mentioned JDBC classes
 - In order to work with JDBC we need to download a MySQL Driver - Connector/J
-- It can be found on the following [webpage](https://dev.mysql.com/downloads/connector/j/)
+- It can be found on the [MySQL webpage](https://dev.mysql.com/downloads/connector/j/)
 
 [/slide]
 
@@ -93,7 +93,7 @@ Connection c = DriverManager.getConnection(
 
 [slide hideTitle]
 
-# Setting Up The Driver In IntelliJ IDEA
+# Setting up The Driver in IntelliJ IDEA
 
 [image assetsSrc="Spring-Data-Database-Access-With-JDBC(1).png" /]
 

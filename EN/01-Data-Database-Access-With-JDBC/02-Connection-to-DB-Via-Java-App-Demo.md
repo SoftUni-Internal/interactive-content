@@ -2,17 +2,17 @@
 
 # Application to Database Connection
 
-- Download the demo from the course platform
+- Download the [demo]() from the course platform
 - You are given a simple application that:
 
-  - establishes connection with the "**soft_uni**" DB
+  - establishes connection with the "**soft_uni**" database
   - executes simple MySQL statement to retrieve the employees' names by **given salary criteria**
 
 [/slide]
 
 [slide hideTitle]
 
-# Connection to DB via Java App Demo
+# Connection to Database via Java App Demo
 
 - Let us analyze the program:
   - connection to DB is established by asking the user to give credentials:

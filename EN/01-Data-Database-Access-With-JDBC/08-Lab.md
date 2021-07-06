@@ -14,11 +14,11 @@ _Download the resources needed for this lesson from here:_ [Mega.nz](https://meg
 
 [slide hideTitle]
 
-# Part 1: Accessing Database via Simple Java Application - Demo/
+# Part 1: Accessing Database via Simple Java Application - Demo
 
 ## Description 
 
-You are given a simple java program that opens a connection to a local database server and retrieves the following data - first name and last name from the “soft_uni” database. 
+You are given a simple java program that opens a connection to a local database server and retrieves the following data - first name and last name from the "soft_uni" database. 
 
 The data is filtered by salary criteria, which is given by the user at the input. 
 
