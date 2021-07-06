@@ -63,6 +63,6 @@ Write a transaction that **raises** an employee's salary by **5%** if their "**i
 
 If they are not in the database, no changes should be made.
 
-Use the[SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/soft_uni_database_database_programmability_lab.zip)
+Use the [SoftUni Database](https://videos.softuni.org/resources/java/java-mysql/soft_uni_database_database_programmability_lab.zip)
 
 [/slide]
