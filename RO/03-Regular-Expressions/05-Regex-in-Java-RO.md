@@ -289,28 +289,28 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Description
-Create a regular expression that matches all **integer** and **floating-point numbers** from a given string.
+## Descriere 
+Creați o expresie regulată care potrivește toate **numerele întregi** și toate **numerele în virgulă mobilă** dintr-un șir dat.
 
-Print the valid numbers out, separated by a **single space**.
+Tipăriți numerele valide, separate printr-un **singur spațiu**.
 
 
-A number has the following characteristics:
+Un număr are următoarele caracteristici:
 
-- Has either **whitespace** before it or the **start** of the string (match either ^ or what’s called a positive lookbehind). The entire syntax for the **beginning** of your **RegEx** might look something like `(^|(?<=\s))`
+- Are **spațiu alb** înaintea lui sau **începutul** șirului (potrivește ^ sau ceea ce se numește un lookbehind pozitiv). Întreaga sintaxă pentru **începutul** **expresiei voastre regulate** ar putea să arate așa: `(^|(?<=\s))`
 
-- The number might or might not be negative, so it might have a hyphen on its left side `("-")`
+- Numărul poate sau nu să fie negativ, deci ar putea să aibă o cratimă în stânga sa `("-")`
 
-- Consists of **one or more digits**
+- Este compus din **una sau mai multe cifre**
 
-- Might or might not have **digits after the decimal point**
+- Poate sau nu să aibă **cifre după punctul zecimal**
 
-- The decimal part (if it exists) consists of a period `(".")` and **one or more digits** after it. Use a **capturing group**
+- Partea zecimală (dacă aceasta există) este compusă dintr-un punct `(".")`, urmat de **una sau mai multe cifre**. Folosiți un **grup de captură**
 
-- Has either **whitespace** before it or the **end** of the string (match either `$` or what's called a positive lookahead). The syntax for the **end** of the **RegEx** might look something like `($|(?=\s))`
+- Are **spațiu alb** după el sau **sfârșitul** șirului (potrivește `$` sau ceea ce se numește un lookahead pozitiv). Sintaxa pentru **sfârșitul** **expresiei regulate** ar putea să arate așa: `($|(?=\s))`
 
-## Examples
-| **Input** | **Output** |
+## Exemple 
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 1 -1 1s 123 s-s -123 \_55_ _f 123.456 -123.456 s-1.1 s2 -1- zs-2 s-3.5 | 1 -1 123 -123 123.456 -123.456 |
 
@@ -318,38 +318,38 @@ A number has the following characteristics:
 [hints]
 [hint]
 
-First, we need to establish what needs to exist **before** our number. 
+Prima dată, trebuie să stabilim ce trebuie să existe **înaintea** numărului nostru.
 
-We can't use `\b` here, since it includes `"-"`, which we need to match negative numbers. 
+Nu putem folosi `\b` aici, deoarece include `"-"`, de care avem nevoie pentru a potrivi numere negative .
 
-Instead, we'll use a **positive lookbehind**, which **matches** if there’s something **immediately behind** it. We'll match if we’re either at the **start** of the string (^), or if there's any whitespace behind the string:
+În schimb, vom folosi un **lookbehind pozitiv**, care **face potriviri** în cazul în care există ceva **imediat înaintea** acestuia. Vom face potriviri dacă suntem la **începutul** șirului (^), sau dacă există un spațiu alb înaintea șirului:
 
 [image assetsSrc="Regex.png" /]
 
 [/hint]
 
 [hint]
-Next, we'll check whether there's a **hyphen**, signifying a **negative number**:
+În continuare, vom verifica dacă există o **cratimă**, care indică un **număr negativ**:
 
 [image assetsSrc="Regex(1).png" /]
 [/hint]
 
 [hint]
-Since having a negative sign isn’t required, we'll use the `"?"` quantifier, which means `"between 0 and 1 times"`.
+Din moment ce un semn negativ nu este necesar, vom folosi cuantificatorul `"?"`, care înseamnă `"de zero ori sau o dată"`.
 
-After that, we’ll match any integers – naturally, consisting **one or more digits**:
+După aceea, vom potrivi orice număr întreg - evident, fiind format din **una sau mai multe cifre**:
 
 [image assetsSrc="Regex(2).png" /]
 [/hint]
 
 [hint]
-Next, we'll match the **decimal** part of the number, which **might or might not exist** (note: we need to escape the **period** character, as it’s used for something else in RegEx):
+În continuare, vom potrivi partea **zecimală** a numărului, care **ar putea să existe sau nu** (notă: trebuie să evadăm caracterul **punct**, deoarece este folosit în alt scop în RegEx):
 
 [image assetsSrc="Regex(3).png" /]
 [/hint]
 
 [hint]
-Finally, we’re going to use the same logic for the end of our string as the start – we’re going to match **only** if the number has **either a whitespace or the end of the string** `("$")`:
+La final, vom folosi aceeași logică pentru sfârșitul șirului nostru ca pentru începutul acestuia  - vom face potriviri **doar dacă** după număr urmează **un spațiu alb sau sfârșitul șirului** `("$")`:
 
 [image assetsSrc="Regex(4).png" /]
 [/hint]
