@@ -5347,7 +5347,7 @@ Write a function **ufn_get_salary_level** that receives the **salary of an emplo
 - If the salary is** > 50000**, return "**High**"
 
 
-## Examples
+## Example
 Here is a list of employees **living in Sofia**.
 
 | **salary** | **salary_Level** |
@@ -7111,7 +7111,7 @@ Write a stored procedure **usp_get_employees_by_salary_level** that receives a *
 The result should be sorted by **first_name** and then by **last_name**, both in descending order.
 
 
-## Examples
+## Example
 Here is the list of all employees with a **high salary**.
 
 | **first_name** | **last_name** |
@@ -7793,7 +7793,7 @@ Use the database that is called "**SoftUni Database**".
 
 Define a function **ufn_is_word_comprised(set_of_letters varchar(50), word varchar(50))** that returns **1** or **0** depending on whether the word can be comprised of the given set of letters. 
 
-## Examples
+## Example
 
 | **set_of_letters** | **word** | **result** |
 | --- | --- | --- | --- | 
@@ -8002,7 +8002,7 @@ Write a stored procedure **usp_get_holders_full_name** that selects the full nam
 The result should be sorted alphabetically by **full_name** as a first criterion and by **id** in **ascending** order as a second criterion.
 
 
-## Examples
+## Example
 
 | **full_name** | 
 | --- |
@@ -8149,7 +8149,7 @@ Your task is to write a stored procedure **usp_get_holders_with_balance_higher_t
 
 Sort the result in ascending order by account_holders_id. 
 
-## Examples
+## Example
 
 The supplied number for that example is 7000.
 
@@ -8290,7 +8290,7 @@ Using the following formula:
 - **R** - Yearly interest rate
 - **T** - Number of years
 
-## Examples
+## Example
 
 | **Input** |**Output** |
 | --- | --- |
@@ -8510,7 +8510,7 @@ The interest rate should have precision up to 0.0001, the same as the calculated
 
 **It is important to achieve the specified precision.**
 
-## Examples
+## Example
 
 Here is the result for **account_id = 1** and **interest_rate = 0.1**.
 
@@ -8704,7 +8704,7 @@ Make sure to guarantee a valid and positive **money_amount** with a precision of
 
 The procedure should produce exact results, working with the specified precision.
 
-## Examples
+## Example
 
 Here is the result for **account_id = 1** and **money_amount = 10**.
 
@@ -8886,7 +8886,7 @@ Ensure that withdrawing is only possible when the balance is enough and **money_
 The procedure should produce exact results, working with the specified precision.
 
 
-## Examples
+## Example
 
 Here is the result for **account_id = 1** and **money_amount = 10**.
 
@@ -9090,7 +9090,7 @@ Verify that the whole procedure **passes without errors**.
 You must guarantee exact results, working with **precision of four decimal places**.
 
 
-## Examples
+## Example
 
 Here is the result for **from_account_id = 1**, **to_account_id = 2** and **money_amount = 10**.
 
@@ -9328,7 +9328,7 @@ Use the database that is called "**Bank Database**".
 Create another table - logs(log_id, account_id, old_sum, new_sum). Add a trigger to the accounts table that adds a new entry to the logs table every time the sum on the given account changes.
 
 
-## Examples
+## Example
 
 The following data is inserted into the logs table after increasing by 10 the balance of an account with an id of 1.
 
@@ -9671,7 +9671,7 @@ Each record must consist of:
 - **subject** - "**Balance change for account:** \{**account_id**\}"
 - **body** - "**On** \{**date (current date)**\} **your balance was changed from** \{**old**\} **to** \{**new**\}."
 
-## Examples
+## Example
 
 | **id** |**recipient** |**subject** |**body** |
 | --- | --- |--- | --- |
