@@ -38,10 +38,8 @@
 
 [/slide]
 
-# Variables
-
 [slide hideTitle]
-# Real Life Example
+# Variables and Real Life Example
 
 [video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-4-5-6-Real-life-example-Variables-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
