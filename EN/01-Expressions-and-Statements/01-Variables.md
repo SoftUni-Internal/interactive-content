@@ -51,13 +51,7 @@ Most of our applications need to work with information.
 
 We can use variables to store all kinds of data we need.
 
-[/slide]
-
-
-[slide hideTitle]
-# Definition of Variables
-
-[video src="https://videos.softuni.org/hls/javascript-basics/01.Expressions-and-Statements/EN/01-PB-JavaScript-expressions-and-statements-5-6-What-are-variables-and-how-are-they-used-in-computing-New-Link-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## Variables
 
 In programming, each **variable** stores a certain value of a particular type. 
 
@@ -72,7 +66,9 @@ For example, data types can be:
 We can imagine **variables** as containers for data or named areas in the memory. 
 
 The data that they are storing can be read and changed at any time.
+
 [/slide]
+
 
 [slide hideTitle]
 # Creating a Variable

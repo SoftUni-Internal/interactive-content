@@ -51,13 +51,7 @@ Majoritatea aplicațiilor noastre trebuie să lucreze cu informații.
 
 Putem folosi variabilele pentru a stoca toate tipurile de date de care avem nevoie.
 
-[/slide]
-
-
-[slide hideTitle]
-# Definiția Variabilelor
-
-[video src="https://videos.softuni.org/hls/javascript-basics/RO/01-Expressions-And-Statements/01-PB-JavaScript-expressions-and-statements-5-6-What-are-variables-and-how-are-they-used-in-computing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## Variabilă
 
 În programare, fiecare **variabilă** stochează o anumită valoare de un anumit tip. 
 
@@ -72,7 +66,10 @@ De exemplu, tipurile de date pot fi:
 Ne putem imagina **variabilele** ca niște containere de date sau ca niște zone specificate în memorie.  
 
 Datele stocate de acestea pot fi citite și modificate în orice moment. 
+
 [/slide]
+
+
 
 [slide hideTitle]
 # Crearea unei Variabile
