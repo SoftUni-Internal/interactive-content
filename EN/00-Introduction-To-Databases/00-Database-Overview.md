@@ -1699,7 +1699,6 @@ Here is the list of all employees with a **high salary**.
 | ... | ... |
 
 
-
 [/task-description]
 [code-io /]
 [tests]
@@ -1747,9 +1746,7 @@ Welcker
 [/test]
 [test]
 [input]
-```
 CALL usp_get_employees_by_salary_level ('low');
-```
 [/input]
 [output]
 Zheng
@@ -2278,6 +2275,59 @@ Alan
 Brewer
 A. Scott
 Wright
+[/output]
+[/test]
+[test]
+[input]
+CALL usp_get_employees_by_salary_level ('average');
+[/input]
+[output]
+Wendy
+Kahn
+Syed
+Abbas
+Sven
+Nakamura
+Stephen
+Jiang
+Stephanie
+Conroy
+Sheela
+Word
+Sharon
+Salavaria
+Roberto
+Tamburello
+Peter
+Connelly
+Michael
+Sullivan
+Michael
+Raheem
+Martin
+Kull
+Jossef
+Goldberg
+Gigi
+Matthew
+George
+Denis
+Gail
+Erickson
+Francois
+Ajenstat
+Diane
+Margheim
+David
+Liu
+David
+Bradley
+Dan
+Wilson
+Ashvini
+Sharma
+Amy
+Alberts
 [/output]
 [/test]
 [test]
