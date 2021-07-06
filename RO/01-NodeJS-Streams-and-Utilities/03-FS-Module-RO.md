@@ -80,11 +80,11 @@ let data = fs.readdir('./myDir', 'utf8', (err, data) => {
 });
 ```
 
-## Using `readFile()` and `readFileSync()`
+## Utilizarea lui `readFile()` și `readFileSync()`
 
-The `readFile()` and `readFileSync()` methods work in a similar fashion to the previous two, with one notable difference - they are used to **read a single file**, not a directory.
+Metodele `readFile()` și `readFileSync()` funcționează într-un mod asemănător cu ultimele două, cu o diferență notabilă - sunt folosite pentru **a citi un singur fișier**, nu un director.
 
-In the following **example**, we create a simple server:
+În **exemplul** următor, vom crea un server simplu:
 
 ```js
 const http = require('http');
@@ -101,30 +101,30 @@ http.createServer(function(req, res) {
 console.log('Server is running!');
 ```
 
-We use the `fs.readFile()` method to read the contents of `dummyFile.html` **asynchronously**.
+Folosim metoda `fs.readFile()` pentru a citi **asincron** conținutul lui `dummyFile.html`.
 
-Using the `writeHead` method, we send a response header to the request.
+Folosind metoda `writeHead`, trimitem un antet de tip răspuns solicitării.
 
-Then, we send the data using `write`.
+Apoi, trimitem datele folosind `write`.
 
-`readFile()` accepts three arguments, similarly to `readdir()` - the file **path**, a callback function, and `options`.
+`readFile()` acceptă trei argumente, în mod similar cu `readdir()` - **calea** fișierului, o funcție de apel invers și `options`.
 
-The `options` argument can either be of type `Object` or `string`.
+Argumentul `options` poate fi de tip `Object` sau `string`.
 
-If of type `string`, it is used to specify the **encoding**.
+Dacă este de tip `string`, este folosit pentru a specifica **encoding-ul**.
 
-As an `Object`, it can specify:
+Dacă este de tip `Object`, poate specifica:
 
-- the `encoding` - like **"utf-8"**, for example
-    * has a **default** value of `null`
-- a `flag` property - customises the **read/write** permissions of the file
-    * defaults to **'r'** (read-only)
-- `signal` - allows us to **terminate** an ongoing `readFile` process before completion
-    * unavalable in the synchronous version - `readFileSync()` 
+- `encoding-ul` - precum **""utf-8""**, de exemplu
+    * are valoarea **implicită** `null`
+- proprietatea `flag` - personalizează permisiunile **de citire/scriere** ale fișierului
+    * implicit **'r'** (read-only)
+- `signal` - ne permite să **încheiem** un proces `readFile` în curs de desfășurare, înainte de finalizare
+    * nu este valabil în versiunea sincronă - `readFileSync()`
 
-Keep in mind that `readFile()` buffers the entire file - this can result in higher memory use.
+Țineți cont de faptul că `readFile()` tamponează întregul fișier - acest lucru poate avea ca rezultat o utilizare mai mare a memoriei.
 
-It is recommended to use `createReadStream()` whenever possible.
+Este recomandată utilizarea lui `createReadStream()` oricând este posibile.
 
 [/slide]
 
@@ -152,17 +152,17 @@ fs.mkdir('./myDir', err => {
 });
 ```
 
-## Using `appendFile()` and `appendFileSync()`
+## Utilizarea lui `appendFile()` și `appendFileSync()`
 
-We use the `appendFile()` and `appendFileSync()` methods when we want to append data to an existing file.
+Folosim metodele `appendFile()` și `appendFileSync()` atunci când vrem să adăugăm date la un fișier existent.
 
-For example, let us say we have a `newFile.txt` with the following **content**:
+De exemplu, să spunem că avem un fișier numit `newFile.txt`, cu următorul **conținut**:
 
 ```
 Creating a new file with FS Module
 ```
 
-If we want to **modify** it, we can use `fs.appendFile`:
+Dacă vrem să îl **modificăm**, putem folosi `fs.appendFile`:
 
 ```js
 const fs = require('fs');
@@ -176,16 +176,16 @@ fs.appendFile('newFile.txt', ' Appended text', function(err) {
 })
 ```
 
-It can accept up to **four** arguments:
+Poate accepta până la **patru** argumente:
 
-- `path` - the file's name or location, `newFile.txt` in our case
-    * if such a file does not exist, it will be created automatically
-- `data` - the new information we want to append - such as **" Appended text"**
-    * can be of type `string` or `Buffer`
-- a **callback** function
-- `options` - include `encoding`, `mode` and `flag`
+- `path` - numele sau locația fișierului, `newFile.txt` în cazul nostru 
+    * dacă nu există un astfel de fișier, va fi creat automat
+- `data` - noile informații pe care vrem să le adăugăm - de exemplu **" Appended text"**
+    * poate fi de tip `string` sau `Buffer`
+- o funcție de **apel invers**
+- `options` - includ `encoding`, `mode` și `flag`
 
-After executing the above code, `newFile.txt` looks like this:
+După executarea codului de mai sus, `newFile.txt` arată așa:
 
 ```
 Creating a new file with FS Module Appended text
