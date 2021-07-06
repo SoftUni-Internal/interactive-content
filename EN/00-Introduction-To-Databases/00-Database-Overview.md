@@ -1683,8 +1683,6 @@ INSERT INTO `towns` (`town_id`, `name`) VALUES
 [task-description]
 # Description
 
-Use the database that is called "**SoftUni Database**".
-
 Write a stored procedure **usp_get_employees_by_salary_level** that receives a **salary level** (low, average, or high) as a parameter and prints the **names of all employees** that receive salaries within the given range. 
 
 The result should be sorted by **first_name** and then by **last_name**, both in descending order.
@@ -1728,12 +1726,9 @@ Welcker
 [/test]
 [test]
 [input]
-```
 CALL usp_get_employees_by_salary_level ('high');
-```
 [/input]
 [output]
-```
 Terri
 Duffy
 Laura
@@ -1748,7 +1743,6 @@ Dylan
 Miller
 Brian
 Welcker
-```
 [/output]
 [/test]
 [test]
