@@ -23,9 +23,9 @@ Pentru viitoarea premieră a trei producții populare, un cinematograf local v-a
 
 | -  | **John Wick** | **Star Wars**| **Jumanji** |
 | --- | --- | --- | --- |
-| Drink | $12 | $18 | $9 |
-| Popcorn | $15 | $25 | $11 |
-| Menu | $19 | $30 | $14 |
+| Drink | 12$ | 18$ | 9$ |
+| Popcorn | 15$ | 25$ | 11$ |
+| Menu | 19$ | 30$ | 14$ |
 
 Scrieți un program care calculează **prețul total** care trebuie plătit.
 
@@ -44,14 +44,14 @@ Veți primi 3 linii de pe consolă:
 - Numărul biletelor - un număr întreg în intervalul [1 ... 30]
 
 ## Ieșire
-Imprimați un singur rând pe consolă: **"Your bill is $**\{**total price**\}**"**
+Imprimați un singur rând pe consolă: **"Your bill is** \{**total price**\}**$"**
 
 Prețul trebuie formatat la două cifre după punctul zecimal.
 
 ## Exemplu
 |**Intrare**|**Ieșire**|
 | --- | --- |
-| John Wick | Your bill is $72.00 | 
+| John Wick | Your bill is 72.00$ | 
 | Drink | |
 | 6 | |
 
@@ -76,7 +76,7 @@ Drink
 6
 [/input]
 [output]
-Your bill is $72.00
+Your bill is 72.00$
 [/output]
 [/test]
 [test]
@@ -86,7 +86,7 @@ Drink
 23
 [/input]
 [output]
-Your bill is $276.00
+Your bill is 276.00$
 [/output]
 [/test]
 [test]
@@ -96,7 +96,7 @@ Popcorn
 11
 [/input]
 [output]
-Your bill is $165.00
+Your bill is 165.00$
 [/output]
 [/test]
 [test]
@@ -106,7 +106,7 @@ Menu
 8
 [/input]
 [output]
-Your bill is $152.00
+Your bill is 152.00$
 [/output]
 [/test]
 [test]
@@ -116,7 +116,7 @@ Drink
 10
 [/input]
 [output]
-Your bill is $126.00
+Your bill is 126.00$
 [/output]
 [/test]
 [test]
@@ -126,7 +126,7 @@ Popcorn
 3
 [/input]
 [output]
-Your bill is $75.00
+Your bill is 75.00$
 [/output]
 [/test]
 [test]
@@ -136,7 +136,7 @@ Menu
 1
 [/input]
 [output]
-Your bill is $30.00
+Your bill is 30.00$
 [/output]
 [/test]
 [test]
@@ -146,7 +146,7 @@ Drink
 2
 [/input]
 [output]
-Your bill is $15.30
+Your bill is 15.30$
 [/output]
 [/test]
 [test]
@@ -156,7 +156,7 @@ Popcorn
 1
 [/input]
 [output]
-Your bill is $11.00
+Your bill is 11.00$
 [/output]
 [/test]
 [test]
@@ -166,7 +166,7 @@ Menu
 3
 [/input]
 [output]
-Your bill is $42.00
+Your bill is 42.00$
 [/output]
 [/test]
 [/tests]
