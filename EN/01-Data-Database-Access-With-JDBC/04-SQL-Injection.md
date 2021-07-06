@@ -6,7 +6,7 @@ SQL Injection is a technique with is used to insert malicious SQL statements int
 
 This way the abuser can harvest information directly from our database, which is a huge problem for our web applications.
 
-If we do not learn what is SQL injection and how to prevent it we leave our site open for this kind of attacks,
+If we do not learn what is SQL injection and how to prevent it we leave our site open for this kind of attack,
 
 which means that our customer's data will not be protected from leaking.
 

@@ -10,7 +10,7 @@ It is a technique with which a user with bad intentions can insert malicious SQL
 
 This way the abuser can harvest information directly from our database, which is a huge problem for our web applications.
 
-If we do not learn what is SQL injection and how to prevent it we leave our site open for this kind of attacks, which means that our customer's data will not be protected from leaking.
+If we do not learn what is SQL injection and how to prevent it we leave our site open for this kind of attack, which means that our customer's data will not be protected from leaking.
 
 To protect our application from SQL injections we should use SQL parameters.
 
@@ -67,5 +67,5 @@ The only way of preventing this kind of attack is through sanitizing our input.
 
 This means escaping special characters, checking length, digit, etc.
 
-It's best practice to set up validations both in the front-end and back-end.
+It is best practice to set up validations both in the front-end and back-end.
 [/slide]

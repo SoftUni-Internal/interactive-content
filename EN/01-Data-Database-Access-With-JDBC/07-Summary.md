@@ -44,8 +44,8 @@ try {
 
 ## In the next lesson you will learn:
 
-- What is MAVEN.
-- Hibernate Framework.
-- How to use the Java Persistence APi.
+- What is MAVEN
+- Hibernate Framework
+- How to use the Java Persistence API
 
 [/slide]
