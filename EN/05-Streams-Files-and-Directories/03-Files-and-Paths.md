@@ -126,7 +126,7 @@ Files.write(outPath, lines);
 
 Read the "**input.txt**" file from the resources that you downloaded previously. 
 
-Write the text to **another txt file**.
+You have to sort the lines in alphabetical order and then write the text to **another txt file**.
 
 Use the **Paths** and **Files** Classes.
 
