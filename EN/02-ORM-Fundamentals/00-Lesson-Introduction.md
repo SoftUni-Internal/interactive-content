@@ -4,16 +4,14 @@
 
 # Lesson Content
 
-
-## In this lesson, you will learn:
+## In this lesson you will learn:
 
 **1. ORM**
   - Definition
-  - ORM Techniques
+  - ORM techniques
   - Operations using ORM
 
 **2. ORM Advantages**
-  - Where ORM excels
-  - Where ORM falls behind
+  - Where ORM excels and where it falls short
 
 [/slide]
