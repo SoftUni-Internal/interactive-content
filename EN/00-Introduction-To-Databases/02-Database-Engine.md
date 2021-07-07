@@ -4,7 +4,7 @@
 
 # Client Server Model
 
-The server in a client-server model is simply the **DBMS**, whereas the client is the database application serviced by the **DBMS**.
+The server in a client-server model is simply the **DBMS**, and the client is the database application serviced by the **DBMS**.
 
 We have distributed client-servers when the client is on one computer while the server and database are on another. 
 
