@@ -1,1 +1,1 @@
-# Layouts and Responsive Design
+# Responsive Design

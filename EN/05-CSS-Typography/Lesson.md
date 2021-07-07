@@ -1,1 +1,1 @@
-# CSS and Typography
+# CSS Typography
