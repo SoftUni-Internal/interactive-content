@@ -24,17 +24,14 @@ You may be prompted to log in or sign up. This step can be **skipped** by clicki
 
 [image assetsSrc="Introduction-To-Databases(22).png" /]
         
- 
 Once the installer is open, click on "**Continue**". 
         
 [image assetsSrc="Introduction-To-Databases(23).png" /]
  
-
 Make sure you read and agree to the **Terms and Conditions**. 
  
 [image assetsSrc="Introduction-To-Databases(24).png" /]     
  
-
 You will be prompted to type in your **password**. Then, click on "**Install Software**". 
  
 [image assetsSrc="Introduction-To-Databases(25).png" /]
@@ -43,12 +40,10 @@ The configuration process includes selecting a password **encryption type**. It 
         
 [image assetsSrc="Introduction-To-Databases(26).png" /]
  
-
 You will then be required to **set a password for the root user**. Click on Finish to complete the installation. 
  
 [image assetsSrc="Introduction-To-Databases(27).png" /]
 
- 
 By going to **System Preferences** \> **MySQL**, you can set the MySQL Server to start **automatically** when macOS boots up (**recommended**). 
  
 [image assetsSrc="Introduction-To-Databases(28).png" /]
@@ -83,12 +78,10 @@ Then, drag the package over the **Applications** folder shortcut to install.
         
 [image assetsSrc="Introduction-To-Databases(30).png" /]
 
- 
 Now you can **open Workbench** and **connect** to the **local** MySQL intance (if running). 
        
 [image assetsSrc="Introduction-To-Databases(31).png" /]
 
- 
 You may be required to enter **the password for the root user**, created when installing MySQL Server. 
 
 [image assetsSrc="Introduction-To-Databases(32).png" /]
