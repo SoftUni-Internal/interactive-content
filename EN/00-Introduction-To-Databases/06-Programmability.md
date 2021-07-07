@@ -32,7 +32,7 @@ The `CREATE VIEW` statement is used to create a new view.
 
 Once we execute it, MySQL creates the view and stores it in the database for later use.
 
-Here is an example of the statement:
+This is how you can create a view:
 
 ```java
 CREATE VIEW v_employee_names AS
