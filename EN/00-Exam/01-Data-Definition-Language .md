@@ -87,7 +87,7 @@ Have composite primary key from the "**car_id**" column and the "**driver_id**" 
 
 Submit **all SQL table creation statements**.
 
-You will also be given a [data.sql]() file. 
+You will also be given a [data.sql](https://videos.softuni.org/resources/java/java-mysql/01-Table-Design-Data-Exam.zip) file. 
 
 It will contain a **dataset** with data which you will need to **store** in your **local database**. 
 
