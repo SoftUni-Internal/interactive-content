@@ -4,7 +4,7 @@
 
 # Installation Guidelines
 
-This document consists of guidelines for installing **MySQL server**. 
+This document consists of guidelines for installing **MySQL server** on Windows.  
 
 You can download the installation file for Windows from [here](https://dev.mysql.com/downloads/installer/).
 
