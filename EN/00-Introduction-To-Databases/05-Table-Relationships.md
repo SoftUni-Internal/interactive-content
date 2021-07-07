@@ -10,7 +10,7 @@ We split data into separate tables to avoid repeating empty records or redundant
 
 If we have duplicate data, any change in one place will produce a change in every other place. 
 
-It would be more logical and efficient if we create the name and the information of a customer once.
+For example, it would be more efficient if we added a customer's information just once.
 
 [image assetsSrc="Introduction-To-Databases(8).png" /]
 
@@ -20,19 +20,19 @@ It would be more logical and efficient if we create the name and the information
 
 # Related Tables
 
-We split the data and introduce **relationships** between the tables to **avoid repeating** the information. 
+After splitting the data, we create **relationships** between the tables to **avoid repetition**. 
 
 That is the concept of **relational databases**. 
 
 We have separate, carefully designed, unique lists of data, and we relate them to each other by using their unique identifiers, known as **primary keys**.
 
-In the first table from the example, we have the **user_id** column as a **primary key**.
+In the first table from the example, we have the `user_id` column as a **primary key**.
 
 There are also columns for the first and last name of the customer, as well as the date of registration.
 
 [image assetsSrc="Introduction-To-Databases(9).png" /]
 
-For the emails, we have a separate table where we use the **user_id** value from the customer table as a **foreign key**.
+For the emails, we have a separate table where we use the `user_id` value from the customer table as a **foreign key**.
 
 The connection is made by a **foreign key** in one table that points to a **primary key** in another table.
 
