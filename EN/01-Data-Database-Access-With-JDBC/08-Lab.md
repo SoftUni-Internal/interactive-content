@@ -37,7 +37,7 @@ The data is filtered by the salary criteria, which is given by the user as the i
 
 [slide hideTitle]
 
-# 1. Connection and Connection Properties
+# Connection and Connection Properties
 
 Up to this point, we have used the MySQL Workbench IDE to connect to the local instance of the MySQL server. 
 
@@ -82,7 +82,7 @@ Remember that the user and the password are already included in the **Properties
 
 [slide hideTitle]
 
-# 2. Preparing and Executing Statements
+# Preparing and Executing Statements
 
 ```java
 PreparedStatement stmt =
@@ -112,7 +112,7 @@ It could be another SQL query, which in the worst case would harm our database. 
 
 [slide hideTitle]
 
-# 3. Iterating Over the Result
+# Iterating Over the Result
 
 
 Finally, if the data in the database matches the given criteria, we will receive a **ResultSet** of rows, otherwise, it will be empty. 
