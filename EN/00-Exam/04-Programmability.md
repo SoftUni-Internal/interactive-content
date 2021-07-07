@@ -1,4 +1,3 @@
-# Section Four
 [slide hideTitle]
 # Programmability 
 The time has come for you to prove that you can be a little more dynamic on the database. 
@@ -1255,7 +1254,7 @@ Extract data about the **addresses** with the given **address_name**.
 
 Extract data about the **addresses** with the given **address_name**. 
 
-The needed data is the **name** of the **address**, **full name** of the **client**, the **level of bill** (**Low** - lower than **20** (inclusive), **Medium** - lower than **30** (inclusive), and **High**), **make**, and **condition** of the car as well as the **name** of the **category**.
+The needed data is the **name** of the **address**, the **level of bill** (**Low** - lower than **20** (inclusive), **Medium** - lower than **30** (inclusive), and **High**), **make**, and **condition** of the car as well as the **name** of the **category**.
 
 **Order** addresses by **make**, then by the client's **full name**.
 
@@ -1263,7 +1262,6 @@ Required Columns
 - "**name**" (address)
 - "**full_name**"
 - "**level_of_bill**"
-- "**full_name**" (client)
 - "**make**"
 - "**condition**"
 - "**cat_name**" (category)

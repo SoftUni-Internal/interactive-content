@@ -21,7 +21,7 @@ Then, you will have to create several **tables**:
 
 - "**cars**" - Contains information about the cars
   - each car has a **make** column, a **model** column, a **year** column, a **mileage** column, a **condition** column, and a **category** column
-- "**courses**" - Contains information about the ****
+- "**courses**" - Contains information about the **courses**
    - each course has a **from_address** column, a **start** column, a **car** column, a **client** column and a **bill** column
 - "**drivers**" - Contains information about the **drivers**
    - each driver has a **first** and **last** name columns, an **age** column, and a **rating** column

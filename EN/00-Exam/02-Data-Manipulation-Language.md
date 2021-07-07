@@ -1,7 +1,5 @@
-# Section Two 
 
 [slide hideTitle]
-
 # Data Manipulation Language (DML)
 
 Now, you will need to perform several manipulations in the database, like changing and adding data.

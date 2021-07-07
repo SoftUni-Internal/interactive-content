@@ -1,4 +1,3 @@
-# Section One
 [slide hideTitle]
 # Data Definition Language (DDL)
 
@@ -27,21 +26,21 @@ You should create the tables in the database by the following models:
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
 | **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
-| **name** | A **string** containing a maximum of **100 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
+| **name** | A **string** containing a maximum of **10 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
 
 ## Categories
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
 | **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
-| **name** | A **string** containing a maximum of **100 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
+| **name** | A **string** containing a maximum of **10 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
 
 ## Clients
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
 | **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
-| **full_name** | A **string** containing a maximum of **20 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
+| **full_name** | A **string** containing a maximum of **50 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
 | **phone_number** | A **string** containing a maximum of **20 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
 
 ## Drivers
@@ -60,7 +59,7 @@ You should create the tables in the database by the following models:
 | --- | --- |--- | 
 | **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
 | **make** | A **string** containing a maximum of **20 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
-| **model** | A **string** containing a maximum of **30 characters**. Unicode is **NOT** needed. | **NULL is** permitted. |
+| **model** | A **string** containing a maximum of **20 characters**. Unicode is **NOT** needed. | **NULL is** permitted. |
 | **year** | **Integer**, from **1 to 2 147 483 647**. | **DEFAULT** value is 0, **NULL is NOT** permitted.|
 | **mileage** | **Integer**, from **1 to 2 147 483 647**. | **DEFAULT value is 0**, **NULL** is permitted. |
 | **condition** | **Character** that shows the **condition** of the car.  One character. | **NULL is NOT** permitted. |
@@ -71,10 +70,9 @@ You should create the tables in the database by the following models:
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
 | **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
-| **from_address_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table "**addresses**".
-**NULL is NOT** permitted.|
+| **from_address_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table "**addresses**". **NULL is NOT** permitted.|
 | **start** | The **date** and **time** when the course starts. | **NULL is NOT** permitted. |
-| **bill** | **DECIMAL**, up to **10 digits, 2** of which after the **decimal point**. | DEFAULT value is 10|
+| **bill** | **DECIMAL**, up to **10 digits**, **2 of which after the decimal point**. | DEFAULT value is 10|
 | **car_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table "**cars**". **NULL is NOT** permitted.|
 | **client_id** | **Integer**, from **1 to 2 147 483 647**.  | Relationship with table "**clients**". **NULL is NOT** permitted. |
 
