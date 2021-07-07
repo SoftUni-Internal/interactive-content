@@ -92,7 +92,7 @@ The SQL commands that **manipulate data** in the database belong to the **Data M
 
 Most of the commands come from that language.
 
-Examples of DML commands:
+These are some of the most common DML commands:
 
 - `INSERT` - Used to insert data into a table
 - `UPDATE` - Used to update existing data within a table
