@@ -1,17 +1,19 @@
+# Java Persistence Query Language
+
 [slide hideTitle]
 
-# Java Persistence Query Language - JPQL
+# JPQL Definition
 
-JPQL is a tool used when either our queries get too complex and query method names are just not enough or the method name gets too ugly.
+JPQL (or the Java Persistence Query Language) is an **object-oriented** query language, which is part of the Java persistence API.
 
-It's an **object-oriented** query language part of the Java Persistence API.
+It is a tool used when either our queries get too complex and query method names are just not enough or the method name gets too ugly.
 
 Used to make queries against entities stored in a relational database.
 
 JPQL is similar to SQL except for a few differences.
 
-- The biggest and most important difference is that we interact and make queries with the entities, not with the tables from the DB.
-- It won't affect the database directly.
+- The biggest and most important difference is that we interact and make queries with the entities, not with the tables from the DB
+- It will not affect the database directly
 
 [/slide]
 
@@ -19,14 +21,12 @@ JPQL is similar to SQL except for a few differences.
 
 # JPQL Functionalities
 
-The JPQL functionalities include:
-
 [image assetsSrc="Spring-Data-Advanced(3).png" /]
 
-The functionalities include: 
-- SELECT clauses.
-- UPDATE clauses, you can also do bulk UPDATE.
-- DELETE clauses and bulk DELETE. 
+With the JQPL syntax, we can create:
+- SELECT clauses
+- UPDATE clauses
+- DELETE clauses
 
 [/slide]
 
@@ -34,32 +34,29 @@ The functionalities include:
 
 # Syntax
 
-The syntax of JPQL is pretty intuitive as long as we have worked with SQL before, it's pretty similar to it.
+The syntax of JPQL is similar to the SQL syntax, the difference being that SQL works directly with the database, its tables, records, and fields, whereas JPQL works with the Java classes and instances.
 
-As mentioned above the difference between them is that SQL works directly with the database, its tables, records, and fields, whereas JPQL works with the Java classes and instances.
-
-This is a plus to us, as it maps the database records to classes with which we can interact in our program.
-
-Let's have a few examples look.
+Let us have a few examples look.
 
 ```java
-//A simple SELECT clause.
-
-  1.              2.       3.        4.
-SELECT b FROM Ingredient AS b WHERE b.name IN names
+  1.              2.     3.          4.
+SELECT i FROM Ingredient i WHERE b.name IN names
 ```
 
-1. The select keyword.
-2. The entity we want to work with.. don't forget it's a java class, not the table itself.
-3. Allias or how the table should be referred to as.
-4. The filtration clause, where we use the entity's properties... bonus we get to have **CodeCompletion**.
+1. The select clause
+2. The the Java class entity we want to work with
+3. The alias or how the table should be referred to as
+4. The filtration clause, where we use the entity's properties
+
 [/slide]
 
 [slide hideTitle]
 
-### JOINS
+## JOINS
 
-Naturally, when we work with the database we would need to **JOIN** our tables, with **JPQL** we have to declare the joins by ourselves.
+Naturally, when we work with the database we would need to link our tables.
+
+With **JPQL** we have to declare the **JOIN clauses** by ourselves.
 
 Luckily it's not a hard task, as long as we are familiar with how **JOINS** work, as Spring-Data is smart enough to find the criteria by which the tables should be joined.
 
@@ -69,14 +66,13 @@ Join available in JPQL:
 - LEFT OUTER JOIN
 - LEFT INNER JOIN
 
-
 Let's have an example:
 
 ```java
-SELECT s.name                           //We choose what we want from the table through SELECT
-    FROM Shampoo AS s                   //then we declare the entities and it's alias
-   INNER JOIN s.batch AS b              //declaration of the type of JOIN and the table which should be joined
-   WHERE b.batchDate <:batchDate       //then we can make a filtration through using the properties of the joined entity.
+SELECT s.name                           // We choose what we want from the table through SELECT
+FROM Shampoo AS s                       // then we declare the entities and it's alias
+INNER JOIN s.batch AS b                 // declaration of the type of JOIN and the table which should be joined
+WHERE b.batchDate <:batchDate           // then we can make a filtration through using the properties of the joined entity.
 ```
 [/slide]
 
@@ -138,8 +134,8 @@ Write a method that selects all shampoos with ingredients in a given list
 @Repository
 public interface IngredientRepository extends JpaRepository<Ingredient, Long>{
 
-     @Query(value = "select s from Shampoo s " +
-      "join s.ingredients i where i in :ingredients")
+     @Query(value = "SELECT s FROM Shampoo s " +
+      "JOIN s.ingredients i WHERE i IN :ingredients")
      List<Shampoo> findByIngredientsIn(@Param(value = "ingredients")   
           Set<Ingredient> ingredients);
 }

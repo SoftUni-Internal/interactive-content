@@ -45,9 +45,9 @@ logging.level.org.hibernate.type.descriptor = TRACE
 ```
 
 
-Start splitting the java directory into packages. Create several ones to help you organize your project:
+Create 3 directories to help organize the project:
 
-- **models** – the directory of our database models(entities)
+- **models** – the directory of our database models (entities)
 
 - **repositories** – the package where we will hold the repository interfaces
 
@@ -62,7 +62,7 @@ Start splitting the java directory into packages. Create several ones to help yo
 Start by setting up the database models. Each one of them will be as follows:
 
 
-## The User Table
+## The User Entity
 
 | **Columns** | **Constraints** |
 |---|---|
@@ -72,7 +72,7 @@ Start by setting up the database models. Each one of them will be as follows:
 | accounts | Each user can have many accounts, which will be identified by their **id** |
 |  |  |
 
-## The Account Table
+## The Account Entity
 | **Columns**  | **Constraints** |
 |---|---|
 | id | Accepts **Long** values ; the **Primary Key** |
@@ -80,7 +80,7 @@ Start by setting up the database models. Each one of them will be as follows:
 | user | The owner of the account, which will be identified by their **id** |
 |  |  |
 
-Set up appropriate tables, columns, column properties and table relations.
+Set up the appropriate tables, columns, column properties and table relations.
 
 [/slide]
 
@@ -88,11 +88,12 @@ Set up appropriate tables, columns, column properties and table relations.
 
 # Repositories
 
-Create two repository – one for the **User** and another for the **Account** 
+Create two repositories – one for the **User** and another for the **Account** 
 
 ```java
 @Repository
 public interface AccountRepository extends JPARepository<Account, Long> {
+    Account findAccountById(Long id);
 }
 ```
 
@@ -103,7 +104,7 @@ public interface UserRepository extends JPARepository<User, Long> {
 }
 ```
 
-Add several methods to help with data retrieval.
+Add several methods to help with the data retrieval.
 
 [/slide]
 
@@ -122,15 +123,15 @@ public interface AccountService {
 
 ```java
 public interface UserService {
-    void register(User user);
+    void registerUser(User user);
 }
 ```
 
-Implement those services.
+Implement those services in the implementation classes.
 
-The implementation classes will work on the business logic of the application. 
+Those classes will work on the business logic of the application. 
 
-In order to do that, they should have certain type of **Repository** according to the service type.
+To do that, they should have a **Repository** according to the service type.
 
 ```java
 @Service
@@ -160,25 +161,25 @@ public class UserServiceImpl implements UserService {
 }
 ```
 
-The implementation of the methods is up to you. Here are some several tips:
+The method implementation logic is up to you. Here are some several tips:
 
 -  **AccountServiceImpl**
-    - -	Money withdrawal – should only happen if account is **present** in the database, **belongs to user** and **has enough balance**
-    - -	Money transfer – should only happen if **account belongs to user** and transfer value is **not negative**
+    - Money withdrawal should only happen if the account is **present** in the database, **belongs to the user** and **has enough money in the balance**
+    - Money transfer should only happen if **the account belongs to the user** and the transfer value **is not a negative amount**
 
 - **UserServiceImpl**
-    -	**User registration** – should only happen if user does not exist in the database
+    - **User registration** should only happen if the user **does not exist** in the database
 [/slide]
 
 [slide hideTitle]
 
-# The CommandLineRunner 
+# The ConsoleRunner 
 
-We will test our application in a **CommandLineRunner** class.
+We will test our application in a **ConsoleRunner** class.
 
 ```java
 @Component 
-public class CLR implements CommandLineRunner {
+public class ConsoleRunner implements CommandLineRunner {
 
     private UserService userService;
     private AccountService accountService;
@@ -201,7 +202,7 @@ public class CLR implements CommandLineRunner {
 
 # Test
 
-Test the application by adding some logic in the **CommandLineRunner**'s **run** method class:
+Test the application by adding logic in the **ConsoleRunner**'s **run** method class:
 
 ```java 
 public void run(String... args) throws Exception {
@@ -220,5 +221,5 @@ public void run(String... args) throws Exception {
 }
 ```
 
-If you have written everything correctly, an **account_system** database should be created.
+An **account_system** database should be created with tables if everything is written correctly. 
 [/slide]

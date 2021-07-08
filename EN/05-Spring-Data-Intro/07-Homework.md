@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Problem: Bookshop system
+# Problem: Bookshop System
 
 ## Description
 
@@ -10,13 +10,13 @@
 
 Create database for a **Bookshop System**. 
 
-A bookshop keeps **books**. 
+This system needs to keep the information about **books**. 
 
 Let us create a class for each of the tables.
 -	**Book**:
      -  id
      -  title 
-     -  description (optional, up to 1000 symbols) 
+     -  description (optional, accepts very long String values) 
      -  edition_type (**NORMAL, PROMO or GOLD**)
      -  price
      -  copies
@@ -32,9 +32,9 @@ Let us create a class for each of the tables.
     - id 
     - name
 
-Assume everything is mandatory if is not market with (optional).
+Assume that everything is mandatory if it is not market with (optional).
 
-The final schema of the database should look like that:
+The final schema of the database should look like this:
 
 [image assetsSrc="Spring-data-intro-hw.png" /]
 
@@ -44,7 +44,7 @@ The final schema of the database should look like that:
 
 # Problem: Seed Data into the Database
 
-Create a **seedDatabase()** method in the **CommandLineRunner implementation class**. 
+Create a **seedDatabase()** method in the **ConsoleRunner implementation class**. 
 
 Use the provided **files (categories.txt, authors.txt, books.txt)** and import the data from them.
 
