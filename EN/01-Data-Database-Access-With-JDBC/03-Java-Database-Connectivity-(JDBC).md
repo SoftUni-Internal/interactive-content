@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Java Database Connectivity (JDBC)
 
-JDBC is a **standard Java API** for database-independent connectivity, which allows to connect to the database, create queries, execute **CRUD operations** as well as manipulating the database schema.
+JDBC is a **standard Java API** for database-independent connectivity, which allows to connect to а database, create queries, execute **CRUD operations** as well as manipulating the database schema.
 
 By using JDBC we can **invoke store procedures** and **create costume functions**.
 
@@ -16,11 +16,11 @@ By using JDBC we can **invoke store procedures** and **create costume functions*
 
 First, we need to create **an application** that is going to use a database, for learning purposes we will use our **main class** with it is **main method** to send queries to the database.
 
-We send those queries by using JDBC **API**, which provides the connection between the application and the driver manager.
+Тhose queries can be sent by using JDBC **API**, which provides the connection between the application and the driver manager.
 
-The JDBC **Driver Manager** is the file that we load from the .jar file, which establishes the connection with the correct driver.
+The JDBC **Driver Manager** is the file that we load from the `.jar` file, which establishes the connection with the correct driver.
 
-The driver manager supports **multiple drivers** connected to different **types of databases**, where JDBC **Driver** handles the communications with the different relational databases such as Oracle, SQL Server, ODBC DC, etc.
+The driver manager supports **multiple drivers** connected to different **types of databases**, where JDBC **Driver** handles the communications with the different relational databases such as MySQL, Oracle, SQL Server, ODBC DC, etc.
 [/slide]
 
 [slide hideTitle]
@@ -29,15 +29,15 @@ The driver manager supports **multiple drivers** connected to different **types 
 
 JDBC API provides several interfaces and classes:
 
-- **DriverManager** - matches requests from the application with the proper DB driver
-- **Driver** - handles the communication with the DB server
+- **DriverManager** - matches requests from the application with the proper database driver
+- **Driver** - handles the communication with the database server
 - **Connection** - all methods for contacting a database
 - **Statement** - methods and properties that enable you to send SQL, also there are is an automatic escaping, which prevents an SQL injection
 - **ResultSet** - this is the result of the executed query
 
-Let us say we need to **extract the full names** of all employees from the **egineering department**, the result will be a **collection of full names** of the employees of the given department.
+Let us say we need to **extract the full names** of all employees working the **engineering department** from the SoftUni database, the result will be a **collection of full names** of the employees working the given department.
 
-Another example is if we want to **increase the salaries** of the employees, working in engineering, by 10%, the result set will be the n**umber of affected rows**.
+Another example is if we want to **increase the salaries** of the employees, working in engineering, by 10%, the result set will be the **number of affected rows**.
 
 - **SQLException** - if an exception occurs during retrieving data from the database, it is a good practice to **catch** the acquired exception **after** the result set, that way we ensure that **no exception during the entire process will be left unprocessed**
 
@@ -47,16 +47,16 @@ Another example is if we want to **increase the salaries** of the employees, wor
 
 # JDBC API - ResultSet Class
 
-ResultSet maintains a **cursor** pointing to its current row of data, which we can iterate through.
+ResultSet maintains a **cursor** pointing to its current row of data, which we iterate through.
 
 The **cursor** could be:
-- **Forward only**
-- **Readable only**
-- **Updatable**
+- **Forward only** - can move only in one direction
+- **Readable only** - only can read data
+- **Updatable** - can manipulate data
 
 Also, the cursor could be saved or not, for example, we decided to **not save the cursor**, the garbage collector eventually will free the memory. 
 
-The default settings of the **cursor** are forward-only and read-only, but depending on the case t**hese settings could be change** - the cursor could forward and backward as well as read and update and delete.
+The default settings of the **cursor** are forward-only and read-only, but depending on the case **these settings could be change** - the cursor could forward and backward as well as read and update and delete.
 
 
 - Provides getter methods for retrieving column values from the current row
@@ -76,16 +76,17 @@ Retrieved information is reached by getter methods:
 - `getDouble("column_name")` - using this method the driver retreive a double
 - `getBoolean("column_name")` - using this method the driver retreive a boolean
 
-The driver converts the underlying data to the Java type, this could be string, int, double, bool, even an object.
+The driver **converts** the underlying data to the Java type, this could be string, int, double, bool, even an object.
 
 [/slide]
 
 [slide hideTitle]
 
 ## Java.sql and MySQL Driver
+
 The java.sql package provides all previously mentioned JDBC **classes**.
 
-By **using the classes** such as Prepare Statement, Connection, ResultSet, etc., from the SQL package, **creates less coupling** between our application and the databases.
+By **using the classes** such as Prepare Statement, Connection, ResultSet, etc., from the SQL package, **less coupling createд** between our application and the databases.
 
 To work with JDBC we need to **download a MySQL Driver** - Connector/J, which can be added as a **module dependency** or **library project** to the project. 
 

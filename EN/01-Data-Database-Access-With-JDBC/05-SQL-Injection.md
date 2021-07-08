@@ -8,7 +8,7 @@ This practice leaves us in danger of an **SQL injection attack**.
 
 It is a technique with which a user with bad intentions can **insert** malicious SQL statements into a user input field.
 
-This way the abuser can **harvest information** directly from our database, which is a **huge problem** for a web application.
+This way the abuser can **collect information** directly from our database, which is a **huge problem** for a web application.
 
 If we do not learn what is SQL injection and how to **prevent it** we leave the web applications open for **such attacks**, which means that clients' data **will not be protected** from leaking.
 
