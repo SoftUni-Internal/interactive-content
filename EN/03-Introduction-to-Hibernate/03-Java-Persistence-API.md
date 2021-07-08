@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Java Persistence API
 
@@ -40,7 +40,7 @@ public class Student {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Annotations
 
@@ -87,7 +87,7 @@ If no **column** annotation is applied, the default values apply.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # JPA Configuration
 
@@ -159,7 +159,7 @@ public static void main(String[] args) {
 ```
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # JPA Relations
 
@@ -167,7 +167,7 @@ public static void main(String[] args) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Persistence Context and Entities
 
@@ -176,7 +176,7 @@ public static void main(String[] args) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Entity Object Life Cycle
 
@@ -185,7 +185,7 @@ public static void main(String[] args) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # JPA Write Data Methods
 

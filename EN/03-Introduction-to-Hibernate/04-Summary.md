@@ -1,8 +1,8 @@
-[slide]
+[slide hideTitle]
 
 # Summary
 
-# In this lesson we learned:
+# In this lesson you learned:
 
 - Why we use Maven
   * Easy dependency imports by XMLs
@@ -10,7 +10,7 @@
 - Hibernate
   * JPA functions
 
-# In the next lesson we will learn:
+# In the next lesson you will learn:
 
 - JPA inheritances strategies
 - Table relations

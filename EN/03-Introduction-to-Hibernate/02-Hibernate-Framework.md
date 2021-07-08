@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Hibernate Framework
 
@@ -30,7 +30,7 @@ We have different approaches to **Java ORM:**
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Hibernate Configuration
 
@@ -90,7 +90,7 @@ Let's take a look at the **Pom.xml file:**
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Hibernate Implementation
 
@@ -206,7 +206,7 @@ public static void main(String[] args) {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Hibernate Query Language - HQL
 

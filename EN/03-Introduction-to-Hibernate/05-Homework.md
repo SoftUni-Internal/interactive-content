@@ -1,6 +1,6 @@
 # Homework
 
-[slide]
+[slide hideTitle]
 
 # Setup
 
@@ -24,7 +24,7 @@ EntityManager em = factory.createEntityManager();
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Change Casing 
 
@@ -32,7 +32,7 @@ Use the **soft_uni** database. Persist **all towns** from the database. Detach t
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Contains Employee
 
@@ -47,7 +47,7 @@ Use the **soft_uni** database. Write a program that checks if a given employee n
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Employees with Salary Over 50 000
 
@@ -65,7 +65,7 @@ Write a program that gets the first name of all employees who have salary over *
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Employees from Department
 
@@ -85,7 +85,7 @@ Extract all employees from the **Research and Development** department. Order th
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Adding a New Address and Updating Employee
 
@@ -95,7 +95,7 @@ Create a new address with text **"Oxford Str 15"**. Set that address to an **emp
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Addresses with Employee Count
 
@@ -114,7 +114,7 @@ Take only the **first 10 addresses** and print their **address text**, **town na
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Get Employee with Project
 
@@ -141,7 +141,7 @@ The projects should be **ordered by name** (ascending). The output should be pri
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Find Latest 10 Projects
 
@@ -169,7 +169,7 @@ For the output, check the format from the example.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Increase Salaries
 
@@ -191,7 +191,7 @@ Then **print the first name, the last name and the salary** for the employees, w
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Find Employees by First Name
 
@@ -213,7 +213,7 @@ Print their **first and last names**, their **job title** and **salary** in the 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Employees Maximum Salaries
 
@@ -237,7 +237,7 @@ Filter the departments, which max salaries **are not in the range** between 3000
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Remove Towns
 
