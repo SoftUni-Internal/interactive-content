@@ -22,6 +22,6 @@
 [slide hideTitle]
 # Lab Resources
 
-For all **lab problems** use the [Hotel Database](https://videos.softuni.org/resources/java/java-mysql/hotel_db_Lab.zip).
+For all **lab problems**, use the [Hotel Database](https://videos.softuni.org/resources/java/java-mysql/hotel_db_Lab.zip).
 
 [/slide]
