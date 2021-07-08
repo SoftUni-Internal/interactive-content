@@ -33,6 +33,6 @@ try {
 
 In this example we **turn off the auto-commit option** and from there, we can **collect** SQL statements and once we want to send it to the database we simply say **.commit**, which will create a **transaction to our database**.
 
-By using **try-catch statement**, if any error appears during the query, we are able to catch it and process it without change any of the database data
+By using **try-catch statement**, if any error appears during the query, we can catch it and process it without change any of the database data
 
 [/slide]
