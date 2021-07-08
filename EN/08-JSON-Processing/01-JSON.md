@@ -18,6 +18,37 @@ These are the data types supported by JSON:
   - `Object`
   - `Null`
 
+
+Any data parsed to JSON is stored as an array of objects.
+
+JSON files use this syntax to store information, this is an array of two objects that are serialized to JSON:
+
+```java
+[
+    {
+        "attribute1": value,
+        "attribute2": value
+    },
+    {
+        "attribute1": value,
+        "attribute2": value
+    }
+]
+```
+
+The attributes are in double quotes while the values are enclosed in double quotes, square, diamond brackets, or directly added after the attribute depending on the data type that is stored.
+
+
+| Type | Example |
+| --- | --- | 
+| Number | "speed": 250 |
+| String | "title": "Road Rage"  |
+| Boolean | "isSpeeding": true |
+| Array | "roles": [ "admin, "editor" ] |
+| Null | "address": null |
+
+
+Data parsed as JSON is simple to read, compact and easy to transfer.
 [/slide]
 
 [slide hideTitle]
@@ -26,7 +57,7 @@ These are the data types supported by JSON:
 
 JSON objects are often used to transfer data between the **client** and the **server**.
 
-This is because they are **well-structured** and **easy-to-read**.
+This is because JSON is human-readable and easy to work with, but most importantly - it is language agnostic and used for communications between systems that use completely different languages, frameworks, or libraries.
 
 The following code is an example of some JSON data:
 
@@ -50,7 +81,30 @@ The following code is an example of some JSON data:
 ]
 ```
 
-The code from above could be **sent to the server** for storage through an **HTTP request**.
+The code above could be **sent to the server** for storage through an **HTTP request**.
+
+JSON supports nested objects:
+
+```java
+{
+  "brand": "HP",
+  "Processor": "Intel",
+  "price": 1000,
+  "accessories": [
+    {
+      "type": "mouse",
+      "brand": "generic",
+      "serial": 565565655
+    },
+    {
+      "type": "keyboard",
+      "brand": "unknown",
+      "serial": 15451223
+    },
+  ]
+}
+```
+
 
 [/slide]
 
@@ -60,7 +114,7 @@ The code from above could be **sent to the server** for storage through an **HTT
 
 JSON works as an **intermediary** between the **client** and the **server**.
 
-Data during client-server communication passes through a few steps:
+During client-server communication data transfers go through a few steps:
 
 - **Parsing to JSON** in the client (browser) using **JavaScript**
 
