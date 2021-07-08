@@ -16,7 +16,7 @@ We can turn-off auto commit in one line:
 connection.setAutoCommit(false);
 ```
 
-Let's see the JDBC Transaction pattern with some pseudo-code:
+Let us see the JDBC Transaction pattern with some pseudo-code:
 
 ```java
 try {

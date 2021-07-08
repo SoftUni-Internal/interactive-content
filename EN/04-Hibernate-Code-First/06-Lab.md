@@ -8,7 +8,7 @@ Your task is to **create a Vehicle hierarchy.**
 
 ## Vehicle - Abstract Class
 
-- Has an **Id – Long**
+- Has an **Id - Long**
 - Has a **Type - String**
 - Has a **Model - String**
 - Has a **Price - BigDecimal**

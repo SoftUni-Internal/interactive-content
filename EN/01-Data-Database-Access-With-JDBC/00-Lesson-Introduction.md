@@ -1,10 +1,10 @@
-[slide hideTitle]
-
 # Lesson Introduction
+
+[slide hideTitle]
 
 # Lesson Content
 
-## In this Lesson you will learn:
+## In this lesson you will learn:
 
 **1. Application to Database Connection**
 - How to connect to our database

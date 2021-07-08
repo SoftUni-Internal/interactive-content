@@ -11,49 +11,49 @@ Design them in the **most appropriate** way, considering the following **data co
 
 ### Town
 
-- **id – integer** number, **primary identification field**.
+- **id - integer** number, **primary identification field**.
 
-- **name** – a **char sequence** with **minimum** length **2**. The **name** is **unique**.
+- **name** - a **char sequence** with **minimum** length **2**. The **name** is **unique**.
 
-- **population** – a **number** (must be positive). 
+- **population** - a **number** (must be positive). 
 
-- **guide** – **Long** and **detailed description** of all known places
+- **guide** - **Long** and **detailed description** of all known places
 
 ### Passenger
 
-- **id – integer** number, **primary identification field**. 
+- **id - integer** number, **primary identification field**. 
 
-- **firstName** – a **char sequence** with **minimum** length **2**.
+- **firstName** - a **char sequence** with **minimum** length **2**.
 
-- **lastName** – a **char sequence** with **minimum** length **2**.
+- **lastName** - a **char sequence** with **minimum** length **2**.
 
-- **age** –  a **number** (**must** be positive).
+- **age** -  a **number** (**must** be positive).
 
-- **phoneNumber** – a **char sequence** – phone number. 
+- **phoneNumber** - a **char sequence** - phone number. 
 
-- **email** – an **email** – (**must** contains ‘@’ and ‘.’ – dot). The **email** of a **person** is **unique**.
+- **email** - an **email** - (**must** contains ‘@’ and ‘.’ - dot). The **email** of a **person** is **unique**.
     - **Note:** Passenger has a relation with Town
 
 ### Plane
 
-- **id – integer** number, **primary identification field**.
+- **id - integer** number, **primary identification field**.
 
-- **registerNumber** – a **char sequence** (**minimum** length **5**). The register **number** is **unique**.
+- **registerNumber** - a **char sequence** (**minimum** length **5**). The register **number** is **unique**.
 
-- **capacity** – **number** of passenger (**must** be positive).
+- **capacity** - **number** of passenger (**must** be positive).
 
-- **airline** – name of the airline company with **min length** of **2**.
+- **airline** - name of the airline company with **min length** of **2**.
 
 ### Ticket
 
-- **id – integer** number, **primary identification field**.
+- **id - integer** number, **primary identification field**.
 
-- **serialNumber** – a combination from letters and numbers with **minimum length** of **2** . 
+- **serialNumber** - a combination from letters and numbers with **minimum length** of **2** . 
     - The serial numbers are **unique**.
 
-- **price** – a price of the ticket. **Must** be **positive**.
+- **price** - a price of the ticket. **Must** be **positive**.
 
-- **takeoff** –  а **date** and **time** of plane taking off.
+- **takeoff** -  а **date** and **time** of plane taking off.
     - **Note:** Tickets have two **foreign keys** to Town, because of **fromTown**(Town) and **toTown**(Town)
     - **Note2:** Tickets have relations with Towns, Passengers and Planes.  
 

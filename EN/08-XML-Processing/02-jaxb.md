@@ -258,7 +258,7 @@ The **JAXBContext** object is used for **XML manipulations**. It provides an abs
 [/slide]
 
 [slide hideTitle]
-# Export Single Object to XML – 1st Example
+# Export Single Object to XML - 1st Example
 
 ```java
 @XmlRootElement
@@ -296,7 +296,7 @@ That values, inside the **name** and **age** tags, are the values from the User 
 [/slide]
 
 [slide hideTitle]
-# Export Single Object to XML – 2nd Example
+# Export Single Object to XML - 2nd Example
 
 Here is one more scenario where you will see how to export to XML in a slightly different way while also formatting the file to be easily readable.
 

@@ -4,25 +4,25 @@
 ## In this lesson you learned:
 
 - **Introduction to ORM**
-  - A **programming technique** used to **map Objects** to **database tables**
-  - Automatically creates **SQL** queries
-  - It is great for **domain-driven** applications
+  * a **programming technique** used to **map objects** to **database tables**
+  * it automatically creates **SQL** queries
+  * excellent for **domain-driven** applications
 
-- **ORM Advantages**
-  - Boosts **productivity** by removing **repetitive code**
-  - Improves **maintainability** by requiring **fewer lines of code**
-  - Makes the **switching** of databases easy
+- **ORM advantages**
+  * boosts **productivity** by removing **repetitive code**
+  * improves **maintainability** by requiring **fewer lines of code**
+  * makes the **switching** of databases easy
 
-- **ORM Disadvantages**
-  - Has **performance issues** with larger queries
-  - Has **reduced flexibility** with certain operations
-  - The developer **loses understanding** of what happens with the database
+- **ORM disadvantages**
+  * has **performance issues** with larger queries
+  * **reduced flexibility** with certain operations
+  * as the database grows more **complex**, it becomes harder to comprehend
 
 
-## In the next lesson, you will learn:
-- **Hibernate** Introduction
-- Working with **Maven**
-- Using the **Hibernate Framework&**
-- Understanding the **Java Persistence API**
+## In the next lesson you will learn:
+- **Hibernate** introduction
+  * working with **Maven**
+  * using the **Hibernate Framework**
+  * understanding the **Java Persistence API**
 
 [/slide]

@@ -52,7 +52,7 @@ Randomly **generate categories** for each product from the existing categories.
 
 Create the below-described queries and **export** the returned data to the specified **format**.
 
-## Query 1 – Products in Range
+## Query 1 - Products in Range
 
 Get all products in a specified **price range** (e.g. 500 to 1000), which have **no buyer**.
 
@@ -83,7 +83,7 @@ Export the result to JSON.
 ]
 ```
 
-## Query 2 – Successfully Sold Products
+## Query 2 - Successfully Sold Products
 
 Get all users, who have **at least 1 item sold** with a **buyer**.
 
@@ -117,7 +117,7 @@ For each of the **products sold** (products with buyers), select the **name** an
 ]
 ```
 
-## Query 3 – Categories by Products Count
+## Query 3 - Categories by Products Count
 
 Get **all categories**.
 
@@ -143,7 +143,7 @@ For each category select its **name**, the **number of products**, the **average
 ]
 ```
 
-## Query 4 – Users and Products
+## Query 4 - Users and Products
 
 Get all users who have **at least 1 product sold**.
 
@@ -196,7 +196,7 @@ Export the results to **JSON**. Follow the format below to better understand how
         "count": 9,
         "products": [
           {
-            "name": "Clarins Paris Skin Illusion – 114 cappuccino",
+            "name": "Clarins Paris Skin Illusion - 114 cappuccino",
             "price": 811.42
           },
           ...
@@ -267,7 +267,7 @@ Finally, import the **sales records** by **randomly** selecting a **car**, **cus
 
 Create the below-described queries and **export** the returned data to the specified **format**.
 
-## Query 1 – Ordered Customers
+## Query 1 - Ordered Customers
 
 Get all **customers**, ordered by their **birthdate in ascending order**.
 
@@ -295,7 +295,7 @@ If two customers are born on the same date, **print those, who are experienced d
 ]
 ```
 
-## Query 2 – Cars from Make Toyota
+## Query 2 - Cars from Make Toyota
 
 Get all **cars** from make **Toyota** and **order them by model alphabetically** and then by **travelled distance descending**.
 
@@ -319,7 +319,7 @@ Get all **cars** from make **Toyota** and **order them by model alphabetically**
 ]
 ```
 
-## Query 3 – Local Suppliers
+## Query 3 - Local Suppliers
 
 Get all of the **suppliers** that **do not import parts from abroad**.
 
@@ -343,7 +343,7 @@ Export the list of suppliers to JSON in the format provided below.
 ]
 ```
 
-## Query 4 – Cars with Their List of Parts
+## Query 4 - Cars with Their List of Parts
 
 Get all **cars along with their list of parts**.
 
@@ -399,7 +399,7 @@ For the **parts** get only the **name** and the **price**.
 
 ```
 
-## Query 5 – Total Sales by Customer
+## Query 5 - Total Sales by Customer
 
 Get all **customers** that have bought **at least 1 car** and get their **names**, **count of cars bought** and **total money spent** on cars.
 
@@ -428,7 +428,7 @@ Export the list of customers to JSON in the format provided below.
 ]
 ```
 
-## Query 6 – Sales with Applied Discount
+## Query 6 - Sales with Applied Discount
 
 Get all **sales** with information about the **car**, the **customer**, and the **price** of the sale **with and without discount**.
 

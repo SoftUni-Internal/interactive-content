@@ -6,71 +6,67 @@
 
 ORM or **Object-Relational Mapping** is a **programming technique** for data conversion.
 
-This technique allows database **queries** and **manipulations** to be made using the **object-oriented paradigm**.
+This technique allows database **queries** and **manipulations** to be performed by using the **object-oriented paradigm**.
 
-It maps **objects** to **rows** from **tables in relational databases**.
+It maps **objects** to **table rows in relational databases**.
 
 [image assetsSrc="Java-ORM-Fundamentals-1.png" /]
 
 [/slide]
 
-[slide]
+[slide ]
 
 # ORM Usage
 
-**Object-oriented languages** mostly deal with objects, which are **non-scalar values**.
+**Object-oriented languages** are concerned with objects, which are **non-scalar values**.
 
-Databases, however, do not share that **object-oriented** nature and work only with scalar values ( **integer**, **string** etc.).
+Databases do not share that **object-oriented** nature and work only with scalar values ( **integer**, **string**, etc.).
 
-A lot of **parsing** and **serialization** is required for **OOP languages** to communicate with **databases**.
+**Parsing** and **serialization** are required for **OOP languages** to communicate with **databases**.
 
-**ORM** makes the communication between these **incompatible** systems much easier.
+**ORM** makes the communication between these **incompatible** systems easier.
 
-Developers save a lot of work hours because of the ability of an **ORM** to create **SQL queries** automatically.
+An **ORM** can create **SQL queries** automatically, saving time in the process.
 
 [/slide]
 
 [slide hideTitle]
 # JDBC and ORM
 
-**ORMs** and **JDBC** are two different solutions to a problem
+**ORMs** and **JDBC** are two different solutions to a problem.
 
-Each one of them is better than the other in different ways.
+Both have their advantages and pitfalls.
 
-The **strength** of **JDBC**:
+**JDBC** has several benefits, such as:
 
-- It is easy to learn
+- Being easier to learn
 
-- Its performance is a little better
+- Having slightly better performance
 
 However, ORMs are superior to JDBC due to:
 
 - Easier maintainability
 
-- The focus on the business logic instead of the database structure
+- Being focused on business logic instead of database structure
 
 - Better scalability
 
-Overall, it can be said that **JDBC** is good for **small applications**.
+ **JDBC** is better **small applications** because the data can be **directly presented from the database**.
 
-With it, the data can be **directly presented from the database**.
-
-**ORMs**, however, are used for **big, domain-driven applications** that have more **complex object relationships**.
+**ORMs** are used for **big, domain-driven applications** that have more **complex object relationships**.
 
 [/slide]
 
 [slide hideTitle]
 # Application Architecture
 
-**Application architecture** is a very important thing to consider when creating a project.
+**Application architecture** is a crucial thing to consider when creating a project.
 
-**Layered architecture** is one of the simpler choices.
-
-In this type of architecture, there are **four** layers:
-- `Presentation Layer` - What the users of the application **see**
-- `Service layer`- Where all of the **business logic** is **stored** and **operates** from
-- `Persistence layer (ORM)` - Stores **handler functions** that connect the **service layer** to the **database layer**
-- `Database layer` - Where the **data for the application** is stored
+**Layered architecture**, as the name suggests, has **four** layers:
+- Presentation Layer - the visible part of the application
+- Service layer - where **business logic** is being **stored** and **operates** from
+- Persistence layer (ORM) - stores **handler functions** that connect the **service layer** to the **database layer**
+- Database layer - where **application data** is being collected
 
 [image assetsSrc="Java-ORM-Fundamentals-2.png" /]
 
@@ -79,24 +75,22 @@ In this type of architecture, there are **four** layers:
 [slide hideTitle]
 # ORM Frameworks: Features
 
-The main feature of **ORM Frameworks** is that they automatically generate **SQL queries**.
+The main feature of **ORM Frameworks** is the automatic generation of **SQL queries**.
 
-These **queries** can perform all of the basic **CRUD** operations (**persist**, **update**, **delete**, **merge** etc.).
+These **queries** can perform all basic **CRUD** operations (**persist**, **update**, **delete**, **merge** etc.).
 
-Most of those frameworks also protect from **simple, direct SQL injection** attacks.
+Most of those frameworks also protect from **SQL injection** attacks.
 
-Working with **ORM** can happen in two different ways:
+There are two strategies of working with an **ORM**:
 
-- `Database-first approach` - This approach creates all the **entities** from an **existing database**
+- `Database-first approach` - produces all the **entities** from an **existing database**
 
-- `Code-first approach` - Classes are created **first** and then **migrated** to the **database**
+- `Code-first approach` - classes are created **first** and then **migrated** to the **database**
 
 [/slide]
 
 [slide hideTitle]
 # Perform data operations with ORM
-
-As covered previously, **ORMs** automatically create **SQL queries**.
 
 The following code shows some examples of working with **ORM**:
 
@@ -107,7 +101,7 @@ Student student = new Student("Kevin", "Reynolds");
 session.save(student);
 ```
 
-The code from above would be translated into:
+Can be transformed into the following SQL query:
 
 ```java
 INSERT INTO students
@@ -129,13 +123,13 @@ And the corresponding **SQL query**:
 SELECT * FROM students WHERE id=1;
 ```
 
-**ORM Frameworks** also allow working with **custom queries**.
+**ORM Frameworks** can operate with **custom queries**.
 
 **Hibernate**, for example, works with both **SQL** and **HQL**.
 
 **HQL** or **Hibernate Query Language** is another query language that is **object-oriented**, unlike **SQL**.
 
-**HQL** also works with concepts like **inheritance**, **polymorphism** and **association**.
+**HQL** also implements the concepts of **inheritance**, **polymorphism** and **association**.
 
 The following code shows examples of custom queries with **both** query languages:
 
@@ -162,9 +156,9 @@ List results = query.list();
 
 The **code-first** approach is used for **domain-driven** applications.
 
-When using it **entity classes** are created first then the **database** is filled based on the classes.
+When implemented, **entity classes** are created first, and then the **database** is populated based on them.
 
-This approach lets the **business logic** drive the application, instead of the **database**.
+This approach lets the **business logic** drive the application instead of the **database**.
 
 The following picture illustrates how the **code-first** approach works:
 
@@ -178,9 +172,7 @@ The following picture illustrates how the **code-first** approach works:
 
 One way to use the **code-first** approach is to combine **POJO** (**Plain Old Java Objects**) with **XML**.
 
-This practice is a bit **dated** but does the job **perfectly** and is quite **powerful**.
-
-It is used in **traditional ORMs**.
+This method is applied in **traditional ORMs**.
 
 The following code is an example of a **POJO + XML** combination:
 
@@ -202,6 +194,8 @@ The following code is an example of a **POJO + XML** combination:
    </entity>
 ...
 ```
+
+While this solution is powerful, it is old and not a recommended practice.
 
 [/slide]
 

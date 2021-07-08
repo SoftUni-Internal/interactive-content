@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Lab: Spring Data – Account System
+# Lab: Spring Data - Account System
 
 Your task is to create an account system that has users with accounts and manages money transfer or withdrawal.
 
@@ -47,11 +47,15 @@ logging.level.org.hibernate.type.descriptor = TRACE
 
 Create 3 directories to help organize the project:
 
+<<<<<<< HEAD
 - **models** – the directory of our database models (entities)
+=======
+- **models** - the directory of our database models(entities)
+>>>>>>> a3764fe9a12a3f0e39480141e509c45f8649c23e
 
-- **repositories** – the package where we will hold the repository interfaces
+- **repositories** - the package where we will hold the repository interfaces
 
-- **services** – where our service interfaces and implementations will be stored
+- **services** - where our service interfaces and implementations will be stored
 
 [/slide]
 
@@ -88,7 +92,41 @@ Set up the appropriate tables, columns, column properties and table relations.
 
 # Repositories
 
+<<<<<<< HEAD
 Create two repositories – one for the **User** and another for the **Account** 
+=======
+Spring Data reduces the amount of boiler-plate code by using a central interface **Repository**. 
+The **JpaRepository** interface contains methods like:
+
+- **save(E entity)**
+
+- **findOne(Id primaryKey)**
+
+- **findAll()**
+
+- **count()** 
+
+- **delete(E entity)** 
+
+- **exists(Id primaryKey)** 
+
+You can define a custom repository,
+
+which extends the JpaRepository
+
+and defines several methods for operating with data besides those exposed by the greater interface. 
+
+The query builder mechanism of Spring Data requires following several rules when you define custom methods. 
+
+Query creation is done by parsing method names by prefixes like find…By,
+
+read…By, query…By, count…By, and get…By. 
+
+You can add more criteria by concatenating And and Or or apply ordering with OrderBy with sorting direction Asc or Desc.
+
+
+Create two Repository **interfaces** - **UserRepository** and **AccountRepository**. 
+>>>>>>> a3764fe9a12a3f0e39480141e509c45f8649c23e
 
 ```java
 @Repository
@@ -131,7 +169,11 @@ Implement those services in the implementation classes.
 
 Those classes will work on the business logic of the application. 
 
+<<<<<<< HEAD
 To do that, they should have a **Repository** according to the service type.
+=======
+In order to do that, they should have certain type of **Repository** available - **AccountRepository** or **UserRepository** according to the service type.
+>>>>>>> a3764fe9a12a3f0e39480141e509c45f8649c23e
 
 ```java
 @Service
@@ -164,11 +206,19 @@ public class UserServiceImpl implements UserService {
 The method implementation logic is up to you. Here are some several tips:
 
 -  **AccountServiceImpl**
+<<<<<<< HEAD
     - Money withdrawal should only happen if the account is **present** in the database, **belongs to the user** and **has enough money in the balance**
     - Money transfer should only happen if **the account belongs to the user** and the transfer value **is not a negative amount**
 
 - **UserServiceImpl**
     - **User registration** should only happen if the user **does not exist** in the database
+=======
+    - -	Money withdrawal - should only happen if account is **present** in the database, **belongs to user** and **has enough balance**
+    - -	Money transfer - should only happen if **account belongs to user** and transfer value is **not negative**
+
+- **UserServiceImpl**
+    -	**User registration** - should only happen if user does not exist in the database
+>>>>>>> a3764fe9a12a3f0e39480141e509c45f8649c23e
 [/slide]
 
 [slide hideTitle]

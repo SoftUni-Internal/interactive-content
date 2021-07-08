@@ -1,27 +1,26 @@
-[slide]
-
 # Databases Advanced Course Intro
 
-## Spring Data
+[slide hideTitle]
+# Spring Data
 
-### Table of Content
+## Table of Content
 
 1. Course Objectives & Program
 2. Course Organization
-   - Homework
-   - Exam
+   - homework
+   - exam
 3. Resources
 
-### Course Objectives
+## Course Objectives
 
 - The **Spring Data** course covers:
-  - Connecting to local DB instance
+  - connecting to local DB instance
   - ORM, Hibernate and Spring Data
-  - Code-First implementations
-  - Programming Patterns
-  - Working with data in other formats (XML, JSON)
+  - code-First implementations
+  - programming Patterns
+  - working with data in other formats (XML, JSON)
 
-### Course Topics(1)
+## Course Topics(1)
 
 - Introduction to DB Applications
 - Creating Custom ORM Framework
@@ -29,7 +28,7 @@
 - Entity Relations in Hibernate
 - Introduction to Spring Data
 
-### Course Topics(2)
+## Course Topics(2)
 
 - Spring Data Advanced Querying
 - Spring Data Auto Mapping Objects
@@ -40,33 +39,31 @@
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Course Organization
-
-## Homework Assignments & Exercises
+# Course Organization: Homework Assignments & Exercises
 
 - Your homework is mainly work in class!
-  - Lessons slides + videos + live demos + exercises
-  - Homework only exercises
-- How to submit your homework?
-  - You can submit your homework in the **platform**
+  - lessons slides + videos + live demos + exercises
+  - homework only exercises
+- How to submit your homework
+  - you can submit your homework in the **platform**
 
 ## Resources
 
 ### The DB Basics MySQL Slides and Videos
 
 - All lecture slides, videos, homework assignments, projects and other resources are open content, available for free
-  - Visit the course platform to access the course resources
+  - visit the course platform to access the course resources
 
 ### Learn to Search in Internet
 
 - The course assignments require to search in Internet
-  - This is an important part of the learning process
-  - Some exercises intentionally have no hints
+  - this is an important part of the learning process
+  - some exercises intentionally have no hints
 - Learn to find solutions!
-  - Software development includes **everyday searching and learning**
-  - No excuses, just **learn** to **study**!
-  - Developers learn new technologies, tools, languages every day!
+  - software development includes **everyday searching and learning**
+  - no excuses, just **learn** to **study**!
+  - developers learn new technologies, tools, languages every day
 
 [/slide]

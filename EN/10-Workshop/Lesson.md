@@ -1,1 +1,1 @@
-# Workshop – MVC Project
+# Workshop - MVC Project

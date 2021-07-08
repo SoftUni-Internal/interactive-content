@@ -7,20 +7,20 @@
 Your task is to create **table wizard_deposits** using the Code First approach. The table should contain the following fields:
 
 
-- **id** – Primary Key (number in range [1, 231-1].
-- **first_name** – Text field with max length of 50 symbols.
+- **id** - Primary Key (number in range [1, 231-1].
+- **first_name** - Text field with max length of 50 symbols.
 - **last_name** - Text field with max length of 60 symbols. Required
-- **notes** – Text field with max length of 1000 symbols
-- **age** – Non-negative number. Required
-- **magic_wand_creator** – Text field with max length of 100 symbols
-- **magic_wand_size** – Number in range [1, 215-1]
+- **notes** - Text field with max length of 1000 symbols
+- **age** - Non-negative number. Required
+- **magic_wand_creator** - Text field with max length of 100 symbols
+- **magic_wand_size** - Number in range [1, 215-1]
 - **deposit_group** - Text field with max length of 20 symbols
-- **deposit_start_date** – Date and time field
-- **deposit_amount** – Floating point number field
+- **deposit_start_date** - Date and time field
+- **deposit_amount** - Floating point number field
 - **deposit_interest** - Floating point number field
 - **deposit_charge** - Floating point number field
-- **deposit_expiration_date** – Date and time field
-- **is_deposit_expired** – Boolean field
+- **deposit_expiration_date** - Date and time field
+- **is_deposit_expired** - Boolean field
 
 
 [/slide]
@@ -156,23 +156,23 @@ The credit card has **card type, expiration month, expiration year.** And the ba
 
 Your task is to create a database for the Football Bookmaker System, using the Code First approach. Model the following tables:
 
-- **Teams** – Id, Name, Logo, 3 letter Initials (JUV, LIV, ARS…), Primary Kit Color, Secondary Kit Color, Town, Budget
-- **Colors** – Id, Name
-- **Towns** – Id, Name, Country
-- **Countries** – Id (3 letters – for example BUL, USA, GER, FRA, ITA…), Name, Continent 
-- **Continents** – Id, Name
-- **Players** – Id, Name, Squad Number, Team, Position, Is Currently Injured
-- **Position** – Id (2 letters – GK, DF, MF, FW…), position description (for example – goal keeper, defender…)
-- **PlayerStatistics** – Game, Player, Scored Goals, Player Assists, Played Minutes During Game, (PK = Game + Player)
-- **Games** – Id, Home Team, Away Team, Home Goals, Away Goals, Date and Time of Game, Home team Win bet rate, Away Team Win Bet Rate, Draw Game Bet Rate, Round, Competition)
+- **Teams** - Id, Name, Logo, 3 letter Initials (JUV, LIV, ARS…), Primary Kit Color, Secondary Kit Color, Town, Budget
+- **Colors** - Id, Name
+- **Towns** - Id, Name, Country
+- **Countries** - Id (3 letters - for example BUL, USA, GER, FRA, ITA…), Name, Continent 
+- **Continents** - Id, Name
+- **Players** - Id, Name, Squad Number, Team, Position, Is Currently Injured
+- **Position** - Id (2 letters - GK, DF, MF, FW…), position description (for example - goal keeper, defender…)
+- **PlayerStatistics** - Game, Player, Scored Goals, Player Assists, Played Minutes During Game, (PK = Game + Player)
+- **Games** - Id, Home Team, Away Team, Home Goals, Away Goals, Date and Time of Game, Home team Win bet rate, Away Team Win Bet Rate, Draw Game Bet Rate, Round, Competition)
 
-- **Rounds** – Id, Name (for example Groups, League, 1/8 Final, 1/4 Final, Semi-Final, Final…)
-- **Competitions** – Id, Name, Type (local, national, international)
-- **CompetitionTypes** – Id, Name
-- **BetGame** – Game, Bet, Result Prediction (PK = Game + Bet)
-- **Bets** – Id, Bet Money, Date and Time of Bet, User
-- **ResultPrediction** – Id, Prediction (possible values - Home Team Win, Draw Game, Away Team Win)
-- **Users** – Id, Username, Password, Email, Full Name, Balance
+- **Rounds** - Id, Name (for example Groups, League, 1/8 Final, 1/4 Final, Semi-Final, Final…)
+- **Competitions** - Id, Name, Type (local, national, international)
+- **CompetitionTypes** - Id, Name
+- **BetGame** - Game, Bet, Result Prediction (PK = Game + Bet)
+- **Bets** - Id, Bet Money, Date and Time of Bet, User
+- **ResultPrediction** - Id, Prediction (possible values - Home Team Win, Draw Game, Away Team Win)
+- **Users** - Id, Username, Password, Email, Full Name, Balance
 
 The relationships between the tables are as follows:
 
