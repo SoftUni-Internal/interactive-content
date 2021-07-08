@@ -4,7 +4,7 @@
 
 # Description
 
-_**Here is a link to the**_ [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/Java-ORM-Fundamentals-Homework.zip) _**for this task.**_
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/Java-ORM-Fundamentals-Homework.zip) **for this task.**
 
 By following the steps in this document, you will create a custom ORM with basic functionality (inserting, updating, and retrieving one or multiple objects).
 
@@ -295,8 +295,8 @@ Here is some example usage:
 
 Insert several users in the database and p**rint the usernames and passwords** of those who are **both**: 
 
-- **registered after** the year 2010; 
+- **registered after** the year 2010 
 
-- at least **18 years old**. 
+- at least **18 years old**
 
 [/slide]
