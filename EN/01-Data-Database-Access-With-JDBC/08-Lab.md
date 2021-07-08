@@ -106,9 +106,11 @@ The question mark is a placeholder for that value.
 
 The **setDouble** method accepts two parameters - the index of the parameter and the value. 
 
-If we had done a plain concatenation using only the Statement interface and appended the value for the salary to the query, we would have made our program vulnerable to SQL Injections because we wouldn't be checking the value. 
+If we had done a plain concatenation using only the Statement interface and appended the value for the salary to the query, we would have made our program vulnerable to SQL Injections because we would not be checking the value. 
 
-It could be another SQL query, which in the worst case would harm our database. Therefore, we use the **PreparedStatement** class, the **setDouble**, and the **Double.parseDouble** methods, to ensure that the value is as expected.
+It could be another SQL query, which in the worst case would harm our database. 
+
+Therefore, we use the **PreparedStatement** class, the **setDouble**, and the **Double.parseDouble** methods, to ensure that the value is as expected.
 
 
 [/slide]
@@ -146,7 +148,9 @@ while(rs.next()) {
 # Problem with Solution: Writing your Data Retrieval Application
 
 ## Description 
-Follow the steps to write a java application that retrieves the information about the users, their games, and duration. Use the "**diablo**" database from the provided resources. 
+Follow the steps to write a java application that retrieves the information about the users, their games, and duration. 
+
+Use the "**diablo**" database from the provided resources. 
 
 ## Example
 

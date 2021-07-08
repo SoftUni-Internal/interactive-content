@@ -22,7 +22,7 @@ Create a program that retrieves the names of **all villains** and their **number
 
 Retrieve only the villains who have more than 15 minions. 
 
-**Order** them by number of minions in **descending order**.
+**Order** them by тthe number of minions in **descending order**.
 
 ## Example
 
@@ -88,9 +88,9 @@ Create a program that reads the information about a minion and its villain and *
 
 In case the town of the minion is not in the database, insert it as well. 
 
-In case the villain is not present in the database, add him too with default evilness factor of "evil". 
+In case the villain is not present in the database, add him too with the default evilness factor of "evil". 
 
-Finally, set the new minion to be servant of the villain. 
+Finally, set the new minion to be a servant of the villain. 
 
 Print the appropriate messages after each operation - see the examples.
 
@@ -129,7 +129,7 @@ Create a program that **changes all of the letters in the town names to uppercas
 
 **Print the number of towns that were changed** in the format provided in examples. 
 
-On the next line, **print** the **names that were changed**, separated by coma and a space.
+On the next line, **print** the **names that were changed**, separated by a comma and space.
 
 ## Examples
 
@@ -152,7 +152,7 @@ On the next line, **print** the **names that were changed**, separated by coma a
 
 Create a program that receives an **ID** of a villain, **deletes him from the database** and **releases his minions** from serving him. 
 
-As an output print the name of the villain and the number of minions released. 
+As an output print, the name of the villain and the number of minions released. 
 
 Make sure all operations go as planned, **otherwise do not make any changes** to the database. 
 
@@ -251,7 +251,7 @@ See the examples below.
 
 ## Description
 
-Create a stored procedure **usp_get_older** (**directly in the databas**e using the **MySQL Workbench IDE** or any other similar tool) that receives a **minion_id** and **increases the minion's years by 1**. 
+Create a stored procedure **usp_get_older** (**directly in the database**e using the **MySQL Workbench IDE** or any other similar tool) that receives a **minion_id** and **increases the minion's years by 1**. 
 
 Create a program that **uses that stored procedure to increase the age** of a minion, whose **id** will be given as an input from the console. 
 
