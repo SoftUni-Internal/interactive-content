@@ -3,9 +3,9 @@
 
 # Statement types
 
-Once we obtain the connection, it is time to interact with the database. 
+Once we obtain the connection, it is time to **interact** with the database. 
 
-As we mentioned the JDBC API provides you with several interfaces and classes.
+As we mentioned the JDBC API provides you with **several interfaces** and classes.
 
 The interfaces used to interact with the database and send statements to it are "**Statement, PreparedStatement, CallableStatement**".
 

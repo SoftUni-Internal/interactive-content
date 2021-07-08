@@ -1,43 +1,42 @@
-[slide]
+[slide hideTitle]
 
 # Hibernate Framework
 
-Hibernate is an open-source Java ORM framework that takes care of mapping an object-oriented model to a relational database.
+Hibernate is an open-source Java ORM framework that handles mapping an object-oriented model to a relational database.
 
 It is implemented by the configuration of an **XML file** or by using **Java Annotations.**
 
-Hibernate provides an abstract layer for us, meaning that software developers don't need to worry about the implementations.
+Hibernate abstracts implementations from developers, providing a simplified experience.
 
-Hibernate does the things for us directly like **connection with the database, writing queries for CRUD operations, and more.**
+It automatically performs usual operations, such as **connecting to the database, writing queries for CRUD operations, and more.**
 
-Using ORM like hibernate improves our productivity by giving us high-level-oriented API and removes the need to write pure SQL.
+Using an ORM such as Hibernate improves our productivity by giving us a high-level-oriented API and removing the need to write plain SQL.
 
-It helps us improve our performance, maintainability, and portability by providing us a way to write less and more cleaner code.
+It improves application performance, maintainability, and portability, providing us with a way to write cleaner and more concise code in the process.
 
 We have different approaches to **Java ORM:**
 
-- POJO (Plain Old Java Objects) + XML mappings
+- **POJO** (Plain Old Java Objects) + **XML mappings**
 
-  * This approach is a bit old-fashioned, but a very powerful tool.
-  * It is implemented in "classical" Hibernate.
+  * a **capable** but deprecated procedure
+  * implemented in "classic" **Hibernate**
 
-- Annotated Java classes (POJO) mapped to DB tables
+- **Annotated Java classes** mapped to **database tables**
 
-  * This approach is based on Java annotations and XML.
-  * It is easier to implement and maintain.
+  * an approach based on **Java annotations and XML**
+  * easier to **implement** and **maintain**
 
 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Hibernate Configuration
 
-Let's take a look at the **Pom.xml file:**
+Let us take a look at the `Pom.xml` **file**:
 
-``` java
-…
+```java
  <dependencies>
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -50,10 +49,9 @@ Let's take a look at the **Pom.xml file:**
             <version>8.0.21</version>
         </dependency>    
 </dependencies>
-…
 ```
 
-## hibernate.cfg.xml 
+## `hibernate.cfg.xml` 
 
 ``` java
 <?xml version='1.0' encoding='utf-8'?>
@@ -90,13 +88,13 @@ Let's take a look at the **Pom.xml file:**
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Hibernate Implementation
 
-To create an application, first - we need to build the Java **POJO** classes.
+To create an application, first - we need to build the **POJO** classes.
 
-Here we have a simple java class with some **fields**, **constructor**, **getters** and **setters**.
+Here we have a simple Java class with some **fields**, **constructor**, **getters** and **setters**.
 
 ``` java
 public class Student {
@@ -108,7 +106,7 @@ public class Student {
 }
 ```
 
-Now, we must create and configure our student.cfg.xml mapping file.
+Now, we must create and configure our ``student.cfg.xml`` mapping file.
 
 ``` java
 <?xml version="1.0" encoding="utf-8"?>
@@ -128,7 +126,7 @@ Now, we must create and configure our student.cfg.xml mapping file.
 </hibernate-mapping>
 ```
 
-Next, we need to configure our Main class too.
+Next, we need to configure our **Main** class too.
 
 ``` java
 public class Main {
@@ -139,19 +137,19 @@ public class Main {
         Session session = sessionFactory.openSession(); // We need to open the session
         session.beginTransaction();
 
-        // Your Code Here
+        // Your code
         session.getTransaction().commit(); // After we are done, we must commmit our transaction
         session.close();
     }
 }
 ```
 
-Let's see how we can **save** our objects after the transaction:
+This is how we **save** our objects after the transaction:
 
 ``` java
 public static void main(String[] args) {
 
-    // Logic
+    // ...
 
     session.beginTransaction();
     
@@ -164,12 +162,12 @@ public static void main(String[] args) {
 }
 ```
 
-The next example is showing how we **retrieve** our data by `get()` method.
+This example illustrates data **retrieval** using the `get()` method:
 
 ``` java
 public static void main(String[] args) {
 
-    // Logic
+    // Logic goes here
 
     session.beginTransaction();
     
@@ -182,11 +180,11 @@ public static void main(String[] args) {
 
 ```
 
-We can **retrieve** data by queries also:
+We can **retrieve** data by queries too:
 
 ``` java
 public static void main(String[] args) {
-    // Logic here
+
         session.beginTransaction();
 
     List<Student> studentList = 
@@ -201,24 +199,21 @@ public static void main(String[] args) {
 
 ```
 
-
-
-
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Hibernate Query Language - HQL
 
-Hibernate query language extends and allows us to use **object-oriented programming** on our **SQL** queries.
+Hibernate Query Language extends upon SQL, allowing us to utilize **object-oriented programming** in our **SQL** queries.
 
-The difference between **SQL** and **HQL** is that hibernate query language is fully object-oriented and supports concepts like **inheritance** and **polymorphism**.
+The difference between both is that Hibernate Query language is fully object-oriented, supporting the concepts of **inheritance** and **polymorphism**.
 
-We can write independent queries in **HQL**, which are converted in **SQL** at **runtime**.
+We can write independent queries in **HQL**, converted to **SQL** at **runtime**.
 
-HQL can even return the child objects as part of the query result.
+HQL can even return the child objects as a part of the query result.
 
-Let's take a look at these simple examples:
+Let us take a look at these simple examples:
 
 **SELECT:**
 
@@ -239,7 +234,7 @@ Let's take a look at these simple examples:
 JOIN s.major AS major"
 ```
 
-Let see how we can obtain data information by Criteria:
+This is how we can obtain information by `criteria`:
 
 ``` java
 public static void main(String[] args) {

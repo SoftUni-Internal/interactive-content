@@ -2,7 +2,7 @@
 
 # Application to Database Connection
 
-- Download the [demo]() from the course platform
+- Download the [demo](https://softwareuniversity-my.sharepoint.com/:x:/r/personal/ivan_softuni_bg/_layouts/15/Doc.aspx?sourcedoc=%7B7612887C-7509-40AB-98B4-6FCE8C4AB0EC%7D&file=UCDN%20Resources%20Link%20-%20Still%20adding%20links.xlsx&action=default&mobileredirect=true&cid=4b401da1-c14d-48ae-8d68-ad53f655c8fd) from the course platform
 - You are given a simple application that:
   - establishes connection with the "**soft_uni**" database
   - executes simple MySQL statement to retrieve the employees' names by **given salary criteria**
