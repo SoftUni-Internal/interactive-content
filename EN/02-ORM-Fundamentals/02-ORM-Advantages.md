@@ -29,7 +29,7 @@ Using **ORMs** has multiple advantages, including:
 Even though they are powerful, **ORMs** have several disadvantages:
 
 - **Reduced performance**
-  * when **SQL** queries become **more complex**, the **auto-generated** queries could be inaccurate or less performant
+  * when **SQL** queries become **more complex**, the **auto-generated** queries could be inaccurate or less effective
   * **overhead** can also slow down an application
 
 - **Reduces flexibility**
