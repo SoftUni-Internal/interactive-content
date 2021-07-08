@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Maven
 
@@ -36,7 +36,7 @@ Now, let's create our project from the beginning.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Maven Configurations
 
