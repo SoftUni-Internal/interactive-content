@@ -22,7 +22,7 @@ It automatically **escapes all the bad characters** that can interact with our s
 
 [slide hideTitle]
 
-# SQL Injection example
+# SQL Injection Еxample
 
 A web application is used by clients, that is why we are accepting **custom data** from the **users** all the time.
 

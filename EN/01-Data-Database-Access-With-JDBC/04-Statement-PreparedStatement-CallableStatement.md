@@ -1,7 +1,7 @@
 # Statements
 [slide hideTitle]
 
-# Statement types
+# Statement Тypes
 
 Once we obtain the connection, it is time to **interact** with the database. 
 
