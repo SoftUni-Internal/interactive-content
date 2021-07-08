@@ -14,8 +14,9 @@ Download the [resources](https://videos.softuni.org/resources/java/Java-ORM-And-
 
 [slide hideTitle]
 
-# Part 1: Accessing Database via Simple Java Application 
+# Problem with Solution: Accessing Database via Simple Java Application 
 
+## Description 
 You are given a simple java program that opens a connection to the local database server and retrieves the following data - the first name and the last name of the employees from the "**soft_uni**" database. 
 
 The data is filtered by the salary criteria, which is given by the user as the input. 
@@ -37,8 +38,9 @@ The data is filtered by the salary criteria, which is given by the user as the i
 
 [slide hideTitle]
 
-# Connection and Connection Properties
+# Problem with Solution: Connection and Connection Properties
 
+## Description 
 Up to this point, we have used the MySQL Workbench IDE to connect to the local instance of the MySQL server. 
 
 [image assetsSrc="Spring-Data-Database-Access-With-JDBC-Lab(1).png" /]
@@ -82,8 +84,9 @@ Remember that the user and the password are already included in the **Properties
 
 [slide hideTitle]
 
-# Preparing and Executing Statements
+# Problem with Solution: Preparing and Executing Statements
 
+## Description 
 ```java
 PreparedStatement stmt =
     connection.prepareStatement("SELECT first_name, last_name FROM employees WHERE salary > ?");
@@ -112,8 +115,9 @@ It could be another SQL query, which in the worst case would harm our database. 
 
 [slide hideTitle]
 
-# Iterating Over the Result
+# Problem with Solution: Iterating Over the Result
 
+## Description 
 
 Finally, if the data in the database matches the given criteria, we will receive a **ResultSet** of rows, otherwise, it will be empty. 
 
@@ -139,8 +143,9 @@ while(rs.next()) {
 
 [slide hideTitle]
 
-# Part 2: Writing your Data Retrieval Application
+# Problem with Solution: Writing your Data Retrieval Application
 
+## Description 
 Follow the steps to write a java application that retrieves the information about the users, their games, and duration. Use the "**diablo**" database from the provided resources. 
 
 ## Example
