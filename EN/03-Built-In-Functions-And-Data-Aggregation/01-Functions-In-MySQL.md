@@ -2,9 +2,7 @@
 
 # Functions in MySQL
 
-**Download the resources needed for this lesson from** [here]()**.** 
-
-With MySQL, we can do much more than just store or retrieve data information.
+With MySQL, we can do much more than just store or retrieve information.
 
 Knowing this, we can **manipulate** the data we have.
 
