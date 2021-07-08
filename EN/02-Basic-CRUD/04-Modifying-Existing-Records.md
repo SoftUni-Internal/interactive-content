@@ -2,18 +2,19 @@
 
 # Updating data
 
-Persisting our records in the database is the first step but we will often need to modify existing data.
+Persisting our records in the database is the first step, but we will often need to modify existing data.
 
-This can be done with the keyword **UPDATE**. 
+This can be done with the `UPDATE` keyword. 
 
 ```java
 UPDATE `students`                                               
 SET `age` = 14                                               
 WHERE `first_name` = 'Mary' AND `last_name` = 'Johnson';
 ```
-We choose the column or columns we want to change with the **SET** keyword.
 
-Make sure you do not forget to filter the records you want to change otherwise the **UPDATE** operation will change the whole table.
+We choose the column/s we want to change with the `SET` keyword.
+
+Make sure you do not forget to filter the records you want to change or the `UPDATE` operation will change the whole table.
 
 [/slide]
 
@@ -35,11 +36,11 @@ Use the database that is called "**Hotel Database**".
 
 Update the salary of all employees whose **job_title** is "**Manager**", **increasing it by 100**.
 
-Retrieve information about all the salaries from the employees table.
+Retrieve information about all the salaries from the **employees** table.
 
-**Hint**: Running this query in MySQL Workbench might produce the following error - Error Code: 1175. 
+**Hint**: Running this query in MySQL Workbench might produce the following error - "Error Code: 1175". 
 
-You are using safe update mode and you tried to update a table without a WHERE that uses a KEY column.
+You are using safe update mode and you tried to update a table without a **WHERE** that uses a **KEY** column.
 
 You can solve it by disabling safe mode and trying to run the query again.
 
@@ -158,20 +159,20 @@ INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`
 
 # Deleting Data
 
-Keeping our data in check and removing the records we don't need anymore is as important as persisting our records. 
+Keeping our data in check and removing the records we do not need anymore is as important as persisting our records. 
 
-You can delete specific rows:
+You can delete specific rows with the `DELETE` keyword:
 
 ```java
 DELETE FROM `employees`      
 WHERE `employee_id` = 1;    
 ```
 
-As well as in the **UPDATE** action, you should not forget to add a **WHERE** clause to filter and **DELETE** only the results you want. 
+You should also specify what you want to delete with the `WHERE` keyword.
 
-Be careful, the **DELETE** is permanent unless you have a back-up of your database.
+Note that the deleting process is **permanent** and **cannot** be reversed.
 
-You can also delete all records from a given table by using the **TRUNCATE** keyword (it works faster than **DELETE**).
+You can also delete **all records** with the `TRUNCATE` keyword, which is faster than `DELETE`.
 
 ```java
 TRUNCATE TABLE `users`;   
