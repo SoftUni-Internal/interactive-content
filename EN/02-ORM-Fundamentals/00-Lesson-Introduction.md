@@ -7,7 +7,7 @@
 ## In this lesson you will learn:
 
 **1. ORM**
-  - Definition
+  - Definition - a technique for data conversion
   - ORM techniques
   - Operations using ORM
 
