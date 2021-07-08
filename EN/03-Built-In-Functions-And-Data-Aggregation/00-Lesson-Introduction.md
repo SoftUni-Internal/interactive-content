@@ -7,7 +7,7 @@
 ## In this lesson you will learn:
 
 **1. Functions in MySQL**
-- Manipulate database entries by using the integrated functions in MySQL
+- How to manipulate database entries by using the integrated functions in MySQL
 
 **2. String Functions**
 - Integrated functions to manipulate strings
