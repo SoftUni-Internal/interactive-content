@@ -14,15 +14,15 @@ The `SUBSTRING()` function allows us to extract parts of a string.
 SUBSTRING(String, Position)
 ```
 
-Here, we select our **string**, and the **position** from which we permorm the substring operation.
+Here, we select our **string** and the **position** from which we perform the substring operation.
 
-**For example**:
+The following example selects a part of a string, starting from the second character:
 
 ``` java
 SELECT SUBSTRING('softuni.org', 2);
 ```
 
-**The corresponding output is**:
+This is the corresponding output:
 
 ```
 oftuni.org
@@ -30,7 +30,7 @@ oftuni.org
 
 ### Using SUBSTRING() With A Length Parameter
 
-The second way of using our `SUBSTRING()` is by passing in a length:
+The second way of using our `SUBSTRING()` is by passing in a value for the **length** parameter:
 
 ```java
 SUBSTRING(String, Position, Length) 
@@ -38,13 +38,13 @@ SUBSTRING(String, Position, Length)
 
 We pass in the index at which our result will **start**, to the index at which it will **finish**.
 
-**Example**:
+This is how it is done:
 
 ``` java
 SELECT SUBSTRING('softuni.org', 1, 3);
 ```
 
-**Output**:
+The corresponding output will be:
 
 ```
 sof
@@ -290,9 +290,9 @@ The Adventures of Tom Bombadil
 
 Now, let us take a look at the `REPLACE()` function in MySQL.
 
-The `REPLACE()` function allows us to replace all occurrences of a substring with a string.
+It allows us to replace all occurrences of a substring with a string.
 
-It is crucial to remember that this method performs on a **case-sensitive** match.
+You should remember that this method performs on a **case-sensitive** match.
 
 ``` java
 REPLACE(String, Pattern, Replacement) 
@@ -304,7 +304,7 @@ Here, the "**String**" parameter is our field from the table.
 
 And lastly, "**Replacement**" is the new string.
 
-**Example:**
+This is an example of how to use `REPLACE()`:
 
 ``` java
 SELECT REPLACE('aaa.softuni.org','a','w');
@@ -312,7 +312,7 @@ SELECT REPLACE('aaa.softuni.org','a','w');
 
 In this example, **"a"** will be replaced with **"w"**.
 
-**Output:**
+The result of our example will be:
 
 ```
 www.softuni.org
@@ -326,13 +326,13 @@ Using this method, we can **replace entire words**:
 SELECT REPLACE('We can replace the word blood with a different symbol or word.', 'blood', '*****')
 ```
 
-First, we have our **text**.
+In the first position, we have our original text.
 
 Then, we write the **word** we need to replace.
 
 And finally, we pass in the **replacement** symbols or characters.
 
-**The output is:**
+The result of the example is:
 
 ```
 We can replace the word ***** with a different symbol or word.
@@ -587,7 +587,7 @@ The same principle is valid for the `RTRIM()` function, but this time it will re
 SELECT RTRIM('SoftUni rocks! ')
 ```
 
-**Output**:
+This is the result of our example:
 
 ```
 SoftUni rocks!
@@ -607,7 +607,7 @@ The `CHAR_LENGTH()` function will return the length of the provided string.
 SELECT CHAR_LENGTH('Let us count the characters in this sentence.');
 ```
 
-Keep in mind that this will count the **whitespaces** too.
+Keep in mind that it will count the **whitespaces** too.
 
 **Output**:
 
@@ -640,7 +640,7 @@ As we see here, the `LENGTH()` function will return a result of **2**, while `CH
 
 The `LEFT()` and `RIGHT()` functions return characters from the **beginning** or from the **end** of a string.
 
-**Syntax**:
+This is the correct way to use them:
 
 ``` java
 LEFT(String, Count)
@@ -649,15 +649,13 @@ RIGHT(String, Count)
 
 ## LEFT()
 
-This is an **example** use of `LEFT()`:
+In the following example, we use `LEFT()` to return the **first four** characters from the left:
 
 ``` java
 SELECT LEFT('Testing Left Function', 4); 
 ```
 
-The above syntax returns the **first four** characters from the left side of our string.
-
-**Output**:
+This is the result of our function:
 
 ```
 Test
@@ -690,13 +688,13 @@ ction
 
 The `LOWER()` function converts all characters in the provided string to **lowercase** letters.
 
-**Example**:
+After using it in with the given string:
 
 ``` java
 SELECT LOWER('MYSQL IS AWESOME');
 ```
 
-**Output**:
+We receive the following output:
 
 ```
 mysql is awesome
@@ -706,13 +704,13 @@ mysql is awesome
 
 Similarly, use the `UPPER()` function to convert all characters to **uppercase** letters.
 
-**For example:**
+For example:
 
 ``` java
 SELECT UPPER('this is an uppercase string');
 ```
 
-**Output:**
+This function will return the following result:
 
 ```
 THIS IS AN UPPERCASE STRING
@@ -728,15 +726,13 @@ THIS IS AN UPPERCASE STRING
 
 The `REVERSE()` function allows us to reverse the order of all characters in the provided string.
 
-**Example**:
+In the following example we use it with the word `softuni`:
 
 ``` java
 SELECT REVERSE('softuni'); 
 ```
 
-The code above will reverse the characters in the "**softuni**" string.
-
-**Output**:
+As a result, we receive:
 
 ```
 inutfos
@@ -746,15 +742,13 @@ inutfos
 
 The `REPEAT()` function allows us to repeat a string a specified number of times.
 
-**Example**:
+Let's repeat `softuni` **three** times:
 
 ``` java
 SELECT REPEAT('softuni ', 3); 
 ```
 
-This will **repeat** "softuni ", followed by the whitespace after, exactly **3 times**.
-
-**Output**:
+This is what we will get:
 
 ```
 softuni softuni softuni 
@@ -771,7 +765,7 @@ The `LOCATE()` function in MySQL lets us locate a specific pattern (substring) i
 
 The function performs a **case-insensitive** search.
 
-**Syntax**:
+This is the correct syntax:
 
 ``` java
 LOCATE(Pattern, String, [Position])
@@ -779,17 +773,17 @@ LOCATE(Pattern, String, [Position])
 
 The `[Position]` argument is **optional**. 
 
-If **omitted**, it defaults to 1. 
+If **omitted**, it defaults to **1**. 
 
 The **first** position in our string is on index 1.
 
-**Example**:
+Take a look at the following example:
 
 ``` java
 SELECT LOCATE('st','teststring');
 ```
 
-**Result**:
+It will result in:
 
 ```
 3
@@ -807,13 +801,13 @@ INSERT(String, Position, Length, Substring)
 
 The **Length** parameter indicates the count of characters that will be deleted from the start of the given **Position**.
 
-**Example**:
+After running the following example:
 
 ``` java
 SELECT INSERT('SoftuniTestString', 2, 4, ' insert ');
 ```
 
-**Output after executing**:
+We will receive:
 
 ```
 S insert niTestString
