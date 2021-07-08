@@ -164,6 +164,5 @@ Use the "**diablo**" database from the provided resources.
 |---|---|
 | destroyer  | No such user exists  |
 
-
 [/slide]
 
