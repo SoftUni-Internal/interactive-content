@@ -14,4 +14,7 @@
 **2. Maven**
   - What Maven is and how to use it
 
+**3. Java Persistence API**
+  - Definition and use cases
+
 [/slide]

@@ -2,25 +2,25 @@
 
 # Java Persistence API
 
-With JPA (Java persistence API) we can use our **CRUD** functions information from relational databases to our Java objects.
+The Java Persistence API (JPA) is a Java specification for accessing, persisting, and managing data between Java objects or classes and a relational database.
 
-This concept is called ORM (**Object-relational mapping**).
+This concept is known as ORM (**Object-relational mapping**).
 
 JPA operates with POJO entities with annotations or XML mappings.
 
-Java persistence API maps relationships between tables as associations between classes.
+It maps relationships between tables as associations between classes.
 
 # JPA Entities
 
-Entities in JPA are just POJO classes that represent our data.
+Entities in JPA are just POJO classes representing our data.
 
 Every instance of our entity represents a row in our table.
 
 JPA entities do not require interfaces.
 
-Our **getters** & **setters** can contain logic inside (like validation)
+Our **getters** and **setters** can contain logic inside (such as validation).
 
-Let's take a look at simple example of an entity class:
+Let us take a look at simple example of an entity class:
 
 ``` java
 @Entity @Table(name = "students") // Set table name
@@ -44,41 +44,43 @@ public class Student {
 
 # Annotations
 
-We will take a look at the most important annotations in JPA:
+These are the six most commonly used annotations in JPA:
 
 ## @Entity
 
-`@Entity` annotation declares the class as an entity or a table.
+The`@Entity` annotation declares the class as an entity or a table.
 
 We can apply this annotation on **classes**, **enumerations** or **interfaces**.
 
 ## @Table
 
-`@Table` annotation is used to specify the table name.
+The `@Table` annotation defines the table name.
 
 Also, it specifies which table is mapped by which entity.
 
 ## @Basic
 
-`@Basic` annotation specifies the non-constraint fields explicitly.
+`@Basic` specifies the non-constraint fields explicitly.
 
-This is an **optional** annotation.
+It is an **optional** annotation.
 
-When we **don't specify** the basic annotation, the default values of this annotation are applied.
+When we **do not specify** the basic annotation, the default values of this annotation are applied.
 
 ## @Transient
 
-`@Transient` annotation specifies the property that is **not persistent**, i.e., the value is never stored in the database.
+The `@Transient` annotation specifies the property that is **not persistent**.
+
+This means that the value is not stored in the database.
 
 ## @ID
 
-`@ID` annotation specifies the property. It is used for the identity (primary keys of a table) of the class.
+`@ID` annotation specifies the property. It is used for the identity (primary keys) of the class.
 
-- `@GeneratedValue` - Specifies how the identity attributes can be initialized.
+- `@GeneratedValue` - specifies how we can initialize identity attributes
 
 ## @Column
 
-`@Column` annotation specifies the column attribute for the persistence property.
+The `@Column` annotation specifies the column attribute for the persistence property.
 
 If no **column** annotation is applied, the default values apply.
 
@@ -144,7 +146,7 @@ If no **column** annotation is applied, the default values apply.
 
 ## JPA Save Objects
 
-Let's take a look at syntax of how we save objects:
+Let's take a look at the syntax of how we save objects:
 
 ``` java
 public static void main(String[] args) {
@@ -189,7 +191,7 @@ public static void main(String[] args) {
 
 # JPA Write Data Methods
 
-- `persist()` method adds a given entity object into the DB. 
+- `persist()` - adds a given entity object into the DB
 
 ``` java
 Car car = new Car();
@@ -197,9 +199,9 @@ person.setBrand("Mercedes");
 session.persist(car);
 ```
 
-- `remove()` method removes given entity from DB.
+- `remove()` - removes given entity from DB
 
-In order to remove something from our DB, we must first retrieve it.
+Remove something from a database begins with retrieving it.
 
 While the transaction is active, `remove()` can be used.
 
@@ -210,23 +212,25 @@ Person employee =  em.find(Person.class, 1L);
     }
 ```
 
-- `refresh()` method refresh the state of the instance from the database, **overwriting** changes made to the entity if any.
+- `refresh()` - renews the state of the instance from the database, **overwriting** changes made to the entity, if any
 
-- `detach()` method **removes** the object from the persistence context. 
+- `detach()` - **removes** the object from the persistence context
 
-Unflushed changes that are made to the entity will **not be synchronized** to the database.
+Unflushed changes made to the entity will **not be synchronized** to the database.
 
-- `merge()` method synchronizes the state of a detached entity with the PC. It is required only for detached entities.
+- `merge()` - synchronizes the state of a detached entity with the PC. It is required only for detached entities
 
-Merging **does not** directly update the object in our database. It **merges** the changes that were made into the persistence context.
+Merging **does not** directly update the object in our database. 
 
-- `contain()` method returns **boolean** param to check if the given entity is managed by the persistence context (PC).
+It **merges** the changes made into the persistence context.
 
-- `flush()` method saves the changes that are made from PC in the Database.
+- `contain()` - returns **boolean** param to check if the given entity is managed by the persistence context (PC)
 
-Flushing it has no effect when the transaction is **not active**.
+- `flush()` - saves the local changes in the database
 
-- `find()` method executes a **SELECT** query by primary key.
+Flushing has no effect when the transaction is **not active**.
+
+- `find()` - executes a **SELECT** query by primary key
 
 ``` java
 public static void main(String[] args) {
@@ -239,8 +243,6 @@ public static void main(String[] args) {
     }
 ```
 
-In the example above, we are passing the **class** of the entity that is being needed and the **id** or **primary key** on the particular entity.
-
-
+In the example above, we pass the **class** of the needed entity and the **id** or **primary key** on the particular entity.
 
 [/slide]

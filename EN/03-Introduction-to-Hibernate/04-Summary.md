@@ -4,15 +4,15 @@
 
 ## In this lesson you learned:
 
-- Why we use Maven
-  * Easy dependency imports by XMLs
+- Maven
+  * easy dependency imports by XMLs
 - What the Java Persistence API is
 - Hibernate
   * JPA functions
 
 ## In the next lesson you will learn:
 
-- JPA inheritances strategies
+- JPA inheritance strategies
 - Table relations
 - Cascading
 
