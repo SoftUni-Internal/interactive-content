@@ -3,8 +3,8 @@
 
 ## In this lesson you learned:
 
-- The **CRUD** operations - Create, Read, Update Delete
-- The capabilities of SQL **SELECT**
+- The **CRUD** operations - Create, Read, Update, and Delete
+- The capabilities of SQL `SELECT`
 
 - Retrieving data from the database with **queries**
 
@@ -32,7 +32,7 @@
     FROM `students`
     WHERE `course_id` = 10
     ```
-- The definition of **Views** and how to make one
+- The definition of **Views** and how to create one
 
     ```java
     CREATE VIEW [any combination of columns] 
@@ -47,7 +47,7 @@
            ('Jane', 'Doe', '12', 'JavaScript Basics'),
            ('John', 'Doe', '16', 'Java Advanced'), ...
     ```
-- Modifying data with **UPDATE** and **DELETE** statements
+- Modifying data with the `UPDATE` and `DELETE` statements
 
     - Updating:
     ```java
