@@ -14,11 +14,11 @@ We have 5 main functions:
 
 These functions allow us to build **summarized** data information from our database.
 
-**For these examples, we will use our soft_uni database.**
+**For these examples, we will use our** `soft_uni` **database.**
 
-Usually **aggregate** functions ignore **NULL** values.
+Usually **aggregate** functions ignore `NULL` values.
 
-**Example**:
+Here is an example of an aggregate function:
 
 ``` java
 SELECT e.`department_id`, MIN(e.`salary`) AS 'MinSalary'
@@ -38,9 +38,6 @@ This SQL query will produce the following **result**:
 | 6 | 40900,0000 |
 | 7 | 9500,0000 |
 
-After knowing this, let us take a look at the functions and their syntax.
-
-
 [/slide]
 
 [slide hideTitle]
@@ -51,7 +48,7 @@ The `SUM()` function sums all the values in a column.
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(1).png" /]
 
-If any department has no salaries, **NULL** will be displayed.
+If any department has no salaries, `NULL` will be displayed.
 
 ``` java
 SELECT e.`department_id`, SUM(e.`salary`) AS 'TotalSalary'
@@ -59,7 +56,7 @@ FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
 
-**Output**:
+This is the result of our example:
 
 | department_id | TotalSalary |
 | --- | --- |
@@ -255,11 +252,11 @@ INSERT INTO books(author_id,title, year_of_release,cost) VALUES
 
 We use the `COUNT()` function when we need to count values (**excluding null**) in one or more columns based on grouping criteria.
 
-When using `COUNT()`, we ignore any employees with **NULL** salary.
+When using `COUNT()`, we ignore any employees with `NULL` salary.
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations.png" /]
 
-Here is a simple example using our **soft_uni** database:
+In this example, we run a `COUNT()` function in our `soft_uni` database:
 
 ``` java
 SELECT e.`department_id`, COUNT(e.`salary`) AS 'Salary Count'
@@ -267,7 +264,7 @@ FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
 
-**Output**:
+After running the function, we get the following result:
 
 | department_id | name | manager_id |
 | --- | --- | --- |
@@ -463,7 +460,7 @@ FROM `employees` AS e
 GROUP BY e.`department_id`; 
 ```
 
-**Output**:
+The result from the query above will be:
 
 | department_id | Max_salary |
 | --- | --- |
@@ -476,7 +473,6 @@ GROUP BY e.`department_id`;
 | 7 | 84100,0000 | 
 | 8 | 24500,0000 |
 | ..... | ...... |
-
 
 [/slide]
 
@@ -494,7 +490,7 @@ FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
 
-**The resulting table looks like this**:
+The resulting table looks like this:
 
 | department_id | Min_salary |
 | --- | --- |
@@ -672,7 +668,7 @@ FROM `employees` AS e
 GROUP BY e.`department_id`;
 ```
 
-**Result:**
+This query will produce the following result:
 
 | department_id | Average_Salary |
 | --- | --- |
