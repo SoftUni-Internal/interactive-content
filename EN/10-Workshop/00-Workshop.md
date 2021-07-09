@@ -125,19 +125,13 @@ NOTE: Create the entities and their class members **exactly** in the **format st
 
 [image assetsSrc="nlt-workshop-13.png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Relantionships
+## Relantionships
 
 One **Company** can have many **Projects** but only one **Project** can be in one **Company**.
 
 One **Project** may have many **Employees** but only one **Employee** may be appointed to one **Project**.
 
 One **User** can have many **Roles** and one **Role** can be on many **Users**.
-
-[image assetsSrc="nlt-workshop-13.png" /]
 
 
 [/slide]
