@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-## Project Setup
+# Project Setup
 Your task is to create an account system that has users with accounts and manages money transfer or withdrawal.
 
 Build the system using the code first approach and Spring Data.
@@ -79,7 +79,7 @@ Set up the appropriate tables, columns, column properties and table relations.
 
 [slide hideTitle]
 
-## Repositories
+# Repositories
 
 Create two repositories – one for the **User** and another for the **Account**
 
@@ -103,7 +103,7 @@ Add several methods to help with the data retrieval.
 
 [slide hideTitle]
 
-## Services
+# Services
 
 Define several service **interfaces**:
 
@@ -157,16 +157,16 @@ public class UserServiceImpl implements UserService {
 The method implementation logic is up to you. Here are some several tips:
 
 -  **AccountServiceImpl**
-    - -	Money withdrawal - should only happen if account is **present** in the database, **belongs to user** and **has enough balance**
-    - -	Money transfer - should only happen if **account belongs to user** and transfer value is **not negative**
+    * Money withdrawal - should only happen if account is **present** in the database, **belongs to user** and **has enough balance**
+    * Money transfer - should only happen if **account belongs to user** and transfer value is **not negative**
 
 - **UserServiceImpl**
-    -	**User registration** - should only happen if user does not exist in the database
+    * **User registration** - should only happen if user does not exist in the database
 [/slide]
 
 [slide hideTitle]
 
-## The ConsoleRunner
+# The ConsoleRunner
 
 We will test our application in a **ConsoleRunner** class.
 
@@ -193,7 +193,7 @@ public class ConsoleRunner implements CommandLineRunner {
 
 [slide hideTitle]
 
-## Test
+# Test
 
 Test the application by adding logic in the **ConsoleRunner**'s **run** method class:
 
