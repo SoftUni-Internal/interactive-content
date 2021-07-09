@@ -36,7 +36,7 @@ JSON files use this syntax to store information, this is an array of two objects
 ]
 ```
 
-The attributes are in double quotes while the values are enclosed in double quotes, square, diamond brackets, or directly added after the attribute depending on the data type that is stored.
+The attributes are in double quotes while the values are enclosed in double-quotes, square brackets, diamond brackets, or directly added after the attribute depending on the data type that is stored.
 
 
 | Type | Example |
@@ -48,7 +48,7 @@ The attributes are in double quotes while the values are enclosed in double quot
 | Null | "address": null |
 
 
-Data parsed as JSON is simple to read, compact and easy to transfer.
+Data parsed as JSON is simple to read, compact, and easy to transfer.
 [/slide]
 
 [slide hideTitle]
@@ -162,12 +162,12 @@ All of the keys and values are enclosed within **curly brackets**.
 
 There are a few distinct parts that we can see from the JSON information above:
 
-- `firstName`, `lastName`, `address`, `studentIdNumbers` - attributes
+- **firstName**, **lastName**, **address**, **studentIdNumbers** are **attributes**
 
-- `"Kate"`, `"Johnson"` - values for the attributes
+- "**Kate**" and "**Johnson**" are **attribute values**
 
-- The value of `address` (object)
+- The value of **address** is **an object**
 
-- The value of `studentIdNumbers` (array)
+- The value of **studentIdNumbers** is **an array**
 
 [/slide]
