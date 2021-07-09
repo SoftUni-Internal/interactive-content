@@ -85,8 +85,6 @@ The `@Column` annotation specifies the column attribute for the persistence prop
 If no **column** annotation is applied, the default values apply.
 
 
-
-
 [/slide]
 
 [slide hideTitle]

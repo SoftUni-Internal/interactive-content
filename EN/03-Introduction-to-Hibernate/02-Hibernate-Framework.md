@@ -14,7 +14,7 @@ Using an ORM such as Hibernate improves our productivity by giving us a high-lev
 
 It improves application performance, maintainability, and portability, providing us with a way to write cleaner and more concise code in the process.
 
-We have different approaches to **Java ORM:**
+We have **two** different approaches to **Java ORM:**
 
 - **POJO** (Plain Old Java Objects) + **XML mappings**
 
@@ -149,7 +149,7 @@ This is how we **save** our objects after the transaction:
 ``` java
 public static void main(String[] args) {
 
-    // ...
+    // Logic goes here
 
     session.beginTransaction();
     
@@ -167,7 +167,7 @@ This example illustrates data **retrieval** using the `get()` method:
 ``` java
 public static void main(String[] args) {
 
-    // Logic goes here
+    // ...
 
     session.beginTransaction();
     

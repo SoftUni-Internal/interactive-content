@@ -187,7 +187,6 @@ This method is applied in **traditional ORMs**.
 The following code is an example of a **POJO + XML** combination:
 
 ```java
-...
    <description>Mapping file</description>
    <entity class="Employee">
       <table name="EMPLOYEETABLE"/>
@@ -202,7 +201,6 @@ The following code is an example of a **POJO + XML** combination:
          </basic>
       </attributes>
    </entity>
-...
 ```
 
 While this solution is powerful, it is old and not a recommended practice.
