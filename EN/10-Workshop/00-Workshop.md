@@ -125,7 +125,7 @@ NOTE: Create the entities and their class members **exactly** in the **format st
 
 [image assetsSrc="nlt-workshop-13.png" /]
 
-## Relantionships
+## Relantionship
 
 One **Company** can have many **Projects** but only one **Project** can be in one **Company**.
 
@@ -225,22 +225,24 @@ You are **not allowed** to modify the provided files.
 
 # Data Export
 
-Here you will have some pretty complex database querying. Export the data in the formats specified below.
+Here you will have some pretty complex database querying.
+
+Export the data in the formats specified below.
 
 ## Finished Projects
 
 **Export all projects**, which have **been finished**:
 
-- Extract the projects, which have been finished
+- Extract the **projects**, which have been **finished**
 
-- Order the projects by their name in descending order
+- **Order** the **projects** by their name in **descending** order
 
 ## Employees Older Than 25
 
-**Export** the **employees** who are older than 25
+**Export the employees who are older than 25**
 
 - Export the **full name**, **age** of the **employees** and the **name of their project**
 
-- Order the employees by their first name
+- **Order the employees by their first name**
 
 [/slide]
