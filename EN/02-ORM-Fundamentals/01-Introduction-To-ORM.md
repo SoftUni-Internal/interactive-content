@@ -4,7 +4,7 @@
 
 # ORM Definition
 
-ORM or **Object-Relational Mapping** is a **programming technique** for data conversion.
+ORM or **object-relational mapping** is a **programming technique** for data conversion.
 
 This technique allows database **queries** and **manipulations** to be performed by using the **object-oriented paradigm**.
 
@@ -12,9 +12,19 @@ It maps **objects** to **table rows in relational databases**.
 
 [image assetsSrc="Java-ORM-Fundamentals-1.png" /]
 
+Using ORM, we can perform the full range of CRUD operations.
+
+It can **store, retrieve, update, and delete** from an object-oriented program in a relational database.
+
+All ORM systems utilize a "**data layer**", responsible for managing translation between both systems.
+
+This layer is typically a **library** written in an object-oriented language, such as Java.
+
+It often works in conjunction with the web framework, used to write the rest of our application.
+
 [/slide]
 
-[slide ]
+[slide hideTitle]
 
 # ORM Usage
 
@@ -51,7 +61,7 @@ However, ORMs are superior to JDBC due to:
 
 - Better scalability
 
- **JDBC** is better **small applications** because the data can be **directly presented from the database**.
+**JDBC** is better for **small applications** because the data can be **directly presented from the database**.
 
 **ORMs** are used for **big, domain-driven applications** that have more **complex object relationships**.
 
