@@ -1,4 +1,4 @@
-# ORM Advantages & Disadvantages
+# Advantages and Disadvantages
 
 [slide hideTitle]
 # ORM Advantages

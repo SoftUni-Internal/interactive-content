@@ -1,6 +1,8 @@
+# Java Persistence API
+
 [slide hideTitle]
 
-# Java Persistence API
+# About JPA
 
 The Java Persistence API (JPA) is a Java specification for accessing, persisting, and managing data between Java objects or classes and a relational database.
 
@@ -9,6 +11,10 @@ This concept is known as ORM (**Object-relational mapping**).
 JPA operates with POJO entities with annotations or XML mappings.
 
 It maps relationships between tables as associations between classes.
+
+[/slide]
+
+[slide hideTitle]
 
 # JPA Entities
 
@@ -20,9 +26,11 @@ JPA entities do not require interfaces.
 
 Our **getters** and **setters** can contain logic inside (such as validation).
 
-Let us take a look at simple example of an entity class:
+## Entity Class: `Student`
 
-``` java
+Let us take a look at simple example of an entity class, named `Student`:
+
+```java
 @Entity @Table(name = "students") // Set table name
 public class Student {
     @Id // Primary Key
@@ -44,23 +52,23 @@ public class Student {
 
 # Annotations
 
-These are the six most commonly used annotations in JPA:
+These are the **six** most commonly used **annotations** in JPA:
 
 ## @Entity
 
-The`@Entity` annotation declares the class as an entity or a table.
+The `@Entity` annotation declares the class as an **entity or a table**.
 
 We can apply this annotation on **classes**, **enumerations** or **interfaces**.
 
 ## @Table
 
-The `@Table` annotation defines the table name.
+The `@Table` annotation defines the **table's name**.
 
-Also, it specifies which table is mapped by which entity.
+Also, it specifies which **table** is mapped by which **entity**.
 
 ## @Basic
 
-`@Basic` specifies the non-constraint fields explicitly.
+`@Basic` specifies the **non-constraint fields** explicitly.
 
 It is an **optional** annotation.
 
@@ -74,13 +82,13 @@ This means that the value is not stored in the database.
 
 ## @ID
 
-`@ID` annotation specifies the property. It is used for the identity (primary keys) of the class.
+`@ID` specifies the property. It is used for the **identity** (primary keys) of the class.
 
-- `@GeneratedValue` - specifies how we can initialize identity attributes
+- `@GeneratedValue` - specifies how we can **initialize** identity attributes
 
 ## @Column
 
-The `@Column` annotation specifies the column attribute for the persistence property.
+The `@Column` annotation specifies the **column attribute** for the **persistence** property.
 
 If no **column** annotation is applied, the default values apply.
 
@@ -91,9 +99,9 @@ If no **column** annotation is applied, the default values apply.
 
 # JPA Configuration
 
-## Pom.xml
+## `pom.xml`:
 
-``` java
+```xml
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0  http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -123,9 +131,9 @@ If no **column** annotation is applied, the default values apply.
 </project>
 ```
 
-## Persistence.xml
+## `persistence.xml`:
 
-``` java
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
    <persistence-unit name="school">
@@ -144,9 +152,9 @@ If no **column** annotation is applied, the default values apply.
 
 ## JPA Save Objects
 
-Let's take a look at the syntax of how we save objects:
+Let us take a look at the syntax of how we save objects:
 
-``` java
+```java
 public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("school");
         EntityManager em = emf.createEntityManager();
@@ -189,48 +197,66 @@ public static void main(String[] args) {
 
 # JPA Write Data Methods
 
-- `persist()` - adds a given entity object into the DB
+## `persist()`
 
-``` java
+The `persist()` method adds a given entity object into the database:
+
+```java
 Car car = new Car();
 person.setBrand("Mercedes");
 session.persist(car);
 ```
 
-- `remove()` - removes given entity from DB
+## `remove()`
+
+This method removes given entity from the DB.
 
 Remove something from a database begins with retrieving it.
 
-While the transaction is active, `remove()` can be used.
+While the transaction is active, `remove()` can be used:
 
-``` java
+```java
 Person employee =  em.find(Person.class, 1L);
     if (employee != null) {
       em.remove(employee);
     }
 ```
 
-- `refresh()` - renews the state of the instance from the database, **overwriting** changes made to the entity, if any
+## `refresh()`
 
-- `detach()` - **removes** the object from the persistence context
+`refresh()` renews the state of the instance from the database, **overwriting** changes made to the entity, if any.
+
+## `detach()`
+
+The `detach()` method **removes** the object from the persistence context.
 
 Unflushed changes made to the entity will **not be synchronized** to the database.
 
-- `merge()` - synchronizes the state of a detached entity with the PC. It is required only for detached entities
+## `merge()`
+
+`merge()` synchronizes the state of a detached entity with the PC. 
+
+It is required only for detached entities.
 
 Merging **does not** directly update the object in our database. 
 
 It **merges** the changes made into the persistence context.
 
-- `contain()` - returns **boolean** param to check if the given entity is managed by the persistence context (PC)
+## `contain()`
 
-- `flush()` - saves the local changes in the database
+The `contain()` method returns a **boolean** parameter that shows if the given entity is managed by the **persistence context** (PC).
+
+## `flush()`
+
+`flush()` saves the PC changes in the database.
 
 Flushing has no effect when the transaction is **not active**.
 
-- `find()` - executes a **SELECT** query by primary key
+## `find()`
 
-``` java
+This method executes a `SELECT` query by primary key:
+
+```java
 public static void main(String[] args) {
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("school");
 

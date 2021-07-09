@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# ORM Definition
+# What is ORM?
 
 ORM or **object-relational mapping** is a **programming technique** for data conversion.
 
@@ -20,13 +20,13 @@ All ORM systems utilize a "**data layer**", responsible for managing translation
 
 This layer is typically a **library** written in an object-oriented language, such as Java.
 
-It often works in conjunction with the web framework, used to write the rest of our application.
+It often works in conjunction with the **web framework** used to write the rest of our application.
 
 [/slide]
 
 [slide hideTitle]
 
-# ORM Usage
+# Why Do We Need ORM?
 
 **Object-oriented languages** are concerned with objects, which are **non-scalar values**.
 
@@ -100,7 +100,7 @@ There are two strategies of working with an **ORM**:
 [/slide]
 
 [slide hideTitle]
-# Perform data operations with ORM
+# Performing Data Operations With ORM
 
 The following code shows some examples of working with **ORM**:
 
@@ -143,13 +143,13 @@ SELECT * FROM students WHERE id=1;
 
 The following code shows examples of custom queries with **both** query languages:
 
-- `HQL`
+- `HQL`:
 
 ```java
 List<Student> studentList = session.createQuery("FROM Student").toList();
 ```
 
-- `SQL`
+- `SQL`:
 
 ```java
 String sql = "SELECT * FROM EMPLOYEE";
@@ -162,9 +162,9 @@ List results = query.list();
 
 
 [slide hideTitle]
-# Code First Approach
+# Code First Model
 
-The **code-first** approach is used for **domain-driven** applications.
+The **code first** approach is used for **domain-driven** applications.
 
 When implemented, **entity classes** are created first, and then the **database** is populated based on them.
 
@@ -186,7 +186,7 @@ This method is applied in **traditional ORMs**.
 
 The following code is an example of a **POJO + XML** combination:
 
-```java
+```xml
    <description>Mapping file</description>
    <entity class="Employee">
       <table name="EMPLOYEETABLE"/>

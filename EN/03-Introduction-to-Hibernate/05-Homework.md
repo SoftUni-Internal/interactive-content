@@ -14,7 +14,7 @@ Use the **provided skeleton** to create the **soft_uni** database.
 
 - **Create** `EntityManagerFactory` and **run** your program
 
-``` java
+```java
 EntityManagerFactory factory = Persistence.createEntityManagerFactory("soft_uni");
 EntityManager em = factory.createEntityManager();
 ```

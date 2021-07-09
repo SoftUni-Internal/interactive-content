@@ -1,6 +1,8 @@
+# Maven
+
 [slide hideTitle]
 
-# Maven
+# Maven Overview
 
 Maven is a project management framework. 
 
@@ -12,25 +14,31 @@ That means that the process around building a particular project is clearly defi
 
 To build a Maven project, we only need to learn a small list of commands.
 
-The **Pom** ensures we achieve the desired results.
+The **POM** ensures we achieve the desired results.
 
 The Project Object Model, stored in the **pom.xml** file, holds the configuration of our project.
 
+[/slide]
+
+[slide hideTitle]
+
+# Maven Overview
+
 Now, let us create a new project by using Maven.
 
-- Select "Maven" project from the new project panel:
+- Select "**Maven**" project from the new project panel:
 
 [image assetsSrc="Hibernate.jpg" /]
 
-- Choose the name of the project, the current Project group, and the project version
+- Choose the name of the project, the current Project group, and the project version:
 
 [image assetsSrc="Hibernate(2).jpg" /]
 
-- Set up the **name** and **location**
+- Set up the **name** and **location**:
 
 [image assetsSrc="Hibernate(3).png" /]
 
-- Enable Maven **auto-import**
+- Enable Maven **auto-import**:
 
 [image assetsSrc="Hibernate(4).png" /]
 
@@ -49,9 +57,9 @@ When executing a task or goal, Maven looks for this file in the current director
 Let us take a look at the POM file and its dependencies.
 
 
-## Pom Model
+## POM Model
 
-```
+```xml
 <build>
         <plugins>
             <plugin>
@@ -70,7 +78,7 @@ Let us take a look at the POM file and its dependencies.
 
 We declare dependencies using the `<dependency>` tag:
 
-```
+```xml
 <dependencies>
         <dependency>
             <groupId>org.hibernate</groupId>

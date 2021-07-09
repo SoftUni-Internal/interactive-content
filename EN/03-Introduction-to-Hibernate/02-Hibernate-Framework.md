@@ -14,6 +14,12 @@ Using an ORM such as Hibernate improves our productivity by giving us a high-lev
 
 It improves application performance, maintainability, and portability, providing us with a way to write cleaner and more concise code in the process.
 
+[/slide]
+
+[slide hideTitle]
+
+# Java ORM Approaches
+
 We have **two** different approaches to **Java ORM:**
 
 - **POJO** (Plain Old Java Objects) + **XML mappings**
@@ -26,8 +32,6 @@ We have **two** different approaches to **Java ORM:**
   * an approach based on **Java annotations and XML**
   * easier to **implement** and **maintain**
 
-
-
 [/slide]
 
 [slide hideTitle]
@@ -36,7 +40,7 @@ We have **two** different approaches to **Java ORM:**
 
 Let us take a look at the `Pom.xml` **file**:
 
-```java
+```xml
  <dependencies>
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -51,9 +55,9 @@ Let us take a look at the `Pom.xml` **file**:
 </dependencies>
 ```
 
-## `hibernate.cfg.xml` 
+This is the structure of the `hibernate.cfg.xml` file:
 
-``` java
+```xml
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE hibernate-configuration // Hibernate configuration tag
         PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
@@ -85,18 +89,17 @@ Let us take a look at the `Pom.xml` **file**:
 </hibernate-configuration>
 ```
 
-
 [/slide]
 
 [slide hideTitle]
 
-# Hibernate Implementation
+# Hibernate Implementation: Example
 
 To create an application, first - we need to build the **POJO** classes.
 
 Here we have a simple Java class with some **fields**, **constructor**, **getters** and **setters**.
 
-``` java
+```java
 public class Student {
   private int id;
   private String name;
@@ -106,9 +109,11 @@ public class Student {
 }
 ```
 
+## Mapping
+
 Now, we must create and configure our ``student.cfg.xml`` mapping file.
 
-``` java
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC // Mapping file
         "-//Hibernate/Hibernate Mapping DTD//EN"
@@ -126,9 +131,11 @@ Now, we must create and configure our ``student.cfg.xml`` mapping file.
 </hibernate-mapping>
 ```
 
+## Sessions
+
 Next, we need to configure our **Main** class too.
 
-``` java
+```java
 public class Main {
     public static void main(String[] args) {
         Configuration cfg = new Configuration(); // Service Registry
@@ -144,9 +151,11 @@ public class Main {
 }
 ```
 
+## Saving Data
+
 This is how we **save** our objects after the transaction:
 
-``` java
+```java
 public static void main(String[] args) {
 
     // Logic goes here
@@ -162,9 +171,11 @@ public static void main(String[] args) {
 }
 ```
 
+## Retrieving Data by `get()`
+
 This example illustrates data **retrieval** using the `get()` method:
 
-``` java
+```java
 public static void main(String[] args) {
 
     // ...
@@ -177,12 +188,13 @@ public static void main(String[] args) {
     session.close();
     }
 }
-
 ```
+
+## Retrieving Data by Query
 
 We can **retrieve** data by queries too:
 
-``` java
+```java
 public static void main(String[] args) {
 
         session.beginTransaction();
@@ -196,7 +208,6 @@ public static void main(String[] args) {
         session.close();
     }
 }
-
 ```
 
 [/slide]
@@ -215,28 +226,30 @@ HQL can even return the child objects as a part of the query result.
 
 Let us take a look at these simple examples:
 
-**SELECT:**
+### `SELECT`:
 
-```
-"FROM Student"
-```
-
-**SELECT + WHERE:**
-
-``` 
-"FROM Student WHERE name = 'John'"
+```sql
+FROM Student
 ```
 
-**SELECT + JOIN:**
+### `SELECT + WHERE`:
 
-``` 
-"FROM Student AS s 
-JOIN s.major AS major"
+```sql 
+FROM Student WHERE name = 'John'
 ```
+
+### `SELECT + JOIN`:
+
+```sql 
+FROM Student AS s 
+JOIN s.major AS major
+```
+
+## Retrieve Data by Criteria
 
 This is how we can obtain information by `criteria`:
 
-``` java
+```java
 public static void main(String[] args) {
     public static void main(String[] args) {
     // Logic here...
@@ -253,8 +266,6 @@ public static void main(String[] args) {
         session.getTransaction().commit();
         session.close();
     }
-
-
 ```
 
 [/slide]
