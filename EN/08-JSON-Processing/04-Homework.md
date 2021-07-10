@@ -6,29 +6,29 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/08-DB-Advanced-JSON-Processing-Exercises-Resources.zip) **for this task.**
 
-A products shop holds **users**, **products**, and **categories for the products**:
+A products shop holds **users**, **products,** and **categories** **for the products**. 
 
-- Users have an **id**, **first name** (optional) and **last name** (at least 3 characters) and **age** (optional)
+- Users can **sell** and **buy** products.
 
-- Products have an **id**, **name** (at least 3 characters), **price**, **buyerId** (optional) and **sellerId** as IDs of users
+- Users have an **id**, **first** **name** (optional), **last** **name** (at least 3 characters), and **age** (optional)
+
+- Products have an **id**, **name** (at least 3 characters), **price**, **buyerId** (optional), and **sellerId** as IDs of users
 
 - Categories have an **id** and **name** (from **3** to **15** characters)
 
-Users can **sell** and **buy** products.
-
-Using the **Code First** approach, create a database following the description above.
+Using the **Code First** approach create a database following the above description.
 
 [image assetsSrc="Java-Spring-Data-JSON-Processing-Homework-1.jpg" /]
 
 Configure the following relations in your models:
 
-- **Users** should be able to **sell and buy many products**
+- **Users** should have **many products sold** and **many products bought**
 
-- **Products** should be able to have **many categories**
+- **Products** should have **many categories**
 
-- **Categories** should be able to have **many products**
+- **Categories** should have **many products**
 
-- **Users** should be able to have **many friends** (i.e. users)
+- **Users** should have **many friends** (which are also users)
 
 [/slide]
 
@@ -38,9 +38,9 @@ Configure the following relations in your models:
 
 **Import** the data from the provided files (**users.json**, **products.json**, **categories.json**).
 
-Import the **users** first. When importing the products, randomly **select the buyer** and **seller** from the existing users.
+Import the **users** first. When importing the products, randomly **set the buyer** and the **seller** from the existing users.
 
-Leave out some **products** that have **not been sold** (i.e. buyer is null).
+Generate some **products** that have **not been sold** (where **buyer_id** is null).
 
 Randomly **generate categories** for each product from the existing categories.
 
@@ -50,18 +50,20 @@ Randomly **generate categories** for each product from the existing categories.
 
 # 2. Queries and Exported Data
 
-Create the below-described queries and **export** the returned data to the specified **format**.
+Write and execute the queries below and **export** the returned data to the specified **format**.
 
 ## Query 1 - Products in Range
 
-Get all products in a specified **price range** (e.g. 500 to 1000), which have **no buyer**.
+Get all products in a specified **price range** (500 to 1000), which have **no buyer**. 
 
-Order them by their price (from lowest to highest).
+Order them by price (from lowest to highest). 
 
-Select only the **product name**, **price**, and the **full name of the seller**.
+Select only the **product name**, **price,** and the **full name** **of the seller**. 
 
 Export the result to JSON.
 
+
+**products-in-range.json**
 ```java
 [
   {
@@ -85,14 +87,15 @@ Export the result to JSON.
 
 ## Query 2 - Successfully Sold Products
 
-Get all users, who have **at least 1 item sold** with a **buyer**.
+Get all users who have **at least 1 item sold** with a **buyer (buyer is not null)**.
 
-Order them by their **last name**, then by their **first name**.
+Order them by **last name**, then by **first name**. 
 
-Select the **first** and **last name** of the person.
+Select the person's **first** and **last name**. 
 
-For each of the **products sold** (products with buyers), select the **name** and the **price** of the product and the **first** and **last name** of the buyer.
+For each of the **products** **sold** (products with buyers), select the product's **name**, **price,** and the buyer's **first** and **last name**:
 
+**users-sold-products.json**
 ```java
 [
   {
@@ -119,12 +122,15 @@ For each of the **products sold** (products with buyers), select the **name** an
 
 ## Query 3 - Categories by Products Count
 
-Get **all categories**.
+Get **all categories**. 
 
-Order them by the **number of products** in each category (a product can be in many categories).
+Order them by the **number of products** in each category (a product can be in many categories). 
 
-For each category select its **name**, the **number of products**, the **average price of those products**, and the **total revenue** (total price sum) of those products (regardless if they have a buyer or not).
+For each category select its **name**, the **number of products**, the **average price of those products,** and the **total revenue** 
 
+The total revenue is the sum of the total price of all the products. It does not matter if they have a buyer associated with them or not.
+
+**categories-by-products.json**
 ```java
 [
   {
@@ -145,14 +151,15 @@ For each category select its **name**, the **number of products**, the **average
 
 ## Query 4 - Users and Products
 
-Get all users who have **at least 1 product sold**.
+Get all users who have **at least 1 product sold**. 
 
-Order them by the **number of products sold** (from highest to lowest), then by **last name** (ascending).
+Order them by the **number of products sold** (from highest to lowest), then by **last name** (ascending). 
 
 Select only their **first** and **last name**, **age** and for each product - **name** and **price**.
 
-Export the results to **JSON**. Follow the format below to better understand how to structure your data.
+Export the results to **JSON**. Follow the format below to better understand how to structure your data:
 
+**users-and-products.json**
 ```json
 {
   "usersCount": 35,
@@ -206,7 +213,6 @@ Export the results to **JSON**. Follow the format below to better understand how
     ...
   ]
 }
-
 ```
 
 [/slide]
@@ -215,33 +221,35 @@ Export the results to **JSON**. Follow the format below to better understand how
 
 # Car Dealer Project Overview
 
-A car dealer needs information about cars, their parts, parts suppliers, customers, and sales.
+A car dealer needs information about cars, their parts, parts suppliers, customers and sales.
 
-- **Cars** have **make**, **model**, **and travelled distance** in kilometers
+- **Each car** has a **make****, a **model****, **and travelled distance** in kilometers
 
-- **Parts** have **name**, **price**, and **quantity**
+- **Parts** have a **name**, **price** and **quantity**
 
-- Part **suppliers** have a **name** and info about whether he **uses imported parts**
+- Part **suppliers** have a **name** an indication of whether they import parts from abroad or not
 
-- A **customer** has a **name**, a **date of birth** and info about whether they **are a young driver** (Young driver is a driver that has **less than 2 years of experience**). Those customers get an **additional 5% off** for the sale.
+- **Customer**s have a **name**, **date of birth,** and info whether they are a **a young driver or not**
 
-- **Sale** has a **car**, a **customer**, and a **discount percentage**
+- A young driver is a driver that has **less than 2 years of experience**, those customers get an **additional 5% off** from each sale
 
-The **price for a car** is formed by the **total price of its parts**.
+- **Sales** have a **car**, a **customer,** and a **discount percentage**
 
-Using the Code First approach, create a database following the above description.
+- The **price of a car** is formed by the **total price of its parts**
+
+Using the **Code First** approach create a database following the above description.
 
 [image assetsSrc="Java-Spring-Data-JSON-Processing-Homework-2.jpg" /]
 
 Configure the following relations in your models:
 
-- A **car** has **many parts** and **one part** can be placed in **many cars**
+- A **car** has **many parts**, and **one part** can be placed **in many cars**
 
 - **One supplier** can supply **many parts** and each **part** can be delivered by **only one supplier**
 
 - In **one sale**, only **one car** can be sold
 
-- **Each sale** has **one customer** and **a customer** can buy **many cars**
+- **Each sale** has **one customer**, and **a customer** can buy **many cars**
 
 [/slide]
 
@@ -249,15 +257,13 @@ Configure the following relations in your models:
 
 # 1. Data Import
 
-Import data from the provided files (**suppliers.json**, **parts.json**, **cars.json**, **customers.json**).
+Import data from the provided files (**suppliers.json, parts.json, cars.json, customers.json**).
 
-First import the **suppliers**. When importing the **parts**, set to each part a **random supplier** from the already imported suppliers.
+Import **the** **suppliers** first. When importing the **parts**, set a **random supplier** for each part from the already imported suppliers.
 
-Then, when importing the cars add **between 10 and 20 random parts** to each car.
+When importing the cars add **between 10 and 20 random parts** to each car. Then, import **all customers**.
 
-Then import **all customers**.
-
-Finally, import the **sales records** by **randomly** selecting a **car**, **customer** and the amount of **discount to be applied** (discounts can be 0%, 5%, 10%, 15%, 20%, 30%, 40% or 50%).
+Finally, import the **sales records** by **randomly** selecting a **car, customer** and the amount of **discount to be applied** (discounts can be 0%, 5%, 10%, 15%, 20%, 30%, 40%, or 50%).
 
 [/slide]
 
@@ -265,16 +271,17 @@ Finally, import the **sales records** by **randomly** selecting a **car**, **cus
 
 # 2. Queries and Export Data
 
-Create the below-described queries and **export** the returned data to the specified **format**.
+Write the below-described queries and **export** the returned data to the specified **format**.
 
 ## Query 1 - Ordered Customers
 
-Get all **customers**, ordered by their **birthdate in ascending order**.
+Get all **customers**, ordered by their **birthdate in ascending order**. 
 
-If two customers are born on the same date, **print those, who are experienced drivers first**.
+If two customers are born on the same date, **first print those, who are not young drivers** (print the experienced drivers first). 
 
-**Export** the list of customers **to JSON** in the format provided below.
+**Export** the list of customers **to JSON** in the format provided below:
 
+**ordered-customers.json**
 ```java
 [
   {
@@ -295,12 +302,15 @@ If two customers are born on the same date, **print those, who are experienced d
 ]
 ```
 
-## Query 2 - Cars from Make Toyota
+## Query 2 - Cars from Toyota
 
-Get all **cars** from make **Toyota** and **order them by model alphabetically** and then by **travelled distance descending**.
+Get the cars with make equal to **Toyota.**
 
-**Export** the list of **cars to JSON** in the format provided below.
+**Order them alphabetically by model** and then by **travelled distance in descending order**.
 
+**Export** the list of **cars to JSON** in the format provided below:
+
+**toyota-cars.json**
 ```java
 [
   {
@@ -321,12 +331,13 @@ Get all **cars** from make **Toyota** and **order them by model alphabetically**
 
 ## Query 3 - Local Suppliers
 
-Get all of the **suppliers** that **do not import parts from abroad**.
+Get all **suppliers** that **do not import parts from abroad**. 
 
-Get their **ids**, **names** and the **number of parts** they can offer to supply.
+Get their **id**, **name,** and the **number of parts** they can supply. 
 
-Export the list of suppliers to JSON in the format provided below.
+Export the list of suppliers to JSON in the format provided below:
 
+**local-suppliers.json**
 ```java
 [
   {
@@ -345,14 +356,15 @@ Export the list of suppliers to JSON in the format provided below.
 
 ## Query 4 - Cars with Their List of Parts
 
-Get all **cars along with their list of parts**.
+Get all **cars along with their list of parts**. 
 
-For the **car** get only **make**, **model** and **travelled distance**.
+**For each car** get only the **make, the model** and the **travelled distance**. 
 
-For the **parts** get only the **name** and the **price**.
+For the **parts** get only their **name** and **price**. 
 
-**Export** the list of **cars and their parts to JSON** in the format provided below.
+**Export** the list of **cars and their parts to JSON** in the format provided below:
 
+**cars-and-parts.json**
 ```java
 [
   {
@@ -396,17 +408,17 @@ For the **parts** get only the **name** and the **price**.
   },
 ...
 ]
-
 ```
 
 ## Query 5 - Total Sales by Customer
 
-Get all **customers** that have bought **at least 1 car** and get their **names**, **count of cars bought** and **total money spent** on cars.
+Get all **customers** that have bought **at least 1 car** and get their **names**, the **number of cars bought,** and the **total money spent** on cars. 
 
-**Order** the result list **by total money spent in descending order**, then by **total cars bought** again in **descending** order.
+**Order** the results **by total money spent in descending order** then by **total cars** **bought** again in **descending** order.
 
-Export the list of customers to JSON in the format provided below.
+Export the list of customers to JSON in the format provided below:
 
+**customers-total-sales.json**
 ```java
 [
   {
@@ -430,10 +442,11 @@ Export the list of customers to JSON in the format provided below.
 
 ## Query 6 - Sales with Applied Discount
 
-Get all **sales** with information about the **car**, the **customer**, and the **price** of the sale **with and without discount**.
+Get all **sales** with information about the **car**, the **customer,** and the **sale** **price** **with and without a discount**. 
 
-Export the list of sales to JSON in the format provided below.
+Export the list of sales to JSON in the format provided below:
 
+**sales-discounts.json**
 ```java
  [
   {

@@ -170,6 +170,5 @@ There are a few distinct parts that we can see from the JSON information above:
 
 - The value of **studentIdNumbers** is **an array**
 
-test
 
 [/slide]
