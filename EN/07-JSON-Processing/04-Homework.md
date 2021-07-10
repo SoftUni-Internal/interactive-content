@@ -229,7 +229,7 @@ A car dealer needs information about cars, their parts, parts suppliers, custome
 
 - Part **suppliers** have a **name** an indication of whether they import parts from abroad or not
 
-- **Customer**s have a **name**, **date of birth,** and info whether they are a **a young driver or not**
+- **Customer**s have a **name**, **date of birth,** and info whether they are **a young driver or not**
 
 - A young driver is a driver that has **less than 2 years of experience**, those customers get an **additional 5% off** from each sale
 
