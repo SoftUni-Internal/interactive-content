@@ -10,10 +10,10 @@
   - Transferring data as JSON
 
 **2. GSON**
-  - Definition - A parser for JSON
+  - Parser that is used for converting Java objects to JSON and vice versa
   - Installation
   - Using GSON with Java
-  - Transforming Java objects to JSON  (marshalling) and from JSON to Java objects (unmarshalling)
+  - Transforming Java objects to JSON  (serializing) and from JSON to Java objects (deserializing)
 
 
 [/slide]
