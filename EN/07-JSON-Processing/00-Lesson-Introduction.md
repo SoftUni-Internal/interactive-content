@@ -3,7 +3,6 @@
 
 # Lesson Content
 
-
 ## In this lesson you will learn:
 
 **1. JSON**
