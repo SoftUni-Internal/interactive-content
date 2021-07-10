@@ -59,6 +59,17 @@ Gson gson = new GsonBuilder()
                 .create();
 ```
 
+## More GsonBuilder methods
+
+| Method | Usage |
+| --- | --- | 
+| disableHtmlEscaping() | Disable escaping of HTML characters such as \< or \> |
+| excludeFieldsWithoutExposeAnnotation() | Gson will exclude all fields without the Expose annotation during serialization or deserialization |
+| excludeFieldsWithModifiers(int... modifiers) | Exclude all fields that have the specified modifiers. Static and transient fields are excluded by default. For example, `excludeFieldsWithModifiers(Modifier.STATIC)` will only exclude static fields. |
+| serializeNulls() | Enable the serialization of null fields. By default they are not serialized. |
+
+
+
 
 
 [/slide]
@@ -197,7 +208,7 @@ In the example above we are converting the json file located in `/path/to/file.j
 
 # Import Multiple Objects as JSON
 
-When you have multiple objects in a JSON you can deserialize them to a Java array or list.
+When you have multiple objects in a JSON you can deserialize them to a Java array.
 
 Let us add one more entry into the JSON file we saw previously:
 
@@ -245,21 +256,6 @@ Here we are converting multiple objects to an array.
 [/slide]
 
 [slide hideTitle]
-# More GsonBuilder methods
-
-| Method | Usage |
-| --- | --- | 
-| disableHtmlEscaping() | Disable escaping of HTML characters such as \\< or \\> |
-| excludeFieldsWithoutExposeAnnotation() | Gson will exclude all fields without the Expose annotation during serialization or deserialization |
-| excludeFieldsWithModifiers(int... modifiers) | Exclude all fields that have the specified modifiers. Static and transient fields are excluded by default. For example, `excludeFieldsWithModifiers(Modifier.STATIC)` will only exclude static fields. |
-| serializeNulls() | Enable the serialization of null fields. By default they are not serialized. |
-
-
-
-[/slide]
-
-
-[slide hideTitle]
 
 # Using Gson with Default Options
 
@@ -301,5 +297,4 @@ Printing the customerObject would result in:
 ```
 Customer [firstName=George, lastName=Richardson, email=george@email.com]
 ```
-
 [/slide]
