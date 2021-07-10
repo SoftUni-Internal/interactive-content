@@ -36,7 +36,7 @@ JSON files use this syntax to store information, this is an array of two objects
 ]
 ```
 
-The attributes are in double quotes while the values are enclosed in double-quotes, square brackets, diamond brackets, or directly added after the attribute depending on the data type that is stored.
+The attributes are in double-quotes while the values are enclosed in double-quotes, square brackets, diamond brackets, or directly added after the attribute depending on the data type that is stored.
 
 
 | Type | Example |
