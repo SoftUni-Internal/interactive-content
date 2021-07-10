@@ -6,14 +6,14 @@
 ## In this lesson you will learn:
 
 **1. JSON**
-  - Definition
+  - Definition - a data interchange format that us human-readable and simple to work with
   - Transferring data as JSON
 
 **2. GSON**
-  - Definition
+  - Definition - A parser for JSON
   - Installation
-  - Usage with Java code
-  - Transforming Java objects to JSONs and vice versa
+  - Using GSON with Java
+  - Transforming Java objects to JSON  (marshalling) and from JSON to Java objects (unmarshalling)
 
 
 [/slide]
