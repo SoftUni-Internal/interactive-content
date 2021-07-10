@@ -13,7 +13,7 @@
   - Parser that is used for converting Java objects to JSON and vice versa
   - Installation
   - Using GSON with Java
-  - Transforming Java objects to JSON  (serializing) and from JSON to Java objects (deserializing)
+  - Transforming Java objects to JSON (serializing) and from JSON to Java objects (deserializing)
 
 
 [/slide]
