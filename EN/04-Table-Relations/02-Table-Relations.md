@@ -2,8 +2,6 @@
 
 # Table Relations
 
-Now let us take a closer look over **table relations**.
-
 Table relations connect two tables by a common field, often named the same way. This field is called a **foreign key**.
 
 The **foreign key** is an **identifier** of a record located in another table (usually it is a **primary key**). 
@@ -25,13 +23,13 @@ Relationships have multiplicity:
 
 For the referenced table, it is a constraint that the referenced column is unique.
 
-Otherwise the database will not know which record it should connect the references.
+Otherwise, the database will not know which to record it should connect the references.
 
-The data type of the referencing column must match the data type of the refered column and the foreign key must already exist.
+The data type of the referencing column should match the data type of the referred column, and the foreign key must already exist.
 
 [image assetsSrc="Table-Relations.png" /]
 
-Here we can examine the **one-to-many** relationship.
+Here, we can examine the **one-to-many** relationship.
 
 Paraphrased: **"One country has many cities"**.
 
@@ -126,19 +124,19 @@ mountain_id
 
 # Many-To-Many
 
-When we want to reference multiple records in a given table to multiple referenes in another table, we use а **many-to-many** relationship.
+When we want to reference multiple records in a given table to multiple references in another table, we use а **many-to-many** relationship.
 
 We manage to do that through the help of a mapping table.
 
 [image assetsSrc="Table-Relations(1).png" /]
 
-**Each record** in the mapping table must contain:
+**Each record** in the mapping table should contain:
 - a reference to the **first** table 
 - a reference to the **second** table 
 
-That is in order for us to be able to **JOIN** them and **obtain** the full information we need.
+That is in order for us to be able to **join** them and **obtain** the full information we need.
 
-Creating a **many-to-many** relationship:
+This is how to create a **many-to-many** relationship:
 
 ```java
 CREATE TABLE `employees` (              // Create the first table
@@ -171,11 +169,11 @@ CREATE TABLE `employees_projects` (`employee_id` INT, `project_id` INT,    // Cr
 
 As the name suggests, **one-to-one** relationship is when one entity references only one other entity.
 
-We can see that in the relationship: Driver-Driving licence.
+We can see that in the relationship: Driver-Driving license.
 
-Paraphrased: **"One driver has one driving licence."**.
+Paraphrased: **"One driver has one driving license."**.
 
-It is achieved by two records referencing eachother. 
+It is achieved by two records referencing each other. 
 
 [image assetsSrc="Table-Relations(2).png" /]
 
@@ -206,7 +204,7 @@ REFERENCES `driving_licence`(`id`)
 
 We begin by creating the **first** table - `drivers`.
 
-Then, we create a **second** table, called `driving_license`.
+Then, we create a **second** table called `driving_license`.
 
 After that, we set the **first foreign key constraint**:
 
