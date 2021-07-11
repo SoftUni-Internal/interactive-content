@@ -27,11 +27,11 @@ When designing a database, the first thing we should consider is **defining its 
 
 This process is complex, and you should always pay attention to defining them **correctly**. 
 
-The first thing to realize is that the entities are nothing more than a real-world **object**.
+The first thing to realize is that the entities are nothing more than real-world **objects**.
 
 Your job is to **find** these objects and define their **characteristics** in the given context.
 
-We usually receive specifications for our software, in which we can find the information we needed, for the process of defining the entities. 
+We usually receive specifications for our software, in which we can find the information we needed for the process of defining the entities. 
 
 **Most often, the nouns in the given specification are our entities.**
 
@@ -40,12 +40,6 @@ We usually receive specifications for our software, in which we can find the inf
 We need to develop a system that stores information about **students** enrolled in various courses. 
 
 The **courses** are held in different **towns**. 
-
-When registering a **new student**, we must enter the following information: 
- - **Name**
- - **Faculty number**
- - **Photo**
- - **Date**
 
 There are **three** entities we must define:
 - **Student**
@@ -62,23 +56,23 @@ As evident above, the **nouns** from our specification became our entities.
 
 After figuring out which are our entities, now we should consider what **characteristics** they have. 
 
-This step also plays a significant role in our database design as this will determine what information we are going to store for our entities.
+This step also plays a significant role in our database design as it will determine what information we are going to store for our entities.
 
 When given **specifications**, we can also try and seek information that will help us understand the **columns** of our entities.
 
 ## Specification
 
-We need to develop a system that stores information about **students** enrolled in various courses. 
+Like in the previous slide, we need to develop a system that stores information about **students** enrolled in various courses. 
 
 The courses are held in different towns.
 
-When registering a new student the following information is entered: **name**, **faculty number**, **photo** and **date**.
+When registering a **new student**, we must enter the following information: 
+ - **Name**
+ - **Faculty number**
+ - **Photo**
+ - **Date**
 
-
-Columns: 
-- Student: **name**, **faculty number**, **photo**, **date of enlistment**, **list of courses**
-- Course: **town**
-
+These would be the columns of the **student** entity.
 
 [/slide]
 
@@ -88,18 +82,18 @@ Columns:
 
 The primary key is the **identity of your entity** - it is what makes each row inside unique.
 
-Therefore, you should always define an additional column for it.
+You should always define an additional column for it.
 
-There are a few pieces of advice, which you should keep in mind to choose a proper primary key and its data type. 
+There are a few things you should keep in mind to choose a proper primary key and its data type. 
 
 - Do not use an existing column
 
-- Can be an integer number: Integer is always a good choice when picking a primary key because it is unique and easy to sustain
+- A primary key can be an integer number: Integers are always a good choice when picking a primary key because they are unique and easy to sustain
 
-- Must be declared as `PRIMARY KEY`: when creating your database, do not forget to identify the primary key
+- They must be declared as a `PRIMARY KEY`
 
 - Use `AUTO_INCREMENT` to automatically increase a given value
-    * this will make the **ID** always different and will be responsible for sustaining it
+    * this will make sure the **ID** is always different and will be responsible for sustaining it
 
 - Put the primary key as the first column
     * this makes the table easier to comprehend, and it is a commonly applied convention
