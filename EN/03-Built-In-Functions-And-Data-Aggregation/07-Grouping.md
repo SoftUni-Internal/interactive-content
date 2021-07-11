@@ -2,13 +2,13 @@
 
 # Grouping
 
-The **Group By** clause in SQL allows us to take data in to **separate groups** based on a **common property**.
+The `GROUP BY` clause in SQL allows us to take data into **separate groups** based on a **common property**.
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(5).png" /]
 
-Using **GROUP BY** we can get each **separate** group and use an **aggregate** function over it (Average, Min, Max).
+Using it, we can get each **separate** group and use an **aggregate** function over it (Average, Min, Max).
 
-Let us take a look at this simple example using **soft_uni** database:
+Let us take a look at this simple example using the `soft_uni` database:
 
 ``` java
 SELECT e.`job_title`, count(employee_id)  
@@ -16,9 +16,7 @@ SELECT e.`job_title`, count(employee_id)
 GROUP BY e.`job_title`;
 ```
 
-This query will return a **list** of **position titles** and the **number of employees** assigned to each one of them.
-
-**Output:**
+This query will return a **list** of **position titles** and the **number of employees** assigned to each one of them:
 
 | job_title | count(employee_id) |
 | --- | --- |
@@ -45,6 +43,7 @@ Use the database that is called "**Restaurant Databases**".
 Write a query to retrieve information about the prices of each **category**. 
 
 The **output** should consist of the following: 
+
 - Category_id 
 - Average Price  
 - Cheapest Product 
