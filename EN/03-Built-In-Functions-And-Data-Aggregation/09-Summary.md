@@ -14,7 +14,7 @@
     SELECT REVERSE('softuni');
     ```
 
-    * **Aggregate** functions make calculations on multiple multiple values, returning a single result
+    * **Aggregate** functions make calculations on multiple multiple values returning a single result
     ``` java
     SELECT e.`department_id`, 
     AVG(e.`salary`) AS 'AvgSalary'
@@ -49,7 +49,7 @@ FROM `employees` AS e                    // titles and the number of employees a
 GROUP BY e.`job_title`;
 ```
 
-- The **HAVING** clause summarises records, returned by **GROUP BY**
+- The `HAVING` clause summarises records, returned by `GROUP BY`
 ``` java
 SELECT e.`department_id`,
 SUM(e.salary) AS 'TotalSalary'
