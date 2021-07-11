@@ -22,7 +22,7 @@ Let us take a look at some **Math** functions.
 
 ## PI()
 
-`PI()` returns the **PI** value.
+`PI()` returns the value of **PI**.
 
 It has a **15 digit** precision.
 
@@ -32,11 +32,14 @@ PI is approximately equal to **3.14159**.
 
 `ABS()` returns the **absolute value** of a number.
 
+Executing the function with the following value:
+
 ``` java
 SELECT ABS(-243.5);
 ```
 
-**Output:**
+Will result in:
+
 ```
 243.5
 ```
@@ -59,11 +62,13 @@ SELECT SQRT(1024);
 
 `POW()` returns the result of raising a number to the **power** of another number passed as an argument.
 
+In the following example, we raise **5** to the power of **2**:
+
 ``` java
 SELECT POW(5, 2);
 ```
 
-**Output:**
+This is the result we get:
 
 ```
 25
@@ -77,13 +82,13 @@ The `CONV()` function **converts** a number from one numeric system to another.
 SELECT CONV(15, 10, 2); 
 ```
 
-It accepts three arguments:
+The function accepts three arguments:
 
 - "**value**": 15
 - "**from_base**": in this case, decimal - 10
 - "**to_base**": 2 (binary)
 
-**Output:**
+After the conversion, we get this result:
 
 ```
 1111
@@ -97,7 +102,7 @@ As the name suggests, `ROUND()` is used to round a number to a **precision** pas
 SELECT ROUND(10.5021401, 2); 
 ```
 
-**Output:**
+In this example, we round `10.5021401` to the second digit and get:
 
 ```
 10.50
@@ -125,7 +130,7 @@ SELECT FLOOR(11.85);
 SELECT CEILING(6.55);
 ```
 
-**Output:**
+After running the example, we receive:
 
 ```
 7
@@ -147,7 +152,8 @@ If we have a number **lower than 0**, it will return **-1**.
 SELECT SIGN(-5);
 ```
 
-**Output:**
+Running this query results in:
+
 ```
 -1
 ```
