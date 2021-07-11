@@ -6,15 +6,13 @@ The **Date** functions are used to handle date and time data effectively.
 
 ## EXTRACT()
 
-The `EXTRACT()` function extracts a segment from a date passed as argument.
+The `EXTRACT()` function extracts a segment from a date passed as an argument.
 
 ``` java
 SELECT EXTRACT(YEAR FROM "1995-11-24"); 
 ```
 
-In this case, the function will extract only the year from `1995-11-24`.
-
-**Output:**
+In this case, the function will extract only the year from `1995-11-24`:
 
 ```
 1995
@@ -22,15 +20,15 @@ In this case, the function will extract only the year from `1995-11-24`.
 
 ## TIMESTAMPDIFF()
 
-`TIMESTAMPDIFF()` extracts the difference between two dates.
+The `TIMESTAMPDIFF()` function extracts the difference between two dates.
 
 ``` java
 TIMESTAMPDIFF(Part, FirstDate, SecondDate)  
 ```
 
-**Part** can be any part and format of a date or time.
+The **Part** argument can be any part and format of a date or time.
 
-Let us see a simple query example using our **soft_uni** database:
+Let us see a simple query example using our `soft_uni` database:
 
 ``` java
 SELECT `employee_id`, `first_name`, `last_name`,
@@ -39,7 +37,7 @@ SELECT `employee_id`, `first_name`, `last_name`,
   FROM `employees`;
 ```
 
-The **resulting table** will look as follows:
+The **resulting table** will look like that:
 
 | employee_id | first_name | last_name | Years In Service |
 | --- | --- | --- | --- |
@@ -57,7 +55,7 @@ The `DATE_FORMAT()` function formats the date as specified.
 SELECT DATE_FORMAT('2015/01/16', '%Y %b %D') AS 'Date';
 ```
 
-**Output**:
+The example would produce the following result:
 
 ```
 Date
@@ -71,7 +69,6 @@ Date
 ```java
 SELECT NOW();
 ```
-
 
 [/slide]
 
@@ -88,7 +85,7 @@ SELECT NOW();
 
 Use the database that is called "**BookLibrary Databases**".
 
-Write an SQL query to **calculate** the **lifetimes** of the authors, in **days**. 
+Write an SQL query to **calculate** the **lifetimes** of the authors in **days**. 
 
 **NULL** values indicate that the author is still alive.  
 
