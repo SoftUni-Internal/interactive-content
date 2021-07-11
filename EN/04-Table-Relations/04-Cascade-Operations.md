@@ -4,7 +4,7 @@
 
 As mentioned earlier, creating table relations with **foreign keys** brings several benefits.
 
-One of those benefits is **cascade operations**.
+One of those benefits is the ability to perform **cascade operations**.
 
 Cascading applies the **mofifications** of a **single** entity to **all** related entities.
 
@@ -14,7 +14,7 @@ It is a powerful tool but should be used with caution, as it may be pretty trick
 
 ## Cascade DELETE & Cascade UPDATE
 
-Cascade can be either **DELETE** OR **UPDATE**, followed with a few guidelines you can choose by yourself when you use this strategy.
+Cascading can be performed either with `DELETE` or `UPDATE` followed by a few guidelines you can choose when you use this strategy.
 
 [/slide]
 
@@ -105,7 +105,7 @@ Kutelo
 
 # Cascade UPDATE
 
-**Cascade UPDATE** is used when the primary key is NOT identity(not **auto-incremented**), and therefore, it is changeable.
+**Cascade UPDATE** is used when the primary key is not an identity (not **auto-incremented**), making it changeable.
 
 It is best to use it when you have **UNIQUE** constraints.
 
