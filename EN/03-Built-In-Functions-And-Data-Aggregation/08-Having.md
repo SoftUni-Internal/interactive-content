@@ -4,19 +4,19 @@
 
 # The Having Clause
 
-We can use the **HAVING** clause to summarize group records, as compared to **WHERE**, which applies to individual records only.
+We can use the `HAVING` clause to summarize group records as opposed to `WHERE`, which applies to individual records only.
 
-The **HAVING** clause operates on records returned by **GROUP BY**.
+It operates on records returned by `GROUP BY`.
 
-Unlike **HAVING**, the **WHERE** clause filters rows **before** the aggregation.
+Unlike `HAVING`, the `WHERE` clause filters rows **before** the aggregation.
 
-Any aggregated functions in the **HAVING** clause and the **SELECT** statement are executed only once.
+Any aggregated functions in the `HAVING` clause and the `SELECT` statement are executed only once.
 
 Let us see the following **example:**
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(6).png" /]
 
-**HAVING syntax:**
+This is a simple query you can run to practice the syntax:
 
 ``` java
 SELECT e.`department_id`,
@@ -26,7 +26,7 @@ GROUP BY e.`department_id`
 HAVING 'TotalSalary' < 25000;
 ```
 
-**Output:**
+Here is the output you should receive:
 
 | department_id | TotalSalary |
 | --- | --- |
