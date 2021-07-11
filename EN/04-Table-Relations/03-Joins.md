@@ -2,9 +2,9 @@
 
 # JOIN Statements
 
-The **JOIN** statements enable us to **connect** two tables by their **foreign keys** and take all the information we need **simultaneously** with only one query statement.
+The `JOIN` statements enable us to **connect** two tables by their **foreign keys** and take all the information we need **simultaneously** with only one query statement.
 
-To achieve **JOIN**, we need two tables and a **JOIN CONDITION**.
+To perform a join, we need two tables and a valid `JOIN` condition.
 
 Take a look at this example:
 
@@ -18,7 +18,7 @@ Here, we select **everything** from the two tables.
 
 We **name** the first table that we want to **join**.
 
-And then, we create a "**Join condition**" using "**FOREIGN KEYS**".
+Then, we create a "**Join condition**" using "**FOREIGN KEYS**".
 
 [/slide]
 
