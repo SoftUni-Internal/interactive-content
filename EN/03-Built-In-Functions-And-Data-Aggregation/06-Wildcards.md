@@ -12,7 +12,7 @@
 | [] | Represents any single character within the brackets |
 | - | Represents a range of characters |
 
-We use them with the **LIKE** operator in a **WHERE** clause. 
+We use them with the `LIKE` operator in a `WHERE` clause. 
 
 It is pretty similar to how **regular expressions** work.
 
@@ -24,13 +24,13 @@ Here are a few **examples**.
 WHERE CustomerName LIKE 'a%'; 
 ```
 
-- Here we are looking for values that have **"r"** in their **second position**:
+- Looking for values that have **"r"** in their **second position**:
 
 ``` java
 WHERE CustomerName LIKE '_r%'; 
 ```
 
-- The following code will find values that **start with "a"**, and **end with "o"**:
+-Finding values that **start with "a"**, and **end with "o"**:
   
 ``` java
 WHERE ContactName LIKE 'a%o'; 
@@ -51,7 +51,7 @@ SELECT * FROM `customers`
 WHERE `city` REGEXP '[a-c]%'; 
 ```
 
-In the above case, we will look for a **city**, named **either "a" , "b" or "c"**.
+In the above case, we will look for a **city**, named **either "a" , "b", or "c"**.
 
 [/slide]
 
