@@ -8,7 +8,7 @@ Integrated into MySQL Workbench, it creates a **relational schema** of all the e
 
 The relational schemas describe the structure of our database.
 
-**It visualizes:**
+**The tool visualizes:**
 
 - The schemas of all tables
 
