@@ -1,11 +1,11 @@
-# Homework: Car Dealer Database
+# Homework
 
 [slide hideTitle]
 # 1. Seed the Database
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/09-XML-Processing-Homework.zip) **for this task.** 
 
-The models from the project skeleton will be used for the **Car Dealer Database** exercises and the XML files will be required for all exercises. 
+Use the models and database structure you built for [the previous homework](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/08-DB-Advanced-JSON-Processing-Exercises-Resources.zip) for these exercises, along with the xml files you downloaded for the current tasks.
 
 **Import** the data from the provided files (**users.xml**, **products.xml**, **categories.xml**).
 
