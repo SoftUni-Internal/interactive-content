@@ -2,13 +2,13 @@
 
 # Triggers
 
-**Triggers** are small **named programs** in our database, which we **can create**, that will **define a certain action** that should happen when a certain **operation has been performed** on the database.
+**Triggers** are small **named programs** in our database. They **define an action** that should happen when a certain **operation has been performed** on the database.
 
-We could write a trigger that would tell MySQL to **act when an event acquires** like an entry was **added** or **deleted** into a **particular table in the database**. 
+We could write a trigger that would tell MySQL to do something when an entry is **added** or **deleted** from a **particular table in the database**. 
 
-We do **not call triggers explicitly**, they are **attached to our database** and are called only when a **specific event**, which is set on trigger creation occurs.
+Triggers **are not called explicitly**, they are **attached to our database** and are called only when a **specific event** occurs.
 
-For example **anytime when a row gets deleted** from this table we want you to **insert for example new row** into another table which makes **triggers extremely powerful** аnd extremely useful.
+For example, **anytime when a row gets deleted** from this table, we want to **insert a new row** into another table.
 
 [/slide]
 
@@ -16,20 +16,14 @@ For example **anytime when a row gets deleted** from this table we want you to *
 
 # MySQL Types of Triggers
 
-Тhere is **no type of triggers** but the triggers are differentiated on the **behalf of the event** (insert, update, delete) activation time.
+Triggers do not have specific types. They are divided into **two categories** based on their activation time:
 
-By the differentiation of trivial activation, time triggers are **divided into two types**:
-
-- **Before the even:**
-
-These triggers are activated **BEFORE** the **event**.
+- **Before the event:**
 
 [image assetsSrc="Database-Programabillity.png" /]
 
-- **After the even:**
-
-These triggers are activated **AFTER** the given **event**.
-
+- **After the event:**
+- 
 [image assetsSrc="Database-Programabillity(1).png" /]
 
 [/slide]
@@ -38,7 +32,7 @@ These triggers are activated **AFTER** the given **event**.
 
 # Events
 
-The events that can activate the **triggers** can either be **INSERT**, **UPDATE**, or **DELETE** queries.
+The events that can activate the **triggers** can either be `INSERT`, `UPDATE`, or `DELETE` queries.
 
 [image assetsSrc="Database-Programabillity(2).png" /]
 
