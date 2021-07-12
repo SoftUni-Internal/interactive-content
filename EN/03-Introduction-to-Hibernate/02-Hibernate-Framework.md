@@ -202,7 +202,7 @@ public static void main(String[] args) {
 
 [slide hideTitle]
 
-## Retrieving Data by `get()`
+## Retrieving Data by Get
 
 This example illustrates data **retrieval** using the `get()` method:
 

@@ -34,13 +34,13 @@ Spring data the module of the **Spring Ecosystem**, which is responsible for ope
 
 A few of the tools we get when working with **Spring data** are:
 
-- Extra level of abstraction over the used ORM.
+- Extra level of **abstraction** over the used ORM
 
-- The chance to integrate custom repositories.
+- The chance to integrate **custom repositories**
 
-- We can create dynamic query derivation from repository method names.
+- We can create **dynamic query derivation** from repository method names
 
-- Better exception handling by translating data access related exceptions.
+- Better **exception handling** by translating data access related exceptions
 
 - And many more...
 
@@ -60,7 +60,7 @@ A pattern laid in the foundation of **Spring Boot** is the **convention over con
 
 **Convention over configuration** is a widely used design pattern with the purpose to reduce the decisions that a developer should make during his work.
 
-Its idea is that if you follow the conventions a given framework has you won't need to describe every decision in your code.
+Its idea is that if you follow the conventions a given framework has you willnott need to describe every decision in your code.
 
 For instance, if you have a **Student** object in the application, it corresponds to the **students** table in the database.
 
@@ -70,7 +70,7 @@ For instance, if you have a **Student** object in the application, it correspond
 
 # Dependencies
 
-To work with **Spring Data in our projects**, we'll need to **add 2 dependencies** in our **pom.xml** file:
+To work with **Spring Data in our projects**, we'll need to **add two dependencies** in our `pom.xml` file:
 
 ```java
 <dependencies>
@@ -129,7 +129,7 @@ Depending on the project, **additional properties** may be needed.
 
 The less-common way of configuring a Spring Boot project is by using an annotation-based **JavaConfig** file.
 
-Let's have a look at one **Java.Config** file.
+Let us have a look at one `Java.Config` file.
 
 ```java
     @Bean
