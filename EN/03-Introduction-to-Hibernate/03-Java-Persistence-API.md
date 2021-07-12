@@ -18,7 +18,7 @@ It maps relationships between tables as associations between classes.
 
 # JPA Entities
 
-Entities in JPA are just POJO classes representing our data.
+Entities in JPA are POJO classes representing our data.
 
 Every instance of our entity represents a row in our table.
 
@@ -92,7 +92,6 @@ The `@Column` annotation specifies the **column attribute** for the **persistenc
 
 If no **column** annotation is applied, the default values apply.
 
-
 [/slide]
 
 [slide hideTitle]
@@ -156,7 +155,7 @@ If no **column** annotation is applied, the default values apply.
 
 ## JPA Save Objects
 
-Let us take a look at the syntax for saving objects:
+Let us take a look at the syntax for **saving** objects:
 
 ```java
 public static void main(String[] args) {
@@ -178,16 +177,32 @@ In this example, we attempt to persist a `student` entity with a name of "Teo" i
 
 # JPA Relations
 
+Consider the following diagram.
+
+It will assist you in creating your own entity.
+
 [image assetsSrc="Hibernate(5).png" /]
 
 [/slide]
 
 [slide hideTitle]
 
-# Persistence Context and Entities
+# Persistence Context (PC) and Entities
+
+The persistence context (PC) is responsible for dealing with persistent data.
 
 [image assetsSrc="Hibernate(6).png" /]
 
+Persistent data can have four different states, depending on the persistence context and the database:
+
+- `transient` - a newly created entity that is unassociated with a persistence context
+
+- `persistent` (`managed`) - an entity that has an identifier and is associated with a persistence context
+    * it may not exist in the database yet
+
+- `detached` - an entity that has an identifier, but is unassociated with a PC
+
+- `removed` - an entity that is associated with a PC and has an identifier, but is marked for erasure from the DB
 
 [/slide]
 
@@ -195,8 +210,17 @@ In this example, we attempt to persist a `student` entity with a name of "Teo" i
 
 # Entity Object Life Cycle
 
+The life cycle of an entity object has four stages.
+
 [image assetsSrc="Hibernate(7).png" /]
 
+- **New** - not yet stored in the database and unassociated with an `EntityManager`
+
+- **Managed** - persisted in the database by using the `persist` method
+
+- **Removed** - retrieved and scheduled for erasure by the `remove` method
+
+- **Detached** - applies to objects, disconnected from the `EntityManager`
 
 [/slide]
 

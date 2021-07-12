@@ -293,7 +293,7 @@ Here is some example usage:
 
 # 9. Fetching Users
 
-Insert several users in the database and p**rint the usernames and passwords** of those who are **both**: 
+Insert several users in the database and **print the usernames and passwords** of those who are **both**: 
 
 - **registered after** the year 2010 
 
