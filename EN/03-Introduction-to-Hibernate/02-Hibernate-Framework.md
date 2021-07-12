@@ -8,7 +8,9 @@ It is implemented by the configuration of an **XML file** or by using **Java Ann
 
 Hibernate abstracts implementations from developers, providing a simplified experience.
 
-It automatically performs usual operations, such as **connecting to the database, writing queries for CRUD operations, and more.**
+It automatically performs usual operations, including:
+  - **connecting** to the database
+  - writing **queries** for CRUD operations
 
 Using an ORM such as Hibernate improves our productivity by giving us a high-level-oriented API and removing the need to write plain SQL.
 
@@ -40,7 +42,7 @@ We have **two** different approaches to **Java ORM:**
 
 Let us take a look at the `Pom.xml` **file**:
 
-```xml
+```js
  <dependencies>
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -57,7 +59,7 @@ Let us take a look at the `Pom.xml` **file**:
 
 This is the structure of the `hibernate.cfg.xml` file:
 
-```xml
+```js
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE hibernate-configuration // Hibernate configuration tag
         PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
@@ -113,7 +115,7 @@ public class Student {
 
 Now, we must create and configure our ``student.cfg.xml`` mapping file.
 
-```xml
+```js
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC // Mapping file
         "-//Hibernate/Hibernate Mapping DTD//EN"

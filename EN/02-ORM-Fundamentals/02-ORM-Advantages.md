@@ -32,7 +32,7 @@ Even though they are powerful, **ORMs** have several disadvantages:
   * when **SQL** queries become **more complex**, the **auto-generated** queries could be inaccurate or less effective
   * **overhead** can also slow down an application
 
-- **Reduces flexibility**
+- **Less flexibility**
   * some operations cannot be performed using **ORMs**
   * searching for an alternative increases **development time** and reduces **flexibility**
 

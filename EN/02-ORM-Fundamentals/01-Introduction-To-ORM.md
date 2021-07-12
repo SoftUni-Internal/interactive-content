@@ -93,9 +93,27 @@ Most of those frameworks also protect from **SQL injection** attacks.
 
 There are two strategies of working with an **ORM**:
 
-- `Database-first approach` - produces all the **entities** from an **existing database**
+- **Database-first approach** - produces all the **entities** from an **existing database** 
+  * recommended for larger applications
 
-- `Code-first approach` - classes are created **first** and then **migrated** to the **database**
+- **Code-first approach** - classes are created **first** and then **migrated** to the **database**
+  * suitable for smaller projects
+
+
+By taking the database-first approach, we can alter the model without having to recreate the database and lose all data.
+
+This limitation of code-first makes it less suitable for production environments, as compared to the database-first approach.
+
+This is why the database-first approach is more suitable for projects that may require modification in production.
+
+Another disadvantage of code-first is that the model builder requires priviliges on the master database.
+
+This does not apply when using an [SQL Server Compact database](https://en.wikipedia.org/wiki/SQL_Server_Compact).
+
+An advantage of taking the code-first approach is the cleaner, more concise code.
+
+It is recommended for simpler standalone applications without versioning.
+
 
 [/slide]
 
@@ -174,6 +192,10 @@ The following picture illustrates how the **code-first** approach works:
 
 [image assetsSrc="Java-ORM-Fundamentals-3.png" /]
 
+Applyng this approach in this diagram, the `Student` and `Employee` classes are created first.
+
+The Entity Framework then handles their conversion to database entries.
+
 [/slide]
 
 
@@ -186,7 +208,13 @@ This method is applied in **traditional ORMs**.
 
 The following code is an example of a **POJO + XML** combination:
 
-```xml
+```js
+<?xml version="1.0" encoding="UTF-8" ?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm    
+http://java.sun.com/xml/ns/persistence/orm_1_0.xsd"
+    version="1.0">
    <description>Mapping file</description>
    <entity class="Employee">
       <table name="EMPLOYEETABLE"/>
@@ -201,9 +229,26 @@ The following code is an example of a **POJO + XML** combination:
          </basic>
       </attributes>
    </entity>
+</entity-mappings>
 ```
 
-While this solution is powerful, it is old and not a recommended practice.
+The above code contains various properties, the first one being the `<entity-mappings>` root tag.
+
+It holds the `persistence-unit-metadata` element, containing metadata for the persistence unit.
+
+We will learn what a persistence unit is in the next lesson.
+
+The `<description>` tag contains information about the entity classes in the application.
+
+`<package>` specifies the package of the classes listed within the sub elements and attributes of the same mapping file only.
+
+The `<entity>` element has a `class` attribute, used to define the name of the entity class.
+
+To define the attributes of the class, we use `<attributes>`. 
+
+It can contain multiple sub tags, such as `<id>`, `<basic>` (maps the entity columns to those in the database), and `<version>`.
+
+While this approach is powerful, it is old and not a recommended practice.
 
 [/slide]
 
@@ -229,5 +274,13 @@ public class Employee {
     private String position;
 }
 ```
+
+In the snippet above, `@Entity` defines the `Employee` class as an entity - a persistent POJO class.
+
+The `@Table` annotation is set at the class level.
+
+It allows us to define the **table, catalog, and schema names** for our entity mapping.
+
+`@Id` declares the identifier property of this entity.
 
 [/slide]

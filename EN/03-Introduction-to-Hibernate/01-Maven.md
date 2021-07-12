@@ -8,9 +8,17 @@ Maven is a project management framework.
 
 It manages the build and dependencies of our project, using **XML** files.
 
-The concept of Maven revolves around the form lifecycle.
+The concept of Maven revolves around the build lifecycle.
 
-That means that the process around building a particular project is clearly defined.
+This means that the process around building a particular project is clearly defined.
+
+The process of building a project contains multiple steps:
+
+- **Compiling** the source code
+- Running **unit** and/or **integration** tests
+- **Packaging** the compiled code into Jar files
+- **Bundling** Jar files into web archive (War) files
+- **Deploying** the project to a server
 
 To build a Maven project, we only need to learn a small list of commands.
 
@@ -26,11 +34,11 @@ The Project Object Model, stored in the **pom.xml** file, holds the configuratio
 
 Now, let us create a new project by using Maven.
 
-- Select "**Maven**" project from the new project panel:
+- Select "**Maven**" from the new project panel:
 
 [image assetsSrc="Hibernate.jpg" /]
 
-- Choose the name of the project, the current Project group, and the project version:
+- Choose the **name** of the project, the current Project **group**, and the project **version**:
 
 [image assetsSrc="Hibernate(2).jpg" /]
 
@@ -56,10 +64,9 @@ When executing a task or goal, Maven looks for this file in the current director
 
 Let us take a look at the POM file and its dependencies.
 
-
 ## POM Model
 
-```xml
+```js
 <build>
         <plugins>
             <plugin>
@@ -74,11 +81,29 @@ Let us take a look at the POM file and its dependencies.
     </build>
 ```
 
+The snippet above is a simplified version of a typical `pom.xml` file.
+
+The `<build>` element contains the build configuration of our project.
+
+In this case, it contains the `<plugins>` element - a list of plugins.
+
+Each `<plugin>` element contains two identifiers.
+
+The `<groupId>` identifier denotes the group a plugin belongs to.
+
+By default, all core Maven artifacts live under the **groupId** `org.apache.maven`.
+
+The `<artifactId>` is the name of our project, but in the case of a plugin, it is `maven-compiler-plugin`.
+
+Every plugin has a specific `<configuration>` property, used to pass values to an underlying system, such as a plugin.
+
 ## Dependencies
+
+Most projects are dependent on other projects to build and execute properly.
 
 We declare dependencies using the `<dependency>` tag:
 
-```xml
+```js
 <dependencies>
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -93,5 +118,11 @@ We declare dependencies using the `<dependency>` tag:
  </dependencies>
 ```
 
+Each dependency contains **three** elements:
+
+- `groupId` and `artifactId` - the dependency's **coordinates**
+- `version` - a dependency version requirement specification, used to **compute the dependency's effective version**
+
+This computation is performed in order to select a version that matches all dependency declaration, preventing **version mismatch** errors.
 
 [/slide]
