@@ -42,7 +42,7 @@ We have **two** different approaches to **Java ORM:**
 
 Let us take a look at the `Pom.xml` **file**:
 
-```js
+```java
  <dependencies>
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -59,7 +59,7 @@ Let us take a look at the `Pom.xml` **file**:
 
 This is the structure of the `hibernate.cfg.xml` file:
 
-```js
+```java
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE hibernate-configuration // Hibernate configuration tag
         PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
@@ -73,8 +73,10 @@ This is the structure of the `hibernate.cfg.xml` file:
         <property name="hibernate.connection.driver_class">
             com.mysql.jdbc.Driver  
         </property>
-        <!-- Connection Settings -->
-        <property name="hibernate.connection.url">   jdbc:mysql://localhost:3306/school?createDatabaseIfNotExist=true // Connection String
+        // Connection Settings
+        <property name="hibernate.connection.url">  
+            // Connection String 
+            jdbc:mysql://localhost:3306/school?createDatabaseIfNotExist=true 
         </property>
         <property name="hibernate.connection.username">
             root 
@@ -86,7 +88,7 @@ This is the structure of the `hibernate.cfg.xml` file:
             update 
         </property>
         <!-- List of XML mapping files -->
-        <mapping resource="student.hbm.xml"/> // Mapping Files
+        <mapping resource="student.hbm.xml"/> // Mapping files
     </session-factory> 
 </hibernate-configuration>
 ```
@@ -122,11 +124,15 @@ public class Student {
 }
 ```
 
-## Mapping
+[/slide]
+
+[slide hideTitle]
+
+## Hibernate Mapping
 
 Now, we must create and configure our ``student.cfg.xml`` mapping file.
 
-```js
+```java
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC // Mapping file
         "-//Hibernate/Hibernate Mapping DTD//EN"
@@ -144,7 +150,11 @@ Now, we must create and configure our ``student.cfg.xml`` mapping file.
 </hibernate-mapping>
 ```
 
-## Sessions
+[/slide]
+
+[slide hideTitle]
+
+## Hibernate Sessions
 
 Next, we need to configure our **Main** class too.
 
@@ -164,7 +174,11 @@ public class Main {
 }
 ```
 
-## Saving Data
+[/slide]
+
+[slide hideTitle]
+
+## Hibernate Data Storage
 
 This is how we **save** our objects after the transaction:
 
@@ -184,6 +198,10 @@ public static void main(String[] args) {
 }
 ```
 
+[/slide]
+
+[slide hideTitle]
+
 ## Retrieving Data by `get()`
 
 This example illustrates data **retrieval** using the `get()` method:
@@ -202,6 +220,10 @@ public static void main(String[] args) {
     }
 }
 ```
+
+[/slide]
+
+[slide hideTitle]
 
 ## Retrieving Data by Query
 

@@ -100,7 +100,7 @@ If no **column** annotation is applied, the default values apply.
 
 ## `pom.xml`:
 
-```js
+```java
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0  http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -132,7 +132,7 @@ If no **column** annotation is applied, the default values apply.
 
 ## `persistence.xml`:
 
-```js
+```java
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
    <persistence-unit name="school">

@@ -208,7 +208,7 @@ This method is applied in **traditional ORMs**.
 
 The following code is an example of a **POJO + XML** combination:
 
-```js
+```java
 <?xml version="1.0" encoding="UTF-8" ?>
 <entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

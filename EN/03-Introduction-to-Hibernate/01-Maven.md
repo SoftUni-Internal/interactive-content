@@ -30,7 +30,7 @@ The Project Object Model, stored in the **pom.xml** file, holds the configuratio
 
 [slide hideTitle]
 
-# Maven Overview
+# Setup - Creating a Maven Project 
 
 Now, let us create a new project by using Maven.
 
@@ -66,7 +66,7 @@ Let us take a look at the POM file and its dependencies.
 
 ## POM Model
 
-```js
+```java
 <build>
         <plugins>
             <plugin>
@@ -103,7 +103,7 @@ Most projects are dependent on other projects to build and execute properly.
 
 We declare dependencies using the `<dependency>` tag:
 
-```js
+```java
 <dependencies>
         <dependency>
             <groupId>org.hibernate</groupId>

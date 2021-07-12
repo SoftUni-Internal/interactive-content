@@ -13,8 +13,8 @@
 **2. Spring Data Repositories**
 
 **3. Spring Data Query Creation**
-- Assembling Queries with Spring Data
-- Query Builder
+- Assembling queries with Spring Data
+- Query builder
 
 **4. Spring Data Service**
 
