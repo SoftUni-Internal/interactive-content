@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Gringotts Database
+## Gringotts Database
 
 Your task is to create **table wizard_deposits** using the Code First approach. The table should contain the following fields:
 
