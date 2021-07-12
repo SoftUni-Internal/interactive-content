@@ -68,28 +68,39 @@ This is the structure of the `hibernate.cfg.xml` file:
 <hibernate-configuration>
     <session-factory>
         <property name="hibernate.dialect">
-            org.hibernate.dialect.MySQL8Dialect // SQL Dialect
+            org.hibernate.dialect.MySQL8Dialect
         </property>
         <property name="hibernate.connection.driver_class">
-            com.mysql.jdbc.Driver // Driver
+            com.mysql.jdbc.Driver  
         </property>
         <!-- Connection Settings -->
         <property name="hibernate.connection.url">   jdbc:mysql://localhost:3306/school?createDatabaseIfNotExist=true // Connection String
         </property>
         <property name="hibernate.connection.username">
-            root // User
+            root 
         </property>
         <property name="hibernate.connection.password">
-            1234 // Password
+            1234 
         </property>
         <property name="hbm2ddl.auto">
-            update // Auto Strategy
+            update 
         </property>
         <!-- List of XML mapping files -->
         <mapping resource="student.hbm.xml"/> // Mapping Files
     </session-factory> 
 </hibernate-configuration>
 ```
+
+This file contains the configuration for our database and session.
+
+The database configuration contains six properties:
+
+- JDBC connection URL - `hibernate.connection.url`
+- username - `hibernate.connection.username`
+- password - `hibernate.connection.password`
+- driver class - `hibernate.connection.driver_class`
+- auto strategy - `hbm2ddl.auto`
+- Hibernate dialect - `hibernate.dialect`
 
 [/slide]
 

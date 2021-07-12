@@ -150,9 +150,13 @@ If no **column** annotation is applied, the default values apply.
 </persistence>
 ```
 
+[/slide]
+
+[slide hideTitle]
+
 ## JPA Save Objects
 
-Let us take a look at the syntax of how we save objects:
+Let us take a look at the syntax for saving objects:
 
 ```java
 public static void main(String[] args) {
@@ -165,6 +169,9 @@ public static void main(String[] args) {
     }
 }
 ```
+
+In this example, we attempt to persist a `student` entity with a name of "Teo" into `school`.
+
 [/slide]
 
 [slide hideTitle]
