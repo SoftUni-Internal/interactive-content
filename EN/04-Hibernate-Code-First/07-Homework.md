@@ -1,6 +1,6 @@
 # Homework: Hibernate Code First + Entity Relations
 
-[slide]
+[slide hideTitle]
 
 # Gringotts Database
 
@@ -26,7 +26,7 @@ Your task is to create **table wizard_deposits** using the Code First approach. 
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Sales Database
 
@@ -78,7 +78,7 @@ You can use the following format to design your model classes:
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # University System
 
@@ -106,7 +106,9 @@ Use class hierarchy to reduce code duplication
 
 [/slide]
 
-[slide]
+[slide hideTitle]
+
+# Hospital Database
 
 Congrats! You were hired as a Junior Database App Developer. 
 
@@ -134,7 +136,7 @@ Make console based user interface, which the doctor can use easily with the data
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Bills Payment System
 
@@ -150,7 +152,7 @@ The credit card has **card type, expiration month, expiration year.** And the ba
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Football Betting Database*
 
