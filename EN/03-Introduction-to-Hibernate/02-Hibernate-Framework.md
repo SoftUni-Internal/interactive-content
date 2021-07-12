@@ -124,11 +124,7 @@ public class Student {
 }
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-## Hibernate Mapping
+## Mapping
 
 Now, we must create and configure our ``student.cfg.xml`` mapping file.
 
@@ -150,11 +146,7 @@ Now, we must create and configure our ``student.cfg.xml`` mapping file.
 </hibernate-mapping>
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-## Hibernate Sessions
+## Sessions
 
 Next, we need to configure our **Main** class too.
 
@@ -174,11 +166,7 @@ public class Main {
 }
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-## Hibernate Data Storage
+## Data Storage
 
 This is how we **save** our objects after the transaction:
 
@@ -198,10 +186,6 @@ public static void main(String[] args) {
 }
 ```
 
-[/slide]
-
-[slide hideTitle]
-
 ## Retrieving Data by Get
 
 This example illustrates data **retrieval** using the `get()` method:
@@ -220,10 +204,6 @@ public static void main(String[] args) {
     }
 }
 ```
-
-[/slide]
-
-[slide hideTitle]
 
 ## Retrieving Data by Query
 
