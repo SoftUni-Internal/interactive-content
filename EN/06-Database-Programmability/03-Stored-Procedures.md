@@ -2,29 +2,29 @@
 
 # Stored Procedures
 
-Stored procedures, also referred to as just "**Procedure**", is a **custom logic** that is removed from the **application server** and set to the **database server**.
+Stored procedures represent **custom logic** that is removed from the **application server** and set to the **database server**.
 
-A stored procedure **can accept parameters** as well as is able to **set up variables**.
+A stored procedure **can accept arguments**and **set up variables**.
 
 Procedures are a useful tool that brings many benefits to our applications.
 
-The main reason behind that is **because they are reducing the network traffic** and improves the **security of the database server**.
+The main reason behind that is **because they are reducing the network traffic** and improve the **security of the database server**.
 
 We can run procedures on any **platform that runs MySQL**, which makes them portable.
 
-Also we can creates a **component from the data access routines**, separating it from the business logic.
+Also, we can create a **component from the data access routines**, separating it from the business logic.
 
 Procedures can be **accessed through different programs** and APIs
 
-Procedures can be used when there is a **repetitive task like looping**, **multiple statements**, and **no user interaction do** it with a single call of a stored procedure or the database server.
+They can be used when there is a **repetitive task** like looping.
 
 [/slide]
 
 [slide hideTitle]
 
-# Creating Stored Procedure
+# Creating a Stored Procedure
 
-Now let us see how we can create one: 
+This is how you can create a stored procedure: 
 
 ```java
 DELIMITER $$
@@ -48,9 +48,9 @@ parameter_2_name parameter_type,…)
 
 [slide hideTitle]
 
-# Defining Parameterized Procedure
+# Defining a Parameterized Procedure
 
-Example of parameterized procedure:
+In the following example, we create a parameterized procedure:
 
 ```java
 DELIMITER $$
