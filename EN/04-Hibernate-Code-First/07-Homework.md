@@ -57,17 +57,17 @@ You can use the following format to design your model classes:
   - String name 
   - Double quantity 
   - BigDecimal price 
-  - Set\<Sale\> sales
+  - `Set\<Sale\> sales`
 - **Customer** 
   - int id
   - String name
   - String email
   - String creditCardNumber
-  - Set\<Sale\> sales
+  - `Set\<Sale\> sales`
 - **StoreLocation** 
   - int id
   - String locationName
-  - Set\<Sale\> sales
+  - `Set\<Sale\> sales`
 - **Sale** 
   - int id
   - Product product
@@ -99,9 +99,6 @@ The relationships between the tables are as follows:
 - A teacher can teach in many courses but one course can be taught only by one teacher
 
 Use class hierarchy to reduce code duplication
-
-
-
 
 
 [/slide]
