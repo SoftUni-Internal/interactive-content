@@ -13,9 +13,9 @@
     END  
     ```
 
-- We can optimize with UDF
+- We can optimize with UDFs
 
-- Triggers: how to create them and how to use them before and after a certain event
+- How to create triggers and how to use them before and after a certain event
     ```java
     CREATE TABLE account (
     acct_number INT PRIMARY KEY,
@@ -27,8 +27,7 @@
     DROP TRIGGER ins_sum;
     ```
 
-- Stored procedures transfers logic from the application server to the 
-    Example of parameterized procedure
+- Stored procedures transfer logic from the application server to the database server
     ```java
     DELIMITER $$
     CREATE PROCEDURE usp_select_employees_by_seniority(min_years_at_work INT)
