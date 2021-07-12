@@ -15,7 +15,7 @@
 **3. Java Database Connection**
 
 **4. JDBC Statements**
-- What is JDBC Statements
+- What are JDBC Statements
 
 **5. SQL Injection**
 - What is SQL Injection and how to protect our data from it
