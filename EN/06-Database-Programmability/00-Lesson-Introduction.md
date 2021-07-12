@@ -6,7 +6,7 @@
 
 ## In this lesson you will learn:
 
-**1. User-Defined Function** 
+**1. User-Defined Functions** 
 
 - Encapsulating Custom Logic
 
