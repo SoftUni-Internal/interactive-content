@@ -4,41 +4,39 @@
 
 # User-Defined Functions
 
-MySQL can **accomplish things** far beyond just **storing** and **managing** your data.
+MySQL can do more than just **storing** and **managing** your data.
 
-To better understand this fact, we will have a look at his **programmability** and how we can **introduce custom logic** to our database.
+We will have a look at **programmability** and how we can **introduce custom logic** to our database.
 
-This lesson we **will have a look at**: 
+In this lesson, we will cover: 
 
 - **User-defined functions**
 - **Triggers**
 - **Stored procedures**
 
-When we need to work with our data but the functions introduced in SQL are **just not enough**, we have an option of **writing custom logic** and even more, **encapsulate custom logic** for future use.
+When we need to work with our data but the functions introduced in SQL are **not enough**, we have an option of **writing custom logic** or **encapsulating it** for future use.
 
-That is when User-Defined Functions come in handy.
+To do this, we use **user-defined functions**.
 
-As mentioned before, **U.D.F.** is a way of **encapsulating custom logic** and introducing it for **future use**.
+These are some of the other benefits of UDFs:
 
-But actually, they bring **much more value than** just that:
+- **Faster execution** - Once the execution plan is built for the **UDF**, it is stored for **future use**, which **removes the need for reparsing and reoptimizing** with each use.
 
-- **Faster execution** - once the execution plan is built for the **U.D.F.** it is stored for **future use**, which **removes the need for reparsing and reoptimizing** with each use
+- **Breaking complex logic into smaller code blocks** - This makes our queries **easier to read**, **comprehend**, and allows us to have single responsibility.
 
-- **Breaks complex logic in smaller code blocks** - this makes our queries **easier to read**, **comprehend** and allow us to have single-responsibility
-
-- **Modular programming** - we write it **once** and **re-use it** as many times as we need it
+- **Modular programming** - We write it **once** and **re-use it** as many times as we need it.
 
 Functions can be two types: 
 
-- **Scalar** - you put in the parameters and it returns just a **single value** or **NULL**
+- **Scalar** - You put in the parameters and it returns just a **single value** or `NULL`.
 
-- **Table-Valued Function** - similar to view, you give her a **SELECT** statement resulting in a table and it stores the table for future use
+- **Table-Valued Function** - Similarly to views, after you provide a `SELECT` statement resulting in a table, they store the table for future use.
 
-Think of User-Defined-Functions as methods, which accepts parameters, does **custom logic**, and returns a result which is a **Scalar** or a **Table**
+Think of UDFs as methods, which accept parameters, execute **custom logic**, and return a result which is a **Scalar** or a **Table**.
 
 There are **built-in functions in MySQL**, just like: `LENGTH()`, `REPLACE()`, `REVERSE()` etc
 
-Declaring user-defined function:
+In the following example, we declare a user-defined function:
 
 ```java
 CREATE FUNCTION CalculateAmount(userid INT) RETURNS float(10,2)                  // Declaring that we want to create a function, its parameters and return type.
