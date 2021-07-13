@@ -1,6 +1,6 @@
 # Lab: Hibernate Code First 
 
-[slide]
+[slide hideTitle]
 
 # 1. Vehicle Hierarchy
 
@@ -48,7 +48,7 @@ Use the appropriate **inheritance types** to reach **the diagrams** in the examp
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # 2. Relations
 
 ## Plane_number

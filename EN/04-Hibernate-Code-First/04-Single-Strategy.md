@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Table Per Class: Single Table
 

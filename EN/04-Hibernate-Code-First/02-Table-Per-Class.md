@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # Table Per Class Strategy Overview
 
@@ -73,21 +73,21 @@ As a result, we have two tables - "bikes" and "cars" with **id** and **type** co
 
 - **Advantages:**
 
-  * Since we have individual table per entity, we can define specific constraints at the database layer.
+  * Since we have individual table per entity, we can define specific constraints at the database layer
 
-  * No **NULL** values.
+  * No **NULL** values
 
-  * Good **performance** when querying single entities.
+  * Good **performance** when querying single entities
 
 - **Disadvantages:**
 
-  * Since, we have to use **UNION** statements to gather our data, we cannot use polymorphic queries efficiently.
+  * Since, we have to use **UNION** statements to gather our data, we cannot use polymorphic queries efficiently
 
-  * The same information is storing in different tables.
+  * The same information is storing in different tables
 
-  * Changes in super class affect changes in all subclass tables.
+  * Changes in super class affect changes in all subclass tables
 
-  * No **foreign keys** involved.
+  * No **foreign keys** involved
 
 
 

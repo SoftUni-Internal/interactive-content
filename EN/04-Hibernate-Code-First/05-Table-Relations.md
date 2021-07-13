@@ -1,27 +1,27 @@
-[slide]
+[slide hideTitle]
 
 # Table Relations
 
 There are several types of database relationships:
 
-- **One to One** relationships.
+- **One to One** relationships
 
 That means the an object can have only one relation.
 
-- **One to Many** and **Many to One** relationships.
+- **One to Many** and **Many to One** relationships
 
 One to Many relation means that one row in a table is mapped to different rows in another table.
 
-- **Many to Many** relationships.
+- **Many to Many** relationships
 
 Many to Many relationship describes a mapping between two entities, where one entity can have relation with other entity instances.
 
-- **Self referencing** relationships.
+- **Self referencing** relationships
 
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # One-To-One Relationhip
 
@@ -86,7 +86,7 @@ public class BasicLabel implements Label {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Many-To-One Relationship
 
@@ -134,7 +134,7 @@ public class ProductionBatch implements Batch {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Many-To-Many Relationship
 
@@ -193,7 +193,7 @@ Fetched entities are stored in the **Persistence Context** as cache.
 
 Fetch type supports two types of loading:
 
-- **EAGER** - Eager fetching takes more memory consumption since it fetches the **child** entities along with **parent.**
+- **EAGER** - Eager fetching takes more memory consumption since it fetches the **child** entities along with **parent**
 
 We use Eager type when we do not have too much relations.
 
@@ -205,7 +205,7 @@ We use Eager type when we do not have too much relations.
 @OneToOne(fetch = FetchType.EAGER)
 ```
 
-- **LAZY** - Lazy loading retrieves all reachable entity objects **only when fetched entity's getter method is called.**
+- **LAZY** - Lazy loading retrieves all reachable entity objects **only when fetched entity's getter method is called**
 
 ``` java
 University university = em.find((long) 1); // this.students = null
