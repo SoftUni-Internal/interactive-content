@@ -9,8 +9,6 @@ Use the models and database structure you built for [the previous homework](http
 
 **Import** the data from the provided files (**users.xml**, **products.xml**, **categories.xml**).
 
-**Import** the data from the provided files (**users.json**, **products.json**, **categories.json**).
-
 Import the **users** first. When importing the products, randomly **set the buyer** and the **seller** from the existing users.
 
 Generate some **products** that have **not been sold** (where **buyer_id** is null).
@@ -117,7 +115,7 @@ Order them by the **number of products sold** (from highest to lowest), then by 
 
 Select only their **first** and **last name**, **age** and for each product - **name** and **price**.
 
-Export the results to **JSON**. See the format below to better understand how to structure your data:
+Export the results to **XML**. See the format below to better understand how to structure your data:
 
 **users-and-products.xml**
 
@@ -149,7 +147,7 @@ Export the results to **JSON**. See the format below to better understand how to
 [slide hideTitle]
 # 3. Car Dealer - Data Import
 
-Import data from the provided files (**suppliers.json, parts.json, cars.json, customers.json**).
+Import data from the provided files (**suppliers.xml, parts.xml, cars.xml, customers.xml**).
 
 Import **the** **suppliers** first. When importing the **parts**, set a **random supplier** for each part from the already imported suppliers.
 
@@ -203,7 +201,7 @@ Get the cars with make equal to **Toyota.**
 
 **Order them alphabetically by model** and then by **travelled distance in descending order**.
 
-**Export** the list of **cars to JSON** in the format provided below:
+**Export** the list of **cars to XML** in the format provided below:
 
 **toyota-cars.xml**
 
