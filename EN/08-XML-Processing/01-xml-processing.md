@@ -6,21 +6,23 @@
 
 **XML** stands for e**X**tensible **M**arkup **L**anguage.
 
-It is used for encoding documents that are readable by not only machines but by humans as well.
+XML is used for storing and transferring information in a structured way.
 
-This is done by using **opening and closing tags** to **define the structure** of the document and to **set rules** on how the document is to be stored and transferred.
+XML is similar to HTML in the sense that both languages use opening and closing tags to structure the content.
 
-You can compare it to HTML in that it uses a set of opening and closing tags to encode data.
+However, XML is **extensible** and you create your own tags that specified how the content is structured as well as the rules on how the document is to be stored and transferred. 
 
-The main difference is that XML is **extensible**.
-
-It does not have a predefined markup language and allows you to create your own markup to describe your content as you see fit.
+XML does not have a predefined markup language and allows you to create your own markup to describe your content as you see fit.
 
 While HTML is focused on presenting content, XML is used for storing and transferring data.
 
-XML is **language-independent**. It does not matter if you are coding in Java, JavaScript, C# or any other language.
+XML is **language-independent**. It does not matter if you are using it with Java, JavaScript, C#, or any other language.
 
 The primary use for XML is **transmitting data** between web applications and servers.
+
+XML is also used to define the document structure in Microsoft Office products such as Word and Excel, and in fact, the "x" in **.docx** and **.pptx** stands for XML.
+
+There is also a lot of software that uses XML as a format for storing configuration files.
 
 [image assetsSrc="xml-processing-01.png" /]
 
@@ -56,7 +58,9 @@ This line is optional but if it exists it must be the first line of the document
 [slide hideTitle]
 # XML Structure
 
-When creating XML documents, you can write your **own elements** and by giving them descriptive names, they become **self-describing**.
+When creating XML documents, you can write your **own elements**.
+
+By giving them descriptive names, they become **self-describing**, meaning that it is easy to understand their meaning without having any prior knowledge of what they are.
 
 For instance, if somebody reads through an XML, they would not have to guess what goes into the `<brandName></brandName>` tags.
 
@@ -89,7 +93,10 @@ The tree structure can be represented like this:
 
 [image assetsSrc="xml-processing-03.png" /]
 
-If you want to store more than one value in the XML file, you can add a wrapper around the objects, essentially creating a collection of them:
+[image assetsSrc="xml-processing-03-2.png" /]
+
+
+If you want to store more than one value in the XML file, you can add a wrapper around the objects, essentially creating a collection of objects:
 
 ```html
 <?xml version="1.0" encoding="UTF-8"?>
@@ -112,6 +119,23 @@ If you want to store more than one value in the XML file, you can add a wrapper 
 ```
 
 In the above example, ``<Cats></Cats>`` is a wrapper around the group of objects.
+
+[image assetsSrc="xml-processing-03-3.png" /]
+
+## Advantages
+
+- XML is extendable
+- Simple to understand
+- Language-independent
+- Platform-independent can work in any system
+- Unicode support
+
+## Disadvantages
+
+- All the opening and closing tags increase the amount of information that is transferred
+- More difficult to understand than similar languages such as JSON
+- XML does not support arrays
+
 
 [/slide]
 

@@ -6,9 +6,9 @@
 ## In this lesson, you learned:
 
 - **XML** 
-    - Аnother format for transmitting data between web applications and servers
-    - Еxtensible and self-describing
-    - XML documents consist of mark-up (tags) and content elements
+    - Another format for transmitting data between web applications and servers
+    - Extensible and self-describing
+    - XML documents consist of mark-up tags and content elements
 
 ```html
 <?xml version="1.0" encoding="UTF-8"?>
@@ -22,9 +22,27 @@
 </addresses>
 ```
 
-- **JAXB**
-    - Using it for reading XML files, parsing them to Java objects, or exporting java objects (or lists of objects) to XML
-    - **Marshalling**: exporting to XML
+- **JAXB** is used for reading XML files, parsing them to Java objects, or exporting java objects (or lists of objects) to XML
+
+- Adding JAXB to your project:
+
+**pom.xml**
+```java
+<dependency>
+    <groupId>javax.xml.bind</groupId>
+    <artifactId>jaxb-api</artifactId>
+</dependency>
+<dependency>
+    <groupId>com.sun.xml.bind</groupId>
+    <artifactId>jaxb-core</artifactId>
+</dependency>
+<dependency>
+    <groupId>com.sun.xml.bind</groupId>
+    <artifactId>jaxb-impl</artifactId>
+</dependency>
+```
+
+- **Marshalling** (exporting to XML):
 
 ``` java
 JAXBContext context = JAXBContext.newInstance(User.class);
@@ -32,8 +50,8 @@ Marshaller marshaller = context.createMarshaller();
 marshaller.marshal(user, new File("users.xml"));
 ```
 
-   - **Unmarshalling*: parsing XML to Java objects
- 
+- **Unmarshalling** (parsing XML to Java objects):
+
 ``` java
 JAXBContext jaxbContext = JAXBContext.newInstance(AddressDto.class);
 InputStream inputStream = getClass().getResourceAsStream("XML_FILE_LOCATION");
@@ -41,5 +59,7 @@ BufferedReader bfr = new BufferedReader(new InputStreamReader(inputStream));
 Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();
 AddressDto addressDto = (AddressDto) unmarshaller.unmarshal(bfr);
 ```
+
+
 
 [/slide]

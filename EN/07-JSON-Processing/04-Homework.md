@@ -157,7 +157,7 @@ Order them by the **number of products sold** (from highest to lowest), then by 
 
 Select only their **first** and **last name**, **age** and for each product - **name** and **price**.
 
-Export the results to **JSON**. Follow the format below to better understand how to structure your data:
+Export the results to **JSON**. See the format below to better understand how to structure your data:
 
 **users-and-products.json**
 ```json
@@ -261,7 +261,9 @@ Import data from the provided files (**suppliers.json, parts.json, cars.json, cu
 
 Import **the** **suppliers** first. When importing the **parts**, set a **random supplier** for each part from the already imported suppliers.
 
-When importing the cars add **between 10 and 20 random parts** to each car. Then, import **all customers**.
+When importing the cars add **between 10 and 20 random parts** to each car. 
+
+Then, import **all customers**.
 
 Finally, import the **sales records** by **randomly** selecting a **car, customer** and the amount of **discount to be applied** (discounts can be 0%, 5%, 10%, 15%, 20%, 30%, 40%, or 50%).
 

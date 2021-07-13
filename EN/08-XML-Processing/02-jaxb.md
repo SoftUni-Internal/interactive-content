@@ -3,12 +3,11 @@
 [slide hideTitle]
 # JAXB Definition
 
-**JAXB** is an API technology that provides an efficient way of mapping between XML and Java code.
-
-It processes the XML schema into a set of **Java object** and vice-versa.
+**JAXB** is an API technology that provides an efficient way of mapping XML schemas to their Java representations and the other way around.
 
 To add JAXB to a project:
 
+**pom.xml**
 ```java
 <dependency>
     <groupId>javax.xml.bind</groupId>
@@ -78,7 +77,7 @@ public class Cat implements Serializable {
 }
 ```
 
-When converted to XML the above will convert to:
+When converted to XML the above will look like:
 
 ```java
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -138,7 +137,7 @@ public class Cat implements Serializable {
 }
 ```
 
-results in:
+Results in:
 
 ```java
 <?xml version="1.0" encoding="UTF-8"?>
@@ -168,7 +167,7 @@ public class Cat implements Serializable {
 }
 ```
 
-results in:
+Results in:
 
 ```java
 <?xml version="1.0" encoding="UTF-8"?>
@@ -200,6 +199,7 @@ public class Vehicle implements Serializable {
     private List<String> cars;
 }
 ```
+
 Result:
 
 ```java
@@ -213,7 +213,7 @@ Result:
 </vehicle>
 ```
 
-You can see that the list of cars was given the name of **cars** but it could have been any name of your choosing.
+We named the list of cars as **cars** but you can choose any name you want.
 
 
 ## @XmlTransient
@@ -275,7 +275,7 @@ public class User {
 }
 ```
 
-Now in the **XMLParser.java** file we will export that class to XML by **marshalling** it. Remember, **marshalling** an object using JAXB means to convert a Java object to XML.
+Now in the **XMLParser.java** file we, will export that class to XML by **marshalling** it. Remember, **marshalling** an object using JAXB means converting a Java object to XML.
 
 
 ```java
@@ -329,7 +329,7 @@ BufferedWriter bufferedWriter =
 jaxbMarshaller.marshal(studentDto, bufferedWriter);                  // Exporting the information from the studentDto
 ```
 
-The result from the **marshal**:
+The result from the **marshalling**:
 
 ```java
 <?xml version="1.0" 
@@ -343,7 +343,7 @@ encoding="UTF-8"?>
 [/slide]
 
 [slide hideTitle]
-# Exporting Multiple Objects to XML
+# Export Multiple Objects to XML
 
 You can export a list of objects and define the opening and closing tag name for each object with `@XmlElement` if it is used on a collection like so:
 
@@ -391,7 +391,7 @@ After **marshalling**, this results in:
 [slide hideTitle]
 # Import a Single Object from XML
 
-You can also import objects from an XML file to Java by **unmarshalling** them with JAXB. To facilitate this process, you need a class that repsresents this object.
+You can also import objects from an XML file to Java by **unmarshalling** them with JAXB. To facilitate this process, you need a class that represents this object.
 
 **AddressDto.java**
 ```java
