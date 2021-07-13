@@ -6,13 +6,17 @@ Hibernate is an open-source Java ORM framework that handles mapping an object-or
 
 It is implemented by the configuration of an **XML file** or by using **Java Annotations.**
 
+This framework acts as an additional layer on top of JDBC and allows to implement a database-independent **persistence layer**.
+
+It generates all the required SQL statements to replicate all operations to the database.
+
 Hibernate abstracts implementations from developers, providing a simplified experience.
 
 It automatically performs usual operations, including:
   - **connecting** to the database
   - writing **queries** for CRUD operations
 
-Using an ORM such as Hibernate improves our productivity by giving us a high-level-oriented API and removing the need to write plain SQL.
+Using an ORM framework such as Hibernate improves our productivity by giving us a high-level-oriented API and removing the need to write plain SQL.
 
 It improves application performance, maintainability, and portability, providing us with a way to write cleaner and more concise code in the process.
 
@@ -40,6 +44,8 @@ We have **two** different approaches to **Java ORM:**
 
 # Hibernate Configuration
 
+## Adding Maven to Your Project
+
 Let us take a look at the `Pom.xml` **file**:
 
 ```java
@@ -56,6 +62,16 @@ Let us take a look at the `Pom.xml` **file**:
         </dependency>    
 </dependencies>
 ```
+
+As shown above, you must include maven as a dependency in your Maven configuration.
+
+## Database Configuration
+
+Once you have added the required dependencies, you need to tell Hibernate to which database you want to connect, and which dialect it should use.
+
+Dialects enable us to implement a database-independent persistence layer by transparently adapting our mappings and queries.
+
+You must always verify that you are using the correct dialect for your database system and version.
 
 This is the structure of the `hibernate.cfg.xml` file:
 
@@ -126,7 +142,7 @@ public class Student {
 
 ## Mapping
 
-Now, we must create and configure our ``student.cfg.xml`` mapping file.
+Now, we must create and configure our `student.cfg.xml` mapping file.
 
 ```java
 <?xml version="1.0" encoding="utf-8"?>

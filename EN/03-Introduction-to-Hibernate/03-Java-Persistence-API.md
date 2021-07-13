@@ -84,7 +84,9 @@ This means that the value is not stored in the database.
 
 `@ID` specifies the property. It is used for the **identity** (primary keys) of the class.
 
-- `@GeneratedValue` - specifies how we can **initialize** identity attributes
+## @GeneratedValue 
+
+`@GeneratedValue` specifies how we can **initialize** identity attributes.
 
 ## @Column
 
@@ -97,6 +99,35 @@ If no **column** annotation is applied, the default values apply.
 [slide hideTitle]
 
 # JPA Configuration
+
+## `persistence.xml`
+
+The easiest configuration approach is adding a `persistence.xml` file to the `META-INF` directory, located inside `src/main/resources/`:
+
+```java
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+   <persistence-unit name="school">
+        <properties>
+         <property name = "hibernate.connection.url" value="jdbc:mysql://localhost:3306/school?createDatabaseIfNotExist=true"/>
+         <property name = "hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+         <property name = "hibernate.connection.username" value="root"/>
+         <property name = "hibernate.connection.password" value="1234"/>
+         <property name = "hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
+         <property name = "hibernate.hbm2ddl.auto" value="update"/>
+         <property name = "hibernate.show_sql" value = "true" />
+      </properties>
+   </persistence-unit>
+</persistence>
+```
+
+Here you can see an example configuration which tells Hibernate to connect to a **MySQL** database on `localhost:3306`.
+
+The `<persistence-unit>` element defines a set of entities which represent the data contained in a data store, and will be managed by an `EntityManager`.
+
+Inside `<properties>`, we have all the necessary DB information, such as the **url, username, passsword, and dialect**.
+
+We can also use an optional `<description>` element to provide information about the persistence unit.
 
 ## `pom.xml`:
 
@@ -130,25 +161,6 @@ If no **column** annotation is applied, the default values apply.
 </project>
 ```
 
-## `persistence.xml`:
-
-```java
-<?xml version="1.0" encoding="UTF-8"?>
-<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
-   <persistence-unit name="school">
-        <properties>
-         <property name = "hibernate.connection.url" value="jdbc:mysql://localhost:3306/school?createDatabaseIfNotExist=true"/>
-         <property name = "hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
-         <property name = "hibernate.connection.username" value="root"/>
-         <property name = "hibernate.connection.password" value="1234"/>
-         <property name = "hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>
-         <property name = "hibernate.hbm2ddl.auto" value="update"/>
-         <property name = "hibernate.show_sql" value = "true" />
-      </properties>
-   </persistence-unit>
-</persistence>
-```
-
 [/slide]
 
 [slide hideTitle]
@@ -169,7 +181,7 @@ public static void main(String[] args) {
 }
 ```
 
-In this example, we attempt to persist a `student` entity with a name of "Teo" into `school`.
+In this example, we attempt to persist a `student` entity with a name of "Teo" into the database.
 
 [/slide]
 
