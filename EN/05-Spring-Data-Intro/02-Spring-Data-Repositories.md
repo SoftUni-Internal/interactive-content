@@ -4,13 +4,15 @@
 
 # Spring Data Repositories
 
-The **Spring Data Repository** is a tool that delivers us an abstraction of the **repository design pattern**.
+The **Spring Data Repository** is a tool that provides us with an abstraction of the **repository design pattern**.
 
-Its purpose is to significantly reduce the amount of boilerplate code required to implement data access layers.
+It aims to significantly reduce the amount of boilerplate code required to implement data access layers.
 
-One of the main benefits of repositories is that they are capable of generating JPQL queries automatically.
+One of the main benefits of repositories is their capability of generating JPQL queries automatically.
 
-Every repository has to extend the **Repository** interface or an interface, which extends the **Repository** interface. It is generic interface, therefore we always have to point which entity we want to bind the repository to.
+Every repository extends the **Repository** interface. 
+
+It is a generic interface, meaning we must designate the entity to bind to the repository:
 
 ```java
 public interface CrudRepository<T, ID extends Serializable> extends Repository<T, ID> {
