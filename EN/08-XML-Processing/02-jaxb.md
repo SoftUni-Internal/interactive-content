@@ -251,9 +251,13 @@ Even though the class is annotated with `@XmlAccessorType(XmlAccessType.FIELD)`,
 JAXBContext jaxbContext = JAXBContext.newInstance(object.getClass());
 ```
 
-The **JAXBContext** object is used for **XML manipulations**. It provides an abstraction for managing XML/Java binding information.
+The **JAXBContext** object is used for **XML manipulations**. 
 
-`JAXBContext.newInstance(object.getClass())` creates an instance of JAXBContext and `object.getClass()` is the class that you want to export or import, for example User, Address, Employee.
+It provides an abstraction for managing XML/Java binding information.
+
+`JAXBContext.newInstance(object.getClass())` creates an instance of JAXBContext.
+
+`object.getClass()` is the class that you want to export or import, for example User, Address, Employee.
 
 [/slide]
 
