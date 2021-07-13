@@ -4,23 +4,25 @@
 
 # The Spring Framework
 
-In programming, everything is related, therefore to truly understand and comprehend the ORM technology we had to go through the stepping stones.
+To gain an understanding of ORM, we went through several steps:
 
-- First, we understood how we can connect to the database and execute native SQL queries in our code through JDBC
+- We learned how to connect to the database and execute native SQL queries in our code through JDBC
 
-- Secondly, we got a grasp of what is an ORM and why it is so useful, easing our job of mapping the database tables to java objects
+- Secondly, we saw how ORM frameworks map database tables to Java objects
 
-- Then we had a closer look at one such ORM, Hibernate, and understood the true nature and behavior of an ORM framework
+- Then, we took a closer look at Hibernate and its behavior in a real-world project
 
-- Further, we got to know what Hibernate and other ORM engines are based on, Java Persistence Library (JPA) gives us common prototype and functionality to the ORM tools, which gives us abstraction and makes it easier to change from one ORM (JPA provider) to another
+- Further, we learned that Java Persistence Library (JPA) provides abstraction and makes it easier to switch from one ORM (JPA provider) to another
 
-Now it's time to have a look at another layer in working with the database, **Spring Data**, it's a tool which addresses common difficulties in working with data, making our job easier by providing us with template classes
+**Spring Data** is a tool that addresses common difficulties in working with data, making our job easier by providing us with template classes
 
 [image assetsSrc="Spring-data-introduction.png" /]
 
-The first question that may come to mind is "What is **Spring**?", actually **Spring** is a big open-source modular ecosystem developed by **Pivotal Software**.
+**Spring** is an open-source modular ecosystem developed by **Pivotal Software**.
 
-Every different module provides us with a range of services when used together we can build web applications.
+Every different module provides us with a range of services.
+
+When used together, they help us build web applications.
 
 [image assetsSrc="Spring-data-introduction(1).png" /]
 
@@ -28,21 +30,21 @@ Every different module provides us with a range of services when used together w
 
 [slide hideTitle]
 
-# Spring data
+# Spring Data
 
-Spring data the module of the **Spring Ecosystem**, which is responsible for operating with databases. It's combined with an ORM such as **Hibernate**, giving us full access over our database and providing us with another level of abstraction over our JPA provider.
+Spring Data is the module of the **Spring Ecosystem** responsible for operating with databases. 
 
-A few of the tools we get when working with **Spring data** are:
+It is combined with an ORM like **Hibernate**, giving us full access to our database and providing us with another level of abstraction over our JPA provider.
 
-- Extra level of **abstraction** over the used ORM
+Working with **Spring Data** provides multiple benefits, such as:
+
+- An extra level of **abstraction** over the used ORM
 
 - The chance to integrate **custom repositories**
 
 - We can create **dynamic query derivation** from repository method names
 
-- Better **exception handling** by translating data access related exceptions
-
-- And many more...
+- Better **exception handling** by translating data access-related exceptions
 
 [image assetsSrc="Spring-data-introduction(2).png" /]
 
@@ -52,15 +54,17 @@ A few of the tools we get when working with **Spring data** are:
 
 # Spring Boot
 
-Spring Boot is another project that is part of the **Spring Ecosystem**. It is a stand-alone tool used to build the backbone of **Spring Application**.
+Spring Boot is another part of the **Spring Ecosystem**.
+ 
+It is a standalone tool used to build the backbone of **Spring Application**.
 
-Its sole purpose is to help the developer get started with a web application and to reduces the development time, easing the configuration.
+Its primary purpose is to help the developer get started with a web application by reducing the development time and simplifying configuration.
 
-A pattern laid in the foundation of **Spring Boot** is the **convention over configuration** design pattern.
+**Spring Boot** is based on the **convention over configuration** design pattern.
 
-**Convention over configuration** is a widely used design pattern with the purpose to reduce the decisions that a developer should make during his work.
+This pattern aims to reduce the number of decisions we should make during the development process.
 
-Its idea is that if you follow the conventions a given framework has you willnott need to describe every decision in your code.
+When following the given framework's conventions, you should not describe every decision in your code.
 
 For instance, if you have a **Student** object in the application, it corresponds to the **students** table in the database.
 
@@ -127,9 +131,7 @@ Depending on the project, **additional properties** may be needed.
 
 # Java-Based Configuration
 
-The less-common way of configuring a Spring Boot project is by using an annotation-based **JavaConfig** file.
-
-Let us have a look at one `Java.Config` file.
+The less common way of configuring a Spring Boot project is by using an annotation-based **JavaConfig** file:
 
 ```java
     @Bean

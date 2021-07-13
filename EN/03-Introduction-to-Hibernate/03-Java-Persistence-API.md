@@ -240,7 +240,7 @@ The life cycle of an entity object has four stages.
 
 # JPA Write Data Methods
 
-## `persist()`
+## persist()
 
 The `persist()` method adds a given entity object into the database:
 
@@ -250,7 +250,7 @@ person.setBrand("Mercedes");
 session.persist(car);
 ```
 
-## `remove()`
+## remove()
 
 This method removes given entity from the DB.
 
@@ -265,17 +265,17 @@ Person employee =  em.find(Person.class, 1L);
     }
 ```
 
-## `refresh()`
+## refresh()
 
 `refresh()` renews the state of the instance from the database, **overwriting** changes made to the entity, if any.
 
-## `detach()`
+## detach()
 
 The `detach()` method **removes** the object from the persistence context.
 
 Unflushed changes made to the entity will **not be synchronized** to the database.
 
-## `merge()`
+## merge()
 
 `merge()` synchronizes the state of a detached entity with the PC. 
 
@@ -285,17 +285,17 @@ Merging **does not** directly update the object in our database.
 
 It **merges** the changes made into the persistence context.
 
-## `contain()`
+## contain()
 
 The `contain()` method returns a **boolean** parameter that shows if the given entity is managed by the **persistence context** (PC).
 
-## `flush()`
+## flush()
 
 `flush()` saves the PC changes in the database.
 
 Flushing has no effect when the transaction is **not active**.
 
-## `find()`
+## find()
 
 This method executes a `SELECT` query by primary key:
 
