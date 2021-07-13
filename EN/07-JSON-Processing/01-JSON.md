@@ -21,7 +21,7 @@ These are the data types supported by JSON:
 
 Any data parsed to JSON is stored as an array of objects.
 
-JSON files use this syntax to store information, this is an array of two objects that are serialized to JSON:
+JSON files use the following syntax to store information, this is an array of two objects that are serialized to JSON:
 
 ```java
 [
@@ -36,7 +36,7 @@ JSON files use this syntax to store information, this is an array of two objects
 ]
 ```
 
-The attributes are in double-quotes while the values are enclosed in double-quotes, square brackets, diamond brackets, or directly added after the attribute depending on the data type that is stored.
+The attributes are in double-quotes while the values are enclosed in double-quotes, square brackets, curly brackets, or directly added after the attribute depending on the data type that is stored.
 
 
 | Type | Example |
@@ -55,7 +55,7 @@ Data parsed as JSON is simple to read, compact, and easy to transfer.
 
 # JSON Example
 
-JSON objects are often used to transfer data between the **client** and the **server**.
+JSON objects are often used to transfer data between **client** and **server**.
 
 This is because JSON is human-readable and easy to work with, but most importantly - it is language agnostic and used for communications between systems that use completely different languages, frameworks, or libraries.
 
@@ -124,7 +124,7 @@ During client-server communication data transfers go through a few steps:
 
 - Performing **operations** with the **object** and sending it back as a **JSON response**
 
-The following illustration shows how the **client** and the **server** exchange data:
+The following illustration shows how a **client** and a **server** exchanging data:
 
 [image assetsSrc="Java-Spring-Data-JSON-Processing-1.png" /]
 

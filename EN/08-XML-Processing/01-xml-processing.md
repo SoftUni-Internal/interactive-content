@@ -127,7 +127,7 @@ In the above example, ``<Cats></Cats>`` is a wrapper around the group of objects
 - XML is extendable
 - Simple to understand
 - Language-independent
-- Platform-independent can work in any system
+- Platform-independent, can work in any system
 - Unicode support
 
 ## Disadvantages
