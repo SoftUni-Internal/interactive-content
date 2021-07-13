@@ -22,6 +22,8 @@ The primary use for XML is **transmitting data** between web applications and se
 
 XML is also used to define the document structure in Microsoft Office products such as Word and Excel, and in fact, the "x" in **.docx** and **.pptx** stands for XML.
 
+There is also a lot of software that uses XML as a format for storing configuration files.
+
 [image assetsSrc="xml-processing-01.png" /]
 
 [/slide]
