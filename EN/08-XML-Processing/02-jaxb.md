@@ -213,7 +213,7 @@ Result:
 </vehicle>
 ```
 
-We named the list of cars as **cars** but it could have been any name.
+We named the list of cars as **cars** but you can choose any name you want.
 
 
 ## @XmlTransient
