@@ -2,7 +2,7 @@
 
 # Summary
 
-# In this lesson we learned:
+## In this lesson we learned:
 
 - Relational databases don't support inheritance
 - It is implemented by JPA:
@@ -12,12 +12,12 @@
   - JOINED
 - Table relations are Un/Bidirectional
 - One-to-One 
-- Many-to-One 
+- Many-to-One
 - Many-to-Many
 
 
 
-# In the next lesson we will learn:
+## In the next lesson we will learn:
 
 - What is Spring Data
 
