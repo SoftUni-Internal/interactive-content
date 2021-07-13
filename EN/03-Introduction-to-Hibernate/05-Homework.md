@@ -255,7 +255,7 @@ Write a program that finds the **largest salary** in each **department.**
 
 # Remove Towns
 
-Write a program that **deletes a town** with a name matching the input.
+Write a program that **deletes a town** which name matches the input.
 
 It should **delete all addresses** in the given town. 
 

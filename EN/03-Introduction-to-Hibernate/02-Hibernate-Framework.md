@@ -6,7 +6,7 @@ Hibernate is an open-source Java ORM framework that handles mapping an object-or
 
 It is implemented by the configuration of an **XML file** or by using **Java Annotations.**
 
-This framework acts as an additional layer on top of JDBC and allows to implement a database-independent **persistence layer**.
+This framework acts as an additional layer on top of JDBC and allows us to implement a database-independent **persistence layer**.
 
 It generates all the required SQL statements to replicate all operations to the database.
 
