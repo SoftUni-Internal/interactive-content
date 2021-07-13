@@ -971,8 +971,8 @@ Create a program to calculate the living cost for a family over a period of time
 Their monthly expenses are as follows:
 
 - Electricity - every month the bill is different and will be read from the console
-- Water - 20$
-- Internet - 15$
+- Water - $20
+- Internet - $15
 - Other expenses - calculated by summing the bills for electricity, water and internet and adding 20% to the final result
 
 # Input
@@ -984,11 +984,11 @@ The input is read from the console:
 
 # Output
 The output should consist of 5 lines: 
-- "**Electricity:** \{**total cost for the entire period**\} **$**" 
-- "**Water:** \{**total cost for the entire period**\} **$**" 
-- "**Internet:** \{**total cost for the entire period**\} **$**" 
-- "**Other:** \{**total cost for the entire period**\} **$**" 
-- "**Average:** \{**total cost for the entire period**\} **$**"
+- "**Electricity:** **$**\{**total cost for the entire period**\}" 
+- "**Water:** **$**\{**total cost for the entire period**\}" 
+- "**Internet:** **$**\{**total cost for the entire period**\}" 
+- "**Other:** **$**\{**total cost for the entire period**\}" 
+- "**Average:** **$**\{**total cost for the entire period**\}"
 
 All bills should be formatted to the 2nd digit after the decimal point.
 
@@ -996,19 +996,19 @@ All bills should be formatted to the 2nd digit after the decimal point.
 
 | **Input** | **Output** |
 | --- | --- |
-| 5 | Electricity: 447.16 $ |
-| 68.63 | Water: 100.00 $ |
-| 89.25 | Internet: 75.00 $ |
-| 132.53 | Other: 746.59 $ |
-| 93.53 | Average: 273.75 $ |
+| 5 | Electricity: $447.16 |
+| 68.63 | Water: $100.00 |
+| 89.25 | Internet: $75.00 |
+| 132.53 | Other: $746.59 |
+| 93.53 | Average: $273.75 |
 | 63.22 | |
 
 [hints]
 [hint]
 For 5 months:
-- Electricity -> 68.63 \+ 89.25 \+ 132.53 \+ 93.53 \+ 63.22 = 447.16$
-- Water -> 5 months \* 20$ = 100$
-- Internet -> 5 months \* 15$ = 75$
+- Electricity -> 68.63 \+ 89.25 \+ 132.53 \+ 93.53 \+ 63.22 = $447.16
+- Water -> 5 months \* $20 = $100
+- Internet -> 5 months \* $15 = $75
 - Others:
     - 68.63+20+15) + 20% = 124.356  
     - (89.25+20+15) + 20% = 149.1
@@ -1017,8 +1017,8 @@ For 5 months:
     - (63.22+20+15) + 20% = 117.864
 [/hint]
 [hint]
-Total = 746.592$
-Average bills per month = (447.16+100+75+746.592)/5 = 273.7504$
+Total = $746.592
+Average bills per month = (447.16+100+75+746.592)/5 = $273.7504
 [/hint]
 [/hints]
 
@@ -1034,11 +1034,11 @@ Average bills per month = (447.16+100+75+746.592)/5 = 273.7504$
 63.22
 [/input]
 [output]
-Electricity: 447.16 $
-Water: 100.00 $
-Internet: 75.00 $
-Other: 746.59 $
-Average: 273.75 $
+Electricity: $447.16
+Water: $100.00
+Internet: $75.00
+Other: $746.59
+Average: $273.75
 [/output]
 [/test]
 [test]
@@ -1054,11 +1054,11 @@ Average: 273.75 $
 64.2
 [/input]
 [output]
-Electricity: 1390.43 $
-Water: 160.00 $
-Internet: 120.00 $
-Other: 2004.52 $
-Average: 459.37 $
+Electricity: $1390.43
+Water: $160.00
+Internet: $120.00
+Other: $2004.52
+Average: $459.37
 [/output]
 [/test]
 [test]
@@ -1076,11 +1076,11 @@ Average: 459.37 $
 321
 [/input]
 [output]
-Electricity: 2220.00 $
-Water: 200.00 $
-Internet: 150.00 $
-Other: 3084.00 $
-Average: 565.40 $
+Electricity: $2220.00
+Water: $200.00
+Internet: $150.00
+Other: $3084.00
+Average: $565.40
 [/output]
 [/test]
 [test]
@@ -1138,11 +1138,11 @@ Average: 565.40 $
 50
 [/input]
 [output]
-Electricity: 1275.00 $
-Water: 1000.00 $
-Internet: 750.00 $
-Other: 3630.00 $
-Average: 133.10 $
+Electricity: $1275.00
+Water: $1000.00
+Internet: $750.00
+Other: $3630.00
+Average: $133.10
 [/output]
 [/test]
 [test]
@@ -1173,11 +1173,11 @@ Average: 133.10 $
 523
 [/input]
 [output]
-Electricity: 7666.09 $
-Water: 460.00 $
-Internet: 345.00 $
-Other: 10165.31 $
-Average: 810.28 $
+Electricity: $7666.09
+Water: $460.00
+Internet: $345.00
+Other: $10165.31
+Average: $810.28
 [/output]
 [/test]
 [test]
@@ -1186,11 +1186,11 @@ Average: 810.28 $
 123.34
 [/input]
 [output]
-Electricity: 123.34 $
-Water: 20.00 $
-Internet: 15.00 $
-Other: 190.01 $
-Average: 348.35 $
+Electricity: $123.34
+Water: $20.00
+Internet: $15.00
+Other: $190.01
+Average: $348.35
 [/output]
 [/test]
 [test]
@@ -1208,11 +1208,11 @@ Average: 348.35 $
 10
 [/input]
 [output]
-Electricity: 55.00 $
-Water: 200.00 $
-Internet: 150.00 $
-Other: 486.00 $
-Average: 89.10 $
+Electricity: $55.00
+Water: $200.00
+Internet: $150.00
+Other: $486.00
+Average: $89.10
 [/output]
 [/test]
 [/tests]
