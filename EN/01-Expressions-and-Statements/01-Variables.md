@@ -1,7 +1,46 @@
 [slide hideTitle]
+# Lesson Content
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## In this lesson you will learn:
+
+**1. Variables**
+
+- How to declare, read and modify variables
+
+**2. Data Types**
+
+- How to process integers, real numbers and text
+
+**3. Statements (Commands)**
+
+**4. Reading User Input and Formatting Output**
+
+- How to read and format user input
+
+**5. Simple Operators**
+
+- Addition: **+**
+- Subtraction: **-**
+- Multiplication: **\***
+- Division: **/**
+
+
+**6. Expressions** 
+
+- What are expressions
+
+**7. Practical Coding Exercises**
+
+
+[/slide]
+
+[slide hideTitle]
+
 # Variables
 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-3-7-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-3-7-variables-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In programming, each **variable** stores a certain value. Each value has a particular data type. 
 
@@ -42,12 +81,7 @@ If you think of variables as boxes that hold information, this is how they would
 Variables can be stored in the program's:
   * Operational memory - the execution **stack**
   * Dynamic memory - also refered to as **heap**
-[/slide]
 
-[slide hideTitle]
 
-# Example: Declaring a Variable
-
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-3-7-variables-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

@@ -1,7 +1,45 @@
 [slide hideTitle]
+
+# Conținutul Lecției
+
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## În această lecție veți învăța:
+
+**1. Variabile**
+
+- Cum să declarați, citiți sau să modificați o variabilă
+
+**2. Tipurile de date**
+
+- Cum să procesați numere întregi, numere reale sau text
+
+**3. Instrucțiuni (comenzi)**
+
+**4. Citirea datelor de intrarea de la utilizator și formatarea ieșirii**
+
+- Cum să citiți și să formatați intrarea de la utilizator
+
+**5. Operatori simpli**
+
+- Adunare: **+**
+- Scădere: **-**
+- Înmulțire: **\***
+- Împărțire: **/**
+
+**6. Expresii** 
+
+- Ce reprezintă expresiile
+
+**7. Exerciții practice de programare**
+
+[/slide]
+
+[slide hideTitle]
+
 # Variabile
 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-3-7-variables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-3-7-variables-and-demo-NEW-RO-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În programare, fiecare **variabilă** stochează o anumită valoare de un anumit tip. 
 
@@ -39,12 +77,5 @@ Dacă vă imaginați variabilele ca pe niște cutii care conțin informații, ar
 Variabilele pot fi stocate în:
    * Memoria operațională - în **stiva** de execuție
    * Memoria dinamică - în **heap**
-[/slide]
-
-[slide hideTitle]
-
-# Exemplu: Declararea unei variabile
-
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/RO/interactive-programming-basics-with-java-expressions-and-statements-3-7-variables-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

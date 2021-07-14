@@ -1003,10 +1003,9 @@ The input is read from the console:
 The output should consist of 5 lines: 
 - "**Electricity:** **$**\{**total cost for the entire period**\}" 
 - "**Water:** **$**\{**total cost for the entire period**\}" 
-- "**Internet: **$**\{**total cost for the entire period**\}" 
+- "**Internet:** **$**\{**total cost for the entire period**\}" 
 - "**Other:** **$**\{**total cost for the entire period**\}" 
-- "**Average:** **$**\{**total cost per month**\}"
-
+- "**Average:** **$**\{**total cost for the entire period**\}"
 All bills should be formatted to the 2nd digit after the decimal point.
 
 ## Example

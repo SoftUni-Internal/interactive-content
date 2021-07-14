@@ -70,7 +70,7 @@ switch (selector) {
 [slide hideTitle]
 # Example: "Yes" or "No"
 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-26-switch-case-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-26-switch-case-example-and-demo-FIX-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let us create a program that prints **"Yes" or "No"** depending on a **given value** (`Y`, `N`) or **"Invalid response"** if an invalid input is given.
 
