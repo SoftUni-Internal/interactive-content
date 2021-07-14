@@ -29,13 +29,16 @@ public interface StudentService {           // First, we get the interface of ou
 
 
 @Service
-public class StudentServiceImpl implements StudentService {     // Then we have a class implementing our interface
-                                                                
+public class StudentServiceImpl implements StudentService {   
+
+    // Then, we have a class implementing our interface.
+    // It overrides the already implemented methods.   
+
     @Autowired
-    private StudentRepository studentRepository;                // With declared dependencies
+    private StudentRepository studentRepository;                
 
     @Override
-    public void register(Student student) {                     // And already implements methods
+    public void register(Student student) {                     
         studentRepository.save(student);
     }
 
@@ -51,15 +54,15 @@ public class StudentServiceImpl implements StudentService {     // Then we have 
 [slide hideTitle]
 # Spring Data Architecture
 
+A model has a **repository** layer and a **service** layer.
+
 [image assetsSrc="Spring-Data-Service.png" /]
 
-A model has a repository layer and a service layer.
+The repository establishes a **link** between the service layer and the database. 
 
-The repository establishes a link between the service layer and the database. 
+It is responsible for the data sent to the **database** from the **service layer** (**incoming** information) and the retrieved data sent back to the service layer.
 
-It is responsible for the data sent to the database from the service layer (incoming information) and the retrieved data sent back to the service layer.
-
-The service layer processes either the incoming information and sends it to the database or processes the incoming request and retrieves the necessary information from the database. 
+The service layer **processes** either the incoming information and sends it to the database or processes the incoming request and retrieves the necessary information from the database. 
 
 [/slide]
 

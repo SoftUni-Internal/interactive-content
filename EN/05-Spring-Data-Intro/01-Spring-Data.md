@@ -54,9 +54,9 @@ Working with **Spring Data** provides multiple benefits, such as:
 
 # Spring Boot
 
-Spring Boot is another part of the **Spring Ecosystem**.
+Spring Boot is another part of the **Spring ecosystem**.
  
-It is a standalone tool used to build the backbone of **Spring Application**.
+It is a standalone tool used to build the backbone of a **Spring application**.
 
 Its primary purpose is to help the developer get started with a web application by reducing the development time and simplifying configuration.
 
@@ -74,7 +74,7 @@ For instance, if you have a **Student** object in the application, it correspond
 
 # Dependencies
 
-To work with **Spring Data in our projects**, we'll need to **add two dependencies** in our `pom.xml` file:
+To work with **Spring Data in our projects**, we will need to **add two dependencies** in our `pom.xml` file:
 
 ```java
 <dependencies>
@@ -92,6 +92,8 @@ To work with **Spring Data in our projects**, we'll need to **add two dependenci
 </dependencies>
 ```
 
+First, we add rhe 
+
 [/slide]
 
 [slide hideTitle]
@@ -102,18 +104,24 @@ The **configuration** for **Spring application** is held in an **application.pro
 
 ```java
 # Data Source Properties
-spring.datasource.driverClassName = com.mysql.cj.jdbc.Driver                // The drive for the MySQL database
-spring.datasource.url = jdbc:mysql://localhost:3306/school?useSSL=false     // Connection URL to the database, the database name and properties
+
+// The driver for the MySQL database
+spring.datasource.driverClassName = com.mysql.cj.jdbc.Driver                
+spring.datasource.url = jdbc:mysql://localhost:3306/school?useSSL=false
+
+// Connection URL to the database, the database name and properties
 spring.datasource.username = root
 spring.datasource.password = 1234
 
-#JPA Properties
-spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect   // The hibernate dialect used in the query builder
+# JPA Properties
+
+// The hibernate dialect used in the query builder
+spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect   
 spring.jpa.properties.hibernate.format_sql = TRUE
 spring.jpa.hibernate.ddl-auto = create-drop
 
 ### Logging Levels
-# Disable the default loggers       // The logging settings.
+# Disable the default loggers       
 logging.level.org = WARN
 logging.level.blog = WARN
 
@@ -134,30 +142,35 @@ Depending on the project, **additional properties** may be needed.
 The less common way of configuring a Spring Boot project is by using an annotation-based **JavaConfig** file:
 
 ```java
-    @Bean
-    public EntityManagerFactory entityManagerFactory() {                //This is the JPA configuration
+@Bean
+public EntityManagerFactory entityManagerFactory() {                
+    
+    // This is the JPA configuration
+    HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
+    vendorAdapter.setDatabase(Database.MYSQL);
+    vendorAdapter.setGenerateDdl(true);
+    vendorAdapter.setShowSql(true);
+    LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
+    factory.setJpaVendorAdapter(vendorAdapter);
 
-        HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
-        vendorAdapter.setDatabase(Database.MYSQL);
-        vendorAdapter.setGenerateDdl(true);
-        vendorAdapter.setShowSql(true);
-        LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
-        factory.setJpaVendorAdapter(vendorAdapter);
-        factory.setPackagesToScan("com.demo.domain");                  //The models' package
-        factory.setDataSource(dataSource());
-        Properties jpaProperties = new Properties();
-        jpaProperties.setProperty("hibernate.hbm2ddl.auto","validate");
-        jpaProperties.setProperty("hibernate.format_sql", "true");
-        factory.setJpaProperties(jpaProperties);
-        factory.afterPropertiesSet();
-        return factory.getObject();
-    }
+    // The models' package
+    factory.setPackagesToScan("com.demo.domain");                  
+    factory.setDataSource(dataSource());
+    Properties jpaProperties = new Properties();
+    jpaProperties.setProperty("hibernate.hbm2ddl.auto","validate");
+    jpaProperties.setProperty("hibernate.format_sql", "true");
+    factory.setJpaProperties(jpaProperties);
+    factory.afterPropertiesSet();
+    return factory.getObject();
+}
 
 @Bean
-public PlatformTransactionManager transactionManager() {                //Registering a transaction manager
-        JpaTransactionManager txManager = new JpaTransactionManager();
-        txManager.setEntityManagerFactory(entityManagerFactory());
-        return txManager;
+public PlatformTransactionManager transactionManager() {                
+    
+    // Registering a transaction manager
+    JpaTransactionManager txManager = new JpaTransactionManager();
+    txManager.setEntityManagerFactory(entityManagerFactory());
+    return txManager;
 }
 ```
 

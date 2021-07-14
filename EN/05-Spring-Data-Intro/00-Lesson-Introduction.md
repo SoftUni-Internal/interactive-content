@@ -11,11 +11,13 @@
 - Spring Boot
 
 **2. Spring Data Repositories**
+- The `Repository` interface
 
 **3. Spring Data Query Creation**
 - Assembling queries with Spring Data
 - Query builder
 
 **4. Spring Data Service**
+- The service layer
 
 [/slide]

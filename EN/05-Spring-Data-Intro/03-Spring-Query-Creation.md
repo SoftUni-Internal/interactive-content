@@ -47,7 +47,7 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 2. We declare an interface that extends another Repository, containing methods for the functionality we desire
 
 3. The repository interfaces are **generic** 
-        * we should define the **Entity** we want to work with and **the type of the identity column in the entity**
+    * we should define the **Entity** we want to work with and **the type of the identity column in the entity**
 
 4. The query method consists of three parts:
     1. `List<Student>` - the return type of the query

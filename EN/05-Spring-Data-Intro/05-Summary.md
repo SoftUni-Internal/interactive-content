@@ -9,7 +9,7 @@
 
 - The **Repository pattern** reduces the amount of boilerplate code
 
-- What **Spring Data Repositories** are
+- **Spring Data Repositories** provide us with an abstraction of the **repository design pattern**
 
 ```java
 public interface CrudRepository<T, ID extends Serializable> extends Repository<T, ID> {
