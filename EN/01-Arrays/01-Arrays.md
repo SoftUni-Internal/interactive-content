@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-3-4-What-are-arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Arrays** allow us to store multiple data in a sinlgle variable.
+**Arrays** allow us to store multiple inputs of the same data type in a sinlgle variable.
 
 They are useful for sequences of data and iterating over it.
 
@@ -25,9 +25,9 @@ int[] numbers = { 1, 1, 2, 4, 5 };
 The values of an array are called **elements**.
 
 ## Real-Life Example
-Imagine a train with multiple wagons and passengers riding in each wagon.
+Imagine a train with multiple wagons and passengers riding in each one.
 
-Now imagine this as an array of integers, each element represents a wagon and its value is the passengers.
+Now imagine this as an array of integers. Each element represents a wagon and its value is the number of passengers.
 
 An array of integers is often visialized in the following way:
 
@@ -35,7 +35,7 @@ An array of integers is often visialized in the following way:
 
 Let us say this one has **7 wagons (elements)**. Each one has **passengers (a value)**. \{3, 4, 10, 7, 5, 0, 6\}
 
-Arrays are the code **basis** for other abstract data types like: **List**, **Stack**, **Queue**.
+Arrays are the code **basis** for other abstract data types: **List**, **Stack**, **Queue**.
 
 [/slide]
 
@@ -76,7 +76,7 @@ Let us explain the example above:
 
 We **allocate** an array of 5 integers.
 
-Then we **initialize** the array, all values are set to 0 because the default value of an **int** is zero.
+Then we **initialize** the array all values are set to 0 because the default value of an **int** is zero.
 
 We **assign** a value to the array elements.
 
@@ -84,15 +84,15 @@ The length holds the number of array elements.
 
 In the for-loop we use `i < numbers.length` because the array indexes are zero-based, which means that the first index of an array is 0 and the last one is `numbers[4]`.
 
-We are then **Accessing** array elements by index.
+We are then **accessing** array elements by index.
 
-As we mentioned above the first index of an array is always 0 and the last index is `array.length - 1`.
+As mentioned above, the first index of an array is always `0` and the last index is `array.length - 1`.
 
-In total, we have 5 elements in our array but the last element is at index 4 so we subtract `array.length - 1 = 4`, which is our last index.
+In total we have 5 elements in our array but the last element is at index 4 so we subtract `array.length - 1 = 4`, which is our last index.
 
 The `[]` operator refers to elements by index.
 
-If we try to access the element on an invalid index we get an exception.
+When accessing an element on an invalid index we get an exception.
 
 
 [/slide]
