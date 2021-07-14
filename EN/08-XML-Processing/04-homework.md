@@ -1,7 +1,7 @@
 # Homework
 
 [slide hideTitle]
-# 1. Seed the Database
+# 1. Products Shop - Seed the Database
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/09-XML-Processing-Homework.zip) **for this task.** 
 
@@ -17,7 +17,7 @@ Randomly **generate categories** for each product from the existing categories.
 [/slide]
 
 [slide hideTitle]
-# 2. Query and Export Data
+# 2. Products Shop - Queries and Export Data
 
 Create the queries that are described below and **export** the returned data to the specified **format**. 
 
@@ -162,7 +162,7 @@ Finally, import the **sales records** by **randomly** selecting a **car, custome
 [/slide]
 
 [slide hideTitle]
-# 4. Queries and Export Data
+# 4. Car Dealer - Queries and Export Data
 
 Write the below-described queries and **export** the returned data to the specified **format**.
 
