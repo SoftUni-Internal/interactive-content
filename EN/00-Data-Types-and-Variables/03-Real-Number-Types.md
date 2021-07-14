@@ -61,7 +61,7 @@ System.out.println("Float PI is: " + floatPI);
 System.out.println("Double PI is: " + doublePI);
 ```
 
-**NOTE**: The `f` suffix in the first statement signifies that it should be interpreted as a float
+**NOTE**: The `f` suffix in the first statement signifies that it should be interpreted as a float.
 
 - Real numbers are interpreted as **double** by default
 
@@ -193,7 +193,7 @@ System.out.println(exampleVariableThree);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-24-floating-point-division-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-There are two types of numeric division: integral and floating-point division
+There are two types of numeric division: integral and floating-point division.
 
 See the examples below:
 
@@ -243,7 +243,7 @@ System.out.println(num);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-26-big-decimal-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Sometimes, floating-point numbers might also behave abnormally in calculations
+Occasionally, floating-point numbers behave abnormally in calculations
 
 You can read more about **IEEE 754** by looking it up in any search engine.
 
