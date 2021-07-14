@@ -19,7 +19,7 @@ for (int i = 1; i <= 10; i++) {
 
 - For-loops with a special step
 
-``` java
+``` java live
 for (int i = 10; i >= 1; i--) {
   System.out.println(i);
 }
@@ -35,7 +35,7 @@ for (char ch = 'a'; ch <= 'd'; ch++) {
 
 - Prefixes 
 
-``` java
+``` java live
 int i = 1;
       System.out.println(++i);
       System.out.println(i);
@@ -43,7 +43,7 @@ int i = 1;
 
 - Postfixes
 
-``` java
+``` java live
 int i = 1;
       System.out.println(i++);
       System.out.println(i);
