@@ -115,7 +115,7 @@ Folosiți sintaxa `Jar<T>` pentru a crea o clasă generică.
 ## Submit
 Pentru a trimite soluția, creați un fișier **zip** cu tot pachetul vostru care conține clasele `Jar` și `Main`:
 
-[image assetsSrc="generics-example(2).png" /]
+[image assetsSrc="generic-example(2)-fixed.png" /]
 
 Dacă nu ați creat un **pachet**, selectați doar clasele și stocați-le într-un fișier **zip**.
 
