@@ -224,7 +224,6 @@ Scrieți un program care imprimă puterile pare ale lui 2:
 ## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
-| --- | --- |
 |5| 1, 4, 16 |
 |10| 1, 4, 16, 64, 256, 1024 |
 
