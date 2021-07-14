@@ -20,7 +20,7 @@ The respective arguments for these queries will get sanitized.
 
 This process escapes special characters recognized by the **LIKE** keyword and excludes them from the query.
 
-Further **Spring Data JPA** will do a property check and traverse nested properties.
+Further, **Spring Data JPA** will do a property check and traverse nested properties.
 
 [/slide]
 

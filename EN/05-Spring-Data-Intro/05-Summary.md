@@ -4,9 +4,8 @@
 
 ## In this lesson you learned:
 
-- What **Spring Data** is
+- **Spring Data** is an abstraction layer over JPA
     * part of the **Spring Framework**
-    * an abstraction layer over JPA
 
 - What the **Repository pattern** is
 
