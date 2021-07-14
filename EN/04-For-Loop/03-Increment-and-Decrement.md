@@ -16,7 +16,7 @@ The increment and decrement operators have two possible forms:
 
 ### Postfix Increment Operator
 The current value of the expression `x++` is the value of `x` before the `++` operation, as the following example shows:
-```java live
+```java
 int i = 3;
 System.out.println(x);   // output: 3
 System.out.println(x++); // output: 3
