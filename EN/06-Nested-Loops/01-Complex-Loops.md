@@ -237,7 +237,7 @@ Create a program that prints the scaling powers of 2:
 | **Input** | **Output** |
 | --- | --- |
 |5| 1 4 16 |
-|10| 1 4 16 64 256 1024 |
+|10| 1, 4, 16, 64, 256, 1024 |
 
 [/task-description]
 [tests]
@@ -246,7 +246,7 @@ Create a program that prints the scaling powers of 2:
 5
 [/input]
 [output]
-1 4 16
+1, 4, 16
 [/output]
 [/test]
 [test open]
@@ -254,7 +254,7 @@ Create a program that prints the scaling powers of 2:
 10
 [/input]
 [output]
-1 4 16 64 256 1024
+1, 4, 16, 64, 256, 1024
 [/output]
 [/test]
 [test]
@@ -262,7 +262,7 @@ Create a program that prints the scaling powers of 2:
 15
 [/input]
 [output]
-1 4 16 64 256 1024 4096 16384
+1, 4, 16, 64, 256, 1024, 4096, 16384
 [/output]
 [/test]
 [test]
@@ -270,7 +270,7 @@ Create a program that prints the scaling powers of 2:
 20
 [/input]
 [output]
-1 4 16 64 256 1024 4096 16384 65536 262144 1048576
+1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576
 [/output]
 [/test]
 [test]
@@ -278,7 +278,7 @@ Create a program that prints the scaling powers of 2:
 25
 [/input]
 [output]
-1 4 16 64 256 1024 4096 16384 65536 262144 1048576 4194304 16777216
+1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576, 4194304, 16777216
 [/output]
 [/test]
 [test]
@@ -286,7 +286,7 @@ Create a program that prints the scaling powers of 2:
 30
 [/input]
 [output]
-1 4 16 64 256 1024 4096 16384 65536 262144 1048576 419434, 16777216 67108864 268435456 1073741824
+1, 4, 16, 64, 256, 1024, 4096, 16384, 65536, 262144, 1048576, 419434, 16777216, 67108864, 268435456, 1073741824
 [/output]
 [/test]
 [/tests]
