@@ -1,7 +1,7 @@
 # Homework
 
 [slide hideTitle]
-# 1. Products Shop - Seed
+# 1. Products Shop - Seed the Database
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/09-XML-Processing-Homework.zip) **for this task.** 
 
