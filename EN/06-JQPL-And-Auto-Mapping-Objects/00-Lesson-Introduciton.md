@@ -8,13 +8,13 @@
 
 **1. Java Persistence Query Language**
 - Definition
-- Usages
+- Usage
 
 **2. Repository Inheritance**
 
 **3. Data Transfer Objects**
 - Definition
-- Usages
+- Usage
 
 **4. Model Mapping**
 - Auto-Mapper

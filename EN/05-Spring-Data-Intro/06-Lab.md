@@ -27,7 +27,7 @@ We can also select the Spring Boot version.
 
 [image assetsSrc="Spring-data-introduction-Lab-3.png" /]
 
-- In the resources folder of the project, create a new **applications.properties** file, which will hold the  configurations for the project:
+- In the resources folder of the project, create a new **applications.properties** file, which will hold the  database configurations of the project:
 
 ```java
 #Data Source Properties
@@ -71,7 +71,7 @@ Start by setting up the database models. Each one of them will be as follows:
 
 | **Columns** | **Constraints** |
 |---|---|
-| id | Accepts **Long** values ; the **Primary Key** |
+| id | Accepts **Long** values, the **Primary Key** |
 | username | A **unique value** for each user |
 | age | Accepts **Integer** values |
 | accounts | Each user can have many accounts, which will be identified by their **id** |
@@ -80,7 +80,7 @@ Start by setting up the database models. Each one of them will be as follows:
 
 | **Columns**  | **Constraints** |
 |---|---|
-| id | Accepts **Long** values ; the **Primary Key** |
+| id | Accepts **Long** values, the **Primary Key** |
 | balance | Accepts **BigDecimal** values |
 | user | The owner of the account, which will be identified by their **id** |
 
@@ -161,18 +161,18 @@ public class UserServiceImpl implements UserService {
 
     public UserServiceImpl(UserRepository userRepository) {...}
 
-    public void register(User user) {...}
+    public void registerUser(User user) {...}
 }
 ```
 
 The method implementation logic is up to you. Here are some several tips:
 
 -  **AccountServiceImpl**
-    * Money withdrawal - should only happen if account is **present** in the database, **belongs to user** and **has enough balance**
-    * Money transfer - should only happen if **account belongs to user** and transfer value is **not negative**
+    * Money withdrawal - should only happen if the account is **present** in the database, **belongs to user** and **has enough balance**
+    * Money transfer - should only happen if the **account belongs to user** and transfer value is **not a negative amount**
 
 - **UserServiceImpl**
-    * **User registration** - should only happen if user does not exist in the database
+    * **User registration** - should only happen if the user does not exist in the database
 [/slide]
 
 [slide hideTitle]
@@ -206,7 +206,7 @@ public class ConsoleRunner implements CommandLineRunner {
 
 # Test
 
-Test the application by adding logic in the **ConsoleRunner**'s **run** method class:
+Test the application by adding logic in the **ConsoleRunner**'s **run** method:
 
 ```java 
 public void run(String... args) throws Exception {
