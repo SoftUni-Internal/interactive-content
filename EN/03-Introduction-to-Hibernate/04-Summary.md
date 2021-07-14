@@ -41,7 +41,7 @@ public class User {
 ```
 
 - **Hibernate** is an open-source ORM framework 
-  * **maps** an object-oriented models to a relational database
+  * **maps** an object-oriented model to a relational database
 
 ```java
 <hibernate-mapping>

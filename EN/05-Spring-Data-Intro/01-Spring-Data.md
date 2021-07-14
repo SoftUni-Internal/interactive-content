@@ -92,7 +92,9 @@ To work with **Spring Data in our projects**, we will need to **add two dependen
 </dependencies>
 ```
 
-First, we add rhe 
+First, we add Spring Boot Starter Data JPA.
+
+We must also include the MySQL connector.
 
 [/slide]
 
