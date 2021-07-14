@@ -12,6 +12,10 @@ JPA operates with POJO entities with annotations or XML mappings.
 
 It maps relationships between tables as associations between classes.
 
+ORM creates a virtual database that is easily accessible by the given programming language.
+
+
+
 [/slide]
 
 [slide hideTitle]

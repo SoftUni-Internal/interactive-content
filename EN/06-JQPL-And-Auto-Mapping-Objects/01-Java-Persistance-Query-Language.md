@@ -4,7 +4,7 @@
 
 # JPQL Definition
 
-JPQL (or the Java Persistence Query Language) is an **object-oriented** query language, which is part of the Java persistence API.
+JPQL (or the Java Persistence Query Language) is an **object-oriented** query language, part of the Java persistence API.
 
 It is a tool used when either our queries get too complex and query method names are just not enough or the method name gets too ugly.
 

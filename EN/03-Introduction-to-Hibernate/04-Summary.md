@@ -4,8 +4,8 @@
 
 ## In this lesson you learned:
 
-- Maven is a project management framework
-  * easy dependency imports by XMLs
+- **Maven** is a project **management** framework
+  * it enables easy **dependency** imports by XML
 
 ```java
 <build>
@@ -22,8 +22,8 @@
     </build>
 ```
 
-- What the Java Persistence API is
-  * an ORM specification
+- What the **Java Persistence API** is
+  * an ORM **specification**
 
 ```java
 @Entity
@@ -40,8 +40,8 @@ public class User {
 }
 ```
 
-- Hibernate is an open-source ORM framework 
-  * maps an object-oriented models to a relational database
+- **Hibernate** is an open-source ORM framework 
+  * **maps** an object-oriented models to a relational database
 
 ```java
 <hibernate-mapping>
@@ -58,9 +58,9 @@ public class User {
 
 ## In the next lesson you will learn:
 
-- JPA inheritance strategies
-- Table relations
-- Cascading
+- JPA **inheritance strategies**
+- **Table relations**
+- **Cascading**
 
 
 [/slide]
