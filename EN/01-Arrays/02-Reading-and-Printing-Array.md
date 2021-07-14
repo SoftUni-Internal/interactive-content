@@ -40,7 +40,7 @@ Then we initialize a new array with a length equal to the number of elements we 
 
 Finally, using a **for-loop** we insert all of the values into the array.
 
-We can read an array of integers using the `java.util.Arrays;` `class`, which is a `class` in Java that allows us to create and manipulate arrays.
+We can read an array of integers using the `java.util.Arrays;` This `class` in Java allows us to create and manipulate arrays.
 
 ## Alternatives
 
@@ -215,7 +215,7 @@ Read **n** numbers and print them in reverse order, separated by a single space.
 
 We can use `String.join(x, y)` to join the elements of a collection.
 
-In this situation, **x** is the **separator** and **y** is the **array** we want to print. 
+In this instance, **x** is the **separator** and **y** is the **array** we want to print. 
 
 `String.join(…)` works only with `Strings`:
 
@@ -254,7 +254,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that reads an **array of strings**, reverses it, and **prints** its elements.
+Create a program that reads an **array of strings**, reverses it and **prints** its elements.
 
 The input consists of a sequence of space-separated **Strings**.
 
