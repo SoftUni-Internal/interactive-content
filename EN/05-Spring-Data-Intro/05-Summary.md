@@ -1,15 +1,16 @@
-# Summary
-
 [slide hideTitle]
 
-# In this lesson you learned:
+# Summary
+
+## In this lesson you learned:
 
 - What **Spring Data** is
-    - Part of the **Spring Framework**
-    - Is not a JPA provider, only an abstraction layer over it
+    * part of the **Spring Framework**
+    * an abstraction layer over JPA
 
 - What the **Repository pattern** is
-    - What **Spring Data Repositories** are.
+
+- What **Spring Data Repositories** are
 
 ```java
 public interface CrudRepository<T, ID extends Serializable> extends Repository<T, ID> {
@@ -49,14 +50,11 @@ public class StudentServiceImpl implements StudentService {
 ```
 
 
-## In the next lesson, we will learn:
+## In the next lesson you will learn:
 
-- What JQPL is
-
-- Inheriting Repositories
-
-- Exposing information about our entities
-
-- What an Auto Mapper is and how to use one
+- What **JQPL** is
+- **Inheriting** Repositories
+- **Exposing** information about our entities
+- What an **Auto Mapper** is and how to use one
 
 [/slide]

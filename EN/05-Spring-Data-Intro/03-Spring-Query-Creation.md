@@ -6,11 +6,7 @@
 
 One of the main functionalities of **Spring Data** repositories is the built-in query builder mechanism.
 
-The logic for it is built in the naming of a given repository method.
-
-In its foundations lays the **convention over configuration** design pattern.
-
-Giving the method's name prefixed by convention like:
+Built by following the **convention over configuration** design pattern, each repository method has a self-explanatory syntax:
 
 - **find...By**
 
@@ -18,9 +14,11 @@ Giving the method's name prefixed by convention like:
 
 - **query...By**
 
-It points the framework to what is intended and starts to build and execute a query based on it.
+The first keyword of a given method indicates its purpose.
 
-The respective arguments for these queries will get sanitized, this means that special characters are recognized by the **LIKE** keyword will get escaped and the query won't contain them.
+The respective arguments for these queries will get sanitized.
+
+This process escapes special characters recognized by the **LIKE** keyword and excludes them from the query.
 
 Further **Spring Data JPA** will do a property check and traverse nested properties.
 
@@ -29,9 +27,11 @@ Further **Spring Data JPA** will do a property check and traverse nested propert
 [slide hideTitle]
 # Query Methods
 
-When creating simple queries, we can use the derive mechanism to build the query by following the naming conventions, while **Spring Data** does the rest for us.
+We can apply this mechanism when building simple queries.
 
-In order to understand how **query methods** and see their limitations we shall go through their syntax and have a closer look.
+We should follow the naming conventions and leave the rest to **Spring Data**.
+
+To learn how **query methods** work and understand their limitations, let us take a closer look at their syntax.
 
 ```java
 @Repository                                                  
@@ -41,24 +41,25 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 }
 ```
 
-1. We should not forget to add the **@Repository annotation** in order to indicate that it is a repository in the **Spring context** so that the **application** can auto detect it.
+1. We must remember to include the `@Repository` **annotation** - it indicates that this is a repository in the **Spring context** 
+	* this way, the **application** can automatically detect it
 
-2. We declare an interface, further extending a chosen Repository, which contain methods for the functionality we desire.
+2. We declare an interface that extends another Repository, containing methods for the functionality we desire
 
-3. The repository interfaces are **generic**, therefore we should define which **Entity** we want to work with
-and its **the type of the identity column in the entity**.
+3. The repository interfaces are **generic** 
+        * we should define the **Entity** we want to work with and **the type of the identity column in the entity**
 
-4. The query method is constructed of a couple of parts
-    1. **List<Student>** - the return type of the query
-    2. **The name** - the name of the query. Spring gives us  
-        - the **find** prefix - declares what action we want to introduce to the query
-        - **By** - the separator
-        - **Teacher** - the criteria
-    3. **(Teacher teacher)** the required parameter/s
+4. The query method consists of three parts:
+    1. `List<Student>` - the return type of the query
+    2. **The name** of the query, consisting of:
+        * the `find` prefix - declares what action we want to introduce to the query
+        * `By` - the separator
+        * **Teacher** - the criteria
+    3. `(Teacher teacher)` - the required parameter/s
     
-    **Spring Data** automatically sanitizes and keeps the application safe from SQL injections.
+**Spring Data** automatically sanitizes and keeps our application safe from SQL injections.
 
-To learn how to properly create our query methods we should take a look at all possible keywords used in them.
+The table below contains all query method keywords:
 
 | Keyword | Sample | SQL equivalent |
 | --- | --- | --- |
@@ -90,9 +91,11 @@ To learn how to properly create our query methods we should take a look at all p
 |  |  |  |
 
 
-Creating and working with queries using method names is convenient but sometimes we may want to make a more complex query. To create custom queries, we annotate the method with the **@Query** annotation.
+While using these predefined keywords is convenient, sometimes we may want to make a more complex query. 
 
-In the example we're using "field-type annotation".
+To create custom queries, we annotate the method with the **@Query** annotation.
+
+In the example, we аre using а **field-type annotation**:
 
 ```java
 // The Student entity
@@ -128,11 +131,11 @@ public interface StudentRepository extends JpaRepository<Student, Long>  {
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/06-Spring-Advanced-Quering-Resources.zip) **for this task.**
 
-You are given an implementation of the Shampoo Company.
+You will receive an implementation of the Shampoo Company.
 
 Now it is time to start writing some query methods to retrieve the needed data.
 
-Before you start, insert the data from the "shampoo-company-insert.sql" file!
+Before you start, insert the data from the "shampoo-company-insert.sql" file.
 
 Create a method that selects all shampoos with a given size, ordered by the shampoo id.
 
