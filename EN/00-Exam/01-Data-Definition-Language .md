@@ -21,6 +21,12 @@ The instructions you will be given will be the minimum required for you to imple
 # Description
 You should create the tables in the database by the following models:
 
+You will also be given a [data.sql](https://videos.softuni.org/resources/java/java-mysql/01-Table-Design-Data-Exam.zip) file. 
+
+This data will be given to you, so you do not have to imagine it and lose precious time in the process.
+
+The data is in the form of **INSERT** statement queries.
+
 ## Addresses
 
 | **Column Name** |**Data Type** |**Constraints** |
@@ -87,12 +93,7 @@ Have composite primary key from the "**car_id**" column and the "**driver_id**" 
 
 Submit **all SQL table creation statements**.
 
-You will also be given a [data.sql](https://videos.softuni.org/resources/java/java-mysql/01-Table-Design-Data-Exam.zip) file. 
-
-It will contain a **dataset** with data which you will need to **store** in your **local database**. 
-
-This data will be given to you, so you do not have to imagine it and lose precious time in the process.
-The data is in the form of **INSERT** statement queries.
+It will contain a **dataset** with data which you will need to **store** in your **local database**.
 
 [/task-description]
 [code-io /]
