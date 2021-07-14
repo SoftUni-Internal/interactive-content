@@ -5,9 +5,9 @@
 
 **Integer types** store whole numbers, positive or negative (such as 123 or -456).
 
-**Byte**, **short**, **int**, and **long** are all different integer data types. 
+**Byte**, **short**, **int** and **long** are all different integer data types. 
 
-Choosing which one to use depends on the numeric value it will need to store.
+Choosing which one to use depends on the numeric value it needs to store.
 
 |Type| Default Value | Min Value | Max Value| Size |
 |-----|------|-----|------|-----|
@@ -23,7 +23,7 @@ Choosing which one to use depends on the numeric value it will need to store.
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-14-examples-centuries-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-We should choose different integer types according to their value.
+Choosing different integer types according to their value:
 
 ```java live
 byte centuries = 20; 
@@ -36,7 +36,7 @@ System.out.printf("%d centuries = %d years = %d days = %d hours.",
 //20 centuries = 2000 years = 730484 days = 17531616 hours.
 ```
 
-We can use different integer types depending on what we want to store in them. 
+Using different integer types depends on what information will be stored in them. 
 
 - The **byte** data type can be used to store whole numbers from -128 to 127
 
@@ -54,16 +54,16 @@ short myNum = 5000;
 System.out.println(myNum);
 ```
 
-- The **int** data type can store whole numbers ranging from -2147483648 to 2147483647
+- The **int** data type can store whole numbers ranging from -2147483648 to 2147483647.
 
-The **int** data type is the most commonly used data type when we create variables holding a numeric value.
+The **int** data type is the most commonly used data type when variables holding a numeric value are created.
 
 ```java live
 int myNum = 100000;
 System.out.println(myNum);
 ```
 
-- The **long** data type can store whole numbers from -9223372036854775808  to 9223372036854775807
+- The **long** data type can store whole numbers from -9223372036854775808  to 9223372036854775807.
 
 It is used when an int is not large enough to store the value.
 
@@ -80,9 +80,9 @@ System.out.println(myNum);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-15-Integer-overflow-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-All integers have a range - a minimum and maximum value. 
+All integers have a range - **minimum** and  **maximum** value. 
 
-This means that integers can overflow, producing incorrect values. 
+This means that integers can overflow which leads to producing incorrect values. 
 
 Example:
 
@@ -101,11 +101,11 @@ for (int i = 0; i < 130; i++) {
 //-127
 ```
 
-The `counter` starts from 0 and is incremented on each step of the for-loop. 
+The `counter` starts from 0 and is incremented on each step of the **for-loop**. 
 
-Eventually when it reaches the maximum value of a byte (127), it assumes its minimum value (-128). 
+Eventually when it reaches the maximum value of a byte (127) it assumes its minimum value (-128). 
 
-This is called **integer overflow** and it is precisely the reason why choosing your data type correctly is important. 
+This is called **integer overflow** and it is precisely the reason why choosing the correct data type is crucial. 
 
 [/slide]
 
@@ -116,9 +116,9 @@ This is called **integer overflow** and it is precisely the reason why choosing 
 
 Integer literals are numbers which do not have a floating point part. 
 
-**541** is a literal value, for example.
+For example: **541** is a literal value.
 
-They can be represented in a few different ways, which are not as intuitive:
+They can be represented in a few different ways which are not as intuitive:
 
 - **hexadecimal integer literals** - values using the hexdecimal numeral system; beginning with **0x** and **OX** - **0xFE**, **0xA8F1**, **0xFFFFFFFF**
 
