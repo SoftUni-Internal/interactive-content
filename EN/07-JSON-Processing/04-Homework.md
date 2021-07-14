@@ -18,7 +18,7 @@ A products shop holds **users**, **products,** and **categories** **for the prod
 
 Using the **Code First** approach create a database following the above description.
 
-[image assetsSrc="Java-Spring-Data-JSON-Processing-Homework-1v2.jpg" /]
+[image assetsSrc="Java-Spring-Data-JSON-Processing-Homework-1v2.png" /]
 
 Configure the following relations in your models:
 
@@ -239,7 +239,7 @@ A car dealer needs information about cars, their parts, parts suppliers, custome
 
 Using the **Code First** approach create a database following the above description.
 
-[image assetsSrc="Java-Spring-Data-JSON-Processing-Homework-2v2.jpg" /]
+[image assetsSrc="Java-Spring-Data-JSON-Processing-Homework-2v2.png" /]
 
 Configure the following relations in your models:
 
