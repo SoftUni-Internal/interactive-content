@@ -7,7 +7,7 @@
 - **Spring Data** is an abstraction layer over JPA
     * part of the **Spring Framework**
 
-- What the **Repository pattern** is
+- The **Repository pattern** reduces the amount of boilerplate code
 
 - What **Spring Data Repositories** are
 
@@ -24,7 +24,7 @@ public interface CrudRepository<T, ID extends Serializable> extends Repository<T
 
 - **Spring Data** builds queries over conventions
 
-- What the **service layer** is and how it communicates with the other components
+- The **service layer** communicates with other components
 
 ```java
 @Service

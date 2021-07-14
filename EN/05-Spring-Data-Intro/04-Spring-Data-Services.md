@@ -8,7 +8,7 @@ The **Service pattern** is an architecture pattern that holds the business logic
 
 Service classes are categorized into different layers, depending on the functionality they introduce.
 
-One such category is **data services**, which contains only the services responsible for manipulating the data repositories connected to the database.
+One such category is the **data services** layer, which contains only the services responsible for manipulating the data repositories connected to the database.
 
 The primary purpose of the service layer is to hide internal processes from the entities.
 

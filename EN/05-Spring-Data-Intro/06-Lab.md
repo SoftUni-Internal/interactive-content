@@ -97,7 +97,7 @@ public interface UserRepository extends JPARepository<User, Long> {
 }
 ```
 
-Add several methods to help with the data retrieval.
+Add several methods to help you with the data retrieval.
 
 [/slide]
 
