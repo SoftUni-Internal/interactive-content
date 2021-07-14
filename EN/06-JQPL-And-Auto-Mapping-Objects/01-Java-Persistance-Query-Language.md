@@ -6,14 +6,14 @@
 
 JPQL (or the Java Persistence Query Language) is an **object-oriented** query language, part of the Java persistence API.
 
-It is a tool used when either our queries get too complex and query method names are just not enough or the method name gets too ugly.
+When working with complex queries, default query methods are not sufficient.
 
-Used to make queries against entities stored in a relational database.
+JPQL makes queries against entities stored in a relational database.
 
-JPQL is similar to SQL except for a few differences.
+It is similar to SQL except for a few differences.
 
-- The biggest and most important difference is that we interact and make queries with the entities, not with the tables from the DB
-- It will not affect the database directly
+- In JPQL, we interact and make queries with the entities, not with the tables from the database
+- It will not directly affect the database
 
 [/slide]
 
@@ -23,7 +23,8 @@ JPQL is similar to SQL except for a few differences.
 
 [image assetsSrc="Spring-Data-Advanced(3).png" /]
 
-With the JQPL syntax, we can create:
+With the JQPL syntax, we can create three types of clauses:
+
 - SELECT clauses
 - UPDATE clauses
 - DELETE clauses
@@ -36,7 +37,7 @@ With the JQPL syntax, we can create:
 
 The syntax of JPQL is similar to the SQL syntax, the difference being that SQL works directly with the database, its tables, records, and fields, whereas JPQL works with the Java classes and instances.
 
-Let us have a few examples look.
+Consider the following example:
 
 ```java
   1.              2.     3.          4.
@@ -45,7 +46,7 @@ SELECT i FROM Ingredient i WHERE b.name IN names
 
 1. The select clause
 2. The the Java class entity we want to work with
-3. The alias or how the table should be referred to as
+3. The alias - how we refer to the table
 4. The filtration clause, where we use the entity's properties
 
 [/slide]
@@ -54,11 +55,11 @@ SELECT i FROM Ingredient i WHERE b.name IN names
 
 ## JOINS
 
-Naturally, when we work with the database we would need to link our tables.
+Naturally, when working with the database, we should link our tables.
 
-With **JPQL** we have to declare the **JOIN clauses** by ourselves.
+With **JPQL**, we have to declare the **JOIN clauses** by ourselves.
 
-Luckily it's not a hard task, as long as we are familiar with how **JOINS** work, as Spring-Data is smart enough to find the criteria by which the tables should be joined.
+As long as we are familiar with how **JOINS** work, Spring Data knows how to find the criteria to join the table by.
 
 Join available in JPQL:
 
@@ -69,10 +70,10 @@ Join available in JPQL:
 Let's have an example:
 
 ```java
-SELECT s.name                           // We choose what we want from the table through SELECT
-FROM Shampoo AS s                       // then we declare the entities and it's alias
-INNER JOIN s.batch AS b                 // declaration of the type of JOIN and the table which should be joined
-WHERE b.batchDate <:batchDate           // then we can make a filtration through using the properties of the joined entity.
+SELECT s.name                           // We choose the data want from the table through SELECT
+FROM Shampoo AS s                       // Then we declare the entities, and their aliases
+INNER JOIN s.batch AS b                 // Declaration of type JOIN and the table on which to execute the operation
+WHERE b.batchDate <:batchDate           // Then, we can filter data by using the properties of the joined entity
 ```
 [/slide]
 
@@ -108,7 +109,7 @@ WHERE b.name = :name            2.
 
 ### Description
 
-Write a method that selects all shampoos with ingredients in a given list
+Write a method that selects all shampoos with ingredients in a given list.
 
 ### Example
 

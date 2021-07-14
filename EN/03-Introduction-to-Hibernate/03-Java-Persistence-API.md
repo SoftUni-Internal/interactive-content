@@ -14,7 +14,7 @@ It maps relationships between tables as associations between classes.
 
 ORM creates a virtual database that is easily accessible by the given programming language.
 
-It is a method of converting data between two otherwise incompatible systems, by using object-oriented programming languages (such as Java).
+It is a method of trasfering data between two otherwise incompatible systems, by using object-oriented programming languages (such as Java).
 
 [/slide]
 
@@ -56,7 +56,7 @@ public class Student {
 
 # Annotations
 
-These are the **six** most commonly used **annotations** in JPA:
+These are the **seven** most commonly used **annotations** in JPA:
 
 ## @Entity
 
@@ -165,6 +165,12 @@ We can also use an optional `<description>` element to provide information about
 </project>
 ```
 
+In the `pom.xml` file, we include the following:
+
+- The **Java Persistence API**
+- **Hibernate**
+- A Java **MySQL Connector**
+
 [/slide]
 
 [slide hideTitle]
@@ -185,7 +191,11 @@ public static void main(String[] args) {
 }
 ```
 
-In this example, we attempt to persist a `student` entity with a name of "Teo" into the database.
+In this example, we create an `EntityManagerFactory` instance, stored in the **emf** variable.
+
+We also initialize an `EntityManager` instance - **em**.
+
+Then, we attempt to persist a `student` entity with a name of "Teo" into the database.
 
 [/slide]
 
