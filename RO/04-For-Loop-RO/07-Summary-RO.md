@@ -25,13 +25,30 @@ for (int i = 10; i >= 1; i--) {
 }
 ```
 
-- Prefixul și sufixul
+- Iterating over characters
 
 ```java live
 for (char ch = 'a'; ch <= 'd'; ch++) {
   System.out.print(ch + " ");
 }
 ```
+
+- Prefixes 
+
+ ``` java live
+ int i = 1;
+       System.out.println(++i);
+       System.out.println(i);
+ ```
+
+ - Postfixes
+
+ ``` java live
+ int i = 1;
+       System.out.println(i++);
+       System.out.println(i);
+ ```
+
 
 
 ## În lecția următoare veți învăța:
