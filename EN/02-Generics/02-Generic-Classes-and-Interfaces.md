@@ -116,7 +116,7 @@ Use the syntax `Jar<T>` to create a generic class.
 ## Submit
 To submit your solution, create a **zip** file with your whole package containing the "**Jar**" and "**Main**" classes:
 
-[image assetsSrc="generics-example(2).png" /]
+[image assetsSrc="generics-example(2)-fixed.png" /]
 
 If you did not create a **package**, select your classes and **zip** them.
 
