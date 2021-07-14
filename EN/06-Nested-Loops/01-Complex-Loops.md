@@ -236,7 +236,7 @@ Create a program that prints the scaling powers of 2:
 ## Examples
 | **Input** | **Output** |
 | --- | --- |
-|5| 1 4 16 |
+|5| 1, 4, 16 |
 |10| 1, 4, 16, 64, 256, 1024 |
 
 [/task-description]
