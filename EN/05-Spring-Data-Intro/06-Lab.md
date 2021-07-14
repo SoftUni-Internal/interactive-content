@@ -92,7 +92,7 @@ Set up the appropriate tables, columns, column properties and table relations.
 
 # Repositories
 
-Create two repositories – one for the **User** and another for the **Account**
+Create two repositories – one for the **User** and another for the **Account**.
 
 ```java
 @Repository

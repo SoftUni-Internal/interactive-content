@@ -15,9 +15,13 @@ The primary purpose of the service layer is to hide internal processes from the 
 Developers should focus on making these services reusable, making the application easier to extend.
 
 ```java
-public interface StudentService {           // First, we get the interface of our service
-                                            // with various methods declared in it,
-    void register(Student student);         // on which our business logic depends.
+public interface StudentService {           
+    
+    // First, we get the interface of our service
+    // with various methods declared in it,
+    // on which our business logic depends.
+
+    void register(Student student);         
 
     void expel(Student student);
 
