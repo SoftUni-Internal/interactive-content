@@ -276,28 +276,37 @@ FROM Student AS s
 JOIN s.major AS major
 ```
 
-## Retrieve Data by Criteria
+[/slide]
+
+[slide hideTitle]
+
+# Retrieve Data by Criteria
 
 This is how we can obtain information by `criteria`:
 
 ```java
 public static void main(String[] args) {
-    public static void main(String[] args) {
     // Logic here...
     session.beginTransaction();
+
     CriteriaBuilder builder = session.getCriteriaBuilder();
     CriteriaQuery criteria = builder.createQuery();
     Root<Student> r = criteria.from(Student.class);
-    criteria.select(r).where(builder.like(r.get("name"),"P%"));
-    List<Student> studentList = session.createQuery(criteria).getResultList(); // Get list of objects by criteria
-        for (Student student : studentList) {
-            System.out.println(student.getName());
-        }
 
-        session.getTransaction().commit();
-        session.close();
+    criteria.select(r).where(builder.like(r.get("name"),"P%"));
+
+    List<Student> studentList = session.createQuery(criteria).getResultList(); 
+
+    for (Student student : studentList) {
+        System.out.println(student.getName());
     }
+
+    session.getTransaction().commit();
+    session.close();
+}
 ```
+
+In this example we try to retrieve all students with names, beginning with "P".
 
 [/slide]
 

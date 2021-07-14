@@ -14,7 +14,7 @@ It maps relationships between tables as associations between classes.
 
 ORM creates a virtual database that is easily accessible by the given programming language.
 
-
+It is a method of converting data between two otherwise incompatible systems, by using object-oriented programming languages (such as Java).
 
 [/slide]
 
