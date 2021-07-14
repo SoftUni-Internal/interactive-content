@@ -19,9 +19,9 @@ public class Main {
 [task-description]
 ## Description
 
-A train has an **n** number of wagons /integer, received as input/. 
+A train has **n** number of wagons /integer, received as input/. 
 
-On the next **n lines**, you will receive the amount of people that are going to get on each wagon. 
+On the next **n lines** you will receive the amount of people that are going to get on each wagon. 
 
 **Print out the number of passengers in each wagon** followed by the **total number of passengers on the train**.
 
@@ -261,7 +261,7 @@ Create a program that creates **2 arrays**.
 
 You will be given an **integer n**.
 
-On the **next n lines**, you will get **2 integers**.
+On the **following n lines** you will get **2 integers**.
 
 Form 2 new arrays in a **zig-zag** pattern as **shown below**.
 
@@ -490,9 +490,9 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program to **find all the top integers** in an array.
+Create a program to find all **top integers** in an array.
 
-A top integer is an integer that is **greater** than all the elements **to its right**.
+A **top integer** is an integer that is **greater** than all the elements **to its right**.
 
 ### Example
 | **Input** | **Output** |
@@ -587,11 +587,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that determines if **an element exists in an array** for which the **sum of all elements to its left** is **equal** to **the sum of all elements to its right**.
+Create a program that determines if **an element exists in an array** in which the **sum of all elements to its left** is **equal** to **the sum of all elements to its right**.
 
 If there are **no elements to the left or right**, their **sum is considered to be 0**.
 
-**Print** the **index** of the element that satisfies the condition or "no" if there is no such element.
+**Print** the **index** of the element that satisfies the condition or **print "no"** if there is no such element.
 
 ### Example
 | **Input** | **Output** |
@@ -741,7 +741,7 @@ public class Main {
 ## Description
 Create a program that **finds the longest sequence of equal elements in an array** of integers.
 
-If **several equal sequences are present in the array**, print out the **leftmost** one.
+If **several equal sequences are present in the array** print out the **leftmost** one.
 
 ### Example
 | **Input** | **Output** |
