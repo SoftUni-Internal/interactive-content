@@ -1,4 +1,4 @@
-# Account System
+# Lab: Account System
 
 [slide hideTitle]
 
@@ -11,9 +11,21 @@ The goal is to implement the services and the repositories
 
 ## Creating a new Spring project
 
-On the [start.spring.io](https://start.spring.io/) website, we can create a new Spring project.
-From here, we can pick either a Maven or a Gradle project, the language that we will write our code in, the Spring Boot version, the information about the project and the dependencies.
+- Go to the [start.spring.io](https://start.spring.io/) website to create a new Spring project
 
+From here, we can pick either a Maven or a Gradle project, as well as the language we will use.
+
+We can also select the Spring Boot version.
+
+[image assetsSrc="Spring-data-introduction-Lab-1.png" /]
+
+- Then, configure the metadata: 
+
+[image assetsSrc="Spring-data-introduction-Lab-2.png" /]
+
+- Add the Spring Data JPA and MySQL dependencies: 
+
+[image assetsSrc="Spring-data-introduction-Lab-3.png" /]
 
 - In the resources folder of the project, create a new **applications.properties** file, which will hold the  configurations for the project:
 
@@ -63,15 +75,14 @@ Start by setting up the database models. Each one of them will be as follows:
 | username | A **unique value** for each user |
 | age | Accepts **Integer** values |
 | accounts | Each user can have many accounts, which will be identified by their **id** |
-|  |  |
 
 ## The Account Entity
+
 | **Columns**  | **Constraints** |
 |---|---|
 | id | Accepts **Long** values ; the **Primary Key** |
 | balance | Accepts **BigDecimal** values |
 | user | The owner of the account, which will be identified by their **id** |
-|  |  |
 
 Set up the appropriate tables, columns, column properties and table relations.
 
