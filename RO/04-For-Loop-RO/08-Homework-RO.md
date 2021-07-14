@@ -165,8 +165,8 @@ Min number: -2
 [/slide]
 
 [slide hideTitle]
-# Problemă: Power of Number
-[code-task title="Power of Number" taskId="pb-java-for-loop-power-of-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+# Problemă: Base and Exponent
+[code-task title="Base and Exponent" taskId="pb-java-for-loop-Base-and-Exponent" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
@@ -506,6 +506,13 @@ Scrieți un program care:
 [/tests]
 [code-io/]
 [/code-task]
+
+
+[hints]
+ [hint]
+ The number that is being divided is called the **dividend**. The number that it is being divided by is called the **divisor**. The result of the division is the **quotient**.
+ [/hint]
+ [/hints]
 
 [/slide]
 
