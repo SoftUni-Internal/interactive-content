@@ -30,7 +30,7 @@ Here is the list:
 
 2. [MongoDB Node.JS Driver](https://www.npmjs.com/package/mongodb)
 
-3. [Mongoose](https://www.npmjs.com/package/mongoose) - Usefull [Mongoose Documentation](https://mongoosejs.com/docs/guide.html)
+3. [Mongoose](https://www.npmjs.com/package/mongoose) - Useful [Mongoose Documentation](https://mongoosejs.com/docs/guide.html)
 
 4. [Robo 3T](https://robomongo.org/download)
 
