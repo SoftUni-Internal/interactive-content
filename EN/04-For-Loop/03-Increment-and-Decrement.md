@@ -17,7 +17,7 @@ The increment and decrement operators have two possible forms:
 ### Postfix Increment Operator
 The current value of the expression `x++` is the value of `x` before the `++` operation, as the following example shows:
 ```java live
-int i = 3;
+int x = 3;
 System.out.println(x);   // output: 3
 System.out.println(x++); // output: 3
 System.out.println(x);   // output: 4
@@ -26,7 +26,7 @@ System.out.println(x);   // output: 4
 ### Prefix Increment Operator
 The prefix incrementation`++x` is applied before the println statement comes into effect:
 ```java live
-double a = 1.5;
+double x = 1.5;
 System.out.println(x);   // output: 1.5
 System.out.println(++x); // output: 2.5
 System.out.println(x);   // output: 2.5
@@ -37,7 +37,7 @@ System.out.println(x);   // output: 2.5
 ### Postfix Decrement Operator
 The result of `x--` is the value of `x` before the operation:
 ```java live
-int i = 3;
+int x = 3;
 System.out.println(x);   // output: 3
 System.out.println(x--); // output: 3
 System.out.println(x);   // output: 2
@@ -46,7 +46,7 @@ System.out.println(x);   // output: 2
 ### Prefix Decrement Operator
 The result of `--x` is the value of `x` after the operation:
 ```java live
-double a = 1.5;
+double x = 1.5;
 System.out.println(x);   // output: 1.5
 System.out.println(--x); // output: 0.5
 System.out.println(x);   // output: 0.5
