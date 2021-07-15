@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# The Spring Framework
+# Spring Framework
 
 To gain an understanding of ORM, we went through several steps:
 
@@ -14,15 +14,13 @@ To gain an understanding of ORM, we went through several steps:
 
 - Further, we learned that Java Persistence Library (JPA) provides abstraction and makes it easier to switch from one ORM (JPA provider) to another
 
-**Spring Data** is a tool that addresses common difficulties in working with data, making our job easier by providing us with template classes
-
 [image assetsSrc="Spring-data-introduction.png" /]
 
 **Spring** is an open-source modular ecosystem developed by **Pivotal Software**.
 
 Each module in this ecosytem is a separate [project](https://spring.io/projects).
 
-Every different module provides us with a range of services.
+Every different **project** provides us with a range of services.
 
 When used together, they help us build web applications.
 
@@ -32,11 +30,37 @@ When used together, they help us build web applications.
 
 [slide hideTitle]
 
+# The Spring Platform
+
+The Spring Framework is composed of many modules, including:
+
+- The **Core Container** - this is the base Spring module and provides the Core, Beans, Context and Expression modules
+  * the **Core and Beans** modules provide the IoC and Dependency Injection features
+  
+- **Aspect-Oriented Programming** - allows us to implement custom aspects, complementing our existing use of object-oriented programming
+
+- **Data Access/Integration** - this layer consists of five modules:
+  * **JDBC** - provides abstraction over JDBC, eliminiating the need of coding in it
+  * **ORM** - provides an integration layer for numerous ORM APIs, such as JPA and Hibernate
+  * **OXM** - gives us an abstraction layer for using Object/XML mapping implementations
+  * **JMS** - provides features, related to the Java Messaging Service 
+  * **Transaction** - allows for programmatic/declarative transaction management
+
+The Spring Platform consists of multiple projects, such as:
+
+- **Spring Data** - a tool that addresses common difficulties in working with data, making our job easier by providing us with template classes
+
+- **Spring Boot** - makes the process of creating stand-alone Spring applications easier
+
+[/slide]
+
+[slide hideTitle]
+
 # Spring Boot
 
 Spring Boot is a part of the **Spring ecosystem**.
  
-It is a standalone tool used to build the backbone of a **Spring application**.
+It is a stand-alone tool used to build the backbone of a **Spring application**.
 
 Its primary purpose is to help the developer get started with a web application by reducing the development time and simplifying configuration.
 
@@ -154,7 +178,8 @@ public EntityManagerFactory entityManagerFactory() {
     vendorAdapter.setDatabase(Database.MYSQL);
     vendorAdapter.setGenerateDdl(true);
     vendorAdapter.setShowSql(true);
-    LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
+    LocalContainerEntityManagerFactoryBean factory = 
+        new LocalContainerEntityManagerFactoryBean();
     factory.setJpaVendorAdapter(vendorAdapter);
 
     // The models' package

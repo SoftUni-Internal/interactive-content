@@ -70,7 +70,7 @@ Join available in JPQL:
 Let's have an example:
 
 ```java
-SELECT s.name                           // We choose the data want from the table through SELECT
+SELECT s.name                           // We choose the data we want from the table through SELECT
 FROM Shampoo AS s                       // Then we declare the entities, and their aliases
 INNER JOIN s.batch AS b                 // Declaration of type JOIN and the table on which to execute the operation
 WHERE b.batchDate <:batchDate           // Then, we can filter data by using the properties of the joined entity

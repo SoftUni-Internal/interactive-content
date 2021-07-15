@@ -112,7 +112,7 @@ This does not apply when using an [SQL Server Compact database](https://en.wikip
 
 An advantage of taking the code-first approach is the cleaner, more concise code.
 
-It is recommended for simpler standalone applications without versioning.
+It is recommended for simpler stand-alone applications without versioning.
 
 
 [/slide]

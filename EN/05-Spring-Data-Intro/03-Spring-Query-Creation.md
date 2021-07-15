@@ -35,9 +35,9 @@ To learn how **query methods** work and understand their limitations, let us tak
 
 ```java
 @Repository                                                  
-public interface StudentRepository extends JpaRepository<Student, Long> {                                            
+public interface StudentRepository extends JpaRepository<Student, Long> { 
 
-    List<Student> findByTeacher(Teacher teacher);            
+    List<Student> findByTeacher(Teacher teacher); 
 }
 ```
 

@@ -3,6 +3,7 @@
 [slide hideTitle]
 
 # Project Setup
+
 Your task is to create an account system that has users with accounts and manages money transfer or withdrawal.
 
 Build the system using the code first approach and Spring Data.
@@ -65,7 +66,9 @@ Create 3 directories to help organize the project:
 
 # Database Models
 
-Start by setting up the database models. Each one of them will be as follows:
+Start by setting up the database models.
+
+Each one of them will be as follows:
 
 ## The User Entity
 
