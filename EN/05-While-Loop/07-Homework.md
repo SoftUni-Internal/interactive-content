@@ -612,18 +612,16 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Andreea goes to her hometown after being a long time abroad. 
+After spending a couple of years abroad Andreea finally goes back home.
 
-When she comes home, she sees her grandmother\'s library and remembers her favorite book.
+Help Andreea find the **book** she\'s searching for by writing a program in which she enters the **title** of the book (**string**) and the **number of books** in the library (**integer**).  
 
-Help Andreea by writing a program, in which Andreea enters the name of the **book** she\'s searching for (**string**), and the **capacity** of the library (**integer**).  
-
-**Until** Andreea finds her favorite book **or** there are more books to be checked, the program has to read a new name of the book, each on a separate line.
+**Until** Andreea finds her favorite book **or** prior to going through the whole library, the program has to read a new title of a book on each consecutive line.
 
 ## Input
-- The name of the book Andreea is searching for - string
-- The capacity of the library - integer
-- A new name of a book - string
+- The name of the book Andreea is searching for - **string**
+- The number of books in the library - **integer**
+- A new name of a book - **string**
 
 ## Output
 - If Andreea **does not** find the book, print **two** lines:
@@ -646,7 +644,7 @@ Help Andreea by writing a program, in which Andreea enters the name of the **boo
 Andreea is searching for a book with the name "Troy", and the library\'s capacity is 8 books.
 [/hint]
 [hint]
-The first book is called "Stronger", the second one is called "Life Style", the third one is the desired one- "Troy", so the program ends
+The first book is called "Stronger", the second one is called "Life Style" and the third one - “Troy”. This is the one Andreea has been looking for all along. Therefore, the program ends.
 [/hint]
 [/hints]
 
@@ -663,10 +661,10 @@ The first book is called "Stronger", the second one is called "Life Style", the 
 [hints]
 [hint]
 Andreea is searching for a book with the name "The Spot". The library contains 4 books.
-The first book is "Hunger Games", the second - "Harry Potter", the third - "Torronto", the fourth - "Spotify".
+The first book is "Hunger Games", the second - "Harry Potter", the third - "Torronto" and the fourth - "Spotify".
 [/hint]
 [hint]
-Since there are no more books in the library, the program should end.
+Since there are no more books in the library the program ends.
 [/hint]
 [/hints]
 
@@ -885,23 +883,25 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description 
-Your friend should solve problems to prapare for his exams until he receives a message **Enough** from his trainer.
+Martin, your classmate, should prepare for his end of year exam.
 
-Every time he solves a problem, he get a grade.
+In order to do that he should solve math problems until he receives the message **Enough** from his tutor. 
 
-**The program should end** when Martin receives a message **Enough**, or when he reaches the limit of poor grades.
+Every time he solves a problem he receives a grade.
+
+**The program should end** when he receives the message **Enough** or when he reaches the limit of poor grades.
 
 A poor grade is a grade less than or equal to **4.00**.
 
 ## Input
-- **limit of poor grades** – integer in range \[1…5\]
--  Until the program ends, we will receive the following 2 lines: 
+- **Limit of poor grades** – integer in range \[1…5\]
+Until the program ends, we will receive the following 2 lines: 
   - **Name of a problem** - a string value
   - **Grade** - an integer in range \[2…6\]
 
 ## Output
 - If Martin receives the **Enough** command, print the following **3** lines:
-  - "**Average score:** \{**average grade**\}"
+  - "**Average grade:** \{**average grade**\}"
   - "**Number of problems:** \{**number of ALL problems**\}"
   - "**Last problem:** \{**last problem\'s name**\}"
 - If he reaches the **specified limit of poor grades**:
@@ -1499,15 +1499,15 @@ public class Main {
 ## Description
 John works in a restaurant. He is responsible for loading the dishwasher at the end of the day. 
 
-Your task is to create a program that calculates **whether** the purchased quantity of bottles of dishwasher detergent is **enough** to wash a certain amount of vessels. 
+Your task is to create a program that calculates **whether** the purchased quantity of bottles of dishwasher detergent is **enough** to wash a certain amount of dishes. 
 
-It is known that each bottle contains **750 ml.** detergent. 
+It is known that each bottle contains **750 ml.** of detergent. 
 
-For a **plate** are needed **5 ml**. For a **pot** are needed **15 ml*. 
+For a **plate** only **5ml.** are required, whereas for a **bowl** – **15 ml**.
 
-On every **third** filling with vessels, the dishwasher is filled only with pots, whereas, the other times - with plates. 
+Every **third** time we load the dishwasher with bowls only. The rest of the time we load it with **plates**.
 
-Until we get the command **END**, we will be receiving numbers of vessels that need to be washed.
+Until **END** is entered in the console, the program will keep on receiving the number of dishes that need to be washed.
 
 # Input
 Read from the console: 

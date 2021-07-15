@@ -164,7 +164,7 @@ Min number: -2
 [/slide]
 
 [slide hideTitle]
-# Problem: Power of Number
+# Problem: Base and Exponent
 [code-task title="Power of Number" taskId="pb-java-for-loop-power-of-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
@@ -181,9 +181,13 @@ public class Program {
 ## Description
 Create a program, that raises a given number to the power of another number:
 
-* Reads **p - the exponent** and **n - the base number**
-* Prints the result of n to the power of p
-* Do not use the `Math.pow()` method
+Reads:
+* **p - the exponent**
+* **n - the base number**
+Prints: 
+* the result of **n** to the power of **p**
+
+**Do not use the** `Math.pow()` **method**
 
 ## Example
 | **Input** | **Output** 
@@ -234,8 +238,11 @@ public class Program {
 ## Description
 Create a program, that:
 
-* Reads number **n** and **n pairs** of numbers (Sum up each pair and compare all sums with each other)
-* Prints "**Yes, value=**\{**sum**\}", if the **sum of all** pairs is **equal**
+Reads:
+* number **n**
+* **n pairs** of numbers (sum up each pair and compare all sums)
+Prints:
+* "**Yes, value=**\{**sum**\}", if the **sum of all** pairs is **equal**
 * **Otherwise**, prints "**No, maxdiff=**\{**diff**\}"
 * diff is the **max difference** in the sum between two pairs
 
@@ -459,9 +466,11 @@ public class Program {
 ## Description
 Create a program, which:
 
-* Reads **n** and afterward **n numbers**
-* Finds a **percentage** of how many of them can be **divided without a remainder** using **2**, **3** and **4** as divisors
-* Prints out the percentages for each divisor, **formatted** to the second digit
+* Reads a number, n – lines of input
+* Reads all lines of input, i.e. dividends
+* Calculates the percentage of quotients without remainder per divisor
+* Prints the answer formatted to the second digit
+
 
 ## Example
 | **Input** | **Output** 
@@ -501,6 +510,12 @@ Create a program, which:
 [/tests]
 [code-io/]
 [/code-task]
+
+[hints]
+[hint]
+The number that is being divided is called the **dividend**. The number that it is being divided by is called the **divisor**. The result of the division is the **quotient**.
+[/hint]
+[/hints]
 
 [/slide]
 
@@ -619,11 +634,13 @@ public class Program {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, that calculates if there are enough passengers to fill all seats on a rollercoaster train.
+Create a program that calculates seat occupancy. Based on this information it determines whether or not a rollercoaster ride is ready to take off.
 
-* The input will consist of **available places**, **minimum age for the passengers**, **number of people on the queue**
-
-**The age of each passenger** will be specified as a separate number. 
+The input consists of:
+* Available seats
+* Minimum age for the ride
+* People queueing for tickets
+* The age of each passenger – specified as a separate integer
 
 * If all places are taken print out: **"The rollercoaster departures"**
 
@@ -989,7 +1006,6 @@ The output should consist of 5 lines:
 - "**Internet:** **$**\{**total cost for the entire period**\}" 
 - "**Other:** **$**\{**total cost for the entire period**\}" 
 - "**Average:** **$**\{**total cost for the entire period**\}"
-
 All bills should be formatted to the 2nd digit after the decimal point.
 
 ## Example
@@ -1244,7 +1260,7 @@ A hospital has 7 doctors available.
 
 Each doctor can only see a single patient per day, but sometimes there is a shortage of doctors, so waiting patients are sent to other hospitals. 
 
-Every third day the hospital makes calculations and if the number of unserviced patients is greater than the number of the accepted ones, one more doctor is appointed to the hospital. 
+In the beginning of every third day the hospital makes calculations and if the number of unserviced patients is greater than the number of the accepted ones, one more doctor is appointed to the hospital. 
 
 The appointment of a new doctor occurs before the intake of patients for that day. 
 
@@ -1461,13 +1477,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program that reads an integer representing the amount of numbers that will be contained in the following input and calculates which the minimum and maximum values of the numbers found at odd and even positions (counting from 1) is. 
+Create a program that reads a number representing the total amount of integers to be entered. Subsequently, calculates the **min** and **max** values of their sum at odd and even positions.
 
-If no minimal/maximal element can be identified print out "No".
+If **min** and **max** values cannot be determined, simply print out "No" to the console.
 
 ## Input
 - N numbers to be read - an integer \[0...100\]
-- On each next line - a floating-point number \[-100...100\]
+- On each subsequent line - a floating-point number \[-100...100\]
 
 ## Output
 The output should come in the following form:
@@ -1698,15 +1714,15 @@ The program should print out the percentage of students holding a grade between:
 - 3.00 and 3.99
 - 4.00 and 4.99
 - 5.00 or greater
-- The average grade for all participants
+- The average grade for all students
 
 ## Input
-- The first input line contains the number of students - an integer in range \[1 ... 1000\]
-- On each next line - each student's grade - a real number in range \[2.00 ... 6.00\]
+* The first input line contains the number of students - an integer in range \[1 ... 1000\]
+* On each next line – each student’s grade, a real number in the range \[2.00…6.00\]
 
 ## Output
 Print 5 lines of output with the following information:
-- "Top students: \{percentage of students with grades 5.00 or grater\}%"
+- "Top students: \{percentage of students with grades 5.00 or greater\}%"
 - "Between 4.00 and 4.99: \{percentage of students with grades between 4.00 and 4.99 inclusive\}%"
 - "Between 3.00 and 3.99: \{percentage of students with grades between 3.00 and 3.99 inclusive\}%"
 - "Fail: \{percentage of students with grades less than 3.00\}%"

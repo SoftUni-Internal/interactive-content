@@ -9,7 +9,7 @@
 
 **ASCII** stands for **American Standard Code for Information Interchange**. 
  
-Computers can only process numbers, so an **ASCII** code is the numerical representation of a character such as "a" or "@". 
+Computers can only process numbers; therefore, the ASCII code is used as a numerical equivalent of any character, i.e. "a" or "@". 
 
 Here is a part of the ASCII table:
 
@@ -27,17 +27,17 @@ Here is a part of the ASCII table:
 |   73    |   49    |    I     |   105   |   69    |    i     |
 |   74    |   4A    |    J     |   106   |   6A    |    j     |
 
-You can see the entire [ASCII Table](http://www.asciitable.com)
+Here you can see the entire [ASCII Table](http://www.asciitable.com)
 
-The columns that you would most probably use for this course are the **decimal** and **character** ones.
+The columns that are most commonly used in this course are **decimal** and **character**.
 
-For example, the decimal value of the character **'a'** is **97** and the one corresponding to **'@'** is **64**.
+For example, the decimal value of the character **'a'** is **97** and the corresponding decimal value to **'@'** is **64**.
 
 ## Iterating over Characters
 
-It is good to know that **for-loops** do not just work with numbers. 
+It is important to note that **for-loops** do not just work with numbers. 
 
-We can also use **for-loops** to iterate over **characters**.
+**for-loops** can be used to iterate over **characters**.
 
 Here is an example of how a loop can iterate through a range of **letters** in the English alphabet:
 ```java live

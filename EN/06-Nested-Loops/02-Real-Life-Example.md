@@ -12,13 +12,13 @@ Let us take a look at the code logic representing a clock starting from **11:00*
 
 The minutes will gradually increase by **1** until they reach **59**. 
 
-Once they get to 60, the hours will be incremented by **1** and the minutes will be reset back to **00**. 
+Once they get to **60** the hours will be incremented by **1** and the minutes will reset back to **00**. 
 
-We can represent this process using **for-loops**. More importantly, let us see why we need more than one for-loop to simulate how a clock works.
+We can represent this process using **for-loops**. More importantly, let us see why we need more than one **for-loop** to simulate how a clock works.
 
-As you can see this pseudocode example contains two for-loops: an **inner** and an **outer** one.
+As you can see this pseudocode example contains two for-loops: an **inner** contained in the body of an **outer** loop.
 
-The outer calculates hours, while the inner one is responsible for the minutes.
+The **outer for-loop** calculates hours while the **inner for-loop** is responsible for the minutes.
 
 ## Pseudocode
 

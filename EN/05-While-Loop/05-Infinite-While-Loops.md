@@ -35,5 +35,5 @@ while (command != "End") {
 }
 ```
 
-In this example, the value of the `command` variable will be changed at each iteration so that the loop will **not** be an **infinite** one.
+In this example, the value of the `command` variable **will change at each iteration** of the loop, therefore making it finite.
 [/slide]
