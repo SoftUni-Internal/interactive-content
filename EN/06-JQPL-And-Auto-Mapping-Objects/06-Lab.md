@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Lab
+# Description
 
 Download the resources for these tasks [here]().
 
@@ -224,7 +224,7 @@ After that, **extract the managers** with **their employees** in the following f
 
 ## Example 
 
-### Sample Output
+### Sample Output:
 
 ```
 Steve Jobbsen | Employees: 2 
