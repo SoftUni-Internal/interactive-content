@@ -19,18 +19,34 @@ for (int i = 1; i <= 10; i++) {
 
 - Buclele for cu pas special
 
-``` java
+``` java live
 for (int i = 10; i >= 1; i--) {
   System.out.println(i);
 }
 ```
 
-- Prefixul și sufixul
+- iterând peste cuvinte
 
 ```java live
 for (char ch = 'a'; ch <= 'd'; ch++) {
   System.out.print(ch + " ");
 }
+```
+
+- Prefixes 
+
+``` java
+int i = 1;
+      System.out.println(++i);
+      System.out.println(i);
+```
+
+- Postfixes
+
+``` java
+int i = 1;
+      System.out.println(i++);
+      System.out.println(i);
 ```
 
 
