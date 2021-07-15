@@ -1,4 +1,4 @@
-# Spring Data
+# Spring Ecosystem
 
 [slide hideTitle]
 
@@ -20,6 +20,8 @@ To gain an understanding of ORM, we went through several steps:
 
 **Spring** is an open-source modular ecosystem developed by **Pivotal Software**.
 
+Each module in this ecosytem is a separate [project](https://spring.io/projects).
+
 Every different module provides us with a range of services.
 
 When used together, they help us build web applications.
@@ -30,11 +32,31 @@ When used together, they help us build web applications.
 
 [slide hideTitle]
 
+# Spring Boot
+
+Spring Boot is a part of the **Spring ecosystem**.
+ 
+It is a standalone tool used to build the backbone of a **Spring application**.
+
+Its primary purpose is to help the developer get started with a web application by reducing the development time and simplifying configuration.
+
+**Spring Boot** is based on the **convention over configuration** design pattern.
+
+This pattern aims to reduce the number of decisions we should make during the development process.
+
+When following the given framework's conventions, you should not describe every decision in your code.
+
+[/slide]
+
+[slide hideTitle]
+
 # Spring Data
 
-Spring Data is the module of the **Spring Ecosystem** responsible for operating with databases. 
+Spring Data is the project of the **Spring ecosystem** responsible for operating with databases. 
 
 It is combined with an ORM like **Hibernate**, giving us full access to our database and providing us with another level of abstraction over our JPA provider.
+
+For instance, if you have a **Student** object in the application, it corresponds to the **students** table in the database.
 
 Working with **Spring Data** provides multiple benefits, such as:
 
@@ -47,26 +69,6 @@ Working with **Spring Data** provides multiple benefits, such as:
 - Better **exception handling** by translating data access-related exceptions
 
 [image assetsSrc="Spring-data-introduction(2).png" /]
-
-[/slide]
-
-[slide hideTitle]
-
-# Spring Boot
-
-Spring Boot is another part of the **Spring ecosystem**.
- 
-It is a standalone tool used to build the backbone of a **Spring application**.
-
-Its primary purpose is to help the developer get started with a web application by reducing the development time and simplifying configuration.
-
-**Spring Boot** is based on the **convention over configuration** design pattern.
-
-This pattern aims to reduce the number of decisions we should make during the development process.
-
-When following the given framework's conventions, you should not describe every decision in your code.
-
-For instance, if you have a **Student** object in the application, it corresponds to the **students** table in the database.
 
 [/slide]
 
@@ -92,9 +94,9 @@ To work with **Spring Data in our projects**, we will need to **add two dependen
 </dependencies>
 ```
 
-First, we add Spring Boot Starter Data JPA.
+The `spring-boot-starter-data-jpa` dependency adds the **Spring Data** project to the application.
 
-We must also include the MySQL connector.
+`mysql-java-connector` gives us the ability to connect to a MySQL-based database.
 
 [/slide]
 

@@ -98,7 +98,7 @@ while((line = booksReader.readLine()) != null) {
 
 [slide hideTitle]
 
-## Wrire Queries
+## Write Queries
 
 Write queries for the following tasks.
 

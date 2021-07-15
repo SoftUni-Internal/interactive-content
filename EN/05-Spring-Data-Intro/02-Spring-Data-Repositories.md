@@ -8,7 +8,7 @@ The **Spring Data Repository** is a tool that provides us with an abstraction of
 
 It aims to significantly reduce the amount of boilerplate code required to implement data access layers.
 
-One of the main benefits of repositories is their capability of generating JPQL queries automatically.
+One of the main benefits of repositories is their capability of generating queries automatically.
 
 Every repository extends the **Repository** interface. 
 

@@ -42,7 +42,6 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 ```
 
 1. We must remember to include the `@Repository` **annotation** - it indicates that this is a repository in the **Spring context** 
-	* this way, the **application** can automatically detect it
 
 2. We declare an interface that extends another Repository, containing methods for the functionality we desire
 
