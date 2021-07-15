@@ -19,7 +19,7 @@ for (int i = 1; i <= 10; i++) {
 
 - For-loops with a special step
 
-``` java
+``` java live
 for (int i = 10; i >= 1; i--) {
   System.out.println(i);
 }
@@ -33,7 +33,21 @@ for (char ch = 'a'; ch <= 'd'; ch++) {
 }
 ```
 
-- Prefixes and Postfixes
+- Prefixes 
+
+``` java live
+int i = 1;
+      System.out.println(++i);
+      System.out.println(i);
+```
+
+- Postfixes
+
+``` java live
+int i = 1;
+      System.out.println(i++);
+      System.out.println(i);
+```
 
 
 ## In the next lesson you will learn:
@@ -44,7 +58,7 @@ for (char ch = 'a'; ch <= 'd'; ch++) {
 
 - The **Break** operator 
 
-- Infinite Loops and how to use them safely
+- **Infinite Loops** and how to use them safely
 
 
 [/slide]

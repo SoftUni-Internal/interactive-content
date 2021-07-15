@@ -5,9 +5,9 @@
 
 Both the `while-loop` and the `for-loop` **repeat** a block of **code**.
 
-Choosing which one to use depends on the situation and our end goal. 
+Choosing which one to use depends on the situation and on our end goal. 
 
-When we know **exactly how many times** we want to loop through a block of code, we use а `for-loop`. 
+When we know **exactly how many times** we want to loop through a block of code we use а `for-loop`. 
 ```java live
 for (int i = 0; i <= 5; i++) {
     System.out.println(i);
@@ -15,18 +15,18 @@ for (int i = 0; i <= 5; i++) {
 ```
 
 A **for-loop** is defined in a more detailed way compared to a **while-loop**. 
-Let us review the for-loop structuire:
+Let us review the for-loop structure:
 
-- Statement 1 sets a variable before the loop starts (int `i` = 0)
+- **Statement 1** sets an initial value for the variable: int `i` = 0.
 
-- Statement 2 defines the condition for the loop to run up to (`i` must be less than 5). If the condition is **true**, the loop will execute its body. If it is **false** - the loop will end.
+- **Statement 2** sets a final value for the variable: `i` < 5. If the condition is **true** the loop will execute its body. If it is **false** - the loop will end.
 
-- Statement 3 increases a value (`i`++) each time the code block in the loop has been executed
+- **Statement 3** sets the size of the increments: `i`++. This indicates hom much the variable `i` increases per iteration.
 
 
-There could be many **complex** problems where the number of iterations depends on a certain **condition** so that it can not be predicted. 
+There are many **complex** problems where the number of iterations depends on a certain **condition** that cannot be predicted.
 
-In other words, if the number of iteration is not fixed, it is recommended to use a `while-loop`.
+In other words, if the number of iterations is not fixed a `while-loop` should be used.
 
 ```java
 Scanner scanner = new Scanner(System.in);
@@ -70,7 +70,7 @@ public class Program {
 ## Description
 Create a program that:
 
-* Reads numbers from the console, until an **odd number** is entered
+* Reads numbers from the console until an **odd number** is entered
 * Prints out the **odd** number
 
 ## Example
@@ -135,10 +135,10 @@ public class Program {
 Create a program that:
 
 * Reads a number from the console
-* Reads the following commands and executes the specified actions:
-* **Add** - Аdds **1** to the number
-* **Subtract** - Subtracts **1** from the number
-* **END** -  Prints out the number and ends the program
+Reads the following commands and executes the specified actions:
+* **Add** - adds **1** to the number
+* **Subtract** - subtracts **1** from the number
+* **END** -  prints out the number and ends the program
 
 ## Example
 

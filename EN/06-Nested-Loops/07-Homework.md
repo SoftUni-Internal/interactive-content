@@ -19,18 +19,18 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, that:
+Create a program, that prints information about a building:
 
-* Prints information about a building:
+* Odd-numbered floors contain **apartments**, indicated by a capital `A`
+* Even-numbered floors contain **offices**, indicated by a capital `O`
+* The last floor, regardless of its number, holds **large apartments** marked by a capital `L`
 
-*  Odd-numbered floors can contain only **apartments**, indicated by a capital `A`
-*  Even-numbered floors can contain only **offices**, indicated by a capital `O`
-*  The last floor, no matter its number, can only hold **large apartments** marked by a capital `L`
-*  Use the following naming pattern for the spaces on each floor:
-* Apartments: `"A{buildingNum}{apartmentNum}"`
+Use the following naming pattern for the spaces on each floor:
+* Apartments: `"A{floorNum}{apartmentNum}"`
 * Offices: `"O{floorNum}{officeNum}"`
-* Large apartments: `"L{buildingNum}{apartmentNum}"`
-* The floor numbering starts from 0
+* Large apartments: `"L{floorNum}{apartmentNum}"`
+* The floor numbering starts at `1`
+* Office and apartment numbering starts at `0`
 
 ## Example
 | **Input** | **Output** |
@@ -292,7 +292,9 @@ Create a program, that:
 
 ## Example
 
-113 = 1\*1\*3 == 3; 131 = 1\*\3\*1 == 3; 311 = 3\*1\*1 == 3
+113 = 1\*1\*3 == 3
+131 = 1\*3\*1 == 3
+311 = 3\*1\*1 == 3
 
 | **Input** | **Output** |
 | --- | --- |
@@ -356,8 +358,8 @@ Create a program, that:
 * Rceives a tourist **destination**
 * After that, the **budget** required in order to visit it
 * We will receive the **next destination** from the console each time we reach the sufficient budget for the current one.
-* Each next input line will contain amounts of money, until we have **enough** to make the trip
-* The program should end imidiately on receiving the command: **"End"**
+* Each next input line represents different amounts of money that are summed up in order for the program to work out if we meet the requirement to go on the trip.
+* The program should end imidiately upon receiving the command: **"End"**
 
 ## Example
 | **Input** | **Output** |
@@ -1015,9 +1017,8 @@ public class Main {
 Create a program, that:
 
 * Reads a number `n` from the console
-* Prints **all 4 digit numbers**, which meet the following conditions:
-* When you **split** them in two pairs and **add** the first digit to the second their result **should equal** `n`
-* When you add the first two digits to each other, the result must be **divisible** by `n` **without a remainder**
+* Prints **all 4 digit numbers** which meet the following conditions:
+* When you **split** them into two pairs and **add** the first digit to the second their result **should equal** `n`
 
 ## Example
 | **Input** | **Output** |
@@ -2125,10 +2126,10 @@ public class Main {
 ## Description
 The course "Train the trainers" is ending and the final evaluation approaches.
 
-Help the jury by creating a program to calculate the **average score** of **each topic** that the trainer has presented, and the **the average grade of participant's performance**.
+Help the jury by creating a program that calculates the **average score** per **topic** for every single keynote speaker and afterwards **the average grade of a participant's performance**.
 
 ## Input
-- The first line of input will represent the number of members in the joury - **n** - an integer in range \[1...20\]
+- The first line of input will represent the number of members in the jury - **n** - an integer in range \[1...20\]
 - The next line will hold a topic - a **String**
 - For each topic, the following lines of input will provide grades from each of the joury members - real numbers in range \[2.00 ... 6.00\]
 
@@ -2155,7 +2156,7 @@ All scores must be formatted to the **second decimal point**.
 
 [hints]
 [hint]
-2 - the number of people on the jury - therefore gain a 2 evaluations of the presentation:
+2 – the number of people on the jury. There will be 2 people assessing the presentation; therefore, you will receive two grades.
     - \(6.00 \+ 5.50\) / 2 = 5.75
     - \(5.84 \+ 5.66\) / 2 = 5.75
 \(6.00 \+ 5.50 \+ 5.84 \+ 5.66\) / 4 = 5.75
