@@ -1,8 +1,8 @@
-[slide hideTitle]
-
 # Repository Inheritance
 
-## Inheritance
+[slide hideTitle]
+
+# Definition
 
 Here you will learn what repository inheritance is and when it is applicable.
 
@@ -19,6 +19,12 @@ In repositories, we can use inheritance with the same intentions.
 When our applications get bigger, we have similar entities, extending an abstract class.
 
 The base attributes and actions towards them are more or less the same, regardless of their differences.
+
+[/slide]
+
+[slide hideTitle]
+
+# Example
 
 We can set up a base repository, which further we can inherit:
 
@@ -61,4 +67,5 @@ public class CustomShampooDaoImpl implements CustomShampooRepository {
     }
 }
 ```
+
 [/slide]

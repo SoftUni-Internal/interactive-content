@@ -1,6 +1,8 @@
+# Model Mapping
+
 [slide hideTitle]
 
-# Model Mapping
+# Model Mapper
 
 In the practice, we often need to transfer data between similar objects. 
 
@@ -74,12 +76,6 @@ public class StudentServiceImpl implements StudentService {
 
 Do you see how monotonous this job is? 
 
-[/slide]
-
-[slide hideTitle]
-
-# Model Mapper
-
 Luckily, we have a tool which can do the job for us.
 
 Model mapping is an easy way to convert one model to another.
@@ -91,13 +87,12 @@ In our case, as we are mapping entities from the database to DTOs, what will hap
 The use of conventions is to determine how property and values are mapped to each other.
 
 [image assetsSrc="Spring-Data-AutoMapping-Objects(1).png" /]
+
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Model Mapper usage
-
-### Adding Model Mapper
+# Adding Model Mapper
 
 Before we deep into how to use **Model Mapper**, let's first add it to our project.
 
@@ -121,11 +116,7 @@ EmployeeDto employeeDto = modelMapper.map(employee, EmployeeDto.class);
 //2. Desitnation object(DTO).
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Simple Mapping Entity to DTO
+## Simple Mapping Entity to DTO
 
 Model Mapper's power won't stop at mapping just the simple properties, like string, int BigDecimal, etc., with it you can map even nested properties. 
 
@@ -160,11 +151,7 @@ public class EmployeeDto {
     private String addressCity;             //When naming first the table and then the property you want, 
 }                                           //Model Mapper will get in the property object recursively and take its property value.
 ```
-[/slide]
-
-[slide hideTitle]
-
-# Explicit Mapping
+## Explicit Mapping
 
 As you have seen Model Mapper is a really powerful tool and using just conventions we can achieve mapping even of nested objects properties.
 
@@ -230,11 +217,7 @@ modelMapper.addMappings(employeeMap).map(employeeDto,employee);
 
 There is a difference in the syntax **explicit mapping** in Java 7 and Java 8. 
 
-[/slide]
-
-[slide hideTitle]
-
-# Explicit Mapping DTO to Entity - Java 8
+## Explicit Mapping DTO to Entity - Java 8
 
 ```java
 //Java 8
@@ -246,11 +229,7 @@ typeMap.addMappings(m -> m.map(src -> src.getName(), Employee::setFirtsName));
 typeMap.map(employeeDto);
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Validation 
+## Validation 
 
 Sometimes we can not be sure if Model Mapper can map all entities.
 
@@ -282,11 +261,7 @@ ModelMapper modelMapper = new ModelMapper();
 
 To fix the exception we have to check if every property is named by convention or create a custom configuration.
 
-[/slide]
-
-[slide hideTitle]
-
-# Skipping Properties
+## Skipping Properties
 
 Sometimes when we are lazy and we decide to re-use already existing DTO, we may face the problem of not needing some of the properties.
 
@@ -313,11 +288,7 @@ typeMap.map(employeeDto);
 
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Type converting
+## Type converting
 
 Sometimes the information we receive from the database can be in different type than we need it.
 
@@ -351,11 +322,7 @@ modelMapper.addMappings(employeeMap).map(employeeDto,employee);
 
 Again there is a difference in the syntax between Java 7 and Java 8
 
-[/slide]
-
-[slide hideTitle]
-
-# Converting Properties - Java 8
+## Converting Properties - Java 8
 
 ```java
 //Java 8 

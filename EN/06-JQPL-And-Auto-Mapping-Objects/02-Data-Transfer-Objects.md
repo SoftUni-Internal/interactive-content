@@ -1,6 +1,8 @@
+# Data Transfer Objects
+
 [slide hideTitle]
 
-# Data Transfer Objects
+# Concept
 
 After learning how to write queries and get our data from the database, now it's time to learn how to project this data, to receive only the information that we need.
 
@@ -42,7 +44,6 @@ Let's concatenate everything in a single sentence.
 
 # Entity Usage
 
-**Take a note**
 If our app is a really simple one and we communicate with a database and we need the full information of an entity, it's fine if we communicate without a DTO but directly with the entity, otherwise, we accomplish nothing but replication of the object entity.
 
 Here is a scheme of how the normal communication with the database in a Web Application happens.
@@ -57,7 +58,6 @@ Our DTO can combine the information and ask for it, which we will receive with a
 
 [/slide]
 
-
 [slide hideTitle]
 
 # DTO Usage
@@ -67,7 +67,7 @@ Now let's see what a DTO would look like with code .
 ```java
 // Employee.java
 @Entity
-@Table(name = "employees")                  //That's our entity from the database.
+@Table(name = "employees")                  // That is our entity from the database
 public class Employee {
 
     @Column(name = "first_name")
@@ -84,7 +84,7 @@ public class Employee {
 
 // Address.java
 @Entity
-@Table(name = "addresses")                  // Entity for the addreses from the database.
+@Table(name = "addresses")                  // Entity for the addreses from the database
 public class Address {
 
     @Basic
@@ -93,7 +93,7 @@ public class Address {
 
 // EmployeeDto.java
 public class EmployeeDto {                  // Our DTO object, which combines information for our entity
-                                            // from two tables.
+                                            // from two tables
     private String firstName;
     private BigDecimal salary;
     private String addressCity;
