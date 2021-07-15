@@ -9,17 +9,17 @@
 [task-description]
 ## Descriere
 
-Scrieți un program care citește un fișier de tip text (**input.txt** din the Resources - Folder) și imprimă pe consolă **suma** simbolurilor ASCII ale fiecăreia dintre liniile sale.
+Scrieți un program care citește fișierul **input.txt** din folderul cu resurse pe care l-ați descărcat și imprimă pe consolă **suma** simbolurilor ASCII ale fiecăreia dintre liniile sale.
 
 Utilizați **BufferedReader** în combinație cu **FileReader**.
 
 ## Instrucțiuni
 
-Există un fișier zip cu resurse pentru toate exercițiile, pe care trebuie să îl utilizați.
+Fișierul zip conține toate fișierele de care veți avea nevoie pentru următoarele sarcini. 
 
-Descărcați **folderul de resurse** [here](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources-New.zip).
+Descărcați **folderul de resurse** [aici](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Files-and-Streams-Exercise-Resources-New.zip).
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -71,7 +71,7 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește un fișier de tip text (**input.txt** din Resources - Folder) și imprimă pe consolă **suma** simbolurilor ASCII ale tuturor caracterelor din fișierul.
+Scrieți un program care citește fișierul **input.txt** din folderul cu resurse pe care l-ați descărcat și imprimă pe consolă **suma** valorilor ASCII ale tuturor caracterelor din fișier.
 
 Utilizați **BufferedReader** în combinație cu **FileReader**.
 
@@ -80,7 +80,7 @@ Utilizați **BufferedReader** în combinație cu **FileReader**.
 Puteți modifica soluția la problema anterioară.
 [/hint] 
 [hint]
-Utilizați un tip care nu se va revărsa ca **long** sau **BigInteger**
+Utilizați un tip fără overflow, precum **long** sau **BigInteger**:
 
 ```java
 long sum = 0;
@@ -98,7 +98,7 @@ BigInteger sum = new BigInteger("0");
 
 Folosiți resursele primite anterior.
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -138,16 +138,16 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește un fișier de tip text (**input.txt** din Resurces - Folder) și schimbă carcasa **tuturor** litere spre **superior**.
+Scrieți un program care citește fișierul **input.txt** din folderul cu resurse pe care l-ați descărcat și schimbă toate literele astfel încât textul să conțină doar majuscule.
 
-Scrieți ieșirea într-un alt fișier (**output.txt**).
+Scrieți ieșirea în alt fișier (**output.txt**).
 
 Utilizați **BufferedReader** și **PrintWriter**.
 
 ## Instrucțiuni
 Folosiți resursele primite anterior.
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programului, **nu codul**.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -199,23 +199,23 @@ A YOUTH OF NOBLE ROMAN FAMILY,
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește o listă de cuvinte din fișierul (**input.txt** din Resources - Folder) și calculează numărul de **vocale**, **consoane** și **semne de punctuație** .
+Scrieți un program care citește fișierul **input.txt** din folderul cu resurse pe care l-ați descărcat și determină numărul de **vocale**, **consoane** și **semne de punctuație** .
 
 Să presupunem că:
 
-- **a, e, i, o, u** sunt vocale, doar cu litere mici
-- **Toate celelalte** sunt consoane
-- Semnele de punctuație sunt **(!,.?)**
-- **Să nu** calculați whitespace.
+- **a, e, i, o, u** sunt vocale, doar litere mici
+- **toate celelalte** litere sunt consoane
+- semnele de punctuație sunt **(! , . ?)**
+- spațiile nu trebuie luate în considerare
 
-Scrieți rezultatele într-un alt fișier - **output.txt**.
+Scrieți rezultatele în alt fișier - **output.txt**.
 
 Utilizați **BufferedReader** și **PrintWriter**.
 
 ## Instrucțiuni
 Folosiți resursele primite anterior.
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
 ## Exemplu
 
@@ -259,14 +259,14 @@ Punctuation: 6
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește un fișier de tip text (**input.txt** din Resources - Folder) și **insertează**  numerele de linie în fața fiecăreia dintre liniile sale.
+Scrieți un program care citește fișierul **input.txt** din folderul cu resurse pe care l-ați descărcat și **inserează** înaintea fiecărei linii numărul său.
 
-Scrieți rezultul într-un alt fișier - **output.txt**.
+Scrieți rezultatul în alt fișier text - **output.txt**.
 
 ## Instrucțiuni
 Folosiți resursele primite anterior.
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -323,18 +323,18 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește o listă de cuvinte din fișierul **words.txt** (din Resources - Folder) și găsește de câte ori fiecare dintre cuvintele **se conține** într-un alt fișier **text.txt** (din Resources – Folder).
+Scrieți un program care citește o listă de cuvinte din fișierul **words.txt** și determină numărul de apariții ale fiecărui cuvânt în fișierul **text.txt**. Ambele fișiere se află în folderul cu resurse pe care l-ați descărcat.
 
-Potrivirea trebuie să fie **diferențiată de majuscule**.
+Concordanțele între cuvinte se fac indiferent de scrierea cu majuscule sau minuscule.
 
 Scrieți rezultatele în fișierul **results.txt**.
 
-Sortați cuvintele după frecvență în **ordine descrescătoare**.
+Ordonați cuvintele crescător în funcție de numărul lor de apariții în fișierul **text.txt**.
 
 ## Instrucțiuni
 Folosiți resursele primite anterior.
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -376,16 +376,16 @@ The - 1
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește conținutul a **două** fișiere de tip text (**inputOne.txt** , **inputTwo.txt** din Resources - Folder) și **le combină** într-un al treilea fișier.
+Scrieți un program care citește conținutul a **două** fișiere de tip text (**inputOne.txt**, **inputTwo.txt**) și **le combină** într-un fișier nou.
 
 ## Instrucțiuni
-Use the previously provided resources.
+Folosiți resursele primite anterior.
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
 ## Exemplu
-| **File 1** | **File 2** | **Output** |
-| --- | --- |
+| **File 1** | **File 2** | **Ieșire** |
+| --- | --- | --- |
 | 1 | 4 | 1 |
 | 2 | 5 | 2 |
 | 3 | 6 | 3 |
@@ -432,13 +432,13 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 ## Descriere
 Scrieți un program care **parcurge** un fișier și **calculează** dimensiunea acestuia în octeți.
 
-Use the **Exercises Resources** folder in the resources.
+Utilizați folderul **Exercises Resources** din resurse.
 
 ## Instrucțiuni
 
 Folosiți resursele primite anterior.
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
 
 ## Exemplu
@@ -472,15 +472,15 @@ Folder size: 2878
 [slide hideTitle]
 # Problemă: Copy a Picture
 
-Scrieți un program care face o copie a unui fișier **cat.jpg** folosind **FileInputStream**, **FileOutputStream**, și `byte[]` buffer. 
+Scrieți un program care face o copie a fișierul **cat.jpg** folosind **FileInputStream**, **FileOutputStream** și buffer-ul `byte[]`. 
 
 Folosiți resursele primite anterior.
 
-Denumiți noul fișier ca **cat-copy.jpg**.
+Denumiți noul fișier **cat-copy.jpg**.
 
 Pentru început, creați un proiect nou și deschideți clasa **Main**.
 
-În fișierul `Main.java`, adăugați **importurile** necesare, dacă IDE-ul vostru nu a facut-o deja:
+În fișierul `Main.java`, **importați** elementele necesare, dacă IDE-ul vostru nu a făcut-o deja:
 
 ```java
 import java.io.FileInputStream;
@@ -488,7 +488,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 ```
 
-Sau doar `import java.io.*;`.
+Alternativa este `import java.io.*;`.
 
 În interiorul metodei `main`, creați un bloc `try-catch`:
 
@@ -506,11 +506,11 @@ Apoi, în interiorul blocului `try`, creați un flux de intrare pentru imaginea 
 
 Inițializați un nou **flux de intrare** folosind `new File("Calea-absolută-către\imaginea-voastră.jpg")`.
 
-Puteți obține calea absolută către imaginea voastră apăsând click-dreapta pe ea, și selectând "**Properties**" (Proprietăți).
+Puteți obține calea absolută către imaginea voastră apăsând click-dreapta pe ea, și selectând "**Properties**".
 
-Va apărea o fereastră, iar calea va fi localizată lângă "**Location:**" (Locație). 
+Va apărea o fereastră, iar calea va fi localizată lângă "**Location:**". 
 
-Selectați calea și inserați-o în următorul mod:
+Selectați calea și inserați-o după cum urmează:
 
 ```java
 FileInputStream inputImage = new FileInputStream(new File("C:\Folder-With-Resources\...\cat.jpg"));
@@ -522,7 +522,7 @@ După aceea, creați un flux de ieșire cu șirul "**cat-copy.jpg**" drept param
 FileOutputStream outputImage = new FileOutputStream("cat-copy.jpg");
 ```
 
-Creați un `byte[]` **buffer**.
+Creați un **buffer** `byte[]`.
 
 Utilizați o buclă while pentru **a scrie datele** în fluxul de ieșire, ca mai jos.
 
@@ -545,25 +545,25 @@ try {
 }
 ```
 
-Imaginea clonată este acum **salvată** în fișierul proiectului vostru. 
+Imaginea clonată este acum **salvată** în folderul proiectului vostru. 
 
 [/slide]
 
 [slide hideTitle]
 # Problemă: Serialize Array List
 
-Scrieți un program care salvează și încarcă un **ArrayList** de doubles într-un fișier folosind **ObjectInputStream** și **ObjectOutputStream**. 
+Scrieți un program care salvează și încarcă într-un fișier un **ArrayList** cu numere de tip double, folosind **ObjectInputStream** și **ObjectOutputStream**. 
 
-Denumiți noul fișier ca **list.ser**
+Denumiți noul fișier **list.ser**.
 
-IDE-ul vostru trebuie să adauge următoarele **importuri** în proces:
+IDE-ul vostru trebuie să **importeze** următoarele elemente:
 
 ```java
 import java.io.*;
 import java.util.ArrayList;
 ```
 
-Pentru a începe, creați un ArrayList de **doubles** în corpul metodei `main()`.
+Pentru a începe, creați un ArrayList de numere de tip **double** în corpul metodei `main()`.
 
 ```java
 ArrayList<Double> numbers = new ArrayList<>();
@@ -602,17 +602,17 @@ Prin furnizarea doar a **numelui**, fără o cale, fișierul va fi salvat în di
 
 `ObjectOutputStream` va fi responsabil de scrierea obiectului în fișierul pe care `FileOutputStream` l-a creat.
 
-Apelarea metodei `writeObject(numbers)` îi transmite programului să înceapă scrierea în **list.ser**
+Apelarea metodei `writeObject(numbers)` îi transmite programului să înceapă scrierea în **list.ser**.
 
-O practică bună este utilizarea lui `.flush()` - golește fluxul de ieșire și forțează orice bytes tampon de ieșire să fie eliminați.
+O practică bună este utilizarea metodei `.flush()` - golește fluxul de ieșire și forțează eliminarea oricăror octeți tamponați de ieșire.
 
-Când deschideți fișierul **list.ser**, veți vedea următoarea **ieșire**:
+Când deschideți fișierul **list.ser**, veți vedea următoarele date de **ieșire**:
 
 ```
 ���sr�java.util.ArrayListx����a��I�sizexp���w���sr�java.lang.Double���J)k��D�valuexr�java.lang.Number��������xp@G�����sq�~�@@@�����sq�~�@'ffffffx
 ```
 
-Nu vă îngrijorați dacă nu înțelegeți exact ce se întâmplă, Java poate să îl citească fără nicio problemă.
+Nu vă îngrijorați dacă nu înțelegeți exact ce se întâmplă, Java poate să citească aceste datefără nicio problemă.
 
 Folosind acest fișier, puteți **deserializa** Arraylist cu ajutorul `ObjectInputStream`.
 
@@ -645,7 +645,7 @@ Acum puteți să vedeți datele din ArrayList, tipărite pe **consolă**:
 [slide hideTitle]
 # Problemă: Serialize Custom Object
 
-Scrieți un program care salvează și încarcă informațiile despre un obiect personalizat folosind **ObjectInputStream** și **ObjectOutputStream**.
+Scrieți un program care salvează și încarcă informațiile despre un obiect personalizat, folosind **ObjectInputStream** și **ObjectOutputStream**.
 
 Denumiți noul fișier ca **course.ser**.
 
@@ -728,7 +728,7 @@ try {
 }
 ```
 
-În interiorul lui `try`, setați numele fișierului salvat la **course.ser**.
+În interiorul blocului`try`, setați numele fișierului salvat la **course.ser**.
 
 Apoi, creați o instanță `ObjectOutputStream` pentru a scrie obiectul `courseOne` în fișier.
 
@@ -767,7 +767,7 @@ try {
 
 Declarați un nou obiect de tip `Course`, numit **courseDsl**.
 
-Creați `FileInputStream` pentru a citi **course.ser**. 
+Creați un `FileInputStream` pentru a citi **course.ser**. 
 
 Apoi, creați o instanță `ObjectInputStream`.
 
@@ -813,7 +813,7 @@ Apoi, creați o matrice cu toate căile pentru cele trei fișiere `.txt`:
 String[] sourceFiles = { "C:/fileOne.txt", "C:/fileTwo.txt", "C:/fileThree.txt"};
 ```
 
-Creați un bloc try-catch și un `byte[]` **buffer** (tampon).
+Creați un bloc try-catch și un **buffer** `byte[]`.
  
 ```java
 try {
@@ -863,7 +863,7 @@ catch (IOException e) {
 
 Folosind o **buclă for**, iterăm prin matricea `sourceFiles`.
 
-Scriem fiecare fișier în fluxul `zipOut` folosind un tampon `byte[]`.
+Scriem fiecare fișier în fluxul `zipOut` folosind un buffer `byte[]`.
 
 După cum vedeți mai sus, putem folosi clasa `ZipEntry`, folosită pentru a reprezenta o înregistrare a unui fișier ZIP.
 
