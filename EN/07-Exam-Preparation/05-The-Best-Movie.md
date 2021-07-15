@@ -20,11 +20,11 @@ public class Main {
 # Description
 Until the command "**STOP**" is entered, you will be receiving movie titles.
 
-The best movie will be the one that has the most points.
+The best movie for you will be the one that has the most points.
 
 Points are calculated by adding all of the **ASCII** character values in the movie title.
 
-There will not be a case in which there are two films with an equal number of points.
+There will not be a case, in which there are two films with an equal number of points.
 
 Keep in mind the following:
 
@@ -35,14 +35,14 @@ Keep in mind the following:
 There can be a maximum of 7 movie titles.
 
 ## Input
-You will receive multiple lines from the console until the command "**STOP**" is received or until the limit of 7 movies is reached:
+You will receive multiple lines from the console until the command "**STOP**" is received, or until the limit of 7 movies is reached:
 - Movie title - **string**
 
 ## Output
 Print out:
 
-- If you have reached the limit of 7 movies you should print out: **"The limit is reached."**
-- Afterwards, print out the **best** movie: **"The best movie for you is** \{**movie title**\} **with** \{**sum of symbols**\} **ASCII sum."**
+- If you have reached the limit of 7 movies, you should print out: **"The limit is reached."**
+- Then, print out the **best** movie: **"The best movie for you is** \{**movie title**\} **with** \{**sum of symbols**\} **ASCII sum."**
 
 ## Example
 | **Input** | **Output** |
