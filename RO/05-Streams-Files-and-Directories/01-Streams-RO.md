@@ -1,38 +1,38 @@
-# Fluxuri de Bază
+# Fluxuri
 
 [slide hideTitle]
 
-# Fluxuri de Bază
+# Noțiuni de Bază
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-4-5-What-Is-Stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Fiecare dintre noi s-a uitat la videolcipuri online pe youtube sau pe un alt website.
+Fiecare dintre noi s-a uitat la videoclipuri online pe youtube sau pe un alt website.
 
-Când începeți să vizionați un videoclip, o mică parte din fișierul este încărcată mai întâi în calculatorul dvs. și începe redarea.
+Când începeți să vizionați un videoclip, o mică parte din fișier este încărcată mai întâi în memoria dispozitivului vostru înainte să înceapă redarea.
 
-Nu este necesar să descărcați videoclipul complet înainte de a începe redarea acestuia și acest fapt se numește **streaming**.
+Nu este necesar să descărcați videoclipul complet înainte de a începe redarea acestuia. Acest lucru se numește **streaming**.
 
-Un stream sau flux poate fi definit ca o **secvență de date**.
+Un flux (stream) poate fi definit ca o **secvență de date**.
 
-În Java, fluxul este **compus din octeți**.
+În Java, un flux este **compus din bytes**.
 
-Se numește flux sau stream, deoarece este ca un curent de apă care continuă să curgă.
+Se numește flux deoarece este ca un curent de apă care continuă să curgă.
 
 [/slide]
 
 [slide hideTitle]
 
-# Types of Streams
+# Tipuri de Fluxuri
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-6-Stream-Basics-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există **două tipuri fundamentale** de fluxuri:
 
-- **InputStream** − folosit pentru a citi date dintr-o **sursă**
+- **InputStream** − folosite pentru a citi date dintr-o **sursă**
 
 [image assetsSrc="streams-files-directories-example(1).png" /]
 
-- **OutputStream** − folosit pentru scrierea datelor către o **destinație**
+- **OutputStream** − folosit pentru scrierea datelor într-o **destinație**
 
 [image assetsSrc="streams-files-directories-example(2).png" /]
 
@@ -44,7 +44,7 @@ Există **două tipuri fundamentale** de fluxuri:
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-7-Opening-A-File-Stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Să aruncăm o privire la următoarele exemple:
+Următorul exemplu ilustrează deschiderea unui flux de fișiere:
 
 ```java
 String path = "C:\\input.txt";
@@ -58,27 +58,27 @@ while (oneByte >= 0) {
 }
 ```
 
-Mai întâi, declarăm o variabilă de tip **path**, care conține calea spre resursa cu care vom lucra.
+Mai întâi, declarăm o variabilă numită **path** care conține calea spre resursa cu care vom lucra.
 
-Instanțiem un flux de intrare utilizând clasa  **FileInputStream**: 
+Instanțiem un flux de intrare utilizând clasa **FileInputStream**: 
 
 ```java
 FileInputStream fileStream = new FileInputStream(path);
 ```
 
-După cum puteți observa, fișierul-cale e adăugat drept parametru în constructorul clasei FileInputStream. 
+După cum puteți observa, calea fișierului este adăugată ca parametru în constructorul clasei **FileInputStream**. 
 
-Apoi, începem procesul de citire al fluxului, stocând primul byte al fișierului într-o variabilă de tip **int**:
+Apoi, începem procesul de citire a fluxului, stocând primul byte al fișierului într-o variabilă de tip **int**:
 
 ```java
 int oneByte = fileStream.read();
 ```
 
-După aceea, utilizăm o buclă-while, pentru a citi fișierul până ce metoda ``read()`` returnează **-1**.
+După aceea, utilizăm o **buclă while** pentru a citi fișierul, până când metoda `read()` returnează **-1**.
 
 Dacă variabila **oneByte** returnează la un moment dat -1, înseamnă că nu mai sunt caractere de citit.
 
-Printarea valorii variabilei oneByte în consolă nu e necesară, dar, în acest exemplu, ne ajută să arătăm momentul în care metoda read() returnează -1.
+Tipărirea valorii variabilei oneByte în consolă nu este necesară, dar în acest exemplu ne ajută să arătăm momentul în care metoda `read()` returnează -1.
 
 
 [/slide]
@@ -88,9 +88,9 @@ Printarea valorii variabilei oneByte în consolă nu e necesară, dar, în acest
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-8-9-Closing-A-File-Stream-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Pentru a evita scurgeri de memorie și eșecuri ale aplicației, trebuie să închidem orice fluxuri pe care le deschidem atunci când nu mai este nevoie de ele.
+Pentru a evita scurgeri de memorie și eșecuri ale aplicației, trebuie să închidem orice fluxuri pe care le-am deschis atunci când nu mai este nevoie de ele.
 
-O metodă de a închide File Streams este folosirea `try-catch-finally` pentru a gestiona posibile excepții: 
+O metodă de a închide un flux de fișiere este folosirea blocurilor `try-catch-finally` pentru a gestiona posibile excepții: 
 
 ```java
 
@@ -123,20 +123,19 @@ catch (IOException ex) {
 
 ```
 
-Excepția care poate apărea atunci când încercăm să deschidem ceva de tip FileInputStream poate fi de tipul **IOException** (Input/Output Exception).
+Excepția care poate apărea atunci când încercăm să deschidem un FileInputStream este de obicei de tip **IOException** (Input/Output Exception).
 
-Trebuie să fie gestionată de către programator și, în acest exemplu, vom printa „File not found!”.
+Ea trebuie să fie gestionată de către programator, iar în acest exemplu, vom tipări "File not found!".
 
 Închiderea fluxului de intrare se află în blocul `finally`, ceea ce înseamnă că această instrucțiune va fi executată întotdeauna, chiar dacă se generează o excepție.
 
-Modul în care funcționează acest proces e prin rularea codului din blocul `try`, iar dacă există o excepție de tip IOException, eroarea ”File not found!” va fi printată.
+Modul în care funcționează acest proces este prin rularea codului din blocul `try` și tipărirea erorii "File not found!" dacă există o excepție de tip IOException.
 
 După toți acești pași, fluxul de intrare se va închide, iar resursele utilizate de acesta vor fi eliberate.
 
+Există un **mod mai scurt** de a implementa același comportament din exemplul precedent - `try-with-resources`.
 
-Există un **mod mai scurt** de a implementa același comportament în exemplul precedent - `try-with-resources`.
-
-Putem crea un flux în interiorul parantezelor blocului try și această operațiune va face un stream disponibil în interiorul blocului try.
+Putem crea un flux în interiorul blocului **try**.
 
 **Principalul avantaj** este că fluxul va fi **închis automat** după ce am terminat lucrul în blocul try.
 
@@ -170,17 +169,17 @@ try (InputStream in = new FileInputStream(path)) {
 [task-description]
 ## Descriere
 
-Descărcați **resources folder** [here](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Streams-Files-and-Directories-Resources.zip). Fișierul zip conține resursele pentru toate cerințele din această lecție.
+Descărcați **resursele** de [aici](https://videos.softuni.org/resources/java/java-advanced/04-Java-Advanced-Streams-Files-and-Directories-Resources.zip). Fișierul zip conține resursele pentru toate cerințele din această lecție.
 
-Aveți un fișier numit "**input.txt**" (din the Resources - Folder).
+Aveți un fișier numit "**input.txt**" (din folderul cu resurse).
 
-**Citiți** și **imprimați** tot conținutul său ca o secvență de octeți (reprezentarea binară a codului ASCII pentru fiecare caracter) separate printr-o singură virgulă.
+**Citiți** și **imprimați** tot conținutul sub forma unei secvențe de bytes (reprezentarea binară a codului ASCII pentru fiecare caracter), elementele sale fiind separate printr-o singură virgulă.
 
 ## Instrucțiuni
 
 Există un fișier zip cu resurse pentru toate exercițiile, pe care trebuie să îl utilizați.
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
 
 ## Exemplu
@@ -195,15 +194,15 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 [hints]
 [hint]
-Creați o variabilă de tip șir care deține calea către fișierul. 
-Dacă, de exemplu, fișierul se află în "D:\\"
+Creați o variabilă string care deține calea către fișier. 
+De exemplu, dacă fișierul se află în "D:\\":
 
 ```java
 String path = "D:\\input.txt";
 ```
 [/hint] 
 [hint]
-Folosiți try-with-resources pentru a deschide fișierul și pentru a vă asigura că acesta va fi închis după ce sunteți gata cu el:
+Folosiți try-with-resources pentru a deschide fișierul și pentru a vă asigura că acesta va fi închis după ce nu mai aveți nevoie de el:
 
 ```java
 try (FileInputStream fileStream = 
@@ -215,7 +214,7 @@ try (FileInputStream fileStream =
 ```
 [/hint] 
 [hint]
-Utilizați metoda `read()` pentru a citi fiecare octet al fișierului până când acesta returnează -1:
+Utilizați metoda `read()` pentru a citi fiecare byte al fișierului, până când aceasta returnează -1:
 
 ```java
 try (FileInputStream fileStream = 
@@ -234,8 +233,8 @@ try (FileInputStream fileStream =
 ```
 [/hint] 
 [hint]
-Selectați rezultatul programului și copiați-l `[Ctrl + C]`.
-Insertați rezultatul pe platformă.
+Selectați rezultatul programului și copiați-l \(`[Ctrl + C]`\).
+Inserați rezultatul pe platformă.
 [/hint] 
 [/hints] 
 
@@ -270,17 +269,17 @@ Insertați rezultatul pe platformă.
 [task-description]
 ## Descriere
 
-Citiți fișierul numit "input.txt" care este prevăzut pentru acest exercițiu și scrieți conținutul său într-un fișier în timp ce ocoliți orice semne de punctuație.
+Citiți fișierul numit "input.txt" care este prevăzut pentru acest exercițiu și scrieți conținutul său într-un fișier, omițând toate semnele de punctuație.
 
-Ocoliți următoarele simboluri: `,`, `.`, `!`, `?`.
+Omiteți următoarele simboluri: `,`, `.`, `!`, `?`.
 
 ## Instrucțiuni
 
 Ar trebui să aveți deja toate resursele necesare descărcate de la cerința precedentă.
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | On January 1 , 1533 , Michael Angelo, then fifty-seven years old, writes | On January 1  1533  Michael Angelo then fifty-seven years old writes |
@@ -309,7 +308,7 @@ OutputStream outputStream =
 ```
 [/hint] 
 [hint]
-Creați o **listă**, care conține toate caracterele pe care trebuie să le ocoliți și **verificați** dacă caracterul curent este **prezent** in lista:
+Creați o **listă** care conține toate caracterele pe care trebuie să le omiteți și **verificați** dacă caracterul curent este **prezent** în listă:
 
 ```java
 List<Character> symbols = new ArrayList<>();
