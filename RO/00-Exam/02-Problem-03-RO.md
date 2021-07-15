@@ -19,9 +19,9 @@ Scrieți un program care calculează prețul pe care un client, care a cumpărat
 
 |   | **Without sugar** | **Normal** | **Extra sugar** |
 |---|---|---|---|
-| Espresso | 0.90$ | 1$ | 1.20$ |
-| Cappuccino | 1.00$ | 1.20$ | 1.60$ |
-| Tea | 0.50$ | 0.60$ | 0.70$ |
+| Espresso | $0.90 | $1 | $1.20 |
+| Cappuccino | $1.00 | $1.20 | $1.60|
+| Tea | $0.50 | $0.60 | $0.70 |
 
 Rețineți următoarele reduceri:
 - Pentru o băutură selectată fără zahăr, există o reducere de 35%
