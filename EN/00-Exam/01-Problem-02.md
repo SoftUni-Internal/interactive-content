@@ -17,9 +17,9 @@ public class Program {
 ## Description
 The Smiths are planning their family trip. 
 
-Your task is to create a program that calculates whether their budget will be sufficient, knowing how many nights they have planned to stay, what the price per night is and what percentage of their budget must be spent on additional costs.
+Your task is to create a program that calculates whether their budget will be sufficient knowing how many nights they have planned to stay, what the price per night is and what percentage of their budget must be spent on additional costs.
 
-Keep in mind that if they stay longer than 7 nights, the price per night should be reduced by 5%.
+Keep in mind that if they stay longer than 7 nights the price per night is reduced by 5%.
 
 ## Input
 You will receive **4 lines of input**:
@@ -30,9 +30,9 @@ You will receive **4 lines of input**:
 
 ## Output
 The output depends on whether the budget is sufficient or not:
-- If the budget **is sufficient**:
+- If the budget is **sufficient**:
 	- "**The Smiths will be left with** \{**money left after the trip**\} **dollars after the vacation.**"
-- If the budget is **does not suffice**:
+- If the budget is **insufficient**:
 	- "\{**money needed**\} **dollars needed.**"
 
 The sum must be formatted to the second digit after the decimal point.

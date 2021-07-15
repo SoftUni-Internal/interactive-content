@@ -15,11 +15,11 @@ public class Program {
 [/code-editor]
 [task-description]
 # Description
-Create a program that receives the name of a football team and displays statistics, based on matches played this season. 
+Create a program that receives the name of a football team and displays statistics based on matches played this season. 
 
 The statistics should include the total points earned during the current season, detailed statistics on the outcome of the games played and thier win rate. 
 
-If for some reason the team has not played any games this season, a special message should be displayed. 
+If for some reason the team has not played any games this season a special message should be displayed. 
 
 During the season, each team plays a certain number of football matches and for each match played points are awarded depending on the outcome.
 
@@ -30,16 +30,16 @@ There are three possible outcomes from a match:
 
 ## Input
 You will receive **two lines** of input:
-- The name of the football team- a string
-- The number of games, played during the season - an integer in range [0 ... 100] 
+- The name of the football team - a **string**
+- The number of games, played during the season - an **integer** in range [0 ... 100] 
 
-**For each game**, a separate line is given:
-- The result of the game - a character ("W", "D" or "L")
+**For each game** a separate line is given:
+- The result of the game - a character (**"W", "D" or "L"**)
 
 ## Output
 Depending on whether the team has played any games or not in the current season, there are two possible outcomes:
 
-- If the team has not played a single match, print out a single line in the following format:
+- If the team has not played a single match print out a single line in the following format:
 	- "\{**team name**\} **hasn't played any games during this season.**"
 - If the team has played at least one match, six lines should be displayed in the following format:
 	- "\{**team name**\} **has won** \{**count points**\} **points during this season.**"
@@ -69,11 +69,11 @@ The percentage must be formatted to the second decimal place.
 
 [hints]
 [hint]
-Determine the total points for the team. Each win is 3 points, a draw is 1 and there aren't any points for loses.
+Determine the total points for the team. Each win is 3 points, a draw is 1 and no points are awarded for a loss.
 [/hint]
 [hint]
-Keep track of each won, draw and lost game.
-Calculate the win rate percentage and don't forget to format it.
+Keep track of each win, draw and loss.
+Calculate the win rate percentage and do not forget to format it.
 [/hint]
 [hint]
 Print the correct output.
