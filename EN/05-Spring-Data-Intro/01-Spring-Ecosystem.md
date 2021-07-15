@@ -14,9 +14,9 @@ To gain an understanding of ORM, we went through several steps:
 
 - Further, we learned that Java Persistence Library (JPA) provides abstraction and makes it easier to switch from one ORM (JPA provider) to another
 
-[image assetsSrc="Spring-data-introduction.png" /]
-
 **Spring** is an open-source modular ecosystem developed by **Pivotal Software**.
+
+[image assetsSrc="Spring-data-introduction.png" /]
 
 Each module in this ecosytem is a separate [project](https://spring.io/projects).
 
@@ -37,7 +37,7 @@ The Spring Framework is composed of many modules, including:
 - The **Core Container** - this is the base Spring module and provides the Core, Beans, Context and Expression modules
   * the **Core and Beans** modules provide the IoC and Dependency Injection features
   
-- **Aspect-Oriented Programming** - allows us to implement custom aspects, complementing our existing use of object-oriented programming
+- **Aspect-Oriented Programming** - allows us to implement custom aspects of AOP, complementing our existing use of object-oriented programming
 
 - **Data Access/Integration** - this layer consists of five modules:
   * **JDBC** - provides abstraction over JDBC, eliminiating the need of coding in it
@@ -45,6 +45,8 @@ The Spring Framework is composed of many modules, including:
   * **OXM** - gives us an abstraction layer for using Object/XML mapping implementations
   * **JMS** - provides features, related to the Java Messaging Service 
   * **Transaction** - allows for programmatic/declarative transaction management
+
+- The **Test** module - contains the Test Framework that supports testing Spring components using JUnit or TestNG
 
 The Spring Platform consists of multiple projects, such as:
 

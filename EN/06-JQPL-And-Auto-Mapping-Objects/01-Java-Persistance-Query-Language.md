@@ -4,13 +4,13 @@
 
 # JPQL Definition
 
-JPQL (or the Java Persistence Query Language) is an **object-oriented** query language, part of the Java persistence API.
+**JPQL** (short for Java Persistence Query Language) is an **object-oriented** query language, part of the Java persistence API.
 
 When working with complex queries, default query methods are not sufficient.
 
 JPQL makes queries against entities stored in a relational database.
 
-It is similar to SQL except for a few differences.
+It is similar to SQL except for a few differences:
 
 - In JPQL, we interact and make queries with the entities, not with the tables from the database
 - It will not directly affect the database
@@ -35,17 +35,17 @@ With the JQPL syntax, we can create three types of clauses:
 
 # Syntax
 
-The syntax of JPQL is similar to the SQL syntax, the difference being that SQL works directly with the database, its tables, records, and fields, whereas JPQL works with the Java classes and instances.
+The syntax of JPQL is similar to that of SQL, with one notable difference - SQL works directly with the database, its tables, records, and fields, whereas JPQL works with the Java classes and instances.
 
 Consider the following example:
 
 ```java
-  1.              2.     3.          4.
+1.            2.                 3.          4.
 SELECT i FROM Ingredient i WHERE b.name IN names
 ```
 
 1. The select clause
-2. The the Java class entity we want to work with
+2. The Java class entity we want to work with
 3. The alias - how we refer to the table
 4. The filtration clause, where we use the entity's properties
 
@@ -55,26 +55,35 @@ SELECT i FROM Ingredient i WHERE b.name IN names
 
 ## JOINS
 
-Naturally, when working with the database, we should link our tables.
+An indispensable part of working with a database is linking our tables.
 
 With **JPQL**, we have to declare the **JOIN clauses** by ourselves.
 
 As long as we are familiar with how **JOINS** work, Spring Data knows how to find the criteria to join the table by.
 
-Join available in JPQL:
+There are three **JOIN** clause types available in JPQL:
 
 - INNER JOIN
 - LEFT OUTER JOIN
 - LEFT INNER JOIN
 
-Let's have an example:
+Take a look at the following example:
 
 ```java
-SELECT s.name                           // We choose the data we want from the table through SELECT
-FROM Shampoo AS s                       // Then we declare the entities, and their aliases
-INNER JOIN s.batch AS b                 // Declaration of type JOIN and the table on which to execute the operation
-WHERE b.batchDate <:batchDate           // Then, we can filter data by using the properties of the joined entity
+SELECT s.name                 
+FROM Shampoo AS s             
+INNER JOIN s.batch AS b      
+WHERE b.batchDate <:batchDate 
 ```
+
+We choose the data we want from the table through SELECT.
+
+Then, we declare the entities and their aliases.
+
+We use the JOIN keyword and the table on which to execute the operation.
+
+Finally, we can filter the data by using the properties of the joined entity.
+
 [/slide]
 
 [slide hideTitle]
