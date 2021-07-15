@@ -165,7 +165,7 @@ Min number: -2
 
 [slide hideTitle]
 # Problem: Base and Exponent
-[code-task title="Power of Number" taskId="pb-java-for-loop-power-of-number" executionType="tests-execution" executionStrategy="java-code" requiresInput]
+[code-task title="Power of Number" taskId="pb-java-for-loop-base-and-exponent" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 ```java
 import java.util.Scanner;
