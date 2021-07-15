@@ -2,29 +2,33 @@
 
 [slide hideTitle]
 
-# Serializarea si Deserializarea Obiectelor
+# Serializarea și Deserializarea Obiectelor
 
-În Java, creăm mai multe obiecte care au o perioadă limitată de viață, și fiecare obiect va disparea cu siguranță când se termină executarea programului.
+Serializarea în Java este procesul prin care un obiect este reprezentat ca o secvență de octeți.
 
-Dar uneori, s-ar putea să dorim  **să reutilizăm** un obiect între mai multe programe sau s-ar putea să dorim  **să transferăm** un obiect către o altă mașină prin rețea.
+Această secvență conține informații despre tipul obiectului și tipul de date stocate în el.
 
-**Serializarea** ne permite să **convertim starea unui obiect într-un flux/stream de octeți**, care apoi poate fi salvat într-un fișier de pe discul local sau trimis prin rețea la orice altă mașină.
+Procesele de serializare și deserializare sunt utile dacă dorim ca aplicația noastră să poată comunica cu alte aplicații și să trimită sau să primească date care trebuie procesate.
 
-**Deserializarea** ne permite să inversăm procesul, ceea ce înseamnă **reconvertirea a fluxului/stream-ului de octeți serializați într-un obiect**.
+**Serializarea** ne permite să **convertim starea unui obiect într-un flux de octeți**, care apoi poate fi salvat într-un fișier de pe discul local sau trimis prin rețea la orice altă mașină.
 
-În cuvinte mai simple,  **serializarea obiectului** este procesul de **salvare a stării unui obiect** într-o **secvență de octeți** și **deserializarea** este procesul de **reconstituire a unui obiect din acești octeți**.
+**Deserializarea** ne permite să inversăm procesul, ceea ce înseamnă **reconvertirea fluxului de octeți serializat într-un obiect**.
 
-În general, procesul complet se numește **Serializarea**.
+În cuvinte mai simple, **serializarea unui obiect** este procesul de **salvare a stării unui obiect** într-o **secvență de octeți**, iar **deserializarea** este procesul de **reconstituire a unui obiect din octeții** generați.
+
+În general, procesul complet se numește **Serializare**.
 
 [/slide]
 
 [slide hideTitle]
 
-# Serializarea
+# Serializare
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-41-Serialization-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Procesul de **Serializarea** este pe **platforma independenta**, un obiect serializat pe o platformă poate fi deserializat pe o altă platformă.
+Procesul de **Serializare** este **independent de platformă**, ceea ce înseamnă că un obiect serializat pe o platformă poate fi deserializat pe o altă platformă.
+
+În acest mod, două sisteme fundamental diferite pot lucra împreună și pot partaja date.
 
 ```java
 String output = "D:\\names.ser";
@@ -37,13 +41,13 @@ ObjectOutputStream objectOutputStream =  new ObjectOutputStream(fileOutputStream
 
 objectOutputStream.writeObject(names);
 ```
-În primul exemplu de mai sus, creăm un **FileOutputStream** și plasăm locația fișierului în constructorul.
+În exemplul de mai sus, creăm un **FileOutputStream** și plasăm locația fișierului în constructor.
 
-Este o bună practică să stocați obiectul serializat în fișiere cu extensia `.ser`.
+Stocarea obiectului serializat în fișiere cu extensia `.ser` este o practică bună.
 
-Apoi, ambalam the FileOutputStream cu un **ObjectOutputStream**.
+Apoi, învelim FileOutputStream cu un **ObjectOutputStream**.
 
-Prin metoda `writeObject()` -  structura datelor de nume este scrisă în fișierul de ieșire.
+Metoda `writeObject()` va realiza scrierea structurii de date **names** în fișierul de ieșire.
 
 
 [/slide]
@@ -61,17 +65,15 @@ ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
 List<String> names = (List<String>) objectInputStream.readObject();
 ```
 
-De pe alta parte, deserializare face exact opusul.
+În timpul procesului de deserializare, un obiect serializat este convertit înapoi în tipul dorit în funcție de necesitate.
 
-Ea citește fișiere, conținutul al cărora  sunt obiecte serializate și le încarcă înapoi în memoria programului nostru Java.
+În exemplul de mai sus, creăm un FileInputStream învelit de un ObjectInputStream.
 
-În exemplul de mai sus, creăm un FileInputStream ambalat de un ObjectInputStream.
+Metoda `readObject()` returnează structura de date **names** pe care am stocat-o mai devreme în fișier.
 
-Metoda `readObject()` - returnează înapoi structura datelor de **nume** pe care am stocat-o mai devreme în fișierul.
+- Serializarea **obiectelor personalizate**:
 
-- Serializarea **Obiectelor personalizate**:
-
-Pentru a serializa obiecte personalizate, acestea trebuie să implementeze interfața serializabilă.
+Pentru a serializa obiecte personalizate, acestea trebuie să implementeze interfața **Serializable**.
 
 ```java
 class Cube implements Serializable {
@@ -90,14 +92,13 @@ class Cube implements Serializable {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-45-Serialize-custom-object-Problem-and-Solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Creați o clasă numită "**Cube**". Ar trebui să aibă următoarele **proprietăți** pentru **culoare**, **lățime**, **înălțime** și **adâncime**.
-Creați o instanță a clasei cu următoarele valori:
+Creați o clasă numită "**Cube**". Trebuie să aibă **proprietățile** **color**, **width**, **height** și **depth**. Creați o instanță a clasei cu următoarele valori:
 - Color: "green"
 - Width: 15.3
 - Height: 12.4
 - Depth: 3.0
 
-**Serializați** și **deserilizați** instanța creată. Când este salvat într-un fișier, obiectul ar trebui să arate ca exemplul de mai jos.
+**Serializați** și **deserializați** instanța creată. Când este salvat într-un fișier, obiectul ar trebui să arate ca în exemplul de mai jos.
 
 ## Exemple
 
@@ -106,7 +107,7 @@ Creați o instanță a clasei cu următoarele valori:
 
 [hints]
 [hint]
-Creați o clasă numită Cube, care ar trebui să implementeze interfața serializabilă:
+Creați o clasă numită Cube, care implementează interfața Serializable:
 
 ```java
 class Cube implements Serializable {
