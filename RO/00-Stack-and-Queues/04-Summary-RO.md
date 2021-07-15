@@ -3,10 +3,9 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/02-Stacks-and-Queues/RO/java-advanced-stacks-and-queues-42-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## În această lecție ai învățat:
+## În această lecție ați învățat:
 
-- Complexitate algoritmică
-- **Stacks** - Ultima în prima ieșire -**LIFO**
+- **Stive** - Last In First Out (LIFO)
 
    - `push()`
 
@@ -31,7 +30,7 @@
     ```
 
 
-- **Queues** - Primul intrat primul iesit -**FIFO**
+- **Cozi** - First In First Out (FIFO)
 
     - `add()`
 
@@ -58,20 +57,18 @@
 
     queue.peek();
     ```
-- **Coadă Prioritară**
+- **Coadă Prioritară** - un tip special de coadă în care elementele sunt preluate în ordinea lor naturală, dacă un comparator personalizat nu este specificat
 
 ```java 
 PriorityQueue<Integer> numbers = new PriorityQueue<>();
 ```
 
 
-## În lecția următoare, veți învăța:
+## În lecția următoare veți învăța:
 
-- Matrice în Java
-- Ce este matricea multidimensională?
-- Declararea și crearea de tablouri multidimensionale
-- Inițializarea tablourilor multidimensionale
-- Accesarea elementelor
+- Matrice
+- Matrice multidimensionale: declarare, creare, inițializare
+- Accesarea elementelor matricelor
 - Citirea și tipărirea unei matrice
 
 
