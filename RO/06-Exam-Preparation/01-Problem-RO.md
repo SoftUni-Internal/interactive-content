@@ -1,5 +1,5 @@
 [slide hideTitle]
-# Problem: Re-Volt
+# Problemă: Re-Volt
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/09-Exam-Preparation/RO/interactive-java-advanced-exam-preparation-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -17,90 +17,90 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Vi se va da un număr întreg N pentru dimensiunea matricei pătrate și apoi un număr întreg pentru numărul de comenzi.
+Vi se va da un număr întreg N pentru dimensiunea unei matrice pătratice și apoi un număr întreg pentru numărul de comenzi.
 
-Pe următoarele **n** linii, veți primi rândurile matricei.
+Pe următoarele **N** linii, veți primi rândurile matricei.
 
-Jucătorul începe într-o poziție aleatorie (jucătorul este marcat cu **"f"**) și **toate sloturile goale** vor fi umplute cu **"+"** (plus).
+Jucătorul începe de pe o poziție aleatorie (el este marcat cu **"f"**), iar **toate pozițiile goale** vor fi marcate cu simbolul **"+"** (plus).
 
-Scopul este de a atinge punctul de sosire care va fi marcat cu **”F”**.
+Scopul este de a ajunge la linia de sosire, care va fi marcată cu **"F"**.
 
-Pe teren pot exista și bonusuri și capcane.
+Pe teren pot exista atât bonusuri, cât și capcane.
 
-Bonusurile sunt marcate cu **”B”**, iar capcanele sunt marcate cu **”T”**.
+Bonusurile sunt marcate cu **"B"**, iar capcanele sunt marcate cu **"T"**.
 
-La fiecare tura vi se vor da comenzi pentru **mișcarea jucătorului**.
+La fiecare tură vi se vor da comenzi **care determină deplasarea jucătorului**.
 
 Dacă jucătorul **iese** din matrice, el intră din **cealaltă parte**.
 
-De exemplu, dacă jucătorul este la 0, 0 și următoarea comandă este lăsată, el merge la ultimul loc din primul rând.
+De exemplu, dacă jucătorul se află pe poziția 0, 0 și direcția următoarei comenzi este spre stânga, el merge pe ultima poziție de pe primul rând.
 
-Dacă jucătorul pășește un **bonus**, el ar trebui să avanseze un alt pas înainte în direcția în care merge.
+Dacă jucătorul primește un **bonus**, el trebuie să avanseze cu o poziție înainte, în direcția în care merge.
 
-Dacă jucătorul calcă pe o **capcană**, el ar trebui să facă un pas înapoi.
+Dacă jucătorul calcă pe o **capcană**, el trebuie să se deplaseze cu o poziție înapoi.
 
-Când jucătorul atinge **punctul de finalizare** sau **numărul de comenzi este atins**, jocul se termină.
+Când jucătorul ajunge la **punctul de sosire** sau **numărul de comenzi este atins**, jocul se termină.
 
 ## Intrare
 
-- Pe prima linie, vi se dă numărul întreg N - dimensiunea matricei pătrate.
-- În a doua vi se dă numărul de comenzi.
-- Următoarele N linii dețin valorile pentru fiecare rând.
-- Pe fiecare dintre următoarele linii, veți primi comenzi pentru direcțiile de mișcare.
+- Pe prima linie vi se dă numărul întreg N - dimensiunea matricei pătratice
+- Pe a doua linie vi se dă numărul de comenzi
+- Următoarele N linii dețin valorile pentru fiecare rând
+- Pe fiecare dintre următoarele linii, veți primi comenzi pentru direcțiile de deplasare
 
 ## Ieșire
 
-- Dacă jucătorul atinge nota de finalizare, tipăriți:
+- Dacă jucătorul ajunge la linia de sosire, tipăriți:
   - `Player won!`
-- Dacă jucătorul atinge numărul de comenzi și nu a atins punctul de imprimare:
+- Dacă jucătorul atinge numărul de comenzi și nu a ajuns la linia de sosire:
   - `Player lost!`
 
-- La final imprimați matricea.
+- La final imprimați matricea
 
 ## Constrângeri
 
-- Dimensiunea matricei va fi între [2 ... 20].
-- Jucătorii vor fi întotdeauna indicați cu **"f"**.
-- Dacă jucătorul pășește marca de sosire **în același timp** cu ultima sa comandă, el **câștigă** jocul.
-- Comenzile vor fi în format de **sus**, **jos**, **stânga** sau **dreapta**.
-- Nu va exista un caz în care să ocoliți finalizarea în timp ce vă aflați într-o capcană sau un bonus.
-- O capcană nu te va plasa niciodată într-un bonus sau într-o altă capcană, iar un bonus nu te va plasa niciodată într-o capcană sau într-un alt bonus.
+- Dimensiunea matricei va fi între \[2 ... 20\]
+- Jucătorii vor fi întotdeauna indicați prin litera **"f"**
+- Dacă jucătorul ajunge la linia de sosire **atunci când primește** ultima sa comandă, el **câștigă** jocul
+- Comenzile vor fi în formatul: **up**, **down**, **left** sau **right**
+- Nu va exista un caz în care jucătorul va ocoli linia de sosire în timp ce se află pe o capcană sau un bonus
+- O capcană nu va plasa jucătorul niciodată pe un bonus sau pe o altă capcană, iar un bonus nu plasa jucătorul niciodată pe o capcană sau alt bonus
 
-## Examples
-| **Input** | **Output** | **Comments** |
+## Exemple
+| **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
-| 5 | Player won! | Prima comandă este în jos, astfel încât f se deplasează în jos  |
-| 5 | +++++ | La rândul 1, jucătorul calcă un bonus și face un pas suplimentar. |
-| +++++ | +++++ | La rândul 2, jucătorul pășește pe o capcană și face un pas înapoi. După fiecare întoarcere a câmpului este: |
+| 5 | Player won! | Prima comandă este **down**, deci jucătorul se deplasează în jos.  |
+| 5 | +++++ | În prima tură, jucătorul primește un bonus și face un pas suplimentar. |
+| +++++ | +++++ | În a doua tură, jucătorul pășește pe o capcană și face un pas înapoi. După fiecare tură câmpul arată așa: |
 | +f+++ | +B+++ |   1      2      3    |
 | +B+++ | \++T\++ | +++++  +++++  +++++ |
 | \++T\++ | +f+++ | +++++  +++++  +++++ |
 | +F+++ |  | +B+++  +B+++  +B+++ |
 | down |  | +fT++  +fT++  \++T\++ |
 | right |  | +F+++  +F+++  +f+++ |
-| down |  | La rândul, 3 f ajunge la punctul 'F' și câștigă jocul. |
+| down |  | După a treia tură, f ajunge la punctul 'F' și câștigă jocul. |
 
 [hints]
 [hint]
-Iterați prin matrice utilizând o buclă-for:
+Iterați prin matrice utilizând o buclă for.
 [/hint] 
 [hint]
-Utilizați o instrucțiune switch-case pentru a gestiona fiecare întoarcere - stânga, dreapta, sus și jos.
+Utilizați o instrucțiune switch-case pentru a gestiona fiecare tip de deplasare - left, right, up și down.
 [/hint]
 [hint]
-Implementați o metodă care returnează dacă jucătorul se află în interval și o a doua metodă care verifică dacă aceștia se află într-o capcană.
+Implementați o metodă care returnează dacă jucătorul se află în limitele matricei și o a doua metodă care verifică dacă acesta se află pe o capcană.
 [/hint] 
 [hint]
-Printați matricea utilizând două bucle-for imbricate.
+Imprimați matricea utilizând două bucle for imbricate.
 [/hint] 
 [/hints] 
 
 
-| **Input** | **Output** | **Comments** |
+| **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
-| 4 | Player lost! | Prima comandă este sus, astfel încât f se deplasează în sus și noua poziție a jucătorului este (0,1). |
-| 3 | ++++ | Următoarea comandă este din nou activată, astfel încât jucătorul iese din matrice și revine din cealaltă parte la (3,1). |
-| ++++ | +++ B | Apoi comanda este lăsată, deci poziția finală este (3,0), care nu este marca finală, astfel încât jucătorul a pierdut. |
+| 4 | Player lost! | Prima comandă este **up**, deci f se deplasează în sus și noua poziție a jucătorului este (0,1). |
+| 3 | ++++ | Următoarea comandă este din nou **up**, deci jucătorul iese din matrice și revine din cealaltă parte la (3,1). |
+| ++++ | +++ B | Apoi, comanda este **left**, deci poziția finală este (3,0), care nu este linia de sosire, deci jucătorul a pierdut. |
 | +f+B | ++T+ |  |
 | ++T+ | f++F |  |
 | +++F |  |  |
