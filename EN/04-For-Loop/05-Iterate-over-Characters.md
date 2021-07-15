@@ -9,7 +9,7 @@
 
 **ASCII** stands for **American Standard Code for Information Interchange**. 
  
-Computers can only process numbers; therefore, the ASCII code is used as a numerical equivalent of any character, i.e. “a” or “@”. 
+Computers can only process numbers; therefore, the ASCII code is used as a numerical equivalent of any character, i.e. "a" or "@". 
 
 Here is a part of the ASCII table:
 
