@@ -475,6 +475,11 @@ Scrieți un program care:
 | 6 | 100.00% |
 | 9 | 0.00% |
 
+[hints]
+[hint]
+The number that is being divided is called the **dividend**. The number that it is being divided by is called the **divisor**. The result of the division is the **quotient**.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -508,11 +513,7 @@ Scrieți un program care:
 [code-io/]
 [/code-task]
 
-[hints]
-[hint]
-The number that is being divided is called the **dividend**. The number that it is being divided by is called the **divisor**. The result of the division is the **quotient**.
-[/hint]
-[/hints]
+
 
 
 [/slide]
