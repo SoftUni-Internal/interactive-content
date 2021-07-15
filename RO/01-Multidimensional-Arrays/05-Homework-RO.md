@@ -24,7 +24,7 @@ Ambele moduri sunt descrise mai jos:
 
 [hints]
 [hint]
-Întocmiți o metodă diferită pentru fiecare model:
+Realizați o metodă diferită pentru fiecare model:
 
 ```java
 private static void fillPatternA(
@@ -43,7 +43,7 @@ private static void fillPatternB(
 ```
 [/hint] 
 [hint]
-Întocmiți o metodă pentru printarea matricei:
+Realizați o metodă pentru imprimarea matricei:
 
 ```java
 public static void printMatrix(
@@ -57,7 +57,7 @@ public static void printMatrix(
 [/hints] 
 
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 3, A | 1 4 7  |
@@ -222,7 +222,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program pentru a genera următoarea **matrice de palindroame**. 
+Scrieți un program care generează următoarea **matrice de palindroame**. 
 
 Trebuie să existe un palindrom de **3 litere** pe fiecare poziție. 
 
@@ -241,11 +241,11 @@ De exemplu:
 
 ## Intrare
 
-- Numerele **r** și **c** se află pe prima linia a datelor de intrare
+- Numerele **r** și **c** se află pe prima linie a datelor de intrare
 - **r** și **c** sunt numere întregi din intervalul `[1 ... 26]`
 - `r + c <= 27`
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 4 6 | aaa aba aca ada aea afa |
@@ -396,19 +396,19 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți un program care găsește **diferența dintre sumele de pe diagonalele matricilor pătratice** (valoarea absolută).
+## Descriere
+Scrieți un program care găsește **diferența dintre sumele diagonalelor unei matrice pătrate** (valoarea absolută).
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-3.png" /]
 
 ## Intrare
 
 - **Prima linie** conține un număr **n** – dimensiunea matricei
-- Următoarele **n**  **linii** conțin **valorile pentru fiecare rând** – **n** numere separate prin spațiu
+- Următoarele **n** **linii** conțin **valorile pentru fiecare rând** – **n** numere separate prin spațiu
 
 [hints]
 [hint]
-Utilizați o **singură buclă** `i = [1 ... n]` pentru a însuma diagonalele:
+Utilizați o **singură buclă** `i = [1 ... n]` pentru a determina suma diagonalelor:
 
 ```java
 for (int i = 0; i < n; i++) {
@@ -433,7 +433,7 @@ secondaryDiagonal += matrix[i][matrix[i].length - 1 - i];
 [/hints] 
 
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
 | 3 | 15 | **Diagonala principală:** `sum = 11 + 5 + (-12) = 4`  |
@@ -571,15 +571,15 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți un program care citește o matrice dreptunghiulară de numere întregi de dimensiune **N x M** și găsește în interiorul ei matricea de dimensiune **3 x 3** care **are suma maximă de elemente**.
+## Descriere
+Scrieți un program care citește o matrice dreptunghiulară de numere întregi de dimensiune **N x M** și găsește în interiorul ei matricea de dimensiune **3 x 3** care **are suma maximă a elementelor**.
 
-## Date de intrare
+## Intrare
 
-- Pe prima linie, veți primi numărul de rânduri, **N**, și de coloane, **M**
+- Pe prima linie veți primi numărul de rânduri, **N**, și de coloane, **M**
 - Pe următoarele **N linii** veți primi **fiecare rând cu elementele aferente acestuia**
 
-Printați **elementele** pătratului de 3 x 3 sub forma unei matrice, împreună cu **suma acestora**. Vedeți formatul datelor de ieșire mai jos:
+Imprimați **elementele** pătratului 3 x 3 sub forma unei matrice, împreună cu **suma acestora**. Vedeți formatul datelor de ieșire mai jos:
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -788,25 +788,25 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Scrieți un program care citește o matrice de stringuri din consolă și realizează anumite operații cu elementele sale.
+## Descriere
+Scrieți un program care citește o matrice de șiruri de la consolă și realizează anumite operații cu elementele sale.
 
 Datele de la utilizator provin în mod similar cu cele de la problemele anterioare – mai întâi citiți **dimensiunile** și mai apoi **datele**.
 
-Programul vostru ar trebui să primească mai apoi comenzile după următorul format: `swap rând1 coloană1 rând2 coloană2`, unde rând1, rând2, coloană1, coloană2 sunt **coordonatele** matricei. 
+Programul vostru trebuie să primească comenzile în următorul format: `swap rând1 coloană1 rând2 coloană2`, unde rând1, rând2, coloană1, coloană2 sunt **coordonatele** matricei. 
 
-Ca o comandă să fie validă, aceasta trebuie să înceapă cu cuvântul-cheie **"swap"**, urmat de **4 coordonate valide** (nici mai multe, nici mai puține). 
+Pentru ca o comandă să fie validă, aceasta trebuie să înceapă cu cuvântul-cheie **"swap"**, urmat de **4 coordonate valide**. 
 
-Trebuie să **inversați valorile** de la coordonatele date `celula [rând1, coloană1] cu celula [rând2, coloană2]` **și să printați matricea după fiecare pas** (astfel veți putea verifica dacă operația s-a realizat corect).
+Trebuie să **inversați valorile** coordonatelor date \(`celula [rând1, coloană1] cu celula [rând2, coloană2]`\) **și să imprimați matricea după fiecare pas** (astfel veți putea verifica dacă operația s-a realizat corect).
 
-Dacă **comanda nu este validă** (aceasta nu conține cuvântul-cheie `swap`, are mai puține sau mai multe coordonate introduse sau coordonatele date nu există), printați `Invalid input!` și treceți la următoarea comandă. 
+Dacă **comanda nu este validă** (aceasta nu conține cuvântul-cheie `swap`, are mai puține sau mai multe coordonate introduse sau coordonatele date nu există), imprimați `Invalid input!` și treceți la următoarea comandă. 
 
-Programul ar trebui să se termine odată cu introducerea stringului `END`.
+Programul trebuie să se termine odată cu introducerea șirului `END`.
 
 
 [hints]
 [hint]
-Gândiți-vă la rezolvarea de excepții:
+Gândiți-vă la tratarea excepțiilor:
 
 ```java
  try {
@@ -822,7 +822,7 @@ Gândiți-vă la rezolvarea de excepții:
 [/hints] 
 
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 2 3 | 5 2 3 |
@@ -833,7 +833,7 @@ Gândiți-vă la rezolvarea de excepții:
 | swap 0 1 1 0 |  |
 | END |  |
 
-| **Date de intrare** | **Date de ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 1 2 | Invalid input! |
 | Hello World | World Hello |
@@ -1158,14 +1158,14 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Se dă o **secvență de linii de text**.
 
-Presupuneți că aceste linii de text formează o **matrice de caractere** (introduceți spații pe pozițiile care lipsesc, cu scopul creării unei matrice dreptunghiulare).
+Presupuneți că aceste linii de text formează o **matrice de caractere** (introduceți spații pe pozițiile lipsă pentru a crea o matrice dreptunghiulară).
 
 Scrieți un program care **rotește matricea** cu 90, 180, 270, 360, … de grade.
 
-Printați rezultatul în consolă, sub forma unei secvențe de stringuri, odată cu întâlnirea comenzii `END`.
+După întâlnirea comenzii `END`, imprimați rezultatul pe consolă sub forma unei secvențe de șiruri.
 
 ## Exemplu
 
@@ -1173,11 +1173,11 @@ Printați rezultatul în consolă, sub forma unei secvențe de stringuri, odată
 
 ## Intrare
 
-Datele de intrare sunt citite din consolă:
+Datele de intrare sunt citite de la consolă:
 
-- Prima linie conține comanda în formatul `Rotate(X)` unde **X** reprezintă numărul de grade al rotației cerute
-- Următoarele linii conțin **liniile matricei** dată spre rotație
-- Datele de intrare se termină odată cu comanda `END`
+- Prima linie conține comanda în formatul `Rotate(X)`, unde **X** reprezintă numărul de grade al rotației cerute
+- Următoarele linii conțin **liniile matricei** care trebuie rotită
+- Datele de intrare se termină după introducerea comenzii `END`
 
 Datele de intrare vor fi mereu valide și vor respecta formatul descris. 
 
@@ -1185,16 +1185,16 @@ Nu trebuie să le validați în mod explicit.
 
 ## Ieșire
 
-Printați în consolă **matricea rotită** sub forma unei secvențe de linii de text.
+Tipăriți pe consolă **matricea rotită**, sub forma unei secvențe de linii de text.
 
 ## Constrângeri
 
-- Numărul ce reprezintă **gradele de rotație** e un număr întreg pozitiv din intervalul `[0 ... 90000]`, acesta fiind **multiplu de 90**
-- Numărul de linii ale matricei se află în intervalul `[1 ... 1 000]`
-- Liniile matricei sunt **stringuri** de lungime `[1 ... 1 000]`
+- Numărul care reprezintă **gradele rotației** este un număr întreg pozitiv din intervalul `[0 ... 90000]` și este un **multiplu de 90**
+- Numărul de linii al matricei se află în intervalul `[1 ... 1 000]`
+- Liniile matricei sunt **șiruri** de lungime `[1 ... 1 000]`
 
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | Rotate(90) | esh |
@@ -1611,7 +1611,7 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
+## Descriere
 Veți primi **2 numere întregi** care reprezintă **dimensiunile** unei **matrice**.
 
 Apoi, trebuie să **completați matricea** cu **numere întregi crescătoare**, începând de la 1 și continuând cu fiecare rând, în felul următor:
@@ -1622,33 +1622,33 @@ Al **treilea** rând: `2 * n + 1, 2 * n + 2, ..., 2 * n + n`
 
 Veți primi de asemenea câteva comenzi sub forma a **3 numere întregi** separate printr-un spațiu. 
 
-Acele 3 numere întregi vor reprezenta un **rând** din matrice, o **coloană** și o **rază**. 
+Cele 3 numere întregi vor reprezenta un **rând** din matrice, o **coloană** și o **rază**. 
 
-Apoi trebuie să **distrugeți** celulele care corespund acelor argumente **în mod încrucișat**.
+Apoi, trebuie să **distrugeți** celulele care corespund acelor argumente, **în model de cruce**.
 
 **Distrugerea** unei celule înseamnă că **celula curentă** devine complet **inexistentă** în matrice.
 
-Distrugerea celulelor **în mod încrucișat** înseamnă că formați **o figură încrucișată** cu un punct central - egal cu celula cu coordonatele – **rândul dat** și **coloana**, și **liniile** de lungime egală cu **raza dată**. 
+Distrugerea celulelor **în model de cruce** înseamnă că formați **o cruce** cu un punct central - echivalent cu celula cu coordonatele date – **rândul dat** și **coloana**, și **liniile** de lungime egală cu **raza dată**. 
 
 Observați exemplele de mai jos pentru mai multe informații.
 
 **Datele de intrare se sfârșesc** când întâlniți comanda `Nuke it from orbit`.
 
-Când se întâmplă asta, trebuie să printați ceea ce a rămas din matricea inițială.
+Când se întâmplă asta, trebuie să imprimați ceea ce a rămas din matricea inițială.
 
 ## Intrare
 
-- Pe prima linie, veți primi dimensiunile matricei. Apoi trebuie să completați matricea cu elemente, conform acelor dimensiuni
-- Pe următoarele linii, veți începe să primiți **3 numere întregi** separate de un singur **spațiu**, care reprezintă rândul, coloana și raza
+- Pe prima linie veți primi dimensiunile matricei; apoi, trebuie să completați matricea cu elemente, conform dimensiunilor date
+- Pe următoarele linii veți începe să primiți **3 numere întregi** separate de un singur **spațiu**, care reprezintă rândul, coloana și raza
   
-Apoi trebuie să distrugeți celulele, în funcție de coordonatele respective.
+Apoi, trebuie să distrugeți celulele conform coordonatelor respective.
 
 - Când primiți comanda `Nuke it from orbit`, datele de intrare se sfârșesc
 
 ## Ieșire
 
-- Datele de ieșire sunt simple. Trebuie să printați ce rămâne din matrice
-- Fiecare rând trebuie să fie printat pe linie nouă și fiecare coloană a unui rând - separată prin spațiu
+- Trebuie să imprimați ce rămâne din matrice
+- Fiecare rând trebuie să fie imprimat pe o linie nouă și fiecare coloană a unui rând trebuie separată prin spațiu
 
 ## Constrângeri
 
@@ -1657,7 +1657,7 @@ Apoi trebuie să distrugeți celulele, în funcție de coordonatele respective.
 - Raza va fi un număr din intervalul `[0, 2 ^ 31 - 1]`
 
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- | 
 | 5 5 | 1 2 3 4 5 |
@@ -2133,42 +2133,42 @@ public class Main {
 ## Descriere
 Scrieți un program pentru un sistem de parcare automat.
 
-Parcarea e reprezentată de o **matrice dreptunghiulară** în care **prima** coloană e **întotdeauna** goală, iar toate celelalte celule reprezintă locuri de parcare. 
+Parcarea este reprezentată de o **matrice dreptunghiulară** în care **prima** coloană este **întotdeauna** goală, iar toate celelalte celule reprezintă locuri de parcare. 
 
 O mașină poate intra din **orice celulă** a **primei coloane**, iar apoi decide să meargă spre un anumit loc de parcare. 
 
-Dacă acel loc **nu** e gol, mașina caută **cel mai apropiat** loc gol de parcare aflat pe **același** rând. 
+Dacă acel loc **nu** este gol, mașina caută **cel mai apropiat** loc gol de parcare aflat pe **același** rând. 
 
-Dacă **toate** celulele de pe acel rând sunt deja folosite, mașina nu poate parca pe acel loc și trebuie să plece. 
+Dacă **toate** celulele de pe acel rând sunt deja ocupate, mașina nu poate parca și trebuie să plece. 
 
-Dacă **două** celule goale se găsesc la **aceeași** distanță față de locul de parcare **inițial**, celula care e **mai aproape** de intrare este cea aleasă. 
+Dacă **două** celule goale se găsesc la **aceeași** distanță față de locul de parcare **inițial**, va fi aleasă celula care se află **mai aproape** de intrare. 
 
-O mașină poate **trece** printr-un loc de parcare folosit.
+O mașină poate **traversa** un loc de parcare ocupat.
 
-Cerința voastră este să calculați distanța parcursă de fiecare mașină până la găsirea unui loc de parcare.
+Sarcina voastră este să calculați distanța parcursă de fiecare mașină până la găsirea unui loc de parcare.
 
-Exemplu: O mașină intră în parcare la rândul 1. Aceasta intenționează să meargă la celula 2, 2, deci se mută prin **exact patru** celule pentru a ajunge la locul său de parcare.
+Exemplu: O mașină intră în parcare la rândul 1. Aceasta intenționează să meargă la celula 2, 2, deci traversează **exact patru** celule pentru a ajunge la locul său de parcare.
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-7.png" /]
 
 ## Intrare
 
-- Pe prima linie a datelor de intrare, vi se dau numerele întregi **R** și **C**, numere ce definesc dimensiunile parcării
-- Pe următoarele linii, vi se dau întregii **Z, X, Y**, unde **Z** este rândul pe care se intră și **X, Y** sunt coordonatele locului de parcare dorit
+- Pe prima linie cu date de intrare vi se dau numerele întregi **R** și **C**, numere ce definesc dimensiunile parcării
+- Pe următoarele linii vi se dau numerele întregi **Z, X, Y**, unde **Z** este rândul de intrare, iar **X, Y** sunt coordonatele locului de parcare dorit
 - Datele de intrare sunt introduse până la comanda `stop` 
 
 Toate numerele întregi sunt separate printr-un **singur** spațiu.
 
 ## Ieșire
 
-- Pentru fiecare mașină, printați distanța parcursă pentru locul de parcare dorit, sau pentru primul loc valabil, liber
-- Dacă o mașină nu poate parca pe locul intenționat, printați mesajul `Row {row number} full`
+- Pentru fiecare mașină, tipăriți distanța parcursă până la locul de parcare dorit sau până la primul loc liber valabil
+- Dacă o mașină nu poate parca nicăieri, tipăriți mesajul `Row {row number} full`
 
 ## Constrângeri
 
 - `2 <= R,C <= 10000`
-- Z, X, Y se află în interiorul dimensiunilor matricei. Y nu poate fi niciodată de pe prima coloană
-- Nu există mai mult de 1000 de linii de date de intrare
+- Z, X, Y se află în interiorul dimensiunilor matricei; Y nu poate fi niciodată pe prima coloană
+- Nu există mai mult de 1000 de linii cu date de intrare
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -2630,56 +2630,54 @@ public class Main {
 [task-description]
 ## Descriere
 
-Mai întâi, veți primi o linie care conține numerele întregi **N** și **M** , care reprezintă rândurile și coloanele corespunzătoare vizuinei. 
+Mai întâi, veți primi o linie care conține numerele întregi **N** și **M**, care reprezintă rândurile și coloanele din vizuină. 
 
-Apoi vi se dau **N** stringuri care pot consta **doar** în `.`, `B` , `P`.
+Apoi, vi se dau **N** șiruri care pot consta **doar** în caracterele `.`, `B` și `P`.
 
-**Iepurii** sunt marcați cu simbolul `B`, **jucătorul** se marchează cu simbolul `P`, iar **restul** se reprezintă prin spațiu, marcat cu un punct `.`. 
+**Iepurii** sunt marcați cu litera `B`, **jucătorul** este marcat cu litera `P`, iar **orice altceva** este spațiu gol, marcat cu un punct `.`. 
 
-Acestea reprezintă starea inițială a vizuinei. 
+Aceste marcaje reprezintă starea inițială a vizuinei. 
 
-Vom avea **doar** un singur jucător. 
+Apoi, veți primi un șir cu **comenzi**, precum `LLRRUUDD` – unde fiecare literă reprezintă următoarea **mișcare** a jucătorului (Stânga - Left, Dreapta - Right, Sus - Up, Jos - Down).
 
-Apoi veți primi un string cu **comenzi** precum `LLRRUUDD` – unde fiecare literă reprezintă următoarea **mișcare** a jucătorului (Stânga(Left), Dreapta(Right), Sus(Up), Jos(Down)).
+**După** fiecare pas al jucătorului, fiecare iepure merge în sus, jos, la stânga și apoi la dreapta (celulele învecinate marcate cu "." **își schimbă** valoarea în `B`). 
 
-**După** fiecare pas al jucătorului, fiecare iepure merge sus, jos, la stânga și mai apoi la dreapta (celulele învecinate marcate cu "." **își schimbă** valoarea în `B`). 
-
-Dacă jucătorul **se mută** la o celulă cu iepure sau dacă un iepure **ajunge** la jucător, jucătorul moare. 
+Dacă jucătorul **se mută** pe o celulă care conține un iepure sau dacă un iepure **ajunge** la jucător, jucătorul moare. 
 
 Dacă jucătorul **iese** din vizuină **fără** a întâlni un iepure, acesta câștigă.
 
 Când jucătorul **moare** sau **câștigă**, jocul se sfârșește. 
 
-Toate activitățile **acestei** runde continuă (e.g. toți iepurașii se răspândesc în mod normal), dar nu mai există alte runde. 
+Toate activitățile **acestei** rundei finale continuă (e.g. toți iepurașii se răspândesc în mod normal), dar nu mai există alte runde. 
 
-**Nu** va mai fi niciun impas în care mișcările jucătorului să ia sfârșit înainte ca acesta să moară sau să scape.
+**Nu** va fi niciun caz în care mișcările jucătorului iau sfârșit înainte ca acesta să moară sau să câștige.
 
-În final, printați starea finală a vizuinei, cu fiecare rând pe o linie separată. 
+La final, imprimați starea finală a vizuinei, fiecare rând fiind imprimat pe o linie separată. 
 
-Pe ultima linie, printați `dead: {rând} {coloană}` ori `won: {rând} {coloană}`. 
+Pe ultima linie, tipăriți `dead: {rând} {coloană}` sau `won: {rând} {coloană}`. 
 
-"rând" și "coloana" reprezintă coordonatele celulei în care jucătorul a murit sau ultima celulă în care acesta s-a aflat înainte de a scăpa din vizuină.
+"rând" și "coloană" reprezintă coordonatele celulei în care jucătorul a murit sau ultima celulă în care acesta s-a aflat înainte de a scăpa din vizuină.
 
 ## Intrare 
 
-- Pe prima linie cu date de intrare, se dau numerele **N** și **M** – numărul de **rânduri** și de **coloane** al vizuinei
-- Pe următoarele N linii, fiecare rând e primit sub formă de string. Stringul va conține doar `.`, `B` , `P`
+- Pe prima linie cu date de intrare, se dau numerele **N** și **M** – numărul de **rânduri** și de **coloane** din vizuină
+- Pe următoarele N linii, fiecare rând este primit sub formă de șir de caractere; șirul va conține doar caracterele `.`, `B`, `P`
   
-Toate stringurile vor avea aceeași lungime.
+Toate șirurile vor avea aceeași lungime.
 
-Va exista doar un `P` pentru toate datele de intrare.
+Va exista doar un caracter `P` pentru toate datele de intrare.
 
-- Pe ultima linie, direcțiile sunt primite sub formă de string, care conține `R`, `L`, `U`, `D`
+- Pe ultima linie, direcțiile sunt primite sub forma unui șir care conține caracterele `R`, `L`, `U`, `D`
   
 ## Ieșire
 
-- Pe primele N linii, printați starea finală a vizuinii iepurilor
-- Pe ultima linie, printați rezultatul final – `won:` sau `dead:` + `{rând} {coloană}`
+- Pe primele N linii, imprimați starea finală a vizuinii iepurilor
+- Pe ultima linie, imprimați rezultatul final – `won:` sau `dead:` + `{rând} {coloană}`
 
 ## Constrângeri
 
 - Dimensiunile vizuinii se află în intervalul `[3 ... 20]`
-- Dimensiunile stringurilor ce indică direcțiile se află în intervalul `[1 ... 20]`
+- Dimensiunile șirului care indică direcțiile se află în intervalul `[1 ... 20]`
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -2735,7 +2733,7 @@ private static void spreadBunnies(
 ```
 [/hint] 
 [hint]
-Nu uitați să realizați validările celelalte:
+Nu uitați să realizați celelalte validări:
 
 ```java
 private static boolean isCellFree(
@@ -3053,33 +3051,29 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Vă este dată o matrice 2D cu numere întregi.
+Se dă o matrice 2D de numere întregi.
 
-Trebuie să imprimați diagonalele sale în ordine inversă.
+Trebuie să imprimați diagonalele matricei, dar în ordine inversă.
 
-Imprimați fiecare diagonală pe o linie nouă.
-
-Imaginea următoare ilustrează direcția diagonalelor:
-
-[image assetsSrc="homework-matrix-order.png" /]
+Tipăriți fiecare diagonală pe o linie nouă.
 
 ## Intrare
 
-Pe prima linie, două numere întregi - numărul R care reprezintă numărul de rânduri din matrice și numărul C care reprezintă numărul de caractere de pe fiecare rând. 
+Pe prima linie se găsește un singur număr întreg, **R**, care reprezintă numărul de rânduri din matrice. 
 
-Pe fiecare din următoarele **R** linii, se găsesc **C** numere separate prin spațiu. 
+Pe fiecare dintre următoarele **R** linii se găsesc **C** numere, separate prin spațiu. 
 
-Țineți cont de faptul că **R** și **C** ar putea avea valori diferite.
+Țineți cont de faptul că **R** și **C** pot avea valori diferite.
 
 ## Ieșire
 
-Datele de ieșire constă într-o linie nouă pentru fiecare diagonală din matrice.
+Datele de ieșire constau în diagonalele inversate ale matricei, unde numerele sunt separate printr-un spațiu, iar fiecare diagonală este scrisă pe o linie nouă.
 
 ## Constrângeri
 
-Toate numerele întregi se află în intervalul `[1 ... 1000]`
+Toate numerele întregi se află în intervalul `[1 ... 1000]`.
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 4 | 10 |
@@ -3434,32 +3428,32 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Se dă o matrice (un tablou bidimensional) cu caractere alfanumerice de tip literă mică ( `a-z` , `0-9` ), o poziție de start – definită de un rând de start `startRow` și o coloană de start `startCol` – precum și un simbol de umplere `fillChar`.
+Se dă o matrice (un tablou bidimensional) cu caractere alfanumerice minuscule (`a-z`, `0-9`), o poziție de start – definită de un rând de start `startRow` și o coloană de start `startCol` – precum și un simbol de înlocuire `fillChar`.
 
-Să presupunem că inițial simbolul `startChar` se află la rândul `startRow` și coloana `startCol`.
+Simbolul corespunzător coordonatelor `startRow` și `startCol` va fi numit `startChar`.
 
-Scrieți un program care, începând de la simbolul aflat la rândul `startRow` și coloana `startCol`, schimbă în `fillChar` fiecare simbol din matrice, care:
+Scrieți un program care, începând de la rândul `startRow` și coloana `startCol`, schimbă în `fillChar` fiecare simbol din matrice care:
 
-- e echivalent cu `startChar`
-- poate fi atins de la `startChar` mergând în sus( `row – 1` ), în jos ( `row + 1` ), la stânga ( `col – 1` ) și la dreapta ( `col + 1` ) și `călcând` DOAR pe simbolurile echivalente cu `startChar`
+- este echivalent cu `startChar`
+- poate fi atins de la `startChar` mergând în sus (`row – 1`), în jos (`row + 1`), la stânga (`col – 1`) și la dreapta (`col + 1`) și `traversând` DOAR simbolurile echivalente cu `startChar`
 
-Începând de la rândul `startRow` și coloana `startCol` și mutându-ne schimbând **rândul** sau **coloana** (nu ambele deodată, i.e. nu puteți merge pe diagonală) cu **1** și puteți merge doar la pozițiile care au `startChar` scrise pe ele. 
+Începeți de la `startRow` și `startCol` și deplasați-vă schimbând **rândul** sau **coloana** (nu ambele deodată, i.e. nu puteți merge pe diagonală) cu **1**. Puteți traversa doar pozițiile care conțin `startChar`. 
 
-Odată ce găsiți toate acele poziții, puteți să le schimbați în simbolul `fillChar`.
+Odată ce găsiți toate acele poziții, trebuie să le schimbați valoarea cu simbolul `fillChar`.
 
 ## Intrare
 
-Pe prima linie, se vor introduce 2 numere întregi - numărul de rânduri **R** și numărul de coloane **C**.
+Pe prima linie vor fi introduse 2 numere întregi - numărul de rânduri **R** și numărul de coloane **C**.
 
-Pe fiecare din următoarele **R** linii, se vor introduce **C** caractere separate prin spațiu – simbolurile de pe rândul **R** din matrice, începând de la coloana **0** și până la coloana **C - 1**.
+Pe fiecare dintre următoarele **R** linii vor fi introduse **C** caractere, separate prin spațiu – simbolurile de pe rândul matricei, începând cu coloana **0**, până la coloana **C - 1**.
 
-Pe următoarea linie, se va introduce un singur caracter – simbolul `fillChar`.
+Pe următoarea linie va fi introdus un singur caracter – simbolul `fillChar`.
 
-Pe ultima linie, se vor introduce 2 numere întregi – `startRow` și `startCol` – separate prin spațiu.
+Pe ultima linie vor fi introduse 2 numere întregi – `startRow` și `startCol` – separate prin spațiu.
 
 ## Ieșire
 
-Datele de ieșire constau în **R** linii, fiecare constând în exact **C** caractere, **nefiind separate** prin spații, reprezentând matricea după finalizarea operației de umplere.
+Datele de ieșire constau în **R** linii, fiecare având exact **C** caractere, **nefiind separate** prin spații. Cele **R** rânduri reprezintă matricea după finalizarea operației de înlocuire.
 
 ## Constrângeri
 
@@ -3467,18 +3461,18 @@ Datele de ieșire constau în **R** linii, fiecare constând în exact **C** car
 - `0 <= startRow < R`
 - `0 <= startCol < C`
 
-Toate simbolurile din matricea cu date de intrare vor fi caractere alfanumerice de tip literă mică ( `a-z` , `0-9` ). Simbolul `fillChar` va fi tot un caracter alfanumeric de tip literă mică.
+Toate simbolurile din matricea cu date de intrare vor fi caractere alfanumerice minuscule (`a-z`, `0-9`). Simbolul `fillChar` va fi tot un caracter alfanumeric de tip literă mică.
 
 
 [hints]
 [hint]
-Pentru unele teste, puteți rezolva problema utilizând o metodă simplă, însă soluția completă poate fi obținută utilizând **Stiva**, **Coada**, **DFS**, sau **BFS**.
+Pentru unele teste, puteți rezolva problema utilizând o abordare simplă. Soluția completă însă poate fi obținută utilizând **Stack**, **Queue**, **DFS** sau **BFS**.
 [/hint] 
 [/hints] 
 
 
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | 5 3 | xxx |
