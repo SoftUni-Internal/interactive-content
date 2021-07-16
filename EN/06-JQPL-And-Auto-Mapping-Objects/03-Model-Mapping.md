@@ -33,10 +33,10 @@ public class EmployeePojo {
         return this.startDate;
     }
 }
-@Entity                                     //We have our entity
+@Entity                                     // We have our entity
 @Table(name = "employees")
 public class Employee {
-    //…
+    // ...
     @Column(name = "first_name")
     private String firstName;
      @Column(name = "last_name")
@@ -47,7 +47,7 @@ public class Employee {
     private BigDecimal salary;
 }
 
-public class EmployeeDto {                  //and than our DTO 
+public class EmployeeDto {                  //and then our DTO 
 
     private String firstName;
     private String last_name;
@@ -55,7 +55,7 @@ public class EmployeeDto {                  //and than our DTO
     private String addressCity;
 }
 
-@Service                                    //Then if we use a service the mapping would be.
+@Service                                    // If we use a service, the mapping looks like this.
 public class StudentServiceImpl implements StudentService {
 
     @Autowired
@@ -84,6 +84,8 @@ It is based purely on conventions and as long as we keep this convention it will
 
 In our case, as we are mapping entities from the database to DTOs, what will happen is that the Model Mapper will stand between them creating the query and make a projection and map it for us. 
 
+
+
 The use of conventions is to determine how property and values are mapped to each other.
 
 [image assetsSrc="Spring-Data-AutoMapping-Objects(1).png" /]
@@ -94,7 +96,7 @@ The use of conventions is to determine how property and values are mapped to eac
 
 # Adding Model Mapper
 
-Before we deep into how to use **Model Mapper**, let's first add it to our project.
+To start exploring **Model Mapper**, begin by adding it to your project.
 
 1. Add as maven dependency.
 ```java
@@ -124,14 +126,14 @@ Let's take for instance.
 
 ```java
 @Entity
-@Table(name = "employees")                  //Here we have our normal Employee Entity connected to table `employees`
+@Table(name = "employees")                  // Here we have our normal Employee Entity connected to table `employees`
 public class Employee {
 
     @Column(name = "first_name")
     private String firstName;
     @Column(name = "salary")
     private BigDecimal salary;
-    @ManyToOne                               //Many to one relationship to the entity Address
+    @ManyToOne                               // Many to one relationship to the entity Address
     @JoinColumn(name = "address_id")        
     private Address address;
 }
@@ -148,8 +150,8 @@ public class EmployeeDto {
 
     private String firstName;
     private BigDecimal salary;
-    private String addressCity;             //When naming first the table and then the property you want, 
-}                                           //Model Mapper will get in the property object recursively and take its property value.
+    private String addressCity;             // When naming first the table and then the property you want, 
+}                                           // Model Mapper will get in the property object recursively and take its property value.
 ```
 ## Explicit Mapping
 
@@ -208,7 +210,7 @@ PropertyMap<EmployeeDto, Employee> employeeMap = new PropertyMap<EmployeeDto, Em
           protected void configure() {
                 map().setFirstName(source.getName());
         // Add mappings for other fields
-                map().setAddressCity(source.getAddress().getCity().getName());           //Here we use the getters to help Model Mapper find the right string we want.
+                map().setAddressCity(source.getAddress().getCity().getName());           // Here we use the getters to help Model Mapper find the right string we want.
           }
 };
 
@@ -220,8 +222,8 @@ There is a difference in the syntax **explicit mapping** in Java 7 and Java 8.
 ## Explicit Mapping DTO to Entity - Java 8
 
 ```java
-//Java 8
-//ConsoleRunner.java
+// Java 8
+// ConsoleRunner.java
 
 ModelMapper modelMapper = new ModelMapper();
 TypeMap<EmployeeDto, Employee> typeMap = mapper.createTypeMap(EmployeeDto.class, Employee.class);
@@ -245,7 +247,7 @@ Let's see it with code.
 ModelMapper modelMapper = new ModelMapper();
                                 //1.               2.
  modelMapper.createTypeMap(EmployeeDto.class, Employee.class);
- modelMapper.validate();                                            //validate method, which throws if mapping can't be done.
+ modelMapper.validate();                                            // validate method, which throws if mapping can't be done.
 
 //1. Source
 //2. Destination
@@ -274,7 +276,7 @@ ModelMapper modelMapper = new ModelMapper();
 PropertyMap<EmployeeDto, Employee> employeeMap = new PropertyMap<EmployeeDto, Employee>() {
             @Override
             protected void configure() {
-                skip().setSalary(null);                 //with the method skip we show to Model Mapper that we don't need the given property.
+                skip().setSalary(null);                 // With the method skip we show to Model Mapper that we don't need the given property.
             }
         };
 
@@ -283,7 +285,7 @@ modelMapper.addMappings(employeeMap).map(employeeDto,employee);
 
 In Java 8 we have shorter syntax.
 ```java
-typeMap.addMappings(mapper -> mapper.skip(Employee::setSalary));        //that's enough to name the property which should be skipped.
+typeMap.addMappings(mapper -> mapper.skip(Employee::setSalary));        // That's enough to name the property which should be skipped.
 typeMap.map(employeeDto);
 
 ```
@@ -297,7 +299,7 @@ For these cases, we can tell Model Mapper to try to convert the properties to th
 This can be done with additional custom configuration.
 
 ```java
-//Java 7
+// Java 7
 
 ModelMapper modelMapper = new ModelMapper();
 Converter<String, String> stringConverter = new AbstractConverter<String, String>() {
@@ -317,7 +319,7 @@ PropertyMap<EmployeeDto, Employee> employeeMap = new PropertyMap<EmployeeDto, Em
 
 modelMapper.addMappings(employeeMap).map(employeeDto,employee);
 
-//1. Using the convention we created.
+// 1. Using the convention we created.
 ```
 
 Again there is a difference in the syntax between Java 7 and Java 8
@@ -325,7 +327,7 @@ Again there is a difference in the syntax between Java 7 and Java 8
 ## Converting Properties - Java 8
 
 ```java
-//Java 8 
+// Java 8 
 ModelMapper modelMapper = new ModelMapper();
 Converter<String, String> toUppercase = ctx -> ctx.getSource() == null ? null : ctx.getSource().toUppercase();
 TypeMap<EmployeeDto, Employee> typeMap = 

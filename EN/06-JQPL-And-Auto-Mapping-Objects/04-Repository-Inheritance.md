@@ -8,9 +8,9 @@ Here you will learn what repository inheritance is and when it is applicable.
 
 Let us start by reminding ourselves what typical **inheritance** is.
 
-When we want to create a new class that extends the functionality of a different one, we can inherit its properties and methods.
+When we want to create a new class that **extends** the functionality of another class, we can inherit its properties and methods.
 
-That reduces duplicate code and increases modularity.
+This reduces duplicate code and increases **modularity**.
 
 ## Inheritance in Repositories
 
@@ -18,7 +18,7 @@ In repositories, we can use inheritance with the same intentions.
 
 When our applications get bigger, we have similar entities, extending an abstract class.
 
-The base attributes and actions towards them are more or less the same, regardless of their differences.
+The **base attributes and actions** they contain are mostly same, with some variations.
 
 [/slide]
 
@@ -47,7 +47,7 @@ This way, we reduce the number of queries while bringing code duplication to a b
 
 ```java
 // Setting an interface with a method
-// that adds a record to our Shampoo table.
+// that adds a record to our Shampoo table
 public interface CustomShampooRepository { 
     void create(BasicShampoo basicShampoo); 
 }
