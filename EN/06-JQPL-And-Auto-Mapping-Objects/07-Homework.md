@@ -1,384 +1,420 @@
-[slide]
-
 # Homework
+
+[slide hideTitle]
+
+# Resources
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/06-Spring-Advanced-Querying-Homework.zip) **for this task.**
 
-For the following tasks use the bookshop_system database from the previous exercise. 
+You will be provided with a **bookshop_system** database. 
 
-Make sure it has proper connections between the tables and it is populated with any sample data.
-
-[/slide]
-
-[slide]
-
-# Books Titles by Age Restriction
-
-### Description:
-
-Write a program that prints **the titles of all books**, 
-
-for which the **age restriction** matches the given input (minor, teen or adult). 
-
-**Ignore casing** of the input.
-
-### Example:
-
-| **input**  | **output**  |
-|---|---|
-| miNor  | A che punto Ã¨ la note  |
-|   | After Many a Summer Dies the Swan  |
-|   | Ah  |
-|   | …  |
-|   |   |
-
-| **input**  | **output**  |
-|---|---|
-| teEN  | All Passion Spent  |
-|   | Wide Sea  |
-|   | Antic Hay  |
-|   | …  |
-|   |   |
+Make sure it has proper connections between the tables and is populated with sample data.
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Golden Books
+# Problem: Books Titles by Age Restriction
 
-### Description:
+## Part 1: Bookshop System
 
-Write a program **that prints the titles of the golden edition** books, 
+You will receive an **age restriction** from the console. 
 
-which have **less than 5000 copies**.
+Create a program that retrieves the titles of all books that match the **age restriction**. 
 
-### Example:
-| **output**  |
-|---|
-|Behold the Man   |
-|Bury My Heart at Wounded Knee   |
-|The Cricket on the Hearth   |
-|…   |
-|    |
+The age restriction will be **case insensitive**. 
 
-[/slide]
+## Examples
 
-[slide]
+### Example One
 
-# Books by Price
+| **Input** | **Output** |
+| --- | --- |
+| miNor | A che punto Ã¨ la note |
+| | After Many a Summer Dies the Swan |
+| | Ah |
+| |  ... |
 
-### Description:
-Write a program that prints **the titles and prices of books** with **price lower than 5 and higher than 40**.
+### Example Two
 
-### Example:
-
-| **output**  |
-|---|
-|A che punto Ã¨ la note - $45.78   |
-|All the King's Men - $45.60   |
-|An Evil Cradling - $3.30   |
-|Beyond the Mexique Bay - $45.45  |
-|…  |
-|   |
+| **Input** | **Output** |
+| --- | --- |
+| teEN | All Passion Spent |
+| | Wide Sea |
+| | Antic Hay |
+| |  ... |
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Not Released Books
+# Problem: Golden Books
 
-Write a program that prints **the titles** of all books that are **NOT released** in a given year
+Create a program that retrieves the **titles of the golden edition books**, which have **less than 5000 copies**. 
 
-### Description:
+## Example
 
-### Example:
-
-| **input**  | **output**  |
-|---|---|
-| 2000  | Absalom  |
-|   | A che punto Ã¨ la note  |
-|   | After Many a Summer Dies the Swan  |
-|   | …  |
-|   |   |
-
-| **input**  | **output**  |
-|---|---|
-| 1998  | A che punto Ã¨ la note  |
-|   | Ah  |
-|   | Wilderness!  |
-|   | …  |
-|   |   |
+| **Output** |
+| --- |
+| Behold the Man |
+| Bury My Heart at Wounded Knee |
+| The Cricket on the Hearth |
+| ... |
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Books Released Before Date
+# Problem: Books by Price
 
-### Description:
+Create a program that retrieves **the titles and prices of books that cost less than 5** or **higher than 40**. 
 
-Write a program that prints the title, 
+## Example
 
-**the edition type and the price** of books, 
+| **Output** |
+| --- |
+| A che punto Ã¨ la note - $45.78 |
+| All the King's Men - $45.60 |
+| An Evil Cradling - $3.30 |
+| Beyond the Mexique Bay - $45.45 |
+| ... |
 
-which are **released before a given date**. 
+[/slide]
+
+[slide hideTitle]
+
+# Problem: Not Released Books
+
+Create a program that retrieves **the titles** of all books that are **not released** in a given year.
+
+## Examples
+
+### Example One
+
+| **Input** | **Output** |
+| --- | --- |
+| 2000 | Absalom |
+| | A che punto Ã¨ la note |
+| | After Many a Summer Dies the Swan |
+| |  ... |
+
+### Example Two
+
+| **Input** | **Output** |
+| --- | --- |
+| 1998 | A che punto Ã¨ la note |
+| | Ah |
+| | Wilderness! |
+| |  ... |
+
+[/slide]
+
+[slide hideTitle]
+
+# Problem: Books Released Before Date
+
+Create a program that retrieves **the title**, **the edition type, and the price** of books, which are **released before a given date**. 
 
 The date will be in the **format dd-MM-yyyy**.
 
-### Example:
+## Examples
 
-| **input**  | **output**  |
-|---|---|
-| 12-04-1992  | All Passion Spent PROMO 7.18  |
-|   | Bury My Heart at Wounded Knee GOLD 3.86  |
-|   | A Catskill Eagle NORMAL 15.78  |
-|   | ...   |
-|   |   |
+### Example One
 
-| **input**  | **output**  |
-|---|---|
-| 30-12-1989  | Bury My Heart at Wounded Knee GOLD 3.86  |
-|   | Consider the Lilies PROMO 30.89  |
-|   | The Curious Incident of the Dog in the Night-Time NORMAL 23.41  |
-|   | …  |
-|   |   |
+| **Input** | **Output** |
+| --- | --- |
+| 12-04-1992 | All Passion Spent PROMO 7.18 |
+| | Bury My Heart at Wounded Knee GOLD 3.86 |
+| | A Catskill Eagle NORMAL 15.78 |
+| | ... |
 
-[/slide]
+### Example Two
 
-[slide]
-
-# Authors Search
-
-### Description:
-
-Write a program that prints **the names** of those authors, 
-
-whose **first name ends with a given string**.
-
-### Example:
-
-| **input**  | **output**  |
-|---|---|
-| e  | George Powell  |
-|   | Jane Ortiz  |
-|   | Julie Washington  |
-|   |   |
-
-| **input**  | **output**  |
-|---|---|
-| dy  | Randy Morales  |
-|   | Randy Graham  |
-|   |   |
+| **Input** | **Output** |
+| --- | --- |
+| 30-12-1989 | Bury My Heart at Wounded Knee GOLD 3.86 |
+| | Consider the Lilies PROMO 30.89 |
+| | The Curious Incident of the Dog in the Night-Time NORMAL 23.41 |
+| |  ... |
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Books Search
+# Problem: Authors Search
 
-### Description:
+Create a program that retrieves **the names** of the authors whose **first names end with a given string**.
 
-Write a program that prints **the titles of books**, 
+## Examples
 
-which **contain a given string** (regardless of the casing).
+### Example One
 
-### Example:
+| **Input** | **Output** |
+| --- | --- |
+| e | George Powell |
+| | Jane Ortiz |
+| | Julie Washington |
 
-| **input**  | **output**  |
-|---|---|
-| sK  | A Catskill Eagle  |
-|   | The Daffodil Sky  |
-|   | The Skull Beneath the Skin  |
-|   |   |
+### Example Two
 
-| **input**  | **output**  |
-|---|---|
-| WOR  | Great Work of Time  |
-|   | Terrible Swift Sword  |
-|   |   |
-
-
+| **Input** | **Output** |
+| --- | --- |
+| dy | Randy Morales |
+| | Randy Graham |
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Book Titles Search
+# Problem: Books Search
 
-### Description:
+Create a program that retrieves **the titles of books**, which **contain a given string** (regardless of the casing).
 
-Write a program that prints the titles of books, 
+## Examples
 
-which are written by authors, 
+### Example One
 
-whose last name starts with a given string.
+| **Input** | **Output** |
+| --- | --- |
+| sK | A Catskill Eagle |
+| | The Daffodil Sky |
+| | The Skull Beneath the Skin |
 
-### Example:
+### Example Two
 
-| **input**  | **output**  |
-|---|---|
-| Ric  | Arms and the Man (Amanda Rice)   |
-|   | ...  |
-|   |   |
-
-| **input**  | **output**  |
-|---|---|
-| gr  | Cover Her Face (Brenda Griffin)  |
-|   | ...  |
-|   |   |
-
-Book Title ( Authors first and last name)
-**Check results manually in DB, because we insert random Authors for every books.**
-
+| **Input** | **Output** |
+| --- | --- |
+| WOR | Great Work of Time |
+| | Terrible Swift Sword |
 
 [/slide]
 
+[slide hideTitle]
 
-[slide]
+# Problem: Book Titles Search
 
-# Count Books
+Create a program that retrieves the titles of books, which are **written by authors** whose **last names start with a given string**.
 
-### Description:
+## Examples
 
-Write a program that prints **the number of books**, 
+### Example One
 
-whose **title is longer than a given number**.
+| **Input** | **Output** |
+| --- | --- |
+| Ric | Arms and the Man (Amanda Rice) |
+| | ... |
+| | Book Title (Author's first and last name) |
+| | **Check the results manually in the database, because we insert random Authors for every book.** |
 
-### Example:
+### Example Two
 
-| **input**  | **output**  | **output**  |
-|---|---|---|
-| 12  | 174  | There are 174 books with longer title than 12 symbols  |
-| 40  | 2  | There are 2 books with longer title than 40 symbols  |
-|   |   |   |
-
-
-[/slide]
-
-
-[slide]
-
-# Total Book Copies
-
-### Description:
-
-Write a program that prints the **total number of book copies by author**. 
-
-Order the results **descending by total book copies**.
-
-### Example:
-
-| **Output**  | 
-|---|
-| Randy	Graham - 196584  |
-|   |
-
-**Check results manually in DB, because we insert random Authors for every books.**
+| **Input** | **Output** |
+| --- | --- |
+| gr | Cover Her Face (Brenda Griffin) |
+| | ... |
+| | Book Title (Author's first and last name) |
+| | **Check the results manually in the database, because we insert random Authors for every book.** |
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Reduced Book
+# Problem: Count Books
 
-### Description:
+Create a program that retrieves **the number of books**, which **titles' character length is longer than a given number**. 
 
-Write a program that prints **information (title, edition type, age restriction and price)** for a book **by given title**. 
+## Example
 
-When retrieving the book information **select only those fields** and **do NOT include any other information** in the returned result.
-
-### Example:
-
-| **input**  | **output**  |
-|---|---|
-| Things Fall Apart    | Things Fall Apart GOLD ADULT 40.02  |
-|    |    |
-
+| **Input** | **Output** | **Comments** |
+| --- | --- | --- |
+| 12 | 174 | There are 174 books with titles longer than 12 symbols |
+| 40 | 2 | There are 2 books with titles longer than 40 symbols | |
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Increase Book Copies
+# Problem: Total Book Copies
 
-### Description:
+Create a program that retrieves the **total number of book copies by author**. 
 
-Write a program that **increases the copies of all books released after a given date with a given number**. 
+Order the results **in descending order by the total book copies**.
+
+## Example
+
+| **Output** | 
+| --- |
+| Randy	Graham - 196584 |
+| **Check the results manually in the database, because we insert random Authors for every book.** |
+
+[/slide]
+
+[slide hideTitle]
+
+# Problem: Reduced Book
+
+Create a program that retrieves the **information (title, edition type, age restriction, and price)** for a book **by given title**. 
+
+When retrieving the book's information, **select only the specified fields**.
+
+## Example
+
+| **Input** | **Output** |
+| --- | --- |
+| Things Fall Apart | Things Fall Apart GOLD ADULT 40.02 |
+
+[/slide]
+
+[slide hideTitle]
+
+# Problem: Increase Book Copies
+
+Create a program that **increases the copies of all books released after a given date with a given number**. 
 
 Print the total amount of book copies that were added.
 
-**Input**
+## Input
 
--	On the **first line** - date in the format **dd MMM yyyy**. 
-If a book is released after that date (exclusively), 
-increase its book copies with the provided number from the second line of the input.
+-	On the **first line** - a date in the format **dd MMM yyyy**
+  * if a book is released after that date (exclusively), increase its book copies with the provided number from the second line of the input
 
--	On the **second line** - number of **book copies** each book should be increased with.
+-	On the **second line** - the number of **book copies** each book should be increased with
 
-**Output**
--	**Total number of books** that was added to the database.
+## Output
+-	**Total number of books** that was added to the database
 
+## Examples
 
-### Example:
+### Example One
 
-| **input**  | **output**  | **comments**  |
-|---|---|---|
-| 12 Oct 2005   | 6100   | 61 books are released after 12 Oct 2005, so total of 6100 book copies were added  |
-| 100   |    |    |
-|    |    |    |
+| **Input** | **Output** | **comments** |
+| --- | --- | --- |
+| 12 Oct 2005 | 6100 | 61 books have been released after 12 Oct 2005, so a total of 6100 book copies were added |
+| 100 | | |
 
-| **input**  | **output**  | **comments**  |
-|---|---|---|
-| 06 Jun 2013   | 572   | 13 books are released after 6 Jun 2013, so total of 572 book copies were added  |
-| 44   |    |    |
-|    |    |    |
+### Example Two
 
-
-[/slide]
-
-[slide]
-
-# Remove Books
-
-### Description:
-
-Write a program that **removes from the database those books**, 
-
-which **copies are lower than a given number**. 
-
-Print the** number of books that were deleted** from the database.
+| **Input** | **Output** | **comments** |
+| --- | --- | --- |
+| 06 Jun 2013 | 572 | 13 books have been released after 6 Jun 2013, so total of 572 book copies were added |
+| 44 | | |
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Stored Procedure
+# Problem: Remove Books
 
-### Description:
+Create a program that **removes from the database those books**, which **are less than the provided number**. 
 
-Using Workbench (or other similar tool) **create a stored procedure**, 
+Print the **number of books that were deleted** from the database.
 
-which receives an **author's first and last name** and returns the **total amount of books the author has written**. 
+[/slide]
 
-Then write a **program that receives an author's name** and prints the **total number of books** the author has written by **using the stored procedure** you've just created.
+[slide hideTitle]
 
-### Example:
+# Problem: Stored Procedure
 
-| **input**  | **output**  |
-|---|---|
-| Amanda Rice    | Amanda Rice has written 9 books  |
-|    |    |
+Using the MySQL Workbench (or other similar tools) **create a stored procedure**, which receives an **author's first and last name** and returns the **total amount of books the author has written**. 
 
-| **input**  | **output**  |
-|---|---|
-| Christina Jordan    | {Author first and last name} has writtent {number of books} books  |
-|    |    |
+Then, create a **program that receives an author's name** and returns the **total number of books that the author has written** by **using the newly created stored procedure**.
 
-| **input**  | **output**  |
-|---|---|
-| Wanda Morales    | {Author first and last name} has writtent {number of books} books  |
-|    |    |
+## Examples
 
-**Check results manually in DB, because we insert random Authors for every books.**
+### Example One
+
+| **Input** | **Output** |
+| --- | --- |
+| Amanda Rice | Amanda Rice has written 9 books |
+| | **Check the results manually in the database, because we insert random Authors for every book.** |
+
+### Example Two
+
+| **Input** | **Output** |
+| --- | --- |
+| Christina Jordan | \{Author first and last name\} has writtent \{number of books\} books |
+
+### Example Three
+
+| **Input** | **Output** |
+| --- | --- |
+| Wanda Morales | \{Author first and last name\} has writtent \{number of books\} books |
+
+[/slide]
+
+[/slide]
+
+[slide hideTitle]
+
+# Problem: Data Models 
+
+## Part 2: SoftUni Authentication Service 
+
+Create the required **entities**. Use appropriate **data types**.
+
+- The system contains information about *users* 
+- Users can **register** in the system
+
+For a successful registration, the user must have:
+
+- an **email**
+- a **password**
+- a full name
+- a "**created**" field, which should be automatically populated with the **current time**
+- a "**modified**" field - should be automatically filled when a **modification is made to the user**
+
+[slide hideTitle]
+
+# Problem: Implement User Registration, Login and Logout 
+
+**Unauthenticated** users can either register or log in:
+
+- `RegisterUser|<email>|<password>|<confirmPassword>|<fullName>` - this command adds a new user to the database if the parameters are valid
+  * otherwise, it prints appropriate messages informing why the user cannot be registered
+
+The requirements for **valid parameters** are: 
+
+- **Email** – must contain the `@` sign and a period
+  * it must be unique
+
+- **Password** – the character length must be **at least 6 symbols** and must contain at least **1 uppercase** letter, **1 lowercase** letter and **1 digit**
+
+- **Confirm Password** – must **match** the provided password
+
+- `LoginUser|<email>|<password>` - this command sets the current logged in user, if it exists
+  * otherwise, prints an appropriate message
+
+**Logged in** users can logout.
+
+- `Logout` – this command logs the user out of the system
+  * if there is no logged in user, prints the appropriate message
+
+## Examples
+
+### Example One
+
+| **Input** | **Output** |
+| --- | --- |
+| RegisterUser\|aariel@fixari.com\|aAriel123\|aAriel123\|Ariel | Ariel was registered |
+| LoginUser\|aariel@fixari.com\|aAriel123 | Successfully logged in Ariel |
+| Logout | User Ariel successfully logged out |
+
+### Example Two
+
+| **Input** | **Output** |
+| --- | --- |
+| RegisterUser\|aariel.com\|aAriel123\|aAriel123\|Ariel | Incorrect username / password |
+
+### Example Three
+
+| **Input** | **Output** |
+| --- | --- |
+| LoginUser\|aariel@fixari.com\|aAriel123 | Ariel was registered |
+
+### Example Four
+
+| **Input** | **Output** |
+| --- | --- |
+| Logout | Cannot log out. No user was logged in. |
 
 [/slide]

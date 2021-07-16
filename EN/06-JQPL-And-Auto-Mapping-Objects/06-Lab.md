@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Description
+# Resources
 
 Download the resources for these tasks [here]().
 
