@@ -30,7 +30,7 @@ The age restriction will be **case insensitive**.
 
 | **Input** | **Output** |
 | --- | --- |
-| miNor | A che punto Ã\˙\˙ la note |
+| miNor | A che punto Ã˙\˙ la note |
 | | After Many a Summer Dies the Swan |
 | | Ah |
 | |  ... |
