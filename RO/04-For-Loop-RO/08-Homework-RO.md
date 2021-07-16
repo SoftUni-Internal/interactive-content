@@ -477,7 +477,7 @@ Scrieți un program care:
 
 [hints]
 [hint]
-The number that is being divided is called the **dividend**. The number that it is being divided by is called the **divisor**. The result of the division is the **quotient**.
+Numărul care este împărțit se numește deîmpărțit. Numărul la care acesta este împărțit se numește **divizor**. Rezultatul împărțirii se numește cât.
 [/hint]
 [/hints]
 
