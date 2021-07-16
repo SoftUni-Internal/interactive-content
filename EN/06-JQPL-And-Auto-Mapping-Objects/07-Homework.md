@@ -342,8 +342,6 @@ Then, create a **program that receives an author's name** and returns the **tota
 
 [/slide]
 
-[/slide]
-
 [slide hideTitle]
 
 # Problem: Data Models 
@@ -362,6 +360,8 @@ For a successful registration, the user must have:
 - a full name
 - a "**created**" field, which should be automatically populated with the **current time**
 - a "**modified**" field - should be automatically filled when a **modification is made to the user**
+
+[/slide]
 
 [slide hideTitle]
 
