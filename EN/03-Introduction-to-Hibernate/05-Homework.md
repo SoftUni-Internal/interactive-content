@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Setup
+# Initial Setup
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/03-Java-ORM-And-Spring-Data-introtohibernate_resources-NEW.zip) **for this task.**
 
@@ -26,15 +26,19 @@ EntityManager em = factory.createEntityManager();
 
 [slide hideTitle]
 
-# Change Casing 
+# Problem: Change Casing 
 
-Use the **soft_uni** database. Persist **all towns** from the database. Detach those whose name length is **more than 5 symbols.** Then transform the **names** of all attached towns **to lowercase** and **save them to the database.**
+Use the **soft_uni** database. Persist **all towns** from the database. 
+
+Detach those whose name length is **more than 5 symbols.**
+ 
+Then transform the **names** of all attached towns **to lowercase** and **save them to the database.**
 
 [/slide]
 
 [slide hideTitle]
 
-# Contains Employee
+# Problem: Contains Employee
 
 Use the **soft_uni** database. 
 
@@ -51,7 +55,7 @@ Write a program that checks if **the database** contains a given employee's name
 
 [slide hideTitle]
 
-# Employees with Salaries Above 50 000
+# Problem: Employees with Salaries Above 50 000
 
 Write a program that obtains the first names of all employees with salaries above **50 000**.
 
@@ -64,12 +68,11 @@ Write a program that obtains the first names of all employees with salaries abov
 | Ken |
 | ... | 
 
-
 [/slide]
 
 [slide hideTitle]
 
-# Employees from Department
+# Problem: Employees from Department
 
 Extract all employees from the **Research and Development** department. 
 
@@ -93,19 +96,17 @@ Print the **first name, last name, department name** and **salary of each employ
 
 [slide hideTitle]
 
-# Adding a New Address and Updating an Employee
+# Problem: Adding a New Address and Updating an Employee
 
 Create a new address with text **"Oxford Str 15"**.
  
 Assign it to an **employee** whose **last name** matches the given **input**.
 
-
 [/slide]
-
 
 [slide hideTitle]
 
-# Addresses with Employee Count
+# Problem: Addresses with Employee Count
 
 Find all addresses, **ordered** by the **number of employees** living there (in **descending order**).
 
@@ -119,12 +120,11 @@ Take only the **first 10 addresses** and print their **address text**, **town na
 | 7726 Driftwood Drive, Monroe - 2 employees |
 | ... |
 
-
 [/slide]
 
 [slide hideTitle]
 
-# Get Employee with Project
+# Problem: Get Employee with Project
 
 Get an **employee by their id.**
 
@@ -134,27 +134,45 @@ The projects should be **ordered by name** (in ascending order).
 
 The **output**'s layout should match the example below. 
 
-## Example
+## Examples
 
-| **Input** | **Output** |
-| --- | --- |
-| 147 | Linda Randall - Production Technician |
-|     | HL Touring Handlebars |
-|     | ML Road Rear Wheel |
-|     | Patch kit | 
-|     | Touring-1000 |
-| 83  | John Evans - Production Technician |
-|     | Half-Finger Gloves | 
-|     | LL Mountain Handlebars |
-|     | Racing Socks |
-|     | Women's Tights |
+### Example One
+
+#### Input
+
+`147`
+
+#### Output
+
+```
+Linda Randall - Production Technician 
+    HL Touring Handlebars 
+    ML Road Rear Wheel 
+    Patch kit 
+    Touring-1000 
+```
+
+### Example Two
+
+#### Input
+
+`83`
+
+#### Output
+
+```
+John Evans - Production Technician 
+    Half-Finger Gloves 
+    LL Mountain Handlebars 
+    Racing Socks 
+    Women's Tights 
+```
 
 [/slide]
 
-
 [slide hideTitle]
 
-# Find Latest 10 Projects
+# Problem: Find Latest 10 Projects
 
 Write a program that prints the **last 10 started projects**. 
 
@@ -166,27 +184,29 @@ Verify that the output format matches the example.
 
 ## Example
 
-| **Output** |
-| --- |
-|  Project name: All-Purpose Bike Stand |
-| 	Project Description: Research, design and development of … |
-| 	Project Start Date:2005-09-01 00:00:00.0 | 
-| 	Project End Date: null |
-|  Project name: Bike Wash |
-| 	Project Description: Research, design and development of … |
-| 	Project Start Date:2005-08-01 00:00:00.0 |
-| 	Project End Date: null |
-|  Project name: HL Touring Frame |
-| 	Project Description: Research, design and development of … |
-| 	Project Start Date:2005-05-16 16:34:00.0 |
-| 	Project End Date: null |
-| ... |
+### Output
+
+```
+Project name: All-Purpose Bike Stand 
+    Project Description: Research, design and development of … 
+    Project Start Date:2005-09-01 00:00:00.0 
+    Project End Date: null 
+Project name: Bike Wash 
+    Project Description: Research, design and development of … 
+    Project Start Date:2005-08-01 00:00:00.0 
+    Project End Date: null 
+Project name: HL Touring Frame 
+    Project Description: Research, design and development of … 
+    Project Start Date:2005-05-16 16:34:00.0 
+    Project End Date: null 
+… 
+```
 
 [/slide]
 
 [slide hideTitle]
 
-# Increase Salaries
+# Problem: Increase Salaries
 
 Write a program that increases the salaries of all employees, part of the **Engineering**, **Tool Design**, **Marketing**, or **Information Services** departments by **12%.**
 
@@ -202,13 +222,11 @@ Then, **print the first names, the last names, and the salaries** of the employe
 | Terri Duffy ($71120.00) |
 | ... |
 
-
 [/slide]
-
 
 [slide hideTitle]
 
-# Find Employees by First Name
+# Problem: Find Employees by First Name
 
 Write a program that finds all employees whose **first names start with a pattern, received as input**. 
 
@@ -225,12 +243,11 @@ Print their **first and last names, job titles, and salaries** in the format sho
 |    | Sameer Tejani - Production Technician - ($11000.00) |
 |    | Sandeep Kaliyath - Production Technician - ($15000.00) |
 
-
 [/slide]
 
 [slide hideTitle]
 
-# Employees Largest Salaries
+# Problem: Employees Largest Salaries
 
 Write a program that finds the **largest salary** in each **department.** 
 
@@ -246,14 +263,11 @@ Write a program that finds the **largest salary** in each **department.**
 | Production 84100.00 |
 | ... |
 
-
-
 [/slide]
-
 
 [slide hideTitle]
 
-# Remove Towns
+# Problem: Remove Towns
 
 Write a program that **deletes a town** which name matches the input.
 

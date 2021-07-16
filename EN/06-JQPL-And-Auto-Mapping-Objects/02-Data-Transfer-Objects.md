@@ -44,11 +44,11 @@ If we have a simple application and interact with a database to obtain an entity
 
 Otherwise, we replicate the object entity.
 
-Here is a scheme of a typical database interaction in a web application happens.
+Here is a scheme of a typical database interaction in a web application.
 
 [image assetsSrc="Spring-Data-AutoMapping-Objects.png" /]
 
-Another benefit of DTOs is that they convey the information we need.
+Another benefit of DTOs is that they convey the exact information we need.
 
 For instance, we may need information about a **Person** entity, like their **name and age**, but we also want to obtain their **address** in another table connected with a foreign key.
 
@@ -86,7 +86,7 @@ public class Employee {
 @Entity
 @Table(name = "addresses")          // The entity for the addresses from the database
 public class Address {
-    
+
     @Basic
     private String city;
 }
@@ -100,7 +100,7 @@ public class EmployeeDto {          // Our data transfer object that combines
 }
 ```
 
-In this snippet, we have **three** classes:
+The code above displays **three** classes:
 
 - `Employee` - represents an **"employee"** entity
 - `Address` - holds the **"city"** property of an employee

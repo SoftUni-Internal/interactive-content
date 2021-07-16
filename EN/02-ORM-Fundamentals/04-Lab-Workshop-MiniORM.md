@@ -102,7 +102,9 @@ In order to achieve this, we will require the following parameters for the datab
   - we must create one **manually**
    
 ```java
-public static void createConnection(String username, String password, String dbName) throws SQLException {
+public static void createConnection(String username, String password, String dbName) 
+    throws SQLException {
+
     Properties props = new Properties();
     props.setProperty("user", username);
     props.setProperty("password", password);
@@ -248,7 +250,6 @@ private Field getId(Class entity) {
             .orElseThrow(() -> new UnsupportedOperationException("Entity does not have a primary key"));
 ```
 
-
 If returned value is **null**, we need to do an **insert**. 
 
 Otherwise, we should perform an **update**. 
@@ -263,9 +264,8 @@ public boolean persist(E entity) throws IllegalAccessException {
 
     if (value == null || (int) value <= 0) {
         return this.doInsert(entity, primaryKey);
-    } else {
-        return this.doUpdate(entity, primaryKey);
-    }
+    } 
+    return this.doUpdate(entity, primaryKey);
 }
 ```
 
@@ -277,13 +277,13 @@ We need to implement **two** more methods:
 
 Both methods prepare query statements and execute them. 
 
-The difference between them is that when inserting a new entity, you should **set its** `id`. 
+The difference between them is that when **inserting** a new entity, you should **set its** `id`. 
 
 The `id` is generated on database level. 
 
 Both methods **return** whether the entity was successfully persisted. 
 
-## `doInsert`
+## `doInsert(E entity, Field primary)`
 
 Implement the `doInsert` method by following these steps:  
 
@@ -297,21 +297,18 @@ Implement the `doInsert` method by following these steps:
 - **Prepare and execute** the statement via the **connection** 
 
 ```java
-private boolean doInsert(E entity, Field primaryKey) throws SQLException {
+private boolean doInsert(E entity, Field primary throws SQLException, IllegalAccessException {
     String tableName = this.getTableName(entity.getClass());
-    List<String> fieldNames = this.getFieldNames(entity);
-    List<String> fieldValues = this.getFieldValues(entity);
+    String query = "INSERT INTO " + this.getTableName(entity.getClass()) + "( ";
 
-    String insertQuery = String.format(INSERT_QUERY, tableName, String.join(", ", fieldNames),
-        String.join(", ", fieldValues));
+    // TODO: Get fields and values
 
-
-    return this.executeQuery(insertQuery);
+    return connection.prepareStatement(query).execute();
 }
 ```
 
 
-## `doUpdate`
+## `doUpdate(E entity, Field primary)`
 
 The `doUpdate` method's implementation is similar: 
 
@@ -325,18 +322,13 @@ The `doUpdate` method's implementation is similar:
 - **Prepare and execute** the statement via the **connection** 
 
 ```java
-private boolean doUpdate(E entity, Field primaryKey) throws IllegalAccessException {
+private boolean doUpdate(E entity, Field primary) throws IllegalAccessException, SQLException {
     String tableName = this.getTableName(entity.getClass());
 
-    List < String > setFieldNameAndValues = Arrays.stream(entity.getClass().getDeclaredFields())
-        .map(getFieldNameAndValue(entity))
-        .collect(Collectors.toList());
+    // TODO: Get fields and values
+    // TODO: Add WHERE clause
 
-    String updateQuery = String.format(UPDATE_QUERY, tableName,
-        String.join(", ", setFieldNameAndValues),
-        " id = " + primaryKey.get(entity));
-
-    return executeQuery(updateQuery);
+    return connection.prepareStatement(query).execute();
 }
 ```
 
@@ -354,7 +346,18 @@ Here are some tips of how to implement `public E findFirst(Class<E> table, Strin
 
 The rest of the methods have a **similar** implementation. 
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-16.jpg" /]
+```java
+public E findFirst(Class <E> table, String where) throws SQLException, IllegalAccessException, InstantiationException{
+    Statement stmt = connection.createStatement();
+    String query = "SELECT * FROM" + this.getTableName(table) + " WHERE 1 " + (where != null ? " AND " + where : "") + " LIMIT 1";
+
+    ResultSet rs = stmt.executeQuery(query);
+    E entity = table.newInstance();
+    rs.next();
+    this.fillEntity(table, rs, entity);
+    return entity;
+}
+```
 
 As shown above, we use a new `fillEntity` method. 
 
@@ -362,13 +365,39 @@ This method receives a `ResultSet` object, **retrieves information from the curr
 
 Create two methods - `fillEntity` and `fillField`.
 
-## `fillEntity`
+## `fillEntity`:
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-17.jpg" /]
+```java
+private void fillEntity(Class < E > table, ResultSet resultSet, E entity) 
+    throws SQLException, IllegalAccessException {
+    
+    Field[] declaredFields = table.getDeclaredFields();
+    for (Field field: declaredFields) {
+        field.setAccessible(true);
+        fillField(field, entity, resultSet, 
+                field.isAnnotationPresent(Id.class) 
+                    ? "id" : field.getAnnotation(Column.class).name());
+    }
+}
+```
 
-## `fillField`
+## `fillField`:
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-18.jpg" /]
+```java
+private void fillField(Field field, E entity, ResultSet resultSet, String name) 
+    throws SQLException, IllegalAccessException {
+
+    field.setAccessible(true);
+    switch (name) {
+    case "id" -> field.set(entity, resultSet.getInt("id"));
+    case "username" -> field.set(entity, resultSet.getString("username"));
+    case "password" -> field.set(entity, resultSet.getString("password"));
+    case "age" -> field.set(entity, resultSet.getInt("age"));
+    case "registration_date" -> field.set(entity, resultSet.
+            .getString("registration_date"));
+    }
+}
+```
 
 Both methods **cooperate closely**. 
 
@@ -399,7 +428,26 @@ Make sure that the data is always **up-to-date** in the database.
 
 Here is some example usage:  
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-19.jpg" /]
+```java
+public class Main {
+    public static void main(String[] args) 
+            throws SQLException, IllegalAccessException, InstantiationException {
+        
+        Scanner scanner = new Scanner(System.in);
+
+        String username = scanner.nextLine().trim();
+        String password = scanner.nextLine().trim();
+        String db = scanner.nextLine();
+
+        Connector.createConnection(username, password, db);
+        EntityManager<User> em = new EntityManager<>(Connector.getConnection());
+
+        User testUser = new User("test_user", 20, new Date());
+        em.persist(testUser);
+        User found = em.findFirst(User.class, "age > 18");
+    }
+}
+```
 
 [/slide]
 

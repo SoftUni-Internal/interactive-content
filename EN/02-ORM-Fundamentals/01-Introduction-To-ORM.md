@@ -28,9 +28,9 @@ It often works in conjunction with the **web framework** used to write the rest 
 
 # Why Do We Need ORM?
 
-**Object-oriented languages** are concerned with objects, which are **non-scalar values**.
+**Object-oriented languages** are based on the concept of "objects", which have **non-scalar values**.
 
-Databases do not share that **object-oriented** nature and work only with scalar values ( **integer**, **string**, etc.).
+Databases do not share that **object-oriented** nature and work only with **scalar** values ( **integer**, **string**, etc.).
 
 **Parsing** and **serialization** are required for **OOP languages** to communicate with **databases**.
 
@@ -145,7 +145,7 @@ Student student = (Student)
 session.get(Student.class, 1); // gets a student with id = 1
 ```
 
-And the corresponding **SQL query**:
+Results in the following **query**:
 
 ```java
 SELECT * FROM students WHERE id=1;
@@ -161,13 +161,13 @@ SELECT * FROM students WHERE id=1;
 
 The following code shows examples of custom queries with **both** query languages:
 
-- `HQL`:
+## `HQL`:
 
 ```java
 List<Student> studentList = session.createQuery("FROM Student").toList();
 ```
 
-- `SQL`:
+## `SQL`:
 
 ```java
 String sql = "SELECT * FROM EMPLOYEE";
