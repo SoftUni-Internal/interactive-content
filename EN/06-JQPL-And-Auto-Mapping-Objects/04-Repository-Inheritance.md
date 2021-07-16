@@ -43,7 +43,7 @@ public interface ChemicalIngredientRepository extends IngredientRepository <Basi
 }
 ```
 
-This way, we achieve a reduction in the number of queries, while also bringing code duplication to a bare minimum:
+This way, we reduce the number of queries while bringing code duplication to a bare minimum.:
 
 ```java
 // Setting an interface with a method

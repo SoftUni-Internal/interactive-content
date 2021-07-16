@@ -36,7 +36,7 @@ The syntax of JPQL is similar to that of SQL, with one notable difference - SQL 
 Consider the following example:
 
 ```java
-1.            2.                 3.          4.
+1.            2.                 3.     4.
 SELECT i FROM Ingredient i WHERE b.name IN names
 ```
 
@@ -48,11 +48,11 @@ SELECT i FROM Ingredient i WHERE b.name IN names
 ## Update and Delete
 
 ```java
-//A Batch Update clause
+// A Batch Update clause
 
-UPDATE Ingredients AS b         1.
-SET b.price = b,price * 1.10    2.
-WHERE b.name in names          3.
+UPDATE Ingredients AS b         // 1
+SET b.price = b,price * 1.10    // 2
+WHERE b.name in names           // 3
 ```
 
 1. The UPDATE keyword and pointing the entity with an alias.
@@ -60,8 +60,8 @@ WHERE b.name in names          3.
 3. The filtration clause.
 
 ```java
-DELETE FROM Ingredient AS b     1. 
-WHERE b.name = :name            2.
+DELETE FROM Ingredient AS b     // 1 
+WHERE b.name = :name            // 2
 ```
 
 1. The DELETE clause plus the entity by choice and an alias
@@ -84,18 +84,18 @@ There are three **JOIN** clause types available in JPQL:
 Take a look at the following example:
 
 ```java
-SELECT s.name                 
-FROM Shampoo AS s             
-INNER JOIN s.batch AS b      
-WHERE b.batchDate <:batchDate 
+SELECT s.name                  // 1
+FROM Shampoo AS s              // 2
+INNER JOIN s.batch AS b        // 3
+WHERE b.batchDate <:batchDate  // 4
 ```
 
-We choose the data we want from the table through SELECT.
+1. We choose the data we want from the table through SELECT.
 
-Then, we declare the entities and their aliases.
+2. Then, we declare the entities and their aliases.
 
-We use the JOIN keyword and the table on which to execute the operation.
+3. We use the JOIN keyword and the table on which to execute the operation.
 
-Finally, we can filter the data by using the properties of the joined entity.
+4. Finally, we can filter the data by using the properties of the joined entity.
 
 [/slide]

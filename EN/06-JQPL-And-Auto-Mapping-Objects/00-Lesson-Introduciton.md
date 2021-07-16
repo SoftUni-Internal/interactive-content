@@ -11,12 +11,13 @@
 - Usage
 
 **2. Repository Inheritance**
+- How to inherit repositories
 
 **3. Data Transfer Objects**
-- Definition
-- Usage
+- Using Entities
 
 **4. Model Mapping**
 - Auto-Mapper
+- Adding a model mapper
 
 [/slide]
