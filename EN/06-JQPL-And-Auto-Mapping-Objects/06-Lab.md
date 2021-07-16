@@ -4,7 +4,7 @@
 
 # Resources
 
-Download the resources for these tasks [here]().
+Download the resources for these tasks [here](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/Lab-Resources-JPQL-and-Auto-Mapping-Objects.zip).
 
 You are given an implementation of the **Shampoo Company**.
 

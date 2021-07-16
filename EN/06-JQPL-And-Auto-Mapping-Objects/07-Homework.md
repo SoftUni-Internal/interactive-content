@@ -4,7 +4,7 @@
 
 # Resources
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/06-Spring-Advanced-Querying-Homework.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/Homework-Resources-JPQL-and-Auto-Mapping-Objects.zip) **for this task.**
 
 You will be provided with a **bookshop_system** database. 
 
@@ -30,7 +30,7 @@ The age restriction will be **case insensitive**.
 
 | **Input** | **Output** |
 | --- | --- |
-| miNor | A che punto Ã˙˙ la note |
+| miNor | A che punto Ã\˙\˙ la note |
 | | After Many a Summer Dies the Swan |
 | | Ah |
 | |  ... |
@@ -94,7 +94,7 @@ Create a program that retrieves **the titles** of all books that are **not relea
 | **Input** | **Output** |
 | --- | --- |
 | 2000 | Absalom |
-| | A che punto Ã˙˙ la note |
+| | A che punto Ã\˙\˙ la note |
 | | After Many a Summer Dies the Swan |
 | |  ... |
 
@@ -102,7 +102,7 @@ Create a program that retrieves **the titles** of all books that are **not relea
 
 | **Input** | **Output** |
 | --- | --- |
-| 1998 | A che punto Ã˙˙ la note |
+| 1998 | A che punto Ã\˙\˙ la note |
 | | Ah |
 | | Wilderness! |
 | |  ... |
