@@ -20,7 +20,6 @@ Before you start, insert the data from the "**shampoo-company-insert.sql**" file
 
 Create a method that selects all shampoos with a **given size, ordered by the shampoo id**.
 
-
 ## Example 
 
 | **Input** | **Output** |
