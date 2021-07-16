@@ -4,39 +4,35 @@
 
 # Concept
 
-After learning how to write queries and get our data from the database, now it's time to learn how to project this data, to receive only the information that we need.
+We previously discovered how to write queries and get our data from the database.
 
-In our Spring-Data-Intro lesson, we learned what is **Spring-Service** and what's the purpose of **Services** in general.
+Now we will see how we can project that data to receive only the information we need.
 
-It's time to re-visit this module and learn how **the services** communicate with the rest of the app.
+In our Spring Data introductory lesson, we learned what a **Spring service** is and the purpose of **Services** in general.
 
-Let's first remind ourselves what is a **service**.
+It is time to revisit this module and learn how **services** communicate with the rest of the application.
 
-Services are an architecture object, which is meant to keep our business logic, providing an interface to the rest of the app, through which it can access the logic.
+As you may know, services are architecture objects that store our business logic.
 
-Services' benefits are that we can re-use our logic wherever we need it in, as well as dividing it and providing an extra layer of abstraction.
+They provide an interface to the rest of the application for accessing the logic.
 
-They are widely used through different projects and every even slightly bigger project should be using services.
+This approach allows us to reapply our logic in separate parts of our project, providing an extra layer of abstraction.
 
-An example where services get handy is for instance if we have a web app in production and we want to release a mobile app as well, the mobile app can access and re-use the same functionality as our web app project.
+For instance, if we have a web application in production and we want to release a mobile app, the new project can access and reuse the same functionality as our web platform.
 
-The services that we had learned through our study program are data-services, which communicate with the database either directly or through repositories.
+We mainly studied data services, which communicate with the database either directly or through repositories.
 
-### How services communicate? 
+## How Services Communicate
 
-**Data Transfer Object** also known as DTOs are container classes that carry data between processes.
+**Data Transfer Objects**, also known as DTOs, are container classes that transmit data between processes.
 
 Services use DTOs to communicate with the rest of the app.
 
-In their core, they are simple POJO - "**Plain Old Java Objects**" with no logic at all but only expose properties, not methods.
+At their core, they are POJOs ( "**Plain Old Java Objects**") without logic, as they only expose properties and not methods.
 
-An example of usage of DTO is when a service method that communicates with the database is called, it would return as an answer (**the return type**) in the form of DTO. 
+**DTOs are a way of transmitting aggregated data from entities.**
 
-In our case and for the rest of the lecture when we refer to a DTO we should understand, the return type of our **Services.**
-
-Let's concatenate everything in a single sentence.
-
-**DTOs are a way of transmitting aggregated data from entities**
+For example, when we invoke a service method that communicates with the database, its return type will be a DTO. 
 
 [/slide]
 
@@ -44,17 +40,19 @@ Let's concatenate everything in a single sentence.
 
 # Entity Usage
 
-If our app is a really simple one and we communicate with a database and we need the full information of an entity, it's fine if we communicate without a DTO but directly with the entity, otherwise, we accomplish nothing but replication of the object entity.
+If we have a simple application and interact with a database to obtain an entity's information, we can communicate without a DTO but directly with the entity.
 
-Here is a scheme of how the normal communication with the database in a Web Application happens.
+Otherwise, we replicate the object entity.
+
+Here is a scheme of a typical database interaction in a web application happens.
 
 [image assetsSrc="Spring-Data-AutoMapping-Objects.png" /]
 
-One more benefit of DTOs is that they bring the information we need.
+Another benefit of DTOs is that they convey the information we need.
 
-For instance, if we need information about our DB entity **Person** like his **name and age**, but also information which is in another table connected with foreign key about his **address city**.
+For instance, we may need information about a **Person** entity, like their **name and age**, but we also want to obtain their **address** in another table connected with a foreign key.
 
-Our DTO can combine the information and ask for it, which we will receive with a single query and return in a single object instead of two. 
+Our DTO can combine the information and demand it using a single query and returning all data a single object. 
 
 [/slide]
 
@@ -62,42 +60,51 @@ Our DTO can combine the information and ask for it, which we will receive with a
 
 # DTO Usage
 
-Now let's see what a DTO would look like with code .
+This example illustrates how to use a DTO to **combine data** from multiple tables:
 
 ```java
 // Employee.java
 @Entity
-@Table(name = "employees")                  // That is our entity from the database
+@Table(name = "employees")          // This is our entity from the database
 public class Employee {
 
     @Column(name = "first_name")
     private String firstName;
 
     @Column(name = "salary")
+    private BigDecimal salary; 
     private BigDecimal salary;
+    private BigDecimal salary; 
 
     @ManyToOne
     @JoinColumn(name = "address_id")
     private Address address;
-    }
+ }
 
 
 // Address.java
 @Entity
-@Table(name = "addresses")                  // Entity for the addreses from the database
+@Table(name = "addresses")          // The entity for the addresses from the database
 public class Address {
-
+    
     @Basic
     private String city;
 }
 
 // EmployeeDto.java
-public class EmployeeDto {                  // Our DTO object, which combines information for our entity
-                                            // from two tables
+public class EmployeeDto {          // Our data transfer object that combines 
+                                    // information for our entity from two tables
     private String firstName;
     private BigDecimal salary;
     private String addressCity;
 }
-
 ```
+
+In this snippet, we have **three** classes:
+
+- `Employee` - represents an **"employee"** entity
+- `Address` - holds the **"city"** property of an employee
+- `EmployeeDto` - responsible for **combining data** from the "employees" and "addresses" tables
+  
 [/slide]
+

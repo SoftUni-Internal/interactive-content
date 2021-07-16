@@ -43,7 +43,7 @@ public interface ChemicalIngredientRepository extends IngredientRepository <Basi
 }
 ```
 
-This way, we reduce the number of queries while bringing code duplication to a bare minimum.:
+This way, we reduce the number of queries while bringing code duplication to a bare minimum:
 
 ```java
 // Setting an interface with a method
@@ -56,7 +56,7 @@ public interface CustomShampooRepository {
 @Repository
 public class CustomShampooDaoImpl implements CustomShampooRepository { 
 
-    //Injecting our Entity Manager         
+    // Injecting our Entity Manager         
     @PersistenceContext
     private EntityManager entityManager;                                        
 

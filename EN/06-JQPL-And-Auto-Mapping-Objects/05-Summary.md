@@ -17,7 +17,7 @@ public intetrface ShampooDao extends JpaRepository.
 }
 ```
 
-- Repositories can be inherited to reduce code duplication
+- **Repositories** can be **inherited** to reduce **code duplication**
 
 ```java
 interface StudentRepository extends JpaRepository<Student, Integer> {}{
@@ -27,7 +27,7 @@ List<Student> findByAgeBetween(Integer ageMin, Integer ageMax);              //.
 }
 ```
 
-- What the purpose of the **JavaConfig.java** file is
+- The **JavaConfig.java** file is
 
 - We should not expose full data about our entities
     * expose only what should be visible to the outside world

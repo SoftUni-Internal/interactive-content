@@ -2,19 +2,11 @@
 
 [slide hideTitle]
 
-# Description
+# Project Setup
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/Java-ORM-Fundamentals-Homework.zip) **for this task.**
-
-By following the steps in this document, you will create a custom ORM with basic functionality (inserting, updating, and retrieving one or multiple objects).
+By following the steps in this lab, you will create a custom ORM with basic functionality (inserting, updating, and retrieving one or multiple objects).
 
 It will allow for working with already created database tables or for creating new ones.
-
-[/slide]
-
-[slide hideTitle]
-
-# 1. Project Setup
 
 Create a new **Maven project** in IntelliJ.
 
@@ -28,15 +20,23 @@ Fill in the fields as shown below and click "Next".
 
 Select a project location and click "Next" again. 
 
-Initially, no database driver is imported. This can be done through Maven, by adding a dependency in the **"pom.xml"** file.  
+Initially, no database driver is imported. This can be done through Maven, by adding a dependency in the **"pom.xml"** file: 
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-3.jpg" /]
+```java
+<dependencies>
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.21</version>
+    </dependency>
+</dependencies>
+```
 
 [/slide]
 
 [slide hideTitle]
 
-# 2. Creating Entities
+# Creating Entities
 
 In the means of ORMs, database objects are mapped to object-oriented implementations called "**entities**".
 
@@ -60,15 +60,31 @@ The order of the constructor's parameters must be **identical to the sequence of
 
 Add Getters and Setters for all fields.
 
+```java
+public class User {
+    private int id;
+    private String username;
+    private String password;
+    private int id;
+    private Date registrationDate;
 
+    public User (String username, String password, int age, Date registrationDate) {
+        this.username = username;
+        this.password = password;
+        this.age = age;
+        this.registrationDate = registrationDate;
+    }
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-4.jpg" /]
+    // TODO: Add Getters & Setters
+
+}
+```
 
 [/slide]
 
 [slide hideTitle]
 
-# 3. Connecting to the Database
+# Connecting to the Database
 
 It is time to separate our logic into classes. 
 
@@ -85,13 +101,24 @@ In order to achieve this, we will require the following parameters for the datab
 - **dbName** – the current database for the project
   - we must create one **manually**
    
-[image assetsSrc="Java-ORM-Fundamentals-Homework-5.jpg" /]
+```java
+public static void createConnection(String username, String password, String dbName) throws SQLException {
+    Properties props = new Properties();
+    props.setProperty("user", username);
+    props.setProperty("password", password);
+    connection = DriverManager.getConnection("jdbc:mysql://localhost:3306" + dbName, props);
+}
+
+public static Connection getConnection() {
+    return connection;
+}
+```
 
 [/slide]
 
 [slide hideTitle]
 
-# 4. Creating a Database Context 
+# Creating a Database Context 
 
 Create an `interface` that will define the possible database operations.
 
@@ -107,13 +134,25 @@ Name your interface `DbContext` and define the following methods inside:
 
 - `E findFirst(Class<E> table, String where)` – returns the **first entity object** of type `E` matching the criteria given in "**where**"
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-6.jpg" /]
+```java
+public interface DbContext<E> {
+    boolean persist(E entity);
+
+    Iterable<E> find(Class<E> table); 
+
+    Iterable<E> find(Class<E> table, String where); 
+
+    E findFirst(Class<E> table); 
+
+    E findFirst(Class<E> table, String where); 
+}
+```
 
 [/slide]
 
 [slide hideTitle]
 
-# 5. Creating an Entity Manager 
+# Creating an Entity Manager 
 
 Let us begin writing the **core** of our Mini ORM. 
 
@@ -123,13 +162,24 @@ This class will implement methods of the `DbContext` interface.
 
 It will require a `Connection` object, initialized with a given connection string.  
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-7.jpg" /]
+```java
+public class EntityManager<E> implements DbContext<E> {
+    private Connection connection;
+
+    public EntityManager(Connection connection) {
+        this.connection = connection;
+    }
+
+    // TODO: Implement methods
+
+}
+```
 
 [/slide]
 
 [slide hideTitle]
 
-# 6. Persisting an Object in the Database
+# Persisting an Object in the Database
 
 The logic behind the `persist` method has a simple implementation.
 
@@ -151,15 +201,36 @@ Create 3 annotations - `Entity`, `Column`, and `Id`.
 
 ## Entity Annotation:
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-8.jpg" /]
+```java
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Entity {
+    String name();
+}
+```
 
 ## Id Annotation:
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-9.jpg" /]
+```java
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Id {
+}
+```
 
 ## Column Annotation:
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-10.jpg" /]
+```java
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.FIELD)
+public @interface Column {
+    String name();
+}
+```
 
 **Annotate the entities and their corresponding fields.** 
 
@@ -169,9 +240,14 @@ We should create an additional method `getId(Class entity)` in the `EntityManage
 
 It will return the `id` field via reflection: 
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-11.jpg" /]
+```java
+private Field getId(Class entity) {
+    return Arrays.stream(entity.getDeclaredFields())
+            .filter(x -> x.isAnnotationPresent(Id.class))
+            .findFirst()
+            .orElseThrow(() -> new UnsupportedOperationException("Entity does not have a primary key"));
+```
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-12.jpg" /]
 
 If returned value is **null**, we need to do an **insert**. 
 
@@ -179,7 +255,19 @@ Otherwise, we should perform an **update**.
 
 At this stage, the `persist` method should look like this: 
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-13.jpg" /]
+```java
+public boolean persist(E entity) throws IllegalAccessException {
+    Field primaryKey = this.getId(entity.getClass());
+    primaryKey.setAccessible(true);
+    Object value = primaryKey.get(entity);
+
+    if (value == null || (int) value <= 0) {
+        return this.doInsert(entity, primaryKey);
+    } else {
+        return this.doUpdate(entity, primaryKey);
+    }
+}
+```
 
 We need to implement **two** more methods:
 
@@ -208,7 +296,19 @@ Implement the `doInsert` method by following these steps:
 
 - **Prepare and execute** the statement via the **connection** 
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-14.jpg" /]
+```java
+private boolean doInsert(E entity, Field primaryKey) throws SQLException {
+    String tableName = this.getTableName(entity.getClass());
+    List<String> fieldNames = this.getFieldNames(entity);
+    List<String> fieldValues = this.getFieldValues(entity);
+
+    String insertQuery = String.format(INSERT_QUERY, tableName, String.join(", ", fieldNames),
+        String.join(", ", fieldValues));
+
+
+    return this.executeQuery(insertQuery);
+}
+```
 
 
 ## `doUpdate`
@@ -224,13 +324,27 @@ The `doUpdate` method's implementation is similar:
 
 - **Prepare and execute** the statement via the **connection** 
 
-[image assetsSrc="Java-ORM-Fundamentals-Homework-15.jpg" /]
+```java
+private boolean doUpdate(E entity, Field primaryKey) throws IllegalAccessException {
+    String tableName = this.getTableName(entity.getClass());
+
+    List < String > setFieldNameAndValues = Arrays.stream(entity.getClass().getDeclaredFields())
+        .map(getFieldNameAndValue(entity))
+        .collect(Collectors.toList());
+
+    String updateQuery = String.format(UPDATE_QUERY, tableName,
+        String.join(", ", setFieldNameAndValues),
+        " id = " + primaryKey.get(entity));
+
+    return executeQuery(updateQuery);
+}
+```
 
 [/slide]
 
 [slide hideTitle]
 
-# 7. Fetching Results
+# Fetching Results
 
 Once we have persisted our entities (objects) in the database it is time to implement a functionality for **getting them out of the database and persisting them in the operating memory**. 
 
@@ -269,7 +383,7 @@ Both methods **cooperate closely**.
 
 [slide hideTitle]
 
-# 8. Testing the Framework
+# Testing the Framework
 
 We are done with building the **first part** of our MiniORM.
 
@@ -291,7 +405,7 @@ Here is some example usage:
 
 [slide hideTitle]
 
-# 9. Fetching Users
+# Fetching Users
 
 Insert several users in the database and **print the usernames and passwords** of those who are **both**: 
 

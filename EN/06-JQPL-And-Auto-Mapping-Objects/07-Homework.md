@@ -30,7 +30,7 @@ The age restriction will be **case insensitive**.
 
 | **Input** | **Output** |
 | --- | --- |
-| miNor | A che punto`Ã¨`la note |
+| miNor | `A che punto Ã¨ la note` |
 | | After Many a Summer Dies the Swan |
 | | Ah |
 | |  ... |
@@ -73,7 +73,7 @@ Create a program that retrieves **the titles and prices of books that cost less 
 
 | **Output** |
 | --- |
-| A che punto`Ã¨`la note - $45.78 |
+| `A che punto Ã¨ la note - $45.78` |
 | All the King's Men - $45.60 |
 | An Evil Cradling - $3.30 |
 | Beyond the Mexique Bay - $45.45 |
@@ -94,7 +94,7 @@ Create a program that retrieves **the titles** of all books that are **not relea
 | **Input** | **Output** |
 | --- | --- |
 | 2000 | Absalom |
-| | A che punto`Ã¨`la note |
+| | `A che punto Ã¨ la note` |
 | | After Many a Summer Dies the Swan |
 | |  ... |
 
@@ -102,7 +102,7 @@ Create a program that retrieves **the titles** of all books that are **not relea
 
 | **Input** | **Output** |
 | --- | --- |
-| 1998 | A che punto`Ã¨`la note |
+| 1998 | `A che punto Ã¨ la note` |
 | | Ah |
 | | Wilderness! |
 | |  ... |
@@ -374,12 +374,12 @@ For a successful registration, the user must have:
 
 The requirements for **valid parameters** are: 
 
-- **Email** – must contain the `@` sign and a period
+1. **Email** – must contain the `@` sign and a period
   * it must be unique
 
-- **Password** – the character length must be **at least 6 symbols** and must contain at least **1 uppercase** letter, **1 lowercase** letter and **1 digit**
+2. **Password** – the character length must be **at least 6 symbols** and must contain at least **1 uppercase** letter, **1 lowercase** letter and **1 digit**
 
-- **Confirm Password** – must **match** the provided password
+3. **Confirm Password** – must **match** the provided password
 
 - `LoginUser|<email>|<password>` - this command sets the current logged in user, if it exists
   * otherwise, prints an appropriate message
