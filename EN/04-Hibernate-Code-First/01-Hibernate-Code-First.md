@@ -1,6 +1,8 @@
+# Hibernate Code First Entity Relations
+
 [slide hideTitle]
 
-# Hibernate Code First Entity Relations
+# Inheritance
 
 Using relational databases we cannot apply the mechanism of inheritance. 
 
