@@ -21,7 +21,7 @@ Veți primi date brute pentru un anumit oraș, pe care trebuie să le procesați
 
 Pe fiecare linie cu date de intrare veți primi date în formatul: **"city\|country\|population"**. 
 
-Nu vor exista **spații redundante nicăieri** în datele introduse.
+Nu vor exista **spații redundante nicăieri** în intrare.
 
 Agregați datele **în funcție de țară și de oraș** și imprimați-le pe consolă.
 
