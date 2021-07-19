@@ -88,7 +88,7 @@ Working with **Spring Data** provides multiple benefits, such as:
 
 - An extra level of **abstraction** over the used ORM
 
-- The chance to integrate **custom repositories**
+- The ability to integrate **custom repositories**
 
 - We can create **dynamic query derivation** from repository method names
 

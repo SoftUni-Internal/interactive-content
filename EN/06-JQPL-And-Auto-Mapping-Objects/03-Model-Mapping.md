@@ -95,7 +95,7 @@ The use of conventions helps in determining property-value mappings.
 
 To start exploring **Model Mapper**, begin by adding it to your project.
 
-1. Include it as a Maven dependency:
+- Include it as a Maven dependency:
    
 ```java
 // pom.xml
@@ -106,7 +106,7 @@ To start exploring **Model Mapper**, begin by adding it to your project.
 </dependency>
 ```
 
-2. Then, initialize the mapper and use it as shown below:
+- Then, initialize the mapper and use it as shown below:
    
 ```java
 ModelMapper modelMapper = new ModelMapper();
@@ -117,13 +117,14 @@ EmployeeDto employeeDto = modelMapper.map(employee, EmployeeDto.class);
 // 2. Destination object (DTO)
 ```
 
-## Simple Mapping Entity to DTO
+## Simple Mapping of an Entity to a DTO
 
 While Model Mapper excels in mapping simple properties (like string, int BigDecimal, etc.), it can also map nested properties:
 
 ```java
+// Here we have our normal Employee entity connected to the `employees` table.
 @Entity
-@Table(name = "employees") // Here, we have our normal Employee entity connected to the `employees` table.
+@Table(name = "employees") 
 public class Employee {
 
     @Column(name = "first_name")
@@ -132,7 +133,8 @@ public class Employee {
     @Column(name = "salary")
     private BigDecimal salary;
 
-    @ManyToOne // Many-to-one relationship with the Address entity
+    // Many-to-one relationship with the Address entity
+    @ManyToOne 
     @JoinColumn(name = "address_id")
     private Address address;
 }
@@ -146,7 +148,8 @@ public class Address {
 }
 
 // When naming the table first and then the property we want, 
-// Model Mapper will get in the property object recursively and retrieve its property value.
+// Model Mapper will get in the property object recursively 
+// and retrieve its property value.
 
 public class EmployeeDto {
 
@@ -210,7 +213,10 @@ public class EmployeeDto {
 ```java
 // ConsoleRunner.java
 ModelMapper modelMapper = new ModelMapper();
-PropertyMap < EmployeeDto, Employee > employeeMap = new PropertyMap < EmployeeDto, Employee > () {
+
+PropertyMap<EmployeeDto, Employee> employeeMap 
+        = new PropertyMap<EmployeeDto, Employee>() {
+
     @Override
     protected void configure() {
         map().setFirstName(source.getName());
@@ -218,6 +224,7 @@ PropertyMap < EmployeeDto, Employee > employeeMap = new PropertyMap < EmployeeDt
         // We use getters to help Model Mapper find the string we want.
         map().setAddressCity(source.getAddress().getCity().getName()); 
     }
+
 };
 
 modelMapper.addMappings(employeeMap).map(employeeDto, employee);
@@ -231,7 +238,8 @@ There is a difference between the syntax for **explicit mapping** in Java 7 and 
 // ConsoleRunner.java (Java 8)
 
 ModelMapper modelMapper = new ModelMapper();
-TypeMap<EmployeeDto, Employee> typeMap = mapper.createTypeMap(EmployeeDto.class, Employee.class);
+TypeMap<EmployeeDto, Employee> typeMap = 
+    mapper.createTypeMap(EmployeeDto.class, Employee.class);
 typeMap.addMappings(m -> m.map(src -> src.getName(), Employee::setFirtsName)); 
 typeMap.map(employeeDto);
 ```
@@ -278,9 +286,12 @@ To exclude them, we can create a custom configuration where we name the properti
 // Java 7
 ModelMapper modelMapper = new ModelMapper();
 PropertyMap<EmployeeDto, Employee> employeeMap = new PropertyMap<EmployeeDto, Employee>() {
+
+    // Using the skip method, we inform Model Mapper that the given property is redundant.
     @Override
     protected void configure() {
-        skip().setSalary(null); // Using the skip method, we inform Model Mapper that the given property is redundant.
+        skip().setSalary(null); 
+
     }
 };
 
@@ -290,7 +301,8 @@ modelMapper.addMappings(employeeMap).map(employeeDto, employee);
 In Java 8, we have a shorter syntax:
 
 ```java
-typeMap.addMappings(mapper -> mapper.skip(Employee::setSalary)); // Naming the property that should be skipped
+// Naming the property that should be skipped
+typeMap.addMappings(mapper -> mapper.skip(Employee::setSalary)); 
 typeMap.map(employeeDto);
 
 ```
@@ -307,6 +319,7 @@ We can achieve this with additional custom configuration.
 // Java 7
 
 ModelMapper modelMapper = new ModelMapper();
+
 Converter<String, String> stringConverter = new AbstractConverter <String, String>() {
     @Override
     protected String convert(String s) {
@@ -333,11 +346,13 @@ Again, there is a difference in the syntax between Java 7 and Java 8
 
 ```java
 ModelMapper modelMapper = new ModelMapper();
-Converter<String, String> toUppercase = ctx -> ctx.getSource() == null ? null : ctx.getSource().toUppercase();
+Converter<String, String> toUppercase 
+    = ctx -> ctx.getSource() == null ? null : ctx.getSource().toUppercase();
 
 TypeMap<EmployeeDto, Employee> typeMap = 
     mapper.createTypeMap(EmployeeDto.class, Employee.class)
-    .addMappings(mapper -> mapper.using(toUppercase).map(EmployeeDto::getName, Employee::setFirstName));
+    .addMappings(mapper -> mapper.using(toUppercase)
+        .map(EmployeeDto::getName, Employee::setFirstName));
 
 typeMap.map(employeeDto);
 ```

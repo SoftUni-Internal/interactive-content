@@ -349,7 +349,8 @@ The rest of the methods have a **similar** implementation.
 ```java
 public E findFirst(Class <E> table, String where) throws SQLException, IllegalAccessException, InstantiationException{
     Statement stmt = connection.createStatement();
-    String query = "SELECT * FROM" + this.getTableName(table) + " WHERE 1 " + (where != null ? " AND " + where : "") + " LIMIT 1";
+    String query = "SELECT * FROM" + this.getTableName(table) + " WHERE 1 " 
+        + (where != null ? " AND " + where : "") + " LIMIT 1";
 
     ResultSet rs = stmt.executeQuery(query);
     E entity = table.newInstance();

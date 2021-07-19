@@ -256,7 +256,7 @@ The life cycle of an entity object has four stages.
 
 ## persist()
 
-The `persist()` method adds a given entity object into the database:
+The `persist()` method adds an entity object into the database:
 
 ```java
 Car car = new Car();
@@ -266,7 +266,7 @@ session.persist(car);
 
 ## remove()
 
-This method removes given entity from the DB.
+This method removes a given entity from the DB.
 
 Remove something from a database begins with retrieving it.
 
@@ -319,7 +319,7 @@ public static void main(String[] args) {
 
         EntityManager em = emf.createEntityManager();
         em.getTransaction().begin();
-        em.find(Student.class,1) // Get object
+        em.find(Student.class,1) // Getting the object
         em.getTransaction().commit();
     }
 ```

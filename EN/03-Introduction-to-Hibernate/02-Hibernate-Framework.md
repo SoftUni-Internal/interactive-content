@@ -126,7 +126,7 @@ The database configuration contains six properties:
 
 # Hibernate Implementation: Example
 
-To create an application, first - we need to build the **POJO** classes.
+To create an application, first we need to build the **POJO** classes.
 
 Here we have a simple Java class with some **fields**, **constructor**, **getters** and **setters**.
 
@@ -175,8 +175,8 @@ public class Main {
         Session session = sessionFactory.openSession(); // We need to open the session
         session.beginTransaction();
 
-        // Your code
-        session.getTransaction().commit(); // After we are done, we must commmit our transaction
+        // After we are done, we must commmit our transaction
+        session.getTransaction().commit(); 
         session.close();
     }
 }
@@ -194,7 +194,7 @@ public static void main(String[] args) {
     session.beginTransaction();
     
     Student example = new Student();
-    session.save(example); // Saving object
+    session.save(example); // Saving the object
 
     session.getTransaction().commit();
     session.close();
@@ -213,11 +213,11 @@ public static void main(String[] args) {
 
     session.beginTransaction();
     
-    Student student = session.get(Student.class, 1); // We get the object in the method
+    // We get the object using the method
+    Student student = session.get(Student.class, 1); 
 
     session.getTransaction().commit();
     session.close();
-    }
 }
 ```
 
@@ -228,16 +228,18 @@ We can **retrieve** data by queries too:
 ```java
 public static void main(String[] args) {
 
-        session.beginTransaction();
+    session.beginTransaction();
 
+    // We are getting list of objects
     List<Student> studentList = 
-    session.createQuery("FROM Student " , Student.class).list(); // We are getting list of objects
-        for (Student student : studentList) {
-            System.out.println(student.getId());
-        }
-        session.getTransaction().commit();
-        session.close();
+    session.createQuery("FROM Student " , Student.class).list(); 
+
+    for (Student student : studentList) {
+        System.out.println(student.getId());
     }
+
+    session.getTransaction().commit();
+    session.close();
 }
 ```
 

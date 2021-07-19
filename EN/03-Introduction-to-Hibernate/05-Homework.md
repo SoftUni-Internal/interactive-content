@@ -12,7 +12,7 @@ Use the **provided skeleton** to create the **soft_uni** database.
 
 [image assetsSrc="Homework-Hibernate-Introduction.jpg" /]
 
-- **Create** `EntityManagerFactory` and **run** your program
+- **Create** an `EntityManagerFactory` and **run** your program
 
 ```java
 EntityManagerFactory factory = Persistence.createEntityManagerFactory("soft_uni");

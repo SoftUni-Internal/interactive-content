@@ -30,7 +30,6 @@ public interface CrudRepository<T, ID extends Serializable> extends Repository<T
 @Service
 public class StudentServiceImpl implements StudentService {
                                                                 
-    
     private final StudentRepository studentRepository;
 
     private StudentServiceImpl(StudentRepository studentRepository) {
@@ -46,6 +45,7 @@ public class StudentServiceImpl implements StudentService {
     public void expel(Student student) {
         studentRepository.delete(student);
     }
+}
 ```
 
 

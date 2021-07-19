@@ -76,11 +76,11 @@ The service layer **processes** either the incoming information and sends it to 
 
 Firstly we will need an entry point for our **Spring Application**.
 
-We declare the entry point with the **@SpringBootApplication** annotation.
+We declare the **entry point** with the `@SpringBootApplication` annotation.
 
 The application underneath is a console that requires the `Main` class. 
 
-That is how we start the Spring Boot application.
+That is how we **start** the Spring Boot application.
 
 ```java
 @SpringBootApplication                                           
@@ -93,7 +93,7 @@ public class MainApplication {
 
 We can also create a class to run custom logic when starting the project, similar to the `main` method. 
 
-We can accomplish this by creating a new class and implementing the `CommandLineRunner` interface. 
+Begin by creating a new class and implementing the `CommandLineRunner` interface. 
 
 The class also needs to be annotated with the `@Component` annotation so that Spring can add it to its life cycle.
 

@@ -151,13 +151,4 @@ Create a method that selects all shampoos with a given size, ordered by the sham
 |   | Fresh it Up! MEDIUM 7.65 euro.  |
 |   | Nectar Nutrition MEDIUM 6.85 euro.  |
 
-## Solution
-
-```java
-@Repository
-public interface ShampooRepository extends JpaRepository<Shampoo, Long> {
-    List<Shampoo> findAllBySizeOrderById(String sizeValue);
-}
-```
-
 [/slide]

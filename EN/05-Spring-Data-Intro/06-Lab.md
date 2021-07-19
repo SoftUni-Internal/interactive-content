@@ -119,7 +119,7 @@ Add several methods to help you with the data retrieval.
 
 # Services
 
-Define several service **interfaces**:
+Define several service **interfaces** for the models:
 
 ```java
 public interface AccountService {
@@ -176,11 +176,12 @@ The method implementation logic is up to you. Here are some several tips:
 
 - **UserServiceImpl**
     * **User registration** - should only happen if the user does not exist in the database
+  
 [/slide]
 
 [slide hideTitle]
 
-# The ConsoleRunner
+# ConsoleRunner and Application
 
 We will test our application in a **ConsoleRunner** class.
 
@@ -203,12 +204,6 @@ public class ConsoleRunner implements CommandLineRunner {
 }
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Test
-
 Test the application by adding logic in the **ConsoleRunner**'s **run** method:
 
 ```java 
@@ -228,5 +223,5 @@ public void run(String... args) throws Exception {
 }
 ```
 
-An **account_system** database should be created with tables if everything is written correctly.
+By design, **account_system** database with the corresponding tables should be created.
 [/slide]

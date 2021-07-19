@@ -38,7 +38,8 @@ public interface IngredientRepository<T extends Ingredient> extends JpaRepositor
 // A repository that extends the IngeredientRepository, 
 // allowing us to use the inherited entity of the original.
 @Repository 
-public interface ChemicalIngredientRepository extends IngredientRepository <BasicChemicalIngredient> {
+public interface ChemicalIngredientRepository 
+        extends IngredientRepository <BasicChemicalIngredient> {
     List<ChemicalIngredient> findByChemicalFormula(String chemicalFormula);
 }
 ```
