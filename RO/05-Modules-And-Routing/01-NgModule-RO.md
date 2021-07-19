@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Angular Modules Overview
+# Prezentare Generală a Modulelor în Angular
 
 Angular-Modules-and-routing-3-4-The-NgModule
 
