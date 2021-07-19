@@ -1,8 +1,8 @@
-# Components Lab: Articles
+# Laborator pentru Componente: Articles
 
 [slide hideTitle]
 
-# Create Angular App
+# Creați Aplicația Angular
 
 Angular-Components-Lab-1
 Angular-Components-Lab-2
@@ -46,7 +46,7 @@ Aplicația voastră ar trebui să arate în felul următor:
 
 [slide hideTitle]
 
-# Create Article Model
+# Creați Modelul Pentru Article
 
 Angular-Components-Lab-4
 
@@ -73,7 +73,7 @@ export class Article{
 
 [slide hideTitle]
 
-# Create Article Data
+# Creați Datele Pentru Article
 
 Angular-Components-Lab-5
 
@@ -148,7 +148,7 @@ Mai târziu, vom învăța mai multe cu privire la **serviciile reale** și **in
 
 [slide hideTitle]
 
-# Create Article Component
+# Creați Componenta Pentru Article
 
 Angular-Components-Lab-6
 
@@ -225,7 +225,7 @@ Va primi **două proprietăți** care trebuie să fie **transferate** de la comp
 
 [slide hideTitle]
 
-# Create The HTML Markup
+# Creați Markup-ul HTML
 
 Angular-Components-Lab-7
 
@@ -264,7 +264,7 @@ Toate proprietățile din cadrul directivei `*ngIf` sunt controlate în cadrul c
 
 [slide hideTitle]
 
-# Create The Needed Properties
+# Creați Proprietățile Necesare
 
 Angular-Components-Lab-8
 
@@ -309,7 +309,7 @@ Putem realiza acest lucru și în ciclul de viață de hook `ngOnInit`.
 
 [slide hideTitle]
 
-# Implement The Read More Function
+# Implementați Funcția Read More
 
 Angular-Components-Lab-9
 Angular-Components-Lab-10
@@ -324,7 +324,7 @@ Următoarea imagine e blurată.
 
 [image assetsSrc="Angular-Components(2).png" /]
 
-## Implementarea funcției ToggleImage 
+## Implementarea Funcției ToggleImage 
 
 De fiecare dată când facem click pe "**Show Image**", trebuie să schimbăm proprietatea booleană **true** și să schimbăm **titlul imaginii** în "**Hide Image**". 
 
@@ -332,7 +332,7 @@ Dacă facem click pe "**Hide Image**", trebuie să procedăm în mod contrar.
 
 [image assetsSrc="Angular-Components(3).png" /]
 
-## Implementarea funcției HideDesc 
+## Implementarea Funcției HideDesc 
 
 Această funcție este responsabilă cu **resetarea** părții cu "description to show", a celei cu "article description length" și cu **schimbarea** valorilor ambelor butoane.
 
@@ -342,7 +342,7 @@ Această funcție este responsabilă cu **resetarea** părții cu "description t
 
 [slide hideTitle]
 
-# Create Articles Component
+# Creați Componenta Articles
 
 Angular-Components-Lab-11
 
@@ -359,7 +359,7 @@ ul {
 }
 ```
 
-## Implementarea logicii componentei
+## Implementarea Logicii componentei
 
 În interiorul componentei articolului, avem nevoie de proprietatea unei matrice care va conține articolele noastre. Trebuie să inițializăm matricea din interiorul hook-ului intitulat `ngOnInit`. 
 
@@ -404,7 +404,7 @@ Singurul lucru rămas este să plasăm selectorul de articole în interiorul fi�
 
 [slide hideTitle]
 
-# Test The Application
+# Testați Aplicația
 
 Angular-Components-Lab-12
 

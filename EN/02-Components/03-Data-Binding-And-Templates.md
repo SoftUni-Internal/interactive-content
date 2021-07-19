@@ -26,7 +26,7 @@ A component's template can be defined with inline HTML or we can specify an exte
 
 [slide hideTitle]
 
-# Render An Array Using NgFor
+# Render an Array Using NgFor
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-18-Render-an-array-using-ngfor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -222,7 +222,7 @@ When creating a single class binding, the expression used can be of type boolean
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-23-Binding-styles-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Binding to the style attribute
+## Binding to the Style Attribute
 
 If we need to create a **single style binding**, we use the **prefix style**, followed by a **dot** and the **name of the CSS style property**.
 
@@ -237,7 +237,7 @@ Angular sets the **property to the value of the bound expression**, which is usu
 </button>
 ```
 
-## Binding to style with units
+## Binding to Style with Units
 
 The styles like **font-size**, **width**, etc, have a unit extension. 
 
@@ -333,7 +333,7 @@ JavaScript **expressions that have** or promote side effects are **prohibited**,
 
 [slide hideTitle]
 
-# Types Of Data Binding
+# Types of Data Binding
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-26-Types-of-data-binding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

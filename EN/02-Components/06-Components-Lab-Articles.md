@@ -223,7 +223,7 @@ It will receive **two properties** that need to be **transferred** from the pare
 
 [slide hideTitle]
 
-# Create The HTML Markup
+# Create the HTML Markup
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-Lab-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -262,7 +262,7 @@ All the properties inside the `*ngIf` directive are controlled in our article co
 
 [slide hideTitle]
 
-# Create The Needed Properties
+# Create the Needed Properties
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-Lab-8-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -307,7 +307,7 @@ We can also do this in the `ngOnInit` lifecycle hook.
 
 [slide hideTitle]
 
-# Implement The Read More Function
+# Implement the Read More Function
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-Lab-9-10-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -321,7 +321,7 @@ Try to implement the logic yourself:
 
 [image assetsSrc="Angular-Components(2).png" /]
 
-## Implement The ToggleImage Function
+## Implement the ToggleImage Function
 
 Each time we click on "**Show Image**", we have to switch the boolean property to **true** and change the **image title** to "**Hide Image**". 
 
@@ -329,7 +329,7 @@ If we click on "**Hide Image**", we need to do the opposite.
 
 [image assetsSrc="Angular-Components(3).png" /]
 
-## Implement The HideDesc Function
+## Implement the HideDesc Function
 
 This function should **reset** the "description to show", the "article description length", and to **switch** both buttons' values.
 
@@ -376,7 +376,7 @@ export class ArticlesComponent implements OnInit {
 }
 ```
 
-## Create The HTML Markup
+## Create the HTML Markup
 
 Next, we should create the HTML markup for the component of the article. 
 
@@ -401,7 +401,7 @@ The only thing left is to place the articles selector inside the "app.component.
 
 [slide hideTitle]
 
-# Test The Application
+# Test the Application
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-Lab-12-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

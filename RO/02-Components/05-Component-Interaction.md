@@ -1,8 +1,8 @@
-# Component Interaction
+# Interacțiunea Componentelor
 
 [slide hideTitle]
 
-# From Parent To Child
+# De la Părinte la Copil
 
 Angular-Components-31-Component-Interaction
 Angular-Components-32-33-From-Parent-To-Child
@@ -40,7 +40,7 @@ export class GameComponent {
 
 [slide hideTitle]
 
-# From Child To Parent
+# De la Copil la Părinte
 
 Angular-Components-34-35-Component-Interaction
 

@@ -1,8 +1,8 @@
-# Data Bindings And Templates
+# Data Binding și Șabloane
 
 [slide hideTitle]
 
-# Templates and Data Binding Overview
+# Prezentarea Generală a Șabloanelor și Data Binding
 
 Angular-Components-16-17-Data-Binding-And-Templates
 
@@ -26,7 +26,7 @@ Aranjamentul **vizualizărilor e ierarhic**, permițându-ne să **modificăm** 
 
 [slide hideTitle]
 
-# Render An Array Using NgFor
+# Randarea unei Matrice Folosind NgFor
 
 Angular-Components-18-Render-an-array-using-ngfor
 
@@ -71,7 +71,7 @@ Aceste nume sunt arbitrare. Le putem denumi în orice mod dorim.
 
 [slide hideTitle]
 
-# Conditional Statements Using ngIf
+# Instrucțiuni Condiționale Folosind ngIf
 
 Angular-Components-19-Conditional-Statements-Using-ngif
 
@@ -109,7 +109,7 @@ Codul de mai sus verifică proprietatea **price** a fiecărui obiect din matrice
 
 [slide hideTitle]
 
-# Attach Events
+# Atașarea Evenimentelor
 
 Angular-Components-20-Attach-Events
 
@@ -144,7 +144,7 @@ export class GamesComponent {
 
 [slide hideTitle]
 
-# Binding Attributes
+# Legarea Atributelor
 
 Angular-Components-21-Binding-attributes
 
@@ -175,7 +175,7 @@ Notă: Dacă expresia se evaluează la `null` sau `undefined`, întregul atribut
 
 [slide hideTitle]
 
-# Binding CSS Classes
+# Legarea Claselor CSS
 
 Angular-Components-22-Binding-css-classes
 
@@ -217,7 +217,7 @@ Atunci când creăm o legătură cu o singură clasă, expresia utilizată poate
 
 [slide hideTitle]
 
-# Binding Styles
+# Legarea Stilurilor
 
 Angular-Components-23-Binding-styles
 
@@ -257,7 +257,7 @@ Următorul exemplu **setează condițional dimensiunea fontului** în unitatea "
 
 [slide hideTitle]
 
-# Reference And Null-Safe Operator
+# Operatorul de Referință și Null-Safe
 
 Angular-Components-24-Reference-and-nullsafe-operator
 
@@ -306,7 +306,7 @@ Când "game" e diferit de **null** sau **undefined**, atunci se va crea o legăt
 
 [slide hideTitle]
 
-# Template Expressions
+# Expresii de tip Șablon
 
 Angular-Components-25-Template-Expressions
 
@@ -332,7 +332,7 @@ Expresiile JavaScript **care au** sau promovează efecte colaterale sunt **inter
 
 [slide hideTitle]
 
-# Types Of Data Binding
+# Tipuri De Data Binding
 
 Angular-Components-26-Types-of-data-binding
 

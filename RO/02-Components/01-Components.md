@@ -1,8 +1,8 @@
-# Components Basic Idea
+# Ideea De Bază a Componentelor
 
 [slide hideTitle]
 
-# The Idea Behind Components
+# Ideea Din Spatele Componentelor
 
 Merge: Angular-Components-3-4-Components with: Angular-Components-5-The-Idea-behind-components
 
@@ -64,7 +64,7 @@ Vizualizarea gazdă a șablonului este definită de șablonul care este direct a
 
 [slide hideTitle]
 
-# Creating Components Manually 
+# Crearea Manuală a Componentelor 
 
 Componentele sunt elementele cele mai de bază ale unei aplicații Angular.
 
@@ -108,7 +108,7 @@ Scrierea HTML și CSS în linie sau utilizarea fișierelor externe depinde de no
 
 [slide hideTitle]
 
-# Creating Components Manually 2
+# Crearea Manuală a Componentelor 2
 
 **Selector** este folosit pentru apelarea componentei Înăuntrul altor fișiere HTML a le proiectului ca o etichetă HTML: `<app-home></app-home>`
 
@@ -152,7 +152,7 @@ Celelalte componente din același modul nu îl vor putea accesa.
 
 [slide hideTitle]
 
-# Creating Components Manually 3
+# Crearea Manuală a Componentelor 3
 
 După ce am creat o componentă trebui să o adăugăm în mulțimea **declarațiilor** în modulul aplicației.
 
@@ -179,7 +179,7 @@ Fără această declarație, o componentă nu ar putea utiliza directive și con
 
 [slide hideTitle]
 
-# Creating Components Using The CLI
+# Crearea Componentelor Folosind CLI
 
 Putem folosi **Angular CLI**, care este o interfață de linie de comandă pentru Angular, pentru a genera o nouă componentă.
 
