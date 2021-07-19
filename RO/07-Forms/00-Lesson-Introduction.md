@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-#  Conținutul lecției
+#  Conținutul Lecției
 
 js-angular-forms-1-2-Directives-and-Forms-and-table-of-contents
 

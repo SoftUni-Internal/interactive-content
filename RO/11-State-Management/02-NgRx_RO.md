@@ -24,7 +24,7 @@ Deschideți instrumentul command\-line în directorul rădăcină al proiectului
 
 - `yarn add @ngrx/store` for **Yarn**
 
-## Fluxul de date
+## Fluxul de Date
 
 Această diagramă simplă ilustrează **fluxul de date de bază în NgRx**.
 
@@ -65,7 +65,7 @@ Acțiunile pot să conțină de asemenea o **sarcină utilă** opțională de da
 
 [slide hideTitle]
 
-# Crearea acțiunilor
+# Crearea Acțiunilor
 
 10-Create-Actions  
 
@@ -153,7 +153,7 @@ O funcție de reducere acceptă:
 
 [slide hideTitle]
 
-# Definirea unei funcții reductor
+# Definirea unei Funcții Reductor
 
 12-Define-a-Reducer-Function
 
@@ -226,7 +226,7 @@ Aici, parsăm un obiect cu o singură proprietate `count` care stochează funcț
 
 [slide hideTitle]
 
-# Crearea unei Componente de contorizare
+# Crearea unei Componente de Contorizare
 
 14-15-Create-a-Counter-Component
 

@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Ce este JWT?
+# Ce Este JWT?
 
 js-interactive-pipes-interceptors-and-subjects-10-11-JWT-and-what-is-jwt
 
@@ -27,7 +27,7 @@ JWT este util pentru crearea unui **API pentru aplicații mobile**, deoarece **n
 
 [slide hideTitle]
 
-# Când trebuie să folosiți JWT?
+# Când Trebuie să Folosiți JWT?
 
 js-interactive-pipes-interceptors-and-subjects-12-When-should-you-use-JWT
 

@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Ce sunt Pipes?
+# Ce Sunt Pipes?
 
 js-interactive-pipes-interceptors-and-subjects-3-4-pipes-and-whar-are-pipes
 

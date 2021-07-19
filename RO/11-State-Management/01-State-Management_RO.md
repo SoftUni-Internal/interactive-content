@@ -30,7 +30,7 @@ Inspirat de **Redux**, **NgRx Store** face ca lucrul cu date complexe să fie ma
 
 **Bibliotecile NgRx** sunt împărțite în **patru categorii principale**:
 
-## Managementul stării
+## Managementul Stării
 
 - **Store** - o soluție de management al stării creată pentru Angular
   * construită pe principiile Redux, ea echilibrează puterea lui RxJS
@@ -46,19 +46,19 @@ Inspirat de **Redux**, **NgRx Store** face ca lucrul cu date complexe să fie ma
 
 - **ComponentStore** - folosită pentru gestionarea stării locale
 
-## Supravegherea datelor
+## Supravegherea Datelor
 
 - **Data** - simplifică managementul intrărilor de date
   * mai puține șabloane de cod ca rezultat
   * extinde pachetul Entitate
 
-## Controlul aspectului vizual
+## Controlul Aspectului Vizual
 
 - **Component** - permite crearea de aplicații Angular complet reactive:
   * permite mai mult control asupra procesului de randare a componentelor
   * se află în prezent în fază experimentală
 
-## Instrumentar pentru dezvoltatori
+## Instrumentar Pentru Dezvoltatori
 
 - **Store Devtools** - furnizează instrumente de dezvoltare pentru `@ngrx/store`
 
@@ -70,7 +70,7 @@ Inspirat de **Redux**, **NgRx Store** face ca lucrul cu date complexe să fie ma
 
 [slide hideTitle]
 
-# Ciclul de viață al managementului de stare
+# Ciclul de Viață al Managementului de Stare
 
 06-State-Management-Lifecycle
 

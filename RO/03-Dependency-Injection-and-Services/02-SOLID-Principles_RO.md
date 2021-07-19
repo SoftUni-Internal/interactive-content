@@ -7,7 +7,7 @@
 6-Principiile-SOLID
 7-Principiul-Responsabilității-Unice
 
-## Privire generală asupra principiilor SOLID
+## Privire Generală Asupra Principiilor SOLID
 
 Principiile **SOLID**, introduse de inginerul software și formatorul american **Robert Cecil Martin**, sunt cele mai importante cinci principii ale **programării orientate pe obiecte**.
 
@@ -23,7 +23,7 @@ Principiile SOLID principles formează o **filosofie** centrală pentru metodolo
 
 Când se **combină**, aceste principii fac ca aplicațiile noastre să fie mai ușor de **menținut** și de **extins**.
 
-## Principiul responsabilității unice 
+## Principiul Responsabilității Unice 
 
 Acesta stabilește că **fiecare clasă** ar trebui să aibă **responsibilitea** doar pentru **o singură** parte a funcționalității unui program.
 
@@ -59,7 +59,7 @@ Dacă decidem să **încălcăm** acest principiu și să modificăm funcțional
 
 [slide hideTitle]
 
-# Principiul substituirii al lui Liskov
+# Principiul Substituirii al lui Liskov
 
 9-Principiul-Substituirii-Liskov
 
@@ -107,7 +107,7 @@ DIP modifică **direcția** dependenței și **o împarte** între nivelurile î
 
 [slide hideTitle]
 
-# Principiul Inversiunii Dependenței: Abstracții și concrețiuni
+# Principiul Inversiunii Dependenței: Abstracții și Concrețiuni
 
 DEMO
 
@@ -152,7 +152,7 @@ Clasele care o **moștenesc**,  precum, de exemplu, `Brandon`, sunt **concrețiu
 
 [slide hideTitle]
 
-# Injecția dependenței
+# Injecția Dependenței
 
 13-14-Injecția-Dependenței
 
@@ -168,7 +168,7 @@ Un **dezavantaj** al dependențelor este acela că **reduc capacitatea de reutil
 
 [slide hideTitle]
 
-# Injecția de dependență: Exemplu
+# Injecția de Dependență: Exemplu
 
 Codul prezentat mai jos este un exemplu de injecție de dependență:
 
@@ -223,7 +223,7 @@ Acest lucru va face ca clasa noastră să devină his **fragilă**, **inflexibil
 
 [slide hideTitle]
 
-# Cum să le reparăm?
+# Cum să le Reparăm?
 
 16-Cum-Să-Reparăm
 
@@ -252,7 +252,7 @@ let carTwo = new Car(
 
 [slide hideTitle]
 
-# Cerințe generale
+# Cerințe Generale
 
 17-Cerințe-Generale
 

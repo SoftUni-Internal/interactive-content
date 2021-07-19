@@ -6,7 +6,7 @@
 
 ## În Această Lecție Veți Invăța:
 
-**1. Strategia de detectare a schimbărilor**
+**1. Strategia de Detectare a Schimbărilor**
 - Modificarea modului în care Angular detectează schimbările
 
 **2. Principiile SOLID**

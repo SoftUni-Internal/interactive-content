@@ -1,8 +1,8 @@
-# Workshop Forum Softuni: Partea 1
+# Softuni Forum Workshop: Partea 1
 
 [slide hideTitle]
 
-# Cerințe privind sarcini
+# Cerințe Privind Sarcini
 
 **Iată un link către** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/new-resources-workshop-Components.zip) **pentru această sarcină.**
 
@@ -94,7 +94,7 @@ Utilizatorii **neînregistrați** ar trebui să vadă butoanele / linkurile **Lo
 
 [slide hideTitle]
 
-# Implementarea secțiunii principale
+# Implementarea Secțiunii Principale
 
 După ce backend-ul este gata de utilizare, trebuie să **preluați toate temele** și **să le listați** pe pagina de pornire în formatul furnizat în schelet.  
 
@@ -108,7 +108,7 @@ Fiecare temă ar trebui să aibă un **title** (titlu), o **date**, **username**
 
 [slide hideTitle]
 
-# Implementarea secțiunii aparte
+# Implementarea Secțiunii Aparte
 
 În secțiunea **Postări recente, trebuie redate doar cele mai recente 5 postări**.
 

@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Prezentare generală a formularelor reactive
+# Prezentare Generală a Formularelor Reactive
 
 js-angular-forms-37-38-Handling-Forms-and-reactive-forms-overview
 
@@ -62,7 +62,7 @@ Folosim `formControl` pentru a urmări valoarea și validitatea unui singur cont
 
 [slide hideTitle]
 
-# Clasa componentelor
+# Clasa Componentelor
 
 js-angular-forms-40-The-Component-Class
 
@@ -124,7 +124,7 @@ Formularul de control este acum înregistrat la elementul de intrare  `processor
 
 [slide hideTitle]
 
-# Accesarea proprietăților modelului de formular
+# Accesarea Proprietăților Modelului de Formular
 
 js-angular-forms-42-Accessing-Form-Model-Properties
 
@@ -148,7 +148,7 @@ Ideea este de a scurta șablonul și de a transfera o astfel de logică în comp
 
 [slide hideTitle]
 
-# Utilizarea constructorilor de formulare
+# Utilizarea Constructorilor de Formulare
 
 js-angular-forms-43-Using-Form-Builder
 
@@ -191,7 +191,7 @@ Validarea formularelor **reactive** poate fi efectuată **sincron** și **asincr
 
 Comparativ cu formularele bazate pe șabloane, unde intrarea este validată prin adăugarea de atribute **șablon**, aici adăugăm funcții de validare la formularul de control al formularului direct din **clasa**.
 
-## Validare sincronă
+## Validare Sincronă
 
 Funcțiile de validare **sincrone** acceptă o instanță de control ca argument și apoi **returnează**:
 
@@ -200,7 +200,7 @@ Funcțiile de validare **sincrone** acceptă o instanță de control ca argument
 
 Când instanțiem un `FormControl`, putem trece o funcție sincronă ca un argument **secundar**.
 
-## Validare asincronă
+## Validare Asincronă
 
 Validatorii **asincroni** acceptă, de asemenea, o instanță de control ca argument, dar **returnează** fie o `Promise` sau un `Observable` care evaluează la `null` sau un set de erori.
 
@@ -214,7 +214,7 @@ Acest lucru se face din motive de performanță.
 
 [slide hideTitle]
 
-#  Configurarea validării încorporate
+#  Configurarea Validării Încorporate
 
 js-angular-forms-45-Setting-Up-Build-in-Validation
 
@@ -243,7 +243,7 @@ Metoda creează o nouă instanță a clasei `FormGroup`.
 
 [slide hideTitle]
 
-# Ajustarea șablonului
+# Ajustarea Șablonului
 
 js-angular-forms-46-Adjust-the-Template
 
@@ -274,7 +274,7 @@ Aceasta înseamnă că elementul `span` cu directive`ngIf*`nu va fi afișat dac�
 
 [slide hideTitle]
 
-#  Urmărirea și Reacționarea la schimbări
+#  Urmărirea și Reacționarea la Schimbări
 
 js-angular-forms-47-Watching-and-Reacting-to-Changes
 
@@ -296,7 +296,7 @@ Evenimentul `valueChanges` returnează un Observable.
 
 [slide hideTitle]
 
-# Transformări reactive: Exemple
+# Transformări Reactive: Exemple
 
 js-angular-forms-48-Reactive-Transformations-Example
 

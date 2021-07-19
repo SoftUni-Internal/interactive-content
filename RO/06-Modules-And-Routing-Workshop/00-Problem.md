@@ -1,8 +1,8 @@
-# Softuni Forum Workshop: Part 2
+# Softuni Forum Workshop: Partea 2
 
 [slide hideTitle]
 
-# Task Requirements
+# Cerințe Privind Sarcini
 
 **Aici aveți un link** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/Modules-and-routing-resources.zip) **pentru această cerință.**
 
@@ -197,7 +197,7 @@ Butonul "Edit" va înlocui câmpurile de informații cu câmpuri de intrare, dar
 
 [slide hideTitle]
 
-# Invalid routes
+# Rutele Nevalide
 
 Aceasta este pagina pentru toate **rutele nevalide** `localhost:4200/??????`. 
 

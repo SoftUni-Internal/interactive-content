@@ -1,8 +1,8 @@
-# Softuni Forum Workshop: Partea a 3-a
+# Softuni Forum Workshop: Partea 3
 
 [slide hideTitle]
 
-# Cerințe privind sarcina
+# Cerințe Privind Sarcina
 
 În acest moment, aplicația are **formulare**. 
 
@@ -33,7 +33,7 @@ Notificarea **de sub fiecare buton** ar trebui să afișeze **starea** **de vali
 
 [slide hideTitle]
 
-# Cazuri valide și invalide
+# Cazuri Valide și Invalide
 
 ## Cazuri nevalide
 
@@ -59,7 +59,7 @@ Atunci când câmpul de intrare este completat cu informații **valide**, clasa 
 
 [slide hideTitle]
 
-# Formulare reactive
+# Formulare Reactive
 
 Folosiți **abordarea** **bazată pe model** (**reactivă**) pentru a crea formularele de autentificare și de **înregistrare**. 
 
@@ -122,7 +122,7 @@ Dacă se întâmplă acest lucru, aplicați **stilizarea nevalidă pentru ambele
 
 [slide hideTitle]
 
-# Formulare bazate pe șabloane
+# Formulare Bazate pe Șabloane
 
 Folosiți **abordarea bazată pe șablon** pentru a crea formularul **"create new theme"** și formularul **"change user information"**.
 
@@ -147,7 +147,7 @@ Butonul "**Post**" ar trebui să fie **dezactivat** dacă datele introduse **NU 
 
 [slide hideTitle]
 
-# Modificarea informațiilor despre profil
+# Modificarea Informațiilor Despre Profil
 
 Atunci când este conectat, un utilizator ar trebui să își poată vedea **informațiile de profil**.
 
@@ -175,7 +175,7 @@ Validarea de **Email** este aceeași ca și în cazul login și register:
 
 În cazul în care se face clic pe butonul **"Cancel"**, toate modificările trebuie să **revină** la starea inițială, iar informațiile despre utilizator trebuie să fie afișate ca fiind **neschimbate**.
 
-## Directive personalizate
+## Directive Personalizate
 
 Poate fi izolată oricare dintre funcționalități într-o directivă personalizată pentru a evita repetarea unor părți din cod?
 
