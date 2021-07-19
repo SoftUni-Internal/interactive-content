@@ -4,13 +4,11 @@
 
 # Model Mapper
 
-In the practice, we often need to transfer data between similar objects. 
+We often need to transfer data between similar objects. 
 
-Take an instance with the entities, we want to transfer similar properties from the entity model to a DTO. 
+With entities, we want to transfer similar properties from the entity model to a DTO. 
 
-This is a pretty straight forward job, where 80% of it would be just listing a property to another property. 
-
-Just like that. 
+A large portion of this process is just listing a property to another property:
 
 ```java
 public class EmployeePojo {
@@ -33,13 +31,14 @@ public class EmployeePojo {
         return this.startDate;
     }
 }
-@Entity                                     // We have our entity
+
+@Entity                             // We have our entity
 @Table(name = "employees")
 public class Employee {
     // ...
     @Column(name = "first_name")
     private String firstName;
-     @Column(name = "last_name")
+    @Column(name = "last_name")
     private String lastName;
     @Column(name = "age_name")
     private String lastName;
@@ -47,7 +46,7 @@ public class Employee {
     private BigDecimal salary;
 }
 
-public class EmployeeDto {                  //and then our DTO 
+public class EmployeeDto {          // and then - our DTO.
 
     private String firstName;
     private String last_name;
@@ -55,7 +54,8 @@ public class EmployeeDto {                  //and then our DTO
     private String addressCity;
 }
 
-@Service                                    // If we use a service, the mapping looks like this.
+// If we use a service, the mapping will be as follows.
+@Service 
 public class StudentServiceImpl implements StudentService {
 
     @Autowired
@@ -71,22 +71,19 @@ public class StudentServiceImpl implements StudentService {
         studentRepository.delete(student);
     }
 }
- 
 ```
 
-Do you see how monotonous this job is? 
-
-Luckily, we have a tool which can do the job for us.
+We have a tool that automatically performs this task.
 
 Model mapping is an easy way to convert one model to another.
 
-It is based purely on conventions and as long as we keep this convention it will save us from writing a lot of monotonous code.
+It is convention-based, meaning that when following the guidelines, we significantly reduce code repetition.
 
-In our case, as we are mapping entities from the database to DTOs, what will happen is that the Model Mapper will stand between them creating the query and make a projection and map it for us. 
+When mapping entities from the database to DTOs, the Model Mapper acts as a middleware in the query-creation process.
 
+It will then project and map the entities for us. 
 
-
-The use of conventions is to determine how property and values are mapped to each other.
+The use of conventions helps in determining property-value mappings.
 
 [image assetsSrc="Spring-Data-AutoMapping-Objects(1).png" /]
 
@@ -98,9 +95,10 @@ The use of conventions is to determine how property and values are mapped to eac
 
 To start exploring **Model Mapper**, begin by adding it to your project.
 
-1. Add as maven dependency.
+1. Include it as a Maven dependency:
+   
 ```java
-//pom.xml
+// pom.xml
 <dependency>
     <groupId>org.modelmapper</groupId>
     <artifactId>modelmapper</artifactId>
@@ -108,33 +106,34 @@ To start exploring **Model Mapper**, begin by adding it to your project.
 </dependency>
 ```
 
-2. Than we just initialize the mapper where we need it and use it as shown.
+2. Then, initialize the mapper and use it as shown below:
+   
 ```java
 ModelMapper modelMapper = new ModelMapper();
-                                            //1         2
+//                                        1         2
 EmployeeDto employeeDto = modelMapper.map(employee, EmployeeDto.class); 
 
-//1. Source of information.
-//2. Desitnation object(DTO).
+// 1. Source of information
+// 2. Destination object (DTO)
 ```
 
 ## Simple Mapping Entity to DTO
 
-Model Mapper's power won't stop at mapping just the simple properties, like string, int BigDecimal, etc., with it you can map even nested properties. 
-
-Let's take for instance.
+While Model Mapper excels in mapping simple properties (like string, int BigDecimal, etc.), it can also map nested properties:
 
 ```java
 @Entity
-@Table(name = "employees")                  // Here we have our normal Employee Entity connected to table `employees`
+@Table(name = "employees") // Here, we have our normal Employee entity connected to the `employees` table.
 public class Employee {
 
     @Column(name = "first_name")
     private String firstName;
+
     @Column(name = "salary")
     private BigDecimal salary;
-    @ManyToOne                               // Many to one relationship to the entity Address
-    @JoinColumn(name = "address_id")        
+
+    @ManyToOne // Many-to-one relationship with the Address entity
+    @JoinColumn(name = "address_id")
     private Address address;
 }
 
@@ -146,22 +145,24 @@ public class Address {
     private String city;
 }
 
+// When naming the table first and then the property we want, 
+// Model Mapper will get in the property object recursively and retrieve its property value.
+
 public class EmployeeDto {
 
     private String firstName;
     private BigDecimal salary;
-    private String addressCity;             // When naming first the table and then the property you want, 
-}                                           // Model Mapper will get in the property object recursively and take its property value.
+    private String addressCity; 
+}                               
 ```
+
 ## Explicit Mapping
 
-As you have seen Model Mapper is a really powerful tool and using just conventions we can achieve mapping even of nested objects properties.
+As previously demonstrated, Model Mapper is a powerful tool - using conventions, we can achieve mapping even of nested objects' properties.
 
-It has its limitations, as sometimes fields differ too much or they are from different types then the mapping can't be done.
+However, sometimes fields are from different types (or too different altogether), and the mapping cannot occur.
 
-In this case, some manual mapping is needed.
-
-When we get to the point where we have a second layer of nested mapping, Model Mapper will need little help to manage to map them properly.
+When we have a second layer of nested mapping, Model Mapper will need help to map the fields.
 
 
 ```java
@@ -171,11 +172,13 @@ public class Employee {
 
     @Column(name = "first_name")
     private String firstName;
+
     @Column(name = "salary")
     private BigDecimal salary;
+
     @ManyToOne
     @JoinColumn(name = "address_id")
-    private Adress address;
+    private Address address;
 }
 
 @Entity
@@ -202,28 +205,30 @@ public class EmployeeDto {
 
     private String addressCity;
 }
-
-// ConsoleRunner.java
-ModelMapper modelMapper = new ModelMapper();
-PropertyMap<EmployeeDto, Employee> employeeMap = new PropertyMap<EmployeeDto, Employee>() {
-          @Override
-          protected void configure() {
-                map().setFirstName(source.getName());
-        // Add mappings for other fields
-                map().setAddressCity(source.getAddress().getCity().getName());           // Here we use the getters to help Model Mapper find the right string we want.
-          }
-};
-
-modelMapper.addMappings(employeeMap).map(employeeDto,employee);
 ```
 
-There is a difference in the syntax **explicit mapping** in Java 7 and Java 8. 
+```java
+// ConsoleRunner.java
+ModelMapper modelMapper = new ModelMapper();
+PropertyMap < EmployeeDto, Employee > employeeMap = new PropertyMap < EmployeeDto, Employee > () {
+    @Override
+    protected void configure() {
+        map().setFirstName(source.getName());
+        // Adding mappings for other fields...
+        // We use getters to help Model Mapper find the string we want.
+        map().setAddressCity(source.getAddress().getCity().getName()); 
+    }
+};
+
+modelMapper.addMappings(employeeMap).map(employeeDto, employee);
+```
+
+There is a difference between the syntax for **explicit mapping** in Java 7 and Java 8. 
 
 ## Explicit Mapping DTO to Entity - Java 8
 
 ```java
-// Java 8
-// ConsoleRunner.java
+// ConsoleRunner.java (Java 8)
 
 ModelMapper modelMapper = new ModelMapper();
 TypeMap<EmployeeDto, Employee> typeMap = mapper.createTypeMap(EmployeeDto.class, Employee.class);
@@ -233,106 +238,109 @@ typeMap.map(employeeDto);
 
 ## Validation 
 
-Sometimes we can not be sure if Model Mapper can map all entities.
+We use validation to ensure that Model Mapper can map all entities.
 
-For these cases, we are given a tool with which we can assure that all the entities are mapped.
+The `validate()` method verifies that all destination properties are matched.
 
-It's a method that validates if all properties can be mapped successfully.
+If validation fails, the method throws a `ValidationException` with a message describing any unmatched destination properties.
 
-If Model Mapper can't map it correctly it will throw a proper exception from which we find the problem.
-
-Let's see it with code.
+Let us see validation in practice:
 
 ```java
 ModelMapper modelMapper = new ModelMapper();
-                                //1.               2.
- modelMapper.createTypeMap(EmployeeDto.class, Employee.class);
- modelMapper.validate();                                            // validate method, which throws if mapping can't be done.
+//                        1.                 2.
+modelMapper.createTypeMap(EmployeeDto.class, Employee.class);
 
-//1. Source
-//2. Destination
+// The `validate()` method that throws a `ValidationException`:
+modelMapper.validate(); 
+
+// 1. Source
+// 2. Destination
 
 
-//Exception
-1) Unmapped destination properties found in TypeMap[EmployeeDto -> Employee]:
+// Exception
+// Unmapped destination properties found in TypeMap[EmployeeDto -> Employee]
 
-    com.persons.domain.entities.Employee.setAddress()
-    com.persons.domain.entities.Employee.setId()
-    com.persons.domain.entities.Employee.setBirthday()
+com.persons.domain.entities.Employee.setAddress();
+com.persons.domain.entities.Employee.setId();
+com.persons.domain.entities.Employee.setBirthday();
 ```
 
-To fix the exception we have to check if every property is named by convention or create a custom configuration.
+To avoid the exception, we must verify that every property is named by convention or create a custom configuration.
 
 ## Skipping Properties
 
-Sometimes when we are lazy and we decide to re-use already existing DTO, we may face the problem of not needing some of the properties.
+When reusing an already existing DTO, we may not need some of the properties.
 
-To not include the properties in our query we can create a custom configuration where we name the properties that we don't want to be mapped.
+To exclude them, we can create a custom configuration where we name the properties we prefer not to be mapped:
 
-With code.
 ```java
-//Java 7
+// Java 7
 ModelMapper modelMapper = new ModelMapper();
 PropertyMap<EmployeeDto, Employee> employeeMap = new PropertyMap<EmployeeDto, Employee>() {
-            @Override
-            protected void configure() {
-                skip().setSalary(null);                 // With the method skip we show to Model Mapper that we don't need the given property.
-            }
-        };
+    @Override
+    protected void configure() {
+        skip().setSalary(null); // Using the skip method, we inform Model Mapper that the given property is redundant.
+    }
+};
 
-modelMapper.addMappings(employeeMap).map(employeeDto,employee);
+modelMapper.addMappings(employeeMap).map(employeeDto, employee);
 ```
 
-In Java 8 we have shorter syntax.
+In Java 8, we have a shorter syntax:
+
 ```java
-typeMap.addMappings(mapper -> mapper.skip(Employee::setSalary));        // That's enough to name the property which should be skipped.
+typeMap.addMappings(mapper -> mapper.skip(Employee::setSalary)); // Naming the property that should be skipped
 typeMap.map(employeeDto);
 
 ```
 
-## Type converting
+## Type Converting
 
-Sometimes the information we receive from the database can be in different type than we need it.
+Sometimes the information we receive from the database can be of the incorrect type.
 
-For these cases, we can tell Model Mapper to try to convert the properties to the type that we need.
+In that case, we can tell Model Mapper to try to convert the properties to the type that we need.
 
-This can be done with additional custom configuration.
+We can achieve this with additional custom configuration.
 
 ```java
 // Java 7
 
 ModelMapper modelMapper = new ModelMapper();
-Converter<String, String> stringConverter = new AbstractConverter<String, String>() {
-            @Override
-            protected String convert(String s) {
-                return s == null ? null : s.toUpperCase();              //Convert Strings to Upper Case
-            }
-        };
+Converter<String, String> stringConverter = new AbstractConverter <String, String>() {
+    @Override
+    protected String convert(String s) {
+        return s == null ? null : s.toUpperCase(); // Convert strings to uppercase
+    }
+};
 
 PropertyMap<EmployeeDto, Employee> employeeMap = new PropertyMap<EmployeeDto, Employee>() {
-            @Override
-            protected void configure() {
-                        //1.                                                
-                using(stringConverter).map().setFirstName(source.getName());
-            }
-        };
+    @Override
+    protected void configure() {
+        //    1. 
+        using(stringConverter).map().setFirstName(source.getName());
+    }
+};
 
-modelMapper.addMappings(employeeMap).map(employeeDto,employee);
+modelMapper.addMappings(employeeMap).map(employeeDto, employee);
 
-// 1. Using the convention we created.
+// 1. Using the convention we created
 ```
 
-Again there is a difference in the syntax between Java 7 and Java 8
+Again, there is a difference in the syntax between Java 7 and Java 8
 
-## Converting Properties - Java 8
+## Converting Properties in Java 8
 
 ```java
-// Java 8 
 ModelMapper modelMapper = new ModelMapper();
 Converter<String, String> toUppercase = ctx -> ctx.getSource() == null ? null : ctx.getSource().toUppercase();
+
 TypeMap<EmployeeDto, Employee> typeMap = 
-mapper.createTypeMap(EmployeeDto.class, Employee.class).addMappings(mapper -> mapper.using(toUppercase).map(EmployeeDto::getName, Employee::setFirstName));
+    mapper.createTypeMap(EmployeeDto.class, Employee.class)
+    .addMappings(mapper -> mapper.using(toUppercase).map(EmployeeDto::getName, Employee::setFirstName));
+
 typeMap.map(employeeDto);
 ```
 
 [/slide]
+
