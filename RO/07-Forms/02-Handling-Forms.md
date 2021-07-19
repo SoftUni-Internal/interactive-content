@@ -1,8 +1,8 @@
-# Formularele și manipularea datelor
+# Formularele și Manipularea Datelor
 
 [slide hideTitle]
 
-# Prezentare generală a formularelor
+# Prezentare Generală a Formularelor
 
 js-angular-forms-12-13-Handling-Forms-and-forms-overview
 
@@ -24,7 +24,7 @@ Formularele **reactive** sunt mai ușor de reutilizat și testat, fiind în acel
 
 [slide hideTitle]
 
-# Formulare bazate pe șabloane
+# Formulare Bazate pe Șabloane
 
 js-angular-forms-14-Template-Driven-Forms
 
@@ -43,7 +43,7 @@ Urmați acești pași atunci când creați un formular scriind șabloane utiliz�
 
 [slide hideTitle]
 
-# Problemă: Crearea unui formular bazat pe șabloane
+# Problemă: Crearea unui Formular Bazat pe Șabloane
 
 js-angular-forms-15-problem-Create-a-Template-Driven-Form
 
@@ -122,7 +122,7 @@ Pentru o listă completă a directivelor exportate, puteți consulta [Documenta�
 
 [slide hideTitle]
 
-# Crearea unei componente de formular
+# Crearea unei Componente de Formular
 
 js-angular-forms-18-Create-Form-Component
 
@@ -152,7 +152,7 @@ După cum se arată mai sus, exportăm o clasă, care conține cele patru propri
 - `hardDisk` - Număr
 - `operatingSystem` - Şir
 
-## Crearea componentei unui formular
+## Crearea Componentei unui Formular
 
 Ar trebui să creăm o clasă  `LaptopFormComponent`, care va defini aspectul și detaliile formularului.
 
@@ -203,7 +203,7 @@ Urmăriți proprietatea `submitted` și metoda  `onSubmit` -  acestea vor fi fol
 
 [slide hideTitle]
 
-# Șablon HTML inițial
+# Șablon HTML Inițial
 
 js-angular-forms-19-20-Initial-HTML-Template
 
@@ -312,7 +312,7 @@ Angular va atașa automat o **directivă NgForm**.
 
 [slide hideTitle]
 
-# Accesarea referinței locale
+# Accesarea Referinței Locale
 
 js-angular-forms-23-Access-the-Local-Reference
 
@@ -337,7 +337,7 @@ După cum puteți vedea, folosim și cârligul de ciclu de viață `ngAfterViewI
 
 [slide hideTitle]
 
-# Trimiterea unui formular
+# Trimiterea unui Formular
 
 js-angular-forms-24-Submit-a-Form
 
@@ -360,7 +360,7 @@ onSubmit() {
 }
 ```
 
-## Gestionarea trimiterii formularului
+## Gestionarea Trimiterii Formularului
 
 Odată ce formularul a fost trimis, se recomandă ascunderea **div-block** încapsulant:
 
@@ -383,7 +383,7 @@ Pentru a realiza acest lucru, legăm proprietatea **div** cu clasa **container**
 
 [slide hideTitle]
 
-# Starea formularului de urmărire
+# Starea Formularului de Urmărire
 
 js-angular-forms-25-Tracking-Form-State
 
@@ -404,7 +404,7 @@ De asemenea, poate **actualiza** controlul cu clase speciale Angular CSS și poa
 
 [slide hideTitle]
 
-# Starea controlului de urmărire
+# Starea Controlului de Urmărire
 
 js-angular-forms-26-Track-Control-State
 
@@ -432,7 +432,7 @@ Aceste două clase sunt adesea folosite atunci când dorim să informăm utiliza
 
 [slide hideTitle]
 
-# Adăugarea CSS personalizat pentru un feedback vizual
+# Adăugarea CSS personalizat Pentru un Feedback Vizual
 
 js-angular-forms-27-Add-Custom-CSS-for-Visual-Feedback
 
@@ -451,7 +451,7 @@ input.ng-invalid.ng-touched {
 
 [slide hideTitle]
 
-# Adăugarea validării
+# Adăugarea Validării
 
 js-angular-forms-28-Add-Validation
 
@@ -490,7 +490,7 @@ De exemplu:
 
 [slide hideTitle]
 
-# Validatori terți
+# Validatori Terți
 
 js-angular-forms-29-List-of-Validators-Third-party-Validators
 
@@ -528,7 +528,7 @@ Pentru formularele **bazate pe șabloane**, veți avea nevoie de următoarele [d
 
 [slide hideTitle]
 
-# Afișarea mesajelor de eroare
+# Afișarea Mesajelor de Eroare
 
 js-angular-forms-30-31-Outputing-Error-Messages
 
@@ -563,7 +563,7 @@ Adăugați un mesaj util în **div**.
 
 [slide hideTitle]
 
-# Valabilitatea generală a formularului
+# Valabilitatea Generală a Formularului
 
 js-angular-forms-32-Form-Overall-Validity
 
@@ -581,7 +581,7 @@ Blocați butonul **submit** în cazul în care un control are **stare nevalidă*
 
 [slide hideTitle]
 
-# Legare de date bidirecțională
+# Legare de Date Bidirecțională
 
 js-angular-forms-33-Two-way-Data-Binding
 
@@ -634,7 +634,7 @@ De exemplu, **Parolă** și **Confirmare parolă**:
 
 [slide hideTitle]
 
-# Setarea și corectarea unei valori de formular
+# Setarea și Corectarea unei Valori de Formular
 
 js-angular-forms-35-Setting-and-Patching-Form-Value
 
@@ -652,7 +652,7 @@ changeInput() {this.laptopForm.form.patchValue({
 
 [slide hideTitle]
 
-# Resetarea formularului
+# Resetarea Formularului
 
 js-angular-forms-36-Resetting-the-Form
 

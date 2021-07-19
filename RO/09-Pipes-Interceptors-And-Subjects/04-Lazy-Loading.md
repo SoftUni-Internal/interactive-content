@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Ce este Lazy Loading?
+# Ce Este Lazy Loading?
 
 js-interactive-pipes-interceptors-and-subjects-21-22-Lazy-Loading-and-what-is-lazy-loading
 
@@ -30,7 +30,7 @@ Oricare dintre aceste **module adiționale** va fi încărcat doar atunci când 
 
 [slide hideTitle]
 
-# Prepararea pentru Lazy Loading
+# Prepararea Pentru Lazy Loading
 
 js-interactive-pipes-interceptors-and-subjects-23-Preparing-for-Lazy-Loading
 

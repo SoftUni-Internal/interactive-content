@@ -2,13 +2,13 @@
 
 [slide hideTitle]
 
-# Prezentare generală a directivelor
+# Prezentare Generală a Directivelor
 
 js-angular-forms-3-4-Directives-and-directives-overview
 
 Există trei tipuri de directive în Angular:  **Components**, **Attribute**, și  **Structural**.
 
-## Directivele componente
+## Directivele Componente
 
 **Componentele** Angular sunt un **subset** de directive, asociate întotdeauna cu un **șablon**.
 
@@ -20,7 +20,7 @@ Acest HTML este apoi inserat direct în **DOM**.
 
 O componentă trebuie să aparțină unui **NgModule** pentru a fi disponibilă pentru alte componente sau aplicație.
 
-## Directive privind atributele
+## Directive Privind Atributele
 
 Directivele privind atributele modifică aspectul sau comportamentul unui **element**, **componente** sau al unei alte **directive**.
 
@@ -33,7 +33,7 @@ Exemplele includ:
 - Afișarea unei definiții pentru un cuvânt atunci când utilizatorul **plasează sau face clic** pe un element
 - **Ascunderea și afișarea** unui modul când se face clic pe un buton
 
-## Directive structurale
+## Directive Structurale
 
 Directivele structurale sunt responsabile pentru layout-ul **HTML**.
 
@@ -57,11 +57,11 @@ Așa cum se arată mai sus, un asterisc `*` precede numele atributului unei dire
 
 [slide hideTitle]
 
-# Compararea directivelor
+# Compararea Directivelor
 
 js-angular-forms-5-Directives-Comparison
 
-## Directivele privind atribute
+## Directivele Privind Atribute
 
 Directivele privind atributele au aspectul și stilul lor de layout.
 
@@ -111,7 +111,7 @@ Acceptă trei tipuri de expresii:
 <ul [ngClass]="{'first': true, 'second': true, 'third': false}">...</ul>
 ```
 
-## Directive structurale
+## Directive Structurale
 
 Scopul principal al directivelor structurale este de a defini și modifica aspectul HTML și structura DOM.
 
@@ -123,7 +123,7 @@ Există trei directive structurale principale în Angular: `*ngIf`, `*ngFor`, ș
 
 [slide hideTitle]
 
-# Construirea unei directive simple privind atributele
+# Construirea unei Directive Simple Privind Atributele
 
 js-angular-forms-6-Build-a-Simple-Attribute-Directive
 
@@ -160,7 +160,7 @@ export class HighlightDirective {
 
 [slide hideTitle]
 
-# Atașarea stilurilor la elementele de referință
+# Atașarea Stilurilor la Elementele de Referință
 
 js-angular-forms-7-Attach-Styles-to-Referenced-Elements
 js-angular-forms-8-Warning - Use-Renderer2
@@ -227,7 +227,7 @@ Renderer2 are multe alte metode, cum ar fi `setProperty`,` setValue` și `remove
 
 [slide hideTitle]
 
-# Răspunsul la evenimente
+# Răspunsul la Evenimente
 
 js-angular-forms-10-Respond-to-Events
 

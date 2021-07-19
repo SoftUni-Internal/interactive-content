@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# De ce avem nevoie de servicii?
+# De Ce Avem Nevoie de Servicii?
 
 18-19-Serviciile-si-de-ce-avem-nevoie-de-ele
 
@@ -49,7 +49,7 @@ Pentru a înregistra un serviciu ca parte a **componentei**, va trebui să **spe
 
 [slide hideTitle]
 
-# Crearea unui serviciu
+# Crearea Unui Serviciu
 
 20-Crearea-unui-serviciu
 
@@ -76,7 +76,7 @@ Serviciul nostru simplu conține o funcție de notificare `notify()`, care afiș
 
 [slide hideTitle]
 
-# Injectarea în componente
+# Injectarea în Componente
 
 21-Injectarea-in-Componente
 

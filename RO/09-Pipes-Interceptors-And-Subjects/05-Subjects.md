@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Ce este un Subject?
+# Ce Este un Subject?
 
 js-interactive-pipes-interceptors-and-subjects-27-28-Subjects-and-what-is-a-subject
 

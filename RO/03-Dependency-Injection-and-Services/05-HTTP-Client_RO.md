@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Modulul de client HTTP
+# Modulul de Client HTTP
 
 32-33-Clientul-HTTP-și-Modulul-de-Client-http
 
@@ -130,7 +130,7 @@ Inlăuntrul `ngOnInit()`, folosiți metoda `subcribe()`.
 
 [slide hideTitle]
 
-# Tastarea verificării răspunsului
+# Tastarea Verificării Răspunsului
 
 36-Tastarea-Verificării-Răspunsului
 
@@ -152,7 +152,7 @@ interface Photo {
 
 [slide hideTitle]
 
-# Erorile de manipulare
+# Erorile de Manipulare
 
 37-Erorile-de-Manipulare
 

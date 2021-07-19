@@ -22,7 +22,7 @@ Directives also have a similar set of lifecycle hooks that manages them.
 
 [slide hideTitle]
 
-# NgOnInit And NgOnDestroy
+# NgOnInit and NgOnDestroy
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-29-NgOnInIt-and-NgOnDestroy-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

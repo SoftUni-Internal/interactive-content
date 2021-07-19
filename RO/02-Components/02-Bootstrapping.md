@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Bootstrapping an Application
+# Bootstrapping-ul unei Aplicații
 
 Bootstrapping este acțiunea de inițializare a aplicației noastre de tip Angular.
 
@@ -29,7 +29,7 @@ Prin convenție, modulul **NgModule** este numit **AppModule**, dar îi putem as
 
 [slide hideTitle]
 
-# The Initial Module
+# Modulul Inițial
 
 Adăugăm decoratorul `@NgModule` după instrucțiunile cu import.
 
@@ -58,7 +58,7 @@ Proprietatea `bootstrap` specifică lui **NgModule** specifică componenta cores
 
 [slide hideTitle]
 
-# Initial Module Properties
+# Proprietățile Modulului Inițial
 
 Acea **matrice de declarații** al modulului sugerează lui Angular care componentă e specifică acelui modul. 
 

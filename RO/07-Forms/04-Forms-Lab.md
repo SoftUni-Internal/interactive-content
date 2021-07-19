@@ -1,8 +1,8 @@
-# Formulare- Laborator
+# Formulare - Laborator
 
 [slide hideTitle]
 
-# Configurare inițială
+# Configurare Inițială
 
 Forms-Lab-1
 
@@ -28,7 +28,7 @@ Mergeți la [FontAwesome](fontawesome.com) și adăugați linkul HTML furnizat �
 
 [slide hideTitle]
 
-# Formular bazat pe șabloane
+# Formular Bazat pe Șabloane
 
 Forms-Lab-2
 
@@ -96,7 +96,7 @@ Pentru a schimba manual starea unui câmp de intrare în **invalid**, trebuie s�
 
 [slide hideTitle]
 
-# Formulare reactive
+# Formulare Reactive
 
 Forms-Lab 3-1
 Forms-Lab 3-2

@@ -2,11 +2,11 @@
 
 [slide hideTitle]
 
-# Conținutul lecției
+# Conținutul Lecției
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## În această lecție veți învăța:
+## În Această Lecție Veți Invăța:
 
 **1. Ce este HTTP**
 
@@ -18,11 +18,11 @@
 
 -  **Server-side**
 
-**3. Prezentare generală Angular**
+**3. Prezentare Generală Angular**
 
 -  Platforma de aplicații web
 
-**4. Prezentare generală TypeScript**
+**4. Prezentare Generală TypeScript**
 
 -  Javascript Superset
 

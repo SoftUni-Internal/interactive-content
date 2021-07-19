@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Creați o nouă aplicație
+# Creați o Nouă Aplicație
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-22-23-24-Angular-Installation-and-information-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -31,7 +31,7 @@ Puteți găsi mai multe informații pe [Site-ul oficial] (https://angular.io) sa
 
 [slide hideTitle]
 
-# Suport pentru IDE
+# Suport Pentru IDE
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-25-IDE-Support-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

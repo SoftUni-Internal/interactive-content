@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Conținutul lecției
+# Conținutul Lecției
 
 01-02-Redux-State-Managemet-and-table-of-contents
 

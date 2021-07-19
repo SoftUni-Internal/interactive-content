@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Prezentare generală TypeScript
+# Prezentare Generală TypeScript
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-14-15-Introduction-to-TypeScript-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -22,7 +22,7 @@ După compilarea fișierelor, **vom primi JavaScript simplu** ca ieșire.
 
 [slide hideTitle]
 
-# Tipuri de variabile în TypeScript
+# Tipuri de Variabile în TypeScript
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-16-Variable-Types-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -182,7 +182,7 @@ Această funcție va returna șirul: `Hi, John`, imprimându-l pe consolă.
 
 [slide hideTitle]
 
-# Generice și enumerații
+# Generice și Enumerații
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-20-Generics-and-Enumerations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

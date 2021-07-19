@@ -1,8 +1,8 @@
-# Strategia de detectare a modificărilor
+# Strategia de Detectare a Modificărilor
 
 [slide hideTitle]
 
-# Ce este detectarea modificărilor?
+# Ce este Detectarea Modificărilor?
 
 3-4-Strategia-de-detectare-a-modificărilor
 
@@ -24,7 +24,7 @@ Dacă **aplicația noastră este foarte mare**, pot apărea întârzieri, dar pu
 
 [slide hideTitle]
 
-# Strategia de detectare a modificărilor
+# Strategia de Detectare a Modificărilor
 
 DEMO
 
@@ -61,7 +61,7 @@ Vom învăța ce înseamnă `onPush` în clipul următor.
 
 [slide hideTitle]
 
-# Strategia de detectare a modificărilor - Membrii
+# Strategia de Detectare a Modificărilor - Membrii
 
 5-Strategia-de-detectare-a-modificărilor-Membrii
 

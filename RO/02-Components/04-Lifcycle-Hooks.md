@@ -1,8 +1,8 @@
-# Lifecycle Hooks
+# Cârlige de Tip Lifecycle
 
 [slide hideTitle]
 
-# Lifecycle Overview
+# Prezentare Generală a Lifecycle
 
 Angular-Components-27-28-Lifecycle-overview
 
@@ -23,7 +23,7 @@ Directivele au, de asemenea, un set similar de cârlige pentru ciclul de viață
 
 [slide hideTitle]
 
-# NgOnInit And NgOnDestroy
+# NgOnInit și NgOnDestroy
 
 Angular-Components-29-NgOnInIt-and-NgOnDestroy-example
 
@@ -53,7 +53,7 @@ export class GamesComponent implements OnInit, OnDestroy {
 
 [slide hideTitle]
 
-# Other Lifecycle Hooks
+# Alte Cârlige de Tip Lifecycle
 
 Angular-Components-30-Other-Lifecycle-Hooks
 

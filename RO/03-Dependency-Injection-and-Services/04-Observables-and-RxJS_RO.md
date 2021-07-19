@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Programarea funcțională
+# Programarea Funcțională
 
 23-24-RxJS-și-Observabile-și-programarea-funcțională
 
@@ -26,7 +26,7 @@ Drept urmare, codul funcționaș tinde să fie **mai predictibil** și **mai uș
 
 Majoritatea aplicațiilor moderne JavaScript se folosesc de idei din sfera programării funcționale.
 
-## Programarea asincronă
+## Programarea Asincronă
 
 JavaScript este un limbaj **single-threaded** (cu un singur fir), ceea ce înseamnă că majoritatea codului care a fost **scris** până acum este rulat ca un **proces unic** pe computer. 
 
@@ -48,7 +48,7 @@ Asta înseamnă că trebuie să ne **asigurăm că acest cod va funcționa** ind
 
 [slide hideTitle]
 
-# Programarea funcțională reactivă
+# Programarea Funcțională Reactivă
 
 26-Programarea-Funcțională-Reactivă
 
@@ -135,7 +135,7 @@ Extensiile reactive **nu sunt limitate** doar la JavaScript.
 
 Ele sunt, de asemenea, **disponibile pentru multe dintre cele mai populare limbaje de programare** precum Java, C#, Scala, Clojure, Swift, și altele.
 
-## Cum să instalăm RxJS
+## Cum să Instalăm RxJS
 
 Pentru a instala RxJS, deschideți un terminal în directorul principal al **proiectelor voastre Angular** și tastați `npm install rxjs`.
 
@@ -157,7 +157,7 @@ import { map, filter } from 'rxjs/operators'
 
 [slide hideTitle]
 
-# Efectele secundare ale observabililor (Fierbite vs Rece)
+# Efectele Secundare ale Observabililor (Fierbite vs Rece)
 
 28-Efectele-Secundare-Ale-Observabililor-Fierbinte-vs-Rece
 29-Efectele-Secundare-Ale-Observabililor
@@ -226,7 +226,7 @@ Dacă **nu mai sunt noi abonați**, observabilul nou-creat se va **dezabona** de
 
 [slide hideTitle]
 
-# Operatori RxJS des utilizați
+# Operatori RxJS des Utilizați
 
 30-Operatori-RxJS-Comun-Utilizați
 
@@ -301,7 +301,7 @@ Puteți aprofunda mai mult subiectul ReactiveX [aici](http://reactivex.io).
 
 [slide hideTitle]
 
-# Prezentarea generală a RxJS și FRP
+# Prezentarea Generală a RxJS și FRP
 
 31-Prezentare-RxJS-și-FRP
 

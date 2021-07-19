@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# From Parent To Child
+# From Parent to Child
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-31-32-33-Component-Interaction-from-parent-to-child-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -39,7 +39,7 @@ export class GameComponent {
 
 [slide hideTitle]
 
-# From Child To Parent
+# From Child to Parent
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-34-35-Component-Interaction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

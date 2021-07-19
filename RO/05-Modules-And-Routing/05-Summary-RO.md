@@ -1,6 +1,6 @@
 [slide hideTitle]
 
-# Summary
+# Rezumat
 
 Angular-Modules-and-routing-31-Summary
 
