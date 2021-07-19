@@ -27,7 +27,7 @@ Veți începe să confecționați coroane din **ultimii crini** și **primii tra
 
 Dacă suma valorilor lor este **egală** cu **15** - **confecționați o coroană** și **eliminați florile utilizate**.
 
-Dacă suma este **mai mare de 15**, **micșorați** numărul de **crini cu 2**.
+Dacă suma este **mai mare de 15**, **micșorați** valoarea **crinilor cu 2**.
  
 Dacă suma este **mai mică de 15, trebuie să stocați florile pentru mai târziu și să le eliminați**.
  
@@ -64,7 +64,7 @@ La sfârșit, dacă aveți **flori stocate, ar trebui să faceți cât mai multe
 
 - Începem cu ultimii crini (13) și primii trandafiri (2) -> 13 + 2 = 15 -> 15 = 15. Vom confecționa o coroană de flori și vom îndepărta florile utilizate.
 
-- Apoi avem 9 + 10 = 19 -> 19 > 15, deci micșorăm numărul de crini cu 2 -> 7 + 10 = 17, apoi vom micșora din nou numărul de crini cu 2 -> 5 + 10 = 15. Vom confecționa încă o coroană de flori și eliminăm florile utilizate.
+- Apoi avem 9 + 10 = 19 -> 19 > 15, deci micșorăm valoarea crinilor cu 2 -> 7 + 10 = 17, apoi vom micșora din nou numărul de crini cu 2 -> 5 + 10 = 15. Vom confecționa încă o coroană de flori și eliminăm florile utilizate.
 
 - Apoi, avem 7 + 8 = 15. Mai creăm o coroană de flori și le eliminăm.
 
@@ -106,7 +106,7 @@ Le stocăm suma pentru mai târziu și le eliminăm.
 [/hint] 
 [hint]
 Apoi, avem `10 + 6 = 16` -\> 16 \> 15
-**Micșorăm** numărul de crini cu **2** -\> `8 + 6 = 14`
+**Micșorăm** valoarea crinilor cu **2** -\> `8 + 6 = 14`
 Deoarece 14 este mai mic de 15, le **stocăm** suma pentru mai târziu și le eliminăm.
 [/hint] 
 [hint]
