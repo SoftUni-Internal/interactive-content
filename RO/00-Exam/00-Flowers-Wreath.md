@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -37,7 +37,7 @@ La sfârșit, dacă aveți **flori stocate, ar trebui să faceți cât mai multe
 
 ## Intrare
 
-- Pe **prima linie**, veți primi numerele întregi care reprezintă **crinii**, **separate* prin "**, **".
+- Pe **prima linie**, veți primi numerele întregi care reprezintă **crinii**, **separate** prin "**, **".
 
 - Pe **a doua linie**, veți primi numerele întregi care reprezintă **trandafirii**, **separate** prin "**, **".
 
@@ -62,7 +62,7 @@ La sfârșit, dacă aveți **flori stocate, ar trebui să faceți cât mai multe
 
 ## Comentariu
 
-- Începem cu ultimii crini (13) și primii trandafiri (2) -> 13 + 2 = 15 -> 15 = 15. Vom confecționa o coroană de flori și vom îndepărta florile.
+- Începem cu ultimii crini (13) și primii trandafiri (2) -> 13 + 2 = 15 -> 15 = 15. Vom confecționa o coroană de flori și vom îndepărta florile utilizate.
 
 - Apoi avem 9 + 10 = 19 -> 19 > 15, deci micșorăm numărul de crini cu 2 -> 7 + 10 = 17, apoi vom micșora din nou numărul de crini cu 2 -> 5 + 10 = 15. Vom confecționa încă o coroană de flori și eliminăm florile utilizate.
 
