@@ -4,7 +4,7 @@
 
 #  Ce este rutarea?
 
-Intro-to-Angular-and-Typescript-8-9-Routing-Overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-8-9-Routing-Overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Rutarea** este o parte a **navigării pe site-ul web**, este responsabilă pentru **comutarea** între diferite vizualizări (pagini).
 
@@ -44,7 +44,7 @@ Iată **câteva pagini**, care așteaptă să fie **randate** pe server odată c
 
 # Aplicație cu o singură pagină
 
-Intro-to-Angular-and-Typescript-10-Single-Page-Applications
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-10-Single-Page-Applications-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Router navigation** va încărca resursa corespunzătoare atunci când se modifică **locația**.
 

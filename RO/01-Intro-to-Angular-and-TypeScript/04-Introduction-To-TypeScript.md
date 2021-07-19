@@ -4,7 +4,7 @@
 
 # Prezentare generală TypeScript
 
-Intro-to-Angular-and-Typescript-14-15-Introduction-to-TypeScript
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-14-15-Introduction-to-TypeScript-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **TypeScript** este un **superset JavaScript** dezvoltat de Google și Microsoft.
 
@@ -24,7 +24,7 @@ După compilarea fișierelor, **vom primi JavaScript simplu** ca ieșire.
 
 # Tipuri de variabile în TypeScript
 
-Intro-to-Angular-and-Typescript-16-Variable-Types
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-16-Variable-Types-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 TypeScript ne permite să avem **adnotări** atașate variabilelor.
 
@@ -35,29 +35,29 @@ Adnotările ne oferă posibilitatea de a **specifica** **tipul** **variabilei**.
 -  **Boolean**
 
 ```js
-   let isChecked: boolean = false;
+let isChecked: boolean = false;
 ```
 
 -  **Number**
 
 ```js
-   let decimal: number = 6;
-   let hex: number = 0xf00d;
-   let binary: number = 0b1010;
-   let octal: number = 0o744;
+let decimal: number = 6;
+let hex: number = 0xf00d;
+let binary: number = 0b1010;
+let octal: number = 0o744;
 ```
 
 -  **String**
 
 ```js
-   let car: string = 'coupe';
+let car: string = 'coupe';
 ```
 
 -  **Array**
 
 ```js
-   let list: number[] = [1, 2, 3]; //Recomandat
-   let shoppingList: Array<number> = [1, 2, 3];
+let list: number[] = [1, 2, 3]; // Recomandat
+let shoppingList: Array<number> = [1, 2, 3];
 ```
 
 [/slide]
@@ -66,7 +66,7 @@ Adnotările ne oferă posibilitatea de a **specifica** **tipul** **variabilei**.
 
 # Clase în TypeScript
 
-Intro-to-Angular-and-Typescript-17-Classes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-17-Classes-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Clasele** din **TypeScript** sunt puțin diferite de cele din JavaScript.
 
@@ -75,20 +75,20 @@ Intro-to-Angular-and-Typescript-17-Classes
 O **clasă** în **TypeScript** arată astfel:
 
 ```js
-   class Greeter {
-      public greeting : string;
+class Greeter {
+   public greeting : string;
 
-      constructor(message : string) {
+   constructor(message : string) {
       this.greeting = message;
    }
 
    greet() : string {
-         return `Hello, ${this.greeting}!`;
-      }
+      return `Hello, ${this.greeting}!`;
    }
+}
 
-   let greeter : Greeter = new Greeter('world');
-   console.log(greeter.greet());
+let greeter : Greeter = new Greeter('world');
+console.log(greeter.greet());
 ```
 
 În această clasă, proprietatea **greeting** este **publică** și, de asemenea, un **șir**.
@@ -105,7 +105,7 @@ După ce instanțierea clasei **Greeter**, se imprimă și pe consolă.
 
 # Moștenirea în TypeScript
 
-Intro-to-Angular-and-Typescript-18-Inheritance
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-18-Inheritance-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Moștenirea** în **TypeScript** este aceeași ca în **JavaScript**.
 
@@ -116,22 +116,22 @@ Diferența dintre moștenirea din **TypeScript** și cea utilizată în **JavaSc
 Iată un exemplu:
 
 ```js
-   class Animal {
-      move(distanceInMeters: number = 0): void {
-         console.log(`Animal moved ${distanceInMeters}m.`);
-      }
+class Animal {
+   move(distanceInMeters: number = 0): void {
+      console.log(`Animal moved ${distanceInMeters}m.`);
    }
+}
 
-   class Dog extends Animal {
-      bark(): void {
-         console.log('Woof! Woof!');
-      }
+class Dog extends Animal {
+   bark(): void {
+      console.log('Woof! Woof!');
    }
+}
 
-   const dog = new Dog();
-   dog.bark();
-   dog.move(10);
-   dog.bark();
+const dog = new Dog();
+dog.bark();
+dog.move(10);
+dog.bark();
 ```
 
 Clasa **Dog** moștenește clasa **Animal**.
@@ -145,7 +145,7 @@ Adăugăm adnotarea **void** la metodele `bark()` și `move()` deoarece **nu** r
 
 # Interfaces
 
-Intro-to-Angular-and-Typescript-19-Interfaces
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-19-Interfaces-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Interfaces** este un alt concept furnizat de TypeScript.
 
@@ -162,16 +162,16 @@ Dacă vom folosi o anumită **interfață**, trebuie să o adăugăm ca o **adno
 Iată un exemplu:
 
 ```js
-   interface Man {
-      name: string;
-   }
+interface Man {
+   name: string;
+}
 
-   function Person(obj: Man) {
-      return `Hi, ${obj.name}`;
-   }
+function Person(obj: Man) {
+   return `Hi, ${obj.name}`;
+}
 
-   let john = { name: 'John' };
-   console.log(john);
+let john = { name: 'John' };
+console.log(john);
 ```
 
 În acest exemplu, avem interfața "**Man**", utilizată în funcția **Person**.
@@ -184,7 +184,7 @@ Această funcție va returna șirul: `Hi, John`, imprimându-l pe consolă.
 
 # Generice și enumerații
 
-Intro-to-Angular-and-Typescript-20-Generics-and-Enumerations
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-20-Generics-and-Enumerations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Genericele permit un cod **mai flexibil** și mai **reutilizabil**, de asemenea fac ca o componentă să funcționeze cu **mai multe tipuri**.
 
@@ -195,12 +195,12 @@ Putem rezolva această problemă utilizând **variabila de tip**- `T`, care ne p
 De exemplu:
 
 ```js
-   function identity<T>(arg: T): T {
-      return arg;
-   }
+function identity<T>(arg: T): T {
+   return arg;
+}
 
-   let outputString = identity<string>'myString';
-   let outputNumber = identity<number>5;
+let outputString = identity<string>'myString';
+let outputNumber = identity<number>5;
 ```
 
 În acest exemplu, setăm tipul de date al variabilei  `outputString` ca **șir**.
@@ -220,12 +220,12 @@ Ne ajută să creăm un **set de cazuri individuale**.
 Iată o enumerație **numerică**:
 
 ```js
-   enum Direction {
-      Up = 1,
-      Down,
-      Left,
-      Right,
-   }
+enum Direction {
+   Up = 1,
+   Down,
+   Left,
+   Right,
+}
 ```
 
 Enumerațiile **numerice** pot stoca valori ca numere.
@@ -233,12 +233,12 @@ Enumerațiile **numerice** pot stoca valori ca numere.
 **Enumerație bazată pe șiruri**:
 
 ```js
-   enum Direction {
-      Up = "UP",
-      Down = "DOWN",
-      Left = "LEFT",
-      Right = "RIGHT",
-   }
+enum Direction {
+   Up = "UP",
+   Down = "DOWN",
+   Left = "LEFT",
+   Right = "RIGHT",
+}
 ```
 
 Enumerațiile **bazate pe șiruri** pot stoca șirurile ca valori.
@@ -249,7 +249,7 @@ Enumerațiile **bazate pe șiruri** pot stoca șirurile ca valori.
 
 # Module
 
-Intro-to-Angular-and-Typescript-21-Modules
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-21-Modules-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Modulele din TypeScript sunt **la fel ca în ES6**.
 
@@ -258,21 +258,21 @@ Iată câteva modalități de a exporta metode:
 - **Exportarea** și **declararea**:
 
 ```js
-   export default interface StringValidator {
-      isAcceptable(s: string): boolean;
-   }
+export default interface StringValidator {
+   isAcceptable(s: string): boolean;
+}
 ```
 
 - **Exportarea** unei funcţii **specifice**:
 
 ```js
-   export { Example };
+export { Example };
 ```
 
 - **Exportați** o **funcție** cu un **nume** **diferit**:
 
 ```js
-   export { Example as mainExample };
+export { Example as mainExample };
 ```
 
 Iată câteva modalități de a importa metode:
@@ -280,19 +280,19 @@ Iată câteva modalități de a importa metode:
 - **Importarea** unei funcții **specifice**:
 
 ```js
-   import { Example } from './example';
+import { Example } from './example';
 ```
 
 - **Importarea** **a tot** într-o **singură** **variabilă**:
 
 ```js
-   import * as example from './example';
+import * as example from './example';
 ```
 
 - **Importarea** unei **funcții** și **schimbarea** **numelui**:
 
 ```js
-   import { Example as mainExample } from './example';
+import { Example as mainExample } from './example';
 ```
 
 Dacă am folosit **exportul implicit**, putem folosi `import example from "./example";`.

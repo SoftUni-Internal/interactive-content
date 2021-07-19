@@ -2,7 +2,7 @@
 
 # Rezumat
 
-Intro-to-Angular-and-Typescript-27-Summary
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-27-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## În această lecție ați învățat:
 
@@ -21,17 +21,17 @@ Intro-to-Angular-and-Typescript-27-Summary
    - rezultatul pe care îl primim este JavaScript simplu
 
    ```js
-      class Greeter {
-         public greeting : string;
+   class Greeter {
+      public greeting : string;
 
-         constructor(message : string) {
-            this.greeting = message;
-         }
-
-         greet() : string {
-            return `Hello, ${this.greeting}!`;
-         }
+      constructor(message : string) {
+         this.greeting = message;
       }
+
+      greet() : string {
+         return `Hello, ${this.greeting}!`;
+      }
+   }
    ```
 
 - Angular CLI

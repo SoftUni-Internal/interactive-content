@@ -13,7 +13,7 @@ Creați un folder **.vscode** și un fișier **tsconfig.json** cu următoarea co
 
 ```
 {
-   "compilerOptions":{
+   "compilerOptions": {
       "target":"es6",
       "module":"commonjs",
       "sourceMap":true
@@ -178,31 +178,31 @@ Funcțiile sunt definite în interiorul corpului clasei.
 De ce ar trebui ca clasa să fie abstractă?
 
 ```js
-    abstract class Employee {
-        public name: string;
-        public age: number;
-        public salary: number;
-        public tasks: Array<string>;
+abstract class Employee {
+    public name: string;
+    public age: number;
+    public salary: number;
+    public tasks: Array<string>;
 
-        (name: string, age: number) {
-            this.name = name;
-            this.age = age;
-            this.salary = 0;
-            this.tasks = [];
-        }
-
-        public work(): void {
-        /   /TODO
-        }
-
-        public collectSalary(): void {
-            //TODO
-        }
-
-        public getSalary(): number {
-            //TODO
-        }
+    (name: string, age: number) {
+        this.name = name;
+        this.age = age;
+        this.salary = 0;
+        this.tasks = [];
     }
+
+    public work(): void {
+        //TODO
+    }
+
+    public collectSalary(): void {
+        //TODO
+    }
+
+    public getSalary(): number {
+        //TODO
+    }
+}
 ```
 
 Funcția `work()` trebuie să parcurgă lista de sarcini și să o tipărească pe cea curentă.
@@ -210,11 +210,11 @@ Funcția `work()` trebuie să parcurgă lista de sarcini și să o tipărească 
 Cel mai simplu mod de a face acest lucru este să `shift` primul element din matrice și `push` până la final.
 
 ```js
-    public work(): void {
-        const currentTask = this.tasks.shift();
-        this.tasks.push(currentTask);
-        console.log(this.name + currentTask);
-    }
+public work(): void {
+    const currentTask = this.tasks.shift();
+    this.tasks.push(currentTask);
+    console.log(this.name + currentTask);
+}
 ```
 
 Tipărirea salariului este destul de simplă.
@@ -222,13 +222,13 @@ Tipărirea salariului este destul de simplă.
 Cu toate acestea, din moment ce managerul are un bonus la salariu, este mai bine să se calculeze întreaga sumă cu o funcție internă, pe care managerul o poate **suprascrie**.
 
 ```js
-    public collectSalary(): void {
-        console.log(`${this.name} received ${this.getSalary()} this month.`);
-    }
+public collectSalary(): void {
+    console.log(`${this.name} received ${this.getSalary()} this month.`);
+}
 
-    public getSalary(): number {
-        return this.salary;
-    }
+public getSalary(): number {
+    return this.salary;
+}
 ```
 
 Acum, orice obiect care moștenește din clasa Employee va avea toate proprietățile acesteia, precum și orice lucru nou definit în declarația lor.
@@ -242,21 +242,21 @@ Pentru clasele **Junior** și **Senior**, singura diferență față de clasa-ma
 Clasele copil vor apela clasa părinte cu toți parametrii necesari și își vor introduce sarcinile direct în matrice.
 
 ```js
-    export class Junior extends Employee {
-        constructor(name: string, age: number) {
-            super(name, age);
-            this.tasks.push(" is working on a simple task.");
-        }
+export class Junior extends Employee {
+    constructor(name: string, age: number) {
+        super(name, age);
+        this.tasks.push(" is working on a simple task.");
     }
+}
 
-    export class Senior extends Employee {
-        constructor(name: string, age: number) {
-            super(name, age);
-            this.tasks.push(" is working on a complicated task.");
-            this.tasks.push(" is taking time off work.");
-            this.tasks.push(" is supervising junior workers.");
-        }
+export class Senior extends Employee {
+    constructor(name: string, age: number) {
+        super(name, age);
+        this.tasks.push(" is working on a complicated task.");
+        this.tasks.push(" is taking time off work.");
+        this.tasks.push(" is supervising junior workers.");
     }
+}
 ```
 
 **Manager** nu este foarte diferită, cu excepția faptului că constructorul lor trebuie să dețină o proprietate **dividend** care este inițial setată la zero.
@@ -264,19 +264,19 @@ Clasele copil vor apela clasa părinte cu toți parametrii necesari și își vo
 Clasa trebuie să suprascrie funcția `getSalary()` pe care am adăugat-o mai devreme la clasa de bază, astfel încât să includă bonusul.
 
 ```js
-    export class Manager extends Employee {
-        public dividend: number;
+export class Manager extends Employee {
+    public dividend: number;
 
-        constructor(name: string, age: number) {
-            super(name, age);
-            this.tasks.push(" scheduled a meeting.");
-            this.tasks.push(" is preparing a quarterly meeting.");
-        }
-
-        public getSalary(): number {
-            return this.salary + this.dividend
-        }
+    constructor(name: string, age: number) {
+        super(name, age);
+        this.tasks.push(" scheduled a meeting.");
+        this.tasks.push(" is preparing a quarterly meeting.");
     }
+
+    public getSalary(): number {
+        return this.salary + this.dividend
+    }
+}
 ```
 
 [/slide]
@@ -325,15 +325,15 @@ Funcția `toString()` ar trebui să rămână la fel ca și clasa sa mamă.
 ## Exemplu
 
 ```js
-    let test : Melon = new Melon(100, "Test");
-    //Aruncă o eroare
+let test : Melon = new Melon(100, "Test");
+// Aruncă o eroare
 
-    let watermelon : Watermelon = new Watermelon(12.5, "Kingsize");
-    console.log(watermelon.toString());
+let watermelon : Watermelon = new Watermelon(12.5, "Kingsize");
+console.log(watermelon.toString());
 
-    // Element: Water
-    // Sortare: Kingsize
-    // Element Index: 100
+// Element: Water
+// Sortare: Kingsize
+// Element Index: 100
 ```
 
 [/slide]
@@ -373,23 +373,23 @@ Aceasta ar trebui să aibă două metode publice și un getter:
 | console.log(box.count); ||
 
 ```js
-    class Box<T> {
-        private _boxes = [];
+class Box<T> {
+    private _boxes = [];
 
-        public add(el: T) {
-            //TODO
-        }
+    public add(el: T) {
+        //TODO
+    }
         
-        public remove(el: T) {
-            //TODO
-        }
-
-        get count(): number {
-            //TODO
-        }
+    public remove(el: T) {
+        //TODO
     }
 
-    export default Box;
+    get count(): number {
+        //TODO
+    }
+}
+
+export default Box;
 ```
 
 [/slide]
@@ -415,17 +415,16 @@ Aceasta ar trebui să aibă următoarele metode publice:
 | kvp.display();||
 
 ```js
-    class KeyValuePair<T, U>
-    {
-        private key: T;
-        private value: U;
+class KeyValuePair<T, U> {
+    private key: T;
+    private value: U;
 
-        //TODO: Crează funcția setKeyValue
+    //TODO: Crează funcția setKeyValue
 
-        //TODO: Crează funcția de afișare
-    }
+    //TODO: Crează funcția de afișare
+}
 
-    export default KeyValuePair
+export default KeyValuePair;
 ```
 
 [/slide]

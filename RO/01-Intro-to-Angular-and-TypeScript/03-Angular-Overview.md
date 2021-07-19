@@ -4,11 +4,11 @@
 
 # Ce este Angular?
 
-Intro-to-Angular-and-Typescript-11-12-Angular-Overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-11-12-Angular-Overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Angular** este un **framework de aplicații web** open-source, dezvoltat de **Google**, scris în  [TypeScript](https://en.wikipedia.org/wiki/TypeScript), pentru construirea  aplicațiilor **front-end la nivel de întreprindere**.
 
-Angular încorporează cele mai bune **practici front-end** și **instrumente end-to-end**, de asemenea **Angular CLI** ne oferă un proces de construire **de înaltă calitate**, care ne permite să creăm rapid o aplicație bine structurată .
+Angular încorporează cele mai bune **practici front-end** și **instrumente end-to-end**, de asemenea **Angular CLI** ne oferă un proces de construire **de înaltă calitate**, care ne permite să creăm rapid o aplicație bine structurată.
 
 De asemenea, ne oferă **teste end-to-end**, **teste unitare** și multe altele.
 
@@ -21,15 +21,15 @@ O aplicație Angular este definită de un set de "**NgModules**", care colecteaz
 Iată un exemplu de componentă Angular:
 
 ```js
-   import { Component } from '@angular/core';
+import { Component } from '@angular/core';
 
-   @Component({
-      selector: 'my-app',
-      template: `<h1>Hello {{ name }}</h1>`,
-   })
-   export class AppComponent {
-      name = 'Angular';
-   } 
+@Component({
+   selector: 'my-app',
+   template: `<h1>Hello {{ name }}</h1>`,
+})
+export class AppComponent {
+   name = 'Angular';
+} 
 ```
 
 În acest exemplu, avem clasa **AppComponent** decorată cu **decorator de componente** - `@Component`.
@@ -46,7 +46,7 @@ Asta înseamnă că ori de câte ori există o etichetă HTML `my-app`, **AppCom
 
 # Versiuni Angular
 
-Intro-to-Angular-and-Typescript-13-Angular-Versions
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-13-Angular-Versions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Prima versiune Angular a fost numită **Angular 1**, numită acum **AngularJS**.
 
