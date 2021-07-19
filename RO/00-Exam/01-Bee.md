@@ -29,7 +29,7 @@ S-ar putea să existe și un **bonus** în teritoriu.
 
 **Toate pozițiile goale** vor fi marcate cu **"."**.
 
-În fiecare tură, vi se va da **comanda** care determină **direcția de deplasare a albinei**.
+În fiecare tură, vi se va da o **comandă** care determină **direcția de deplasare a albinei**.
 
 Comenzile vor fi: **"up"**, **"down"**, **"left"**, **"right"**, **"End"**.
 
