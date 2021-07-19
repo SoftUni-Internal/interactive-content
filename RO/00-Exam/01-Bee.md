@@ -29,13 +29,13 @@ S-ar putea să existe și un **bonus** în teritoriu.
 
 **Toate pozițiile goale** vor fi marcate cu **"."**.
 
-În fiecare tură, vi se va da **comanda** care determină **deplasarea albinei**.
+În fiecare tură, vi se va da **comanda** care determină **direcția de deplasare a albinei**.
 
 Comenzile vor fi: **"up"**, **"down"**, **"left"**, **"right"**, **"End"**.
 
 Dacă albina **se mută** pe o **floare**, aceasta polenizează floarea și mărește numărul florilor polenizate cu 1.
 
-Dacă merge la un **bonus**, albina se deplasează înainte cu o poziție, iar apoi bonusul **dispare**.
+Dacă ajunge la un **bonus**, albina se deplasează înainte cu o poziție, iar apoi bonusul **dispare**.
 
 Dacă albina **iese din teritoriu**, aceasta nu se poate întoarce înapoi și programul se încheie. Dacă albina primește comanda **"End"**, programul se oprește.
 
