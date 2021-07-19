@@ -4,7 +4,7 @@
 
 # Initial Setup
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/03-Java-ORM-And-Spring-Data-introtohibernate_resources-NEW.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/03-Java-ORM-And-Spring-Data-introtohibernate_resources-NEW.zip) **for these tasks.**
 
 Use the **provided skeleton** to create the **soft_uni** database. 
 

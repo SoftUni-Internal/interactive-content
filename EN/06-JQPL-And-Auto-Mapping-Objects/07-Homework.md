@@ -4,7 +4,9 @@
 
 # Resources
 
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/Homework-Resources-JPQL-and-Auto-Mapping-Objects.zip) **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/Homework-Resources-JPQL-and-Auto-Mapping-Objects.zip) **for these tasks.**
+
+## Part 1: Bookshop System
 
 You will be provided with a **bookshop_system** database. 
 
@@ -15,8 +17,6 @@ Make sure it has proper connections between the tables and is populated with sam
 [slide hideTitle]
 
 # Problem: Books Titles by Age Restriction
-
-## Part 1: Bookshop System
 
 You will receive an **age restriction** from the console. 
 
@@ -281,7 +281,7 @@ Print the total amount of book copies that were added.
 -	On the **second line** - the number of **book copies** each book should be increased with
 
 ## Output
--	**Total number of books** that was added to the database
+-	The **total number of books** that was added to the database
 
 ## Examples
 
@@ -332,13 +332,13 @@ Then, create a **program that receives an author's name** and returns the **tota
 
 | **Input** | **Output** |
 | --- | --- |
-| Christina Jordan | \{Author first and last name\} has writtent \{number of books\} books |
+| Christina Jordan | \{Author's first and last name\} has written \{number of books\} books |
 
 ### Example Three
 
 | **Input** | **Output** |
 | --- | --- |
-| Wanda Morales | \{Author first and last name\} has writtent \{number of books\} books |
+| Wanda Morales | \{Author's first and last name\} has written \{number of books\} books |
 
 [/slide]
 
@@ -375,19 +375,19 @@ For a successful registration, the user must have:
 The requirements for **valid parameters** are: 
 
 1. **Email** – must contain the `@` sign and a period
-  * it must be unique
+    * it must be unique
 
 2. **Password** – the character length must be **at least 6 symbols** and must contain at least **1 uppercase** letter, **1 lowercase** letter and **1 digit**
 
 3. **Confirm Password** – must **match** the provided password
 
 - `LoginUser|<email>|<password>` - this command sets the current logged in user, if it exists
-  * otherwise, prints an appropriate message
+    * otherwise, prints an appropriate message
 
 **Logged in** users can logout.
 
 - `Logout` – this command logs the user out of the system
-  * if there is no logged in user, prints the appropriate message
+    * if there is no logged in user, prints the appropriate message
 
 ## Examples
 
@@ -403,13 +403,13 @@ The requirements for **valid parameters** are:
 
 | **Input** | **Output** |
 | --- | --- |
-| RegisterUser\|aariel.com\|aAriel123\|aAriel123\|Ariel | Incorrect username / password |
+| RegisterUser\|aariel.com\|aAriel123\|aAriel123\|Ariel | Incorrect email. |
 
 ### Example Three
 
 | **Input** | **Output** |
 | --- | --- |
-| LoginUser\|aariel@fixari.com\|aAriel123 | Ariel was registered |
+| LoginUser\|aariel@fixari.com\|aAriel123 | Incorrect username / password |
 
 ### Example Four
 

@@ -18,6 +18,6 @@
 
 **4. Model Mapping**
 - Auto-Mapper
-- Adding a model mapper
+- Adding Model Mapper
 
 [/slide]

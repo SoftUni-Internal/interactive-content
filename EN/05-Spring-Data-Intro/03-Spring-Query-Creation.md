@@ -121,34 +121,3 @@ public interface StudentRepository extends JpaRepository<Student, Long>  {
 ```
 
 [/slide]
-
-[slide hideTitle]
-
-# Problem with Solution: Select Shampoos by Size
-
-## Problem Description
-
-**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/06-Spring-Advanced-Quering-Resources.zip) **for this task.**
-
-You will receive an implementation of the Shampoo Company.
-
-Now it is time to start writing some query methods to retrieve the needed data.
-
-Before you start, insert the data from the "shampoo-company-insert.sql" file.
-
-Create a method that selects all shampoos with a given size, ordered by the shampoo id.
-
-## Example
-
-| **Input**  | **Output** |
-|---|---|
-| **MEDIUM**  | Nature Moments Mediterranean Olive Oil & Aloe Vera MEDIUM 6.50 euro.  |
-|   | Volume & Fullness Lavender MEDIUM 5.50 euro.  |
-|   | Rose Shine & Hydration MEDIUM 6.50 euro.  |
-|   | Color Protection & Radiance MEDIUM 6.75 euro.  |
-|   | Heavenly Long Long-Hair MEDIUM 7.50 euro.  |
-|   | Sea Buckthorn Vital MEDIUM 6.50 euro.  |
-|   | Fresh it Up! MEDIUM 7.65 euro.  |
-|   | Nectar Nutrition MEDIUM 6.85 euro.  |
-
-[/slide]

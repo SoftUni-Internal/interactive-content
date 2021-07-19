@@ -32,7 +32,7 @@ public class EmployeePojo {
     }
 }
 
-@Entity                             // We have our entity
+@Entity                             // Here we have our entity.
 @Table(name = "employees")
 public class Employee {
     // ...
@@ -46,7 +46,7 @@ public class Employee {
     private BigDecimal salary;
 }
 
-public class EmployeeDto {          // and then - our DTO.
+public class EmployeeDto {          // This is our DTO.
 
     private String firstName;
     private String last_name;
@@ -75,13 +75,13 @@ public class StudentServiceImpl implements StudentService {
 
 We have a tool that automatically performs this task.
 
-Model mapping is an easy way to convert one model to another.
+**Model mapping** is an easy way to convert one model to another.
 
-It is convention-based, meaning that when following the guidelines, we significantly reduce code repetition.
+It is **convention-based**, meaning that when following the guidelines, we significantly **reduce code repetition**.
 
-When mapping entities from the database to DTOs, the Model Mapper acts as a middleware in the query-creation process.
+When mapping entities from the database to DTOs, the Model Mapper acts as a **middleware** in the query-creation process.
 
-It will then project and map the entities for us. 
+It will then **project and map** the entities for us. 
 
 The use of conventions helps in determining property-value mappings.
 
@@ -93,7 +93,7 @@ The use of conventions helps in determining property-value mappings.
 
 # Adding Model Mapper
 
-To start exploring **Model Mapper**, begin by adding it to your project.
+To use **Model Mapper**, begin by adding it to your project.
 
 - Include it as a Maven dependency:
    
@@ -238,8 +238,10 @@ There is a difference between the syntax for **explicit mapping** in Java 7 and 
 // ConsoleRunner.java (Java 8)
 
 ModelMapper modelMapper = new ModelMapper();
+
 TypeMap<EmployeeDto, Employee> typeMap = 
     mapper.createTypeMap(EmployeeDto.class, Employee.class);
+
 typeMap.addMappings(m -> m.map(src -> src.getName(), Employee::setFirtsName)); 
 typeMap.map(employeeDto);
 ```
@@ -256,7 +258,7 @@ Let us see validation in practice:
 
 ```java
 ModelMapper modelMapper = new ModelMapper();
-//                        1.                 2.
+//                        1                  2
 modelMapper.createTypeMap(EmployeeDto.class, Employee.class);
 
 // The `validate()` method that throws a `ValidationException`:
@@ -304,7 +306,6 @@ In Java 8, we have a shorter syntax:
 // Naming the property that should be skipped
 typeMap.addMappings(mapper -> mapper.skip(Employee::setSalary)); 
 typeMap.map(employeeDto);
-
 ```
 
 ## Type Converting
@@ -330,7 +331,7 @@ Converter<String, String> stringConverter = new AbstractConverter <String, Strin
 PropertyMap<EmployeeDto, Employee> employeeMap = new PropertyMap<EmployeeDto, Employee>() {
     @Override
     protected void configure() {
-        //    1. 
+        //    1 
         using(stringConverter).map().setFirstName(source.getName());
     }
 };
@@ -351,8 +352,8 @@ Converter<String, String> toUppercase
 
 TypeMap<EmployeeDto, Employee> typeMap = 
     mapper.createTypeMap(EmployeeDto.class, Employee.class)
-    .addMappings(mapper -> mapper.using(toUppercase)
-        .map(EmployeeDto::getName, Employee::setFirstName));
+        .addMappings(mapper -> mapper.using(toUppercase)
+            .map(EmployeeDto::getName, Employee::setFirstName));
 
 typeMap.map(employeeDto);
 ```

@@ -18,7 +18,7 @@ Before you start, insert the data from the "**shampoo-company-insert.sql**" file
 
 # Problem with Solution: Select Shampoos by Size 
 
-Create a method that selects all shampoos with a **given size, ordered by the shampoo id**.
+Write a method that selects all shampoos with a **given size, ordered by the shampoo id**.
 
 ## Example 
 
@@ -39,7 +39,7 @@ Create a method that selects all shampoos with a **given size, ordered by the sh
 
 # Problem with Solution: Select Shampoos by Size or Label 
 
-Create a method that selects all shampoos by their **given size and label id**.
+Write a method that selects all shampoos by their **given size and label id**.
 
 Sort the result in **ascending order by their price**.
 
@@ -67,7 +67,7 @@ Sort the result in **ascending order by their price**.
 
 You will receive a number.
 
-Create a method that selects all shampoos, which **cost more than the given price**.
+Write a method that selects all shampoos, which **cost more than the given price**.
 
 Sort the result in **descending order by their price**.
 
@@ -94,7 +94,7 @@ Sort the result in **descending order by their price**.
 
 # Problem with Solution: Select Ingredients by Name 
 
-Create a method that selects all **ingredients**, whose **names start with a given letter**.
+Write a method that selects all **ingredients**, whose **names start with a given letter**.
 
 
 ## Example 
@@ -111,7 +111,7 @@ Create a method that selects all **ingredients**, whose **names start with a giv
 
 # Problem with Solution: Count Shampoos by Price 
 
-Create a method **that counts all the shampoos** who **cost less than a given price**.
+Write a method **that counts all the shampoos** who **cost less than a given price**.
 
 
 ## Example 
@@ -128,7 +128,7 @@ Create a method **that counts all the shampoos** who **cost less than a given pr
 
 You will receive **shampoos**.
 
-Create a method that finds all **shampoos** who **use the given ingredients**.
+Write a method that finds all **shampoos** who **use the given ingredients**.
 
 
 ## Example 
@@ -150,7 +150,7 @@ Create a method that finds all **shampoos** who **use the given ingredients**.
 
 # Problem with Solution: Select Shampoos by Ingredients Count 
 
-Create a method that selects all ****shampoos**** that have **less ingredients than a given number**.
+Write a method that selects all ****shampoos**** that have **less ingredients than a given number**.
 
 
 ## Example 
@@ -168,7 +168,7 @@ Create a method that selects all ****shampoos**** that have **less ingredients t
 
 # Problem with Solution: Delete Ingredients by Name
 
-Create a method that **deletes ingredients by a given name**.
+Write a method that **deletes ingredients by a given name**.
 
 [/slide]
 
@@ -176,7 +176,7 @@ Create a method that **deletes ingredients by a given name**.
 
 # Problem with Solution: Update Ingredients by Price 
 
-Create a method that **increases the price of all ingredients by 10%**.
+Write a method that **increases the price of all ingredients by 10%**.
 
 [/slide]
 
@@ -186,7 +186,7 @@ Create a method that **increases the price of all ingredients by 10%**.
 
 Create an `Employee` class that has the following properties: **first name, last name, salary, birthday** and **address**.
 
-Then, create an `EmployeeDto` class that only hold the employees' **first name, last name** and **salary** information.
+Then, create an `EmployeeDto` class that only holds the employees' **first name, last name** and **salary** information.
 
 Create **an instance of the** `Employee` object and **use the** `ModelMapper` **to map** any **newly created employees** to the `EmployeeDto` **object**.
 

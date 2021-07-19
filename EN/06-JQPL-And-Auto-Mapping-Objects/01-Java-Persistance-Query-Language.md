@@ -19,7 +19,7 @@ It is similar to SQL except for a few differences:
 
 [image assetsSrc="Spring-Data-Advanced(3).png" /]
 
-With the JQPL syntax, we can create three types of clauses:
+With the JPQL syntax, we can create three types of clauses:
 
 - SELECT clauses
 - UPDATE clauses
@@ -67,19 +67,20 @@ WHERE b.name = :name            // 2
 1. The DELETE clause plus the entity by choice and an alias
 2. The filtration for the batch DELETE.
 
-## JOINS
+## JOIN 
 
 An indispensable part of working with a database is linking our tables.
 
 With **JPQL**, we have to declare the **JOIN clauses** by ourselves.
 
-As long as we are familiar with how **JOINS** work, Spring Data knows how to find the criteria to join the table by.
+As long as we are familiar with how a given **JOIN** clause works, Spring Data knows how to find the criteria to join the table by.
 
-There are three **JOIN** clause types available in JPQL:
+There are four **JOIN** clause **types** available in JPQL:
 
-- INNER JOIN
-- LEFT OUTER JOIN
-- LEFT INNER JOIN
+- **INNER JOIN** - Retrieves entities with matching values in both tables
+- **LEFT OUTER JOIN** - Retrieves all entities from the left table, and the matched entities from the right table
+- **RIGHT OUTER JOIN** - Retrieves all entities from the right table, and the matched entities from the left table
+- **FULL OUTER JOIN** - Retrieves all entities when there is a match in either the left or the right tables
 
 Take a look at the following example:
 
