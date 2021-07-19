@@ -5,7 +5,7 @@
 # Conținutul Lecției
 
 js-interactive-pipes-interceptors-and-subjects-1-2-Pipes-JWT-Interceptors-and-table-of-contents
-## În această lecție veți învăța:
+## În Această Lecție Veți Invăța:
 
 **1. Pipes**
 - Transformarea datelor din șablon înaintea afișării

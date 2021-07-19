@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Conținutul lecției
+# Conținutul Lecției
 
 Angular-Components-1-2-Introduction-and-table-of-contents
 

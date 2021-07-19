@@ -6,7 +6,7 @@
 
 js-angular-forms-1-2-Directives-and-Forms-and-table-of-contents
 
-##  În această lecție veți învăța:
+##  În Această Lecție Veți Invăța:
 
 **1. Directive**
 - Prezentare generală și utilizare

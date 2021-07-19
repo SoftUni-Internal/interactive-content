@@ -1,4 +1,4 @@
-# Teme pentru acasă
+# Teme Pentru Acasă
 
 [slide hideTitle]
 
@@ -34,7 +34,7 @@ După ce ați obținut fișierul **.ts**, deschideți un **terminal** și execut
 
 [slide hideTitle]
 
-# Clasa de date
+# Clasa de Date
 
 Scrieți o clasă TypeScript care deține date despre o cerere HTTP.
 
@@ -396,7 +396,7 @@ Aceasta ar trebui să aibă două metode publice și un getter:
 
 [slide hideTitle]
 
-# Perechi cheie-valoare
+# Perechi Cheie-Valoare
 
 Creați o clasă generică care poate stoca o cheie și o valoare de orice tip.
 

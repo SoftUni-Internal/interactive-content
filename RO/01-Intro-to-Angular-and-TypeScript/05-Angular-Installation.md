@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Creați o nouă aplicație
+# Creați o Nouă Aplicație
 
 Intro-to-Angular-and-Typescript-22-23-Angular-Installation
 Intro-to-Angular-and-Typescript-24-Finding-Information
@@ -32,7 +32,7 @@ Puteți găsi mai multe informații pe [Site-ul oficial] (https://angular.io) sa
 
 [slide hideTitle]
 
-# Suport pentru IDE
+# Suport Pentru IDE
 
 Intro-to-Angular-and-Typescript-25-IDE-Support
 

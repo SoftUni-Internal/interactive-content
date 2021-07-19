@@ -1,8 +1,8 @@
-# Prezentare generală a rutării
+# Prezentare Generală a Rutării
 
 [slide hideTitle]
 
-#  Ce este rutarea?
+#  Ce este Rutarea?
 
 Intro-to-Angular-and-Typescript-8-9-Routing-Overview
 
@@ -24,7 +24,7 @@ Exemplu:
 
 Aici **JavaScript** (**Angular**) **controlează** ce pagină va fi afișată, pe baza **locațiilor URL**.
 
-## Partea de server
+## Partea de Server
 
 Când o cerere "**GET**" este trimisă către o **Aplicație cu mai multe pagini**, serverul răspunde cu o pagină web care a fost **randată** pe **server** și apoi **vizualizată** în browser.
 
@@ -42,7 +42,7 @@ Iată **câteva pagini**, care așteaptă să fie **randate** pe server odată c
 
 [slide hideTitle]
 
-# Aplicație cu o singură pagină
+# Aplicație cu o Singură Pagină
 
 Intro-to-Angular-and-Typescript-10-Single-Page-Applications
 

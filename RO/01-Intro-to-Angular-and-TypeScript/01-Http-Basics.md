@@ -1,4 +1,4 @@
-# Noțiuni de bază HTTP 
+# Noțiuni de Bază HTTP 
 
 [slide hideTitle]
 
@@ -62,7 +62,7 @@ Puteți citi mai multe despre statusurile codurilor în [MDN Web Documentation](
 
 [slide hideTitle]
 
-# Exemple de solicitări HTTP
+# Exemple de Solicitări HTTP
 
 Intro-to-Angular-and-Typescript-7-Example - Hyper-Text-Transfer-Protocol
 

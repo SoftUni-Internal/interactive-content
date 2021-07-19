@@ -2,11 +2,11 @@
 
 [slide hideTitle]
 
-# Conținutul lecției
+# Conținutul Lecției
 
 Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents
 
-## În această lecție veți învăța:
+## În Această Lecție Veți Invăța:
 
 **1. Ce este HTTP**
 
@@ -18,11 +18,11 @@ Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents
 
 -  **Server-side**
 
-**3. Prezentare generală Angular**
+**3. Prezentare Generală Angular**
 
 -  Platforma de aplicații web
 
-**4. Prezentare generală TypeScript**
+**4. Prezentare Generală TypeScript**
 
 -  Javascript Superset
 

@@ -6,7 +6,7 @@
 
 Angular-Modules-and-routing-1-2-Introduction-and-table-of-contents
 
-## În această lecție veți învăța:
+## În Această Lecție Veți Invăța:
 
 **1. Ce sunt NgModules**
 

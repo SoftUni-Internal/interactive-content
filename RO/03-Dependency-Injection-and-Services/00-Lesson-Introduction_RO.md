@@ -2,9 +2,9 @@
 
 [slide hideTitle]
 
-# Conținutul lecției
+# Conținutul Lecției
 
-## În această lecție veți învăța:
+## În Această Lecție Veți Invăța:
 
 **1. Strategia de detectare a schimbărilor**
 - Modificarea modului în care Angular detectează schimbările

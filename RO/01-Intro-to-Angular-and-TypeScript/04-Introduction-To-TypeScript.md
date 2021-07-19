@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Prezentare generală TypeScript
+# Prezentare Generală TypeScript
 
 Intro-to-Angular-and-Typescript-14-15-Introduction-to-TypeScript
 
@@ -22,7 +22,7 @@ După compilarea fișierelor, **vom primi JavaScript simplu** ca ieșire.
 
 [slide hideTitle]
 
-# Tipuri de variabile în TypeScript
+# Tipuri de Variabile în TypeScript
 
 Intro-to-Angular-and-Typescript-16-Variable-Types
 
@@ -182,7 +182,7 @@ Această funcție va returna șirul: `Hi, John`, imprimându-l pe consolă.
 
 [slide hideTitle]
 
-# Generice și enumerații
+# Generice și Enumerații
 
 Intro-to-Angular-and-Typescript-20-Generics-and-Enumerations
 
