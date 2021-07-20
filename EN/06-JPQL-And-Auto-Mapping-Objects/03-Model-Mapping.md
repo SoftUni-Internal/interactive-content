@@ -119,7 +119,7 @@ EmployeeDto employeeDto = modelMapper.map(employee, EmployeeDto.class);
 
 ## Simple Mapping of an Entity to a DTO
 
-While Model Mapper excels in mapping simple properties (like string, int BigDecimal, etc.), it can also map nested properties:
+While Model Mapper excels at mapping simple properties (like `string`, `int`, `BigDecimal`, etc.), it can also map nested properties:
 
 ```java
 // Here we have our normal Employee entity connected to the `employees` table.
@@ -232,7 +232,7 @@ modelMapper.addMappings(employeeMap).map(employeeDto, employee);
 
 There is a difference between the syntax for **explicit mapping** in Java 7 and Java 8. 
 
-## Explicit Mapping DTO to Entity - Java 8
+## Explicit Mapping of a DTO to an Entity - Java 8
 
 ```java
 // ConsoleRunner.java (Java 8)
@@ -242,7 +242,7 @@ ModelMapper modelMapper = new ModelMapper();
 TypeMap<EmployeeDto, Employee> typeMap = 
     mapper.createTypeMap(EmployeeDto.class, Employee.class);
 
-typeMap.addMappings(m -> m.map(src -> src.getName(), Employee::setFirtsName)); 
+typeMap.addMappings(m -> m.map(src -> src.getName(), Employee::setFirstName)); 
 typeMap.map(employeeDto);
 ```
 

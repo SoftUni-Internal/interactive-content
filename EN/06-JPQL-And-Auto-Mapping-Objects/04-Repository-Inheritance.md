@@ -16,9 +16,9 @@ This reduces duplicate code and increases **modularity**.
 
 In repositories, we can use inheritance with the same intentions.
 
-When our applications get bigger, we have similar entities, extending an abstract class.
+When our applications become larger and more complex, we have similar entities, extending an abstract class.
 
-The **base attributes and actions** they contain are mostly same, with some variations.
+The **base attributes and actions** they contain are mostly the same, with some variations.
 
 [/slide]
 

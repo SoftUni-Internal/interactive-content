@@ -287,14 +287,14 @@ Print the total amount of book copies that were added.
 
 ### Example One
 
-| **Input** | **Output** | **comments** |
+| **Input** | **Output** | **Comments** |
 | --- | --- | --- |
 | 12 Oct 2005 | 6100 | 61 books have been released after 12 Oct 2005, so a total of 6100 book copies were added |
 | 100 | | |
 
 ### Example Two
 
-| **Input** | **Output** | **comments** |
+| **Input** | **Output** | **Comments** |
 | --- | --- | --- |
 | 06 Jun 2013 | 572 | 13 books have been released after 6 Jun 2013, so total of 572 book copies were added |
 | 44 | | |
