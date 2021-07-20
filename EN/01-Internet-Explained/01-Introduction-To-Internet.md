@@ -18,9 +18,9 @@ The 90s were a pivotal point in Internet history.
 
 They marked the creation of **HTML**, **Java**, **the first Internet virus**, and major companies like **Google**, **Apple**, **Amazon**, and **eBay**.
 
-At the beginning of the new century, the ** dot-com** bubble burst.
+At the beginning of the new century, the **dot-com** bubble burst.
 
-Some companies were erased while others (such as **Google**) became giants.
+Some companies were erased while others, such as **Google**, became giants.
 
 **Wireless access** became the new craze.
 

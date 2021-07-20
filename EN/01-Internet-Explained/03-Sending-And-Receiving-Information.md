@@ -4,19 +4,19 @@
 
 # Packets
 
-It is commonly known that computers break down information into **bits**.
+Computers tend to break down information into **bits** - the most basic unit of information.
 
 **Packets** are the Internet's way of dividing data into **small** pieces.
 
-Imagine that Tom wants to buy a new bed for his apartment on the 6th floor.
+Imagine that someone wants to buy a new bed for their apartment on the sixth floor.
 
-It would be very difficult for him to bring it to the top of the building in one piece.
+It would be challenging for them to move it to the top of the building in one piece.
 
-Instead, the bed is broken down into small parts, that can be individually carried and reassembled.
+We must disassemble the bed into small parts that allow for more efficient transportation.
 
 **Packets** act just like the parts of the bed.
 
-A large file is broken into **packets** and send through the Internet.
+A large file is divided into **packets** and sent through the Internet.
 
 On arrival, the **packets** are brought back together, recreating the original file.
 
@@ -34,10 +34,11 @@ For **packets** to work properly, the carry some **crucial information** with th
 
 [slide hideTitle]
 
-# Travelling on the Packets in the Network
+# Travelling On the Packets in the Network
 
 The following image illustrates the "road" that a **packet** travels:
 
 [image assetsSrc="Java-Web-Introduction-To-The-Internet-2.png" /]
 
 [/slide]
+

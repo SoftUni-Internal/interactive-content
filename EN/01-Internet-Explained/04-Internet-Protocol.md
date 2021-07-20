@@ -1,6 +1,8 @@
+# Internet Protocol
+
 [slide hideTitle]
 
-# Internet Protocol
+# Definition
 
 The **Internet Protocol** is a communications protocol that essentially **forms the Internet**.
 

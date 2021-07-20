@@ -1,4 +1,4 @@
-# How does the Internet work?
+# How Does the Internet Work?
 
 [slide hideTitle]
 
@@ -29,13 +29,13 @@ However, nothing is impossible with good **foundations**.
 
 Here are some of the **basic definitions** needed to understand the Internet:
 
-- `Server and Client` - The **client(browser)** is an **application**, stored on a **user's computer** that **communicates** over the Internet. The **server** is a piece of software that connects the **client** to a database, stored **away** from the user's machine.
+- `Server and Client` - The **client(browser)** is an **application**, stored on a **user's computer** that **communicates** over the Internet. The **server** is a piece of software that connects the **client** to a database, stored **away** from the user's machine
 
-- `Network Protocol` - **Network protocols** define the rules for **data transfer** on the Internet.
+- `Network Protocol` - **Network protocols** define the rules for **data transfer** on the Internet
 
-- `Packets` - A packet is a simple **unit of data**, transferred through the Internet.
+- `Packets` - A packet is a simple **unit of data**, transferred through the Internet
 
-- `TCP vs UDP` - Both of them are **transfer protocols**. **UDP**, however, is **lighter** and **less-reliable** than **TCP**.
+- `TCP vs UDP` - Both of them are **transfer protocols**. **UDP**, however, is **lighter** and **less-reliable** than **TCP**
 
 [/slide]
 
