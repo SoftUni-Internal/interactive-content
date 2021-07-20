@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# What is Routing?
+# Ce Este Rutarea?
 
 Angular-Modules-and-routing-8-9-What-is-Routing
 
@@ -50,7 +50,7 @@ Dacă sunt necesare date noi, **le preia** în bucăți mici.
 
 [slide hideTitle]
 
-# Single Page Applications
+# Aplicații cu o Singură Pagină
 
 Angular-Modules-and-routing-10-Single-page-applications
 

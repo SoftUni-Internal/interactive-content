@@ -22,9 +22,9 @@ O vom remedia mai târziu atunci când dobândim cunoștințele necesare pentru 
 
 [slide hideTitle]
 
-# Navigation bar
+# Bara de Navigare
 
-## Logged in the navigation bar
+## Bara de Navigare Pentru Utilizatori Logați
 
 Utilizatorii **“Logged in”** și **“not logged in”** pot vedea 3 opțiuni în centrul navigării:
 
@@ -42,7 +42,7 @@ Când un  "**user**" nu este "**logged in**" ar trebui să vadă următoarea nav
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop-New.png" /]
 
-## Not logged in the navigation bar
+## Bara de Navigare Pentru Utilizatori Nelogați
 
 Când utilizatorul este "**not logged in**" ar trebui să vadă următoarea navigație:  
 
@@ -56,9 +56,9 @@ Când utilizatorul este "**not logged in**" ar trebui să vadă următoarea navi
 
 [slide hideTitle]
 
-# Home page
+# Pagina Principală
 
-## Not Logged in
+## Nelogat
 
 Aceasta este pagina principală `localhost:4200/home`, o pagină de bun venit.
 
@@ -70,7 +70,7 @@ Vizualizarea utilizatorului care nu este conectat:
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop-New-3.png" /]
 
-## Logged in
+## Logat
 
 Vizualizarea utilizatorului conectat: 
 
@@ -80,7 +80,7 @@ Vizualizarea utilizatorului conectat:
 
 [slide hideTitle]
 
-# Register (Not Logged in)
+# Pagina de Înregistrare (Nelogat)
 
 Aceasta este pagina de înregistrare `localhost:4200/register`. 
 
@@ -116,9 +116,9 @@ Fiecare dintre ei ar trebui să se conecteze cu succes.
 
 [slide hideTitle]
 
-# Themes page 
+# Pagina Pentru Teme 
 
-## Not Logged in
+## Nelogat
 
 Aceasta este pagina temelor `localhost:4200/themes`.
 
@@ -134,7 +134,7 @@ Utilizatorul anonim ar trebui să vadă următoarele:
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop-New-7.png" /]
 
-## Logged in
+## Logat
 
 Aceasta este pagina temelor `localhost:4200/themes` pentru utilizatorii autentificați.
 
@@ -146,16 +146,16 @@ Aceasta este pagina temelor `localhost:4200/themes` pentru utilizatorii autentif
 
 [slide hideTitle]
 
-# Theme comments 
+# Comentariile Temelor 
 
-## Not Logged in
+## Nelogat
 
 Aceasta este pagina de comentarii tematice `localhost:4200/themes/:themeId`, unde utilizatorul poate vedea toate postările pentru tema selectată. 
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop-New-9.png" /]
 
 
-## Logged in
+## Logat
 
 Utilizatorul conectat poate **adăuga noi comentarii** sau **să aprecieze** postările celorlalți utilizatori. 
 
@@ -165,7 +165,7 @@ Utilizatorul conectat poate **adăuga noi comentarii** sau **să aprecieze** pos
 
 [slide hideTitle]
 
-# Create New Theme (Logged in only)
+# Pagina Pentru Crearea unei Noi Teme (Doar Utilizatori Logați)
 
 Aceasta este pagina de creare a unei teme noi `localhost:4200/themes` unde fiecare **utilizator** (conectat) își poate crea propria temă.  
 
@@ -181,7 +181,7 @@ După crearea cu succes a temei, **redirecționați** utilizatorul curent către
 
 [slide hideTitle]
 
-# Profile - Logged in
+# Profil - Logat
 
 Aceasta este pagina de profil `localhost:4200/profile`. 
 
@@ -205,7 +205,7 @@ Folosiți-l dacă este dată o cale nevalidă.
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop-New-13.png" /]
 
-## Protected routes
+## Rute Protejate
 
 Asigurați-vă că toate paginile **utilizatorilor**(conectați) sunt **protejate**. 
 

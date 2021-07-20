@@ -1,8 +1,8 @@
-# Router Module
+# Modul Router
 
 [slide hideTitle]
 
-# Define the Template
+# Definiți Șablonul
 
 Angular-Modules-and-routing-11-12-Router-module
 
@@ -35,7 +35,7 @@ Acest atribut personalizat suprascrie reîncărcarea paginii implicite pe care o
 
 [slide hideTitle]
 
-## Create Routes Module
+### Creați un Modul Router
 
 Angular-Modules-and-routing-13-14-15-Create-Routes-Module
 
@@ -85,7 +85,7 @@ Ultimul pas este să **importați** rutele **din modulul** aplicației.
 
 [slide hideTitle]
 
-# The RouterLink Directive
+# Directiva RouterLink
 
 Angular-Modules-and-routing-16-The-RouterLink-Directive
 
@@ -117,7 +117,7 @@ Iată un exemplu cu ambele moduri:
 
 [slide hideTitle]
 
-# Navigate Programmatically
+# Navigați Programatic
 
 Angular-Modules-and-routing-17-Navigate-Programmatically
 
@@ -179,7 +179,7 @@ De asemenea, putem trece **unul** sau **mai mulți** parametri.
 
 [slide hideTitle]
 
-# Fetching Parameters
+# Preluarea Parametrilor
 
 Angular-Modules-and-routing-19-Fetching-Parameters
 Angular-Modules-and-routing-20-Fetching-Parameters-Reactively
