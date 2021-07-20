@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Ce este Detectarea Modificărilor?
+# Ce Este Detectarea Modificărilor?
 
 3-4-Strategia-de-detectare-a-modificărilor
 

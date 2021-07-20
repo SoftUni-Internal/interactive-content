@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Angular Modules Overview
+# Prezentare Generală a Modulelor în Angular
 
 Angular-Modules-and-routing-3-4-The-NgModule
 
@@ -41,7 +41,7 @@ Cele mai populare librării de tip **Angular** și **third-party** care vin la p
 
 [slide hideTitle]
 
-# Creating Custom Modules
+# Crearea Modulelor Personalizate
 
 Angular-Modules-and-routing-5-6-Creating-Custom-modules
 

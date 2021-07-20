@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Ce este HTTP?
+# Ce Este HTTP?
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-3-4-HTTP-Basics-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
