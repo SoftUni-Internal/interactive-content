@@ -1,1 +1,1 @@
-# JPQL And Auto Mapping Objects
+# JPQL and Auto Mapping Objects
