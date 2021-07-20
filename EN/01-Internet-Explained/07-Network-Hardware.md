@@ -2,15 +2,15 @@
 
 # Network Hardware
 
-It was established previously that the **internet** is a **connection** of **billions of machines**.
+It was established previously that the **Internet** is a **connection** of **billions of machines**.
 
 That connection requires a lot of **hardware** and **maintenance**.
 
 Every year, billions of dollars are invested in **research** and **development** for that hardware.
 
-The better the hardware is, the **faster** and **more-secure** the **internet connection** is.
+The better the hardware is, the **faster** and **more-secure** the **Internet connection** is.
 
-Here are some of the **physical components** that make up the internet:
+Here are some of the **physical components** that make up the Internet:
 
 - Cables
 

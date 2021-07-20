@@ -4,7 +4,7 @@
 
 # Reliability
 
-The transfer of data through the internet is a **complicated process**.
+The transfer of data through the Internet is a **complicated process**.
 
 It is very common for packets to travel through **different routes**.
 
@@ -12,7 +12,7 @@ Not only that, but they can even arrive in a **different order** than they were 
 
 It can even get as bad as **packets** not arriving at all.
 
-**TCP**'s task is to assure that internet communication happens **without** the aforementioned **problems**.
+**TCP**'s task is to assure that Internet communication happens **without** the aforementioned **problems**.
 
 It can be said that **TCP** brings **reliability** of packet transfers.
 

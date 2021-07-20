@@ -2,7 +2,7 @@
 
 # Internet Protocol
 
-The **Internet Protocol** is a communications protocol that essentially **forms the internet**.
+The **Internet Protocol** is a communications protocol that essentially **forms the Internet**.
 
 **IP** is very similar to a post office.
 
@@ -20,7 +20,7 @@ Even today, people are working on **newer** versions of the protocol, which will
 
 # IP Address
 
-The internet consists of **billions** of computers that are connected.
+The Internet consists of **billions** of computers that are connected.
 
 For every computer to be recognizable, it must have a **unique** way of identification.
 
@@ -62,11 +62,11 @@ It consists of four **numbers** (between **0** and **255**) separated by a dot.
 */
 ```
 
-The **fourth version** of the **internet protocol** has been in use since **1982**.
+The **fourth version** of the **Internet protocol** has been in use since **1982**.
 
 Despite its age, it is still the **most used version**.
 
-There is a problem with **IPv4**, however, and it is connected to the rapid **growth of population** and **internet use**.
+There is a problem with **IPv4**, however, and it is connected to the rapid **growth of population** and **Internet use**.
 
 There are close to **4.3 billion** possible combinations of an **IPv4 address**.
 
@@ -86,7 +86,7 @@ The **IPv6** was created as a draft standard in 1998.
 
 It is a much larger number than the **IPv4**.
 
-The sixth version of the internet protocol has about **340 undecillion** possible combinations.
+The sixth version of the Internet protocol has about **340 undecillion** possible combinations.
 
 For reference, an **undecillion** is one, followed by 36 zeroes.
 

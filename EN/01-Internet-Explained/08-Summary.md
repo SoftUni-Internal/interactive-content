@@ -11,7 +11,7 @@
 
 **Internet**
 
-- The internet consists of thousands of computer networks that are connected with each other
+- The Internet consists of thousands of computer networks that are connected with each other
 
 - Establishes communication via protocols
 
@@ -49,11 +49,11 @@
 
 **Network Hardware**
 
-- The internet is built with cables and routers
+- The Internet is built with cables and routers
 
 - Devices such as hubs, switches, and repeaters can be used to control the data flow
 
-- A Network Interface Card allows a computer to access the internet
+- A Network Interface Card allows a computer to access the Internet
 
 ## The topic of the next lesson is:
 

@@ -6,7 +6,7 @@
 
 It is commonly known that computers break down information into **bits**.
 
-**Packets** are the internet's way of dividing data into **small** pieces.
+**Packets** are the Internet's way of dividing data into **small** pieces.
 
 Imagine that Tom wants to buy a new bed for his apartment on the 6th floor.
 
@@ -16,7 +16,7 @@ Instead, the bed is broken down into small parts, that can be individually carri
 
 **Packets** act just like the parts of the bed.
 
-A large file is broken into **packets** and send through the internet.
+A large file is broken into **packets** and send through the Internet.
 
 On arrival, the **packets** are brought back together, recreating the original file.
 

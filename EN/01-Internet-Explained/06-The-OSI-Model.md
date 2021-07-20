@@ -12,7 +12,7 @@ This model has a **hierarchical structure**.
 
 Every layer **provides services** for layer **above** and is **served** by the layer **below**.
 
-The **OSI** model is important to learn as it **improves** the **overall understanding of the internet**.
+The **OSI** model is important to learn as it **improves** the **overall understanding of the Internet**.
 
 Being familiar with it also makes it easier for **troubleshooting** and **error handling.**
 
@@ -96,7 +96,7 @@ Some of the things it takes care of are:
 
 - **encryption**
 
-For example, an **encrypted message** is sent over the **internet**.
+For example, an **encrypted message** is sent over the **Internet**.
 
 On arrival, it is **decrypted** back to the **original message**.
 

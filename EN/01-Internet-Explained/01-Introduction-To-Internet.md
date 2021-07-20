@@ -1,12 +1,12 @@
-# Introduction to Internet
+# Introduction
 
 [slide hideTitle]
 
-# Internet - History
+# History
 
-The internet is a relatively **new** technology that has gone through **rapid development** in the most recent decades.
+The Internet is a relatively **new** technology that has gone through **rapid development** in the most recent decades.
 
-Very **different** from what it is today, the internet marks its **beginning** in the **1960s**.
+Very **different** from what it is today, the Internet marks its **beginning** in the **1960s**.
 
 Back then, the basic idea was to **link** computers in a **network**, allowing for **data transfer** between them.
 
@@ -14,9 +14,9 @@ Back then, the basic idea was to **link** computers in a **network**, allowing f
 
 The first **LANs** and **domains** were created in the 1980s.
 
-The 90s were a pivotal point in internet history. 
+The 90s were a pivotal point in Internet history. 
 
-They marked the creation of **HTML**, **Java**, **the first internet virus**, and major companies like **Google**, **Apple**, **Amazon**, and **eBay**.
+They marked the creation of **HTML**, **Java**, **the first Internet virus**, and major companies like **Google**, **Apple**, **Amazon**, and **eBay**.
 
 At the beginning of the new century, the ** dot-com** bubble burst.
 
@@ -28,9 +28,9 @@ Some companies were erased while others (such as **Google**) became giants.
 
 [slide hideTitle]
 
-# Internet - Introduction
+# Introduction
 
-The **internet**, at its core, is just a bunch of **cables**.
+The **Internet**, at its core, is just a bunch of **cables**.
 
 Buried **underground** or deep in the **oceans**, those cables **connect** many **different machines**.
 
@@ -74,7 +74,7 @@ By contrast, **data centers** can be **thousands of devices**, sharing **tons of
 
 As mentioned earlier, a **network** consists of **many connected devices**.
 
-The internet consists of **thousands of networks** and therefore - **billions of devices**.
+The Internet consists of **thousands of networks** and therefore - **billions of devices**.
 
 Those networks **communicate** through the **exchange** of **small data units** (**packets**).
 

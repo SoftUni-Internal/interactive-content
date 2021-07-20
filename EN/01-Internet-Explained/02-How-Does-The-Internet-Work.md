@@ -22,17 +22,17 @@ The following image illustrates how web servers link **browsers** and **database
 
 # Important Definitions
 
-The **internet** is a very difficult concept to learn.
+The **Internet** is a very difficult concept to learn.
 
 However, nothing is impossible with good **foundations**.
 
-Here are some of the **basic definitions**, needed to understand the internet:
+Here are some of the **basic definitions**, needed to understand the Internet:
 
-- `Server and Client` - The **client(browser)** is an **application**, stored on a **user's computer** that **communicates** over the internet. The **server** is a software that connects the **client** to a database, stored **away** from the user's machine.
+- `Server and Client` - The **client(browser)** is an **application**, stored on a **user's computer** that **communicates** over the Internet. The **server** is a software that connects the **client** to a database, stored **away** from the user's machine.
 
-- `Network Protocol` - **Network protocols** define the rules for **data transfer** on the internet.
+- `Network Protocol` - **Network protocols** define the rules for **data transfer** on the Internet.
 
-- `Packets` - A packet is a simple **unit of data**, transferred through the internet.
+- `Packets` - A packet is a simple **unit of data**, transferred through the Internet.
 
 - `TCP vs UDP` - Both of them are **transfer protocols**. **UDP**, however, is **lighter** and **less-reliable** than **TCP**.
 
@@ -42,7 +42,7 @@ Here are some of the **basic definitions**, needed to understand the internet:
 
 # Servers and Clients
 
-**Servers** and **clients** are the two sides of **internet communication**.
+**Servers** and **clients** are the two sides of **Internet communication**.
 
 The **clients** are the ones, **requesting** and using different kinds of **data**.
 
@@ -60,13 +60,13 @@ The **servers**, like the **producers**, are the ones, providing the **services*
 
 # Network Protocol
 
-As covered in a previous part of the lesson, **network protocols** set the rules for data transfer on the internet.
+As covered in a previous part of the lesson, **network protocols** set the rules for data transfer on the Internet.
 
 A **network protocol** takes the whole **communication process** and divides it into smaller ones, each responsible for a different task.
 
 This **separation of tasks** is known as the **OSI** model and will be covered later on in the lesson.
 
-Some of the most widely known internet protocols are:
+Some of the most widely known Internet protocols are:
 
 - `HTTP` - Hypertext Transfer Protocol
 
