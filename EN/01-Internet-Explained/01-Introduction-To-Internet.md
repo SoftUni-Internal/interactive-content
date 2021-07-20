@@ -1,4 +1,4 @@
-# Introduction
+# Introduction to the Internet
 
 [slide hideTitle]
 

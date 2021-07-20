@@ -4,15 +4,16 @@
 
 # Web Server Work Model
 
-A web server is a piece of **software**, stored in a computer.
+A web server is a piece of **software** operated by a computer.
 
 It acts as a **link** between the **browser** and the **database**.
 
-When a **request** is sent from the **client**, it is **handled** by the **web server**, which communicates with the **database**.
+The flow of data retrieval encompasses three steps:
+the **client** demands a piece of information 
+the **web server** communicates with the **database**
+after retrieving the needed **resources**, the server sends a **response** to the **client**
 
-After getting the needed **resources**, the server sends a **response** to the **client**.
-
-The following image illustrates how web servers link **browsers** and **databases**:
+The following image illustrates how web servers provide the connection between **browsers** and **databases**:
 
 [image assetsSrc="Java-Web-Introduction-To-The-Internet-1.png" /]
 
@@ -22,13 +23,13 @@ The following image illustrates how web servers link **browsers** and **database
 
 # Important Definitions
 
-The **Internet** is a very difficult concept to learn.
+The **Internet** is a complex concept to grasp.
 
 However, nothing is impossible with good **foundations**.
 
-Here are some of the **basic definitions**, needed to understand the Internet:
+Here are some of the **basic definitions** needed to understand the Internet:
 
-- `Server and Client` - The **client(browser)** is an **application**, stored on a **user's computer** that **communicates** over the Internet. The **server** is a software that connects the **client** to a database, stored **away** from the user's machine.
+- `Server and Client` - The **client(browser)** is an **application**, stored on a **user's computer** that **communicates** over the Internet. The **server** is a piece of software that connects the **client** to a database, stored **away** from the user's machine.
 
 - `Network Protocol` - **Network protocols** define the rules for **data transfer** on the Internet.
 
@@ -44,15 +45,15 @@ Here are some of the **basic definitions**, needed to understand the Internet:
 
 **Servers** and **clients** are the two sides of **Internet communication**.
 
-The **clients** are the ones, **requesting** and using different kinds of **data**.
+**Clients** typically **request** and use different kinds of **data**.
 
-The **servers** make sure to get that **data** from wherever it is stored and return it to the client.
+**Servers** are responsible for locating the information in the database and presenting it to the client.
 
 The whole **client-server** relationship is very similar to the **consumer-producer** one in the real world.
 
 The **browsers**, like the **consumers**, always need something and make requests for different **services**.
 
-The **servers**, like the **producers**, are the ones, providing the **services** a browser needs.
+The **servers**, like the **producers**, are the ones providing the **services** a browser needs.
 
 [/slide]
 
@@ -64,7 +65,7 @@ As covered in a previous part of the lesson, **network protocols** set the rules
 
 A **network protocol** takes the whole **communication process** and divides it into smaller ones, each responsible for a different task.
 
-This **separation of tasks** is known as the **OSI** model and will be covered later on in the lesson.
+This **separation of tasks** is known as the **OSI** model and will be covered later in this lesson.
 
 Some of the most widely known Internet protocols are:
 
