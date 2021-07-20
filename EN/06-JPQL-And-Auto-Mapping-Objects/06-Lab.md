@@ -94,7 +94,7 @@ Sort the result in **descending order by their price**.
 
 # Problem with Solution: Select Ingredients by Name 
 
-Write a method that selects all **ingredients**, whose **names start with a given letter**.
+Write a method that selects all **ingredients**, which **names start with a given letter**.
 
 
 ## Example 
@@ -111,7 +111,7 @@ Write a method that selects all **ingredients**, whose **names start with a give
 
 # Problem with Solution: Count Shampoos by Price 
 
-Write a method **that counts all the shampoos** who **cost less than a given price**.
+Write a method **that counts all the shampoos** which **cost less than a given price**.
 
 
 ## Example 
@@ -128,7 +128,7 @@ Write a method **that counts all the shampoos** who **cost less than a given pri
 
 You will receive **shampoos**.
 
-Write a method that finds all **shampoos** who **use the given ingredients**.
+Write a method that finds all **shampoos** which **use the given ingredients**.
 
 
 ## Example 
