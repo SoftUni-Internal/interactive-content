@@ -11,7 +11,7 @@
 
 ```java
 @Repository
-public interface ShampooDao extends JpaRepository<Shampoo, Long> {                            
+public interface ShampooDao extends JpaRepository<Shampoo, Long> { 
     List<Shampoo> findByBrand(String brand);
 }
 ```
@@ -19,13 +19,13 @@ public interface ShampooDao extends JpaRepository<Shampoo, Long> {
 - **Repositories** can be **inherited** to reduce **code duplication**
 
 ```java
-interface StudentRepository extends JpaRepository<Student, Integer> {}{
+interface StudentRepository extends JpaRepository<Student, Integer> {
 
     Student findByFirstName(String firstName); 
     // .where firstName == firstName(param).
 
     Student findByFirstNameAndLastName(String firstName, String lastName);       
-    // .where firstName == firstame(param) AND lastName == lastName(param)
+    // .where firstName == firstame(param) AND lastName == lastName(param).
 
     List<Student> findByAgeBetween(Integer ageMin, Integer ageMax);              
     // .where age between ageMin(param) AND ageMax(param).
@@ -67,7 +67,7 @@ public class Employee {
     private BigDecimal salary;
 
     // Many to one relationship to the entity Address
-    @ManyToOne                               /
+    @ManyToOne 
     @JoinColumn(name = "address_id")        
     private Address address;
 }

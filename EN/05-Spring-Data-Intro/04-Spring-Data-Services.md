@@ -66,7 +66,7 @@ The repository establishes a **link** between the service layer and the database
 
 It is responsible for the data sent to the **database** from the **service layer** (**incoming** information) and the retrieved data sent back to the service layer.
 
-The service layer **processes** either the incoming information and sends it to the database or processes the incoming request and retrieves the necessary information from the database. 
+The service layer **processes** either the incoming information and persists it to the database or processes the incoming request and retrieves the necessary information from the database. 
 
 [/slide]
 
@@ -74,7 +74,7 @@ The service layer **processes** either the incoming information and sends it to 
 
 # Entry Point
 
-Firstly we will need an entry point for our **Spring Application**.
+First, we will need an entry point for our **Spring Application**.
 
 We declare the **entry point** with the `@SpringBootApplication` annotation.
 
