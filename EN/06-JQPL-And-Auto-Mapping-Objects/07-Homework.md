@@ -275,7 +275,7 @@ Print the total amount of book copies that were added.
 
 ## Input
 
--	On the **first line** - a date in the format **dd MMM yyyy**
+-	On the **first line** - a date in the format **"dd MMM yyyy"**
     * if a book is released after that date (exclusively), increase its book copies with the provided number from the second line of the input
 
 -	On the **second line** - the number of **book copies** each book should be increased with
