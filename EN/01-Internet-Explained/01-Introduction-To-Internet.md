@@ -4,20 +4,23 @@
 
 # Internet - History
 
-The internet is a relatively **new** technology that has been going through **rapid development** in the most recent decades.
+The internet is a relatively **new** technology that has gone through **rapid development** in the most recent decades.
 
 Very **different** from what it is today, the internet marks its **beginning** in the **1960s**.
 
-Back then, the basic idea for it was to **link** computers in a **network** and to allow some kind of **data transfer**.
+Back then, the basic idea was to **link** computers in a **network**, allowing for **data transfer** between them.
 
 **TCP/IP** became a reality in the 70s. Computers were **linked independently** of each other.
 
 The first **LANs** and **domains** were created in the 1980s.
 
-The 90s were very important in internet history. They mark the creation of **HTML**, **Java**, **the first internet virus**, major companies like **Google**,
-**Apple**, **Amazon**, and **eBay**.
+The 90s were a pivotal point in internet history. 
 
-At the beginning of the new century, the **dotcom** bubble burst and some companies got erased. Other companies, like **Google**, became giants.
+They marked the creation of **HTML**, **Java**, **the first internet virus**, and major companies like **Google**, **Apple**, **Amazon**, and **eBay**.
+
+At the beginning of the new century, the ** dot-com** bubble burst.
+
+Some companies were erased while others (such as **Google**) became giants.
 
 **Wireless access** became the new craze.
 
@@ -49,11 +52,11 @@ They then connect the users **indirectly**.
 
 A **computer network** consists of **two** or **more** computers.
 
-They could be connected with a **cable** or they could share a **wireless connection**.
+They could connect via **cable** or share a **wireless connection**.
 
 A network of computers has some **protocols** to establish **communication** between them.
 
-The **nodes** of a network typically have some sort of **identification**.
+The **nodes** of a network typically have some form of **identification**.
 
 When **connected** in a network, devices can **share** all kinds of **data**.
 
@@ -61,7 +64,7 @@ For example, a **laptop**, connected to a **PC** with a **USB cable**, makes up 
 
 They can share **images**, **audio**, or **video** files.
 
-In contrast, **data centers** can be **thousands of devices**, sharing **tons of different information**.
+By contrast, **data centers** can be **thousands of devices**, sharing **tons of different information**.
 
 [/slide]
 
@@ -69,28 +72,27 @@ In contrast, **data centers** can be **thousands of devices**, sharing **tons of
 
 # Networks and Internet
 
-It was established that a **network** consists of **many connected devices**.
+As mentioned earlier, a **network** consists of **many connected devices**.
 
 The internet consists of **thousands of networks** and therefore - **billions of devices**.
 
 Those networks **communicate** through the **exchange** of **small data units** (**packets**).
 
-Their **communication** is defined by the **TCP/IP**.
+The **TCP/IP** protocol defines their **communication**.
 
-The internet is a **decentralized** system.
+The Internet is a **decentralized** system.
 
-A few **organizations** take care of the internet's **maintenance** and **protocol updates**.
+A few **organizations** take care of the Internet's **maintenance** and **protocol updates**.
 
-However, **no single organization** can claim **ownership** of the internet.
+However, **no single organization** can claim **ownership** of the Internet.
 
-This **connection** of people has changed the world a lot in a **relatively short time**.
+The ability to instantly connect to anyone or find the information you need has changed the world in a **short timespan**.
 
-Nowadays, there are **platforms** for people to do anything they want or watch other people do it.
+Nowadays, there are **platforms** for anything - from social media applications to learning platforms.
 
-A lot of **businesses are thriving** because of the **great advertising opportunities** the internet provides.
+Many **businesses are thriving** because of the **great advertising opportunities** the Internet provides.
 
-Not everything is so great, however.
-
-With the internet growing, there is **less room for privacy** and **cyber-security**.
+However, this technology has its flaws too - **less room for privacy** and **cyber-security**.
 
 [/slide]
+
