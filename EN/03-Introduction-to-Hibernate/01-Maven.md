@@ -93,7 +93,7 @@ The `<groupId>` identifier denotes the group a plugin belongs to.
 
 By default, all core Maven artifacts live under the **groupId** `org.apache.maven`.
 
-The `<artifactId>` is the name of our project, but in the case of a plugin, it is `maven-compiler-plugin`.
+The `<artifactId>` is the name of our project, but in the case of this plugin, it is `maven-compiler-plugin`.
 
 Every plugin has a specific `<configuration>` property, used to pass values to an underlying system, such as a plugin.
 

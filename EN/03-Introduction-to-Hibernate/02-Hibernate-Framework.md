@@ -63,7 +63,7 @@ Let us take a look at the `Pom.xml` **file**:
 </dependencies>
 ```
 
-As shown above, you must include maven as a dependency in your Maven configuration.
+As shown above, you must include `hibernate-core` as a dependency in your Maven configuration.
 
 ## Database Configuration
 
