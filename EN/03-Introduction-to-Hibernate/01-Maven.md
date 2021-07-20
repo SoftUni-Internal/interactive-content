@@ -123,6 +123,6 @@ Each dependency contains **three** elements:
 - `groupId` and `artifactId` - the dependency's **coordinates**
 - `version` - a dependency version requirement specification, used to **compute the dependency's effective version**
 
-This computation is performed in order to select a version that matches all dependency declaration, preventing **version mismatch** errors.
+This computation is performed in order to select a version that matches all dependency declarations, preventing **version mismatch** errors.
 
 [/slide]
