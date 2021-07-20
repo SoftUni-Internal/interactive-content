@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -15,60 +15,58 @@ public class Main {
 [task-description]
 # Descriere
 
-Vi se va da un număr întreg **n** pentru **dimensiunea** teritoriului albinelor cu formă **pătrată**.
+Vi se va da un număr întreg **n** pentru **dimensiunea** unui teritoriu de albine. Teritoriul are o formă **pătrată**.
 
 Pe următoarele **n** linii, veți primi **rândurile** teritoriului.
 
-Albina va fi plasată într-o **poziție aleatorie**, marcată cu litera **„B”**.
+Albina va fi plasată pe o **poziție aleatorie** și va fi marcată cu litera **"B"**.
 
-Pe poziții aleatorii vor fi flori, marcate cu **'f'**.
+Pe poziții aleatorii vor fi flori, marcate cu litera **"f"**.
 
-S-ar putea să existe și un **bonus** pe teritoriu.
+S-ar putea să existe și un **bonus** în teritoriu.
 
-Întotdeauna va exista un singur bonus.
+Întotdeauna va exista un singur bonus, care va fi marcat cu litera **"O"**.
 
-Va fi **marcat** cu **litera** - **„O”**.
+**Toate pozițiile goale** vor fi marcate cu **"."**.
 
-**Toate pozițiile goale** vor fi marcate cu „.”.
+În fiecare tură, vi se va da o **comandă** care determină **direcția de deplasare a albinei**.
 
-La fiecare tura, vi se va da **comanda** pentru **mișcarea albinei**.
+Comenzile vor fi: **"up"**, **"down"**, **"left"**, **"right"**, **"End"**.
 
-Comenzile vor fi: **„sus”**, **„jos”**, **„stânga”**, **„dreapta”**, **„Sfârșit”**.
+Dacă albina **se mută** pe o **floare**, aceasta polenizează floarea și mărește numărul florilor polenizate cu 1.
 
-Dacă albina **se mută** la o **floare**, aceasta polenizează floarea și crește florile polenizate cu una.
+Dacă ajunge la un **bonus**, albina se deplasează înainte cu o poziție, iar apoi bonusul **dispare**.
 
-Dacă merge la un **bonus**, albina primește bonus o mișcare înainte și apoi bonusul **dispare**.
+Dacă albina **iese din teritoriu**, aceasta nu se poate întoarce înapoi și programul se încheie. Dacă albina primește comanda **"End"**, programul se oprește.
 
-Dacă albina **se stinge** nu se poate întoarce înapoi și programul se încheie. Dacă albina primește comanda **„End”**, programul se termină.
-
-Albina are nevoie de **cel puțin 5 flori polenizate**.
+Albina trebuie **să polenizeze cel puțin 5 flori**.
 
 ## Intrare
 
-- Pe prima linie, vi se dă întregul **n** - dimensiunea matricei **pătrate**.
+- Pe prima linie, vi se dă numărul întreg **n** - dimensiunea matricei **pătrate**
 
-- **Următoarele n linii** conțin valorile pentru fiecare **rând**.
+- **Următoarele n linii** conțin valorile pentru fiecare **rând**
 
-- Pe fiecare dintre următoarele rânduri până când primiți comanda **„Sfârșit”**, veți primi o comandă de mutare.
+- Pe fiecare dintre următoarele rânduri, până la introducerea comenzii **"End"**, veți primi o comandă care indică deplasarea albinei
 
 ## Ieșire
 
 - Pe prima linie:
-  - Dacă albina iese din teritoriul său tipăriți: **„Albina s-a pierdut!”**
+  - Dacă albina iese din teritoriu, imprimați: **"The bee got lost!"**
 - Pe a doua linie:
-  - Dacă albina nu a putut poleniza suficient de multe flori, se imprimă: **"The bee couldn't pollinate the flowers, she needed** \{**needed**\} **flowers more"**
-  - Dacă albina a polenizat cu succes suficiente flori imprimă: **"Great job, the bee manage to pollinate** \{**polinationed flowers**\} **flowers!"**
-- La final imprimați matricea.
+  - Dacă albina nu a reușit să polenizeze suficient de multe flori, imprimați: **"The bee couldn't pollinate the flowers, she needed** \{**needed**\} **flowers more"**
+  - Dacă albina a polenizat cu succes suficiente flori, imprimați: **"Great job, the bee manage to pollinate** \{**polinationed flowers**\} **flowers!"**
+- La final, imprimați matricea
 
 ## Constrângeri
 
 - Mărimea matricei **pătrate** va fi între \[2…10\]
 
-- Va fi **mereu** bonus **0** sau **1** , marcat cu - **„O”**
+- Numărul de bonusuri va fi mereu **0** sau **1**, marcat cu - **"O"**
 
-- Poziția albinei va fi marcată cu **„B”**
+- Poziția albinei va fi marcată cu **"B"**
 
-- Nu va exista un caz în care un bonus să scoată albina din teritoriul său
+- Nu va exista un caz în care un bonus să determine ieșirea albinei din teritoriul său
 
 ## Exemple
 
@@ -92,7 +90,7 @@ Albina are nevoie de **cel puțin 5 flori polenizate**.
 
 ## Comentariu
 
-Acest tabel ilustrează stadiul teritoriul după o comandă de mișcare dată.
+Acest tabel ilustrează stadiul teritoriul după o comandă dată.
 Formatul este `row of the command) direction`:
 
 |1) right|2) right|3) down|5) left|
@@ -104,11 +102,11 @@ Formatul este `row of the command) direction`:
 |fffff|fffff|fffff|fffff|
 
 
-- polenizează o floare: „f” (0, 1)
+- polenizează o floare: "f" (0, 1)
 
-- călcați pe un bonus: „O” (1, 2) și faceți încă un pas până la: „f” (2, 2)
+- albina nimerește pe un bonus: "O" (1, 2) și se deplasează cu încă o poziție la: "f" (2, 2)
 
-- albina este aprinsă (4, 1), următoarea comandă pe care o primește este în jos și iese din teren și programul se încheie.
+- albina se află pe poziția (4, 1), iar următoarea comandă pe care o primește este "down" - iese din teritoriu, iar programul se încheie
 
 |**Intrare**|**Ieșire**|
 |---|---|
@@ -127,12 +125,12 @@ Formatul este `row of the command) direction`:
 [hints]
 [hint]
 Creați o metodă care verifică dacă o poziție se află în interiorul limitelor teritoriului.
-Trebuie să returneze o valoare booleană.
+Metoda trebuie să returneze o valoare booleană.
 [/hint] 
 [hint]
-Puteți scrie de asemenea și o metodă pentru localizarea albinei.
+Puteți scrie de asemenea și o metodă pentru a localiza albina.
 Utilizați bucle imbricate pentru a obține pozițiile orizontale și verticale din matrice.
-Apoi verificați dacă poziția curentă conține 'B'.
+Apoi verificați dacă poziția curentă este marcată cu 'B'.
 [/hint] 
 [/hints] 
 

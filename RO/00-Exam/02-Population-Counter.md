@@ -7,7 +7,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        // Scrieți codul aici
+        // Scrieți codul dvs. aici
     }
 }
 ```
@@ -15,47 +15,45 @@ public class Main {
 [task-description]
 # Descriere
 
-Atat de mulți oameni! Este greu să îi numeri pe toți. Dar asta este meseria ta ca statistician.
+Atat de mulți oameni! Este greu să îi numărați pe toți, dar în asta constă cariera voastră de statistician.
 
-Primiți date brute pentru un anumit oraș și trebuie să le agregați.
+Veți primi date brute pentru un anumit oraș, pe care trebuie să le procesați.
 
-Pe fiecare linie de introducere veți primi date în format: "city\|country\|population". 
+Pe fiecare linie cu date de intrare veți primi date în formatul: **"city\|country\|population"**. 
 
-Nu va fi **niciun spațiu alb redundant nicăieri** în intrare.
+Nu vor exista **spații redundante nicăieri** în intrare.
 
 Agregați datele **în funcție de țară și de oraș** și imprimați-le pe consolă.
 
-**Pentru fiecare** țară, tipăriți **populația totală** și pe linii separate datele pentru fiecare dintre orașele sale.
+**Pentru fiecare** țară, tipăriți **populația totală**, iar pe linii separate datele pentru fiecare dintre orașele sale.
 
-**Țările** ar trebui să fie ordonate în funcție de **populația lor totală în ordine descrescătoare** și în fiecare țară, **orașele** ar trebui ordonate după **același criteriu.**
+**Țările** trebuie să fie ordonate descrescător în funcție de **populația lor totală**, iar pentru fiecare țară, **orașele** trebuie ordonate după **același criteriu.**
 
-Dacă două țări / orașe au aceeași populație, păstrați-le în **ordinea** în care au fost **introduse**.
-
-Consultați exemplele. Urmați cu strictețe formatul de ieșire!
+Dacă două țări/orașe au aceeași populație, păstrați-le în **ordinea** în care au fost **introduse**.
 
 ## Intrare
 
-- Datele de intrare trebuie citite de pe consolă.
+- Datele de intrare trebuie citite de la consolă.
 
-- Constau dintr-un număr variabil de linii și se termină atunci când este recepționată comanda **report**.
+- Acestea constau dintr-un număr variabil de linii și se termină atunci când este recepționată comanda **"report"**.
 
-- Datele de intrare vor fi întotdeauna valabile și în formatul descris. Nu este nevoie să verificați în mod explicit.
+- Datele de intrare vor fi întotdeauna valabile și vor respecta formatul descris. Nu este nevoie să verificați acest aspect în mod explicit.
 
 ## Ieșire
 
 - Ieșirea trebuie imprimată pe consolă.
 
-- Imprimați datele cumulate pentru fiecare țară și oraș în formatul prezentat mai jos.
+- Imprimați datele agregate pentru fiecare țară și oraș în formatul prezentat mai jos.
 
 ## Constrângeri
 
-- Numele orașului, țării și numărul populației va fi separat unul de celălalt printr-o conductă („\|”).
+- Numele orașului, al țării și populația vor fi separate una de cealaltă printr-o bară verticală ("\|").
 
-- **Numărul de linii de intrare** va fi în intervalul [2… 50].
+- **Numărul de linii din intrare** va fi în intervalul \[2… 50\].
 
 - O pereche oraș-țară nu va fi repetată.
 
-- **Numărul de populație** al fiecărui oraș va fi un număr întreg în intervalul [0… 2 000 000 000].
+- **Populația** fiecărui oraș va fi un număr întreg în intervalul \[0… 2 000 000 000\].
 
 
 ## Exemple
@@ -74,6 +72,7 @@ Consultați exemplele. Urmați cu strictețe formatul de ieșire!
 |report|=>Sofia: 1| 
 ||Italy (total population: 3)|
 ||=>Rome: 3|
+
 [/task-description]
 [code-io /]
 [tests]
