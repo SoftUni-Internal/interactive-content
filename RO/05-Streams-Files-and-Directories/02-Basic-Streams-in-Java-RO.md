@@ -1,4 +1,4 @@
-# Fluxuri de Bază în Java
+# Fluxuri Elementare în Java
 
 
 [slide hideTitle]
@@ -7,21 +7,21 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-15-16-Byte-Stream-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Fluxurile de octeți în Java sunt utilizate pentru a efectua intrarea și ieșirea de octeți pe 8 biți.
+Fluxurile de octeți în Java sunt utilizate pentru a efectua intrarea și ieșirea octeților.
 
-Fluxurile de octeți sunt fluxuri de cel mai scăzut nivel.
+Fluxurile de octeți sunt fluxuri de cel mai mic nivel.
 
 Caracteristica lor principală este că acestea pot citi sau scrie doar un singur octet la un moment dat.
 
-Toate fluxurile de octeți coboară din clasele InputStream și OutputStream.
+Toate fluxurile de octeți moștenesc clasele InputStream și OutputStream.
 
-Chiar daca există multe clase legate de fluxurile de octețit insa cele mai frecvent utilizate clase sunt **FileInputStream** și **FileOutputStream**.
+Chiar daca există multe clase asociate cu fluxurile de octeți, cele mai frecvent utilizate clase sunt **FileInputStream** și **FileOutputStream**.
 
-- **InputStream este o secvență de octeți care se termină cu -1**, care este un caracter special **care marchează sfârșitul fișierului**.
+- **InputStream este o secvență de octeți care se termină cu -1**, care este un caracter special **care marchează sfârșitul fișierului**
 
 [image assetsSrc="streams-files-directories-example(3).png" /]
 
-- **OutputStream constă numai din octeți**, care vor fi scrise.
+- **OutputStream constă numai din octeții** care vor fi scriși
 
 [image assetsSrc="streams-files-directories-example(4).png" /]
 
@@ -41,14 +41,15 @@ Chiar daca există multe clase legate de fluxurile de octețit insa cele mai fre
 [task-description]
 
 ## Descriere
-Citiți fișierul numit "**input.txt**" și scrieți într-un alt fișier fiecare caracter al **ASCII**.
+Citiți fișierul numit "**input.txt**" și scrieți în alt fișier reprezentarea **ASCII** a fiecărui caracter.
 
-Scrieți fiecare spațiu sau linie nouă așa cum este, de ex. ca un spațiu sau o nouă linie.
+Scrieți fiecare spațiu sau linie nouă așa cum este - nu trebuie convertite în reprezentarea lor ASCII.
+
 ## Instrucțiuni
 
 Ar trebui să aveți deja toate resursele necesare descărcate de la cerința precedentă.
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -646,20 +647,19 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-19-Character-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Fluxurile de caractere Java** sunt utilizate pentru a efectua intrări și ieșiri pentru **unicode pe 16 biți**.
+**Fluxurile Java de caractere** sunt utilizate pentru a efectua intrări și ieșiri pentru **date Unicode pe 16 biți**.
 
-Chiar dacă există multe clase legate de fluxurile de caractere, dar cele mai frecvent utilizate clase sunt **FileReader** și **FileWriter**. 
+Cele mai frecvent utilizate clase sunt **FileReader** și **FileWriter**. 
 
-Deși intern **FileReader folosește FileInputStream** și **FileWriter folosește FileOutputStream**, dar aici diferența principală este că FileReader **citește doi octeți pe rând** și FileWriter **scrie doi octeți pe rând**.
+Deși intern **FileReader folosește FileInputStream** și **FileWriter folosește FileOutputStream**, diferența principală este că FileReader **citește doi octeți în același timp** și FileWriter **scrie doi octeți în același timp**.
 
-Pe scurt, fluxurile de caractere pot citi și scrie dintr-o intrare **caracter prin caracter**.
+Pe scurt, fluxurile de caractere pot citi și scrie datele de intrare **caracter cu caracter**.
 
+Fluxurile de intrare și ieșire sunt create cu ajutorul claselor **FileReader** și **FileWriter** într-un bloc **try-with-resources**.
 
-Fluxurile de intrare și ieșire sunt create utilizând clasele FileReader și FileWriter într-un bloc **try-with-resources**.
+După declararea și atribuirea variabilei pentru caractere, utilizând metoda `inputStream.read()`, bucla while rulează până când ultimul caracter a fost citit din fișierul de intrare. 
 
-După declararea și atribuirea variabilei de caractere, utilizând metoda `inputStream.read()`, bucla (loop) while a fost pornită până când ultimul caracter a fost citit din fișierul de intrare. 
-
-În scopul buclei, caracterele, din fișierele de intrare, sunt scrise în fișierul de ieșire utilizând metoda `outputStream.write()`.
+În domeniul buclei, caracterele din fișierele de intrare sunt scrise în fișierul de ieșire cu ajutorul metodei `outputStream.write()`.
 
 
 ```java
@@ -687,7 +687,7 @@ try (FileReader inputStream = new FileReader(input);
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-20-Combining-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Caractere de fluxuri sunt deseori "**ambalaje**" pentru fluxurile de octeți:
+Fluxurile de caractere sunt deseori "**învelitoare**" pentru fluxurile de octeți:
     - FileReader folosește FileInputStream
     - FileWriter folosește FileOutputStream
 
@@ -697,9 +697,9 @@ String path = "D:\\input.txt";
 Scanner reader = new Scanner(new FileInputStream(path));
 ```
 
-Exemplul de mai sus este dat cu clasa `Scanner`, pe care ați folosit-o de ceva timp acum.
+În exemplul de mai sus este folosită clasa `Scanner`, pe care o cunoaștem deja.
 
-Aici ste folosit pentru a acoperi `FileInputStream` și, până acum, ați făcut acest lucru prin împachetarea `System.in`, care nu este altceva decât o constantă care deține un `InputStream`.
+Aici este folosită pentru a înveli `FileInputStream`. Până acum am făcut acest lucru prin învelirea lui `System.in`, care nu este altceva decât o constantă care conține un `InputStream`.
 
 [/slide]
 
@@ -715,15 +715,15 @@ Aici ste folosit pentru a acoperi `FileInputStream` și, până acum, ați făcu
 [/code-editor]
 [task-description]
 ## Descriere
-Citiți fișierul dat, denumit "**input.txt**" și **extrageți toate numerele întregi care nu fac parte dintr-un cuvânt** într-un fișier separat.
+Citiți fișierul numit "**input.txt**" și **extrageți toate numerele întregi care nu fac parte dintr-un cuvânt** într-un fișier separat.
 
-Un număr întreg valid este **înconjurat de whitespace**.
+Un număr întreg valid este **înconjurat de spații**.
 
 ## Instrucțiuni
 
 Ar trebui să aveți deja toate resursele necesare descărcate de la cerința precedentă.
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -773,38 +773,38 @@ Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **n
 
 [slide hideTitle]
 
-# Fluxurile de Bufere
+# Fluxuri cu Buffer
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-23-Buffered-Streams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Următorul strat de abstractizare peste fluxul de octeți sunt fluxurile tamponate. 
+Fluxurile cu buffer sunt următorul strat de abstractizare peste fluxul de octeți.
 
-Fluxurile pe care le-am văzut până acum nu sunt tamponate I/O.
+Fluxurile pe care le-am văzut până acum folosesc **I/O fără buffer**.
 
-Aceasta înseamnă că fiecare cerere de citire sau scriere este tratată direct de sistemul de operare
+Acest lucru înseamnă că fiecare solicitare de citire sau scriere este gestionată direct de către sistemul de operare.
 
-Acest lucru poate face programul mai puțin eficient, deoarece fiecare cerere de acest tip adesea consuma din spațiul discului activității din rețea sau o altă operație care este relativ scumpă.
+Acest aspect poate face programul mai puțin eficient, deoarece fiecare cerere de acest tip adesea consumă spațiul discului, activitate de rețea sau alte operații costisitoare.
 
-Pentru a depăși acest tip de cheltuieli generale, platforma Java implementează Buffered I/O Streams.
+Pentru a depăși acest tip de cheltuieli, platforma Java implementează Fluxurile cu Buffer I/O.
 
-Fluxurile de intrare de bufere citesc date dintr-o zonă de memorie cunoscută sub numele de buffer.
+Fluxurile de intrare cu buffer citesc date dintr-o zonă de memorie cunoscută sub numele de buffer (tampon).
 
-Când se creează fluxurile de bufere, se creează o matrice intern de bufere.
+Când fluxul cu buffer este inițializat, se creează o matrice buffer internă .
 
-Fluxul de bufere poate acoperi un flux de caractere și ne poate oferi acces la metode foarte puternice. 
+Fluxul cu buffer poate fi folosit pentru a înveli un flux de caractere și ne poate oferi acces la metode foarte utile. 
 
-Există patru clase de fluxuri de bufere utilizate pentru a acoperi fluxuri nebuferate:
+Există patru clase de fluxuri cu buffer, utilizate pentru a înveli fluxurile fără buffer:
 
- - **BufferedInputStream** și **BufferedOutputStream** creez  bufere de **fluxuri de octeți**
- - **BufferedReader** și **BufferedWriter** creez  bufere de **fluxuri de caractere**
+ - **BufferedInputStream** și **BufferedOutputStream** creează **fluxuri de octeți cu buffer**
+ - **BufferedReader** și **BufferedWriter** creează **fluxuri de caractere cu buffer**
 
 Să ne uitam la următorul exemplu:
 
 [image assetsSrc="streams-files-directories-example(5).png" /]
 
-În loc să citim conținutul "**Files and**", octet prin octet sau un caracterprin caracter, putem folosi un buffer pentru a obține bucăți mai mari de text la rând.
+În loc să citim conținutul octet cu octet sau caracter cu caracter, putem folosi un buffer pentru a obține fragmente mai mari de text.
 
-În acest caz, buferul va conține două caractere în același timp.
+În acest caz, buffer-ul va conține două caractere în același timp.
 
 Acest lucru va crește semnificativ **performanța** aplicațiilor noastre.
 
@@ -821,15 +821,17 @@ Acest lucru va crește semnificativ **performanța** aplicațiilor noastre.
 [/code-editor]
 [task-description]
 ## Descriere
-Citiți fișierul dat, numit "**input.txt**" și scrieți într-un alt fișier toate liniile la care numărul este **divizibil cu 3**.
+Citiți fișierul "**input.txt**" pe care l-ați descărcat anterior.
 
-Numerele de linie **încep de la unu**.
+Scrieți fiecare a 3-a linie în alt fișier.
+
+Numărătoarea începe cu 1.
 
 ## Instrucțiuni
 
 Ar trebui să aveți deja toate resursele necesare descărcate de la cerința precedentă.
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programul vostru, **nu codul**.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -1050,37 +1052,37 @@ without a sound and vigorous self-confidence could have written either
 [/slide]
 
 [slide hideTitle]
-# Comanda I/O Streams 
+# I/O din Linia de Comandă
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-26-27-Command-Line-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Java oferă suport pentru I/O standard, unde programul utilizatorului poate prelua intrarea de la o tastatură și apoi produce o ieșire pe ecranul calculatorului.
+Java oferă suport pentru I/O standard, unde programul utilizatorului poate prelua datele de intrare de la tastatură și apoi generează datele de ieșire pe ecranul calculatorului.
 
 Platforma Java acceptă trei fluxuri standard, atașate la consolă.
 
-**Standard Input** - `System.in` este un **InputStream** care este de obicei este conectat la intrarea de la tastatură a programelor de consolă.
+**Standard Input** - `System.in` este un **InputStream** care este de obicei conectat la datele de intrare ale programelor de consolă, introduse de la tastatură.
 
-**Standard Output** - `System.out` este adesea folosit din programe numai pentru consolă ca o modalitate de a afișa rezultatul execuției lor către utilizator.
+**Standard Output** - `System.out` este adesea folosit pentru programe de consolă ca o modalitate de a-i afișa utilizatorului rezultatul execuției lor.
 
-**Standard Error** - `System.err` este utilizat pentru a afișa datele de eroare produse de programul utilizatorului.
+**Standard Error** - `System.err` este utilizat pentru a afișa informații despre erorile apărute.
 
-Este posibil să aveți așteptari ca fluxurile standard să fiu fluxuri de caractere, dar, din motive istorice, acestea sunt **fluxuri de octeți**.
+Poate vă așteptați ca fluxurile standard să fie fluxuri de caractere, dar, din motive istorice, acestea sunt **fluxuri de octeți**.
 
-`System.out` și `System.err` sunt definite ca obiecte  **PrintStream**.
+`System.out` și `System.err` sunt definite ca obiecte **PrintStream**.
 
-Chiar daca din punctul de vedere tehnic este un flux de octet, PrintStream utilizează un **obiect de flux de caractere** pentru a emula  **multe dintre caracteristicile fluxurilor de caractere**.
+Chiar daca din punct de vedere tehnic este un flux de octeți, PrintStream utilizează intern un **obiect de tip flux de caractere** pentru a imita **multe dintre caracteristicile fluxurilor de caractere**.
 
-În schimb, `System.in` este un flux de octeți **fără caracteristici de flux de caractere**. 
+În schimb, `System.in` este un flux de octeți **fără caracteristici ale fluxurilor de caractere**. 
 
-Pentru a utiliza **Standard Input** ca flux de caractere, ambalați `System.in` în **InputStreamReader**.
+Pentru a utiliza **Standard Input** ca flux de caractere, înveliți `System.in` în **InputStreamReader**.
 
-Următorul exemplu este pentru fluxul de intrare de bufere care citește conținutul din `System.in` (**Console**):
+Următorul exemplu este pentru un flux de intrare cu buffer care citește conținutul din `System.in` (**Console**):
 
-Creăm un flux**BufferedReader**, care ambalează **InputStreamReader**.
+Creăm un flux **BufferedReader** care înveleșste un **InputStreamReader**.
 
-Apoi **InputStreamReader** ambalează fluxul`System.in`.
+Apoi, **InputStreamReader** învelește fluxul `System.in`.
 
-Metoda `readline()` - citește un rând de text, în acest caz, acesta va fi scris în consolă.
+Metoda `readline()` - citește un rând de text, care în acest caz va fi scris în consolă.
 
 ```java
 BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));

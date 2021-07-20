@@ -1,23 +1,22 @@
-# Cele Mai Bune Bractici
+# Cele Mai Bune Practici
 
 [slide hideTitle]
 
-# Utilizarea Blocului de Captură (Catch)
+# Utilizarea Blocului Catch
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-23-24-best-practices-using-catch-block-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Blocurile **Catch** ar trebui:
+Blocurile **catch** trebuie să:
 
-- Începeți cu excepțiile cele mai mici din ierarhie
-- Continuați cu excepțiile mai generale
-- În caz contrar, va apărea o eroare de compilare
+- înceapă cu excepțiile care se află cel mai jos în ierarhie
+- continue cu excepțiile mai generale
+- în caz contrar, va apărea o eroare de compilare
 
-Fiecare bloc **catch** ar trebui să gestioneze numai aceste excepții pe care le așteaptă:
+Fiecare bloc **catch** trebuie să trateze numai excepțiile care pot fi generate de către cod în blocurile **try**:
 
-- Dacă o metodă nu este competentă pentru a gestiona o excepție, aceasta ar trebui să o lase nesoluționată
+- Dacă o metodă nu este menită pentru a gestiona o excepție, aceasta nu trebuie tratată
 
-- Gestionarea tuturor excepțiilor fără a lua în considerare tipul lor este o practică proastă populară (anti-model)!
-
+- Tratarea tuturor excepțiilor fără a lua în considerare tipul lor nu este o practică bună
 [/slide]
 
 [slide hideTitle]
@@ -26,15 +25,15 @@ Fiecare bloc **catch** ar trebui să gestioneze numai aceste excepții pe care l
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-25-26-choosing-the-exception-type-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Când o aplicație încearcă să utilizeze **null** într-un caz în care este necesar un obiect:
+De exemplu, când o aplicație încearcă să utilizeze **null** într-un caz în care este necesar un obiect, va fi generată excepția **NullPointerException**.
 
-| **Tipului de Excepție** | **Când se folosește** |
+| **Tipul de Excepție** | **Când se folosește** |
 | --- | --- |
-| **NullPointerException** | A fost accesată o matrice cu un index ilegal. |
-| **StringIndexOutOfBoundsException** | Un index este fie negativ, fie mai mare decât dimensiunea șirului. |
-| **NumberFormatException** | Încearcă să convertească un șir necorespunzător la unul dintre tipurile numerice. |
-| **ArithmeticException** | Când a apărut o afecțiune aritmetică excepțională. |
-| **ClassCastException** | O metodă a primit un argument ilegal sau inadecvat. |
+| **NullPointerException** | A fost accesat un indice nevalid într-o colecție. |
+| **StringIndexOutOfBoundsException** | Un indice este fie negativ, fie mai mare decât dimensiunea șirului. |
+| **NumberFormatException** | Programul încearcă să convertească un șir necorespunzător într-un tip numeric. |
+| **ArithmeticException** | Excepția este generată când apare o condiție aritmetică excepțională. |
+| **ClassCastException** | O metodă a primit un argument nevalid. |
 
 [/slide]
 
@@ -44,19 +43,19 @@ Fiecare bloc **catch** ar trebui să gestioneze numai aceste excepții pe care l
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-27-28-exceptions-best-practices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Când ridicați o excepție, transmiteți întotdeauna constructorului un **mesaj de explicație bună.**
+Când generați o excepție, transmiteți întotdeauna constructorului un **mesaj explicativ corespunzător pentru eroarea apărută.**
 
-Mesajul de excepție ar trebui să explice ce cauzează problema și cum s-o rezolve.
+Mesajul excepției trebuie să explice ce cauzează problema și cum aceasta poate fi rezolvată.
 
-- **Bine**: "Dimensiunea trebuie să fie întreagă în intervalul \[1…15\]"
-- **Bine**: "Stare nevalidă. Primul apel Initialize()"
-- **Rău**: "Eroare neașteptată"
-- **Rău**: "Argument nevalid"
+- **Corect**: "Dimensiunea trebuie să fie un număr întreg în intervalul \[1…15\]"
+- **Corect**: "Stare nevalidă. Apelați mai întâi Initialize()"
+- **Greșit**: "Eroare neașteptată"
+- **Greșit**: "Argument nevalid"
 
 Excepțiile pot reduce performanța aplicației.
 
-- Aruncați excepții numai în situații cu adevărat excepționale și care ar trebui tratate
+- Aruncați excepții numai în situații cu adevărat excepționale
 - Nu aruncați excepții în fluxul normal de control al programului
-- JVM ar putea arunca excepții în orice moment, fără nicio modalitate de a le prevedea, cum ar fi **StackOverflowError**
+- JVM poate arunca excepții în orice moment, fără nicio modalitate de a le prevedea, cum ar fi **StackOverflowError**
 
 [/slide]

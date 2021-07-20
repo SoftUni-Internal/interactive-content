@@ -1,4 +1,4 @@
-# Introducerea Lecției
+# Introducere
 
 [slide hideTitle]
 # Conținutul Lecției
@@ -7,22 +7,22 @@
 
 ## În această lecție veți învăța:
 
-**1. Introducere în depanare**
+**1. Prezentare generală a depanării**
 
 - Ce este depanarea
 - Depanare vs testare
 
-**2. Debugger IntelliJ**
-- Cum să depanați un proiect
+**2. IntelliJ Debugger**
+- Depanarea unui proiect
 - Instrumente de depanare
 
 **3. Puncte de întrerupere**
 
 **4. Inspecția datelor**
-- Variabile și tab-uri Watches
-- Evaluarea expresiei Window
+- Tab-urile Variables și Watches
+- Fereastra Evaluate
 
 **5. Găsirea unui defect**
-- Sfaturi pentru găsirea unui defect
+- Sfaturi pentru găsirea defectelor
 
 [/slide]

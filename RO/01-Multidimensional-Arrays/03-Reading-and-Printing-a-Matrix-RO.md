@@ -1,8 +1,8 @@
-# Citirea și Tipărirea unei Matrice Multidimensională
+# Citirea și Tipărirea unei Matrice Multidimensionale
 
 [slide hideTitle]
 
-# Citirea și Tipărirea unei Matrice Multidimensională
+# Citirea și Tipărirea unei Matrice Multidimensionale
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-11-Reading-A-Matrix-Example-And-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -23,20 +23,20 @@ for (int row = 0; row < rows; row++) {
     // For-loop through the columns
     for (int column = 0; column < cols; column++) {
 
-        // Getting an element of the current row and column and assigning a value  
-        matrix[row][column] = Integer.parseInt(inputTokens[column]);
+    // Getting an element of the current row and column and assigning a value  
+    matrix[row][column] = Integer.parseInt(inputTokens[column]);
     }
 }
 ```
 
 - Întâi, citim lungimea rândurilor și a coloanelor matricei
-- Apoi, inițializăm o matrice de tip număr întreg cu valorile date ale rândurilor și coloanelor reprezentând lungimea
-- Apoi, creăm o **buclă-for**  pentru a parcurge rândul unei matrici unidimensionale
+- Apoi, inițializăm o matrice de numere întregi cu numărul dat de rânduri și coloane 
+- Creăm o **buclă-for** pentru a parcurge rândul unei matrice unidimensionale
 - Apoi, citim elementele care vor face parte din matricea noastra bidimensională
-- Apoi, avem nevoie de o buclă interioară care va parcurge coloana unei matrici unidimensionale particulare
-- La sfârșit setăm valoarea actuală a matricei noastre
+- Avem nevoie de o buclă interioară care va parcurge coloana unei matrice unidimensionale particulare
+- La sfârșit, setăm valoarea propiu-zisă a matricei noastre
 
-Aceasta este una dintre metodele standard de a tipări o matrice bidimensională.
+Aceasta este una dintre metodele standard de a tipări o matrice bidimensională:
 
 ```java live
 int[][] matrix = {{1, 2, 3, 4},
@@ -52,12 +52,12 @@ for (int row = 0; row < matrix.length; row++) {
 }
 ```
 
-Accesăm fiecare element al matricei unul câte unul, și le tipărim, separate printr-un spațiu.
+Accesăm elementele matricei unul câte unul și le tipărim, separate printr-un spațiu.
 
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluția: Compare Matrices
+# Problemă cu Soluție: Compare Matrices
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-12-Problem-And-Solution-Compare-Matrices-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -75,15 +75,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care citește două matrici cu elemente numere întregi, "vectori 2D", din consolă și le compară element cu element.
+Creați un program care citește două matrice "2D" de numere întregi de la consolă și le compară element cu element.
 
-Pentru o mai bună reutilizare a codului, puteți realiza compararea într-o metodă, care returnează **true** dacă sunt egale și **false**, în caz contrar.
+Pentru o mai bună reutilizare a codului, puteți realiza compararea într-o metodă care returnează **true** dacă sunt egale și **false** în caz contrar.
 
-Fiecare definiție de matrice din consolă va conține o linie cu un număr întreg pozitiv `R` - numărul de rânduri ale matricei, și `C` - numărul de coloane - urmat de `R` linii ce conțin câte `C` numere, separate prin spații - **fiecare linie va avea un număr egal de elemente**.
+Fiecare definiție a unei matrice va conține o linie cu un număr întreg pozitiv `R` - numărul de rânduri ale matricei și `C` - numărul de coloane. În continuare vor urma `R` linii care conțin `C` numere, separate prin spații - **fiecare linie va avea un număr egal de elemente**.
 
 Matricele vor avea cel mult **10** rânduri și **10** coloane.  
 
-Printați "**equal**" dacă matricele sunt la fel, respectiv "**not equal**" dacă acestea sunt diferite.
+Tipăriți "**equal**" dacă matricele sunt echivalente, respectiv "**not equal**" dacă acestea sunt diferite.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -253,7 +253,7 @@ not equal
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluția: Positions Of
+# Problemă cu Soluție: Positions Of
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-16-Problem-And-Solution-Position-Of-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -271,13 +271,13 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care citește o **matrice de numere de tip întreg din consolă**, apoi un număr și tipărește toate pozițiile pe care apare acel număr în matrice.
+Creați un program care citește o **matrice de numere întregi de la consolă**, apoi un număr și tipărește toate pozițiile pe care apare acel număr în matrice.
 
-Definirea matricei pe consolă va conține o linie cu două **numere întregi pozitive** `R` și `C` - numărul de rânduri și coloane din matrice, urmată de `R` linii, fiecare conținând `C` numere (**separate prin spații**), reprezentând fiecare linie a matricei.
+Definirea matricei pe consolă va conține o linie cu două **numere întregi pozitive** `R` și `C` - numărul de rânduri și coloane din matrice. Apoi, vor urma `R` linii, fiecare conținând `C` numere (**separate prin spații**), reprezentând fiecare linie a matricei.
 
-Numărul ale cărui poziții va trebui să le găsiți, va fi introdus pe o singură linie după matrice.
+Numărul ale cărui poziții va trebui să le găsiți va fi introdus pe o singură linie după matrice.
 
-Ar trebui să tipăriți fiecare poziție pe o singură linie. Prima dată, tipăriți linia, apoi coloana pe care apare numărul.
+Trebuie să tipăriți fiecare poziție pe o singură linie. Prima dată tipăriți linia, apoi coloana pe care apare numărul.
 
 Dacă numărul nu apare în matrice, tipăriți `not found`.
 
@@ -429,7 +429,7 @@ not found
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluția: Sum of All Elements of a Matrix
+# Problemă cu Soluție: Sum of All Elements of a Matrix
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-18-Problem-And-Solution-Sum-Of-All-Elements-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -447,14 +447,14 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care **citește o matrice din consolă și tipărește**:
-  - Numărul rândurilor
-  - Numărul coloanelor
-  - Suma tuturor elementelor din elementele matricei
+Creați un program care **citește o matrice de la consolă și tipărește**:
+  - Numărul de rânduri
+  - Numărul de coloane
+  - Suma tuturor elementelor matricei
 
-Pe **prima linie**, o să aveți **dimensiunile** matricei, rânduri și coloane  **separate printr-o virgulă și un spațiu: ", "**.
+Pe **prima linie** veți primi **dimensiunile** matricei, rânduri și coloane, **separate printr-o virgulă și un spațiu: ", "**.
 
-Pe **următoarele linii**,  o să aveți elementele pentru fiecare rând **separate printr-o virgulă și un spațiu**.
+Pe **următoarele linii** veți primi elementele pentru fiecare rând, **separate printr-o virgulă și un spațiu**.
  
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -568,7 +568,7 @@ Pe **următoarele linii**,  o să aveți elementele pentru fiecare rând **separ
 [/slide]
 
 [slide hideTitle]
-# Problemă cu Soluția: Maximum Sum of 2X2 Submatrix
+# Problemă cu Soluție: Maximum Sum of 2X2 Submatrix
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-20-Problem-And-Solution-Maximum-Sum-Of-2x2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -586,15 +586,15 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Creați un program care **citește o matrice din consolă**.
+Creați un program care **citește o matrice de la consolă**.
 
-Găsiți cea mai mare sumă a unei **submatrici 2x2**.
+Găsiți cea mai mare sumă a unei **submatrice 2x2**.
 
-**Tipăriți sbmatricea și suma acesteia.**
+**Tipăriți submatricea și suma acesteia.**
 
-Pe **prima linie**, o să aveți **dimensiunile** matricei, `rows` și `columns`, **separate printr-o virgulă și un spațiu: ", "**.
+Pe **prima linie** veți primi **dimensiunile** matricei, `rows` și `columns`, **separate printr-o virgulă și un spațiu: ", "**.
 
-Pe **următoarele linii**,  o să aveți elementele pentru fiecare rând **separate printr-o virgulă și un spațiu: ", "**.
+Pe **următoarele linii** veți primi elementele fiecărui rând, **separate printr-o virgulă și un spațiu: ", "**.
 
 
 ## Exemplu

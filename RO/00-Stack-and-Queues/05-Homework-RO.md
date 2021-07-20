@@ -15,11 +15,11 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Scrieți un program care citește **N numere întregi** din consolă și **le inversează prin intermediul unei stive**.
+Scrieți un program care citește **N numere întregi** din consolă și **le inversează ordinea cu ajutorul unei stive**.
 
-Utilizați clasa `ArrayDeque <Integer>`.
+Utilizați clasa `ArrayDeque<Integer>`.
 
-Doar introduceți datele de intrate în stivă și apoi le scoateți pe rând.
+Introduceți numerele în stivă și apoi extrageți-le pe rând.
 
 ## Exemplu
 | **Intrare** | **Ieșire** |
@@ -93,38 +93,38 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Write your code here
+        // Scrieți codul dvs. aici
     }
 }
 ```
 [/code-editor]
 [task-description]
 ## Descriere
-Vi se va da un număr întreg **N**, care reprezintă **numărul de elemente de adăugat în stivă**, un întreg **S**, reprezentând **numărul de elemente de scos mai apoi din stivă** și, în final, un număr întreg **X** , un element **despre care va trebui să verificați dacă se află sau nu în stivă**.
+Vi se va da un număr întreg **N** care reprezintă **numărul de elemente care trebuie adăugate în stivă**, un număr întreg **S** care reprezintă **numărul de elemente care trebuie extrase din stivă** și un număr întreg **X**. Trebuie să verificați dacă elementul X se află sau nu în stivă.
 
-Dacă e, printăm **true** în consolă.
+Dacă este prezent, imprimați **true** pe consolă.
 
-Dacă nu, printăm cel mai mic element prezent la momentul respectiv în stivă.
+Dacă nu este prezent, tipăriți cel mai mic element prezent la momentul respectiv în stivă.
 
-## Date de intrare
+## Intrare
 
-- Pe prima linie, vi se vor da **N** , **S** și **X**, separate prin spațiu.
-- Pe următoarea linie, vi se va da o linie cu numere **separate prin cel puțin un spațiu**.
+- Pe prima linie vi se vor da numerele **N**, **S** și **X**, separate printr-un spațiu
+- Pe următoarea linie veți primi numere **separate prin cel puțin un spațiu**
 
-## Date de ieșire
+## Ieșire
 
-- Pe o singură linie se printează **true** dacă **X** e prezent în stivă sau, în caz contrar, **se printează cel mai mic** element din stivă.
-- Dacă stiva e goală, printăm 0.
+- Imprimați **true** dacă **X** e prezent în stivă sau, în caz contrar, **imprimați cel mai mic** element din stivă
+- Dacă stiva este goală, imprimați 0
 
-## Exemplu
-| **Intrare** | **Ieșire** |
+## Exemple
+| **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
-| 5 2 13 | true | Trebuie să **adăugăm 5** elemente. Apoi scoatem **2** dintre ele. În final, trebuie să verificăm dacă 13 se găsește în stivă. Din moment ce se află în stivă, printăm **true**. |
+| 5 2 13 | true | Trebuie să **adăugăm 5** elemente. Apoi, extragem **2** elemente. În final, trebuie să verificăm dacă 13 se găsește în stivă. Din moment ce se află în stivă, imprimăm **true**. |
 | 1 13 45 32 4 |  |  |
 
-| **Intrare** | **Ieșire** |
+| **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
-| 4 1 666 | 13 | Scoatem un element (666) și apoi verificăm dacă 666 e prezent în stivă. Dacă nu e, printăm cel mai mic element (13) |
+| 4 1 666 | 13 | Scoatem un element (666) și apoi verificăm dacă 666 e prezent în stivă. Acesta nu se află în stivă, deci imprimăm cel mai mic element (13). |
 | 420 69 13 666 |  |  |
 
 [/task-description]
@@ -222,39 +222,39 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Cerință
-Aveți o secvență nulă și vi se vor da **N** comenzi.
+## Descriere
+Aveți o secvență goală și vi se vor da **N** comenzi.
 
-Fiecare comandă e de unul dintre tipurile următoare:
+Comenzile posibile sunt următoarele:
 
-- `1 X` - **Adăugăm** elementul **X** pe stivă
-- `2` - **Ștergem** elementul ce se găsește în vârful stivei
-- `3` - **Printăm** elementul din stivă
+- `1 X` - **Adăugați** elementul **X** pe stivă
+- `2` - **Ștergeți** elementul care se găsește în vârful stivei
+- `3` - **Imprimați** pe consolă cel mai mare element din stivă
 
-## Date de intrare
+## Intrare
 
-- Prima linie a datelor de intrare conține un număr întreg **N** , unde `1 ≤ N ≤ 10 ^ 5`
-- Următoarele **N** linii conțin comenzile. Toate comenzile vor fi valide și vor fi după formatul descris
+- Prima linie cu date de intrare conține un număr întreg **N** , unde `1 ≤ N ≤ 10 ^ 5`
+- Următoarele **N** linii conțin comenzi; toate comenzile vor fi valide și vor respecta formatul descris
 - Elementul **X** va fi în intervalul `1 ≤ X ≤ 10 ^ 9`
 - **Tipul comenzii** va fi în intervalul `1 ≤ Type ≤ 3`
 
-## Date de ieșire
+## Ieșire
 
-- Pentru fiecare comandă de `3`, **printăm elementul maxim** din stivă, pe o linie nouă.
+- Pentru fiecare comandă de tipul `3`, **imprimați pe o linie nouă cel mai mare element** din stivă
 
 ## Exemplu
 | **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
 | 9 | 26 | 9 comenzi |
-| 1 97 | 91 | Adaugă 97 |
-| 2 |  | Scoate un element |
-| 1 20 |  | Adaugă 20 |
-| 2 |  | Scoate un element |
-| 1 26 |  | Adaugă 26 |
-| 1 20 |  | Adaugă 20 |
-| 3 |  | Printează elementul maxim (26) |
-| 1 91 |  | Adaugă 91 |
-| 3 |  | Printează elementul maxim (91) |
+| 1 97 | 91 | Adăugați 97 |
+| 2 |  | Extrageți un element |
+| 1 20 |  | Adăugați 20 |
+| 2 |  | Extrageți un element |
+| 1 26 |  | Adăugați 26 |
+| 1 20 |  | Adăugați 20 |
+| 3 |  | Imprimați cel mai mare element (26) |
+| 1 91 |  | Adăugați 91 |
+| 3 |  | Imprimați cel mai mare element (91) |
 
 [/task-description]
 [code-io /]
@@ -464,16 +464,16 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Se dă un număr întreg **N**, reprezentând **numărul de elemente de adăugat în coadă**, un întreg **S** ce reprezintă **numărul de elemente de șters** din coadă și, în final, un număr întreg **X**, un element despre care trebuie să **verificați dacă se găsește în coadă**.
+Se dă un număr întreg **N**, reprezentând **numărul de elemente care trebuie adăugate în coadă**, un număr întreg **S** care reprezintă **numărul de elemente care trebuie șterse** din coadă și, în final, un număr întreg **X**. **Verificați dacă X se află sau nu în coadă**.
 
-Dacă e, se printează **true** în consolă, iar dacă nu e, **se printează cel mai mic element prezent în coadă la momentul respectiv**.
+Dacă se află în coadă, imprimați **true** pe consolă, iar dacă nu este prezent, **imprimați cel mai mic element prezent în coadă la momentul respectiv**.
 
 ## Exemplu
 | **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
 | 5 2 32 | true | Trebuie să adăugăm **5** elemente.  |
-| 1 13 45 32 4 |  | Apoi **scoatem 2** din ele.  |
-|  |  | În final, trebuie să verificăm dacă 13 se găsește în coadă. Din moment ce se găsește, printăm **true**.  |
+| 1 13 45 32 4 |  | Apoi, **scoatem 2** din ele.  |
+|  |  | La final, trebuie să verificăm dacă 13 se găsește în coadă. Din moment ce se găsește, imprimăm **true**.  |
 
 
 | **Intrare** | **Ieșire** |
@@ -574,29 +574,27 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Undeva în viitor, există o fabrică de robotică.
+Undeva în viitor, există o fabrică unde toți muncitorii din linia de ansamblare sunt roboți.
 
-Proiectul curent e linia de asamblare a roboților.
+Fiecare robot are un **timp de procesare**, care este timpul de care robotul are nevoie pentru a procesa un produs. 
 
-Fiecare robot are un **timp de procesare**, timpul de care are nevoie pentru a procesa un produs. 
+Când un **robot este liber**, el trebuie să **preia un produs pentru procesare** și să își logheze numele, produsul și timpul de începere al procesării.
 
-Când un **robot e liber**, trebuie să **preia un produs pentru procesare** și să logheze numele său, produsul și timpul de începere al procesării.
+Fiecare robot **procesează un produs venit pe linia de asamblare**. 
 
-Fiecare robot **procesează un produs venit din linia de asamblare**. 
+Câte un **produs vine** pe linie **o dată la fiecare secundă** (deci primul produs trebuie să apară la `[start time + 1 second]`). 
 
-Câte un **produs vine** din linie **o dată la fiecare secundă** (deci primul produs trebuie să apară la `[start time + 1 second]`). 
+Dacă un produs trece de linie și **nu există un robot liber** pentru a-l prelua, acesta trebuie să fie **pus din nou la coadă**.
 
-Dacă un produs trece de linie și **nu există un robot liber** pentru a-l prelua, ar trebui să fie **pus din nou la coada de la linie**.
-
-Roboții **stau în linie în ordinea apariției lor**.
+Roboții **stau în linia de ansamblare în ordinea introducerii lor**.
 
 ## Intrare
 
-- Pe prima linie, veți primi numele roboților și timpul lor de procesarer în formatul `numeRobot-timpDeProcesare;numeRobot-timpDeProcesare;numeRobot-timpDeProcesare`
-- Pe a doua linie, veți primi timpul de start, după formatul `hh:mm:ss`
-- Apoi, până la întâlnirea comenzii `End`, veți primi câte un produs pe linie.
+- Pe prima linie veți primi numele roboților și timpul lor de procesare în formatul `robotName-processTime;robotName-processTime;robotName-processTime`
+- Pe a doua linie veți primi ora de începere în formatul `hh:mm:ss`
+- Apoi, până la întâlnirea comenzii `End`, veți primi câte un produs pe fiecare linie
 
-## Exemplu
+## Exemple
 | **Intrare** | **Ieșire** |
 | --- | --- |
 | ROB-15;SS2-10;NX8000-3 | ROB - detail \[08:00:01\] |
@@ -609,7 +607,7 @@ Roboții **stau în linie în ordinea apariției lor**.
 
 [hints] 
 [hint]
-Măriți timpul total în timp ce linia de produse este plină:
+Cât timp linia de produse este plină, măriți timpul total:
 
 ```java
 while (!productLine.isEmpty()) {
@@ -625,7 +623,7 @@ while (!productLine.isEmpty()) {
 ```
 [/hint] 
 [hint]
-Obțineți produsul curent utilizând metoda `.poll()`:
+Obțineți produsul curent cu ajutorul metodei `.poll()`:
 
 ```java
 String currentProduct = productLine.poll();
@@ -1344,27 +1342,27 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-**Se dă o secvență ce constă în paranteze**. Determinați dacă **expresia e echilibrată**.
+**Se dă o secvență care constă într-un număr de paranteze**. Determinați dacă **expresia e echilibrată**.
 
-O secvență de paranteze **e echilibrată dacă** fiecare paranteză deschisă poate fi asociată în mod unic cu o paranteză de închidere care apare după cealaltă.
+O secvență de paranteze **este echilibrată dacă** fiecare paranteză deschisă poate fi asociată în mod unic cu o paranteză de închidere.
 
 De asemenea, **intervalul dintre ele trebuie să fie și el echilibrat**.
 
-Vi se vor da 3 tipuri de paranteze:  `(`,  `{`, și `[`.
+Vi se vor da 3 tipuri de paranteze: `(`, `{`, și `[`.
 
-`{[()]}` - Acestea sunt paranteze echilibrate.
+`{[()]}` - Acesta este un exemplu de secvență echilibrată.
 
-`{[(])}` - Acestea nu sunt paranteze echilibrate.
+`{[(])}` - Acesta este un exemplu de secvență neechilibrată.
 
 ## Intrare
 
-- Fiecare dată de intrare constă într-o singură linie, secvența de paranteze.
+- Fiecare intrare constă într-o singură linie, reprezentată de secvența de paranteze
 - `1 ≤ Lungimea secvenței ≤ 1000`
-- Fiecare caracter al secvenței va fi unul dintre următoarele:  `{`, `}`, `(`, `)`, `[`, `]`.
+- Fiecare caracter al secvenței va fi unul dintre următoarele: `{`, `}`, `(`, `)`, `[`, `]`
 
 ## Ieșire
 
-- Pentru fiecare test pe cazuri, printați pe o linie nouă **"YES"** dacă parantezele sunt echilibrate. Altfel, printați **"NO"**.
+- Pentru fiecare caz, tipăriți pe o linie nouă **"YES"**, dacă secvența este echilibrată; în caz contrar, tipăriți **"NO"**
 
 
 
@@ -1471,22 +1469,22 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Fiecare membru al **șirului lui Fibonacci** e calculat din **suma a doi membri precedenți**.
+Fiecare element al **șirului lui Fibonacci** este calculat prin **însumarea celor două elemente precedente**.
 
 Primele 2 elemente sunt 1, 1.
 
 Astfel, secvența va fi 1, 1, 2, 3, 5, 8, 13, 21, 34…
 
-Următoarea secvența poate fi generată cu un vector, dar asta e ușor, deci **cerința voastră e să implementați asta în mod recursiv**.
+Secvența poate fi generată cu o matrice, dar această soluție este simplă, motiv pentru care **cerința voastră este să implementați secvența în mod recursiv**.
 
-Dacă funcția `getFibonacci(n)` returnează al n-lea număr din șirul lui Fibonacci, putem exprima asta utilizând
-`getFibonacci(n) = getFibonacci(n-1) + getFibonacci(n-2)`.
+Dacă funcția `getFibonacci(n)` returnează al n-lea număr din șirul lui Fibonacci, putem exprima asta cu ajutorul expresiei umrătoare:
+`getFibonacci(n) = getFibonacci(n-1) + getFibonacci(n-2)`
 
-Totuși, asta nu se va termina în câteva secunde, ci se va genera o excepție de supraîncărcare a stivei. 
+Totuși, recursivitatea acestei funcții nu are o finalitate, lucru care va genera o excepție de supraîncărcare a stivei (StackOverflowException). 
 
-Ca să se oprească recursivitatea, trebuie să aibă un caz de oprire.
+Pentru a opri recursivitatea, aceasta trebuie să aibă un caz de oprire.
 
-Cazul de oprire al recursivității este `getFibonacci(1)` și trebuie să returneze 1. Se întâmplă la fel pentru getFibonacci(0).
+Cazul de oprire a recursivității este `getFibonacci(1)`, care trebuie să returneze 1. Același lucru este valabil pentru `getFibonacci(0)`.
 
 ## Intrare
 
@@ -1494,14 +1492,14 @@ Cazul de oprire al recursivității este `getFibonacci(1)` și trebuie să retur
 
 ## Ieșire
 
-- Datele de ieșire trebuie să fie al n-lea număr din șirul lui Fibonacci, începând de la 0
+- Datele de ieșire constă în al N-lea număr din șirul lui Fibonacci, începând de la 0
 
 [hints]
 [hint]
-Pentru al n-lea număr din șirul lui Fibonacci, calculăm al `N - 1st` și al `N - 2nd` număr, dar pentru calculul elementului al `N - 1st`, calculăm al `N - 1 - 1st(N - 2nd)` și `N - 1 - 2nd`, deci ave multe calcule repetate.
+Pentru a genera al N-lea număr din șirul lui Fibonacci, calculăm numerele precedente `N - 1` și `N - 2`, dar pentru calculul elementului `N - 1` trebuie să calculăm numerele `N - 2` și `N - 3`, deci trebuie să repetăm multe calcule.
 [/hint] 
 [hint]
-Dacă doriți să vă dați seama cum puteți trece peste toate aceste calcule care nu sunt necesare, puteți căuta o tehnică numită [memoization](https://en.wikipedia.org/wiki/Memoization).
+Dacă doriți să aflați cum puteți omite toate aceste calcule care nu sunt necesare, puteți căuta o tehnică numită [memoization](https://en.wikipedia.org/wiki/Memoization).
 [/hint] 
 [/hints] 
 
@@ -1625,39 +1623,39 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Vi se dă text gol.
+Aveți sarcina de a crea un editor simplu de text.
 
-Cerința voastră e să implementați **4 tipuri de comenzi** legate de manipularea textului:
+Cerința voastră e să implementați **4 tipuri de comenzi** pentru manipularea textului:
 
-- 1 \[string\] - **lipește** \[string\] la finalul textului
-- 2 \[count\] - **șterge** ultimele \[count\] elemente din text
-- 3 \[index\] - **returnează** elementul de la poziția \[index\] din text
-- 4 - **anulează** ultima comandă neanulată de tip 1 sau 2 și returnează textul la starea dinaintea acelei operații
+- 1 \[string\] - **lipește** un șir dat la finalul textului
+- 2 \[count\] - **șterge** ultimele **\[count\]** elemente din text
+- 3 \[index\] - **returnează** elementul de pe poziția **\[index\]** din text
+- 4 - **anulează** ultima comandă de tip 1 sau 2 și returnează textul la starea dinaintea acelei operații
 
 ### Intrare
 
 - Prima linie conține **N** , numărul de operații, unde `1 ≤ N ≤ 105`
-- Fiecare din următoarele **N** linii conține numele operației, urmat de argumentul comenzii, dacă acesta există, separate de un spațiu, după formatul următor: `comandă argument`.
-- **Lungimea textului** nu va depăși **1000000**
-- Toate caracterele date drept date de intrare sunt **caractere engleze**
-- E **garantat** că avem secvența de **operații de intrare posibile de realizat**
+- Fiecare dintre următoarele **N** linii conține numele operației, urmat de argumentul comenzii, dacă acesta există, separate de un spațiu în formatul următor: `comandă argument`
+- **Lungimea textului** nu va depăși **1000000** de caractere
+- Toate caracterele date sunt **litere din alfabetul limbii engleze**
+- Este **garantat** că secvența de **operații date poate fi realizată**
 
 ### Ieșire
 
-- Pentru fiecare operație de tip `3`, printați o **singură linie cu caracterul returnat din acea operație**.
+- Pentru fiecare operație de tip `3`, tipăriți o **singură linie care conține caracterul returnat de acea operație**
 
 ## Exemplu
 | **Intrare** | **Ieșire** | **Comentarii** |
 | --- | --- | --- |
-| 8 | c | Există 8 operații. Inițial, textul e gol.  |
-| 1 abc | y | Lipim "abc" |
-| 3 3 | a | Printăm al treilea caracter |
+| 8 |  | Există 8 operații. Inițial, textul este gol  |
+| 1 abc |  | Adăugăm "abc" |
+| 3 3 | c | Imprimăm al treilea caracter |
 | 2 3 |  | Ștergem 3 caractere |
-| 1 xy |  | Lipim "xy" |
-| 3 2 |  | Printăm al doilea caracter |
-| 4 |  | Anulăm ultima comandă - textul devine acum "" |
+| 1 xy |  | Adăugăm "xy" |
+| 3 2 | y | Imprimăm al doilea caracter |
+| 4 |  | Anulăm ultima comandă - textul devine "" |
 | 4 |  | Anulăm ultima comandă - textul devine "abc" |
-| 3 1 |  | Printăm primul caracter |
+| 3 1 | a | Imprimăm primul caracter |
 
 [/task-description]
 [code-io /]
@@ -1901,26 +1899,26 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Expresiile matematice sunt **scrise în notația infix** , de exemplu `5 / ( 3 + 2 )`.
+Expresiile matematice sunt **scrise în notația infix**, de exemplu `5 / ( 3 + 2 )`.
 
-Totuși, acest tip de notație **nu e eficientă pentru procesarea computerelor** , deoarece mai întâi trebuie să evaluăm expresia din interiorul parantezelor, deci nu există multe mișcări în față sau în spate.
+Totuși, acest tip de notație **nu este eficientă pentru procesarea efectuată de computere**, deoarece mai întâi trebuie să evaluăm expresia din interiorul parantezelor, deci există multe mutări înainte-înapoi.
 
-O metodă mai potrivită e **convertirea în așa-numita notație postfix** (numită și [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)), în care **expresia e evaluată de la stânga la dreapta** , de exemplu `3 2 + 5 /`.
+O metodă mai potrivită este **convertirea în notația postfix** (numită și [Reverse Polish Notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation)), în care **expresia este evaluată de la stânga la dreapta** , de exemplu `3 2 + 5 /`.
 
-Implementați un **algoritm care convertește** expresia matematică **din notația infix în notația postfix**. Utilizați faimosul [algoritm Shunting-yard](https://en.wikipedia.org/wiki/Shunting-yard_algorithm).
+Implementați un **algoritm care convertește** o expresie matematică **din notația infix în notația postfix**. Utilizați faimosul [algoritm Shunting-yard](https://en.wikipedia.org/wiki/Shunting-yard_algorithm).
 
 ## Intrare
 
-- Veți **primi o expresie pe o singură linie, constând în delimitatoare**
-- Delimitatoarele pot fi numere de la 0 la 9, variabile de la a la z, operatorii `+, -, *, /,` și parantezele ( sau )
-- Fiecare delimitator e **separat prin exact un spațiu**
+- Veți **primi o expresie matematică pe o singură linie**
+- Caracterele pot fi numere de la 0 la 9, variabile de la a la z, operatorii `+, -, *, /` și parantezele `(` sau `)`
+- Fiecare caracter este **separat printr-un singur spațiu**
 
 ## Ieșire
 
-- **Datele de ieșire trebuie să fie pe o singură linie**, constând în **delimitatoare**, **separate prin exact un spațiu**.
+- **Datele de ieșire trebuie să fie afișate pe o singură linie**, constând în **caractere** **separate printr-un singur spațiu**
 
 ## Exemple
-| **Iintrare** | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | `5 / ( 3 + 2 )` | `5 3 2 + /` |
 | `1 + 2 + 3` | `1 2 + 3 +` |
@@ -2023,25 +2021,25 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Descriere
-Vi se dau **N**  plante dintr-o grădină.
+Vi se dau **N** plante dintr-o grădină.
 
-Fiecare din aceste plante au un anumit nivelde pesticid.
+O anumită cantitate de pesticid a fost aplicată fiecărei plante.
 
-După fiecare zi, dacă o plantă are **mai mult pesticid** decât planta din **stânga ei**, fiind mai slabă (mai mult GMO) decât în cea din stânga, **deci moare**.
+În fiecare zi, dacă o plantă are **mai mult pesticid** decât planta din **stânga ei**, aceasta este considerată ca fiind mai vulnerabilă decât cea din stânga și **va muri**.
 
 Vi se dau valorile inițiale de pesticid și poziția fiecărei plante.
 
-Printați numărul de zile **după** care nu moare nicio plantă, i.e. timpul după care nu mai sunt plante cu mai mult pesticid decât planta din stânga lor.
+Imprimați numărul de zile **după** care nu mai moare nicio plantă. Acesta este numărul de zile după care nu mai există plante cu mai mult pesticid decât planta din stânga lor.
 
 ### Intrare
 
-- Datele de intrare constau într-un număr întreg  **N**, care reprezintă numărul de plante.
-- Următoarea **linie unică** constă în **N** numere întregi, unde fiecare întreg reprezintă poziția și cantitatea de pesticid al fiecărei plante. `1 ≤ N ≤ 100000`
-- Cantitatea de pesticid dintr-o plantă e între 0 și 1000000000
+- Datele de intrare constau într-un număr întreg **N**, care reprezintă numărul de plante
+- Următoarea **linie unică** constă în **N** numere întregi, unde fiecare număr întreg reprezintă poziția și cantitatea de pesticid aplicată fiecărei plante - `1 ≤ N ≤ 100000`
+- Cantitatea de pesticid pentru o plantă se află în intervalul 0-1000000000
 
 ### Ieșire
 
-- Datele de ieșire constau într-o valoarea unică egală cu numărul de zile după care nu mai moare nicio plantă.
+- Datele de ieșire constau într-o valoarea unică, egală cu numărul de zile după care nu mai moare nicio plantă
 
 
 ## Exemplu
@@ -2049,17 +2047,17 @@ Printați numărul de zile **după** care nu moare nicio plantă, i.e. timpul du
 | --- | --- | --- |
 | 7 | 2 | Inițial, toate plantele sunt vii.  |
 | 6 5 8 4 7 10 9 |  | `Plants = {(6, 1), (5, 2), (8, 3), (4, 4), (7, 5), (10, 6), (9, 7)}`  |
-|  |  | `Plantă[k] = (i, j)` \=\> a j-a plantă are cantitatea de pesticid \= i.  |
-|  |  | După prima zi, 4 plante rămân ca plante. 3, 5, și 6 mor.  |
-|  |  | `Plantele = {(6, 1), (5, 2), (4, 4), (9, 7)}`  |
-|  |  | După a doua zi, 3 plante supraviețuiesc, în timp ce planta 7 moare. `Plantele = {(6, 1), (5, 2), (4, 4)}`  |
-|  |  | După a treia zi, 3 plante supraviețuiesc și nu mai moare nicio plantă.  |
-|  |  | `Plantele = {(6, 1), (5, 2), (4, 4)}`  |
+|  |  | `Plants[k] = (i, j)` \=\> planta de pe poziția `j` are cantitatea de pesticid `i`  |
+|  |  | După prima zi, 4 plante rămân vii. Plantele de pe pozițiile 3, 5, și 6 mor.  |
+|  |  | `Plants = {(6, 1), (5, 2), (4, 4), (9, 7)}`  |
+|  |  | După a doua zi supraviețuiesc 3 plante, în timp ce planta de pe poziția 7 moare. `Plants = {(6, 1), (5, 2), (4, 4)}`  |
+|  |  | După a treia zi supraviețuiesc toate plantele rămase.  |
+|  |  | `Plants = {(6, 1), (5, 2), (4, 4)}`  |
 |  |  | După a doua zi, plantele se opresc din murit.  |
 
 [hints]
 [hint]
-Creați o matrice `plants`, un `ArrayDeque` de indici și `int [] days`:
+Creați o matrice `plants`, un `ArrayDeque` cu indici și `int[] days`:
 
 ```java
 Scanner reader = new Scanner(System.in);
@@ -2076,7 +2074,7 @@ int[] days = new int[n];
 ```
 [/hint] 
 [hint]
-Creați un **buclă-for** de la **1** la **n**:
+Creați o **buclă-for** de la **1** la **n**:
 
 ```java
 for (int i = 1; i < n; i++) {

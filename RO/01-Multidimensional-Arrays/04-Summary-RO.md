@@ -3,10 +3,10 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/03-Multidimentional-Arrays/RO/interactive-java-advanced-multidimensional-arrays-22-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## În această lecție ai învățat:
+## În această lecție ați învățat:
 
-- Ce este o Matrice Multidimensională?
-     - matricele pot avea mai multe dimensiuni, de ex. matrice
+- Ce este o Matrice Multidimensională
+     - matricele pot avea mai multe dimensiuni
 
 ```java
 int[][] intMatrix = new int[3][];
@@ -23,13 +23,13 @@ int[][] matrix = {
 ```
 
 - Manipularea unei Matrice
-    - accesarea elementelor din `Matrice 2D`
+    - Accesarea Elementelor unei `Matrice 2D`
     ```java
     int [][] array = new int [5][5];
     array[0][0]  // the first element of the matrix
     ```
 
-    - obținerea valorii elementului
+    - Obținerea Valorii unui Element
     ```java live
     int[][] matrix = {
       {1, 2, 3, 4}, 
@@ -40,7 +40,7 @@ int[][] matrix = {
     System.out.println(element);
     ```
 
-    - setarea valorii elementului
+    - Setarea Valorii unui Element
     ```java 
     int[][] matrix = {
          {1, 2, 3, 4}, // row 0 values
@@ -56,7 +56,7 @@ int[][] matrix = {
     
 - Citirea și Tipărirea unei Matrice
 
-## În lecția următoare, veți învăța: 
+## În lecția următoare veți învăța: 
 
 - Sets:
     - HashSet\<E\>

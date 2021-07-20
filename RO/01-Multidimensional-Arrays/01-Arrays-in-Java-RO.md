@@ -8,15 +8,15 @@
 
 O matrice este o **secvență de elemente** care deține un **număr fix de valori de un singur tip**.
 
-**Lungimea** unui tablou **este stabilită atunci când tabloul este creat**.
+**Lungimea** unei matrice **este stabilită atunci când matricea este creată**.
 
-Fiecare **element** dintr-o matrice se numește **element** și **fiecare element este accesat** prin **indexul său numeric**.
+Fiecare **unitate** dintr-o matrice se numește **element**, iar **fiecare element este accesat** prin **indicele său numeric**.
 
-Următoarea ilustrație explică o **matrice întreagă cu 5 elemente**:
+Următoarea imagine ilustrează o **matrice cu 5 elemente reprezentate de numere întregi**:
 
 [image assetsSrc="Java-Advanced-Multidimensional-Arrays-2.png" /]
 
-După cum se arată în ilustrația de mai sus, **numerotarea elementelor începe cu 0**, prin urmare, **primul element** poate fi accesat la **index 0** și **ultimul la index 4**.
+După cum este exemplificat în ilustrația de mai sus, **numerotarea elementelor începe cu 0**. **Primul element** poate fi accesat cu **indicele 0** și **ultimul cu indicele 4**.
 
 [/slide]
 
@@ -37,15 +37,15 @@ for (int i = 0; i < numbers.length; i++) {
 }
 ```
 
-În exemplul de mai sus inițializăm o matrice goală de numere întregi cu lungimea 5:
+În exemplul de mai sus inițializăm o matrice goală de numere întregi, cu lungimea 5:
 
 - `int[]`: pentru a inițializa o matrice, trebuie să selectăm un tip de date
 - `numbers`: este numele variabilei
-- `new int[5]`: creează o nouă instanță a unei matrici, care va conține 5 numere întregi
+- `new int[5]`: creează o nouă instanță a unei matrice, care va conține 5 numere întregi
 
 Când parcurgem matricea, vor fi tipărite zerouri deoarece valoarea implicită a unui număr întreg este zero.
 
-Valorile elementelor matricei vor fi atribuite în următorul fel:
+Valorile elementelor matricei vor fi atribuite în următorul mod:
 
 ```java live
 int[] numbers = new int[5];
@@ -58,7 +58,7 @@ for (int i = 0; i < numbers.length; i++) {
 
 Folosind o **buclă-for**, parcurgem lungimea matricii și atribuim o valoare fiecărui element, iar apoi tipărim elementul curent.
 
-- Accesarea elementelor matrice:
+Accesarea elementelor matricei:
   
 ``` java live
 int[] numbers = {25, 45, 65};

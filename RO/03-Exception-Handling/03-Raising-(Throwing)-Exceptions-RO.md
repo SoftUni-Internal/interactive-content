@@ -1,20 +1,20 @@
-# "throwing" Exceptions
+# "Aruncarea" Excepțiilor
 
 [slide hideTitle]
 
-# How to "throw" an Exception
+# Cum se "Aruncă" o Excepție
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-18-22-throwing-exceptions-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Excepțiile sunt aruncate (ridicate) de cuvântul cheie **throw**.
+Excepțiile sunt aruncate cu ajutorul cuvântului-cheie **throw**.
 
-Acestea sunt folosite pentru a notifica codul de apel în caz de eroare sau situație neobișnuită.
+Acestea sunt folosite pentru a notifica persoana responsabilă pentru cod în cazul în care apare o eroare sau o situație neprevăzută.
 
-**Când se aruncă o excepție:**
+**Când o excepție este "aruncată":**
 - Execuția programului se oprește
-- Excepția se deplasează peste stivă până când se ajunge la un bloc de potrivire corespunzător pentru a-l manipula
+- Excepția se deplasează peste stivă până când ajunge la un bloc **catch** potrivit pentru a o trata
    
-Excepțiile nesoluționate afișează un mesaj de eroare.
+Excepțiile nesoluționate afișează un mesaj de eroare, iar execuția programului se oprește.
 
 [/slide]
 
@@ -29,7 +29,7 @@ Excepțiile nesoluționate afișează un mesaj de eroare.
 ```java
 throw new IllegalArgumentException("Invalid amount!");
 ```
-- Excepțiile pot accepta mesajul și pot provoca:
+- Excepțiile pot să conțină un mesaj și o cauză:
 
 ```java
 try {
@@ -39,17 +39,15 @@ try {
 }
 ```
 
-**Notă:** dacă excepția inițială nu este trecută, cauza inițială a excepției se pierde.
-
 [/slide]
 
 [slide hideTitle]
 
-# Relansarea Excepțiilor
+# Re-Aruncarea Excepțiilor
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/Java-Advanced-Exceptions-and-Error-Handling-21-re-throwing-exceptions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- Excepțiile prinse pot fi reluate din nou:
+- Excepțiile găsite pot fi aruncate din nou:
 
 ```java
 try {
@@ -87,27 +85,27 @@ public static void main(String[] args) {
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/05-Exception-Handling/RO/interactive-java-advanced-exceptions-and-error-handling-problem-valid-person-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Definiți o clasă simplă **Person**, care are următoarele câmpuri:
+Definiți o clasă simplă **Person** care are următoarele câmpuri:
 
-  - First name
-  - Last name
-  - Age
+  - first name
+  - last name
+  - age
 
 **Validați** datele din **setters**. 
 
-**Aruncați excepțiile** adecvate în cazul în care sunt introduse date nevalide.
+**Aruncați excepțiile** adecvate în cazul în care datele introduse nu sunt valide.
 
-- **Pasul 1. Creați o clasă Person**
+- **Pasul 1. Creați o Clasă Person**
 
-Clasa ar trebui să conțină următoarele câmpuri:
+Clasa trebuie să conțină următoarele câmpuri:
 
-- First name (string) 
+- first name (String) 
 
-- Last name (string) 
+- last name (String) 
 
-- Age (int)
+- age (int)
 
-Toate câmpurile sunt **obligatorii**, ceea ce înseamnă că ar trebui să aveți un constructor care să le accepte pe toți trei ca **parametri**. 
+Toate câmpurile sunt **obligatorii**, ceea ce înseamnă că ar trebui să aveți un constructor care să le accepte pe toate trei ca **parametri**. 
 
 De exemplu:
 
@@ -129,19 +127,19 @@ public class Person {
 
 Adăugați **getters și setters** pentru fiecare dintre câmpuri.
 
-Efectuați validări în **setters** pentru a menține o corectă starea a obiectelor **Person**.
+Efectuați validări în **setters** pentru a menține starea obiectelor **Person**.
 
-**Numele** și **prenumele** nu pot fi șiruri **null** sau **empty string**.
+**Numele** și **prenumele** nu pot fi șiruri **null** sau **goale**.
 
 Pentru a verifica acest lucru, utilizați metoda `string.IsNullOrEmpty()`.
 
-**Vârsta** trebuie să fie în intervalul [0 … 120].
+**Vârsta** trebuie să fie în intervalul \[0 … 120\].
 
-Dacă sunt introduse date nevalide, **aruncați** excepții corespunzătoare cu **mesaje descriptive**.
+Dacă datele introduse nu sunt valide, **aruncați** excepțiile corespunzătoare, cu **mesaje sugestive**.
 
-De exemplu, dacă este introdus un nume gol, o excepție adecvată poate fi **IllegalArgumentException**.
+De exemplu, dacă **numele** este un **șir gol**, o excepție adecvată poate fi **IllegalArgumentException**.
 
-Exemplu de validare a **prenumelui** (numele de familie este analog):
+Exemplu de validare a **prenumelui**:
 
 ```java
 private void setFirstName(String firstName) {
@@ -152,7 +150,7 @@ private void setFirstName(String firstName) {
     this.firstName = firstName;
 }
 ```
-Example for validating the **age**:
+Exemplu de validare a **vârstei**:
 
 ```java
 private void setAge(int age) {
@@ -164,7 +162,7 @@ private void setAge(int age) {
 }
 ```
 
-Acum constructorul ar trebui să facă uz de setters în loc să modifice direct câmpurile private:
+Acum constructorul ar trebui să folosească setters în loc să modifice direct câmpurile private:
 
 ```java
 public Person(String firstName, String lastName, int age) {
@@ -176,13 +174,15 @@ public Person(String firstName, String lastName, int age) {
 
 - **Pasul 3. Testați Clasa Person**
 
-În programul principal, testați dacă clasa dvs. se comportă corect.
+În clasa **Main**, testați dacă clasa voastră se comportă corect.
 
-Creați mai multe obiecte de tip Person - unul cu **date valabile**, unul cu un **prenume gol**, una cu **null ca nume de familie**, una cu **vârstă negativă** și una cu **age > 120**.
+Creați mai multe obiecte de tip **Person** - unul cu **date valabile**, unul cu un **șir gol pentru prenume**, unul cu **un șir null pentru numele de familie**, unul cu **vârstă negativă** și unul cu **vârsta > 120**.
 
-Verificați dacă executarea codului are ca rezultat erori, atunci când sunt furnizate date necorespunzătoare.
+Verificați dacă executarea codului are ca rezultat erori atunci când sunt furnizate date necorespunzătoare.
 
-Testați unul câte unul cazurile nevalide comentând celelalte linii de cod nevalide (programul dvs. se va opri din executare când se întâlnește prima eroare).
+Testați unul câte unul cazurile nevalide și comentați celelalte linii de cod nevalide.
+
+Notă: Execuția programului se va opri la întâlnirea primei erori.
 
 ```java
 public static void main(String[] args) {
@@ -195,13 +195,11 @@ public static void main(String[] args) {
 }
 ```
 
-- **Pasul 4. Adăugați blocuri try-catch**
+- **Pasul 4. Adăugați Blocuri Try-Catch**
 
-Pentru a preveni explozia programului, înconjurați liniile nevalide în **try-catch** blocurile.
+Pentru a preveni oprirea programului, încadrați liniile nevalide în blocuri **try-catch**.
 
-Este o practică bună să puneți blocuri diferite pentru diferitele tipuri de erori pe care anticipați că ar putea să le arunce operațiunea.
-
-Imprimați **mesajul** al excepției în blocul de capture.
+Este o practică bună să puneți blocuri **try-catch** diferite pentru diferitele tipuri de erori pe care le anticipați.
 
 Exemplu:
 

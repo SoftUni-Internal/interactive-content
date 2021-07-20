@@ -18,9 +18,9 @@ public class Main {
 [task-description]
 ## Descriere
 
-Sarcina voastră este să obțineți un item legendar, ceea ce necesită să colectați materiale.
+Sarcina voastră este să obțineți un obiect legendar, lucru care necesită colectarea materialelor necesare.
 
-**Variantele posibile**  sunt:
+**Variantele posibile** sunt:
 
 - **Shadowmourne** - necesită 250 **Shards**
 
@@ -28,38 +28,38 @@ Sarcina voastră este să obțineți un item legendar, ceea ce necesită să col
 
 - **Dragonwrath** - necesită 250 **Motes**
 
-**Shards, Fragments și Motes** sunt **materiale-cheie**, orice alt material este gunoi.
+**Shards, Fragments și Motes** sunt **materiale cheie**, iar orice alt material nu este util.
 
-Țineți socoteala materialelor-cheie,  **primul** care **ajunge la 250**  câștigă cursa. 
+Țineți socoteala materialelor cheie - **primul** care **ajunge la 250** câștigă cursa. 
 
-În această etapă, **imprimați** **articolele legenedare corespunzătoare** obținute. 
+În această etapă, **imprimați** **obiectul legendar corespunzător** pe care l-ați obținut. 
 
-Apoi, **imprimați** celelalte ** shards, fragments, motes**, **ordonate după cantitate în ordine descendentă**, apoi după **nume în ordine ascendentă**,  **fiecare** pe o **nouă linie**. 
+Apoi, **imprimați** celelalte materiale-cheie rămase, **ordonate descrescător în funcție de cantitate**, fiecare pe o linie nouă.
 
-În final, **imprimați** dacă ați colectat **junk items**, in ordine **alfabetică**.
+La final, **imprimați** materialele care nu sunt utile, în ordine **alfabetică**.
 
 
 ## Intrare
-Fiecare linie de input este in format "\{**quantity**\} \{**material**\} \{**quantity**\} \{**material**\} … \{**quantity**\} \{**material**\}"
+Fiecare linie cu date de intrare este respectă următorul format: "\{**quantity**\} \{**material**\} \{**quantity**\} \{**material**\} … \{**quantity**\} \{**material**\}".
 
 ## Ieșire
 
-- Pe **prima linie**, imprimați articolele obținute  în format "\{**Legendary item**\} **obtained!**"
+- Pe **prima linie**, imprimați obiectul obținut în formatul: "\{**Legendary item**\} **obtained!**"
 
-- Pe următoarele **trei linii**, imprimați **remaining key materials** în ordine **descendentă**, după **cantitate**
+- Pe următoarele **trei linii**, imprimați **materialele cheie rămase** în ordine descrescătoare, în funcție de **cantitate**
 
-    - dacă **două matreiale-cheie** au **aceeași cantitate**, imprimați-le in ordine **alfabetică**
+    - dacă **două materiale-cheie** au **aceeași cantitate**, imprimați-le in ordine **alfabetică**
 
-- Pe **linnile finale**, imprimați **articolele junck** în ordine
+- Pe **liniile finale**, imprimați **materialele nefolositoare** în ordine alfabetică
 
-    - toate materialele sunt imprimate in format: "\{**material**\}: \{**quantity**\}"
+- Toate materialele sunt imprimate în formatul: "\{**material**\}: \{**quantity**\}"
 
-    - toate datele de ieșire trebuie să fie **cu minuscule**, cu excepția  **primei** litere ale legendary
+- Toate datele de ieșire trebuie să fie scrise cu **minuscule**, cu excepția **primei** litere a obiectului legendar
 
 
-## Exemplu 1
+## Exemplul 1
 
-| **Intrare* | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 3 Motes 5 stones 5 Shards | Valanyr obtained! | 
 | 6 leathers 255 fragments 7 Shards | fragments: 5 |
@@ -70,19 +70,19 @@ Fiecare linie de input este in format "\{**quantity**\} \{**material**\} \{**qua
 
 [hints]
 [hint]
-Stocați cheia și resturile de materiale în două structuri de date diferite. 
+Stocați materialele cheie și materialele nefolositoare în două structuri de date diferite. 
 [/hint] 
 [hint]
-Citiți liniile de date de intrare până se obține obiectul.
+Citiți liniile cu date de intrare până la obținerea obiectului.
 [/hint] 
 [hint]
-Împărțiți delimitatorii pentru fiecare linie cu date de intrare și iterați prin aceștia. 
+Împărțiți elementele fiecărei linii cu date de intrare și iterați prin ele. 
 [/hint] 
 [/hints] 
 
-## Exemplu 2
+## Exemplul 2
 
-| **Intrare* | **Ieșire** |
+| **Intrare** | **Ieșire** |
 | --- | --- |
 | 123 silver 6 shards 8 shards 5 motes | Dragonwrath obtained! | 
 | 9 fangs 75 motes 103 MOTES 8 Shards | shards: 22 |

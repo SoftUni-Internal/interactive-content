@@ -1,29 +1,29 @@
-# Clasa de Fișiere
+# Clasa File
 
 [slide hideTitle]
-# Clasa de Fișiere în Java
+# File
 
 [video src="https://videos.softuni.org/hls/Java/Java-Advanced/07-Streams-Files-and-Directories/RO/interactive-java-advanced-streams-files-and-directories-34-35-File-Class-In-Java-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Clasa de fișiere în Java reprezintă fișierele și numele de cale ale directorului într-un mod abstract.
+Clasa File reprezintă numele căilor fișierelor și directoarelor într-un mod abstract.
 
 Această clasă este utilizată pentru crearea fișierelor și directoarelor, căutarea fișierelor, ștergerea fișierelor etc.
 
-Obiectul a fișierului reprezintă  fișierul/directorul real de pe disc.
+Obiectul File reprezintă fișierul/directorul propiu-zis de pe disc.
 
-Crearea unui obiect a Fișierului, prin plasarea reprezentării String a locației fișierului în constructor:
+Crearea unui obiect File, prin plasarea reprezentării String a locației fișierului în constructor:
 
 ```java
 File file = new File("D:\\input.txt");
 ```
-Unele dintre metodele **utile** din clasa **Fișier** sunt:
+Mai jos sunt enumerate câteva metode **utile** ale clasei **File**:
 
 | **Metoda** | **Descriere** |
 | --- | --- |
-| `exists()` | Testează dacă fișierul sau directorul indicat de această cale abstractă există. Returnează true if și only if fișierul sau directorul indicat de această cale abstractă există; altfel false. |
-| `length()` |Returnează lungimea fișierului indicat de acestă cale abstractă. Valoarea returnată nu este specificată dacă această cale este indicata  de un director. |
-| `isDirectory()` | Testează dacă fișierul indicat de această cale abstractă este un director. Returnează true if și only if daca fișierul indicat cu acestă cale abstractă există și este un director; altfel false.|
-| `listFiles()` | Returnează un matrice de nume de căi abstracte care indică fișierele din directorul indicat de această cale abstractă. |
+| `exists()` | Testează dacă fișierul sau directorul indicat de această cale abstractă există. Returnează true dacă și numai dacă fișierul sau directorul indicat de această cale abstractă există; altfel va returna false. |
+| `length()` |Returnează lungimea fișierului indicat de această cale abstractă. Valoarea returnată nu este specificată dacă această cale indică un director. |
+| `isDirectory()` | Testează dacă fișierul indicat de această cale abstractă este un director. Returnează true dacă și numai dacă fișierul indicat de acestă cale abstractă există și este un director; altfel va returna false.|
+| `listFiles()` | Returnează o matrice de căi abstracte care indică fișierele din directorul indicat de această cale abstractă. |
 
 [/slide]
 
@@ -40,13 +40,13 @@ Unele dintre metodele **utile** din clasa **Fișier** sunt:
 [task-description]
 ## Descriere
 
-Aveți un fișier numit "**Files-and-Streams**".
+Aveți un folder numit "**Files-and-Streams**" în fișierul zip pe care l-ați descărcat anterior.
 
-Creați un program care listează numele și dimensiunile fișierelor (**în octeți**) ale tuturor fișierelor care sunt plasate direct în el (**nu includeți fișierele în folderele imbricate**).
+Creați un program care listează numele și dimensiunile (**în octeți**) tuturor fișierelor care sunt plasate direct în acest folder (**nu includeți fișierele din folderele imbricate**).
 
 ## Instrucțiuni
 
-Pentru fiecare exercițiu trimiteți doar **rezultatul** a programului dvs., **nu codul**.
+Pentru fiecare exercițiu trimiteți doar **rezultatul** programului vostru, **nu codul**.
 
 
 ## Exemplu
@@ -107,9 +107,9 @@ output.txt: [14328]
 [/code-editor]
 [task-description]
 ## Descriere
-Aveți un fișier numit "**Files-and-Streams**".
+Aveți un folder numit "**Files-and-Streams**" în fișierul zip pe care l-ați descărcat anterior.
 
-Creați un program care care listează numele tuturor directoarelor din acesta (**inclusiv toate directoarele imbricate**).
+Creați un program care care listează numele tuturor directoarelor din acest folder (**inclusiv toate directoarele imbricate**).
 
 Pe ultima linie, imprimați numărul tuturor fișierelor, inclusiv fișierul rădăcină.
 

@@ -5,9 +5,9 @@
 
 ## În această lecție ați învățat:
 
-- Fluxurile/stream-urile sunt utilizate pentru transferarea datelor
+- Fluxurile sunt utilizate pentru citirea, scrierea și transferarea datelor
 
-- Două tipuri principale de fluxuri
+- Există două tipuri principale de fluxuri:
 
 
      - Fluxuri de intrare
@@ -45,8 +45,8 @@
      ```
 
 
-- Fluxurile de bufere sprijina performanța
-- Fluxurile pot fi legate între ele
+- Fluxurile cu buffer îmbunătățesc performanța
+- Fluxurile pot fi legate între ele prin transmiterea instanței unui flux altui flux:
 
 
     ```java
@@ -56,8 +56,8 @@
     ```
 
     
-- Serializarea este un proces de convertire a unui obiect într-o secvență de bytes, iar deserializarea este procesul opus
+- Serializarea este procesul de convertire a unui obiect într-o secvență de octeți, iar deserializarea este procesul opus
 
-- Serializarea și deserializarea fac posibil pentru un sistem să comunice cu altul și să facă schimb de date indiferent de platformă sau de limbajul de programare
+- Serializarea și deserializarea fac posibilă comunicarea unui sistem cu alt sistem și schimbul de date indiferent de platformă sau de limbajul de programare
 
 [/slide]

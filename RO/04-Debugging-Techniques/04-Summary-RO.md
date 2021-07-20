@@ -6,23 +6,23 @@
 
 ## În această lecție ați învățat:
 
-- Ce este **Depanarea** în Java
+- Ce este **depanarea** 
 
-- Importanța **Depanării**
+- Importanța **depanării**
 
 - Cum să depanați cu **IntelliJ IDEA** Debugger
 
-    - ce sunt **punctele de întrerupere** și cum să le folosim
+    - ce sunt **punctele de întrerupere** și cum să le folosiți
 
     - cum să **controlați** **fluxul de execuție**
 
-    - cum să **Depanăm** un **Proiect**
+    - cum să **depanați** un **proiect**
 
 - Pașii pentru a **inspecta** **datele noastre**
 
-    - **variabile** și tab-uri **Watches**
+    - **tab-urile** **variables** și **watches**
 
-    - **evaluare a ferestrei**
+    - **fereastra** **evaluate**
 
 - Cum să găsim și să reparăm un defect în codul nostru
 
@@ -30,9 +30,9 @@
 
     - bariere psihologice
    
-## În lecția următoare, veți învăța:
+## În lecția următoare veți învăța:
 
-- Noțiuni de bază a fluxurilor și tipuri de fluxuri
+- Definiția stream-urilor
 
 - Fișiere și căi în Java
 
