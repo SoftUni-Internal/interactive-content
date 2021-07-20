@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-#  Ce este Rutarea?
+#  Ce Este Rutarea?
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/01-Intro-To-Angular-And-Typescript/Intro-to-Angular-and-Typescript-8-9-Routing-Overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

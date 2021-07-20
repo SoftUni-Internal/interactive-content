@@ -8,11 +8,11 @@
 
 ## În Această Lecție Veți Invăța:
 
-**1. Ce este HTTP**
+**1. Ce Este HTTP**
 
 -  Noțiuni de bază HTTP 
 
-**2. Ce este Rutarea**
+**2. Ce Este Rutarea**
 
 -  **Client-side**
 
