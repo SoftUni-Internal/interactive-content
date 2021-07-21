@@ -69,18 +69,20 @@ As covered in a previous part of the lesson, **network protocols** set the rules
 
 A **network protocol** takes the whole **communication process** and divides it into smaller ones, each responsible for a different task.
 
+They are a set of **rules**, conventions, and data structures that define how the data is transferred.
+
 This **separation of tasks** is known as the **OSI** model and will be covered later in this lesson.
 
 Some of the most widely known Internet protocols are:
 
-- `HTTP` - Hypertext Transfer Protocol
+- `HTTP` - the Hypertext Transfer Protocol is a **client-server** protocol that is used to retrieve web pages
 
-- `UDP` - User Datagram Protocol
+- `UDP` - the User Datagram Protocol is used by **servers** to **communicate** with the **clients**
 
-- `IP` - Internet Protocol
+- `IP` - the Internet Protocol provides **addressing** and **routing**
 
-- `FTP` - File Transfer Protocol
+- `FTP` -  the File Transfer Protocol is used by **clients** to **transfer** files, like images, documents, etc.
 
-- `TCP` - Transmission Control Protocol
+- `TCP` - the Transmission Control Protocol ensures **data integrity** and **reliability**
 
 [/slide]
