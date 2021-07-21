@@ -4,7 +4,7 @@
 
 # Ce Este Detectarea Modificărilor?
 
-3-4-Strategia-de-detectare-a-modificărilor
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/3-4-Change-Detection-Strategy-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Atunci când facem **modificări** în datele aparținând componentelor noastre, vizualizarea se actualizează **automat**.
 
@@ -25,8 +25,6 @@ Dacă **aplicația noastră este foarte mare**, pot apărea întârzieri, dar pu
 [slide hideTitle]
 
 # Strategia de Detectare a Modificărilor
-
-DEMO
 
 **Enumeratorii** TypeScript ne permit să declarăm un set de **constante** date, sau, cu alte cuvinte, o **colecție de valori relaționate** care pot fi fie numere, fie șiruri. 
 
@@ -63,7 +61,8 @@ Vom învăța ce înseamnă `onPush` în clipul următor.
 
 # Strategia de Detectare a Modificărilor - Membrii
 
-5-Strategia-de-detectare-a-modificărilor-Membrii
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/5-Change-Detection-Strategy-Members-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 `ChangeDetectionStrategy` are doi membri:
 

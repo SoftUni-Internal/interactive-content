@@ -4,8 +4,7 @@
 
 # Principiul Responsabilității Unice
 
-6-Principiile-SOLID
-7-Principiul-Responsabilității-Unice
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/6-7-SOLID-Principles-and-single-responsibility-principle-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Privire Generală Asupra Principiilor SOLID
 
@@ -41,7 +40,7 @@ Aceste operațiuni sunt efectuate de **servicii**, subiect despre care vom vorbi
 
 # Principiul Deschis-Închis (Open-Closed)
 
-8-Principiul-Deschis-Închis
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/8-Open-Closed-Principle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Principiul Deschis-Înschis (Open-Closed)** spune că o clasă, un modul sau o funcție trebuie să fie **deschisă pentru extindere**, dar **închisă pentru modificare**.
 
@@ -61,7 +60,8 @@ Dacă decidem să **încălcăm** acest principiu și să modificăm funcțional
 
 # Principiul Substituirii al lui Liskov
 
-9-Principiul-Substituirii-Liskov
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/9-Liskov-Substitution-Principle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Introdus de Barbara Liskov în anul 1987, **Principiul Liskov al substituirii** spune: **clasele copil** ar trebui să **nu încalce niciodată** **definițiile tipurilor claselor părinte**.
 
@@ -77,7 +77,8 @@ Clasele copil ar trebui, de asemenea, să **nu elimine** comportamentul **clasei
 
 # Principiul Segregării Interfețelor
 
-10-Principiul-Segregării-Interfațelor
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/10-Interface-Segregation-Principle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 **Principiul segregării interfețelor**, abreviat ISP, spune că clienții **nu ar trebui** să fie forțați să depindă de **metode pe care nu le folosesc**. 
 
@@ -93,7 +94,7 @@ Principala intenție a ISP este să mențină sistemul **decuplat**, rezultând 
 
 # Principiul Inversiunii Dependenței
 
-11-12-Principiul-Inversiunii-Dependenței
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/11-12-Dependency-Inversion-Principle-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Principiul Inversiunii Dependenței** (DIP) spune că:
 
@@ -108,8 +109,6 @@ DIP modifică **direcția** dependenței și **o împarte** între nivelurile î
 [slide hideTitle]
 
 # Principiul Inversiunii Dependenței: Abstracții și Concrețiuni
-
-DEMO
 
 ## Abstracțiile
 
@@ -154,7 +153,7 @@ Clasele care o **moștenesc**,  precum, de exemplu, `Brandon`, sunt **concrețiu
 
 # Injecția Dependenței
 
-13-14-Injecția-Dependenței
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/13-14-Dependency-Injection-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Injecția dependenței** este un șablon de design popular și una dintre **trăsăturile cele mai importante** din Angular.
 
@@ -201,7 +200,7 @@ Pentru a injecta o dependență într-o **clasă**, folosim **constructorul**, �
 
 # Încălcări Clasice
 
-15-Încălcări-Clasice
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/15-Classic-Violations-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Nu ar trebui** să utilizăm un `nou` cuvânt-cheie în interiorul unui constructor sau să folosim metode și proprietăți **statice**.
 
@@ -225,7 +224,7 @@ Acest lucru va face ca clasa noastră să devină his **fragilă**, **inflexibil
 
 # Cum să le Reparăm?
 
-16-Cum-Să-Reparăm
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/16-How-to-Fix-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Ar trebui să **adăugăm** întotdeauna **dependențele** prin intermediul **constructorului**:
 
@@ -254,7 +253,7 @@ let carTwo = new Car(
 
 # Cerințe Generale
 
-17-Cerințe-Generale
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/17-General-Requirements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pe scurt, acestea sunt cerințele pentru a construi un șablon DI:
 
