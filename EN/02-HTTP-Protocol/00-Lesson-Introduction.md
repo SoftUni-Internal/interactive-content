@@ -20,7 +20,7 @@
 5. **Mime and Media Types**
     - How our browsers know what the server is returning
 
-6. Web Server
+6. **Web Server**
     - What is a **Web Server**
 
 7. **HTML Forms**
