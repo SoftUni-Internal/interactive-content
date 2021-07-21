@@ -4,15 +4,15 @@
 
 # What is The OSI Model?
 
-Almost every network protocol is built according to the **OSI (Operation Systems Interconnection)** model.
+The **OSI (Operation Systems Interconnection)** model is the foundation for most network protocols.
 
-The **OSI** model splits the **communication process** into 7 layers of smaller processes.
+It splits the **communication process** into seven abstraction layers.
 
-This model has a **hierarchical structure**.
+The **OSI** model has a **hierarchical structure**.
 
 Every layer **provides services** for layer **above** and is **served** by the layer **below**.
 
-The **OSI** model is important to learn as it **improves** the **overall understanding of the Internet**.
+This model is essential to learn as it **improves** the **overall understanding of the Internet**.
 
 Being familiar with it also makes it easier for **troubleshooting** and **error handling.**
 
@@ -22,7 +22,7 @@ Being familiar with it also makes it easier for **troubleshooting** and **error 
 
 # OSI Layers
 
-The **OSI** model creates the following 7 distinct layers:
+The **OSI** model creates the following distinct layers:
 
 - `Layer 7: Application` - A **high-level** layer, that connects the **user** and other **applications** with the rest of the **OSI** model **layers**
 
@@ -48,9 +48,9 @@ The following picture is a visual representation of these **layers** and their *
 
 # TCP/IP model mapping to OSI
 
-The **OSI** reference model can be mapped to the **TCP/IP** with the help of protocols.
+The **OSI** reference model is mappable to the **TCP/IP** with the help of protocols.
 
-Here is how it happens:
+The following diagram illustrates the mapping process:
 
 [image assetsSrc="Java-Web-Introduction-To-The-Internet-5.png" /]
 
@@ -60,9 +60,7 @@ Here is how it happens:
 
 # Application Layer - 7
 
-The **application layer** is the **highest-level** layer.
-
-It is what the user **interacts** with.
+Being what the user **interacts** with, the **application layer** is the **highest-level** layer.
 
 Applications **present the information** from a network in a **readable format**.
 
@@ -84,7 +82,7 @@ The following protocols work on the application layer:
 
 The **presentation layer** is in the Operating System.
 
-This is the final place the data has to pass, before reaching the **application layer**.
+That is the final place the data has to pass before reaching the **application layer**.
 
 It is responsible for data **translation** between **network** and **application formats**.
 
@@ -100,7 +98,7 @@ For example, an **encrypted message** is sent over the **Internet**.
 
 On arrival, it is **decrypted** back to the **original message**.
 
-All of this is done by the **presentation layer**.
+The **presentation layer** executes all of the above operations.
 
 [/slide]
 
@@ -128,11 +126,11 @@ An example of a **session layer structure** is a **network socket**.
 
 # Transport Layer - 4
 
-It was established that the **session layer** **coordinates** communication sessions.
+The **session layer** **coordinates** communication sessions.
 
 The **transport layer** is responsible for the **logical part** of that **communication**.
 
-It implements **error-checking** to assure that the data quality is as good as possible.
+It implements **error-checking** to ensure the best possible data quality.
 
 **Transport layer** protocols can be **state-oriented** or **connection-oriented**.
 
@@ -152,7 +150,7 @@ The **network layer** provides the **functionality** for **packet transferring**
 
 It is a **connection** of many **nodes**.
 
-Each node has a **unique address** and **permissions** about whether or not certain data can be sent through it.
+Each node has a **unique address** and **permissions** about whether or not certain data is sendable through it.
 
 It is the **network layer**'s task to determine how to send a piece of information.
 
