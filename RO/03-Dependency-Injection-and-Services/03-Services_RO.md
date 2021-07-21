@@ -4,7 +4,7 @@
 
 # De Ce Avem Nevoie de Servicii?
 
-18-19-Serviciile-si-de-ce-avem-nevoie-de-ele
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/18-19-Services-and-why-we-need-services-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O aplicație Angular poate fi **împărțită** în câteva componente:
 
@@ -51,7 +51,7 @@ Pentru a înregistra un serviciu ca parte a **componentei**, va trebui să **spe
 
 # Crearea Unui Serviciu
 
-20-Crearea-unui-serviciu
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/20-Create-a-Service-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Serviciile** Angular arată ca oricare **clasă** TypeScript care execută **manipularea unor date**.
 
@@ -78,7 +78,8 @@ Serviciul nostru simplu conține o funcție de notificare `notify()`, care afiș
 
 # Injectarea în Componente
 
-21-Injectarea-in-Componente
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/21-Injecting-into-Components-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Pentru **a inkecta un serviciu într-o componentă**, ar trebui să mergem la fișierul TypeScript al acesteia.
 
@@ -114,7 +115,8 @@ Apoi, vom adăuga `NotifyService` ca parametru la funcția constructor a clasei 
 
 # Decoratorul Injectabil
 
-22-Decoratorul-Injectabil
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/22-Injectable-Decorator-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Cea **mai ușoară modalitate de a crea** un serviciu injectabil este prin utilizarea **Angular CLI**.
 
