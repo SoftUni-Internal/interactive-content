@@ -207,12 +207,15 @@ Create a program, that **generates all possible passwords**, consisting of the f
 * Generates custom passwords, which meet the following conditions:
 * The **first** digit is an **even** number and should not be greater than **n** \[2...n\]
 * The **second** digit is an **odd** number and should not be greater than **n** \[1...n\]
-* The **last part** is the **sum** of the first two digits.
+* The last part is the result of **multiplying** of first two digits
+
 
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-| 6 | 212 236 2510 414 4312 4520 616 6318 6530 |
+| **Input** | **Output** | **Comments** |
+
+| --- | --- | --- |
+| 6 | 212 236 2510 414 4312 4520 616 6318 6530 | 212 -> 2 is even, 1 is odd, 2 is the result of 2 * 1 |
+
 
 - The **input** consists of a single integer **n**
 - The **output** holds all possible passwords
