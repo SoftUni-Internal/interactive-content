@@ -1,8 +1,8 @@
-# Router Guards
+# Gărzi Pentru Router
 
 [slide hideTitle]
 
-# Guards Overview
+# Prezentare Generală a Gărzilor
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-24-25-Guards-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -33,7 +33,7 @@ Odată ce serviciul este instanțiat, acesta ar trebui să fie **furnizat** în 
 
 [slide hideTitle]
 
-# CanActivate Guard
+# Garda CanActivate
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-26-27-CanActivate-Guard-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
