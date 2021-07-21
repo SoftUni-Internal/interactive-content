@@ -6,11 +6,11 @@
 
 The **Internet Protocol** is a communications protocol that essentially **forms the Internet**.
 
-**IP** is very similar to a post office.
+This protocol is strictly **stateless**, meaning that it does not maintain any state between messages.
 
 Its responsibility is to take data from a **source host** (computer) to a **destination host**.
 
-To do that, it splits data into **small pieces** (**packets**) and provides a **unique** IP address for every computer.
+To do that, it splits data into **small pieces** (**packets**) and provides a **unique** IP address for every computer (**host**).
 
 The **Internet Protocol** is under constant **development** and **improvement**.
 
@@ -37,6 +37,11 @@ The following IP address has two distinct parts:
 - The first two numbers, or `195.92`, specifying the user's network code
 
 - The last two numbers, or `173.152`, identifying a user's computer
+
+The IP protocol has had many **versions** over the years, but only two are in current use:
+
+- **IPv4**: the most common version
+- **IPv6**: a newer version, with a much higher number of addresses
 
 [/slide]
 

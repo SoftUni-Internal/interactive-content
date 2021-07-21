@@ -40,13 +40,13 @@ There are several types of cables:
 
 - Coaxial
 
-- Optical fiber
-
 - Twisted pair
 
-**Coaxial** and **twisted-pair** cables typically connect machines within a **few meters** away from each other.
+- Optical fiber
 
-**Optical fiber** cabels are used for **long-range** connections.
+**Coaxial** and **twisted-pair** cables typically connect machines within a **few meters** away from each other (usually within a building).
+
+**Optical fiber** cabels are used for **long-range** connections, such as between **multiple cities**.
 
 ## Routers
 
@@ -54,7 +54,7 @@ There are several types of cables:
 
 The most commonly known **routers** are those **small devices**, used in people's **houses** and **offices**.
 
-However, there are **larger** and **more elaborate** **enterprise routers**, linking **bigger network**s and sending data at a **faster rate**.
+However, there are **larger** and **more elaborate** **enterprise routers**, linking **larger networks** and sending data at a **faster rate**.
 
 [/slide]
 
@@ -97,6 +97,14 @@ They take the role of a **Firewall**, **controlling** the **access** to the netw
 
 **Gateways** are also able to operate on **any** of the **OSI** layers.
 
+## Comparison
+
+| Bridges | Gateways |
+| --- | --- |
+| Transmit frames between two segments of a Local Area Network | They are protocol converters |
+| Operate on the physical and data layers | Operate on all the layers |
+| Check the frame's destination address | Enables the connection of two networks with different protocols |
+
 [/slide]
 
 [slide hideTitle]
@@ -114,5 +122,7 @@ It could be either **external** or **internal**.
 External **NICs** are connected to the **motherboard** via **USB**.
 
 Internal **NICs** could be connected through a **PCI** connector.
+
+It is responsible for **transmitting** and **receiving** the **packets**.
 
 [/slide]
