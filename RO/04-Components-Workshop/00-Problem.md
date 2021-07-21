@@ -4,8 +4,6 @@
 
 # Cerințe Privind Sarcini
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 **Iată un link către** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/new-resources-workshop-Components.zip) **pentru această sarcină.**
 
 Această sarcină conține un schelet de program care constă din coduri **HTML** și **CSS**, vă rugăm să nu modificați structura acestuia. 
@@ -23,8 +21,6 @@ Prima parte a sarcinii este de a împărți codul HTML și CSS din schelet **în
 [slide hideTitle]
 
 # MongoDB
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Înainte de a începe un nou proiect în Angular, trebuie să instalați MongoDB.
 
@@ -60,7 +56,6 @@ Asta este! Acum puteți verifica dacă aveți db cu comanda "show dbs":
 
 # REST API
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Puteți găsi **REST API** în [resources](https://videos.softuni.org/resources/javascript/javascript-angular/Rest-api-resources.zip).
 
@@ -102,7 +97,6 @@ Utilizatorii **neînregistrați** ar trebui să vadă butoanele / linkurile **Lo
 
 # Implementarea Secțiunii Principale
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 După ce backend-ul este gata de utilizare, trebuie să **preluați toate temele** și **să le listați** pe pagina de pornire în formatul furnizat în schelet.  
 
@@ -118,7 +112,6 @@ Fiecare temă ar trebui să aibă un **title** (titlu), o **date**, **username**
 
 # Implementarea Secțiunii Aparte
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În secțiunea **Postări recente, trebuie redate doar cele mai recente 5 postări**.
 
