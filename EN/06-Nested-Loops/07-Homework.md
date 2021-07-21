@@ -211,11 +211,10 @@ Create a program, that **generates all possible passwords**, consisting of the f
 
 
 ## Example
-| **Input** | **Output** | **Comments** |
 
+| **Input** | **Output** | **Comments** |
 | --- | --- | --- |
 | 6 | 212 236 2510 414 4312 4520 616 6318 6530 | 212 -> 2 is even, 1 is odd, 2 is the result of 2 * 1 |
-
 
 - The **input** consists of a single integer **n**
 - The **output** holds all possible passwords
