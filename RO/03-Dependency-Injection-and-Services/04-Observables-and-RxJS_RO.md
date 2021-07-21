@@ -4,7 +4,8 @@
 
 # Programarea Funcțională
 
-23-24-RxJS-și-Observabile-și-programarea-funcțională
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/23-24-RxJS-and-Observables-and-functional-programming-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Premisa programării funcționale este aceea că funcțiile ar trebui să **nu aibă efecte secundare**, ceea ce înseamnă că o funcție **face doar un singur lucru** și nu schimbă starea. 
 
@@ -50,7 +51,7 @@ Asta înseamnă că trebuie să ne **asigurăm că acest cod va funcționa** ind
 
 # Programarea Funcțională Reactivă
 
-26-Programarea-Funcțională-Reactivă
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/26-Functional-Reactive-Programming-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Programarea funcțională reactivă** este o **paradigmă** pentru dezvoltarea de software care integrează fluxul de timp și **evenimentele compoziționale** în programarea funcțională, **lucru care funcționează adesea** cu fluxuri asincrone de date.
 
@@ -89,7 +90,7 @@ Putem folosi observabilele pentru a lucra cu aceste fluxuri în Angular.
 
 # Observabilul
 
-25-Observabilul
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/25-The-Observables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Observabilele sunt folosite pentru a **monitoriza aceste fluxuri** și vor **emite** o funcție într-unul dintre următoarele cazuri:
 
@@ -120,7 +121,7 @@ Ei pot fi folosiți pentru:
 
 # Introducerea RxJS
 
-27-Introducere-RxJS
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/27-Intoducing-RxJS-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ReactiveX sau RxJS este acronimul de la **R**eactive E**x**tensions for **J**ava**S**cript. 
 
@@ -159,8 +160,7 @@ import { map, filter } from 'rxjs/operators'
 
 # Efectele Secundare ale Observabililor (Fierbite vs Rece)
 
-28-Efectele-Secundare-Ale-Observabililor-Fierbinte-vs-Rece
-29-Efectele-Secundare-Ale-Observabililor
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/28-29-Observables-Side-Effect-(Hot-vs-Cold)-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Prezentarea generală a operatorului Tap
 
@@ -228,7 +228,7 @@ Dacă **nu mai sunt noi abonați**, observabilul nou-creat se va **dezabona** de
 
 # Operatori RxJS des Utilizați
 
-30-Operatori-RxJS-Comun-Utilizați
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/30-Commonly-Used-RxJS-Operators-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Aceștia sunt printre cei mai des întâlniți și utilizați operatori în RxJS:
 
@@ -303,7 +303,7 @@ Puteți aprofunda mai mult subiectul ReactiveX [aici](http://reactivex.io).
 
 # Prezentarea Generală a RxJS și FRP
 
-31-Prezentare-RxJS-și-FRP
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/31. RxJS-and-FRP-Overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Programarea Funcțională Reactivă (FRP)** folosește fluxuri pentru a manipula datele care sunt transmise sincron sau asincron.
 
