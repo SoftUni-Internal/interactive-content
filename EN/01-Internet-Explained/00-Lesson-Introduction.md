@@ -45,6 +45,6 @@
 
 **8. The Future of the Internet**
 
-- How the Internet of Things will change the world
+- How the Internet of Things will influence the world
 
 [/slide]

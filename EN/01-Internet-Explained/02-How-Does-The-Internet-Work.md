@@ -9,9 +9,10 @@ A web server is a piece of **software** operated by a computer.
 It acts as a **link** between the **browser** and the **database**.
 
 The flow of data retrieval encompasses three steps:
-the **client** demands a piece of information 
-the **web server** communicates with the **database**
-after retrieving the needed **resources**, the server sends a **response** to the **client**
+
+- the **client** demands a piece of information 
+- the **web server** communicates with the **database**
+- after retrieving the needed **resources**, the server sends a **response** to the **client**
 
 The following image illustrates how web servers provide the connection between **browsers** and **databases**:
 
@@ -29,13 +30,16 @@ However, nothing is impossible with good **foundations**.
 
 Here are some of the **basic definitions** needed to understand the Internet:
 
-- `Server and Client` - The **client(browser)** is an **application**, stored on a **user's computer** that **communicates** over the Internet. The **server** is a piece of software that connects the **client** to a database, stored **away** from the user's machine
+- `Client` - an **application** (typically a **browser**), stored on a **user's computer** that **communicates** over the Internet
+
+- `Server` - a piece of software that connects the **client** to a database, stored **away** from the user's machine
 
 - `Network Protocol` - **Network protocols** define the rules for **data transfer** on the Internet
 
 - `Packets` - A packet is a simple **unit of data**, transferred through the Internet
 
-- `TCP vs UDP` - Both of them are **transfer protocols**. **UDP**, however, is **lighter** and **less-reliable** than **TCP**
+- `TCP vs UDP` - **transfer protocols**
+    * **UDP** is **more lightweight** but **less reliable** than **TCP**
 
 [/slide]
 

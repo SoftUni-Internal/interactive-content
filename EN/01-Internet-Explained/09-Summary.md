@@ -23,7 +23,7 @@
 - The **OSI model** splits a communication process into **seven** different **layers**
     * these layers range from the most low-level (physical layer) to the highest-level (application layer)
 
-- **cables and routers** are the groundwork of the Internet
+- **Cables and routers** are the groundwork of the Internet
     * devices, such as hubs, switches, and repeaters control the data flow
     * a Network Interface Card allows a computer to access the Internet
 
