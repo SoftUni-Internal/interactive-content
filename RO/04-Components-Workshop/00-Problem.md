@@ -56,7 +56,6 @@ Asta este! Acum puteți verifica dacă aveți db cu comanda "show dbs":
 
 # REST API
 
-
 Puteți găsi **REST API** în [resources](https://videos.softuni.org/resources/javascript/javascript-angular/Rest-api-resources.zip).
 
 Pentru a face uz de acesta, ar trebui să instalați dependențele necesare introducând comanda `npm install`. 
