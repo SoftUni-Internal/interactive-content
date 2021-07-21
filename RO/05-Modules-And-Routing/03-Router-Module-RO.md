@@ -232,7 +232,8 @@ Dacă detectează vreuna, recuperează parametrii solicitați.
 
 [slide hideTitle]
 
-# Query String and Fragments
+# String de Interogare și Fragmente
+
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-21-Query-strings-and-fragments-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -259,7 +260,7 @@ Instantaneul le va prelua o singură dată.
 
 [slide hideTitle]
 
-# Setting Up Child Routes
+# Configurarea Rutelor Copil
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-22-Setting-up-child-routes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -288,7 +289,7 @@ De asemenea, ar trebui să adăugăm substituentul `<router-outlet></router-outl
 
 [slide hideTitle]
 
-# Redirect
+# Redirecționați
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-23-Using-Wildcards-and-redirects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
