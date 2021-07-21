@@ -2,13 +2,13 @@
 
 # Network Hardware
 
-It was established previously that the **Internet** is a **connection** of **billions of machines**.
+The **Internet** is a **global system** of interconnected **computers**.
 
-That connection requires a lot of **hardware** and **maintenance**.
+This connection requires a lot of **hardware** and **maintenance**.
 
-Every year, billions of dollars are invested in **research** and **development** for that hardware.
+The **research** and **development** for that hardware is one of the most costly initiatives every year.
 
-The better the hardware is, the **faster** and **more-secure** the **Internet connection** is.
+The better the hardware is, the **faster** and **more secure** an **Internet connection** is.
 
 Here are some of the **physical components** that make up the Internet:
 
@@ -36,13 +36,13 @@ Cables **connect** one piece of **hardware** to another.
 
 There are several types of cables:
 
-- coaxial
+- Coaxial
 
-- optical fiber
+- Optical fiber
 
-- twisted pair
+- Twisted pair
 
-**Coaxial** and **twisted pair** cables are used to connect machines that are within a **few meters** away from each other.
+**Coaxial** and **twisted-pair** cables typically connect machines within a **few meters** away from each other.
 
 **Optical fiber** cabels are used for **long-range** connections.
 
@@ -58,15 +58,18 @@ However, there are **larger** and **more elaborate** **enterprise routers**, lin
 
 [slide hideTitle]
 
-# Repeaters, Hubs and Switches
+# Repeaters, Hubs, and Switches
 
-**Repeaters, hubs, and switches** are **network-linking** devices, which can be part of one **big component**.
+**Repeaters, hubs, and switches** are **network-linking** devices, which can be part of a **singular component**.
 
-- Repeaters - Receive a **signal** from a router and **resend** it. Used when the distance that the data travels, is too long
+- Repeaters - They receive a **signal** from a router and **resend** it
+    * used when the distance that the data travels is too long
 
-- Hub - A **hub** can link **Ethernet devices**. It has **several ports**, where each of them is plugged in. When a signal appears as an **input** in one of the ports, it is **output** in the other ports.
+- Hub - A **hub** can link **Ethernet devices**. It has **several ports**, where each of them is plugged in
+    * when a signal appears as an **input** in one of the ports, it is **output** in the other ports
 
-- Switch - Links devices in a **computer network** and **forwards data** through **packet switching**. Remembers a device's **identity** and forwards only the data that **belongs to it**.
+- Switch - It links devices in a **computer network** and **forwards the information** through **packet switching**
+    * remembers a device's **identity** and forwards only the data that **belongs to it**.
 
 [/slide]
 
