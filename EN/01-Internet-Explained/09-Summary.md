@@ -12,9 +12,9 @@
     * they carry essential information in their headers 
  
 - An **IP address** is like a unique identification number 
-    * the previous version of IP (IPv4) is out of more combinations 
+    * the previous version of IP (IPv4) is out of unused combinations 
     * the new version IPv6 is being used for new IP addresses 
-    * the DNS is used to give an IP address a recognizable name 
+    * the DNS (Domain Name System) is used to resolve IP addresses to host names
  
 - **TCP and UDP** are both transfer protocols 
     * TCP is more reliable as it performs more complex error checking and reorders packets

@@ -1,3 +1,5 @@
+# Hardware Components
+
 [slide hideTitle]
 
 # Network Hardware
