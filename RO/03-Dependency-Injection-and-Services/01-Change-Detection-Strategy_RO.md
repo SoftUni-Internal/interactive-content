@@ -26,9 +26,6 @@ Dacă **aplicația noastră este foarte mare**, pot apărea întârzieri, dar pu
 
 # Strategia de Detectare a Modificărilor
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/03-Angular_Fundamentals_Dependency_Injection_and_Services_Demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-
 **Enumeratorii** TypeScript ne permit să declarăm un set de **constante** date, sau, cu alte cuvinte, o **colecție de valori relaționate** care pot fi fie numere, fie șiruri. 
 
 Pentru a **modifica** strategia de detectare, folosim enumeratorul `ChangeDetectionStrategy`:
