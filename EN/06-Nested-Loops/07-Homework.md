@@ -360,7 +360,7 @@ public class Main {
 Create a program, that:
 
 
-* Rceives a tourist **destination**
+* Rеceives a tourist **destination**
 * After that, the **budget** required in order to visit it
 * We will receive the **next destination** from the console each time we reach the sufficient budget for the current one.
 * Each next input line represents different amounts of money that are summed up in order for the program to work out if we meet the requirement to go on the trip.
