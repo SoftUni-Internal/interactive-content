@@ -6,15 +6,15 @@
 
 The transfer of data through the Internet is a **complicated process**.
 
-It is very common for packets to travel through **different routes**.
+It is common for packets to travel through **different routes**.
 
-Not only that, but they can even arrive in a **different order** than they were sent.
+They can even arrive in a **different order** from how they were sent.
 
-It can even get as bad as **packets** not arriving at all.
+Sometimes **packets** fail to arrive at all.
 
-**TCP**'s task is to assure that Internet communication happens **without** the aforementioned **problems**.
+The Transmission Control Protocol (**TCP**) ensures that Internet communication occurs **without** the aforementioned **problems**.
 
-It can be said that **TCP** brings **reliability** of packet transfers.
+**TCP** brings **reliability** to the packet transferring process.
 
 [/slide]
 
@@ -22,11 +22,9 @@ It can be said that **TCP** brings **reliability** of packet transfers.
 
 # Transmission Control Protocol - TCP
 
-The **TCP** is like a big machine for **solving a puzzle**.
-
 As covered previously, **packets** hold important information in their **headers**.
 
-**TCP** goes through these **headers** and makes sure there are not any problems.
+**TCP** goes through these **headers** and verifies there are not any problems.
 
 These are some of the things **TCP** checks for:
 
@@ -34,7 +32,7 @@ These are some of the things **TCP** checks for:
 
 - `Packet size` - The expected size of the packets
 
-- `Packet order` - How packets should be ordered
+- `Packet order` - How packets were originally ordered
 
 If it finds a **problem** in any of these categories, it **discards** the **packet**.
 
@@ -54,19 +52,15 @@ Data delivery with the **User Datagram Protocol** is **not guaranteed**, and nei
 
 **UDP** is preferred when data needs to be transferred within a **short time frame**.
 
-It is known as the "**fire-and-forget**" protocol.
-
-With it, it does not matter if the data was successfully transferred.
+Often referred to as the "**fire-and-forget**" protocol, it is not concerned with whether the data was transferred successfully or not.
 
 [/slide]
 
 [slide hideTitle]
 
-# TCP vs UDP
+# TCP vs. UDP
 
-**TCP** and **UDP** both have their strength and weaknesses.
-
-Here are a few categories in which one outshines the other:
+The following list aims to compare **TCP** and **UDP**:
 
 - `Reliability` - **TCP** is the clear winner here as packets are **neatly-organised** and **checked for errors**.
 
@@ -76,8 +70,9 @@ Here are a few categories in which one outshines the other:
 
 - `Data integrity` - **TCP** uses **handshaking protocols** to ensure the integrity of the data, while **UDP does not**.
 
-Even though most of the data is transmitted with **TCP**, **UDP** still has some use cases.
+While **TCP** is more widespread, **UDP** still has some use cases.
 
-In conclusion, **TCP** is **safe and secure**, while **UDP** is **fast and lightweight**.
+**TCP** is **safer and more secure**, while **UDP** is **fast and lightweight**.
 
 [/slide]
+
