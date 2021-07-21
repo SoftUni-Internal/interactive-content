@@ -181,7 +181,7 @@ De asemenea, putem trece **unul** sau **mai mulți** parametri.
 
 # Preluarea Parametrilor
 
-[video src=https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-19-20-Fetching-Parameters-Reactively-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-19-20-Fetching-Parameters-Reactively-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 
 Putem folosi **ActivatedRoute** când dorim să preluăm un traseu asociat componentei într-o priză.
