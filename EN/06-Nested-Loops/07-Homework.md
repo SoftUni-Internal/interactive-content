@@ -202,17 +202,20 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program, that:
+Create a program, that **generates all possible passwords**, consisting of the following 3 **digits**
 * Reads an integer - **n**
 * Generates custom passwords, which meet the following conditions:
-* The **first** part is an **even** number and should not be greater than **n**
-* The **second** part is an **odd** number and should not be greater than **n**
-* The **last part** is the **product** of the first two
+* The **first** digit is an **even** number and should not be greater than **n** \[2...n\]
+* The **second** digit is an **odd** number and should not be greater than **n** \[1...n\]
+* The **last part** is the **sum** of the first two digits.
 
 ## Example
 | **Input** | **Output** |
 | --- | --- |
 | 6 | 212 236 2510 414 4312 4520 616 6318 6530 |
+
+- The **input** consists of a single integer **n**
+- The **output** holds all possible passwords
 
 [/task-description]
 [tests]
