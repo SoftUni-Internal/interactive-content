@@ -26777,7 +26777,7 @@ Sort them by **country_name in ascending order**.
 
 ## Example
 
-| **employee_id** | **first_name** |
+| **country_name** | **river_name** |
 | --- | --- |
 |Algeria |Niger|
 |Angola	|Congo|
