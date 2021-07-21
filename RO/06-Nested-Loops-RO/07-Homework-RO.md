@@ -199,18 +199,23 @@ public class Main {
 ```
 [/code-editor]
 [task-description]
-## Descriere
-Scrieți un program care:
+Creați un program care **generează toate parolele posibile** formate din următoarele 3 **cifre**:
 * Citește un număr întreg - **n**
 * Generează parole personalizate, care îndeplinesc următoarele condiții:
-   * **Prima** parte este un număr **par** și nu trebuie să fie mai mare decât **n**
-   * **A doua** parte este un număr **impar** și nu trebuie să fie mai mare decât **n**
-   * Ultima parte **este** produsul primelor două numere
+* **Prima** cifră este un număr **par**, care este mai mic sau egal cu **n** \[2...n\]
+* **A doua** cifră este un număr **impar**, mai mic sau egal cu **n** \[1...n\]
+* Ultima parte este razultatul **înmulțirii** primelor două cifre 
 
-## Exemplu
-| **Intrare** | **Ieșire** |
-| --- | --- |
-| 6 | 212 236 2510 414 4312 4520 616 6318 6530 |
+
+## Exemplu 
+
+| **Intrare** | **Ieșire** | **Comentarii** |
+| --- | --- | --- |
+| 6 | 212 236 2510 414 4312 4520 616 6318 6530 | 212 -> 2 este par, 1 este impar, 2 este rezultatul înmulțirii 2 * 1 |
+
+- **Intrarea** constă într-un număr întreg **n**
+- **Ieșirea** conține toate parolele posibile 
+
 
 [/task-description]
 [tests]
