@@ -4,27 +4,27 @@
 
 ## In this lesson you learned:
 
-- The **Internet** consists of thousands of computer networks that are connected with each other
+- The **Internet** consists of thousands of interconnected computer networks
     * establishes communication via protocols 
     * uses packets as a transfer unit 
-  
+ 
 - **Packets** are chunks of a larger file 
-    * they carry important information in their headers 
-  
+    * they carry essential information in their headers 
+ 
 - An **IP address** is like a unique identification number 
     * the previous version of IP (IPv4) is out of more combinations 
     * the new version IPv6 is being used for new IP addresses 
     * the DNS is used to give an IP address a recognizable name 
-  
+ 
 - **TCP and UDP** are both transfer protocols 
     * TCP is more reliable as it performs more complex error checking and reorders packets
-    * UDP is lightweight and fast, but less secure than TCP 
+    * UDP is lightweight and fast but less secure than TCP 
 
-- The **OSI model** splits a communication process into 7 different layers
+- The **OSI model** splits a communication process into **seven** different **layers**
     * these layers range from the most low-level (physical layer) to the highest-level (application layer)
 
-- The Internet is built upon **cables and routers** 
-    * devices such as hubs, switches, and repeaters can be used to control the data flow
+- **cables and routers** are the groundwork of the Internet
+    * devices, such as hubs, switches, and repeaters control the data flow
     * a Network Interface Card allows a computer to access the Internet
 
 ## In the next lesson you will learn:
@@ -32,5 +32,6 @@
 - **Hypertext Transfer Protocol**
     * a deeper dive into the concept of HTTP 
     * making requests and receiving responses 
-    * working with Web Servers 
+    * how to work with Web Servers 
+   
 [/slide]
