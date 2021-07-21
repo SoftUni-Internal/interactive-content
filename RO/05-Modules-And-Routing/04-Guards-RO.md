@@ -4,7 +4,7 @@
 
 # Guards Overview
 
-Angular-Modules-and-routing-24-25-Guards-overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-24-25-Guards-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Gărzile **împiedică** utilizatorul să acceseze rute **restricționate**.
 
@@ -35,7 +35,7 @@ Odată ce serviciul este instanțiat, acesta ar trebui să fie **furnizat** în 
 
 # CanActivate Guard
 
-Angular-Modules-and-routing-26-27-CanActivate-Guard
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-26-27-CanActivate-Guard-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem folosi **CanActivate** atunci când dorim să verificăm ceva înainte de a permite utilizatorului să acceseze ruta.
 
@@ -69,8 +69,8 @@ Această funcție returnează un boolean - ar trebui să **returneze true** pent
 
 # Router Resolver
 
-Angular-Modules-and-routing-28-29-Angular-Router-Resolver
-Angular-Modules-and-routing-30-ActivatedRoute-example
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-28-29-30-Angular-Router-Resolver-and-example-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Rezolvatorii sunt **furnizori de date**.
 

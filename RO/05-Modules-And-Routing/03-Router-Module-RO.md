@@ -4,7 +4,7 @@
 
 # Definiți Șablonul
 
-Angular-Modules-and-routing-11-12-Router-module
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-11-12-Router-module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a crea un șablon, trebuie să parcurgem mai mulți pași.
 
@@ -37,7 +37,7 @@ Acest atribut personalizat suprascrie reîncărcarea paginii implicite pe care o
 
 ### Creați un Modul Router
 
-Angular-Modules-and-routing-13-14-15-Create-Routes-Module
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-13-14-15-Create-Routes-Module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a crea un modul Router, trebuie mai întâi să creăm un fișier numit `app-routing.module.ts`.
 
@@ -87,7 +87,7 @@ Ultimul pas este să **importați** rutele **din modulul** aplicației.
 
 # Directiva RouterLink
 
-Angular-Modules-and-routing-16-The-RouterLink-Directive
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-16-The-RouterLink-Directive-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Directiva `RouterLink` transformă elementele în link-uri.
 
@@ -119,7 +119,7 @@ Iată un exemplu cu ambele moduri:
 
 # Navigați Programatic
 
-Angular-Modules-and-routing-17-Navigate-Programmatically
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-17-Navigate-Programmatically-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem adăuga un router la o componentă.
 
@@ -147,7 +147,7 @@ loadData() {
 
 # Passing Parameters to Routes
 
-Angular-Modules-and-routing-18-Passing-Parameters-to-routes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-18-Passing-Parameters-to-routes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Când vrem să creăm o adresă URL care conține o rută dinamică, cum ar fi un număr de produs, trebuie să configurăm parametrii.
 
@@ -181,8 +181,8 @@ De asemenea, putem trece **unul** sau **mai mulți** parametri.
 
 # Preluarea Parametrilor
 
-Angular-Modules-and-routing-19-Fetching-Parameters
-Angular-Modules-and-routing-20-Fetching-Parameters-Reactively
+[video src=https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-19-20-Fetching-Parameters-Reactively-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Putem folosi **ActivatedRoute** când dorim să preluăm un traseu asociat componentei într-o priză.
 
@@ -234,7 +234,7 @@ Dacă detectează vreuna, recuperează parametrii solicitați.
 
 # Query String and Fragments
 
-Angular-Modules-and-routing-21-Query-strings-and-fragments
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-21-Query-strings-and-fragments-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem adăuga ** parametri de interogare ** și ** fragmente ** la adresa URL.
 
@@ -261,7 +261,7 @@ Instantaneul le va prelua o singură dată.
 
 # Setting Up Child Routes
 
-Angular-Modules-and-routing-22-Setting-up-child-routes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-22-Setting-up-child-routes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem avea și rute imbricate.
 
@@ -290,7 +290,7 @@ De asemenea, ar trebui să adăugăm substituentul `<router-outlet></router-outl
 
 # Redirect
 
-Angular-Modules-and-routing-23-Using-Wildcards-and-redirects
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-23-Using-Wildcards-and-redirects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem redirecționa utilizatorul către o altă cale.
 
