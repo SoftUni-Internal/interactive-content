@@ -4,7 +4,7 @@
 
 # Conținutul Lecției
 
-Angular-Modules-and-routing-1-2-Introduction-and-table-of-contents
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-1-2-Introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## În Această Lecție Veți Invăța:
 
