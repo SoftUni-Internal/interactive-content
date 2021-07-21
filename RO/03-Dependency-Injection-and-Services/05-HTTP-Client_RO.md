@@ -4,7 +4,7 @@
 
 # Modulul de Client HTTP
 
-32-33-Clientul-HTTP-și-Modulul-de-Client-http
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/32-33-HTTP-Client-and-the-http-cllient-module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Modulul HTTP din Angular ne permite să **interacționăm** cu mii de **API-uri de pe internet** precum Facebook, Twitter, și serviciile web ale Amazon.
 
@@ -55,7 +55,7 @@ De acum înainte, `HttpClient` poate fi injectat în diferite servicii.
 
 # Utilizarea Clientului HTTP în Servicii
 
-34-Utilizarea-Clientului-HTTP-in-Servicii
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/34-Using-the-HTTP-Client-in-Services-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Deși este posibil să importăm modulul `HttpClient` într-o componentă, acest lucru nu este recomandat.
 
@@ -96,7 +96,7 @@ Metoda `getAllPhotos()` trimite o cerere GET către un demo al unei REST API.
 
 # Abonarea la un Observabil
 
-35-Abonarea-la-un-Observabil
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/35. Subscribe-to-the-Observable-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a se abona la un Observabil, creați o componentă `PhotosComponent` folosind Angular CLI:
 
@@ -132,7 +132,7 @@ Inlăuntrul `ngOnInit()`, folosiți metoda `subcribe()`.
 
 # Tastarea Verificării Răspunsului
 
-36-Tastarea-Verificării-Răspunsului
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/36-Type-Checking-the-Response-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un avantaj major al TypeScript este acela că putem să utilizăm **interfețele** pentru a tasta în mod **explicit** ce trebuie să includă o clasă.
 
@@ -154,7 +154,7 @@ interface Photo {
 
 # Erorile de Manipulare
 
-37-Erorile-de-Manipulare
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/37-Handling-Errors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Atunci când accesăm date remote, pot apărea mai multe **probleme**.
 
@@ -179,6 +179,6 @@ this.photosService.getAllPhotos()
 
 # Clientul HTTP - Demo
 
-03-Angular_Fundamentals_Dependency_Injection_and_Services_Demo-1-2
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/03-Dependency-Injection/03-Angular_Fundamentals_Dependency_Injection_and_Services_Demo-1-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
