@@ -4,7 +4,7 @@
 
 # Prezentare Generală a Modulelor în Angular
 
-Angular-Modules-and-routing-3-4-The-NgModule
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-3-4-The-NgModule-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un modul de tip Angular module este o **submulțime** de implementare a întregii aplicații Angular.
 
@@ -43,7 +43,7 @@ Cele mai populare librării de tip **Angular** și **third-party** care vin la p
 
 # Crearea Modulelor Personalizate
 
-Angular-Modules-and-routing-5-6-Creating-Custom-modules
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-5-6-Creating-Custom-modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem implementa **module personalizate** (cunoscute și sub denumirea de module funcționale) atunci când aplicația devine semnificativ mai mare.
 
@@ -84,7 +84,7 @@ Acesta **importă CommonModule** și **declară** două componente.
 
 # Suggested Common Module
 
-Angular-Modules-and-routing-7-Suggested-Common-Module
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/05-Modules-and-Routing/Angular-Modules-and-routing-7-Suggested-Common-Module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Atunci când lucrăm cu un proiect de mici dimensiuni, putem utiliza unicul `AppModule` pentru toate declarațiile.
 
