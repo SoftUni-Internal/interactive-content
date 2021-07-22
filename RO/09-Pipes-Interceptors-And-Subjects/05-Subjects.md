@@ -108,7 +108,7 @@ Second Observer: 8
 
 # Replay Subject
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-30-31-Behavior-Subject-example-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+Replay-subject-video
 
 Un `ReplaySubject` poate trimite **valori vechi** către **abonații noi**, similar lui `BehaviorSubject`.
 
