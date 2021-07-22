@@ -130,9 +130,9 @@ Each of them should log in successfully.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-The \[**Logout**\] **tag** should refer to `localhost:4200/logout`:
+The \[**Logout**\] **tag** should refer to `localhost:4200/logout` page:
 
-[image assetsSrc="Angular-Modules-And-Routing-Workshop-New.png" /]
+[image assetsSrc="Angular-Modules-And-Routing-Workshop-New-14.png" /]
 
 [/slide]
 
@@ -237,7 +237,11 @@ Use it if an invalid path is given.
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop-New-13.png" /]
 
-## Protected Routes
+[/slide]
+
+[slide hideTitle]
+
+# Protected Routes
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-14-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 

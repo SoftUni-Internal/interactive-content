@@ -130,9 +130,9 @@ Fiecare dintre ei ar trebui să se conecteze cu succes.
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-**Eticheta** \[**Logout**\], ar trebui să se refere la `localhost:4200/logout`:
+**Eticheta** \[**Logout**\], ar trebui să se refere la `localhost:4200/logout` pagina:
 
-[image assetsSrc="Angular-Modules-And-Routing-Workshop-New.png" /]
+[image assetsSrc="Angular-Modules-And-Routing-Workshop-New-14.png" /]
 
 [/slide]
 
