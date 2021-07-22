@@ -4,6 +4,8 @@
 
 # Task Requirements
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/Angular-Components-Resources.zip) **for this task.**
 
 This task contains a program skeleton which consists of **HTML** and **CSS** code, please do not alter its structure. 
@@ -21,6 +23,8 @@ The first part of the assignment is to split the HTML and CSS code from the skel
 [slide hideTitle]
 
 # MongoDB
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Before you start a new project in Angular, you need to install MongoDB. 
 
@@ -55,6 +59,8 @@ That's it! Now you can check if you have the db with the "show dbs" command:
 [slide hideTitle]
 
 # REST API
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You can find the **REST API** in the [resources](https://videos.softuni.org/resources/javascript/javascript-angular/Rest-api-latest.zip).
 
@@ -95,9 +101,17 @@ Here are the specifications for the REST API endpoints:
 
 [slide hideTitle]
 
-# Implementation of the Main Section
+# Implementation of the Main and Aside Sections
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 After the backend is ready to use, you should **fetch all themes** and **list them** on the home page in the format provided in the skeleton.  
+
+## Main Section
 
 The **themes in the main** section should be **sorted in descending order according to the subscribers.** 
 
@@ -105,11 +119,7 @@ Each theme should have a **title**, a **date** (of creation), the **username** o
 
 [image assetsSrc="Angular-Components-Workshop-New-2.png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Implementation of the Aside Section
+## Aside Section
 
 In the **Recent posts section, only the 5 latest posts** should be rendered.
 
@@ -123,4 +133,36 @@ Each component should contain the **theme title**, the **username** of the last 
 
 [/slide]
 
+[slide hideTitle]
 
+# Separating CSS Styles
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Rendering Themes
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-8-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Rendering Posts
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-9-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Bonus: Code Optimization
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Bonus-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Bonus-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]

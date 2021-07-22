@@ -646,7 +646,8 @@ For example, **Password** and **Confirm Password**:
 Use `setValue()` or `patchValue()` to change the form from inside the component or add default values.
 
 ```js
-changeInput() {this.laptopForm.form.patchValue({
+changeInput() {
+  this.laptopForm.form.patchValue({
     ram: '16 GB'
     processor: 'Intel Core i7'
     });

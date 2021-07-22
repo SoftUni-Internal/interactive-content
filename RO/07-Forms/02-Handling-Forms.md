@@ -318,7 +318,7 @@ Angular va atașa automat o **directivă NgForm**.
 
 În Angular, putem prelua cu ușurință o valoare a oricărei intrări prin referințe locale.
 
-Utilizați `@ ViewChild` pentru a accesa referința locală
+Utilizați `@ViewChild` pentru a accesa referința locală
 
 ```js
 @Component({…})
@@ -641,7 +641,8 @@ De exemplu, **Parolă** și **Confirmare parolă**:
 Utilizați `setValue()` or `patchValue()` pentru a schimba formularul din interiorul componentei sau pentru a adăuga valori implicite.
 
 ```js
-changeInput() {this.laptopForm.form.patchValue({
+changeInput() {
+  this.laptopForm.form.patchValue({
     ram: '16 GB'
     processor: 'Intel Core i7'
     });

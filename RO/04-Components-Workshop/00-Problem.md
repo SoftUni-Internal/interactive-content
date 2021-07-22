@@ -105,11 +105,7 @@ Fiecare temă ar trebui să aibă un **title** (titlu), o **date**, **username**
 
 [image assetsSrc="Angular-Components-Workshop-New-2.png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Implementarea Secțiunii Aparte
+## Implementarea Secțiunii Aparte
 
 
 În secțiunea **Postări recente, trebuie redate doar cele mai recente 5 postări**.
@@ -121,6 +117,41 @@ Postările vor fi returnate din REST-API **sortate după ora de creare**.
 Fiecare componentă trebuie să conțină **theme title**, **username** al ultimului utilizator care a postat un comentariu în firul temei, și **time** la care postarea a fost creată. 
 
 [image assetsSrc="Angular-Components-Workshop-New-3.png" /]
+
+[/slide]
+
+
+[slide hideTitle]
+
+# Separating CSS Styles
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Rendering Themes
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-8-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Rendering Posts
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-9-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Bonus: Code Optimization
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Bonus-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Bonus-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 

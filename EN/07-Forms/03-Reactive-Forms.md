@@ -253,8 +253,8 @@ We can use it to **show** errors depending on its value:
 
 ```js
 <div *ngIf="(laptopForm.get('processor').touched 
-|| laptopForm.get('processor').dirty) 
-&& laptopForm.get('processor').errors" class="alert alert-danger">
+  || laptopForm.get('processor').dirty) 
+  && laptopForm.get('processor').errors" class="alert alert-danger">
 <span *ngIf="laptopForm.get('processor').errors.required">
   Processor is required!
 </span>
@@ -284,8 +284,8 @@ Whenever a **value** of an input **changes**, we can **subscribe** to that event
 
 ```js
 this.laptopForm.get('os')
-.valueChanges
-.subscribe(console.log);
+  .valueChanges
+  .subscribe(console.log);
 ```
 
 The `valueChanges` event returns an Observable.
@@ -310,8 +310,8 @@ Then, attach the **throttleTime** function to a form control's **valueChanges** 
 
 ```js
 processorControl.valueChanges
-.pipe(throttleTime(1500))
-.subscribe(value => {
+  .pipe(throttleTime(1500))
+  .subscribe(value => {
     console.log(value);
 });
 ```

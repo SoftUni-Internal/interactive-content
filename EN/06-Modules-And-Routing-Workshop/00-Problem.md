@@ -4,6 +4,8 @@
 
 # Task Requirements
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/Modules-and-routing-resources.zip) **for this task.**
 
 So far, we have created **a dynamic page** which **lists all themes** sorted in descending order according to the number of subscribers.
@@ -22,7 +24,9 @@ We will fix that later when we acquire the knowledge to do so.
 
 [slide hideTitle]
 
-# Navigation bar
+# Navigation Bar
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Logged in the navigation bar
 
@@ -56,9 +60,11 @@ When the user is "**not logged in**" they should see the following navigation:
 
 [slide hideTitle]
 
-# Home page
+# Home Page
 
-## Not Logged in
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## Not logged in
 
 This is the home page `localhost:4200/home`, a welcome user page.
 
@@ -82,6 +88,8 @@ The logged in user view:
 
 # Register (Not Logged in)
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 This is the register page `localhost:4200/register`. 
 
 This will be the **point** of your app that the fake **isLoggedIn property** can be changed to **true**.
@@ -100,6 +108,8 @@ So, each of them can log in successfully.
 
 # Login (Not Logged in)
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 This is the login page `localhost:4200/login`. 
 
 This will be another **point** of the app where the fake **isLoggedIn property** can be changed to **true**. 
@@ -117,6 +127,8 @@ Each of them should log in successfully.
 [slide hideTitle]
 
 # Themes page 
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Not Logged in
 
@@ -167,6 +179,8 @@ The logged in user can **add new comments** or **like** the other users' posts.
 
 # Create New Theme (Logged in only)
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 This is the create new theme page `localhost:4200/themes` where each **user** (logged in) can create their own theme.  
 
 - When the **"Post"** button is clicked, you can try to make a **"POST request"** to `localhost:4200/themes` with the given theme information. 
@@ -183,6 +197,8 @@ After a successful theme creation, **redirect** the current user to the **theme 
 
 # Profile - Logged in
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 This is the profile page `localhost:4200/profile`. 
 
 This page will show information about the currently logged in user. 
@@ -198,6 +214,8 @@ The "Edit" button will replace the information fields with input fields, but thi
 [slide hideTitle]
 
 # Invalid routes
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is the page for all **invalid routes** `localhost:4200/??????`. 
 

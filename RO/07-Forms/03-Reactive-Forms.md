@@ -253,8 +253,8 @@ Directiva `formGroup` are o proprietate ``errors``
 
 ```js
 <div *ngIf="(laptopForm.get('processor').touched 
-|| laptopForm.get('processor').dirty) 
-&& laptopForm.get('processor').errors" class="alert alert-danger">
+  || laptopForm.get('processor').dirty) 
+  && laptopForm.get('processor').errors" class="alert alert-danger">
 <span *ngIf="laptopForm.get('processor').errors.required">
   Processor is required!
 </span>
@@ -284,8 +284,8 @@ Ori de câte ori o **valoare** a unei intrări **se modifică**, putem **să ne 
 
 ```js
 this.laptopForm.get('os')
-.valueChanges
-.subscribe(console.log);
+  .valueChanges
+  .subscribe(console.log);
 ```
 
 Evenimentul `valueChanges` returnează un Observable.
@@ -310,8 +310,8 @@ Apoi, atașați funcția **throttleTime** la evenimentul **valueChanges** al for
 
 ```js
 processorControl.valueChanges
-.pipe(throttleTime(1500))
-.subscribe(value => {
+  .pipe(throttleTime(1500))
+  .subscribe(value => {
     console.log(value);
 });
 ```
