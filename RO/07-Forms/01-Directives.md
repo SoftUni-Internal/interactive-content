@@ -4,7 +4,7 @@
 
 # Prezentare Generală a Directivelor
 
-js-angular-forms-3-4-Directives-and-directives-overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-3-4-Directives-and-directives-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există trei tipuri de directive în Angular:  **Components**, **Attribute**, și  **Structural**.
 
@@ -59,7 +59,7 @@ Așa cum se arată mai sus, un asterisc `*` precede numele atributului unei dire
 
 # Compararea Directivelor
 
-js-angular-forms-5-Directives-Comparison
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-5-Directives-Comparison-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Directivele Privind Atribute
 
@@ -125,7 +125,7 @@ Există trei directive structurale principale în Angular: `*ngIf`, `*ngFor`, ș
 
 # Construirea unei Directive Simple Privind Atributele
 
-js-angular-forms-6-Build-a-Simple-Attribute-Directive
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-6-Build-a-Simple-Attribute-Directive-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O directivă de atribut necesită construirea unei clase de controler adnotate cu decoratorul `@Directive`.
 
@@ -162,8 +162,7 @@ export class HighlightDirective {
 
 # Atașarea Stilurilor la Elementele de Referință
 
-js-angular-forms-7-Attach-Styles-to-Referenced-Elements
-js-angular-forms-8-Warning - Use-Renderer2
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Injectați elementul de referință și schimbați culoarea de fundal ca în exemplul de mai jos.
 
@@ -196,7 +195,7 @@ import { Renderer2 } from '@angular/core'
 
 # Utilizarea Renderer2
 
-js-angular-forms-8-Warning - Use-Renderer2
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a utiliza Renderer2, trebuie să-l injectăm.
 
@@ -229,7 +228,7 @@ Renderer2 are multe alte metode, cum ar fi `setProperty`,` setValue` și `remove
 
 # Răspunsul la Evenimente
 
-js-angular-forms-10-Respond-to-Events
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O directivă ar putea fi mai dinamică.
 
@@ -262,7 +261,7 @@ Când indicatorul mouse-ului părăsește elementul, culoarea va fi setată la a
 
 # Folosirea HostBinding
 
-js-angular-forms-11-Using-HostBinding
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Folosim **decoratorul** `HostBinding` pentru a marca o proprietate DOM ca proprietate obligatorie pentru gazdă.
 

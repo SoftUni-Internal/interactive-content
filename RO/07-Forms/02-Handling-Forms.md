@@ -4,7 +4,7 @@
 
 # Prezentare Generală a Formularelor
 
-js-angular-forms-12-13-Handling-Forms-and-forms-overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Formularele din Angular ne permit să gestionăm datele de intrare ale utilizatorilor într-un mod rapid și interactiv.
 
@@ -26,7 +26,7 @@ Formularele **reactive** sunt mai ușor de reutilizat și testat, fiind în acel
 
 # Formulare Bazate pe Șabloane
 
-js-angular-forms-14-Template-Driven-Forms
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Formularele bazate pe șabloane nu sunt la fel de scalabile ca formularele reactive. 
 
@@ -45,7 +45,7 @@ Urmați acești pași atunci când creați un formular scriind șabloane utiliz�
 
 # Problemă: Crearea unui Formular Bazat pe Șabloane
 
-js-angular-forms-15-problem-Create-a-Template-Driven-Form
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Creați un formular **bazat pe șabloane** care să arate astfel:
 
@@ -67,7 +67,7 @@ După cum puteți vedea mai sus, conține:
 
 # Importul Bootstrap
 
-js-angular-forms-16-Import-Bootstrap
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Bootstrap este un plugin JavaScript foarte puternic și unul dintre cele mai populare seturi de instrumente front-end.
 
@@ -96,7 +96,7 @@ Veți utiliza Bootstrap pentru a crea **containere**, **grupuri de formulare**, 
 
 # Introducerea Modulului de Formulare
 
-js-angular-forms-17-Introducing-Forms-Module
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Deoarece Angular este bazat pe module, pentru a gestiona formularele, trebuie să importăm **FormsModule**.
 
@@ -124,7 +124,7 @@ Pentru o listă completă a directivelor exportate, puteți consulta [Documenta�
 
 # Crearea unei Componente de Formular
 
-js-angular-forms-18-Create-Form-Component
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Definirea modelului de date
 
@@ -205,7 +205,7 @@ Urmăriți proprietatea `submitted` și metoda  `onSubmit` -  acestea vor fi fol
 
 # Șablon HTML Inițial
 
-js-angular-forms-19-20-Initial-HTML-Template
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Utilizați următorul HTML pentru a crea șablonul.
 
@@ -260,7 +260,7 @@ Acesta este un nume de clasă  **Bootstrap** care va aplica automat **styling** 
 
 # Directiva NgModel
 
-js-angular-forms-21-The-NgModel-Directive
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Trebuie să afișăm, să ascultăm și să extragem date în același timp.
 
@@ -292,7 +292,7 @@ Dacă dorim ca Angular să urmărească interacțiunea cu utilizatorul și valoa
 
 # Directiva NgForm
 
-js-angular-forms-22-The-NgForm-Directive
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Declarați o variabilă șablon în formular.
 
@@ -314,7 +314,7 @@ Angular va atașa automat o **directivă NgForm**.
 
 # Accesarea Referinței Locale
 
-js-angular-forms-23-Access-the-Local-Reference
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În Angular, putem prelua cu ușurință o valoare a oricărei intrări prin referințe locale.
 
@@ -339,7 +339,7 @@ După cum puteți vedea, folosim și cârligul de ciclu de viață `ngAfterViewI
 
 # Trimiterea unui Formular
 
-js-angular-forms-24-Submit-a-Form
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Butonul **trimite** din partea de jos a formularului nostru nu efectuează nimic de la sine.
 
@@ -385,7 +385,7 @@ Pentru a realiza acest lucru, legăm proprietatea **div** cu clasa **container**
 
 # Starea Formularului de Urmărire
 
-js-angular-forms-25-Tracking-Form-State
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Directiva NgForm** urmărește dacă:
 - Utilizatorul a atins controlul
@@ -406,7 +406,7 @@ De asemenea, poate **actualiza** controlul cu clase speciale Angular CSS și poa
 
 # Starea Controlului de Urmărire
 
-js-angular-forms-26-Track-Control-State
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Angular adaugă clase CSS personalizate la câmpurile și formularele de intrare, în funcție de stările lor.
  
@@ -434,7 +434,7 @@ Aceste două clase sunt adesea folosite atunci când dorim să informăm utiliza
 
 # Adăugarea CSS personalizat Pentru un Feedback Vizual
 
-js-angular-forms-27-Add-Custom-CSS-for-Visual-Feedback
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Puteți marca **câmpurile obligatorii** și datele **nevalide** în același timp, cu **bare** colorate în **stânga** **casetei de intrare**.
 
@@ -453,7 +453,7 @@ input.ng-invalid.ng-touched {
 
 # Adăugarea Validării
 
-js-angular-forms-28-Add-Validation
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Puteți adăuga **atribute HTML 5** la câmpurile de intrare pentru validare.
 
@@ -492,7 +492,7 @@ De exemplu:
 
 # Validatori Terți
 
-js-angular-forms-29-List-of-Validators-Third-party-Validators
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Angular vine cu următoarele [validatoare](https://angular.io/api/forms/Validators):
 
@@ -530,7 +530,7 @@ Pentru formularele **bazate pe șabloane**, veți avea nevoie de următoarele [d
 
 # Afișarea Mesajelor de Eroare
 
-js-angular-forms-30-31-Outputing-Error-Messages
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În cazul unei erori, utilizatorul ar trebui să primească un mesaj adecvat cu o explicație a ceea ce a mers prost.
 
@@ -565,7 +565,7 @@ Adăugați un mesaj util în **div**.
 
 # Valabilitatea Generală a Formularului
 
-js-angular-forms-32-Form-Overall-Validity
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Putem lega validitatea generală a formularului folosind variabila de referință declarată în eticheta `<form>`.
 
@@ -583,7 +583,7 @@ Blocați butonul **submit** în cazul în care un control are **stare nevalidă*
 
 # Legare de Date Bidirecțională
 
-js-angular-forms-33-Two-way-Data-Binding
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Puteți reacționa instantaneu la orice modificare utilizând legarea de date în două direcții.
 
@@ -610,7 +610,7 @@ constructor() {
 
 # Directiva NgModelGroup
 
-js-angular-forms-34-The-NgModelGroup-Directive
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Această directivă poate fi utilizată doar ca un copil al unui **NgForm** în etichetele `<form>`.
 
@@ -636,7 +636,7 @@ De exemplu, **Parolă** și **Confirmare parolă**:
 
 # Setarea și Corectarea unei Valori de Formular
 
-js-angular-forms-35-Setting-and-Patching-Form-Value
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Utilizați `setValue()` or `patchValue()` pentru a schimba formularul din interiorul componentei sau pentru a adăuga valori implicite.
 
@@ -654,7 +654,7 @@ changeInput() {this.laptopForm.form.patchValue({
 
 # Resetarea Formularului
 
-js-angular-forms-36-Resetting-the-Form
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 După trimiterea unui formular, resetarea este necesară pentru a șterge toate câmpurile de intrare și a reseta starea rutei.
 

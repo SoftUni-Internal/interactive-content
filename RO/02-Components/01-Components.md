@@ -104,12 +104,6 @@ Scrierea HTML și CSS în linie sau utilizarea fișierelor externe depinde de no
 
 În unele situații când șablonul necesită mai multe linii de cod, ar putea fi mai bine să creați un fișier HTML sau CSS extern pentru a menține lucrurile organizate.
 
-[/slide]
-
-[slide hideTitle]
-
-# Crearea Manuală a Componentelor 2
-
 **Selector** este folosit pentru apelarea componentei Înăuntrul altor fișiere HTML a le proiectului ca o etichetă HTML: `<app-home></app-home>`
 
 **Șablonul** este locul unde se află vizualizarea HTML a componentei.
@@ -147,12 +141,6 @@ Acest lucru se face atunci când dorim să încărcăm cu nerăbdare un modul ca
 Serviciul va fi disponibil doar pentru componentă și descendenții săi.
 
 Celelalte componente din același modul nu îl vor putea accesa.
-
-[/slide]
-
-[slide hideTitle]
-
-# Crearea Manuală a Componentelor 3
 
 După ce am creat o componentă trebui să o adăugăm în mulțimea **declarațiilor** în modulul aplicației.
 

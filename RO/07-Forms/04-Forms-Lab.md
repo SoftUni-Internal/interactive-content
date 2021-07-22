@@ -4,7 +4,7 @@
 
 # Configurare Inițială
 
-Forms-Lab-1
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Iată un link către** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/07-Forms.zip) **pentru această sarcină.**
 
@@ -30,7 +30,7 @@ Mergeți la [FontAwesome](fontawesome.com) și adăugați linkul HTML furnizat �
 
 # Formular Bazat pe Șabloane
 
-Forms-Lab-2
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Generați o componentă **formular de înregistrare** și utilizați **HTML-ul** furnizat pentru a crea un formular **bazat pe șabloane**.
 
@@ -98,8 +98,7 @@ Pentru a schimba manual starea unui câmp de intrare în **invalid**, trebuie s�
 
 # Formulare Reactive
 
-Forms-Lab 3-1
-Forms-Lab 3-2
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Acum, haideți să creăm o componentă nouă cu numele **register-form-reactive** și să construim același formular folosind abordarea reactivă.
 
