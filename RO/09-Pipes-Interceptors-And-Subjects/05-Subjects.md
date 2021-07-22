@@ -4,7 +4,7 @@
 
 # Ce Este un Subject?
 
-js-interactive-pipes-interceptors-and-subjects-27-28-Subjects-and-what-is-a-subject
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-27-28-29-Subjects-and-what-is-a-subject-and-example-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Observables sunt oarecum **pasive, deoarece nu putem declanșa emiterea** unei valori noi în mod manual, lucru care **nu este optim în unele cazuri**. 
 
@@ -22,14 +22,7 @@ Putem avea o **abordare mai activă** folosind observables cu subjects.
 
 Asta nu înseamnă că trebuie să folosiți **mereu** subjects. Folosiți această noțiune în cazul în care aveți nevoie de ceva de tipul unui emițător de evenimente.
 
-[/slide]
-
-
-[slide hideTitle]
-
-# Subjects - Exemplu
-
-js-interactive-pipes-interceptors-and-subjects-29-Subjects-Example
+## Exemplu
 
 Pentru **a crea un Subject**, **importați** mai întâi clasa corespunzătoare din RxJS:
 
@@ -65,7 +58,7 @@ Observer Two: Goodbye
 
 # Behavior Subject
 
-js-interactive-pipes-interceptors-and-subjects-30-Behavior-Subject
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-30-31-Behavior-Subject-example-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 `BehaviorSubject` stochează valoarea "curentă", ceea ce înseamnă că **ultima valoare emisă** poate fi recuperată mereu.
 
@@ -75,13 +68,8 @@ Pentru a primi **ultima valoare emisă**, putem lua acea **valoarea accesând** 
 
 Dacă a **doua abordare este folosită**, BehaviorSubject va **emite în mod direct valoarea curentă** către abonat.
 
-[/slide]
 
-[slide hideTitle]
-
-# Behavior Subject - Exemplu
-
-js-interactive-pipes-interceptors-and-subjects-31-Behavrior-Subject-Example
+## Exemplu
 
 În acest exemplu, **inițializăm** un `BehaviorSubject` cu valoarea 5:
 
@@ -120,7 +108,7 @@ Second Observer: 8
 
 # Replay Subject
 
-js-interactive-pipes-interceptors-and-subjects-32-Replay-Subject
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-30-31-Behavior-Subject-example-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un `ReplaySubject` poate trimite **valori vechi** către **abonații noi**, similar lui `BehaviorSubject`.
 
@@ -132,13 +120,7 @@ El primește două argumente:
 
 - `windowsTime` - opțional, folosit pentru a defini **cât timp** vor fi **stocate** în memorie **valorile** vechi
 
-[/slide]
-
-[slide hideTitle]
-
-# Replay Subject - Exemplu
-
-js-interactive-pipes-interceptors-and-subjects-33-Replay-Subject-Example
+## Exemplu
 
 Următorul exemplu arată un `ReplaySubject` cu un `bufferSize` de 2:
 
@@ -179,7 +161,7 @@ Observer Two: D
 
 # Async Subject
 
-js-interactive-pipes-interceptors-and-subjects-34-Async-Subject
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-34-35-Async-Subject-example-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 `AsyncSubject` emite către abonații lui doar **ultima valoare pe care a primit-o**.
 
@@ -188,12 +170,9 @@ js-interactive-pipes-interceptors-and-subjects-34-Async-Subject
 Pentru **a opri execuția**, trebuie să apelăm metoda `complete()`.
 
 La fel ca în cazul unui `Subject` normal, puteți folosi un `AsyncSubject` pentru **multicasting**.
- 
-[/slide]
 
-[slide hideTitle]
+## Exemplu
 
-# Async Subject - Exemplu
 js-interactive-pipes-interceptors-and-subjects-35-Async-Subject-Example
 
 Acesta este un exemplu de `AsyncSubject`:

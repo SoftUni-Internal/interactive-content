@@ -4,7 +4,7 @@
 
 # Ce Sunt Pipes?
 
-js-interactive-pipes-interceptors-and-subjects-3-4-pipes-and-whar-are-pipes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-3-4-pipes-and-whar-are-pipes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pipe-urile provin din sistemele Linux/Unix, unde se poate scrie `|` în linia de comandă, iar ieșirea este transmisă de la o **comandă** la **alta**.
 
@@ -29,7 +29,7 @@ Câteva **pipe-uri încorporate** sunt:
 
 # Parametrizarea Pipe-urilor
 
-js-interactive-pipes-interceptors-and-subjects-5-Parameterizing-Pipes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-5-Parameterizing-Pipes-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Unele pipe-uri pot să accepte și parametri.
 
@@ -58,7 +58,7 @@ Pentru a învăța mai multe despre **alte pipe-uri încorporate**, vizitați [d
 
 # Crearea Pipe-urilor
 
-js-interactive-pipes-interceptors-and-subjects-6-7-Creating-Pipes
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-6-7-Creating-Pipes-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cel mai ușor mod de a crea un **pipe personalizat** este folosirea lui Angular CLI:
 
@@ -134,7 +134,7 @@ Ieșirea așteptată este "750".
 
 # Async Pipe - Exemplu
 
-js-interactive-pipes-interceptors-and-subjects-8-Async-Pipe-Example
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-8-Async-Pipe-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Async pipe-ul este folosit pentru a **rula cod asincron**.
 
@@ -156,7 +156,7 @@ notification = new Promise((resolve, reject) => {
 
 # Async Pipe - Observables
 
-js-interactive-pipes-interceptors-and-subjects-9-Async-Pipe-Observables
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-9-Async-Pipe-Observables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Atunci când lucrăm cu **Observables**, `AsyncPipe` se **abonează** în mod automat, **despachetează datele** și **anulează abonarea** atunci când o componentă este **distrusă**.
 

@@ -4,7 +4,7 @@
 
 # Ce Este JWT?
 
-js-interactive-pipes-interceptors-and-subjects-10-11-JWT-and-what-is-jwt
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-10-11-JWT-and-what-is-jwt-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **JSON Web Token** (JWT) este un standard pentru crearea unui **token** folosit pentru **autentificarea pe server**, care elimină nevoia de **session storage pe partea de server**. 
 
@@ -29,7 +29,7 @@ JWT este util pentru crearea unui **API pentru aplicații mobile**, deoarece **n
 
 # Când Trebuie să Folosiți JWT?
 
-js-interactive-pipes-interceptors-and-subjects-12-When-should-you-use-JWT
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-12-When-should-you-use-JWT-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JWT este cel mai des folosit pentru **autorizare** și pentru **schimbul de informații**:
 
@@ -61,7 +61,7 @@ Ele pot folosi aceeași cheie secretă pentru a **cripta** și **decripta** acel
 
 # Structura JWT 
 
-js-interactive-pipes-interceptors-and-subjects-13-JWT-Structure
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-13-JWT-Structure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un JSON Web Token consistă în **trei părți**, separate prin **puncte**:
 
