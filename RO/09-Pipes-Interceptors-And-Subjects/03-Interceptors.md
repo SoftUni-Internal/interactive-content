@@ -234,3 +234,11 @@ export class TokenInterceptor implements HttpInterceptor {
 De obicei **aruncăm** o **eroare** în instrucțiunea `return`.
 
 [/slide]
+
+[slide hideTitle]
+
+# Pipes and Interceptors: Demo
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-Pipes and Interceptors Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
