@@ -4,7 +4,7 @@
 
 # Prezentare Generală a Formularelor Reactive
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-37-38-Handling-Forms-and-reactive-forms-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Formularele reactive oferă o abordare bazată pe model reactiv pentru gestionarea intrărilor de formulare ale căror valori se schimbă în timp.
 
@@ -30,7 +30,7 @@ Această abordare a construirii formularelor aduce și mai multe avantaje, cum a
 
 # Modulul Formulare Reactive
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-39-Reactive-Forms-Module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a utiliza forme reactive, ar trebui să importăm **Reactive Forms Module**:
 
@@ -64,7 +64,7 @@ Folosim `formControl` pentru a urmări valoarea și validitatea unui singur cont
 
 # Clasa Componentelor
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-40-The-Component-Class-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În clasa componentelor, vom crea instanțe de **FormGroup** și **FormControl** pe care le vom lega mai târziu în șablon.
 
@@ -100,7 +100,7 @@ export class LaptopFormComponent {
 
 # Șablonul
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-41-Template-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Odată ce am creat controale în clasă, trebuie să asociem `formGroup` cu un element de formular din HTML:
 
@@ -126,7 +126,7 @@ Formularul de control este acum înregistrat la elementul de intrare  `processor
 
 # Accesarea Proprietăților Modelului de Formular
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-42-Accessing-Form-Model-Properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Există două moduri de a accesa proprietățile modelului formularului.
 
@@ -150,7 +150,7 @@ Ideea este de a scurta șablonul și de a transfera o astfel de logică în comp
 
 # Utilizarea Constructorilor de Formulare
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-43-Using-Form-Builder-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Majoritatea aplicațiilor Angular conțin multiple formulare.
 
@@ -185,7 +185,7 @@ this.laptopForm = this.fb.group({
 
 # Validarea
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-44-Validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Validarea formularelor **reactive** poate fi efectuată **sincron** și **asincron**.
 
@@ -214,9 +214,9 @@ Acest lucru se face din motive de performanță.
 
 [slide hideTitle]
 
-#  Configurarea Validării Încorporate
+# Configurarea Validării Încorporate
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-45-Setting-Up-Build-in-Validation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Definirea **FormGroup** cu un **FormBuilder** ne permite să adăugăm o serie de validări folosind clasa **Validators**.
 
@@ -245,7 +245,7 @@ Metoda creează o nouă instanță a clasei `FormGroup`.
 
 # Ajustarea Șablonului
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-46-Adjust-the-Template-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Directiva `formGroup` are o proprietate ``errors``
 
@@ -276,7 +276,7 @@ Aceasta înseamnă că elementul `span` cu directive`ngIf*`nu va fi afișat dac�
 
 #  Urmărirea și Reacționarea la Schimbări
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-47-Watching-and-Reacting-to-Changes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Folosind **Forme reactive** avem posibilitatea de a **urmări** și **a reacționa** la modificările din **grupurile** de formulare și controalele de **formulare**.
 
@@ -298,7 +298,7 @@ Evenimentul `valueChanges` returnează un Observable.
 
 # Transformări Reactive: Exemple
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-48-Reactive-Transformations-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Importați **throttleTime** din următoarea bibliotecă.
 

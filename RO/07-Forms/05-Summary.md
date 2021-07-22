@@ -4,7 +4,7 @@
 
 ## În această lecție ai învățat:
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-49-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Există trei tipuri de **directive**:
     * folosim directivele **component** pentru a defini interfețele utilizatorului    

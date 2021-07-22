@@ -195,7 +195,7 @@ import { Renderer2 } from '@angular/core'
 
 # Utilizarea Renderer2
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-9-Renderer2-Usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a utiliza Renderer2, trebuie să-l injectăm.
 
@@ -228,7 +228,7 @@ Renderer2 are multe alte metode, cum ar fi `setProperty`,` setValue` și `remove
 
 # Răspunsul la Evenimente
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-10-Respond-to-Events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O directivă ar putea fi mai dinamică.
 
@@ -261,7 +261,7 @@ Când indicatorul mouse-ului părăsește elementul, culoarea va fi setată la a
 
 # Folosirea HostBinding
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-11-Using-HostBinding-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Folosim **decoratorul** `HostBinding` pentru a marca o proprietate DOM ca proprietate obligatorie pentru gazdă.
 
