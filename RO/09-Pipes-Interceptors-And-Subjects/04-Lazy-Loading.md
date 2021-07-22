@@ -4,7 +4,7 @@
 
 # Ce Este Lazy Loading?
 
-js-interactive-pipes-interceptors-and-subjects-21-22-Lazy-Loading-and-what-is-lazy-loading
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-21-22-Lazy-Loading-and-what-is-lazy-loading-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Angular încarcă **toate modulele aplicației** odată ce aplicația pornește, chiar dacă **nu este nevoie de ele** la acel moment. 
 
@@ -32,7 +32,7 @@ Oricare dintre aceste **module adiționale** va fi încărcat doar atunci când 
 
 # Prepararea Pentru Lazy Loading
 
-js-interactive-pipes-interceptors-and-subjects-23-Preparing-for-Lazy-Loading
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-23-24-Preparing-for-Lazy-Loading-and-warning-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a vă **prepara** pentru **lazy loading**, creați un **modul funcțional** cu CLI:
 
@@ -48,13 +48,7 @@ Executarea acestei comenzi va crea un **folder** numit `products` care va includ
 
 Un `ProductsComponent` va fi **declarat**, iar `ProductsRoutingModule` va fi **importat** înăuntrul noului **modul funcțional**.
 
-[/slide]
-
-[slide hideTitle]
-
-# Nu Importați în Modulul Bootstrap
-
-js-interactive-pipes-interceptors-and-subjects-24-Warning-Don't-Import-in-Bootstrap-Module
+## Nu Importați în Modulul Bootstrap
 
 Nu trebuie **niciodată** să importați un modul funcțional înăuntrul lui `app.module.ts`.
 
@@ -68,7 +62,7 @@ Din moment ce `AppModule` este folosit pentru **bootstrapping-ul aplicației**, 
 
 # Loading Children
 
-js-interactive-pipes-interceptors-and-subjects-25-Load-Children
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-25-Load-Children-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Pentru a aplica lazy loading pentru un modul funcțional**, mergeți la `src/app/app-routing.module.ts`:
 
@@ -92,7 +86,7 @@ Decalarați noua cale `products` în matricea `routes` și folosiți `loadChildr
 
 [slide hideTitle]
 
-# Protejarea unui Modul cu CanLoad
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-26-Protect-Module-with-CanLoad-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 js-interactive-pipes-interceptors-and-subjects-26-Protect-Module-with-CanLoad
 
