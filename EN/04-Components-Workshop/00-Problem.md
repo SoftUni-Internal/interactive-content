@@ -44,7 +44,7 @@ Make sure you follow these steps:
 
 `mongorestore -d forum C:\Users\Name\Desktop\forum`
 
-**Note**: **You should replace** `C:\Users\Name\Desktop\forum` **with the path of the folder** `forum` **on your computer!!**
+**Note**: **You should replace** `C:\Users\Name\Desktop\forum` **with the path of the folder** `forum` **on your computer!**
 
 If it runs correctly, the console output should have a similar look to this one: 
 
@@ -90,8 +90,7 @@ Here are the specifications for the REST API endpoints:
 | `GET`    | Get user info / **Verify if user is logged in** | `/users/profile`                  |             | Yes |
 | `PUT`    | Update user info      | `/users/profile`                 | `username`, `email`, `tel` - optional  | Yes |
 
-
-## Logged/Unlogged User
+## Logged In/Logged Out User
 
 **NOTE: Because we have not covered authentication yet (logging in and registering), you can hardcode it using a variable.**
 
@@ -101,35 +100,25 @@ Here are the specifications for the REST API endpoints:
 
 [slide hideTitle]
 
-# Implementation of the Main and Aside Sections
+# Initializing Angular
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+[/slide]
+
+[slide hideTitle]
+
+# Application Structure
+
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+[/slide]
+
+[slide hideTitle]
+
+# Implementing the Theme and Post Components
+
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-After the backend is ready to use, you should **fetch all themes** and **list them** on the home page in the format provided in the skeleton.  
-
-## Main Section
-
-The **themes in the main** section should be **sorted in descending order according to the subscribers.** 
-
-Each theme should have a **title**, a **date** (of creation), the **username** of its creator, and a **count of the subscribers** of that theme. 
-
-[image assetsSrc="Angular-Components-Workshop-New-2.png" /]
-
-## Aside Section
-
-In the **Recent posts section, only the 5 latest posts** should be rendered.
-
-`https://localhost:3000/api/posts?limit=5` 
-
-The posts will be returned from the REST-API **sorted by time of creation**.
-
-Each component should contain the **theme title**, the **username** of the last user to post a comment in the theme thread, and the **time** the post was created. 
-
-[image assetsSrc="Angular-Components-Workshop-New-3.png" /]
 
 [/slide]
 
@@ -147,6 +136,14 @@ Each component should contain the **theme title**, the **username** of the last 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-8-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+After the backend is ready to use, you should **fetch all themes** and **list them** on the home page in the format provided in the skeleton.  
+
+The **themes in the main** section should be **sorted in descending order according to the subscribers.** 
+
+Each theme should have a **title**, a **date** (of creation), the **username** of its creator, and a **count of the subscribers** of that theme. 
+
+[image assetsSrc="Angular-Components-Workshop-New-2.png" /]
+
 [/slide]
 
 [slide hideTitle]
@@ -155,6 +152,16 @@ Each component should contain the **theme title**, the **username** of the last 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-9-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
+In the **Recent posts section, only the 5 latest posts** should be rendered.
+
+`https://localhost:3000/api/posts?limit=5` 
+
+The posts will be returned from the REST-API **sorted by time of creation**.
+
+Each component should contain the **theme title**, the **username** of the last user to post a comment in the theme thread, and the **time** the post was created. 
+
+[image assetsSrc="Angular-Components-Workshop-New-3.png" /]
+
 [/slide]
 
 [slide hideTitle]
@@ -162,7 +169,5 @@ Each component should contain the **theme title**, the **username** of the last 
 # Bonus: Code Optimization
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Bonus-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Bonus-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

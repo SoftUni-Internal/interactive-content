@@ -4,6 +4,8 @@
 
 # Cerințe Privind Sarcini
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Iată un link către** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/new-resources-workshop-Components.zip) **pentru această sarcină.**
 
 Această sarcină conține un schelet de program care constă din coduri **HTML** și **CSS**, vă rugăm să nu modificați structura acestuia. 
@@ -21,6 +23,8 @@ Prima parte a sarcinii este de a împărți codul HTML și CSS din schelet **în
 [slide hideTitle]
 
 # MongoDB
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Înainte de a începe un nou proiect în Angular, trebuie să instalați MongoDB.
 
@@ -40,7 +44,7 @@ Asigurați-vă că urmați acești pași:
 
 `mongorestore -d forum C:\Users\Name\Desktop\forum`
 
-**Notă**: **Ar trebui să înlocuiți** `C:\Users\Name\Desktop\forum` **cu calea folderului** `forum` **de pe calculatorul dumneavoastră!!**
+**Notă**: **Ar trebui să înlocuiți** `C:\Users\Name\Desktop\forum` **cu calea folderului** `forum` **de pe calculatorul dumneavoastră!**
 
 Dacă funcționează corect, ieșirea de pe consolă ar trebui să aibă un aspect similar cu acesta:
 
@@ -55,6 +59,8 @@ Asta este! Acum puteți verifica dacă aveți db cu comanda "show dbs":
 [slide hideTitle]
 
 # REST API
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Puteți găsi **REST API** în [resources](https://videos.softuni.org/resources/javascript/javascript-angular/Rest-api-resources.zip).
 
@@ -94,8 +100,41 @@ Utilizatorii **neînregistrați** ar trebui să vadă butoanele / linkurile **Lo
 
 [slide hideTitle]
 
-# Implementarea Secțiunii Principale
+# Inițializarea Angular
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-4-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Structura Aplicației
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Implementarea Componentelor Theme și Post
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Separarea Stilurilor CSS 
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Redarea Temei
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-8-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 După ce backend-ul este gata de utilizare, trebuie să **preluați toate temele** și **să le listați** pe pagina de pornire în formatul furnizat în schelet.  
 
@@ -105,8 +144,11 @@ Fiecare temă ar trebui să aibă un **title** (titlu), o **date**, **username**
 
 [image assetsSrc="Angular-Components-Workshop-New-2.png" /]
 
-## Implementarea Secțiunii Aparte
+[/slide]
 
+[slide hideTitle]
+
+# Redarea Postări
 
 În secțiunea **Postări recente, trebuie redate doar cele mai recente 5 postări**.
 
@@ -120,39 +162,10 @@ Fiecare componentă trebuie să conțină **theme title**, **username** al ultim
 
 [/slide]
 
-
 [slide hideTitle]
 
-# Separating CSS Styles
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[/slide]
-
-[slide hideTitle]
-
-# Rendering Themes
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-8-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[/slide]
-
-[slide hideTitle]
-
-# Rendering Posts
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Part-9-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[/slide]
-
-[slide hideTitle]
-
-# Bonus: Code Optimization
+# Bonus: Optimizarea Codului 
 
 [video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Bonus-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Bonus-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 [/slide]
-
-
