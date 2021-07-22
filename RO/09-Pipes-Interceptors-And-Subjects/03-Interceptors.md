@@ -4,7 +4,7 @@
 
 # Prezentarea Generală a Interceptorilor
 
-js-interactive-pipes-interceptors-and-subjects-14-15-HTTP-Interceptors-and-interceptors-overview
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-14-15-HTTP-Interceptors-and-interceptors-overview-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Interceptorii HTTP** sunt o funcționalitate în Angular care **ne oferă o cale foarte eficientă de a intercepta solicitările în curs de desfășurare** sau răspunsurile primite, folosind `HttpClient`.
 
@@ -28,7 +28,7 @@ Interceptorii pot fi **folosiți** îm următoarele cazuri, dar **nu sunt limita
 
 # Crearea unui Interceptor HTTP
 
-js-interactive-pipes-interceptors-and-subjects-16-Create-Http-Interceptor
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-16-Create-Http-Interceptor-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cel mai simplu mod de a crea un interceptor este folosing **CLI-ul Angular**:
 
@@ -71,7 +71,7 @@ Facem acest lucru pentru a putea **folosi** metoda `intercept()`.
 
 # Interceptarea Solicitărilor
 
-js-interactive-pipes-interceptors-and-subjects-17-Intecepting-Requests
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-17-Intecepting-Requests-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Toate solicitările HTTP** trec prin metoda `intercept()`.
 
@@ -106,7 +106,7 @@ Apoi, putem transmite **solicitarea modificată** metodei `next.handle`:
 
 # Furnizarea Interceptorului
 
-js-interactive-pipes-interceptors-and-subjects-18-Provide-the-Interceptor
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-18-Provide-the-Interceptor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Interceptorul** nostru nou creat trebuie **adăugat** la matricea `HTTP_INTERCEPTORS`.
 
@@ -164,7 +164,7 @@ Proprietatea `multi` ar trebui să fie setată la `true` dacă plănuiți să of
 
 # Gestionarea Răspunsurilor
 
-js-interactive-pipes-interceptors-and-subjects-19-Handle-Responses
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-19-Handle-Responses-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru a **gestiona răspunsuri**, folosim operatorii `pipe` și `tap` din RxJS:
 
@@ -199,7 +199,7 @@ Metoda `tap` este folosită pentru executarea **efectelor secundare**, în acest
 
 # Gestionarea Erorilor de Server
 
-js-interactive-pipes-interceptors-and-subjects-20-Handle-Server-Errors
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-20-Handle-Server-Errors-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Operatorii `catchError` și `throwError` sunt folosiți pentru **a gestiona erorile de server**:
 
