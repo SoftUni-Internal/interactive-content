@@ -86,9 +86,9 @@ Decalarați noua cale `products` în matricea `routes` și folosiți `loadChildr
 
 [slide hideTitle]
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-26-Protect-Module-with-CanLoad-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+# Protejarea unui Modul cu CanLoad
 
-js-interactive-pipes-interceptors-and-subjects-26-Protect-Module-with-CanLoad
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-26-Protect-Module-with-CanLoad-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 O clasă poate **implementa** interfața `CanLoad` pentru a **acționa ca o gardă** care **decide** dacă **copiii** pot fi **încărcați**.
 
