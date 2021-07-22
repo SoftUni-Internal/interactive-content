@@ -4,7 +4,7 @@
 
 # Introducere în NgRx
 
-03-04-introduction-to-state-management
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/11-State-Management/03-04-introduction-to-state-management-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Framework-ul **NgRx** a fost creat pentru a construi **aplicații reactive Angular**.
 
@@ -26,7 +26,7 @@ Inspirat de **Redux**, **NgRx Store** face ca lucrul cu date complexe să fie ma
 
 # Pachetele NgRx
 
-05-NgRx-Packages
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/11-State-Management/05-NgRx-Packages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Bibliotecile NgRx** sunt împărțite în **patru categorii principale**:
 
@@ -72,7 +72,7 @@ Inspirat de **Redux**, **NgRx Store** face ca lucrul cu date complexe să fie ma
 
 # Ciclul de Viață al Managementului de Stare
 
-06-State-Management-Lifecycle
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/11-State-Management/06-State-Management-Lifecycle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Cele mai importante trei bucăți ale **ciclului de viață al managementului de stare** sunt **store**, **actions**, și **reducers**.
 
