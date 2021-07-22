@@ -4,7 +4,7 @@
 
 # Task Requirements
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-0-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/Modules-and-routing-resources.zip) **for this task.**
 
@@ -26,9 +26,9 @@ We will fix that later when we acquire the knowledge to do so.
 
 # Navigation Bar
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Logged in the navigation bar
+## Logged in Users
 
 **“Logged in”** and **“not logged in”** users can see 3 options in the center of the navigation:
 
@@ -46,7 +46,7 @@ When the "**user**" is "**logged in**" they should see the following navigation:
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop-New.png" /]
 
-## Not logged in the navigation bar
+## Not Logged in Users
 
 When the user is "**not logged in**" they should see the following navigation:  
 
@@ -62,9 +62,9 @@ When the user is "**not logged in**" they should see the following navigation:
 
 # Home Page
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-## Not logged in
+## Not Logged in
 
 This is the home page `localhost:4200/home`, a welcome user page.
 
@@ -88,7 +88,7 @@ The logged in user view:
 
 # Register (Not Logged in)
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is the register page `localhost:4200/register`. 
 
@@ -108,7 +108,7 @@ So, each of them can log in successfully.
 
 # Login (Not Logged in)
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is the login page `localhost:4200/login`. 
 
@@ -126,9 +126,21 @@ Each of them should log in successfully.
 
 [slide hideTitle]
 
-# Themes page 
+# Log Out Page
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+The \[**Logout**\] **tag** should refer to `localhost:4200/logout`:
+
+[image assetsSrc="Angular-Modules-And-Routing-Workshop-New.png" /]
+
+[/slide]
+
+[slide hideTitle]
+
+# Themes Page 
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-8-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Not Logged in
 
@@ -158,7 +170,9 @@ This is the themes page `localhost:4200/themes` for logged in users.
 
 [slide hideTitle]
 
-# Theme comments 
+# Theme Comments 
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-9-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Not Logged in
 
@@ -179,7 +193,7 @@ The logged in user can **add new comments** or **like** the other users' posts.
 
 # Create New Theme (Logged in only)
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-11-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is the create new theme page `localhost:4200/themes` where each **user** (logged in) can create their own theme.  
 
@@ -197,7 +211,7 @@ After a successful theme creation, **redirect** the current user to the **theme 
 
 # Profile - Logged in
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-12-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is the profile page `localhost:4200/profile`. 
 
@@ -213,9 +227,9 @@ The "Edit" button will replace the information fields with input fields, but thi
 
 [slide hideTitle]
 
-# Invalid routes
+# Invalid Routes
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/07-Forms/js-angular-forms-7-8-Attach-Styles-to-Referenced-Elements-and-warning-use-renderer2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-13-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is the page for all **invalid routes** `localhost:4200/??????`. 
 
@@ -223,7 +237,9 @@ Use it if an invalid path is given.
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop-New-13.png" /]
 
-## Protected routes
+## Protected Routes
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-14-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Make sure all **users** (logged in) pages are **protected**. 
 

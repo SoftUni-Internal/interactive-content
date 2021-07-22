@@ -4,6 +4,8 @@
 
 # Cerințe Privind Sarcini
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-0-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Aici aveți un link** [resources](https://videos.softuni.org/resources/javascript/javascript-angular/Modules-and-routing-resources.zip) **pentru această cerință.**
 
 Până acum, am creat **o pagină dinamică** care **listează toate temele** sortate în ordine descrescătoare în funcție de numărul de abonați.
@@ -23,6 +25,8 @@ O vom remedia mai târziu atunci când dobândim cunoștințele necesare pentru 
 [slide hideTitle]
 
 # Bara de Navigare
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Bara de Navigare Pentru Utilizatori Logați
 
@@ -58,6 +62,8 @@ Când utilizatorul este "**not logged in**" ar trebui să vadă următoarea navi
 
 # Pagina Principală
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## Nelogat
 
 Aceasta este pagina principală `localhost:4200/home`, o pagină de bun venit.
@@ -82,6 +88,8 @@ Vizualizarea utilizatorului conectat:
 
 # Pagina de Înregistrare (Nelogat)
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Aceasta este pagina de înregistrare `localhost:4200/register`. 
 
 Acesta va fi **punctul** aplicației dvs. în care proprietatea falsă **isLoggedIn** poate fi schimbată în **true**.
@@ -100,7 +108,9 @@ Deci, fiecare dintre ei se poate conecta cu succes.
 
 # Login (Not Logged in)
 
-Aceasta este pagina de înregistrare `localhost:4200/login`. 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-6-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Aceasta este pagina de аutentificare (**log in**) `localhost:4200/login`. 
 
 Acesta va fi un alt **punct** al aplicației în care proprietatea falsă **isLoggedIn** poate fi schimbată în **true**.
 
@@ -116,7 +126,21 @@ Fiecare dintre ei ar trebui să se conecteze cu succes.
 
 [slide hideTitle]
 
+# Log Out Page
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+**Eticheta** \[**Logout**\], ar trebui să se refere la `localhost:4200/logout`:
+
+[image assetsSrc="Angular-Modules-And-Routing-Workshop-New.png" /]
+
+[/slide]
+
+[slide hideTitle]
+
 # Pagina Pentru Teme 
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-8-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Nelogat
 
@@ -148,6 +172,8 @@ Aceasta este pagina temelor `localhost:4200/themes` pentru utilizatorii autentif
 
 # Comentariile Temelor 
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-9-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## Nelogat
 
 Aceasta este pagina de comentarii tematice `localhost:4200/themes/:themeId`, unde utilizatorul poate vedea toate postările pentru tema selectată. 
@@ -167,6 +193,8 @@ Utilizatorul conectat poate **adăuga noi comentarii** sau **să aprecieze** pos
 
 # Pagina Pentru Crearea unei Noi Teme (Doar Utilizatori Logați)
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-11-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Aceasta este pagina de creare a unei teme noi `localhost:4200/themes` unde fiecare **utilizator** (conectat) își poate crea propria temă.  
 
 - Când butonul **"Post"** este apăsat, poți încerca să creezi o **"POST request"** la `localhost:4200/themes` cu informațiile temei date. 
@@ -182,6 +210,9 @@ După crearea cu succes a temei, **redirecționați** utilizatorul curent către
 [slide hideTitle]
 
 # Profil - Logat
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-12-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Aceasta este pagina de profil `localhost:4200/profile`. 
 
@@ -199,13 +230,21 @@ Butonul "Edit" va înlocui câmpurile de informații cu câmpuri de intrare, dar
 
 # Rutele Nevalide
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-13-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Aceasta este pagina pentru toate **rutele nevalide** `localhost:4200/??????`. 
 
 Folosiți-l dacă este dată o cale nevalidă.
 
 [image assetsSrc="Angular-Modules-And-Routing-Workshop-New-13.png" /]
 
-## Rute Protejate
+[/slide]
+
+[slide hideTitle]
+
+# Rute Protejate
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-14-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Asigurați-vă că toate paginile **utilizatorilor**(conectați) sunt **protejate**. 
 
