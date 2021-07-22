@@ -26,7 +26,7 @@ Formularele **reactive** sunt mai ușor de reutilizat și testat, fiind în acel
 
 # Formulare Bazate pe Șabloane
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/Intro-to-Angular-and-Typescript/Intro-to-Angular-and-Typescript-1-2-introduction-and-table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-14-Template-Driven-Forms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Formularele bazate pe șabloane nu sunt la fel de scalabile ca formularele reactive. 
 
@@ -44,6 +44,8 @@ Urmați acești pași atunci când creați un formular scriind șabloane utiliz�
 [slide hideTitle]
 
 # Problemă: Crearea unui Formular Bazat pe Șabloane
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/07-Forms/js-angular-forms-15-problem-Create-a-Template-Driven-Form-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Creați un formular **bazat pe șabloane** care să arate astfel:
 
