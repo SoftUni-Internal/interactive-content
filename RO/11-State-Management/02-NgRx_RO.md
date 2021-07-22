@@ -4,7 +4,7 @@
 
 # NgRx Store
 
-07-08-NgRx-and-ngrx-store
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/11-State-Management/07-08-NgRx-and-ngrx-store-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Biblioteca `@ngrx/store` este un **instrument de management al stării** care implementează un tipar **Redux** folosind **observabile** RxJS.
 
@@ -37,7 +37,7 @@ Această diagramă simplă ilustrează **fluxul de date de bază în NgRx**.
 
 # Acțiunile
 
-09-Actions
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/11-State-Management/09-Actions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Acțiunile** sunt folosite pentru a **descrie evenimente** care **au loc** pe parcursul utilizării unei aplicații.
 
@@ -67,7 +67,7 @@ Acțiunile pot să conțină de asemenea o **sarcină utilă** opțională de da
 
 # Crearea Acțiunilor
 
-10-Create-Actions  
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/11-State-Management/10-Create-Actions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Acest exemplu arată trei acțiuni pentru **creștere**, **scădere** și **resetare** a unei **componente de contorizare**.
 
@@ -131,7 +131,7 @@ export const registrationSuccess = createAction(
 
 # Reductorii
 
-11-Reductors
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/11-State-Management/11-Reducers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Folosim **reductorii (funcțiile de reducere)** pentru a defini **cum se modifică starea aplicației noastre**.
 
@@ -155,7 +155,7 @@ O funcție de reducere acceptă:
 
 # Definirea unei Funcții Reductor
 
-12-Define-a-Reducer-Function
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/11-State-Management/12-Define-a-Reducer-Function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Funcția de reducere sau reductorul** va fi folosită pentru a **modifica starea în componenta de contorizare (Counter Component)** pe baza **acțiunilor** pe care le-am creat mai devreme.
 
@@ -194,7 +194,7 @@ Invocând funcția `on()`, **facem asocieri între acțiuni și modificări ale 
 
 # Adăugarea StoreModule.forRoot
 
-13-Add-the-Store-Module.forRoot
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/11-State-Management/13-Add-the-Store-Module.forRoot-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pentru ca magazinul să poată fi **accessibil** din **oricare parte a aplicației noastre** trebuie să mergem la `app.module.ts` și să adăugăm modulul `StoreModule.forRoot()` în matricea de importuri:
 
@@ -228,7 +228,7 @@ Aici, parsăm un obiect cu o singură proprietate `count` care stochează funcț
 
 # Crearea unei Componente de Contorizare
 
-14-15-Create-a-Counter-Component
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/11-State-Management/14-15-Create-a-Counter-Component-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Creăm o nouă **componentă de contorizare** folosind **Angular CLI**:
 
@@ -326,6 +326,7 @@ Avem următoarele **butoane**:
 
 # NgRx: Demo
 
-11-NgRx-Demo
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/11-State-Management/11-NgRx-Demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
+
