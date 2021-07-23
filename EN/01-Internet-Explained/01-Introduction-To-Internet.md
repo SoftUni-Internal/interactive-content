@@ -6,31 +6,31 @@
 
 The Internet is a relatively **new** technology that has gone through **rapid development** in the most recent decades.
 
-Its history marks its **beginning** in the **1960s**, with the development of the first electronic computer, the **IBM PC**.
+Its history marks its **beginning** in the **1960s**, when Paul Baran, an **engineer**, proposes a distributed network based on data in message blocks.
 
-Back then, the basic idea was to **link** computers in a **network**, allowing for **data transfer** between them.
+Back then, the basic idea was to **link** a few computers in a **network**, and **transfer** data between them by splitting information into "**packets**"
 
-The first **packet-switched** network, **ARPANET**, was **established** in the US in 1969 by Bob Taylor, an IBM employee, and David J. Watson, a Bell Labs employee.
+**Packet-switching** is a way of grouping data into **packets**, allowing for a **reliable and more efficient** transfer.
 
-**TCP/IP** became a reality in the 70s. Computers were **linked independently** of each other.
+The first **packet-switched** network, **ARPANET**, was **established** in the US in 1969 by Bob Taylor, an IBM employee, building on the ideas of J. C. R. Licklider.
+
+The **Internet protocol suite** (TCP/IP) was **implemented** by Vint Cerf and Bob Kahn in 1974.
+
+The Internet Protocol (IP), part of the TCP/IP suite, is responsible for transferring packets between computers, based on a unique identifier called an "**IP address**".
 
 The **Advanced Research Projects Agency Network** (ARPANET) was one of the first networks to **adopt** the **Internet Protocol**.
 
-The first **LANs** and **domains** were created in the 1980s.
-
-LAN, short for **Local Area Network**, is a **collection of computers** connected to each other by a **network cable**.
-
-A **domain** is a **name** that is **assigned** to a **LAN**.
+Internet service providers (ISPs) emerged in **1989** to provide **Internet access** to the general public.
 
 The 90s were a pivotal point in Internet history. 
 
 They marked the creation of **HTML**, **Java**, **the first Internet virus**, and major companies like **Google**, **Apple**, **Amazon**, and **eBay**.
 
-At the beginning of the 21st century, the **dot-com** bubble burst.
+From 1997 to 2001, the "**dot-com**" speculative investment bubble **exploded**, with many companies going bankrupt after this financial crash.
 
-Some companies were erased while others, such as **Google**, became giants.
+Other companies, such as Google, became even more prominent market leaders in the **2000s**.
 
-**Wireless access** (Wi-Fi, short for Wireless Fidelity) became the normal way to access the Internet in the beginning of the 2010s.
+**Wireless access** became the new way to access the Internet in the 21st century, with Apple adopting the **Wi-Fi** standard in their iBook series of laptops.
 
 [/slide]
 
@@ -44,17 +44,13 @@ Using cables, buried **underground** or deep in the **oceans**, it **connects** 
 
 These cables, usually **fiber-optic**, transfer data at very **high speeds** (up to **10 Gbps**).
 
-In recent years, however, there are other ways to **link devices**.
+In recent decades, however, other ways to **link devices** emerged.
 
-Some devices get linked via a **satellite signal** or a **phone network**.
+Some devices connect to the internet via a **satellite signal** or a **cellular network**.
 
-The most common way to **access** the Internet is via **WAN** (**W**ireless **A**ccess **N**etwork).
+The most common way to **access** the Internet nowadays is via **Wi-Fi**, a **broadband** connection.
 
-WAN is a **broadcast** network that **transfers** data between **multiple** devices.
-
-It is a **virtual** network, meaning that **no two devices** are connected to the same **router**.
-
-Wi-Fi is a **family** of **wireless networking** protocols.
+Wi-Fi is also a **family** of **wireless networking** protocols.
 
 It is based on the **802.11** standard, **part of the IEEE 802** set of techincal standards.
 
@@ -116,7 +112,7 @@ Nowadays, there are **platforms** for anything - from social media applications 
 
 Many **businesses are thriving** because of the **great advertising opportunities** the Internet provides.
 
-However, this technology has its flaws too - **less room for privacy** and **cyber-security**.
+However, this technology has its flaws too - **less room for privacy** and **cyber-security** loopholes that bad actors can exploit.
 
 [/slide]
 
