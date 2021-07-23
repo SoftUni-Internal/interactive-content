@@ -103,7 +103,7 @@ They take the role of a **Firewall**, **controlling** the **access** to the netw
 | --- | --- |
 | Transmit frames between two segments of a Local Area Network | They are protocol converters |
 | Operate on the physical and data layers | Operate on all the layers |
-| Check the frame's destination address | Enables the connection of two networks with different protocols |
+| Check the frame's destination address | Enable the connection of two networks with different protocols |
 
 [/slide]
 
