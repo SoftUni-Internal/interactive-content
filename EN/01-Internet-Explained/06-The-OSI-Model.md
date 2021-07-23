@@ -14,7 +14,7 @@ Every layer **provides services** for layer **above** and is **served** by the l
 
 This model is essential to learn as it **improves** the **overall understanding of the Internet**.
 
-Being familiar with it also makes it easier for **troubleshooting** and **error handling.**
+Being familiar with it also makes **troubleshooting** and **error handling** easier.
 
 [/slide]
 

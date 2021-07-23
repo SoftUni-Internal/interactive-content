@@ -119,9 +119,9 @@ The **NIC** allows the computer to communicate on the **LAN (Local Area Network)
 
 It could be either **external** or **internal**.
 
-External **NICs** are connected to the **motherboard** via **USB**.
+External **NICs** are connected to a computer via **USB**.
 
-Internal **NICs** could be connected through a **PCI** connector.
+Internal **NICs** could be connected through a **PCI** connector on the **motherboard** itself.
 
 It is responsible for **transmitting** and **receiving** the **packets**.
 
