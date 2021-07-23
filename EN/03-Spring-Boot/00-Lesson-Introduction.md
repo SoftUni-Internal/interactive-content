@@ -2,9 +2,11 @@
 
 [slide hideTitle]
 
-## Lesson Content:
+# Lesson Content
 
-**1. What is Spring Boot?**
+## In this lesson you will learn:
+
+**1. What Spring Boot is**
 
 - How to create a Spring Boot project
 

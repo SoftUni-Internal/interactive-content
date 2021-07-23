@@ -2,6 +2,8 @@
 
 # Summary
 
+## In this lesson you learned:
+
 **Spring Boot Components**
 
 - **Spring Boot** has the following components:
@@ -57,9 +59,8 @@ public class BeanForDestruction implements DisposableBean {
 
 - **Spring Boot** is configured in **external files** like `application.properties`
 
-**Spring Data**
 
-- **Entities** are a way to **link** a **class** with a **database table**
+- **Spring Data Entities** are a way to **link** a **class** with a **database table**
 
 ```java
 @Entity
@@ -100,14 +101,11 @@ public class CatServiceImpl implements CatService {
 }
 ```
 
-## The topic of the next lesson is:
+## In the next lesson you will learn:
 
-**Spring Introduction (MVC)**
-
-- A deeper look into the **Inversion of Control** principle
-
-- Code **layers**
-
-- Working with **thin controllers**
+- What the **Spring MVC** is
+    * the **Inversion of Control** principle
+    * what code **layers** are
+    * working with **thin controllers**
 
 [/slide]
