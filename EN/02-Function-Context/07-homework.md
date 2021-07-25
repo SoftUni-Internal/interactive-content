@@ -225,7 +225,7 @@ The output must be a Fibonacci number and must be **returned** from the function
 
 # Examples
 
-**Sample exectuion:**
+**Sample execution:**
 
 ```js
 let fib = getFibonator();
