@@ -12,7 +12,7 @@ There are 3 ways to register an event:
 
 - Using HTML Attributes
 
-- Using a DOM event handler
+- Using DOM element properties
 
 - Using DOM event handler
 
