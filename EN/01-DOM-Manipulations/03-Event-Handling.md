@@ -26,7 +26,7 @@ There are 3 ways to register an event:
 
 To be able to use our **event handler function**, we need the `.addEventListener()` method.
 
-The first one is the **type**, which is a case sensitive string representing the event type to listen for.
+The first parameter is the **type**, which is a case sensitive string representing the event type to listen for.
 
 The second one is our **handler** function. 
 
