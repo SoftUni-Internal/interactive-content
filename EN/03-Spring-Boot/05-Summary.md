@@ -5,11 +5,10 @@
 ## In this lesson you learned:
 
 - **Spring Boot** consists of four **components**:
-
-  - **Starters**
-  - **Auto-Configuration**
-  - **CLI**
-  - **Actuator**
+    * **Starters**
+    * **Auto-Configuration**
+    * **CLI**
+    * **Actuator**
 
 - **Beans** are objects within an **IoC** container
 
@@ -21,13 +20,12 @@ public Animal getDog(){
 ```
 
 - A **bean** can have six different contexts:
-
-  - **Singleton**
-  - **Prototype**
-  - **Request**
-  - **Session**
-  - **Application**
-  - **WebSocket**
+    * **Singleton**
+    * **Prototype**
+    * **Request**
+    * **Session**
+    * **Application**
+    * **WebSocket**
 
 - **Spring Boot** offers **annotations** and **interfaces** that run functions **before** or **after** a bean's **lifecycle phases**
 
@@ -70,7 +68,9 @@ public class Cat {
     private long id;
 
     private String name;
-    //GETTERS AND SETTERS
+
+    // Getters and setters...
+
 }
 ```
 
@@ -82,7 +82,7 @@ public interface CatRepository extends JpaRepository<Cat, Long> {
 }
 ```
 
-- **Services** contain all the **business logic**
+- **Services** contain the **business logic** of the application
 
 ```java
 @Service
@@ -95,7 +95,9 @@ public class CatServiceImpl implements CatService {
     }
 
     @Override
-    public void buyCat(CatModel catModel) { //TO DO: Implement the method }
+    public void buyCat(CatModel catModel) { 
+        // TODO: Implement the method 
+    }
 }
 ```
 
@@ -104,6 +106,6 @@ public class CatServiceImpl implements CatService {
 - What the **Spring MVC** is
     * the **Inversion of Control** principle
     * what code **layers** are
-    * working with **thin controllers**
+    * how to work with **thin controllers**
 
 [/slide]
