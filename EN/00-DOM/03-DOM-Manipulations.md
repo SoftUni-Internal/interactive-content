@@ -573,7 +573,7 @@ let input = document.getElementById("first-input");
 input.setAttribute("name", "username"); // Sets the value of the name attribute to "username"
 ```
 
-- `removeAttribute()` - **Removes** from the given HTML element
+- `removeAttribute()` - **Removes** the attribute from the given HTML element
 
 Accepts one parameter - **the name of the attribute**.
 
