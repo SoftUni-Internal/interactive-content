@@ -184,7 +184,7 @@ asyncSubject.subscribe({
   next: (value) => console.log(`Observer: ${value}`)
 });
 
-// Nothing will be printed until complete() is invoked.
+// Nothing will be printed unless complete() is invoked.
 
 asyncSubject.next(30);
 

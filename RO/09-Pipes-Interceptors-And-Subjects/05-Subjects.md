@@ -108,7 +108,7 @@ Second Observer: 8
 
 # Replay Subject
 
-Replay-subject-video
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/RO/09-Pipes-Interceptors-Subjects/js-interactive-pipes-interceptors-and-subjects-32-33-Replay-Subject-example-NEW-,1080p,720p,480p,360,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Un `ReplaySubject` poate trimite **valori vechi** către **abonații noi**, similar lui `BehaviorSubject`.
 
@@ -187,7 +187,7 @@ asyncSubject.subscribe({
   next: (value) => console.log(`Observer: ${value}`)
 });
 
-// Nothing will be printed until complete() is invoked.
+// Nothing will be printed unless complete() is invoked.
 
 asyncSubject.next(30);
 
