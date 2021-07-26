@@ -28,11 +28,11 @@ As covered previously, **packets** hold important information in their **headers
 
 These are some of the things **TCP** checks for:
 
-- `Packet number` - The total number of packets
+- `Packet number` - the total number of packets
 
-- `Packet size` - The expected size of the packets
+- `Packet size` - the expected size of the packets
 
-- `Packet order` - How packets were originally ordered
+- `Packet order` - how packets were originally ordered
 
 If it finds a **problem** in any of these categories, it **discards** the **packet**.
 
@@ -62,13 +62,13 @@ Often referred to as the "**fire-and-forget**" protocol, it is not concerned wit
 
 The following list aims to compare **TCP** and **UDP**:
 
-- `Reliability` - **TCP** is the clear winner here as packets are **neatly-organised** and **checked for errors**.
+- `Reliability` - **TCP** is the clear winner here as packets are **neatly-organised** and **checked for errors**
 
-- `Speed` - **UDP** is faster than **TCP** as it does not lose time to **recover errors**.
+- `Speed` - **UDP** is faster than **TCP** as it does not lose time to **recover errors**
 
-- `Header size` - Headers in **UDP** are **8 bytes**, that is 250% lighter than **TCP** headers (**20 bytes**).
+- `Header size` - headers in **UDP** are **8 bytes**, that is 250% lighter than **TCP** headers (**20 bytes**)
 
-- `Data integrity` - **TCP** uses **handshaking protocols** to ensure the integrity of the data, while **UDP does not**.
+- `Data integrity` - **TCP** uses **handshaking protocols** to ensure the integrity of the data, while **UDP does not**
 
 While **TCP** is more widespread, **UDP** still has some use cases.
 

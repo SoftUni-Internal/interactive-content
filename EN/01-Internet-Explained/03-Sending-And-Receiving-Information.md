@@ -22,13 +22,13 @@ On arrival, the **packets** are brought back together, recreating the original f
 
 For **packets** to work properly, the carry some **crucial information** with them, called **headers**.
 
-- `Addresses` - Where a **packet** **comes from** and where it is **supposed to go**
+- `Addresses` - where a **packet** **comes from** and where it is **supposed to go**
 
-- `Length` - The **size of a packet**
+- `Length` - the **size of a packet**
 
-- `Payload` - The **data** in the packet
+- `Payload` - the **data** in the packet
 
-- `Priority` - Should the packet be processed immediately or not
+- `Priority` - should the packet be processed immediately or not
 
 These headers are used to tell the computer how to reassemble the packet.
 

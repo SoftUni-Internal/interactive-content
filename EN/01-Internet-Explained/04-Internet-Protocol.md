@@ -119,11 +119,11 @@ Consider the following domain: `www.google.com`
 
 It has three distinct parts:
 
-- `www` - Subdomain
+- `www` - subdomain
 
-- `google` - Domain name
+- `google` - domain name
 
-- `com` - Top-level domain
+- `com` - top-level domain
 
 When entered by a user, the **browser** makes a **request** to a **Domain Name Server**, which caches **domain names** and their respective **IP addresses**.
 

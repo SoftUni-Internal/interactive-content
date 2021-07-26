@@ -28,19 +28,19 @@ Being familiar with it also makes **troubleshooting** and **error handling** eas
 
 The **OSI** model creates the following distinct layers:
 
-- `Layer 7: Application` - A **high-level** layer, that connects the **user** and other **applications** with the rest of the **OSI** model **layers**
+- `Layer 7: Application` - a **high-level** layer that connects the **user** and other **applications** with the rest of the **OSI** model **layers**
 
-- `Layer 6: Presentation` - Uses various operations to transform data into an **appropriate format** for the **application layer**
+- `Layer 6: Presentation` - uses various operations to transform data into an **appropriate format** for the **application layer**
 
-- `Layer 5: Session` - Responsible for **creating**, **executing**, and **cancelling** connections between **local** and **remote** applications
+- `Layer 5: Session` - responsible for **creating**, **executing**, and **cancelling** connections between **local** and **remote** applications
 
-- `Layer 4: Transport` - Transfers **data** through a **network**
+- `Layer 4: Transport` - transfers **data** through a **network**
 
-- `Layer 3: Network` - **Connects** and **controls** multiple **nodes**
+- `Layer 3: Network` - **connects** and **controls** multiple **nodes**
 
-- `Layer 2: Data-link` - Relays data between **physically** connected **nodes**
+- `Layer 2: Data-link` - relays data between **physically** connected **nodes**
 
-- `Layer 1: Physical` - Passes **raw data** as **electrical or optical** signals on a physical level
+- `Layer 1: Physical` - passes **raw data** as **electrical or optical** signals on a physical level
 
 The following picture is a visual representation of these **layers** and their **protocols**:
 
@@ -180,9 +180,9 @@ This layer can also **detect and fix** errors in the **physical layer**.
 
 The **data link** layer has two sublayers:
 
-- **Medium Access Control** - Controls the **access** to the **network layer** and the **transmission permissions**
+- **Medium Access Control** - controls the **access** to the **network layer** and the **transmission permissions**
 
-- **Logical Link Control** - Responsible for **error checking** and network layer **protocol detection**
+- **Logical Link Control** - responsible for **error checking** and network layer **protocol detection**
 
 The following protocols work on the **data link** layer:
 

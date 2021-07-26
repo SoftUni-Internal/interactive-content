@@ -64,13 +64,13 @@ However, there are **larger** and **more elaborate** **enterprise routers**, lin
 
 **Repeaters, hubs, and switches** are **network-linking** devices, which can be part of a **singular component**.
 
-- Repeaters - They receive a **signal** from a router and **resend** it
+- Repeaters - they receive a **signal** from a router and **resend** it
     * used when the distance that the data travels is too long
 
-- Hub - A **hub** can link **Ethernet devices**. It has **several ports**, where each of them is plugged in
+- Hub - a **hub** can link **Ethernet devices**. It has **several ports**, where each of them is plugged in
     * when a signal appears as an **input** in one of the ports, it is **output** in the other ports
 
-- Switch - It links devices in a **computer network** and **forwards the information** through **packet switching**
+- Switch - it links devices in a **computer network** and **forwards the information** through **packet switching**
     * remembers a device's **identity** and forwards only the data that **belongs to it**.
 
 [/slide]
