@@ -46,9 +46,11 @@ The following diagram illustrates the "road" that a **packet** travels:
 
 As shown above, both packets travel through a number of intermediate network nodes before reaching their final destination.
 
-These nodes are typically networking devices, such as routers, firewalls, switches, etc.
-
 This process relies on routing tables - they are a list of the routes to a particular network destination.
+
+The nodes are typically networking devices, such as routers, firewalls, switches, etc.
+
+Finally, Computer 2 **receives** the packet and **processes** the payload, according to the header information.
 
 [/slide]
 

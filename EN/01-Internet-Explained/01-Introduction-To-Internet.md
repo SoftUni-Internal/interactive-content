@@ -48,13 +48,15 @@ In recent decades, however, other ways to **link devices** emerged.
 
 Some devices connect to the internet via a **satellite signal** or a **cellular network**.
 
-The most common way to **access** the Internet nowadays is via **Wi-Fi**, a **broadband** connection.
+The most common way to **access** the Internet nowadays is via **Wi-Fi** connection.
 
 Wi-Fi is also a **family** of **wireless networking** protocols.
 
 It is based on the **802.11** standard, **part of the IEEE 802** set of techincal standards.
 
-The Internet Service Provider (ISP) is a company that **provides** the Internet to its customers.
+An Internet Service Provider (ISP) is a company that **provides** the Internet to its customers.
+
+Some service providers have additional services, such as hosting or domain name registration.
 
 All data traffic is **transmitted** via the ISP.
 

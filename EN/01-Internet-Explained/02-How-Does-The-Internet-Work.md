@@ -24,19 +24,21 @@ The following image illustrates how web servers provide the connection between *
 
 # Important Definitions
 
-The **Internet** is a complex concept to grasp.
-
-However, nothing is impossible with good **foundations**.
+In order to easily grasp how the Internet works, we must take a look at its underlying structure.
 
 Here are some of the **basic definitions** needed to understand the Internet:
 
 - `Client` - an **application** (typically a **browser**), stored on a **user's computer** that **communicates** over the Internet
 
 - `Server` - a piece of software that connects the **client** to a database, stored **away** from the user's machine
+    * for larger databases, this server typically runs on more powerful computers, stored in a data center
 
 - `Network Protocol` - **Network protocols** define the rules for **data transfer** on the Internet
+    * these rules ensure proper data transfer, regardless of differences between the client and server's software/hardware
 
-- `Packets` - A packet is a simple **unit of data**, transferred through the Internet
+- `Packets` - a **unit of data**, transferred through the Internet
+    * transported using a **packet-switched** network
+    * consists of control information (**header**) and a **payload** - the user data
 
 - `TCP vs UDP` - **transfer protocols**
     * **UDP** is **more lightweight** but **less reliable** than **TCP**
@@ -53,11 +55,17 @@ Here are some of the **basic definitions** needed to understand the Internet:
 
 **Servers** are responsible for locating the information in the database and presenting it to the client.
 
+They provide services, like search engines, social media platforms, or e-learning platforms.
+
 The whole **client-server** relationship is very similar to the **consumer-producer** one in the real world.
 
 The **browsers**, like the **consumers**, always need something and make requests for different **services**.
 
 The **servers**, like the **producers**, are the ones providing the **services** a browser needs.
+
+For example, let us say you are trying to **visit** `google.com`.
+
+When you **connect** to the site, Google's servers **handle** your request and return a **response**, in the form of a webpage.
 
 [/slide]
 

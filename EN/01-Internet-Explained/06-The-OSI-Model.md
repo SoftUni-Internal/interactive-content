@@ -6,13 +6,17 @@
 
 The **OSI (Operation Systems Interconnection)** model is the foundation for most network protocols.
 
+Introduced in **1983**, its primary goal is to standardize networks, allowing for **multi-vendor systems**.
+
+Prior to its introduction, computers had a difficult time connecting to each other, because of incompatibility.
+
 It splits the **communication process** into seven abstraction layers.
 
 The **OSI** model has a **hierarchical structure**.
 
 Every layer **provides services** for layer **above** and is **served** by the layer **below**.
 
-This model is essential to learn as it **improves** the **overall understanding of the Internet**.
+This model is essential to learn as it can be used as a reference to **how networks operate.**
 
 Being familiar with it also makes **troubleshooting** and **error handling** easier.
 
@@ -207,5 +211,7 @@ The following hardware elements are within the **physical layer**:
 - **Hubs**
 
 - **Network Interface Cards**
+
+This layer is solely responsible for carrying the data through physical hardware.
 
 [/slide]
