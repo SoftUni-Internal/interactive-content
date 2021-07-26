@@ -77,12 +77,12 @@ Some of the most widely known Internet protocols are:
 
 - `HTTP` - the Hypertext Transfer Protocol is a **client-server** protocol that is used to retrieve web pages
 
-- `UDP` - the User Datagram Protocol is used by **servers** to **communicate** with the **clients**
+- `UDP` - the User Datagram Protocol provides a mechanism to detect **corrupt data in packets**
 
 - `IP` - the Internet Protocol provides **addressing** and **routing**
 
-- `FTP` -  the File Transfer Protocol is used by **clients** to **transfer** files, like images, documents, etc.
+- `FTP` -  the File Transfer Protocol is used by **servers** to **transfer** files, like images and documents to the client
 
-- `TCP` - the Transmission Control Protocol ensures **data integrity** and **reliability**
+- `TCP` - the Transmission Control Protocol ensures **reliable** data transfer between hosts using the Internet Protocol (**IP**)
 
 [/slide]

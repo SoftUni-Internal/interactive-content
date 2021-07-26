@@ -38,17 +38,17 @@ The **header** is the first few bytes of a **packet** and the **payload** is the
 
 [slide hideTitle]
 
-# Travelling On the Packets in the Network
+# Packets Travelling in the Network
 
-The following image illustrates the "road" that a **packet** travels:
+The following diagram illustrates the "road" that a **packet** travels:
 
 [image assetsSrc="Java-Web-Introduction-To-The-Internet-2.png" /]
 
-As shown in the image, the packet starts at the **router** and goes through the **network**.
+As shown above, both packets travel through a number of intermediate network nodes before reaching their final destination.
 
-It goes to the **switch**, which sends it to the **host**.
+These nodes are typically networking devices, such as routers, firewalls, switches, etc.
 
-Finally, the host **receives** the packet and **processes** the payload, according to the header information.
+This process relies on routing tables - they are a list of the routes to a particular network destination.
 
 [/slide]
 
