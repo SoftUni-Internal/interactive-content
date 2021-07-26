@@ -48,9 +48,7 @@ public class Employee {
 
 # Repositories
 
-**Spring Data** aims to **reduce the codebase** and provide a **simple data access layer**, while keeping all the **functionality**.
-
-This is what **Repositories** are responsible for.
+Spring Data **Repositories** provide a **simplified data access layer** while keeping all the **functionality** intact.
 
 The `@Repository` **annotation** marks an **interface** that servers as a **contact** for **data access**.
 
@@ -83,7 +81,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     }
 
     @Override
-    public void fireEmployee(EmployeeModel employeeModel) { //TO DO: Implement the method }
+    public void fireEmployee(EmployeeModel employeeModel) { 
+        // TODO: Implement the method 
+    }
 }
 ```
 

@@ -4,9 +4,7 @@
 
 ## In this lesson you learned:
 
-**Spring Boot Components**
-
-- **Spring Boot** has the following components:
+- **Spring Boot** consists of four **components**:
 
   - **Starters**
   - **Auto-Configuration**
