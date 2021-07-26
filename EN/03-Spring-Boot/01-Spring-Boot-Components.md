@@ -16,7 +16,7 @@ It allows developers to create multiple **independent** **services**.
 
 - **Less** development time
 
-- **More** productivity
+- **Higher** productivity
 
 [/slide]
 
@@ -44,19 +44,19 @@ The website allows:
 
 # Spring Dev Tools
 
-**Spring Boot** gives developers the option of installing **DevTools**.
+**Spring Boot** provides developers with the choice of installing **DevTools**.
 
-As the name suggests, **Developer Tools** ease the process of **writing code**.
+As the name suggests, they ease the development process.
 
-They reduce **development time** by **restarting** the application **on change**.
+They save time by automatically **restarting** the application **on change**.
 
-Use the following code to add **DevTools**:
+You can start using them by including the following Maven dependency:
 
 ```java
 <dependency>
-<groupId>org.springframework.boot</groupId>
-<artifactId>spring-boot-devtools</artifactId>
-<scope>runtime<scope >
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-devtools</artifactId>
+    <scope>runtime<scope>
 </dependency>
 ```
 
@@ -68,11 +68,11 @@ Use the following code to add **DevTools**:
 
 The **spring resources** folder consists of **three parts**:
 
-- **static files** - Mainly **HTML**, **CSS** and **JavaScript**
+- **static files** - mainly **HTML**, **CSS**, and **JavaScript**
 
 - **templates** - **Thymeleaf** templates
 
-- `application.properties` - The **configuration** file for the application
+- `application.properties` - the **configuration** file for the application
 
 [image assetsSrc="Java-Spring-Boot-2.jpg" /]
 
@@ -82,15 +82,15 @@ The **spring resources** folder consists of **three parts**:
 
 # Spring Boot Main Components
 
-The **Spring Boot** framework can be divided into the following **four main components**:
+The **Spring Boot** framework consists of the following **main components**:
 
-- **Spring Boot Starters** - Used to merge **related dependencies** into a **single dependency**
+- **Spring Boot Starters** - merge **related dependencies** into a **single dependency**
 
-- **Spring Boot Auto-Configuration** - Reduce **Spring Boot**'s configuration time to a minimum
+- **Spring Boot Auto-Configuration** - reduce **Spring Boot**'s configuration time to a minimum
 
-- **Spring Boot CLI** - A tool that allows **development** in a **command line**
+- **Spring Boot CLI** - allows **development** in a **command-line** interface
 
-- **Spring Boot Actuator** - Used to **manage** an application. Provides **Endpoints**, **Metrics**, **Auditing** etc.
+- **Spring Boot Actuator** - used to **manage** an application. Provides **Endpoints**, **Metrics**, **Auditing** etc.
 
 [/slide]
 
@@ -98,7 +98,7 @@ The **Spring Boot** framework can be divided into the following **four main comp
 
 # Spring Boot Starters
 
-As an application becomes **bigger**, it needs more and **more dependencies**.
+As an application **expands**, it tends to have **more dependencies**.
 
 Defining **every** single dependency is **slow** and **unproductive**.
 
@@ -124,10 +124,10 @@ To start the **CLI**, just type:
 spring
 ```
 
-For more information about a certain command use:
+For more information about a given command, use:
 
 ```java
-$ spring help init
+spring help init
 ```
 
 After getting familiar with the **CLI** component, create a project wih the following code:
@@ -157,15 +157,15 @@ Add the following **dependency** to use the **Actuator**:
 
 **Endpoints** are one of the **Actuator**'s main features.
 
-They allow developers to "communicate" with their own app through **HTTP** or **JMX**.
+They allow developers to "communicate" with their app through **HTTP** or **JMX**.
 
 Some commonly used **Endpoints** are:
 
-- `beans` - Shows all **Spring beans** in the program
+- `beans` - shows all **Spring beans** in the program
 
-- `health` - Displays the **health** of an application
+- `health` - displays the **health** of an application
 
-- `metrics` - Provides **metrics** for the application
+- `metrics` - provides **metrics** for the application
 
 The following image shows how to acces the **health endpoint**:
 
@@ -177,11 +177,11 @@ The following image shows how to acces the **health endpoint**:
 
 # Inversion of Control
 
-**Spring** implements the **Inversion of Control** principle and the **Dependency Injection** patter.
+**Spring** implements the **Inversion of Control** principle and the **Dependency Injection** pattern.
 
 **Inversion of Control** means switching the **flow of a program**.
 
-In traditional applications, **libraries** are called by the **code**.
+In traditional applications, **libraries** are imported inside the **code** itself.
 
 When using **IoC**, however, the **framework** calls **specific parts** of code that a **appropriate** for a certain **task**.
 
@@ -255,7 +255,7 @@ public class MainApplication {
     …
 
     @Bean
-    public Employee getAssistant(){
+    public Employee getAssistant() {
         return new Assistant();
     }
 }
@@ -277,18 +277,18 @@ The method can receive as arguments:
 
 - **Bean name and type**
 
-- **Bean Contructor Parameters**
+- **Bean Constructor Parameters**
 
 - **Bean Constructor Parameters and type**
 
-By working with **different arguments**, the method provides **several ways** to **retrieve a bean**.
+By working with **multiple arguments**, the method provides **several ways** to **retrieve a bean**.
 
 The following code uses the `getBean()` method with a **type argument**:
 
 ```java
 @SpringBootApplication
 public class MainApplication {
-  public static void main(String[] args) {
+    public static void main(String[] args) {
     ApplicationContext context = SpringApplication.run(MainApplication.class, args);
     Animal dog = context.getBean(Dog.class);
     System.out.println("DOG: " + dog.getClass().getSimpleName());
@@ -308,7 +308,7 @@ Executing the code would result in:
 
 The **scope** of a **bean** sets the **rules for its usage**.
 
-It defines where the bean is **visible**, when it can be **used** and its **life cycle**.
+It defines where the bean is **visible** when it is **usable** and its **life cycle**.
 
 In **Spring** there are the following **six** scopes for a **bean**:
 
@@ -332,11 +332,9 @@ In **Spring** there are the following **six** scopes for a **bean**:
 
 The **Singleton** scope is the **default** scope for a **bean**.
 
-As the name suggests, this scope creates a **single bean**.
+As the name suggests, this scope creates a **single bean** - **every request** for a **bean** with the "Singleton" scope would return the **same object**.
 
-This means that **every request** for a **bean** with this **scope** would return the **same object**.
-
-Also, anytime this **object** changes, all of the **bean references** will also change.
+Anytime this **object** changes, all of the **bean references** will also change.
 
 The following code defines a **bean** with a **singleton** scope:
 
@@ -378,9 +376,9 @@ public Employee employee() {
 
 The **Singleton** beans are **stateless** beans because they **cannot** carry **different state**.
 
-The **Prototype** beans, however, can **carry state** as they point to **different instances**.
+However, the **Prototype** beans can **carry state**, as they point to **different instances**.
 
-This is an illustration of the **differences** between the two scopes:
+The following table illustrates the **differences** between the two scopes:
 
 [/slide]
 
@@ -388,7 +386,7 @@ This is an illustration of the **differences** between the two scopes:
 
 # Request Scope
 
-The **Request** scope is only used in **web applications**.
+The **Request** scope is used exclusively in **web applications**.
 
 It creates a **different instance** for every **HTTP request**.
 
@@ -408,9 +406,9 @@ public Employee employee() {
 
 # Session Scope
 
-The **Session** scope is type used in a web context.
+The **Session** scope is the type used in a web context.
 
-Unlike the **Request**, it creates a new bean on every **HTTP session**.
+Unlike the **Request** scope, it creates a new bean on every **HTTP session**.
 
 The following code is an example of a **session** scope bean:
 
@@ -432,7 +430,7 @@ The **Application** scope creates **one** bean instance for the **ServletContext
 
 **Application** scope makes the bean **accessible** to all **applications** in the **ServletContext**.
 
-This is the main difference from **Singleton** beans, which are limited to just **one** application.
+That makes them different from **Singleton** beans, which are limited to a **single** application.
 
 This is how to create a bean with an **application** scope:
 
@@ -494,14 +492,15 @@ Assume there is the following **bean**:
 @SpringBootApplication
 public class MainApplication {
 
- public static void main(String[] args) {
+    public static void main(String[] args) {
         ApplicationContext context = SpringApplication.run(MainApplication.class, args);
         ((AbstractApplicationContext)context).close();
- }
- @Bean(destroyMethod = "destroy", initMethod = "init")
- public Employee getEmployee(){
-     return new Employee();
- }
+    }
+
+    @Bean(destroyMethod = "destroy", initMethod = "init")
+    public Employee getEmployee(){
+        return new Employee();
+    }
 }
 ```
 
