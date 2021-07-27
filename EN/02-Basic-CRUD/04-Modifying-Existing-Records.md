@@ -1,6 +1,10 @@
+# Modifying Existing Records
+
 [slide hideTitle]
 
-# Updating data
+# Updating Data
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/java-database-and-mysql-basic-crud-28-29-modifying-existing-records-updating-data-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Persisting our records in the database is the first step, but we will often need to modify existing data.
 
@@ -20,6 +24,8 @@ Make sure you do not forget to filter the records you want to change or the `UPD
 
 [slide hideTitle]
 # Problem with Solution: Update Employees' Salary
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/problem-and-solution-update-employees-salary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Update Employees' Salary" taskId="java-db-and-MySQL-basic-crud-update-employees-salary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
@@ -159,6 +165,8 @@ INSERT INTO `employees` (`first_name`,`last_name`, `job_title`,`department_id`,`
 
 # Deleting Data
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/java-database-and-mysql-basic-crud-31-deleting-data-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Keeping our data in check and removing the records we do not need anymore is as important as persisting our records. 
 
 You can delete specific rows with the `DELETE` keyword:
@@ -182,6 +190,8 @@ TRUNCATE TABLE `users`;
 
 [slide hideTitle]
 # Problem with Solution: Delete from Table
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/problem-and-solution-delete-from-table-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Delete from Table" taskId="java-db-and-MySQL-basic-crud-delete-from-table" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]

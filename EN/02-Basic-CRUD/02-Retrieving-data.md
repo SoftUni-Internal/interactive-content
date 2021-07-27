@@ -2,6 +2,8 @@
 
 # Retrieving Data
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/java-database-and-mysql-basic-crud-6-7-retrieving-data-and-sql-select-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Retrieving data is one of the most common operations you can perform when working with databases.
 
 It is the action of pulling data from our database based on specific criteria.
@@ -53,6 +55,8 @@ We will learn how to do this in the next lesson. For now, just note that there i
 [slide hideTitle]
 
 # Problem with Solution: Select Employee Information
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/problem-and-solution-select-employee-information-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Select Employee Information" taskId="java-db-and-MySQL-basic-crud-select-employee-information" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
@@ -156,6 +160,8 @@ Housekeeping
 
 [slide hideTitle]
 # Problem with Solution: Select Employees with Filter
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/problem-and-solution-select-employees-with-a-filter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Select Employees with Filter" taskId="java-db-and-MySQL-basic-crud-select-employee-info-filter" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
@@ -307,6 +313,8 @@ Housekeeping
 
 # Other Comparison Conditions
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/java-database-and-mysql-basic-crud-16-other-comparison-conditions-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Here are some other useful conditions you can specify after the `WHERE` keyword.
 
 ``` java
@@ -362,6 +370,8 @@ We want to use the `IN` or `NOT IN` operators when we know the exact value we wa
 
 [slide hideTitle]
 # Problem with Solution: Select Employees by Multiple Criteria
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/problem-and-solution-select-employees-by-multiple-criteria-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Select Employees by Multiple Criteria" taskId="java-db-and-MySQL-basic-crud-select-employee-info-filter-multiple" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
@@ -492,6 +502,8 @@ Housekeeping
 
 # Comparison with NULL
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/java-database-and-mysql-basic-crud-18-comparing-with-null-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `NULL` value is often confusing to students, so it is important to understand what it is.
 
 First, you need to understand that `NULL` does not mean **"No value"**.
@@ -542,6 +554,8 @@ SELECT 3 - NULL // = NULL
 
 # Sorting Results
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/java-database-and-mysql-basic-crud-19-sorting-with-order-by-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When we finish with selecting and filtering the info, we can sort it in any way we want.
 
 We use the `ORDER BY` clause, which orders the information by a chosen column/s. It is always placed last in the query.
@@ -576,6 +590,8 @@ In the example above, the results would be ordered in descending order by `age` 
 
 # Using Views
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/java-database-and-mysql-basic-crud-20-22-views-and-example-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Views are virtual tables that do not store information by themselves.
 
 They are used when you have a complex query that takes records from a table and you would like to save them for future use.
@@ -604,6 +620,8 @@ This way of access management is quite common in organizations where certain peo
 
 [slide hideTitle]
 # Problem with Solution: Top Paid Employee
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/problem-and-solution-top-paid-employee-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Top Paid Employee" taskId="java-db-and-MySQL-basic-crud-top-paid-employee" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
