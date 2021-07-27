@@ -2,6 +2,10 @@
 
 # Date Functions
 
+36-37-Date-Functions-Extract-TimeStampDiff-Example
+41-Date-Functions-Date-Format-Now
+
+
 The **Date** functions are used to handle date and time data effectively.
 
 ## EXTRACT()
@@ -75,6 +79,9 @@ SELECT NOW();
 [slide hideTitle]
 
 # Problem with Solution: Days Lived
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-Lab-4-problem-and-solution-Days-Lived-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Days Lived" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-days-lived" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```

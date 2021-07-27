@@ -2,6 +2,8 @@
 
 # String Functions
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-5-6-7-String-Functions-Substring-and-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We use **string** functions to manipulate string characters effectively.
 
 An example of a **string function** is `SUBSTRING()`.
@@ -28,7 +30,7 @@ This is the corresponding output:
 oftuni.org
 ```
 
-### Using SUBSTRING() With A Length Parameter
+### Using SUBSTRING() with a Length Parameter
 
 The second way of using our `SUBSTRING()` is by passing in a value for the **length** parameter:
 
@@ -50,7 +52,7 @@ The corresponding output will be:
 sof
 ```
 
-### Using SUBSTRING() With FROM and FOR
+### Using SUBSTRING() with FROM and FOR
 
 We can use the `SUBSTRING()` method with `FROM` and `FOR` too:
 
@@ -78,6 +80,9 @@ oftun
 [slide hideTitle]
 
 # Problem with Solution: Find Book Titles
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-Lab-1-problem-and-solution-Find-Book-Titles-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Find Book Titles" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-find-book-titles" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
@@ -288,6 +293,8 @@ The Adventures of Tom Bombadil
 
 # The REPLACE() Function
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-10-11-String-Functions-Replace-pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Now, let us take a look at the `REPLACE()` function in MySQL.
 
 It allows us to replace all occurrences of a substring with a string.
@@ -343,6 +350,9 @@ We can replace the word ***** with a different symbol or word.
 [slide hideTitle]
 
 # Problem with Solution: Replace Titles
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-Lab-2-problem-and-solution-Replace-Tiles-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Replace Titles" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-replace-titles" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
@@ -556,6 +566,8 @@ INSERT INTO books(author_id,title, year_of_release) VALUES
 
 # The LTRIM() & RTRIM() Functions
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-14-String-Functions-Trim-Char-Length-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **LTRIM()** and **RTRIM()** functions remove whitespace characters from a string, passed as an argument.
 
 We can use the functions as follows:
@@ -593,13 +605,9 @@ This is the result of our example:
 SoftUni rocks!
 ```
 
-[/slide]
+## The CHAR_LENGTH() & LENGTH() Functions
 
-[slide hideTitle]
-
-# The CHAR_LENGTH() & LENGTH() Functions
-
-## CHAR_LENGTH()
+### CHAR_LENGTH()
 
 The `CHAR_LENGTH()` function will return the length of the provided string. 
 
@@ -615,7 +623,7 @@ Keep in mind that it will count the **whitespaces** too.
 45
 ```
 
-## LENGTH()
+### LENGTH()
 
 The `LENGTH()` function will return the **same result** from the input above.
 
@@ -637,6 +645,8 @@ As we see here, the `LENGTH()` function will return a result of **2**, while `CH
 [slide hideTitle]
 
 # The LEFT() & RIGHT() Functions
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-15-String-Function-Left-Right-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `LEFT()` and `RIGHT()` functions return characters from the **beginning** or from the **end** of a string.
 
@@ -684,6 +694,8 @@ ction
 
 # The LOWER() & UPPER() Functions
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-16-String-Functions-Lower-Upper-Reverse-Repeat-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## LOWER()
 
 The `LOWER()` function converts all characters in the provided string to **lowercase** letters.
@@ -716,13 +728,9 @@ This function will return the following result:
 THIS IS AN UPPERCASE STRING
 ```
 
-[/slide]
+## The REVERSE() & REPEAT() Functions
 
-[slide hideTitle]
-
-# The REVERSE() & REPEAT() Functions
-
-## REVERSE()
+### REVERSE()
 
 The `REVERSE()` function allows us to reverse the order of all characters in the provided string.
 
@@ -738,7 +746,7 @@ As a result, we receive:
 inutfos
 ```
 
-## REPEAT()
+### REPEAT()
 
 The `REPEAT()` function allows us to repeat a string a specified number of times.
 
@@ -758,6 +766,8 @@ softuni softuni softuni
 [slide hideTitle]
 
 # The LOCATE() & INSERT() Functions
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-17-String-Functions-Locate-Insert-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## LOCATE()
 

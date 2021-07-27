@@ -2,6 +2,8 @@
 
 # Aggregate Functions
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-19-Aggregate-Functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 An **aggregate** function performs calculations on multiple values and then returns a single value.
 
 We have 5 main functions:
@@ -44,6 +46,8 @@ This SQL query will produce the following **result**:
 
 # The SUM() Function
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-22-23-SUM-SUM-Syntax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `SUM()` function sums all the values in a column.
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(1).png" /]
@@ -75,6 +79,9 @@ This is the result of our example:
 [slide hideTitle]
 
 # Problem with Solution: Sum the Cost of All Books
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-Lab-3-prob-and-sol-Sum-The-Cost-of-all-Books-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Sum the Cost of All Books" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-sum-the-cost-of-all-books" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
@@ -250,6 +257,8 @@ INSERT INTO books(author_id,title, year_of_release,cost) VALUES
 
 # The COUNT() Function
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-20-21-Count-Count-Syntax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We use the `COUNT()` function when we need to count values (**excluding null**) in one or more columns based on grouping criteria.
 
 When using `COUNT()`, we ignore any employees with `NULL` salary.
@@ -289,6 +298,9 @@ After running the function, we get the following result:
 
 [slide hideTitle]
 # Problem and Solution: Department Info
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-Lab-6-problem-and-solution-Department-Info-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Department Info" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-department-info" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
@@ -450,6 +462,8 @@ INSERT INTO products (name, category_id,price) VALUES ("Lasagne", 4,12.99),
 
 # The MAX() Function
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-22-23-Max-Max-Syntax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `MAX()` function will take the maximum value from a column.
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(2).png" /]
@@ -480,6 +494,8 @@ The result from the query above will be:
 
 # The MIN() Function
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-26-27-MIN-MIN-Syntax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `MIN()` function will take the minimum value from a column.
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(3).png" /]
@@ -509,6 +525,9 @@ The resulting table looks like this:
 [slide hideTitle]
 
 # Problem with Solution: Minimum Salary
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-Lab-8-problem-and-solution-MInimum-Salary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Minimum Salary" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-minimum-salary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
@@ -658,6 +677,8 @@ INSERT INTO products (name, category_id,price) VALUES ("Lasagne", 4,12.99),
 
 # The AVG() Function
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-28-29-AVG-AVG-Syntax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `AVG()` function will calculate the average value in a column.
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(4).png" /]
@@ -688,6 +709,9 @@ This query will produce the following result:
 [slide hideTitle]
 
 # Problem with Solution: Average Salary
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-Lab-7-problem-and-solution-Average-Salary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Average Salary" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-average-salary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```

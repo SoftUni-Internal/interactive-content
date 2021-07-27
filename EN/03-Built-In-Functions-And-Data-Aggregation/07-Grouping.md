@@ -2,6 +2,8 @@
 
 # Grouping
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-49-50-51-Grouping-Group-by-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `GROUP BY` clause in SQL allows us to take data into **separate groups** based on a **common property**.
 
 [image assetsSrc="Built-in-Functions-Data-Aggregations(5).png" /]
@@ -30,6 +32,9 @@ This query will return a **list** of **position titles** and the **number of emp
 
 [slide hideTitle]
 # Problem and Solution: Menu Prices
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-Lab-10-problem-and-solution-Menu-prices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Menu Prices" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-menu-prices" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```

@@ -4,6 +4,8 @@
 
 # The Having Clause
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-54-55-56-57-Having-Having-Clause-Example-Syntax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can use the `HAVING` clause to summarize group records as opposed to `WHERE`, which applies to individual records only.
 
 It operates on records returned by `GROUP BY`.
@@ -41,6 +43,9 @@ Here is the output you should receive:
 
 [slide hideTitle]
 # Problem and Solution: Appetizers Count
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-Lab-9-problem-and-solution-Appetizers-Count-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Appetizers Count" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-appetizers-count" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```

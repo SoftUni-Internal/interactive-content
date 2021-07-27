@@ -2,6 +2,9 @@
 
 # Wildcards
 
+42-43-WildCards-Example
+47-48-Using-Regular-Expressions-Regexp-Characters
+
 **Wildcard** symbols in MySQL substitute one or more **characters** in a string.
 
 | Symbol | Description |
@@ -58,6 +61,9 @@ In the above case, we will look for a **city**, named **either "a" , "b", or "c"
 
 [slide hideTitle]
 # Problem and Solution: Harry Potter Books
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-Lab-5-problem-and-solution-Harry-Potter-Books-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Harry Potter Books" taskId="java-db-and-mysql-built-in-functions-and-data-aggregation-harry-potter-books" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```

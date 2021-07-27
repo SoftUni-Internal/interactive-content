@@ -2,6 +2,12 @@
 
 # Math Functions
 
+30-31-Math-Functions-Arithmetical-Operators
+32-Numeric-Functions
+33-Numeric-Functions-SQRT-POW
+35-Math-Functions-SIGN-RAND
+43-Math-Functions-Math-Functions-CONV-ROUND-FLOOR-CEILING
+
 Execution of mathematical functions usually is based on input values, provided as arguments.
 
 It returns a value as the result of the operation.
