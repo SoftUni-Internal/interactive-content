@@ -4,30 +4,37 @@
 
 In the last lesson when we learned about the OSI Model, we mentioned HTTP and the fact that it works on the last **Application layer** of the protocol. 
 
-Let's a closer look at the **HTTP - Hypertext Transfer Protocol** and try to understand why is so important for every developer to know how to work with this protocol in great detail.
+HTTP is a text-based protocol that allows us to fetch resources such **HTML documents, pictures, and files** over the internet.
 
-The HTTP is a text-based protocol that allows us to fetch resources such **HTML Documents, Pictures, Files, etc**. over the internet.
+It stands for **Hypertext Transfer Protocol**, and it is used for transferring data and commands across the internet and also applicable in IOT applications.
 
-It is the main way for internet communication today, we use it daily as programmers, and the reason for it is because as it is text-based and follows strict rules the **Hypertext Transfer Protocol** is easy to read both from computers and programmers.
+HTTP is implemented as a **request-response** protocol, which means that when a client wants to receive data from a given server it should ask, or **(request)** it first.
 
-Implemented as a **Request-Response** Protocol, which means that when a client wants to receive data from a given server it should Ask **(Request)** it first.
+[image assetsSrc="02-Java-Spring-Fund-HTTP-img1.png" /]
 
-Further, the server reads the **Request** gathers the needed data, and sends a **Response** to the client containing the request's resource.
 
-For instance, when we want to open a given page, the first request will be sent, asking the server to send us the **HTML** for the front page, the server will read our request and give us a **Response** with the needed **HTML** to load the page.
+Further, the server reads the **request**, gathers the required data, and sends a **Response** to the client containing the requested resource.
 
-One thing that we will mention but we will not cover is that **HTTP** is **stateless** meaning it can not make a connection between two **Requests**, there is a way for solving this problem but we will look at it in our next lesson.
+For instance, when we want to open a web page, a request is sent by the client (the browser), asking the server to send us the **HTML** for the page, the server will read our request and give us a **response** with the needed **HTML** to load the page.
+
+An important thing to mention is that **HTTP** is **stateless**.
+
+It does not keep track of who requested what and does not preserve any sort of state, and the server will not establish any relation between previous and future requests.
 [/slide]
 
-[slide]
+[slide hideTitle]
 
-# Hyper Text Tranfer Protocol
+# Hyper Text Transfer Protocol
 
-Let's have a look at this graphic and try to remind ourselves about the different layers in the **OSI Model** and how they work together. 
+The below diagram shows the different layers in the **OSI Model** we previously covered and how they work together with the HTTP protocol. 
 
-[image assetsSrc="02-Java-Spring-Fund-HTTP.png" /]
+[image assetsSrc="02-Java-Spring-Fund-HTTP-v2.png" /]
 
-Just as the model suggests, every time that we want to communicate with the server as clients we send an **HTTP Request**, this request, following the different **OSI Model levels** reaches our server, using the same schema for translating back to human-readable **HTTP**.
+Just as the model suggests, every time that the client wants to communicate with the server it sends a **HTTP Request**.
+
+This request, following the different **OSI Model levels** reaches the server, using the same schema for translating back to human-readable **HTTP**.
+
+The responses received by the client are in human-readable format with status codes attached to them.
 
 [/slide]
 
@@ -35,23 +42,25 @@ Just as the model suggests, every time that we want to communicate with the serv
 
 # HTTP Request Methods
 
-Let's examine the **HTTP Requests** and learn what methods each **Request** can define.
+The protocol defines a set of **request methods** to indicate an action to be performed for a chosen resource.
 
-The protocol defines a set of request methods to indicate the desired action to be performed for a chosen resource.
+These are also called request types or methods.
 
-The basic methods can be:
+The basic methods are:
 
 | **Method** | **Description** |
 | --- | --- |
-| **GET** | Request using **GET** should only retrieve data. |
-| **POST** | **POST** method is used when we send data to the server, just like a simple login form |
-| **PUT** | **PUT** is used when we want to update a given resource. |
-| **DELETE** | **DELETE** tells our server that we want to delete a given resource. |
-|   |   |
+| **GET** | Used for retrieving data from the server |
+| **POST** | Used when we send data to the server, for example login information or a new user registration |
+| **PUT** | Same as a post request but with the intention of replacing a resource |
+| **DELETE** | Deletes a resource |
+| **PATCH**  | When applying changes to a resource  |
+| **HEAD**  | This is a GET request that only returns the headers without the actual content  |
 
-Each method type implements a different meaning, but they also share common features.
 
-Let's see an example of a typical HTTP Conversation:
+Each method type has different meaning, but they also share common features.
+
+Let us see an example of a typical HTTP request and response situation:
 
 ```java
 //HTTP REQUEST
@@ -71,8 +80,12 @@ Content-Length: 54​
 Welcome to our site</html>
 ```
 
+`<CRLF>` stands for carriage return and line feed, it indicates a single blank line which is used to mark the end of a request or a response.
+
 If you  start exploring the different data we send through the network when we communicate with a given website you will learn the methods faster. 
 
-You can do that by checking the **Developer's Toolbar** by pressing **F12 for the most browsers** and choosing the **Network Tab** this is where all the HTTP communication can be seen.
+You can explore how this works in your browser's developer tools, this will help you understand the methods faster.
+
+You can do that by checking the **Developer's Tools** by pressing **F12 for most browsers** and choosing the **Network Tab**, which is where all the HTTP communication can be seen.
 
 [/slide]

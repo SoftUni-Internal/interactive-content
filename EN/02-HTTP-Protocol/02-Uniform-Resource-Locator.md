@@ -4,59 +4,73 @@
 
 HTTP is the protocol by which the client and the server communicate.
 
-It's the set of rules both parties should keep for the communication to happen without any misunderstandings.
+It is the set of rules both parties should keep for the communication to happen without any misunderstandings.
 
 But how does the HTTP know which resource to ask for? 
 
-This is where the **Uniform Resource Locator - URL** comes in place. 
+This is why we have the **Uniform Resource Locator** or **URL**.
 
-The URL indicates which resource we need, but even more than that, it indicates which **HTTP** protocol to use.
+The URL indicates which resource we need, but more than that, it indicates which **HTTP** protocol to use.
 
-The **URL** is a formatted string consisting of several key parts, now let's have a look at each of them and try to understand their use.
+The **URL** is a formatted string consisting of several key parts. 
 
-[image assetsSrc="02-Java-Spring-Fund-HTTP(1).png" /]
+[image assetsSrc="02-Java-Spring-Fund-HTTP(1)-v2.png" /]
 
-1. **Protocol** (HTTP, FTP, HTTPS...) - Different protocols for communicating. HTTP in most cases.
+## Protocol
 
-    - As we already mentioned the protocol just sets the rules for communication between two machines.
+Protocols set the rules for communication.
 
-        That is why the first part of every **URL** is the protocol by which the machines will be communicating.
+There are different protocols such as HTTP, HTTPS and FTP. 
 
-        We are learning about the **HTTP** protocol, but there is also an **HTTPS**.
+HTTPS is the most commonly used these days for client - server communication when browsing web resources because it means you are communicating over a secure connection.
 
-        As you know, when we send data from our computer to the server it's transferred through different routers.
+When we send data from a computer to the server it is transferred through different routes.
 
-        In its pure form **HTTP** is just encoded bytes.
+In its pure form **HTTP** is just encoded bytes.
 
-        This means that somewhere along the way, a person with bad intentions (hacker) can gather the information we send. 
+This means that somewhere along the way, a person with bad intentions can gather the information we send. 
 
-        Now, what if we send our credit card information.
+It is especially dangerous if you are logging to your account or paying for goods online if the connection is not secure.
 
-        That's is why the need for **HTTPS** has arisen.
+This is why today HTTPS is widely popular and even websites that do not deal with sensitive information usually use this protocol to increase their credibility with the users and with search engines.
 
-        It's a version of the **HTTPS** protocol in which the bytes are **encrypted**.
-    
-2. **Host or IP address** (www.softuni.org, gmail.com, 127.0.0.1).
+**HTTPS** is a version of the standard HTTP protocol in which the bytes are **encrypted**.
 
-3. **Port** (the default port is **80**) - a number in range [0...65535].
-    - In our computers we have **65535 networking ports**.
+## Host or IP Address
 
-        These ports are used from the programs on the computer to accept data from the network.
+The **Host or IP address** is the location of the resource or web page that is being accessed such as **www.softuni.org**, **gmail.com**, **127.0.0.1**.
 
-        When a program starts, it asks the operating system for a port at which it will accept data.
+## Port
 
-        And when we receive data to the given port our operational system knows that it should send it back to the program that occupies this port.
+There are 65535 possible networking ports.
 
-4. **Path** (/forum/path/index.php).
-    - Path is the exact location of a page, post, file on our server. 
-    
-        When we define a given path it helps the server to find exactly what we need.
+The default one is 80 and the port can be any whole number in the range [0...65535].
 
-5. **Query String** (?id=27&lang=en).
-    - The query string is used when we want to send data to the server for instance when we have **GET Request**.
+These ports are used from the programs on the computer to accept data from the network.
+
+When a program starts, it asks the operating system for a port at which it will accept data.
+
+And when data is received at the given port the operating system knows that it should send it to the program that reserved this port.
 
 
-6. **Fragment** (#lectures) - used on the client to navigate to some section in the given page.
+
+## Path
+
+A path is the exact location of a resouce (/forum/path/index.php).
+
+When we define a given path it helps the server to find exactly what we need.
+
+## Query String
+
+The query string is used when we want to send data to the server for instance when we have a **GET Request**.
+
+A query string consisting of `?id=27&lang=en`, for example, requests a resource with an id of 27 and will fetch the English version of the page.
+
+## Fragment
+
+The fragment is a keyword used to navigate to some section in the given page.
+
+For example `#lectures`.
 
 [/slide]
 
@@ -64,17 +78,15 @@ The **URL** is a formatted string consisting of several key parts, now let's hav
 
 # URL Encoding (Percentage Encoding)
 
-One specific of the **URLs** is that they can contain only **ASCII characters**.
+**URLs** can only contain **ASCII characters**.
 
-That is why when we want to send symbols that are not contained in the **ASCII Table** the URL has to convert them to valid ASCII format.
+This is why in order to send symbols that are not contained in the **ASCII Table** that part of the url will have to be encoded.
 
-URL encoding is to replace any *unsafe ASCII* character with a **%** (Percentage encoding) followed by two hexadecimal digits.
+URL encoding is the process of replacing non-ASCII characters with combination of a percent sign **%** (Percentage encoding) and two hexadecimal digits.
 
-In the pattern **%[character hex code]**.
+This is the pattern used for a single character encoding: **%[character hex code]**.
 
-Let's have some examples: 
-
-| **Char** | **URL Encoding** |
+| **Char** | **URL Encoding** | 
 | --- | --- |
 | space | %20 |
 | щ | %D1%89 |
@@ -85,9 +97,17 @@ Let's have some examples:
 | & | %26 |
 |   |   |
 
-- Space is also an unsafe character, it is escaped with a **"+"** or **"%20"**.
+Conditions for encoding characters:
 
-An URL encoded string:
+- They are not present in the ASCII character set
+- Special character used for other purposes in the URL such as `/`, `?`, `&`
+- Unsafe characters that can be misinterpreted such as `%`, `<`, `>` and others
+
+
+Space is also an unsafe character, it is escaped with a **"+"** or **"%20"**.
+
+An URL encoded string looks like this:
+
 **%D0%9D%D0%B0%D0%BA%D0%BE%D0%B2-%E7%88%B1-SoftUni​**
 
 [/slide]
@@ -96,16 +116,17 @@ An URL encoded string:
 
 # Valid and Invalid URLs
 
-Let's have a look at few valid and invalid examples of **URLs**.
+Let us have a look at few valid and invalid examples of **URLs**.
 
 - **Valid URLs:**
 
-    1. **http://www.google.bg/search?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enBG369BG369&q=http+get+vs+post**
-    2. **http://bg.wikipedia.org/wiki/%D0%A1%D0%BE%D1%84%D1%82%D1%83%D0%B5%D1%80%D0%BD%D0%B0_%D0%B0%D0%BA%D0%B0%D0%B4%D0%B5%D0%BC%D0%B8%D1%8F​**
+    1. `http://www.google.bg/search?sourceid=navclient&ie=UTF-8&rlz=1T4GGLL_enBG369BG369&q=http+get+vs+post`
+    2. `https://fr.wikipedia.org/wiki/Portail:%C3%89nergie​`
+
 
 - **Invalid URLs:**
 
-    1. **http://www.google.bg/search?&q=C# .NET 4.0** - Should be **?q=C%23+.NET+4.0​** instead.
-    2. **http://www.google.bg/search?&q=бира​** - Should be **?q=%D0%B1 %D0%B8%D1%80%D0%B0**
+    1. `http://www.google.bg/search?&q=C# .NET 4.0` - Should be **?q=C%23+.NET+4.0​** instead.
+    2. `http://www.google.bg/search?&q=énergie​` - Should be **?q=%C3%A9nergie**
 
 [/slide]
