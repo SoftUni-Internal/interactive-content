@@ -28,7 +28,7 @@
 - Related tables
 
 **6. Programmability**
-- Indexes
+- indices
 - Views
 - Procedures, Functions, and Triggers
 
