@@ -1,10 +1,12 @@
-# Clustered and Non-Clustered Indexes
+# Clustered and Non-Clustered Indices
 
 [slide hideTitle]
 
-# Indexes
+# Indices
 
-Indexes were created to ease the process of working with data.
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/interactive-java-databases-and-mysql-joins-subqueries-and-indices-26-30-indices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Indices were created to ease the process of working with data.
 
 There are two types of stored data:
 
@@ -12,7 +14,7 @@ There are two types of stored data:
 
 - **Unordered** - Records are inserted in the file in no particular sequence
 
-With indexes, you can quickly find rows with a specific column value.
+With indices, you can quickly find rows with a specific column value.
 
 Without an index, MySQL has to start from the first row and read through the entire table to find the relevant rows.
 
@@ -20,23 +22,23 @@ The larger the table, the more time this process will take.
 
 If the table has an index for the columns in question, MySQL can quickly get a record without going through all the data.
 
-These are the most important characteristics of indexes:
+These are the most important characteristics of indices:
 
 - They are structures associated with a table or а view that speeds up retrieval of rows, usually implemented as **B-trees**
   
-- Indexes can be built-in to the table (clustered) or stored externally (non-clustered)
+- Indices can be built-in to the table (clustered) or stored externally (non-clustered)
 
 - Adding and deleting records in indexed table is slower
 
-- Indexes should only be used for big tables (e.g. 50000 rows or more)
+- Indices should only be used for big tables (e.g. 50000 rows or more)
 
 [/slide]
 
 [slide hideTitle]
 
-# Clustered Indexes
+# Clustered Indices
 
-**Clustered indexes** determine the **order** in which data rows are stored.
+**Clustered indices** determine the **order** in which data rows are stored.
 
 They are very useful for the fast execution of `WHERE`, `ORDER BY`, and `GROUP BY` clauses.
 
@@ -54,7 +56,7 @@ If a table has no clustered index, it stores the data rows in an **unordered str
 
 [slide hideTitle]
 
-# Non-Clustered Indexes
+# Non-Clustered Indices
 
 A non-clustered index does not sort the physical data inside the table.
 

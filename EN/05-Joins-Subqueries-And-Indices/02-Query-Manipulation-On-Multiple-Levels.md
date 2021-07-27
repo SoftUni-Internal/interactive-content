@@ -4,6 +4,8 @@
 
 # Subqueries
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/interactive-java-databases-and-mysql-joins-subqueries-and-indices-22-23-subqueries-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A **subquery** is a query **nested within** another query like `SELECT`, `INSERT`, `UPDATE`, or `DELETE`.
 
 It can also be **nested inside another subquery**.
@@ -31,7 +33,10 @@ This is the resulting table:
 [/slide]
 
 [slide hideTitle]
-# Problem: Higher Salary
+# Problem with Solution: Higher Salary
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/lab-higher-salary-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Higher Salary" taskId="java-db-and-MySQL-subqueries-and-JOINs-employees-higher-salary" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 

@@ -2,6 +2,8 @@
 
 # Summary
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/interactive-java-databases-and-mysql-joins-subqueries-and-indices-31-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## In this lesson you learned:
 
 - How join data from different tables
@@ -23,7 +25,7 @@
     );
     ```
 
-- Indexes improve SQL search performance if used properly
+- Indices improve SQL search performance if used properly
     ```java
     CREATE INDEX ix_users_first_name_last_name​
     ON users(first_name, last_name);

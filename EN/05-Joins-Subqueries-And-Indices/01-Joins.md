@@ -4,6 +4,8 @@
 
 # Gathering Data From Multiple Tables
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/interactive-java-databases-and-mysql-joins-subqueries-and-indices-3-4-data-from-multiple-tables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 А relational database consists of multiple related tables.
 
 Sometimes you will need to combine data from several tables into a new table.
@@ -17,6 +19,8 @@ The related column is a column, which exists as a **primary key** in the first t
 [slide hideTitle]
 
 # Cartesian Product 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/interactive-java-databases-and-mysql-joins-subqueries-and-indices-5-6-cartesian-product-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A **Cartesian Product** in databases is when each row of a table is paired with all the rows from another table.
 
@@ -51,6 +55,8 @@ If you want to avoid this result, always include a valid `JOIN` condition.
 [slide hideTitle]
 
 # JOINs and Tables
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/interactive-java-databases-and-mysql-joins-subqueries-and-indices-7-8-joins-tables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 There are several different types of `JOIN` clauses:
 
@@ -94,6 +100,8 @@ Table `bikes`:
 
 # Inner join
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/interactive-java-databases-and-mysql-joins-subqueries-and-indices-9-inner-join-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `INNER JOIN` is used to return rows from both tables that satisfy a given condition.
 
 ```Java
@@ -125,6 +133,8 @@ This type of join clause produces a set of records which **match in both tables*
 [slide hideTitle]
 
 # LEFT JOIN
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/interactive-java-databases-and-mysql-joins-subqueries-and-indices-10-left-join-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `LEFT JOIN` returns **all the rows** from the table on the **left** even if no matching rows have been found in the table on the right.
 
@@ -160,6 +170,8 @@ There was no matching course for the last entry, so there is `NULL` in the `cour
 [slide hideTitle]
 
 # RIGHT JOIN
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/interactive-java-databases-and-mysql-joins-subqueries-and-indices-11-right-join-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `RIGHT JOIN` works like `LEFT JOIN` but in the opposite direction.
 
@@ -197,6 +209,8 @@ As a result, we have a `NULL` value for `Kawasaki` and `Ducati`.
 
 # OUTER JOIN - FULL JOIN
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/interactive-java-databases-and-mysql-joins-subqueries-and-indices-12-13-outer-full-join-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `OUTER JOIN` returns all records in both tables regardless of **any** match.
 
 It is not as useful as the other join types and is **not implemented** in **MySQL**.
@@ -209,11 +223,7 @@ This image is a representation of how `OUTER JOIN` matches records in the databa
 
 [image assetsSrc="Joins-Subqueries-And-Indices(4).png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# The "UNION" clause
+## The "UNION" clause
 
 You can use the `UNION` clause to combine the results from **two or more** `SELECT` statements.
 
@@ -251,6 +261,8 @@ This table is the result of our query:
 
 # CROSS JOIN
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/interactive-java-databases-and-mysql-joins-subqueries-and-indices-14-15-cross-join-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `CROSS JOIN` returns the product of rows of two associated tables.
 
 The result is a **Cartesian** product without a **condition** in the `WHERE` clause.
@@ -272,9 +284,20 @@ The following image illustrates how this join clause works:
 
 [/slide]
 
+[slide hideTitle]
+# Joins Overview and Demo
+
+16-join-overview-and-demo-
+17-join-overview-inner-join-
+18-join-overview-left-join-
+19-join-overview-right-join-
+
+[/slide]
 
 [slide hideTitle]
-# Problem: Managers
+# Problem with Solution: Managers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/lab-subqueries-and-joins-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 [code-task title="Managers" taskId="java-db-and-MySQL-subqueries-and-JOINs-managers" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
@@ -3702,7 +3725,10 @@ Production Control
 [/slide]
 
 [slide hideTitle]
-# Problem: Towns Addresses
+# Problem with Solution: Towns Addresses
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/lab-towns-addresses-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Towns Addresses" taskId="java-db-and-MySQL-subqueries-and-JOINs-towns-addresses" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
@@ -7137,7 +7163,10 @@ Sofia
 [/slide]
 
 [slide hideTitle]
-# Problem: Employees Without Managers
+# Problem with Solution: Employees Without Managers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/lab-employees-without-managers-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Employees Without Managers" taskId="java-db-and-MySQL-subqueries-and-JOINs-employees-without-managers" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
