@@ -4,6 +4,8 @@
 
 # Transaction Properties
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Transactions/interactive-mysql-database-transactions-11-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We should **follow some principles** before and after a transaction to keep our database stable.
 
 They are named **ACID**, an acronym for:
@@ -57,6 +59,8 @@ Even if there is a system failure, our **recovery-management component** of the 
 
 [slide hideTitle]
 # Problem with Solution: Employee Promotion by ID
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Transactions/problem-and-solution-employees-promotion-by-id-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Write a transaction that **raises** an employee's salary by **5%** if their "**id**" exists in the database.
 

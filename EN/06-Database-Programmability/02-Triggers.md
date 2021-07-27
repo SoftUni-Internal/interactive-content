@@ -12,9 +12,7 @@ Triggers **are not called explicitly**, they are **attached to our database** an
 
 For example, **anytime when a row gets deleted** from this table, we want to **insert a new row** into another table.
 
-## MySQL Types of Triggers
-
-[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/interactive-java-mysql-table-relations-34-36-ER-diagrams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## Types of Triggers
 
 Triggers do not have specific types. 
 

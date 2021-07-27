@@ -1,6 +1,10 @@
+# Executing Operations as a Whole
+
 [slide hideTitle]
 
-# Executing Operations as a Whole
+# Transactions
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Transactions/interactive-mysql-database-transactions-1-2-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Transactions in MySQL are a **sequence of actions** that perform like one single unit.
 
@@ -25,6 +29,14 @@ What is crucial in this scenario is that **all of the changes are completed succ
 
 When it comes to databases **any group of data modifications that must all be successful** or **must not happen at all** is called a transaction.
 
+[/slide]
+
+[slide hideTitle]
+
+# Transaction Lyfecycle
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Transactions/interactive-mysql-database-transactions-4-5-6-7-8-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## Transactions: Lifecycle (Rollback)
 
 [image assetsSrc="Transactions.png" /]
@@ -37,12 +49,7 @@ Transactions guarantee the **consistency** and the **integrity** of the database
 
 All changes in a transaction are **temporary**, and they only get persisted when the `COMMIT` statement gets executed.
 
-[/slide]
-
-
-[slide hideTitle]
-
-# Transaction Examples
+## Example
 
 Let us take a look at this example:
 
