@@ -4,6 +4,8 @@
 
 # User-Defined Functions
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Database-Programmability/interactive-mysql-database-programmability-3-4-user-defined-functions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 MySQL can do more than just **storing** and **managing** your data.
 
 We will have a look at **programmability** and how we can **introduce custom logic** to our database.
@@ -50,6 +52,9 @@ END                                                                             
 
 [slide hideTitle]
 # Problem with Solution: Count Employees by Town Name
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Database-Programmability/problem-and-solution-count-employees-by-town-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Count Employees by Town Name" taskId="java-db-and-MySQL-database-programmability-count-employees-by-town-name" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```

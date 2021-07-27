@@ -2,6 +2,8 @@
 
 # Stored Procedures
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Database-Programmability/interactive-mysql-database-programmability-16-17-stored-procedures-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Stored procedures represent **custom logic** that is removed from the **application server** and set to the **database server**.
 
 A stored procedure **can accept arguments**and **set up variables**.
@@ -18,11 +20,7 @@ Procedures can be **accessed through different programs** and APIs
 
 They can be used when there is a **repetitive task** like looping.
 
-[/slide]
-
-[slide hideTitle]
-
-# Creating a Stored Procedure
+## Creating a Stored Procedure
 
 This is how you can create a stored procedure: 
 
@@ -44,11 +42,7 @@ CREATE PROCEDURE usp_procedure_name                             // Creating a pa
 parameter_2_name parameter_type,…)
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Defining a Parameterized Procedure
+## Defining a Parameterized Procedure
 
 In the following example, we create a parameterized procedure:
 
@@ -65,11 +59,7 @@ END $$
 CALL usp_select_employees_by_seniority(15);
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Returning Values Using Output Parameters
+## Returning Values Using Output Parameters
 
 We can also return values with a stored procedure.
 
@@ -86,10 +76,14 @@ SET @answer=0;
 CALL usp_add_numbers(5, 6,@answer);
 SELECT @answer;
 ```
+
 [/slide]
 
 [slide hideTitle]
 # Problem with Solution: Promote Employees
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Database-Programmability/problem-and-solution-promote-employees-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Promote Employees" taskId="java-db-and-MySQL-database-programmability-promote-employees" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
@@ -1836,6 +1830,9 @@ Alice
 
 [slide hideTitle]
 # Problem with Solution: Promote Employees By ID
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Database-Programmability/problem-and-solution-promote-employees-by-id-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Promote Employees By ID" taskId="java-db-and-MySQL-database-programmability-promote-employees-by-id" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```

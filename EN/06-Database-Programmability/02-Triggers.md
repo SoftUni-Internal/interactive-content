@@ -2,6 +2,8 @@
 
 # Triggers
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Database-Programmability/interactive-mysql-database-programmability-8-9-10-11-triggers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Triggers** are small **named programs** in our database. They **define an action** that should happen when a certain **operation has been performed** on the database.
 
 We could write a trigger that would tell MySQL to do something when an entry is **added** or **deleted** from a **particular table in the database**. 
@@ -10,27 +12,23 @@ Triggers **are not called explicitly**, they are **attached to our database** an
 
 For example, **anytime when a row gets deleted** from this table, we want to **insert a new row** into another table.
 
-[/slide]
+## MySQL Types of Triggers
 
-[slide hideTitle]
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/interactive-java-mysql-table-relations-34-36-ER-diagrams-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# MySQL Types of Triggers
+Triggers do not have specific types. 
 
-Triggers do not have specific types. They are divided into **two categories** based on their activation time:
+They are divided into **two categories** based on their activation time:
 
 - **Before the event:**
 
 [image assetsSrc="Database-Programabillity.png" /]
 
 - **After the event:**
-- 
+  
 [image assetsSrc="Database-Programabillity(1).png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Events
+## Events
 
 The events that can activate the **triggers** can either be `INSERT`, `UPDATE`, or `DELETE` queries.
 
@@ -53,6 +51,9 @@ DROP TRIGGER ins_sum; // The syntax for dropping a trigger
 
 [slide hideTitle]
 # Problem with Solution: Triggered
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Database-Programmability/problem-and-solution-triggered-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Triggered" taskId="java-db-and-MySQL-database-programmability-triggered" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
