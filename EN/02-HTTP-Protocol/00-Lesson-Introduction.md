@@ -1,29 +1,38 @@
-[slide]
-
 # Lesson Introduction
 
-## Lesson content:
+[slide hideTitle]
+
+# Lesson Content
+
+## In this lesson you will learn:
+
 
 1. **HTTP Basics**
-    - What is a **HTTP**
+    - What the HyperText Transfer protocol (HTTP) is
+    - The basic request methods
 
 2. **URL**
-    - What is **URL**
+    - What the Uniform Resource Locator (URL) is
+    - URL encoding and why we do it
 
 
 3. **HTTP Request**
-    - What is a HTTP Request and when do we use it? 
+    - Requests from the client to the server for accessing specific resources 
+    - Request elements
 
 4. **HTTP Response**
-    - How to we return a **Response** to a **Request**
+    - How a **response** to a request is returned 
 
 5. **Mime and Media Types**
-    - How our browsers know what the server is returning
+    - Types of resources returned by the server
 
 6. **Web Server**
-    - What is a **Web Server**
+    - What a **web server** is
+    - The web server work model
+    - Popular web servers
 
 7. **HTML Forms**
-    - What are HTML Forms
+    - What HTML forms are
+    - Form method attributes
     
 [/slide]
