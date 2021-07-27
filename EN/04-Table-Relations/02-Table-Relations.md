@@ -1,6 +1,8 @@
 [slide hideTitle]
 
-# Table Relations
+# One-To-Many/Many-To-One
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/interactive-java-mysql-table-relations-12-13-one-to-many-many-to-one-foreign-key-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Table relations connect two tables by a common field, often named the same way. This field is called a **foreign key**.
 
@@ -15,11 +17,7 @@ Relationships have multiplicity:
 - **Many-to-many** - e.g. students/courses
 - **One-to-one** - e.g. driver/driver licence
 
-[/slide]
-
-[slide hideTitle]
-
-# One-To-Many
+## One-To-Many/Many-To-One
 
 For the referenced table, it is a constraint that the referenced column is unique.
 
@@ -47,6 +45,9 @@ REFERENCES mountains(mountain_id);      // Referencing the unique identifier in 
 
 [slide hideTitle]
 # Problem with Solution: Mountains and Peaks
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/problem-and-solution-mountains-and-peaks-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Mountains and Peaks" taskId="java-db-and-MySQL-table-relations-mountains-and-peaks" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 
@@ -124,6 +125,8 @@ mountain_id
 
 # Many-To-Many
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/interactive-java-mysql-table-relations-16-18-many-to-many-setup-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When we want to reference multiple records in a given table to multiple references in another table, we use а **many-to-many** relationship.
 
 We manage to do that through the help of a mapping table.
@@ -166,6 +169,8 @@ CREATE TABLE `employees_projects` (`employee_id` INT, `project_id` INT,    // Cr
 [slide hideTitle]
 
 # One-To-One
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/interactive-java-mysql-table-relations-19-21-one-to-one-setup-foreign-key-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 As the name suggests, **one-to-one** relationship is when one entity references only one other entity.
 

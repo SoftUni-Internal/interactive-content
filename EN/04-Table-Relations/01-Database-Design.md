@@ -2,6 +2,8 @@
 
 # Database Designs and Rules
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/interactive-java-mysql-table-relations-3-8-database-design-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The process of creating a database starts with **designing** it.
 
 When we are building a database, we should always consider how to **organize the entities** inside correctly.
@@ -17,11 +19,7 @@ These are the six steps of database design:
 5. Defining **constraints**
 6. Filling **test data**
 
-[/slide]
-
-[slide hideTitle]
-
-# Identification of Entities
+## Identification of Entities
 
 When designing a database, the first thing we should consider is **defining its entities**.
 
@@ -48,11 +46,7 @@ There are **three** entities we must define:
 
 As evident above, the **nouns** from our specification became our entities.
 
-[/slide]
-
-[slide hideTitle]
-
-# Identification of the Columns
+## Identification of the Columns
 
 After figuring out which are our entities, now we should consider what **characteristics** they have. 
 
@@ -74,11 +68,7 @@ When registering a **new student**, we must enter the following information:
 
 These would be the columns of the **student** entity.
 
-[/slide]
-
-[slide hideTitle]
-
-# Choosing a Primary Key
+## Choosing a Primary Key
 
 The primary key is the **identity of your entity** - it is what makes each row inside unique.
 
@@ -109,6 +99,8 @@ If you want a unique primary key, which is harder to guess, you should consider 
 [slide hideTitle]
 
 # Types of Relationships
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/interactive-java-mysql-table-relations-9-11-relationships-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In relational databases there are three types of relations: 
 

@@ -2,6 +2,8 @@
 
 # JOIN Statements
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/interactive-java-mysql-table-relations-22-23-joins-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `JOIN` statements enable us to **connect** two tables by their **foreign keys** and take all the information we need **simultaneously** with only one query statement.
 
 To perform a join, we need two tables and a valid `JOIN` condition.
@@ -24,6 +26,9 @@ Then, we create a "**Join condition**" using "**FOREIGN KEYS**".
 
 [slide hideTitle]
 # Problem with Solution: Trip Organization
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/problem-and-solution-trip-organization-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Trip Organization" taskId="java-db-and-MySQL-table-relations-trip-organization" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 
@@ -264,6 +269,9 @@ Henry Wilson
 
 [slide hideTitle]
 # Problem with Solution: SoftUni Hiking
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/problem-and-solution-softuni-hiking-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="SoftUni Hiking" taskId="java-db-and-MySQL-table-relations-softUni-hiking" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 

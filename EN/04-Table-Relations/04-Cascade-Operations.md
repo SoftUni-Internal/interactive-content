@@ -2,6 +2,8 @@
 
 # Cascade Operations
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/interactive-java-mysql-table-relations-26-29-cascade-operations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 As mentioned earlier, creating table relations with **foreign keys** brings several benefits.
 
 One of those benefits is the ability to perform **cascade operations**.
@@ -21,6 +23,8 @@ Cascading can be performed either with `DELETE` or `UPDATE` followed by a few gu
 [slide hideTitle]
 
 # Cascade DELETE
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/interactive-java-mysql-table-relations-30-foreign-key-delete-cascade-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Cascade DELETE** is used only when the related entities are meaningless without the "main" entity.
 
@@ -51,6 +55,9 @@ CREATE TABLE `cars` (                                 # Create the second table
 
 [slide hideTitle]
 # Problem with Solution: Delete Mountains
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/problem-and-solution-delete-mountains-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Delete Mountains" taskId="java-db-and-MySQL-table-relations-delete-mountains" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 
@@ -104,6 +111,8 @@ Kutelo
 [slide hideTitle]
 
 # Cascade UPDATE
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/interactive-java-mysql-table-relations-33-foreign-key-update-cascade-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Cascade UPDATE** is used when the primary key is not an identity (not **auto-incremented**), making it changeable.
 
