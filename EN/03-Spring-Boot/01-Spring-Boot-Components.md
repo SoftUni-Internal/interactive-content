@@ -217,7 +217,7 @@ public class UserServiceImpl implements UserService {
 
 # Spring IoC
 
-The followin image illustrates how the **Inversion of Control** happens in **Spring**:
+The following image illustrates how the **Inversion of Control** happens in **Spring**:
 
 [image assetsSrc="Java-Spring-Boot-5.png" /]
 
