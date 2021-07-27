@@ -1,6 +1,8 @@
+# Writing Data into Tables
+
 [slide hideTitle]
 
-# Writing Data into Tables
+# Inserting Data
 
 [video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/java-database-and-mysql-basic-crud-25-27-writing-data-in-tables-inserting-data-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -29,13 +31,7 @@ VALUES ('Maria', 'Richardson', '22', 'JavaScript Applications'),
        ('John', 'Doe', '16', 'Java Advanced'), ...
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Reusing Existing Data
-
-[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-27-28-programmability-indices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## Reusing Existing Data
 
 In MySQL, we can create a new table using data from an existing table.
 

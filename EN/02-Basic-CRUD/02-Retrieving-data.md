@@ -159,6 +159,36 @@ Housekeeping
 [/slide]
 
 [slide hideTitle]
+# Concatenation
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/problem-and-solution-select-employees-with-a-filter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## concat_ws()
+
+We use the `concat()` method to **concatenate** the input arguments into a single string output:
+
+```java
+SELECT CONCAT(`name`, ' is a ', `breed`) AS 'introduction',
+FROM dogs;
+```
+
+## concat_ws()
+
+`concat_ws` is a function that concatenates two or more columns using a specified separator.
+
+```java
+SELECT concat_ws(' ', `first_name`, `last_name`) AS 'full_name'      
+FROM people
+WHERE city = 'London' AND 'Paris';                
+```
+
+It has the following syntax - `CONCAT_WS (separator, argument1, argument2, ... )`
+
+Additionally, we are displaying the concatenated information in a column called `full_name`.
+
+[/slide]
+
+[slide hideTitle]
 # Problem with Solution: Select Employees with Filter
 
 [video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/problem-and-solution-select-employees-with-a-filter-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -310,6 +340,44 @@ Housekeeping
 [/slide]
 
 [slide hideTitle]
+# Filtering the Selected Rows
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/java-database-and-mysql-basic-crud-15-filterting-the-selected-rows-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Filtering can be done in **multiple** ways.
+
+## Using `DISTINCT`
+
+You can use the `DISTINCT` keyword to remove any **duplicate** results from the output:
+
+```java
+SELECT DISTINCT `class_id`
+FROM `students`;
+```
+
+## Using `WHERE`
+
+The `WHERE` clause can be used to **filter** rows by one or multiple condition:
+
+```java
+SELECT `first_name`, `class_id`
+FROM `students`
+WHERE `class_id` = 8;
+```
+
+## Using Other Logical Operators
+
+You can other **logical operators** for more precise quering:
+
+```java
+SELECT `first_name`
+FROM `students`
+WHERE gpa == 4;
+```
+
+[/slide]
+
+[slide hideTitle]
 
 # Other Comparison Conditions
 
@@ -336,12 +404,6 @@ SELECT concat_ws(' ', first_name, last_name) AS full_name
 FROM students                                                    
 WHERE course_name = 'JS Basics' AND 'Java Basics'                 
 ```
-
-`concat_ws` is a function that concatenates two or more columns using a specified separator.
-
-It has the following syntax - `CONCAT_WS (separator, argument1, argument2, ... )`
-
-Additionally, we are displaying the concatenated information in a column called `full_name`.
 
 The equivalent of `OR` in Java is the `||` operator.
 
