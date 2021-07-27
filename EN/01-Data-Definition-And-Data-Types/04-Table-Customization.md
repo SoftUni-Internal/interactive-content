@@ -4,6 +4,8 @@
 
 # Custom Column Properties
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-23-24-table-customization-custom-column-properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## Primary Key
 
 ```Java
@@ -58,6 +60,8 @@ If a default value is not specified, the value will be set to `NULL` by default 
 
 # Problem with Solution: Create and Insert
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-25-problems-create-and-insert-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## Problem
 
 For this problem you have to:
@@ -101,6 +105,8 @@ Run `SELECT * FROM employees` to make sure the 3 records were inserted correctly
 [slide hideTitle]
 
 # Problem with Solution: Create Tables
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/problem-and-solution-create-a-new-databases-and-create-a-table-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Create Tables" taskId="MySQL-Data-Definitions-and-Data-Types-Create-Table" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
@@ -316,6 +322,9 @@ id
 
 [slide hideTitle]
 # Problem with Solution: Data Into Tables
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/problem-and-solution-insert-data-into-the-tables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Data into Tables" taskId="MySQL-Data-definitions-and-Data-Types-Data-into-Problem" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```

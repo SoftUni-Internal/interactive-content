@@ -42,6 +42,8 @@ There are also **spatial types** and **JSON data type**, which are not the focus
 
 # Numeric Data Types
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-3-4-data-types-in-mysql-server-numeric-data-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **Numeric** data types have a specific **range**
 
 Depending on the range, they can be **Signed** and **Unsigned** except for the **BIT** data type, which only stores numbers from 1 to 64.
@@ -94,6 +96,8 @@ If you need to only store positive numbers in these columns, you can use a CHECK
 [slide hideTitle]
 
 # String Data Types
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-5-6-7-string-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The following table shows the summary of **String** data types in MySQL:
 
@@ -149,6 +153,8 @@ Character sets and collations can be defined in the database, table, or column l
 [slide hideTitle]
 
 # Date Data Types
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-10-11-data-types-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The following table shows the summary of **Date** data types in MySQL:
 

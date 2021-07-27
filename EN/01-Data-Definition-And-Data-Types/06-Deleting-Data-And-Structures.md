@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Deleting Data and Structures
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-32-33-deleting-from-database-and-structures-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Deleting structures from the database is done using the `DROP` keyword.
 
 You can drop **keys**, **constraints**, **tables** and **entire databases**.
@@ -11,7 +13,12 @@ Deleting all data in a table is called **truncating**.
 
 Both of these actions cannot be **reversed**, so use with caution.
 
-## Dropping and Truncating
+[/slide]
+
+[slide hideTitle]
+# Dropping and Truncating
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-34-35-dropping-and-truncating-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 These are some examples of deleting data in a database:
 

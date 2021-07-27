@@ -2,6 +2,8 @@
 
 # Altering Tables
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-26-30-altering-tables-using-sql-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A table can be changed by using the `ALTER` keyword.
 
 Altering a table or adding a constraint might not be possible if there is already data in the table.
@@ -84,6 +86,9 @@ The default value for the `balance` column will be **0**.
 
 [slide hideTitle]
 # Problem with Solution: Alter Tables
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/problem-and-solution-alter-tables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Alter Tables" taskId="MySQL-Data-definitions-and-Data-Types-Alter-Tables" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
@@ -131,6 +136,8 @@ middle_name
 [slide hideTitle]
 
 # Problem with Solution: Adding Constraints
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/problem-and-solution-adding-constraints-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Adding Constraints" taskId="MySQL-Data-definitions-and-Data-Types-Adding-Constraints" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
@@ -183,6 +190,8 @@ id
 [slide hideTitle]
 
 # Problem with Solution: Modifying Columns
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/problems-and-solution-modifying-columns-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Modifying Columns" taskId="MySQL-Data-definitions-and-Data-Types-Modifying-Columns" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]

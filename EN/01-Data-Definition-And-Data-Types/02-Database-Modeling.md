@@ -4,6 +4,8 @@
 
 # Working with IDEs
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-12-13-database-modeling-working-with-ides-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can manage databases with **MySQL Workbench**, which will allow us to:
 
 - Create new databases
@@ -16,6 +18,8 @@ We can manage databases with **MySQL Workbench**, which will allow us to:
 [slide hideTitle]
 
 # Creating New Databases
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-12-creating-a-new-database-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Select "**Create New Schema**" from the command menu.
 
@@ -30,6 +34,8 @@ If you have any problems, take a look at the following image:
 [slide hideTitle]
 
 # Creating Tables
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-15-16-17-creating-tables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Right-click on "Tables" and select "**Create Table**".
 

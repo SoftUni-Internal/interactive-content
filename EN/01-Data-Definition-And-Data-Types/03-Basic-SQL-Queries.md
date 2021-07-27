@@ -4,6 +4,8 @@
 
 # SQL Queries
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-19-20-sql-queries-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We use SQL queries to perform any data operations on the database, such as creating new tables, inserting records, retrieving records, and modifying information.
 
 To create a database, type in the following command:
@@ -23,6 +25,8 @@ SQL keywords conventionally contain only **capital letters**.
 [slide hideTitle]
 
 # Table Creation
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-21-table-creation-in-sql-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In the following example, we will create a table called `people`:
 
@@ -48,6 +52,8 @@ When using a `NOT NULL` property, we specify that the given field is **required*
 [slide hideTitle]
 
 # Inserting & Retrieving Records
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-22-retrieve-records-in-sql-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is the syntax for **inserting records** into a table:
 
