@@ -2,19 +2,21 @@
 
 [slide hideTitle]
 
-# Indexes
+# Indices
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-27-28-programmability-indices-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A database index is a data structure that improves the speed of operations in a table.
 
-Indexes are created using one or more columns, providing the basis for both rapid random lookups and efficient ordering of access to records.
+Indices are created using one or more columns, providing the basis for both rapid random lookups and efficient ordering of access to records.
 
-While creating an index, you should consider which column will be used to make SQL queries and create one or more indexes on those columns.
+While creating an index, you should consider which column will be used to make SQL queries and create one or more indices on those columns.
 
-There are two types of indexes: **Clustered** and **Non-Clustered**.
+There are two types of indices: **Clustered** and **Non-Clustered**.
 
-**Clustered** indexes are bound to the **primary key** and are used to physically sort data.
+**Clustered** indices are bound to the **primary key** and are used to physically sort data.
 
-**Non-Clustered** indexes can be bound to any field. 
+**Non-Clustered** indices can be bound to any field. 
 
 They are used to **reference** the primary index.
 
@@ -25,6 +27,8 @@ They are used to **reference** the primary index.
 [slide hideTitle]
 
 # Views
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-29-views-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Views are prepared queries for displaying sections of our data. 
 
@@ -48,6 +52,8 @@ SELECT * FROM v_employee_names
 [slide hideTitle]
 
 # Procedures, Functions, and Triggers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-30-procedures-functions-and-triggers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A database can also store reusable code such as **Procedures**, **Functions**, and **Triggers**.
 

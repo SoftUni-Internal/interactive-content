@@ -4,6 +4,8 @@
 
 # Storage vs. Management
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-3-6-data-management-storage-vs-management-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 MySQL is a **relational database** that stores data in a **tabular structure** and is grouped by **tables**.  
 
 It uses **SQL** as a language for **communicating with the database**, which allows us to create both **simple** and **complex queries** to retrieve and structure data as we want.    
@@ -47,6 +49,8 @@ Here are some of the benefits of having well-structured databases:
 
 # Databases
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-7-8-databases-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A database is an organized collection of structured information, or data, typically stored electronically in a computer system. 
 
 It is usually controlled by a database management system (**DBMS**).
@@ -63,11 +67,7 @@ Together, the data and **DBMS**, along with the applications that are associated
 
 Relational storage was first proposed by Edgar Codd in 1970.
 
-[/slide]
-
-[slide hideTitle]
-
-# Relational Databases
+## Relational Databases
 
 A relational database is a type of database that stores and provides **access to data points** that are **related to one another**. 
 
@@ -115,6 +115,8 @@ Here are some examples of non-relational databases:
 
 # RDBMS
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-9-rdbms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A database typically requires a comprehensive database software program known as a database management system **DBMS**. 
 
 It serves as an interface between the database and its end-users or programs, allowing them to **retrieve**, **update** and **manage** how the information is organized and optimized.
@@ -126,6 +128,15 @@ The user does not have direct access to the stored data.
 Data is stored in **tables**. 
 
 The relation between the tables made by **primary** and **secondary** keys.
+
+[/slide]
+
+[slide hideTitle]
+
+# Database Engine Flow
+
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-10-database-engine-flow-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is an example of the database engine flow:
 

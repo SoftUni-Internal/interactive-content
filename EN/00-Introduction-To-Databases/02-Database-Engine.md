@@ -4,6 +4,8 @@
 
 # Client Server Model
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-11-12-database-engine-client-server-model-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The server in a client-server model is simply the **DBMS**, and the client is the database application serviced by the **DBMS**.
 
 We have distributed client-servers when the client is on one computer while the server and database are on another. 
@@ -24,7 +26,13 @@ MySQL has many clients: **HeidiSQL**, **MySQL Workbench**, etc.
 
 [image assetsSrc="Introduction-To-Databases(2).png" /]
 
-## Top Database Engines
+[/slide]
+
+[slide hideTitle]
+
+# Top Database Engines
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-13-top-database-engines-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is a list of some of the best database engines used worldwide:
 

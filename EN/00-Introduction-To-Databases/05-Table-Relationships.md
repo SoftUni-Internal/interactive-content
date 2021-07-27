@@ -4,6 +4,8 @@
 
 # Splitting Related Data
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-24-why-split-related-data-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We split data into separate tables to avoid repeating empty records or redundant information.
 
 [image assetsSrc="Introduction-To-Databases(7).png" /]
@@ -19,6 +21,8 @@ For example, it would be more efficient if we added a customer's information jus
 [slide hideTitle]
 
 # Related Tables
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-25-related-tables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 After splitting the data, we create **relationships** between the tables to **avoid repetition**. 
 
@@ -43,6 +47,8 @@ The connection is made by a **foreign key** in one table that points to a **prim
 [slide hideTitle]
 
 # Entry Relationship Model
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-26-er-diagrams-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is an example of a diagram with the connections between the tables.
 

@@ -4,6 +4,8 @@
 
 # MySQL
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-19-20-mysql-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 MySQL is a free software under the **GNU General Public License** and is also available under different proprietary licenses. 
 
 It was owned and sponsored by the Swedish company **MySQL AB**, bought by **Sun Microsystems** and now called **Oracle Corporation**.
@@ -25,6 +27,8 @@ Here are some links for downloading MySQL Server:
 
 # MySQL Server Architecture
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-21-mysql-server-arhitecture-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The MySQL server architecture isolates the application programmer and DBA from all low-level implementation details at the storage level, providing a consistent application model and API. 
 
 Аlthough there are different capabilities across different storage engines, the application is shielded from these differences. 
@@ -42,6 +46,8 @@ In the physical storage, we have data files and logs.
 [slide hideTitle]
 
 # Database Table Elements
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-22-database-table-elements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The table is the building block of any database. 
 

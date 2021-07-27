@@ -4,6 +4,8 @@
 
 # Structured Query Language
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-14-18-structured-query-language-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **SQL** is a standard language for accessing and manipulating databases. 
 
 It stands for **Structured Query Language**. 
@@ -23,11 +25,7 @@ By using SQL, you can:
 - Create views in a database
 - Set permissions on tables, procedures, and views
 
-[/slide]
-
-[slide hideTitle]
-
-# Structured Query Language Elements
+## Structured Query Language Elements
 
 SQL is divided into several language elements:
 
@@ -49,11 +47,7 @@ WHERE job_title = "Cashier";
 
 The entire piece of code is a **statement**.
 
-[/slide]
-
-[slide hideTitle]
-
-# Structured Query Language Sections
+## Structured Query Language Sections
 
 We can logically divide SQL into four sections:
 
@@ -66,7 +60,7 @@ We can logically divide SQL into four sections:
 4. **Transaction Control (TCL)**
     - Bundles operations and allows rollbacks
 
-## DDL
+### DDL
 
 The **Data Definition** section specifies:
 - The schema of each relation
@@ -86,7 +80,7 @@ The following are all DLL commands:
 - `DROP` - Deletes a column or a table from an existing database
 - `TRUNCATE` - Erases all rows in a table
 
-## DML
+### DML
 
 The SQL commands that **manipulate data** in the database belong to the **Data Manipulation Language (DML)**.
 
@@ -98,7 +92,7 @@ These are some of the most common DML commands:
 - `UPDATE` - Used to update existing data within a table
 - `DELETE` - Used to delete records from a database table
 
-## DCL
+### DCL
 
 DCL includes commands which mainly deal with the **permissions** and other **controls** of the database system.
 
@@ -107,7 +101,7 @@ Here are some commands and what they do:
 - `GRANT` - Gives users access privileges to the database
 - `REVOKE` - Revokes a user's access privileges given by using the `GRANT` command
 
-## TCL
+### TCL
 
 TCL commands deal with the **transaction** within the database.
 

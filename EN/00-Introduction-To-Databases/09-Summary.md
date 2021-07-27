@@ -2,6 +2,8 @@
 
 # Summary
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Databases-Introduction/java-databases-and-mysql-databases-introduction-31-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## In this lesson you learned:
 
 - We communicate with the DB engine via SQL
@@ -17,18 +19,18 @@
     last_name VARCHAR(50)
     ```
 - We can use GUI Clients to create and customize tables
-    - MySQL Workbench, phpMyAdmin, etc.
+    * MySQL Workbench, phpMyAdmin, etc.
 - SQL provides greater control
 
 ## In the next lesson you will learn:
 
 - Data Types in MySQL
-    - what the correct data type is for every situation
+    * what the correct data type is for every situation
 - Database Modeling
 - Basic SQL Queries
-    - communicating with the database
+    * communicating with the database
 - Table Customization
-    - declaring tables and table constraint definition
+    * declaring tables and table constraint definition
 - Altering Tables
 - Deleting Data and Structures
  
