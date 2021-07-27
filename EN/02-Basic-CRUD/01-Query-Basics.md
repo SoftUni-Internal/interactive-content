@@ -4,6 +4,8 @@
 
 # The Basics of Querying
 
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Basic-CRUD/java-database-and-mysql-basic-crud-3-4-5-query-basics-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **CRUD** operations are the most used functionalities in databases and applications.
 
 **CRUD** is an acronym that stands for **C**reate, **R**ead, **U**pdate, and **D**elete.
