@@ -378,7 +378,7 @@ The **Singleton** beans are **stateless** beans because they **cannot** carry **
 
 However, the **Prototype** beans can **carry state**, as they point to **different instances**.
 
-The following table illustrates the **differences** between the two scopes:
+In other words, Singleton beans are state-less, while Prototype beans are state-full.
 
 [/slide]
 
