@@ -261,4 +261,4 @@ Export a player's full name, number, salary and team name ordered by their salar
 **Salary:** \{**player salary**\}
 **Team:** \{**team name**\}
 . . ."
-[slide]
+[/slide]
