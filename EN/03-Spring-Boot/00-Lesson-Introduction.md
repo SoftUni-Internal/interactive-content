@@ -14,7 +14,7 @@
 
 - What Beans are and how to create them
 
-- Understanding Scopes and Lifecycle of a Bean
+- Understanding the Scopes and Lifecycle of a Bean
 
 - Configuring a Spring Boot application
 

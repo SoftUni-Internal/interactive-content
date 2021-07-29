@@ -38,7 +38,7 @@ public class Employee {
     private long id;
 
     private String name;
-    //Getter and Setter functions
+    // Getter and Setter functions
 }
 ```
 
