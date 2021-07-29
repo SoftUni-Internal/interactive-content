@@ -67,7 +67,7 @@ Look at the pictures below to see what must happen:
 
 # Project Skeleton Overview
 
-You will be provided with a **Skeleton** with **several classes**, some of which - completely empty. 
+You will be provided with a **Skeleton** with **several classes**, some of which - empty. 
 
 The **Skeleton** will include the **files**, with which you will **seed** the **database**.
 
@@ -104,7 +104,7 @@ Design them in the **most appropriate** way, considering the following **data co
 
 NOTE: Name the entities and their class members **exactly** in the **format stated** above. 
 
-A field should use the **snake_case** convention in the database, while keeping the **camelCase** convention in the **Java application**.
+A field should use the **snake_case** convention in the database while keeping the **camelCase** convention in the **Java application**.
 
 ## Relationships
 
@@ -134,7 +134,7 @@ When the import is finished: "**Successfully imported** \{**picture/team/player*
 
 ## XML Import
 
-The **Football info** have prepared some XML data for you to import.
+The **Football info** has prepared some XML data for you to import.
 
 ## Example
 ```js
@@ -254,7 +254,7 @@ Extract the name of the **team** and information about the **players ordered by 
 
 ## Export players with a salary larger than 100000
 
-Export a player's full name, number, salary and team name ordered by their salary in descending order.
+Export a player's full name, number, salary, and team name ordered by their salary in descending order.
 
 "**Player name:** \{**firstName**\} \{**lastName**\} 
 **Number:** \{**player number**\}
