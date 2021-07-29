@@ -209,8 +209,8 @@ Create an `Employee` class that has the following properties:
 
 Create **2 types** of data transfer objects: 
 
-- `EmployeeDto` – first name, last name, salary 
-- `ManagerDto` – first name, last name, list of **EmployeeDtos** that they are in charge of 
+- `EmployeeDto` - first name, last name, salary 
+- `ManagerDto` - first name, last name, list of **EmployeeDtos** that they are in charge of 
   
 **Create a list** of several **employees and populate the database with them**.
 
@@ -261,8 +261,8 @@ Order them **by their salary in descending order** and **print them to the conso
 
 | **Sample output** |
 | --- |
-| Steve Jobbsen 6000.20 – Manager: \[no manager\] |
-| Kirilyc Lefi 4400.00 – Manager: Jobbsen |
-| Stephen Bjorn 4300.00 – Manager: Jobbsen  |
+| Steve Jobbsen 6000.20 - Manager: \[no manager\] |
+| Kirilyc Lefi 4400.00 - Manager: Jobbsen |
+| Stephen Bjorn 4300.00 - Manager: Jobbsen  |
 
 [/slide]

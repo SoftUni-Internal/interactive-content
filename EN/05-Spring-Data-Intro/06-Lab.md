@@ -54,7 +54,7 @@ logging.level.org.hibernate.type.descriptor = TRACE
 
 Create 3 directories to help organize the project:
 
-- **models** – the directory of our database models (entities)
+- **models** - the directory of our database models (entities)
 
 - **repositories** - the package where we will hold the repository interfaces
 
@@ -95,7 +95,7 @@ Set up the appropriate tables, columns, column properties and table relations.
 
 # Repositories
 
-Create two repositories – one for the **User** and another for the **Account**.
+Create two repositories - one for the **User** and another for the **Account**.
 
 ```java
 @Repository

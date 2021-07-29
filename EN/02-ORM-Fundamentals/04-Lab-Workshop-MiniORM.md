@@ -42,7 +42,7 @@ In the means of ORMs, database objects are mapped to object-oriented implementat
 
 They are objects that **relate** to database tables.
 
-For example, a `users` table contains fields with the main characteristics of a user entity – `id`, `username`, `first_name`, `last_name`, `age`, etc.
+For example, a `users` table contains fields with the main characteristics of a user entity - `id`, `username`, `first_name`, `last_name`, `age`, etc.
 
 In the **"java"** folder, create a package called **entities**.
 
@@ -54,7 +54,7 @@ Then, create a **User** class with the following fields and properties:
 - `age` - **int**
 - `RegistrationDate` - **Date**
 
-Create a **constructor** that sets **all fields except for id** – it is auto incremented on database level.
+Create a **constructor** that sets **all fields except for id** - it is auto incremented on database level.
 
 The order of the constructor's parameters must be **identical to the sequence of columns in the database table.**
 
@@ -98,7 +98,7 @@ In order to achieve this, we will require the following parameters for the datab
 
 - **password**
 
-- **dbName** – the current database for the project
+- **dbName** - the current database for the project
   - we must create one **manually**
    
 ```java
@@ -126,15 +126,15 @@ Create an `interface` that will define the possible database operations.
 
 Name your interface `DbContext` and define the following methods inside: 
 
-- `boolean persist(E entity)` – **inserts** or **updates** an entity, according to whether it is attached to the context or not
+- `boolean persist(E entity)` - **inserts** or **updates** an entity, according to whether it is attached to the context or not
 
-- `Iterable<E> find(Class<E> table)` – returns a **collection** of all entity objects of type `E`
+- `Iterable<E> find(Class<E> table)` - returns a **collection** of all entity objects of type `E`
 
-- `Iterable<E> find(Class<E> table, String where)` – returns a **collection** of all entity objects of type `E` that match the criteria of the "**where**" String
+- `Iterable<E> find(Class<E> table, String where)` - returns a **collection** of all entity objects of type `E` that match the criteria of the "**where**" String
 
-- `E findFirst(Class<E> table)` – returns the **first entity object** of type `E`
+- `E findFirst(Class<E> table)` - returns the **first entity object** of type `E`
 
-- `E findFirst(Class<E> table, String where)` – returns the **first entity object** of type `E` matching the criteria given in "**where**"
+- `E findFirst(Class<E> table, String where)` - returns the **first entity object** of type `E` matching the criteria given in "**where**"
 
 ```java
 public interface DbContext<E> {
@@ -187,7 +187,7 @@ The logic behind the `persist` method has a simple implementation.
 
 It should **check** if the database contains the given object: 
 
-- if it does – it should **update the existing object's properties with the new values**; 
+- if it does - it should **update the existing object's properties with the new values**; 
 
 - otherwise, **it must add a new entry**. 
 
@@ -195,7 +195,7 @@ The method **returns** whether the object was successfully persisted in the data
 
 We can check if the user we are trying to persist is **new** by checking the value of its `id` field - if it is **not empty** that means we must try to **update** it. 
 
-Keep in mind that the method works with **a generic type** – `E` and we **do not have direct access** to its getter methods – for example `getId`.  
+Keep in mind that the method works with **a generic type** - `E` and we **do not have direct access** to its getter methods - for example `getId`.  
 
 In order to easily work with other entities in the future (not only `User`), we have to access the field using `Annotations`.  
 
@@ -236,7 +236,7 @@ public @interface Column {
 
 **Annotate the entities and their corresponding fields.** 
 
-In the `Entity` annotation, specify the name of the database table to be mapped – `users`, and in `Column` – the table column name, corresponding to the Java field. 
+In the `Entity` annotation, specify the name of the database table to be mapped - `users`, and in `Column` - the table column name, corresponding to the Java field. 
 
 We should create an additional method `getId(Class entity)` in the `EntityManager` class. 
 

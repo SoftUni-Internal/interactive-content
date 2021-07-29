@@ -374,19 +374,19 @@ For a successful registration, the user must have:
 
 The requirements for **valid parameters** are: 
 
-1. **Email** – must contain the `@` sign and a period
+1. **Email** - must contain the `@` sign and a period
     * it must be unique
 
-2. **Password** – the character length must be **at least 6 symbols** and must contain at least **1 uppercase** letter, **1 lowercase** letter and **1 digit**
+2. **Password** - the character length must be **at least 6 symbols** and must contain at least **1 uppercase** letter, **1 lowercase** letter and **1 digit**
 
-3. **Confirm Password** – must **match** the provided password
+3. **Confirm Password** - must **match** the provided password
 
 - `LoginUser|<email>|<password>` - this command sets the current logged in user, if it exists
     * otherwise, prints an appropriate message
 
 **Logged in** users can logout.
 
-- `Logout` – this command logs the user out of the system
+- `Logout` - this command logs the user out of the system
     * if there is no logged in user, prints the appropriate message
 
 ## Examples

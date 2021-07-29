@@ -49,7 +49,7 @@ In the above example, `XmlRootElement(name = "animal")` is an annotation that se
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 # JAXB Annotations
 
 - `@XmlRootElement` - defines the XML root object.

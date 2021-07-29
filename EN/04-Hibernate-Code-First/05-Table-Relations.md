@@ -179,7 +179,7 @@ public abstract class BasicIngredient implements Ingredient {
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Fetch Types
 
@@ -228,7 +228,7 @@ We can use lazy fetching with **all types** of hibernate mappings.
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Cascading
 

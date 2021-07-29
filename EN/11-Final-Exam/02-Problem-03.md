@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # 3. Model Definition
 

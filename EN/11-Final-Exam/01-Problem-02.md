@@ -1,4 +1,4 @@
-[slide]
+[slide hideTitle]
 
 # 2. Project Skeleton Overview
 

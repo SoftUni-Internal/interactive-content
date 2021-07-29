@@ -1,6 +1,6 @@
 # 1. Functionality Overview
 
-[slide]
+[slide hideTitle]
 
 # Airline Company
 
