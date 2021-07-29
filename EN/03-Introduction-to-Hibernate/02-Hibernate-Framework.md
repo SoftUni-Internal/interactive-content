@@ -13,8 +13,8 @@ It generates all the required SQL statements to replicate all operations to the 
 Hibernate abstracts implementations from developers, providing a simplified experience.
 
 It automatically performs usual operations, including:
-  - **connecting** to the database
-  - writing **queries** for CRUD operations
+  - **Connecting** to the database
+  - Writing **queries** for CRUD operations
 
 Using an ORM framework such as Hibernate improves our productivity by giving us a high-level-oriented API and removing the need to write plain SQL.
 
@@ -48,7 +48,7 @@ We have **two** different approaches to **Java ORM:**
 
 Let us take a look at the `Pom.xml` **file**:
 
-```java
+```js
  <dependencies>
         <dependency>
             <groupId>org.hibernate</groupId>
@@ -75,7 +75,7 @@ You must always verify that you are using the correct dialect for your database 
 
 This is the structure of the `hibernate.cfg.xml` file:
 
-```java
+```js
 <?xml version='1.0' encoding='utf-8'?>
 <!DOCTYPE hibernate-configuration // Hibernate configuration tag
         PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
@@ -144,7 +144,7 @@ public class Student {
 
 Now, we must create and configure our `student.cfg.xml` mapping file.
 
-```java
+```js
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE hibernate-mapping PUBLIC // Mapping file
         "-//Hibernate/Hibernate Mapping DTD//EN"

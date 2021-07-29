@@ -22,7 +22,7 @@ Select a project location and click "Next" again.
 
 Initially, no database driver is imported. This can be done through Maven, by adding a dependency in the **"pom.xml"** file: 
 
-```java
+```js
 <dependencies>
     <dependency>
         <groupId>mysql</groupId>
@@ -54,7 +54,7 @@ Then, create a **User** class with the following fields and properties:
 - `age` - **int**
 - `RegistrationDate` - **Date**
 
-Create a **constructor** that sets **all fields except for id** - it is auto incremented on database level.
+Create a **constructor** that sets **all fields except for id** - it is auto-incremented on database level.
 
 The order of the constructor's parameters must be **identical to the sequence of columns in the database table.**
 
@@ -88,9 +88,9 @@ public class User {
 
 It is time to separate our logic into classes. 
 
-Create a new "**orm**" package and a `Connector` class inside. 
+Create a new "**ORM**" package and a `Connector` class inside. 
 
-It will establish the connection with our database.
+It will establish a connection with our database.
 
 In order to achieve this, we will require the following parameters for the database: 
 
@@ -195,9 +195,9 @@ The method **returns** whether the object was successfully persisted in the data
 
 We can check if the user we are trying to persist is **new** by checking the value of its `id` field - if it is **not empty** that means we must try to **update** it. 
 
-Keep in mind that the method works with **a generic type** - `E` and we **do not have direct access** to its getter methods - for example `getId`.  
+Keep in mind that the method works with **a generic type** - `E` and we **do not have direct access** to its getter methods - for example, `getId`.  
 
-In order to easily work with other entities in the future (not only `User`), we have to access the field using `Annotations`.  
+In order to easily work with other entities in the future (not only `User`), but we also have to access the field using `Annotations`.  
 
 Create 3 annotations - `Entity`, `Column`, and `Id`. 
 
@@ -250,7 +250,7 @@ private Field getId(Class entity) {
             .orElseThrow(() -> new UnsupportedOperationException("Entity does not have a primary key"));
 ```
 
-If returned value is **null**, we need to do an **insert**. 
+If the returned value is **null**, we need to do an **insert**. 
 
 Otherwise, we should perform an **update**. 
 
@@ -279,7 +279,7 @@ Both methods prepare query statements and execute them.
 
 The difference between them is that when **inserting** a new entity, you should **set its** `id`. 
 
-The `id` is generated on database level. 
+The `id` is generated on the database level. 
 
 Both methods **return** whether the entity was successfully persisted. 
 
@@ -312,7 +312,7 @@ private boolean doInsert(E entity, Field primary throws SQLException, IllegalAcc
 
 The `doUpdate` method's implementation is similar: 
 
-- Get the **name of the table** you will be updating into 
+- Get the **name of the table** you will be updated into 
 
 - Start **joining the components** of your query: 
     * `UPDATE clause, {table name}, SET, WHERE {the given predicate}`
@@ -338,11 +338,11 @@ private boolean doUpdate(E entity, Field primary) throws IllegalAccessException,
 
 # Fetching Results
 
-Once we have persisted our entities (objects) in the database it is time to implement a functionality for **getting them out of the database and persisting them in the operating memory**. 
+Once we have persisted our entities (objects) in the database it is time to implement functionality for **getting them out of the database and persisting them in the operating memory**. 
 
 We will implement **all Find methods from** `DbContext`. 
 
-Here are some tips of how to implement `public E findFirst(Class<E> table, String where)`. 
+Here are some tips on how to implement `public E findFirst(Class<E> table, String where)`. 
 
 The rest of the methods have a **similar** implementation. 
 
@@ -362,7 +362,7 @@ public E findFirst(Class <E> table, String where) throws SQLException, IllegalAc
 
 As shown above, we use a new `fillEntity` method. 
 
-This method receives a `ResultSet` object, **retrieves information from the current row** of the reader and fills the data. 
+This method receives a `ResultSet` object, **retrieves information from the current row** of the reader, and fills the data. 
 
 Create two methods - `fillEntity` and `fillField`.
 

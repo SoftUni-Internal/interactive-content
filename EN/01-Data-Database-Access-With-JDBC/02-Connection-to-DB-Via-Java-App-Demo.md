@@ -68,7 +68,7 @@ while(rs.next()) {  // Retrieving data
 
 # Demo Conclusion
 
-We can access databases on a programmer level with every relational database such as PostgreSQL, MySQL, SQLite etc., by using the same approach:
+We can access databases on a programmer level with every relational database such as PostgreSQL, MySQL, SQLite, etc., by using the same approach:
 - Create connection
 - Create a statement with escaping
 - Set parameters

@@ -4,7 +4,7 @@
 
 # About JPA
 
-The Java Persistence API (JPA) is a Java specification for accessing, persisting, and managing data between Java objects or classes and a relational database.
+The Java Persistence API (JPA) is a Java specification for accessing, persisting and managing data between Java objects or classes and a relational database.
 
 This concept is known as ORM (**Object-relational mapping**).
 
@@ -108,7 +108,7 @@ If no **column** annotation is applied, the default values apply.
 
 The easiest configuration approach is adding a `persistence.xml` file to the `META-INF` directory, located inside `src/main/resources/`:
 
-```java
+```js
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
    <persistence-unit name="school">
@@ -125,17 +125,17 @@ The easiest configuration approach is adding a `persistence.xml` file to the `ME
 </persistence>
 ```
 
-Here you can see an example configuration which tells Hibernate to connect to a **MySQL** database on `localhost:3306`.
+Here you can see an example configuration that tells Hibernate to connect to a **MySQL** database on `localhost:3306`.
 
-The `<persistence-unit>` element defines a set of entities which represent the data contained in a data store, and will be managed by an `EntityManager`.
+The `<persistence-unit>` element defines a set of entities that represent the data contained in a data store and will be managed by an `EntityManager`.
 
-Inside `<properties>`, we have all the necessary DB information, such as the **url, username, passsword, and dialect**.
+Inside `<properties>`, we have all the necessary DB information, such as the **URL, username, password, and dialect**.
 
 We can also use an optional `<description>` element to provide information about the persistence unit.
 
 ## `pom.xml`:
 
-```java
+```js
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0  http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -195,7 +195,7 @@ In this example, we create an `EntityManagerFactory` instance, stored in the **e
 
 We also initialize an `EntityManager` instance - **em**.
 
-Then, we attempt to persist a `student` entity with a name of "Teo" into the database.
+Then, we attempt to persist a `student` entity with the name of "Teo" into the database.
 
 [/slide]
 

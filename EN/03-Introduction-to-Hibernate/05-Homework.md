@@ -100,7 +100,7 @@ Print the **first name, last name, department name** and **salary of each employ
 
 Create a new address with text **"Oxford Str 15"**.
  
-Assign it to an **employee** whose **last name** matches the given **input**.
+Assign it to an **employee** whose ** the last name** matches the given **input**.
 
 [/slide]
 
@@ -257,8 +257,8 @@ Write a program that finds the **largest salary** in each **department.**
 
 | **Output** |
 | --- |
-| Engineering	 71120.00 |
-| Sales	 72100.00 |
+| Engineering    71120.00 |
+| Sales  72100.00 |
 | Marketing 16128.00  |
 | Production 84100.00 |
 | ... |

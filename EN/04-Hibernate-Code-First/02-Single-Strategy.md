@@ -4,7 +4,7 @@
 
 The single table inheritance is the default JPA strategy.
 
-Single table strategy is the simplest and usually best performing strategy. 
+The single table strategy is the simplest and usually best-performing strategy. 
 
 All of the properties from the inheritance hierarchy are mapped and all data goes to **one table**.
 
@@ -12,9 +12,9 @@ It is used to store all of the instances of the **entire inheritance hierarchy.*
 
 `@Inheritance(strategy=InheritanceType.SINGLE_TABLE)` annotation is used with parent class. 
 
-A discriminator column is used to determine to which class the particular row belongs to.
+A discriminator column is used to determine to which class the particular row belongs.
 
-Let's see following example:
+Let us see the following example:
 
 **Vehicle class:**
 
@@ -48,7 +48,7 @@ public abstract class TransportationVehicle extends Vehicle {
         super(type);
         this.loadCapacity = loadCapacity;
     }
-    // Getters and setters	
+    // Getters and setters  
 }
 ```
 
@@ -62,8 +62,8 @@ public abstract class PassengerVehicle extends Vehicle {
     public PassengerVehicle() { }
 
     public PassengerVehicle(String type, int noOfpassengers) {
-	super(type);
-	this.noOfpassengers = noOfpassengers;
+    super(type);
+    this.noOfpassengers = noOfpassengers;
     }
     
     // Getters and setters
@@ -101,10 +101,5 @@ public class Truck extends TransportationVehicle {
 **Results after persist:**
 
 [image assetsSrc="Hibernate-Code-First(1).png" /]
-
-
-
-
-
 
 [/slide]

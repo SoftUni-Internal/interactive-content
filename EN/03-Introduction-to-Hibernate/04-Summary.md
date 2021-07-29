@@ -7,7 +7,7 @@
 - **Maven** is a project **management** framework
   * it enables easy **dependency** imports by XML
 
-```java
+```js
 <build>
         <plugins>
             <plugin>
@@ -36,14 +36,14 @@ public class User {
     @Column(name="user_name", length=50, nullable=false, unique=false)
     private String name;
     
-    // Fields, getters and setters
+    // Fields, getters, and setters
 }
 ```
 
 - **Hibernate** is an open-source ORM framework 
   * **maps** an object-oriented model to a relational database
 
-```java
+```js
 <hibernate-mapping>
     <class name="entities.User" table="users"> // Class mapping
         <id name="id" column="id"> // Field mapping

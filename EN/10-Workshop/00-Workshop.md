@@ -152,9 +152,9 @@ You are **not allowed** to modify the provided files.
 
 ## Import Companies
 
-**companies.xml**
-
 ```js
+//File name: companies.xml
+
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <companies>
    <company name="Vallor"/>
@@ -173,9 +173,9 @@ You are **not allowed** to modify the provided files.
 
 ## Import Projects
 
-**projects.xml**
-
 ```js
+//File name: projects.xml
+
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <projects>
    <project>
@@ -202,9 +202,9 @@ You are **not allowed** to modify the provided files.
 
 ## Import Employees
 
-**employees.xml**
-
 ```js
+//File name: employees.xml
+
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <employees>
    <employee>

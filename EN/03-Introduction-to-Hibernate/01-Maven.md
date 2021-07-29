@@ -66,7 +66,7 @@ Let us take a look at the POM file and its dependencies.
 
 ## POM Model
 
-```java
+```js
 <build>
         <plugins>
             <plugin>
@@ -103,7 +103,7 @@ Most projects are dependent on other projects to build and execute properly.
 
 We declare dependencies using the `<dependency>` tag:
 
-```java
+```js
 <dependencies>
         <dependency>
             <groupId>org.hibernate</groupId>

@@ -14,7 +14,7 @@ It maps **objects** to **table rows in relational databases**.
 
 Using ORM, we can perform the full range of CRUD operations.
 
-It can **store, retrieve, update, and delete** from an object-oriented program in a relational database.
+It can **store, retrieve, updates, and delete** from an object-oriented program in a relational database.
 
 All ORM systems utilize a "**data layer**", responsible for managing translation between both systems.
 
@@ -102,11 +102,11 @@ There are two strategies of working with an **ORM**:
 
 By taking the database-first approach, we can alter the model without having to recreate the database and lose all data.
 
-This limitation of code-first makes it less suitable for production environments, as compared to the database-first approach.
+This limitation of code-first makes it less suitable for production environments, as compared to the database first approach.
 
 This is why the database-first approach is more suitable for projects that may require modification in production.
 
-Another disadvantage of code-first is that the model builder requires priviliges on the master database.
+Another disadvantage of code-first is that the model builder requires privileges on the master database.
 
 This does not apply when using an [SQL Server Compact database](https://en.wikipedia.org/wiki/SQL_Server_Compact).
 
@@ -192,7 +192,7 @@ The following picture illustrates how the **code-first** approach works:
 
 [image assetsSrc="Java-ORM-Fundamentals-3.png" /]
 
-Applyng this approach in this diagram, the `Student` and `Employee` classes are created first.
+By applying, this approach in this diagram, the `Student` and `Employee` classes are created first.
 
 The Entity Framework then handles their conversion to database entries.
 
@@ -208,7 +208,7 @@ This method is applied in **traditional ORMs**.
 
 The following code is an example of a **POJO + XML** combination:
 
-```java
+```js
 <?xml version="1.0" encoding="UTF-8" ?>
 <entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -240,13 +240,13 @@ We will learn what a persistence unit is in the next lesson.
 
 The `<description>` tag contains information about the entity classes in the application.
 
-`<package>` specifies the package of the classes listed within the sub elements and attributes of the same mapping file only.
+`<package>` specifies the package of the classes listed within the sub-elements and attributes of the same mapping file only.
 
 The `<entity>` element has a `class` attribute, used to define the name of the entity class.
 
 To define the attributes of the class, we use `<attributes>`. 
 
-It can contain multiple sub tags, such as `<id>`, `<basic>` (maps the entity columns to those in the database), and `<version>`.
+It can contain multiple subtags, such as `<id>`, `<basic>` (maps the entity columns to those in the database), and `<version>`.
 
 While this approach is powerful, it is old and not a recommended practice.
 

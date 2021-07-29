@@ -2,11 +2,11 @@
 
 # Table Per Class Strategy Overview
 
-In Table per class strategy, the subclasses and the superclass are mapped to different individual tables.
+In the Table per class strategy, the subclasses and the superclass are mapped to different individual tables.
 
 The annotation `@Inheritance` is used on the main entity class with strategy = `InheritanceType.TABLE_PER_CLASS`.
 
-It allows inheritance to be used in the object model, when it doesn't exist in the data model.
+It allows inheritance to be used in the object model when it doesn't exist in the data model.
 
 We do not need to use the `@DiscriminatorValue` and `@DiscriminatorColumn` annotations in this strategy.
 
@@ -73,7 +73,7 @@ As a result, we have two tables - "bikes" and "cars" with **id** and **type** co
 
 - **Advantages:**
 
-  * Since we have individual table per entity, we can define specific constraints at the database layer
+  * Since we have an individual table per entity, we can define specific constraints at the database layer
 
   * No **NULL** values
 
@@ -85,16 +85,9 @@ As a result, we have two tables - "bikes" and "cars" with **id** and **type** co
 
   * The same information is storing in different tables
 
-  * Changes in super class affect changes in all subclass tables
+  * Changes in superclass affect changes in all subclass tables
 
   * No **foreign keys** involved
-
-
-
-
-
-
-
 
 [/slide]
 

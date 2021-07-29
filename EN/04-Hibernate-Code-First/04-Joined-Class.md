@@ -2,13 +2,13 @@
 
 # Table Per Class: Joined
 
-In order to avoid the disadvantages of **TABLE_PER_CLASS** strategy, we are using **JOINED** strategy.
+To avoid the disadvantages of the **TABLE_PER_CLASS** strategy, we are using **JOINED** strategy.
 
 This strategy **maps** child and parent class entities in a **separate** database table.
 
-Table is defined for each class in the inheritance hierarchy storing the class only **local attributes.**
+The table is defined for each class in the inheritance hierarchy storing the class only **local attributes.**
 
-Each table must store object's **primary key.**
+Each table must store the object's **primary key.**
 
 **Vehicle class:**
 
@@ -44,13 +44,13 @@ public abstract class TransportationVehicle extends Vehicle {
 
     }
     
-    // Getters and setters	
+    // Getters and setters  
 }
 ```
 
 **PassengerVehicle class:**
 
-``` java
+```java
 @MappedSuperclass
 public abstract class PassengerVehicle extends Vehicle {   
     private int noOfpassengers;
@@ -96,7 +96,7 @@ public class Car extends PassengerVehicle {
 }
 ```
 
-Let's see the result after persist:
+Let us see the result after persist:
 
 [image assetsSrc="Hibernate-Code-First.png" /]
 
@@ -106,15 +106,12 @@ Let's see the result after persist:
 
   * No **NULL** values
 
-  * Reduced changes in schema on superclass changes
+  * Reduced changes in the schema on superclass changes
 
   * Foreign keys involved
 
 - **Disadvantages:**
 
-  * Since the amount of joins in queries grows after each new class in the hierarchy, it can have a negative impact on the performance of reading entities
-
-
-
+  * Since the amount of joins in queries grows after each new class in the hierarchy, it can harm the performance of reading entities
 
 [/slide]
