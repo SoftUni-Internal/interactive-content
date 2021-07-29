@@ -9,6 +9,9 @@ The instructions you will be given will be the minimal required for you to imple
 
 [slide hideTitle]
 # Problem: Table Design
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Exam-Preparation/interactive-java-databases-and-mysql-exam-preparation-1-data-definition-language-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Table Design" taskId="java-db-and-MySQL-exam-table-design" executionType="tests-execution" executionStrategy="mysql-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
