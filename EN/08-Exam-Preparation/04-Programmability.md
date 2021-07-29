@@ -4,10 +4,14 @@
 The time has come for you to prove that you can be a little more dynamic on the database. 
 
 So, you will have to write several procedures.
+
 [/slide]
 
 [slide hideTitle]
-# Problem: Get User's Photos Count
+# Problem with Solution: Get User's Photos Count
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Exam-Preparation/interactive-java-databases-and-mysql-exam-preparation-10-get-users-photo-count-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Get User's Photos Count" taskId="java-db-and-MySQL-exam-preparation-get-users-photos-count" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```

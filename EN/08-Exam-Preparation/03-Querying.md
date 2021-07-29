@@ -11,7 +11,10 @@ It is **highly recommended** that you **clear** the **database** that has been *
 [/slide]
 
 [slide hideTitle]
-# Problem: Users
+# Problem with Solution: Users
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Exam-Preparation/interactive-java-databases-and-mysql-exam-preparation-5-users-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Users" taskId="java-db-and-MySQL-exam-preparation-users" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
@@ -882,7 +885,10 @@ F
 
 
 [slide hideTitle]
-# Problem: Extract 5 Most Commented Photos
+# Problem with Solution: Extract 5 Most Commented Photos
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Exam-Preparation/interactive-java-databases-and-mysql-exam-preparation-6-extract-five-most-commented-photos-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Extract 5 Most Commented Photos" taskId="java-db-and-MySQL-exam-problem-extract-5-most-commented-photos" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
@@ -2215,7 +2221,10 @@ Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.Nam ultrices
 [/slide]
 
 [slide hideTitle]
-# Problem: Lucky Users
+# Problem with Solution: Lucky Users
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Exam-Preparation/interactive-java-databases-and-mysql-exam-preparation-7-lucky-users-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Lucky Users" taskId="java-db-and-MySQL-exam-preparation-lucky-users" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
@@ -3520,7 +3529,10 @@ mavison1x@imdb.com
 [/slide]
 
 [slide hideTitle]
-# Problem: Count Likes and Comments
+# Problem with Solution: Count Likes and Comments
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Exam-Preparation/interactive-java-databases-and-mysql-exam-preparation-8-count-likes-and-comments-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Count Likes and Comments" taskId="java-db-and-MySQL-exam-preparation-count-likes-and-comments" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```
@@ -5413,7 +5425,10 @@ insert into likes (id, user_id, photo_id) values (101, 18, 1);
 
 
 [slide hideTitle]
-# Problem: The Photo on the Tenth Day of the Month
+# Problem with Solution: The Photo on the Tenth Day of the Month
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Exam-Preparation/interactive-java-databases-and-mysql-exam-preparation-9-photo-of-the-tenth-day-of-the-month-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="The Photo on the Tenth Day of the Month" taskId="java-db-and-MySQL-exam-preparation-the-photo-on-the-tenth-day-of-the-month" executionType="tests-execution" executionStrategy="mysql-prepare-db-and-run-queries" requiresInput]
 [code-editor language=sql]
 ```

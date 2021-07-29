@@ -1,4 +1,5 @@
 # MySQL Exam Preparation
+
 [slide hideTitle]
 # Insta Influencers
 

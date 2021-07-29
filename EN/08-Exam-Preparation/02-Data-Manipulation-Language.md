@@ -2,13 +2,15 @@
 
 # Data Manipulation Language (DML)
 
-Here we need to do several manipulations in the database, like changing data, adding data etc.
+Here we need to do several manipulations in the database, like changing data, adding data, etc.
+
 [/slide]
 
-
-
 [slide hideTitle]
-# Problem: Insert
+# Problem with Solution: Insert
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Exam-Preparation/interactive-java-databases-and-mysql-exam-preparation-2-insert-problem-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Insert" taskId="java-db-and-MySQL-exam-preparation-table-insert" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
@@ -844,7 +846,11 @@ lboultwood2r
 
 
 [slide hideTitle]
-# Problem: Update
+# Problem with Solution: Update
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Exam-Preparation/interactive-java-databases-and-mysql-exam-preparation-3-update-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 [code-task title="Update" taskId="java-db-and-MySQL-exam-preparation-table-update" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
@@ -1551,7 +1557,10 @@ Where a.country ='In Progress';
 [/slide]
 
 [slide hideTitle]
-# Problem: Delete
+# Problem with Solution: Delete
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Exam-Preparation/interactive-java-databases-and-mysql-exam-preparation-4-delete-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Delete" taskId="java-db-and-MySQL-exam-preparation-table-delete" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```

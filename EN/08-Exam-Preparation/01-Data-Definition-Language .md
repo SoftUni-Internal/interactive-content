@@ -5,10 +5,11 @@
 Make sure you implement the whole database correctly on your local machine, so that you could work with it.
 
 The instructions you will be given will be the minimal required for you to implement the database.
+
 [/slide]
 
 [slide hideTitle]
-# Problem: Table Design
+# Problem with Solution: Table Design
 
 [video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Exam-Preparation/interactive-java-databases-and-mysql-exam-preparation-1-data-definition-language-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
