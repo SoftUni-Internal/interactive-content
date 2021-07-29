@@ -76,7 +76,7 @@ Create a **UserRole** class, which holds the following properties:
 
 ## Example of ER Diagram
 
-[image assetsSrc="Java-Spring-Fund-MVC-9.png" /]
+[image assetsSrc="Java-Spring-Fund-MVC-9.jpg" /]
 
 ## Populate Database
 
@@ -107,7 +107,7 @@ It should return the following HTML page, upon a **GET** request.
 
 First, we need to add some users to our database.
 
-[image assetsSrc="Java-Spring-Fund-MVC-11.png" /]
+[image assetsSrc="Java-Spring-Fund-MVC-11.jpg" /]
 
 **Hint section**:   
 - **Because you will learn Thymeleaf in detail in the next lecture, we will give you hints on how to implement some things**

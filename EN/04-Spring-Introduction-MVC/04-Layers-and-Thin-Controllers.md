@@ -39,8 +39,8 @@ Every controller in Java Spring applications should follow the two most importan
 When there are repeating blocks of code is a typical code smell and method or class should be created.
 
 - Keep it Stupid and Simple **KISS** - every application has two types of complexity
-   - Essential - what business logic of the application demands
-   - Incidental - the level of complexity created by the developer - different code smells, abstraction, etc.
+   - essential - what business logic of the application demands
+   - incidental - the level of complexity created by the developer - different code smells, abstraction, etc.
 
 Controllers should not work directly with the database's entities, for this purpose services should be used.
 
