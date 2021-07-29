@@ -15,7 +15,16 @@
 
 - How to create a project, a file and simple аpp using IntelliJ.
 
-## In the next lesson you will learn:
+- hasdshdashdihj2iro1ip24-12i hasdshdashdihj2iro1ihasdshdashdihj2iro1ip24-12i 4092e2hasdshdashdihj2iro1ip24-12i 4092e2p24-12i 4092e2hasdshdashdihj2iro1ip24-12i 4092e2hasdshdashdihj2iro1ip24-12i 4092e2
+
+- hasdshdashdihj2iro1ip24-12i hasdshdashdihj2iro1ihasdshdashdihj2iro1ip24-12i 4092e2hasdshdashdihj2iro1ip24-12i 4092e2p24-12i 4092e2hasdshdashdihj2iro1ip24-12i 4092e2hasdshdashdihj2iro1ip24-12i 4092e2
+
+
+- hasdshdashdihj2iro1ip24-12i hasdshdashdihj2iro1ihasdshdashdihj2iro1ip24-12i 4092e2hasdshdashdihj2iro1ip24-12i 4092e2p24-12i 4092e2hasdshdashdihj2iro1ip24-12i 4092e2hasdshdashdihj2iro1ip24-12i 4092e2521225 hasdshdashdihj2iro1ip24-12i hasdshdashdihj2iro1ihasdshdashdihj2iro1ip24-12i 4092e2hasdshdashdihj2iro1ip24-12i 4092e2p24-12i 4092e2hasdshdashdihj2iro1ip24-12i 4092e2hasdshdashdihj2iro1ip24-12i 4092e2
+
+
+
+### In the next lesson you will learn:
 
 - What are Data Types
 
