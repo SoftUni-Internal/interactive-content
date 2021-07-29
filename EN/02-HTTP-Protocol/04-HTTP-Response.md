@@ -22,7 +22,7 @@ The structure of a **HTTP Response** message:
 HTTP/<version> <status code> <status text>​
 <headers>​
 (empty line)​
-<response body – the requested resource>
+<response body - the requested resource>
 ```
 
 ```java

@@ -26,61 +26,61 @@ There are some data object for you to implement.
 
 Create a **Brand** class, which holds the following properties:
 
-- **id** – a **uuid or number**
-- **name** – a **name of brand**
-- **created** – a **date and time**
-- **modified** – a **date and time**
+- **id** - a **uuid or number**
+- **name** - a **name of brand**
+- **created** - a **date and time**
+- **modified** - a **date and time**
 
 ## Model
 
 Create a **Model** class, which holds the following properties:
 
-- **id** – **uuid or number**
-- **name** – a **model name**
-- **imageUrl** – the **url of image**
-- **startYear** – a **number**
-- **endYear** – a **number**
-- **created** – a **date and time**
-- **modified** – a **date and time**
-- **brand** – a **model brand**
+- **id** - **uuid or number**
+- **name** - a **model name**
+- **imageUrl** - the **url of image**
+- **startYear** - a **number**
+- **endYear** - a **number**
+- **created** - a **date and time**
+- **modified** - a **date and time**
+- **brand** - a **model brand**
 
 ## Offer
 
 Create a **Model** class, which holds the following properties:
 
-- **id** – **uuid or number**
-- **description** – some **text**
-- **engine** – **enumerated value**
-- **imageUrl** – the **url of image**
-- **mileage** – a **number**
-- **price** – the **price of the offer**
-- **transmission** – **enumerated value**
-- **year** – the **year of offered car**
-- **created** – a date and time
-- **modified** – a **date and time**
-- **model** – the **model of a car**
-- **seller** – a **user that sells the car**
+- **id** - **uuid or number**
+- **description** - some **text**
+- **engine** - **enumerated value**
+- **imageUrl** - the **url of image**
+- **mileage** - a **number**
+- **price** - the **price of the offer**
+- **transmission** - **enumerated value**
+- **year** - the **year of offered car**
+- **created** - a date and time
+- **modified** - a **date and time**
+- **model** - the **model of a car**
+- **seller** - a **user that sells the car**
 
 ## User
 
 Create a **User** class, which holds the following properties:
 
-- **id** – **uuid or number**
-- **username** – username of the **user**
-- **firstName** – first name of the **user**
-- **lastName** – last name of the **user**
-- **active** – **true OR false**
-- **role** – **user's role**
-- **imageUrl** – a **url of user's picture**
-- **created** – a **date and time**
-- **modified** – a **date and time**
+- **id** - **uuid or number**
+- **username** - username of the **user**
+- **firstName** - first name of the **user**
+- **lastName** - last name of the **user**
+- **active** - **true OR false**
+- **role** - **user's role**
+- **imageUrl** - a **url of user's picture**
+- **created** - a **date and time**
+- **modified** - a **date and time**
 
 ## UserRole
 
 Create a **UserRole** class, which holds the following properties:
 
-- **id** – **uuid or number**
-- **role** – **enumerated value**
+- **id** - **uuid or number**
+- **role** - **enumerated value**
 
 This is an example of ER Diagram
 
