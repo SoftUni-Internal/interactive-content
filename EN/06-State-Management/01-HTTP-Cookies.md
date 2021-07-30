@@ -139,36 +139,105 @@ Once received by the client, the cookies are persisted locally, and then sent on
 [slide hideTitle]
 # Cookie Structure​
 
-A cookie constists of:
-    - **Name** - 
+A cookie constists of multiple components:
+    - **Name**
+    - **Value**
+    - Zero or more **attributes**
+
+These attributes are **key-value** pairs that hold additional information
+
+Attributes are to be used only by the client to control the cookie.
+
+They can contain the cookie's expiration date, the path on which they should be sent, as well as security preferences.
 
 [/slide]
 
 [slide hideTitle]
 # Scope​
 
+Since each cookie is received from a given server, the client must send it to the same server with each request.
 
+The scope of a cookie is defined by the `Domain` and `Path` attributes.
+
+The `Domain` attribute defines the website that the cookie belongs to: `Domain=softuni.org`
+
+`Path` stores the URL path that must exist on the requested page: `Path=/myclassroom`
+
+```
+Set-Cookie: token=Oc93h...fieI; Domain=softuni.org; Path=/myclassroom; Expires=Mon, 25 Apr 2021 12:38:51 GMT; Secure; HttpOnly​
+```
 
 [/slide]
 
 [slide hideTitle]
 # Lifetime​
 
+The lifetime of a cookie is defined by the `Expires` and `Max-Age` attributes.
 
+`Expires` stores the date, by which the browser should dispose of the cookie.
+
+If left undefined, the browser's default behavior is to delete cookies when the session ends.
+
+The `Max-Age` attribute is an alternative to `Expires`.
+
+Instead of defining a specific date, it sets the expiration as an interval of seconds.
 
 [/slide]
 
 [slide hideTitle]
 # Security​
 
+Security attributes are not key-value pairs, as they lack associated values.
 
+The `Security` flag prevents the browser from using cookies via unsecure connections.
+
+`HttpOnly` is used to prevent the cookie from being accessed by client-side scripting languages.
 
 [/slide]
 
 [slide hideTitle]
 # What Is in the Cookie?​
 
+A cookie contains a table of key-value pairs.
 
+```
+Token=34nu80vm95vphj45oh; Path=/; Domain=google.com; HttpOnly; Expires=Sat, 29 Jan 2022 05:47:09 GMT;
+```
+
+These are the most common ones:
+
+- **Name** 
+- **Content**
+- **Domain** - `.google.com`
+- **Path** - `/`
+- **Expires** - `Expires=Sat, 29 Jan 2022 05:47:09 GMT`
+
+[/slide]
+
+[slide hideTitle]
+# Examine Your Cookies
+
+Cookies are typically stored in a Relational Database Management System (RDBMS), such as SQLite.
+
+To examine your own cookies, you can use [SQLite Browser](http://sqlitebrowser.org/).
+
+Depending on the browser, cookies are store in the following directories:
+
+- For Mozilla
+
+```
+C:\Users\{username}\AppData\Roaming\Mozilla\Firefox\Profiles\{name}.default\cookies.sqlite​
+```
+
+- For Chrome
+
+```
+C:\Users\{username}\AppData\Local\Google\Chrome\User Data\Default\Cookies​
+```
+
+Once located, open the file in SQLite Browser.
+
+Then, you are free to browse the cookies table.
 
 [/slide]
 
