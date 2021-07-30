@@ -244,21 +244,51 @@ Then, you are free to browse the cookies table.
 [slide hideTitle]
 # Control Your Cookies – Firefox Browser​
 
+To view and control your cookies in Firefox, go to Settings.
 
+[image assetsSrc="State-Management-1.png" /]
+
+Click on Privacy & Security, and go to the Cookies and Site Data section.
+
+Then, choose "Manage Data".
+
+[image assetsSrc="State-Management-2.png" /]
+
+A new modal will appear, allowing you to browse the cookies for specific sites, as well as delete them.
+
+[image assetsSrc="State-Management-3.png" /]
 
 [/slide]
 
 [slide hideTitle]
 # Control Your Cookies – Chrome Browser​
 
+To access your cookies in Chrome, open Settings.
 
+[image assetsSrc="State-Management-4.png" /]
+
+Then, under the Privacy & Security tab, click on the Cookies and other site data section.
+
+[image assetsSrc="State-Management-5.png" /]
+
+Here you can customise your preferences, as well as view and delete cookies.
+
+[image assetsSrc="State-Management-6.png" /]
 
 [/slide]
 
 [slide hideTitle]
 # Third Party Cookies
 
+Third party cookies are set from a site different from the currently visited one.
 
+For example, developers can embed a "Tweet" button in a blog, allowing Twitter to store a cookie on your browser.
+
+This cookie will then be sent with each subsequent request, allowing for customised advertising and interest tracking.
+
+Year-over-year, Internet users become more aware of these privacy abuses.
+
+Many modern web browsers allow the option to "Opt-Out" of third party cookies.
 
 [/slide]
 
