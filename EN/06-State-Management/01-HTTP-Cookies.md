@@ -3,15 +3,17 @@
 [slide hideTitle]
 # What Are Cookies?
 
-Cookies are small pieces of data that are used as storage medium in the browser
+**Cookies** are small pieces of data that are used as storage medium in the browser.
 
-They are stored in the form of plain text and contain no executable code.
+They are stored in the form of plain **text** and contain no executable code.
 
 Rather, they hold data, related to a particular client or website.
 
-Intitially, they are sent by the server to the client.
+The maximum size of a cookie is 4KB (kilobytes).
 
-The client then sends them to the server with each request. 
+Intitially, they are sent by the **server** to the client.
+
+The **client** then sends them to the server with each request. 
 
 [/slide]
 
@@ -20,29 +22,29 @@ The client then sends them to the server with each request.
 
 Cookies are an indispensable part of the modern Web.
 
-They find application in all fields of data persistence, including:
+They find application in all fields of data **persistence**, including:
 
 - **Session management**
   
-The first implementation of cookies provided users with a way of saving items to a shopping cart.
+The first implementation of cookies provided users with a way of **saving** items to a shopping cart.
 
 Nowadays, this information is stored on the server, and cookies are used for keeping track of the currently logged-in user.
 
-This is mainly done using a unique session identifier (UID) - a long string of letters and numbers.
+This is mainly done using a unique session identifier (**UID**) - a long string of letters and numbers.
 
 - **Personalization**
 
-Cookies are used for storing user preferences.
+Cookies are used for storing user **preferences**.
 
-For example, when a user modifies their settings, they use a web form, sent back to the server.
+For example, when a user modifies their settings, they use a web **form**, sent back to the server.
 
 Once the server receives the information, it encodes the preferences in a cookie, which it sends back to the client.
 
 - **Tracking**
 
-Tracking cookies are used for keeping a track of a user's browsing habits.
+**Tracking** cookies are used for keeping a track of a user's browsing habits.
 
-This helps advertisers serve more specific ads, catering to a user's interests.
+This helps **advertisers** serve more specific ads, catering to a user's interests.
 
 This advertising data is often times sold to bidding corporations, breaching online privacy laws.
 
@@ -62,15 +64,15 @@ This means that the server cannor keep a record of previous requests, from any g
 [slide hideTitle]
 # Stateless HTTP – the Problem​
 
-Since the server is unaware of who the client is, they have no information if it is a new or returning user.
+Since the server is unaware of who the client is, they have no information if it is a **new** or **returning** user.
 
-This causes state management problems, such as:
+This causes state management **problems**, such as:
 
-- Every newly opened page requires authentication, even if requested from the same client
+- Every newly opened page requires **authentication**, even if requested from the same client
 
-- Personalization preferences cannot be stored, causing inconviences, such as displaying prompts to the user on every page load
+- **Personalization** preferences cannot be stored, causing inconviences, such as displaying prompts to the user on every page load
 
-- Web application have no sense of continuity between different views, as information is not persisted
+- Web applications have no sense of **continuity** between different views, as information is not persisted
 
 [/slide]
 
@@ -81,7 +83,7 @@ Cookies provide the mechanism for websites to persist information.
 
 This enables many features we are already used to, such as:
 
-- Knowing whether a user is currently authenticared, allowing for the display of personal data
+- Knowing whether a user is currently authenticated, allowing for the display of personal data
 
 - Identifying the exact user account currently in use
 
@@ -130,7 +132,7 @@ Let us say a user wants to visit `softuni.org`.
 
 First, the browser sends a `GET` request to the server.
 
-Then, the server sends a response with one or more cookies, in the format: `Set-Cookie: lang-en`.
+Then, the server sends a **response** with one or more cookies, in the format: `Set-Cookie: lang-en`.
 
 Once received by the client, the cookies are persisted locally, and then sent on each subsequent request, in the format: `Cookie: lang-en`.
 
@@ -174,9 +176,9 @@ Set-Cookie: token=Oc93h...fieI; Domain=softuni.org; Path=/myclassroom; Expires=M
 
 The lifetime of a cookie is defined by the `Expires` and `Max-Age` attributes.
 
-`Expires` stores the date, by which the browser should dispose of the cookie.
+`Expires` stores the date, by which the browser should **dispose** of the cookie.
 
-If left undefined, the browser's default behavior is to delete cookies when the session ends.
+If left undefined, the browser's default behavior is to delete cookies when the session **ends** (e.g. when the browser is closed).
 
 The `Max-Age` attribute is an alternative to `Expires`.
 
@@ -189,9 +191,9 @@ Instead of defining a specific date, it sets the expiration as an interval of se
 
 Security attributes are not key-value pairs, as they lack associated values.
 
-The `Security` flag prevents the browser from using cookies via unsecure connections.
+The `Security` flag prevents the browser from sending cookies via **unsecure** connections.
 
-`HttpOnly` is used to prevent the cookie from being accessed by client-side scripting languages.
+`HttpOnly` is used to prevent the cookie from being accessed by client-side **scripting** languages.
 
 [/slide]
 
@@ -223,13 +225,13 @@ To examine your own cookies, you can use [SQLite Browser](http://sqlitebrowser.o
 
 Depending on the browser, cookies are store in the following directories:
 
-- For Mozilla
+- For **Mozilla**
 
 ```
 C:\Users\{username}\AppData\Roaming\Mozilla\Firefox\Profiles\{name}.default\cookies.sqlite​
 ```
 
-- For Chrome
+- For **Chrome**
 
 ```
 C:\Users\{username}\AppData\Local\Google\Chrome\User Data\Default\Cookies​
@@ -282,11 +284,15 @@ Here you can customise your preferences, as well as view and delete cookies.
 
 Third party cookies are set from a site different from the currently visited one.
 
-For example, developers can embed a "Tweet" button in a blog, allowing Twitter to store a cookie on your browser.
+For example, developers can embed a "**Tweet**" button in a blog, allowing Twitter to store a cookie on your browser.
 
-This cookie will then be sent with each subsequent request, allowing for customised advertising and interest tracking.
+This cookie will then be sent with each subsequent request, allowing for customised advertising and interest **tracking**.
 
-Year-over-year, Internet users become more aware of these privacy abuses.
+Such cookies are typically hosted by ad servers and social media sites.
+
+They allow for **retracking** prospective customers as they browse through different sites.
+
+Year-over-year, Internet users become more aware of these **privacy** abuses.
 
 Many modern web browsers allow the option to "Opt-Out" of third party cookies.
 
