@@ -6,7 +6,7 @@
 
 Download the resources for these tasks [here](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/Lab-Resources-JPQL-and-Auto-Mapping-Objects.zip).
 
-You are given an implementation of the **Shampoo Company**.
+You are given implementation of the **Shampoo Company**.
 
 Now it is time to start writing some query methods to retrieve data.
 
@@ -150,7 +150,7 @@ Write a method that finds all **shampoos** which **use the given ingredients**.
 
 # Problem with Solution: Select Shampoos by Ingredients Count 
 
-Write a method that selects all ****shampoos**** that have **less ingredients than a given number**.
+Write a method that selects all ****shampoos**** that have ** fewer ingredients than a given number**.
 
 
 ## Example 

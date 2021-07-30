@@ -39,7 +39,7 @@ JSON files use the following syntax to store information, this is an array of tw
 The attributes are in double-quotes while the values are enclosed in double-quotes, square brackets, curly brackets, or directly added after the attribute depending on the data type that is stored.
 
 
-| Type | Example |
+| **Type** | **Example** |
 | --- | --- | 
 | Number | "speed": 250 |
 | String | "title": "Road Rage"  |

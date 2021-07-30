@@ -4,9 +4,9 @@
 
 # Project Setup
 
-Your task is to create an account system that has users with accounts and manages money transfer or withdrawal.
+Your task is to create an accounting system that has users with accounts and manages money transfers or withdrawals.
 
-Build the system using the code first approach and Spring Data.
+Build the system using the code-first approach and Spring Data.
 
 The goal is to implement the services and the repositories
 
@@ -87,7 +87,7 @@ Each one of them will be as follows:
 | balance | Accepts **BigDecimal** values |
 | user | The owner of the account, which will be identified by their **id** |
 
-Set up the appropriate tables, columns, column properties and table relations.
+Set up the appropriate tables, columns, column properties, and table relations.
 
 [/slide]
 
@@ -168,7 +168,7 @@ public class UserServiceImpl implements UserService {
 }
 ```
 
-The method implementation logic is up to you. Here are some several tips:
+The method implementation logic is up to you. Here are several tips:
 
 -  **AccountServiceImpl**
     * Money withdrawal - should only happen if the account is **present** in the database, **belongs to user** and **has enough balance**

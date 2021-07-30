@@ -221,7 +221,7 @@ Export the results to **JSON**. See the format below to better understand how to
 
 # Car Dealer Project Overview
 
-A car dealer needs information about cars, their parts, parts suppliers, customers and sales.
+A car dealer needs information about cars, their parts, parts suppliers, customers, and sales.
 
 - **Each car** has a **make****, a **model****, **and travelled distance** in kilometers
 
@@ -229,7 +229,7 @@ A car dealer needs information about cars, their parts, parts suppliers, custome
 
 - Part **suppliers** have a **name** an indication of whether they import parts from abroad or not
 
-- **Customer**s have a **name**, **date of birth,** and info whether they are **a young driver or not**
+- **Customer**s have a **name**, **date of birth,**, and info whether they are **a young driver or not**
 
 - A young driver is a driver that has **less than 2 years of experience**, those customers get an **additional 5% off** from each sale
 
@@ -308,7 +308,7 @@ If two customers are born on the same date, **first print those, who are not you
 
 Get the cars with make equal to **Toyota.**
 
-**Order them alphabetically by model** and then by **travelled distance in descending order**.
+**Order them alphabetically by model** and then by ** traveled distance in descending order**.
 
 **Export** the list of **cars to JSON** in the format provided below:
 
@@ -360,7 +360,7 @@ Export the list of suppliers to JSON in the format provided below:
 
 Get all **cars along with their list of parts**. 
 
-**For each car** get only the **make, the model** and the **travelled distance**. 
+**For each car** get only the ** to make, the model** and the ** traveled distance**. 
 
 For the **parts** get only their **name** and **price**. 
 

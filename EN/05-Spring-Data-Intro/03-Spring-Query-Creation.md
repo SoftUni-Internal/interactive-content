@@ -60,7 +60,7 @@ public interface StudentRepository extends JpaRepository<Student, Long> {
 
 The table below contains all query method keywords:
 
-| Keyword | Sample | SQL equivalent |
+| **Keyword** | **Sample** | **SQL equivalent** |
 | --- | --- | --- |
 | And | findByFirstNameAndLastName    | … where x.first_name = ?1 and x.last_name = ?2 |
 | Or  | findByFirstNameOrLastName  | … where x.first_name = ?1 or x.last_name = ?2 |

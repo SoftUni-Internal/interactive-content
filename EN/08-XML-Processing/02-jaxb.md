@@ -8,7 +8,7 @@
 To add JAXB to a project:
 
 **pom.xml**
-```java
+```js
 <dependency>
     <groupId>javax.xml.bind</groupId>
     <artifactId>jaxb-api</artifactId>
@@ -27,7 +27,7 @@ To add JAXB to a project:
 
 [slide hideTitle]
 # JAXB Basics
-To start using JAXB it is important to understand the meaning of **marshalling** and **unmarshalling**. 
+To start using JAXB it is important to understand the meaning of ** marshaling** and **unmarshalling**. 
 
 - **Marshalling** - the process of converting a Java Object to XML.
 - **Unmarshalling** - converting XML to a Java Object.
@@ -92,7 +92,7 @@ When converted to XML the above will look like:
 This allows you to decide which type of data is exported when JAXB converts the class to XML.
 
 - `@XmlAccessType.FIELD` - Binds every non-static, non-transient field automatically for export. The excluded fields would be those, annotated with `@XmlTransient`
-- `@XmlAccessType.PROPERTY` - Automatically binds any property (getter / setter pair) for export unless `@XmlTransient` is used on it
+- `@XmlAccessType.PROPERTY` - Automatically binds any property (getter/setter pair) for export unless `@XmlTransient` is used on it
 - `@XmlAccessType.PUBLIC_MEMBER` -  Every public class member (field or property) will be bound for export
 - `@XmlAccessType.NONE` - No fields or properties will be exported to XML unless you specifically annotate them
 
@@ -109,7 +109,7 @@ public class Cat implements Serializable {
 
 results in:
 
-```html
+```js
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <cat>
     <name>Kitty</name>
@@ -139,7 +139,7 @@ public class Cat implements Serializable {
 
 Results in:
 
-```java
+```js
 <?xml version="1.0" encoding="UTF-8"?>
 <cat id="1">
    <name>Kitty</name>
@@ -169,7 +169,7 @@ public class Cat implements Serializable {
 
 Results in:
 
-```java
+```js
 <?xml version="1.0" encoding="UTF-8"?>
 <cat>
    <catId>1</catId>
@@ -202,7 +202,7 @@ public class Vehicle implements Serializable {
 
 Result:
 
-```java
+```js
 <?xml version="1.0" encoding="UTF-8"?>
 <vehicle>
     <cars>
@@ -233,7 +233,7 @@ public class Cat implements Serializable {
 
 Result:
 
-```html
+```js
 <?xml version="1.0" encoding="UTF-8"?>
 <cat>
    <breed>Persian</breed>
@@ -257,7 +257,7 @@ It provides an abstraction for managing XML/Java binding information.
 
 `JAXBContext.newInstance(object.getClass())` creates an instance of JAXBContext.
 
-`object.getClass()` is the class that you want to export or import, for example User, Address, Employee.
+`object.getClass()` is the class that you want to export or import, for example, User, Address, Employee.
 
 [/slide]
 
@@ -279,7 +279,7 @@ public class User {
 }
 ```
 
-Now in the **XMLParser.java** file we, will export that class to XML by **marshalling** it. Remember, **marshalling** an object using JAXB means converting a Java object to XML.
+Now in the **XMLParser.java** file we, will export that class to XML by ** marshaling** it. Remember, ** marshaling** an object using JAXB means converting a Java object to XML.
 
 
 ```java
@@ -335,7 +335,7 @@ jaxbMarshaller.marshal(studentDto, bufferedWriter);                  // Exportin
 
 The result from the **marshalling**:
 
-```java
+```js
 <?xml version="1.0" 
 encoding="UTF-8"?>
 <student name="Alex">
@@ -378,7 +378,7 @@ public class AddressDto implements Serializable {
 
 After **marshalling**, this results in:
 
-```java
+```js
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addresses>
     <address country="UK">
@@ -424,7 +424,9 @@ Unmarshaller unmarshaller = jaxbContext.createUnmarshaller();                   
 AddressDto addressDto = (AddressDto) unmarshaller.unmarshal(bfr);
 ```
 
-Finally, the **addressDto** object is initialized from the XML file. You need to cast it to the appropriate type because the compiler is not aware of the type in the XML file and will not allow the program to compile without that.
+Finally, the **addressDto** object is initialized from the XML file. 
+
+You need to cast it to the appropriate type because the compiler is not aware of the type in the XML file and will not allow the program to compile without that.
 
 If the format in the XML file matches the class you have previously created, a new object will be created and its properties will be set accordingly.
 
@@ -436,7 +438,7 @@ If the format in the XML file matches the class you have previously created, a n
 [slide hideTitle]
 # Import Multiple Objects to XML
 
-Similarly to how we exported a list of objects, we can also import from XML to Java.
+Similar to how we exported a list of objects, we can also import from XML to Java.
 
 **XMLParser.java**
 ```java
@@ -479,7 +481,7 @@ public class AddressDto implements Serializable {
 
 The source XML that matches the above class representation format is:
 
-```html
+```js
 <?xml version="1.0" encoding="UTF-8"?>
 <addresses>
     <address country="UK">

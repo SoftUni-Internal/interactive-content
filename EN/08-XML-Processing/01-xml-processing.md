@@ -72,7 +72,7 @@ Every single element of an XML document can have its own child element(s).
 
 The following example demonstrates a simple tree structure:
 
-```java
+```js
 <?xml version="1.0" encoding="UTF-8"?>
 <Animal>
     <Cat>
@@ -98,7 +98,7 @@ The tree structure can be represented like this:
 
 If you want to store more than one value in the XML file, you can add a wrapper around the objects, essentially creating a collection of objects:
 
-```html
+```js
 <?xml version="1.0" encoding="UTF-8"?>
 <Animal>
     <Cats>
@@ -118,7 +118,7 @@ If you want to store more than one value in the XML file, you can add a wrapper 
 </Animal>
 ```
 
-In the above example, ``<Cats></Cats>`` is a wrapper around the group of objects.
+In the above example, `<Cats></Cats>` is a wrapper around the group of objects.
 
 [image assetsSrc="xml-processing-03-3.png" /]
 

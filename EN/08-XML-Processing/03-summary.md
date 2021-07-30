@@ -10,7 +10,7 @@
     - Extensible and self-describing
     - XML documents consist of mark-up tags and content elements
 
-```html
+```js
 <?xml version="1.0" encoding="UTF-8"?>
 <addresses>
     <address country="UK">
@@ -27,7 +27,7 @@
 - Adding JAXB to your project:
 
 **pom.xml**
-```java
+```js
 <dependency>
     <groupId>javax.xml.bind</groupId>
     <artifactId>jaxb-api</artifactId>

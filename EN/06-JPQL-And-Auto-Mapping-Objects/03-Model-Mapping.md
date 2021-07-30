@@ -97,7 +97,7 @@ To use **Model Mapper**, begin by adding it to your project.
 
 - Include it as a Maven dependency:
    
-```java
+```js
 // pom.xml
 <dependency>
     <groupId>org.modelmapper</groupId>

@@ -74,13 +74,13 @@ An indispensable part of working with a database is linking our tables.
 
 With **JPQL**, we have to declare the **JOIN clauses** by ourselves.
 
-As long as we are familiar with how a given **JOIN** clause works, Spring Data knows how to find the criteria to join the table by.
+As long as we are familiar with how a given **JOIN** clause works, Spring Data knows how to find the criteria to join the table.
 
 There are four **JOIN** clause **types** available in JPQL:
 
 - **INNER JOIN** - Retrieves entities with matching values in both tables
-- **LEFT OUTER JOIN** - Retrieves all entities from the left table, and the matched entities from the right table
-- **RIGHT OUTER JOIN** - Retrieves all entities from the right table, and the matched entities from the left table
+- **LEFT OUTER JOIN** - Retrieves all entities from the left table and the matched entities from the right table
+- **RIGHT OUTER JOIN** - Retrieves all entities from the right table and the matched entities from the left table
 - **FULL OUTER JOIN** - Retrieves all entities when there is a match in either the left or the right tables
 
 Take a look at the following example:

@@ -244,7 +244,7 @@ Order the results **in descending order by the total book copies**.
 
 | **Output** | 
 | --- |
-| Randy	Graham - 196584 |
+| Randy Graham - 196584 |
 | **Check the results manually in the database, because we insert random Authors for every book.** |
 
 [/slide]
@@ -275,13 +275,13 @@ Print the total amount of book copies that were added.
 
 ## Input
 
--	On the **first line** - a date in the format **"dd MMM yyyy"**
+-   On the **first line** - a date in the format **"dd MMM yyyy"**
     * if a book is released after that date (exclusively), increase its book copies with the provided number from the second line of the input
 
--	On the **second line** - the number of **book copies** each book should be increased with
+-   On the **second line** - the number of **book copies** each book should be increased with
 
 ## Output
--	The **total number of books** that was added to the database
+-   The **total number of books** that was added to the database
 
 ## Examples
 
@@ -305,7 +305,7 @@ Print the total amount of book copies that were added.
 
 # Problem: Remove Books
 
-Create a program that **removes from the database those books**, which **are less than the provided number**. 
+Create a program that **removes from the database those books**, which ** is less than the provided number**. 
 
 Print the **number of books that were deleted** from the database.
 
@@ -353,7 +353,7 @@ Create the required **entities**. Use appropriate **data types**.
 - The system contains information about *users* 
 - Users can **register** in the system
 
-For a successful registration, the user must have:
+For successful registration, the user must have:
 
 - an **email**
 - a **password**
@@ -365,7 +365,7 @@ For a successful registration, the user must have:
 
 [slide hideTitle]
 
-# Problem: Implement User Registration, Login and Logout 
+# Problem: Implement User Registration, Login, and Logout 
 
 **Unauthenticated** users can either register or log in:
 
@@ -384,10 +384,10 @@ The requirements for **valid parameters** are:
 - `LoginUser|<email>|<password>` - this command sets the current logged in user, if it exists
     * otherwise, prints an appropriate message
 
-**Logged in** users can logout.
+**Logged in** users can log out.
 
 - `Logout` - this command logs the user out of the system
-    * if there is no logged in user, prints the appropriate message
+    * if there is no logged-in user, prints the appropriate message
 
 ## Examples
 

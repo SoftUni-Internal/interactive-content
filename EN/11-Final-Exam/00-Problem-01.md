@@ -5,11 +5,11 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/12-Spring-ORM-Final-Exam.zip) **for this exam.**
 
-A new airline company is need of a fresh developer to work on their new project and you are the right person for the job. 
+A new airline company is in need of a fresh developer to work on their new project and you are the right person for the job. 
 
 You are tasked to work on their project called "Airline". 
 
-The application should accept data from familiar formats (json & xml) and return the data that is listed. 
+The application should accept data from familiar formats (JSON & XML) and return the data that is listed. 
 
 It needs to hold the information of all the tickets, that are being bought, all the passengers, their destination, etc.
 
@@ -383,7 +383,7 @@ Here you will have some pretty complex database querying.
 
 Export the data in the formats specified below.
 
-## Export passengers from data base
+## Export passengers from database
 
 ### Order them by tickets count in descending order, then by email
 

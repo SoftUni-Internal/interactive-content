@@ -104,7 +104,7 @@ Working with **Spring Data** provides multiple benefits, such as:
 
 To work with **Spring Data in our projects**, we will need to **add two dependencies** in our `pom.xml` file:
 
-```java
+```js
 <dependencies>
     <dependency>
         <groupId>org.springframework.boot</groupId>

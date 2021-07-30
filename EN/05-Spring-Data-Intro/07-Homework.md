@@ -6,12 +6,12 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/05-Spring-Data-Intro-Homework-Resources.zip) **for this task.**
 
-Create database for a **Bookshop System**. 
+Create a database for a **Bookshop System**. 
 
 This system needs to keep the information about **books**. 
 
 Let us create a class for each of the tables.
--	**Book**:
+-   **Book**:
      *  id
      *  title 
      *  description (optional, accepts very long String values) 
@@ -21,12 +21,12 @@ Let us create a class for each of the tables.
      *  release_date (optional)
      *  age_restriction (**MINOR, TEEN or ADULT**)
 
--	**Author**:
+-   **Author**:
     * id 
     * first name (optional) 
     * last name
 
--	**Category**:
+-   **Category**:
     * id 
     * name
 
@@ -40,9 +40,9 @@ The final schema of the database should look like this:
 
 [slide hideTitle]
 
-# Seed Data into the Database
+# Seed Data Into the Database
 
-Create a **seedDatabase()** method in the **ConsoleRunner implementation class**. 
+Create a `seedDatabase()` method in the **ConsoleRunner implementation class**. 
 
 Use the provided **files (categories.txt, authors.txt, books.txt)** and import the data from them.
 
@@ -87,7 +87,7 @@ while((line = booksReader.readLine()) != null) {
     book.setAgeRestriction(ageRestriction);
     book.setTitle(title);
     
-    // TODO: Add random categories for current book
+    // TODO: Add random categories for the current book
    
     bookService.save(book);
 
@@ -98,32 +98,32 @@ while((line = booksReader.readLine()) != null) {
 
 [slide hideTitle]
 
-## Write Queries
+# Write Queries
 
 Write queries for the following tasks.
 
-### 1. Books After The Year 2000
+## 1. Books After The Year 2000
 
 Get all **books** after the year **2000**. 
 
 Print only their **titles**. 
 
-### 2. Authors With Books Before 1990
+## 2. Authors With Books Before 1990
 
-Get all **authors** with at least **one book with release date before 1990**. 
+Get all **authors** with at least **one book with a release date before 1990**. 
 
 Print their **first name** and **last name**. 
 
-### 3. Authors by Books Count
+## 3. Authors by Books Count
 
 Get all **authors**, ordered by the **number of their books** (descending). 
 
-Print their **first name, last name and book count**.
+Print their **first name, last name, and book count**.
 
-### 4. Books From George Powell
+## 4. Books From George Powell
 
-Get all books from author **George Powell**, ordered by their **release date** (descending), then by **book title** (ascending). 
+Get all books from the author **George Powell**, ordered by their **release date** (descending), then by **book title** (ascending). 
 
-Print the book's **title, release date and copies**. 
+Print the book's **title, release date, and copies**. 
 
 [/slide]

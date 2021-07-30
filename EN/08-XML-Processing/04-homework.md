@@ -5,7 +5,7 @@
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/09-XML-Processing-Homework.zip) **for this task.** 
 
-Use the models and database structure you built for [the previous homework](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/08-DB-Advanced-JSON-Processing-Exercises-Resources.zip) for these exercises, along with the xml files you downloaded for the current tasks.
+Use the models and database structure you built for [the previous homework](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/08-DB-Advanced-JSON-Processing-Exercises-Resources.zip) for these exercises, along with the XML files you downloaded for the current tasks.
 
 **Import** the data from the provided files (**users.xml**, **products.xml**, **categories.xml**).
 
@@ -32,7 +32,7 @@ Select only the **product name**, **price,** and the **full name** of the **sell
 Export the result to an XML file.
 
 **products-in-range.xml**
-```html
+```js
 <?xml version="1.0" encoding="utf-8"?>
 <products>
   <product name="TRAMADOL HYDROCHLORIDE" price="516.46" seller="Christine Gomez" />
@@ -54,7 +54,7 @@ Select the person's **first** and **last name**.
 For each of the **products sold** (products with buyers), select the product's **name**, **price,** and the buyer's **first** and **last name**:
 
 **users-sold-products.xml**
-```html
+```js
 <?xml version="1.0" encoding="utf-8"?>
 <users>
   <user first-name="Carl" last-name="Daniels">
@@ -90,7 +90,7 @@ The total revenue is the sum of the total price of all the products. It does not
 
 **categories-by-products.xml**
 
-```html
+```js
 <?xml version="1.0" encoding="utf-8"?>
 <categories>
   <category name="Sports">
@@ -119,7 +119,7 @@ Export the results to **XML**. See the format below to better understand how to 
 
 **users-and-products.xml**
 
-```html
+```js
 <?xml version="1.0" encoding="utf-8"?>
 <users count="35">
   <user first-name="Carl" last-name="Daniels" age="59">
@@ -176,7 +176,7 @@ If two customers are born on the same date, **first print those, who are not you
 
 **ordered-customers.xml**
 
-```html
+```js
 <?xml version="1.0" encoding="utf-8"?>
 <customers>
   <customer>
@@ -199,13 +199,13 @@ If two customers are born on the same date, **first print those, who are not you
 
 Get the cars with make equal to **Toyota.**
 
-**Order them alphabetically by model** and then by **travelled distance in descending order**.
+**Order them alphabetically by model** and then by ** traveled distance in descending order**.
 
 **Export** the list of **cars to XML** in the format provided below:
 
 **toyota-cars.xml**
 
-```html
+```js
 <?xml version="1.0" encoding="utf-8"?>
 <cars>
   <car id="117" make="Toyota" model="Camry Hybrid" travelled-distance="954775807" />
@@ -224,7 +224,7 @@ Export the list of suppliers to XML in the format provided below:
 
 **local-suppliers.xml**
 
-```html
+```js
 <?xml version="1.0" encoding="utf-8"?>
 <suppliers>
   <suplier id="2" name="Agway Inc." parts-count="6" />
@@ -237,7 +237,7 @@ Export the list of suppliers to XML in the format provided below:
 
 Get all **cars along with their list of parts**. 
 
-**For each car** get only the **make, the model** and the **travelled distance**. 
+**For each car** get only the ** to make, the model** and the ** traveled distance**. 
 
 For the **parts** get only their **name** and **price**. 
 
@@ -245,7 +245,7 @@ For the **parts** get only their **name** and **price**.
 
 **cars-and-parts.xml**
 
-```html
+```js
 <?xml version="1.0" encoding="utf-8"?>
 <cars>
   <car make="Opel" model="Omega" travelled-distance="2147483647" />
@@ -275,7 +275,7 @@ Get all **customers** that have bought **at least 1 car** and get their **names*
 Export the list of customers to XML in the format provided below:
 
 **customers-total-sales.xml**
-```html
+```js
 <?xml version="1.0" encoding="utf-8"?>
 <customers>
   <customer full-name="Hipolito Lamoreaux" bought-cars="5" spent-money="8360.48" />
@@ -292,7 +292,7 @@ Get all **sales** with information about the **car**, the **customer,** and the 
 Export the list of sales to XML in the format provided below:
 
 **sales-discounts.xml**
-```html
+```js
 <?xml version="1.0" encoding="utf-8"?>
 <sales>
   <sale>

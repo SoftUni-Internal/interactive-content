@@ -16,7 +16,7 @@ There are two ways to install **GSON**:
 
 **pom.xml**
 
-```java
+```js
 <dependency>
   <groupId>com.google.code.gson</groupId>
   <artifactId>gson</artifactId>
@@ -59,9 +59,9 @@ Gson gson = new GsonBuilder()
                 .create();
 ```
 
-## More GsonBuilder methods
+## More GsonBuilder Methods
 
-| Method | Usage |
+| **Method** | **Usage** |
 | --- | --- | 
 | disableHtmlEscaping() | Disable escaping of HTML characters such as \< or \> |
 | excludeFieldsWithoutExposeAnnotation() | Gson will exclude all fields without the Expose annotation during serialization or deserialization |

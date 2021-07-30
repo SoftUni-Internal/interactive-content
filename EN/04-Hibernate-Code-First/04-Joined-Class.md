@@ -102,16 +102,16 @@ Let us see the result after persist:
 
 - **Advantages:**
 
-  * No repeating columns in the database tables
+  * no repeating columns in the database tables
 
-  * No **NULL** values
+  * no **NULL** values
 
-  * Reduced changes in the schema on superclass changes
+  * reduced changes in the schema on superclass changes
 
-  * Foreign keys involved
+  * foreign keys involved
 
 - **Disadvantages:**
 
-  * Since the amount of joins in queries grows after each new class in the hierarchy, it can harm the performance of reading entities
+  * since the amount of joins in queries grows after each new class in the hierarchy, it can harm the performance of reading entities
 
 [/slide]
