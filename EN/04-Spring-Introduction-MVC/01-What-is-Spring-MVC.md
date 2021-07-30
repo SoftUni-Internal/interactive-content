@@ -13,7 +13,7 @@ The **destribution of resposabilites** into the MVC patternt is as follows:
 
 - **View** - **render** the data to the user
 
-The view is only **concerned** with how to present the **information** that the controller **sends**, the view is a **template file** that dynamically **renders** HTML based on the received data.
+The view' only **concerned** is how to present the **information** that the controller **sends**, the view is a **template file** that dynamically **renders** HTML based on the received data.
 
 - **Controller** - **handle** the entire request from the **client** and will inform the **rest of the server** what to do with the request
 
@@ -21,7 +21,7 @@ The Controller acts as a **middleman** between **Model** and **View** sections, 
 
 In Java context **Spring MVC** is another project in the **spring framework** umbrella.
 
-Spring MVC allows you **create** controllers which map **request** to **responses**.
+Spring MVC allows to **create** controllers which map **request** to **responses**.
 
 When a Spring MVC app is **created** and **run** Spring MVC pattern is automatically **added** to the application. 
 
@@ -33,9 +33,9 @@ These methods are annotated with **two pieces of information**:
 
 - The second is the HTTP method that this controller method is gonna handle
 
-If we want a particular method to **handle** that request and what we do is we **write that method** and then we put the right Spring MVC **annotations** that **map** that URI and that HTTP method.
+If we want a particular method to **handle** that request, what we do is to **write that method** and then put the right Spring MVC **annotations** that **map** the URI and that HTTP method.
 
-## Add the presentation picture
+[image assetsSrc="Java-Spring-Fund-MVC-18.png" /]
 
 When the server **receives** an HTTP request, the so-called "**Dispatcher Servlet**" handles the HTTP request.
 
@@ -54,7 +54,7 @@ When the service **provides** the needed data to the controller, by using "**Vie
 [slide hideTitle]
 # MVC - Control Flow
 
-## Add the presentation picture
+[image assetsSrc="Java-Spring-Fund-MVC-19.png" /]
 
 In the picture above a request is sent by a web client (browser), but also a request could be made by an android application.
 

@@ -8,11 +8,11 @@
 
 **1. Inversion of Control**
 
-- Constructor versus field injection 
-
 - Field injection 
 
-- Constructor injection 
+- Constructor injection
+
+- Constructor versus field injection 
 
 **2. Spring MVC Controllers**
 
@@ -28,7 +28,7 @@
 
 - Redirecting 
 
-**3. Layers - dividing code**
+**3. Layers - DiviDing Code**
 
 - Splitting the code based on its functionality
 

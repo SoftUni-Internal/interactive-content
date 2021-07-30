@@ -107,14 +107,14 @@ It should return the following HTML page, upon a **GET** request.
 
 First, we need to add some users to our database.
 
-[image assetsSrc="Java-Spring-Fund-MVC-11.jpg" /]
+[image assetsSrc="Java-Spring-Fund-MVC-11.png" /]
 
 **Hint section**:   
 - **Because you will learn Thymeleaf in detail in the next lecture, we will give you hints on how to implement some things**
 - **Do not forget to add Thymeleaf in you** `pom.xml` **file**
 - **Do not forget to add Thymeleaf namespaces**:
 
-[image assetsSrc="Java-Spring-Fund-MVC-12.png" /]
+[image assetsSrc="Java-Spring-Fund-MVC-12.jpg" /]
 
 - Also you need to add in are the HTML form action and method (remember the last lecture):
 
