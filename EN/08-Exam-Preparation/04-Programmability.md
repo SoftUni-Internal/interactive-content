@@ -685,7 +685,10 @@ SELECT udf_users_photos_count('mcaygill1d') as photosCount;
 [/slide]
 
 [slide hideTitle]
-# Problem: Increase User Age
+# Problem with Solution: Increase User Age
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Exam-Preparation/interactive-java-databases-and-mysql-exam-preparation-11-Increase-User-Age-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [code-task title="Increase User Age" taskId="java-db-and-MySQL-exam-preparation-increase-user-age" executionType="tests-execution" executionStrategy="mysql-run-skeleton-run-queries-and-check-database" requiresInput]
 [code-editor language=sql]
 ```
