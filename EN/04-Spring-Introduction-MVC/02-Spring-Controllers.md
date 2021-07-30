@@ -45,15 +45,15 @@ return mav;
 }
 ```
 
-Also, a model could be returned by the view.
+Also, a model could be returned by a view.
 
-In this example, the "home" method is an argument (`ModelAndView mav`), and this model could be passed to the view, so the information into the "mav" model could be rendered.
+In this example, the "home" method receives an argument (`ModelAndView mav`), and the "mav" model could be passed to the view, so the information into the "mav" model will be rendered.
 
 ## Request Mapping Problem
 
 The `@RequestMapping` annotation is able of handling all HTTP methods (GET, PUT, POST, DELETE, and PATCH).
 
-The default behavior of `@RequestMapping` annotation is all requests are HTTP GET type.
+The default behavior of `@RequestMapping` annotation is to handle HTTP GET type.
 
 To define a request mapping with a specific HTTP method, we need to declare the HTTP method in `@RequestMapping` by using the `method` element as follows:
 
@@ -211,7 +211,7 @@ public String welcome(ModelMap modelMap) {
 
 The `ModelMap` object will be automatically passed to the view as context variables, and again this "**modelMap**" could be used in the view.
 
-## Passing a ModelAndView 
+## Passing a "ModelAndView"
 
 ```java
 @GetMapping("/")
@@ -240,9 +240,9 @@ public class DogController {
     }
 }
 ```
-In this example "modelAndView" is passed to the `getDogHomePage` route, that way it is possible to set the name of the view, in this case, is `dog-page.html`, then the "**modelAndView**" is returned as a result.
+In this example "**modelAndView**" is passed to the `getDogHomePage` route, that way it is possible to set the name of the view, in this case, is `dog-page.html`, then the "**modelAndView**" is returned as a result.
 
-That way the view resolver is able to extract the name of the view and the result is:
+That way the view resolver can extract the name of the view and the result is:
 
 [image assetsSrc="Java-Spring-Fund-MVC-6.png" /]
 [/slide]

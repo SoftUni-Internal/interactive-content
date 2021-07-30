@@ -27,7 +27,7 @@ public ControllerA(ServiceA serviceA, ServiceB serviceB, ServiceC serviceC) {
 }
 ```
 
-- Splitting your application code by layers 
+- Splitting your application code into layers 
 
 - Every component should be as "thin" as possible
 

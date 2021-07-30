@@ -19,7 +19,7 @@ We will take a look into a few foulders:
 
 - **Web** - location of the controllers
 
-For huge applications, even this type of organization could be not enough for easy navigation.
+For a huge application, even this type of organization could not be very sufficient.
 
 Splitting the project into different modules in IntelliJ:
 
@@ -34,13 +34,13 @@ Each module corresponding to the application layer and is easier to navigate.
 
 Every controller in Java Spring applications should follow the two most important principles:
 
-- Do Not Repeat Yourself (**DRY**) - code should not repeat not only in the controller and even in the entire application
+- "**Do Not Repeat Yourself**" ("**DRY**") - code should not repeat not only in the controller but in the entire application
 
-When there are repeating blocks of code is a typical code smell and method or class should be created.
+When there are repeating blocks of code is a typical "**code smell**" and method or class should be created.
 
-- Keep it Stupid and Simple **KISS** - every application has two types of complexity
-   - essential - what business logic of the application demands
-   - incidental - the level of complexity created by the developer - different code smells, abstraction, etc.
+- "**Keep it Stupid and Simple**" ("**KISS**") - every application has two types of complexity
+   - **essential** - what business logic of the application demands
+   - **incidental** - the level of complexity created by the developer - different "**code smells**", abstraction, etc.
 
 Controllers should not work directly with the database's entities, for this purpose services should be used.
 

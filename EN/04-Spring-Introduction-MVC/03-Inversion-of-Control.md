@@ -3,9 +3,9 @@
 [slide hideTitle]
 # Field Injection
 
-Feild injection si did when using autowire annotation on fields member in a class.
+Feild injection could be done by using autowire annotation on fields member in a class.
 
-It is easier for writing and easier for adding new dependencies, but it is not recommended.
+It is easier for writing and for adding new dependencies, but it is not recommended.
 
 These dependencies could grow in size, which makes them harder for maintainability and control.
 
@@ -38,7 +38,7 @@ public ControllerA(ServiceA serviceA, ServiceB serviceB, ServiceC serviceC) {
 }
 ```
 
-In this example, if a dependency is missing (it is not injected through the constructor) a compile-time error will be received. 
+In this example, if a dependency is missing (it is not injected through the constructor) a compile-time error will occur. 
 
 Constructor Injection is most commonly used and it is the recommended way of injecting dependencies into the controller.
 
