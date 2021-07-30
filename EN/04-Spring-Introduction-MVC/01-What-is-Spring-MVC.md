@@ -54,7 +54,7 @@ When the service **provides** the needed data to the controller, by using "**Vie
 [slide hideTitle]
 # MVC - Control Flow
 
-## Add the presentation picture
+[image assetsSrc="Java-Spring-Fund-MVC-19.jpg" /]
 
 In the picture above a request is sent by a web client (browser), but also a request could be made by an android application.
 
