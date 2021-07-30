@@ -35,7 +35,7 @@ These methods are annotated with **two pieces of information**:
 
 If we want a particular method to **handle** that request, what we do is to **write that method** and then put the right Spring MVC **annotations** that **map** the URI and that HTTP method.
 
-[image assetsSrc="Java-Spring-Fund-MVC-18.jpg" /]
+[image assetsSrc="Java-Spring-Fund-MVC-18.png" /]
 
 When the server **receives** an HTTP request, the so-called "**Dispatcher Servlet**" handles the HTTP request.
 
