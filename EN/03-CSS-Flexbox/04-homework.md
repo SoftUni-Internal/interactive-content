@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# Problem: Flexbox Layout
+# Problem: Flexbox File Upload Test
 
 [code-task title="Problem: Flexbox Layout" taskId="da8a5a6d-feb0-4585-9d6c-a70c95f087f9" executionType="save-file-and-do-nothing" executionStrategy="html-and-css-zip-file" requiresInput="false"]
 
@@ -86,7 +86,7 @@ yes
 [stream language="EN" videoId="431792591" default /]
 [/video-vimeo]
 
-[code-task title="Problem: Flex Model Articles" taskId="f7442ee5-baa5-490b-9c1a-cc9a196acf3e" executionType="save-file-and-do-nothing" executionStrategy="html-and-css-zip-file" requiresInput="false"]
+[code-task title="Problem: Flex Model Articles" taskId="f7442ee5-baa5-490b-9c1a-cc9a196acf3e" executionType="save-file-and-do-nothing" executionStrategy="do-nothing" requiresInput="false"]
 
 [code-upload allowedMemory="30" /]
 
