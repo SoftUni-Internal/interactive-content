@@ -4,7 +4,7 @@
 
 # Problem: Flexbox Layout
 
-[code-task title="Problem: Flexbox Layout" taskId="da8a5a6d-feb0-4585-9d6c-a70c95f087f9" executionType="tests-execution" executionStrategy="html-and-css-zip-file" requiresInput="false"]
+[code-task title="Problem: Flexbox Layout" taskId="da8a5a6d-feb0-4585-9d6c-a70c95f087f9" executionType="save-file-and-do-nothing" executionStrategy="html-and-css-zip-file" requiresInput="false"]
 
 [code-upload allowedMemory="30" /]
 
