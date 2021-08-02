@@ -86,7 +86,7 @@ yes
 [stream language="EN" videoId="431792591" default /]
 [/video-vimeo]
 
-[code-task title="Problem: Flex Model Articles" taskId="f7442ee5-baa5-490b-9c1a-cc9a196acf3e" executionType="tests-execution" executionStrategy="html-and-css-zip-file" requiresInput="false"]
+[code-task title="Problem: Flex Model Articles" taskId="f7442ee5-baa5-490b-9c1a-cc9a196acf3e" executionType="save-file-and-do-nothing" executionStrategy="html-and-css-zip-file" requiresInput="false"]
 
 [code-upload allowedMemory="30" /]
 
