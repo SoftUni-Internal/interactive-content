@@ -200,7 +200,129 @@ We can attach the object to the parent element:
 
 ## Appending and Prepending
 
+The `th:attrappend` and `th:attrprepend` attributes, which append (suffix) or prepend (prefix) the result of their evaluation to the existing attribute values:
 
+```js
+<input type="button" value="Play" class="btn" th:attrappend="class=${' ' + cssStyle}" />
+```
+
+The `th:classappend`: is the shorter syntax: 
+
+```js
+<tr th:each="error : ${errors}" class="row" th:classappend="${error} ? 'bg-danger'">
+```
+
+[/slide]
+
+[slide hideTitle]
+# Forms in Thymeleaf
+
+In Thymeleaf we can create input forms with validations:
+
+```js
+<form th:action="@{/user}" th:method="post">
+    <input type="number" name="id"/>
+    <input type="text" name="name"/>
+    <button type="submit"/>
+</form>
+```
+
+The `th:action` is equivalent to the "action" attribute in HTML form, which is the route that the form will be submitted. 
+
+The `th:method="post"` is the recommendet methods for sending sensitive data via HTTP.
+
+We could have a controller that will accept an object of a given type:
+
+```java
+@PostMapping("/user")
+public ModelAndView register(@ModelAttribute User user) { 
+  ... 
+}
+```
+When the request is sent, the controller (endpoint) will receive a model, which will have two properties "id" and "name".
+
+## Fragments
+
+Often we want to include in our templates fragments from other templates where common uses for this are footers, headers, and menus.
+
+Define the fragments available for inclusion, which we can be done by using the `th:fragment` attribute.
+
+After that we can easily include it on our home page using one of the `th:include` or `th:replace` attributes.
+
+By using fragments:
+- We can make reusable code snippets
+- Reduce code duplications
+- Improve code readability
+- Increase code maintainability
+
+Example: Create a class with fragments 
+
+```js
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+  <body>  
+    <div th:fragment="copy">
+      &copy; Spring Team 2021
+    </div>  
+  </body>  
+</html>
+```
+
+## Fragments referenses:
+
+```js
+<body>
+  ...
+  <footer th:include="footer::copy"></footer>
+  // OR
+  <footer th:replace="footer::copy"></footer>
+  ...
+</body>
+```
+
+In this example, the name of the fragment is `footer::copy`, which reference the `th:fragment="copy"` from the previous example.
+
+The difference between `th:include` and `th:replace` is that "include" takes the tag's content embed it and saves the footer, where "replace" replace the entire footer with the `div` fragment.
+
+## Difference Between Include and Replace
+
+```js
+<footer th:include="footer :: copy"></footer>
+<footer th:replace="footer :: copy"></ footer>
+ ...
+```
+
+Result:
+
+```js
+<footer>
+    &copy; Spring Team 2021
+</footer>
+<div>
+    &copy; Spring Team 2021
+</div>    
+...
+```
+
+## Create Fragment Without `th:fragment`
+
+```js
+// footer.html
+
+<th:block>
+  <footer> Spring Team 2021 </footer>
+</th:block>
+```
+
+Use Fragment
+ 
+```js
+// index.html
+
+...
+<th:block th:include="~{/fragments/footer}> </th:block>
+...
+```
 [/slide]
 
 
