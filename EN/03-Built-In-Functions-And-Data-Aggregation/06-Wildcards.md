@@ -2,8 +2,8 @@
 
 # Wildcards
 
-42-43-WildCards-Example
-47-48-Using-Regular-Expressions-Regexp-Characters
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Built-In-Functions-And-Data-Aggregation/04.Built-In-Functions-And-Data-Aggregation-42-43-47-48-Wildcards-Example-Using-Regular-Expressions-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Wildcard** symbols in MySQL substitute one or more **characters** in a string.
 

@@ -35,7 +35,7 @@ If you have any problems, take a look at the following image:
 
 # Creating Tables
 
-[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-15-16-17-creating-tables-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Data-Definition-And-Data-Types/java-database-and-mysql-data-definition-and-data-types-15-16-17-18-creating-tables-and-storing-retrieving-data-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Right-click on "**Tables**" and select "**Create Table**".
 

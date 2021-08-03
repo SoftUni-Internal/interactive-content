@@ -287,10 +287,8 @@ The following image illustrates how this join clause works:
 [slide hideTitle]
 # Joins Overview and Demo
 
-16-join-overview-and-demo-
-17-join-overview-inner-join-
-18-join-overview-left-join-
-19-join-overview-right-join-
+
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Joins-Subqueries-and-Indices/interactive-java-databases-and-mysql-joins-subqueries-and-indices-16-17-18-19-join-overview-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 

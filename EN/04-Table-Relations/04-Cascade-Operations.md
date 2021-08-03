@@ -24,7 +24,7 @@ Cascading can be performed either with `DELETE` or `UPDATE` followed by a few gu
 
 # Cascade DELETE
 
-[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/interactive-java-mysql-table-relations-30-foreign-key-delete-cascade-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Databases-and-MySQL/EN/Table-Relations/interactive-java-mysql-table-relations-30-foreign-key-delete-cascade-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Cascade DELETE** is used only when the related entities are meaningless without the "main" entity.
 
