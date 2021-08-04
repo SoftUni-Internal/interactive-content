@@ -8,7 +8,7 @@
 
 # The Controller Class
 
-The **Controller constructor** needs to accept as parameters the instances of **DriverRepository, CarRepository, RaceRepository**
+The **Controller constructor** needs to be instantiated in the main class accepting as parameters the instances of **DriverRepository, CarRepository, RaceRepository**
 
 The business logic should be concentrated around several **commands**. 
 
