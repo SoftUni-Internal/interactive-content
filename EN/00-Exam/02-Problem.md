@@ -8,6 +8,8 @@
 
 # The Controller Class
 
+The **Controller constructor** needs to accept as parameters the instances of **DriverRepository, CarRepository, RaceRepository**
+
 The business logic should be concentrated around several **commands**. 
 
 You are given interfaces, which you have to implement in the correct classes.
