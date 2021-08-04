@@ -99,7 +99,7 @@ class Car implements Vehicle {
 }
 ```
 
-If we want to get Bike, we need to specify it by adding `@Qualifier("bike")` tag before injecting Vehicle:
+If we want to get Bike, we need to specify it by adding the `@Qualifier("bike")` tag before injecting Vehicle:
 
 ```java
 @Autowired
@@ -113,14 +113,16 @@ Biker(@Qualifier("bike") Vehicle vehicle) {
 [slide hideTitle]
 # Primary
 
-We can use @Primary to simplify this case: 
-if we mark the most frequently used bean with @Primary 
+We can use `@Primary` when having more than one instance of the bin.
 
+For example, if Spring has made a configuration of a bin, and then we manually configure the same bin, it is uncertain which bin has the priority.
+
+In this case, the `@Primary` annotation could be used for giving priority to certain configurations.
 
 ```java
 @Component
 @Primary
-class Car implements Vehicle {...}
+class Car implements Vehicle {}
 ```
 
 ```java
@@ -128,7 +130,7 @@ class Car implements Vehicle {...}
 class Bike implements Vehicle {}
 ```
 
-The example of @Primary use case
+The example of the `@Primary` use case:
 
 
 ```java
