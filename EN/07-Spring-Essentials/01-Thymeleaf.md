@@ -3,17 +3,17 @@
 
 # What is Thymeleaf
 
-Thymeleaf is a Java template engine for server-side rendering, which means HTML, XML, JavaScript, CSS, and text are processed and created on the server and the client receives (browser) fully functional HTML.
+Thymeleaf is a **Java template engine** for server-side rendering, which means HTML, XML, JavaScript, CSS, and text are **processed and created** on the server, and the client (browser) **receives fully functional HTML**.
 
-Thymeleaf makes the views more dynamic, by using different variables and executing an operation on to the variables and also iterate over collections.
+Thymeleaf makes views more **dynamic**, by using different variables and **executing operations** onto the variables and also **iterate** over collections.
 
-Thymeleaf is not the only technology that could render HTML on the server, the others are Razor view (ASP.Net Core), Django (Python), and others.
+Thymeleaf is **not the only technology** that could render HTML on the server, the others are Razor view (ASP.Net Core), Django (Python), and others.
 [/slide]
 
 [slide hideTitle]
 # How to Use Thymeleaf
 
-Use Spring Initializer to import Thymeleaf, or use this dependency in the `pom.xml` file:
+We ca use Spring Initializer to **import** Thymeleaf, or use this dependency in the `pom.xml` file:
 
 ```js
 <dependency>
@@ -21,7 +21,7 @@ Use Spring Initializer to import Thymeleaf, or use this dependency in the `pom.x
   <artifactId>spring-boot-starter-thymeleaf</artifactId>
 </dependency>
 ``` 
-Define the Thymeleaf library in the HTML templates:  
+Next, we should define the **Thymeleaf library** in the HTML templates:  
 
 ```js
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
@@ -29,7 +29,7 @@ Define the Thymeleaf library in the HTML templates:
 
 ## Change Thymeleaf Version
 
-We also can change the Thymeleaf version in the `pom.xml` file:
+We also can **change** the Thymeleaf version in the `pom.xml` file:
 
 ```js
 <properties>
@@ -42,7 +42,7 @@ We also can change the Thymeleaf version in the `pom.xml` file:
 </properties>
 ```
 
-Very often it is not necessary to set thymeleaf's, because spring Boot is responsible for setting up the version. 
+Very often it is not necessary to set Thymeleaf's version because Spring Boot is responsible for setting up the version, this is set automatically. 
 
 [/slide]
 
@@ -56,7 +56,7 @@ All Thymeleaf tags and attributes begin with `th:` by default:
 ```js
 <p th:text="Example"></p>
 ```
-In this example the "Example" could be a string, and also a dynamic expression passed by the controller.
+In this example the `th:text= ` could be a **string**, and also a **dynamic** expression passed by the controller.
 
 Example of Thymeleaf tag (element processor):
 
@@ -74,7 +74,7 @@ The `<th:block>` is an attribute container that disappears in the HTML.
 
 |**Expression Name**|**Syntax**|**Explenation**|
 |---|---|---|
-|Variable Expressions|`${...}`|It is used to access a variable (model) passed to the view by the controller.|
+|Variable Expressions|`${...}`|It is used to access a variable passed to the view by the controller.|
 |Selection Expressions|`*{...}`|It is used to select a field into an object.|
 |Accessing Bean|`${@...}`|It is used for accessing a bin into the application context.|
 |Link (URL) Expressions|`@{...}`|It is used for URL creating.|
@@ -82,27 +82,27 @@ The `<th:block>` is an attribute container that disappears in the HTML.
 
 ## Variable Expressions
 
-The Variable Expressions are received from the model, which was set by attribute into the controller.
+The Variable Expressions are **received** from the model, which was set by attribute into the controller.
 
 `${...}`
 
-There are several ways to access those model's properties:
+There are several ways to **access** those model's properties:
 
-- Session: `${#session.user.name}`
+- **Session**: `${#session.user.name}`
 
-The session object is not located in the model, but the default session scope. 
+The session object is **not located in the model** but in the **default** session scope. 
 
 And if there are users in the session, the name of the user could be extracted. 
 
-What we have to do in the controller is to set the user upon successful login.
+What we have to do in the controller is to set the user upon **successful** login.
 
-- `${title}`: this is the model's attribute
+- `${title}`: is the model's attribute
 
-- `${game.id}`: this is spring expression language, where we access the name of the bin and extract the "id" property
+- `${game.id}`: is Spring Expression Language, where we access the name of the bin and extract the "id" property
 
 ## If-else and Switch
 
-We also could have conditions, like the bool attribute which returns true/false.
+We also could have **conditions**, like the bool attribute which returns true/false.
 
 - If - else
 

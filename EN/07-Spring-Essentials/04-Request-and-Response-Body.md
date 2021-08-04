@@ -33,6 +33,13 @@ public Exercise getLastEx() {
 
 The result of executing this action is:
 
-[image assetsSrc="Java-Spring-Essentials-1.png" /]
+```java
+{
+   "id":"0b5963eb-44d-4718-bd34-d0206d80046a",
+   "name":"SPRING DATA INTRO",
+   "startedOn":"2021-01-14T19:26:00",
+   "dueDate":"2021-02-05T19: 26:00"
+}
+```
 
 [/slide]

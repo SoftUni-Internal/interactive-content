@@ -1,4 +1,4 @@
-# Lab: Spring Introduction MVC 
+# Lab: Spring Essentials
 
 [slide hideTitle]
 # MobiLeLeLe Web Application 
@@ -251,7 +251,7 @@ The only user with role admin can see the Admin dropdown with additional functio
 [/slide]
 
 [slide hideTitle]
-# Better validation  
+# Better Validation  
 
 In the next lesson, you will learn more about the different Thymeleaf validation ways. 
 
