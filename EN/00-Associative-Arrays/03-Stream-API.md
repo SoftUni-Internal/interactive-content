@@ -106,8 +106,6 @@ System.out.println(average);
 [slide hideTitle]
 # Processing Collections with Stream API
 
-[video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Object-And-Classes/01.Java-Fundamentals-Associative-Arrays/EN/interactive-java-fundamentals-associative-arrays-26-converting-collections-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 We can use one-line operations on collections like **Lists** and **Maps**, instead of writing loops with indexes or `for-each` loops for simple operations when processing data:
 
 - `min()` - Finds and returns the **smallest** element in a collection:
