@@ -46,14 +46,6 @@ The admin dropdown should be shown if the user is an admin
 [/slide]
 
 [slide hideTitle]
-# Index Page
-
-**Here is a link to the** [resources]() **for this task.**
-
-
-[/slide]
-
-[slide hideTitle]
 # Home Page
 
 It should support **GET** requests
