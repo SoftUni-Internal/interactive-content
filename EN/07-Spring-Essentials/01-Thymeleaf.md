@@ -74,11 +74,11 @@ The `<th:block>` is an attribute container that disappears in the HTML.
 
 |**Expression Name**|**Syntax**|**Explenation**|
 |---|---|---|
-|Variable Expressions|`${...}`|It is used to access a variable passed to the view by the controller.|
-|Selection Expressions|`*{...}`|It is used to select a field into an object.|
-|Accessing Bean|`${@...}`|It is used for accessing a bin into the application context.|
-|Link (URL) Expressions|`@{...}`|It is used for URL creating.|
-|Fragment Expressions|`~{...}`|It is used for fragments.|
+|**Variable Expressions**|`${...}`|It is used to access a variable passed to the view by the controller.|
+|**Selection Expressions**|`*{...}`|It is used to select a field into an object.|
+|**Accessing Bean**|`${@...}`|It is used for accessing a bin into the application context.|
+|**Link (URL) Expressions**|`@{...}`|It is used for URL creating.|
+|**Fragment Expressions**|`~{...}`|It is used for fragments.|
 
 ## Variable Expressions
 
@@ -121,11 +121,11 @@ In this example `student.passExam` returns true/false and depending on the resul
 </div>
 ```
 
-In this example depending on the user's role, different cases will be executed. 
+In this example depending on the **user's role**, different cases will be executed when the user is "admin" or "manager". 
 
 ## Default Expressions (Elvis Operator)
 
-By using the Elvis operator, we can execute inline condition:
+By using the Elvis operator, we can execute **inline condition**:
 
 ```js
 <p>Age:
@@ -141,7 +141,6 @@ The example above is equivalent to:
 <p>Age: 
    <span th:text="*{age != null}? *{age}:'missing age'"></span>
 </p>
-
 ```
 
 ## Link Expressions
@@ -155,7 +154,7 @@ Link Expressions are used to build URLs:
 ```JS
 <a th:href="@{/register}">Register</a>
 ```
-In this example, we add the path of the application and then the "register" action.
+In this example, we add the **path of the application** and then the "register" action.
 
 - We can also pass query string parameters:
 
@@ -166,7 +165,7 @@ In this example, we add the path of the application and then the "register" acti
 
 ```
 
-- Create dynamic URLs, it is also called path variable
+- We can create dynamic URLs, it is also called path variable:
 
 ```js
 <a th:href="@{/games/{id}/edit(id=${game.id})}">Edit</a>
@@ -186,7 +185,7 @@ When we want to iterate over collection:
         <td th:text="${s.age}"></td>
 </tr>
 ```
-The `th:` construction is the most commonly used because very often iteration over collection is needed when there is more than one record.
+The `th:` construction is the most commonly used because very often there is more than one record and iteration over is needed.
 
 We can attach the object to the parent element:
 
@@ -227,9 +226,9 @@ In Thymeleaf we can create input forms with validations:
 </form>
 ```
 
-The `th:action` is equivalent to the "action" attribute in HTML form, which is the route that the form will be submitted. 
+The `th:action` is equivalent to the "**action**" attribute in HTML form, which is the route that the form will be submitted. 
 
-The `th:method="post"` is the recommendet methods for sending sensitive data via HTTP.
+The `th:method="post"` is the recommendet methods for **sending** sensitive data via HTTP.
 
 We could have a controller that will accept an object of a given type:
 
@@ -239,11 +238,11 @@ public ModelAndView register(@ModelAttribute User user) {
   ... 
 }
 ```
-When the request is sent, the controller (endpoint) will receive a model, which will have two properties "id" and "name".
+When the request is sent, the controller (endpoint) will **receive a model**, which will have two properties "id" and "name".
 
 ## Fragments
 
-Often we want to include in our templates fragments from other templates where common uses for this are footers, headers, and menus.
+Often we want to **include** in our templates fragments from other templates, most ofthen footers, headers, and menus
 
 Define the fragments available for inclusion, which we can be done by using the `th:fragment` attribute.
 
@@ -282,7 +281,7 @@ Example: Create a class with fragments
 
 In this example, the name of the fragment is `footer::copy`, which reference the `th:fragment="copy"` from the previous example.
 
-The difference between `th:include` and `th:replace` is that "include" takes the tag's content embed it and saves the footer, where "replace" replace the entire footer with the `div` fragment.
+The difference between `th:include` and `th:replace` is that "**include**" takes the tag's content embed it and saves the footer, where "**replace**" replace the entire footer with the `div` fragment.
 
 ## Difference Between Include and Replace
 

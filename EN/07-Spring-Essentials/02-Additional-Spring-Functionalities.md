@@ -2,9 +2,9 @@
 
 [slide hideTitle]
 # ModelAttribute
-When the annotation is used at the method level, it indicates the purpose of that method, which is to add one or more model attributes. 
+When the annotation is used at the method level, it indicates the **purpose of that method**, which is to add one or more model attributes. 
 
-Such methods support the same argument types as the "request mapping" methods, but they cannot be mapped directly to requests.
+Such methods support the same argument types as the "**request mapping**" methods, but they cannot be mapped directly to requests.
 
 ```java
 @ModelAttribute
@@ -12,21 +12,21 @@ public void addAttributes(Model model) {
     model.addAttribute("message", "Welcome to SoftUni!");
 }
 ```
-In the example, we show a method that adds an attribute, named "message", to all models that are defined in the controller class. 
+This is an example of a method that **adds** an attribute, named "message", to all models that are defined in the **controller** class. 
 
-The model attribute annotation refers to the property of the model object, and it is used to prepare the model data. 
+The model attribute annotation refers to the **property** of the model object, and it is used to prepare the model data. 
 
-This annotation binds a method variable or the model object to a named model attribute. 
+This annotation binds a **method variable** or the **model object** to a named model attribute. 
 
-The annotation accepts an optional value that indicates the name of the model attribute. 
+The annotation accepts an **optional value** that indicates the name of the model attribute. 
 
-If no value attribute is supplied, then the value would default to the return type name of the method.
+If **no value** attribute is supplied, then the value would default to the **return type** name of the method.
 
-When used as a method argument, the model attribute indicates the argument should be retrieved from the model. 
+When used as a method argument, the **model attribute** indicates the argument should be retrieved from the model. 
 
-When not present, it should be first instantiated, and then added to the model.
+When not present, it should be first **instantiated**, and then added to the model.
 
-Once present in the model, the arguments fields should be populated from all request parameters that have matching names. 
+Once present in the model, the arguments fields should be **populated** from all request parameters that have matching names. 
 
 That is why it is very important to set the same names for the variables in the POJO file, as well as in the form. 
 
@@ -45,13 +45,13 @@ public String submit(@ModelAttribute("car")Car car) {
 
 In this controller, we are handling a post request with an endpoint. 
 
-We have a method handler "submit", and we want to pass an object of type "car" to this method. 
+We have a method handler "**submit**", and we want to pass an object of type "**car**" to this method. 
 
-The data in the object, however, comes directly from the user input and it is mapped to the "car" class properties, thanks to the model attribute annotation. 
+The data in the object, however, comes directly from the user input and it is mapped to the "**car**" class properties, thanks to the model attribute annotation. 
 
-In the parenthesis, we set the optional value of "car", which indicates the name of the model attribute.
+In the parenthesis, we set the optional value of "**car**", which indicates the name of the model attribute.
 
-In the body of the method, we could manipulate and save the object to the database and finally return the view. 
+In the body of the method, we could **manipulate** and **save** the object to the database and finally return the view. 
 
 [/slide]
 
@@ -59,7 +59,7 @@ In the body of the method, we could manipulate and save the object to the databa
 [slide hideTitle]
 # CrossOrigin
 
-By using CrossOrigin we can make HTTP requests to a different domain and Java Spring automatically adds needed headers so different domains can execute requests to this route. 
+By using "**CrossOrigin**" we can make HTTP requests to a **different domain** and Java Spring automatically adds needed headers so another domain can execute requests to this route. 
 
 ```java
 @CrossOrigin

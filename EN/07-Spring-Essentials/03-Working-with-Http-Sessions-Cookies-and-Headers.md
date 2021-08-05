@@ -16,8 +16,7 @@ public String home(HttpSession httpSession) {
 
 In this example we add HTTP `#session` as of getting `GetMapping()`, then what Spring does is to auto-wire an instance into the `#session`.
 
-As a result in the current HTTP `#session` we can write attributes as key-value pairs.
-
+As a result in the current HTTP `#session` we can **write** attributes as key-value pairs.
 
 Later the session attributes can be accessed from Thymeleaf using the expression syntax and the `#session` object.
 
@@ -35,7 +34,7 @@ public String readCookie(@CookieValue(value = "username", defaultValue = "Guest"
 }
 ```
 
-In this example a `@CookieValue()` is set to extract the "username", if there is no logged-in user (the cookie is missing), the default value of the username will be "Guest".
+In this example a `@CookieValue()` is set to extract the "**username**", if there is no logged-in user (the cookie is missing), the default value of the username will be "**Guest**".
 
 ## Setting HTTP Cookie
 
