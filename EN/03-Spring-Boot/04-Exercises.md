@@ -76,7 +76,7 @@ Design them in the **most appropriate** way, considering the following **data co
 
 - **id** - a **char sequence**
 
-- **address** - a **char sequence** (It's **unique** and cannot be **null**. Must be at least **2 characters**.)
+- **address** - a **char sequence** (It is **unique** and cannot be **null**. Must be at least **2 characters**.)
 
 - **name** - a **char sequence** (Must be at least **2 characters**.)
 
