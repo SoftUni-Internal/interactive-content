@@ -28,7 +28,7 @@ The **Database** of the **Shopping List** application needs to support 3 entitie
 ## User
 - Has an **Id - UUID-string or Long**
 - Has a **Username (unique)**
-    - Username length must be between 3 and 20 characters (inclusive 3 and 20)
+    - username length must be between 3 and 20 characters (inclusive 3 and 20)
 - Has a **Password**
     - password length must be between 3 and 20 characters (inclusive 3 and 20)
 - Has an Email 
@@ -41,15 +41,13 @@ The **Database** of the **Shopping List** application needs to support 3 entitie
 - Has a **Name (unique)**
     - name length must be between 3 and 20 characters (inclusive 3 and 20)
 - Has a **Description**
-    - fescription min length must be minimum 5(inclusive) characters
+    - description min length must be a minimum of 5(inclusive) characters
 - Has a **Price**
-    - пrice must be a positive number
+    - price must be a positive number
 - Has a Needed Before 
     - **date** and **time**, that cannot be in the past
 - Has a **Category** 
     - category cannot be null.
-
-
 
 ## Category 
 - Has an **Id - UUID-string or Long**
@@ -191,17 +189,3 @@ Configurations about which users can access specific functionalities and pages.
 
 [/slide]
 
-[slide hideTitle]
-# Home Page (With Products)
-
-[image assetsSrc="Java-Spring-Fundamentals-Exam-Preparation-10.jpeg" /]
-
-The templates have been given to you in the application skeleton, so make sure you implement the pages correctly. 
-
-**NOTE**: The templates should look EXACTLY as shown above.
-
-**NOTE**: The templates do **NOT require additional CSS** for you to write. 
-
-Only **bootstrap** and the **given CSS** are enough.
-
-[/slide]
