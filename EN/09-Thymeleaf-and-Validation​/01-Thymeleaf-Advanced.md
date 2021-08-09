@@ -137,7 +137,7 @@ public String getHomePage(Model model){
     return "whiskey-home";
 }
 ```
-The controller is almost identical, but `LocalDate.now()` is added to "myDate" attribute.
+The controller is almost identical, but `LocalDate.now()` is added to the "myDate" attribute.
 
 Into the view we can format "myDate" as follows:
 
@@ -146,7 +146,7 @@ Into the view we can format "myDate" as follows:
 
 ${#temporals.format(myDate, 'dd-MMM-yyyy')}
 ```
-The `#temporals` is used to invoke `.format()` method and format the date.
+The `#temporals` is used to invoke the `.format()` method and format the date.
 
 But to use LocalDate we need to add new dependency:
 
@@ -237,7 +237,7 @@ In this example, a list of strings is passed as an attribute to the view.
 <div th:text="${#strings.listJoin(whiskeys, '-')}"></div>
 
 ```
-It is possible to display the collection by using `.listJoin()` method, which receives two parameters:
+It is possible to display the collection by using the `.listJoin()` method, which receives two parameters:
 
 - Current string
 - The delimiter
@@ -266,7 +266,7 @@ In this example, a single string is passed as an attribute to the view.
 <div th:text="${#strings.capitalize(whiskey)}"></div>
 
 ```
-It is possible to display the string by using `.capitalize()` method, which will set the first character to capital letter:
+It is possible to display the string by using the `.capitalize()` method, which will set the first character to capital letter:
 
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-8.png" /]
 [/slide]
