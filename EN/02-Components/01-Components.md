@@ -4,7 +4,7 @@
 
 # The Idea Behind Components
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-3-4-5-Components-the-idea-behind-it-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-5-The-Idea-behind-components-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Components are the building blocks of all Angular applications. 
 
@@ -64,7 +64,7 @@ The template's host view is defined by the template that is directly associated 
 
 # Creating Components Manually
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-6-7-8-9-Creating-components-manually-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-6-7-8-9-Creating-components-manually-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Components are the most basic building blocks of an Angular app.
 
@@ -157,7 +157,7 @@ Without this declaration, a component would not be able to use directives and pi
 
 # Creating Components Using The CLI
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-10-Creating-Components-with-the-CLI-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-10-Creating-Components-with-the-CLI-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can use the **Angular CLI**, which is a command-line interface for Angular, to generate a new component.
 

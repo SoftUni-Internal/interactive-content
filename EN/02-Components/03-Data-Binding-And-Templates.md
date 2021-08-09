@@ -28,7 +28,7 @@ A component's template can be defined with inline HTML or we can specify an exte
 
 # Render an Array Using NgFor
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-18-Render-an-array-using-ngfor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-18-Render-an-array-using-ngfor-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is an example of a class called "**GamesComponent**" and an HTML associated with it.
 
@@ -112,7 +112,7 @@ The code above checks the **price** property of each object in the array and **o
 
 # Attach Events
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-20-Attach-Events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-20-Attach-Events-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can display additional content with the help of Event handlers.
 

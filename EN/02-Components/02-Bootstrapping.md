@@ -33,7 +33,7 @@ By convention, the **NgModule** is called **AppModule**, but we can give it any 
 
 # The Initial Module
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-13-The-Initial-Module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-13-The-Initial-Module-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We add the `@NgModule` decorator after the import statements.
 
@@ -64,7 +64,7 @@ The `bootstrap` property of the **NgModule** specifies the correct app-level com
 
 # Initial Module Properties
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-14-15-Initial-Module-Properties-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/02-Components/Angular-Components-14-15-Initial-Module-Properties-and-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The module's **declarations array** tells Angular which components belong to that module. 
 
