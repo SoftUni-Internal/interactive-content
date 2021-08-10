@@ -34,7 +34,7 @@ We can also add attributes to the model, and return the view.
 // WhiskeyController.java
 
 @GetMapping("/home")
-public String getHomePage(Model model){
+public String getHomePage(Model model) {
     model.addAttribute("myDate", new Date());
     return "whiskey-home";
 }
@@ -76,11 +76,11 @@ It is still the same controller, but now `myDates` is a collection of dates in a
 // WhiskeyController.java
 
 @GetMapping("/home")
-  public String getHomePage(Model model){
+public String getHomePage(Model model) {
     // List of dates -> 2016-12-12, 2017-04-09 -> yyyy-MM-dd
-    model.addAttribute("myDates", myDates); 
+    model.addAttribute("myDates", myDates);
     return "whiskey-home";
-  }
+}
 ```
 
 The `#dates` object goes as far as it can process a collection:
@@ -132,7 +132,7 @@ In Java 8 a new date-time object [LocalDate](https://docs.oracle.com/javase/8/do
 // WhiskeyController.java
 
 @GetMapping("/home")
-public String getHomePage(Model model){
+public String getHomePage(Model model) {
     model.addAttribute("myDate", LocalDate.now());
     return "whiskey-home";
 }
@@ -152,9 +152,9 @@ But to use LocalDate we need to add new dependency:
 
 ```js
 <dependency>
-            <groupId>org.thymeleaf.extras</groupId>
-            <artifactId>thymeleaf-extras-java8time</artifactId>
-            <version>3.0.4.RELEASE</version>
+   <groupId>org.thymeleaf.extras</groupId>
+   <artifactId>thymeleaf-extras-java8time</artifactId>
+   <version>3.0.4.RELEASE</version>
 </dependency>
 ```
 
@@ -227,7 +227,6 @@ public String getHomePage(Model model) {
     // Jack Daniels, Jameson
     return "whiskey-home";
 }
-
 ```
 In this example, a list of strings is passed as an attribute to the view.
 
@@ -256,7 +255,6 @@ public String getHomePage(Model model) {
     model.addAttribute("whiskey", whiskey);
     return "whiskey-home";
 }
-
 ```
 In this example, a single string is passed as an attribute to the view.
 
@@ -282,11 +280,11 @@ Format number to the chosen decimal point is very helpful when displaying an amo
 // WhiskeyController.java
 
 @GetMapping("/home")
-   public String getHomePage(Model model) {
-        double num = 3.14159;
-        model.addAttribute("num", num);
-        return "home";
-    }
+public String getHomePage(Model model) {
+    double num = 3.14159;
+    model.addAttribute("num", num);
+    return "home";
+}
 
 ```
 In this example, a number is passed as an attribute to the view.
@@ -308,7 +306,7 @@ We can format this number to the desired amount of numbers after the decimal poi
 // WhiskeyController.java
 
 @GetMapping("/home")
-public String getHomePage(Model model) { 
+public String getHomePage(Model model) {
     return "home";
 }
 
@@ -336,8 +334,12 @@ As a result, a sequence of numbers is displayed to the user:
 // WhiskeyController.java
 
 @GetMapping("/home")
-public String getHomePage(Model model) { 
-    double[] whiskeyPrices = new double[]{29.23, 21.22,33.50};
+public String getHomePage(Model model) {
+    double[] whiskeyPrices = new double[] {
+        29.23,
+        21.22,
+        33.50
+    };
     model.addAttribute("whiskeyPrices", whiskeyPrices);
     return "whiskey-home";
 }
@@ -368,12 +370,11 @@ This way we can create cline-side dynamic applications as well as server-side dy
 // JSController.java
 
 @GetMapping("/js")
-public String getMapPage(Model model){
-    String message = "Hi JS!";       
+public String getMapPage(Model model) {
+    String message = "Hi JS!";
     model.addAttribute("message", message);
     return "page";
 }
-
 ```
 
 In this example, a string is passed as an attribute to the view.

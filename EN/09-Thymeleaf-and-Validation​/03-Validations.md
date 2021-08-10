@@ -15,9 +15,9 @@ Setting validation in the model:
 // SomeModel.java
 
 public class SomeModel {
-@NotNull
-@Size(min = 3, max = 10, message = "Invalid name")
-private String name;
+    @NotNull
+    @Size(min = 3, max = 10, message = "Invalid name")
+    private String name;
 }
 
 ```
@@ -34,18 +34,17 @@ Another requirement is to activate the validation into the controller:
 @Controller
 public class SomeController {
 
- @GetMapping("/add")
- public String getPage(Model model) {
-  
-   if(!model.containsAttribute("bindingModel"){  // Adding a model to the view
-    model.addAttribute("bindingModel", 
-            new BindingModel()); 
-    }
-       
-     return "add";
-    }
-}
+    @GetMapping("/add")
+    public String getPage(Model model) {
 
+        if (!model.containsAttribute("bindingModel") { // Adding a model to the view
+                model.addAttribute("bindingModel",
+                    new BindingModel());
+            }
+
+            return "add";
+        }
+    }
 ```
 
 In this example, we have a controller with "add" HTML form, and a binding model is inserted which is going to be used in the post mapping, as a result, the "add" page is returned.
@@ -57,17 +56,17 @@ When the form successfully fields up and submitted, the model ("bindingModel") a
 // SomeController.java
 
 @PostMapping("/add")
-    public String add (@Valid @ModelAttribute("bindingModel") SomeModel bindingModel, BindingResult bindingResult, RedirectAttributes rAtt) {  // Validate the model
-        if(bindingResult.hasErrors()){
-                rAtt.addFlashAttribute("bindingModel", bindingModel);
-        rAtt.addFlashAttribute("org.springframework.validation.BindingResult.SomeModel", bindingResult);  // Validation Result
+public String add(@Valid @ModelAttribute("bindingModel") SomeModel bindingModel, BindingResult bindingResult, RedirectAttributes rAtt) { // Validate the model
+    if (bindingResult.hasErrors()) {
+        rAtt.addFlashAttribute("bindingModel", bindingModel);
+        rAtt.addFlashAttribute("org.springframework.validation.BindingResult.SomeModel", bindingResult); // Validation Result
         return "redirect:/add";
-        }
-
-        this.someService.save(bindingModel);
-
-        return "redirect:/home";
     }
+
+    this.someService.save(bindingModel);
+
+    return "redirect:/home";
+}
 
 ```
 
@@ -90,7 +89,7 @@ Note that for `@Valid` attribute to work the following dependency should be used
 
 The next step is error rendering into the thymeleaf template:
 
-```java
+```js
 // add.html
 
 <div th:object="${productBindingModel}">  // Set Binding Model
@@ -160,9 +159,9 @@ public @interface PresentOrFuture {
 
     String message() default "Invalid Date";
 
-    Class<?>[] groups() default {};
+    Class <<?> [] groups() default {};
 
-    Class<? extends Payload>[] payload() default {};
+    Class <<? extends Payload> [] payload() default {};
 }
 ```
 An interface is created, which has few properties.
@@ -174,11 +173,11 @@ Next, we have to create the validator class and implement a custom validator int
 ```js
 // add.html
 
-public class PresentOrFutureValidator 
-implements ConstraintValidator<PresentOrFuture, Date> {
+public class PresentOrFutureValidator
+implements ConstraintValidator < PresentOrFuture, Date > {
     @Override
-    public boolean isValid(Date date, 
-                      ConstraintValidatorContext constraintValidatorContext) {
+    public boolean isValid(Date date,
+        ConstraintValidatorContext constraintValidatorContext) {
         Date today = new Date();
         return date.after(today); //True = No Error; False = Error
     }
