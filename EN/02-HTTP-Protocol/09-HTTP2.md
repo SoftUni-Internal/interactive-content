@@ -28,7 +28,7 @@ At its core **HTTP/2** is meant to erase the need of maintaining complex server 
 
 This greatly increases the flexibility of data transfer.
 
-We can compare it to HTTP/1.1 where the whole **response/request** is send together with a new line delimiter.
+We can compare it to HTTP/1.1 where the whole **response/request** is sent together with a new line delimiter.
 
 [image assetsSrc="02-Java-Spring-Fund-HTTP(14).png" /]
 
@@ -58,7 +58,7 @@ It brings benefits across the entire stack of all web technologies but most impo
 
 # Header Compression
 
-With HTTP/1.1 each **request/response** carries its headers that describe the transferred resources and it's properties this is metadata send as plain text sends at every HTTP transfer, this may add anywhere from 500-800 bytes or even more (depending on the cookies) of data which can be safely cached.
+With HTTP/1.1 each **request/response** carries its headers that describe the transferred resources and its properties this is metadata send as plain text sends at every HTTP transfer, this may add anywhere from 500-800 bytes or even more (depending on the cookies) of data which can be safely cached.
 
 In HTTP/2 this problem is solved by introducing **Headers Table** both for client and server of seen headers.
 
@@ -80,7 +80,7 @@ The process is essentially a de-duplication, rather than compression.
 
 # Server Push
 
-HTTP2 allows us to send resources to clients without them asking for it.
+HTTP2 allows us to spend resources on clients without them asking for it.
 
 Now let's understand why we need that. 
 

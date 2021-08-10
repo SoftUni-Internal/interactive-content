@@ -22,6 +22,6 @@
 
 - Architecture
 
-- Entities, Repositories and Services
+- Entities, Repositories, and Services
 
 [/slide]

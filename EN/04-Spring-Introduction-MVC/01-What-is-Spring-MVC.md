@@ -81,7 +81,7 @@ public class CatController {
 
 ```
 
-Here we have a typical example of a controller named "**CatController**", which contains of a single method named "**editCat**".
+Here we have a typical example of a controller named "**CatController**", which contains a single method named "**editCat**".
 
 `@GetMapping("/edit/{catId}")` anotation is used, that way the method will be invoked with HTTP Get requests and will be sent to the `localhost:8080/cat/edit/{catId}` address.
 

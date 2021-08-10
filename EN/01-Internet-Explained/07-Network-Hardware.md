@@ -46,7 +46,7 @@ There are several types of cables:
 
 **Coaxial** and **twisted-pair** cables typically connect machines within a **few meters** away from each other (usually within a building).
 
-**Optical fiber** cabels are used for **long-range** connections, such as between **multiple cities**.
+**Optical fiber** cables are used for **long-range** connections, such as between **multiple cities**.
 
 ## Routers
 

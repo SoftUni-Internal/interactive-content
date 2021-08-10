@@ -10,7 +10,7 @@ _**Here is a**_ [link](https://videos.softuni.org/resources/java/Java-Spring-Fun
 
 West Compass Dealer Shop is an application in which you register cars, with several properties.
 
-You will have to create a simple application which has several pages and some object entities.
+You will have to create a simple application that has several pages and some object entities.
 
 [/slide]
 
@@ -20,7 +20,7 @@ You will have to create a simple application which has several pages and some ob
 
 This is the data layer of the application.
 
-There are some data object for you to implement.
+There is some data object for you to implement.
 
 ## Brand
 
@@ -126,7 +126,7 @@ Because you will learn Thymeleaf next week, we'll give you a little hint on how 
 
 [image assetsSrc="Java-Spring-Boot-Lab-4.jpg" /]
 
-- This is a link to the documentation
-  - https://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html#using-theach
+- This is a [link](https://www.thymeleaf.org/doc/tutorials/2.1/usingthymeleaf.html#using-theach) to the thymeleaf documentation.
+
 
 [/slide]

@@ -20,9 +20,9 @@ The **URL** is a formatted string consisting of several key parts.
 
 Protocols set the rules for communication.
 
-There are different protocols such as HTTP, HTTPS and FTP. 
+There are different protocols such as HTTP, HTTPS, and FTP. 
 
-HTTPS is the most commonly used these days for client - server communication when browsing web resources because it means you are communicating over a secure connection.
+HTTPS is the most commonly used these days for client-server communication when browsing web resources because it means you are communicating over a secure connection.
 
 When we send data from a computer to the server it is transferred through different routes.
 
@@ -30,7 +30,7 @@ In its pure form **HTTP** is just encoded bytes.
 
 This means that somewhere along the way, a person with bad intentions can gather the information we send. 
 
-It is especially dangerous if you are logging to your account or paying for goods online if the connection is not secure.
+It is especially dangerous if you are logging into your account or paying for goods online if the connection is not secure.
 
 This is why today HTTPS is widely popular and even websites that do not deal with sensitive information usually use this protocol to increase their credibility with the users and with search engines.
 
@@ -56,7 +56,7 @@ And when data is received at the given port the operating system knows that it s
 
 ## Path
 
-A path is the exact location of a resouce (/forum/path/index.php).
+A path is the exact location of a resource (/forum/path/index.php).
 
 When we define a given path it helps the server to find exactly what we need.
 
@@ -80,9 +80,9 @@ For example `#lectures`.
 
 **URLs** can only contain **ASCII characters**.
 
-This is why in order to send symbols that are not contained in the **ASCII Table** that part of the url will have to be encoded.
+This is why in order to send symbols that are not contained in the **ASCII Table** that part of the URL will have to be encoded.
 
-URL encoding is the process of replacing non-ASCII characters with combination of a percent sign **%** (Percentage encoding) and two hexadecimal digits.
+URL encoding is the process of replacing non-ASCII characters with a combination of a percent sign **%** (Percentage encoding) and two hexadecimal digits.
 
 This is the pattern used for a single character encoding: **%[character hex code]**.
 
@@ -100,7 +100,7 @@ This is the pattern used for a single character encoding: **%[character hex code
 Conditions for encoding characters:
 
 - They are not present in the ASCII character set
-- Special character used for other purposes in the URL such as `/`, `?`, `&`
+- Special characters used for other purposes in the URL such as `/`, `?`, `&`
 - Unsafe characters that can be misinterpreted such as `%`, `<`, `>` and others
 
 

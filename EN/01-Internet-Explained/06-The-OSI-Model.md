@@ -8,7 +8,7 @@ The **OSI (Operation Systems Interconnection)** model is the foundation for most
 
 Introduced in **1983**, its primary goal is to standardize networks, allowing for **multi-vendor systems**.
 
-Prior to its introduction, computers had a difficult time connecting to each other, because of incompatibility.
+Before its introduction, computers had a difficult time connecting to each other, because of incompatibility.
 
 It splits the **communication process** into seven abstraction layers.
 

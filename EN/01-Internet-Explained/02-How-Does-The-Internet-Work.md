@@ -10,9 +10,9 @@ It acts as a **link** between the **browser** and the **database**.
 
 The flow of data retrieval encompasses three steps:
 
-- the **client** demands a piece of information 
-- the **web server** communicates with the **database**
-- after retrieving the needed **resources**, the server sends a **response** to the **client**
+- The **client** demands a piece of information 
+- The **web server** communicates with the **database**
+- After retrieving the needed **resources**, the server sends a **response** to the **client**
 
 The following image illustrates how web servers provide the connection between **browsers** and **databases**:
 
@@ -24,7 +24,7 @@ The following image illustrates how web servers provide the connection between *
 
 # Important Definitions
 
-In order to easily grasp how the Internet works, we must take a look at its underlying structure.
+To easily grasp how the Internet works, we must take a look at its underlying structure.
 
 Here are some of the **basic definitions** needed to understand the Internet:
 

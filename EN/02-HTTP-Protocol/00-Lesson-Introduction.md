@@ -8,7 +8,7 @@
 
 
 1. **HTTP Basics**
-    - What the HyperText Transfer protocol (HTTP) is
+    - What the HyperText Transfer Protocol (HTTP) is
     - The basic request methods
 
 2. **URL**
