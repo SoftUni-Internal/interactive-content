@@ -96,7 +96,7 @@ The `let` keyword allows us to declare block-level variables.
 // num is not visible here
 
 for (let num = 0; num < 53; num++) {
-  // num is only visible here
+ // num is only visible here
 }
 
 // num is not visible here
@@ -149,23 +149,23 @@ Any variable can be assigned (and re-assigned) values of all types​.
 # Comparison Operators ​
 
 ```js
-console.log(1 == '1');    // true​
+console.log(1 == '1'); // true​
 
-console.log(1 === '1');   // false​
+console.log(1 === '1'); // false​
 
-console.log(3 != '3');    // false​
+console.log(3 != '3'); // false​
 
-console.log(3 !== '3');   // true​
+console.log(3 !== '3'); // true​
 
-console.log(5 < 5.5);     // true​
+console.log(5 < 5.5); // true​
 
-console.log(5 <= 4);      // false​
+console.log(5 <= 4); // false​
 
-console.log(2 > 1.5);     // true​
+console.log(2 > 1.5); // true​
 
-console.log(2 >= 2);      // true​
+console.log(2 >= 2); // true​
 
-console.log(5 ? 4 : 10);  // 4​
+console.log(5 ? 4 : 10); // 4​
 ```
 
 [/slide]
@@ -184,7 +184,7 @@ Contrary to languages like Java and C#, the opening bracket `{` stays at the sam
 
 ```js
 function printStars(count) {​
-  console.log("*".repeat(count));​
+ console.log("*".repeat(count));​
 }​
 
 printStars(10);​
@@ -202,7 +202,7 @@ There are **three** ways to declare functions in JS:
 
 ```js
 function walk() {​
-  console.log("walking");​
+ console.log("walking");​
 }​
 ```
 
@@ -210,7 +210,7 @@ function walk() {​
 
 ```js
 let walk = function (){​
-  console.log("walking");​
+ console.log("walking");​
 }
 ```
 
@@ -218,7 +218,7 @@ let walk = function (){​
 
 ```js
 let walk = () => {​
-  console.log("walking");​
+ console.log("walking");​
 }​
 ```
 
@@ -232,9 +232,9 @@ You can instantiate parameters with no value​:
 
 ```js live
 function foo(a,b,c){​
-  console.log(a);​
-  console.log(b);​
-  console.log(c); 
+ console.log(a);​
+ console.log(b);​
+ console.log(c); 
 }​
 
 foo(1,2)​
@@ -244,9 +244,9 @@ The unused parameters are ignored​:
 
 ```js live
 function foo(a,b,c){​
-  console.log(a);​
-  console.log(b);​
-  console.log(c);​
+ console.log(a);​
+ console.log(b);​
+ console.log(c);​
 }​
 
 foo(1,2,3,6,7)​;
@@ -295,7 +295,7 @@ run(); // running​
 
 function run() {​
 
-    console.log("running");​
+ console.log("running");​
 
 };​
 ```
@@ -316,11 +316,11 @@ You define (and create) a JavaScript object with an object literal:
 ```js
 let person = {​
 
-    firstName: "John",​
+ firstName: "John",​
 
-    lastName: "Doe",​
+ lastName: "Doe",​
 
-    age: 50​
+ age: 50​
 
 };​
 ```
@@ -368,11 +368,11 @@ let course = { name: 'JS Core', hall: 'Open Source' };​
 
 let keys = Object.keys(course);​
 
-console.log(keys);  
+console.log(keys); 
 
 if (course.hasOwnProperty('name')) {​
 
-    console.log(course.name); 
+ console.log(course.name); 
 
 }​
 ```
@@ -390,7 +390,7 @@ The `for-in` loop iterates a specified variable over all the ​enumerable prope
 
 for (const key in obj) {​
 
-  console.log(`obj.${key} = ${obj[key]}`);​
+ console.log(`obj.${key} = ${obj[key]}`);​
 
 }​
 ```
@@ -404,13 +404,15 @@ for (const key in obj) {​
 The **for-of** statement creates a loop iterating over iterable objects​:
 
 ```js live
-let obj = {a: 1, b: 2, c: 3};​
+let obj = {a: 1, b: 2, c: 3};
 
-for (const key of Object.keys(obj)) {​
+for (const key of Object.keys(obj)) {
 
-  console.log(`obj.${key} = ${obj[key]}`);​
-
-}​
+ console.log(`obj.${key} = ${obj[key]}`);
+ 
+}
 ```
+
+
 
 [/slide]
