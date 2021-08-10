@@ -28,9 +28,9 @@
 
 Rows must be placed in containers​:
 
-- **.container** has one fixed width for each screen size in bootstrap (xs, sm, md, lg) ​
+- `.container` has one fixed width for each screen size in bootstrap (xs, sm, md, lg) ​
 
-- **.container-fluid** expands to fill the available width​
+- `.container-fluid` expands to fill the available width​
 
 [/slide]
 
@@ -48,13 +48,13 @@ Column classes determine how many columns to use on different screen sizes:​
 <div class="col-sm-2 col-lg-4">Column three</div>     ​
 ```
 
-- **.col-xs**: width less than 768px​
+- `.col-xs`: width less than 768px​
 
-- **.col-sm**: width between 768px and 992px​
+- `.col-sm`: width between 768px and 992px​
 
-- **.col-md**: width between 992px and 1200px​
+- `.col-md`: width between 992px and 1200px​
 
-- **.col-lg**: width over 1200px​
+- `.col-lg`: width over 1200px​
 
 [/slide]
 

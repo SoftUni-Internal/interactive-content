@@ -50,11 +50,11 @@ Both components are responsive by default​.
 
 They come with built-in support for a handful of sub-components​:
 
-- **.navbar-brand** for your company, product, or project name​
+- `.navbar-brand` for your company, product, or project name​
 
-- **.navbar-nav** for a full-height and lightweight navigation​
+- `.navbar-nav` for a full-height and lightweight navigation​
 
-- **.nav-item** for every item in navigation​
+- `.nav-item` for every item in navigation​
 
 You can learn more at: [https://getbootstrap.com/docs/4.0/components/navbar/​](https://getbootstrap.com/docs/4.0/components/navbar/​)
 
