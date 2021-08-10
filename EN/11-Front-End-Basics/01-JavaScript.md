@@ -403,7 +403,7 @@ for (const key in obj) {​
 
 The **for-of** statement creates a loop iterating over iterable objects​:
 
-```js live no-template
+```js live
 let obj = {a: 1, b: 2, c: 3};​
 
 for (const key of Object.keys(obj)) {​

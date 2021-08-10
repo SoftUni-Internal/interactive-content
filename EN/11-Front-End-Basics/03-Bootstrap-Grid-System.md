@@ -64,7 +64,7 @@ Column classes determine how many columns to use on different screen sizes:​
 
 Bootstrap has a handful of color utility classes:
 
-​```html
+```html
 <p class="text-primary">.text-primary</p>​
 
 <p class="text-secondary">.text-secondary</p>​
