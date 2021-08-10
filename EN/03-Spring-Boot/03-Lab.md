@@ -6,7 +6,7 @@
 
 ## West Compass Dealer Shop
 
-_**Here is a**_ [link](https://mega.nz/file/PBg1naYb#DUBZe2b3Z6aGSvoKOcmFf5WSf-vBiWg9Fq5seMvWviE) _**to the resources for this task**_.
+_**Here is a**_ [link](https://videos.softuni.org/resources/java/Java-Spring-Fundamentals/07_Spring-Fundamentals-Spring-Essentials-Lab_MobiLeLeLe_Resources.zip) _**to the resources for this task**_.
 
 West Compass Dealer Shop is an application in which you register cars, with several properties.
 

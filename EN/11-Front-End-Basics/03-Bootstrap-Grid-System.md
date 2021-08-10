@@ -40,6 +40,14 @@ Rows must be placed in containers​:
 
 Column classes determine how many columns to use on different screen sizes:​
 
+```html
+<div class="col-sm-8 col-lg-4">Column one</div>​
+
+<div class="col-sm-2 col-lg-4">Column two</div>​
+
+<div class="col-sm-2 col-lg-4">Column three</div>     ​
+```
+
 - **.col-xs**: width less than 768px​
 
 - **.col-sm**: width between 768px and 992px​

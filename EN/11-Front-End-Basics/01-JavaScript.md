@@ -133,12 +133,14 @@ Any variable can be assigned (and re-assigned) values of all types​.
 
 | Operator | Notation in JS |
 |---|---|
-| EQUAL value EQUAL value and type | == === |
-| NOT EQUAL value NOT EQUAL value/type | != !== |
-| Greater than | > |
-| Greater than OR EQUAL | >= |
-| LESS than | < |
-| LESS than OR EQUAL | <= |
+| EQUAL value | == |
+| EQUAL value and type | === |
+| NOT EQUAL value | != |
+| NOT EQUAL value/type | !== |
+| Greater than | \> |
+| Greater than OR EQUAL | \>= |
+| LESS than | \< |
+| LESS than OR EQUAL | \<= |
 
 [/slide]
 

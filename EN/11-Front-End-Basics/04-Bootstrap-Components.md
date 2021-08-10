@@ -44,11 +44,11 @@ We can provide contextual feedback messages for typical user actions with the ha
 
 # Nav and Navbar​
 
-Require a wrapping .navbar​
+The Nav and Navbar​ components equire a wrapping element with a class of `.navbar​`.
 
-Responsive by default​
+Both components are responsive by default​.
 
-Come with built-in support for a handful of sub-components​
+They come with built-in support for a handful of sub-components​:
 
 - **.navbar-brand** for your company, product, or project name​
 
@@ -66,11 +66,9 @@ You can learn more at: [https://getbootstrap.com/docs/4.0/components/navbar/​]
 
 Bootstrap has a number of form control styles, layout options and custom components for creating a wide variety of forms​.
 
-Use type attribute on all inputs to take advantage of newer input controls.
+Use type attributes on all inputs to take advantage of newer input controls
 
-Email verification​
-
-Number selection​
+Many modern browsers can perform email verification​, simply based on the type attribute.
 
 [/slide]
 
