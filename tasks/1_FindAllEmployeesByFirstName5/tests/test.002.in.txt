@@ -1,0 +1,144 @@
+CREATE TABLE IF NOT EXISTS `addresses` (
+  `address_id` int(10) NOT NULL AUTO_INCREMENT,
+  `address_text` varchar(100) NOT NULL,
+  `town_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`address_id`),
+  UNIQUE KEY `PK_Addresses` (`address_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `PK_Departments` (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `PK_Employees` (`employee_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
+
+
+/*!40000 ALTER TABLE `employees` DISABLE KEYS */;
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'SA', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
+	(2, 'SA', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
+	(3, 'SA', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
+	(4, 'SA', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
+	(5, 'SA', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
+CREATE TABLE IF NOT EXISTS `employees_projects` (
+  `employee_id` int(10) NOT NULL,
+  `project_id` int(10) NOT NULL,
+  PRIMARY KEY (`employee_id`,`project_id`),
+  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `PK_Projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `towns` (
+  `town_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`town_id`),
+  UNIQUE KEY `PK_Towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
+[/input]
+[output]
+SA
+Gilbert
+SA
+Brown
+SA
+Tamburello
+SA
+Walters
+SA
+D'Hers
+[/output]
+[/test]
+[test]
+[input]
+CREATE TABLE IF NOT EXISTS `addresses` (
+  `address_id` int(10) NOT NULL AUTO_INCREMENT,
+  `address_text` varchar(100) NOT NULL,
+  `town_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`address_id`),
+  UNIQUE KEY `PK_Addresses` (`address_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=292 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `departments` (
+  `department_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `manager_id` int(10) NOT NULL,
+  PRIMARY KEY (`department_id`),
+  UNIQUE KEY `PK_Departments` (`department_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `employees` (
+  `employee_id` int(10) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL,
+  `middle_name` varchar(50) DEFAULT NULL,
+  `job_title` varchar(50) NOT NULL,
+  `department_id` int(10) NOT NULL,
+  `manager_id` int(10) DEFAULT NULL,
+  `hire_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `salary` decimal(19,4) NOT NULL,
+  `address_id` int(10) DEFAULT NULL,
+  PRIMARY KEY (`employee_id`),
+  UNIQUE KEY `PK_Employees` (`employee_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=294 DEFAULT CHARSET=utf8;
+
+
+/*!40000 ALTER TABLE `employees` DISABLE KEYS */;
+INSERT INTO `employees` (`employee_id`, `first_name`, `last_name`, `middle_name`, `job_title`, `department_id`, `manager_id`, `hire_date`, `salary`, `address_id`) VALUES
+	(1, 'Samuel', 'Gilbert', 'R', 'Production Technician', 7, 16, '1998-07-31 00:00:00.000000', 12500.0000, 166),
+	(2, 'KaSAndra', 'Brown', 'F', 'Marketing Assistant', 4, 6, '1999-02-26 00:00:00.000000', 13500.0000, 102),
+	(3, 'Josh', 'Tamburello', NULL, 'Engineering Manager', 1, 12, '1999-12-12 00:00:00.000000', 43300.0000, 193),
+	(4, 'Sara', 'Walters', NULL, 'Senior Tool Designer', 2, 3, '2000-01-05 00:00:00.000000', 29800.0000, 155),
+	(5, 'SAMANTA', 'D''Hers', 'B', 'Tool Designer', 2, 263, '2000-01-11 00:00:00.000000', 25000.0000, 40);
+CREATE TABLE IF NOT EXISTS `employees_projects` (
+  `employee_id` int(10) NOT NULL,
+  `project_id` int(10) NOT NULL,
+  PRIMARY KEY (`employee_id`,`project_id`),
+  UNIQUE KEY `PK_EmployeesProjects` (`employee_id`,`project_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+CREATE TABLE IF NOT EXISTS `projects` (
+  `project_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  `description` text,
+  `start_date` timestamp(6) NOT NULL DEFAULT CURRENT_TIMESTAMP(6) ON UPDATE CURRENT_TIMESTAMP(6),
+  `end_date` timestamp(6) NULL DEFAULT NULL,
+  PRIMARY KEY (`project_id`),
+  UNIQUE KEY `PK_Projects` (`project_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `towns` (
+  `town_id` int(10) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) NOT NULL,
+  PRIMARY KEY (`town_id`),
+  UNIQUE KEY `PK_Towns` (`town_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;

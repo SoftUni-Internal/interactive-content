@@ -1,0 +1,16 @@
+<!-- This is a comment that will not be parsed -->
+<!-- This file will contain META about the task -->
+
+executionType=tests-execution/simple-execution
+io_console=True
+file_upload=False
+requiresInput=True
+task_id=advanced_mathOperations_sumTwoNumbers4
+
+template=```
+This is the template, if "template=True"
+```
+
+adapter=```
+This is the adapter, if "adapter=True"
+```
