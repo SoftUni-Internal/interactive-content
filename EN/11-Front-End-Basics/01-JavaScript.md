@@ -34,7 +34,7 @@ Each symbol has its own index, the first one being zero.
 
 ## `Number` 
 
-The most used numeric data type​ in JavaScript is Number.
+The most used numeric data type in JavaScript is Number.
 
 It can represent both Integers and floating-point numbers.
 
@@ -68,7 +68,7 @@ Bigint is the second numeric type in JavaScript.
 
 It represents **integers** with arbitrary precision​.
 
-The lack of support for floating-point numbers enables to store far larger integers, as compared to `Number`.
+The lack of support for floating-point numbers enables it to store far larger integers, as compared to `Number`.
 
 ## `Symbol`
 
@@ -86,34 +86,52 @@ Further in this lesson, we will learn what JavaScript Objects and Functions are,
 
 # Variable Values​
 
-There are three ways to declare variables​ in JavaScript
+There are three ways to declare variables in JavaScript
 
 ## `let` 
 
 The `let` keyword allows us to declare block-level variables. 
 
 ```js
-// num is not visible here
+// num is unreachable here
 
-for (let num = 0; num < 53; num++) {
- // num is only visible here
+for (let num = 0; num <= 100; num++) {
+  // num is usable in the for-loop
 }
 
-// num is not visible here
-
+// num is unreachable here
 ```
 
 The declared variable is available from the block it is enclosed in.
 
 ## `const` 
 
-Variable declared with `const` cannot be modified​ once they are assigned.
+Variables declared with `const` cannot be modified once they are assigned.
+
+```js
+const name = 'James';
+name = 'Mike'; // Results in an error
+```
 
 Similar to `let`, they available only from the enclosing block.
 
 ## `var` 
 
-`var` defines a variable in the lexical scope regardless of block scope​.
+Before the introduction of EcmaScript 6 in 2015, the `var` keyword was the only way to declare a variable.
+
+While it is the most common of the three, it is recommended to refrain from using it.
+
+Variables declared with `var` have a functional scope:
+
+```js
+// num is available here
+
+for (var num = 0; num <= 100; num++) {
+  // we can use num anywhere within the function
+}
+
+// num is available here
+```
 
 [/slide]
 
@@ -121,15 +139,30 @@ Similar to `let`, they available only from the enclosing block.
 
 # Dynamic Typing​
 
-Variables in JavaScript are not directly associated with any particular value type​.
+JavaScript is a **dynamically** typed language.
 
-Any variable can be assigned (and re-assigned) values of all types​.
+When declaring a variable, we are not required to specify its type.
+
+This means that we can assign a number to a variable, and convert it to a string or boolean at a later time:
+
+```js live
+let myVar = 8;
+console.log(myVar);
+
+let myVar = 'hello';
+console.log(myVar);
+
+let myVar = true;
+console.log(myVar);
+```
 
 [/slide]
 
 [slide hideTitle]
 
 # Comparison Operators​
+
+There are the **eight** comparison operators in JavaScript.
 
 | Operator | Notation in JS |
 |---|---|
@@ -149,23 +182,16 @@ Any variable can be assigned (and re-assigned) values of all types​.
 # Comparison Operators ​
 
 ```js
-console.log(1 == '1'); // true​
+console.log(7 == '7'); // true​
 
-console.log(1 === '1'); // false​
+console.log(7 === '7'); // false​
 
-console.log(3 != '3'); // false​
+console.log(5 != '5'); // false​
 
-console.log(3 !== '3'); // true​
+console.log(5 !== '5'); // true​
 
-console.log(5 < 5.5); // true​
 
-console.log(5 <= 4); // false​
-
-console.log(2 > 1.5); // true​
-
-console.log(2 >= 2); // true​
-
-console.log(5 ? 4 : 10); // 4​
+console.log(8 ? 2 : 4); // 2
 ```
 
 [/slide]
@@ -183,11 +209,11 @@ Function names and parameters use camel case​: `myFunction`
 Contrary to languages like Java and C#, the opening bracket `{` stays at the same line​:
 
 ```js
-function printStars(count) {​
- console.log("*".repeat(count));​
+function printDots(count) {​
+  console.log(".".repeat(count));​
 }​
 
-printStars(10);​
+printDots(5);​
 ```
 
 [/slide]
@@ -201,24 +227,24 @@ There are **three** ways to declare functions in JS:
 ## Function declaration​
 
 ```js
-function walk() {​
- console.log("walking");​
+function bark() {​
+ console.log("woof");​
 }​
 ```
 
 ## Function expression​
 
 ```js
-let walk = function (){​
- console.log("walking");​
+let bark = function (){​
+ console.log("woof");​
 }
 ```
 
 ## Arrow functions​
 
 ```js
-let walk = () => {​
- console.log("walking");​
+let bark = () => {​
+ console.log("woof");​
 }​
 ```
 
@@ -228,29 +254,33 @@ let walk = () => {​
 
 # Parameters​
 
-You can instantiate parameters with no value​:
+In JS, we can instantiate parameters without a value​:
 
 ```js
-function foo(a,b,c){​
- console.log(a);​
- console.log(b);​
- console.log(c); 
+function print(num1,num2,num3){​
+  console.log(num1);​
+  console.log(num2);​
+  console.log(num3); 
 }​
 
-foo(1,2)​
+print(1, 2)​;
 ```
 
-The unused parameters are ignored​:
+In the example above, `num3` has a value of **undefined**.
+
+We can also pass more arguments than expected:
 
 ```js
-function foo(a,b,c){​
- console.log(a);​
- console.log(b);​
- console.log(c);​
+function print(num1,num2,num3){​
+  console.log(num1);​
+  console.log(num2);​
+  console.log(num3); 
 }​
 
-foo(1,2,3,6,7)​;
+print(1, 2, 3, 4, 5)​;
 ```
+
+In this example, 4 and 5 are going to be ignored.
 
 [/slide]
 
@@ -259,6 +289,8 @@ foo(1,2,3,6,7)​;
 # Hoisting​
 
 Variable and function declarations are put into memory during the compile phase, but stay exactly where you typed them in your code​.
+
+
 
 ```js
 console.log(num); 
@@ -276,12 +308,24 @@ Since only declarations are hoisted​, the above example returns `undefined`.
 
 # Hoisting Variables ​
 
+In JavaScript, we can use variables before they have been declared:
+
 ```js
-num = 6;​
+city = 'London'; // Assigning 'London' to city
 
-console.log(num);
+console.log(city); // Printing city to the console
 
-var num;​
+var city; // Declaring city
+```
+
+In this example, we assign a value to `city` and output it before declaring it.
+
+Keep in mind that **initializations** are not hoisted:
+
+```js
+console.log(city); // undefined
+
+var city = 'Paris'; // Initializing city with 'Paris'
 ```
 
 [/slide]
@@ -290,14 +334,24 @@ var num;​
 
 # Hoisting Functions​
 
+Function declarations are hoisted:
+
 ```js
-run(); // running​
+sayHello(); // Hello!
 
-function run() {​
-
- console.log("running");​
-
+function sayHello() {​
+  console.log("Hello! 🙋");​
 };​
+```
+
+The same however does not apply to function expressions:
+
+```js
+myFunc(); // TypeError: myFunc is not a function
+
+var myFunc = function() {
+  console.log('This will not be printed 🙁');
+};
 ```
 
 [/slide]
@@ -306,22 +360,15 @@ function run() {​
 
 # What is an Object?​
 
-An object is a collection of fields, and a field is an ​
-association between a name (or key) and a value​
-
-Objects are a reference data type ​
+An object is a reference data type, a ​collection of key-value pairs, called fields.
 
 You define (and create) a JavaScript object with an object literal:
 
 ```js
-let person = {​
-
- firstName: "John",​
-
- lastName: "Doe",​
-
- age: 50​
-
+let student = {​
+  firstName: "Patricia",​
+  lastName: "Williams",​
+  age: 34​
 };​
 ```
 
@@ -335,11 +382,11 @@ The in-memory value of a reference type is the ​
 reference itself (a memory address)​:
 
 ```js
-let x = {name: 'John'};​
+let x = {name: 'Mark'};​
 
 let y = x;​
 
-y.name = "John";​
+y.name = "Mark";​
 
 console.log(x.name);
 ```
@@ -364,16 +411,14 @@ objects​.
 # Object Keys and Values​
 
 ```js
-let course = { name: 'JS Core', hall: 'Open Source' };​
+let address = { street: 'Champs-Élysées', number: '259' };
 
-let keys = Object.keys(course);​
+let keys = Object.keys(address);​
 
 console.log(keys); 
 
-if (course.hasOwnProperty('name')) {​
-
- console.log(course.name); 
-
+if (address.hasOwnProperty('street')) {​
+  console.log(address.street); 
 }​
 ```
 
@@ -386,12 +431,10 @@ if (course.hasOwnProperty('name')) {​
 The `for-in` loop iterates a specified variable over all the ​enumerable properties of an object​:
 
 ```js
-​let obj = {a: 1, b: 2, c: 3};​
+​let users = {1: 'annedavis82', 2: 'barbara_m2634', 3: 'elijah.593'};​
 
-for (const key in obj) {​
-
- console.log(`obj.${key} = ${obj[key]}`);​
-
+for (const key in users) {​
+  console.log(`users.${key} = ${users[key]}`);​
 }​
 ```
 
@@ -407,12 +450,8 @@ The **for-of** statement creates a loop iterating over iterable objects​:
 let obj = {a: 1, b: 2, c: 3};
 
 for (const key of Object.keys(obj)) {
-
- console.log(`obj.${key} = ${obj[key]}`);
- 
+  console.log(`obj.${key} = ${obj[key]}`);
 }
 ```
-
-
 
 [/slide]

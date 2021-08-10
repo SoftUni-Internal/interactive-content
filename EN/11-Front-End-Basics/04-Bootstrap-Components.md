@@ -44,7 +44,7 @@ We can provide contextual feedback messages for typical user actions with the ha
 
 # Nav and Navbar​
 
-The Nav and Navbar​ components equire a wrapping element with a class of `.navbar​`.
+The Nav and Navbar components require a wrapping element with a class of `.navbar​`.
 
 Both components are responsive by default​.
 
@@ -54,7 +54,7 @@ They come with built-in support for a handful of sub-components​:
 
 - `.navbar-nav` for a full-height and lightweight navigation​
 
-- `.nav-item` for every item in navigation​
+- `.nav-item` for every item in the navigation​ menu
 
 You can learn more [here](https://getbootstrap.com/docs/4.0/components/navbar/​).
 
@@ -77,36 +77,25 @@ Many modern browsers can perform email verification​, simply based on the type
 # Tables
 
 ```html
-<table class="table">​
-
-   <thead class="thead-dark"> ​
-
-       <tr> <th scope="col">#</th>​
-
-            <th scope="col">First</th>​
-
-            <th scope="col">Last</th>​
-
-            <th scope="col">Handle</th> </tr>​
-
-   </thead>​
-
-   <tbody> ​
-
-       <tr> <th scope="row">1</th>​
-
-            <td>Mark</td>​
-
-            <td>Otto</td>​
-
-            <td>@mdo</td> </tr>​
-
-        <tr> ... </tr> ​
-
-        <tr> ... </tr>        ​
-
-   </tbody>​
-
+<table class="table">
+   <thead class="thead-dark">
+      <tr>
+         <th scope="col">#</th>
+         <th scope="col">First</th>
+         <th scope="col">Last</th>
+         <th scope="col">Handle</th>
+      </tr>
+   </thead>
+   <tbody>
+      <tr>
+         <th scope="row">1</th>
+         <td>Mark</td>
+         <td>Otto</td>
+         <td>@mdo</td>
+      </tr>
+      <tr> ... </tr>
+      <tr> ... </tr>
+   </tbody>
 </table>
 ```
 

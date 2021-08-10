@@ -37,8 +37,8 @@ let person = {​
 ```
 
 - **Bootstrap** is the most popular front-end **component library**
-  * Responsive grid system​ allow for greater control
-  * Extensive prebuilt components​ simplify layout creation
+  * the responsive grid system allows for greater control
+  * extensive prebuilt components simplify layout creation
 
 ```html
 <div class="jumbotron">​
