@@ -26,7 +26,7 @@ In this example, we use the `@NotNull` attribute, in which the "name" property c
 
 If the user's input does not match the requirements, an appropriate error message will be sent.
 
-Another requirement is to add a model to the view:
+Another requirement is to activate the validation into the controller:
 
 ```java
 // SomeController.java
@@ -48,6 +48,11 @@ public class SomeController {
 
 ```
 
+In this example, we have a controller with "add" HTML form, and a binding model is inserted which is going to be used in the post mapping, as a result, the "add" page is returned.
+
+
+When the form successfully fields up and submitted, the model ("bindingModel") arrive into the controller:
+
 ```java
 // SomeController.java
 
@@ -66,6 +71,25 @@ public class SomeController {
 
 ```
 
+In this example, the Spring Framework automatically maps the "bindingModel", to the "SomeModel" class.
+
+In order to check if the "bindingModel" contains valid data, we should use the `@Valid` attribute. 
+
+If a validation error occurs it will be located into the "bindingResult" and by using `.hasErrors()` and validation error could be caught, add to a `.addFlashAttribute()` and for example displayed to the user.
+
+Note that for `@Valid` attribute to work the following dependency should be used:
+
+```js
+<dependency>
+  <groupId>org.springframework.boot</groupId>
+  <artificalId>spring-boot-starter-validation</artificalId>
+</dependency>
+```
+
+## Error Rendering
+
+The next step is error rendering into the thymeleaf template:
+
 ```java
 // add.html
 
@@ -77,12 +101,16 @@ public class SomeController {
     <small th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="text-danger"> Name error</small> // Render Error
 
 </div>
-
 ```
+First, we access the field `th:field` and by using `th:errorclass`, a CSS class is attached for displaying the validation error to the user.
+
+As a result, the user receives very descriptive error:
 
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-12.png" /]
 
 ## List All Errors
+
+Very often more than one input field is used, then the necessity of displaying the list of errors occurs:
 
 ```js
 // add.html
@@ -95,8 +123,11 @@ public class SomeController {
 
 ```
 
+We can use a condition `th:if="${#fields.hasErrors('*')}"`, which means if any error ecures, then a foreach loop is created `th:each="err : ${#fields.errors('*')}"`, which will display all errors to the user:
+
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-13.png" /]
 
+It is possible to check for errors in a specific model:
 ```js
 // add.html
 
@@ -113,8 +144,11 @@ public class SomeController {
 [slide hideTitle]
 # Custom Annotations 
 
-You can also implement custom validation annotations
-Sometimes it is necessary due to complex validation functionality
+We can also implement custom validation annotations, it is necessary due to complex validation functionality.
+
+One case where custom validation annotation is useful is when a user tries to register with the same credentials as an existing user in the database.
+
+Another example of custom validation annotation is to check if an input data is valid or not:
 
 ```java
 // PresentOrFuture.java
@@ -131,8 +165,11 @@ public @interface PresentOrFuture {
     Class<? extends Payload>[] payload() default {};
 }
 ```
+An interface is created, which has few properties.
 
-You will have to implement a custom validator too
+It is very important to add `@Constraint()` annotation, which pinpoints the validator class.
+
+Next, we have to create the validator class and implement a custom validator interface:
 
 ```js
 // add.html
@@ -147,5 +184,7 @@ implements ConstraintValidator<PresentOrFuture, Date> {
     }
 }
 ```
+
+The `isValid()` method should be overridden, which will return if the input data is valid or not.
 
 [/slide]

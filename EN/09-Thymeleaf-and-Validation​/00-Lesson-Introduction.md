@@ -17,4 +17,5 @@
 
 - Spring Validation and Thymeleaf
 - List all Errors
+
 [/slide]
