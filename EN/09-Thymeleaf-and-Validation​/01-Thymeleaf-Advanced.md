@@ -1,9 +1,9 @@
 [slide hideTitle]
 # Helpers
 
-Helpers are objects that provide built-in functionalities that help to enhance a view.
+Helpers are **objects** that provide **built-in** functionalities and help to enhance a view.
 
-This is a list of available helper objects and their functions:
+This is a list of available helper objects and their function:
 
 |**Helper Objects**| **Functions**|
 |---|---|
@@ -26,9 +26,9 @@ This is a list of available helper objects and their functions:
 # Date Object
 
 ## Custom Format
-In a controller class, we can have GET methods, within the mapping URL. 
+In a controller class, we can have **GET** methods, within the mapping URL. 
 
-We can also add attributes to the model, and return the view.
+We can also add **attributes** to the model, and return the view.
 
 ```java
 // WhiskeyController.java
@@ -39,32 +39,32 @@ public String getHomePage(Model model) {
     return "whiskey-home";
 }
 ```
-Here we add an attribute "myData", which is a `new Data()` object.
+Here we add an attribute "**myData**", which is a `new Data()` object.
 
-Into the view, `myData` could be formatted by using the `#dates` object with its utility method:
+Into the view, `myData` could be **formatted** by using the `#dates` object with its utility method:
 
 ```js
 // whiskey-home.html
 
 <div th:text="${#dates.format(myDate,'yyyy-MMM-dd')}"></div>
 ```
-The `#dates` is ready to use object, available in Thymeleaf, which has utility methods.
+The `#dates` is **ready** to use object, available in Thymeleaf, which has **utility** methods.
 
-In this example the `.format()` utility method is used, to format the `myData` object into the more presentable format.
+In this example the `.format()` utility method is used, to format the `myData` object into the **more presentable format**.
 
-As a result of invoking this method, the `myData` object will be presented to the user in the following format: 
+As a result of invoking this method, the `myData` object will be **presented to the user** in the following format: 
 
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-1.png" /]
 
 ## Week Name of Day
 
-By using the same controller, we can chose a different utility method, and present the `myDate` in another format:
+By using the **same controller**, we can chose a **different** utility method, and present the `myDate` in another format:
 
 ```js
 <div th:text="${#dates.dayOfWeekName(myDate)}"></div>
 ```
 
-In this example the invoked utility method is `.dayOfWeekName()`, which will present to the user only the day of the week in text format:
+In this example the invoked utility method is `.dayOfWeekName()`, which will present to the user **only the day of the week** in text format:
 
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-2.png" /]
 
@@ -90,15 +90,15 @@ The `#dates` object goes as far as it can process a collection:
 
 <div th:text="${#dates.listDay(myDates)}"></div>
 ```
-In this example, `myDates` is a collection of dates, and with invoking the utility method `.listDay()`, process the collection by only taking the days.
+In this example, `myDates` is a **collection of dates**, and with invoking the utility method `.listDay()`, process the collection by only taking the **days**.
 
-The result is present to the user into the array of days:
+The result is **present** to the user into an array of days:
 
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-3.png" /]
 
 ## Get Current Date
 
-The functionality of this controller is slightly different:
+The functionality of this controller is slightly **different**:
 
 ```java
 // WhiskeyController.java
@@ -108,7 +108,7 @@ public String getHomePage() {
     return "whiskey-home";
 }
 ```
-Here the route stays the same, but the controller returns only the view without any data.
+Here the route stays the **same**, but the controller returns only the **view** without any data.
 
 Into the view the `#dates` object can create a date:
 
@@ -118,7 +118,7 @@ Into the view the `#dates` object can create a date:
 <div th:text="${#dates.createNow()}"></div>
 ```
 
-The utility method is `.createNow()` returns the current date into the following format:
+The utility method is `.createNow()` returns the **current date** into the following format:
 
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-4.png" /]
 
@@ -126,7 +126,7 @@ It is of course possible to create new data and format it as `#dates.format(crea
 
 ## LocalDate and Thymeleaf
 
-In Java 8 a new date-time object [LocalDate](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html) is created, which is viewed as year-month-day and does not store time-zone.
+In Java 8 a new **date-time object** [LocalDate](https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html) is created, which is viewed as **year-month-day** and does not store time-zone.
 
 ```java
 // WhiskeyController.java
@@ -137,18 +137,18 @@ public String getHomePage(Model model) {
     return "whiskey-home";
 }
 ```
-The controller is almost identical, but `LocalDate.now()` is added to the "myDate" attribute.
+The controller is almost identical, but `LocalDate.now()` is added to the "**myDate**" attribute.
 
-Into the view we can format "myDate" as follows:
+Into the view we can format "**myDate**" as follows:
 
 ```js
 // whiskey-home.html
 
 ${#temporals.format(myDate, 'dd-MMM-yyyy')}
 ```
-The `#temporals` is used to invoke the `.format()` method and format the date.
+The `#temporals` is used to **invoke** the `.format()` method and format the date.
 
-But to use LocalDate we need to add new dependency:
+But to use **LocalDate** we need to add new dependency:
 
 ```js
 <dependency>
@@ -163,7 +163,7 @@ But to use LocalDate we need to add new dependency:
 [slide hideTitle]
 # Strings Operations
 
-When the controller set the value of a string to null:
+When the controller set the value of a string to **null**:
 
 ## Is Empty
 ```java
@@ -177,14 +177,14 @@ public String getHomePage(Model model) {
 }
 ```
 
-We can check in the controller if the string is empty:
+We can check in the view if the string is empty:
 
 ```js
 // whiskey-home.html
 
 <div th:text="${#strings.isEmpty(whiskey)}"></div>
 ```
-Into the view the `.isEmpty()` method returns **true** or **false**, and it does not metter if the string is set to "null" or "String.Empty".
+Into the view the `.isEmpty()` method returns **true** or **false**, and it does not metter if the string is set to "**null**" or "**String.Empty**".
 
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-5.png" /]
 
@@ -200,7 +200,7 @@ public String getHomePage(Model model) {
     return "whiskey-home";
 }
 ```
-This is a similar controller as above, but instead, an empty string returns "Jack Daniels".
+This is a similar controller as above, but instead, an **empty string** returns "Jack Daniels".
 
 ```js
 //whiskey-home.html
@@ -212,7 +212,7 @@ Into the view the `.substring()` method is used, which receive three parameters:
 - Start index
 - End index
 
-As a result, the string is sliced from the first letter to the fourth letter exclusively:
+As a result, the string is **sliced** from the first letter to the fourth letter exclusively:
 
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-6.png" /]
 
@@ -228,7 +228,7 @@ public String getHomePage(Model model) {
     return "whiskey-home";
 }
 ```
-In this example, a list of strings is passed as an attribute to the view.
+In this example, a **list of strings** is passed as an attribute to the view.
 
 ```js
 //whiskey-home.html
@@ -236,12 +236,12 @@ In this example, a list of strings is passed as an attribute to the view.
 <div th:text="${#strings.listJoin(whiskeys, '-')}"></div>
 
 ```
-It is possible to display the collection by using the `.listJoin()` method, which receives two parameters:
+It is possible to **display** the collection by using the `.listJoin()` method, which receives two parameters:
 
 - Current string
 - The delimiter
 
-The `.listJoin()` allowed to format a collection into a single string, separated by chosen delimiter:
+The `.listJoin()` allowed to **format a collection** into a single string, separated by chosen delimiter:
 
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-7.png" /]
 
@@ -256,7 +256,7 @@ public String getHomePage(Model model) {
     return "whiskey-home";
 }
 ```
-In this example, a single string is passed as an attribute to the view.
+In this example, a single string is **passed** as an attribute to the view.
 
 ```js
 //whiskey-home.html
@@ -264,7 +264,7 @@ In this example, a single string is passed as an attribute to the view.
 <div th:text="${#strings.capitalize(whiskey)}"></div>
 
 ```
-It is possible to display the string by using the `.capitalize()` method, which will set the first character to capital letter:
+It is possible to display the string by using the `.capitalize()` method, which will set the first character to **capital letter**:
 
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-8.png" /]
 [/slide]
@@ -272,7 +272,7 @@ It is possible to display the string by using the `.capitalize()` method, which 
 [slide hideTitle]
 # Numbers Processing
 
-Format number to the chosen decimal point is very helpful when displaying an amount of money to the user.
+Format a number to a specific **decimal point** is very helpful when **displaying** an amount of money to the user.
 
 ## Format
 
@@ -287,7 +287,7 @@ public String getHomePage(Model model) {
 }
 
 ```
-In this example, a number is passed as an attribute to the view.
+In this example, a **number** is passed as an attribute to the view.
 
 ```js
 //whiskey-home.html
@@ -320,11 +320,11 @@ public String getHomePage(Model model) {
 </span>
 
 ```
-In this example we can generate a sequence of numbers by using `#numbers.sequence()`, which receives two parameters:
+In this example we can generate a **sequence** of numbers by using `#numbers.sequence()`, which receives two parameters:
 - First number
 - Last number
 
-As a result, a sequence of numbers is displayed to the user:
+As a result, a **sequence of numbers** is displayed to the user:
 
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-10.png" /]
 
@@ -345,7 +345,7 @@ public String getHomePage(Model model) {
 }
 
 ```
-In this example, an array number is passed as an attribute to the view.
+In this example, an **array number** is passed as an attribute to the view.
 
 ```js
 //whiskey-home.html
@@ -354,7 +354,7 @@ In this example, an array number is passed as an attribute to the view.
 
 ```
 
-When we use `#aggregates.sum()`, and as an argument, we pass an array of numbers, as a result the sum of the numbers into the array will be received: 
+When we use `#aggregates.sum()`, and as an **argument**, we pass an array of numbers, the result will be the sum of the numbers into the array: 
 
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-11.png" /]
 [/slide]
@@ -362,9 +362,9 @@ When we use `#aggregates.sum()`, and as an argument, we pass an array of numbers
 [slide hideTitle]
 # Thymeleaf in JavaScript
 
-It is also possible to parametrize scrips, and passing data dynamically to JavaScipt variables into the view.
+It is also possible to **parametrize scrips** and passing data dynamically to JavaScipt variables into the view.
 
-This way we can create cline-side dynamic applications as well as server-side dynamic applications.
+This way we can create **cline-side dynamic applications** as well as server-side dynamic applications.
 
 ```java
 // JSController.java
@@ -387,6 +387,6 @@ In this example, a string is passed as an attribute to the view.
 <script>
 
 ```
-Here the "message" variable is interpolated onto the server, embedded into the script, and assign to a JavaScript variable, which will be dynamically rendered to the client.
+Here the "**message**" variable is **interpolated** onto the server, embedded into the script, and assign to a JavaScript variable "**message**", which will be dynamically rendered to the client.
 
 [/slide]

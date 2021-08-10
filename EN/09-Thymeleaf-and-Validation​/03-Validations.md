@@ -3,13 +3,13 @@
 [slide hideTitle]
 # Spring Validation and Thymeleaf
 
-Validation is commonly used for validating user's input because we should be very careful what type of data is stored in the database.
+Validation is commonly used for **validating user's input** because we should be very careful what type of data is **stored** in the database.
 
-To set validation we should use annotation, which comes from [JavaX](https://docs.oracle.com/javaee/7/tutorial/bean-validation001.htm) validation package.
+To set validation **we should use annotation**, which comes from [JavaX](https://docs.oracle.com/javaee/7/tutorial/bean-validation001.htm) validation package.
 
-It is also possible to create custom validation.
+It is also possible to create **custom validation**.
 
-Setting validation in the model:
+**Setting validation** in the model:
 
 ```java
 // SomeModel.java
@@ -22,11 +22,11 @@ public class SomeModel {
 
 ```
 
-In this example, we use the `@NotNull` attribute, in which the "name" property can not be null, and give a minimum and maximum length.
+In this example, we use the `@NotNull` attribute, in which the "**name**" property **can not be null**, and give a **minimum** and **maximum** length.
 
-If the user's input does not match the requirements, an appropriate error message will be sent.
+If the user's input **does not match the requirements**, an appropriate **error message** will be sent.
 
-Another requirement is to activate the validation into the controller:
+Another requirement is to **activate** the validation into the controller:
 
 ```java
 // SomeController.java
@@ -47,10 +47,10 @@ public class SomeController {
     }
 ```
 
-In this example, we have a controller with "add" HTML form, and a binding model is inserted which is going to be used in the post mapping, as a result, the "add" page is returned.
+In this example, we have a controller with "**add**" form, and a **binding model** is inserted which is going to be used into **post mapping**, as a result, the "**add**" page is returned.
 
 
-When the form successfully fields up and submitted, the model ("bindingModel") arrive into the controller:
+When the form successfully fields up and submitted, the model ("**bindingModel**") arrive into the controller:
 
 ```java
 // SomeController.java
@@ -70,13 +70,13 @@ public String add(@Valid @ModelAttribute("bindingModel") SomeModel bindingModel,
 
 ```
 
-In this example, the Spring Framework automatically maps the "bindingModel", to the "SomeModel" class.
+In this example, the Spring Framework **automatically maps** the "**bindingModel**", to the "**SomeModel**" class.
 
-In order to check if the "bindingModel" contains valid data, we should use the `@Valid` attribute. 
+In order to check if the "**bindingModel**" contains valid data, we should use the `@Valid` **attribute**. 
 
-If a validation error occurs it will be located into the "bindingResult" and by using `.hasErrors()` and validation error could be caught, add to a `.addFlashAttribute()` and for example displayed to the user.
+If a **validation error occurs** it will be located into the "**bindingResult**" and by using `.hasErrors()` a validation error could be caught, add to a `.addFlashAttribute()` and **displayed** to the user.
 
-Note that for `@Valid` attribute to work the following dependency should be used:
+Note that for `@Valid` attribute to work the **following dependency** should be used:
 
 ```js
 <dependency>
@@ -87,7 +87,7 @@ Note that for `@Valid` attribute to work the following dependency should be used
 
 ## Error Rendering
 
-The next step is error rendering into the thymeleaf template:
+The next step is **error rendering** into the thymeleaf template:
 
 ```js
 // add.html
@@ -103,13 +103,13 @@ The next step is error rendering into the thymeleaf template:
 ```
 First, we access the field `th:field` and by using `th:errorclass`, a CSS class is attached for displaying the validation error to the user.
 
-As a result, the user receives very descriptive error:
+As a result, the user **receives** very descriptive error:
 
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-12.png" /]
 
 ## List All Errors
 
-Very often more than one input field is used, then the necessity of displaying the list of errors occurs:
+Very often **more than one** input field is used, then the necessity of **displaying** the list of errors occurs:
 
 ```js
 // add.html
@@ -122,11 +122,11 @@ Very often more than one input field is used, then the necessity of displaying t
 
 ```
 
-We can use a condition `th:if="${#fields.hasErrors('*')}"`, which means if any error ecures, then a foreach loop is created `th:each="err : ${#fields.errors('*')}"`, which will display all errors to the user:
+We can use a condition `th:if="${#fields.hasErrors('*')}"`, which means **if any error ecures**, then a foreach loop is created `th:each="err : ${#fields.errors('*')}"`, which will **display** all errors to the user:
 
 [image assetsSrc="Java-Spring-Fundamentals-Thymeleaf-and-Validation​-13.png" /]
 
-It is possible to check for errors in a specific model:
+It is possible **to check for errors** in a specific model:
 ```js
 // add.html
 
@@ -143,11 +143,11 @@ It is possible to check for errors in a specific model:
 [slide hideTitle]
 # Custom Annotations 
 
-We can also implement custom validation annotations, it is necessary due to complex validation functionality.
+We can also implement **custom validation annotations**, it is necessary due to **complex** validation functionality.
 
-One case where custom validation annotation is useful is when a user tries to register with the same credentials as an existing user in the database.
+One case where custom validation annotation is **useful** is when a user tries to **register** with the same credentials as an already **existing user** in the database.
 
-Another example of custom validation annotation is to check if an input data is valid or not:
+Another **example of custom validation annotation** is to check if an input data is valid or not:
 
 ```java
 // PresentOrFuture.java
@@ -159,9 +159,9 @@ public @interface PresentOrFuture {
 
     String message() default "Invalid Date";
 
-    Class <<?> [] groups() default {};
+    Class <?> [] groups() default {};
 
-    Class <<? extends Payload> [] payload() default {};
+    Class <? extends Payload> [] payload() default {};
 }
 ```
 An interface is created, which has few properties.
