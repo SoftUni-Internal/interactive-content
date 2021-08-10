@@ -230,7 +230,7 @@ let walk = () => {​
 
 You can instantiate parameters with no value​:
 
-```js live
+```js
 function foo(a,b,c){​
  console.log(a);​
  console.log(b);​
@@ -242,7 +242,7 @@ foo(1,2)​
 
 The unused parameters are ignored​:
 
-```js live
+```js
 function foo(a,b,c){​
  console.log(a);​
  console.log(b);​
@@ -276,7 +276,7 @@ Since only declarations are hoisted​, the above example returns `undefined`.
 
 # Hoisting Variables ​
 
-```js live
+```js
 num = 6;​
 
 console.log(num);
@@ -290,7 +290,7 @@ var num;​
 
 # Hoisting Functions​
 
-```js live
+```js
 run(); // running​
 
 function run() {​
@@ -334,7 +334,7 @@ let person = {​
 The in-memory value of a reference type is the ​
 reference itself (a memory address)​:
 
-```js live
+```js
 let x = {name: 'John'};​
 
 let y = x;​
@@ -363,7 +363,7 @@ objects​.
 
 # Object Keys and Values​
 
-```js live
+```js
 let course = { name: 'JS Core', hall: 'Open Source' };​
 
 let keys = Object.keys(course);​
@@ -385,7 +385,7 @@ if (course.hasOwnProperty('name')) {​
 
 The `for-in` loop iterates a specified variable over all the ​enumerable properties of an object​:
 
-```js live
+```js
 ​let obj = {a: 1, b: 2, c: 3};​
 
 for (const key in obj) {​
@@ -403,7 +403,7 @@ for (const key in obj) {​
 
 The **for-of** statement creates a loop iterating over iterable objects​:
 
-```js live
+```js
 let obj = {a: 1, b: 2, c: 3};
 
 for (const key of Object.keys(obj)) {
