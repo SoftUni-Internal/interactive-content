@@ -311,4 +311,6 @@ They show the type of response.
 [slide hideTitle]
 # Fetch(): Demo
 
+Comming Soon
+
 [/slide]
