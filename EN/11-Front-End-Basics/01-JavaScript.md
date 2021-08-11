@@ -229,13 +229,7 @@ It accepts three operands:
 
 Most values that store data are truthy in JavaScript.
 
-For example, a non-empty string is truthy, while an empty one coerces to `false`:
-
-```js live
-console.log('Hello' == true);
-
-console.log('' == true);
-```
+For example, a non-empty string is truthy, while an empty one coerces to `false`.
 
 [/slide]
 
@@ -252,11 +246,11 @@ Function names and parameters use camel case​: `myFunction`
 Contrary to languages like Java and C#, the opening bracket `{` stays at the same line​:
 
 ```js live
-function printDots(count) {​
-  console.log(".".repeat(count));​
-}​
+function printDots(count) {
+  console.log(".".repeat(count));
+}
 
-printDots(5);​
+printDots(5);
 ```
 
 [/slide]
@@ -270,25 +264,25 @@ There are **three** ways to declare functions in JS:
 ## Function declaration​
 
 ```js live
-function bark() {​
- console.log("woof");​
-}​
+function bark() {
+  console.log("woof");
+}
 ```
 
 ## Function expression​
 
 ```js live
-let bark = function (){​
- console.log("woof");​
+let bark = function (){
+  console.log("woof");
 }
 ```
 
 ## Arrow functions​
 
 ```js live
-let bark = () => {​
- console.log("woof");​
-}​
+let bark = () => {
+  console.log("woof");
+}
 ```
 
 [/slide]
@@ -300,11 +294,11 @@ let bark = () => {​
 In JS, we can instantiate parameters without a value​:
 
 ```js live
-function print(num1,num2,num3){​
-  console.log(num1);​
-  console.log(num2);​
-  console.log(num3); 
-}​
+function print(num1,num2,num3){
+  console.log(num1);
+  console.log(num2);
+  console.log(num3);
+}
 
 print(1, 2)​;
 ```
@@ -314,11 +308,11 @@ In the example above, `num3` has a value of **undefined**.
 We can also pass more arguments than expected:
 
 ```js live
-function print(num1,num2,num3){​
-  console.log(num1);​
-  console.log(num2);​
-  console.log(num3); 
-}​
+function print(num1,num2,num3){
+  console.log(num1);
+  console.log(num2);
+  console.log(num3);
+}
 
 print(1, 2, 3, 4, 5)​;
 ```
@@ -334,11 +328,11 @@ In this example, 4 and 5 are going to be ignored.
 Variable and function declarations are put into memory during the compile phase, but stay exactly where you typed them in your code​.
 
 ```js live
-console.log(num); 
+console.log(num);
 
-var num;​
+var num;
 
-num = 6;​
+num = 6;
 ```
 
 Since only declarations are hoisted​, the above example returns `undefined`.
@@ -378,21 +372,21 @@ var city = 'Paris'; // Initializing city with 'Paris'
 Function declarations are hoisted:
 
 ```js live
-sayHello(); // Hello!
+sayHello(); 
 
-function sayHello() {​
-  console.log("Hello! 🙋");​
-};​
+function sayHello() {
+  console.log("Hello! 🙋");
+};
 ```
 
 The same however does not apply to function expressions:
 
 ```js live
-myFunc(); // TypeError: myFunc is not a function
+myFunc(); 
 
 var myFunc = function() {
   console.log('This will not be printed 🙁');
-};
+}
 ```
 
 [/slide]
@@ -407,12 +401,12 @@ JavaScript is based around objects and everything, including functions, can be r
 
 We define a JavaScript object with an object literal:
 
-```js
-let student = {​
-  firstName: "Patricia",​
-  lastName: "Williams",​
+```js live
+let student = {
+  firstName: "Patricia",
+  lastName: "Williams",
   age: 34​
-};​
+};
 
 console.log(student.firstName);
 console.log(student.lastName);
@@ -431,11 +425,11 @@ The in-memory value of a reference type is the ​
 reference itself (a memory address)​:
 
 ```js live
-let x = {name: 'Mark'};​
+let x = {name: 'Mark'};
 
-let y = x;​
+let y = x;
 
-y.name = "Mark";​
+y.name = "Mark";
 
 console.log(x.name);
 ```
@@ -462,13 +456,13 @@ objects​.
 ```js live
 let address = { street: 'Champs-Élysées', number: '259' };
 
-let keys = Object.keys(address);​
+let keys = Object.keys(address);
 
-console.log(keys); 
+console.log(keys);
 
-if (address.hasOwnProperty('street')) {​
-  console.log(address.street); 
-}​
+if (address.hasOwnProperty('street')) {
+  console.log(address.street);
+}
 ```
 
 [/slide]
@@ -481,14 +475,14 @@ The `for-in` loop iterates a specified variable over all the ​enumerable prope
 
 ```js live
 ​let users = {
-  1: 'annedavis82', 
-  2: 'barbara_m2634', 
+  1: 'annedavis82',
+  2: 'barbara_m2634',
   3: 'elijah.593'
-};​
+};
 
-for (const key in users) {​
-  console.log(`users.${key} = ${users[key]}`);​
-}​
+for (const key in users) {
+  console.log(`users.${key} = ${users[key]}`);
+}
 ```
 
 In this example we print information about all enumerable properties of the `users` object.
@@ -503,8 +497,8 @@ The **for-of** statement creates a loop iterating over iterable objects​:
 
 ```js live
 let obj = {
-  a: 1, 
-  b: 2, 
+  a: 1,
+  b: 2,
   c: 3
 };
 
