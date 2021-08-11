@@ -4,13 +4,17 @@
 
 # What is a Responsive Design?​
 
-Responsive Web design is the approach that suggests that design and development should respond to the user’s behavior and environment based on screen size, platform and orientation.
+A responsive design uses technologies like CSS media queries and flexible grids to ensure that a website is both easy to use and aesthetically pleasing on all screen sizes - like a laptop or a smartphone.
 
-The practice consists of a mix of flexible grids and layouts, images and an intelligent use of CSS media queries. 
+It should respond to the user’s behavior and environment based on screen size, platform and orientation.
 
-As the user switches from their laptop to iPad, the website should automatically switch to accommodate for resolution, image size and scripting abilities.
+As a user transitions from their PC to a tablet or smartphone, the website should automatically switch to accommodate for resolution, image size and scripting abilities.
 
 The presentation layers must adjust according to the screen size of the different devices​.
+
+Bootstrap supports many responsive design features.
+
+It also provide a collection of pre-made templates for responsive UI elements.
 
 [/slide]
 
@@ -20,11 +24,11 @@ The presentation layers must adjust according to the screen size of the differen
 
 Bootstrap is the world's most popular front-end component library​.
 
-It is an open source toolkit for developing with HTML, CSS, and JS​.
+It is an open source toolkit for developing with HTML, CSS, and JavaScript​.
 
 It contains many functionalities, including: ​
 
-- Responsive grid system​
+- A responsive grid system​
 
 - Extensive prebuilt components​
 
@@ -36,7 +40,7 @@ It contains many functionalities, including: ​
 
 # Include from a BootstrapCDN – JS​
 
-Be sure to place jQuery and Popper first, as the Bootstrap code depends on them:
+When importing Bootstrap, make sure to include jQuery and Popper first:
 
 ```html
 <script src="https://code.jquery.com/jquery3.3.1.slim.min.js"></script>​
@@ -45,5 +49,7 @@ Be sure to place jQuery and Popper first, as the Bootstrap code depends on them:
 
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>​
 ```
+
+Boostrap should be last, as it depends on the previous two.
 
 [/slide]

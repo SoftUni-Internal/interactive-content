@@ -141,7 +141,7 @@ for (var num = 0; num <= 100; num++) {
 
 JavaScript is a **dynamically** typed language.
 
-When declaring a variable, we are not required to specify its type.
+When declaring a variable, we are not required to explicitly specify its type.
 
 This means that we can assign a number to a variable, and convert it to a string or boolean at a later time:
 
@@ -149,10 +149,10 @@ This means that we can assign a number to a variable, and convert it to a string
 let myVar = 8;
 console.log(myVar);
 
-let myVar = 'hello';
+myVar = 'hello';
 console.log(myVar);
 
-let myVar = true;
+myVar = true;
 console.log(myVar);
 ```
 
@@ -181,17 +181,60 @@ There are the **eight** comparison operators in JavaScript.
 
 # Comparison Operators ​
 
-```js
-console.log(7 == '7'); // true​
+In JavaScript, there are two ways to test equality - `==` and `===`.
 
-console.log(7 === '7'); // false​
+While both operators look similar, they often produce different results.
 
-console.log(5 != '5'); // false​
+When using double equals, we are testing for loose equality.
 
-console.log(5 !== '5'); // true​
+They perform type coercion, meaning that both values will be compared only when converted into a common type.
 
+```js live
+console.log(7 == '7');
+```
 
-console.log(8 ? 2 : 4); // 2
+In the above example, we compare a Number to a String, but receive `true`.
+
+The String '7' is automatically converted to a Number.
+
+However, trying the same comparison with `===` returns `false`:
+
+```js live
+console.log(7 === '7');
+```
+
+The triple-equal operator performs type checking as well, and comparing two different types returns `false`.
+
+The inequality operators work similarly, returning the opposite results:
+
+```js live
+console.log(5 != '5');
+
+console.log(5 !== '5');
+```
+
+The **ternary operator** works similarly to an if-statement.
+
+```js live
+let myBoolean = true;
+
+console.log(myBoolean ? 2 : 4);
+```
+
+It accepts three operands:
+
+- A condition: `myBoolean`
+- An expression to execute if the condition is truthy: `2`
+- An expression to execute if the condition is falsy: `4`
+
+Most values that store data are truthy in JavaScript.
+
+For example, a non-empty string is truthy, while an empty one coerces to `false`:
+
+```js live
+console.log('Hello' == true);
+
+console.log('' == true);
 ```
 
 [/slide]
@@ -208,7 +251,7 @@ Function names and parameters use camel case​: `myFunction`
 
 Contrary to languages like Java and C#, the opening bracket `{` stays at the same line​:
 
-```js
+```js live
 function printDots(count) {​
   console.log(".".repeat(count));​
 }​
@@ -226,7 +269,7 @@ There are **three** ways to declare functions in JS:
 
 ## Function declaration​
 
-```js
+```js live
 function bark() {​
  console.log("woof");​
 }​
@@ -234,7 +277,7 @@ function bark() {​
 
 ## Function expression​
 
-```js
+```js live
 let bark = function (){​
  console.log("woof");​
 }
@@ -242,7 +285,7 @@ let bark = function (){​
 
 ## Arrow functions​
 
-```js
+```js live
 let bark = () => {​
  console.log("woof");​
 }​
@@ -256,7 +299,7 @@ let bark = () => {​
 
 In JS, we can instantiate parameters without a value​:
 
-```js
+```js live
 function print(num1,num2,num3){​
   console.log(num1);​
   console.log(num2);​
@@ -270,7 +313,7 @@ In the example above, `num3` has a value of **undefined**.
 
 We can also pass more arguments than expected:
 
-```js
+```js live
 function print(num1,num2,num3){​
   console.log(num1);​
   console.log(num2);​
@@ -290,9 +333,7 @@ In this example, 4 and 5 are going to be ignored.
 
 Variable and function declarations are put into memory during the compile phase, but stay exactly where you typed them in your code​.
 
-
-
-```js
+```js live
 console.log(num); 
 
 var num;​
@@ -310,7 +351,7 @@ Since only declarations are hoisted​, the above example returns `undefined`.
 
 In JavaScript, we can use variables before they have been declared:
 
-```js
+```js live
 city = 'London'; // Assigning 'London' to city
 
 console.log(city); // Printing city to the console
@@ -322,7 +363,7 @@ In this example, we assign a value to `city` and output it before declaring it.
 
 Keep in mind that **initializations** are not hoisted:
 
-```js
+```js live
 console.log(city); // undefined
 
 var city = 'Paris'; // Initializing city with 'Paris'
@@ -336,7 +377,7 @@ var city = 'Paris'; // Initializing city with 'Paris'
 
 Function declarations are hoisted:
 
-```js
+```js live
 sayHello(); // Hello!
 
 function sayHello() {​
@@ -346,7 +387,7 @@ function sayHello() {​
 
 The same however does not apply to function expressions:
 
-```js
+```js live
 myFunc(); // TypeError: myFunc is not a function
 
 var myFunc = function() {
@@ -362,7 +403,9 @@ var myFunc = function() {
 
 An object is a reference data type, a ​collection of key-value pairs, called fields.
 
-You define (and create) a JavaScript object with an object literal:
+JavaScript is based around objects and everything, including functions, can be regarded as an object.
+
+We define a JavaScript object with an object literal:
 
 ```js
 let student = {​
@@ -370,7 +413,13 @@ let student = {​
   lastName: "Williams",​
   age: 34​
 };​
+
+console.log(student.firstName);
+console.log(student.lastName);
+console.log(student.age);
 ```
+
+In this example, we create a `student` object with three properties: `firstName`, `lastName`, and `age`.
 
 [/slide]
 
@@ -381,7 +430,7 @@ let student = {​
 The in-memory value of a reference type is the ​
 reference itself (a memory address)​:
 
-```js
+```js live
 let x = {name: 'Mark'};​
 
 let y = x;​
@@ -410,7 +459,7 @@ objects​.
 
 # Object Keys and Values​
 
-```js
+```js live
 let address = { street: 'Champs-Élysées', number: '259' };
 
 let keys = Object.keys(address);​
@@ -430,13 +479,19 @@ if (address.hasOwnProperty('street')) {​
 
 The `for-in` loop iterates a specified variable over all the ​enumerable properties of an object​:
 
-```js
-​let users = {1: 'annedavis82', 2: 'barbara_m2634', 3: 'elijah.593'};​
+```js live
+​let users = {
+  1: 'annedavis82', 
+  2: 'barbara_m2634', 
+  3: 'elijah.593'
+};​
 
 for (const key in users) {​
   console.log(`users.${key} = ${users[key]}`);​
 }​
 ```
+
+In this example we print information about all enumerable properties of the `users` object.
 
 [/slide]
 
@@ -446,12 +501,18 @@ for (const key in users) {​
 
 The **for-of** statement creates a loop iterating over iterable objects​:
 
-```js
-let obj = {a: 1, b: 2, c: 3};
+```js live
+let obj = {
+  a: 1, 
+  b: 2, 
+  c: 3
+};
 
 for (const key of Object.keys(obj)) {
   console.log(`obj.${key} = ${obj[key]}`);
 }
 ```
+
+In this example, we print the keys and values of each `obj` property.
 
 [/slide]

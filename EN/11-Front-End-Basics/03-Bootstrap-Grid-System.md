@@ -4,16 +4,22 @@
 
 # Bootstrap Grid System Demo
 
+Bootstrap's grid system is based around containers, rows, and columbs.
+
+It is built on the Flexible Box Module, commonly known as CSS Flexbox.
+
+This is what makes it fully responsive.
+
 ```html
 <div class="container">​
 
   <div class="row">​
 
-    <div class="col-xs m-3">Column one</div>​
+    <div class="col-xs m-3">Column 1</div>​
 
-    <div class="col-xs m-3">Column two</div>​
+    <div class="col-xs m-3">Column 2</div>​
 
-    <div class="col-xs m-3">Column three</div>​
+    <div class="col-xs m-3">Column 3</div>​
 
   </div>​
 
@@ -30,7 +36,21 @@ Rows must be placed in containers​:
 
 - `.container` has one fixed width for each screen size in bootstrap (xs, sm, md, lg) ​
 
+```js
+<div class="container-sm">100% wide until small breakpoint</div>
+<div class="container-md">100% wide until medium breakpoint</div>
+<div class="container-lg">100% wide until large breakpoint</div>
+<div class="container-xl">100% wide until extra large breakpoint</div>
+<div class="container-xxl">100% wide until extra extra large breakpoint</div>
+```
+
 - `.container-fluid` expands to fill the available width​
+
+```js
+<div class="container-fluid">
+  ...
+</div>
+```
 
 [/slide]
 
@@ -62,28 +82,21 @@ Column classes determine how many columns to use on different screen sizes:​
 
 # Color​
 
-Bootstrap has a handful of color utility classes:
+Bootstrap has a handful of color utility classes.
+
+Using them we can express the results of actions, like `danger` or `success`.
 
 ```html
-<p class="text-primary">.text-primary</p>​
-
-<p class="text-secondary">.text-secondary</p>​
-
-<p class="text-success">.text-success</p>​
-
-<p class="text-danger">.text-danger</p>​
-
-<p class="text-warning">.text-warning</p>​
-
-<p class="text-info">.text-info</p>​
-
-<p class="text-light bg-dark">.text-light</p>​
-
-<p class="text-dark">.text-dark</p>​
-
-<p class="text-muted">.text-muted</p>​
-
-<p class="text-white bg-dark">.text-white</p>​
+<p class="text-primary">This text is primary</p>​
+<p class="text-secondary">This text is secondary</p>​
+<p class="text-success">This text symbolizes success</p>​
+<p class="text-danger">This text symbolizes danger</p>​
+<p class="text-warning">This is a warning</p>​
+<p class="text-info">Additional information..</p>​
+<p class="text-light bg-dark">This text is light, with a dark background</p>​
+<p class="text-dark">This text is dark</p>​
+<p class="text-muted">This text is muted</p>​
+<p class="text-white bg-dark">This text is white, with a dark background</p>​
 ```
 
 [/slide]
@@ -95,23 +108,15 @@ Bootstrap has a handful of color utility classes:
 We can easily set the background of an element to any contextual class​:
 
 ```html
-<div class="bg-primary text-white">.bg-primary</div>​
-
-<div class="bg-secondary text-white">.bg-secondary</div>​
-
-<div class="bg-success text-white">.bg-success</div>​
-
-<div class="bg-danger text-white">.bg-danger</div>​
-
-<div class="bg-warning text-dark">.bg-warning</div>​
-
-<div class="bg-info text-white">.bg-info</div>​
-
-<div class="bg-light text-dark">.bg-light</div>​
-
-<div class="bg-dark text-white">.bg-dark</div>​
-
-<div class="bg-white text-dark">.bg-white</div>​
+<div class="bg-primary text-white">primary</div>​
+<div class="bg-secondary text-white">secondary</div>​
+<div class="bg-success text-white">success</div>​
+<div class="bg-danger text-white">danger</div>​
+<div class="bg-warning text-dark">warning</div>​
+<div class="bg-info text-white">info</div>​
+<div class="bg-light text-dark">light</div>​
+<div class="bg-dark text-white">dark</div>​
+<div class="bg-white text-dark">white</div>​
 ```
 
 [/slide]
