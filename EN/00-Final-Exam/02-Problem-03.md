@@ -260,7 +260,7 @@ let VeterinaryClinic = result;
         
         expect(clinic.clinicName).to.be.equal('SoftCare', 'Incorrect clinicName');
         expect(clinic.capacity).to.be.equal(10, 'Incorrect clinicName'); 
-        expect(clinic.clients.length).to.be.equal(0, 'Incorrect clinicName'); 
+        expect(clinic.customers.length).to.be.equal(0, 'Incorrect clinicName'); 
 [/input]
 [output]
 yes
