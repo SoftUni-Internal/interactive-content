@@ -323,11 +323,11 @@ yes
 [/test]
 [test]
 [input]
-//Test 5 - onLeaving - throw an Error Sorry, there is no such client!" 
+//Test 5 - onLeaving - throw an Error Sorry, there is no such customer!" 
         let VeterinaryClinic = result;
         let clinic = new VeterinaryClinic('SoftCare', 10);
         
-        expect(function() {clinic.onLeaving('Jim Jones', 'Tom')} ).to.throw(`Sorry, there is no such client!`);   
+        expect(function() {clinic.onLeaving('Jim Jones', 'Tom')} ).to.throw(`Sorry, there is no such customer!`);   
     
 [/input]
 [output]
