@@ -265,24 +265,30 @@ There are **three** ways to declare functions in JS:
 
 ```js live
 function bark() {
-  console.log("woof");
+  console.log("woof🐶");
 }
+
+bark();
 ```
 
 ## Function expression​
 
 ```js live
-let bark = function (){
-  console.log("woof");
+let meow = function (){
+  console.log("meow🐱");
 }
+
+meow();
 ```
 
 ## Arrow functions​
 
 ```js live
 let bark = () => {
-  console.log("woof");
+  console.log("woof🐩");
 }
+
+bark();
 ```
 
 [/slide]
@@ -300,7 +306,7 @@ function print(num1,num2,num3){
   console.log(num3);
 }
 
-print(1, 2)​;
+print(1, 2);
 ```
 
 In the example above, `num3` has a value of **undefined**.
@@ -314,7 +320,7 @@ function print(num1,num2,num3){
   console.log(num3);
 }
 
-print(1, 2, 3, 4, 5)​;
+print(1, 2, 3, 4, 5);
 ```
 
 In this example, 4 and 5 are going to be ignored.
@@ -389,6 +395,8 @@ var myFunc = function() {
 }
 ```
 
+The above example will return a `TypeError`.
+
 [/slide]
 
 [slide hideTitle]
@@ -405,7 +413,7 @@ We define a JavaScript object with an object literal:
 let student = {
   firstName: "Patricia",
   lastName: "Williams",
-  age: 34​
+  age: 34
 };
 
 console.log(student.firstName);
@@ -440,11 +448,23 @@ console.log(x.name);
 
 # Object Properties​
 
-A property of an object can be explained as a ​
-variable that is attached to the object​.
+A property of an object can be explained as a ​variable that is attached to the object​.
 
-Object properties are basically the same as ordinary ​
-JavaScript variables, except for the attachment to ​
+In this `person` object, we have three properties:
+
+```js live
+let person = {
+  firstName: "James",
+  lastName: "Miller",
+  age: 47
+};
+
+console.log(person.firstName);
+console.log(person.lastName);
+console.log(person.age);
+```
+
+Object properties are basically the same as ordinary JavaScript variables, except for the attachment to ​
 objects​.
 
 [/slide]
@@ -452,6 +472,10 @@ objects​.
 [slide hideTitle]
 
 # Object Keys and Values​
+
+In this example, we print the keys of the `address` object to the console.
+
+The `Object.keys()` method returns an array of all the keys.
 
 ```js live
 let address = { street: 'Champs-Élysées', number: '259' };
@@ -465,6 +489,8 @@ if (address.hasOwnProperty('street')) {
 }
 ```
 
+Then, we output the value of the `address.street` property.
+ 
 [/slide]
 
 [slide hideTitle]
@@ -474,7 +500,7 @@ if (address.hasOwnProperty('street')) {
 The `for-in` loop iterates a specified variable over all the ​enumerable properties of an object​:
 
 ```js live
-​let users = {
+let users = {
   1: 'annedavis82',
   2: 'barbara_m2634',
   3: 'elijah.593'
