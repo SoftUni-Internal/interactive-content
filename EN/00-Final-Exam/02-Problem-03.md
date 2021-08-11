@@ -260,7 +260,7 @@ let VeterinaryClinic = result;
         
         expect(clinic.clinicName).to.be.equal('SoftCare', 'Incorrect clinicName');
         expect(clinic.capacity).to.be.equal(10, 'Incorrect clinicName'); 
-        expect(clinic.clients.length).to.be.equal(0, 'Incorrect clinicName'); 
+        expect(clinic.customers.length).to.be.equal(0, 'Incorrect clinicName'); 
 [/input]
 [output]
 yes
@@ -323,11 +323,11 @@ yes
 [/test]
 [test]
 [input]
-//Test 5 - onLeaving - throw an Error Sorry, there is no such client!" 
+//Test 5 - onLeaving - throw an Error Sorry, there is no such customer!" 
         let VeterinaryClinic = result;
         let clinic = new VeterinaryClinic('SoftCare', 10);
         
-        expect(function() {clinic.onLeaving('Jim Jones', 'Tom')} ).to.throw(`Sorry, there is no such client!`);   
+        expect(function() {clinic.onLeaving('Jim Jones', 'Tom')} ).to.throw(`Sorry, there is no such customer!`);   
     
 [/input]
 [output]
