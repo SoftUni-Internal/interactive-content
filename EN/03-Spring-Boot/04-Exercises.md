@@ -10,7 +10,7 @@ The application is called - **Super Market**.
 
 Look at the pictures below to see what must happen:
 
-- When you've ran the project:
+- When you've run the project:
 
 [image assetsSrc="Java-Spring-Boot-Exercises-1.jpg" /]
 
@@ -108,7 +108,7 @@ Design them in the **most appropriate** way, considering the following **data co
 
 - **name** - a **char sequence** (Cannot be **null**. Must be at least **2 characters**.)
 
-- **price** - a **number** (Mmust be a positive number. Cannot be **null**.)
+- **price** - a **number** (Must be a positive number. Cannot be **null**.)
 
 **NOTE**: Name the entities and their class members, **exactly** in the **format stated** above.
 
@@ -116,7 +116,7 @@ Do not name them in snake case with the dashes, of course.
 
 ## Relationships
 
-Your partners gave you a little hint about the more complex relationships in the database, so that you can implement it correctly.
+Your partners gave you a little hint about the more complex relationships in the database so that you can implement them correctly.
 
 One **Shop** may be in only one **Town**, and one **Town** may have many **Shops**.
 

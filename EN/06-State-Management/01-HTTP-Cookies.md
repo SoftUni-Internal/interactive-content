@@ -3,7 +3,7 @@
 [slide hideTitle]
 # What Are Cookies?
 
-**Cookies** are small pieces of data that are used as storage medium in the browser.
+**Cookies** are small pieces of data that are used as a storage medium in the browser.
 
 They are stored in the form of plain **text** and contain no executable code.
 
@@ -11,7 +11,7 @@ Rather, they hold data, related to a particular client or website.
 
 The maximum size of a cookie is 4KB (kilobytes).
 
-Intitially, they are sent by the **server** to the client.
+Initially, they are sent by the **server** to the client.
 
 The **client** then sends them to the server with each request. 
 
@@ -46,7 +46,7 @@ Once the server receives the information, it encodes the preferences in a cookie
 
 This helps **advertisers** serve more specific ads, catering to a user's interests.
 
-This advertising data is often times sold to bidding corporations, breaching online privacy laws.
+This advertising data is oftentimes sold to bidding corporations, breaching online privacy laws.
 
 [/slide]
 
@@ -55,9 +55,9 @@ This advertising data is often times sold to bidding corporations, breaching onl
 
 The HyperText Transfer Protocol (HTTP) is stateless.
 
-Each time a client retrieves the same webpage, they open a completetely separate connection to the server.
+Each time a client retrieves the same webpage, they open a completely separate connection to the server.
 
-This means that the server cannor keep a record of previous requests, from any given client.
+This means that the server can not keep a record of previous requests, from any given client.
 
 [/slide]
 
@@ -70,7 +70,7 @@ This causes state management **problems**, such as:
 
 - Every newly opened page requires **authentication**, even if requested from the same client
 
-- **Personalization** preferences cannot be stored, causing inconviences, such as displaying prompts to the user on every page load
+- **Personalization** preferences cannot be stored, causing inconveniences, such as displaying prompts to the user on every page load
 
 - Web applications have no sense of **continuity** between different views, as information is not persisted
 
@@ -98,15 +98,15 @@ This enables many features we are already used to, such as:
 
 Once a server receives an HTTP request, it can send one or multiple `Set-Cookie` headers with the response:
 
-```html
+```js
 Set-Cookie: <cookie-name>=<cookie-value>
 ```
 
 The header is simply a name-value pair, separated by an equal sign `=`.
 
-In the following, the servers sends twp `Set-Cookie` headers - one for a token, another - for a dark mode preference:
+In the following, the servers send two `Set-Cookie` headers - one for a token, another - for a dark mode preference:
 
-```html
+```js
 HTTP/2.0 200 OK
 Content-Type: text/html
 Set-Cookie: token=TZVzg80934hg803BGIzPnupOU
@@ -115,9 +115,9 @@ Set-Cookie: dark_mode=enabled
 <!-- Content goes here -->
 ```
 
-With every request, the client send all locally persisted cookies in the following format:
+With every request, the client sends all locally persisted cookies in the following format:
 
-```html
+```js
 GET /myclassroom.html HTTP/2.0
 Host: www.softuni.org
 Cookie: token=TZVzg80934hg803BGIzPnupOU; dark_mode=enabled
@@ -191,7 +191,7 @@ Instead of defining a specific date, it sets the expiration as an interval of se
 
 Security attributes are not key-value pairs, as they lack associated values.
 
-The `Security` flag prevents the browser from sending cookies via **unsecure** connections.
+The `Security` flag prevents the browser from sending cookies via **unsecured** connections.
 
 `HttpOnly` is used to prevent the cookie from being accessed by client-side **scripting** languages.
 
@@ -221,7 +221,7 @@ These are the most common ones:
 
 Cookies are typically stored in a Relational Database Management System (RDBMS), such as SQLite.
 
-To examine your own cookies, you can use [SQLite Browser](http://sqlitebrowser.org/).
+To examine your cookies, you can use [SQLite Browser](http://sqlitebrowser.org/).
 
 Depending on the browser, cookies are store in the following directories:
 
@@ -273,7 +273,7 @@ Then, under the Privacy & Security tab, click on the Cookies and other site data
 
 [image assetsSrc="State-Management-5.png" /]
 
-Here you can customise your preferences, as well as view and delete cookies.
+Here you can customize your preferences, as well as view and delete cookies.
 
 [image assetsSrc="State-Management-6.png" /]
 
@@ -282,15 +282,15 @@ Here you can customise your preferences, as well as view and delete cookies.
 [slide hideTitle]
 # Third Party Cookies
 
-Third party cookies are set from a site different from the currently visited one.
+Third-party cookies are set from a site different from the currently visited one.
 
 For example, developers can embed a "**Tweet**" button in a blog, allowing Twitter to store a cookie on your browser.
 
-This cookie will then be sent with each subsequent request, allowing for customised advertising and interest **tracking**.
+This cookie will then be sent with each subsequent request, allowing for customized advertising and interest **tracking**.
 
 Such cookies are typically hosted by ad servers and social media sites.
 
-They allow for **retracking** prospective customers as they browse through different sites.
+They allow for **re-tracking** prospective customers as they browse through different sites.
 
 Year-over-year, Internet users become more aware of these **privacy** abuses.
 

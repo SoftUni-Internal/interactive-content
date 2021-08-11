@@ -20,7 +20,7 @@ Once a client requests a web resource through the URI the server understands wha
 
 [image assetsSrc="02-Java-Spring-Fund-HTTP(9).png" /]
 
-Usually, web servers work side by side with given application technology, these technologies have contained the server-side code, which is executed when a client requests web resource.
+Usually, web servers work side by side with given application technology, these technologies have contained the server-side code, which is executed when a client requests web resources.
 
 [image assetsSrc="02-Java-Spring-Fund-HTTP(10).png" /]
 

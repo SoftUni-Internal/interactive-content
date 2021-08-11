@@ -6,7 +6,7 @@ In the last lesson when we learned about the OSI Model, we mentioned HTTP and th
 
 HTTP is a text-based protocol that allows us to fetch resources such **HTML documents, pictures, and files** over the internet.
 
-It stands for **Hypertext Transfer Protocol**, and it is used for transferring data and commands across the internet and also applicable in IOT applications.
+It stands for **Hypertext Transfer Protocol**, and it is used for transferring data and commands across the internet and is also applicable in IoT applications.
 
 HTTP is implemented as a **request-response** protocol, which means that when a client wants to receive data from a given server it should ask, or **(request)** it first.
 
@@ -30,7 +30,7 @@ The below diagram shows the different layers in the **OSI Model** we previously 
 
 [image assetsSrc="02-Java-Spring-Fund-HTTP-v2.png" /]
 
-Just as the model suggests, every time that the client wants to communicate with the server it sends a **HTTP Request**.
+Just as the model suggests, every time that the client wants to communicate with the server it sends an **HTTP Request**.
 
 This request, following the different **OSI Model levels** reaches the server, using the same schema for translating back to human-readable **HTTP**.
 
@@ -51,14 +51,14 @@ The basic methods are:
 | **Method** | **Description** |
 | --- | --- |
 | **GET** | Used for retrieving data from the server |
-| **POST** | Used when we send data to the server, for example login information or a new user registration |
+| **POST** | Used when we send data to the server, for example, login information or a new user registration |
 | **PUT** | Same as a post request but with the intention of replacing a resource |
 | **DELETE** | Deletes a resource |
 | **PATCH**  | When applying changes to a resource  |
 | **HEAD**  | This is a GET request that only returns the headers without the actual content  |
 
 
-Each method type has different meaning, but they also share common features.
+Each method type has a different meaning, but they also share common features.
 
 Let us see an example of a typical HTTP request and response situation:
 
@@ -80,9 +80,9 @@ Content-Length: 54​
 Welcome to our site</html>
 ```
 
-`<CRLF>` stands for carriage return and line feed, it indicates a single blank line which is used to mark the end of a request or a response.
+`<CRLF>` stands for carriage return and line feed, it indicates a single blank line that is used to mark the end of a request or a response.
 
-If you  start exploring the different data we send through the network when we communicate with a given website you will learn the methods faster. 
+If you start exploring the different data we send through the network when we communicate with a given website you will learn the methods faster. 
 
 You can explore how this works in your browser's developer tools, this will help you understand the methods faster.
 

@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Layers
 
-The code in every application should be split base on it is functionality, otherwise, navigation through the application could be very complicated. 
+The code in every application should be **split base on it is functionality**, otherwise, navigation through the application could be very complicated. 
 
 The typical Java Spring application organization looks like this:
 

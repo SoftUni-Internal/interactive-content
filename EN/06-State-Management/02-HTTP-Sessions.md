@@ -32,7 +32,7 @@ On each **subsequent** request, the browser sends the Session ID to the server.
 
 The server then sends the requested data.
 
-A session typically ends when the user closes their browser, unless it is stored on the database.
+A session typically ends when the user closes their browser unless it is stored on the database.
 
 In some cases (e.g. in banking applications), Web servers **terminate** a session and assign a new session ID after a few minutes of inactivity.
 
@@ -43,7 +43,7 @@ In some cases (e.g. in banking applications), Web servers **terminate** a sessio
 
 Session and cookies work together to enable **persistence**, otherwise unavailable in HTTP itself.
 
-While cookies are independent, sessions rely on cookies in order to verify the client's identity.
+While cookies are independent, sessions rely on cookies to verify the client's identity.
 
 Persiste is most often implemented using a cookie containing the server **Session ID**.
 
@@ -63,7 +63,7 @@ Each session consists of:
 - **key-value** pairs
     - used to hold user data
     - stored on the server
-    - can cointain much greater amounts of information
+    - can contain much greater amounts of information
 
 [/slide]
 

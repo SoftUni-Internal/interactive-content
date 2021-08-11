@@ -20,7 +20,7 @@ A large file is divided into **packets** and sent through the Internet.
 
 On arrival, the **packets** are brought back together, recreating the original file.
 
-For **packets** to work properly, the carry some **crucial information** with them, called **headers**.
+For **packets** to work properly, they carry some **crucial information** with them, called **headers**.
 
 - `Addresses` - where a **packet** **comes from** and where it is **supposed to go**
 

@@ -3,7 +3,7 @@
 [slide hideTitle]
 # MobiLeLeLe Web Application 
 
-**Here is a link to the** [resources]() **for this task.**
+**Here is a link to the** [resources](https://videos.softuni.org/resources/java/Java-Spring-Fundamentals/04-Spring-Fundamentals-Spring-Introduction-MVC-Lab_MobiLeLeLe_Resources.zip) **for this task.**
 
 MobiLeLeLe is an application in which you register cars, with several properties. 
 

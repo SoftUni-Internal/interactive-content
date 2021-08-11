@@ -242,7 +242,7 @@ When the request is sent, the controller (endpoint) will **receive a model**, wh
 
 ## Fragments
 
-Often we want to **include** in our templates fragments from other templates, most ofthen footers, headers, and menus
+Often we want to **include** in our templates fragments from other templates, most often footers, headers, and menus
 
 Define the fragments available for inclusion, which we can be done by using the `th:fragment` attribute.
 

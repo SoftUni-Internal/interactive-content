@@ -19,9 +19,9 @@ Design them in the **most appropriate** way, considering the following **data co
 ## Company
 - **id** - a **char sequence**
 - **budget** - a **number**, must be a positive number, cannot be **null**
-- **description** - a **very long char sequence**, cannot be **null**, must be **at least 10 characters**
-- **name** - a **char sequence**, must be **unique** and cannot be **null**, must be **between 2 and 10 characters**
-- **town** - a **char sequence**, cannot be **null**, must be **between 2 and 10 characters**
+- **description** - a **very long char sequence**, must be **at least 10 characters**,  cannot be **null**
+- **name** - a **char sequence**, must be **unique**, **between 2 and 10 characters**, cannot be **null**
+- **town** - a **char sequence**, must be **between 2 and 10 characters**, cannot be **null**
 
 ## Employee
 
@@ -31,7 +31,7 @@ Design them in the **most appropriate** way, considering the following **data co
 - **firstName** - a **char sequence**, must be at least **2 characters**, cannot be **null**
 - **jobTitle** - a **char sequence**, cannot be **null**
 - **lastName** - a **char sequence**, must be at least **2 characters**, cannot be **null**
-- **salary** - a **number**, must be a positive number, cannot be **null**
+- **salary** - a **number**, must be a **positive number**, cannot be **null**
 
 **NOTE:** Name the entities and their class members, **exactly** in the **format stated** above. 
 

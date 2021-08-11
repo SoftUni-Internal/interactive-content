@@ -38,7 +38,7 @@ Other companies, such as Google, became even more prominent market leaders in th
 
 # Introduction
 
-The **Internet**, at its core, is a **network** of computers connected to each other.
+The **Internet**, at its core, is a **network** of computers connected.
 
 Using cables, buried **underground** or deep in the **oceans**, it **connects** many **different machines**.
 
@@ -52,7 +52,7 @@ The most common way to **access** the Internet nowadays is via **Wi-Fi** connect
 
 Wi-Fi is also a **family** of **wireless networking** protocols.
 
-It is based on the **802.11** standard, **part of the IEEE 802** set of techincal standards.
+It is based on the **802.11** standard, **part of the IEEE 802** set of technical standards.
 
 An Internet Service Provider (ISP) is a company that **provides** the Internet to its customers.
 
@@ -72,7 +72,7 @@ A network of computers has some **protocols** to establish **communication** bet
 
 These protocols ensure that data is transferred in a **safe and reliable** way.
 
-The **nodes** of a network typically have some form of **identification**, like a **MAC address** or a **IP address**.
+The **nodes** of a network typically have some form of **identification**, like a **MAC address** or an **IP address**.
 
 These unique nodes are responsible for **handling** the **data** - they are the **endpoints** of the network.
 
@@ -82,7 +82,7 @@ For example, a **laptop**, connected to a **PC** with a **USB cable**, makes up 
 
 They can share **images**, **audio**, or **video** files.
 
-By contrast, **data centers** constist of **thousands of devices**, sharing **tons of different information**.
+By contrast, **data centers** consists of **thousands of devices**, sharing **tons of different information**.
 
 [/slide]
 

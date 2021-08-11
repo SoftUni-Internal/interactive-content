@@ -13,7 +13,7 @@ The **MIME type** is used to tell the browser how to interpret and work with giv
 **MIME** defines several concepts:
 
 - Content-Type, e.g. text/html, image/gif, application/pdf.
-    - Content charset, e.g. utf-8, ascii, windows-1251
+    - content charset, e.g. utf-8, ascii, windows-1251
 - The Content disposition, e.g. attachment; filename=logo.jpg
 - Multipart message (if you send several resources in a single document).
 
