@@ -2,7 +2,7 @@
 
 # Restaurant
 
-[code-task title="Restaurant" taskId="Html-Css-Exam-Restaurant" executionType="tests-execution" executionStrategy="html-and-css-zip-file" requiresInput="false"]
+[code-task title="Restaurant" taskId="Html-Css-Exam-Restaurant" executionType="save-file-and-do-nothing" executionStrategy="do-nothing" requiresInput="false"]
 
 [code-upload allowedMemory="30" /]
 
@@ -22,18 +22,6 @@ Download the resources from [here](https://videos.softuni.org/resources/HTML-CSS
 * Pixel-perfect implementation is **NOT** required
 
 [/task-description]
-
-[tests]
-[test open]
-[input]
-let title = (document.title);
-expect(title).to.be.equal('Semantic Tags', "Incorrect title name.")
-[/input]
-[output]
-yes
-[/output]
-[/test]
-[/tests]
 [/code-task]
 
 [/slide]
