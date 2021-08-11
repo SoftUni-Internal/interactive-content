@@ -9,9 +9,7 @@
 **1. REST API**
 
 - What a RESTful API is
-
 - The REST architectural constraints
-
 - HTTP Requests
 
 **2. REST with Spring**

@@ -1,7 +1,41 @@
-# Coming Soon
+# DOM Manipulations
 
 [slide hideTitle]
 
-# Coming Soon
+# Selection of Elements
+
+
+
+[/slide]
+
+[slide hideTitle]
+
+# CSS Selectors
+
+
+
+[/slide]
+
+[slide hideTitle]
+
+# DOM Manipulation
+
+
+
+[/slide]
+
+[slide hideTitle]
+
+# Creating DOM Elements
+
+
+
+[/slide]
+
+[slide hideTitle]
+
+# Deleting DOM Elements
+
+
 
 [/slide]

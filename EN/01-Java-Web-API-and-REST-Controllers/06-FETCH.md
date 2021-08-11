@@ -1,7 +1,15 @@
-# Coming Soon
+[slide hideTitle]
+
+# Fetch API​
+
+
+
+[/slide]
 
 [slide hideTitle]
 
-# Coming Soon
+# Fetch API​: Demo
+
+
 
 [/slide]

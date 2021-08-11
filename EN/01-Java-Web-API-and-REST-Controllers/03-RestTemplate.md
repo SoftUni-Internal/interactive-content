@@ -1,7 +1,32 @@
-# Coming Soon
+[slide hideTitle]
+
+# Rest Template
+
+
+
+[/slide]
+
 
 [slide hideTitle]
 
-# Coming Soon
+# HTTP GET Method Example ​
+
+
+
+[/slide]
+
+[slide hideTitle]
+
+# HTTP POST ​
+
+
+
+[/slide]
+
+[slide hideTitle]
+
+# HTTP PUT and HTTP DELETE​
+
+
 
 [/slide]

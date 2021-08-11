@@ -4,7 +4,7 @@
 
 # RESTful Design
 
-An API, short for Application Programming Interface, is a software intermediary that allows us to access third-party functionality in our applications,
+An API, short for Application Programming Interface, is a software intermediary that allows us to access third-party functionality in our applications.
 
 A RESTful API follows specific architectural constraints, such as abstracting the underlying third-party logic from developers.
 
@@ -13,5 +13,53 @@ While REST is not an official protocol or standard, RESTful APIs tend to have si
 APIs can be accessed through different communication protocols.
 
 They are most often accessed over HTTPS, and accept JSON both as a request and response payload.
+
+[/slide]
+
+[slide hideTitle]
+
+# RESTful API
+
+
+
+[/slide]
+
+[slide hideTitle]
+
+# SOAP and RPC
+
+
+
+[/slide]
+
+[slide hideTitle]
+
+# HTTP GET
+
+
+
+[/slide]
+
+[slide hideTitle]
+
+# HTTP POST
+
+
+
+[/slide]
+
+[slide hideTitle]
+
+# HTTP PUT
+
+
+
+[/slide]
+
+[slide hideTitle]
+
+# HTTP DELETE
+
+
 
 [/slide]

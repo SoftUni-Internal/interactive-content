@@ -1,7 +1,25 @@
-# Coming Soon
+# Handling Events
 
 [slide hideTitle]
 
-# Coming Soon
+# JavaScript Event Handling
+
+
+
+[/slide]
+
+[slide hideTitle]
+
+# Event Types in DOM API​
+
+
+
+[/slide]
+
+[slide hideTitle]
+
+# Multiple Events ​
+
+
 
 [/slide]

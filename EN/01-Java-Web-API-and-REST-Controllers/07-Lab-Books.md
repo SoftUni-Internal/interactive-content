@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# List All Books 
+# Problem with Solution: List All Books 
 
 Download the skeleton for this lab [here]().
 
@@ -14,7 +14,7 @@ Add an `AJAX` call that:
 
 [slide hideTitle]
 
-# Create a Book 
+# Problem with Solution: Create a Book 
 
 Add an **HTML form** with a `[Submit]` button for **adding a new book**. 
 
@@ -24,7 +24,7 @@ When the button is pressed, create a new book using the REST API with an AJAX re
 
 [slide hideTitle]
 
-# Edit a Book 
+# Problem with Solution: Edit a Book 
 
 Implement the "**Edit a Book**" functionality. 
 
@@ -36,7 +36,7 @@ By clicking the `[Edit]` button, the **book data** should be **updated** on the 
 
 [slide hideTitle]
 
-# Delete a Book 
+# Problem with Solution: Delete a Book 
 
 Implement the **"Delete a Book"** functionality. 
 
@@ -48,7 +48,7 @@ Clicking on it should delete the book on the server side with an `AJAX` **reques
 
 [slide hideTitle]
 
-# Add Tags for Each Book 
+# Problem with Solution: Add Tags for Each Book 
 
 You should be able to **add, edit and delete** tags for every book. 
 
