@@ -1,1 +1,0 @@
-# Thymeleaf Validation - Coming Soon
