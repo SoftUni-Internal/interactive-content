@@ -311,4 +311,6 @@ Acestea arată tipul de răspuns.
 [slide hideTitle]
 # Fetch(): Demo
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Applications/03.JS-Applications-Rest-Services-&-AJAX/EN/Fetch-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [/slide]
