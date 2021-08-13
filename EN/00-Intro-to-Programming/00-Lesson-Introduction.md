@@ -20,7 +20,7 @@
 
 **4. Creating and Running Console Apps**
 
-**5. What are **Variables**
+**5. What are Variables**
 
 **6. Data Types definition**
 
