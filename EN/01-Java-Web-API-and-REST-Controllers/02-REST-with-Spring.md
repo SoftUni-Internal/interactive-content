@@ -4,7 +4,18 @@
 
 # Response Body On MVC Controller​
 
+The `@ResponseBody` annotation is used to inform a controller that the object returned is automatically serialized into JSON and passed back into the HttpResponse object:
 
+```java
+@GetMapping('/info/{id}')​
+@ResponseBody​
+public User getInfo(@PathVariable Long id){​
+  
+  // Find the user...
+
+  return user;​
+}​
+```
 
 [/slide]
 
