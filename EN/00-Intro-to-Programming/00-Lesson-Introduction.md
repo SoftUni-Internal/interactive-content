@@ -4,8 +4,6 @@
 
 # Lesson Content
 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/00-intro-programming/EN/JAVA-EN-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
 ## In this lesson you will learn:
 
 **1. What is Coding**
@@ -22,7 +20,20 @@
 
 **4. Creating and Running Console Apps**
 
+**5. What are **Variables**
 
-**5. Practical Coding Exercises**
+**6. Data Types definition**
+
+**7. Statements (commands)**
+
+- How to read User **Input** and Formatting **Output**
+
+**8. Working with arithmetical operations**
+
+**9.Expressions and Statements**
+
+- How to use Expressions
+
+**10. Practical Coding Exercises**
 
 [/slide]
