@@ -104,9 +104,30 @@ When the view is rendered to the browser, "Hello, Peter!" is visualized as a fin
 [slide hideTitle]
 # Interceptor
 
+Just like filters interceptors have a similar model they intercept requests, but both the request and response just like we do a filter.
+
+The difference between the two is interceptors have been designed to manipulate the entities, to manipulate the input and output streams.
+
+This way it is different from filters in the sense that filters manipulate the header information or metadata information while interceptors manipulate the actual body of the request.
+
+In the response there are two kinds of interceptors:
+
+- Reader interceptor
+- Writer interceptor 
+
+We have one to read and one to write but what's different here is what's being read from and what's being written to.
+
+In the case of filters, it is the request information and the responds information in the case of interceptors it is the request body and the response body.
+
 ## Interceptor Diagram
 
 [image assetsSrc="Java-Spring-Advanced-Spring-Security-2.png" /]
+
+The diagram shows what is the difference between filters and interceptors.
+
+The application runs in a web container, when a request is sent, first, it goes through a filter, then the request continues into the Spring MVC dispatcher where the interceptors take over.
+
+When the request reaches its endpoint (controller), the response is sent, which again goes through interceptors and filters.
 
 [/slide]
 
@@ -128,9 +149,11 @@ public class LogingInteceptor implements HandlerInterceptor {
 
 ```
 
+The class "LogingInteceptor" implement "HandlerInterceptor" interface, where we have a method "preHandle", which receive "request", "response", "filterChain", "handler" as a parameters.
+
 ## Register Interceptor in Configuration
 
-To use interceptors, we need to register them 
+When creating interceptors it is important to register them into the Spring context:
 
 
 ```java
@@ -151,4 +174,7 @@ public class WebConfiguration implements WebMvcConfigurer {
 }
 ```
 
+To register interceptor, MVC web configuration should be set, then the "addInterceptors" method should be overridden, which receives the `InterceptorRegistry` as an argument.
+
+Into this "registry", the interceptor should be explicitly added.
 [/slide]
