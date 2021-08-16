@@ -20,25 +20,25 @@ They are most often accessed over HTTPS, and accept JSON both as a request and r
 
 # RESTful API
 
-For an API to be considered RESTful, it must follow the six guiding principles, introduced in 2000 by
+For an API to be considered RESTful, it must follow the six guiding principles, introduced in 2000 by Roy Fielding.
 
-# Client-Server 
+## Client-Server 
 
 For the duration of an HTTP request, there must be one client, requesting a resourse, and one server, returning a response. 
 
-# Statelessness
+## Statelessness
 
 A RESTful API is not allowed to store information about the state of another machine during the communication process.
 
 Each request from a client to a server is independent and must be treated as though it was the first request the server has ever seen from that client.
 
-# Cacheability
+## Cacheability
 
 Response messages from the server to the client are explicitly labeled as cacheable or non-cacheable.
 
 This way, responses can be cached by the client if the information on the server has not been changed since the last request.
 
-# Uniform Interface
+## Uniform Interface
 
 RESTful architectures must have a uniform interface between all clients and servers.
 
@@ -46,15 +46,15 @@ For example, a server must not require a different way of accessing data if a cl
 
 Gaining access to these endpoints is the same for any machine trying to access this information.
 
-# Layered System
+## Layered System
 
-A layered system means that a client can have access to endpoint that relies on other endpoints without having to understand all of the underlying implementations.
+A layered system means that a client can have access to an endpoint that relies on other endpoints without having to understand all of the underlying implementations.
 
 If client A wants to communicate with server B and that server goes out to Google or some other database in order to generate a response, client A should not have to accommodate for any other technologies besides accessing server B's endpoint.
 
 Layering allows very complicated tasks to be completed without having to understand all of the underlying complexities that are required to generate the response.
 
-# Code on Demand
+## Code on Demand
 
 Code on Demand is an optional constraint for RESTful applications, but it opens a possibility for code like JavaScript, for example, to be sent off to the client for execution.
 
@@ -64,15 +64,37 @@ Code on Demand is an optional constraint for RESTful applications, but it opens 
 
 # SOAP and RPC
 
+## SOAP
+
+In 1999, a year after XML-RPC was created, Microsoft introduced the Simple Object Access Protocol (SOAP).
+
+Every SOAP message starts and ends with an `Envelope`.
+
+Then comes the `Header` - an optional subelement with application-related specifics or processing requirements.
+
+The `Body` contains the request or response, along with a `Fault` block that can be used to display an error message.
+
+The WS-Security extension encrypts SOAP messages and makes them readable only by the recipient, by using a security token.
+
+SOAP operations can also chain messages, keeping the server aware of the previous request.
+
+## RPC
+
 The earliest and simplest form of API was Remote Procedure Call (RPC). 
 
-Since the client and server use different call parameters, the must be converted to be understood on the other side.
+Since the client and server use different call parameters, they must be converted to be understood on the other side.
 
-This conversion is performed by dedicated pieces of code, calles STUBs.
+This conversion is performed by dedicated pieces of code, calles stubs.
 
-When a client calls a server via RPC API, the client STUB converts the parameters used in the function call.
+When a client calls a server via RPC API, the client stub converts the parameters used in the function call.
 
-Then, the server deconverts them.
+Then, а server stub deconverts them and executes the function.
+
+The same happens with the response, but in reverse order.
+
+XML-RPC, however, is unable to distinguish between different data types.
+
+This forces developers to include additional metadata, like `id` and `type` parameters.
 
 [/slide]
 
@@ -80,7 +102,7 @@ Then, the server deconverts them.
 
 # HTTP GET
 
-The HTTP GET method is used by the client to retrieve a representation of a resource.
+The HTTP GET method is used by the client to retrieve a representation of a resource in a REST API.
 
 - Retrieving a list of users
   
@@ -127,8 +149,7 @@ When the resouce is created successfully, the server returns a status code of 20
 
 Once the server receives the request payload, it is responsible for associating the new resource to the parent by assigning it with an ID and resource URI:
 
-
-```
+```js
 GET https://api.softuni.org/users/494574387683
 ```
 

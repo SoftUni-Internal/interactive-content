@@ -4,7 +4,7 @@
 
 # Problem with Solution: List All Books 
 
-Download the skeleton for this lab [here]().
+Download the skeleton for this lab [here](https://videos.softuni.org/resources/java/Java-Spring-Advanced/Java-Web-API-Books-Lab-Resources.zip).
 
 Add an `AJAX` call that:
 - takes **all books** from your application as a `JSON` object 
