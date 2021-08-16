@@ -32,7 +32,7 @@ The data is in the form of **INSERT** statement queries.
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
 | **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key AUTO_INCREMENT** | 
-| **name** | A **string** containing a maximum of **10 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
+| **name** | A **string** containing a maximum of **100 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
 
 ## Categories
 
