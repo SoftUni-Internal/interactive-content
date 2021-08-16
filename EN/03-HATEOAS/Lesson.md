@@ -1,1 +1,1 @@
-# HATEOAS - Coming Soon
+# HATEOAS

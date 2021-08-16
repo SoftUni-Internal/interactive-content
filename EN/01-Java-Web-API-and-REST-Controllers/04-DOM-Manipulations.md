@@ -52,14 +52,14 @@ There are four main methods to manipulate the content of HTML elements through t
 
 ## innerHTML
 
-We use the `.innerHTML()` method to change the text of an element:
+We use the `innerHTML` property to set the text of an element:
 
-```js live
+```js
 const myDiv = document.createElement('div');
-console.log(myDiv);
+console.log(myDiv); // <div></div>
 
 myDiv.innerHTML = "Welcome to my site 👨🏼‍💻"
-console.log(myDiv);
+console.log(myDiv);// <div>Welcome to my site 👨🏼‍💻</div>
 ```
 
 In this example, we create a new div element and set its innerHTML value to a string.

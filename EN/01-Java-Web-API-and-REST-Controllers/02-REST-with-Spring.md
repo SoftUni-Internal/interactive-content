@@ -56,8 +56,8 @@ It handles GET requests for `members/{id}` by returning an instance of the `Memb
 @GetMapping("members/{id}")​
 @ResponseStatus(HttpStatus.OK)​
 public MemberInfo getInfo(@PathVariable Long id){​
-  //MemberInfo gameInfo = gameService.getInfoById(id);​
-  return gameInfo;​
+  //MemberInfo memberInfo = homeService.getInfoById(id);​
+  return memberInfo;​
 }​
 ```
 
