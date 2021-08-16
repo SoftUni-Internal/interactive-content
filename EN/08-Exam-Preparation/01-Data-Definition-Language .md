@@ -29,7 +29,7 @@ You have been tasked to create the tables in the database by the following model
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
 | **id** | **Integer**, from **1 to 2 147 483 647**. | **Primary Key** | 
-| **username** | A **string** containing a maximum of **30 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted, **UNIQUE** values. |
+| **username** | A **string** containing a maximum of **30 characters**. Unicode is **NOT** needed. | **NULL is NOT** permitted. |
 |**password**|A **string** containing a maximum of **30 characters**. Unicode is **NOT** needed.|**NULL is NOT** permitted.|
 |**email**|A **string** containing a maximum of **50 characters**. Unicode is **NOT** needed.|**NULL is NOT** permitted.|
 |**gender**|**Exactly 1 character - M or F**|**NULL is NOT** permitted.|
@@ -69,8 +69,8 @@ You have been tasked to create the tables in the database by the following model
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
-| **user_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table **users**. **NULL is NOT** permitted. | 
-| **photo_id** | **Integer**, from **1 to 2 147 483 647**. | Relationship with table **photos**. **NULL is NOT** permitted.|
+| **user_id** | **Integer**, from **1 to 2 147 483 647**. |**Primary Key,** relationship with table **users**. **NULL is NOT** permitted. | 
+| **photo_id** | **Integer**, from **1 to 2 147 483 647**. |**Primary Key,** relationship with table **photos**. **NULL is NOT** permitted.|
 
 
 ## Likes
@@ -183,8 +183,8 @@ MUL
 MUL
 PRI
 PRI
-MUL
-MUL
+PRI
+PRI
 [/output]
 [/test]
 [test]
@@ -270,8 +270,8 @@ PRI
 PRI
 PRI
 PRI
-MUL
-MUL
+PRI
+PRI
 MUL
 MUL
 MUL
