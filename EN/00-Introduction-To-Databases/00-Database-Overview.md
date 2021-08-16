@@ -69,8 +69,8 @@ You have been tasked to create the tables in the database by the following model
 
 | **Column Name** |**Data Type** |**Constraints** |
 | --- | --- |--- | 
-| **user_id** | **Integer**, from **1 to 2 147 483 647**. |**Primary Key AUTO_INCREMENT,** Relationship with table **users**. **NULL is NOT** permitted. | 
-| **photo_id** | **Integer**, from **1 to 2 147 483 647**. |**Primary Key AUTO_INCREMENT.** Relationship with table **photos**. **NULL is NOT** permitted.|
+| **user_id** | **Integer**, from **1 to 2 147 483 647**. |**Primary Key,** relationship with table **users**. **NULL is NOT** permitted. | 
+| **photo_id** | **Integer**, from **1 to 2 147 483 647**. |**Primary Key,** relationship with table **photos**. **NULL is NOT** permitted.|
 
 
 ## Likes
