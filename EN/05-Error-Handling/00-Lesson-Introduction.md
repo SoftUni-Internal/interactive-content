@@ -1,7 +1,10 @@
-# Coming Soon
+# Lesson Introduction
 
 [slide hideTitle]
 
-# Coming Soon
+# Lesson Content
+
+## In this lesson you will learn:
+
 
 [/slide]
