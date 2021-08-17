@@ -2,7 +2,7 @@
 
 # HAL Explorer
 
-Begin by adding the HАL Explorer to your project:
+Begin by adding the HАL Explorer as a Maven dependency:
 
 ```xml
 <dependency>​

@@ -45,7 +45,7 @@ If there is a response, it is unmarshalled to the provided `classType` and retur
 `getForEntity` retrieves a representation as ResponseEntity by doing a GET on the URL​.
 
 ```java
-URI uri = new URI("http://localhost:8080/employee");
+URI uri = new URI("http://bdschool.com/api/student");
 
 RestTemplate restTemplate = new RestTemplate();
 ResponseEntity<Employee[]> responseEntity = restTemplate.getForEntity(uri, Employee[].class);
@@ -53,7 +53,7 @@ ResponseEntity<Employee[]> responseEntity = restTemplate.getForEntity(uri, Emplo
 
 - `exchange(requestEntity, responseType)​`
 
-Executes the specified request and returns the response as a ResponseEntity​.
+`exchange` executes the specified request and returns the response as a `ResponseEntity​`.
 
 - `execute(url, method, requestCallback, responseExtractor)​`
 
@@ -76,22 +76,30 @@ It accepts four parameters:
 The `postForObject` method creates a new resource by posting the given object to a given url or URI template using the HTTP POST method. 
 
 ```java
-public void addEmployeeDemo() throws URISyntaxException {
+public void addStudent() throws URISyntaxException {
 	HttpHeaders headers = new HttpHeaders();
 	headers.setContentType(MediaType.APPLICATION_JSON);
 
-	URI uri = new URI("http://localhost:8080/employee");
-	Employee objEmp = new Employee();
-	objEmp.setName("Krishna");
-	objEmp.setCity("Noida");
+	URI uri = new URI("http://bdschool.com/api/students");
+	Student objStd = new Student();
+	objStd.setName("James");
+	objStd.setCity("Boston");
 
-	HttpEntity<Employee> httpEntity = new HttpEntity<>(objEmp, headers);
+	HttpEntity<Student> httpEntity = new HttpEntity<>(objStd, headers);
 
 	RestTemplate restTemplate = new RestTemplate();
-	Employee employee = restTemplate.postForObject(uri, httpEntity, Employee.class);
+	Student student = restTemplate.postForObject(uri, httpEntity, Student.class);
 
-	System.out.println("Id: " + employee.getEmpId());		
+	System.out.println("ID: " + student.getStdId());		
 } 
+
+---------
+
+{
+  "id": 1,
+  "name": James,
+  "city": Boston,
+}
 ```
 ​
 - `postForEntity(url, request, responseType)​`

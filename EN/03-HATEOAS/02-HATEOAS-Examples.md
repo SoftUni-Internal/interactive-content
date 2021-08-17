@@ -4,10 +4,10 @@
 
 # A Response Without HATEOAS​
 
-Many APIs return the requested data as a response, without providing additional metadata or backwards compatibility.
+Many APIs return the requested data as a response, without providing additional metadata, causing many inconveniences, and in many cases - stopping applications from operating properly.
 
 ```js
-GET https://api.twitter.com/users/2384935
+GET https://www.mysocial.com/api/users/2384935
 
 ---------------------------------
 
@@ -18,6 +18,16 @@ GET https://api.twitter.com/users/2384935
  "age": 32 ​
 }​
 ```
+
+In this example we retrieve a user representation.
+
+While we receive the required response payload, we are not provided with the possible endpoints, for example.
+
+This can become an issue when URIs get updated, for instance.
+
+Many developers may not be aware of this update, causing them to receive errors, such as 404 (Not Found).
+
+Another possible problem is field renaming.
 
 [/slide]
 
@@ -32,10 +42,10 @@ GET https://api.twitter.com/users/2384935
   "age": 32, 
   "username" : "peteb.439",​
   "_links": { ​
-    "self": {"href":"http://localhost:8080/students/2"},​
-    "delete": {"href":"http://localhost:8080/students/delete/2"},​
-    "update": {"href":"http://localhost:8080/students/update/2"},​
-    "orders": {"href":"http://localhost:8080/orders/allByStudentId/2"}​
+    "self": {"href":"http://www.mysocial.com/api/users/2384935"},​
+    "delete": {"href":"http://www.mysocial.com/api/users/delete/2384935"},​
+    "update": {"href":"http://www.mysocial.com/api/users/update/2384935"},​
+    "posts": {"href":"http://www.mysocial.com/api/posts/allByUserId/2384935"}​
   } ​
 }​
 ```

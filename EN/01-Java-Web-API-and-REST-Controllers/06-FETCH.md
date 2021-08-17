@@ -17,7 +17,7 @@ fetch(url)
 
 The response of a `fetch()` is a Stream object that can either `resolve` or `reject`.
 
-We typically chain multiple promises to process data, as well as handle any errors that may occur.
+We typically chain multiple promises to process and visualize data, as well as handle any errors that may occur.
 
 [/slide]
 
@@ -51,7 +51,7 @@ public Object fetchData() {​
 }​
 ```
 
-
+Let us create our `Product` class:
 
 ```java
 public class Product {​
@@ -89,6 +89,8 @@ document.querySelector('.data-container').remove()}); // Clear the data
 </script>
 ```
 
+When clicking on the `fetch-button`, the data must be fetched, converted to JSON, and visualised:
+
 ```js
 document.querySelector('#fetch-button').addEventListener('click',() => {​
     fetch('http://localhost:8000/fetch') // Fetch the data (GET request)​
@@ -110,5 +112,7 @@ document.querySelector('#fetch-button').addEventListener('click',() => {​
 
 }));​
 ```
+
+For each product, we display the name, price, and barcode.
 
 [/slide]
