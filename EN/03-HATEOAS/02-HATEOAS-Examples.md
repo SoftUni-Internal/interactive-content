@@ -4,11 +4,18 @@
 
 # A Response Without HATEOAS​
 
-```json
+Many APIs return the requested data as a response, without providing additional metadata or backwards compatibility.
+
+```js
+GET https://api.twitter.com/users/2384935
+
+---------------------------------
+
 {​
- "id": 2,​
- "name" : "Peter",​
- "age": 12 ​
+ "id": 2384935,​
+ "name" : "Peter Brooks",​
+ "username" : "peteb.439"
+ "age": 32 ​
 }​
 ```
 
@@ -20,9 +27,10 @@
 
 ```json
 { 
-  "id": 2, 
-  "name": "Peter", 
-  "age": 12, ​
+  "id": 2384935, 
+  "name": "Peter Brooks", 
+  "age": 32, 
+  "username" : "peteb.439",​
   "_links": { ​
     "self": {"href":"http://localhost:8080/students/2"},​
     "delete": {"href":"http://localhost:8080/students/delete/2"},​

@@ -2,17 +2,30 @@
 
 # Fetch API​
 
-Fetch provides a generic definition of Request and Response objects​.
+The `fetch` JavaScript method provides a generic definition of Request and Response objects​.
 
-The Fetch API allows us to make network requests similar to XMLHttpRequest (XHR).​
+It allows us to make network requests similar to XMLHttpRequest (XHR).​
 
-The response of a fetch() is a Stream object. ​
+```js
+fetch(url)
+    .then(res => {
+        // here we handle the response data
+    }).catch(err => {
+        // here we handle request errors
+    });
+```
+
+The response of a `fetch()` is a Stream object that can either `resolve` or `reject`.
+
+We typically chain multiple promises to process data, as well as handle any errors that may occur.
 
 [/slide]
 
 [slide hideTitle]
 
 # Fetch API​: Demo
+
+Now let us demonstrate how to use `fetch`.
 
 ```java
 // HomeController.java
@@ -38,6 +51,8 @@ public Object fetchData() {​
 }​
 ```
 
+
+
 ```java
 public class Product {​
     private String name;​
@@ -51,7 +66,7 @@ public class Product {​
 
 Now let us head to the view​.
 
-There is no need for a separate .js file for one-time use​.
+We can directly embed a `<script>` element, as there is no need for a separate JavaScript file for one-time use​.
 
 ```html
 <!-- index.html -->
