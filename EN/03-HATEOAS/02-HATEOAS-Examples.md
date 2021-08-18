@@ -9,7 +9,7 @@ Many APIs return the requested data as a response, without providing additional 
 ```js
 GET https://www.mysocial.com/api/users/2384935
 
----------------------------------
+----------------------------------------------
 
 {​
  "id": 2384935,​
@@ -19,7 +19,7 @@ GET https://www.mysocial.com/api/users/2384935
 }​
 ```
 
-In this example we retrieve a user representation.
+In this example we retrieve a user representation in a JSON format.
 
 While we receive the required response payload, we are not provided with the possible endpoints, for example.
 
@@ -66,7 +66,23 @@ They may try passing in the older `name` parameter:
 curl -X POST -d '{"name": "James Peterson", "username":"james_p8454", "age":58}'
 ```
 
-These are just some of the issues that come with API versioning.
+If we adapt the setter to accept the old `name` parameter, we can make the change backwards-compatible:
+
+```java
+public void setName(String name) { 
+  String[] parts = name.split(" ");
+  this.firstName = parts[0];
+  this.lastName = parts[1];
+}
+
+public String getName() { 
+  return this.firstName + " " + this.lastName;
+}
+```
+
+This way, we can handle new clients, while maintaining support for older ones.
+
+However, these is just a part of the issues that come with API versioning.
 
 There are three versioning approaches when it comes to developing an API:
 
@@ -80,13 +96,19 @@ There are three versioning approaches when it comes to developing an API:
   * the best implementation
   * uses HATEOAS
 
-APIs should be developed in a continous manner, without focusing as much on version numbers.
+APIs should be developed in a continuous manner, without focusing as much on version numbers.
 
 [/slide]
 
 [slide hideTitle]
 
 # A Response Using HATEOAS​
+
+When starting to work with an API, we are typically required to visit a documentantion page.
+
+A more intuitive approach is to describe all controls right in the API.
+
+When navigating a website, for example, we can navigate to different pages by clicking on hyperlinks, instead of having to know each URL.
 
 ```json
 { 
@@ -102,5 +124,15 @@ APIs should be developed in a continous manner, without focusing as much on vers
   } ​
 }​
 ```
+
+When using HATEOAS, we receive `_links` alongside the payload.
+
+They describe the reltionship between the User and their related resources.
+
+The keys (e.g. `self`, `delete`, `update`) describe the action that is performed with the link.
+
+Keys must be intuitively names, as the mark a link's purpose.
+
+The `href` is the URL used to perform the action.
 
 [/slide]
