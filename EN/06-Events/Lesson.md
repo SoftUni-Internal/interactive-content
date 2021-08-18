@@ -1,1 +1,1 @@
-# Events - Coming Soon
+# Events
