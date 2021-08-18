@@ -13,7 +13,7 @@ An API that uses HATEOAS returns a collection of API endpoints, along with the r
 These endpoints can then be used by the client to further interact with the API.
 
 ```java
-"update": {"href":"http://localhost:8080/students/update/2"},
+"update": {"href":"http://localhost:8080/students/update/2"}
 ```
 
 As they also include the accompanying HTTP request, they can also help us determine our pemissions (whether we are authorised to perform an operation/request a resource).
