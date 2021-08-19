@@ -106,7 +106,7 @@ APIs should be developed in a continuous manner, without focusing as much on ver
 
 When starting to work with an API, we are typically required to visit a documentantion page.
 
-A more intuitive approach is to describe all controls right in the API.
+A more intuitive approach is to describe all controls right in the API response.
 
 When navigating a website, for example, we can navigate to different pages by clicking on hyperlinks, instead of having to know each URL.
 
