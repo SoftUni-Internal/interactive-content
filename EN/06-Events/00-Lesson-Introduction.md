@@ -8,7 +8,7 @@
 
 **1. What Events are**
 
-- The Observer pattern in Java
+- The observer pattern in Java
   
 **2. Built-in Events**
 
@@ -16,7 +16,7 @@
   
 **3. Custom Events**
 
-- Creating custom Event​s
+- Creating custom event​s
 
 **4. Scheduling Events**
 

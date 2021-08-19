@@ -21,15 +21,15 @@ Begin by adding the HАL Explorer as a Maven dependency in `pom.xml`:
 
 # Example
 
-Assuming you have followed along, you can try acccessing `http://localhost:8080/students`:
+Assuming you have followed along, you can try accessing `http://localhost:8080/students`:
 
-[image assetsSrc="Java-Spring-Advanced-HATEOAS-1.png" /]
+[image assetsSrc="Java-Spring-Advanced-HATEOAS-1.jpg" /]
 
 For each relation, the Explorer lists the available HTTP methods.
 
 It also displays embedded resources in an organised way:
 
-[image assetsSrc="Java-Spring-Advanced-HATEOAS-2.png" /]
+[image assetsSrc="Java-Spring-Advanced-HATEOAS-2.jpg" /]
 
 This is what they look like in plain JSON:
 

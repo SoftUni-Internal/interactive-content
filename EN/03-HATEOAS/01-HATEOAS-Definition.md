@@ -1,10 +1,10 @@
-# HATEOAS Definition 
+# HATEOAS Definition
 
 [slide hideTitle]
 
 # Hypermedia As the Engine of Application State​
 
-HATEOAS (Hypermedia As the Engine of Application State​) is an architectutal constraint of a RESTful API.
+HATEOAS (Hypermedia As the Engine of Application State​) is an architectural constraint of a RESTful API.
 
 It uses hypermedia to provide the user with more clarity about possible future actions, including the URIs for particular CRUD operations.
 
@@ -16,7 +16,7 @@ These endpoints can then be used by the client to further interact with the API.
 "update": {"href":"http://localhost:8080/students/update/2"}
 ```
 
-As they also include the accompanying HTTP request, they can also help us determine our pemissions (whether we are authorised to perform an operation/request a resource).
+As they also include the accompanying HTTP request, they can also help us determine our permissions (whether we are authorised to perform an operation/request a resource).
 
 The full response is used similarly to an HTML webpage, as both include links to other related resources.
 

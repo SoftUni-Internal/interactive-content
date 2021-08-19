@@ -17,7 +17,7 @@ fetch(url)
 
 The response of a `fetch()` is a Stream object that can either `resolve` or `reject`.
 
-We typically chain multiple promises to process and visualize data, as well as handle any errors that may occur.
+We typically chain multiple promises to process and visualise data, as well as handle any errors that may occur.
 
 [/slide]
 

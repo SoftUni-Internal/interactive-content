@@ -69,20 +69,20 @@ curl -X POST -d '{"name": "James Peterson", "username":"james_p8454", "age":58}'
 If we adapt the setter to accept the old `name` parameter, we can make the change backwards-compatible:
 
 ```java
-public void setName(String name) { 
+public void setName(String name) {
   String[] parts = name.split(" ");
   this.firstName = parts[0];
   this.lastName = parts[1];
 }
 
-public String getName() { 
+public String getName() {
   return this.firstName + " " + this.lastName;
 }
 ```
 
 This way, we can handle new clients, while maintaining support for older ones.
 
-However, these is just a part of the issues that come with API versioning.
+However, this is just a part of the issues that come with maintaining and updating an API.
 
 There are three versioning approaches when it comes to developing an API:
 
@@ -104,17 +104,17 @@ APIs should be developed in a continuous manner, without focusing as much on ver
 
 # A Response Using HATEOAS​
 
-When starting to work with an API, we are typically required to visit a documentantion page.
+When starting to work with an API, we are typically required to visit a documentation page.
 
 A more intuitive approach is to describe all controls right in the API response.
 
 When navigating a website, for example, we can navigate to different pages by clicking on hyperlinks, instead of having to know each URL.
 
 ```json
-{ 
-  "id": 2384935, 
-  "name": "Anne Brooks", 
-  "age": 32, 
+{
+  "id": 2384935,
+  "name": "Anne Brooks",
+  "age": 32,
   "username" : "anneb.439",​
   "_links": { ​
     "self": {"href":"http://www.mysocial.com/api/users/2384935"},​
@@ -127,7 +127,7 @@ When navigating a website, for example, we can navigate to different pages by cl
 
 When using HATEOAS, we receive `_links` alongside the payload.
 
-They describe the reltionship between the User and their related resources.
+They describe the relationship between the User and their related resources.
 
 The keys (e.g. `self`, `delete`, `update`) describe the action that is performed with the link.
 

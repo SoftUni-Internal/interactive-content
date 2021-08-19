@@ -47,19 +47,19 @@ There are multiple event types, each related to a different for of input.
 
 Mouse events typically occur when our web application is used on laptop or desktop viewports.
 
-- `click` - when the browser detects a mouseclick
+- `click` - when the browser detects a mouse click
 - `dblclick` - when a double click occurs
 - `mouseover` - when a pointer is over an element
 - `mouseout` - when the pointer is out of the element's area
 - `mousedown​` - when a mouse/trackpad button is pressed
 - `mouseup` ​- when the mouse button is released
-  
+
 ## Touch Events
 
 Touch events are only triggered on touch-enabled devices, such as smartphones, tablets, or 2-in-1 laptops.
 
-All of them start with "touch" - e.g. touchstart​, touchend​, touchmove​, touchcancel​.
-  
+All of them start with "touch" - e.g. `touchstart​`, `touchend​`, `touchmove​`, `touchcancel`​.
+
 ## Keyboard Events
 
 Keyboard events are triggered when a given key is pressed/released.
@@ -72,11 +72,11 @@ Keyboard events are triggered when a given key is pressed/released.
 
 Window events are related to browser-level events, such as page reloads.
 
-They include scroll, resize, hashchange, load, and unload.
+They include `scroll`, `resize`, `hashchange`, `load`, and `unload`.
 
 ## Form Events
 
-Form events, such as focus, blur, change, and submit, are related to user input in `<form>` elements.
+Form events, such as `focus`, `blur`, `change`, and `submit`, are related to user input in `<form>` elements.
 
 ## Focus Events
 

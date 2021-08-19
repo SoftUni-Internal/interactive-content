@@ -46,7 +46,7 @@ It will have a small database with three related entities:
 
 # Preparing Controllers
 
-The first possible implenentation is for our DTOs to extend the `RepresentationModel<T>` class, adding links directly to our entity.
+The first possible implementation is for our DTOs to extend the `RepresentationModel<T>` class, adding links directly to our entity.
 
 The second variant is to use the `linkTo` and `methodOn` methods from the `WebMvcLinkBuilder` class.
 
@@ -71,7 +71,7 @@ Optional<Student> studentOpt = this.studentRepository.findById(id);​
 return studentOpt​
     .map(s -> ResponseEntity.ok(​
       EntityModel.of(s, getStudentLinks(s))))​
-    .orElse(ResponseEntity.notFound().build()); 
+    .orElse(ResponseEntity.notFound().build());
 ```
 
 We implement the `getStudentLinks` method as follows:
@@ -100,7 +100,7 @@ The resulting links will look like this:
 "_links": { ​
   "self": {"href":"http://api.softuni.org/students/6079754"},​
   "orders": {"href":"http://api.softuni.org/students/6079754/orders"}​
-} 
+}
 ```
 
 [/slide]
@@ -137,7 +137,7 @@ return ResponseEntity.ok(student);​
 
 Since `Student` instances extend `RepresentationModel`, they can use the `add` method to accept each link.
 
-The `linkTo` method creates a new `ControllerLinkBuilder` 
+The `linkTo` method creates a new `ControllerLinkBuilder`
 for each student/orders endpoint.
 
 The `withRel(String rel)` method creates the `Link` built by the current builder instance with the given `rel` string.

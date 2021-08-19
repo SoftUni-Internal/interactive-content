@@ -22,9 +22,9 @@ They are most often accessed over HTTPS, and accept JSON both as a request and r
 
 For an API to be considered RESTful, it must follow the six guiding principles, introduced in 2000 by Roy Fielding.
 
-## Client-Server 
+## Client-Server
 
-For the duration of an HTTP request, there must be one client, requesting a resourse, and one server, returning a response. 
+For the duration of an HTTP request, there must be one client, requesting a resource, and one server, returning a response.
 
 ## Statelessness
 
@@ -80,15 +80,15 @@ SOAP operations can also chain messages, keeping the server aware of the previou
 
 ## RPC
 
-The earliest and simplest form of API was Remote Procedure Call (RPC). 
+The earliest and simplest form of API was Remote Procedure Call (RPC).
 
 Since the client and server use different call parameters, they must be converted to be understood on the other side.
 
-This conversion is performed by dedicated pieces of code, calles stubs.
+This conversion is performed by dedicated pieces of code, called stubs.
 
 When a client calls a server via RPC API, the client stub converts the parameters used in the function call.
 
-Then, а server stub deconverts them and executes the function.
+Then, а server stub de-converts them and executes the function.
 
 The same happens with the response, but in reverse order.
 
@@ -105,7 +105,7 @@ This forces developers to include additional metadata, like `id` and `type` para
 The HTTP GET method is used by the client to retrieve a representation of a resource in a REST API.
 
 - Retrieving a list of users
-  
+
 ```js
 GET https://api.softuni.org/users
 ```
@@ -116,7 +116,7 @@ GET https://api.softuni.org/users
 GET https://api.softuni.org/users/4078643
 ```
 
-If no error occurrs, the server returns a status code of 200 (OK).
+If no error occurs, the server returns a status code of 200 (OK).
 
 If the requested resource does not exist, it returns a 404 (Not Found) error.
 
@@ -128,7 +128,7 @@ If the requested resource does not exist, it returns a 404 (Not Found) error.
 
 To create new resources, we use the POST method.
 
-More specificially, it is used to create children resourses to a parent (e.g `/users`):
+More specifically, it is used to create children resources to a parent (e.g `/users`):
 
 ```js
 POST https://api.softuni.org/users
@@ -145,7 +145,7 @@ POST https://api.softuni.org/users
 }
 ```
 
-When the resouce is created successfully, the server returns a status code of 201 (Created).
+When the resource is created successfully, the server returns a status code of 201 (Created).
 
 Once the server receives the request payload, it is responsible for associating the new resource to the parent by assigning it with an ID and resource URI:
 
@@ -159,7 +159,7 @@ GET https://api.softuni.org/users/494574387683
 
 # HTTP PUT
 
-The PUT method is used to update an existing resourse, by fully replacing it.
+The PUT method is used to update an existing resource, by fully replacing it.
 
 ```js
 PUT https://api.softuni.org/courses/693
