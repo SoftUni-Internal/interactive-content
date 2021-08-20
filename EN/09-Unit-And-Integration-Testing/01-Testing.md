@@ -80,7 +80,6 @@ We have a business requirement and we will try to match them with our applicatio
 
 # Unit Testing
 
-
 Unit testing is to segregate each part of the program and test each part individually to check if they are working properly or not.
 
 It isolates the smallest piece of testable software from the remainder of the code and determines if it behaves exactly as we expected and according to the requirements.
