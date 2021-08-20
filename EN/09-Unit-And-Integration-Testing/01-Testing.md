@@ -12,7 +12,7 @@ We have two types of testing:
 - **Manual testing:** is testing everything manually so you are taking the outputs you are giving some input
 - **Automation testing:** is to write code to automate our testing
 
-In Java j-unit library is used for automation testing.
+In Java JUnit library is used for automation testing.
 
 In different languages, we have defined ways of testing.
 
@@ -80,16 +80,67 @@ We have a business requirement and we will try to match them with our applicatio
 
 # Unit Testing
 
+
+Unit testing is to segregate each part of the program and test each part individually to check if they are working properly or not.
+
+It isolates the smallest piece of testable software from the remainder of the code and determines if it behaves exactly as we expected and according to the requirements.
+
+Those small pieces of software are usually referred to as unit, and they can be almost anything. 
+
+It can be a line of code, method or a class or some sort of program or a part of application program.
+
+Unit tests gives us much more granular view of how the code, it is performing at basic level.
+
+There is also the practical aspect that when we test very small units the test can run very fast what way we can tests more units quickly.
+
+Unit testing is usually performed at the earlier stages of development process and in many cases it is executed by the developers themself before handing the software over to testing.
+
 [/slide]
 
 [slide hideTitle]
 
 # Mocking
 
+We have a service which gets all the data from the database, and what this service is doing is to finding the greatest number from all numbers.
+
+If we want to test this class we would want to write a unit test, but what would happen is our tests depending on the data in the database.
+
+This way our unit test is having an external dependency and they are never stable data in the database, so even the logic is right, our test may fail.
+
+We should not write tests depending on something external we would want to write tests which are not dependent on changing data.
+
+To write tests which are not depending on external database we can create a mock for this specific data service.
+
+When mocking we create a mock of a specific class and in this example with mocks we can return specific data back.
+
+So we are controlling what data comes back from the data service, so we know what logic will be executed and we can write classes for our business logic when we know that we well receive exactly the same input.
+
 [/slide]
 
 [slide hideTitle]
 
 # Benefits
+
+Unit testing provides numerous benefits including finding software bugs, facilitating change simplifying integration, providing a source of documentation and many others.
+
+Unit testing makes coding process more controlable when we add more and more features to software we sometimes need to change old design.
+
+Changing already tested code is both risky and extremely costly if we have unit tests in place then we can proceed for refactoring very confidently because we know that each part of a code is working properly.
+
+Unit testing improves the quality of the code, it identifies every defect that may have come up before the code is sent for further testing.
+
+Unit testing the code makes it more reusable this means that codee is easier to reuse when we perform unit testing.
+
+Unit testing also helps find software bugs early since unit testing is usually carried out by developers who test individual code before integration issues can be found.
+
+This helps of fixing the bugs early and can be resolved easily without impacting other pieces of code and avoid spending too much resources.
+
+Unit testing also facilitates changes and it simplifies integration, it allows programmers to refactor code and upgrade system libraries and make sure that the module still is working properly 
+
+Unit testing actually verifies the accuracy of each unit after what the units are integrated into an application.
+
+Unit testing provides documentation to developers so it is basically drag and it shows mostly how little code documentation gets written.
+
+Unit testing can make the documentation burden a little easier by encouraging better coding practices and also leaving behind the piece of code that describe what the program is actually going to achieve.
 
 [/slide]
