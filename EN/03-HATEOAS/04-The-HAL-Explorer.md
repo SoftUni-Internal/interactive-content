@@ -21,7 +21,7 @@ Begin by adding the HАL Explorer as a Maven dependency in `pom.xml`:
 
 # Example
 
-Assuming you have followed along, you can try accessing `http://localhost:8080/students`:
+In this example, we try to access `http://localhost:8080/students`:
 
 [image assetsSrc="Java-Spring-Advanced-HATEOAS-1.jpg" /]
 

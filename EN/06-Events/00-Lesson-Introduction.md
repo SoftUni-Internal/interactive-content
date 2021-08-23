@@ -20,6 +20,6 @@
 
 **4. Scheduling Events**
 
-- How to use Cron, FixedRate, and FixedDely
+- How to use `Cron`, `FixedRate`, and `FixedDelay`
 
 [/slide]
