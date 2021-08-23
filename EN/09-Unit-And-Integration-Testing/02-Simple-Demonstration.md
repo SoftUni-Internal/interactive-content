@@ -84,7 +84,7 @@ Before start testing this service, we should keep in mind that there are is a de
 
 # Unit Testing - AAA
 
-The Arrange-Act-Assert is the pattern that we are going to use to test "UserServiceImpl" service.
+The Arrange-Act-Assert is the pattern that we are going to use to test the "UserServiceImpl" service.
 
 - Arrange: is to create the input data that we will pass to the tested component
 
@@ -158,7 +158,7 @@ public class UserServiceTests {
 
 Here we invoke the real service witch mocked dependencies. 
 
-Here we store the actual user into the "actual" object.
+Here we store the actual user into the "**actual**" object.
 
 ## Assert
 
@@ -186,5 +186,24 @@ Into the assert part, we check if the result from the tests matches the actual r
 [slide hideTitle]
 
 # Testing
+
+When we test a web application, as a priority we should test controllers, services, and custom components.
+
+For example, if we have a costume validator, we should tests it by using unit tests.
+
+Different components of the application are by using a different approach and different levels
+- Unit testing
+- Integration testing
+- End-to-End testing
+
+This is the so-called testing pyramid, where the lowest level is unit testing, the next level is integration testing and the higher level is End-to-End testing.
+
+Where end-to-end testing tests all the components of an application in a fully integrated testing environment that mimics the real world.
+
+End-to-end testing includes testing the interaction with external systems integrations business processes and developed reports so we can uncover and address any issues that may occur.
+
+End-to-end testing will allow testers to uncover issues with the current process.
+
+It will test components in an environment that mimics real-world use and verify interaction with external systems third-party integrations configurations business processes reports and security
 
 [/slide]    
