@@ -1,7 +1,19 @@
-# Coming Soon
+# Lesson Introduction
 
 [slide hideTitle]
 
-# Coming Soon
+# Lesson Content
+
+## In this lesson you will learn:
+
+**1. Testing**
+
+**2. Unit Testing**
+- Mocking
+- Arrange
+- Act 
+- Assert
+
+**3. Integration Testing**
 
 [/slide]
