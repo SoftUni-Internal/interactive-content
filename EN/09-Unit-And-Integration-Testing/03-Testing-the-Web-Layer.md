@@ -10,19 +10,19 @@ UserController example:
 @Controller
 @RequestMapping("/users")
 public class UserController {
-    // Inject UserService in constructor
-    @GetMapping("/{id}")
-    public ModelAndView getById(@PathVariable("id") Long id, ModelAndView modelAndView) {
-        modelAndView.addObject("user", this.userService.findById(id));
-        modelAndView.setViewName("one");
-        return modelAndView;
-    }
-    @GetMapping("/all")
-    public ModelAndView findAll(ModelAndView modelAndView){
-        modelAndView.addObject("users", this.userService.findAll());
-        modelAndView.setViewName("all");
-        return modelAndView;
-    }
+  // Inject UserService in constructor
+  @GetMapping("/{id}")
+  public ModelAndView getById(@PathVariable("id") Long id, ModelAndView modelAndView) {
+    modelAndView.addObject("user", this.userService.findById(id));
+    modelAndView.setViewName("one");
+    return modelAndView;
+  }
+  @GetMapping("/all")
+  public ModelAndView findAll(ModelAndView modelAndView) {
+    modelAndView.addObject("users", this.userService.findAll());
+    modelAndView.setViewName("all");
+    return modelAndView;
+  }
 }
 ```
 In this example, we inject "UserService" into the constructor.
@@ -64,17 +64,17 @@ You can read more about **MockMvcResultMatchers methods** [here](https://docs.sp
 @SpringBootTest
 @AutoConfigureMockMvc
 public class UserControllerTests {
-    @Autowired
-    private MockMvc mockMvc;
-    @Test
-    public void when_getOneStudents_returnFirst() throws Exception {
-        mockMvc
-                .perform(MockMvcRequestBuilders
-                        .get("/users/1"))
-                .andExpect(status().isOk())
-                .andExpect(view().name("one"))
-                .andExpect(model().attributeExists("user"));
-}
+  @Autowired
+  private MockMvc mockMvc;
+  @Test
+  public void when_getOneStudents_returnFirst() throws Exception {
+    mockMvc
+      .perform(MockMvcRequestBuilders
+        .get("/users/1"))
+      .andExpect(status().isOk())
+      .andExpect(view().name("one"))
+      .andExpect(model().attributeExists("user"));
+  }
 ```
 In this example, by using "MockMvc" we can create an application context and HTTP requests could be sent.
 
@@ -86,18 +86,21 @@ A test named `when_getOneStudents_returnFirst()` is created which trows exceptio
 @SpringBootTest
 @AutoConfigureMockMvc
 public class AuthorsControllerTest {
-    // @Autowired MockMvc and AuthorRepository 
+  // @Autowired MockMvc and AuthorRepository 
   @BeforeEach
   public void setUp() { // Add two test authors in repository }
-  @AfterEach
-  public void tearDown() { authorRepository.deleteAll(); }
-  @Test
-  public void testGetAuthorsCorrect() throws Exception {
-    this.mockMvc.perform(get("/authors")).
+      @AfterEach
+      public void tearDown() {
+        authorRepository.deleteAll();
+      }
+      @Test
+      public void testGetAuthorsCorrect() throws Exception {
+        this.mockMvc.perform(get("/authors")).
         andExpect(status().isOk()).
         andExpect(jsonPath("$", hasSize(2))).
         andExpect(jsonPath("$.[0].name", is(author1Name))).
-        andExpect(jsonPath("$.[1].name", is(author2Name)));  }
+        andExpect(jsonPath("$.[1].name", is(author2Name)));
+      }
 ```
 A GET request is sent to `/authors`, then validate that the REST address is up and running.
 
@@ -111,8 +114,8 @@ When using Spring Security, some application methods could not me assccess, to s
 @Test
 @WithMockUser("customUsername")
 public void getMessageWithMockUserCustomUsername() {
-    String message = messageService.getMessage();
-...
+  String message = messageService.getMessage();
+  ...
 }
 ```
 
@@ -124,10 +127,13 @@ When using this annotation, the Spring Security context will be populated with a
 
 ```java
 @Test
-@WithMockUser(username="admin",roles={"USER","ADMIN"})
+@WithMockUser(username = "admin", roles = {
+  "USER",
+  "ADMIN"
+})
 public void getMessageWithMockUserCustomUser() {
-    String message = messageService.getMessage();
-    ...
+  String message = messageService.getMessage();
+  ...
 }
 ```
 
@@ -138,9 +144,8 @@ When testing saving in database methods, we can use embedded database by adding 
 @SpringBootTest
 @AutoConfigureMockMvc
 @AutoConfigureTestDatabase(connection = EmbeddedDatabaseConnection.H2)
-public class UserControllerTests { 
-    // Tests
+public class UserControllerTests {
+  // Tests
 }
-
 ```
 [/slide]
