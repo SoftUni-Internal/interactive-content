@@ -4,7 +4,7 @@
 
 # Testing Controller
 
-UserController example:
+**UserController** example:
 
 ```java
 @Controller
@@ -25,13 +25,13 @@ public class UserController {
   }
 }
 ```
-In this example, we inject "UserService" into the constructor.
+In this example, we inject "**UserService**" into the constructor.
 
-The first action has mapping, which returns a user by id, where we add the user into the view and return the view.
+The first action has **mapping**, which returns a user by **id**, where we add the user into the **view** and **return** the view.
 
-Then we have another action, where we display all users.
+Then we have **another** action, where we display all users.
 
-A service `this.userService.findAll()` which returns a collection of users, and then they are added to the view and as a result `modelAndView` si returned.
+A service `this.userService.findAll()` which returns a **collection** of users, and then they are added to the view and as a result `modelAndView` si returned.
 
 [/slide]
 
@@ -76,7 +76,7 @@ public class UserControllerTests {
       .andExpect(model().attributeExists("user"));
   }
 ```
-In this example, by using "MockMvc" we can create an application context and HTTP requests could be sent.
+In this example, by using "**MockMvc**" we can create an application context and HTTP requests could be sent.
 
 A test named `when_getOneStudents_returnFirst()` is created which trows exception if there is no user with "id = 1" and the name of the is not "one".
 
@@ -104,7 +104,7 @@ public class AuthorsControllerTest {
 ```
 A GET request is sent to `/authors`, then validate that the REST address is up and running.
 
-Then we can validate every part of the JSON response, by setting testing data, in this case, "author1Name" and "author2Name".
+Then we can validate every part of the JSON response, by setting testing data, in this case, "**author1Name**" and "**author2Name**".
 
 ## Testing with MockUser 
 
