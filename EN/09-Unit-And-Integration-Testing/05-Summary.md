@@ -4,7 +4,7 @@
 
 ## In this lesson you learned:
 - **Testing** is an important part of the application lifecycle
-    - new features need to be verified before delivered to the clients
+    - new features need to be verified before being delivered to the clients
 - **Unit Testing**
    - a level of software testing where individual components are tested
    - the purpose is to validate that each unit performs as designed
