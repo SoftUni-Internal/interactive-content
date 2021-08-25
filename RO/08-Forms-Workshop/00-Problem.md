@@ -4,6 +4,8 @@
 
 # Cerințe Privind Sarcina
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/08-Workshop-Forms/Part-0-Intro-Information-about-the-assignment-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 În acest moment, aplicația are **formulare**. 
 
 Modificați-le, astfel încât informațiile furnizate să fie tratate corespunzător. 
@@ -35,6 +37,8 @@ Notificarea **de sub fiecare buton** ar trebui să afișeze **starea** **de vali
 
 # Cazuri Valide și Invalide
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/08-Workshop-Forms/Part-1-Login-form-functionality-and-validations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## Cazuri nevalide
 
 În cazul în care unele dintre câmpurile de intrare аr fi nevalide, următorul **câmp de intrare** trebuie stilizat cu clasa **input-error**, care are următorul stil: 
@@ -61,6 +65,8 @@ Atunci când câmpul de intrare este completat cu informații **valide**, clasa 
 
 # Formulare Reactive
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/08-Workshop-Forms/Part-2-Register-form-functionality-and-Login-form-validations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Folosiți **abordarea** **bazată pe model** (**reactivă**) pentru a crea formularele de autentificare și de **înregistrare**. 
 
 ## Autentificarea
@@ -79,11 +85,7 @@ Intrarile valide sunt:
 
 [image assetsSrc="Angular-Forms-Workshop-2.png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Înregistrare
+## Înregistrare
 
 Formularul de înregistrare așteaptă: **un nume de utilizator**, **un e-mail**, **o parolă**, **o parolă repetată** și **un număr de telefon** (nu este obligatoriu).
 
@@ -124,6 +126,8 @@ Dacă se întâmplă acest lucru, aplicați **stilizarea nevalidă pentru ambele
 
 # Formulare Bazate pe Șabloane
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/08-Workshop-Forms/Part-3-New-Theme-form-functionality-and-validations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Folosiți **abordarea bazată pe șablon** pentru a crea formularul **"create new theme"** și formularul **"change user information"**.
 
 ## Temă nouă
@@ -148,6 +152,8 @@ Butonul "**Post**" ar trebui să fie **dezactivat** dacă datele introduse **NU 
 [slide hideTitle]
 
 # Modificarea Informațiilor Despre Profil
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/08-Workshop-Forms/Part-4-Create-edit-form-on-profile-page-and-update-the-info-dynamically-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Atunci când este conectat, un utilizator ar trebui să își poată vedea **informațiile de profil**.
 

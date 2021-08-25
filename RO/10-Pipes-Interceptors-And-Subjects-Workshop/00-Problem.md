@@ -4,6 +4,9 @@
 
 # Cerințe
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/10-Workshop-Pipes-Interceptors-Subjects/Part-1-Authentication Interceptor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 În acest workshop vom vedea ce sunt JWT (JSON WEB TOKEN) și conceptul de **INTERCEPTORS**.
 
 Va trebui să interceptăm **solicitările** și **răspunsurile** între partea de front-end și cea de back-end.
@@ -19,6 +22,8 @@ Folosiți-l pentru a **autentifica** utilizatorul curent.
 [slide hideTitle]
 
 # Interceptor de Erori
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/10-Workshop-Pipes-Interceptors-Subjects/Part-2-Error Interceptor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 În unele cazuri, erorile vor surveni. Folosind un interceptor, **încercați să preveniți aceste experiențe neplăcute pentru utilizator** și să gestionați aceste erori.
 
@@ -47,7 +52,13 @@ Puteți folosi **404 page** pentru a **arăta informațiile referitoare la erori
 
 ```
 
-## Lazy Loading
+[/slide]
+
+[slide hideTitle]
+
+# Lazy Loading
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/10-Workshop-Pipes-Interceptors-Subjects/Part-3-Lazy Loading-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Lazy loading ne ajută **să descărcăm** pagini web pe **bucăți**. Implementați lazy loading pentru toate modulele posibile. 
 
@@ -56,6 +67,8 @@ Lazy loading ne ajută **să descărcăm** pagini web pe **bucăți**. Implement
 [slide hideTitle]
 
 # Pipes
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/10-Workshop-Pipes-Interceptors-Subjects/Part-4-Pipes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Încercați să scrieți pipe-uri, după cum urmează:
 
