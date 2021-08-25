@@ -4,6 +4,8 @@
 
 # Task Requirements
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/10-Workshop-Pipes-Interceptors-Subjects/Part-1-Authentication Interceptor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In this workshop we will see what JWT (JSON WEB TOKEN) is, and the **INTERCEPTORS** concept. 
 
 We will have to intercept the **requests** and **responses** between the front-end part and the back-end. 
@@ -19,6 +21,8 @@ Use it to **authenticate** the current user.
 [slide hideTitle]
 
 # Error Interceptor
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/10-Workshop-Pipes-Interceptors-Subjects/Part-2-Error Interceptor-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In some cases, errors will occur and by using an interceptor, **try to prevent bad user experience** and handle these errors. 
 
@@ -48,15 +52,25 @@ You can use the **404 page** to **show error info** or put a **paragraph** `("<p
 
 ```
 
-## Lazy Loading
+[/slide]
 
-Lazy Loading helps us to **download** web pages in **chunks**. Implement lazy loading on all the modules you can.
+[slide hideTitle]
+
+# Lazy Loading
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/10-Workshop-Pipes-Interceptors-Subjects/Part-3-Lazy Loading-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Lazy Loading helps us **download** web pages in **chunks**. 
+
+Implement lazy loading on all the modules you can.
 
 [/slide]
 
 [slide hideTitle]
 
 # Pipes
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/10-Workshop-Pipes-Interceptors-Subjects/Part-4-Pipes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Try to write pipes, as follows:
 

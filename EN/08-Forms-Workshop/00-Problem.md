@@ -4,6 +4,8 @@
 
 # Task Requirements
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/08-Workshop-Forms/Part-0-Intro-Information-about-the-assignment-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 At this point, the application has **forms**. 
 
 Edit them, so the given information is handled properly. 
@@ -35,6 +37,8 @@ The notification **below each button** should display the **status** of the **fo
 
 # Valid and Invalid Cases
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/08-Workshop-Forms/Part-1-Login-form-functionality-and-validations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## Invalid Cases
 
 In case some of the input fields аrе invalid, the following **input field** should be styled with class **input-error**, which has the following style: 
@@ -61,6 +65,8 @@ When the input field is filled with **valid** information, the class **input-err
 
 # Reactive Forms 
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/08-Workshop-Forms/Part-2-Register-form-functionality-and-Login-form-validations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Use the **model driven** (**reactive**) **approach** to build the login and **register** forms. 
 
 ## Login
@@ -79,11 +85,7 @@ Valid credentials are:
 
 [image assetsSrc="Angular-Forms-Workshop-2.png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Register
+## Register
 
 The register form expects: **a username**, **an email**, **a password**, **a password repeat** and **a telephone number** (not required).
 
@@ -124,6 +126,8 @@ Otherwise, the **valid stylization** is applied.
 
 # Template-Driven Forms
 
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/08-Workshop-Forms/Part-3-New-Theme-form-functionality-and-validations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Use the **template-driven approach** to build the **"create new theme"** form and the **"change user information"** form.
 
 ## New Theme
@@ -148,6 +152,8 @@ The "**Post**" button should be **disabled** if the input is **NOT** valid.
 [slide hideTitle]
 
 # Change Profile Information
+
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/08-Workshop-Forms/Part-4-Create-edit-form-on-profile-page-and-update-the-info-dynamically-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When logged in, a user should be able to see their **profile information**.
 
