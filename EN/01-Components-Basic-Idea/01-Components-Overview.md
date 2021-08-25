@@ -4,6 +4,8 @@
 
 # Components
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-3-4-Components-Overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Components let you split the UI into independent, reusable pieces and think about each piece in isolation.
 
 Each component has its logic, controls its rendering, and can be reused wherever you need them.
@@ -16,7 +18,9 @@ These are **Functional** components and **Classes** components.
 
 [slide hideTitle]
 
-# Functional Component
+# Functional Components
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-5-Functional-Component-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A Functional component is a JavaScript function which, accepts a single argument called **props** and returns a React element.
 
@@ -38,7 +42,9 @@ function Person(props){
 
 [slide hideTitle]
 
-# Class Component
+# Class Components
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-6-Class-Component-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To create a class component we need a simple JavaScript class, that extends the `React.Component` class.
 
@@ -61,6 +67,8 @@ class Person extends React.Component {
 [slide hideTitle]
 
 # Component Syntax
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-7-Component-Syntax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Component's names always start with PascalCase. 
 

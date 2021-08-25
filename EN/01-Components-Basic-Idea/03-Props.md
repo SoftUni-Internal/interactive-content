@@ -4,6 +4,8 @@
 
 # Component Props
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-11-12-Component-Props-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **props** is short for **properties**. 
 
 Every component in React has properties.
@@ -21,6 +23,8 @@ There is no limit to the number of nested components that we can have.
 [slide hideTitle]
 
 # Passing Props To Nested Components
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-13-Passing-props-to-nested-components-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is an example of how we can use nested components to pass data from the parent to the child.
 
@@ -67,7 +71,9 @@ const Book = (props) => {
 
 [slide hideTitle]
 
-# Passing Props in Class Components
+# Passing Props to Class Components
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-14-Passing-Props-to-class-components-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When composing a class component we receive the **props** inside our **constructor**.
 
@@ -99,6 +105,8 @@ class Book extends React.Component {
 [slide hideTitle]
 
 # Children Property
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-15-Children-Property-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Use the **children** property to access information between opening and closing tags.
 

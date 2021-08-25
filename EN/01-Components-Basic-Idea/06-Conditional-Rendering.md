@@ -2,7 +2,9 @@
 
 [slide hideTitle]
 
-# Using if operator
+# Using the if Operator
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-37--40-Conditional-Rendering-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 React uses the same syntax and conventions for boolean expressions like JavaScript.
 
@@ -37,11 +39,9 @@ function Greeting(props) {
 }
 ```
 
-[/slide]
+## Using the Ternary Operator
 
-[slide hideTitle]
-
-# Using the ternary operator
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Simple-JSX-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In this example, which is the same as the previous example we use the ternary operator.
 

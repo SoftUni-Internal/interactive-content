@@ -2,7 +2,9 @@
 
 [slide hideTitle]
 
-# Handling Events - 1
+# Handling Events
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-29-32-Handling-Events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Handling events with React elements is very similar to handling events in the DOM.
 
@@ -14,12 +16,6 @@ With JSX we pass a function as an event handler, rather than a string.
 
 **Important: Do not pass a function call but rather a reference to the function.**
 
-[/slide]
-
-[slide hideTitle]
-
-# Handling Events - 2
-
 In React, we do not need to call the `addEventListener()` method to add listeners to a DOM element.
 
 We simply provide a listener as shown in the example:
@@ -29,12 +25,6 @@ We simply provide a listener as shown in the example:
     Click me! I'm a counter
 </button>
 ```
-
-[/slide]
-
-[slide hideTitle]
-
-# Handling Events - 3
 
 There are two ways in which we can pass arguments to event handlers.
 
@@ -65,12 +55,6 @@ We need to bind `this` value from the function to our class as we know each func
     Delete Row
 </button>
 ```
-
-[/slide]
-
-[slide hideTitle]
-
-# Handling Events - 4
 
 In this example, we define a function called `clickHandler`.
 
@@ -105,6 +89,8 @@ When we click the button, we will call the "clickHandler" function, update the s
 
 # SynteticEvent
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-34-Synthetic-Event-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The event handlers will be passed instances of SyntheticEvent, a cross-browser wrapper around the browser's native event. 
 
 It has the same interface as the browser’s native event, including `stopPropagation()` and `preventDefault()`, except the events work identically across all browsers.
@@ -122,6 +108,8 @@ function onClick(event) {
 [slide hideTitle]
 
 # Event Pooling
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-35-Event-Pooling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The SyntheticEvent objects are pooled. 
 

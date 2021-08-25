@@ -18,7 +18,7 @@ We can attach them to any React element by using the `ref` attribute.
 [/slide]
 
 
-[slide]
+[slide hideTitle]
 
 # Using Refs: Example
 

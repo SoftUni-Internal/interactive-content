@@ -4,6 +4,10 @@
 
 # Lists
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-42-44-Lists-and-keys-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-45-Basic-List-Component-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When we work with lists or collections of data, we will use the `map()` method.
 
 Here is an example of using the `map()` method on a collection.
@@ -38,6 +42,10 @@ function NumberList(props) {
 
 # Keys
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-46-47-Lists-and-keys-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-48-Picking-a-key-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 What is important to know is that we should give the elements of the collection **unique keys**.
 
 If we do not do that, we will see a warning message in the browser.
@@ -67,6 +75,8 @@ const todoItems = todos.map((todo) =>
 [slide hideTitle]
 
 # Extracting Components with Keys
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-49-Extracting-components-with-keys-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Keys only make sense in the context of the surrounding array.
 
@@ -99,7 +109,9 @@ ReactDOM.render(
 
 [slide hideTitle]
 
-# Keys and indexes
+# Keys and Indexes
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-50-51-Lists-and-keys-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Keys serve as a hint to React, but they do not get passed to your components. 
 

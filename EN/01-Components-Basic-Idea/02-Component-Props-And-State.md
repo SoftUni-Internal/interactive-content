@@ -4,7 +4,9 @@
 
 # Props And State Overview
 
-In React `this.props` and `this.state` are JavaScript objects. 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-8-9-10-Component-Props-And-State-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+In React, `this.props` and `this.state` are JavaScript objects. 
 
 It is data that we can render.
 

@@ -40,7 +40,7 @@ You can [learn more about Enzyme here](https://airbnb.io/enzyme/).
 
 [/slide]
 
-[slide]
+[slide hideTitle]
 
 # Jest and Enzyme Compared
 

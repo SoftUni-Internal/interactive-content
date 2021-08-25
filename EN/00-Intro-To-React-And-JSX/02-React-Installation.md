@@ -4,6 +4,8 @@
 
 # Create React App
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Intro-to-ReactJS-8-9-React-Installation-Creae-React-App-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Developed by Facebook, `Create-React-App` is a command-line tool, that enables bootstrapping a **React** project in seconds.
 
 Using `create-react-app` enables several benefits:
@@ -19,6 +21,8 @@ Using `create-react-app` enables several benefits:
 [slide hideTitle]
 
 # Install and Run the React App Creator
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Intro-to-ReactJS-10-Install-and-run-React-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let us create our first React application.
 
@@ -63,6 +67,8 @@ You can visit it [here](https://codesandbox.io/).
 [slide hideTitle]
 
 # React App Structure
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Intro-to-ReactJS-11-React-App-Structure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 React applications typically consist of many files.
 

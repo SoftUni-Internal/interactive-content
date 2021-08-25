@@ -4,6 +4,8 @@
 
 # JSX Overview
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Intro-to-ReactJS-12-13-14-JSX-Syntax-and-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **JSX** is React's unique approach to combining **HTML and JavaScript** in a single `.js` file.
 
 [image assetsSrc="intro-to-react-and-jsx-9.png" /]
@@ -12,11 +14,7 @@ With the help of JSX, you can change both how the **data** is prepared for rende
 
 It is also what enables the great **error reporting**, which React is known for.
 
-[/slide]
-
-[slide hideTitle]
-
-# JSX Syntax
+## JSX Syntax
 
 Here is an example of the JSX syntax:
 
@@ -52,6 +50,8 @@ It takes in two parameters \- the element we want to render, and the `root` HTML
 
 # JSX Rules and Principles
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Intro-to-ReactJS-15-JSX-Rules-and-principles-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 There are some rules and good practices you have to follow:
 
 - **Standard HTML elements** are **always** written in **lowercase**
@@ -71,6 +71,8 @@ There are some rules and good practices you have to follow:
 
 # Compilation
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Intro-to-ReactJS-16-JSX-Compilation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **JSX compiles to plain JavaScript**, resulting in less boilerplate code, while also letting developers focus on the task itself.
 
 At compile time, the following line will be converted to a `React.createElement()` call:
@@ -86,5 +88,13 @@ let element = React.createElement(
   `Hello, ${username}`
 );
 ```
+
+[/slide]
+
+[slide hideTitle]
+
+# JSX: Demo
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Simple-JSX-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

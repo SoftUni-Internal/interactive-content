@@ -4,6 +4,8 @@
 
 # What is React.js?
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Intro-to-ReactJS-3-4-React-Overview-what-is-React-js-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 React is a JavaScript **library**, made for building **user interfaces**.
 
 In the world of programming, **a library is a collection of prewritten code**, from which you can use as much, or as little as you would like.
@@ -65,6 +67,8 @@ The text between the curly brackets will be **evaluated at render time**, and th
 
 # Features
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Intro-to-ReactJS-5-6-Features-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 React has a distinctive set of **features** that make it stand out from other JavaScript libraries:
 
 - **Open Source**: By being open-source, React enables anyone to **modify** it to their specific needs.
@@ -91,6 +95,8 @@ React has a distinctive set of **features** that make it stand out from other Ja
 [slide hideTitle]
 
 # Advantages
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Intro-to-ReactJS-7-Advantages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - **Easy to learn**: requires you to just be familiar with JavaScript on an intermediate level.
 

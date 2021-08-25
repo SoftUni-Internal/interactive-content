@@ -2,7 +2,7 @@
 # Summary
 
 
-# In this lesson you learnt:
+# In this lesson you learned:
 
 - Error boundaries are special React components that handle errors while a given component renders
   - The errors must occur in the child component tree

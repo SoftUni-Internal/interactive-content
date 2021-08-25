@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Composition Overview
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Intro-to-ReactJS-17-18-Composition-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Just like DOM Elements, React components can be **nested**.
 
 ```js
@@ -34,6 +36,8 @@ This can be used to achieve **encapsulation**, as well as **loose coupling**.
 [slide hideTitle]
 
 # Component Syntax
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Intro-to-ReactJS-19-Component-Syntax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is what the syntax of nested components looks like:
 
@@ -69,6 +73,8 @@ Props can be just about anything the component needs to function, including **fu
 [slide hideTitle]
 
 # Advantages
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Intro-to-ReactJS-20-Advantages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here are the main advantages of component\-based development;
 

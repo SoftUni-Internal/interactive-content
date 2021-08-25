@@ -4,6 +4,8 @@
 
 # Component State Overview
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-17-18-Storing-And-Modifying-Data-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 React components have a built-in **state** object.
 
 The **state** object is where we store property values that belong to the component.
@@ -22,6 +24,8 @@ This way, we can create apps that are dynamic and interactive.
 
 # State
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-19-State-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The state of a component is always initialized with a **default** value when the component is mounted.
 
 We use the term "mount" to describe the process of injecting the component into the DOM tree.
@@ -37,6 +41,8 @@ We can only modify the state of a component from inside the component.
 [slide hideTitle]
 
 # Component State Example
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-20-Component-State-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The state holds information that can change over time.
 
@@ -97,6 +103,8 @@ ReactDOM.render(<Button />, document.querySelector('#root'));
 
 # Working with States
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-21-22-23-Working-With-States-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **State** is used only with **class-based components**.
 
 The **state** is set in the **constructor** as we have seen in the previous example.
@@ -148,6 +156,8 @@ ReactDOM.render(<Button />, document.querySelector('#root'));
 
 # Stateless Component
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-24-Stateless-Component-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A stateless component is one that has no **state** but only **props**.
 
 It is easy to set and test. 
@@ -171,6 +181,8 @@ function Show(props) {
 [slide hideTitle]
 
 # Stateful Component
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-25-26-27-Stateful-Component-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Stateful components have both **props** and **state**.
 
