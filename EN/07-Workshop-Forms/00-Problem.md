@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Overview
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/08.ReactJS-Workshop-Forms/01-workshop-part-3-explanation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Now it is time to implement **private** and public **parts** for our app. 
 
 And to make the already existing **forms** to **work**.
@@ -29,10 +31,7 @@ The login form should also make a **post request** with the given data to the **
 
 [image assetsSrc="ReactJS-Workshop-Forms-3.png" /]
 
-[/slide]
-
-[slide hideTitle]
-# Private Parts
+## Private Parts
 
 Private parts should be accessed only by **logged in users** (**authorized with jwt token from the given API**).
 
@@ -53,6 +52,7 @@ Also, you should show a `[Logout]` **button**, which can be pressed and clear th
 [image assetsSrc="ReactJS-Workshop-Forms-5.png" /]
 
 - **Post**
+  
 In Post view, the form with the text area should be able to make a **post request** with the given **post description.** 
 
 If that happens, the user should be redirected to the **publication view.**
@@ -60,10 +60,8 @@ If that happens, the user should be redirected to the **publication view.**
 Also, this view shows the **top 3 recent posts** from the database.
 
 [image assetsSrc="ReactJS-Workshop-Forms-6.png" /]
-[/slide]
 
-[slide hideTitle]
-# Database
+## Database
 
 Use the provided **REST API** build with **Express.js** and **MongoDB**
 
@@ -80,5 +78,75 @@ The server will listen on port **9999** by default and recognize the following p
 - Post request: `localhost:9999/api/user/login`
 
 - Post request: `localhost:9999/api/user/logout`
+
+[/slide]
+
+[slide hideTitle]
+# Expose API Headers
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/08.ReactJS-Workshop-Forms/02-expose-rest-api-headers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+# Complete User Registration
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/08.ReactJS-Workshop-Forms/03-complete-user-registration-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+# Complete User Login
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/08.ReactJS-Workshop-Forms/04-complete-user-login-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+# Refactor Fetch Logic
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/08.ReactJS-Workshop-Forms/05-refactor-fetch-logic-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+# Refactor App Container Element
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/08.ReactJS-Workshop-Forms/06-refactor-app-container-component-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+# Creating the User Context
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/08.ReactJS-Workshop-Forms/07-creating-the-user-context-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+# Setting User Context After Login
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/08.ReactJS-Workshop-Forms/08-seting-user-context-after-login-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+# Showing the Correct Navigation Links
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/08.ReactJS-Workshop-Forms/09-showing-the-correct-navigation-links-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+# Implement Logging Out
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/08.ReactJS-Workshop-Forms/10-implement-logging-out-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+# Creating Protected Routes
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/08.ReactJS-Workshop-Forms/11-creating-protected-routes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

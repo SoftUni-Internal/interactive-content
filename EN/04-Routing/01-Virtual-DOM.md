@@ -4,6 +4,8 @@
 
 # What is Virtual DOM?
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-3-4-5-virtual-dom-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **virtual DOM** represents the real DOM, kept in the browser.
 
 This **virtual DOM** is a React concept kept in the memory by the **ReactDOM** library.

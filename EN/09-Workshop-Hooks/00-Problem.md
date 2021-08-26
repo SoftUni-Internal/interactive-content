@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Overview
 
+[video src="" poster="" /]
+
 Last time we have to implement **private**, **public**, and make the already created **forms work**. 
 
 If you missed some of these parts, **go back and complete them before you continue.**
@@ -44,6 +46,8 @@ The login form should also make a **post request** with the given data to the **
 [slide hideTitle]
 # Private Parts
 
+[video src="" poster="" /]
+
 Private parts should be accessed only by **logged in users** (**authorized with jwt token from the given API**). 
 
 - **Publications**
@@ -74,6 +78,8 @@ Also, this view shows the **top 3 recent posts** from the database.
 
 [slide hideTitle]
 # Database
+
+[video src="" poster="" /]
 
 Use the provided **REST API** build with **Express.js** and **MongoDB**
 

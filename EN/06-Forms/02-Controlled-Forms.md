@@ -4,6 +4,8 @@
 
 # Controlled Components
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/07.ReactJS-Forms/React-Forms-5-Controlled-Forms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In **controlled components**, form data is handled by their **internal state**.
 
 **Component-level state** is the **only data source** for the input elements that are rendered by the component.
@@ -23,6 +25,8 @@ In React, however, we handle data inside the component:
 [slide hideTitle]
 
 # Form Component Declaration and Rendering
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/07.ReactJS-Forms/React-Forms-6-Form-Component-Declaration-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This example shows the process of declaring and rendering a form component:
 
@@ -124,6 +128,8 @@ constructor(props) {
 
 # Controlled Component
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/07.ReactJS-Forms/React-Forms-8-9-Controlled-Component-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 There are some important  key points to remember about controlled components:
 
 - You should always use `setState()` to modify the state
@@ -150,6 +156,8 @@ changeHandler(event) {
 
 # Controlled Forms
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/07.ReactJS-Forms/React-Forms-10-Controlled-Forms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In controlled forms, inputs are managed **explicitly**.
 
 The whole data flow of the form is managed by the developer:
@@ -162,11 +170,13 @@ The whole data flow of the form is managed by the developer:
 
 [slide hideTitle]
 
-# Unified Unit Approach
+# Unified Input Approach
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/07.ReactJS-Forms/React-Forms-11-Unified-Input-Approach-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 React similarly handles all form inputs.
 
-## The text area element
+## The `textarea` Element
 
 A `<textarea>` element defines its text by its children in HTML:
 
@@ -186,7 +196,7 @@ Similar to an `<input>` element, in React, a `<textarea>` uses a value attribute
 
 ```
 
-## The select tag
+## The `select` Tag
 
 This is a simple `<select>` menu in HTML:
 

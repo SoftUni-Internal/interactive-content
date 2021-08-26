@@ -4,6 +4,8 @@
 
 # What is UseEffect Hook?
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/09.ReactJS-React-Hooks/interactive-react-hooks-13-20-effect-hook-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **Effect Hooks** allow us to have **side effects** in functional components.
 
 We can use them to **fetch data**, do **subscriptions**, or **manually changing the DOM**.
@@ -22,11 +24,7 @@ To use **useEffect**, we need to import it from React, like this:
 import React, { useEffect } from 'react';
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# How to use UseEffect?
+## How to use UseEffect?
 
 When we want to use **useEffect**, we need to pass it a function.
 
@@ -61,11 +59,7 @@ In this example, `useEffect()` acts as **componentDidMount** and **componentDidU
 
 **UseEffect** will update the title of the document on every update of the counter.
 
-[/slide]
-
-[slide hideTitle]
-
-# UseEffect Hook Overview
+## UseEffect Hook Overview
 
 We use **useEffect** if we want to **execute** a function when the **DOM** changes.
 

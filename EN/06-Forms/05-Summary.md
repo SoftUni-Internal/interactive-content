@@ -1,6 +1,7 @@
 [slide hideTitle]
 # Summary
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/07.ReactJS-Forms/React-Forms-17-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 # In this lesson you learned:
 

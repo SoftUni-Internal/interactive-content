@@ -3,13 +3,15 @@
 [slide hideTitle]
 # Definition
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-10-11-Higher-Order-Components-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **React 16.8** introduces the concept of higher-order components.
 
 A higher-order component or **HOC** is an advanced technique in React for reusing component logic.
 
 **HOCs** are similar to higher-order functions, which can take a function as an argument and produce another function.
 
-**HOCs** basically incorporate the don-not-repeat-yourself or **DRY** principle of programming, which means less code fewer bugs.
+**HOCs** basically incorporate the don-not-repeat-yourself or **DRY** principle of programming, which means less code and fewer bugs.
 
 **HOCs** are not part of the React API, it is part of a software design pattern.
 
@@ -18,6 +20,8 @@ A higher-order component or **HOC** is an advanced technique in React for reusin
 [slide hideTitle]
 
 # Example: Reducer Function
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-12-Example-Reducer-Function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In JavaScript we have a `reduce()` function, to which we pass **two parameters**, a function and an array.
 
@@ -44,6 +48,8 @@ And in other cases the multiplication function is applicable, multiplying each e
 
 # Higher-Order Functions 
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-13-Higher-Order-Function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Components are the primary unit of code reuse.
 
 - Some patterns are not straightforward for traditional components
@@ -62,6 +68,8 @@ const EnhancedComponent = higherOrderComponent(WrappedComponent);
 [slide hideTitle]
 
 # HOC Example
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-14-HOC-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In this example, we have a **logger function** that accepts the created component, and this function **returns another class component** to which `componentDidMount` is attached.
 
@@ -85,6 +93,8 @@ function logged(WrappedComponent) {
 [slide hideTitle]
 
 # Advantages
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-15-Advantages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Some of the advantages of using **HOCs** are
 

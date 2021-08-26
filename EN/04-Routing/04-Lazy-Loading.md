@@ -4,6 +4,8 @@
 
 # Bundling
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-23-24-25-lazy-loading-code-splitting-bundling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The whole application will download itself on the first load or a refresh.
 
 That is possible because the files are **bundled**, from tools like **WebPack**, **Parcel**, or others.
@@ -25,6 +27,8 @@ After WebPack bundles everything from the **HomePage**, it will go to the Naviga
 [slide hideTitle]
 
 # Dynamic Import
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-26-dynamic-import-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Dynamic import**, also called **code-splitting**, is a React syntax used for not loading the whole application on the first request.
 
@@ -49,6 +53,8 @@ The idea is for the application to load faster.
 [slide hideTitle]
 
 # React.lazy
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-27-using-react-lazy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **React.lazy** gives us the ability to import a component dynamically, almost like a regular one.
 
@@ -75,6 +81,8 @@ After the `React.lazy(`) import, we can use the **ExamplePage** as a regular com
 [slide hideTitle]
 
 # Suspense
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-28-suspense -showing-indicators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Suspense** is a component that accepts a **fallback** while waiting for another one to load.
 

@@ -4,6 +4,8 @@
 
 # What is Jest?
 
+[video src="" poster="" /]
+
 **Jest** is a JavaScript testing framework, created by Facebook.
 
 Jest acts as a **test runner**, **assertion library** and **mocking library**.
@@ -26,6 +28,8 @@ Install Jest by typing `npm install --save-dev Jest` in a command-line tool, ope
 
 # What is Enzyme?
 
+[video src="" poster="" /]
+
 **Enzyme** is a framework, specifically created for testing React components.
 
 Made by Airbnb, Enzyme enables **utility methods** not available in Jest, such as:
@@ -44,6 +48,8 @@ You can [learn more about Enzyme here](https://airbnb.io/enzyme/).
 
 # Jest and Enzyme Compared
 
+[video src="" poster="" /]
+
 This table summarises the main differences between Jest and Enzyme.
 
 | **Feature**       | **Jest**     | **Enzyme**            |
@@ -61,6 +67,8 @@ Using Jest and Enzyme together makes testing React components much easier, and m
 
 # Mounting
 
+[video src="" poster="" /]
+
 The `mount` method is mainly used for:
 
 - Full DOM rendering, including child components
@@ -77,6 +85,8 @@ The only way to test `componentDidMount` and `componentDidUpdate` is the `mount`
 
 # Shallow
 
+[video src="" poster="" /]
+
 `shallow` works as follows:
 
 - Renders only the component itself, without including its children.
@@ -91,6 +101,8 @@ The only way to test `componentDidMount` and `componentDidUpdate` is the `mount`
 
 # Render
 
+[video src="" poster="" /]
+
 Here is how the `render` method works:
 
 - Renders to static HTML, including children
@@ -102,6 +114,8 @@ Here is how the `render` method works:
 [slide hideTitle]
 
 # Setting up Enzyme
+
+[video src="" poster="" /]
 
 To install Enzyme first, open a command\-line tool in your project directory.
 
@@ -136,6 +150,8 @@ The `__tests__` name is the recommended folder naming convention adopted in Jest
 [slide hideTitle]
 
 # Testing Stateless Components
+
+[video src="" poster="" /]
 
 This is a simple example of stateless component testing.
 

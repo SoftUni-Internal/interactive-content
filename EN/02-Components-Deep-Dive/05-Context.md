@@ -4,6 +4,8 @@
 
 # Definition
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-27-30-Context-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In a typical React application, data is passed from parent to child elements via **props**.
 
 This could cost performance issues for **certain props** that are required by many components within our application.
@@ -23,7 +25,9 @@ If we want to avoid passing props through nested levels, we should use component
 
 [slide hideTitle]
 
-# Context APIs
+# Context API
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-31-35-Context-API-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The context offers us several functions that we can use:
 
@@ -61,12 +65,7 @@ If we only need data from the **parent** component to be submitted to the **chil
 
 In these cases, we can **safely use props.**
 
-
-[/slide]
-
-[slide hideTitle]
-
-# React.createContext
+## React.createContext
 
 Creates a Context object, while rendering will read the current context value from the closest matching provider above it in the tree.
 
@@ -76,11 +75,7 @@ The default value is used only when a component does not have a matching provide
 const someContext = React.createContext(defaultValue);
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Context.Provider
+## Context.Provider
 
 Every Context object comes with a Provider React component.
 
@@ -93,11 +88,7 @@ One Provider can be connected to many consumers.
 <MyContext.Provider value={/* some value */}>
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Class.contextType
+## Class.contextType
 
 Property that can be assigned a Context object created by `React.createContext`.
 
@@ -105,12 +96,7 @@ Let you consume the nearest current value of that Context type using `this.conte
 
 You can reference this in any of the lifecycle methods including the render function.
 
-
-[/slide]
-
-[slide hideTitle]
-
-# Context.Consumer
+## Context.Consumer
 
 A React component that **subscribes** to context changes.
 
@@ -124,12 +110,7 @@ Requires a function as a child:
 
 - Value will be **equal** to the value prop of the closest Provider
 
-
-[/slide]
-
-[slide hideTitle]
-
-# Context.displayName
+## Context.displayName
 
 React DevTools uses this string to determine what to display for the context.
 
@@ -147,6 +128,8 @@ MyContext.displayName = 'MyDisplayName';
 [slide hideTitle]
 
 # Without Using Context
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-36-Without-using-Context-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This example shows how to present information without using context.
 
@@ -174,6 +157,8 @@ class ThemedButton extends React.Component {
 [slide hideTitle]
 
 # Using Context
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-37-Using-Context-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 With context, all we have to do is create context and give it value.
 
@@ -212,4 +197,12 @@ class ThemedButton extends React.Component {
 }
 
 ```
+[/slide]
+
+[slide hideTitle]
+
+# Context: Demo
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-Context-Demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 [/slide]

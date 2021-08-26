@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Lesson Content
 
+[video src="" poster="" /]
+
 ## In this lesson you will learn:
 
 **1. Error Boundaries**

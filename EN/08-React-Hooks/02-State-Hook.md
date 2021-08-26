@@ -4,6 +4,8 @@
 
 # UseState Hook
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/09.ReactJS-React-Hooks/interactive-react-hooks-6-12-state-hook-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **React Hooks** allow us to use **state** in **functional components**.
 
 The function that provides the **state** is called `useState()`.
@@ -28,11 +30,7 @@ The update function is **SetCount**.
 
 In the `useState()`, we need to assign the default value.
 
-[/slide]
-
-[slide hideTitle]
-
-# Example of UseState Hook
+## Example of UseState Hook
 
 In this example, we will use `useState()` to set a counter for how many times the user clicks the button.
 
@@ -67,11 +65,7 @@ On every click, we will update **count**.
 
 If the user refreshes the application, the counter will have a value of **zero**.
 
-[/slide]
-
-[slide hideTitle]
-
-# State Hook Overview
+## State Hook Overview
 
 **UseState** have only one argument, which is the **default value**.
 

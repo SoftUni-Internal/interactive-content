@@ -4,6 +4,8 @@
 
 # What are React Hooks?
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/09.ReactJS-React-Hooks/interactive-react-hooks-3-4-5-introduction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **React Hooks** is a new feature in **React**.
 
 They arrived at the **16.8** version of **React**.

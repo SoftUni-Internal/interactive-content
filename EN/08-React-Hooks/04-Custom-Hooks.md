@@ -4,6 +4,8 @@
 
 # Overview
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/09.ReactJS-React-Hooks/interactive-react-hooks-21-24-custom-hooks-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 If we have a **highly re-usable** logic, we can turn it into a **hook**.
 
 In the **class** components, we can do it with **higher-order components**, or by **rendering the props** and wrapping the component with another one.

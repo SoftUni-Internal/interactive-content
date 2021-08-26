@@ -4,6 +4,8 @@
 
 # Definition
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-16-19-Css-Modules-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A CSS Module is a CSS file in which all class names and animation names are scoped locally by default.
 
 When we want to import CSS into our project, there are several options to use CSS in react.
@@ -19,11 +21,8 @@ Another problem is that browsers have a **limited number of style tags**, and if
 The other option is to use CSS modules, which puts a unique id on the class and thus avoids repetition.
 
 Something else that CSS modules do is to bundle **several** CSS together and **display** it as one CSS.
-[/slide]
 
-[slide hideTitle]
-
-# CSS Modules: Example
+## Example
 
 We can name the CSS classes as we wish.
 
@@ -49,11 +48,7 @@ This way ReactJS will know that this is a CSS module
 
 [image assetsSrc="Compenents-Deep-Dive-2.png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# Import CSS Modules
+## Import CSS Modules
 
 CSS Modules let you use the same CSS class name in a different file without worrying about naming clashes.
 

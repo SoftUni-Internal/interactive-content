@@ -4,6 +4,8 @@
 
 # What is React Router?
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-9-10-react-router-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **React Router** is an **API** library for React apps.
 
 It supports **client-side** and **server-side** routing and it uses **component structure**.
@@ -27,6 +29,8 @@ We set the **path** and the **component**, which we want to be rendered, in the 
 [slide hideTitle]
 
 # Installation and Setup
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-11-react-router-installation-and-setup-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can install **React Router** by entering in the terminal the following command: `npm install react-router-dom --save`.
 
@@ -54,6 +58,8 @@ import { Switch } from 'react-router-dom';
 
 # Adding More Scenes
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-12-react-router-adding-more-scenes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In React, we can wrap components and attached them to an exact path.
 
 For example:
@@ -77,6 +83,10 @@ When the application is on that location, a specific component is rendered.
 [slide hideTitle]
 
 # Switch and Link
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-13-exclusive-rendering-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-14-navigating-with-link-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 By default, if two routes match, they will be both rendered.
 
@@ -111,6 +121,8 @@ We use the `to=''` attribute to set the path.
 [slide hideTitle]
 
 # BrowserRouter as Router
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-15-browserRouter-as-router-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **BrowserRouter** has different objects:
 
@@ -150,6 +162,8 @@ We can see the **length**, the **action** type, to **push**, to **replace** and 
 
 # URL Params
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-19-url-params-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When we want to make a URL to look like this: `/catalog/electronics/XYZ5538`.
 
 We need to configure the parameters of this route.
@@ -186,6 +200,8 @@ With `match.params`, we access all of the parameters.
 
 # Redirecting
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-20-redirects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 With React Router, we can **redirect** the user to a different path.
 
 That can happen by rendering a different component.
@@ -211,6 +227,8 @@ If he is **not logged in**, he will be **redirected** to the **Login** page.
 [slide hideTitle]
 
 # Active Links
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-21-active-links-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **NavLink** component makes the styling more effortless.
 
@@ -249,6 +267,8 @@ The difference between both is that instead of **in-line CSS**, we use **classes
 [slide hideTitle]
 
 # Nested Routes
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-22-nested-routes-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can have **nested** routes.
 

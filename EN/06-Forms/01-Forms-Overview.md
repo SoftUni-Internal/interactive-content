@@ -4,6 +4,8 @@
 
 # Forms in React
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/07.ReactJS-Forms/React-Forms-3-4-Forms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Forms are among the most important components of a React application.
 
 They enable receiving data from our users, like an email and password on a login page, or shipping info in an online store.

@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Uncontrolled Components
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/07.ReactJS-Forms/React-Forms-12-13-Uncontrolled-Forms-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 There are instances in which handling data by the component itself does not suffice.
 
 **Uncontrolled components** are the alternative solution.
@@ -21,6 +23,8 @@ We can attach them to any React element by using the `ref` attribute.
 [slide hideTitle]
 
 # Using Refs: Example
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/07.ReactJS-Forms/React-Forms-14-15-Using-Ref-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The following code is an example of an uncontrolled `UserForm` component:
 
@@ -69,6 +73,8 @@ Since the state is handled by the DOM, there is neither an `onChange` attribute 
 [slide hideTitle]
 
 # When to Use Refs?
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/07.ReactJS-Forms/React-Forms-16-When-to-use-refs-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Refs have many use cases, more specifically when performing [imperative](https://en.wikipedia.org/wiki/Imperative_programming) actions like:
 

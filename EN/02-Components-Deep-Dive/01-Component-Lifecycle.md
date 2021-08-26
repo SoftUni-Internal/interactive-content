@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Component Lifecycle
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-3-4-Component-Lifecycle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Various changes that the Component undergoes from its creation until it is terminated are called a **lifecycle of the component.**
 
 Each component goes through three phases of the lifecycle: **Mounting**, **Updating**, **Unmounting**.
@@ -21,6 +23,8 @@ A component has lifecycle methods that can be **overridden** to run code at time
 [slide hideTitle]
 
 # Lifecycle Methods
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-5-Lifecycle-methods-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 They are exactly three lifecycle methods:
 
@@ -44,7 +48,17 @@ For example, in the **mounting phase**, the constructor is called first, then th
 
 [slide hideTitle]
 
+# Component Lifecycle
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-6-Component-Lifecycle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+
 # Component Mounting
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-7-Component-Mounting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Each component can go through these three phases of **Mounting**, **Updating**, **Unmounting** at some point of its lifecycle.
 
@@ -72,6 +86,8 @@ This is one of the most widely used methods in ReactJS.
 
 # Component Updating
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-8-Component-Updating-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 This phase starts with the beginning of the react component and expands by receiving new updates:
 
 - **static getDerivedStateFromProps:** is invoked just before the render method, both on the initial mount and on following updates.
@@ -93,6 +109,8 @@ The default behavior is to re-render the web page when the state has been change
 [slide hideTitle]
 
 # Component Unmounting
+
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-9-Component-Unmounting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The component is not needed, and the component will get unmounted using `componentWillUnmount()`.
 

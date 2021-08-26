@@ -4,6 +4,8 @@
 
 # UseContext Hook
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/09.ReactJS-React-Hooks/interactive-react-hooks-31-34-usecontext-and-usereducer-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We use **UseContext** when we want to have context, but we do not want to write **class** components.
 
 To have context, we have to wrap the application with **context.Provider**.
@@ -45,11 +47,7 @@ In this example, we created **UserContext**, which holds the **user data**, a **
 
 After we instantiated `useContext(UserContext)`, we can access the functions and the data held by the **context**.
 
-[/slide]
-
-[slide hideTitle]
-
-# UseReducer Hook
+## UseReducer Hook
 
 When we have a larger, more complex state, we can use **UseReducer**.
 

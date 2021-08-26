@@ -4,6 +4,8 @@
 
 # Whar are Error Boundaries?
 
+[video src="" poster="" /]
+
 Facing errors is an inevitable part of being a developer.
 
 **Error boundaries** are React components, built for **handling errors** that occur in their **child component tree**.

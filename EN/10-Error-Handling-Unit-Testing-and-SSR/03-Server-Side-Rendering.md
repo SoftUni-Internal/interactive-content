@@ -4,6 +4,8 @@
 
 # Client-Side versus Server-Side
 
+[video src="" poster="" /]
+
 The main difference between Server and Client-Side Rendering lies in where the application is being rendered.
 
 ## Server-Side Rendering
@@ -48,6 +50,8 @@ Client-side rendering works in the following order:
 
 # Server-Side Rendering
 
+[video src="" poster="" /]
+
 Some of the benefits of **server-side rendering** include:
 
 - **Shorter page load time** which results in a better user experience
@@ -62,6 +66,8 @@ Some of the benefits of **server-side rendering** include:
 [slide hideTitle]
 
 # When to use Server-Side Rendering?
+
+[video src="" poster="" /]
 
 ## Search Engine Optimization
 

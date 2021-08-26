@@ -4,6 +4,8 @@
 
 # Definition
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-20-24-Fetch-api-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **Fetch API** provides an interface for accessing and manipulating requests to servers from web browsers.
 
 `fetch()` function which provides an easy way to access data from an API asynchronously.
@@ -18,11 +20,7 @@ Fetch returns `promise`, where we can use `then` and `catch` so can catch errors
 
 For more information, see the fetch [documentation](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch) itself.
 
-[/slide]
-
-[slide hideTitle]
-
-# Fetch API: Example
+## Example
 
 In this example we access GitHub API, we can only access publicly open routs.
 
@@ -45,11 +43,9 @@ Result:
 
 [image assetsSrc="Compenents-Deep-Dive-3.png" /]
 
-[/slide]
+## Example Two
 
-[slide hideTitle]
-
-# Fetch API: Example(2)
+[video src="" poster="" /]
 
 Fetch can be used **asynchronously**, it is depending on us what to use asynchronously or not.
 
@@ -76,6 +72,8 @@ Result:
 
 # Fetch Services
 
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/03.ReactJS-Compenents-Deep-Dive/React-Components-Deep-Dive-25-26-Fetch-Services-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The basic idea is to isolate the concern of fetching data inside components.
 
 Fetching data logic should be separated as service.
@@ -98,11 +96,7 @@ This is the best way we can fetch data because we do not **unnecessarily** conta
 
 We separate the logic of data acquisition and creation, where we can use only functions that we need.
 
-[/slide]
-
-[slide hideTitle]
-
-# Fetch Services: Usage
+## Usage
 
 When we separate data retrieval in a service, we can insert that service into components and use them.
 
