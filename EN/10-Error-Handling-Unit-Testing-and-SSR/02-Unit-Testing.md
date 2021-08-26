@@ -4,7 +4,7 @@
 
 # What is Jest?
 
-[video src="" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/11.React-JS-Error-Handling-Unit Testing-SSR/11-react-js-ehutas-8-9-10-jest-and-enzyme-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Jest** is a JavaScript testing framework, created by Facebook.
 
@@ -22,13 +22,7 @@ Jest also provides **snapshot testing**.
 
 Install Jest by typing `npm install --save-dev Jest` in a command-line tool, opened in your project directory.
 
-[/slide]
-
-[slide hideTitle]
-
-# What is Enzyme?
-
-[video src="" poster="" /]
+## What is Enzyme?
 
 **Enzyme** is a framework, specifically created for testing React components.
 
@@ -48,7 +42,7 @@ You can [learn more about Enzyme here](https://airbnb.io/enzyme/).
 
 # Jest and Enzyme Compared
 
-[video src="" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/11.React-JS-Error-Handling-Unit Testing-SSR/11-react-js-ehutas-11-jest-and-enzyme-compared-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This table summarises the main differences between Jest and Enzyme.
 
@@ -67,7 +61,7 @@ Using Jest and Enzyme together makes testing React components much easier, and m
 
 # Mounting
 
-[video src="" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/11.React-JS-Error-Handling-Unit Testing-SSR/11-react-js-ehutas-12-mounting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `mount` method is mainly used for:
 
@@ -85,15 +79,15 @@ The only way to test `componentDidMount` and `componentDidUpdate` is the `mount`
 
 # Shallow
 
-[video src="" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/11.React-JS-Error-Handling-Unit Testing-SSR/11-react-js-ehutas-13-shallow-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 `shallow` works as follows:
 
-- Renders only the component itself, without including its children.
+- Renders only the component itself, without including its children
   - This can be useful for component isolation which enables pure unit testing.
   - It protects against changes or bugs in a child component altering the behavior or output of the component under test
 - In Enzyme 3 and above, shallow components have access to lifecycle methods by default
-- Cannot access props passed into the root component, but can access those passed into child components, and can test the effect of props passed into the root component.
+- Cannot access props passed into the root component, but can access those passed into child components, and can test the effect of props passed into the root component
 
 [/slide]
 
@@ -101,7 +95,7 @@ The only way to test `componentDidMount` and `componentDidUpdate` is the `mount`
 
 # Render
 
-[video src="" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/11.React-JS-Error-Handling-Unit Testing-SSR/11-react-js-ehutas-14-render-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Here is how the `render` method works:
 
@@ -115,7 +109,7 @@ Here is how the `render` method works:
 
 # Setting up Enzyme
 
-[video src="" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/11.React-JS-Error-Handling-Unit Testing-SSR/11-react-js-ehutas-15-setting-up-enzyme-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To install Enzyme first, open a command\-line tool in your project directory.
 
@@ -151,7 +145,7 @@ The `__tests__` name is the recommended folder naming convention adopted in Jest
 
 # Testing Stateless Components
 
-[video src="" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/11.React-JS-Error-Handling-Unit Testing-SSR/11-react-js-ehutas-16-testing-stateless-components-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is a simple example of stateless component testing.
 

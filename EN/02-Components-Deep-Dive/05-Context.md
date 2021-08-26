@@ -39,9 +39,9 @@ We can create many contexts.
 
 When changing the currency, we can change the context itself.
 
-- `Class.contextType`: we can set which context to be used in our class.
+- `Class.contextType`: we can set which context to be used in our class
 
-- `Context.Consumer`: A React component that subscribes to context changes.
+- `Context.Consumer`: A React component that subscribes to context changes
 
 This lets you subscribe to a context within a function component.
 

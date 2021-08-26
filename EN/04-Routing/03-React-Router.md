@@ -122,7 +122,7 @@ We use the `to=''` attribute to set the path.
 
 # BrowserRouter as Router
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-15-browserRouter-as-router-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-15-16-17-18-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **BrowserRouter** has different objects:
 
@@ -138,13 +138,13 @@ The **match** object stores information about the URL.
 
 For example:
 
-- **params** stores **parameters**, like keys and values.
+- **params** stores **parameters**, like keys and values
 
-- **isExact** matches the whole URL.
+- **isExact** matches the whole URL
 
-- **path** uses a pattern to match the URL.
+- **path** uses a pattern to match the URL
 
-- **URL** matches the path from the URL.
+- **URL** matches the path from the URL
 
 The **Location** object stores where the app was, where we want it to go, and where it is now.
 

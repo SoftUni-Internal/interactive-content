@@ -82,7 +82,7 @@ After the `React.lazy(`) import, we can use the **ExamplePage** as a regular com
 
 # Suspense
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-28-suspense -showing-indicators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-28-29-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Suspense** is a component that accepts a **fallback** while waiting for another one to load.
 

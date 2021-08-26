@@ -26,7 +26,7 @@ In React, however, we handle data inside the component:
 
 # Form Component Declaration and Rendering
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/07.ReactJS-Forms/React-Forms-6-Form-Component-Declaration-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/07.ReactJS-Forms/React-Forms-6-7-Form-Component-Declaration-Rendering-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This example shows the process of declaring and rendering a form component:
 

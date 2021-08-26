@@ -5,7 +5,7 @@
 
 # In this lesson you learned:
 
-- Components are reusable elements.
+- Components are reusable elements
     - They are Functional and Class-based.
     ```js
     function Welcome(props) {
@@ -20,8 +20,8 @@
         }
     }
     ```
-- Props are used to pass down data.
-- State is used to hold component data.
+- Props are used to pass down data
+- State is used to hold component data
 
     ```js
     class Clock extends React.Component {
@@ -35,7 +35,7 @@
         }
     }
     ```
-- Handling Events in React.
+- Handling Events in React
 
     ```js
     <button onClick={activateLasers}>  
@@ -43,7 +43,7 @@
     </button>
     ```
 
-- Conditional Rendering.
+- Conditional Rendering
     - If and ternary operators.
 
     ```js

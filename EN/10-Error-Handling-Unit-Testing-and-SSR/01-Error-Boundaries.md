@@ -4,7 +4,7 @@
 
 # Whar are Error Boundaries?
 
-[video src="" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/11.React-JS-Error-Handling-Unit Testing-SSR/11-react-js-ehutas-3-7-error-boundaries-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Facing errors is an inevitable part of being a developer.
 
@@ -30,12 +30,7 @@ It is important to remember that error boundaries **will not** catch errors for:
   
 - Errors are thrown in the error boundary itself \(rather than its children\)
 
-[/slide]
-
-
-[slide hideTitle]
-
-# Creating an Error Boundary
+## Creating an Error Boundary
 
 The following example shows the syntax of an error boundary:
 
@@ -100,14 +95,9 @@ To use an error boundary, we simply wrap our existing components:
 </ErrorBoundary>
 ```
 
-[/slide]
+## Do-s and Don't-s
 
-
-[slide hideTitle]
-
-# Error Boundaries
-
-It is important to remember those error boundaries:
+It is important to remember that error boundaries:
 
 - Can only be class\-based components
 

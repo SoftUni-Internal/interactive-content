@@ -38,7 +38,7 @@
       });
    ```
 
-- **Custom Hooks**.
+- **Custom Hooks**
 
    - We can have re-usable logic without adding more components to the tree
 

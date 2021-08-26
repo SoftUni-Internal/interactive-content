@@ -32,12 +32,12 @@ The change represents itself in the **URL**.
 
 With this type of routing, we get many **benefits**:
 
-- The resources are loaded only once.
+- The resources are loaded only once
 
-- The state is maintainable across all pages.
+- The state is maintainable across all pages
 
-- We access the **browser history**.
+- We access the **browser history**
 
-- Better and quicker UX.
+- Better and quicker UX
 
 [/slide]

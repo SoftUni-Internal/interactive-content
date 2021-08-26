@@ -10,11 +10,11 @@ Developed by Facebook, `Create-React-App` is a command-line tool, that enables b
 
 Using `create-react-app` enables several benefits:
 
-- Once you **save a change** in your codebase, React automatically **recompiles** your app and **reloads the page** instantly, resulting in less waiting time.
+- Once you **save a change** in your codebase, React automatically **recompiles** your app and **reloads the page** instantly, resulting in less waiting time
 
-- Under the hood, it uses **Babel** and **webpack**, which it takes care of by itself.
+- Under the hood, it uses **Babel** and **webpack**, which it takes care of by itself
 
-- Deploying to production is as easy as running the `npm run build` command.
+- Deploying to production is as easy as running the `npm run build` command
 
 [/slide]
 

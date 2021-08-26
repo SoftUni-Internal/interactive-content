@@ -4,7 +4,7 @@
 
 # Client-Side versus Server-Side
 
-[video src="" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/11.React-JS-Error-Handling-Unit Testing-SSR/11-react-js-ehutas-17-18-client-side-vs-server-side-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The main difference between Server and Client-Side Rendering lies in where the application is being rendered.
 
@@ -50,7 +50,7 @@ Client-side rendering works in the following order:
 
 # Server-Side Rendering
 
-[video src="" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/11.React-JS-Error-Handling-Unit Testing-SSR/11-react-js-ehutas-17-19-server-side-rendering-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Some of the benefits of **server-side rendering** include:
 
@@ -60,14 +60,13 @@ Some of the benefits of **server-side rendering** include:
 
 - It **assists in loading the page** when the user has an outdated device
 
-
 [/slide]
 
 [slide hideTitle]
 
 # When to use Server-Side Rendering?
 
-[video src="" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/11.React-JS-Error-Handling-Unit Testing-SSR/11-react-js-ehutas-20-when-should-you-use-ssr-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Search Engine Optimization
 

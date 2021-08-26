@@ -56,7 +56,7 @@ Components are the primary unit of code reuse.
 
 Whereas as component transforms props into UI.
 
-- **HOC** is a simple function to which we can pass a component we have and receive another component.
+- **HOC** is a simple function to which we can pass a component we have and receive another component
 
 ```js 
 const EnhancedComponent = higherOrderComponent(WrappedComponent);
@@ -98,7 +98,7 @@ function logged(WrappedComponent) {
 
 Some of the advantages of using **HOCs** are
 
-- Greater code reuse: which leads to lesser errors.
+- Greater code reuse: which leads to lesser errors
 
 - Reduced boilerplate
 

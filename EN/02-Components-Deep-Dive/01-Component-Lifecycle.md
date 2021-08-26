@@ -28,11 +28,11 @@ A component has lifecycle methods that can be **overridden** to run code at time
 
 They are exactly three lifecycle methods:
 
-- **Mounting:** when the first time you access a web page and the component is rendered.
+- **Mounting:** when the first time you access a web page and the component is rendered
 
-- **Updating:** is the second phase in which the component is updated.
+- **Updating:** is the second phase in which the component is updated
 
-- **Unmounting:** is the third phase in which we hide or remove a component when this component is not displayed on the page in a web browser.
+- **Unmounting:** is the third phase in which we hide or remove a component when this component is not displayed on the page in a web browser
 
 [image assetsSrc="ReactJs-Compenents-Deep-Dive-1.png" /]
 
@@ -66,9 +66,9 @@ But to load a component in the browser, it always goes through **Mounting**.
 
 When a component goes through **Mounting**, these four methods are executed, and they are executed in **a specific order:**
 
-- **Constructor:** this method is called first, and we can place any code that we would want to run when the component is initialized.
+- **Constructor:** this method is called first, and we can place any code that we would want to run when the component is initialized
 
-- **static getDerivedStateFromProps:** this method is rarely executed, but when it is executed it must be executed after the constructor.
+- **static getDerivedStateFromProps:** this method is rarely executed, but when it is executed it must be executed after the constructor
 
 His only job is to take the properties from the constructor and put them in state.
 
@@ -76,7 +76,7 @@ His only job is to take the properties from the constructor and put them in stat
 
 This method is mandatory and without it, there is no way to preview a web page.
 
-- **componentDidMount:** after HTML is rendered, we can send functions with which we can fetch data, or to log data in the console.
+- **componentDidMount:** after HTML is rendered, we can send functions with which we can fetch data, or to log data in the console
 
 This is one of the most widely used methods in ReactJS.
 
@@ -90,19 +90,19 @@ This is one of the most widely used methods in ReactJS.
 
 This phase starts with the beginning of the react component and expands by receiving new updates:
 
-- **static getDerivedStateFromProps:** is invoked just before the render method, both on the initial mount and on following updates.
+- **static getDerivedStateFromProps:** is invoked just before the render method, both on the initial mount and on following updates
 
 It should return the updated state of an object, or null which stands for nothing has been updated.
 
-- **shouldComponentUpdate:** is invoked before rendering when new props or state are being received.
+- **shouldComponentUpdate:** is invoked before rendering when new props or state are being received
 
 The default behavior is to re-render the web page when the state has been changed.
 
-- **render:** render HTML in the web browser.
+- **render:** render HTML in the web browser
 
-- **getSnapshotBeforeUpdate:** can be used to see an event before the information is updated before the componentDidUpdate function is called.
+- **getSnapshotBeforeUpdate:** can be used to see an event before the information is updated before the componentDidUpdate function is called
 
-- **componentDidUpdate:** is invoked immediately after updating occurs.
+- **componentDidUpdate:** is invoked immediately after updating occurs
 
 [/slide]
 
