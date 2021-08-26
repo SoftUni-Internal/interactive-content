@@ -166,6 +166,6 @@ Fiecare componentă trebuie să conțină **theme title**, **username** al ultim
 
 # Bonus: Optimizarea Codului 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Bonus-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/04-Workshop-Components/04.Workshop-Components-Bonus-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

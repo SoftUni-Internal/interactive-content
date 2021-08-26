@@ -26,7 +26,7 @@ O vom remedia mai târziu atunci când dobândim cunoștințele necesare pentru 
 
 # Bara de Navigare
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-1-2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Bara de Navigare Pentru Utilizatori Logați
 
@@ -62,7 +62,7 @@ Când utilizatorul este "**not logged in**" ar trebui să vadă următoarea navi
 
 # Pagina Principală
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-3-4-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Nelogat
 
@@ -172,7 +172,7 @@ Aceasta este pagina temelor `localhost:4200/themes` pentru utilizatorii autentif
 
 # Comentariile Temelor 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-9-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-9-10-Themes-comments-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Nelogat
 

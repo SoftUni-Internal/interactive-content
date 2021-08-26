@@ -26,7 +26,7 @@ We will fix that later when we acquire the knowledge to do so.
 
 # Navigation Bar
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-1-2-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Logged in Users
 
@@ -62,7 +62,7 @@ When the user is "**not logged in**" they should see the following navigation:
 
 # Home Page
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-3-4-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Not Logged in
 
@@ -172,7 +172,7 @@ This is the themes page `localhost:4200/themes` for logged in users.
 
 # Theme Comments 
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-9-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Angular/EN/06-Workshop-Modules-and-Routing/06.Workshop-Modules-and-Routing-Part-9-10-Themes-comments-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Not Logged in
 
