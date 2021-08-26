@@ -2,9 +2,11 @@
 
 # Summary
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/04.Hibernate-Code-First/04-Hibernate-Code-First-40-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## In this lesson we learned:
 
-- Relational databases don't support inheritance
+- Relational databases do not support inheritance
 - It is implemented by JPA:
 - Mapping table strategies:
   - SINGLE_TABLE

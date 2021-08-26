@@ -1,7 +1,11 @@
 # Advantages and Disadvantages
 
 [slide hideTitle]
-# ORM Advantages
+# ORM Advantages and Disadvantages
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/02.ORM-Fundamentals/02-ORM-Fundamentals-15-18-orm-advantages-and-disadvantages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## Advantages
 
 Using **ORMs** has multiple advantages, including:
 
@@ -21,10 +25,7 @@ Using **ORMs** has multiple advantages, including:
   * being independent of the database makes **changing** it easier
   * it could be **configured outside the application**
 
-[/slide]
-
-[slide hideTitle]
-# ORM Disadvantages
+## Disadvantages
 
 Even though they are powerful, **ORMs** have several disadvantages:
 

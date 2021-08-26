@@ -4,6 +4,8 @@
 
 # Definition
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/06.JPQL-&-Auto-Mapping-Objects​/06-JPQL-&-AMO​​-16-18-repository-inheritance-and-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Here you will learn what repository inheritance is and when it is applicable.
 
 Let us start by reminding ourselves what typical **inheritance** is.
@@ -20,11 +22,7 @@ When our applications become larger and more complex, we have similar entities, 
 
 The **base attributes and actions** they contain are mostly the same, with some variations.
 
-[/slide]
-
-[slide hideTitle]
-
-# Example
+## Example
 
 We can set up a base repository, which further we can inherit:
 

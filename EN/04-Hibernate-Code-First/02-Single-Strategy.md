@@ -2,6 +2,8 @@
 
 # Table Per Class: Single Table
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/04.Hibernate-Code-First/04-Hibernate-Code-First-18-table-per-class-single-table-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The single table inheritance is the default JPA strategy.
 
 The single table strategy is the simplest and usually best-performing strategy. 

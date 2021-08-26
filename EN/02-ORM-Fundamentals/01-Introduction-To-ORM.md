@@ -4,6 +4,8 @@
 
 # What is ORM?
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/02.ORM-Fundamentals/02-ORM-Fundamentals-3-5-orm-introduction-what-is-orm-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ORM or **object-relational mapping** is a **programming technique** for data conversion.
 
 This technique allows database **queries** and **manipulations** to be performed by using the **object-oriented paradigm**.
@@ -28,6 +30,8 @@ It often works in conjunction with the **web framework** used to write the rest 
 
 # Why Do We Need ORM?
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/02.ORM-Fundamentals/02-ORM-Fundamentals-6-why-do-we-need-orm-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Object-oriented languages** are based on the concept of "objects", which have **non-scalar values**.
 
 Databases do not share that **object-oriented** nature and work only with **scalar** values ( **integer**, **string**, etc.).
@@ -42,6 +46,8 @@ An **ORM** can create **SQL queries** automatically, saving time in the process.
 
 [slide hideTitle]
 # JDBC and ORM
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/02.ORM-Fundamentals/02-ORM-Fundamentals-7-jdbc-and-orm-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **ORMs** and **JDBC** are two different solutions to a problem.
 
@@ -70,6 +76,8 @@ However, ORMs are superior to JDBC due to:
 [slide hideTitle]
 # Application Architecture
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/02.ORM-Fundamentals/02-ORM-Fundamentals-8-application-architecture-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Application architecture** is a crucial thing to consider when creating a project.
 
 **Layered architecture**, as the name suggests, has **four** layers:
@@ -84,6 +92,8 @@ However, ORMs are superior to JDBC due to:
 
 [slide hideTitle]
 # ORM Frameworks: Features
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/02.ORM-Fundamentals/02-ORM-Fundamentals-9-orm-frameworks-features-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The main feature of **ORM Frameworks** is the automatic generation of **SQL queries**.
 
@@ -119,6 +129,8 @@ It is recommended for simpler stand-alone applications without versioning.
 
 [slide hideTitle]
 # Performing Data Operations With ORM
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/02.ORM-Fundamentals/02-ORM-Fundamentals-10-11-perform-data-operations-wih-orm-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The following code shows some examples of working with **ORM**:
 
@@ -182,6 +194,8 @@ List results = query.list();
 [slide hideTitle]
 # Code First Model
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/02.ORM-Fundamentals/02-ORM-Fundamentals-12-14-code-first-model-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **code first** approach is used for **domain-driven** applications.
 
 When implemented, **entity classes** are created first, and then the **database** is populated based on them.
@@ -196,11 +210,7 @@ By applying, this approach in this diagram, the `Student` and `Employee` classes
 
 The Entity Framework then handles their conversion to database entries.
 
-[/slide]
-
-
-[slide hideTitle]
-# POJO + XML
+## POJO + XML
 
 One way to use the **code-first** approach is to combine **POJO** (**Plain Old Java Objects**) with **XML**.
 
@@ -250,11 +260,7 @@ It can contain multiple subtags, such as `<id>`, `<basic>` (maps the entity colu
 
 While this approach is powerful, it is old and not a recommended practice.
 
-[/slide]
-
-
-[slide hideTitle]
-# POJO Mapped to DB Tables
+## POJO Mapped to DB Tables
 
 There is an easier way to implement the **code-first** method than combining **POJO** and **XML**.
 

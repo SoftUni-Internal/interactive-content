@@ -2,6 +2,8 @@
 
 # What is SQL Injection
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-26-27-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In the previous part of the lesson, we learned how to send **raw SQL statements** to the database.
 
 This practice leaves us in danger of an **SQL injection attack**.
@@ -23,6 +25,8 @@ It automatically **escapes all the bad characters** that can interact with our s
 [slide hideTitle]
 
 # SQL Injection Еxample
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-28-30-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A web application is used by clients, that is why we are accepting **custom data** from the **users** all the time.
 

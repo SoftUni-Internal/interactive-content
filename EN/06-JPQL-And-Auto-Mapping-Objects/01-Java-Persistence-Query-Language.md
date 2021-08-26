@@ -4,6 +4,8 @@
 
 # Definition
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/06.JPQL-&-Auto-Mapping-Objects​/06-JPQL-&-AMO​​-3-5-jpql-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **JPQL** (short for Java Persistence Query Language) is an **object-oriented** query language, part of the Java persistence API.
 
 When working with complex queries, default query methods are not sufficient.
@@ -30,6 +32,8 @@ With the JPQL syntax, we can create three types of clauses:
 [slide hideTitle]
 
 # JPQL Syntax
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/06.JPQL-&-Auto-Mapping-Objects​/06-JPQL-&-AMO​-6-jpql-syntax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The syntax of JPQL is similar to that of SQL, with one notable difference - SQL works directly with the database, its tables, records, and fields, whereas JPQL works with the Java classes and instances.
 

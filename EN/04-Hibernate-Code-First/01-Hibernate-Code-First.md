@@ -4,6 +4,8 @@
 
 # Inheritance
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/04.Hibernate-Code-First/04-Hibernate-Code-First-3-5-inheritance-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Using relational databases we cannot apply the mechanism of inheritance. 
 
 Instead, we have to use **JPA** (Java Persistence API) to map the key features of inheritance in our relational database model.

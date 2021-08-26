@@ -4,6 +4,8 @@
 
 # Maven Overview
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-3-4-maven-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Maven is a project management framework. 
 
 It manages the build and dependencies of our project, using **XML** files.
@@ -32,6 +34,8 @@ The Project Object Model, stored in the **pom.xml** file, holds the configuratio
 
 # Setup - Creating a Maven Project 
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-5-7-setup-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Now, let us create a new project by using Maven.
 
 - Select "**Maven**" from the new project panel:
@@ -55,6 +59,8 @@ Now, let us create a new project by using Maven.
 [slide hideTitle]
 
 # Maven Configurations
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-8-9-10-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 A Project Object Model (**POM**) is the fundamental unit of work in Maven.
 

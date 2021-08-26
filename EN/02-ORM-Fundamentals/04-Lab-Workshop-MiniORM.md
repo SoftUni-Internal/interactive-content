@@ -1,8 +1,12 @@
-# Lab: Workshop - Mini ORM
+# Lab: Workshop
 
 [slide hideTitle]
 
-# Project Setup
+# Mini ORM
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/02.ORM-Fundamentals/02-ORM-Fundamentals-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+## Project Setup
 
 By following the steps in this lab, you will create a custom ORM with basic functionality (inserting, updating, and retrieving one or multiple objects).
 
@@ -32,11 +36,7 @@ Initially, no database driver is imported. This can be done through Maven, by ad
 </dependencies>
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Creating Entities
+## Creating Entities
 
 In the means of ORMs, database objects are mapped to object-oriented implementations called "**entities**".
 
@@ -80,11 +80,7 @@ public class User {
 }
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Connecting to the Database
+## Connecting to the Database
 
 It is time to separate our logic into classes. 
 
@@ -116,11 +112,7 @@ public static Connection getConnection() {
 }
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Creating a Database Context 
+## Creating a Database Context 
 
 Create an `interface` that will define the possible database operations.
 
@@ -150,11 +142,7 @@ public interface DbContext<E> {
 }
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Creating an Entity Manager 
+## Creating an Entity Manager 
 
 Let us begin writing the **core** of our Mini ORM. 
 
@@ -177,11 +165,7 @@ public class EntityManager<E> implements DbContext<E> {
 }
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Persisting an Object in the Database
+## Persisting an Object in the Database
 
 The logic behind the `persist` method has a simple implementation.
 
@@ -332,11 +316,7 @@ private boolean doUpdate(E entity, Field primary) throws IllegalAccessException,
 }
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Fetching Results
+## Fetching Results
 
 Once we have persisted our entities (objects) in the database it is time to implement functionality for **getting them out of the database and persisting them in the operating memory**. 
 
@@ -409,11 +389,7 @@ Both methods **cooperate closely**.
 - the `ResultSet` object from which we will **retrieve information**
 - `field`'s `Column` annotation name, which will give us access to the value in the `ResultSet`
 
-[/slide]
-
-[slide hideTitle]
-
-# Testing the Framework
+## Testing the Framework
 
 We are done with building the **first part** of our MiniORM.
 
@@ -450,11 +426,7 @@ public class Main {
 }
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# Fetching Users
+## Fetching Users
 
 Insert several users in the database and **print the usernames and passwords** of those who are **both**: 
 

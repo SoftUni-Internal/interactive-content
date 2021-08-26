@@ -4,6 +4,8 @@
 
 # About JPA
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-27-29-java-persistence-api-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The Java Persistence API (JPA) is a Java specification for accessing, persisting and managing data between Java objects or classes and a relational database.
 
 This concept is known as ORM (**Object-relational mapping**).
@@ -21,6 +23,8 @@ It is a method of transferring data between two otherwise incompatible systems, 
 [slide hideTitle]
 
 # JPA Entities
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-30-31-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Entities in JPA are POJO classes representing our data.
 
@@ -55,6 +59,8 @@ public class Student {
 [slide hideTitle]
 
 # Annotations
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-32-33-annotations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 These are the **seven** most commonly used **annotations** in JPA:
 
@@ -103,6 +109,8 @@ If no **column** annotation is applied, the default values apply.
 [slide hideTitle]
 
 # JPA Configuration
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-34-38-jpa-configuration-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## `persistence.xml`
 
@@ -177,6 +185,8 @@ In the `pom.xml` file, we include the following:
 
 ## JPA Save Objects
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-39-jpa-save-objects-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Let us take a look at the syntax for **saving** objects:
 
 ```java
@@ -203,6 +213,8 @@ Then, we attempt to persist a `student` entity with the name of "Teo" into the d
 
 # JPA Relations
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-40-jpa-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Consider the following diagram.
 
 It will assist you in creating your own entity.
@@ -214,6 +226,8 @@ It will assist you in creating your own entity.
 [slide hideTitle]
 
 # Persistence Context (PC) and Entities
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-41-persistence-context-and-entities-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The persistence context (PC) is responsible for dealing with persistent data.
 
@@ -236,6 +250,8 @@ Persistent data can have four different states, depending on the persistence con
 
 # Entity Object Life Cycle
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-42-entity-object-life-cycle-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The life cycle of an entity object has four stages.
 
 [image assetsSrc="Hibernate(7).png" /]
@@ -252,7 +268,9 @@ The life cycle of an entity object has four stages.
 
 [slide hideTitle]
 
-# JPA Write Data Methods
+# JPA Methods
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-43-44-45-46-47-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## persist()
 

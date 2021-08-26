@@ -2,6 +2,8 @@
 
 # Table Per Class: Joined
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/04.Hibernate-Code-First/04-Hibernate-Code-First-11-17-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 To avoid the disadvantages of the **TABLE_PER_CLASS** strategy, we are using **JOINED** strategy.
 
 This strategy **maps** child and parent class entities in a **separate** database table.

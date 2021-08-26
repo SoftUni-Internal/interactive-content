@@ -3,6 +3,8 @@
 
 # Statement Тypes
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-23-25-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Once we obtain the connection, it is time to **interact** with the database. 
 
 As we mentioned the JDBC API provides you with **several interfaces** and classes.
@@ -28,12 +30,9 @@ Boolean ret = stmt.execute(sql);
 System.out.prinln("Is employee updated = " + ret.toString())
 ```
 
-[/slide]
+## Statements Example
 
-[slide hideTitle]
-# Statements Example
-
-## PreparedStatement
+### PreparedStatement
 
 This interface is used when you intend to call a given statement several times. 
 
@@ -50,7 +49,7 @@ stmt.setDouble(1, Double.parseDouble(salary));
 
 ```
 
-## CallableStatement
+### CallableStatement
 We use this statement when we need to access the database's stored procedures. 
 
 This method **does accept** parameters.

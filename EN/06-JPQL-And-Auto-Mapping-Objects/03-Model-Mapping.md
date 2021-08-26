@@ -4,6 +4,8 @@
 
 # Model Mapper
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/06.JPQL-&-Auto-Mapping-Objects​/06-JPQL-&-AMO​-13-15-model-mapping-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We often need to transfer data between similar objects. 
 
 With entities, we want to transfer similar properties from the entity model to a DTO. 
@@ -92,6 +94,8 @@ The use of conventions helps in determining property-value mappings.
 [slide hideTitle]
 
 # Adding Model Mapper
+
+[video src="" poster="" /]
 
 To use **Model Mapper**, begin by adding it to your project.
 

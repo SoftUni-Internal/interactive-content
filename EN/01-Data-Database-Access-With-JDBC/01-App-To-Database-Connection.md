@@ -3,6 +3,8 @@
 [slide hideTitle]
 # ORM Frameworks Overview
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-3-5-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In this course, we will learn how to **manipulate a database** by using the application layer, which is a **specialized program** that has the ability to manipulate the database.
 
 On one side we have an **object-oriented language such as Java**, which is great in combining variables and methods into classes and objects.

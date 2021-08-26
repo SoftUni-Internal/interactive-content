@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Java Database Connectivity (JDBC)
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-13-14-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 JDBC is a **standard Java API** for database-independent connectivity, which allows to connect to а database, create queries, execute **CRUD operations** as well as manipulating the database schema.
 
 By using JDBC we can **invoke store procedures** and **create costume functions**.
@@ -11,6 +13,8 @@ By using JDBC we can **invoke store procedures** and **create costume functions*
 
 [slide hideTitle]
 # JDBC Architecture
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-15-16-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="Spring-Data-Database-Access-With-JDBC.png" /]
 
@@ -26,6 +30,8 @@ The driver manager supports **multiple drivers** connected to different **types 
 [slide hideTitle]
 
 # JDBC API
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-17-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JDBC API provides several interfaces and classes:
 
@@ -46,6 +52,8 @@ Another example is if we want to **increase the salaries** of the employees, wor
 [slide hideTitle]
 
 # JDBC API - ResultSet Class
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-18-19-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ResultSet maintains a **cursor** pointing to its current row of data, which we iterate through.
 
@@ -84,6 +92,8 @@ The driver **converts** the underlying data to the Java type, this could be stri
 
 ## Java.sql and MySQL Driver
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-20-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The java.sql package provides all previously mentioned JDBC **classes**.
 
 By **using the classes** such as Prepare Statement, Connection, ResultSet, etc., from the SQL package, **less coupling createд** between our application and the databases.
@@ -97,6 +107,8 @@ Connector/J can be downloaded on the [MySQL webpage](https://dev.mysql.com/downl
 [slide hideTitle]
 
 # MySQL Driver Connection
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-21-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Connection with the database is established via **connection string**:
 - `jdbc:<driver protocol>:<connection details>`
@@ -114,7 +126,13 @@ In this example we have:
 - `soft_uni` - database name
 - `props` - database credentials (username and password)
 
-## Setting up The Driver in IntelliJ IDEA
+[/slide]
+
+[slide hideTitle]
+
+# Setting up The Driver in IntelliJ IDEA
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-22-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is how to set up the MySQL connector driver in IntelliJ IDEA as an external library:
 

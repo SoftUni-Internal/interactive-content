@@ -2,6 +2,8 @@
 
 # Table Per Class Strategy Overview
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/04.Hibernate-Code-First/04-Hibernate-Code-First-6-7-8-9-10-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In the Table per class strategy, the subclasses and the superclass are mapped to different individual tables.
 
 The annotation `@Inheritance` is used on the main entity class with strategy = `InheritanceType.TABLE_PER_CLASS`.

@@ -40,6 +40,8 @@ For example, when we invoke a service method that communicates with the database
 
 # Entity Usage
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/06.JPQL-&-Auto-Mapping-Objects​/06-JPQL-&-AMO​​-11-entity-usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 If we have a simple application and interact with a database to obtain an entity's information, we can communicate without a DTO but directly with the entity.
 
 Otherwise, we replicate the object entity.
@@ -59,6 +61,8 @@ Our DTO can combine the information and demand it using a single query and retur
 [slide hideTitle]
 
 # DTO Usage
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/06.JPQL-&-Auto-Mapping-Objects​/06-JPQL-&-AMO​​-12-dto-usage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This example illustrates how to use a DTO to **combine data** from multiple tables:
 

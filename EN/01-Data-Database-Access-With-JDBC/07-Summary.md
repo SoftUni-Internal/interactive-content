@@ -2,6 +2,8 @@
 
 # Summary
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-34-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## In this lesson you learned:
 
 - We got to know the ORM frameworks and their job to **map Java objects to SQL entities**

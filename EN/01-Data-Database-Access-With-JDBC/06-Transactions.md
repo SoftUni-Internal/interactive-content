@@ -2,6 +2,8 @@
 
 # Transactions
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-31-33-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 JDBC every query, update, delete, etc. it is a **separate transacrion**, 
 it means that `.executeQuery()` and `.executeUpdate()` commits the transactione after every statement. 
 

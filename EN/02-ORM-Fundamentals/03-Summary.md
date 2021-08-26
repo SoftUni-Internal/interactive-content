@@ -3,6 +3,8 @@
 
 ## In this lesson you learned:
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/02.ORM-Fundamentals/02-ORM-Fundamentals-19-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - **Introduction to ORM**
   * a **programming technique** used to **map objects** to **database tables**
   * it automatically creates **SQL** queries

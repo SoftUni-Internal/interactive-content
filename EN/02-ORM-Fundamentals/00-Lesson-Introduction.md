@@ -4,6 +4,8 @@
 
 # Lesson Content
 
+[video src="" poster="" /]
+
 ## In this lesson you will learn:
 
 **1. What ORM is**

@@ -2,6 +2,8 @@
 
 # Table Relations
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/04.Hibernate-Code-First/04-Hibernate-Code-First-24-25-database-relationships-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 There are several types of database relationships:
 
 - **One to One** relationships
@@ -23,6 +25,8 @@ Many to Many relationships describes a mapping between two entities, where one e
 [slide hideTitle]
 
 # One-To-One Relationship
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/04.Hibernate-Code-First/04-Hibernate-Code-First-26-29-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 One-To-One mapping represents a point reference between two Java objects.
 
@@ -55,7 +59,6 @@ public abstract class BasicShampoo implements Shampoo {
 
 ## One-to-One Bidirectional
 
-
 The bidirectional relationship provides navigational access in both directions.
 
 We can access the other side, without extra queries.
@@ -87,6 +90,8 @@ public class BasicLabel implements Label {
 [slide hideTitle]
 
 # Many-To-One Relationship
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/04.Hibernate-Code-First/04-Hibernate-Code-First-30-33-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In Many to Many relationships, one entity contains values that point to another entity that has **unique** values.
 
@@ -129,12 +134,13 @@ public class ProductionBatch implements Batch {
 }
 ```
 
-
 [/slide]
 
 [slide hideTitle]
 
 # Many-To-Many Relationship
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/04.Hibernate-Code-First/04-Hibernate-Code-First-34-35-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 In Many-to-Many relationships, entities between both sides of the relationship can have multiple references to each other.
 
@@ -180,6 +186,8 @@ public abstract class BasicIngredient implements Ingredient {
 [slide hideTitle]
 
 # Fetch Types
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/04.Hibernate-Code-First/04-Hibernate-Code-First-36-37-fetch-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Fetching in hibernate is the process of obtaining data from the database and making it available to the application.
 

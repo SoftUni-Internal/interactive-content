@@ -2,7 +2,9 @@
 
 # Application to Database Connection
 
-- Download the [demo](https://softwareuniversity-my.sharepoint.com/:x:/r/personal/ivan_softuni_bg/_layouts/15/Doc.aspx?sourcedoc=%7B7612887C-7509-40AB-98B4-6FCE8C4AB0EC%7D&file=UCDN%20Resources%20Link%20-%20Still%20adding%20links.xlsx&action=default&mobileredirect=true&cid=4b401da1-c14d-48ae-8d68-ad53f655c8fd) from the course platform
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-6-7-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+- Download the [demo](https://videos.softuni.org/Java/Java-Spring-Advanced/db-access-with-jdbc-lab-demo-part-1-solution-.zip) from the course platform
 - You are given a simple application that:
   - establishes connection with the "**soft_uni**" database
   - executes simple MySQL statement to retrieve the employees' names by **given salary criteria**
@@ -12,6 +14,8 @@
 [slide hideTitle]
 
 # Connection to Database via Java App Demo
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-8-11-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - Let us analyze the program:
   - connection to DB is established by asking the user to give credentials:
@@ -67,6 +71,8 @@ while(rs.next()) {  // Retrieving data
 [slide hideTitle]
 
 # Demo Conclusion
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/01.Data-Database-Access-With-JDBC/01-Data-Database-Access-With-JDBC-12-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We can access databases on a programmer level with every relational database such as PostgreSQL, MySQL, SQLite, etc., by using the same approach:
 - Create connection

@@ -2,6 +2,8 @@
 
 # Hibernate Framework
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-11-12-hibernate-framework-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Hibernate is an open-source Java ORM framework that handles mapping an object-oriented model to a relational database.
 
 It is implemented by the configuration of an **XML file** or by using **Java Annotations.**
@@ -26,6 +28,8 @@ It improves application performance, maintainability, and portability, providing
 
 # Java ORM Approaches
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-13-java-orm-approaches-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We have **two** different approaches to **Java ORM:**
 
 - **POJO** (Plain Old Java Objects) + **XML mappings**
@@ -43,6 +47,8 @@ We have **two** different approaches to **Java ORM:**
 [slide hideTitle]
 
 # Hibernate Configuration
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-14-17-hibernate-configuration-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ## Adding Maven to Your Project
 
@@ -125,6 +131,8 @@ The database configuration contains six properties:
 [slide hideTitle]
 
 # Hibernate Implementation: Example
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-18-19-20-21-22-23-24-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To create an application, first we need to build the **POJO** classes.
 
@@ -249,6 +257,8 @@ public static void main(String[] args) {
 
 # Hibernate Query Language - HQL
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-25-hibernate-querying-language-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Hibernate Query Language extends upon SQL, allowing us to utilize **object-oriented programming** in our **SQL** queries.
 
 The difference between both is that Hibernate Query language is fully object-oriented, supporting the concepts of **inheritance** and **polymorphism**.
@@ -283,6 +293,8 @@ JOIN s.major AS major
 [slide hideTitle]
 
 # Retrieve Data by Criteria
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/03.Introduction-to-Hibernate/Introduction-to-Hibernate-26-hibernate-retrieve-data-by-criteria-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 This is how we can obtain information by `criteria`:
 

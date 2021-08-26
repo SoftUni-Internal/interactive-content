@@ -1,8 +1,9 @@
 # Lab: Hibernate Code First 
 
 [slide hideTitle]
+# Vehicle Hierarchy
 
-# 1. Vehicle Hierarchy
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/04.Hibernate-Code-First/04-Hibernate-Code-First-problem-3-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Your task is to **create a Vehicle hierarchy.**
 
@@ -45,11 +46,7 @@ Use the appropriate **inheritance types** to reach **the diagrams** in the examp
 
 [image assetsSrc="Hibernate-Code-First-Lab(2).png" /]
 
-
-[/slide]
-
-[slide hideTitle]
-# 2. Relations
+## Relations
 
 ## Plane_number
 
@@ -59,8 +56,6 @@ Use the appropriate **inheritance types** to reach **the diagrams** in the examp
 
 
 [image assetsSrc="Hibernate-Code-First-Lab(3).png" /]
-
-
 
 ## Companies
 
@@ -78,5 +73,26 @@ Use the appropriate **inheritance types** to reach **the diagrams** in the examp
 
 [image assetsSrc="Hibernate-Code-First-Lab(5).png" /]
 
+[/slide]
+
+[slide hideTitle]
+# One-to-Many Relationship: Company and Planes
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/04.Hibernate-Code-First/04-Hibernate-Code-First-problem-1-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+[slide hideTitle]
+# One-to-One Relationship: Cars and Plate Numbers
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/04.Hibernate-Code-First/04-Hibernate-Code-First-problem-2-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+
+[slide hideTitle]
+# Many-to-Many Relationship: Drivers and Trucks
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/04.Hibernate-Code-First/04-Hibernate-Code-First-problem-4-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
