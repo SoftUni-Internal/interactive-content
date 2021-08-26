@@ -4,17 +4,7 @@
 
 # Exam Rules
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-1-Overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-2-Resources-Overview-and-Config-setup-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-3-Mongoose-Config-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-4-Mongoose-Config-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-5-Express-setup-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-6-Router-setup-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-1-2-3-4-5-6-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-backend/08-Exam-Preparation-NEW.zip) **for this task.**
 
@@ -152,17 +142,7 @@ You should make the following validations while **creating** or **editing a play
 [slide hideTitle]
 # Guest Pages: 15 Pts
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-10-Displaying-RegisterPage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-11-Registration-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-12-Login-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-13-Logout-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-14-Authentication-Middleware-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-15-Autorization-Middleware-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-10-11-12-13-14-15-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 These are the pages and functionalities, accessible by **Guests (logged out users).**
 
@@ -194,17 +174,7 @@ Both **passwords** must **match!**
 [slide hideTitle]
 # User Pages: 55 Pts
 
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-16-HomePage-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-17-Creating-A-Play-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-18-Visualizing-correct-home-view-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-19-Details-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-20-Like-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
-
-[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-21-Edit-and-Delete-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/Javascript-Back-End/EN/08.Exam-Preparation/JS-BackEnd-ExamPrep-16-17-18-19-20-21-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 These are the **templates** and **functionalities**, accessible by **Users** (**logged in** users).
 
