@@ -24,9 +24,7 @@ Since each container is independent from the host OS, the applications can be ru
 
 There are two approaches when it comes to encapsulating an application - virtual machines and containers.
 
-In the graphic above, we see two structures.
-
-The one on the right displays the structure of a virtual machine, at the root of which is an operating system.
+At the root of a VM is an operating system.
 
 The Hypervisor provides hardware abstraction to the host OS.
 
@@ -36,9 +34,7 @@ Each guest OS process is fully isolated from its neighbours, meaning that they a
 
 Visually, the guest OS envronment is indistinguishable from the host OS.
 
-The left block vusualises the structure of a container.
-
-Once again, we have a host OS, but this time we also have a container runtime - Docker.
+In a container, we once again have a host OS, but this time we also have a container runtime - Docker.
 
 The Docker runtime environment allows us to use Linux features in order to create a jail.
 
