@@ -2,7 +2,7 @@
 
 [slide hideTitle]
 
-# What is UseEffect Hook?
+# What is UseEffect?
 
 [video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/09.ReactJS-React-Hooks/interactive-react-hooks-13-20-effect-hook-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
@@ -24,9 +24,9 @@ To use **useEffect**, we need to import it from React, like this:
 import React, { useEffect } from 'react';
 ```
 
-## How to use UseEffect?
+## How to apply UseEffect?
 
-When we want to use **useEffect**, we need to pass it a function.
+When we want to apply **useEffect**, we need to pass a function to it.
 
 **useEffect** will execute when the action is committed.
 

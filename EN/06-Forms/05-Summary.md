@@ -10,8 +10,8 @@
 `state = {value: ''};`
 
 - Controlled forms
-  - State is handled by the component
-  - Using event handlers to take care of changes in state as well as form submissions
+  * state is handled by the component
+  * using event handlers to take care of changes in state as well as form submissions
 
 
 ```js
@@ -35,8 +35,8 @@ class Register extends React.Component {
 ```
 
 - Uncontrolled forms
-  - Form data is handled by the DOM itself
-  - Done by creating references to DOM elements
+  * form data is handled by the DOM itself
+  * done by creating references to DOM elements
 
 
 ```js
@@ -53,9 +53,9 @@ class MyComponent extends React.Component {
 ## In the next lesson you will learn:
 
 - React Hooks
-  - State hook
-  - Effect hook
-  - Custom hooks
+  * state hook
+  * effect hook
+  * custom hooks
 - Rules of hooks
 - `UseContext` and `UseReducer` hooks
 

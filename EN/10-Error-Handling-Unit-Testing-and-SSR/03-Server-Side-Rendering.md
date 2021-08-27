@@ -24,7 +24,7 @@ In short, server-side rendering works as follows:
 
 - The browser downloads the HTML, making the page visible on the end\-user's browser
 
-- Lastly, the browser downloads the scripts, and by running them, enables user interaction on the site
+- Lastly, the browser downloads the scripts, and by running them, it enables user interaction
 
 ## Client-Side Rendering
 

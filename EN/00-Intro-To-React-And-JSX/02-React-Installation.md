@@ -6,7 +6,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Intro-to-ReactJS-8-9-React-Installation-Creae-React-App-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Developed by Facebook, `Create-React-App` is a command-line tool, that enables bootstrapping a **React** project in seconds.
+Developed by Facebook, `Create-React-App` is a command-line tool that enables bootstrapping a **React** project in seconds.
 
 Using `create-react-app` enables several benefits:
 
@@ -32,7 +32,7 @@ Make sure you have Node.js installed by typing `node -v`.
 
 If you do not have Node.js, you can download it [here](https://nodejs.org/en/).
 
-Then, in the command-line window type `npx create-react-app my-app` and press [Enter].
+Then, in the command-line window, type `npx create-react-app my-app` and press [Enter].
 
 You can replace `my-app` with any name you want for your app directory.
 
@@ -44,9 +44,9 @@ After installation finishes, go to the newly created directory by typing `cd my-
 
 To start your React application, type in `npm start`.
 
-This will open a development version of your project in your default browser.
+That should open a development version of your project in your default browser.
 
-In case it does not open, just click [this link](http://localhost:3000) or open your browser of choice and go to `http://localhost:3000`.
+Otherwise, you can click [this link](http://localhost:3000) or open your browser of choice and go to `http://localhost:3000`.
 
 [/slide]
 
@@ -54,11 +54,11 @@ In case it does not open, just click [this link](http://localhost:3000) or open 
 
 # Finding Information
 
-To learn more information about React, you can [visit their official website: reactjs.org](https://reactjs.org/).
+To gain additional knowledge about React, you can [visit their official website: reactjs.org](https://reactjs.org/).
 
 You can also [view the detailed documentation](https://reactjs.org/docs/installation.html).
 
-CodeSandbox is an online environment in which you can experiment with your code and see the results in real-time.
+CodeSandbox is an online environment where you can experiment with your code and see the results in real-time.
 
 You can visit it [here](https://codesandbox.io/).
 
@@ -72,25 +72,25 @@ You can visit it [here](https://codesandbox.io/).
 
 React applications typically consist of many files.
 
-This is what a typical file tree looks like:
+The following image shows what a typical React project tree looks like:
 
 [image assetsSrc="intro-to-react-and-jsx-2.png" /]
 
 Here are some of the most important files and what they do:
 
 - `package.json`: Stores the project configuration
-  - Names and version numbers of all dependencies
-  - Build actions that can be run from a terminal instance
+  * names and version numbers of all dependencies
+  * build actions, which are executable from a terminal instance
 
 [image assetsSrc="intro-to-react-and-jsx-3.png" /]
 
 - `index.html`: The main HTML file of our app
-  - The `div` with `id="main"` is typically what React uses to output components
+  * the `div` with `id="main"`  is the default element React uses to output the root component
 
 [image assetsSrc="intro-to-react-and-jsx-4.png" /]
 
 - `index.js`: This file takes care of our startup script
-  - Here we also define which HTML element to use for rendering
+  * there, we also define which HTML element to use for rendering
   
 [image assetsSrc="intro-to-react-and-jsx-5.png" /]
 
@@ -98,11 +98,11 @@ Here are some of the most important files and what they do:
 
 Let us take a look at the `App` component.
 
-- `App.js`: Stores the component logic
+- `App.js`: Stores the root component's logic
   
 [image assetsSrc="intro-to-react-and-jsx-6.png" /]
 
-- `App.css`: Contains all the styles, related to the given component
+- `App.css`: Contains all the styles related to the given component
 
 [image assetsSrc="intro-to-react-and-jsx-7.png" /]
 

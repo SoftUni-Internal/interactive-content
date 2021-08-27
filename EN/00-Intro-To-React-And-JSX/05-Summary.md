@@ -6,8 +6,8 @@
 # In this lesson you learned:
 
 - React is a JavaScript Library
-  - Makes it easy to build user interfaces
-  - Components are its main building blocks
+  * makes it easy to build user interfaces
+  * components are its main building blocks
   
 ```js
 const HelloMessage = (props) => (
@@ -22,11 +22,11 @@ ReactDOM.render(
 ```
 
 - Create-React-App initializes a project in a matter of seconds
-  - Just type `npx create-react-app my-app` in the terminal
+  * just type `npx create-react-app my-app` in the terminal
 
 
 - JSX is React's own JavaScript syntax
-  - Enables embedding HTML inside JavaScript, and vice versa
+  * enables embedding HTML inside JavaScript, and vice versa
   
    
 ```js
@@ -41,7 +41,7 @@ React.createElement("div",
 ```
 
 - Component composition defines views
-  - Encapsulation keeps data accessible only to the component it belongs to
+  * encapsulation keeps data accessible only to the component it belongs to
   
 ```js
 function Welcome() {
@@ -64,9 +64,9 @@ function ComponentBlender() {
 ## In the next lesson you will learn:
 
 - Components Overview
-  * Props
-  * State
-  * Handling DOM Events
-  * Conditional Rendering
+  * props
+  * state
+  * handling DOM events
+  * conditional Rendering
 
 [/slide]

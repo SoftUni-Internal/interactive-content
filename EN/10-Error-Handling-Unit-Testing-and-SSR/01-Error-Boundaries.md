@@ -79,10 +79,10 @@ Then, inside the constructor, we create a state object with the boolean `hasErro
 For a class component to become an error boundary it **must** define **at least one** of the following methods:
 
 - `static getDerivedStateFromError()` 
-  - Used when rendering a fallback user interface
+  * used when rendering a fallback user interface
 
 - `componentDidCatch()`
-  - Used to log error information
+  * used to log error information
 
 
 Depending on the value of `hasError`, we either render a **fallback UI** or render the actual component we have wrapped.

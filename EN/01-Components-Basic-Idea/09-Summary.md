@@ -6,7 +6,7 @@
 # In this lesson you learned:
 
 - Components are reusable elements
-    - They are Functional and Class-based.
+    * they are functional and class-based
     ```js
     function Welcome(props) {
     return <h1>Hello, {props.name}</h1>;
@@ -35,7 +35,7 @@
         }
     }
     ```
-- Handling Events in React
+- Handling events in React
 
     ```js
     <button onClick={activateLasers}>  
@@ -43,8 +43,8 @@
     </button>
     ```
 
-- Conditional Rendering
-    - If and ternary operators.
+- Conditional rendering
+    * if-statements and ternary operators
 
     ```js
     function Greeting(props) {

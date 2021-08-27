@@ -84,8 +84,8 @@ The only way to test `componentDidMount` and `componentDidUpdate` is the `mount`
 `shallow` works as follows:
 
 - Renders only the component itself, without including its children
-  - This can be useful for component isolation which enables pure unit testing.
-  - It protects against changes or bugs in a child component altering the behavior or output of the component under test
+  * this can be useful for component isolation which enables pure unit testing
+  * it protects against changes or bugs in a child component altering the behavior or output of the component under test
 - In Enzyme 3 and above, shallow components have access to lifecycle methods by default
 - Cannot access props passed into the root component, but can access those passed into child components, and can test the effect of props passed into the root component
 

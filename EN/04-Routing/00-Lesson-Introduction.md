@@ -10,9 +10,9 @@
 
 **1. Virtual DOM**
 
--  What is Virtual DOM
+-  Definition and purpose
 
-**2. What is Routing**
+**2. What Routing is**
 
 -  Overview of **client-side Routing**
 

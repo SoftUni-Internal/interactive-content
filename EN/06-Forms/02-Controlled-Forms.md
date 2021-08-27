@@ -16,8 +16,8 @@ In React, however, we handle data inside the component:
 
 - The values of input elements are stored within the state
 - We use custom handlers to change or submit events
-  - The `setState()` function is called in the event of state change
-  - Using a custom function, we handle the form submission
+  * the `setState()` function is called in the event of state change
+  * using a custom function, we handle the form submission
 
 
 [/slide]
@@ -133,7 +133,7 @@ constructor(props) {
 There are some important  key points to remember about controlled components:
 
 - You should always use `setState()` to modify the state
-  - Directly modifying the state can result in losing data or the component not displaying changes
+  * directly modifying the state can result in losing data or the component not displaying changes
 
 `this.state.notification = 'You should never update the state like this.';`
 
@@ -142,7 +142,7 @@ There are some important  key points to remember about controlled components:
 - On every keystroke, `changeHandler` updates the state, and the display value updates accordingly
 
 - Every type of state mutation has an associated handler
-  - Like `changeHandler` and `submitHandler`, for example
+  * like `changeHandler` and `submitHandler`, for example
 
 ```js
 changeHandler(event) {

@@ -37,9 +37,9 @@ However, since most React applications are **single page applications**, a commo
 There are two ways to handle forms in React:
 
 - Controlled components
-  - This is the most used way to handle forms
+  * this is the most used way to handle forms
 
 - Uncontrolled components
-  - Helpful in some specific cases
+  * helpful in some specific cases
 
 [/slide]

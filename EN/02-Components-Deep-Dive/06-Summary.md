@@ -7,7 +7,7 @@
 
 - Component Lifecycle
 
-   - **Mounting**, **Update** and **Unmounting**
+   * **Mounting**, **Update** and **Unmounting**
 
 - Higher-Order Component (HOC)
 

@@ -55,10 +55,10 @@ It takes in two parameters \- the element we want to render, and the `root` HTML
 There are some rules and good practices you have to follow:
 
 - **Standard HTML elements** are **always** written in **lowercase**
-  - Elements like `div`, `p`, `h1`, `form` and so on.
+  * elements like `div`, `p`, `h1`, `form` and so on
   
 - For our **custom components**, we should always use **Pascal case**
-  - `LoginForm`, `Greeting`, `CustomHeader`
+  * `LoginForm`, `Greeting`, `CustomHeader`
 
 - The **names** of components **cannot be expressions**, but we can use **variables**
 

@@ -13,9 +13,9 @@ If you missed some of these parts, **go back and complete them before you contin
 
 The next step is to **protect the routes**
 
-   - If a guest user tries to access some of the **private parts**, he should be **redirected** to the publications or **404 page**
+   * if a guest user tries to access some of the **private parts**, he should be **redirected** to the publications or **404 page**
 
-   - If some of them **already logged** **in user tries to access the public parts**, he should be **redirected** to the publications or **404 page**
+   * if some of them **already logged** **in user tries to access the public parts**, he should be **redirected** to the publications or **404 page**
 
 - Refactor **all class components** to **functional components** that work with **hooks.**
 

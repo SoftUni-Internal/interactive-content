@@ -18,7 +18,7 @@ Generally, React tracks all components in the Virtual DOM and keeps the **order*
 
 When a change happens in the virtual DOM, a **diffing algorithm** compares it with the real DOM.
 
-This algorithm returns what is updated, and React knows which component to modify.
+This algorithm returns what has been updated, so React knows which component to modify.
 
 React has a **declarative** syntax.
 

@@ -8,17 +8,17 @@
 
 - Virtual DOM:
 
-   - representation of the real DOM.
+   * representation of the real DOM
 
 - Routing:
 
-   - **Client-Side**
+   * **Client-Side**
 
-   - **Server-Side**
+   * **Server-Side**
 
 - React Router:
 
-   - **react-router-dom**
+   * **react-router-dom**
 
    ```js
    const App = (
@@ -34,15 +34,15 @@
    );
    ```
 
-   - **BrowserRouter**
+   * **BrowserRouter**
       
-      - **Location** object
+      * **Location** object
 
       ```js
       this.props.location
       ```
       
-      - **History** object
+      * **History** object
 
       ```js
       this.props.history
@@ -50,13 +50,13 @@
 
 - Lazy loading with React:
 
-   - **React.lazy**
+   * **React.lazy**
 
    ```js
    const OtherComponent = React.lazy(() => import('./OtherComponent'));
    ```
 
-   - **Suspense**
+   * **Suspense**
 
    ```js
    function MyComponent() {
@@ -74,10 +74,10 @@
 
 - Forms
 
-   - Controlled Forms
+   * controlled Forms
 
-   - Uncontrolled Forms
+   * uncontrolled Forms
 
-   - How to validate them.
+   * how to validate them
 
 [/slide]

@@ -6,7 +6,7 @@
 # In this lesson you learned:
 
 - Error boundaries are special React components that handle errors while a given component renders
-  - The errors must occur in the child component tree
+  * the errors must occur in the child component tree
 
 ```js
 class ErrorBoundary extends React.Component {
@@ -39,8 +39,8 @@ class ErrorBoundary extends React.Component {
 
 
 - Jest and Enzyme are used together for testing purposes
-  - Jest is a test runner, assertion, and mocking library
-  - Enzyme is a testing utility with additional functionality
+  * Jest is a test runner, assertion, and mocking library
+  * Enzyme is a testing utility with additional functionality
 
 ```js
 /// ...
@@ -71,7 +71,7 @@ it('renders list-items', () => {
 
 ```
 - Server\-side rendering improves performance and increases response time
-  - Search engine optimization increases page visibility
+  * search engine optimization increases page visibility
 
 
 [/slide]

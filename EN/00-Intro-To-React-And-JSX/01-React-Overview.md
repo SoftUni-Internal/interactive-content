@@ -8,7 +8,7 @@
 
 React is a JavaScript **library**, made for building **user interfaces**.
 
-In the world of programming, **a library is a collection of prewritten code**, from which you can use as much, or as little as you would like.
+In the world of programming, **a library is a collection of prewritten code**, from which you can use as much or as little as you would like.
 
 Using a **library**, contrary to a framework, **we are in control of the flow** of our application.
 
@@ -22,9 +22,9 @@ With a community of millions of developers, it is easy to find solutions to any 
 
 The main building blocks of a React application are **components**.
 
-Components are **reusable pieces of code**, that are used to render **parts of a webpage**, resulting in a **view**.
+Components are **reusable pieces of code** used to render **parts of a webpage**, resulting in a **view**.
 
-Every React component has its own **state**, which takes care of storing **component-level data**.
+Every React component has its own **state**, which handles storing **component-level data**.
 
 Components can be written as **functions**, as well as **classes**.
 
@@ -45,11 +45,11 @@ First, we create our `Greeting` component with the `props` object as a parameter
 
 This object is what React uses to access **external data**.
 
-The text between the parentheses is **not just typical HTML**.
+The text between the parentheses is **not just regular HTML**.
 
 `<div>Nice to meet you! My name is {props.firstName} {props.lastName} and I am {props.age} years old.</div>`
 
-It is React's custom **combination of JavaScript and HTML**, called **JSX**.
+That is React's custom **combination of JavaScript and HTML**, called **JSX**.
 
 We will discuss JSX in more depth in a later video.
 
@@ -79,15 +79,15 @@ React has a distinctive set of **features** that make it stand out from other Ja
 
 - **Isomorphic**: By using Node on the back\-end, JavaScript is running on both the client and the server:
 
-  - Improving user experience
+  * improving user experience
 
-  - Makes code **easier to modify** for all developers
+  * makes code **easier to modify** for all developers
 
-- **Native Support**: React is supported **natively** on both **desktop** and **mobile** operating systems, enabling you to have only **one codebase** for all platforms:
+- **Native Support**: React is **natively** supported on both **desktop** and **mobile** operating systems, enabling you to have only **one codebase** for all platforms:
 
-  - With the help of **Electron**, you can create smooth desktop apps
+  * with the help of **Electron**, you can create smooth desktop apps
 
-  - Using **to React Native**, you can build user interfaces for both Android and iOS
+  * using **React Native**, you can build user interfaces for both Android and iOS
 
 
 [/slide]
@@ -98,13 +98,13 @@ React has a distinctive set of **features** that make it stand out from other Ja
 
 [video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/01.ReactJS-Intro-To-React-And-JSX/Intro-to-ReactJS-7-Advantages-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-- **Easy to learn**: requires you to just be familiar with JavaScript on an intermediate level
+- **Easy to learn**: only requires intermediate-level JavaScript knowledge
 
 - Fast **performance**: Since anyone can view the source code, React is very robust and far less vulnerable to security breaches
 
 - Uses all **EcmaScript 6** features: this includes **promises**, **classes** and **modules**
 
-- Compatible with other libraries: The use of open standards enables **better compatibility** with other libraries, while also making **scalability** a breeze
+- Compatible with other libraries: The use of open standards enables **better compatibility** with other libraries, while also making **scalability** easier
 
 - Great **error reporting**: If anything goes wrong while running your app, React will inform you both on the **terminal** instance from which you launched your app, as well as in the **live version in your browser**
 
