@@ -34,7 +34,7 @@ When used together, they help us build web applications.
 
 # The Spring Platform
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-05-06-07-08-Spring-Platform-Spring-Module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-05-06-07-08-09-10-11-12-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The Spring Framework is composed of many modules, including:
 
@@ -64,7 +64,7 @@ The Spring Platform consists of multiple projects, such as:
 
 # Spring Data
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-13-Spring-Data-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-13-14-Spring-Data-Role-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Spring Data is the project of the **Spring ecosystem** responsible for operating with databases. 
 
@@ -134,7 +134,7 @@ The `spring-boot-starter-data-jpa` dependency adds the **Spring Data** project t
 
 # Configuration
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-18-Configuration-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-18-19-Configuration-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **configuration** for **Spring application** is held in an **application.properties** file.
 
@@ -175,7 +175,7 @@ Depending on the project, **additional properties** may be needed.
 
 # Java-Based Configuration
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-20-21-Java-Based-Configuration-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-20-21-22-Java-Based-Configuration-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The less common way of configuring a Spring Boot project is by using an annotation-based **JavaConfig** file:
 

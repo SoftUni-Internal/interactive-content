@@ -4,7 +4,7 @@
 
 # The Service Layer
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-31-32-Spring-Data-Services-Service-Pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-31-32-34-35-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **Service pattern** is an architecture pattern that holds the business logic in a separate layer within the application's architecture. 
 

@@ -4,7 +4,7 @@
 
 # Project Setup
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-Lab-01-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-Lab-01-04-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Your task is to create an accounting system that has users with accounts and manages money transfers or withdrawals.
 
@@ -66,15 +66,15 @@ Create 3 directories to help organize the project:
 
 [slide hideTitle]
 
-# Database Models
+# Database Models and Repositories
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-Lab-05-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-Lab-05-10-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Start by setting up the database models.
 
 Each one of them will be as follows:
 
-## The User Entity
+### The User Entity
 
 | **Columns** | **Constraints** |
 |---|---|
@@ -83,7 +83,7 @@ Each one of them will be as follows:
 | age | Accepts **Integer** values |
 | accounts | Each user can have many accounts, which will be identified by their **id** |
 
-## The Account Entity
+### The Account Entity
 
 | **Columns**  | **Constraints** |
 |---|---|
@@ -93,13 +93,7 @@ Each one of them will be as follows:
 
 Set up the appropriate tables, columns, column properties, and table relations.
 
-[/slide]
-
-[slide hideTitle]
-
-# Repositories
-
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-Lab-10-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+## Repositories
 
 Create two repositories - one for the **User** and another for the **Account**.
 
@@ -125,7 +119,7 @@ Add several methods to help you with the data retrieval.
 
 # Services
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-Lab-11-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-Lab-11-16-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Define several service **interfaces** for the models:
 
