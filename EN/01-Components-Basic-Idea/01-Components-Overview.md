@@ -46,11 +46,13 @@ function Person(props){
 
 [video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-6-Class-Component-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-To create a class component we need a simple JavaScript class, that extends the `React.Component` class.
+To create a class component, we need a simple JavaScript class.
 
-This way we can have access to all the methods in the `React.Component` class.
+It should extend the `React.Component` class.
 
-If we need we can have a constructor method, as well, but it is not required.
+This way, we can have access to all its methods.
+
+Having a constructor method is not required unless we are working with an internal state.
 
 The only method that is **required** is the `render()` method.
 
@@ -70,11 +72,11 @@ class Person extends React.Component {
 
 [video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-7-Component-Syntax-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-Component's names always start with PascalCase. 
+Component names use the PascalCase convention.
 
-Tags must be closed otherwise our code will not compile.
+Tags must be closed for our code to compile.
 
-All the information is passed via the **props** object from the parent to the child component.
+To pass information from the parent to the child component, we use the **props** object.
 
 ```js
 <Dropdown> A dropdown list
