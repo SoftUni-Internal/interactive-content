@@ -84,7 +84,7 @@ When the application is on that location, a specific component is rendered.
 
 # Switch and Link
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-13-exclusive-rendering-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/05.ReactJS-Routing/international-js-reactjs-routing-13-14-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 By default, if two routes match, they will be both rendered.
 

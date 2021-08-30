@@ -45,8 +45,6 @@ Result:
 
 ## Example Two
 
-[video src="" poster="" /]
-
 Fetch can be used **asynchronously**, it is depending on us what to use asynchronously or not.
 
 The best practice to use `async` `await` so we can take advantage of the better performance.
