@@ -1,1 +1,1 @@
-# Workshop: Error Handlinng, Unit Testing and SSR
+# Workshop: Error Handling, Unit Testing and SSR
