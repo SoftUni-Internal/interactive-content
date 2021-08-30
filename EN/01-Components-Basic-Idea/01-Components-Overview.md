@@ -22,7 +22,7 @@ These are **Functional** components and **Classes** components.
 
 [video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-5-Functional-Component-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-A Functional component is a JavaScript function which, accepts a single argument called **props** and returns a React element.
+A Functional component is a JavaScript function which accepts a single argument, called **props**, and returns a React element.
 
 Props stand for **properties** and is a plain JavaScript object.
 

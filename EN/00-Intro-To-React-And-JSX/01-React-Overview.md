@@ -12,8 +12,6 @@ In the world of programming, **a library is a collection of prewritten code**, f
 
 Using a **library**, contrary to a framework, **we are in control of the flow** of our application.
 
-[image assetsSrc="intro-to-react-and-jsx-1.png" /]
-
 **Created by Facebook**, React is among the **most popular** JavaScript libraries.
 
 With a community of millions of developers, it is easy to find solutions to any issues you may face.

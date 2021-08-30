@@ -3,7 +3,7 @@
 
 [video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/02.ReactJS-Components-Basic-Idea/React-Components-Basic-Idea-52-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-# In this lesson you learned:
+## In this lesson you learned:
 
 - Components are reusable elements
     * they are functional and class-based
