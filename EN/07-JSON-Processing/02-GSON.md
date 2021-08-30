@@ -261,8 +261,6 @@ Here we are converting multiple objects to an array.
 
 # Using Gson with Default Options
 
-[video src="" poster="" /]
-
 You do not need to use the GsonBuilder class if you want to use the default Gson configuration.
 
 ## Serialization

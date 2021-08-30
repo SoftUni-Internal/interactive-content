@@ -95,8 +95,6 @@ The use of conventions helps in determining property-value mappings.
 
 # Adding Model Mapper
 
-[video src="" poster="" /]
-
 To use **Model Mapper**, begin by adding it to your project.
 
 - Include it as a Maven dependency:
