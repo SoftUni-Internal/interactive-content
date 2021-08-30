@@ -2,6 +2,7 @@
 
 # Summary
 
+[video src="" poster="" /]
 
 ## In this lesson, you learned:
 

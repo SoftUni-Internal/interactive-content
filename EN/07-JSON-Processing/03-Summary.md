@@ -4,6 +4,8 @@
 
 ## In this lesson you learned:
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/07.JSON-Processing/07-JSON-Processing-14-Summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - **JSON**
   - An **easy-to-read** format for data transferring
   - Based on **JavaScript** but **language-independent**

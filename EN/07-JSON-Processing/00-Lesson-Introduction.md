@@ -3,6 +3,8 @@
 
 # Lesson Content
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/07.JSON-Processing/07-JSON-Processing-01-02-Introduction-Table-of-contents-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## In this lesson you will learn:
 
 **1. JSON**

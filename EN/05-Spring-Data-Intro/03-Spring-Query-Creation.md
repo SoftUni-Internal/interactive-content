@@ -4,6 +4,8 @@
 
 # Query Creation
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-26-27-28-Spring-Data-Query-Creation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 One of the main functionalities of **Spring Data** repositories is the built-in query builder mechanism.
 
 Built by following the **convention over configuration** design pattern, each repository method has a self-explanatory syntax:
@@ -26,6 +28,8 @@ Further, **Spring Data JPA** will do a property check and traverse nested proper
 
 [slide hideTitle]
 # Query Methods
+
+[video src="" poster="" /]
 
 We can apply this mechanism when building simple queries.
 

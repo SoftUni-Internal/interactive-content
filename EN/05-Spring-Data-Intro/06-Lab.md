@@ -4,6 +4,8 @@
 
 # Project Setup
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-Lab-01-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Your task is to create an accounting system that has users with accounts and manages money transfers or withdrawals.
 
 Build the system using the code-first approach and Spring Data.
@@ -66,6 +68,8 @@ Create 3 directories to help organize the project:
 
 # Database Models
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-Lab-05-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Start by setting up the database models.
 
 Each one of them will be as follows:
@@ -95,6 +99,8 @@ Set up the appropriate tables, columns, column properties, and table relations.
 
 # Repositories
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-Lab-10-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Create two repositories - one for the **User** and another for the **Account**.
 
 ```java
@@ -118,6 +124,8 @@ Add several methods to help you with the data retrieval.
 [slide hideTitle]
 
 # Services
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-Lab-11-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Define several service **interfaces** for the models:
 

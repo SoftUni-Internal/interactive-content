@@ -4,6 +4,8 @@
 
 # The Service Layer
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-31-32-Spring-Data-Services-Service-Pattern-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **Service pattern** is an architecture pattern that holds the business logic in a separate layer within the application's architecture. 
 
 Service classes are categorized into different layers, depending on the functionality they introduce.
@@ -58,6 +60,8 @@ public class StudentServiceImpl implements StudentService {
 [slide hideTitle]
 # Spring Data Architecture
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-33-Spring-Data-Architecture-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A model has a **repository** layer and a **service** layer.
 
 [image assetsSrc="Spring-Data-Service.png" /]
@@ -73,6 +77,8 @@ The service layer **processes** either the incoming information and persists it 
 [slide hideTitle]
 
 # Entry Point
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-36-37-Entry-Point-Command-Line-Runner-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 First, we will need an entry point for our **Spring Application**.
 

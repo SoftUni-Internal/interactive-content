@@ -4,6 +4,8 @@
 
 # JavaScript Object Notation Definition
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/07.JSON-Processing/07-JSON-Processing-3-4-5-JSON-example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **JSON** or **JavaScript Object Notation** is a format for **data transferring**.
 
 It passes data as readable **attribute-value pairs** and **arrays**.
@@ -49,11 +51,8 @@ The attributes are in double-quotes while the values are enclosed in double-quot
 
 
 Data parsed as JSON is simple to read, compact, and easy to transfer.
-[/slide]
 
-[slide hideTitle]
-
-# JSON Example
+## JSON Example
 
 JSON objects are often used to transfer data between **client** and **server**.
 
@@ -112,6 +111,8 @@ JSON supports nested objects:
 
 # JSON Function
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/07.JSON-Processing/07-JSON-Processing-6-Function-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 JSON works as an **intermediary** between the **client** and the **server**.
 
 During client-server communication data transfers go through a few steps:
@@ -128,11 +129,7 @@ The following illustration shows how a **client** and a **server** exchanging da
 
 [image assetsSrc="Java-Spring-Data-JSON-Processing-1.png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# JSON Structure
+## JSON Structure
 
 A JSON object consists of one or many **names** within **double quotation marks** and their **respective values**.
 
@@ -169,6 +166,5 @@ There are a few distinct parts that we can see from the JSON information above:
 - The value of **address** is **an object**
 
 - The value of **studentIdNumbers** is **an array**
-
 
 [/slide]

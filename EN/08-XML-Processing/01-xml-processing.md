@@ -4,6 +4,8 @@
 
 # XML Definition
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08. XML-Processing/08.XML-Processing-03-04-the-xml-format-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **XML** stands for e**X**tensible **M**arkup **L**anguage.
 
 XML is used for storing and transferring information in a structured way.
@@ -26,11 +28,7 @@ There is also a lot of software that uses XML as a format for storing configurat
 
 [image assetsSrc="xml-processing-01.png" /]
 
-[/slide]
-
-[slide hideTitle]
-
-# XML Markup and Content
+## XML Markup and Content
 
 XML documents contain markup tags placed between **< >** brackets and content between the markup tags.
 
@@ -56,7 +54,10 @@ This line is optional but if it exists it must be the first line of the document
 [/slide]
 
 [slide hideTitle]
+
 # XML Structure
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08. XML-Processing/08.XML-Processing-05-xml-structure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When creating XML documents, you can write your **own elements**.
 

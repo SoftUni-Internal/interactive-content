@@ -4,6 +4,8 @@
 
 # Spring Framework
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-03-04-Framework-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 To gain an understanding of ORM, we went through several steps:
 
 - We learned how to connect to the database and execute native SQL queries in our code through JDBC
@@ -32,6 +34,8 @@ When used together, they help us build web applications.
 
 # The Spring Platform
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-05-06-07-08-Spring-Platform-Spring-Module-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The Spring Framework is composed of many modules, including:
 
 - The **Core Container** - this is the base Spring module and provides the Core, Beans, Context and Expression modules
@@ -58,25 +62,9 @@ The Spring Platform consists of multiple projects, such as:
 
 [slide hideTitle]
 
-# Spring Boot
-
-Spring Boot is a part of the **Spring ecosystem**.
- 
-It is a stand-alone tool used to build the backbone of a **Spring application**.
-
-Its primary purpose is to help the developer get started with a web application by reducing the development time and simplifying configuration.
-
-**Spring Boot** is based on the **convention over configuration** design pattern.
-
-This pattern aims to reduce the number of decisions we should make during the development process.
-
-When following the given framework's conventions, you should not describe every decision in your code.
-
-[/slide]
-
-[slide hideTitle]
-
 # Spring Data
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-13-Spring-Data-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Spring Data is the project of the **Spring ecosystem** responsible for operating with databases. 
 
@@ -100,7 +88,23 @@ Working with **Spring Data** provides multiple benefits, such as:
 
 [slide hideTitle]
 
-# Dependencies
+# Spring Boot
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-15-16-17-Spring-Boot-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+Spring Boot is a part of the **Spring ecosystem**.
+ 
+It is a stand-alone tool used to build the backbone of a **Spring application**.
+
+Its primary purpose is to help the developer get started with a web application by reducing the development time and simplifying configuration.
+
+**Spring Boot** is based on the **convention over configuration** design pattern.
+
+This pattern aims to reduce the number of decisions we should make during the development process.
+
+When following the given framework's conventions, you should not describe every decision in your code.
+
+## Dependencies
 
 To work with **Spring Data in our projects**, we will need to **add two dependencies** in our `pom.xml` file:
 
@@ -129,6 +133,8 @@ The `spring-boot-starter-data-jpa` dependency adds the **Spring Data** project t
 [slide hideTitle]
 
 # Configuration
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-18-Configuration-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The **configuration** for **Spring application** is held in an **application.properties** file.
 
@@ -168,6 +174,8 @@ Depending on the project, **additional properties** may be needed.
 [slide hideTitle]
 
 # Java-Based Configuration
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-20-21-Java-Based-Configuration-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The less common way of configuring a Spring Boot project is by using an annotation-based **JavaConfig** file:
 

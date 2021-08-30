@@ -4,6 +4,8 @@
 
 # GSON
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/07.JSON-Processing/07-JSON-Processing-8-9-GSON-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **GSON** is a **Java library**, developed by **Google**.
 
 It is used for converting Java objects to JSON or the other way around. 
@@ -32,11 +34,7 @@ dependencies {
 }
 ```
 
-[/slide]
-
-[slide hideTitle]
-
-# GSON Initialization
+## GSON Initialization
 
 To create a **GSON instance**, use the `GsonBuilder` class.
 
@@ -68,15 +66,13 @@ Gson gson = new GsonBuilder()
 | excludeFieldsWithModifiers(int... modifiers) | Exclude all fields that have the specified modifiers. Static and transient fields are excluded by default. For example, `excludeFieldsWithModifiers(Modifier.STATIC)` will only exclude static fields. |
 | serializeNulls() | Enable the serialization of null fields. By default they are not serialized. |
 
-
-
-
-
 [/slide]
 
 [slide hideTitle]
 
 # Export a Single Object as JSON
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/07.JSON-Processing/07-JSON-Processing-10-Export-single-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Converting a **single Java object** to **JSON** would happen in **three** stages:
 
@@ -136,6 +132,8 @@ String converted = gson.toJson(personalData);
 
 # Export Multiple Objects as JSON
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/07.JSON-Processing/07-JSON-Processing-11-Export-Multiple-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Converting multiple **Java objects** to **JSON** happens by passing a **List** as an argument to the `toJson` method.
 
 The following code shows how to do so:
@@ -164,6 +162,8 @@ String content = gson.toJson(listForConversion);
 [slide hideTitle]
 
 # Import a Single Object as JSON
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/07.JSON-Processing/07-JSON-Processing-12-Import-Single-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Assume there is the following **JSON object** saved in an `info.json` file:
 
@@ -207,6 +207,8 @@ In the example above we are converting the json file located in `/path/to/file.j
 [slide hideTitle]
 
 # Import Multiple Objects as JSON
+
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/07.JSON-Processing/07-JSON-Processing-13-Import-Multiple-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When you have multiple objects in a JSON you can deserialize them to a Java array.
 
@@ -258,6 +260,8 @@ Here we are converting multiple objects to an array.
 [slide hideTitle]
 
 # Using Gson with Default Options
+
+[video src="" poster="" /]
 
 You do not need to use the GsonBuilder class if you want to use the default Gson configuration.
 

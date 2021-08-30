@@ -4,6 +4,8 @@
 
 # Spring Data Repositories
 
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/05.Spring-Data-Intro/05.Spring-Data-Intro-23-24-25-Spring-Data-Repositories-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **Spring Data Repository** is a tool that provides us with an abstraction of the **repository design pattern**.
 
 It aims to significantly reduce the amount of boilerplate code required to implement data access layers.
