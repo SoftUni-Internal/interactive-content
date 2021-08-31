@@ -56,7 +56,7 @@
     }
     ```
 
-## In the next lesson, you will learn:
+## In the next lesson you will learn:
 
 - Component Lifecycle
 - Higher-Order Components
