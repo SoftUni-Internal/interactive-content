@@ -504,7 +504,7 @@ public class T08TestGas \{
     private static final String TEST_METHOD_NAME = "gas";
     private static final String CLASS_NAME = "Ferrari";
     private static final String NORMAL_DRIVER_NAME_PARAMETER = "normalDriver";
-    private static final String EXPECTED_RESULT = "brum-brum-brum-brrrrr";
+    private static final String EXPECTED_RESULT = "gas";
 
 
     private static final String\[\] methodNames = new String\[\]\{
