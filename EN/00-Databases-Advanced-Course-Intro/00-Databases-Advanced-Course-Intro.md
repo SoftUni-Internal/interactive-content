@@ -46,8 +46,6 @@
 - Your homework is mainly work in class!
   - lessons slides + videos + live demos + exercises
   - homework only exercises
-- How to submit your homework
-  - you can submit your homework in the **platform**
 
 ## Resources
 
