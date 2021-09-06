@@ -1,10 +1,5 @@
 [slide]
 
-# Exam Information
-
-[exam-information]
-
-
-[/exam-information]
+# Coming Soon
 
 [/slide]
