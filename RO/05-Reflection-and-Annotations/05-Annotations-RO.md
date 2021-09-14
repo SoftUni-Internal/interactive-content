@@ -370,7 +370,7 @@ Creați o clasă **Tracker** cu o metodă:
 ```java
 @Author (name = "George")
 public static void main(String[] args) {
-    Tracker.print Methods ByAuthor(Tracker.class);
+    Tracker.printMethodsByAuthor(Tracker.class);
 }
 
 @Author (name "Peter")
