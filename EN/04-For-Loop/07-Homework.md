@@ -493,7 +493,7 @@ Create a program, which calculates and prints the sum of a sequence in zigzag:
 
 | **Input**                  | **Output** |
 | -------------------------- | ---------- |
-| zigZagSum(2, [10, 20]) | -10         |
+| zigZagSum(2, [10, 20]) | 10         |
 | zigZagSum(2, [5, 5])   | 0          |
 
 [/task-description]
@@ -503,7 +503,7 @@ Create a program, which calculates and prints the sum of a sequence in zigzag:
 zigZagSum(2, [10, 20])
 [/input]
 [output]
--10
+10
 [/output]
 [/test]
 [test open]
