@@ -527,7 +527,7 @@ zigZagSum(4, [20, 20, 20, 20])
 zigZagSum(2, [10, 20])
 [/input]
 [output]
-10
+-10
 [/output]
 [/test]
 [test]
@@ -535,7 +535,7 @@ zigZagSum(2, [10, 20])
 zigZagSum(5, [213, 645, 234, 547, 3])
 [/input]
 [output]
-742
+-742
 [/output]
 [/test]
 [test]
