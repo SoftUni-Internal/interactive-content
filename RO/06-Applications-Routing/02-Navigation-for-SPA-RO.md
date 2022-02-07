@@ -167,7 +167,7 @@ Browserele ignoră al doilea parametru și de aceea este un șir gol.
 
 Înainte de a apela metoda `pushState()`, adresa URL va arăta astfel:
 
-[image assetsSrc = "JS-Applications-Routing-12.png" /]
+[image assetsSrc="JS-Applications-Routing-12.png" /]
 
 După instanțarea metodei `pushState()`, adresa URL ar fi astfel:
 
