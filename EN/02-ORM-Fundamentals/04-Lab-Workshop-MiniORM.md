@@ -65,7 +65,7 @@ public class User {
     private int id;
     private String username;
     private String password;
-    private int id;
+    private int age;
     private Date registrationDate;
 
     public User (String username, String password, int age, Date registrationDate) {
