@@ -5,7 +5,7 @@
 ## Download Resources
 
 - Download the needed **resources** from here:
-[https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/exam-preparation-skeleton.zip](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/exam-preparation-skeleton.zip)
+[link](https://videos.softuni.org/resources/java/Java-ORM-And-Spring-Data/exam-preparation-skeleton.zip)
 
 ## Setup Project
 
