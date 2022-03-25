@@ -277,7 +277,7 @@ public class Picture extends BaseEntity {
 
 - Let's create in our **entities** package, another package called **enums**.
 
-[image assetsSrc="20-add-enums.png)" /]
+[image assetsSrc="20-add-enums.png" /]
 
 - Inside it we will add **Enum** file called **Position**.
 
