@@ -20,7 +20,7 @@
 
 - Choose the folder where you put your resources. IntelliJ is smart, and it displays the folder as a project. **Select** your folder and press **OK**.
 
-[image assetsSrc="3-select-folder" /]
+[image assetsSrc="3-select-folder.png" /]
 
 - It will ask you if you trust this project. Click on **Trust Project**.
 
