@@ -316,7 +316,7 @@ Trimiteți o solicitare "**GET**" la linkul de mai jos
 
 Fiecare API are documentație unde puteți vedea cum să o utilizați.
 
-Puteți găsi documentația pentru acest API [here](https://restcountries.eu/).
+Puteți găsi documentația pentru acest API [here](https://restcountries.com/).
 
 - Încercați să filtrați numai **câmpuri specifice** ale informațiilor despre **Italy**
 
