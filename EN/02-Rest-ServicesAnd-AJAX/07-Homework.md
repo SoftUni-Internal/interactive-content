@@ -316,7 +316,7 @@ Send a "**GET**" request to the link given below.
 
 Each API has documentation where you can see how to use it. 
 
-You can find the documentation for this API [here](https://restcountries.eu/).
+You can find the documentation for this API [here](https://restcountries.com/).
 
 - Try to filter only **specific fields** of the information about **Italy**
 
