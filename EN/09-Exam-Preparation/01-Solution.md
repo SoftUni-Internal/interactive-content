@@ -279,8 +279,6 @@ public class Picture extends BaseEntity {
 
 [image assetsSrc="20-add-enums.png" /]
 
-[image assetsSrc="21-enum-type.png" /]
-
 - Inside it we will add **Enum** file called **Position**.
 
 [image assetsSrc="21-enum-type.png" /]
