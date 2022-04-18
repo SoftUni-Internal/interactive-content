@@ -125,7 +125,7 @@ NOTE: Create the entities and their class members **exactly** in the **format st
 
 [image assetsSrc="nlt-workshop-13.png" /]
 
-## Relantionship
+## Relationship
 
 One **Company** can have many **Projects** but only one **Project** can be in one **Company**.
 
