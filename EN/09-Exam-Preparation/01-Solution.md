@@ -439,7 +439,7 @@ public class Team extends BaseEntity {
         this.picture = picture;
     }
 
-    @OneToMany(mappedBy = "team")
+    @OneToMany(mappedBy = "team")enum
     public Set<Player> getPlayers() {
         return players;
     }
