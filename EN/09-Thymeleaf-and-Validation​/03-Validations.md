@@ -1,4 +1,4 @@
-# Validatetion 
+# Validation 
 
 [slide hideTitle]
 # Spring Validation and Thymeleaf
