@@ -1,1 +1,1 @@
-# Judge Workshop: Part 2
+# Workshop: Pathfinder Part 2
