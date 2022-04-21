@@ -4,6 +4,8 @@
 
 # Packets
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Internet-Explained/Packets-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Computers tend to break down information into **bits** - the most basic unit of information.
 
 **Packets** are the Internet's way of dividing data into **small** pieces.
