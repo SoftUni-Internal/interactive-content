@@ -4,6 +4,8 @@
 
 # The Future of the Internet
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Internet-Explained/60.the-future-of-the-internet-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Modern households consist of many devices.
 
 Aside from the typical PCs, laptops, and tablets, there is a whole range of **smart home** accessories that are connected to the Internet.
