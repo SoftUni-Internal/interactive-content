@@ -4,6 +4,8 @@
 
 # Web Server Work Model
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Internet-Explained/How does the internet works-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 A web server is a piece of **software** operated by a computer.
 
 It acts as a **link** between the **browser** and the **database**.
@@ -18,11 +20,8 @@ The following image illustrates how web servers provide the connection between *
 
 [image assetsSrc="Java-Web-Introduction-To-The-Internet-1.png" /]
 
-[/slide]
 
-[slide hideTitle]
-
-# Important Definitions
+## Important Definitions
 
 To easily grasp how the Internet works, we must take a look at its underlying structure.
 
@@ -43,11 +42,9 @@ Here are some of the **basic definitions** needed to understand the Internet:
 - `TCP vs UDP` - **transfer protocols**
     * **UDP** is **more lightweight** but **less reliable** than **TCP**
 
-[/slide]
 
-[slide hideTitle]
 
-# Servers and Clients
+## Servers and Clients
 
 **Servers** and **clients** are the two sides of **Internet communication**.
 
@@ -67,11 +64,9 @@ For example, let us say you are trying to **visit** `google.com`.
 
 When you **connect** to the site, Google's servers **handle** your request and return a **response**, in the form of a webpage.
 
-[/slide]
 
-[slide hideTitle]
 
-# Network Protocol
+## Network Protocol
 
 As covered in a previous part of the lesson, **network protocols** set the rules for data transfer on the Internet.
 
