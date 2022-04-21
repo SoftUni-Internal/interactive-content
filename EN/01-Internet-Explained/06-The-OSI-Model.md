@@ -4,6 +4,8 @@
 
 # What is The OSI Model?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Internet-Explained/42.osi-model-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **OSI (Operation Systems Interconnection)** model is the foundation for most network protocols.
 
 Introduced in **1983**, its primary goal is to standardize networks, allowing for **multi-vendor systems**.
