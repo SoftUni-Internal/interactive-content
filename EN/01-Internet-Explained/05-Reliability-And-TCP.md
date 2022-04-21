@@ -2,7 +2,9 @@
 
 [slide hideTitle]
 
-# Reliability
+# Reliability and TCP
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Internet-Explained/Reliability-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The transfer of data through the Internet is a **complicated process**.
 
@@ -16,11 +18,8 @@ The Transmission Control Protocol (**TCP**) ensures that Internet communication 
 
 **TCP** brings **reliability** to the packet transferring process.
 
-[/slide]
 
-[slide hideTitle]
-
-# Transmission Control Protocol - TCP
+## Transmission Control Protocol - TCP
 
 As covered previously, **packets** hold important information in their **headers**.
 
@@ -40,11 +39,8 @@ If the transmission is **problem-free** and the packets are **in order**, the da
 
 It is then **merged** into the **original file**.
 
-[/slide]
 
-[slide hideTitle]
-
-# User Datagram Protocol
+## User Datagram Protocol
 
 **UDP** is a simple transaction protocol.
 
@@ -54,11 +50,8 @@ Data delivery with the **User Datagram Protocol** is **not guaranteed**, and nei
 
 Often referred to as the "**fire-and-forget**" protocol, it is not concerned with whether the data was transferred successfully or not.
 
-[/slide]
 
-[slide hideTitle]
-
-# TCP vs. UDP
+## TCP vs. UDP
 
 The following list aims to compare **TCP** and **UDP**:
 
