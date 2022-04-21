@@ -4,6 +4,8 @@
 
 # History
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Internet-Explained/Internet-History-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The Internet is a relatively **new** technology that has gone through **rapid development** in the most recent decades.
 
 Its history marks its **beginning** in the **1960s**, when Paul Baran, an **engineer**, proposes a distributed network based on data in message blocks.
@@ -38,6 +40,8 @@ Other companies, such as Google, became even more prominent market leaders in th
 
 # Introduction
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Internet-Explained/Internet-Introduction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **Internet**, at its core, is a **network** of computers connected.
 
 Using cables, buried **underground** or deep in the **oceans**, it **connects** many **different machines**.
@@ -60,9 +64,6 @@ Some service providers have additional services, such as hosting or domain name 
 
 All data traffic is **transmitted** via the ISP.
 
-[/slide]
-
-[slide hideTitle]
 
 # What is a Network?
 
@@ -83,10 +84,6 @@ For example, a **laptop**, connected to a **PC** with a **USB cable**, makes up 
 They can share **images**, **audio**, or **video** files.
 
 By contrast, **data centers** consists of **thousands of devices**, sharing **tons of different information**.
-
-[/slide]
-
-[slide hideTitle]
 
 # Networks and Internet
 
