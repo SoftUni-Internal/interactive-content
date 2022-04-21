@@ -4,6 +4,8 @@
 
 # Definition
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Internet-Explained/Internet-Protocol-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The **Internet Protocol** is a communications protocol that essentially **forms the Internet**.
 
 This protocol is strictly **stateless**, meaning that it does not maintain any state between messages.
@@ -18,11 +20,8 @@ Developers are working on **newer** versions of the protocol, aiming to improve 
 
 The main goal is to provide Internet access to more people.
 
-[/slide]
 
-[slide hideTitle]
-
-# IP Address
+## IP Address
 
 The Internet consists of **billions** of interconnected computers.
 
@@ -43,11 +42,9 @@ The IP protocol has had many **versions** over the years, but only two are in cu
 - **IPv4**: the most common version
 - **IPv6**: a newer version, with a much higher number of addresses
 
-[/slide]
 
-[slide hideTitle]
 
-# IPv4
+## IPv4
 
 IPv4 or **Internet Protocol version 4** was the standard for creating IP addresses until the introduction of IPv6 a few years ago.
 
@@ -75,11 +72,8 @@ From that date, **IPv4 addresses** addresses can only be **switched** by **buyin
 
 The **IPv6** standard, an alternative to **IPv4**, has a significantly larger number of possible addresses.
 
-[/slide]
 
-[slide hideTitle]
-
-# IPv6
+## IPv6
 
 **IPv6** was created as a draft standard in 1998.
 
@@ -127,11 +121,8 @@ It has three distinct parts:
 
 When entered by a user, the **browser** makes a **request** to a **Domain Name Server**, which caches **domain names** and their respective **IP addresses**.
 
-[/slide]
 
-[slide hideTitle]
-
-# DNS Example
+## DNS Example
 
 The following image illustrates the connection between a **domain name** and an **IP address**:
 
