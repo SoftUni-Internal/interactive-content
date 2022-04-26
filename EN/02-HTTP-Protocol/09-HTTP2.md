@@ -20,6 +20,8 @@ As of April 2020, 43.7% of all the websites support HTTP/2 (W3Techs statistics).
 
 # What's new? 
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/HTTP-Protocol/45-what-is-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The first thing to understand is that HTTP/2 is times faster than HTTP/1.1.
 
 This is achieved through several fundamental changes.
