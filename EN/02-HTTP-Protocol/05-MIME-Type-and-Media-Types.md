@@ -2,6 +2,8 @@
 
 # MIME and Media Types
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/HTTP-Protocol/23-mime-and-media-types-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Multi-Purpose Internet Mail Extensions**
 
 It's the internet's standard for indicating the type of data sent through the internet.
