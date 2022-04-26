@@ -2,6 +2,8 @@
 
 # HTTP Tools for Developers
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/HTTP-Protocol/26-http-tools-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 There are several tools connected to **HTTP** which might get handy in certain situations.
 
 The browser tools are the ones that you can check the HTTP Requests-Response communication between Client-Server
