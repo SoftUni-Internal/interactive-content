@@ -2,6 +2,8 @@
 
 # HTTP Basics
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/HTTP-Protocol/1-http-protocol-Ready-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In the last lesson when we learned about the OSI Model, we mentioned HTTP and the fact that it works on the last **Application layer** of the protocol. 
 
 HTTP is a text-based protocol that allows us to fetch resources such **HTML documents, pictures, and files** over the internet.
