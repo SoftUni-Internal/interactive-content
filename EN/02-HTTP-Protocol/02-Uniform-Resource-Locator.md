@@ -2,6 +2,8 @@
 
 # Uniform Resource Locator - URL
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/HTTP-Protocol/08-url_1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 HTTP is the protocol by which the client and the server communicate.
 
 It is the set of rules both parties should keep for the communication to happen without any misunderstandings.
