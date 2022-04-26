@@ -2,6 +2,8 @@
 
 # Web Server
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/HTTP-Protocol/31-web-server-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 What is a **WEB Server** and what job it does?
 
 A web server is a computer system that processes **HTTP requests** and returns **HTTP Responses based on the Requests**.
