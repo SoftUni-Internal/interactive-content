@@ -245,7 +245,7 @@ Function names and parameters use camel case​: `myFunction`
 
 Contrary to languages like Java and C#, the opening bracket `{` stays at the same line​:
 
-```js live
+```js live no-template
 function printDots(count) {
   console.log(".".repeat(count));
 }
