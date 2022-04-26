@@ -2,6 +2,8 @@
 
 # HTTP Response
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/HTTP-Protocol/16-http-response-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Let's examine the response as well. 
 
 A reponse message has consists of: 
