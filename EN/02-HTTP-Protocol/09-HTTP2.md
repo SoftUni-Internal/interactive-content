@@ -2,6 +2,8 @@
 
 # HTTP/2
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/HTTP-Protocol/43-http2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **HTTP/2.0** is the first and major revision of the Hypertext Transfer Protocol since 1997 when we received the HTTP/1.1 version.
 
 It was accepted as a Proposed Standard by the IETG (Internet Engineering Steering Group) and further introduced in most of the modern browsers (Chrome, Mozilla, Internet Explorer, etc.)
