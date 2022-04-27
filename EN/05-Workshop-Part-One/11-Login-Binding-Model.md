@@ -11,6 +11,8 @@ First we will add Binding Models for the **Login** and **Register**. Inside the 
 
 [image assetsSrc="32-Binding-Models.png" /]
 
+[/slide]
+
 [slide hideTitle]
 
 # Register Binding Model
