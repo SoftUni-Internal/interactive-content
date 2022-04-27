@@ -31,6 +31,8 @@ Each input has an **error** validation, and it will display the appropriate mess
 
 [slide hideTitle]
 
+# Register view View Code
+
 This is the full code for the **register.html**
 
 ```java

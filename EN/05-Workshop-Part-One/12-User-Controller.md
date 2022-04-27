@@ -62,7 +62,7 @@ Each route **/users/register** and **/users/login** will have post and get reque
 
 [slide hideTitle]
 
-## User Controller Code
+# User Controller Code
 
 This is the full code for the **user controller**.
 
