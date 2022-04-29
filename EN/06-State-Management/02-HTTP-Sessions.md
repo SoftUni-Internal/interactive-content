@@ -3,6 +3,9 @@
 [slide hideTitle]
 # What Are Sessions?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/State-Management/24-http-sessions-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 **Sessions** are a way to store information about a user to be used across ​multiple pages​.
 
 They are persisted server-side and linked via session ID - a unique **number**.
@@ -70,6 +73,6 @@ Each session consists of:
 [slide hideTitle]
 # Demo: Sessions
 
-Placeholder
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/State-Management/31-live-demo-HTTP-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

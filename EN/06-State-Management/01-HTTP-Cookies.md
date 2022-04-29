@@ -3,6 +3,8 @@
 [slide hideTitle]
 # What Are Cookies?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/State-Management/01-state-management-Introduction-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Cookies** are small pieces of data that are used as a storage medium in the browser.
 
 They are stored in the form of plain **text** and contain no executable code.
@@ -96,6 +98,9 @@ This enables many features we are already used to, such as:
 [slide hideTitle]
 # How Are Cookies Used?​
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/State-Management/10-how-cookies-are-used-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 Once a server receives an HTTP request, it can send one or multiple `Set-Cookie` headers with the response:
 
 ```js
@@ -156,6 +161,9 @@ They can contain the cookie's expiration date, the path on which they should be 
 
 [slide hideTitle]
 # Scope​
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/State-Management/13-scope-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Since each cookie is received from a given server, the client must send it to the same server with each request.
 
@@ -218,6 +226,9 @@ These are the most common ones:
 
 [slide hideTitle]
 # Examine Your Cookies
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/State-Management/17-examine-your-cookies-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Cookies are typically stored in a Relational Database Management System (RDBMS), such as SQLite.
 
@@ -282,6 +293,9 @@ Here you can customize your preferences, as well as view and delete cookies.
 [slide hideTitle]
 # Third Party Cookies
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/State-Management/22-thrid-party-cookies-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 Third-party cookies are set from a site different from the currently visited one.
 
 For example, developers can embed a "**Tweet**" button in a blog, allowing Twitter to store a cookie on your browser.
@@ -301,6 +315,6 @@ Many modern web browsers allow the option to "Opt-Out" of third party cookies.
 [slide hideTitle]
 # Demo: Cookies
 
-Placeholder
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/State-Management/23-live-demo1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

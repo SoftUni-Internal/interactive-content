@@ -2,6 +2,9 @@
 
 # Summary
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/State-Management/32-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 ## In this lesson you learned:
 
 - **Cookies** are small files of **plain text**
