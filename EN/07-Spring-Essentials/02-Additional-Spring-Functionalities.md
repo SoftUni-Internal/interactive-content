@@ -2,6 +2,9 @@
 
 [slide hideTitle]
 # ModelAttribute
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Essentials/21-model-attribute-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 When the annotation is used at the method level, it indicates the **purpose of that method**, which is to add one or more model attributes. 
 
 Such methods support the same argument types as the "**request mapping**" methods, but they cannot be mapped directly to requests.
@@ -59,6 +62,9 @@ In the body of the method, we could **manipulate** and **save** the object to th
 [slide hideTitle]
 # CrossOrigin
 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Essentials/25-cross-origin-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 By using "**CrossOrigin**" we can make HTTP requests to a **different domain** and Java Spring automatically adds needed headers so another domain can execute requests to this route. 
 
 ```java
@@ -73,6 +79,9 @@ public String hello() {
 
 [slide hideTitle]
 # Qualifier
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Essentials/26-qualifier-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 The solution to the situation is when you create more than one bean of the same type and want to wire only one of them with a property. 
 

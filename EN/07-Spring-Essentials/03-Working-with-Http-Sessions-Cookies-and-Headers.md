@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Working with the Session
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Essentials/30-http-session-cookies-headers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The session will be **injected from the IoC** container when called:
 
 ```java

@@ -3,6 +3,9 @@
 
 # What is Thymeleaf
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Essentials/01-spring-essentials-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 Thymeleaf is a **Java template engine** for server-side rendering, which means HTML, XML, JavaScript, CSS, and text are **processed and created** on the server, and the client (browser) **receives fully functional HTML**.
 
 Thymeleaf makes views more **dynamic**, by using different variables and **executing operations** onto the variables and also **iterate** over collections.
@@ -11,7 +14,18 @@ Thymeleaf is **not the only technology** that could render HTML on the server, t
 [/slide]
 
 [slide hideTitle]
+
+# Thymeleaf Demo
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Essentials/06-how-to-use-thymeleaf-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+[/slide]
+
+
+[slide hideTitle]
 # How to Use Thymeleaf
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Essentials/05-what-is-thymeleaf-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We ca use Spring Initializer to **import** Thymeleaf, or use this dependency in the `pom.xml` file:
 
@@ -216,6 +230,9 @@ The `th:classappend`: is the shorter syntax:
 [slide hideTitle]
 # Forms in Thymeleaf
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Essentials/16-fragments-in-thymeleaf-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
+" poster="" /]
+
 In Thymeleaf we can create input forms with validations:
 
 ```js
@@ -322,6 +339,15 @@ Use Fragment
 <th:block th:include="~{/fragments/footer}> </th:block>
 ...
 ```
+[/slide]
+
+[slide hideTitle]
+
+# Fragments Live Demo
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Essentials/20-fragments-demo-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 [/slide]
 
 
