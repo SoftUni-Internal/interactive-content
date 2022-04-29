@@ -1,7 +1,10 @@
 # Validation 
 
 [slide hideTitle]
-# Spring Validation and Thymeleaf
+# Spring Validation and Thymelea
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Thymeleaf-And-Validation/19-how-to-validate-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8f" poster="" /]
+
 
 Validation is commonly used for **validating user's input** because we should be very careful what type of data is **stored** in the database.
 
@@ -187,3 +190,5 @@ implements ConstraintValidator < PresentOrFuture, Date > {
 The `isValid()` method should be overridden, which will return if the input data is valid or not.
 
 [/slide]
+
+

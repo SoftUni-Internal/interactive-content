@@ -1,6 +1,8 @@
 [slide hideTitle]
 # Helpers
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Thymeleaf-And-Validation/01-thyme-leaf-and-validations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" ]
+
 Helpers are **objects** that provide **built-in** functionalities and help to enhance a view.
 
 This is a list of available helper objects and their function:
@@ -24,6 +26,9 @@ This is a list of available helper objects and their function:
 
 [slide hideTitle]
 # Date Object
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Thymeleaf-And-Validation/07-date-week-name-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 ## Custom Format
 In a controller class, we can have **GET** methods, within the mapping URL. 
@@ -361,6 +366,9 @@ When we use `#aggregates.sum()`, and as an **argument**, we pass an array of num
 
 [slide hideTitle]
 # Thymeleaf in JavaScript
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Thymeleaf-And-Validation/18-thymeleaf-in-js-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 It is also possible to **parametrize scrips** and passing data dynamically to JavaScipt variables into the view.
 

@@ -2,6 +2,8 @@
 
 # Summary
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Thymeleaf-And-Validation/26-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 ## In this lesson you learned:
 
 - Objects that provide built-in functionalities that help you enhance your view
