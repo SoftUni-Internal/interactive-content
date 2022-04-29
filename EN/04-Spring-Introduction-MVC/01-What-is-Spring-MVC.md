@@ -3,6 +3,9 @@
 [slide hideTitle]
 # Definition
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Introduction-MVC/01-introduction-Spring-MVC-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 The **Model View Controller** also known as **MVC** is one of the most popular patterns for **creating complex web applications**.
 
 What this pattern does is to **split** a large application into **specific** sections that all have their purpose.

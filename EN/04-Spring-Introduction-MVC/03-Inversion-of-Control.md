@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Field Injection
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Introduction-MVC/28-Inversion-of-control-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Feild injection could be done by using **autowire annotation** on fields member in a class.
 
 It is easier for **writing** and for **adding** new dependencies, but it is not recommended.

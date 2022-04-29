@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Layers
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Introduction-MVC/32-layers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The code in every application should be **split base on it is functionality**, otherwise, navigation through the application could be very complicated. 
 
 The typical Java Spring application organization looks like this:
@@ -31,6 +33,9 @@ Each module corresponding to the application layer and is easier to navigate.
 
 [slide hideTitle]
 # Thin Controllers
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Introduction-MVC/35-thin-controllers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 Every controller in Java Spring applications should follow the two most important principles:
 
