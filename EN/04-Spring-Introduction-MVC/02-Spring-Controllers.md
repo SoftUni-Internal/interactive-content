@@ -3,8 +3,7 @@
 [slide hideTitle]
 # Controller Creation
 
-[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Introduction-MVC/07-spring-controllers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
-" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Fundamentals/EN/Spring-Introduction-MVC/07-spring-controllers-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When a controller class is created, it should contain the `@Controller` annotation, which tells the compiler that this is a controller class.
 
