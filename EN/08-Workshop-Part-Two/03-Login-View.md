@@ -93,7 +93,7 @@ If you don't remember them you can register again, or view them in the database.
 
 After pressing the **submit** Login button, we should be redirected to the **Home** page. If everything is working fine, we should see the Logout button with the other buttons.
 
-[image assetsSrc="36-Logged-Home" /]
+[image assetsSrc="36-Logged-Home.png" /]
 
 We can try to **logout** because we have added the logic in the previous workshop.
 
