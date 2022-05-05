@@ -55,6 +55,8 @@ This is the code for the **view**:
 
 [/slide]
 
+[slide hideTitle]
+
 # View User Page
 
 For now, we will only replace the:
