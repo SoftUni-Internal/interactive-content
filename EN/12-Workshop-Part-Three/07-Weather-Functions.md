@@ -6,7 +6,7 @@ In the **weather.js** we will have two **functions** for the two locations on th
 
 First, we will get the two box elements.
 
-```JavaScript
+```js
 const boxImgA = document.getElementById('box-a-img');
 const boxImgB = document.getElementById('box-b-img');
 const boxTempA = document.getElementById('box-a-temp');
@@ -25,7 +25,7 @@ Below the **constants**, we will write the two functions. First, we will fetch t
 
 You can open **https://api.openweathermap.org/data/2.5/weather?q=Berlin&appid=8dd1b8c6c70655b59ef4f75b4d9fb753**, in your browser and see the information for yourself. That is the data that we will fetch.
 
-```javascript
+```js
 {"coord":{"lon":13.4105,"lat":52.5244},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02d"}],"base":"stations","main":
 {"temp":290.81,"feels_like":290.04,"temp_min":288.7,"temp_max":292.58,"pressure":1017,"humidity":54},"visibility":10000,"wind":{"speed":1.79,"deg":262,"gust":2.24},"clouds":{"all":20},"dt":1651656790,"sys":
 {"type":2,"id":2011538,"country":"DE","sunrise":1651634967,"sunset":1651689405},"timezone":7200,"id":2950159,"name":"Berlin","cod":200}
@@ -37,14 +37,14 @@ There is one small problem with the **API**. The returned degrees are in **Kelvi
 
 - 1 **Kelvin** is -272.15 **Degrees Celsius**
 
-```JavaScript
+```js
 boxTempB.innerText = Math.round(info.main.temp - 272.15);
 ```
 
 But we want to also change the **image of the weather** depending on the returned data.
 Inside the **resources/static/images/weather-icons/** directory, we can preview the image. Depending on the returned data, we will load the specific image.
 
-```javascript
+```js
 boxImgB.src = "/images/weather-icons/" + info.weather[0].icon + ".png";
 ```
 
@@ -54,7 +54,7 @@ boxImgB.src = "/images/weather-icons/" + info.weather[0].icon + ".png";
 
 This is how the **full code** of the functions will look like:
 
-```JavaScript
+```js
 fetch("https://api.openweathermap.org/data/2.5/weather?q=Berlin&appid=8dd1b8c6c70655b59ef4f75b4d9fb753")
     .then(data => data.json())
     .then(info => {
