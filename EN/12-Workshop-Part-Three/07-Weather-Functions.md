@@ -48,6 +48,7 @@ Inside the **resources/static/images/weather-icons/** directory, we can preview 
 boxImgB.src = "/images/weather-icons/" + info.weather[0].icon + ".png";
 ```
 
+[/slide]
 [slide hideTitle]
 
 # Weather Functions Code
