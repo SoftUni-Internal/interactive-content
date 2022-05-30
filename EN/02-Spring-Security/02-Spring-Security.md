@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Spring Security - Definition
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/02-Spring-Security/14-spring-security-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Imagine spring security as being a watchman or security guard in front of a **web application**, which stopping every request.
 
 The security guard typically asks two questions:

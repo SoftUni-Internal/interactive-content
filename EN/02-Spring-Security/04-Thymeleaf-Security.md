@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Functionality to Thymeleaf
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/02-Spring-Security/39-thymeleaf-security-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Views are **security-aware** in most real-life applications that's the case.
 
 There are lots of **situations** where we like to show or hide some **content** If the user is authenticated or not.
@@ -76,5 +78,13 @@ It is possible to authorize roles too:
 </html>
 ```
 In this example, we can lock **content** only for authorized users in the "**ADMIN**" role.
+
+[/slide]
+
+[slide hideTitle]
+
+# Demo 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/02-Spring-Security/42-demo-01-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

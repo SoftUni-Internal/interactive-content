@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Spring CSFR Protection
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/02-Spring-Security/37-csrf-token-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 **Cross-site request forgery** also known as CSRF is one of the many **security attacks that** a web application could suffer.
 
 For example, when a user **logs into his** bank account the bank's server gives him a **session token** (cookie).

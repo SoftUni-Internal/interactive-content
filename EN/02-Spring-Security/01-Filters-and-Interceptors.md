@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Filters
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/02-Spring-Security/01-intro-spring-security-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The entire infrastructure for spring security and a web application, in general, reveals around the **filter's chain**.
 
 It means that spring security comes with **different types of filters**, with certain responsibilities.
