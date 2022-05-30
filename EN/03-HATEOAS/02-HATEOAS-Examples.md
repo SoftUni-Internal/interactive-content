@@ -4,6 +4,8 @@
 
 # A Response Without HATEOAS​
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/03-HATEOAS/07-hateoas-examples-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Many APIs return the requested data as a response, without providing additional metadata, causing many inconveniences, and in many cases - stopping applications from operating properly.
 
 ```js

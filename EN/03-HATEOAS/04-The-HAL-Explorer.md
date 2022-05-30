@@ -2,6 +2,8 @@
 
 # HAL Explorer
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/03-HATEOAS/21-hal-explorer-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The HAL Explorer provides us with a graphical representation of our API.
 
 It allows us to view each response, along with available actions, response statuses and headers.

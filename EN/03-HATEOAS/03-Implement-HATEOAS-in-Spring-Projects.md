@@ -4,6 +4,8 @@
 
 # HATEOAS Dependency​
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/03-HATEOAS/20-demo-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Spring HATEOAS makes adding hypermedia links to RESTful API responses much easier.
 
 Begin by adding it as a Maven dependency:

@@ -4,6 +4,8 @@
 
 ## In this lesson you learned:
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/03-HATEOAS/27-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - **HATEOAS** is an abbreviation of Hypermedia As the Engine of Application State​
   * it is a constraint of the REST application architecture ​
   * using hypermedia, it describes what future actions are ​available to the client​

@@ -4,6 +4,9 @@
 
 # Hypermedia As the Engine of Application State​
 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/03-HATEOAS/01-hateoas-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 HATEOAS (Hypermedia As the Engine of Application State​) is an architectural constraint of a RESTful API.
 
 It uses hypermedia to provide the user with more clarity about possible future actions, including the URIs for particular CRUD operations.
