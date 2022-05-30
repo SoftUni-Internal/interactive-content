@@ -4,6 +4,8 @@
 
 # RESTful Design
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/01-Web-Api-and-REST-Controllers/01-web-apis-rest-controllers-Intro-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 An API, short for Application Programming Interface, is a software intermediary that allows us to access third-party functionality in our applications.
 
 A RESTful API follows specific architectural constraints, such as abstracting the underlying third-party logic from developers.

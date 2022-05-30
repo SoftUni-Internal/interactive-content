@@ -2,6 +2,8 @@
 
 # Rest Template
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/01-Web-Api-and-REST-Controllers/3.rest-template-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Our services often need information from a third-party service to return a resource.
 
 The Spring `RestTemplate` class​ offer a set of methods to interact with a RESTful web service.

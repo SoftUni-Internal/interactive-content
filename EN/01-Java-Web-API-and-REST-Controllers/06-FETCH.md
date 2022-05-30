@@ -2,6 +2,8 @@
 
 # Fetch API​
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/01-Web-Api-and-REST-Controllers/40-fetch-api-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The `fetch` JavaScript method provides a generic definition of Request and Response objects​.
 
 It allows us to make network requests similar to XMLHttpRequest (XHR).​

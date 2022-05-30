@@ -4,6 +4,8 @@
 
 # Selection of Elements
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/01-Web-Api-and-REST-Controllers/27-dom-manipulations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 The Document Object Model is a tree of nodes created by the browser.
 
 Each node represents an HTML element, and can be manupulated using JavaScript.

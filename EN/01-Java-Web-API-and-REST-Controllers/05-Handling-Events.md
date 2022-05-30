@@ -4,6 +4,8 @@
 
 # JavaScript Event Handling
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/01-Web-Api-and-REST-Controllers/35-handling-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 JavaScript event handling is used to make our webpage respond to user input.
 
 An event is sent from the browser when a user performs an action.
@@ -110,5 +112,13 @@ myBtn.addEventListener('focus', handleFocus);​
 Here we attach four event listeners for different events.
 
 We can have more than one listener for the same event type (e.g. `click`).
+
+[/slide]
+
+[side hideTitle]
+
+# Demo
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/01-Web-Api-and-REST-Controllers/26-demo-01-Books-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

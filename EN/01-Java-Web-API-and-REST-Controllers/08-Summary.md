@@ -4,6 +4,8 @@
 
 ## In this lesson you learned:
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/01-Web-Api-and-REST-Controllers/45-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 - A **RESTful API** is a web service that must follow the six REST **architectural constraints**
   * use of a uniform interface (UI)​
   * client-server based​
