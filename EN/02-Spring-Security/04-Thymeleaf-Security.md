@@ -85,6 +85,6 @@ In this example, we can lock **content** only for authorized users in the "**ADM
 
 # Demo 
 
-[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/02-Spring-Security/42-demo-01-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/02-Spring-Security/42-demo-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
