@@ -115,7 +115,7 @@ We can have more than one listener for the same event type (e.g. `click`).
 
 [/slide]
 
-[side hideTitle]
+[slide hideTitle]
 
 # Demo
 
