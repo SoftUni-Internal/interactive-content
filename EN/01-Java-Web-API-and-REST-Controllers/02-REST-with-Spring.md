@@ -2,9 +2,11 @@
 
 [slide hideTitle]
 
-[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/01-Web-Api-and-REST-Controllers/2.rest-with-spring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 # Response Body On MVC Controller​
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/01-Web-Api-and-REST-Controllers/2.rest-with-spring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 We use the `@ResponseBody` annotation to tell a controller class to return data directly, instead of serving up a UI template (often HTML). 
 
