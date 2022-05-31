@@ -2,6 +2,9 @@
 
 # Scheduling Tasks
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/05-Events/23-scheduling-tasks-plus-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 In many applications, we often have the need to create tasks that are executed at a later time, without user intervention.
 
 For example, we may have an application that collects analytics and visualises the data in charts.
@@ -116,5 +119,13 @@ public class MyApp {​
 ```
 
 If it is not added, our application will be unable to recognize `@Scheduled` annotation.
+
+[/slide]
+
+[slide hideTitle]
+
+# Caching Data
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/05-Events/29-caching-data-plus-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]

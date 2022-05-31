@@ -2,6 +2,8 @@
 
 # Creating Custom Events
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/05-Events/22-Creating-Custom-Event-Plus-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 There are three steps to creating our own custom event.
 
 First, we have to create an event class that extends the `ApplicationEvent` interface.

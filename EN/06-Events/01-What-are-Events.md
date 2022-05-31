@@ -4,6 +4,9 @@
 
 # Observer Pattern in Java
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/05-Events/01-events-in-spring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 Observer is a behavioral design pattern.
 
 As you may remember, behavioral design patterns are used for assigning responsibilities between objects.

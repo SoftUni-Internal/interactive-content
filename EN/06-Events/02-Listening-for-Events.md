@@ -2,6 +2,8 @@
 
 # Listening for Events
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/05-Events/09-listening-for-events-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 There are various ways to listen for events in Spring, the two most common being:
 
 - Implementing the `ApplicationListener` interface
