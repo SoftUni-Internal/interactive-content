@@ -4,6 +4,8 @@
 
 # What is Deployment?
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/09-Deployment-Monitoring-Hosting/01-deployment-hosting-monitoring-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Deployment means to push changes or update from one environment to another.
 
 Most software platforms use a deployment pipeline to streamline the process.
