@@ -4,6 +4,8 @@
 
 # Join Point
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/06-AOP/16-spring-aspect-j-annotations-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In **aspect-oriented programming**, everything is executed around a joint point.
 
 So the joint point in **aspect-oriented programming** is a **point** in the execution of the program in which **behavior** can be **altered** by aspect-oriented programming.

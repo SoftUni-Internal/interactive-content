@@ -4,6 +4,9 @@
 
 # Aspect Oriented Programming (AOP)
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/06-AOP/1-aop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 **Aspect-oriented programming** (AOP) is a programming paradigm, that **separating concerns** of a software application to improve **modularization**. 
 
 An enterprise application is typically **divided into layers**:
