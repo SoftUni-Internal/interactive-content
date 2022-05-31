@@ -3,6 +3,8 @@
 [slide hideTitle]
 # What to Use When
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/04-Error-Handling/28-use-cases-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Spring offers **many choices** when it comes to **error handling**.
 
 Be careful mixing **too many of these**, because we may not get the wanted behavior.

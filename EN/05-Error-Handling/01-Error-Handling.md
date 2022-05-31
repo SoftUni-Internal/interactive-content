@@ -3,6 +3,9 @@
 [slide hideTitle]
 # Error Handling
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/04-Error-Handling/01-error-handling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 **Errors** happen at any time but what matters is the way we **handle** and **rectify** them to maintain.
 
 Every programing language has a **powerful mechanism** to **handle** these errors and exceptions.

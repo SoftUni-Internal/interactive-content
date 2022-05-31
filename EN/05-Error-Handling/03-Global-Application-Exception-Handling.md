@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Global Exception Handling
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/04-Error-Handling/21-global-exception-handling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 In Spring MVC and Spring Boot application if **multiple controller classes** or classes throw the same kind of exception then we can **group them and handle them by the group**, and it can be called Global Exception Handling. 
 
 It is preferable most of the time because it **removes a lot of repetitive code**, also, it gives us modularity.  
@@ -42,6 +44,9 @@ public class GlobalExceptionHandler {
 
 [slide hideTitle]
 # Global Exception Handling (REST)
+
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/04-Error-Handling/25-global-handling-rest-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **RESTful** requests may also generate unexpected exceptions.
 

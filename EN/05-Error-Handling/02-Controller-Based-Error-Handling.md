@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Controller-specific Exception
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/04-Error-Handling/15-controller-based-error-handling-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 We can define **Controller-specific** Exception Handlers by using `@ExceptionHandler` annotation.
 
 They work only for the **controller** they are defined in.
