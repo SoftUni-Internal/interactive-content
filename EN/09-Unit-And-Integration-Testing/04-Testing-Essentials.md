@@ -2,6 +2,9 @@
 
 # Testing Concepts
 
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/07-Unit-Testing/28-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Тest-driven **development** (TDD) focuses on unit testing, but they are **, not the same**.
 
 If we write the **logic first** then we write the **test** this can be **considered** unit testing the code (**code-first approach**) but it is **not considered** test-driven development.

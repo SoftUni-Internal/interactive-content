@@ -4,6 +4,8 @@
 
 # Unit Testing
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/07-Unit-Testing/19-testing-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Unit testing of a web application is **not different** from testing a console application.
 
 In a web application, we can test **individual components** (units), and these tests should be **independent** of the project infrastructure.
@@ -186,6 +188,8 @@ Into the assert part, we check if the **result** from the tests matches the actu
 [slide hideTitle]
 
 # Testing
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/07-Unit-Testing/11-unit-testing-plus-simple-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When we test a web application, as a priority we should test **controllers**, **services**, and **custom components**.
 

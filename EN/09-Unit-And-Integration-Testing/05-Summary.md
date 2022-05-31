@@ -2,6 +2,9 @@
 
 # Summary
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/07-Unit-Testing/35-summary-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
 ## In this lesson you learned:
 - **Testing** is an important part of the application lifecycle
     - new features need to be verified before being delivered to the clients

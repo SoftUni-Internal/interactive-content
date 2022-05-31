@@ -3,6 +3,8 @@
 [slide hideTitle]
 # Testing
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/07-Unit-Testing/01-unit-tests-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Testing is a **phase** in the software development **life cycle**, the software we created should work properly, efficiently, and correctly.
 
 We have **two types** of testing:
