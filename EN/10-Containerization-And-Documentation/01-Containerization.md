@@ -4,6 +4,10 @@
 
 # Containerization
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/08-Containerization/01-containerization-documentation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
+
+
 Often times when deploying an application to production, we face compatibilty problems.
 
 We may have developed our application in a Linux environment, and trying to run it on Windows results in multiple errors.

@@ -4,6 +4,8 @@
 
 # Docker Installation
 
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/08-Containerization/44-demo-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 Docker comes in two editions - Community and Enterprise.
 
 Docker requires a local installation, and it has separate Linux, macOS, and Windows versions.
@@ -77,5 +79,14 @@ a3ed95caeb02: Pull complete
 Digest: sha256:45b23dee08af5e43a7fea6c4cf9c25ccf269ee113168c19722f87876677c5cb2
 Status: Downloaded newer image for fedora:13.1
 ```
+
+[/slide]
+
+[slide hideTitle]
+
+# Swagger
+
+[video src="https://videos.softuni.org/hls/Java/Java-Spring-Advanced/EN/08-Containerization/45-swagger-3-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+
 
 [/slide]
