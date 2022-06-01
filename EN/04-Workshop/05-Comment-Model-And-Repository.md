@@ -1,4 +1,4 @@
-![slide hideTitle]
+[slide hideTitle]
 
 # Add Comment Repository
 
