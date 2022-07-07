@@ -4,15 +4,15 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/02.Java-Fundamentals-Arrays/EN/02-Java-Fundamentals-Arrays-18-19-For-each-loop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-`For-each` is another array traversing technique like the **for-loop**, the **while-loop** and the **do-while-loop** introduced in Java.
+`For-each` is another array traversing technique like the **for-loop**, the **while-loop** and the **do-while-loop** introduced in **Programming Basics with Java**.
 
-It starts with the keyword `for` like a normal **for-loop**.
+It starts with the keyword `for` simmilar to a **for-loop**.
 
-Instead of declaring and initializing a loop counter variable, we declare a variable that should hold the same data type as the base type of the array, followed by a colon (**:**), which is then followed by the name of the array.
+However, instead of declaring and initializing a loop counter variable we declare a variable that should hold the same data type as the base type of the array. It is followed by a colon (**:**), which is then followed by the name of the array.
 
-The loop variable of a `For-each` loop holds the value of each loop element, not its index number.
+The loop variable of a `for-each` loop holds the value of each loop element, not its index number.
 
-It is commonly used to iterate over an array, when we do not need to use particulat index numbers.
+It is commonly used to iterate over an array when we do not need to use particular index numbers.
 
 ```java
 for (int variableName : arrayName) {
@@ -36,7 +36,7 @@ for (int number: numbers) {
 }
 ```
 
-We are not able to manipulate the elements of an array while iterating with a **for-each**. 
+We are not able to manipulate the elements of an array while iterating with a **for-each** loop. 
 
 [/slide]
 
@@ -165,7 +165,7 @@ public class Main {
 [/code-editor]
 [task-description]
 ## Description
-Create a program to read **an array of integers** and condense them by **summing** all adjacent couples of elements until a **single integer** remains.
+Create a program that reads **an array of integers** and condenses them by **summing** all adjacent couples of elements until a **single integer** remains.
 
 For **example**, let us say we have **3** elements - \{2, 10, 3\}. 
 

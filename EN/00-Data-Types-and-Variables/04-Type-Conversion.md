@@ -6,11 +6,11 @@
 
 [video src="https://videos.softuni.org/hls/Java/Java-Fundamentals-Methods-And-Arrays/01.Java-Fundamentals-Data-types-and-variables/EN/interactive-java-fundamentals-data-types-and-variables-30-31-type-conversion-and-demo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-When you assign the value of one data type to another, the two types might not be compatible with each other.
+When assigning the value of one data type to another the two types might not be compatible with each other.
 
-If the data types are compatible, Java will perform the conversion automatically. 
+If the data types are compatible **Java** will perform the conversion automatically. 
 
-This is known as **Automatic Type Conversion**, and if they are not compatible, they need to be converted explicitly.
+This is known as **Automatic Type Conversion**. If they are not compatible they need to be converted explicitly.
 
 For example, assigning an **int** value to a **long** variable.
 
@@ -30,7 +30,7 @@ System.out.println(myDouble);
 
 Here a lower data type \(having smaller size\) is converted into a larger data type \(having larger size\). 
 
-There is no loss in data, so this type of conversion happens automatically.
+There is no loss in data, therefore, this type of conversion happens automatically.
 
 - **Narrowing conversion** \(manual\) - converting a larger type into a smaller data type. Also known as **explicit conversion**
 
@@ -75,7 +75,7 @@ public class Main {
 
 ## Description
 
-Create a program that accepts an **int** number of **centuries** and converts it to the respective amount of **years**, **days**, **hours**, and **minutes**. 
+Create a program that accepts an **int** number of **centuries** and converts it to the respective amount of **years**, **days**, **hours** and **minutes**. 
 
 The input will be of type **int**.
 
