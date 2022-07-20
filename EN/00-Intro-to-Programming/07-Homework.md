@@ -68,6 +68,15 @@ Create a Java program, that:
 
 * Calculates the value of 5 \* 5
 * Prints out the result
+
+
+[hints]
+[hint]
+System.out.println("Hello Java");
+[/hint]
+
+[/hints]
+
 [/task-description]
 [code-io /]
 [tests]
