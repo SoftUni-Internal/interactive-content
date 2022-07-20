@@ -32,6 +32,8 @@ In this course, we are going to use the **IntelliJ IDEA** development environmen
 
 Here is a screenshot of the IntelliJ IDEA IDE for Java:
 
+Test
+
 [image assetsSrc="intro-to-programming-hello-world.png" /]
 [/slide]
 
