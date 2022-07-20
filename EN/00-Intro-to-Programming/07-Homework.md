@@ -70,13 +70,6 @@ Create a Java program, that:
 * Prints out the result
 
 
-[hints]
-[hint]
-System.out.println("Hello Java");
-[/hint]
-
-[/hints]
-
 [/task-description]
 [code-io /]
 [tests]
