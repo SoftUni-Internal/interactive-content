@@ -37,7 +37,7 @@ Create a program, which determines if the **input** is a **fruit** or a **vegeta
 
 [hints]
 [hint]
-You can use a switch-case expression to solve the problem easier.
+You can use a **switch-case** expression with **multiple case labels** to solve the problem easier.
 [/hint]
 [/hints]
 
@@ -154,6 +154,18 @@ Create a program, which prints the day of the week as a word:
 |dayOfWeek(1)| Monday |
 |dayOfWeek(8)| Error |
 
+[hints]
+[hint]
+Convert the input data from a string to a number.
+[/hint]
+[hint]
+You can use a **switch-case** expression to solve the problem easier.
+[/hint]
+[hint]
+Print the day of the week according to the entered number. If it is invalid, print "Error".
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -265,6 +277,9 @@ You can use an "if" statement and check if the letter is a vowel.
 If it is print the correct output. 
 
 However, if it isn't, enter the "else" statement and print the appropriate output.
+[/hint]
+[hint]
+You can convert the input letter to lowercase with **.toLowerCase()** and limit the check to lowercase vowels only (a, e, i, o, u).
 [/hint]
 [/hints]
 
