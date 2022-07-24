@@ -39,6 +39,9 @@ Create a program, which receives an integer and calculates the area of a square 
 [hint]
 The formula for calculating the area of a square is - a * a.
 [/hint]
+[hint]
+Format the result to 2 digits after the decimal point using **toFixed(2)**.
+[/hint]
 [/hints]
 
 [/task-description]
