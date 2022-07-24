@@ -394,18 +394,14 @@ function adapter(input, code) {
 [/code-adapter]
 [task-description]
 # Description
-Create a program, which calculates ticket price:
+Create a program to **calculate** the price of a ticket based on the following:
 
-* You will receive a ticket type: either **student** or **regular**
-
-* Print the **price** in the following format "**$**\{**price**\}":
-    * The price should be **formatted** to 2nd digit after the decimal point
-
-* Student ticket price: **1.00**
-
-* Regular ticket price: **1.60**
-
-* For invalid tickets, print: "**Invalid ticket type!**"
+- Read the ticket type: either **student** or **regular**
+  - Student ticket price: **1.00**
+  - Regular ticket price: **1.60**
+- Print the **price** in the following format "$\{**price**\}"
+  - The price should be **formatted** to the 2nd digit after the decimal point
+- For any other input print: **"Invalid ticket type!"**
 
 # Example
 
@@ -413,6 +409,15 @@ Create a program, which calculates ticket price:
 | --- | --- |
 | tickets('student') | $1.00 |
 | tickets('teacher') | Invalid ticket type! |
+
+[hints]
+[hint]
+Make an **if-else-if** statement to check the input.
+[/hint]
+[hint]
+Print the correct message according to the entered input.
+[/hint]
+[/hints]
 
 
 [/task-description]
