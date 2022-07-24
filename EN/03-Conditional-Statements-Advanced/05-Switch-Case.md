@@ -126,7 +126,7 @@ switch (selector) {
 [video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-32-Multiple-Labels-Example-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Write a program that prints the type of animal depending on its name:
--  Sog \-\> **mammal**
+-  Dog, cat \-\> **mammal**
 -  Crocodile, tortoise, snake \-\> **reptile**
 -  Others \-\> **unknown**
 
