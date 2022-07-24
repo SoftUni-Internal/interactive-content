@@ -255,15 +255,9 @@ function adapter(input, code) {
 # Description
 You will receive an integer, which represents the initial **number** of points. 
 
-**Bonus points** are awarded according to the rules described below. 
+**Bonus points** are awarded on it according to the rules described below. 
 
-Create a program, which calculates:
-
-- The **received** bonus points from the number 
-
-- What is the initial **total number of points**
-
-- What is the **number of points plus the bonus points** 
+Create a program that calculates the **bonus points the number receives** and the **total number of points** (the number + the bonus).
 
 If the number is up to **100 inclusive**, the bonus points are **5**.
 If the number is **greater than 100**, the bonus points are **20 percent of the number**.
@@ -292,6 +286,21 @@ Additional bonus points, added separately from the previous ones:
 | --- | --- |
 | bonusScore(2703)| 270.3 |
 |  |2973.3 |
+
+[hints]
+[hint]
+Create a new variable in which you will calculate your accumulated bonus points, giving it a initial value of 0.0.
+[/hint]
+[hint]
+Make an **if-else-if** statement for the first three checks to check the size of the number and calculate the bonus.
+[/hint]
+[hint]
+Make a new **if-else-if** statement to perform the checks and **calculate the additional bonus**. If the number **is even add 1 to the bonus accumulated so far**, and if it **ends in 5 add 2 to the bonus**. To check if a number **is even you need to divide it by 2 and if you get a remainder when dividing by 0**, then the number is **even**, but if you get **a remainder of 1**, it means the number is **odd**. For example, the number 34 is even because 34 / 2 = 17 and the remainder is 0 and the number 35 is odd because 35 / 2 = 17 with a remainder of 1. To check if a number ends in 5 you have to **divide the number by 10** and if you **get a remainder of 5**, then the number ends in 5. For example the number 245 / 10 = 24 with remainder 5.
+[/hint]
+[hint]
+Print the results in **two lines**. On the first line the **accumulated bonus**, and on the second line the **final number**, which you will find by **adding the initial number of points and the bonus**.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
