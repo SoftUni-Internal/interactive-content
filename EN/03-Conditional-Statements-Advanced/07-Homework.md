@@ -571,6 +571,18 @@ Create a program, which calculates vacation expenses:
 | vacationExpenses('Winter', 'Hotel', 5) | 180.00 |
 | vacationExpenses('Summer', 'Camping', 3) | 90.00 |
 
+[hints]
+[hint]
+Initialize a variable at the beginning in which you will store the final price and give it an initial value of 0.
+
+Use nested conditional statements and in the body of the conditional statement for the season, check for the accommodation type (**Hotel** or **Camping**).
+
+Calculate the price, depending on the season, the accommodation type, and the discount. Save the resulting value in the variable you created.  
+
+In the end, print the final price. To output the result with exactly 2 digits after the decimal point, use **toFixed(2)**.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -674,6 +686,15 @@ Create a program, which prints the **price** of all the tickets for a movie in t
 |cinema('Normal', 21, 13)| 2047.50 |
 |cinema('Discount', 12, 30)| 1800.00 |
 
+[hints]
+[hint]
+Use simple checks and basic calculations. To output the result with exactly 2 digits after the decimal point, use **toFixed(2)**.
+[/hint]
+[hint]
+Initialize variable "income" in the beginning, with an initial value of 0.
+Make a series of checks for each type of movie ("Premiere, Normal, Discount"), assign the corresponding price to the "income" variable, and at the end, print the final result.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
@@ -874,6 +895,16 @@ Create a program, which applies an operator to a given pair of numbers:
 | --- | --- |
 | operationswithNumbers(12, 10, '\+') | 12 + 10 = 22 |
 | operationswithNumbers(25, 25, '\-') | 25 - 25 = 0 |
+
+[hints]
+[hint]
+Initialize variable "result" in the beginning, with an initial value of 0.
+Make a series of checks for each math operator and perform the corresponding mathematical operation on the two numbers, 
+assigning the result to the "result" variable.
+Print the output using string interpolation with Template Literals:
+console.log(`${firstNumber} ${operation} ${secondNumber} = ${result}`);
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
