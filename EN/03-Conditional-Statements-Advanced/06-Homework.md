@@ -1,9 +1,12 @@
 # Homework
 
 [slide hideTitle]
+
 # Problem: Fruit or Vegetable
+
 [code-task title="Fruit or Vegetable" taskId="pb-java-Conditional-Statements-A-fruit-or-vegetable" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -13,21 +16,25 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
+
 Create a program to check whether the input value represents a fruit or a vegetable:
 
-* Read a single input line: an item from the veggie store
-* Fruits: banana, apple, kiwi, cherry, lemon, grapes
-* Vegetables: cucumber, pepper, carrot, onion
-* Print: **"vegetable"**, **"fruit"** or **"unknown"**
+- Read a single input line: an item from the veggie store
+- Fruits: banana, apple, kiwi, cherry, lemon, grapes
+- Vegetables: cucumber, pepper, carrot, onion
+- Print: **"vegetable"**, **"fruit"** or **"unknown"**
 
 ## Example
+
 | **Input** | **Output** |
-| --- | --- |
-| lemon | fruit |
-| carrot | vegetable |
+| --------- | ---------- |
+| lemon     | fruit      |
+| carrot    | vegetable  |
 
 [/task-description]
 [tests]
@@ -78,12 +85,14 @@ vegetable
 [/slide]
 
 [slide hideTitle]
+
 # Problem with Solution: Day of Week
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-30-33-problem-solving-day-of-week-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Day of Week" taskId="pb-java-Conditional-Statements-A-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -93,22 +102,24 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
+
 Create a program to print out the given day of the week as a word:
 
-* Reads and integer **n**: the **day of the week** in range [1 ... 7]
-* Prints the **name of the day** (as a word)
-* Prints out **"Error"** if the number is not in the given range
+- Reads and integer **n**: the **day of the week** in range [1 ... 7]
+- Prints the **name of the day** (as a word)
+- Prints out **"Error"** if the number is not in the given range
 
 ## Examples
+
 | **Input** | **Output** |
-| --- | --- |
-| 1 | Monday |
-| 8 | Error |
-
-
+| --------- | ---------- |
+| 1         | Monday     |
+| 8         | Error      |
 
 [/task-description]
 [tests]
@@ -175,9 +186,12 @@ Friday
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Vowel or Consonant
+
 [code-task title="Vowel or Consonant" taskId="pb-java-Conditional-Statements-A-vowel-or-consonant" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -187,19 +201,23 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
+
 Create a program to check whether a letter is a vowel or a consonant:
 
-* Reads a **letter** from the English alphabet
-* Prints out **"Vowel"** or **"Consonant"**
+- Reads a **letter** from the English alphabet
+- Prints out **"Vowel"** or **"Consonant"**
 
 ## Example
+
 | **Input** | **Output** |
-| --- | --- |
-| a | Vowel |
-| B | Consonant |
+| --------- | ---------- |
+| a         | Vowel      |
+| B         | Consonant  |
 
 [hints]
 [hint]
@@ -264,14 +282,14 @@ Vowel
 [/slide]
 
 [slide hideTitle]
+
 # Problem with Solution: Product of 3 Numbers
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-37-problem-product-of-three-numbers-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
-
-
 [code-task title="Product of 3 Numbers" taskId="pb-java-Conditional-Statements-A-product-of-3-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -281,27 +299,31 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
+
 Calculate the final sign **positive**, **negative** or **zero** of the product of 3 numbers:
 
-* Read **3 floating-point** numbers
-* Print the **sign** of the product of the 3 numbers: **positive**, **negative** or **zero**
-* Try to do this **without multiplying** the numbers
+- Read **3 floating-point** numbers
+- Print the **sign** of the product of the 3 numbers: **positive**, **negative** or **zero**
+- Try to do this **without multiplying** the numbers
 
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-| 2 | negative |
-| 3 |  |
-| -1 |  |
 
 | **Input** | **Output** |
-| --- | --- |
-| 2 | positive |
-| 3 |  |
-| 1 |  |
+| --------- | ---------- |
+| 2         | negative   |
+| 3         |            |
+| -1        |            |
+
+| **Input** | **Output** |
+| --------- | ---------- |
+| 2         | positive   |
+| 3         |            |
+| 1         |            |
 
 [/task-description]
 [tests]
@@ -352,9 +374,12 @@ zero
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Sorted Numbers
+
 [code-task title="Sorted Numbers" taskId="pb-java-Conditional-Statements-A-Sorted-Numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -364,35 +389,44 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
+
 Create a program that reads 3 numbers from the console and checks if they are sorted.
 
-* Read 3 real numbers
-* Print **"Ascending"** if the numbers are in ascending order
-* Print **"Descending"** if the numbers are in descending order
-* Print **"Not sorted"** in any other case
+- Read 3 real numbers
+- Print **"Ascending"** if the numbers are in ascending order
+- Print **"Descending"** if the numbers are in descending order
+- Print **"Not sorted"** in any other case
 
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-| 1 | Ascending |
-| 2 |  |
-| 3 |  |
 
 | **Input** | **Output** |
-| --- | --- |
-| 3 | Not sorted |
-| 5 |  |
-| 2 |  |
-
+| --------- | ---------- |
+| 1         | Ascending  |
+| 2         |            |
+| 3         |            |
 
 | **Input** | **Output** |
-| --- | --- |
-| 5 | Descending |
-| 4 |  |
-| 3 |  |
+| --------- | ---------- |
+| 3         | Not sorted |
+| 5         |            |
+| 2         |            |
+
+| **Input** | **Output** |
+| --------- | ---------- |
+| 5         | Descending |
+| 4         |            |
+| 3         |            |
+
+[hints]
+[hint]
+You can solve the problem by using an if case (a>b>c), else if case(a<b<c) and an else case for the random sort.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -453,12 +487,14 @@ Descending
 [/slide]
 
 [slide hideTitle]
+
 # Problem with Solution: Vacation Expenses
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-41-problem-vacation-expenses-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Vacation Expenses" taskId="pb-java-Conditional-Statements-A-Vacation-Expenses" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -468,9 +504,12 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
+
 Create a program that calculates vacation expenses based on the following factors.
 
 - Season
@@ -479,26 +518,26 @@ Create a program that calculates vacation expenses based on the following factor
 
 * Prints the total expenses, based on the price table bellow, formatted to the 2nd digit after the decimal point
 
-|**Season**|**Hotel**|**Camping**|**Discount**|
-|---|---|---|---|
-|Spring|30|10|20%|
-|Summer|50|30|0%|
-|Autumn|20|15|30%|
-|Winter|40|10|10%|
+| **Season** | **Hotel** | **Camping** | **Discount** |
+| ---------- | --------- | ----------- | ------------ |
+| Spring     | 30        | 10          | 20%          |
+| Summer     | 50        | 30          | 0%           |
+| Autumn     | 20        | 15          | 30%          |
+| Winter     | 40        | 10          | 10%          |
 
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-| Winter | 180.00 |
-| Hotel |  |
-| 5 |  |
 
 | **Input** | **Output** |
-| --- | --- |
-| Summer |  90.00 |
-| Camping |  |
-| 3 |  |
+| --------- | ---------- |
+| Winter    | 180.00     |
+| Hotel     |            |
+| 5         |            |
 
+| **Input** | **Output** |
+| --------- | ---------- |
+| Summer    | 90.00      |
+| Camping   |            |
+| 3         |            |
 
 [/task-description]
 [tests]
@@ -579,9 +618,12 @@ Camping
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Cinema
+
 [code-task title="Cinema" taskId="pb-java-Conditional-Statements-A-Cinema" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -591,39 +633,48 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
+
 Calculate the total **price** for all sold tickets to a movie screening in a cinema:
 
-* Reads the **type of the movie**, the **rows** and the **seats per row** in the cinema
-* Prints the **total price** for all seats **formatted** to the 2nd digit after the decimal point
+- Reads the **type of the movie**, the **rows** and the **seats per row** in the cinema
+- Prints the **total price** for all seats **formatted** to the 2nd digit after the decimal point
 
-|**Type**|**Price**|
-|---|---|
-|Premiere|12.00|
-|Normal|7.50|
-|Discount|5.00|
+| **Type** | **Price** |
+| -------- | --------- |
+| Premiere | 12.00     |
+| Normal   | 7.50      |
+| Discount | 5.00      |
 
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-|Premiere|1440.00|
-|10||
-|12|  |
 
 | **Input** | **Output** |
-| --- | --- |
-|Normal|2047.50 |
-|21||
-|13| |
+| --------- | ---------- |
+| Premiere  | 1440.00    |
+| 10        |            |
+| 12        |            |
 
 | **Input** | **Output** |
-| --- | --- |
-|Discount|1800.00|
-|12||
-|30| |
+| --------- | ---------- |
+| Normal    | 2047.50    |
+| 21        |            |
+| 13        |            |
 
+| **Input** | **Output** |
+| --------- | ---------- |
+| Discount  | 1800.00    |
+| 12        |            |
+| 30        |            |
+
+[hints]
+[hint]
+Make three if-cases for each of the types of screening (Premiere, Noraml and Discount)
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
@@ -833,9 +884,12 @@ Discount
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Operations with Numbers
+
 [code-task title="Operations with Numbers" taskId="pb-java-Conditional-Statements-A-operations-with-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -845,21 +899,34 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
+
 Create a program to perform a calculation using a particular operator.
 
-* Reads **two integers** and a **math operator** from the console
-* The math operator could be: "+",  "-",  "/",  "%"  and  "*"
-* The output should be in the following **format**: "\{N1\} \{operator\} \{N2\} = \{result\}"
+- Reads **two integers** and a **math operator** from the console
+- The math operator could be: "+", "-", "/", "%" and "\*"
+- The output should be in the following **format**: "\{N1\} \{operator\} \{N2\} = \{result\}"
 
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-| 12 | 12 + 10 = 22 |
-| 10 |  |
-| \+ |  |
+
+| **Input** | **Output**   |
+| --------- | ------------ |
+| 12        | 12 + 10 = 22 |
+| 10        |              |
+| \+        |              |
+
+[hints]
+[hint]
+Use a switch case for the operators '+', '-', '/', '%' and '\*'
+[/hint]
+[hint]
+Format the output using **%d %c %d = %.0f", n1, operator, n2, answer**
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -920,9 +987,12 @@ Create a program to perform a calculation using a particular operator.
 [/slide]
 
 [slide hideTitle]
+
 # Problem: ATM
+
 [code-task title="ATM" taskId="pb-java-Conditional-Statements-A-ATM" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -932,29 +1002,38 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
+
 Create a program that simulates an ATM:
 
-* Reads: **balance**, **withdraw amount** and **limit**
-* Print **"The withdraw was successful."** if the balance is sufficient
-* Print **"The daily limit was exceeded."** if that is the case
-* Print **"Insufficient availability."** if the balance is insufficient
+- Reads: **balance**, **withdraw amount** and **limit**
+- Print **"The withdraw was successful."** if the balance is sufficient
+- Print **"The daily limit was exceeded."** if that is the case
+- Print **"Insufficient availability."** if the balance is insufficient
 
 ## Example
-  | **Input** | **Output** |
-| --- | --- |
-|420|The withdraw was successful. |
-|20||
-|25| |
 
- | **Input** | **Output** |
-| --- | --- |
-|10|The daily limit was exceeded.|
-|50|Insufficient availability.|
-|20|  |
+| **Input** | **Output**                   |
+| --------- | ---------------------------- |
+| 420       | The withdraw was successful. |
+| 20        |                              |
+| 25        |                              |
 
+| **Input** | **Output**                    |
+| --------- | ----------------------------- |
+| 10        | The daily limit was exceeded. |
+| 50        | Insufficient availability.    |
+| 20        |                               |
+
+[hints]
+[hint]
+Use a switch case for the difference ATM commands and check the balance before doing the command.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
@@ -1017,9 +1096,12 @@ Insufficient availability.
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Biggest of Five Numbers
+
 [code-task title="Biggest of Five Numbers" taskId="pb-java-Conditional-Statements-A-Biggest-of-five-numbers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -1029,30 +1111,43 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
+
 Create a program to find the greatest of 5 numbers
-* Reads **5 integers**
-* Prints the **greatest** number
+
+- Reads **5 integers**
+- Prints the **greatest** number
 
 ## Example
-  | **Input** | **Output** |
-| --- | --- |
-| \-1|\-1|
-|\-2||
-|\-3||
-|\-4||
-|\-5|  |
 
-  | **Input** | **Output** |
-| --- | --- |
-| 3|77|
-|4||
-|77||
-|12||
-|33|  |
+| **Input** | **Output** |
+| --------- | ---------- |
+| \-1       | \-1        |
+| \-2       |            |
+| \-3       |            |
+| \-4       |            |
+| \-5       |            |
 
+| **Input** | **Output** |
+| --------- | ---------- |
+| 3         | 77         |
+| 4         |            |
+| 77        |            |
+| 12        |            |
+| 33        |            |
+
+[hints]
+[hint]
+Create a control variable **biggestNumber**
+[/hint]
+[hint]
+Compare each of the input numbers to the control variable, and change its value if the input number is bigger.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
@@ -1133,11 +1228,13 @@ Create a program to find the greatest of 5 numbers
 [/code-task]
 [/slide]
 
-
 [slide hideTitle]
+
 # Problem: Personal Titles
+
 [code-task title="Personal Titles" taskId="pb-java-Conditional-Statements-A-Personal-Titles" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -1147,36 +1244,48 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
 
 ## Example: Personal Titles
 
 Depending on someone's **age** (integer) and **gender** (**m** / **f**), print their personal title:
--  "Mr." - a man (gender "m") - 16 or older
--  "Master" - a boy (gender "m") - under 16 years old
--  "Ms." - a woman (gender "f") - 16 or older
--  "Miss" - a girl (gender "f") - under 16 years old
+
+- "Mr." - a man (gender "m") - 16 or older
+- "Master" - a boy (gender "m") - under 16 years old
+- "Ms." - a woman (gender "f") - 16 or older
+- "Miss" - a girl (gender "f") - under 16 years old
 
 ## Input
+
 From the console:
+
 - Age - floating-point number
 - Gender - "**m**" or "**f**"
 
 ## Output
+
 Print the expected Personal Title on a single line.
 
 ## Example
 
-| **Input** | **Output** | 
-| --- | --- |
-| 25 | Ms. |
-| f | |
+| **Input** | **Output** |
+| --------- | ---------- |
+| 25        | Ms.        |
+| f         |            |
 
-| **Input** | **Output** | 
-| --- |  --- |
-| 13.5 | Master |
-| m | |
+| **Input** | **Output** |
+| --------- | ---------- |
+| 13.5      | Master     |
+| m         |            |
+
+[hints]
+[hint]
+You can use nested if statements to check for the age and then the gender.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -1311,9 +1420,12 @@ Mr.
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Fuel Tank
+
 [code-task title="Fuel Tank" taskId="pb-java-Conditional-Statements-A-Fuel-tank" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -1323,36 +1435,51 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
-Create a program that checks whether the tank of a vehicle needs refueling or not. 
+
+Create a program that checks whether the tank of a vehicle needs refueling or not.
 
 ## Input
+
 The input consists of 2 lines:
+
 - The type of fuel: "**Diesel**", "**Gasoline**" or "**Gas**"
 - The fuel in the tank in liters
 
 ## Output
+
 - If the fuel type is not one of the 3 options, print: "**Invalid fuel!**"
 - If the current fuel level is >= 25 liters print:
-    - "**You have enough** \{**type of fuel**\}."
-    -  the type of fuel should be printed in lower case
+  - "**You have enough** \{**type of fuel**\}."
+  - the type of fuel should be printed in lower case
 - Otherwise print:
-    - "**Fill your tank with** \{**type of fuel**\}!"
-    - type of the fuel should be printed in lower case
+  - "**Fill your tank with** \{**type of fuel**\}!"
+  - type of the fuel should be printed in lower case
 
 ## Example
 
-| **Input** | **Output** |
-| --- | --- |
-| Diesel | Fill your tank with diesel! |
-| 10 | |
+| **Input** | **Output**                  |
+| --------- | --------------------------- |
+| Diesel    | Fill your tank with diesel! |
+| 10        |                             |
 
-| **Input** | **Output** |
-| --- | --- |
-| Gas | You have enough gas. |
-| 25 | |
+| **Input** | **Output**           |
+| --------- | -------------------- |
+| Gas       | You have enough gas. |
+| 25        |                      |
+
+[hints]
+[hint]
+Make an if condidion for checking if the fuel type is valid.
+[/hint]
+[hint]
+Check if the level is more than or equal to 25 liters.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1433,11 +1560,13 @@ Invalid fuel!
 [/code-task]
 [/slide]
 
-
 [slide hideTitle]
+
 # Problem: Trade Commissions
+
 [code-task title="Trade Commissions" taskId="pb-java-Conditional-Statements-A-Trade-Commisions" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -1447,42 +1576,57 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
 
 A real-estate company pays the following commissions to its employees according to the city they work in and the amount of sales:
 
-| **Sales / City** | **London** | **New York** | **Sydney**|
-| --- | --- | --- | --- | 
-| \[0-500\] | 5% | 4.5% | 5.5% |
-| \[501-1000\] | 7% | 7.5% | 8% | 
-| \[1001-10000\] | 8% | 10% | 12% |
-| > 10000| 12% | 13% | 14.5% |
+| **Sales / City** | **London** | **New York** | **Sydney** |
+| ---------------- | ---------- | ------------ | ---------- |
+| \[0-500\]        | 5%         | 4.5%         | 5.5%       |
+| \[501-1000\]     | 7%         | 7.5%         | 8%         |
+| \[1001-10000\]   | 8%         | 10%          | 12%        |
+| > 10000          | 12%        | 13%          | 14.5%      |
 
-Create a console program that reads the **name of a city**  as input and the **amount of sales** and calculates the value of the **commission**. 
+Create a console program that reads the **name of a city** as input and the **amount of sales** and calculates the value of the **commission**.
 
 ## Input
+
 Read two lines:
+
 - City name - String
 - Amount of sales - floating-point number
 
 ## Output
+
 - Print out the final value of the commission
 - The result should be **formatted to the second decimal point**
 - If you receive an **invalid** city **or** an invalid amount of sales (negative number), print "**error**"
 
 ## Example
-| **Input** | **Output** |  
-| --- | --- |
-| London | 120.00 | 
-| 1500 | |  
 
+| **Input** | **Output** |
+| --------- | ---------- |
+| London    | 120.00     |
+| 1500      |            |
 
-| **Input** | **Output** | 
-| --- | --- | 
-| Moscow | error |
-| -50 | |
+| **Input** | **Output** |
+| --------- | ---------- |
+| Moscow    | error      |
+| -50       |            |
+
+[hints]
+[hint]
+Check wether the town is valid and in the condition nest the different comission values.
+[/hint]
+[hint]
+sales >= 0 && sales <= 500 / sales > 500 && sales <= 1000 / sales > 1000 && sales <= 10000 / sales > 10000
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -1644,9 +1788,12 @@ error
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Point on Rectangle Border
+
 [code-task title="Point on Rectangle Border" taskId="pb-java-Conditional-Statements-A-Point-on-Rectangle-Border" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -1656,40 +1803,47 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
-Create a program to check if a **point {x, y}** is **on** one of the sides of a rectangle **{x1, y1} - {x2, y2}**.  
+
+Create a program to check if a **point {x, y}** is **on** one of the sides of a rectangle **{x1, y1} - {x2, y2}**.
 
 ## Input
+
 The input consists of **6 lines: real numbers x1, y1, x2, y2, x and y** (considering that: **x1 < x2** and **y1 < y2**).
 
 ## Output
+
 If the point lies on one of a rectangle's side:
+
 - Print "**Border**"
 
 If the point does NOT lie on a side:
+
 - Print "**Inside / Outside**"
 
 ## Example
+
+| **Input** | **Output**       |
+| --------- | ---------------- |
+| 2         | Inside / Outside |
+| -3        |                  |
+| 12        |                  |
+| 3         |                  |
+| 8         |                  |
+| -1        |                  |
+
 | **Input** | **Output** |
-| --- | --- |
-| 2 | Inside / Outside |
-| -3 | |
-| 12 | |
-| 3 | |
-| 8 | |
-| -1 | | 
-
-| **Input** | **Output** | 
-|  --- | --- |
-| 2 | Border|
-| -3 | |
-| 12 | |
-| 3 | |
-| 12 | |
-| -1 | |
-
+| --------- | ---------- |
+| 2         | Border     |
+| -3        |            |
+| 12        |            |
+| 3         |            |
+| 12        |            |
+| -1        |            |
 
 [hints]
 [hint]
@@ -1702,6 +1856,16 @@ You can use one or more conditional **if** statements with logical operations. A
 [hint]
 You can check the conditions above using one more complicated **if**-**else** construction or using few more simple conditional statements or **nested if**-**else statements.**
 [/hint]
+[hint]
+
+```java
+var onLeftSide = (x == x1) && (y >= y1) && (y <= y2);
+var onRightSide = (x == x2) && (y >= y1) && (y <= y2);
+var onUpSide = (y == y1) && (x >= x1) && (x <= x2);
+var onDownSide = (y == y2) && (x >= x1) && (x <= x2);
+```
+
+[hint]
 [/hints]
 
 [/task-description]
@@ -1945,11 +2109,13 @@ Inside / Outside
 [/code-task]
 [/slide]
 
-
 [slide hideTitle]
+
 # Problem: Summer Outfit
+
 [code-task title="Summer Outfit" taskId="pb-java-Conditional-Statements-A-Summer-Outfit" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -1959,37 +2125,52 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
 
-Create a program to help your friend choose what clothes to wear **according to the part of day and the temperature (in degrees; Celsius)**. 
+Create a program to help your friend choose what clothes to wear **according to the part of day and the temperature (in degrees; Celsius)**.
 
 Your friend has different outfits according to the time of day and the temperature – check the **table** below.
 
-| **Part of Day / Degrees** | **Morning** | **Afternoon** | **Evening** |
-| --- | --- | --- | --- |
-| 10 <= degrees C <= 18 | Outfit: Sweatshirt | Outfit: Shirt | Outfit: Shirt |
-| | Shoes: Sneakers | Shoes: Moccasins | Shoes: Moccasins |
-| 18 < degrees C <= 24 | Outfit: Shirt | Outfit: T-Shirt | Outfit: Shirt |
-| | Shoes: Moccasins | Shoes: Sandals | Shoes: Moccasins |
-| degrees C >= 25 | Outfit: T-Shirt | Outfit: Swim Suit | Outfit: Shirt |
-| | Shoes: Sandals | Shoes: Barefoot | Shoes: Moccasins |
+| **Part of Day / Degrees** | **Morning**        | **Afternoon**     | **Evening**      |
+| ------------------------- | ------------------ | ----------------- | ---------------- |
+| 10 <= degrees C <= 18     | Outfit: Sweatshirt | Outfit: Shirt     | Outfit: Shirt    |
+|                           | Shoes: Sneakers    | Shoes: Moccasins  | Shoes: Moccasins |
+| 18 < degrees C <= 24      | Outfit: Shirt      | Outfit: T-Shirt   | Outfit: Shirt    |
+|                           | Shoes: Moccasins   | Shoes: Sandals    | Shoes: Moccasins |
+| degrees C >= 25           | Outfit: T-Shirt    | Outfit: Swim Suit | Outfit: Shirt    |
+|                           | Shoes: Sandals     | Shoes: Barefoot   | Shoes: Moccasins |
 
 ## Input
+
 **Read two lines of input:**
+
 - **Degrees** - an integer in range \[10…42\]
 - **Part of day** : "Morning", "Afternoon", "Evening"
 
 ## Output
+
 - Print out a **single** line:
-    - "It's \{degrees\} degrees, get your \{outfit\} and \{shoes\}."
+  - "It's \{degrees\} degrees, get your \{outfit\} and \{shoes\}."
 
 ## Example
-| **Input** | **Output** 
-| --- | --- |
-| 16 | It\'s 16 degrees, get your Sweatshirt and Sneakers. |
-| Morning | |
+
+| **Input** | **Output**                                          |
+| --------- | --------------------------------------------------- |
+| 16        | It\'s 16 degrees, get your Sweatshirt and Sneakers. |
+| Morning   |                                                     |
+
+[hints]
+[hint]
+First check the time of the day, and then the possible degrees.
+[/hint]
+[hint]
+degrees >= 10 && degrees <= 18 / degrees > 18 && degrees <= 24 / degrees >= 25
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -2116,9 +2297,12 @@ It's 11 degrees, get your Shirt and Moccasins.
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Fishing Boat
+
 [code-task title="Fishing Boat" taskId="pb-java-Conditional-Statements-A-Fishing-Boat" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -2128,60 +2312,68 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
 
 Tony and his friends decided to rent a fishing boat - the rent depends on the **season** and the **number** of fishermen.
 
 **The boat rental price** according to the **season** is:
+
 - **Spring - $3000**
 - **Summer/Autumn - $4200**
 - **Winter - $2600**
 
 **The price** based on the **number** of fishermen is **discounted** in the following amounts:
+
 - **Up to 6 people (inclusive) - 10% discount**
 - **7-11 people** - **15% discount**
 - **12 or more people - 25% discount**
 
-The fishermen use another **5% discount if their group consists of an even number of people**. 
+The fishermen use another **5% discount if their group consists of an even number of people**.
 
 If it is **autumn** - they do **NOT** get an additional discount.
 
 Create a **program** to **calculate** whether the fishermen will have **enough** money for the boat.
 
 ## Input
+
 The input consists of **3 lines**:
+
 - The **budget** of the group - real number in range \[1 .... 8000\]
-- **Season**  - String : "**Spring**", "**Summer**", "**Autumn**", "**Winter**"
+- **Season** - String : "**Spring**", "**Summer**", "**Autumn**", "**Winter**"
 - **Number** of fishermen - integer in range \[4 .... 18\]
 
 ## Output
+
 Print out a **single** line:
+
 - If the budget **IS** enough: "Yes! You have \{money left\} dollars left."
 - If the budget **IS NOT** enough: "Not enough money! You need \{money needed\} dollars."
 
 **The prices should be formatted to the second decimal point.**
 
 ## Example
-| **Input** | **Output** 
-| --- | --- |
-| 3000 | Not enough money! You need 570.00 dollars. |
-| Summer | |
-| 11 | |
 
+| **Input** | **Output**                                 |
+| --------- | ------------------------------------------ |
+| 3000      | Not enough money! You need 570.00 dollars. |
+| Summer    |                                            |
+| 11        |                                            |
 
-| **Input** | **Output** |
-| --- | --- |
-| 2000 | Yes! You have 50.00 dollars left. |
-| Winter | |
-| 13 | |
+| **Input** | **Output**                        |
+| --------- | --------------------------------- |
+| 2000      | Yes! You have 50.00 dollars left. |
+| Winter    |                                   |
+| 13        |                                   |
 
-| **Input** | **Output** |
-| --- | --- |
-| 3600 | Yes! You have 1035.00 dollars left. |
-| Spring | |
-| 6 | |
+| **Input** | **Output**                          |
+| --------- | ----------------------------------- |
+| 3600      | Yes! You have 1035.00 dollars left. |
+| Spring    |                                     |
+| 6         |                                     |
 
 [hints]
 [hint]
@@ -2383,12 +2575,14 @@ Yes! You have 1750.00 dollars left.
 [/slide]
 
 [slide hideTitle]
+
 # Problem with Solution: Flowers
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/03-conditional-statements-advanced/EN/interactive-programming-basics-with-java-conditional-statements-advanced-42-problem-flowers-solution-NEW-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Flowers" taskId="pb-java-Conditional-Statements-A-Flowers" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -2398,20 +2592,23 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 # Description
 
 A flower market offers 3 types of flowers: **lilia**, **roses** and **tulips**. The prices depend on the season:
 
-| **Season** | **Lilia** | **Rose** | **Tulip** |
-| --- | --- | --- | --- |
+| **Season**          | **Lilia** | **Rose**  | **Tulip** |
+| ------------------- | --------- | --------- | --------- |
 | **Spring / Summer** | **2.00$** | **4.10$** | **2.50$** |
 | **Autumn / Winter** | **3.75$** | **4.50$** | **4.15$** |
 
 On holidays the prices of all flowers **increase by 15%**.
 
 The market offers the following **discounts**:
+
 - If you buy **7 or more tulips during the spring** - you get a discount of **5% of the price of the whole bouquet**
 - If you buy **10 or more roses during the winter** - you get a discount of **10% of the price of the whole bouquet**
 - If you buy **more than 20 flowers in total during any season** -you get a discount of **20% of the price of the whole bouquet**
@@ -2420,12 +2617,14 @@ The market offers the following **discounts**:
 
 **All of the discounts should be applied after the holiday price increase!**
 
-There is an arrangement price, which will **always** be 2 dollars and has to be applied at the end of all calculations. 
+There is an arrangement price, which will **always** be 2 dollars and has to be applied at the end of all calculations.
 
 Create a program to **calculate** the price of a bouquet.
 
 ## Input
+
 The input consists of **5 lines**:
+
 - Count of **lilias** - integer in range \[0 ... 200\]
 - Count of **roses** - integer in range \[0 ... 200\]
 - Count of **tulips** - integer in range \[0 ... 200\]
@@ -2433,17 +2632,18 @@ The input consists of **5 lines**:
 - Whether it is a **holiday** or not - \[Y - yes / N - no\]
 
 ## Output
+
 Print out a **single number** - the price of the bouquet, **formatted to the second decimal point**.
 
 ## Example
-| **Input** | **Output** 
-| --- | --- |
-| 2 | 46.14 |
-| 4 | |
-| 8 | |
-| Spring | |
-| Y | |
 
+| **Input** | **Output** |
+| --------- | ---------- |
+| 2         | 46.14      |
+| 4         |            |
+| 8         |            |
+| Spring    |            |
+| Y         |            |
 
 [/task-description]
 [tests]
@@ -2583,6 +2783,3 @@ Y
 [code-io /]
 [/code-task]
 [/slide]
-
-
-
