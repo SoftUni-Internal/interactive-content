@@ -45,6 +45,19 @@ Create a program, which calculates and prints the total salary:
 | calculateMonthSalary(2, [100, 200]) | 300        |
 | calculateMonthSalary(3, [200, 240, 130]) | 570 |
 
+[hints]
+[hint]
+Create a variable **salary** at the beginning and assign it the value of 0.
+[/hint]
+[hint]
+In a **for-loop** iterate through every element of the array using a counter variable "i" with an initial value of 0.
+Loop while the counter variable is less than the number of workdays, adding each number from the array to the salary. 
+[/hint]
+[hint]
+In the end, print the variable **salary**.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
