@@ -974,6 +974,19 @@ Create a program, which simulates an ATM withdrawal:
 |atm(10, 50, 20)| The daily limit was exceeded. |
 || Insufficient availability. |
 
+[hints]
+[hint]
+Check the **limit** to see **if it is exceeded**. If this is the case, print the appropriate message.
+[/hint]
+[hint]
+Take into account that **in some cases you will need to print two lines** (if the limit is exceeded and if the balance is not enough at the same time).
+[/hint]
+[hint]
+Make another independent **"if"** statement to see **if you have enough balance for the withdrawal**.
+However, if it isn't, enter the **"else"** statement and print the appropriate message.
+[/hint]
+[/hints]
+
 [/task-description]
 [code-io /]
 [tests]
@@ -1054,6 +1067,20 @@ Create a program, which finds the biggest of 5 numbers
 | biggestOfFiveNumbers(\-1, \-2, \-3, \-4, \-5) | \-1 |
 | biggestOfFiveNumbers(3, 4, 77, 12, 33) | 77 |
 
+[hints]
+[hint]
+Create a control variable **biggestNumber** at the beginning, which will store the value of the biggest number:
+let biggestNumber = Number.MIN_SAFE_INTEGER; 
+*(**Number.MIN_SAFE_INTEGER** represents the minimum safe integer in JavaScript, or -(253 - 1)).*
+[/hint]
+[hint]
+Compare **each of the input numbers** with the control variable.
+If an input number has a greater value than the control variable, overwrite the value of the variable with that number. 
+[/hint]
+[hint]
+In the end, print the variable **biggestNumber**.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
