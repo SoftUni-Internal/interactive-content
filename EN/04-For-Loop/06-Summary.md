@@ -16,7 +16,7 @@ for (initialization; condition; update) {
   //loop's body;
 }
 ```
-* Initialization 
+   - **Initialization**
 
    - **Condition**
 
