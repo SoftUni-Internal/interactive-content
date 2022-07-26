@@ -1,9 +1,12 @@
 # Homework
 
 [slide hideTitle]
+
 # Problem: Guess the Password
+
 [code-task title="Guess the Password" taskId="pb-java-Conditional-Statements-guess-the-password" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```java
 import java.util.Scanner;
 
@@ -13,21 +16,24 @@ public class Program {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program to check whether we have entered the right password or not:
 
-  * Read the input
-  * Print **"Welcome"** if the input password is **"s3cr3t!"**
-  * Print **"Wrong password!"** in all other cases 
+- Read the input
+- Print **"Welcome"** if the input password is **"s3cr3t!"**
+- Print **"Wrong password!"** in all other cases
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-| s3cr3t! | Welcome |
-| qwerty | Wrong password! |
 
+| **Input** | **Output**      |
+| --------- | --------------- |
+| s3cr3t!   | Welcome         |
+| qwerty    | Wrong password! |
 
 [/task-description]
 [tests]
@@ -70,6 +76,7 @@ Wrong password!
 [/slide]
 
 [slide hideTitle]
+
 # Problem with Solution: Boiling Water
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-38-problem-boiling-water-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -86,21 +93,24 @@ public class Program {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
-Create a program, which checks whether the water in a pot is boiling: 
 
-  * Read a floating-point number: the water **temperature** (in °C)
-  * Print out **"The water is boiling"** if the number **> 100**
-  * Print out **"The water is not hot enough"** in all other cases
+Create a program, which checks whether the water in a pot is boiling:
 
-  
+- Read a floating-point number: the water **temperature** (in °C)
+- Print out **"The water is boiling"** if the number **> 100**
+- Print out **"The water is not hot enough"** in all other cases
+
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-| 104.8 | The water is boiling |
-| 29 | The water is not hot enough |
+
+| **Input** | **Output**                  |
+| --------- | --------------------------- |
+| 104.8     | The water is boiling        |
+| 29        | The water is not hot enough |
 
 [/task-description]
 [tests]
@@ -143,7 +153,9 @@ The water is not hot enough
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Speed Info
+
 [code-task title="Speed Info" taskId="pb-java-Conditional-Statements-Speed-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -156,22 +168,24 @@ public class Program {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a piece of code that checks wheter an object is moving fast or slow according to its speed:
 
-  * Read the **speed** (a floating-point number)
-  * Print **"Slow"** if the speed is **<= 30**
-  * Print **"Fast"** if the speed is **> 30**
-
+- Read the **speed** (a floating-point number)
+- Print **"Slow"** if the speed is **<= 30**
+- Print **"Fast"** if the speed is **> 30**
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-| 30 | Slow |
-| 60 | Fast |
 
+| **Input** | **Output** |
+| --------- | ---------- |
+| 30        | Slow       |
+| 60        | Fast       |
 
 [/task-description]
 [tests]
@@ -214,6 +228,7 @@ Fast
 [/slide]
 
 [slide hideTitle]
+
 # Problem with Solution: Area of Figures
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-42-problem-area-of-figures-and-solution -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
@@ -230,38 +245,43 @@ public class Program {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program to calculate the area of some different figures:
-  * Reads a string: the figure **type**
-  * Checks if the figure is a **square**, a **rectangle** or a **circle**
-  * Accepts one number for a square or a circle or two numbers for a rectangle
-    * numbers will be floating-point
-  * Prints out the calculated area **formatted** to the second digit after the decimal point
-  * For unknown figures print out **"Unknown figure"**
+
+- Reads a string: the figure **type**
+- Checks if the figure is a **square**, a **rectangle** or a **circle**
+- Accepts one number for a square or a circle or two numbers for a rectangle
+  - numbers will be floating-point
+- Prints out the calculated area **formatted** to the second digit after the decimal point
+- For unknown figures print out **"Unknown figure"**
 
 ## Examples
 
 | **Input** | **Output** |
-| --- | --- |
-| square | 25.00 |
-| 5 |  |
+| --------- | ---------- |
+| square    | 25.00      |
+| 5         |            |
 
 | **Input** | **Output** |
-| --- | --- |
-| rectangle | 30.00 |
-| 3 |  |
-| 10 |  |
+| --------- | ---------- |
+| rectangle | 30.00      |
+| 3         |            |
+| 10        |            |
 
-| **Input** | **Output** |
-| --- | --- |
+| **Input** | **Output**     |
+| --------- | -------------- |
 | trapezoid | Unknown figure |
 
 | **Input** | **Output** |
-| --- | --- |
-| circle | 19.63 |
-| 2.5 | |
+| --------- | ---------- |
+| circle    | 19.63      |
+| 2.5       |            |
+
 [/task-description]
 [tests]
 [test open]
@@ -345,9 +365,12 @@ Unknown figure
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Tickets
+
 [code-task title="Tickets" taskId="pb-java-Conditional-Statements-Tickets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```java
 import java.util.Scanner;
 
@@ -357,22 +380,32 @@ public class Program {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program to **calculate** the price of a ticket based on the following:
 
-  * Read the ticket type: either **student** or **regular**
-  * Print the **price** in the following format "$\{**price**\}":
-    * the price should be **formatted** to the 2nd digit after the decimal point
-  * Student ticket price: **1.00**
-  * Regular ticket price: **1.60**
-  * For any other input print out: **"Invalid ticket type!"**
-  
+- Read the ticket type: either **student** or **regular**
+- Print the **price** in the following format "$\{**price**\}":
+  - the price should be **formatted** to the 2nd digit after the decimal point
+- Student ticket price: **1.00**
+- Regular ticket price: **1.60**
+- For any other input print out: **"Invalid ticket type!"**
+
 ## Example
+
 | **Input** | **Output** |
-| --- | --- |
-| student | $1.00 |
+| --------- | ---------- |
+| student   | $1.00      |
+
+[hints]
+[hint]
+Make three checks for **student**, **regular** or _invalid_
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -431,9 +464,10 @@ Invalid ticket type!
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Coffee Shop
 
-[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-46-problem-coffee-shop-and-solution  -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-46-problem-coffee-shop-and-solution -,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Coffee Shop" taskId="pb-java-Conditional-Statements-Coffee-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
@@ -447,32 +481,45 @@ public class Program {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program to calculate the price for a particular drink in a coffee shop:
 
-  * The first line of input will be either **"coffee"** or **"tea"**
-  * The second: either **"sugar"** or **"no"**
-  * Print the price in the following format: "**Final price:** $\{**price**\}"
-    * the price should be **formatted** to the 2nd digit after the decimal point
-  
+- The first line of input will be either **"coffee"** or **"tea"**
+- The second: either **"sugar"** or **"no"**
+- Print the price in the following format: "**Final price:** $\{**price**\}"
+  - the price should be **formatted** to the 2nd digit after the decimal point
+
 Prices:
 
-  * Coffee price: **1.00**
-  * Tea price: **0.60**
-  * Sugar price: **0.40**
+- Coffee price: **1.00**
+- Tea price: **0.60**
+- Sugar price: **0.40**
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-| coffee | Final price: $1.40 |
-| sugar |  |
 
-| **Input** | **Output** |
-| --- | --- |
-| tea | Final price: $0.60 |
-| no |  |
+| **Input** | **Output**         |
+| --------- | ------------------ |
+| coffee    | Final price: $1.40 |
+| sugar     |                    |
+
+| **Input** | **Output**         |
+| --------- | ------------------ |
+| tea       | Final price: $0.60 |
+| no        |                    |
+
+[hints]
+[hint]
+Check if the drink **coffee**, **tea** and if it has **sugar**
+[/hint]
+[hint]
+Format the result to the second decimal point
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -537,7 +584,9 @@ Final price: $0.60
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Valid Triangle
+
 [code-task title="Valid Triangle" taskId="pb-java-Conditional-Statements-Valid-triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
 
@@ -550,23 +599,32 @@ public class Program {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program to check if a triangle could exist judging by the input:
 
-  * Read 3 integers: the **sides of a triangle**
-  * Check if each side is less than the sum of the other 2
-    * prints **"Valid Triangle"** if the above condition is met
-    * prints **"Invalid Triangle"** otherwise
+- Read 3 integers: the **sides of a triangle**
+- Check if each side is less than the sum of the other 2
+  - prints **"Valid Triangle"** if the above condition is met
+  - prints **"Invalid Triangle"** otherwise
 
-    
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-| 3 | Valid Triangle |
-| 4 |  |
-| 5 |  |
+
+| **Input** | **Output**     |
+| --------- | -------------- |
+| 3         | Valid Triangle |
+| 4         |                |
+| 5         |                |
+
+[hints]
+[hint]
+**if (!(c < a+b) || !(a < b+c)|| !(b < a+c))** print **Invalid Triangle**, otherwise print **Valid Triangle**
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -615,12 +673,13 @@ Invalid Triangle
 [/code-task]
 [/slide]
 
-
-
 [slide hideTitle]
+
 # Problem: Harvest
+
 [code-task title="Harvest" taskId="pb-java-Conditional-Statements-Harvest" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -630,8 +689,10 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
 
 The **Happy Wine Brothers Company** has asked you to create a simple program to calculate whether they will be able to reach their wine production goals in one of their vineyards.
@@ -649,54 +710,59 @@ Create a program that calculates how much wine can be produced and whether this 
 If the produced amount is sufficient to meet the goal, the remaining wine is distributed among the workers at the vineyard.
 
 ## Input
+
 You will receive the following as input from the console:
+
 - **The size of the vineyard** in square meters - an integer in range \[10 … 5000\]
 - **The yield per sq. m** - a floating-point number in range \[0.00 … 10.00\]
 - **The production goal in liters** - an integer in range \[10 … 600\]
-    - remember that this particular vineyard is responsible for only 40% of the total production
+  - remember that this particular vineyard is responsible for only 40% of the total production
 - **Number of workers** - an integer in range \[1 … 20\]
 
 ## Output
+
 Print one of the following output templates to the console, depending on the result:
--  If the produced wine amount is less than the goal:
-    - "**It will be a tough winter!** \{**amount of wine needed**\} **liters of wine needed to reach the goal.**"
-        - the result must be **rounded down** to the nearest integer
+
+- If the produced wine amount is less than the goal:
+  - "**It will be a tough winter!** \{**amount of wine needed**\} **liters of wine needed to reach the goal.**"
+    - the result must be **rounded down** to the nearest integer
 - If the produced wine amount is more than or equal to the production goal:
-    - "**Good harvest this year! Total wine:** \{**Total wine**\} **liters.**"
-        - the result must be **rounded down** to the nearest integer
-    -  "\{**remaining wine**\} **liters left** **->** \{**wine for 1 worker**\} **liters per person.**"
-        - The remaining wine amount and wine per worker must be **rounded up** to the nearest integer
+  - "**Good harvest this year! Total wine:** \{**Total wine**\} **liters.**"
+    - the result must be **rounded down** to the nearest integer
+  - "\{**remaining wine**\} **liters left** **->** \{**wine for 1 worker**\} **liters per person.**"
+    - The remaining wine amount and wine per worker must be **rounded up** to the nearest integer
 
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-| 650 | Good harvest this year! Total wine: 208 liters. |
-| 2 | 33 liters left -> 11 liters per person. |
-| 175 | |
-| 3 | |
 
+| **Input** | **Output**                                      |
+| --------- | ----------------------------------------------- |
+| 650       | Good harvest this year! Total wine: 208 liters. |
+| 2         | 33 liters left -> 11 liters per person.         |
+| 175       |                                                 |
+| 3         |                                                 |
 
 [hints]
 [hint]
 Calculate the total yield in kilograms.
-Total Yield in kg: 650 \* 2 = 1300 
+Total Yield in kg: 650 \* 2 = 1300
 [/hint]
 [hint]
 Determine the total wine produced and check if the goal was reached.
 Then print the correct output.
 Wine Produced by this vineyard = (40% \* 1300) / 2.5 = 208
-208 > 175 - the goal was reached 
+208 > 175 - the goal was reached
 208 \- 175 = 33 liters remain \-> each worker receives 11 liters
 [/hint]
 [/hints]
 
 ## Example
-| **Input** | **Output** |
-| --- |  --- |
-| 1020 | It will be a tough winter! 180 liters of wine needed to reach the goal.|
-| 1.5 |  |
-| 425 | |
-| 4 | |
+
+| **Input** | **Output**                                                              |
+| --------- | ----------------------------------------------------------------------- |
+| 1020      | It will be a tough winter! 180 liters of wine needed to reach the goal. |
+| 1.5       |                                                                         |
+| 425       |                                                                         |
+| 4         |                                                                         |
 
 [/task-description]
 [tests]
@@ -820,15 +886,13 @@ It will be a tough winter! 79 liters of wine needed to reach the goal.
 [/code-task]
 [/slide]
 
-
-
-
-
-
 [slide hideTitle]
+
 # Problem: Time + 15 Minutes
+
 [code-task title="Time + 15 Minutes" taskId="pb-java-Conditional-Statements-time-15minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -838,31 +902,48 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program that receives two integers representing an exact time in the format: "\{**hours**\}:\{**minutes**\}" and prints out what the time will be after 15 minutes.
 
 ## Input
+
 The input consists of **two** lines:
+
 - The hours - integer in range \[0...23\]
 - The minutes - integer in range \[0...59\]
 
 ## Output
+
 Print the result in the following format: "\{hours\}:\{minutes\}".
+
 - The hours should be formatted **without a leading zero**
 - The minutes should be formatted **with a leading zero**
 
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-| 11 | 11:23|
-| 08 | |
 
 | **Input** | **Output** |
-| --- | --- |
-| 1 | 2:01 | 
-| 46 | |
+| --------- | ---------- |
+| 11        | 11:23      |
+| 08        |            |
+
+| **Input** | **Output** |
+| --------- | ---------- |
+| 1         | 2:01       |
+| 46        |            |
+
+[hints]
+[hint]
+Use **%d** for printing the hours without leading a leading zero
+[/hint]
+[hint]
+Use **%02d** for printing the minutes with leading a leading zero
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -988,11 +1069,13 @@ Print the result in the following format: "\{hours\}:\{minutes\}".
 [/code-task]
 [/slide]
 
-
 [slide hideTitle]
+
 # Problem: Day of Week
+
 [code-task title="Day of Week" taskId="pb-java-Conditional-Statements-day-of-week" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -1002,8 +1085,10 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
 
 Create a program that reads an integer \[1...7\] from the console and prints out **the corresponding word for the day of the week** or "**Error**" if the number is **invalid**.
@@ -1011,9 +1096,15 @@ Create a program that reads an integer \[1...7\] from the console and prints out
 ## Example
 
 | **Input** | **Output** |
-| --- |  --- |
-| 2 | Tuesday |
-| -1 | Error |
+| --------- | ---------- |
+| 2         | Tuesday    |
+| -1        | Error      |
+
+[hints]
+[hint]
+Use a switch case and in the default set the Error message;
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1102,12 +1193,13 @@ Error
 [/code-task]
 [/slide]
 
-
-
 [slide hideTitle]
+
 # Problem: Animal Type
+
 [code-task title="Animal Type" taskId="pb-java-Conditional-Statements-Animal-Type" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -1117,18 +1209,27 @@ public class Main {
     }
 }
 ```
+
+[hints]
+[hint]
+Use a switch case for the type of animal.
+[/hint]
+[/hints]
+
 [/code-editor]
 [task-description]
+
 ## Description
 
 Create a program that prints out the **class** of an animal.
 There are three possible output types: **mammal**, **reptile** and **unknown**
 
-
 ## Input / Output
-The input may hold the following values: 
-- mammals: **dog** 
-- reptiles: **crocodile**, **tortoise**, **snake** 
+
+The input may hold the following values:
+
+- mammals: **dog**
+- reptiles: **crocodile**, **tortoise**, **snake**
 - anything else that may come as input should produce **unknown** as output
 
 - **dog -> mammal**
@@ -1138,9 +1239,9 @@ The input may hold the following values:
 ## Example
 
 | **Input** | **Output** |
-| --- | --- |
-| dog | mammal |
-| cat | unknown |
+| --------- | ---------- |
+| dog       | mammal     |
+| cat       | unknown    |
 
 [/task-description]
 [tests]
@@ -1205,14 +1306,15 @@ unknown
 [/code-task]
 [/slide]
 
-
 [slide hideTitle]
+
 # Problem with Solution: Pets
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/02-conditional-statements/EN/interactive-programming-basics-with-java-conditional-statements-47-problem-pets-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Pets" taskId="pb-java-Conditional-Statements-pets" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -1222,15 +1324,20 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
-Your friend has 3 pets. 
+
+Your friend has 3 pets.
 
 She would like to go on a trip and needs you to help her calculate whether she currently has enough food to leave to her pets so that they will stay fed during her time away.
 
 ## Input
+
 Read **five** lines from the console:
+
 - **number of days** - an integer in range \[1 ... 5000\]
 - **left food in kilograms** - an integer in range \[0 ... 100000\]
 - **food for the dog per day in kilograms** - a double in range \[0.00 ... 100.00\]
@@ -1238,35 +1345,47 @@ Read **five** lines from the console:
 - **food for the turtle per day in grams** - a double in range \[0.00 ... 10000.00\]
 
 ## Output
+
 Print out a **single** line:
+
 - If the food **IS enough**:
-  - "\{**kilograms remain**\} **kilos of food left.**" 
-  
+  - "\{**kilograms remain**\} **kilos of food left.**"
+
 The result should be **rounded down to the nearest integer**.
+
 - If the left food **IS NOT enough**:
   - "\{**kilograms needed**\} **more kilos of food are needed.**"
-  
+
 The result should be **rounded up to the nearest integer**.
 
 ## Examples
-| **Input**  | **Output** |
-| --- | --- |
-| 2 | 3 kilos of food left. |
-| 10 | |
-| 1 | |
-| 1 | |
-| 1200 | |
 
+| **Input** | **Output**            |
+| --------- | --------------------- |
+| 2         | 3 kilos of food left. |
+| 10        |                       |
+| 1         |                       |
+| 1         |                       |
+| 1200      |                       |
 
 ## Example
-| **Input**  | **Output** |
-| --- | --- |
-| 5 | 7 more kilos of food are needed. |
-| 10 | |
-| 2.1 | |
-| 0.8 | |
-| 321 | |
 
+| **Input** | **Output**                       |
+| --------- | -------------------------------- |
+| 5         | 7 more kilos of food are needed. |
+| 10        |                                  |
+| 2.1       |                                  |
+| 0.8       |                                  |
+| 321       |                                  |
+
+[hints]
+[hint]
+Calculate the **allFoodNeeded** by _foodForDogNeed + foodForCatNeed + foodForTurtleNeed_
+[/hint]
+[hint]
+Round the number by using **%.0f**
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1419,12 +1538,13 @@ The result should be **rounded up to the nearest integer**.
 [/code-task]
 [/slide]
 
-
-
 [slide hideTitle]
+
 # Problem: Pipes In Pool
+
 [code-task title="Pipes In Pool" taskId="pb-java-Conditional-Statements-pipes-in-pool" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -1434,8 +1554,10 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
 
 - To fill a swimming pool two pipes are to be used
@@ -1446,14 +1568,18 @@ public class Main {
 Create a program that calculates the volume of water in the pool **after the specified time runs out**.
 
 ## Input
+
 **Four** lines of input:
+
 - **V** - **Volume of water in litres** - integer in range \[1 ... 10000\]
 - **P1** - **flow rate of first pipe per hr** - integer in range \[1 ... 5000\]
 - **P2** - **flow rate of second pipe per hr** - integer in range \[1 ... 5000\]
 - **H** - **hrs the pipes are left opened** - float-pointing number in range \[1.0 ... 24.00\]
 
 ## Output
+
 Print out **one of the following outcomes**:
+
 - How full the pool is and the percentage of water each pipe transferred to the pool in the process
   - "**The pool is** \{**percentage of volume**\}% **full.** **Pipe 1:** \{**transferred percentage**\}**%.** **Pipe 2:** \{**transferred percentage**\}**%.**"
 - If the pool is overflowing – the volume of unnecessary water transferred
@@ -1461,20 +1587,22 @@ Print out **one of the following outcomes**:
 - All numbers in the output should be formatted up to the 2nd digit after the decimal point
 
 ## Example One
-| **Input** | **Output** |
-| --- | --- |
-| 1000 | The pool is 66.00% full. Pipe 1: 45.45%. Pipe 2: 54.55%. |
-| 100 | |
-| 120 | |
-| 3 | |
+
+| **Input** | **Output**                                               |
+| --------- | -------------------------------------------------------- |
+| 1000      | The pool is 66.00% full. Pipe 1: 45.45%. Pipe 2: 54.55%. |
+| 100       |                                                          |
+| 120       |                                                          |
+| 3         |                                                          |
 
 ## Example Two
-| **Input** | **Output** |
-| --- | --- |
-| 100 | For 2.50 hours the pool overflows with 400.00 liters. |
-| 100 | |
-| 100 | |
-| 2.5 | |
+
+| **Input** | **Output**                                            |
+| --------- | ----------------------------------------------------- |
+| 100       | For 2.50 hours the pool overflows with 400.00 liters. |
+| 100       |                                                       |
+| 100       |                                                       |
+| 2.5       |                                                       |
 
 [hints]
 [hint]
@@ -1491,7 +1619,6 @@ The second pipe has transferred 54% (360 of 660 liters).
 [/hint]
 
 [/hints]
-
 
 [/task-description]
 [tests]
@@ -1664,4 +1791,3 @@ The pool is 10.72% full. Pipe 1: 54.55%. Pipe 2: 45.45%.
 [code-io /]
 [/code-task]
 [/slide]
-
