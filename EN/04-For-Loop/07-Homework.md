@@ -132,7 +132,7 @@ function adapter(input, code) {
 
 Create a program, which finds the **biggest** and the **smallest** number from a given sequence:
 
-- You will receive **n**:  the count of numbers to process
+- You will receive **n**:  the count of numbers to process and an array of numbers
 - Find the **max** and the **min** values
 - Print them to the console
 
@@ -150,6 +150,34 @@ Create a program, which finds the **biggest** and the **smallest** number from a
 | --- | --- |
 | numberSequence(4, [15, 155, 34, 71]) | Max number: 155 |
 |                                                  | Min number: 15  |
+
+[hints]
+[hint]
+Algorithm to find the smallest and largest numbers in an array
+
+    Initialize small = large = arr[0]
+    Repeat from i = 2 to n.
+    if(arr[i] > large)
+    large = arr[i]
+    if(arr[i] < small)
+    small = arr[i]
+    Print small and large.
+[/hint]
+[hint]
+Initialize two variables at the beginning - "maxNumber" and "minNumber".
+Assign to both of them the value of the first element from the array.
+[/hint]
+[hint]
+Loop through the array starting from the second element: (let i = 1; i < n; i++).
+At each iteration make two independent if statements - in the first one check if the current number is bigger than the "maxNumber".
+If it is, overwrite the value of the "maxNumber" with that number.
+In the second one check if the current number is smaller than the "minNumber".
+If it is, overwrite the value of the "minNumber" with that number.
+[/hint]
+[hint]
+In the end, print the two variables as shown in the example.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
