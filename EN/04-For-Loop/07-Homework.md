@@ -364,6 +364,21 @@ Create a program, which determines if the sum of pairs in a sequence is the same
 | equalPairs(2, [-1, 0, 0, -1]) | Yes, value=\-1 |
 | equalPairs(2, [1, 2, 0, 1])           | No, maxdiff=2  |
 
+[hints]
+[hint]
+Read the numbers from the input in pairs. 
+For each pair calculate its sum. 
+[/hint]
+[hint]
+As we read the number pairs from the input, for each pair, except for the first one, we must calculate the difference with the previous one. 
+To do that, we need to store the sum of the previous pair in a separate variable. 
+[/hint]
+[hint]
+Finally, find the biggest difference between the two pairs. 
+If it is 0, print “Yes” + the value, otherwise - “No” + the difference.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
