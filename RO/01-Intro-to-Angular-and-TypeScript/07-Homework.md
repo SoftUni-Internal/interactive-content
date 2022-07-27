@@ -115,7 +115,7 @@ Așezați toate funcționalitățile comune într-o clasă **parent abstract**.
 
 Urmați diagrama de mai jos:
 
-[image assetsSrc="Angular-Introduction-7.png" /]
+[image assetsSrc="employee-graph.png" /]
 
 Fiecare poziție are sarcini diferite.
 
