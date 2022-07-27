@@ -611,7 +611,7 @@ Create a program, which finds how many numbers of a sequence are divisible witho
 
 - Calculate the **percentage** of how many of them can be divided **without a remainder, using 2, 3, and 4 as divisors**
 
-- Print the percentages for the three divisors, **formatted** to the second digit
+- Print the percentages for the three divisors, **formatted** to the second digit after the decimal point
 
 # Example
 
@@ -626,6 +626,25 @@ Create a program, which finds how many numbers of a sequence are divisible witho
 | divideWithoutRemainder(2, [2, 11, 4]) | 100.00\%   |
 |                                            | 0.00\%     | 
 |                                            | 50.00\%    |
+
+[hints]
+[hint]
+You can start by declaring three helper variables that will keep the count of the numbers in the corresponding group: "divisibleBy2", "divisibleBy3", "divisibleBy4".
+[/hint]
+[hint]
+To read and allocate each number to its corresponding group we have to rotate **for loop** from 0 to n (count of numbers). Each iteration of the loop should read and allocate one single number. A single number can get into several groups at once, so we have to make three separate if checks for each number – respectively check whether it is divided by 2, 3 and 4 and increase the value of the variable that keeps the count of numbers in the corresponding group.
+[/hint]
+[hint]
+Finally, you need to print the obtained results, by following the specified format.
+**Example:** We have n = 10 numbers: 680, 2, 600, 200, 800, 799, 199, 46, 128, 65. We get the following distribution and visualization:
+
+| **Division without remainder by:** | **Numbers** | **Count** | **Percent** |
+|  ---  |  ---  |  ---  |  ---  |
+| 2 | 680, 2, 600, 200, 800, 46, 128 | 7 | p1 = (7 / 10) * 100 = **70.00%**
+| 3 | 600                            | 1 | p2 = (1 / 10) * 100 = **10.00%**
+| 4 | 680, 600, 200, 800, 128        | 5 | p3 = (5 / 10) * 100 = **50.00%**
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
