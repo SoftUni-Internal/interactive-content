@@ -773,6 +773,18 @@ Create a program, which calculates the sum of vowels in a sequence based on the 
 | vowelSum(2, ['a', 'g']) | 1          |
 | vowelSum(3, ['o', 'k', 'e']) | 6     |
 
+[hints]
+[hint]
+Create a variable "sum" with a value of 0.
+[/hint]
+[hint]
+In a **for loop** check whether each letter (chars[i]) is a vowel and add its value to the sum.
+[/hint]
+[hint]
+Finally, print the "sum" variable.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
