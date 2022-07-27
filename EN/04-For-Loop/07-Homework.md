@@ -496,6 +496,18 @@ Create a program, which calculates and prints the sum of a sequence in zigzag:
 | zigZagSum(2, [10, 20]) | -10         |
 | zigZagSum(2, [5, 5])   | 0          |
 
+[hints]
+[hint]
+Initialize a variable "result" at the beginning with a value of 0.
+[/hint]
+[hint]
+Loop through the array, and at each iteration, check if the index is even or odd, updating the result variable by adding or subtracting the current element.
+[/hint]
+[hint]
+Finally, print the variable "result".
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
