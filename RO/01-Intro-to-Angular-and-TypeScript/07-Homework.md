@@ -115,7 +115,7 @@ Așezați toate funcționalitățile comune într-o clasă **parent abstract**.
 
 Urmați diagrama de mai jos:
 
-[image assetsSrc="employee-graph.png" /]
+[image assetsSrc="employee-graph-smaller.png" /]
 
 Fiecare poziție are sarcini diferite.
 

@@ -115,7 +115,7 @@ Place all common functionality in a **parent abstract** class.
 
 Follow the diagram below:
 
-[image assetsSrc="employee-graph.png" /]
+[image assetsSrc="employee-graph-smaller.png" /]
 
 Every position has different tasks.
 
