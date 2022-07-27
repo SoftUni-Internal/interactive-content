@@ -891,9 +891,9 @@ Create a program, which determines if a rollercoaster can depart:
 
 - All the other numbers represent the **age** for each person queuing
 
-- If all the seats can be filled, print out: "**The rollercoaster departs**"
+- If all the seats can be filled, print: "**The rollercoaster departs**"
 
-- In any other case, print out: "**Waiting...**"
+- In any other case, print: "**Waiting...**"
 
 # Example
 
@@ -901,6 +901,8 @@ Create a program, which determines if a rollercoaster can depart:
 | ------------------------------------------- | ---------------------------- |
 | rollercoaster([2, 10, 2, 15, 24]) | The rollercoaster departs |
 | rollercoaster([3, 15, 1, 23])       | Waiting...                   |
+
+
 
 [/task-description]
 [tests]
@@ -1210,6 +1212,20 @@ Create a program, which prints all the numbers, divisible by 9 without a remaind
 | ----------- | ----------- |
 | solve(10, 20)   | The sum: 18                                 |
 |                 | 18                                          |
+
+[hints]
+[hint]
+Create a variable "sum" for storing the sum of the numbers, divisible by 9 without remainder.
+Create an empty array "numbers", where you will add the numbers, divisible by 9 without remainder.
+[/hint]
+[hint]
+In a **for loop** (let i = firstNumber; i <= secondNumber; i++) check each element from the input array. 
+If it is divisible by 9 without a remainder, add it to the "sum" variable and push it to the array "numbers". 
+[/hint]
+[hint]
+Finally, print the sum and the array using **array.join(' ')**; 
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
