@@ -115,7 +115,7 @@ Place all common functionality in a **parent abstract** class.
 
 Follow the diagram below:
 
-[image assetsSrc="Angular-Introduction-7.png" /]
+[image assetsSrc="employee-graph.png" /]
 
 Every position has different tasks.
 
