@@ -405,6 +405,25 @@ The special number is a number **divisible by all of its digits** without a rema
 | specialNumber('23')| 23 is not special |
 | specialNumber('55')| 55 is special |
 
+[hints]
+[hint]
+Declare four variables in the beginning:
+let **number** = Number(input);
+let **length** = input.length;
+let **isSpecial** = true;
+let **i** = 0;
+[/hint]
+[hint]
+Loop while the variable "i" is less than the input length.
+At each loop take the current number from the input: let **divisor** = Number(input[i]).
+If the input number is not **divisible by this divisor** without a remainder, change the value of the variable "isSpecial" to **false** and **break** the loop.
+Make sure you increase the value of the variable "i" by 1 at each iteration after the if statement.
+[/hint]
+[hint]
+Finally, check the variable "isSpecial" and print the appropriate output.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
