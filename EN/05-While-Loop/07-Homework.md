@@ -501,8 +501,8 @@ function adapter(input, code) {
 # Description
 Create a program, which calculates bonus points based on the following rules: 
 
-* You will receive an **integer** **x** and an **array** from the console
-* Keep processing the integers in the array until you find the **same one as x**
+* You will receive an **integer** **n** and an **array** from the console
+* Keep processing the integers in the array until you find the **same one as n**
 * When you find it, multiply the value of the number **before it** by 2 and print it
 
 # Example
@@ -510,6 +510,23 @@ Create a program, which calculates bonus points based on the following rules:
 | --- | --- |
 | specialBonus(25, [20, 30, 25]) | 60 |
 | specialBonus(5, [3, 4, 7, 8, 5]) | 16 |
+
+[hints]
+[hint]
+Declare three helper variables in the beginning:
+let **length** = numbers.length;
+let **i** = 0;
+let **previous** = 0;
+[/hint]
+[hint]
+Process the integers in the array until you find the same one as "n".
+When you find it, multiply the value of the number before it by 2 and assign the resulting value to the variable "previous". 
+**Note**: If the first number in the array is the same as the number you are looking for, then there will be no previous number, and you must multiply the value of that number by 2.
+[/hint]
+[hint]
+Finally, print the variable "previous".
+[/hint]
+[/hints]
 
 
 [/task-description]
