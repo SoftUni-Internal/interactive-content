@@ -634,6 +634,21 @@ Create a program, which prints a sequence of numbers up to a given input, based 
 || 7 |
 || 15 |
 
+[hints]
+[hint]
+Take the number **"n"** and store it in a variable.
+[/hint]
+[hint]
+Declare a variable **"num"** that will hold the current number, and assign it the initial **value of 1**.
+[/hint]
+[hint]
+In the while loop condition, use: **(num <= n)**.
+[/hint]
+[hint]
+In the body of the loop, first print the value of the current number and then increase the current number by using the formula: **num = num * 2 + 1**.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
