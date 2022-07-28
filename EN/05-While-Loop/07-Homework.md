@@ -114,6 +114,16 @@ Create a program that:
 | Winnie the Pooh | |
 | Peter Pan | |
 | Alice in Wonderland | |
+
+[hints]
+[hint]
+Firstly read the title of the book.
+[/hint]
+[hint]
+Then using a **while loop**, keep reading titles until you receive the same one as in the start. Keep track of the attempts and print them at the end!
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -298,6 +308,17 @@ Create a program that:
 | 23 | 23 is not special |
 | 404 | 404 is special |
 
+[hints]
+[hint]
+Using a while loop, iterate over every digit of the number. 
+[/hint]
+[hint]
+You can get each of the digits using: int lastDigit = number % 10; number /= 10; 
+[/hint]
+[hint]
+In the end, print if the number is special or not.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -447,6 +468,22 @@ Create a program that:
 | 8 | 1 |
 |  | 3 |
 |  | 7 |
+
+[hints]
+[hint]
+The condition of your while loop should be (<= n)
+[/hint]
+[hint]
+```java
+while (2*num+1<=n)
+    {
+        num = num * 2 + 1;
+        (...)
+    }
+```
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -561,6 +598,16 @@ Create a program that:
 | 69.42 | Increase: 69.42 |
 | 100 | Increase: 100.00 |
 | END | Total: 174.93 |
+
+[hints]
+[hint]
+Read data until reaching END. In every iteration, keep track of the money and then print it after the END command.
+[/hint]
+[hint]
+Don't forget to format the result to the second decimal point!
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -1283,6 +1330,16 @@ If she did not manage to reach her goal, you have to print out the following mas
 | 3000| |
 | Going home| |
 | 200| | 
+
+[hints]
+[hint]
+Iterate over the number of steps before reaching the end goal, or receiving one of the stop commands.
+[/hint]
+[hint]
+Check if the sum is less or more than the needed goal.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -1534,6 +1591,9 @@ Read from the console:
 | End | |
 
 [hints]
+[hint]
+First read the number of bottles of detergent.
+[/hint]
 [hint]
 Detergent quantity = 2 \* 750 = 1500 ml.
 53 plates are loaded = > 53 \* 5 = 265 ml.  1500 \- 265 = 1235 ml. left
@@ -2010,6 +2070,16 @@ Create a program that calculates the **average grade** of a student for his enti
 | 6 | | 
 | 5.43 | |
 | 5 | |
+
+[hints]
+[hint]
+After reading the name, iterate over the 12 grades.
+[/hint]
+[hint]
+Get their average value, and if it is more than 4.00 print that the students graduates, other wise do not print anything.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
