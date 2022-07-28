@@ -772,6 +772,18 @@ Create a program, which manages an account balance:
 ||Increase: 45.00|
 || Total: 100.00 |
 
+[hints]
+[hint]
+Declare variable "total" in the beginning with initial value of 0.
+[/hint]
+[hint]
+In a **while loop**, until you receive the 'END' command, take each element from the array as a number, print it, and add its value to the "total" variable. 
+[/hint]
+[hint]
+After the while loop, print the total balance in a specified format.
+[/hint]
+[/hints]
+
 
 [/task-description]
 [tests]
