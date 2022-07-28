@@ -286,6 +286,27 @@ Create a program, which finds the **largest** and the **smallest** number in a s
 | minAndMax(['5', '13', '145', 'END', '35', '66'])| Max number: 145 |
 ||Min number: 5|
 
+[hints]
+[hint]
+Initialize two variables at the beginning - "maxNumber" and "minNumber".
+Assign to both of them the value of the first element from the array.
+[/hint]
+[hint]
+Initialize another variable "i" with initial value of 1.
+[/hint]
+[hint]
+Loop through the array while the element at index "i" is different than 'END'.
+At each iteration make two independent if statements - in the first one check if the current number is bigger than the "maxNumber".
+If it is, overwrite the value of the "maxNumber" with that number.
+In the second one check if the current number is smaller than the "minNumber".
+If it is, overwrite the value of the "minNumber" with that number.
+On each loop, increase the value of the variable "i" by one, so you can move to the next element in the array.
+[/hint]
+[hint]
+In the end, print the two variables as shown in the example.
+[/hint]
+[/hints]
+
 
 [/task-description]
 [tests]
