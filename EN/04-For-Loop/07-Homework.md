@@ -891,9 +891,9 @@ Create a program, which determines if a rollercoaster can depart:
 
 - All the other numbers represent the **age** for each person queuing
 
-- If all the seats can be filled, print out: "**The rollercoaster departs**"
+- If all the seats can be filled, print: "**The rollercoaster departs**"
 
-- In any other case, print out: "**Waiting...**"
+- In any other case, print: "**Waiting...**"
 
 # Example
 
@@ -901,6 +901,25 @@ Create a program, which determines if a rollercoaster can depart:
 | ------------------------------------------- | ---------------------------- |
 | rollercoaster([2, 10, 2, 15, 24]) | The rollercoaster departs |
 | rollercoaster([3, 15, 1, 23])       | Waiting...                   |
+
+[hints]
+[hint]
+Create some helper variables at the beginning:
+let **seats** = input[0];
+let **age** = input[1];
+let **peopleNeeded** = seats;
+[/hint]
+[hint]
+In а **For Loop** starting from the fourth position of the input array (let i = 3; i < input.length; i++), 
+check if the age of each person is above or equal to the needed one, and if it is - lower the number of needed people.
+If the number of needed people became 0, break the loop and perform some checks.
+[/hint]
+[hint]
+Check if the variable **peopleNeeded** has reached 0, which means that all the seats can be filled.
+If this is the case, print: "**The rollercoaster departs**".
+If this is not the case, print: "**Waiting...**".
+[/hint]
+[hint]
 
 [/task-description]
 [tests]
