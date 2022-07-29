@@ -494,6 +494,19 @@ Create a program, which saves money, needed to visit a given destination:
 | travelling(['Greece', 1000, 200, 200, 300, 100, 150, 240, 'Spain', 1200, 300, 500, 193, 423, 'End']) | Going to Greece! |
 ||Going to Spain!|
 
+[hints]
+[hint]
+Make three helper variables for the **destination**, the **budget**, and the **money**, where you will store the values obtained from the input.
+[/hint]
+[hint]
+In а For-Loop, check whether the input is a number or a string. You can do this by using **isNaN()** function. 
+Perform the necessary operations according to the input type or **break** the loop if you reach "End".
+[/hint]
+[hint]
+If the **money** reaches the required amount, print the output on the console and reset thе budget.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
