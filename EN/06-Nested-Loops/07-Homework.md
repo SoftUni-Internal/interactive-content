@@ -336,6 +336,20 @@ Create a program, which finds all the magic numbers based on the following condi
 || 212 |
 || 221 |
 || 411 |
+
+[hints]
+[hint]
+Use **three nested For-Loops** to solve this problem.
+Set the counter variable value to 1 and loop until it is less than or equal to the input number.
+Increase the counter by 1 at each loop.
+Make sure you use **different names** for the counter in each for-Loop.
+[/hint]
+[hint]
+In the innermost loop, get the resulted number, make the necessary checks and **print the number if it meets the conditions**.
+**Note** that you should **only** print **3-digit numbers**.
+You can check if the resulted number as a string has a length of 3.
+[/hint]
+[/hints]
  
 [/task-description]
 [tests]
