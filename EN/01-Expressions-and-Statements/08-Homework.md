@@ -1,9 +1,12 @@
 # Homework
 
 [slide hideTitle]
+
 # Problem: Calculate Speed
+
 [code-task title="Calculate Speed" taskId="pb-java-statements-calculate-speed" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```java
 import java.util.Scanner;
 
@@ -13,20 +16,25 @@ public class Program {
   }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program that calculates the speed of a moving vehicle given the distance and time travelled.
-  * Read 2 floating-point numbers: distance and time
-  * Calculate the speed at which the vehicle needs to be traveling in order to get from point **A** to point **B** for the specified time.
-  * Print out the result
-  * Use the formula: **speed = distance / time**
-  
+
+- Read 2 floating-point numbers: distance and time
+- Calculate the speed at which the vehicle needs to be traveling in order to get from point **A** to point **B** for the specified time.
+- Print out the result
+- Use the formula: **speed = distance / time**
+
 ## Example
+
 | **Input** | **Output** |
-| --- | --- |
-| 15 | 7.5 |
-| 2|  |
+| --------- | ---------- |
+| 15        | 7.5        |
+| 2         |            |
 
 [/task-description]
 [tests]
@@ -82,12 +90,14 @@ Create a program that calculates the speed of a moving vehicle given the distanc
 [/slide]
 
 [slide hideTitle]
+
 # Problem with Solution: Currency Converter
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-1-currency-convertor-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Currency Converter" taskId="pb-java-statements-currency-converter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```java
 import java.util.Scanner;
 
@@ -97,20 +107,24 @@ public class Program {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program to convert USD to EUR:
-  * Read a **floating-point number**: the amount of dollars to be converted
-  * Convert **dollars to euro** (use the **exchange rate** of USD to EUR: 0.88)
-  * Print the converted value in EUR, formatted to the 2nd digit after the decimal point.
+
+- Read a **floating-point number**: the amount of dollars to be converted
+- Convert **dollars to euro** (use the **exchange rate** of USD to EUR: 0.88)
+- Print the converted value in EUR, formatted to the 2nd digit after the decimal point.
 
 ## Examples
-| **Input** | **Output** |
-| --- | --- |
-| 17 | 14.96 |
-| 87 | 76.56 |
 
+| **Input** | **Output** |
+| --------- | ---------- |
+| 17        | 14.96      |
+| 87        | 76.56      |
 
 [/task-description]
 [tests]
@@ -169,9 +183,12 @@ Create a program to convert USD to EUR:
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Area of Triangle
+
 [code-task title="Area of Triangle" taskId="pb-java-statements-Area-of-Triangle" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```java
 import java.util.Scanner;
 
@@ -181,25 +198,31 @@ public class Program {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program to calculate the area of a triangle:
 
-  * Read as input `side - a` and `height - h` - **floating-point numbers**
-  * Calculate the area of the triangle
-  * Print the area, formatted to the 2nd digit after the decimal point
+- Read as input `side - a` and `height - h` - **floating-point numbers**
+- Calculate the area of the triangle
+- Print the area, formatted to the 2nd digit after the decimal point
 
-  
 ## Example
+
 | **Input** | **Output** |
-| --- | --- |
-| 5 | 25.00 |
-| 10 |  |
+| --------- | ---------- |
+| 5         | 25.00      |
+| 10        |            |
 
 [hints]
 [hint]
 The formula for calculating a triangle's area is - Area = 1/2 \* a \* h
+[/hint]
+[hint]
+Format the result to the second decimal place
 [/hint]
 [/hints]
 
@@ -257,12 +280,14 @@ The formula for calculating a triangle's area is - Area = 1/2 \* a \* h
 [/slide]
 
 [slide hideTitle]
+
 # Problem with Solution: Four Operations
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-2-four-operations-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Four Operations" taskId="pb-java-statements-Four-Operations" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```java
 import java.util.Scanner;
 
@@ -272,21 +297,26 @@ public class Program {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program, which:
-  * Reads 2 **real numbers** from the console.
-  * Performs 4 **arithmetic operations** using these numbers each time, in the following order: `+`, `-`, `*`, `/`
-  * Formats and prints the results like in this example:
+
+- Reads 2 **real numbers** from the console.
+- Performs 4 **arithmetic operations** using these numbers each time, in the following order: `+`, `-`, `*`, `/`
+- Formats and prints the results like in this example:
 
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-| 10.0 | 10.00 + 5.00 = 15.00 |
-| 5.0 | 10.00 - 5.00 = 5.00 |
-|  | 10.00 * 5.00 = 50.00 |
-|  | 10.00 / 5.00 = 2.00 |
+
+| **Input** | **Output**            |
+| --------- | --------------------- |
+| 10.0      | 10.00 + 5.00 = 15.00  |
+| 5.0       | 10.00 - 5.00 = 5.00   |
+|           | 10.00 \* 5.00 = 50.00 |
+|           | 10.00 / 5.00 = 2.00   |
 
 [/task-description]
 [tests]
@@ -298,7 +328,7 @@ Create a program, which:
 [output]
 10.00 + 5.00 = 15.00
 10.00 - 5.00 = 5.00
-10.00 * 5.00 = 50.00
+10.00 _ 5.00 = 50.00
 10.00 / 5.00 = 2.00
 [/output]
 [/test]
@@ -310,7 +340,7 @@ Create a program, which:
 [output]
 2.50 + 6.50 = 9.00
 2.50 - 6.50 = -4.00
-2.50 * 6.50 = 16.25
+2.50 _ 6.50 = 16.25
 2.50 / 6.50 = 0.38
 [/output]
 [/test]
@@ -322,7 +352,7 @@ Create a program, which:
 [output]
 10.50 + 2.50 = 13.00
 10.50 - 2.50 = 8.00
-10.50 * 2.50 = 26.25
+10.50 _ 2.50 = 26.25
 10.50 / 2.50 = 4.20
 [/output]
 [/test]
@@ -334,7 +364,7 @@ Create a program, which:
 [output]
 1.60 + 2.80 = 4.40
 1.60 - 2.80 = -1.20
-1.60 * 2.80 = 4.48
+1.60 _ 2.80 = 4.48
 1.60 / 2.80 = 0.57
 [/output]
 [/test]
@@ -345,9 +375,12 @@ Create a program, which:
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Days to Minutes
+
 [code-task title="Days to Minutes" taskId="pb-java-statements-Days-to-Minutes" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```java
 import java.util.Scanner;
 
@@ -357,24 +390,31 @@ public class Program {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program to convert **days** to **minutes**:
-  * Read a **single integer** (the days to be converted)
-  * Convert the days to minutes (use calculations)
-  * **Print** the result
+
+- Read a **single integer** (the days to be converted)
+- Convert the days to minutes (use calculations)
+- **Print** the result
 
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-| 2 | 2880 |
-| 5 | 7200 |
 
+| **Input** | **Output** |
+| --------- | ---------- |
+| 2         | 2880       |
+| 5         | 7200       |
 
 [hints]
 [hint]
 One day has 24 hours, one hour has 60 minutes, so one day has 1440 minutes.
+[/hint]
+[hint]
+You need to multiply the days by 1440 (the minutes per day)
 [/hint]
 [/hints]
 
@@ -435,32 +475,40 @@ One day has 24 hours, one hour has 60 minutes, so one day has 1440 minutes.
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Circle Area and Perimeter
+
 [code-task title="Circle Area and Perimeter" taskId="pb-java-statements-Circle-Area-and-Perimeter" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```java
 import java.util.Scanner;
- 
+
 public class Program {
   public static void main(String[] args) {
       // Write code here
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program to calculate a circle's area and perimeter:
-  * Read a **floating-point number**: the radius of a circle
-  * Calculate the **area and perimeter** of the circle
-  * Print the calculated values
-    * use the **default formatting** for floating-point numbers in Java in the output (like in the example below)
+
+- Read a **floating-point number**: the radius of a circle
+- Calculate the **area and perimeter** of the circle
+- Print the calculated values
+  - use the **default formatting** for floating-point numbers in Java in the output (like in the example below)
 
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-| 7 | Area = 153.938040 |
-|  | Perimeter = 43.982297 |
+
+| **Input** | **Output**            |
+| --------- | --------------------- |
+| 7         | Area = 153.938040     |
+|           | Perimeter = 43.982297 |
 
 [hints]
 [hint]
@@ -469,6 +517,9 @@ The formula for calculating a circle's perimeter is P = 2 \* π \* R.
 [/hint]
 [hint]
 The formula for calculating a circle's area is: A = π \* R \* R.
+[/hint]
+[hint]
+You can get the value of π by using **Math.PI**.
 [/hint]
 [/hints]
 [/task-description]
@@ -525,11 +576,14 @@ Perimeter = 59.061942
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Person Info
+
 [code-task title="Person Info" taskId="pb-java-statements-Person-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```java
-import java.util.Scanner; 
+import java.util.Scanner;
 
 public class Program {
   public static void main(String[] args) {
@@ -537,26 +591,34 @@ public class Program {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program, which:
 
-  * Reads **4 lines** of strings: first name, last name, country and town
+- Reads **4 lines** of strings: first name, last name, country and town
 
-  * Prints information about a person in the following format:
-  
-  
+- Prints information about a person in the following format:
+
 "\{**firstName**\} \{**lastName**\} **from** \{**country**\} - \{**town**\}!"
 
+[hints]
+[hint]
+Format the result using **System.out.printf("%s %s from %s - %s!", firstName, lastName, country, town);**
+[/hint]
+[/hints]
 
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-| Kelly | Kelly Smith from Ireland - Cork! |
-| Smith |  |
-| Ireland |  |
-| Cork |  |
+
+| **Input** | **Output**                       |
+| --------- | -------------------------------- |
+| Kelly     | Kelly Smith from Ireland - Cork! |
+| Smith     |                                  |
+| Ireland   |                                  |
+| Cork      |                                  |
 
 [/task-description]
 [tests]
@@ -622,9 +684,12 @@ A B from C - D!
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Town Info
+
 [code-task title="Town Info" taskId="pb-java-statements-Town-Info" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```java
 import java.util.Scanner;
 
@@ -634,21 +699,26 @@ public class Program {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program, which:
-  * Reads **3 lines** of input: a name (**string**), population(**integer**) and area (**integer**)
-  * Prints information about a town in the following format: 
-  
-  "**Town** \{**name**\} **has population of** \{**population**\} **and area** \{**area**\} **square km.**"
+
+- Reads **3 lines** of input: a name (**string**), population(**integer**) and area (**integer**)
+- Prints information about a town in the following format:
+
+"**Town** \{**name**\} **has population of** \{**population**\} **and area** \{**area**\} **square km.**"
 
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-| Berlin | Town Berlin has population of 3675000 and area 984 square km. |
-| 3675000 |  |
-| 984 |  |
+
+| **Input** | **Output**                                                    |
+| --------- | ------------------------------------------------------------- |
+| Berlin    | Town Berlin has population of 3675000 and area 984 square km. |
+| 3675000   |                                                               |
+| 984       |                                                               |
 
 [/task-description]
 [tests]
@@ -707,11 +777,13 @@ Town A has population of 123456 and area 789 square km.
 [/code-task]
 [/slide]
 
-
 [slide hideTitle]
+
 # Problem: Square Area
+
 [code-task title="Square Area" taskId="pb-java-statements-Square-Areaa" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -721,8 +793,10 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
 
 Create a console program that reads an **integer** `a` and calculates the area of a square with a side `a`.
@@ -740,9 +814,15 @@ Print out the calculated area.
 ## Examples
 
 | **Input** | **Output** |
-| --- | --- |
-| 5 | 25 |
-| 6 | 36 |
+| --------- | ---------- |
+| 5         | 25         |
+| 6         | 36         |
+
+[hints]
+[hint]
+Use the formula side \* side
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -800,14 +880,15 @@ Print out the calculated area.
 
 [/slide]
 
-
 [slide hideTitle]
+
 # Problem with Solution: Projects Creation
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-4-projects-creation-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Project Creation" taskId="pb-java-statements-Projects-Creation" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -817,35 +898,41 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program that calculates how many hours will be necessary for an architect to complete a given number of projects.
 
 Finishing a project takes 3 hours.
 
 ## Input
+
 Read **two lines** from the console:
+
 - Name of the architect - **String**
 - Number of projects - **integer** in range \[0… 100\]
 
 ## Output
 
-Print to the console: 
+Print to the console:
 
 "**The architect** \{**name of the architect**\} **will need** \{**necessary hours**\} **hours to complete** \{**number of projects**\} **project/s.**"
 
 ## Examples
 
-| Input | Output | 
-| --- | --- |
+| Input  | Output                                                           |
+| ------ | ---------------------------------------------------------------- |
 | George | The architect George will need 12 hours to complete 4 project/s. |
-| 4 | |
+| 4      |                                                                  |
 
-| Input | Output |  
-| --- | --- |
+| Input | Output                                                          |
+| ----- | --------------------------------------------------------------- |
 | Peter | The architect Peter will need 27 hours to complete 9 project/s. |
-| 9 | |
+| 9     |                                                                 |
+
 [/task-description]
 [tests]
 [test open]
@@ -961,14 +1048,13 @@ The architect Gergana will need 66 hours to complete 22 project/s.
 [/code-task]
 [/slide]
 
-
-
-
-
 [slide hideTitle]
+
 # Problem: Trapezoid Area
+
 [code-task title="Trapezoid Area" taskId="pb-java-statements-Trapezoid-Area" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -978,29 +1064,41 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
-## Description
-Create a program that **calculates** the area of a trapezoid with bases **b1** and **b2** and height **h**. 
 
-The formula to calculate the area of a trapezoid is ((b1 + b2) / 2) * h.
+## Description
+
+Create a program that **calculates** the area of a trapezoid with bases **b1** and **b2** and height **h**.
+
+The formula to calculate the area of a trapezoid is ((b1 + b2) / 2) \* h.
 
 ## Input
 
 Read three numbers from the console:
+
 - Base - b1 - real number in range \[1...1000\]
 - Base - b2 - real number in range \[1...1000\]
 - Height - h - real number in range \[1...1000\]
 
 ## Output
+
 Printout a single number - the area of the trapezoid, formatted to the **second decimal point.**
 
 ## Example
+
 | **Input** | **Output** |
-| --- | --- |
-| 8 | 73.50 |
-| 13 | |
-| 7 | |
+| --------- | ---------- |
+| 8         | 73.50      |
+| 13        |            |
+| 7         |            |
+
+[hints]
+[hint]
+Calcuate the result **double result = (b1+b2)\*h/2;** and then print with **System.out.printf("%.2f", result);**
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1069,14 +1167,13 @@ Printout a single number - the area of the trapezoid, formatted to the **second 
 [/code-task]
 [/slide]
 
-
-
-
-
 [slide hideTitle]
+
 # Problem: Vegetable Market
+
 [code-task title="Vegetable Market" taskId="pb-java-statements-Vegetable-Market" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -1086,23 +1183,29 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 A gardener is selling some products at the farmers market. We have to help him with the calculations.
 
-He sells vegetables for **N dollars** per kilogram and fruits for **M dollars** per kilogram. 
+He sells vegetables for **N dollars** per kilogram and fruits for **M dollars** per kilogram.
 
 Create a program that calculates his income in euro (**1 USD = 0.89 EUR**).
 
 ## Input
+
 The input will consist of **4 numbers**, each on a **single** line:
+
 - The price for a kilogram of vegetables - **floating-point number** [0.00 ... 1000.00]
 - The price for a kilogram of fruits - **floating-point number** [0.00 ... 1000.00]
 - The total kilograms of vegetables - **integer** [0 ... 1000]
 - The total kilograms of fruits - **integer** [0 ... 1000]
 
 ## Output
+
 Print out a **single number**: the income from all sold fruits and vegetables in euro.
 
 The result should be formatted to the **second decimal point.**
@@ -1110,16 +1213,16 @@ The result should be formatted to the **second decimal point.**
 ## Examples
 
 | **Input** | **Output** |
-| --- | --- | 
-| 0.194 | 174.39 | 
-| 19.4 | | 
-| 10 | | 
-| 10 | | 
+| --------- | ---------- |
+| 0.194     | 174.39     |
+| 19.4      |            |
+| 10        |            |
+| 10        |            |
 
 [hints]
 [hint]
 The vegetables cost - $0.194 \* 10kg = $1.94
-The fruits cost - $19.4 \* 10kg  = $194
+The fruits cost - $19.4 \* 10kg = $194
 [/hint]
 [hint]
 Total - $195.94 = €174.39
@@ -1127,12 +1230,11 @@ Total - $195.94 = €174.39
 [/hints]
 
 | **Input** | **Output** |
-| --- | --- |
-| 1.5 | 35.60 |
-| 2.5 | |
-| 10 | | 
-| 10 | | 
-
+| --------- | ---------- |
+| 1.5       | 35.60      |
+| 2.5       |            |
+| 10        |            |
+| 10        |            |
 
 [/task-description]
 [tests]
@@ -1274,9 +1376,12 @@ Total - $195.94 = €174.39
 [/slide]
 
 [slide hideTitle]
+
 # Problem: Pet Shop
+
 [code-task title="Pet Shop" taskId="pb-java-statements-Pet-Shop" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -1286,36 +1391,46 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
+
 Create a program that calculates the total cost of some animal food packages. Each animal needs a package of food.
 
-A package of dog food costs 2.5 dollars. 
+A package of dog food costs 2.5 dollars.
 
 Any other type of animal food - 4 dollars.
 
 ## Input
 
 The input will consist of two lines.
+
 - Number of dogs - an integer in range \[0 ... 100\]
 - Number of others animals - integer in range \[0 ... 100\]
 
 ## Output
+
 Print out: "\{**total sum**\} **dollars**". The result should be formatted to the second decimal point.
 
 ## Examples
 
-| **Input** | **Output** |
-| --- | --- |
-| 5 | 28.50 dollars |
-| 4 | |
+| **Input** | **Output**    |
+| --------- | ------------- |
+| 5         | 28.50 dollars |
+| 4         |               |
 
+| **Input** | **Output**    |
+| --------- | ------------- |
+| 13        | 68.50 dollars |
+| 9         |               |
 
-| **Input** | **Output** |
-| --- | --- |
-| 13 | 68.50 dollars |
-| 9 | |
+[hints]
+[hint]
+Use the formula **2.5 _ dogNumber + 4 _ otherNumber**
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1432,16 +1547,15 @@ Print out: "\{**total sum**\} **dollars**". The result should be formatted to th
 [/code-task]
 [/slide]
 
-
-
-
 [slide hideTitle]
+
 # Problem with Solution: Fishland
 
 [video src="https://videos.softuni.org/hls/Java/Java-Programming-Basics/01-expressions-and-statements/EN/interactive-programming-basics-with-java-expressions-and-statements-30-problem-solving-exercise-3-fishland-and-solution-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Fishland" taskId="pb-java-statements-Fishland" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -1451,20 +1565,26 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
-George decides to buy tuna fish, scads, and mussels. 
+
+George decides to buy tuna fish, scads, and mussels.
 
 Read the **prices** of mackerel and sprats, the quantity of tuna, scads, and mussels in **kilograms** from the console.
 
 **Calculate** how much money will George need to pay his bill, if the prices are:
+
 - Tuna - **60% more expensive than the mackerel**
 - Scads - **80% more expensive than the sprats**
 - Mussels - **7.50 dollars per kilogram**
 
 ## Input
+
 You have to read **5 numbers** from the console:
+
 - Тhe price of the mackerel per kilogram - **floating-point** number in range [0.00 ... 40.00]
 - Тhe price of the sprats per kilogram - **floating-point** number in range [0.00 ... 30.00]
 - Kilograms of tuna - **floating-point** number in range [0.00 ... 50.00]
@@ -1472,16 +1592,18 @@ You have to read **5 numbers** from the console:
 - Kilograms of mussels - **integer number** in range [0 ... 100]
 
 ## Output
+
 Print a single float number to the console: the money George will need to pay the bill, formatted to the **second decimal point**
 
 ## Example
+
 | **Input** | **Output** |
-| --- | --- |
-| 6.90 | 42.96 |
-| 4.20 | |
-| 1.50 | |
-| 2.50 | |
-| 1 | |
+| --------- | ---------- |
+| 6.90      | 42.96      |
+| 4.20      |            |
+| 1.50      |            |
+| 2.50      |            |
+| 1         |            |
 
 [/task-description]
 [tests]
@@ -1646,11 +1768,13 @@ Print a single float number to the console: the money George will need to pay th
 [/code-task]
 [/slide]
 
-
 [slide hideTitle]
+
 # Problem: Yard Greening
+
 [code-task title="Yard Greening" taskId="pb-java-statements-Yard-Greening" executionType="tests-execution" executionStrategy="java-code" requiresInput]
 [code-editor language=java]
+
 ```
 import java.util.Scanner;
 
@@ -1660,13 +1784,15 @@ public class Main {
     }
 }
 ```
+
 [/code-editor]
 [task-description]
+
 ## Description
 
-Create a program that calculates the expenses for yard greening. 
+Create a program that calculates the expenses for yard greening.
 
-The price for **one square meter** is 7.61 dollars with VAT. 
+The price for **one square meter** is 7.61 dollars with VAT.
 
 The company offers an 18% **discount** on the total price.
 
@@ -1678,24 +1804,26 @@ A single line from the console:
 
 ## Output
 
-Print out two lines to the console:   
+Print out two lines to the console:
+
 - "**The final price is:** \{**total price**\} **dollars**"
 - "**The discount is:** \{**discount**\} **dollars**"
 
 Prices should be formatted to the **second decimal point.**
 
 ## Example
-| **Input** | **Output** |
-| --- | --- |
-| 540 | The final price is: 3369.71 dollars |
-|  | The discount is: 739.69 dollars |
+
+| **Input** | **Output**                          |
+| --------- | ----------------------------------- |
+| 540       | The final price is: 3369.71 dollars |
+|           | The discount is: 739.69 dollars     |
 
 [hints]
 [hint]
-Calculate the price for greening the whole yard.
+Calculate the price for greening the whole yard. **size \* 7.61**
 [/hint]
 [hint]
-Calculate the discount and determine the final price.
+Calculate the discount (**price \* 0.18**) and determine the final price (**price - discount**).
 [/hint]
 [/hints]
 
@@ -1813,4 +1941,3 @@ The discount is: 101.97 dollars
 [code-io /]
 [/code-task]
 [/slide]
-
