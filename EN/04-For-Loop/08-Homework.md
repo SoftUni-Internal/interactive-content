@@ -194,6 +194,13 @@ Prints:
 | --- | --- |
 | 5 | 32 |
 | 2 | |
+
+[hints]
+[hint]
+You can make a for loop and in every iteration do res *= p;
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -254,6 +261,16 @@ Prints:
 | 0 | |
 | 0 | |
 | -1 | |
+
+[hints]
+[hint]
+When the possition is even, sum both numbers in the pair and add them to the even sum. Otherwise, add them to the odd sum.
+[/hint]
+[hint]
+In the end, print the result (the difference)
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -555,6 +572,13 @@ Create a program, that:
 | 2 | 1 |
 | a | |
 | g | |
+
+[hints]
+[hint]
+Iterate over every character of the work and check if it is present in the table, if it is - add the corresponding amount to the sum.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -668,6 +692,15 @@ The input consists of:
 | 18 | |
 | 5 | |
 | 30 | |
+
+[hints]
+[hint]
+In the for loop, check if the age is above the needed one, and if it is - lower the amount of needed people.
+[/hint]
+[hint]
+If that amount reaches 0, the print "The rollercoaster departures"
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1442,6 +1475,12 @@ Print the numbers on a single line, separated by a single space.
 | **Input** | **Output** |
 | --- | --- | 
 | (no input) | 7 17 27 ... 997 |
+
+[hints]
+[hint]
+Use a for loop and check i % 7 == 0
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
