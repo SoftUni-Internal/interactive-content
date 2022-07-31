@@ -394,6 +394,12 @@ Create a program that reads 3 numbers from the console and checks if they are so
 | 4 |  |
 | 3 |  |
 
+[hints]
+[hint]
+You can solve the problem by using an if case (a>b>c), else if case(a<b<c) and an else case for the random sort.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -624,6 +630,11 @@ Calculate the total **price** for all sold tickets to a movie screening in a cin
 |12||
 |30| |
 
+[hints]
+[hint]
+Make three if-cases for each of the types of screening (Premiere, Noraml and Discount)
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
@@ -861,6 +872,15 @@ Create a program to perform a calculation using a particular operator.
 | 10 |  |
 | \+ |  |
 
+[hints]
+[hint]
+Use a switch case for the operators '+', '-', '/', '%' and '\*'
+[/hint]
+[hint]
+Format the output using **%d %c %d = %.0f", n1, operator, n2, answer**
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -955,6 +975,11 @@ Create a program that simulates an ATM:
 |50|Insufficient availability.|
 |20|  |
 
+[hints]
+[hint]
+Use a switch case for the difference ATM commands and check the balance before doing the command.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
@@ -1053,6 +1078,14 @@ Create a program to find the greatest of 5 numbers
 |12||
 |33|  |
 
+[hints]
+[hint]
+Create a control variable **biggestNumber**
+[/hint]
+[hint]
+Compare each of the input numbers to the control variable, and change its value if the input number is bigger.
+[/hint]
+[/hints]
 
 [/task-description]
 [code-io /]
@@ -1177,6 +1210,13 @@ Print the expected Personal Title on a single line.
 | --- |  --- |
 | 13.5 | Master |
 | m | |
+
+[hints]
+[hint]
+You can use nested if statements to check for the age and then the gender.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -1354,6 +1394,15 @@ The input consists of 2 lines:
 | Gas | You have enough gas. |
 | 25 | |
 
+[hints]
+[hint]
+Make an if condidion for checking if the fuel type is valid.
+[/hint]
+[hint]
+Check if the level is more than or equal to 25 liters.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -1483,6 +1532,16 @@ Read two lines:
 | --- | --- | 
 | Moscow | error |
 | -50 | |
+
+[hints]
+[hint]
+Check wether the town is valid and in the condition nest the different comission values.
+[/hint]
+[hint]
+sales >= 0 && sales <= 500 / sales > 500 && sales <= 1000 / sales > 1000 && sales <= 10000 / sales > 10000
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -1702,6 +1761,16 @@ You can use one or more conditional **if** statements with logical operations. A
 [hint]
 You can check the conditions above using one more complicated **if**-**else** construction or using few more simple conditional statements or **nested if**-**else statements.**
 [/hint]
+[hint]
+
+```java
+var onLeftSide = (x == x1) && (y >= y1) && (y <= y2);
+var onRightSide = (x == x2) && (y >= y1) && (y <= y2);
+var onUpSide = (y == y1) && (x >= x1) && (x <= x2);
+var onDownSide = (y == y2) && (x >= x1) && (x <= x2);
+```
+
+[hint]
 [/hints]
 
 [/task-description]
@@ -1990,6 +2059,15 @@ Your friend has different outfits according to the time of day and the temperatu
 | --- | --- |
 | 16 | It\'s 16 degrees, get your Sweatshirt and Sneakers. |
 | Morning | |
+
+[hints]
+[hint]
+First check the time of the day, and then the possible degrees.
+[/hint]
+[hint]
+degrees >= 10 && degrees <= 18 / degrees > 18 && degrees <= 24 / degrees >= 25
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
