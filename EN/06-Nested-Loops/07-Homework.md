@@ -657,7 +657,17 @@ Create a program, which prints all the prime numbers in a given range:
 
 [hints]
 [hint]
-A prime number is a whole number that cannot be created by multiplying other whole numbers.
+A prime number is a positive integer that is **only divisible by 1 and itself**.
+[/hint]
+[hint]
+Create an empty array at the beginning where you are going to store the prime numbers.
+Initialize helper boolean variable: let isPrime = true;
+[/hint]
+[hint]
+Use two **nested For-Loops** to solve this problem.
+[/hint] 
+[hint]
+In the end, print the resulted array using **array.join()** method.
 [/hint]
 [/hints]
 
