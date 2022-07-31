@@ -995,6 +995,18 @@ Create a program, which prints **letter combinations** and the **number** of gen
 | --- | --- |
 | letterCombinations('a', 'c', 'b') | aaa aac aca acc caa cac cca ccc 8 |
 
+[hints]
+[hint]
+You have input data of 3 elements, each of which is represented by one character of the ASCII table. You could use the already defined method in JavaScript, **.charCodeAt()** through which you will receive the ASCII code of the symbol: let startLetter = firstLetter.charCodeAt();
+[/hint]
+[hint]
+Use a For-Loop that runs through all characters from the starting to the end letter (included). On each iteration of the first loop, you run a second one with the same parameters (but only if the letter of the first loop is valid, i.e. does not match the one that we must exclude, by requirements). In each iteration of the second loop, you run one more with the same parameters and the same condition. This way you have three nested loops and in the body of the latter, you will add the symbols to the final result. The method **String.fromCharCode(...)** will convert the received ASCII code into a symbol.
+[/hint]
+[hint]
+You also need to print the total number of valid combinations that you have found, and they must be printed on the same line, separated by a space.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
