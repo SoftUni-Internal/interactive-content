@@ -219,6 +219,18 @@ Create a program, that **generates all possible passwords**, consisting of the f
 - The **input** consists of a single integer **n**
 - The **output** holds all possible passwords
 
+[hints]
+[hint]
+First number -> a % 2 == 0 && a <= n
+[/hint]
+[hint]
+Second number -> b % 2 != 0 && b >= n
+[/hint]
+[hint]
+Third Number -> c = a * b
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -306,6 +318,15 @@ Create a program, that:
 | 3 | 113 |
 | | 131 |
 | | 311 |
+
+[hints]
+[hint]
+Use three for loops all from 1 to 9
+[/hint]
+[hint]
+Muliply each of the indexing values of the for loops and check if the result is the same as the given number.
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -862,6 +883,21 @@ Create a program, that:
 | | 252 |
 | | 254 |
 
+[hints]
+[hint]
+```js
+ for (int num1 = 2; num1 <= a; num1 += 2) {
+            for (int num2 = 2; num2 <= b; num2++) {
+                for (int num3 = 2; num3 <= c; num3 += 2) {
+                    if (num2 != 4 && num2 != 6) {
+                        System.out.printf("%d %d %d%n", num1, num2, num3);
+                    }
+                }
+            }
+```
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -940,7 +976,14 @@ Create a program, that:
 | c|  |
 | b|  |
 
-
+[hints]
+[hint]
+Get the ascii values of the letters by casting the char to an integer. Learn more at https://www.programiz.com/java-programming/examples/ascii-value-character
+[/hint]
+[hint]
+Print the resulting combinations
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1139,6 +1182,18 @@ Add filler zeroes to the hour and minute output if their values consist of a sin
 | | 23 : 58 |
 | | 23 : 59 |
 
+[hints]
+[hint]
+The hours will be the initial value of the first for loop.
+[/hint]
+[hint]
+The minutes will be the initial value of the second loop, which is nested into the first one.
+[/hint]
+[hint]
+Print the combinations of hour and minute, keeping in mind that an hour has 59 minutes and an day - 23hours and 59minutes
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -1331,6 +1386,24 @@ Add filler zeroes if the output for any of the output elements cosists of a sing
 | | ... |
 | | 23 : 59 : 58 |
 | | 23 : 59 : 59 |
+
+[hints]
+[hint]
+The hours will be the initial value of the first for loop.
+[/hint]
+[hint]
+The minutes will be the initial value of the second loop, which is nested into the first one.
+[/hint]
+[hint]
+The seconds will be the initial value of the third loop, which is nested into the second one.
+[/hint]
+[hint]
+Print the combinations of hour, minute and second, keeping in mind that an hour has 59 minutes and an day - 23hours and 59minutes and 59 seconds.
+[/hint]
+[hint]
+Don't forget to add a leading zero to single digits.
+[/hint]
+[/hints
 
 [/task-description]
 [tests]
