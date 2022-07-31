@@ -792,6 +792,18 @@ Create a program, which generates unique PIN codes:
 || 234 |
 || 236 |
 
+[hints]
+[hint]
+Use three nested For-Loops to solve this problem.
+[/hint]
+[hint]
+In the innermost loop, do the necessary checks for each number.
+[/hint]
+[hint]
+If each one of the numbers meets the criteria, print the resulting three-digit number. 
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
