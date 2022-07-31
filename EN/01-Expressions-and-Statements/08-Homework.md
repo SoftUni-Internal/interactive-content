@@ -201,6 +201,9 @@ Create a program to calculate the area of a triangle:
 [hint]
 The formula for calculating a triangle's area is - Area = 1/2 \* a \* h
 [/hint]
+[hint]
+Format the result to the second decimal place
+[/hint]
 [/hints]
 
 [/task-description]
@@ -376,6 +379,9 @@ Create a program to convert **days** to **minutes**:
 [hint]
 One day has 24 hours, one hour has 60 minutes, so one day has 1440 minutes.
 [/hint]
+[hint]
+You need to multiply the days by 1440 (the minutes per day)
+[/hint]
 [/hints]
 
 [/task-description]
@@ -470,7 +476,11 @@ The formula for calculating a circle's perimeter is P = 2 \* π \* R.
 [hint]
 The formula for calculating a circle's area is: A = π \* R \* R.
 [/hint]
+[hint]
+You can get the value of π by using **Math.PI**.
+[/hint]
 [/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -557,6 +567,12 @@ Create a program, which:
 | Smith |  |
 | Ireland |  |
 | Cork |  |
+
+[hints]
+[hint]
+Format the result using **System.out.printf("%s %s from %s - %s!", firstName, lastName, country, town);**
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -743,6 +759,12 @@ Print out the calculated area.
 | --- | --- |
 | 5 | 25 |
 | 6 | 36 |
+
+[hints]
+[hint]
+Use the formula side \* side
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1001,6 +1023,12 @@ Printout a single number - the area of the trapezoid, formatted to the **second 
 | 8 | 73.50 |
 | 13 | |
 | 7 | |
+
+[hints]
+[hint]
+Calcuate the result **double result = (b1+b2)\*h/2;** and then print with **System.out.printf("%.2f", result);**
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1316,6 +1344,12 @@ Print out: "\{**total sum**\} **dollars**". The result should be formatted to th
 | --- | --- |
 | 13 | 68.50 dollars |
 | 9 | |
+
+[hints]
+[hint]
+Use the formula **2.5 _ dogNumber + 4 _ otherNumber**
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -1692,10 +1726,10 @@ Prices should be formatted to the **second decimal point.**
 
 [hints]
 [hint]
-Calculate the price for greening the whole yard.
+Calculate the price for greening the whole yard. **size \* 7.61**
 [/hint]
 [hint]
-Calculate the discount and determine the final price.
+Calculate the discount (**price \* 0.18**) and determine the final price (**price - discount**).
 [/hint]
 [/hints]
 
