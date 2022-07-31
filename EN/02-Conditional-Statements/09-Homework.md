@@ -374,6 +374,12 @@ Create a program to **calculate** the price of a ticket based on the following:
 | --- | --- |
 | student | $1.00 |
 
+[hints]
+[hint]
+Make three checks for **student**, **regular** or _invalid_
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -474,6 +480,15 @@ Prices:
 | tea | Final price: $0.60 |
 | no |  |
 
+[hints]
+[hint]
+Check if the drink **coffee**, **tea** and if it has **sugar**
+[/hint]
+[hint]
+Format the result to the second decimal point
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -567,6 +582,12 @@ Create a program to check if a triangle could exist judging by the input:
 | 3 | Valid Triangle |
 | 4 |  |
 | 5 |  |
+
+[hints]
+[hint]
+**if (!(c < a+b) || !(a < b+c)|| !(b < a+c))** print **Invalid Triangle**, otherwise print **Valid Triangle**
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
@@ -864,6 +885,15 @@ Print the result in the following format: "\{hours\}:\{minutes\}".
 | 1 | 2:01 | 
 | 46 | |
 
+[hints]
+[hint]
+Use **%d** for printing the hours without leading a leading zero
+[/hint]
+[hint]
+Use **%02d** for printing the minutes with leading a leading zero
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -1015,6 +1045,12 @@ Create a program that reads an integer \[1...7\] from the console and prints out
 | 2 | Tuesday |
 | -1 | Error |
 
+[hints]
+[hint]
+Use a switch case and in the default set the Error message;
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test]
@@ -1142,6 +1178,12 @@ The input may hold the following values:
 | dog | mammal |
 | cat | unknown |
 
+[hints]
+[hint]
+Use a switch case for the type of animal.
+[/hint]
+[/hints]
+
 [/task-description]
 [tests]
 [test open]
@@ -1267,6 +1309,14 @@ The result should be **rounded up to the nearest integer**.
 | 0.8 | |
 | 321 | |
 
+[hints]
+[hint]
+Calculate the **allFoodNeeded** by _foodForDogNeed + foodForCatNeed + foodForTurtleNeed_
+[/hint]
+[hint]
+Round the number by using **%.0f**
+[/hint]
+[/hints]
 
 [/task-description]
 [tests]
