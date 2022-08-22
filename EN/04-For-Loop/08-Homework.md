@@ -468,7 +468,7 @@ Create a program, which:
 
 * Reads a number, n – lines of input
 * Reads all lines of input, i.e. dividends
-* Calculates the percentage of quotients without remainder per divisor
+* Calculates what percentage of the given numbers are divisible by 2, 3 and 4 without a remainder
 * Prints the answer formatted to the second digit
 
 
