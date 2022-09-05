@@ -44,7 +44,7 @@ In this course we **will not** initialize an array, we will only accept arrays a
 [slide hideTitle]
 # Reading from Arrays
 
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-11-Reading from Arrays-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-13-14-Nested-Conditional-Statements-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Each element in an array has its own **index** (**position**) by which it can be **accessed**.
 
