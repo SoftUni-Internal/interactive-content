@@ -4,7 +4,7 @@
 [slide hideTitle]
 # More Complex Conditions
 
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-19-20-21-Logical Operators-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-19-20-21-Logical-Operators-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Let us take a look at how we can create more **complex logical conditions** in programming. 
 
