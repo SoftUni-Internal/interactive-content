@@ -3,7 +3,7 @@
 [slide hideTitle]
 # The "switch-case" Statement
 
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-6-7-8-Real-Life-Example-Marketplace-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-30-31-Multiple-Labels-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The switch-case condition works as a sequence of if-else blocks. 
 
