@@ -4,7 +4,7 @@
 
 # Real-Life Example: Marketplace
 
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-6-7-8-Real Life Example- Marketplace-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-6-7-8-Real-Life-Example-Marketplace-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="03-conditional-statements-advanced-example.png" /]
 
