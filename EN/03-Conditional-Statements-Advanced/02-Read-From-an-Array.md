@@ -4,8 +4,8 @@
 
 [slide hideTitle]
 # What is an Array? 
-https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-11-Reading-from-Arrays-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8
-[video src="" poster="" /]
+
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-11-Reading-from-Arrays-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 We already know how to store a single piece of data in one variable. 
 
