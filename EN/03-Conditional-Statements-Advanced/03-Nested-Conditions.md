@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Nested Conditions
 
-[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-13-14-Nested Conditional Statements-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/javascript-basics/03.Conditions-Advanced/02-conditional-statements-advanced-js-13-14-Nested-Conditional-Statements-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Pretty often the program logic requires the use of `if` or `if-else` statements, which are contained one inside another.  
 They are called **nested** `if` or `if-else` statements. 
