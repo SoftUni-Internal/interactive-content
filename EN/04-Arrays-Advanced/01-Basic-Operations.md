@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Overview
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-3-4-overview-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-3-4-overview-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript has **built-in functions** for dealing with arrays that **can simplify the code, make it easier to read**, and last but not least, make it easier to debug.
 
@@ -30,7 +30,7 @@ These methods modify the array and we do not need to write a whole bunch of code
 [slide hideTitle]
 # Add at the End, Remove from the End
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-5-add-at-the-end-remove-from-the-end-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-5-add-at-the-end-remove-from-the-end-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 JavaScript has **built-in methods** for adding and removing elements both from the end and the beginning of an array.
 
@@ -66,7 +66,7 @@ console.log(number);
 [slide hideTitle]
 # Add at the Start, Remove from the Start
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-6-add-at-the-start-remove-from-the-start-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-6-add-at-the-start-remove-from-the-start-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 - **Adding an Element at the Beginning of an Array**
 
@@ -97,7 +97,7 @@ console.log(number);
 [slide hideTitle]
 # Problem with Solution: Sum First Last
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-problem-1-solution-sum-first-last-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-8-problem-sum-first-last-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Sum First Last" taskId="fundamentals-js-arrays-advanced-lab-Sum-First-Last" executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -201,7 +201,7 @@ solve(['5', '10'])
 [slide hideTitle]
 # Pushing and Popping Into an Array
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-10-7-pushing-an-array-and-pop-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-10-pushing-an-array-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.push()` method **adds** one or more elements **to the end of an array** and **returns the new length**:
 
@@ -241,7 +241,7 @@ console.log(popped);
 [slide hideTitle]
 # Shifting and Unshifting Into an Array
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-11-shifting-and-unshifting-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-11-shifting-and-unshifting-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.shift()` method **removes the first element** of an array:
 
@@ -269,7 +269,7 @@ It also returns the **new length** of the array.
 [slide hideTitle]
 # Problem with Solution: Negative or Positive Numbers
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-12-problem-and-solution-negative-posivite-numbers-new-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-12-problem-and-solution-negative-posivite-numbers-new-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [code-task title="Negative or Positive Numbers" taskId="fundamentals-js-arrays-advanced-lab-Negative-or-Positive-Numbers"  executionType="tests-execution" executionStrategy="javascript-code" requiresInput]
 [code-editor language=javascript]
@@ -422,7 +422,7 @@ negativePositive([\-2, 3, 0, 5, \-6, 0, 8])
 [slide hideTitle]
 # Find Values
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-14-find-values-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-14-find-values-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.includes()` method returns **true** if the given **value** is a **part of the array**.
 
