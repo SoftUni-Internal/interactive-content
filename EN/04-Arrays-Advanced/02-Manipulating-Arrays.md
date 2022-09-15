@@ -23,7 +23,7 @@ console.log(myArray.slice(2,4));
 [slide hideTitle]
 # Splice: Cut and Insert Array Elements
 
-[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05. JS-Fundamentals-Arrays-Advanced-17-cutting-and-inserting-elements-with-splice-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/01.fundamentals-functions-and-arrays/04.JS-Fundamentals-Arrays-Advanced/EN/05.JS-Fundamentals-Arrays-Advanced-17-cutting-and-inserting-elements-with-splice-New-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The `array.splice()` method **adds** or **removes** items to/from an array, and **returns** the removed item(s).
 
