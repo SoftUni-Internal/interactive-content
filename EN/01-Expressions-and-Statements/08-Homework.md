@@ -525,6 +525,10 @@ Calculate the price for the landscaping of the whole yard and store it in a vari
 
 Calculate the discount and store the result in a variable.
 
+Steps for calculating the discount:
+1.  Convert the percentage discount to a decimal. To do this, think of the percent number with a decimal to the right of the last digit. Move the decimal point two places to the left to get the converted decimal. (For example, you might want to calculate the sale price of a pair of shoes that is regularly $69.95. If the shoes are 25% off, you need to convert 25% to a decimal by thinking 25% = 25.00% = 0.25).
+2.  Multiply the original price by the decimal. This will tell you the discount, or what value is being taken off the original price. (For example, to find the 25% discount on a pair of $69.95 shoes, you would calculate 69.95 × 0.25 = 17.49).
+
 [/hint]
 
 [hint]
