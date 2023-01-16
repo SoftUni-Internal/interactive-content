@@ -16,7 +16,7 @@ Use the provided **styles** to **create** a page with the following structure:
 [slide hideTitle]
 # Database 
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04. ReactJS-Workshop-Components/02-explore-rest-api-and-add-data-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04.ReactJS-Workshop-Components/02-explore-rest-api-and-add-data-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Use the provided **REST API** build with **Express.js** and **MongoDB.**
 
@@ -33,7 +33,7 @@ Use **Postman** to create some entities or use "mongoimport" to [import the data
 
 # Initialize the App
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04. ReactJS-Workshop-Components/03-04-create-react-app-part-1-and-part-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04.ReactJS-Workshop-Components/03-04-create-react-app-part-1-and-part-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Use the `npx create-react-app origami-workshop` command to create a new React App.
 
@@ -60,7 +60,7 @@ Also, be free to extend the workshop as much as you want!
 [slide hideTitle]
 # Create the Header Navigation
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04. ReactJS-Workshop-Components/05-create-the-header-navigation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04.ReactJS-Workshop-Components/05-create-the-header-navigation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [image assetsSrc="ReactJs-Workshop-Components-2.png" /]
 
@@ -71,14 +71,14 @@ Also, be free to extend the workshop as much as you want!
 [slide hideTitle]
 # Add Header Logo
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04. ReactJS-Workshop-Components/06-add-header-logo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04.ReactJS-Workshop-Components/06-add-header-logo-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 [/slide]
 
 [slide hideTitle]
 # Reusable Link Component
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04. ReactJS-Workshop-Components/07-reusable-link-component-part-1-and-part-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04.ReactJS-Workshop-Components/07-reusable-link-component-part-1-and-part-2-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Each Link Component inside the header navigation should have the class name called listItem and the following structure.
 
@@ -89,7 +89,7 @@ Each Link Component inside the header navigation should have the class name call
 [slide hideTitle]
 # Create the Aside Navigation
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04. ReactJS-Workshop-Components/08-create-the-aside-navigation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04.ReactJS-Workshop-Components/08-create-the-aside-navigation-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Aside Component should have the "Aside" class name.
 [image assetsSrc="ReactJs-Workshop-Components-5.png" /]
@@ -107,7 +107,7 @@ Each Link Component inside the aside navigation should have the class name calle
 [slide hideTitle]
 # Create Main Container
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04. ReactJS-Workshop-Components/09-create-main-container-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04.ReactJS-Workshop-Components/09-create-main-container-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Main Component should have a "Main" class name.
 
@@ -118,7 +118,7 @@ Main Component should have a "Main" class name.
 [slide hideTitle]
 # Create Origami Items Container
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04. ReactJS-Workshop-Components/10-create-origami-items-container-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04.ReactJS-Workshop-Components/10-create-origami-items-container-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 # Posts
 
@@ -132,7 +132,7 @@ Posts component should have the "Posts" class name.
 [slide hideTitle]
 # Create Origami Item Component
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04. ReactJS-Workshop-Components/11-create-origami-item-component-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04.ReactJS-Workshop-Components/11-create-origami-item-component-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 # Post
 
@@ -157,7 +157,7 @@ Each post component is consisting of:
 [slide hideTitle]
 # Create the Footer
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04. ReactJS-Workshop-Components/12-create-the-footer-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04.ReactJS-Workshop-Components/12-create-the-footer-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 The Footer component should have a "Footer" class name.
 
