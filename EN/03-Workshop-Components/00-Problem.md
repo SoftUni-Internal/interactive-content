@@ -3,7 +3,7 @@
 [slide hideTitle]
 # Task Requirements
 
-[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04. ReactJS-Workshop-Components/01-explore-workshop-part-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Javascript/javascript-ReactJS/EN/04.ReactJS-Workshop-Components/01-explore-workshop-part-1-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **Here is a link to the** [resources](https://videos.softuni.org/resources/javascript/javascript-react/React-Js-Components.zip) **for this task.**
 
