@@ -1093,8 +1093,8 @@ Create a program, which generates all **4 digit numbers** with digits less than 
 - You will receive a number **n** as an input:
 
 - Print the combinations which meet the following requirements:
+  - when you add the first two, the result should be divisible by **n** without a remainder, n%(a+b) == 0
   - when you split the number into two pairs and add the first digit to the second one of each pair - the result equals **n**
-  - when you add the first two, the result should be divisible by **n** without a remainder
 
 # Example
 | **Input** | **Output** |
