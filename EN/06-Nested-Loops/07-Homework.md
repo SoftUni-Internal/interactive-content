@@ -1102,6 +1102,21 @@ Create a program, which generates all **4 digit numbers** with digits less than 
 | happyNumbers(3) | 1212 1221 2112 2121 |
 | happyNumbers(2) | 1111 |
 
+[hints]
+[hint]
+Create an empty array "result" at the beginning, where you will add the numbers that match the conditions.
+[/hint]
+[hint]
+Use four nested For-Loops that runs from 1 until the counter is less than the input number.
+[/hints]
+[hint]
+In the innermost loop, do the necessary checks and add the number to the array "result", if it matches the conditions.
+[/hints]
+[hint]
+Finally, print the result.
+[/hints]
+[/hints]
+
 
 [/task-description]
 [tests]
@@ -1118,10 +1133,10 @@ happyNumbers(3)
 happyNumbers(6)
 [/input]
 [output]
-1111 1212 1221 1515 1524 1533 1542 1551 2112 2121 2415 2424 2433 2442 2451 3315 3324 3333 3342 3351 4215 4224 4233 4242 4251 5115 5124 5133 5142 5151
+1515 1524 1533 1542 1551 2112 2121 2415 2424 2433 2442 2451 3315 3324 3333 3342 3351 4215 4224 4233 4242 4251 5115 5124 5133 5142 5151
 [/output]
 [/test]
-[test opne]
+[test open]
 [input]
 happyNumbers(2)
 [/input]
@@ -1134,7 +1149,7 @@ happyNumbers(2)
 happyNumbers(4)
 [/input]
 [output]
-1111 1313 1322 1331 2213 2222 2231 3113 3122 3131
+1313 1322 1331 2213 2222 2231 3113 3122 3131
 [/output]
 [/test]
 [test]
@@ -1150,7 +1165,7 @@ happyNumbers(5)
 happyNumbers(6)
 [/input]
 [output]
-1111 1212 1221 1515 1524 1533 1542 1551 2112 2121 2415 2424 2433 2442 2451 3315 3324 3333 3342 3351 4215 4224 4233 4242 4251 5115 5124 5133 5142 5151
+1515 1524 1533 1542 1551 2112 2121 2415 2424 2433 2442 2451 3315 3324 3333 3342 3351 4215 4224 4233 4242 4251 5115 5124 5133 5142 5151
 [/output]
 [/test]
 [test]
