@@ -298,7 +298,7 @@ Create a `printRow()` method to easily reuse code.
 
 # Splitting Code into Classes
 
-[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02-Java-OOP-Basics-More-OOP-Concepts-10-11-12-Splitting-code-into-classes-1 - Copy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-OOP-Basics/02-More-OOP-Concepts/EN/02-Java-OOP-Basics-More-OOP-Concepts-10-11-12-Splitting-code-into-classes-1- Copy-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 Just like methods, **classes should not "know" or do too much**.
 
