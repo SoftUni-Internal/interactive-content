@@ -3,7 +3,7 @@
 [slide hideTitle]
 # JAXB Definition
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08. XML-Processing/08.XML-Processing-06-07-jaxb-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08.XML-Processing/08.XML-Processing-06-07-jaxb-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **JAXB** is an API technology that provides an efficient way of mapping XML schemas to their Java representations and the other way around.
 
@@ -30,7 +30,7 @@ To add JAXB to a project:
 [slide hideTitle]
 # JAXB Basics
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08. XML-Processing/08.XML-Processing-08-jaxb-basics-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08.XML-Processing/08.XML-Processing-08-jaxb-basics-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 To start using JAXB it is important to understand the meaning of ** marshaling** and **unmarshalling**. 
 
@@ -252,7 +252,7 @@ Even though the class is annotated with `@XmlAccessorType(XmlAccessType.FIELD)`,
 [slide hideTitle]
 # JAXB Initialization
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08. XML-Processing/08.XML-Processing-09-10-jaxb-initialization-and-export-single-object-to-xml-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08.XML-Processing/08.XML-Processing-09-10-jaxb-initialization-and-export-single-object-to-xml-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 ```java
 JAXBContext jaxbContext = JAXBContext.newInstance(object.getClass());
@@ -355,7 +355,7 @@ encoding="UTF-8"?>
 [slide hideTitle]
 # Export Multiple Objects to XML
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08. XML-Processing/08.XML-Processing-12-13-export-multiple-objects-to-xml-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08.XML-Processing/08.XML-Processing-12-13-export-multiple-objects-to-xml-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You can export a list of objects and define the opening and closing tag name for each object with `@XmlElement` if it is used on a collection like so:
 
@@ -403,7 +403,7 @@ After **marshalling**, this results in:
 [slide hideTitle]
 # Import a Single Object from XML
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08. XML-Processing/08.XML-Processing-14-15-import-single-object-from-xml-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08.XML-Processing/08.XML-Processing-14-15-import-single-object-from-xml-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 You can also import objects from an XML file to Java by **unmarshalling** them with JAXB. To facilitate this process, you need a class that represents this object.
 
