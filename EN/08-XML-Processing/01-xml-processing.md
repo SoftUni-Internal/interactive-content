@@ -4,7 +4,7 @@
 
 # XML Definition
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08. XML-Processing/08.XML-Processing-03-04-the-xml-format-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08.XML-Processing/08.XML-Processing-03-04-the-xml-format-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 **XML** stands for e**X**tensible **M**arkup **L**anguage.
 
@@ -57,7 +57,7 @@ This line is optional but if it exists it must be the first line of the document
 
 # XML Structure
 
-[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08. XML-Processing/08.XML-Processing-05-xml-structure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
+[video src="https://videos.softuni.org/hls/Java/Java-ORM-and-Spring-Data/08.XML-Processing/08.XML-Processing-05-xml-structure-,1080p,720p,480p,360p,240p,.mp4/urlset/master.m3u8" poster="" /]
 
 When creating XML documents, you can write your **own elements**.
 
